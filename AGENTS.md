@@ -1,51 +1,35 @@
-# Commercial-first working agreement
+# Agent working agreement
 
-## Goal
+## Scope and setup
 
-Optimize for verified customer value and 30-day contribution margin per founder
-hour. Code, features, followers, interviews and verbal enthusiasm are inputs,
-not commercial outcomes.
+- Game Dev DB is an open-source RU/EN knowledge portal for people and AI agents.
+- Read `README.md`, `CONTRIBUTING.md`, `docs/architecture.md`, and the nearest instructions before editing.
+- Resolve the Git root, inspect `git status`, and keep a task-owned path list. Preserve unrelated changes and stage explicit paths only.
+- Use Node.js 24, npm, Python 3, and the committed lockfile: `npm ci`, then `npm run dev`.
 
-## Source of truth
+## Architecture and content
 
-- `commercial-project.json` is the machine-readable source of truth.
-- `COMMERCIAL.md` explains the current hypothesis.
-- `EXPERIMENTS.md` records tests before and after execution.
-- `DECISIONS.md` is an append-only `go`, `pivot` and `kill` log.
+- Astro builds a static site for `https://polyakovin.github.io/game-dev-db/`; all internal URLs must respect `/game-dev-db/`.
+- Lessons live in `src/content/lessons/{ru,en}/{id}.md`. Frontmatter is the source of truth; see `docs/content-guide.md`.
+- Each lesson has a matching RU/EN pair with the same stable `id`. Keep metadata, sources, examples, and meaning aligned.
+- Generate lesson HTML, search data, Markdown, and JSON from the same content collection. Curated resources live in `src/data/resources.json`. Do not hand-edit generated exports or `dist/`.
+- Keep schema and route changes compatible with `/api/v1/`. Update OpenSpec and documentation for a contract change.
+- Prefer primary sources. Distinguish engine-independent principles from engine-specific behavior. Never fabricate references, results, or quotations.
 
-Run:
+## Change workflow and verification
 
-```bash
-python3 scripts/commercial-project.py check .
-```
+- For substantial changes, use `npm run spec -- new change <name>` and write the proposal, specifications, and tasks before implementation. Read existing `openspec/` context first.
+- Run `npm run verify` before delivery and `npm run test:e2e` before publication. Install the test browser once with `npx playwright install chromium`. `npm test` aliases verification; individual commands include `npm run check`, `npm run check:content`, `npm run build`, and `npm run check:dist`.
+- Validate specifications with `npm run spec -- validate --all --strict`; archive an implemented, verified change with `npm run spec -- archive <name> --yes`.
+- Use `npm run format` for source formatting and `npm run format:check` to check it.
+- Check both languages, keyboard navigation, narrow layouts, search, lesson links, and machine exports when affected. Verify deployed URLs after publication; a local build does not prove a live deployment.
+- Preserve the base path and trailing slash behavior when changing routing or deployment. Pages is static; no server-only feature or secret may be required at runtime.
 
-## Gates
+## Release, licensing, and safety
 
-1. Do not start full product implementation before `idea`, `problem` and
-   `money` are `go`.
-2. Research notes, interview preparation, an offer, a landing page and a manual
-   concierge delivery are allowed before product implementation when they are
-   the smallest way to test the next gate.
-3. A technical prototype before `money: go` requires an explicit decision in
-   `DECISIONS.md`, a time budget and a reason a cheaper test cannot answer the
-   question.
-4. Missing evidence stays `pending`. Never convert assumptions or compliments
-   into interviews, prepayments, customers or revenue.
-5. Each experiment has a deadline, budget, metric and precommitted success,
-   pivot and kill criteria.
-
-## Data safety
-
-- Do not commit customer names, phone numbers, email addresses, private
-  messages, contracts, payment details, credentials or tokens.
-- Store only anonymized aggregates and evidence references.
-- External outreach, publication, invoicing and payment actions require
-  explicit human authorization.
-- Scarcity, deadlines, testimonials and economic claims must be truthful and
-  verifiable.
-
-## Engineering handoff
-
-After `money: go`, define the smallest product change that removes a repeated
-bottleneck from a paid manual delivery. Preserve the commercial evidence and
-gate decisions in the implementation brief.
+- The user's 2026-10-09 request authorizes this MVP and GitHub Pages hosting. The dated `DECISIONS.md` entry supersedes the template's paid-validation prerequisite for this scope only.
+- `commercial-project.json` remains the source of truth for commercial evidence. Pending gates stay pending until supported by real evidence. Validate it with `python3 scripts/commercial-project.py check .`.
+- Code is MIT; original lessons and translations are CC BY 4.0. External resources retain their licenses. See `CONTENT-LICENSE.md`.
+- Never commit credentials, private messages, personal customer data, `.env`, service accounts, or payment information. Commit only sanitized examples.
+- External outreach, billing, spending, or publication beyond the authorized GitHub Pages scope requires explicit human authorization.
+- Keep these instructions operational. Put design explanations in `docs/`, change contracts in OpenSpec, and dated decisions in the append-only `DECISIONS.md`.

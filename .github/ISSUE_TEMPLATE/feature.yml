@@ -1,0 +1,23 @@
+name: Feature proposal / Предложение
+description: Suggest a focused improvement to the portal or agent workflow.
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Задача
+      description: Who needs this and what are they trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Smallest useful solution / Минимальное полезное решение
+      description: Explain the intended behavior and how it can be checked.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and constraints / Альтернативы и ограничения
+      description: Consider both languages, static hosting, and machine consumers where relevant.

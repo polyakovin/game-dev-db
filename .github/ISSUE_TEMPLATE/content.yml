@@ -1,0 +1,36 @@
+name: Content or translation / Материал или перевод
+description: Suggest a lesson, source, factual correction, or translation improvement.
+title: "[Content] "
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English or Russian. Link sources instead of copying complete external texts."
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type / Тип предложения
+      options:
+        - Factual correction / Исправление факта
+        - Translation / Перевод
+        - New lesson / Новый урок
+        - Resource or source / Источник
+    validations:
+      required: true
+  - type: input
+    id: lesson
+    attributes:
+      label: Lesson URL or topic / Адрес урока или тема
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Reader need and proposed change / Задача читателя и предложение
+      description: Explain the problem and the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sources and examples / Источники и примеры
+      description: Primary documentation is preferred. State engine and version when relevant.

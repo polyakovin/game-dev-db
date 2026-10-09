@@ -1,57 +1,27 @@
-# Commercial thesis — Game Dev DB
+# Project scope and commercial evidence — Game Dev DB
 
-## One-sentence hypothesis
+## Current scope, 2026-10-09
 
-For **[specific buyer]** who loses **[money/time/risk]** because of
-**[urgent problem]**, we deliver **[measurable result]** within **[time]** for
-**[price and currency]**.
+The owner requested an open-source, bilingual web knowledge base for game developers using AI-assisted workflows. The portal serves human readers and AI agents, accepts community contributions, includes original material and external resources, and is hosted on GitHub Pages at `https://polyakovin.github.io/game-dev-db/`.
 
-## Buyer
+This is an authorized open-source MVP, not a validated commercial offer. The owner's explicit request supersedes the initial template's requirement to validate paid demand before implementing this scope. See the dated entry in `DECISIONS.md`.
 
-- Segment:
-- Economic buyer:
-- User:
-- Reachable through:
-- Existing budget or current spend:
+## Intended value and validation limits
 
-## Problem evidence
+The working hypothesis is that concise, sourced lessons in Russian and English, with stable machine-readable exports, can help developers and agents make better game-development decisions. This is a product hypothesis. It is not evidence of an urgent paid problem, buyer demand, learning outcomes, or revenue.
 
-- Current workaround:
-- Cost/frequency:
-- Trigger to buy now:
-- What would make the buyer reject the offer:
-- Anonymized evidence refs:
+For the MVP, delivery can be checked directly: the static site builds, both languages render, content pairs validate, search works, agents can fetch the documented exports, and GitHub Pages serves the published build. These engineering checks do not substitute for user research or commercial validation.
 
-## Offer
+## Budget and boundaries
 
-- Promised result:
-- Delivery deadline:
-- Price:
-- Payment/prepayment terms:
-- Truthful guarantee or risk reversal:
-- What is explicitly not included:
+- Implementation time box: one implementation session, at most six founder hours.
+- Additional paid-service budget: zero. Use the existing repository and GitHub Pages without purchasing services.
+- Scope: initial lessons, resource links, bilingual navigation, search, public exports, contribution documentation, OpenSpec, automated checks, and static hosting.
+- Reassess at the end of the session on 2026-10-09. Record incomplete work honestly; reduce scope if the time box cannot be met.
+- Outreach, billing, payment collection, paid services, and broader publication campaigns are outside this authorization.
 
-## First-money plan
+## Retained commercial records
 
-- Deadline:
-- First channel:
-- Number of qualified contacts:
-- Offer format:
-- Smallest manual delivery:
+`commercial-project.json` remains the machine-readable source of truth for commercial evidence. Its gates stay `pending`; no interviews, prepayments, customers, or revenue are claimed by this MVP. `EXPERIMENTS.md` is retained for future explicitly designed experiments.
 
-## Unit economics
-
-- Revenue in first 30 days:
-- Direct costs in first 30 days:
-- Founder hours in first 30 days:
-- 30-day contribution margin:
-- Contribution margin per founder hour:
-- Expected repeat/referral mechanism:
-
-## Kill conditions
-
-- Stop date:
-- Maximum cash budget:
-- Maximum founder hours:
-- Evidence that triggers `pivot`:
-- Evidence that triggers `kill`:
+If a commercial offer is proposed later, define the buyer, problem, offer, deadline, budget, and success/pivot/kill criteria before testing. Record real evidence without personal data and update commercial gate decisions only when that evidence supports them.

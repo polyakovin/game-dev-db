@@ -1,0 +1,106 @@
+---
+import { render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import { getLessons } from '../../../lib/content';
+import { path, REPO, ui } from '../../../lib/site';
+export async function getStaticPaths() {
+  return (await getLessons()).map((lesson) => ({
+    params: { lang: lesson.data.lang, id: lesson.data.id },
+    props: { lesson },
+  }));
+}
+const { lesson } = Astro.props;
+const { data } = lesson;
+const t = ui[data.lang];
+const { Content, headings } = await render(lesson);
+const related = (await getLessons(data.lang))
+  .filter((l) => l.data.id !== data.id && l.data.category === data.category)
+  .slice(0, 2);
+---
+
+<Layout
+  lang={data.lang}
+  title={data.title}
+  description={data.description}
+  alternate={`lessons/${data.id}/`}
+>
+  <a class="back-link" href={path(`${data.lang}/`)}>
+    ← {t.back}
+  </a>
+  <header class="article-header">
+    <span class:list={['category-tag', data.category]}>
+      <span></span>
+      {t[data.category]}
+    </span>
+    <h1>{data.title}</h1>
+    <p>{data.description}</p>
+    <div class="article-meta">
+      <span>{t[data.level]}</span>
+      <span>
+        {data.minutes} {t.minutes}
+      </span>
+      <span>
+        {t.updated}: <time datetime={data.updatedAt}>{data.updatedAt}</time>
+      </span>
+    </div>
+  </header>
+  <div class="article-layout">
+    <article class="prose">
+      <Content />
+      <section class="article-sources" id="sources">
+        <h2>{t.sources}</h2>
+        <ul>
+          {data.sources.map((source) => (
+            <li>
+              <a href={source.url}>{source.title} ↗</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <div class="article-license">CC BY 4.0 · Game Dev DB contributors</div>
+    </article>
+    <aside class="article-aside">
+      <div class="sticky-toc">
+        <p class="nav-label">{t.toc}</p>
+        <nav aria-label={t.toc}>
+          {headings
+            .filter((h) => h.depth === 2)
+            .map((h) => (
+              <a href={`#${h.slug}`}>{h.text}</a>
+            ))}
+          <a href="#sources">{t.sources}</a>
+        </nav>
+        <div class="article-tools">
+          <a href={path(`content/${data.lang}/${data.id}.md`)}>
+            <Icon name="code" size={17} />
+            {t.markdown}
+          </a>
+          <a
+            href={`${REPO}/edit/main/src/content/lessons/${data.lang}/${data.id}.md`}
+          >
+            <Icon name="github" size={17} />
+            {t.edit}
+          </a>
+        </div>
+      </div>
+    </aside>
+  </div>
+  {related.length > 0 && (
+    <section class="related">
+      <h2>
+        {data.lang === 'ru'
+          ? 'Рядом с этой темой'
+          : 'Explore this topic further'}
+      </h2>
+      <div class="related-links">
+        {related.map(({ data: d }) => (
+          <a href={path(`${d.lang}/lessons/${d.id}/`)}>
+            {d.title}
+            <Icon name="arrow" size={18} />
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</Layout>

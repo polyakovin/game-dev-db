@@ -1,0 +1,158 @@
+---
+import '../styles/global.css';
+import Icon from '../components/Icon.astro';
+import { path, absolute, REPO, ui, categories, type Locale } from '../lib/site';
+interface Props {
+  lang: Locale;
+  title: string;
+  description?: string;
+  section?: 'catalog' | 'resources' | 'agents';
+  alternate?: string;
+}
+const {
+  lang,
+  title,
+  description = lang === 'ru'
+    ? 'Принципы разработки игр для людей и ИИ-агентов. Открытая база знаний на русском и английском.'
+    : 'Game development principles for people and AI agents. An open knowledge base in Russian and English.',
+  section = 'catalog',
+  alternate = '',
+} = Astro.props;
+const t = ui[lang];
+const other = lang === 'ru' ? 'en' : 'ru';
+const canonical = new URL(Astro.url.pathname, 'https://polyakovin.github.io')
+  .href;
+const nav = [
+  { key: 'catalog', href: path(`${lang}/`), icon: 'book' },
+  { key: 'resources', href: path(`${lang}/resources/`), icon: 'layers' },
+  { key: 'agents', href: path(`${lang}/for-agents/`), icon: 'code' },
+] as const;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f6f5f0" />
+    <title>{title} · Game Dev DB</title>
+    <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="ru" href={absolute(`ru/${alternate}`)} />
+    <link rel="alternate" hreflang="en" href={absolute(`en/${alternate}`)} />
+    <link
+      rel="alternate"
+      type="application/json"
+      href={path('api/v1/manifest.json')}
+      title="Machine-readable manifest"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${title} · Game Dev DB`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : 'en_US'} />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">
+      {t.skip}
+    </a>
+    <aside class="sidebar">
+      <a class="brand" href={path(`${lang}/`)} aria-label="Game Dev DB">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+        <span>
+          game dev<span class="brand-db">/ db</span>
+        </span>
+      </a>
+      <div class="sidebar-caption">{t.tagline}</div>
+      <nav aria-label={t.navigation}>
+        <p class="nav-label">{t.navigation}</p>
+        {nav.map(({ key, href, icon }) => (
+          <a
+            href={href}
+            class:list={['nav-item', { active: section === key }]}
+            aria-current={section === key ? 'page' : undefined}
+          >
+            <Icon name={icon} />
+            <span>{t[key]}</span>
+            {section === key && <span class="nav-dot"></span>}
+          </a>
+        ))}
+        <p class="nav-label category-nav-label">{t.categories}</p>
+        <div class="category-nav">
+          {categories.map((category, i) => (
+            <a href={path(`${lang}/?category=${category}#catalog`)}>
+              <span class="category-number">0{i + 1}</span>
+              {t[category]}
+            </a>
+          ))}
+        </div>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="open-label">
+          <span></span>
+          {t.open}
+        </div>
+        <p>
+          {lang === 'ru'
+            ? 'Хорошие игры начинаются с понятных принципов.'
+            : 'Good games start with principles you understand.'}
+        </p>
+        <a href={`${REPO}/blob/main/CONTRIBUTING.md`} class="contribute-link">
+          {t.contribute}
+          <Icon name="arrow" size={16} />
+        </a>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb">
+          <span class="mobile-brand">game dev / db</span>
+          <span class="desktop-crumb">
+            Game Dev DB <span class="slash">/</span> <span>{t[section]}</span>
+          </span>
+        </div>
+        <div class="topbar-actions">
+          <div
+            class="language-switch"
+            aria-label={lang === 'ru' ? 'Язык' : 'Language'}
+          >
+            <span aria-current="true">{lang.toUpperCase()}</span>
+            <a
+              data-language-switch
+              href={path(`${other}/${alternate}`)}
+              lang={other}
+              hreflang={other}
+            >
+              {other.toUpperCase()}
+            </a>
+          </div>
+          <a class="github-link" href={REPO} aria-label="GitHub">
+            <Icon name="github" size={18} />
+            <span>GitHub</span>
+            <Icon name="external" size={13} />
+          </a>
+        </div>
+      </header>
+      <nav class="mobile-nav" aria-label={t.navigation}>
+        {nav.map(({ key, href }) => (
+          <a href={href} aria-current={section === key ? 'page' : undefined}>
+            {t[key]}
+          </a>
+        ))}
+      </nav>
+      <main id="main" tabindex="-1">
+        <slot />
+      </main>
+      <footer>
+        <span>{t.footer}</span>
+        <a href={`${REPO}/blob/main/CONTENT-LICENSE.md`}>{t.license}</a>
+      </footer>
+    </div>
+  </body>
+</html>

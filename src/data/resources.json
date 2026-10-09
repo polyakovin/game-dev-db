@@ -1,0 +1,182 @@
+[
+  {
+    "id": "game-loop-pattern",
+    "title": {
+      "ru": "Игровой цикл: Game Programming Patterns",
+      "en": "Game Loop: Game Programming Patterns"
+    },
+    "description": {
+      "ru": "Как связаны обработка ввода, обновление мира и отрисовка.",
+      "en": "How input processing, world updates, and rendering fit together."
+    },
+    "url": "https://gameprogrammingpatterns.com/game-loop.html",
+    "category": "foundations",
+    "language": "en",
+    "kind": "book"
+  },
+  {
+    "id": "state-pattern",
+    "title": {
+      "ru": "Состояния: Game Programming Patterns",
+      "en": "State: Game Programming Patterns"
+    },
+    "description": {
+      "ru": "Авторская глава о конечных автоматах, состояниях и переходах.",
+      "en": "The author’s chapter on finite state machines, states, and transitions."
+    },
+    "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+    "category": "foundations",
+    "language": "en",
+    "kind": "book"
+  },
+  {
+    "id": "fixed-timestep",
+    "title": {
+      "ru": "Fix Your Timestep!",
+      "en": "Fix Your Timestep!"
+    },
+    "description": {
+      "ru": "Статья Гленна Фидлера о выборе шага симуляции и обработке накопленного времени.",
+      "en": "Glenn Fiedler’s article on simulation steps and accumulated time."
+    },
+    "url": "https://github.com/mas-bandwidth/gafferongames/blob/main/content/post/fix_your_timestep.md",
+    "category": "engineering",
+    "language": "en",
+    "kind": "article"
+  },
+  {
+    "id": "animation-frame",
+    "title": {
+      "ru": "requestAnimationFrame на MDN",
+      "en": "requestAnimationFrame on MDN"
+    },
+    "description": {
+      "ru": "Вызов перед перерисовкой, временная метка и поведение фоновых вкладок.",
+      "en": "Animation callbacks, timestamps, and background-tab behavior."
+    },
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "godot-input",
+    "title": {
+      "ru": "Godot: обработка ввода",
+      "en": "Godot: input handling"
+    },
+    "description": {
+      "ru": "События, действия InputMap и порядок прохождения ввода через интерфейс.",
+      "en": "Events, InputMap actions, and input propagation through the interface."
+    },
+    "url": "https://docs.godotengine.org/en/stable/tutorials/inputs/inputevent.html",
+    "category": "foundations",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "collision-2d",
+    "title": {
+      "ru": "MDN: столкновения в 2D",
+      "en": "MDN: 2D collision detection"
+    },
+    "description": {
+      "ru": "Прямоугольники, окружности и разделение грубой и точной проверки.",
+      "en": "Rectangles, circles, and separating broad-phase and narrow-phase checks."
+    },
+    "url": "https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection",
+    "category": "engineering",
+    "language": "en",
+    "kind": "article"
+  },
+  {
+    "id": "godot-physics",
+    "title": {
+      "ru": "Godot: введение в физику",
+      "en": "Godot: physics introduction"
+    },
+    "description": {
+      "ru": "Типы физических объектов, формы, слои и маски взаимодействия.",
+      "en": "Physics object types, shapes, collision layers, and masks."
+    },
+    "url": "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "godot-performance",
+    "title": {
+      "ru": "Godot: измерение производительности",
+      "en": "Godot: performance measurement"
+    },
+    "description": {
+      "ru": "Поиск узких мест и проверка результатов оптимизации.",
+      "en": "Finding bottlenecks and checking the results of optimization."
+    },
+    "url": "https://docs.godotengine.org/en/stable/tutorials/performance/general_optimization.html",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "unity-prototyping",
+    "title": {
+      "ru": "Unity Learn: прототипирование",
+      "en": "Unity Learn: prototyping"
+    },
+    "description": {
+      "ru": "Выбор формы прототипа и проверка основы игрового опыта.",
+      "en": "Choosing a prototype approach and investigating the core experience."
+    },
+    "url": "https://learn.unity.com/pathway/creative-core/unit/prototyping",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "accessible-motion",
+    "title": {
+      "ru": "Xbox: доступные настройки движения",
+      "en": "Xbox: accessible motion settings"
+    },
+    "description": {
+      "ru": "Рекомендации по управлению движением камеры и отвлекающими эффектами.",
+      "en": "Guidance for camera movement controls and distracting visual effects."
+    },
+    "url": "https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation"
+  },
+  {
+    "id": "openspec",
+    "title": {
+      "ru": "OpenSpec",
+      "en": "OpenSpec"
+    },
+    "description": {
+      "ru": "Официальный репозиторий инструмента разработки через спецификации.",
+      "en": "The official repository for specification-driven development tooling."
+    },
+    "url": "https://github.com/Fission-AI/OpenSpec",
+    "category": "workflow",
+    "language": "en",
+    "kind": "tool"
+  },
+  {
+    "id": "github-contributing",
+    "title": {
+      "ru": "GitHub: вклад в проект",
+      "en": "GitHub: contributing to a project"
+    },
+    "description": {
+      "ru": "Официальное руководство по fork, веткам и pull request.",
+      "en": "The official guide to forks, branches, and pull requests."
+    },
+    "url": "https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project",
+    "category": "workflow",
+    "language": "en",
+    "kind": "documentation"
+  }
+]

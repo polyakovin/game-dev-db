@@ -54,3 +54,11 @@ _файлы/
 .playwright-mcp/
 .DS_Store
 # END Projects Control Panel Git safety
+
+# Generated site and development artifacts
+node_modules/
+dist/
+.astro/
+test-results/
+playwright-report/
+.env.local

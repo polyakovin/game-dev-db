@@ -1,0 +1,47 @@
+---
+import { path } from '../lib/site';
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>404 · Game Dev DB</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        background: #f7f6f2;
+        color: #282b29;
+        max-width: 600px;
+        margin: 15vh auto;
+        padding: 24px;
+      }
+      h1 {
+        font-size: 42px;
+      }
+      p {
+        line-height: 1.8;
+      }
+      a {
+        color: #c75031;
+      }
+    </style>
+  </head>
+  <body>
+    <p>GAME DEV DB / 404</p>
+    <h1>
+      Здесь пока пусто.
+      <br />
+      <span lang="en">Nothing here yet.</span>
+    </h1>
+    <p>Страница не найдена. / Page not found.</p>
+    <p>
+      <a href={path('ru/')}>На главную</a> ·{' '}
+      <a href={path('en/')} lang="en">
+        Knowledge base
+      </a>
+    </p>
+  </body>
+</html>

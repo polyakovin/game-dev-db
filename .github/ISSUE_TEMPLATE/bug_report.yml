@@ -1,0 +1,32 @@
+name: Bug report / Ошибка сайта
+description: Report broken behavior, navigation, search, or exports.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Write in English or Russian. Do not include secrets or personal data. For security issues, read SECURITY.md."
+  - type: input
+    id: url
+    attributes:
+      label: Affected URL / Адрес страницы
+      placeholder: https://polyakovin.github.io/game-dev-db/ru/
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and actual result / Действия и результат
+      description: Include the browser or client and what you did.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / Ожидаемый результат
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context / Подробности
+      description: Optional screenshots, logs with secrets removed, or a proposed fix.

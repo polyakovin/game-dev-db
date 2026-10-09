@@ -1,0 +1,23 @@
+schema: spec-driven
+
+context: |
+  Game Dev DB is an open-source, bilingual (Russian and English) game development
+  knowledge portal for humans and AI coding agents. Astro generates a static site
+  for GitHub Pages at https://polyakovin.github.io/game-dev-db/.
+  Markdown in src/content/lessons is the source for HTML, JSON and Markdown exports.
+  Node 24, npm, TypeScript. Code MIT; original educational content CC BY 4.0.
+  Run npm run verify and npm run test:e2e before publishing.
+  Never fabricate evidence or copy third-party content. Link primary sources.
+
+rules:
+  proposal:
+    - Describe the reader or agent outcome and the smallest coherent change.
+    - State localization and machine-readable content effects.
+  specs:
+    - Use testable SHALL requirements and WHEN/THEN scenarios.
+    - Include GitHub Pages base-path behavior and non-JavaScript access when
+      relevant.
+  tasks:
+    - Include content validation and relevant browser checks.
+githubCopilot:
+  cloudAgent: false
