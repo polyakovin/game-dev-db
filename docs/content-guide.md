@@ -82,6 +82,10 @@ Add independent resource recommendations to `src/data/resources.json`. Each reco
 
 Keep resource URLs unique. A translated description does not mean the destination itself is available in that language; set `language` according to the linked resource. Listing a resource does not relicense its contents.
 
+References may add localized `authors`, `access` and `practice` objects, each with nonempty `ru` and `en` values. Identify authors or creators in new recommendations; explain paid access and platform requirements without maintaining volatile prices. Practice prompts are original suggestions, not copied book exercises.
+
+The optional `format` is `channel`, `game` or `course`. Preserve the existing coarse `kind` values for v1 clients: channels and courses use `documentation`, creation/practice games use `tool`. The UI displays the specific format when present. All source fields pass through unchanged to `api/v1/resources.json`. The resources page groups each record once into books, channels, practice, research/courses or development documentation. See [reference selection notes](research/design-references.md) for provenance and verification limits.
+
 ## Translation review
 
 A Russian and English pair should teach the same principle, with equivalent examples, warnings, and sources. Translate for meaning and natural phrasing; do not copy awkward word order. Keep API names and conventional technical terms when translation would obscure them. Explain a specialist term the first time it appears.

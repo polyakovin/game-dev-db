@@ -106,10 +106,14 @@ test('catalog, article and resources fit a narrow mobile viewport', async ({
 
 test('catalog and articles remain readable without JavaScript', async ({
   browser,
+  baseURL,
 }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    baseURL,
+  });
   const page = await context.newPage();
-  await page.goto(`http://127.0.0.1:4321${catalog}`);
+  await page.goto(catalog);
   await expect(page.locator(visibleCards)).toHaveCount(lessonCount);
   await page.locator(`a[href="${base}/ru/lessons/game-loop/"]`).first().click();
   await expect(page.locator('h1')).toBeVisible();

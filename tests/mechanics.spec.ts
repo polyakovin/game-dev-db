@@ -105,10 +105,14 @@ for (const lang of ['ru', 'en'] as const) {
     });
     test(`${lang}/${c.id}: complete reading without JavaScript`, async ({
       browser,
+      baseURL,
     }) => {
-      const context = await browser.newContext({ javaScriptEnabled: false });
+      const context = await browser.newContext({
+        javaScriptEnabled: false,
+        baseURL,
+      });
       const page = await context.newPage();
-      await page.goto(`http://127.0.0.1:4321${route}`);
+      await page.goto(route);
       await expect(page.locator('.mechanics-controls')).toBeHidden();
       await expect(page.locator('[data-variant]')).toHaveCount(total);
       await page.locator('[data-family] summary').first().click();

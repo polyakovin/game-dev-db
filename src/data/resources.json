@@ -208,5 +208,497 @@
     "category": "workflow",
     "language": "en",
     "kind": "documentation"
+  },
+  {
+    "id": "schell-art-of-game-design",
+    "title": {
+      "ru": "Геймдизайн. Как создать игру, в которую будут играть все",
+      "en": "The Art of Game Design: Russian edition"
+    },
+    "description": {
+      "ru": "Призмы Шелла помогают рассматривать игру с разных сторон: опыт игрока, правила, интерфейс, история и итерации. Удобная книга для проверки своих дизайн-решений.",
+      "en": "Schell’s lenses examine player experience, rules, interfaces, stories and iteration. A broad reference for questioning your design decisions; this link is the Russian edition."
+    },
+    "url": "https://alpinabook.ru/catalog/book-geymdizayn/",
+    "category": "design",
+    "language": "ru",
+    "kind": "book",
+    "authors": {
+      "ru": "Джесси Шелл",
+      "en": "Jesse Schell"
+    },
+    "access": {
+      "ru": "Платная книга; на сайте издателя есть описание и фрагмент.",
+      "en": "Paid book; publisher overview and sample available."
+    }
+  },
+  {
+    "id": "challenges-for-game-designers",
+    "title": {
+      "ru": "Challenges for Game Designers",
+      "en": "Challenges for Game Designers"
+    },
+    "description": {
+      "ru": "Упражнения по правилам, ограничениям, случайности и прототипированию. Многие задачи можно решать на бумаге, без движка и программирования. Ссылка ведёт на сайт книги.",
+      "en": "Exercises in rules, constraints, chance and prototyping. Many challenges can be explored with paper rather than an engine or programming. Links to the book’s companion site."
+    },
+    "url": "https://designgames.wordpress.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Brenda Brathwaite, Ian Schreiber",
+      "en": "Brenda Brathwaite, Ian Schreiber"
+    },
+    "access": {
+      "ru": "Платная книга; сайт с оглавлением и дополнительными материалами бесплатный.",
+      "en": "Paid book; companion website, contents and extra materials are free."
+    }
+  },
+  {
+    "id": "creating-game-stories",
+    "title": {
+      "ru": "Как создавать истории. Основы игровой сценаристики и нарративного дизайна за 12 шагов",
+      "en": "How to Create Stories: game writing and narrative design in 12 steps"
+    },
+    "description": {
+      "ru": "Введение в игровую сценаристику: мир, персонажи, диалоги и рабочая документация. Полезно для первого нарративного проекта и понимания работы сценариста в команде.",
+      "en": "A Russian introduction to game writing: worlds, characters, dialogue and production documents. Useful for a first narrative project and understanding the writer’s role in a team."
+    },
+    "url": "https://bombora.ru/book/86200/",
+    "category": "design",
+    "language": "ru",
+    "kind": "book",
+    "authors": {
+      "ru": "Наталья Андрианова, Светлана Яковлева",
+      "en": "Natalya Andrianova, Svetlana Yakovleva"
+    },
+    "access": {
+      "ru": "Платная книга; описание и отрывок у издателя.",
+      "en": "Paid Russian book; publisher overview and excerpt."
+    }
+  },
+  {
+    "id": "architecture-of-video-game-worlds",
+    "title": {
+      "ru": "Архитектура видеоигровых миров. Уровень пройден!",
+      "en": "Architecture of Video Game Worlds: Level Complete!"
+    },
+    "description": {
+      "ru": "Архитектурный взгляд на игровые пространства: масштаб, устройство мира и связь окружения с опытом игрока. Для левел-дизайна, окружения и повествования через пространство.",
+      "en": "An architectural view of game spaces, scale, world structure and player experience. Useful for level design, environments and environmental storytelling. Russian-language book."
+    },
+    "url": "https://ast.ru/book/arkhitektura-videoigrovykh-mirov-uroven-proyden-864235/",
+    "category": "design",
+    "language": "ru",
+    "kind": "book",
+    "authors": {
+      "ru": "Мария Важенич, Артемий Козлов, Иероним К.",
+      "en": "Maria Vazhenich, Artemy Kozlov, Ieronim K."
+    },
+    "access": {
+      "ru": "Платная книга; описание и отрывок у издателя.",
+      "en": "Paid Russian book; publisher overview and excerpt."
+    }
+  },
+  {
+    "id": "platformer-toolkit",
+    "title": {
+      "ru": "Platformer Toolkit",
+      "en": "Platformer Toolkit"
+    },
+    "description": {
+      "ru": "Интерактивное эссе о том, как ощущается управление в платформере. Меняйте параметры движения и прыжка и сразу пробуйте результат на одном уровне.",
+      "en": "An interactive essay about platformer controls. Change movement and jump parameters, then immediately test how the same level feels."
+    },
+    "url": "https://gmtk.itch.io/platformer-toolkit",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Марк Браун / Game Maker’s Toolkit",
+      "en": "Mark Brown / Game Maker’s Toolkit"
+    },
+    "access": {
+      "ru": "Бесплатно в браузере; также есть версии для компьютера.",
+      "en": "Free in the browser; desktop downloads are also available."
+    },
+    "practice": {
+      "ru": "Измените только один параметр прыжка, пройдите тот же участок и запишите, какие действия стали проще или сложнее.",
+      "en": "Change one jump parameter, replay the same section and note which actions become easier or harder."
+    }
+  },
+  {
+    "id": "curious-archive",
+    "title": {
+      "ru": "Curious Archive",
+      "en": "Curious Archive"
+    },
+    "description": {
+      "ru": "Видеоэссе о вымышленных мирах, существах и историях. Источник идей для миростроения и нарратива; используйте отдельные разборы как повод исследовать собственный мир.",
+      "en": "Video essays about fictional worlds, creatures and stories. A source of worldbuilding and narrative inspiration; use individual analyses to question your own fictional world."
+    },
+    "url": "https://www.youtube.com/@CuriousArchive/videos",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Curious Archive",
+      "en": "Curious Archive"
+    },
+    "access": {
+      "ru": "Бесплатные видео на YouTube.",
+      "en": "Free videos on YouTube."
+    },
+    "format": "channel"
+  },
+  {
+    "id": "theory-of-fun",
+    "title": {
+      "ru": "A Theory of Fun for Game Design",
+      "en": "A Theory of Fun for Game Design"
+    },
+    "description": {
+      "ru": "Раф Костер связывает удовольствие от игры с освоением закономерностей. Короткая, иллюстрированная отправная точка для размышлений об обучении, скуке и сложности.",
+      "en": "Raph Koster connects fun with learning patterns. A short, illustrated starting point for thinking about learning, boredom and challenge."
+    },
+    "url": "https://theoryoffun.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Раф Костер",
+      "en": "Raph Koster"
+    },
+    "access": {
+      "ru": "Платная книга; на авторском сайте есть фрагмент и материалы.",
+      "en": "Paid book; the author’s site includes an excerpt and resources."
+    }
+  },
+  {
+    "id": "rules-of-play",
+    "title": {
+      "ru": "Rules of Play: Game Design Fundamentals",
+      "en": "Rules of Play: Game Design Fundamentals"
+    },
+    "description": {
+      "ru": "Подробный фундамент о правилах, системах, осмысленной игре и культуре. Подходит, когда нужен общий язык для анализа игр и обсуждения дизайна в команде.",
+      "en": "A detailed foundation in rules, systems, meaningful play and culture. Useful for developing a shared vocabulary for analyzing games and discussing design."
+    },
+    "url": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Кэти Сален, Эрик Циммерман",
+      "en": "Katie Salen, Eric Zimmerman"
+    },
+    "access": {
+      "ru": "Платная книга; описание и оглавление у MIT Press.",
+      "en": "Paid book; overview and contents from MIT Press."
+    }
+  },
+  {
+    "id": "game-feel-book",
+    "title": {
+      "ru": "Game Feel: A Game Designer’s Guide to Virtual Sensation",
+      "en": "Game Feel: A Game Designer’s Guide to Virtual Sensation"
+    },
+    "description": {
+      "ru": "Стив Суинк разбирает ощущение управления: реакцию на ввод, движение, пространство и полировку. Полезно, когда механика работает, но играть пока не приятно.",
+      "en": "Steve Swink examines how input, movement, space and polish shape the sensation of control. Useful when a mechanic works but still feels unsatisfying."
+    },
+    "url": "https://www.routledge.com/Game-Feel-A-Game-Designers-Guide-to-Virtual-Sensation/Swink/p/book/9780429178566",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Стив Суинк",
+      "en": "Steve Swink"
+    },
+    "access": {
+      "ru": "Платная книга; страница издателя.",
+      "en": "Paid book; publisher page."
+    }
+  },
+  {
+    "id": "game-design-workshop",
+    "title": {
+      "ru": "Game Design Workshop",
+      "en": "Game Design Workshop"
+    },
+    "description": {
+      "ru": "Практический подход Трейси Фуллертон: бумажные прототипы, цели опыта, плейтесты и итерации. Хорошая опора для проекта, который нужно регулярно проверять на игроках.",
+      "en": "Tracy Fullerton’s practical approach to paper prototypes, experience goals, playtesting and iteration. A useful structure for a project that needs repeated player feedback."
+    },
+    "url": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Трейси Фуллертон",
+      "en": "Tracy Fullerton"
+    },
+    "access": {
+      "ru": "Платная книга; страница издателя.",
+      "en": "Paid book; publisher page."
+    }
+  },
+  {
+    "id": "game-makers-toolkit",
+    "title": {
+      "ru": "Game Maker’s Toolkit",
+      "en": "Game Maker’s Toolkit"
+    },
+    "description": {
+      "ru": "Разборы дизайна конкретных игр: обучение, уровни, сложность, доступность и игровые системы. Смотрите с вопросом о решении, которое хотите проверить в своём проекте.",
+      "en": "Analyses of teaching, levels, difficulty, accessibility and game systems. Watch with a specific design decision from your own project in mind."
+    },
+    "url": "https://www.youtube.com/@GMTK/videos",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Марк Браун",
+      "en": "Mark Brown"
+    },
+    "access": {
+      "ru": "Бесплатные видео на YouTube.",
+      "en": "Free videos on YouTube."
+    },
+    "format": "channel"
+  },
+  {
+    "id": "gdc-talks",
+    "title": {
+      "ru": "GDC: доклады разработчиков",
+      "en": "GDC: developer talks"
+    },
+    "description": {
+      "ru": "Доклады и разборы производства от самих разработчиков. Ищите темы про дизайн систем, уровни, нарратив и плейтесты; учитывайте контекст команды и конкретной игры.",
+      "en": "Talks and production breakdowns by developers themselves. Explore systems, levels, narrative and playtesting while accounting for each team and game’s context."
+    },
+    "url": "https://www.youtube.com/@Gdconf/videos",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Game Developers Conference и приглашённые разработчики",
+      "en": "Game Developers Conference and guest developers"
+    },
+    "access": {
+      "ru": "На канале есть бесплатные доклады; доступность остальных материалов GDC отличается.",
+      "en": "The channel offers free talks; access to other GDC materials varies."
+    },
+    "format": "channel"
+  },
+  {
+    "id": "sakurai-creating-games",
+    "title": {
+      "ru": "Masahiro Sakurai on Creating Games",
+      "en": "Masahiro Sakurai on Creating Games"
+    },
+    "description": {
+      "ru": "Короткие объяснения игровых решений от создателя Kirby и Super Smash Bros.: обратная связь, темп, управление и представление информации. Ссылка ведёт на английский канал.",
+      "en": "Short explanations of feedback, pacing, controls and information presentation by the creator of Kirby and Super Smash Bros. Links to the English channel."
+    },
+    "url": "https://www.youtube.com/@sora_sakurai_en/videos",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Масахиро Сакурай",
+      "en": "Masahiro Sakurai"
+    },
+    "access": {
+      "ru": "Бесплатные видео на YouTube.",
+      "en": "Free videos on YouTube."
+    },
+    "format": "channel"
+  },
+  {
+    "id": "super-mario-maker-2",
+    "title": {
+      "ru": "Super Mario Maker 2",
+      "en": "Super Mario Maker 2"
+    },
+    "description": {
+      "ru": "Редактор уровней Mario для практики левел-дизайна. Тренируйтесь вводить механику, развивать её и проверять понятность маршрута. Это игра с редактором, а не полный курс.",
+      "en": "A Mario level editor for practicing level design. Introduce a mechanic, develop it and test route readability. A creation game rather than a complete design course."
+    },
+    "url": "https://www.nintendo.com/us/store/products/super-mario-maker-2-switch/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Nintendo",
+      "en": "Nintendo"
+    },
+    "access": {
+      "ru": "Платная игра для Nintendo Switch. Для сетевых функций нужна Nintendo Switch Online.",
+      "en": "Paid Nintendo Switch game. Online features require Nintendo Switch Online."
+    },
+    "format": "game",
+    "practice": {
+      "ru": "Сделайте короткий уровень: безопасное знакомство с одной механикой, её вариация и финальная проверка. Дайте другому игроку пройти без подсказок.",
+      "en": "Build a short level: a safe introduction to one mechanic, a variation and a final test. Ask another player to play without hints."
+    }
+  },
+  {
+    "id": "game-builder-garage",
+    "title": {
+      "ru": "Game Builder Garage",
+      "en": "Game Builder Garage"
+    },
+    "description": {
+      "ru": "Обучающие задания Nintendo и визуальная сборка собственных маленьких игр. Помогает связать ввод, правила, объекты и обратную связь в работающий прототип.",
+      "en": "Nintendo’s guided lessons and visual construction of small games. Connect input, rules, objects and feedback in a working prototype."
+    },
+    "url": "https://www.nintendo.com/au/games/nintendo-switch/game-builder-garage/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Nintendo",
+      "en": "Nintendo"
+    },
+    "access": {
+      "ru": "Платная игра для Nintendo Switch.",
+      "en": "Paid Nintendo Switch game."
+    },
+    "format": "game",
+    "practice": {
+      "ru": "После одного урока измените условие победы в прототипе и проверьте, понял ли новый игрок цель без объяснений.",
+      "en": "After one lesson, change a prototype’s win condition and test whether a new player understands the goal without explanation."
+    }
+  },
+  {
+    "id": "baba-is-you",
+    "title": {
+      "ru": "Baba Is You",
+      "en": "Baba Is You"
+    },
+    "description": {
+      "ru": "Головоломка, в которой можно менять сами правила. Полезный материал для анализа взаимодействий, неожиданных следствий и обучения через маленькие уровни.",
+      "en": "A puzzle game in which the rules themselves can change. Useful for analyzing interactions, unexpected consequences and teaching through small levels."
+    },
+    "url": "https://hempuli.itch.io/baba",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Арви Тейкари / Hempuli",
+      "en": "Arvi Teikari / Hempuli"
+    },
+    "access": {
+      "ru": "Платная игра; по ссылке версии для Windows, macOS и Linux.",
+      "en": "Paid game; the linked page offers Windows, macOS and Linux versions."
+    },
+    "format": "game",
+    "practice": {
+      "ru": "Разберите один уровень: какое правило он вводит, какое неверное предположение проверяет и какие объекты можно убрать, сохранив идею задачи?",
+      "en": "Analyze one level: which rule does it teach, which mistaken assumption does it challenge, and which objects could be removed while preserving the puzzle?"
+    }
+  },
+  {
+    "id": "puzzlescript",
+    "title": {
+      "ru": "PuzzleScript",
+      "en": "PuzzleScript"
+    },
+    "description": {
+      "ru": "Небольшой открытый движок и браузерный редактор головоломок с текстовыми правилами. Подходит для быстрого исследования механики на клетчатом поле.",
+      "en": "A small open-source puzzle engine and browser editor using text rules. Useful for quickly exploring a mechanic on a grid."
+    },
+    "url": "https://www.puzzlescript.net/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Стивен Лавелл и участники проекта",
+      "en": "Stephen Lavelle and contributors"
+    },
+    "access": {
+      "ru": "Бесплатный браузерный редактор и открытый исходный код.",
+      "en": "Free browser editor and open-source code."
+    },
+    "practice": {
+      "ru": "Измените одно правило в готовом примере и создайте три уровня: знакомство, взаимодействие и неожиданное следствие.",
+      "en": "Change one rule in an example and create three levels: introduction, interaction and an unexpected consequence."
+    }
+  },
+  {
+    "id": "twine",
+    "title": {
+      "ru": "Twine",
+      "en": "Twine"
+    },
+    "description": {
+      "ru": "Открытый инструмент для интерактивных историй и ветвящихся диалогов. Простую историю можно собрать без кода, затем добавить переменные и условия.",
+      "en": "An open-source tool for interactive stories and branching dialogue. Build a simple story without code, then add variables and conditions."
+    },
+    "url": "https://twinery.org/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Сообщество Twine",
+      "en": "Twine community"
+    },
+    "access": {
+      "ru": "Бесплатно в браузере и в настольном приложении.",
+      "en": "Free browser and desktop versions."
+    },
+    "practice": {
+      "ru": "Соберите сцену с двумя решениями. Пусть поздняя реплика меняется в зависимости от первого выбора, а ветки снова сходятся.",
+      "en": "Build a scene with two decisions. Make a later line react to the first choice, then merge the branches again."
+    }
+  },
+  {
+    "id": "mda-framework",
+    "title": {
+      "ru": "MDA: Mechanics, Dynamics, Aesthetics",
+      "en": "MDA: Mechanics, Dynamics, Aesthetics"
+    },
+    "description": {
+      "ru": "Короткая научная статья о связи правил, поведения системы и переживаний игрока. Используйте как аналитическую модель и сверяйте выводы с плейтестом.",
+      "en": "A short research paper connecting rules, system behavior and player experience. Use it as an analytical model and compare your conclusions with playtests."
+    },
+    "url": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
+    "category": "design",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Робин Ханике, Марк Леблан, Роберт Зубек",
+      "en": "Robin Hunicke, Marc LeBlanc, Robert Zubek"
+    },
+    "access": {
+      "ru": "Бесплатный PDF статьи.",
+      "en": "Free paper PDF."
+    }
+  },
+  {
+    "id": "mit-game-design-course",
+    "title": {
+      "ru": "MIT OpenCourseWare: Game Design",
+      "en": "MIT OpenCourseWare: Game Design"
+    },
+    "description": {
+      "ru": "Открытые материалы университетского курса: лекции, чтение и задания по разработке и тестированию игр. Подойдут для последовательной практики в небольшой группе.",
+      "en": "Open university course materials with lectures, readings and assignments for designing and testing games. Useful for structured practice with a small group."
+    },
+    "url": "https://ocw.mit.edu/courses/cms-608-game-design-spring-2014/",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "MIT OpenCourseWare",
+      "en": "MIT OpenCourseWare"
+    },
+    "access": {
+      "ru": "Материалы курса бесплатные; часть рекомендованных книг платная.",
+      "en": "Course materials are free; some recommended books are paid."
+    },
+    "format": "course"
   }
 ]

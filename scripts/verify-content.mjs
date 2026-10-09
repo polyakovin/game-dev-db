@@ -212,6 +212,31 @@ for (const [index, resource] of resources.entries()) {
     location,
     'invalid resource kind',
   );
+  if (resource.format !== undefined) {
+    check(
+      ['channel', 'game', 'course'].includes(resource.format),
+      location,
+      'format must be channel, game, or course',
+    );
+    check(
+      resource.format === 'game'
+        ? resource.kind === 'tool'
+        : resource.kind === 'documentation',
+      location,
+      'game format requires tool kind; channel/course require documentation',
+    );
+  }
+  for (const field of ['authors', 'access', 'practice']) {
+    if (resource[field] !== undefined) {
+      for (const lang of languages) {
+        check(
+          text(resource[field]?.[lang]),
+          location,
+          `${field}.${lang} must be a nonempty string`,
+        );
+      }
+    }
+  }
   for (const field of ['title', 'description']) {
     for (const lang of languages) {
       check(

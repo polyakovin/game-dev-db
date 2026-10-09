@@ -57,3 +57,5 @@ The `v1` export route is a public compatibility boundary. Prefer additive metada
 Run `npm run verify` before delivery. It covers Astro type checks, content validation, a production build, built-output checks, OpenSpec validation, and the retained commercial records. `npm test` is an alias for this suite. Run the Playwright browser suite separately with `npm run test:e2e`; install its Chromium dependency once with `npx playwright install chromium`.
 
 For a release, also inspect the real browser experience in both languages and check the live GitHub Pages routes and exports. A passing build cannot prove GitHub Pages permissions, deployment settings, or deployed URL behavior.
+
+Browser tests start their own foreground development server, rather than reusing an existing server from another checkout. If the default port is occupied, use `PLAYWRIGHT_PORT=4324 npm run test:e2e`. All browser contexts, including non-JavaScript checks, use the configured base URL.

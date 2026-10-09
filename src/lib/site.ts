@@ -15,7 +15,7 @@ export const absolute = (relative = '') =>
 export const ui = {
   ru: {
     catalog: 'База знаний',
-    resources: 'Ресурсы',
+    resources: 'Референсы',
     mechanics: 'Механики',
     agents: 'Для ИИ-агентов',
     contribute: 'Дополнить базу',
@@ -50,7 +50,7 @@ export const ui = {
   },
   en: {
     catalog: 'Knowledge base',
-    resources: 'Resources',
+    resources: 'References',
     mechanics: 'Mechanics',
     agents: 'For AI agents',
     contribute: 'Contribute',

@@ -1,0 +1,80 @@
+---
+import Icon from './Icon.astro';
+import type { Locale } from '../lib/site';
+
+type LocalizedText = Record<Locale, string>;
+interface Resource {
+  id: string;
+  title: LocalizedText;
+  description: LocalizedText;
+  url: string;
+  language: string;
+  kind: string;
+  format?: string;
+  authors?: LocalizedText;
+  access?: LocalizedText;
+  practice?: LocalizedText;
+}
+interface Props {
+  resource: Resource;
+  lang: Locale;
+}
+const { resource, lang } = Astro.props;
+const labels: Record<string, string> =
+  lang === 'ru'
+    ? {
+        documentation: 'Документация',
+        book: 'Книга',
+        article: 'Статья',
+        tool: 'Инструмент',
+        channel: 'Видеоканал',
+        game: 'Игра',
+        course: 'Курс',
+      }
+    : {
+        documentation: 'Documentation',
+        book: 'Book',
+        article: 'Article',
+        tool: 'Tool',
+        channel: 'Video channel',
+        game: 'Game',
+        course: 'Course',
+      };
+const icon =
+  resource.format === 'channel'
+    ? 'play'
+    : resource.kind === 'tool'
+      ? 'grid'
+      : 'book';
+---
+
+<a class="resource-row" href={resource.url} data-resource-id={resource.id}>
+  <span class="resource-icon">
+    <Icon name={icon} size={23} />
+  </span>
+  <div class="resource-body">
+    <div class="resource-meta">
+      <span>{labels[resource.format ?? resource.kind]}</span>
+      <span>
+        {resource.language === 'multi'
+          ? lang === 'ru'
+            ? 'Несколько языков'
+            : 'Multiple languages'
+          : resource.language.toUpperCase()}
+      </span>
+    </div>
+    <h3 class="resource-title">{resource.title[lang]}</h3>
+    {resource.authors && (
+      <p class="resource-authors">{resource.authors[lang]}</p>
+    )}
+    <p>{resource.description[lang]}</p>
+    {resource.access && <p class="resource-access">{resource.access[lang]}</p>}
+    {resource.practice && (
+      <p class="resource-practice">
+        <strong>{lang === 'ru' ? 'Попробуйте:' : 'Try it:'}</strong>{' '}
+        {resource.practice[lang]}
+      </p>
+    )}
+  </div>
+  <Icon name="external" size={19} />
+</a>
