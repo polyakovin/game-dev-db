@@ -14,28 +14,37 @@ Do not edit build output in `dist/`. Change the Markdown source or the generator
 
 All paths below are relative to the configured site root. In production that root is `https://polyakovin.github.io/game-dev-db/`.
 
-| Route | Purpose |
-| --- | --- |
-| `ru/`, `en/` | Language-specific lesson catalogs and search |
-| `{lang}/lessons/{id}/` | A rendered lesson |
-| `{lang}/resources/` | Referenced external resources |
-| `{lang}/mechanics/` | Mechanic reference index |
-| `{lang}/mechanics/{id}/` | A complete mechanic taxonomy |
-| `{lang}/for-agents/` | Guidance for machine consumers |
-| `llms.txt` | Compact entry point for agents |
-| `llms-full.txt` | Combined lesson text |
-| `api/v1/manifest.json` | Export entry point and dataset metadata |
-| `api/v1/lessons.json` | Structured lesson collection |
-| `api/v1/resources.json` | Resource collection |
-| `api/v1/mechanics.json` | Complete localized mechanic taxonomies |
-| `content/{lang}/{id}.md` | One lesson as Markdown |
-| `content/mechanics/{lang}/{id}.md` | One mechanic taxonomy as Markdown |
+| Route                                             | Purpose                                                |
+| ------------------------------------------------- | ------------------------------------------------------ |
+| `ru/`, `en/`                                      | Language-specific lesson catalogs and search           |
+| `{lang}/lessons/{id}/`                            | A rendered lesson                                      |
+| `{lang}/resources/`                               | Referenced external resources                          |
+| `{lang}/mechanics/`                               | Mechanic reference index                               |
+| `{lang}/mechanics/{id}/`                          | A complete mechanic taxonomy                           |
+| `{lang}/practice/`                                | Original design exercises with stable exercise anchors |
+| `{lang}/for-agents/`                              | Guidance for machine consumers                         |
+| `llms.txt`                                        | Compact entry point for agents                         |
+| `llms-full.txt`                                   | Combined lesson text                                   |
+| `api/v1/manifest.json`                            | Export entry point and dataset metadata                |
+| `api/v1/lessons.json`                             | Structured lesson collection                           |
+| `api/v1/resources.json`                           | Resource collection                                    |
+| `api/v1/mechanics.json`                           | Complete localized mechanic taxonomies                 |
+| `api/v1/practice.json`                            | Complete localized practice collections                |
+| `content/{lang}/{id}.md`                          | One lesson as Markdown                                 |
+| `content/mechanics/{lang}/{id}.md`                | One mechanic taxonomy as Markdown                      |
+| `content/practice/{lang}/game-design-practice.md` | The full practice collection as Markdown               |
 
 The `api` paths are static files, not a live server API. Clients should fetch a snapshot and process it locally. There is no authentication, mutation endpoint, or guaranteed refresh interval.
 
 Individual Markdown exports retain the original lesson body and frontmatter data, then add `url` (the canonical HTML lesson URL), `markdownUrl`, `attribution` (`Game Dev DB contributors`), `license` (`CC-BY-4.0`), and `codeLicense` (`MIT`). The export serializer may change YAML formatting, so it is not a byte-for-byte copy of the source file. The authored source schema remains unchanged; these fields belong to the export layer.
 
 ## Boundaries
+
+Practice uses one bilingual JSON catalogue in `src/data/practice.json`.
+`src/lib/practice.mjs` derives localized HTML records and full Markdown; source
+validation and built-output comparisons check the same contract. See
+[practice content](practice-content.md). Its estimated durations describe the
+exercise, not lesson reading time. Exports extend `/api/v1/` additively.
 
 Mechanic taxonomies use bilingual JSON under `src/data/mechanics/` as their single source, following the resource catalog's localized-data model. `src/lib/mechanics.mjs` derives the language-specific tree, counts and complete Markdown for HTML and exports. Its validator is also used by the canonical content check. See [mechanic content](mechanics-content.md). Catalog exports extend `/api/v1/` additively; the lesson collection and its identifiers are unchanged.
 

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
 import MechanicsCards from '../../components/MechanicsCards.astro';
 import { getLessons } from '../../lib/content';
+import { getPractice } from '../../lib/practice.mjs';
 import { path, ui, categories, locales, type Locale } from '../../lib/site';
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
@@ -10,6 +11,7 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Locale;
 const t = ui[lang];
 const lessons = await getLessons(lang);
+const practice = getPractice(lang);
 ---
 
 <Layout lang={lang} title={t.catalog}>
@@ -168,6 +170,26 @@ const lessons = await getLessons(lang);
     </span>
     <span class="start-action">
       {lang === 'ru' ? 'Выбрать масштаб' : 'Find your scope'}
+      <Icon name="arrow" size={16} />
+    </span>
+  </a>
+
+  <a class="start-strip" href={path(`${lang}/practice/`)}>
+    <span class="start-icon">
+      <Icon name="play" />
+    </span>
+    <span>
+      <strong>
+        {lang === 'ru' ? 'Проверьте идею в игре.' : 'Test an idea in play.'}
+      </strong>
+      <span class="start-description">
+        {lang === 'ru'
+          ? `${practice.counts.tasks} задач с ограничениями, результатами и проверкой прототипа.`
+          : `${practice.counts.tasks} exercises with constraints, deliverables and prototype checks.`}
+      </span>
+    </span>
+    <span class="start-action">
+      {t.practice}
       <Icon name="arrow" size={16} />
     </span>
   </a>

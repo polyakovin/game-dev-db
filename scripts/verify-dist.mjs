@@ -3,6 +3,7 @@ import path from 'node:path';
 import { load } from 'cheerio';
 import matter from 'gray-matter';
 import { mechanicRecords } from '../src/lib/mechanics.mjs';
+import { practiceRecords } from '../src/lib/practice.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -146,6 +147,9 @@ for (const required of [
   'api/v1/lessons.json',
   'api/v1/resources.json',
   'api/v1/mechanics.json',
+  'api/v1/practice.json',
+  'ru/practice/index.html',
+  'en/practice/index.html',
 ]) {
   const file = await resolveFile(`${base}${required}`);
   if (!file) {
@@ -227,11 +231,13 @@ const manifest = exports.get('api/v1/manifest.json');
 const lessonExport = exports.get('api/v1/lessons.json');
 const resourceExport = exports.get('api/v1/resources.json');
 const mechanicExport = exports.get('api/v1/mechanics.json');
+const practiceExport = exports.get('api/v1/practice.json');
 for (const [name, payload] of [
   ['manifest', manifest],
   ['lessons', lessonExport],
   ['resources', resourceExport],
   ['mechanics', mechanicExport],
+  ['practice', practiceExport],
 ]) {
   if (!payload || payload.schemaVersion !== 1)
     errors.push(`${name} JSON: schemaVersion must be 1`);
@@ -317,6 +323,7 @@ for (const key of [
   'lessons',
   'resources',
   'mechanics',
+  'practice',
   'discovery',
   'fullText',
 ]) {
@@ -387,6 +394,75 @@ for (const catalog of catalogRecords) {
     errors.push(`Full corpus missing mechanic catalog: ${key}`);
   if (!exports.get('llms.txt')?.includes(catalog.markdownUrl))
     errors.push(`Discovery missing mechanic catalog: ${key}`);
+}
+
+const practiceCatalogs = practiceRecords();
+if (
+  JSON.stringify(practiceExport?.catalogs) !== JSON.stringify(practiceCatalogs)
+)
+  errors.push('Practice JSON differs from complete localized source records');
+if (
+  manifest?.counts?.practiceCatalogs !== practiceCatalogs.length ||
+  manifest?.counts?.practiceTasks !== practiceCatalogs[0].counts.tasks ||
+  manifest?.counts?.practiceTranslationPairs !==
+    practiceCatalogs[0].counts.tasks
+)
+  errors.push('Manifest practice counts differ from source content');
+for (const catalog of practiceCatalogs) {
+  const key = `${catalog.lang}/${catalog.id}`;
+  const htmlFile = await resolveFile(new URL(catalog.url).pathname);
+  const mdFile = await resolveFile(new URL(catalog.markdownUrl).pathname);
+  if (!htmlFile || !mdFile) {
+    errors.push(`Missing practice HTML or Markdown: ${key}`);
+    continue;
+  }
+  const raw = matter(await readFile(mdFile, 'utf8'));
+  const { tasks, topics, body, ...metadata } = catalog;
+  if (
+    raw.content.trim() !== body.trim() ||
+    JSON.stringify(raw.data) !== JSON.stringify(metadata)
+  )
+    errors.push(`Practice Markdown differs from source: ${key}`);
+  const $ = await document(htmlFile);
+  if ($('[data-exercise]').length !== tasks.length)
+    errors.push(`Practice HTML count differs from source: ${key}`);
+  for (const task of tasks) {
+    for (const field of [
+      'title',
+      'goal',
+      'brief',
+      'format',
+      'deliverable',
+      'reflection',
+    ])
+      if ($(`#${task.id} [data-exercise-${field}]`).text() !== task[field])
+        errors.push(`Practice HTML text differs: ${key}/${task.id}/${field}`);
+    for (const field of ['constraints', 'steps', 'checks'])
+      if (
+        JSON.stringify(
+          $(`#${task.id} [data-exercise-${field}] li`)
+            .toArray()
+            .map((item) => $(item).text()),
+        ) !== JSON.stringify(task[field])
+      )
+        errors.push(`Practice HTML list differs: ${key}/${task.id}/${field}`);
+    await checkReference(
+      task.url,
+      new URL(base, site),
+      `Practice exercise ${key}/${task.id}`,
+    );
+  }
+  for (const item of catalog.sources)
+    if (
+      !$('main a[href]')
+        .toArray()
+        .some((a) => $(a).attr('href') === item.url)
+    )
+      errors.push(`Practice source link missing: ${key}/${item.url}`);
+  if (!exports.get('llms-full.txt')?.includes(body.trim()))
+    errors.push(`Full corpus missing practice: ${key}`);
+  if (!exports.get('llms.txt')?.includes(catalog.markdownUrl))
+    errors.push(`Discovery missing practice: ${key}`);
 }
 
 if (errors.length) {

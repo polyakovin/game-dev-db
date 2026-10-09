@@ -1,0 +1,265 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getPractice } from '../../../lib/practice.mjs';
+import { locales, ui, path, type Locale } from '../../../lib/site';
+import '../../../styles/practice.css';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const ru = lang === 'ru';
+const catalog = getPractice(lang);
+const labels = {
+  eyebrow: ru ? 'Практика геймдизайна' : 'Game design practice',
+  title: ru ? 'Придумайте правило.' : 'Invent a rule.',
+  subtitle: ru ? 'Проверьте в игре.' : 'Test it in play.',
+  exercises: ru ? 'Задачи' : 'Exercises',
+  how: ru ? 'Как работать' : 'How to work',
+  howTitle: ru
+    ? 'Одна задача, один проверяемый результат'
+    : 'One exercise, one checkable result',
+  howSteps: ru
+    ? [
+        'Прочитайте условия и ограничения.',
+        'Сделайте минимальный прототип.',
+        'Проверьте решение по критериям.',
+        'Запишите наблюдения и измените одно правило.',
+      ]
+    : [
+        'Read the brief and constraints.',
+        'Build a minimal prototype.',
+        'Check your work against the criteria.',
+        'Record observations and change one rule.',
+      ],
+  noCode: ru ? 'без обязательного кода' : 'no coding required',
+  search: ru ? 'Поиск по задаче' : 'Search exercises',
+  placeholder: ru
+    ? 'Например: паром, баланс, история'
+    : 'For example: ferry, balance, story',
+  topic: ru ? 'Тема' : 'Topic',
+  time: ru ? 'Время' : 'Time',
+  any: ru ? 'Любое' : 'Any duration',
+  materials: ru ? 'Материалы' : 'Materials',
+  constraints: ru ? 'Ограничения' : 'Constraints',
+  steps: ru ? 'Что сделать' : 'Steps',
+  result: ru ? 'Результат' : 'Deliverable',
+  checks: ru ? 'Проверьте себя' : 'Check your work',
+  reflect: ru ? 'После проверки' : 'Reflect',
+  permalink: ru ? 'Ссылка на задачу' : 'Exercise link',
+  sources: ru ? 'Книга и учебные темы' : 'The book and learning topics',
+  empty: ru
+    ? 'Задачи не найдены. Измените запрос или фильтры.'
+    : 'No exercises found. Change the query or filters.',
+};
+const durations = [...new Set(catalog.tasks.map((task) => task.minutes))].sort(
+  (a, b) => a - b,
+);
+const searchable = (task: (typeof catalog.tasks)[number]) =>
+  [
+    task.id,
+    catalog.topics.find((topic) => topic.id === task.topic)?.title,
+    task.title,
+    task.goal,
+    task.brief,
+    task.format,
+    task.deliverable,
+    task.reflection,
+    ...task.constraints,
+    ...task.steps,
+    ...task.checks,
+  ].join(' ');
+---
+
+<Layout
+  lang={lang}
+  title={catalog.title}
+  description={catalog.description}
+  section="practice"
+  alternate="practice/"
+>
+  <div data-practice>
+    <section class="practice-intro">
+      <header class="page-header">
+        <div class="eyebrow">{labels.eyebrow}</div>
+        <h1>
+          {labels.title}
+          <br />
+          <span>{labels.subtitle}</span>
+        </h1>
+        <p>{catalog.intro}</p>
+        <div class="article-meta">
+          <span>
+            {catalog.counts.tasks} {ru ? 'задач' : 'exercises'}
+          </span>
+          <span>
+            {Math.min(...durations)}–{Math.max(...durations)} {ui[lang].minutes}
+          </span>
+          <span>{labels.noCode}</span>
+        </div>
+      </header>
+      <aside class="practice-how">
+        <span class="practice-label">{labels.how}</span>
+        <h2>{labels.howTitle}</h2>
+        <ol>
+          {labels.howSteps.map((step) => (
+            <li>{step}</li>
+          ))}
+        </ol>
+        <p>{catalog.durationNote}</p>
+      </aside>
+    </section>
+    <section id="catalog" aria-labelledby="practice-heading">
+      <div class="practice-heading">
+        <h2 id="practice-heading">
+          {labels.exercises}{' '}
+          <span class="count-badge" data-practice-count aria-live="polite">
+            {String(catalog.counts.tasks).padStart(2, '0')}
+          </span>
+        </h2>
+        <a href={path(`content/practice/${lang}/${catalog.id}.md`)}>
+          {ui[lang].markdown}
+        </a>
+      </div>
+      <div class="practice-controls" hidden>
+        <label>
+          {labels.search}
+          <input
+            id="practice-search"
+            type="search"
+            placeholder={labels.placeholder}
+          />
+        </label>
+        <label>
+          {labels.topic}
+          <select id="practice-topic">
+            <option value="">{ui[lang].all}</option>
+            {catalog.topics.map((topic) => (
+              <option value={topic.id}>{topic.title}</option>
+            ))}
+          </select>
+        </label>
+        <label>
+          {labels.time}
+          <select id="practice-duration">
+            <option value="">{labels.any}</option>
+            {durations.map((duration) => (
+              <option value={duration}>
+                {ru ? 'До' : 'Up to'} {duration} {ui[lang].minutes}
+              </option>
+            ))}
+          </select>
+        </label>
+        <button type="button" data-practice-reset>
+          {ui[lang].reset}
+        </button>
+      </div>
+      {catalog.tasks.map((task, index) => (
+        <details
+          class="practice-card"
+          id={task.id}
+          data-exercise
+          data-topic={task.topic}
+          data-minutes={task.minutes}
+          data-search={searchable(task)}
+          open={index === 0}
+        >
+          <summary>
+            <span class="practice-number">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <span class="practice-card-heading">
+              <span class="practice-topic">
+                {catalog.topics.find((topic) => topic.id === task.topic)?.title}
+              </span>
+              <span class="practice-title" data-exercise-title>
+                {task.title}
+              </span>
+              <span class="practice-goal" data-exercise-goal>
+                {task.goal}
+              </span>
+            </span>
+            <span class="practice-meta">
+              {task.minutes} {ui[lang].minutes}
+              <span>
+                {task.level === 'beginner'
+                  ? ui[lang].beginner
+                  : ui[lang].intermediate}
+              </span>
+            </span>
+            <span class="practice-expand" aria-hidden="true">
+              +
+            </span>
+          </summary>
+          <div class="practice-body">
+            <p class="practice-brief" data-exercise-brief>
+              {task.brief}
+            </p>
+            <p class="practice-format">
+              <strong>{labels.materials}: </strong>
+              <span data-exercise-format>{task.format}</span>
+            </p>
+            <div class="practice-columns">
+              <section>
+                <h3>{labels.constraints}</h3>
+                <ul data-exercise-constraints>
+                  {task.constraints.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              </section>
+              <section>
+                <h3>{labels.steps}</h3>
+                <ol data-exercise-steps>
+                  {task.steps.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ol>
+              </section>
+            </div>
+            <section class="practice-result">
+              <h3>{labels.result}</h3>
+              <p data-exercise-deliverable>{task.deliverable}</p>
+            </section>
+            <section>
+              <h3>{labels.checks}</h3>
+              <ul data-exercise-checks>
+                {task.checks.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </section>
+            <p class="practice-reflection">
+              <strong>{labels.reflect}: </strong>
+              <span data-exercise-reflection>{task.reflection}</span>
+            </p>
+            <a class="practice-permalink" href={`#${task.id}`}>
+              {labels.permalink}
+            </a>
+          </div>
+        </details>
+      ))}
+      <div class="practice-empty" data-practice-empty hidden>
+        <p>{labels.empty}</p>
+        <button type="button" data-practice-reset>
+          {ui[lang].reset}
+        </button>
+      </div>
+    </section>
+    <section class="practice-sources" id="sources">
+      <h2>{labels.sources}</h2>
+      <p>{catalog.provenance}</p>
+      <ul>
+        {catalog.sources.map((source) => (
+          <li>
+            <a href={source.url}>{source.title}</a>
+            <span>{source.description}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  </div>
+  <script>
+    import '../../../scripts/practice-search';
+  </script>
+</Layout>

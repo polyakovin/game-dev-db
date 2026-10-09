@@ -22,7 +22,7 @@ description: One sentence explaining the decision or skill this lesson helps wit
 category: foundations
 level: beginner
 minutes: 6
-updatedAt: "2026-10-09"
+updatedAt: '2026-10-09'
 tags:
   - game-loop
   - testing
@@ -34,18 +34,18 @@ sources:
 
 The sample title and source URL above are placeholders. Replace them with the actual lesson metadata and a checked source before publishing.
 
-| Field | Meaning |
-| --- | --- |
-| `id` | Stable lesson identifier; identical in the RU and EN pair |
-| `lang` | `ru` or `en`, matching the containing directory |
-| `title` | Human-readable localized title |
-| `description` | Nonempty localized summary for catalog and agent selection, at most 200 characters |
-| `category` | `foundations`, `design`, `engineering`, or `workflow` |
-| `level` | `beginner` or `intermediate` |
-| `minutes` | Integer from 1 to 120 estimating reading time; not a measured learning outcome |
-| `updatedAt` | Date of a substantive editorial update, in `YYYY-MM-DD` format |
-| `tags` | Nonempty list of unique topic identifiers; use consistent tags across the pair |
-| `sources` | At least one source with a descriptive `title` and public HTTPS `url`; no duplicate URLs |
+| Field         | Meaning                                                                                  |
+| ------------- | ---------------------------------------------------------------------------------------- |
+| `id`          | Stable lesson identifier; identical in the RU and EN pair                                |
+| `lang`        | `ru` or `en`, matching the containing directory                                          |
+| `title`       | Human-readable localized title                                                           |
+| `description` | Nonempty localized summary for catalog and agent selection, at most 200 characters       |
+| `category`    | `foundations`, `design`, `engineering`, or `workflow`                                    |
+| `level`       | `beginner` or `intermediate`                                                             |
+| `minutes`     | Integer from 1 to 120 estimating reading time; not a measured learning outcome           |
+| `updatedAt`   | Date of a substantive editorial update, in `YYYY-MM-DD` format                           |
+| `tags`        | Nonempty list of unique topic identifiers; use consistent tags across the pair           |
+| `sources`     | At least one source with a descriptive `title` and public HTTPS `url`; no duplicate URLs |
 
 Use the same category, level, update date, and conceptual tags in a translation pair. Reading time may differ with the translated text. Update dates should reflect the actual editorial update, not be refreshed automatically on every build.
 
@@ -75,6 +75,14 @@ Write original explanations. Quote only what is necessary and clearly attribute 
 ## Mechanic reference catalogs
 
 Full taxonomies live in `src/data/mechanics/{id}.json`. They use one shared hierarchy with RU/EN text values and produce HTML, JSON and Markdown through the same module. Keep all variants, design notes, source descriptions and classification limits aligned across languages. See [the mechanic content contract](mechanics-content.md) for identities, provenance, validation and exports. Use focused lesson Markdown for tutorials; use this catalog format for a browsable taxonomy.
+
+## Game-design practice
+
+Exercises live in `src/data/practice.json`, with shared metadata and complete
+paired RU/EN content. Keep goals, scenarios, constraints, steps, deliverables,
+checks and reflection questions aligned. Use the [practice contract](practice-content.md)
+for source attribution, validation and exports. Estimated exercise time is
+different from a lesson's reading time.
 
 ## Curated resource catalog
 

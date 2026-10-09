@@ -2,6 +2,7 @@ import { absolute, REPO } from '../../../lib/site';
 import { getLessons } from '../../../lib/content';
 import resources from '../../../data/resources.json';
 import { mechanicRecords, getMechanics } from '../../../lib/mechanics.mjs';
+import { practiceRecords, getPractice } from '../../../lib/practice.mjs';
 export async function GET() {
   const lessons = await getLessons();
   const mechanics = mechanicRecords();
@@ -17,6 +18,7 @@ export async function GET() {
     updatedAt: [
       ...lessons.map((l) => l.data.updatedAt),
       ...mechanics.map((c) => c.updatedAt),
+      ...practiceRecords().map((c) => c.updatedAt),
     ]
       .sort()
       .at(-1),
@@ -24,6 +26,9 @@ export async function GET() {
       lessons: lessons.length,
       translationPairs: lessons.length / 2,
       resources: resources.length,
+      practiceCatalogs: practiceRecords().length,
+      practiceTasks: getPractice('ru').counts.tasks,
+      practiceTranslationPairs: getPractice('ru').counts.tasks,
       mechanics: mechanics.length,
       mechanicsTranslationPairs: mechanics.length / 2,
       mechanicFamilies: getMechanics('ru').reduce(
@@ -39,10 +44,12 @@ export async function GET() {
       lessons: absolute('api/v1/lessons.json'),
       resources: absolute('api/v1/resources.json'),
       mechanics: absolute('api/v1/mechanics.json'),
+      practice: absolute('api/v1/practice.json'),
       discovery: absolute('llms.txt'),
       fullText: absolute('llms-full.txt'),
       markdownTemplate: absolute('content/{lang}/{id}.md'),
       mechanicsMarkdownTemplate: absolute('content/mechanics/{lang}/{id}.md'),
+      practiceMarkdownTemplate: absolute('content/practice/{lang}/{id}.md'),
     },
     identity: ['id', 'lang'],
     contentType: 'text/markdown',

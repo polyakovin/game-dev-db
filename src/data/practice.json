@@ -1,0 +1,770 @@
+{
+  "id": "game-design-practice",
+  "updatedAt": "2026-10-10",
+  "title": {
+    "ru": "Практикум по геймдизайну",
+    "en": "Game design practice"
+  },
+  "description": {
+    "ru": "Самостоятельные задачи о выборе, балансе и поведении игроков с условиями, результатами и проверкой прототипа.",
+    "en": "Original exercises about choice, balance and player behaviour, with constraints, deliverables and prototype checks."
+  },
+  "intro": {
+    "ru": "Короткие задачи о выборе, балансе и поведении игроков. Соберите маленький прототип, сыграйте и объясните, что изменилось.",
+    "en": "Short exercises about choice, balance and player behaviour. Build a small prototype, play it and explain what changed."
+  },
+  "durationNote": {
+    "ru": "Время указано как ориентир. Проверка с другим игроком может потребовать отдельной встречи.",
+    "en": "Times are estimates. Testing with another player may require a separate session."
+  },
+  "provenance": {
+    "ru": "Тематический ориентир: Challenges for Game Designers, Brenda Brathwaite и Ian Schreiber. Сценарии, ограничения и критерии практикума написаны самостоятельно по общим учебным темам геймдизайна. Это не перевод и не последовательный пересказ заданий книги.",
+    "en": "Thematic inspiration: Challenges for Game Designers by Brenda Brathwaite and Ian Schreiber. These scenarios, constraints and checks are independently written around broad game-design learning topics. This is not a translation or a sequential retelling of the book exercises."
+  },
+  "topics": [
+    {
+      "id": "choice",
+      "title": {
+        "ru": "Выбор и правила",
+        "en": "Choice and rules"
+      }
+    },
+    {
+      "id": "puzzles",
+      "title": {
+        "ru": "Головоломки",
+        "en": "Puzzles"
+      }
+    },
+    {
+      "id": "prototyping",
+      "title": {
+        "ru": "Прототипирование",
+        "en": "Prototyping"
+      }
+    },
+    {
+      "id": "chance",
+      "title": {
+        "ru": "Случайность и баланс",
+        "en": "Chance and balance"
+      }
+    },
+    {
+      "id": "strategy",
+      "title": {
+        "ru": "Стратегия",
+        "en": "Strategy"
+      }
+    },
+    {
+      "id": "motor-skill",
+      "title": {
+        "ru": "Моторный навык",
+        "en": "Motor skill"
+      }
+    },
+    {
+      "id": "audience",
+      "title": {
+        "ru": "Аудитория и интерфейс",
+        "en": "Audience and interface"
+      }
+    },
+    {
+      "id": "story",
+      "title": {
+        "ru": "История через правила",
+        "en": "Story through rules"
+      }
+    },
+    {
+      "id": "iteration",
+      "title": {
+        "ru": "Итерация",
+        "en": "Iteration"
+      }
+    },
+    {
+      "id": "multiplayer",
+      "title": {
+        "ru": "Мультиплеер",
+        "en": "Multiplayer"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Challenges for Game Designers: авторский сайт",
+        "en": "Challenges for Game Designers: author website"
+      },
+      "url": "https://designgames.wordpress.com/",
+      "description": {
+        "ru": "Описание книги и её практического подхода к геймдизайну.",
+        "en": "The book description and its practice-based approach to game design."
+      }
+    },
+    {
+      "title": {
+        "ru": "Challenges for Game Designers: оглавление",
+        "en": "Challenges for Game Designers: table of contents"
+      },
+      "url": "https://designgames.wordpress.com/toc/",
+      "description": {
+        "ru": "Учебные темы книги. Источник тематического ориентира, а не текстов этих упражнений.",
+        "en": "The book learning topics. A source for thematic inspiration, not the text of these exercises."
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "last-ferry",
+      "topic": "choice",
+      "minutes": 45,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Последний паром",
+          "format": "Бумага и жетоны",
+          "goal": "Создать выбор, в котором выгода зависит от ситуации.",
+          "brief": "Вы управляете переправой перед закрытием гавани. Разные грузы приносят очки, но занимают место и требуют разного времени. Придумайте игру на шесть ходов: каждый ход игрок выбирает, что перевезти, от чего отказаться и когда отправить паром.",
+          "constraints": [
+            "Не более трёх действий и двух типов ресурсов.",
+            "Все цены и награды известны до выбора. Случайных событий нет.",
+            "Правила должны помещаться на одной странице."
+          ],
+          "steps": [
+            "Опишите цель, действия, вместимость парома и конец партии.",
+            "Подготовьте два стартовых расклада, в которых выгодны разные первые действия.",
+            "Проведите по одной партии для каждого расклада. Измените одно правило и повторите проверку."
+          ],
+          "deliverable": "Лист правил, два стартовых расклада и короткая запись о том, какой выбор оказался трудным.",
+          "checks": [
+            "В каждом раскладе есть хотя бы два допустимых первых действия.",
+            "Одно действие не превосходит остальные по всем последствиям во всех раскладах.",
+            "Игрок может объяснить, чем он пожертвовал ради выбранного груза."
+          ],
+          "reflection": "Какое ограничение создаёт интересное решение? Что произойдёт, если его убрать?"
+        },
+        "en": {
+          "title": "The last ferry",
+          "format": "Paper and tokens",
+          "goal": "Create a choice whose value depends on the situation.",
+          "brief": "You run a ferry before the harbour closes. Different cargo earns points but takes different amounts of space and time. Design a six-turn game: each turn, the player chooses what to carry, what to leave behind and when to send the ferry.",
+          "constraints": [
+            "Use no more than three actions and two resource types.",
+            "All costs and rewards are known before the choice. There are no random events.",
+            "The rules must fit on one page."
+          ],
+          "steps": [
+            "Describe the goal, actions, ferry capacity and end of the game.",
+            "Prepare two starting setups in which different first actions are preferable.",
+            "Play each setup once. Change one rule and repeat the check."
+          ],
+          "deliverable": "A rule sheet, two starting setups and a short note about the difficult choice.",
+          "checks": [
+            "Each setup offers at least two legal first actions.",
+            "One action does not outperform every other action on every consequence in every setup.",
+            "The player can explain what they gave up to carry their chosen cargo."
+          ],
+          "reflection": "Which constraint creates an interesting decision? What happens if you remove it?"
+        }
+      }
+    },
+    {
+      "id": "one-rule-two-worlds",
+      "topic": "choice",
+      "minutes": 40,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Одно правило, две игры",
+          "format": "Карточки и поле",
+          "goal": "Проследить, как небольшое изменение правила меняет поведение игроков.",
+          "brief": "Создайте маленькую игру о сборе образцов на острове. В версии А игроки получают очки за доставленные образцы. В версии Б измените только одно правило подсчёта очков так, чтобы ценнее стало другое поведение, например распределение находок между участниками.",
+          "constraints": [
+            "Одинаковые поле, действия, число ходов и стартовые ресурсы в обеих версиях.",
+            "Разрешено изменить только одно правило награды.",
+            "Не добавляйте новых предметов или способностей."
+          ],
+          "steps": [
+            "Запишите, какое поведение вы хотите поощрить в каждой версии.",
+            "Проведите обе версии с одинаковым стартовым раскладом.",
+            "Сравните маршруты и решения. Если поведение не изменилось, скорректируйте награду."
+          ],
+          "deliverable": "Две версии правил с выделенным отличием и таблица решений игроков по ходам.",
+          "checks": [
+            "В правилах действительно изменён только один пункт.",
+            "Вы отдельно записали ожидаемое и наблюдавшееся поведение.",
+            "Есть объяснение, почему награда меняет решения или почему она на них не повлияла."
+          ],
+          "reflection": "Какой стимул оказался сильнее: очки, ограниченный ресурс или действия другого игрока?"
+        },
+        "en": {
+          "title": "One rule, two games",
+          "format": "Cards and a board",
+          "goal": "Trace how a small rule change alters player behaviour.",
+          "brief": "Create a small game about collecting samples on an island. In version A, players earn points for delivered samples. In version B, change just one scoring rule to reward a different behaviour, such as distributing finds between participants.",
+          "constraints": [
+            "Keep the board, actions, turn count and starting resources identical in both versions.",
+            "Change only one reward rule.",
+            "Do not add items or abilities."
+          ],
+          "steps": [
+            "Write down the behaviour you want each version to encourage.",
+            "Play both versions from the same starting setup.",
+            "Compare routes and decisions. If behaviour stays the same, adjust the reward."
+          ],
+          "deliverable": "Two rule sets with the difference highlighted and a turn-by-turn table of player decisions.",
+          "checks": [
+            "Exactly one rule has changed.",
+            "Expected and observed behaviour are recorded separately.",
+            "Explain why the reward changes decisions, or why it had no effect."
+          ],
+          "reflection": "Which incentive mattered most: points, a limited resource or another player's actions?"
+        }
+      }
+    },
+    {
+      "id": "signal-room",
+      "topic": "puzzles",
+      "minutes": 60,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Комната сигналов",
+          "format": "Бумажный прототип",
+          "goal": "Спроектировать головоломку вокруг понятного правила и открытия игрока.",
+          "brief": "На пульте есть четыре рычага и три лампы. Придумайте правило, по которому положение рычагов меняет лампы. Игрок должен получить заданный сигнал. Сделайте три уровня: знакомство с правилом, его проверка и применение в неожиданной комбинации.",
+          "constraints": [
+            "Во всех уровнях действует одно и то же правило.",
+            "Доступная информация позволяет найти решение без случайного перебора.",
+            "Сложность третьего уровня создаётся сочетанием условий, а не новым скрытым правилом."
+          ],
+          "steps": [
+            "Перечислите состояния пульта и убедитесь, что целевые состояния достижимы.",
+            "Подготовьте три уровня и решение каждого.",
+            "Дайте их человеку, который не видел правила. Запишите, на чём он остановился, и уточните подсказки."
+          ],
+          "deliverable": "Три схемы пульта, правило, решения и заметка о проверке с новым игроком.",
+          "checks": [
+            "Для каждого уровня найдено хотя бы одно решение.",
+            "Подсказки соответствуют действующему правилу.",
+            "Вы назвали конкретное открытие, которое должен сделать игрок."
+          ],
+          "reflection": "Игрок ошибался в понимании правила или в применении уже понятного правила?"
+        },
+        "en": {
+          "title": "The signal room",
+          "format": "Paper prototype",
+          "goal": "Build a puzzle around a consistent rule and a player discovery.",
+          "brief": "A control panel has four levers and three lamps. Invent a rule that connects lever positions to the lamps. The player must produce a target signal. Create three levels: discovering the rule, checking it and using it in an unexpected combination.",
+          "constraints": [
+            "The same rule applies at every level.",
+            "Available information allows a solution without random trial and error.",
+            "The third level is harder because it combines conditions, not because it introduces a hidden rule."
+          ],
+          "steps": [
+            "List the panel states and confirm the target states are reachable.",
+            "Prepare three levels and a solution for each.",
+            "Give them to someone who has not seen the rule. Record where they get stuck and revise the clues."
+          ],
+          "deliverable": "Three panel diagrams, the rule, solutions and a note from the new-player check.",
+          "checks": [
+            "Each level has at least one known solution.",
+            "Clues agree with the rule.",
+            "Identify the specific discovery the player needs to make."
+          ],
+          "reflection": "Was the player struggling to understand the rule or to apply a rule they already understood?"
+        }
+      }
+    },
+    {
+      "id": "paper-current",
+      "topic": "prototyping",
+      "minutes": 60,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Течение на бумаге",
+          "format": "Поле и фишки",
+          "goal": "Сохранить ключевое решение цифровой механики в простом настольном прототипе.",
+          "brief": "Лодка пересекает реку с движущимися препятствиями. Игрок выбирает между коротким опасным маршрутом и длинным спокойным. Перенесите эту ситуацию на клетчатое поле: движение лодки и течение происходят по шагам, а состояние воды задают жетоны.",
+          "constraints": [
+            "Для игры не нужны экран, таймер и ведущий, принимающий решения за игрока.",
+            "Партия длится не больше десяти ходов.",
+            "Перед выбором маршрута игрок видит хотя бы часть последствий следующего шага."
+          ],
+          "steps": [
+            "Запишите, какое решение вы сохраняете при переносе.",
+            "Определите порядок действий лодки, течения и препятствий.",
+            "Сыграйте короткий и длинный маршруты из одного стартового состояния. Уточните правила столкновений."
+          ],
+          "deliverable": "Игровое поле, правила одного хода и сравнение двух маршрутов.",
+          "checks": [
+            "Другой человек может разыграть ход без устных дополнений автора.",
+            "Маршруты отличаются риском или затратами, а не только внешним видом.",
+            "Вы перечислили ощущения цифровой версии, которые бумажный прототип не проверяет."
+          ],
+          "reflection": "Какое решение сохранилось после переноса? Что потерялось из-за пошагового времени?"
+        },
+        "en": {
+          "title": "A current on paper",
+          "format": "Board and pieces",
+          "goal": "Preserve the key decision of a digital mechanic in a simple tabletop prototype.",
+          "brief": "A boat crosses a river with moving obstacles. The player chooses between a short dangerous route and a longer calm one. Move this situation onto a grid: the boat and current move in steps, while tokens represent the water state.",
+          "constraints": [
+            "No screen, timer or facilitator making the player's decisions is needed.",
+            "A game lasts no more than ten turns.",
+            "Before choosing a route, the player sees at least some consequences of the next step."
+          ],
+          "steps": [
+            "Write down the decision you want the adaptation to preserve.",
+            "Define the order of boat, current and obstacle movement.",
+            "Play the short and long routes from the same starting state. Clarify the collision rules."
+          ],
+          "deliverable": "A board, single-turn rules and a comparison of the two routes.",
+          "checks": [
+            "Another person can play a turn without extra verbal rules from the designer.",
+            "The routes differ in risk or cost, not just appearance.",
+            "List the feelings of the digital version that the paper prototype cannot test."
+          ],
+          "reflection": "Which decision survived the adaptation? What was lost by making time turn-based?"
+        }
+      }
+    },
+    {
+      "id": "weather-window",
+      "topic": "chance",
+      "minutes": 50,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Окно погоды",
+          "format": "Карты событий",
+          "goal": "Сделать случайный исход предметом решения, а не только неожиданностью.",
+          "brief": "Экспедиция решает, отправить хрупкий груз сегодня или дождаться следующего окна погоды. Сегодняшний прогноз даёт известные вероятности трёх исходов. Придумайте стоимость ожидания, награды и потери, затем сравните выбор осторожного и рискованного игрока.",
+          "constraints": [
+            "Вероятности, награды и потери открыты игроку.",
+            "Исходы можно представить колодой из десяти карт.",
+            "Ожидание имеет цену, а не даёт бесплатную повторную попытку."
+          ],
+          "steps": [
+            "Соберите колоду с нужной долей исходов.",
+            "Посчитайте ожидаемый результат отправки: сумма результата каждого исхода, умноженного на его вероятность.",
+            "Сравните отправку и ожидание при двух запасах ресурсов. Разыграйте несколько исходов и отдельно отметьте, что эта малая выборка не доказывает баланс."
+          ],
+          "deliverable": "Колода, таблица вероятностей и последствий, расчёт ожидаемого результата и два примера решений.",
+          "checks": [
+            "Вероятности складываются в единицу.",
+            "Игрок знает, что может выиграть и потерять.",
+            "Ожидаемая выгода и риск потери последних ресурсов рассмотрены отдельно."
+          ],
+          "reflection": "Почему игрок может выбрать вариант с меньшей ожидаемой наградой?"
+        },
+        "en": {
+          "title": "The weather window",
+          "format": "Event cards",
+          "goal": "Make a random outcome part of a decision rather than just a surprise.",
+          "brief": "An expedition must send fragile cargo today or wait for another weather window. Today's forecast gives known probabilities for three outcomes. Design the cost of waiting, rewards and losses, then compare the choices of a cautious player and a risk-taking player.",
+          "constraints": [
+            "Probabilities, rewards and losses are visible to the player.",
+            "A ten-card deck can represent the outcomes.",
+            "Waiting has a cost; it does not grant a free retry."
+          ],
+          "steps": [
+            "Build a deck with the intended proportions of outcomes.",
+            "Calculate the expected result of sending: sum each outcome's result multiplied by its probability.",
+            "Compare sending and waiting at two resource levels. Play through a few outcomes and note separately that this small sample does not establish balance."
+          ],
+          "deliverable": "The deck, a table of probabilities and consequences, an expected-result calculation and two example decisions.",
+          "checks": [
+            "The probabilities sum to one.",
+            "The player knows what they can gain and lose.",
+            "Expected gain and the risk of losing the last resources are considered separately."
+          ],
+          "reflection": "Why might a player choose the option with a lower expected reward?"
+        }
+      }
+    },
+    {
+      "id": "shared-workshop",
+      "topic": "strategy",
+      "minutes": 60,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Общая мастерская",
+          "format": "Два игрока, жетоны",
+          "goal": "Создать стратегическое решение с учётом действий соперника.",
+          "brief": "Два мастера используют общий набор станков, чтобы выполнить заказы. Занятый станок недоступен сопернику до следующего раунда. Спроектируйте выбор между быстрым простым заказом и подготовкой дорогого заказа, который конкурент может сорвать.",
+          "constraints": [
+            "Случайности и скрытой информации нет.",
+            "Не более трёх станков и трёх типов заказов.",
+            "Партия заканчивается после шести раундов."
+          ],
+          "steps": [
+            "Опишите доступные действия и момент освобождения станков.",
+            "Создайте две ситуации, в которых выгодное действие зависит от ответа соперника.",
+            "Поменяйте игроков местами и проверьте влияние первого хода."
+          ],
+          "deliverable": "Правила, два разобранных игровых состояния и наблюдения о порядке хода.",
+          "checks": [
+            "Можно объяснить, как действие одного игрока меняет возможности другого.",
+            "Хотя бы одно решение зависит от ожидаемого ответа соперника.",
+            "Вы проверили, не получает ли первый игрок постоянное преимущество."
+          ],
+          "reflection": "Игрок выигрывает за счёт планирования или из-за привилегии первого хода?"
+        },
+        "en": {
+          "title": "The shared workshop",
+          "format": "Two players and tokens",
+          "goal": "Create a strategic decision that considers an opponent's actions.",
+          "brief": "Two craftspeople share a set of machines to fulfil orders. An occupied machine is unavailable to the opponent until the next round. Design a choice between a quick simple order and preparation for a valuable order that a competitor can disrupt.",
+          "constraints": [
+            "There is no randomness or hidden information.",
+            "Use no more than three machines and three order types.",
+            "The game ends after six rounds."
+          ],
+          "steps": [
+            "Describe available actions and when machines become free.",
+            "Create two situations in which the preferable action depends on the opponent's response.",
+            "Swap players' positions and check the effect of going first."
+          ],
+          "deliverable": "Rules, two analysed game states and observations about turn order.",
+          "checks": [
+            "Explain how one player's action changes the other's options.",
+            "At least one decision depends on the opponent's expected response.",
+            "Check whether the first player receives a persistent advantage."
+          ],
+          "reflection": "Does a player win through planning or through the privilege of moving first?"
+        }
+      }
+    },
+    {
+      "id": "rhythm-without-hurry",
+      "topic": "motor-skill",
+      "minutes": 45,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Ритм без спешки",
+          "format": "Бумажный сценарий или простой прототип",
+          "goal": "Разделить точность реакции, понимание правил и доступность управления.",
+          "brief": "Игрок подаёт сигнал проходящим мимо маяка кораблям. Попадание в короткое временное окно приносит бонус. Придумайте обычный режим и режим с более широким окном, сохранив одну цель и последовательность событий.",
+          "constraints": [
+            "Один основной ввод; никаких сложных комбинаций кнопок.",
+            "Игрок получает понятную обратную связь о раннем и позднем действии.",
+            "Цвет не должен быть единственным способом понять сигнал."
+          ],
+          "steps": [
+            "Нарисуйте временную шкалу с успешным окном и обратной связью.",
+            "Задайте параметры обоих режимов.",
+            "Проверьте последовательность на простом прототипе или разыграйте её как сценарий. Отдельно укажите, что без работающего таймера качество реакции ещё не проверено."
+          ],
+          "deliverable": "Две временные шкалы, параметры окон и перечень сигналов обратной связи.",
+          "checks": [
+            "Игрок понимает, почему действие засчитано или отклонено.",
+            "Расширенное окно сохраняет возможность осмысленно действовать.",
+            "Вы различаете сложность управления и сложность решения."
+          ],
+          "reflection": "Какую часть испытания меняет расширение окна? Какую сохраняет?"
+        },
+        "en": {
+          "title": "Rhythm without rushing",
+          "format": "Paper scenario or simple prototype",
+          "goal": "Separate reaction accuracy, rule comprehension and accessible controls.",
+          "brief": "The player signals ships passing a lighthouse. Acting within a short timing window earns a bonus. Design a standard mode and one with a wider window, keeping the same goal and event sequence.",
+          "constraints": [
+            "Use one main input and no complicated button combinations.",
+            "Give clear feedback for early and late actions.",
+            "Colour must not be the only way to understand a signal."
+          ],
+          "steps": [
+            "Draw a timeline showing the successful window and feedback.",
+            "Set parameters for both modes.",
+            "Check the sequence in a simple prototype or act it out as a scenario. State separately that reaction quality has not been tested without a working timer."
+          ],
+          "deliverable": "Two timelines, timing-window parameters and a list of feedback signals.",
+          "checks": [
+            "The player understands why an action counts or fails.",
+            "The wider window preserves a meaningful action.",
+            "Distinguish control difficulty from decision difficulty."
+          ],
+          "reflection": "Which part of the challenge does a wider window change? Which part does it preserve?"
+        }
+      }
+    },
+    {
+      "id": "forecast-and-surprise",
+      "topic": "chance",
+      "minutes": 75,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Прогноз и неожиданность",
+          "format": "Карты и журнал партий",
+          "goal": "Дать игроку способы подготовиться к случайному событию.",
+          "brief": "Караван выбирает дорогу между поселениями. В версии А опасность определяется только после выбора маршрута. В версии Б часть прогноза видна заранее, а подготовка стоит ресурс. Сравните, какие решения появляются благодаря прогнозу.",
+          "constraints": [
+            "Одинаковые маршруты, награды и набор событий в обеих версиях.",
+            "Предварительная информация неполная, но полезная.",
+            "Подготовка уменьшает конкретную потерю и имеет понятную цену."
+          ],
+          "steps": [
+            "Опишите обе версии и способы подготовки.",
+            "Сравните их на одинаковом порядке событий.",
+            "Запишите решения до события и результат после него. Измените цену подготовки, если её всегда берут или всегда игнорируют."
+          ],
+          "deliverable": "Две версии правил, журнал решений и пояснение о границах сделанных выводов.",
+          "checks": [
+            "Прогноз позволяет изменить действие до наступления события.",
+            "Подготовка не отменяет любое последствие автоматически.",
+            "Вы не выдаёте несколько партий за статистическое доказательство баланса."
+          ],
+          "reflection": "Игрок учится лучше готовиться или только запоминает последовательность событий?"
+        },
+        "en": {
+          "title": "Forecast and surprise",
+          "format": "Cards and a play log",
+          "goal": "Give the player ways to prepare for a random event.",
+          "brief": "A caravan chooses a road between settlements. In version A, danger is determined only after the route is chosen. In version B, part of the forecast is visible beforehand and preparation costs a resource. Compare the decisions that become possible with a forecast.",
+          "constraints": [
+            "Keep routes, rewards and the event set identical in both versions.",
+            "Advance information is incomplete but useful.",
+            "Preparation reduces a specific loss and has a clear cost."
+          ],
+          "steps": [
+            "Describe both versions and the preparation options.",
+            "Compare them using the same event order.",
+            "Record decisions before events and results afterwards. Adjust the cost of preparation if players always take it or always ignore it."
+          ],
+          "deliverable": "Two rule sets, a decision log and an explanation of the limits of your conclusions.",
+          "checks": [
+            "The forecast allows a change of action before the event.",
+            "Preparation does not automatically cancel every consequence.",
+            "Do not present a few games as statistical evidence of balance."
+          ],
+          "reflection": "Is the player learning to prepare better or simply memorising the event sequence?"
+        }
+      }
+    },
+    {
+      "id": "three-minute-museum",
+      "topic": "audience",
+      "minutes": 60,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Три минуты в музее",
+          "format": "Бумажные экраны",
+          "goal": "Связать ограничения аудитории с правилами и первым взаимодействием.",
+          "brief": "Сделайте игру для посетителя музейного стенда, у которого есть три минуты. Он впервые видит экран, не обязан читать длинную инструкцию и может уйти в любой момент. Игровая идея: восстановить связь между предметом и его применением.",
+          "constraints": [
+            "Первое действие видно на начальном экране.",
+            "Один сеанс укладывается в три минуты, повторный запуск возможен сразу.",
+            "Ключевые инструкции понятны без звука и не зависят только от цвета."
+          ],
+          "steps": [
+            "Опишите ситуацию посетителя, не придумывая подтверждённое исследование аудитории.",
+            "Нарисуйте первый экран, игровой экран и завершение.",
+            "Проверьте бумажный сценарий с человеком, который не видел проект. Отметьте места, где пришлось помогать."
+          ],
+          "deliverable": "Три экрана, правила сеанса и запись о первой попытке нового игрока.",
+          "checks": [
+            "Игрок может указать первое действие без подсказки автора.",
+            "Результат действия заметен на экране.",
+            "Завершение и повторный запуск не требуют объяснения."
+          ],
+          "reflection": "Что пришлось убрать из идеи из-за короткого сеанса? Что это дало игроку?"
+        },
+        "en": {
+          "title": "Three minutes at the museum",
+          "format": "Paper screens",
+          "goal": "Connect audience constraints to rules and the first interaction.",
+          "brief": "Make a game for a museum visitor who has three minutes. They see the screen for the first time, need not read a long tutorial and may leave at any moment. The game idea is to reconnect an object with its use.",
+          "constraints": [
+            "The initial screen makes the first action visible.",
+            "A session fits within three minutes and can restart immediately.",
+            "Key instructions work without sound and do not depend solely on colour."
+          ],
+          "steps": [
+            "Describe the visitor's situation without inventing verified audience research.",
+            "Draw the initial screen, play screen and ending.",
+            "Check the paper scenario with someone who has not seen the project. Note where help was needed."
+          ],
+          "deliverable": "Three screens, session rules and a record of a new player's first attempt.",
+          "checks": [
+            "The player can identify the first action without a hint from the designer.",
+            "The result of an action is visible on screen.",
+            "Ending and restarting need no explanation."
+          ],
+          "reflection": "What did the short session force you to remove? What did the player gain?"
+        }
+      }
+    },
+    {
+      "id": "light-for-two",
+      "topic": "story",
+      "minutes": 60,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Свет на двоих",
+          "format": "Карточки состояний",
+          "goal": "Передать тему истории через действия и последствия.",
+          "brief": "На зимней станции запас энергии уменьшается каждый ход. Игрок может освещать жилой блок или поддерживать связь с соседней станцией. Создайте короткую игру о взаимной зависимости, где смысл проявляется в распределении энергии и ответных действиях соседей.",
+          "constraints": [
+            "Не более пяти предложений вводного текста.",
+            "Нет диалогов, прямо объясняющих мораль.",
+            "Хотя бы одно последствие возвращается через ход, а не сразу."
+          ],
+          "steps": [
+            "Сформулируйте тему одним предложением.",
+            "Опишите действия и отложенные последствия.",
+            "Проведите игру и попросите игрока своими словами рассказать, о чём она. Сравните его ответ с вашим замыслом."
+          ],
+          "deliverable": "Правила, схема последствий и запись о том, как игрок понял тему.",
+          "checks": [
+            "Тема связана хотя бы с одним регулярным действием игрока.",
+            "Последствия следуют из правил, а не из произвольного решения автора.",
+            "Вы отделили задуманную интерпретацию от ответа игрока."
+          ],
+          "reflection": "Если убрать вступление, какая часть истории останется понятной?"
+        },
+        "en": {
+          "title": "Light for two",
+          "format": "State cards",
+          "goal": "Express a story's theme through actions and consequences.",
+          "brief": "A winter station's energy supply decreases each turn. The player can light the living area or maintain communication with a neighbouring station. Create a short game about interdependence in which meaning emerges from energy allocation and the neighbours' responses.",
+          "constraints": [
+            "Use no more than five introductory sentences.",
+            "No dialogue directly states the moral.",
+            "At least one consequence arrives a turn later rather than immediately."
+          ],
+          "steps": [
+            "State the theme in one sentence.",
+            "Describe the actions and delayed consequences.",
+            "Run the game and ask the player to explain what it is about in their own words. Compare the answer with your intention."
+          ],
+          "deliverable": "Rules, a consequence map and a record of the player's interpretation.",
+          "checks": [
+            "At least one repeated player action relates to the theme.",
+            "Consequences follow from rules rather than an arbitrary designer decision.",
+            "Keep your intended interpretation separate from the player's answer."
+          ],
+          "reflection": "If you remove the introduction, what part of the story remains understandable?"
+        }
+      }
+    },
+    {
+      "id": "remove-the-market",
+      "topic": "iteration",
+      "minutes": 50,
+      "level": "beginner",
+      "content": {
+        "ru": {
+          "title": "Убрать рынок",
+          "format": "Готовый небольшой прототип",
+          "goal": "Проверить, какую пользу приносит отдельная механика и стоит ли её сохранять.",
+          "brief": "Возьмите собственную небольшую игру с несколькими механиками. Выберите одну вспомогательную систему, например обмен ресурсов. Сделайте версию без неё, сохранив цель партии. Проверьте, какие решения исчезли и какие правила стали проще.",
+          "constraints": [
+            "Используйте свой прототип или игру, которую вам разрешено изменять.",
+            "Удалите одну систему и связанные с ней исключения.",
+            "Не компенсируйте удаление новой большой механикой."
+          ],
+          "steps": [
+            "Запишите, что выбранная система должна давать игроку.",
+            "Подготовьте сокращённую версию и проверьте, что партия завершается.",
+            "Сравните время объяснения и решения в обеих версиях. Выберите, что вернуть, изменить или оставить удалённым."
+          ],
+          "deliverable": "Две версии правил и обоснованное решение о судьбе механики.",
+          "checks": [
+            "В сокращённой версии нет ссылок на удалённые ресурсы или действия.",
+            "Цель остаётся достижимой.",
+            "Вы можете назвать потерянный полезный выбор или объяснить, почему его не было."
+          ],
+          "reflection": "Какую сложность замечал автор? Какую действительно замечал игрок?"
+        },
+        "en": {
+          "title": "Remove the market",
+          "format": "An existing small prototype",
+          "goal": "Check what a mechanic contributes and whether it is worth keeping.",
+          "brief": "Take a small game of your own that has several mechanics. Choose a supporting system, such as resource trading. Make a version without it while preserving the game's goal. Check which decisions disappear and which rules become simpler.",
+          "constraints": [
+            "Use your own prototype or a game you have permission to modify.",
+            "Remove one system and its associated exceptions.",
+            "Do not replace it with another large mechanic."
+          ],
+          "steps": [
+            "Write down what the chosen system should offer the player.",
+            "Prepare the reduced version and check that the game can end.",
+            "Compare explanation time and decisions in both versions. Decide what to restore, change or leave removed."
+          ],
+          "deliverable": "Two rule sets and a justified decision about the mechanic's future.",
+          "checks": [
+            "The reduced version contains no references to removed resources or actions.",
+            "The goal remains reachable.",
+            "Name the useful choice that was lost or explain why there was none."
+          ],
+          "reflection": "Which complexity did the designer notice? Which did the player actually notice?"
+        }
+      }
+    },
+    {
+      "id": "two-windows",
+      "topic": "multiplayer",
+      "minutes": 75,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Два окна диспетчера",
+          "format": "Два игрока, карточки маршрутов",
+          "goal": "Сделать сотрудничество необходимым через распределение информации и действий.",
+          "brief": "Два диспетчера проводят ремонтную команду через станцию. Один видит расписание безопасных проходов, другой знает запас инструментов и состояние дверей. Придумайте общую цель и правила обмена сообщениями, при которых решения каждого влияют на результат.",
+          "constraints": [
+            "У игроков разные сведения и разные доступные действия.",
+            "Один участник не может напрямую выполнять действия другого.",
+            "Начальная версия не требует сети: используйте два бумажных набора информации."
+          ],
+          "steps": [
+            "Разделите сведения и действия между ролями.",
+            "Опишите разрешённый обмен информацией, победу и проигрыш.",
+            "Проведите партию и поменяйте роли. Отметьте моменты, когда один игрок решал всё, а второй только исполнял."
+          ],
+          "deliverable": "Два набора карточек, общие правила и заметки о самостоятельных решениях каждой роли.",
+          "checks": [
+            "У каждой роли есть хотя бы одно решение, влияющее на общую цель.",
+            "Оба игрока понимают, что они могут сообщить и сделать.",
+            "Вы назвали причину сотрудничать и проверили риск доминирования одного участника."
+          ],
+          "reflection": "Какая информация должна оставаться раздельной, чтобы обе роли сохраняли участие?"
+        },
+        "en": {
+          "title": "Two dispatch windows",
+          "format": "Two players and route cards",
+          "goal": "Make cooperation necessary by distributing information and actions.",
+          "brief": "Two dispatchers guide a repair team through a station. One sees the schedule of safe passages; the other knows the tool supply and door conditions. Design a shared goal and communication rules so that each person's decisions affect the result.",
+          "constraints": [
+            "Players have different information and available actions.",
+            "One participant cannot directly perform the other's actions.",
+            "The first version needs no network: use two paper information sets."
+          ],
+          "steps": [
+            "Divide information and actions between the roles.",
+            "Describe permitted communication, winning and losing.",
+            "Play a game and swap roles. Note moments when one player made every decision while the other merely carried them out."
+          ],
+          "deliverable": "Two card sets, shared rules and notes on each role's independent decisions.",
+          "checks": [
+            "Each role makes at least one decision affecting the shared goal.",
+            "Both players understand what they may communicate and do.",
+            "Identify a reason to cooperate and check whether one participant dominates."
+          ],
+          "reflection": "Which information needs to stay separate to keep both roles involved?"
+        }
+      }
+    }
+  ]
+}

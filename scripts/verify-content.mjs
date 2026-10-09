@@ -2,6 +2,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { validateMechanics, mechanicCatalogs } from '../src/lib/mechanics.mjs';
+import { validatePractice, practiceSource } from '../src/lib/practice.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -249,6 +250,7 @@ for (const [index, resource] of resources.entries()) {
 }
 
 errors.push(...validateMechanics());
+errors.push(...validatePractice());
 
 if (errors.length) {
   console.error(
@@ -257,6 +259,6 @@ if (errors.length) {
   process.exitCode = 1;
 } else {
   console.log(
-    `Content verified: ${lessons.size} localized lessons (${lessons.size / 2} translation pairs), ${resources.length} resources, ${mechanicCatalogs.length} bilingual mechanic catalogs.`,
+    `Content verified: ${lessons.size} localized lessons (${lessons.size / 2} translation pairs), ${resources.length} resources, ${mechanicCatalogs.length} bilingual mechanic catalogs, ${practiceSource.tasks.length} bilingual exercises.`,
   );
 }

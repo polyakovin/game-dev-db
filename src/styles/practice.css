@@ -1,0 +1,349 @@
+.practice-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.practice-intro .page-header {
+  margin: 0;
+}
+.practice-intro .page-header h1 {
+  font-size: clamp(32px, 3.7vw, 51px);
+  line-height: 1.16;
+}
+.practice-intro h1 span {
+  color: var(--muted);
+}
+.practice-how {
+  background: #efede4;
+  border: 1px solid #ded9c9;
+  padding: 24px;
+  min-width: 0;
+}
+.practice-label,
+.practice-number,
+.practice-topic {
+  font:
+    11px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 0.035em;
+}
+.practice-label {
+  color: var(--accent);
+}
+.practice-how h2 {
+  font-size: 19px;
+  margin: 12px 0 14px;
+  line-height: 1.4;
+}
+.practice-how ol {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.85;
+}
+.practice-how p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 17px 0 0;
+}
+.practice-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 16px;
+}
+.practice-heading h2 {
+  font-size: 22px;
+  font-weight: 580;
+  margin: 0;
+}
+.practice-heading a {
+  font-size: 12px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.practice-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.practice-controls label {
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 0;
+}
+.practice-controls input,
+.practice-controls select {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #d7d7cd;
+  background: var(--surface);
+  border-radius: 5px;
+  padding: 10px 11px;
+  font: inherit;
+  color: var(--ink);
+  font-size: 12px;
+  height: 42px;
+  min-width: 0;
+}
+.practice-controls button {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+[data-practice-reset] {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.practice-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  scroll-margin-top: 24px;
+}
+.practice-card[open] {
+  border-top: 3px solid var(--accent);
+}
+.practice-card summary {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 87px 18px;
+  gap: 19px;
+  padding: 22px;
+  align-items: start;
+  cursor: pointer;
+  list-style: none;
+}
+.practice-card summary::-webkit-details-marker {
+  display: none;
+}
+.practice-card summary:focus-visible,
+.practice-controls select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+.practice-number {
+  color: #9c9e92;
+  padding-top: 3px;
+}
+.practice-card-heading {
+  min-width: 0;
+}
+.practice-topic {
+  display: block;
+  color: var(--accent);
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+.practice-title {
+  font-size: 20px;
+  font-weight: 580;
+  letter-spacing: -0.4px;
+  display: block;
+  line-height: 1.3;
+}
+.practice-goal {
+  display: block;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin-top: 7px;
+}
+.practice-meta {
+  font:
+    11px 'IBM Plex Mono',
+    monospace;
+  text-align: right;
+  padding-top: 3px;
+  line-height: 1.8;
+}
+.practice-meta span {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+}
+.practice-expand {
+  font-size: 20px;
+  color: var(--muted);
+  line-height: 1.1;
+}
+.practice-card[open] .practice-expand {
+  transform: rotate(45deg);
+}
+.practice-body {
+  margin: 0 22px 22px 65px;
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+  font-size: 13px;
+}
+.practice-brief {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.practice-format {
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 22px;
+}
+.practice-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 30px;
+}
+.practice-body h3 {
+  font-size: 13px;
+  font-weight: 650;
+  margin-bottom: 9px;
+}
+.practice-body ul,
+.practice-body ol {
+  margin: 0 0 22px;
+  padding-left: 19px;
+}
+.practice-body li {
+  padding-left: 3px;
+  margin-bottom: 8px;
+}
+.practice-result {
+  padding: 17px 19px;
+  background: #f0efe7;
+  border-left: 2px solid var(--accent);
+  margin: 0 0 22px;
+}
+.practice-result h3 {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  color: var(--accent);
+}
+.practice-result p {
+  margin: 9px 0 0;
+}
+.practice-reflection {
+  margin: 18px 0 12px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+}
+.practice-permalink {
+  color: var(--accent);
+  font-size: 11px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.practice-empty {
+  border: 1px dashed var(--line);
+  padding: 30px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.practice-sources {
+  border-top: 1px solid var(--line);
+  margin-top: 34px;
+  padding-top: 24px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.practice-sources h2 {
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.practice-sources p {
+  max-width: 780px;
+}
+.practice-sources ul {
+  list-style: none;
+  padding: 0;
+}
+.practice-sources li {
+  margin-bottom: 12px;
+}
+.practice-sources a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.practice-sources li span {
+  display: block;
+  margin-top: 3px;
+}
+[data-practice] :where(p, li, h1, h2, h3, span) {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1100px) {
+  .practice-intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .practice-columns {
+    gap: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .practice-controls {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .practice-controls label:first-child {
+    grid-column: 1 / -1;
+  }
+  .practice-card summary {
+    grid-template-columns: 22px minmax(0, 1fr) 16px;
+    gap: 12px;
+    padding: 18px;
+  }
+  .practice-meta {
+    grid-column: 2;
+    text-align: left;
+    grid-row: 2;
+    display: flex;
+    gap: 12px;
+  }
+  .practice-meta span {
+    font-size: 11px;
+  }
+  .practice-expand {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .practice-body {
+    margin: 0 18px 20px;
+    padding-top: 18px;
+  }
+  .practice-columns {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+  .practice-title {
+    font-size: 19px;
+  }
+  .practice-intro {
+    margin-bottom: 30px;
+  }
+  .practice-heading {
+    align-items: baseline;
+  }
+  .practice-heading a {
+    font-size: 11px;
+  }
+}
+@media print {
+  .practice-controls {
+    display: none;
+  }
+  .practice-card {
+    break-inside: avoid;
+  }
+}
