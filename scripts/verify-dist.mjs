@@ -4,6 +4,7 @@ import { load } from 'cheerio';
 import matter from 'gray-matter';
 import { mechanicRecords } from '../src/lib/mechanics.mjs';
 import { practiceRecords } from '../src/lib/practice.mjs';
+import { lensRecords } from '../src/lib/lenses.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -148,6 +149,7 @@ for (const required of [
   'api/v1/resources.json',
   'api/v1/mechanics.json',
   'api/v1/practice.json',
+  'api/v1/lenses.json',
   'ru/practice/index.html',
   'en/practice/index.html',
 ]) {
@@ -324,6 +326,7 @@ for (const key of [
   'resources',
   'mechanics',
   'practice',
+  'lenses',
   'discovery',
   'fullText',
 ]) {
@@ -463,6 +466,68 @@ for (const catalog of practiceCatalogs) {
     errors.push(`Full corpus missing practice: ${key}`);
   if (!exports.get('llms.txt')?.includes(catalog.markdownUrl))
     errors.push(`Discovery missing practice: ${key}`);
+}
+
+const lensesExport = exports.get('api/v1/lenses.json');
+const lensCatalogs = lensRecords();
+if (
+  lensesExport?.schemaVersion !== 1 ||
+  lensesExport?.license !== 'CC-BY-4.0' ||
+  !lensesExport?.attribution ||
+  JSON.stringify(lensesExport?.catalogs) !== JSON.stringify(lensCatalogs)
+)
+  errors.push(
+    'Lenses JSON differs from localized source records or lacks export metadata',
+  );
+if (
+  manifest?.counts?.lensCatalogs !== lensCatalogs.length ||
+  manifest?.counts?.lensPerspectives !== lensCatalogs[0].counts.total
+)
+  errors.push('Manifest lens counts differ from source');
+for (const catalog of lensCatalogs) {
+  const key = `${catalog.lang}/${catalog.id}`;
+  const htmlFile = await resolveFile(new URL(catalog.url).pathname);
+  const mdFile = await resolveFile(new URL(catalog.markdownUrl).pathname);
+  if (!htmlFile || !mdFile) {
+    errors.push(`Missing lens page or Markdown: ${key}`);
+    continue;
+  }
+  const raw = matter(await readFile(mdFile, 'utf8'));
+  const { themes, lenses, body, ...metadata } = catalog;
+  if (
+    raw.content.trim() !== body.trim() ||
+    JSON.stringify(raw.data) !== JSON.stringify(metadata)
+  )
+    errors.push(`Lenses Markdown differs from source: ${key}`);
+  const $ = await document(htmlFile);
+  if ($('[data-lens]').length !== lenses.length)
+    errors.push(`Lens HTML count differs: ${key}`);
+  for (const lens of lenses) {
+    const node = $(`#${lens.id}`);
+    if (
+      node.find('[data-lens-title]').text() !== lens.title ||
+      node.find('[data-lens-description]').text() !== lens.description ||
+      JSON.stringify(
+        node
+          .find('[data-lens-question]')
+          .toArray()
+          .map((q) => $(q).text()),
+      ) !== JSON.stringify(lens.questions)
+    )
+      errors.push(`Lens HTML content differs: ${key}/${lens.id}`);
+    if (
+      !node
+        .find('a[href]')
+        .toArray()
+        .some((a) => $(a).attr('href') === lens.referenceUrl)
+    )
+      errors.push(`Lens reference missing: ${key}/${lens.id}`);
+  }
+  if (
+    !exports.get('llms-full.txt')?.includes(body.trim()) ||
+    !exports.get('llms.txt')?.includes(catalog.markdownUrl)
+  )
+    errors.push(`Lens agent discovery or corpus missing: ${key}`);
 }
 
 if (errors.length) {

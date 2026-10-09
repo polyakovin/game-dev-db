@@ -4,6 +4,7 @@ import Icon from '../../components/Icon.astro';
 import MechanicsCards from '../../components/MechanicsCards.astro';
 import { getLessons } from '../../lib/content';
 import { getPractice } from '../../lib/practice.mjs';
+import { getLenses } from '../../lib/lenses.mjs';
 import { path, ui, categories, locales, type Locale } from '../../lib/site';
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
@@ -12,6 +13,7 @@ const lang = Astro.params.lang as Locale;
 const t = ui[lang];
 const lessons = await getLessons(lang);
 const practice = getPractice(lang);
+const lensCatalog = getLenses(lang);
 ---
 
 <Layout lang={lang} title={t.catalog}>
@@ -300,6 +302,31 @@ const practice = getPractice(lang);
         : 'Detailed trees of player actions, variants and combinations for game design.'}
     </p>
     <MechanicsCards lang={lang} />
+  </section>
+
+  <section class="lenses-home" aria-labelledby="lenses-heading">
+    <div class="section-heading">
+      <h2 id="lenses-heading">{t.lenses}</h2>
+    </div>
+    <p>
+      {lang === 'ru'
+        ? 'Посмотрите на одну задачу с разных сторон и выберите следующий эксперимент.'
+        : 'Examine one problem from different perspectives and choose the next experiment.'}
+    </p>
+    <a class="lesson-card" data-lenses-card href={path(`${lang}/lenses/`)}>
+      <div class="card-top">
+        <span class="category-tag design">
+          {lang === 'ru' ? 'Проверка дизайна' : 'Design review'}
+        </span>
+        <span class="card-index">{lensCatalog.counts.total}</span>
+      </div>
+      <h3>{lensCatalog.title}</h3>
+      <p>{lensCatalog.description}</p>
+      <div class="card-bottom">
+        <span>Jesse Schell · Sebastian Deterding</span>
+        <Icon name="arrow" size={18} />
+      </div>
+    </a>
   </section>
 
   <section class="agent-banner">

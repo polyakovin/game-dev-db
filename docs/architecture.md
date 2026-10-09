@@ -22,6 +22,7 @@ All paths below are relative to the configured site root. In production that roo
 | `{lang}/mechanics/`                               | Mechanic reference index                               |
 | `{lang}/mechanics/{id}/`                          | A complete mechanic taxonomy                           |
 | `{lang}/practice/`                                | Original design exercises with stable exercise anchors |
+| `{lang}/lenses/` | Searchable attributed design lenses |
 | `{lang}/for-agents/`                              | Guidance for machine consumers                         |
 | `llms.txt`                                        | Compact entry point for agents                         |
 | `llms-full.txt`                                   | Combined lesson text                                   |
@@ -30,6 +31,8 @@ All paths below are relative to the configured site root. In production that roo
 | `api/v1/resources.json`                           | Resource collection                                    |
 | `api/v1/mechanics.json`                           | Complete localized mechanic taxonomies                 |
 | `api/v1/practice.json`                            | Complete localized practice collections                |
+| `api/v1/lenses.json` | Complete localized design-lens records |
+| `content/lenses/{lang}/game-design.md` | Complete design-lens reference as Markdown |
 | `content/{lang}/{id}.md`                          | One lesson as Markdown                                 |
 | `content/mechanics/{lang}/{id}.md`                | One mechanic taxonomy as Markdown                      |
 | `content/practice/{lang}/game-design-practice.md` | The full practice collection as Markdown               |
@@ -47,6 +50,8 @@ validation and built-output comparisons check the same contract. See
 exercise, not lesson reading time. Exports extend `/api/v1/` additively.
 
 Mechanic taxonomies use bilingual JSON under `src/data/mechanics/` as their single source, following the resource catalog's localized-data model. `src/lib/mechanics.mjs` derives the language-specific tree, counts and complete Markdown for HTML and exports. Its validator is also used by the canonical content check. See [mechanic content](mechanics-content.md). Catalog exports extend `/api/v1/` additively; the lesson collection and its identifiers are unchanged.
+
+Design lenses use `src/data/lenses.json` as a single bilingual source. `src/lib/lenses.mjs` localizes records, derives counts and Markdown, and validates coverage and attribution. New exports extend v1 additively. See [the lens content contract](lenses-content.md).
 
 - **Content:** lesson Markdown and validated frontmatter, plus the bilingual resource catalog in `src/data/resources.json`. Keep editorial content out of page components where it can be shared through the collection.
 - **Presentation:** Astro layouts, components, styles, and language-specific interface labels. Use semantic HTML and preserve keyboard access.

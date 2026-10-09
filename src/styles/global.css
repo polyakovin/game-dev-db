@@ -2,6 +2,7 @@
 @import '@fontsource/ibm-plex-mono/400.css';
 @import '@fontsource/ibm-plex-mono/500.css';
 @import './mechanics.css';
+@import './lenses.css';
 :root {
   --paper: #f7f6f2;
   --surface: #fffefa;
@@ -1137,6 +1138,7 @@ footer a:hover {
   }
   .mobile-nav {
     display: flex;
+    flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;

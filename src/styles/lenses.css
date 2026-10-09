@@ -1,0 +1,111 @@
+.lenses-use {
+  border-left: 3px solid var(--accent);
+  background: #eeede5;
+  padding: 18px 22px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.lenses-use h2 {
+  font-size: 17px;
+  font-weight: 550;
+}
+.lenses-use p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+.lenses-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #eeede5;
+}
+.lenses-controls[hidden] {
+  display: none;
+}
+.lens-search-field {
+  grid-column: 1 / -1;
+}
+.lenses-controls label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.lenses-controls input,
+.lenses-controls select {
+  width: 100%;
+  min-width: 0;
+  padding: 11px;
+  font: inherit;
+  font-size: 13px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+}
+.lenses-controls .mechanics-actions {
+  margin: 0;
+}
+.lenses-controls [data-lens-status] {
+  margin: 0;
+  align-self: center;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: right;
+}
+.lens-card .family-number {
+  min-width: 32px;
+}
+.lenses-list a,
+.lenses-sources a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+.lens-attribution {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 0;
+}
+.lens-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  font-size: 12px;
+  margin-top: 22px;
+}
+.lenses-home {
+  margin-top: 38px;
+}
+.lenses-home > p {
+  color: var(--muted);
+  font-size: 13px;
+}
+.lenses-home .lesson-card {
+  max-width: 700px;
+}
+@media (max-width: 650px) {
+  .lenses-controls {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+  }
+  .lenses-controls [data-lens-status] {
+    text-align: left;
+  }
+  .lenses-use {
+    padding: 16px;
+  }
+  .lens-card .family-number {
+    min-width: 27px;
+    font-size: 11px;
+  }
+}
+@media print {
+  .lenses-controls {
+    display: none;
+  }
+}

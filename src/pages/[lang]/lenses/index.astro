@@ -1,0 +1,195 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getLenses } from '../../../lib/lenses.mjs';
+import { locales, path, REPO, type Locale } from '../../../lib/site';
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const ru = lang === 'ru';
+const catalog = getLenses(lang);
+---
+
+<Layout
+  lang={lang}
+  title={catalog.title}
+  description={catalog.description}
+  section="lenses"
+  alternate="lenses/"
+>
+  <header class="page-header">
+    <div class="eyebrow">
+      {ru ? 'Вопросы для проектирования' : 'Questions for game design'}
+    </div>
+    <h1>{catalog.title}</h1>
+    <p>{catalog.intro}</p>
+    <div class="article-meta">
+      <span>
+        {catalog.counts.total} {ru ? 'призм' : 'lenses'}
+      </span>
+      <span>116 Jesse Schell + 1 Sebastian Deterding</span>
+      <span>{catalog.updatedAt}</span>
+    </div>
+    <div class="mechanics-links">
+      <a href={path(`content/lenses/${lang}/${catalog.id}.md`)}>
+        {ru ? 'Читать Markdown' : 'Read Markdown'}
+      </a>
+      <a href={path('api/v1/lenses.json')}>JSON</a>
+      <a href={`${REPO}/edit/main/src/data/lenses.json`}>
+        {ru ? 'Предложить правку' : 'Suggest an edit'}
+      </a>
+    </div>
+  </header>
+  <section id="use" class="lenses-use" aria-labelledby="use-heading">
+    <h2 id="use-heading">{ru ? 'Как применять' : 'How to use them'}</h2>
+    <p>
+      {ru
+        ? 'Выберите 3–5 призм под одну проблему. Запишите ответы и конкретное изменение. Затем проверьте его с игроком: ответы команды остаются предположениями до наблюдения в плейтесте.'
+        : 'Choose 3–5 lenses for one problem. Record your answers and a concrete change. Then test it with a player: team answers remain assumptions until supported by playtest observations.'}
+    </p>
+    <p>
+      {ru
+        ? 'Номера 1–113 сохранены из второго издания. Три дополнения третьего издания используют номера 67½, 93½ и 95½. Метод Детердинга указан отдельно.'
+        : 'Numbers 1–113 follow the second edition. Three third-edition additions use 67½, 93½ and 95½. Deterding’s method is listed separately.'}
+    </p>
+  </section>
+  <div class="lenses-controls" hidden>
+    <div class="lens-search-field">
+      <label for="lens-search">
+        {ru ? 'Поиск по призмам и вопросам' : 'Search lenses and questions'}
+      </label>
+      <input
+        id="lens-search"
+        type="search"
+        autocomplete="off"
+        placeholder={
+          ru
+            ? 'Например, эмоции, правила или Metaphor'
+            : 'For example, emotion, rules or metaphor'
+        }
+      />
+    </div>
+    <div>
+      <label for="lens-theme">{ru ? 'Тема' : 'Theme'}</label>
+      <select id="lens-theme">
+        <option value="all">{ru ? 'Все темы' : 'All themes'}</option>
+        {catalog.themes.map((theme) => (
+          <option value={theme.id}>{theme.title}</option>
+        ))}
+      </select>
+    </div>
+    <div>
+      <label for="lens-source">
+        {ru ? 'Автор и издание' : 'Author and edition'}
+      </label>
+      <select id="lens-source">
+        <option value="all">{ru ? 'Все источники' : 'All sources'}</option>
+        {catalog.sources.map((source) => (
+          <option value={source.id}>{source.title}</option>
+        ))}
+      </select>
+    </div>
+    <div class="mechanics-actions">
+      <button type="button" data-lens-expand>
+        {ru ? 'Раскрыть все' : 'Expand all'}
+      </button>
+      <button type="button" data-lens-collapse>
+        {ru ? 'Свернуть все' : 'Collapse all'}
+      </button>
+      <button type="button" data-lens-reset>
+        {ru ? 'Сбросить' : 'Reset'}
+      </button>
+    </div>
+    <p
+      data-lens-status
+      aria-live="polite"
+      data-label={ru ? 'Призм' : 'Lenses'}
+    ></p>
+  </div>
+  <div class="empty-state" data-lens-empty hidden>
+    <h2>{ru ? 'Совпадений нет' : 'No matches'}</h2>
+    <p>
+      {ru
+        ? 'Измените запрос или сбросьте фильтры.'
+        : 'Change your query or reset the filters.'}
+    </p>
+    <button class="button-primary" type="button" data-lens-reset>
+      {ru ? 'Сбросить поиск' : 'Reset search'}
+    </button>
+  </div>
+  <div class="lenses-list">
+    {catalog.themes.map((theme) => (
+      <section id={theme.id} class="mechanics-section" data-lens-theme-group>
+        <h2>{theme.title}</h2>
+        {catalog.lenses
+          .filter((lens) => lens.theme === theme.id)
+          .map((lens) => (
+            <details
+              id={lens.id}
+              class="mechanic-family lens-card"
+              data-lens
+              data-theme={lens.theme}
+              data-source={lens.sourceId}
+              data-search={`${lens.number ?? ''} ${lens.title} ${lens.originalTitle} ${lens.author} ${lens.sourceTitle} ${lens.description} ${lens.questions.join(' ')}`}
+            >
+              <summary>
+                <span class="family-number">{lens.number ?? '+'}</span>
+                <span class="family-heading">
+                  <strong data-lens-title>{lens.title}</strong>
+                  <span data-family-description data-lens-description>
+                    {lens.description}
+                  </span>
+                </span>
+              </summary>
+              <div class="mechanic-family-body">
+                <p class="lens-attribution">
+                  {lens.author} · {lens.sourceTitle}
+                  {ru && <> · {lens.originalTitle}</>}
+                </p>
+                <h3>{ru ? 'Вопросы для проверки' : 'Review questions'}</h3>
+                <ul>
+                  {lens.questions.map((q) => (
+                    <li data-lens-question>{q}</li>
+                  ))}
+                </ul>
+                <div class="lens-source-links">
+                  <a href={lens.sourceUrl}>
+                    {ru ? 'Источник и авторство' : 'Source and attribution'}
+                  </a>
+                  <a href={lens.referenceUrl}>
+                    {ru ? 'Оригинальный материал' : 'Original reference'}
+                  </a>
+                  <a href={`#${lens.id}`}>
+                    {ru ? 'Прямая ссылка' : 'Permalink'}
+                  </a>
+                </div>
+              </div>
+            </details>
+          ))}
+      </section>
+    ))}
+  </div>
+  <section id="sources" class="mechanics-note lenses-sources">
+    <h2>{ru ? 'Источники и авторство' : 'Sources and attribution'}</h2>
+    <p>{catalog.rights}</p>
+    <ul class="mechanics-sources">
+      {catalog.sources.map((source) => (
+        <li>
+          <a href={source.url}>{source.title}</a>
+          <p>
+            {source.author} · {source.description}
+          </p>
+        </li>
+      ))}
+    </ul>
+    <p class="article-license">
+      {ru
+        ? 'Оригинальные пояснения и вопросы'
+        : 'Original explanations and questions'}
+      : CC BY 4.0 · Game Dev DB contributors
+    </p>
+  </section>
+</Layout>
+<script>
+  import '../../../scripts/lenses-search';
+</script>

@@ -1,0 +1,3070 @@
+{
+  "id": "game-design",
+  "updatedAt": "2026-10-10",
+  "title": {
+    "ru": "Призмы геймдизайна",
+    "en": "Game-design lenses"
+  },
+  "description": {
+    "ru": "117 способов проверить замысел, опыт игрока и игровые системы: призмы Шелла и отдельный метод Детердинга.",
+    "en": "117 perspectives for reviewing concepts, player experience and game systems: Schell’s lenses and Deterding’s distinct method."
+  },
+  "intro": {
+    "ru": "Призма помогает посмотреть на игру с одной стороны и задать точные вопросы. Выберите несколько призм под текущую задачу, проверьте ответы в плейтесте и запишите следующий эксперимент.",
+    "en": "A lens focuses attention on one aspect of a game and prompts useful questions. Choose a few lenses for the current problem, test your answers through play and record the next experiment."
+  },
+  "rights": {
+    "ru": "Краткие пояснения и вопросы написаны для Game Dev DB своими словами. Это самостоятельный справочник, а не перевод карточек или замена книги. Названия, концепции и внешние материалы принадлежат их авторам.",
+    "en": "The concise explanations and review questions are original Game Dev DB wording. This is an independent reference, not a translation of the cards or a substitute for the book. Names, concepts and external material remain their authors’ work."
+  },
+  "themes": [
+    {
+      "id": "experience",
+      "title": {
+        "ru": "Опыт и эмоции",
+        "en": "Experience and emotions"
+      }
+    },
+    {
+      "id": "concept",
+      "title": {
+        "ru": "Замысел и идея",
+        "en": "Concept and ideas"
+      }
+    },
+    {
+      "id": "player",
+      "title": {
+        "ru": "Игрок и мотивация",
+        "en": "Player and motivation"
+      }
+    },
+    {
+      "id": "rules",
+      "title": {
+        "ru": "Правила и системы",
+        "en": "Rules and systems"
+      }
+    },
+    {
+      "id": "balance",
+      "title": {
+        "ru": "Выбор и баланс",
+        "en": "Choices and balance"
+      }
+    },
+    {
+      "id": "interface",
+      "title": {
+        "ru": "Головоломки и интерфейс",
+        "en": "Puzzles and interfaces"
+      }
+    },
+    {
+      "id": "story",
+      "title": {
+        "ru": "Интерес и история",
+        "en": "Interest and story"
+      }
+    },
+    {
+      "id": "world",
+      "title": {
+        "ru": "Персонажи и мир",
+        "en": "Characters and world"
+      }
+    },
+    {
+      "id": "social",
+      "title": {
+        "ru": "Социальная игра",
+        "en": "Social play"
+      }
+    },
+    {
+      "id": "production",
+      "title": {
+        "ru": "Команда и выпуск",
+        "en": "Team and release"
+      }
+    },
+    {
+      "id": "purpose",
+      "title": {
+        "ru": "Цель и последствия",
+        "en": "Purpose and consequences"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "schell-second",
+      "title": {
+        "ru": "Шелл: 113 призм второго издания",
+        "en": "Schell: 113 second-edition lenses"
+      },
+      "author": "Jesse Schell",
+      "edition": 2,
+      "url": "https://schellgames.com/art-of-game-design",
+      "description": {
+        "ru": "Основной набор сверён с предоставленным конспектом второго издания. Официальная страница автора ведёт к книге и колоде.",
+        "en": "The core set was checked against the supplied second-edition notes. The author’s official page links to the book and deck."
+      }
+    },
+    {
+      "id": "schell-third",
+      "title": {
+        "ru": "Шелл: дополнения третьего издания",
+        "en": "Schell: third-edition additions"
+      },
+      "author": "Jesse Schell",
+      "edition": 3,
+      "url": "https://api.pageplace.de/preview/DT0400.9781351803649_A38251642/preview-9781351803649_A38251642.pdf",
+      "description": {
+        "ru": "Оглавление третьего издания подтверждает №67½, №93½ и №95½. Содержание дополнений проверено в официальной колоде.",
+        "en": "The third-edition table of lenses confirms 67½, 93½ and 95½. The additions were checked in the official deck."
+      }
+    },
+    {
+      "id": "deterding",
+      "title": {
+        "ru": "Детердинг: внутренние атомы навыка",
+        "en": "Deterding: intrinsic skill atoms"
+      },
+      "author": "Sebastian Deterding",
+      "edition": null,
+      "url": "https://pure.york.ac.uk/portal/en/publications/the-lens-of-intrinsic-skill-atoms-a-method-for-gameful-design/",
+      "description": {
+        "ru": "Отдельный метод gameful design из статьи 2015 года. Его применение описано в авторском курсе How to Do Gameful Design. Это не дополнительный номер Шелла.",
+        "en": "A separate gameful design method from a 2015 paper, explained in the author’s How to Do Gameful Design course. It does not extend Schell’s numbering."
+      }
+    }
+  ],
+  "lenses": [
+    {
+      "id": "schell-001",
+      "number": "1",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Эмоции",
+        "en": "Emotion"
+      },
+      "description": {
+        "ru": "Настройте переживание игрока, а не только последовательность событий.",
+        "en": "Design the player's feelings alongside the sequence of events."
+      },
+      "questions": [
+        {
+          "ru": "Какой эмоциональный переход должен произойти за одну сессию?",
+          "en": "What emotional change should one session create?"
+        },
+        {
+          "ru": "В какой момент плейтест показывает другое чувство и что его вызывает?",
+          "en": "Where does a playtest reveal a different feeling, and what causes it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-002",
+      "number": "2",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Существенный опыт",
+        "en": "Essential Experience"
+      },
+      "description": {
+        "ru": "Выделите переживание, ради которого существует игра.",
+        "en": "Identify the experience that gives the game its purpose."
+      },
+      "questions": [
+        {
+          "ru": "Как описать главный опыт игры без перечисления её функций?",
+          "en": "How would you describe its essential experience without listing features?"
+        },
+        {
+          "ru": "Какая механика передаёт этот опыт лучше всего, а какая его размывает?",
+          "en": "Which mechanic expresses that experience, and which dilutes it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-003",
+      "number": "3",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Место игры",
+        "en": "Venue"
+      },
+      "description": {
+        "ru": "Учитывайте физическое и социальное место, в котором играют.",
+        "en": "Consider the physical and social setting in which play happens."
+      },
+      "questions": [
+        {
+          "ru": "Что окружает игрока и сколько внимания он может выделить?",
+          "en": "What surrounds the player, and how much attention can they give?"
+        },
+        {
+          "ru": "Как шум, размер экрана или присутствие других людей меняют правила сессии?",
+          "en": "How do noise, screen size or other people change the session?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-004",
+      "number": "4",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сюрприз",
+        "en": "Surprise"
+      },
+      "description": {
+        "ru": "Создавайте неожиданные события, которые можно понять после их появления.",
+        "en": "Create unexpected events that make sense once they happen."
+      },
+      "questions": [
+        {
+          "ru": "Какое ожидание игрока игра интересно нарушает?",
+          "en": "Which player expectation does the game disrupt in an interesting way?"
+        },
+        {
+          "ru": "Может ли игрок сам создать неожиданную ситуацию для себя или соперника?",
+          "en": "Can a player create an unexpected situation for themselves or an opponent?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-005",
+      "number": "5",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Удовольствие от игры",
+        "en": "Fun"
+      },
+      "description": {
+        "ru": "Найдите конкретные действия, которые хочется повторять.",
+        "en": "Find the specific actions players want to repeat."
+      },
+      "questions": [
+        {
+          "ru": "Какое действие тестер повторяет по собственной инициативе?",
+          "en": "Which action does a tester repeat voluntarily?"
+        },
+        {
+          "ru": "Что исчезнет из игры, если убрать её самый приятный момент?",
+          "en": "What would be lost if its most enjoyable moment were removed?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-006",
+      "number": "6",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Любопытство",
+        "en": "Curiosity"
+      },
+      "description": {
+        "ru": "Поддерживайте вопросы, ответы на которые хочется получить через игру.",
+        "en": "Sustain questions players want to answer through play."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок хочет выяснить после первого знакомства с игрой?",
+          "en": "What does the player want to discover after first encountering the game?"
+        },
+        {
+          "ru": "Как ответ на один вопрос открывает следующий интересный вопрос?",
+          "en": "How does answering one question reveal another interesting one?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-007",
+      "number": "7",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Внутриигровая ценность",
+        "en": "Endogenous Value"
+      },
+      "description": {
+        "ru": "Свяжите ценность очков и предметов с тем, что важно в правилах.",
+        "en": "Connect points and items to things that matter within the rules."
+      },
+      "questions": [
+        {
+          "ru": "Какое полезное решение становится доступным благодаря этому предмету?",
+          "en": "What useful decision does this item make possible?"
+        },
+        {
+          "ru": "Сохраняется ли желание получить награду, когда её внешний блеск исчезает?",
+          "en": "Does the reward remain desirable after its novelty wears off?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-008",
+      "number": "8",
+      "theme": "experience",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Решение проблем",
+        "en": "Problem Solving"
+      },
+      "description": {
+        "ru": "Рассмотрите игру как последовательность задач, которые игрок учится решать.",
+        "en": "View play as problems the player learns to solve."
+      },
+      "questions": [
+        {
+          "ru": "Какую задачу игрок решает своим следующим действием?",
+          "en": "What problem does the player's next action address?"
+        },
+        {
+          "ru": "Возникают ли новые задачи из сочетания правил, а не только из новых уровней?",
+          "en": "Do combinations of rules create new problems beyond additional levels?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-009",
+      "number": "9",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Элементная тетрада",
+        "en": "The Elemental Tetrad"
+      },
+      "description": {
+        "ru": "Согласуйте механику, историю, эстетику и технологию.",
+        "en": "Align mechanics, story, aesthetics and technology."
+      },
+      "questions": [
+        {
+          "ru": "Как каждый из четырёх элементов поддерживает главный опыт?",
+          "en": "How does each of the four elements support the essential experience?"
+        },
+        {
+          "ru": "Где улучшение одного элемента ухудшает другой?",
+          "en": "Where does improving one element undermine another?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-010",
+      "number": "10",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Голографический дизайн",
+        "en": "Holographic Design"
+      },
+      "description": {
+        "ru": "Свяжите устройство игры с тем, как её воспринимает игрок.",
+        "en": "Connect the game's structure to the player's experience of it."
+      },
+      "questions": [
+        {
+          "ru": "Как изменение правила отражается на эмоциях, истории и изображении?",
+          "en": "How does a rule change affect feelings, story and presentation?"
+        },
+        {
+          "ru": "Можно ли объяснить впечатление тестера через конкретное сочетание элементов?",
+          "en": "Can a tester's impression be traced to a specific combination of elements?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-011",
+      "number": "11",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Единство",
+        "en": "Unification"
+      },
+      "description": {
+        "ru": "Проверьте, работают ли детали на общую тему.",
+        "en": "Check whether details reinforce a shared theme."
+      },
+      "questions": [
+        {
+          "ru": "Какое общее обещание объединяет правила, звук и визуальные решения?",
+          "en": "What shared promise connects rules, sound and visuals?"
+        },
+        {
+          "ru": "Какая деталь выглядит чужой и чем её можно заменить?",
+          "en": "Which detail feels out of place, and what could replace it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-012",
+      "number": "12",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Резонанс",
+        "en": "Resonance"
+      },
+      "description": {
+        "ru": "Ищите идеи, которые вызывают сильный личный отклик.",
+        "en": "Look for ideas that produce a strong personal response."
+      },
+      "questions": [
+        {
+          "ru": "Какая часть замысла сильнее всего отзывается у автора и аудитории?",
+          "en": "Which part of the concept resonates most with its creator and audience?"
+        },
+        {
+          "ru": "Каким игровым действием можно передать этот отклик?",
+          "en": "What player action could convey that response?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-013",
+      "number": "13",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Бесконечное вдохновение",
+        "en": "Infinite Inspiration"
+      },
+      "description": {
+        "ru": "Берите материал для игры из опыта за пределами других игр.",
+        "en": "Draw inspiration from experiences beyond other games."
+      },
+      "questions": [
+        {
+          "ru": "Какой неигровой опыт даёт необычное правило или ощущение?",
+          "en": "What experience outside games suggests an unusual rule or feeling?"
+        },
+        {
+          "ru": "Что в нём важно сохранить при переводе в игровой формат?",
+          "en": "What matters most when translating it into play?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-014",
+      "number": "14",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Постановка проблемы",
+        "en": "The Problem Statement"
+      },
+      "description": {
+        "ru": "Опишите задачу дизайна до выбора решения.",
+        "en": "Define the design problem before choosing a solution."
+      },
+      "questions": [
+        {
+          "ru": "Какой наблюдаемый результат мы пытаемся получить для игрока?",
+          "en": "What observable result are we trying to create for the player?"
+        },
+        {
+          "ru": "Какая текущая функция не помогает решить эту задачу?",
+          "en": "Which current feature does not help solve that problem?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-015",
+      "number": "15",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Восемь фильтров",
+        "en": "The Eight Filters"
+      },
+      "description": {
+        "ru": "Проверьте замысел с творческой, аудиторной, технической и деловой сторон.",
+        "en": "Review the concept from creative, audience, technical and business perspectives."
+      },
+      "questions": [
+        {
+          "ru": "Проходит ли идея проверки вкуса, аудитории, дизайна, новизны, бизнеса, технологии, общения и плейтеста?",
+          "en": "Does the idea pass reviews of taste, audience, design, novelty, business, technology, social fit and playtesting?"
+        },
+        {
+          "ru": "Какой провал требует изменить замысел, а не косметически доработать его?",
+          "en": "Which failed review requires a concept change rather than cosmetic polish?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-016",
+      "number": "16",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Снижение рисков",
+        "en": "Risk Mitigation"
+      },
+      "description": {
+        "ru": "Проверяйте опасные предположения до дорогой разработки.",
+        "en": "Test risky assumptions before expensive development."
+      },
+      "questions": [
+        {
+          "ru": "Какое неверное предположение сделает проект нежизнеспособным?",
+          "en": "Which mistaken assumption would make the project unviable?"
+        },
+        {
+          "ru": "Какой дешёвый эксперимент проверит именно его?",
+          "en": "Which inexpensive experiment would test that assumption directly?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-017",
+      "number": "17",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Игрушка",
+        "en": "The Toy"
+      },
+      "description": {
+        "ru": "Проверьте удовольствие от взаимодействия без обязательной цели.",
+        "en": "Check whether interaction is enjoyable without a required goal."
+      },
+      "questions": [
+        {
+          "ru": "Хочется ли исследовать управление, когда победа и счёт отключены?",
+          "en": "Is interacting still appealing when victory and scoring are disabled?"
+        },
+        {
+          "ru": "Какое свойство системы приглашает поэкспериментировать?",
+          "en": "Which system property invites experimentation?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-018",
+      "number": "18",
+      "theme": "concept",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Страсть",
+        "en": "Passion"
+      },
+      "description": {
+        "ru": "Проверьте, поддерживает ли интерес к замыслу длительную работу.",
+        "en": "Check whether interest in the concept can sustain the work."
+      },
+      "questions": [
+        {
+          "ru": "К какой части игры команда возвращается с интересом после неудач?",
+          "en": "Which part of the game keeps the team interested after setbacks?"
+        },
+        {
+          "ru": "Совпадает ли этот интерес с тем, ради чего приходит игрок?",
+          "en": "Does that interest align with what attracts the player?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-019",
+      "number": "19",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Игрок",
+        "en": "The Player"
+      },
+      "description": {
+        "ru": "Проектируйте для конкретных людей и условий игры.",
+        "en": "Design for specific people and play contexts."
+      },
+      "questions": [
+        {
+          "ru": "Что уже умеет выбранная аудитория и чего она ожидает?",
+          "en": "What does the intended audience already know and expect?"
+        },
+        {
+          "ru": "Какая часть интерфейса предполагает опыт, которого у неё нет?",
+          "en": "Which interface element assumes experience that audience lacks?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-020",
+      "number": "20",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Игровые удовольствия",
+        "en": "Pleasure"
+      },
+      "description": {
+        "ru": "Различайте удовольствие от исследования, общения, освоения и других занятий.",
+        "en": "Distinguish pleasures such as exploration, connection and mastery."
+      },
+      "questions": [
+        {
+          "ru": "Какие виды удовольствия дают разные действия в игре?",
+          "en": "What kinds of pleasure do different actions provide?"
+        },
+        {
+          "ru": "Какой важный для аудитории вид удовольствия остаётся без поддержки?",
+          "en": "Which pleasure valued by the audience lacks support?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-021",
+      "number": "21",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Поток",
+        "en": "Flow"
+      },
+      "description": {
+        "ru": "Согласуйте ясную цель, внимание и посильный вызов.",
+        "en": "Align a clear goal, focused attention and an achievable challenge."
+      },
+      "questions": [
+        {
+          "ru": "Где игрок скучает, а где перестаёт понимать, как добиться успеха?",
+          "en": "Where is the player bored, and where do they lose a path to success?"
+        },
+        {
+          "ru": "Как следующий шаг учитывает уже освоенный навык?",
+          "en": "How does the next step build on the skill already learned?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-022",
+      "number": "22",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Потребности",
+        "en": "Needs"
+      },
+      "description": {
+        "ru": "Свяжите игровой опыт с потребностями выбранной аудитории.",
+        "en": "Connect the experience to the intended audience's needs."
+      },
+      "questions": [
+        {
+          "ru": "Какую потребность поддерживает этот режим или награда?",
+          "en": "What need does this mode or reward support?"
+        },
+        {
+          "ru": "Есть ли противоречие между потребностью игрока и требованием системы?",
+          "en": "Does the system demand something that conflicts with the player's need?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-023",
+      "number": "23",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Мотивация",
+        "en": "Motivation"
+      },
+      "description": {
+        "ru": "Разберитесь, почему игрок начинает действие и продолжает его.",
+        "en": "Understand why a player starts and sustains an action."
+      },
+      "questions": [
+        {
+          "ru": "Что побуждает продолжить игру после выполнения формальной цели?",
+          "en": "What motivates continued play after the stated goal is complete?"
+        },
+        {
+          "ru": "Какая внешняя награда вытесняет интерес к самому действию?",
+          "en": "Which external reward displaces interest in the action itself?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-024",
+      "number": "24",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Новизна",
+        "en": "Novelty"
+      },
+      "description": {
+        "ru": "Дайте игроку заметное отличие, которое имеет смысл в игре.",
+        "en": "Offer a noticeable difference that matters during play."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок замечает как новое и как это меняет его решения?",
+          "en": "What feels new to the player, and how does it change decisions?"
+        },
+        {
+          "ru": "Остаётся ли эта особенность интересной после знакомства?",
+          "en": "Does that feature remain interesting once it becomes familiar?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-025",
+      "number": "25",
+      "theme": "player",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Оценка игрока",
+        "en": "Judgment"
+      },
+      "description": {
+        "ru": "Проверьте, как игра оценивает действия и объясняет результат.",
+        "en": "Examine how the game judges actions and communicates results."
+      },
+      "questions": [
+        {
+          "ru": "Понимает ли игрок, за какое действие он получил такую оценку?",
+          "en": "Does the player understand which action earned that evaluation?"
+        },
+        {
+          "ru": "Оценка помогает совершенствоваться или только сообщает о поражении?",
+          "en": "Does evaluation help improvement or merely announce failure?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-026",
+      "number": "26",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Функциональное пространство",
+        "en": "Functional Space"
+      },
+      "description": {
+        "ru": "Рассмотрите пространство как связи и ограничения действий.",
+        "en": "Model space through the connections and constraints on actions."
+      },
+      "questions": [
+        {
+          "ru": "Какие позиции различаются по возможностям, даже если выглядят одинаково?",
+          "en": "Which positions offer different possibilities despite looking similar?"
+        },
+        {
+          "ru": "Как границы и переходы между областями меняют стратегию?",
+          "en": "How do boundaries and transitions between areas change strategy?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-027",
+      "number": "27",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Время",
+        "en": "Time"
+      },
+      "description": {
+        "ru": "Используйте длительность, порядок и темп как часть правил.",
+        "en": "Treat duration, order and pacing as parts of the rules."
+      },
+      "questions": [
+        {
+          "ru": "Какие решения меняются при ускорении или замедлении времени?",
+          "en": "Which decisions change when time speeds up or slows down?"
+        },
+        {
+          "ru": "Где ожидание создаёт напряжение, а где только задерживает игру?",
+          "en": "Where does waiting create tension, and where does it merely delay play?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-028",
+      "number": "28",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Машина состояний",
+        "en": "The State Machine"
+      },
+      "description": {
+        "ru": "Опишите допустимые состояния и переходы системы.",
+        "en": "Describe the system's valid states and transitions."
+      },
+      "questions": [
+        {
+          "ru": "Какие переходы игрок может вызвать и по каким условиям?",
+          "en": "Which transitions can the player trigger, and under what conditions?"
+        },
+        {
+          "ru": "Есть ли состояние, из которого нельзя выйти ожидаемым способом?",
+          "en": "Is there a state that cannot be exited in the expected way?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-029",
+      "number": "29",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Секреты",
+        "en": "Secrets"
+      },
+      "description": {
+        "ru": "Распределяйте информацию между системой и игроками осознанно.",
+        "en": "Distribute information deliberately between the system and players."
+      },
+      "questions": [
+        {
+          "ru": "Кто знает важный факт и кто может его узнать?",
+          "en": "Who knows an important fact, and who can discover it?"
+        },
+        {
+          "ru": "Скрытая информация создаёт интересное предположение или случайную ошибку?",
+          "en": "Does hidden information create an interesting inference or a random mistake?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-030",
+      "number": "30",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Эмерджентность",
+        "en": "Emergence"
+      },
+      "description": {
+        "ru": "Ищите сложное поведение, возникающее из простых взаимодействий.",
+        "en": "Look for complex behavior arising from simple interactions."
+      },
+      "questions": [
+        {
+          "ru": "Какие неожиданные способы игры появляются при сочетании правил?",
+          "en": "What unexpected ways of playing arise from combined rules?"
+        },
+        {
+          "ru": "Можно ли расширить взаимодействия вместо добавления отдельной функции?",
+          "en": "Could richer interactions replace an additional standalone feature?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-031",
+      "number": "31",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Действия",
+        "en": "Action"
+      },
+      "description": {
+        "ru": "Различайте доступные команды и возникающие из них стратегии.",
+        "en": "Distinguish available commands from the strategies they enable."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок может делать и какие решения рождаются из сочетания действий?",
+          "en": "What can the player do, and what decisions emerge from combining actions?"
+        },
+        {
+          "ru": "Какое действие редко применяется и почему оно всё ещё нужно?",
+          "en": "Which action is rarely used, and why is it still needed?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-032",
+      "number": "32",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Цели",
+        "en": "Goals"
+      },
+      "description": {
+        "ru": "Сделайте цели понятными, достижимыми и интересными для игрока.",
+        "en": "Make goals understandable, attainable and appealing to the player."
+      },
+      "questions": [
+        {
+          "ru": "Может ли игрок объяснить ближайшую и общую цель?",
+          "en": "Can the player explain the immediate and overall goal?"
+        },
+        {
+          "ru": "Какая цель допускает разные осмысленные способы достижения?",
+          "en": "Which goal allows several meaningful ways to achieve it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-033",
+      "number": "33",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Правила",
+        "en": "Rules"
+      },
+      "description": {
+        "ru": "Проверьте явные ограничения и правила, которые система навязывает молча.",
+        "en": "Review explicit restrictions and rules silently enforced by the system."
+      },
+      "questions": [
+        {
+          "ru": "Какие правила игрок должен знать до первого важного решения?",
+          "en": "Which rules must the player know before the first important decision?"
+        },
+        {
+          "ru": "Где реализация правила расходится с тем, что объясняет игра?",
+          "en": "Where does a rule's implementation differ from the game's explanation?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-034",
+      "number": "34",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Навыки",
+        "en": "Skill"
+      },
+      "description": {
+        "ru": "Выделите физические, умственные и социальные навыки игры.",
+        "en": "Identify the physical, mental and social skills used in play."
+      },
+      "questions": [
+        {
+          "ru": "Какой навык объясняет разницу между новичком и опытным игроком?",
+          "en": "Which skill explains the difference between a beginner and an expert?"
+        },
+        {
+          "ru": "Даёт ли игра безопасную возможность потренировать этот навык?",
+          "en": "Does the game provide a safe way to practice that skill?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-035",
+      "number": "35",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Ожидаемая ценность",
+        "en": "Expected Value"
+      },
+      "description": {
+        "ru": "Сопоставляйте вероятность исхода и ценность результата.",
+        "en": "Compare an outcome's likelihood with the value of its result."
+      },
+      "questions": [
+        {
+          "ru": "Каковы средние выгоды и потери каждого рискованного решения?",
+          "en": "What are the average gains and losses of each risky decision?"
+        },
+        {
+          "ru": "Совпадает ли расчёт с ценностью, которую ощущает игрок?",
+          "en": "Does that calculation match the value perceived by the player?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-036",
+      "number": "36",
+      "theme": "rules",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Случайность",
+        "en": "Chance"
+      },
+      "description": {
+        "ru": "Проверьте роль неопределённости и понимание вероятностей.",
+        "en": "Examine the role of uncertainty and how probabilities are understood."
+      },
+      "questions": [
+        {
+          "ru": "Как случайность меняет решение до события и реакцию после него?",
+          "en": "How does randomness affect decisions before an event and reactions afterward?"
+        },
+        {
+          "ru": "Может ли игрок управлять риском или только ждать результата?",
+          "en": "Can the player manage risk or merely wait for the outcome?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-037",
+      "number": "37",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Справедливость",
+        "en": "Fairness"
+      },
+      "description": {
+        "ru": "Согласуйте условия успеха с обещанием выбранного режима.",
+        "en": "Align the conditions of success with the mode's promise."
+      },
+      "questions": [
+        {
+          "ru": "Какие преимущества участники получают до начала соревнования?",
+          "en": "What advantages do participants have before competition begins?"
+        },
+        {
+          "ru": "Считает ли аудитория эти различия оправданными для этого режима?",
+          "en": "Does the audience consider those differences appropriate for this mode?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-038",
+      "number": "38",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Вызов",
+        "en": "Challenge"
+      },
+      "description": {
+        "ru": "Настраивайте трудность под развитие навыка и ожидаемый опыт.",
+        "en": "Adjust difficulty to skill growth and the intended experience."
+      },
+      "questions": [
+        {
+          "ru": "Как игрок понимает причину неудачи и следующий способ улучшения?",
+          "en": "How does the player understand a failure and the next improvement to try?"
+        },
+        {
+          "ru": "Можно ли менять трудность без разрушения сути вызова?",
+          "en": "Can difficulty change without losing the essence of the challenge?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-039",
+      "number": "39",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Осмысленный выбор",
+        "en": "Meaningful Choices"
+      },
+      "description": {
+        "ru": "Дайте решениям разные последствия и реальные компромиссы.",
+        "en": "Give decisions distinct consequences and real tradeoffs."
+      },
+      "questions": [
+        {
+          "ru": "Есть ли условия, в которых каждая предлагаемая возможность полезна?",
+          "en": "Are there situations in which each offered option is useful?"
+        },
+        {
+          "ru": "Как игрок узнаёт цену выбора до принятия решения?",
+          "en": "How can the player understand a choice's cost before making it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-040",
+      "number": "40",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Треугольный выбор",
+        "en": "Triangularity"
+      },
+      "description": {
+        "ru": "Сравните безопасный малый выигрыш с рискованным большим.",
+        "en": "Compare a small safe gain with a larger risky one."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок получает, выбирая опасный маршрут вместо безопасного?",
+          "en": "What does the player gain by choosing a dangerous route over a safe one?"
+        },
+        {
+          "ru": "Меняется ли лучший выбор в зависимости от текущей ситуации?",
+          "en": "Does the best choice change with the current situation?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-041",
+      "number": "41",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Навык и случайность",
+        "en": "Skill vs. Chance"
+      },
+      "description": {
+        "ru": "Выберите долю контроля и неопределённости, подходящую аудитории.",
+        "en": "Choose a balance of control and uncertainty that suits the audience."
+      },
+      "questions": [
+        {
+          "ru": "Как часто лучший игрок проигрывает из-за события вне его контроля?",
+          "en": "How often does the stronger player lose because of an uncontrollable event?"
+        },
+        {
+          "ru": "Этот результат поддерживает ожидаемое напряжение или подрывает доверие?",
+          "en": "Does that result support the intended tension or undermine trust?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-042",
+      "number": "42",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Голова и руки",
+        "en": "Head and Hands"
+      },
+      "description": {
+        "ru": "Согласуйте размышление с физическим исполнением действий.",
+        "en": "Balance thought with the physical execution of actions."
+      },
+      "questions": [
+        {
+          "ru": "Где успех требует планирования, а где точного исполнения?",
+          "en": "Where does success require planning, and where does it require precise execution?"
+        },
+        {
+          "ru": "Может ли сильная сторона игрока компенсировать другую в допустимых пределах?",
+          "en": "Can a player's strength compensate for a weakness within suitable limits?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-043",
+      "number": "43",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Соревнование",
+        "en": "Competition"
+      },
+      "description": {
+        "ru": "Сделайте сравнение результатов понятным и мотивирующим.",
+        "en": "Make comparisons of performance understandable and motivating."
+      },
+      "questions": [
+        {
+          "ru": "Что именно сравнивают соперники и насколько это зависит от их действий?",
+          "en": "What are rivals comparing, and how much depends on their actions?"
+        },
+        {
+          "ru": "Что побуждает проигравшего попробовать снова?",
+          "en": "What encourages the losing player to try again?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-044",
+      "number": "44",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сотрудничество",
+        "en": "Cooperation"
+      },
+      "description": {
+        "ru": "Создайте причины координироваться и помогать друг другу.",
+        "en": "Create reasons to coordinate and help one another."
+      },
+      "questions": [
+        {
+          "ru": "Как вклад одного игрока расширяет возможности другого?",
+          "en": "How does one player's contribution expand another's options?"
+        },
+        {
+          "ru": "Может ли участник оставаться полезным при разнице в навыках?",
+          "en": "Can a participant remain useful despite a skill gap?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-045",
+      "number": "45",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Соревнование и сотрудничество",
+        "en": "Competition vs. Cooperation"
+      },
+      "description": {
+        "ru": "Проверьте, как совместные и противоположные интересы сочетаются.",
+        "en": "Examine how shared and opposing interests interact."
+      },
+      "questions": [
+        {
+          "ru": "Когда выгодно помогать, а когда выгодно соперничать?",
+          "en": "When is helping beneficial, and when is competing beneficial?"
+        },
+        {
+          "ru": "Не разрушает ли личная награда общую цель команды?",
+          "en": "Does an individual reward undermine the team's shared goal?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-046",
+      "number": "46",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Награды",
+        "en": "Reward"
+      },
+      "description": {
+        "ru": "Подбирайте форму и момент награды под действие игрока.",
+        "en": "Choose the reward's form and timing to fit the player's action."
+      },
+      "questions": [
+        {
+          "ru": "Какую ценную обратную связь даёт эта награда?",
+          "en": "What valuable feedback does this reward provide?"
+        },
+        {
+          "ru": "Стимулирует ли она нужный способ игры или побочный сбор очков?",
+          "en": "Does it encourage the intended play or incidental point farming?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-047",
+      "number": "47",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Наказания",
+        "en": "Punishment"
+      },
+      "description": {
+        "ru": "Проверьте, чему учит потеря и сколько времени она отнимает.",
+        "en": "Examine what a loss teaches and how much time it costs."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок понимает после штрафа, чего не понимал до него?",
+          "en": "What does the player understand after a penalty that they did not know before?"
+        },
+        {
+          "ru": "Соразмерны ли последствия ошибке и возможности восстановиться?",
+          "en": "Are the consequences proportionate to the error and recovery options?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-048",
+      "number": "48",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Простота и сложность",
+        "en": "Simplicity/Complexity"
+      },
+      "description": {
+        "ru": "Различайте сложность правил и глубину возникающих решений.",
+        "en": "Distinguish complicated rules from deep resulting decisions."
+      },
+      "questions": [
+        {
+          "ru": "Какое правило можно убрать, сохранив интересные решения?",
+          "en": "Which rule could be removed while preserving interesting decisions?"
+        },
+        {
+          "ru": "Какая простая связь создаёт разнообразие ситуаций?",
+          "en": "Which simple interaction generates varied situations?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-049",
+      "number": "49",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Элегантность",
+        "en": "Elegance"
+      },
+      "description": {
+        "ru": "Ищите элементы, выполняющие несколько согласованных функций.",
+        "en": "Seek elements that serve several coherent purposes."
+      },
+      "questions": [
+        {
+          "ru": "Может ли один элемент поддержать обучение, стратегию и тему?",
+          "en": "Could one element support learning, strategy and theme?"
+        },
+        {
+          "ru": "Какая отдельная система дублирует уже существующую?",
+          "en": "Which standalone system duplicates something already present?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-050",
+      "number": "50",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Характер игры",
+        "en": "Character"
+      },
+      "description": {
+        "ru": "Сохраните выразительные особенности, отличающие игру от гладкого шаблона.",
+        "en": "Preserve expressive quirks that distinguish the game from a generic design."
+      },
+      "questions": [
+        {
+          "ru": "Какое необычное свойство делает игру узнаваемой?",
+          "en": "Which unusual property makes the game recognizable?"
+        },
+        {
+          "ru": "Исправляемая шероховатость мешает игроку или придаёт игре характер?",
+          "en": "Does the rough edge being fixed hinder play or give the game character?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-051",
+      "number": "51",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Воображение",
+        "en": "Imagination"
+      },
+      "description": {
+        "ru": "Определите, что показать явно, а что игрок достроит сам.",
+        "en": "Decide what to show explicitly and what players can imagine."
+      },
+      "questions": [
+        {
+          "ru": "Какие пробелы игрок охотно заполняет собственным воображением?",
+          "en": "Which gaps will players willingly fill with their imagination?"
+        },
+        {
+          "ru": "Где отсутствие информации мешает понять обязательное действие?",
+          "en": "Where does missing information obscure a required action?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-052",
+      "number": "52",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Экономика",
+        "en": "Economy"
+      },
+      "description": {
+        "ru": "Проверьте производство, расходование и обмен игровых ценностей.",
+        "en": "Review how game value is produced, spent and exchanged."
+      },
+      "questions": [
+        {
+          "ru": "Какие источники и расходы управляют количеством ресурса?",
+          "en": "Which sources and sinks control the amount of a resource?"
+        },
+        {
+          "ru": "Остаётся ли выбор затрат интересным на поздней стадии игры?",
+          "en": "Do spending decisions remain interesting late in the game?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-053",
+      "number": "53",
+      "theme": "balance",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Баланс",
+        "en": "Balance"
+      },
+      "description": {
+        "ru": "Настройте отношения между элементами под желаемый опыт.",
+        "en": "Tune relationships between elements to support the intended experience."
+      },
+      "questions": [
+        {
+          "ru": "Какая стратегия вытесняет остальные и при каких условиях?",
+          "en": "Which strategy crowds out the others, and under what conditions?"
+        },
+        {
+          "ru": "Что изменится у новичка и эксперта после одной правки баланса?",
+          "en": "How would a balance change affect beginners and experts differently?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-054",
+      "number": "54",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Доступность решения",
+        "en": "Accessibility"
+      },
+      "description": {
+        "ru": "Позвольте игроку начать решать задачу без непреодолимого входного барьера.",
+        "en": "Let players begin solving a problem without an insurmountable entry barrier."
+      },
+      "questions": [
+        {
+          "ru": "Есть ли понятный первый шаг к решению головоломки?",
+          "en": "Is there an understandable first step toward solving the puzzle?"
+        },
+        {
+          "ru": "Какая подсказка помогает начать, сохраняя самостоятельное открытие?",
+          "en": "What hint helps players begin while preserving their own discovery?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-055",
+      "number": "55",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Видимый прогресс",
+        "en": "Visible Progress"
+      },
+      "description": {
+        "ru": "Покажите приближение к цели, особенно в длинных задачах.",
+        "en": "Make progress toward a goal visible, especially in longer tasks."
+      },
+      "questions": [
+        {
+          "ru": "Что изменилось после усилия игрока и может ли он это увидеть?",
+          "en": "What changed after the player's effort, and can they see it?"
+        },
+        {
+          "ru": "Как показать частичный успех, не раскрывая всё решение?",
+          "en": "How can partial success be shown without revealing the whole solution?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-056",
+      "number": "56",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Параллелизм",
+        "en": "Parallelism"
+      },
+      "description": {
+        "ru": "Дайте несколько задач, между которыми можно переключаться.",
+        "en": "Offer multiple problems players can switch between."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок может исследовать, если застрял на основной задаче?",
+          "en": "What can the player explore when stuck on the main problem?"
+        },
+        {
+          "ru": "Не требует ли каждая доступная ветка того же недостающего знания?",
+          "en": "Do all available branches require the same missing knowledge?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-057",
+      "number": "57",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Пирамида",
+        "en": "The Pyramid"
+      },
+      "description": {
+        "ru": "Свяжите освоенные части задачи в итоговое испытание.",
+        "en": "Combine learned pieces into a culminating challenge."
+      },
+      "questions": [
+        {
+          "ru": "Какие предыдущие решения дают материал для финальной задачи?",
+          "en": "Which earlier solutions provide material for the final challenge?"
+        },
+        {
+          "ru": "Понимает ли игрок связь частей до того, как должен их объединить?",
+          "en": "Does the player understand the links before needing to combine them?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-058",
+      "number": "58",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Головоломка",
+        "en": "The Puzzle"
+      },
+      "description": {
+        "ru": "Создайте понятную задачу с открытием, а не угадыванием скрытого требования.",
+        "en": "Create an understandable problem with discovery rather than hidden-demand guessing."
+      },
+      "questions": [
+        {
+          "ru": "Какая идея позволяет перейти от тупика к решению?",
+          "en": "What insight allows the player to move from being stuck to solving it?"
+        },
+        {
+          "ru": "Достаточно ли наблюдаемых фактов, чтобы прийти к этой идее?",
+          "en": "Is there enough observable evidence to reach that insight?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-059",
+      "number": "59",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Контроль",
+        "en": "Control"
+      },
+      "description": {
+        "ru": "Проверьте, ощущает ли игрок связь намерения, действия и результата.",
+        "en": "Check whether intention, action and outcome feel connected."
+      },
+      "questions": [
+        {
+          "ru": "Получает ли игрок ожидаемый результат от знакомой команды?",
+          "en": "Does a familiar command produce the expected result?"
+        },
+        {
+          "ru": "Где задержка или ограничение создаёт ощущение потери управления?",
+          "en": "Where does latency or a restriction make control feel lost?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-060",
+      "number": "60",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Физический интерфейс",
+        "en": "Physical Interface"
+      },
+      "description": {
+        "ru": "Учитывайте реальные устройства и тело игрока.",
+        "en": "Consider the player's actual devices and body."
+      },
+      "questions": [
+        {
+          "ru": "Удобно ли выполнять частое действие на целевом устройстве?",
+          "en": "Is a frequent action comfortable on the intended device?"
+        },
+        {
+          "ru": "Как хват, усилие или усталость меняют доступное управление?",
+          "en": "How do grip, effort or fatigue affect available controls?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-061",
+      "number": "61",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Виртуальный интерфейс",
+        "en": "Virtual Interface"
+      },
+      "description": {
+        "ru": "Организуйте экранные элементы вокруг решений игрока.",
+        "en": "Organize on-screen elements around the player's decisions."
+      },
+      "questions": [
+        {
+          "ru": "Какую информацию нужно видеть в момент выбора?",
+          "en": "What information must be visible at the moment of choice?"
+        },
+        {
+          "ru": "Какой элемент занимает внимание, не помогая действовать?",
+          "en": "Which element consumes attention without helping action?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-062",
+      "number": "62",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Прозрачность",
+        "en": "Transparency"
+      },
+      "description": {
+        "ru": "Сделайте управление достаточно понятным, чтобы внимание оставалось на игре.",
+        "en": "Make controls understandable enough for attention to remain on play."
+      },
+      "questions": [
+        {
+          "ru": "Когда игрок перестаёт думать об интерфейсе и думает о задаче?",
+          "en": "When does the player stop thinking about the interface and focus on the problem?"
+        },
+        {
+          "ru": "Какая операция постоянно возвращает внимание к устройству управления?",
+          "en": "Which operation repeatedly draws attention back to the controls?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-063",
+      "number": "63",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Обратная связь",
+        "en": "Feedback"
+      },
+      "description": {
+        "ru": "Сообщайте о состоянии и последствиях действия вовремя.",
+        "en": "Communicate state and action consequences at the right time."
+      },
+      "questions": [
+        {
+          "ru": "Как игрок отличает принятую команду от проигнорированной?",
+          "en": "How does the player distinguish an accepted command from an ignored one?"
+        },
+        {
+          "ru": "Помогает ли ответ системы выбрать следующее действие?",
+          "en": "Does the system's response help the player choose their next action?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-064",
+      "number": "64",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сочность",
+        "en": "Juiciness"
+      },
+      "description": {
+        "ru": "Усильте ощущение действия выразительным, согласованным откликом.",
+        "en": "Amplify an action's feel through expressive, coherent feedback."
+      },
+      "questions": [
+        {
+          "ru": "Как звук, движение и изображение подчёркивают значимый момент?",
+          "en": "How do sound, motion and visuals emphasize a meaningful moment?"
+        },
+        {
+          "ru": "Не скрывает ли обилие эффектов важный сигнал?",
+          "en": "Do abundant effects obscure an important signal?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-065",
+      "number": "65",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Базовые инстинкты",
+        "en": "Primality"
+      },
+      "description": {
+        "ru": "Используйте непосредственные человеческие реакции осознанно.",
+        "en": "Use immediate human responses deliberately."
+      },
+      "questions": [
+        {
+          "ru": "Какой образ или звук вызывает реакцию ещё до объяснения правил?",
+          "en": "Which image or sound evokes a response before rules are explained?"
+        },
+        {
+          "ru": "Поддерживает ли эта реакция смысл происходящего?",
+          "en": "Does that response support what is happening?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-066",
+      "number": "66",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Каналы и измерения информации",
+        "en": "Channels and Dimensions"
+      },
+      "description": {
+        "ru": "Распределите информацию по зрительным, звуковым и другим сигналам.",
+        "en": "Distribute information across visual, audio and other signals."
+      },
+      "questions": [
+        {
+          "ru": "Какие сообщения конкурируют в одном канале восприятия?",
+          "en": "Which messages compete within the same perceptual channel?"
+        },
+        {
+          "ru": "Можно ли различить важные состояния без путаницы между сигналами?",
+          "en": "Can important states be distinguished without confusing their signals?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-067",
+      "number": "67",
+      "theme": "interface",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Режимы",
+        "en": "Modes"
+      },
+      "description": {
+        "ru": "Покажите, когда одни и те же команды меняют значение.",
+        "en": "Show when the same controls change meaning."
+      },
+      "questions": [
+        {
+          "ru": "Как игрок узнаёт текущий режим до выполнения действия?",
+          "en": "How does the player recognize the current mode before acting?"
+        },
+        {
+          "ru": "Можно ли устранить переключение, которое вызывает повторные ошибки?",
+          "en": "Can a mode switch causing repeated errors be removed?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-067-5",
+      "number": "67½",
+      "theme": "interface",
+      "sourceId": "schell-third",
+      "title": {
+        "ru": "Метафора",
+        "en": "Metaphor"
+      },
+      "description": {
+        "ru": "Проверьте, помогает ли знакомый образ понять интерфейс.",
+        "en": "Check whether a familiar comparison makes an interface understandable."
+      },
+      "questions": [
+        {
+          "ru": "Какие ожидания создаёт метафора и выполняет ли их игра?",
+          "en": "What expectations does the metaphor create, and does the game satisfy them?"
+        },
+        {
+          "ru": "Где отказ от метафоры сделает взаимодействие яснее?",
+          "en": "Where would abandoning the metaphor make interaction clearer?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/#/menu/67_5/?lang=en"
+    },
+    {
+      "id": "schell-068",
+      "number": "68",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Моменты",
+        "en": "Moments"
+      },
+      "description": {
+        "ru": "Выделите короткие эпизоды, которые игрок запомнит.",
+        "en": "Identify brief episodes players will remember."
+      },
+      "questions": [
+        {
+          "ru": "Какой момент тестер описывает первым после сессии?",
+          "en": "Which moment does a tester describe first after a session?"
+        },
+        {
+          "ru": "Что готовит этот момент и что позволяет ему выделиться?",
+          "en": "What prepares that moment and allows it to stand out?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-069",
+      "number": "69",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Кривая интереса",
+        "en": "The Interest Curve"
+      },
+      "description": {
+        "ru": "Распределите рост напряжения, пики и передышки во времени.",
+        "en": "Distribute rising tension, peaks and pauses over time."
+      },
+      "questions": [
+        {
+          "ru": "Где внимание тестера растёт и где падает в ходе сессии?",
+          "en": "Where does a tester's attention rise and fall during a session?"
+        },
+        {
+          "ru": "Достаточно ли спокойного времени между сильными эпизодами?",
+          "en": "Is there enough quieter time between intense episodes?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-070",
+      "number": "70",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Внутренний интерес",
+        "en": "Inherent Interest"
+      },
+      "description": {
+        "ru": "Ищите интерес, который тема и ситуация вызывают сами по себе.",
+        "en": "Look for interest inherent in the subject and situation."
+      },
+      "questions": [
+        {
+          "ru": "Что привлекает внимание ещё до наград и прогрессии?",
+          "en": "What attracts attention before rewards and progression are introduced?"
+        },
+        {
+          "ru": "Как действие игрока позволяет исследовать именно это?",
+          "en": "How does player action let them explore that interest?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-071",
+      "number": "71",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Красота",
+        "en": "Beauty"
+      },
+      "description": {
+        "ru": "Используйте эстетические решения для ценности переживания.",
+        "en": "Use aesthetic choices to enrich the experience."
+      },
+      "questions": [
+        {
+          "ru": "Какая деталь вызывает желание задержаться и рассмотреть её?",
+          "en": "Which detail makes players want to pause and examine it?"
+        },
+        {
+          "ru": "Согласуется ли красота с ясностью игрового действия?",
+          "en": "Does beauty coexist with clear player action?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-072",
+      "number": "72",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Проекция",
+        "en": "Projection"
+      },
+      "description": {
+        "ru": "Помогите игроку мысленно занять место действующего лица.",
+        "en": "Help the player imagine occupying the protagonist's position."
+      },
+      "questions": [
+        {
+          "ru": "Что связывает намерение игрока с действием персонажа?",
+          "en": "What links the player's intention to the character's action?"
+        },
+        {
+          "ru": "Где персонаж действует так, что игрок перестаёт узнавать в нём себя?",
+          "en": "Where does the character act in a way that breaks that identification?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-073",
+      "number": "73",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Генератор историй",
+        "en": "The Story Machine"
+      },
+      "description": {
+        "ru": "Проверьте истории, возникающие из действий и последствий.",
+        "en": "Examine stories emerging from actions and consequences."
+      },
+      "questions": [
+        {
+          "ru": "Какой эпизод игрок может пересказать как свою историю?",
+          "en": "Which episode can a player retell as their own story?"
+        },
+        {
+          "ru": "Какие правила дают разным сессиям разные драматические последствия?",
+          "en": "Which rules create different dramatic consequences across sessions?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-074",
+      "number": "74",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Препятствие",
+        "en": "The Obstacle"
+      },
+      "description": {
+        "ru": "Поставьте препятствия, которые делают достижение цели значимым.",
+        "en": "Create obstacles that make achieving a goal meaningful."
+      },
+      "questions": [
+        {
+          "ru": "Почему преодоление этого препятствия важно для игрока?",
+          "en": "Why does overcoming this obstacle matter to the player?"
+        },
+        {
+          "ru": "Испытание раскрывает героя или только задерживает развитие?",
+          "en": "Does the challenge reveal the protagonist or merely delay progress?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-075",
+      "number": "75",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Простота и превосхождение",
+        "en": "Simplicity and Transcendence"
+      },
+      "description": {
+        "ru": "Соедините узнаваемую основу с необычным масштабом или возможностью.",
+        "en": "Combine a recognizable foundation with an extraordinary scale or possibility."
+      },
+      "questions": [
+        {
+          "ru": "Какой простой конфликт помогает сразу понять происходящее?",
+          "en": "What simple conflict makes events immediately understandable?"
+        },
+        {
+          "ru": "Как игра позволяет выйти за пределы обычного опыта этого конфликта?",
+          "en": "How does the game transcend the ordinary experience of that conflict?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-076",
+      "number": "76",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Путь героя",
+        "en": "The Hero's Journey"
+      },
+      "description": {
+        "ru": "Используйте структуру путешествия как проверку развития, а не обязательный шаблон.",
+        "en": "Use the journey structure to examine growth rather than as a mandatory template."
+      },
+      "questions": [
+        {
+          "ru": "Как испытания меняют героя от начала к финалу?",
+          "en": "How do challenges change the protagonist from beginning to end?"
+        },
+        {
+          "ru": "Какой этап помогает игре, а какой добавлен только ради схемы?",
+          "en": "Which stage helps the game, and which exists only to satisfy a template?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-077",
+      "number": "77",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Самая странная вещь",
+        "en": "The Weirdest Thing"
+      },
+      "description": {
+        "ru": "Проверьте крайнее допущение мира на понятность и согласованность.",
+        "en": "Review the world's most unusual premise for clarity and consistency."
+      },
+      "questions": [
+        {
+          "ru": "Что кажется новым игрокам самым неправдоподобным?",
+          "en": "What seems least plausible to new players?"
+        },
+        {
+          "ru": "Какая внутренняя логика позволяет принять это допущение?",
+          "en": "What internal logic makes that premise acceptable?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-078",
+      "number": "78",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "История",
+        "en": "Story"
+      },
+      "description": {
+        "ru": "Свяжите повествование с действиями, целями и последствиями игры.",
+        "en": "Connect narrative to player actions, goals and consequences."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок узнаёт о ситуации через действие, а не объяснение?",
+          "en": "What does the player learn through action rather than explanation?"
+        },
+        {
+          "ru": "Поддерживает ли история то, что правила поощряют делать?",
+          "en": "Does the story support what the rules encourage players to do?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-079",
+      "number": "79",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Свобода",
+        "en": "Freedom"
+      },
+      "description": {
+        "ru": "Уточните, где игрок действительно может выбирать.",
+        "en": "Clarify where the player can genuinely choose."
+      },
+      "questions": [
+        {
+          "ru": "Какие решения изменяют ход игры, а какие только создают видимость выбора?",
+          "en": "Which decisions change play, and which merely imply choice?"
+        },
+        {
+          "ru": "Какие ограничения помогают ориентироваться вместо ощущения произвола?",
+          "en": "Which restrictions aid orientation rather than feeling arbitrary?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-080",
+      "number": "80",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Помощь",
+        "en": "Help"
+      },
+      "description": {
+        "ru": "Проверьте, кому герой помогает и зачем игроку это важно.",
+        "en": "Examine whom the protagonist helps and why that matters to the player."
+      },
+      "questions": [
+        {
+          "ru": "Кому становится лучше от действий игрока?",
+          "en": "Who benefits from the player's actions?"
+        },
+        {
+          "ru": "Как игра показывает результат помощи, не ограничиваясь обещанием?",
+          "en": "How does the game show help's outcome beyond merely promising it?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-081",
+      "number": "81",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Непрямой контроль",
+        "en": "Indirect Control"
+      },
+      "description": {
+        "ru": "Направляйте внимание через пространство, цели и сигналы.",
+        "en": "Guide attention through space, goals and cues."
+      },
+      "questions": [
+        {
+          "ru": "Какая деталь побуждает выбрать нужный путь без явной команды?",
+          "en": "Which detail encourages the intended route without a direct command?"
+        },
+        {
+          "ru": "Сохраняет ли игрок ощущение самостоятельного решения?",
+          "en": "Does the player retain a sense of making their own decision?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-082",
+      "number": "82",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сговор",
+        "en": "Collusion"
+      },
+      "description": {
+        "ru": "Согласуйте действия мира и персонажей ради желаемого опыта.",
+        "en": "Coordinate the world and its characters to support the intended experience."
+      },
+      "questions": [
+        {
+          "ru": "Как окружение и персонажи вместе поддерживают маршрут игрока?",
+          "en": "How do the environment and characters jointly support the player's path?"
+        },
+        {
+          "ru": "Где эта согласованность становится слишком заметной и разрушает правдоподобие?",
+          "en": "Where does that coordination become conspicuous and break plausibility?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-083",
+      "number": "83",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Фантазия",
+        "en": "Fantasy"
+      },
+      "description": {
+        "ru": "Проверьте, какое желание игрок проживает в игровом мире.",
+        "en": "Examine the wish a player can inhabit within the game world."
+      },
+      "questions": [
+        {
+          "ru": "Кем игрок хочет побыть и что хочет уметь в этой игре?",
+          "en": "Who does the player want to become, and what do they want to do?"
+        },
+        {
+          "ru": "Какая обязательная механика мешает почувствовать эту роль?",
+          "en": "Which required mechanic undermines that role?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-084",
+      "number": "84",
+      "theme": "story",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Мир",
+        "en": "The World"
+      },
+      "description": {
+        "ru": "Создайте связный мир, который интересно исследовать за пределами сюжета.",
+        "en": "Create a coherent world worth exploring beyond its plot."
+      },
+      "questions": [
+        {
+          "ru": "Какие закономерности мира игрок может заметить и проверить?",
+          "en": "Which patterns in the world can players notice and test?"
+        },
+        {
+          "ru": "Что связывает отдельные места и истории в одно целое?",
+          "en": "What connects separate places and stories into a coherent whole?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-085",
+      "number": "85",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Аватар",
+        "en": "The Avatar"
+      },
+      "description": {
+        "ru": "Настройте отношения игрока с его представлением в мире.",
+        "en": "Shape the relationship between the player and their in-world representation."
+      },
+      "questions": [
+        {
+          "ru": "Какие черты аватара помогают игроку принять его как своё представление?",
+          "en": "Which avatar traits help the player accept it as their representation?"
+        },
+        {
+          "ru": "Что можно выразить через аватар, а что жёстко задаёт игра?",
+          "en": "What can be expressed through the avatar, and what is fixed by the game?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-086",
+      "number": "86",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Функция персонажа",
+        "en": "Character Function"
+      },
+      "description": {
+        "ru": "Дайте персонажу понятную роль в системе и повествовании.",
+        "en": "Give each character a clear role in the system and narrative."
+      },
+      "questions": [
+        {
+          "ru": "Как изменится игровой опыт, если этого персонажа убрать?",
+          "en": "How would play change if this character were removed?"
+        },
+        {
+          "ru": "Можно ли объединить дублирующие роли без потери смысла?",
+          "en": "Could duplicate roles be combined without losing meaning?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-087",
+      "number": "87",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Черты персонажа",
+        "en": "Character Traits"
+      },
+      "description": {
+        "ru": "Покажите характер через наблюдаемое поведение.",
+        "en": "Express character traits through observable behavior."
+      },
+      "questions": [
+        {
+          "ru": "Какие поступки позволяют узнать черту без прямого описания?",
+          "en": "Which actions reveal a trait without stating it explicitly?"
+        },
+        {
+          "ru": "Проявляется ли она последовательно в разных обстоятельствах?",
+          "en": "Does it appear consistently across different circumstances?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-088",
+      "number": "88",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Межличностный круг",
+        "en": "Interpersonal Circumplex"
+      },
+      "description": {
+        "ru": "Рассмотрите поведение по осям доминирования и дружелюбия.",
+        "en": "Consider behavior along dominance and friendliness dimensions."
+      },
+      "questions": [
+        {
+          "ru": "Как различается позиция персонажа рядом с другом и противником?",
+          "en": "How does the character's stance differ around a friend and an opponent?"
+        },
+        {
+          "ru": "Показывают ли речь и действия выбранный стиль отношений?",
+          "en": "Do speech and actions express that relationship style?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-089",
+      "number": "89",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сеть отношений персонажей",
+        "en": "The Character Web"
+      },
+      "description": {
+        "ru": "Проверьте связи между персонажами как источник конфликтов и перемен.",
+        "en": "Examine character relationships as sources of conflict and change."
+      },
+      "questions": [
+        {
+          "ru": "Какие отношения меняют решения персонажей?",
+          "en": "Which relationships change the characters' decisions?"
+        },
+        {
+          "ru": "Что произойдёт с сетью отношений после поступка игрока?",
+          "en": "How will the relationship network change after the player's action?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-090",
+      "number": "90",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Статус",
+        "en": "Status"
+      },
+      "description": {
+        "ru": "Покажите относительное положение персонажей и его изменения.",
+        "en": "Show characters' relative standing and how it changes."
+      },
+      "questions": [
+        {
+          "ru": "Кто обладает влиянием в конкретной сцене и как это видно?",
+          "en": "Who holds influence in a scene, and how is that visible?"
+        },
+        {
+          "ru": "Как смена статуса меняет поведение и возможности игрока?",
+          "en": "How does a status change affect behavior and player options?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-091",
+      "number": "91",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Изменение персонажа",
+        "en": "Character Transformation"
+      },
+      "description": {
+        "ru": "Сделайте развитие характера следствием пережитых событий.",
+        "en": "Make character development a consequence of experienced events."
+      },
+      "questions": [
+        {
+          "ru": "Какое решение показывает, что персонаж изменился?",
+          "en": "Which decision shows that the character has changed?"
+        },
+        {
+          "ru": "Подготавливают ли предыдущие события эту перемену?",
+          "en": "Do earlier events prepare that change?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-092",
+      "number": "92",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Внутреннее противоречие",
+        "en": "Inner Contradiction"
+      },
+      "description": {
+        "ru": "Используйте конфликт желаний и ценностей для объёма персонажа.",
+        "en": "Use conflicting desires and values to give a character depth."
+      },
+      "questions": [
+        {
+          "ru": "Какие две важные для персонажа вещи нельзя одновременно сохранить?",
+          "en": "Which two things important to the character cannot both be preserved?"
+        },
+        {
+          "ru": "В каком действии проявится этот конфликт?",
+          "en": "Which action will reveal that conflict?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-093",
+      "number": "93",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Безымянное качество",
+        "en": "The Nameless Quality"
+      },
+      "description": {
+        "ru": "Ищите ощущение живого целого, возникающее из согласованных деталей.",
+        "en": "Look for a sense of a living whole created by coherent details."
+      },
+      "questions": [
+        {
+          "ru": "Что делает мир убедительным даже вне основной задачи?",
+          "en": "What makes the world feel convincing beyond the main task?"
+        },
+        {
+          "ru": "Какая деталь действует механически и нарушает ощущение целого?",
+          "en": "Which detail feels mechanical and disrupts the whole?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-093-5",
+      "number": "93½",
+      "theme": "world",
+      "sourceId": "schell-third",
+      "title": {
+        "ru": "Присутствие",
+        "en": "Presence"
+      },
+      "description": {
+        "ru": "Проверьте ощущение нахождения внутри мира, особенно в VR и AR.",
+        "en": "Examine the feeling of being inside the world, especially in VR and AR."
+      },
+      "questions": [
+        {
+          "ru": "В какой момент игрок чувствует, что действительно находится в мире?",
+          "en": "When does the player feel genuinely located within the world?"
+        },
+        {
+          "ru": "Какой отклик или несогласованная деталь разрушает это ощущение?",
+          "en": "Which response or inconsistent detail breaks that feeling?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/#/menu/93_5/?lang=en"
+    },
+    {
+      "id": "schell-094",
+      "number": "94",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Атмосфера",
+        "en": "Atmosphere"
+      },
+      "description": {
+        "ru": "Согласуйте чувственные детали ради нужного состояния игрока.",
+        "en": "Coordinate sensory details to support the intended mood."
+      },
+      "questions": [
+        {
+          "ru": "Какую атмосферу задают свет, звук, ритм и окружение вместе?",
+          "en": "What mood do light, sound, pacing and surroundings create together?"
+        },
+        {
+          "ru": "Какой элемент спорит с этим состоянием?",
+          "en": "Which element conflicts with that mood?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-095",
+      "number": "95",
+      "theme": "world",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Наблюдение за игрой",
+        "en": "Spectation"
+      },
+      "description": {
+        "ru": "Сделайте происходящее понятным и интересным для зрителя.",
+        "en": "Make play understandable and interesting to a spectator."
+      },
+      "questions": [
+        {
+          "ru": "Может ли зритель понять цель, риск и успех без управления?",
+          "en": "Can a spectator understand the goal, risk and success without controlling play?"
+        },
+        {
+          "ru": "Какие моменты удобно обсуждать или показывать другим?",
+          "en": "Which moments are easy to discuss or show to others?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-095-5",
+      "number": "95½",
+      "theme": "world",
+      "sourceId": "schell-third",
+      "title": {
+        "ru": "Возможность читерства",
+        "en": "Cheatability"
+      },
+      "description": {
+        "ru": "Проверьте обход правил и доверие к результатам игры.",
+        "en": "Review ways to bypass the rules and trust in game outcomes."
+      },
+      "questions": [
+        {
+          "ru": "Можно ли получить преимущество в обход правил и заметят ли это?",
+          "en": "Can someone gain an advantage outside the rules, and would it be noticed?"
+        },
+        {
+          "ru": "Что позволяет игрокам доверять честности результатов?",
+          "en": "What allows players to trust the fairness of results?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/#/menu/95_5/?lang=en"
+    },
+    {
+      "id": "schell-096",
+      "number": "96",
+      "theme": "social",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Дружба",
+        "en": "Friendship"
+      },
+      "description": {
+        "ru": "Создайте условия для знакомства и укрепления отношений.",
+        "en": "Create opportunities to meet people and strengthen relationships."
+      },
+      "questions": [
+        {
+          "ru": "Что позволяет игрокам регулярно встречаться и узнавать друг друга?",
+          "en": "What lets players meet regularly and get to know one another?"
+        },
+        {
+          "ru": "Как система поддерживает продолжение общения после совместной задачи?",
+          "en": "How does the system support continued contact after a shared task?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-097",
+      "number": "97",
+      "theme": "social",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Самовыражение",
+        "en": "Expression"
+      },
+      "description": {
+        "ru": "Дайте игрокам выражать предпочтения через значимые действия.",
+        "en": "Let players express preferences through meaningful actions."
+      },
+      "questions": [
+        {
+          "ru": "Что игрок может сделать по-своему, сохранив ясность для других?",
+          "en": "What can a player do in their own way while remaining understandable to others?"
+        },
+        {
+          "ru": "Отражает ли результат личный выбор или только объём затрат?",
+          "en": "Does the result reflect a personal choice or merely the amount spent?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-098",
+      "number": "98",
+      "theme": "social",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Сообщество",
+        "en": "Community"
+      },
+      "description": {
+        "ru": "Поддерживайте общие интересы, нормы и устойчивые роли.",
+        "en": "Support shared interests, norms and sustainable roles."
+      },
+      "questions": [
+        {
+          "ru": "Что объединяет участников помимо одновременного присутствия?",
+          "en": "What connects participants beyond being present at the same time?"
+        },
+        {
+          "ru": "Как новичок понимает нормы и находит полезную роль?",
+          "en": "How does a newcomer understand the norms and find a useful role?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-099",
+      "number": "99",
+      "theme": "social",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Гриферство",
+        "en": "Griefing"
+      },
+      "description": {
+        "ru": "Проверьте возможности мешать другим ради самого вреда.",
+        "en": "Examine ways players can disrupt others for disruption's sake."
+      },
+      "questions": [
+        {
+          "ru": "Как разрешённое действие может испортить чужую сессию?",
+          "en": "How could a permitted action ruin another person's session?"
+        },
+        {
+          "ru": "Можно ли ограничить вред без уничтожения полезного взаимодействия?",
+          "en": "Can harm be limited without eliminating useful interaction?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-100",
+      "number": "100",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Любовь к работе",
+        "en": "Love"
+      },
+      "description": {
+        "ru": "Проверьте заботу о проекте, которая выражается в конкретных действиях.",
+        "en": "Examine care for the project as expressed through concrete actions."
+      },
+      "questions": [
+        {
+          "ru": "Какое решение показывает, что команда заботится об опыте игрока?",
+          "en": "Which decision shows the team's care for the player's experience?"
+        },
+        {
+          "ru": "Что помогает сохранять эту заботу в рутинной работе?",
+          "en": "What helps sustain that care during routine work?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-101",
+      "number": "101",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Команда",
+        "en": "The Team"
+      },
+      "description": {
+        "ru": "Согласуйте понимание замысла, роли и способы сотрудничества.",
+        "en": "Align the concept, responsibilities and ways of collaborating."
+      },
+      "questions": [
+        {
+          "ru": "Могут ли участники одинаково объяснить цель текущей версии?",
+          "en": "Can team members explain the current version's goal consistently?"
+        },
+        {
+          "ru": "Где решение застревает из-за неясной ответственности?",
+          "en": "Where does a decision stall because responsibility is unclear?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-102",
+      "number": "102",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Документация",
+        "en": "Documentation"
+      },
+      "description": {
+        "ru": "Пишите документы для конкретного решения и читателя.",
+        "en": "Write documents for a specific decision and reader."
+      },
+      "questions": [
+        {
+          "ru": "Кому нужен этот документ и какое действие он помогает выполнить?",
+          "en": "Who needs this document, and what action does it support?"
+        },
+        {
+          "ru": "Какая часть уже расходится с текущей игрой?",
+          "en": "Which part has already drifted from the current game?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-103",
+      "number": "103",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Плейтест",
+        "en": "Playtesting"
+      },
+      "description": {
+        "ru": "Проверяйте важные вопросы через наблюдение за реальной игрой.",
+        "en": "Test important questions by observing actual play."
+      },
+      "questions": [
+        {
+          "ru": "Какое предположение должен проверить следующий плейтест?",
+          "en": "Which assumption should the next playtest examine?"
+        },
+        {
+          "ru": "Что нужно наблюдать, чтобы отличить его подтверждение от вежливого отзыва?",
+          "en": "What observation would distinguish support from a polite reaction?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-104",
+      "number": "104",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Технология",
+        "en": "Technology"
+      },
+      "description": {
+        "ru": "Оцените инструмент по его влиянию на замысел и процесс.",
+        "en": "Evaluate technology through its effect on the concept and process."
+      },
+      "questions": [
+        {
+          "ru": "Какое требование игры делает эту технологию необходимой?",
+          "en": "Which game requirement makes this technology necessary?"
+        },
+        {
+          "ru": "Какие ограничения инструмента нужно проверить прототипом?",
+          "en": "Which tool limitations should be tested in a prototype?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-105",
+      "number": "105",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Хрустальный шар",
+        "en": "The Crystal Ball"
+      },
+      "description": {
+        "ru": "Учитывайте будущие изменения как предположения с границами уверенности.",
+        "en": "Treat future changes as assumptions with explicit uncertainty."
+      },
+      "questions": [
+        {
+          "ru": "Какая ожидаемая перемена повлияет на выпуск или поддержку?",
+          "en": "Which anticipated change will affect release or maintenance?"
+        },
+        {
+          "ru": "Как уменьшить зависимость от прогноза, который может не сбыться?",
+          "en": "How can dependence on a possibly wrong forecast be reduced?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-106",
+      "number": "106",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Утопия",
+        "en": "Utopia"
+      },
+      "description": {
+        "ru": "Проверьте, какую положительную возможность игра добавляет миру.",
+        "en": "Consider the positive possibility the game brings into the world."
+      },
+      "questions": [
+        {
+          "ru": "Что становится возможным для людей благодаря этой игре?",
+          "en": "What becomes possible for people because of this game?"
+        },
+        {
+          "ru": "Можно ли наблюдать этот вклад за пределами обещания автора?",
+          "en": "Can that contribution be observed beyond the creator's promise?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-107",
+      "number": "107",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Заказчик",
+        "en": "The Client"
+      },
+      "description": {
+        "ru": "Различайте заявленный запрос и действительную потребность заказчика.",
+        "en": "Distinguish the client's stated request from their underlying need."
+      },
+      "questions": [
+        {
+          "ru": "Какой результат заказчик пытается получить через эту функцию?",
+          "en": "What outcome is the client trying to achieve through this feature?"
+        },
+        {
+          "ru": "Какая проверка покажет, что результат действительно достигнут?",
+          "en": "What check would show that the outcome has been achieved?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-108",
+      "number": "108",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Презентация",
+        "en": "The Pitch"
+      },
+      "description": {
+        "ru": "Подготовьте объяснение для конкретного решения конкретной аудитории.",
+        "en": "Prepare an explanation for a specific audience and decision."
+      },
+      "questions": [
+        {
+          "ru": "Что слушатель должен понять и решить после презентации?",
+          "en": "What should the listener understand and decide after the pitch?"
+        },
+        {
+          "ru": "Какая демонстрация доказывает главное обещание лучше описания?",
+          "en": "Which demonstration supports the main promise better than a description?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-109",
+      "number": "109",
+      "theme": "production",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Прибыль",
+        "en": "Profit"
+      },
+      "description": {
+        "ru": "Свяжите доходы, затраты и объём продаж с проверяемыми предположениями.",
+        "en": "Connect revenue, costs and sales volume to testable assumptions."
+      },
+      "questions": [
+        {
+          "ru": "Сколько продаж нужно для покрытия разработки и распространения?",
+          "en": "How many sales are needed to cover development and distribution?"
+        },
+        {
+          "ru": "На какие проверенные сведения опирается прогноз спроса?",
+          "en": "What verified evidence supports the demand forecast?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-110",
+      "number": "110",
+      "theme": "purpose",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Изменение игрока",
+        "en": "Transformation"
+      },
+      "description": {
+        "ru": "Рассмотрите, как опыт влияет на человека после игры.",
+        "en": "Consider how the experience affects someone after play."
+      },
+      "questions": [
+        {
+          "ru": "Какое изменение знаний, привычек или отношения даёт игра?",
+          "en": "What change in knowledge, habits or attitudes might play produce?"
+        },
+        {
+          "ru": "Как проверить полезные и нежелательные последствия этого изменения?",
+          "en": "How could beneficial and unwanted effects of that change be examined?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-111",
+      "number": "111",
+      "theme": "purpose",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Ответственность",
+        "en": "Responsibility"
+      },
+      "description": {
+        "ru": "Примите ответственность за последствия проектных решений.",
+        "en": "Take responsibility for the consequences of design choices."
+      },
+      "questions": [
+        {
+          "ru": "Кого затрагивает это решение и каким образом?",
+          "en": "Who is affected by this decision, and how?"
+        },
+        {
+          "ru": "Какой наблюдаемый вред требует изменить дизайн?",
+          "en": "What observable harm calls for a design change?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-112",
+      "number": "112",
+      "theme": "purpose",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Ворон",
+        "en": "The Raven"
+      },
+      "description": {
+        "ru": "Соотнесите затраты ограниченного времени с ценностью работы.",
+        "en": "Relate limited time to the value of the work."
+      },
+      "questions": [
+        {
+          "ru": "Стоит ли этот проект времени, которое невозможно вернуть?",
+          "en": "Is this project worth time that cannot be recovered?"
+        },
+        {
+          "ru": "Какую работу следует перестать делать, чтобы сохранить важное?",
+          "en": "Which work should stop so that what matters can be preserved?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "schell-113",
+      "number": "113",
+      "theme": "purpose",
+      "sourceId": "schell-second",
+      "title": {
+        "ru": "Ваша тайная цель",
+        "en": "Your Secret Purpose"
+      },
+      "description": {
+        "ru": "Назовите личную причину, ради которой создаёте игру.",
+        "en": "Name the personal purpose behind creating the game."
+      },
+      "questions": [
+        {
+          "ru": "Какой собственный мотив я реализую этим проектом?",
+          "en": "What personal motive am I pursuing through this project?"
+        },
+        {
+          "ru": "Совпадает ли сегодняшняя работа с этим мотивом?",
+          "en": "Does today's work align with that motive?"
+        }
+      ],
+      "referenceUrl": "https://deck.artofgamedesign.com/"
+    },
+    {
+      "id": "deterding-skill-atoms",
+      "number": null,
+      "theme": "rules",
+      "sourceId": "deterding",
+      "title": {
+        "ru": "Внутренние атомы навыка",
+        "en": "Intrinsic Skill Atoms"
+      },
+      "description": {
+        "ru": "Рассмотрите полезный вызов как цикл цели, действия, правил и обратной связи.",
+        "en": "Examine an inherent challenge as a loop of goals, actions, rules and feedback."
+      },
+      "questions": [
+        {
+          "ru": "Какой навык развивается при повторении этого цикла?",
+          "en": "Which skill develops through repeated interaction with this loop?"
+        },
+        {
+          "ru": "Какие трудности составляют суть занятия, а какие создаёт неудобная система?",
+          "en": "Which difficulties belong to the activity itself, and which come from a cumbersome system?"
+        }
+      ],
+      "referenceUrl": "https://gamefuldesign.wordpress.com/"
+    }
+  ]
+}

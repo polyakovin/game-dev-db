@@ -10,6 +10,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 - Curated links to primary documentation and useful external learning resources.
 - Complete mechanic references for voice/audio games, point-and-click adventures and children's educational games, in Russian and English.
 - Twelve original game-design exercises with constraints, deliverables and checks, in Russian and English.
+- 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.
 - Static Markdown and JSON exports for AI agents and other tools.
 - An OpenSpec workflow for discussing changes before implementing them.
@@ -46,6 +47,8 @@ Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then f
 | Resource catalog            | `api/v1/resources.json`                           |
 | Mechanic catalogs           | `api/v1/mechanics.json`                           |
 | Game-design practice        | `api/v1/practice.json`                            |
+| Design lenses | `api/v1/lenses.json` |
+| Lens reference | `content/lenses/{lang}/game-design.md` |
 | Individual lesson           | `content/{lang}/{id}.md`                          |
 | Individual mechanic catalog | `content/mechanics/{lang}/{id}.md`                |
 | Practice collection         | `content/practice/{lang}/game-design-practice.md` |

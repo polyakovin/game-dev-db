@@ -2,6 +2,7 @@ import { absolute, REPO } from '../lib/site';
 import { getLessons } from '../lib/content';
 import { mechanicRecords } from '../lib/mechanics.mjs';
 import { practiceRecords } from '../lib/practice.mjs';
+import { lensRecords } from '../lib/lenses.mjs';
 export async function GET() {
   const lessons = await getLessons();
   const lines = [
@@ -20,7 +21,8 @@ export async function GET() {
     `- [Resources JSON](${absolute('api/v1/resources.json')}): curated external sources; original licenses apply.`,
     `- [Mechanics JSON](${absolute('api/v1/mechanics.json')}): full bilingual taxonomies, variants, design notes, examples and sources.`,
     `- [Practice JSON](${absolute('api/v1/practice.json')}): original bilingual design exercises, constraints, steps, deliverables and checks.`,
-    `- [Full corpus](${absolute('llms-full.txt')}): all lessons, mechanic catalogs and practice, both languages.`,
+    `- [Lenses JSON](${absolute('api/v1/lenses.json')}): attributed game-design lenses and original review prompts, both languages.`,
+    `- [Full corpus](${absolute('llms-full.txt')}): all lessons, mechanic catalogs, practice and lenses, both languages.`,
     `- [Contributing](${REPO}/blob/main/CONTRIBUTING.md)`,
     '',
     '## Lessons',
@@ -28,6 +30,13 @@ export async function GET() {
     ...lessons.map(
       ({ data: d }) =>
         `- [${d.title} (${d.lang})](${absolute(`content/${d.lang}/${d.id}.md`)}): ${d.description}`,
+    ),
+    '',
+    '## Game-design lenses',
+    '',
+    ...lensRecords().map(
+      (c) =>
+        `- [${c.title} (${c.lang})](${c.markdownUrl}): ${c.counts.total} perspectives. ${c.description}`,
     ),
     '',
     '## Mechanic catalogs',

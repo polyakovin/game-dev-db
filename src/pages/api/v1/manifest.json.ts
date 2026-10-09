@@ -3,6 +3,7 @@ import { getLessons } from '../../../lib/content';
 import resources from '../../../data/resources.json';
 import { mechanicRecords, getMechanics } from '../../../lib/mechanics.mjs';
 import { practiceRecords, getPractice } from '../../../lib/practice.mjs';
+import { lensRecords, getLenses } from '../../../lib/lenses.mjs';
 export async function GET() {
   const lessons = await getLessons();
   const mechanics = mechanicRecords();
@@ -19,6 +20,7 @@ export async function GET() {
       ...lessons.map((l) => l.data.updatedAt),
       ...mechanics.map((c) => c.updatedAt),
       ...practiceRecords().map((c) => c.updatedAt),
+      ...lensRecords().map((c) => c.updatedAt),
     ]
       .sort()
       .at(-1),
@@ -26,6 +28,8 @@ export async function GET() {
       lessons: lessons.length,
       translationPairs: lessons.length / 2,
       resources: resources.length,
+      lensCatalogs: lensRecords().length,
+      lensPerspectives: getLenses('ru').counts.total,
       practiceCatalogs: practiceRecords().length,
       practiceTasks: getPractice('ru').counts.tasks,
       practiceTranslationPairs: getPractice('ru').counts.tasks,
@@ -45,6 +49,8 @@ export async function GET() {
       resources: absolute('api/v1/resources.json'),
       mechanics: absolute('api/v1/mechanics.json'),
       practice: absolute('api/v1/practice.json'),
+      lenses: absolute('api/v1/lenses.json'),
+      lensesMarkdownTemplate: absolute('content/lenses/{lang}/game-design.md'),
       discovery: absolute('llms.txt'),
       fullText: absolute('llms-full.txt'),
       markdownTemplate: absolute('content/{lang}/{id}.md'),

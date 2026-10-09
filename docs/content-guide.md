@@ -84,6 +84,10 @@ checks and reflection questions aligned. Use the [practice contract](practice-co
 for source attribution, validation and exports. Estimated exercise time is
 different from a lesson's reading time.
 
+## Design lenses
+
+Use the bilingual `src/data/lenses.json` dataset for the dedicated Lenses section. Write original concise summaries and review prompts, preserve author and edition identities, and distinguish third-edition fractional numbers from another author’s unnumbered lens. See [the lens content contract](lenses-content.md). Do not copy book passages or card questions into the public dataset.
+
 ## Curated resource catalog
 
 Add independent resource recommendations to `src/data/resources.json`. Each record needs a unique lowercase, hyphen-separated `id`, a public HTTPS `url`, a lesson `category`, a `language` (`en`, `ru`, or `multi`), and a `kind` (`documentation`, `book`, `article`, or `tool`). Both `title` and `description` are objects with nonempty `ru` and `en` strings. The descriptions should explain when the resource is useful, not promise results.
