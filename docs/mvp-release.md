@@ -48,3 +48,9 @@ appended `DECISIONS.md` entry. Specifications/integrations: `openspec/`,
 The pre-existing untracked `.project-control-panel/.gitignore` is outside this
 task and was not staged. `commercial-project.json`, `EXPERIMENTS.md`, and the
 original commercial validator remain unchanged.
+
+## Publication
+
+The initial commit `9dd6920` was deployed successfully by [GitHub Actions](https://github.com/polyakovin/game-dev-db/actions/runs/37912984551) on 2026-10-09. The live site is [Game Dev DB](https://polyakovin.github.io/game-dev-db/ru/).
+
+Post-deployment verification passed for 21 public URLs: both catalogs, a paired lesson, resources and agent pages, all JSON endpoints, llms files, paired Markdown, sitemap, favicon, font licenses, a stylesheet and a font asset. JSON and Markdown matched the locally verified build. The published catalog was opened in a browser and its search returned the expected single lesson and updated count.
