@@ -7,6 +7,12 @@ const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
 const site = 'https://polyakovin.github.io';
 const base = '/game-dev-db/';
+const sourceResources = JSON.parse(
+  await readFile(path.join(root, 'src/data/resources.json'), 'utf8'),
+);
+const externalResourceUrls = new Set(
+  sourceResources.map((resource) => new URL(resource.url).href),
+);
 const errors = [];
 const documentCache = new Map();
 const exports = new Map();
@@ -63,6 +69,9 @@ async function checkReference(reference, from, location, checkAnchor = true) {
   }
   if (url.origin !== site) return;
   if (!url.pathname.startsWith(base)) {
+    // Other GitHub Pages projects can be explicitly listed as external resources.
+    if (/^https?:\/\//i.test(reference) && externalResourceUrls.has(url.href))
+      return;
     errors.push(
       `${location}: local URL escapes GitHub Pages base: ${reference}`,
     );
@@ -283,9 +292,6 @@ if (!Array.isArray(lessonExport?.lessons)) {
       errors.push(`Full corpus is missing the body of ${key}`);
   }
 }
-const sourceResources = JSON.parse(
-  await readFile(path.join(root, 'src/data/resources.json'), 'utf8'),
-);
 if (
   JSON.stringify(resourceExport?.resources) !== JSON.stringify(sourceResources)
 )
