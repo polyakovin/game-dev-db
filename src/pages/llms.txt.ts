@@ -1,5 +1,6 @@
 import { absolute, REPO } from '../lib/site';
 import { getLessons } from '../lib/content';
+import { mechanicRecords } from '../lib/mechanics.mjs';
 export async function GET() {
   const lessons = await getLessons();
   const lines = [
@@ -16,7 +17,8 @@ export async function GET() {
     `- [Manifest](${absolute('api/v1/manifest.json')}): schema version, licenses and endpoints.`,
     `- [Lessons JSON](${absolute('api/v1/lessons.json')}): metadata, source links and complete Markdown bodies.`,
     `- [Resources JSON](${absolute('api/v1/resources.json')}): curated external sources; original licenses apply.`,
-    `- [Full corpus](${absolute('llms-full.txt')}): all lessons, both languages.`,
+    `- [Mechanics JSON](${absolute('api/v1/mechanics.json')}): full bilingual taxonomies, variants, design notes, examples and sources.`,
+    `- [Full corpus](${absolute('llms-full.txt')}): all lessons and mechanic catalogs, both languages.`,
     `- [Contributing](${REPO}/blob/main/CONTRIBUTING.md)`,
     '',
     '## Lessons',
@@ -24,6 +26,14 @@ export async function GET() {
     ...lessons.map(
       ({ data: d }) =>
         `- [${d.title} (${d.lang})](${absolute(`content/${d.lang}/${d.id}.md`)}): ${d.description}`,
+    ),
+    '',
+    '## Mechanic catalogs',
+    '',
+    'Working classifications, not an exhaustive scientific taxonomy. Design examples are illustrative; sources support particular techniques or methodology.',
+    ...mechanicRecords().map(
+      (c) =>
+        `- [${c.title} (${c.lang})](${c.markdownUrl}): ${c.counts.families} families, ${c.counts.variants} variants. ${c.description}`,
     ),
   ];
   return new Response(lines.join('\n') + '\n', {

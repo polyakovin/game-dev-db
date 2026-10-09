@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
+import MechanicsCards from '../../components/MechanicsCards.astro';
 import { getLessons } from '../../lib/content';
 import { path, ui, categories, locales, type Locale } from '../../lib/site';
 export function getStaticPaths() {
@@ -262,6 +263,21 @@ const lessons = await getLessons(lang);
           : 'Search and filters use JavaScript. All lessons are available through the links above.'}
       </p>
     </noscript>
+  </section>
+
+  <section class="mechanics-home" aria-labelledby="mechanics-heading">
+    <div class="section-heading">
+      <h2 id="mechanics-heading">{t.mechanics}</h2>
+      <a href={path(`${lang}/mechanics/`)}>
+        {lang === 'ru' ? 'Все справочники' : 'All references'} →
+      </a>
+    </div>
+    <p>
+      {lang === 'ru'
+        ? 'Подробные деревья игровых действий, ответвлений и сочетаний для проектирования.'
+        : 'Detailed trees of player actions, variants and combinations for game design.'}
+    </p>
+    <MechanicsCards lang={lang} />
   </section>
 
   <section class="agent-banner">

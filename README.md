@@ -8,6 +8,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 
 - Original lessons about game foundations, design, engineering, and AI-assisted workflows.
 - Curated links to primary documentation and useful external learning resources.
+- Complete mechanic references for voice/audio games, point-and-click adventures and children's educational games, in Russian and English.
 - Russian and English versions with matching lesson identifiers.
 - Static Markdown and JSON exports for AI agents and other tools.
 - An OpenSpec workflow for discussing changes before implementing them.
@@ -42,7 +43,9 @@ Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then f
 | Export manifest | `api/v1/manifest.json` |
 | Structured lessons | `api/v1/lessons.json` |
 | Resource catalog | `api/v1/resources.json` |
+| Mechanic catalogs | `api/v1/mechanics.json` |
 | Individual lesson | `content/{lang}/{id}.md` |
+| Individual mechanic catalog | `content/mechanics/{lang}/{id}.md` |
 
 The production site root is `https://polyakovin.github.io/game-dev-db/`. These are public files generated at build time, without an API key or server. Individual Markdown exports preserve lesson content and source metadata and add canonical URLs, attribution, and license fields to frontmatter. Read [the agent workflow](docs/agent-workflow.md) for attribution, language, and update guidance.
 

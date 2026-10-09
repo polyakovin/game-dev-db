@@ -1,0 +1,3983 @@
+{
+  "id": "point-and-click",
+  "updatedAt": "2026-10-09",
+  "title": {
+    "ru": "Механики point-and-click-квестов",
+    "en": "Point-and-click adventure mechanics"
+  },
+  "description": {
+    "ru": "Исследование, предметы, диалоги, дедукция, системы загадок и редкие гибриды.",
+    "en": "Exploration, inventory, dialogue, deduction, puzzle systems and uncommon hybrids."
+  },
+  "intro": {
+    "ru": "Рабочая классификация из 44 семейств и 355 вариантов. Семейства пересекаются: одна загадка может соединять предметы, диалог, дедукцию и расписание персонажа. Базовые действия, устройство прохождения и средства помощи рассматриваются как разные слои. Примеры соседних приключенческих жанров обозначены в источниках.",
+    "en": "A working classification with 44 families and 355 variants. Families overlap: one puzzle can combine items, dialogue, deduction and a character schedule. Core actions, progression architecture and assistance are separate layers. Sources identify examples from neighboring adventure genres."
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Базовые действия и предметы",
+        "en": "Core actions and items"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Информация, рассуждение и социальное взаимодействие",
+        "en": "Information, reasoning and social interaction"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Устройства и пространственные загадки",
+        "en": "Devices and spatial puzzles"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Расширенные системы приключенческой игры",
+        "en": "Extended adventure systems"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": {
+        "ru": "Гибриды и редкие ответвления",
+        "en": "Hybrids and uncommon branches"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": {
+        "ru": "Архитектура задач и прохождения",
+        "en": "Puzzle and progression architecture"
+      }
+    },
+    {
+      "id": "section-7",
+      "title": {
+        "ru": "Интерфейс и вспомогательные системы",
+        "en": "Interface and assistance"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "title": {
+        "ru": "Осмотр, поиск и восприятие",
+        "en": "Inspection, search and perception"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-01-variant-1",
+              "text": {
+                "ru": "Интерактивные области: Найти объект, персонажа, выход или деталь, с которыми можно взаимодействовать.",
+                "en": "Interactive areas: find usable objects, characters, exits and details."
+              }
+            },
+            {
+              "id": "family-01-variant-2",
+              "text": {
+                "ru": "Крупный план: Приблизить объект; осмотреть его стороны, внутренность, оборот или отдельные компоненты.",
+                "en": "Close-ups: examine sides, interiors, backs and components."
+              }
+            },
+            {
+              "id": "family-01-variant-3",
+              "text": {
+                "ru": "Скрытые объекты: Искать по названию, силуэту, описанию или фрагментам; собирать целое из найденных частей.",
+                "en": "Hidden objects: search by name, silhouette, description or fragments and assemble parts."
+              }
+            },
+            {
+              "id": "family-01-variant-4",
+              "text": {
+                "ru": "Изменение условий видимости: Осветить, очистить, проявить, снять покрытие или применить специальный прибор.",
+                "en": "Visibility: illuminate, clean, reveal, uncover or use an instrument."
+              }
+            },
+            {
+              "id": "family-01-variant-5",
+              "text": {
+                "ru": "Поиск различий: Сравнить сцены, фотографии или состояния объекта и обнаружить изменение.",
+                "en": "Differences: compare scenes, photographs and object states."
+              }
+            },
+            {
+              "id": "family-01-variant-6",
+              "text": {
+                "ru": "Наблюдение за процессом: Проследить движение, привычки персонажа, повторяющийся цикл или реакцию на событие.",
+                "en": "Processes: observe movement, habits, cycles and reactions."
+              }
+            },
+            {
+              "id": "family-01-variant-7",
+              "text": {
+                "ru": "Сенсорное исследование: Слушать, ощупывать, нюхать, пробовать или измерять, если игра предоставляет такие действия.",
+                "en": "Sensory investigation: listen, touch, smell, taste or measure when supported."
+              }
+            },
+            {
+              "id": "family-01-variant-8",
+              "text": {
+                "ru": "Повторный осмотр: Получить другую информацию после разговора, находки, изменения сцены или нового знания.",
+                "en": "Reinspection: obtain new information after conversations, discoveries or state changes."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-02",
+      "title": {
+        "ru": "Перемещение и доступ к пространству",
+        "en": "Movement and spatial access"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-02-variant-1",
+              "text": {
+                "ru": "Переходы между экранами: Выбирать выходы и исследовать связанные локации.",
+                "en": "Scene transitions: move between screens and locations."
+              }
+            },
+            {
+              "id": "family-02-variant-2",
+              "text": {
+                "ru": "Перемещение внутри сцены: Подойти к цели, обойти препятствие или занять нужную позицию.",
+                "en": "Movement within scenes: reach objects and bypass obstacles."
+              }
+            },
+            {
+              "id": "family-02-variant-3",
+              "text": {
+                "ru": "Панорамы и узловая навигация: Поворачивать обзор, перемещаться между точками наблюдения и исследовать пространство вокруг.",
+                "en": "Viewpoints: pan and move between observation positions."
+              }
+            },
+            {
+              "id": "family-02-variant-4",
+              "text": {
+                "ru": "Открытие проходов: Убрать физическую преграду, получить разрешение, документ, ключ или знание маршрута.",
+                "en": "Access conditions: use keys, permission, documents or knowledge."
+              }
+            },
+            {
+              "id": "family-02-variant-5",
+              "text": {
+                "ru": "Вертикальное перемещение: Подняться, спуститься, пролезть, переправиться или использовать лифт.",
+                "en": "Vertical and constrained movement: climb, descend, crawl, cross or use lifts."
+              }
+            },
+            {
+              "id": "family-02-variant-6",
+              "text": {
+                "ru": "Транспорт: Выбирать пункты назначения, запускать транспорт и создавать условия для поездки.",
+                "en": "Transport: travel and establish conditions for a journey."
+              }
+            },
+            {
+              "id": "family-02-variant-7",
+              "text": {
+                "ru": "Короткие пути и возвраты: Открывать связи между знакомыми местами и возвращаться после изменения их состояния.",
+                "en": "Shortcuts and returns: connect familiar places and revisit changed locations."
+              }
+            },
+            {
+              "id": "family-02-variant-8",
+              "text": {
+                "ru": "Позиция как условие действия: Добраться до нужной высоты, стороны, дистанции или точки обзора.",
+                "en": "Position: reach the required height, side, distance or viewpoint."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-03",
+      "title": {
+        "ru": "Прямая манипуляция окружением",
+        "en": "Direct environmental manipulation"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-03-variant-1",
+              "text": {
+                "ru": "Открыть и закрыть: Двери, окна, крышки, ящики, контейнеры и проходы.",
+                "en": "Open and close: doors, windows, lids, drawers, containers and passages."
+              }
+            },
+            {
+              "id": "family-03-variant-2",
+              "text": {
+                "ru": "Двигать и размещать: Толкать, тянуть, переставлять, поднимать, опускать и подкладывать объекты.",
+                "en": "Move and place: push, pull, reposition, raise, lower and insert objects."
+              }
+            },
+            {
+              "id": "family-03-variant-3",
+              "text": {
+                "ru": "Поворачивать и ориентировать: Вращать рукоятки, переворачивать вещи и менять направление деталей.",
+                "en": "Rotate and orient: turn handles, flip objects and redirect parts."
+              }
+            },
+            {
+              "id": "family-03-variant-4",
+              "text": {
+                "ru": "Соединять и разъединять: Подключать, отсоединять, скреплять, привязывать, подвешивать и закреплять.",
+                "en": "Connect and disconnect: plug, detach, fasten, tie, hang and secure."
+              }
+            },
+            {
+              "id": "family-03-variant-5",
+              "text": {
+                "ru": "Активировать и останавливать: Нажимать, переключать, заводить, включать, отключать и сбрасывать устройства.",
+                "en": "Activate and stop: press, switch, wind, enable, disable and reset."
+              }
+            },
+            {
+              "id": "family-03-variant-6",
+              "text": {
+                "ru": "Изменять целостность: Ломать, резать, вскрывать, разбирать, ремонтировать и восстанавливать.",
+                "en": "Integrity: break, cut, open, disassemble, repair and restore."
+              }
+            },
+            {
+              "id": "family-03-variant-7",
+              "text": {
+                "ru": "Изменять поверхность: Мыть, стирать, красить, подписывать, царапать и оставлять отметки.",
+                "en": "Surfaces: wash, erase, paint, label, scratch and mark."
+              }
+            },
+            {
+              "id": "family-03-variant-8",
+              "text": {
+                "ru": "Содержимое ёмкостей: Наливать, выливать, наполнять, опустошать и переносить содержимое.",
+                "en": "Containers: pour, fill, empty and transport contents."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-04",
+      "title": {
+        "ru": "Получение, передача и утрата предметов",
+        "en": "Acquiring, transferring and losing items"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-04-variant-1",
+              "text": {
+                "ru": "Подбор и извлечение: Взять доступную вещь или извлечь её из тайника, контейнера и труднодоступного места.",
+                "en": "Collect and extract: take an accessible item or retrieve it from a hiding place or container."
+              }
+            },
+            {
+              "id": "family-04-variant-2",
+              "text": {
+                "ru": "Покупка и обмен: Заплатить, выторговать, обменять одну вещь на другую.",
+                "en": "Purchase and trade: pay, bargain or exchange items."
+              }
+            },
+            {
+              "id": "family-04-variant-3",
+              "text": {
+                "ru": "Просьба и заимствование: Получить разрешение, взять взаймы или убедить владельца отдать предмет.",
+                "en": "Request and borrow: obtain permission, borrow or persuade an owner."
+              }
+            },
+            {
+              "id": "family-04-variant-4",
+              "text": {
+                "ru": "Кража и подмена: Незаметно забрать вещь, заменить её похожей или присвоить через обман.",
+                "en": "Theft and substitution: steal, replace with a similar item or deceive an owner."
+              }
+            },
+            {
+              "id": "family-04-variant-5",
+              "text": {
+                "ru": "Награда и выигрыш: Получить объект за поручение, испытание, соревнование или мини-игру.",
+                "en": "Rewards and winnings: obtain an item through tasks, challenges or minigames."
+              }
+            },
+            {
+              "id": "family-04-variant-6",
+              "text": {
+                "ru": "Добыча и производство: Собрать сырьё, вырастить, изготовить или получить предмет из работающей системы.",
+                "en": "Gathering and production: collect, grow, craft or obtain system output."
+              }
+            },
+            {
+              "id": "family-04-variant-7",
+              "text": {
+                "ru": "Передача и доставка: Отдать адресату, отправить, вернуть владельцу или оставить в условленном месте.",
+                "en": "Transfer and delivery: give, send, return or leave at an agreed place."
+              }
+            },
+            {
+              "id": "family-04-variant-8",
+              "text": {
+                "ru": "Избавление и сокрытие: Выбросить, уничтожить, спрятать, подбросить или убрать опасный предмет.",
+                "en": "Disposal and concealment: discard, destroy, hide, plant or remove a dangerous item."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-05",
+      "title": {
+        "ru": "Применение предметов",
+        "en": "Using items"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-05-variant-1",
+              "text": {
+                "ru": "Предмет к окружению: Использовать инструмент, ключ, материал или устройство на объекте мира.",
+                "en": "Item on environment: use a tool, key, material or device on a world object."
+              }
+            },
+            {
+              "id": "family-05-variant-2",
+              "text": {
+                "ru": "Предмет к персонажу: Подарить, предъявить, угостить, оснастить или воздействовать предметом на NPC.",
+                "en": "Item on character: give, show, feed, equip or affect an NPC."
+              }
+            },
+            {
+              "id": "family-05-variant-3",
+              "text": {
+                "ru": "Предмет к себе: Надеть, съесть, выпить, применить средство или изменить состояние героя.",
+                "en": "Item on self: wear, eat, drink, apply or change the protagonist's state."
+              }
+            },
+            {
+              "id": "family-05-variant-4",
+              "text": {
+                "ru": "Предмет к предмету: Воздействовать одной вещью на другую без обязательного создания нового объекта.",
+                "en": "Item on item: affect another item without necessarily creating a new one."
+              }
+            },
+            {
+              "id": "family-05-variant-5",
+              "text": {
+                "ru": "Косвенное применение: Передать инструмент другому действующему лицу или настроить автоматическое использование.",
+                "en": "Indirect use: give a tool to another actor or automate its use."
+              }
+            },
+            {
+              "id": "family-05-variant-6",
+              "text": {
+                "ru": "Позиционное применение: Разместить предмет в определённой точке, под нужным углом или на заданном расстоянии.",
+                "en": "Positional use: place an item at a required point, angle or distance."
+              }
+            },
+            {
+              "id": "family-05-variant-7",
+              "text": {
+                "ru": "Один предмет для разных целей: Найти несколько применений инструмента или выбрать, где потратить расходник.",
+                "en": "Multiple purposes: find alternative uses or allocate a consumable."
+              }
+            },
+            {
+              "id": "family-05-variant-8",
+              "text": {
+                "ru": "Контекстное применение: Получить разный результат в зависимости от состояния цели, места, времени и предыдущих действий.",
+                "en": "Contextual use: outcomes depend on target state, place, time and previous actions."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-06",
+      "title": {
+        "ru": "Комбинирование, изготовление и разборка",
+        "en": "Combining, crafting and disassembly"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-06-variant-1",
+              "text": {
+                "ru": "Сборка из пары предметов: Создать новый объект из двух компонентов.",
+                "en": "Two-item assembly: create a new object from two components."
+              }
+            },
+            {
+              "id": "family-06-variant-2",
+              "text": {
+                "ru": "Многокомпонентная сборка: Собрать устройство, комплект, костюм или состав из нескольких частей.",
+                "en": "Multicomponent assembly: build a device, kit, costume or mixture."
+              }
+            },
+            {
+              "id": "family-06-variant-3",
+              "text": {
+                "ru": "Сборка по этапам: Выполнить рецепт или монтаж в определённом порядке с промежуточными результатами.",
+                "en": "Staged assembly: follow an ordered recipe with intermediate results."
+              }
+            },
+            {
+              "id": "family-06-variant-4",
+              "text": {
+                "ru": "Подбор совместимых деталей: Выбрать компоненты по форме, размеру, материалу, назначению или свойствам.",
+                "en": "Compatible parts: select by shape, size, material, purpose or properties."
+              }
+            },
+            {
+              "id": "family-06-variant-5",
+              "text": {
+                "ru": "Разборка: Извлечь полезные части из готовой вещи, иногда сохранив возможность обратной сборки.",
+                "en": "Disassembly: extract useful parts, potentially allowing reassembly."
+              }
+            },
+            {
+              "id": "family-06-variant-6",
+              "text": {
+                "ru": "Замена и ремонт: Установить недостающую деталь, заменить повреждённую или восстановить соединение.",
+                "en": "Replacement and repair: add missing parts, replace damage or restore connections."
+              }
+            },
+            {
+              "id": "family-06-variant-7",
+              "text": {
+                "ru": "Копирование и подделка: Сделать слепок, дубликат, имитацию, фальшивый документ или похожий предмет.",
+                "en": "Copying and forgery: make molds, duplicates, imitations or false documents."
+              }
+            },
+            {
+              "id": "family-06-variant-8",
+              "text": {
+                "ru": "Составы и рецептуры: Смешать вещества, приготовить блюдо, лекарство, краску или ритуальный состав.",
+                "en": "Recipes: mix substances, prepare food, medicine, paint or ritual mixtures."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-07",
+      "title": {
+        "ru": "Свойства и состояния предметов",
+        "en": "Item properties and states"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-07-variant-1",
+              "text": {
+                "ru": "Форма и размер: Согнуть, растянуть, сжать, обрезать, увеличить или уменьшить.",
+                "en": "Shape and size: bend, stretch, compress, trim, enlarge or shrink."
+              }
+            },
+            {
+              "id": "family-07-variant-2",
+              "text": {
+                "ru": "Температура и фаза: Нагреть, охладить, растопить, заморозить, высушить или испарить.",
+                "en": "Temperature and phase: heat, cool, melt, freeze, dry or evaporate."
+              }
+            },
+            {
+              "id": "family-07-variant-3",
+              "text": {
+                "ru": "Влажность и чистота: Намочить, загрязнить, очистить, пропитать или отмыть.",
+                "en": "Moisture and cleanliness: wet, soil, clean, soak or wash."
+              }
+            },
+            {
+              "id": "family-07-variant-4",
+              "text": {
+                "ru": "Заряд и работоспособность: Зарядить, разрядить, заправить, заточить, смазать или привести в рабочее состояние.",
+                "en": "Charge and function: charge, discharge, refuel, sharpen, lubricate or prepare."
+              }
+            },
+            {
+              "id": "family-07-variant-5",
+              "text": {
+                "ru": "Химическое изменение: Растворить, окислить, нейтрализовать, проявить или получить реакцию веществ.",
+                "en": "Chemical change: dissolve, oxidize, neutralize, develop or react."
+              }
+            },
+            {
+              "id": "family-07-variant-6",
+              "text": {
+                "ru": "Биологическое изменение: Вырастить, созреть, испортить, вылечить, заразить или изменить живой объект.",
+                "en": "Biological change: grow, ripen, spoil, heal, infect or modify organisms."
+              }
+            },
+            {
+              "id": "family-07-variant-7",
+              "text": {
+                "ru": "Статус и подлинность: Изменить подпись, регистрацию, владельца, маркировку, комплектность или воспринимаемую ценность.",
+                "en": "Status and authenticity: alter signature, registration, owner, labels, completeness or perceived value."
+              }
+            },
+            {
+              "id": "family-07-variant-8",
+              "text": {
+                "ru": "Нестандартное назначение: Использовать привычное свойство вещи в неожиданной роли: вес, проводимость, звук, запах, отражение.",
+                "en": "Unusual use: exploit weight, conductivity, sound, smell or reflection."
+              }
+            },
+            {
+              "id": "family-07-variant-9",
+              "text": {
+                "ru": "Смысловая ассоциация: Использовать метафору, сходство, игру слов и буквальное прочтение выражения, если их поддерживает логика игры.",
+                "en": "Semantic association: use metaphor, similarity, wordplay or literal interpretations supported by the world."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-08",
+      "title": {
+        "ru": "Хранение и ограничения инвентаря",
+        "en": "Inventory storage and limits"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-08-variant-1",
+              "text": {
+                "ru": "Количество и вместимость: Ограничить слоты, массу, объём или число переносимых единиц.",
+                "en": "Capacity: limit slots, weight, volume or unit count."
+              }
+            },
+            {
+              "id": "family-08-variant-2",
+              "text": {
+                "ru": "Пространственная упаковка: Уложить предметы в сетку, чемодан, контейнер или ограниченное пространство.",
+                "en": "Packing: fit items into a grid, suitcase or constrained space."
+              }
+            },
+            {
+              "id": "family-08-variant-3",
+              "text": {
+                "ru": "Совместимость хранения: Разделить вещи, которые реагируют друг с другом или портятся при совместном хранении.",
+                "en": "Compatibility: separate items that react or spoil together."
+              }
+            },
+            {
+              "id": "family-08-variant-4",
+              "text": {
+                "ru": "Хрупкость и сохранность: Перенести объект без повреждения, охлаждать, защищать или поддерживать нужное состояние.",
+                "en": "Fragility: transport without damage and maintain cooling, protection or state."
+              }
+            },
+            {
+              "id": "family-08-variant-5",
+              "text": {
+                "ru": "Расходование: Выбирать, где потратить одноразовый предмет, заряд, дозу или запас материала.",
+                "en": "Consumption: allocate a single-use item, charge, dose or material."
+              }
+            },
+            {
+              "id": "family-08-variant-6",
+              "text": {
+                "ru": "Запрет на перенос: Преодолеть досмотр, границу, среду, размер прохода или иное ограничение транспортировки.",
+                "en": "Transport restrictions: overcome searches, borders, environments or passage size."
+              }
+            },
+            {
+              "id": "family-08-variant-7",
+              "text": {
+                "ru": "Распределённый инвентарь: Перекладывать между героями, тайниками, складами, транспортом и удалёнными локациями.",
+                "en": "Distributed inventory: transfer between characters, caches, stores, vehicles and locations."
+              }
+            },
+            {
+              "id": "family-08-variant-8",
+              "text": {
+                "ru": "Замена и восстановление: Найти аналог потерянного объекта, изготовить новый или вернуть использованный ресурс.",
+                "en": "Replacement: find substitutes, recreate lost objects or recover used resources."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-1"
+    },
+    {
+      "id": "family-09",
+      "title": {
+        "ru": "Сбор и обработка информации",
+        "en": "Gathering and processing information"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-09-variant-1",
+              "text": {
+                "ru": "Документы и изображения: Читать записи, письма, схемы, карты, фотографии, инструкции и архивы.",
+                "en": "Documents and images: read notes, letters, diagrams, maps, photos, manuals and archives."
+              }
+            },
+            {
+              "id": "family-09-variant-2",
+              "text": {
+                "ru": "Свидетельства: Расспрашивать, слушать разговор, подслушивать или получать сведения через посредника.",
+                "en": "Testimony: ask, listen, eavesdrop or use intermediaries."
+              }
+            },
+            {
+              "id": "family-09-variant-3",
+              "text": {
+                "ru": "Наблюдение за поведением: Выяснять привычки, маршруты, реакции, связи и скрываемые действия.",
+                "en": "Behavior: discover habits, routes, reactions, relationships and concealed actions."
+              }
+            },
+            {
+              "id": "family-09-variant-4",
+              "text": {
+                "ru": "Запись и воспроизведение: Фотографировать, делать слепок, записывать звук, сохранять экран и повторно изучать материал.",
+                "en": "Recording: photograph, mold, record audio, save screens and reexamine."
+              }
+            },
+            {
+              "id": "family-09-variant-5",
+              "text": {
+                "ru": "Следы и образцы: Собирать отпечатки, остатки веществ, биологические образцы и другие улики.",
+                "en": "Traces and samples: gather prints, residues, biological samples and evidence."
+              }
+            },
+            {
+              "id": "family-09-variant-6",
+              "text": {
+                "ru": "Измерения и экспертиза: Сравнивать результаты приборов, анализировать состав, расстояние, время и параметры объекта.",
+                "en": "Measurement and analysis: compare composition, distance, time and instrument readings."
+              }
+            },
+            {
+              "id": "family-09-variant-7",
+              "text": {
+                "ru": "Поиск в справочниках: Искать по имени, ключевому слову, признакам или сочетанию фильтров.",
+                "en": "Reference search: search by name, keyword, properties or combined filters."
+              }
+            },
+            {
+              "id": "family-09-variant-8",
+              "text": {
+                "ru": "Сопоставление источников: Объединять разрозненные сведения и оценивать, каким свидетельствам можно доверять.",
+                "en": "Source comparison: combine information and assess witness reliability."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-10",
+      "title": {
+        "ru": "Знание как условие продвижения",
+        "en": "Knowledge as a progression condition"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-10-variant-1",
+              "text": {
+                "ru": "Пароль и ответ: Применить найденное слово, имя, число, фразу или правильный ответ.",
+                "en": "Passwords and answers: use a discovered word, name, number, phrase or answer."
+              }
+            },
+            {
+              "id": "family-10-variant-2",
+              "text": {
+                "ru": "Новая тема разговора: Получить вопрос или аргумент после изучения документа, объекта или другой беседы.",
+                "en": "Dialogue topics: unlock questions or arguments after examining information."
+              }
+            },
+            {
+              "id": "family-10-variant-3",
+              "text": {
+                "ru": "Новый смысл знакомого объекта: Переосмыслить описание и заметить функцию, которая раньше была неочевидна.",
+                "en": "Reinterpreting objects: discover a previously unclear function."
+              }
+            },
+            {
+              "id": "family-10-variant-4",
+              "text": {
+                "ru": "Открытие скрытого правила: Понять, как работает система, язык, устройство или необычный мир.",
+                "en": "Hidden rules: understand a system, language, device or unusual world."
+              }
+            },
+            {
+              "id": "family-10-variant-5",
+              "text": {
+                "ru": "Маршрут по знанию: Открыть место или пройти препятствие, зная адрес, последовательность и ориентиры.",
+                "en": "Knowledge routes: use addresses, sequences or landmarks to progress."
+              }
+            },
+            {
+              "id": "family-10-variant-6",
+              "text": {
+                "ru": "Информация как передаваемый объект: Использовать карточки тем, улик, имён и идей подобно предметам инвентаря.",
+                "en": "Information as an item: manipulate topics, clues, names and ideas like inventory objects."
+              }
+            },
+            {
+              "id": "family-10-variant-7",
+              "text": {
+                "ru": "Знание игрока и знание героя: Различать вывод, который достаточно понять самому, и факт, который персонаж обязан узнать в игре.",
+                "en": "Player and character knowledge: distinguish understanding from facts the protagonist must learn."
+              }
+            },
+            {
+              "id": "family-10-variant-8",
+              "text": {
+                "ru": "Перенос знания между эпизодами: Использовать вывод из другой сцены, временного периода, персонажа или предыдущего цикла.",
+                "en": "Cross-episode knowledge: apply findings from another time, character or loop."
+              }
+            },
+            {
+              "id": "family-10-variant-9",
+              "text": {
+                "ru": "Переосмысление цели: Понять, что проблему можно решить изменением условия, а не прямым преодолением препятствия.",
+                "en": "Reframing goals: solve a problem by changing its condition."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-11",
+      "title": {
+        "ru": "Дедукция, доказательство и проверка гипотез",
+        "en": "Deduction, proof and hypothesis testing"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.gamedeveloper.com/design/case-of-the-golden-idol"
+      ],
+      "branches": [
+        {
+          "id": "family-11-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-11-variant-1",
+              "text": {
+                "ru": "Установление личности: Связать имя, внешность, профессию, роль, адрес и другие признаки человека.",
+                "en": "Identity: connect names, appearances, professions, roles and addresses."
+              }
+            },
+            {
+              "id": "family-11-variant-2",
+              "text": {
+                "ru": "Причина, способ и мотив: Выяснить, что произошло, как, почему и кому было выгодно.",
+                "en": "Cause, method and motive: determine what happened, how, why and who benefited."
+              }
+            },
+            {
+              "id": "family-11-variant-3",
+              "text": {
+                "ru": "Алиби и противоречия: Сопоставить время, места и показания; найти невозможное сочетание утверждений.",
+                "en": "Alibis and contradictions: compare time, places and testimony."
+              }
+            },
+            {
+              "id": "family-11-variant-4",
+              "text": {
+                "ru": "Исключение вариантов: Отбрасывать гипотезы по ограничениям и отрицательным свидетельствам.",
+                "en": "Elimination: reject hypotheses through constraints and negative evidence."
+              }
+            },
+            {
+              "id": "family-11-variant-5",
+              "text": {
+                "ru": "Связи между сущностями: Построить родословную, сеть знакомств, принадлежность вещей или структуру организации.",
+                "en": "Relationships: build genealogy, social networks, ownership or organizational structure."
+              }
+            },
+            {
+              "id": "family-11-variant-6",
+              "text": {
+                "ru": "Проверка экспериментом: Сделать предсказание, воспроизвести условия и сравнить результат с гипотезой.",
+                "en": "Experiment: predict, recreate conditions and compare outcomes."
+              }
+            },
+            {
+              "id": "family-11-variant-7",
+              "text": {
+                "ru": "Формулировка вывода: Заполнить утверждение, выбрать обвинение, соединить улики или ответить своими словами.",
+                "en": "Conclusions: complete statements, select accusations, connect evidence or answer freely."
+              }
+            },
+            {
+              "id": "family-11-variant-8",
+              "text": {
+                "ru": "Доказательство для другого: Подобрать достаточные аргументы и представить их адресату в убедительной форме.",
+                "en": "Demonstrating proof: present sufficient convincing arguments to another character."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-12",
+      "title": {
+        "ru": "Реконструкция событий и истории",
+        "en": "Reconstructing events and history"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-12-variant-1",
+              "text": {
+                "ru": "Хронология: Установить порядок действий, дат, перемещений и изменений.",
+                "en": "Chronology: order actions, dates, movements and changes."
+              }
+            },
+            {
+              "id": "family-12-variant-2",
+              "text": {
+                "ru": "Восстановление сцены: Расставить персонажей, предметы и обстоятельства так, как они были в момент события.",
+                "en": "Scene reconstruction: restore characters, objects and circumstances."
+              }
+            },
+            {
+              "id": "family-12-variant-3",
+              "text": {
+                "ru": "Причинная цепь: Связать исходные условия, действия и последствия.",
+                "en": "Causality: connect initial conditions, actions and outcomes."
+              }
+            },
+            {
+              "id": "family-12-variant-4",
+              "text": {
+                "ru": "Сопоставление временных слоёв: Сравнить одно место в разные годы или версии событий.",
+                "en": "Time layers: compare a place across years or event versions."
+              }
+            },
+            {
+              "id": "family-12-variant-5",
+              "text": {
+                "ru": "Реконструкция маршрута: Восстановить путь по следам, билетам, записям, свидетелям и остановкам.",
+                "en": "Route reconstruction: use traces, tickets, records, witnesses and stops."
+              }
+            },
+            {
+              "id": "family-12-variant-6",
+              "text": {
+                "ru": "Контекст артефакта: Определить происхождение, возраст, назначение и историческую связь объекта.",
+                "en": "Artifact context: infer origin, age, function and historical connections."
+              }
+            },
+            {
+              "id": "family-12-variant-7",
+              "text": {
+                "ru": "Ненадёжный рассказ: Разделить факт, ошибку, ложь, фантазию и искажённое воспоминание.",
+                "en": "Unreliable accounts: separate fact, error, lies, fantasy and distorted memories."
+              }
+            },
+            {
+              "id": "family-12-variant-8",
+              "text": {
+                "ru": "Полная картина из фрагментов: Собрать историю из документов, сцен, воспоминаний и отдельных расследований.",
+                "en": "Fragmented history: combine documents, scenes, memories and investigations."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-13",
+      "title": {
+        "ru": "Шифры, языки и знаковые системы",
+        "en": "Ciphers, languages and sign systems"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.inklestudios.com/heavensvault/"],
+      "branches": [
+        {
+          "id": "family-13-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-13-variant-1",
+              "text": {
+                "ru": "Подстановки и перестановки: Восстановить соответствие символов, порядок букв или преобразование сообщения.",
+                "en": "Substitution and permutation: infer symbol mappings, letter order or transformations."
+              }
+            },
+            {
+              "id": "family-13-variant-2",
+              "text": {
+                "ru": "Ключ из другого источника: Применить книгу, таблицу, рисунок, предмет или ранее найденный фрагмент.",
+                "en": "External key: use a book, table, picture, object or earlier fragment."
+              }
+            },
+            {
+              "id": "family-13-variant-3",
+              "text": {
+                "ru": "Скрытое сообщение: Найти акростих, скрытый слой, текст на обороте или смысл в расположении знаков.",
+                "en": "Hidden messages: find acrostics, hidden layers, reverse-side text or sign arrangement."
+              }
+            },
+            {
+              "id": "family-13-variant-4",
+              "text": {
+                "ru": "Определение значения символов: Вывести смысл пиктограмм и слов из контекста и повторяющихся ситуаций.",
+                "en": "Symbol meanings: infer pictograms and words through context and repeated situations."
+              }
+            },
+            {
+              "id": "family-13-variant-5",
+              "text": {
+                "ru": "Грамматика: Понять порядок слов, отрицание, число, роли участников и другие правила языка.",
+                "en": "Grammar: understand word order, negation, number and participant roles."
+              }
+            },
+            {
+              "id": "family-13-variant-6",
+              "text": {
+                "ru": "Перевод и посредничество: Перевести фразу, сопоставить языки и обеспечить понимание между персонажами.",
+                "en": "Translation: compare languages and enable characters to understand each other."
+              }
+            },
+            {
+              "id": "family-13-variant-7",
+              "text": {
+                "ru": "Словесная загадка: Решить ребус, анаграмму, каламбур, загадку или неоднозначную формулировку.",
+                "en": "Word puzzles: solve rebuses, anagrams, puns, riddles and ambiguity."
+              }
+            },
+            {
+              "id": "family-13-variant-8",
+              "text": {
+                "ru": "Изучение культурной системы: Понять жесты, этикет, символические соответствия и правила ритуала.",
+                "en": "Cultural systems: interpret gestures, etiquette, symbolism and rituals."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-14",
+      "title": {
+        "ru": "Диалоговые взаимодействия",
+        "en": "Dialogue interactions"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-14-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-14-variant-1",
+              "text": {
+                "ru": "Выбор реплик: Проходить ветви разговора, меняя порядок вопросов и ответов.",
+                "en": "Dialogue choices: traverse branches and vary question order."
+              }
+            },
+            {
+              "id": "family-14-variant-2",
+              "text": {
+                "ru": "Выбор тем: Обсуждать объекты, людей, события, места и найденную информацию.",
+                "en": "Topics: discuss objects, people, events, places and discoveries."
+              }
+            },
+            {
+              "id": "family-14-variant-3",
+              "text": {
+                "ru": "Свободный ввод: Вводить слово, имя, вопрос или ключевое понятие вместо выбора готовой реплики.",
+                "en": "Free input: type a word, name, question or concept."
+              }
+            },
+            {
+              "id": "family-14-variant-4",
+              "text": {
+                "ru": "Предъявление: Показать предмет, фотографию, улику, документ или запись во время разговора.",
+                "en": "Presentation: show an item, photo, clue, document or recording."
+              }
+            },
+            {
+              "id": "family-14-variant-5",
+              "text": {
+                "ru": "Возврат к разговору: Обновлять ответы после изменения мира, отношения или знания.",
+                "en": "Returning to dialogue: update responses after world, relationship or knowledge changes."
+              }
+            },
+            {
+              "id": "family-14-variant-6",
+              "text": {
+                "ru": "Порядок и момент реплик: Сначала подготовить тему, прервать, промолчать или ответить в подходящий момент.",
+                "en": "Timing: prepare a topic, interrupt, stay silent or respond at the right moment."
+              }
+            },
+            {
+              "id": "family-14-variant-7",
+              "text": {
+                "ru": "Невербальная коммуникация: Использовать жест, мимику, рисунок, знак или демонстрацию действия.",
+                "en": "Nonverbal communication: use gestures, expressions, drawings, signs or demonstrations."
+              }
+            },
+            {
+              "id": "family-14-variant-8",
+              "text": {
+                "ru": "Условия разговора: Сменить место, убрать свидетеля, выбрать собеседника или обеспечить приватность.",
+                "en": "Conversation conditions: change location, remove witnesses or ensure privacy."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-15",
+      "title": {
+        "ru": "Убеждение, обман и словесный конфликт",
+        "en": "Persuasion, deception and verbal conflict"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-15-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-15-variant-1",
+              "text": {
+                "ru": "Аргументация: Убедить логикой, фактами, выгодой, общими интересами или последствиями.",
+                "en": "Arguments: use logic, facts, benefits, interests or consequences."
+              }
+            },
+            {
+              "id": "family-15-variant-2",
+              "text": {
+                "ru": "Эмоциональное воздействие: Успокоить, вызвать сочувствие, поддержать, польстить или спровоцировать.",
+                "en": "Emotional influence: reassure, evoke sympathy, support, flatter or provoke."
+              }
+            },
+            {
+              "id": "family-15-variant-3",
+              "text": {
+                "ru": "Авторитет и социальная роль: Сослаться на полномочия, происхождение, статус, правила или известное лицо.",
+                "en": "Authority and role: invoke powers, status, origin, rules or recognized people."
+              }
+            },
+            {
+              "id": "family-15-variant-4",
+              "text": {
+                "ru": "Ложь и легенда: Выдать себя за другого, скрыть факт и поддерживать непротиворечивую историю.",
+                "en": "Lies and cover stories: impersonate, conceal and maintain consistency."
+              }
+            },
+            {
+              "id": "family-15-variant-5",
+              "text": {
+                "ru": "Давление и сделка: Угрожать, шантажировать, подкупать, предлагать условия и торговаться.",
+                "en": "Pressure and deals: threaten, blackmail, bribe, set conditions and bargain."
+              }
+            },
+            {
+              "id": "family-15-variant-6",
+              "text": {
+                "ru": "Допрос: Уточнять показания, ловить на противоречии и предъявлять улику в нужной точке.",
+                "en": "Interrogation: clarify testimony, expose contradictions and present evidence at the right point."
+              }
+            },
+            {
+              "id": "family-15-variant-7",
+              "text": {
+                "ru": "Словесная дуэль: Подбирать ответ на выпад, учить реплики, распознавать приём и применять контраргумент.",
+                "en": "Verbal duels: learn responses, recognize tactics and use counterarguments."
+              }
+            },
+            {
+              "id": "family-15-variant-8",
+              "text": {
+                "ru": "Профиль собеседника: Выяснить ценности, страхи, запреты и уязвимости, чтобы выбрать подходящий способ общения.",
+                "en": "Interlocutor profiles: discover values, fears, taboos and vulnerabilities."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-16",
+      "title": {
+        "ru": "Отношения и социальная симуляция",
+        "en": "Relationships and social simulation"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.inklestudios.com/overboard/"],
+      "branches": [
+        {
+          "id": "family-16-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-16-variant-1",
+              "text": {
+                "ru": "Доверие и симпатия: Менять готовность NPC делиться сведениями, помогать и допускать героя к ресурсам.",
+                "en": "Trust and liking: affect NPC willingness to share, help and grant access."
+              }
+            },
+            {
+              "id": "family-16-variant-2",
+              "text": {
+                "ru": "Репутация и принадлежность: Использовать отношение группы, организации, семьи, профессии или сообщества.",
+                "en": "Reputation and affiliation: use group, organization, family or community relationships."
+              }
+            },
+            {
+              "id": "family-16-variant-3",
+              "text": {
+                "ru": "Память о действиях: Учитывать, что персонаж видел, слышал, получил и как герой с ним обращался.",
+                "en": "Action memory: account for witnessed actions, information and treatment."
+              }
+            },
+            {
+              "id": "family-16-variant-4",
+              "text": {
+                "ru": "Знание разных персонажей: Контролировать, кто знает секрет, подозревает ложь или понимает ситуацию.",
+                "en": "Distributed knowledge: manage who knows secrets, suspects lies or understands events."
+              }
+            },
+            {
+              "id": "family-16-variant-5",
+              "text": {
+                "ru": "Посредничество: Передавать сообщение, мирить, знакомить, организовывать встречу или договариваться через третье лицо.",
+                "en": "Mediation: relay messages, reconcile, introduce or arrange meetings."
+              }
+            },
+            {
+              "id": "family-16-variant-6",
+              "text": {
+                "ru": "Изменение отношений между NPC: Создать союз, конфликт, ревность, недоверие или взаимную услугу.",
+                "en": "NPC relationships: create alliances, conflict, jealousy, distrust or favors."
+              }
+            },
+            {
+              "id": "family-16-variant-7",
+              "text": {
+                "ru": "Свидетели и публичность: Совершать действие при нужных людях или скрывать его от опасных наблюдателей.",
+                "en": "Witnesses: act publicly before selected people or conceal from observers."
+              }
+            },
+            {
+              "id": "family-16-variant-8",
+              "text": {
+                "ru": "Обязательства и последствия: Учитывать обещания, долги, предательство, сохранённые тайны и будущую ответную реакцию.",
+                "en": "Obligations: account for promises, debts, betrayal, secrets and later reactions."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-17",
+      "title": {
+        "ru": "Обмен услугами и цепочки поручений",
+        "en": "Exchanging services and task chains"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-17-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-17-variant-1",
+              "text": {
+                "ru": "Принести нужное: Найти вещь, удовлетворяющую запросу персонажа.",
+                "en": "Requested items: find something satisfying a character's request."
+              }
+            },
+            {
+              "id": "family-17-variant-2",
+              "text": {
+                "ru": "Помочь с проблемой: Починить, освободить, вылечить, организовать или решить чужую задачу.",
+                "en": "Solving problems: repair, release, heal, organize or help another person."
+              }
+            },
+            {
+              "id": "family-17-variant-3",
+              "text": {
+                "ru": "Доказать право: Пройти проверку, показать документ, знание, рекомендацию или квалификацию.",
+                "en": "Proving entitlement: pass a test or present documents, knowledge, recommendations or qualifications."
+              }
+            },
+            {
+              "id": "family-17-variant-4",
+              "text": {
+                "ru": "Последовательный обмен: Менять предметы и услуги через несколько владельцев.",
+                "en": "Sequential exchange: trade items and services through several owners."
+              }
+            },
+            {
+              "id": "family-17-variant-5",
+              "text": {
+                "ru": "Разветвлённые обязательства: Выполнять несколько независимых условий для одной общей награды.",
+                "en": "Branched obligations: meet independent conditions for a shared reward."
+              }
+            },
+            {
+              "id": "family-17-variant-6",
+              "text": {
+                "ru": "Преодоление взаимной зависимости: Найти третий ресурс, посредника или обходной способ, когда стороны ждут друг друга.",
+                "en": "Mutual dependency: find a third resource, intermediary or workaround."
+              }
+            },
+            {
+              "id": "family-17-variant-7",
+              "text": {
+                "ru": "Альтернатива запрошенному: Понять истинную потребность и предложить функционально подходящую замену.",
+                "en": "Substitution: identify the actual need and offer a functional alternative."
+              }
+            },
+            {
+              "id": "family-17-variant-8",
+              "text": {
+                "ru": "Условия сделки: Выбрать цену, порядок выполнения, гарантию, срок или получателя выгоды.",
+                "en": "Deal conditions: choose price, order, guarantee, deadline or beneficiary."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-2"
+    },
+    {
+      "id": "family-18",
+      "title": {
+        "ru": "Механизмы, переключатели и настройка",
+        "en": "Mechanisms, switches and tuning"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-18-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-18-variant-1",
+              "text": {
+                "ru": "Одиночные органы управления: Кнопки, рычаги, рукоятки, заслонки, вентили и переключатели.",
+                "en": "Individual controls: buttons, levers, handles, shutters, valves and switches."
+              }
+            },
+            {
+              "id": "family-18-variant-2",
+              "text": {
+                "ru": "Комбинации переключателей: Найти требуемую конфигурацию взаимосвязанных состояний.",
+                "en": "Switch combinations: find a configuration of linked states."
+              }
+            },
+            {
+              "id": "family-18-variant-3",
+              "text": {
+                "ru": "Порядок активации: Нажать элементы в правильной последовательности.",
+                "en": "Activation order: operate elements in the required sequence."
+              }
+            },
+            {
+              "id": "family-18-variant-4",
+              "text": {
+                "ru": "Настройка параметров: Подобрать частоту, скорость, давление, температуру, режим или положение шкалы.",
+                "en": "Parameters: tune frequency, speed, pressure, temperature, mode or scale."
+              }
+            },
+            {
+              "id": "family-18-variant-5",
+              "text": {
+                "ru": "Балансировка: Уравнять нагрузки, настроить противовесы и удерживать систему в допустимых пределах.",
+                "en": "Balance: equalize loads, adjust counterweights and keep within limits."
+              }
+            },
+            {
+              "id": "family-18-variant-6",
+              "text": {
+                "ru": "Передача движения: Соединить шестерни, ремни, цепи, валы и приводимые детали.",
+                "en": "Motion transfer: connect gears, belts, chains, shafts and driven parts."
+              }
+            },
+            {
+              "id": "family-18-variant-7",
+              "text": {
+                "ru": "Ремонт и диагностика: Определить неисправность, восстановить детали и проверить устройство.",
+                "en": "Diagnosis and repair: identify faults, restore parts and test."
+              }
+            },
+            {
+              "id": "family-18-variant-8",
+              "text": {
+                "ru": "Неизвестное устройство: Выяснить функции управления опытным путём, по наблюдениям и косвенным подсказкам.",
+                "en": "Unknown devices: infer controls through experiments, observation and indirect clues."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-19",
+      "title": {
+        "ru": "Потоки, сети и распределение ресурсов",
+        "en": "Flows, networks and resource distribution"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-19-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-19-variant-1",
+              "text": {
+                "ru": "Электрические цепи: Замкнуть, разорвать, перенаправить или собрать питание.",
+                "en": "Electrical circuits: close, break, redirect or assemble power paths."
+              }
+            },
+            {
+              "id": "family-19-variant-2",
+              "text": {
+                "ru": "Трубы и жидкости: Проводить воду, газ и другие вещества через сеть.",
+                "en": "Pipes and fluids: route water, gas or substances."
+              }
+            },
+            {
+              "id": "family-19-variant-3",
+              "text": {
+                "ru": "Свет и лучи: Направлять, разделять, отражать, фильтровать и прерывать луч.",
+                "en": "Light beams: direct, split, reflect, filter or interrupt."
+              }
+            },
+            {
+              "id": "family-19-variant-4",
+              "text": {
+                "ru": "Сигналы и связь: Настроить маршрут сообщения, антенну, радиоканал или систему оповещения.",
+                "en": "Signals: route messages and tune antennas, radio or alarms."
+              }
+            },
+            {
+              "id": "family-19-variant-5",
+              "text": {
+                "ru": "Транспортные сети: Управлять стрелками, конвейерами, линиями доставки и маршрутами перемещения.",
+                "en": "Transport networks: manage switches, conveyors, deliveries and routes."
+              }
+            },
+            {
+              "id": "family-19-variant-6",
+              "text": {
+                "ru": "Разделение ограниченного ресурса: Выбирать, какие узлы питать и что отключить ради другой цели.",
+                "en": "Limited resources: choose nodes to power and systems to disconnect."
+              }
+            },
+            {
+              "id": "family-19-variant-7",
+              "text": {
+                "ru": "Согласование нескольких потоков: Обеспечить правильное место, время и пропорции встречи потоков.",
+                "en": "Combined flows: coordinate meeting position, time and proportions."
+              }
+            },
+            {
+              "id": "family-19-variant-8",
+              "text": {
+                "ru": "Управление всей системой: Выявить связи между удалёнными устройствами и изменить итоговое состояние сети.",
+                "en": "Whole systems: discover distant device relationships and change network state."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-20",
+      "title": {
+        "ru": "Физика, свойства среды и эксперимент",
+        "en": "Physics, environmental properties and experiment"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-20-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-20-variant-1",
+              "text": {
+                "ru": "Масса и равновесие: Использовать весы, грузы, рычаги и противовесы.",
+                "en": "Mass and equilibrium: use scales, weights, levers and counterweights."
+              }
+            },
+            {
+              "id": "family-20-variant-2",
+              "text": {
+                "ru": "Объём и давление: Отмерять жидкости, вытеснять содержимое и управлять герметичными системами.",
+                "en": "Volume and pressure: measure fluids, displace contents and control sealed systems."
+              }
+            },
+            {
+              "id": "family-20-variant-3",
+              "text": {
+                "ru": "Плавучесть и течение: Заставить объект всплыть, утонуть, дрейфовать или двигаться по потоку.",
+                "en": "Buoyancy and currents: float, sink, drift or move with flow."
+              }
+            },
+            {
+              "id": "family-20-variant-4",
+              "text": {
+                "ru": "Трение и сцепление: Смазать, закрепить, облегчить скольжение или предотвратить движение.",
+                "en": "Friction and grip: lubricate, secure, enable sliding or prevent motion."
+              }
+            },
+            {
+              "id": "family-20-variant-5",
+              "text": {
+                "ru": "Магнетизм и проводимость: Притягивать, отталкивать, проводить электричество и использовать свойства материала.",
+                "en": "Magnetism and conductivity: attract, repel, conduct and exploit material properties."
+              }
+            },
+            {
+              "id": "family-20-variant-6",
+              "text": {
+                "ru": "Тепло и реакции: Изменять среду нагревом, охлаждением, горением и взаимодействием веществ.",
+                "en": "Heat and reactions: heat, cool, burn or combine substances."
+              }
+            },
+            {
+              "id": "family-20-variant-7",
+              "text": {
+                "ru": "Импульс и цепная реакция: Запустить падение, столкновение, маятник или последовательность срабатываний.",
+                "en": "Impulses and chain reactions: trigger falls, collisions, pendulums or sequences."
+              }
+            },
+            {
+              "id": "family-20-variant-8",
+              "text": {
+                "ru": "Вывод закона через опыт: Сравнить реакции системы, выделить правило и применить его к новой задаче.",
+                "en": "Experimental laws: compare responses, infer rules and apply them to new tasks."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-21",
+      "title": {
+        "ru": "Пространственные, визуальные и оптические задачи",
+        "en": "Spatial, visual and optical puzzles"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-21-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-21-variant-1",
+              "text": {
+                "ru": "Совмещение изображения: Собрать картинку, узор, мозаику или фрагменты объекта.",
+                "en": "Image assembly: restore pictures, patterns, mosaics and object fragments."
+              }
+            },
+            {
+              "id": "family-21-variant-2",
+              "text": {
+                "ru": "Ориентация деталей: Повернуть, отразить, переставить и подобрать правильное положение.",
+                "en": "Orientation: rotate, mirror, rearrange and position parts."
+              }
+            },
+            {
+              "id": "family-21-variant-3",
+              "text": {
+                "ru": "Укладка и геометрия: Разместить фигуры без пересечений, заполнить область или собрать объёмную конструкцию.",
+                "en": "Packing and geometry: fit shapes, fill regions or build volumes."
+              }
+            },
+            {
+              "id": "family-21-variant-4",
+              "text": {
+                "ru": "Наложение слоёв: Совместить прозрачные листы, карты, маски, изображения и части схемы.",
+                "en": "Layering: align transparent sheets, maps, masks and diagrams."
+              }
+            },
+            {
+              "id": "family-21-variant-5",
+              "text": {
+                "ru": "Перспектива и точка зрения: Увидеть целое из заданной позиции или изменить воспринимаемую форму.",
+                "en": "Perspective: see a whole from a chosen viewpoint or alter perceived shape."
+              }
+            },
+            {
+              "id": "family-21-variant-6",
+              "text": {
+                "ru": "Тени и отражения: Прочитать отражённое сообщение, построить тень и увидеть скрытый объект.",
+                "en": "Shadows and reflections: read mirrored messages, construct shadows or reveal hidden objects."
+              }
+            },
+            {
+              "id": "family-21-variant-7",
+              "text": {
+                "ru": "Цвет и освещение: Смешать цвета, выбрать фильтр, изменить спектр или порядок световых сигналов.",
+                "en": "Color and lighting: mix colors, choose filters, spectra or signal order."
+              }
+            },
+            {
+              "id": "family-21-variant-8",
+              "text": {
+                "ru": "Невозможное пространство: Понять необычные соединения комнат, относительный масштаб и условную геометрию мира.",
+                "en": "Impossible space: infer unusual room links, relative scale and fictional geometry."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-22",
+      "title": {
+        "ru": "Звук, музыка и ритм",
+        "en": "Sound, music and rhythm"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-22-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-22-variant-1",
+              "text": {
+                "ru": "Распознавание звука: Определить источник, объект, персонажа, состояние или событие по звучанию.",
+                "en": "Recognition: identify sources, objects, characters, states or events through sound."
+              }
+            },
+            {
+              "id": "family-22-variant-2",
+              "text": {
+                "ru": "Звуковая последовательность: Запомнить и воспроизвести сигналы в заданном порядке.",
+                "en": "Sequences: remember and reproduce signals in order."
+              }
+            },
+            {
+              "id": "family-22-variant-3",
+              "text": {
+                "ru": "Высота и мелодия: Подобрать ноты, настроить инструмент или сопоставить мотив.",
+                "en": "Pitch and melody: select notes, tune instruments or match motifs."
+              }
+            },
+            {
+              "id": "family-22-variant-4",
+              "text": {
+                "ru": "Ритм и длительность: Воспроизвести интервалы, темп и длину сигналов.",
+                "en": "Rhythm and duration: reproduce intervals, tempo and signal lengths."
+              }
+            },
+            {
+              "id": "family-22-variant-5",
+              "text": {
+                "ru": "Акустическая навигация: Ориентироваться по эху, громкости, направлению или изменению звука.",
+                "en": "Acoustic navigation: use echoes, loudness, direction and sound changes."
+              }
+            },
+            {
+              "id": "family-22-variant-6",
+              "text": {
+                "ru": "Запись и монтаж: Записать, соединить, обрезать, замедлить, ускорить или воспроизвести нужный фрагмент.",
+                "en": "Recording and editing: record, combine, trim, slow, speed up or play fragments."
+              }
+            },
+            {
+              "id": "family-22-variant-7",
+              "text": {
+                "ru": "Имитация и приманка: Повторить голос, вызов, сигнал или звук, вызывающий требуемую реакцию.",
+                "en": "Imitation and lures: reproduce voices, calls or signals to trigger reactions."
+              }
+            },
+            {
+              "id": "family-22-variant-8",
+              "text": {
+                "ru": "Звук как физическое воздействие: Использовать резонанс, вибрацию, маскировку шумом или отвлечение.",
+                "en": "Physical effects: use resonance, vibration, noise masking or distraction."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-23",
+      "title": {
+        "ru": "Логические, математические и комбинаторные задачи",
+        "en": "Logic, mathematics and combinatorics"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-23-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-23-variant-1",
+              "text": {
+                "ru": "Соответствия: Связать предметы, людей, признаки, категории и места по ограничениям.",
+                "en": "Correspondence: match items, people, properties, categories and places under constraints."
+              }
+            },
+            {
+              "id": "family-23-variant-2",
+              "text": {
+                "ru": "Порядок и сортировка: Расставить элементы по величине, времени, рангу, признаку или скрытому правилу.",
+                "en": "Ordering: arrange by size, time, rank, property or hidden rule."
+              }
+            },
+            {
+              "id": "family-23-variant-3",
+              "text": {
+                "ru": "Закономерность: Продолжить ряд, найти лишний элемент или восстановить принцип преобразования.",
+                "en": "Patterns: continue sequences, find outliers or infer transformations."
+              }
+            },
+            {
+              "id": "family-23-variant-4",
+              "text": {
+                "ru": "Числа и вычисления: Посчитать, преобразовать систему счисления и решить арифметическое условие.",
+                "en": "Numbers: count, convert numeral systems or satisfy arithmetic conditions."
+              }
+            },
+            {
+              "id": "family-23-variant-5",
+              "text": {
+                "ru": "Перестановки: Разобрать или собрать конфигурацию: сдвиги, кольца, вращающиеся блоки и связанные позиции.",
+                "en": "Permutations: solve sliding, ring, rotating-block or linked-position configurations."
+              }
+            },
+            {
+              "id": "family-23-variant-6",
+              "text": {
+                "ru": "Булева логика: Использовать условия «и», «или», «не», правдивость высказываний и переключаемые состояния.",
+                "en": "Boolean logic: use AND, OR, NOT, truth conditions and toggled states."
+              }
+            },
+            {
+              "id": "family-23-variant-7",
+              "text": {
+                "ru": "Переправы и распределение: Перенести несовместимые группы, разделить объекты и удовлетворить ограничения.",
+                "en": "Crossings and allocation: transport incompatible groups or distribute objects under constraints."
+              }
+            },
+            {
+              "id": "family-23-variant-8",
+              "text": {
+                "ru": "Оптимизация: Найти решение с заданным числом ходов, минимальным расходом или ограничением на повтор.",
+                "en": "Optimization: limit moves, resource use or repeated actions."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-24",
+      "title": {
+        "ru": "Карты, маршруты и лабиринты",
+        "en": "Maps, routes and mazes"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-24-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-24-variant-1",
+              "text": {
+                "ru": "Лабиринт: Найти выход по связям между местами.",
+                "en": "Mazes: find an exit through location connections."
+              }
+            },
+            {
+              "id": "family-24-variant-2",
+              "text": {
+                "ru": "Маршрут по инструкции: Применить последовательность направлений, карту, стих, звук или ориентиры.",
+                "en": "Instructions: follow directions, maps, verses, sound or landmarks."
+              }
+            },
+            {
+              "id": "family-24-variant-3",
+              "text": {
+                "ru": "Построение карты: Восстановить соединения мест, неизвестные участки и расположение ориентиров.",
+                "en": "Mapping: restore links, unexplored areas and landmark positions."
+              }
+            },
+            {
+              "id": "family-24-variant-4",
+              "text": {
+                "ru": "Изменяемый маршрут: Переключать мосты, двери, комнаты, платформы и транспортные связи.",
+                "en": "Changing routes: switch bridges, doors, rooms, platforms or transport links."
+              }
+            },
+            {
+              "id": "family-24-variant-5",
+              "text": {
+                "ru": "Однонаправленные переходы: Планировать возврат и учитывать проходы, которые работают только в одну сторону.",
+                "en": "One-way transitions: plan return paths around directional passages."
+              }
+            },
+            {
+              "id": "family-24-variant-6",
+              "text": {
+                "ru": "Условия на посещения: Пройти через обязательные точки, не повторять путь или избегать запрещённых участков.",
+                "en": "Visit conditions: reach required points, avoid repetition or forbidden areas."
+              }
+            },
+            {
+              "id": "family-24-variant-7",
+              "text": {
+                "ru": "Движение по сигналу: Следовать за персонажем, метками, светом, запахом или другим меняющимся ориентиром.",
+                "en": "Following signals: follow characters, marks, light, smell or changing landmarks."
+              }
+            },
+            {
+              "id": "family-24-variant-8",
+              "text": {
+                "ru": "Топология с дополнительным правилом: Учитывать время, масштаб, героя или состояние мира при выборе перехода.",
+                "en": "Conditional topology: account for time, scale, character or world state."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-25",
+      "title": {
+        "ru": "Последовательности и постановка действий",
+        "en": "Sequences and staged actions"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-25-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-25-variant-1",
+              "text": {
+                "ru": "Скрытый порядок: Определить, какое действие должно предшествовать другому.",
+                "en": "Hidden order: infer prerequisites between actions."
+              }
+            },
+            {
+              "id": "family-25-variant-2",
+              "text": {
+                "ru": "Подготовка и запуск: Сначала расставить элементы и настроить условия, затем запустить событие.",
+                "en": "Preparation and launch: place elements, configure conditions and trigger an event."
+              }
+            },
+            {
+              "id": "family-25-variant-3",
+              "text": {
+                "ru": "Синхронные действия: Обеспечить совместное срабатывание нескольких устройств или участников.",
+                "en": "Synchronization: trigger several devices or actors together."
+              }
+            },
+            {
+              "id": "family-25-variant-4",
+              "text": {
+                "ru": "Удерживаемое состояние: Оставить рычаг нажатым, дверь открытой, NPC занятым или систему включённой.",
+                "en": "Maintained state: hold a lever, door, NPC occupation or active system."
+              }
+            },
+            {
+              "id": "family-25-variant-5",
+              "text": {
+                "ru": "Дистанционный результат: Выполнить действие здесь, чтобы получить эффект в другой локации.",
+                "en": "Remote outcomes: act here to change another location."
+              }
+            },
+            {
+              "id": "family-25-variant-6",
+              "text": {
+                "ru": "Прерывание процесса: Остановить событие в подходящий момент или нарушить цепочку причин.",
+                "en": "Interruption: stop a process at the right time or break causality."
+              }
+            },
+            {
+              "id": "family-25-variant-7",
+              "text": {
+                "ru": "Управляемая цепная реакция: Рассчитать порядок автоматических последствий подготовленных действий.",
+                "en": "Chain reactions: calculate automatic outcomes of prepared actions."
+              }
+            },
+            {
+              "id": "family-25-variant-8",
+              "text": {
+                "ru": "Программирование поведения: Задать очередь команд, маршрут, алгоритм или повторяемую последовательность.",
+                "en": "Programming: specify command queues, routes, algorithms or repeated sequences."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-3"
+    },
+    {
+      "id": "family-26",
+      "title": {
+        "ru": "Время, расписания и ожидание",
+        "en": "Time, schedules and waiting"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-26-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-26-variant-1",
+              "text": {
+                "ru": "Реальное время: Мир меняется, пока игрок наблюдает и принимает решение.",
+                "en": "Real time: the world changes while the player observes and decides."
+              }
+            },
+            {
+              "id": "family-26-variant-2",
+              "text": {
+                "ru": "Время от действий: Ход, переход или реплика продвигает внутренние часы.",
+                "en": "Action-driven time: turns, travel or dialogue advance the clock."
+              }
+            },
+            {
+              "id": "family-26-variant-3",
+              "text": {
+                "ru": "Ожидание: Пропустить время до встречи, доставки, созревания или нужного состояния.",
+                "en": "Waiting: skip time until meetings, deliveries, growth or target states."
+              }
+            },
+            {
+              "id": "family-26-variant-4",
+              "text": {
+                "ru": "Расписание NPC: Найти персонажа в нужном месте и учесть его повседневные перемещения.",
+                "en": "NPC schedules: find characters and account for routines."
+              }
+            },
+            {
+              "id": "family-26-variant-5",
+              "text": {
+                "ru": "Циклический процесс: Действовать в определённой фазе повторяющегося механизма или поведения.",
+                "en": "Cycles: act during a phase of repeating mechanisms or behavior."
+              }
+            },
+            {
+              "id": "family-26-variant-6",
+              "text": {
+                "ru": "Ограниченное окно: Успеть до закрытия двери, возвращения владельца или изменения условий.",
+                "en": "Time windows: act before doors close, owners return or conditions change."
+              }
+            },
+            {
+              "id": "family-26-variant-7",
+              "text": {
+                "ru": "Дедлайн и планирование: Распределить ограниченное время между несколькими целями.",
+                "en": "Deadlines: allocate limited time among goals."
+              }
+            },
+            {
+              "id": "family-26-variant-8",
+              "text": {
+                "ru": "Отложенные последствия: Оставить задание, запустить процесс или подготовить событие с будущим результатом.",
+                "en": "Delayed consequences: start tasks, processes or events with future results."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-27",
+      "title": {
+        "ru": "Перемотка, петли и изменение истории",
+        "en": "Rewinding, loops and changing history"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-27-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-27-variant-1",
+              "text": {
+                "ru": "Откат действия или эпизода: Вернуться к предыдущему состоянию и попробовать другое решение.",
+                "en": "Undo: return to an earlier state and try another solution."
+              }
+            },
+            {
+              "id": "family-27-variant-2",
+              "text": {
+                "ru": "Повтор временного цикла: Исследовать один период заново, применяя накопленное понимание.",
+                "en": "Time loops: replay a period using accumulated understanding."
+              }
+            },
+            {
+              "id": "family-27-variant-3",
+              "text": {
+                "ru": "Сохранение между циклами: Переносить знания, отметки, предметы или отдельные изменения по правилам игры.",
+                "en": "Persistence: carry knowledge, marks, items or changes between loops under rules."
+              }
+            },
+            {
+              "id": "family-27-variant-4",
+              "text": {
+                "ru": "Изменение прошлого: Создать другое состояние объекта, человека или места в будущем.",
+                "en": "Changing the past: alter future objects, people or places."
+              }
+            },
+            {
+              "id": "family-27-variant-5",
+              "text": {
+                "ru": "Передача между эпохами: Перемещать информацию и вещи между связанными временными периодами.",
+                "en": "Cross-era transfer: move information and items between linked periods."
+              }
+            },
+            {
+              "id": "family-27-variant-6",
+              "text": {
+                "ru": "Параллельные линии времени: Сопоставлять версии события и переносить последствия между ними.",
+                "en": "Parallel timelines: compare event versions and transfer consequences."
+              }
+            },
+            {
+              "id": "family-27-variant-7",
+              "text": {
+                "ru": "Запись и повтор действий: Взаимодействовать со следом прежнего прохождения или воспроизводимой последовательностью.",
+                "en": "Recorded actions: interact with earlier playthrough traces or replayed sequences."
+              }
+            },
+            {
+              "id": "family-27-variant-8",
+              "text": {
+                "ru": "Причинные петли: Разбираться с самоподдерживающимися событиями и противоречиями в рамках заданных правил.",
+                "en": "Causal loops: understand self-sustaining events and contradictions under defined rules."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-28",
+      "title": {
+        "ru": "Переключение миров, слоёв и состояний",
+        "en": "Worlds, layers and state switching"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-28-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-28-variant-1",
+              "text": {
+                "ru": "Материальное и нематериальное: Перемещаться между физическим миром и слоем духов, мыслей или иной реальности.",
+                "en": "Physical and immaterial: switch between matter, spirits, thoughts or another reality."
+              }
+            },
+            {
+              "id": "family-28-variant-2",
+              "text": {
+                "ru": "Реальность и виртуальная среда: Решать взаимосвязанные задачи в двух разных представлениях пространства.",
+                "en": "Reality and virtual spaces: solve connected tasks in two representations."
+              }
+            },
+            {
+              "id": "family-28-variant-3",
+              "text": {
+                "ru": "Сон, память и фантазия: Исследовать внутреннюю сцену и влиять на доступные действия снаружи.",
+                "en": "Dreams and memories: investigate internal scenes and affect external actions."
+              }
+            },
+            {
+              "id": "family-28-variant-4",
+              "text": {
+                "ru": "Альтернативные версии места: Переключать мир, измерение, историю или вариант одной локации.",
+                "en": "Alternate places: switch dimensions, histories or versions of a location."
+              }
+            },
+            {
+              "id": "family-28-variant-5",
+              "text": {
+                "ru": "Глобальное состояние: Менять свет, уровень воды, погоду, сезон, гравитацию или режим всего окружения.",
+                "en": "Global state: change light, water, weather, season, gravity or environmental mode."
+              }
+            },
+            {
+              "id": "family-28-variant-6",
+              "text": {
+                "ru": "Слои восприятия: Применять спектр, линзу, особое зрение или интерпретацию для выявления новых объектов.",
+                "en": "Perception layers: use spectra, lenses, special vision or interpretation."
+              }
+            },
+            {
+              "id": "family-28-variant-7",
+              "text": {
+                "ru": "Масштаб: Переходить между маленьким и большим состоянием, внешностью и внутренностью объекта.",
+                "en": "Scale: switch size or move between object exterior and interior."
+              }
+            },
+            {
+              "id": "family-28-variant-8",
+              "text": {
+                "ru": "Межслойное воздействие: Действовать в одном состоянии, чтобы получить результат в другом.",
+                "en": "Cross-layer effects: act in one state to change another."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-29",
+      "title": {
+        "ru": "Способности, формы и управляемые сущности",
+        "en": "Abilities, forms and controlled entities"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-29-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-29-variant-1",
+              "text": {
+                "ru": "Физическая способность: Использовать силу, размер, ловкость, устойчивость или особую анатомию героя.",
+                "en": "Physical abilities: use strength, size, agility, resistance or unusual anatomy."
+              }
+            },
+            {
+              "id": "family-29-variant-2",
+              "text": {
+                "ru": "Особое восприятие: Видеть следы, слышать скрытое, читать эмоции, обнаруживать ложь и чувствовать недоступное другим.",
+                "en": "Special perception: use fictional trace vision, hidden hearing, emotion reading or lie detection."
+              }
+            },
+            {
+              "id": "family-29-variant-3",
+              "text": {
+                "ru": "Воздействие на расстоянии: Перемещать, нагревать, активировать и изменять объекты особой силой.",
+                "en": "Remote effects: move, heat, activate or change distant objects."
+              }
+            },
+            {
+              "id": "family-29-variant-4",
+              "text": {
+                "ru": "Чтение памяти и мыслей: Получать информацию, которую нельзя узнать обычным осмотром.",
+                "en": "Reading memories and thoughts: obtain information unavailable through ordinary inspection."
+              }
+            },
+            {
+              "id": "family-29-variant-5",
+              "text": {
+                "ru": "Одержимость и управление: Вселяться в предмет, животное, механизм или персонажа и использовать его возможности.",
+                "en": "Possession: enter animals, mechanisms or characters and use their capabilities."
+              }
+            },
+            {
+              "id": "family-29-variant-6",
+              "text": {
+                "ru": "Превращение: Менять форму, размер, вид, статус или доступный набор действий.",
+                "en": "Transformation: change form, size, species, status or available actions."
+              }
+            },
+            {
+              "id": "family-29-variant-7",
+              "text": {
+                "ru": "Управляемый помощник: Посылать дрон, фамильяра, робота, животное или другую сущность в недоступные места.",
+                "en": "Helpers: send drones, familiars, robots or animals into inaccessible places."
+              }
+            },
+            {
+              "id": "family-29-variant-8",
+              "text": {
+                "ru": "Ограничение способности: Решать задачи с дальностью, зарядом, областью действия, запретами и сочетанием сил.",
+                "en": "Ability limits: solve range, charge, area, prohibition and combined-power constraints."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-30",
+      "title": {
+        "ru": "Несколько героев и координация",
+        "en": "Multiple protagonists and coordination"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://wadjeteyegames.com/games/unavowed/"],
+      "branches": [
+        {
+          "id": "family-30-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-30-variant-1",
+              "text": {
+                "ru": "Переключение героя: Выбирать, чьими действиями и точкой зрения управлять.",
+                "en": "Switching: choose the controlled character and viewpoint."
+              }
+            },
+            {
+              "id": "family-30-variant-2",
+              "text": {
+                "ru": "Разные возможности: Применять уникальные навыки, происхождение, доступ, знания и связи персонажей.",
+                "en": "Different capabilities: use unique skills, background, access, knowledge and connections."
+              }
+            },
+            {
+              "id": "family-30-variant-3",
+              "text": {
+                "ru": "Передача предметов и сведений: Организовывать обмен между участниками.",
+                "en": "Exchange: transfer items and information between participants."
+              }
+            },
+            {
+              "id": "family-30-variant-4",
+              "text": {
+                "ru": "Разделённое пространство: Действовать в разных комнатах, местах, эпохах или слоях мира.",
+                "en": "Separated spaces: act in different rooms, places, eras or layers."
+              }
+            },
+            {
+              "id": "family-30-variant-5",
+              "text": {
+                "ru": "Совместная операция: Один удерживает, отвлекает или подготавливает; другой выполняет основное действие.",
+                "en": "Joint operations: one holds, distracts or prepares while another acts."
+              }
+            },
+            {
+              "id": "family-30-variant-6",
+              "text": {
+                "ru": "Выбор состава группы: Брать спутников, от которых зависят доступные способы решения.",
+                "en": "Party composition: choose companions determining available solutions."
+              }
+            },
+            {
+              "id": "family-30-variant-7",
+              "text": {
+                "ru": "Приказы и автономность: Назначать задачи союзнику и учитывать, что он продолжает действовать самостоятельно.",
+                "en": "Orders and autonomy: assign tasks and account for independent action."
+              }
+            },
+            {
+              "id": "family-30-variant-8",
+              "text": {
+                "ru": "Асимметрия знания: Соединять фрагменты информации, доступные разным героям.",
+                "en": "Knowledge asymmetry: combine information fragments known by different characters."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-31",
+      "title": {
+        "ru": "Поведение NPC, животных и живых систем",
+        "en": "NPC, animal and living-system behavior"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-31-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-31-variant-1",
+              "text": {
+                "ru": "Отвлечение: Переключать внимание на шум, разговор, происшествие или привлекательный объект.",
+                "en": "Distraction: redirect attention through noise, talk, incidents or attractive objects."
+              }
+            },
+            {
+              "id": "family-31-variant-2",
+              "text": {
+                "ru": "Приманка и выманивание: Заставить действующее лицо прийти в нужное место.",
+                "en": "Lures: bring actors to a target position."
+              }
+            },
+            {
+              "id": "family-31-variant-3",
+              "text": {
+                "ru": "Потребности и раздражители: Удовлетворять голод, любопытство, комфорт и другие моделируемые потребности.",
+                "en": "Needs: satisfy modeled hunger, curiosity, comfort or other needs."
+              }
+            },
+            {
+              "id": "family-31-variant-4",
+              "text": {
+                "ru": "Изменение маршрута: Перекрыть путь, создать повод свернуть или направить персонажа.",
+                "en": "Routes: block, redirect or create reasons to turn."
+              }
+            },
+            {
+              "id": "family-31-variant-5",
+              "text": {
+                "ru": "Провокация действия: Создать условия, при которых NPC сам откроет, перенесёт, исправит или сообщит нужное.",
+                "en": "Provoking actions: arrange conditions for NPCs to open, carry, fix or report."
+              }
+            },
+            {
+              "id": "family-31-variant-6",
+              "text": {
+                "ru": "Обучение и команды: Приучать, дрессировать, демонстрировать или задавать понятный сигнал.",
+                "en": "Training and commands: teach, demonstrate or give understood signals."
+              }
+            },
+            {
+              "id": "family-31-variant-7",
+              "text": {
+                "ru": "Привычки и обязанности: Использовать предсказуемый ритуал, профессиональное правило и регулярное поведение.",
+                "en": "Habits: exploit predictable rituals, professional rules and routines."
+              }
+            },
+            {
+              "id": "family-31-variant-8",
+              "text": {
+                "ru": "Взаимодействие живых элементов: Использовать растения, животных и их взаимные реакции как систему загадки.",
+                "en": "Living interactions: use plants, animals and their mutual reactions."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-32",
+      "title": {
+        "ru": "Скрытность, маскировка и сокрытие следов",
+        "en": "Stealth, disguise and trace concealment"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-32-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-32-variant-1",
+              "text": {
+                "ru": "Поле зрения: Перемещаться вне зоны наблюдения или создавать препятствия видимости.",
+                "en": "Vision: move outside observation zones or block visibility."
+              }
+            },
+            {
+              "id": "family-32-variant-2",
+              "text": {
+                "ru": "Шум и заметность: Контролировать громкость, освещение, следы и другие признаки присутствия.",
+                "en": "Noise and visibility: control sound, light, traces and presence cues."
+              }
+            },
+            {
+              "id": "family-32-variant-3",
+              "text": {
+                "ru": "Укрытие и ожидание: Спрятаться и выбрать момент безопасного действия.",
+                "en": "Cover: hide and wait for a safe moment."
+              }
+            },
+            {
+              "id": "family-32-variant-4",
+              "text": {
+                "ru": "Маскировка: Использовать одежду, внешний вид, роль, пропуск или поддельные полномочия.",
+                "en": "Disguise: use clothing, appearance, roles, passes or forged authority."
+              }
+            },
+            {
+              "id": "family-32-variant-5",
+              "text": {
+                "ru": "Незаметное действие: Украсть, подслушать, подменить, взломать или забрать вещь при наблюдателях.",
+                "en": "Covert actions: steal, eavesdrop, substitute, hack or collect under observation."
+              }
+            },
+            {
+              "id": "family-32-variant-6",
+              "text": {
+                "ru": "Саботаж наблюдения: Отключить сигнализацию, камеру и датчик либо изменить их работу.",
+                "en": "Surveillance sabotage: disable or alter alarms, cameras and sensors."
+              }
+            },
+            {
+              "id": "family-32-variant-7",
+              "text": {
+                "ru": "Управление уликами: Спрятать, уничтожить, изменить, подбросить или объяснить следы события.",
+                "en": "Evidence: hide, destroy, modify, plant or explain traces."
+              }
+            },
+            {
+              "id": "family-32-variant-8",
+              "text": {
+                "ru": "Изменение подозрения: Снизить внимание, перевести обвинение, создать алиби или направить расследование.",
+                "en": "Suspicion: reduce attention, redirect blame, establish alibis or steer investigation."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-33",
+      "title": {
+        "ru": "Компьютеры, телефоны и медиасреда",
+        "en": "Computers, phones and media environments"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-33-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-33-variant-1",
+              "text": {
+                "ru": "Доступ к системе: Найти учётные данные, получить разрешение или решить условную задачу взлома.",
+                "en": "Access: find credentials, permission or solve fictional hacking puzzles."
+              }
+            },
+            {
+              "id": "family-33-variant-2",
+              "text": {
+                "ru": "Работа с файлами: Искать, открывать, восстанавливать, копировать, перемещать и сопоставлять данные.",
+                "en": "Files: search, open, restore, copy, move and compare data."
+              }
+            },
+            {
+              "id": "family-33-variant-3",
+              "text": {
+                "ru": "Поиск в базе: Использовать имена, номера, даты, связи, признаки и фильтры.",
+                "en": "Database search: use names, numbers, dates, relationships, properties and filters."
+              }
+            },
+            {
+              "id": "family-33-variant-4",
+              "text": {
+                "ru": "Связь: Выбирать номер, адресата, канал, время звонка и способ передачи сообщения.",
+                "en": "Communication: select number, recipient, channel, call time and message method."
+              }
+            },
+            {
+              "id": "family-33-variant-5",
+              "text": {
+                "ru": "Имитация интерфейсов: Исследовать игровой рабочий стол, браузер, почту, чат и телефон.",
+                "en": "Simulated interfaces: explore fictional desktops, browsers, mail, chats and phones."
+              }
+            },
+            {
+              "id": "family-33-variant-6",
+              "text": {
+                "ru": "Цифровое изменение: Подделать запись, настроить профиль, изменить права и отредактировать данные.",
+                "en": "Digital modification: forge records, set profiles, change permissions and edit data."
+              }
+            },
+            {
+              "id": "family-33-variant-7",
+              "text": {
+                "ru": "Удалённое управление: Использовать камеры, дроны, дверные замки, роботов и подключённые устройства.",
+                "en": "Remote control: operate cameras, drones, locks, robots and connected devices."
+              }
+            },
+            {
+              "id": "family-33-variant-8",
+              "text": {
+                "ru": "Команды и программирование: Вводить инструкции, составлять алгоритм и управлять системой по её правилам.",
+                "en": "Commands: enter instructions, build algorithms and follow system rules."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-34",
+      "title": {
+        "ru": "Создание содержания и управление рассказом",
+        "en": "Content creation and narrative control"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-34-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-34-variant-1",
+              "text": {
+                "ru": "Рисование и схема: Создать изображение, символ, карту или чертёж, который игра распознаёт.",
+                "en": "Drawing: create recognized images, symbols, maps or plans."
+              }
+            },
+            {
+              "id": "family-34-variant-2",
+              "text": {
+                "ru": "Составление текста: Собрать письмо, заявление, лозунг, объявление и другой значимый текст.",
+                "en": "Text: assemble meaningful letters, statements, slogans or notices."
+              }
+            },
+            {
+              "id": "family-34-variant-3",
+              "text": {
+                "ru": "Монтаж и композиция: Расставить фрагменты записи, сцены, изображения или сообщения.",
+                "en": "Editing: arrange recording, scene, image or message fragments."
+              }
+            },
+            {
+              "id": "family-34-variant-4",
+              "text": {
+                "ru": "Постановка ситуации: Назначить роли, действия и обстоятельства, чтобы получить требуемый результат.",
+                "en": "Staging: assign roles, actions and circumstances for a target result."
+              }
+            },
+            {
+              "id": "family-34-variant-5",
+              "text": {
+                "ru": "Редактирование истории: Менять порядок сцен, участников и условия, влияющие на итог рассказа.",
+                "en": "Story editing: alter scenes, participants and conditions affecting the ending."
+              }
+            },
+            {
+              "id": "family-34-variant-6",
+              "text": {
+                "ru": "Материализация идеи: Превратить слово, рисунок или описание в игровой объект по явным правилам системы.",
+                "en": "Materializing ideas: turn words, drawings or descriptions into objects under explicit rules."
+              }
+            },
+            {
+              "id": "family-34-variant-7",
+              "text": {
+                "ru": "Выбор интерпретации: Закрепить версию события, которая меняет реакцию персонажей или дальнейший ход истории.",
+                "en": "Interpretation: establish an event version changing reactions or progression."
+              }
+            },
+            {
+              "id": "family-34-variant-8",
+              "text": {
+                "ru": "Роль рассказчика: Управлять описанием, памятью, точкой зрения и доступными элементами повествования.",
+                "en": "Narrator role: control descriptions, memory, viewpoint and narrative elements."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-4"
+    },
+    {
+      "id": "family-35",
+      "title": {
+        "ru": "Моторные и аркадные вставки",
+        "en": "Motor and arcade sequences"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-35-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-35-variant-1",
+              "text": {
+                "ru": "Точность указателя: Попасть в цель, выбрать маленькую область или удерживать указатель в допустимой зоне.",
+                "en": "Pointer accuracy: hit targets, small areas or maintain a permitted zone."
+              }
+            },
+            {
+              "id": "family-35-variant-2",
+              "text": {
+                "ru": "Перетаскивание по траектории: Провести предмет через препятствия, обвести контур или выполнить жест.",
+                "en": "Path dragging: carry objects around obstacles, trace contours or gesture."
+              }
+            },
+            {
+              "id": "family-35-variant-3",
+              "text": {
+                "ru": "Действие в момент сигнала: Нажать при совпадении, поймать объект или остановить шкалу.",
+                "en": "Cue timing: press on alignment, catch objects or stop gauges."
+              }
+            },
+            {
+              "id": "family-35-variant-4",
+              "text": {
+                "ru": "Ритмическая вставка: Действовать в такт, повторять сочетания и последовательности вводов.",
+                "en": "Rhythm: act on beats and repeat input combinations."
+              }
+            },
+            {
+              "id": "family-35-variant-5",
+              "text": {
+                "ru": "Погоня и уклонение: Выбирать действия и позиции, избегая движущейся угрозы.",
+                "en": "Chases: select actions and positions to evade moving threats."
+              }
+            },
+            {
+              "id": "family-35-variant-6",
+              "text": {
+                "ru": "Бой как мини-игра: Использовать блок, атаку, ответ, дистанцию и распознавание поведения противника.",
+                "en": "Combat minigames: block, attack, respond, manage distance and read behavior."
+              }
+            },
+            {
+              "id": "family-35-variant-7",
+              "text": {
+                "ru": "Управление транспортом: Проходить участок на машине, лодке или другом управляемом средстве.",
+                "en": "Vehicles: complete driving, boating or other transport sections."
+              }
+            },
+            {
+              "id": "family-35-variant-8",
+              "text": {
+                "ru": "Физический навык: Балансировать, метать, ловить, вести объект и выдерживать темп повторных действий.",
+                "en": "Physical skill: balance, throw, catch, guide and sustain repeated-action tempo."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-5"
+    },
+    {
+      "id": "family-36",
+      "title": {
+        "ru": "Настольные, карточные и игровые испытания",
+        "en": "Board, card and game challenges"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-36-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-36-variant-1",
+              "text": {
+                "ru": "Карточная игра: Победить по обычным или вымышленным правилам.",
+                "en": "Cards: win under familiar or fictional rules."
+              }
+            },
+            {
+              "id": "family-36-variant-2",
+              "text": {
+                "ru": "Настольная игра: Играть в шахматную, шашечную и другую пошаговую систему.",
+                "en": "Board games: play chess-like, checkers-like or other turn-based systems."
+              }
+            },
+            {
+              "id": "family-36-variant-3",
+              "text": {
+                "ru": "Азартное испытание: Участвовать в ставках, костях, лотерее и игре со случайным результатом.",
+                "en": "Chance: use bets, dice, lotteries or random outcomes."
+              }
+            },
+            {
+              "id": "family-36-variant-4",
+              "text": {
+                "ru": "Память и пары: Запоминать расположение, совпадения, последовательности и скрытые элементы.",
+                "en": "Memory: remember positions, matches, sequences and hidden elements."
+              }
+            },
+            {
+              "id": "family-36-variant-5",
+              "text": {
+                "ru": "Соревнование с NPC: Найти выигрышную стратегию против поведения соперника.",
+                "en": "NPC competition: find a strategy against an opponent's behavior."
+              }
+            },
+            {
+              "id": "family-36-variant-6",
+              "text": {
+                "ru": "Обман за игровым столом: Подменить компонент, узнать закрытую информацию и использовать отвлечение.",
+                "en": "Table cheating: replace components, obtain hidden information or distract."
+              }
+            },
+            {
+              "id": "family-36-variant-7",
+              "text": {
+                "ru": "Изучение правил: Разобраться в незнакомой игре через наблюдение, объяснение и пробные ходы.",
+                "en": "Learning rules: observe, ask and test moves in an unfamiliar game."
+              }
+            },
+            {
+              "id": "family-36-variant-8",
+              "text": {
+                "ru": "Результат как часть квеста: Получить вещь, доверие, доступ или сведения через исход мини-игры.",
+                "en": "Quest outcomes: earn an item, trust, access or information through a minigame."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-5"
+    },
+    {
+      "id": "family-37",
+      "title": {
+        "ru": "RPG, экономика, выживание и управление",
+        "en": "RPG systems, economy, survival and management"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-37-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-37-variant-1",
+              "text": {
+                "ru": "Характеристики и проверки: Открывать действия по навыку, параметру, происхождению или экипировке.",
+                "en": "Statistics and checks: unlock actions through skills, attributes, background or equipment."
+              }
+            },
+            {
+              "id": "family-37-variant-2",
+              "text": {
+                "ru": "Развитие героя: Приобретать новые возможности, специализации и способы решения.",
+                "en": "Development: obtain abilities, specializations and solutions."
+              }
+            },
+            {
+              "id": "family-37-variant-3",
+              "text": {
+                "ru": "Деньги и бюджет: Выбирать покупки, заработок и распределение ограниченных средств.",
+                "en": "Budget: select purchases, earnings and fund allocation."
+              }
+            },
+            {
+              "id": "family-37-variant-4",
+              "text": {
+                "ru": "Торговля и цены: Торговаться, искать выгодный обмен и учитывать меняющуюся стоимость.",
+                "en": "Trade: bargain, exchange and account for changing prices."
+              }
+            },
+            {
+              "id": "family-37-variant-5",
+              "text": {
+                "ru": "Выживание: Поддерживать здоровье, питание, воздух, тепло и другие ресурсы.",
+                "en": "Survival: maintain health, food, air, heat and resources."
+              }
+            },
+            {
+              "id": "family-37-variant-6",
+              "text": {
+                "ru": "Производство и хозяйство: Управлять мастерской, кафе, базой и цепочкой выпуска предметов.",
+                "en": "Production: manage workshops, cafes, bases or crafting chains."
+              }
+            },
+            {
+              "id": "family-37-variant-7",
+              "text": {
+                "ru": "Логистика и планирование: Распределять людей, материалы, транспорт и время между задачами.",
+                "en": "Logistics: assign people, materials, transport and time."
+              }
+            },
+            {
+              "id": "family-37-variant-8",
+              "text": {
+                "ru": "Риск и случайность: Принимать решение при вероятностном исходе и ограниченной возможности повторить попытку.",
+                "en": "Risk: decide under probabilistic outcomes and limited retries."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-5"
+    },
+    {
+      "id": "family-38",
+      "title": {
+        "ru": "Метаигра и четвёртая стена",
+        "en": "Metagame and the fourth wall"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-38-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-38-variant-1",
+              "text": {
+                "ru": "Условность интерфейса: Использовать элемент оформления или представления как объект загадки.",
+                "en": "Presentation: use interface or visual elements as puzzle objects."
+              }
+            },
+            {
+              "id": "family-38-variant-2",
+              "text": {
+                "ru": "Курсор как сущность: Менять указатель, применять его свойства и взаимодействовать с ним по особым правилам.",
+                "en": "Cursor: change and exploit pointer properties under special rules."
+              }
+            },
+            {
+              "id": "family-38-variant-3",
+              "text": {
+                "ru": "Меню и настройки: Решать предусмотренную автором задачу через игровое меню или параметры.",
+                "en": "Menus: solve authored puzzles through menus or settings."
+              }
+            },
+            {
+              "id": "family-38-variant-4",
+              "text": {
+                "ru": "Сохранение и загрузка: Использовать предусмотренное сюжетом изменение сохранений и повтор состояния.",
+                "en": "Save/load: use story-designed save changes and repeated states."
+              }
+            },
+            {
+              "id": "family-38-variant-5",
+              "text": {
+                "ru": "Материалы вне сцены: Искать ключ в руководстве, сопровождающем документе и другом предоставленном материале.",
+                "en": "Companion materials: find keys in supplied manuals or documents."
+              }
+            },
+            {
+              "id": "family-38-variant-6",
+              "text": {
+                "ru": "Игровая внешняя среда: Использовать специально созданный сайт, приложение, файл или коммуникационный канал.",
+                "en": "Fictional external environments: use specifically created sites, apps, files or channels."
+              }
+            },
+            {
+              "id": "family-38-variant-7",
+              "text": {
+                "ru": "Осознание роли игрока: Взаимодействовать с персонажем, который замечает выборы, повторы и действия управляющего им человека.",
+                "en": "Player awareness: interact with characters noticing choices, repetition and control."
+              }
+            },
+            {
+              "id": "family-38-variant-8",
+              "text": {
+                "ru": "Изменение правил: Влиять на разрешённые действия, команды, значения слов и логику системы в рамках замысла игры.",
+                "en": "Rule changes: alter allowed actions, commands, word meanings or system logic within the game design."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-5"
+    },
+    {
+      "id": "family-39",
+      "title": {
+        "ru": "Совместная игра и особенности устройства",
+        "en": "Cooperative play and device capabilities"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-39-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-39-variant-1",
+              "text": {
+                "ru": "Разделённая информация игроков: Передавать друг другу разные изображения, тексты и наблюдения.",
+                "en": "Divided information: share different images, texts and observations."
+              }
+            },
+            {
+              "id": "family-39-variant-2",
+              "text": {
+                "ru": "Разные роли игроков: Один управляет объектом, другой читает инструкцию или видит скрытые условия.",
+                "en": "Roles: one controls while another reads instructions or hidden conditions."
+              }
+            },
+            {
+              "id": "family-39-variant-3",
+              "text": {
+                "ru": "Синхронные действия игроков: Согласовать нажатия, положения, порядок и момент действий.",
+                "en": "Synchronization: coordinate presses, positions, order and timing."
+              }
+            },
+            {
+              "id": "family-39-variant-4",
+              "text": {
+                "ru": "Общий план и коммуникация: Объяснять наблюдение, договариваться о терминах и координировать распределённую задачу.",
+                "en": "Shared plans: explain observations, agree terminology and coordinate distributed tasks."
+              }
+            },
+            {
+              "id": "family-39-variant-5",
+              "text": {
+                "ru": "Несколько указателей и касаний: Одновременно удерживать, двигать и активировать разные элементы.",
+                "en": "Multiple pointers: hold, move and activate elements simultaneously."
+              }
+            },
+            {
+              "id": "family-39-variant-6",
+              "text": {
+                "ru": "Голос и микрофон: Произнести слово, воспроизвести звук и взаимодействовать голосом.",
+                "en": "Voice: speak words, reproduce sounds or use microphone interaction."
+              }
+            },
+            {
+              "id": "family-39-variant-7",
+              "text": {
+                "ru": "Датчики и камера: Использовать наклон, движение, изображение, положение и другие предусмотренные данные устройства.",
+                "en": "Sensors and cameras: use supported tilt, motion, images or position."
+              }
+            },
+            {
+              "id": "family-39-variant-8",
+              "text": {
+                "ru": "VR и пространственный ввод: Осматривать, брать, размещать и сопоставлять объекты физическими действиями в виртуальном пространстве.",
+                "en": "VR: inspect, take, place and match objects through spatial actions."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-5"
+    },
+    {
+      "id": "family-40",
+      "title": {
+        "ru": "Зависимости и организация задач",
+        "en": "Dependencies and task organization"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://grumpygamer.com/puzzle_dependency_charts/"],
+      "branches": [
+        {
+          "id": "family-40-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-40-variant-1",
+              "text": {
+                "ru": "Линейная цепочка: Каждый следующий шаг зависит от предыдущего.",
+                "en": "Linear chains: each step depends on the preceding one."
+              }
+            },
+            {
+              "id": "family-40-variant-2",
+              "text": {
+                "ru": "Независимые ветви: Несколько задач доступны одновременно и решаются в любом порядке.",
+                "en": "Independent branches: solve simultaneous tasks in any order."
+              }
+            },
+            {
+              "id": "family-40-variant-3",
+              "text": {
+                "ru": "Общее условие: Продвижение требует выполнения всех ветвей или заданного количества условий.",
+                "en": "Shared conditions: complete all branches or a specified number of conditions."
+              }
+            },
+            {
+              "id": "family-40-variant-4",
+              "text": {
+                "ru": "Альтернативное условие: Достаточно одного из нескольких способов достижения цели.",
+                "en": "Alternatives: satisfy one of several approaches."
+              }
+            },
+            {
+              "id": "family-40-variant-5",
+              "text": {
+                "ru": "Разветвление и схождение: Одна находка открывает несколько задач, результаты которых затем объединяются.",
+                "en": "Branching and convergence: discoveries open tasks whose results later combine."
+              }
+            },
+            {
+              "id": "family-40-variant-6",
+              "text": {
+                "ru": "Межлокационная зависимость: Сведения, действия и предметы из разных мест участвуют в одной задаче.",
+                "en": "Cross-location dependencies: combine information, actions and items from different places."
+              }
+            },
+            {
+              "id": "family-40-variant-7",
+              "text": {
+                "ru": "Задача внутри задачи: Для решения крупной проблемы требуется отдельная цепь подготовки.",
+                "en": "Nested tasks: prepare a separate chain for a larger problem."
+              }
+            },
+            {
+              "id": "family-40-variant-8",
+              "text": {
+                "ru": "Метазагадка: Использовать результаты нескольких самостоятельных загадок как данные для общей.",
+                "en": "Metapuzzles: use separate puzzle results as inputs to a shared puzzle."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-6"
+    },
+    {
+      "id": "family-41",
+      "title": {
+        "ru": "Решения, выборы и последствия",
+        "en": "Solutions, choices and consequences"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-41-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-41-variant-1",
+              "text": {
+                "ru": "Единственное решение: У задачи есть один предусмотренный успешный способ.",
+                "en": "Unique solution: one authored successful approach."
+              }
+            },
+            {
+              "id": "family-41-variant-2",
+              "text": {
+                "ru": "Несколько решений: Применять разные предметы, разговоры, способности и пути.",
+                "en": "Multiple solutions: use different items, dialogue, abilities or paths."
+              }
+            },
+            {
+              "id": "family-41-variant-3",
+              "text": {
+                "ru": "Системное решение: Получить результат через комбинацию правил, даже если конкретная последовательность не задана отдельно.",
+                "en": "Systemic solutions: combine rules without an individually authored sequence."
+              }
+            },
+            {
+              "id": "family-41-variant-4",
+              "text": {
+                "ru": "Разная цена результата: Заплатить ресурсами, временем, отношениями, риском или отказом от другой выгоды.",
+                "en": "Outcome costs: spend resources, time, relationships or risk, or sacrifice another benefit."
+              }
+            },
+            {
+              "id": "family-41-variant-5",
+              "text": {
+                "ru": "Локальное ветвление: Изменить сцену или способ прохождения без обязательной смены всей истории.",
+                "en": "Local branching: alter a scene or path without changing the whole story."
+              }
+            },
+            {
+              "id": "family-41-variant-6",
+              "text": {
+                "ru": "Отложенное последствие: Получить реакцию на выбор позднее, в другом эпизоде или финале.",
+                "en": "Delayed effects: receive reactions in later episodes or endings."
+              }
+            },
+            {
+              "id": "family-41-variant-7",
+              "text": {
+                "ru": "Взаимоисключающие цели: Выбирать, кого спасти, кому помочь и какой результат сохранить.",
+                "en": "Exclusive goals: choose whom to save or help and what to preserve."
+              }
+            },
+            {
+              "id": "family-41-variant-8",
+              "text": {
+                "ru": "Несколько исходов: Достичь разных версий успеха, частичного результата, провала и концовки.",
+                "en": "Outcomes: achieve different success states, partial results, failures and endings."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-6"
+    },
+    {
+      "id": "family-42",
+      "title": {
+        "ru": "Ошибки, повторы и вариативность",
+        "en": "Errors, retries and variation"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-42-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-42-variant-1",
+              "text": {
+                "ru": "Безопасная ошибка: Попробовать неподходящее действие и получить обратную связь без потери продвижения.",
+                "en": "Safe errors: obtain feedback without losing progress."
+              }
+            },
+            {
+              "id": "family-42-variant-2",
+              "text": {
+                "ru": "Обратимое изменение: Вернуть мир или объект к прежнему состоянию и сменить подход.",
+                "en": "Reversibility: restore a world or object state and try another approach."
+              }
+            },
+            {
+              "id": "family-42-variant-3",
+              "text": {
+                "ru": "Провал отдельной попытки: Повторить разговор, мини-игру, участок или сцену.",
+                "en": "Failed attempts: retry dialogue, minigames, sections or scenes."
+              }
+            },
+            {
+              "id": "family-42-variant-4",
+              "text": {
+                "ru": "Смерть и перезапуск: Вернуться к контрольной точке, началу эпизода или сохранению.",
+                "en": "Death and restart: return to checkpoints, episode starts or saves."
+              }
+            },
+            {
+              "id": "family-42-variant-5",
+              "text": {
+                "ru": "Постоянная утрата возможности: Потерять предмет, свидетеля, ветку или способ решения.",
+                "en": "Permanent loss: lose items, witnesses, branches or solutions."
+              }
+            },
+            {
+              "id": "family-42-variant-6",
+              "text": {
+                "ru": "Непроходимое состояние: Лишиться всех способов завершить задачу; в старых квестах такой тупик мог быть неочевиден игроку.",
+                "en": "Dead ends: lose every way to complete a task, potentially without a clear warning."
+              }
+            },
+            {
+              "id": "family-42-variant-7",
+              "text": {
+                "ru": "Продвижение после неудачи: Продолжить историю с изменёнными условиями и последствиями.",
+                "en": "Continuing after failure: progress with changed conditions and consequences."
+              }
+            },
+            {
+              "id": "family-42-variant-8",
+              "text": {
+                "ru": "Новая конфигурация: Получить другой код, расстановку, правило или набор данных при повторе.",
+                "en": "Reconfiguration: change codes, layouts, rules or datasets on retry."
+              }
+            },
+            {
+              "id": "family-42-variant-9",
+              "text": {
+                "ru": "Процедурная или реактивная задача: Формировать условия по алгоритму, истории действий и текущему состоянию мира.",
+                "en": "Procedural or reactive tasks: generate conditions from algorithms, action history and world state."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-6"
+    },
+    {
+      "id": "family-43",
+      "title": {
+        "ru": "Способы ввода и выбора действия",
+        "en": "Input and action selection"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-43-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-43-variant-1",
+              "text": {
+                "ru": "Панель глаголов: Выбирать отдельное действие перед указанием цели.",
+                "en": "Verb panels: select an action before its target."
+              }
+            },
+            {
+              "id": "family-43-variant-2",
+              "text": {
+                "ru": "Контекстный курсор: Получать действие в зависимости от объекта и ситуации.",
+                "en": "Context cursors: choose actions according to object and situation."
+              }
+            },
+            {
+              "id": "family-43-variant-3",
+              "text": {
+                "ru": "Разные кнопки указателя: Разделять осмотр, действие, отмену и другие команды между кнопками.",
+                "en": "Pointer buttons: assign inspection, action, cancellation and commands to different buttons."
+              }
+            },
+            {
+              "id": "family-43-variant-4",
+              "text": {
+                "ru": "Радиальное или контекстное меню: Выбирать из действий вокруг объекта или в появляющемся списке.",
+                "en": "Radial or context menus: choose around objects or from popup lists."
+              }
+            },
+            {
+              "id": "family-43-variant-5",
+              "text": {
+                "ru": "Перетаскивание: Переносить предмет на цель, совмещать элементы и управлять их положением.",
+                "en": "Dragging: transfer items onto targets, align elements and position them."
+              }
+            },
+            {
+              "id": "family-43-variant-6",
+              "text": {
+                "ru": "Удержание и повтор: Поддерживать нажатие, выполнять серию кликов и менять длительность воздействия.",
+                "en": "Holding and repetition: sustain presses, click repeatedly or vary duration."
+              }
+            },
+            {
+              "id": "family-43-variant-7",
+              "text": {
+                "ru": "Текстовый ввод: Вводить команду, пароль, имя, число и собственный ответ.",
+                "en": "Text: enter commands, passwords, names, numbers or original answers."
+              }
+            },
+            {
+              "id": "family-43-variant-8",
+              "text": {
+                "ru": "Прямое управление устройством: Взаимодействовать с ручками, шкалами, деталями и панелями через специализированный интерфейс.",
+                "en": "Device interfaces: manipulate handles, gauges, parts and panels directly."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-7"
+    },
+    {
+      "id": "family-44",
+      "title": {
+        "ru": "Память, подсказки и удобство прохождения",
+        "en": "Memory, hints and playthrough convenience"
+      },
+      "description": {
+        "ru": "",
+        "en": ""
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-44-branch-1",
+          "title": {
+            "ru": "Варианты",
+            "en": "Variants"
+          },
+          "variants": [
+            {
+              "id": "family-44-variant-1",
+              "text": {
+                "ru": "Журнал и цели: Хранить задачи, выводы, события и сведения о персонажах.",
+                "en": "Journal: retain tasks, conclusions, events and character information."
+              }
+            },
+            {
+              "id": "family-44-variant-2",
+              "text": {
+                "ru": "Записи и коллекции улик: Пересматривать документы, фотографии, аудио, темы и найденные доказательства.",
+                "en": "Evidence collections: revisit documents, photos, audio, topics and clues."
+              }
+            },
+            {
+              "id": "family-44-variant-3",
+              "text": {
+                "ru": "Доска связей: Организовывать сущности, версии, временную шкалу и отношения между фактами.",
+                "en": "Connection boards: organize entities, hypotheses, timelines and fact relationships."
+              }
+            },
+            {
+              "id": "family-44-variant-4",
+              "text": {
+                "ru": "Карта и быстрые переходы: Показывать доступные места, заметки и пути возврата.",
+                "en": "Maps and fast travel: show accessible places, notes and return routes."
+              }
+            },
+            {
+              "id": "family-44-variant-5",
+              "text": {
+                "ru": "Подсветка интерактивных областей: Помогать обнаруживать доступные цели и уменьшать поиск малозаметных областей.",
+                "en": "Hotspot highlighting: expose available targets and reduce tiny-area searching."
+              }
+            },
+            {
+              "id": "family-44-variant-6",
+              "text": {
+                "ru": "Ступенчатые подсказки: Выдавать намёк, направление поиска, более точный совет и решение по запросу.",
+                "en": "Graduated hints: provide nudges, directions, specific advice and solutions on request."
+              }
+            },
+            {
+              "id": "family-44-variant-7",
+              "text": {
+                "ru": "Пропуск и автоматизация: Пропускать повторные действия, переходы, диалоги и отдельные испытания.",
+                "en": "Skipping and automation: bypass repeated actions, travel, dialogue or challenges."
+              }
+            },
+            {
+              "id": "family-44-variant-8",
+              "text": {
+                "ru": "Настройки доступности: Настраивать ввод, скорость, размер целей, субтитры и эквивалентное представление визуальных или звуковых подсказок.",
+                "en": "Accessibility: adjust input, speed, target size, subtitles and equivalent visual or audio representations."
+              }
+            }
+          ]
+        }
+      ],
+      "section": "section-7"
+    }
+  ],
+  "notes": [
+    {
+      "id": "reading",
+      "title": {
+        "ru": "Как читать классификацию",
+        "en": "Reading the classification"
+      },
+      "intro": {
+        "ru": "Базовые действия, организация загадок и средства помощи образуют разные слои.",
+        "en": "Core actions, puzzle organization and assistance form distinct layers."
+      },
+      "entries": [
+        {
+          "id": "reading-1",
+          "title": {
+            "ru": "Сочетание действий",
+            "en": "Combining actions"
+          },
+          "text": {
+            "ru": "Найти расписание охранника → собрать звуковую приманку → расположить вне поля зрения → включить вовремя → пройти через освободившийся вход. Здесь соединяются информация, изготовление, положение, поведение NPC, время и доступ.",
+            "en": "Find a guard schedule → craft a sound lure → place it outside sight → activate at the right time → use the cleared entrance. This combines information, crafting, position, NPC behavior, time and access."
+          }
+        },
+        {
+          "id": "reading-2",
+          "title": {
+            "ru": "Способы рассуждения",
+            "en": "Reasoning approaches"
+          },
+          "text": {
+            "ru": "Логический вывод, эксперимент, аналогия, переосмысление предмета, семантическая ассоциация, юмор и правила вымышленного мира пересекают почти все семейства.",
+            "en": "Deduction, experiment, analogy, item reinterpretation, semantic association, humor and fictional-world rules span most families."
+          }
+        }
+      ]
+    },
+    {
+      "id": "axes",
+      "title": {
+        "ru": "Сквозные ответвления",
+        "en": "Cross-cutting variations"
+      },
+      "intro": {
+        "ru": "Сочетания этих параметров создают варианты внутри любого семейства.",
+        "en": "Combining these parameters creates variations within any family."
+      },
+      "entries": [
+        {
+          "id": "axes-1",
+          "title": {
+            "ru": "Доступность информации",
+            "en": "Information availability"
+          },
+          "text": {
+            "ru": "Все условия видны; сведения распределены; часть скрыта; есть противоречивые или ненадёжные данные.",
+            "en": "Fully visible, distributed, hidden, conflicting or unreliable information."
+          }
+        },
+        {
+          "id": "axes-2",
+          "title": {
+            "ru": "Требуемое рассуждение",
+            "en": "Required reasoning"
+          },
+          "text": {
+            "ru": "Распознавание, запоминание, дедукция, эксперимент, аналогия, переосмысление, изучение нового правила.",
+            "en": "Recognition, memory, deduction, experiment, analogy, reinterpretation and learning rules."
+          }
+        },
+        {
+          "id": "axes-3",
+          "title": {
+            "ru": "Масштаб и время",
+            "en": "Scale and time"
+          },
+          "text": {
+            "ru": "Один экран или несколько мест; один герой или группа; статичное состояние, ходы, реальное время, петля.",
+            "en": "One screen or several places; solo or group; static, turn-based, real-time or looped states."
+          }
+        },
+        {
+          "id": "axes-4",
+          "title": {
+            "ru": "Предъявление ответа",
+            "en": "Submitting answers"
+          },
+          "text": {
+            "ru": "Действие, выбор, расстановка, соединение, слово, число, собранное утверждение или свободный ввод.",
+            "en": "World actions, selection, arrangement, connection, words, numbers, assembled statements or free input."
+          }
+        },
+        {
+          "id": "axes-5",
+          "title": {
+            "ru": "Правила решения",
+            "en": "Solution rules"
+          },
+          "text": {
+            "ru": "Один путь, альтернативные способы, системные комбинации, разные затраты и последствия.",
+            "en": "Unique paths, alternatives, systemic combinations, costs and consequences."
+          }
+        },
+        {
+          "id": "axes-6",
+          "title": {
+            "ru": "Цена ошибки",
+            "en": "Error cost"
+          },
+          "text": {
+            "ru": "Комментарий, сброс, потеря ресурса, изменение истории, утрата возможности, полный перезапуск.",
+            "en": "Feedback, resets, resource loss, story changes, lost opportunities or full restarts."
+          }
+        },
+        {
+          "id": "axes-7",
+          "title": {
+            "ru": "Вариативность",
+            "en": "Variation"
+          },
+          "text": {
+            "ru": "Фиксированная задача, случайные параметры, процедурная конфигурация, условия по действиям игрока.",
+            "en": "Fixed tasks, random parameters, procedural layouts or player-dependent conditions."
+          }
+        },
+        {
+          "id": "axes-8",
+          "title": {
+            "ru": "Ввод и помощь",
+            "en": "Input and assistance"
+          },
+          "text": {
+            "ru": "Мышь, клавиатура, касания, голос, датчики; без помощи, подсказки, демонстрация, пропуск.",
+            "en": "Mouse, keyboard, touch, voice or sensors; unaided play, hints, demonstration or skipping."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "The Case of the Golden Idol: интервью с дизайнером",
+        "en": "The Case of the Golden Idol: designer interview"
+      },
+      "url": "https://www.gamedeveloper.com/design/case-of-the-golden-idol",
+      "description": {
+        "ru": "Формулировка выводов о личности участников, способе и причине событий.",
+        "en": "Form conclusions about identities, methods and causes of events."
+      }
+    },
+    {
+      "title": {
+        "ru": "Heaven’s Vault: описание inkle",
+        "en": "Heaven’s Vault: inkle overview"
+      },
+      "url": "https://www.inklestudios.com/heavensvault/",
+      "description": {
+        "ru": "Пример соседнего приключенческого жанра: расшифровка языка влияет на понимание истории; ошибочный перевод может вести по ложному пути.",
+        "en": "Neighboring adventure example: deciphering language affects story understanding; mistranslation can mislead."
+      }
+    },
+    {
+      "title": {
+        "ru": "Overboard!: описание inkle",
+        "en": "Overboard!: inkle overview"
+      },
+      "url": "https://www.inklestudios.com/overboard/",
+      "description": {
+        "ru": "Пример соседнего жанра: NPC действуют самостоятельно и помнят увиденное и услышанное; время ограничено.",
+        "en": "Neighboring genre example: autonomous NPCs remember what they see and hear, with limited time."
+      }
+    },
+    {
+      "title": {
+        "ru": "Unavowed: описание Wadjet Eye Games",
+        "en": "Unavowed: Wadjet Eye Games overview"
+      },
+      "url": "https://wadjeteyegames.com/games/unavowed/",
+      "description": {
+        "ru": "Выбор спутников с разными талантами и способностями.",
+        "en": "Choose companions with different talents and abilities."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ron Gilbert: Puzzle Dependency Charts",
+        "en": "Ron Gilbert: Puzzle Dependency Charts"
+      },
+      "url": "https://grumpygamer.com/puzzle_dependency_charts/",
+      "description": {
+        "ru": "Графы зависимостей загадок и параллельные цепочки.",
+        "en": "Puzzle dependency graphs and parallel chains."
+      }
+    }
+  ]
+}

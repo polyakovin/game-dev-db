@@ -2,6 +2,7 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { load } from 'cheerio';
 import matter from 'gray-matter';
+import { mechanicRecords } from '../src/lib/mechanics.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -144,6 +145,7 @@ for (const required of [
   'api/v1/manifest.json',
   'api/v1/lessons.json',
   'api/v1/resources.json',
+  'api/v1/mechanics.json',
 ]) {
   const file = await resolveFile(`${base}${required}`);
   if (!file) {
@@ -224,10 +226,12 @@ for (const lang of ['ru', 'en']) {
 const manifest = exports.get('api/v1/manifest.json');
 const lessonExport = exports.get('api/v1/lessons.json');
 const resourceExport = exports.get('api/v1/resources.json');
+const mechanicExport = exports.get('api/v1/mechanics.json');
 for (const [name, payload] of [
   ['manifest', manifest],
   ['lessons', lessonExport],
   ['resources', resourceExport],
+  ['mechanics', mechanicExport],
 ]) {
   if (!payload || payload.schemaVersion !== 1)
     errors.push(`${name} JSON: schemaVersion must be 1`);
@@ -309,7 +313,13 @@ if (
     JSON.stringify(['en', 'ru'])
 )
   errors.push('Manifest languages must be en and ru');
-for (const key of ['lessons', 'resources', 'discovery', 'fullText']) {
+for (const key of [
+  'lessons',
+  'resources',
+  'mechanics',
+  'discovery',
+  'fullText',
+]) {
   const endpoint = manifest?.endpoints?.[key];
   if (typeof endpoint !== 'string' || !endpoint.startsWith(`${site}${base}`))
     errors.push(`Manifest endpoint ${key} must be an absolute site URL`);
@@ -320,6 +330,63 @@ for (const key of ['lessons', 'resources', 'discovery', 'fullText']) {
       `Manifest endpoint ${key}`,
       false,
     );
+}
+
+const catalogRecords = mechanicRecords();
+if (JSON.stringify(mechanicExport?.catalogs) !== JSON.stringify(catalogRecords))
+  errors.push('Mechanics JSON differs from complete localized source records');
+if (
+  manifest?.counts?.mechanics !== catalogRecords.length ||
+  manifest?.counts?.mechanicsTranslationPairs !== catalogRecords.length / 2
+)
+  errors.push('Manifest mechanic counts differ from source content');
+for (const catalog of catalogRecords) {
+  const key = `${catalog.lang}/${catalog.id}`;
+  const htmlFile = await resolveFile(new URL(catalog.url).pathname);
+  const mdFile = await resolveFile(new URL(catalog.markdownUrl).pathname);
+  if (!htmlFile || !mdFile) {
+    errors.push(`Missing mechanic page or Markdown: ${key}`);
+    continue;
+  }
+  const raw = matter(await readFile(mdFile, 'utf8'));
+  const { families, sections, notes, body, ...metadata } = catalog;
+  if (
+    raw.content.trim() !== body.trim() ||
+    JSON.stringify(raw.data) !== JSON.stringify(metadata)
+  )
+    errors.push(`Mechanics Markdown differs from source: ${key}`);
+  const $ = await document(htmlFile);
+  if (
+    $('[data-family]').length !== catalog.counts.families ||
+    $('[data-variant]').length !== catalog.counts.variants
+  )
+    errors.push(`Mechanics HTML count differs from source: ${key}`);
+  for (const family of families) {
+    if ($(`#${family.id} [data-family-title]`).text() !== family.title)
+      errors.push(`Mechanics HTML family differs: ${key}/${family.id}`);
+    for (const branch of family.branches)
+      for (const variant of branch.variants) {
+        if ($(`#${variant.id}`).text() !== variant.text)
+          errors.push(`Mechanics HTML variant differs: ${key}/${variant.id}`);
+      }
+  }
+  for (const note of notes)
+    for (const entry of note.entries) {
+      if ($(`#${entry.id} p`).text() !== entry.text)
+        errors.push(`Mechanics HTML design note differs: ${key}/${entry.id}`);
+    }
+  for (const source of catalog.sources) {
+    if (
+      !$('main a[href]')
+        .toArray()
+        .some((a) => $(a).attr('href') === source.url)
+    )
+      errors.push(`Mechanics HTML source missing: ${key}/${source.url}`);
+  }
+  if (!exports.get('llms-full.txt')?.includes(body.trim()))
+    errors.push(`Full corpus missing mechanic catalog: ${key}`);
+  if (!exports.get('llms.txt')?.includes(catalog.markdownUrl))
+    errors.push(`Discovery missing mechanic catalog: ${key}`);
 }
 
 if (errors.length) {

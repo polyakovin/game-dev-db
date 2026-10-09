@@ -1,0 +1,231 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getMechanics } from '../../../lib/mechanics.mjs';
+import { locales, path, ui, REPO } from '../../../lib/site';
+export function getStaticPaths() {
+  return locales.flatMap((lang) =>
+    getMechanics(lang).map((catalog) => ({
+      params: { lang, id: catalog.id },
+      props: { catalog },
+    })),
+  );
+}
+const { catalog } = Astro.props;
+const lang = catalog.lang;
+const ru = lang === 'ru';
+const t = ui[lang];
+---
+
+<Layout
+  lang={lang}
+  title={catalog.title}
+  description={catalog.description}
+  section="mechanics"
+  alternate={`mechanics/${catalog.id}/`}
+>
+  <a class="back-link" href={path(`${lang}/mechanics/`)}>
+    ← {ru ? 'Все справочники механик' : 'All mechanic references'}
+  </a>
+  <header class="page-header">
+    <div class="eyebrow">{ru ? 'Карта механик' : 'Mechanic map'}</div>
+    <h1>{catalog.title}</h1>
+    <p>{catalog.intro}</p>
+    <div class="article-meta">
+      <span>
+        {catalog.counts.families} {ru ? 'семейств' : 'families'}
+      </span>
+      <span>
+        {catalog.counts.variants} {ru ? 'вариантов' : 'variants'}
+      </span>
+      <span>
+        {t.updated}: {catalog.updatedAt}
+      </span>
+    </div>
+    <div class="mechanics-links">
+      <a href={path(`content/mechanics/${lang}/${catalog.id}.md`)}>
+        {t.markdown}
+      </a>
+      <a href={path('api/v1/mechanics.json')}>JSON</a>
+      <a href={`${REPO}/edit/main/src/data/mechanics/${catalog.id}.json`}>
+        {t.edit}
+      </a>
+    </div>
+  </header>
+  <div class="mechanics-layout">
+    <div class="mechanics-content">
+      <div class="mechanics-controls" hidden>
+        <label for="mechanic-search">
+          {ru
+            ? 'Поиск по механикам и вариантам'
+            : 'Search mechanics and variants'}
+        </label>
+        <div class="search-box">
+          <input
+            id="mechanic-search"
+            type="search"
+            autocomplete="off"
+            placeholder={
+              ru
+                ? 'Например, ритм, маршрут или диалог'
+                : 'For example, rhythm, route or dialogue'
+            }
+          />
+        </div>
+        <label for="mechanic-section">{ru ? 'Раздел' : 'Section'}</label>
+        <select id="mechanic-section">
+          <option value="all">{ru ? 'Все разделы' : 'All sections'}</option>
+          {catalog.sections.map((s) => (
+            <option value={s.id}>{s.title}</option>
+          ))}
+        </select>
+        <div class="mechanics-actions">
+          <button type="button" data-expand>
+            {ru ? 'Раскрыть все' : 'Expand all'}
+          </button>
+          <button type="button" data-collapse>
+            {ru ? 'Свернуть все' : 'Collapse all'}
+          </button>
+          <button type="button" data-reset>
+            {ru ? 'Сбросить' : 'Reset'}
+          </button>
+        </div>
+        <p
+          data-mechanic-status
+          aria-live="polite"
+          data-families-label={ru ? 'Семейств' : 'Families'}
+          data-variants-label={ru ? 'Вариантов' : 'Variants'}
+        ></p>
+      </div>
+      <div class="empty-state" data-mechanic-empty hidden>
+        <h2>{ru ? 'Совпадений нет' : 'No matches'}</h2>
+        <p>
+          {ru
+            ? 'Измените запрос или сбросьте фильтры.'
+            : 'Change your query or reset the filters.'}
+        </p>
+        <button type="button" class="button-primary" data-reset>
+          {t.reset}
+        </button>
+      </div>
+      {catalog.sections.map((section) => (
+        <section
+          id={section.id}
+          class="mechanics-section"
+          data-mechanic-section
+        >
+          <h2>{section.title}</h2>
+          {catalog.families
+            .filter((f) => f.section === section.id)
+            .map((family) => (
+              <details
+                id={family.id}
+                class="mechanic-family"
+                data-family
+                data-section={section.id}
+              >
+                <summary>
+                  <span class="family-number">{family.id.slice(-2)}</span>
+                  <span class="family-heading">
+                    <strong data-family-title>{family.title}</strong>
+                    {family.description && (
+                      <span data-family-description>{family.description}</span>
+                    )}
+                  </span>
+                  <span class="family-count">
+                    {family.branches.reduce((n, b) => n + b.variants.length, 0)}
+                  </span>
+                </summary>
+                <div class="mechanic-family-body">
+                  {family.branches.map((branch) => (
+                    <section data-branch>
+                      <h3 id={branch.id} data-branch-title>
+                        {branch.title}
+                      </h3>
+                      <ul>
+                        {branch.variants.map((variant) => (
+                          <li id={variant.id} data-variant>
+                            {variant.text}
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  ))}
+                  {family.example && (
+                    <p class="mechanic-example">
+                      <strong>
+                        {ru ? 'Пример проектирования.' : 'Design example.'}
+                      </strong>{' '}
+                      {family.example}
+                    </p>
+                  )}
+                  {family.sourceUrls.length > 0 && (
+                    <div class="mechanic-example">
+                      <span>
+                        {ru
+                          ? 'Примеры отдельных приёмов: '
+                          : 'Examples of particular techniques: '}
+                      </span>
+                      {family.sourceUrls.map((url, i) => (
+                        <>
+                          <a href={url}>
+                            {catalog.sources.find((s) => s.url === url)?.title}
+                          </a>
+                          {i < family.sourceUrls.length - 1 && ', '}
+                        </>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </details>
+            ))}
+        </section>
+      ))}
+      {catalog.notes.map((note) => (
+        <section id={note.id} class="mechanics-note">
+          <h2>{note.title}</h2>
+          {note.intro && <p>{note.intro}</p>}
+          <div class="mechanics-note-grid">
+            {note.entries.map((entry) => (
+              <div id={entry.id}>
+                {entry.title && <h3>{entry.title}</h3>}
+                <p>{entry.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+      <section id="sources" class="mechanics-note">
+        <h2>{ru ? 'Источники и примеры' : 'Sources and examples'}</h2>
+        <p>
+          {ru
+            ? 'Источники подтверждают отдельные приёмы или методологию, а не все варианты семейства. Примеры проектирования и сочетания механик являются иллюстрациями.'
+            : 'Sources support particular techniques or methodology, not every family variant. Design examples and mechanic combinations are illustrative.'}
+        </p>
+        <ul class="mechanics-sources">
+          {catalog.sources.map((s) => (
+            <li>
+              <a href={s.url}>{s.title}</a>
+              <p>{s.description}</p>
+            </li>
+          ))}
+        </ul>
+        <p class="article-license">CC BY 4.0 · Game Dev DB contributors</p>
+      </section>
+    </div>
+    <aside class="mechanics-toc">
+      <nav aria-label={t.toc}>
+        <p class="nav-label">{t.toc}</p>
+        {[
+          ...catalog.sections,
+          ...catalog.notes,
+          { id: 'sources', title: ru ? 'Источники' : 'Sources' },
+        ].map((s) => (
+          <a href={`#${s.id}`}>{s.title}</a>
+        ))}
+      </nav>
+    </aside>
+  </div>
+</Layout>
+<script>
+  import '../../../scripts/mechanics-search';
+</script>

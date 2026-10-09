@@ -1,6 +1,6 @@
 # Content license
 
-Original educational lessons and their translations in `src/content/lessons/`, and original resource descriptions in `src/data/resources.json`, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file explicitly states otherwise. This license also applies to that content when rendered as HTML or distributed through generated Markdown and JSON exports.
+Original educational lessons and their translations in `src/content/lessons/`, mechanic catalogs and their translations in `src/data/mechanics/`, and original resource descriptions in `src/data/resources.json`, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file explicitly states otherwise. This license also applies to that content when rendered as HTML or distributed through generated Markdown and JSON exports.
 
 Copyright © 2026 Game Dev DB contributors. Individual contributions are recorded in the repository history.
 

@@ -19,19 +19,25 @@ All paths below are relative to the configured site root. In production that roo
 | `ru/`, `en/` | Language-specific lesson catalogs and search |
 | `{lang}/lessons/{id}/` | A rendered lesson |
 | `{lang}/resources/` | Referenced external resources |
+| `{lang}/mechanics/` | Mechanic reference index |
+| `{lang}/mechanics/{id}/` | A complete mechanic taxonomy |
 | `{lang}/for-agents/` | Guidance for machine consumers |
 | `llms.txt` | Compact entry point for agents |
 | `llms-full.txt` | Combined lesson text |
 | `api/v1/manifest.json` | Export entry point and dataset metadata |
 | `api/v1/lessons.json` | Structured lesson collection |
 | `api/v1/resources.json` | Resource collection |
+| `api/v1/mechanics.json` | Complete localized mechanic taxonomies |
 | `content/{lang}/{id}.md` | One lesson as Markdown |
+| `content/mechanics/{lang}/{id}.md` | One mechanic taxonomy as Markdown |
 
 The `api` paths are static files, not a live server API. Clients should fetch a snapshot and process it locally. There is no authentication, mutation endpoint, or guaranteed refresh interval.
 
 Individual Markdown exports retain the original lesson body and frontmatter data, then add `url` (the canonical HTML lesson URL), `markdownUrl`, `attribution` (`Game Dev DB contributors`), `license` (`CC-BY-4.0`), and `codeLicense` (`MIT`). The export serializer may change YAML formatting, so it is not a byte-for-byte copy of the source file. The authored source schema remains unchanged; these fields belong to the export layer.
 
 ## Boundaries
+
+Mechanic taxonomies use bilingual JSON under `src/data/mechanics/` as their single source, following the resource catalog's localized-data model. `src/lib/mechanics.mjs` derives the language-specific tree, counts and complete Markdown for HTML and exports. Its validator is also used by the canonical content check. See [mechanic content](mechanics-content.md). Catalog exports extend `/api/v1/` additively; the lesson collection and its identifiers are unchanged.
 
 - **Content:** lesson Markdown and validated frontmatter, plus the bilingual resource catalog in `src/data/resources.json`. Keep editorial content out of page components where it can be shared through the collection.
 - **Presentation:** Astro layouts, components, styles, and language-specific interface labels. Use semantic HTML and preserve keyboard access.

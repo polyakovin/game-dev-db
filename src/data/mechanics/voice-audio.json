@@ -1,0 +1,4413 @@
+{
+  "id": "voice-audio",
+  "updatedAt": "2026-10-09",
+  "title": {
+    "ru": "Голосовые и аудиомеханики",
+    "en": "Voice and audio mechanics"
+  },
+  "description": {
+    "ru": "Голос как ввод, слух как восприятие, звук как материал и общение между игроками.",
+    "en": "Voice input, auditory perception, sound as material and communication between players."
+  },
+  "intro": {
+    "ru": "Рабочая карта пространства дизайна: 27 семейств, 81 ветвь и 324 варианта. Голосовое управление, игра по звуку и общение могут сочетаться или существовать отдельно. Примеры из выпущенных игр подтверждают конкретные приёмы; сочетания в дополнительных разделах являются идеями для проектирования.",
+    "en": "A working design-space map: 27 families, 81 branches and 324 variants. Voice control, audio-based play and communication can combine or exist separately. Released-game examples support particular techniques; supplementary combinations are design proposals."
+  },
+  "sections": [
+    {
+      "id": "speech",
+      "title": {
+        "ru": "Речь как смысл",
+        "en": "Speech as meaning"
+      }
+    },
+    {
+      "id": "voice",
+      "title": {
+        "ru": "Голос как физическое действие",
+        "en": "Voice as physical action"
+      }
+    },
+    {
+      "id": "hearing",
+      "title": {
+        "ru": "Слух как восприятие",
+        "en": "Hearing as perception"
+      }
+    },
+    {
+      "id": "material",
+      "title": {
+        "ru": "Звук как информация и материал",
+        "en": "Sound as information and material"
+      }
+    },
+    {
+      "id": "social",
+      "title": {
+        "ru": "Общение между игроками",
+        "en": "Communication between players"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "speech",
+      "title": {
+        "ru": "Прямые голосовые команды",
+        "en": "Direct voice commands"
+      },
+      "description": {
+        "ru": "Сформулировать действие, выбрать объект и проверить результат.",
+        "en": "Specify an action, select a target and check the result."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/2016/05/23/there-came-an-echo-hits-ps4-on-may-31/"
+      ],
+      "branches": [
+        {
+          "id": "family-01-branch-1",
+          "title": {
+            "ru": "Действия персонажа",
+            "en": "Character actions"
+          },
+          "variants": [
+            {
+              "id": "family-01-branch-1-variant-1",
+              "text": {
+                "ru": "Перемещение: идти, бежать, повернуть, остановиться.",
+                "en": "Movement: walk, run, turn, stop."
+              }
+            },
+            {
+              "id": "family-01-branch-1-variant-2",
+              "text": {
+                "ru": "Взаимодействие: открыть, взять, осмотреть, активировать.",
+                "en": "Interaction: open, take, inspect, activate."
+              }
+            },
+            {
+              "id": "family-01-branch-1-variant-3",
+              "text": {
+                "ru": "Предметы: выбрать, применить, передать, совместить.",
+                "en": "Items: select, use, transfer, combine."
+              }
+            },
+            {
+              "id": "family-01-branch-1-variant-4",
+              "text": {
+                "ru": "Способности: атаковать, защищаться, лечить, переключить режим.",
+                "en": "Abilities: attack, defend, heal, switch modes."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-01-branch-2",
+          "title": {
+            "ru": "Выбор и адресация",
+            "en": "Selection and addressing"
+          },
+          "variants": [
+            {
+              "id": "family-01-branch-2-variant-1",
+              "text": {
+                "ru": "Назвать конкретного персонажа или объект.",
+                "en": "Name a particular character or object."
+              }
+            },
+            {
+              "id": "family-01-branch-2-variant-2",
+              "text": {
+                "ru": "Выбрать цель по признаку: ближайший, красный, повреждённый.",
+                "en": "Select a target by a property: nearest, red, damaged."
+              }
+            },
+            {
+              "id": "family-01-branch-2-variant-3",
+              "text": {
+                "ru": "Назначить собственные имена и словесные псевдонимы.",
+                "en": "Assign custom names and spoken aliases."
+              }
+            },
+            {
+              "id": "family-01-branch-2-variant-4",
+              "text": {
+                "ru": "Указать отношения: за дверью, слева от башни, рядом с союзником.",
+                "en": "Specify relationships: behind the door, left of the tower, near an ally."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-01-branch-3",
+          "title": {
+            "ru": "Составные команды",
+            "en": "Compound commands"
+          },
+          "variants": [
+            {
+              "id": "family-01-branch-3-variant-1",
+              "text": {
+                "ru": "Соединить несколько действий в последовательность.",
+                "en": "Combine actions into a sequence."
+              }
+            },
+            {
+              "id": "family-01-branch-3-variant-2",
+              "text": {
+                "ru": "Сформулировать действие с условием: если появится враг, спрячься.",
+                "en": "Specify a conditional action: hide if an enemy appears."
+              }
+            },
+            {
+              "id": "family-01-branch-3-variant-3",
+              "text": {
+                "ru": "Уточнить, исправить или отменить уже отданный приказ.",
+                "en": "Clarify, correct or cancel an existing order."
+              }
+            },
+            {
+              "id": "family-01-branch-3-variant-4",
+              "text": {
+                "ru": "Задать исключение: всем, кроме разведчика.",
+                "en": "Specify an exception: everyone except the scout."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "speech",
+      "title": {
+        "ru": "Командование и делегирование",
+        "en": "Command and delegation"
+      },
+      "description": {
+        "ru": "Дать другим агентам цель и согласовать их действия.",
+        "en": "Give other agents goals and coordinate their actions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/2016/05/23/there-came-an-echo-hits-ps4-on-may-31/"
+      ],
+      "branches": [
+        {
+          "id": "family-02-branch-1",
+          "title": {
+            "ru": "Управление исполнителями",
+            "en": "Managing actors"
+          },
+          "variants": [
+            {
+              "id": "family-02-branch-1-variant-1",
+              "text": {
+                "ru": "Распределить роли и задачи между членами отряда.",
+                "en": "Assign roles and tasks to squad members."
+              }
+            },
+            {
+              "id": "family-02-branch-1-variant-2",
+              "text": {
+                "ru": "Управлять группами и несколькими группами одновременно.",
+                "en": "Control groups or several groups simultaneously."
+              }
+            },
+            {
+              "id": "family-02-branch-1-variant-3",
+              "text": {
+                "ru": "Поручить результат, оставив способ выполнения персонажу.",
+                "en": "Delegate an outcome while leaving execution to a character."
+              }
+            },
+            {
+              "id": "family-02-branch-1-variant-4",
+              "text": {
+                "ru": "Выбрать приоритет: выжить, удержать точку, спасти союзника.",
+                "en": "Choose a priority: survive, hold a point, rescue an ally."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-02-branch-2",
+          "title": {
+            "ru": "Координация",
+            "en": "Coordination"
+          },
+          "variants": [
+            {
+              "id": "family-02-branch-2-variant-1",
+              "text": {
+                "ru": "Подготовить действия и запустить их общей командой.",
+                "en": "Prepare actions and trigger them with a shared command."
+              }
+            },
+            {
+              "id": "family-02-branch-2-variant-2",
+              "text": {
+                "ru": "Согласовать атаки, отвлечения, отход и подкрепления.",
+                "en": "Coordinate attacks, distractions, retreats and reinforcements."
+              }
+            },
+            {
+              "id": "family-02-branch-2-variant-3",
+              "text": {
+                "ru": "Задать строй, маршрут, зону патруля или сектор наблюдения.",
+                "en": "Specify formation, route, patrol area or observation sector."
+              }
+            },
+            {
+              "id": "family-02-branch-2-variant-4",
+              "text": {
+                "ru": "Передать управление другому исполнителю или командиру.",
+                "en": "Transfer control to another actor or commander."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-02-branch-3",
+          "title": {
+            "ru": "Опосредованное управление",
+            "en": "Indirect control"
+          },
+          "variants": [
+            {
+              "id": "family-02-branch-3-variant-1",
+              "text": {
+                "ru": "Вести персонажа по радио, имея другую часть информации.",
+                "en": "Guide a character by radio using complementary information."
+              }
+            },
+            {
+              "id": "family-02-branch-3-variant-2",
+              "text": {
+                "ru": "Получать доклады и менять план по ним.",
+                "en": "Receive reports and revise the plan."
+              }
+            },
+            {
+              "id": "family-02-branch-3-variant-3",
+              "text": {
+                "ru": "Разбираться с неверно понятым или неполным приказом.",
+                "en": "Resolve misunderstood or incomplete orders."
+              }
+            },
+            {
+              "id": "family-02-branch-3-variant-4",
+              "text": {
+                "ru": "Управлять автономными исполнителями с разными знаниями и навыками.",
+                "en": "Manage autonomous actors with different knowledge and skills."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "speech",
+      "title": {
+        "ru": "Диалог с игровыми персонажами",
+        "en": "Dialogue with game characters"
+      },
+      "description": {
+        "ru": "Выбрать реплику или вопрос и получить новые сведения либо последствия.",
+        "en": "Choose a line or question to obtain information or consequences."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://earplay.com/press/",
+        "https://store.steampowered.com/app/739630/Phasmophobia/?l=english"
+      ],
+      "branches": [
+        {
+          "id": "family-03-branch-1",
+          "title": {
+            "ru": "Формат ответа",
+            "en": "Response format"
+          },
+          "variants": [
+            {
+              "id": "family-03-branch-1-variant-1",
+              "text": {
+                "ru": "Произнести один из предложенных вариантов.",
+                "en": "Speak one of the offered responses."
+              }
+            },
+            {
+              "id": "family-03-branch-1-variant-2",
+              "text": {
+                "ru": "Выбрать тему или ключевое слово.",
+                "en": "Select a topic or keyword."
+              }
+            },
+            {
+              "id": "family-03-branch-1-variant-3",
+              "text": {
+                "ru": "Задать вопрос в пределах известного набора намерений.",
+                "en": "Ask within a known set of intentions."
+              }
+            },
+            {
+              "id": "family-03-branch-1-variant-4",
+              "text": {
+                "ru": "Сформулировать свободную реплику, которую система соотнесёт с игровым состоянием.",
+                "en": "Formulate a free response interpreted against the game state."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-03-branch-2",
+          "title": {
+            "ru": "Получение информации",
+            "en": "Obtaining information"
+          },
+          "variants": [
+            {
+              "id": "family-03-branch-2-variant-1",
+              "text": {
+                "ru": "Расспросить об объектах, событиях и персонажах.",
+                "en": "Ask about objects, events and characters."
+              }
+            },
+            {
+              "id": "family-03-branch-2-variant-2",
+              "text": {
+                "ru": "Запросить уточнение, пример или объяснение.",
+                "en": "Request clarification, an example or an explanation."
+              }
+            },
+            {
+              "id": "family-03-branch-2-variant-3",
+              "text": {
+                "ru": "Предъявить улику и спросить о противоречии.",
+                "en": "Present evidence and ask about a contradiction."
+              }
+            },
+            {
+              "id": "family-03-branch-2-variant-4",
+              "text": {
+                "ru": "Проверить, что собеседник знает, помнит или скрывает.",
+                "en": "Check what someone knows, remembers or conceals."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-03-branch-3",
+          "title": {
+            "ru": "Управление разговором",
+            "en": "Conversation control"
+          },
+          "variants": [
+            {
+              "id": "family-03-branch-3-variant-1",
+              "text": {
+                "ru": "Выбрать момент вступления в разговор.",
+                "en": "Choose when to enter a conversation."
+              }
+            },
+            {
+              "id": "family-03-branch-3-variant-2",
+              "text": {
+                "ru": "Прервать, продолжить, сменить тему или завершить беседу.",
+                "en": "Interrupt, continue, change topic or end a conversation."
+              }
+            },
+            {
+              "id": "family-03-branch-3-variant-3",
+              "text": {
+                "ru": "Добиться ответа, выстроив цепочку вопросов.",
+                "en": "Obtain an answer through a chain of questions."
+              }
+            },
+            {
+              "id": "family-03-branch-3-variant-4",
+              "text": {
+                "ru": "Вернуться к прошлой реплике и использовать обещание или полученное признание.",
+                "en": "Revisit a previous line and use a promise or admission."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "speech",
+      "title": {
+        "ru": "Переговоры, убеждение и обман",
+        "en": "Negotiation, persuasion and deception"
+      },
+      "description": {
+        "ru": "Изменить решение собеседника с учётом его целей и доступных доказательств.",
+        "en": "Influence a decision using the other person's goals and available evidence."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-branch-1",
+          "title": {
+            "ru": "Влияние",
+            "en": "Influence"
+          },
+          "variants": [
+            {
+              "id": "family-04-branch-1-variant-1",
+              "text": {
+                "ru": "Подобрать аргумент под интересы персонажа.",
+                "en": "Match an argument to a character's interests."
+              }
+            },
+            {
+              "id": "family-04-branch-1-variant-2",
+              "text": {
+                "ru": "Сделать предложение, обмен или уступку.",
+                "en": "Offer a deal, exchange or concession."
+              }
+            },
+            {
+              "id": "family-04-branch-1-variant-3",
+              "text": {
+                "ru": "Поставить условие, пригрозить или установить границу.",
+                "en": "Set a condition, threaten or establish a boundary."
+              }
+            },
+            {
+              "id": "family-04-branch-1-variant-4",
+              "text": {
+                "ru": "Успокоить, поддержать или заручиться доверием.",
+                "en": "Reassure, support or gain trust."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-04-branch-2",
+          "title": {
+            "ru": "Скрытые сведения",
+            "en": "Hidden information"
+          },
+          "variants": [
+            {
+              "id": "family-04-branch-2-variant-1",
+              "text": {
+                "ru": "Блефовать, имея неполную или вымышленную информацию.",
+                "en": "Bluff with incomplete or invented information."
+              }
+            },
+            {
+              "id": "family-04-branch-2-variant-2",
+              "text": {
+                "ru": "Выбрать, что раскрыть и что оставить при себе.",
+                "en": "Choose what to reveal and withhold."
+              }
+            },
+            {
+              "id": "family-04-branch-2-variant-3",
+              "text": {
+                "ru": "Поддерживать легенду, согласуя новые ответы со старыми.",
+                "en": "Maintain a cover story consistent with previous responses."
+              }
+            },
+            {
+              "id": "family-04-branch-2-variant-4",
+              "text": {
+                "ru": "Поймать собеседника на противоречиях в содержании речи.",
+                "en": "Detect contradictions in what someone says."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-04-branch-3",
+          "title": {
+            "ru": "Динамика отношений",
+            "en": "Relationship dynamics"
+          },
+          "variants": [
+            {
+              "id": "family-04-branch-3-variant-1",
+              "text": {
+                "ru": "Накопить доверие или испортить репутацию последовательностью решений.",
+                "en": "Build trust or damage reputation through decisions."
+              }
+            },
+            {
+              "id": "family-04-branch-3-variant-2",
+              "text": {
+                "ru": "Дать обещание с отложенными последствиями.",
+                "en": "Make a promise with delayed consequences."
+              }
+            },
+            {
+              "id": "family-04-branch-3-variant-3",
+              "text": {
+                "ru": "Провести торг в несколько раундов.",
+                "en": "Bargain over several rounds."
+              }
+            },
+            {
+              "id": "family-04-branch-3-variant-4",
+              "text": {
+                "ru": "Выступить посредником между персонажами с несовместимыми целями.",
+                "en": "Mediate between characters with incompatible goals."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "speech",
+      "title": {
+        "ru": "Словесные и языковые головоломки",
+        "en": "Verbal and language puzzles"
+      },
+      "description": {
+        "ru": "Найти высказывание, удовлетворяющее языковому или логическому правилу.",
+        "en": "Find an utterance satisfying a linguistic or logical rule."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/242840/In_Verbis_Virtus/",
+        "https://www.weekend.com/volleygames"
+      ],
+      "branches": [
+        {
+          "id": "family-05-branch-1",
+          "title": {
+            "ru": "Поиск слова или ответа",
+            "en": "Finding a word or answer"
+          },
+          "variants": [
+            {
+              "id": "family-05-branch-1-variant-1",
+              "text": {
+                "ru": "Ответить на загадку или вопрос викторины.",
+                "en": "Answer a riddle or quiz question."
+              }
+            },
+            {
+              "id": "family-05-branch-1-variant-2",
+              "text": {
+                "ru": "Назвать слово по определению, описанию или ассоциации.",
+                "en": "Name a word from a definition, description or association."
+              }
+            },
+            {
+              "id": "family-05-branch-1-variant-3",
+              "text": {
+                "ru": "Продолжить словесную цепочку, категорию или ряд.",
+                "en": "Continue a word chain, category or sequence."
+              }
+            },
+            {
+              "id": "family-05-branch-1-variant-4",
+              "text": {
+                "ru": "Угадать слово через вопросы и ограничения на ответы.",
+                "en": "Guess a word through questions and answer constraints."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-05-branch-2",
+          "title": {
+            "ru": "Ограничения на речь",
+            "en": "Speech constraints"
+          },
+          "variants": [
+            {
+              "id": "family-05-branch-2-variant-1",
+              "text": {
+                "ru": "Объяснить понятие без запрещённых слов.",
+                "en": "Explain a concept without forbidden words."
+              }
+            },
+            {
+              "id": "family-05-branch-2-variant-2",
+              "text": {
+                "ru": "Составить фразу с заданными словами, рифмой или длиной.",
+                "en": "Form a phrase with required words, rhyme or length."
+              }
+            },
+            {
+              "id": "family-05-branch-2-variant-3",
+              "text": {
+                "ru": "Говорить с правилом на буквы, слоги или порядок слов.",
+                "en": "Follow rules about letters, syllables or word order."
+              }
+            },
+            {
+              "id": "family-05-branch-2-variant-4",
+              "text": {
+                "ru": "Произнести скороговорку или различить близкие по звучанию слова.",
+                "en": "Say a tongue twister or distinguish similar-sounding words."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-05-branch-3",
+          "title": {
+            "ru": "Открытие языка",
+            "en": "Discovering a language"
+          },
+          "variants": [
+            {
+              "id": "family-05-branch-3-variant-1",
+              "text": {
+                "ru": "Найти пароль, заклинание или последовательность кодовых фраз.",
+                "en": "Find a password, spell or sequence of code phrases."
+              }
+            },
+            {
+              "id": "family-05-branch-3-variant-2",
+              "text": {
+                "ru": "Восстановить значение слов вымышленного языка по контексту.",
+                "en": "Infer fictional words' meanings from context."
+              }
+            },
+            {
+              "id": "family-05-branch-3-variant-3",
+              "text": {
+                "ru": "Соединить части формулы в работающую конструкцию.",
+                "en": "Assemble formula fragments into a working expression."
+              }
+            },
+            {
+              "id": "family-05-branch-3-variant-4",
+              "text": {
+                "ru": "Выбрать правильный смысл неоднозначной реплики или словесного каламбура.",
+                "en": "Interpret an ambiguous line or wordplay correctly."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "voice",
+      "title": {
+        "ru": "Громкость и сила звука",
+        "en": "Loudness and sound intensity"
+      },
+      "description": {
+        "ru": "Дозировать звук, чтобы вызвать нужное действие.",
+        "en": "Control sound level to produce the intended action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://apps.apple.com/us/app/scream-go-hero/id1212039074"
+      ],
+      "branches": [
+        {
+          "id": "family-06-branch-1",
+          "title": {
+            "ru": "Непрерывное управление",
+            "en": "Continuous control"
+          },
+          "variants": [
+            {
+              "id": "family-06-branch-1-variant-1",
+              "text": {
+                "ru": "Менять скорость или силу действия громкостью.",
+                "en": "Change action speed or strength through loudness."
+              }
+            },
+            {
+              "id": "family-06-branch-1-variant-2",
+              "text": {
+                "ru": "Удерживать громкость внутри заданного диапазона.",
+                "en": "Keep loudness within a target range."
+              }
+            },
+            {
+              "id": "family-06-branch-1-variant-3",
+              "text": {
+                "ru": "Плавно наращивать или уменьшать силу звука.",
+                "en": "Gradually increase or decrease sound intensity."
+              }
+            },
+            {
+              "id": "family-06-branch-1-variant-4",
+              "text": {
+                "ru": "Балансировать объект, удерживая звук около целевого значения.",
+                "en": "Balance an object by maintaining a target sound level."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-06-branch-2",
+          "title": {
+            "ru": "Пороги и переключения",
+            "en": "Thresholds and switching"
+          },
+          "variants": [
+            {
+              "id": "family-06-branch-2-variant-1",
+              "text": {
+                "ru": "Активировать действие коротким громким импульсом.",
+                "en": "Trigger an action with a brief loud impulse."
+              }
+            },
+            {
+              "id": "family-06-branch-2-variant-2",
+              "text": {
+                "ru": "Переключаться между шёпотом, обычной речью и громким голосом.",
+                "en": "Switch between whispering, normal speech and a loud voice."
+              }
+            },
+            {
+              "id": "family-06-branch-2-variant-3",
+              "text": {
+                "ru": "Преодолеть несколько порогов в нужном порядке.",
+                "en": "Cross several thresholds in the required order."
+              }
+            },
+            {
+              "id": "family-06-branch-2-variant-4",
+              "text": {
+                "ru": "Выбрать достаточную громкость, ограничивая расход ресурса или риск.",
+                "en": "Use sufficient loudness while limiting resource use or risk."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-06-branch-3",
+          "title": {
+            "ru": "Обратная связь",
+            "en": "Feedback"
+          },
+          "variants": [
+            {
+              "id": "family-06-branch-3-variant-1",
+              "text": {
+                "ru": "Подстроить голос под движущуюся звуковую цель.",
+                "en": "Adjust the voice to a moving sound target."
+              }
+            },
+            {
+              "id": "family-06-branch-3-variant-2",
+              "text": {
+                "ru": "Компенсировать меняющуюся чувствительность внутри игровых правил.",
+                "en": "Compensate for changing sensitivity within game rules."
+              }
+            },
+            {
+              "id": "family-06-branch-3-variant-3",
+              "text": {
+                "ru": "Разделить тихое перемещение и громкое активное действие.",
+                "en": "Separate quiet movement from a loud active action."
+              }
+            },
+            {
+              "id": "family-06-branch-3-variant-4",
+              "text": {
+                "ru": "Согласовать громкость нескольких участников для общего результата.",
+                "en": "Coordinate several participants' loudness for a shared result."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "voice",
+      "title": {
+        "ru": "Высота тона и мелодический контур",
+        "en": "Pitch and melodic contour"
+      },
+      "description": {
+        "ru": "Попасть в нужный тон либо провести голос по заданной траектории.",
+        "en": "Reach a target pitch or move the voice along a specified contour."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://baddreamgames.com/one-hand-clapping/"],
+      "branches": [
+        {
+          "id": "family-07-branch-1",
+          "title": {
+            "ru": "Управление высотой",
+            "en": "Pitch control"
+          },
+          "variants": [
+            {
+              "id": "family-07-branch-1-variant-1",
+              "text": {
+                "ru": "Выбрать действие высоким или низким тоном.",
+                "en": "Select an action with a high or low tone."
+              }
+            },
+            {
+              "id": "family-07-branch-1-variant-2",
+              "text": {
+                "ru": "Непрерывно менять положение объекта высотой голоса.",
+                "en": "Move an object continuously through vocal pitch."
+              }
+            },
+            {
+              "id": "family-07-branch-1-variant-3",
+              "text": {
+                "ru": "Попасть в заданную ноту или интервал.",
+                "en": "Match a note or interval."
+              }
+            },
+            {
+              "id": "family-07-branch-1-variant-4",
+              "text": {
+                "ru": "Удерживать устойчивый тон заданное время.",
+                "en": "Hold a steady tone for a specified duration."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-07-branch-2",
+          "title": {
+            "ru": "Изменение тона",
+            "en": "Pitch changes"
+          },
+          "variants": [
+            {
+              "id": "family-07-branch-2-variant-1",
+              "text": {
+                "ru": "Повышать или понижать тон по траектории.",
+                "en": "Raise or lower pitch along a contour."
+              }
+            },
+            {
+              "id": "family-07-branch-2-variant-2",
+              "text": {
+                "ru": "Повторить последовательность высот.",
+                "en": "Repeat a pitch sequence."
+              }
+            },
+            {
+              "id": "family-07-branch-2-variant-3",
+              "text": {
+                "ru": "Сделать скачок между несколькими целевыми тонами.",
+                "en": "Jump between several target tones."
+              }
+            },
+            {
+              "id": "family-07-branch-2-variant-4",
+              "text": {
+                "ru": "Повторить контур мелодии в удобном собственном диапазоне.",
+                "en": "Repeat a melodic contour in a comfortable vocal range."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-07-branch-3",
+          "title": {
+            "ru": "Отношения между тонами",
+            "en": "Pitch relationships"
+          },
+          "variants": [
+            {
+              "id": "family-07-branch-3-variant-1",
+              "text": {
+                "ru": "Подстроиться к звучащему эталону.",
+                "en": "Match a sounding reference."
+              }
+            },
+            {
+              "id": "family-07-branch-3-variant-2",
+              "text": {
+                "ru": "Найти созвучие или нужное расхождение с другим голосом.",
+                "en": "Find consonance or a required difference with another voice."
+              }
+            },
+            {
+              "id": "family-07-branch-3-variant-3",
+              "text": {
+                "ru": "Чередовать тоны как символы кода.",
+                "en": "Alternate pitches as code symbols."
+              }
+            },
+            {
+              "id": "family-07-branch-3-variant-4",
+              "text": {
+                "ru": "Управлять одним параметром высотой, а другим громкостью.",
+                "en": "Control one parameter through pitch and another through loudness."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "voice",
+      "title": {
+        "ru": "Длительность, темп и паузы",
+        "en": "Duration, tempo and pauses"
+      },
+      "description": {
+        "ru": "Управлять временем начала, продолжительностью и промежутками между звуками.",
+        "en": "Control sound onset, duration and the gaps between sounds."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://baddreamgames.com/one-hand-clapping/"],
+      "branches": [
+        {
+          "id": "family-08-branch-1",
+          "title": {
+            "ru": "Длительность",
+            "en": "Duration"
+          },
+          "variants": [
+            {
+              "id": "family-08-branch-1-variant-1",
+              "text": {
+                "ru": "Удерживать звук для зарядки или поддержания эффекта.",
+                "en": "Sustain sound to charge or maintain an effect."
+              }
+            },
+            {
+              "id": "family-08-branch-1-variant-2",
+              "text": {
+                "ru": "Различать короткий и длинный импульс.",
+                "en": "Distinguish short and long impulses."
+              }
+            },
+            {
+              "id": "family-08-branch-1-variant-3",
+              "text": {
+                "ru": "Оборвать звук точно в заданный момент.",
+                "en": "Stop a sound at a precise moment."
+              }
+            },
+            {
+              "id": "family-08-branch-1-variant-4",
+              "text": {
+                "ru": "Набрать суммарную длительность несколькими звучаниями.",
+                "en": "Accumulate a total duration across several sounds."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-08-branch-2",
+          "title": {
+            "ru": "Ритмический рисунок",
+            "en": "Rhythmic patterns"
+          },
+          "variants": [
+            {
+              "id": "family-08-branch-2-variant-1",
+              "text": {
+                "ru": "Повторить последовательность звуков и пауз.",
+                "en": "Repeat a sequence of sounds and pauses."
+              }
+            },
+            {
+              "id": "family-08-branch-2-variant-2",
+              "text": {
+                "ru": "Произнести слоги или издать импульсы в нужном ритме.",
+                "en": "Speak syllables or produce impulses in a target rhythm."
+              }
+            },
+            {
+              "id": "family-08-branch-2-variant-3",
+              "text": {
+                "ru": "Ускорять или замедлять темп по условию.",
+                "en": "Speed up or slow down under a condition."
+              }
+            },
+            {
+              "id": "family-08-branch-2-variant-4",
+              "text": {
+                "ru": "Выполнить синкопу, полиритм или чередование сильных и слабых долей.",
+                "en": "Perform syncopation, polyrhythm or alternating strong and weak beats."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-08-branch-3",
+          "title": {
+            "ru": "Речевое время",
+            "en": "Speech timing"
+          },
+          "variants": [
+            {
+              "id": "family-08-branch-3-variant-1",
+              "text": {
+                "ru": "Уложить фразу в ограниченное временное окно.",
+                "en": "Fit a phrase within a time window."
+              }
+            },
+            {
+              "id": "family-08-branch-3-variant-2",
+              "text": {
+                "ru": "Выбрать удачный момент произнесения команды.",
+                "en": "Choose the right moment to speak a command."
+              }
+            },
+            {
+              "id": "family-08-branch-3-variant-3",
+              "text": {
+                "ru": "Дождаться завершения чужой реплики или звукового сигнала.",
+                "en": "Wait for another line or sound cue to finish."
+              }
+            },
+            {
+              "id": "family-08-branch-3-variant-4",
+              "text": {
+                "ru": "Сделать паузу заданной длины как часть комбинации.",
+                "en": "Include a pause of a required length in a combination."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "voice",
+      "title": {
+        "ru": "Тембр, артикуляция и имитация",
+        "en": "Timbre, articulation and imitation"
+      },
+      "description": {
+        "ru": "Воспроизвести узнаваемую форму звучания.",
+        "en": "Reproduce a recognizable sound pattern."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-branch-1",
+          "title": {
+            "ru": "Фонетика",
+            "en": "Phonetics"
+          },
+          "variants": [
+            {
+              "id": "family-09-branch-1-variant-1",
+              "text": {
+                "ru": "Произнести нужную гласную, согласную или слог.",
+                "en": "Produce a required vowel, consonant or syllable."
+              }
+            },
+            {
+              "id": "family-09-branch-1-variant-2",
+              "text": {
+                "ru": "Различить близкие фонемы и выбрать соответствующее действие.",
+                "en": "Distinguish close phonemes and select the corresponding action."
+              }
+            },
+            {
+              "id": "family-09-branch-1-variant-3",
+              "text": {
+                "ru": "Выделить ударение или артикуляционный акцент.",
+                "en": "Emphasize stress or an articulatory accent."
+              }
+            },
+            {
+              "id": "family-09-branch-1-variant-4",
+              "text": {
+                "ru": "Менять форму звучания при устойчивой высоте тона.",
+                "en": "Change vocal shape while keeping pitch steady."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-09-branch-2",
+          "title": {
+            "ru": "Имитация",
+            "en": "Imitation"
+          },
+          "variants": [
+            {
+              "id": "family-09-branch-2-variant-1",
+              "text": {
+                "ru": "Повторить звук животного, машины или инструмента.",
+                "en": "Imitate an animal, machine or instrument."
+              }
+            },
+            {
+              "id": "family-09-branch-2-variant-2",
+              "text": {
+                "ru": "Имитировать условный голос персонажа по заданным признакам.",
+                "en": "Imitate a fictional character's voice using specified properties."
+              }
+            },
+            {
+              "id": "family-09-branch-2-variant-3",
+              "text": {
+                "ru": "Воспроизвести смех, рычание, свист или другой узнаваемый сигнал.",
+                "en": "Reproduce laughter, growling, whistling or another recognizable signal."
+              }
+            },
+            {
+              "id": "family-09-branch-2-variant-4",
+              "text": {
+                "ru": "Сделать звук, который другой игрок должен опознать.",
+                "en": "Make a sound another player must identify."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-09-branch-3",
+          "title": {
+            "ru": "Манера исполнения",
+            "en": "Performance style"
+          },
+          "variants": [
+            {
+              "id": "family-09-branch-3-variant-1",
+              "text": {
+                "ru": "Прочитать реплику с заданным игровым настроением.",
+                "en": "Read a line with a specified fictional mood."
+              }
+            },
+            {
+              "id": "family-09-branch-3-variant-2",
+              "text": {
+                "ru": "Чередовать звонкое, шепотное и напевное звучание.",
+                "en": "Alternate voiced, whispered and sung delivery."
+              }
+            },
+            {
+              "id": "family-09-branch-3-variant-3",
+              "text": {
+                "ru": "Выдержать условную акустическую маску: диапазон, ритм, тембр.",
+                "en": "Maintain an acoustic disguise through range, rhythm and timbre."
+              }
+            },
+            {
+              "id": "family-09-branch-3-variant-4",
+              "text": {
+                "ru": "Выбрать манеру произнесения как отдельный игровой параметр.",
+                "en": "Choose delivery style as a separate game parameter."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "voice",
+      "title": {
+        "ru": "Неречевые звуки и действия у микрофона",
+        "en": "Nonverbal sounds and microphone actions"
+      },
+      "description": {
+        "ru": "Использовать микрофон как датчик звуковых событий.",
+        "en": "Use the microphone to detect sound events."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/?p=195448",
+        "https://www.lurking-game.com/"
+      ],
+      "branches": [
+        {
+          "id": "family-10-branch-1",
+          "title": {
+            "ru": "Звуки рта и дыхания",
+            "en": "Mouth and breath sounds"
+          },
+          "variants": [
+            {
+              "id": "family-10-branch-1-variant-1",
+              "text": {
+                "ru": "Дунуть в микрофон, чтобы вызвать короткий импульс.",
+                "en": "Blow into the microphone to create a brief impulse."
+              }
+            },
+            {
+              "id": "family-10-branch-1-variant-2",
+              "text": {
+                "ru": "Издать слышимый выдох или шипение.",
+                "en": "Produce an audible exhalation or hiss."
+              }
+            },
+            {
+              "id": "family-10-branch-1-variant-3",
+              "text": {
+                "ru": "Напевать без слов или произвести щелчок языком.",
+                "en": "Hum without words or click the tongue."
+              }
+            },
+            {
+              "id": "family-10-branch-1-variant-4",
+              "text": {
+                "ru": "Свистнуть как сигнал или элемент комбинации.",
+                "en": "Whistle as a signal or combination element."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-10-branch-2",
+          "title": {
+            "ru": "Звуки тела и предметов",
+            "en": "Body and object sounds"
+          },
+          "variants": [
+            {
+              "id": "family-10-branch-2-variant-1",
+              "text": {
+                "ru": "Хлопнуть в ладоши по условию.",
+                "en": "Clap under a specified condition."
+              }
+            },
+            {
+              "id": "family-10-branch-2-variant-2",
+              "text": {
+                "ru": "Постучать по поверхности в заданном ритме.",
+                "en": "Tap a surface in a specified rhythm."
+              }
+            },
+            {
+              "id": "family-10-branch-2-variant-3",
+              "text": {
+                "ru": "Использовать инструмент или предмет как источник игрового звука.",
+                "en": "Use an instrument or object as a game sound source."
+              }
+            },
+            {
+              "id": "family-10-branch-2-variant-4",
+              "text": {
+                "ru": "Собрать последовательность из разных типов шумов.",
+                "en": "Assemble a sequence of different noises."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-10-branch-3",
+          "title": {
+            "ru": "Звук и тишина",
+            "en": "Sound and silence"
+          },
+          "variants": [
+            {
+              "id": "family-10-branch-3-variant-1",
+              "text": {
+                "ru": "Сохранять тишину до появления сигнала.",
+                "en": "Stay silent until a signal appears."
+              }
+            },
+            {
+              "id": "family-10-branch-3-variant-2",
+              "text": {
+                "ru": "Чередовать слышимый звук и отсутствие звука.",
+                "en": "Alternate audible sound and absence of sound."
+              }
+            },
+            {
+              "id": "family-10-branch-3-variant-3",
+              "text": {
+                "ru": "Удерживать общий уровень шума ниже игрового порога.",
+                "en": "Keep total noise below a game threshold."
+              }
+            },
+            {
+              "id": "family-10-branch-3-variant-4",
+              "text": {
+                "ru": "Дать устройству услышать нужное событие в реальном окружении.",
+                "en": "Let the device hear a required real-world event."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "voice",
+      "title": {
+        "ru": "Пение и музыкальное исполнение",
+        "en": "Singing and musical performance"
+      },
+      "description": {
+        "ru": "Исполнить музыкальный материал с заданными отношениями высоты и времени.",
+        "en": "Perform music with specified pitch and timing relationships."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://baddreamgames.com/one-hand-clapping/"],
+      "branches": [
+        {
+          "id": "family-11-branch-1",
+          "title": {
+            "ru": "Повторение",
+            "en": "Repetition"
+          },
+          "variants": [
+            {
+              "id": "family-11-branch-1-variant-1",
+              "text": {
+                "ru": "Спеть ноты или мелодию по образцу.",
+                "en": "Sing notes or a melody from a model."
+              }
+            },
+            {
+              "id": "family-11-branch-1-variant-2",
+              "text": {
+                "ru": "Попасть в высоту, ритм и окончания фраз.",
+                "en": "Match pitch, rhythm and phrase endings."
+              }
+            },
+            {
+              "id": "family-11-branch-1-variant-3",
+              "text": {
+                "ru": "Продолжить мелодию после исчезновения подсказки.",
+                "en": "Continue a melody after the guide disappears."
+              }
+            },
+            {
+              "id": "family-11-branch-1-variant-4",
+              "text": {
+                "ru": "Повторить музыкальную фразу в форме вопроса и ответа.",
+                "en": "Repeat a musical phrase in call-and-response form."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-11-branch-2",
+          "title": {
+            "ru": "Совместное исполнение",
+            "en": "Joint performance"
+          },
+          "variants": [
+            {
+              "id": "family-11-branch-2-variant-1",
+              "text": {
+                "ru": "Петь в унисон с персонажем или игроком.",
+                "en": "Sing in unison with a character or player."
+              }
+            },
+            {
+              "id": "family-11-branch-2-variant-2",
+              "text": {
+                "ru": "Добавить второй голос и выдержать гармонию.",
+                "en": "Add a second voice and maintain harmony."
+              }
+            },
+            {
+              "id": "family-11-branch-2-variant-3",
+              "text": {
+                "ru": "Подхватить партию в нужный момент.",
+                "en": "Enter a part at the right moment."
+              }
+            },
+            {
+              "id": "family-11-branch-2-variant-4",
+              "text": {
+                "ru": "Распределить между участниками мелодию, бас и ритмическую основу.",
+                "en": "Divide melody, bass and rhythmic foundation among participants."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-11-branch-3",
+          "title": {
+            "ru": "Создание музыки",
+            "en": "Creating music"
+          },
+          "variants": [
+            {
+              "id": "family-11-branch-3-variant-1",
+              "text": {
+                "ru": "Импровизировать в пределах музыкального правила.",
+                "en": "Improvise within a musical rule."
+              }
+            },
+            {
+              "id": "family-11-branch-3-variant-2",
+              "text": {
+                "ru": "Сочинить мотив, соответствующий задаче.",
+                "en": "Compose a motif suited to the task."
+              }
+            },
+            {
+              "id": "family-11-branch-3-variant-3",
+              "text": {
+                "ru": "Собрать вокальные петли и наложить партии.",
+                "en": "Build vocal loops and layer parts."
+              }
+            },
+            {
+              "id": "family-11-branch-3-variant-4",
+              "text": {
+                "ru": "Изменять музыкальное исполнение по реакции игрового мира.",
+                "en": "Change performance in response to the game world."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "hearing",
+      "title": {
+        "ru": "Локализация и отслеживание источников",
+        "en": "Sound-source localization and tracking"
+      },
+      "description": {
+        "ru": "Определить, откуда приходит звук и как движется его источник.",
+        "en": "Determine where sound comes from and how its source moves."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.dowino.com/realisations/serious-game-ablindlegend/",
+        "https://falling-squirrel.itch.io/the-vale",
+        "https://blinddrivegame.com/press/sheet.php?p=blind_drive"
+      ],
+      "branches": [
+        {
+          "id": "family-12-branch-1",
+          "title": {
+            "ru": "Положение",
+            "en": "Position"
+          },
+          "variants": [
+            {
+              "id": "family-12-branch-1-variant-1",
+              "text": {
+                "ru": "Различить источник слева, справа, впереди или позади.",
+                "en": "Distinguish left, right, front and rear sources."
+              }
+            },
+            {
+              "id": "family-12-branch-1-variant-2",
+              "text": {
+                "ru": "Оценить приближение и удаление по динамике звучания.",
+                "en": "Estimate approach and retreat through changing sound."
+              }
+            },
+            {
+              "id": "family-12-branch-1-variant-3",
+              "text": {
+                "ru": "Различить близкий и дальний источник по заданным акустическим признакам.",
+                "en": "Distinguish near and distant sources through specified acoustic cues."
+              }
+            },
+            {
+              "id": "family-12-branch-1-variant-4",
+              "text": {
+                "ru": "Определить вертикальное положение при подходящем пространственном аудио.",
+                "en": "Determine height with suitable spatial audio."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-12-branch-2",
+          "title": {
+            "ru": "Движение",
+            "en": "Movement"
+          },
+          "variants": [
+            {
+              "id": "family-12-branch-2-variant-1",
+              "text": {
+                "ru": "Следить за движущимся источником.",
+                "en": "Track a moving source."
+              }
+            },
+            {
+              "id": "family-12-branch-2-variant-2",
+              "text": {
+                "ru": "Предсказать траекторию по последовательности звуков.",
+                "en": "Predict a trajectory from a sound sequence."
+              }
+            },
+            {
+              "id": "family-12-branch-2-variant-3",
+              "text": {
+                "ru": "Отличить движение источника от собственного движения.",
+                "en": "Distinguish source movement from one's own movement."
+              }
+            },
+            {
+              "id": "family-12-branch-2-variant-4",
+              "text": {
+                "ru": "Поймать момент прохождения объекта через целевую зону.",
+                "en": "Catch the moment an object crosses a target zone."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-12-branch-3",
+          "title": {
+            "ru": "Несколько источников",
+            "en": "Multiple sources"
+          },
+          "variants": [
+            {
+              "id": "family-12-branch-3-variant-1",
+              "text": {
+                "ru": "Разделить одновременно звучащие объекты.",
+                "en": "Separate simultaneously sounding objects."
+              }
+            },
+            {
+              "id": "family-12-branch-3-variant-2",
+              "text": {
+                "ru": "Выбрать ближайшую или наиболее опасную цель.",
+                "en": "Select the nearest or most dangerous target."
+              }
+            },
+            {
+              "id": "family-12-branch-3-variant-3",
+              "text": {
+                "ru": "Сопоставить источник с его голосом или звуковой подписью.",
+                "en": "Match a source to its voice or sound signature."
+              }
+            },
+            {
+              "id": "family-12-branch-3-variant-4",
+              "text": {
+                "ru": "Найти положение по нескольким точкам прослушивания.",
+                "en": "Locate a source from several listening positions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-13",
+      "section": "hearing",
+      "title": {
+        "ru": "Навигация и пространственная память",
+        "en": "Navigation and spatial memory"
+      },
+      "description": {
+        "ru": "Построить представление о пространстве и провести себя или другого персонажа к цели.",
+        "en": "Build a spatial model and guide oneself or another character to a goal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.dowino.com/realisations/serious-game-ablindlegend/",
+        "https://falling-squirrel.itch.io/the-vale"
+      ],
+      "branches": [
+        {
+          "id": "family-13-branch-1",
+          "title": {
+            "ru": "Ориентиры",
+            "en": "Landmarks"
+          },
+          "variants": [
+            {
+              "id": "family-13-branch-1-variant-1",
+              "text": {
+                "ru": "Двигаться к звуковому маяку.",
+                "en": "Move toward an audio beacon."
+              }
+            },
+            {
+              "id": "family-13-branch-1-variant-2",
+              "text": {
+                "ru": "Следовать голосу проводника или движущемуся источнику.",
+                "en": "Follow a guide's voice or moving sound source."
+              }
+            },
+            {
+              "id": "family-13-branch-1-variant-3",
+              "text": {
+                "ru": "Узнавать места по характерному звуковому окружению.",
+                "en": "Recognize places by characteristic soundscapes."
+              }
+            },
+            {
+              "id": "family-13-branch-1-variant-4",
+              "text": {
+                "ru": "Отслеживать условный след, представленный изменением звука.",
+                "en": "Track a fictional trail represented by changing sound."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-13-branch-2",
+          "title": {
+            "ru": "Маршрут",
+            "en": "Routes"
+          },
+          "variants": [
+            {
+              "id": "family-13-branch-2-variant-1",
+              "text": {
+                "ru": "Пройти лабиринт, запоминая развилки.",
+                "en": "Navigate a maze while remembering junctions."
+              }
+            },
+            {
+              "id": "family-13-branch-2-variant-2",
+              "text": {
+                "ru": "Обойти препятствие по изменению слышимости ориентиров.",
+                "en": "Bypass an obstacle through changing landmark audibility."
+              }
+            },
+            {
+              "id": "family-13-branch-2-variant-3",
+              "text": {
+                "ru": "Выбрать безопасный маршрут среди нескольких звучащих путей.",
+                "en": "Choose a safe route among several sounding paths."
+              }
+            },
+            {
+              "id": "family-13-branch-2-variant-4",
+              "text": {
+                "ru": "Вернуться по ранее пройденному пути без постоянной подсказки.",
+                "en": "Retrace a route without a continuous guide."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-13-branch-3",
+          "title": {
+            "ru": "Ментальная карта",
+            "en": "Mental map"
+          },
+          "variants": [
+            {
+              "id": "family-13-branch-3-variant-1",
+              "text": {
+                "ru": "Соединить отдельные помещения в общую схему.",
+                "en": "Connect rooms into an overall layout."
+              }
+            },
+            {
+              "id": "family-13-branch-3-variant-2",
+              "text": {
+                "ru": "Запомнить положение объектов относительно друг друга.",
+                "en": "Remember objects' relative positions."
+              }
+            },
+            {
+              "id": "family-13-branch-3-variant-3",
+              "text": {
+                "ru": "Ориентироваться по шагам, поворотам и сменам поверхности.",
+                "en": "Navigate by steps, turns and surface changes."
+              }
+            },
+            {
+              "id": "family-13-branch-3-variant-4",
+              "text": {
+                "ru": "Перестроить маршрут после перемещения ориентиров или закрытия прохода.",
+                "en": "Revise a route after landmarks move or passages close."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-14",
+      "section": "hearing",
+      "title": {
+        "ru": "Реакция, тайминг и предсказание",
+        "en": "Reaction, timing and prediction"
+      },
+      "description": {
+        "ru": "Распознать сигнал и выполнить подходящее действие в нужное время.",
+        "en": "Recognize a cue and perform the appropriate action at the right time."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.dowino.com/realisations/serious-game-ablindlegend/",
+        "https://falling-squirrel.itch.io/the-vale",
+        "https://blinddrivegame.com/press/sheet.php?p=blind_drive",
+        "https://store.steampowered.com/app/1215350/AudioWizards/?l=dutch"
+      ],
+      "branches": [
+        {
+          "id": "family-14-branch-1",
+          "title": {
+            "ru": "Окна действия",
+            "en": "Action windows"
+          },
+          "variants": [
+            {
+              "id": "family-14-branch-1-variant-1",
+              "text": {
+                "ru": "Атаковать, блокировать или парировать по звуковому предупреждению.",
+                "en": "Attack, block or parry after an audio warning."
+              }
+            },
+            {
+              "id": "family-14-branch-1-variant-2",
+              "text": {
+                "ru": "Уклониться от приближающейся опасности.",
+                "en": "Dodge an approaching danger."
+              }
+            },
+            {
+              "id": "family-14-branch-1-variant-3",
+              "text": {
+                "ru": "Прыгнуть, остановиться или сменить полосу по сигналу.",
+                "en": "Jump, stop or change lanes on cue."
+              }
+            },
+            {
+              "id": "family-14-branch-1-variant-4",
+              "text": {
+                "ru": "Нажать или произнести ответ в коротком временном окне.",
+                "en": "Press a button or speak within a short time window."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-14-branch-2",
+          "title": {
+            "ru": "Ожидание",
+            "en": "Waiting"
+          },
+          "variants": [
+            {
+              "id": "family-14-branch-2-variant-1",
+              "text": {
+                "ru": "Дождаться нужной фазы повторяющегося механизма.",
+                "en": "Wait for the right phase of a repeating mechanism."
+              }
+            },
+            {
+              "id": "family-14-branch-2-variant-2",
+              "text": {
+                "ru": "Продолжить отсчёт после исчезновения слышимого ритма.",
+                "en": "Continue counting after an audible beat disappears."
+              }
+            },
+            {
+              "id": "family-14-branch-2-variant-3",
+              "text": {
+                "ru": "Предсказать момент столкновения по нарастающему звуку.",
+                "en": "Predict collision time from an intensifying sound."
+              }
+            },
+            {
+              "id": "family-14-branch-2-variant-4",
+              "text": {
+                "ru": "Действовать между шумными событиями или в паузе.",
+                "en": "Act between noisy events or during a pause."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-14-branch-3",
+          "title": {
+            "ru": "Выбор реакции",
+            "en": "Selecting a reaction"
+          },
+          "variants": [
+            {
+              "id": "family-14-branch-3-variant-1",
+              "text": {
+                "ru": "Реагировать на один сигнал и игнорировать другой.",
+                "en": "Respond to one cue and ignore another."
+              }
+            },
+            {
+              "id": "family-14-branch-3-variant-2",
+              "text": {
+                "ru": "Выбрать действие по комбинации предупреждающих звуков.",
+                "en": "Select an action from combined warning sounds."
+              }
+            },
+            {
+              "id": "family-14-branch-3-variant-3",
+              "text": {
+                "ru": "Сдержать преждевременную реакцию на ложный сигнал.",
+                "en": "Suppress an early response to a false cue."
+              }
+            },
+            {
+              "id": "family-14-branch-3-variant-4",
+              "text": {
+                "ru": "Переключить правило реакции после изменения игровой фазы.",
+                "en": "Switch response rules when the game phase changes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-15",
+      "section": "hearing",
+      "title": {
+        "ru": "Распознавание объектов и состояний",
+        "en": "Recognizing objects and states"
+      },
+      "description": {
+        "ru": "Узнать объект, действие или состояние по его звучанию.",
+        "en": "Identify an object, action or state through sound."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1215350/AudioWizards/?l=dutch",
+        "https://store.steampowered.com/app/942970/Unheard/?l=english",
+        "https://www.weekend.com/volleygames"
+      ],
+      "branches": [
+        {
+          "id": "family-15-branch-1",
+          "title": {
+            "ru": "Идентификация",
+            "en": "Identification"
+          },
+          "variants": [
+            {
+              "id": "family-15-branch-1-variant-1",
+              "text": {
+                "ru": "Узнать человека по голосу.",
+                "en": "Recognize a person by voice."
+              }
+            },
+            {
+              "id": "family-15-branch-1-variant-2",
+              "text": {
+                "ru": "Узнать врага, животное, предмет или инструмент по звуковой подписи.",
+                "en": "Recognize enemies, animals, objects or tools by sound signature."
+              }
+            },
+            {
+              "id": "family-15-branch-1-variant-3",
+              "text": {
+                "ru": "Определить материал или тип поверхности по звуку взаимодействия.",
+                "en": "Identify material or surface through interaction sounds."
+              }
+            },
+            {
+              "id": "family-15-branch-1-variant-4",
+              "text": {
+                "ru": "Угадать песню, мелодию или музыкальный инструмент.",
+                "en": "Identify a song, melody or musical instrument."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-15-branch-2",
+          "title": {
+            "ru": "Состояние",
+            "en": "State"
+          },
+          "variants": [
+            {
+              "id": "family-15-branch-2-variant-1",
+              "text": {
+                "ru": "Определить исправность механизма по его работе.",
+                "en": "Assess a mechanism's condition through its operating sound."
+              }
+            },
+            {
+              "id": "family-15-branch-2-variant-2",
+              "text": {
+                "ru": "Услышать изменение угрозы, здоровья или запаса ресурса через условный сигнал.",
+                "en": "Hear threat, health or resource changes through a designed cue."
+              }
+            },
+            {
+              "id": "family-15-branch-2-variant-3",
+              "text": {
+                "ru": "Различить подготовку, выполнение и завершение действия.",
+                "en": "Distinguish preparation, execution and completion."
+              }
+            },
+            {
+              "id": "family-15-branch-2-variant-4",
+              "text": {
+                "ru": "Найти объект, звучащий иначе, чем остальные.",
+                "en": "Find an object sounding different from the others."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-15-branch-3",
+          "title": {
+            "ru": "Классификация",
+            "en": "Classification"
+          },
+          "variants": [
+            {
+              "id": "family-15-branch-3-variant-1",
+              "text": {
+                "ru": "Выбрать противодействие по типу звучащей угрозы.",
+                "en": "Select a countermeasure for the sounding threat type."
+              }
+            },
+            {
+              "id": "family-15-branch-3-variant-2",
+              "text": {
+                "ru": "Сгруппировать звуки по общему признаку.",
+                "en": "Group sounds by a common property."
+              }
+            },
+            {
+              "id": "family-15-branch-3-variant-3",
+              "text": {
+                "ru": "Обнаружить новое или неизвестное звучание.",
+                "en": "Detect a new or unfamiliar sound."
+              }
+            },
+            {
+              "id": "family-15-branch-3-variant-4",
+              "text": {
+                "ru": "Вывести правило соответствия между звуком и игровым свойством.",
+                "en": "Infer a mapping between sound and game properties."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-16",
+      "section": "hearing",
+      "title": {
+        "ru": "Избирательное внимание и разделение потоков",
+        "en": "Selective attention and stream separation"
+      },
+      "description": {
+        "ru": "Выбрать важный звуковой поток среди конкурирующих.",
+        "en": "Select the important sound stream among competing sources."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-16-branch-1",
+          "title": {
+            "ru": "Фокус",
+            "en": "Focus"
+          },
+          "variants": [
+            {
+              "id": "family-16-branch-1-variant-1",
+              "text": {
+                "ru": "Следить за одним голосом в группе говорящих.",
+                "en": "Follow one voice among several speakers."
+              }
+            },
+            {
+              "id": "family-16-branch-1-variant-2",
+              "text": {
+                "ru": "Выделить нужный звук на шумовом фоне.",
+                "en": "Extract a target sound from background noise."
+              }
+            },
+            {
+              "id": "family-16-branch-1-variant-3",
+              "text": {
+                "ru": "Следить за отдельным инструментом внутри музыки.",
+                "en": "Follow one instrument within music."
+              }
+            },
+            {
+              "id": "family-16-branch-1-variant-4",
+              "text": {
+                "ru": "Услышать редкое событие в длинном повторяющемся потоке.",
+                "en": "Hear a rare event in a long repeating stream."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-16-branch-2",
+          "title": {
+            "ru": "Переключение внимания",
+            "en": "Attention switching"
+          },
+          "variants": [
+            {
+              "id": "family-16-branch-2-variant-1",
+              "text": {
+                "ru": "Переключаться между каналами, комнатами или радиочастотами.",
+                "en": "Switch channels, rooms or radio frequencies."
+              }
+            },
+            {
+              "id": "family-16-branch-2-variant-2",
+              "text": {
+                "ru": "Слушать разведку, одновременно реагируя на ближайшие угрозы.",
+                "en": "Listen to reconnaissance while responding to nearby threats."
+              }
+            },
+            {
+              "id": "family-16-branch-2-variant-3",
+              "text": {
+                "ru": "Выбирать, чей доклад обработать первым.",
+                "en": "Choose whose report to process first."
+              }
+            },
+            {
+              "id": "family-16-branch-2-variant-4",
+              "text": {
+                "ru": "Замечать изменения фона, пока внимание занято другой задачей.",
+                "en": "Notice background changes while doing another task."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-16-branch-3",
+          "title": {
+            "ru": "Сравнение потоков",
+            "en": "Comparing streams"
+          },
+          "variants": [
+            {
+              "id": "family-16-branch-3-variant-1",
+              "text": {
+                "ru": "Сопоставить две одновременно звучащие последовательности.",
+                "en": "Compare two simultaneous sequences."
+              }
+            },
+            {
+              "id": "family-16-branch-3-variant-2",
+              "text": {
+                "ru": "Найти несогласованность между голосом и окружающими событиями.",
+                "en": "Find inconsistency between speech and surrounding events."
+              }
+            },
+            {
+              "id": "family-16-branch-3-variant-3",
+              "text": {
+                "ru": "Выделить источник, который маскирует полезный сигнал.",
+                "en": "Identify a source masking a useful signal."
+              }
+            },
+            {
+              "id": "family-16-branch-3-variant-4",
+              "text": {
+                "ru": "Распределить прослушивание нескольких потоков между участниками.",
+                "en": "Divide listening to multiple streams among participants."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-17",
+      "section": "hearing",
+      "title": {
+        "ru": "Слуховая память и преобразование последовательностей",
+        "en": "Auditory memory and sequence transformation"
+      },
+      "description": {
+        "ru": "Запомнить материал и воспроизвести либо преобразовать его по правилу.",
+        "en": "Remember material and reproduce or transform it under a rule."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-17-branch-1",
+          "title": {
+            "ru": "Запоминание",
+            "en": "Memory"
+          },
+          "variants": [
+            {
+              "id": "family-17-branch-1-variant-1",
+              "text": {
+                "ru": "Повторить ряд тонов, слов, шумов или направлений.",
+                "en": "Repeat tones, words, noises or directions."
+              }
+            },
+            {
+              "id": "family-17-branch-1-variant-2",
+              "text": {
+                "ru": "Воспроизвести удлиняющуюся цепочку.",
+                "en": "Reproduce a growing sequence."
+              }
+            },
+            {
+              "id": "family-17-branch-1-variant-3",
+              "text": {
+                "ru": "Запомнить пары звуков и найти совпадения.",
+                "en": "Remember sound pairs and find matches."
+              }
+            },
+            {
+              "id": "family-17-branch-1-variant-4",
+              "text": {
+                "ru": "Сохранить инструкцию в памяти до момента её применения.",
+                "en": "Retain instructions until they can be used."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-17-branch-2",
+          "title": {
+            "ru": "Преобразование",
+            "en": "Transformation"
+          },
+          "variants": [
+            {
+              "id": "family-17-branch-2-variant-1",
+              "text": {
+                "ru": "Повторить последовательность в обратном порядке.",
+                "en": "Repeat a sequence in reverse."
+              }
+            },
+            {
+              "id": "family-17-branch-2-variant-2",
+              "text": {
+                "ru": "Отсортировать услышанные элементы по признаку.",
+                "en": "Sort heard elements by a property."
+              }
+            },
+            {
+              "id": "family-17-branch-2-variant-3",
+              "text": {
+                "ru": "Воспроизвести только элементы выбранной категории.",
+                "en": "Reproduce only elements of a selected category."
+              }
+            },
+            {
+              "id": "family-17-branch-2-variant-4",
+              "text": {
+                "ru": "Сдвинуть ритм, изменить тональность или заменить часть элементов по правилу.",
+                "en": "Shift rhythm, transpose pitch or replace elements under a rule."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-17-branch-3",
+          "title": {
+            "ru": "Изменения и пропуски",
+            "en": "Changes and omissions"
+          },
+          "variants": [
+            {
+              "id": "family-17-branch-3-variant-1",
+              "text": {
+                "ru": "Найти пропавший звук или слово.",
+                "en": "Find a missing sound or word."
+              }
+            },
+            {
+              "id": "family-17-branch-3-variant-2",
+              "text": {
+                "ru": "Определить, какой элемент изменился между прослушиваниями.",
+                "en": "Identify an element changed between listens."
+              }
+            },
+            {
+              "id": "family-17-branch-3-variant-3",
+              "text": {
+                "ru": "Продолжить ряд по выведенному правилу.",
+                "en": "Continue a sequence using an inferred rule."
+              }
+            },
+            {
+              "id": "family-17-branch-3-variant-4",
+              "text": {
+                "ru": "Восстановить последовательность из фрагментов, услышанных в разное время.",
+                "en": "Restore a sequence from fragments heard at different times."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-18",
+      "section": "material",
+      "title": {
+        "ru": "Расследование и реконструкция событий",
+        "en": "Investigation and event reconstruction"
+      },
+      "description": {
+        "ru": "Сопоставить услышанные свидетельства и восстановить причинную картину.",
+        "en": "Compare audible evidence and reconstruct causal relationships."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/739630/Phasmophobia/?l=english",
+        "https://store.steampowered.com/app/942970/Unheard/?l=english"
+      ],
+      "branches": [
+        {
+          "id": "family-18-branch-1",
+          "title": {
+            "ru": "Наблюдение",
+            "en": "Observation"
+          },
+          "variants": [
+            {
+              "id": "family-18-branch-1-variant-1",
+              "text": {
+                "ru": "Подслушать разговор в нужном месте и в нужное время.",
+                "en": "Eavesdrop at the right place and time."
+              }
+            },
+            {
+              "id": "family-18-branch-1-variant-2",
+              "text": {
+                "ru": "Сопоставить реплики разных собеседников.",
+                "en": "Compare different speakers' lines."
+              }
+            },
+            {
+              "id": "family-18-branch-1-variant-3",
+              "text": {
+                "ru": "Узнать говорящего, место или действие по фоновой акустике.",
+                "en": "Identify a speaker, place or action through background acoustics."
+              }
+            },
+            {
+              "id": "family-18-branch-1-variant-4",
+              "text": {
+                "ru": "Различить прямое свидетельство, пересказ и предположение персонажа.",
+                "en": "Distinguish testimony, retelling and a character's conjecture."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-18-branch-2",
+          "title": {
+            "ru": "Восстановление событий",
+            "en": "Reconstructing events"
+          },
+          "variants": [
+            {
+              "id": "family-18-branch-2-variant-1",
+              "text": {
+                "ru": "Установить порядок действий по звуковым следам.",
+                "en": "Establish action order from sound traces."
+              }
+            },
+            {
+              "id": "family-18-branch-2-variant-2",
+              "text": {
+                "ru": "Связать одновременно происходящие сцены.",
+                "en": "Connect simultaneously unfolding scenes."
+              }
+            },
+            {
+              "id": "family-18-branch-2-variant-3",
+              "text": {
+                "ru": "Сопоставить имена, голоса, роли и перемещения.",
+                "en": "Match names, voices, roles and movements."
+              }
+            },
+            {
+              "id": "family-18-branch-2-variant-4",
+              "text": {
+                "ru": "Восстановить причинную связь между разговором и последующим событием.",
+                "en": "Reconstruct causality between a conversation and a later event."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-18-branch-3",
+          "title": {
+            "ru": "Проверка гипотез",
+            "en": "Testing hypotheses"
+          },
+          "variants": [
+            {
+              "id": "family-18-branch-3-variant-1",
+              "text": {
+                "ru": "Найти противоречие в показаниях или алиби.",
+                "en": "Find contradictions in testimony or alibis."
+              }
+            },
+            {
+              "id": "family-18-branch-3-variant-2",
+              "text": {
+                "ru": "Отличить запись, трансляцию и событие, происходящее сейчас.",
+                "en": "Distinguish a recording, broadcast and live event."
+              }
+            },
+            {
+              "id": "family-18-branch-3-variant-3",
+              "text": {
+                "ru": "Проверить, мог ли персонаж слышать конкретный разговор.",
+                "en": "Check whether a character could hear a conversation."
+              }
+            },
+            {
+              "id": "family-18-branch-3-variant-4",
+              "text": {
+                "ru": "Выбрать следующее прослушивание, которое лучше всего различит гипотезы.",
+                "en": "Choose the next listen that best distinguishes hypotheses."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-19",
+      "section": "material",
+      "title": {
+        "ru": "Коды, шифры и скрытые сообщения",
+        "en": "Codes, ciphers and hidden messages"
+      },
+      "description": {
+        "ru": "Обнаружить правило кодирования и извлечь сообщение.",
+        "en": "Discover an encoding rule and extract a message."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-19-branch-1",
+          "title": {
+            "ru": "Символьные коды",
+            "en": "Symbolic codes"
+          },
+          "variants": [
+            {
+              "id": "family-19-branch-1-variant-1",
+              "text": {
+                "ru": "Расшифровать короткие и длинные импульсы.",
+                "en": "Decode short and long impulses."
+              }
+            },
+            {
+              "id": "family-19-branch-1-variant-2",
+              "text": {
+                "ru": "Прочитать сообщение из высот тона или ритмических фигур.",
+                "en": "Read a message encoded in pitches or rhythmic figures."
+              }
+            },
+            {
+              "id": "family-19-branch-1-variant-3",
+              "text": {
+                "ru": "Соотнести звуки с буквами, числами, направлениями или действиями.",
+                "en": "Map sounds to letters, numbers, directions or actions."
+              }
+            },
+            {
+              "id": "family-19-branch-1-variant-4",
+              "text": {
+                "ru": "Восстановить правило неизвестного звукового алфавита.",
+                "en": "Infer an unfamiliar sound alphabet."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-19-branch-2",
+          "title": {
+            "ru": "Скрытие информации",
+            "en": "Hidden information"
+          },
+          "variants": [
+            {
+              "id": "family-19-branch-2-variant-1",
+              "text": {
+                "ru": "Найти сообщение внутри фонового шума.",
+                "en": "Find a message in background noise."
+              }
+            },
+            {
+              "id": "family-19-branch-2-variant-2",
+              "text": {
+                "ru": "Выделить нужную партию из нескольких наложенных дорожек.",
+                "en": "Isolate a part among layered tracks."
+              }
+            },
+            {
+              "id": "family-19-branch-2-variant-3",
+              "text": {
+                "ru": "Обнаружить послание в повторениях, акцентах или паузах.",
+                "en": "Detect a message in repetitions, accents or pauses."
+              }
+            },
+            {
+              "id": "family-19-branch-2-variant-4",
+              "text": {
+                "ru": "Различить подлинный сигнал и специально похожую подделку.",
+                "en": "Distinguish a real signal from a similar counterfeit."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-19-branch-3",
+          "title": {
+            "ru": "Преобразование для чтения",
+            "en": "Decoding transformations"
+          },
+          "variants": [
+            {
+              "id": "family-19-branch-3-variant-1",
+              "text": {
+                "ru": "Изменить скорость воспроизведения, чтобы разобрать сообщение.",
+                "en": "Change playback speed to understand a message."
+              }
+            },
+            {
+              "id": "family-19-branch-3-variant-2",
+              "text": {
+                "ru": "Проиграть фрагмент в обратном направлении.",
+                "en": "Play a fragment backward."
+              }
+            },
+            {
+              "id": "family-19-branch-3-variant-3",
+              "text": {
+                "ru": "Подобрать частоту, фильтр или канал прослушивания.",
+                "en": "Select a frequency, filter or listening channel."
+              }
+            },
+            {
+              "id": "family-19-branch-3-variant-4",
+              "text": {
+                "ru": "Совместить фрагменты сообщения из разных источников.",
+                "en": "Combine message fragments from different sources."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-20",
+      "section": "material",
+      "title": {
+        "ru": "Запись, монтаж и воспроизведение",
+        "en": "Recording, editing and playback"
+      },
+      "description": {
+        "ru": "Собрать или преобразовать звук так, чтобы он выполнил игровую функцию.",
+        "en": "Collect or transform sound to serve a game function."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-20-branch-1",
+          "title": {
+            "ru": "Сбор материала",
+            "en": "Collecting material"
+          },
+          "variants": [
+            {
+              "id": "family-20-branch-1-variant-1",
+              "text": {
+                "ru": "Записать нужный звук в подходящий момент.",
+                "en": "Record the required sound at the right moment."
+              }
+            },
+            {
+              "id": "family-20-branch-1-variant-2",
+              "text": {
+                "ru": "Собрать библиотеку голосов, шумов или музыкальных фраз.",
+                "en": "Collect voices, noises or musical phrases."
+              }
+            },
+            {
+              "id": "family-20-branch-1-variant-3",
+              "text": {
+                "ru": "Выбрать фрагмент из длинной записи.",
+                "en": "Select a fragment from a long recording."
+              }
+            },
+            {
+              "id": "family-20-branch-1-variant-4",
+              "text": {
+                "ru": "Получить запись с определённой позиции или дистанции.",
+                "en": "Obtain a recording from a specified position or distance."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-20-branch-2",
+          "title": {
+            "ru": "Монтаж",
+            "en": "Editing"
+          },
+          "variants": [
+            {
+              "id": "family-20-branch-2-variant-1",
+              "text": {
+                "ru": "Поставить фрагменты в нужном порядке.",
+                "en": "Put fragments in the required order."
+              }
+            },
+            {
+              "id": "family-20-branch-2-variant-2",
+              "text": {
+                "ru": "Зациклить звук или собрать последовательность петель.",
+                "en": "Loop a sound or assemble loops."
+              }
+            },
+            {
+              "id": "family-20-branch-2-variant-3",
+              "text": {
+                "ru": "Наложить дорожки и согласовать их по времени.",
+                "en": "Layer tracks and synchronize them."
+              }
+            },
+            {
+              "id": "family-20-branch-2-variant-4",
+              "text": {
+                "ru": "Изменить высоту, скорость, громкость или спектральный состав записи.",
+                "en": "Change a recording's pitch, speed, loudness or spectrum."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-20-branch-3",
+          "title": {
+            "ru": "Использование записи",
+            "en": "Using recordings"
+          },
+          "variants": [
+            {
+              "id": "family-20-branch-3-variant-1",
+              "text": {
+                "ru": "Воспроизвести запись как приманку или отвлечение.",
+                "en": "Play a recording as a lure or distraction."
+              }
+            },
+            {
+              "id": "family-20-branch-3-variant-2",
+              "text": {
+                "ru": "Использовать её для открытия звукового замка.",
+                "en": "Open a sound lock with a recording."
+              }
+            },
+            {
+              "id": "family-20-branch-3-variant-3",
+              "text": {
+                "ru": "Передать запись как доказательство или сообщение.",
+                "en": "Present a recording as evidence or a message."
+              }
+            },
+            {
+              "id": "family-20-branch-3-variant-4",
+              "text": {
+                "ru": "Создать звуковую сцену, которую должен распознать персонаж или другой игрок.",
+                "en": "Create a sound scene a character or player must recognize."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-21",
+      "section": "material",
+      "title": {
+        "ru": "Эхолокация и акустические свойства мира",
+        "en": "Echolocation and world acoustics"
+      },
+      "description": {
+        "ru": "Создать или направить звук и получить информацию либо воздействие через его распространение.",
+        "en": "Produce or direct sound to obtain information or an effect through propagation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/?p=195448",
+        "https://www.lurking-game.com/",
+        "https://store.steampowered.com/app/426310/Perception/?l=english"
+      ],
+      "branches": [
+        {
+          "id": "family-21-branch-1",
+          "title": {
+            "ru": "Активное зондирование",
+            "en": "Active probing"
+          },
+          "variants": [
+            {
+              "id": "family-21-branch-1-variant-1",
+              "text": {
+                "ru": "Послать звуковой импульс и изучить отклик.",
+                "en": "Send a sound pulse and study the response."
+              }
+            },
+            {
+              "id": "family-21-branch-1-variant-2",
+              "text": {
+                "ru": "Выбрать между частыми слабыми и редкими сильными импульсами.",
+                "en": "Choose frequent weak or rare strong pulses."
+              }
+            },
+            {
+              "id": "family-21-branch-1-variant-3",
+              "text": {
+                "ru": "Оценить форму пространства по отражениям.",
+                "en": "Estimate spatial shape from reflections."
+              }
+            },
+            {
+              "id": "family-21-branch-1-variant-4",
+              "text": {
+                "ru": "Обнаружить объект, отвечающий только на определённый сигнал.",
+                "en": "Detect an object responding only to a particular signal."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-21-branch-2",
+          "title": {
+            "ru": "Распространение",
+            "en": "Propagation"
+          },
+          "variants": [
+            {
+              "id": "family-21-branch-2-variant-1",
+              "text": {
+                "ru": "Открыть или закрыть проход, меняя слышимость источника.",
+                "en": "Open or close a passage to change source audibility."
+              }
+            },
+            {
+              "id": "family-21-branch-2-variant-2",
+              "text": {
+                "ru": "Расположить отражатели или поглотители для направления сигнала.",
+                "en": "Position reflectors or absorbers to direct a signal."
+              }
+            },
+            {
+              "id": "family-21-branch-2-variant-3",
+              "text": {
+                "ru": "Обойти акустическую тень или найти путь передачи звука.",
+                "en": "Bypass an acoustic shadow or find a transmission path."
+              }
+            },
+            {
+              "id": "family-21-branch-2-variant-4",
+              "text": {
+                "ru": "Выбрать позицию с нужным сочетанием прямого звука и отражений.",
+                "en": "Choose a position with the required direct sound and reflections."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-21-branch-3",
+          "title": {
+            "ru": "Воздействие",
+            "en": "Effects"
+          },
+          "variants": [
+            {
+              "id": "family-21-branch-3-variant-1",
+              "text": {
+                "ru": "Активировать резонатор подходящей частотой.",
+                "en": "Activate a resonator with a suitable frequency."
+              }
+            },
+            {
+              "id": "family-21-branch-3-variant-2",
+              "text": {
+                "ru": "Согласовать несколько источников для усиления или условного взаимного гашения.",
+                "en": "Coordinate sources for amplification or designed cancellation."
+              }
+            },
+            {
+              "id": "family-21-branch-3-variant-3",
+              "text": {
+                "ru": "Запустить цепь механизмов через передачу звукового сигнала.",
+                "en": "Trigger a mechanism chain through sound transmission."
+              }
+            },
+            {
+              "id": "family-21-branch-3-variant-4",
+              "text": {
+                "ru": "Изменить свойства среды и наблюдать, как меняется её отклик.",
+                "en": "Change the environment and observe its altered response."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-22",
+      "section": "material",
+      "title": {
+        "ru": "Скрытность, приманки и контроль шума",
+        "en": "Stealth, lures and noise control"
+      },
+      "description": {
+        "ru": "Управлять слышимостью, чтобы получать информацию, избегать обнаружения или менять поведение противника.",
+        "en": "Manage audibility to gather information, evade detection or influence opponents."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/?p=195448",
+        "https://www.lurking-game.com/",
+        "https://store.steampowered.com/app/426310/Perception/?l=english"
+      ],
+      "branches": [
+        {
+          "id": "family-22-branch-1",
+          "title": {
+            "ru": "Собственная слышимость",
+            "en": "Player audibility"
+          },
+          "variants": [
+            {
+              "id": "family-22-branch-1-variant-1",
+              "text": {
+                "ru": "Выбрать тихую поверхность или способ перемещения.",
+                "en": "Choose a quiet surface or movement method."
+              }
+            },
+            {
+              "id": "family-22-branch-1-variant-2",
+              "text": {
+                "ru": "Двигаться, пока собственный шум перекрывает событие окружения.",
+                "en": "Move while an environmental event masks one's own noise."
+              }
+            },
+            {
+              "id": "family-22-branch-1-variant-3",
+              "text": {
+                "ru": "Сохранять тишину при приближении угрозы.",
+                "en": "Stay silent as a threat approaches."
+              }
+            },
+            {
+              "id": "family-22-branch-1-variant-4",
+              "text": {
+                "ru": "Пожертвовать скоростью ради меньшей слышимости.",
+                "en": "Trade speed for reduced audibility."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-22-branch-2",
+          "title": {
+            "ru": "Поведение противника",
+            "en": "Opponent behavior"
+          },
+          "variants": [
+            {
+              "id": "family-22-branch-2-variant-1",
+              "text": {
+                "ru": "Бросить или активировать звучащий предмет как приманку.",
+                "en": "Throw or activate a sounding lure."
+              }
+            },
+            {
+              "id": "family-22-branch-2-variant-2",
+              "text": {
+                "ru": "Увести противника звуком из нужной области.",
+                "en": "Draw an opponent out of an area with sound."
+              }
+            },
+            {
+              "id": "family-22-branch-2-variant-3",
+              "text": {
+                "ru": "Имитировать безопасный или знакомый противнику сигнал.",
+                "en": "Imitate a signal the opponent considers safe or familiar."
+              }
+            },
+            {
+              "id": "family-22-branch-2-variant-4",
+              "text": {
+                "ru": "Создать несколько источников, чтобы запутать поиск.",
+                "en": "Create several sources to confuse a search."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-22-branch-3",
+          "title": {
+            "ru": "Информация и риск",
+            "en": "Information and risk"
+          },
+          "variants": [
+            {
+              "id": "family-22-branch-3-variant-1",
+              "text": {
+                "ru": "Выдать себя звуком ради разведки.",
+                "en": "Reveal oneself through sound to scout."
+              }
+            },
+            {
+              "id": "family-22-branch-3-variant-2",
+              "text": {
+                "ru": "Выбирать дальность сигнала с учётом опасности обнаружения.",
+                "en": "Choose signal range according to detection risk."
+              }
+            },
+            {
+              "id": "family-22-branch-3-variant-3",
+              "text": {
+                "ru": "Скрывать разговор от слушающих врагов.",
+                "en": "Conceal conversation from listening enemies."
+              }
+            },
+            {
+              "id": "family-22-branch-3-variant-4",
+              "text": {
+                "ru": "Распознавать звуковые приманки, которые использует сам противник.",
+                "en": "Recognize sound lures used by an opponent."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-23",
+      "section": "material",
+      "title": {
+        "ru": "Музыка как система правил мира",
+        "en": "Music as world rules"
+      },
+      "description": {
+        "ru": "Менять музыкальные отношения, чтобы менять состояние игрового пространства.",
+        "en": "Change musical relationships to change the game space."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://baddreamgames.com/one-hand-clapping/"],
+      "branches": [
+        {
+          "id": "family-23-branch-1",
+          "title": {
+            "ru": "Музыкальные замки",
+            "en": "Musical locks"
+          },
+          "variants": [
+            {
+              "id": "family-23-branch-1-variant-1",
+              "text": {
+                "ru": "Открыть путь правильной мелодией.",
+                "en": "Open a path with the right melody."
+              }
+            },
+            {
+              "id": "family-23-branch-1-variant-2",
+              "text": {
+                "ru": "Подобрать гармонию для активации объекта.",
+                "en": "Find a harmony that activates an object."
+              }
+            },
+            {
+              "id": "family-23-branch-1-variant-3",
+              "text": {
+                "ru": "Воспроизвести ритм механизма.",
+                "en": "Reproduce a mechanism's rhythm."
+              }
+            },
+            {
+              "id": "family-23-branch-1-variant-4",
+              "text": {
+                "ru": "Узнать музыкальный мотив и применить его в правильном месте.",
+                "en": "Recognize a motif and use it in the right place."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-23-branch-2",
+          "title": {
+            "ru": "Перестройка мира",
+            "en": "World transformation"
+          },
+          "variants": [
+            {
+              "id": "family-23-branch-2-variant-1",
+              "text": {
+                "ru": "Менять состояние окружения через музыкальную партию.",
+                "en": "Change the environment through a musical part."
+              }
+            },
+            {
+              "id": "family-23-branch-2-variant-2",
+              "text": {
+                "ru": "Добавлять или выключать инструменты, открывая разные возможности.",
+                "en": "Add or mute instruments to enable different options."
+              }
+            },
+            {
+              "id": "family-23-branch-2-variant-3",
+              "text": {
+                "ru": "Переключать режим мира темпом, ладом или мотивом.",
+                "en": "Switch world modes through tempo, mode or motif."
+              }
+            },
+            {
+              "id": "family-23-branch-2-variant-4",
+              "text": {
+                "ru": "Соединять несколько музыкальных объектов в работающую систему.",
+                "en": "Connect musical objects into a working system."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-23-branch-3",
+          "title": {
+            "ru": "Действие в музыке",
+            "en": "Actions in music"
+          },
+          "variants": [
+            {
+              "id": "family-23-branch-3-variant-1",
+              "text": {
+                "ru": "Атаковать, перемещаться или строить в музыкальной сетке.",
+                "en": "Attack, move or build on a musical grid."
+              }
+            },
+            {
+              "id": "family-23-branch-3-variant-2",
+              "text": {
+                "ru": "Согласовать игровые действия с меняющейся партитурой.",
+                "en": "Coordinate actions with a changing score."
+              }
+            },
+            {
+              "id": "family-23-branch-3-variant-3",
+              "text": {
+                "ru": "Импровизировать последовательность действий, создающую музыку.",
+                "en": "Improvise an action sequence that creates music."
+              }
+            },
+            {
+              "id": "family-23-branch-3-variant-4",
+              "text": {
+                "ru": "Управлять музыкальным напряжением как игровым ресурсом.",
+                "en": "Manage musical tension as a game resource."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-24",
+      "section": "social",
+      "title": {
+        "ru": "Кооперация с разделённой информацией",
+        "en": "Cooperation with divided information"
+      },
+      "description": {
+        "ru": "Объединить знания участников, чтобы выполнить общую задачу.",
+        "en": "Combine participants' knowledge to complete a shared task."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://keeptalkinggame.com/"],
+      "branches": [
+        {
+          "id": "family-24-branch-1",
+          "title": {
+            "ru": "Разделение ролей",
+            "en": "Role division"
+          },
+          "variants": [
+            {
+              "id": "family-24-branch-1-variant-1",
+              "text": {
+                "ru": "Один видит объект, другой располагает инструкцией.",
+                "en": "One sees the object while another has instructions."
+              }
+            },
+            {
+              "id": "family-24-branch-1-variant-2",
+              "text": {
+                "ru": "Один слышит угрозы, другой управляет движением.",
+                "en": "One hears threats while another controls movement."
+              }
+            },
+            {
+              "id": "family-24-branch-1-variant-3",
+              "text": {
+                "ru": "Каждый слышит свою часть общей сцены.",
+                "en": "Each hears part of a shared scene."
+              }
+            },
+            {
+              "id": "family-24-branch-1-variant-4",
+              "text": {
+                "ru": "Один анализирует данные, другой действует в реальном времени.",
+                "en": "One analyzes data while another acts in real time."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-24-branch-2",
+          "title": {
+            "ru": "Передача описаний",
+            "en": "Communicating descriptions"
+          },
+          "variants": [
+            {
+              "id": "family-24-branch-2-variant-1",
+              "text": {
+                "ru": "Описать объект так, чтобы партнёр его однозначно выбрал.",
+                "en": "Describe an object so a partner can identify it uniquely."
+              }
+            },
+            {
+              "id": "family-24-branch-2-variant-2",
+              "text": {
+                "ru": "Передать маршрут, расположение или последовательность действий.",
+                "en": "Communicate a route, layout or action sequence."
+              }
+            },
+            {
+              "id": "family-24-branch-2-variant-3",
+              "text": {
+                "ru": "Согласовать общий словарь для неоднозначных объектов.",
+                "en": "Agree on a shared vocabulary for ambiguous objects."
+              }
+            },
+            {
+              "id": "family-24-branch-2-variant-4",
+              "text": {
+                "ru": "Перепроверить понимание через обратное описание.",
+                "en": "Check understanding through a repeated description."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-24-branch-3",
+          "title": {
+            "ru": "Совместное решение",
+            "en": "Joint solutions"
+          },
+          "variants": [
+            {
+              "id": "family-24-branch-3-variant-1",
+              "text": {
+                "ru": "Соединить фрагменты кода или инструкции.",
+                "en": "Combine code or instruction fragments."
+              }
+            },
+            {
+              "id": "family-24-branch-3-variant-2",
+              "text": {
+                "ru": "Согласовать действия по общему сигналу.",
+                "en": "Coordinate actions using a shared cue."
+              }
+            },
+            {
+              "id": "family-24-branch-3-variant-3",
+              "text": {
+                "ru": "Сменить роли, когда меняются доступные сведения.",
+                "en": "Switch roles as available information changes."
+              }
+            },
+            {
+              "id": "family-24-branch-3-variant-4",
+              "text": {
+                "ru": "Исправить ошибку партнёра, не имея прямого доступа к его ситуации.",
+                "en": "Correct a partner's error with feedback."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-25",
+      "section": "social",
+      "title": {
+        "ru": "Ограниченные каналы связи",
+        "en": "Restricted communication channels"
+      },
+      "description": {
+        "ru": "Передать достаточно информации через канал с игровыми ограничениями.",
+        "en": "Transmit enough information through a channel constrained by game rules."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://keeptalkinggame.com/"],
+      "branches": [
+        {
+          "id": "family-25-branch-1",
+          "title": {
+            "ru": "Пропускная способность",
+            "en": "Capacity"
+          },
+          "variants": [
+            {
+              "id": "family-25-branch-1-variant-1",
+              "text": {
+                "ru": "Уложиться в лимит слов или длительности передачи.",
+                "en": "Fit a word count or transmission-duration limit."
+              }
+            },
+            {
+              "id": "family-25-branch-1-variant-2",
+              "text": {
+                "ru": "Передать сообщение через редкие окна связи.",
+                "en": "Send messages during rare communication windows."
+              }
+            },
+            {
+              "id": "family-25-branch-1-variant-3",
+              "text": {
+                "ru": "Выбрать один канал из нескольких конкурирующих.",
+                "en": "Choose among competing channels."
+              }
+            },
+            {
+              "id": "family-25-branch-1-variant-4",
+              "text": {
+                "ru": "Передать срочные сведения раньше второстепенных.",
+                "en": "Send urgent information before secondary details."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-25-branch-2",
+          "title": {
+            "ru": "Искажения",
+            "en": "Distortion"
+          },
+          "variants": [
+            {
+              "id": "family-25-branch-2-variant-1",
+              "text": {
+                "ru": "Восстановить сообщение с пропусками и помехами.",
+                "en": "Restore a message with gaps and interference."
+              }
+            },
+            {
+              "id": "family-25-branch-2-variant-2",
+              "text": {
+                "ru": "Работать с задержкой и устаревающими докладами.",
+                "en": "Work with delayed and outdated reports."
+              }
+            },
+            {
+              "id": "family-25-branch-2-variant-3",
+              "text": {
+                "ru": "Пересказать сообщение через цепочку посредников.",
+                "en": "Relay a message through intermediaries."
+              }
+            },
+            {
+              "id": "family-25-branch-2-variant-4",
+              "text": {
+                "ru": "Отличить оригинальный приказ от искажённого пересказа.",
+                "en": "Distinguish an original order from a distorted retelling."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-25-branch-3",
+          "title": {
+            "ru": "Правила эфира",
+            "en": "Radio rules"
+          },
+          "variants": [
+            {
+              "id": "family-25-branch-3-variant-1",
+              "text": {
+                "ru": "Соблюдать очередь передачи в общем канале.",
+                "en": "Take turns on a shared channel."
+              }
+            },
+            {
+              "id": "family-25-branch-3-variant-2",
+              "text": {
+                "ru": "Использовать кодовые слова и подтверждения.",
+                "en": "Use code words and acknowledgments."
+              }
+            },
+            {
+              "id": "family-25-branch-3-variant-3",
+              "text": {
+                "ru": "Передавать информацию так, чтобы её не понял противник.",
+                "en": "Send information an opponent cannot understand."
+              }
+            },
+            {
+              "id": "family-25-branch-3-variant-4",
+              "text": {
+                "ru": "Определить, какой отправитель или канал заслуживает доверия.",
+                "en": "Determine which sender or channel to trust."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-26",
+      "section": "social",
+      "title": {
+        "ru": "Социальная дедукция, роли и выступление",
+        "en": "Social deduction, roles and performance"
+      },
+      "description": {
+        "ru": "Интерпретировать заявления людей и влиять на их решения в рамках игровых ролей.",
+        "en": "Interpret people's statements and influence decisions within game roles."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-26-branch-1",
+          "title": {
+            "ru": "Социальная дедукция",
+            "en": "Social deduction"
+          },
+          "variants": [
+            {
+              "id": "family-26-branch-1-variant-1",
+              "text": {
+                "ru": "Найти скрытую роль по поступкам и содержанию разговоров.",
+                "en": "Identify a hidden role through actions and conversation content."
+              }
+            },
+            {
+              "id": "family-26-branch-1-variant-2",
+              "text": {
+                "ru": "Защитить свою версию событий перед группой.",
+                "en": "Defend an account of events before a group."
+              }
+            },
+            {
+              "id": "family-26-branch-1-variant-3",
+              "text": {
+                "ru": "Договориться о голосовании или совместном решении.",
+                "en": "Agree on a vote or shared decision."
+              }
+            },
+            {
+              "id": "family-26-branch-1-variant-4",
+              "text": {
+                "ru": "Убедить других в ложной версии, сохраняя непротиворечивую легенду.",
+                "en": "Convince others of a false account while maintaining a consistent cover story."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-26-branch-2",
+          "title": {
+            "ru": "Ролевая речь",
+            "en": "Roleplay speech"
+          },
+          "variants": [
+            {
+              "id": "family-26-branch-2-variant-1",
+              "text": {
+                "ru": "Говорить от лица персонажа с заданными целями.",
+                "en": "Speak as a character with specified goals."
+              }
+            },
+            {
+              "id": "family-26-branch-2-variant-2",
+              "text": {
+                "ru": "Импровизировать сцену в пределах ролевых ограничений.",
+                "en": "Improvise a scene within role constraints."
+              }
+            },
+            {
+              "id": "family-26-branch-2-variant-3",
+              "text": {
+                "ru": "Продолжать общую историю, учитывая вклад других участников.",
+                "en": "Continue a shared story while incorporating others' contributions."
+              }
+            },
+            {
+              "id": "family-26-branch-2-variant-4",
+              "text": {
+                "ru": "Выполнить скрытую цель через реплики и взаимодействие.",
+                "en": "Achieve a secret objective through dialogue and interaction."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-26-branch-3",
+          "title": {
+            "ru": "Исполнение для аудитории",
+            "en": "Performing for an audience"
+          },
+          "variants": [
+            {
+              "id": "family-26-branch-3-variant-1",
+              "text": {
+                "ru": "Объяснить понятие, которое группа должна угадать.",
+                "en": "Explain a concept the group must guess."
+              }
+            },
+            {
+              "id": "family-26-branch-3-variant-2",
+              "text": {
+                "ru": "Изобразить сцену или объект только звуками.",
+                "en": "Portray a scene or object using only sounds."
+              }
+            },
+            {
+              "id": "family-26-branch-3-variant-3",
+              "text": {
+                "ru": "Выступить с аргументом, историей или музыкальным фрагментом.",
+                "en": "Perform an argument, story or musical fragment."
+              }
+            },
+            {
+              "id": "family-26-branch-3-variant-4",
+              "text": {
+                "ru": "Оценить чужое исполнение по заранее установленным игровым критериям.",
+                "en": "Judge another performance against agreed game criteria."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-27",
+      "section": "social",
+      "title": {
+        "ru": "Соревнование и коллективная синхронизация",
+        "en": "Competition and collective synchronization"
+      },
+      "description": {
+        "ru": "Сравнить исполнение участников либо согласовать несколько голосов и действий.",
+        "en": "Compare participants' performances or coordinate voices and actions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.weekend.com/volleygames"],
+      "branches": [
+        {
+          "id": "family-27-branch-1",
+          "title": {
+            "ru": "Скорость и точность",
+            "en": "Speed and accuracy"
+          },
+          "variants": [
+            {
+              "id": "family-27-branch-1-variant-1",
+              "text": {
+                "ru": "Первым дать верный устный ответ.",
+                "en": "Give the correct spoken answer first."
+              }
+            },
+            {
+              "id": "family-27-branch-1-variant-2",
+              "text": {
+                "ru": "Точнее повторить ноту, ритм, фразу или звук.",
+                "en": "Reproduce a note, rhythm, phrase or sound more accurately."
+              }
+            },
+            {
+              "id": "family-27-branch-1-variant-3",
+              "text": {
+                "ru": "Дольше сохранить последовательность без ошибок.",
+                "en": "Maintain a sequence without errors for longer."
+              }
+            },
+            {
+              "id": "family-27-branch-1-variant-4",
+              "text": {
+                "ru": "Лучше передать информацию при одинаковых ограничениях.",
+                "en": "Communicate better under identical constraints."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-27-branch-2",
+          "title": {
+            "ru": "Взаимодействие исполнений",
+            "en": "Interacting performances"
+          },
+          "variants": [
+            {
+              "id": "family-27-branch-2-variant-1",
+              "text": {
+                "ru": "Выполнить музыкальный или речевой дуэт.",
+                "en": "Perform a musical or spoken duet."
+              }
+            },
+            {
+              "id": "family-27-branch-2-variant-2",
+              "text": {
+                "ru": "Обмениваться фразами по схеме вызова и ответа.",
+                "en": "Exchange phrases in call-and-response form."
+              }
+            },
+            {
+              "id": "family-27-branch-2-variant-3",
+              "text": {
+                "ru": "Синхронно произнести слова или издать импульсы.",
+                "en": "Speak words or produce impulses in synchrony."
+              }
+            },
+            {
+              "id": "family-27-branch-2-variant-4",
+              "text": {
+                "ru": "Распределить общий результат между несколькими партиями.",
+                "en": "Divide a shared result among several parts."
+              }
+            }
+          ]
+        },
+        {
+          "id": "family-27-branch-3",
+          "title": {
+            "ru": "Противодействие",
+            "en": "Opposition"
+          },
+          "variants": [
+            {
+              "id": "family-27-branch-3-variant-1",
+              "text": {
+                "ru": "Сбивать соперника ложными сигналами в рамках правил.",
+                "en": "Disrupt an opponent with false signals within the rules."
+              }
+            },
+            {
+              "id": "family-27-branch-3-variant-2",
+              "text": {
+                "ru": "Защитить свой звуковой канал от игровой помехи.",
+                "en": "Protect a sound channel from game interference."
+              }
+            },
+            {
+              "id": "family-27-branch-3-variant-3",
+              "text": {
+                "ru": "Подстраиваться под ритм соперника или менять собственный.",
+                "en": "Adapt to an opponent's rhythm or change one's own."
+              }
+            },
+            {
+              "id": "family-27-branch-3-variant-4",
+              "text": {
+                "ru": "Отличать союзные сигналы от вражеской имитации.",
+                "en": "Distinguish friendly signals from hostile imitation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "transfer",
+      "title": {
+        "ru": "Знакомые игровые циклы в аудиоформате",
+        "en": "Familiar game loops in audio form"
+      },
+      "intro": {
+        "ru": "Это перенос обычных игровых циклов в голосовой или звуковой интерфейс. Они дополняют основные механики, а не образуют отдельный тип звукового ввода.",
+        "en": "These are conventional game loops adapted to voice or audio interfaces. They complement the core mechanics rather than define separate sound input methods."
+      },
+      "entries": [
+        {
+          "id": "transfer-1",
+          "title": {
+            "ru": "Пошаговая тактика и RPG",
+            "en": "Turn-based tactics and RPGs"
+          },
+          "text": {
+            "ru": "Выбирать цели и способности через речь или аудиоменю. Оценивать позиции, инициативу и состояние через доклады и сигналы. Собирать отряд, экипировку и комбинации способностей.",
+            "en": "Select targets and abilities through speech or audio menus. Assess position, initiative and state through reports and cues. Assemble squads, equipment and ability combinations."
+          }
+        },
+        {
+          "id": "transfer-2",
+          "title": {
+            "ru": "Стратегия и управление",
+            "en": "Strategy and management"
+          },
+          "text": {
+            "ru": "Распределять ресурсы, производство и исполнителей. Получать доклады о событиях и выбирать приоритеты. Планировать развитие и реагировать на угрозы в нескольких местах.",
+            "en": "Allocate resources, production and actors. Receive event reports and prioritize. Plan development and respond to threats in several places."
+          }
+        },
+        {
+          "id": "transfer-3",
+          "title": {
+            "ru": "Приключение и исследование",
+            "en": "Adventure and exploration"
+          },
+          "text": {
+            "ru": "Исследовать локации, находить предметы и открывать проходы. Собирать инвентарь и применять предметы к объектам. Возвращаться в знакомые места после получения нового знания или способности.",
+            "en": "Explore locations, find items and open passages. Collect inventory and use items on objects. Revisit places after obtaining knowledge or abilities."
+          }
+        },
+        {
+          "id": "transfer-4",
+          "title": {
+            "ru": "Карточные и настольные игры",
+            "en": "Card and board games"
+          },
+          "text": {
+            "ru": "Получать приватную руку или роль через персональное аудио. Объявлять ход, ставку, обмен или голосование. Следить за общим состоянием через краткие озвученные обновления.",
+            "en": "Receive private hands or roles through personal audio. Announce moves, wagers, exchanges or votes. Track shared state through short spoken updates."
+          }
+        },
+        {
+          "id": "transfer-5",
+          "title": {
+            "ru": "Симуляции и профессии",
+            "en": "Simulations and professions"
+          },
+          "text": {
+            "ru": "Диагностировать неисправность по звуку оборудования. Обрабатывать вызовы диспетчера, оператора или спасателя. Управлять транспортом, производством или сервисом через приборные сигналы.",
+            "en": "Diagnose equipment faults by sound. Handle dispatcher, operator or rescue calls. Control transport, production or services through instrument cues."
+          }
+        },
+        {
+          "id": "transfer-6",
+          "title": {
+            "ru": "Выживание и развитие",
+            "en": "Survival and development"
+          },
+          "text": {
+            "ru": "Планировать ограниченные ресурсы, маршрут и риск. Собирать, создавать и обменивать предметы. Осваивать новые звуковые сигналы, команды и способы ориентирования.",
+            "en": "Plan limited resources, routes and risks. Collect, craft and exchange items. Learn new sound cues, commands and navigation methods."
+          }
+        },
+        {
+          "id": "transfer-7",
+          "title": {
+            "ru": "Нарратив и ролевая кампания",
+            "en": "Narrative and roleplaying campaigns"
+          },
+          "text": {
+            "ru": "Принимать решения с отложенными последствиями. Развивать отношения и репутацию. Разыгрывать историю одному, с ведущим или с группой.",
+            "en": "Make choices with delayed effects. Develop relationships and reputation. Play a story alone, with a facilitator or in a group."
+          }
+        },
+        {
+          "id": "transfer-8",
+          "title": {
+            "ru": "Викторины и игры для компании",
+            "en": "Quizzes and party games"
+          },
+          "text": {
+            "ru": "Отвечать по очереди или на скорость. Угадывать слова, музыку, сцены и источники звука. Объяснять и изображать задания для других участников.",
+            "en": "Answer in turns or against time. Guess words, music, scenes and sound sources. Explain or perform tasks for others."
+          }
+        }
+      ]
+    },
+    {
+      "id": "encoding",
+      "title": {
+        "ru": "Как игра передаёт информацию звуком",
+        "en": "How games convey information through sound"
+      },
+      "intro": {
+        "ru": "Способы представления данных и обратной связи. Один и тот же способ может поддерживать разные игровые действия.",
+        "en": "These methods represent data and feedback. The same method can support different game actions."
+      },
+      "entries": [
+        {
+          "id": "encoding-1",
+          "title": {
+            "ru": "Озвученное описание",
+            "en": "Spoken descriptions"
+          },
+          "text": {
+            "ru": "Прямое сообщение о положении, событии или состоянии. Доклад персонажа внутри мира. Диалог или аудиоспектакль, содержащий игровые сведения.",
+            "en": "Directly describe positions, events or states. Use in-world reports, dialogue or audio drama containing game information."
+          }
+        },
+        {
+          "id": "encoding-2",
+          "title": {
+            "ru": "Смысловой звук объекта",
+            "en": "Meaningful object sounds"
+          },
+          "text": {
+            "ru": "Шаги, работа механизма, шум воды или звон предмета. Характерная звуковая подпись объекта. Изменение звучания при изменении состояния.",
+            "en": "Use footsteps, mechanisms, water or ringing objects. Give objects sound signatures and change their sound with state."
+          }
+        },
+        {
+          "id": "encoding-3",
+          "title": {
+            "ru": "Условный звуковой знак",
+            "en": "Designed audio symbols"
+          },
+          "text": {
+            "ru": "Короткий сигнал для отдельного события. Набор сигналов для типов объектов или угроз. Звуковой алфавит с выученными соответствиями.",
+            "en": "Use brief event cues, sets identifying object or threat types, or a learned sound alphabet."
+          }
+        },
+        {
+          "id": "encoding-4",
+          "title": {
+            "ru": "Непрерывная сонификация",
+            "en": "Continuous sonification"
+          },
+          "text": {
+            "ru": "Высота тона представляет число или положение. Темп импульсов представляет дистанцию, скорость или близость к цели. Тембр, громкость или плотность представляют уровень игрового параметра.",
+            "en": "Map pitch to numbers or position; pulse rate to distance, speed or goal proximity; and timbre, loudness or density to parameters."
+          }
+        },
+        {
+          "id": "encoding-5",
+          "title": {
+            "ru": "Пространственное представление",
+            "en": "Spatial representation"
+          },
+          "text": {
+            "ru": "Стереопозиция или пространственный источник задаёт направление. Изменение слышимости передаёт движение и преграды. Распределение источников представляет сцену или карту.",
+            "en": "Use stereo or spatial sources for direction. Change audibility for movement and barriers. Distribute sources to represent scenes or maps."
+          }
+        },
+        {
+          "id": "encoding-6",
+          "title": {
+            "ru": "Музыкальное представление",
+            "en": "Musical representation"
+          },
+          "text": {
+            "ru": "Мотив обозначает персонажа, место или объект. Партии и гармония передают состояние системы. Музыкальный переход сигнализирует смену игровой фазы.",
+            "en": "Identify characters, places or objects with motifs. Use parts and harmony for system state and musical transitions for phase changes."
+          }
+        },
+        {
+          "id": "encoding-7",
+          "title": {
+            "ru": "Контраст и отсутствие звука",
+            "en": "Contrast and silence"
+          },
+          "text": {
+            "ru": "Исчезновение ожидаемого сигнала сообщает об изменении. Пауза обозначает окно действия или границу последовательности. Несоответствие голосов и фоновых событий создаёт улику.",
+            "en": "Missing expected cues indicate change. Pauses mark action windows or sequence boundaries. Inconsistency between speech and background events provides evidence."
+          }
+        },
+        {
+          "id": "encoding-8",
+          "title": {
+            "ru": "Запрос информации",
+            "en": "Information on request"
+          },
+          "text": {
+            "ru": "Прослушать нужный объект или получить сводку по запросу. Переключить точку прослушивания или канал. Провести активное зондирование и интерпретировать отклик.",
+            "en": "Listen to objects or request summaries. Switch listening position or channel. Probe actively and interpret the response."
+          }
+        }
+      ]
+    },
+    {
+      "id": "modifiers",
+      "title": {
+        "ru": "Параметры, создающие ответвления",
+        "en": "Parameters that create variations"
+      },
+      "intro": {
+        "ru": "Эти параметры можно сочетать с любым семейством. Выбор значения сам по себе ещё не является самостоятельной игровой механикой.",
+        "en": "Combine these parameters with any family. Selecting a parameter value alone does not constitute an independent mechanic."
+      },
+      "entries": [
+        {
+          "id": "modifiers-1",
+          "title": {
+            "ru": "Роль звука",
+            "en": "Role of sound"
+          },
+          "text": {
+            "ru": "Единственный канал восприятия. Главный канал с дополнительной графикой. Локальная механика внутри обычной видеоигры. Общение между людьми без распознавания компьютером.",
+            "en": "Sole perception channel; primary channel with graphics; local mechanic within a visual game; human communication without computer recognition."
+          }
+        },
+        {
+          "id": "modifiers-2",
+          "title": {
+            "ru": "Способ ввода",
+            "en": "Input method"
+          },
+          "text": {
+            "ru": "Смысл речи. Акустические свойства голоса или шума. Кнопки и жесты при звуковой обратной связи. Сочетание голоса, контроллера и пространственных датчиков.",
+            "en": "Speech meaning; acoustic voice or noise properties; buttons and gestures with audio feedback; combined voice, controller and spatial sensors."
+          }
+        },
+        {
+          "id": "modifiers-3",
+          "title": {
+            "ru": "Время",
+            "en": "Time"
+          },
+          "text": {
+            "ru": "Пошаговое действие. Реальное время. Ответ в ограниченное окно. Отложенное исполнение или асинхронное сообщение.",
+            "en": "Turn-based actions; real time; bounded response windows; delayed execution or asynchronous messages."
+          }
+        },
+        {
+          "id": "modifiers-4",
+          "title": {
+            "ru": "Доступность сведений",
+            "en": "Information availability"
+          },
+          "text": {
+            "ru": "Все данные слышны сразу. Данные открываются по запросу или перемещению. Часть информации скрыта или устаревает. Разные участники получают разные сведения.",
+            "en": "Everything audible immediately; information revealed on request or movement; hidden or outdated information; complementary information across participants."
+          }
+        },
+        {
+          "id": "modifiers-5",
+          "title": {
+            "ru": "Надёжность сведений",
+            "en": "Information reliability"
+          },
+          "text": {
+            "ru": "Сигнал однозначен. Сигнал неоднозначен или неполон. Источник может ошибаться. Источник целенаправленно обманывает в рамках игры.",
+            "en": "Unambiguous signals; ambiguous or incomplete signals; mistaken sources; intentional deception within the game."
+          }
+        },
+        {
+          "id": "modifiers-6",
+          "title": {
+            "ru": "Число участников",
+            "en": "Participants"
+          },
+          "text": {
+            "ru": "Один игрок. Игрок и управляемый системой собеседник. Кооперативная группа. Соперники или команды.",
+            "en": "Solo player; player and system-controlled interlocutor; cooperative group; opponents or teams."
+          }
+        },
+        {
+          "id": "modifiers-7",
+          "title": {
+            "ru": "Что оценивается",
+            "en": "Evaluation"
+          },
+          "text": {
+            "ru": "Правильность решения или содержание реплики. Точность высоты, ритма, громкости или формы звука. Время, эффективность и расход ресурсов. Согласованность, понятность или групповое решение.",
+            "en": "Solution correctness or speech content; pitch, rhythm, loudness or sound-shape accuracy; timing, efficiency and resources; coordination, clarity or group decisions."
+          }
+        },
+        {
+          "id": "modifiers-8",
+          "title": {
+            "ru": "Цена действия",
+            "en": "Action cost"
+          },
+          "text": {
+            "ru": "Расход внутриигрового ресурса. Рост риска обнаружения. Занятость канала связи или внимания. Необратимое изменение отношений или состояния мира.",
+            "en": "Game resources; detection risk; channel or attention occupation; irreversible relationship or world changes."
+          }
+        },
+        {
+          "id": "modifiers-9",
+          "title": {
+            "ru": "Развитие навыка",
+            "en": "Skill progression"
+          },
+          "text": {
+            "ru": "Растущая длина и сложность последовательности. Освоение новых сигналов, слов и правил. Уменьшение подсказок и рост самостоятельности. Сочетание ранее освоенных механик.",
+            "en": "Longer and more complex sequences; new signals, words and rules; fewer hints and greater independence; combinations of mastered mechanics."
+          }
+        },
+        {
+          "id": "modifiers-10",
+          "title": {
+            "ru": "Вариативность задачи",
+            "en": "Task variation"
+          },
+          "text": {
+            "ru": "Заранее созданные ситуации. Процедурные комбинации сигналов и объектов. Адаптация к измеримому игровому исполнению. Генеративные реплики в пределах определённого состояния и правил.",
+            "en": "Authored situations; procedural signals and objects; adaptation to measurable performance; generated dialogue bounded by state and rules."
+          }
+        }
+      ]
+    },
+    {
+      "id": "combinations",
+      "title": {
+        "ru": "16 сочетаний механик",
+        "en": "16 mechanic combinations"
+      },
+      "intro": {
+        "ru": "Предложения для дизайна. Названия здесь обозначают концепции, а не реальные игры.",
+        "en": "Design proposals. These titles name concepts rather than released games."
+      },
+      "entries": [
+        {
+          "id": "combinations-1",
+          "title": {
+            "ru": "Разведчик в темноте",
+            "en": "Scout in darkness"
+          },
+          "text": {
+            "ru": "Локализация + эхолокация + скрытность: каждый импульс даёт карту, но сообщает врагу положение.",
+            "en": "Localization + echolocation + stealth: pulses reveal a map but expose position to enemies."
+          }
+        },
+        {
+          "id": "combinations-2",
+          "title": {
+            "ru": "Диспетчер спасательной операции",
+            "en": "Rescue dispatcher"
+          },
+          "text": {
+            "ru": "Командование + ограниченный эфир + неполные доклады: выбрать, кого направить, кому ответить и что перепроверить.",
+            "en": "Command + limited radio + incomplete reports: decide whom to send, answer and double-check."
+          }
+        },
+        {
+          "id": "combinations-3",
+          "title": {
+            "ru": "Акустический детектив",
+            "en": "Acoustic detective"
+          },
+          "text": {
+            "ru": "Прослушивание + узнавание голосов + временная реконструкция: собрать единую картину из параллельных разговоров.",
+            "en": "Listening + voice recognition + chronology: reconstruct events from parallel conversations."
+          }
+        },
+        {
+          "id": "combinations-4",
+          "title": {
+            "ru": "Магический язык",
+            "en": "Magical language"
+          },
+          "text": {
+            "ru": "Открытие словаря + произнесение формул + музыкальные отношения: вывести язык и применить его к механизмам.",
+            "en": "Vocabulary discovery + spoken formulas + musical relationships: infer a language and apply it to mechanisms."
+          }
+        },
+        {
+          "id": "combinations-5",
+          "title": {
+            "ru": "Слепой навигатор",
+            "en": "Blind navigator"
+          },
+          "text": {
+            "ru": "Звуковые ориентиры + память маршрута + меняющийся мир: пройти путь, затем вернуться после исчезновения маяков.",
+            "en": "Audio landmarks + route memory + changing world: travel a route and return after beacons disappear."
+          }
+        },
+        {
+          "id": "combinations-6",
+          "title": {
+            "ru": "Звуковой взломщик",
+            "en": "Sound lockpicker"
+          },
+          "text": {
+            "ru": "Запись + монтаж + звуковой замок: собрать подходящий сигнал из найденных фрагментов.",
+            "en": "Recording + editing + sound locks: assemble a suitable signal from discovered fragments."
+          }
+        },
+        {
+          "id": "combinations-7",
+          "title": {
+            "ru": "Дуэт с разделённой информацией",
+            "en": "Duet with divided information"
+          },
+          "text": {
+            "ru": "Музыкальное исполнение + кооперация: каждый участник знает только свою партию и часть правила.",
+            "en": "Musical performance + cooperation: each participant knows only their part and part of the rule."
+          }
+        },
+        {
+          "id": "combinations-8",
+          "title": {
+            "ru": "Радио с ненадёжным собеседником",
+            "en": "Unreliable radio partner"
+          },
+          "text": {
+            "ru": "Диалог + противоречивые сведения + навигация: сравнивать указания с тем, что действительно слышно вокруг.",
+            "en": "Dialogue + conflicting information + navigation: compare guidance with surrounding audible events."
+          }
+        },
+        {
+          "id": "combinations-9",
+          "title": {
+            "ru": "Охота на звуковые подделки",
+            "en": "Hunting sound counterfeits"
+          },
+          "text": {
+            "ru": "Распознавание + приманки + память: противник воспроизводит знакомые звуки, а игрок ищет несоответствия.",
+            "en": "Recognition + lures + memory: detect inconsistencies in an opponent's familiar-sound imitations."
+          }
+        },
+        {
+          "id": "combinations-10",
+          "title": {
+            "ru": "Мастер акустических машин",
+            "en": "Acoustic machine specialist"
+          },
+          "text": {
+            "ru": "Диагностика + фильтрация + управление механизмами: определить поломку и проверить результат ремонта на слух.",
+            "en": "Diagnosis + filtering + mechanisms: identify faults and verify repairs by listening."
+          }
+        },
+        {
+          "id": "combinations-11",
+          "title": {
+            "ru": "Побег во время концерта",
+            "en": "Escape during a concert"
+          },
+          "text": {
+            "ru": "Ритм + маскировка шума + ограниченный маршрут: двигаться только тогда, когда оркестр перекрывает шаги.",
+            "en": "Rhythm + noise masking + constrained routes: move while the orchestra masks footsteps."
+          }
+        },
+        {
+          "id": "combinations-12",
+          "title": {
+            "ru": "Переговоры под давлением времени",
+            "en": "Time-pressured negotiations"
+          },
+          "text": {
+            "ru": "Торг + скрытые сведения + узкие окна ответа: найти соглашение до изменения ситуации.",
+            "en": "Bargaining + hidden information + short response windows: agree before circumstances change."
+          }
+        },
+        {
+          "id": "combinations-13",
+          "title": {
+            "ru": "Синхронный звуковой код",
+            "en": "Synchronized sound code"
+          },
+          "text": {
+            "ru": "Ритмические последовательности + несколько исполнителей: открыть механизм только согласованным звучанием.",
+            "en": "Rhythmic sequences + several performers: open a mechanism through coordinated sound."
+          }
+        },
+        {
+          "id": "combinations-14",
+          "title": {
+            "ru": "Архив исчезнувшего города",
+            "en": "Archive of a vanished city"
+          },
+          "text": {
+            "ru": "Записи + звуковые подписи мест + ментальная карта: восстановить пространство по разрозненным аудиофрагментам.",
+            "en": "Recordings + place signatures + mental maps: reconstruct space from scattered audio fragments."
+          }
+        },
+        {
+          "id": "combinations-15",
+          "title": {
+            "ru": "Командная звуковая сцена",
+            "en": "Team sound scene"
+          },
+          "text": {
+            "ru": "Имитация + групповое выступление + угадывание: создать событие только голосами и предметами.",
+            "en": "Imitation + group performance + guessing: create an event using voices and objects."
+          }
+        },
+        {
+          "id": "combinations-16",
+          "title": {
+            "ru": "Эфирная стратегия",
+            "en": "Radio strategy"
+          },
+          "text": {
+            "ru": "Ресурсы + доклады + приоритеты связи: управлять несколькими территориями через ограниченный звуковой обзор.",
+            "en": "Resources + reports + communication priorities: manage territories with limited audio awareness."
+          }
+        }
+      ]
+    },
+    {
+      "id": "boundaries",
+      "title": {
+        "ru": "Границы классификации",
+        "en": "Classification limits"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "boundaries-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Перечень описывает пространство дизайна. Примеры подтверждают конкретные механики игр, а не все ответвления соответствующего семейства.",
+            "en": "This is a design space. Examples support particular game mechanics rather than every variation in a family."
+          }
+        },
+        {
+          "id": "boundaries-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Голосовое управление, игра по звуку и общение между игроками могут существовать независимо друг от друга.",
+            "en": "Voice control, audio-based play and communication between players can exist independently."
+          }
+        },
+        {
+          "id": "boundaries-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Эхолокация с визуализацией не гарантирует возможность играть без экрана. Для Stifled, Lurking и Perception здесь указан именно гибридный формат.",
+            "en": "Visualized echolocation does not guarantee screen-free play. Stifled, Lurking and Perception are hybrid examples here."
+          }
+        },
+        {
+          "id": "boundaries-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Микрофон непосредственно измеряет звук. Тишина сама по себе не доказывает задержку дыхания, а громкость не равна достоверному измерению усилия или расстояния до говорящего.",
+            "en": "Microphones measure sound. Silence does not prove breath-holding, and loudness does not reliably measure effort or speaker distance."
+          }
+        },
+        {
+          "id": "boundaries-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Эмоция и правдивость не определяются надёжно по одной интонации. Игровая оценка может опираться на содержание, заданные акустические правила или решение людей.",
+            "en": "Intonation alone does not reliably establish emotion or truthfulness. Game judgments can use content, explicit acoustic rules or human decisions."
+          }
+        },
+        {
+          "id": "boundaries-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Пространственное аудио на выходе и определение положения реального говорящего на входе требуют разных технических средств. Обычный одиночный микрофон не даёт полноценного пространственного управления.",
+            "en": "Spatial audio output and locating a real speaker require different technologies. A single ordinary microphone does not provide full spatial control."
+          }
+        },
+        {
+          "id": "boundaries-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Распознавание речи, синтез речи, бинауральное аудио и подавление шума являются технологиями. Игровая механика появляется, когда с ними связаны действие, правило, обратная связь и значимый результат.",
+            "en": "Speech recognition, synthesis, binaural audio and noise suppression are technologies. Mechanics require actions, rules, feedback and meaningful outcomes."
+          }
+        },
+        {
+          "id": "boundaries-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Озвучивание меню, повтор реплики, настройка темпа и текстовые альтернативы относятся к устройству интерфейса. Они могут поддерживать любую из перечисленных механик.",
+            "en": "Spoken menus, replay, tempo settings and text alternatives are interface features supporting any of these mechanics."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "There Came an Echo",
+        "en": "There Came an Echo"
+      },
+      "url": "https://blog.playstation.com/2016/05/23/there-came-an-echo-hits-ps4-on-may-31/",
+      "description": {
+        "ru": "Голосовые приказы тактическому отряду, групповые команды и собственные названия команд.",
+        "en": "Voice orders to a tactical squad, group commands and custom command aliases."
+      }
+    },
+    {
+      "title": {
+        "ru": "Earplay / Codename Cygnus",
+        "en": "Earplay / Codename Cygnus"
+      },
+      "url": "https://earplay.com/press/",
+      "description": {
+        "ru": "Аудиоистории, в которых речь игрока служит вводом.",
+        "en": "Interactive audio stories use player speech as input."
+      }
+    },
+    {
+      "title": {
+        "ru": "Phasmophobia",
+        "en": "Phasmophobia"
+      },
+      "url": "https://store.steampowered.com/app/739630/Phasmophobia/?l=english",
+      "description": {
+        "ru": "Взаимодействие с призраками реальным голосом через Spirit Box и Ouija Board.",
+        "en": "Use real voice to interact with ghosts through the Spirit Box and Ouija Board."
+      }
+    },
+    {
+      "title": {
+        "ru": "In Verbis Virtus",
+        "en": "In Verbis Virtus"
+      },
+      "url": "https://store.steampowered.com/app/242840/In_Verbis_Virtus/",
+      "description": {
+        "ru": "Произнесение заклинаний на вымышленном языке для головоломок и боя.",
+        "en": "Speak spells in a fictional language to solve puzzles and fight."
+      }
+    },
+    {
+      "title": {
+        "ru": "Song Quiz / Volley",
+        "en": "Song Quiz / Volley"
+      },
+      "url": "https://www.weekend.com/volleygames",
+      "description": {
+        "ru": "Узнавание песен в голосовом игровом формате.",
+        "en": "Recognize songs in a voice-based game format."
+      }
+    },
+    {
+      "title": {
+        "ru": "Scream Go Hero",
+        "en": "Scream Go Hero"
+      },
+      "url": "https://apps.apple.com/us/app/scream-go-hero/id1212039074",
+      "description": {
+        "ru": "Тихий голос для ходьбы и крик для прыжка.",
+        "en": "Soft voice controls walking; screaming controls jumping."
+      }
+    },
+    {
+      "title": {
+        "ru": "One Hand Clapping",
+        "en": "One Hand Clapping"
+      },
+      "url": "https://baddreamgames.com/one-hand-clapping/",
+      "description": {
+        "ru": "Музыкальные головоломки с мелодией, ритмом, гармонией и дуэтами.",
+        "en": "Musical puzzles use melody, rhythm, harmony and duets."
+      }
+    },
+    {
+      "title": {
+        "ru": "Stifled",
+        "en": "Stifled"
+      },
+      "url": "https://blog.playstation.com/?p=195448",
+      "description": {
+        "ru": "Звуки раскрывают пространство и одновременно позволяют врагам обнаружить игрока.",
+        "en": "Sounds reveal space and expose the player to enemies."
+      }
+    },
+    {
+      "title": {
+        "ru": "Lurking",
+        "en": "Lurking"
+      },
+      "url": "https://www.lurking-game.com/",
+      "description": {
+        "ru": "Звуковые импульсы от движения, предметов и микрофона раскрывают окружение и привлекают врагов.",
+        "en": "Movement, objects and microphone pulses reveal surroundings and attract enemies."
+      }
+    },
+    {
+      "title": {
+        "ru": "A Blind Legend",
+        "en": "A Blind Legend"
+      },
+      "url": "https://www.dowino.com/realisations/serious-game-ablindlegend/",
+      "description": {
+        "ru": "Исследование и бой через пространственное аудио.",
+        "en": "Exploration and combat through spatial audio."
+      }
+    },
+    {
+      "title": {
+        "ru": "The Vale: Shadow of the Crown",
+        "en": "The Vale: Shadow of the Crown"
+      },
+      "url": "https://falling-squirrel.itch.io/the-vale",
+      "description": {
+        "ru": "Бой и исследование с пространственным аудио и тактильной обратной связью.",
+        "en": "Combat and exploration through spatial audio and haptic feedback."
+      }
+    },
+    {
+      "title": {
+        "ru": "Blind Drive",
+        "en": "Blind Drive"
+      },
+      "url": "https://blinddrivegame.com/press/sheet.php?p=blind_drive",
+      "description": {
+        "ru": "Аркадное вождение по звуковой информации с управлением двумя кнопками.",
+        "en": "Audio-driven arcade driving with two-button controls."
+      }
+    },
+    {
+      "title": {
+        "ru": "AudioWizards",
+        "en": "AudioWizards"
+      },
+      "url": "https://store.steampowered.com/app/1215350/AudioWizards/?l=dutch",
+      "description": {
+        "ru": "Распознавание стихии противника по звуку и выбор соответствующего противодействия.",
+        "en": "Identify enemy elements by sound and choose a corresponding countermeasure."
+      }
+    },
+    {
+      "title": {
+        "ru": "Unheard",
+        "en": "Unheard"
+      },
+      "url": "https://store.steampowered.com/app/942970/Unheard/?l=english",
+      "description": {
+        "ru": "Прослушивание разговоров, сопоставление имён с голосами и восстановление связей между событиями.",
+        "en": "Listen to conversations, match names to voices and reconstruct event relationships."
+      }
+    },
+    {
+      "title": {
+        "ru": "Perception",
+        "en": "Perception"
+      },
+      "url": "https://store.steampowered.com/app/426310/Perception/?l=english",
+      "description": {
+        "ru": "Звук помогает видеть пространство; производимый шум привлекает преследователя.",
+        "en": "Sound visualizes space while noise attracts a pursuer."
+      }
+    },
+    {
+      "title": {
+        "ru": "Keep Talking and Nobody Explodes",
+        "en": "Keep Talking and Nobody Explodes"
+      },
+      "url": "https://keeptalkinggame.com/",
+      "description": {
+        "ru": "Игрок с бомбой и эксперты с руководством решают задачу через общение и разделённую информацию.",
+        "en": "A bomb handler and manual-holding experts cooperate through divided information."
+      }
+    },
+    {
+      "title": {
+        "ru": "SoundRTS",
+        "en": "SoundRTS"
+      },
+      "url": "https://github.com/soundmud/soundrts",
+      "description": {
+        "ru": "Стратегия в реальном времени в звуковом интерфейсе; пример переноса знакомого игрового цикла в аудиоформат.",
+        "en": "Real-time strategy through an audio interface."
+      }
+    }
+  ]
+}

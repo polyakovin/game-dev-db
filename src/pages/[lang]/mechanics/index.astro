@@ -1,0 +1,52 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import MechanicsCards from '../../../components/MechanicsCards.astro';
+import { getMechanics } from '../../../lib/mechanics.mjs';
+import { locales, ui, type Locale } from '../../../lib/site';
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const ru = lang === 'ru';
+const counts = getMechanics(lang).reduce(
+  (sum, c) => ({
+    families: sum.families + c.counts.families,
+    variants: sum.variants + c.counts.variants,
+  }),
+  { families: 0, variants: 0 },
+);
+---
+
+<Layout
+  lang={lang}
+  title={ui[lang].mechanics}
+  section="mechanics"
+  alternate="mechanics/"
+>
+  <header class="page-header">
+    <div class="eyebrow">
+      {ru ? 'Справочники для проектирования' : 'References for game design'}
+    </div>
+    <h1>{ru ? 'Из чего складывается игра.' : 'What makes up a game.'}</h1>
+    <p>
+      {ru
+        ? 'Три подробные карты механик: действия игрока, ответвления, сочетания и примеры с источниками. Выберите формат и найдите подходящий приём для прототипа.'
+        : 'Three detailed mechanic maps: player actions, variants, combinations and sourced examples. Choose a format and find a technique for your prototype.'}
+    </p>
+    <div class="article-meta">
+      <span>
+        {counts.families} {ru ? 'семейств' : 'families'}
+      </span>
+      <span>
+        {counts.variants.toLocaleString(lang)} {ru ? 'вариантов' : 'variants'}
+      </span>
+      <span>RU + EN</span>
+    </div>
+  </header>
+  <MechanicsCards lang={lang} />
+  <p class="notice mechanics-notice">
+    {ru
+      ? 'Это рабочие классификации пространства дизайна. Семейства могут пересекаться, а примеры проектирования являются иллюстрациями. Источники подтверждают отдельные приёмы и методологию.'
+      : 'These are working classifications of a design space. Families can overlap and design examples are illustrative. Sources support particular techniques and methodology.'}
+  </p>
+</Layout>

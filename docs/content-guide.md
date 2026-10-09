@@ -72,6 +72,10 @@ List lesson sources in frontmatter so the lesson page and agent exports can reta
 
 Write original explanations. Quote only what is necessary and clearly attribute it. Do not copy paid courses, book chapters, external articles, or code with incompatible license terms. External sources keep their original licenses.
 
+## Mechanic reference catalogs
+
+Full taxonomies live in `src/data/mechanics/{id}.json`. They use one shared hierarchy with RU/EN text values and produce HTML, JSON and Markdown through the same module. Keep all variants, design notes, source descriptions and classification limits aligned across languages. See [the mechanic content contract](mechanics-content.md) for identities, provenance, validation and exports. Use focused lesson Markdown for tutorials; use this catalog format for a browsable taxonomy.
+
 ## Curated resource catalog
 
 Add independent resource recommendations to `src/data/resources.json`. Each record needs a unique lowercase, hyphen-separated `id`, a public HTTPS `url`, a lesson `category`, a `language` (`en`, `ru`, or `multi`), and a `kind` (`documentation`, `book`, `article`, or `tool`). Both `title` and `description` are objects with nonempty `ru` and `en` strings. The descriptions should explain when the resource is useful, not promise results.

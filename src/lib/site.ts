@@ -16,6 +16,7 @@ export const ui = {
   ru: {
     catalog: 'База знаний',
     resources: 'Ресурсы',
+    mechanics: 'Механики',
     agents: 'Для ИИ-агентов',
     contribute: 'Дополнить базу',
     navigation: 'Навигация',
@@ -50,6 +51,7 @@ export const ui = {
   en: {
     catalog: 'Knowledge base',
     resources: 'Resources',
+    mechanics: 'Mechanics',
     agents: 'For AI agents',
     contribute: 'Contribute',
     navigation: 'Navigation',

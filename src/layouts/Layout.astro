@@ -6,7 +6,7 @@ interface Props {
   lang: Locale;
   title: string;
   description?: string;
-  section?: 'catalog' | 'resources' | 'agents';
+  section?: 'catalog' | 'mechanics' | 'resources' | 'agents';
   alternate?: string;
 }
 const {
@@ -24,6 +24,7 @@ const canonical = new URL(Astro.url.pathname, 'https://polyakovin.github.io')
   .href;
 const nav = [
   { key: 'catalog', href: path(`${lang}/`), icon: 'book' },
+  { key: 'mechanics', href: path(`${lang}/mechanics/`), icon: 'layers' },
   { key: 'resources', href: path(`${lang}/resources/`), icon: 'layers' },
   { key: 'agents', href: path(`${lang}/for-agents/`), icon: 'code' },
 ] as const;

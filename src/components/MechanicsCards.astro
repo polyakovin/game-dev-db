@@ -1,0 +1,37 @@
+---
+import { getMechanics } from '../lib/mechanics.mjs';
+import { path, type Locale } from '../lib/site';
+import Icon from './Icon.astro';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const catalogs = getMechanics(lang);
+---
+
+<div class="lesson-grid mechanics-cards">
+  {catalogs.map((catalog, i) => (
+    <a
+      class="lesson-card"
+      data-mechanics-card
+      href={path(`${lang}/mechanics/${catalog.id}/`)}
+    >
+      <div class="card-top">
+        <span class="category-tag design">
+          {lang === 'ru' ? 'Справочник' : 'Reference'}
+        </span>
+        <span class="card-index">0{i + 1}</span>
+      </div>
+      <h3>{catalog.title}</h3>
+      <p>{catalog.description}</p>
+      <div class="card-bottom">
+        <span>
+          {catalog.counts.families} {lang === 'ru' ? 'семейств' : 'families'}
+          <b>·</b>
+          {catalog.counts.variants} {lang === 'ru' ? 'вариантов' : 'variants'}
+        </span>
+        <Icon name="arrow" size={18} />
+      </div>
+    </a>
+  ))}
+</div>
