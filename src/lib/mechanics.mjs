@@ -1,9 +1,10 @@
 import voice from '../data/mechanics/voice-audio.json' with { type: 'json' };
 import point from '../data/mechanics/point-and-click.json' with { type: 'json' };
 import children from '../data/mechanics/children-education.json' with { type: 'json' };
+import detective from '../data/mechanics/detective.json' with { type: 'json' };
 import { absolute } from './site.ts';
 
-export const mechanicCatalogs = [voice, point, children];
+export const mechanicCatalogs = [voice, point, children, detective];
 
 /** @param {'ru' | 'en'} lang */
 export function getMechanics(lang) {
@@ -66,7 +67,9 @@ export function getMechanics(lang) {
       codeLicense: 'MIT',
       attribution: 'Game Dev DB contributors',
       provenance:
-        'Original taxonomy adapted from user-selected design discussions; linked sources support specific examples, not the whole classification.',
+        'provenance' in catalog
+          ? catalog.provenance
+          : 'Original taxonomy adapted from user-selected design discussions; linked sources support specific examples, not the whole classification.',
     };
   });
 }
@@ -187,6 +190,12 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
     );
     for (const key of ['title', 'description', 'intro'])
       localized(catalog[key], `${location}/${key}`);
+    if ('provenance' in catalog)
+      check(
+        nonempty(catalog.provenance),
+        location,
+        'provenance must be nonempty',
+      );
     const ids = new Set(['sources']);
     const identity = (id) => {
       check(

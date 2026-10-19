@@ -2,22 +2,30 @@ import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 
 const base = '/game-dev-db';
-const catalogs = ['voice-audio', 'point-and-click', 'children-education'].map(
-  (id) =>
-    JSON.parse(
-      readFileSync(
-        new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
-        'utf8',
-      ),
+const catalogs = [
+  'voice-audio',
+  'point-and-click',
+  'children-education',
+  'detective',
+].map((id) =>
+  JSON.parse(
+    readFileSync(
+      new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
+      'utf8',
     ),
+  ),
 );
 
 for (const lang of ['ru', 'en'] as const) {
   test(`${lang}: mechanics discovery from home and index`, async ({ page }) => {
     await page.goto(`${base}/${lang}/`);
-    await expect(page.locator('[data-mechanics-card]')).toHaveCount(3);
+    await expect(page.locator('[data-mechanics-card]')).toHaveCount(
+      catalogs.length,
+    );
     await page.locator(`.sidebar a[href="${base}/${lang}/mechanics/"]`).click();
-    await expect(page.locator('[data-mechanics-card]')).toHaveCount(3);
+    await expect(page.locator('[data-mechanics-card]')).toHaveCount(
+      catalogs.length,
+    );
     for (const c of catalogs)
       await expect(
         page.locator(
@@ -135,7 +143,12 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
   const data = await (
     await request.get(`${base}/api/v1/mechanics.json`)
   ).json();
-  expect(data.catalogs).toHaveLength(6);
+  expect(data.catalogs).toHaveLength(catalogs.length * 2);
+  expect(data.catalogs.map((c: any) => `${c.lang}/${c.id}`).sort()).toEqual(
+    ['ru', 'en']
+      .flatMap((lang) => catalogs.map((c) => `${lang}/${c.id}`))
+      .sort(),
+  );
   for (const c of data.catalogs) {
     const markdown = await request.get(new URL(c.markdownUrl).pathname);
     expect(markdown.ok()).toBe(true);
@@ -143,5 +156,10 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
       c.families.at(-1).branches.at(-1).variants.at(-1).text,
     );
     expect(c.body).toContain(c.sources[0].url);
+    expect(c.provenance).toBe(
+      c.id === 'detective'
+        ? catalogs.find((source) => source.id === 'detective').provenance
+        : 'Original taxonomy adapted from user-selected design discussions; linked sources support specific examples, not the whole classification.',
+    );
   }
 });

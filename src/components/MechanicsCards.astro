@@ -26,9 +26,9 @@ const catalogs = getMechanics(lang);
       <p>{catalog.description}</p>
       <div class="card-bottom">
         <span>
-          {catalog.counts.families} {lang === 'ru' ? 'семейств' : 'families'}
+          {lang === 'ru' ? 'Семейства' : 'Families'}: {catalog.counts.families}
           <b>·</b>
-          {catalog.counts.variants} {lang === 'ru' ? 'вариантов' : 'variants'}
+          {lang === 'ru' ? 'Варианты' : 'Variants'}: {catalog.counts.variants}
         </span>
         <Icon name="arrow" size={18} />
       </div>
