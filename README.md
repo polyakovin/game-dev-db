@@ -9,7 +9,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 - Original lessons about game foundations, design, engineering, and AI-assisted workflows.
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
-- Mechanic references for voice/audio games, point-and-click adventures, children's educational games, detective games and 30 RPG grind mechanics, plus 124 Boss Fight Atlas mechanics and 199 Game Mechanics entries with their source and game references, in Russian and English.
+- Mechanic references for voice/audio games, point-and-click adventures, children's games, educational games for different ages, detective games and 30 RPG grind mechanics, plus 124 Boss Fight Atlas mechanics and 199 Game Mechanics entries with their source and game references, in Russian and English.
 - Twelve original game-design exercises with constraints, deliverables and checks, in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.

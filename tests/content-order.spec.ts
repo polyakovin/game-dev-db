@@ -94,7 +94,11 @@ for (const lang of ['ru', 'en'] as const) {
         .evaluateAll((cards) =>
           cards.map((c) => c.getAttribute('href')!.split('/').at(-2)),
         ),
-    ).toEqual(ids(mechanics));
+    ).toEqual(
+      ids(
+        mechanics.filter((catalog: any) => catalog.id !== 'children-education'),
+      ),
+    );
     for (const catalog of mechanics) {
       await page.goto(new URL(catalog.url).pathname);
       expect(

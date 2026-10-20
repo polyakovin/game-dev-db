@@ -1,6 +1,8 @@
 import voice from '../data/mechanics/voice-audio.json' with { type: 'json' };
 import point from '../data/mechanics/point-and-click.json' with { type: 'json' };
-import children from '../data/mechanics/children-education.json' with { type: 'json' };
+import combined from '../data/mechanics/children-education.json' with { type: 'json' };
+import children from '../data/mechanics/children.json' with { type: 'json' };
+import education from '../data/mechanics/education.json' with { type: 'json' };
 import detective from '../data/mechanics/detective.json' with { type: 'json' };
 import boss from '../data/mechanics/boss-fight-atlas.json' with { type: 'json' };
 import games from '../data/mechanics/game-mechanics.json' with { type: 'json' };
@@ -13,15 +15,23 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
   voice,
   point,
   children,
+  education,
+  combined,
   detective,
   boss,
   games,
   rpgGrind,
 ]);
 
-/** @param {'ru' | 'en'} lang */
-export function getMechanics(lang) {
-  return orderEntries(mechanicCatalogs, 'mechanics').map((source) => {
+/**
+ * @param {'ru' | 'en'} lang
+ * @param {{ includeArchived?: boolean }} [options]
+ */
+export function getMechanics(lang, { includeArchived = false } = {}) {
+  const catalogs = mechanicCatalogs.filter(
+    (catalog) => includeArchived || catalog.id !== 'children-education',
+  );
+  return orderEntries(catalogs, 'mechanics').map((source) => {
     const catalog = orderMechanicCatalog(source);
     const families = catalog.families.map((family) => ({
       id: family.id,
@@ -162,7 +172,7 @@ export function mechanicsMarkdown(catalog) {
 
 export function mechanicRecords() {
   return /** @type {const} */ (['ru', 'en']).flatMap((lang) =>
-    getMechanics(lang).map((catalog) => ({
+    getMechanics(lang, { includeArchived: true }).map((catalog) => ({
       ...catalog,
       body: mechanicsMarkdown(catalog),
     })),

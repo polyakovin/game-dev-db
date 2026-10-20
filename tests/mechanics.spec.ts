@@ -4,9 +4,18 @@ import { validateMechanics } from '../src/lib/mechanics.mjs';
 import { orderMechanicCatalog } from '../src/lib/content-order.mjs';
 
 const base = '/game-dev-db';
+const readCatalog = (id: string) =>
+  JSON.parse(
+    readFileSync(
+      new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
+      'utf8',
+    ),
+  );
 const catalogs = [
   'voice-audio',
   'point-and-click',
+  'children',
+  'education',
   'children-education',
   'detective',
   'boss-fight-atlas',
@@ -23,17 +32,26 @@ const catalogs = [
   )
   .map(orderMechanicCatalog);
 
+const activeCatalogs = catalogs.filter(
+  (catalog) => catalog.id !== 'children-education',
+);
+
 for (const lang of ['ru', 'en'] as const) {
   test(`${lang}: mechanics discovery from home and index`, async ({ page }) => {
     await page.goto(`${base}/${lang}/`);
     await expect(page.locator('[data-mechanics-card]')).toHaveCount(
-      catalogs.length,
+      activeCatalogs.length,
     );
     await page.locator(`.sidebar a[href="${base}/${lang}/mechanics/"]`).click();
     await expect(page.locator('[data-mechanics-card]')).toHaveCount(
-      catalogs.length,
+      activeCatalogs.length,
     );
-    for (const c of catalogs)
+    await expect(
+      page.locator(
+        `[data-mechanics-card][href="${base}/${lang}/mechanics/children-education/"]`,
+      ),
+    ).toHaveCount(0);
+    for (const c of activeCatalogs)
       await expect(
         page.locator(
           `[data-mechanics-card][href="${base}/${lang}/mechanics/${c.id}/"]`,
@@ -233,3 +251,78 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
     );
   }
 });
+
+test('split catalogs retain original identities and expand their distinct scopes', () => {
+  const original = readCatalog('children-education');
+  const children = readCatalog('children');
+  const education = readCatalog('education');
+  const originalIds = new Set(original.families.map((f: any) => f.id));
+  for (const old of original.families) {
+    const retained = education.families.find((f: any) => f.id === old.id);
+    expect(retained.branches).toEqual(old.branches);
+    expect(retained.title).toEqual(old.title);
+    expect(retained.example).toEqual(old.example);
+  }
+  for (const catalog of [children, education]) {
+    expect(validateMechanics([catalog])).toEqual([]);
+    expect(
+      catalog.families.filter((f: any) => !originalIds.has(f.id)).length,
+    ).toBeGreaterThanOrEqual(10);
+  }
+  for (const retained of children.families.filter((f: any) =>
+    originalIds.has(f.id),
+  )) {
+    expect(retained).toEqual(
+      original.families.find((f: any) => f.id === retained.id),
+    );
+  }
+  expect(children.families.some((f: any) => f.id === 'toy-play')).toBe(true);
+  expect(
+    education.families.some((f: any) => f.id === 'procedure-simulation'),
+  ).toBe(true);
+  expect(children.families.some((f: any) => f.id === 'family-55')).toBe(false);
+});
+
+for (const lang of ['ru', 'en'] as const) {
+  test(`${lang}: combined links migrate to both references without JavaScript`, async ({
+    browser,
+    baseURL,
+  }) => {
+    const context = await browser.newContext({
+      javaScriptEnabled: false,
+      baseURL,
+      viewport: { width: 375, height: 812 },
+    });
+    const page = await context.newPage();
+    await page.goto(
+      `${base}/${lang}/mechanics/children-education/#family-01-variant-1`,
+    );
+    await expect(page.locator('#family-01-variant-1')).toBeVisible();
+    await expect(page.locator('[data-variant]')).toHaveCount(749);
+    const notice = page.locator('[data-catalog-scope]');
+    await expect(notice.locator('a')).toHaveCount(2);
+    await notice
+      .locator(`a[href="${base}/${lang}/mechanics/children/"]`)
+      .click();
+    await expect(page).toHaveURL(`${base}/${lang}/mechanics/children/`);
+    await expect(page.locator('#toy-play')).toHaveCount(1);
+    await page
+      .locator(
+        `[data-catalog-scope] a[href="${base}/${lang}/mechanics/education/"]`,
+      )
+      .click();
+    await expect(page).toHaveURL(`${base}/${lang}/mechanics/education/`);
+    await expect(page.locator('#procedure-simulation')).toHaveCount(1);
+    await expect(
+      page.locator(
+        `[data-catalog-scope] a[href="${base}/${lang}/mechanics/children/"]`,
+      ),
+    ).toBeVisible();
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth + 1,
+      ),
+    ).toBe(true);
+    await context.close();
+  });
+}

@@ -8,7 +8,9 @@ The `detective` catalog was originally authored for Game Dev DB on 2026-10-19. I
 | --- | --- | --- | --- |
 | `voice-audio` | 27 | 81 | 324 |
 | `point-and-click` | 44 | 44 | 355 |
-| `children-education` | 64 | 64 | 749 |
+| `children` | 44 | 44 | 480 |
+| `education` | 74 | 74 | 829 |
+| `children-education` (compatibility archive) | 64 | 64 | 749 |
 | `detective` | 32 | 32 | 96 |
 | `boss-fight-atlas` | 124 | 124 | 124 |
 | `game-mechanics` | 199 | 199 | 199 |
@@ -38,10 +40,18 @@ Detective examples were checked against developer/publisher pages for The Case o
 
 ## Public export contract
 
-`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently fourteen records). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
+`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently eighteen records, including the combined compatibility archive). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
 
 `/content/mechanics/{lang}/{id}.md` contains the same generated body and frontmatter metadata. Tree arrays are represented in the body rather than duplicated in frontmatter. Source descriptions and classification limits are retained. The additive manifest fields are `endpoints.mechanics`, `endpoints.mechanicsMarkdownTemplate`, and the mechanic counts. Existing lesson counts and templates retain their previous meanings. `llms.txt`, `llms-full.txt`, the sitemap and agent guidance discover the new catalogs.
 
 ## Verification
 
 `npm run check:content` rejects missing translations, invalid or duplicate identities, empty hierarchy nodes, unknown sections and unlisted source URLs. `npm run check:dist` compares every localized variant and note against static HTML, compares full JSON and Markdown records against the source, and checks corpus discovery. `npm run test:e2e` covers both languages, every catalog, combined filters, reset, native keyboard disclosure, deep links, narrow layouts, no-JavaScript reading and exports. Run `npm run verify` before delivery and the browser suite before publication.
+
+## Children and education split (2026-10-20)
+
+The active `children` reference selects 34 play-relevant original families and adds ten families (80 variants) for toys, pretend rules, care, dress-up and decoration, pursuit, jumping, vehicles, sensory materials, comic reactions and guessing. It covers play for its own sake. The active `education` reference retains every original family/variant ID and all 749 original variants, then adds ten applied families (80 variants) for source verification, evidence-based arguments, concept maps, documentation use, peer review, procedural and dialogue practice, laboratory records, distributed expertise and client projects. It covers children, teenagers and adults. Applied families deliberately refine broad original actions; family boundaries are editorial, not a validated or exhaustive taxonomy.
+
+The scopes overlap: audience and learning purpose are independent axes. Shared original IDs remain stable within each catalog namespace. Review both successor catalogs when correcting shared entries. Each catalog has its own bilingual source, scope notes, examples and primary sources. Developer pages for Toca Boca World and Sago Mini World support only the described play examples. PhET and Minecraft Education support their specific inquiry and subject-tool examples; Dunlosky et al. contextualizes the instructional techniques. All new design scenarios are hypothetical. No educational outcome, age certification or completed playtest is claimed.
+
+The original `children-education.json` remains unchanged. Its HTML route and anchors, JSON record and Markdown endpoint preserve the complete original content, provenance and date. A static notice links both successors. Default `getMechanics(lang)` returns active references for cards and index counts; `{ includeArchived: true }` includes the archive for HTML and complete exports. Manifest totals describe the complete exported dataset, including archives. JSON v1 fields and identities are unchanged; four new localized records are added. Both new references link each other without JavaScript.

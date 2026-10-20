@@ -4,7 +4,7 @@ import { getMechanics } from '../../../lib/mechanics.mjs';
 import { locales, path, ui, REPO } from '../../../lib/site';
 export function getStaticPaths() {
   return locales.flatMap((lang) =>
-    getMechanics(lang).map((catalog) => ({
+    getMechanics(lang, { includeArchived: true }).map((catalog) => ({
       params: { lang, id: catalog.id },
       props: { catalog },
     })),
@@ -26,6 +26,59 @@ const t = ui[lang];
   <a class="back-link" href={path(`${lang}/mechanics/`)}>
     ← {ru ? 'Все справочники механик' : 'All mechanic references'}
   </a>
+  {['children-education', 'children', 'education'].includes(catalog.id) && (
+    <aside
+      class="notice catalog-scope-notice"
+      data-catalog-scope
+      aria-label={ru ? 'Связанные справочники' : 'Related references'}
+    >
+      {catalog.id === 'children-education' ? (
+        <>
+          <p>
+            {ru
+              ? 'Этот справочник разделён на два. Детские игры выделены по аудитории, образовательные по учебной цели. Ниже сохранена исходная версия для старых ссылок.'
+              : 'This reference has been split into two. Children’s games are defined by audience; educational games by learning purpose. The original version remains below for existing links.'}
+          </p>
+          <ul>
+            <li>
+              <a href={path(`${lang}/mechanics/children/`)}>
+                {ru ? 'Механики детских игр' : 'Children’s game mechanics'}
+              </a>
+            </li>
+            <li>
+              <a href={path(`${lang}/mechanics/education/`)}>
+                {ru
+                  ? 'Механики образовательных игр'
+                  : 'Educational game mechanics'}
+              </a>
+            </li>
+          </ul>
+        </>
+      ) : catalog.id === 'children' ? (
+        <p>
+          {ru
+            ? 'Нужна игра с учебной целью? '
+            : 'Designing a game with a learning goal? '}
+          <a href={path(`${lang}/mechanics/education/`)}>
+            {ru
+              ? 'Справочник образовательных механик'
+              : 'Explore educational mechanics'}
+          </a>
+        </p>
+      ) : (
+        <p>
+          {ru
+            ? 'Проектируете игру для детей? '
+            : 'Designing a game for children? '}
+          <a href={path(`${lang}/mechanics/children/`)}>
+            {ru
+              ? 'Свободная игра и другие детские механики'
+              : 'Explore open-ended play and other children’s mechanics'}
+          </a>
+        </p>
+      )}
+    </aside>
+  )}
   <header class="page-header">
     <div class="eyebrow">{ru ? 'Карта механик' : 'Mechanic map'}</div>
     <h1>{catalog.title}</h1>
@@ -254,3 +307,14 @@ const t = ui[lang];
   import '../../../scripts/mechanics-search';
   import '../../../scripts/table-of-contents';
 </script>
+
+<style>
+  .catalog-scope-notice {
+    margin-bottom: 28px;
+  }
+  .catalog-scope-notice a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+</style>

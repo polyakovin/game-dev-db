@@ -39,11 +39,11 @@ export async function GET() {
       practiceTranslationPairs: getPractice('ru').counts.tasks,
       mechanics: mechanics.length,
       mechanicsTranslationPairs: mechanics.length / 2,
-      mechanicFamilies: getMechanics('ru').reduce(
+      mechanicFamilies: getMechanics('ru', { includeArchived: true }).reduce(
         (n, c) => n + c.counts.families,
         0,
       ),
-      mechanicVariants: getMechanics('ru').reduce(
+      mechanicVariants: getMechanics('ru', { includeArchived: true }).reduce(
         (n, c) => n + c.counts.variants,
         0,
       ),
