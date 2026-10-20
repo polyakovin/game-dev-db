@@ -1,0 +1,2543 @@
+{
+  "id": "visual-novel",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики визуальных новелл",
+    "en": "Visual novel mechanics"
+  },
+  "description": {
+    "ru": "Механики визуальных новелл: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Visual novel mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Механики",
+        "en": "Mechanics"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Гибридные системы",
+        "en": "Hybrid systems"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Системы доступа",
+        "en": "Access systems"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Структуры",
+        "en": "Structures"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": {
+        "ru": "Сервисные функции",
+        "en": "Reading tools"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": {
+        "ru": "Подача",
+        "en": "Presentation"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Формы выбора",
+        "en": "Forms of choice"
+      },
+      "description": {
+        "ru": "Игрок выбирает реплику, действие, отношение или адресата; игра трактует выбранный вариант как решение героя.",
+        "en": "The player chooses a cue, action, attitude or addressee; the game treats the chosen option as the hero's decision."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-001",
+              "text": {
+                "ru": "Выбор реплики. Тип: Механики. Правило: Игрок определяет, что герой скажет собеседнику.",
+                "en": "Selecting a dialogue line. Type: Mechanics. Rule: The player determines what the hero will say to the interlocutor..."
+              }
+            },
+            {
+              "id": "variant-vn-002",
+              "text": {
+                "ru": "Выбор действия. Тип: Механики. Правило: Решение задаёт поступок: уйти, помочь, спрятаться, вмешаться.",
+                "en": "Selecting an action. Type: Mechanics. Rule: The decision sets the action: leave, help, hide, intervene..."
+              }
+            },
+            {
+              "id": "variant-vn-003",
+              "text": {
+                "ru": "Выбор мысли или отношения к событию. Тип: Механики. Правило: Игрок формирует внутреннюю позицию героя, даже если внешнее действие сохраняется.",
+                "en": "The choice of thought or attitude towards an event. Type: Mechanics. Rule: The player forms the internal position of the hero, even if the external action is preserved."
+              }
+            },
+            {
+              "id": "variant-vn-004",
+              "text": {
+                "ru": "Выбор адресата. Тип: Механики. Правило: Игрок решает, к кому обратиться, кому помочь или кому передать сведения.",
+                "en": "Selecting a recipient. Type: Mechanics. Rule: The player decides who to contact, who to help, or who to pass on information to."
+              }
+            },
+            {
+              "id": "variant-vn-005",
+              "text": {
+                "ru": "Молчание и бездействие. Тип: Механики. Правило: Отказ отвечать или вмешиваться учитывается как самостоятельное решение.",
+                "en": "Silence and inaction. Type: Mechanics. Rule: Refusal to respond or intervene is counted as an independent decision."
+              }
+            },
+            {
+              "id": "variant-vn-006",
+              "text": {
+                "ru": "Выбор с таймером. Тип: Механики. Правило: Решение нужно принять до истечения времени; предусмотрен исход по умолчанию.",
+                "en": "Choice with timer. Type: Mechanics. Rule: A decision must be made before time runs out; default outcome provided."
+              }
+            },
+            {
+              "id": "variant-vn-007",
+              "text": {
+                "ru": "Прерывание собеседника. Тип: Механики. Правило: Игрок выбирает момент, когда перебить речь или начать действие.",
+                "en": "Interrupting the interlocutor. Type: Mechanics. Rule: The player chooses the moment when to interrupt the speech or begin the action."
+              }
+            },
+            {
+              "id": "variant-vn-008",
+              "text": {
+                "ru": "Выбор последовательности. Тип: Механики. Правило: Порядок ответов, действий или посещений влияет на результат.",
+                "en": "Sequence selection. Type: Mechanics. Rule: The order of answers, actions or visits affects the result."
+              }
+            },
+            {
+              "id": "variant-vn-009",
+              "text": {
+                "ru": "Распределение ограниченного ресурса. Тип: Механики. Правило: Игрок делит время, помощь, деньги или внимание между получателями.",
+                "en": "Allocation of a limited resource. Type: Mechanics. Rule: The player divides time, help, money or attention among the recipients."
+              }
+            },
+            {
+              "id": "variant-vn-010",
+              "text": {
+                "ru": "Свободный текстовый ввод. Тип: Механики. Правило: Игра распознаёт введённое имя, пароль, ключевое слово или ответ.",
+                "en": "Free text input. Type: Mechanics. Rule: The game recognizes the entered name, password, keyword or answer."
+              }
+            },
+            {
+              "id": "variant-vn-011",
+              "text": {
+                "ru": "Выбор через объект сцены. Тип: Механики. Правило: Решение совершается нажатием на предмет, персонажа или область изображения.",
+                "en": "Select via scene object. Type: Mechanics. Rule: The decision is made by clicking on an object, character or image area."
+              }
+            },
+            {
+              "id": "variant-vn-012",
+              "text": {
+                "ru": "Пересмотр решения с ценой. Тип: Механики. Правило: Принятое решение можно изменить, потеряв ресурс или приняв новое последствие.",
+                "en": "Reconsidering the pricing decision. Type: Mechanics. Rule: A decision can be changed by losing a resource or accepting a new consequence."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Условия и последствия выбора",
+        "en": "Conditions and consequences of choice"
+      },
+      "description": {
+        "ru": "Доступность решения и его последствия зависят от накопленного состояния, прошлых поступков и видимой информации.",
+        "en": "The availability of a decision and its consequences depend on the accumulated wealth, past actions and visible information."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-013",
+              "text": {
+                "ru": "Локальная вариация без смены ветки. Тип: Механики. Правило: Решение меняет реплику, описание или реакцию, сохраняя общий путь истории.",
+                "en": "Local variation without changing branches. Type: Mechanics. Rule: The solution changes the line, description or reaction, maintaining the general path of the story..."
+              }
+            },
+            {
+              "id": "variant-vn-014",
+              "text": {
+                "ru": "Выбор по сюжетным флагам. Тип: Механики. Правило: Вариант доступен после конкретного события или поступка.",
+                "en": "Selection by story flags. Type: Mechanics. Rule: The option is available after a specific event or action."
+              }
+            },
+            {
+              "id": "variant-vn-015",
+              "text": {
+                "ru": "Проверка характеристики. Тип: Механики. Правило: Успех зависит от уровня навыка либо сочетания параметров.",
+                "en": "Checking the characteristics. Type: Mechanics. Rule: Success depends on the skill level or a combination of parameters."
+              }
+            },
+            {
+              "id": "variant-vn-016",
+              "text": {
+                "ru": "Проверка отношений. Тип: Механики. Правило: Доступность действия или реакция зависит от истории отношений.",
+                "en": "Checking relationships. Type: Mechanics. Rule: Availability of action or reaction depends on the history of the relationship."
+              }
+            },
+            {
+              "id": "variant-vn-017",
+              "text": {
+                "ru": "Проверка знаний. Тип: Механики. Правило: Нужный ответ появляется после получения определённой информации.",
+                "en": "Knowledge test. Type: Mechanics. Rule: The required answer appears after receiving certain information."
+              }
+            },
+            {
+              "id": "variant-vn-018",
+              "text": {
+                "ru": "Платный выбор внутри игровой экономики. Тип: Механики. Правило: Действие требует потратить игровой ресурс; это не обязательно связано с реальными платежами.",
+                "en": "Paid choice within the game economy. Type: Mechanics. Rule: An action requires spending a game resource; this is not necessarily related to actual payments."
+              }
+            },
+            {
+              "id": "variant-vn-019",
+              "text": {
+                "ru": "Вероятностный исход. Тип: Механики. Правило: Результат определяется случайностью, иногда с поправкой на параметры.",
+                "en": "Probable outcome. Type: Mechanics. Rule: The result is determined by chance, sometimes adjusted for parameters."
+              }
+            },
+            {
+              "id": "variant-vn-020",
+              "text": {
+                "ru": "Риск с возможностью остановиться. Тип: Механики. Правило: Игрок продолжает опасное действие ради большей выгоды или вовремя отступает.",
+                "en": "Risk with the opportunity to stop. Type: Mechanics. Rule: The player continues a dangerous action for the sake of greater gain or retreats in time..."
+              }
+            },
+            {
+              "id": "variant-vn-021",
+              "text": {
+                "ru": "Накопление модели поведения. Тип: Механики. Правило: Серия решений формирует склонность героя и влияет на будущие события.",
+                "en": "Accumulation of behavior patterns. Type: Mechanics. Rule: A series of decisions shapes the character's inclinations and influences future events."
+              }
+            },
+            {
+              "id": "variant-vn-022",
+              "text": {
+                "ru": "Отложенное последствие. Тип: Механики. Правило: Решение изменяет событие, которое произойдёт значительно позже.",
+                "en": "Delayed consequence. Type: Mechanics. Rule: A decision changes an event that will occur much later."
+              }
+            },
+            {
+              "id": "variant-vn-023",
+              "text": {
+                "ru": "Продолжение через неудачу. Тип: Механики. Правило: Ошибка открывает иной ход истории вместо обязательной перезагрузки.",
+                "en": "Continuing through failure. Type: Mechanics. Rule: An error opens up a different course of history instead of a mandatory reboot."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Разговор и влияние",
+        "en": "Conversation and influence"
+      },
+      "description": {
+        "ru": "Реплики и способы их подачи меняют позицию собеседника, ход разговора или доступные дальнейшие действия.",
+        "en": "Replies and the way they are delivered change the interlocutor’s position, the flow of the conversation, or the available further actions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-024",
+              "text": {
+                "ru": "Выбор тем разговора. Тип: Механики. Правило: Игрок определяет, о чём говорить и какие сведения получить.",
+                "en": "Selecting conversation topics. Type: Mechanics. Rule: The player determines what to talk about and what information to get..."
+              }
+            },
+            {
+              "id": "variant-vn-025",
+              "text": {
+                "ru": "Исчерпание тем. Тип: Механики. Правило: Использованные вопросы исчезают или меняют содержание.",
+                "en": "Exhaustion of topics. Type: Mechanics. Rule: Used questions disappear or change content..."
+              }
+            },
+            {
+              "id": "variant-vn-026",
+              "text": {
+                "ru": "Уточняющие вопросы. Тип: Механики. Правило: Дополнительные вопросы раскрывают детали и создают новые темы.",
+                "en": "Clarifying questions. Type: Mechanics. Rule: Follow-up questions reveal details and create new topics."
+              }
+            },
+            {
+              "id": "variant-vn-027",
+              "text": {
+                "ru": "Управление тоном. Тип: Механики. Правило: Манера речи меняет реакцию на сходное по содержанию сообщение.",
+                "en": "Tone control. Type: Mechanics. Rule: Manner of speech changes the reaction to a message of similar content."
+              }
+            },
+            {
+              "id": "variant-vn-028",
+              "text": {
+                "ru": "Убеждение через тактику. Тип: Механики. Правило: Игрок подбирает аргумент, сочувствие, давление или иной способ воздействия.",
+                "en": "Persuasion through tactics. Type: Mechanics. Rule: The player selects an argument, sympathy, pressure or other method of influence."
+              }
+            },
+            {
+              "id": "variant-vn-029",
+              "text": {
+                "ru": "Торг. Тип: Механики. Правило: Условия соглашения зависят от предложений, уступок и отказов.",
+                "en": "Bargain. Type: Mechanics. Rule: The terms of the agreement depend on offers, concessions and refusals."
+              }
+            },
+            {
+              "id": "variant-vn-030",
+              "text": {
+                "ru": "Ложь и поддержание версии. Тип: Механики. Правило: Игра проверяет согласованность выдуманного рассказа с прежними заявлениями.",
+                "en": "Lies and maintaining a version. Type: Mechanics. Rule: The game checks the consistency of the fictional story with previous statements."
+              }
+            },
+            {
+              "id": "variant-vn-031",
+              "text": {
+                "ru": "Выбор раскрываемой информации. Тип: Механики. Правило: Игрок решает, какую правду сообщить, кому и когда.",
+                "en": "Choice of information to be disclosed. Type: Mechanics. Rule: The player decides what truth to tell, to whom and when..."
+              }
+            },
+            {
+              "id": "variant-vn-032",
+              "text": {
+                "ru": "Обещания и обязательства. Тип: Механики. Правило: Сказанное создаёт условия, которые впоследствии можно выполнить или нарушить.",
+                "en": "Promises and commitments. Type: Mechanics. Rule: What is said creates conditions that can subsequently be fulfilled or violated."
+              }
+            },
+            {
+              "id": "variant-vn-033",
+              "text": {
+                "ru": "Разговор как управление состоянием. Тип: Механики. Правило: Реплики повышают или снижают тревогу, раздражение, готовность сотрудничать.",
+                "en": "Conversation as state management. Type: Mechanics. Rule: Replies increase or decrease anxiety, irritation, willingness to cooperate..."
+              }
+            },
+            {
+              "id": "variant-vn-034",
+              "text": {
+                "ru": "Бюджет вопросов. Тип: Механики. Правило: До завершения встречи можно задать лишь ограниченное число вопросов.",
+                "en": "Budget issues. Type: Mechanics. Rule: Only a limited number of questions can be asked before the meeting ends."
+              }
+            },
+            {
+              "id": "variant-vn-035",
+              "text": {
+                "ru": "Выход из разговора. Тип: Механики. Правило: Игрок прекращает общение, сохраняя возможность, теряя шанс или меняя отношения.",
+                "en": "Exit the conversation. Type: Mechanics. Rule: The player ends communication, maintaining the opportunity, losing the chance or changing the relationship."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Отношения и социальные связи",
+        "en": "Relationships and social connections"
+      },
+      "description": {
+        "ru": "Повторяющиеся встречи формируют отношения, доверие, обязательства и совместные возможности персонажей.",
+        "en": "Repeated encounters build character relationships, trust, commitment, and shared opportunities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-036",
+              "text": {
+                "ru": "Накопление отношения. Тип: Механики. Правило: Поступки повышают или снижают отношение персонажа к герою.",
+                "en": "Attitude accumulation. Type: Mechanics. Rule: Actions increase or decrease the character's attitude towards the hero..."
+              }
+            },
+            {
+              "id": "variant-vn-037",
+              "text": {
+                "ru": "Несколько осей отношений. Тип: Механики. Правило: Доверие, привязанность, уважение и другие параметры учитываются независимо.",
+                "en": "Multiple relationship axes. Type: Mechanics. Rule: Trust, affection, respect and other parameters are taken into account independently."
+              }
+            },
+            {
+              "id": "variant-vn-038",
+              "text": {
+                "ru": "Пороговые события отношений. Тип: Механики. Правило: Достижение условий открывает встречи, признания или конфликты.",
+                "en": "Threshold events in relationships. Type: Mechanics. Rule: Achieving conditions opens meetings, recognitions or conflicts."
+              }
+            },
+            {
+              "id": "variant-vn-039",
+              "text": {
+                "ru": "Подарки с предпочтениями. Тип: Механики. Правило: Результат подарка зависит от вкусов, обстоятельств и истории персонажа.",
+                "en": "Gifts with preferences. Type: Mechanics. Rule: The result of the gift depends on the tastes, circumstances and history of the character."
+              }
+            },
+            {
+              "id": "variant-vn-040",
+              "text": {
+                "ru": "Планирование свидания. Тип: Механики. Правило: Игрок выбирает место, занятие и последовательность событий встречи.",
+                "en": "Planning a date. Type: Mechanics. Rule: The player chooses the place, activity and sequence of events of the meeting."
+              }
+            },
+            {
+              "id": "variant-vn-041",
+              "text": {
+                "ru": "Запоминание личных сведений. Тип: Механики. Правило: Знание вкусов и фактов о собеседнике помогает в будущих сценах.",
+                "en": "Remembering personal information. Type: Mechanics. Rule: Knowing the tastes and facts about your interlocutor helps in future scenes."
+              }
+            },
+            {
+              "id": "variant-vn-042",
+              "text": {
+                "ru": "Ревность и соперничество. Тип: Механики. Правило: Развитие одной связи меняет другие отношения.",
+                "en": "Jealousy and rivalry. Type: Mechanics. Rule: The development of one relationship changes other relationships."
+              }
+            },
+            {
+              "id": "variant-vn-043",
+              "text": {
+                "ru": "Взаимно исключающие обязательства. Тип: Механики. Правило: Союз или роман закрывает несовместимые варианты.",
+                "en": "Mutually exclusive obligations. Type: Mechanics. Rule: Union or romance closes incompatible options."
+              }
+            },
+            {
+              "id": "variant-vn-044",
+              "text": {
+                "ru": "Восстановление отношений. Тип: Механики. Правило: После конфликта требуется выполнить условия примирения.",
+                "en": "Restoring relationships. Type: Mechanics. Rule: After a conflict, the conditions for reconciliation must be fulfilled."
+              }
+            },
+            {
+              "id": "variant-vn-045",
+              "text": {
+                "ru": "Репутация и принадлежность к группе. Тип: Механики. Правило: Поступки меняют отношение сообщества и доступ к его возможностям.",
+                "en": "Reputation and group affiliation. Type: Mechanics. Rule: Actions change the attitude of the community and access to its opportunities..."
+              }
+            },
+            {
+              "id": "variant-vn-046",
+              "text": {
+                "ru": "Посредничество между NPC. Тип: Механики. Правило: Игрок меняет отношения других персонажей друг с другом.",
+                "en": "Mediation between NPCs. Type: Mechanics. Rule: The player changes the relationships of other characters with each other."
+              }
+            },
+            {
+              "id": "variant-vn-047",
+              "text": {
+                "ru": "Распространение слухов. Тип: Механики. Правило: Переданная информация меняет представления и поведение нескольких персонажей.",
+                "en": "Spreading rumors. Type: Mechanics. Rule: The information transmitted changes the views and behavior of several characters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Время и планирование",
+        "en": "Time and planning"
+      },
+      "description": {
+        "ru": "Ограниченное время распределяется между занятиями и встречами; порядок и сроки меняют доступные события.",
+        "en": "Limited time is allocated between classes and meetings; The order and timing change the available events."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-048",
+              "text": {
+                "ru": "Календарь и слоты действий. Тип: Механики. Правило: День, неделя или иной период содержит ограниченное число занятий.",
+                "en": "Calendar and action slots. Type: Mechanics. Rule: A day, week or other period contains a limited number of activities."
+              }
+            },
+            {
+              "id": "variant-vn-049",
+              "text": {
+                "ru": "Расписание занятий. Тип: Механики. Правило: Игрок заранее назначает учёбу, работу, отдых и встречи.",
+                "en": "Class schedule. Type: Mechanics. Rule: The player schedules studies, work, recreation and meetings in advance."
+              }
+            },
+            {
+              "id": "variant-vn-050",
+              "text": {
+                "ru": "Конкурирующие события. Тип: Механики. Правило: Одновременные события заставляют отказаться от части возможностей.",
+                "en": "Competing events. Type: Mechanics. Rule: Simultaneous events force you to give up some opportunities..."
+              }
+            },
+            {
+              "id": "variant-vn-051",
+              "text": {
+                "ru": "Дедлайны. Тип: Механики. Правило: Задачу или подготовку нужно завершить к определённому моменту.",
+                "en": "Deadlines. Type: Mechanics. Rule: A task or preparation must be completed by a certain point."
+              }
+            },
+            {
+              "id": "variant-vn-052",
+              "text": {
+                "ru": "Расписания NPC. Тип: Механики. Правило: Встреча зависит от места и времени присутствия персонажа.",
+                "en": "NPC schedules. Type: Mechanics. Rule: The meeting depends on the place and time of the character's presence."
+              }
+            },
+            {
+              "id": "variant-vn-053",
+              "text": {
+                "ru": "Стоимость перемещения во времени. Тип: Механики. Правило: Дорога расходует слоты и меняет доступные события.",
+                "en": "The cost of moving through time. Type: Mechanics. Rule: The road consumes slots and changes available events."
+              }
+            },
+            {
+              "id": "variant-vn-054",
+              "text": {
+                "ru": "Время за каждое действие. Тип: Механики. Правило: Вопрос, осмотр или использование предмета продвигает внутриигровые часы.",
+                "en": "Time for each action. Type: Mechanics. Rule: Questioning, examining, or using an item advances the in-game clock."
+              }
+            },
+            {
+              "id": "variant-vn-055",
+              "text": {
+                "ru": "События по реальному времени. Тип: Механики. Правило: Доступность сцены связана с часами или календарём вне игры.",
+                "en": "Real time events. Type: Mechanics. Rule: Scene availability is related to the clock or calendar outside the game."
+              }
+            },
+            {
+              "id": "variant-vn-056",
+              "text": {
+                "ru": "Ожидание и пропущенные возможности. Тип: Механики. Правило: Игрок намеренно ждёт; часть событий возникает или исчезает без его участия.",
+                "en": "Waiting and missed opportunities. Type: Mechanics. Rule: The player intentionally waits; some events arise or disappear without his participation."
+              }
+            },
+            {
+              "id": "variant-vn-057",
+              "text": {
+                "ru": "Цепочки событий. Тип: Механики. Правило: Последующая встреча требует успеть выполнить несколько условий в нужном порядке.",
+                "en": "Chains of events. Type: Mechanics. Rule: The subsequent meeting requires time to fulfill several conditions in the required order."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Развитие и состояние героя",
+        "en": "Character development and state"
+      },
+      "description": {
+        "ru": "Характеристики, навыки и внутреннее состояние героя определяют возможности и последствия его решений.",
+        "en": "The characteristics, skills and internal state of the hero determine the possibilities and consequences of his decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-058",
+              "text": {
+                "ru": "Создание персонажа. Тип: Механики. Правило: Происхождение, роль или стартовые черты меняют игровые возможности.",
+                "en": "Character creation. Type: Mechanics. Rule: Origin, role or starting traits change game options."
+              }
+            },
+            {
+              "id": "variant-vn-059",
+              "text": {
+                "ru": "Распределение характеристик. Тип: Механики. Правило: Игрок определяет сильные и слабые стороны героя.",
+                "en": "Distribution of characteristics. Type: Mechanics. Rule: The player determines the hero's strengths and weaknesses."
+              }
+            },
+            {
+              "id": "variant-vn-060",
+              "text": {
+                "ru": "Обучение навыкам. Тип: Механики. Правило: Занятия повышают параметры и открывают способы решения ситуаций.",
+                "en": "Skills training. Type: Mechanics. Rule: Classes increase parameters and open up ways to solve situations."
+              }
+            },
+            {
+              "id": "variant-vn-061",
+              "text": {
+                "ru": "Выбор специализации. Тип: Механики. Правило: Развитие одной области ограничивает вложения в другие.",
+                "en": "Choosing a specialization. Type: Mechanics. Rule: Development of one area limits investment in others."
+              }
+            },
+            {
+              "id": "variant-vn-062",
+              "text": {
+                "ru": "Черты, преимущества и недостатки. Тип: Механики. Правило: Устойчивые особенности меняют условия действий и доступный контент.",
+                "en": "Features, advantages and disadvantages. Type: Mechanics. Rule: Persistent features change the conditions of action and the available content."
+              }
+            },
+            {
+              "id": "variant-vn-063",
+              "text": {
+                "ru": "Настроение как модификатор. Тип: Механики. Правило: Эмоциональное состояние влияет на обучение, проверки или общение.",
+                "en": "Mood as a modifier. Type: Mechanics. Rule: Emotional state affects learning, testing or communication."
+              }
+            },
+            {
+              "id": "variant-vn-064",
+              "text": {
+                "ru": "Стресс и восстановление. Тип: Механики. Правило: Нагрузка создаёт ограничения, а отдых восстанавливает возможности.",
+                "en": "Stress and recovery. Type: Mechanics. Rule: Load creates restrictions, and rest restores opportunities."
+              }
+            },
+            {
+              "id": "variant-vn-065",
+              "text": {
+                "ru": "Здоровье и травмы. Тип: Механики. Правило: Физическое состояние влияет на действия и дальнейшие события.",
+                "en": "Health and injury. Type: Mechanics. Rule: Physical condition influences actions and further events."
+              }
+            },
+            {
+              "id": "variant-vn-066",
+              "text": {
+                "ru": "Состояние восприятия. Тип: Механики. Правило: Усталость, страх или иной эффект меняет доступную игроку информацию и варианты.",
+                "en": "State of perception. Type: Mechanics. Rule: Fatigue, fear, or another effect changes the information and options available to the player."
+              }
+            },
+            {
+              "id": "variant-vn-067",
+              "text": {
+                "ru": "Экипировка с эффектами. Тип: Механики. Правило: Одежда и снаряжение меняют параметры, реакции или доступ в места.",
+                "en": "Equipment with effects. Type: Mechanics. Rule: Clothing and equipment change parameters, reactions or access to places..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Исследование пространства",
+        "en": "Spatial exploration"
+      },
+      "description": {
+        "ru": "Выбор места, маршрута и интерактивных объектов раскрывает сцены, сведения и новые действия.",
+        "en": "Selecting a location, route, and interactive objects reveals scenes, information, and new activities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-068",
+              "text": {
+                "ru": "Выбор локации на карте. Тип: Механики. Правило: Игрок выбирает следующий пункт посещения.",
+                "en": "Selecting a location on the map. Type: Mechanics. Rule: The player chooses the next point to visit."
+              }
+            },
+            {
+              "id": "variant-vn-069",
+              "text": {
+                "ru": "Перемещение по связанным сценам. Тип: Механики. Правило: Мир исследуется через двери, переходы и направления.",
+                "en": "Move through related scenes. Type: Mechanics. Rule: The world is explored through doors, passages and directions."
+              }
+            },
+            {
+              "id": "variant-vn-070",
+              "text": {
+                "ru": "Свободное перемещение аватара. Тип: Механики. Правило: Герой перемещается по двумерной или трёхмерной локации.",
+                "en": "Free movement of the avatar. Type: Mechanics. Rule: The hero moves through a two-dimensional or three-dimensional location."
+              }
+            },
+            {
+              "id": "variant-vn-071",
+              "text": {
+                "ru": "Осмотр активных областей. Тип: Механики. Правило: Нажатия на элементы сцены раскрывают сведения или взаимодействия.",
+                "en": "Inspection of active areas. Type: Mechanics. Rule: Clicking on scene elements reveals information or interactions."
+              }
+            },
+            {
+              "id": "variant-vn-072",
+              "text": {
+                "ru": "Повторный осмотр после изменения контекста. Тип: Механики. Правило: Уже знакомый объект даёт новый результат после события или открытия.",
+                "en": "Re-inspection after context change. Type: Mechanics. Rule: An already familiar object gives a new result after an event or discovery."
+              }
+            },
+            {
+              "id": "variant-vn-073",
+              "text": {
+                "ru": "Поиск скрытых объектов. Тип: Механики. Правило: Игрок обнаруживает малозаметные предметы и детали.",
+                "en": "Search for hidden objects. Type: Mechanics. Rule: The player detects subtle objects and details."
+              }
+            },
+            {
+              "id": "variant-vn-074",
+              "text": {
+                "ru": "Наблюдение и подслушивание. Тип: Механики. Правило: Сведения добываются без прямого разговора, иногда с риском обнаружения.",
+                "en": "Observation and eavesdropping. Type: Mechanics. Rule: Information is obtained without direct conversation, sometimes with the risk of detection."
+              }
+            },
+            {
+              "id": "variant-vn-075",
+              "text": {
+                "ru": "Доступ по условию. Тип: Механики. Правило: Проход открывается ключом, разрешением, навыком или сюжетным событием.",
+                "en": "Conditional access. Type: Mechanics. Rule: The passage is opened by a key, permission, skill or story event."
+              }
+            },
+            {
+              "id": "variant-vn-076",
+              "text": {
+                "ru": "Выбор спутника. Тип: Механики. Правило: Состав участников посещения меняет доступные действия и сцены.",
+                "en": "Selecting a satellite. Type: Mechanics. Rule: The composition of the visiting participants changes the available actions and scenes."
+              }
+            },
+            {
+              "id": "variant-vn-077",
+              "text": {
+                "ru": "Динамическое состояние локации. Тип: Механики. Правило: Решения меняют доступные зоны, персонажей и объекты места.",
+                "en": "Dynamic state of the location. Type: Mechanics. Rule: Decisions change the available zones, characters and objects of the place."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Предметы и инвентарь",
+        "en": "Items and inventory"
+      },
+      "description": {
+        "ru": "Получение, выбор и применение предметов меняют состояние сцены и возможности дальнейшего взаимодействия.",
+        "en": "Obtaining, selecting, and using items changes the state of the scene and the possibilities for further interaction."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-078",
+              "text": {
+                "ru": "Получение и хранение предметов. Тип: Механики. Правило: Найденные объекты становятся ресурсами последующих действий.",
+                "en": "Receiving and storing items. Type: Mechanics. Rule: Found objects become resources for subsequent actions."
+              }
+            },
+            {
+              "id": "variant-vn-079",
+              "text": {
+                "ru": "Применение предмета к объекту. Тип: Механики. Правило: Игрок подбирает подходящий инструмент или ключ к ситуации.",
+                "en": "Applying a subject to an object. Type: Mechanics. Rule: The player selects the appropriate tool or key to the situation."
+              }
+            },
+            {
+              "id": "variant-vn-080",
+              "text": {
+                "ru": "Передача предмета персонажу. Тип: Механики. Правило: Предмет меняет разговор, задачу или поведение получателя.",
+                "en": "Transferring an item to a character. Type: Mechanics. Rule: The item changes the conversation, task, or behavior of the recipient."
+              }
+            },
+            {
+              "id": "variant-vn-081",
+              "text": {
+                "ru": "Комбинирование предметов. Тип: Механики. Правило: Несколько объектов образуют новый предмет или способ взаимодействия.",
+                "en": "Combining items. Type: Mechanics. Rule: Several objects form a new subject or method of interaction."
+              }
+            },
+            {
+              "id": "variant-vn-082",
+              "text": {
+                "ru": "Осмотр и преобразование предмета. Тип: Механики. Правило: Поворот, вскрытие или разбор раскрывает скрытые свойства.",
+                "en": "Inspection and transformation of an object. Type: Mechanics. Rule: Rotating, opening or disassembling reveals hidden properties."
+              }
+            },
+            {
+              "id": "variant-vn-083",
+              "text": {
+                "ru": "Расходуемые предметы. Тип: Механики. Правило: Применение уменьшает запас и вынуждает выбирать момент использования.",
+                "en": "Consumable items. Type: Mechanics. Rule: Application reduces the supply and forces you to choose the moment of use."
+              }
+            },
+            {
+              "id": "variant-vn-084",
+              "text": {
+                "ru": "Ограниченная вместимость. Тип: Механики. Правило: Игрок решает, что взять, оставить или выбросить.",
+                "en": "Limited capacity. Type: Mechanics. Rule: The player decides what to take, keep or throw away..."
+              }
+            },
+            {
+              "id": "variant-vn-085",
+              "text": {
+                "ru": "Обмен и цепочки передач. Тип: Механики. Правило: Нужный объект получается через сделки и последовательность поручений.",
+                "en": "Exchange and chains of transmission. Type: Mechanics. Rule: The required object is obtained through transactions and a sequence of instructions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Расследование и построение вывода",
+        "en": "Investigation and deduction"
+      },
+      "description": {
+        "ru": "Собранные наблюдения и свидетельства связываются в вывод, который открывает решение или меняет понимание событий.",
+        "en": "The collected observations and evidence are linked into a conclusion that reveals a solution or changes the understanding of events."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-086",
+              "text": {
+                "ru": "Сбор улик. Тип: Механики. Правило: Обнаруженные сведения регистрируются как материал для расследования.",
+                "en": "Collection of evidence. Type: Mechanics. Rule: Discovered information is recorded as material for investigation."
+              }
+            },
+            {
+              "id": "variant-vn-087",
+              "text": {
+                "ru": "Анализ улики. Тип: Механики. Правило: Исследование раскрывает свойства или дополнительную информацию.",
+                "en": "Analysis of evidence. Type: Mechanics. Rule: Research reveals properties or additional information."
+              }
+            },
+            {
+              "id": "variant-vn-088",
+              "text": {
+                "ru": "Сопоставление свидетельств. Тип: Механики. Правило: Игрок находит совпадения и противоречия в нескольких рассказах.",
+                "en": "Comparison of evidence. Type: Mechanics. Rule: The player finds coincidences and contradictions in several stories."
+              }
+            },
+            {
+              "id": "variant-vn-089",
+              "text": {
+                "ru": "Выбор значимого фрагмента. Тип: Механики. Правило: Нужно указать точное место в тексте, изображении или записи.",
+                "en": "Selecting a significant fragment. Type: Mechanics. Rule: You must indicate the exact location in the text, image or post."
+              }
+            },
+            {
+              "id": "variant-vn-090",
+              "text": {
+                "ru": "Предъявление доказательства. Тип: Механики. Правило: Игрок связывает подходящую улику с конкретным утверждением.",
+                "en": "Presentation of evidence. Type: Mechanics. Rule: The player associates relevant evidence with a specific statement."
+              }
+            },
+            {
+              "id": "variant-vn-091",
+              "text": {
+                "ru": "Соединение фактов. Тип: Механики. Правило: Из пары или набора сведений выводится новый факт.",
+                "en": "Connecting facts. Type: Mechanics. Rule: A new fact is derived from a pair or set of information."
+              }
+            },
+            {
+              "id": "variant-vn-092",
+              "text": {
+                "ru": "Заполнение гипотезы. Тип: Механики. Правило: Игрок подставляет имена, причины и действия в объяснение события.",
+                "en": "Filling out the hypothesis. Type: Mechanics. Rule: The player fills in names, reasons and actions to explain the event."
+              }
+            },
+            {
+              "id": "variant-vn-093",
+              "text": {
+                "ru": "Восстановление хронологии. Тип: Механики. Правило: События располагаются в причинном или временном порядке.",
+                "en": "Restoring chronology. Type: Mechanics. Rule: Events are arranged in causal or temporal order."
+              }
+            },
+            {
+              "id": "variant-vn-094",
+              "text": {
+                "ru": "Реконструкция сцены. Тип: Механики. Правило: Игрок восстанавливает позиции участников и последовательность действий.",
+                "en": "Reconstruction of the scene. Type: Mechanics. Rule: The player restores the positions of the participants and the sequence of actions."
+              }
+            },
+            {
+              "id": "variant-vn-095",
+              "text": {
+                "ru": "Проверка версии. Тип: Механики. Правило: Гипотеза испытывается новым действием, вопросом или экспериментом.",
+                "en": "Version check. Type: Mechanics. Rule: A hypothesis is tested by a new action, question or experiment."
+              }
+            },
+            {
+              "id": "variant-vn-096",
+              "text": {
+                "ru": "Обвинение и итоговый вывод. Тип: Механики. Правило: Игрок выбирает виновного, объяснение или решение дела.",
+                "en": "The accusation and the final conclusion. Type: Mechanics. Rule: The player chooses the culprit, explanation or solution to the case..."
+              }
+            },
+            {
+              "id": "variant-vn-097",
+              "text": {
+                "ru": "Учёт ошибок расследования. Тип: Механики. Правило: Неверные выводы расходуют доверие, попытки или время.",
+                "en": "Accounting for investigation errors. Type: Mechanics. Rule: Wrong conclusions waste trust, effort, or time."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-2",
+      "title": {
+        "ru": "Дебаты и социальная дедукция",
+        "en": "Debate and social deduction"
+      },
+      "description": {
+        "ru": "Игрок сопоставляет утверждения, аргументы и поведение участников, чтобы защитить позицию или выявить скрытую роль.",
+        "en": "The player compares statements, arguments and behavior of participants to defend a position or reveal a hidden role."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-098",
+              "text": {
+                "ru": "Перекрёстный допрос. Тип: Гибридные системы. Правило: Игрок последовательно проверяет отдельные утверждения свидетеля.",
+                "en": "Cross-examination. Type: Hybrid systems. Rule: The player checks individual statements of the witness sequentially."
+              }
+            },
+            {
+              "id": "variant-vn-099",
+              "text": {
+                "ru": "Давление для дополнения показаний. Тип: Гибридные системы. Правило: Вопросы заставляют собеседника уточнить или изменить свидетельство.",
+                "en": "Pressure to supplement readings. Type: Hybrid systems. Rule: Questions force the interlocutor to clarify or change the evidence."
+              }
+            },
+            {
+              "id": "variant-vn-100",
+              "text": {
+                "ru": "Опровержение в моменте. Тип: Гибридные системы. Правило: Нужно выбрать противоречащий аргумент в ограниченное окно времени.",
+                "en": "Refutation in the moment. Type: Hybrid systems. Rule: You must choose a contradictory argument within a limited window of time."
+              }
+            },
+            {
+              "id": "variant-vn-101",
+              "text": {
+                "ru": "Аргументационная дуэль. Тип: Гибридные системы. Правило: Доводы и контрдоводы меняют состояние спора до победы одной стороны.",
+                "en": "Argumentative duel. Type: Hybrid systems. Rule: Arguments and counter-arguments change the state of the dispute until one side wins."
+              }
+            },
+            {
+              "id": "variant-vn-102",
+              "text": {
+                "ru": "Управление убедительностью. Тип: Гибридные системы. Правило: Ошибки и удачные действия меняют запас доверия аудитории.",
+                "en": "Managing persuasiveness. Type: Hybrid systems. Rule: Mistakes and successful actions change the level of trust of the audience."
+              }
+            },
+            {
+              "id": "variant-vn-103",
+              "text": {
+                "ru": "Публичное голосование. Тип: Гибридные системы. Правило: Решение группы определяется голосами и предшествующим обсуждением.",
+                "en": "Public voting. Type: Hybrid systems. Rule: The group's decision is determined by votes and previous discussion."
+              }
+            },
+            {
+              "id": "variant-vn-104",
+              "text": {
+                "ru": "Поиск скрытой роли. Тип: Гибридные системы. Правило: Игрок вычисляет принадлежность персонажей по словам и действиям.",
+                "en": "Finding a hidden role. Type: Hybrid systems. Rule: The player determines the characters' affiliation based on their words and actions."
+              }
+            },
+            {
+              "id": "variant-vn-105",
+              "text": {
+                "ru": "Блеф о своей роли. Тип: Гибридные системы. Правило: Игрок выдаёт себя за другую роль и поддерживает правдоподобие версии.",
+                "en": "Bluff about your role. Type: Hybrid systems. Rule: The player impersonates another role and maintains the verisimilitude of the version."
+              }
+            },
+            {
+              "id": "variant-vn-106",
+              "text": {
+                "ru": "Коалиции и согласование голосов. Тип: Гибридные системы. Правило: Временные союзы меняют результат общего решения.",
+                "en": "Coalitions and vote coordination. Type: Hybrid systems. Rule: Temporary alliances change the outcome of the general decision."
+              }
+            },
+            {
+              "id": "variant-vn-107",
+              "text": {
+                "ru": "Особые действия ролей. Тип: Гибридные системы. Правило: Проверка, защита или устранение создаёт информацию и последствия для обсуждения.",
+                "en": "Special actions of roles. Type: Hybrid systems. Rule: Testing, defending or eliminating creates information and consequences for discussion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Текст, знания и память",
+        "en": "Text, knowledge and memory"
+      },
+      "description": {
+        "ru": "Прочитанные сведения, введённый текст и память об уже известном влияют на выбор и понимание происходящего.",
+        "en": "The information read, the text entered and the memory of what is already known influence the choice and understanding of what is happening."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-108",
+              "text": {
+                "ru": "Сбор ключевых слов. Тип: Механики. Правило: Замеченные понятия становятся вариантами будущих действий или темами.",
+                "en": "Collection of keywords. Type: Mechanics. Rule: Noted concepts become options for future actions or topics."
+              }
+            },
+            {
+              "id": "variant-vn-109",
+              "text": {
+                "ru": "Применение мысли к контексту. Тип: Механики. Правило: Игрок выбирает понятие или воспоминание для текущей ситуации.",
+                "en": "Applying thought to context. Type: Mechanics. Rule: The player chooses a concept or memory for the current situation."
+              }
+            },
+            {
+              "id": "variant-vn-110",
+              "text": {
+                "ru": "Восстановление текста. Тип: Механики. Правило: Фрагменты письма, разговора или записи соединяются в целое.",
+                "en": "Text recovery. Type: Mechanics. Rule: Fragments of a letter, conversation or recording are combined into a whole..."
+              }
+            },
+            {
+              "id": "variant-vn-111",
+              "text": {
+                "ru": "Составление сообщения из слов. Тип: Механики. Правило: Набор выбранных слов определяет содержание и реакцию адресата.",
+                "en": "Compose a message from words. Type: Mechanics. Rule: The set of words chosen determines the content and reaction of the addressee."
+              }
+            },
+            {
+              "id": "variant-vn-112",
+              "text": {
+                "ru": "Расшифровка кода или языка. Тип: Механики. Правило: Игрок выводит значения символов и применяет полученные правила.",
+                "en": "Deciphering the code or language. Type: Mechanics. Rule: The player deduces the meaning of the symbols and applies the resulting rules."
+              }
+            },
+            {
+              "id": "variant-vn-113",
+              "text": {
+                "ru": "Ответ по памяти. Тип: Механики. Правило: Решение требует запомнить ранее показанную информацию.",
+                "en": "Answer from memory. Type: Mechanics. Rule: The solution requires remembering previously shown information."
+              }
+            },
+            {
+              "id": "variant-vn-114",
+              "text": {
+                "ru": "Сравнение версий текста. Тип: Механики. Правило: Различия между записями или повторениями становятся игровыми данными.",
+                "en": "Comparison of text versions. Type: Mechanics. Rule: Differences between entries or repetitions become game data."
+              }
+            },
+            {
+              "id": "variant-vn-115",
+              "text": {
+                "ru": "Поиск по архиву. Тип: Механики. Правило: Запрос или ключевое слово открывает нужные документы и сцены.",
+                "en": "Archive search. Type: Mechanics. Rule: A query or keyword opens the desired documents and scenes."
+              }
+            },
+            {
+              "id": "variant-vn-116",
+              "text": {
+                "ru": "Редактирование текста с последствиями. Тип: Механики. Правило: Изменение документа, сообщения или записи меняет последующие события.",
+                "en": "Editing text with consequences. Type: Mechanics. Rule: Changing a document, message or record changes subsequent events."
+              }
+            },
+            {
+              "id": "variant-vn-117",
+              "text": {
+                "ru": "Выбор интерпретации. Тип: Механики. Правило: Игрок фиксирует смысл неоднозначного события, и игра учитывает этот вывод.",
+                "en": "Choice of interpretation. Type: Mechanics. Rule: The player records the meaning of an ambiguous event, and the game takes this conclusion into account."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Переписка и цифровое расследование",
+        "en": "Correspondence and digital investigation"
+      },
+      "description": {
+        "ru": "Сообщения, файлы и цифровые следы становятся материалом общения, поиска и реконструкции событий.",
+        "en": "Messages, files and digital traces become the material of communication, search and reconstruction of events."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-118",
+              "text": {
+                "ru": "Ветвящаяся переписка. Тип: Механики. Правило: Выбор сообщений меняет разговор и события.",
+                "en": "Branching correspondence. Type: Mechanics. Rule: The choice of messages changes the conversation and events."
+              }
+            },
+            {
+              "id": "variant-vn-119",
+              "text": {
+                "ru": "Ответ с задержкой или игнорирование. Тип: Механики. Правило: Время и факт ответа влияют на результат общения.",
+                "en": "Delayed response or ignoring. Type: Mechanics. Rule: The time and fact of the answer influence the result of communication."
+              }
+            },
+            {
+              "id": "variant-vn-120",
+              "text": {
+                "ru": "Несколько параллельных чатов. Тип: Механики. Правило: Игрок распределяет внимание между беседами и их участниками.",
+                "en": "Several parallel chats. Type: Mechanics. Rule: The player distributes attention between conversations and their participants."
+              }
+            },
+            {
+              "id": "variant-vn-121",
+              "text": {
+                "ru": "Приём и отклонение звонка. Тип: Механики. Правило: Решение определяет доступную сцену и реакцию звонящего.",
+                "en": "Receiving and rejecting a call. Type: Mechanics. Rule: The decision determines the available scene and the caller's reaction."
+              }
+            },
+            {
+              "id": "variant-vn-122",
+              "text": {
+                "ru": "Работа с вложениями. Тип: Механики. Правило: Фото, аудио и документы рассматриваются как источники сведений.",
+                "en": "Working with attachments. Type: Mechanics. Rule: Photos, audio and documents are considered sources of information."
+              }
+            },
+            {
+              "id": "variant-vn-123",
+              "text": {
+                "ru": "Выбор публикации. Тип: Механики. Правило: Пост, комментарий или реакция меняет репутацию и распространение информации.",
+                "en": "Selecting a publication. Type: Mechanics. Rule: A post, comment or reaction changes reputation and the spread of information."
+              }
+            },
+            {
+              "id": "variant-vn-124",
+              "text": {
+                "ru": "Пересылка сообщения. Тип: Механики. Правило: Передача чужого текста меняет осведомлённость и отношения участников.",
+                "en": "Forwarding a message. Type: Mechanics. Rule: Transmitting someone else's text changes the awareness and attitudes of the participants."
+              }
+            },
+            {
+              "id": "variant-vn-125",
+              "text": {
+                "ru": "Поиск в виртуальной сети. Тип: Механики. Правило: Игрок ищет данные внутри смоделированных сайтов и сервисов.",
+                "en": "Search in the virtual network. Type: Mechanics. Rule: The player searches for data inside simulated sites and services."
+              }
+            },
+            {
+              "id": "variant-vn-126",
+              "text": {
+                "ru": "Доступ к аккаунту или устройству. Тип: Механики. Правило: Пароль и другие условия открывают новую часть информации.",
+                "en": "Access to an account or device. Type: Mechanics. Rule: Password and other conditions open a new piece of information."
+              }
+            },
+            {
+              "id": "variant-vn-127",
+              "text": {
+                "ru": "Удаление или сокрытие цифрового следа. Тип: Механики. Правило: Игрок меняет доступность переписки, публикаций и записей для других персонажей.",
+                "en": "Removing or hiding your digital footprint. Type: Mechanics. Rule: The player changes the availability of correspondence, publications and entries for other characters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-13",
+      "section": "section-2",
+      "title": {
+        "ru": "Непрямой выбор через занятие",
+        "en": "Indirect choices through activities"
+      },
+      "description": {
+        "ru": "Результат другого занятия, например приготовления напитка, передаёт выбор игрока и влияет на разговор или историю.",
+        "en": "The outcome of another activity, such as making a drink, conveys the player's choice and influences the conversation or story."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-128",
+              "text": {
+                "ru": "Приготовление напитка или блюда. Тип: Гибридные системы. Правило: Результат приготовления заменяет или дополняет выбор реплики.",
+                "en": "Preparing a drink or dish. Type: Hybrid systems. Rule: The result of the preparation replaces or complements the choice of cue."
+              }
+            },
+            {
+              "id": "variant-vn-129",
+              "text": {
+                "ru": "Подбор состава и дозировки. Тип: Гибридные системы. Правило: Пропорции определяют свойства продукта и последующую реакцию.",
+                "en": "Selection of composition and dosage. Type: Hybrid systems. Rule: Proportions determine the properties of the product and the subsequent reaction."
+              }
+            },
+            {
+              "id": "variant-vn-130",
+              "text": {
+                "ru": "Чтение неявного заказа. Тип: Гибридные системы. Правило: Игрок выводит нужный результат из пожеланий и контекста.",
+                "en": "Reading an implicit order. Type: Hybrid systems. Rule: The player derives the desired result from wishes and context."
+              }
+            },
+            {
+              "id": "variant-vn-131",
+              "text": {
+                "ru": "Выбор, кого обслужить. Тип: Гибридные системы. Правило: Очерёдность или отказ меняет доступные разговоры и события.",
+                "en": "Choosing who to serve. Type: Hybrid systems. Rule: Priority or refusal changes available conversations and events."
+              }
+            },
+            {
+              "id": "variant-vn-132",
+              "text": {
+                "ru": "Проверка документов. Тип: Гибридные системы. Правило: Игрок сопоставляет сведения с правилами и принимает решение о допуске.",
+                "en": "Checking documents. Type: Hybrid systems. Rule: The player compares the information with the rules and makes a decision on admission."
+              }
+            },
+            {
+              "id": "variant-vn-133",
+              "text": {
+                "ru": "Оценка, диагноз или рекомендация. Тип: Гибридные системы. Правило: Вывод по набору признаков запускает дальнейшие последствия.",
+                "en": "Assessment, diagnosis or recommendation. Type: Hybrid systems. Rule: A conclusion based on a set of features triggers further consequences..."
+              }
+            },
+            {
+              "id": "variant-vn-134",
+              "text": {
+                "ru": "Ремонт и настройка объекта. Тип: Гибридные системы. Правило: Способ выполнения работы влияет на заказчика и сюжет.",
+                "en": "Repair and setup of the facility. Type: Hybrid systems. Rule: The way the work is done affects the client and the plot."
+              }
+            },
+            {
+              "id": "variant-vn-135",
+              "text": {
+                "ru": "Создание творческой работы. Тип: Гибридные системы. Правило: Собранный текст, рисунок, композиция или иной результат вызывает содержательную реакцию.",
+                "en": "Creating creative work. Type: Hybrid systems. Rule: The collected text, drawing, composition or other result evokes a meaningful reaction."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-14",
+      "section": "section-2",
+      "title": {
+        "ru": "Экономика и управление",
+        "en": "Economy and management"
+      },
+      "description": {
+        "ru": "Распределение средств, управление ресурсами и выполнение заказов связывают повествование с экономическими решениями.",
+        "en": "Allocation of funds, management of resources, and execution of orders link the narrative to economic decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-136",
+              "text": {
+                "ru": "Личный бюджет. Тип: Гибридные системы. Правило: Покупки и доходы конкурируют с обязательными расходами.",
+                "en": "Personal budget. Type: Hybrid systems. Rule: Purchases and income compete with obligatory expenses."
+              }
+            },
+            {
+              "id": "variant-vn-137",
+              "text": {
+                "ru": "Заработок через занятия. Тип: Гибридные системы. Правило: Работа приносит ресурсы и расходует время или силы.",
+                "en": "Earning money through classes. Type: Hybrid systems. Rule: Work brings resources and consumes time or effort."
+              }
+            },
+            {
+              "id": "variant-vn-138",
+              "text": {
+                "ru": "Покупки с сюжетным эффектом. Тип: Гибридные системы. Правило: Приобретение открывает сцену, улучшает состояние или создаёт возможность.",
+                "en": "Shopping with a story effect. Type: Hybrid systems. Rule: An acquisition opens the stage, improves a condition, or creates an opportunity..."
+              }
+            },
+            {
+              "id": "variant-vn-139",
+              "text": {
+                "ru": "Долги и обязательные платежи. Тип: Гибридные системы. Правило: К сроку необходимо собрать ресурс, иначе изменятся условия истории.",
+                "en": "Debts and obligatory payments. Type: Hybrid systems. Rule: It is necessary to collect the resource by the deadline, otherwise the conditions of the story will change."
+              }
+            },
+            {
+              "id": "variant-vn-140",
+              "text": {
+                "ru": "Управление заведением. Тип: Гибридные системы. Правило: Решения об ассортименте, ценах и работе влияют на ресурсный и сюжетный результат.",
+                "en": "Establishment management. Type: Hybrid systems. Rule: Decisions about assortment, prices and work affect the resource and story outcome."
+              }
+            },
+            {
+              "id": "variant-vn-141",
+              "text": {
+                "ru": "Назначение NPC на задачи. Тип: Гибридные системы. Правило: Участники выполняют поручения в зависимости от способностей и доступности.",
+                "en": "Assigning NPCs to tasks. Type: Hybrid systems. Rule: Participants carry out assignments depending on their abilities and availability."
+              }
+            },
+            {
+              "id": "variant-vn-142",
+              "text": {
+                "ru": "Развитие общего пространства. Тип: Гибридные системы. Правило: Улучшения дома, базы или поселения открывают действия и события.",
+                "en": "Development of common space. Type: Hybrid systems. Rule: Upgrading your home, base or settlement unlocks actions and events."
+              }
+            },
+            {
+              "id": "variant-vn-143",
+              "text": {
+                "ru": "Дефицит и распределение запасов. Тип: Гибридные системы. Правило: Ограниченные ресурсы распределяются между задачами и участниками.",
+                "en": "Inventory shortages and distribution. Type: Hybrid systems. Rule: Limited resources are distributed among tasks and participants."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-15",
+      "section": "section-2",
+      "title": {
+        "ru": "Головоломки и испытания исполнения",
+        "en": "Puzzles and execution challenges"
+      },
+      "description": {
+        "ru": "Логические задачи и действия на точность или время создают дополнительные условия продвижения.",
+        "en": "Logical tasks and actions for accuracy or time create additional conditions for advancement."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-144",
+              "text": {
+                "ru": "Escape room. Тип: Гибридные системы. Правило: Для выхода нужно исследовать помещение и решить связанные задачи.",
+                "en": "Escape room. Type: Hybrid systems. Rule: To exit, you need to explore the room and solve related problems."
+              }
+            },
+            {
+              "id": "variant-vn-145",
+              "text": {
+                "ru": "Кодовые замки. Тип: Гибридные системы. Правило: Комбинация выводится из найденных подсказок.",
+                "en": "Code locks. Type: Hybrid systems. Rule: The combination is derived from the clues found."
+              }
+            },
+            {
+              "id": "variant-vn-146",
+              "text": {
+                "ru": "Логические ограничения. Тип: Гибридные системы. Правило: Игрок ищет конфигурацию, удовлетворяющую набору правил.",
+                "en": "Logical restrictions. Type: Hybrid systems. Rule: The player is looking for a configuration that satisfies a set of rules."
+              }
+            },
+            {
+              "id": "variant-vn-147",
+              "text": {
+                "ru": "Пространственная сборка. Тип: Гибридные системы. Правило: Части располагаются, вращаются или соединяются для получения решения.",
+                "en": "Spatial assembly. Type: Hybrid systems. Rule: The parts are positioned, rotated or connected to obtain a solution."
+              }
+            },
+            {
+              "id": "variant-vn-148",
+              "text": {
+                "ru": "Память на последовательность. Тип: Гибридные системы. Правило: Нужно воспроизвести порядок сигналов или действий.",
+                "en": "Memory for sequence. Type: Hybrid systems. Rule: You need to reproduce the order of signals or actions."
+              }
+            },
+            {
+              "id": "variant-vn-149",
+              "text": {
+                "ru": "Карточное испытание. Тип: Гибридные системы. Правило: Исход определяется разыгранной рукой, комбинацией или колодой.",
+                "en": "Card test. Type: Hybrid systems. Rule: The outcome is determined by the hand, combination or deck played."
+              }
+            },
+            {
+              "id": "variant-vn-150",
+              "text": {
+                "ru": "Настольная игра внутри новеллы. Тип: Гибридные системы. Правило: Сцены или ресурсы зависят от партии по отдельным правилам.",
+                "en": "A board game inside a novel. Type: Hybrid systems. Rule: Scenes or resources are subject to party specific rules."
+              }
+            },
+            {
+              "id": "variant-vn-151",
+              "text": {
+                "ru": "Ритмическое испытание. Тип: Гибридные системы. Правило: Игрок выполняет действия в соответствии с музыкальным ритмом.",
+                "en": "Rhythm test. Type: Hybrid systems. Rule: The player performs actions in accordance with the musical rhythm."
+              }
+            },
+            {
+              "id": "variant-vn-152",
+              "text": {
+                "ru": "QTE и точный тайминг. Тип: Гибридные системы. Правило: Успех зависит от своевременного ввода команды.",
+                "en": "QTE and precise timing. Type: Hybrid systems. Rule: Success depends on entering the command in a timely manner."
+              }
+            },
+            {
+              "id": "variant-vn-153",
+              "text": {
+                "ru": "Управление курсором или жестом. Тип: Гибридные системы. Правило: Траектория, точность и длительность движения определяют результат.",
+                "en": "Cursor or gesture control. Type: Hybrid systems. Rule: Trajectory, accuracy and duration of movement determine the result."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-16",
+      "section": "section-2",
+      "title": {
+        "ru": "Бой, выживание и тактика",
+        "en": "Combat, survival and tactics"
+      },
+      "description": {
+        "ru": "Боевые и тактические решения связывают историю с угрозами, выживанием и расходом ресурсов.",
+        "en": "Combat and tactical decisions tie the story to threats, survival, and resource consumption."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-154",
+              "text": {
+                "ru": "Пошаговый бой. Тип: Гибридные системы. Правило: Исход столкновения определяется последовательностью боевых действий.",
+                "en": "Turn-based combat. Type: Hybrid systems. Rule: The outcome of a collision is determined by the sequence of combat actions."
+              }
+            },
+            {
+              "id": "variant-vn-155",
+              "text": {
+                "ru": "Тактическое позиционирование. Тип: Гибридные системы. Правило: Положение персонажей и зоны воздействия влияют на бой.",
+                "en": "Tactical positioning. Type: Hybrid systems. Rule: The position of the characters and the areas of influence affect the battle."
+              }
+            },
+            {
+              "id": "variant-vn-156",
+              "text": {
+                "ru": "Боевые действия в реальном времени. Тип: Гибридные системы. Правило: Игрок управляет атаками и защитой без остановки игрового времени.",
+                "en": "Real-time combat. Type: Hybrid systems. Rule: The player controls attacks and defenses without stopping the game time."
+              }
+            },
+            {
+              "id": "variant-vn-157",
+              "text": {
+                "ru": "Уклонение и защита. Тип: Гибридные системы. Правило: Нужно избегать угроз или вовремя отражать их.",
+                "en": "Evasion and defense. Type: Hybrid systems. Rule: You need to avoid threats or repel them in time."
+              }
+            },
+            {
+              "id": "variant-vn-158",
+              "text": {
+                "ru": "Выбор боевой команды. Тип: Гибридные системы. Правило: Состав группы определяет доступные возможности и взаимодействия.",
+                "en": "Selecting a battle team. Type: Hybrid systems. Rule: The composition of the group determines the available opportunities and interactions."
+              }
+            },
+            {
+              "id": "variant-vn-159",
+              "text": {
+                "ru": "Подготовка снаряжения и расходников. Тип: Гибридные системы. Правило: Ресурсы распределяются перед испытанием и во время него.",
+                "en": "Preparing equipment and consumables. Type: Hybrid systems. Rule: Resources are allocated before and during the test."
+              }
+            },
+            {
+              "id": "variant-vn-160",
+              "text": {
+                "ru": "Скрытное прохождение. Тип: Гибридные системы. Правило: Обнаружение зависит от маршрута, шума, времени или действий.",
+                "en": "Secret passage. Type: Hybrid systems. Rule: Detection depends on route, noise, time or activity."
+              }
+            },
+            {
+              "id": "variant-vn-161",
+              "text": {
+                "ru": "Побег и преследование. Тип: Гибридные системы. Правило: Нужно пройти маршрут, выбрать укрытие или выполнить условия спасения.",
+                "en": "Escape and pursuit. Type: Hybrid systems. Rule: You need to go through a route, choose a shelter or fulfill the conditions of rescue."
+              }
+            },
+            {
+              "id": "variant-vn-162",
+              "text": {
+                "ru": "Поддержание жизненных ресурсов. Тип: Гибридные системы. Правило: Голод, энергия, воздух и другие запасы ограничивают действия.",
+                "en": "Maintaining vital resources. Type: Hybrid systems. Rule: Hunger, energy, air and other supplies limit actions."
+              }
+            },
+            {
+              "id": "variant-vn-163",
+              "text": {
+                "ru": "Необратимая потеря участника. Тип: Гибридные системы. Правило: Гибель или уход меняет доступные ресурсы, связи и дальнейшие сцены.",
+                "en": "Permanent loss of a member. Type: Hybrid systems. Rule: Death or departure changes available resources, connections and further scenes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-17",
+      "section": "section-1",
+      "title": {
+        "ru": "Петли, время и повторные прохождения",
+        "en": "Loops, time and repeat playthroughs"
+      },
+      "description": {
+        "ru": "Повторное прохождение, временные петли и возврат к событиям меняют доступные знания и способы воздействия на историю.",
+        "en": "Replays, time loops, and flashbacks change the knowledge available and how you can influence the story."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-164",
+              "text": {
+                "ru": "Переключение управляемого героя. Тип: Механики. Правило: Игрок выбирает, за какого участника продолжить развитие общей ситуации.",
+                "en": "Switching the controlled hero. Type: Mechanics. Rule: The player chooses for which participant to continue the development of the general situation."
+              }
+            },
+            {
+              "id": "variant-vn-165",
+              "text": {
+                "ru": "Возврат времени как способность. Тип: Механики. Правило: Герой или игрок возвращает сюжет к предыдущему состоянию по игровым правилам.",
+                "en": "Time return as an ability. Type: Mechanics. Rule: The hero or player returns the plot to the previous state according to the game rules."
+              }
+            },
+            {
+              "id": "variant-vn-166",
+              "text": {
+                "ru": "Создание сюжетных точек возврата. Тип: Механики. Правило: Игрок выбирает моменты, к которым сможет вернуться внутри истории.",
+                "en": "Creating plot points of return. Type: Mechanics. Rule: The player chooses moments to return to within the story."
+              }
+            },
+            {
+              "id": "variant-vn-167",
+              "text": {
+                "ru": "Ограниченный запас откатов. Тип: Механики. Правило: Возврат расходует ресурс или доступен ограниченное число раз.",
+                "en": "Limited supply of kickbacks. Type: Mechanics. Rule: Returns consume a resource or are available a limited number of times."
+              }
+            },
+            {
+              "id": "variant-vn-168",
+              "text": {
+                "ru": "Знание между прохождениями. Тип: Механики. Правило: Полученные сведения позволяют иначе пройти знакомую ситуацию.",
+                "en": "Knowledge between runs. Type: Mechanics. Rule: The information obtained allows you to go through a familiar situation differently."
+              }
+            },
+            {
+              "id": "variant-vn-169",
+              "text": {
+                "ru": "Перенос состояния между циклами. Тип: Механики. Правило: После перезапуска сохраняются параметры, предметы или достижения.",
+                "en": "Transferring state between cycles. Type: Mechanics. Rule: After a restart, parameters, items or achievements are saved."
+              }
+            },
+            {
+              "id": "variant-vn-170",
+              "text": {
+                "ru": "Новые варианты после повтора. Тип: Механики. Правило: Игра открывает решения при выполненных условиях предыдущего прохождения.",
+                "en": "New options after replay. Type: Mechanics. Rule: The game opens solutions when the conditions of the previous playthrough are met."
+              }
+            },
+            {
+              "id": "variant-vn-171",
+              "text": {
+                "ru": "Изменение прошлого ради настоящего. Тип: Механики. Правило: Действие в раннем периоде меняет доступную текущую ситуацию.",
+                "en": "Changing the past for the sake of the present. Type: Mechanics. Rule: Early action changes the available current situation."
+              }
+            },
+            {
+              "id": "variant-vn-172",
+              "text": {
+                "ru": "Согласование нескольких временных линий. Тип: Механики. Правило: Игрок добивается совместимого результата в нескольких версиях событий.",
+                "en": "Coordination of multiple timelines. Type: Mechanics. Rule: The player achieves a compatible result in several versions of events."
+              }
+            },
+            {
+              "id": "variant-vn-173",
+              "text": {
+                "ru": "Влияние выбора одного героя на другого. Тип: Механики. Правило: Изменение линии персонажа открывает или закрывает возможности в параллельной линии.",
+                "en": "The influence of one character's choice on another. Type: Mechanics. Rule: Changing a character's line opens or closes opportunities in a parallel line."
+              }
+            },
+            {
+              "id": "variant-vn-174",
+              "text": {
+                "ru": "Подбор условий для события в цикле. Тип: Механики. Правило: Игрок настраивает роли, участников или начальные параметры ради нужной встречи.",
+                "en": "Selection of conditions for an event in a cycle. Type: Mechanics. Rule: The player sets up roles, participants or initial parameters for the desired meeting."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-18",
+      "section": "section-1",
+      "title": {
+        "ru": "Метамеханики",
+        "en": "Metamechanics"
+      },
+      "description": {
+        "ru": "Правила используют сохранения, интерфейс и знание о самой игре как часть игрового решения.",
+        "en": "The rules use saves, the interface, and knowledge of the game itself as part of the game's decision."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-175",
+              "text": {
+                "ru": "Реакция на загрузку или перезапуск. Тип: Механики. Правило: Игра учитывает возврат к сохранению как осмысленное действие игрока.",
+                "en": "Response to boot or restart. Type: Mechanics. Rule: The game counts returning to a save as a meaningful action by the player."
+              }
+            },
+            {
+              "id": "variant-vn-176",
+              "text": {
+                "ru": "Память об отменённых решениях. Тип: Механики. Правило: Последствия учитывают решения, которые уже не входят в текущую версию событий.",
+                "en": "Memory of canceled decisions. Type: Mechanics. Rule: Consequences take into account decisions that are no longer part of the current version of events."
+              }
+            },
+            {
+              "id": "variant-vn-177",
+              "text": {
+                "ru": "Сохранение как предмет игры. Тип: Механики. Правило: Слоты, точки сохранения или их свойства участвуют в задаче.",
+                "en": "Conservation as a subject of the game. Type: Mechanics. Rule: Slots, save points or their properties are involved in the task."
+              }
+            },
+            {
+              "id": "variant-vn-178",
+              "text": {
+                "ru": "Меню как игровое пространство. Тип: Механики. Правило: Продвижение требует осмысленно взаимодействовать с главным меню или настройками.",
+                "en": "The menu is like a game space. Type: Mechanics. Rule: Promotion requires meaningful interaction with the main menu or settings."
+              }
+            },
+            {
+              "id": "variant-vn-179",
+              "text": {
+                "ru": "Действия с файлами игры. Тип: Механики. Правило: Игра предлагает исследовать или изменить специально предназначенные для этого файлы.",
+                "en": "Actions with game files. Type: Mechanics. Rule: The game offers to explore or change files specially designed for this."
+              }
+            },
+            {
+              "id": "variant-vn-180",
+              "text": {
+                "ru": "Работа с виртуальной операционной системой. Тип: Механики. Правило: Встроенные файлы, окна и приложения образуют игровую среду.",
+                "en": "Working with a virtual operating system. Type: Mechanics. Rule: Embedded files, windows and applications form the gaming environment."
+              }
+            },
+            {
+              "id": "variant-vn-181",
+              "text": {
+                "ru": "Управление доступностью выбора. Тип: Механики. Правило: Игрок восстанавливает, меняет или отвоёвывает заблокированные способы действия.",
+                "en": "Manage the availability of choice. Type: Mechanics. Rule: The player restores, changes or wins blocked actions."
+              }
+            },
+            {
+              "id": "variant-vn-182",
+              "text": {
+                "ru": "Осознанное прекращение взаимодействия. Тип: Механики. Правило: Закрытие, ожидание или отказ от привычной команды имеет предусмотренное сюжетное значение.",
+                "en": "Conscious cessation of interaction. Type: Mechanics. Rule: Closing, waiting, or refusing a habitual command has intended plot significance."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-19",
+      "section": "section-2",
+      "title": {
+        "ru": "Несколько игроков и аудитория",
+        "en": "Multiple players and audience participation"
+      },
+      "description": {
+        "ru": "Несколько участников или зрители распределяют влияние на решения, информацию и ход повествования.",
+        "en": "Multiple participants or spectators distribute influence over decisions, information, and the flow of the narrative."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-19-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-183",
+              "text": {
+                "ru": "Совместное решение. Тип: Гибридные системы. Правило: Несколько участников согласуют единый выбор.",
+                "en": "Joint decision. Type: Hybrid systems. Rule: Several participants agree on a single choice."
+              }
+            },
+            {
+              "id": "variant-vn-184",
+              "text": {
+                "ru": "Голосование за вариант. Тип: Гибридные системы. Правило: Вариант определяется большинством или иным правилом подсчёта.",
+                "en": "Voting for an option. Type: Hybrid systems. Rule: The option is determined by majority or other scoring rule."
+              }
+            },
+            {
+              "id": "variant-vn-185",
+              "text": {
+                "ru": "Индивидуальные решения героев. Тип: Гибридные системы. Правило: Игроки отвечают за разных персонажей в общей истории.",
+                "en": "Individual decisions of heroes. Type: Hybrid systems. Rule: Players are responsible for different characters in the overall story."
+              }
+            },
+            {
+              "id": "variant-vn-186",
+              "text": {
+                "ru": "Скрытая информация между игроками. Тип: Гибридные системы. Правило: Участники располагают разными сведениями и решают, что раскрывать.",
+                "en": "Hidden information between players. Type: Hybrid systems. Rule: Participants have different information and decide what to disclose."
+              }
+            },
+            {
+              "id": "variant-vn-187",
+              "text": {
+                "ru": "Соперничество за ограниченную возможность. Тип: Гибридные системы. Правило: Участники конкурируют за встречу, ресурс, место или отношения.",
+                "en": "Competing for limited opportunity. Type: Hybrid systems. Rule: Participants compete for a meeting, resource, location or relationship."
+              }
+            },
+            {
+              "id": "variant-vn-188",
+              "text": {
+                "ru": "Согласование личных и общих целей. Тип: Гибридные системы. Правило: Индивидуальная выгода может помогать или мешать результату группы.",
+                "en": "Coordination of personal and general goals. Type: Hybrid systems. Rule: Individual gain can help or hinder the group's outcome."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-20",
+      "section": "section-3",
+      "title": {
+        "ru": "Доступ и монетизация",
+        "en": "Access and monetization"
+      },
+      "description": {
+        "ru": "Правила доступа определяют открытие глав, ожидание и расход ресурсов; коммерческие ограничения требуют отдельной оценки.",
+        "en": "Access rules determine the opening of chapters, waiting, and resource consumption; commercial restrictions require separate assessment."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-20-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-189",
+              "text": {
+                "ru": "Билеты на чтение. Тип: Системы доступа. Правило: Открытие главы расходует специальный билет или пропуск.",
+                "en": "Reading tickets. Type: Access systems. Rule: Opening a chapter consumes a special ticket or pass."
+              }
+            },
+            {
+              "id": "variant-vn-190",
+              "text": {
+                "ru": "Восстанавливаемая энергия. Тип: Системы доступа. Правило: Действия или чтение расходуют запас, который пополняется со временем.",
+                "en": "Recoverable energy. Type: Access systems. Rule: Actions or reading consume a supply, which is replenished over time."
+              }
+            },
+            {
+              "id": "variant-vn-191",
+              "text": {
+                "ru": "Премиальные варианты выбора. Тип: Системы доступа. Правило: Дополнительное решение требует специальной валюты, которую в том числе можно купить.",
+                "en": "Premium choices. Type: Access systems. Rule: An additional solution requires a special currency, which can also be purchased."
+              }
+            },
+            {
+              "id": "variant-vn-192",
+              "text": {
+                "ru": "Ожидание или ускорение за ресурс. Тип: Системы доступа. Правило: Следующая часть открывается после паузы либо оплаты ускорения.",
+                "en": "Waiting or accelerating for a resource. Type: Access systems. Rule: The next part opens after a pause or payment for acceleration."
+              }
+            },
+            {
+              "id": "variant-vn-193",
+              "text": {
+                "ru": "Коллекционные случайные награды. Тип: Системы доступа. Правило: Случайное получение карточек или предметов открывает связанные возможности и контент.",
+                "en": "Collectible random rewards. Type: Access systems. Rule: Randomly obtaining cards or items unlocks related abilities and content."
+              }
+            },
+            {
+              "id": "variant-vn-194",
+              "text": {
+                "ru": "Награды за регулярное возвращение. Тип: Системы доступа. Правило: Входы и задания выдают ресурсы доступа к истории.",
+                "en": "Rewards for returning regularly. Type: Access systems. Rule: Inputs and tasks provide history access resources."
+              }
+            },
+            {
+              "id": "variant-vn-195",
+              "text": {
+                "ru": "Временные сюжетные события. Тип: Системы доступа. Правило: Отдельные истории и награды доступны в ограниченный период.",
+                "en": "Temporary story events. Type: Access systems. Rule: Selected stories and rewards are available for a limited period."
+              }
+            },
+            {
+              "id": "variant-vn-196",
+              "text": {
+                "ru": "Просмотр рекламы ради ресурса. Тип: Системы доступа. Правило: Рекламный просмотр даёт билет, валюту, ускорение или другую возможность продолжить.",
+                "en": "Viewing advertisements for the sake of a resource. Type: Access systems. Rule: Ad viewing gives a ticket, currency, speedup or other opportunity to continue."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-21",
+      "section": "section-4",
+      "title": {
+        "ru": "Структуры повествования",
+        "en": "Narrative structures"
+      },
+      "description": {
+        "ru": "Связи между сценами, точками зрения и ветками задают порядок знакомства с историей и доступность её частей.",
+        "en": "Connections between scenes, points of view, and paths determine the order in which the story is encountered and the parts of it that are accessible."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-21-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-197",
+              "text": {
+                "ru": "Линейная кинетическая новелла. Тип: Структуры. Правило: История проходит без выбора сюжетного направления; интерактивность может ограничиваться чтением.",
+                "en": "Linear kinetic novel. Type: Structures. Rule: The story proceeds without choosing a plot direction; Interactivity may be limited to reading."
+              }
+            },
+            {
+              "id": "variant-vn-198",
+              "text": {
+                "ru": "Дерево ветвлений. Тип: Структуры. Правило: Последовательные решения ведут к расходящимся сценам и концовкам.",
+                "en": "Branch tree. Type: Structures. Rule: Consistent decisions lead to divergent scenes and endings..."
+              }
+            },
+            {
+              "id": "variant-vn-199",
+              "text": {
+                "ru": "Развилка со схождением. Тип: Структуры. Правило: Разные эпизоды возвращаются к общей сюжетной точке.",
+                "en": "Fork with toe. Type: Structures. Rule: Different episodes return to a common plot point..."
+              }
+            },
+            {
+              "id": "variant-vn-200",
+              "text": {
+                "ru": "Общий маршрут и отдельные ветки. Тип: Структуры. Правило: Вступительная линия переходит в маршрут персонажа или сюжетной темы.",
+                "en": "General route and separate branches. Type: Structures. Rule: The opening line leads into the route of the character or plot topics."
+              }
+            },
+            {
+              "id": "variant-vn-201",
+              "text": {
+                "ru": "Узловая структура с центром. Тип: Структуры. Правило: Игрок возвращается к месту выбора самостоятельных эпизодов.",
+                "en": "Nodal structure with a center. Type: Structures. Rule: The player returns to the place where he selected independent episodes."
+              }
+            },
+            {
+              "id": "variant-vn-202",
+              "text": {
+                "ru": "Параллельные линии героев. Тип: Структуры. Правило: История складывается из нескольких точек зрения.",
+                "en": "Parallel lines of heroes. Type: Structures. Rule: History consists of several points of view..."
+              }
+            },
+            {
+              "id": "variant-vn-203",
+              "text": {
+                "ru": "Нелинейное открытие фрагментов. Тип: Структуры. Правило: Части истории доступны вне хронологического порядка.",
+                "en": "Nonlinear discovery of fragments. Type: Structures. Rule: Parts of the story are available out of chronological order."
+              }
+            },
+            {
+              "id": "variant-vn-204",
+              "text": {
+                "ru": "Циклическая структура. Тип: Структуры. Правило: История предполагает возвращение к знакомому периоду или состоянию.",
+                "en": "Cyclic structure. Type: Structures. Rule: History involves a return to a familiar period or state."
+              }
+            },
+            {
+              "id": "variant-vn-205",
+              "text": {
+                "ru": "Сборка истории из условных событий. Тип: Структуры. Правило: Подходящие эпизоды выбираются по текущему состоянию мира и героя.",
+                "en": "Assembling a story from conditional events. Type: Structures. Rule: Suitable episodes are selected based on the current state of the world and the hero."
+              }
+            },
+            {
+              "id": "variant-vn-206",
+              "text": {
+                "ru": "Несколько концовок. Тип: Структуры. Правило: Финал определяется набором условий и решений.",
+                "en": "Multiple endings. Type: Structures. Rule: The ending is determined by a set of conditions and decisions."
+              }
+            },
+            {
+              "id": "variant-vn-207",
+              "text": {
+                "ru": "Открываемый финальный маршрут. Тип: Структуры. Правило: Завершающая линия требует пройти другие маршруты или собрать сведения.",
+                "en": "Unlockable final route. Type: Structures. Rule: The final line requires you to go through other routes or collect information..."
+              }
+            },
+            {
+              "id": "variant-vn-208",
+              "text": {
+                "ru": "Накопительный эпилог. Тип: Структуры. Правило: Итог собирается из отдельных результатов для персонажей и сюжетных линий.",
+                "en": "Cumulative epilogue. Type: Structures. Rule: The total is compiled from individual results for characters and storylines."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-22",
+      "section": "section-5",
+      "title": {
+        "ru": "Функции чтения и навигации",
+        "en": "Reading and navigation functions"
+      },
+      "description": {
+        "ru": "Управление чтением, журналом, сохранениями и переходами помогает работать с текстом и повторно находить сведения.",
+        "en": "Reading, history, saves, and navigation controls help you work with text and find information again."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-22-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-209",
+              "text": {
+                "ru": "Сохранение и загрузка. Тип: Сервисные функции. Правило: Игрок фиксирует состояние и возвращается к нему.",
+                "en": "Saving and loading. Type: Service functions. Rule: The player fixes the state and returns to it."
+              }
+            },
+            {
+              "id": "variant-vn-210",
+              "text": {
+                "ru": "Быстрое сохранение и загрузка. Тип: Сервисные функции. Правило: Текущая позиция записывается или восстанавливается одной командой.",
+                "en": "Fast saving and loading. Type: Service functions. Rule: The current position is written or restored with one command."
+              }
+            },
+            {
+              "id": "variant-vn-211",
+              "text": {
+                "ru": "Автосохранение и контрольные точки. Тип: Сервисные функции. Правило: Игра сама сохраняет позиции для продолжения.",
+                "en": "Autosave and checkpoints. Type: Service functions. Rule: The game itself saves positions to continue."
+              }
+            },
+            {
+              "id": "variant-vn-212",
+              "text": {
+                "ru": "Rollback. Тип: Сервисные функции. Правило: Возврат к предыдущим репликам и состояниям; отличается от простого просмотра истории текста.",
+                "en": "Rollback. Type: Service functions. Rule: Return to previous dialogue lines and states; different from simply viewing text history."
+              }
+            },
+            {
+              "id": "variant-vn-213",
+              "text": {
+                "ru": "История диалогов. Тип: Сервисные функции. Правило: Прочитанный текст доступен для просмотра без изменения состояния истории.",
+                "en": "History of dialogues. Type: Service functions. Rule: Read text is available for viewing without changing the history state."
+              }
+            },
+            {
+              "id": "variant-vn-214",
+              "text": {
+                "ru": "Повтор озвученной реплики. Тип: Сервисные функции. Правило: Голосовую запись можно прослушать повторно.",
+                "en": "Repeat the voiced line. Type: Service functions. Rule: The voice recording can be listened to again..."
+              }
+            },
+            {
+              "id": "variant-vn-215",
+              "text": {
+                "ru": "Автоматическое чтение. Тип: Сервисные функции. Правило: Реплики переключаются без ручного подтверждения.",
+                "en": "Automatic reading. Type: Service functions. Rule: dialogue lines are switched without manual confirmation."
+              }
+            },
+            {
+              "id": "variant-vn-216",
+              "text": {
+                "ru": "Пропуск прочитанного. Тип: Сервисные функции. Правило: Знакомый текст ускоряется, а новый сохраняет обычное поведение.",
+                "en": "Skip reading. Type: Service functions. Rule: Familiar text speeds up, but new text retains its normal behavior."
+              }
+            },
+            {
+              "id": "variant-vn-217",
+              "text": {
+                "ru": "Пропуск до решения или сцены. Тип: Сервисные функции. Правило: Игрок быстро возвращается к важной точке прохождения.",
+                "en": "Skip to solution or scene. Type: Service functions. Rule: The player quickly returns to an important point in the passage."
+              }
+            },
+            {
+              "id": "variant-vn-218",
+              "text": {
+                "ru": "Выбор главы и повтор сцены. Тип: Сервисные функции. Правило: Открытые эпизоды запускаются отдельно.",
+                "en": "Chapter selection and scene repeat. Type: Service functions. Rule: Open episodes are launched separately."
+              }
+            },
+            {
+              "id": "variant-vn-219",
+              "text": {
+                "ru": "Карта ветвлений. Тип: Сервисные функции. Правило: Интерфейс показывает пройденные узлы и доступные переходы.",
+                "en": "Branch map. Type: Service functions. Rule: The interface shows the nodes traversed and available transitions."
+              }
+            },
+            {
+              "id": "variant-vn-220",
+              "text": {
+                "ru": "Отметки прочитанных вариантов. Тип: Сервисные функции. Правило: Игра различает уже выбранные и новые решения.",
+                "en": "Marks of read options. Type: Service functions. Rule: The game distinguishes between already chosen and new solutions."
+              }
+            },
+            {
+              "id": "variant-vn-221",
+              "text": {
+                "ru": "Журнал, словарь и досье. Тип: Сервисные функции. Правило: Сведения о мире, задачах и персонажах собраны для справки.",
+                "en": "Journal, dictionary and dossier. Type: Service functions. Rule: Information about the world, tasks and characters is collected for reference."
+              }
+            },
+            {
+              "id": "variant-vn-222",
+              "text": {
+                "ru": "Галерея и учёт завершённости. Тип: Сервисные функции. Правило: Иллюстрации, музыка, сцены и концовки регистрируются как открытый контент.",
+                "en": "Gallery and completion tracking. Type: Service functions. Rule: Illustrations, music, scenes and endings are registered as open content."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-23",
+      "section": "section-6",
+      "title": {
+        "ru": "Формы подачи",
+        "en": "Presentation formats"
+      },
+      "description": {
+        "ru": "Способ предъявления текста, изображений, звука и перспективы определяет, как читатель получает информацию.",
+        "en": "The way text, images, sound and perspective are presented determines how the reader receives information."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-23-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-vn-223",
+              "text": {
+                "ru": "ADV. Тип: Подача. Правило: Реплики и повествование показываются отдельными порциями, обычно в небольшом текстовом окне.",
+                "en": "ADV. Type: Feed. Rule: Lines and narration are shown in separate chunks, usually in a small text window."
+              }
+            },
+            {
+              "id": "variant-vn-224",
+              "text": {
+                "ru": "NVL. Тип: Подача. Правило: Несколько абзацев одновременно занимают значительную часть экрана.",
+                "en": "N.V.L. Type: Feed. Rule: Several paragraphs simultaneously take up a significant portion of the screen."
+              }
+            },
+            {
+              "id": "variant-vn-225",
+              "text": {
+                "ru": "Подача через мессенджер. Тип: Подача. Правило: История оформлена как переписка, уведомления и звонки.",
+                "en": "Submission via messenger. Type: Feed. Rule: History is formatted as correspondence, notifications and calls."
+              }
+            },
+            {
+              "id": "variant-vn-226",
+              "text": {
+                "ru": "Комикс и интерактивные панели. Тип: Подача. Правило: Реплики и события организованы по кадрам.",
+                "en": "Comics and interactive panels. Type: Feed. Rule: Replies and events are organized by frames."
+              }
+            },
+            {
+              "id": "variant-vn-227",
+              "text": {
+                "ru": "Документальная подача. Тип: Подача. Правило: Сюжет раскрывается через письма, протоколы, дневники и материалы дела.",
+                "en": "Documentary presentation. Type: Feed. Rule: The plot is revealed through letters, protocols, diaries and case materials."
+              }
+            },
+            {
+              "id": "variant-vn-228",
+              "text": {
+                "ru": "Подача через фото или видео. Тип: Подача. Правило: История использует актёрские фотографии либо видеосцены.",
+                "en": "Submit via photo or video. Type: Feed. Rule: The story uses photographs of actors or video scenes."
+              }
+            },
+            {
+              "id": "variant-vn-229",
+              "text": {
+                "ru": "Динамический текст. Тип: Подача. Правило: Расположение, появление и изменение текста участвуют в выразительной подаче.",
+                "en": "Dynamic text. Type: Feed. Rule: The placement, appearance and change of text are involved in expressive presentation..."
+              }
+            },
+            {
+              "id": "variant-vn-230",
+              "text": {
+                "ru": "Визуальное и звуковое состояние сцены. Тип: Подача. Правило: Портреты, анимация, ракурс, музыка, голос и эффекты передают состояние сцены.",
+                "en": "Visual and sound state of the scene. Type: Feed. Rule: Portraits, animation, camera angle, music, voice and effects convey the state of the scene..."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Episode: валюта и доступ к истории",
+        "en": "Episode: currency and access to history"
+      },
+      "url": "https://pocketgems-support.helpshift.com/hc/en/4-episode/faq/90-how-do-i-get-free-gems-and-passes/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ikémen Series: билеты и ресурсы",
+        "en": "Ikémen Series: Tickets and Resources"
+      },
+      "url": "https://ikemen-series.com/games/sengokueternity/message/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ren’Py: условные варианты выбора",
+        "en": "Ren'Py: Conditional Selection Options"
+      },
+      "url": "https://www.renpy.org/doc/html/menus.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "inkle: текст, ветвления и состояние",
+        "en": "inkle: text, branches and state"
+      },
+      "url": "https://www.inklestudios.com/ink/web-tutorial/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ren’Py: сохранение, загрузка и rollback",
+        "en": "Ren'Py: saving, loading and rollback"
+      },
+      "url": "https://www.renpy.org/doc/html/save_load_rollback.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ren’Py: persistent data",
+        "en": "Ren'Py: persistent data"
+      },
+      "url": "https://www.renpy.org/doc/html/persistent.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ren’Py: ADV и NVL",
+        "en": "Ren'Py: ADV and NVL"
+      },
+      "url": "https://www.renpy.org/doc/html/nvl_mode.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "428: Shibuya Scramble",
+        "en": "428: Shibuya Scramble"
+      },
+      "url": "https://www.spike-chunsoft.com/428/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "BAD END THEATER",
+        "en": "BAD END THEATER"
+      },
+      "url": "https://nomnomnami.itch.io/bad-end-theater",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "her tears were my light",
+        "en": "her tears were my light"
+      },
+      "url": "https://nomnomnami.itch.io/her-tears-were-my-light",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "VA-11 HALL-A: официальный пресс-кит",
+        "en": "VA-11 HALL-A: official press kit"
+      },
+      "url": "https://sukeban.moe/press/sheet.php?p=Cyberpunk_Bartender_Action+VA-11+HALL-A",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Long Live the Queen",
+        "en": "Long Live the Queen"
+      },
+      "url": "https://www.hanakogames.com/llq.shtml",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "I Was a Teenage Exocolonist",
+        "en": "I Was a Teenage Exocolonist"
+      },
+      "url": "https://exocolonist.com/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ace Attorney: официальное руководство",
+        "en": "Ace Attorney: Official Guide"
+      },
+      "url": "https://static.capcom.com/manuals/aaaj/AAAJ_DS_DMNL_EN.pdf",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Zero Escape: The Nonary Games",
+        "en": "Zero Escape: The Nonary Games"
+      },
+      "url": "https://www.spike-chunsoft.com/games/zero-escape-nonary-games/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Gnosia: страница издателя",
+        "en": "Gnosia: publisher page"
+      },
+      "url": "https://playism.com/game/gnosia/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Monster Prom: разбор диалоговой системы",
+        "en": "Monster Prom: analysis of the dialogue system"
+      },
+      "url": "https://unity.com/blog/monster-prom-building-a-dialog-system-for-a-dating-sim",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

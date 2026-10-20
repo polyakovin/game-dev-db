@@ -1,0 +1,3167 @@
+{
+  "id": "dialogue",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики диалогов",
+    "en": "Dialogue mechanics"
+  },
+  "description": {
+    "ru": "Механики диалогов: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Dialogue mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая таксономия, составленная для этого запроса. Названия описательные; источники подтверждают отдельные принципы и примеры, а не весь перечень.",
+    "en": "Author's working taxonomy compiled for this request. Titles are descriptive; sources confirm individual principles and examples, and not the entire list."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Структура и ввод",
+        "en": "Structure and input"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Игровые правила",
+        "en": "Game rules"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Системы NPC и контента",
+        "en": "NPC and content systems"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Интерфейс и доступность",
+        "en": "Interface and accessibility"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-access",
+      "section": "section-1",
+      "title": {
+        "ru": "Начало и завершение разговора",
+        "en": "Starting and ending a conversation"
+      },
+      "description": {
+        "ru": "Условия, инициатор и способ входа в разговор определяют, когда общение начинается и как его можно завершить.",
+        "en": "The terms, initiator, and entry method determine when communication begins and how it can be ended."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-access-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-access-01",
+              "text": {
+                "ru": "Инициатива игрока. Правило: Игрок обращается к выбранному персонажу, который может принять или отклонить обращение.",
+                "en": "Player initiative. Rule: The player addresses the selected character, who can accept or reject the request."
+              }
+            },
+            {
+              "id": "variant-access-02",
+              "text": {
+                "ru": "Инициатива NPC. Правило: Персонаж сам начинает разговор при выполнении условий или появлении собственной потребности.",
+                "en": "NPC initiative. Rule: The character himself starts a conversation when the conditions are met or his own need appears."
+              }
+            },
+            {
+              "id": "variant-access-03",
+              "text": {
+                "ru": "Разговор по событию. Правило: Встреча, находка, тревога или сюжетное событие автоматически запускают обмен репликами.",
+                "en": "Event conversation. Rule: An encounter, discovery, alarm, or story event automatically triggers an exchange of remarks."
+              }
+            },
+            {
+              "id": "variant-access-04",
+              "text": {
+                "ru": "Доступ через посредника. Правило: Чтобы поговорить с персонажем, нужно добиться представления, приглашения или аудиенции.",
+                "en": "Access through an intermediary. Rule: To speak with a character, you must obtain an introduction, invitation, or audience."
+              }
+            },
+            {
+              "id": "variant-access-05",
+              "text": {
+                "ru": "Вступление в чужой разговор. Правило: Игрок присоединяется к уже идущему обсуждению и меняет состав участников.",
+                "en": "Entering into someone else's conversation. Rule: The player joins an already ongoing discussion and changes the composition of the participants."
+              }
+            },
+            {
+              "id": "variant-access-06",
+              "text": {
+                "ru": "Отложенная встреча. Правило: Стороны договариваются поговорить позже, в назначенное время или при других обстоятельствах.",
+                "en": "Postponed meeting. Rule: The parties agree to talk later, at an appointed time or under other circumstances."
+              }
+            },
+            {
+              "id": "variant-access-07",
+              "text": {
+                "ru": "Добровольный выход. Правило: Игрок или NPC завершает разговор; уход может получить отдельную социальную оценку.",
+                "en": "Voluntary exit. Rule: Player or NPC ends conversation; care can receive a separate social assessment."
+              }
+            },
+            {
+              "id": "variant-access-08",
+              "text": {
+                "ru": "Приостановка и возобновление. Правило: Разговор сохраняет незаконченный контекст и продолжается после перерыва.",
+                "en": "Suspension and resumption. Rule: The conversation maintains unfinished context and continues after the break."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-selection",
+      "section": "section-1",
+      "title": {
+        "ru": "Выбор ответа",
+        "en": "Response selection"
+      },
+      "description": {
+        "ru": "Игрок выбирает одну из предложенных реплик или действий, а система определяет, что услышит собеседник.",
+        "en": "The player selects one of the proposed remarks or actions, and the system determines what the interlocutor will hear."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-selection-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-selection-01",
+              "text": {
+                "ru": "Выбор точной реплики. Правило: Игрок заранее видит формулировку, которую произнесёт персонаж.",
+                "en": "Selecting an exact dialogue line. Rule: The player sees in advance the wording that the character will say."
+              }
+            },
+            {
+              "id": "variant-selection-02",
+              "text": {
+                "ru": "Выбор намерения. Правило: Игрок выбирает действие вроде «успокоить» или «отказать», а система подбирает фразу.",
+                "en": "Choice of intention. Rule: The player selects an action like “calm down” or “refuse”, and the system selects a phrase."
+              }
+            },
+            {
+              "id": "variant-selection-03",
+              "text": {
+                "ru": "Выбор тона. Правило: Смысл сообщения сохраняется, но меняется способ подачи: мягкий, резкий, ироничный.",
+                "en": "Tone selection. Rule: The meaning of the message remains the same, but the method of presentation changes: soft, sharp, ironic..."
+              }
+            },
+            {
+              "id": "variant-selection-04",
+              "text": {
+                "ru": "Выбор темы. Правило: Игрок задаёт предмет разговора без выбора конкретного вопроса.",
+                "en": "Selecting a topic. Rule: The player asks the subject of conversation without selecting a specific question."
+              }
+            },
+            {
+              "id": "variant-selection-05",
+              "text": {
+                "ru": "Выбор адресата. Правило: Одно сообщение направляется определённому участнику и вызывает соответствующую реакцию.",
+                "en": "Selecting a recipient. Rule: One message is sent to a specific participant and causes an appropriate reaction."
+              }
+            },
+            {
+              "id": "variant-selection-06",
+              "text": {
+                "ru": "Выбор действия вместо слов. Правило: Ответом становятся уход, подарок, нападение, демонстрация вещи или другое действие.",
+                "en": "Choosing actions instead of words. Rule: The answer is leaving, a gift, an attack, a demonstration of an item or another action."
+              }
+            },
+            {
+              "id": "variant-selection-07",
+              "text": {
+                "ru": "Молчание как ответ. Правило: Отказ говорить считается осмысленным ходом и влияет на реакцию собеседника.",
+                "en": "Silence is the answer. Rule: Refusal to speak is considered a meaningful move and affects the reaction of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-selection-08",
+              "text": {
+                "ru": "Делегирование ответа. Правило: Игрок передаёт право говорить спутнику, представителю или выбранному члену команды.",
+                "en": "Delegation of response. Rule: The player gives the right to speak to a companion, representative, or selected team member."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-input",
+      "section": "section-1",
+      "title": {
+        "ru": "Составление и свободный ввод",
+        "en": "Composed responses and free text input"
+      },
+      "description": {
+        "ru": "Ответ собирается из элементов или вводится свободно, после чего система интерпретирует содержание и форму.",
+        "en": "The answer is assembled from elements or entered freely, after which the system interprets the content and form."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-input-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-input-01",
+              "text": {
+                "ru": "Ответ из фрагментов. Правило: Игрок собирает сообщение из доступных слов, фраз или смысловых блоков.",
+                "en": "Answer from fragments. Rule: The player collects a message from available words, phrases or semantic blocks."
+              }
+            },
+            {
+              "id": "variant-input-02",
+              "text": {
+                "ru": "Намерение плюс тон. Правило: Игрок независимо выбирает цель высказывания и манеру его произнесения.",
+                "en": "Intent plus tone. Rule: The player independently chooses the purpose of the statement and the manner of its utterance."
+              }
+            },
+            {
+              "id": "variant-input-03",
+              "text": {
+                "ru": "Подстановка сведений. Правило: В шаблон вопроса подставляются имя, место, время, предмет или известный факт.",
+                "en": "Substitution of information. Rule: A name, place, time, object or known fact is substituted into the question template."
+              }
+            },
+            {
+              "id": "variant-input-04",
+              "text": {
+                "ru": "Ввод ключевого слова. Правило: Для обращения к теме нужно самостоятельно назвать распознаваемое слово.",
+                "en": "Entering a keyword. Rule: To refer to a topic, you need to name the recognized word yourself."
+              }
+            },
+            {
+              "id": "variant-input-05",
+              "text": {
+                "ru": "Текстовые команды. Правило: Парсер понимает ограниченную грамматику, например «спросить Анну о ключе».",
+                "en": "Text commands. Rule: The parser understands limited grammar, for example \"ask Anna about the key\"."
+              }
+            },
+            {
+              "id": "variant-input-06",
+              "text": {
+                "ru": "Свободный текст. Правило: Система определяет тему и намерение произвольной фразы игрока.",
+                "en": "Free text. Rule: The system determines the topic and intent of the player's arbitrary phrase."
+              }
+            },
+            {
+              "id": "variant-input-07",
+              "text": {
+                "ru": "Голосовой ввод. Правило: Распознанная речь служит способом передачи вопроса, команды или ответа.",
+                "en": "Voice input. Rule: Recognized speech serves as a way to convey a question, command or answer."
+              }
+            },
+            {
+              "id": "variant-input-08",
+              "text": {
+                "ru": "Уточнение непонятого. Правило: При неоднозначном вводе собеседник запрашивает пояснение и предлагает исправить сообщение.",
+                "en": "Clarification of what is not understood. Rule: If the input is ambiguous, the interlocutor asks for clarification and offers to correct the message."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-topology",
+      "section": "section-1",
+      "title": {
+        "ru": "Структура диалогового графа",
+        "en": "Dialogue graph structure"
+      },
+      "description": {
+        "ru": "Связи между узлами разговора задают ветвления, возвраты, слияния и порядок доступных тем.",
+        "en": "The connections between conversation nodes define branches, backtracks, merges, and the order of available topics."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-topology-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-topology-01",
+              "text": {
+                "ru": "Линейная последовательность. Правило: Разговор идёт по заданному пути; управление может ограничиваться продвижением и выходом.",
+                "en": "Linear sequence. Rule: The conversation follows a given path; control may be limited to advance and exit."
+              }
+            },
+            {
+              "id": "variant-topology-02",
+              "text": {
+                "ru": "Разветвляющееся дерево. Правило: Каждый выбор переводит разговор в свою ветвь с отдельными продолжениями.",
+                "en": "Branching tree. Rule: Each choice moves the conversation to its own thread with separate continuations."
+              }
+            },
+            {
+              "id": "variant-topology-03",
+              "text": {
+                "ru": "Ветвление со схождением. Правило: Разные ответы дают локальные реакции, затем возвращают разговор в общую точку.",
+                "en": "Branching with convergence. Rule: Different answers give local reactions, then bring the conversation back to the general point..."
+              }
+            },
+            {
+              "id": "variant-topology-04",
+              "text": {
+                "ru": "Центральное меню тем. Правило: После обсуждения вопроса игрок возвращается к общему списку доступных тем.",
+                "en": "Central topics menu. Rule: After discussing the issue, the player returns to the general list of available topics."
+              }
+            },
+            {
+              "id": "variant-topology-05",
+              "text": {
+                "ru": "Цепочка с возвратами. Правило: Разговор позволяет возвращаться к прежним вопросам с новым контекстом.",
+                "en": "Return chain. Rule: Conversation allows you to return to previous questions with a new context."
+              }
+            },
+            {
+              "id": "variant-topology-06",
+              "text": {
+                "ru": "Условные эпизоды, storylets. Правило: Система выбирает небольшие сцены по состоянию мира и персонажей.",
+                "en": "Conditional episodes, storylets. Rule: The system selects small scenes based on the state of the world and characters."
+              }
+            },
+            {
+              "id": "variant-topology-07",
+              "text": {
+                "ru": "Параллельные нити. Правило: Несколько обсуждений развиваются одновременно, а игрок распределяет внимание между ними.",
+                "en": "Parallel threads. Rule: Several discussions develop simultaneously, and the player distributes attention between them."
+              }
+            },
+            {
+              "id": "variant-topology-08",
+              "text": {
+                "ru": "Многоэтапная беседа. Правило: Связанный разговор продолжается в нескольких сценах, местах или встречах.",
+                "en": "Multi-stage conversation. Rule: A connected conversation continues across multiple scenes, locations, or encounters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-topics",
+      "section": "section-2",
+      "title": {
+        "ru": "Управление темами",
+        "en": "Topic management"
+      },
+      "description": {
+        "ru": "Выбор и переключение тем управляют тем, о чём говорят персонажи и какие вопросы остаются открытыми.",
+        "en": "The choice and switching of topics control what the characters talk about and what questions are left open."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-topics-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-topics-01",
+              "text": {
+                "ru": "Открытие темы. Правило: Новая тема появляется после наблюдения, знакомства, события или найденной информации.",
+                "en": "Opening a topic. Rule: A new topic appears after an observation, acquaintance, event or information found."
+              }
+            },
+            {
+              "id": "variant-topics-02",
+              "text": {
+                "ru": "Исчерпание темы. Правило: Вопрос исчезает или перестаёт давать новые сведения после обсуждения.",
+                "en": "Exhaustion of topic. Rule: The question disappears or ceases to provide new information after discussion."
+              }
+            },
+            {
+              "id": "variant-topics-03",
+              "text": {
+                "ru": "Углубление вопроса. Правило: Ответ открывает уточнения, детали и более узкие направления разговора.",
+                "en": "Deepening the question. Rule: The answer opens up clarifications, details and narrower directions of conversation."
+              }
+            },
+            {
+              "id": "variant-topics-04",
+              "text": {
+                "ru": "Смена темы. Правило: Игрок переводит разговор в другое русло, меняя его цель или эмоциональный фон.",
+                "en": "Change of topic. Rule: The player takes the conversation in a different direction, changing its purpose or emotional background."
+              }
+            },
+            {
+              "id": "variant-topics-05",
+              "text": {
+                "ru": "Возврат к отложенному. Правило: Ранее прерванный вопрос можно продолжить, когда выполнены новые условия.",
+                "en": "Return to deferred. Rule: A previously interrupted question can be continued when new conditions are met."
+              }
+            },
+            {
+              "id": "variant-topics-06",
+              "text": {
+                "ru": "Порядок вопросов. Правило: Одни и те же темы приводят к разным результатам в зависимости от последовательности.",
+                "en": "Order of questions. Rule: The same topics lead to different results depending on the sequence."
+              }
+            },
+            {
+              "id": "variant-topics-07",
+              "text": {
+                "ru": "Закрытие темы. Правило: Неудачный ход, обещание или изменение обстоятельств делает вопрос недоступным.",
+                "en": "Closing the topic. Rule: A failed move, a promise, or a change in circumstances makes the question unavailable."
+              }
+            },
+            {
+              "id": "variant-topics-08",
+              "text": {
+                "ru": "Насыщение повторениями. Правило: Настойчивое обсуждение одной темы меняет терпение NPC и отдачу следующих вопросов.",
+                "en": "Saturation with repetitions. Rule: Persistent discussion of one topic changes the NPC's patience and response to subsequent questions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-2",
+      "title": {
+        "ru": "Время и темп",
+        "en": "Time and pace"
+      },
+      "description": {
+        "ru": "Длительность, паузы и сроки ответа становятся частью правила общения и его последствий.",
+        "en": "Length, pauses, and timing of responses become part of the rules of communication and their consequences."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-timing-01",
+              "text": {
+                "ru": "Таймер ответа. Правило: Игрок должен выбрать ответ до истечения заданного времени.",
+                "en": "Response timer. Rule: The player must choose an answer before the specified time expires."
+              }
+            },
+            {
+              "id": "variant-timing-02",
+              "text": {
+                "ru": "Раздельные сроки вариантов. Правило: Отдельные реплики появляются и исчезают в разные моменты разговора.",
+                "en": "Separate timing options. Rule: Individual lines appear and disappear at different points in the conversation."
+              }
+            },
+            {
+              "id": "variant-timing-03",
+              "text": {
+                "ru": "Ответ по умолчанию. Правило: Если игрок не успел, система выбирает заданное действие или реакцию.",
+                "en": "Default answer. Rule: If the player does not have time, the system selects the specified action or reaction."
+              }
+            },
+            {
+              "id": "variant-timing-04",
+              "text": {
+                "ru": "Цена в мировом времени. Правило: Каждый вопрос или разговор продвигает часы и влияет на внешние события.",
+                "en": "Price in world time. Rule: Every question or conversation advances the clock and influences external events."
+              }
+            },
+            {
+              "id": "variant-timing-05",
+              "text": {
+                "ru": "Ответ в нужный момент. Правило: Значение имеет момент произнесения, например пауза, колебание или эмоциональный пик.",
+                "en": "Answer at the right time. Rule: The moment of utterance, for example a pause, hesitation or emotional peak, matters."
+              }
+            },
+            {
+              "id": "variant-timing-06",
+              "text": {
+                "ru": "Ожидание как тактика. Правило: Пауза заставляет NPC добавить сведения, сменить позицию или самому продолжить речь.",
+                "en": "Waiting as a tactic. Rule: A pause forces the NPC to add information, change position, or continue speaking."
+              }
+            },
+            {
+              "id": "variant-timing-07",
+              "text": {
+                "ru": "Ограничение числа ходов. Правило: Разговор завершается после заданного числа обменов независимо от длины реплик.",
+                "en": "Limit the number of moves. Rule: The conversation ends after a given number of exchanges, regardless of the length of the remarks."
+              }
+            },
+            {
+              "id": "variant-timing-08",
+              "text": {
+                "ru": "Неравные затраты времени. Правило: Разные реплики требуют разной длительности и конкурируют с другими действиями.",
+                "en": "Uneven time spent. Rule: Different cues require different durations and compete with other actions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-interruption",
+      "section": "section-2",
+      "title": {
+        "ru": "Перебивания и очередность",
+        "en": "Interruptions and taking turns"
+      },
+      "description": {
+        "ru": "Момент вмешательства и распределение очереди определяют, кто продолжит говорить и как изменится разговор.",
+        "en": "The timing of the intervention and the distribution of the turn determine who continues to speak and how the conversation changes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-interruption-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-interruption-01",
+              "text": {
+                "ru": "Перебивание реплики. Правило: Игрок обрывает текущую фразу; NPC учитывает момент и содержание вмешательства.",
+                "en": "Interrupting a dialogue line. Rule: The player breaks off the current phrase; NPC takes into account the moment and content of the intervention."
+              }
+            },
+            {
+              "id": "variant-interruption-02",
+              "text": {
+                "ru": "Дать договорить. Правило: Игрок сознательно ждёт окончания реплики и получает её полный смысл или иную реакцию.",
+                "en": "Let me finish. Rule: The player consciously waits for the end of the remark and receives its full meaning or another reaction."
+              }
+            },
+            {
+              "id": "variant-interruption-03",
+              "text": {
+                "ru": "Перехват инициативы. Правило: Успешное вмешательство переводит право задавать вопросы или определять тему к игроку.",
+                "en": "Taking the initiative. Rule: Successful intervention transfers the right to ask questions or determine the topic to the player."
+              }
+            },
+            {
+              "id": "variant-interruption-04",
+              "text": {
+                "ru": "Удержание слова. Правило: Нужно защищать собственную реплику от попыток перебить или сменить тему.",
+                "en": "Holding the word. Rule: You need to protect your own remarks from attempts to interrupt or change the subject."
+              }
+            },
+            {
+              "id": "variant-interruption-05",
+              "text": {
+                "ru": "Восстановление после перебивания. Правило: Система или игрок возвращает обсуждение к незавершённой мысли.",
+                "en": "Recovery after interruption. Rule: The system or player returns the discussion to an unfinished thought."
+              }
+            },
+            {
+              "id": "variant-interruption-06",
+              "text": {
+                "ru": "Перекрывающаяся речь. Правило: Одновременные реплики затрудняют восприятие и могут скрыть важные сведения.",
+                "en": "Overlapping speech. Rule: Simultaneous remarks make it difficult to understand and can hide important information."
+              }
+            },
+            {
+              "id": "variant-interruption-07",
+              "text": {
+                "ru": "Вмешательство третьего лица. Правило: Другой персонаж прерывает обмен, защищает участника или вносит новую информацию.",
+                "en": "Third party intervention. Rule: Another character interrupts the exchange, defends the participant, or introduces new information."
+              }
+            },
+            {
+              "id": "variant-interruption-08",
+              "text": {
+                "ru": "Реакция на нарушение очереди. Правило: Частота и уместность вмешательств меняют отношение и доступ к дальнейшему разговору.",
+                "en": "Reaction to interruption of queue. Rule: Frequency and appropriateness of interventions changes attitude and access to further conversation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-space",
+      "section": "section-2",
+      "title": {
+        "ru": "Разговор в игровом пространстве",
+        "en": "Conversations in the game world"
+      },
+      "description": {
+        "ru": "Положение, движение и события мира влияют на доступность и восприятие разговора.",
+        "en": "Position, movement, and world events influence the accessibility and perception of conversation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-space-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-space-01",
+              "text": {
+                "ru": "Разговор на ходу. Правило: Игрок сохраняет управление перемещением и обсуждает происходящее во время пути.",
+                "en": "Conversation on the go. Rule: The player retains control of movement and discusses what is happening along the way."
+              }
+            },
+            {
+              "id": "variant-space-02",
+              "text": {
+                "ru": "Дальность слышимости. Правило: Доступность реплик зависит от расстояния, препятствий и положения участников.",
+                "en": "Hearing range. Rule: The availability of cues depends on the distance, obstacles and position of the participants."
+              }
+            },
+            {
+              "id": "variant-space-03",
+              "text": {
+                "ru": "Выбор позиции слушателя. Правило: Игрок перемещается, чтобы слышать нужного участника или спрятаться от него.",
+                "en": "Selecting a listening position. Rule: The player moves to hear the desired participant or hide from him."
+              }
+            },
+            {
+              "id": "variant-space-04",
+              "text": {
+                "ru": "Подслушивание. Правило: Сведения получают без вступления в беседу, рискуя быть замеченными.",
+                "en": "Eavesdropping. Rule: Information is obtained without entering into a conversation, at the risk of being noticed."
+              }
+            },
+            {
+              "id": "variant-space-05",
+              "text": {
+                "ru": "Отвлечение разговором. Правило: Беседа удерживает внимание NPC и создаёт окно для другого действия.",
+                "en": "Distraction by talking. Rule: Conversation keeps the NPC's attention and creates a window for other action."
+              }
+            },
+            {
+              "id": "variant-space-06",
+              "text": {
+                "ru": "Обсуждение объекта. Правило: Осмотр или указание на предмет запускает тематическую реплику собеседника.",
+                "en": "Discussion of the object. Rule: Inspection or pointing at an object triggers a thematic remark from the interlocutor."
+              }
+            },
+            {
+              "id": "variant-space-07",
+              "text": {
+                "ru": "Одновременное занятие. Правило: Торговля, ремонт, готовка или управление транспортом идут параллельно разговору.",
+                "en": "Simultaneous activity. Rule: Trade, repairs, cooking or transport management go parallel to the conversation."
+              }
+            },
+            {
+              "id": "variant-space-08",
+              "text": {
+                "ru": "Опасность во время беседы. Правило: Бой, патруль или изменение среды продолжаются и требуют делить внимание.",
+                "en": "Danger during conversation. Rule: Combat, patrol, or environmental change is ongoing and requires dividing attention."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-gates",
+      "section": "section-2",
+      "title": {
+        "ru": "Условия доступности реплик",
+        "en": "Dialogue availability conditions"
+      },
+      "description": {
+        "ru": "Состояние персонажа, знание, предметы и прошлые действия открывают или закрывают варианты реплик.",
+        "en": "Character status, knowledge, items, and past actions open or close options for lines."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-gates-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-gates-01",
+              "text": {
+                "ru": "Навык или характеристика. Правило: Реплика открывается при достаточном уровне определённой способности.",
+                "en": "Skill or characteristic. Rule: A dialogue line is unlocked when a certain ability is at a sufficient level."
+              }
+            },
+            {
+              "id": "variant-gates-02",
+              "text": {
+                "ru": "Происхождение и биография. Правило: Доступ зависит от выбранного прошлого или устойчивых свойств персонажа.",
+                "en": "Origin and biography. Rule: Access depends on the selected background or stable properties of the character."
+              }
+            },
+            {
+              "id": "variant-gates-03",
+              "text": {
+                "ru": "Профессия и специализация. Правило: Профессиональное знание даёт особые вопросы и способы объяснения.",
+                "en": "Profession and specialization. Rule: Professional knowledge gives special questions and methods of explanation."
+              }
+            },
+            {
+              "id": "variant-gates-04",
+              "text": {
+                "ru": "Ранг и принадлежность. Правило: Титул, организация, фракция или должность меняют право говорить на тему.",
+                "en": "Rank and affiliation. Rule: Title, organization, faction or position changes the right to speak on a topic..."
+              }
+            },
+            {
+              "id": "variant-gates-05",
+              "text": {
+                "ru": "Знание и прогресс задания. Правило: Реплика требует известного факта, завершённого этапа или сделанного вывода.",
+                "en": "Knowledge and progress of the task. Rule: A response requires a known fact, a completed step, or a conclusion made."
+              }
+            },
+            {
+              "id": "variant-gates-06",
+              "text": {
+                "ru": "Предмет и снаряжение. Правило: Нужны документ, доказательство, подарок, инструмент или определённая одежда.",
+                "en": "Item and equipment. Rule: You need a document, proof, a gift, a tool or certain clothes..."
+              }
+            },
+            {
+              "id": "variant-gates-07",
+              "text": {
+                "ru": "Состояние тела и психики. Правило: Ранение, опьянение, стресс, усталость или эффект вещества меняют доступный ответ.",
+                "en": "State of body and psyche. Rule: Injury, intoxication, stress, fatigue or the effect of a substance changes the available response."
+              }
+            },
+            {
+              "id": "variant-gates-08",
+              "text": {
+                "ru": "Обстановка и присутствующие. Правило: Место, время, свидетели и состав группы открывают или блокируют варианты.",
+                "en": "The setting and those present. Rule: Place, time, witnesses and group composition open or block options."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-resolution",
+      "section": "section-2",
+      "title": {
+        "ru": "Проверки и определение результата",
+        "en": "Checks and outcome resolution"
+      },
+      "description": {
+        "ru": "Система определяет исход реплики через условия, характеристики, случайность или качество решения игрока.",
+        "en": "The system determines the outcome of a dialogue line through conditions, characteristics, randomness or the quality of the player's decision."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-resolution-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-resolution-01",
+              "text": {
+                "ru": "Детерминированный порог. Правило: Результат задаётся сравнением характеристики с заранее определённым требованием.",
+                "en": "Deterministic threshold. Rule: The result is determined by comparing the characteristic with a predetermined requirement."
+              }
+            },
+            {
+              "id": "variant-resolution-02",
+              "text": {
+                "ru": "Вероятностная проверка. Правило: Успех определяется случайным испытанием с вероятностью, зависящей от условий.",
+                "en": "Probability check. Rule: Success is determined by a random test with a probability depending on the conditions."
+              }
+            },
+            {
+              "id": "variant-resolution-03",
+              "text": {
+                "ru": "Встречная проверка. Правило: Способности говорящего сопоставляются со способностями или защитой собеседника.",
+                "en": "Counter check. Rule: The speaker's abilities are compared with the abilities or defenses of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-resolution-04",
+              "text": {
+                "ru": "Пассивная проверка. Правило: Система автоматически замечает ложь, намёк или возможность без отдельного выбора игрока.",
+                "en": "Passive check. Rule: The system automatically notices a lie, hint or opportunity without a separate choice from the player."
+              }
+            },
+            {
+              "id": "variant-resolution-05",
+              "text": {
+                "ru": "Накопление успехов. Правило: Для результата требуется несколько удачных ходов за один разговор.",
+                "en": "Accumulation of successes. Rule: It takes several successful moves in one conversation to get results."
+              }
+            },
+            {
+              "id": "variant-resolution-06",
+              "text": {
+                "ru": "Степени результата. Правило: Вместо двух исходов возможны полный успех, уступка, осложнение и разные степени провала.",
+                "en": "Degrees of result. Rule: Instead of two outcomes, complete success, concession, complication and varying degrees of failure are possible."
+              }
+            },
+            {
+              "id": "variant-resolution-07",
+              "text": {
+                "ru": "Контекстные модификаторы. Правило: Подготовка, доказательства, отношения и обстановка меняют сложность проверки.",
+                "en": "Contextual modifiers. Rule: Preparation, evidence, relationships, and setting change the difficulty of the test."
+              }
+            },
+            {
+              "id": "variant-resolution-08",
+              "text": {
+                "ru": "Проверка решения игрока. Правило: Успех зависит от выбранного аргумента или порядка действий, а не от характеристики героя.",
+                "en": "Checking the player's decision. Rule: Success depends on the chosen argument or course of action, and not on the characteristics of the hero."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-costs",
+      "section": "section-2",
+      "title": {
+        "ru": "Ресурсы и ставки",
+        "en": "Resources and stakes"
+      },
+      "description": {
+        "ru": "Реплика или попытка влияния требует времени, ресурса либо принятия риска и обязательства.",
+        "en": "A retort or attempt to influence requires time, resource, or an assumption of risk and commitment."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-costs-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-costs-01",
+              "text": {
+                "ru": "Расход очков общения. Правило: Реплики расходуют специальную энергию, влияние или иной конечный запас.",
+                "en": "Consumption of communication points. Rule: dialogue lines expend special energy, influence, or other finite supply."
+              }
+            },
+            {
+              "id": "variant-costs-02",
+              "text": {
+                "ru": "Расход денег и предметов. Правило: Для хода нужно заплатить, вручить вещь или предоставить материальную гарантию.",
+                "en": "Consumption of money and items. Rule: To move, you need to pay, hand over an item or provide a material guarantee."
+              }
+            },
+            {
+              "id": "variant-costs-03",
+              "text": {
+                "ru": "Цена раскрытой информации. Правило: Полезный ответ требует выдать секрет, улику или сведения о собственных целях.",
+                "en": "The price of disclosed information. Rule: A useful answer requires you to give up a secret, evidence, or information about your own goals."
+              }
+            },
+            {
+              "id": "variant-costs-04",
+              "text": {
+                "ru": "Рост подозрения. Правило: Каждый рискованный ход приближает разоблачение или отказ продолжать беседу.",
+                "en": "Suspicion grows. Rule: Every risky move brings exposure or refusal to continue the conversation closer."
+              }
+            },
+            {
+              "id": "variant-costs-05",
+              "text": {
+                "ru": "Запас терпения. Правило: NPC допускает ограниченное число бесполезных, повторных или оскорбительных обращений.",
+                "en": "Stock of patience. Rule: NPCs allow a limited number of useless, repeated or offensive calls."
+              }
+            },
+            {
+              "id": "variant-costs-06",
+              "text": {
+                "ru": "Усталость и самообладание. Правило: Продолжительный разговор истощает способность игрока или NPC сохранять нужную линию.",
+                "en": "Fatigue and composure. Rule: Long conversation depletes the player's or NPC's ability to maintain the desired line."
+              }
+            },
+            {
+              "id": "variant-costs-07",
+              "text": {
+                "ru": "Конфликт целей. Правило: Достижение одной задачи разговора ухудшает шансы выполнить другую.",
+                "en": "Goal conflict. Rule: Achieving one conversation goal worsens the chances of achieving another."
+              }
+            },
+            {
+              "id": "variant-costs-08",
+              "text": {
+                "ru": "Добровольное повышение ставки. Правило: Игрок обещает, рискует или ставит на кон больше ради более выгодного результата.",
+                "en": "Voluntary rate increase. Rule: The player promises, risks, or bets more for a better outcome."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-persuasion",
+      "section": "section-2",
+      "title": {
+        "ru": "Убеждение и влияние",
+        "en": "Persuasion and Influence"
+      },
+      "description": {
+        "ru": "Выбранные аргументы и способы подачи меняют мнение, решение или готовность собеседника действовать.",
+        "en": "The chosen arguments and methods of presentation change the opinion, decision or willingness of the interlocutor to act."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-persuasion-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-persuasion-01",
+              "text": {
+                "ru": "Рациональное убеждение. Правило: Позицию NPC меняют доводы, относящиеся к его убеждениям и ситуации.",
+                "en": "Rational belief. Rule: An NPC's position is changed by arguments related to his beliefs and situation."
+              }
+            },
+            {
+              "id": "variant-persuasion-02",
+              "text": {
+                "ru": "Апелляция к выгоде. Правило: Решение связывают с тем, что собеседник получит от сотрудничества.",
+                "en": "Appeal to benefit. Rule: The decision is related to what the interlocutor will receive from cooperation."
+              }
+            },
+            {
+              "id": "variant-persuasion-03",
+              "text": {
+                "ru": "Апелляция к ценностям. Правило: Аргумент опирается на долг, веру, идеологию или личный принцип NPC.",
+                "en": "Appeal to values. Rule: The argument is based on the NPC's duty, faith, ideology, or personal principle."
+              }
+            },
+            {
+              "id": "variant-persuasion-04",
+              "text": {
+                "ru": "Эмпатия. Правило: Признание чувств и обстоятельств собеседника снижает сопротивление или открывает разговор.",
+                "en": "Empathy. Rule: Acknowledging the other person's feelings and circumstances reduces resistance or opens up the conversation."
+              }
+            },
+            {
+              "id": "variant-persuasion-05",
+              "text": {
+                "ru": "Лесть и признание заслуг. Правило: Положительная оценка воздействует через самолюбие, статус или потребность в признании.",
+                "en": "Flattery and recognition of merit. Rule: Positive evaluation affects through self-esteem, status or the need for recognition."
+              }
+            },
+            {
+              "id": "variant-persuasion-06",
+              "text": {
+                "ru": "Запугивание. Правило: Угроза последствиями вынуждает уступить, но может вызвать сопротивление и ответные меры.",
+                "en": "Intimidation. Rule: Threatening consequences forces concession, but may provoke resistance and retaliation."
+              }
+            },
+            {
+              "id": "variant-persuasion-07",
+              "text": {
+                "ru": "Провокация. Правило: Игрок вызывает эмоциональную реакцию, чтобы добиться ошибки или нужного действия.",
+                "en": "Provocation. Rule: The player evokes an emotional reaction in order to achieve a mistake or desired action."
+              }
+            },
+            {
+              "id": "variant-persuasion-08",
+              "text": {
+                "ru": "Переосмысление проблемы. Правило: Игрок меняет рамку обсуждения, чтобы другой вариант решения стал приемлемым.",
+                "en": "Rethinking the problem. Rule: The player changes the frame of the discussion so that another solution becomes acceptable."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-negotiation",
+      "section": "section-2",
+      "title": {
+        "ru": "Торг, сделки и обязательства",
+        "en": "Bargaining, transactions and obligations"
+      },
+      "description": {
+        "ru": "Участники предлагают условия, обменивают ресурсы и принимают обязательства с последствиями.",
+        "en": "Participants propose terms, exchange resources, and make commitments with consequences."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-negotiation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-negotiation-01",
+              "text": {
+                "ru": "Предложение и контрпредложение. Правило: Стороны последовательно меняют условия в поиске приемлемой сделки.",
+                "en": "Offer and counteroffer. Rule: The parties successively change the terms in search of an acceptable deal."
+              }
+            },
+            {
+              "id": "variant-negotiation-02",
+              "text": {
+                "ru": "Пакетная сделка. Правило: Несколько уступок, услуг и ресурсов обсуждаются как единый набор условий.",
+                "en": "Package deal. Rule: Multiple concessions, services and resources are negotiated as a single set of terms."
+              }
+            },
+            {
+              "id": "variant-negotiation-03",
+              "text": {
+                "ru": "Взаимные уступки. Правило: Игрок обменивает уступку по одному вопросу на уступку по другому.",
+                "en": "Mutual concessions. Rule: A player exchanges a concession on one issue for a concession on another."
+              }
+            },
+            {
+              "id": "variant-negotiation-04",
+              "text": {
+                "ru": "Обмен услугами. Правило: NPC соглашается в обмен на действие, которое игрок должен совершить сейчас или позже.",
+                "en": "Exchange of services. Rule: The NPC agrees in exchange for an action that the player must take now or later."
+              }
+            },
+            {
+              "id": "variant-negotiation-05",
+              "text": {
+                "ru": "Взятка. Правило: Материальная выгода предлагается за нарушение обязанностей или правил NPC.",
+                "en": "Bribe. Rule: Material benefits are offered for violating an NPC's duties or rules."
+              }
+            },
+            {
+              "id": "variant-negotiation-06",
+              "text": {
+                "ru": "Шантаж. Правило: Игрок использует угрозу раскрыть компрометирующие сведения для получения уступки.",
+                "en": "Blackmail. Rule: The player uses the threat of revealing incriminating information to obtain a concession."
+              }
+            },
+            {
+              "id": "variant-negotiation-07",
+              "text": {
+                "ru": "Обещание и гарантия. Правило: Сделка фиксирует будущее обязательство, срок, обеспечение или санкции за нарушение.",
+                "en": "Promise and guarantee. Rule: The transaction fixes a future obligation, term, security or sanctions for violation."
+              }
+            },
+            {
+              "id": "variant-negotiation-08",
+              "text": {
+                "ru": "Ультиматум и выход. Правило: Сторона объявляет предельное условие и может прекратить переговоры без соглашения.",
+                "en": "Ultimatum and exit. Rule: A party declares a limiting condition and may terminate negotiations without an agreement."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-emotions",
+      "section": "section-2",
+      "title": {
+        "ru": "Эмоциональное состояние",
+        "en": "Emotional state"
+      },
+      "description": {
+        "ru": "Речь и события меняют эмоциональное состояние персонажа, которое влияет на дальнейшие реакции.",
+        "en": "Speech and events change the character's emotional state, which influences subsequent reactions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-emotions-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-emotions-01",
+              "text": {
+                "ru": "Чтение настроения. Правило: Игрок определяет состояние собеседника по речи, поведению или доступным индикаторам.",
+                "en": "Reading the mood. Rule: The player determines the state of the interlocutor by speech, behavior or available indicators."
+              }
+            },
+            {
+              "id": "variant-emotions-02",
+              "text": {
+                "ru": "Успокоение и деэскалация. Правило: Реплики снижают возбуждение, агрессию или риск перехода к насилию.",
+                "en": "Calm and de-escalate. Rule: Responses reduce arousal, aggression, or the risk of violence."
+              }
+            },
+            {
+              "id": "variant-emotions-03",
+              "text": {
+                "ru": "Поддержка и утешение. Правило: Разговор помогает персонажу справиться с переживанием и меняет дальнейшее поведение.",
+                "en": "Support and comfort. Rule: Conversation helps the character cope with the experience and changes subsequent behavior."
+              }
+            },
+            {
+              "id": "variant-emotions-04",
+              "text": {
+                "ru": "Усиление страха. Правило: Игрок повышает тревогу, меняя готовность NPC действовать или раскрывать сведения.",
+                "en": "Increased fear. Rule: The player raises the alarm by changing the NPC's willingness to act or reveal information."
+              }
+            },
+            {
+              "id": "variant-emotions-05",
+              "text": {
+                "ru": "Возбуждение гнева. Правило: Реплики усиливают раздражение и могут разрушить самоконтроль собеседника.",
+                "en": "Arousal of anger. Rule: Replies increase irritation and can destroy the self-control of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-emotions-06",
+              "text": {
+                "ru": "Юмор и снятие напряжения. Правило: Уместная шутка меняет эмоциональный фон; неуместная может ухудшить ситуацию.",
+                "en": "Humor and stress relief. Rule: An appropriate joke changes the emotional background; inappropriate can make the situation worse."
+              }
+            },
+            {
+              "id": "variant-emotions-07",
+              "text": {
+                "ru": "Управление собственным состоянием. Правило: Игрок выбирает, подавить эмоцию, выразить её или позволить ей изменить ответ.",
+                "en": "Managing your own wealth. Rule: The player chooses whether to suppress the emotion, express it, or allow it to change the answer."
+              }
+            },
+            {
+              "id": "variant-emotions-08",
+              "text": {
+                "ru": "Эмоциональный порог. Правило: После достижения определённой интенсивности состояния NPC меняет правила поведения.",
+                "en": "Emotional threshold. Rule: After reaching a certain intensity of the state, the NPC changes the rules of behavior."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-relationships",
+      "section": "section-2",
+      "title": {
+        "ru": "Отношения на длинной дистанции",
+        "en": "Long-term relationships"
+      },
+      "description": {
+        "ru": "История общения формирует доверие, близость, конфликты и долгосрочные возможности отношений.",
+        "en": "Communication history shapes trust, intimacy, conflict, and long-term relationship possibilities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-relationships-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-relationships-01",
+              "text": {
+                "ru": "Доверие. Правило: Правдивость, надёжность и соблюдение обещаний меняют готовность NPC верить игроку.",
+                "en": "Trust. Rule: Truthfulness, reliability, and keeping promises change the NPC's willingness to trust the player."
+              }
+            },
+            {
+              "id": "variant-relationships-02",
+              "text": {
+                "ru": "Симпатия и неприязнь. Правило: Реплики постепенно меняют личное расположение собеседника.",
+                "en": "Like and hate. Rule: Replies gradually change the personal disposition of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-relationships-03",
+              "text": {
+                "ru": "Уважение. Правило: NPC оценивает компетентность, последовательность и способность отстаивать позицию.",
+                "en": "Respect. Rule: NPC evaluates competence, consistency and ability to take a stand."
+              }
+            },
+            {
+              "id": "variant-relationships-04",
+              "text": {
+                "ru": "Близость и самораскрытие. Правило: Личные темы и взаимная откровенность открывают новые уровни отношений.",
+                "en": "Intimacy and self-disclosure. Rule: Personal topics and mutual frankness open up new levels of relationships."
+              }
+            },
+            {
+              "id": "variant-relationships-05",
+              "text": {
+                "ru": "Романтическое сближение. Правило: Взаимный интерес и согласие определяют развитие романтической линии.",
+                "en": "Romantic rapprochement. Rule: Mutual interest and agreement determine the development of a romantic line."
+              }
+            },
+            {
+              "id": "variant-relationships-06",
+              "text": {
+                "ru": "Соперничество и ревность. Правило: Отношения с одним участником меняют реакцию другого.",
+                "en": "Rivalry and jealousy. Rule: Relationships with one participant change the reaction of the other."
+              }
+            },
+            {
+              "id": "variant-relationships-07",
+              "text": {
+                "ru": "Примирение и извинение. Правило: Игрок признаёт ущерб, объясняет поступок или выполняет условия восстановления отношений.",
+                "en": "Reconciliation and apology. Rule: The player admits the damage, explains the action, or fulfills the conditions for restoring the relationship."
+              }
+            },
+            {
+              "id": "variant-relationships-08",
+              "text": {
+                "ru": "Личные границы. Правило: Отказ или согласие на тему, контакт и форму общения учитывается в последующих сценах.",
+                "en": "Personal boundaries. Rule: Refusal or agreement to the topic, contact and form of communication is taken into account in subsequent scenes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-identity",
+      "section": "section-2",
+      "title": {
+        "ru": "Самовыражение и личность героя",
+        "en": "Self-expression and character identity"
+      },
+      "description": {
+        "ru": "Ответ выражает характер, убеждения и самоопределение героя, в том числе без немедленной внешней награды.",
+        "en": "The answer expresses the character, beliefs and self-determination of the hero, including without immediate external reward."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-identity-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-identity-01",
+              "text": {
+                "ru": "Последовательный речевой стиль. Правило: Повторяющаяся манера ответов формирует узнаваемую репутацию героя.",
+                "en": "Consistent speech style. Rule: Repeated manner of answers creates a recognizable reputation for the hero."
+              }
+            },
+            {
+              "id": "variant-identity-02",
+              "text": {
+                "ru": "Мировоззрение и убеждения. Правило: Выборы закрепляют ценности, которые затем меняют реакции и возможности.",
+                "en": "Worldview and beliefs. Rule: Elections reinforce values, which then change reactions and opportunities."
+              }
+            },
+            {
+              "id": "variant-identity-03",
+              "text": {
+                "ru": "Ролевая декларация. Правило: Игрок заявляет о том, кем считает себя, и система сохраняет эту позицию.",
+                "en": "Role declaration. Rule: The player declares who he considers himself to be, and the system maintains this position."
+              }
+            },
+            {
+              "id": "variant-identity-04",
+              "text": {
+                "ru": "Смена позиции. Правило: Герой пересматривает прежние слова; NPC может принять изменение или заметить противоречие.",
+                "en": "Change of position. Rule: The hero revises his previous words; The NPC may accept the change or notice a contradiction."
+              }
+            },
+            {
+              "id": "variant-identity-05",
+              "text": {
+                "ru": "Самоопределение биографии. Правило: Ответ добавляет факт прошлого героя, который позже становится частью мира игры.",
+                "en": "Self-determination of biography. Rule: The answer adds a fact about the hero's past, which later becomes part of the game world."
+              }
+            },
+            {
+              "id": "variant-identity-06",
+              "text": {
+                "ru": "Социальная маска. Правило: Игрок выбирает публичный образ и поддерживает его в разных разговорах.",
+                "en": "Social mask. Rule: The player chooses a public image and maintains it in different conversations."
+              }
+            },
+            {
+              "id": "variant-identity-07",
+              "text": {
+                "ru": "Внутреннее несогласие с репликой. Правило: Игрок отдельно выбирает произносимое сообщение и внутреннее отношение героя к нему.",
+                "en": "Internal disagreement with the remark. Rule: The player separately selects the spoken message and the hero’s internal attitude towards it."
+              }
+            },
+            {
+              "id": "variant-identity-08",
+              "text": {
+                "ru": "Самоописание через воспоминание. Правило: Разговор о прошлом меняет интерпретацию собственного опыта и доступные решения героя.",
+                "en": "Self-description through memory. Rule: Talking about the past changes the hero's interpretation of his own experience and the available decisions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-information",
+      "section": "section-2",
+      "title": {
+        "ru": "Знания и обмен сведениями",
+        "en": "Knowledge and information sharing"
+      },
+      "description": {
+        "ru": "Разговор открывает, уточняет, проверяет и передаёт сведения о мире и других персонажах.",
+        "en": "Conversation reveals, clarifies, verifies, and conveys information about the world and other characters."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-information-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-information-01",
+              "text": {
+                "ru": "Расспрос. Правило: Игрок последовательно получает факты о людях, местах, событиях и отношениях.",
+                "en": "Questioning. Rule: The player consistently obtains facts about people, places, events and relationships."
+              }
+            },
+            {
+              "id": "variant-information-02",
+              "text": {
+                "ru": "Активное слушание. Правило: Для результата нужно заметить оговорку, деталь или связь в услышанном.",
+                "en": "Active listening. Rule: To get results, you need to notice a clause, detail or connection in what you hear..."
+              }
+            },
+            {
+              "id": "variant-information-03",
+              "text": {
+                "ru": "Уточнение и проверка понимания. Правило: Игрок переспрашивает или пересказывает услышанное, чтобы устранить неоднозначность.",
+                "en": "Clarifying and checking understanding. Rule: The player asks again or retells what he heard to eliminate ambiguity."
+              }
+            },
+            {
+              "id": "variant-information-04",
+              "text": {
+                "ru": "Добровольное раскрытие. Правило: Игрок сообщает известный факт и меняет знания собеседника.",
+                "en": "Voluntary disclosure. Rule: The player reports a known fact and changes the knowledge of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-information-05",
+              "text": {
+                "ru": "Сокрытие сведений. Правило: Игрок выбирает, какие известные ему факты пока не сообщать.",
+                "en": "Hiding information. Rule: The player chooses which facts he knows not to report yet."
+              }
+            },
+            {
+              "id": "variant-information-06",
+              "text": {
+                "ru": "Обмен информацией. Правило: Каждая сторона получает сведения в ответ на информацию другой стороны.",
+                "en": "Exchange of information. Rule: Each party receives information in response to information from the other party."
+              }
+            },
+            {
+              "id": "variant-information-07",
+              "text": {
+                "ru": "Управление осведомлённостью. Правило: Исход зависит от того, кто знает факт и кому известно, что другие его знают.",
+                "en": "Awareness management. Rule: The outcome depends on who knows the fact and who knows that others know it."
+              }
+            },
+            {
+              "id": "variant-information-08",
+              "text": {
+                "ru": "Слухи и распространение. Правило: Сообщённые сведения переходят между NPC и возвращаются с изменённой надёжностью.",
+                "en": "Rumors and spread. Rule: Reported information is passed between NPCs and returned with modified reliability."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-deception",
+      "section": "section-2",
+      "title": {
+        "ru": "Ложь и скрытые намерения",
+        "en": "Lies and hidden intentions"
+      },
+      "description": {
+        "ru": "Игрок скрывает сведения, создаёт ложное впечатление или распознаёт несоответствие между словами и намерением.",
+        "en": "The player withholds information, creates a false impression, or recognizes a discrepancy between words and intent."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-deception-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-deception-01",
+              "text": {
+                "ru": "Прямая ложь. Правило: Игрок утверждает факт, который противоречит известному состоянию мира.",
+                "en": "Outright lie. Rule: The player states a fact that contradicts the known state of the world."
+              }
+            },
+            {
+              "id": "variant-deception-02",
+              "text": {
+                "ru": "Полуправда и умолчание. Правило: Формально верное сообщение создаёт у собеседника неверное представление.",
+                "en": "Half-truths and omissions. Rule: A formally correct message creates a false impression in the interlocutor."
+              }
+            },
+            {
+              "id": "variant-deception-03",
+              "text": {
+                "ru": "Блеф. Правило: Игрок изображает возможность, знание или готовность, которых у него может не быть.",
+                "en": "Bluff. Rule: The player feigns an opportunity, knowledge or readiness that he may not have."
+              }
+            },
+            {
+              "id": "variant-deception-04",
+              "text": {
+                "ru": "Выдача себя за другого. Правило: Игрок использует чужую личность, статус или полномочия в разговоре.",
+                "en": "Impersonating someone else. Rule: The player uses someone else's identity, status or authority in a conversation."
+              }
+            },
+            {
+              "id": "variant-deception-05",
+              "text": {
+                "ru": "Легенда и алиби. Правило: Нужно поддерживать согласованную версию событий при серии уточняющих вопросов.",
+                "en": "Legend and alibi. Rule: Maintain a consistent version of events through a series of clarifying questions."
+              }
+            },
+            {
+              "id": "variant-deception-06",
+              "text": {
+                "ru": "Проверка чужой версии. Правило: Игрок сопоставляет слова NPC с фактами, прежними ответами и поведением.",
+                "en": "Checking someone else's version. Rule: The player matches the NPC's words with facts, past answers and behavior."
+              }
+            },
+            {
+              "id": "variant-deception-07",
+              "text": {
+                "ru": "Разоблачение. Правило: Противоречие или доказательство открыто предъявляется лгущему участнику.",
+                "en": "Exposure. Rule: The contradiction or evidence is openly presented to the lying participant."
+              }
+            },
+            {
+              "id": "variant-deception-08",
+              "text": {
+                "ru": "Последствия раскрытой лжи. Правило: Обнаруженный обман меняет доверие, позицию свидетелей и доступ к будущим переговорам.",
+                "en": "Consequences of revealed lies. Rule: Discovered deception changes credibility, the position of witnesses and access to future negotiations."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-interrogation",
+      "section": "section-2",
+      "title": {
+        "ru": "Допрос и доказательства",
+        "en": "Interrogation and evidence"
+      },
+      "description": {
+        "ru": "Вопросы и предъявленные улики проверяют версию событий и вызывают новые показания.",
+        "en": "Questions and evidence presented test the version of events and elicit new testimony."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-interrogation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-interrogation-01",
+              "text": {
+                "ru": "Предъявление улики. Правило: Игрок выбирает доказательство и момент, когда его нужно связать с утверждением NPC.",
+                "en": "Presentation of evidence. Rule: The player chooses the evidence and the moment when it should be associated with the NPC's statement."
+              }
+            },
+            {
+              "id": "variant-interrogation-02",
+              "text": {
+                "ru": "Давление на показание. Правило: Повторный прицельный вопрос заставляет свидетеля уточнить или изменить часть версии.",
+                "en": "Pressure on indication. Rule: A repeated targeted question forces the witness to clarify or change part of the version."
+              }
+            },
+            {
+              "id": "variant-interrogation-03",
+              "text": {
+                "ru": "Поиск противоречия. Правило: Нужно указать конкретную несовместимость между показаниями и установленными фактами.",
+                "en": "Search for contradiction. Rule: A specific incompatibility between the testimony and the established facts must be stated."
+              }
+            },
+            {
+              "id": "variant-interrogation-04",
+              "text": {
+                "ru": "Сопоставление свидетелей. Правило: Высказывания разных участников проверяются друг против друга.",
+                "en": "Comparison of witnesses. Rule: The statements of different participants are checked against each other."
+              }
+            },
+            {
+              "id": "variant-interrogation-05",
+              "text": {
+                "ru": "Восстановление хронологии. Правило: Игрок выясняет порядок событий и проверяет временные несоответствия.",
+                "en": "Restoring chronology. Rule: The player figures out the order of events and checks for timing discrepancies."
+              }
+            },
+            {
+              "id": "variant-interrogation-06",
+              "text": {
+                "ru": "Вопрос-ловушка. Правило: Формулировка побуждает NPC раскрыть скрываемое знание или противоречие.",
+                "en": "A trap question. Rule: The wording encourages the NPC to reveal hidden knowledge or contradiction."
+              }
+            },
+            {
+              "id": "variant-interrogation-07",
+              "text": {
+                "ru": "Дозированное раскрытие улик. Правило: Игрок решает, что показать сейчас и что сохранить для следующего этапа.",
+                "en": "Dosed disclosure of evidence. Rule: The player decides what to show now and what to save for the next stage."
+              }
+            },
+            {
+              "id": "variant-interrogation-08",
+              "text": {
+                "ru": "Проверка признания. Правило: Полученную версию нужно подтвердить независимыми фактами, а не только согласием NPC.",
+                "en": "Recognition check. Rule: The resulting version must be confirmed by independent facts, and not just the consent of the NPC."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-arguments",
+      "section": "section-2",
+      "title": {
+        "ru": "Аргументация и спор",
+        "en": "Argumentation and debate"
+      },
+      "description": {
+        "ru": "Игрок выбирает основания и связи между утверждениями, чтобы построить аргумент или найти противоречие.",
+        "en": "The player selects reasons and connections between statements to construct an argument or find a contradiction."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-arguments-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-arguments-01",
+              "text": {
+                "ru": "Формулирование тезиса. Правило: Игрок выбирает утверждение, которое должен обосновать в разговоре.",
+                "en": "Formulating a thesis. Rule: The player chooses a statement that he must justify in conversation."
+              }
+            },
+            {
+              "id": "variant-arguments-02",
+              "text": {
+                "ru": "Подбор основания. Правило: К тезису подбираются относящиеся к нему факты, принципы или свидетельства.",
+                "en": "Selection of base. Rule: Facts, principles or evidence related to it are selected for the thesis."
+              }
+            },
+            {
+              "id": "variant-arguments-03",
+              "text": {
+                "ru": "Логическая цепочка. Правило: Несколько промежуточных выводов нужно связать в последовательное доказательство.",
+                "en": "Logical chain. Rule: Several intermediate conclusions must be connected into a consistent proof."
+              }
+            },
+            {
+              "id": "variant-arguments-04",
+              "text": {
+                "ru": "Опровержение посылки. Правило: Игрок оспаривает исходный факт или допущение аргумента собеседника.",
+                "en": "Refutation of the premise. Rule: The player challenges the underlying fact or assumption of the interlocutor's argument."
+              }
+            },
+            {
+              "id": "variant-arguments-05",
+              "text": {
+                "ru": "Опровержение вывода. Правило: Игрок показывает, что из приведённых оснований не следует заявленный результат.",
+                "en": "Refutation of the conclusion. Rule: The player shows that the stated reasons do not lead to the stated result."
+              }
+            },
+            {
+              "id": "variant-arguments-06",
+              "text": {
+                "ru": "Контрпример. Правило: Одного релевантного случая достаточно, чтобы ограничить или разрушить общее утверждение.",
+                "en": "Counterexample. Rule: One relevant case is enough to limit or destroy a general statement."
+              }
+            },
+            {
+              "id": "variant-arguments-07",
+              "text": {
+                "ru": "Бремя доказательства. Правило: Правила задают, кто и какое утверждение должен подтвердить для продвижения спора.",
+                "en": "Burden of proof. Rule: Rules specify who must confirm which statement to advance the argument."
+              }
+            },
+            {
+              "id": "variant-arguments-08",
+              "text": {
+                "ru": "Победа по критериям аудитории. Правило: Успех оценивается судом, жюри, публикой или иной стороной со своими критериями.",
+                "en": "Win according to audience criteria. Rule: Success is assessed by a court, jury, public or other party with its own criteria."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-languages",
+      "section": "section-2",
+      "title": {
+        "ru": "Языки, коды и перевод",
+        "en": "Languages, codes and translation"
+      },
+      "description": {
+        "ru": "Знание языка, обозначений и кодов определяет возможность понимать сообщения и выражать намерения.",
+        "en": "Knowledge of language, symbols and codes determines the ability to understand messages and express intentions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-languages-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-languages-01",
+              "text": {
+                "ru": "Языковой барьер. Правило: Незнание языка ограничивает доступные вопросы, ответы или точность понимания.",
+                "en": "Language barrier. Rule: Ignorance of the language limits available questions, answers, or accuracy of understanding."
+              }
+            },
+            {
+              "id": "variant-languages-02",
+              "text": {
+                "ru": "Изучение словаря. Правило: Услышанные слова постепенно получают значения и открывают новые возможности общения.",
+                "en": "Studying the dictionary. Rule: Hearing words gradually acquire meanings and open up new possibilities for communication."
+              }
+            },
+            {
+              "id": "variant-languages-03",
+              "text": {
+                "ru": "Расшифровка грамматики. Правило: Игрок выводит правила сочетания слов и понимает ранее недоступные высказывания.",
+                "en": "Decoding grammar. Rule: The player deduces the rules for combining words and understands previously inaccessible statements."
+              }
+            },
+            {
+              "id": "variant-languages-04",
+              "text": {
+                "ru": "Выбор перевода. Правило: Неоднозначную фразу нужно интерпретировать; ошибка меняет решение или дальнейший разговор.",
+                "en": "Selecting a translation. Rule: An ambiguous phrase must be interpreted; a mistake changes the decision or further conversation."
+              }
+            },
+            {
+              "id": "variant-languages-05",
+              "text": {
+                "ru": "Переводчик-посредник. Правило: Точность и интересы переводчика влияют на то, что стороны слышат друг от друга.",
+                "en": "Translator-intermediary. Rule: The accuracy and interests of the interpreter influence what the parties hear from each other."
+              }
+            },
+            {
+              "id": "variant-languages-06",
+              "text": {
+                "ru": "Регистры и диалекты. Правило: Форма речи служит сигналом принадлежности и меняет понимание или доверие.",
+                "en": "Registers and dialects. Rule: Form of speech serves as a signal of belonging and changes understanding or trust."
+              }
+            },
+            {
+              "id": "variant-languages-07",
+              "text": {
+                "ru": "Пароль и отзыв. Правило: Для подтверждения личности или доступа нужно произнести правильную условную фразу.",
+                "en": "Password and review. Rule: To confirm identity or access, you must say the correct conditional phrase."
+              }
+            },
+            {
+              "id": "variant-languages-08",
+              "text": {
+                "ru": "Кодированный разговор. Правило: Смысл передаётся условными словами и намёками, понятными только посвящённым.",
+                "en": "Coded conversation. Rule: The meaning is conveyed by conventional words and hints, understandable only to initiates."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-nonverbal",
+      "section": "section-2",
+      "title": {
+        "ru": "Невербальное общение",
+        "en": "Nonverbal communication"
+      },
+      "description": {
+        "ru": "Жесты, поза, взгляд и другие неречевые действия передают смысл или изменяют реакцию собеседника.",
+        "en": "Gestures, posture, gaze and other non-verbal actions convey meaning or change the interlocutor's reaction."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-nonverbal-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-nonverbal-01",
+              "text": {
+                "ru": "Кивок и отрицание. Правило: Жест заменяет словесное согласие, отказ или подтверждение понимания.",
+                "en": "Nod and denial. Rule: A gesture replaces verbal agreement, refusal or confirmation of understanding."
+              }
+            },
+            {
+              "id": "variant-nonverbal-02",
+              "text": {
+                "ru": "Взгляд и его направление. Правило: Игрок устанавливает контакт, указывает на объект или избегает взгляда.",
+                "en": "The gaze and its direction. Rule: The player makes contact, points to an object, or avoids looking."
+              }
+            },
+            {
+              "id": "variant-nonverbal-03",
+              "text": {
+                "ru": "Мимика. Правило: Выражение лица передаёт эмоцию или позицию и учитывается собеседником.",
+                "en": "Facial expressions. Rule: Facial expression conveys an emotion or position and is taken into account by the interlocutor."
+              }
+            },
+            {
+              "id": "variant-nonverbal-04",
+              "text": {
+                "ru": "Поза и дистанция. Правило: Приближение, отступление и положение тела влияют на комфорт и оценку намерений.",
+                "en": "Posture and distance. Rule: Approach, retreat and body position affect comfort and evaluation of intentions."
+              }
+            },
+            {
+              "id": "variant-nonverbal-05",
+              "text": {
+                "ru": "Указательный жест. Правило: Игрок задаёт предмет разговора через направление руки или выбранный объект.",
+                "en": "Pointing gesture. Rule: The player sets the subject of conversation through the direction of the hand or the selected object."
+              }
+            },
+            {
+              "id": "variant-nonverbal-06",
+              "text": {
+                "ru": "Передача предмета. Правило: Демонстрация или вручение вещи становится сообщением с контекстным значением.",
+                "en": "Transfer of an item. Rule: Showing or giving something becomes a message with contextual meaning."
+              }
+            },
+            {
+              "id": "variant-nonverbal-07",
+              "text": {
+                "ru": "Прикосновение. Правило: Разрешённый или нежелательный контакт меняет социальную ситуацию и отношения.",
+                "en": "Touch. Rule: Permitted or unwanted contact changes the social situation and relationships."
+              }
+            },
+            {
+              "id": "variant-nonverbal-08",
+              "text": {
+                "ru": "Согласование слов и поведения. Правило: NPC оценивает, соответствует ли произносимая реплика невербальным действиям героя.",
+                "en": "Coordination of words and behavior. Rule: The NPC evaluates whether the spoken line matches the hero's non-verbal actions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-groups",
+      "section": "section-2",
+      "title": {
+        "ru": "Групповые разговоры",
+        "en": "Group conversations"
+      },
+      "description": {
+        "ru": "Несколько собеседников обмениваются репликами, формируют коалиции и реагируют на распределение внимания.",
+        "en": "Several interlocutors exchange remarks, form coalitions and react to the distribution of attention."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-groups-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-groups-01",
+              "text": {
+                "ru": "Треугольник отношений. Правило: Реплика одному участнику одновременно меняет отношение другого.",
+                "en": "Relationship triangle. Rule: A response to one participant simultaneously changes the attitude of another."
+              }
+            },
+            {
+              "id": "variant-groups-02",
+              "text": {
+                "ru": "Вмешательство спутника. Правило: Член команды добавляет аргумент, возражает или раскрывает собственную позицию.",
+                "en": "Satellite intervention. Rule: A team member adds an argument, argues, or reveals his or her own position."
+              }
+            },
+            {
+              "id": "variant-groups-03",
+              "text": {
+                "ru": "Выбор представителя. Правило: Игрок назначает говорящего с подходящими знаниями, статусом или отношениями.",
+                "en": "Selecting a representative. Rule: The player nominates a speaker with suitable knowledge, status or relationships."
+              }
+            },
+            {
+              "id": "variant-groups-04",
+              "text": {
+                "ru": "Коалиция участников. Правило: Несколько собеседников объединяются для поддержки позиции или давления на оппонента.",
+                "en": "Coalition of participants. Rule: Several interlocutors unite to support a position or put pressure on an opponent."
+              }
+            },
+            {
+              "id": "variant-groups-05",
+              "text": {
+                "ru": "Посредничество в конфликте. Правило: Игрок помогает двум сторонам услышать друг друга и согласовать условия.",
+                "en": "Mediation in conflict. Rule: The player helps the two parties hear each other and agree on terms."
+              }
+            },
+            {
+              "id": "variant-groups-06",
+              "text": {
+                "ru": "Совет и голосование NPC. Правило: Исход определяется индивидуальными позициями участников и правилом принятия решения.",
+                "en": "NPC council and voting. Rule: The outcome is determined by the individual positions of the participants and the decision rule."
+              }
+            },
+            {
+              "id": "variant-groups-07",
+              "text": {
+                "ru": "Публичный и личный ответ. Правило: Слова при свидетелях имеют другой эффект, чем тот же ответ наедине.",
+                "en": "Public and private response. Rule: Words in front of witnesses have a different effect than the same answer in private."
+              }
+            },
+            {
+              "id": "variant-groups-08",
+              "text": {
+                "ru": "Беседа NPC между собой. Правило: Персонажи обмениваются мнениями автономно, а игрок наблюдает или вмешивается.",
+                "en": "Conversation between NPCs. Rule: Characters exchange opinions autonomously, while the player observes or intervenes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-multiplayer",
+      "section": "section-2",
+      "title": {
+        "ru": "Совместные решения игроков",
+        "en": "Joint player decisions"
+      },
+      "description": {
+        "ru": "Участники совместно выбирают ответ или распределяют право решения, информацию и влияние на беседу.",
+        "en": "Participants jointly choose an answer or distribute decision power, information, and influence over the conversation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-multiplayer-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-multiplayer-01",
+              "text": {
+                "ru": "Голосование игроков. Правило: Участники выбирают ответ большинством или по иной заранее заданной процедуре.",
+                "en": "Player voting. Rule: Participants choose an answer by majority or other predetermined procedure."
+              }
+            },
+            {
+              "id": "variant-multiplayer-02",
+              "text": {
+                "ru": "Право ведущего. Правило: Один игрок принимает окончательное решение после обсуждения с командой.",
+                "en": "The right of the leader. Rule: One player makes the final decision after discussion with the team."
+              }
+            },
+            {
+              "id": "variant-multiplayer-03",
+              "text": {
+                "ru": "Единогласие и право вето. Правило: Продвижение требует согласия всех участников либо допускает блокировку ответа.",
+                "en": "Unanimity and the right of veto. Rule: Promotion requires the consent of all participants or allows response blocking."
+              }
+            },
+            {
+              "id": "variant-multiplayer-04",
+              "text": {
+                "ru": "Конкурирующие ответы. Правило: Несколько игроков одновременно пытаются определить, какая реплика будет произнесена.",
+                "en": "Competing answers. Rule: Several players simultaneously try to determine which line will be spoken..."
+              }
+            },
+            {
+              "id": "variant-multiplayer-05",
+              "text": {
+                "ru": "Передача права голоса. Правило: Команда меняет активного говорящего в ходе одной беседы.",
+                "en": "Transfer of voting rights. Rule: The team changes the active speaker during one conversation."
+              }
+            },
+            {
+              "id": "variant-multiplayer-06",
+              "text": {
+                "ru": "Разделённая информация. Правило: Разные игроки знают разные факты и должны сопоставить их перед ответом.",
+                "en": "Separated information. Rule: Different players know different facts and must compare them before answering."
+              }
+            },
+            {
+              "id": "variant-multiplayer-07",
+              "text": {
+                "ru": "Скрытые цели участников. Правило: Игроки обсуждают общий ответ, но стремятся к несовпадающим личным результатам.",
+                "en": "Hidden goals of the participants. Rule: Players discuss a common answer, but strive for divergent personal results."
+              }
+            },
+            {
+              "id": "variant-multiplayer-08",
+              "text": {
+                "ru": "Игрок против игрока. Правило: Предложения, обещания, обвинения и блеф становятся ходами переговоров между людьми.",
+                "en": "Player versus player. Rule: Offers, promises, accusations and bluffs become negotiation moves between people."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-channels",
+      "section": "section-2",
+      "title": {
+        "ru": "Переписка и связь на расстоянии",
+        "en": "Messaging and remote communication"
+      },
+      "description": {
+        "ru": "Разговор проходит через сообщения и устройства, поэтому время доставки, формат и доступ к каналу влияют на решения.",
+        "en": "Conversation flows across messages and devices, so delivery time, format, and channel access influence decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-channels-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-channels-01",
+              "text": {
+                "ru": "Асинхронный обмен. Правило: Ответ приходит позднее, а другие действия происходят между сообщениями.",
+                "en": "Asynchronous exchange. Rule: The answer comes later, and other actions occur between messages."
+              }
+            },
+            {
+              "id": "variant-channels-02",
+              "text": {
+                "ru": "Отложенная отправка. Правило: Игрок выбирает момент передачи уже подготовленного сообщения.",
+                "en": "Delayed dispatch. Rule: The player chooses the moment of transmission of an already prepared message."
+              }
+            },
+            {
+              "id": "variant-channels-03",
+              "text": {
+                "ru": "Ограничение длины сообщения. Правило: Содержание приходится сокращать или разбивать из-за лимита символов либо ресурса канала.",
+                "en": "Message length limit. Rule: Content has to be shortened or broken up due to character limits or channel resources."
+              }
+            },
+            {
+              "id": "variant-channels-04",
+              "text": {
+                "ru": "Подтверждение получения. Правило: Доставка, прочтение и отсутствие ответа становятся доступными для интерпретации сигналами.",
+                "en": "Confirmation of receipt. Rule: Delivery, reading and non-response become interpretable signals."
+              }
+            },
+            {
+              "id": "variant-channels-05",
+              "text": {
+                "ru": "Прикрепление материалов. Правило: К сообщению добавляются фотография, документ, запись, координаты или другой объект.",
+                "en": "Attaching materials. Rule: A photo, document, record, coordinates or other object is added to the message."
+              }
+            },
+            {
+              "id": "variant-channels-06",
+              "text": {
+                "ru": "Потеря и искажение связи. Правило: Помехи, задержка и обрыв делают часть сообщения недоступной или неоднозначной.",
+                "en": "Loss and distortion of communication. Rule: Interference, delay and interruption make part of the message inaccessible or ambiguous."
+              }
+            },
+            {
+              "id": "variant-channels-07",
+              "text": {
+                "ru": "Перехват переписки. Правило: Третья сторона получает сообщения, а игрок учитывает риск чужого доступа.",
+                "en": "Interception of correspondence. Rule: A third party receives messages, and the player takes into account the risk of someone else's access."
+              }
+            },
+            {
+              "id": "variant-channels-08",
+              "text": {
+                "ru": "Общий и закрытый канал. Правило: Игрок выбирает аудиторию сообщения и управляет тем, кто сможет его прочитать.",
+                "en": "Public and private channel. Rule: The player chooses the audience of the message and controls who can read it."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-agency",
+      "section": "section-3",
+      "title": {
+        "ru": "Цели и самостоятельность NPC",
+        "en": "NPC Goals and Autonomy"
+      },
+      "description": {
+        "ru": "Собственные цели и состояние NPC определяют инициативу, выбор тем и отказ от предложенного разговора.",
+        "en": "The NPC's own goals and state determine the initiative, choice of topics, and refusal of the proposed conversation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-agency-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-agency-01",
+              "text": {
+                "ru": "Собственная цель разговора. Правило: NPC стремится получить сведения, добиться действия или скрыть факт, а не только отвечать.",
+                "en": "Own purpose of conversation. Rule: The NPC seeks to obtain information, achieve action, or hide a fact, and not just respond..."
+              }
+            },
+            {
+              "id": "variant-agency-02",
+              "text": {
+                "ru": "Модель убеждений. Правило: Ответ зависит от того, что NPC считает истинным, включая ошибочные представления.",
+                "en": "Belief model. Rule: The answer depends on what the NPC believes to be true, including misconceptions."
+              }
+            },
+            {
+              "id": "variant-agency-03",
+              "text": {
+                "ru": "Личные предпочтения. Правило: Одинаковая тактика по-разному действует на персонажей с разными ценностями и привычками.",
+                "en": "Personal preferences. Rule: The same tactics have different effects on characters with different values ​​and habits."
+              }
+            },
+            {
+              "id": "variant-agency-04",
+              "text": {
+                "ru": "Границы полномочий. Правило: Даже убеждённый NPC может не иметь права или возможности выполнить просьбу.",
+                "en": "Boundaries of authority. Rule: Even a convinced NPC may not have the right or ability to fulfill a request."
+              }
+            },
+            {
+              "id": "variant-agency-05",
+              "text": {
+                "ru": "Встречные условия. Правило: NPC выдвигает собственную просьбу и меняет рамку первоначального обращения.",
+                "en": "Counter conditions. Rule: The NPC makes his own request and changes the frame of the original request."
+              }
+            },
+            {
+              "id": "variant-agency-06",
+              "text": {
+                "ru": "Отказ от сотрудничества. Правило: Персонаж может отказаться отвечать или действовать по внутренним правилам.",
+                "en": "Refusal to cooperate. Rule: The character may refuse to answer or act according to internal rules."
+              }
+            },
+            {
+              "id": "variant-agency-07",
+              "text": {
+                "ru": "Адаптация к тактике. Правило: NPC замечает повторяющийся приём игрока и меняет реакцию на его дальнейшее использование.",
+                "en": "Adaptation to tactics. Rule: The NPC notices the player's repeated move and changes the reaction to its further use."
+              }
+            },
+            {
+              "id": "variant-agency-08",
+              "text": {
+                "ru": "Самостоятельное решение. Правило: После разговора NPC выбирает действие по своим целям, знаниям и ограничениям.",
+                "en": "Independent decision. Rule: After a conversation, the NPC chooses an action based on his goals, knowledge and limitations."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-consequences",
+      "section": "section-2",
+      "title": {
+        "ru": "Последствия разговора",
+        "en": "Consequences of the conversation"
+      },
+      "description": {
+        "ru": "Сказанное меняет доступные действия, обязательства, отношения и последующие события мира.",
+        "en": "What is said changes the available actions, obligations, relationships and subsequent events of the world."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-consequences-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-consequences-01",
+              "text": {
+                "ru": "Изменение задания. Правило: Диалог выдаёт, завершает, перенаправляет или закрывает игровую задачу.",
+                "en": "Changing a task. Rule: Dialogue issues, completes, redirects or closes a game task."
+              }
+            },
+            {
+              "id": "variant-consequences-02",
+              "text": {
+                "ru": "Доступ к миру. Правило: Результат открывает место, маршрут, услугу, товар или возможность взаимодействия.",
+                "en": "Access to the world. Rule: The result opens a place, route, service, product or interaction opportunity."
+              }
+            },
+            {
+              "id": "variant-consequences-03",
+              "text": {
+                "ru": "Изменение поведения NPC. Правило: Персонаж следует, охраняет, прячется, сотрудничает или препятствует после беседы.",
+                "en": "Changing NPC behavior. Rule: The character follows, guards, hides, cooperates, or obstructs after the conversation."
+              }
+            },
+            {
+              "id": "variant-consequences-04",
+              "text": {
+                "ru": "Фракционная репутация. Правило: Позиция в разговоре меняет отношение группы, даже если конкретный собеседник согласен.",
+                "en": "Factional reputation. Rule: Position in a conversation changes the group's attitude, even if the individual interlocutor agrees."
+              }
+            },
+            {
+              "id": "variant-consequences-05",
+              "text": {
+                "ru": "Перераспределение ресурсов. Правило: Слова приводят к передаче денег, предметов, труда или контроля над объектом.",
+                "en": "Redistribution of resources. Rule: Words lead to the transfer of money, objects, labor or control over an object."
+              }
+            },
+            {
+              "id": "variant-consequences-06",
+              "text": {
+                "ru": "Обещание с проверкой исполнения. Правило: Игра позже сопоставляет действия героя с данным в разговоре обязательством.",
+                "en": "Promise with verification of fulfillment. Rule: The game later compares the hero's actions with the obligation given in the conversation."
+              }
+            },
+            {
+              "id": "variant-consequences-07",
+              "text": {
+                "ru": "Отложенная реакция. Правило: Последствие проявляется через время, другую встречу или сообщение от третьей стороны.",
+                "en": "Delayed reaction. Rule: Consequence manifests itself through time, another meeting, or a message from a third party."
+              }
+            },
+            {
+              "id": "variant-consequences-08",
+              "text": {
+                "ru": "Изменение сюжетного исхода. Правило: Накопленные решения определяют доступные развязки или судьбу персонажей.",
+                "en": "Changing the plot outcome. Rule: Accumulated decisions determine the available resolutions or fate of the characters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-failure",
+      "section": "section-2",
+      "title": {
+        "ru": "Провал, повторение и пересмотр",
+        "en": "Failure, repetition and revision"
+      },
+      "description": {
+        "ru": "Ошибки и отказ собеседника создают условия повторной попытки, исправления позиции или принятия последствий.",
+        "en": "Mistakes and refusal of the interlocutor create conditions for retrying, correcting the position or accepting the consequences."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-failure-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-failure-01",
+              "text": {
+                "ru": "Необратимая попытка. Правило: Отдельное решение или испытание допускается только один раз.",
+                "en": "An irreversible attempt. Rule: An individual solution or test is allowed only once."
+              }
+            },
+            {
+              "id": "variant-failure-02",
+              "text": {
+                "ru": "Свободная повторная попытка. Правило: Игрок может вновь попробовать ответ без обязательной смены условий.",
+                "en": "Free retry. Rule: The player can try the answer again without necessarily changing the conditions."
+              }
+            },
+            {
+              "id": "variant-failure-03",
+              "text": {
+                "ru": "Повтор после подготовки. Правило: Новая попытка открывается после получения навыка, улики, помощи или иного преимущества.",
+                "en": "Repeat after preparation. Rule: A new attempt is opened after receiving a skill, evidence, help or other advantage."
+              }
+            },
+            {
+              "id": "variant-failure-04",
+              "text": {
+                "ru": "Провал с продолжением. Правило: Неудача продвигает историю с осложнением или альтернативной задачей.",
+                "en": "Failure to continue. Rule: Failure advances the story with a complication or alternative objective."
+              }
+            },
+            {
+              "id": "variant-failure-05",
+              "text": {
+                "ru": "Частичный компромисс. Правило: При неполном успехе игрок получает часть желаемого на менее выгодных условиях.",
+                "en": "Partial compromise. Rule: If the player is not completely successful, he receives part of what he wants on less favorable terms."
+              }
+            },
+            {
+              "id": "variant-failure-06",
+              "text": {
+                "ru": "Восстановление после ошибки. Правило: Игрок уточняет, отзывает или исправляет неудачную реплику в рамках разговора.",
+                "en": "Recovery after an error. Rule: The player clarifies, recalls or corrects an unsuccessful remark as part of a conversation."
+              }
+            },
+            {
+              "id": "variant-failure-07",
+              "text": {
+                "ru": "Перемотка выбора. Правило: Предусмотренная игрой возможность возвращает к предыдущему решению с сохранением контроля игрока.",
+                "en": "Rewind selection. Rule: The game provides an option to return to the previous decision while maintaining player control."
+              }
+            },
+            {
+              "id": "variant-failure-08",
+              "text": {
+                "ru": "Знание из другого цикла. Правило: Перезапуск или временная петля позволяет использовать сведения из прошлой версии разговора.",
+                "en": "Knowledge from another cycle. Rule: Restart or time loop allows you to use information from a previous version of the conversation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-minigames",
+      "section": "section-2",
+      "title": {
+        "ru": "Диалог как отдельное испытание",
+        "en": "Dialogue as a standalone challenge"
+      },
+      "description": {
+        "ru": "Общение получает отдельные правила успеха: последовательность, ресурсы, время или точность ответа.",
+        "en": "Communication receives separate rules for success: consistency, resources, time or accuracy of response."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-minigames-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-minigames-01",
+              "text": {
+                "ru": "Карточные переговоры. Правило: Аргументы представлены картами с условиями применения, эффектами и сочетаниями.",
+                "en": "Card negotiations. Rule: Arguments are represented by cards with application conditions, effects and combinations."
+              }
+            },
+            {
+              "id": "variant-minigames-02",
+              "text": {
+                "ru": "Словесная дуэль. Правило: Атаки и ответы требуют выбрать подходящую реплику против конкретного выпада соперника.",
+                "en": "Verbal duel. Rule: Attacks and replies require choosing an appropriate response against a specific attack from your opponent."
+              }
+            },
+            {
+              "id": "variant-minigames-03",
+              "text": {
+                "ru": "Составление фразы-загадки. Правило: Нужно собрать выражение, которое удовлетворяет смысловым или формальным условиям.",
+                "en": "Compose a riddle phrase. Rule: You need to collect an expression that satisfies semantic or formal conditions."
+              }
+            },
+            {
+              "id": "variant-minigames-04",
+              "text": {
+                "ru": "Ритмический ответ. Правило: Реплика или сигнал должны попасть в заданный темп и последовательность.",
+                "en": "Rhythmic response. Rule: The cue or signal must fall within the specified tempo and sequence."
+              }
+            },
+            {
+              "id": "variant-minigames-05",
+              "text": {
+                "ru": "Сопоставление понятий. Правило: Игрок связывает слова, факты или образы, чтобы сформулировать понятное сообщение.",
+                "en": "Comparison of concepts. Rule: The player connects words, facts or images to formulate a clear message."
+              }
+            },
+            {
+              "id": "variant-minigames-06",
+              "text": {
+                "ru": "Память о сказанном. Правило: Испытание требует воспроизвести существенные детали предыдущего обмена.",
+                "en": "Memory of what was said. Rule: The test requires reproducing essential details of the previous exchange."
+              }
+            },
+            {
+              "id": "variant-minigames-07",
+              "text": {
+                "ru": "Распределение аргументов. Правило: Ограниченный набор доводов нужно раздать между темами, раундами или собеседниками.",
+                "en": "Distribution of arguments. Rule: A limited set of arguments must be distributed between topics, rounds or interlocutors."
+              }
+            },
+            {
+              "id": "variant-minigames-08",
+              "text": {
+                "ru": "Социальный бой. Правило: Участники снижают решимость или иную защиту противника через формализованные ходы.",
+                "en": "Social combat. Rule: Participants reduce the opponent's resolve or other defenses through formal moves."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-inner",
+      "section": "section-2",
+      "title": {
+        "ru": "Внутренний диалог",
+        "en": "Inner dialogue"
+      },
+      "description": {
+        "ru": "Герой взаимодействует с собственными мыслями, внутренними голосами и конкурирующими мотивами.",
+        "en": "The hero interacts with his own thoughts, inner voices and competing motives."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-inner-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-inner-01",
+              "text": {
+                "ru": "Советующие способности. Правило: Навыки или стороны личности предлагают трактовки, предупреждения и варианты ответа.",
+                "en": "Advising abilities. Rule: Skills or aspects of personality offer interpretations, warnings and response options."
+              }
+            },
+            {
+              "id": "variant-inner-02",
+              "text": {
+                "ru": "Спор внутренних голосов. Правило: Несколько внутренних позиций конкурируют, а игрок выбирает, какой следовать.",
+                "en": "Dispute of internal voices. Rule: Several internal positions compete and the player chooses which one to follow."
+              }
+            },
+            {
+              "id": "variant-inner-03",
+              "text": {
+                "ru": "Ненадёжная подсказка. Правило: Внутренний комментарий может ошибаться из-за предубеждения, состояния или неполного знания.",
+                "en": "Unreliable hint. Rule: Internal commentary may be wrong due to bias, condition or incomplete knowledge."
+              }
+            },
+            {
+              "id": "variant-inner-04",
+              "text": {
+                "ru": "Самоубеждение. Правило: Игрок формулирует доводы, чтобы принять решение или изменить установку героя.",
+                "en": "Self-conviction. Rule: The player formulates reasons to make a decision or change the hero’s attitude."
+              }
+            },
+            {
+              "id": "variant-inner-05",
+              "text": {
+                "ru": "Подавление импульса. Правило: Нужно отказаться от навязчивого желания сказать или сделать определённую вещь.",
+                "en": "Pulse suppression. Rule: You need to give up the obsessive desire to say or do a certain thing..."
+              }
+            },
+            {
+              "id": "variant-inner-06",
+              "text": {
+                "ru": "Мысленная репетиция. Правило: Герой заранее пробует формулировки и оценивает предполагаемые реакции.",
+                "en": "Mental rehearsal. Rule: The hero tries out the wording in advance and evaluates the expected reactions."
+              }
+            },
+            {
+              "id": "variant-inner-07",
+              "text": {
+                "ru": "Разговор с воспоминанием. Правило: Прошлый образ человека отвечает по правилам памяти героя и влияет на его нынешний выбор.",
+                "en": "Conversation with a memory. Rule: A person’s past image follows the rules of the hero’s memory and influences his current choice."
+              }
+            },
+            {
+              "id": "variant-inner-08",
+              "text": {
+                "ru": "Обсуждение между личностями. Правило: Разные управляемые аспекты одного персонажа согласуют действия через диалог.",
+                "en": "Discussion between individuals. Rule: Different controllable aspects of the same character coordinate actions through dialogue."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-memory",
+      "section": "section-3",
+      "title": {
+        "ru": "Память и история общения",
+        "en": "Memory and history of communication"
+      },
+      "description": {
+        "ru": "Система сохраняет сказанное и использует историю разговора для последующих реакций и проверки согласованности.",
+        "en": "The system stores what was said and uses the conversation history for subsequent reactions and consistency checks."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-memory-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-memory-01",
+              "text": {
+                "ru": "Память о выбранной реплике. Правило: NPC возвращается к конкретным ранее произнесённым словам.",
+                "en": "Memory of the selected dialogue line. Rule: NPC returns to specific previously spoken words."
+              }
+            },
+            {
+              "id": "variant-memory-02",
+              "text": {
+                "ru": "Память о последовательности. Правило: Система учитывает порядок нескольких ответов и ищет между ними связь.",
+                "en": "Memory for consistency. Rule: The system takes into account the order of several answers and looks for a connection between them."
+              }
+            },
+            {
+              "id": "variant-memory-03",
+              "text": {
+                "ru": "Память об обращении. Правило: Имеют значение знакомство, частота встреч и перерывы между ними.",
+                "en": "Memory of conversion. Rule: Familiarity, frequency of meetings and breaks between them matter."
+              }
+            },
+            {
+              "id": "variant-memory-04",
+              "text": {
+                "ru": "Контроль непротиворечивости. Правило: Новые утверждения сравниваются с прежними версиями рассказа игрока.",
+                "en": "Consistency control. Rule: New statements are compared to previous versions of the player's story."
+              }
+            },
+            {
+              "id": "variant-memory-05",
+              "text": {
+                "ru": "Избирательная память. Правило: Персонаж сохраняет одни детали и забывает другие по установленным правилам.",
+                "en": "Selective memory. Rule: The character retains some details and forgets others according to established rules..."
+              }
+            },
+            {
+              "id": "variant-memory-06",
+              "text": {
+                "ru": "Доступность воспоминания. Правило: Вопрос, предмет или место возвращают забытое событие и открывают разговор.",
+                "en": "Availability of memories. Rule: A question, object or place brings back a forgotten event and opens up a conversation."
+              }
+            },
+            {
+              "id": "variant-memory-07",
+              "text": {
+                "ru": "Передача чужой истории. Правило: NPC узнаёт о разговоре через другого персонажа и реагирует на пересказ.",
+                "en": "Passing on someone else's story. Rule: The NPC learns about the conversation through another character and reacts to the retelling..."
+              }
+            },
+            {
+              "id": "variant-memory-08",
+              "text": {
+                "ru": "Забывание и обновление. Правило: Отношение к старой реплике ослабевает или меняется после новых событий.",
+                "en": "Forgetting and renewal. Rule: The attitude towards the old dialogue line weakens or changes after new events..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-reactive",
+      "section": "section-3",
+      "title": {
+        "ru": "Системный подбор и генерация",
+        "en": "Rule-based selection and generation"
+      },
+      "description": {
+        "ru": "Правила подбирают или формируют реплики из состояния мира и персонажей; качество и границы генерации проверяют отдельно.",
+        "en": "Rules select or form cues from the state of the world and characters; quality and generation boundaries are checked separately."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-reactive-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-reactive-01",
+              "text": {
+                "ru": "Ответ по состоянию мира. Правило: Система выбирает реакцию с учётом событий, объектов и текущих обстоятельств.",
+                "en": "The answer is based on the state of the world. Rule: The system selects a reaction taking into account events, objects and current circumstances."
+              }
+            },
+            {
+              "id": "variant-reactive-02",
+              "text": {
+                "ru": "Приоритет наиболее уместного. Правило: Из нескольких доступных реплик выбирается лучше подходящая к контексту.",
+                "en": "Prioritize what is most relevant. Rule: From several available dialogue lines, the one best suited to the context is selected."
+              }
+            },
+            {
+              "id": "variant-reactive-03",
+              "text": {
+                "ru": "Защита от повторов. Правило: История воспроизведения снижает вероятность слишком частого возвращения одной реплики.",
+                "en": "Replay protection. Rule: Replay history reduces the likelihood of returning one dialogue line too often."
+              }
+            },
+            {
+              "id": "variant-reactive-04",
+              "text": {
+                "ru": "Шаблон с переменными. Правило: Общая конструкция получает конкретные имена, предметы, места и результаты.",
+                "en": "Template with variables. Rule: General construction receives specific names, objects, places and results."
+              }
+            },
+            {
+              "id": "variant-reactive-05",
+              "text": {
+                "ru": "Комбинирование фрагментов. Правило: Ответ собирается из совместимых частей с учётом состояния говорящего.",
+                "en": "Combining fragments. Rule: The answer is assembled from compatible parts, taking into account the state of the speaker."
+              }
+            },
+            {
+              "id": "variant-reactive-06",
+              "text": {
+                "ru": "Событийные короткие реплики. Правило: Наблюдаемое событие запускает краткий комментарий, предупреждение или обращение.",
+                "en": "Event short remarks. Rule: An observed event triggers a short comment, warning, or appeal."
+              }
+            },
+            {
+              "id": "variant-reactive-07",
+              "text": {
+                "ru": "Генеративное формулирование. Правило: Модель создаёт текст для заданного намерения и набора допустимых фактов.",
+                "en": "Generative formulation. Rule: The model creates text for a given intent and a set of valid facts."
+              }
+            },
+            {
+              "id": "variant-reactive-08",
+              "text": {
+                "ru": "Разделение речи и действия. Правило: Сгенерированная реплика получает игровые последствия только через проверяемые правила системы.",
+                "en": "Separation of speech and action. Rule: The generated dialogue line receives game consequences only through verifiable system rules."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-voice",
+      "section": "section-2",
+      "title": {
+        "ru": "Голос как игровое действие",
+        "en": "Voice as a game action"
+      },
+      "description": {
+        "ru": "Голосовое исполнение, распознавание речи и особенности произнесения становятся частью действия игрока.",
+        "en": "Voice performance, speech recognition and pronunciation features become part of the player's action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-voice-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-voice-01",
+              "text": {
+                "ru": "Громкость. Правило: Шёпот и крик меняют слышимость, скрытность или реакцию собеседника.",
+                "en": "Volume. Rule: Whispering and shouting change the audibility, secrecy or reaction of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-voice-02",
+              "text": {
+                "ru": "Интонация. Правило: Высота и контур голоса служат сигналом вопроса, уверенности, иронии или угрозы.",
+                "en": "Intonation. Rule: The pitch and contour of the voice signals question, confidence, irony or threat."
+              }
+            },
+            {
+              "id": "variant-voice-03",
+              "text": {
+                "ru": "Темп речи. Правило: Скорость произнесения влияет на понятность, оценку состояния или успех испытания.",
+                "en": "Rate of speech. Rule: The speed of utterance affects the understandability, the assessment of the condition or the success of the test."
+              }
+            },
+            {
+              "id": "variant-voice-04",
+              "text": {
+                "ru": "Произношение. Правило: Нужно воспроизвести имя, заклинание, слово или условный сигнал с нужной точностью.",
+                "en": "Pronunciation. Rule: You need to reproduce a name, spell, word or conditioned signal with the required accuracy."
+              }
+            },
+            {
+              "id": "variant-voice-05",
+              "text": {
+                "ru": "Речевая пауза. Правило: Длительность молчания между частями высказывания влияет на понимание и реакцию.",
+                "en": "Speech pause. Rule: The duration of silence between parts of an utterance affects understanding and reaction."
+              }
+            },
+            {
+              "id": "variant-voice-06",
+              "text": {
+                "ru": "Управление дыханием. Правило: Продолжительность или устойчивость голосового сигнала становится ограниченным ресурсом.",
+                "en": "Breath control. Rule: Duration or stability of the voice signal becomes a limited resource."
+              }
+            },
+            {
+              "id": "variant-voice-07",
+              "text": {
+                "ru": "Распознавание голоса. Правило: Тембр или подтверждение личности определяют, кому система разрешает обращение.",
+                "en": "Voice recognition. Rule: Voice or identity confirmation determines to whom the system allows the request."
+              }
+            },
+            {
+              "id": "variant-voice-08",
+              "text": {
+                "ru": "Имитирование голоса. Правило: Игрок воспроизводит чужой голос, а система проверяет убедительность и условия обмана.",
+                "en": "Voice imitation. Rule: The player reproduces someone else's voice, and the system checks the credibility and conditions of deception."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-etiquette",
+      "section": "section-2",
+      "title": {
+        "ru": "Статус, этикет и ритуалы",
+        "en": "Status, etiquette and rituals"
+      },
+      "description": {
+        "ru": "Социальный статус, ритуалы и принятые формы обращения меняют доступность и смысл реплик.",
+        "en": "Social status, rituals, and accepted forms of address change the availability and meaning of cues."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-etiquette-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-etiquette-01",
+              "text": {
+                "ru": "Форма обращения. Правило: Правильное имя, титул и степень формальности меняют готовность NPC слушать.",
+                "en": "Application form. Rule: The correct name, title, and degree of formality will change the NPC's willingness to listen..."
+              }
+            },
+            {
+              "id": "variant-etiquette-02",
+              "text": {
+                "ru": "Ритуал приветствия. Правило: Для начала содержательного обмена нужно выполнить принятую последовательность действий.",
+                "en": "Welcome ritual. Rule: To start a meaningful exchange, you need to follow the accepted sequence of actions."
+              }
+            },
+            {
+              "id": "variant-etiquette-03",
+              "text": {
+                "ru": "Право задавать вопрос. Правило: Иерархия или процедура определяет, кто может спрашивать и на какие темы.",
+                "en": "The right to ask a question. Rule: A hierarchy or procedure determines who can ask and on what topics."
+              }
+            },
+            {
+              "id": "variant-etiquette-04",
+              "text": {
+                "ru": "Запретная тема. Правило: Некоторые вопросы нарушают норму, провоцируют санкцию или требуют особого разрешения.",
+                "en": "Forbidden topic. Rule: Some questions violate a norm, provoke a sanction, or require special permission."
+              }
+            },
+            {
+              "id": "variant-etiquette-05",
+              "text": {
+                "ru": "Сохранение лица. Правило: Игрок добивается уступки так, чтобы NPC мог публично сохранить статус и достоинство.",
+                "en": "Saving face. Rule: The player seeks a concession so that the NPC can publicly maintain status and dignity."
+              }
+            },
+            {
+              "id": "variant-etiquette-06",
+              "text": {
+                "ru": "Публичное обязательство. Правило: Свидетели усиливают социальную цену обещания, отказа или изменения позиции.",
+                "en": "Public commitment. Rule: Witnesses reinforce the social cost of a promise, refusal, or change of position."
+              }
+            },
+            {
+              "id": "variant-etiquette-07",
+              "text": {
+                "ru": "Культурная адаптация. Правило: Игрок замечает местные нормы и меняет привычную манеру общения.",
+                "en": "Cultural adaptation. Rule: The player notices local norms and changes the usual manner of communication."
+              }
+            },
+            {
+              "id": "variant-etiquette-08",
+              "text": {
+                "ru": "Формальное речевое действие. Правило: Клятва, приказ, приговор или согласие меняют статус при наличии нужных полномочий и условий.",
+                "en": "Formal speech act. Rule: An oath, order, sentence or consent changes status if the necessary powers and conditions are present."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-interface",
+      "section": "section-4",
+      "title": {
+        "ru": "Представление и навигация",
+        "en": "Presentation and Navigation"
+      },
+      "description": {
+        "ru": "Интерфейс показывает варианты, историю и значимые последствия и позволяет ориентироваться в разговоре.",
+        "en": "The interface shows options, history, and meaningful consequences and allows you to navigate the conversation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-interface-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-interface-01",
+              "text": {
+                "ru": "Список и колесо реплик. Правило: Доступные ответы размещаются в линейном или радиальном меню.",
+                "en": "List and cue wheel. Rule: Available answers are placed in a linear or radial menu."
+              }
+            },
+            {
+              "id": "variant-interface-02",
+              "text": {
+                "ru": "Краткая подпись и полный текст. Правило: Система позволяет соотнести название варианта с фактической формулировкой ответа.",
+                "en": "Brief signature and full text. Rule: The system allows you to correlate the name of the option with the actual wording of the answer."
+              }
+            },
+            {
+              "id": "variant-interface-03",
+              "text": {
+                "ru": "Метки намерения. Правило: Теги или символы объясняют, какой социальный приём выражает реплика.",
+                "en": "Intent marks. Rule: Tags or symbols explain what social technique the line expresses."
+              }
+            },
+            {
+              "id": "variant-interface-04",
+              "text": {
+                "ru": "Показ требований. Правило: Игрок видит, почему вариант доступен, недоступен или требует подготовки.",
+                "en": "Show requirements. Rule: The player sees why an option is available, unavailable or requires preparation."
+              }
+            },
+            {
+              "id": "variant-interface-05",
+              "text": {
+                "ru": "Показ вероятности и цены. Правило: Интерфейс раскрывает шанс, затраты или ожидаемое изменение показателя.",
+                "en": "Showing probability and price. Rule: The interface reveals the chance, cost or expected change in the indicator."
+              }
+            },
+            {
+              "id": "variant-interface-06",
+              "text": {
+                "ru": "Журнал разговора. Правило: Игрок перечитывает предыдущие реплики и при необходимости повторяет запись.",
+                "en": "Conversation log. Rule: The player rereads previous remarks and repeats the recording if necessary."
+              }
+            },
+            {
+              "id": "variant-interface-07",
+              "text": {
+                "ru": "Метки обсуждённых тем. Правило: Визуально различаются новые, исчерпанные, изменившиеся и уже выбранные вопросы.",
+                "en": "Tags of discussed topics. Rule: New, exhausted, changed and already selected questions are visually distinguished."
+              }
+            },
+            {
+              "id": "variant-interface-08",
+              "text": {
+                "ru": "Неполная прозрачность. Правило: Интерфейс намеренно скрывает часть намерений, проверок или последствий для сохранения неопределённости.",
+                "en": "Incomplete transparency. Rule: The interface deliberately hides some of the intent, checks, or consequences to maintain ambiguity."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-accessibility",
+      "section": "section-4",
+      "title": {
+        "ru": "Доступность и управление чтением",
+        "en": "Accessibility and reading controls"
+      },
+      "description": {
+        "ru": "Настройки чтения и альтернативного ввода обеспечивают доступ к содержанию и управлению разговором.",
+        "en": "Reading and alternative input settings provide access to content and conversation control."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-accessibility-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-accessibility-01",
+              "text": {
+                "ru": "Скорость показа текста. Правило: Игрок регулирует темп появления символов или сразу показывает всю реплику.",
+                "en": "Text display speed. Rule: The player adjusts the pace of appearance of symbols or shows the entire dialogue line at once."
+              }
+            },
+            {
+              "id": "variant-accessibility-02",
+              "text": {
+                "ru": "Ручное и автоматическое продолжение. Правило: Переключение реплик происходит по команде или автоматически после чтения и озвучивания.",
+                "en": "Manual and automatic continuation. Rule: Switching of dialogue lines occurs on command or automatically after reading and voicing."
+              }
+            },
+            {
+              "id": "variant-accessibility-03",
+              "text": {
+                "ru": "Пропуск прочитанного. Правило: Уже известные реплики можно ускорять отдельно от нового текста и решений.",
+                "en": "Skip reading. Rule: Already known remarks can be accelerated separately from new text and solutions."
+              }
+            },
+            {
+              "id": "variant-accessibility-04",
+              "text": {
+                "ru": "Настройка таймеров. Правило: Игрок увеличивает время выбора, ставит его на паузу или отключает ограничение.",
+                "en": "Setting timers. Rule: The player increases the selection time, pauses it, or disables the limitation."
+              }
+            },
+            {
+              "id": "variant-accessibility-05",
+              "text": {
+                "ru": "Субтитры и обозначение говорящего. Правило: Текст, имя и значимые звуковые сигналы остаются различимы без опоры на слух.",
+                "en": "Subtitles and speaker identification. Rule: Text, name and significant audio signals remain distinguishable without relying on hearing."
+              }
+            },
+            {
+              "id": "variant-accessibility-06",
+              "text": {
+                "ru": "Альтернатива голосовому вводу. Правило: Смысловой ответ можно передать кнопкой, текстом или другим доступным способом.",
+                "en": "An alternative to voice input. Rule: A semantic answer can be conveyed by a button, text or other accessible method."
+              }
+            },
+            {
+              "id": "variant-accessibility-07",
+              "text": {
+                "ru": "Доступная навигация. Правило: Выбор, чтение и журнал поддерживают клавиатуру, контроллер и вспомогательные технологии.",
+                "en": "Accessible navigation. Rule: Select, read and log support keyboard, controller and assistive technologies."
+              }
+            },
+            {
+              "id": "variant-accessibility-08",
+              "text": {
+                "ru": "Снижение нагрузки на память. Правило: Игра предоставляет пересказ, закрепление фактов или доступ к сведениям во время ответа.",
+                "en": "Reduced memory load. Rule: The game provides retelling, reinforcement of facts, or access to information while answering."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "inkle: Writing interactive fiction with ink",
+        "en": "inkle: Writing interactive fiction with ink"
+      },
+      "url": "https://www.inklestudios.com/ink/web-tutorial/",
+      "description": {
+        "ru": "Выборы, переходы, условия и учёт ранее посещённого контента. Документация инструмента, а не универсальная классификация.",
+        "en": "Elections, transitions, conditions and accounting for previously visited content. Documentation of a tool, not a universal classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Yarn Spinner: Saliency",
+        "en": "Yarn Spinner: Saliency"
+      },
+      "url": "https://docs.yarnspinner.dev/write-yarn-scripts/advanced-scripting/saliency",
+      "description": {
+        "ru": "Подбор условного контента, приоритет уместности и учёт повторов.",
+        "en": "Selection of conditional content, priority of relevance and consideration of repetitions."
+      }
+    },
+    {
+      "title": {
+        "ru": "GDC: Building an Open-Ended Conversation System for Expressive Game Characters",
+        "en": "GDC: Building an Open-Ended Conversation System for Expressive Game Characters"
+      },
+      "url": "https://www.gdcvault.com/play/1025075/Building-an-Open-Ended-Conversation",
+      "description": {
+        "ru": "Аннотация доклада авторов системы: классификация свободного ввода и ответы на основе модели знаний. Полная запись доклада не использовалась.",
+        "en": "Abstract of the report by the authors of the system: classification of free input and answers based on the knowledge model. The full transcript of the report was not used."
+      }
+    },
+    {
+      "title": {
+        "ru": "Capcom: Apollo Justice: Ace Attorney, руководство",
+        "en": "Capcom: Apollo Justice: Ace Attorney guide"
+      },
+      "url": "https://static.capcom.com/manuals/aaaj/AAAJ_DS_DMNL_EN.pdf",
+      "description": {
+        "ru": "Поисковая выдержка официального руководства подтверждает PRESS и PRESENT при перекрёстном допросе. Полный PDF через просмотрщик не открылся.",
+        "en": "The search extract of the official manual confirms PRESS and PRESENT on cross-examination. The full PDF did not open in the viewer."
+      }
+    },
+    {
+      "title": {
+        "ru": "inkle: Heaven’s Vault",
+        "en": "inkle: Heaven's Vault"
+      },
+      "url": "https://www.inklestudios.com/heavensvault/",
+      "description": {
+        "ru": "Расшифровка языка с сюжетно значимыми переводами и реакция персонажей на предыдущие действия. Расшифровка письменного языка служит смежным примером.",
+        "en": "Deciphering the language with plot-significant translations and the characters’ reactions to previous actions. Decoding written language provides a related example."
+      }
+    }
+  ]
+}

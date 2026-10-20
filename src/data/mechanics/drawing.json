@@ -1,0 +1,2282 @@
+{
+  "id": "drawing",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики рисования",
+    "en": "Drawing mechanics"
+  },
+  "description": {
+    "ru": "Механики рисования: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Drawing Mechanics: Actions, Variations, Applications and Limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация механик, в которых игрок создаёт или изменяет изображение, линию, контур или штрих, а игра использует результат. Не претендует на закрытый универсальный перечень. Единица каталога: действие игрока, интерпретация рисунка и результат. Родственные варианты разделены, когда меняется правило или критерий результата. Проектный паттерн означает, что конкретный игровой пример в этом каталоге не проверен; это не утверждение о первенстве, распространённости или отсутствии таких игр.",
+    "en": "The author's working classification of mechanics in which the player creates or changes an image, line, outline or stroke, and the game uses the result. Does not claim to be a closed universal list. Catalog unit: player action, drawing interpretation and result. Related options are separated when the rule or outcome criterion changes. A design pattern means that the specific game example in that directory is untested; This is not a statement about the primacy, prevalence or absence of such games."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-g01",
+      "section": "section-1",
+      "title": {
+        "ru": "Творчество и персонализация",
+        "en": "Creativity and Personalization"
+      },
+      "description": {
+        "ru": "Изображение становится самостоятельным результатом или внешностью игрового объекта.",
+        "en": "The image becomes an independent result or appearance of the game object."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1469280/SuchArt/",
+        "https://www.jackboxgames.com/blog/fun-multiplayer-drawing-games-you-need-to-play",
+        "https://store.steampowered.com/app/248650/Draw_a_Stickman_EPIC/"
+      ],
+      "branches": [
+        {
+          "id": "family-g01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d001",
+              "text": {
+                "ru": "Свободное рисование. Правило: Создать собственное изображение без обязательного образца; результат сохраняется и доступен для просмотра. Критерий: Свободная цель. Статус примера: С примером.",
+                "en": "Free drawing. Rule: Create your own image without a required sample; the result is saved and available for viewing. Criteria: Free goal. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d002",
+              "text": {
+                "ru": "Рисование по теме. Правило: Передать заданный предмет, ситуацию или понятие собственным рисунком. Критерий: Смысл изображения. Статус примера: С примером.",
+                "en": "Drawing on the topic. Rule: Convey a given object, situation or concept with your own drawing. Criterion: The meaning of the image. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d003",
+              "text": {
+                "ru": "Рисование персонажа. Правило: Нарисовать героя, который затем появляется в игровом мире. Критерий: Созданный образ. Статус примера: С примером.",
+                "en": "Character drawing. Rule: Draw a hero who then appears in the game world. Criterion: Created image. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d004",
+              "text": {
+                "ru": "Оформление предмета. Правило: Нарисовать узор, эмблему или внешний вид используемого предмета. Критерий: Созданный образ. Статус примера: Проектный паттерн.",
+                "en": "Design of the item. Rule: Draw a pattern, emblem or appearance of the item being used. Criterion: Created image. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d005",
+              "text": {
+                "ru": "Роспись окружения. Правило: Оставлять собственные изображения на стенах, полу и других поверхностях мира. Критерий: Созданный образ. Статус примера: С примером.",
+                "en": "Environment painting. Rule: Leave your own images on walls, floors and other surfaces of the world. Criterion: Created image. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d006",
+              "text": {
+                "ru": "Рисование уровня. Правило: Нарисовать геометрию уровня, которую игра преобразует в доступное для прохождения пространство. Критерий: Проходимость уровня. Статус примера: Проектный паттерн.",
+                "en": "Level drawing. Rule: Draw the geometry of the level, which the game transforms into space available for passage. Criterion: Passability of the level. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d007",
+              "text": {
+                "ru": "Создание повторяемого узора. Правило: Нарисовать модуль и составить из его повторений орнамент или покрытие. Критерий: Композиция. Статус примера: Проектный паттерн.",
+                "en": "Creating a repeatable pattern. Rule: Draw a module and make up an ornament or covering from its repetitions. Criterion: Composition. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d008",
+              "text": {
+                "ru": "Композиция из собственных рисунков. Правило: Нарисовать отдельные элементы и собрать их в законченную сцену. Критерий: Композиция. Статус примера: Проектный паттерн.",
+                "en": "Composition from your own drawings. Rule: Draw individual elements and assemble them into a complete scene. Criterion: Composition. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g02",
+      "section": "section-1",
+      "title": {
+        "ru": "Точность и воспроизведение",
+        "en": "Precision and reproduction"
+      },
+      "description": {
+        "ru": "Игра проверяет соответствие штриха, формы или рисунка заданному образцу.",
+        "en": "The game checks whether a stroke, shape or design matches a given pattern."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d009",
+              "text": {
+                "ru": "Обводка контура. Правило: Провести линию вдоль видимого контура с допустимым отклонением. Критерий: Точность. Статус примера: Проектный паттерн.",
+                "en": "Outline outline. Rule: Draw a line along the visible contour with a permissible deviation. Criterion: Accuracy. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d010",
+              "text": {
+                "ru": "Копирование образца. Правило: Повторить видимый рисунок на отдельном участке холста. Критерий: Сходство. Статус примера: Проектный паттерн.",
+                "en": "Copying a sample. Rule: Repeat the visible pattern on a separate section of the canvas. Criterion: Similarity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d011",
+              "text": {
+                "ru": "Рисование по памяти. Правило: Воспроизвести изображение после того, как образец скрыт. Критерий: Сходство. Статус примера: Проектный паттерн.",
+                "en": "Drawing from memory. Rule: Reproduce the image after the sample is hidden. Criterion: Similarity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d012",
+              "text": {
+                "ru": "Рисование по наблюдению. Правило: Передать наблюдаемый предмет или сцену, выбрав существенные признаки. Критерий: Сходство. Статус примера: Проектный паттерн.",
+                "en": "Drawing from observation. Rule: Convey the observed object or scene by selecting essential features. Criterion: Similarity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d013",
+              "text": {
+                "ru": "Соединение точек. Правило: Соединить опорные точки в заданном порядке и получить изображение. Критерий: Порядок и форма. Статус примера: Проектный паттерн.",
+                "en": "Connecting the dots. Rule: Connect the reference points in a given order and get an image. Criterion: Order and shape. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d014",
+              "text": {
+                "ru": "Каллиграфия. Правило: Воспроизвести знак с заданными пропорциями, направлением и порядком штрихов. Критерий: Точность. Статус примера: Проектный паттерн.",
+                "en": "Calligraphy. Rule: Reproduce the sign with the given proportions, direction and order of strokes. Criterion: Accuracy. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d015",
+              "text": {
+                "ru": "Управление нажимом. Правило: Изменять нажим или его аналог, чтобы выдержать заданную толщину либо насыщенность линии. Критерий: Профиль штриха. Статус примера: Проектный паттерн.",
+                "en": "Pressure control. Rule: Change the pressure or its equivalent to maintain a given thickness or saturation of the line. Criterion: Stroke profile. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d016",
+              "text": {
+                "ru": "Управление скоростью штриха. Правило: Выдержать темп, от которого зависит оценка или результат рисования. Критерий: Время и движение. Статус примера: Проектный паттерн.",
+                "en": "Stroke speed control. Rule: Maintain the pace on which the score or the result of the drawing depends. Criterion: Time and movement. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d017",
+              "text": {
+                "ru": "Воспроизведение ритма штрихами. Правило: Начинать, вести и завершать штрихи в заданные моменты. Критерий: Ритм. Статус примера: Проектный паттерн.",
+                "en": "Reproducing rhythm with strokes. Rule: Start, lead and complete strokes at given moments. Criterion: Rhythm. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g03",
+      "section": "section-1",
+      "title": {
+        "ru": "Достраивание и восстановление",
+        "en": "Completion and restoration"
+      },
+      "description": {
+        "ru": "Игрок дополняет, исправляет или преобразует уже имеющийся рисунок.",
+        "en": "The player complements, corrects or transforms an existing drawing."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d018",
+              "text": {
+                "ru": "Дорисовка пропуска. Правило: Восстановить отсутствующую часть изображения так, чтобы оно стало целым. Критерий: Целостность. Статус примера: Проектный паттерн.",
+                "en": "Completion of the pass. Rule: Restore the missing part of the image so that it becomes whole. Criterion: Integrity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d019",
+              "text": {
+                "ru": "Завершение силуэта. Правило: Достроить открытую границу и получить требуемую замкнутую форму. Критерий: Форма. Статус примера: Проектный паттерн.",
+                "en": "Completing the silhouette. Rule: Complete the open boundary and obtain the required closed shape. Criterion: Shape. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d020",
+              "text": {
+                "ru": "Симметричная дорисовка. Правило: Дополнить рисунок относительно оси, центра или другой заданной симметрии. Критерий: Симметрия. Статус примера: Проектный паттерн.",
+                "en": "Symmetrical finishing. Rule: Complete the drawing relative to an axis, center or other specified symmetry. Criterion: Symmetry. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d021",
+              "text": {
+                "ru": "Превращение каракули. Правило: Включить предложенные случайные штрихи в узнаваемое изображение. Критерий: Смысл изображения. Статус примера: Проектный паттерн.",
+                "en": "Transformation doodle. Rule: Include random strokes suggested in a recognizable image. Criterion: The meaning of the image. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d022",
+              "text": {
+                "ru": "Исправление рисунка. Правило: Изменить ошибочные линии или детали, чтобы выполнить условия задания. Критерий: Соответствие. Статус примера: Проектный паттерн.",
+                "en": "Correction of the drawing. Rule: Change erroneous lines or parts to meet the requirements of the task. Criterion: Compliance. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d023",
+              "text": {
+                "ru": "Реставрация изображения. Правило: Восстановить повреждённые линии и красочный слой, сохранив исходный замысел. Критерий: Сходство и сохранность. Статус примера: Проектный паттерн.",
+                "en": "Image restoration. Rule: Restore damaged lines and paint layer, preserving the original design. Criterion: Similarity and safety. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d024",
+              "text": {
+                "ru": "Стирание лишнего. Правило: Удалить только мешающие элементы и открыть правильный рисунок или ответ. Критерий: Выбор удаления. Статус примера: Проектный паттерн.",
+                "en": "Erasing excess. Rule: Remove only interfering elements and reveal the correct picture or answer. Criteria: Select removal. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d025",
+              "text": {
+                "ru": "Рисование негативным пространством. Правило: Создать нужный образ за счёт стирания либо сохранения незакрашенной области. Критерий: Фигура и фон. Статус примера: Проектный паттерн.",
+                "en": "Drawing with negative space. Rule: Create the desired image by erasing or preserving the unpainted area. Criterion: Figure and background. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g04",
+      "section": "section-1",
+      "title": {
+        "ru": "Цвет и поведение краски",
+        "en": "Paint color and behavior"
+      },
+      "description": {
+        "ru": "Игра учитывает площадь, цвет, слои или физическое поведение нанесённого материала.",
+        "en": "The game takes into account the area, color, layers or physical behavior of the applied material."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/1469280/SuchArt/"],
+      "branches": [
+        {
+          "id": "family-g04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d026",
+              "text": {
+                "ru": "Раскрашивание внутри границ. Правило: Заполнить области, соблюдая ограничения на выход за контур. Критерий: Покрытие. Статус примера: Проектный паттерн.",
+                "en": "Coloring within borders. Rule: Fill the areas, respecting the limits on overflow. Criteria: Coverage. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d027",
+              "text": {
+                "ru": "Подбор цвета по образцу. Правило: Получить и нанести оттенок, соответствующий заданному. Критерий: Цветовое сходство. Статус примера: Проектный паттерн.",
+                "en": "Selection of color according to the sample. Rule: Obtain and apply a shade that matches the given one. Criterion: Color similarity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d028",
+              "text": {
+                "ru": "Смешивание пигментов. Правило: Смешать краски и использовать полученный цвет для задачи или собственного изображения. Критерий: Свойства смеси. Статус примера: С примером.",
+                "en": "Mixing pigments. Rule: Mix paints and use the resulting color for a task or your own image. Criterion: Properties of the mixture. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d029",
+              "text": {
+                "ru": "Работа слоями. Правило: Накладывать прозрачные или укрывистые слои, чтобы получить нужный итоговый вид. Критерий: Состав слоёв. Статус примера: Проектный паттерн.",
+                "en": "Working in layers. Rule: Apply clear or opaque layers to achieve the desired final look. Criterion: Composition of layers. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d030",
+              "text": {
+                "ru": "Растушёвка и размытие. Правило: Перераспределить уже нанесённый материал, получив переход или требуемую границу. Критерий: Распределение цвета. Статус примера: Проектный паттерн.",
+                "en": "Feathering and blurring. Rule: Redistribute the already applied material, obtaining a transition or the required border. Criterion: Color distribution. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d031",
+              "text": {
+                "ru": "Рисование с растеканием. Правило: Управлять результатом с учётом растекания краски или распространения по поверхности. Критерий: Поведение материала. Статус примера: Проектный паттерн.",
+                "en": "Drawing with flow. Rule: Control the result taking into account paint flow or spread over the surface. Criterion: Material behavior. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d032",
+              "text": {
+                "ru": "Рисование с высыханием. Правило: Выбирать порядок мазков с учётом изменения краски во времени. Критерий: Состояние материала. Статус примера: Проектный паттерн.",
+                "en": "Drawing with drying. Rule: Choose the order of strokes, taking into account changes in paint over time. Criterion: Condition of the material. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d033",
+              "text": {
+                "ru": "Трафаретная живопись. Правило: Совместить трафарет с поверхностью и нанести материал через его отверстия. Критерий: Совмещение и покрытие. Статус примера: С примером.",
+                "en": "Stencil painting. Rule: Align the stencil with the surface and apply material through its holes. Criteria: Alignment and coating. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d034",
+              "text": {
+                "ru": "Распыление краски. Правило: Управлять расстоянием, направлением и длительностью распыления, чтобы получить нужное покрытие. Критерий: Покрытие. Статус примера: Проектный паттерн.",
+                "en": "Spraying paint. Rule: Control distance, direction and duration of spray to achieve desired coverage. Criteria: Coverage. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d035",
+              "text": {
+                "ru": "Заполнение площади. Правило: Закрасить требуемую долю или всю доступную поверхность с минимальными пропусками. Критерий: Доля покрытия. Статус примера: Проектный паттерн.",
+                "en": "Filling the area. Rule: Paint the required proportion or the entire available surface with minimal gaps. Criterion: Coverage proportion. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g05",
+      "section": "section-1",
+      "title": {
+        "ru": "Линия как логическое решение",
+        "en": "Line as a logical solution"
+      },
+      "description": {
+        "ru": "Решением служат геометрические или топологические свойства нарисованной линии.",
+        "en": "The solution is the geometric or topological properties of the drawn line."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d036",
+              "text": {
+                "ru": "Лабиринт линией. Правило: Соединить начало и конец, не пересекая стены и запрещённые зоны. Критерий: Проходимость. Статус примера: Проектный паттерн.",
+                "en": "Labyrinth by line. Rule: Connect the beginning and end without crossing walls and prohibited areas. Criterion: Passability. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d037",
+              "text": {
+                "ru": "Обход обязательных точек. Правило: Провести маршрут через все заданные точки. Критерий: Покрытие узлов. Статус примера: Проектный паттерн.",
+                "en": "Bypassing mandatory points. Rule: Draw a route through all given points. Criterion: Coverage of nodes. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d038",
+              "text": {
+                "ru": "Обход рёбер одним росчерком. Правило: Пройти каждое заданное ребро ровно один раз без отрыва. Критерий: Покрытие рёбер. Статус примера: Проектный паттерн.",
+                "en": "Traversing the ribs with one stroke. Rule: Go through each given edge exactly once without breaking. Criterion: Edge coverage. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d039",
+              "text": {
+                "ru": "Соединение пар. Правило: Соединить соответствующие точки, соблюдая ограничения для линий. Критерий: Связность. Статус примера: Проектный паттерн.",
+                "en": "Connecting pairs Rule: Connect the corresponding points, observing the restrictions for the lines. Criterion: Connectivity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d040",
+              "text": {
+                "ru": "Линии без пересечений. Правило: Разместить несколько соединений так, чтобы они не пересекались. Критерий: Пересечения. Статус примера: Проектный паттерн.",
+                "en": "Lines without intersections. Rule: Place multiple connections so that they do not intersect. Criteria: Intersections. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d041",
+              "text": {
+                "ru": "Разделение областей. Правило: Провести границы, разделяющие элементы по заданным признакам. Критерий: Состав областей. Статус примера: Проектный паттерн.",
+                "en": "Separation of areas. Rule: Draw boundaries separating elements according to given characteristics. Criterion: Composition of areas. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d042",
+              "text": {
+                "ru": "Деление на равные части. Правило: Разрезать фигуру линиями на части заданной площади или формы. Критерий: Геометрия частей. Статус примера: Проектный паттерн.",
+                "en": "Division into equal parts. Rule: Cut a figure with lines into parts of a given area or shape. Criterion: Geometry of the parts. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d043",
+              "text": {
+                "ru": "Обводка выбранного множества. Правило: Замкнуть контур вокруг нужных объектов, исключив остальные. Критерий: Состав области. Статус примера: Проектный паттерн.",
+                "en": "Stroke the selected set. Rule: Close the contour around the desired objects, excluding the rest. Criterion: Composition of the area. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d044",
+              "text": {
+                "ru": "Кратчайший допустимый путь. Правило: Найти линию минимальной длины при выполнении всех условий. Критерий: Длина и ограничения. Статус примера: Проектный паттерн.",
+                "en": "The shortest feasible path. Rule: Find the line of minimum length when all conditions are met. Criterion: Length and restrictions. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d045",
+              "text": {
+                "ru": "Решение через пересечения. Правило: Провести линию с заданным числом или расположением пересечений. Критерий: Топология. Статус примера: Проектный паттерн.",
+                "en": "Solution through intersections. Rule: Draw a line with a given number or location of intersections. Criterion: Topology. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d046",
+              "text": {
+                "ru": "Построение геометрической фигуры. Правило: Нарисовать фигуру с требуемыми углами, размерами или отношениями сторон. Критерий: Геометрия. Статус примера: Проектный паттерн.",
+                "en": "Construction of a geometric figure. Rule: Draw a figure with the required angles, dimensions or aspect ratios. Criterion: Geometry. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d047",
+              "text": {
+                "ru": "Совмещение перспективой. Правило: Нанести части изображения на разные поверхности так, чтобы с нужной точки они образовали целое. Критерий: Проекция. Статус примера: Проектный паттерн.",
+                "en": "Combination of perspective. Rule: Apply parts of the image to different surfaces so that from the desired point they form a whole. Criterion: Projection. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g06",
+      "section": "section-1",
+      "title": {
+        "ru": "Рисунок как физический объект",
+        "en": "Drawing as a physical object"
+      },
+      "description": {
+        "ru": "Форма превращается в тело или конструкцию, участвующую в симуляции.",
+        "en": "The form turns into a body or structure that participates in the simulation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/26900/Crayon_Physics_Deluxe/"
+      ],
+      "branches": [
+        {
+          "id": "family-g06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d048",
+              "text": {
+                "ru": "Материализация контура. Правило: Превратить нарисованную форму в физическое тело и использовать его для решения задачи. Критерий: Результат симуляции. Статус примера: С примером.",
+                "en": "Materialization of the contour. Rule: Transform the drawn shape into a physical body and use it to solve the problem. Criterion: Simulation result. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d049",
+              "text": {
+                "ru": "Рисование моста. Правило: Создать опору, которая выдержит перемещение объекта через разрыв. Критерий: Прочность и проходимость. Статус примера: Проектный паттерн.",
+                "en": "Drawing a bridge. Rule: Create a support that will withstand the movement of an object through a gap. Criterion: Strength and maneuverability. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d050",
+              "text": {
+                "ru": "Рисование склона. Правило: Задать наклонную поверхность, направляющую движение под действием тяжести. Критерий: Траектория. Статус примера: Проектный паттерн.",
+                "en": "Drawing a slope. Rule: Define an inclined surface that guides movement under the influence of gravity. Criterion: Trajectory. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d051",
+              "text": {
+                "ru": "Рисование противовеса. Правило: Создать груз нужной формы и положения для перемещения или уравновешивания системы. Критерий: Равновесие. Статус примера: Проектный паттерн.",
+                "en": "Drawing a counterweight. Rule: Create a load of the desired shape and position to move or balance the system. Criterion: Equilibrium. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d052",
+              "text": {
+                "ru": "Рисование рычага. Правило: Построить тело, передающее усилие через опору. Критерий: Передача усилия. Статус примера: Проектный паттерн.",
+                "en": "Drawing a lever. Rule: Construct a body that transmits force through a support. Criterion: Transfer of force. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d053",
+              "text": {
+                "ru": "Рисование колеса. Правило: Создать вращающееся тело, подходящее для движения или механизма. Критерий: Вращение и форма. Статус примера: Проектный паттерн.",
+                "en": "Drawing a wheel. Rule: Create a rotating body suitable for movement or mechanism. Criteria: Rotation and shape. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d054",
+              "text": {
+                "ru": "Рисование шарниров и связей. Правило: Соединить тела в работающий механизм. Критерий: Кинематическая связь. Статус примера: С примером.",
+                "en": "Drawing hinges and connections. Rule: Connect bodies into a working mechanism. Criterion: Kinematic connection. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d055",
+              "text": {
+                "ru": "Рисование каната. Правило: Создать гибкую связь, удерживающую или перемещающую объекты. Критерий: Натяжение и движение. Статус примера: С примером.",
+                "en": "Drawing a rope. Rule: Create a flexible connection that holds or moves objects. Criteria: Tension and movement. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d056",
+              "text": {
+                "ru": "Рисование защитной конструкции. Правило: Построить геометрический барьер, который не даст опасности достичь цели. Критерий: Защита в симуляции. Статус примера: Проектный паттерн.",
+                "en": "Drawing a protective structure. Rule: Build a geometric barrier that will prevent danger from reaching the goal. Criterion: Protection in the simulation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d057",
+              "text": {
+                "ru": "Рисование рабочей формы. Правило: Создать крюк, лопасть, ключ или иной инструмент, работоспособность которого зависит от геометрии. Критерий: Функциональность формы. Статус примера: Проектный паттерн.",
+                "en": "Drawing a working form. Rule: Create a hook, blade, wrench or other tool whose functionality depends on geometry. Criterion: Functionality of the form. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d058",
+              "text": {
+                "ru": "Изменение формы управляемого тела. Правило: Перерисовать силуэт своего тела или транспорта, изменив его столкновения и способность проходить препятствия. Критерий: Подходящая форма. Статус примера: Проектный паттерн.",
+                "en": "Changing the shape of the controlled body. Rule: Redraw the silhouette of your body or vehicle, changing its collisions and ability to pass obstacles. Criterion: Suitable shape. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d059",
+              "text": {
+                "ru": "Оживление нарисованного существа. Правило: Нарисовать тело и его части, из которых игра получает движущееся или действующее существо. Критерий: Поведение конструкции. Статус примера: Проектный паттерн.",
+                "en": "Bringing a drawn creature to life. Rule: Draw the body and its parts from which the game gets a moving or acting creature. Criterion: Behavior of the structure. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d060",
+              "text": {
+                "ru": "Объём по нарисованному профилю. Правило: Нарисовать контур, который игра превращает в объёмное тело для дальнейшего использования. Критерий: Форма полученного объёма. Статус примера: Проектный паттерн.",
+                "en": "Volume according to the drawn profile. Rule: Draw a contour, which the game turns into a volumetric body for further use. Criterion: The shape of the resulting volume. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g07",
+      "section": "section-1",
+      "title": {
+        "ru": "Рисунок как маршрут и управление",
+        "en": "Drawing as a route or control input"
+      },
+      "description": {
+        "ru": "Линия задаёт движение существа, транспорта, снаряда или исполнителя.",
+        "en": "The line defines the movement of a creature, vehicle, projectile or performer."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/manual-WiiU-Kirby_Rainbow_Curse?_a=DATC1RAAZAA0"
+      ],
+      "branches": [
+        {
+          "id": "family-g07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d061",
+              "text": {
+                "ru": "Маршрут персонажа. Правило: Нарисовать путь, который персонаж затем проходит. Критерий: Достижение цели. Статус примера: Проектный паттерн.",
+                "en": "Character route. Rule: Draw the path that the character then takes. Criterion: Achieving the goal. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d062",
+              "text": {
+                "ru": "Дорожка для катящегося героя. Правило: Рисовать поверхность непосредственно под движущимся персонажем. Критерий: Непрерывность движения. Статус примера: С примером.",
+                "en": "A path for a rolling hero. Rule: Draw the surface directly below the moving character. Criterion: Continuity of movement. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d063",
+              "text": {
+                "ru": "Наведение транспорта. Правило: Назначить траекторию посадки, парковки или доставки. Критерий: Точность прибытия. Статус примера: Проектный паттерн.",
+                "en": "Guidance of transport. Rule: Assign a landing, parking or delivery trajectory. Criterion: Accuracy of arrival. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d064",
+              "text": {
+                "ru": "Согласование нескольких маршрутов. Правило: Нарисовать пути нескольких объектов так, чтобы избежать столкновений. Критерий: Пространство и время. Статус примера: Проектный паттерн.",
+                "en": "Coordination of multiple routes. Rule: Draw the paths of several objects so as to avoid collisions. Criterion: Space and time. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d065",
+              "text": {
+                "ru": "Маршрут через награды. Правило: Составить путь, собирающий полезные объекты при приемлемом риске. Критерий: Награда и риск. Статус примера: Проектный паттерн.",
+                "en": "Route through rewards. Rule: Create a path that collects useful objects at an acceptable risk. Criterion: Reward and risk. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d066",
+              "text": {
+                "ru": "Задание траектории снаряда. Правило: Нарисовать путь полёта управляемого снаряда. Критерий: Попадание. Статус примера: Проектный паттерн.",
+                "en": "Setting the projectile trajectory. Rule: Draw the flight path of a guided projectile. Criterion: Hit. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d067",
+              "text": {
+                "ru": "Траектория брошенного предмета. Правило: Определить форму будущего движения рисованием с учётом правил симуляции. Критерий: Траектория. Статус примера: Проектный паттерн.",
+                "en": "Trajectory of a thrown object. Rule: Determine the shape of the future movement by drawing, taking into account the rules of the simulation. Criterion: Trajectory. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d068",
+              "text": {
+                "ru": "Программирование движения линией. Правило: Нарисовать маршрут с остановками и командами, который затем исполнит агент. Критерий: Выполнение программы. Статус примера: Проектный паттерн.",
+                "en": "Line movement programming. Rule: Draw a route with stops and commands, which the agent will then execute. Criterion: Execution of the program. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g08",
+      "section": "section-1",
+      "title": {
+        "ru": "Сети, потоки и соединения",
+        "en": "Networks, flows and connections"
+      },
+      "description": {
+        "ru": "Важна не узнаваемость рисунка, а то, что именно соединяют штрихи.",
+        "en": "What is important is not the recognition of the drawing, but what exactly the strokes connect."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d069",
+              "text": {
+                "ru": "Рисование электрической цепи. Правило: Соединить элементы проводниками, чтобы питание дошло до нужных устройств. Критерий: Работоспособность цепи. Статус примера: Проектный паттерн.",
+                "en": "Drawing an electrical circuit. Rule: Connect the elements with conductors so that the power reaches the necessary devices. Criterion: Operability of the circuit. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d070",
+              "text": {
+                "ru": "Рисование водовода. Правило: Построить канал, направляющий жидкость к цели. Критерий: Поток жидкости. Статус примера: Проектный паттерн.",
+                "en": "Drawing a water pipeline. Rule: Build a channel that directs fluid to the target. Criterion: Fluid flow. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d071",
+              "text": {
+                "ru": "Рисование воздушного потока. Правило: Задать струю или поле, перемещающее объекты. Критерий: Движение среды. Статус примера: Проектный паттерн.",
+                "en": "Drawing air flow. Rule: Define a jet or field that moves objects. Criterion: Movement of the medium. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d072",
+              "text": {
+                "ru": "Рисование дорог. Правило: Соединить места дорожной сетью, учитывая доступность и загрузку. Критерий: Связность и пропускная способность. Статус примера: Проектный паттерн.",
+                "en": "Drawing roads. Rule: Connect places with a road network, taking into account accessibility and load. Criterion: Connectivity and capacity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d073",
+              "text": {
+                "ru": "Рисование транспортных линий. Правило: Связать станции маршрутами, обеспечивающими перевозку. Критерий: Доставка и нагрузка. Статус примера: Проектный паттерн.",
+                "en": "Drawing transport lines. Rule: Connect stations with routes that provide transportation. Criterion: Delivery and load. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d074",
+              "text": {
+                "ru": "Рисование сигнальных связей. Правило: Соединить датчики, переключатели и исполнители для нужной реакции. Критерий: Логика сигнала. Статус примера: Проектный паттерн.",
+                "en": "Drawing signal connections. Rule: Connect sensors, switches and actuators for the desired reaction. Criterion: Signal logic. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d075",
+              "text": {
+                "ru": "Рисование направляющих света. Правило: Нанести отражающие или проводящие линии, доставляющие свет в приёмники. Критерий: Оптический путь. Статус примера: Проектный паттерн.",
+                "en": "Drawing light guides. Rule: Draw reflective or conducting lines that deliver light to the receivers. Criterion: Optical path. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g09",
+      "section": "section-1",
+      "title": {
+        "ru": "Изменение свойств мира",
+        "en": "Changing World Properties"
+      },
+      "description": {
+        "ru": "Краска или штрих меняют правила поведения существующей поверхности или объекта.",
+        "en": "A paint or stroke changes the rules of behavior of an existing surface or object."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://chicorygame.com/"],
+      "branches": [
+        {
+          "id": "family-g09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d076",
+              "text": {
+                "ru": "Активация краской. Правило: Закрасить объект или участок, чтобы включить его функцию. Критерий: Состояние объекта. Статус примера: С примером.",
+                "en": "Paint activation. Rule: Paint over an object or area to enable its function. Criterion: Condition of the object. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d077",
+              "text": {
+                "ru": "Раскрытие прохода краской. Правило: Нанести краску в нужном месте, чтобы получить доступ в новую область. Критерий: Доступность. Статус примера: С примером.",
+                "en": "Opening the paint passage. Rule: Apply paint in the right place to gain access to a new area. Criterion: Accessibility. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d078",
+              "text": {
+                "ru": "Нанесение скользкого покрытия. Правило: Изменить трение на выбранных участках поверхности. Критерий: Динамика движения. Статус примера: Проектный паттерн.",
+                "en": "Applying a slippery coating. Rule: Change friction on selected areas of the surface. Criterion: Dynamics of motion. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d079",
+              "text": {
+                "ru": "Нанесение липкого покрытия. Правило: Создать области прилипания или фиксации объектов. Критерий: Сцепление. Статус примера: Проектный паттерн.",
+                "en": "Applying a sticky coating. Rule: Create areas of sticking or fixation of objects. Criterion: Cohesion. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d080",
+              "text": {
+                "ru": "Нанесение упругого покрытия. Правило: Превратить выбранную поверхность в источник отскока. Критерий: Импульс. Статус примера: Проектный паттерн.",
+                "en": "Application of elastic coating. Rule: Turn the selected surface into a source of rebound. Criteria: Impulse. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d081",
+              "text": {
+                "ru": "Рисование опасной зоны. Правило: Нанести материал, который наносит урон или делает участок непроходимым. Критерий: Опасность. Статус примера: Проектный паттерн.",
+                "en": "Drawing a danger zone. Rule: Apply material that causes damage or makes the area impassable. Criterion: Danger. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d082",
+              "text": {
+                "ru": "Рисование плодородия и роста. Правило: Отметить места, где появляются или растут растения. Критерий: Развитие среды. Статус примера: Проектный паттерн.",
+                "en": "Drawing fertility and growth. Rule: Mark the places where plants appear or grow. Criterion: Development of the environment. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d083",
+              "text": {
+                "ru": "Рисование поля сил. Правило: Задать штрихом область и направление действия притяжения, отталкивания или иной силы. Критерий: Векторное поле. Статус примера: Проектный паттерн.",
+                "en": "Drawing a field of forces. Rule: Set with a stroke the area and direction of attraction, repulsion or other force. Criterion: Vector field. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d084",
+              "text": {
+                "ru": "Стирание материи. Правило: Удалить штрихами часть игровой геометрии, создав проход или изменив конструкцию. Критерий: Изменение геометрии. Статус примера: Проектный паттерн.",
+                "en": "Erasing matter. Rule: Remove part of the game geometry with strokes, creating a passage or changing the design. Criterion: Changing the geometry. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d085",
+              "text": {
+                "ru": "Восстановление объекта дорисовкой. Правило: Дорисовать отсутствующую часть игрового объекта, восстановив его функцию. Критерий: Работоспособность объекта. Статус примера: Проектный паттерн.",
+                "en": "Restoring an object by completing the drawing. Rule: Complete the missing part of the game object, restoring its function. Criterion: Operability of the object. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d086",
+              "text": {
+                "ru": "Цвет как переключатель правил. Правило: Перекрасить объект в цвет, определяющий его принадлежность, взаимодействия или поведение. Критерий: Цветовое состояние. Статус примера: Проектный паттерн.",
+                "en": "Color is like a rule switch. Rule: Recolor an object in a color that determines its identity, interaction, or behavior. Criterion: Color state. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g10",
+      "section": "section-1",
+      "title": {
+        "ru": "Захват и раздел пространства",
+        "en": "Claiming and dividing space"
+      },
+      "description": {
+        "ru": "Нарисованная граница меняет принадлежность, доступность или состояние области.",
+        "en": "A drawn boundary changes the ownership, accessibility, or state of an area."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d087",
+              "text": {
+                "ru": "Захват замкнутой территории. Правило: Замкнуть линию и присоединить ограниченную ей площадь. Критерий: Площадь владения. Статус примера: Проектный паттерн.",
+                "en": "Capture of a closed territory. Rule: Close the line and attach the area limited to it. Criterion: Ownership area. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d088",
+              "text": {
+                "ru": "Присоединение следа к базе. Правило: Выйти за свою территорию и вернуть линию в неё, завершив захват. Критерий: Замыкание и риск. Статус примера: Проектный паттерн.",
+                "en": "Attaching a trace to the base. Rule: Go out of your territory and return the line to it, completing the capture. Criterion: Closure and risk. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d089",
+              "text": {
+                "ru": "Поимка обводкой. Правило: Окружить движущуюся цель замкнутой линией для захвата. Критерий: Попадание внутрь. Статус примера: Проектный паттерн.",
+                "en": "Catching by dribbling. Rule: Surround a moving target with a closed line to capture. Criteria: Hit inside. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d090",
+              "text": {
+                "ru": "Изоляция объектов. Правило: Разделить пространство так, чтобы опасные и защищаемые объекты оказались по разные стороны. Критерий: Разделение. Статус примера: Проектный паттерн.",
+                "en": "Isolation of objects. Rule: Divide the space so that dangerous and protected objects are on opposite sides. Criterion: Separation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d091",
+              "text": {
+                "ru": "Удержание окрашенной территории. Правило: Сохранять контроль над площадью, которую соперники могут перекрашивать. Критерий: Контроль во времени. Статус примера: Проектный паттерн.",
+                "en": "Holding the painted area. Rule: Maintain control of the area, which opponents can repaint. Criterion: Time control. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d092",
+              "text": {
+                "ru": "Прокладка границы безопасности. Правило: Обозначить контур, который меняет доступ существ или распространение угрозы. Критерий: Проницаемость границы. Статус примера: Проектный паттерн.",
+                "en": "Laying a safety boundary. Rule: Designate a contour that changes the access of creatures or the spread of a threat. Criterion: Permeability of the boundary. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g11",
+      "section": "section-1",
+      "title": {
+        "ru": "Бой и защита штрихами",
+        "en": "Combat and defense with strokes"
+      },
+      "description": {
+        "ru": "Положение, направление или завершение линии непосредственно определяют боевое действие.",
+        "en": "The position, direction or completion of the line directly determines the combat action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d093",
+              "text": {
+                "ru": "Атака разрезающим штрихом. Правило: Провести атакующую линию через допустимые цели. Критерий: Пересечение цели. Статус примера: Проектный паттерн.",
+                "en": "Slash attack. Rule: Pass the attacking line through valid targets. Criteria: Crossing the target. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d094",
+              "text": {
+                "ru": "Комбо одним росчерком. Правило: Задеть несколько целей непрерывной линией в нужном порядке. Критерий: Порядок попаданий. Статус примера: Проектный паттерн.",
+                "en": "Combo with one stroke. Rule: Hit several targets with a continuous line in the desired order. Criterion: Order of hits. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d095",
+              "text": {
+                "ru": "Удар по нарисованному контуру. Правило: Обозначить форму или границу будущей зоны поражения. Критерий: Площадь поражения. Статус примера: Проектный паттерн.",
+                "en": "Hit along the drawn outline. Rule: Designate the shape or boundary of the future affected area. Criterion: Damage area. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d096",
+              "text": {
+                "ru": "Нарисованная стена. Правило: Поставить линию, блокирующую движение противников. Критерий: Блокирование. Статус примера: Проектный паттерн.",
+                "en": "Painted wall. Rule: Place a line blocking the movement of opponents. Criterion: Blocking. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d097",
+              "text": {
+                "ru": "Нарисованный щит. Правило: Создать барьер для перехвата атаки до её попадания в цель. Критерий: Перехват. Статус примера: Проектный паттерн.",
+                "en": "Painted shield. Rule: Create a barrier to intercept an attack before it hits the target. Criterion: Interception. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d098",
+              "text": {
+                "ru": "Отражение штрихом. Правило: Поставить отражающую линию с нужным углом и моментом появления. Критерий: Угол и время. Статус примера: Проектный паттерн.",
+                "en": "Reflection with a stroke. Rule: Place a reflective line with the desired angle and moment of appearance. Criterion: Angle and time. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d099",
+              "text": {
+                "ru": "Связывание противника. Правило: Обвести или перечеркнуть цель по правилу, ограничивающему её движение. Критерий: Контроль цели. Статус примера: Проектный паттерн.",
+                "en": "Tying up the enemy. Rule: Circle or cross out the target according to the rule that limits its movement. Criterion: Target control. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d100",
+              "text": {
+                "ru": "Рисование ловушки. Правило: Создать срабатывающий при контакте контур или знак. Критерий: Условие срабатывания. Статус примера: Проектный паттерн.",
+                "en": "Drawing a trap. Rule: Create a contour or sign that triggers on contact. Criteria: Trigger condition. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d101",
+              "text": {
+                "ru": "Разрушение вражеского рисунка. Правило: Стереть или разорвать штрихи, на которых держится чужая атака либо защита. Критерий: Нарушение структуры. Статус примера: Проектный паттерн.",
+                "en": "Destruction of the enemy pattern. Rule: Erase or break the strokes on which someone else’s attack or defense rests. Criterion: Violation of the structure. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g12",
+      "section": "section-1",
+      "title": {
+        "ru": "Знаки, магия и распознавание",
+        "en": "Signs, magic and recognition"
+      },
+      "description": {
+        "ru": "Игра интерпретирует нарисованное как знак, объект или последовательность команд.",
+        "en": "The game interprets what is drawn as a sign, an object, or a sequence of commands."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/248650/Draw_a_Stickman_EPIC/",
+        "https://quickdraw.withgoogle.com/"
+      ],
+      "branches": [
+        {
+          "id": "family-g12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d102",
+              "text": {
+                "ru": "Рисование распознаваемой руны. Правило: Воспроизвести знак, который игра распознаёт как команду или заклинание. Критерий: Класс символа. Статус примера: Проектный паттерн.",
+                "en": "Drawing a recognizable rune. Rule: Play a character that the game recognizes as a command or spell. Criteria: Character class. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d103",
+              "text": {
+                "ru": "Составление заклинания. Правило: Нарисовать последовательность знаков, комбинирующую эффекты. Критерий: Состав и порядок. Статус примера: Проектный паттерн.",
+                "en": "Casting a spell. Rule: Draw a sequence of characters that combines effects. Criterion: Composition and order. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d104",
+              "text": {
+                "ru": "Магический жест в контексте. Правило: Нарисовать знак над подходящим объектом, чтобы применить к нему действие. Критерий: Знак и контекст. Статус примера: Проектный паттерн.",
+                "en": "Magic gesture in context. Rule: Draw a sign over a suitable object to apply an action to it. Criteria: Sign and context. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d105",
+              "text": {
+                "ru": "Призыв предмета рисунком. Правило: Изобразить предмет, после чего игра распознаёт его класс и создаёт соответствующую сущность. Критерий: Класс объекта. Статус примера: Проектный паттерн.",
+                "en": "Summoning an object with a drawing. Rule: Draw an object, after which the game recognizes its class and creates the corresponding entity. Criterion: Object class. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d106",
+              "text": {
+                "ru": "Рисование элементального эффекта. Правило: Нарисовать огонь, облако или другой предусмотренный образ для изменения ситуации. Критерий: Смысл образа. Статус примера: С примером.",
+                "en": "Drawing an elemental effect. Rule: Draw a fire, cloud or other intended image to change the situation. Criterion: The meaning of the image. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d107",
+              "text": {
+                "ru": "Рисование для распознавателя. Правило: Изобразить заданное понятие так, чтобы его успела узнать система распознавания. Критерий: Машинная узнаваемость. Статус примера: С примером.",
+                "en": "Drawing for the recognizer. Rule: Depict a given concept so that the recognition system can recognize it. Criterion: Machine recognizability. Example status: With example."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g13",
+      "section": "section-1",
+      "title": {
+        "ru": "Информация, видимость и исследование",
+        "en": "Information, visibility and exploration"
+      },
+      "description": {
+        "ru": "Штрих помогает увидеть, зафиксировать или интерпретировать сведения об игровом мире.",
+        "en": "The stroke helps to see, record, or interpret information about the game world."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d108",
+              "text": {
+                "ru": "Проявление скрытой геометрии. Правило: Нанести краску на невидимую поверхность и узнать её форму. Критерий: Полученная информация. Статус примера: Проектный паттерн.",
+                "en": "Revealing hidden geometry. Rule: Apply paint to an invisible surface and find out its shape. Criterion: Information received. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d109",
+              "text": {
+                "ru": "Стирание верхнего слоя. Правило: Расчистить покрытие, чтобы открыть расположенное под ним изображение. Критерий: Раскрытая область. Статус примера: Проектный паттерн.",
+                "en": "Erasing the top layer. Rule: Clear the cover to reveal the image underneath. Criterion: Revealed area. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d110",
+              "text": {
+                "ru": "Светящийся след. Правило: Провести линию, освещающую нужные места или сохраняющую ориентир в темноте. Критерий: Видимость. Статус примера: Проектный паттерн.",
+                "en": "Glowing trail. Rule: Draw a line that illuminates the required places or maintains a landmark in the dark. Criterion: Visibility. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d111",
+              "text": {
+                "ru": "Картографирование от руки. Правило: Нарисовать собственную карту по наблюдениям и использовать её для навигации. Критерий: Полезность модели. Статус примера: Проектный паттерн.",
+                "en": "Mapping by hand. Rule: Draw your own map based on observations and use it for navigation. Criterion: Usefulness of the model. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d112",
+              "text": {
+                "ru": "Пометки в расследовании. Правило: Отмечать на изображении улики, связи или подозрительные области. Критерий: Корректность аннотации. Статус примера: Проектный паттерн.",
+                "en": "Notes in the investigation. Rule: Mark evidence, connections or suspicious areas in the image. Criterion: Correctness of the annotation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d113",
+              "text": {
+                "ru": "Восстановление события схемой. Правило: Нарисовать расположение участников или их перемещения как ответ на задачу. Критерий: Соответствие уликам. Статус примера: Проектный паттерн.",
+                "en": "Restoring an event using a circuit. Rule: Draw the location of the participants or their movements as an answer to the problem. Criterion: Correspondence to the evidence. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d114",
+              "text": {
+                "ru": "Проверка гипотезы дорисовкой. Правило: Добавить предполагаемую деталь и проверить, согласуется ли она с остальными сведениями. Критерий: Согласованность. Статус примера: Проектный паттерн.",
+                "en": "Testing the hypothesis by drawing. Rule: Add a suspected detail and check if it is consistent with the rest of the information. Criterion: Consistency. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d115",
+              "text": {
+                "ru": "Камуфляж рисунком. Правило: Нанести узор, уменьшающий заметность объекта для предусмотренного игрой наблюдателя. Критерий: Обнаружимость. Статус примера: Проектный паттерн.",
+                "en": "Camouflage pattern. Rule: Apply a pattern that reduces the visibility of the object for the observer provided by the game. Criterion: Detectability. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d116",
+              "text": {
+                "ru": "Рисованные следы и приманки. Правило: Нанести заметный след или метку, на которую реагируют управляемые игрой существа. Критерий: Реакция агента. Статус примера: Проектный паттерн.",
+                "en": "Drawn tracks and lures. Rule: Place a noticeable mark or mark to which creatures controlled by the game react. Criterion: Agent reaction. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g14",
+      "section": "section-1",
+      "title": {
+        "ru": "Общение и передача смысла",
+        "en": "Communication and conveying meaning"
+      },
+      "description": {
+        "ru": "Рисунок передаёт понятие, историю, инструкцию или отношение другому участнику либо игровому персонажу.",
+        "en": "A drawing conveys a concept, story, instruction, or attitude to another participant or game character."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://garticphone.com/"],
+      "branches": [
+        {
+          "id": "family-g14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d117",
+              "text": {
+                "ru": "Угадывание рисунка. Правило: Нарисовать загаданное понятие, которое должны назвать другие игроки. Критерий: Человеческая узнаваемость. Статус примера: Проектный паттерн.",
+                "en": "Guessing the picture. Rule: Draw a hidden concept that other players must name. Criterion: Human recognizability. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d118",
+              "text": {
+                "ru": "Передача инструкции рисунком. Правило: Показать партнёру действие или порядок действий без слов. Критерий: Выполнение инструкции. Статус примера: Проектный паттерн.",
+                "en": "Conveying instructions with a drawing. Rule: Show your partner an action or procedure without words. Criterion: Follow the instructions. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d119",
+              "text": {
+                "ru": "Рисование по устному описанию. Правило: Воссоздать изображение, видимое только описывающему партнёру. Критерий: Совпадение представлений. Статус примера: Проектный паттерн.",
+                "en": "Drawing from an oral description. Rule: Recreate an image visible only to the describing partner. Criterion: Coincidence of ideas. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d120",
+              "text": {
+                "ru": "Рисунок по тексту и текст по рисунку. Правило: Поочерёдно переводить сообщение между изображением и описанием. Критерий: Передача и искажение смысла. Статус примера: С примером.",
+                "en": "Drawing from text and text from drawing. Rule: Alternately translate the message between the image and description. Criterion: Transmission and distortion of meaning. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d121",
+              "text": {
+                "ru": "Визуальные ассоциации. Правило: Создать изображение, связывающее несколько понятий или вызывающее нужную ассоциацию. Критерий: Интерпретация. Статус примера: Проектный паттерн.",
+                "en": "Visual associations. Rule: Create an image that connects several concepts or evokes the desired association. Criterion: Interpretation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d122",
+              "text": {
+                "ru": "Изображение эмоции. Правило: Передать рисунком настроение, отношение или состояние персонажа. Критерий: Интерпретация. Статус примера: Проектный паттерн.",
+                "en": "Image of emotion. Rule: Convey the mood, attitude or state of the character with a drawing. Criterion: Interpretation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d123",
+              "text": {
+                "ru": "Рассказ в рисунках. Правило: Создать последовательность изображений, из которой другие восстанавливают историю. Критерий: Понятность повествования. Статус примера: Проектный паттерн.",
+                "en": "A story in pictures. Rule: Create a sequence of images from which others reconstruct the story. Criterion: Narrative clarity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d124",
+              "text": {
+                "ru": "Рисованный ответ персонажу. Правило: Выразить просьбу, решение или отношение изображением, которое учитывает собеседник в игре. Критерий: Реакция собеседника. Статус примера: Проектный паттерн.",
+                "en": "A hand-drawn response to the character. Rule: Express a request, decision or attitude with an image that is taken into account by the interlocutor in the game. Criterion: Reaction of the interlocutor. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d125",
+              "text": {
+                "ru": "Пиктографический язык. Правило: Создать и использовать устойчивые рисованные знаки для общения. Критерий: Согласованность языка. Статус примера: Проектный паттерн.",
+                "en": "Pictographic language. Rule: Create and use consistent hand-drawn signs to communicate. Criterion: Consistency of language. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g15",
+      "section": "section-1",
+      "title": {
+        "ru": "Обман, скрытая роль и атрибуция",
+        "en": "Deception, Hidden Role, and Attribution"
+      },
+      "description": {
+        "ru": "Рисунок используется как улика, маскировка либо средство введения в заблуждение.",
+        "en": "The drawing is used as evidence, disguise or a means of misleading."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.jackboxgames.com/blog/fun-multiplayer-drawing-games-you-need-to-play",
+        "https://www.jackboxgames.com/blog/rules-strategies-weapons-drawn"
+      ],
+      "branches": [
+        {
+          "id": "family-g15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d126",
+              "text": {
+                "ru": "Ложные подписи к рисунку. Правило: Придумать правдоподобную неверную подпись и убедить других выбрать её. Критерий: Убедительность обмана. Статус примера: С примером.",
+                "en": "False captions for the drawing. Rule: Come up with a plausible false signature and convince others to choose it. Criterion: Persuasiveness of the deception. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d127",
+              "text": {
+                "ru": "Сокрытие обязательного знака. Правило: Встроить опознаватель в рисунок так, чтобы его было трудно обнаружить. Критерий: Заметность улики. Статус примера: С примером.",
+                "en": "Hiding a mandatory sign. Rule: Integrate the identification into the drawing so that it is difficult to detect. Criterion: Visibility of the evidence. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d128",
+              "text": {
+                "ru": "Определение автора по рисунку. Правило: Связать изображение с игроком по стилю или повторяющимся признакам. Критерий: Атрибуция. Статус примера: С примером.",
+                "en": "Identification of the author from the drawing. Rule: Associate the image with the player by style or repeating characteristics. Criteria: Attribution. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d129",
+              "text": {
+                "ru": "Рисование без знания темы. Правило: Рисовать вместе с осведомлёнными игроками, пытаясь скрыть отсутствие исходной информации. Критерий: Сокрытие роли. Статус примера: Проектный паттерн.",
+                "en": "Drawing without knowledge of the topic. Rule: Draw together with knowledgeable players, trying to hide the lack of background information. Criterion: Hiding the role. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d130",
+              "text": {
+                "ru": "Рисованная провокация. Правило: Нарисовать приманку или ложный ориентир, вынуждающий соперника ошибиться. Критерий: Реакция соперника. Статус примера: Проектный паттерн.",
+                "en": "A drawn provocation. Rule: Draw a decoy or false landmark that forces the opponent to make a mistake. Criterion: Opponent's reaction. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d131",
+              "text": {
+                "ru": "Подделка визуального стиля. Правило: Имитировать чужие особенности рисунка, чтобы повлиять на определение авторства. Критерий: Ошибочная атрибуция. Статус примера: Проектный паттерн.",
+                "en": "Fake visual style. Rule: Imitate someone else's design features to influence the attribution. Criterion: Misattribution. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g16",
+      "section": "section-1",
+      "title": {
+        "ru": "Совместное и соревновательное создание",
+        "en": "Collaborative and competitive creation"
+      },
+      "description": {
+        "ru": "Рисунок возникает в результате взаимодействия нескольких участников.",
+        "en": "A drawing arises as a result of the interaction of several participants."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://chicorygame.com/"],
+      "branches": [
+        {
+          "id": "family-g16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d132",
+              "text": {
+                "ru": "Общий холст. Правило: Одновременно рисовать на одной поверхности, согласуя вклад участников. Критерий: Совместный результат. Статус примера: С примером.",
+                "en": "General canvas. Rule: Draw on the same surface at the same time, coordinating the contributions of the participants. Criterion: Joint result. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d133",
+              "text": {
+                "ru": "Поочерёдная дорисовка. Правило: Передавать изображение между игроками, каждый из которых добавляет часть. Критерий: Развитие изображения. Статус примера: Проектный паттерн.",
+                "en": "Alternate finishing. Rule: Pass the image between players, each of whom adds a part. Criterion: Development of the image. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d134",
+              "text": {
+                "ru": "Рисунок со скрытыми частями. Правило: Создавать отдельные фрагменты, не видя всей работы, а затем соединять их. Критерий: Совместимость фрагментов. Статус примера: Проектный паттерн.",
+                "en": "Drawing with hidden parts. Rule: Create separate fragments without seeing the whole work, and then connect them. Criterion: Compatibility of fragments. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d135",
+              "text": {
+                "ru": "Разделённое управление кистью. Правило: Распределить между игроками координаты, движение, цвет или нанесение краски. Критерий: Координация. Статус примера: Проектный паттерн.",
+                "en": "Separated brush control. Rule: Distribute coordinates, movement, color or paint application between players. Criterion: Coordination. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d136",
+              "text": {
+                "ru": "Рисование и саботаж. Правило: Одни участники создают или восстанавливают рисунок, другие стараются помешать. Критерий: Прогресс сторон. Статус примера: Проектный паттерн.",
+                "en": "Drawing and sabotage. Rule: Some participants create or restore the drawing, others try to interfere. Criterion: Progress of the parties. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d137",
+              "text": {
+                "ru": "Соревнование интерпретаций. Правило: Изобразить одну тему разными способами, после чего сравнить работы по явным правилам или голосованию. Критерий: Сравнительная оценка. Статус примера: Проектный паттерн.",
+                "en": "Competition of interpretations. Rule: Depict one topic in different ways, then compare works using explicit rules or voting. Criterion: Comparative assessment. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d138",
+              "text": {
+                "ru": "Дуэль рисуемых созданий. Правило: Нарисовать соперничающие сущности и определить победителя по голосованию либо заданным игровым параметрам. Критерий: Исход сравнения. Статус примера: Проектный паттерн.",
+                "en": "Duel of drawn creatures. Rule: Draw competing entities and determine the winner by voting or given game parameters. Criterion: The outcome of the comparison. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g17",
+      "section": "section-1",
+      "title": {
+        "ru": "Анимация, звук и время",
+        "en": "Animation, sound and timing"
+      },
+      "description": {
+        "ru": "Штрихи задают изменение изображения или процесса во времени.",
+        "en": "Strokes indicate changes in an image or process over time."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.jackboxgames.com/games/drawful-animate"],
+      "branches": [
+        {
+          "id": "family-g17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d139",
+              "text": {
+                "ru": "Покадровая анимация. Правило: Нарисовать последовательность кадров и получить воспринимаемое движение. Критерий: Связность движения. Статус примера: С примером.",
+                "en": "Stop-motion animation. Rule: Draw a sequence of frames and obtain perceived movement. Criterion: Coherence of movement. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d140",
+              "text": {
+                "ru": "Зацикленная анимация. Правило: Создать кадры, образующие повторяющийся цикл. Критерий: Целостность цикла. Статус примера: С примером.",
+                "en": "Looping animation. Rule: Create frames that form a repeating cycle. Criterion: Integrity of the cycle. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d141",
+              "text": {
+                "ru": "Дорисовка следующего кадра. Правило: Продолжить движение по предыдущему кадру, сохранив узнаваемость объекта. Критерий: Непрерывность. Статус примера: Проектный паттерн.",
+                "en": "Finishing the next frame. Rule: Continue movement along the previous frame, maintaining the recognition of the object. Criterion: Continuity. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d142",
+              "text": {
+                "ru": "Морфинг рисунка. Правило: Нарисовать состояния и переходы, превращающие один образ в другой. Критерий: Преобразование. Статус примера: Проектный паттерн.",
+                "en": "Morphing the picture. Rule: Draw states and transitions that transform one image into another. Criterion: Transformation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d143",
+              "text": {
+                "ru": "Рисование музыкальной фразы. Правило: Задать высоту, длительность или громкость звука положением и формой штриха. Критерий: Звуковой результат. Статус примера: Проектный паттерн.",
+                "en": "Drawing a musical phrase. Rule: Set the height, duration or volume of the sound by the position and shape of the stroke. Criterion: Sound result. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d144",
+              "text": {
+                "ru": "Рисование партитуры событий. Правило: Расположить штрихи на временной шкале, определив моменты игровых действий. Критерий: Последовательность событий. Статус примера: Проектный паттерн.",
+                "en": "Drawing the score of events. Rule: Arrange strokes on the timeline, defining the moments of game actions. Criterion: Sequence of events. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d145",
+              "text": {
+                "ru": "Рисование как воспроизводимая программа. Правило: Создать систему штрихов и знаков, которая задаёт правила автоматически исполняемого процесса. Критерий: Поведение программы. Статус примера: Проектный паттерн.",
+                "en": "Drawing as a reproducible program. Rule: Create a system of strokes and signs that sets the rules for an automatically executed process. Criterion: Program behavior. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g18",
+      "section": "section-1",
+      "title": {
+        "ru": "Заказы, оценка и экономика художника",
+        "en": "Commissions, assessment and the artist's economy"
+      },
+      "description": {
+        "ru": "Рисунок включён в цикл требований, оценки, продажи и развития.",
+        "en": "The drawing is included in the cycle of requirements, evaluation, sales and development."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1469280/SuchArt/",
+        "https://store.steampowered.com/app/582550/Passpartout_The_Starving_Artist/"
+      ],
+      "branches": [
+        {
+          "id": "family-g18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-d146",
+              "text": {
+                "ru": "Выполнение художественного заказа. Правило: Создать рисунок под требования заказчика и получить предусмотренную награду. Критерий: Соответствие заказу. Статус примера: С примером.",
+                "en": "Fulfillment of an artistic order. Rule: Create a drawing according to the customer’s requirements and receive the provided reward. Criterion: Compliance with the order. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d147",
+              "text": {
+                "ru": "Продажа собственных картин. Правило: Рисовать произведения и продавать их, поддерживая игровую экономику. Критерий: Продажа и доход. Статус примера: С примером.",
+                "en": "Selling your own paintings. Rule: Draw works and sell them, supporting the game economy. Criterion: Sales and income. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d148",
+              "text": {
+                "ru": "Работа под вкусы аудитории. Правило: Подстраивать рисунки под предпочтения разных покупателей или групп. Критерий: Реакция аудитории. Статус примера: С примером.",
+                "en": "Work according to the tastes of the audience. Rule: Adjust drawings to the preferences of different customers or groups. Criterion: Audience reaction. Example status: With example."
+              }
+            },
+            {
+              "id": "variant-d149",
+              "text": {
+                "ru": "Аукцион рисунков. Правило: Создавать работы, оценивать их предполагаемую ценность и участвовать в торгах. Критерий: Цена и оценка. Статус примера: Проектный паттерн.",
+                "en": "Auction of drawings. Rule: Create works, evaluate their estimated value and participate in bidding. Criterion: Price and evaluation. Example status: Design pattern."
+              }
+            },
+            {
+              "id": "variant-d150",
+              "text": {
+                "ru": "Выставка и репутация. Правило: Отбирать и представлять свои рисунки, чтобы получить отзывы, доступ или рост репутации. Критерий: Оценка и развитие. Статус примера: Проектный паттерн.",
+                "en": "Exhibition and reputation. Rule: Select and submit your drawings to gain feedback, access or reputation growth. Criterion: Evaluation and development. Example status: Design pattern."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Модификаторы",
+        "en": "Modifiers"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "Лимит общей длины линии",
+            "en": "Total line length limit"
+          },
+          "text": {
+            "ru": "Параметр: Ресурсы",
+            "en": "Parameter: Resources"
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "Лимит площади закраски",
+            "en": "Paint area limit"
+          },
+          "text": {
+            "ru": "Параметр: Ресурсы",
+            "en": "Parameter: Resources"
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "Лимит числа штрихов",
+            "en": "Stroke limit"
+          },
+          "text": {
+            "ru": "Параметр: Ресурсы",
+            "en": "Parameter: Resources"
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "Ограниченный запас чернил и перезаправка",
+            "en": "Limited ink supply and refills"
+          },
+          "text": {
+            "ru": "Параметр: Ресурсы",
+            "en": "Parameter: Resources"
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "Ограниченная палитра",
+            "en": "Limited palette"
+          },
+          "text": {
+            "ru": "Параметр: Ресурсы",
+            "en": "Parameter: Resources"
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "Один росчерк без отрыва",
+            "en": "One stroke without interruption"
+          },
+          "text": {
+            "ru": "Параметр: Непрерывность",
+            "en": "Parameter: Continuity"
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "Запрет или разрешение самопересечений",
+            "en": "Prohibiting or allowing self-intersections"
+          },
+          "text": {
+            "ru": "Параметр: Непрерывность",
+            "en": "Parameter: Continuity"
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "Обязательное замыкание контура",
+            "en": "Mandatory loop closure"
+          },
+          "text": {
+            "ru": "Параметр: Непрерывность",
+            "en": "Parameter: Continuity"
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "Заданный порядок штрихов",
+            "en": "Specified stroke order"
+          },
+          "text": {
+            "ru": "Параметр: Непрерывность",
+            "en": "Parameter: Continuity"
+          }
+        },
+        {
+          "id": "note-1-entry-10",
+          "title": {
+            "ru": "Запрет стирания и отмены",
+            "en": "Prohibition of erasure and cancellation"
+          },
+          "text": {
+            "ru": "Параметр: Непрерывность",
+            "en": "Parameter: Continuity"
+          }
+        },
+        {
+          "id": "note-1-entry-11",
+          "title": {
+            "ru": "Общий таймер",
+            "en": "General timer"
+          },
+          "text": {
+            "ru": "Параметр: Время",
+            "en": "Parameter: Time"
+          }
+        },
+        {
+          "id": "note-1-entry-12",
+          "title": {
+            "ru": "Рисование одновременно с движением мира",
+            "en": "Drawing at the same time as the world moves"
+          },
+          "text": {
+            "ru": "Параметр: Время",
+            "en": "Parameter: Time"
+          }
+        },
+        {
+          "id": "note-1-entry-13",
+          "title": {
+            "ru": "Пауза мира на время рисования",
+            "en": "Pause the world while drawing"
+          },
+          "text": {
+            "ru": "Параметр: Время",
+            "en": "Parameter: Time"
+          }
+        },
+        {
+          "id": "note-1-entry-14",
+          "title": {
+            "ru": "Отложенное применение готового рисунка",
+            "en": "Delayed application of a finished drawing"
+          },
+          "text": {
+            "ru": "Параметр: Время",
+            "en": "Parameter: Time"
+          }
+        },
+        {
+          "id": "note-1-entry-15",
+          "title": {
+            "ru": "Исчезающие со временем линии",
+            "en": "Lines that disappear over time"
+          },
+          "text": {
+            "ru": "Параметр: Время",
+            "en": "Parameter: Time"
+          }
+        },
+        {
+          "id": "note-1-entry-16",
+          "title": {
+            "ru": "Инерция или дрожание инструмента",
+            "en": "Inertia or tool vibration"
+          },
+          "text": {
+            "ru": "Параметр: Управление",
+            "en": "Parameter: Control"
+          }
+        },
+        {
+          "id": "note-1-entry-17",
+          "title": {
+            "ru": "Зеркальные или повёрнутые координаты",
+            "en": "Mirrored or rotated coordinates"
+          },
+          "text": {
+            "ru": "Параметр: Управление",
+            "en": "Parameter: Control"
+          }
+        },
+        {
+          "id": "note-1-entry-18",
+          "title": {
+            "ru": "Связанные или симметричные кисти",
+            "en": "Linked or symmetrical brushes"
+          },
+          "text": {
+            "ru": "Параметр: Управление",
+            "en": "Parameter: Control"
+          }
+        },
+        {
+          "id": "note-1-entry-19",
+          "title": {
+            "ru": "Нажим, наклон и скорость инструмента",
+            "en": "Tool pressure, tilt and speed"
+          },
+          "text": {
+            "ru": "Параметр: Управление",
+            "en": "Parameter: Control"
+          }
+        },
+        {
+          "id": "note-1-entry-20",
+          "title": {
+            "ru": "Ограниченная длина движения руки или курсора",
+            "en": "Limited length of hand or cursor movement"
+          },
+          "text": {
+            "ru": "Параметр: Управление",
+            "en": "Parameter: Control"
+          }
+        },
+        {
+          "id": "note-1-entry-21",
+          "title": {
+            "ru": "Скрытый или кратковременно видимый образец",
+            "en": "Hidden or briefly visible pattern"
+          },
+          "text": {
+            "ru": "Параметр: Информация",
+            "en": "Parameter: Information"
+          }
+        },
+        {
+          "id": "note-1-entry-22",
+          "title": {
+            "ru": "Ограниченный обзор холста",
+            "en": "Limited view of the canvas"
+          },
+          "text": {
+            "ru": "Параметр: Информация",
+            "en": "Parameter: Information"
+          }
+        },
+        {
+          "id": "note-1-entry-23",
+          "title": {
+            "ru": "Невидимая линия до завершения",
+            "en": "The invisible line to completion"
+          },
+          "text": {
+            "ru": "Параметр: Информация",
+            "en": "Parameter: Information"
+          }
+        },
+        {
+          "id": "note-1-entry-24",
+          "title": {
+            "ru": "Частная информация у разных игроков",
+            "en": "Private information from different players"
+          },
+          "text": {
+            "ru": "Параметр: Информация",
+            "en": "Parameter: Information"
+          }
+        },
+        {
+          "id": "note-1-entry-25",
+          "title": {
+            "ru": "Промежуточные догадки распознавателя",
+            "en": "Recognizer's intermediate guesses"
+          },
+          "text": {
+            "ru": "Параметр: Информация",
+            "en": "Parameter: Information"
+          }
+        },
+        {
+          "id": "note-1-entry-26",
+          "title": {
+            "ru": "Подвижная или деформируемая поверхность",
+            "en": "Movable or deformable surface"
+          },
+          "text": {
+            "ru": "Параметр: Условия",
+            "en": "Parameter: Conditions"
+          }
+        },
+        {
+          "id": "note-1-entry-27",
+          "title": {
+            "ru": "Запрещённые зоны и обязательные точки",
+            "en": "Prohibited areas and mandatory points"
+          },
+          "text": {
+            "ru": "Параметр: Условия",
+            "en": "Parameter: Conditions"
+          }
+        },
+        {
+          "id": "note-1-entry-28",
+          "title": {
+            "ru": "Сетка, привязка и автоматическое сглаживание",
+            "en": "Grid, snapping and auto-smoothing"
+          },
+          "text": {
+            "ru": "Параметр: Условия",
+            "en": "Parameter: Conditions"
+          }
+        },
+        {
+          "id": "note-1-entry-29",
+          "title": {
+            "ru": "Разные материалы и типы линий",
+            "en": "Different materials and line types"
+          },
+          "text": {
+            "ru": "Параметр: Условия",
+            "en": "Parameter: Conditions"
+          }
+        },
+        {
+          "id": "note-1-entry-30",
+          "title": {
+            "ru": "Общее или раздельное пространство рисования",
+            "en": "Shared or separate drawing space"
+          },
+          "text": {
+            "ru": "Параметр: Условия",
+            "en": "Parameter: Conditions"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Пограничные случаи",
+        "en": "Borderline Cases"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "Раскраска по номерам",
+            "en": "Color by number"
+          },
+          "text": {
+            "ru": "Условия: Выбор цвета и заполнение размеченных областей; свободного штриха может не быть.",
+            "en": "Conditions: Selecting a color and filling the marked areas; there may not be a free stroke."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "Пиксельная живопись",
+            "en": "Pixel painting"
+          },
+          "text": {
+            "ru": "Условия: Рисунок создаётся закрашиванием отдельных клеток вместо непрерывных линий.",
+            "en": "Conditions: The drawing is created by painting individual cells instead of continuous lines."
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "Нонограммы и рисование по логическим подсказкам",
+            "en": "Nonograms and drawing using logical prompts"
+          },
+          "text": {
+            "ru": "Условия: Изображение возникает как результат решения логической задачи.",
+            "en": "Conditions: The image appears as a result of solving a logical problem."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "Графика черепашкой",
+            "en": "Turtle graphics"
+          },
+          "text": {
+            "ru": "Условия: Изображение строится командами исполнителю, а не непосредственным штрихом.",
+            "en": "Conditions: The image is built by commands to the performer, and not by direct strokes."
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "Коллаж, штампы и наклейки",
+            "en": "Collage, stamps and stickers"
+          },
+          "text": {
+            "ru": "Условия: Изображение собирается из готовых элементов.",
+            "en": "Conditions: The image is assembled from ready-made elements."
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "Граффити готовым спреем",
+            "en": "Graffiti ready spray"
+          },
+          "text": {
+            "ru": "Условия: Нанесение заранее созданной картинки отличается от рисования собственного изображения.",
+            "en": "Conditions: Drawing a pre-created image is different from drawing your own image."
+          }
+        },
+        {
+          "id": "note-2-entry-7",
+          "title": {
+            "ru": "Покраска выстрелами",
+            "en": "Painting shots"
+          },
+          "text": {
+            "ru": "Условия: Площадь меняется от попаданий оружия; свободная линия не обязательна.",
+            "en": "Conditions: The area changes due to weapon hits; a free line is not required."
+          }
+        },
+        {
+          "id": "note-2-entry-8",
+          "title": {
+            "ru": "Резка и вырезание",
+            "en": "Cutting and carving"
+          },
+          "text": {
+            "ru": "Условия: Траектория инструмента задаёт разрез; механика рисования появляется, если линия сама является решением.",
+            "en": "Conditions: The tool path defines the cut; the mechanics of drawing appear if the line itself is the solution."
+          }
+        },
+        {
+          "id": "note-2-entry-9",
+          "title": {
+            "ru": "Чистка и соскабливание",
+            "en": "Cleaning and scraping"
+          },
+          "text": {
+            "ru": "Условия: Движение раскрывает поверхность вместо нанесения изображения.",
+            "en": "Conditions: Movement reveals the surface instead of applying an image."
+          }
+        },
+        {
+          "id": "note-2-entry-10",
+          "title": {
+            "ru": "Лепка и воксельное моделирование",
+            "en": "Sculpting and voxel modeling"
+          },
+          "text": {
+            "ru": "Условия: Игрок формирует объём, а не изображение на поверхности.",
+            "en": "Conditions: The player forms a volume, not an image on the surface."
+          }
+        },
+        {
+          "id": "note-2-entry-11",
+          "title": {
+            "ru": "Рисование в объёме и VR",
+            "en": "Volumetric drawing and VR"
+          },
+          "text": {
+            "ru": "Условия: Штрихи располагаются в трёхмерном пространстве; это расширение рисования с пространственным вводом.",
+            "en": "Conditions: The strokes are located in three-dimensional space; This is a drawing extension with spatial input."
+          }
+        },
+        {
+          "id": "note-2-entry-12",
+          "title": {
+            "ru": "След движения и световая живопись",
+            "en": "Motion trace and light painting"
+          },
+          "text": {
+            "ru": "Условия: Изображение возникает из траектории тела или объекта; принадлежность к рисованию зависит от намерения и правил игры.",
+            "en": "Conditions: The image arises from the trajectory of the body or object; belonging to drawing depends on the intention and rules of the game."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Как читать каталог",
+        "en": "How to read the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Каждая запись связывает действие игрока с правилом интерпретации и результатом. Одинаковый жест может реализовывать разные механики: круг бывает рисунком, телом, областью захвата или распознаваемой командой. Разделы пересекаются: защитная стена относится и к физическому конструированию, и к бою. Это разные точки входа в поиск, а не утверждение о независимости всех записей.",
+            "en": "Each entry associates a player's action with an interpretation rule and an outcome. The same gesture can implement different mechanics: a circle can be a pattern, a body, a capture area, or a recognizable command. The sections overlap: the protective wall applies to both physical construction and combat. These are different entry points into the search, and not a statement about the independence of all records."
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверка может учитывать точность, узнаваемость, геометрию, результат симуляции, полезность решения, мнение другого игрока или экономический результат. В свободном творчестве обязательной внешней оценки может не быть. Игровые примеры подтверждают конкретно подписанное поведение, а не весь раздел и не любые возможные варианты.",
+            "en": "The check may consider accuracy, familiarity, geometry, simulation result, solution utility, another player's opinion, or economic outcome. In free creativity there may be no mandatory external assessment. Game examples confirm the specific behavior signed, and not the entire section or any possible options."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "SuchArt: Creative Space",
+        "en": "SuchArt: Creative Space"
+      },
+      "url": "https://store.steampowered.com/app/1469280/SuchArt/",
+      "description": {
+        "ru": "Свободная живопись на поверхностях, смешивание цветов, трафареты, заказы и продажа работ.",
+        "en": "Free painting on surfaces, mixing colors, stencils, orders and sale of works."
+      }
+    },
+    {
+      "title": {
+        "ru": "Drawful: правила серии",
+        "en": "Drawful: series rules"
+      },
+      "url": "https://www.jackboxgames.com/blog/fun-multiplayer-drawing-games-you-need-to-play",
+      "description": {
+        "ru": "Рисование по необычному заданию, ложные подписи и поиск настоящего задания.",
+        "en": "Drawing according to an unusual task, false signatures and searching for a real task."
+      }
+    },
+    {
+      "title": {
+        "ru": "Draw a Stickman: EPIC",
+        "en": "Draw a Stickman: EPIC"
+      },
+      "url": "https://store.steampowered.com/app/248650/Draw_a_Stickman_EPIC/",
+      "description": {
+        "ru": "Рисование героя, инструментов, оружия и эффектов, включая дождевое облако.",
+        "en": "Drawing of the hero, tools, weapons and effects, including a rain cloud."
+      }
+    },
+    {
+      "title": {
+        "ru": "Crayon Physics Deluxe",
+        "en": "Crayon Physics Deluxe"
+      },
+      "url": "https://store.steampowered.com/app/26900/Crayon_Physics_Deluxe/",
+      "description": {
+        "ru": "Превращение рисунков в физические тела; верёвки и шарниры.",
+        "en": "Transforming drawings into physical bodies; ropes and hinges."
+      }
+    },
+    {
+      "title": {
+        "ru": "Kirby and the Rainbow Curse: руководство",
+        "en": "Kirby and the Rainbow Curse Guide"
+      },
+      "url": "https://csassets.nintendo.com/noaext/image/private/t_KA_PDF/manual-WiiU-Kirby_Rainbow_Curse?_a=DATC1RAAZAA0",
+      "description": {
+        "ru": "Рисование радужной дорожки для управления перемещением Кирби.",
+        "en": "Drawing a rainbow path to control Kirby's movement."
+      }
+    },
+    {
+      "title": {
+        "ru": "Chicory: A Colorful Tale",
+        "en": "Chicory: A Colorful Tale"
+      },
+      "url": "https://chicorygame.com/",
+      "description": {
+        "ru": "Роспись мира, изменение окружения краской, доступ в новые места и совместное рисование.",
+        "en": "Painting the world, changing the environment with paint, accessing new places and painting together."
+      }
+    },
+    {
+      "title": {
+        "ru": "Quick, Draw!",
+        "en": "Quick, Draw!"
+      },
+      "url": "https://quickdraw.withgoogle.com/",
+      "description": {
+        "ru": "Игрок рисует заданное понятие, а нейросеть пытается распознать его за ограниченное время.",
+        "en": "The player draws a given concept, and the neural network tries to recognize it in a limited time."
+      }
+    },
+    {
+      "title": {
+        "ru": "Gartic Phone: How to play",
+        "en": "Gartic Phone: How to play"
+      },
+      "url": "https://garticphone.com/",
+      "description": {
+        "ru": "Чередование текста и рисунков в цепочке передачи сообщения.",
+        "en": "Alternation of text and pictures in the message transmission chain."
+      }
+    },
+    {
+      "title": {
+        "ru": "Weapons Drawn: правила и стратегии",
+        "en": "Weapons Drawn: Rules and Strategies"
+      },
+      "url": "https://www.jackboxgames.com/blog/rules-strategies-weapons-drawn",
+      "description": {
+        "ru": "Сокрытие буквы в рисунке и поиск автора по визуальным уликам и стилю.",
+        "en": "Hiding a letter in a drawing and finding the author using visual clues and style."
+      }
+    },
+    {
+      "title": {
+        "ru": "Drawful: Animate",
+        "en": "Drawful: Animate"
+      },
+      "url": "https://www.jackboxgames.com/games/drawful-animate",
+      "description": {
+        "ru": "Создание зацикленных двухкадровых анимаций по заданию.",
+        "en": "Creation of looped two-frame animations according to instructions."
+      }
+    },
+    {
+      "title": {
+        "ru": "Passpartout: The Starving Artist",
+        "en": "Passpartout: The Starving Artist"
+      },
+      "url": "https://store.steampowered.com/app/582550/Passpartout_The_Starving_Artist/",
+      "description": {
+        "ru": "Создание и продажа своих картин с учётом субъективных вкусов покупателей.",
+        "en": "Creation and sale of your paintings, taking into account the subjective tastes of buyers."
+      }
+    }
+  ]
+}

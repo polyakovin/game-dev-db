@@ -1,0 +1,1633 @@
+{
+  "id": "mouse",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Взаимодействие с мышью",
+    "en": "Mouse interactions"
+  },
+  "description": {
+    "ru": "Взаимодействие с мышью: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Mouse interaction: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Ввод и жесты",
+        "en": "Input and gestures"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Прикладные механики",
+        "en": "Applied Mechanics"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-hover",
+      "section": "section-1",
+      "title": {
+        "ru": "Наведение и присутствие",
+        "en": "Hovering and pointer presence"
+      },
+      "description": {
+        "ru": "Действия без нажатия кнопок: положение указателя, вход в область и время пребывания.",
+        "en": "Actions without pressing buttons: pointer position, area entry, and dwell time."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-hover-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-01-01",
+              "text": {
+                "ru": "Подсветка при наведении. Действие: Навести указатель на объект. Применение: Показать интерактивность, доступную цель, границы предмета. Условия: Подсветка должна соответствовать реальной области попадания.",
+                "en": "Highlight on hover. Action: Move the pointer over an object. Application: Show interactivity, available target, object boundaries. Conditions: The highlighting must correspond to the actual hit area."
+              }
+            },
+            {
+              "id": "variant-mouse-01-02",
+              "text": {
+                "ru": "Подсказка с задержкой. Действие: Оставить указатель над элементом на короткое время. Применение: Характеристики предмета, описание команды, сравнение экипировки. Условия: Дать время прочитать и возможность закрыть подсказку.",
+                "en": "Delayed prompt. Action: Leave the pointer over the element for a short time. Application: Characteristics of an item, team description, equipment comparison. Conditions: Give time to read and the opportunity to close the tooltip."
+              }
+            },
+            {
+              "id": "variant-mouse-01-03",
+              "text": {
+                "ru": "Активация выдержкой, dwell. Действие: Удерживать указатель в зоне до заполнения индикатора. Применение: Бескликовое меню, доступное управление, выбор ответа. Условия: Показывать прогресс; выход из зоны отменяет ожидание.",
+                "en": "Activation by exposure, dwell. Action: Hold the pointer in the area until the indicator is filled. Application: Click-free menu, accessible controls, answer selection. Conditions: Show progress; leaving the zone cancels the wait."
+              }
+            },
+            {
+              "id": "variant-mouse-01-04",
+              "text": {
+                "ru": "Триггер входа в область. Действие: Пересечь границу активной зоны. Применение: Открыть панель, обнаружить ловушку, активировать участок лабиринта. Условия: Нужен порог или задержка против случайных срабатываний.",
+                "en": "Area entry trigger. Action: Cross the border of the active zone. Application: Open the panel, detect a trap, activate a section of the labyrinth. Conditions: Need a threshold or delay against random triggering."
+              }
+            },
+            {
+              "id": "variant-mouse-01-05",
+              "text": {
+                "ru": "Триггер выхода из области. Действие: Увести указатель за границу зоны. Применение: Закончить предпросмотр, спрятать панель, прервать контакт. Условия: Вложенные элементы не должны вызывать ложный выход.",
+                "en": "Area exit trigger. Action: Move the pointer outside the zone. Application: End preview, hide panel, break contact. Conditions: Nested elements must not cause false output."
+              }
+            },
+            {
+              "id": "variant-mouse-01-06",
+              "text": {
+                "ru": "Реакция на близость. Действие: Приближать указатель к объекту без обязательного попадания. Применение: Магнитная подсветка, поиск горячо-холодно, мягкое раскрытие элементов. Условия: Расстояние определяется программой, отдельного датчика близости нет.",
+                "en": "Reaction to proximity. Action: Bring the pointer closer to the object without necessarily hitting it. Application: Magnetic backlight, hot-cold search, soft opening of elements. Conditions: The distance is determined by the program, there is no separate proximity sensor."
+              }
+            },
+            {
+              "id": "variant-mouse-01-07",
+              "text": {
+                "ru": "Инструмент исследования под курсором. Действие: Водить указателем по изображению или сцене. Применение: Лупа, фонарик, сканер, пипетка, локальное раскрытие информации. Условия: Размер области инструмента должен быть виден.",
+                "en": "Research tool under cursor. Action: Move the pointer over the image or scene. Application: Magnifier, flashlight, scanner, eyedropper, local information disclosure. Conditions: The size of the tool area must be visible."
+              }
+            },
+            {
+              "id": "variant-mouse-01-08",
+              "text": {
+                "ru": "Предпросмотр движением внутри элемента. Действие: Двигать указатель вдоль карточки или полосы. Применение: Просмотр кадров видео, вариантов предмета, этапов анимации. Условия: Явно показать связь координаты с выбираемым значением.",
+                "en": "Preview by moving inside an element. Action: Move the pointer along the card or strip. Application: Viewing video frames, object variants, animation stages. Conditions: Explicitly show the connection of the coordinate with the selected value."
+              }
+            },
+            {
+              "id": "variant-mouse-01-09",
+              "text": {
+                "ru": "Реакция на неподвижность. Действие: Не двигать мышь заданное время. Применение: Скрыть курсор при просмотре, показать помощь, включить режим наблюдения. Условия: Неподвижность указателя не доказывает отсутствие пользователя.",
+                "en": "Reaction to immobility. Action: Do not move the mouse for a specified time. Application: Hide the cursor while viewing, show help, enable observation mode. Conditions: The immobility of the pointer does not prove the absence of the user."
+              }
+            },
+            {
+              "id": "variant-mouse-01-10",
+              "text": {
+                "ru": "Управление положением без клика. Действие: Держать указатель в секторе или на определённом расстоянии от центра. Применение: Руление, выбор направления, регулировка интенсивности эффекта. Условия: Нужны нейтральная зона и понятная обратная связь.",
+                "en": "Position control without clicking. Action: Keep the pointer in a sector or at a certain distance from the center. Application: Steering, choosing a direction, adjusting the intensity of the effect. Conditions: A neutral zone and clear feedback are needed."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-click",
+      "section": "section-1",
+      "title": {
+        "ru": "Клики и последовательности",
+        "en": "Clicks and Sequences"
+      },
+      "description": {
+        "ru": "Разовые команды, число кликов, порядок кнопок и повторение.",
+        "en": "One-time commands, number of clicks, button order and repetition."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-click-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-02-01",
+              "text": {
+                "ru": "Основной клик. Действие: Нажать и отпустить основную кнопку на цели. Применение: Выбрать, подтвердить, выстрелить, получить ресурс, нажать кнопку. Условия: Основная кнопка может быть переназначена пользователем.",
+                "en": "Main click. Action: Press and release the main button on the target. Application: Select, confirm, shoot, get a resource, press the button. Conditions: The main button can be reassigned by the user."
+              }
+            },
+            {
+              "id": "variant-mouse-02-02",
+              "text": {
+                "ru": "Вторичный клик. Действие: Нажать вторичную кнопку. Применение: Контекстное меню, альтернативное действие, приказ юниту. Условия: В браузере и ОС может быть занята стандартной командой.",
+                "en": "Secondary click. Action: Press the secondary button. Application: Context menu, alternative action, order to a unit. Conditions: In the browser and OS can be occupied by a standard command."
+              }
+            },
+            {
+              "id": "variant-mouse-02-03",
+              "text": {
+                "ru": "Клик средней кнопкой. Действие: Нажать колесо или отдельную среднюю кнопку. Применение: Дополнительная команда, открыть ресурс, поставить метку. Условия: Наличие и удобство средней кнопки нельзя считать гарантированными.",
+                "en": "Middle click. Action: Press the wheel or a separate middle button. Application: Additional command, open a resource, put a mark. Conditions: The presence and convenience of the middle button cannot be considered guaranteed."
+              }
+            },
+            {
+              "id": "variant-mouse-02-04",
+              "text": {
+                "ru": "Двойной клик. Действие: Дважды кликнуть в пределах временного и пространственного допуска. Применение: Открыть объект, выбрать все похожие единицы, приблизить вид. Условия: Конфликт с одиночным кликом требует явного решения.",
+                "en": "Double click. Action: Double-click within temporal and spatial tolerances. Application: Open object, select all similar units, zoom in. Conditions: Single-click conflict requires explicit resolution."
+              }
+            },
+            {
+              "id": "variant-mouse-02-05",
+              "text": {
+                "ru": "Тройной клик. Действие: Быстро кликнуть три раза в одной области. Применение: Выделить крупный текстовый блок или включить редкую команду. Условия: Значение зависит от приложения; нужен более простой дублёр.",
+                "en": "Triple click. Action: Quickly click three times in one area. Application: Select a large text block or enable a rare command. Conditions: The meaning depends on the application; I need a simpler double..."
+              }
+            },
+            {
+              "id": "variant-mouse-02-06",
+              "text": {
+                "ru": "Последовательность из N кликов. Действие: Выполнить заданное число кликов до тайм-аута. Применение: Ввод условного кода, ступени действия, секретная команда. Условия: Пользователь должен видеть накопленное число и момент сброса.",
+                "en": "A sequence of N clicks. Action: Perform the specified number of clicks before the timeout. Application: Entering a conditional code, action steps, secret command. Conditions: The user must see the accumulated number and the reset moment."
+              }
+            },
+            {
+              "id": "variant-mouse-02-07",
+              "text": {
+                "ru": "Повторные клики с накоплением. Действие: Нажимать многократно; каждый клик добавляет результат. Применение: Кликер, ручная добыча, раскачивание прогресса, борьба за захват. Условия: Ограничить утомление; предусмотреть удержание или автоповтор.",
+                "en": "Repeated clicks with accumulation. Action: Press repeatedly; each click adds a result. Application: Clicker, manual extraction, progress swing, fight for capture. Conditions: Limit fatigue; provide hold or auto-repeat."
+              }
+            },
+            {
+              "id": "variant-mouse-02-08",
+              "text": {
+                "ru": "Чередование кнопок. Действие: Последовательно нажимать основную и вторичную кнопки. Применение: Шаги, гребля, работа двумя инструментами, ручной привод. Условия: Явно отличать неверный порядок от слишком медленного ввода.",
+                "en": "Alternating buttons. Action: Press the primary and secondary buttons in succession. Application: Stepping, rowing, two-tool operation, hand drive. Conditions: Clearly distinguish between incorrect order and too slow input."
+              }
+            },
+            {
+              "id": "variant-mouse-02-09",
+              "text": {
+                "ru": "Код из разных кнопок. Действие: Ввести последовательность вида основная → основная → вторичная. Применение: Комбо, заклинание, пароль механизма. Условия: Команды должны иметь разделитель или понятный тайм-аут.",
+                "en": "Code from different buttons. Action: Enter a sequence of the form primary → primary → secondary. Application: Combo, spell, mechanism password. Conditions: Commands must have a separator or a clear timeout."
+              }
+            },
+            {
+              "id": "variant-mouse-02-10",
+              "text": {
+                "ru": "Клик-переключатель. Действие: Повторным кликом менять состояние туда и обратно. Применение: Прицеливание, захват предмета, автоматическая добыча, включение инструмента. Условия: Постоянно показывать текущее состояние режима.",
+                "en": "Click switch. Action: Click again to change the state back and forth. Application: Aiming, grabbing an object, automatic extraction, turning on a tool. Conditions: Constantly show the current state of the mode."
+              }
+            },
+            {
+              "id": "variant-mouse-02-11",
+              "text": {
+                "ru": "Клик по стадии процесса. Действие: Той же кнопкой продвигать процесс на следующий этап. Применение: Начать → остановить → подтвердить; пошаговый мастер или мини-игра. Условия: Каждый этап должен объяснять значение следующего клика.",
+                "en": "Click on the process stage. Action: Use the same button to advance the process to the next stage. Application: Start → stop → confirm; step-by-step wizard or mini-game. Conditions: Each step must explain the meaning of the next click."
+              }
+            },
+            {
+              "id": "variant-mouse-02-12",
+              "text": {
+                "ru": "Клик в любом месте. Действие: Подавать команду независимо от положения указателя. Применение: Однокнопочная игра, продолжение диалога, пропуск разрешённой сцены. Условия: Отделить зоны интерфейса, чтобы клик по меню не выполнил игровое действие.",
+                "en": "Click anywhere. Action: Give a command regardless of the position of the pointer. Application: One-button game, continuation of dialogue, skipping an allowed scene. Conditions: Separate interface zones so that clicking on the menu does not perform a game action."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hold",
+      "section": "section-1",
+      "title": {
+        "ru": "Удержание и отпускание",
+        "en": "Hold and release"
+      },
+      "description": {
+        "ru": "Продолжительность нажатия и момент отпускания становятся частью управления.",
+        "en": "The duration of pressing and the moment of release become part of the control."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-hold-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-03-01",
+              "text": {
+                "ru": "Действие, пока кнопка нажата. Действие: Удерживать кнопку для непрерывного эффекта. Применение: Автоматический огонь, защита, поток жидкости, работа дрелью. Условия: При потере фокуса действие нужно безопасно завершать.",
+                "en": "Action while the button is pressed. Action: Hold the button for a continuous effect. Application: Automatic fire, protection, fluid flow, drill work. Conditions: If focus is lost, the action must be completed safely."
+              }
+            },
+            {
+              "id": "variant-mouse-03-02",
+              "text": {
+                "ru": "Автоповтор при удержании. Действие: После задержки повторять дискретную команду, пока кнопка нажата. Применение: Покупка по единице, изменение счётчика, повторная добыча. Условия: Задать задержку, темп повторов и немедленную остановку.",
+                "en": "Auto repeat when held. Action: After a delay, repeat the discrete command while the button is pressed. Application: Buy by unit, change the counter, re-mining. Conditions: Set the delay, repeat tempo and immediate stop."
+              }
+            },
+            {
+              "id": "variant-mouse-03-03",
+              "text": {
+                "ru": "Накопление силы. Действие: Держать кнопку; длительность определяет мощность. Применение: Заряд выстрела, сила прыжка, бросок, интенсивность воздействия. Условия: Показывать шкалу и предел; длительность не равна физической силе нажатия.",
+                "en": "Accumulation of strength. Action: Hold the button; duration determines the power. Application: Shot charge, jump force, throw, impact intensity. Conditions: Show scale and limit; the duration is not equal to the physical force of pressing."
+              }
+            },
+            {
+              "id": "variant-mouse-03-04",
+              "text": {
+                "ru": "Долгое нажатие как отдельная команда. Действие: Держать дольше порога вместо короткого клика. Применение: Осмотр вместо использования, расширенные действия, смена режима. Условия: Не выполнять необратимый короткий клик до распознавания удержания.",
+                "en": "Long press as a separate command. Action: Hold longer than the threshold instead of a short click. Application: Inspection instead of use, extended actions, mode change. Conditions: Do not perform an irreversible short click until the hold is recognized."
+              }
+            },
+            {
+              "id": "variant-mouse-03-05",
+              "text": {
+                "ru": "Непрерывное подтверждение. Действие: Удерживать до завершения индикатора. Применение: Подтверждение сброса, запуск опасного механизма, длительное взаимодействие. Условия: Дать понятный способ отменить и альтернативу удержанию.",
+                "en": "Continuous confirmation. Action: Hold until the indicator completes. Application: Reset confirmation, start of a dangerous mechanism, long-term interaction. Conditions: Provide a clear way to cancel and an alternative to holding."
+              }
+            },
+            {
+              "id": "variant-mouse-03-06",
+              "text": {
+                "ru": "Команда на отпускание. Действие: Нажатие готовит действие, отпускание запускает его. Применение: Выпустить стрелу, бросить предмет, завершить размещение. Условия: Заранее определить, как отменить подготовленное действие.",
+                "en": "Release command. Action: Pressing prepares an action, releasing it starts it. Application: Release an arrow, throw an object, complete placement. Conditions: Determine in advance how to cancel a prepared action."
+              }
+            },
+            {
+              "id": "variant-mouse-03-07",
+              "text": {
+                "ru": "Разделение нажатия и отпускания. Действие: Назначить начало и конец нажатия разным фазам. Применение: Захватить → отпустить; вдохнуть → выдохнуть; открыть → закрыть клапан. Условия: Состояние не должно зависать, если событие отпускания потеряно.",
+                "en": "Separation of pressing and releasing. Action: Assign the start and end of pressing to different phases. Application: Grab → release; inhale → exhale; open → close valve. Conditions: The state should not hang if the release event is lost."
+              }
+            },
+            {
+              "id": "variant-mouse-03-08",
+              "text": {
+                "ru": "Короткое и длительное удержание. Действие: Выбирать вариант действия по длительности до отпускания. Применение: Лёгкий и тяжёлый удар, короткий и высокий прыжок. Условия: Границу вариантов нужно объяснить и проверить на разных пользователях.",
+                "en": "Short and long hold. Action: Select the action option by duration before releasing. Application: Light and heavy blow, short and high jump. Conditions: The boundaries of the options need to be explained and tested on different users."
+              }
+            },
+            {
+              "id": "variant-mouse-03-09",
+              "text": {
+                "ru": "Накопление импульсами. Действие: Нажимать и отпускать сериями; паузы меняют накопленный эффект. Применение: Подкачка насоса, поддержание давления, разогрев инструмента. Условия: Показывать и прирост, и спад накопленного значения.",
+                "en": "Accumulation by impulses. Action: Press and release in series; pauses change the accumulated effect. Application: Pumping up the pump, maintaining pressure, warming up the instrument. Conditions: Show both the increase and decrease of the accumulated value."
+              }
+            },
+            {
+              "id": "variant-mouse-03-10",
+              "text": {
+                "ru": "Временный режим удержанием. Действие: Работать в режиме только до отпускания кнопки. Применение: Лупа, блок, замедленное наведение, временный просмотр карты. Условия: Можно предложить вариант с переключением вместо удержания.",
+                "en": "Temporary hold mode. Action: Work in mode only until the button is released. Application: Magnifying glass, block, slow motion, temporary map viewing. Conditions: You can offer an option with switching instead of holding."
+              }
+            },
+            {
+              "id": "variant-mouse-03-11",
+              "text": {
+                "ru": "Фиксация захвата кликом. Действие: Кликнуть для захвата, двигать без удержания, кликнуть для отпускания. Применение: Перенос предметов, строительство, доступная альтернатива перетаскиванию. Условия: Нужны заметный режим захвата и отмена.",
+                "en": "Fixing the capture with a click. Action: Click to grab, move without holding, click to release. Application: Carrying objects, building, an accessible alternative to dragging. Conditions: Need a noticeable grab and cancel mode."
+              }
+            },
+            {
+              "id": "variant-mouse-03-12",
+              "text": {
+                "ru": "Отмена уходом с цели. Действие: Нажать на контроле, увести указатель, затем отпустить. Применение: Отменить случайное нажатие кнопки до выполнения команды. Условия: Применять к обычным кнопкам; для перетаскивания правила другие.",
+                "en": "Cancel by leaving the target. Action: Press on the control, move the pointer, then release. Application: Cancel accidental button presses before executing the command. Conditions: Apply to normal buttons; For dragging the rules are different."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-wheel",
+      "section": "section-1",
+      "title": {
+        "ru": "Колесо и прокрутка",
+        "en": "Wheel and scrolling"
+      },
+      "description": {
+        "ru": "Направление и величина прокрутки используются как шаги, ось или непрерывный регулятор.",
+        "en": "The direction and amount of scrolling are used as steps, an axis, or a continuous controller."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-wheel-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-04-01",
+              "text": {
+                "ru": "Вертикальная прокрутка. Действие: Вращать колесо вперёд и назад. Применение: Читать список, перемещать журнал, просматривать инвентарь. Условия: Направление и величина зависят от настроек и устройства.",
+                "en": "Vertical scrolling. Action: Rotate the wheel forward and backward. Application: Read a list, move a magazine, view inventory. Conditions: Direction and magnitude depend on settings and device."
+              }
+            },
+            {
+              "id": "variant-mouse-04-02",
+              "text": {
+                "ru": "Горизонтальная прокрутка. Действие: Подавать горизонтальную прокрутку или её доступный эквивалент. Применение: Таймлайн, широкая карта, таблица, лента предметов. Условия: Наклон колеса и горизонтальный датчик есть не у каждой мыши.",
+                "en": "Horizontal scrolling. Action: Provide horizontal scrolling or its available equivalent. Application: Timeline, wide map, table, item feed. Conditions: Not every mouse has a tilt wheel and a horizontal sensor."
+              }
+            },
+            {
+              "id": "variant-mouse-04-03",
+              "text": {
+                "ru": "Пошаговый перебор. Действие: Каждый накопленный шаг прокрутки выбирает соседний вариант. Применение: Оружие, инструмент, слот, этаж, страница каталога. Условия: Не считать любое событие одним физическим щелчком колеса.",
+                "en": "Step by step search. Action: Each accumulated scroll step selects an adjacent option. Application: Weapon, tool, slot, floor, catalog page. Conditions: Do not count any event as one physical click of the wheel."
+              }
+            },
+            {
+              "id": "variant-mouse-04-04",
+              "text": {
+                "ru": "Масштабирование к указателю. Действие: Вращать колесо; точка под указателем остаётся опорой масштаба. Применение: Карта, схема, 3D-сцена, редактор уровней. Условия: Ограничить масштаб и сохранить ориентацию пользователя.",
+                "en": "Scaling to pointer. Action: Spin the wheel; the point below the pointer remains the scale reference. Application: Map, diagram, 3D scene, level editor. Conditions: Limit the scale and maintain user orientation."
+              }
+            },
+            {
+              "id": "variant-mouse-04-05",
+              "text": {
+                "ru": "Регулировка значения. Действие: Колесом увеличивать или уменьшать параметр. Применение: Размер кисти, громкость, количество, скорость воспроизведения. Условия: Не менять значение случайно при обычной прокрутке страницы.",
+                "en": "Adjusting the value. Action: Use the wheel to increase or decrease the parameter. Application: Brush size, volume, quantity, playback speed. Conditions: Do not change the value accidentally when scrolling the page normally."
+              }
+            },
+            {
+              "id": "variant-mouse-04-06",
+              "text": {
+                "ru": "Вращение объекта колесом. Действие: Колесом менять угол выбранного объекта. Применение: Повернуть постройку, деталь пазла, предмет перед установкой. Условия: Показывать угол и шаг поворота.",
+                "en": "Rotating an object with a wheel. Action: Use the wheel to change the angle of the selected object. Application: Rotate a building, puzzle piece, object before installation. Conditions: Show the angle and step of rotation."
+              }
+            },
+            {
+              "id": "variant-mouse-04-07",
+              "text": {
+                "ru": "Перемотка времени. Действие: Прокруткой двигать позицию по временной шкале. Применение: Монтаж, повтор боя, просмотр анимации, управление временем в головоломке. Условия: Разделить перемотку позиции и изменение скорости воспроизведения.",
+                "en": "Rewind time. Action: Scroll to move a position along the timeline. Application: Editing, replaying a battle, viewing animation, managing time in a puzzle. Conditions: Separate rewinding a position and changing the playback speed."
+              }
+            },
+            {
+              "id": "variant-mouse-04-08",
+              "text": {
+                "ru": "Управление глубиной. Действие: Прокруткой приближать или удалять захваченный предмет. Применение: Расположение в 3D, дистанция захвата, глубина слоя. Условия: Ввод остаётся одной осью, глубину назначает программа.",
+                "en": "Depth control. Action: Scroll to zoom in or out of the captured object. Application: 3D location, capture distance, layer depth. Conditions: The input remains one axis, the depth is assigned by the program."
+              }
+            },
+            {
+              "id": "variant-mouse-04-09",
+              "text": {
+                "ru": "Подмотка и натяжение. Действие: Вращать колесо для подачи или выборки длины. Применение: Рыбалка, лебёдка, трос, ручной механизм. Условия: Задавать эффект через величину ввода, не через частоту событий.",
+                "en": "Rewinding and tension. Action: Rotate the wheel to feed or select length. Application: Fishing, winch, cable, manual mechanism. Conditions: Set the effect through the input value, not through the frequency of events."
+              }
+            },
+            {
+              "id": "variant-mouse-04-10",
+              "text": {
+                "ru": "Перетаскивание средней кнопкой. Действие: Удерживать среднюю кнопку и двигать мышь. Применение: Панорамировать холст или карту, перемещать обзор. Условия: Это нажатие кнопки колеса, отдельное от вращения колеса.",
+                "en": "Middle button dragging. Action: Hold the middle button and move the mouse. Application: Pan the canvas or map, move the view. Conditions: This is a wheel button press, separate from the wheel rotation."
+              }
+            },
+            {
+              "id": "variant-mouse-04-11",
+              "text": {
+                "ru": "Автопрокрутка по отклонению. Действие: Включить режим; расстояние указателя от опорной точки задаёт скорость. Применение: Просмотр длинного документа, панорама большой карты. Условия: Нужны нейтральная зона и очевидный выход; поддержка платформ различается.",
+                "en": "Autoscroll by deviation. Action: Enable mode; the distance of the pointer from the reference point sets the speed. Application: Viewing a long document, panorama of a large map. Conditions: A neutral zone and an obvious exit are needed; Platform support varies."
+              }
+            },
+            {
+              "id": "variant-mouse-04-12",
+              "text": {
+                "ru": "Колесо с модификатором. Действие: Удерживать клавишу или кнопку мыши во время прокрутки. Применение: Точная настройка, вторая ось, другой параметр, смена режима масштаба. Условия: Сочетания могут быть заняты браузером или ОС.",
+                "en": "Wheel with modifier. Action: Hold down a key or mouse button while scrolling. Application: Fine tuning, second axis, other parameter, changing zoom mode. Conditions: Shortcuts may be occupied by the browser or OS."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-chords",
+      "section": "section-1",
+      "title": {
+        "ru": "Комбинации и режимы",
+        "en": "Combinations and modes"
+      },
+      "description": {
+        "ru": "Несколько сигналов образуют одну команду или меняют смысл последующего ввода.",
+        "en": "Multiple signals form a single command or change the meaning of subsequent input."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-chords-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-05-01",
+              "text": {
+                "ru": "Модификатор с кликом. Действие: Удерживать Shift, Ctrl, Alt или Cmd и кликнуть. Применение: Альтернативная команда, добавление выбора, особый приказ. Условия: Назначения зависят от платформы; важные команды должны обнаруживаться.",
+                "en": "Click modifier. Action: Hold Shift, Ctrl, Alt or Cmd and click. Usage: Alternate command, adding a choice, special order. Conditions: Purposes vary by platform; important commands must be detected."
+              }
+            },
+            {
+              "id": "variant-mouse-05-02",
+              "text": {
+                "ru": "Модификатор с движением. Действие: Удерживать клавишу во время движения или перетаскивания. Применение: Ограничение оси, точный режим, временное отключение привязки. Условия: Отображать активное ограничение до завершения действия.",
+                "en": "Modifier with movement. Action: Hold key while moving or dragging. Usage: Axis constraint, fine mode, temporarily disable snapping. Conditions: Display active constraint until action completes."
+              }
+            },
+            {
+              "id": "variant-mouse-05-03",
+              "text": {
+                "ru": "Одновременное нажатие кнопок. Действие: Нажать две кнопки с допустимым перекрытием по времени. Применение: Специальная команда, совместное действие двух рук, раскрытие соседних клеток. Условия: Задать окно одновременности и альтернативу сложному сочетанию.",
+                "en": "Simultaneous pressing of buttons. Action: Press two buttons with a valid time overlap. Application: Special command, joint action of two hands, opening of adjacent cells. Conditions: Set a window of simultaneity and an alternative to a complex combination."
+              }
+            },
+            {
+              "id": "variant-mouse-05-04",
+              "text": {
+                "ru": "Кнопка как модификатор другой кнопки. Действие: Удерживать одну кнопку и нажать другую. Применение: Смена огня во время прицеливания, дополнительная команда инструмента. Условия: Не путать с одновременным нажатием: порядок здесь значим.",
+                "en": "A button as a modifier of another button. Action: Hold one button and press another. Application: Change fire while aiming, additional tool command. Conditions: Not to be confused with simultaneous pressing: the order is significant here."
+              }
+            },
+            {
+              "id": "variant-mouse-05-05",
+              "text": {
+                "ru": "Рокер-жест. Действие: Удерживать одну кнопку, нажать другую; обратный порядок даёт другую команду. Применение: Назад/вперёд, два связанных действия, быстрая навигация. Условия: Скрытое сочетание требует обучения и переназначения.",
+                "en": "Rocker gesture. Action: Hold one button, press another; reverse order gives another command. Application: Back/forward, two linked actions, fast navigation. Conditions: Hidden combination requires training and reassignment."
+              }
+            },
+            {
+              "id": "variant-mouse-05-06",
+              "text": {
+                "ru": "Клавиатурное движение с мышью. Действие: Клавишами перемещаться, мышью независимо наводиться. Применение: Шутер, экшен, управление персонажем и направлением инструмента. Условия: Предусмотреть игрока, которому неудобно одновременное управление двумя руками.",
+                "en": "Keyboard movement with mouse. Action: Move with the keys, move the mouse independently. Application: Shooter, action, control of the character and the direction of the tool. Conditions: Provide for a player who is uncomfortable with simultaneous control of both hands."
+              }
+            },
+            {
+              "id": "variant-mouse-05-07",
+              "text": {
+                "ru": "Удержание кнопки с движением. Действие: Нажать кнопку режима и двигать мышь. Применение: Поворот камеры вместо указателя, панорама вместо выделения. Условия: Указатель и подсказка должны сообщать новый смысл движения.",
+                "en": "Holding a button with movement. Action: Press the mode button and move the mouse. Application: Rotate the camera instead of a pointer, panorama instead of a selection. Conditions: The pointer and tooltip should convey a new meaning to the movement."
+              }
+            },
+            {
+              "id": "variant-mouse-05-08",
+              "text": {
+                "ru": "Режим до явного выхода. Действие: Кликом включить инструмент, затем применять его серией действий. Применение: Строительство, покраска, измерение, назначение приказов. Условия: Нужен видимый активный инструмент и единая команда выхода.",
+                "en": "Mode until explicit exit. Action: Click to turn on the tool, then use it in a series of actions. Application: Construction, painting, measuring, assigning orders. Conditions: You need a visible active tool and a single exit command."
+              }
+            },
+            {
+              "id": "variant-mouse-05-09",
+              "text": {
+                "ru": "Радиальное меню с отпусканием. Действие: Нажать, навести в сектор, отпустить для выбора. Применение: Быстрый выбор предмета, эмоции, команды отряду. Условия: Центр удобно использовать для отмены; короткий клик может показывать меню.",
+                "en": "Radial menu with release. Action: Press, point at a sector, release to select. Application: Quick selection of an item, emotion, squad command. Conditions: The center is convenient to use for cancellation; short click can show menu."
+              }
+            },
+            {
+              "id": "variant-mouse-05-10",
+              "text": {
+                "ru": "Независимые параллельные действия. Действие: Одну кнопку держать, другой пользоваться независимо. Применение: Защищаться и стрелять, удерживать захват и управлять инструментом. Условия: Проверить сочетания на целевых мышах и обработать все отпускания.",
+                "en": "Independent parallel actions. Action: Hold one button, use the other independently. Application: Defend and shoot, hold the grip and control the tool. Conditions: Check the combinations on the target mice and process all releases."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-select",
+      "section": "section-2",
+      "title": {
+        "ru": "Выбор, адресация и команды",
+        "en": "Selection, addressing and commands"
+      },
+      "description": {
+        "ru": "Положение курсора и последовательность целей определяют, к кому или к чему применяется действие.",
+        "en": "The position of the cursor and the sequence of targets determine who or what the action is applied to."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-select-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-06-01",
+              "text": {
+                "ru": "Точечный выбор. Действие: Кликнуть конкретный объект или его представление. Применение: Выбрать юнит, карточку, узел графа, деталь модели. Условия: Для перекрывающихся объектов нужен способ выбрать скрытый.",
+                "en": "Point selection. Action: Click on a specific object or its representation. Application: Select a unit, card, graph node, model part. Conditions: For overlapping objects, you need a way to select the hidden one."
+              }
+            },
+            {
+              "id": "variant-mouse-06-02",
+              "text": {
+                "ru": "Выбор переключением принадлежности. Действие: Модифицированным кликом добавлять объект в набор или убирать из него. Применение: Несмежный выбор файлов, юнитов, вершин, карточек. Условия: Показывать весь текущий набор, а не только последний объект.",
+                "en": "Select by switching accessory. Action: Add an object to the set or remove it from it using a modified click. Application: Non-adjacent selection of files, units, vertices, cards. Conditions: Show the entire current set, not just the last object."
+              }
+            },
+            {
+              "id": "variant-mouse-06-03",
+              "text": {
+                "ru": "Выбор диапазона. Действие: Выбрать начало, затем конец с модификатором. Применение: Строки таблицы, текстовый диапазон, последовательные клипы. Условия: Должны быть определены порядок и опорный элемент диапазона.",
+                "en": "Range selection. Action: Select start, then end with modifier. Application: Table rows, text range, sequential clips. Conditions: The order and reference element of the range must be defined."
+              }
+            },
+            {
+              "id": "variant-mouse-06-04",
+              "text": {
+                "ru": "Прямоугольное выделение. Действие: Протянуть рамку от одного угла к другому. Применение: Группа юнитов, объекты на холсте, область изображения. Условия: Объяснить, достаточно ли пересечения или требуется полное включение.",
+                "en": "Rectangular selection. Action: Extend a frame from one corner to another. Application: Group of units, objects on canvas, image area. Conditions: Explain whether intersection is enough or complete inclusion is required."
+              }
+            },
+            {
+              "id": "variant-mouse-06-05",
+              "text": {
+                "ru": "Выделение лассо. Действие: Обвести произвольную область замкнутой линией. Применение: Неровная группа объектов, фрагмент иллюстрации, тактическая зона. Условия: Показывать замыкание и правила попадания в область.",
+                "en": "Lasso selection. Action: Draw an arbitrary area with a closed line. Application: Uneven group of objects, fragment of illustration, tactical zone. Conditions: Show closure and rules for entering the area."
+              }
+            },
+            {
+              "id": "variant-mouse-06-06",
+              "text": {
+                "ru": "Выделение кистью. Действие: Проводить указателем по объектам при удержании. Применение: Покрасить набор выбора, выбрать множество мелких элементов. Условия: Один проход не должен многократно переключать один и тот же объект.",
+                "en": "Brush selection. Action: Drag the pointer over objects while holding. Usage: Color a selection set, select many small items. Conditions: One pass should not switch the same object multiple times."
+              }
+            },
+            {
+              "id": "variant-mouse-06-07",
+              "text": {
+                "ru": "Выбор по общему признаку. Действие: Подать команду над образцом. Применение: Все юниты типа, связанные полигоны, область похожего цвета. Условия: Указывать область поиска: экран, документ или весь мир.",
+                "en": "General selection. Action: Give a command over the sample. Application: All units of the type, connected polygons, area of ​​similar color. Conditions: Specify the search area: screen, document or the whole world."
+              }
+            },
+            {
+              "id": "variant-mouse-06-08",
+              "text": {
+                "ru": "Перебор перекрывающихся целей. Действие: Повторной командой или колесом менять цель под курсором. Применение: Плотные карты, стопка карточек, объекты за передним планом. Условия: Показывать текущего кандидата до подтверждения.",
+                "en": "Enumeration of overlapping targets. Action: Use a repeated command or wheel to change the target under the cursor. Application: Dense cards, stacks of cards, objects behind the foreground. Conditions: Show the current candidate until confirmation."
+              }
+            },
+            {
+              "id": "variant-mouse-06-09",
+              "text": {
+                "ru": "Сначала объект, затем действие. Действие: Выбрать объект и вызвать подходящую команду. Применение: Инвентарь, редактор, управление юнитами. Условия: Выбор должен сохраняться достаточно долго для завершения команды.",
+                "en": "First the object, then the action. Action: Select an object and call the appropriate command. Application: Inventory, editor, unit management. Conditions: The selection must be maintained long enough for the command to complete."
+              }
+            },
+            {
+              "id": "variant-mouse-06-10",
+              "text": {
+                "ru": "Сначала действие, затем цель. Действие: Выбрать инструмент или способность, затем кликнуть цель. Применение: Лечение, строительство, применение эффекта, заливка области. Условия: Показать допустимые цели, стоимость и способ отмены.",
+                "en": "First the action, then the goal. Action: Select a tool or ability, then click the target. Application: Heal, build, apply an effect, fill an area. Conditions: Show valid targets, cost and cancel method."
+              }
+            },
+            {
+              "id": "variant-mouse-06-11",
+              "text": {
+                "ru": "Источник → назначение. Действие: Кликнуть источник, затем место назначения. Применение: Перенести предмет, соединить узлы, указать обмен, назначить маршрут. Условия: Это также альтернатива перетаскиванию без удержания кнопки.",
+                "en": "Source → destination. Action: Click the source, then the destination. Application: Transfer an item, connect nodes, specify an exchange, assign a route. Conditions: This is also an alternative to dragging without holding the button."
+              }
+            },
+            {
+              "id": "variant-mouse-06-12",
+              "text": {
+                "ru": "Контекстная команда. Действие: Кликнуть цель; действие определяется типом цели и текущим состоянием. Применение: Идти по земле, атаковать врага, собирать ресурс, разговаривать. Условия: Предпросмотр команды снижает риск неверного контекста.",
+                "en": "Context command. Action: Click the target; the action is determined by the target type and the current state. Application: Walk on the ground, attack the enemy, collect a resource, talk. Conditions: Command preview reduces the risk of incorrect context."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-drag",
+      "section": "section-2",
+      "title": {
+        "ru": "Перетаскивание и размещение",
+        "en": "Dragging and placement"
+      },
+      "description": {
+        "ru": "Указатель захватывает объект или его представление, а положение и место отпускания задают результат.",
+        "en": "The pointer grabs an object or a representation of it, and the position and release location specify the result."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-drag-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-07-01",
+              "text": {
+                "ru": "Свободное перемещение. Действие: Захватить объект, перенести и отпустить. Применение: Окна, карточки, предметы на столе, элементы уровня. Условия: Нужен порог начала, чтобы мелкое движение не отменяло клик.",
+                "en": "Free movement. Action: Grab an object, move it and release it. Application: Windows, cards, objects on the table, level elements. Conditions: A start threshold is needed so that small movements do not cancel the click."
+              }
+            },
+            {
+              "id": "variant-mouse-07-02",
+              "text": {
+                "ru": "Перенос в целевую зону. Действие: Перетащить объект на допустимого получателя. Применение: Экипировка, сортировка файлов, применение предмета к объекту. Условия: Подсветить допустимость и объяснить отказ.",
+                "en": "Transfer to the target area. Action: Drag an object to a valid recipient. Application: Equipment, sorting files, applying an item to an object. Conditions: Highlight the validity and explain the refusal."
+              }
+            },
+            {
+              "id": "variant-mouse-07-03",
+              "text": {
+                "ru": "Сортировка перетаскиванием. Действие: Перенести элемент на новое место в упорядоченном наборе. Применение: Колода, очередь задач, список слоёв, очередь производства. Условия: Показывать позицию вставки, не только положение перетаскиваемой копии.",
+                "en": "Drag and drop sorting. Action: Move an element to a new location in the ordered set. Application: Deck, task queue, layer list, production queue. Conditions: Show the insertion position, not just the position of the dragged copy."
+              }
+            },
+            {
+              "id": "variant-mouse-07-04",
+              "text": {
+                "ru": "Перенос между слотами. Действие: Перетащить предмет из одной ячейки в другую. Применение: Инвентарь, экипировка, панель быстрого доступа. Условия: Задать правила обмена, объединения и занятого слота.",
+                "en": "Transfer between slots. Action: Drag an item from one cell to another. Application: Inventory, equipment, quick access panel. Conditions: Set the rules for exchange, combination and occupied slot."
+              }
+            },
+            {
+              "id": "variant-mouse-07-05",
+              "text": {
+                "ru": "Разделение стопки. Действие: Начать перенос части набора с модификатором или выбором количества. Применение: Разделить ресурсы, патроны, товары. Условия: До завершения показать, сколько останется в источнике.",
+                "en": "Splitting the stack. Action: Start transferring part of the set with a modifier or selecting quantity. Application: Divide resources, ammo, goods. Conditions: Before completion, show how much will remain in the source."
+              }
+            },
+            {
+              "id": "variant-mouse-07-06",
+              "text": {
+                "ru": "Дублирование переносом. Действие: Перетаскивать с командой копирования. Применение: Клонирование деталей, повторное размещение объектов, копии клипов. Условия: Визуально различать перенос и копирование.",
+                "en": "Duplication by transfer. Action: Drag with copy command. Application: Cloning parts, re-positioning objects, copying clips. Conditions: Visually differentiate between drag and copy."
+              }
+            },
+            {
+              "id": "variant-mouse-07-07",
+              "text": {
+                "ru": "Обмен двух объектов. Действие: Перетащить один объект на другой с правилом взаимной замены. Применение: Пазлы, экипировка, перестановка слотов. Условия: Предварительно показывать обе будущие позиции.",
+                "en": "Exchange of two objects. Action: Drag one object onto another with the mutual replacement rule. Application: Puzzles, equipment, rearranging slots. Conditions: Pre-show both future positions."
+              }
+            },
+            {
+              "id": "variant-mouse-07-08",
+              "text": {
+                "ru": "Соединение перетаскиванием. Действие: Протянуть от выхода одного объекта к входу другого. Применение: Провода, графы логики, связи задач, энергетические цепи. Условия: Отмечать совместимые разъёмы и направление связи.",
+                "en": "Connection by drag and drop. Action: Extend from the output of one object to the input of another. Application: Wires, logic graphs, task connections, energy circuits. Conditions: Mark compatible connectors and direction of connection."
+              }
+            },
+            {
+              "id": "variant-mouse-07-09",
+              "text": {
+                "ru": "Создание протягиванием. Действие: Нажать в начале, протянуть размер или направление, отпустить. Применение: Прямоугольник, дорога, стена, область строительства. Условия: Показывать размер, стоимость и ошибки до подтверждения.",
+                "en": "Creation by pulling. Action: Press at the beginning, drag the size or direction, release. Application: Rectangle, road, wall, construction area. Conditions: Show size, cost and errors until confirmation."
+              }
+            },
+            {
+              "id": "variant-mouse-07-10",
+              "text": {
+                "ru": "Размещение с привязкой. Действие: Перемещать объект к сетке, сокету или направляющей. Применение: Пазл, модульная постройка, выравнивание интерфейса. Условия: Различать реальное положение указателя и позицию привязанного объекта.",
+                "en": "Placement with anchor. Action: Move an object to a grid, socket or guide. Application: Puzzle, modular construction, interface alignment. Conditions: Distinguish between the real position of the pointer and the position of the anchored object."
+              }
+            },
+            {
+              "id": "variant-mouse-07-11",
+              "text": {
+                "ru": "Перенос группы. Действие: Перетаскивать выбранный набор как целое. Применение: Группа деталей, объектов редактора, стопка карточек. Условия: Сохранять относительные позиции и проверять коллизии всего набора.",
+                "en": "Group transfer. Action: Drag the selected set as a whole. Application: Group of parts, editor objects, stack of cards. Conditions: Maintain relative positions and check for collisions of the entire set."
+              }
+            },
+            {
+              "id": "variant-mouse-07-12",
+              "text": {
+                "ru": "Выбрасывание из области. Действие: Перетащить за границу контейнера или в специальную зону. Применение: Выбросить предмет, удалить карточку, открепить вкладку. Условия: Для удаления нужны отмена или явно обозначенная зона.",
+                "en": "Throwing out of the area. Action: Drag beyond the border of the container or into a special zone. Application: Throw away an item, remove a card, unpin a tab. Conditions: To delete, you need to cancel or an explicitly designated zone."
+              }
+            },
+            {
+              "id": "variant-mouse-07-13",
+              "text": {
+                "ru": "Перенос с автопрокруткой. Действие: Во время захвата подвести указатель к краю видимой области. Применение: Длинный список, большая карта, инвентарь за пределами экрана. Условия: Скорость прокрутки должна оставаться управляемой.",
+                "en": "Transfer with autoscroll. Action: While grabbing, move the pointer to the edge of the visible area. Application: Long list, large map, off-screen inventory. Conditions: Scrolling speed should remain manageable."
+              }
+            },
+            {
+              "id": "variant-mouse-07-14",
+              "text": {
+                "ru": "Бросок отпусканием. Действие: Разогнать захваченный объект и отпустить. Применение: Бросить мяч, швырнуть предмет, смахнуть карточку. Условия: Скорость оценивать по короткому интервалу времени, не по одному событию.",
+                "en": "Release throw. Action: Accelerate the captured object and release. Application: Throw a ball, throw an object, swipe a card. Conditions: Assess speed over a short time interval, not over one event."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-transform",
+      "section": "section-2",
+      "title": {
+        "ru": "Параметры и геометрия",
+        "en": "Parameters and geometry"
+      },
+      "description": {
+        "ru": "Движение мыши переводится в численное значение, размер, угол, координату или форму.",
+        "en": "Mouse movement is translated into a numerical value, size, angle, coordinate or shape."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-transform-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-08-01",
+              "text": {
+                "ru": "Линейный ползунок. Действие: Перетащить бегунок вдоль шкалы. Применение: Громкость, мощность, цена, длина, временная позиция. Условия: Дать клик по шкале и точный ввод, если он уместен.",
+                "en": "Linear slider. Action: Drag the slider along the scale. Application: Volume, power, price, length, time position. Conditions: Click on the scale and enter exact input, if appropriate."
+              }
+            },
+            {
+              "id": "variant-mouse-08-02",
+              "text": {
+                "ru": "Числовой scrubbing. Действие: Тянуть числовое поле или метку по оси. Применение: Быстро менять координату, количество, размер параметра. Условия: Обозначить возможность перетаскивания; сохранить обычный ввод числа.",
+                "en": "Numerical scrubbing. Action: Drag a numeric field or label along an axis. Application: Quickly change the coordinate, quantity, size of a parameter. Conditions: Indicate the possibility of dragging; keep the normal number input."
+              }
+            },
+            {
+              "id": "variant-mouse-08-03",
+              "text": {
+                "ru": "Ручка вращения. Действие: Вести указатель вокруг центра или тянуть по выбранной оси. Применение: Регулятор прибора, синтезатор, клапан, угол инструмента. Условия: Не допускать скачка на переходе угла через полный оборот.",
+                "en": "Rotation handle. Action: Move the pointer around the center or drag along the selected axis. Application: Device regulator, synthesizer, valve, instrument angle. Conditions: Do not allow a jump at the corner transition through a full turn."
+              }
+            },
+            {
+              "id": "variant-mouse-08-04",
+              "text": {
+                "ru": "Двумерный контроллер. Действие: Перемещать точку внутри плоскости. Применение: Выбор цвета, два параметра звука, тактическое прицеливание. Условия: Подписать обе оси и их диапазоны.",
+                "en": "Two-dimensional controller. Action: Move a point inside the plane. Application: Color selection, two sound parameters, tactical aiming. Conditions: Label both axes and their ranges."
+              }
+            },
+            {
+              "id": "variant-mouse-08-05",
+              "text": {
+                "ru": "Изменение размера за край. Действие: Тянуть границу или угловой маркер. Применение: Окна, панели, формы, зона воздействия. Условия: Предусмотреть минимальный размер и достаточную область захвата.",
+                "en": "Resize by edge. Action: Pull the border or corner marker. Application: Windows, panels, forms, impact area. Conditions: Provide a minimum size and sufficient grip area."
+              }
+            },
+            {
+              "id": "variant-mouse-08-06",
+              "text": {
+                "ru": "Масштабирование с сохранением пропорций. Действие: Тянуть маркер с ограничением отношения сторон. Применение: Изображения, модели, элементы компоновки. Условия: Явно показать состояние ограничения и опорную точку.",
+                "en": "Scaling while maintaining proportions. Action: Drag a handle with an aspect ratio constraint. Application: Images, models, layout elements. Conditions: Explicitly show the constraint state and anchor point."
+              }
+            },
+            {
+              "id": "variant-mouse-08-07",
+              "text": {
+                "ru": "Вращение вокруг опоры. Действие: Тянуть вращательный маркер вокруг заданной точки. Применение: Поворот модели, детали, комнаты, камеры. Условия: Опора и возможная привязка по углам должны быть видимы.",
+                "en": "Rotation around a support. Action: Drag the rotation handle around a given point. Application: Rotate a model, part, room, camera. Conditions: Support and possible snaps at corners must be visible."
+              }
+            },
+            {
+              "id": "variant-mouse-08-08",
+              "text": {
+                "ru": "Перемещение по оси или плоскости. Действие: Тянуть соответствующую часть 3D-манипулятора. Применение: Установка объектов, настройка сцены, конструирование. Условия: Показать активную ось и систему координат.",
+                "en": "Moving along an axis or plane. Action: Drag the corresponding part of the 3D manipulator. Application: Setting up objects, setting up a scene, designing. Conditions: Show the active axis and coordinate system."
+              }
+            },
+            {
+              "id": "variant-mouse-08-09",
+              "text": {
+                "ru": "Деформация контрольными точками. Действие: Перетаскивать вершины, узлы или ручки кривой. Применение: Редактор формы, маршрут, лепка, гибкая головоломка. Условия: Ограничить самопересечения, если они недопустимы.",
+                "en": "Deformation by control points. Action: Drag vertices, nodes or handles of a curve. Application: Shape editor, route, sculpting, flexible puzzle. Conditions: Restrict self-intersections if they are not allowed."
+              }
+            },
+            {
+              "id": "variant-mouse-08-10",
+              "text": {
+                "ru": "Диапазон двумя границами. Действие: Двигать начальный и конечный маркеры. Применение: Обрезка клипа, диапазон цен, интервал атаки, рабочая зона. Условия: Определить поведение при пересечении границ.",
+                "en": "Range with two boundaries. Action: Move start and end markers. Application: Clip trim, price range, attack interval, work area. Conditions: Define boundary crossing behavior."
+              }
+            },
+            {
+              "id": "variant-mouse-08-11",
+              "text": {
+                "ru": "Направление и длина протягиванием. Действие: Начальная точка служит опорой; вектор до курсора задаёт параметры. Применение: Сила и угол удара, вектор скорости, направление постройки. Условия: Изображать вектор и ограничение длины.",
+                "en": "Direction and length of pulling. Action: The starting point serves as a support; the vector to the cursor sets the parameters. Application: Force and angle of impact, velocity vector, direction of construction. Conditions: Display vector and length limitation."
+              }
+            },
+            {
+              "id": "variant-mouse-08-12",
+              "text": {
+                "ru": "Поворот виртуального трекбола. Действие: Вести указателем по поверхности условной сферы. Применение: Осмотр 3D-модели, вращение планеты или сложного предмета. Условия: Это математическая модель вращения, обычной мыши достаточно.",
+                "en": "Rotate the virtual trackball. Action: Move the pointer along the surface of a conditional sphere. Application: Inspection of a 3D model, rotation of a planet or a complex object. Conditions: This is a mathematical model of rotation, an ordinary mouse is enough."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-paths",
+      "section": "section-2",
+      "title": {
+        "ru": "Рисование и форма траектории",
+        "en": "Drawing and Path Shaping"
+      },
+      "description": {
+        "ru": "Значимым становится пройденный путь, а не только конечное положение указателя.",
+        "en": "The path traveled becomes significant, not just the final position of the pointer."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-paths-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-09-01",
+              "text": {
+                "ru": "Свободный штрих. Действие: Вести мышью с активным инструментом. Применение: Рисование, подпись, пометка карты, создание следа. Условия: Сглаживание не должно чрезмерно менять намеренную форму.",
+                "en": "Free stroke. Action: Move with the mouse with the tool active. Application: Drawing, signing, marking a map, creating a trail. Conditions: Anti-aliasing should not unduly change the intended shape."
+              }
+            },
+            {
+              "id": "variant-mouse-09-02",
+              "text": {
+                "ru": "Ломаная кликами. Действие: Последовательными кликами задать вершины, затем завершить. Применение: Маршрут, контур, проволока, стена. Условия: Нужны удаление последней точки и явное завершение.",
+                "en": "Broken by clicks. Action: Define vertices by successive clicks, then complete. Application: Route, contour, wire, wall. Conditions: Requires deletion of the last point and explicit completion."
+              }
+            },
+            {
+              "id": "variant-mouse-09-03",
+              "text": {
+                "ru": "Обводка образца. Действие: Повторить заданный контур или линию. Применение: Каллиграфия, обучение жесту, ритуал, точная резка. Условия: Оценивать допуск к траектории отдельно от скорости.",
+                "en": "Outlining the sample. Action: Repeat a given contour or line. Application: Calligraphy, teaching gesture, ritual, precision cutting. Conditions: Evaluate path tolerance separately from speed."
+              }
+            },
+            {
+              "id": "variant-mouse-09-04",
+              "text": {
+                "ru": "Направленный свайп мышью. Действие: Быстро провести в заданном направлении, обычно с кнопкой. Применение: Рубящий удар, уклонение, перелистывание, жест-команда. Условия: Направление, дистанция и скорость являются разными порогами.",
+                "en": "Directional mouse swipe. Action: Swipe quickly in a given direction, usually with a button. Application: Slash, dodge, flip, gesture command. Conditions: Direction, distance and speed are different thresholds."
+              }
+            },
+            {
+              "id": "variant-mouse-09-05",
+              "text": {
+                "ru": "Круговое движение. Действие: Выполнить оборот или дугу вокруг центра. Применение: Крутить рукоятку, размешивать, сматывать, накапливать вращение. Условия: Считать угол, а не только длину пути.",
+                "en": "Roundabout Circulation. Action: Perform a revolution or arc around the center. Application: Twist the handle, stir, wind, accumulate rotation. Conditions: Count the angle, not just the length of the path."
+              }
+            },
+            {
+              "id": "variant-mouse-09-06",
+              "text": {
+                "ru": "Движение туда-обратно. Действие: Повторять возвратно-поступательные движения. Применение: Пилить, тереть, точить, раздувать огонь. Условия: Учитывать амплитуду и развороты, а не случайный шум.",
+                "en": "Back and forth movement. Action: Repeat back-and-forth movements. Application: Sawing, rubbing, sharpening, fanning the fire. Conditions: Take into account the amplitude and turns, and not random noise."
+              }
+            },
+            {
+              "id": "variant-mouse-09-07",
+              "text": {
+                "ru": "Встряхивание. Действие: Сделать несколько быстрых смен направления. Применение: Стряхнуть эффект, освободить предмет, перемешать содержимое. Условия: Высокая чувствительность может превратить дрожание в ложный жест.",
+                "en": "Shaking. Action: Make several quick changes of direction. Application: Shake off the effect, release the object, mix the contents. Conditions: High sensitivity can turn the shaking into a false gesture."
+              }
+            },
+            {
+              "id": "variant-mouse-09-08",
+              "text": {
+                "ru": "Распознавание символа. Действие: Нарисовать узнаваемую форму целиком. Применение: Руны, заклинания, условные знаки, распознавание рукописного ввода. Условия: Нужны обучение, допуски и разбор нераспознанного результата.",
+                "en": "Character recognition. Action: Draw a recognizable shape in its entirety. Application: Runes, spells, symbols, handwriting recognition. Conditions: Training, approvals and analysis of the unrecognized result are required."
+              }
+            },
+            {
+              "id": "variant-mouse-09-09",
+              "text": {
+                "ru": "Маркировочное меню жестом. Действие: Из опорной точки выполнить короткую траекторию нужного направления. Применение: Быстрая команда по памяти, выбор инструмента без поиска пункта. Условия: Желателен видимый вариант меню для начинающих.",
+                "en": "Gesture marking menu. Action: From the reference point, execute a short trajectory in the desired direction. Application: Quick command from memory, selecting a tool without searching for an item. Conditions: A visible menu option is desirable for beginners."
+              }
+            },
+            {
+              "id": "variant-mouse-09-10",
+              "text": {
+                "ru": "Разрез пересечением. Действие: Провести линию через цель или несколько целей. Применение: Разрубить верёвку, нарезать объекты, разорвать связь в графе. Условия: Проверять пересечение всего сегмента пути, а не редких точек событий.",
+                "en": "Intersection cut. Action: Draw a line through a target or several targets. Application: Cut a rope, cut objects, break a connection in a graph. Conditions: Check the intersection of the entire path segment, and not rare event points."
+              }
+            },
+            {
+              "id": "variant-mouse-09-11",
+              "text": {
+                "ru": "Закрашивание или стирание области. Действие: Покрывать поверхность проходами кисти. Применение: Раскраска, очистка грязи, снятие слоя, проявление тайного изображения. Условия: Учитывать площадь покрытия, а не просто длину движения.",
+                "en": "Painting over or erasing an area. Action: Cover the surface with passes of the brush. Application: Coloring, cleaning dirt, removing a layer, developing a secret image. Conditions: Consider the coverage area, and not just the length of the movement."
+              }
+            },
+            {
+              "id": "variant-mouse-09-12",
+              "text": {
+                "ru": "Замыкание контура. Действие: Обвести участок и вернуться к начальной области. Применение: Захват территории, выделение зоны, создание петли или печати. Условия: Задать допуск замыкания и правила самопересечения.",
+                "en": "Closing a loop. Action: Draw an area and return to the starting area. Application: Capture an area, mark a zone, create a loop or seal. Conditions: Set the closure tolerance and self-intersection rules."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-precision",
+      "section": "section-2",
+      "title": {
+        "ru": "Точность и пространственные испытания",
+        "en": "Precision and spatial challenges"
+      },
+      "description": {
+        "ru": "Сложность задают расположение целей, допустимые области, скорость и устойчивость движения.",
+        "en": "Difficulty is determined by the location of targets, acceptable areas, speed and stability of movement."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-precision-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-10-01",
+              "text": {
+                "ru": "Попадание в малую цель. Действие: Точно навести и подать команду. Применение: Тест точности, микрохирургия, мелкие переключатели. Условия: Размер цели должен соответствовать задаче и возможностям аудитории.",
+                "en": "Hitting a small target. Action: Accurately point and give a command. Application: Accuracy test, microsurgery, small switches. Conditions: The size of the target must correspond to the task and capabilities of the audience."
+              }
+            },
+            {
+              "id": "variant-mouse-10-02",
+              "text": {
+                "ru": "Переход между целями. Действие: Переводить курсор по заданному набору точек. Применение: Тренировка наведения, работа оператора, последовательная активация узлов. Условия: Расстояние и размер цели меняют трудность независимо.",
+                "en": "Transition between goals. Action: Move the cursor over a given set of points. Application: Targeting training, operator work, sequential activation of nodes. Conditions: Distance and target size change the difficulty independently."
+              }
+            },
+            {
+              "id": "variant-mouse-10-03",
+              "text": {
+                "ru": "Слежение за движущейся целью. Действие: Непрерывно удерживать указатель на цели. Применение: Сканирование объекта, сопровождение, прицеливание, исследование. Условия: Скорость цели и длительность контакта задавать раздельно.",
+                "en": "Tracking a moving target. Action: Continuously hold the pointer on the target. Application: Scanning an object, tracking, aiming, research. Conditions: Set target speed and contact duration separately."
+              }
+            },
+            {
+              "id": "variant-mouse-10-04",
+              "text": {
+                "ru": "Удержание в безопасной зоне. Действие: Оставаться внутри области ограниченное время. Применение: Стабилизация инструмента, балансировка, обезвреживание. Условия: Показывать запас до границы и накопленный прогресс.",
+                "en": "Keeping in a safe zone. Action: Stay inside the area for a limited time. Application: Tool stabilization, balancing, neutralization. Conditions: Show margin to the border and accumulated progress."
+              }
+            },
+            {
+              "id": "variant-mouse-10-05",
+              "text": {
+                "ru": "Прохождение коридора. Действие: Провести указатель от входа к выходу, не касаясь стен. Применение: Лабиринт курсором, проводка инструмента, точная операция. Условия: Проверять отрезки движения между событиями, чтобы не пропускать стены.",
+                "en": "Passage of the corridor. Action: Move the pointer from the entrance to the exit without touching the walls. Application: Labyrinth with a cursor, guiding a tool, precision operation. Conditions: Check the segments of movement between events so as not to miss the walls."
+              }
+            },
+            {
+              "id": "variant-mouse-10-06",
+              "text": {
+                "ru": "Уклонение курсором. Действие: Избегать движущихся опасных областей. Применение: Аркада с курсором-персонажем, защита инструмента от помех. Условия: Обозначить размер игровой области столкновения курсора.",
+                "en": "Dodging with the cursor. Action: Avoid moving dangerous areas. Application: Arcade with character cursor, protect the tool from interference. Conditions: Designate the size of the game cursor collision area."
+              }
+            },
+            {
+              "id": "variant-mouse-10-07",
+              "text": {
+                "ru": "Последовательное пересечение ворот. Действие: Проходить контрольные зоны в заданном порядке. Применение: Маршрут, воздушные ворота, проводка сигнала. Условия: Система должна показывать следующую обязательную зону.",
+                "en": "Sequential crossing of gates. Action: Pass control zones in a given order. Application: Route, air gates, signal wiring. Conditions: The system must show the following mandatory zone."
+              }
+            },
+            {
+              "id": "variant-mouse-10-08",
+              "text": {
+                "ru": "Соблюдение направления. Действие: Вести указатель в разрешённом направлении относительно линии или поверхности. Применение: Правильная шлифовка, расчёсывание, односторонняя резка. Условия: Показывать направление и допуск угла.",
+                "en": "Maintaining direction. Action: Move the pointer in the permitted direction relative to a line or surface. Application: Proper grinding, combing, one-sided cutting. Conditions: Show direction and angle tolerance."
+              }
+            },
+            {
+              "id": "variant-mouse-10-09",
+              "text": {
+                "ru": "Соблюдение скорости. Действие: Двигать мышь внутри заданного диапазона скорости. Применение: Сварка, покраска, перенос хрупкого предмета, ведение инструмента. Условия: Скорость вычислять по времени; учитывать чувствительность и масштаб.",
+                "en": "Maintain speed. Action: Move the mouse within the specified speed range. Application: Welding, painting, carrying a fragile object, guiding a tool. Conditions: Calculate speed based on time; consider sensitivity and scale."
+              }
+            },
+            {
+              "id": "variant-mouse-10-10",
+              "text": {
+                "ru": "Стабилизация с возмущениями. Действие: Компенсировать программный снос или раскачивание курсором. Применение: Баланс, удержание луча, наведение в условиях помех. Условия: Отделить визуальное возмущение от реальных настроек мыши.",
+                "en": "Stabilization with disturbances. Action: Compensate for software drift or cursor wobble. Application: Balance, beam hold, aiming in cluttered conditions. Conditions: Separate visual disturbance from actual mouse settings."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-2",
+      "title": {
+        "ru": "Время, ритм и реакция",
+        "en": "Timing, rhythm and reaction"
+      },
+      "description": {
+        "ru": "Одинаковый клик или жест получает результат в зависимости от момента, длительности и темпа.",
+        "en": "The same click or gesture gets a result depending on the moment, duration and tempo."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-11-01",
+              "text": {
+                "ru": "Клик на сигнал. Действие: Нажать после появления разрешённого сигнала. Применение: Старт гонки, реакция оператора, испытание внимательности. Условия: Задержка устройства и изображения влияет на измеряемый результат.",
+                "en": "Click on the signal. Action: Press after the enabled signal appears. Application: Race start, operator reaction, test of attentiveness. Conditions: Device and image delay affects the measured result."
+              }
+            },
+            {
+              "id": "variant-mouse-11-02",
+              "text": {
+                "ru": "Клик в ритм. Действие: Нажимать в заданные музыкальные или визуальные доли. Применение: Ритм-игра, рабочий цикл станка, музыкальный инструмент. Условия: Нужны настройка задержки и понятные категории точности.",
+                "en": "Click to the rhythm. Action: Press on specified musical or visual beats. Application: Rhythm game, machine cycle, musical instrument. Conditions: Delay settings and clear accuracy categories are needed."
+              }
+            },
+            {
+              "id": "variant-mouse-11-03",
+              "text": {
+                "ru": "Удержание ноты. Действие: Нажать в начале интервала и отпустить в конце. Применение: Длинные ноты, непрерывный сигнал, удержание окна доступа. Условия: Начало, поддержание и конец можно оценивать отдельно.",
+                "en": "Holding a note. Action: Press at the beginning of the interval and release at the end. Application: Long notes, continuous signal, holding access window. Conditions: Start, maintenance and end can be assessed separately."
+              }
+            },
+            {
+              "id": "variant-mouse-11-04",
+              "text": {
+                "ru": "Остановка движущейся шкалы. Действие: Кликнуть, когда индикатор войдёт в нужную область. Применение: Замок, удар, ковка, перезарядка, точное дозирование. Условия: Показывать границы успешного окна.",
+                "en": "Stopping the moving scale. Action: Click when the indicator enters the desired area. Application: Lock, strike, forge, reload, precise dosing. Conditions: Show the boundaries of the successful window."
+              }
+            },
+            {
+              "id": "variant-mouse-11-05",
+              "text": {
+                "ru": "Отпускание в окно. Действие: Заранее держать кнопку и отпустить в нужный момент. Применение: Бросок, парирование, спуск механизма. Условия: Предусмотреть отмену, если пользователь начал подготовку случайно.",
+                "en": "Letting go out the window. Action: Hold the button in advance and release at the right moment. Application: Throw, parry, release of the mechanism. Conditions: Provide for cancellation if the user started preparing by accident."
+              }
+            },
+            {
+              "id": "variant-mouse-11-06",
+              "text": {
+                "ru": "Серия с ограниченными паузами. Действие: Выполнить цепочку команд с допустимыми интервалами. Применение: Комбо, серия операций, последовательность обезвреживания. Условия: Показывать продолжение цепочки и причину её разрыва.",
+                "en": "Series with limited pauses. Action: Execute a chain of commands at acceptable intervals. Application: Combo, series of operations, neutralization sequence. Conditions: Show the continuation of the chain and the reason for its break."
+              }
+            },
+            {
+              "id": "variant-mouse-11-07",
+              "text": {
+                "ru": "Поддержание темпа. Действие: Нажимать или двигать мышью с устойчивой частотой. Применение: Гребля, ручной генератор, поддержание работы механизма. Условия: Частота и максимальная скорость нажатий являются разными задачами.",
+                "en": "Maintaining the pace. Action: Click or move the mouse at a steady rate. Application: Rowing, hand generator, maintaining machinery. Conditions: Frequency and maximum click speed are different tasks."
+              }
+            },
+            {
+              "id": "variant-mouse-11-08",
+              "text": {
+                "ru": "Быстрая серия за время. Действие: Успеть выполнить нужное число команд до дедлайна. Применение: Выход из захвата, аварийный ручной запуск, короткое испытание. Условия: Требует альтернативы для пользователей с ограниченной моторикой.",
+                "en": "Quick series over time. Action: Complete the required number of commands before the deadline. Application: Release from grip, emergency manual launch, short test. Conditions: Requires an alternative for users with limited motor skills."
+              }
+            },
+            {
+              "id": "variant-mouse-11-09",
+              "text": {
+                "ru": "Запрет на преждевременное действие. Действие: Ждать разрешения и не кликать на ложные сигналы. Применение: Проверка внимания, дисциплина стрельбы, распознавание угроз. Условия: Отличать ложный сигнал визуально или по заранее изученному правилу.",
+                "en": "Prohibition of premature action. Action: Wait for permission and do not click on false signals. Application: Checking attention, shooting discipline, threat recognition. Conditions: Recognize a false signal visually or according to a previously learned rule."
+              }
+            },
+            {
+              "id": "variant-mouse-11-10",
+              "text": {
+                "ru": "Движение по ритмическому рисунку. Действие: Выполнять нужные жесты и смены направления в определённые моменты. Применение: Дирижирование, танцевальный ввод мышью, сборка по такту. Условия: Оценку пути и времени объяснять раздельно.",
+                "en": "Movement according to a rhythmic pattern. Action: Perform the necessary gestures and changes of direction at certain moments. Application: Conducting, dance input with the mouse, assembly by beat. Conditions: Estimation of the path and time should be explained separately."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-combat",
+      "section": "section-2",
+      "title": {
+        "ru": "Прицеливание и бой",
+        "en": "Aiming and Combat"
+      },
+      "description": {
+        "ru": "Игровые схемы, в которых мышь задаёт направление атаки, выбор цели и выполнение боевого действия.",
+        "en": "Game patterns in which the mouse sets the direction of attack, selecting a target and performing a combat action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-combat-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-12-01",
+              "text": {
+                "ru": "Прицел в координатах экрана. Действие: Положение курсора непосредственно задаёт положение прицела. Применение: Тир, рельсовый шутер, стрельба по экранным целям. Условия: Это экранные координаты, а не абсолютные координаты мыши на столе.",
+                "en": "Sight in screen coordinates. Action: The cursor position directly sets the position of the sight. Application: Shooting gallery, rail shooter, shooting at on-screen targets. Conditions: These are screen coordinates, not absolute mouse coordinates on the table."
+              }
+            },
+            {
+              "id": "variant-mouse-12-02",
+              "text": {
+                "ru": "Относительное наведение. Действие: Смещение мыши меняет углы прицела или камеры. Применение: Шутер от первого лица, турель, управление обзором. Условия: Нужен захват относительного ввода и выход из него.",
+                "en": "Relative guidance. Action: Mouse movement changes crosshair or camera angles. Application: First person shooter, turret, view control. Conditions: Need to capture relative input and escape from it."
+              }
+            },
+            {
+              "id": "variant-mouse-12-03",
+              "text": {
+                "ru": "Направление от персонажа к курсору. Действие: Вектор от героя к указателю определяет направление атаки. Применение: Экшен с видом сверху, оружие ближнего боя, направленный инструмент. Условия: У самой позиции героя вектор неустойчив; нужна обработка малой дистанции.",
+                "en": "Direction from character to cursor. Action: The vector from the hero to the pointer determines the direction of the attack. Application: Top-down action, melee weapon, directional tool. Conditions: The vector is unstable at the hero’s position itself; short distance processing needed."
+              }
+            },
+            {
+              "id": "variant-mouse-12-04",
+              "text": {
+                "ru": "Быстрый перевод и выстрел, flick. Действие: Резко перевести прицел к цели и нажать. Применение: Одиночный точный выстрел, реакция на внезапную угрозу. Условия: Сложность зависит и от дистанции перевода, и от размера цели.",
+                "en": "Quick translation and shot, flick. Action: Sharply move the sight to the target and press. Application: Single accurate shot, reaction to a sudden threat. Conditions: Difficulty depends on both the translation distance and the size of the target."
+              }
+            },
+            {
+              "id": "variant-mouse-12-05",
+              "text": {
+                "ru": "Сопровождение с огнём, tracking. Действие: Вести прицел за целью во время удержания огня. Применение: Луч, автоматическое оружие, постепенное сканирование слабой точки. Условия: Поддерживать читаемость цели и обратную связь попаданий.",
+                "en": "Escort with fire, tracking. Action: Keep sights on the target while holding fire. Application: Beam, automatic weapon, gradual scanning of weak point. Conditions: Maintain target readability and hit feedback."
+              }
+            },
+            {
+              "id": "variant-mouse-12-06",
+              "text": {
+                "ru": "Упреждение. Действие: Навести прицел перед движущейся целью. Применение: Снаряды с конечной скоростью, баллистика, перехват. Условия: Предсказание определяется моделью снаряда и движения цели.",
+                "en": "Leading a moving target. Action: Aim ahead of the target. Application: Finite-speed projectiles, ballistics and interception. Conditions: Prediction depends on the projectile model and the target's movement."
+              }
+            },
+            {
+              "id": "variant-mouse-12-07",
+              "text": {
+                "ru": "Компенсация отдачи. Действие: Противодействовать уводу прицела движением мыши. Применение: Контроль очереди, работа мощного инструмента. Условия: Случайный разброс и компенсируемый увод являются разными механизмами.",
+                "en": "Recoil compensation. Action: Counteract the sight movement with the mouse. Application: Queue control, operation of a powerful tool. Conditions: Random scatter and compensated movement are different mechanisms."
+              }
+            },
+            {
+              "id": "variant-mouse-12-08",
+              "text": {
+                "ru": "Захват и переключение цели. Действие: Выбрать цель мышью, удержать захват или переключить кандидата. Применение: Самонаведение, сопровождение босса, командование отрядом. Условия: Показывать выбранную цель и причины потери захвата.",
+                "en": "Target acquisition and switching. Action: Select a target with the mouse, hold the capture or switch the candidate. Application: Homing, boss escort, squad command. Conditions: Show the selected target and the reasons for losing the capture."
+              }
+            },
+            {
+              "id": "variant-mouse-12-09",
+              "text": {
+                "ru": "Выбор точки и области способности. Действие: Навести центр зоны, при необходимости задать направление и подтвердить. Применение: Взрыв, лечение области, стена, конусная атака. Условия: Показывать дальность, препятствия, стоимость и будущую область эффекта.",
+                "en": "Selecting the ability point and area. Action: Aim at the center of the area, set direction if necessary and confirm. Application: Explosion, area healing, wall, cone attack. Conditions: Show range, obstacles, cost and future area of ​​effect."
+              }
+            },
+            {
+              "id": "variant-mouse-12-10",
+              "text": {
+                "ru": "Жест направления удара. Действие: Движением мыши выбрать сторону замаха или рубящего удара. Применение: Фехтование, направленная защита, разрезание препятствий. Условия: Распознавать намеренный жест отдельно от обычного наведения камеры.",
+                "en": "Gesture of the direction of the blow. Action: Move the mouse to select the side of the swing or slash. Application: Fencing, directed defense, cutting obstacles. Conditions: Recognize an intentional gesture separately from normal camera aiming."
+              }
+            },
+            {
+              "id": "variant-mouse-12-11",
+              "text": {
+                "ru": "Заряд с одновременным наведением. Действие: Удерживать кнопку для силы и продолжать выбирать направление. Применение: Лук, бросок гранаты, заряжаемая способность. Условия: Состояния зарядки и допустимость выстрела должны быть видимы одновременно.",
+                "en": "Charge with simultaneous guidance. Action: Hold the button for power and continue to choose a direction. Application: Bow, grenade throw, charging ability. Conditions: Charge states and shot allowance must be visible at the same time."
+              }
+            },
+            {
+              "id": "variant-mouse-12-12",
+              "text": {
+                "ru": "Натяжение и отпускание. Действие: Потянуть от опоры назад, отпустить для запуска. Применение: Рогатка, бильярдный удар, катапульта, отбрасывание. Условия: Длина и направление натяжения задают виртуальный импульс.",
+                "en": "Tension and release. Action: Pull back from the support, release to launch. Application: Slingshot, billiard shot, catapult, throwback. Conditions: The length and direction of the pull set the virtual impulse."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-movement",
+      "section": "section-2",
+      "title": {
+        "ru": "Перемещение и камера",
+        "en": "Moving and Camera"
+      },
+      "description": {
+        "ru": "Мышь задаёт назначение, путь, скорость перемещения, ориентацию персонажа или обзор.",
+        "en": "The mouse sets the destination, path, movement speed, character orientation or view."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-movement-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-13-01",
+              "text": {
+                "ru": "Перемещение к точке. Действие: Кликнуть место назначения. Применение: Приключение, стратегия, тактическое перемещение, навигация по сцене. Условия: Нужна обратная связь о достижимости и построенном пути.",
+                "en": "Move to a point. Action: Click destination. Application: Adventure, strategy, tactical movement, scene navigation. Conditions: Need feedback on reachability and path constructed."
+              }
+            },
+            {
+              "id": "variant-mouse-13-02",
+              "text": {
+                "ru": "Следование за курсором. Действие: Персонаж или объект непрерывно стремится к позиции указателя. Применение: Аркада, питомец, управляемый дрон, движение судна. Условия: Определить скорость, остановку и поведение у препятствий.",
+                "en": "Following the cursor. Action: The character or object continuously moves towards the pointer position. Application: Arcade, pet, controlled drone, ship movement. Conditions: Determine speed, stopping and behavior at obstacles."
+              }
+            },
+            {
+              "id": "variant-mouse-13-03",
+              "text": {
+                "ru": "Прямое управление экранным объектом. Действие: Позиция объекта следует указателю с выбранным отображением координат. Применение: Ракетка, курсор-персонаж, перемещение инструмента. Условия: Не путать с физическим перемещением: задержка и инерция здесь опциональны.",
+                "en": "Direct display object control. Action: The object's position follows the pointer with the selected coordinate display. Application: Racket, character cursor, tool movement. Conditions: Not to be confused with physical movement: delay and inertia are optional here."
+              }
+            },
+            {
+              "id": "variant-mouse-13-04",
+              "text": {
+                "ru": "Управление скоростью по отклонению. Действие: Расстояние и направление от опорной точки задают скорость движения. Применение: Корабль, самолёт, транспорт, виртуальный джойстик. Условия: Без нейтральной зоны трудно точно остановиться.",
+                "en": "Deviation speed control. Action: The distance and direction from the reference point determine the speed of movement. Application: Ship, plane, transport, virtual joystick. Conditions: Without a neutral zone it is difficult to stop accurately."
+              }
+            },
+            {
+              "id": "variant-mouse-13-05",
+              "text": {
+                "ru": "Руление относительным движением. Действие: Горизонтальные смещения мыши меняют угол руля или курс. Применение: Гонки, лодка, наземный робот. Условия: Нужны понятные ограничения руля и способ его центрировать.",
+                "en": "Relative motion steering. Action: Horizontal mouse movements change the steering angle or heading. Application: Racing, boat, land robot. Conditions: Need clear steering constraints and a way to center it."
+              }
+            },
+            {
+              "id": "variant-mouse-13-06",
+              "text": {
+                "ru": "Очередь точек маршрута. Действие: Последовательно кликать точки с режимом добавления. Применение: Патруль, движение отряда, план полёта, роботизированный маршрут. Условия: Показывать порядок, соединения и возможность удалить точку.",
+                "en": "Queue of waypoints. Action: Consecutively click on points with adding mode. Application: Patrol, squad movement, flight plan, robotic route. Conditions: Show order, connections and the ability to delete a point."
+              }
+            },
+            {
+              "id": "variant-mouse-13-07",
+              "text": {
+                "ru": "Нарисованный маршрут. Действие: Протянуть линию предполагаемого движения. Применение: Управление потоком, тактическая траектория, полёт снаряда. Условия: Сопоставить рисуемый путь с проходимостью и ограничениями движения.",
+                "en": "Drawn route. Action: Draw a line of intended movement. Application: Flow control, tactical trajectory, projectile flight. Conditions: Compare the drawn path with patency and movement restrictions."
+              }
+            },
+            {
+              "id": "variant-mouse-13-08",
+              "text": {
+                "ru": "Свободный обзор мышью. Действие: Смещениями мыши менять горизонтальный и вертикальный углы камеры. Применение: Обзор от первого или третьего лица, виртуальная экскурсия. Условия: Дать настройку чувствительности и инверсии; корректно освобождать указатель.",
+                "en": "Free mouse browsing. Action: Change the horizontal and vertical camera angles by moving the mouse. Application: First or third person view, virtual tour. Conditions: Set sensitivity and inversion; free the pointer correctly."
+              }
+            },
+            {
+              "id": "variant-mouse-13-09",
+              "text": {
+                "ru": "Орбитальная камера. Действие: Перетаскиванием вращать камеру вокруг выбранного объекта. Применение: Осмотр модели, персонажа, здания, детали головоломки. Условия: Сохранять понятный центр вращения.",
+                "en": "Orbital camera. Action: By dragging, rotate the camera around the selected object. Application: Inspection of a model, character, building, puzzle piece. Conditions: Maintain a clear center of rotation."
+              }
+            },
+            {
+              "id": "variant-mouse-13-10",
+              "text": {
+                "ru": "Панорамирование захватом фона. Действие: Тянуть фон карты или холста. Применение: Стратегическая карта, схема, редактор, навигация по большому полю. Условия: Согласовать направление: тянется содержимое или движется камера.",
+                "en": "Panning by capturing the background. Action: Drag the background of a map or canvas. Application: Strategic map, diagram, editor, large field navigation. Conditions: Agree on the direction: content is dragged or the camera moves."
+              }
+            },
+            {
+              "id": "variant-mouse-13-11",
+              "text": {
+                "ru": "Краевая прокрутка. Действие: Подвести указатель к краю видимой области. Применение: Обзор в стратегии, перемещение по большому полю. Условия: В оконном режиме границы и многомониторная конфигурация требуют проверки.",
+                "en": "Edge scrolling. Action: Move the pointer to the edge of the visible area. Application: Review in a strategy, moving around a large field. Conditions: In windowed mode, borders and multi-monitor configuration require checking."
+              }
+            },
+            {
+              "id": "variant-mouse-13-12",
+              "text": {
+                "ru": "Навигация мини-картой. Действие: Кликнуть или тянуть область обзора на уменьшенной карте. Применение: Быстрый перенос камеры, выбор района, навигация по документу. Условия: Различать команду камере и приказ игровому объекту.",
+                "en": "Mini map navigation. Action: Click or drag the viewing area on the reduced map. Application: Quickly move the camera, select an area, navigate through a document. Conditions: Distinguish between a command to the camera and an order to the game object."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-physical",
+      "section": "section-2",
+      "title": {
+        "ru": "Физические предметы и инструменты",
+        "en": "Physical objects and tools"
+      },
+      "description": {
+        "ru": "Движения указателя интерпретируются как работа виртуальной руки, механизма или инструмента.",
+        "en": "Pointer movements are interpreted as the operation of a virtual hand, mechanism, or tool."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-physical-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mouse-14-01",
+              "text": {
+                "ru": "Захват через физическую связь. Действие: Удерживать предмет виртуальной пружиной или ограничением и двигать мышь. Применение: Песочница, перенос хрупких предметов, манипуляция рычагами. Условия: Прямое телепортирование объекта и физический захват дают разное поведение.",
+                "en": "Capture via physical connection. Action: Hold an object with a virtual spring or constraint and move the mouse. Application: Sandbox, carrying fragile objects, manipulating levers. Conditions: Directly teleporting an object and physically grabbing it give different behavior."
+              }
+            },
+            {
+              "id": "variant-mouse-14-02",
+              "text": {
+                "ru": "Сдвиг и толчок. Действие: Вести указателем-инструментом в предмет с учётом столкновения. Применение: Бильярдная головоломка, уборка, перемещение объектов на столе. Условия: Сила определяется виртуальной моделью, обычная мышь её не измеряет.",
+                "en": "Shift and push. Action: Move the pointer-tool into an object, taking into account the collision. Application: Billiard puzzle, cleaning, moving objects on the table. Conditions: The force is determined by the virtual model, a regular mouse does not measure it."
+              }
+            },
+            {
+              "id": "variant-mouse-14-03",
+              "text": {
+                "ru": "Дверь, ящик или рычаг. Действие: Захватить ручку и тянуть вдоль разрешённого движения. Применение: Исследование помещения, кабина управления, предметная головоломка. Условия: Ограничить движение осью или шарниром и показать доступный ход.",
+                "en": "Door, drawer or lever. Action: Grab the handle and pull along the allowed movement. Application: Exploration of the room, control cabin, object puzzle. Conditions: Limit the movement to an axis or hinge and show the available movement."
+              }
+            },
+            {
+              "id": "variant-mouse-14-04",
+              "text": {
+                "ru": "Винт, вентиль или рукоятка. Действие: Вращать указатель вокруг опоры или выполнять повторяемые дуги. Применение: Ремонт, открытие клапана, механический замок, ручной подъёмник. Условия: Показывать направление, сопротивление и завершение операции.",
+                "en": "Screw, valve or handle. Action: Rotate the pointer around a support or perform repeatable arcs. Application: Repair, valve opening, mechanical lock, manual lift. Conditions: Show direction, resistance and completion of operation."
+              }
+            },
+            {
+              "id": "variant-mouse-14-05",
+              "text": {
+                "ru": "Натягивание гибкого объекта. Действие: Перемещать захват, изменяя длину или натяжение связи. Применение: Трос, резинка, струна, перетягивание. Условия: Натяжение рассчитывается моделью, не считывается с руки пользователя.",
+                "en": "Pulling a flexible object. Action: Move the grip by changing the length or tension of the connection. Application: Cable, elastic band, string, tug. Conditions: Tension is calculated by the model, not read from the user's hand."
+              }
+            },
+            {
+              "id": "variant-mouse-14-06",
+              "text": {
+                "ru": "Наливание наклоном. Действие: Движением мыши менять виртуальный угол сосуда. Применение: Кулинария, химическая задача, дозирование жидкости. Условия: Обычная мышь управляет углом программно, без датчика наклона корпуса.",
+                "en": "Pouring by tilt. Action: Move the mouse to change the virtual angle of the vessel. Application: Cooking, chemical task, liquid dosing. Conditions: A regular mouse controls the angle programmatically, without a body tilt sensor."
+              }
+            },
+            {
+              "id": "variant-mouse-14-07",
+              "text": {
+                "ru": "Дозирование потоком. Действие: Удерживать кнопку или вести регулятор для подачи вещества. Применение: Клей, краска, вода, топливо, ингредиенты. Условия: Показать скорость подачи, запас и итоговое количество.",
+                "en": "Flow dosing. Action: Hold the button or move the dial to supply the substance. Application: Glue, paint, water, fuel, ingredients. Conditions: Show the feed rate, stock and total quantity."
+              }
+            },
+            {
+              "id": "variant-mouse-14-08",
+              "text": {
+                "ru": "Трение и очистка. Действие: Повторными проходами инструмента воздействовать на поверхность. Применение: Мытьё, полировка, археология, проявление изображения. Условия: Связывать результат с обработанной площадью и выбранным инструментом.",
+                "en": "Friction and cleaning. Action: Repeated passes of the tool to influence the surface. Application: Washing, polishing, archeology, image development. Conditions: Relate the result to the treated area and the selected tool."
+              }
+            },
+            {
+              "id": "variant-mouse-14-09",
+              "text": {
+                "ru": "Работа по материалу. Действие: Вести режущий, сверлящий или нагревающий инструмент по детали. Применение: Крафт, сварка, резка, обработка дерева. Условия: Форма пути, скорость и время контакта могут оцениваться независимо.",
+                "en": "Work on the material. Action: Guide a cutting, drilling or heating tool along a workpiece. Application: Crafting, welding, cutting, woodworking. Conditions: Path shape, speed and contact time can be assessed independently."
+              }
+            },
+            {
+              "id": "variant-mouse-14-10",
+              "text": {
+                "ru": "Установка и стыковка деталей. Действие: Перенести, повернуть и совместить деталь с посадочным местом. Применение: Сборка устройства, ремонт, конструктор, пространственная головоломка. Условия: Показать допуск, ориентацию и условия окончательной фиксации.",
+                "en": "Installation and joining of parts. Action: Transfer, rotate and align the part with the seat. Application: Device assembly, repair, designer, spatial puzzle. Conditions: Show tolerance, orientation and final fixation conditions."
+              }
+            },
+            {
+              "id": "variant-mouse-14-11",
+              "text": {
+                "ru": "Балансирование предмета. Действие: Смещать опору или прикладываемое воздействие мышью. Применение: Поднос, шаткая конструкция, перенос груза, балансирующая платформа. Условия: Игроку нужна читаемая связь между движением и изменением равновесия.",
+                "en": "Balancing an item. Action: Move a support or applied force with the mouse. Application: Tray, wobbly structure, carrying a load, balancing platform. Conditions: The player needs a readable connection between movement and change in balance."
+              }
+            },
+            {
+              "id": "variant-mouse-14-12",
+              "text": {
+                "ru": "Одновременная работа двух инструментов. Действие: Одной кнопкой удерживать инструмент, другой выполнять второй этап. Применение: Пинцет и резак, зажим и пайка, удержание и обработка детали. Условия: Один указатель не даёт двух независимых позиций; второй инструмент требует отдельной модели управления.",
+                "en": "Simultaneous operation of two instruments. Action: Hold the tool with one button, perform the second step with the other. Application: Tweezers and cutter, clamping and soldering, holding and processing the part. Conditions: One pointer does not provide two independent positions; the second tool requires a separate control model."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "W3C: UI Events",
+        "en": "W3C: UI Events"
+      },
+      "url": "https://www.w3.org/TR/uievents/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Pointer Events",
+        "en": "W3C: Pointer Events"
+      },
+      "url": "https://www.w3.org/TR/pointerevents3/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Pointer Lock",
+        "en": "W3C: Pointer Lock"
+      },
+      "url": "https://www.w3.org/TR/pointerlock-2/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

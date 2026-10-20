@@ -1,0 +1,2245 @@
+{
+  "id": "deck-building",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики deck building",
+    "en": "Deck-building mechanics"
+  },
+  "description": {
+    "ru": "Механики deck building: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Deck building mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Дизайнерская таксономия базовых правил и вариантов, включая операции с картами и внешние системы. Число записей не является общепринятой классификацией независимых механик.",
+    "en": "Design taxonomy of basic rules and options, including card operations and external systems. The number of entries is not a generally accepted classification of independent mechanics."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Базовые правила",
+        "en": "Core rules"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Операции с картами",
+        "en": "Card operations"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Системы и контекст",
+        "en": "Systems and context"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-start",
+      "section": "section-1",
+      "title": {
+        "ru": "Старт и устройство колоды",
+        "en": "Starting conditions and deck structure"
+      },
+      "description": {
+        "ru": "Какая колода и какие ограничения доступны игроку в начале.",
+        "en": "What deck and what restrictions are available to the player at the beginning."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/601840/Griftlands/"],
+      "branches": [
+        {
+          "id": "family-start-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-start-01",
+              "text": {
+                "ru": "Стартовый набор. Термин: Starting deck. Правило: Одинаковая для всех либо асимметричная начальная колода задаёт первые возможности и слабые карты для последующей замены.",
+                "en": "Starting deck. Rule: A starting deck that is the same for everyone or asymmetrical sets the first opportunities and weak cards for subsequent replacement."
+              }
+            },
+            {
+              "id": "variant-start-02",
+              "text": {
+                "ru": "Выбор класса или фракции. Термин: Card pool selection. Правило: Выбор героя, фракции или команды определяет доступный пул карт и стартовые способности.",
+                "en": "Card pool selection. Rule: The choice of hero, faction or team determines the available card pool and starting abilities."
+              }
+            },
+            {
+              "id": "variant-start-03",
+              "text": {
+                "ru": "Стартовый драфт. Термин: Starting draft. Правило: Игрок собирает начальную колоду из ограниченных предложений перед основным игровым циклом.",
+                "en": "Starting draft. Rule: The player builds a starting deck from limited offerings before the main game cycle."
+              }
+            },
+            {
+              "id": "variant-start-04",
+              "text": {
+                "ru": "Модульная колода команды. Термин: Team deck. Правило: Карты нескольких выбранных персонажей объединяются в одну колоду; состав команды задаёт набор возможных комбинаций.",
+                "en": "Team deck. Rule: The cards of several selected characters are combined into one deck; the composition of the command specifies a set of possible combinations."
+              }
+            },
+            {
+              "id": "variant-start-05",
+              "text": {
+                "ru": "Несколько функциональных колод. Термин: Multiple decks. Правило: Игрок развивает отдельные колоды для разных задач, например боя и переговоров, распределяя между ними возможности развития.",
+                "en": "Multiple decks. Rule: The player develops separate decks for different tasks, such as combat and negotiations, distributing development opportunities between them."
+              }
+            },
+            {
+              "id": "variant-start-06",
+              "text": {
+                "ru": "Общая или личные колоды. Термин: Shared deck. Правило: У участников отдельные колоды либо общая колода с правилами доступа, собственности и распределения карт.",
+                "en": "Shared deck. Rule: Participants have separate decks or a common deck with rules for access, ownership and distribution of cards."
+              }
+            },
+            {
+              "id": "variant-start-07",
+              "text": {
+                "ru": "Активная колода и резерв. Термин: Sideboard. Правило: Между столкновениями разрешено переносить принадлежащие игроку карты между активной колодой и запасом.",
+                "en": "Sideboard. Rule: Between encounters, it is allowed to transfer player-owned cards between the active deck and the stock."
+              }
+            },
+            {
+              "id": "variant-start-08",
+              "text": {
+                "ru": "Ограничения состава. Термин: Deck constraints. Правило: Минимальный или максимальный размер, лимит копий, обязательные карты и требования к типам определяют допустимые сборки.",
+                "en": "Deck constraints. Rule: Minimum or maximum size, copy limit, required cards, and type requirements determine acceptable builds."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-acquire",
+      "section": "section-1",
+      "title": {
+        "ru": "Получение карт",
+        "en": "Acquiring cards"
+      },
+      "description": {
+        "ru": "Откуда берутся новые карты и насколько игрок управляет выбором.",
+        "en": "Where new cards come from and how much control the player has over the choices."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/601840/Griftlands/"],
+      "branches": [
+        {
+          "id": "family-acquire-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-acquire-01",
+              "text": {
+                "ru": "Покупка карты. Термин: Purchase. Правило: Игрок платит ресурс и добавляет выбранную карту в свою колоду.",
+                "en": "Purchase. Rule: The player pays the resource and adds the selected card to his deck."
+              }
+            },
+            {
+              "id": "variant-acquire-02",
+              "text": {
+                "ru": "Выбор награды. Термин: Reward draft. Правило: После испытания игрок выбирает одну или несколько карт из ограниченного предложения.",
+                "en": "Reward draft. Rule: After the challenge, the player chooses one or more cards from a limited supply."
+              }
+            },
+            {
+              "id": "variant-acquire-03",
+              "text": {
+                "ru": "Отказ от награды. Термин: Skip reward. Правило: Игрок может не брать предложенную карту, сохраняя размер и состав колоды.",
+                "en": "Skip reward. Rule: The player may not take the offered card, maintaining the size and composition of the deck."
+              }
+            },
+            {
+              "id": "variant-acquire-04",
+              "text": {
+                "ru": "Случайное получение. Термин: Random gain. Правило: Игра добавляет карту из заданного пула без выбора конкретной карты игроком.",
+                "en": "Random gain. Rule: The game adds a card from a given pool without the player selecting a specific card."
+              }
+            },
+            {
+              "id": "variant-acquire-05",
+              "text": {
+                "ru": "Поиск по условию. Термин: Targeted gain. Правило: Игрок получает карту определённого типа, стоимости, фракции или другого признака.",
+                "en": "Targeted gain. Rule: The player receives a card of a certain type, value, faction or other attribute."
+              }
+            },
+            {
+              "id": "variant-acquire-06",
+              "text": {
+                "ru": "Драфт между игроками. Термин: Passing draft. Правило: Участники по очереди забирают карты из передаваемых наборов, одновременно формируя доступность карт для остальных.",
+                "en": "Passing draft. Rule: Participants take turns taking cards from the transferred sets, while simultaneously making cards available to others."
+              }
+            },
+            {
+              "id": "variant-acquire-07",
+              "text": {
+                "ru": "Аукцион. Термин: Auction. Правило: Право получить карту определяется ставками ресурсов, очков либо другими обязательствами.",
+                "en": "Auction. Rule: The right to receive a card is determined by the rates of resources, points, or other obligations."
+              }
+            },
+            {
+              "id": "variant-acquire-08",
+              "text": {
+                "ru": "Награда за событие или задание. Термин: Quest reward. Правило: Карта появляется в результате сюжетного решения, контракта, достижения или выбранной ветки события.",
+                "en": "Quest reward. Rule: The card appears as a result of a story decision, contract, achievement, or selected event branch."
+              }
+            },
+            {
+              "id": "variant-acquire-09",
+              "text": {
+                "ru": "Кража, обмен и передача. Термин: Card transfer. Правило: Уже существующая карта переходит между владельцами по правилам обмена, подарка либо захвата.",
+                "en": "Card transfer. Rule: An existing card passes between owners according to the rules of exchange, gift or capture."
+              }
+            },
+            {
+              "id": "variant-acquire-10",
+              "text": {
+                "ru": "Принудительное получение. Термин: Forced gain. Правило: Игрок обязан добавить карту, например проклятие или обязательную награду; отказ недоступен.",
+                "en": "Forced gain. Rule: The player must add a card, such as a curse or a mandatory reward; refusal is not available."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-market",
+      "section": "section-1",
+      "title": {
+        "ru": "Рынок и формирование предложений",
+        "en": "Markets and card offers"
+      },
+      "description": {
+        "ru": "Какие карты доступны для получения и как меняется предложение.",
+        "en": "What cards are available for receipt and how the offer changes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.starrealms.com/learn-to-play"],
+      "branches": [
+        {
+          "id": "family-market-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-market-01",
+              "text": {
+                "ru": "Фиксированные стопки. Термин: Fixed supply. Правило: Открытый набор типов карт известен заранее; игроки приобретают экземпляры из соответствующих стопок.",
+                "en": "Fixed supply. Rule: The open set of card types is known in advance; Players purchase copies from their respective stacks."
+              }
+            },
+            {
+              "id": "variant-market-02",
+              "text": {
+                "ru": "Обновляемый открытый ряд. Термин: Market row. Правило: На рынке лежит несколько карт, а освободившиеся места пополняются из общей колоды.",
+                "en": "Market row. Rule: There are several cards on the market, and the vacant spaces are replenished from the common deck."
+              }
+            },
+            {
+              "id": "variant-market-03",
+              "text": {
+                "ru": "Стопки с меняющимся верхом. Термин: Split pile. Правило: Тип доступной карты меняется по мере разбора стопки; нижние карты временно недоступны.",
+                "en": "Split pile. Rule: The type of card available changes as the stack is sorted; Bottom cards are temporarily unavailable."
+              }
+            },
+            {
+              "id": "variant-market-04",
+              "text": {
+                "ru": "Личный рынок. Термин: Private market. Правило: Предложение доступно только конкретному игроку либо его команде.",
+                "en": "Private market. Rule: The offer is available only to a specific player or his team."
+              }
+            },
+            {
+              "id": "variant-market-05",
+              "text": {
+                "ru": "Слепая покупка. Термин: Blind purchase. Правило: Игрок оплачивает карту или пакет, не зная точного содержимого до получения.",
+                "en": "Blind purchase. Rule: The player pays for a card or package without knowing the exact contents until receipt."
+              }
+            },
+            {
+              "id": "variant-market-06",
+              "text": {
+                "ru": "Обновление предложения. Термин: Reroll. Правило: За плату или через эффект игрок заменяет часть рынка либо вариантов награды.",
+                "en": "Reroll. Rule: For a fee or through an effect, the player replaces part of the market or reward options."
+              }
+            },
+            {
+              "id": "variant-market-07",
+              "text": {
+                "ru": "Резервирование. Термин: Reservation. Правило: Карта временно закрепляется за игроком для последующего получения.",
+                "en": "Reservation. Rule: The card is temporarily assigned to the player for later receipt."
+              }
+            },
+            {
+              "id": "variant-market-08",
+              "text": {
+                "ru": "Удаление с рынка. Термин: Market banish. Правило: Игрок убирает доступную карту, открывая новую или лишая соперника возможности её получить.",
+                "en": "Market banish. Rule: The player removes an available card, revealing a new one or denying the opponent the opportunity to receive it."
+              }
+            },
+            {
+              "id": "variant-market-09",
+              "text": {
+                "ru": "Изменение пула предложений. Термин: Pool manipulation. Правило: Открытие, исключение или изменение веса категорий карт влияет на будущие награды и товары.",
+                "en": "Pool manipulation. Rule: Unlocking, eliminating, or changing the weight of card categories affects future rewards and merchandise."
+              }
+            },
+            {
+              "id": "variant-market-10",
+              "text": {
+                "ru": "Предложения по этапам. Термин: Tiered supply. Правило: Новые уровни рынка, редкости или наборы карт становятся доступны после выполнения условий.",
+                "en": "Tiered supply. Rule: New market levels, rarities or card sets become available after meeting the conditions."
+              }
+            },
+            {
+              "id": "variant-market-11",
+              "text": {
+                "ru": "Старение и перемещение рынка. Термин: Conveyor market. Правило: Карты сдвигаются по позициям, меняют цену или исчезают после установленного времени.",
+                "en": "Conveyor market. Rule: Cards move in position, change price or disappear after a set time."
+              }
+            },
+            {
+              "id": "variant-market-12",
+              "text": {
+                "ru": "Исчерпаемый общий запас. Термин: Limited supply. Правило: Количество экземпляров ограничено; приобретение карты одним игроком уменьшает возможности остальных.",
+                "en": "Limited supply. Rule: Number of copies is limited; the acquisition of a card by one player reduces the capabilities of others."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-economy",
+      "section": "section-1",
+      "title": {
+        "ru": "Цена получения и экономика",
+        "en": "Acquisition costs and economy"
+      },
+      "description": {
+        "ru": "Чем игрок платит за изменение колоды и что конкурирует с этой тратой.",
+        "en": "What the player pays to change the deck and what competes with this expense."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://stoneblade.com/ascension/how-to-play/"],
+      "branches": [
+        {
+          "id": "family-economy-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-economy-01",
+              "text": {
+                "ru": "Возобновляемая валюта хода. Термин: Turn currency. Правило: Ресурс для покупок производится картами и обычно сгорает в конце хода.",
+                "en": "Turn currency. Rule: Resource for purchases is produced by cards and usually expires at the end of the turn."
+              }
+            },
+            {
+              "id": "variant-economy-02",
+              "text": {
+                "ru": "Накопительная валюта. Термин: Persistent currency. Правило: Деньги сохраняются между ходами или боями, позволяя копить на редкие покупки.",
+                "en": "Persistent currency. Rule: Money is saved between turns or battles, allowing you to save for rare purchases."
+              }
+            },
+            {
+              "id": "variant-economy-03",
+              "text": {
+                "ru": "Несколько валют. Термин: Multiple currencies. Правило: Разные карты или действия требуют разных ресурсов, ограничивая взаимозаменяемость покупок.",
+                "en": "Multiple currencies. Rule: Different cards or actions require different resources, limiting the interchangeability of purchases."
+              }
+            },
+            {
+              "id": "variant-economy-04",
+              "text": {
+                "ru": "Лимит приобретений. Термин: Buy limit. Правило: Даже при достатке ресурсов игрок ограничен числом покупок или получений за ход.",
+                "en": "Buy limit. Rule: Even with sufficient resources, the player is limited to the number of purchases or receipts per turn."
+              }
+            },
+            {
+              "id": "variant-economy-05",
+              "text": {
+                "ru": "Скидки и наценки. Термин: Cost modifiers. Правило: Эффекты меняют стоимость выбранной карты, категории карт или всех последующих приобретений.",
+                "en": "Cost modifiers. Rule: Effects change the cost of the selected card, card category, or all subsequent purchases."
+              }
+            },
+            {
+              "id": "variant-economy-06",
+              "text": {
+                "ru": "Долг и отсроченная оплата. Термин: Debt. Правило: Игрок получает преимущество сейчас и обязан оплатить его позже либо сталкивается с ограничениями до погашения.",
+                "en": "Debt. Rule: The player receives the advantage now and must pay it later or face restrictions before redemption."
+              }
+            },
+            {
+              "id": "variant-economy-07",
+              "text": {
+                "ru": "Оплата здоровьем или риском. Термин: Risk payment. Правило: Получение или улучшение карты требует здоровья, повышения угрозы либо принятия другого опасного условия.",
+                "en": "Risk payment. Rule: Obtaining or upgrading a card requires health, increased threat, or accepting another dangerous condition."
+              }
+            },
+            {
+              "id": "variant-economy-08",
+              "text": {
+                "ru": "Карта в обмен на карту. Термин: Exchange. Правило: Для получения новой карты нужно отдать, удалить или заменить уже имеющуюся.",
+                "en": "Exchange. Rule: To get a new card you need to give away, remove or replace the existing one."
+              }
+            },
+            {
+              "id": "variant-economy-09",
+              "text": {
+                "ru": "Плата за очистку и улучшения. Термин: Service economy. Правило: Удаление, копирование и модификация карт конкурируют за ресурсы с покупкой новых карт.",
+                "en": "Service economy. Rule: Removing, copying, and modifying cards compete for resources with purchasing new cards."
+              }
+            },
+            {
+              "id": "variant-economy-10",
+              "text": {
+                "ru": "Альтернативная стоимость развития. Термин: Opportunity cost. Правило: Правила предлагают взаимоисключающий выбор, например улучшить карту, восстановить здоровье или получить другую награду.",
+                "en": "Opportunity cost. Rule: The rules offer mutually exclusive choices, such as upgrading a card, restoring health, or receiving another reward."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-lifecycle",
+      "section": "section-1",
+      "title": {
+        "ru": "Удаление и срок жизни карт",
+        "en": "Card removal and lifespan"
+      },
+      "description": {
+        "ru": "На какой срок карта исчезает и из какой зоны её можно убрать.",
+        "en": "For how long the card disappears and from which zone it can be removed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.starrealms.com/faq"],
+      "branches": [
+        {
+          "id": "family-lifecycle-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-lifecycle-01",
+              "text": {
+                "ru": "Постоянное удаление. Термин: Trash / remove. Правило: Карта покидает состав колоды до конца партии или забега.",
+                "en": "Trash / remove. Rule: The card leaves the deck until the end of the game or run."
+              }
+            },
+            {
+              "id": "variant-lifecycle-02",
+              "text": {
+                "ru": "Удаление из заданной зоны. Термин: Zone-limited removal. Правило: Очистка доступна только для руки, сброса, колоды или сыгранных карт, что меняет цену и момент решения.",
+                "en": "Zone-limited removal. Rule: Clearance is only available for hand, discard, deck or played cards, which changes the cost and decision point."
+              }
+            },
+            {
+              "id": "variant-lifecycle-03",
+              "text": {
+                "ru": "Самоуничтожение. Термин: Self-trash. Правило: Карта удаляет сама себя после применения или для получения дополнительной выгоды.",
+                "en": "Self-trash. Rule: The card removes itself after being used or for additional benefit."
+              }
+            },
+            {
+              "id": "variant-lifecycle-04",
+              "text": {
+                "ru": "Временное исключение из боя. Термин: Exhaust. Правило: Карта уходит из обычного оборота до конца текущего столкновения, если другое правило не вернёт её раньше.",
+                "en": "Exhaust. Rule: A card goes out of normal circulation until the end of the current encounter, unless another rule returns it first."
+              }
+            },
+            {
+              "id": "variant-lifecycle-05",
+              "text": {
+                "ru": "Отложенное возвращение. Термин: Exile / set aside. Правило: Карта откладывается отдельно и возвращается по событию, таймеру или специальному действию.",
+                "en": "Exile / set aside. Rule: The card is set aside separately and returned by event, timer or special action."
+              }
+            },
+            {
+              "id": "variant-lifecycle-06",
+              "text": {
+                "ru": "Исчезновение несыгранной карты. Термин: Ethereal pattern. Правило: Карта временно либо навсегда исключается, если игрок не использовал её в заданный момент.",
+                "en": "Ethereal pattern. Rule: A card is either temporarily or permanently excluded if the player has not used it at the given moment."
+              }
+            },
+            {
+              "id": "variant-lifecycle-07",
+              "text": {
+                "ru": "Ограниченное число применений. Термин: Charges. Правило: У карты конечный запас использований; после его исчерпания она исчезает или перестаёт работать.",
+                "en": "Charges. Rule: A card has a finite supply of uses; after it is exhausted, it disappears or stops working."
+              }
+            },
+            {
+              "id": "variant-lifecycle-08",
+              "text": {
+                "ru": "Износ и поломка. Термин: Durability. Правило: Использование ухудшает карту либо создаёт риск её потери; игрок решает, когда тратить её ресурс.",
+                "en": "Durability. Rule: Use degrades the card or creates the risk of losing it; the player decides when to spend her resource."
+              }
+            },
+            {
+              "id": "variant-lifecycle-09",
+              "text": {
+                "ru": "Возврат в общий запас. Термин: Return to supply. Правило: Карта покидает личную колоду и снова становится доступна для приобретения по правилам общего рынка.",
+                "en": "Return to supply. Rule: The card leaves the personal deck and becomes available for purchase again according to the rules of the general market."
+              }
+            },
+            {
+              "id": "variant-lifecycle-10",
+              "text": {
+                "ru": "Удаление группы карт. Термин: Mass removal. Правило: Один эффект убирает несколько карт, все копии выбранной карты либо целую категорию.",
+                "en": "Mass removal. Rule: One effect removes several cards, all copies of the selected card, or an entire category."
+              }
+            },
+            {
+              "id": "variant-lifecycle-11",
+              "text": {
+                "ru": "Неснимаемые карты. Термин: Unremovable cards. Правило: Часть карт защищена от удаления или требует специального способа очистки.",
+                "en": "Unremovable cards. Rule: Some cards are protected from deletion or require a special cleaning method."
+              }
+            },
+            {
+              "id": "variant-lifecycle-12",
+              "text": {
+                "ru": "Продажа карты. Термин: Sell. Правило: Игрок удаляет карту из своего владения, получая деньги или иной ресурс.",
+                "en": "Sell. Rule: A player removes a card from his possession, receiving money or another resource."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-upgrade",
+      "section": "section-1",
+      "title": {
+        "ru": "Изменение и изготовление карт",
+        "en": "Modifying and crafting cards"
+      },
+      "description": {
+        "ru": "Как развивается отдельный экземпляр карты, а не только состав колоды.",
+        "en": "How an individual copy of a card develops, not just the composition of the deck."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf",
+        "https://www.alderac.com/mystic-vale/",
+        "https://store.steampowered.com/app/1102190/Monster_Train/"
+      ],
+      "branches": [
+        {
+          "id": "family-upgrade-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-upgrade-01",
+              "text": {
+                "ru": "Улучшение характеристик. Термин: Upgrade. Правило: Карта получает больше урона, защиты, ресурсов, добора или иной численной эффективности.",
+                "en": "Upgrade. Rule: The card receives more damage, defense, resources, draw, or other numerical efficiency."
+              }
+            },
+            {
+              "id": "variant-upgrade-02",
+              "text": {
+                "ru": "Снижение цены розыгрыша. Термин: Cost upgrade. Правило: Модификация делает карту дешевле, включая перевод в бесплатный розыгрыш.",
+                "en": "Cost upgrade. Rule: Modification makes the card cheaper, including transferring it into a free draw."
+              }
+            },
+            {
+              "id": "variant-upgrade-03",
+              "text": {
+                "ru": "Добавление свойства. Термин: Keyword upgrade. Правило: Карта приобретает удержание, повтор, исключение после розыгрыша либо другое правило поведения.",
+                "en": "Keyword upgrade. Rule: The card acquires a hold, replay, post-draw exception, or other rule of conduct."
+              }
+            },
+            {
+              "id": "variant-upgrade-04",
+              "text": {
+                "ru": "Ветвящееся улучшение. Термин: Branching upgrade. Правило: Игрок выбирает одну из нескольких несовместимых версий развития карты.",
+                "en": "Branching upgrade. Rule: The player chooses one of several incompatible versions of the card development."
+              }
+            },
+            {
+              "id": "variant-upgrade-05",
+              "text": {
+                "ru": "Опыт за использование. Термин: Card experience. Правило: Прогресс отдельной карты растёт от применения или выполненных условий и открывает улучшение.",
+                "en": "Card experience. Rule: The progress of an individual card increases from application or fulfilled conditions and unlocks an upgrade."
+              }
+            },
+            {
+              "id": "variant-upgrade-06",
+              "text": {
+                "ru": "Необратимое превращение. Термин: Transform. Правило: Карта заменяется другой, выбранной или случайной; результат может улучшить или ухудшить колоду.",
+                "en": "Transform. Rule: The card is replaced by another, chosen or random; the result can make or break the deck."
+              }
+            },
+            {
+              "id": "variant-upgrade-07",
+              "text": {
+                "ru": "Эволюция по цепочке. Термин: Card evolution. Правило: Карта последовательно заменяется более развитыми формами после определённых действий.",
+                "en": "Card evolution. Rule: The card is successively replaced by more developed forms after certain actions."
+              }
+            },
+            {
+              "id": "variant-upgrade-08",
+              "text": {
+                "ru": "Слияние карт. Термин: Fusion. Правило: Две или несколько карт объединяются в одну с комбинированными свойствами.",
+                "en": "Fusion. Rule: Two or more cards are combined into one with combined properties."
+              }
+            },
+            {
+              "id": "variant-upgrade-09",
+              "text": {
+                "ru": "Перенос свойства. Термин: Essence transfer. Правило: Одна карта служит донором способности или характеристик для другой, обычно исчезая при переносе.",
+                "en": "Essence transfer. Rule: One card serves as an ability or stat donor for another, usually disappearing when transferred."
+              }
+            },
+            {
+              "id": "variant-upgrade-10",
+              "text": {
+                "ru": "Модульное изготовление. Термин: Card crafting. Правило: Игрок собирает одну карту из нескольких частей, слотов, вставок или наложенных компонентов.",
+                "en": "Card crafting. Rule: The player assembles one card from multiple pieces, slots, inserts, or overlapping components."
+              }
+            },
+            {
+              "id": "variant-upgrade-11",
+              "text": {
+                "ru": "Изменение идентичности. Термин: Identity modification. Правило: Модификация меняет масть, ранг, тип, фракцию или другой признак, используемый при проверках комбинаций.",
+                "en": "Identity modification. Rule: A modification changes the suit, rank, type, faction or other attribute used when checking combinations."
+              }
+            },
+            {
+              "id": "variant-upgrade-12",
+              "text": {
+                "ru": "Изменение правил целой группы. Термин: Group upgrade. Правило: Улучшение применяется к типу карт, стопке, комбинации или всем экземплярам определённого имени.",
+                "en": "Group upgrade. Rule: The enhancement applies to a card type, stack, combination, or all instances of a specific name."
+              }
+            },
+            {
+              "id": "variant-upgrade-13",
+              "text": {
+                "ru": "Память карты между боями. Термин: Persistent card state. Правило: Карта сохраняет накопленный урон, счётчик, силу или иное состояние между столкновениями.",
+                "en": "Persistent card state. Rule: The card retains its accumulated damage, counter, power, or other state between encounters."
+              }
+            },
+            {
+              "id": "variant-upgrade-14",
+              "text": {
+                "ru": "Временная модификация. Термин: Temporary upgrade. Правило: Усиление, скидка или новое свойство действуют до конца хода, боя либо другого ограниченного периода, после чего исходная карта восстанавливается.",
+                "en": "Temporary upgrade. Rule: A boost, discount, or new ability lasts until the end of the turn, battle, or other limited period, after which the original card is restored."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-cycle",
+      "section": "section-2",
+      "title": {
+        "ru": "Порядок колоды и повторный оборот",
+        "en": "Deck order and cycling"
+      },
+      "description": {
+        "ru": "Как карты возвращаются в добор и насколько предсказуем следующий цикл.",
+        "en": "How cards are returned to the draw and how predictable the next cycle is."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://media.lavkaigr.ru/uploads/9e-aeons-end-rulebook.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-cycle-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cycle-01",
+              "text": {
+                "ru": "Перемешивание сброса. Термин: Reshuffle. Правило: Когда нужно добрать из пустой колоды, сброс превращается в новую колоду после перемешивания.",
+                "en": "Reshuffle. Rule: When you need to draw from an empty deck, the discard turns into a new deck after shuffling."
+              }
+            },
+            {
+              "id": "variant-cycle-02",
+              "text": {
+                "ru": "Оборот без перемешивания. Термин: No-shuffle cycling. Правило: Сброс переворачивается с сохранением определённого порядка, превращая последовательность сбрасывания в средство планирования.",
+                "en": "No-shuffle cycling. Rule: Resets are flipped to maintain a specific order, turning the discard sequence into a planning tool."
+              }
+            },
+            {
+              "id": "variant-cycle-03",
+              "text": {
+                "ru": "Нет повторного оборота. Термин: Finite deck. Правило: Израсходованная колода не восстанавливается либо её восстановление требует специальной платы.",
+                "en": "Finite deck. Rule: An expended deck is not restored or its restoration requires a special fee."
+              }
+            },
+            {
+              "id": "variant-cycle-04",
+              "text": {
+                "ru": "Досрочное перемешивание. Термин: Early shuffle. Правило: Эффект перемешивает колоду и сброс до обычного момента, меняя доступность уже использованных карт.",
+                "en": "Early shuffle. Rule: The effect shuffles the deck and discards until normal, changing the availability of cards already used."
+              }
+            },
+            {
+              "id": "variant-cycle-05",
+              "text": {
+                "ru": "Получение новой карты в выбранную зону. Термин: Gain destination. Правило: Новая карта поступает в сброс, руку, верх, низ или случайную позицию колоды; зона определяет задержку до первого применения.",
+                "en": "Gain destination. Rule: A new card goes to the discard pile, hand, top, bottom, or random position of the deck; the zone determines the delay before the first application."
+              }
+            },
+            {
+              "id": "variant-cycle-06",
+              "text": {
+                "ru": "Укладка наверх. Термин: Topdeck. Правило: Уже имеющаяся карта помещается на верх колоды для предсказуемого следующего добора.",
+                "en": "Topdeck. Rule: An existing card is placed on top of the deck for a predictable next draw."
+              }
+            },
+            {
+              "id": "variant-cycle-07",
+              "text": {
+                "ru": "Укладка вниз. Термин: Bottomdeck. Правило: Карта отправляется на низ колоды, откладывая её повторное появление.",
+                "en": "Bottomdeck. Rule: The card is sent to the bottom of the deck, delaying its reappearance."
+              }
+            },
+            {
+              "id": "variant-cycle-08",
+              "text": {
+                "ru": "Перестановка верхних карт. Термин: Deck stacking. Правило: Игрок меняет порядок нескольких верхних карт, подготавливая будущие руки.",
+                "en": "Deck stacking. Rule: The player changes the order of the top few cards in preparation for future hands."
+              }
+            },
+            {
+              "id": "variant-cycle-09",
+              "text": {
+                "ru": "Выбор порядка сброса. Термин: Discard ordering. Правило: Игрок определяет последовательность попадания карт в сброс; это значимо при сохранении порядка или выборочном возвращении.",
+                "en": "Discard ordering. Rule: The player determines the order in which the cards go into the discard pile; this is significant when maintaining order or selective returns."
+              }
+            },
+            {
+              "id": "variant-cycle-10",
+              "text": {
+                "ru": "Возврат сброса в колоду. Термин: Recycle. Правило: Эффект возвращает выбранные карты сброса в колоду, не дожидаясь стандартного завершения цикла.",
+                "en": "Recycle. Rule: The effect returns selected discard cards to the deck without waiting for the standard cycle to complete."
+              }
+            },
+            {
+              "id": "variant-cycle-11",
+              "text": {
+                "ru": "Штраф за оборот или пустую колоду. Термин: Fatigue. Правило: Опустошение колоды, попытка добора либо новое перемешивание приносит урон, угрозу или другую цену.",
+                "en": "Fatigue. Rule: Emptying the deck, attempting to draw, or shuffling again brings damage, threat, or another cost."
+              }
+            },
+            {
+              "id": "variant-cycle-12",
+              "text": {
+                "ru": "Эффекты за перемешивание. Термин: Shuffle triggers. Правило: Переход к следующему циклу активирует награды, усиления, генерацию или другие эффекты.",
+                "en": "Shuffle triggers. Rule: Moving to the next cycle activates rewards, boosts, generation or other effects."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-draw",
+      "section": "section-2",
+      "title": {
+        "ru": "Добор, поиск и управление случайностью",
+        "en": "Drawing, searching and managing randomness"
+      },
+      "description": {
+        "ru": "Как игрок получает доступ к нужным картам.",
+        "en": "How a player gets access to the cards he needs."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf",
+        "https://media.lavkaigr.ru/uploads/9e-aeons-end-rulebook.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-draw-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-draw-01",
+              "text": {
+                "ru": "Дополнительный добор. Термин: Draw. Правило: Игрок берёт больше карт, чем даёт базовое правило хода.",
+                "en": "Draw. Rule: The player draws more cards than the basic rule of the move gives."
+              }
+            },
+            {
+              "id": "variant-draw-02",
+              "text": {
+                "ru": "Добор до заданного размера. Термин: Draw up to. Правило: Игра пополняет руку до определённого количества, поэтому уже удержанные карты влияют на объём добора.",
+                "en": "Draw up to. Rule: The game replenishes the hand up to a certain amount, so cards already held affect the amount of draw."
+              }
+            },
+            {
+              "id": "variant-draw-03",
+              "text": {
+                "ru": "Выбор из просмотренных карт. Термин: Selective draw. Правило: Игрок смотрит несколько карт и забирает часть, отправляя остальные в указанную правилами зону.",
+                "en": "Selective draw. Rule: The player looks at several cards and takes some, sending the rest to the zone specified by the rules."
+              }
+            },
+            {
+              "id": "variant-draw-04",
+              "text": {
+                "ru": "Просмотр верха колоды. Термин: Peek. Правило: Игрок узнаёт следующие карты без изменения их положения.",
+                "en": "Peek. Rule: The player recognizes the following cards without changing their position."
+              }
+            },
+            {
+              "id": "variant-draw-05",
+              "text": {
+                "ru": "Фильтрация верхних карт. Термин: Scry / surveil pattern. Правило: Игрок просматривает верх колоды и может убрать неподходящие карты в сброс либо другую зону.",
+                "en": "Scry / surveil pattern. Rule: The player looks at the top of the deck and can remove inappropriate cards to the discard pile or another area."
+              }
+            },
+            {
+              "id": "variant-draw-06",
+              "text": {
+                "ru": "Поиск конкретной карты. Термин: Tutor. Правило: Игрок находит карту в разрешённой зоне и получает её в руку или размещает в другом доступном месте.",
+                "en": "Tutor. Rule: The player finds a card in the legal zone and receives it into his hand or places it in another available space."
+              }
+            },
+            {
+              "id": "variant-draw-07",
+              "text": {
+                "ru": "Поиск по типу. Термин: Filtered tutor. Правило: Поиск ограничен ценой, фракцией, типом, тегом или другим условием.",
+                "en": "Filtered tutor. Rule: Search is limited by price, fraction, type, tag or other condition."
+              }
+            },
+            {
+              "id": "variant-draw-08",
+              "text": {
+                "ru": "Возвращение из сброса в руку. Термин: Retrieve. Правило: Игрок выбирает уже использованную или сброшенную карту и немедленно возвращает её в руку.",
+                "en": "Retrieve. Rule: The player chooses a card that has already been used or discarded and immediately returns it to his hand."
+              }
+            },
+            {
+              "id": "variant-draw-09",
+              "text": {
+                "ru": "Возвращение исключённой карты. Термин: Exhaust recovery. Правило: Эффект извлекает карту из зоны временного исключения и возвращает её в оборот текущего боя.",
+                "en": "Exhaust recovery. Rule: The effect removes a card from the temporary exclusion zone and returns it to the circulation of the current battle."
+              }
+            },
+            {
+              "id": "variant-draw-10",
+              "text": {
+                "ru": "Замена карт руки. Термин: Loot / rummage. Правило: Игрок добирает и сбрасывает карты в установленном порядке; разница порядка определяет доступность выбора.",
+                "en": "Loot / rummage. Rule: The player draws and discards cards in the prescribed order; the difference in order determines the availability of choice."
+              }
+            },
+            {
+              "id": "variant-draw-11",
+              "text": {
+                "ru": "Сохранённый добор. Термин: Stored draw. Правило: Эффект откладывает дополнительный добор до следующего хода или выбранного момента.",
+                "en": "Stored draw. Rule: The effect postpones additional draw until the next turn or selected moment."
+              }
+            },
+            {
+              "id": "variant-draw-12",
+              "text": {
+                "ru": "Условный и гарантированный добор. Термин: Draw rules. Правило: Правила гарантируют карту определённого типа либо меняют добор при выполнении условия.",
+                "en": "Draw rules. Rule: The rules guarantee a card of a certain type or change the draw when a condition is met."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hand",
+      "section": "section-2",
+      "title": {
+        "ru": "Управление рукой",
+        "en": "Hand management"
+      },
+      "description": {
+        "ru": "Какие карты можно хранить, заменять и использовать вне обычного темпа.",
+        "en": "Which cards can be stored, replaced and used outside of normal tempo."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://media.lavkaigr.ru/uploads/9e-aeons-end-rulebook.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-hand-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-hand-01",
+              "text": {
+                "ru": "Полный сброс в конце хода. Термин: End-turn discard. Правило: Оставшиеся карты уходят в сброс, поэтому игрок выбирает между применением сейчас и ожиданием следующего цикла.",
+                "en": "End-turn discard. Rule: The remaining cards are discarded, so the player chooses between playing now or waiting for the next cycle."
+              }
+            },
+            {
+              "id": "variant-hand-02",
+              "text": {
+                "ru": "Сохранение руки. Термин: Persistent hand. Правило: Неиспользованные карты остаются у игрока между ходами по базовому правилу.",
+                "en": "Persistent hand. Rule: Unused cards remain with the player between turns according to the basic rule."
+              }
+            },
+            {
+              "id": "variant-hand-03",
+              "text": {
+                "ru": "Выборочное удержание. Термин: Retain. Правило: Сохранение действует только на выбранные карты, ограниченное количество или карты со специальным свойством.",
+                "en": "Retain. Rule: Saving only applies to selected cards, limited quantities, or cards with a special property."
+              }
+            },
+            {
+              "id": "variant-hand-04",
+              "text": {
+                "ru": "Лимит руки. Термин: Hand cap. Правило: Избыточные карты нельзя добрать либо приходится сбрасывать; увеличение добора не всегда повышает доступный выбор.",
+                "en": "Hand cap. Rule: Excess cards cannot be drawn or must be discarded; increasing the draw does not always increase the available choice."
+              }
+            },
+            {
+              "id": "variant-hand-05",
+              "text": {
+                "ru": "Изменение размера руки. Термин: Hand-size modifier. Правило: Постоянные или временные эффекты меняют количество доступных карт и возможную длину комбинации.",
+                "en": "Hand-size modifier. Rule: Permanent or temporary effects change the number of cards available and the possible length of the combination."
+              }
+            },
+            {
+              "id": "variant-hand-06",
+              "text": {
+                "ru": "Стартовая замена. Термин: Mulligan. Правило: В начале боя или партии игрок заменяет часть исходной руки по заданным правилам.",
+                "en": "Mulligan. Rule: At the beginning of a battle or game, the player replaces part of the original hand according to the given rules."
+              }
+            },
+            {
+              "id": "variant-hand-07",
+              "text": {
+                "ru": "Гарантированная стартовая карта. Термин: Innate / opening card. Правило: Выбранная карта попадает в начальную руку либо получает приоритет при стартовом доборе.",
+                "en": "Innate / opening card. Rule: The chosen card goes into the starting hand or gets priority in the starting draw."
+              }
+            },
+            {
+              "id": "variant-hand-08",
+              "text": {
+                "ru": "Усиление за хранение. Термин: Hold scaling. Правило: Карта становится сильнее или дешевле, пока остаётся в руке.",
+                "en": "Hold scaling. Rule: A card becomes stronger or cheaper as long as it remains in hand."
+              }
+            },
+            {
+              "id": "variant-hand-09",
+              "text": {
+                "ru": "Блокировка и порча руки. Термин: Hand disruption. Правило: Временное правило делает карты недоступными, скрывает их, меняет стоимость или запрещает обычный сброс.",
+                "en": "Hand disruption. Rule: A temporary rule makes cards unavailable, hides them, changes their value, or prevents normal discards."
+              }
+            },
+            {
+              "id": "variant-hand-10",
+              "text": {
+                "ru": "Полная замена руки. Термин: Wheel. Правило: Игрок сбрасывает, возвращает или исключает текущую руку и получает новую.",
+                "en": "Wheel. Rule: The player discards, returns or eliminates the current hand and receives a new one."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-play",
+      "section": "section-2",
+      "title": {
+        "ru": "Стоимость и способы розыгрыша",
+        "en": "Play costs and methods"
+      },
+      "description": {
+        "ru": "Какие ограничения определяют, сколько карт и каким способом можно применить.",
+        "en": "What restrictions determine how many cards can be applied and in what way."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/"
+      ],
+      "branches": [
+        {
+          "id": "family-play-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-play-01",
+              "text": {
+                "ru": "Общий ресурс розыгрыша. Термин: Energy / mana. Правило: Карты тратят общий запас энергии, маны или другого возобновляемого ресурса.",
+                "en": "Energy / mana. Rule: Cards spend their total energy, mana, or other renewable resource."
+              }
+            },
+            {
+              "id": "variant-play-02",
+              "text": {
+                "ru": "Генерация и перенос ресурса. Термин: Resource ramp / banking. Правило: Карты увеличивают доступную энергию, максимальный запас или позволяют сохранять неиспользованный ресурс между ходами.",
+                "en": "Resource ramp / banking. Rule: Cards increase available energy, maximum reserve, or allow you to save an unused resource between turns."
+              }
+            },
+            {
+              "id": "variant-play-03",
+              "text": {
+                "ru": "Заём ресурса будущего хода. Термин: Overload / resource debt. Правило: Дополнительный ресурс доступен сейчас ценой уменьшения возможностей в следующем ходу или другом будущем периоде.",
+                "en": "Overload / resource debt. Rule: An additional resource is available now at the cost of reduced opportunities in the next turn or another future period."
+              }
+            },
+            {
+              "id": "variant-play-04",
+              "text": {
+                "ru": "Лимит действий. Термин: Action economy. Правило: Число розыгрышей ограничено отдельными действиями, которые карты могут расходовать и производить.",
+                "en": "Action economy. Rule: The number of plays is limited by the individual actions that cards can spend and perform."
+              }
+            },
+            {
+              "id": "variant-play-05",
+              "text": {
+                "ru": "Ограничение по типу карт. Термин: Type play limit. Правило: Правила разрешают ограниченное число атак, заклинаний или других категорий за ход.",
+                "en": "Type play limit. Rule: The rules allow a limited number of attacks, spells, or other categories per turn."
+              }
+            },
+            {
+              "id": "variant-play-06",
+              "text": {
+                "ru": "Альтернативная цена. Термин: Alternate cost. Правило: Карту разрешено оплачивать разными способами, например энергией, здоровьем, сбросом или жертвой другой карты.",
+                "en": "Alternate cost. Rule: The card is allowed to be paid in different ways, such as energy, health, discard or sacrifice of another card."
+              }
+            },
+            {
+              "id": "variant-play-07",
+              "text": {
+                "ru": "Переменная цена. Термин: X-cost. Правило: Игрок выбирает объём вложенного ресурса; масштаб эффекта зависит от оплаты.",
+                "en": "X-cost. Rule: The player chooses the amount of invested resource; the scale of the effect depends on the payment."
+              }
+            },
+            {
+              "id": "variant-play-08",
+              "text": {
+                "ru": "Доплата за усиление. Термин: Kicker / overpay. Правило: Карту можно сыграть по базовой цене либо доплатить за дополнительный эффект.",
+                "en": "Kicker / overpay. Rule: A card can be played at the base price or you can pay extra for an additional effect."
+              }
+            },
+            {
+              "id": "variant-play-09",
+              "text": {
+                "ru": "Условный бесплатный розыгрыш. Термин: Conditional free play. Правило: После определённого действия или при выполнении условия карта перестаёт требовать обычной оплаты.",
+                "en": "Conditional free play. Rule: After a certain action or when a condition is met, the card stops requiring regular payment."
+              }
+            },
+            {
+              "id": "variant-play-10",
+              "text": {
+                "ru": "Несколько режимов карты. Термин: Modal card. Правило: При применении игрок выбирает одну из альтернативных функций карты.",
+                "en": "Modal card. Rule: When cast, the player chooses one of the card's alternative functions."
+              }
+            },
+            {
+              "id": "variant-play-11",
+              "text": {
+                "ru": "Карта как ресурс. Термин: Pitch / dual-use. Правило: Карту можно потратить для оплаты другой карты или производства ресурса вместо её основного эффекта.",
+                "en": "Pitch / dual-use. Rule: A card can be spent to pay for another card or produce a resource instead of its main effect."
+              }
+            },
+            {
+              "id": "variant-play-12",
+              "text": {
+                "ru": "Розыгрыш из другой зоны. Термин: Off-hand play. Правило: Карту разрешено применить с верха колоды, из сброса, резерва или временного исключения.",
+                "en": "Off-hand play. Rule: A card can be used from the top of the deck, from the discard pile, from the reserve, or from the temporary exception."
+              }
+            },
+            {
+              "id": "variant-play-13",
+              "text": {
+                "ru": "Автоматический розыгрыш. Термин: Autoplay. Правило: Эффект применяет карту без обычного выбора игрока, иногда с автоматическим выбором цели.",
+                "en": "Autoplay. Rule: The effect applies the card without the player's normal selection, sometimes with automatic target selection."
+              }
+            },
+            {
+              "id": "variant-play-14",
+              "text": {
+                "ru": "Реакция и прерывание. Термин: Reaction / interrupt. Правило: Карта применяется в ответ на событие, действие врага или ход другого игрока.",
+                "en": "Reaction / interrupt. Rule: A card is used in response to an event, an enemy action, or another player's move."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-2",
+      "title": {
+        "ru": "Время, триггеры и последовательности",
+        "en": "Timing, triggers and sequences"
+      },
+      "description": {
+        "ru": "Когда срабатывает эффект и от каких событий он зависит.",
+        "en": "When the effect is triggered and on what events it depends."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-timing-01",
+              "text": {
+                "ru": "Событийные триггеры. Термин: Event triggers. Правило: Эффект реагирует на получение, добор, розыгрыш, сброс, удаление, удержание карты или другое явно заданное событие.",
+                "en": "Event triggers. Rule: The effect reacts to receiving, drawing, playing, discarding, removing, holding a card, or other explicitly specified event."
+              }
+            },
+            {
+              "id": "variant-timing-02",
+              "text": {
+                "ru": "Начало и конец хода. Термин: Turn hooks. Правило: Карта или постоянный объект срабатывает в фиксированной фазе хода.",
+                "en": "Turn hooks. Rule: A card or permanent object triggers in a fixed phase of the turn."
+              }
+            },
+            {
+              "id": "variant-timing-03",
+              "text": {
+                "ru": "Отложенный эффект. Термин: Delayed effect. Правило: Результат розыгрыша возникает через заданное количество ходов или после будущего события.",
+                "en": "Delayed effect. Rule: The result of the drawing occurs after a specified number of moves or after a future event."
+              }
+            },
+            {
+              "id": "variant-timing-04",
+              "text": {
+                "ru": "Длительность на несколько ходов. Термин: Duration. Правило: Карта продолжает действовать после текущего хода, прежде чем вернуться в обычный оборот.",
+                "en": "Duration. Rule: The card continues to operate after the current turn before returning to normal circulation."
+              }
+            },
+            {
+              "id": "variant-timing-05",
+              "text": {
+                "ru": "Подготовка перед применением. Термин: Prepare. Правило: Карту нужно сначала разместить в отдельном слоте или состоянии, а активировать позднее.",
+                "en": "Prepare. Rule: The card must first be placed in a separate slot or state, and activated later."
+              }
+            },
+            {
+              "id": "variant-timing-06",
+              "text": {
+                "ru": "Окно активации. Термин: Activation window. Правило: Эффект доступен только в заданной фазе, после определённого действия или в подходящий момент реакции.",
+                "en": "Activation window. Rule: The effect is available only in a given phase, after a certain action or at the appropriate moment of reaction."
+              }
+            },
+            {
+              "id": "variant-timing-07",
+              "text": {
+                "ru": "Порядок разрешения эффектов. Термин: Resolution ordering. Правило: Порядок карт, триггеров и модификаторов меняет итог комбинации; правила задают либо разрешают выбирать последовательность.",
+                "en": "Resolution ordering. Rule: The order of cards, triggers and modifiers changes the outcome of the combination; the rules set or allow you to choose a sequence."
+              }
+            },
+            {
+              "id": "variant-timing-08",
+              "text": {
+                "ru": "Зависимость от предыдущей карты. Термин: Sequence combo. Правило: Карта получает дополнительный эффект после нужного типа, имени, цвета или серии предыдущих розыгрышей.",
+                "en": "Sequence combo. Rule: A card gains an additional effect after the desired type, name, color or series of previous plays."
+              }
+            },
+            {
+              "id": "variant-timing-09",
+              "text": {
+                "ru": "Счётчик действий за ход. Термин: Per-turn counter. Правило: Эффект зависит от числа уже сыгранных, добранных, сброшенных или удалённых карт.",
+                "en": "Per-turn counter. Rule: The effect depends on the number of cards already played, drawn, discarded or removed."
+              }
+            },
+            {
+              "id": "variant-timing-10",
+              "text": {
+                "ru": "Ограничение частоты. Термин: Trigger limit. Правило: Способность действует один раз за ход, бой, цикл колоды или после отдельной перезарядки.",
+                "en": "Trigger limit. Rule: The ability acts once per turn, battle, deck cycle, or after a separate cooldown."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-generation",
+      "section": "section-2",
+      "title": {
+        "ru": "Копирование и создание карт",
+        "en": "Copying and generating cards"
+      },
+      "description": {
+        "ru": "Новые экземпляры, временные инструменты и повторное применение эффектов.",
+        "en": "New instances, temporary tools and re-applying effects."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf",
+        "https://store.steampowered.com/app/1102190/Monster_Train/"
+      ],
+      "branches": [
+        {
+          "id": "family-generation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-generation-01",
+              "text": {
+                "ru": "Постоянное дублирование. Термин: Duplicate. Правило: В состав колоды добавляется новый экземпляр выбранной карты, иногда с сохранением её улучшений.",
+                "en": "Duplicate. Rule: A new copy of the selected card is added to the deck, sometimes preserving its improvements."
+              }
+            },
+            {
+              "id": "variant-generation-02",
+              "text": {
+                "ru": "Временная копия. Термин: Temporary copy. Правило: Копия существует только в текущем ходу или бою и не меняет постоянную колоду после его завершения.",
+                "en": "Temporary copy. Rule: The copy exists only for the current turn or battle and does not change the permanent deck after its completion."
+              }
+            },
+            {
+              "id": "variant-generation-03",
+              "text": {
+                "ru": "Копирование эффекта. Термин: Copy effect. Правило: Карта повторяет свойства другой карты без создания нового постоянного экземпляра.",
+                "en": "Copy effect. Rule: A card repeats the properties of another card without creating a new permanent instance."
+              }
+            },
+            {
+              "id": "variant-generation-04",
+              "text": {
+                "ru": "Повторный розыгрыш. Термин: Replay / retrigger. Правило: Та же карта применяется повторно, обычно без повторной обычной оплаты либо по особому правилу.",
+                "en": "Replay / retrigger. Rule: The same card is reused, usually without repeating the regular payment or under a special rule."
+              }
+            },
+            {
+              "id": "variant-generation-05",
+              "text": {
+                "ru": "Создание заданной карты. Термин: Token generation. Правило: Эффект добавляет заранее определённую карту в руку, сброс, колоду или другую зону.",
+                "en": "Token generation. Rule: The effect adds a predetermined card to your hand, discard pile, deck, or other zone."
+              }
+            },
+            {
+              "id": "variant-generation-06",
+              "text": {
+                "ru": "Создание случайной карты. Термин: Random generation. Правило: Эффект порождает случайную карту из ограниченного или общего пула.",
+                "en": "Random generation. Rule: The effect spawns a random card from a limited or common pool."
+              }
+            },
+            {
+              "id": "variant-generation-07",
+              "text": {
+                "ru": "Выбор создаваемой карты. Термин: Discover pattern. Правило: Игрок выбирает временную или постоянную карту из нескольких сгенерированных вариантов.",
+                "en": "Discover pattern. Rule: The player selects a temporary or permanent card from several generated options."
+              }
+            },
+            {
+              "id": "variant-generation-08",
+              "text": {
+                "ru": "Временное превращение. Термин: Temporary transform. Правило: В ходе боя карта меняет форму, а затем восстанавливает исходную версию.",
+                "en": "Temporary transform. Rule: During the battle, the card changes shape and then restores its original version."
+              }
+            },
+            {
+              "id": "variant-generation-09",
+              "text": {
+                "ru": "Саморазмножение. Термин: Self-replication. Правило: Карта создаёт дополнительные экземпляры самой себя при розыгрыше или выполнении другого условия.",
+                "en": "Self-replication. Rule: A card creates additional copies of itself when played or another condition is met."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-synergy",
+      "section": "section-2",
+      "title": {
+        "ru": "Правила синергии и требования к составу",
+        "en": "Synergies and deck composition requirements"
+      },
+      "description": {
+        "ru": "Почему одни наборы карт работают вместе, а другие требуют другого состава колоды.",
+        "en": "Why do some sets of cards work together, while others require a different deck composition."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.starrealms.com/faq",
+        "https://www.playstack.com/games/balatro/"
+      ],
+      "branches": [
+        {
+          "id": "family-synergy-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-synergy-01",
+              "text": {
+                "ru": "Бонус за фракцию или тег. Термин: Faction synergy. Правило: Карта усиливается при наличии других карт той же группы в руке, колоде или среди сыгранных.",
+                "en": "Faction synergy. Rule: A card is strengthened if there are other cards of the same group in the hand, deck or among those played."
+              }
+            },
+            {
+              "id": "variant-synergy-02",
+              "text": {
+                "ru": "Порог количества. Термин: Threshold synergy. Правило: Эффект включается после достижения заданного числа карт, предметов, зарядов или розыгрышей.",
+                "en": "Threshold synergy. Rule: The effect turns on after reaching a specified number of cards, items, charges or draws."
+              }
+            },
+            {
+              "id": "variant-synergy-03",
+              "text": {
+                "ru": "Бонус за дубликаты. Термин: Duplicate synergy. Правило: Несколько экземпляров одного имени или признака усиливают друг друга.",
+                "en": "Duplicate synergy. Rule: Several instances of the same name or characteristic reinforce each other."
+              }
+            },
+            {
+              "id": "variant-synergy-04",
+              "text": {
+                "ru": "Бонус за уникальность. Термин: Singleton synergy. Правило: Эффект требует отсутствия дубликатов либо поощряет разнообразие карт.",
+                "en": "Singleton synergy. Rule: The effect requires no duplicates or encourages a variety of cards."
+              }
+            },
+            {
+              "id": "variant-synergy-05",
+              "text": {
+                "ru": "Зависимость от размера колоды. Термин: Deck-size scaling. Правило: Сила карты или пассивного эффекта растёт при большой, маленькой или иной заданной по размеру колоде.",
+                "en": "Deck-size scaling. Rule: The power of a card or passive effect increases with a large, small, or other specified deck size."
+              }
+            },
+            {
+              "id": "variant-synergy-06",
+              "text": {
+                "ru": "Зависимость от пропорций типов. Термин: Composition synergy. Правило: Эффект проверяет долю или отсутствие атак, навыков, ресурсов, мастей и других категорий.",
+                "en": "Composition synergy. Rule: The effect checks the proportion or absence of attacks, skills, resources, suits and other categories."
+              }
+            },
+            {
+              "id": "variant-synergy-07",
+              "text": {
+                "ru": "Вознаграждение за сброс. Термин: Discard synergy. Правило: Добровольный или принудительный сброс становится источником ресурсов, урона, добора или возвращения карт.",
+                "en": "Discard synergy. Rule: Voluntary or forced discard becomes a source of resources, damage, drawing or returning cards."
+              }
+            },
+            {
+              "id": "variant-synergy-08",
+              "text": {
+                "ru": "Вознаграждение за исключение. Термин: Exhaust synergy. Правило: Временное удаление карт активирует другие эффекты и помогает сокращать рабочую колоду текущего боя.",
+                "en": "Exhaust synergy. Rule: Temporarily removing cards activates other effects and helps reduce the working deck of the current battle."
+              }
+            },
+            {
+              "id": "variant-synergy-09",
+              "text": {
+                "ru": "Вознаграждение за постоянное удаление. Термин: Trash synergy. Правило: Уничтожение карт даёт дополнительную пользу, превращая очистку колоды в двигатель развития.",
+                "en": "Trash synergy. Rule: Destroying cards provides additional benefit, turning deck clearing into a growth engine."
+              }
+            },
+            {
+              "id": "variant-synergy-10",
+              "text": {
+                "ru": "Вознаграждение за прокрутку. Термин: Cycle synergy. Правило: Частый добор, повторное использование и переход между циклами запускают связанные награды.",
+                "en": "Cycle synergy. Rule: Frequent collection, reuse and transition between cycles trigger associated rewards."
+              }
+            },
+            {
+              "id": "variant-synergy-11",
+              "text": {
+                "ru": "Карты со штрафом как ресурс. Термин: Curse synergy. Правило: Проклятия, раны и другие нежелательные карты разрешено превращать в выгоду либо использовать как условие бонуса.",
+                "en": "Curse synergy. Rule: Curses, wounds and other unwanted cards are allowed to be turned into benefits or used as a bonus condition."
+              }
+            },
+            {
+              "id": "variant-synergy-12",
+              "text": {
+                "ru": "Зависимость от пустых зон. Термин: Empty-zone synergy. Правило: Эффект усиливается при пустой руке, колоде, сбросе или отсутствии определённой категории карт.",
+                "en": "Empty-zone synergy. Rule: The effect increases with an empty hand, deck, discard, or absence of a certain category of cards."
+              }
+            },
+            {
+              "id": "variant-synergy-13",
+              "text": {
+                "ru": "Комбинации признаков. Термин: Set / poker-hand synergy. Правило: Нужно собрать последовательность, комплект, масть, ранг или другую формальную комбинацию карт.",
+                "en": "Set / poker-hand synergy. Rule: You need to collect a sequence, set, suit, rank or other formal combination of cards."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-effects",
+      "section": "section-3",
+      "title": {
+        "ru": "Эффекты и боевые подсистемы",
+        "en": "Effects and combat subsystems"
+      },
+      "description": {
+        "ru": "Эти механики встречаются в карточных играх вообще; в deck builder они создают задачи для сборки.",
+        "en": "These mechanics are found in card games in general; in deck builder they create tasks for the build."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1102190/Monster_Train/"
+      ],
+      "branches": [
+        {
+          "id": "family-effects-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-effects-01",
+              "text": {
+                "ru": "Прямой урон и лечение. Термин: Damage / healing. Правило: Карты меняют здоровье цели немедленно; важны доступные цели, цена и возможность повторного применения.",
+                "en": "Damage / healing. Rule: Cards change the target's health immediately; Accessible purposes, price and reusability are important."
+              }
+            },
+            {
+              "id": "variant-effects-02",
+              "text": {
+                "ru": "Защита и предотвращение. Термин: Block / prevention. Правило: Карты создают блок, барьеры, уклонение или отменяют события; срок действия защиты влияет на нужный темп добора.",
+                "en": "Block / prevention. Rule: Cards create block, barriers, dodge, or cancel events; The duration of the protection affects the required rate of recruitment."
+              }
+            },
+            {
+              "id": "variant-effects-03",
+              "text": {
+                "ru": "Многократные и массовые эффекты. Термин: Multi-hit / area effect. Правило: Один розыгрыш воздействует несколько раз или на несколько целей, иначе взаимодействуя с усилениями и защитой.",
+                "en": "Multi-hit / area effect. Rule: One play affects multiple times or multiple targets, otherwise interacting with buffs and defenses."
+              }
+            },
+            {
+              "id": "variant-effects-04",
+              "text": {
+                "ru": "Постепенный урон и накопительные статусы. Термин: Damage over time. Правило: Яд, ожог, кровотечение и подобные состояния переносят часть результата в будущие ходы; правила накопления различаются.",
+                "en": "Damage over time. Rule: Poison, burn, bleeding and similar conditions carry over some of the result to future turns; accumulation rules vary."
+              }
+            },
+            {
+              "id": "variant-effects-05",
+              "text": {
+                "ru": "Усиления и ослабления. Термин: Buff / debuff. Правило: Карты меняют урон, защиту, стоимость, уязвимость, точность или другие параметры будущих действий.",
+                "en": "Buff / debuff. Rule: Cards change damage, defense, cost, vulnerability, accuracy, or other parameters for future actions."
+              }
+            },
+            {
+              "id": "variant-effects-06",
+              "text": {
+                "ru": "Масштабирование в бою. Термин: Combat scaling. Правило: Игрок накапливает силу, защиту, заряды или множители, повышая эффективность последующих розыгрышей.",
+                "en": "Combat scaling. Rule: The player accumulates power, defense, charges or multipliers, increasing the effectiveness of subsequent plays."
+              }
+            },
+            {
+              "id": "variant-effects-07",
+              "text": {
+                "ru": "Контроль и отмена действий. Термин: Control / counter. Правило: Оглушение, замедление, запреты и отмена эффектов меняют доступные противнику действия.",
+                "en": "Control / counter. Rule: Stuns, slows, bans and cancel effects change the actions available to the enemy."
+              }
+            },
+            {
+              "id": "variant-effects-08",
+              "text": {
+                "ru": "Перемещение и изменение целей. Термин: Movement / targeting. Правило: Карты меняют позицию, линию атаки, доступность целей или перенаправляют воздействие.",
+                "en": "Movement / targeting. Rule: Cards change position, line of attack, target availability, or redirect impact."
+              }
+            },
+            {
+              "id": "variant-effects-09",
+              "text": {
+                "ru": "Самоповреждение и жертвы. Термин: Self-damage / sacrifice. Правило: Здоровье и собственные объекты служат топливом для более сильного эффекта.",
+                "en": "Self-damage / sacrifice. Rule: Health and own objects serve as fuel for a stronger effect."
+              }
+            },
+            {
+              "id": "variant-effects-10",
+              "text": {
+                "ru": "Случайные и рискованные эффекты. Термин: Random / push-your-luck. Правило: Игрок принимает неопределённый результат либо продолжает добор и розыгрыш с нарастающим риском потери выгоды.",
+                "en": "Random / push-your-luck. Rule: The player accepts an uncertain result or continues drawing and playing with an increasing risk of losing the benefit."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hybrids",
+      "section": "section-3",
+      "title": {
+        "ru": "Постоянные объекты и гибридные системы",
+        "en": "Permanents and hybrid systems"
+      },
+      "description": {
+        "ru": "Другие системы, через которые колода влияет на игровое поле и долгосрочную экономику.",
+        "en": "Other systems through which the deck affects the playing field and the long-term economy."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+        "https://www.direwolfdigital.com/clank/"
+      ],
+      "branches": [
+        {
+          "id": "family-hybrids-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-hybrids-01",
+              "text": {
+                "ru": "Постоянные карты на столе. Термин: Tableau. Правило: Сыгранные объекты остаются в игре и дают повторяемые эффекты, обычно временно покидая оборот колоды.",
+                "en": "Tableau. Rule: Played objects remain in play and provide repeatable effects, usually leaving the deck's rotation temporarily."
+              }
+            },
+            {
+              "id": "variant-hybrids-02",
+              "text": {
+                "ru": "Существа и призванные отряды. Термин: Units / summons. Правило: Карты создают самостоятельные объекты с характеристиками, действиями, временем жизни и правилами возвращения.",
+                "en": "Units / summons. Rule: Cards create independent objects with characteristics, actions, lifetime and return rules."
+              }
+            },
+            {
+              "id": "variant-hybrids-03",
+              "text": {
+                "ru": "Слоты и вместимость. Термин: Capacity. Правило: Размещение карт и объектов ограничено ячейками, размером, весом или допустимым числом одновременных объектов.",
+                "en": "Capacity. Rule: Placement of cards and objects is limited by cells, size, weight, or the allowed number of simultaneous objects."
+              }
+            },
+            {
+              "id": "variant-hybrids-04",
+              "text": {
+                "ru": "Экипировка и вложения. Термин: Attachments. Правило: Карта прикрепляется к другому объекту и меняет его свойства до снятия или уничтожения.",
+                "en": "Attachments. Rule: A card is attached to another object and changes its properties before being removed or destroyed."
+              }
+            },
+            {
+              "id": "variant-hybrids-05",
+              "text": {
+                "ru": "Пассивные модификаторы вне колоды. Термин: Relics / jokers. Правило: Постоянные предметы меняют работу карт, не обязательно участвуя в обычном доборе.",
+                "en": "Relics / jokers. Rule: Permanent items change how cards work without necessarily participating in normal draw."
+              }
+            },
+            {
+              "id": "variant-hybrids-06",
+              "text": {
+                "ru": "Движение по полю. Термин: Deck-driven movement. Правило: Карты производят движение и другие действия на карте; маршрут и состав колоды взаимно ограничивают друг друга.",
+                "en": "Deck-driven movement. Rule: Cards produce movement and other actions on the card; the route and deck composition mutually limit each other."
+              }
+            },
+            {
+              "id": "variant-hybrids-07",
+              "text": {
+                "ru": "Выставление рабочих картами. Термин: Card-driven worker placement. Правило: Карта разрешает отправить рабочего в определённые места либо задаёт дополнительный эффект посещения.",
+                "en": "Card-driven worker placement. Rule: The card allows you to send a worker to certain places or sets an additional effect of visiting."
+              }
+            },
+            {
+              "id": "variant-hybrids-08",
+              "text": {
+                "ru": "Автоматический бой после подготовки. Термин: Auto-battler hybrid. Правило: Карты формируют состав и расположение сил, после чего часть столкновения разрешается автоматически.",
+                "en": "Auto-battler hybrid. Rule: Cards form the composition and disposition of forces, after which part of the encounter is resolved automatically."
+              }
+            },
+            {
+              "id": "variant-hybrids-09",
+              "text": {
+                "ru": "Угроза от применения карт. Термин: Noise / threat. Правило: Розыгрыш или получение карт повышает общий риск, привлекает врагов либо запускает опасные события.",
+                "en": "Noise / threat. Rule: Playing or receiving cards increases overall risk, attracts enemies, or triggers dangerous events."
+              }
+            },
+            {
+              "id": "variant-hybrids-10",
+              "text": {
+                "ru": "Карты действий и небоевая экономика. Термин: Action-selection hybrid. Правило: Колода управляет производством, строительством, дипломатией, исследованием или другими действиями вне боя.",
+                "en": "Action-selection hybrid. Rule: The deck controls production, construction, diplomacy, research, or other actions outside of combat."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-interaction",
+      "section": "section-3",
+      "title": {
+        "ru": "Вмешательство в колоды и противодействие",
+        "en": "Deck interference and counterplay"
+      },
+      "description": {
+        "ru": "Как противник меняет состав, доступность и работу карт игрока.",
+        "en": "How the enemy changes the composition, availability and operation of the player's cards."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.starrealms.com/learn-to-play"],
+      "branches": [
+        {
+          "id": "family-interaction-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-interaction-01",
+              "text": {
+                "ru": "Засорение колоды. Термин: Junking. Правило: Противник добавляет слабые, вредные или непригодные карты, уменьшая частоту появления полезных.",
+                "en": "Junking. Rule: The opponent adds weak, harmful or unusable cards, reducing the frequency of useful ones."
+              }
+            },
+            {
+              "id": "variant-interaction-02",
+              "text": {
+                "ru": "Принудительный сброс. Термин: Forced discard. Правило: Противник уменьшает руку игрока либо заставляет выбирать, какие карты потерять до следующего цикла.",
+                "en": "Forced discard. Rule: The opponent reduces the player's hand or forces him to choose which cards to lose until the next cycle."
+              }
+            },
+            {
+              "id": "variant-interaction-03",
+              "text": {
+                "ru": "Сброс с верха колоды. Термин: Mill. Правило: Противник отправляет верхние карты в сброс или иную зону; последствия зависят от повторного оборота и условий поражения.",
+                "en": "Mill. Rule: The opponent sends the top cards to the discard pile or other zone; the consequences depend on the reuse and the conditions of the lesion."
+              }
+            },
+            {
+              "id": "variant-interaction-04",
+              "text": {
+                "ru": "Кража и временный захват. Термин: Steal / control. Правило: Противник забирает карту, играет её эффект либо временно получает над ней контроль.",
+                "en": "Steal / control. Rule: The opponent takes a card, plays its effect, or temporarily gains control of it."
+              }
+            },
+            {
+              "id": "variant-interaction-05",
+              "text": {
+                "ru": "Вмешательство в порядок. Термин: Deck disruption. Правило: Противник переставляет карты, кладёт вредную карту наверх или вызывает нежелательное перемешивание.",
+                "en": "Deck disruption. Rule: The opponent rearranges the cards, places a harmful card on top, or causes an unwanted shuffle."
+              }
+            },
+            {
+              "id": "variant-interaction-06",
+              "text": {
+                "ru": "Подмена и порча карт. Термин: Card corruption. Правило: Эффект ухудшает характеристики, меняет назначение или заменяет полезную карту другим экземпляром.",
+                "en": "Card corruption. Rule: The effect worsens characteristics, changes the purpose, or replaces a useful card with another copy."
+              }
+            },
+            {
+              "id": "variant-interaction-07",
+              "text": {
+                "ru": "Информация о чужой руке. Термин: Hand reveal. Правило: Правила позволяют просмотреть, раскрыть или запомнить карты противника для последующего выбора действий.",
+                "en": "Hand reveal. Rule: Rules allow you to view, reveal or remember your opponent's cards for later selection of actions."
+              }
+            },
+            {
+              "id": "variant-interaction-08",
+              "text": {
+                "ru": "Блокировка категории. Термин: Type lock. Правило: Противник временно запрещает добор, поиск, розыгрыш определённых карт или другие операции с колодой.",
+                "en": "Type lock. Rule: The opponent temporarily prohibits drawing, searching, playing certain cards, or other operations with the deck."
+              }
+            },
+            {
+              "id": "variant-interaction-09",
+              "text": {
+                "ru": "Контрмеры против сборки. Термин: Build counters. Правило: Свойство врага наказывает конкретный тип колоды, например множество розыгрышей или зависимость от одного статуса.",
+                "en": "Build counters. Rule: The enemy ability punishes a specific type of deck, such as multiple plays or being dependent on one status."
+              }
+            },
+            {
+              "id": "variant-interaction-10",
+              "text": {
+                "ru": "Защита от вмешательства. Термин: Disruption defense. Правило: Карты предотвращают атаки на руку и колоду, очищают вредные карты или смягчают ограничения.",
+                "en": "Disruption defense. Rule: Cards prevent attacks on the hand and deck, clear harmful cards, or soften restrictions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-cooperation",
+      "section": "section-3",
+      "title": {
+        "ru": "Кооперация и командное построение",
+        "en": "Cooperation and team deck building"
+      },
+      "description": {
+        "ru": "Правила связывают развитие и применение колод нескольких участников.",
+        "en": "The rules bind the development and use of decks of several participants."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://media.lavkaigr.ru/uploads/9e-aeons-end-rulebook.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-cooperation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cooperation-01",
+              "text": {
+                "ru": "Получение карты союзником. Термин: Ally gain. Правило: Игрок направляет награду или покупку в колоду союзника.",
+                "en": "Ally gain. Rule: The player sends a reward or purchase to an ally's deck."
+              }
+            },
+            {
+              "id": "variant-cooperation-02",
+              "text": {
+                "ru": "Очистка и улучшение чужой колоды. Термин: Ally deck service. Правило: Один участник удаляет, восстанавливает или усиливает карты другого по явному правилу.",
+                "en": "Ally deck service. Rule: One participant removes, restores or enhances the cards of another according to an explicit rule."
+              }
+            },
+            {
+              "id": "variant-cooperation-03",
+              "text": {
+                "ru": "Передача карт руки. Термин: Hand transfer. Правило: Участники передают доступные карты, чтобы собрать нужную комбинацию у подходящего игрока.",
+                "en": "Hand transfer. Rule: Participants pass available cards to collect the desired combination from a suitable player."
+              }
+            },
+            {
+              "id": "variant-cooperation-04",
+              "text": {
+                "ru": "Ресурсы и добор для союзника. Термин: Ally support. Правило: Эффект предоставляет другому игроку энергию, дополнительные карты, действия или иной ресурс для его колоды.",
+                "en": "Ally support. Rule: An effect provides another player with energy, additional cards, actions, or another resource for their deck."
+              }
+            },
+            {
+              "id": "variant-cooperation-05",
+              "text": {
+                "ru": "Общая комбинация. Термин: Cross-player combo. Правило: Карты разных участников проверяют общие теги, статусы, порядок действий или совместно подготовленные условия.",
+                "en": "Cross-player combo. Rule: Cards of different participants check common tags, statuses, order of actions or jointly prepared conditions."
+              }
+            },
+            {
+              "id": "variant-cooperation-06",
+              "text": {
+                "ru": "Командное распределение ролей. Термин: Role incentives. Правило: Правила награждают специализацию участников либо требуют разных функций колод для решения общей задачи.",
+                "en": "Role incentives. Rule: Rules reward specialization of participants or require different deck functions to solve a common problem."
+              }
+            },
+            {
+              "id": "variant-cooperation-07",
+              "text": {
+                "ru": "Внешнее изменение очереди ходов. Термин: Variable turn order. Правило: Порядок действий участников и врагов определяется отдельной колодой или другим механизмом, меняя ценность подготовки и поддержки.",
+                "en": "Variable turn order. Rule: The order of actions of participants and enemies is determined by a separate deck or other mechanism, changing the value of preparation and support."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-progression",
+      "section": "section-3",
+      "title": {
+        "ru": "Маршрут, забег и метапрогрессия",
+        "en": "Routes, runs and metaprogression"
+      },
+      "description": {
+        "ru": "Внешняя структура определяет, когда и как игрок сможет изменить колоду.",
+        "en": "The external structure determines when and how the player can change the deck."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        "https://store.steampowered.com/app/601840/Griftlands/"
+      ],
+      "branches": [
+        {
+          "id": "family-progression-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-progression-01",
+              "text": {
+                "ru": "Выбор маршрута развития. Термин: Route choice. Правило: Разные пути дают доступ к разным рынкам, наградам, улучшениям, очистке и опасностям.",
+                "en": "Route choice. Rule: Different paths give access to different markets, rewards, upgrades, clearing and dangers."
+              }
+            },
+            {
+              "id": "variant-progression-02",
+              "text": {
+                "ru": "Риск ради качества награды. Термин: Risk-reward encounter. Правило: Более опасное столкновение обещает лучшие карты, больше вариантов или сильные внешние модификаторы.",
+                "en": "Risk-reward encounter. Rule: A more dangerous encounter promises better cards, more options, or stronger external modifiers."
+              }
+            },
+            {
+              "id": "variant-progression-03",
+              "text": {
+                "ru": "События с изменением колоды. Термин: Deck events. Правило: Вне боя игрок принимает решения о добавлении, удалении, обмене, копировании или преобразовании карт.",
+                "en": "Deck events. Rule: Outside of combat, the player makes decisions about adding, removing, trading, copying, or converting cards."
+              }
+            },
+            {
+              "id": "variant-progression-04",
+              "text": {
+                "ru": "Перенос состояния между боями. Термин: Run persistence. Правило: Состав колоды, её улучшения и связанные ограничения сохраняются на протяжении последовательности столкновений.",
+                "en": "Run persistence. Rule: Deck composition, upgrades, and associated restrictions persist throughout the encounter sequence."
+              }
+            },
+            {
+              "id": "variant-progression-05",
+              "text": {
+                "ru": "Сброс колоды между забегами. Термин: Run reset. Правило: После завершения попытки текущая сборка исчезает полностью или в заданной правилами части.",
+                "en": "Run reset. Rule: After the attempt is completed, the current build disappears completely or in the part specified by the rules."
+              }
+            },
+            {
+              "id": "variant-progression-06",
+              "text": {
+                "ru": "Открытие нового контента. Термин: Unlocks. Правило: Прогресс делает новые карты, классы, события или наборы доступными в будущих попытках.",
+                "en": "Unlocks. Rule: Progress makes new cards, classes, events or sets available in future attempts."
+              }
+            },
+            {
+              "id": "variant-progression-07",
+              "text": {
+                "ru": "Постоянные усиления. Термин: Persistent upgrades. Правило: Между попытками сохраняются бонусы силы, стартовые ресурсы или улучшения; это отдельный вариант метапрогрессии.",
+                "en": "Persistent upgrades. Rule: Between attempts, strength bonuses, starting resources or improvements are saved; This is a separate version of metaprogression."
+              }
+            },
+            {
+              "id": "variant-progression-08",
+              "text": {
+                "ru": "Кампания и наследуемые изменения. Термин: Campaign / legacy. Правило: Решения меняют будущие стартовые колоды, доступный пул, карты и правила нескольких связанных партий.",
+                "en": "Campaign / legacy. Rule: Decisions change future starting decks, available pool, cards, and rules of several related games."
+              }
+            },
+            {
+              "id": "variant-progression-09",
+              "text": {
+                "ru": "Модификаторы испытания. Термин: Mutators. Правило: Особые режимы меняют стартовую колоду, ограничения, цены, добор или другие правила построения и применения.",
+                "en": "Mutators. Rule: Special modes change the starting deck, restrictions, prices, draw, or other construction and application rules."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-victory",
+      "section": "section-3",
+      "title": {
+        "ru": "Очки, темп и условия завершения",
+        "en": "Scoring, tempo and end conditions"
+      },
+      "description": {
+        "ru": "Что колода должна успеть сделать и как правила заставляют сменить приоритеты.",
+        "en": "What the deck should have time to do and how the rules force you to change priorities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://www.riograndegames.com/games/dominion/",
+        "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf",
+        "https://stoneblade.com/ascension/how-to-play/"
+      ],
+      "branches": [
+        {
+          "id": "family-victory-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-victory-01",
+              "text": {
+                "ru": "Победные карты внутри колоды. Термин: Victory cards. Правило: Часть карт даёт итоговые очки, занимая место и потенциально ухудшая рабочие руки.",
+                "en": "Victory cards. Rule: Some cards contribute final points, taking up space and potentially degrading working hands."
+              }
+            },
+            {
+              "id": "variant-victory-02",
+              "text": {
+                "ru": "Очки вне колоды. Термин: External scoring. Правило: Карты производят жетоны, продвижение или другие очки, не добавляющие новые карты в оборот.",
+                "en": "External scoring. Rule: Cards produce tokens, advancement or other points without adding new cards into circulation."
+              }
+            },
+            {
+              "id": "variant-victory-03",
+              "text": {
+                "ru": "Очки за состав. Термин: Composition scoring. Правило: Финальный результат зависит от комплектов, типов, количества, уникальности или других признаков принадлежащих игроку карт.",
+                "en": "Composition scoring. Rule: The final result depends on the sets, types, quantity, uniqueness or other characteristics of the cards owned by the player."
+              }
+            },
+            {
+              "id": "variant-victory-04",
+              "text": {
+                "ru": "Покупка эффекта без карты. Термин: Non-card purchase. Правило: Игрок тратит ресурс на событие, постоянное правило или очки, сохраняя состав колоды.",
+                "en": "Non-card purchase. Rule: The player spends a resource on an event, permanent rule or points, maintaining the composition of the deck."
+              }
+            },
+            {
+              "id": "variant-victory-05",
+              "text": {
+                "ru": "Истощение общего запаса как финал. Термин: Supply end condition. Правило: Партия заканчивается после опустошения заданных стопок или другого общего ресурса, влияя на момент покупок.",
+                "en": "Supply end condition. Rule: The batch ends after the specified stacks or other shared resource are emptied, affecting the timing of purchases."
+              }
+            },
+            {
+              "id": "variant-victory-06",
+              "text": {
+                "ru": "Дедлайн и нарастающая угроза. Термин: Clock. Правило: Ограничение по ходам, усиление врагов или общий счётчик не позволяют бесконечно развивать колоду.",
+                "en": "Clock. Rule: Limiting moves, buffing enemies, or the overall counter does not allow you to develop your deck indefinitely."
+              }
+            },
+            {
+              "id": "variant-victory-07",
+              "text": {
+                "ru": "Альтернативная победа. Термин: Alternate win condition. Правило: Отдельная комбинация или достижение позволяет завершить игру иначе, чем через базовую цель.",
+                "en": "Alternate win condition. Rule: A separate combination or achievement allows you to complete the game differently than through the base goal."
+              }
+            },
+            {
+              "id": "variant-victory-08",
+              "text": {
+                "ru": "Колода как здоровье. Термин: Deck as health. Правило: Потеря карт уменьшает запас выживания; истощение колоды или невозможность выполнить обязательный сброс приводит к поражению.",
+                "en": "Deck as health. Rule: Losing cards reduces your survival margin; exhausting the deck or failing to make a mandatory discard results in defeat."
+              }
+            },
+            {
+              "id": "variant-victory-09",
+              "text": {
+                "ru": "Рубежи и обязательные проверки. Термин: Boss / stage gate. Правило: Для продолжения нужно пройти противника или испытание, проверяющее конкретные возможности собранной колоды.",
+                "en": "Boss / stage gate. Rule: To continue, you must pass an opponent or a test that tests the specific capabilities of the assembled deck."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Различия, которые влияют на дизайн",
+        "en": "Differences That Affect Design"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сброс обычно сохраняет карту в обороте. Постоянное удаление меняет состав колоды до конца партии или забега. Exhaust в типичной для Slay the Spire модели исключает карту из текущего боя; в других играх термин может иметь другое значение. Отложенная карта возвращается по отдельному условию.",
+            "en": "Discarding usually keeps the card in circulation. Permanent removal changes the composition of the deck for the rest of the game or run. Exhaust, in typical Slay the Spire fashion, removes a card from the current battle; in other games the term may have a different meaning. The deferred card is returned under a separate condition."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Стратегия и механика. Тонкая или толстая колода, engine, combo, rush, control и «бесконечная» комбинация описывают способы использования правил. Самостоятельной механикой становятся конкретные ограничения, операции и бонусы, которые делают такую стратегию возможной.",
+            "en": "Strategy and mechanics. Thin or thick deck, engine, combo, rush, control, and \"infinite\" combination describe ways to use the rules. The mechanics themselves are the specific restrictions, operations, and bonuses that make such a strategy possible."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для спецификации. У каждого эффекта стоит задать исходную и целевую зоны, выбирающего игрока, число целей, цену, момент применения, срок изменения, случайность и порядок разрешения. Эта комбинация параметров описывает механику точнее, чем одно ключевое слово.",
+            "en": "For specification. For each effect, it is worth specifying the source and target zones, the choosing player, the number of targets, the price, the moment of application, the period of change, randomness and resolution order. This combination of parameters describes the mechanics more accurately than a single keyword."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Dominion · Rio Grande Games",
+        "en": "Dominion Rio Grande Games"
+      },
+      "url": "https://www.riograndegames.com/games/dominion/",
+      "description": {
+        "ru": "Базовый цикл построения колоды, карты ресурсов и победных очков.",
+        "en": "Basic cycle of building a deck, resource cards and victory points."
+      }
+    },
+    {
+      "title": {
+        "ru": "Dominion: Adventures · правила",
+        "en": "Dominion: Adventures rules"
+      },
+      "url": "https://www.riograndegames.com/wp-content/uploads/2015/01/DomAdventures2022.pdf",
+      "description": {
+        "ru": "Duration, Reserve, Traveller, Events, повторный розыгрыш и обмен карт.",
+        "en": "Duration, Reserve, Traveler, Events, re-draw and card exchange."
+      }
+    },
+    {
+      "title": {
+        "ru": "Star Realms · правила",
+        "en": "Star Realms rules"
+      },
+      "url": "https://www.starrealms.com/learn-to-play",
+      "description": {
+        "ru": "Обновляемый рынок, получение в сброс, перемешивание, постоянные базы.",
+        "en": "Updated market, receiving in reset, mixing, permanent bases."
+      }
+    },
+    {
+      "title": {
+        "ru": "Star Realms · FAQ",
+        "en": "Star Realms FAQ"
+      },
+      "url": "https://www.starrealms.com/faq",
+      "description": {
+        "ru": "Фракционные взаимодействия, scrap и уточнения работы способностей.",
+        "en": "Faction interactions, scrap and ability refinements."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ascension · правила Stone Blade",
+        "en": "Ascension · Stone Blade rules"
+      },
+      "url": "https://stoneblade.com/ascension/how-to-play/",
+      "description": {
+        "ru": "Открытый ряд, разные ресурсы, banish, Constructs и подсчёт очков.",
+        "en": "Open row, different resources, banish, Constructs and scoring."
+      }
+    },
+    {
+      "title": {
+        "ru": "Aeon’s End · оригинальные правила",
+        "en": "Aeon's End · original rules"
+      },
+      "url": "https://media.lavkaigr.ru/uploads/9e-aeons-end-rulebook.pdf",
+      "description": {
+        "ru": "Оборот без перемешивания, порядок сброса, сохранение руки и подготовка заклинаний. Копия оригинальных правил на сервере издателя локализации.",
+        "en": "Non-shuffle rotation, discard order, hand saving, and spell preparation. A copy of the original rules on the localization publisher's server."
+      }
+    },
+    {
+      "title": {
+        "ru": "Mystic Vale · AEG",
+        "en": "Mystic Vale AEG"
+      },
+      "url": "https://www.alderac.com/mystic-vale/",
+      "description": {
+        "ru": "Card Crafting: развитие карты через добавление компонентов.",
+        "en": "Card Crafting: developing a card by adding components."
+      }
+    },
+    {
+      "title": {
+        "ru": "Slay the Spire · описание Mega Crit",
+        "en": "Slay the Spire · Mega Crit description"
+      },
+      "url": "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+      "description": {
+        "ru": "Построение колоды в забеге, выбор маршрута, взаимодействия с реликвиями.",
+        "en": "Building a deck in a run, choosing a route, interacting with relics."
+      }
+    },
+    {
+      "title": {
+        "ru": "Monster Train · описание разработчика",
+        "en": "Monster Train · developer description"
+      },
+      "url": "https://store.steampowered.com/app/1102190/Monster_Train/",
+      "description": {
+        "ru": "Основной и вспомогательный кланы, улучшения и копирование карт, несколько линий боя.",
+        "en": "Main and auxiliary clans, improvements and copying of cards, several battle lines."
+      }
+    },
+    {
+      "title": {
+        "ru": "Griftlands · описание Klei",
+        "en": "Griftlands description of Klei"
+      },
+      "url": "https://store.steampowered.com/app/601840/Griftlands/",
+      "description": {
+        "ru": "Две развиваемые колоды для боя и переговоров, награды и сюжетные решения.",
+        "en": "Two developable decks for combat and negotiations, rewards and plot decisions."
+      }
+    },
+    {
+      "title": {
+        "ru": "Dune: Imperium · дневник дизайнера",
+        "en": "Dune: Imperium · designer's diary"
+      },
+      "url": "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+      "description": {
+        "ru": "Сочетание карт с выставлением рабочих, альтернативные применения Agent и Reveal.",
+        "en": "A combination of cards with worker placement, alternative uses of Agent and Reveal."
+      }
+    },
+    {
+      "title": {
+        "ru": "Balatro · Playstack",
+        "en": "Balatro Playstack"
+      },
+      "url": "https://www.playstack.com/games/balatro/",
+      "description": {
+        "ru": "Покерные комбинации, Jokers и внешние модификаторы, Tarot и улучшение комбинаций через Planet cards.",
+        "en": "Poker combinations, Jokers and external modifiers, Tarot and improving combinations through Planet cards."
+      }
+    },
+    {
+      "title": {
+        "ru": "Clank! · Dire Wolf",
+        "en": "Clank! Dire Wolf"
+      },
+      "url": "https://www.direwolfdigital.com/clank/",
+      "description": {
+        "ru": "Движение по подземелью, развитие колоды, шум и нарастающая угроза.",
+        "en": "Movement through the dungeon, deck development, noise and growing threat."
+      }
+    }
+  ]
+}

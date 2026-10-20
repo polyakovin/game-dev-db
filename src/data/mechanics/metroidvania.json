@@ -1,0 +1,2893 @@
+{
+  "id": "metroidvania",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики метроидваний",
+    "en": "Metroidvania mechanics"
+  },
+  "description": {
+    "ru": "Механики метроидваний: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Metroidvania mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая таксономия механик, правил доступа, структурных паттернов и вспомогательных систем. Это не отраслевой стандарт и не утверждение, что каждый пункт обязателен или присутствует в каждой игре. Гибриды и поддержка выделены отдельно. Любой конечный список ограничен уровнем детализации; сочетания и новые варианты остаются открытыми.",
+    "en": "The author's working taxonomy of mechanics, access rules, structural patterns and support systems. This is not an industry standard or a statement that every item is required or present in every game. Hybrids and support are highlighted separately. Any finite list is limited by the level of detail; combinations and new options remain open."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Структура",
+        "en": "Structure"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Правила доступа",
+        "en": "Access rules"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Способности",
+        "en": "Capabilities"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Системы",
+        "en": "Systems"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": {
+        "ru": "Бой",
+        "en": "Fight"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": {
+        "ru": "Исследование",
+        "en": "Study"
+      }
+    },
+    {
+      "id": "section-7",
+      "title": {
+        "ru": "Режимы",
+        "en": "Modes"
+      }
+    },
+    {
+      "id": "section-8",
+      "title": {
+        "ru": "Гибриды",
+        "en": "Hybrids"
+      }
+    },
+    {
+      "id": "section-9",
+      "title": {
+        "ru": "Поддержка",
+        "en": "Support"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-group-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Структура мира и маршрутов",
+        "en": "Structure of the world and routes"
+      },
+      "description": {
+        "ru": "Связи областей, развилки и срезки формируют пространство для возвращения и выбора маршрута.",
+        "en": "Area connections, forks and shortcuts form the space for returning and choosing a route."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-001",
+              "text": {
+                "ru": "Связный мир. Правило: Области соединены переходами, а достигнутые места сохраняют пространственные связи.",
+                "en": "Connected world. Rule: Areas are connected by transitions, and reached places retain spatial connections."
+              }
+            },
+            {
+              "id": "variant-mv-002",
+              "text": {
+                "ru": "Разветвлённое прохождение. Правило: Игрок выбирает между несколькими доступными направлениями и целями.",
+                "en": "Branched passage. Rule: The player chooses between several available directions and goals."
+              }
+            },
+            {
+              "id": "variant-mv-003",
+              "text": {
+                "ru": "Хаб и ответвления. Правило: Центральная область связывает маршруты исследования и точки возвращения.",
+                "en": "Hub and branches. Rule: The central area links exploration routes and return points."
+              }
+            },
+            {
+              "id": "variant-mv-004",
+              "text": {
+                "ru": "Петли и срезки. Правило: Позднее открываемый переход сокращает ранее длинный путь.",
+                "en": "Loops and cuts. Rule: A later opened passage shortens a previously long path."
+              }
+            },
+            {
+              "id": "variant-mv-005",
+              "text": {
+                "ru": "Вертикальные связи. Правило: Шахты, колодцы и многоэтажные помещения соединяют разные уровни мира.",
+                "en": "Vertical connections. Rule: Mines, wells and multi-story rooms connect different levels of the world."
+              }
+            },
+            {
+              "id": "variant-mv-006",
+              "text": {
+                "ru": "Односторонние переходы. Правило: Падение или захлопнувшаяся дверь временно меняют доступные пути.",
+                "en": "One-way transitions. Rule: Falling or slamming a door temporarily changes the available paths."
+              }
+            },
+            {
+              "id": "variant-mv-007",
+              "text": {
+                "ru": "Возвращение с новой способностью. Правило: Знакомая область предлагает новые проходы и задачи после усиления героя.",
+                "en": "Returning with a new ability. Rule: A familiar area offers new passages and tasks after strengthening the hero."
+              }
+            },
+            {
+              "id": "variant-mv-008",
+              "text": {
+                "ru": "Несколько путей к цели. Правило: Разные способности, риски или последовательности действий приводят в одну область.",
+                "en": "Several paths to the goal. Rule: Different abilities, risks or sequences of actions lead to one area."
+              }
+            },
+            {
+              "id": "variant-mv-009",
+              "text": {
+                "ru": "Изменение топологии мира. Правило: Событие разрушает, затапливает или перестраивает существующие связи между областями.",
+                "en": "Changing the topology of the world. Rule: An event destroys, floods, or rearranges existing connections between areas."
+              }
+            },
+            {
+              "id": "variant-mv-010",
+              "text": {
+                "ru": "Нарушение предполагаемого порядка, sequence breaking. Правило: Знание, мастерство или сочетание способностей позволяют раньше попасть в позднюю область.",
+                "en": "Violation of the expected order, sequence breaking. Rule: Knowledge, skill, or a combination of abilities allows you to enter a later area earlier."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-02",
+      "section": "section-2",
+      "title": {
+        "ru": "Условия доступа и препятствия",
+        "en": "Access conditions and obstacles"
+      },
+      "description": {
+        "ru": "Препятствия проверяют способность, состояние или знание, необходимое для доступа к новой области.",
+        "en": "Obstacles test the ability, condition, or knowledge required to access a new area."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-011",
+              "text": {
+                "ru": "Проверка способности, ability gate. Правило: Преграду можно преодолеть только после получения определённого действия.",
+                "en": "Ability check, ability gate. Rule: An obstacle can only be overcome after receiving a certain action."
+              }
+            },
+            {
+              "id": "variant-mv-012",
+              "text": {
+                "ru": "Проверка дальности или высоты. Правило: Маршрут требует нужной дистанции прыжка, рывка или полёта.",
+                "en": "Checking range or altitude. Rule: The route requires the required jump, dash or flight distance."
+              }
+            },
+            {
+              "id": "variant-mv-013",
+              "text": {
+                "ru": "Проверка оружия или элемента. Правило: Дверь и материал реагируют на определённую атаку, тип урона или стихию.",
+                "en": "Checking a weapon or element. Rule: The door and material react to a specific attack, damage type, or element."
+              }
+            },
+            {
+              "id": "variant-mv-014",
+              "text": {
+                "ru": "Проверка размера или формы. Правило: Проход допускает только маленькое, плоское, призрачное или иное подходящее тело.",
+                "en": "Checking the size or shape. Rule: Only a small, flat, ghostly or otherwise suitable body is allowed through."
+              }
+            },
+            {
+              "id": "variant-mv-015",
+              "text": {
+                "ru": "Проверка защиты от среды. Правило: Опасную область можно безопасно пройти после получения устойчивости.",
+                "en": "Environment protection check. Rule: A dangerous area can be safely passed after gaining stability."
+              }
+            },
+            {
+              "id": "variant-mv-016",
+              "text": {
+                "ru": "Ключ, пропуск или пароль. Правило: Право прохода задаётся предметом либо известной комбинацией.",
+                "en": "Key, pass or password. Rule: The right of passage is determined by an object or a known combination."
+              }
+            },
+            {
+              "id": "variant-mv-017",
+              "text": {
+                "ru": "Победа над противником. Правило: Доступ открывается после победы над боссом или зачистки заданной угрозы.",
+                "en": "Victory over the enemy. Rule: Access is granted after defeating a boss or clearing a given threat."
+              }
+            },
+            {
+              "id": "variant-mv-018",
+              "text": {
+                "ru": "Сюжетное или мировое условие. Правило: Дверь зависит от задания, работающего устройства или состояния мира.",
+                "en": "Story or world condition. Rule: The door depends on the task, the working device or the state of the world."
+              }
+            },
+            {
+              "id": "variant-mv-019",
+              "text": {
+                "ru": "Проверка мастерства, skill gate. Правило: Действий героя достаточно, но маршрут требует освоенного исполнения.",
+                "en": "Skill check, skill gate. Rule: The hero's actions are sufficient, but the route requires mastered execution..."
+              }
+            },
+            {
+              "id": "variant-mv-020",
+              "text": {
+                "ru": "Проверка знания, knowledge gate. Правило: Игроку нужно понять уже действующее правило, скрытое применение или закономерность.",
+                "en": "Knowledge check, knowledge gate. Rule: The player needs to understand an already existing rule, hidden application or pattern."
+              }
+            },
+            {
+              "id": "variant-mv-021",
+              "text": {
+                "ru": "Мягкое ограничение, soft gate. Правило: Урон, нехватка ресурса или сила врагов затрудняют путь, но не запрещают его абсолютно.",
+                "en": "Soft restriction, soft gate. Rule: Damage, lack of resources or the strength of enemies make the path difficult, but do not completely prohibit it."
+              }
+            },
+            {
+              "id": "variant-mv-022",
+              "text": {
+                "ru": "Составное условие. Правило: Для одного прохода нужны несколько способностей, предметов или состояний одновременно.",
+                "en": "Composite condition. Rule: For one pass you need several abilities, items or conditions at the same time."
+              }
+            },
+            {
+              "id": "variant-mv-023",
+              "text": {
+                "ru": "Альтернативные условия. Правило: Одно препятствие допускает несколько разных способов преодоления.",
+                "en": "Alternative terms. Rule: One obstacle allows for several different ways to overcome..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-03",
+      "section": "section-3",
+      "title": {
+        "ru": "Наземное движение и прыжки",
+        "en": "Ground movement and jumping"
+      },
+      "description": {
+        "ru": "Бег и прыжки определяют достижимые платформы, высоту и дальность перемещения.",
+        "en": "Running and jumping determine reachable platforms, height and range of movement."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-024",
+              "text": {
+                "ru": "Ходьба, бег и управление разгоном. Правило: Скорость и инерция определяют дистанции, остановки и точность перемещения.",
+                "en": "Walking, running and acceleration control. Rule: Speed ​​and inertia determine distances, stops and accuracy of movement."
+              }
+            },
+            {
+              "id": "variant-mv-025",
+              "text": {
+                "ru": "Приседание и ползание. Правило: Уменьшение высоты тела позволяет обходить угрозы и проходить под препятствиями.",
+                "en": "Squatting and crawling. Rule: Reducing your body height allows you to avoid threats and pass under obstacles."
+              }
+            },
+            {
+              "id": "variant-mv-026",
+              "text": {
+                "ru": "Подкат и скольжение. Правило: Быстрое движение с низким профилем помогает пройти узкий участок или атаку.",
+                "en": "Tackling and sliding. Rule: Fast movement with a low profile helps get through a narrow area or attack."
+              }
+            },
+            {
+              "id": "variant-mv-027",
+              "text": {
+                "ru": "Прыжок переменной высоты. Правило: Длительность удержания кнопки меняет высоту и продолжительность прыжка.",
+                "en": "Variable height jump. Rule: The length of time you hold the button changes the height and duration of the jump."
+              }
+            },
+            {
+              "id": "variant-mv-028",
+              "text": {
+                "ru": "Управление в воздухе. Правило: Игрок корректирует горизонтальную траекторию после отрыва от земли.",
+                "en": "Air control. Rule: The player adjusts the horizontal trajectory after taking off from the ground."
+              }
+            },
+            {
+              "id": "variant-mv-029",
+              "text": {
+                "ru": "Двойной или многократный прыжок. Правило: Дополнительные воздушные импульсы расширяют достижимое пространство.",
+                "en": "Double or multiple jump. Rule: Additional air pulses expand the reachable space."
+              }
+            },
+            {
+              "id": "variant-mv-030",
+              "text": {
+                "ru": "Высокий или заряженный прыжок. Правило: Подготовка либо усиление дают больший вертикальный подъём.",
+                "en": "High or charged jump. Rule: Preparation or strengthening gives greater vertical lift."
+              }
+            },
+            {
+              "id": "variant-mv-031",
+              "text": {
+                "ru": "Рывок на земле и в воздухе. Правило: Короткое быстрое перемещение увеличивает дальность и помогает уклоняться.",
+                "en": "Dash on the ground and in the air. Rule: Short fast movement increases range and helps with evasion..."
+              }
+            },
+            {
+              "id": "variant-mv-032",
+              "text": {
+                "ru": "Рывок в выбранном направлении. Правило: Игрок задаёт вектор быстрого перемещения, включая вертикальные и диагональные варианты.",
+                "en": "Dash in the chosen direction. Rule: The player sets the fast movement vector, including vertical and diagonal options."
+              }
+            },
+            {
+              "id": "variant-mv-033",
+              "text": {
+                "ru": "Проходящий рывок. Правило: Особый вариант рывка позволяет пересекать определённые барьеры или тела противников.",
+                "en": "Passing rush. Rule: A special variant of the dash allows you to cross certain barriers or enemy bodies."
+              }
+            },
+            {
+              "id": "variant-mv-034",
+              "text": {
+                "ru": "Планирование и замедление падения. Правило: Крыло, плащ или иной инструмент увеличивают время в воздухе.",
+                "en": "Planning and slowing the fall. Rule: A wing, cape or other tool increases time in the air."
+              }
+            },
+            {
+              "id": "variant-mv-035",
+              "text": {
+                "ru": "Свободный полёт или зависание. Правило: Персонаж удерживает высоту либо перемещается по воздуху с ограничениями ресурса.",
+                "en": "Free flight or hovering. Rule: The character maintains height or moves through the air with resource limitations."
+              }
+            },
+            {
+              "id": "variant-mv-036",
+              "text": {
+                "ru": "Удар вниз и ускоренное падение. Правило: Резкое снижение пробивает поверхность, атакует цель или завершает воздушную цепочку.",
+                "en": "Downward strike and accelerated fall. Rule: A sharp descent penetrates the surface, attacks the target or completes the air chain."
+              }
+            },
+            {
+              "id": "variant-mv-037",
+              "text": {
+                "ru": "Восстановление воздушных действий. Правило: Касание цели или специального объекта возвращает прыжок либо рывок до приземления.",
+                "en": "Restoring air operations. Rule: Touching a target or special object returns the jump or dash to land."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-04",
+      "section": "section-3",
+      "title": {
+        "ru": "Стены, потолки и зацепы",
+        "en": "Walls, ceilings and holds"
+      },
+      "description": {
+        "ru": "Поверхности стен и потолков становятся опорами или маршрутами при наличии соответствующего действия.",
+        "en": "Wall and ceiling surfaces become supports or routes when given the appropriate action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-038",
+              "text": {
+                "ru": "Прыжок от стены. Правило: Отталкивание от вертикальной поверхности даёт высоту и меняет направление.",
+                "en": "Wall jump. Rule: Pushing off a vertical surface gives height and changes direction."
+              }
+            },
+            {
+              "id": "variant-mv-039",
+              "text": {
+                "ru": "Скольжение по стене. Правило: Контакт со стеной замедляет падение и позволяет выбрать момент следующего действия.",
+                "en": "Sliding along the wall. Rule: Contact with the wall slows down the fall and allows you to choose the moment of the next action."
+              }
+            },
+            {
+              "id": "variant-mv-040",
+              "text": {
+                "ru": "Лазание с удержанием. Правило: Персонаж поднимается по поверхности, иногда расходуя выносливость.",
+                "en": "Climbing with hold. Rule: The character ascends the surface, sometimes expending stamina."
+              }
+            },
+            {
+              "id": "variant-mv-041",
+              "text": {
+                "ru": "Бег по стене. Правило: Движение вдоль вертикальной поверхности требует скорости и подходящей геометрии.",
+                "en": "Wall running. Rule: Movement along a vertical surface requires speed and suitable geometry."
+              }
+            },
+            {
+              "id": "variant-mv-042",
+              "text": {
+                "ru": "Зацеп за край. Правило: Удержание на краю и подтягивание расширяют доступную высоту платформ.",
+                "en": "Catch on the edge. Rule: Holding on the edge and pulling up expands the available height of the platforms."
+              }
+            },
+            {
+              "id": "variant-mv-043",
+              "text": {
+                "ru": "Лестницы, лианы и канаты. Правило: Специальные объекты задают отдельный режим вертикального передвижения.",
+                "en": "Ladders, vines and ropes. Rule: Special objects set a separate mode of vertical movement."
+              }
+            },
+            {
+              "id": "variant-mv-044",
+              "text": {
+                "ru": "Перемещение по потолку. Правило: Герой цепляется за потолочные поверхности или специальные полосы.",
+                "en": "Moving along the ceiling. Rule: The hero clings to ceiling surfaces or special strips."
+              }
+            },
+            {
+              "id": "variant-mv-045",
+              "text": {
+                "ru": "Магнитное прилипание. Правило: Подходящие стены и потолки удерживают героя при помощи магнитной способности.",
+                "en": "Magnetic adhesion. Rule: Suitable walls and ceilings hold the hero with a magnetic ability."
+              }
+            },
+            {
+              "id": "variant-mv-046",
+              "text": {
+                "ru": "Притягивание крюком. Правило: Выстрел в точку зацепа быстро переносит персонажа к ней.",
+                "en": "Hook pull. Rule: Shooting at the hook point quickly transports the character to it."
+              }
+            },
+            {
+              "id": "variant-mv-047",
+              "text": {
+                "ru": "Раскачивание на крюке или верёвке. Правило: Длина связи и набранный импульс определяют траекторию перелёта.",
+                "en": "Swinging on a hook or rope. Rule: The length of the connection and the accumulated impulse determine the flight trajectory."
+              }
+            },
+            {
+              "id": "variant-mv-048",
+              "text": {
+                "ru": "Притягивание цели к себе. Правило: Крюк двигает предмет, платформу или противника вместо перемещения героя.",
+                "en": "Attracting the target towards you. Rule: The grappling hook moves an object, platform, or enemy instead of moving the hero."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-05",
+      "section": "section-3",
+      "title": {
+        "ru": "Импульс и использование окружения для движения",
+        "en": "Momentum and using the environment to move"
+      },
+      "description": {
+        "ru": "Накопленный импульс и свойства окружения используются для достижения новых позиций.",
+        "en": "The accumulated momentum and the properties of the environment are used to achieve new positions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-049",
+              "text": {
+                "ru": "Скоростной разгон. Правило: Достаточный разбег позволяет прорывать препятствия или пересекать опасные участки.",
+                "en": "High-speed acceleration. Rule: A sufficient run-up allows you to break through obstacles or cross dangerous areas."
+              }
+            },
+            {
+              "id": "variant-mv-050",
+              "text": {
+                "ru": "Накопление и выпуск импульса. Правило: Герой сохраняет разгон и позже превращает его в направленный полёт.",
+                "en": "Accumulation and release of impulse. Rule: The hero maintains acceleration and later turns it into directed flight..."
+              }
+            },
+            {
+              "id": "variant-mv-051",
+              "text": {
+                "ru": "Прыжок на взрывной волне. Правило: Взрыв бомбы подбрасывает героя и служит инструментом передвижения.",
+                "en": "Jump on a blast wave. Rule: A bomb explosion knocks up the hero and serves as a means of movement."
+              }
+            },
+            {
+              "id": "variant-mv-052",
+              "text": {
+                "ru": "Отталкивание ударом вниз, pogo. Правило: Удар по подходящему врагу или поверхности подбрасывает героя.",
+                "en": "Pushing down with a kick, pogo. Rule: Hitting a suitable enemy or surface will knock up the hero."
+              }
+            },
+            {
+              "id": "variant-mv-053",
+              "text": {
+                "ru": "Отталкивание от цели, bash. Правило: Герой использует объект или снаряд как опору для направленного броска.",
+                "en": "Pushing away from the target, bash. Rule: The hero uses an object or projectile as support for a directed throw."
+              }
+            },
+            {
+              "id": "variant-mv-054",
+              "text": {
+                "ru": "Отдача оружия. Правило: Выстрел или удар меняют скорость и положение самого персонажа.",
+                "en": "Weapon recoil. Rule: A shot or blow changes the speed and position of the character himself."
+              }
+            },
+            {
+              "id": "variant-mv-055",
+              "text": {
+                "ru": "Пружины и пусковые устройства. Правило: Объект окружения отправляет героя по заданной или выбираемой траектории.",
+                "en": "Springs and starting devices. Rule: An environmental object sends the hero along a given or selectable trajectory."
+              }
+            },
+            {
+              "id": "variant-mv-056",
+              "text": {
+                "ru": "Воздушные и водные потоки. Правило: Поток переносит героя либо поддерживает его в воздухе или воде.",
+                "en": "Air and water flows. Rule: The flow carries the hero or supports him in the air or water."
+              }
+            },
+            {
+              "id": "variant-mv-057",
+              "text": {
+                "ru": "Конвейеры, рельсы и тросы. Правило: Поверхность или направляющая изменяет скорость и допустимое направление движения.",
+                "en": "Conveyors, rails and cables. Rule: The surface or guide changes the speed and allowable direction of movement."
+              }
+            },
+            {
+              "id": "variant-mv-058",
+              "text": {
+                "ru": "Езда на существе или объекте. Правило: Движущаяся сущность служит транспортом, платформой или переносчиком.",
+                "en": "Riding a creature or object. Rule: The moving entity serves as a vehicle, platform, or carrier."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-06",
+      "section": "section-3",
+      "title": {
+        "ru": "Формы, тела и спутники",
+        "en": "Forms, bodies and companions"
+      },
+      "description": {
+        "ru": "Смена формы, тела или управляемого спутника даёт разные размеры, свойства и способы взаимодействия.",
+        "en": "Changing the shape, body or controlled satellite gives different sizes, properties and methods of interaction."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-059",
+              "text": {
+                "ru": "Компактная форма, Morph Ball. Правило: Смена формы уменьшает тело и открывает узкие тоннели.",
+                "en": "Compact shape, Morph Ball. Rule: Changing shape reduces the body and opens narrow tunnels."
+              }
+            },
+            {
+              "id": "variant-mv-060",
+              "text": {
+                "ru": "Формы животных и существ. Правило: Разные тела дают собственные наборы движений, атак и взаимодействий.",
+                "en": "Shapes of animals and creatures. Rule: Different bodies provide their own sets of moves, attacks and interactions."
+              }
+            },
+            {
+              "id": "variant-mv-061",
+              "text": {
+                "ru": "Полётная форма. Правило: Превращение меняет способ воздушного перемещения и допустимые проходы.",
+                "en": "Flight form. Rule: Transformation changes the method of air movement and the allowed passages."
+              }
+            },
+            {
+              "id": "variant-mv-062",
+              "text": {
+                "ru": "Жидкая, туманная или бесплотная форма. Правило: Специальное состояние позволяет проходить сквозь определённые решётки и материалы.",
+                "en": "Fluid, misty or ethereal form. Rule: A special condition allows you to pass through certain gratings and materials."
+              }
+            },
+            {
+              "id": "variant-mv-063",
+              "text": {
+                "ru": "Изменение размера. Правило: Уменьшение или увеличение меняет доступность проходов, массу и взаимодействия.",
+                "en": "Resizing. Rule: Reducing or increasing changes the availability of passages, mass and interactions."
+              }
+            },
+            {
+              "id": "variant-mv-064",
+              "text": {
+                "ru": "Отделяемая часть тела. Правило: Голова, рука или другая часть самостоятельно добирается до недоступного механизма.",
+                "en": "Detachable body part. Rule: The head, hand or other part independently reaches the inaccessible mechanism."
+              }
+            },
+            {
+              "id": "variant-mv-065",
+              "text": {
+                "ru": "Дистанционный дрон. Правило: Вспомогательное управляемое тело исследует места, недоступные основному персонажу.",
+                "en": "Remote drone. Rule: An auxiliary controlled body explores places inaccessible to the main character."
+              }
+            },
+            {
+              "id": "variant-mv-066",
+              "text": {
+                "ru": "Вселение или захват тела. Правило: Игрок временно управляет чужим существом и использует его свойства.",
+                "en": "Possession or takeover of a body. Rule: The player temporarily controls another creature and uses its properties."
+              }
+            },
+            {
+              "id": "variant-mv-067",
+              "text": {
+                "ru": "Переключение персонажей. Правило: Несколько героев обладают разными средствами исследования одного мира.",
+                "en": "Switching characters. Rule: Several heroes have different means of exploring the same world."
+              }
+            },
+            {
+              "id": "variant-mv-068",
+              "text": {
+                "ru": "Командуемый спутник. Правило: Союзник выполняет отдельные действия, удерживает механизм или помогает пройти участок.",
+                "en": "Commanded satellite. Rule: An ally performs individual actions, holds the mechanism or helps pass the area."
+              }
+            },
+            {
+              "id": "variant-mv-069",
+              "text": {
+                "ru": "Копирование вражеских способностей. Правило: Поведение побеждённого или захваченного противника становится действием героя.",
+                "en": "Copying enemy abilities. Rule: The behavior of a defeated or captured enemy becomes the hero's action."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-07",
+      "section": "section-3",
+      "title": {
+        "ru": "Вода и опасная среда",
+        "en": "Water and hazardous environment"
+      },
+      "description": {
+        "ru": "Вода и другие среды меняют движение, требования к защите и пределы времени пребывания.",
+        "en": "Water and other media change movement, protection requirements, and residence time limits."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-070",
+              "text": {
+                "ru": "Плавание и ныряние. Правило: Персонаж перемещается в жидкости по особым правилам движения.",
+                "en": "Swimming and diving. Rule: The character moves in liquid according to special movement rules."
+              }
+            },
+            {
+              "id": "variant-mv-071",
+              "text": {
+                "ru": "Запас воздуха. Правило: Длительность пребывания под водой ограничивает маршрут и поиск безопасных точек.",
+                "en": "Air supply. Rule: The length of stay under water limits the route and the search for safe points."
+              }
+            },
+            {
+              "id": "variant-mv-072",
+              "text": {
+                "ru": "Подводное дыхание. Правило: Улучшение снимает ограничение воздуха и расширяет исследование глубин.",
+                "en": "Underwater breathing. Rule: Upgrade removes air restriction and expands depth exploration."
+              }
+            },
+            {
+              "id": "variant-mv-073",
+              "text": {
+                "ru": "Подводный рывок. Правило: Ускорение помогает преодолевать течение, расстояние и специальные преграды.",
+                "en": "Underwater dash. Rule: Acceleration helps overcome currents, distances and special obstacles."
+              }
+            },
+            {
+              "id": "variant-mv-074",
+              "text": {
+                "ru": "Управление плавучестью. Правило: Герой погружается, всплывает или удерживает глубину при помощи особого свойства.",
+                "en": "Buoyancy control. Rule: The hero dives, surfaces, or maintains depth using a special ability."
+              }
+            },
+            {
+              "id": "variant-mv-075",
+              "text": {
+                "ru": "Защита от жары и холода. Правило: Экипировка или способность позволяет проходить температурно опасные области.",
+                "en": "Protection from heat and cold. Rule: Equipment or ability allows you to pass through temperature-hazardous areas."
+              }
+            },
+            {
+              "id": "variant-mv-076",
+              "text": {
+                "ru": "Защита от яда, кислоты и заражения. Правило: Устойчивость снимает либо уменьшает вред определённой среды.",
+                "en": "Protection from poison, acid and infection. Rule: Sustainability removes or reduces harm to a certain environment."
+              }
+            },
+            {
+              "id": "variant-mv-077",
+              "text": {
+                "ru": "Передвижение по опасной поверхности. Правило: Способность позволяет ступать на шипы, жидкость или иной особый материал.",
+                "en": "Traveling on dangerous surfaces. Rule: The ability allows you to step on spikes, liquid or other special material."
+              }
+            },
+            {
+              "id": "variant-mv-078",
+              "text": {
+                "ru": "Преодоление песка и грунта. Правило: Рытьё или плавание внутри материала открывает дополнительные маршруты.",
+                "en": "Overcoming sand and soil. Rule: Digging or swimming through the material opens up additional routes."
+              }
+            },
+            {
+              "id": "variant-mv-079",
+              "text": {
+                "ru": "Свет как условие выживания. Правило: Освещение защищает от среды или существ, опасных в темноте.",
+                "en": "Light as a condition for survival. Rule: Lighting protects against environments or creatures that are dangerous in the dark."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-08",
+      "section": "section-3",
+      "title": {
+        "ru": "Воздействие на окружение",
+        "en": "Impact on the environment"
+      },
+      "description": {
+        "ru": "Игрок изменяет объекты и среды, чтобы открыть маршрут или новое состояние области.",
+        "en": "The player modifies objects and environments to reveal a route or new state of an area."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-080",
+              "text": {
+                "ru": "Разрушение стен и полов. Правило: Подходящая атака удаляет материал и открывает проход.",
+                "en": "Destruction of walls and floors. Rule: A suitable attack removes material and opens a passage."
+              }
+            },
+            {
+              "id": "variant-mv-081",
+              "text": {
+                "ru": "Копание и прокладка тоннелей. Правило: Игрок сам формирует путь через разрушаемый грунт.",
+                "en": "Digging and laying tunnels. Rule: The player himself forms a path through destructible soil."
+              }
+            },
+            {
+              "id": "variant-mv-082",
+              "text": {
+                "ru": "Перемещение блоков. Правило: Предметы толкают, тянут или ставят в нужные места.",
+                "en": "Moving blocks. Rule: Objects are pushed, pulled or placed in the right places."
+              }
+            },
+            {
+              "id": "variant-mv-083",
+              "text": {
+                "ru": "Подъём, перенос и бросок. Правило: Герой доставляет объект к механизму или применяет его как инструмент.",
+                "en": "Lifting, carrying and throwing. Rule: The hero delivers the object to the mechanism or uses it as a tool..."
+              }
+            },
+            {
+              "id": "variant-mv-084",
+              "text": {
+                "ru": "Рычаги, кнопки и нажимные плиты. Правило: Локальное действие меняет состояние двери или устройства.",
+                "en": "Levers, buttons and pressure plates. Rule: A local action changes the state of a door or device."
+              }
+            },
+            {
+              "id": "variant-mv-085",
+              "text": {
+                "ru": "Удалённая активация. Правило: Выстрел, крюк или возвращающийся предмет воздействует на механизм издалека.",
+                "en": "Remote activation. Rule: A shot, hook or returning object affects the mechanism from afar."
+              }
+            },
+            {
+              "id": "variant-mv-086",
+              "text": {
+                "ru": "Электричество и цепи. Правило: Соединение источника с потребителем запускает устройства.",
+                "en": "Electricity and circuits. Rule: Connecting a source to a sink starts the devices."
+              }
+            },
+            {
+              "id": "variant-mv-087",
+              "text": {
+                "ru": "Огонь, лёд и фазовые состояния. Правило: Нагревание, горение и замораживание меняют свойства объектов.",
+                "en": "Fire, ice and phase states. Rule: Heating, burning and freezing change the properties of objects."
+              }
+            },
+            {
+              "id": "variant-mv-088",
+              "text": {
+                "ru": "Уровень жидкости. Правило: Слив, наполнение и затопление меняют доступность путей и устройств.",
+                "en": "Liquid level. Rule: Draining, filling and flooding change the accessibility of paths and devices."
+              }
+            },
+            {
+              "id": "variant-mv-089",
+              "text": {
+                "ru": "Выращивание и восстановление. Правило: Растения или восстановленные структуры создают платформы и переходы.",
+                "en": "Growing and restoration. Rule: Plants or restored structures create platforms and passages."
+              }
+            },
+            {
+              "id": "variant-mv-090",
+              "text": {
+                "ru": "Создание временной опоры. Правило: Способность формирует ограниченную по времени платформу или иной объект.",
+                "en": "Creating a temporary support. Rule: The ability creates a time-limited platform or other object."
+              }
+            },
+            {
+              "id": "variant-mv-091",
+              "text": {
+                "ru": "Взлом устройств и машин. Правило: Изменение режима устройства или робота открывает путь либо меняет угрозу.",
+                "en": "Hacking devices and machines. Rule: Changing the mode of a device or robot opens a path or changes the threat."
+              }
+            },
+            {
+              "id": "variant-mv-092",
+              "text": {
+                "ru": "Свойства материалов. Правило: Вес, упругость, проводимость или хрупкость определяют результат взаимодействия.",
+                "en": "Properties of materials. Rule: Weight, elasticity, conductivity or fragility determine the outcome of the interaction."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-09",
+      "section": "section-3",
+      "title": {
+        "ru": "Пространство, время и слои мира",
+        "en": "Space, time and layers of the world"
+      },
+      "description": {
+        "ru": "Переключение слоёв, пространства и времени меняет связи мира и доступные решения.",
+        "en": "Switching layers, space and time changes the connections of the world and the solutions available."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-093",
+              "text": {
+                "ru": "Короткая телепортация. Правило: Мгновенный перенос преодолевает разрыв или заданный тип препятствия.",
+                "en": "Short teleportation. Rule: Instant carry overcomes a gap or a given type of obstacle."
+              }
+            },
+            {
+              "id": "variant-mv-094",
+              "text": {
+                "ru": "Метка возврата. Правило: Герой оставляет позицию и позже мгновенно возвращается к ней.",
+                "en": "Return label. Rule: The hero leaves a position and later instantly returns to it."
+              }
+            },
+            {
+              "id": "variant-mv-095",
+              "text": {
+                "ru": "Обмен местами. Правило: Персонаж меняется положением с предметом, снарядом или двойником.",
+                "en": "Swap places. Rule: The character changes position with an object, projectile or double."
+              }
+            },
+            {
+              "id": "variant-mv-096",
+              "text": {
+                "ru": "Связанные порталы. Правило: Две точки пространства соединяются для героя, объектов или атак.",
+                "en": "Related portals. Rule: Two points in space are connected for the hero, objects or attacks."
+              }
+            },
+            {
+              "id": "variant-mv-097",
+              "text": {
+                "ru": "Переход между слоями мира. Правило: Один участок имеет разные геометрию и свойства в разных реальностях.",
+                "en": "Transition between layers of the world. Rule: One area has different geometry and properties in different realities."
+              }
+            },
+            {
+              "id": "variant-mv-098",
+              "text": {
+                "ru": "Материализация объектов. Правило: Переключение состояния делает платформу или препятствие твёрдым либо проницаемым.",
+                "en": "Materialization of objects. Rule: Switching the state makes the platform or obstacle solid or permeable."
+              }
+            },
+            {
+              "id": "variant-mv-099",
+              "text": {
+                "ru": "Инверсия или поворот гравитации. Правило: Меняется направление падения и набор доступных поверхностей.",
+                "en": "Inversion or reversal of gravity. Rule: The direction of fall and the set of available surfaces change."
+              }
+            },
+            {
+              "id": "variant-mv-100",
+              "text": {
+                "ru": "Поворот комнаты. Правило: Изменение ориентации целого пространства создаёт новые пути.",
+                "en": "Rotate the room. Rule: Changing the orientation of an entire space creates new paths..."
+              }
+            },
+            {
+              "id": "variant-mv-101",
+              "text": {
+                "ru": "Замедление или остановка времени. Правило: Скорость процессов окружения меняется относительно действий игрока.",
+                "en": "Slowing down or stopping time. Rule: The speed of environmental processes changes relative to the player's actions."
+              }
+            },
+            {
+              "id": "variant-mv-102",
+              "text": {
+                "ru": "Перемотка состояния. Правило: Игра возвращает прежнее положение героя или состояние объектов.",
+                "en": "Rewind state. Rule: The game returns the previous position of the hero or the state of objects."
+              }
+            },
+            {
+              "id": "variant-mv-103",
+              "text": {
+                "ru": "Запись действий и временной двойник. Правило: Повтор записанной последовательности позволяет совместить действия в разных местах.",
+                "en": "Action recording and time double. Rule: Repeating a recorded sequence allows you to combine actions in different places."
+              }
+            },
+            {
+              "id": "variant-mv-104",
+              "text": {
+                "ru": "Изменение прошлого и будущего. Правило: Действие в одной временной версии места меняет другую версию.",
+                "en": "Changing the past and future. Rule: An action in one temporary version of a place changes another version."
+              }
+            },
+            {
+              "id": "variant-mv-105",
+              "text": {
+                "ru": "Циклическое состояние мира. Правило: Смена суток, приливов или иных периодических условий меняет маршруты и взаимодействия.",
+                "en": "The cyclical state of the world. Rule: Changing days, tides, or other periodic conditions change routes and interactions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-10",
+      "section": "section-4",
+      "title": {
+        "ru": "Инструменты восприятия и головоломки",
+        "en": "Perception Tools and Puzzles"
+      },
+      "description": {
+        "ru": "Инструменты наблюдения раскрывают скрытые свойства и позволяют проверять решения головоломок.",
+        "en": "Observation tools reveal hidden properties and allow you to check puzzle solutions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-106",
+              "text": {
+                "ru": "Сканирование скрытого. Правило: Прибор или способность обнаруживает разрушаемые поверхности, следы и объекты.",
+                "en": "Scanning the hidden. Rule: A device or ability detects destructible surfaces, tracks, and objects."
+              }
+            },
+            {
+              "id": "variant-mv-107",
+              "text": {
+                "ru": "Особое зрение. Правило: Режим восприятия показывает слой информации, недоступный обычному взгляду.",
+                "en": "Special vision. Rule: Perceptual mode reveals a layer of information that is inaccessible to ordinary eyes."
+              }
+            },
+            {
+              "id": "variant-mv-108",
+              "text": {
+                "ru": "Звуковой сигнал и эхолокация. Правило: Звук обнаруживает объекты либо вызывает реакцию окружения.",
+                "en": "Sound signal and echolocation. Rule: Sound detects objects or causes a reaction from the environment."
+              }
+            },
+            {
+              "id": "variant-mv-109",
+              "text": {
+                "ru": "Наблюдение за поведением существ. Правило: Игрок выводит правила и использует предсказуемые реакции как инструмент.",
+                "en": "Observing the behavior of creatures. Rule: The player derives rules and uses predictable reactions as a tool."
+              }
+            },
+            {
+              "id": "variant-mv-110",
+              "text": {
+                "ru": "Приманивание и отпугивание. Правило: Еда, звук или предмет меняют положение и поведение существа.",
+                "en": "Luring and repelling. Rule: Food, sound or object changes the position and behavior of a creature."
+              }
+            },
+            {
+              "id": "variant-mv-111",
+              "text": {
+                "ru": "Перенаправление света и лучей. Правило: Зеркала и другие устройства проводят сигнал к нужной цели.",
+                "en": "Redirection of light and rays. Rule: Mirrors and other devices conduct the signal to the desired target."
+              }
+            },
+            {
+              "id": "variant-mv-112",
+              "text": {
+                "ru": "Символы, коды и мелодии. Правило: Доступ требует распознать и воспроизвести условную последовательность.",
+                "en": "Symbols, codes and melodies. Rule: Access requires recognizing and reproducing a conditional sequence."
+              }
+            },
+            {
+              "id": "variant-mv-113",
+              "text": {
+                "ru": "Порядок переключений. Правило: Нужный результат зависит от последовательности активации устройств.",
+                "en": "Switching order. Rule: The desired result depends on the activation sequence of the devices."
+              }
+            },
+            {
+              "id": "variant-mv-114",
+              "text": {
+                "ru": "Синхронная активация. Правило: Несколько условий должны одновременно оставаться выполненными.",
+                "en": "Synchronous activation. Rule: Several conditions must remain true at the same time."
+              }
+            },
+            {
+              "id": "variant-mv-115",
+              "text": {
+                "ru": "Переносимый предмет с несколькими применениями. Правило: Один инструмент решает задачи движения, боя и взаимодействия разными способами.",
+                "en": "A portable item with multiple uses. Rule: One tool solves the problems of movement, combat and interaction in different ways..."
+              }
+            },
+            {
+              "id": "variant-mv-116",
+              "text": {
+                "ru": "Обмен свойствами между объектами. Правило: Реакции объектов образуют цепочку преобразований для решения задачи.",
+                "en": "Exchange of properties between objects. Rule: The reactions of objects form a chain of transformations to solve the problem."
+              }
+            },
+            {
+              "id": "variant-mv-117",
+              "text": {
+                "ru": "Головоломка на пространственную связь. Правило: Решение требует понять взаимное положение комнат, переходов или слоёв.",
+                "en": "Spatial connection puzzle. Rule: The solution requires understanding the relative positions of rooms, transitions or layers."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-11",
+      "section": "section-5",
+      "title": {
+        "ru": "Ближний бой",
+        "en": "Melee"
+      },
+      "description": {
+        "ru": "Ближние атаки используют позицию, время и свойства оружия для преодоления угроз.",
+        "en": "Melee attacks use position, timing, and weapon properties to overcome threats."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-118",
+              "text": {
+                "ru": "Направленный удар. Правило: Герой выбирает направление атаки, включая верх и низ.",
+                "en": "Directed strike. Rule: The hero chooses the direction of attack, including up and down."
+              }
+            },
+            {
+              "id": "variant-mv-119",
+              "text": {
+                "ru": "Лёгкая и тяжёлая атаки. Правило: Разные действия обменивают скорость исполнения на урон и пробивание защиты.",
+                "en": "Light and heavy attacks. Rule: Various actions exchange execution speed for damage and defense penetration."
+              }
+            },
+            {
+              "id": "variant-mv-120",
+              "text": {
+                "ru": "Заряженный удар. Правило: Удержание атаки усиливает её либо открывает особый эффект.",
+                "en": "Charged Strike. Rule: Holding an attack strengthens it or unlocks a special effect."
+              }
+            },
+            {
+              "id": "variant-mv-121",
+              "text": {
+                "ru": "Комбинация ударов. Правило: Последовательность действий создаёт продолжение атаки с особыми свойствами.",
+                "en": "Combination of blows. Rule: The sequence of actions creates a continuation of the attack with special properties."
+              }
+            },
+            {
+              "id": "variant-mv-122",
+              "text": {
+                "ru": "Воздушный бой. Правило: Атаки и манёвры выполняются в прыжке и могут удерживать героя в воздухе.",
+                "en": "Air battle. Rule: Attacks and maneuvers are performed while jumping and can keep the hero in the air."
+              }
+            },
+            {
+              "id": "variant-mv-123",
+              "text": {
+                "ru": "Вращательная атака при движении. Правило: Прыжок или вращение превращают контакт тела с целью в поражающее действие.",
+                "en": "Spin attack while moving. Rule: A jump or spin turns body contact with the target into a lethal effect."
+              }
+            },
+            {
+              "id": "variant-mv-124",
+              "text": {
+                "ru": "Подбрасывание и воздушная серия. Правило: Герой отрывает врага от земли и продолжает атаки по нему.",
+                "en": "Toss and aerial series. Rule: The hero lifts the enemy off the ground and continues attacks on him."
+              }
+            },
+            {
+              "id": "variant-mv-125",
+              "text": {
+                "ru": "Удар из рывка. Правило: Перемещение и атака объединены в одно действие.",
+                "en": "Dash kick. Rule: Moving and attacking are combined into one action."
+              }
+            },
+            {
+              "id": "variant-mv-126",
+              "text": {
+                "ru": "Зона поражения и дистанция оружия. Правило: Длина и форма атаки требуют выбирать позицию относительно цели.",
+                "en": "Impact area and weapon range. Rule: The length and shape of the attack requires choosing a position relative to the target."
+              }
+            },
+            {
+              "id": "variant-mv-127",
+              "text": {
+                "ru": "Разрушение защиты. Правило: Специальная атака преодолевает блок, щит или броню.",
+                "en": "Destruction of protection. Rule: Special attack overcomes block, shield or armor."
+              }
+            },
+            {
+              "id": "variant-mv-128",
+              "text": {
+                "ru": "Захват, бросок и добивание. Правило: Особое состояние цели позволяет выполнить отдельное сильное действие.",
+                "en": "Grabbing, throwing and finishing. Rule: The target's special condition allows it to perform a separate strong action."
+              }
+            },
+            {
+              "id": "variant-mv-129",
+              "text": {
+                "ru": "Отмена действия и смена приёма. Правило: Игрок прерывает допустимую часть атаки защитой, движением или другим ударом.",
+                "en": "Cancel the action and change the method. Rule: The player interrupts a valid portion of the attack with a defense, movement, or other strike."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-12",
+      "section": "section-5",
+      "title": {
+        "ru": "Дальний бой, магия и инструменты атаки",
+        "en": "Ranged combat, magic and attack tools"
+      },
+      "description": {
+        "ru": "Дистанционные атаки и магия дают способы воздействовать на удалённые цели и элементы мира.",
+        "en": "Ranged attacks and magic provide ways to affect distant targets and elements of the world."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-130",
+              "text": {
+                "ru": "Направленная стрельба и прицеливание. Правило: Герой выбирает линию огня с учётом движения и расположения цели.",
+                "en": "Directional shooting and aiming. Rule: The hero chooses a line of fire taking into account the movement and location of the target."
+              }
+            },
+            {
+              "id": "variant-mv-131",
+              "text": {
+                "ru": "Захват цели, lock-on. Правило: Выбранный противник становится опорой для прицеливания, камеры или самонаведения.",
+                "en": "Target acquisition, lock-on. Rule: The selected enemy becomes a reference for aiming, camera or homing."
+              }
+            },
+            {
+              "id": "variant-mv-132",
+              "text": {
+                "ru": "Заряженный выстрел. Правило: Подготовка усиливает снаряд или меняет его свойства.",
+                "en": "Charged shot. Rule: Preparation strengthens the projectile or changes its properties."
+              }
+            },
+            {
+              "id": "variant-mv-133",
+              "text": {
+                "ru": "Ракеты и ограниченный боезапас. Правило: Сильные атаки расходуют отдельный конечный ресурс.",
+                "en": "Missiles and limited ammunition. Rule: Strong attacks consume a separate finite resource."
+              }
+            },
+            {
+              "id": "variant-mv-134",
+              "text": {
+                "ru": "Пробивающие, отражающиеся и самонаводящиеся снаряды. Правило: Форма траектории позволяет поражать разные расположения целей.",
+                "en": "Penetrating, reflective and homing projectiles. Rule: The shape of the trajectory allows you to hit different target locations."
+              }
+            },
+            {
+              "id": "variant-mv-135",
+              "text": {
+                "ru": "Постоянный луч или поток. Правило: Урон наносится при поддержании направления и расходовании ресурса.",
+                "en": "A constant beam or stream. Rule: Damage is dealt while maintaining direction and spending a resource."
+              }
+            },
+            {
+              "id": "variant-mv-136",
+              "text": {
+                "ru": "Бомбы, мины и ловушки. Правило: Атака заранее размещается в пространстве и срабатывает позже.",
+                "en": "Bombs, mines and traps. Rule: The attack is placed in space in advance and triggers later."
+              }
+            },
+            {
+              "id": "variant-mv-137",
+              "text": {
+                "ru": "Возвращающееся оружие. Правило: Бумеранг или чакрам действует на прямом и обратном пути.",
+                "en": "Returning weapon. Rule: The boomerang or chakram acts on the forward and backward path."
+              }
+            },
+            {
+              "id": "variant-mv-138",
+              "text": {
+                "ru": "Управляемый снаряд. Правило: Игрок корректирует траекторию после запуска.",
+                "en": "Guided projectile. Rule: The player adjusts the trajectory after launch."
+              }
+            },
+            {
+              "id": "variant-mv-139",
+              "text": {
+                "ru": "Стихии и реакции. Правило: Тип урона взаимодействует с сопротивлениями врагов и свойствами окружения.",
+                "en": "Elements and reactions. Rule: Damage type interacts with enemy resistances and environmental properties."
+              }
+            },
+            {
+              "id": "variant-mv-140",
+              "text": {
+                "ru": "Накопительные состояния. Правило: Несколько воздействий вызывают отравление, заморозку, оглушение или иной эффект.",
+                "en": "Cumulative states. Rule: Multiple impacts cause poisoning, freezing, stunning, or other effects."
+              }
+            },
+            {
+              "id": "variant-mv-141",
+              "text": {
+                "ru": "Призываемые сущности. Правило: Союзник, дух или турель атакует по отдельным правилам.",
+                "en": "Summoned entities. Rule: An ally, spirit or turret attacks according to separate rules."
+              }
+            },
+            {
+              "id": "variant-mv-142",
+              "text": {
+                "ru": "Поглощение и возврат атаки. Правило: Герой ловит вражеский объект и использует его повторно.",
+                "en": "Absorbing and returning an attack. Rule: The hero catches an enemy object and uses it again..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-13",
+      "section": "section-5",
+      "title": {
+        "ru": "Защита, скрытность и управление угрозой",
+        "en": "Defense, Stealth and Threat Management"
+      },
+      "description": {
+        "ru": "Защита и скрытность позволяют снижать угрозу, избегать обнаружения и контролировать столкновение.",
+        "en": "Protection and stealth allow you to reduce threat, avoid detection and control collision."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-143",
+              "text": {
+                "ru": "Уклонение с перемещением. Правило: Рывок, перекат или шаг выводит героя из зоны поражения.",
+                "en": "Evasion with movement. Rule: A dash, roll or step takes the hero out of the affected area."
+              }
+            },
+            {
+              "id": "variant-mv-144",
+              "text": {
+                "ru": "Временная неуязвимость. Правило: На определённом участке действия атака не может повредить герою.",
+                "en": "Temporary invulnerability. Rule: In a certain area of ​​​​action, an attack cannot damage the hero."
+              }
+            },
+            {
+              "id": "variant-mv-145",
+              "text": {
+                "ru": "Блокирование. Правило: Удерживаемая защита поглощает или уменьшает входящий урон.",
+                "en": "Blocking. Rule: Defense held absorbs or reduces incoming damage."
+              }
+            },
+            {
+              "id": "variant-mv-146",
+              "text": {
+                "ru": "Парирование и контратака. Правило: Точное защитное действие прерывает атаку и создаёт возможность ответа.",
+                "en": "Parry and counterattack. Rule: An accurate defensive action interrupts an attack and creates the possibility of a response."
+              }
+            },
+            {
+              "id": "variant-mv-147",
+              "text": {
+                "ru": "Отражение снарядов. Правило: Защитное действие меняет принадлежность или направление чужого выстрела.",
+                "en": "Reflecting projectiles. Rule: A defensive action changes the identity or direction of someone else's shot."
+              }
+            },
+            {
+              "id": "variant-mv-148",
+              "text": {
+                "ru": "Защитный барьер. Правило: Отдельный запас защиты принимает урон до здоровья.",
+                "en": "Protective barrier. Rule: A separate defense pool takes damage up to health."
+              }
+            },
+            {
+              "id": "variant-mv-149",
+              "text": {
+                "ru": "Система равновесия. Правило: Удары постепенно нарушают устойчивость и создают окно оглушения.",
+                "en": "Balance system. Rule: Impacts gradually break stability and create a stun window."
+              }
+            },
+            {
+              "id": "variant-mv-150",
+              "text": {
+                "ru": "Контроль толпы. Правило: Отбрасывание, удержание и обездвиживание меняют расположение угроз.",
+                "en": "Crowd control. Rule: Knockback, hold and immobilize changes the location of threats."
+              }
+            },
+            {
+              "id": "variant-mv-151",
+              "text": {
+                "ru": "Невидимость и маскировка. Правило: Способность снижает вероятность обнаружения определёнными наблюдателями.",
+                "en": "Invisibility and camouflage. Rule: This ability reduces the chance of detection by certain observers."
+              }
+            },
+            {
+              "id": "variant-mv-152",
+              "text": {
+                "ru": "Шум, обзор и скрытное перемещение. Правило: Поведение врага зависит от слышимости и видимости героя.",
+                "en": "Noise, visibility and stealth movement. Rule: The enemy's behavior depends on the hero's audibility and visibility."
+              }
+            },
+            {
+              "id": "variant-mv-153",
+              "text": {
+                "ru": "Провокация и приманка. Правило: Герой заставляет угрозу двигаться или атаковать в выгодном направлении.",
+                "en": "Provocation and bait. Rule: The hero forces the threat to move or attack in a favorable direction."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-14",
+      "section": "section-5",
+      "title": {
+        "ru": "Враги и боевые столкновения",
+        "en": "Enemies and combat encounters"
+      },
+      "description": {
+        "ru": "Состав и поведение противников определяют условия локальных боевых задач.",
+        "en": "The composition and behavior of opponents determine the conditions of local combat missions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-154",
+              "text": {
+                "ru": "Телеграфирование атаки. Правило: Подготовка противника сообщает игроку тип и время будущей угрозы.",
+                "en": "Telegraphing the attack. Rule: The enemy's preparation tells the player the type and time of the future threat."
+              }
+            },
+            {
+              "id": "variant-mv-155",
+              "text": {
+                "ru": "Окна уязвимости. Правило: Цель принимает урон или особый эффект лишь в определённом состоянии.",
+                "en": "Windows of vulnerability. Rule: The target only takes damage or a special effect in a certain state."
+              }
+            },
+            {
+              "id": "variant-mv-156",
+              "text": {
+                "ru": "Слабые места и направленная броня. Правило: Результат атаки зависит от точки попадания и стороны подхода.",
+                "en": "Weak points and directional armor. Rule: The result of the attack depends on the point of impact and the direction of approach."
+              }
+            },
+            {
+              "id": "variant-mv-157",
+              "text": {
+                "ru": "Сопротивления и иммунитеты. Правило: Выбор оружия и эффекта меняется в зависимости от свойств противника.",
+                "en": "Resistances and immunities. Rule: The choice of weapon and effect changes depending on the properties of the enemy."
+              }
+            },
+            {
+              "id": "variant-mv-158",
+              "text": {
+                "ru": "Управление дистанцией и выманивание. Правило: Игрок отделяет врага от группы или заставляет покинуть выгодную позицию.",
+                "en": "Managing distance and luring out. Rule: The player separates the enemy from the group or forces him to leave an advantageous position."
+              }
+            },
+            {
+              "id": "variant-mv-159",
+              "text": {
+                "ru": "Совмещение ролей противников. Правило: Разные угрозы создают задачи приоритета целей и распределения внимания.",
+                "en": "Combining the roles of opponents. Rule: Different threats create problems of priority of goals and distribution of attention."
+              }
+            },
+            {
+              "id": "variant-mv-160",
+              "text": {
+                "ru": "Запертая арена и волны. Правило: Выход блокируется до завершения последовательности столкновений.",
+                "en": "Locked arena and waves. Rule: The exit is blocked until the collision sequence is completed."
+              }
+            },
+            {
+              "id": "variant-mv-161",
+              "text": {
+                "ru": "Преследователь. Правило: Сильный противник вынуждает избегать контакта и искать средство противодействия.",
+                "en": "Pursuer. Rule: A strong opponent forces you to avoid contact and look for a means of counteraction."
+              }
+            },
+            {
+              "id": "variant-mv-162",
+              "text": {
+                "ru": "Опасности окружения против врагов. Правило: Ловушки, падения и другие объекты становятся средствами боя.",
+                "en": "Surrounding dangers against enemies. Rule: Traps, falls and other objects become means of combat."
+              }
+            },
+            {
+              "id": "variant-mv-163",
+              "text": {
+                "ru": "Враг как инструмент исследования. Правило: Замораживание, управление или провокация превращают противника в средство открытия пути.",
+                "en": "The enemy as a research tool. Rule: Freezing, controlling or provoking turns the enemy into a means of opening the way."
+              }
+            },
+            {
+              "id": "variant-mv-164",
+              "text": {
+                "ru": "Возрождение рядовых врагов. Правило: Посещение комнаты или отдых восстанавливает угрозы и ресурсы для повторных столкновений.",
+                "en": "The revival of ordinary enemies. Rule: Visiting a room or resting restores threats and resources for repeated encounters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-15",
+      "section": "section-5",
+      "title": {
+        "ru": "Боссы и крупные испытания",
+        "en": "Bosses and Major Challenges"
+      },
+      "description": {
+        "ru": "Крупные противники и испытания проверяют освоенные действия и открывают дальнейший доступ.",
+        "en": "Major opponents and challenges test mastered actions and open up further access."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-165",
+              "text": {
+                "ru": "Босс как проверка освоенной способности. Правило: Схватка требует применять недавно полученное действие в новых условиях.",
+                "en": "The boss is like a test of a mastered ability. Rule: The fight requires the use of a recently acquired action in new conditions."
+              }
+            },
+            {
+              "id": "variant-mv-166",
+              "text": {
+                "ru": "Смена фаз. Правило: Здоровье, событие или действие игрока меняет набор правил схватки.",
+                "en": "Phase change. Rule: A player's health, event, or action changes the set of skirmish rules."
+              }
+            },
+            {
+              "id": "variant-mv-167",
+              "text": {
+                "ru": "Разрушение частей тела. Правило: Уничтожение отдельных частей изменяет атаки и уязвимости босса.",
+                "en": "Destruction of body parts. Rule: Destroying individual parts changes the boss' attacks and vulnerabilities."
+              }
+            },
+            {
+              "id": "variant-mv-168",
+              "text": {
+                "ru": "Изменяемая арена. Правило: Платформы, безопасные зоны и геометрия меняются по ходу боя.",
+                "en": "Variable arena. Rule: Platforms, safe zones and geometry change as the battle progresses."
+              }
+            },
+            {
+              "id": "variant-mv-169",
+              "text": {
+                "ru": "Призыв дополнительных врагов. Правило: Босс создаёт угрозы, между которыми нужно распределять внимание.",
+                "en": "Summon additional enemies. Rule: The boss creates threats between which attention must be divided..."
+              }
+            },
+            {
+              "id": "variant-mv-170",
+              "text": {
+                "ru": "Боевой пазл. Правило: Победа требует выполнить цепочку взаимодействий, а не только наносить урон.",
+                "en": "Combat puzzle. Rule: Victory requires completing a chain of interactions, not just dealing damage."
+              }
+            },
+            {
+              "id": "variant-mv-171",
+              "text": {
+                "ru": "Платформинг во время боя. Правило: Преодоление участка движения необходимо для выживания или доступа к цели.",
+                "en": "Platforming during combat. Rule: Overcoming the movement area is necessary for survival or access to the goal."
+              }
+            },
+            {
+              "id": "variant-mv-172",
+              "text": {
+                "ru": "Погоня и побег. Правило: Задача состоит в достижении безопасной точки при движущейся угрозе.",
+                "en": "Chase and escape. Rule: The objective is to reach a safe point with a moving threat."
+              }
+            },
+            {
+              "id": "variant-mv-173",
+              "text": {
+                "ru": "Испытание на выживание. Правило: Игрок выдерживает последовательность атак до заданного условия завершения.",
+                "en": "Test of survival. Rule: The player sustains a sequence of attacks until a given end condition is reached."
+              }
+            },
+            {
+              "id": "variant-mv-174",
+              "text": {
+                "ru": "Особый способ победы. Правило: Сценарий допускает обход, обезвреживание или альтернативное завершение конфликта.",
+                "en": "A special way to win. Rule: The scenario allows for bypass, neutralization, or an alternative ending to the conflict."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-16",
+      "section": "section-4",
+      "title": {
+        "ru": "Здоровье, энергия и цена действий",
+        "en": "Health, energy and the price of action"
+      },
+      "description": {
+        "ru": "Запасы здоровья и энергии ограничивают доступные действия и длительность исследования.",
+        "en": "Health and energy reserves limit the available actions and duration of exploration."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-175",
+              "text": {
+                "ru": "Здоровье и лечение. Правило: Урон приближает поражение, а восстановление требует ресурса, времени или позиции.",
+                "en": "Health and treatment. Rule: Damage brings defeat closer, and recovery requires a resource, time or position."
+              }
+            },
+            {
+              "id": "variant-mv-176",
+              "text": {
+                "ru": "Общий ресурс для лечения и атаки. Правило: Расход на выживание уменьшает доступность наступательных способностей.",
+                "en": "Shared resource for healing and attacking. Rule: Survival costs reduce the availability of offensive abilities."
+              }
+            },
+            {
+              "id": "variant-mv-177",
+              "text": {
+                "ru": "Восстановление ресурса через бой. Правило: Удары, убийства или рискованные действия возвращают энергию и здоровье.",
+                "en": "Restoring resources through combat. Rule: Hitting, killing, or taking risks will return energy and health."
+              }
+            },
+            {
+              "id": "variant-mv-178",
+              "text": {
+                "ru": "Фокусирование лечения. Правило: Восстановление требует неподвижности или достаточно длинного безопасного окна.",
+                "en": "Focusing treatment. Rule: Recovery requires immobility or a sufficiently long safe window."
+              }
+            },
+            {
+              "id": "variant-mv-179",
+              "text": {
+                "ru": "Выносливость. Правило: Атаки, защита и движение конкурируют за восстанавливаемый запас.",
+                "en": "Endurance. Rule: Attacks, defenses and movement compete for the restored reserve."
+              }
+            },
+            {
+              "id": "variant-mv-180",
+              "text": {
+                "ru": "Ограниченные заряды и расходники. Правило: Число применений ограничено до пополнения или отдыха.",
+                "en": "Limited charges and consumables. Rule: The number of uses is limited until replenishment or rest."
+              }
+            },
+            {
+              "id": "variant-mv-181",
+              "text": {
+                "ru": "Перезарядка и перегрев. Правило: Повторное действие ограничивается временем или накоплением нагрузки.",
+                "en": "Overcharging and overheating. Rule: Repeated action is limited by time or accumulation of load."
+              }
+            },
+            {
+              "id": "variant-mv-182",
+              "text": {
+                "ru": "Временное усиление. Правило: Ограниченный по длительности эффект меняет силу, защиту или доступность действий.",
+                "en": "Temporary enhancement. Rule: A limited duration effect changes the power, defense, or availability of actions."
+              }
+            },
+            {
+              "id": "variant-mv-183",
+              "text": {
+                "ru": "Временное и восстанавливаемое здоровье. Правило: Часть защиты действует до потери либо допускает возврат ответной атакой.",
+                "en": "Temporary and restored health. Rule: Part of the defense lasts until it is lost or allows return with a counter attack."
+              }
+            },
+            {
+              "id": "variant-mv-184",
+              "text": {
+                "ru": "Обмен здоровья на силу. Правило: Действие расходует здоровье или увеличивает риск ради преимущества.",
+                "en": "Trading health for strength. Rule: Action expends health or increases risk for benefit."
+              }
+            },
+            {
+              "id": "variant-mv-185",
+              "text": {
+                "ru": "Риск до следующего убежища. Правило: Ограниченные запасы заставляют оценивать продолжение исследования и возвращение.",
+                "en": "Risk until the next shelter. Rule: Limited supplies force the assessment of continued exploration and return..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-17",
+      "section": "section-4",
+      "title": {
+        "ru": "Постоянное развитие и сборка персонажа",
+        "en": "Permanent progression and character builds"
+      },
+      "description": {
+        "ru": "Постоянные улучшения и выбор сборки меняют возможности героя и цену компромиссов.",
+        "en": "Constant improvements and build choices change the hero's capabilities and the cost of compromises."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-186",
+              "text": {
+                "ru": "Новая способность как расширение действий. Правило: Постоянное улучшение добавляет действие, которое меняет исследование и бой.",
+                "en": "A new ability as an expansion of actions. Rule: Permanent upgrade adds an action that changes exploration and combat."
+              }
+            },
+            {
+              "id": "variant-mv-187",
+              "text": {
+                "ru": "Усиленная версия способности. Правило: Улучшение меняет дистанцию, число применений или тип преодолеваемой преграды.",
+                "en": "Strengthened version of the ability. Rule: Improvement changes the distance, number of uses or type of obstacle overcome."
+              }
+            },
+            {
+              "id": "variant-mv-188",
+              "text": {
+                "ru": "Фрагменты постоянного улучшения. Правило: Несколько находок собираются в прибавку здоровья, энергии или ёмкости.",
+                "en": "Fragments of continuous improvement. Rule: Several finds are collected into an increase in health, energy or capacity."
+              }
+            },
+            {
+              "id": "variant-mv-189",
+              "text": {
+                "ru": "Опыт и уровни. Правило: Повторяемые действия увеличивают характеристики по числовой шкале.",
+                "en": "Experience and levels. Rule: Repeated actions increase characteristics on a numerical scale."
+              }
+            },
+            {
+              "id": "variant-mv-190",
+              "text": {
+                "ru": "Распределение характеристик. Правило: Игрок направляет очки развития в выбранные свойства героя.",
+                "en": "Distribution of characteristics. Rule: The player allocates development points to the selected hero properties."
+              }
+            },
+            {
+              "id": "variant-mv-191",
+              "text": {
+                "ru": "Дерево навыков. Правило: Последовательность покупок или находок открывает связанные улучшения.",
+                "en": "Skill tree. Rule: Sequence of purchases or finds unlocks related upgrades."
+              }
+            },
+            {
+              "id": "variant-mv-192",
+              "text": {
+                "ru": "Оружие, броня и аксессуары. Правило: Экипировка меняет характеристики и доступные приёмы.",
+                "en": "Weapons, armor and accessories. Rule: Equipment changes the characteristics and available techniques."
+              }
+            },
+            {
+              "id": "variant-mv-193",
+              "text": {
+                "ru": "Амулеты, руны и осколки. Правило: Сменные модификаторы меняют правила способностей и поведение сборки.",
+                "en": "Amulets, runes and fragments. Rule: Interchangeable modifiers change ability rules and build behavior."
+              }
+            },
+            {
+              "id": "variant-mv-194",
+              "text": {
+                "ru": "Ограничение слотов или стоимости сборки. Правило: Нельзя одновременно использовать все найденные преимущества.",
+                "en": "Limit slots or build costs. Rule: You cannot use all the advantages found at the same time."
+              }
+            },
+            {
+              "id": "variant-mv-195",
+              "text": {
+                "ru": "Синергии и компромиссы. Правило: Сочетания улучшений создают особый эффект либо усиливают свойство ценой другого.",
+                "en": "Synergies and trade-offs. Rule: Combinations of improvements create a special effect or enhance a property at the cost of another."
+              }
+            },
+            {
+              "id": "variant-mv-196",
+              "text": {
+                "ru": "Развитие от использования. Правило: Частое применение действия усиливает именно это действие или связанный навык.",
+                "en": "Development from use. Rule: Frequent use of an action enhances that particular action or related skill."
+              }
+            },
+            {
+              "id": "variant-mv-197",
+              "text": {
+                "ru": "Перенастройка и сброс развития. Правило: Игрок меняет выбранные улучшения с заданными ограничениями.",
+                "en": "Reconfiguration and development reset. Rule: The player changes the selected improvements with the given restrictions."
+              }
+            },
+            {
+              "id": "variant-mv-198",
+              "text": {
+                "ru": "Временная утрата и возвращение способностей. Правило: Сюжет или испытание временно сокращают набор действий и меняют доступные решения.",
+                "en": "Temporary loss and return of abilities. Rule: A story or challenge temporarily reduces the range of actions and changes the available solutions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-18",
+      "section": "section-6",
+      "title": {
+        "ru": "Исследование и тайны",
+        "en": "Exploration and secrets"
+      },
+      "description": {
+        "ru": "Наблюдение, эксперименты и возвращение в известные места раскрывают скрытые области и награды.",
+        "en": "Observation, experimentation, and returning to known locations reveal hidden areas and rewards."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-199",
+              "text": {
+                "ru": "Скрытые проходы. Правило: Геометрия или маскировка скрывает маршрут от обычного осмотра.",
+                "en": "Hidden passages. Rule: Geometry or camouflage hides the route from normal inspection."
+              }
+            },
+            {
+              "id": "variant-mv-200",
+              "text": {
+                "ru": "Неразрушительное раскрытие иллюзии. Правило: Приближение, прикосновение или особый режим показывает ложную стену.",
+                "en": "Non-destructive revelation of illusion. Rule: Approaching, touching or special mode reveals a false wall."
+              }
+            },
+            {
+              "id": "variant-mv-201",
+              "text": {
+                "ru": "Визуальные и звуковые подсказки. Правило: Необычная деталь сигнализирует о возможной тайне или действующем правиле.",
+                "en": "Visual and audio cues. Rule: An unusual detail signals a possible secret or rule in effect."
+              }
+            },
+            {
+              "id": "variant-mv-202",
+              "text": {
+                "ru": "Недоступная награда на виду. Правило: Игрок заранее видит цель и позже возвращается с подходящим средством.",
+                "en": "An inaccessible reward in plain sight. Rule: The player sees the goal in advance and later returns with a suitable means..."
+              }
+            },
+            {
+              "id": "variant-mv-203",
+              "text": {
+                "ru": "Награда за ответвление. Правило: Необязательный путь даёт предмет, знание, ресурс или новый маршрут.",
+                "en": "Branch reward. Rule: An optional path gives an item, knowledge, resource or a new route."
+              }
+            },
+            {
+              "id": "variant-mv-204",
+              "text": {
+                "ru": "Цепочка взаимосвязанных секретов. Правило: Одна находка сообщает, где и как искать следующую.",
+                "en": "A chain of interconnected secrets. Rule: One find tells you where and how to look for the next one."
+              }
+            },
+            {
+              "id": "variant-mv-205",
+              "text": {
+                "ru": "Многоступенчатая тайна. Правило: Разгадка требует собрать сведения из нескольких областей и систем.",
+                "en": "Multi-stage mystery. Rule: The solution requires collecting information from several areas and systems."
+              }
+            },
+            {
+              "id": "variant-mv-206",
+              "text": {
+                "ru": "Испытание ради улучшения. Правило: Постоянная награда скрыта за отдельной задачей движения, боя или наблюдения.",
+                "en": "Challenge for improvement. Rule: The permanent reward is hidden behind a separate movement, combat or observation task."
+              }
+            },
+            {
+              "id": "variant-mv-207",
+              "text": {
+                "ru": "Знание о новом применении старого инструмента. Правило: Понимание расширяет возможности уже имеющегося набора действий.",
+                "en": "Knowledge of new uses for old tools. Rule: Understanding expands the capabilities of an existing set of actions."
+              }
+            },
+            {
+              "id": "variant-mv-208",
+              "text": {
+                "ru": "Награда за возвращение после события. Правило: Состояние знакомого места меняется и открывает новый результат исследования.",
+                "en": "Reward for returning after the event. Rule: The state of a familiar place changes and reveals a new research result."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-19",
+      "section": "section-6",
+      "title": {
+        "ru": "Карта и ориентирование",
+        "en": "Map and orientation"
+      },
+      "description": {
+        "ru": "Карта и ориентиры помогают запоминать связи областей и находить незавершённые задачи.",
+        "en": "The map and landmarks help you remember the connections between areas and find unfinished tasks."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-19-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-209",
+              "text": {
+                "ru": "Открытие карты при исследовании. Правило: Посещённые участки постепенно заполняют карту мира.",
+                "en": "Opening the map when exploring. Rule: Visited areas gradually fill the world map."
+              }
+            },
+            {
+              "id": "variant-mv-210",
+              "text": {
+                "ru": "Покупка или поиск карты области. Правило: Доступ к общей схеме отделён от непосредственного исследования.",
+                "en": "Buy or search for a map of the area. Rule: Access to the general scheme is separated from direct research."
+              }
+            },
+            {
+              "id": "variant-mv-211",
+              "text": {
+                "ru": "Условия отображения позиции. Правило: Компас или иной инструмент определяет видимость героя на карте.",
+                "en": "Conditions for displaying a position. Rule: A compass or other instrument determines the visibility of the hero on the map."
+              }
+            },
+            {
+              "id": "variant-mv-212",
+              "text": {
+                "ru": "Обновление карты в точке отдыха. Правило: Схема посещённого пространства сохраняется или дополняется в заданном месте.",
+                "en": "Updating the map at the rest point. Rule: The diagram of the visited space is saved or supplemented at a given location."
+              }
+            },
+            {
+              "id": "variant-mv-213",
+              "text": {
+                "ru": "Пользовательские метки. Правило: Игрок отмечает тайны, цели и ещё недоступные проходы.",
+                "en": "Custom labels. Rule: The player marks secrets, goals and passages not yet accessible."
+              }
+            },
+            {
+              "id": "variant-mv-214",
+              "text": {
+                "ru": "Снимок места на карте. Правило: Изображение препятствия помогает вспомнить задачу при возвращении.",
+                "en": "A snapshot of a place on a map. Rule: The image of an obstacle helps to remember the task when returning..."
+              }
+            },
+            {
+              "id": "variant-mv-215",
+              "text": {
+                "ru": "Обозначение типов препятствий. Правило: Карта связывает проход с нужной способностью или взаимодействием.",
+                "en": "Designation of types of obstacles. Rule: The card links the passage to the desired ability or interaction."
+              }
+            },
+            {
+              "id": "variant-mv-216",
+              "text": {
+                "ru": "Показ ещё не исследованных выходов. Правило: Отдельное обозначение помогает находить доступные направления исследования.",
+                "en": "Showing exits that have not yet been explored. Rule: A separate designation helps to find available areas of research."
+              }
+            },
+            {
+              "id": "variant-mv-217",
+              "text": {
+                "ru": "Процент исследования и найденных предметов. Правило: Сводка показывает оставшийся объём поиска по областям.",
+                "en": "Percentage of research and items found. Rule: Summary shows the remaining search volume by area."
+              }
+            },
+            {
+              "id": "variant-mv-218",
+              "text": {
+                "ru": "Подсказка следующего направления. Правило: Персонаж, интерфейс или устройство направляет игрока к возможной цели.",
+                "en": "Hint for next direction. Rule: A character, interface, or device directs the player to a possible goal."
+              }
+            },
+            {
+              "id": "variant-mv-219",
+              "text": {
+                "ru": "Пространственные ориентиры. Правило: Запоминаемые объекты и звуковые признаки помогают узнавать место без карты.",
+                "en": "Spatial landmarks. Rule: Memorized objects and sound cues help to recognize a place without a map."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-20",
+      "section": "section-4",
+      "title": {
+        "ru": "Сохранение, смерть и транспорт",
+        "en": "Saving, death and transport"
+      },
+      "description": {
+        "ru": "Контрольные точки, последствия смерти и транспорт определяют стоимость возвращения и повторной попытки.",
+        "en": "Checkpoints, death consequences, and transport determine the cost of returning and trying again."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-20-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-220",
+              "text": {
+                "ru": "Контрольные точки. Правило: После поражения герой возвращается к последнему активированному месту.",
+                "en": "Control points. Rule: After defeat, the hero returns to the last activated location."
+              }
+            },
+            {
+              "id": "variant-mv-221",
+              "text": {
+                "ru": "Отдых с восстановлением мира. Правило: Пополнение запасов связано с возрождением рядовых угроз.",
+                "en": "Rest with restoration of peace. Rule: Replenishment of supplies is associated with the revival of ordinary threats..."
+              }
+            },
+            {
+              "id": "variant-mv-222",
+              "text": {
+                "ru": "Автоматическое или ручное сохранение. Правило: Правило записи определяет, какой прогресс переживает выход и поражение.",
+                "en": "Automatic or manual saving. Rule: The recording rule determines how much progress survives exit and defeat."
+              }
+            },
+            {
+              "id": "variant-mv-223",
+              "text": {
+                "ru": "Штраф за смерть. Правило: Поражение отнимает валюту, ресурс или часть текущего состояния.",
+                "en": "Penalty for death. Rule: Defeat takes away currency, resource or part of the current state."
+              }
+            },
+            {
+              "id": "variant-mv-224",
+              "text": {
+                "ru": "Возвращение потерянного. Правило: Поход к месту смерти позволяет вернуть оставленный ресурс.",
+                "en": "Return of the lost. Rule: Going to the place of death allows you to return the abandoned resource."
+              }
+            },
+            {
+              "id": "variant-mv-225",
+              "text": {
+                "ru": "Сохраняемые открытия. Правило: Способности, важные предметы или открытые срезки переживают поражение.",
+                "en": "Saved discoveries. Rule: Abilities, important items, or open cuts survive defeat."
+              }
+            },
+            {
+              "id": "variant-mv-226",
+              "text": {
+                "ru": "Локальный сброс после ловушки. Правило: Ошибка возвращает героя к ближайшей безопасной точке с заданной ценой.",
+                "en": "Local release after trap. Rule: An error returns the hero to the nearest safe point with a given price."
+              }
+            },
+            {
+              "id": "variant-mv-227",
+              "text": {
+                "ru": "Быстрое перемещение между узлами. Правило: Открытые станции соединяют далёкие области без полного повторного пути.",
+                "en": "Fast movement between nodes. Rule: Open stations connect distant areas without a complete retracement."
+              }
+            },
+            {
+              "id": "variant-mv-228",
+              "text": {
+                "ru": "Возврат в убежище. Правило: Предмет или способность переносит героя к точке отдыха.",
+                "en": "Return to the shelter. Rule: An item or ability transports the hero to a resting point."
+              }
+            },
+            {
+              "id": "variant-mv-229",
+              "text": {
+                "ru": "Лифты, поезда и транспортные линии. Правило: Регулярные связи мира становятся доступны после запуска или получения допуска.",
+                "en": "Elevators, trains and transport lines. Rule: Regular world connections become available after launching or gaining clearance."
+              }
+            },
+            {
+              "id": "variant-mv-230",
+              "text": {
+                "ru": "Собственная точка возврата. Правило: Игрок размещает временный либо постоянный пункт удобного возвращения.",
+                "en": "Own point of return. Rule: The player places a temporary or permanent point of convenient return..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-21",
+      "section": "section-4",
+      "title": {
+        "ru": "Экономика, добыча и создание предметов",
+        "en": "Economy, loot and crafting"
+      },
+      "description": {
+        "ru": "Добыча, обмен и создание предметов связывают исследование с развитием ресурсов и снаряжения.",
+        "en": "Mining, trading, and crafting link exploration to the development of resources and equipment."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-21-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-231",
+              "text": {
+                "ru": "Валюта и торговля. Правило: Найденный ресурс обменивается на предметы, услуги и улучшения.",
+                "en": "Currency and trade. Rule: The found resource is exchanged for items, services and improvements."
+              }
+            },
+            {
+              "id": "variant-mv-232",
+              "text": {
+                "ru": "Материалы и изготовление. Правило: Собранные компоненты превращаются в экипировку и расходники.",
+                "en": "Materials and manufacturing. Rule: Collected components turn into equipment and consumables."
+              }
+            },
+            {
+              "id": "variant-mv-233",
+              "text": {
+                "ru": "Улучшение и преобразование предметов. Правило: Существующая вещь получает новые параметры или меняет форму.",
+                "en": "Upgrading and transforming items. Rule: An existing thing receives new parameters or changes shape."
+              }
+            },
+            {
+              "id": "variant-mv-234",
+              "text": {
+                "ru": "Случайная добыча. Правило: Повторяемые столкновения дают предметы с некоторой вероятностью.",
+                "en": "Random loot. Rule: Repeatable collisions drop items with some chance."
+              }
+            },
+            {
+              "id": "variant-mv-235",
+              "text": {
+                "ru": "Фиксированные уникальные находки. Правило: Заданное место или испытание гарантирует конкретный предмет.",
+                "en": "Fixed unique finds. Rule: A given location or test guarantees a specific item."
+              }
+            },
+            {
+              "id": "variant-mv-236",
+              "text": {
+                "ru": "Коллекция и награды за набор. Правило: Собранная группа находок открывает отдельную награду.",
+                "en": "Collection and rewards for the set. Rule: A collected group of finds unlocks a separate reward."
+              }
+            },
+            {
+              "id": "variant-mv-237",
+              "text": {
+                "ru": "Увеличение вместимости. Правило: Развитие позволяет переносить больше боеприпасов, предметов или ресурсов.",
+                "en": "Increased capacity. Rule: Development allows you to carry more ammunition, items or resources."
+              }
+            },
+            {
+              "id": "variant-mv-238",
+              "text": {
+                "ru": "Обмен и переработка. Правило: Ненужные предметы превращаются в другой полезный ресурс.",
+                "en": "Exchange and recycling. Rule: Unnecessary items are turned into another useful resource."
+              }
+            },
+            {
+              "id": "variant-mv-239",
+              "text": {
+                "ru": "Выкупленный или открытый сервис. Правило: Расход ресурса создаёт постоянную возможность торговли, транспорта или развития.",
+                "en": "Purchased or open service. Rule: Consumption of a resource creates a permanent opportunity for trade, transport or development."
+              }
+            },
+            {
+              "id": "variant-mv-240",
+              "text": {
+                "ru": "Риск накопления валюты. Правило: Потенциальная потеря сбережений влияет на решение исследовать дальше или потратить их.",
+                "en": "Risk of currency accumulation. Rule: The potential loss of savings influences the decision to explore further or spend them."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-22",
+      "section": "section-4",
+      "title": {
+        "ru": "NPC, задания и состояние мира",
+        "en": "NPCs, quests and world state"
+      },
+      "description": {
+        "ru": "Общение, задания и изменения мира создают условия доступа и последствия действий игрока.",
+        "en": "Communication, quests, and world changes create access conditions and consequences for the player's actions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-22-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-241",
+              "text": {
+                "ru": "Спасение персонажей. Правило: Освобождённые жители дают награды, сведения или новые услуги.",
+                "en": "Character rescue. Rule: Liberated residents give rewards, information or new services."
+              }
+            },
+            {
+              "id": "variant-mv-242",
+              "text": {
+                "ru": "Побочные задания. Правило: Необязательная цепочка действий создаёт дополнительную цель исследования.",
+                "en": "Side quests. Rule: An optional chain of actions creates an additional research goal."
+              }
+            },
+            {
+              "id": "variant-mv-243",
+              "text": {
+                "ru": "Перемещение NPC по миру. Правило: Положение и доступность персонажа меняются по мере событий.",
+                "en": "NPC movement around the world. Rule: A character's position and availability changes as events unfold."
+              }
+            },
+            {
+              "id": "variant-mv-244",
+              "text": {
+                "ru": "Развитие убежища. Правило: Найденные жители и ресурсы расширяют функции центрального поселения.",
+                "en": "Shelter development. Rule: Found residents and resources expand the functions of the central settlement."
+              }
+            },
+            {
+              "id": "variant-mv-245",
+              "text": {
+                "ru": "Ремонт и запуск инфраструктуры. Правило: Восстановленное устройство открывает новые маршруты и возможности.",
+                "en": "Repair and launch of infrastructure. Rule: A restored device opens up new routes and opportunities."
+              }
+            },
+            {
+              "id": "variant-mv-246",
+              "text": {
+                "ru": "Выбор с последствиями. Правило: Решение меняет отношения, состояние области или доступные задания.",
+                "en": "Choices with consequences. Rule: The decision changes relationships, the state of the area, or available tasks."
+              }
+            },
+            {
+              "id": "variant-mv-247",
+              "text": {
+                "ru": "Репутация и принадлежность к группе. Правило: Отношение персонажей влияет на услуги и условия доступа.",
+                "en": "Reputation and group affiliation. Rule: The attitude of the characters affects the services and conditions of access."
+              }
+            },
+            {
+              "id": "variant-mv-248",
+              "text": {
+                "ru": "Ограниченное событие. Правило: Встреча или возможность зависит от текущего этапа истории.",
+                "en": "Limited event. Rule: The encounter or opportunity depends on the current stage of the story."
+              }
+            },
+            {
+              "id": "variant-mv-249",
+              "text": {
+                "ru": "Сбор свидетельств и журнала. Правило: Записи помогают восстановить устройство мира и найти дальнейшие цели.",
+                "en": "Collection of evidence and journal. Rule: Records help restore the structure of the world and find further goals."
+              }
+            },
+            {
+              "id": "variant-mv-250",
+              "text": {
+                "ru": "Экологическое повествование. Правило: Расположение объектов и последствия событий передают сведения через исследование.",
+                "en": "Ecological storytelling. Rule: The location of objects and the consequences of events convey information through research."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-23",
+      "section": "section-7",
+      "title": {
+        "ru": "Дополнительные испытания и завершение",
+        "en": "Additional challenges and completion"
+      },
+      "description": {
+        "ru": "Необязательные цели и дополнительные режимы проверяют мастерство и задают разные способы завершения.",
+        "en": "Optional objectives and additional modes test skill and provide different ways to complete."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-23-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-251",
+              "text": {
+                "ru": "Испытание на время. Правило: Участок нужно пройти за ограниченную длительность.",
+                "en": "Time trial. Rule: The section must be completed in a limited time."
+              }
+            },
+            {
+              "id": "variant-mv-252",
+              "text": {
+                "ru": "Гонка с призраком. Правило: Запись прежнего прохождения даёт ориентир скорости и траектории.",
+                "en": "Race with a ghost. Rule: A record of the previous passage provides a guide to speed and trajectory."
+              }
+            },
+            {
+              "id": "variant-mv-253",
+              "text": {
+                "ru": "Сложная полоса препятствий. Правило: Дополнительный маршрут проверяет точность и сочетание способностей.",
+                "en": "Challenging obstacle course. Rule: The additional route tests accuracy and combination of abilities."
+              }
+            },
+            {
+              "id": "variant-mv-254",
+              "text": {
+                "ru": "Повторный бой и усиленная версия босса. Правило: Знакомое столкновение получает новый набор ограничений или атак.",
+                "en": "Re-fight and a stronger version of the boss. Rule: A familiar encounter gets a new set of restrictions or attacks."
+              }
+            },
+            {
+              "id": "variant-mv-255",
+              "text": {
+                "ru": "Серия боссов, boss rush. Правило: Несколько крупных схваток проходят подряд с заданными правилами восстановления.",
+                "en": "A series of bosses, boss rush. Rule: Several major fights take place in a row with given recovery rules."
+              }
+            },
+            {
+              "id": "variant-mv-256",
+              "text": {
+                "ru": "Боевые испытания с ограничениями. Правило: Состав оружия, ресурсов или допустимых действий задаёт отдельную задачу.",
+                "en": "Combat tests with restrictions. Rule: The composition of weapons, resources or permissible actions sets a separate task."
+              }
+            },
+            {
+              "id": "variant-mv-257",
+              "text": {
+                "ru": "Условия альтернативных концовок. Правило: Набор находок, решений и побед меняет финальный результат.",
+                "en": "Conditions for alternative endings. Rule: A set of discoveries, decisions and victories changes the final result..."
+              }
+            },
+            {
+              "id": "variant-mv-258",
+              "text": {
+                "ru": "Послесюжетные области и тайны. Правило: Основное завершение открывает дополнительное исследование.",
+                "en": "Post-story areas and secrets. Rule: Major completion unlocks additional research."
+              }
+            },
+            {
+              "id": "variant-mv-259",
+              "text": {
+                "ru": "New Game Plus. Правило: Новое прохождение сохраняет часть развития и меняет доступность испытаний.",
+                "en": "New Game Plus. Rule: A new playthrough retains part of the development and changes the availability of tests."
+              }
+            },
+            {
+              "id": "variant-mv-260",
+              "text": {
+                "ru": "Режим окончательной смерти. Правило: Поражение завершает текущее прохождение или накладывает необратимую потерю.",
+                "en": "Final death mode. Rule: Defeat ends the current run or causes a permanent loss."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-24",
+      "section": "section-8",
+      "title": {
+        "ru": "Гибридные и экспериментальные системы",
+        "en": "Hybrid and experimental systems"
+      },
+      "description": {
+        "ru": "Системы других жанров изменяют структуру исследования и характер препятствий.",
+        "en": "Systems in other genres change the structure of exploration and the nature of obstacles."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-24-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-261",
+              "text": {
+                "ru": "Пинбольное перемещение. Правило: Флипперы, отскоки и импульс заменяют или дополняют обычный платформинг.",
+                "en": "Pinball movement. Rule: Flippers, bounces and momentum replace or complement regular platforming."
+              }
+            },
+            {
+              "id": "variant-mv-262",
+              "text": {
+                "ru": "Пошаговый бой и отряд. Правило: Исследование связного мира сочетается с отдельными тактическими схватками.",
+                "en": "Turn-based combat and squad. Rule: Exploration of a coherent world is combined with individual tactical battles."
+              }
+            },
+            {
+              "id": "variant-mv-263",
+              "text": {
+                "ru": "Коллекционирование существ. Правило: Новые союзники дают боевые возможности и действия для исследования.",
+                "en": "Collecting creatures. Rule: New allies provide combat options and exploration actions."
+              }
+            },
+            {
+              "id": "variant-mv-264",
+              "text": {
+                "ru": "Карты и сборка колоды. Правило: Доступные действия и усиления зависят от выбранного набора карт.",
+                "en": "Cards and deck building. Rule: Available actions and boosts depend on the selected card set."
+              }
+            },
+            {
+              "id": "variant-mv-265",
+              "text": {
+                "ru": "Процедурная сборка мира. Правило: Переходы и наполнение перестраиваются по правилам генерации.",
+                "en": "Procedural world building. Rule: Transitions and content are rearranged according to generation rules."
+              }
+            },
+            {
+              "id": "variant-mv-266",
+              "text": {
+                "ru": "Сброс забега и метапрогрессия. Правило: Часть мира и героя обновляется, а отдельные открытия сохраняются между попытками.",
+                "en": "run reset and metaprogression. Rule: Part of the world and the hero is updated, and individual discoveries are saved between attempts."
+              }
+            },
+            {
+              "id": "variant-mv-267",
+              "text": {
+                "ru": "Кооперативные взаимодействия. Правило: Несколько игроков совместно используют способности и активируют устройства.",
+                "en": "Cooperative interactions. Rule: Multiple players share abilities and activate devices."
+              }
+            },
+            {
+              "id": "variant-mv-268",
+              "text": {
+                "ru": "Взгляд от первого лица и пространственное сканирование. Правило: Исследование и бой работают в объёмном пространстве с иным восприятием расстояний.",
+                "en": "First person view and spatial scanning. Rule: Exploration and combat work in volumetric space with a different perception of distances."
+              }
+            },
+            {
+              "id": "variant-mv-269",
+              "text": {
+                "ru": "Ритм как правило действия. Правило: Точность попадания в музыкальный такт определяет силу или доступность действий.",
+                "en": "Rhythm is the rule of action. Rule: The accuracy of hitting a musical beat determines the strength or availability of actions."
+              }
+            },
+            {
+              "id": "variant-mv-270",
+              "text": {
+                "ru": "Перестановка наград, randomizer. Правило: Расположение ключевых предметов меняется с сохранением правил проходимости.",
+                "en": "Rearrangement of rewards, randomizer. Rule: The location of key items changes while maintaining the rules of patency."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-group-25",
+      "section": "section-9",
+      "title": {
+        "ru": "Управление, обучение и доступность",
+        "en": "Controls, onboarding and accessibility"
+      },
+      "description": {
+        "ru": "Настройка управления, обучение и альтернативы помогают освоить требуемые действия и работать с их ограничениями.",
+        "en": "Control settings, training, and alternatives help you learn the required actions and work within their limitations."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-group-25-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mv-271",
+              "text": {
+                "ru": "Запас времени после края, coyote time. Правило: Прыжок принимается короткое время после схода с платформы.",
+                "en": "Time reserve after the edge, coyote time. Rule: The jump is accepted a short time after leaving the platform."
+              }
+            },
+            {
+              "id": "variant-mv-272",
+              "text": {
+                "ru": "Буфер ввода. Правило: Нажатие перед допустимым моментом выполняется при появлении возможности.",
+                "en": "Input buffer. Rule: Pressing before the permissible moment is performed when the opportunity arises."
+              }
+            },
+            {
+              "id": "variant-mv-273",
+              "text": {
+                "ru": "Коррекция зацепов и приземления. Правило: Небольшая помощь облегчает попадание в ожидаемое безопасное положение.",
+                "en": "Correction of grips and landing. Rule: A little help makes it easier to get into the expected safe position."
+              }
+            },
+            {
+              "id": "variant-mv-274",
+              "text": {
+                "ru": "Наглядная демонстрация способности. Правило: Безопасная ситуация позволяет понять действие перед сложным применением.",
+                "en": "A clear demonstration of ability. Rule: A safe situation allows you to understand the action before a complex application."
+              }
+            },
+            {
+              "id": "variant-mv-275",
+              "text": {
+                "ru": "Постепенное сочетание действий. Правило: Испытания вводят новый элемент, а затем объединяют его с уже освоенными.",
+                "en": "A gradual combination of actions. Rule: Tests introduce a new element and then combine it with those already mastered."
+              }
+            },
+            {
+              "id": "variant-mv-276",
+              "text": {
+                "ru": "Тренировка и повтор испытания. Правило: Игрок может отрабатывать приём без длинного возвращения к месту ошибки.",
+                "en": "Practice and repeat the test. Rule: A player can practice a technique without a long return to the place of error."
+              }
+            },
+            {
+              "id": "variant-mv-277",
+              "text": {
+                "ru": "Переназначение и режимы нажатия. Правило: Управление адаптируется через смену кнопок, удержания и переключения.",
+                "en": "Reassignment and pressing modes. Rule: Control adapts through changing buttons, holding and switching."
+              }
+            },
+            {
+              "id": "variant-mv-278",
+              "text": {
+                "ru": "Настройка скорости и окон реакции. Правило: Игрок может изменить темп или требуемую точность отдельных действий.",
+                "en": "Adjustment of reaction speed and windows. Rule: The player can change the tempo or the required precision of individual actions."
+              }
+            },
+            {
+              "id": "variant-mv-279",
+              "text": {
+                "ru": "Регулировка урона и цены ошибки. Правило: Доступные настройки меняют сложность без обязательной смены маршрута.",
+                "en": "Adjusting damage and cost of error. Rule: The available settings change the difficulty without necessarily changing the route."
+              }
+            },
+            {
+              "id": "variant-mv-280",
+              "text": {
+                "ru": "Дублирование важных сигналов. Правило: Звук, цвет, форма и текст передают значимую информацию несколькими способами.",
+                "en": "Duplication of important signals. Rule: Sound, color, shape and text convey meaningful information in several ways."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Metroid Dread: Gameplay",
+        "en": "Metroid Dread: Gameplay"
+      },
+      "url": "https://metroid.nintendo.com/dread/samus/",
+      "description": {
+        "ru": "Nintendo описывает Morph Ball, Bomb, Spider Magnet, Speed Booster, Shinespark, Phantom Cloak, Flash Shift и Pulse Radar.",
+        "en": "Nintendo describes Morph Ball, Bomb, Spider Magnet, Speed ​​Booster, Shinespark, Phantom Cloak, Flash Shift and Pulse Radar."
+      }
+    },
+    {
+      "title": {
+        "ru": "Hollow Knight",
+        "en": "Hollow Knight"
+      },
+      "url": "https://www.hollowknight.com/",
+      "description": {
+        "ru": "Team Cherry описывает связный мир, исследование, новые способности и дополнительные испытания.",
+        "en": "Team Cherry features a connected world, exploration, new abilities, and additional challenges."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ori and the Will of the Wisps: Available Now",
+        "en": "Ori and the Will of the Wisps: Available Now"
+      },
+      "url": "https://news.xbox.com/en-us/2020/03/11/ori-and-the-will-of-the-wisps-available-now/",
+      "description": {
+        "ru": "Материал Xbox и Moon Studios описывает новое оружие, навыки и настройку способностей через осколки.",
+        "en": "Xbox and Moon Studios content describes new weapons, skills, and ability customization through shards."
+      }
+    },
+    {
+      "title": {
+        "ru": "Prince of Persia: The Lost Crown",
+        "en": "Prince of Persia: The Lost Crown"
+      },
+      "url": "https://news.ubisoft.com/en-gb/article/7jgsjVcfOTfZVKiT5496sG/prince-of-persia-the-lost-crowns-mount-qaf-is-filled-with-surprises",
+      "description": {
+        "ru": "Ubisoft описывает бой, платформинг, отдых с возрождением врагов, амулеты, снимки на карте и транспорт.",
+        "en": "Ubisoft describes combat, platforming, resting with enemy respawns, amulets, map shots, and vehicles."
+      }
+    },
+    {
+      "title": {
+        "ru": "ANIMAL WELL",
+        "en": "ANIMAL WELL"
+      },
+      "url": "https://www.animalwell.net/",
+      "description": {
+        "ru": "Официальная страница описывает связный лабиринт, несколько слоёв тайн и предметы с несколькими применениями.",
+        "en": "The official page describes a coherent maze, multiple layers of secrets, and items with multiple uses."
+      }
+    },
+    {
+      "title": {
+        "ru": "Axiom Verge 2",
+        "en": "Axiom Verge 2"
+      },
+      "url": "https://store.steampowered.com/app/946030/Axiom_Verge_2/",
+      "description": {
+        "ru": "Описание разработчика подтверждает взлом машин, дистанционный дрон и связанную параллельную реальность Breach.",
+        "en": "The developer's description confirms car hacking, a remote drone, and the connected parallel reality of Breach."
+      }
+    },
+    {
+      "title": {
+        "ru": "Toki Tori 2+",
+        "en": "Toki Tori 2+"
+      },
+      "url": "https://store.steampowered.com/app/201420/Toki_Tori_2/",
+      "description": {
+        "ru": "Описание Two Tribes связывает продвижение с наблюдением, экспериментом и управлением существами через свист и топот.",
+        "en": "Two Tribes' description associates progression with observing, experimenting, and controlling creatures through whistling and stomping."
+      }
+    },
+    {
+      "title": {
+        "ru": "Monster Boy and the Cursed Kingdom",
+        "en": "Monster Boy and the Cursed Kingdom"
+      },
+      "url": "https://store.steampowered.com/app/449610/Monster_Boy_and_the_Cursed_Kingdom/",
+      "description": {
+        "ru": "Описание разработчика и издателя подтверждает формы с разными боевыми и платформенными способностями.",
+        "en": "The developer and publisher's description confirms forms with different combat and platforming abilities."
+      }
+    },
+    {
+      "title": {
+        "ru": "Yoku’s Island Express",
+        "en": "Yoku's Island Express"
+      },
+      "url": "https://www.team17.com/games/yokus-island-express",
+      "description": {
+        "ru": "Издатель описывает сочетание пинбольного перемещения с исследованием открытого мира.",
+        "en": "The publisher describes the combination of pinball movement with open world exploration."
+      }
+    },
+    {
+      "title": {
+        "ru": "Monster Sanctuary",
+        "en": "Monster Sanctuary"
+      },
+      "url": "https://store.steampowered.com/app/814370/Monster_Sanctuary/",
+      "description": {
+        "ru": "Описание игры подтверждает сочетание метроидвании с коллекционированием и развитием существ.",
+        "en": "The description of the game confirms the combination of metroidvania with collecting and developing creatures."
+      }
+    }
+  ]
+}

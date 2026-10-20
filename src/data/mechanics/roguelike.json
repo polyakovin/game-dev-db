@@ -1,0 +1,5478 @@
+{
+  "id": "roguelike",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики roguelike и roguelite",
+    "en": "Roguelike and roguelite mechanics"
+  },
+  "description": {
+    "ru": "Механики roguelike и roguelite: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Roguelike and roguelite mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Широкая авторская карта классических пошаговых roguelike, современных roguelite и гибридов. Семейства описывают варианты устройства забега, а не обязательные признаки жанра. Постоянная метапрогрессия встречается не во всех рогаликах. Родственные системы могут сочетаться; перечень не является закрытым стандартом.",
+    "en": "A wide author's map of classic turn-based roguelikes, modern roguelites and hybrids. Families describe options for organizing a run, and not mandatory features of the genre. Constant metaprogression is not found in all roguelikes. Related systems can be combined; the list is not a closed standard."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Структура забега",
+        "en": "Run structure"
+      },
+      "description": {
+        "ru": "Правила определяют границы попытки, последовательность испытаний и условия её завершения.",
+        "en": "The rules define the boundaries of the attempt, the sequence of tests and the conditions for its completion."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-01-01",
+              "text": {
+                "ru": "Отдельные попытки: прохождение организовано в самостоятельные забеги",
+                "en": "Individual attempts: the passage is organized into independent runs"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-02",
+              "text": {
+                "ru": "Сброс состояния: персонаж, экипировка или мир возвращаются к стартовым условиям",
+                "en": "Reset state: character, equipment or world returns to starting conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-03",
+              "text": {
+                "ru": "Последовательность этажей, комнат, волн или актов",
+                "en": "Sequence of floors, rooms, waves or acts"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-04",
+              "text": {
+                "ru": "Развилки прохождения: игрок выбирает следующий участок",
+                "en": "Forks in the passage: the player chooses the next section"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-05",
+              "text": {
+                "ru": "Промежуточные контрольные испытания: элиты, мини-боссы, боссы актов",
+                "en": "Midterm Tests: Elites, Mini-Bosses, Act Bosses"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-06",
+              "text": {
+                "ru": "Финальное испытание: завершает обычный забег",
+                "en": "Final Challenge: Completes a normal run"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-07",
+              "text": {
+                "ru": "Альтернативные условия победы: разные цели одного прохождения",
+                "en": "Alternative Victory Conditions: Different Goals for the Same Playthrough"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-08",
+              "text": {
+                "ru": "Секретное продолжение: дополнительные этапы после обычного финала",
+                "en": "Secret continuation: additional stages after the normal ending"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-09",
+              "text": {
+                "ru": "Возвращение с добычей: необходимо не только получить цель, но и выбраться",
+                "en": "Returning with loot: it is necessary not only to get the goal, but also to get out"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-10",
+              "text": {
+                "ru": "Досрочный выход: завершение попытки с сохранением части результата",
+                "en": "Early exit: completing an attempt while saving part of the result"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-11",
+              "text": {
+                "ru": "Зацикливание: повторное прохождение этапов с усилением условий",
+                "en": "Looping: replaying stages with increasing conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-12",
+              "text": {
+                "ru": "Бесконечное продолжение: игра до неизбежного поражения",
+                "en": "Infinite continuation: game until inevitable defeat"
+              }
+            },
+            {
+              "id": "variant-roguelike-01-13",
+              "text": {
+                "ru": "Несколько экспедиций в рамках одной кампании",
+                "en": "Multiple expeditions within one campaign"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Смерть, поражение и последствия",
+        "en": "Death, defeat and aftermath"
+      },
+      "description": {
+        "ru": "Поражение определяет, что теряется, что сохраняется и какие новые условия получит следующая попытка.",
+        "en": "Failure determines what is lost, what is retained, and what new conditions the next attempt will gain."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-02-01",
+              "text": {
+                "ru": "Permadeath: окончательная гибель персонажа",
+                "en": "Permadeath: final character demise"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-02",
+              "text": {
+                "ru": "Полная потеря сборки забега",
+                "en": "Complete loss of run build"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-03",
+              "text": {
+                "ru": "Частичная потеря: исчезает только часть предметов, денег или опыта",
+                "en": "Partial loss: only part of the items, money or experience disappears"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-04",
+              "text": {
+                "ru": "Ограниченные жизни",
+                "en": "Limited Lives"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-05",
+              "text": {
+                "ru": "Одноразовое предотвращение смерти",
+                "en": "One-time death prevention"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-06",
+              "text": {
+                "ru": "Воскрешение за ресурс или штраф",
+                "en": "Resurrection per resource or penalty"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-07",
+              "text": {
+                "ru": "Предсмертное состояние: возможность спастись до окончательной гибели",
+                "en": "Near-death state: the opportunity to escape before final death"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-08",
+              "text": {
+                "ru": "Падение с возможностью подняться: самостоятельно или с помощью союзника",
+                "en": "Falling with the opportunity to rise: independently or with the help of an ally"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-09",
+              "text": {
+                "ru": "Возврат к месту гибели за потерянным ресурсом",
+                "en": "Returning to the place of death for a lost resource"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-10",
+              "text": {
+                "ru": "Сохранение отправленной заранее добычи",
+                "en": "Saving pre-sent loot"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-11",
+              "text": {
+                "ru": "Наследование имущества или особенностей следующим героем",
+                "en": "Inheritance of property or features to the next hero"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-12",
+              "text": {
+                "ru": "Продолжение кампании после смерти отдельного участника отряда",
+                "en": "Continuing the campaign after the death of an individual squad member"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-13",
+              "text": {
+                "ru": "Изменение мира вследствие поражения",
+                "en": "Change of the world due to defeat"
+              }
+            },
+            {
+              "id": "variant-roguelike-02-14",
+              "text": {
+                "ru": "Встреча с останками или призраком предыдущего персонажа",
+                "en": "Encountering the remains or ghost of a previous character"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Стартовые условия",
+        "en": "Starting conditions"
+      },
+      "description": {
+        "ru": "Начальный герой, снаряжение и выбор перед стартом задают исходные возможности забега.",
+        "en": "The starting hero, equipment and choice before the start set the initial possibilities of the run."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-03-01",
+              "text": {
+                "ru": "Выбор класса: разные начальные действия и ограничения",
+                "en": "Class selection: different starting actions and restrictions"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-02",
+              "text": {
+                "ru": "Выбор вида, расы или происхождения",
+                "en": "Choice of species, race or origin"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-03",
+              "text": {
+                "ru": "Выбор персонажа с уникальной механикой",
+                "en": "Character selection with unique mechanics"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-04",
+              "text": {
+                "ru": "Выбор стартового оружия",
+                "en": "Choosing a starting weapon"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-05",
+              "text": {
+                "ru": "Выбор стартовой колоды, отряда, корабля или другого носителя сборки",
+                "en": "Selecting a starting deck, unit, ship, or other build media"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-06",
+              "text": {
+                "ru": "Выбор стартовой реликвии или пассивного эффекта",
+                "en": "Selecting a starting relic or passive effect"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-07",
+              "text": {
+                "ru": "Распределение начальных характеристик",
+                "en": "Distribution of initial characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-08",
+              "text": {
+                "ru": "Случайные стартовые предметы",
+                "en": "Random starting items"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-09",
+              "text": {
+                "ru": "Случайные положительные и отрицательные черты",
+                "en": "Random positive and negative traits"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-10",
+              "text": {
+                "ru": "Стартовый бонус в обмен на недостаток",
+                "en": "Starting bonus in exchange for disadvantage"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-11",
+              "text": {
+                "ru": "Подготовка расходников перед экспедицией",
+                "en": "Preparing consumables before the expedition"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-12",
+              "text": {
+                "ru": "Покупка стартовых преимуществ за ограниченный бюджет",
+                "en": "Buying Starter Benefits on a Limited Budget"
+              }
+            },
+            {
+              "id": "variant-roguelike-03-13",
+              "text": {
+                "ru": "Предварительная настройка доступного пула наград",
+                "en": "Pre-configuring the available reward pool"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Процедурная генерация",
+        "en": "Procedural generation"
+      },
+      "description": {
+        "ru": "Алгоритмы формируют области, встречи и награды, сохраняя заданные ограничения и вариативность.",
+        "en": "Algorithms create areas, encounters, and rewards while maintaining specified limits and variability."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-04-01",
+              "text": {
+                "ru": "Генерация геометрии уровней",
+                "en": "Generating Level Geometry"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-02",
+              "text": {
+                "ru": "Сборка уровней из заранее созданных модулей",
+                "en": "Assembling levels from pre-created modules"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-03",
+              "text": {
+                "ru": "Случайное соединение комнат и переходов",
+                "en": "Random connection of rooms and passages"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-04",
+              "text": {
+                "ru": "Генерация карты маршрутов",
+                "en": "Generating a route map"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-05",
+              "text": {
+                "ru": "Перестановка биомов или вариантов этапов",
+                "en": "Rearranging biomes or stage options"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-06",
+              "text": {
+                "ru": "Случайное размещение врагов",
+                "en": "Random placement of enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-07",
+              "text": {
+                "ru": "Случайный состав вражеских групп",
+                "en": "Random composition of enemy groups"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-08",
+              "text": {
+                "ru": "Случайное размещение предметов и ресурсов",
+                "en": "Random placement of items and resources"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-09",
+              "text": {
+                "ru": "Генерация характеристик и свойств предметов",
+                "en": "Generating characteristics and properties of items"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-10",
+              "text": {
+                "ru": "Случайные магазины, алтари и сервисные комнаты",
+                "en": "Random shops, altars and service rooms"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-11",
+              "text": {
+                "ru": "Случайные события и их последовательности",
+                "en": "Random events and their sequences"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-12",
+              "text": {
+                "ru": "Выбор боссов из общего пула",
+                "en": "Selecting bosses from the general pool"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-13",
+              "text": {
+                "ru": "Модификаторы отдельных комнат, этажей или всего забега",
+                "en": "Modifiers for individual rooms, floors or the entire run"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-14",
+              "text": {
+                "ru": "Процедурные задания и условия награды",
+                "en": "Procedural tasks and reward conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-04-15",
+              "text": {
+                "ru": "Сочетание постоянных ориентиров с переменными участками",
+                "en": "Combination of permanent landmarks with variable areas"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Маршрут и доступ к областям",
+        "en": "Route and access to areas"
+      },
+      "description": {
+        "ru": "Игрок выбирает направление и выполняет условия доступа к следующим участкам мира.",
+        "en": "The player chooses a direction and fulfills the conditions for access to the following areas of the world."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-05-01",
+              "text": {
+                "ru": "Выбор безопасного или опасного пути",
+                "en": "Choosing a safe or dangerous path"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-02",
+              "text": {
+                "ru": "Выбор следующей награды через маршрут",
+                "en": "Selecting the next reward via route"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-03",
+              "text": {
+                "ru": "Планирование цепочки будущих посещений",
+                "en": "Planning a chain of future visits"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-04",
+              "text": {
+                "ru": "Однонаправленные переходы: вернуться невозможно",
+                "en": "Unidirectional transitions: impossible to return"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-05",
+              "text": {
+                "ru": "Свободное возвращение на предыдущие этажи",
+                "en": "Free return to previous floors"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-06",
+              "text": {
+                "ru": "Короткие пути и обходные маршруты",
+                "en": "Shortcuts and detours"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-07",
+              "text": {
+                "ru": "Разблокируемые переходы",
+                "en": "Unlockable Transitions"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-08",
+              "text": {
+                "ru": "Двери и области, требующие ключа",
+                "en": "Doors and areas that require a key"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-09",
+              "text": {
+                "ru": "Проходы, требующие способности или инструмента",
+                "en": "Passages requiring ability or tool"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-10",
+              "text": {
+                "ru": "Вход за плату здоровьем, деньгами или предметом",
+                "en": "Entrance for a fee with health, money or item"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-11",
+              "text": {
+                "ru": "Взаимоисключающие ветки прохождения",
+                "en": "Mutually exclusive paths"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-12",
+              "text": {
+                "ru": "Необязательные опасные области",
+                "en": "Optional Hazardous Areas"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-13",
+              "text": {
+                "ru": "Секретные этажи и альтернативные биомы",
+                "en": "Secret floors and alternate biomes"
+              }
+            },
+            {
+              "id": "variant-roguelike-05-14",
+              "text": {
+                "ru": "Условия доступа к особому финалу",
+                "en": "Conditions for access to the special ending"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Исследование и информация",
+        "en": "Exploration and information"
+      },
+      "description": {
+        "ru": "Обследование мира раскрывает сведения, а ограниченная видимость и неизвестность влияют на решения.",
+        "en": "Surveying the world reveals information, and limited visibility and uncertainty influence decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-06-01",
+              "text": {
+                "ru": "Туман войны: неисследованные области скрыты",
+                "en": "Fog of War: Unexplored Areas Hidden"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-02",
+              "text": {
+                "ru": "Ограниченная дальность обзора",
+                "en": "Limited viewing range"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-03",
+              "text": {
+                "ru": "Линия видимости: препятствия закрывают объекты",
+                "en": "Line of sight: obstacles block objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-04",
+              "text": {
+                "ru": "Освещение и источники света",
+                "en": "Lighting and light sources"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-05",
+              "text": {
+                "ru": "Поиск скрытых дверей и ловушек",
+                "en": "Finding hidden doors and traps"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-06",
+              "text": {
+                "ru": "Скрытые комнаты и разрушаемые проходы",
+                "en": "Hidden rooms and destructible passages"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-07",
+              "text": {
+                "ru": "Разведка следующей комнаты или участка маршрута",
+                "en": "Scouting the next room or section of the route"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-08",
+              "text": {
+                "ru": "Обнаружение противников по звуку и другим следам",
+                "en": "Detection of opponents by sound and other traces"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-09",
+              "text": {
+                "ru": "Карты, раскрывающие часть уровня",
+                "en": "Cards revealing part of the level"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-10",
+              "text": {
+                "ru": "Магическое обнаружение существ, предметов или опасностей",
+                "en": "Magically detect creatures, objects, or dangers"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-11",
+              "text": {
+                "ru": "Скрытые характеристики противников",
+                "en": "Hidden characteristics of opponents"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-12",
+              "text": {
+                "ru": "Изучение врагов через осмотр или взаимодействие",
+                "en": "Studying enemies through inspection or interaction"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-13",
+              "text": {
+                "ru": "Заранее показанные намерения противника",
+                "en": "Pre-demonstrated enemy intentions"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-14",
+              "text": {
+                "ru": "Неполная информация о последствиях выбора",
+                "en": "Incomplete information about the consequences of a choice"
+              }
+            },
+            {
+              "id": "variant-roguelike-06-15",
+              "text": {
+                "ru": "Знания игрока, сохраняющие ценность между попытками",
+                "en": "Player knowledge that retains value between attempts"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Время и порядок действий",
+        "en": "Time and turn order"
+      },
+      "description": {
+        "ru": "Порядок ходов, длительность действий и непрерывное время определяют, когда можно воздействовать на мир.",
+        "en": "The order of turns, duration of actions, and continuous time determine when you can influence the world."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-07-01",
+              "text": {
+                "ru": "Пошаговое движение: мир отвечает на действие игрока",
+                "en": "Turn-based movement: the world responds to the player's actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-02",
+              "text": {
+                "ru": "Разная стоимость действий во времени",
+                "en": "Different costs of actions over time"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-03",
+              "text": {
+                "ru": "Инициатива и очередь ходов",
+                "en": "Initiative and turn order"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-04",
+              "text": {
+                "ru": "Скорость, позволяющая действовать чаще противника",
+                "en": "Speed ​​that allows you to act more often than the enemy"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-05",
+              "text": {
+                "ru": "Очки действий на ход",
+                "en": "Action points per turn"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-06",
+              "text": {
+                "ru": "Общая фаза игрока и отдельная фаза противников",
+                "en": "General player phase and separate enemy phase"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-07",
+              "text": {
+                "ru": "Одновременное исполнение заранее выбранных действий",
+                "en": "Simultaneous execution of pre-selected actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-08",
+              "text": {
+                "ru": "Бой в реальном времени",
+                "en": "Real time combat"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-09",
+              "text": {
+                "ru": "Тактическая пауза для отдачи приказов",
+                "en": "Tactical pause for giving orders"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-10",
+              "text": {
+                "ru": "Действия в заданном ритме",
+                "en": "Actions in a given rhythm"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-11",
+              "text": {
+                "ru": "Перезарядка способностей по времени или числу ходов",
+                "en": "Recharging abilities by time or number of moves"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-12",
+              "text": {
+                "ru": "Задержанные и подготовленные действия",
+                "en": "Arrested and Prepared Actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-13",
+              "text": {
+                "ru": "Ожидание как полноценное действие",
+                "en": "Waiting as a complete action"
+              }
+            },
+            {
+              "id": "variant-roguelike-07-14",
+              "text": {
+                "ru": "Ограниченный откат хода или перемотка времени",
+                "en": "Limited rollback or time rewind"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Давление и темп прохождения",
+        "en": "Pressure and pacing"
+      },
+      "description": {
+        "ru": "Таймеры, преследование и рост угрозы создают давление и влияют на темп принятия решений.",
+        "en": "Timers, stalking, and increasing threat create pressure and affect the pace of decision making."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-08-01",
+              "text": {
+                "ru": "Общий лимит времени на забег",
+                "en": "Total time limit for the run"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-02",
+              "text": {
+                "ru": "Лимит ходов на этап или задачу",
+                "en": "Limit of moves per stage or task"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-03",
+              "text": {
+                "ru": "Рост сложности с течением времени",
+                "en": "Increasing difficulty over time"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-04",
+              "text": {
+                "ru": "Рост опасности при долгом пребывании на месте",
+                "en": "Increased danger when staying in place for a long time"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-05",
+              "text": {
+                "ru": "Преследующий враг или движущаяся угроза",
+                "en": "A pursuing enemy or moving threat"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-06",
+              "text": {
+                "ru": "Сужение безопасной области",
+                "en": "Narrowing the safe area"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-07",
+              "text": {
+                "ru": "Истощение ресурсов, вынуждающее двигаться дальше",
+                "en": "Depletion of resources, forcing you to move on"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-08",
+              "text": {
+                "ru": "Подкрепления за промедление",
+                "en": "Reinforcements for delay"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-09",
+              "text": {
+                "ru": "Награды за быстрое прохождение",
+                "en": "Fast Completion Rewards"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-10",
+              "text": {
+                "ru": "Выбор между дополнительным сбором добычи и ранним переходом",
+                "en": "Choosing between additional loot collection and early transition"
+              }
+            },
+            {
+              "id": "variant-roguelike-08-11",
+              "text": {
+                "ru": "Нарастание угрозы от действий игрока",
+                "en": "Increasing threat from player actions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Перемещение и пространственные ограничения",
+        "en": "Movement and spatial restrictions"
+      },
+      "description": {
+        "ru": "Способы движения и геометрия пространства определяют достижимые позиции и цену перемещения.",
+        "en": "The modes of movement and the geometry of space determine the achievable positions and the cost of movement."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-09-01",
+              "text": {
+                "ru": "Движение по клеткам",
+                "en": "Movement across cells"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-02",
+              "text": {
+                "ru": "Свободное движение",
+                "en": "Free movement"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-03",
+              "text": {
+                "ru": "Разные правила диагонального перемещения",
+                "en": "Different rules for diagonal movement"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-04",
+              "text": {
+                "ru": "Занятость клеток и блокирование проходов существами",
+                "en": "Occupying cells and blocking passages with creatures"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-05",
+              "text": {
+                "ru": "Рывок",
+                "en": "Jerk"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-06",
+              "text": {
+                "ru": "Перекат",
+                "en": "Roll"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-07",
+              "text": {
+                "ru": "Прыжок и двойной прыжок",
+                "en": "Jump and double jump"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-08",
+              "text": {
+                "ru": "Полет, левитация и парение",
+                "en": "Flight, levitation and hovering"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-09",
+              "text": {
+                "ru": "Телепортация",
+                "en": "Teleportation"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-10",
+              "text": {
+                "ru": "Крюк и притягивание к поверхности",
+                "en": "Hook and surface pull"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-11",
+              "text": {
+                "ru": "Лазание и передвижение по стенам",
+                "en": "Climbing and moving along walls"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-12",
+              "text": {
+                "ru": "Плавание и погружение",
+                "en": "Swimming and diving"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-13",
+              "text": {
+                "ru": "Движение на транспорте или верхом",
+                "en": "Traveling by vehicle or on horseback"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-14",
+              "text": {
+                "ru": "Инерция и скольжение",
+                "en": "Inertia and slip"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-15",
+              "text": {
+                "ru": "Перемещение сквозь противников или препятствия",
+                "en": "Move through enemies or obstacles"
+              }
+            },
+            {
+              "id": "variant-roguelike-09-16",
+              "text": {
+                "ru": "Изменение скорости и стоимости движения разными поверхностями",
+                "en": "Changing the speed and cost of movement on different surfaces"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Ближний бой",
+        "en": "Melee"
+      },
+      "description": {
+        "ru": "Ближние атаки требуют выбрать позицию, момент и способ воздействия на противника.",
+        "en": "Melee attacks require choosing a position, moment and method of influencing the enemy."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-10-01",
+              "text": {
+                "ru": "Атака при движении в занятую врагом клетку",
+                "en": "Attack when moving into an enemy-occupied cell"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-02",
+              "text": {
+                "ru": "Легкие и тяжелые атаки",
+                "en": "Light and heavy attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-03",
+              "text": {
+                "ru": "Заряженные удары",
+                "en": "Charged Strikes"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-04",
+              "text": {
+                "ru": "Серии ударов и комбо",
+                "en": "Streaks and combos"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-05",
+              "text": {
+                "ru": "Разные стойки и боевые режимы",
+                "en": "Different stances and battle modes"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-06",
+              "text": {
+                "ru": "Атаки по направлению или сектору",
+                "en": "Attacks by direction or sector"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-07",
+              "text": {
+                "ru": "Удары по нескольким целям",
+                "en": "Hit multiple targets"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-08",
+              "text": {
+                "ru": "Увеличенная дистанция оружия",
+                "en": "Increased weapon range"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-09",
+              "text": {
+                "ru": "Удары в спину и позиционные бонусы",
+                "en": "Backstabs and positional bonuses"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-10",
+              "text": {
+                "ru": "Контратаки",
+                "en": "Counterattacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-11",
+              "text": {
+                "ru": "Атаки после уклонения, прыжка или рывка",
+                "en": "Attacks after dodging, jumping or dashing"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-12",
+              "text": {
+                "ru": "Прерывание подготовки чужой атаки",
+                "en": "Interrupting the preparation of someone else's attack"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-13",
+              "text": {
+                "ru": "Добивания при выполнении условия",
+                "en": "Finishings when the condition is met"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-14",
+              "text": {
+                "ru": "Бой двумя оружиями",
+                "en": "Two-weapon combat"
+              }
+            },
+            {
+              "id": "variant-roguelike-10-15",
+              "text": {
+                "ru": "Переключение оружия как часть боевой последовательности",
+                "en": "Switching weapons as part of a combat sequence"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Дальний бой и снаряды",
+        "en": "Ranged combat and projectiles"
+      },
+      "description": {
+        "ru": "Дистанционные атаки связывают прицеливание, свойства снаряда и расход боеприпасов с доступными целями.",
+        "en": "Ranged attacks link aiming, projectile properties, and ammo consumption to available targets."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-11-01",
+              "text": {
+                "ru": "Ручное прицеливание",
+                "en": "Manual aiming"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-02",
+              "text": {
+                "ru": "Автоматический выбор цели",
+                "en": "Automatic target selection"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-03",
+              "text": {
+                "ru": "Стрельба в выбранном направлении",
+                "en": "Shooting in the selected direction"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-04",
+              "text": {
+                "ru": "Стрельба только при остановке",
+                "en": "Shooting only when stopped"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-05",
+              "text": {
+                "ru": "Ограниченные боеприпасы",
+                "en": "Limited Ammo"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-06",
+              "text": {
+                "ru": "Магазин и перезарядка оружия",
+                "en": "Weapon magazine and reloading"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-07",
+              "text": {
+                "ru": "Перегрев оружия",
+                "en": "Weapon overheating"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-08",
+              "text": {
+                "ru": "Зарядка выстрела",
+                "en": "Loading a shot"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-09",
+              "text": {
+                "ru": "Разброс и отдача",
+                "en": "Spread and recoil"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-10",
+              "text": {
+                "ru": "Самонаведение",
+                "en": "Homing"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-11",
+              "text": {
+                "ru": "Пробивание целей",
+                "en": "Penetration of targets"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-12",
+              "text": {
+                "ru": "Рикошеты от стен и противников",
+                "en": "Ricochet from walls and opponents"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-13",
+              "text": {
+                "ru": "Разделение снаряда",
+                "en": "Projectile separation"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-14",
+              "text": {
+                "ru": "Возвращающиеся снаряды",
+                "en": "Returning projectiles"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-15",
+              "text": {
+                "ru": "Орбитальные снаряды и защитные спутники",
+                "en": "Orbital missiles and defense satellites"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-16",
+              "text": {
+                "ru": "Лучевое оружие",
+                "en": "Beam weapon"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-17",
+              "text": {
+                "ru": "Атаки по площади и взрывы",
+                "en": "Area attacks and explosions"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-18",
+              "text": {
+                "ru": "Управление снарядом после выстрела",
+                "en": "Projectile control after firing"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-19",
+              "text": {
+                "ru": "Отражение или уничтожение вражеских снарядов",
+                "en": "Reflecting or destroying enemy projectiles"
+              }
+            },
+            {
+              "id": "variant-roguelike-11-20",
+              "text": {
+                "ru": "Смена свойств снаряда модификаторами",
+                "en": "Changing projectile properties using modifiers"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Защита и предотвращение урона",
+        "en": "Defense and damage prevention"
+      },
+      "description": {
+        "ru": "Игрок снижает угрозу через уклонение, блокирование, позицию и временные защитные состояния.",
+        "en": "The player reduces threat through dodging, blocking, positioning, and temporary defensive states."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-12-01",
+              "text": {
+                "ru": "Броня, уменьшающая урон",
+                "en": "Damage Reducing Armor"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-02",
+              "text": {
+                "ru": "Броня, влияющая на вероятность попадания",
+                "en": "Armor affecting hit probability"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-03",
+              "text": {
+                "ru": "Блокирование атак",
+                "en": "Blocking attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-04",
+              "text": {
+                "ru": "Направленный щит",
+                "en": "Directional Shield"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-05",
+              "text": {
+                "ru": "Парирование с точным временем нажатия",
+                "en": "Parry with precise timing"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-06",
+              "text": {
+                "ru": "Вероятностное уклонение",
+                "en": "Probabilistic Evasion"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-07",
+              "text": {
+                "ru": "Кадры неуязвимости при движении",
+                "en": "Motion invulnerability frames"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-08",
+              "text": {
+                "ru": "Краткая неуязвимость после получения урона",
+                "en": "Brief invulnerability after taking damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-09",
+              "text": {
+                "ru": "Барьер или отдельный запас щита",
+                "en": "Barrier or separate shield reserve"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-10",
+              "text": {
+                "ru": "Поглощение одного попадания",
+                "en": "Absorb one hit"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-11",
+              "text": {
+                "ru": "Сопротивления отдельным типам урона",
+                "en": "Resistances to certain types of damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-12",
+              "text": {
+                "ru": "Иммунитет к определенным эффектам",
+                "en": "Immunity to certain effects"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-13",
+              "text": {
+                "ru": "Перенаправление урона на союзника или ресурс",
+                "en": "Redirect damage to an ally or resource"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-14",
+              "text": {
+                "ru": "Отражение урона атакующему",
+                "en": "Reflect damage to attacker"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-15",
+              "text": {
+                "ru": "Укрытия и разрыв линии атаки",
+                "en": "Covers and breaking the attack line"
+              }
+            },
+            {
+              "id": "variant-roguelike-12-16",
+              "text": {
+                "ru": "Ограничение максимального урона от одного удара",
+                "en": "Limit the maximum damage from one hit"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-13",
+      "section": "section-1",
+      "title": {
+        "ru": "Урон, состояния и контроль",
+        "en": "Damage, status effects and control"
+      },
+      "description": {
+        "ru": "Правила урона и состояний меняют здоровье, возможности действия и контроль над целью.",
+        "en": "Damage and condition rules change health, action capabilities, and control over the target."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-13-01",
+              "text": {
+                "ru": "Разные типы урона: физический, огненный, электрический и другие",
+                "en": "Different types of damage: physical, fire, electrical and others"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-02",
+              "text": {
+                "ru": "Уязвимости к отдельным типам атак",
+                "en": "Vulnerabilities to certain types of attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-03",
+              "text": {
+                "ru": "Критические попадания",
+                "en": "Critical hits"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-04",
+              "text": {
+                "ru": "Периодический урон: яд, горение, кровотечение",
+                "en": "Damage over time: poison, burning, bleeding"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-05",
+              "text": {
+                "ru": "Накопление эффекта до срабатывания",
+                "en": "Effect builds up until triggered"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-06",
+              "text": {
+                "ru": "Суммирование и обновление длительности состояний",
+                "en": "Summing and updating state durations"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-07",
+              "text": {
+                "ru": "Замедление",
+                "en": "Slowdown"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-08",
+              "text": {
+                "ru": "Оглушение",
+                "en": "Stun"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-09",
+              "text": {
+                "ru": "Заморозка",
+                "en": "Freezing"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-10",
+              "text": {
+                "ru": "Обездвиживание",
+                "en": "Immobilization"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-11",
+              "text": {
+                "ru": "Отбрасывание и притягивание",
+                "en": "Throwing and pulling"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-12",
+              "text": {
+                "ru": "Страх и принудительное бегство",
+                "en": "Fear and forced flight"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-13",
+              "text": {
+                "ru": "Провокация и смена цели",
+                "en": "Provocation and change of target"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-14",
+              "text": {
+                "ru": "Очарование и переход на другую сторону",
+                "en": "Charm and passing to the other side"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-15",
+              "text": {
+                "ru": "Безмолвие и запрет способностей",
+                "en": "Silence and ability ban"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-16",
+              "text": {
+                "ru": "Ослепление и ограничение восприятия",
+                "en": "Blinding and limitation of perception"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-17",
+              "text": {
+                "ru": "Спутанность управления или направления действий",
+                "en": "Confusion of control or direction of action"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-18",
+              "text": {
+                "ru": "Снижение характеристик и разрушение защиты",
+                "en": "Reduced performance and destruction of protection"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-19",
+              "text": {
+                "ru": "Метки, усиливающие последующие действия",
+                "en": "Tags that enhance follow-up"
+              }
+            },
+            {
+              "id": "variant-roguelike-13-20",
+              "text": {
+                "ru": "Взаимодействие состояний между собой",
+                "en": "Interaction of states with each other"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-14",
+      "section": "section-1",
+      "title": {
+        "ru": "Противники и боссы",
+        "en": "Enemies and bosses"
+      },
+      "description": {
+        "ru": "Поведение врагов и устройство встреч задают угрозы, на которые должен отвечать игрок.",
+        "en": "The behavior of enemies and the design of encounters define the threats that the player must respond to."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-14-01",
+              "text": {
+                "ru": "Патрулирование и обнаружение игрока",
+                "en": "Patrolling and player detection"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-02",
+              "text": {
+                "ru": "Разные роли врагов: ближний бой, стрелок, поддержка",
+                "en": "Different enemy roles: melee, marksman, support"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-03",
+              "text": {
+                "ru": "Координация и взаимное усиление группы",
+                "en": "Coordination and mutual reinforcement of the group"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-04",
+              "text": {
+                "ru": "Телеграфирование атак",
+                "en": "Telegraphing attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-05",
+              "text": {
+                "ru": "Чередование предсказуемых боевых паттернов",
+                "en": "Alternating predictable combat patterns"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-06",
+              "text": {
+                "ru": "Выбор атак в зависимости от ситуации",
+                "en": "Choosing attacks depending on the situation"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-07",
+              "text": {
+                "ru": "Элитные версии обычных врагов",
+                "en": "Elite versions of regular enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-08",
+              "text": {
+                "ru": "Случайные свойства и аффиксы противников",
+                "en": "Random enemy properties and affixes"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-09",
+              "text": {
+                "ru": "Призывание подкреплений",
+                "en": "Summoning reinforcements"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-10",
+              "text": {
+                "ru": "Лечение и воскрешение союзников",
+                "en": "Healing and reviving allies"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-11",
+              "text": {
+                "ru": "Адаптация к дистанции или действиям игрока",
+                "en": "Adaptation to distance or player actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-12",
+              "text": {
+                "ru": "Несколько фаз босса",
+                "en": "Multiple boss phases"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-13",
+              "text": {
+                "ru": "Разрушаемые части и отдельные цели на теле босса",
+                "en": "Destructible parts and individual targets on the boss's body"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-14",
+              "text": {
+                "ru": "Уязвимые окна между атаками",
+                "en": "Vulnerable windows between attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-15",
+              "text": {
+                "ru": "Изменение арены во время боя",
+                "en": "Changing the arena during battle"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-16",
+              "text": {
+                "ru": "Проверки выполнения задачи вместо простого нанесения урона",
+                "en": "Task completion checks instead of just dealing damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-17",
+              "text": {
+                "ru": "Усиление босса за нарушение условий",
+                "en": "Boss boost for violating conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-14-18",
+              "text": {
+                "ru": "Секретные и альтернативные версии боссов",
+                "en": "Secret and alternate versions of bosses"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-15",
+      "section": "section-1",
+      "title": {
+        "ru": "Окружение и системные взаимодействия",
+        "en": "Environment and system interactions"
+      },
+      "description": {
+        "ru": "Например, в Noita физическая симуляция материалов и взаимодействие огня, жидкостей, электричества и заклинаний составляют существенную часть игрового процесса. Описание разработчиков",
+        "en": "For example, in Noita, the physical simulation of materials and the interaction of fire, liquids, electricity and spells form a significant part of the gameplay. Description of the developers"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://noitagame.com/"],
+      "branches": [
+        {
+          "id": "family-15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-15-01",
+              "text": {
+                "ru": "Разрушаемые стены и объекты",
+                "en": "Destroyable walls and objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-02",
+              "text": {
+                "ru": "Перемещение предметов и толкание блоков",
+                "en": "Moving objects and pushing blocks"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-03",
+              "text": {
+                "ru": "Ловушки, действующие и на игрока, и на врагов",
+                "en": "Traps that affect both the player and enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-04",
+              "text": {
+                "ru": "Активация ловушек дистанционным воздействием",
+                "en": "Activation of traps by remote influence"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-05",
+              "text": {
+                "ru": "Огонь и распространение горения",
+                "en": "Fire and combustion spread"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-06",
+              "text": {
+                "ru": "Жидкости, затопление и течение",
+                "en": "Fluids, flooding and flow"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-07",
+              "text": {
+                "ru": "Газы, дым и облака",
+                "en": "Gases, smoke and clouds"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-08",
+              "text": {
+                "ru": "Электропроводность материалов",
+                "en": "Electrical conductivity of materials"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-09",
+              "text": {
+                "ru": "Замораживание и плавление",
+                "en": "Freezing and melting"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-10",
+              "text": {
+                "ru": "Взрывчатые и воспламеняющиеся вещества",
+                "en": "Explosives and flammable substances"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-11",
+              "text": {
+                "ru": "Химические реакции и превращение материалов",
+                "en": "Chemical reactions and transformation of materials"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-12",
+              "text": {
+                "ru": "Обрушения и падение объектов",
+                "en": "Collapses and falling objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-13",
+              "text": {
+                "ru": "Урон от падения и столкновения",
+                "en": "Fall and collision damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-14",
+              "text": {
+                "ru": "Загрязнение или изменение поверхности",
+                "en": "Contamination or alteration of the surface"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-15",
+              "text": {
+                "ru": "Использование окружения для создания новых проходов",
+                "en": "Using the environment to create new passages"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-16",
+              "text": {
+                "ru": "Дружественный огонь и взаимный урон противников",
+                "en": "Friendly fire and mutual damage between opponents"
+              }
+            },
+            {
+              "id": "variant-roguelike-15-17",
+              "text": {
+                "ru": "Цепные реакции нескольких систем",
+                "en": "Chain reactions of several systems"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-16",
+      "section": "section-1",
+      "title": {
+        "ru": "Скрытность и небоевые действия",
+        "en": "Stealth and non-combat actions"
+      },
+      "description": {
+        "ru": "Скрытность и взаимодействия вне боя позволяют обходить угрозы или решать задачи другими действиями.",
+        "en": "Stealth and interactions outside of combat allow you to circumvent threats or solve problems through other actions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-16-01",
+              "text": {
+                "ru": "Незаметное перемещение",
+                "en": "Discreet movement"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-02",
+              "text": {
+                "ru": "Шум, привлекающий врагов",
+                "en": "Noise that attracts enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-03",
+              "text": {
+                "ru": "Маскировка и невидимость",
+                "en": "Camouflage and invisibility"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-04",
+              "text": {
+                "ru": "Отвлечение противника предметом или звуком",
+                "en": "Distracting the enemy with an object or sound"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-05",
+              "text": {
+                "ru": "Усыпление и обход врагов",
+                "en": "Sleeping and bypassing enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-06",
+              "text": {
+                "ru": "Кража предметов",
+                "en": "Stealing items"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-07",
+              "text": {
+                "ru": "Взлом замков",
+                "en": "Picking locks"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-08",
+              "text": {
+                "ru": "Взлом устройств и систем",
+                "en": "Hacking devices and systems"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-09",
+              "text": {
+                "ru": "Обезвреживание ловушек",
+                "en": "Disarming traps"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-10",
+              "text": {
+                "ru": "Переговоры вместо боя",
+                "en": "Negotiations instead of fighting"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-11",
+              "text": {
+                "ru": "Подкуп и торговый обмен",
+                "en": "Bribery and trade exchange"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-12",
+              "text": {
+                "ru": "Убеждение, запугивание и обман",
+                "en": "Persuasion, intimidation and deception"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-13",
+              "text": {
+                "ru": "Проверки характеристик в событиях",
+                "en": "Performance checks in events"
+              }
+            },
+            {
+              "id": "variant-roguelike-16-14",
+              "text": {
+                "ru": "Использование предмета для альтернативного решения задачи",
+                "en": "Using an object to solve a problem alternatively"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-17",
+      "section": "section-1",
+      "title": {
+        "ru": "Развитие персонажа внутри забега",
+        "en": "Character development within the run"
+      },
+      "description": {
+        "ru": "Решения в пределах попытки развивают характеристики и набор доступных действий персонажа.",
+        "en": "Decisions within an attempt develop the characteristics and set of available actions of the character."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-17-01",
+              "text": {
+                "ru": "Опыт за действия и победы",
+                "en": "Experience for actions and victories"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-02",
+              "text": {
+                "ru": "Повышение уровня",
+                "en": "Level Up"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-03",
+              "text": {
+                "ru": "Выбор одного улучшения из нескольких",
+                "en": "Selecting one upgrade from several"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-04",
+              "text": {
+                "ru": "Распределение очков характеристик",
+                "en": "Attribute Points Distribution"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-05",
+              "text": {
+                "ru": "Изучение активных способностей",
+                "en": "Learning Active Abilities"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-06",
+              "text": {
+                "ru": "Получение пассивных навыков",
+                "en": "Gaining Passive Skills"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-07",
+              "text": {
+                "ru": "Деревья навыков с предварительными требованиями",
+                "en": "Skill trees with prerequisites"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-08",
+              "text": {
+                "ru": "Взаимоисключающие специализации",
+                "en": "Mutually exclusive specializations"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-09",
+              "text": {
+                "ru": "Развитие навыка через использование",
+                "en": "Skill development through use"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-10",
+              "text": {
+                "ru": "Повышение мастерства владения оружием",
+                "en": "Increased Weapon Proficiency"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-11",
+              "text": {
+                "ru": "Мутации и изменение тела",
+                "en": "Mutations and body changes"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-12",
+              "text": {
+                "ru": "Трансформация в другую форму",
+                "en": "Transformation into another form"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-13",
+              "text": {
+                "ru": "Поглощение способностей противников",
+                "en": "Absorbing Opponents' Abilities"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-14",
+              "text": {
+                "ru": "Перераспределение ранее вложенных очков",
+                "en": "Redistribution of previously invested points"
+              }
+            },
+            {
+              "id": "variant-roguelike-17-15",
+              "text": {
+                "ru": "Временные улучшения на несколько боев или этажей",
+                "en": "Temporary improvements for several battles or floors"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-18",
+      "section": "section-1",
+      "title": {
+        "ru": "Сборка билда и синергии",
+        "en": "Build construction and synergies"
+      },
+      "description": {
+        "ru": "Сочетания улучшений и ограничений создают специализацию, взаимное усиление и компромиссы сборки.",
+        "en": "Combinations of enhancements and constraints create specialization, cross-reinforcement, and build trade-offs."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-18-01",
+              "text": {
+                "ru": "Накопление копий одного эффекта",
+                "en": "Accumulating copies of one effect"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-02",
+              "text": {
+                "ru": "Бонусы за комплект предметов",
+                "en": "Item Set Bonuses"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-03",
+              "text": {
+                "ru": "Бонусы за принадлежность к общей категории",
+                "en": "Bonuses for belonging to the general category"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-04",
+              "text": {
+                "ru": "Эволюция оружия при выполнении условий",
+                "en": "Evolution of weapons when conditions are met"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-05",
+              "text": {
+                "ru": "Объединение нескольких способностей в новую",
+                "en": "Combining multiple abilities into a new one"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-06",
+              "text": {
+                "ru": "Преобразование одного типа урона в другой",
+                "en": "Converting one damage type to another"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-07",
+              "text": {
+                "ru": "Преобразование ресурса или характеристики в другую",
+                "en": "Converting a resource or characteristic to another"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-08",
+              "text": {
+                "ru": "Эффекты при попадании",
+                "en": "Effects on hit"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-09",
+              "text": {
+                "ru": "Эффекты при критическом попадании",
+                "en": "Critical Hit Effects"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-10",
+              "text": {
+                "ru": "Эффекты при убийстве",
+                "en": "Effects on Kill"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-11",
+              "text": {
+                "ru": "Эффекты при получении урона",
+                "en": "Effects when taking damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-12",
+              "text": {
+                "ru": "Эффекты при лечении, движении или трате ресурса",
+                "en": "Effects when healing, moving or spending a resource"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-13",
+              "text": {
+                "ru": "Эффекты при начале и завершении хода",
+                "en": "Effects at the start and end of a turn"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-14",
+              "text": {
+                "ru": "Усиление при низком здоровье",
+                "en": "Low Health Boost"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-15",
+              "text": {
+                "ru": "Усиление при выполнении ограничения",
+                "en": "Gain when constraint is satisfied"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-16",
+              "text": {
+                "ru": "Накопление силы в течение боя или забега",
+                "en": "Gaining power during a fight or run"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-17",
+              "text": {
+                "ru": "Копирование и повторное срабатывание эффектов",
+                "en": "Copying and retriggering effects"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-18",
+              "text": {
+                "ru": "Передача эффекта между целями",
+                "en": "Transferring effect between targets"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-19",
+              "text": {
+                "ru": "Зависимость результата от порядка срабатывания",
+                "en": "Dependence of the result on the order of operation"
+              }
+            },
+            {
+              "id": "variant-roguelike-18-20",
+              "text": {
+                "ru": "Комбинации, меняющие базовые правила действий",
+                "en": "Combinations that change the basic rules of action"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-19",
+      "section": "section-1",
+      "title": {
+        "ru": "Предметы, добыча и экипировка",
+        "en": "Items, loot and equipment"
+      },
+      "description": {
+        "ru": "Найденные предметы меняют возможности персонажа через свойства добычи и условия экипировки.",
+        "en": "Found items change the character's abilities through loot properties and equipment conditions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-19-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-19-01",
+              "text": {
+                "ru": "Случайное выпадение добычи",
+                "en": "Random loot drops"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-02",
+              "text": {
+                "ru": "Выбор награды из нескольких вариантов",
+                "en": "Selecting a reward from several options"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-03",
+              "text": {
+                "ru": "Предметы разных уровней редкости",
+                "en": "Items of different rarity levels"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-04",
+              "text": {
+                "ru": "Случайные характеристики предмета",
+                "en": "Random item characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-05",
+              "text": {
+                "ru": "Префиксы, суффиксы и дополнительные свойства",
+                "en": "Prefixes, suffixes and additional properties"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-06",
+              "text": {
+                "ru": "Уникальные предметы с особым правилом",
+                "en": "Unique items with a special rule"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-07",
+              "text": {
+                "ru": "Активируемые предметы",
+                "en": "Activated Items"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-08",
+              "text": {
+                "ru": "Пассивные реликвии",
+                "en": "Passive Relics"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-09",
+              "text": {
+                "ru": "Одноразовые расходники",
+                "en": "Disposable consumables"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-10",
+              "text": {
+                "ru": "Предметы с ограниченным количеством зарядов",
+                "en": "Items with limited charges"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-11",
+              "text": {
+                "ru": "Разные слоты экипировки",
+                "en": "Different equipment slots"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-12",
+              "text": {
+                "ru": "Конкуренция предметов за один слот",
+                "en": "Competition of items for one slot"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-13",
+              "text": {
+                "ru": "Ограничения на совместимость снаряжения",
+                "en": "Equipment compatibility restrictions"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-14",
+              "text": {
+                "ru": "Предметы, растущие вместе с персонажем",
+                "en": "Items that grow with the character"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-15",
+              "text": {
+                "ru": "Предметы с преимуществом и встроенным недостатком",
+                "en": "Items with an advantage and a built-in disadvantage"
+              }
+            },
+            {
+              "id": "variant-roguelike-19-16",
+              "text": {
+                "ru": "Предметы, изменяющие доступные награды или встречи",
+                "en": "Items that change available rewards or encounters"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-20",
+      "section": "section-1",
+      "title": {
+        "ru": "Идентификация, благословения и проклятия",
+        "en": "Identification, blessings and curses"
+      },
+      "description": {
+        "ru": "Идентификация, благословения и проклятия подробно представлены в классической традиции NetHack. Официальное руководство",
+        "en": "Identification, blessings and curses are presented in detail in the classic NetHack tradition. Official Guide"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.nethack.org/v367/Guidebook.html"],
+      "branches": [
+        {
+          "id": "family-20-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-20-01",
+              "text": {
+                "ru": "Неизвестный эффект найденного предмета",
+                "en": "Unknown effect of found item"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-02",
+              "text": {
+                "ru": "Новая привязка внешнего вида к эффектам в каждом забеге",
+                "en": "New link between appearance and effects in each run"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-03",
+              "text": {
+                "ru": "Опознание через использование",
+                "en": "Recognition through use"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-04",
+              "text": {
+                "ru": "Опознание специальным действием или расходником",
+                "en": "Identification by special action or consumable"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-05",
+              "text": {
+                "ru": "Косвенное определение свойств по наблюдаемым признакам",
+                "en": "Indirect determination of properties based on observable characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-06",
+              "text": {
+                "ru": "Частичное опознание отдельных характеристик",
+                "en": "Partial recognition of individual characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-07",
+              "text": {
+                "ru": "Скрытые отрицательные свойства",
+                "en": "Hidden negative properties"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-08",
+              "text": {
+                "ru": "Благословленное, обычное и проклятое состояние предмета",
+                "en": "Blessed, Normal, and Cursed state of an item"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-09",
+              "text": {
+                "ru": "Невозможность снять проклятое снаряжение",
+                "en": "Inability to remove cursed equipment"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-10",
+              "text": {
+                "ru": "Снятие проклятий и освящение предметов",
+                "en": "Removing curses and consecrating objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-20-11",
+              "text": {
+                "ru": "Изменение действия предмета в зависимости от его состояния",
+                "en": "Changing the action of an item depending on its state"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-21",
+      "section": "section-1",
+      "title": {
+        "ru": "Инвентарь и переноска",
+        "en": "Inventory and carrying capacity"
+      },
+      "description": {
+        "ru": "Ограничения переноски и организация вещей заставляют выбирать, что сохранить, применить или оставить.",
+        "en": "The limitations of carrying and organizing things force you to choose what to keep, use, or leave behind."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-21-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-21-01",
+              "text": {
+                "ru": "Ограничение числа предметов",
+                "en": "Item limit"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-02",
+              "text": {
+                "ru": "Ограничение общего веса",
+                "en": "Total weight limit"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-03",
+              "text": {
+                "ru": "Штрафы за перегруз",
+                "en": "Fines for overload"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-04",
+              "text": {
+                "ru": "Предметы разного размера и формы",
+                "en": "Objects of different sizes and shapes"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-05",
+              "text": {
+                "ru": "Размещение вещей на сетке инвентаря",
+                "en": "Placing items on the inventory grid"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-06",
+              "text": {
+                "ru": "Вращение и укладка предметов",
+                "en": "Rotating and stacking objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-07",
+              "text": {
+                "ru": "Бонусы за соседство предметов",
+                "en": "Bonuses for the proximity of objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-08",
+              "text": {
+                "ru": "Эффекты от порядка или положения вещей",
+                "en": "Effects of the order or state of things"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-09",
+              "text": {
+                "ru": "Контейнеры с особыми правилами хранения",
+                "en": "Containers with special storage rules"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-10",
+              "text": {
+                "ru": "Ограниченные быстрые слоты",
+                "en": "Limited fast slots"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-11",
+              "text": {
+                "ru": "Отдельные ограничения на расходники и экипировку",
+                "en": "Separate restrictions on consumables and equipment"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-12",
+              "text": {
+                "ru": "Тайники для отложенного использования",
+                "en": "Caches for delayed use"
+              }
+            },
+            {
+              "id": "variant-roguelike-21-13",
+              "text": {
+                "ru": "Выбрасывание или уничтожение предметов ради освобождения места",
+                "en": "Throwing away or destroying items to free up space"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-22",
+      "section": "section-1",
+      "title": {
+        "ru": "Создание и изменение предметов",
+        "en": "Creating and Modifying Items"
+      },
+      "description": {
+        "ru": "Материалы и операции создания меняют предметы, их свойства и доступные способы применения.",
+        "en": "Materials and creation operations change objects, their properties and available uses."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-22-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-22-01",
+              "text": {
+                "ru": "Крафт по рецептам",
+                "en": "Crafting according to recipes"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-02",
+              "text": {
+                "ru": "Экспериментальное смешивание ингредиентов",
+                "en": "Experimental mixing of ingredients"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-03",
+              "text": {
+                "ru": "Разбор предметов на материалы",
+                "en": "Parsing items for materials"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-04",
+              "text": {
+                "ru": "Переплавка и переработка",
+                "en": "Melting and processing"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-05",
+              "text": {
+                "ru": "Повышение уровня предмета",
+                "en": "Item Level Up"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-06",
+              "text": {
+                "ru": "Переброс отдельных характеристик",
+                "en": "Transfer of individual characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-07",
+              "text": {
+                "ru": "Добавление и удаление свойств",
+                "en": "Adding and Removing Properties"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-08",
+              "text": {
+                "ru": "Вставка камней, рун и модулей",
+                "en": "Inserting stones, runes and modules"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-09",
+              "text": {
+                "ru": "Объединение одинаковых предметов",
+                "en": "Combining identical items"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-10",
+              "text": {
+                "ru": "Слияние разных предметов",
+                "en": "Merging different items"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-11",
+              "text": {
+                "ru": "Зачарование",
+                "en": "Enchantment"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-12",
+              "text": {
+                "ru": "Ремонт и восстановление прочности",
+                "en": "Repair and restoration of strength"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-13",
+              "text": {
+                "ru": "Перезарядка магических устройств",
+                "en": "Recharging Magic Devices"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-14",
+              "text": {
+                "ru": "Ограниченные точки изменения экипировки",
+                "en": "Limited outfit change points"
+              }
+            },
+            {
+              "id": "variant-roguelike-22-15",
+              "text": {
+                "ru": "Риск неудачи, разрушения или порчи при улучшении",
+                "en": "Risk of failure, destruction or deterioration when improving"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-23",
+      "section": "section-1",
+      "title": {
+        "ru": "Конструирование способностей и магии",
+        "en": "Constructing abilities and magic"
+      },
+      "description": {
+        "ru": "Компоненты, формы и правила сочетания позволяют собирать собственные способности и заклинания.",
+        "en": "Components, forms and combination rules allow you to assemble your own abilities and spells."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-23-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-23-01",
+              "text": {
+                "ru": "Сборка заклинания из отдельных компонентов",
+                "en": "Assembling a spell from individual components"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-02",
+              "text": {
+                "ru": "Выбор формы доставки: луч, снаряд, область, контакт",
+                "en": "Select delivery form: beam, projectile, area, contact"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-03",
+              "text": {
+                "ru": "Добавление модификаторов к заклинанию",
+                "en": "Adding Modifiers to a Spell"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-04",
+              "text": {
+                "ru": "Установка порядка исполнения компонентов",
+                "en": "Setting the execution order of components"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-05",
+              "text": {
+                "ru": "Заклинание, запускающее другое заклинание",
+                "en": "A spell that triggers another spell"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-06",
+              "text": {
+                "ru": "Срабатывание по таймеру, попаданию или смерти цели",
+                "en": "Triggered by timer, target hit or death"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-07",
+              "text": {
+                "ru": "Ограничение вместимости магического носителя",
+                "en": "Magic Media Capacity Limit"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-08",
+              "text": {
+                "ru": "Баланс стоимости, скорости и мощности",
+                "en": "Balance of cost, speed and power"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-09",
+              "text": {
+                "ru": "Расходуемые и бесконечные заклинания",
+                "en": "Consumable and infinite spells"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-10",
+              "text": {
+                "ru": "Нестабильная магия и случайные побочные эффекты",
+                "en": "Unstable magic and random side effects"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-11",
+              "text": {
+                "ru": "Опасность собственных заклинаний для игрока",
+                "en": "The danger of the player's own spells"
+              }
+            },
+            {
+              "id": "variant-roguelike-23-12",
+              "text": {
+                "ru": "Программируемые последовательности действий",
+                "en": "Programmable action sequences"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-24",
+      "section": "section-1",
+      "title": {
+        "ru": "Ресурсы и выживание",
+        "en": "Resources and survival"
+      },
+      "description": {
+        "ru": "Запасы, голод и другие потребности связывают выживание с выбором маршрута и расходом ресурсов.",
+        "en": "Supplies, hunger, and other needs tie survival to route choice and resource expenditure."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-24-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-24-01",
+              "text": {
+                "ru": "Здоровье как ограниченный ресурс забега",
+                "en": "Health as a limited run resource"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-02",
+              "text": {
+                "ru": "Мана или энергия способностей",
+                "en": "Mana or ability energy"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-03",
+              "text": {
+                "ru": "Выносливость для атак и перемещения",
+                "en": "Stamina for attacks and movement"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-04",
+              "text": {
+                "ru": "Голод и питание",
+                "en": "Hunger and nutrition"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-05",
+              "text": {
+                "ru": "Жажда",
+                "en": "Thirst"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-06",
+              "text": {
+                "ru": "Кислород",
+                "en": "Oxygen"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-07",
+              "text": {
+                "ru": "Топливо",
+                "en": "Fuel"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-08",
+              "text": {
+                "ru": "Запас света",
+                "en": "Light reserve"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-09",
+              "text": {
+                "ru": "Температура тела и воздействие среды",
+                "en": "Body temperature and environmental influences"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-10",
+              "text": {
+                "ru": "Усталость и сон",
+                "en": "Fatigue and sleep"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-11",
+              "text": {
+                "ru": "Стресс и рассудок",
+                "en": "Stress and sanity"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-12",
+              "text": {
+                "ru": "Радиация, заражение или порча",
+                "en": "Radiation, contamination or damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-13",
+              "text": {
+                "ru": "Болезни и долговременные травмы",
+                "en": "Illnesses and long-term injuries"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-14",
+              "text": {
+                "ru": "Износ оружия и брони",
+                "en": "Weapon and armor wear"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-15",
+              "text": {
+                "ru": "Порча еды и материалов со временем",
+                "en": "Deterioration of food and materials over time"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-16",
+              "text": {
+                "ru": "Расход ресурсов на переходы между областями",
+                "en": "Resource consumption for transitions between areas"
+              }
+            },
+            {
+              "id": "variant-roguelike-24-17",
+              "text": {
+                "ru": "Конкуренция разных действий за один ресурс",
+                "en": "Competition between different activities for one resource"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-25",
+      "section": "section-1",
+      "title": {
+        "ru": "Лечение и восстановление",
+        "en": "Healing and recovery"
+      },
+      "description": {
+        "ru": "Восстановление имеет условия, стоимость и ограничения, которые влияют на дальнейший риск.",
+        "en": "Restoration has conditions, costs and limitations that affect further risk."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-25-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-25-01",
+              "text": {
+                "ru": "Расходуемые лечебные предметы",
+                "en": "Consumable healing items"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-02",
+              "text": {
+                "ru": "Ограниченный запас лечебных зарядов",
+                "en": "Limited supply of healing charges"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-03",
+              "text": {
+                "ru": "Пополнение лечения в специальных точках",
+                "en": "Replenishment of treatment at special points"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-04",
+              "text": {
+                "ru": "Пассивная регенерация",
+                "en": "Passive regeneration"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-05",
+              "text": {
+                "ru": "Восстановление только вне боя",
+                "en": "Recovery only outside of combat"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-06",
+              "text": {
+                "ru": "Лечение за нанесенный урон",
+                "en": "Heal for damage done"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-07",
+              "text": {
+                "ru": "Лечение за убийства",
+                "en": "Treatment for murders"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-08",
+              "text": {
+                "ru": "Возврат недавно потерянного здоровья через агрессию",
+                "en": "Recovering recently lost health through aggression"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-09",
+              "text": {
+                "ru": "Временное здоровье",
+                "en": "Temporary health"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-10",
+              "text": {
+                "ru": "Увеличение максимального здоровья",
+                "en": "Maximum Health Increase"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-11",
+              "text": {
+                "ru": "Отдых с затратой времени и припасов",
+                "en": "Rest with time and supplies"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-12",
+              "text": {
+                "ru": "Выбор между лечением и улучшением на привале",
+                "en": "Choosing between treatment and improvement at rest"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-13",
+              "text": {
+                "ru": "Лечение за счет другого ресурса или характеристики",
+                "en": "Treatment at the expense of another resource or characteristic"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-14",
+              "text": {
+                "ru": "Восстановление с риском случайной встречи",
+                "en": "Recovery with the risk of a chance encounter"
+              }
+            },
+            {
+              "id": "variant-roguelike-25-15",
+              "text": {
+                "ru": "Очищение отрицательных состояний отдельно от лечения",
+                "en": "Clearing negative states separately from treatment"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-26",
+      "section": "section-1",
+      "title": {
+        "ru": "Экономика и магазины",
+        "en": "Economy and shops"
+      },
+      "description": {
+        "ru": "Обмен, торговцы и цены позволяют превращать ресурсы в возможности и выбирать момент покупки.",
+        "en": "Exchange, traders and prices allow you to turn resources into opportunities and choose the moment of purchase."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-26-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-26-01",
+              "text": {
+                "ru": "Валюта, действующая только внутри забега",
+                "en": "Currency valid only within the run"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-02",
+              "text": {
+                "ru": "Несколько валют с разным назначением",
+                "en": "Several currencies with different purposes"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-03",
+              "text": {
+                "ru": "Покупка и продажа предметов",
+                "en": "Buying and selling items"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-04",
+              "text": {
+                "ru": "Случайный ассортимент",
+                "en": "Random assortment"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-05",
+              "text": {
+                "ru": "Платное обновление ассортимента",
+                "en": "Paid assortment update"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-06",
+              "text": {
+                "ru": "Растущая цена последовательных обновлений",
+                "en": "Increasing cost of successive upgrades"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-07",
+              "text": {
+                "ru": "Фиксация товара для следующего посещения",
+                "en": "Fixing the item for the next visit"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-08",
+              "text": {
+                "ru": "Ограниченный запас товаров",
+                "en": "Limited stock of goods"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-09",
+              "text": {
+                "ru": "Скидки и изменение цен",
+                "en": "Discounts and price changes"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-10",
+              "text": {
+                "ru": "Обмен предмета на предмет",
+                "en": "Exchange item for item"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-11",
+              "text": {
+                "ru": "Проценты на накопленные деньги",
+                "en": "Interest on accumulated money"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-12",
+              "text": {
+                "ru": "Доход за выполненные условия",
+                "en": "Income for fulfilled conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-13",
+              "text": {
+                "ru": "Кредит, долг и обязательные платежи",
+                "en": "Credit, debt and obligatory payments"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-14",
+              "text": {
+                "ru": "Азартные автоматы и ставки",
+                "en": "Gambling machines and bets"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-15",
+              "text": {
+                "ru": "Покупка услуг: лечение, опознание, улучшение",
+                "en": "Purchasing services: treatment, identification, improvement"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-16",
+              "text": {
+                "ru": "Кража у торговца с последствиями",
+                "en": "Theft from a merchant with consequences"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-17",
+              "text": {
+                "ru": "Разрушение магазина или конфликт с его владельцем",
+                "en": "Destruction of a store or conflict with its owner"
+              }
+            },
+            {
+              "id": "variant-roguelike-26-18",
+              "text": {
+                "ru": "Деньги как источник боевого усиления",
+                "en": "Money as a source of combat enhancement"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-27",
+      "section": "section-1",
+      "title": {
+        "ru": "Риск и награда",
+        "en": "Risk and reward"
+      },
+      "description": {
+        "ru": "Дополнительная выгода предлагается вместе с угрозой потери, усложнением или отказом от другого преимущества.",
+        "en": "An additional benefit is offered with the threat of loss, complication, or denial of another benefit."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-27-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-27-01",
+              "text": {
+                "ru": "Дополнительное испытание ради дополнительной награды",
+                "en": "Extra challenge for extra reward"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-02",
+              "text": {
+                "ru": "Продолжение после безопасной точки выхода",
+                "en": "Continuing after a safe exit point"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-03",
+              "text": {
+                "ru": "Оплата преимущества здоровьем",
+                "en": "Payment for health benefits"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-04",
+              "text": {
+                "ru": "Оплата преимущества максимальным здоровьем",
+                "en": "Paying for benefits with maximum health"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-05",
+              "text": {
+                "ru": "Получение проклятия за сильный предмет",
+                "en": "Getting cursed for a powerful item"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-06",
+              "text": {
+                "ru": "Временный штраф ради будущего усиления",
+                "en": "Temporary penalty for future gain"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-07",
+              "text": {
+                "ru": "Награда за бой без получения урона",
+                "en": "Reward for fighting without taking damage"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-08",
+              "text": {
+                "ru": "Награда за ограничение набора действий",
+                "en": "Action Restriction Reward"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-09",
+              "text": {
+                "ru": "Контракт на выполнение условия в следующих комнатах",
+                "en": "Contract to fulfill the condition in the following rooms"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-10",
+              "text": {
+                "ru": "Случайное событие с несколькими исходами",
+                "en": "Random event with multiple outcomes"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-11",
+              "text": {
+                "ru": "Выбор гарантированной или вероятностной награды",
+                "en": "Choosing a guaranteed or probabilistic reward"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-12",
+              "text": {
+                "ru": "Накопление риска при повторном использовании объекта",
+                "en": "Accumulation of risk when reusing an object"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-13",
+              "text": {
+                "ru": "Жертва предмета, союзника или способности",
+                "en": "Sacrifice an Item, Ally, or Ability"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-14",
+              "text": {
+                "ru": "Обмен немедленной силы на долгосрочную выгоду",
+                "en": "Trading immediate power for long-term gain"
+              }
+            },
+            {
+              "id": "variant-roguelike-27-15",
+              "text": {
+                "ru": "Отказ от награды ради изменения будущих условий",
+                "en": "Refusal of reward to change future conditions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-28",
+      "section": "section-1",
+      "title": {
+        "ru": "Управление случайностью",
+        "en": "Randomness control"
+      },
+      "description": {
+        "ru": "Игрок получает способы менять распределение исходов, предложения и степень неопределённости.",
+        "en": "The player is given ways to change the distribution of outcomes, offers, and the degree of uncertainty."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-28-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-28-01",
+              "text": {
+                "ru": "Переброс предложенных улучшений",
+                "en": "Transfer of proposed improvements"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-02",
+              "text": {
+                "ru": "Замена типа награды",
+                "en": "Changing reward type"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-03",
+              "text": {
+                "ru": "Исключение предметов из будущих предложений",
+                "en": "Excluding items from future offers"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-04",
+              "text": {
+                "ru": "Повышение вероятности нужной категории",
+                "en": "Increasing the likelihood of the desired category"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-05",
+              "text": {
+                "ru": "Гарантированная награда после выполнения условия",
+                "en": "Guaranteed reward after fulfilling the condition"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-06",
+              "text": {
+                "ru": "Выбор между несколькими случайными результатами",
+                "en": "Choose between several random results"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-07",
+              "text": {
+                "ru": "Предварительный просмотр результата перед тратой",
+                "en": "Preview your results before spending"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-08",
+              "text": {
+                "ru": "Изменение удачи и вероятностей",
+                "en": "Changing Luck and Probabilities"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-09",
+              "text": {
+                "ru": "Накопительная гарантия после серии неудач",
+                "en": "Cumulative guarantee after a series of failures"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-10",
+              "text": {
+                "ru": "Обмен количества вариантов на качество",
+                "en": "Trading quantity of options for quality"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-11",
+              "text": {
+                "ru": "Ограниченный запас жетонов управления случайностью",
+                "en": "Limited Supply of Randomness Control Tokens"
+              }
+            },
+            {
+              "id": "variant-roguelike-28-12",
+              "text": {
+                "ru": "Фиксация части предложения с обновлением остального",
+                "en": "Fixing part of a sentence and updating the rest"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-29",
+      "section": "section-1",
+      "title": {
+        "ru": "Спутники, призыв и отряд",
+        "en": "Companions, summoning and squad"
+      },
+      "description": {
+        "ru": "Союзники и призванные существа добавляют управляемые или самостоятельные роли с собственными ресурсами.",
+        "en": "Allies and summoned creatures add managed or stand-alone roles with their own resources."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-29-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-29-01",
+              "text": {
+                "ru": "Постоянный спутник",
+                "en": "Constant companion"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-02",
+              "text": {
+                "ru": "Временные призванные существа",
+                "en": "Temporary Summoned Creatures"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-03",
+              "text": {
+                "ru": "Приручение противников",
+                "en": "Taming enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-04",
+              "text": {
+                "ru": "Наем участников отряда",
+                "en": "Recruiting Squad Members"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-05",
+              "text": {
+                "ru": "Разные роли и специализации союзников",
+                "en": "Different roles and specializations of allies"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-06",
+              "text": {
+                "ru": "Экипировка и развитие каждого участника",
+                "en": "Equipment and development of each participant"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-07",
+              "text": {
+                "ru": "Формация и порядок расположения",
+                "en": "Formation and order of arrangement"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-08",
+              "text": {
+                "ru": "Прямые команды или настройка поведения",
+                "en": "Direct commands or customization of behavior"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-09",
+              "text": {
+                "ru": "Переключение управляемого персонажа",
+                "en": "Switch controllable character"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-10",
+              "text": {
+                "ru": "Общие и индивидуальные ресурсы",
+                "en": "General and individual resources"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-11",
+              "text": {
+                "ru": "Бонусы за состав отряда",
+                "en": "Bonuses for squad composition"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-12",
+              "text": {
+                "ru": "Отношения, конфликты и совместимость участников",
+                "en": "Relationships, conflicts and compatibility of participants"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-13",
+              "text": {
+                "ru": "Мораль и вероятность бегства",
+                "en": "Morale and likelihood of fleeing"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-14",
+              "text": {
+                "ru": "Ранения, усталость и необходимость ротации",
+                "en": "Injuries, fatigue and the need for rotation"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-15",
+              "text": {
+                "ru": "Замена погибших новыми героями",
+                "en": "Replacing the dead with new heroes"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-16",
+              "text": {
+                "ru": "Лимит числа активных призывов",
+                "en": "Limit on the number of active calls"
+              }
+            },
+            {
+              "id": "variant-roguelike-29-17",
+              "text": {
+                "ru": "Усиление призванных существ через сборку персонажа",
+                "en": "Strengthening summoned creatures through a character build"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-30",
+      "section": "section-1",
+      "title": {
+        "ru": "Религия, фракции и репутация",
+        "en": "Religion, factions and reputation"
+      },
+      "description": {
+        "ru": "Отношения с богами и организациями связывают поведение героя с доступом, обязательствами и наградами.",
+        "en": "Relationships with gods and organizations link the hero's behavior to access, obligations, and rewards."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-30-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-30-01",
+              "text": {
+                "ru": "Выбор покровителя или фракции",
+                "en": "Choosing a Patron or Faction"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-02",
+              "text": {
+                "ru": "Накопление благосклонности",
+                "en": "Favor Accumulation"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-03",
+              "text": {
+                "ru": "Награды за предпочтительные действия",
+                "en": "Rewards for Preferred Actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-04",
+              "text": {
+                "ru": "Запреты и обязательства",
+                "en": "Prohibitions and obligations"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-05",
+              "text": {
+                "ru": "Молитва как ограниченная помощь",
+                "en": "Prayer as limited help"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-06",
+              "text": {
+                "ru": "Жертвоприношения",
+                "en": "Sacrifices"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-07",
+              "text": {
+                "ru": "Получение даров и специальных способностей",
+                "en": "Receiving gifts and special abilities"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-08",
+              "text": {
+                "ru": "Наказание за нарушение правил",
+                "en": "Punishment for breaking the rules"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-09",
+              "text": {
+                "ru": "Смена покровителя с последствиями",
+                "en": "Change of patron with consequences"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-10",
+              "text": {
+                "ru": "Репутация, меняющая отношение существ",
+                "en": "Reputation that changes the attitude of creatures"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-11",
+              "text": {
+                "ru": "Доступ к особым магазинам и маршрутам через отношения",
+                "en": "Access to special stores and routes through relationships"
+              }
+            },
+            {
+              "id": "variant-roguelike-30-12",
+              "text": {
+                "ru": "Конфликт интересов нескольких фракций",
+                "en": "Conflict of interests of several factions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-31",
+      "section": "section-1",
+      "title": {
+        "ru": "Метапрогрессия между забегами",
+        "en": "Metaprogression between runs"
+      },
+      "description": {
+        "ru": "Прогресс между попытками меняет будущие возможности; его наличие и масштаб зависят от выбранной модели рогалика.",
+        "en": "Progress between attempts changes future possibilities; its presence and extent depend on the chosen roguelike model."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-31-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-31-01",
+              "text": {
+                "ru": "Постоянное повышение характеристик",
+                "en": "Constantly improving performance"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-02",
+              "text": {
+                "ru": "Постоянное дерево улучшений",
+                "en": "Permanent upgrade tree"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-03",
+              "text": {
+                "ru": "Открытие новых персонажей",
+                "en": "Unlocking new characters"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-04",
+              "text": {
+                "ru": "Открытие оружия и стартовых комплектов",
+                "en": "Unlocking Weapons and Starter Kits"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-05",
+              "text": {
+                "ru": "Открытие новых предметов в пуле добычи",
+                "en": "Unlocking new items in the loot pool"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-06",
+              "text": {
+                "ru": "Открытие новых способностей и вариантов развития",
+                "en": "Discovering new abilities and development options"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-07",
+              "text": {
+                "ru": "Открытие биомов, событий и боссов",
+                "en": "Unlocking biomes, events and bosses"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-08",
+              "text": {
+                "ru": "Развитие центральной базы",
+                "en": "Development of the central base"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-09",
+              "text": {
+                "ru": "Появление новых сервисов между забегами",
+                "en": "The emergence of new services between runs"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-10",
+              "text": {
+                "ru": "Постоянная валюта",
+                "en": "Constant currency"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-11",
+              "text": {
+                "ru": "Улучшение отдельных видов оружия через мастерство",
+                "en": "Upgrading individual weapons through mastery"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-12",
+              "text": {
+                "ru": "Наследственные бонусы следующих персонажей",
+                "en": "The following characters' inheritance bonuses"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-13",
+              "text": {
+                "ru": "Сохранение части персонажей или имущества",
+                "en": "Saving some characters or property"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-14",
+              "text": {
+                "ru": "Коллекции, дающие игровые преимущества",
+                "en": "Collections that provide in-game advantages"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-15",
+              "text": {
+                "ru": "Возможность отключать ранее открытый контент",
+                "en": "Ability to disable previously opened content"
+              }
+            },
+            {
+              "id": "variant-roguelike-31-16",
+              "text": {
+                "ru": "Престиж или сброс постоянного прогресса ради новых условий",
+                "en": "Prestige or resetting constant progress for new conditions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-32",
+      "section": "section-1",
+      "title": {
+        "ru": "Повествование и постоянный мир",
+        "en": "Narrative and persistent world"
+      },
+      "description": {
+        "ru": "События забега меняют историю и постоянное состояние мира или раскрывают новые части повествования.",
+        "en": "Events in the run change history and the ongoing state of the world, or reveal new parts of the narrative."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-32-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-32-01",
+              "text": {
+                "ru": "Развитие сюжета после каждой попытки",
+                "en": "Plot development after each attempt"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-02",
+              "text": {
+                "ru": "Новые диалоги в зависимости от событий забега",
+                "en": "New dialogues depending on the events of the run"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-03",
+              "text": {
+                "ru": "Отношения с персонажами между попытками",
+                "en": "Relationships with characters between attempts"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-04",
+              "text": {
+                "ru": "Подарки и выполнение личных поручений",
+                "en": "Gifts and personal errands"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-05",
+              "text": {
+                "ru": "Задания, продолжающиеся через несколько забегов",
+                "en": "Quests that continue across multiple runs"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-06",
+              "text": {
+                "ru": "Перенос последствий выбора в будущие попытки",
+                "en": "Carrying the Consequences of a Choice into Future Attempts"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-07",
+              "text": {
+                "ru": "Постепенное изменение центральной локации",
+                "en": "Gradual change in central location"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-08",
+              "text": {
+                "ru": "Восстановление мира по частям",
+                "en": "Rebuilding the world piece by piece"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-09",
+              "text": {
+                "ru": "Получение новых возможностей через сюжетные решения",
+                "en": "Gaining new opportunities through story decisions"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-10",
+              "text": {
+                "ru": "Несколько концовок по совокупности действий",
+                "en": "Multiple endings based on a combination of actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-11",
+              "text": {
+                "ru": "Обязательные повторные победы для продолжения истории",
+                "en": "Mandatory re-wins to continue the story"
+              }
+            },
+            {
+              "id": "variant-roguelike-32-12",
+              "text": {
+                "ru": "Сохранение отдельных изменений при обновлении остального мира",
+                "en": "Keeping individual changes while updating the rest of the world"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-33",
+      "section": "section-1",
+      "title": {
+        "ru": "Карточные рогалики",
+        "en": "Card roguelikes"
+      },
+      "description": {
+        "ru": "Выбор карт, построение синергий, реликвии и выбор рискованного либо безопасного маршрута прямо входят в устройство Slay the Spire. Описание Mega Crit",
+        "en": "Selecting cards, building synergies, relics, and choosing a risky or safe route are directly included in the Slay the Spire device. Description of Mega Crit"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/646570/Slay_the_Spire/"
+      ],
+      "branches": [
+        {
+          "id": "family-33-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-33-01",
+              "text": {
+                "ru": "Сбор колоды во время забега",
+                "en": "Building a deck during a run"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-02",
+              "text": {
+                "ru": "Добор случайной руки",
+                "en": "Drawing a random hand"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-03",
+              "text": {
+                "ru": "Энергия на розыгрыш карт",
+                "en": "Energy for playing cards"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-04",
+              "text": {
+                "ru": "Сброс и повторное перемешивание колоды",
+                "en": "Reset and reshuffle the deck"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-05",
+              "text": {
+                "ru": "Удаление слабых или нежелательных карт",
+                "en": "Removing weak or unwanted cards"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-06",
+              "text": {
+                "ru": "Улучшение карт",
+                "en": "Map improvement"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-07",
+              "text": {
+                "ru": "Копирование и преобразование карт",
+                "en": "Copying and converting maps"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-08",
+              "text": {
+                "ru": "Создание временных карт в бою",
+                "en": "Creating temporary maps in battle"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-09",
+              "text": {
+                "ru": "Сохранение карты в руке между ходами",
+                "en": "Keeping a card in your hand between turns"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-10",
+              "text": {
+                "ru": "Изъятие карты до конца боя после использования",
+                "en": "Removing a card until the end of the battle after use"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-11",
+              "text": {
+                "ru": "Карты состояний и проклятий, засоряющие колоду",
+                "en": "Condition and curse cards littering the deck"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-12",
+              "text": {
+                "ru": "Условная стоимость и условный эффект карты",
+                "en": "Conditional cost and conditional card effect"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-13",
+              "text": {
+                "ru": "Комбинации по порядку розыгрыша",
+                "en": "Combinations in order of play"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-14",
+              "text": {
+                "ru": "Манипуляция верхом колоды",
+                "en": "Deck Top Manipulation"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-15",
+              "text": {
+                "ru": "Просмотр и выбор будущего добора",
+                "en": "View and select future selection"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-16",
+              "text": {
+                "ru": "Изменение размера руки",
+                "en": "Changing hand size"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-17",
+              "text": {
+                "ru": "Зависимость силы от размера и состава колоды",
+                "en": "Dependence of strength on the size and composition of the deck"
+              }
+            },
+            {
+              "id": "variant-roguelike-33-18",
+              "text": {
+                "ru": "Взаимодействие колоды с постоянными пассивными эффектами",
+                "en": "Deck Interaction with Constant Passive Effects"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-34",
+      "section": "section-1",
+      "title": {
+        "ru": "Кубики, комбинации и набор очков",
+        "en": "Dice, combinations and scoring"
+      },
+      "description": {
+        "ru": "Сочетание покерных комбинаций, изменяющих правила джокеров и сильных взаимодействий лежит в основе Balatro. Официальное описание",
+        "en": "The combination of poker hands, wild card rule changes and strong interactions is at the heart of Balatro. Official description"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.playbalatro.com/"],
+      "branches": [
+        {
+          "id": "family-34-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-34-01",
+              "text": {
+                "ru": "Броски кубиков с разными действиями на гранях",
+                "en": "Dice rolls with different actions on the sides"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-02",
+              "text": {
+                "ru": "Ограниченные перебросы",
+                "en": "Limited transfers"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-03",
+              "text": {
+                "ru": "Фиксация выбранных результатов",
+                "en": "Capturing selected results"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-04",
+              "text": {
+                "ru": "Изменение и замена граней",
+                "en": "Modifying and replacing faces"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-05",
+              "text": {
+                "ru": "Распределение результатов между действиями",
+                "en": "Distribution of results between actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-06",
+              "text": {
+                "ru": "Сбор покерных и других комбинаций",
+                "en": "Collecting poker and other combinations"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-07",
+              "text": {
+                "ru": "Ограниченное число попыток набора очков",
+                "en": "Limited number of scoring attempts"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-08",
+              "text": {
+                "ru": "Сброс части руки ради новой комбинации",
+                "en": "Discarding part of your hand for a new combination"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-09",
+              "text": {
+                "ru": "Базовые очки и множители",
+                "en": "Base points and multipliers"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-10",
+              "text": {
+                "ru": "Зависимость результата от порядка применения бонусов",
+                "en": "Dependence of the result on the order of application of bonuses"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-11",
+              "text": {
+                "ru": "Повторное засчитывание элемента комбинации",
+                "en": "Re-scoring of a combination element"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-12",
+              "text": {
+                "ru": "Модификаторы отдельных карт, символов или костей",
+                "en": "Modifiers for individual cards, symbols or dice"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-13",
+              "text": {
+                "ru": "Изменение правил допустимых комбинаций",
+                "en": "Changing the rules for valid combinations"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-14",
+              "text": {
+                "ru": "Порог очков для прохождения этапа",
+                "en": "Point threshold for passing the stage"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-15",
+              "text": {
+                "ru": "Особое ограничение босса на способ набора очков",
+                "en": "Special boss restriction on the way to score points"
+              }
+            },
+            {
+              "id": "variant-roguelike-34-16",
+              "text": {
+                "ru": "Пропуск этапа ради отдельной награды",
+                "en": "Skip a stage for a separate reward"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-35",
+      "section": "section-1",
+      "title": {
+        "ru": "Автобаттлеры и игры на выживание против волн",
+        "en": "Auto-battlers and wave survival games"
+      },
+      "description": {
+        "ru": "Автоматические действия и последовательные волны смещают выбор игрока к движению, подготовке и развитию сборки.",
+        "en": "Automatic actions and sequential waves shift the player's choice towards movement, preparation and development of the build."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-35-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-35-01",
+              "text": {
+                "ru": "Автоматическое выполнение атак",
+                "en": "Automatic execution of attacks"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-02",
+              "text": {
+                "ru": "Косвенное управление боем через перемещение",
+                "en": "Indirect combat control through movement"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-03",
+              "text": {
+                "ru": "Периодическое появление волн противников",
+                "en": "Periodic appearance of waves of enemies"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-04",
+              "text": {
+                "ru": "Нарастание плотности и силы волн",
+                "en": "Increase in wave density and strength"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-05",
+              "text": {
+                "ru": "Сбор выпавшего опыта на поле",
+                "en": "Collecting dropped experience on the field"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-06",
+              "text": {
+                "ru": "Повышение уровня с остановкой боя для выбора улучшения",
+                "en": "Leveling up and stopping combat to select an upgrade"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-07",
+              "text": {
+                "ru": "Несколько одновременно действующих видов оружия",
+                "en": "Multiple simultaneous weapons"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-08",
+              "text": {
+                "ru": "Эволюция оружия через сочетание улучшений",
+                "en": "Weapon evolution through a combination of upgrades"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-09",
+              "text": {
+                "ru": "Автоматическое применение подготовленной сборки",
+                "en": "Automatically apply a prepared build"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-10",
+              "text": {
+                "ru": "Расстановка бойцов перед автоматическим боем",
+                "en": "Arrangement of fighters before automatic battle"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-11",
+              "text": {
+                "ru": "Покупка, продажа и объединение бойцов",
+                "en": "Buying, selling and uniting fighters"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-12",
+              "text": {
+                "ru": "Бонусы за количество бойцов одной категории",
+                "en": "Bonuses for the number of fighters of the same category"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-13",
+              "text": {
+                "ru": "Настройка приоритетов целей или поведения",
+                "en": "Prioritize goals or behaviors"
+              }
+            },
+            {
+              "id": "variant-roguelike-35-14",
+              "text": {
+                "ru": "Решения между волнами при ограниченном бюджете",
+                "en": "Solutions between waves on a limited budget"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-36",
+      "section": "section-1",
+      "title": {
+        "ru": "Управление кораблем, базой или поселением",
+        "en": "Managing a ship, base or settlement"
+      },
+      "description": {
+        "ru": "В FTL управление экипажем, энергоснабжением, целями оружия и абордажем соединено с паузой, случайными событиями и необратимым поражением. Описание Subset Games",
+        "en": "In FTL, control of the crew, power supply, weapon targets and boarding is coupled with pause, random events and permanent defeat. Description of Subset Games"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/"
+      ],
+      "branches": [
+        {
+          "id": "family-36-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-36-01",
+              "text": {
+                "ru": "Общий носитель сборки: корабль, поезд, крепость, поселение",
+                "en": "Common build media: ship, train, fortress, settlement"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-02",
+              "text": {
+                "ru": "Установка модулей и систем",
+                "en": "Installation of modules and systems"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-03",
+              "text": {
+                "ru": "Ограниченное пространство для размещения",
+                "en": "Limited space for placement"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-04",
+              "text": {
+                "ru": "Распределение энергии между системами",
+                "en": "Distribution of energy between systems"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-05",
+              "text": {
+                "ru": "Назначение экипажа на рабочие места",
+                "en": "Assigning crew to work stations"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-06",
+              "text": {
+                "ru": "Повреждение отдельных помещений и модулей",
+                "en": "Damage to individual rooms and modules"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-07",
+              "text": {
+                "ru": "Аварии, пожары и разгерметизация",
+                "en": "Accidents, fires and depressurization"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-08",
+              "text": {
+                "ru": "Ремонт во время боя",
+                "en": "Repairs during battle"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-09",
+              "text": {
+                "ru": "Абордаж и защита от вторжения",
+                "en": "Boarding and protection against invasion"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-10",
+              "text": {
+                "ru": "Производственные цепочки",
+                "en": "Production chains"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-11",
+              "text": {
+                "ru": "Случайные чертежи и варианты построек",
+                "en": "Random blueprints and building options"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-12",
+              "text": {
+                "ru": "Обеспечение потребностей населения",
+                "en": "Meeting the needs of the population"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-13",
+              "text": {
+                "ru": "Выполнение заказов ради развития и победы",
+                "en": "Fulfilling orders for development and victory"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-14",
+              "text": {
+                "ru": "Истощение территории и необходимость завершить экспедицию",
+                "en": "Depletion of territory and the need to complete the expedition"
+              }
+            },
+            {
+              "id": "variant-roguelike-36-15",
+              "text": {
+                "ru": "Сохранение стратегического развития между отдельными поселениями или походами",
+                "en": "Maintaining strategic development between individual settlements or campaigns"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-37",
+      "section": "section-1",
+      "title": {
+        "ru": "Другие жанровые гибриды",
+        "en": "Other genre hybrids"
+      },
+      "description": {
+        "ru": "Системы других жанров меняют форму забега и критерии решений, сохраняя повторяемую структуру попыток.",
+        "en": "Systems in other genres change the shape of the run and the decision criteria, while maintaining a repeatable structure of attempts."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-37-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-37-01",
+              "text": {
+                "ru": "Платформенные испытания: точность прыжков внутри изменяемых уровней",
+                "en": "Platform Challenges: Jumping Accuracy Within Variable Levels"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-02",
+              "text": {
+                "ru": "Метроидвания: способности открывают ранее недоступные области",
+                "en": "Metroidvania: Abilities open previously inaccessible areas"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-03",
+              "text": {
+                "ru": "Ритмические действия: успешность зависит от попадания в такт",
+                "en": "Rhythmic actions: success depends on getting to the beat"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-04",
+              "text": {
+                "ru": "Пинбол: управление траекторией шара вместо прямой атаки",
+                "en": "Pinball: Controlling the trajectory of the ball instead of attacking directly"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-05",
+              "text": {
+                "ru": "Прицеливание и отскоки физических объектов",
+                "en": "Aiming and bouncing physical objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-06",
+              "text": {
+                "ru": "Матчинг: сбор сочетаний на игровом поле запускает действия",
+                "en": "Matching: collecting combinations on the playing field triggers actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-07",
+              "text": {
+                "ru": "Размещение тайлов: игрок сам формирует маршрут или окружение",
+                "en": "Placement of tiles: the player himself creates the route or environment"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-08",
+              "text": {
+                "ru": "Перестройка правил поля: изменение клеток и их взаимодействий",
+                "en": "Rebuilding the rules of the field: changing cells and their interactions"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-09",
+              "text": {
+                "ru": "Построение башен и линий обороны",
+                "en": "Building towers and defense lines"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-10",
+              "text": {
+                "ru": "Защита движущейся или стационарной цели",
+                "en": "Protection of a moving or stationary target"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-11",
+              "text": {
+                "ru": "Выбор и программирование поведения автоматических агентов",
+                "en": "Selecting and programming the behavior of automated agents"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-12",
+              "text": {
+                "ru": "Управление транспортом с инерцией и повреждаемыми частями",
+                "en": "Controlling vehicles with inertia and damaged parts"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-13",
+              "text": {
+                "ru": "Разведение и объединение существ во время попытки",
+                "en": "Breeding and combining creatures during an attempt"
+              }
+            },
+            {
+              "id": "variant-roguelike-37-14",
+              "text": {
+                "ru": "Создание производящей очки системы вместо прямого боя",
+                "en": "Creating a point-producing system instead of direct combat"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-38",
+      "section": "section-1",
+      "title": {
+        "ru": "Кооперативные и соревновательные системы",
+        "en": "Cooperative and competitive systems"
+      },
+      "description": {
+        "ru": "Участники распределяют роли, ресурсы и риски либо сравнивают результаты по общим правилам.",
+        "en": "Participants distribute roles, resources and risks or compare results according to general rules."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-38-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-38-01",
+              "text": {
+                "ru": "Совместное прохождение одного забега",
+                "en": "Completing one run together"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-02",
+              "text": {
+                "ru": "Общий или раздельный запас жизней",
+                "en": "Shared or split lives"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-03",
+              "text": {
+                "ru": "Поднятие погибшего союзника",
+                "en": "Raising a fallen ally"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-04",
+              "text": {
+                "ru": "Передача предметов и ресурсов",
+                "en": "Transfer of items and resources"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-05",
+              "text": {
+                "ru": "Распределение ограниченной добычи",
+                "en": "Distribution of limited production"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-06",
+              "text": {
+                "ru": "Дополняющие друг друга роли",
+                "en": "Complementary roles"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-07",
+              "text": {
+                "ru": "Совместные способности и комбинированные действия",
+                "en": "Joint abilities and combined actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-08",
+              "text": {
+                "ru": "Согласованный выбор маршрута и награды",
+                "en": "Consistent choice of route and reward"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-09",
+              "text": {
+                "ru": "Масштабирование встреч по числу игроков",
+                "en": "Scaling meetings by number of players"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-10",
+              "text": {
+                "ru": "Возможность навредить союзнику",
+                "en": "Possibility of harming an ally"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-11",
+              "text": {
+                "ru": "Гонка на одинаковом начальном состоянии",
+                "en": "Race at the same initial state"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-12",
+              "text": {
+                "ru": "Асинхронное сравнение результатов забегов",
+                "en": "Asynchronous comparison of run results"
+              }
+            },
+            {
+              "id": "variant-roguelike-38-13",
+              "text": {
+                "ru": "Противостояние сборок, созданных в отдельных попытках",
+                "en": "Confrontation of assemblies created in separate attempts"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-39",
+      "section": "section-1",
+      "title": {
+        "ru": "Сложность, испытания и результат",
+        "en": "Difficulty, challenges and results"
+      },
+      "description": {
+        "ru": "Модификаторы, ограничения и подсчёт результата создают дополнительные цели поверх обычного завершения забега.",
+        "en": "Modifiers, restrictions and scoring create additional goals on top of the normal completion of the run."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-39-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-39-01",
+              "text": {
+                "ru": "Последовательные уровни повышенной сложности",
+                "en": "Consecutive levels of increased difficulty"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-02",
+              "text": {
+                "ru": "Выбираемые осложнения перед стартом",
+                "en": "Selectable complications before the start"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-03",
+              "text": {
+                "ru": "Бюджет сложности: игрок набирает нужную сумму штрафов",
+                "en": "Difficulty budget: the player reaches the required amount of penalties"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-04",
+              "text": {
+                "ru": "Усиление противников после побед",
+                "en": "Strengthening opponents after victories"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-05",
+              "text": {
+                "ru": "Новые правила на высоких уровнях сложности",
+                "en": "New rules at higher difficulty levels"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-06",
+              "text": {
+                "ru": "Ежедневное испытание с общими условиями",
+                "en": "Daily test with general conditions"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-07",
+              "text": {
+                "ru": "Забег по заданному seed",
+                "en": "run according to a given seed"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-08",
+              "text": {
+                "ru": "Случайный набор обязательных модификаторов",
+                "en": "Random set of required modifiers"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-09",
+              "text": {
+                "ru": "Испытания конкретного персонажа или оружия",
+                "en": "Testing a specific character or weapon"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-10",
+              "text": {
+                "ru": "Прохождение без отдельных типов действий",
+                "en": "Walkthrough without individual types of actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-11",
+              "text": {
+                "ru": "Учет добровольно соблюденных ограничений",
+                "en": "Accounting for voluntarily observed restrictions"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-12",
+              "text": {
+                "ru": "Очки за скорость, добычу и выполненные задачи",
+                "en": "Points for speed, loot and completed objectives"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-13",
+              "text": {
+                "ru": "Множитель за серию успешных действий",
+                "en": "Multiplier for a series of successful actions"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-14",
+              "text": {
+                "ru": "Штраф к результату за полученный урон или потери",
+                "en": "Result penalty for damage or losses received"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-15",
+              "text": {
+                "ru": "Серия побед без поражений",
+                "en": "Streak of victories without defeats"
+              }
+            },
+            {
+              "id": "variant-roguelike-39-16",
+              "text": {
+                "ru": "Отдельные условия для рекорда и обычной победы",
+                "en": "Separate conditions for record and regular victory"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-40",
+      "section": "section-1",
+      "title": {
+        "ru": "Характерные механики классических roguelike, которые часто упускают",
+        "en": "Characteristic mechanics of classic roguelikes that are often overlooked"
+      },
+      "description": {
+        "ru": "Многие из этих взаимодействий документированы в NetHack, включая питомцев, останки прошлых персонажей, пищу и добровольные ограничения поведения. Руководство NetHack",
+        "en": "Many of these interactions are documented in NetHack, including pets, remains of past characters, food, and voluntary behavior restrictions. NetHack Guide"
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.nethack.org/v367/Guidebook.html"],
+      "branches": [
+        {
+          "id": "family-40-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-roguelike-40-01",
+              "text": {
+                "ru": "Поедание тел существ с последствиями для персонажа",
+                "en": "Eating the bodies of creatures with consequences for the character"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-02",
+              "text": {
+                "ru": "Получение устойчивостей и других свойств через пищу",
+                "en": "Obtaining resistances and other properties through food"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-03",
+              "text": {
+                "ru": "Пищевые запреты и ограничения поведения",
+                "en": "Food prohibitions and behavioral restrictions"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-04",
+              "text": {
+                "ru": "Превращение персонажа или противника в другое существо",
+                "en": "Transforming a character or enemy into another creature"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-05",
+              "text": {
+                "ru": "Превращение предметов в другие предметы",
+                "en": "Transforming objects into other objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-06",
+              "text": {
+                "ru": "Желание: получение предмета через особое редкое действие",
+                "en": "Desire: Obtaining an item through a special rare action"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-07",
+              "text": {
+                "ru": "Истребление вида: устранение определенного типа существ из мира",
+                "en": "Species Extermination: Eliminating a specific type of creature from the world"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-08",
+              "text": {
+                "ru": "Кража и использование противниками вещей игрока",
+                "en": "Theft and use of player items by opponents"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-09",
+              "text": {
+                "ru": "Подбор монстрами лежащего на земле снаряжения",
+                "en": "Monsters picking up equipment lying on the ground"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-10",
+              "text": {
+                "ru": "Приручение и кормление животных",
+                "en": "Taming and feeding animals"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-11",
+              "text": {
+                "ru": "Использование питомца для проверки свойств предметов",
+                "en": "Using a pet to test item properties"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-12",
+              "text": {
+                "ru": "Особые взаимодействия с алтарями, фонтанами, могилами и другими объектами",
+                "en": "Special interactions with altars, fountains, graves and other objects"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-13",
+              "text": {
+                "ru": "Надписи на поверхности с игровым действием",
+                "en": "Inscriptions on the surface with playful action"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-14",
+              "text": {
+                "ru": "Снятие уровней и постоянное повреждение характеристик",
+                "en": "Removal of levels and permanent damage to characteristics"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-15",
+              "text": {
+                "ru": "Отложенные смертельные состояния, требующие конкретного спасения",
+                "en": "Deferred fatal conditions requiring specific rescue"
+              }
+            },
+            {
+              "id": "variant-roguelike-40-16",
+              "text": {
+                "ru": "Сохранение тел, вещей и опасностей предыдущего погибшего героя в новом прохождении",
+                "en": "Preservation of bodies, things and dangers of the previous deceased hero in a new playthrough"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Berlin Interpretation",
+        "en": "Berlin Interpretation"
+      },
+      "url": "https://roguebasin.com/index.php?title=Berlin_Interpretation",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание разработчиков",
+        "en": "Description of the developers"
+      },
+      "url": "https://noitagame.com/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Официальное руководство",
+        "en": "Official Guide"
+      },
+      "url": "https://www.nethack.org/v367/Guidebook.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Mega Crit",
+        "en": "Description of Mega Crit"
+      },
+      "url": "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Официальное описание",
+        "en": "Official description"
+      },
+      "url": "https://www.playbalatro.com/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Subset Games",
+        "en": "Description of Subset Games"
+      },
+      "url": "https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

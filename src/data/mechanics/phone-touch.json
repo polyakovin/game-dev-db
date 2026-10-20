@@ -1,0 +1,1637 @@
+{
+  "id": "phone-touch",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Сенсорный экран телефона",
+    "en": "Phone touchscreen interactions"
+  },
+  "description": {
+    "ru": "Сенсорный экран телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone touch screen: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Касания и выбор",
+        "en": "Taps and selection"
+      },
+      "description": {
+        "ru": "Короткий контакт выбирает объект, позицию или команду; правило определяет момент активации и возможность отмены.",
+        "en": "Short contact selects an object, position or command; the rule determines the moment of activation and the possibility of cancellation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t001",
+              "text": {
+                "ru": "Активация. Тип: Касание. Пальцы: 1. Правило: Короткое касание вызывает одно действие. Применение: Нажать кнопку, прыгнуть, открыть дверь, ударить.",
+                "en": "Activation. Type: Touch. Fingers: 1. Rule: A short touch causes one action. Application: Press a button, jump, open a door, hit."
+              }
+            },
+            {
+              "id": "variant-t002",
+              "text": {
+                "ru": "Выбор объекта. Тип: Касание. Пальцы: 1. Правило: Касание делает объект текущим, следующее действие применяется к нему. Применение: Выбирать юнитов, предметы, улики или варианты ответа.",
+                "en": "Selecting an object. Type: Touch. Fingers: 1. Rule: Touching makes the object current, the next action is applied to it. Application: Select units, objects, evidence or answer options."
+              }
+            },
+            {
+              "id": "variant-t003",
+              "text": {
+                "ru": "Указание места. Тип: Касание. Пальцы: 1. Правило: Координаты касания становятся целью движения или размещения. Применение: Отправить героя в точку, поставить башню или маркер.",
+                "en": "Indication of location. Type: Touch. Fingers: 1. Rule: Touch coordinates become the target of movement or placement. Application: Send the hero to a point, place a tower or marker."
+              }
+            },
+            {
+              "id": "variant-t004",
+              "text": {
+                "ru": "Прицельное касание. Тип: Касание. Пальцы: 1. Правило: Успех зависит от попадания в конкретную область объекта. Применение: Попасть в уязвимость, найти скрытый предмет, сыграть нужную ноту.",
+                "en": "Aiming touch. Type: Touch. Fingers: 1. Rule: Success depends on hitting a specific area of ​​the object. Application: Get into a vulnerability, find a hidden object, play the right note."
+              }
+            },
+            {
+              "id": "variant-t005",
+              "text": {
+                "ru": "Создание в точке. Тип: Касание. Пальцы: 1. Правило: Касание порождает объект или событие в выбранных координатах. Применение: Посадить растение, поставить узел маршрута, вызвать всплеск.",
+                "en": "Creation on point. Type: Touch. Fingers: 1. Rule: Touching creates an object or event at the selected coordinates. Application: Plant a plant, place a route node, cause a splash."
+              }
+            },
+            {
+              "id": "variant-t006",
+              "text": {
+                "ru": "Переключение состояния. Тип: Касание. Пальцы: 1. Правило: Каждое касание меняет состояние по циклу. Применение: Переключать рельсы, полярность, цвет, стойку или направление гравитации.",
+                "en": "Switching state. Type: Touch. Fingers: 1. Rule: Each touch changes the state in a cycle. Application: Switch rails, polarity, color, stance or direction of gravity."
+              }
+            },
+            {
+              "id": "variant-t007",
+              "text": {
+                "ru": "Контекстное действие. Тип: Касание. Пальцы: 1. Правило: Один жест вызывает разное действие в зависимости от объекта и состояния мира. Применение: Коснуться двери для открытия, союзника для лечения, костра для отдыха.",
+                "en": "Contextual action. Type: Touch. Fingers: 1. Rule: One gesture causes a different action depending on the object and the state of the world. Application: Touch a door to open, an ally to heal, a fire to rest."
+              }
+            },
+            {
+              "id": "variant-t008",
+              "text": {
+                "ru": "Двойное касание. Тип: Касание. Пальцы: 1. Правило: Два касания в заданном временном и пространственном допуске образуют команду. Применение: Рывок, быстрый выбор группы, приближение объекта. Нужна ясная граница с одиночным касанием.",
+                "en": "Double tap. Type: Touch. Fingers: 1. Rule: Two touches within a given time and space tolerance form a command. Application: Dash, quick group selection, approaching an object. Need a clear border with a single touch..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Удержание и отпускание",
+        "en": "Hold and release"
+      },
+      "description": {
+        "ru": "Состояние удержания, его длительность и отпускание задают временный режим, заряд или завершение действия.",
+        "en": "The holding state, its duration and release determine the temporary mode, charge or completion of the action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t009",
+              "text": {
+                "ru": "Действие на время контакта. Тип: Касание. Пальцы: 1. Правило: Действие работает, пока палец касается активной зоны. Применение: Стрельба, щит, газ, полив, распыление краски.",
+                "en": "Action for the duration of contact. Type: Touch. Fingers: 1. Rule: The action works as long as the finger touches the active zone. Application: Shooting, shield, gas, watering, spraying paint."
+              }
+            },
+            {
+              "id": "variant-t010",
+              "text": {
+                "ru": "Заряд и выпуск. Тип: Касание. Пальцы: 1. Правило: Удержание накапливает заряд, отпускание запускает действие. Применение: Зарядить выстрел, метнуть предмет, выполнить сильный прыжок.",
+                "en": "Charge and release. Type: Touch. Fingers: 1. Rule: Holding accumulates charge, releasing triggers the action. Application: Charge a shot, throw an object, perform a strong jump."
+              }
+            },
+            {
+              "id": "variant-t011",
+              "text": {
+                "ru": "Длительность как параметр. Тип: Касание. Пальцы: 1. Правило: Время удержания задаёт величину результата. Применение: Отмерить порцию жидкости, длину фитиля, высоту прыжка или длительность звука.",
+                "en": "Duration as a parameter. Type: Touch. Fingers: 1. Rule: The holding time sets the magnitude of the result. Application: Measure a portion of liquid, the length of the wick, the height of the jump or the duration of the sound."
+              }
+            },
+            {
+              "id": "variant-t012",
+              "text": {
+                "ru": "Стабилизация удержанием. Тип: Касание. Пальцы: 1. Правило: Контакт постепенно уменьшает разброс или колебания. Применение: Успокоить прицел, сфокусировать линзу, подготовить точный инструмент.",
+                "en": "Stabilization by holding. Type: Touch. Fingers: 1. Rule: Contact gradually reduces spread or oscillation. Application: Calm the scope, focus the lens, prepare a precision instrument."
+              }
+            },
+            {
+              "id": "variant-t013",
+              "text": {
+                "ru": "Удержание меняет ход времени. Тип: Касание. Пальцы: 1. Правило: Мир замедляется, останавливается или ускоряется только при контакте. Применение: Планировать траекторию между опасностями или вручную продвигать симуляцию.",
+                "en": "Holding changes the passage of time. Type: Touch. Fingers: 1. Rule: The world slows down, stops or speeds up only on contact. Application: Plan a trajectory between hazards or manually advance the simulation."
+              }
+            },
+            {
+              "id": "variant-t014",
+              "text": {
+                "ru": "Удержание с риском. Тип: Касание. Пальцы: 1. Правило: Польза растёт вместе с опасностью, игрок решает, когда отпустить. Применение: Не перегреть бур, не переполнить сосуд, не оборвать леску.",
+                "en": "Holding at risk. Type: Touch. Fingers: 1. Rule: The benefit grows with the danger, the player decides when to let go. Application: Do not overheat the drill, do not overfill the vessel, do not break the fishing line."
+              }
+            },
+            {
+              "id": "variant-t015",
+              "text": {
+                "ru": "Поддержание условия. Тип: Касание. Пальцы: 1. Правило: Пока зона нажата, удалённый объект остаётся активным. Применение: Держать дверь открытой, поддерживать мост или питание механизма.",
+                "en": "Maintaining the condition. Type: Touch. Fingers: 1. Rule: While the zone is pressed, the remote object remains active. Application: Hold a door open, support a bridge or power a mechanism."
+              }
+            },
+            {
+              "id": "variant-t016",
+              "text": {
+                "ru": "Отпускание в момент. Тип: Касание. Пальцы: 1. Правило: Результат определяется временем отрыва пальца. Применение: Остановить шкалу, поймать окно парирования, вовремя отпустить захват.",
+                "en": "Letting go in the moment. Type: Touch. Fingers: 1. Rule: The result is determined by the time the finger is lifted. Application: Stop the scale, catch the parry window, release the grip in time."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Темп, ритм и последовательности",
+        "en": "Tempo, rhythm and sequences"
+      },
+      "description": {
+        "ru": "Количество и интервалы касаний образуют последовательность, ритм или проверку своевременного действия.",
+        "en": "The number and intervals of touches form a sequence, rhythm, or check for timely action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t017",
+              "text": {
+                "ru": "Попадание в ритм. Тип: Касание. Пальцы: 1+. Правило: Касание сравнивается с моментом ожидаемого события. Применение: Музыкальные ноты, отбивание атак, ритмичная работа инструмента.",
+                "en": "Getting into the rhythm. Type: Touch. Fingers: 1+. Rule: The touch is compared with the moment of the expected event. Application: Musical notes, repelling attacks, rhythmic operation of the instrument."
+              }
+            },
+            {
+              "id": "variant-t018",
+              "text": {
+                "ru": "Поддержание частоты. Тип: Касание. Пальцы: 1+. Правило: Важна стабильная частота касаний, а не максимальная скорость. Применение: Поддерживать работу двигателя, греблю, пульс заклинания.",
+                "en": "Maintain frequency. Type: Touch. Fingers: 1+. Rule: Stable touch frequency is important, not maximum speed. Application: Maintain engine running, rowing, spell pulse."
+              }
+            },
+            {
+              "id": "variant-t019",
+              "text": {
+                "ru": "Накопление серией касаний. Тип: Касание. Пальцы: 1+. Правило: Каждое корректное касание добавляет ресурс или усилие. Применение: Накачивать насос, выбираться из захвата, разгонять маховик.",
+                "en": "Accumulation by a series of touches. Type: Touch. Fingers: 1+. Rule: Each correct touch adds resource or effort. Application: Inflate the pump, get out of the grip, accelerate the flywheel."
+              }
+            },
+            {
+              "id": "variant-t020",
+              "text": {
+                "ru": "Чередование зон. Тип: Касание. Пальцы: 1+. Правило: Засчитываются только попеременные касания двух или нескольких областей. Применение: Бег, плавание, игра на барабанах, ручной привод.",
+                "en": "Alternation of zones. Type: Touch. Fingers: 1+. Rule: Only alternating touches of two or more areas are counted. Application: Running, swimming, drumming, hand drive."
+              }
+            },
+            {
+              "id": "variant-t021",
+              "text": {
+                "ru": "Последовательность целей. Тип: Касание. Пальцы: 1+. Правило: Нужно коснуться объектов в определённом порядке. Применение: Повторить код, сыграть мелодию, активировать цепь рун.",
+                "en": "Sequence of goals. Type: Touch. Fingers: 1+. Rule: You need to touch objects in a certain order. Application: Repeat the code, play a melody, activate a chain of runes."
+              }
+            },
+            {
+              "id": "variant-t022",
+              "text": {
+                "ru": "Код коротких и длинных контактов. Тип: Касание. Пальцы: 1+. Правило: Значение задаётся сочетанием длительностей и пауз. Применение: Передать сигнал, взломать терминал, общаться с персонажем кодом.",
+                "en": "Code of short and long contacts. Type: Touch. Fingers: 1+. Rule: The value is set by a combination of durations and pauses. Application: Transmit a signal, hack a terminal, communicate with a character using a code."
+              }
+            },
+            {
+              "id": "variant-t023",
+              "text": {
+                "ru": "Синхронный аккорд. Тип: multi. Пальцы: 2+. Правило: Несколько контактов должны начаться в пределах одного временного окна. Применение: Нажать несколько плит, сыграть аккорд, синхронизировать замки. Нужен multi-touch.",
+                "en": "Synchronized chord. Type: multi. Fingers: 2+. Rule: Multiple contacts must start within the same time window. Application: Press multiple plates, play a chord, synchronize locks. Need multi-touch."
+              }
+            },
+            {
+              "id": "variant-t024",
+              "text": {
+                "ru": "Ритм отпусканий. Тип: Касание. Пальцы: 1+. Правило: Сравниваются моменты завершения удержаний или интервалы между ними. Применение: Снять пальцы с нескольких клавиш по очереди, исполнить ноту с нужной длительностью.",
+                "en": "The rhythm of letting go. Type: Touch. Fingers: 1+. Rule: The moments of completion of holds or the intervals between them are compared. Application: Remove your fingers from several keys in turn, play a note with the required duration."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Перетаскивание и размещение",
+        "en": "Dragging and placement"
+      },
+      "description": {
+        "ru": "Движение захваченного контакта переносит объект или задаёт его положение, а отпускание определяет результат размещения.",
+        "en": "Moving the captured pin moves the object or sets its position, and releasing it determines the placement result."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t025",
+              "text": {
+                "ru": "Прямое перемещение. Тип: Касание. Пальцы: 1. Правило: Объект следует за пальцем с сохранением точки захвата. Применение: Двигать фигурку, мебель, деталь механизма, элемент инвентаря.",
+                "en": "Direct movement. Type: Touch. Fingers: 1. Rule: The object follows the finger while maintaining the grip point. Application: Move a figurine, furniture, mechanism part, inventory item."
+              }
+            },
+            {
+              "id": "variant-t026",
+              "text": {
+                "ru": "Укладка по сетке. Тип: Касание. Пальцы: 1. Правило: Позиция после отпускания округляется до допустимой клетки. Применение: Тетрисоподобная укладка, расстановка построек, организация рюкзака.",
+                "en": "Laying on the grid. Type: Touch. Fingers: 1. Rule: The position after releasing is rounded to a valid square. Application: Tetris-like laying, arrangement of buildings, backpack organization."
+              }
+            },
+            {
+              "id": "variant-t027",
+              "text": {
+                "ru": "Совмещение с целью. Тип: Касание. Пальцы: 1. Правило: Перенос засчитывается при достаточном совпадении контуров или точек. Применение: Собрать пазл, вставить ключ, совместить прозрачные схемы.",
+                "en": "Alignment with purpose. Type: Touch. Fingers: 1. Rule: The transfer is counted when the contours or points coincide sufficiently. Application: Assemble a puzzle, insert a key, combine transparent diagrams."
+              }
+            },
+            {
+              "id": "variant-t028",
+              "text": {
+                "ru": "Обмен позициями. Тип: Касание. Пальцы: 1. Правило: Перенос на занятое место меняет объекты местами. Применение: Головоломки с фишками, перестановка экипировки, составление комбинаций.",
+                "en": "Exchange of positions. Type: Touch. Fingers: 1. Rule: Carrying to an occupied place changes objects in places. Application: Puzzles with chips, rearranging equipment, making combinations."
+              }
+            },
+            {
+              "id": "variant-t029",
+              "text": {
+                "ru": "Сортировка вставкой. Тип: Касание. Пальцы: 1. Правило: Место отпускания задаёт новую позицию в последовательности. Применение: Выстроить очередь команд, восстановить хронологию, упорядочить карточки.",
+                "en": "Insertion sort. Type: Touch. Fingers: 1. Rule: The release location sets a new position in the sequence. Application: Line up commands, restore chronology, organize cards."
+              }
+            },
+            {
+              "id": "variant-t030",
+              "text": {
+                "ru": "Применение предмета переносом. Тип: Касание. Пальцы: 1. Правило: Контакт перенесённого предмета с целью вызывает взаимодействие. Применение: Объединить ингредиенты, накормить персонажа, применить инструмент к улике.",
+                "en": "Using an item by transfer. Type: Touch. Fingers: 1. Rule: Contact of the carried item with the target causes interaction. Application: Combine ingredients, feed the character, apply the tool to the evidence."
+              }
+            },
+            {
+              "id": "variant-t031",
+              "text": {
+                "ru": "Доставка с сохранением груза. Тип: Касание. Пальцы: 1. Правило: Игрок переносит объект через пространство с препятствиями. Применение: Провести хрупкий груз, донести искру, перенести жидкость с ограничением резких движений.",
+                "en": "Delivery with preservation of cargo. Type: Touch. Fingers: 1. Rule: The player carries an object through space with obstacles. Application: Carry a fragile load, bring a spark, transfer liquid while limiting sudden movements."
+              }
+            },
+            {
+              "id": "variant-t032",
+              "text": {
+                "ru": "Перемещение через границу. Тип: Касание. Пальцы: 1. Правило: Событие запускается пересечением границы, а не только отпусканием. Применение: Передать предмет на конвейер, погрузить груз в портал, перетянуть карту в другую зону.",
+                "en": "Moving across the border. Type: Touch. Fingers: 1. Rule: The event is triggered by crossing the border, and not just by releasing it. Application: Transfer an item to the conveyor, load the cargo into the portal, drag the card to another zone."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Свайпы, рывки и броски",
+        "en": "Swipes, jerks and throws"
+      },
+      "description": {
+        "ru": "Быстрое направленное движение задаёт импульс, бросок или команду с учётом скорости и длины жеста.",
+        "en": "A fast directed movement sets an impulse, throw or command, taking into account the speed and length of the gesture."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t033",
+              "text": {
+                "ru": "Направленный свайп. Тип: Касание. Пальцы: 1. Правило: Направление достаточно длинного движения выбирает команду. Применение: Повернуть, сменить полосу, уклониться, выбрать направление удара.",
+                "en": "Directional swipe. Type: Touch. Fingers: 1. Rule: The direction of a sufficiently long movement selects the command. Application: Turn, change lane, dodge, choose the direction of the strike."
+              }
+            },
+            {
+              "id": "variant-t034",
+              "text": {
+                "ru": "Длина свайпа как сила. Тип: Касание. Пальцы: 1. Правило: Величина перемещения пальца задаёт мощность действия. Применение: Дальность прыжка, длина шага, сила толчка. Это программная шкала, не измерение нажима.",
+                "en": "Swipe length is like strength. Type: Touch. Fingers: 1. Rule: The amount of movement of the finger sets the power of the action. Application: Jump distance, step length, push force. This is a software scale, not a pressure measurement."
+              }
+            },
+            {
+              "id": "variant-t035",
+              "text": {
+                "ru": "Скорость свайпа как сила. Тип: Касание. Пальцы: 1. Правило: Сила действия зависит от скорости движения пальца. Применение: Бросок мяча, удар клюшкой, запуск камня.",
+                "en": "Swipe speed is like power. Type: Touch. Fingers: 1. Rule: The force of action depends on the speed of movement of the finger. Application: Throwing a ball, hitting a club, launching a stone."
+              }
+            },
+            {
+              "id": "variant-t036",
+              "text": {
+                "ru": "Инерционный бросок. Тип: Касание. Пальцы: 1. Правило: После отпускания объект продолжает движение с вычисленной скоростью. Применение: Фликнуть шайбу, сдвинуть фишку, закрутить свободный список или игровую ленту.",
+                "en": "Inertial throw. Type: Touch. Fingers: 1. Rule: After release, the object continues to move at the calculated speed. Application: Flick the puck, move the chip, spin the free list or game tape."
+              }
+            },
+            {
+              "id": "variant-t037",
+              "text": {
+                "ru": "Удар по пересечённым целям. Тип: Касание. Пальцы: 1. Правило: Одно быстрое движение воздействует на все пересечённые объекты. Применение: Разрубить летящие цели, отбить несколько снарядов, провести размашистую атаку.",
+                "en": "Hit crossed targets. Type: Touch. Fingers: 1. Rule: One quick movement affects all crossed objects. Application: Chop flying targets, deflect several projectiles, carry out a sweeping attack."
+              }
+            },
+            {
+              "id": "variant-t038",
+              "text": {
+                "ru": "Оттягивание и отпускание. Тип: Касание. Пальцы: 1. Правило: Смещение от исходной точки задаёт вектор натяжения, отпускание запускает объект. Применение: Рогатка, лук, пружина, катапульта.",
+                "en": "Pulling and releasing. Type: Touch. Fingers: 1. Rule: The displacement from the starting point sets the tension vector, releasing it launches the object. Application: Slingshot, bow, spring, catapult."
+              }
+            },
+            {
+              "id": "variant-t039",
+              "text": {
+                "ru": "Придание вращения. Тип: Касание. Пальцы: 1. Правило: Касательное движение преобразуется в угловой импульс. Применение: Раскрутить волчок, колесо, диск, придать мячу закрутку.",
+                "en": "Adding rotation. Type: Touch. Fingers: 1. Rule: Tangential movement is converted into angular impulse. Application: Spin the top, wheel, disk, give the ball a spin."
+              }
+            },
+            {
+              "id": "variant-t040",
+              "text": {
+                "ru": "Свайп как решение. Тип: Касание. Пальцы: 1. Правило: Перемещение объекта в один из секторов выбирает исход. Применение: Принять или отклонить предложение, разложить находки, выбрать вариант диалога.",
+                "en": "Swipe as a solution. Type: Touch. Fingers: 1. Rule: Moving an object to one of the sectors selects the outcome. Application: Accept or reject an offer, arrange findings, select a dialogue option."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Рисование и геометрия пути",
+        "en": "Drawing and Path Geometry"
+      },
+      "description": {
+        "ru": "След контакта становится линией, контуром, маршрутом или распознаваемой геометрической фигурой.",
+        "en": "The contact mark becomes a line, outline, route, or recognizable geometric figure."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t041",
+              "text": {
+                "ru": "Свободная линия. Тип: Касание. Пальцы: 1. Правило: Нарисованная траектория становится объектом или геометрией. Применение: Построить мост, стенку, платформу, проводник.",
+                "en": "Free line. Type: Touch. Fingers: 1. Rule: The drawn path becomes an object or geometry. Application: Build a bridge, wall, platform, conductor."
+              }
+            },
+            {
+              "id": "variant-t042",
+              "text": {
+                "ru": "Обводка образца. Тип: Касание. Пальцы: 1. Правило: Оценивается отклонение от заданного пути. Применение: Каллиграфия, хирургическая операция, точная резка, восстановление символа.",
+                "en": "Outlining the sample. Type: Touch. Fingers: 1. Rule: Deviation from a given path is assessed. Application: Calligraphy, surgery, precision cutting, character restoration."
+              }
+            },
+            {
+              "id": "variant-t043",
+              "text": {
+                "ru": "Соединение узлов. Тип: Касание. Пальцы: 1. Правило: Линия задаёт связи между дискретными объектами. Применение: Собрать электрическую цепь, провести водопровод, составить слово.",
+                "en": "Connection of nodes. Type: Touch. Fingers: 1. Rule: A line defines connections between discrete objects. Application: Assemble an electrical circuit, install a plumbing system, compose a word."
+              }
+            },
+            {
+              "id": "variant-t044",
+              "text": {
+                "ru": "Непрерывный маршрут. Тип: Касание. Пальцы: 1. Правило: Палец должен пройти от начала до конца без отрыва и нарушений. Применение: Лабиринт, обезвреживание сигнализации, проводка кабеля.",
+                "en": "Continuous route. Type: Touch. Fingers: 1. Rule: The finger must go from beginning to end without separation or disturbance. Application: Labyrinth, alarm disarming, cable wiring."
+              }
+            },
+            {
+              "id": "variant-t045",
+              "text": {
+                "ru": "Замкнутая область. Тип: Касание. Пальцы: 1. Правило: Обведённый контур определяет множество целей или площадь. Применение: Выделить отряд, захватить территорию, поймать существ в кольцо.",
+                "en": "Closed area. Type: Touch. Fingers: 1. Rule: The outlined outline defines a set of targets or an area. Application: Select a squad, capture territory, trap creatures in a ring."
+              }
+            },
+            {
+              "id": "variant-t046",
+              "text": {
+                "ru": "Распознаваемый символ. Тип: Касание. Пальцы: 1. Правило: Форма жеста сопоставляется с набором шаблонов. Применение: Начертить заклинание, подписать приказ, дать команду жестом.",
+                "en": "Recognizable symbol. Type: Touch. Fingers: 1. Rule: The shape of the gesture is compared with a set of patterns. Application: Draw a spell, sign an order, give a command with a gesture."
+              }
+            },
+            {
+              "id": "variant-t047",
+              "text": {
+                "ru": "Разрез по линии. Тип: Касание. Пальцы: 1. Правило: Путь делит материал, связь или геометрию. Применение: Перерезать верёвку, выкроить деталь, разделить порцию, вырезать отверстие.",
+                "en": "Cut along the line. Type: Touch. Fingers: 1. Rule: A path divides a material, connection or geometry. Application: Cut a rope, cut out a part, divide a portion, cut a hole."
+              }
+            },
+            {
+              "id": "variant-t048",
+              "text": {
+                "ru": "Программирование траектории. Тип: Касание. Пальцы: 1. Правило: Игра исполняет нарисованный маршрут после завершения ввода. Применение: Задать полёт дрона, обход патруля, путь доставки или движение снаряда.",
+                "en": "Trajectory programming. Type: Touch. Fingers: 1. Rule: The game executes the drawn route after the input is completed. Application: Set the drone flight, patrol detour, delivery path or projectile movement."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Работа с поверхностью",
+        "en": "Surface interactions"
+      },
+      "description": {
+        "ru": "Повторяющиеся движения изменяют участок поверхности: стирают, чистят, покрывают или раскрывают его.",
+        "en": "Repeated movements change the surface area: erase, clean, cover or reveal it."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t049",
+              "text": {
+                "ru": "Стирание верхнего слоя. Тип: Касание. Пальцы: 1. Правило: Под пальцем или кистью снимается маска и открывается содержимое. Применение: Скрести билет, очищать карту, раскрывать скрытую надпись.",
+                "en": "Erasing the top layer. Type: Touch. Fingers: 1. Rule: Under the finger or hand, the mask is removed and the contents are revealed. Application: Scratch the ticket, clear the card, reveal the hidden inscription."
+              }
+            },
+            {
+              "id": "variant-t050",
+              "text": {
+                "ru": "Удаление материала. Тип: Касание. Пальцы: 1. Правило: Движение убирает часть игрового вещества или объекта. Применение: Стереть рисунок, выкопать тоннель, расчистить завал.",
+                "en": "Removing material. Type: Touch. Fingers: 1. Rule: Movement removes part of the game substance or object. Application: Erase a drawing, dig a tunnel, clear a rubble."
+              }
+            },
+            {
+              "id": "variant-t051",
+              "text": {
+                "ru": "Нанесение слоя. Тип: Касание. Пальцы: 1. Правило: Траектория меняет цвет, покрытие или свойства поверхности. Применение: Красить, наносить защиту, покрывать землю льдом или огнём.",
+                "en": "Applying a layer. Type: Touch. Fingers: 1. Rule: The trajectory changes the color, coating or properties of the surface. Application: Paint, apply protection, cover the ground with ice or fire."
+              }
+            },
+            {
+              "id": "variant-t052",
+              "text": {
+                "ru": "Перемещение материала кистью. Тип: Касание. Пальцы: 1. Правило: Движение перераспределяет уже существующее вещество. Применение: Размазать краску, сгребать песок, двигать пену, распределять крем.",
+                "en": "Moving material with a brush. Type: Touch. Fingers: 1. Rule: Movement redistributes the already existing substance. Application: Smear paint, rake sand, move foam, distribute cream."
+              }
+            },
+            {
+              "id": "variant-t053",
+              "text": {
+                "ru": "Натирание. Тип: Касание. Пальцы: 1. Правило: Повторные проходы накапливают эффект в области. Применение: Разогреть предмет трением, отполировать камень, стереть ржавчину.",
+                "en": "Rubbing. Type: Touch. Fingers: 1. Rule: Repeated passes accumulate the effect in the area. Application: Warm up the object by friction, polish the stone, remove rust."
+              }
+            },
+            {
+              "id": "variant-t054",
+              "text": {
+                "ru": "Направленная обработка. Тип: Касание. Пальцы: 1. Правило: Засчитываются проходы с нужным направлением или скоростью. Применение: Чистить вдоль волокон, расчёсывать, точить лезвие, разглаживать складки.",
+                "en": "Directed processing. Type: Touch. Fingers: 1. Rule: Passes with the required direction or speed are counted. Application: Clean along the grain, comb, sharpen the blade, smooth out folds."
+              }
+            },
+            {
+              "id": "variant-t055",
+              "text": {
+                "ru": "Круговое перемешивание. Тип: Касание. Пальцы: 1. Правило: Обороты и направление движения меняют состояние смеси. Применение: Размешать зелье, намотать нить, запустить ручную центрифугу.",
+                "en": "Circular mixing. Type: Touch. Fingers: 1. Rule: Revolutions and direction of movement change the state of the mixture. Application: Stir the potion, wind the thread, run a hand centrifuge."
+              }
+            },
+            {
+              "id": "variant-t056",
+              "text": {
+                "ru": "Возвратно-поступательная работа. Тип: Касание. Пальцы: 1. Правило: Засчитываются полные ходы между контрольными положениями. Применение: Пилить, качать меха, пользоваться напильником, приводить насос.",
+                "en": "Reciprocating work. Type: Touch. Fingers: 1. Rule: Full strokes between control positions are counted. Application: Sawing, pumping bellows, using a file, driving a pump."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Непрерывное управление",
+        "en": "Continuous Control"
+      },
+      "description": {
+        "ru": "Текущее положение и смещение пальца непрерывно меняют направление, силу, скорость или другое игровое значение.",
+        "en": "The current position and displacement of the finger continuously changes direction, force, speed or other in-game value."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t057",
+              "text": {
+                "ru": "Фиксированный виртуальный джойстик. Тип: Касание. Пальцы: 1. Правило: Отклонение от постоянного центра задаёт направление и величину команды. Применение: Движение персонажа, управление машиной или роботом.",
+                "en": "Fixed virtual joystick. Type: Touch. Fingers: 1. Rule: Deviation from a constant center sets the direction and magnitude of the command. Application: Character movement, control of a car or robot."
+              }
+            },
+            {
+              "id": "variant-t058",
+              "text": {
+                "ru": "Плавающий джойстик. Тип: Касание. Пальцы: 1. Правило: Центр управления создаётся в точке начала контакта. Применение: Управлять одной рукой без поиска фиксированной кнопки.",
+                "en": "Floating joystick. Type: Touch. Fingers: 1. Rule: The control center is created at the point of origin of contact. Application: Control with one hand without searching for a fixed button."
+              }
+            },
+            {
+              "id": "variant-t059",
+              "text": {
+                "ru": "Относительный тачпад. Тип: Касание. Пальцы: 1. Правило: Приращение движения пальца перемещает курсор или камеру. Применение: Обзор, прицеливание, удалённое управление небольшим объектом.",
+                "en": "Relative touchpad. Type: Touch. Fingers: 1. Rule: Incremental finger movement moves the cursor or camera. Application: Review, aiming, remote control of a small object."
+              }
+            },
+            {
+              "id": "variant-t060",
+              "text": {
+                "ru": "Абсолютное следование. Тип: Касание. Пальцы: 1. Правило: Позиция пальца прямо задаёт позицию управляемой цели. Применение: Двигать ракетку, щит, корабль, источник света. Нужен видимый объект над пальцем или со смещением.",
+                "en": "Absolute compliance. Type: Touch. Fingers: 1. Rule: The position of the finger directly sets the position of the controlled target. Application: Move the racket, shield, ship, light source. Need a visible object above the finger or offset..."
+              }
+            },
+            {
+              "id": "variant-t061",
+              "text": {
+                "ru": "Одномерный ползунок. Тип: Касание. Пальцы: 1. Правило: Одна координата задаёт непрерывный параметр. Применение: Газ, громкость инструмента, глубина, высота, мощность.",
+                "en": "One-dimensional slider. Type: Touch. Fingers: 1. Rule: One coordinate specifies a continuous parameter. Application: Gas, instrument volume, depth, height, power."
+              }
+            },
+            {
+              "id": "variant-t062",
+              "text": {
+                "ru": "Двухмерная панель XY. Тип: Касание. Пальцы: 1. Правило: Две координаты независимо меняют два параметра. Применение: Высота и тембр звука, два компонента смеси, азимут и дальность.",
+                "en": "2D XY panel. Type: Touch. Fingers: 1. Rule: Two coordinates independently change two parameters. Application: Pitch and timbre of sound, two components of a mixture, azimuth and range."
+              }
+            },
+            {
+              "id": "variant-t063",
+              "text": {
+                "ru": "Виртуальная ручка вращения. Тип: Касание. Пальцы: 1. Правило: Угловое положение пальца задаёт параметр или последовательность щелчков. Применение: Настраивать радио, вращать сейфовый диск, регулировать вентиль.",
+                "en": "Virtual rotation handle. Type: Touch. Fingers: 1. Rule: The angular position of the finger sets the parameter or sequence of clicks. Application: Tuning the radio, rotating the safe dial, adjusting the valve."
+              }
+            },
+            {
+              "id": "variant-t064",
+              "text": {
+                "ru": "Перемотка шкалы. Тип: Касание. Пальцы: 1. Правило: Перемещение выбирает момент на временной оси. Применение: Искать кадр с уликой, восстанавливать события, управлять временем в головоломке.",
+                "en": "Rewind the scale. Type: Touch. Fingers: 1. Rule: Moving selects a moment on the time axis. Application: Search for a frame with evidence, reconstruct events, manage time in a puzzle."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Геометрия нескольких касаний",
+        "en": "Multi-touch geometry"
+      },
+      "description": {
+        "ru": "Расстояние, угол и взаимное положение контактов управляют масштабом, вращением и геометрией объекта.",
+        "en": "The distance, angle, and relative position of the contacts control the scale, rotation, and geometry of the object."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t065",
+              "text": {
+                "ru": "Сведение и разведение. Тип: multi. Пальцы: 2+. Правило: Расстояние между контактами управляет масштабом. Применение: Менять масштаб карты или размер игрового объекта.",
+                "en": "Mixing and breeding. Type: multi. Fingers: 2+. Rule: The distance between the contacts controls the scale. Application: Change the scale of the map or the size of the game object."
+              }
+            },
+            {
+              "id": "variant-t066",
+              "text": {
+                "ru": "Поворот двумя пальцами. Тип: multi. Пальцы: 2+. Правило: Угол между контактами управляет вращением. Применение: Ориентировать деталь, вращать пазл, совмещать созвездия.",
+                "en": "Rotate with two fingers. Type: multi. Fingers: 2+. Rule: The angle between the contacts controls the rotation. Application: Orient a piece, rotate a puzzle, combine constellations."
+              }
+            },
+            {
+              "id": "variant-t067",
+              "text": {
+                "ru": "Перенос двумя пальцами. Тип: multi. Пальцы: 2+. Правило: Общее смещение контактов переносит объект или пространство. Применение: Сдвигать карту, камеру, крупную конструкцию отдельно от игрового выбора.",
+                "en": "Two finger transfer. Type: multi. Fingers: 2+. Rule: The general displacement of the contacts transfers the object or space. Application: Move the map, camera, large structure separately from the game selection."
+              }
+            },
+            {
+              "id": "variant-t068",
+              "text": {
+                "ru": "Якорь и рычаг. Тип: multi. Пальцы: 2+. Правило: Один контакт фиксирует опору, другой управляет положением относительно неё. Применение: Работать циркулем, вращать рычаг, натягивать верёвку вокруг опоры.",
+                "en": "Anchor and lever. Type: multi. Fingers: 2+. Rule: One contact fixes the support, the other controls the position relative to it. Application: Work with a compass, rotate the lever, pull the rope around the support."
+              }
+            },
+            {
+              "id": "variant-t069",
+              "text": {
+                "ru": "Растяжение. Тип: multi. Пальцы: 2+. Правило: Отдельные контакты двигают разные точки деформируемого объекта. Применение: Растягивать тесто, резину, мембрану или мост.",
+                "en": "Stretching. Type: multi. Fingers: 2+. Rule: Individual contacts move different points of a deformable object. Application: To stretch dough, rubber, membrane or bridge."
+              }
+            },
+            {
+              "id": "variant-t070",
+              "text": {
+                "ru": "Сдвиг слоёв. Тип: multi. Пальцы: 2+. Правило: Относительное движение контактов меняет сдвиг или рассогласование частей. Применение: Совмещать прозрачные пластины, расшатывать соединение, деформировать сетку.",
+                "en": "Shift layers. Type: multi. Fingers: 2+. Rule: The relative movement of the contacts changes the shift or misalignment of the parts. Application: Align transparent plates, loosen the connection, deform the mesh."
+              }
+            },
+            {
+              "id": "variant-t071",
+              "text": {
+                "ru": "Условное сжатие. Тип: multi. Пальцы: 2+. Правило: Сближение пальцев программно трактуется как сдавливание. Применение: Выжать губку, сжать пружину, раздавить мягкий предмет. Экран не измеряет реальную силу сжатия.",
+                "en": "Conditional compression. Type: multi. Fingers: 2+. Rule: Bringing fingers together is interpreted programmatically as squeezing. Application: Squeeze out a sponge, compress a spring, crush a soft object. The screen does not measure actual grip force."
+              }
+            },
+            {
+              "id": "variant-t072",
+              "text": {
+                "ru": "Сгиб по контрольным точкам. Тип: multi. Пальцы: 2+. Правило: Положение нескольких контактов задаёт угол или кривизну модели. Применение: Складывать бумагу, гнуть проволоку, раскрывать виртуальную книгу.",
+                "en": "Bend at control points. Type: multi. Fingers: 2+. Rule: The position of several contacts determines the angle or curvature of the model. Application: Fold paper, bend wire, open a virtual book."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Координация нескольких касаний",
+        "en": "Multi-touch coordination"
+      },
+      "description": {
+        "ru": "Несколько контактов получают независимые роли или должны выполнять согласованное действие.",
+        "en": "Multiple contacts are given independent roles or must perform a coordinated action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t073",
+              "text": {
+                "ru": "Независимые объекты. Тип: multi. Пальцы: 2+. Правило: Каждый активный контакт управляет собственным объектом. Применение: Два персонажа, несколько ловушек, независимые музыкальные голоса.",
+                "en": "Independent objects. Type: multi. Fingers: 2+. Rule: Each active contact controls its own object. Application: Two characters, multiple traps, independent musical voices."
+              }
+            },
+            {
+              "id": "variant-t074",
+              "text": {
+                "ru": "Движение и прицеливание. Тип: multi. Пальцы: 2+. Правило: Разные зоны ввода управляют перемещением и направлением действия. Применение: Два виртуальных стика, движение плюс обзор или стрельба.",
+                "en": "Movement and aiming. Type: multi. Fingers: 2+. Rule: Different input zones control movement and direction of action. Application: Two virtual sticks, movement plus vision or shooting."
+              }
+            },
+            {
+              "id": "variant-t075",
+              "text": {
+                "ru": "Удержание и отдельная команда. Тип: multi. Пальцы: 2+. Правило: Один палец поддерживает действие, другой выбирает или активирует цель. Применение: Держать щит и атаковать, удерживать врага и применять инструмент.",
+                "en": "Retention and separate team. Type: multi. Fingers: 2+. Rule: One finger supports the action, the other selects or activates the target. Application: Hold the shield and attack, hold the enemy and use the tool."
+              }
+            },
+            {
+              "id": "variant-t076",
+              "text": {
+                "ru": "Палец-модификатор. Тип: multi. Пальцы: 2+. Правило: Контакт в специальной зоне меняет смысл движения другого пальца. Применение: Точная настройка, альтернативный инструмент, замедленное перемещение.",
+                "en": "Modifier finger. Type: multi. Fingers: 2+. Rule: Contact in a special zone changes the meaning of the movement of the other finger. Application: Fine tuning, alternative tool, slow motion."
+              }
+            },
+            {
+              "id": "variant-t077",
+              "text": {
+                "ru": "Отрезок между пальцами. Тип: multi. Пальцы: 2+. Правило: Два контакта задают линию, которая взаимодействует с миром. Применение: Щит-мембрана, лазерная преграда, ловушка, растягиваемая платформа.",
+                "en": "The section between the fingers. Type: multi. Fingers: 2+. Rule: Two contacts define a line that interacts with the world. Application: Membrane shield, laser barrier, trap, stretchable platform."
+              }
+            },
+            {
+              "id": "variant-t078",
+              "text": {
+                "ru": "Многоугольник из контактов. Тип: multi. Пальцы: 2+. Правило: Три и более точки задают область воздействия. Применение: Захватывать существ, удерживать контур, накрывать несколько объектов. Проверить лимит контактов и удобство.",
+                "en": "Polygon of contacts. Type: multi. Fingers: 2+. Rule: Three or more points define the area of ​​influence. Application: Capture creatures, hold a contour, cover several objects. Check contact limit and convenience."
+              }
+            },
+            {
+              "id": "variant-t079",
+              "text": {
+                "ru": "Количество контактов. Тип: multi. Пальцы: 2+. Правило: Режим или команда зависит от числа одновременно активных касаний. Применение: Выбирать размер инструмента, число голосов, мощность ритуала. Приложение не узнаёт личность пальца.",
+                "en": "Number of contacts. Type: multi. Fingers: 2+. Rule: The mode or command depends on the number of simultaneously active touches. Application: Choose the size of the instrument, the number of voices, the power of the ritual. The application does not recognize the identity of the finger."
+              }
+            },
+            {
+              "id": "variant-t080",
+              "text": {
+                "ru": "Передача контакта. Тип: multi. Пальцы: 2+. Правило: Новый палец должен войти до отрыва предыдущего, сохраняя общее условие. Применение: Нести энергию по цепочке, поддерживать непрерывный мост или кооперативный захват.",
+                "en": "Transferring a contact. Type: multi. Fingers: 2+. Rule: A new finger must enter before the previous one comes off, maintaining the general condition. Application: Carry energy along a chain, maintain a continuous bridge or cooperative grip."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Ограничения контакта",
+        "en": "Contact restrictions"
+      },
+      "description": {
+        "ru": "Правило ограничивает допустимое число, расположение, непрерывность или порядок контактов.",
+        "en": "A rule limits the number, arrangement, continuity, or order of contacts allowed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t081",
+              "text": {
+                "ru": "Неподвижное удержание. Тип: Касание. Пальцы: 1+. Правило: Палец должен оставаться в пределах малого допуска. Применение: Балансировать инструмент, стабилизировать реактор, не потревожить спящего персонажа.",
+                "en": "Fixed hold. Type: Touch. Fingers: 1+. Rule: The finger must remain within a small tolerance. Application: Balance the tool, stabilize the reactor, do not disturb the sleeping character."
+              }
+            },
+            {
+              "id": "variant-t082",
+              "text": {
+                "ru": "Слежение за движущейся зоной. Тип: Касание. Пальцы: 1+. Правило: Нужно сохранять контакт с перемещающейся целью. Применение: Удерживать захват, сопровождать луч, вести диагностический датчик.",
+                "en": "Moving area tracking. Type: Touch. Fingers: 1+. Rule: You need to maintain contact with a moving target. Application: Hold a grip, follow a beam, guide a diagnostic sensor."
+              }
+            },
+            {
+              "id": "variant-t083",
+              "text": {
+                "ru": "Запретные области. Тип: Касание. Пальцы: 1+. Правило: Касание определённых зон нарушает условие. Применение: Лабиринт с электрическими стенками, обезвреживание ловушки, точная операция.",
+                "en": "Forbidden areas. Type: Touch. Fingers: 1+. Rule: Touching certain areas violates the condition. Application: Labyrinth with electric walls, disarming a trap, precision operation."
+              }
+            },
+            {
+              "id": "variant-t084",
+              "text": {
+                "ru": "Отрыв для уклонения. Тип: Касание. Пальцы: 1+. Правило: Отсутствие контакта временно защищает объект или отключает его влияние. Применение: Убрать уязвимый палец-маркер, пропустить препятствие, разомкнуть опасную цепь.",
+                "en": "Breakaway to evade. Type: Touch. Fingers: 1+. Rule: Lack of contact temporarily protects the object or disables its influence. Application: Remove a vulnerable marker finger, skip an obstacle, open a dangerous circuit."
+              }
+            },
+            {
+              "id": "variant-t085",
+              "text": {
+                "ru": "Ожидание без касаний. Тип: Касание. Пальцы: 1+. Правило: Награда или прогресс появляется только после выдержанной паузы без ввода. Применение: Успокоить существо, дождаться проявления изображения, решить головоломку на терпение.",
+                "en": "Waiting without touching. Type: Touch. Fingers: 1+. Rule: Reward or progress appears only after a pause without input. Application: Calm the creature, wait for the image to appear, solve the patience puzzle."
+              }
+            },
+            {
+              "id": "variant-t086",
+              "text": {
+                "ru": "Бюджет касаний. Тип: Касание. Пальцы: 1+. Правило: На решение дано ограниченное число контактов или суммарное время удержания. Применение: Минимизировать нажатия, экономить энергию устройства, решить задачу одним жестом.",
+                "en": "Touch budget. Type: Touch. Fingers: 1+. Rule: The solution is given a limited number of contacts or the total holding time. Application: Minimize clicks, save device energy, solve a problem with one gesture."
+              }
+            },
+            {
+              "id": "variant-t087",
+              "text": {
+                "ru": "Порядок постановки и снятия. Тип: multi. Пальцы: 2+. Правило: Значимы не только позиции, но и порядок начала и завершения контактов. Применение: Открыть многопальцевый замок, снять блокировки в безопасной очередности.",
+                "en": "Order of installation and removal. Type: multi. Fingers: 2+. Rule: Not only the positions are significant, but also the order in which contacts begin and end. Application: Open a multi-finger lock, remove the locks in a safe order."
+              }
+            },
+            {
+              "id": "variant-t088",
+              "text": {
+                "ru": "Ограничение скорости и плавности. Тип: Касание. Пальцы: 1+. Правило: Слишком быстрые движения, остановки или рывки нарушают условие. Применение: Переносить взрывчатку, вести перо, выполнять тонкую сборку.",
+                "en": "Limit speed and smoothness. Type: Touch. Fingers: 1+. Rule: Too fast movements, stops or jerks violate the condition. Application: Carry explosives, guide a pen, perform fine assembly."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Контекст, пространство и совместная игра",
+        "en": "Context, space and cooperative play"
+      },
+      "description": {
+        "ru": "Значение касания зависит от области экрана, состояния мира или распределения действий между участниками.",
+        "en": "The value of a touch depends on the area of ​​the screen, the state of the world, or the distribution of actions between participants."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t089",
+              "text": {
+                "ru": "Радиальный выбор одним движением. Тип: Касание. Пальцы: 1+. Правило: Контакт открывает меню, направление выбирает сектор, отпускание подтверждает. Применение: Быстро выбирать оружие, приказ, ингредиент или реплику.",
+                "en": "Radial selection in one motion. Type: Touch. Fingers: 1+. Rule: Contact opens the menu, direction selects the sector, releasing confirms. Application: Quickly select a weapon, order, ingredient or replica."
+              }
+            },
+            {
+              "id": "variant-t090",
+              "text": {
+                "ru": "Предпросмотр и отмена. Тип: Касание. Пальцы: 1+. Правило: Удержание показывает будущий результат, отвод в зону отмены снимает команду. Применение: Проверить траекторию, безопасно выбрать ход, осмотреть предмет перед применением.",
+                "en": "Preview and cancel. Type: Touch. Fingers: 1+. Rule: Holding shows the future result, withdrawing to the cancellation zone cancels the command. Application: Check the trajectory, choose a move safely, inspect the object before use."
+              }
+            },
+            {
+              "id": "variant-t091",
+              "text": {
+                "ru": "Лупа или окно под пальцем. Тип: Касание. Пальцы: 1+. Правило: Позиция контакта перемещает область, в которой видны другие данные. Применение: Искать следы, читать микротекст, сканировать предметы. Отображать важное со смещением от пальца.",
+                "en": "Magnifying glass or window under your finger. Type: Touch. Fingers: 1+. Rule: Contact position moves the area in which other data is visible. Application: Search for traces, read microtext, scan objects. Display important items offset from your finger."
+              }
+            },
+            {
+              "id": "variant-t092",
+              "text": {
+                "ru": "Последовательное раскрытие слоя. Тип: Касание. Пальцы: 1+. Правило: Перемещение края или ручки открывает скрытую часть сцены. Применение: Листать досье, снимать плёнку, заглядывать за занавес, сопоставлять слои изображения.",
+                "en": "Sequential opening of the layer. Type: Touch. Fingers: 1+. Rule: Moving an edge or handle reveals a hidden part of the scene. Application: Flipping through a file, removing film, looking behind a curtain, matching layers of an image."
+              }
+            },
+            {
+              "id": "variant-t093",
+              "text": {
+                "ru": "Объект отталкивается от пальца. Тип: Касание. Пальцы: 1+. Правило: Контакт создаёт поле, препятствие или источник притяжения. Применение: Направлять стаю, защищать проход, управлять жидкостью, подталкивать частицы.",
+                "en": "The object is pushed away from the finger. Type: Touch. Fingers: 1+. Rule: Contact creates a field, obstacle or source of attraction. Application: Guide a flock, protect a passage, control fluid, push particles."
+              }
+            },
+            {
+              "id": "variant-t094",
+              "text": {
+                "ru": "Дуэль на одном экране. Тип: multi. Пальцы: 2+. Правило: Игроки получают разные зоны и независимо создают контакты. Применение: Настольный футбол, реакция, борьба за территорию. Для одновременной игры нужен multi-touch.",
+                "en": "Duel on one screen. Type: multi. Fingers: 2+. Rule: Players get different zones and independently create contacts. Application: Table football, reaction, fight for territory. For simultaneous play you need multi-touch."
+              }
+            },
+            {
+              "id": "variant-t095",
+              "text": {
+                "ru": "Совместное удержание объекта. Тип: multi. Пальцы: 2+. Правило: Успех зависит от согласованных контактов нескольких участников. Применение: Держать два конца носилок, одновременно управлять клапанами, не перекосить платформу.",
+                "en": "Joint holding of an object. Type: multi. Fingers: 2+. Rule: Success depends on the coordinated contacts of several participants. Application: Hold the two ends of the stretcher, simultaneously operate the valves, do not distort the platform."
+              }
+            },
+            {
+              "id": "variant-t096",
+              "text": {
+                "ru": "Встречные усилия. Тип: multi. Пальцы: 2+. Правило: Движения двух контактов превращаются в противодействующие игровые силы. Применение: Перетягивание каната, борьба за рычаг, растяжение общего предмета. Силы вычисляются из жестов.",
+                "en": "Counter Efforts. Type: multi. Fingers: 2+. Rule: The movements of two contacts turn into opposing play forces. Application: Tug of war, struggle for leverage, stretching of a common object. Powers are calculated from gestures..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-13",
+      "section": "section-1",
+      "title": {
+        "ru": "Нажим, геометрия контакта и стилус",
+        "en": "Pressure, contact geometry and stylus"
+      },
+      "description": {
+        "ru": "Поддерживаемые устройством нажим, геометрия контакта и параметры стилуса дополняют координаты; возможности проверяют отдельно.",
+        "en": "Device-supported pressure, contact geometry, and stylus parameters complement the coordinates; capabilities are checked separately."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t097",
+              "text": {
+                "ru": "Сила нажима. Тип: device. Пальцы: Особое оборудование. Правило: Доступное аппаратное значение силы управляет параметром. Применение: Толщина следа, сила захвата, громкость инструмента. Только при реальной поддержке; запасной ввод через длительность или ползунок.",
+                "en": "Pressure force. Type: device. Fingers: Special equipment. Rule: The available hardware force value controls the parameter. Application: Mark thickness, grip force, tool volume. Only with real support; spare input via duration or slider."
+              }
+            },
+            {
+              "id": "variant-t098",
+              "text": {
+                "ru": "Порог нажима. Тип: device. Пальцы: Особое оборудование. Правило: Действие выполняется при достижении аппаратного порога силы. Применение: Продавить материал, включить вторую стадию инструмента. Нельзя считать длительное касание измерением силы.",
+                "en": "Pressure threshold. Type: device. Fingers: Special equipment. Rule: The action is performed when the hardware force threshold is reached. Application: Push the material, turn on the second stage of the tool. A prolonged touch cannot be considered a force measurement."
+              }
+            },
+            {
+              "id": "variant-t099",
+              "text": {
+                "ru": "Площадь контакта. Тип: device. Пальцы: Особое оборудование. Правило: Оценка размеров пятна контакта меняет свойства кисти или инструмента. Применение: Широкая губка и тонкая кисть. Данные шумные и зависят от устройства; не использовать для точного определения пальца.",
+                "en": "Contact area. Type: device. Fingers: Special equipment. Rule: Estimating the size of the contact patch changes the properties of the brush or tool. Application: Wide sponge and thin brush. Data is noisy and device dependent; Do not use for precise finger identification."
+              }
+            },
+            {
+              "id": "variant-t100",
+              "text": {
+                "ru": "Наклон стилуса. Тип: device. Пальцы: Особое оборудование. Правило: Поддерживаемый угол активного пера меняет форму действия. Применение: Штриховка боковой поверхностью, угол резца, форма струи.",
+                "en": "Tilt of the stylus. Type: device. Fingers: Special equipment. Rule: The maintained angle of the active pen changes the shape of the action. Application: Side hatching, cutter angle, jet shape."
+              }
+            },
+            {
+              "id": "variant-t101",
+              "text": {
+                "ru": "Поворот стилуса вокруг оси. Тип: device. Пальцы: Особое оборудование. Правило: Если перо сообщает вращение, оно задаёт ориентацию инструмента. Применение: Повернуть плоскую кисть, долото, асимметричный штамп.",
+                "en": "Rotate the stylus around its axis. Type: device. Fingers: Special equipment. Rule: If the pen imparts rotation, it specifies the orientation of the tool. Application: Rotate a flat brush, chisel, asymmetrical stamp."
+              }
+            },
+            {
+              "id": "variant-t102",
+              "text": {
+                "ru": "Наведение без касания. Тип: device. Пальцы: Особое оборудование. Правило: Совместимое устройство сообщает положение пера над экраном. Применение: Предпросмотр попадания, прицел, подготовка следующего штриха. Не считать обычным свойством пальцевого ввода.",
+                "en": "Hover without touching. Type: device. Fingers: Special equipment. Rule: The compatible device reports the position of the pen above the screen. Application: Hit preview, aiming, preparing the next stroke. Do not consider it a normal feature of finger input."
+              }
+            },
+            {
+              "id": "variant-t103",
+              "text": {
+                "ru": "Кнопка или ластик стилуса. Тип: device. Пальцы: Особое оборудование. Правило: Дополнительный орган управления пера выбирает действие. Применение: Временно включить ластик, пипетку, альтернативный инструмент. Зависит от пера и API.",
+                "en": "Stylus button or eraser. Type: device. Fingers: Special equipment. Rule: Additional pen control selects action. Application: Temporarily turn on eraser, eyedropper, alternative tool. Depends on the pen and API."
+              }
+            },
+            {
+              "id": "variant-t104",
+              "text": {
+                "ru": "Разные роли пера и пальцев. Тип: device. Пальцы: Особое оборудование. Правило: Тип указателя определяет назначение контакта. Применение: Писать пером и двигать холст пальцами, удерживать шаблон рукой. Нужен совместимый телефон и корректная обработка случайных контактов.",
+                "en": "Different roles of the pen and fingers. Type: device. Fingers: Special equipment. Rule: The type of pointer determines the purpose of the contact. Application: Write with a pen and move the canvas with your fingers, hold the template with your hand. You need a compatible phone and correct processing of random contacts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-14",
+      "section": "section-1",
+      "title": {
+        "ru": "Тактильная отдача",
+        "en": "Tactile feedback"
+      },
+      "description": {
+        "ru": "Тактильный сигнал сообщает о событии или состоянии взаимодействия и дополняет визуальную и звуковую обратную связь.",
+        "en": "The haptic signal communicates the event or state of the interaction and complements visual and audio feedback."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t105",
+              "text": {
+                "ru": "Подтверждение действия. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Короткий импульс сопровождает успешную команду или смену состояния. Применение: Дать ощутить нажатие, попадание, успешное соединение деталей.",
+                "en": "Confirmation of action. Type: Tactile feedback. Fingers: Output, not input. Rule: A short impulse accompanies a successful command or change of state. Application: Let one feel the pressure, hit, successful connection of parts."
+              }
+            },
+            {
+              "id": "variant-t106",
+              "text": {
+                "ru": "Щелчки по делениям. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Импульсы приходят при прохождении дискретных значений. Применение: Сейфовый диск, выбор станции, настройка шкалы, привязка к клеткам.",
+                "en": "Click on the divisions. Type: Tactile feedback. Fingers: Output, not input. Rule: Pulses come when discrete values ​​pass through. Application: Safe disk, station selection, scale adjustment, binding to cells."
+              }
+            },
+            {
+              "id": "variant-t107",
+              "text": {
+                "ru": "Фактура поверхности. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Паттерн вибрации зависит от позиции и скорости движения по виртуальному материалу. Применение: Различать металл, песок, шероховатость. Это имитация, экран не становится физически шершавым.",
+                "en": "Surface texture. Type: Tactile feedback. Fingers: Output, not input. Rule: The vibration pattern depends on the position and speed of movement on the virtual material. Application: Distinguish between metal, sand, roughness. This is an imitation, the screen does not become physically rough."
+              }
+            },
+            {
+              "id": "variant-t108",
+              "text": {
+                "ru": "Натяжение и сопротивление. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Вибрация меняется вместе с вычисленным напряжением. Применение: Передать натяжение лески, сопротивление замка, заряд пружины. Реального ограничения движения пальца нет.",
+                "en": "Tension and resistance. Type: Tactile feedback. Fingers: Output, not input. Rule: Vibration changes along with the calculated voltage. Application: Transmit line tension, lock resistance, spring charge. There is no real restriction on finger movement."
+              }
+            },
+            {
+              "id": "variant-t109",
+              "text": {
+                "ru": "Приближение к цели. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Характер импульсов сообщает величину ошибки или расстояние. Применение: Тактильный металлоискатель, поиск сигнала, подбор положения детали.",
+                "en": "Getting closer to the goal. Type: Tactile feedback. Fingers: Output, not input. Rule: The nature of the pulses indicates the magnitude of the error or distance. Application: Tactile metal detector, signal search, selection of the position of a part."
+              }
+            },
+            {
+              "id": "variant-t110",
+              "text": {
+                "ru": "Вибрационный ритм. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Игрок повторяет или дополняет последовательность ощутимых импульсов. Применение: Музыкальная загадка, код связи, запоминание последовательности.",
+                "en": "Vibration rhythm. Type: Tactile feedback. Fingers: Output, not input. Rule: The player repeats or supplements the sequence of tangible impulses. Application: Musical riddle, communication code, memorizing the sequence."
+              }
+            },
+            {
+              "id": "variant-t111",
+              "text": {
+                "ru": "Состояние через паттерн. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Различимые вибрации обозначают игровые события. Применение: Различать опасность, низкую энергию, попадание и промах без постоянного взгляда на индикатор.",
+                "en": "State through pattern. Type: Tactile feedback. Fingers: Output, not input. Rule: Distinct vibrations indicate game events. Application: Recognize danger, low energy, hit and miss without constantly looking at the indicator."
+              }
+            },
+            {
+              "id": "variant-t112",
+              "text": {
+                "ru": "Согласованный удар и отдача. Тип: Тактильная отдача. Пальцы: Вывод, не ввод. Правило: Вибрация синхронизирована с изображением, звуком и результатом жеста. Применение: Бросок, щелчок затвора, столкновение, приземление. Проверить реальное устройство; предусмотреть отключение.",
+                "en": "Coordinated impact and recoil. Type: Tactile feedback. Fingers: Output, not input. Rule: Vibration is synchronized with the image, sound and result of the gesture. Application: Throw, shutter click, collision, landing. Check the real device; provide for shutdown..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-15",
+      "section": "section-1",
+      "title": {
+        "ru": "Сочетания с функциями телефона",
+        "en": "Combinations with phone functions"
+      },
+      "description": {
+        "ru": "Касание объединяется с камерой, микрофоном, движением и другими каналами телефона в составное правило.",
+        "en": "Touch is combined with camera, microphone, motion, and other phone channels into a composite rule."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-t113",
+              "text": {
+                "ru": "Касание и наклон. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Контакт включает действие, наклон устройства задаёт направление или баланс. Применение: Нажать газ и рулить наклоном, удерживать сосуд и контролировать переливание.",
+                "en": "Touch and tilt. Type: Channel combination. Fingers: Sensors and permissions. Rule: Contact turns on the action, tilting the device sets the direction or balance. Application: Press the gas and steer by tilting, hold the vessel and control the transfusion."
+              }
+            },
+            {
+              "id": "variant-t114",
+              "text": {
+                "ru": "Касание и вращение телефона. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Палец фиксирует режим или цель, оценка ориентации устройства двигает обзор. Применение: Прицеливание гироскопом, поиск вокруг себя, управление пространственным прибором.",
+                "en": "Touching and rotating the phone. Type: Channel combination. Fingers: Sensors and permissions. Rule: The finger fixes the mode or target, the assessment of the orientation of the device moves the view. Application: Aiming with a gyroscope, searching around oneself, controlling a spatial device."
+              }
+            },
+            {
+              "id": "variant-t115",
+              "text": {
+                "ru": "Касание и встряхивание. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: При удержанной зоне движение устройства запускает встряхивание игрового объекта. Применение: Встряхнуть выбранную колбу, зарядить механизм, разбудить существо.",
+                "en": "Touch and shake. Type: Channel combination. Fingers: Sensors and permissions. Rule: When a zone is held, movement of the device triggers shaking of the game object. Application: Shake the selected flask, charge the mechanism, wake up the creature."
+              }
+            },
+            {
+              "id": "variant-t116",
+              "text": {
+                "ru": "Касание и переворот. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Изменение ориентации телефона переключает состояние удерживаемого объекта. Применение: Перевернуть песочные часы, перевернуть игровой мир, сменить сторону головоломки.",
+                "en": "Touch and flip. Type: Channel combination. Fingers: Sensors and permissions. Rule: Changing the orientation of the phone switches the state of the object being held. Application: Flip the hourglass, flip the game world, change the side of the puzzle."
+              }
+            },
+            {
+              "id": "variant-t117",
+              "text": {
+                "ru": "Касание и датчик приближения. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Контакт выбирает объект, состояние датчика даёт дополнительный сигнал. Применение: Приложить виртуальный прибор к объекту или закрыть его датчик. Наличие и доступ через API проверить заранее.",
+                "en": "Touch and proximity sensor. Type: Channel combination. Fingers: Sensors and permissions. Rule: The contact selects an object, the state of the sensor gives an additional signal. Application: Apply the virtual device to the object or close its sensor. Check availability and access via API in advance."
+              }
+            },
+            {
+              "id": "variant-t118",
+              "text": {
+                "ru": "Касание и освещённость. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Контакт фиксирует образец, датчик света меняет условие. Применение: Проявлять фотографию, искать реакцию светочувствительного растения. Не каждый телефон или веб-браузер предоставляет данные.",
+                "en": "Touch and illumination. Type: Channel combination. Fingers: Sensors and permissions. Rule: The contact fixes the sample, the light sensor changes the condition. Application: Develop a photograph, look for the reaction of a photosensitive plant. Not every phone or web browser provides data..."
+              }
+            },
+            {
+              "id": "variant-t119",
+              "text": {
+                "ru": "Касание и микрофон. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Палец выбирает инструмент или удерживает канал, звук управляет эффектом. Применение: Дуть в выбранную мельницу, играть громкостью, записывать сигнал. Дутьё оценивается косвенно по звуку.",
+                "en": "Touch and microphone. Type: Channel combination. Fingers: Sensors and permissions. Rule: Finger selects an instrument or holds a channel, the sound controls the effect. Application: Blow into the selected mill, play with volume, record a signal. Blowing is assessed indirectly by sound."
+              }
+            },
+            {
+              "id": "variant-t120",
+              "text": {
+                "ru": "Касание и камера или AR. Тип: Сочетание каналов. Пальцы: Сенсоры и разрешения. Правило: Касание выбирает экранную или распознанную пространственную цель. Применение: Размещать объекты в комнате, нажимать на найденные предметы, соединять виртуальные и реальные ориентиры. Разрешения и AR-поддержка зависят от платформы.",
+                "en": "Touch and camera or AR. Type: Channel combination. Fingers: Sensors and permissions. Rule: Touch selects an on-screen or recognized spatial target. Application: Place objects in a room, click on found objects, connect virtual and real landmarks. Permissions and AR support vary by platform."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Что решить перед прототипом",
+        "en": "What to decide before prototyping"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "От идеи к реализацииЧто именно измеряет игра",
+            "en": "From idea to implementationWhat exactly does the game measure?"
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Позицию, смещение, скорость, длительность, паузу, угол, площадь контура, число контактов или порядок событий. Задайте допуски и понятный сигнал успеха.",
+            "en": "Position, offset, speed, duration, pause, angle, contour area, number of contacts or order of events. Set tolerances and a clear signal of success."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Один контакт может завершиться отменой",
+            "en": "One contact may end in cancellation"
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Система может прервать жест. Отмена должна снимать захват и удерживаемое действие, не превращаясь в непреднамеренный выстрел или подтверждение.",
+            "en": "The system may abort the gesture. The cancel should release the grab and hold action without turning into an unintentional shot or confirmation."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Палец закрывает изображение",
+            "en": "Finger covers the image"
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Выносите прицел, лупу или важный результат в видимую область. Проверяйте управление одной рукой, левшей и правшей, на узком экране.",
+            "en": "Place your sight, magnifying glass, or important result in a visible area. Test one-handed controls, left-handed or right-handed, on a narrow screen."
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Палец не равен физической кнопке",
+            "en": "Finger is not equal to physical button"
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Определите, срабатывает команда при касании, отпускании или достижении порога. Предусмотрите дрожание руки, случайное смещение и возможность отмены.",
+            "en": "Determine whether the command is triggered when touched, released, or reached a threshold. Allow for hand shake, accidental movement, and the possibility of undoing."
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Система тоже использует жесты",
+            "en": "The system also uses gestures"
+          }
+        },
+        {
+          "id": "note-1-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Не размещайте критические движения у границ без проверки конфликта с навигацией ОС. В вебе учитывайте прокрутку, масштабирование и touch-action.",
+            "en": "Don't place critical moves near borders without checking for conflict with OS navigation. On the web, consider scrolling, zooming, and touch-action."
+          }
+        },
+        {
+          "id": "note-1-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Аппаратные возможности проверяются",
+            "en": "Hardware capabilities are checked"
+          }
+        },
+        {
+          "id": "note-1-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Количество контактов, нажим, геометрия контакта, оси пера, датчики и качество отдачи зависят от устройства. Ненулевое поле pressure само по себе не доказывает измерение силы.",
+            "en": "The number of contacts, pressure, contact geometry, pen axes, sensors and feedback quality vary by device. A non-zero pressure field in itself does not prove the measurement of force."
+          }
+        },
+        {
+          "id": "note-1-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Обратная связь объясняет правило",
+            "en": "Feedback explains the rule"
+          }
+        },
+        {
+          "id": "note-1-entry-14",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Показывайте захват, направление, порог заряда и результат до необратимого действия. Вибрация дополняет визуальный и звуковой сигнал и может отключаться.",
+            "en": "Show capture, direction, charge threshold and result before irreversible action. The vibration complements the visual and audible signal and can be switched off."
+          }
+        },
+        {
+          "id": "note-1-entry-15",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сложность должна быть намеренной",
+            "en": "Complexity must be intentional"
+          }
+        },
+        {
+          "id": "note-1-entry-16",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сложный жест может быть задачей игры. Если это лишь доступ к меню или важной функции, предложите простой альтернативный ввод. Предусмотрите режимы без частых касаний и длительного удержания.",
+            "en": "A complex gesture can be a game challenge. If it's just access to a menu or important function, offer a simple alternative input. Provide modes without frequent touches and long holds."
+          }
+        },
+        {
+          "id": "note-1-entry-17",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Шаблон механики: игрок [действие] → игра измеряет [параметр] → изменяет [состояние] → показывает [обратную связь] → при [условии] наступает успех или неудача.",
+            "en": "Mechanics template: player [action] → game measures [parameter] → changes [state] → shows [feedback] → success or failure occurs at [condition]."
+          }
+        },
+        {
+          "id": "note-1-entry-18",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Пример: игрок тянет леску → расстояние пальца от точки захвата задаёт натяжение → рыба приближается, но растёт риск обрыва → линия и импульсы показывают опасность → отпускание снижает натяжение.",
+            "en": "Example: a player pulls the line → the distance of the finger from the grip point sets the tension → the fish is approaching, but the risk of breaking increases → the line and impulses indicate danger → letting go reduces the tension."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Apple: жесты и соглашения",
+        "en": "Apple: Gestures and Conventions"
+      },
+      "url": "https://developer.apple.com/design/human-interface-guidelines/gestures",
+      "description": {
+        "ru": "Стандартные жесты, пользовательские жесты, альтернативные способы ввода и конфликты с системой.",
+        "en": "Standard gestures, custom gestures, alternative input methods, and conflicts with the system."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: работа с жестами",
+        "en": "Android: working with gestures"
+      },
+      "url": "https://developer.android.com/develop/ui/views/touch-and-input/gestures",
+      "description": {
+        "ru": "Распознавание движений, свайпов, двойных касаний и перетаскивания.",
+        "en": "Recognizes movements, swipes, double taps and drags."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: несколько касаний",
+        "en": "Android: multiple taps"
+      },
+      "url": "https://developer.android.com/develop/ui/views/touch-and-input/gestures/multi",
+      "description": {
+        "ru": "События начала, движения, отпускания и отмены; отслеживание активных указателей.",
+        "en": "Start, move, release, and cancel events; tracking active pointers."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: UITouch.force",
+        "en": "Apple: UITouch.force"
+      },
+      "url": "https://developer.apple.com/documentation/uikit/uitouch/force",
+      "description": {
+        "ru": "Сила доступна на оборудовании с соответствующей поддержкой; это не универсальное свойство экрана.",
+        "en": "Power is available on equipment with appropriate support; This is not a universal screen property."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: возможности стилуса",
+        "en": "Android: stylus capabilities"
+      },
+      "url": "https://developer.android.com/develop/ui/views/touch-and-input/stylus-input/advanced-stylus-features",
+      "description": {
+        "ru": "Оси пера, тип указателя и обработка случайных контактов; поддержка зависит от оборудования.",
+        "en": "Pen axes, pointer type and random contact handling; Support varies by hardware."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Pointer Events",
+        "en": "W3C: Pointer Events"
+      },
+      "url": "https://www.w3.org/TR/pointerevents4/",
+      "description": {
+        "ru": "Модель указателей для веба, свойства давления, отмена ввода и touch-action. Спецификация не доказывает поддержку API конкретным браузером.",
+        "en": "A pointer model for the web, pressure properties, input cancellation and touch-action. The specification does not prove that the API is supported by a specific browser."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: тактильная отдача",
+        "en": "Apple: haptic feedback"
+      },
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+      "description": {
+        "ru": "Смысл и согласованность отдачи, возможность отключения, различия устройств.",
+        "en": "The meaning and consistency of the return, the ability to turn off, the differences between the devices."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: принципы haptics",
+        "en": "Android: haptics principles"
+      },
+      "url": "https://developer.android.com/develop/ui/views/haptics/haptics-principles",
+      "description": {
+        "ru": "Подтверждения, фактуры и согласование тактильной, звуковой и визуальной обратной связи.",
+        "en": "Confirm, texture, and align tactile, audio, and visual feedback."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: доступность сенсоров",
+        "en": "Android: sensor availability"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview",
+      "description": {
+        "ru": "Набор датчиков различается между устройствами и версиями платформы.",
+        "en": "The set of sensors varies between devices and platform versions."
+      }
+    }
+  ]
+}

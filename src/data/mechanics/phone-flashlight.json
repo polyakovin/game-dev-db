@@ -1,0 +1,1975 @@
+{
+  "id": "phone-flashlight",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Фонарик телефона",
+    "en": "Phone flashlight interactions"
+  },
+  "description": {
+    "ru": "Фонарик телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone flashlight: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-control",
+      "section": "section-1",
+      "title": {
+        "ru": "Управление светом",
+        "en": "Light control"
+      },
+      "description": {
+        "ru": "Способы включить, изменить и автоматически погасить фонарик.",
+        "en": "Ways to turn on, change and automatically turn off the flashlight."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-control-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-1",
+              "text": {
+                "ru": "Переключатель. Действие: Нажать, чтобы включить; нажать снова, чтобы выключить. Применение: Осмотр комнаты, переключение игрового режима, обычное освещение. Требования: Задний LED и управление из приложения. Условия: Приложение управляет своим состоянием и проверяет доступность фонарика.",
+                "en": "Switch. Action: Click to turn on; press again to turn off. Application: Inspection of the room, switching game mode, normal lighting. Requirements: Rear LED and app control. Conditions: The application manages its state and checks the availability of the flashlight."
+              }
+            },
+            {
+              "id": "variant-2",
+              "text": {
+                "ru": "Свет при удержании. Действие: Светить, пока палец удерживает кнопку. Применение: Подсветить улику, поддерживать щит, занять одну руку игрока. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: События нажатия и отпускания дают точный игровой ввод; потеря фокуса гасит свет.",
+                "en": "Light when held. Action: Shine while the finger holds the button. Application: Illuminate evidence, support the shield, occupy one of the player's hands. Requirements: Rear LED and app control; Software game rule. Conditions: Press and release events give accurate game input; loss of focus turns off the light..."
+              }
+            },
+            {
+              "id": "variant-3",
+              "text": {
+                "ru": "Одиночный импульс. Действие: По команде ненадолго включить фонарик и автоматически погасить. Применение: Фотоохота, короткое раскрытие сцены, подтверждение действия. Требования: Задний LED и управление из приложения. Условия: Длительность и задержка LED зависят от устройства; это не точный лабораторный строб.",
+                "en": "Single impulse. Action: On command, briefly turn on the flashlight and turn it off automatically. Application: Photo hunting, short disclosure of the scene, confirmation of the action. Requirements: Rear LED and control from the application. Conditions: LED duration and delay vary by device; This is not an accurate laboratory strobe."
+              }
+            },
+            {
+              "id": "variant-4",
+              "text": {
+                "ru": "Свет на заданное время. Действие: Выбрать продолжительность одного непрерывного включения. Применение: Секундный осмотр, временное окно действия, бытовой таймер света. Требования: Задний LED и управление из приложения. Условия: Использовать таймер приложения, а не измерять время по реальной яркости.",
+                "en": "Light for a set time. Action: Select the duration of one continuous activation. Application: Secondary inspection, time window of action, household light timer. Requirements: Rear LED and app control. Conditions: Use the application timer, and do not measure time by real brightness."
+              }
+            },
+            {
+              "id": "variant-5",
+              "text": {
+                "ru": "Отложенное включение. Действие: Запустить обратный отсчёт до включения. Применение: Подготовить сцену, занять позицию для теневого задания, начать раунд. Требования: Задний LED и управление из приложения. Условия: При уходе приложения в фон поведение нужно проверять на целевой ОС.",
+                "en": "Delayed activation. Action: Start the countdown to power up. Application: Set the stage, take position for the shadow task, start the round. Requirements: Rear LED and app control. Conditions: When an application goes into the background, the behavior must be checked on the target OS."
+              }
+            },
+            {
+              "id": "variant-6",
+              "text": {
+                "ru": "Уровни яркости. Действие: Выбрать слабый, средний или яркий свет. Применение: Ближний осмотр, снижение бликов, выбор силы игрового воздействия. Требования: Задний LED и управление из приложения; Поддержка регулировки яркости. Условия: Требуется управление мощностью; число уровней и реальная освещённость различаются.",
+                "en": "Brightness levels. Action: Select low, medium or bright light. Application: Close inspection, glare reduction, selection of gaming impact strength. Requirements: Rear LED and app control; Support brightness adjustment. Conditions: Power control required; the number of levels and actual illumination vary."
+              }
+            },
+            {
+              "id": "variant-7",
+              "text": {
+                "ru": "Плавное изменение. Действие: Увеличивать или уменьшать яркость за время удержания. Применение: Рассвет в миниатюрном театре, настройка виртуального устройства. Требования: Задний LED и управление из приложения; Поддержка регулировки яркости. Условия: Плавность ограничена доступными аппаратными ступенями; предусмотреть дискретный вариант.",
+                "en": "Smooth change. Action: Increase or decrease brightness during hold time. Application: Dawn in a miniature theater, setting up a virtual device. Requirements: Rear LED and control from the application; Support brightness adjustment. Conditions: Smoothness limited by available hardware stages; provide a discrete option."
+              }
+            },
+            {
+              "id": "variant-8",
+              "text": {
+                "ru": "Управление жестом. Действие: Наклоном, поворотом или умеренным встряхиванием запускать свет. Применение: Фонарик без поиска кнопки, имитация ручного генератора. Требования: Задний LED и управление из приложения; Датчики движения и калибровка. Условия: Датчики распознают движение телефона; случайные жесты нужно отсеивать.",
+                "en": "Gesture control. Action: Tilt, turn or moderate shake to turn on the light. Application: Flashlight without searching for a button, imitation of a hand generator. Requirements: Rear LED and control from the application; Motion sensors and calibration. Conditions: Sensors detect the movement of the phone; random gestures need to be weeded out."
+              }
+            },
+            {
+              "id": "variant-9",
+              "text": {
+                "ru": "Управление звуком. Действие: Включать по голосовой команде, хлопку или заданному звуку. Применение: Занятые руки, театральная команда, музыкальная игра. Требования: Задний LED и управление из приложения; Микрофон для внешнего звука. Условия: Нужны микрофон и распознавание; громкость хлопка сама по себе не идентифицирует игрока.",
+                "en": "Sound control. Action: Turn on by voice command, clap or specified sound. Application: Busy hands, theater team, musical play. Requirements: Rear LED and app control; Microphone for external sound. Conditions: Microphone and recognition required; The loudness of the clap itself does not identify the player."
+              }
+            },
+            {
+              "id": "variant-10",
+              "text": {
+                "ru": "Автоматическое включение по условию. Действие: Включать при темноте, распознанной метке или событии игры. Применение: Адаптивный осмотр, вход в игровую зону, световой сигнал события. Требования: Задний LED и управление из приложения; Датчик среды или заменяющий его анализ камеры; Программное игровое правило. Условия: Темнота требует доступного датчика или камеры; событие игры может быть чисто программным.",
+                "en": "Automatic switching on by condition. Action: Turn on when it is dark, a recognized tag or a game event. Application: Adaptive inspection, entry into the game area, event light signal. Requirements: Rear LED and control from the application; Environmental sensor or chamber analysis replacing it; Software game rule. Conditions: Darkness requires an accessible sensor or camera; a game event can be purely programmatic."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-1",
+      "title": {
+        "ru": "Ритм, время и световые коды",
+        "en": "Rhythm, time and light codes"
+      },
+      "description": {
+        "ru": "Свет и паузы становятся последовательностью, которую нужно создать или прочитать.",
+        "en": "The lights and pauses become a sequence to be created or read."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-11",
+              "text": {
+                "ru": "Короткий и длинный сигнал. Действие: Передавать два различимых типа включения. Применение: Двоичный ответ, простые команды товарищу, обучение сигналам. Требования: Задний LED и управление из приложения. Условия: Человек может читать свет; автоматическому получателю нужна камера или фотодатчик.",
+                "en": "Short and long signal. Action: Transmit two distinguishable types of activation. Application: Binary response, simple commands to a friend, signal training. Requirements: Rear LED and app control. Conditions: The person can read light; The automatic recipient needs a camera or photo sensor."
+              }
+            },
+            {
+              "id": "variant-12",
+              "text": {
+                "ru": "Код количеством включений. Действие: Передавать число отдельными импульсами. Применение: Номер двери, выбор варианта ответа, указание количества предметов. Требования: Задний LED и управление из приложения. Условия: Разделять сообщения длинной паузой, чтобы не спутать соседние числа.",
+                "en": "Code number of inclusions. Action: Transmit the number in separate pulses. Application: Door number, selecting an answer option, indicating the number of items. Requirements: Rear LED and control from the application. Conditions: Separate messages with a long pause so as not to confuse adjacent numbers."
+              }
+            },
+            {
+              "id": "variant-13",
+              "text": {
+                "ru": "Азбука Морзе. Действие: Кодировать символы точками, тире и паузами. Применение: Шпионский квест, тренажёр связи, обмен короткой фразой. Требования: Задний LED и управление из приложения. Условия: Это учебная или игровая связь, не гарантированный аварийный канал.",
+                "en": "Morse code. Action: Encode characters with dots, dashes and pauses. Application: Spy quest, communication trainer, short phrase exchange. Requirements: Rear LED and app control. Conditions: This is a training or gaming connection, not a guaranteed emergency channel."
+              }
+            },
+            {
+              "id": "variant-14",
+              "text": {
+                "ru": "Пароль из длительностей. Действие: Ввести последовательность разных удержаний. Применение: Открыть виртуальный замок, повторить стук персонажа. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Распознавать длительность ввода; LED служит физическим подтверждением.",
+                "en": "Password from durations. Action: Enter a sequence of different holds. Application: Open the virtual lock, repeat the character's knock. Requirements: Rear LED and control from the application; Software game rule. Conditions: Recognize input duration; LED serves as physical confirmation."
+              }
+            },
+            {
+              "id": "variant-15",
+              "text": {
+                "ru": "Пароль из пауз. Действие: Сохранить одинаковые импульсы, меняя интервалы между ними. Применение: Секретный ритм, временная головоломка, музыкальная фраза. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Оценивать интервалы с допуском, а не требовать идеальных миллисекунд.",
+                "en": "Password from pauses. Action: Maintain equal pulses by changing the intervals between them. Application: Secret rhythm, time puzzle, musical phrase. Requirements: Rear LED and app control; Software game rule. Conditions: Estimate intervals with tolerance rather than requiring perfect milliseconds."
+              }
+            },
+            {
+              "id": "variant-16",
+              "text": {
+                "ru": "Повтор показанного ритма. Действие: Приложение или партнёр показывает рисунок; игрок воспроизводит его. Применение: Игра на память, световой «Саймон», обучение счёту. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Исходную последовательность можно дополнительно показывать текстом или звуком.",
+                "en": "Repeat the shown rhythm. Action: The application or partner shows the drawing; the player plays it. Application: Memory game, light “Simon”, learning to count. Requirements: Rear LED and control from the application; Software game rule. Conditions: The original sequence can additionally be shown with text or sound."
+              }
+            },
+            {
+              "id": "variant-17",
+              "text": {
+                "ru": "Попадание в такт. Действие: Включать свет в заданные моменты музыки. Применение: Ритм-игра, выступление, групповая партитура. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Оценивать время команды и отдельно учитывать задержку фактического света.",
+                "en": "Getting on the beat. Action: Turn on the lights at specified moments in the music. Application: Rhythm playing, performance, group score. Requirements: Rear LED and app control; Software game rule. Conditions: Evaluate the command time and separately take into account the delay of the actual light."
+              }
+            },
+            {
+              "id": "variant-18",
+              "text": {
+                "ru": "Реакция на сигнал. Действие: Включить или погасить после допустимого сигнала, игнорируя ложный. Применение: Тренировка игрового внимания, дуэль на реакцию. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Для соревнования нужны одинаковые правила задержек и устройств.",
+                "en": "Reaction to a signal. Action: Turn on or turn off after a valid signal, ignoring a false one. Application: Training of gaming attention, duel for reaction. Requirements: Rear LED and control from the application; Software game rule. Conditions: The competition requires the same delay and device rules."
+              }
+            },
+            {
+              "id": "variant-19",
+              "text": {
+                "ru": "Действие в окне времени. Действие: Удержать свет только в разрешённой фазе цикла. Применение: Пройти виртуальный патруль, активировать вращающийся механизм. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Фазы задаёт игра; реальный фонарик не обнаруживает патруль.",
+                "en": "Action in a window of time. Action: Keep the light only in the allowed phase of the cycle. Application: Go through a virtual patrol, activate the rotating mechanism. Requirements: Rear LED and control from the application; Software game rule. Conditions: Phases are set by the game; the real flashlight does not detect the patrol."
+              }
+            },
+            {
+              "id": "variant-20",
+              "text": {
+                "ru": "Отложенное воспроизведение. Действие: Записать световую последовательность и запустить её позднее. Применение: Асинхронная загадка, световая реплика, повтор авторского рисунка. Требования: Задний LED и управление из приложения. Условия: Записывать команды и интервалы; воспроизведение не обещает точной оптической синхронизации.",
+                "en": "Delayed playback. Action: Record the light sequence and run it later. Application: Asynchronous riddle, light cue, repeat of the author's drawing. Requirements: Rear LED and control from the application. Conditions: Record commands and intervals; playback does not promise accurate optical synchronization."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-movement",
+      "section": "section-1",
+      "title": {
+        "ru": "Направление и движение телефона",
+        "en": "Direction and movement of the phone"
+      },
+      "description": {
+        "ru": "Поза, скорость и траектория превращают телефон в ручной инструмент.",
+        "en": "Posture, speed and trajectory turn the phone into a handheld tool."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-movement-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-21",
+              "text": {
+                "ru": "Наведение на цель. Действие: Совместить направление телефона с целью. Применение: AR-указка, выбор экспоната, виртуальный прожектор. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Камера и пространственный трекинг; Программное игровое правило. Условия: Датчики дают ориентацию; привязка к конкретной реальной цели требует трекинга или метки.",
+                "en": "Targeting. Action: Align the direction of the phone with the target. Application: AR pointer, exhibit selection, virtual spotlight. Requirements: Rear LED and app control; Motion sensors and calibration; Camera and spatial tracking; Software game rule. Conditions: Sensors provide orientation; binding to a specific real goal requires tracking or a tag."
+              }
+            },
+            {
+              "id": "variant-22",
+              "text": {
+                "ru": "Удержание направления. Действие: Не уводить телефон из допустимого угла заданное время. Применение: Стабилизировать сигнал, изучить виртуальный объект, игра на точность. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Можно оценивать стабильность относительно начальной позы без узнавания комнаты.",
+                "en": "Direction hold. Action: Do not move the phone out of the permissible angle for a specified time. Application: Stabilize the signal, study a virtual object, play for accuracy. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: It is possible to evaluate stability relative to the initial pose without recognizing the room."
+              }
+            },
+            {
+              "id": "variant-23",
+              "text": {
+                "ru": "Слежение за движущейся целью. Действие: Поворачивать телефон вслед за объектом. Применение: Сопровождение виртуального существа, охрана движущегося груза. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Камера и собственный анализ изображения; Программное игровое правило. Условия: Реальная цель требует видеотрекинга; виртуальную цель знает сама игра.",
+                "en": "Tracking a moving target. Action: Rotate the phone after the object. Application: Accompanying a virtual creature, guarding a moving load. Requirements: Rear LED and control from the application; Motion sensors and calibration; Camera and proprietary image analysis; Software game rule. Conditions: The real target requires video tracking; the game itself knows the virtual target..."
+              }
+            },
+            {
+              "id": "variant-24",
+              "text": {
+                "ru": "Поиск по секторам. Действие: Последовательно просветить направления вокруг исходной позы. Применение: Сканер помещения в игре, обзор скрытых виртуальных угроз. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Гироскопу нужна калибровка; он не подтверждает, что реальные поверхности осмотрены.",
+                "en": "Search by sector. Action: Consistently illuminate the directions around the initial pose. Application: In-game room scanner, overview of hidden virtual threats. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: Gyroscope needs calibration; it does not confirm that actual surfaces have been inspected."
+              }
+            },
+            {
+              "id": "variant-25",
+              "text": {
+                "ru": "Обводка контура. Действие: Провести направлением телефона по заданной линии. Применение: Рисование символа, настройка антенны, восстановление рисунка. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Без камеры распознаётся угловая траектория, а не линия на стене.",
+                "en": "Outline outline. Action: Swipe the phone along a given line. Application: Drawing a symbol, setting up an antenna, restoring a picture. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: Without a camera, a corner path is recognized, not a line on the wall."
+              }
+            },
+            {
+              "id": "variant-26",
+              "text": {
+                "ru": "Управление скоростью прохода. Действие: Провести свет медленно или быстро, не выходя из диапазона. Применение: Виртуальное сканирование, «проявление» изображения, музыкальный глиссандо. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Угловую скорость можно оценить датчиками; скорость светового пятна требует геометрии сцены.",
+                "en": "Passage speed control. Action: Pass the light slowly or quickly without leaving the range. Application: Virtual scanning, image “developing”, musical glissando. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: Angular velocity can be estimated by sensors; the speed of the light spot requires the geometry of the scene."
+              }
+            },
+            {
+              "id": "variant-27",
+              "text": {
+                "ru": "Порядок направлений. Действие: Посветить вверх, вниз, влево и вправо в нужном порядке. Применение: Пространственный пароль, танцевальная команда, ритуал. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Зафиксировать систему отсчёта и допуски до начала раунда.",
+                "en": "Order of directions. Action: Shine up, down, left and right in the desired order. Application: Spatial password, dance team, ritual. Requirements: Rear LED and app control; Motion sensors and calibration; Software game rule. Conditions: Fix the frame of reference and tolerances before the start of the round."
+              }
+            },
+            {
+              "id": "variant-28",
+              "text": {
+                "ru": "Поворот вокруг оси. Действие: Вращать телефон как ручку настройки, сохраняя направление. Применение: Выбрать условный фильтр, частоту сканера или режим инструмента. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Меняется программный режим; реальный спектр LED от поворота не меняется.",
+                "en": "Rotation around an axis. Action: Rotate the phone like a dial, maintaining the direction. Application: Select a conditional filter, scanner frequency or instrument mode. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: Program mode changes; the actual LED spectrum does not change depending on rotation."
+              }
+            },
+            {
+              "id": "variant-29",
+              "text": {
+                "ru": "Приближение к поверхности. Действие: Менять расстояние до объекта и размер освещённой области. Применение: Подбор масштаба тени, осмотр фактуры, AR-задача на дистанцию. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик; Камера и собственный анализ изображения. Условия: Для автоматической оценки расстояния нужны известная метка, трекинг или датчик глубины.",
+                "en": "Approaching the surface. Action: Change the distance to the object and the size of the illuminated area. Application: Selecting the scale of the shadow, examining the texture, AR task at a distance. Requirements: Rear LED and control from the application; Prepared props or external sensor; Camera and proprietary image analysis. Conditions: Automatic distance estimation requires a known marker, tracking or depth sensor."
+              }
+            },
+            {
+              "id": "variant-30",
+              "text": {
+                "ru": "Перенос источника в новую точку. Действие: Передвигать телефон относительно предмета, а не только поворачивать. Применение: Изучить рельеф с другой стороны, получить нужную тень, исследовать сцену. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик; Камера и пространственный трекинг. Условия: Реальное смещение можно увидеть человеку; координаты для игры требуют позиционного трекинга.",
+                "en": "Moving the source to a new point. Action: Move the phone relative to the object, and not just turn it. Application: Study the relief from the other side, get the desired shadow, explore the scene. Requirements: Rear LED and control from the application; Prepared props or external sensor; Camera and spatial tracking. Conditions: The actual displacement can be seen by a person; Coordinates for the game require positional tracking."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-shadows",
+      "section": "section-1",
+      "title": {
+        "ru": "Перекрытие света и тени",
+        "en": "Occlusion and shadows"
+      },
+      "description": {
+        "ru": "Рука, предмет и экран становятся частью оптического взаимодействия.",
+        "en": "The hand, object and screen become part of the optical interaction."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-shadows-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-31",
+              "text": {
+                "ru": "Световая заслонка. Действие: Перекрывать свет ладонью или отдельной карточкой. Применение: Ручной телеграф, скрытие сигнала от соперника, театральный эффект. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: LED не замечает заслонку; автоматический ввод требует отдельного наблюдения.",
+                "en": "Light curtain. Action: Block the light with your palm or a separate card. Application: Manual telegraph, hiding the signal from an opponent, theatrical effect. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: LED does not notice the damper; automatic entry requires separate monitoring."
+              }
+            },
+            {
+              "id": "variant-32",
+              "text": {
+                "ru": "Регулировка отверстием. Действие: Менять размер просвета между карточками или пальцами. Применение: Физический регулятор света, эксперимент с формой пятна. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Не считать это измеренным положением «ползунка» без камеры или другого датчика.",
+                "en": "Adjustment by hole. Action: Change the size of the gap between cards or fingers. Application: Physical light controller, experiment with the shape of the spot. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Do not consider this to be the measured position of the \"slider\" without a camera or other sensor."
+              }
+            },
+            {
+              "id": "variant-33",
+              "text": {
+                "ru": "Закрытие камеры и LED вместе. Действие: Менять состояние «закрыто/открыто», перекрывая область камеры. Применение: Тактильный переключатель, условный жест спрятанного фонарика. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Анализ затемнения камеры лишь косвенно связан с закрытием LED; геометрия телефонов разная.",
+                "en": "Closing the camera and LED together. Action: Change the “closed/open” state, blocking the camera area. Application: Tactile switch, conditional gesture of a hidden flashlight. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: Camera dimming analysis is only indirectly related to LED occlusion; The geometry of the phones is different."
+              }
+            },
+            {
+              "id": "variant-34",
+              "text": {
+                "ru": "Теневые силуэты. Действие: Создавать рукой или фигуркой узнаваемый контур. Применение: Театр теней, угадывание животного, пересказ истории. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Игроки могут оценивать результат сами; автоматическое распознавание требует камеры наблюдения.",
+                "en": "Shadow silhouettes. Action: Create a recognizable outline with your hand or a figurine. Application: Shadow theatre, guessing an animal, retelling a story. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Players can evaluate the result themselves; automatic recognition requires a surveillance camera."
+              }
+            },
+            {
+              "id": "variant-35",
+              "text": {
+                "ru": "Совмещение тени с образцом. Действие: Переместить предмет и источник, чтобы тень совпала с контуром. Применение: Пространственная головоломка, сборка силуэта, физический пазл. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик; Камера и собственный анализ изображения. Условия: Камера или человек оценивает тень; одного гироскопа недостаточно.",
+                "en": "Combining the shadow with the sample. Action: Move the object and source so that the shadow matches the outline. Application: Spatial puzzle, silhouette assembly, physics puzzle. Requirements: Rear LED and app control; Prepared props or external sensor; Camera and proprietary image analysis. Conditions: Camera or person evaluates shadow; one gyroscope is not enough..."
+              }
+            },
+            {
+              "id": "variant-36",
+              "text": {
+                "ru": "Масштабирование тени. Действие: Менять расстояние между источником, объектом и поверхностью. Применение: Подогнать ключ по размеру, показать рост персонажа, изучить проекцию. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Чёткость зависит от размеров источника и расстояний; луч не становится лазерным.",
+                "en": "Shadow scaling. Action: Change the distance between the source, object and surface. Application: Adjust the key to size, show the character's height, study the projection. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Clarity depends on source size and distance; the beam does not become laser..."
+              }
+            },
+            {
+              "id": "variant-37",
+              "text": {
+                "ru": "Поворот тени. Действие: Вращать объёмный объект до нужной проекции. Применение: Узнать предмет по силуэту, найти скрытую букву, пространственный ребус. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Подготовить объекты с действительно различимыми проекциями.",
+                "en": "Rotate the shadow. Action: Rotate a volumetric object to the desired projection. Application: Recognize an object by silhouette, find a hidden letter, spatial puzzle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Prepare objects with truly distinguishable projections."
+              }
+            },
+            {
+              "id": "variant-38",
+              "text": {
+                "ru": "Сборка общей тени. Действие: Совмещать тени нескольких предметов в один знак. Применение: Кооперативный герб, пазл из разрозненных деталей. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Геометрию нужно проверить физическим макетом; совпадение не возникает автоматически.",
+                "en": "Assembling a general shade. Action: Combine the shadows of several objects into one sign. Application: Cooperative coat of arms, a puzzle made from scattered parts. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: The geometry must be verified with a physical mockup; the match does not occur automatically."
+              }
+            },
+            {
+              "id": "variant-39",
+              "text": {
+                "ru": "Теневой коридор. Действие: Перемещать фигурку так, чтобы её тень оставалась в допустимой зоне. Применение: Настольная игра на ловкость, лабиринт на листе, совместное испытание. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик; Камера и собственный анализ изображения. Условия: Для подсчёта результата нужна камера с обзором поля или ручной судья.",
+                "en": "Shadow corridor. Action: Move the figurine so that its shadow remains within the acceptable area. Application: Board game of dexterity, sheet maze, cooperative challenge. Requirements: Rear LED and app control; Prepared props or external sensor; Camera and proprietary image analysis. Conditions: To calculate the result, you need a camera with a view of the field or a hand-held judge."
+              }
+            },
+            {
+              "id": "variant-40",
+              "text": {
+                "ru": "Распознавание по движению тени. Действие: Определять предмет или событие по изменениям силуэта. Применение: Детективная сцена, угадай действие, театральная загадка. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Это интерпретация игрока; приложение может не распознавать реальный силуэт.",
+                "en": "Recognition by shadow movement. Action: Identify an object or event by changes in silhouette. Application: Detective scene, guess the action, theatrical riddle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: This is the player's interpretation; the application may not recognize the real silhouette."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-optics",
+      "section": "section-1",
+      "title": {
+        "ru": "Отражение, просвечивание и материалы",
+        "en": "Reflection, transmission and materials"
+      },
+      "description": {
+        "ru": "Фонарик работает с подготовленной физической сценой.",
+        "en": "The flashlight works with the prepared physical scene."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-optics-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-41",
+              "text": {
+                "ru": "Отражённый путь. Действие: Перенаправить свет зеркалом на заданную область. Применение: Зеркальный лабиринт, передача сигнала за препятствие. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Луч LED широкий; нужны короткие расстояния, экраны и проверка видимости.",
+                "en": "Reflected path. Action: Redirect the light with a mirror to a specified area. Application: Mirror maze, transmitting a signal behind an obstacle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: LED beam is wide; short distances, screens and visibility checks are needed."
+              }
+            },
+            {
+              "id": "variant-42",
+              "text": {
+                "ru": "Подсветка скользящим светом. Действие: Направить свет почти вдоль поверхности. Применение: Увидеть рельеф, тиснение, царапины или фактуру бумаги. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Это визуальный осмотр, не достоверная криминалистическая процедура.",
+                "en": "Illumination with sliding light. Action: Direct the light almost along the surface. Application: See relief, embossing, scratches or paper texture. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: This is a visual inspection, not a reliable forensic procedure."
+              }
+            },
+            {
+              "id": "variant-43",
+              "text": {
+                "ru": "Просвечивание бумаги. Действие: Светить через тонкий лист или многослойную карточку. Применение: Найти спрятанную метку, прочитать заранее подготовленный ребус. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Работает только при достаточном пропускании света и контрасте рисунка.",
+                "en": "Translucent paper. Action: Shine through a thin sheet or multilayer card. Application: Find a hidden mark, read a pre-prepared puzzle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Works only with sufficient light transmission and pattern contrast."
+              }
+            },
+            {
+              "id": "variant-44",
+              "text": {
+                "ru": "Совмещение прозрачных слоёв. Действие: Сложить полупрозрачные детали и подсветить результат. Применение: Собрать карту, проявить код из нескольких плёнок. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Материалы и порядок слоёв проверяются на реальном макете.",
+                "en": "Combining transparent layers. Action: Fold translucent parts and highlight the result. Application: Assemble a card, develop the code from several films. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Materials and order of layers are checked on a real layout."
+              }
+            },
+            {
+              "id": "variant-45",
+              "text": {
+                "ru": "Поиск отражающей метки. Действие: Искать заранее размещённые отражающие элементы. Применение: Комнатная охота за сокровищами, маркированная настольная карта. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик; Камера и собственный анализ изображения. Условия: Результат зависит от угла и материала; камера возле LED часто полезнее взгляда сбоку.",
+                "en": "Search for a reflective mark. Action: Look for pre-placed reflective elements. Application: Indoor treasure hunt, labeled tabletop map. Requirements: Rear LED and app control; Prepared props or external sensor; Camera and proprietary image analysis. Conditions: Result depends on angle and material; a camera near the LED is often more useful than a side view."
+              }
+            },
+            {
+              "id": "variant-46",
+              "text": {
+                "ru": "Головоломка на блики. Действие: Наклонять глянцевый предмет, пока блик не откроет или не скроет деталь. Применение: Секрет на карточке, задача на угол наблюдения. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Нельзя обещать одинаковый блик для произвольной поверхности.",
+                "en": "Glare puzzle. Action: Tilt a glossy object until the glare reveals or hides the detail. Application: Secret on a card, task on the viewing angle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: You cannot promise the same glare for any surface."
+              }
+            },
+            {
+              "id": "variant-47",
+              "text": {
+                "ru": "Физический цветной фильтр. Действие: Пропустить белый свет через подготовленный цветной материал. Применение: Выбор канала на печатной загадке, изменение атмосферы мини-сцены. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Нужны проверенные краски и фильтры; произвольный цвет программно у LED не задаётся.",
+                "en": "Physical color filter. Action: Pass white light through the prepared color material. Application: Selecting a channel on a printed puzzle, changing the atmosphere of a mini-scene. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: You need proven paints and filters; The LED cannot be programmed to have an arbitrary color."
+              }
+            },
+            {
+              "id": "variant-48",
+              "text": {
+                "ru": "Трафаретный рисунок. Действие: Подсветить вырезанный контур на близкой поверхности. Применение: Знак фракции, маска для теневой задачи, домашний театр. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Резкая сложная проекция потребует подходящей оптики; обычный LED не проектор.",
+                "en": "Stencil drawing. Action: Highlight a cut out outline on a nearby surface. Application: Faction sign, mask for shadow task, home theater. Requirements: Rear LED and app control; Prepared props or external sensor. Conditions: Sharp, complex projection will require suitable optics; regular LED not a projector."
+              }
+            },
+            {
+              "id": "variant-49",
+              "text": {
+                "ru": "Светящийся после подсветки объект. Действие: Осветить подходящий фотолюминесцентный реквизит, затем погасить. Применение: Оставить временную подсказку, собрать маршрут из меток. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Эффективность зависит от материала, спектра и времени; проверить до выбора механики.",
+                "en": "An object that glows after being illuminated. Action: Light a suitable photoluminescent prop, then turn it off. Application: Leave a temporary hint, collect a route from markers. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: Efficiency depends on material, spectrum and time; check before choosing mechanics."
+              }
+            },
+            {
+              "id": "variant-50",
+              "text": {
+                "ru": "Рассеивание и преломление. Действие: Менять картину света рассеивателем, призмой или иной оптической деталью. Применение: Каустический узор, эксперимент с материалами, художественная загадка. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Форма эффекта зависит от реквизита; использовать сухую устойчивую установку.",
+                "en": "Scattering and refraction. Action: Change the pattern of light with a diffuser, prism or other optical part. Application: Caustic pattern, experiment with materials, artistic puzzle. Requirements: Rear LED and control from the application; Prepared props or external sensor. Conditions: The form of the effect depends on the props; use a dry, stable installation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-camera",
+      "section": "section-1",
+      "title": {
+        "ru": "Поиск, камера и дополненная реальность",
+        "en": "Search, camera and augmented reality"
+      },
+      "description": {
+        "ru": "Камера наблюдает сцену; фонарик помогает её осветить или становится частью правила.",
+        "en": "The camera observes the scene; a flashlight helps illuminate it or becomes part of the rule."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-camera-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-51",
+              "text": {
+                "ru": "Освещённая метка. Действие: Найти и распознать печатную метку при включённом свете. Применение: Открытие контента у предмета, домашний квест, музейная карточка. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Метка читается камерой; включение света само по себе не доказывает попадание луча.",
+                "en": "Illuminated mark. Action: Find and recognize a printed mark when the light is on. Application: Opening content for an item, home quest, museum card. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: The tag is read by the camera; Turning on the light does not in itself prove that the beam hit."
+              }
+            },
+            {
+              "id": "variant-52",
+              "text": {
+                "ru": "Осмотр объекта по распознаванию. Действие: Навести камеру на подготовленный класс предметов. Применение: Каталог коллекции, учебная охота за объектами, игровая инвентаризация. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Нужны распознавание и проверка на целевых предметах; фонарик не распознаёт материалы.",
+                "en": "Inspection of an object by recognition. Action: Point the camera at the prepared class of objects. Application: Collection catalog, educational object hunt, game inventory. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: Recognition and testing on target objects are required; The flashlight does not recognize materials."
+              }
+            },
+            {
+              "id": "variant-53",
+              "text": {
+                "ru": "Сравнение «свет выключен/включён». Действие: Сравнить два кадра почти неподвижной сцены. Применение: Найти изменившуюся область, оценить вклад подсветки, эксперимент. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Автоэкспозиция и движение искажают разницу; нужна стабилизация и контроль параметров.",
+                "en": "Comparison “lights off/on.” Action: Compare two frames of an almost motionless scene. Application: Find a changed area, evaluate the contribution of the backlight, experiment. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: Autoexposure and motion distort the difference; need stabilization and control of parameters."
+              }
+            },
+            {
+              "id": "variant-54",
+              "text": {
+                "ru": "Поиск по отражению. Действие: Использовать камерой заметный световой отклик подготовленного объекта. Применение: Найти отражающую метку среди обычных, локализовать цель. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения; Подготовленный реквизит или внешний датчик. Условия: Алгоритм отличает подготовленный отклик, а не любой ценный или металлический объект.",
+                "en": "Search by reflection. Action: Use the camera to notice the light response of the prepared object. Application: Find a reflective mark among ordinary ones, localize the target. Requirements: Rear LED and control from the application; Camera and proprietary image analysis; Prepared props or external sensor. Conditions: The algorithm distinguishes the prepared response, and not any valuable or metal object."
+              }
+            },
+            {
+              "id": "variant-55",
+              "text": {
+                "ru": "Прицел с накоплением. Действие: Удерживать распознанный объект в рамке при включённом LED. Применение: «Просканировать» улику, зарегистрировать находку, считать игровой образец. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения; Программное игровое правило. Условия: Накопление является правилом игры; реальное содержание объекта так не измеряется.",
+                "en": "Stacked sight. Action: Hold the recognized object in the frame when the LED is on. Application: “Scan” evidence, register a find, read a game sample. Requirements: Rear LED and control from the application; Camera and proprietary image analysis; Software game rule. Conditions: Accumulation is the rule of the game; the real content of an object is not measured this way."
+              }
+            },
+            {
+              "id": "variant-56",
+              "text": {
+                "ru": "Следы, видимые только в приложении. Действие: Показывать виртуальные метки, когда активен фонарик и камера наведена на зону. Применение: AR-детектив, поиск призраков, скрытые надписи. Требования: Задний LED и управление из приложения; Камера и пространственный трекинг; Программное игровое правило. Условия: Следы рисует приложение; белый LED не проявляет произвольные невидимые чернила.",
+                "en": "Traces visible only in the application. Action: Show virtual markers when the flashlight is active and the camera is pointed at the area. Application: AR detective, ghost hunting, hidden inscriptions. Requirements: Rear LED and app control; Camera and spatial tracking; Software game rule. Conditions: Traces are drawn by the application; white LED does not show random invisible ink."
+              }
+            },
+            {
+              "id": "variant-57",
+              "text": {
+                "ru": "Карта обследованных участков. Действие: Отмечать зоны, на которые игрок навёл камеру с включённым фонариком. Применение: Поиск пропущенных точек, обследование виртуальной комнаты. Требования: Задний LED и управление из приложения; Камера и пространственный трекинг; Программное игровое правило. Условия: Трекинг оценивает обзор, а не гарантирует реальное освещение каждого участка.",
+                "en": "Map of surveyed areas. Action: Mark areas where the player pointed the camera with the flashlight on. Application: Search for missed points, explore a virtual room. Requirements: Rear LED and control from the application; Camera and spatial tracking; Software game rule. Conditions: Tracking evaluates the view and does not guarantee actual coverage of each area."
+              }
+            },
+            {
+              "id": "variant-58",
+              "text": {
+                "ru": "Фотография как подтверждение. Действие: После подсветки сделать кадр с нужным предметом или композицией. Применение: Фотоохота, доказательство прохождения квеста, коллекция находок. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Нужен способ проверки кадра: человек, метка или распознавание; хранение фото не обязательно.",
+                "en": "Photo as confirmation. Action: After illumination, take a shot with the desired object or composition. Application: Photo hunt, proof of completion of a quest, collection of finds. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: You need a way to check the frame: person, tag or recognition; Photo storage is not necessary."
+              }
+            },
+            {
+              "id": "variant-59",
+              "text": {
+                "ru": "Светящийся маяк в кадре. Действие: Другой камерой наблюдать LED как заметную точку. Применение: Простое световое наведение, отслеживание реквизита, лаборатория сигналов. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Одна точка даёт ограниченные данные; засветка, перекрытие и фон мешают трекингу.",
+                "en": "Glowing beacon in the frame. Action: Observe the LED as a conspicuous point with another camera. Application: Simple light guidance, prop tracking, signal laboratory. Requirements: Rear LED and app control; Camera and proprietary image analysis; Multiple devices/participants; sometimes an observer is enough. Conditions: One point provides limited data; flare, overlap and background interfere with tracking."
+              }
+            },
+            {
+              "id": "variant-60",
+              "text": {
+                "ru": "Несколько ракурсов под разным светом. Действие: Снимать неподвижный объект при переносе источника. Применение: Исследование фактуры, художественная документация, прототип восстановления рельефа. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения; Подготовленный реквизит или внешний датчик; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Точное восстановление формы требует калибровки и алгоритма; телефонный свет не готовый 3D-сканер.",
+                "en": "Several angles under different light. Action: Shoot a stationary object while moving the source. Application: Texture research, art documentation, relief restoration prototype. Requirements: Rear LED and control from the application; Camera and proprietary image analysis; Prepared props or external sensor; Multiple devices/participants; sometimes an observer is enough. Conditions: Accurate shape restoration requires calibration and algorithm; telephone light not ready 3D scanner."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-world",
+      "section": "section-1",
+      "title": {
+        "ru": "Изменение игрового мира",
+        "en": "Changing the game world"
+      },
+      "description": {
+        "ru": "Все эффекты этого раздела программные; LED связывает действие на экране с ощущением света в комнате.",
+        "en": "All effects in this section are software; LED links the action on the screen to the feeling of light in the room."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-world-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-61",
+              "text": {
+                "ru": "Проявление скрытого. Действие: Свет делает видимым виртуальный слой информации. Применение: Секретные платформы, надписи, дополнительная карта. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Объекты существуют в игре или AR; реальный LED не создаёт новый слой предмета.",
+                "en": "Revealing the hidden. Action: Light makes the virtual layer of information visible. Application: Secret platforms, inscriptions, additional map. Requirements: Rear LED and control from the application; Software game rule. Conditions: Objects exist in the game or AR; real LED does not create a new layer of the object."
+              }
+            },
+            {
+              "id": "variant-62",
+              "text": {
+                "ru": "Зарядка объекта. Действие: Накапливать прогресс, пока свет включён или наведён на цель. Применение: Зарядить маяк, открыть дверь, оживить механизм. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Это виртуальная энергия; настоящий аккумулятор устройства от света фонарика не заряжается.",
+                "en": "Charging an object. Action: Accumulate progress while the light is on or aimed at the target. Application: Charge the beacon, open the door, revive the mechanism. Requirements: Rear LED and control from the application; Software game rule. Conditions: This is virtual energy; The real battery of the device is not charged from the flashlight."
+              }
+            },
+            {
+              "id": "variant-63",
+              "text": {
+                "ru": "Разрушение светом. Действие: Уменьшать прочность объекта при длительном освещении. Применение: Удалить виртуальную плесень, разрушить тёмную оболочку. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Никакое физическое разрушение обычным LED не подразумевается.",
+                "en": "Destruction by light. Action: Reduce the strength of an object under prolonged illumination. Application: Remove virtual mold, destroy the dark shell. Requirements: Rear LED and control from the application; Software game rule. Conditions: No physical destruction is implied by conventional LED."
+              }
+            },
+            {
+              "id": "variant-64",
+              "text": {
+                "ru": "Восстановление светом. Действие: Восстанавливать здоровье или состояние игровой сущности. Применение: Лечить союзника, возвращать цвет миру, чинить виртуальный предмет. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Лечение относится только к игровой системе.",
+                "en": "Restoration with light. Action: Restore the health or condition of a game entity. Application: Heal an ally, return color to the world, repair a virtual object. Requirements: Rear LED and control from the application; Software game rule. Conditions: Treatment applies only to the gaming system."
+              }
+            },
+            {
+              "id": "variant-65",
+              "text": {
+                "ru": "Рост и развитие. Действие: Освещение продвигает виртуальное растение или существо на следующую стадию. Применение: Сад-головоломка, выращивание моста, уход за существом. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Реальные сроки роста растений фонарик таким правилом не воспроизводит.",
+                "en": "Growth and development. Action: Lighting promotes the virtual plant or creature to the next stage. Application: Puzzle garden, bridge growing, creature care. Requirements: Back LED and app control; Software game rule. Conditions: The flashlight does not reproduce the actual growth periods of plants using this rule."
+              }
+            },
+            {
+              "id": "variant-66",
+              "text": {
+                "ru": "Остановка движения. Действие: Удерживать цель неподвижной, пока она освещена. Применение: Заморозить врага, остановить механизм, удержать дверь. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Если важна реальная цель, необходима дополнительная камера или метка.",
+                "en": "Stopping movement. Action: Hold the target motionless while it is illuminated. Application: Freeze the enemy, stop the mechanism, hold the door. Requirements: Rear LED and app control; Software game rule. Conditions: If the actual target is important, an additional camera or tag is needed."
+              }
+            },
+            {
+              "id": "variant-67",
+              "text": {
+                "ru": "Запуск движения. Действие: Освещённый объект начинает двигаться или работать. Применение: Запустить лифт, разбудить робота, включить конвейер. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Реальному реквизиту нужен фотодатчик или иной канал управления.",
+                "en": "Starting the movement. Action: The illuminated object begins to move or work. Application: Start the elevator, wake up the robot, turn on the conveyor. Requirements: Rear LED and control from the application; Software game rule. Conditions: Real props need a photosensor or other control channel."
+              }
+            },
+            {
+              "id": "variant-68",
+              "text": {
+                "ru": "Смена состояния. Действие: Переводить объект между формами или режимами светом. Применение: Твёрдое/прозрачное, открытое/закрытое, союзник/противник. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Правило можно привязать к включению LED без измерения реального пятна.",
+                "en": "Change of state. Action: Translate an object between shapes or modes with light. Application: Solid/transparent, open/closed, ally/enemy. Requirements: Rear LED and app control; Software game rule. Conditions: The rule can be tied to turning on the LED without measuring the actual spot."
+              }
+            },
+            {
+              "id": "variant-69",
+              "text": {
+                "ru": "Создание маршрута. Действие: Освещение временно делает участок проходимым. Применение: Мост из света, проявляемая лестница, дорожка для спутника. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Речь о виртуальной геометрии; физическая комната не становится безопасной трассой автоматически.",
+                "en": "Creating a route. Action: Lighting temporarily makes the area passable. Application: Bridge of light, manifested staircase, path for a companion. Requirements: Rear LED and control from the application; Software game rule. Conditions: We are talking about virtual geometry; a physical room does not automatically become a safe route."
+              }
+            },
+            {
+              "id": "variant-70",
+              "text": {
+                "ru": "Логика «И/ИЛИ/НЕ». Действие: Сочетать освещённость нескольких игровых целей. Применение: Дверь открыта при двух активных маяках и одном погашенном. Требования: Задний LED и управление из приложения; Программное игровое правило; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Для реальных одновременных целей нужны приёмники; игровую логику можно считать по сети.",
+                "en": "Logic \"AND/OR/NOT\". Action: Combine the illumination of several game targets. Application: The door is open with two active beacons and one extinguished. Requirements: Rear LED and control from the application; Software game rule; Multiple devices/participants; sometimes an observer is enough. Conditions: For real simultaneous purposes, receivers are needed; game logic can be read over the network."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-agents",
+      "section": "section-1",
+      "title": {
+        "ru": "Поведение существ, скрытность и внимание",
+        "en": "Creature behavior, stealth and attention"
+      },
+      "description": {
+        "ru": "Свет меняет поведение виртуального противника или правила согласованной живой игры.",
+        "en": "Light changes the behavior of a virtual opponent or the rules of a matched live game."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-agents-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-71",
+              "text": {
+                "ru": "Отпугивание. Действие: Освещённая цель отступает. Применение: Защита от виртуальных теней, освобождение прохода. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Реальные животные не являются предсказуемыми игровыми агентами.",
+                "en": "Scaring away. Action: The illuminated target retreats. Application: Protection from virtual shadows, clearing the passage. Requirements: Rear LED and control from the application; Software game rule. Conditions: Real animals are not predictable game agents."
+              }
+            },
+            {
+              "id": "variant-72",
+              "text": {
+                "ru": "Приманивание. Действие: Существо движется к свету. Применение: Привести виртуального спутника, отвлечь противника. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Реакцию задаёт программа или согласованные правила участников.",
+                "en": "Luring. Action: The creature moves towards the light. Application: Bring a virtual companion, distract the enemy. Requirements: Rear LED and control from the application; Software game rule. Conditions: The reaction is set by the program or the agreed rules of the participants."
+              }
+            },
+            {
+              "id": "variant-73",
+              "text": {
+                "ru": "Взгляд останавливает врага. Действие: Противник двигается только вне освещённого сектора. Применение: Хоррор на распределение внимания, охрана нескольких направлений. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Нужна модель сектора; виртуальную видимость вычисляет игра.",
+                "en": "The gaze stops the enemy. Action: The enemy moves only outside the illuminated sector. Application: Horror for the distribution of attention, protection of several directions. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: A sector model is needed; virtual visibility is calculated by the game..."
+              }
+            },
+            {
+              "id": "variant-74",
+              "text": {
+                "ru": "Короткое оглушение. Действие: Импульс временно прерывает действие игровой цели. Применение: Парирование атаки, создание окна для побега. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Эффект виртуальный; не направлять реальные импульсы людям в глаза.",
+                "en": "Short stun. Action: The impulse temporarily interrupts the action of the game target. Application: Parrying an attack, creating a window for escape. Requirements: Rear LED and control from the application; Software game rule. Conditions: The effect is virtual; do not direct real impulses into people's eyes."
+              }
+            },
+            {
+              "id": "variant-75",
+              "text": {
+                "ru": "Раскрытие маскировки. Действие: Под светом виден настоящий тип существа. Применение: Поиск самозванца, проверка двойников, дедукция. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Для живой игры роль раскрывает человек или приложение по договорённому правилу.",
+                "en": "Revealing the disguise. Action: Under the light, the real type of the creature is visible. Application: Search for the impostor, checking doubles, deduction. Requirements: Rear LED and control from the application; Software game rule. Conditions: For a live game, the role is revealed by a person or an application according to an agreed rule."
+              }
+            },
+            {
+              "id": "variant-76",
+              "text": {
+                "ru": "Маскировка выключением. Действие: Погасить фонарик, чтобы снизить игровую заметность. Применение: Стелс, прятки по правилам, переход между укрытиями. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Реальная видимость также зависит от внешнего освещения; её не выводят только из состояния LED.",
+                "en": "Masking by switching off. Action: Turn off the flashlight to reduce game visibility. Application: Stealth, hide and seek according to the rules, transition between shelters. Requirements: Rear LED and control from the application; Software game rule. Conditions: Actual visibility also depends on ambient lighting; it is not removed only from the LED state."
+              }
+            },
+            {
+              "id": "variant-77",
+              "text": {
+                "ru": "Компромисс «вижу и выдаю себя». Действие: Включение помогает исследовать, но повышает риск обнаружения. Применение: Хоррор, охота за предметами, тактический выбор момента. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Игровое обнаружение должно иметь понятное правило и обратную связь.",
+                "en": "The compromise “I see and give myself away.” Action: Turning on helps exploration, but increases the risk of detection. Application: Horror, object hunting, tactical timing. Requirements: Rear LED and app control; Software game rule. Conditions: Game detection must have a clear rule and feedback."
+              }
+            },
+            {
+              "id": "variant-78",
+              "text": {
+                "ru": "Отвлечение в сторону. Действие: Направить источник в другую область, чтобы увести внимание агента. Применение: Спасение спутника, обход охраны, управление толпой виртуальных существ. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Реальный «световой след» для агента требует внешнего наблюдения.",
+                "en": "A distraction aside. Action: Direct the source to another area to divert the agent's attention. Application: Rescue a companion, bypass security, control a crowd of virtual creatures. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: A real “light trail” for an agent requires external observation."
+              }
+            },
+            {
+              "id": "variant-79",
+              "text": {
+                "ru": "Сопровождение союзника. Действие: Держать свет на спутнике или его пути, чтобы он продвигался. Применение: Провести персонажа через тьму, совместить защиту и навигацию. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: Игра оценивает свою цель; трекинг человека в комнате является отдельной задачей.",
+                "en": "Accompanying an ally. Action: Keep a light on the companion or his path so that he moves forward. Application: Guide the character through the darkness, combine defense and navigation. Requirements: Rear LED and app control; Motion sensors and calibration; Software game rule. Conditions: The game evaluates its goal; tracking a person in a room is a separate task."
+              }
+            },
+            {
+              "id": "variant-80",
+              "text": {
+                "ru": "Запретная цель. Действие: Освещать полезные объекты, не касаясь опасных. Применение: «Не буди спящего», пазл на аккуратность, испытание внимания. Требования: Задний LED и управление из приложения; Датчики движения и калибровка; Программное игровое правило. Условия: При широком реальном луче точное разделение целей может быть невозможно без экранирования.",
+                "en": "Forbidden target. Action: Illuminate useful objects without touching dangerous ones. Application: “Don’t wake a sleeping person”, puzzle for accuracy, test of attention. Requirements: Rear LED and control from the application; Motion sensors and calibration; Software game rule. Conditions: With a wide real beam, accurate target separation may not be possible without shielding."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-economy",
+      "section": "section-1",
+      "title": {
+        "ru": "Ресурс, риск и ограничения",
+        "en": "Resource, risk and limitations"
+      },
+      "description": {
+        "ru": "Модификаторы создают выбор цены и момента использования света.",
+        "en": "Modifiers create a choice of price and when to use the light."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-economy-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-81",
+              "text": {
+                "ru": "Виртуальная батарея. Действие: Уменьшать запас при включённом свете. Применение: Выживание, короткие разведывательные вылазки, планирование маршрута. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Использовать отдельный игровой ресурс; реальный разряд телефона не подходит как справедливая шкала.",
+                "en": "Virtual battery. Action: Reduce reserve when the lights are on. Application: Survival, short reconnaissance missions, route planning. Requirements: Rear LED and app control; Software game rule. Conditions: Use a separate game resource; The actual phone discharge does not serve as a fair scale."
+              }
+            },
+            {
+              "id": "variant-82",
+              "text": {
+                "ru": "Цена мощности. Действие: Яркий режим расходует игровой запас быстрее слабого. Применение: Выбор дальности виртуального обзора и экономии. Требования: Задний LED и управление из приложения; Поддержка регулировки яркости; Программное игровое правило. Условия: Игровые числа задаёт дизайнер; аппаратные уровни не соответствуют одинаковым люксам на разных телефонах.",
+                "en": "Power price. Action: The bright mode consumes the game reserve faster than the weak one. Application: Selecting the virtual viewing range and saving. Requirements: Rear LED and control from the application; Support brightness adjustment; Software game rule. Conditions: Game numbers are set by the designer; hardware levels do not correspond to the same luxes on different phones."
+              }
+            },
+            {
+              "id": "variant-83",
+              "text": {
+                "ru": "Ограниченное число импульсов. Действие: Выдать игроку несколько включений до пополнения. Применение: Фотоохота, дефицит сканирования, решение на основе неполной информации. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Считать успешные игровые команды, учитывая аппаратный отказ фонарика.",
+                "en": "Limited number of pulses. Action: Give the player several activations before replenishment. Application: Photo hunting, scan deficit, decision based on incomplete information. Requirements: Rear LED and control from the application; Software game rule. Conditions: Count successful game commands, taking into account flashlight hardware failure."
+              }
+            },
+            {
+              "id": "variant-84",
+              "text": {
+                "ru": "Перезарядка между применениями. Действие: После действия выдержать программную паузу. Применение: Тактическое парирование, редкий осмотр, очередность команды. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Это игровой cooldown; не требует реального нагрева.",
+                "en": "Recharge between uses. Action: After the action, maintain a program pause. Application: Tactical parry, rare inspection, command sequence. Requirements: Rear LED and control from the application; Software game rule. Conditions: This is a gaming cooldown; does not require real heating."
+              }
+            },
+            {
+              "id": "variant-85",
+              "text": {
+                "ru": "Цена непрерывности. Действие: Действие полезно только после длительного удержания. Применение: Рискованное сканирование под атакой, настройка маяка. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Время удержания должно быть посильно одной руке и не требовать максимального света.",
+                "en": "The price of continuity. Action: The action is only useful after a long hold. Application: Risky scanning under attack, setting up a beacon. Requirements: Rear LED and control from the application; Software game rule. Conditions: The holding time should be manageable with one hand and should not require maximum light."
+              }
+            },
+            {
+              "id": "variant-86",
+              "text": {
+                "ru": "Накопленная цена серии. Действие: Последовательные включения увеличивают виртуальную нагрузку. Применение: Выбор между частым поиском и восстановлением ресурса. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Сброс и пороги заданы программно; температура железа не игровой счётчик.",
+                "en": "Accumulated series price. Action: Consecutive switching on increases the virtual load. Application: Choice between frequent resource search and restoration. Requirements: Rear LED and control from the application; Software game rule. Conditions: Reset and thresholds are set by software; iron temperature is not a game counter."
+              }
+            },
+            {
+              "id": "variant-87",
+              "text": {
+                "ru": "Обмен видимости на другое действие. Действие: Поддержание света занимает кнопку, руку или режим. Применение: Нельзя одновременно светить и взаимодействовать с инструментом. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Не блокировать реальные системные функции; ограничение действует внутри игры.",
+                "en": "Exchange visibility for another action. Action: Maintaining the light takes a button, hand or mode. Application: You cannot light and interact with the tool at the same time. Requirements: Rear LED and app control; Software game rule. Conditions: Do not block real system functions; The restriction applies within the game."
+              }
+            },
+            {
+              "id": "variant-88",
+              "text": {
+                "ru": "Пополнение в определённой зоне. Действие: Восстанавливать игровой запас только у станций. Применение: Маршрут между убежищами, доставка энергии, возврат к базе. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Станция может быть виртуальной или распознаваться по метке; это не зарядка телефона.",
+                "en": "Replenishment in a certain zone. Action: Restore game reserves only at stations. Application: Route between shelters, energy delivery, return to base. Requirements: Rear LED and control from the application; Software game rule. Conditions: The station can be virtual or recognized by a tag; This is not a phone charger."
+              }
+            },
+            {
+              "id": "variant-89",
+              "text": {
+                "ru": "Нестабильный инструмент. Действие: Игра временно ограничивает свет или предупреждает о сбое. Применение: Сюжетное напряжение, ремонт, выбор запасного средства. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Сбой задаётся явно и не должен маскировать настоящий отказ оборудования.",
+                "en": "Unstable instrument. Action: The game temporarily limits the light or warns of a failure. Application: Plot tension, repair, selection of a backup. Requirements: Rear LED and control from the application; Software game rule. Conditions: The failure is specified explicitly and should not mask a real hardware failure."
+              }
+            },
+            {
+              "id": "variant-90",
+              "text": {
+                "ru": "Общий бюджет света. Действие: У команды один запас или ограничение на число активных фонарей. Применение: Распределить роли разведчика и охраны, совместная экономия. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Программное игровое правило. Условия: Состояние синхронизируется приложениями; реальный расход батарей остаётся индивидуальным.",
+                "en": "Total light budget. Action: The team has one supply or a limit on the number of active lights. Application: Distribute the roles of scout and guard, joint savings. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough; Software game rule. Conditions: State is synchronized by applications; actual battery consumption remains individual."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-multiplayer",
+      "section": "section-1",
+      "title": {
+        "ru": "Кооператив, соревнование и связь",
+        "en": "Cooperation, competition and communication"
+      },
+      "description": {
+        "ru": "Появляются несколько источников, наблюдатель или отдельный световой приёмник.",
+        "en": "Several sources, an observer or a separate light receiver appear."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-multiplayer-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-91",
+              "text": {
+                "ru": "Отправитель и наблюдатель. Действие: Один передаёт свет, второй читает и действует. Применение: Асимметричный квест, связь через окно комнаты, обучение коду. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Получателем может быть человек; автоматическая связь требует камеры или фотодатчика.",
+                "en": "Sender and observer. Action: One transmits light, the second reads and acts. Application: Asymmetrical quest, communication through a room window, code training. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough. Conditions: The recipient can be a person; automatic communication requires a camera or photosensor."
+              }
+            },
+            {
+              "id": "variant-92",
+              "text": {
+                "ru": "Световой ответ-подтверждение. Действие: Второй участник отвечает после получения сообщения. Применение: Проверка связи, совместный пароль, последовательность запрос–ответ. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Устройства могут обмениваться данными по сети; тогда свет является интерфейсом, а не каналом передачи.",
+                "en": "Light response-confirmation. Action: The second participant responds after receiving the message. Application: Ping test, shared password, challenge-response sequence. Requirements: Rear LED and app control; Multiple devices/participants; sometimes an observer is enough. Conditions: Devices can exchange data over the network; then light is an interface, not a transmission channel."
+              }
+            },
+            {
+              "id": "variant-93",
+              "text": {
+                "ru": "Эстафета сообщений. Действие: Каждый получает рисунок и передаёт его дальше. Применение: Командная память, световой «испорченный телефон», цепочка комнат. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Ошибки чтения становятся частью игры, если это явно заявлено правилами.",
+                "en": "Message relay. Action: Everyone receives a drawing and passes it on. Application: Command memory, light “damaged phone”, chain of rooms. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough. Conditions: Reading errors become part of the game if explicitly stated in the rules."
+              }
+            },
+            {
+              "id": "variant-94",
+              "text": {
+                "ru": "Синхронное включение. Действие: Несколько игроков включают свет в согласованное окно. Применение: Открыть общий виртуальный замок, командный ритм. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Программное игровое правило. Условия: Для точной оценки использовать синхронизированные игровые часы и допуск задержек.",
+                "en": "Synchronous activation. Action: Multiple players turn on the lights in an agreed window. Application: Open a shared virtual lock, team rhythm. Requirements: Rear LED and app control; Multiple devices/participants; sometimes an observer is enough; Software game rule. Conditions: For an accurate estimate, use synchronized game clocks and latency tolerances."
+              }
+            },
+            {
+              "id": "variant-95",
+              "text": {
+                "ru": "Чередование источников. Действие: Игроки поддерживают освещение по очереди без больших пауз. Применение: Передача роли, сопровождение объекта, общий временной мост. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Программное игровое правило. Условия: Программа может оценивать команды; непрерывный реальный свет проверяет внешний приёмник.",
+                "en": "Alternation of sources. Action: Players maintain lighting in turns without long pauses. Application: Role transfer, object tracking, general temporary bridge. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough; Software game rule. Conditions: The program can evaluate teams; continuous real light checks external receiver."
+              }
+            },
+            {
+              "id": "variant-96",
+              "text": {
+                "ru": "Несколько направлений одновременно. Действие: Источники освещают разные стороны одной сцены. Применение: Пазл на тени, кооперативный обзор, несколько виртуальных переключателей. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Подготовленный реквизит или внешний датчик. Условия: Реальную сцену проектировать с учётом широких лучей и взаимных засветок.",
+                "en": "Several directions at the same time. Action: Sources illuminate different sides of the same scene. Application: Shadow puzzle, cooperative review, several virtual switches. Requirements: Rear LED and app control; Multiple devices/participants; sometimes an observer is enough; Prepared props or external sensor. Conditions: Design the real scene taking into account wide beams and mutual illumination."
+              }
+            },
+            {
+              "id": "variant-97",
+              "text": {
+                "ru": "Разделённая информация. Действие: У одного есть карта или инструкция, у другого фонарик. Применение: «Сапёр» с голосовым навигатором, квест с разведчиком. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Программное игровое правило. Условия: Свет даёт исполнительную роль; для связи не обязательно распознавать его камерой.",
+                "en": "Separated information. Action: One has a map or instructions, the other has a flashlight. Application: “Mineweeper” with a voice navigator, quest with a scout. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough; Software game rule. Conditions: Light gives an executive role; It is not necessary to recognize it by the camera for communication."
+              }
+            },
+            {
+              "id": "variant-98",
+              "text": {
+                "ru": "Поиск владельца сигнала. Действие: Сопоставить видимый рисунок с заданным участником. Применение: Поиск пары, знакомство в группе, распределение команд. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Это игровой идентификатор, который можно скопировать; он не удостоверяет личность.",
+                "en": "Finding the owner of the signal. Action: Match the visible picture with a given participant. Application: Search for a pair, acquaintance in a group, distribution of teams. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough. Conditions: This is a game ID that can be copied; he doesn't provide identification..."
+              }
+            },
+            {
+              "id": "variant-99",
+              "text": {
+                "ru": "Перекрытие канала. Действие: Поставить препятствие между источником и приёмником по правилам. Применение: Настольная защита маяка, соревнование за линию видимости. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Подготовленный реквизит или внешний датчик. Условия: Нужен наблюдатель или датчик; не использовать ослепление чужой камеры или человека как цель.",
+                "en": "Channel blocking. Action: Place an obstacle between the source and receiver according to the rules. Application: Tabletop protection of the beacon, competition for line of sight. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough; Prepared props or external sensor. Conditions: An observer or sensor is required; Do not use the blinding of someone else's camera or person as a target."
+              }
+            },
+            {
+              "id": "variant-100",
+              "text": {
+                "ru": "Управление физическим реквизитом. Действие: Светить на фотодатчик, который включает отдельное устройство. Применение: Замок квеста, игрушечный робот, интерактивная модель. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Нужны внешний фотодатчик, контроллер и порог с учётом внешнего света.",
+                "en": "Physical props management. Action: Shine on a photo sensor that turns on a separate device. Application: Quest castle, toy robot, interactive model. Requirements: Rear LED and app control; Prepared props or external sensor. Conditions: You need an external photosensor, controller and threshold taking into account external light."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-feedback",
+      "section": "section-1",
+      "title": {
+        "ru": "Обратная связь, повествование и атмосфера",
+        "en": "Feedback, storytelling and atmosphere"
+      },
+      "description": {
+        "ru": "Фонарик становится выходным каналом приложения, а не только инструментом игрока.",
+        "en": "The flashlight becomes an output channel of the application, and not just a tool for the player."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-feedback-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-101",
+              "text": {
+                "ru": "Подтверждение события. Действие: После действия ненадолго включить свет или изменить его уровень. Применение: Успешное сканирование, начало этапа, подтверждение команды. Требования: Задний LED и управление из приложения. Условия: Для игрока, который смотрит на экран, нужны также текст, звук или вибрация.",
+                "en": "Event confirmation. Action: After the action, briefly turn on the light or change its level. Application: Successful scanning, start of the stage, confirmation of the command. Requirements: Rear LED and control from the application. Conditions: Text, sound or vibration are also needed for the player looking at the screen."
+              }
+            },
+            {
+              "id": "variant-102",
+              "text": {
+                "ru": "Световой таймер. Действие: Изменять состояние света по мере приближения срока. Применение: Граница раунда, очередь игрока, напоминание внутри приложения. Требования: Задний LED и управление из приложения. Условия: Не рассчитывать на непрерывную работу в фоне без проверки платформенных условий.",
+                "en": "Light timer. Action: Change light state as time approaches. Application: Round boundary, player turn, in-app reminder. Requirements: Rear LED and app control. Conditions: Do not expect continuous background work without checking platform conditions."
+              }
+            },
+            {
+              "id": "variant-103",
+              "text": {
+                "ru": "Условный индикатор близости. Действие: Менять рисунок света при приближении к игровой цели. Применение: «Горячо–холодно», поиск виртуального предмета. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Расстояние берётся из игры, меток, геопозиции или трекинга; LED его не измеряет.",
+                "en": "Conditional indicator of proximity. Action: Change the light pattern when approaching the game target. Application: “Hot-cold”, search for a virtual object. Requirements: Rear LED and control from the application; Software game rule. Conditions: Distance is taken from the game, tags, geolocation or tracking; LED doesn't measure it."
+              }
+            },
+            {
+              "id": "variant-104",
+              "text": {
+                "ru": "Режим прибора. Действие: Разным устойчивым состояниям света назначить игровые значения. Применение: Готовность инструмента, тревога, безопасная зона. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Белому LED доступно ограниченное число различимых состояний; не перегружать код.",
+                "en": "Device mode. Action: Assign game values ​​to different stable states of light. Application: Instrument readiness, alarm, safe zone. Requirements: Rear LED and app control; Software game rule. Conditions: White LED has a limited number of distinguishable states; don't overload the code."
+              }
+            },
+            {
+              "id": "variant-105",
+              "text": {
+                "ru": "Свет в ритме звука. Действие: Сопровождать аудиособытия включениями или изменением яркости. Применение: Музыкальная инсталляция, сюжетная реплика устройства. Требования: Задний LED и управление из приложения; Микрофон для внешнего звука; Поддержка регулировки яркости. Условия: Для своей музыки микрофон не нужен; для внешней требуется анализ звука и задержек.",
+                "en": "Light in the rhythm of sound. Action: Accompany audio events by turning on or changing brightness. Application: Music installation, plot replica of the device. Requirements: Rear LED and control from the application; Microphone for external sound; Support brightness adjustment. Conditions: You don’t need a microphone for your music; for external, sound and delay analysis is required."
+              }
+            },
+            {
+              "id": "variant-106",
+              "text": {
+                "ru": "Сюжетная неисправность. Действие: Погасить или ослабить свет в предусмотренный момент. Применение: Драматическая пауза, потеря связи, появление угрозы. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Предусмотреть версию без мерцания; не подменять этим системное предупреждение.",
+                "en": "Plot glitch. Action: Turn off or dim the light at the intended moment. Application: Dramatic pause, loss of connection, appearance of a threat. Requirements: Rear LED and control from the application; Software game rule. Conditions: Provide a flicker-free version; Do not substitute this for a system warning."
+              }
+            },
+            {
+              "id": "variant-107",
+              "text": {
+                "ru": "Световая реплика персонажа. Действие: Персонаж отвечает длительностью или рисунком включений. Применение: Робот-компаньон, безмолвное существо, разговор через сигналы. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Ответы интерпретируются как условный язык, который сначала нужно научить читать.",
+                "en": "Light replica of the character. Action: The character responds with the duration or pattern of switching on. Application: Robot companion, silent creature, talking through signals. Requirements: Rear LED and control from the application; Software game rule. Conditions: Answers are interpreted as conventional language, which must first be taught to read."
+              }
+            },
+            {
+              "id": "variant-108",
+              "text": {
+                "ru": "Освещение реального окружения по сцене. Действие: Менять свет в комнате синхронно с игрой. Применение: Гроза без быстрых вспышек, поиск в темноте, сюжетный осмотр. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Один телефон даёт локальный свет; величина эффекта зависит от помещения.",
+                "en": "Lighting the real environment around the scene. Action: Change the light in the room synchronously with the game. Application: Thunderstorm without fast flashes, searching in the dark, scene inspection. Requirements: Rear LED and control from the application; Software game rule. Conditions: One telephone provides local light; The magnitude of the effect depends on the room."
+              }
+            },
+            {
+              "id": "variant-109",
+              "text": {
+                "ru": "Воспроизведение чужого действия. Действие: Показывать фонариком переданные команды партнёра или записи. Применение: Асинхронный след, «эхо» исследователя, световая партитура. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя; Программное игровое правило. Условия: Нужно различать живой сетевой ввод и заранее записанную последовательность.",
+                "en": "Reproduction of someone else's action. Action: Show transmitted partner commands or recordings with a flashlight. Application: Asynchronous trace, “echo” of the researcher, light score. Requirements: Rear LED and control from the application; Multiple devices/participants; sometimes an observer is enough; Software game rule. Conditions: A distinction must be made between live network input and a pre-recorded sequence."
+              }
+            },
+            {
+              "id": "variant-110",
+              "text": {
+                "ru": "Согласование каналов. Действие: Дублировать свет звуком, вибрацией, текстом или большим индикатором. Применение: Понятный интерфейс для разных условий зрения и слуха. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Эквивалентный канал должен сохранять смысл и временное окно действия.",
+                "en": "Channel coordination. Action: Duplicate light with sound, vibration, text or a large indicator. Application: Clear interface for different visual and hearing conditions. Requirements: Rear LED and control from the application; Software game rule. Conditions: The equivalent channel must preserve the meaning and time window of action."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-practice",
+      "section": "section-1",
+      "title": {
+        "ru": "Творчество, обучение и бытовые задачи",
+        "en": "Creativity, learning and everyday tasks"
+      },
+      "description": {
+        "ru": "Самостоятельные применения и соседние варианты с экраном вместо заднего LED.",
+        "en": "Independent applications and adjacent options with a screen instead of a rear LED."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-practice-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-111",
+              "text": {
+                "ru": "Локальное освещение. Действие: Направлять свет на рабочую область и выбирать удобный угол. Применение: Найти предмет, прочитать маркировку, осмотреть доступную нишу. Требования: Задний LED и управление из приложения. Условия: Дальность, блики и длительность работы проверяются на конкретном телефоне.",
+                "en": "Local lighting. Action: Direct the light onto the work area and select a convenient angle. Application: Find an object, read the markings, inspect an accessible niche. Requirements: Rear LED and control from the application. Conditions: Range, glare and operating time are tested on a specific phone."
+              }
+            },
+            {
+              "id": "variant-112",
+              "text": {
+                "ru": "Чтение и настольная работа. Действие: Светить на страницу или деталь, удерживая телефон в удобной позиции. Применение: Чтение бумажных правил, работа с настольной игрой, сборка макета. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Нужна устойчивая подставка или свободная рука; не перекрывать теплоотвод.",
+                "en": "Reading and desk work. Action: Shine light on a page or part while holding the phone in a comfortable position. Application: Reading paper rules, working with a board game, assembling a layout. Requirements: Rear LED and app control; Prepared props or external sensor. Conditions: Requires a stable stand or a free hand; do not block the heat sink."
+              }
+            },
+            {
+              "id": "variant-113",
+              "text": {
+                "ru": "Подсветка фото и видео. Действие: Использовать постоянный свет для съёмки вместо короткой вспышки. Применение: Предметная съёмка, стоп-моушен, видеосвязь при подходящем расположении. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения. Условия: Постоянный фонарик и фотографическая вспышка являются разными режимами камеры.",
+                "en": "Photo and video illumination. Action: Use constant light for shooting instead of a short flash. Application: Product photography, stop motion, video communication with a suitable location. Requirements: Rear LED and control from the application; Camera and proprietary image analysis. Conditions: Constant flashlight and photographic flash are different camera modes."
+              }
+            },
+            {
+              "id": "variant-114",
+              "text": {
+                "ru": "Светопись. Действие: Двигать включённый LED перед камерой с длительной выдержкой. Применение: Надпись светом, рисунок траектории, художественная фотография. Требования: Задний LED и управление из приложения; Камера и собственный анализ изображения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Нужна отдельная камера или другой телефон; собственная задняя камера не видит свой LED напрямую.",
+                "en": "Light painting. Action: Move the turned on LED in front of the camera with a long shutter speed. Application: Inscription with light, trajectory drawing, artistic photography. Requirements: Rear LED and control from the application; Camera and proprietary image analysis; Multiple devices/participants; sometimes an observer is enough. Conditions: You need a separate camera or another phone; The own rear camera does not see its LED directly."
+              }
+            },
+            {
+              "id": "variant-115",
+              "text": {
+                "ru": "Кукольный театр. Действие: Использовать телефон как сценический свет для миниатюр. Применение: Домашний спектакль, пересказ сказки, прототип кат-сцены. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Это человеческое исполнение; распознавание действий приложением необязательно.",
+                "en": "Puppet theater. Action: Use the phone as a stage light for miniatures. Application: Home performance, fairy tale retelling, cut scene prototype. Requirements: Rear LED and app control; Prepared props or external sensor. Conditions: This is a human performance; Recognition of actions by the application is optional."
+              }
+            },
+            {
+              "id": "variant-116",
+              "text": {
+                "ru": "Оптический эксперимент. Действие: Менять одну переменную: расстояние, угол, материал или препятствие. Применение: Показать тень, отражение и относительное изменение освещённости. Требования: Задний LED и управление из приложения; Подготовленный реквизит или внешний датчик. Условия: Для количественных выводов нужен откалиброванный измеритель; не считать камеру готовым люксметром.",
+                "en": "Optical experiment. Action: Change one variable: distance, angle, material or obstacle. Application: Show shadow, reflection and relative change in illumination. Requirements: Rear LED and app control; Prepared props or external sensor. Conditions: Quantitative conclusions require a calibrated meter; Do not consider the camera a ready-made light meter."
+              }
+            },
+            {
+              "id": "variant-117",
+              "text": {
+                "ru": "Учебный световой тренажёр. Действие: Выполнять задания на код, последовательность, счёт или координацию. Применение: Учить Морзе, повторять ритмы, обсуждать причинность. Требования: Задний LED и управление из приложения; Программное игровое правило. Условия: Улучшение выполнения игры не доказывает перенос навыка или общий развивающий эффект.",
+                "en": "Training light simulator. Action: Perform tasks on code, sequence, counting or coordination. Application: Learn Morse code, repeat rhythms, discuss causality. Requirements: Rear LED and control from the application; Software game rule. Conditions: Improvement in game performance does not demonstrate transfer of skill or overall developmental effect."
+              }
+            },
+            {
+              "id": "variant-118",
+              "text": {
+                "ru": "Свет как видимый указатель. Действие: Обозначить место или подать заранее согласованный сигнал. Применение: Найти участника в контролируемой обстановке, отметить стол или реквизит. Требования: Задний LED и управление из приложения; Несколько устройств / участников; иногда достаточно наблюдателя. Условия: Сигнал зависит от видимости и не заменяет гарантированную навигацию или аварийное средство.",
+                "en": "Light as a visible indicator. Action: Designate a location or give a pre-agreed signal. Application: Find a participant in a controlled environment, mark a table or prop. Requirements: Rear LED and app control; Multiple devices/participants; sometimes an observer is enough. Conditions: The signal is dependent on visibility and does not replace guaranteed navigation or emergency aid."
+              }
+            },
+            {
+              "id": "variant-119",
+              "text": {
+                "ru": "Экран как цветной источник. Действие: Показывать сплошной цвет, менять яркость или использовать физическую маску. Применение: Цветовые коды, мягкая подсветка маленькой сцены, фильтровая головоломка. Требования: Экран; отдельная альтернатива LED; Подготовленный реквизит или внешний датчик. Условия: Это отдельный источник света с иной геометрией и мощностью; задний LED цвет не меняет.",
+                "en": "Screen as a color source. Action: Show solid color, change brightness or use a physical mask. Application: Color codes, soft lighting of a small scene, filter puzzle. Requirements: Screen; separate alternative to LED; Prepared props or external sensor. Conditions: This is a separate light source with a different geometry and power; the rear LED color does not change."
+              }
+            },
+            {
+              "id": "variant-120",
+              "text": {
+                "ru": "Экран как виртуальный фонарик. Действие: Открывать часть экранной сцены пальцем, наклоном или камерой. Применение: Поиск спрятанного на изображении, тренажёр, доступная замена реальному свету. Требования: Экран; отдельная альтернатива LED; Программное игровое правило. Условия: Экранное пятно является графикой; оно не освещает реальный объект узким лучом.",
+                "en": "The screen is like a virtual flashlight. Action: Open part of the screen scene with your finger, tilt or camera. Application: Search for something hidden in the image, simulator, accessible replacement for real light. Requirements: Screen; separate alternative to LED; Software game rule. Conditions: The screen spot is a graphic; it does not illuminate the real object with a narrow beam."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Требования к реализации",
+        "en": "Implementation requirements"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "LED",
+            "en": "LED"
+          },
+          "text": {
+            "ru": "Описание: Задний LED и управление из приложения",
+            "en": "Description: Rear LED and app control"
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "Я",
+            "en": "I"
+          },
+          "text": {
+            "ru": "Описание: Поддержка регулировки яркости",
+            "en": "Description: Support brightness adjustment"
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "Д",
+            "en": "D"
+          },
+          "text": {
+            "ru": "Описание: Датчики движения и калибровка",
+            "en": "Description: Motion sensors and calibration"
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "К",
+            "en": "TO"
+          },
+          "text": {
+            "ru": "Описание: Камера и собственный анализ изображения",
+            "en": "Description: Camera and proprietary image analysis"
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "AR",
+            "en": "AR"
+          },
+          "text": {
+            "ru": "Описание: Камера и пространственный трекинг",
+            "en": "Description: Camera and spatial tracking"
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "Р",
+            "en": "R"
+          },
+          "text": {
+            "ru": "Описание: Подготовленный реквизит или внешний датчик",
+            "en": "Description: Prepared props or external sensor"
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "У",
+            "en": "U"
+          },
+          "text": {
+            "ru": "Описание: Несколько устройств / участников; иногда достаточно наблюдателя",
+            "en": "Description: Multiple devices/participants; sometimes an observer is enough"
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "С",
+            "en": "WITH"
+          },
+          "text": {
+            "ru": "Описание: Датчик среды или заменяющий его анализ камеры",
+            "en": "Description: Environmental sensor or camera analysis replacing it"
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "М",
+            "en": "M"
+          },
+          "text": {
+            "ru": "Описание: Микрофон для внешнего звука",
+            "en": "Description: Microphone for external sound"
+          }
+        },
+        {
+          "id": "note-1-entry-10",
+          "title": {
+            "ru": "В",
+            "en": "IN"
+          },
+          "text": {
+            "ru": "Описание: Программное игровое правило",
+            "en": "Description: Software game rule"
+          }
+        },
+        {
+          "id": "note-1-entry-11",
+          "title": {
+            "ru": "Э",
+            "en": "E"
+          },
+          "text": {
+            "ru": "Описание: Экран; отдельная альтернатива LED",
+            "en": "Description: Screen; separate alternative to LED"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "8 сочетаний для прототипа",
+        "en": "8 combinations for the prototype"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сценарии ниже придуманы как примеры. Они не описывают проверенные игровые продукты или результаты тестирования.",
+            "en": "The scenarios below are provided as examples. They do not describe tested gaming products or testing results."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Маяк в тёмном море",
+            "en": "Lighthouse in the dark sea"
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Передавать короткий код и ждать светового ответа. У каждого игрока своя часть карты.",
+            "en": "Send a short code and wait for a light response. Each player has their own part of the map."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Два участника, кнопка и таймеры; камера не обязательна.",
+            "en": "Two participants, button and timers; camera not required."
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 011, 013, 091, 092, 097",
+            "en": "Mechanics: 011, 013, 091, 092, 097"
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Теневой архив",
+            "en": "Shadow Archive"
+          }
+        },
+        {
+          "id": "note-2-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Подбирать предметы и ракурсы, чтобы собрать на стене символы для замка.",
+            "en": "Select objects and angles to collect symbols for the castle on the wall."
+          }
+        },
+        {
+          "id": "note-2-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Телефон, карточки и фигурки; результат сначала оценивает человек.",
+            "en": "Telephone, cards and figures; the result is first assessed by a person."
+          }
+        },
+        {
+          "id": "note-2-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 014, 030, 035, 037, 038",
+            "en": "Mechanics: 014, 030, 035, 037, 038"
+          }
+        },
+        {
+          "id": "note-2-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Комната с отражениями",
+            "en": "Room with reflections"
+          }
+        },
+        {
+          "id": "note-2-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Найти метки под скользящим светом, затем направить отражённый свет на приёмник.",
+            "en": "Find the marks under the grazing light, then direct the reflected light to the receiver."
+          }
+        },
+        {
+          "id": "note-2-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Подготовленная настольная сцена; фотодатчик только для автоматического финала.",
+            "en": "Prepared tabletop stage; photo sensor only for automatic final."
+          }
+        },
+        {
+          "id": "note-2-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 041, 042, 045, 100",
+            "en": "Mechanics: 041, 042, 045, 100"
+          }
+        },
+        {
+          "id": "note-2-entry-14",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Ночной смотритель",
+            "en": "Night Watchman"
+          }
+        },
+        {
+          "id": "note-2-entry-15",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Свет останавливает виртуальных существ, но расходует запас; выключение скрывает игрока.",
+            "en": "The light stops virtual creatures, but uses up the supply; turning it off hides the player."
+          }
+        },
+        {
+          "id": "note-2-entry-16",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Один телефон и виртуальная сцена; датчики нужны только при управлении поворотом.",
+            "en": "One phone and virtual stage; Sensors are only needed for steering control."
+          }
+        },
+        {
+          "id": "note-2-entry-17",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 073, 076, 077, 081",
+            "en": "Mechanics: 073, 076, 077, 081"
+          }
+        },
+        {
+          "id": "note-2-entry-18",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Экспедиция вдвоём",
+            "en": "Expedition for two"
+          }
+        },
+        {
+          "id": "note-2-entry-19",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разведчик сканирует, штурман читает инструкции; команда делит бюджет света.",
+            "en": "The scout scans, the navigator reads the instructions; the team shares the lighting budget."
+          }
+        },
+        {
+          "id": "note-2-entry-20",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сетевой обмен состоянием; реальные световые пятна распознавать не требуется.",
+            "en": "Network state exchange; there is no need to recognize real light spots."
+          }
+        },
+        {
+          "id": "note-2-entry-21",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 055, 087, 090, 097",
+            "en": "Mechanics: 055, 087, 090, 097"
+          }
+        },
+        {
+          "id": "note-2-entry-22",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Партитура света",
+            "en": "Score of light"
+          }
+        },
+        {
+          "id": "note-2-entry-23",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Записать спокойный рисунок, распределить партии и воспроизвести с общим стартом.",
+            "en": "Record a calm drawing, distribute the parts and play back with a common start."
+          }
+        },
+        {
+          "id": "note-2-entry-24",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Таймеры, общая партитура, широкие допуски синхронизации.",
+            "en": "Timers, general score, wide synchronization tolerances."
+          }
+        },
+        {
+          "id": "note-2-entry-25",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 017, 020, 094, 109",
+            "en": "Mechanics: 017, 020, 094, 109"
+          }
+        },
+        {
+          "id": "note-2-entry-26",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Следы в комнате",
+            "en": "Traces in the room"
+          }
+        },
+        {
+          "id": "note-2-entry-27",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Распознавать печатные метки и показывать поверх них виртуальные следы при активном фонарике.",
+            "en": "Recognize printed marks and show virtual traces over them when the flashlight is active."
+          }
+        },
+        {
+          "id": "note-2-entry-28",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Камера, метки или AR; белый LED служит физической связью с действием.",
+            "en": "Camera, tags or AR; the white LED serves as a physical link to the action."
+          }
+        },
+        {
+          "id": "note-2-entry-29",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 051, 056, 057, 061",
+            "en": "Mechanics: 051, 056, 057, 061"
+          }
+        },
+        {
+          "id": "note-2-entry-30",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Оптическая мастерская",
+            "en": "Optical workshop"
+          }
+        },
+        {
+          "id": "note-2-entry-31",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Изменять расстояние и угол; сравнивать тень, отражение и просвечивание материалов.",
+            "en": "Change distance and angle; compare shadow, reflection and translucency of materials."
+          }
+        },
+        {
+          "id": "note-2-entry-32",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Один телефон, простые материалы и ручное наблюдение; количественные измерения отдельно.",
+            "en": "One telephone, simple materials and manual observation; quantitative measurements separately."
+          }
+        },
+        {
+          "id": "note-2-entry-33",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механики: 029, 036, 041, 043, 116",
+            "en": "Mechanics: 029, 036, 041, 043, 116"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Что проверить до реализации",
+        "en": "What to check before implementation"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наличие и доступность LED. Устройство может не иметь фонарика; камера или система могут временно занимать его ресурсы. На Android управление выполняется через CameraManager, а конфликты доступа документированы. Android API.",
+            "en": "Availability and accessibility of LED. The device may not have a flashlight; a camera or system may temporarily occupy its resources. On Android, control is done through CameraManager, and access conflicts are documented. Android API."
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Регулировку яркости. Android API 33 добавляет turnOnTorchWithStrengthLevel, но несколько уровней доступны только при соответствующей поддержке оборудования. В AVFoundation есть setTorchModeOn(level:); допустимый максимум может ограничиваться нагревом. Нормализованное значение не означает одинаковую физическую освещённость. Android, Apple.",
+            "en": "Brightness adjustment. Android API 33 adds turnOnTorchWithStrengthLevel, but several levels are only available with appropriate hardware support. AVFoundation has setTorchModeOn(level:); the permissible maximum may be limited by heat. A normalized value does not mean equal physical illumination. Android, Apple."
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Веб-реализацию. Спецификация Image Capture описывает torch как свойство видеотрека. Нужно проверять возможности конкретного трека и реальное поведение связки браузер–устройство; наличие свойства в спецификации не обещает повсеместную поддержку. W3C Image Capture.",
+            "en": "Web implementation. The Image Capture specification describes torch as a property of a video track. It is necessary to check the capabilities of a particular track and the actual behavior of the browser-device connection; The presence of a property in the specification does not promise universal support. W3C Image Capture."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Обратную связь. Датчик освещённости измеряет свет у самого телефона, датчик приближения имеет свою зону чувствительности. Они не являются универсальными датчиками попадания луча или закрытия заднего LED. Описание датчиков Android.",
+            "en": "Feedback. The light sensor measures the light near the phone itself, the proximity sensor has its own sensitivity zone. They are not universal beam or rear LED occlusion sensors. Description of Android sensors."
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Камеру одновременно с LED. Проверить API выбранной камеры, экспозицию, автофокус, блики и доступность света в той же сессии. При сравнении кадров автоматическая экспозиция способна скрыть реальную разницу освещения.",
+            "en": "Camera at the same time as LED. Check the selected camera's API, exposure, autofocus, glare and light availability in the same session. When comparing frames, automatic exposure can hide actual lighting differences."
+          }
+        },
+        {
+          "id": "note-3-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Цвет, форму и дальность. У обычного фонарика нет переносимого управления произвольным RGB-цветом или проекцией изображения. Белый LED не превращается в UV-источник программно. Трафареты, фильтры и линзы требуют физического макета; лазерную точность луча закладывать нельзя.",
+            "en": "Color, shape and range. A typical flashlight does not have portable control over arbitrary RGB color or image projection. The white LED does not turn into a UV source in software. Stencils, filters and lenses require a physical layout; The laser precision of the beam cannot be assumed."
+          }
+        },
+        {
+          "id": "note-3-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Временные характеристики. Не обещать точные высокочастотные импульсы, оптическую передачу большого потока данных или лабораторный строб без измерений. Для прототипа лучше медленные рисунки и заметные паузы.",
+            "en": "Temporal characteristics. Do not promise precise high-frequency pulses, optical transmission of large data streams, or laboratory strobe without measurements. For a prototype, slow drawings and noticeable pauses are better."
+          }
+        },
+        {
+          "id": "note-3-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Жизненный цикл приложения. Проверить разрешения, уход в фон, блокировку экрана, входящий звонок, открытие камеры другим приложением и аппаратный отказ. Реальную температуру и заряд телефона не превращать в обязательный игровой ресурс.",
+            "en": "Application life cycle. Check permissions, going into the background, screen lock, incoming call, camera opening by another application and hardware failure. The real temperature and charge of the phone should not be turned into a mandatory gaming resource."
+          }
+        },
+        {
+          "id": "note-3-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Комфорт и доступность. Предусмотреть отключение импульсов и равноценный текстовый, звуковой или вибрационный канал. Не требовать светить людям в глаза или двигаться в темноте. Порог WCAG для мигающего экранного контента не является сертификатом безопасности яркого LED. W3C о вспышках.",
+            "en": "Comfort and accessibility. Provide for switching off pulses and an equivalent text, sound or vibration channel. Don't ask to shine a light in people's eyes or move in the dark. The WCAG threshold for flashing screen content is not a bright LED safety certification. W3C about flares."
+          }
+        },
+        {
+          "id": "note-3-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверку результата. Сначала выбрать способ оценки: состояние кнопки, датчики, камера, внешний приёмник или человек. Затем проверить один полный цикл «действие → распознавание → понятный ответ» на целевом устройстве. Все идеи в этом каталоге остаются проектными примерами до такого теста.",
+            "en": "Checking the result. First, select the evaluation method: button state, sensors, camera, external receiver or person. Then test one complete cycle of “action → recognition → clear response” on the target device. All ideas in this catalog remain design examples pending such testing."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Android API",
+        "en": "Android API"
+      },
+      "url": "https://developer.android.com/reference/android/hardware/camera2/CameraManager",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android",
+        "en": "Android"
+      },
+      "url": "https://developer.android.com/reference/android/hardware/camera2/CameraManager#turnOnTorchWithStrengthLevel(java.lang.String,int)",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple",
+        "en": "Apple"
+      },
+      "url": "https://developer.apple.com/documentation/avfoundation/avcapturedevice/settorchmodeon(level:)",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C Image Capture",
+        "en": "W3C Image Capture"
+      },
+      "url": "https://www.w3.org/TR/image-capture/#dom-mediatrackcapabilities-torch",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание датчиков Android",
+        "en": "Description of Android sensors"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C о вспышках",
+        "en": "W3C about flares"
+      },
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "maxAvailableTorchLevel",
+        "en": "maxAvailableTorchLevel"
+      },
+      "url": "https://developer.apple.com/documentation/avfoundation/avcapturedevice/maxavailabletorchlevel",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: MediaStream Image Capture",
+        "en": "W3C: MediaStream Image Capture"
+      },
+      "url": "https://www.w3.org/TR/image-capture/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: Getting processed device-motion data",
+        "en": "Apple: Getting processed device-motion data"
+      },
+      "url": "https://developer.apple.com/documentation/coremotion/getting-processed-device-motion-data",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

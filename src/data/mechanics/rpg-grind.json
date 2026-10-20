@@ -6,14 +6,14 @@
     "en": "RPG grind mechanics"
   },
   "description": {
-    "ru": "30 механик: прокачка, добыча и улучшение снаряжения, ресурсы, репутация, испытания и коллекции. Действия, награды и примеры циклов.",
-    "en": "30 mechanics covering leveling, loot, upgrades, resources, reputation, challenges and collections. Actions, rewards and example loops."
+    "ru": "42 механики: развитие, добыча, торговля, спутники, экспедиции, пассивное производство, гарантии наград и эвакуация.",
+    "en": "42 mechanics: development, mining, trade, satellites, expeditions, passive production, reward guarantees and evacuation."
   },
   "intro": {
-    "ru": "Рабочая карта гринда для RPG: 30 механик в шести группах. Для каждой показаны повторяемое действие, цель развития и пример проектирования. Механики можно сочетать; они описывают разные слои цикла, а не взаимоисключающие типы игр. Примеры проектирования условные. Отдельные наблюдения о выпущенных играх сопровождаются первичными источниками.",
-    "en": "A working map of RPG grinding: 30 mechanics in six groups. Each shows a repeated action, a progression goal and a design example. Mechanics can be combined; they describe different layers of a loop rather than mutually exclusive game types. Design examples are hypothetical. Specific observations about released games are supported by primary sources."
+    "ru": "Рабочая карта гринда для RPG: исходные 30 механик и 12 дополнений из последующего обсуждения. Разделяйте действия игрока, объекты развития, правила награды и ограничения повторения. Экономика, спутники, исследование, пассивная добыча, защита от неудачи и риск потери дополняют исходные шесть групп. Действия и цели пересекаются; классификация не является доказанно исчерпывающей. Примеры проектирования условные, конкретные наблюдения о выпущенных играх снабжены первичными источниками.",
+    "en": "A working map of grinding for an RPG: the original 30 mechanics and 12 additions from the subsequent discussion. Separate player actions, development objects, reward rules, and repetition restrictions. Economy, satellites, exploration, passive mining, protection from failure, and risk of loss complete the original six groups. Actions and goals overlap; the classification is not demonstrably exhaustive. Design examples are conditional; specific observations about released games are provided with primary sources."
   },
-  "provenance": "Original editorial taxonomy authored for Game Dev DB on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. Primary sources support only the stated Warframe mastery and Final Fantasy XIV currency examples; other design examples are hypothetical.",
+  "provenance": "Original editorial taxonomy authored for Game Dev DB on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. Primary sources support only the stated Warframe mastery and Final Fantasy XIV currency examples; other design examples are hypothetical. Expanded on 2026-10-20 with twelve additional loops identified in the subsequent project discussion; the original thirty identities remain unchanged.",
   "sections": [
     {
       "id": "character-progression",
@@ -55,6 +55,34 @@
       "title": {
         "ru": "Повторяемые испытания и коллекции",
         "en": "Repeatable challenges and collections"
+      }
+    },
+    {
+      "id": "economy",
+      "title": {
+        "ru": "Экономика и торговля",
+        "en": "Economics and trade"
+      }
+    },
+    {
+      "id": "companions-world",
+      "title": {
+        "ru": "Спутники и исследование",
+        "en": "Satellites and exploration"
+      }
+    },
+    {
+      "id": "passive-rewards",
+      "title": {
+        "ru": "Пассивная добыча и гарантии",
+        "en": "Passive mining and guarantees"
+      }
+    },
+    {
+      "id": "extraction-risk",
+      "title": {
+        "ru": "Риск потери и эвакуация",
+        "en": "Risk of loss and evacuation"
       }
     }
   ],
@@ -1107,6 +1135,426 @@
               "text": {
                 "ru": "Повторять цикл развития после частичного сброса → получать постоянные бонусы или возможности.",
                 "en": "Repeat a progression cycle after a partial reset → gain permanent bonuses or options."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gold-farming",
+      "section": "economy",
+      "title": {
+        "ru": "Фарм золота",
+        "en": "Farm gold"
+      },
+      "description": {
+        "ru": "Повторять выгодные активности ради валюты для покупок, улучшений и доступа.",
+        "en": "Repeat profitable activities for currency for purchases, upgrades and access."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "gold-farming-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "gold-farming-variant",
+              "text": {
+                "ru": "Повторять выгодные активности ради валюты для покупок, улучшений и доступа.",
+                "en": "Repeat profitable activities for currency for purchases, upgrades and access."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resale",
+      "section": "economy",
+      "title": {
+        "ru": "Торговля и перепродажа",
+        "en": "Trade and resale"
+      },
+      "description": {
+        "ru": "Находить недооценённые товары, покупать и продавать дороже; прибыль зависит от информации, спроса и риска.",
+        "en": "Find undervalued goods, buy and sell at higher prices; Profit depends on information, demand and risk."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "resale-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "resale-variant",
+              "text": {
+                "ru": "Находить недооценённые товары, покупать и продавать дороже; прибыль зависит от информации, спроса и риска.",
+                "en": "Find undervalued goods, buy and sell at higher prices; Profit depends on information, demand and risk."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trade-routes",
+      "section": "economy",
+      "title": {
+        "ru": "Торговые маршруты",
+        "en": "Trade routes"
+      },
+      "description": {
+        "ru": "Повторять перевозку товаров между рынками ради ценовой разницы, управляя маршрутом и запасами.",
+        "en": "Repeat the transport of goods between markets for price differences, managing the route and inventory."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "trade-routes-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "trade-routes-variant",
+              "text": {
+                "ru": "Повторять перевозку товаров между рынками ради ценовой разницы, управляя маршрутом и запасами.",
+                "en": "Repeat the transport of goods between markets for price differences, managing the route and inventory."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "companion-growth",
+      "section": "companions-world",
+      "title": {
+        "ru": "Развитие спутников и питомцев",
+        "en": "Development of companions and pets"
+      },
+      "description": {
+        "ru": "Брать спутника в повторяемые активности, тренировать или кормить ради новых способностей и специализации.",
+        "en": "Take a companion into repeatable activities, train or feed them for new abilities and specialization."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "companion-growth-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "companion-growth-variant",
+              "text": {
+                "ru": "Брать спутника в повторяемые активности, тренировать или кормить ради новых способностей и специализации.",
+                "en": "Take a companion into repeatable activities, train or feed them for new abilities and specialization."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npc-relationships",
+      "section": "companions-world",
+      "title": {
+        "ru": "Развитие отношений с NPC",
+        "en": "Developing Relationships with NPCs"
+      },
+      "description": {
+        "ru": "Повторять общение, помощь и подарки ради доверия, совместных действий и новых возможностей.",
+        "en": "Repeat communication, help and gifts for the sake of trust, joint actions and new opportunities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "npc-relationships-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "npc-relationships-variant",
+              "text": {
+                "ru": "Повторять общение, помощь и подарки ради доверия, совместных действий и новых возможностей.",
+                "en": "Repeat communication, help and gifts for the sake of trust, joint actions and new opportunities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expeditions",
+      "section": "companions-world",
+      "title": {
+        "ru": "Повторные экспедиции",
+        "en": "Repeated expeditions"
+      },
+      "description": {
+        "ru": "Возвращаться в области и обследовать тайники ради материалов, сведений и улучшения освоенных территорий.",
+        "en": "Return to the area and explore caches for materials, information and improvement of the developed territories."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "expeditions-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "expeditions-variant",
+              "text": {
+                "ru": "Возвращаться в области и обследовать тайники ради материалов, сведений и улучшения освоенных территорий.",
+                "en": "Return to the area and explore caches for materials, information and improvement of the developed territories."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "base-production",
+      "section": "passive-rewards",
+      "title": {
+        "ru": "Производство на базе",
+        "en": "Production based"
+      },
+      "description": {
+        "ru": "Обеспечивать мастерские ресурсами и возвращаться за результатом производства.",
+        "en": "Provide workshops with resources and return for the result of production."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "base-production-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "base-production-variant",
+              "text": {
+                "ru": "Обеспечивать мастерские ресурсами и возвращаться за результатом производства.",
+                "en": "Provide workshops with resources and return for the result of production."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dispatch-missions",
+      "section": "passive-rewards",
+      "title": {
+        "ru": "Отправка отрядов",
+        "en": "Sending units"
+      },
+      "description": {
+        "ru": "Выбирать команду, снаряжение и задачу, затем забирать результат после времени ожидания.",
+        "en": "Select a team, equipment and task, then collect the result after the waiting time."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "dispatch-missions-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "dispatch-missions-variant",
+              "text": {
+                "ru": "Выбирать команду, снаряжение и задачу, затем забирать результат после времени ожидания.",
+                "en": "Select a team, equipment and task, then collect the result after the waiting time."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "offline-progress",
+      "section": "passive-rewards",
+      "title": {
+        "ru": "Офлайн-прогресс",
+        "en": "Offline progress"
+      },
+      "description": {
+        "ru": "Получать ограниченный доход за время отсутствия и выбирать, куда вложить его после возвращения.",
+        "en": "Receive limited income during your absence and choose where to invest it after returning."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "offline-progress-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "offline-progress-variant",
+              "text": {
+                "ru": "Получать ограниченный доход за время отсутствия и выбирать, куда вложить его после возвращения.",
+                "en": "Receive limited income during your absence and choose where to invest it after returning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot-exchange",
+      "section": "passive-rewards",
+      "title": {
+        "ru": "Обмен ненужной добычи",
+        "en": "Exchange of unwanted loot"
+      },
+      "description": {
+        "ru": "Менять лишние предметы на нужные награды; это отличается от разбора предмета в материалы.",
+        "en": "Exchange unnecessary items for the necessary rewards; this is different from disassembling an object into materials."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "loot-exchange-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "loot-exchange-variant",
+              "text": {
+                "ru": "Менять лишние предметы на нужные награды; это отличается от разбора предмета в материалы.",
+                "en": "Exchange unnecessary items for the necessary rewards; this is different from disassembling an object into materials."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bad-luck-protection",
+      "section": "passive-rewards",
+      "title": {
+        "ru": "Защита от неудачных выпадений",
+        "en": "Protection against unsuccessful drops"
+      },
+      "description": {
+        "ru": "После серии неудач повышать вероятность или приближать гарантированную награду; показывать правила и состояние счётчика.",
+        "en": "After a series of failures, increase the probability or bring the guaranteed reward closer; show rules and counter status."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "bad-luck-protection-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "bad-luck-protection-variant",
+              "text": {
+                "ru": "После серии неудач повышать вероятность или приближать гарантированную награду; показывать правила и состояние счётчика.",
+                "en": "After a series of failures, increase the probability or bring the guaranteed reward closer; show rules and counter status."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "section": "extraction-risk",
+      "title": {
+        "ru": "Цикл с эвакуацией",
+        "en": "Cycle with evacuation"
+      },
+      "description": {
+        "ru": "Накапливать добычу и выбирать, когда покинуть опасную область: продолжение обещает награду, но ставит накопленное под риск.",
+        "en": "Accumulate loot and choose when to leave a dangerous area: continuing promises a reward, but puts what you have accumulated at risk."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "extraction-loop",
+          "title": {
+            "ru": "Повторяемый цикл",
+            "en": "Repeatable cycle"
+          },
+          "variants": [
+            {
+              "id": "extraction-variant",
+              "text": {
+                "ru": "Накапливать добычу и выбирать, когда покинуть опасную область: продолжение обещает награду, но ставит накопленное под риск.",
+                "en": "Accumulate loot and choose when to leave a dangerous area: continuing promises a reward, but puts what you have accumulated at risk."
               }
             }
           ]

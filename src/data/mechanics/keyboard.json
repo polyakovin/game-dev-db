@@ -1,0 +1,2352 @@
+{
+  "id": "keyboard",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Физическая клавиатура",
+    "en": "Physical keyboard interactions"
+  },
+  "description": {
+    "ru": "Физическая клавиатура: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Physical keyboard: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Сигнал и время",
+        "en": "Signals and timing"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Назначение сигнала",
+        "en": "Mapping signals to actions"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Пространство",
+        "en": "Space"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Телесное условие",
+        "en": "Physical constraints"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": {
+        "ru": "Символы и смысл",
+        "en": "Characters and meaning"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": {
+        "ru": "Правило",
+        "en": "Rule"
+      }
+    },
+    {
+      "id": "section-7",
+      "title": {
+        "ru": "Интерфейс",
+        "en": "Interface"
+      }
+    },
+    {
+      "id": "section-8",
+      "title": {
+        "ru": "Социальное правило",
+        "en": "Social rule"
+      }
+    },
+    {
+      "id": "section-9",
+      "title": {
+        "ru": "Специальный сигнал",
+        "en": "Special signal"
+      }
+    },
+    {
+      "id": "section-10",
+      "title": {
+        "ru": "Выход устройства",
+        "en": "Device output"
+      }
+    },
+    {
+      "id": "section-11",
+      "title": {
+        "ru": "Комбинация каналов",
+        "en": "Channel combination"
+      }
+    },
+    {
+      "id": "section-12",
+      "title": {
+        "ru": "Адаптация",
+        "en": "Adaptation"
+      }
+    },
+    {
+      "id": "section-13",
+      "title": {
+        "ru": "Условие задания",
+        "en": "Task constraints"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-key-events",
+      "section": "section-1",
+      "title": {
+        "ru": "События одной клавиши",
+        "en": "Single key events"
+      },
+      "description": {
+        "ru": "Базовые способы связать состояние клавиши с действием.",
+        "en": "Basic ways to associate a key's state with an action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-key-events-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k001",
+              "text": {
+                "ru": "Действие при нажатии. Действие: Переход из отпущенного состояния в нажатое запускает одно действие. Применение: Прыжок, выстрел, подтверждение, постановка ноты в секвенсоре. Условия: Повторные события ОС при удержании не должны считаться новыми физическими нажатиями. Оборудование: Обычная клавиатура.",
+                "en": "Action when pressed. Action: Going from the released state to the pressed state triggers one action. Application: Jump, shoot, confirm, set a note in the sequencer. Conditions: Repeated OS events while holding should not be considered new physical presses. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k002",
+              "text": {
+                "ru": "Действие при отпускании. Действие: Действие запускается после перехода в отпущенное состояние. Применение: Выпустить стрелу, бросить предмет, завершить жест или запись. Условия: Сначала нужно зафиксировать нажатие; потеря фокуса не считается намеренным отпусканием. Оборудование: Обычная клавиатура.",
+                "en": "Release action. Action: The action starts after transitioning to the released state. Application: Release an arrow, throw an object, complete a gesture or recording. Conditions: First you need to register the press; loss of focus is not considered an intentional release. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k003",
+              "text": {
+                "ru": "Непрерывное удержание. Действие: Эффект действует всё время, пока клавиша нажата. Применение: Блок, тяга двигателя, непрерывный звук, временный просмотр карты. Условия: Длительность эффекта рассчитывается по времени, а не по частоте событий ОС. Оборудование: Обычная клавиатура.",
+                "en": "Continuous retention. Action: The effect lasts as long as the key is pressed. Application: Block, engine thrust, continuous sound, temporary map view. Conditions: The duration of the effect is calculated by time, not by the frequency of OS events. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k004",
+              "text": {
+                "ru": "Переключатель. Действие: Каждое отдельное нажатие меняет состояние «включено / выключено». Применение: Фонарик, автодвижение, запись, режим скрытности. Условия: Состояние должно быть понятно по обратной связи. Оборудование: Обычная клавиатура.",
+                "en": "Switch. Action: Each individual press changes the “on/off” state. Application: Flashlight, auto-movement, recording, stealth mode. Conditions: The state should be clear from feedback. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k005",
+              "text": {
+                "ru": "Короткое или долгое нажатие. Действие: Короткое нажатие и удержание дольше порога дают разные результаты. Применение: Быстрая атака или сильная атака; выбрать объект или открыть его свойства. Условия: Короткое действие обычно приходится отложить до отпускания либо явно отменять. Оборудование: Обычная клавиатура.",
+                "en": "Short or long press. Action: Short press and hold longer than the threshold gives different results. Application: Fast attack or strong attack; select an object or open its properties. Conditions: A short action usually has to be delayed until released or explicitly canceled. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k006",
+              "text": {
+                "ru": "Завершение удержания по порогу. Действие: Действие срабатывает, когда набрана нужная длительность удержания. Применение: Открыть тяжёлую дверь, подтвердить сброс, закончить взлом замка. Условия: Нужно решить, срабатывает ли действие один раз или повторяется при дальнейшем удержании. Оборудование: Обычная клавиатура.",
+                "en": "Ending threshold hold. Action: The action is triggered when the required hold duration is reached. Application: Open a heavy door, confirm reset, finish picking the lock. Conditions: You need to decide whether the action is triggered once or repeated the next time you hold. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k007",
+              "text": {
+                "ru": "Величина по длительности. Действие: Продолжительность нажатия определяет численное значение. Применение: Высота прыжка, сила броска, длина штриха, длительность музыкальной ноты. Условия: Это программная модель времени, а не измерение силы нажатия. Оборудование: Обычная клавиатура.",
+                "en": "Magnitude by duration. Action: The duration of the press determines the numerical value. Application: Jump height, throw force, stroke length, musical note duration. Conditions: This is a software time model, not a measurement of the force of pressing. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k008",
+              "text": {
+                "ru": "Нажать, проверить, отпустить. Действие: Нажатие показывает предварительный результат, отпускание подтверждает его. Применение: Прицеливание гранатой, предпросмотр способности, прослушивание семпла. Условия: Заранее задайте способ отменить подтверждение. Оборудование: Обычная клавиатура.",
+                "en": "Press, check, release. Action: Pressing shows a preliminary result, releasing confirms it. Application: Aiming a grenade, previewing an ability, listening to a sample. Conditions: Set in advance how to cancel confirmation. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-repetition",
+      "section": "section-1",
+      "title": {
+        "ru": "Повторения и частота",
+        "en": "Repetition and input rate"
+      },
+      "description": {
+        "ru": "Важны число отдельных нажатий, их плотность или чередование.",
+        "en": "The number of individual clicks, their density or alternation are important."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-repetition-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k009",
+              "text": {
+                "ru": "Двойное нажатие. Действие: Два нажатия одной клавиши должны уложиться в заданный интервал. Применение: Рывок, быстрая смена стойки, открытие дополнительного действия. Условия: Одиночное и двойное действие требуют правила разрешения конфликта. Оборудование: Обычная клавиатура.",
+                "en": "Double tap. Action: Two presses of one key must fall within the specified interval. Application: Dash, quick change of stance, opening an additional action. Conditions: Single and double actions require conflict resolution rules. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k010",
+              "text": {
+                "ru": "Счётчик нажатий. Действие: Система считает отдельные нажатия до заданного количества. Применение: Ввести код из трёх ударов, взвести механизм, выбрать ступень мощности. Условия: Тройное и последующие нажатия являются параметрами этого же паттерна. Оборудование: Обычная клавиатура.",
+                "en": "Click counter. Action: The system counts individual presses up to a specified number. Application: Enter a code of three strikes, cock the mechanism, select the power level. Conditions: Triple and subsequent presses are parameters of the same pattern. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k011",
+              "text": {
+                "ru": "Частое нажатие. Действие: Нужно набирать как можно больше отдельных нажатий за время. Применение: Освободиться из захвата, крутить ручной генератор, ускорить забег. Условия: Нужны альтернатива удержанием и разумный предел частоты. Оборудование: Обычная клавиатура.",
+                "en": "Frequent pressing. Action: You need to type as many individual presses as possible in a time. Application: Free yourself from the grip, spin the manual generator, speed up the run. Conditions: You need an alternative to holding and a reasonable frequency limit. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k012",
+              "text": {
+                "ru": "Удержание частоты в диапазоне. Действие: Частота должна быть выше нижней и ниже верхней границы. Применение: Поддерживать давление насоса, устойчивость двигателя, спокойное дыхание персонажа. Условия: Показывайте текущий темп; слишком частое нажатие может быть ошибкой по правилам. Оборудование: Обычная клавиатура.",
+                "en": "Keeping the frequency in range. Action: The frequency must be above the lower and below the upper limit. Application: Maintain pump pressure, engine stability, calm breathing of the character. Conditions: Show the current tempo; pressing too often may be an error according to the rules. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k013",
+              "text": {
+                "ru": "Чередование двух клавиш. Действие: Нажатия A и B должны сменять друг друга. Применение: Бег ногами, гребля, вращение рукоятки, тренировка независимости рук. Условия: Повтор одной и той же клавиши можно игнорировать или штрафовать. Оборудование: Обычная клавиатура.",
+                "en": "Alternating two keys. Action: Pressing A and B should alternate. Application: Kicking, rowing, crank rotation, arm independence training. Conditions: Repeating the same key can be ignored or penalized. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k014",
+              "text": {
+                "ru": "Чередование нескольких клавиш. Действие: Повторяется цикл из трёх и более клавиш. Применение: Педали машины, ступени производственной операции, пальцевая музыкальная фигура. Условия: Это цикл; уникальная неповторяющаяся цепочка относится к последовательностям. Оборудование: Обычная клавиатура.",
+                "en": "Alternating multiple keys. Action: A cycle of three or more keys is repeated. Application: Machine pedals, steps of a manufacturing operation, finger musical figure. Conditions: This is a cycle; a unique non-repeating chain refers to sequences. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k015",
+              "text": {
+                "ru": "Серия с паузой. Действие: Пакеты быстрых нажатий разделяются обязательными промежутками. Применение: Очереди из оружия, работа перегревающимся инструментом, передача пакетов сигнала. Условия: Время между пакетами имеет отдельное значение. Оборудование: Обычная клавиатура.",
+                "en": "Series with a pause. Action: Packets of quick presses are separated by mandatory intervals. Application: Bursts of weapons, working with an overheating tool, transmission of signal packets. Conditions: The time between packets is of particular importance. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k016",
+              "text": {
+                "ru": "Повтор при удержании. Действие: Первое нажатие выполняет шаг, затем приложение повторяет его по своему таймеру. Применение: Прокрутка инвентаря, перемещение фигуры по клеткам, изменение числового значения. Условия: Для воспроизводимой игры лучше собственный таймер, независимый от настроек ОС. Оборудование: Обычная клавиатура.",
+                "en": "Repeat when held. Action: The first press performs a step, then the application repeats it according to its own timer. Application: Scrolling through the inventory, moving a figure across cells, changing a numerical value. Conditions: For a reproducible game, it is better to have its own timer, independent of the OS settings. Equipment: A regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-1",
+      "title": {
+        "ru": "Время и ритм",
+        "en": "Time and rhythm"
+      },
+      "description": {
+        "ru": "Оценивается положение нажатия или отпускания относительно временной структуры.",
+        "en": "The position of the press or release relative to the temporal structure is assessed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k017",
+              "text": {
+                "ru": "Реакция на сигнал. Действие: Нажать после появления сигнала; измеряется задержка ответа. Применение: Старт гонки, ловля объекта, учебный тренажёр реакции. Условия: Задержки устройства и вывода входят в измерение; это не лабораторная оценка без калибровки. Оборудование: Обычная клавиатура.",
+                "en": "Reaction to a signal. Action: Press after the signal appears; response delay is measured. Application: Race start, object catching, response training simulator. Conditions: Device and output delays are included in the measurement; This is not a laboratory evaluation without calibration. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k018",
+              "text": {
+                "ru": "Попадание в окно. Действие: Нажать внутри разрешённого интервала. Применение: Парирование, активная перезарядка, QTE, точная остановка индикатора. Условия: Ширина окна и ранний ввод являются параметрами сложности. Оборудование: Обычная клавиатура.",
+                "en": "Hitting the window. Action: Press inside the allowed interval. Application: Parry, active cooldown, QTE, precise stop of the indicator. Conditions: Window width and early input are difficulty parameters. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k019",
+              "text": {
+                "ru": "Отпускание в окно. Действие: Удерживать клавишу и отпустить в нужный момент. Применение: Выпустить заряд на пике, оборвать ноту, отцепиться от движущейся платформы. Условия: Оценивается именно отпускание, а не начало удержания. Оборудование: Обычная клавиатура.",
+                "en": "Letting go out the window. Action: Hold the key and release at the right moment. Application: Release the charge at the peak, break the note, unhook from the moving platform. Conditions: It is the release that is assessed, not the beginning of the hold. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k020",
+              "text": {
+                "ru": "Выдерживание длительности. Действие: Сопоставить длину удержания с заданным образцом. Применение: Длинная нота, приготовление блюда, дозировка в условной лаборатории. Условия: Погрешность начала и конца можно оценивать раздельно. Оборудование: Обычная клавиатура.",
+                "en": "Maintaining duration. Action: Compare the hold length with a given sample. Application: Long note, cooking, dosage in a conventional laboratory. Conditions: The error of the beginning and end can be assessed separately. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k021",
+              "text": {
+                "ru": "Равномерный пульс. Действие: Повторять нажатия с постоянным периодом. Применение: Игра под метроном, марш, работа ритмического механизма. Условия: Периодический ритм отличается от максимальной частоты. Оборудование: Обычная клавиатура.",
+                "en": "Uniform pulse. Action: Repeat pressing with a constant period. Application: Playing with a metronome, marching, working a rhythmic mechanism. Conditions: Periodic rhythm differs from the maximum frequency. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k022",
+              "text": {
+                "ru": "Ритмический рисунок. Действие: Воспроизвести последовательность коротких и длинных интервалов. Применение: Музыкальный пароль, барабанная партия, телеграфный код. Условия: Символы Морзе требуют отдельного правила разбора границ букв и слов. Оборудование: Обычная клавиатура.",
+                "en": "Rhythmic pattern. Action: Play a sequence of short and long intervals. Application: Musical password, drum part, telegraph code. Conditions: Morse symbols require a separate rule for parsing letter and word boundaries. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k023",
+              "text": {
+                "ru": "Изменение темпа и акцентов. Действие: Подстраивать нажатия под ускорение, замедление, слабые доли или смещения. Применение: Ритмическая погоня, музыкальное исполнение, изменение скорости конвейера. Условия: Акцент на обычной клавиатуре задаётся правилом или отдельной клавишей, а не силой удара. Оборудование: Обычная клавиатура.",
+                "en": "Change of tempo and accents. Action: Adjust presses for acceleration, deceleration, weak beats or offsets. Application: Rhythmic pursuit, musical performance, changing the speed of a conveyor. Conditions: The emphasis on a regular keyboard is set by a rule or a separate key, and not by the force of impact. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k024",
+              "text": {
+                "ru": "Несколько ритмов одновременно. Действие: Разные группы клавиш обслуживают независимые временные партии. Применение: Полиритмия, одновременное управление двумя механизмами, клавиатурный ансамбль. Условия: Сложность растёт вместе с независимостью потоков; проверяйте rollover. Оборудование: Обычная клавиатура.",
+                "en": "Several rhythms at the same time. Action: Different groups of keys serve independent temporary parts. Application: Polyrhythm, simultaneous control of two mechanisms, keyboard ensemble. Conditions: Complexity increases with the independence of streams; check rollover. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-chords",
+      "section": "section-1",
+      "title": {
+        "ru": "Одновременные нажатия",
+        "en": "Simultaneous presses"
+      },
+      "description": {
+        "ru": "Аккорд здесь означает группу клавиш, совместно образующую одно действие.",
+        "en": "A chord here means a group of keys that together form one action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-chords-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k025",
+              "text": {
+                "ru": "Совпадение начал нажатий. Действие: Несколько клавиш должны начать нажиматься в пределах допуска. Применение: Одновременный удар, синхронное открытие замков, музыкальный аккорд. Условия: Физически идеальная одновременность не требуется; задаётся измеримое окно. Оборудование: Обычная клавиатура.",
+                "en": "Coincidence of started pressing. Action: Multiple keys must begin to be pressed within tolerance. Application: Simultaneous strike, synchronized opening of locks, musical chord. Conditions: Physically perfect simultaneity is not required; a measurable window is specified. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k026",
+              "text": {
+                "ru": "Совместное удержание. Действие: Действие доступно, пока все нужные клавиши нажаты. Применение: Держать несколько печатей, поддерживать машину, собирать комбинацию ингредиентов. Условия: Порядок нажатия может не иметь значения. Оборудование: Обычная клавиатура.",
+                "en": "Joint retention. Action: The action is available as long as all the necessary keys are pressed. Application: Hold several seals, support the machine, collect a combination of ingredients. Conditions: The order of pressing may not matter. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k027",
+              "text": {
+                "ru": "Модификатор и действие. Действие: Одна клавиша изменяет смысл другой, пока удерживается. Применение: Бег плюс движение, альтернативный выстрел, изменение шага инструмента. Условия: Роль модификатора может выполнять любая назначенная клавиша. Оборудование: Обычная клавиатура.",
+                "en": "Modifier and action. Action: One key modifies the meaning of another as long as it is held. Application: Run plus movement, alternative shot, change of tool step. Conditions: Any assigned key can act as a modifier. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k028",
+              "text": {
+                "ru": "Многоуровневый аккорд. Действие: Два и более модификатора вместе с основной клавишей выбирают действие. Применение: Экспертные команды, сложные заклинания, большой набор инструментов. Условия: Необходимы проверка конфликтов и ограничение сложности комбинаций. Оборудование: Обычная клавиатура.",
+                "en": "Multi-level chord. Action: Two or more modifiers together with the main key select the action. Application: Expert commands, complex spells, a large set of tools. Conditions: Conflict checking and limiting the complexity of combinations are required. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k029",
+              "text": {
+                "ru": "Аккорд как символ. Действие: Каждая комбинация из небольшого набора клавиш обозначает символ или слово. Применение: Стенографический ввод, вымышленный язык, управление ограниченным контроллером. Условия: Это можно реализовать на обычных клавишах; специализированная стеноклавиатура является отдельным устройством. Оборудование: Обычная клавиатура.",
+                "en": "Chord as a symbol. Action: Each combination of a small set of keys represents a character or a word. Application: Shorthand input, fictitious language, limited controller control. Conditions: This can be implemented on regular keys; a specialized wall keyboard is a separate device. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k030",
+              "text": {
+                "ru": "Точный набор без лишних клавиш. Действие: Принимается только нужное множество нажатых клавиш. Применение: Собрать двоичный код, воспроизвести созвездие, пройти проверку музыкального аккорда. Условия: Нужно явно различать «содержит нужные» и «совпадает в точности». Оборудование: Обычная клавиатура.",
+                "en": "Accurate typing without extra keys. Action: Only the required set of keystrokes are accepted. Application: Collect binary code, play a constellation, pass a musical chord test. Conditions: You must clearly distinguish between “contains the required” and “matches exactly.” Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k031",
+              "text": {
+                "ru": "Аккорд с подтверждением отпусканием. Действие: Набор собирается во время удержания, затем фиксируется при отпускании выбранной или всех клавиш. Применение: Выбрать состав заклинания, напечатать стенографический слог, запустить пакет команд. Условия: Нужно определить, какое отпускание завершает сборку. Оборудование: Обычная клавиатура.",
+                "en": "Chord with release confirmation. Action: The set is assembled while holding, then fixed when the selected or all keys are released. Application: Select the composition of the spell, type a shorthand syllable, run a batch of commands. Conditions: You must determine which release completes the assembly. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k032",
+              "text": {
+                "ru": "Перекатывающийся аккорд. Действие: Новая клавиша нажимается до отпускания предыдущей; пересечение состояний важно. Применение: Перехваты на скале, легато, удержание непрерывной цепи питания. Условия: Простая последовательность без пересечения должна отличаться по результату. Оборудование: Обычная клавиатура.",
+                "en": "Rolling chord. Action: The new key is pressed before the previous one is released; the intersection of states is important. Application: Interceptions on the rock, legato, holding a continuous power chain. Conditions: A simple sequence without intersection should differ in the result. Equipment: A regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-sequences",
+      "section": "section-1",
+      "title": {
+        "ru": "Последовательности и грамматики",
+        "en": "Sequences and grammars"
+      },
+      "description": {
+        "ru": "Результат зависит от порядка событий, границ и правил разбора.",
+        "en": "The result depends on the order of events, boundaries, and parsing rules."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-sequences-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k033",
+              "text": {
+                "ru": "Фиксированная цепочка. Действие: Нажать заданные клавиши в точном порядке. Применение: Код замка, комбо, процедура запуска, секретная команда. Условия: Секретность и запоминание являются условиями подачи той же цепочки. Оборудование: Обычная клавиатура.",
+                "en": "Fixed chain. Action: Press the given keys in the exact order. Application: Lock code, combo, startup procedure, secret command. Conditions: Secrecy and memorization are the conditions for submitting the same chain. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k034",
+              "text": {
+                "ru": "Последовательность с тайм-аутом. Действие: Следующее событие нужно ввести до истечения интервала. Применение: Продолжение атаки, быстрое выполнение аварийной процедуры. Условия: Определите, обнуляет ли ошибка прогресс или начинает новую цепочку. Оборудование: Обычная клавиатура.",
+                "en": "Sequence with timeout. Action: The next event must be entered before the interval expires. Application: Continue the attack, quickly execute the emergency procedure. Conditions: Determine whether the error resets the progress or starts a new chain. Equipment: Normal keyboard."
+              }
+            },
+            {
+              "id": "variant-k035",
+              "text": {
+                "ru": "Направленный жест. Действие: Направления образуют узнаваемую траекторию во времени. Применение: Спецприём, поворот руны, управление условным штурвалом. Условия: Правила могут разрешать пропуски промежуточных диагоналей. Оборудование: Обычная клавиатура.",
+                "en": "Directed gesture. Action: Directions form a recognizable trajectory in time. Application: Special move, rotation of a rune, control of a conventional steering wheel. Conditions: Rules may allow skipping of intermediate diagonals. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k036",
+              "text": {
+                "ru": "Накопление удержанием перед командой. Действие: Удерживать направление или клавишу, затем выполнить завершающий ввод. Применение: Заряженный приём, натяжение механизма, переключение мощной передачи. Условия: Длительность накопления и допустимый разрыв задаются отдельно. Оборудование: Обычная клавиатура.",
+                "en": "Accumulation of retention in front of the team. Action: Hold the direction or key, then perform the final input. Application: Charged reception, tensioning the mechanism, switching a powerful gear. Conditions: The duration of accumulation and the permissible gap are set separately. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k037",
+              "text": {
+                "ru": "Грамматика команд. Действие: Последовательность разбирается как «объект → действие → параметр». Применение: Приказы отряду, сочетание рун, управление редактором. Условия: Нужны однозначные правила завершения и отмены команды. Оборудование: Обычная клавиатура.",
+                "en": "Command grammar. Action: The sequence is parsed as “object → action → parameter”. Application: Orders to a squad, combination of runes, editor control. Conditions: Unambiguous rules for completing and canceling a command are needed. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k038",
+              "text": {
+                "ru": "Префиксное дерево. Действие: Первые клавиши выбирают ветку, следующие уточняют команду. Применение: Иерархическое меню без мыши, набор сотен способностей несколькими клавишами. Условия: Неполный префикс должен оставаться видимым пользователю. Оборудование: Обычная клавиатура.",
+                "en": "Prefix tree. Action: The first keys select a branch, the next ones specify the command. Application: Hierarchical menu without a mouse, typing hundreds of abilities with a few keys. Conditions: The incomplete prefix must remain visible to the user. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k039",
+              "text": {
+                "ru": "Команда с буфером ввода. Действие: События принимаются заранее и выполняются при наступлении допустимого состояния. Применение: Следующий прыжок перед приземлением, очередь приказов, музыкальный переход. Условия: Буфер является правилом обработки; задайте срок его действия. Оборудование: Обычная клавиатура.",
+                "en": "Input buffer command. Action: Events are received in advance and executed when a valid state occurs. Application: Next jump before landing, order queue, musical transition. Conditions: Buffer is a processing rule; set its validity period. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k040",
+              "text": {
+                "ru": "Последовательность с отменой или возвратом. Действие: Отдельная клавиша удаляет последний шаг, сбрасывает или заменяет собранную цепочку. Применение: Исправление заклинания, обезвреживание устройства, редактирование маршрута. Условия: Нужно различать отмену введённых шагов и отмену уже выполненного действия. Оборудование: Обычная клавиатура.",
+                "en": "Sequence with cancellation or return. Action: A separate key deletes the last step, resets or replaces the collected chain. Application: Correcting a spell, disarming a device, editing a route. Conditions: It is necessary to distinguish between canceling entered steps and canceling an action already performed. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-movement",
+      "section": "section-2",
+      "title": {
+        "ru": "Направления и непрерывное управление",
+        "en": "Directions and continuous control"
+      },
+      "description": {
+        "ru": "Дискретные клавиши могут управлять положением, скоростью и несколькими осями.",
+        "en": "Discrete keys can control position, speed and multiple axes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-movement-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k041",
+              "text": {
+                "ru": "Шаг по направлению. Действие: Каждое нажатие перемещает объект на одну позицию. Применение: Пошаговое движение, головоломка на сетке, перемещение курсора между клетками. Условия: Удержание может включать повтор по отдельному правилу. Оборудование: Обычная клавиатура.",
+                "en": "Step in direction. Action: Each press moves the object one position. Application: Step-by-step movement, puzzle on a grid, moving the cursor between cells. Conditions: Holding can include repetition according to a separate rule. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k042",
+              "text": {
+                "ru": "Непрерывное движение. Действие: Удержание направления задаёт скорость движения. Применение: Платформер, движение камеры, управление кареткой инструмента. Условия: Скорость должна зависеть от времени симуляции. Оборудование: Обычная клавиатура.",
+                "en": "Continuous movement. Action: Holding a direction sets the speed of movement. Application: Platformer, camera movement, tool carriage control. Conditions: Speed ​​should depend on the simulation time. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k043",
+              "text": {
+                "ru": "Две оси и диагонали. Действие: Одновременные направления образуют вектор на плоскости. Применение: Движение сверху, полёт, панорамирование карты. Условия: Решите, нормализуется ли скорость по диагонали. Оборудование: Обычная клавиатура.",
+                "en": "Two axes and diagonals. Action: Simultaneous directions form a vector on the plane. Application: Moving from above, flying, panning the map. Conditions: Decide whether the speed is normalized along the diagonal. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k044",
+              "text": {
+                "ru": "Раздельное движение и прицеливание. Действие: Две группы клавиш задают независимые направления. Применение: Twin-stick схема на клавиатуре, управление телом и взглядом робота. Условия: Число одновременных клавиш может превысить возможности части устройств. Оборудование: Обычная клавиатура.",
+                "en": "Separate movement and aiming. Action: Two groups of keys set independent directions. Application: Twin-stick circuit on the keyboard, control of the robot's body and gaze. Conditions: The number of simultaneous keys can exceed the capabilities of some devices. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k045",
+              "text": {
+                "ru": "Относительное управление. Действие: Клавиши меняют поворот и движение относительно текущего курса. Применение: Танк, автомобиль, корабль, перемещение объекта в локальных координатах. Условия: Пространственная модель должна быть понятна по обратной связи. Оборудование: Обычная клавиатура.",
+                "en": "Relative control. Action: The keys change the rotation and movement relative to the current course. Application: Tank, car, ship, moving an object in local coordinates. Conditions: The spatial model must be understandable by feedback. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k046",
+              "text": {
+                "ru": "Разгон и торможение. Действие: Удержание постепенно увеличивает значение, отпускание или другая клавиша уменьшает его. Применение: Инерционный транспорт, мягкое движение камеры, синтез непрерывной оси. Условия: Полученный аналоговый эффект вычисляется программно. Оборудование: Обычная клавиатура.",
+                "en": "Acceleration and braking. Action: Holding gradually increases the value, releasing or another key decreases it. Application: Inertial transport, soft camera movement, continuous axis synthesis. Conditions: The resulting analog effect is calculated in software. Equipment: Ordinary keyboard."
+              }
+            },
+            {
+              "id": "variant-k047",
+              "text": {
+                "ru": "Выбор направления из сектора. Действие: Комбинация клавиш напрямую выбирает один из дискретных углов. Применение: Восемь направлений атаки, радиальное меню, ориентирование щита. Условия: Это выбор конечного направления, а не интегрирование движения. Оборудование: Обычная клавиатура.",
+                "en": "Selecting a direction from a sector. Action: Key combination directly selects one of discrete angles. Application: Eight attack directions, radial menu, shield orientation. Conditions: This is a final direction selection, not movement integration. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k048",
+              "text": {
+                "ru": "Разрешение противоположных направлений. Действие: При двух противоположных клавишах действует выбранное правило: нейтраль, первая или последняя. Применение: Переключение курса, балансировка, проектирование предсказуемого управления. Условия: Политика должна быть одинаковой в обучении, игре и записи повторов. Оборудование: Обычная клавиатура.",
+                "en": "Allowing opposite directions. Action: When two keys are opposite, the chosen rule applies: neutral, first or last. Application: Course switching, balancing, designing predictable controls. Conditions: The policy should be the same in training, playing and recording replays. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-space",
+      "section": "section-3",
+      "title": {
+        "ru": "Клавиатура как пространство",
+        "en": "Keyboard as a spatial surface"
+      },
+      "description": {
+        "ru": "Физическое расположение клавиш становится частью игрового поля или интерфейса.",
+        "en": "The physical layout of the keys becomes part of the playing field or interface."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-space-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k049",
+              "text": {
+                "ru": "Каждая клавиша является клеткой. Действие: Объекты напрямую привязаны к позициям физической клавиатуры. Применение: Защищать клавиши-базы, выращивать сад, управлять клетками мини-карты. Условия: Геометрию нужно описать для поддерживаемых форм-факторов. Оборудование: Обычная клавиатура.",
+                "en": "Each key is a cell. Action: Objects are directly tied to physical keyboard positions. Application: Protect base keys, grow a garden, manage mini-map cells. Conditions: Geometry must be described for supported form factors. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k050",
+              "text": {
+                "ru": "Переходы между соседями. Действие: Следующая клавиша должна соседствовать с предыдущей. Применение: Поиск пути, распространение огня, движение змейки по клавиатуре. Условия: Соседство задаётся автором; буквенный ряд имеет физические смещения. Оборудование: Обычная клавиатура.",
+                "en": "Transitions between neighbors. Action: The next key must be adjacent to the previous one. Application: Finding a path, spreading fire, moving a snake across the keyboard. Conditions: The neighborhood is set by the author; the letter row has physical offsets. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k051",
+              "text": {
+                "ru": "Ряды как дорожки. Действие: Горизонтальные ряды или группы клавиш обозначают отдельные линии. Применение: Ритмические дорожки, этажи здания, ряды производственных машин. Условия: Привязка к рядам может потребовать отдельной схемы для нестандартной клавиатуры. Оборудование: Обычная клавиатура.",
+                "en": "Rows are like paths. Action: Horizontal rows or groups of keys represent individual lines. Application: Rhythmic tracks, floors of a building, rows of manufacturing machines. Conditions: Linking to rows may require a separate circuit for a non-standard keyboard. Equipment: Conventional keyboard."
+              }
+            },
+            {
+              "id": "variant-k052",
+              "text": {
+                "ru": "Столбцы как шкала. Действие: Вертикальные или условно вертикальные группы соответствуют уровням значения. Применение: Высота звука, этаж назначения, глубина погружения, ступень мощности. Условия: На обычной клавиатуре столбцы геометрически смещены. Оборудование: Обычная клавиатура.",
+                "en": "Columns are like a scale. Action: Vertical or conventionally vertical groups correspond to levels of value. Application: Pitch, destination floor, immersion depth, power level. Conditions: On a conventional keyboard, the columns are geometrically offset. Equipment: Conventional keyboard."
+              }
+            },
+            {
+              "id": "variant-k053",
+              "text": {
+                "ru": "Зоны как отдельные устройства. Действие: Разные участки клавиатуры управляют разными подсистемами. Применение: Левый и правый двигатель, несколько музыкальных инструментов, посты диспетчера. Условия: Нужны схемы для компактных клавиатур без части блоков. Оборудование: Обычная клавиатура.",
+                "en": "Zones as separate devices. Action: Different sections of the keyboard control different subsystems. Application: Left and right engines, several musical instruments, dispatcher posts. Conditions: Circuits are needed for compact keyboards without part of the blocks. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k054",
+              "text": {
+                "ru": "Пространственный рисунок. Действие: Нужно последовательно или совместно нажать клавиши заданной формы. Применение: Нарисовать руну, собрать контур, повторить символ. Условия: Программа видит набор событий, а не движение пальца между клавишами. Оборудование: Обычная клавиатура.",
+                "en": "Spatial drawing. Action: You need to press keys of a given shape sequentially or together. Application: Draw a rune, assemble a contour, repeat a symbol. Conditions: The program sees a set of events, and not the movement of a finger between the keys. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k055",
+              "text": {
+                "ru": "Дистанция между целями. Действие: Ценность или трудность зависит от расстояния между последовательно требуемыми клавишами. Применение: Дотянуться до аварийных кнопок, выбирать короткий маршрут для руки. Условия: Реальное расстояние отличается у разных устройств; это приблизительная модель. Оборудование: Обычная клавиатура.",
+                "en": "Distance between targets. Action: The value or difficulty depends on the distance between successively required keys. Application: Reach emergency buttons, take a short route for the hand. Conditions: The actual distance differs from device to device; This is an approximate model. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k056",
+              "text": {
+                "ru": "Преобразование пространства. Действие: Карта клавиш отражается, вращается в условной сетке или перестраивается. Применение: Зеркальная комната, смена перспективы, головоломка на соответствия. Условия: Преобразуется игровая карта; положение физической клавиатуры автоматически не определяется. Оборудование: Обычная клавиатура.",
+                "en": "Transformation of space. Action: The key map is reflected, rotated in a conditional grid or rearranged. Application: Mirror room, perspective change, matching puzzle. Conditions: The game map is transformed; The position of the physical keyboard is not automatically detected. Hardware: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-coordination",
+      "section": "section-4",
+      "title": {
+        "ru": "Координация рук и пальцев",
+        "en": "Hand-finger coordination"
+      },
+      "description": {
+        "ru": "Можно проверять события в зонах, но обычная клавиатура не определяет руку или палец.",
+        "en": "You can check zone events, but a regular keyboard does not detect your hand or finger."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-coordination-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k057",
+              "text": {
+                "ru": "Независимые партии двух рук. Действие: Каждая зона получает собственный поток действий. Применение: Два персонажа одним игроком, мелодия и аккомпанемент, два рабочих инструмента. Условия: Зоны проверяются программно; распределение рук остаётся договорённостью. Оборудование: Обычная клавиатура.",
+                "en": "Independent parties of two hands. Action: Each zone receives its own flow of actions. Application: Two characters by one player, melody and accompaniment, two working instruments. Conditions: Zones are checked by software; The distribution of hands remains an agreement. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k058",
+              "text": {
+                "ru": "Зеркальные движения. Действие: Парные клавиши слева и справа нажимаются симметрично. Применение: Синхронные крылья, балансировка двух опор, координационный тренажёр. Условия: Симметрия задаётся выбранной картой клавиш. Оборудование: Обычная клавиатура.",
+                "en": "Mirror movements. Action: Paired keys on the left and right are pressed symmetrically. Application: Synchronized wings, balancing of two supports, coordination trainer. Conditions: Symmetry is set by the selected key map. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k059",
+              "text": {
+                "ru": "Противофазные движения. Действие: Парные зоны чередуют активность: одна нажата, другая отпущена. Применение: Шаги, педали, качели, механизм с двумя поршнями. Условия: Проверяется состояние клавиш, а не положение конечностей. Оборудование: Обычная клавиатура.",
+                "en": "Antiphase movements. Action: Paired zones alternate activity: one is pressed, the other is released. Application: Steps, pedals, swings, two-piston mechanism. Conditions: The state of the keys is checked, not the position of the limbs. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k060",
+              "text": {
+                "ru": "Удержание опоры и работа рядом. Действие: Одна клавиша остаётся нажатой, другие выполняют дополнительные действия. Применение: Альпинист, ручной ремонт, игра с фиксацией нескольких точек. Условия: Проверяйте удобство досягаемости и число удерживаемых клавиш. Оборудование: Обычная клавиатура.",
+                "en": "Maintaining support and working nearby. Action: One key remains pressed, the others perform additional actions. Application: Climber, manual repair, multi-point play. Conditions: Check the ease of reach and the number of keys held. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k061",
+              "text": {
+                "ru": "Пальцы как конечности. Действие: Несколько назначенных клавиш управляют разными частями тела или манипулятора. Применение: Шагающий робот, марионетка, многопалый захват. Условия: Использование конкретного пальца без внешнего датчика не проверяется. Оборудование: Обычная клавиатура.",
+                "en": "Fingers are like limbs. Action: Several assigned keys control different parts of the body or manipulator. Application: Walking robot, puppet, multi-fingered gripper. Conditions: Use of a specific finger without an external sensor is not tested. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k062",
+              "text": {
+                "ru": "Перенос между зонами. Действие: Действия требуют переключаться между удалёнными участками клавиатуры. Применение: Диспетчер нескольких панелей, экстренная смена рабочих инструментов. Условия: Время переноса руки входит в сложность задачи. Оборудование: Обычная клавиатура.",
+                "en": "Transfer between zones. Action: Actions require switching between remote areas of the keyboard. Application: Multi-panel manager, emergency change of working tools. Conditions: Hand transfer time is part of the complexity of the task. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k063",
+              "text": {
+                "ru": "Перекрещивание рук. Действие: Правило просит поменять руки местами при сохранении привязки клавиш. Применение: Локальная кооперация, сценический номер, телесная головоломка. Условия: Соблюдение требует наблюдателя, камеры или доверия. Оборудование: Физическое условие.",
+                "en": "Crossing hands. Action: Rule asks for hands to be swapped while maintaining key bindings. Application: Local cooperation, stage act, body puzzle. Conditions: Compliance requires an observer, camera or trust. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k064",
+              "text": {
+                "ru": "Работа без зрительного контроля. Действие: Находить клавиши на ощупь и действовать по памяти. Применение: Обучение слепой печати, аудиоигра, задача с закрытой от взгляда клавиатурой. Условия: Взгляд нельзя определить по клавиатурным событиям. Оборудование: Физическое условие.",
+                "en": "Work without visual control. Action: Find keys by touch and act from memory. Application: Teaching touch typing, audio game, task with the keyboard hidden from view. Conditions: Gaze cannot be determined by keyboard events. Equipment: Physical condition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-typing",
+      "section": "section-5",
+      "title": {
+        "ru": "Печатный текст как действие",
+        "en": "Typed text as an action"
+      },
+      "description": {
+        "ru": "Результат зависит от введённого текста, его структуры или значения.",
+        "en": "The result depends on the entered text, its structure or meaning."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-typing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k065",
+              "text": {
+                "ru": "Ввод заданного символа. Действие: Напечатать конкретный символ, цифру или знак. Применение: Обучение алфавиту, числовой ответ, поиск нужной буквы. Условия: Физическая клавиша и полученный символ различаются при смене раскладки. Оборудование: Обычная клавиатура.",
+                "en": "Enter a specified character. Action: Type a specific character, number or sign. Application: Teaching the alphabet, numeric answer, searching for the desired letter. Conditions: The physical key and the resulting character differ when changing the layout. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k066",
+              "text": {
+                "ru": "Копирование слова или текста. Действие: Воспроизвести показанный текст с оценкой скорости и точности. Применение: Тренажёр печати, бой через набор слов, переписывание сообщений. Условия: Определите правила регистра, пунктуации и обработки исправлений. Оборудование: Обычная клавиатура.",
+                "en": "Copying a word or text. Action: Reproduce the displayed text with an assessment of speed and accuracy. Application: Typing trainer, typing, message rewriting. Conditions: Define rules of case, punctuation and correction handling. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k067",
+              "text": {
+                "ru": "Слово как команда. Действие: Введённое слово выбирает действие из словаря. Применение: Напечатать название заклинания, предмета, адресата или функции. Условия: Словарь, синонимы и допустимые языки являются частью правил. Оборудование: Обычная клавиатура.",
+                "en": "The word is like a command. Action: The entered word selects an action from the dictionary. Usage: Type the name of a spell, item, target, or function. Conditions: Dictionary, synonyms, and acceptable languages ​​are part of the rules. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k068",
+              "text": {
+                "ru": "Префикс как наведение на цель. Действие: По мере ввода отсеиваются объекты, имена которых не подходят. Применение: Выбор врага по слову, поиск файла, доступ к множеству объектов без мыши. Условия: Общие префиксы требуют правила разрешения неоднозначности. Оборудование: Обычная клавиатура.",
+                "en": "Prefix as targeting. Action: As you type, objects whose names do not match are eliminated. Application: Selecting an enemy by word, searching for a file, accessing multiple objects without a mouse. Conditions: Common prefixes require a disambiguation rule. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k069",
+              "text": {
+                "ru": "Число или формула как управление. Действие: Пользователь задаёт численное значение или вычисляемое выражение. Применение: Настроить траекторию, распределить ресурс, ввести координаты, решить арифметическую задачу. Условия: Используйте ограниченный разбор выражений и явные единицы измерения. Оборудование: Обычная клавиатура.",
+                "en": "Number or formula as control. Action: The user specifies a numerical value or a calculated expression. Application: Set up a trajectory, allocate a resource, enter coordinates, solve an arithmetic problem. Conditions: Use limited parsing of expressions and explicit units of measurement. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k070",
+              "text": {
+                "ru": "Свободная фраза. Действие: Введённое предложение интерпретируется как намерение. Применение: Текстовое приключение, диалог, описание действия персонажа. Условия: Заранее обозначьте пределы парсера или модели; понимание текста не гарантировано. Оборудование: Обычная клавиатура.",
+                "en": "Free phrase. Action: The entered sentence is interpreted as an intention. Application: Text adventure, dialogue, description of a character's action. Conditions: Define the limits of the parser or model in advance; understanding of the text is not guaranteed. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k071",
+              "text": {
+                "ru": "Программа как действие. Действие: Текст описывает исполняемый алгоритм или набор правил. Применение: Программировать робота, задавать логику фабрики, сочинять процедурный рисунок. Условия: Язык может быть маленьким DSL; выполнение требует ограниченной среды. Оборудование: Обычная клавиатура.",
+                "en": "Program as action. Action: The text describes an executable algorithm or set of rules. Application: Program a robot, specify factory logic, compose a procedural drawing. Conditions: The language can be a small DSL; execution requires a limited environment. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k072",
+              "text": {
+                "ru": "Текст как создаваемый объект. Действие: Буквы и знаки остаются частью мира или произведения. Применение: ASCII-рисунок, стихи, записки, музыкальная партитура из символов. Условия: Важны и содержание, и расположение символов. Оборудование: Обычная клавиатура.",
+                "en": "Text as a created object. Action: Letters and symbols remain part of the world or work. Application: ASCII drawing, poetry, notes, musical score of symbols. Conditions: Both the content and arrangement of the symbols are important. Equipment: A regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-text-rules",
+      "section": "section-6",
+      "title": {
+        "ru": "Ограничения и преобразования текста",
+        "en": "Text restrictions and transformations"
+      },
+      "description": {
+        "ru": "Над текстовым вводом задаются дополнительные требования и последствия.",
+        "en": "Additional requirements and consequences are specified above the text input."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-text-rules-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k073",
+              "text": {
+                "ru": "Разрешённый или запрещённый алфавит. Действие: Использовать только определённые символы либо избегать заданных. Применение: Липограмма, повреждённый терминал, заклинания из доступных рун. Условия: Проверяется итоговый текст или каждое событие; это разные условия. Оборудование: Обычная клавиатура.",
+                "en": "Permitted or prohibited alphabet. Action: Use only certain symbols or avoid specified ones. Application: Lipogram, damaged terminal, spells from available runes. Conditions: The final text or each event is checked; these are different conditions. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k074",
+              "text": {
+                "ru": "Словообразование по правилу. Действие: Создавать слова нужной длины, категории, окончания или структуры. Применение: Словесный бой, учебная викторина, подбор рецепта по свойствам слова. Условия: Нужен словарь или понятная проверяемая грамматика. Оборудование: Обычная клавиатура.",
+                "en": "Word formation according to the rule. Action: Create words of the desired length, category, ending or structure. Application: Word battle, educational quiz, selection of a recipe based on the properties of a word. Conditions: A dictionary or clear, testable grammar is needed. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k075",
+              "text": {
+                "ru": "Преобразование строки. Действие: Печатать в обратном порядке, шифровать, заменять или переставлять символы. Применение: Дешифровка, зеркальные сообщения, логические головоломки. Условия: Для международного текста учитывайте составные символы и графемы. Оборудование: Обычная клавиатура.",
+                "en": "String conversion. Action: Reverse typing, encrypt, replace or rearrange characters. Applications: Decryption, mirror messages, logic puzzles. Conditions: For international text, consider compound characters and graphemes. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k076",
+              "text": {
+                "ru": "Регистр и пунктуация как смысл. Действие: Разные формы записи обозначают разные действия или качество результата. Применение: Повышение силы заклинания регистром, синтаксические задачи, точный ввод команды. Условия: Правило должно сохранять смысл на поддерживаемых языках. Оборудование: Обычная клавиатура.",
+                "en": "Case and punctuation as meaning. Action: Different forms of notation indicate different actions or quality of the result. Application: Increasing the power of a spell with case, syntactic tasks, precise command entry. Conditions: The rule must retain meaning in supported languages. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k077",
+              "text": {
+                "ru": "Лимит времени на текст. Действие: Завершить слово, фразу или сообщение до срока. Применение: Спасти персонажа набором команды, скоростная переписка, аварийный протокол. Условия: Длину и язык текста нужно учитывать при настройке времени. Оборудование: Обычная клавиатура.",
+                "en": "Time limit for text. Action: Complete a word, phrase or message before the deadline. Application: Save a character by typing a command, high-speed correspondence, emergency protocol. Conditions: The length and language of the text must be taken into account when setting the time. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k078",
+              "text": {
+                "ru": "Последствия опечаток. Действие: Ошибка меняет мир: наносит урон, создаёт помеху или искажает команду. Применение: Неустойчивые заклинания, шумный канал связи, симуляция работы оператора. Условия: Допуск ошибок и возможность исправления задаются явно. Оборудование: Обычная клавиатура.",
+                "en": "Consequences of typos. Action: An error changes the world: it causes damage, creates interference or distorts the command. Application: Unstable spells, a noisy communication channel, operator simulation. Conditions: The tolerance for errors and the possibility of correction are set explicitly. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k079",
+              "text": {
+                "ru": "Исправление как ресурс. Действие: Backspace, замена и отмена ограничены, оплачиваются или дают отдельную выгоду. Применение: Пазл на редактирование, восстановление повреждённого текста, бой корректора. Условия: Не смешивайте цену исправления с требованиями к способу ввода. Оборудование: Обычная клавиатура.",
+                "en": "Correction as a resource. Action: Backspace, replacement and cancellation are limited, paid or provide a separate benefit. Application: Editing puzzle, restoration of damaged text, proofreader fight. Conditions: Do not mix the price of correction with the requirements for the input method. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k080",
+              "text": {
+                "ru": "Неоднозначность и автодополнение. Действие: Выбирать из нескольких завершений, расширять сокращение или принимать подсказку. Применение: Командная палитра, предсказание слова, игра на минимальное число символов. Условия: Подсказки должны быть доступны с клавиатуры и показывать выбранный вариант. Оборудование: Обычная клавиатура.",
+                "en": "Ambiguity and autocompletion. Action: Select from multiple completions, expand a shortcut, or accept a hint. Application: Command palette, word prediction, minimum number of characters game. Conditions: Hints must be accessible from the keyboard and show the selected option. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-navigation",
+      "section": "section-7",
+      "title": {
+        "ru": "Навигация и выбор",
+        "en": "Navigation and selection"
+      },
+      "description": {
+        "ru": "Клавиатура перемещает фокус, выбирает цели и управляет объектами интерфейса.",
+        "en": "The keyboard moves focus, selects targets, and controls interface objects."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-navigation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k081",
+              "text": {
+                "ru": "Последовательный обход. Действие: Переходить к следующему или предыдущему доступному элементу. Применение: Формы, диалоги, инвентарь, пошаговый осмотр объектов. Условия: В обычных интерфейсах ожидаемы Tab и Shift+Tab; сохраняйте видимый фокус. Оборудование: Обычная клавиатура.",
+                "en": "Sequential bypass. Action: Move to the next or previous available element. Application: Forms, dialogs, inventory, step-by-step inspection of objects. Conditions: Tab and Shift+Tab are expected in normal interfaces; maintain visible focus. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k082",
+              "text": {
+                "ru": "Пространственная навигация. Действие: Стрелки переводят выбор к соседнему элементу. Применение: Сетки предметов, деревья, карты, меню в виде поля. Условия: Направления должны соответствовать визуальной структуре. Оборудование: Обычная клавиатура.",
+                "en": "Spatial navigation. Action: Arrows move the selection to an adjacent element. Application: Item grids, trees, maps, field menus. Conditions: Directions must correspond to the visual structure. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k083",
+              "text": {
+                "ru": "Переход к границам и страницам. Действие: Перемещаться сразу к началу, концу или следующему экрану списка. Применение: Большие каталоги, журналы, карты и текстовые документы. Условия: Home, End, Page Up и Page Down могут отсутствовать как отдельные клавиши. Оборудование: Обычная клавиатура.",
+                "en": "Move to borders and pages. Action: Move directly to the beginning, end, or next screen of a list. Application: Large catalogs, magazines, maps and text documents. Conditions: Home, End, Page Up and Page Down may not be available as separate keys. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k084",
+              "text": {
+                "ru": "Прямой выбор по клавише. Действие: Элементу назначается короткий индекс, буква или число. Применение: Реплики диалога, быстрые слоты, вызов группы, выбор инструмента. Условия: Индекс должен быть виден рядом с целью. Оборудование: Обычная клавиатура.",
+                "en": "Direct selection by key. Action: The element is assigned a short index, letter or number. Application: Dialogue cues, quick slots, calling a group, selecting a tool. Conditions: The index must be visible next to the target. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k085",
+              "text": {
+                "ru": "Поиск набором. Действие: Ввод букв переводит выбор к совпадающему элементу или фильтрует список. Применение: Длинный инвентарь, список имён, навигация по библиотеке. Условия: Учитывайте язык ввода и время сброса поискового префикса. Оборудование: Обычная клавиатура.",
+                "en": "Search by dial. Action: Entering letters moves the selection to a matching item or filters the list. Application: Long inventory, list of names, library navigation. Conditions: Consider input language and search prefix reset time. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k086",
+              "text": {
+                "ru": "Множественный выбор. Действие: Модификаторы и навигация расширяют диапазон или меняют отдельные элементы. Применение: Управление отрядом, выбор файлов, редактирование набора клеток. Условия: Отделяйте перемещение фокуса от выбранного состояния. Оборудование: Обычная клавиатура.",
+                "en": "Multiple choice. Action: Modifiers and navigation expand the range or change individual elements. Application: Controlling a squad, selecting files, editing a set of cells. Conditions: Separate moving focus from the selected state. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k087",
+              "text": {
+                "ru": "Манипуляция объектом. Действие: Клавиша начинает захват, направления перемещают или изменяют объект, подтверждение завершает. Применение: Доступное перетаскивание, строительство, перестановка инвентаря, изменение размера. Условия: Нужны понятные подтверждение, отмена и текущий режим. Оборудование: Обычная клавиатура.",
+                "en": "Object manipulation. Action: The key starts capturing, directions move or change the object, confirmation completes. Application: Available dragging, building, rearranging inventory, resizing. Conditions: Need clear confirmation, cancel and current mode. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k088",
+              "text": {
+                "ru": "Подтверждение и отмена. Действие: Отдельные действия принимают выбор, возвращают на шаг назад или закрывают режим. Применение: Меню, редакторы, цепочки команд, прицеливание способности. Условия: Ожидаемые роли Enter, Space и Escape зависят от компонента и платформы. Оборудование: Обычная клавиатура.",
+                "en": "Confirmation and cancellation. Action: Individual actions accept a selection, go back a step, or exit a mode. Applications: Menus, editors, command chains, ability targeting. Conditions: The expected roles of Enter, Space, and Escape depend on the component and platform. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-modes",
+      "section": "section-2",
+      "title": {
+        "ru": "Режимы и назначение клавиш",
+        "en": "Modes and assignment of keys"
+      },
+      "description": {
+        "ru": "Одинаковый физический ввод получает разный смысл в зависимости от состояния.",
+        "en": "The same physical input takes on a different meaning depending on the state."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-modes-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k089",
+              "text": {
+                "ru": "Контекстное действие. Действие: Значение клавиши определяется объектом, состоянием или окружением. Применение: Одна кнопка открывает дверь, подбирает предмет и начинает разговор. Условия: Показывайте актуальное действие до нажатия. Оборудование: Обычная клавиатура.",
+                "en": "Contextual action. Action: The meaning of a key is determined by an object, state or environment. Application: One button opens a door, picks up an item and starts a conversation. Conditions: Show the actual action before pressing. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k090",
+              "text": {
+                "ru": "Слой при удержании. Действие: Удерживаемая клавиша временно включает другой набор назначений. Применение: Альтернативная панель способностей, нотная октава, точное редактирование. Условия: Системный Fn часто обрабатывается устройством; для игрового слоя выбирайте доступную клавишу. Оборудование: Обычная клавиатура.",
+                "en": "Layer on hold. Action: A held key temporarily enables another set of assignments. Applications: Alternate ability panel, note octave, fine editing. Conditions: System Fn is frequently processed by the device; for the game layer, select an available key. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k091",
+              "text": {
+                "ru": "Фиксируемый режим. Действие: Нажатие переключает целый набор назначений до следующего переключения. Применение: Режим строительства, управление камерой, командный и текстовый режим редактора. Условия: Caps Lock или Num Lock можно учитывать при поддержке платформы, но это состояние ОС. Оборудование: Обычная клавиатура.",
+                "en": "Fixed mode. Action: Pressing toggles a whole set of assignments until the next switch. Application: Construction mode, camera control, command and text editor mode. Conditions: Caps Lock or Num Lock can be taken into account when supporting the platform, but this is an OS state. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k092",
+              "text": {
+                "ru": "Команда после префикса. Действие: Отдельная клавиша временно переводит следующие нажатия в командный режим. Применение: Leader-команды, доступ к редко используемым функциям, выбор школы магии. Условия: Задайте тайм-аут и показывайте незавершённый префикс. Оборудование: Обычная клавиатура.",
+                "en": "The command after the prefix. Action: A separate key temporarily switches the following presses to command mode. Application: Leader commands, accessing rarely used functions, selecting a school of magic. Conditions: Set a timeout and show an incomplete prefix. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k093",
+              "text": {
+                "ru": "Изменяемое соответствие. Действие: Назначения меняются по ходу игры. Применение: Проклятые клавиши, перестройка панели, проверка умения заново освоить управление. Условия: Новое соответствие требует читаемой подсказки или честно заданной задачи на память. Оборудование: Обычная клавиатура.",
+                "en": "Variable compliance. Action: Assignments change as the game progresses. Application: Cursed keys, panel rearrangement, test of ability to relearn controls. Conditions: New match requires a readable hint or an honestly assigned memory task. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k094",
+              "text": {
+                "ru": "Настройка управления как механика. Действие: Пользователь сам собирает или переставляет назначения внутри системы правил. Применение: Сконструировать панель корабля, оптимизировать рабочее место, собрать контроллер робота. Условия: Сохраняйте возможность восстановить работоспособную схему. Оборудование: Обычная клавиатура.",
+                "en": "Setting up controls like a mechanic. Action: The user himself assembles or rearranges assignments within the rule system. Application: Design a ship panel, optimize a workplace, assemble a robot controller. Conditions: Maintain the ability to restore a working circuit. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k095",
+              "text": {
+                "ru": "Различение одинаково подписанных клавиш. Действие: Основной Enter и Enter цифрового блока либо левый и правый Shift действуют по-разному. Применение: Два независимых рычага, музыкальные регистры, команды разным персонажам. Условия: Различимость и наличие клавиш зависят от устройства и API. Оборудование: Обычная клавиатура.",
+                "en": "Distinguishing identically labeled keys. Action: The main Enter and Enter of the digital block or the left and right Shift act differently. Application: Two independent levers, musical registers, commands for different characters. Conditions: Distinction and availability of keys depend on the device and API. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k096",
+              "text": {
+                "ru": "Отдельные блоки как панель функций. Действие: F-клавиши, цифровой блок и доступные дополнительные клавиши получают отдельную роль. Применение: Звуковая панель, числовой пульт, выбор инструментов, транспорт секвенсора. Условия: Медиаклавиши и макроклавиши могут перехватываться ОС или выдавать обычные переназначенные события. Оборудование: Обычная клавиатура.",
+                "en": "Separate blocks as a function panel. Action: F-keys, number pad and available additional keys are given a separate role. Application: Soundpad, numeric keypad, instrument selection, sequencer transport. Conditions: Media keys and macro keys can be intercepted by the OS or issue normal remapped events. Hardware: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-absence",
+      "section": "section-6",
+      "title": {
+        "ru": "Бездействие, запреты и экономика ввода",
+        "en": "Inactivity, forbidden input and input costs"
+      },
+      "description": {
+        "ru": "Значение имеют отсутствие событий, допустимость клавиш и цена действия.",
+        "en": "What matters is the absence of events, the validity of the keys, and the cost of the action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-absence-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k097",
+              "text": {
+                "ru": "Ожидание без ввода. Действие: Отсутствие нажатий в течение интервала запускает или сохраняет эффект. Применение: Замереть перед хищником, дать устройству остыть, дождаться ответа персонажа. Условия: Ожидание во время активной игры нужно отличать от потери фокуса. Оборудование: Обычная клавиатура.",
+                "en": "Waiting without entering. Action: Failure to press during the interval triggers or maintains the effect. Application: Freeze in front of the predator, allow the device to cool, wait for the character to respond. Conditions: Waiting during active play must be distinguished from losing focus. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k098",
+              "text": {
+                "ru": "Полное отпускание. Действие: Требуется, чтобы все учитываемые клавиши были отпущены. Применение: Обнулить механизм, пройти фазу тишины, разорвать все цепи управления. Условия: Программа проверяет отпускание клавиш, а не отрыв рук от поверхности. Оборудование: Обычная клавиатура.",
+                "en": "Complete letting go. Action: It is required that all keys taken into account be released. Application: Reset the mechanism, go through the silent phase, break all control circuits. Conditions: The program checks for the release of keys, and not the lifting of hands from the surface. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k099",
+              "text": {
+                "ru": "Запрещённое действие. Действие: На определённый сигнал нажимать нельзя либо временно запрещены конкретные клавиши. Применение: Go/no-go задача, ловушка с ложными подсказками, безопасное прохождение сигналов. Условия: Важно ясно обозначить начало и конец запрета. Оборудование: Обычная клавиатура.",
+                "en": "Prohibited action. Action: A certain signal cannot be pressed or specific keys are temporarily prohibited. Application: Go/no-go task, trap with false clues, safe passage of signals. Conditions: It is important to clearly indicate the beginning and end of the ban. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k100",
+              "text": {
+                "ru": "Ограниченный набор клавиш. Действие: Игрок решает задачу только доступным подмножеством ввода. Применение: Поломка панели, однокнопочный режим, головоломка с недостающими командами. Условия: Это программное ограничение, которое можно менять по правилам. Оборудование: Обычная клавиатура.",
+                "en": "Limited set of keys. Action: The player solves the problem using only the available subset of input. Application: Panel breakdown, one-button mode, puzzle with missing commands. Conditions: This is a software limitation that can be changed according to the rules. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k101",
+              "text": {
+                "ru": "Бюджет нажатий. Действие: Каждое действие расходует общий запас; задача требует экономии. Применение: Минимизировать команды роботу, отправить короткое сообщение, пройти уровень за несколько вводов. Условия: Уточните, считаются физические события, принятые команды или символы. Оборудование: Обычная клавиатура.",
+                "en": "Click budget. Action: Each action consumes the total supply; the task requires savings. Application: Minimize commands to the robot, send a short message, complete the level in several inputs. Conditions: Specify whether physical events, received commands or symbols are counted. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k102",
+              "text": {
+                "ru": "Перезарядка отдельной клавиши. Действие: После использования конкретная клавиша временно недоступна. Применение: Остывающие руны, ограниченные инструменты, распределение атак между пальцами. Условия: Отображайте доступность; физическая клавиша продолжает работать для ОС. Оборудование: Обычная клавиатура.",
+                "en": "Reloading a single key. Action: After use, a specific key is temporarily unavailable. Application: Cooling runes, limited tools, distribution of attacks between fingers. Conditions: Display availability; the physical key continues to work for the OS. Hardware: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k103",
+              "text": {
+                "ru": "Износ и восстановление. Действие: Использование снижает ресурс назначенной клавиши или группы; отдых восстанавливает его. Применение: Панель перегрева, выживание с разрушающимися командами, менеджмент нагрузки. Условия: Износ является игровой моделью и не требует повреждения устройства. Оборудование: Обычная клавиатура.",
+                "en": "Wear and restoration. Action: Use reduces the resource of the assigned key or group; rest restores it. Application: Overheating panel, surviving with collapsing teams, load management. Conditions: Wear is a gaming model and does not require damage to the device. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k104",
+              "text": {
+                "ru": "Лимит одновременной активности. Действие: Разрешено удерживать не более или не менее заданного числа клавиш. Применение: Ограниченная сеть питания, балансировка нагрузки, головоломка на активные переключатели. Условия: Игровой лимит должен укладываться в реально поддерживаемые сочетания. Оборудование: Обычная клавиатура.",
+                "en": "Limit of simultaneous activity. Action: It is allowed to hold no more or no less than a specified number of keys. Application: Limited power supply, load balancing, active switches puzzle. Conditions: The game limit must fit within the actually supported combinations. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-editing",
+      "section": "section-7",
+      "title": {
+        "ru": "Редактирование, команды и автоматизация",
+        "en": "Editing, commands and automation"
+      },
+      "description": {
+        "ru": "Способы управлять составными действиями, документами и авторскими инструментами.",
+        "en": "Ways to manage compound activities, documents, and authoring tools."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-editing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k105",
+              "text": {
+                "ru": "Курсор и выделение текста. Действие: Перемещать точку ввода, расширять выделение, выбирать слова или блоки. Применение: Текстовый редактор, консоль, головоломка на перестановку фрагментов. Условия: Посимвольное и пословное перемещение должны учитывать язык и составные знаки. Оборудование: Обычная клавиатура.",
+                "en": "Cursor and text selection. Action: Move the insertion point, expand the selection, select words or blocks. Application: Text editor, console, puzzle for rearranging fragments. Conditions: Character-by-character and word-by-word movement must take into account the language and compound characters. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k106",
+              "text": {
+                "ru": "Удаление, вставка и замена. Действие: Backspace, Delete, режим замены и операции над выделением меняют содержимое. Применение: Исправление документов, ремонт кода, создание сообщения из заготовки. Условия: Для вставки из буфера обмена могут действовать ограничения среды. Оборудование: Обычная клавиатура.",
+                "en": "Removal, insertion and replacement. Action: Backspace, Delete, replace mode and selection operations change the content. Application: Correcting documents, repairing code, creating a message from a blank. Conditions: Environment restrictions may apply for pasting from the clipboard. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k107",
+              "text": {
+                "ru": "Отмена и повтор действия. Действие: Перемещаться назад и вперёд по истории операций. Применение: Редакторы уровней, рисование, экспериментальные головоломки, творческие инструменты. Условия: Возврат истории приложения отличается от отмены текущей незавершённой команды. Оборудование: Обычная клавиатура.",
+                "en": "Undo and redo an action. Action: Move back and forth through operation history. Applications: Level editors, drawing, experimental puzzles, creative tools. Conditions: Reverting application history is different from canceling the current incomplete command. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k108",
+              "text": {
+                "ru": "Числовой префикс. Действие: Число перед командой задаёт количество повторов или масштаб. Применение: Сделать десять шагов, продублировать объект несколько раз, выполнить повтор движения курсора. Условия: Нужны границы числа и правило окончания префикса. Оборудование: Обычная клавиатура.",
+                "en": "Numeric prefix. Action: The number in front of the command sets the number of repetitions or scale. Application: Take ten steps, duplicate the object several times, repeat the cursor movement. Conditions: You need number boundaries and a prefix ending rule. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k109",
+              "text": {
+                "ru": "Оператор и область действия. Действие: Одна команда задаёт операцию, другая выбирает объект или диапазон. Применение: Модальный редактор, массовое удаление клеток, обработка частей конструкции. Условия: Комбинации должны подчиняться единой грамматике. Оборудование: Обычная клавиатура.",
+                "en": "Operator and scope. Action: One command specifies an operation, the other selects an object or range. Application: Modal editor, mass deletion of cells, processing parts of a structure. Conditions: Combinations must obey a single grammar. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k110",
+              "text": {
+                "ru": "Запись и исполнение макроса. Действие: Последовательность пользовательских действий сохраняется и запускается одной командой. Применение: Автоматизация редактора, обучение робота, конвейер производственных операций. Условия: Уточните, записываются события с таймингом или смысловые команды. Оборудование: Обычная клавиатура.",
+                "en": "Recording and executing a macro. Action: A sequence of user actions is saved and launched with one command. Application: Editor automation, robot training, production pipeline. Conditions: Specify whether events with timing or semantic commands are recorded. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k111",
+              "text": {
+                "ru": "Регистры и наборы команд. Действие: Несколько сохранённых фрагментов или макросов доступны по отдельным клавишам. Применение: Буфер реплик, музыкальные фразы, шаблоны кода, программы для разных роботов. Условия: Нужна видимость содержимого выбранного регистра. Оборудование: Обычная клавиатура.",
+                "en": "Registers and instruction sets. Action: Several saved fragments or macros are available on separate keys. Application: Cue buffer, musical phrases, code templates, programs for different robots. Conditions: Visibility of the contents of the selected register is required. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k112",
+              "text": {
+                "ru": "Пошаговое выполнение и пауза. Действие: Клавиши запускают, останавливают и продвигают процесс на один шаг. Применение: Отладка, анимация, симуляции, обучение программированию и монтаж. Условия: Отдельно определите, что происходит с накопленным вводом после паузы. Оборудование: Обычная клавиатура.",
+                "en": "Step by step execution and pause. Action: Keys start, stop and advance the process one step. Application: Debugging, animation, simulations, programming training and editing. Conditions: Separately determine what happens to the accumulated input after a pause. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-multiplayer",
+      "section": "section-8",
+      "title": {
+        "ru": "Совместная и соревновательная игра",
+        "en": "Cooperative and competitive play"
+      },
+      "description": {
+        "ru": "Одна поверхность или несколько устройств распределяются между участниками.",
+        "en": "One surface or several devices are shared between participants."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-multiplayer-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k113",
+              "text": {
+                "ru": "Разделённая клавиатура. Действие: Игроки получают разные непересекающиеся зоны одной клавиатуры. Применение: Локальный бой, гонка, совместная головоломка. Условия: Нужны проверка общих сочетаний и достаточно места для рук. Оборудование: Обычная клавиатура.",
+                "en": "Split keyboard. Action: Players get different non-overlapping areas of the same keyboard. Application: Local combat, race, cooperative puzzle. Conditions: Need to check general combinations and have enough space for hands. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k114",
+              "text": {
+                "ru": "Общий персонаж. Действие: Разные участники отвечают за разные части управления одной сущностью. Применение: Один двигает робота, другой управляет захватом; экипаж одного корабля. Условия: Программа проверяет команды из зон; личность нажавшего обычно неизвестна. Оборудование: Обычная клавиатура.",
+                "en": "General character. Action: Different participants are responsible for different parts of the control of one entity. Application: One moves the robot, the other controls the gripper; crew of one ship. Conditions: The program checks commands from zones; the identity of the person pressing is usually unknown. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k115",
+              "text": {
+                "ru": "Совместный аккорд. Действие: Участники одновременно удерживают или нажимают свои клавиши ради общего результата. Применение: Открыть кооперативный замок, создать общий музыкальный аккорд. Условия: Без наблюдения нельзя доказать, что клавиши нажали разные люди. Оборудование: Обычная клавиатура.",
+                "en": "Joint chord. Action: Participants simultaneously hold or press their keys for a common result. Application: Open a cooperative lock, create a common musical chord. Conditions: Without observation, it cannot be proven that the keys were pressed by different people. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k116",
+              "text": {
+                "ru": "Эстафета ввода. Действие: Право вводить команды передаётся по очереди. Применение: Совместный рассказ, ритмическая эстафета, ремонт устройства по этапам. Условия: При одной клавиатуре фактического исполнителя определяет договорённость. Оборудование: Обычная клавиатура.",
+                "en": "Input relay. Action: The right to enter commands is transferred in turn. Application: Joint story, rhythmic relay race, device repair in stages. Conditions: With one keyboard, the actual performer is determined by the agreement. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k117",
+              "text": {
+                "ru": "Противостояние за общую цель. Действие: Участники вводят команды к одному объекту; решает порядок, время или заявка. Применение: Спор за направление корабля, аукцион на действие, захват общего курсора. Условия: Определите арбитраж конфликтующих событий. Оборудование: Обычная клавиатура.",
+                "en": "Confrontation for a common goal. Action: Participants enter commands to one object; decides the order, time or application. Application: Dispute for the direction of the ship, auction for an action, capture of the general cursor. Conditions: Determine the arbitration of conflicting events. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k118",
+              "text": {
+                "ru": "Музыкальный или рабочий ансамбль. Действие: Каждая зона исполняет самостоятельную партию в общей композиции. Применение: Клавиатурный дуэт, многопостовая сборка, синхронная операция экипажа. Условия: Обратная связь должна позволять каждому видеть свою задачу. Оборудование: Обычная клавиатура.",
+                "en": "Musical or work ensemble. Action: Each zone performs an independent part in the overall composition. Application: Keyboard duet, multi-station assembly, synchronized crew operation. Conditions: Feedback should allow everyone to see their task. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k119",
+              "text": {
+                "ru": "Две клавиатуры с идентификацией. Действие: Одинаковые клавиши разных устройств принадлежат разным игрокам. Применение: Полноценная локальная игра, состязание в печати, индивидуальные музыкальные партии. Условия: Нужен API, различающий устройства; обычный поток браузерных событий их не разделяет. Оборудование: Системный API.",
+                "en": "Two keypads with identification. Action: The same keys on different devices belong to different players. Application: Full local game, typing competition, individual musical parts. Conditions: An API that distinguishes devices is needed; the normal stream of browser events does not separate them. Hardware: System API."
+              }
+            },
+            {
+              "id": "variant-k120",
+              "text": {
+                "ru": "Распределённая клавиатура. Действие: Каждый участник вводит часть общего состояния на своём устройстве через сеть. Применение: Массовое музыкальное исполнение, коллективная панель управления, дистанционная кооперация. Условия: Это сетевая механика; требуется учитывать задержки и назначение участников. Оборудование: Дополнительный канал.",
+                "en": "Distributed keyboard. Action: Each participant enters part of the shared state on his device through the network. Application: Mass musical performance, collective control panel, remote cooperation. Conditions: This is a network mechanics; delays and assignment of participants must be taken into account. Equipment: Additional channel."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-object",
+      "section": "section-4",
+      "title": {
+        "ru": "Клавиатура как физический предмет",
+        "en": "Keyboard as a physical object"
+      },
+      "description": {
+        "ru": "Форма, поверхность, подписи и размещение становятся материалом задания.",
+        "en": "Shape, surface, signatures and placement become the material of the assignment."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-object-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k121",
+              "text": {
+                "ru": "Тактильные ориентиры. Действие: Находить позиции по выступам, краям и промежуткам между блоками. Применение: Освоение домашнего ряда, аудиоигра, тактильный поиск ключевой позиции. Условия: Наличие выступов F/J и цифрового ориентира зависит от модели. Оборудование: Физическое условие.",
+                "en": "Tactile landmarks. Action: Find positions by ridges, edges and spaces between blocks. Application: Mastering the home row, audio game, tactile search for a key position. Conditions: The presence of F/J ridges and digital landmark depends on the model. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k122",
+              "text": {
+                "ru": "Размер и форма клавиш. Действие: Правило использует длинные, угловые или отдельно стоящие клавиши. Применение: Найти «мост» Space, выбрать «дверь» Enter, головоломка на форму панели. Условия: ANSI, ISO, JIS и компактные форм-факторы различаются. Оборудование: Физическое условие.",
+                "en": "Size and shape of keys. Action: Rule uses long, angled or freestanding keys. Application: Find \"bridge\" Space, select \"door\" Enter, panel shape puzzle. Conditions: ANSI, ISO, JIS and compact form factors vary. Hardware: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k123",
+              "text": {
+                "ru": "Подписи как подсказки. Действие: Надписи, символы и пиктограммы на клавишах входят в решение. Применение: Найти знак, прочитать шифр, сопоставить название клавиши с действием в сюжете. Условия: Подписи зависят от раскладки и заменённых кейкапов; сама программа их не считывает. Оборудование: Физическое условие.",
+                "en": "Signatures as clues. Action: Inscriptions, symbols and pictograms on the keys are included in the solution. Application: Find the sign, read the code, match the name of the key with the action in the plot. Conditions: Signatures depend on the layout and replaced keycaps; The program itself does not read them. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k124",
+              "text": {
+                "ru": "Накладки и бумажные трафареты. Действие: На клавиши или вокруг них накладываются обозначения и прорези. Применение: Учебный пульт, настольная игра с цифровой частью, имитация панели космолёта. Условия: Трафарет должен соответствовать конкретной геометрии устройства. Оборудование: Физическое условие.",
+                "en": "Overlays and paper stencils. Action: Markings and slots are placed on or around the keys. Application: Educational console, board game with a digital part, simulated spaceship panel. Conditions: The stencil must match the specific geometry of the device. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k125",
+              "text": {
+                "ru": "Закрытая часть поверхности. Действие: Участок клавиатуры скрывается от взгляда или становится недоступен по правилу. Применение: Поиск на ощупь, игра с ограниченными ресурсами, обучение привычным позициям. Условия: Скрытие и фактическую недоступность программа обычно не обнаруживает. Оборудование: Физическое условие.",
+                "en": "Closed part of the surface. Action: A section of the keyboard is hidden from view or becomes inaccessible by rule. Application: Searching by touch, playing with limited resources, learning familiar positions. Conditions: Hiding and actual inaccessibility are usually not detected by the program. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k126",
+              "text": {
+                "ru": "Поворот и необычное размещение. Действие: Устройство поворачивают или передают участнику в иной ориентации. Применение: Смена точки зрения, локальная кооперация, сценическая головоломка. Условия: Обычная клавиатура не сообщает свою ориентацию; правило задаётся вручную. Оборудование: Физическое условие.",
+                "en": "Rotation and unusual placement. Action: The device is rotated or passed to the participant in a different orientation. Application: Change of point of view, local cooperation, stage puzzle. Conditions: A regular keyboard does not communicate its orientation; the rule is set manually. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k127",
+              "text": {
+                "ru": "Перестановка подписей или кейкапов. Действие: Физические обозначения меняются при сохранении электрических позиций клавиш. Применение: Шифровальная машина, обучение новому коду, загадка о несовпадении подписи и действия. Условия: Сигнал остаётся сигналом позиции переключателя; нужны сменные подходящие кейкапы. Оборудование: Физическое условие.",
+                "en": "Rearranging signatures or keycaps. Action: Physical designations change while maintaining the electrical positions of the keys. Application: Cipher machine, learning a new code, riddle about the discrepancy between the signature and the action. Conditions: The signal remains the signal of the switch position; Replacement suitable caps are needed. Equipment: Physical condition."
+              }
+            },
+            {
+              "id": "variant-k128",
+              "text": {
+                "ru": "Звук и ощущение нажатия. Действие: Щелчки и тактильный отклик используются человеком как обратная связь. Применение: Перкуссия без экрана, ансамбль на звуках клавиш, работа с закрытыми глазами. Условия: Компьютер не измеряет звук и ощущение через обычные клавиатурные события. Оборудование: Физическое условие.",
+                "en": "Sound and feeling of pressing. Action: Clicks and tactile feedback are used as feedback by humans. Application: Percussion without a screen, ensemble on key sounds, working with eyes closed. Conditions: The computer does not measure sound and feel through normal keyboard events. Equipment: Physical condition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-sensors",
+      "section": "section-9",
+      "title": {
+        "ru": "Аналоговые клавиши и датчики",
+        "en": "Analog Keys and Sensors"
+      },
+      "description": {
+        "ru": "Эти взаимодействия требуют соответствующего оборудования и доступного потока данных.",
+        "en": "These interactions require appropriate hardware and available data flow."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-sensors-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k129",
+              "text": {
+                "ru": "Глубина хода клавиши. Действие: Непрерывное значение положения задаёт величину действия. Применение: Плавная скорость, газ и тормоз, степень открытия клапана. Условия: Нужна аналоговая клавиатура и SDK либо совместимый режим контроллера. Оборудование: Специальное устройство / SDK.",
+                "en": "Key stroke depth. Action: Continuous position value sets the amount of action. Application: Smooth speed, throttle and brake, valve opening degree. Conditions: Requires analog keyboard and SDK or compatible controller mode. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k130",
+              "text": {
+                "ru": "Несколько уровней хода. Действие: Разные диапазоны глубины включают разные ступени или действия. Применение: Ходьба и бег одной клавишей, полунажатие и полное действие, ступени тяги. Условия: Порогам нужны допуски или гистерезис, чтобы состояние не дрожало. Оборудование: Специальное устройство / SDK.",
+                "en": "Several levels of progress. Action: Different depth ranges involve different steps or actions. Application: Walking and running with one key, half press and full action, pull steps. Conditions: Thresholds need tolerances or hysteresis to keep the state from shaking. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k131",
+              "text": {
+                "ru": "Частичное отпускание. Действие: Новое действие допускается после небольшого обратного хода без полного возврата. Применение: Повторные движения, переактивация ноты, чувствительный сброс команды. Условия: Возможность зависит от датчика, прошивки и API; rapid trigger может работать внутри клавиатуры. Оборудование: Специальное устройство / SDK.",
+                "en": "Partial release. Action: A new action is allowed after a small reversal without a full return. Application: Repeated movements, note reactivation, sensitive command reset. Conditions: Possibility depends on the sensor, firmware and API; rapid trigger can work inside the keyboard. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k132",
+              "text": {
+                "ru": "Скорость движения клавиши. Действие: Изменение глубины за время используется как оценка скорости нажатия или отпускания. Применение: Атака музыкального звука, инерция условного инструмента, выразительное исполнение. Условия: Нужны достаточно частые аналоговые отсчёты; это не обычный интервал keydown/keyup. Оборудование: Специальное устройство / SDK.",
+                "en": "Key speed. Action: The change in depth over time is used as an estimate of the speed of pressing or releasing. Application: Attack of a musical sound, inertia of a conventional instrument, expressive performance. Conditions: Quite frequent analog samples are needed; this is not a normal keydown/keyup interval. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k133",
+              "text": {
+                "ru": "Измеренная сила. Действие: Датчик измеряет приложенное усилие, а правило использует его величину. Применение: Сжатие захвата, давление кисти, музыкальная экспрессия. Условия: Датчик силы является отдельным требованием; измерение хода само по себе силы не даёт. Оборудование: Специальное устройство / SDK.",
+                "en": "Measured force. Action: The sensor measures the applied force and the rule uses its magnitude. Application: Grip compression, wrist pressure, musical expression. Conditions: The force sensor is a separate requirement; Measuring the stroke in itself does not provide strength. Equipment: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k134",
+              "text": {
+                "ru": "Касание без срабатывания. Действие: Сенсор различает прикосновение или близость пальца до обычного нажатия. Применение: Предпросмотр функции, игра на касание, подсветка готового инструмента. Условия: Нужна клавиатура или накладка с соответствующими сенсорами. Оборудование: Специальное устройство / SDK.",
+                "en": "Touch without triggering. Action: The sensor distinguishes the touch or proximity of a finger before a normal press. Application: Preview of a function, playing by touch, highlighting a finished instrument. Conditions: You need a keyboard or pad with the appropriate sensors. Equipment: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k135",
+              "text": {
+                "ru": "Движение всего устройства. Действие: Внешний или встроенный датчик измеряет наклон, поворот или ускорение клавиатуры. Применение: Наклонять платформу, управлять курсом, соединять печать с жестами. Условия: Инерциальные датчики не входят в стандартные клавиатурные события. Оборудование: Дополнительный канал.",
+                "en": "Movement of the entire device. Action: An external or built-in sensor measures the tilt, rotation, or acceleration of the keyboard. Application: Tilt the platform, steer course, couple typing with gestures. Conditions: Inertial sensors are not included in standard keyboard events. Hardware: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k136",
+              "text": {
+                "ru": "Акустическое считывание. Действие: Микрофон анализирует звуки нажатий как дополнительный вход. Применение: Ритмический инструмент, художественный эксперимент, распознавание серии стуков. Условия: Микрофон требует доступа; звук ненадёжно определяет конкретную клавишу. Оборудование: Дополнительный канал.",
+                "en": "Acoustic reading. Action: The microphone analyzes the sounds of tapping as an additional input. Application: Rhythmic instrument, artistic experiment, recognition of a series of knocks. Conditions: The microphone requires access; the sound does not reliably identify a specific key. Equipment: Additional channel."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-feedback",
+      "section": "section-10",
+      "title": {
+        "ru": "Световая и физическая обратная связь",
+        "en": "Light and physical feedback"
+      },
+      "description": {
+        "ru": "Клавиатура может быть каналом подсказок, состояния и результатов.",
+        "en": "The keyboard can be a channel for hints, status, and results."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-feedback-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k137",
+              "text": {
+                "ru": "Подсветка следующей цели. Действие: Система подсвечивает клавишу, которую нужно нажать. Применение: Обучение печати, музыкальные ноты, пошаговая процедура запуска. Условия: Нужны управляемая подсветка и совместимый SDK. Оборудование: Специальное устройство / SDK.",
+                "en": "Highlights next target. Action: The system illuminates the key to be pressed. Application: Typing training, musical notes, step-by-step startup procedure. Conditions: Controllable backlight and compatible SDK required. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k138",
+              "text": {
+                "ru": "Световой маршрут или рисунок. Действие: Группа огней задаёт путь, форму или последовательность. Применение: Клавиатурный лабиринт, повторение узора, головоломка на распространение света. Условия: Геометрию световых зон нужно сопоставить с физической моделью устройства. Оборудование: Специальное устройство / SDK.",
+                "en": "Light path or pattern. Action: A group of lights defines a path, shape or sequence. Application: Keyboard maze, pattern repetition, light propagation puzzle. Conditions: The geometry of the light zones must be compared with the physical model of the device. Equipment: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k139",
+              "text": {
+                "ru": "Состояние на каждой клавише. Действие: Цвет или яркость отражают ресурс связанного действия. Применение: Перезарядки, здоровье баз, температура узлов, доступность нот. Условия: Нужна индивидуальная подсветка; обозначайте состояния также формой или дополнительным каналом. Оборудование: Специальное устройство / SDK.",
+                "en": "State on each key. Action: Color or brightness reflects the resource of the associated action. Application: Recharges, base health, node temperature, note availability. Conditions: Individual backlighting is required; indicate states also with a form or an additional channel. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k140",
+              "text": {
+                "ru": "Световой ритм. Действие: Импульсы подсветки задают темп или момент действия. Применение: Ритм-игра, немой метроном, синхронизация ансамбля. Условия: Задержку обновления света нужно учитывать в таймингах. Оборудование: Специальное устройство / SDK.",
+                "en": "Light rhythm. Action: Backlight pulses set the tempo or moment of action. Application: Rhythm playing, silent metronome, ensemble synchronization. Conditions: The delay in updating the light must be taken into account in the timings. Equipment: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k141",
+              "text": {
+                "ru": "Ответ света на результат. Действие: Нажатие вызывает вспышку, волну или изменение цветовой схемы. Применение: Подтверждение попадания, реакция инструмента, распространение игровой энергии. Условия: Сигнал должен отличать принятый ввод от простой регистрации клавиши. Оборудование: Специальное устройство / SDK.",
+                "en": "Light's response to the result. Action: Pressing causes a flash, wave or change in color scheme. Application: Hit confirmation, tool reaction, distribution of game energy. Conditions: The signal must distinguish the accepted input from simple key registration. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k142",
+              "text": {
+                "ru": "Индикаторы фиксируемых режимов. Действие: Доступные лампы Caps Lock, Num Lock или Scroll Lock несут простое состояние. Применение: Ретро-пульт, индикатор активной фазы, минимальная сигнализация. Условия: Управление лампами требует подходящего системного пути или прошивки и может быть связано с состоянием ОС. Оборудование: Системный API.",
+                "en": "Indicators of fixed modes. Action: Available Caps Lock, Num Lock or Scroll Lock lamps carry a simple state. Application: Retro remote, active phase indicator, minimal alarm. Conditions: Control of lamps requires a suitable system path or firmware and can be related to the OS state. Hardware: System API."
+              }
+            },
+            {
+              "id": "variant-k143",
+              "text": {
+                "ru": "Экран на клавиатуре. Действие: Встроенный дисплей показывает инструкции, статус или фрагмент игрового мира. Применение: Пульт персонажа, текстовый коммуникатор, локальная панель очереди команд. Условия: Экран и доступ к нему являются особенностями конкретного устройства. Оборудование: Специальное устройство / SDK.",
+                "en": "Keyboard screen. Action: The built-in display shows instructions, status or a fragment of the game world. Application: Character console, text communicator, local command queue panel. Conditions: The screen and access to it are features of a specific device. Equipment: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k144",
+              "text": {
+                "ru": "Управляемая тактильная отдача. Действие: Специальный исполнительный механизм создаёт вибрацию или изменяет ощущение клавиши. Применение: Сигнал ошибки, текстура инструмента, сопротивление виртуального механизма. Условия: Нужен соответствующий тактильный привод; обычные переключатели сами программно этого не делают. Оборудование: Специальное устройство / SDK.",
+                "en": "Controlled haptic feedback. Action: A special actuator creates vibration or changes the feel of a key. Application: Error signal, tool texture, virtual mechanism resistance. Conditions: An appropriate tactile actuator is needed; regular switches themselves do not do this in software. Hardware: Special device / SDK."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hybrids",
+      "section": "section-11",
+      "title": {
+        "ru": "Гибриды и встроенные контроллеры",
+        "en": "Hybrids and embedded controllers"
+      },
+      "description": {
+        "ru": "Клавиши связываются с другими источниками ввода; дополнительные элементы не являются обычными клавишами.",
+        "en": "Keys communicate with other input sources; the additional elements are not regular keys."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-hybrids-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k145",
+              "text": {
+                "ru": "Клавиатура и указатель. Действие: Клавиши задают движение, режим или инструмент, мышь либо трекпад выбирает точку. Применение: Прицеливание, модифицированное перетаскивание, рисование и редактирование. Условия: Нужно определить владельца фокуса и совместную интерпретацию событий. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and pointer. Action: Keys specify movement, mode or tool, mouse or trackpad selects a point. Application: Aiming, modified dragging, drawing and editing. Conditions: Need to determine the owner of the focus and joint interpretation of events. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k146",
+              "text": {
+                "ru": "Клавиатура и голос. Действие: Текст или кнопки выбирают параметр, голос задаёт команду либо наоборот. Применение: Диспетчерская, сценическая игра, управление экипажем, мультимодальный редактор. Условия: Нужны микрофон, разрешение и понятная обработка нераспознанной речи. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and voice. Action: Text or buttons select a parameter, voice gives a command or vice versa. Application: Dispatcher, stage play, crew management, multimodal editor. Conditions: A microphone, resolution and clear processing of unrecognized speech are needed. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k147",
+              "text": {
+                "ru": "Клавиатура и сенсорный экран. Действие: Касание выбирает объект, клавиши управляют действием или модификатором. Применение: Рисование на планшете с клавиатурой, управление картой, музыкальный инструмент. Условия: Учитывайте достижимость обоих устройств и состояние активного окна. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and touch screen. Action: Touch selects an object, keys control an action or modifier. Application: Drawing on a tablet with a keyboard, map control, musical instrument. Conditions: Consider the reachability of both devices and the state of the active window. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k148",
+              "text": {
+                "ru": "Клавиатура и взгляд. Действие: Взгляд выбирает цель, клавиша подтверждает либо изменяет её. Применение: Быстрый выбор объектов, доступное управление, прицеливание в экспериментальной игре. Условия: Требуется трекер взгляда или подходящая камера и калибровка. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and look. Action: Gaze selects the target, the key confirms or changes it. Application: Quick selection of objects, accessible controls, aiming in an experimental game. Conditions: Requires an eye tracker or a suitable camera and calibration. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k149",
+              "text": {
+                "ru": "Клавиатура и поза тела. Действие: Камера или другой датчик добавляет положение рук, головы либо корпуса. Применение: Проверять перекрещивание рук, сочетать печать с движением, создавать сценическую игру. Условия: Поза не определяется клавиатурой; качество внешнего распознавания нужно проверять. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and body posture. Action: A camera or other sensor adds the position of the arms, head or body. Application: Check the crossing of hands, combine typing with movement, create stage acting. Conditions: Pose is not determined by the keyboard; The quality of external recognition needs to be checked. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k150",
+              "text": {
+                "ru": "Клавиатура и геймпад или педаль. Действие: Разные каналы отвечают за разные части управления. Применение: Клавиши выбирают команды, педаль удерживает режим, геймпад задаёт непрерывную ось. Условия: Нужны правила приоритета и поддержка смешанного ввода. Оборудование: Дополнительный канал.",
+                "en": "Keyboard and gamepad or pedal. Action: Different channels are responsible for different parts of the control. Application: Keys select commands, the pedal holds the mode, the gamepad sets a continuous axis. Conditions: Priority rules and support for mixed input are needed. Equipment: Additional channel."
+              }
+            },
+            {
+              "id": "variant-k151",
+              "text": {
+                "ru": "Встроенный энкодер или колесо. Действие: Дополнительный вращающийся контроллер меняет значение, клавиша подтверждает. Применение: Частота, масштаб, прокрутка, выбор шага на панели прибора. Условия: Наличие и доступность энкодера зависят от устройства и его интерфейса. Оборудование: Специальное устройство / SDK.",
+                "en": "Built-in encoder or wheel. Action: The additional rotary controller changes the value, the key confirms. Application: Frequency, scale, scrolling, step selection on the instrument panel. Conditions: Availability and accessibility of the encoder depends on the device and its interface. Hardware: Special device / SDK."
+              }
+            },
+            {
+              "id": "variant-k152",
+              "text": {
+                "ru": "Встроенный тачпад, полоска или мини-джойстик. Действие: Дополнительная поверхность или указатель даёт непрерывное управление рядом с клавишами. Применение: Положение камеры, модуляция звука, курсор, выразительный творческий инструмент. Условия: Это отдельный канал внутри корпуса; его нельзя предполагать у любой клавиатуры. Оборудование: Специальное устройство / SDK.",
+                "en": "Built-in touchpad, strip or mini-joystick. Action: An additional surface or pointer gives continuous control next to the keys. Applications: Camera positioning, audio modulation, cursor, expressive creative tool. Conditions: This is a separate channel within the housing; it should not be assumed on any keyboard. Hardware: Special device / SDK."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-accessibility",
+      "section": "section-12",
+      "title": {
+        "ru": "Доступные схемы управления",
+        "en": "Accessible control schemes"
+      },
+      "description": {
+        "ru": "Преобразования ввода помогают сохранить задачу при других моторных возможностях.",
+        "en": "Input transformations help preserve the task across other motor abilities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-accessibility-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k153",
+              "text": {
+                "ru": "Одна клавиша и сканирование. Действие: Система по очереди подсвечивает варианты, нажатие выбирает текущий. Применение: Меню, диалоги, пошаговые игры и инструменты с одним доступным переключателем. Условия: Скорость сканирования и способ отмены настраиваются. Оборудование: Обычная клавиатура.",
+                "en": "One key and scan. Action: The system highlights the options one by one, pressing selects the current one. Application: Menus, dialogues, turn-based games and tools with one accessible switch. Conditions: Scanning speed and cancellation method are configurable. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k154",
+              "text": {
+                "ru": "Несколько действий одной клавишей. Действие: Разные длительности, серии и фазы задают разные команды. Применение: Однокнопочное приключение, компактный контроллер, инструмент с ограниченным вводом. Условия: Словарь различимых жестов должен быть небольшим и обучаемым. Оборудование: Обычная клавиатура.",
+                "en": "Multiple actions with one key. Action: Different durations, series and phases give different commands. Application: One-button adventure, compact controller, limited input tool. Conditions: The vocabulary of distinguishable gestures must be small and learnable. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k155",
+              "text": {
+                "ru": "Последовательные модификаторы. Действие: Комбинация вводится по частям с фиксацией ранее выбранных клавиш. Применение: Альтернатива аккордам, управление одной рукой, сложные команды редактора. Условия: Фиксацию нужно показывать и позволять сбрасывать. Оборудование: Обычная клавиатура.",
+                "en": "Sequential modifiers. Action: The combination is entered in parts with the previously selected keys fixed. Application: Alternative to chords, one-hand control, complex editor commands. Conditions: The fixation must be shown and allowed to be reset. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k156",
+              "text": {
+                "ru": "Переключатель вместо удержания. Действие: Первое нажатие включает длительное действие, второе выключает его. Применение: Бег, блок, захват предмета, запись, временный режим инструмента. Условия: Сохраняйте отдельную настройку для действий, где отпускание само является смыслом. Оборудование: Обычная клавиатура.",
+                "en": "Switch instead of holding. Action: The first press turns on the long action, the second turns it off. Application: Run, block, grab an object, record, temporary tool mode. Conditions: Keep a separate setting for actions where releasing itself is the meaning. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k157",
+              "text": {
+                "ru": "Удержание вместо частых нажатий. Действие: Удержание генерирует ограниченную серию принятых действий. Применение: Альтернатива mash-механике, длительная прокрутка, повторяемая работа инструмента. Условия: Частота задаётся приложением и должна быть согласована с правилами игры. Оборудование: Обычная клавиатура.",
+                "en": "Hold instead of frequent presses. Action: Holding generates a limited series of accepted actions. Application: Alternative to mash mechanics, long scrolling, repeatable operation of the tool. Conditions: Frequency is set by the application and must be consistent with the rules of the game. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k158",
+              "text": {
+                "ru": "Компоновка для одной руки. Действие: Все необходимые действия помещаются в доступную компактную зону. Применение: Переназначение управления, локальный режим с одним участником, мобильное рабочее место. Условия: Проверяйте реальные сочетания и досягаемость на устройстве пользователя. Оборудование: Обычная клавиатура.",
+                "en": "One-handed design. Action: All necessary actions are placed in an accessible compact area. Application: Control remapping, local mode with one participant, mobile workstation. Conditions: Test real-world combinations and reach on the user's device. Hardware: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k159",
+              "text": {
+                "ru": "Последовательность вместо одновременности. Действие: Аккорд или несколько потоков заменяются цепочкой с сохранением выбранных состояний. Применение: Кооперативная головоломка соло, музыкальный ввод по шагам, доступная панель управления. Условия: Если синхронность является целью испытания, такая замена меняет его характер. Оборудование: Обычная клавиатура.",
+                "en": "Sequence instead of simultaneity. Action: A chord or multiple streams are replaced by a chain, preserving the selected states. Application: Solo cooperative puzzle, step-by-step musical input, accessible control panel. Conditions: If synchronicity is the goal of the challenge, such a replacement changes its character. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k160",
+              "text": {
+                "ru": "Настраиваемая временная точность. Действие: Пользователь меняет окна, длительности, темп и допустимые ошибки. Применение: Обучение, ритмические игры, разные режимы сложности и доступа. Условия: Это параметр взаимодействия; сохраняйте настройки и объясняйте влияние на результат. Оборудование: Обычная клавиатура.",
+                "en": "Configurable temporal precision. Action: The user changes windows, durations, tempo and acceptable errors. Application: Training, rhythm games, different difficulty and access modes. Conditions: This is an interaction parameter; save the settings and explain the impact on the result. Equipment: Regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-cognition",
+      "section": "section-13",
+      "title": {
+        "ru": "Память, внимание и обучение",
+        "en": "Memory, attention and learning"
+      },
+      "description": {
+        "ru": "Одинаковый ввод создаёт разные задачи в зависимости от подсказок и умственной нагрузки.",
+        "en": "The same input creates different tasks depending on the prompts and mental load."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-cognition-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-k161",
+              "text": {
+                "ru": "Повторить исчезнувший образец. Действие: Последовательность, аккорд или рисунок сначала показывается, затем вводится по памяти. Применение: Игра на память, обучение процедурам, музыкальное эхо. Условия: Меняются длина образца, задержка и доступность повторного просмотра. Оборудование: Обычная клавиатура.",
+                "en": "Repeat the disappeared pattern. Action: A sequence, chord or pattern is first shown, then entered from memory. Applications: Memory play, procedure teaching, musical echo. Conditions: Pattern length, delay, and replay availability vary. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k162",
+              "text": {
+                "ru": "Преобразовать образец в уме. Действие: Вводить показанный материал в обратном порядке, со смещением или по условному коду. Применение: Логическая головоломка, транспонирование мелодии, шифровальная задача. Условия: Правило преобразования должно быть однозначным. Оборудование: Обычная клавиатура.",
+                "en": "Transform the pattern in your mind. Action: Enter the shown material in reverse order, with an offset or according to a conditional code. Application: Logic puzzle, melody transposition, encryption problem. Conditions: The transformation rule must be unambiguous. Equipment: A regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k163",
+              "text": {
+                "ru": "Найти неизвестное соответствие. Действие: Экспериментировать с клавишами и выводить закономерность по ответу системы. Применение: Неизвестная панель, инопланетный прибор, обучение через исследование. Условия: Нужна достаточная обратная связь, чтобы решение было выводимым. Оборудование: Обычная клавиатура.",
+                "en": "Find an unknown match. Action: Experiment with the keys and deduce a pattern based on the system's response. Application: Unknown panel, alien device, learning through exploration. Conditions: Sufficient feedback is needed for the solution to be deducible. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k164",
+              "text": {
+                "ru": "Реагировать на выбранный признак. Действие: Команда зависит только от одного из нескольких свойств подсказки. Применение: Нажимать по цвету, игнорируя написанное слово; сортировать сигналы диспетчера. Условия: Конфликт признаков является когнитивным правилом поверх простого нажатия. Оборудование: Обычная клавиатура.",
+                "en": "React to the selected sign. Action: The command depends only on one of several properties of the tooltip. Application: Click on the color, ignoring the written word; sort dispatcher signals. Conditions: Feature conflict is a cognitive rule on top of a simple press. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k165",
+              "text": {
+                "ru": "Переключать правило. Действие: Один и тот же стимул требует разных ответов по текущему условию. Применение: Меняющиеся инструкции оператора, задача на гибкость, смена ролей в обучении. Условия: Текущее правило должно быть известно либо явно задано как задача на память. Оборудование: Обычная клавиатура.",
+                "en": "Switch rule. Action: The same stimulus requires different responses under the current condition. Application: Varying operator instructions, flexibility task, changing roles in training. Conditions: The current rule must be known or explicitly specified as a memory task. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k166",
+              "text": {
+                "ru": "Совмещать две задачи. Действие: Печатать текст и одновременно обслуживать другой поток действий. Применение: Переписка во время управления кораблём, музыкальная партия плюс сигналы тревоги. Условия: Можно отдельно настраивать сложность и темп каждого потока. Оборудование: Обычная клавиатура.",
+                "en": "Combine two tasks. Action: Type text and simultaneously serve another thread of actions. Application: Correspondence while controlling the ship, music part plus alarms. Conditions: You can separately adjust the difficulty and tempo of each thread. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k167",
+              "text": {
+                "ru": "Выбирать сигнал среди помех. Действие: Нажимать только на значимые события, игнорируя похожие ложные. Применение: Работа радара, ритмическая дорожка с отвлекающими нотами, поиск нужных букв. Условия: Отличайте ошибку выбора, пропуск и ошибку времени. Оборудование: Обычная клавиатура.",
+                "en": "Select a signal from interference. Action: Click only on significant events, ignoring similar false ones. Application: Radar operation, rhythmic track with distracting notes, searching for the necessary letters. Conditions: Distinguish between selection error, omission and time error. Equipment: Regular keyboard."
+              }
+            },
+            {
+              "id": "variant-k168",
+              "text": {
+                "ru": "Осваивать схему с уменьшением подсказок. Действие: Подсказки постепенно исчезают, а расположение и правила сохраняются. Применение: Слепая печать, обучение горячим клавишам, освоение музыкальной раскладки. Условия: Скорость снятия подсказок должна опираться на наблюдаемый успех пользователя. Оборудование: Обычная клавиатура.",
+                "en": "Master the scheme with decreasing hints. Action: Hints gradually disappear, but the location and rules are preserved. Application: Touch typing, teaching hot keys, mastering the musical layout. Conditions: The speed of removing hints should be based on the observed success of the user. Equipment: A regular keyboard."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Ограничения",
+        "en": "Restrictions"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "Событие, символ и текст",
+            "en": "Event, symbol and text"
+          },
+          "text": {
+            "ru": "Для движения обычно нужна физическая позиция клавиши; для текста нужен результат ввода с учётом раскладки, dead keys и IME. Один символ не всегда равен одному нажатию. Вставленный текст также не доказывает физический набор.; events; codes",
+            "en": "Movement usually requires a physical key position; for text you need the input result taking into account the layout, dead keys and IME. One character does not always equal one click. The pasted text also does not prove the physical type.; events; codes"
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "Реальное нажатие и повтор",
+            "en": "Real press and repeat"
+          },
+          "text": {
+            "ru": "Удержание может порождать повторные события ОС. Для подсчёта отдельных нажатий проверяют переход состояния, а для повторяемого эффекта задают собственный таймер.; events",
+            "en": "Holding may generate repeated OS events. To count individual clicks, the state transition is checked, and for the repeatable effect, its own timer is set.; events"
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "Одновременность",
+            "en": "Simultaneity"
+          },
+          "text": {
+            "ru": "Не каждая клавиатура распознаёт любой набор зажатых клавиш. Проверяйте конкретные сочетания, особенно при кооперации, музыкальных аккордах и удержании нескольких опор.; rollover",
+            "en": "Not every keyboard recognizes every set of keys pressed. Test specific combinations, especially with cooperation, musical chords and holding multiple supports.; rollover"
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "Сила, ход, палец и рука",
+            "en": "Strength, stroke, finger and hand"
+          },
+          "text": {
+            "ru": "Обычный двоичный ввод не даёт силы, глубины, личности, пальца или руки. Аналоговый ход и сила являются разными измерениями. Телесные условия требуют доверия, наблюдения или отдельного датчика.; analog; force",
+            "en": "Regular binary input does not provide strength, depth, personality, finger or hand. Analog stroke and force are different measurements. Bodily conditions require trust, observation or a separate sensor.; analog; force"
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "Компактность и раскладка",
+            "en": "Compactness and layout"
+          },
+          "text": {
+            "ru": "Цифровой блок, F-ряд и отдельные навигационные клавиши могут отсутствовать. Физическая геометрия, подписи и доступность левых/правых клавиш отличаются. Нужны переназначение и понятные подсказки.; codes",
+            "en": "The number pad, F-row and individual navigation keys may be missing. The physical geometry, labels, and left/right key accessibility are different. Reassignment and clear hints are needed.; codes"
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "Доступ к устройству",
+            "en": "Device access"
+          },
+          "text": {
+            "ru": "Fn, системные сочетания, медиаклавиши, подсветка и идентификаторы отдельных устройств доступны по-разному в браузере, движке и нативном приложении. Поддержку нужно проверять в целевой среде.; events; devices; rgb",
+            "en": "Fn, system shortcuts, media keys, backlighting, and individual device IDs are accessed differently in the browser, engine, and native app. Support must be verified in the target environment.; events; devices; rgb"
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "Время и потеря фокуса",
+            "en": "Time and loss of focus"
+          },
+          "text": {
+            "ru": "Тайминги приложения содержат задержки ввода и вывода. Для узких окон нужна калибровка. При смене окна сбрасывайте внутренние удержания без игрового штрафа: реальное отпускание могло не дойти до приложения.;",
+            "en": "Application timings contain input and output delays. Narrow windows require calibration. When changing windows, reset internal holds without a game penalty: the actual release might not reach the application.;"
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "Управляемость интерфейса",
+            "en": "Interface controllability"
+          },
+          "text": {
+            "ru": "Сохраняйте видимый фокус, доступную отмену и предсказуемую навигацию. Игровая схема может быть необычной, но меню и настройки должны оставаться доступными.; a11y",
+            "en": "Maintain visible focus, easy undo, and predictable navigation. The game layout may be unusual, but menus and settings should remain accessible.; a11y"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Условные сочетания",
+        "en": "Conditionals"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "Клавиатурный скалолаз",
+            "en": "Keyboard climber"
+          },
+          "text": {
+            "ru": "Клавиши являются зацепами; одна удерживается как опора, соседняя нажимается до отпускания первой. Ограничение активных опор создаёт задачу на маршрут и координацию.; K049; K050; K060; K032; K104",
+            "en": "The keys are hooks; one is held as a support, the adjacent one is pressed until the first one is released. Limiting active supports creates a routing and coordination challenge; K049; K050; K060; K032; K104"
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "Словесная магия",
+            "en": "Word magic"
+          },
+          "text": {
+            "ru": "Слово выбирает заклинание, длительность удержания подтверждающей клавиши задаёт заряд, отпускание в ритмическое окно усиливает результат. Опечатки меняют эффект по заранее известным правилам.; K067; K007; K019; K078",
+            "en": "The word selects the spell, the duration of holding the confirmation key sets the charge, releasing into the rhythmic window enhances the result. Typos change the effect according to previously known rules.; K067; K007; K019; K078"
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "Пульт аварийного экипажа",
+            "en": "Emergency crew console"
+          },
+          "text": {
+            "ru": "Зоны клавиатуры являются разными постами; участники поддерживают независимые процессы и вместе подтверждают аварийную процедуру аккордом.; K053; K114; K115; K024",
+            "en": "The keyboard zones are different posts; participants support independent processes and together confirm the emergency procedure with a chord.; K053; K114; K115; K024"
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "Тихий терминал",
+            "en": "Quiet terminal"
+          },
+          "text": {
+            "ru": "За каждое нажатие расходуется ресурс, исправления ограничены, длинные действия записываются в макросы. Игрок ищет короткую программу решения задачи.; K101; K079; K110; K071",
+            "en": "Each click consumes a resource, corrections are limited, long actions are recorded in macros. The player is looking for a short program to solve the problem.; K101; K079; K110; K071"
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "Световой лабиринт",
+            "en": "Light maze"
+          },
+          "text": {
+            "ru": "RGB-клавиши показывают карту; игрок проходит по соседним позициям, повторяя рисунок или реагируя на смену цвета. Требуется совместимое оборудование.; K049; K050; K138; K140",
+            "en": "RGB keys show the map; the player moves through adjacent positions, repeating the pattern or reacting to a change in color. Requires compatible hardware; K049; K050; K138; K140"
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "Управление одной клавишей",
+            "en": "One key control"
+          },
+          "text": {
+            "ru": "Сканирование выбирает цель, короткое нажатие подтверждает, удержание открывает второе действие. Темп и временные допуски настраиваются.; K153; K154; K005; K160",
+            "en": "Scan selects target, short press confirms, hold opens second action. Tempo and time tolerances are adjustable; K153; K154; K005; K160"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Параметры проектирования",
+        "en": "Design parameters"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Что оценивается: нажатие, отпускание, состояние, позиция, символ, текст или внешний датчик.",
+            "en": "What is evaluated: pressing, releasing, state, position, symbol, text or external sensor."
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сколько клавиш участвует; важны ли порядок, пересечение удержаний и отсутствие лишних клавиш.",
+            "en": "How many keys are involved; whether the order, the intersection of holds and the absence of extra keys are important."
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Каковы временное окно, порог удержания, тайм-аут, частота, буфер и допуск ошибок.",
+            "en": "What are the time window, hold threshold, timeout, frequency, buffer and error tolerance."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Как события меняют мир: движение, выбор, подтверждение, ресурс, звук, текст или состояние интерфейса.",
+            "en": "How events change the world: movement, choice, confirmation, resource, sound, text or interface state."
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Какие подсказки доступны: экран, звук, свет клавиш, тактильная форма; что нужно помнить.",
+            "en": "What prompts are available: screen, sound, key light, tactile form; what you need to remember."
+          }
+        },
+        {
+          "id": "note-3-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Как разрешаются ошибочный ввод, отмена, противоположные направления и потеря фокуса.",
+            "en": "How erroneous input, cancellation, opposite directions, and loss of focus are resolved."
+          }
+        },
+        {
+          "id": "note-3-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Кто действует: один человек, несколько участников, несколько зон или отдельно определяемые устройства.",
+            "en": "Who acts: one person, multiple participants, multiple zones or individually defined devices."
+          }
+        },
+        {
+          "id": "note-3-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Каковы требования к оборудованию, форм-фактору и альтернативным способам управления.",
+            "en": "What are the requirements for hardware, form factor and alternative control methods."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Оборудование",
+        "en": "Equipment"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "basic",
+            "en": "basic"
+          },
+          "text": {
+            "ru": "Описание: Обычная клавиатура",
+            "en": "Description: Regular keyboard"
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "physical",
+            "en": "physical"
+          },
+          "text": {
+            "ru": "Описание: Физическое условие",
+            "en": "Description: Physical condition"
+          }
+        },
+        {
+          "id": "note-4-entry-3",
+          "title": {
+            "ru": "native",
+            "en": "native"
+          },
+          "text": {
+            "ru": "Описание: Системный API",
+            "en": "Description: System API"
+          }
+        },
+        {
+          "id": "note-4-entry-4",
+          "title": {
+            "ru": "special",
+            "en": "special"
+          },
+          "text": {
+            "ru": "Описание: Специальное устройство / SDK",
+            "en": "Description: Special device / SDK"
+          }
+        },
+        {
+          "id": "note-4-entry-5",
+          "title": {
+            "ru": "hybrid",
+            "en": "hybrid"
+          },
+          "text": {
+            "ru": "Описание: Дополнительный канал",
+            "en": "Description: Additional channel"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-5",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-5-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-5-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "W3C: UI Events",
+        "en": "W3C: UI Events"
+      },
+      "url": "https://www.w3.org/TR/uievents/",
+      "description": {
+        "ru": "События нажатия и отпускания, повтор ОС, модификаторы и ввод текста. Это рабочий проект спецификации, а не проверка конкретного браузера.",
+        "en": "Press and release events, OS repeat, modifiers and text input. This is a working draft of the specification, not a test of a specific browser."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: KeyboardEvent code Values",
+        "en": "W3C: KeyboardEvent code Values"
+      },
+      "url": "https://www.w3.org/TR/uievents-code/",
+      "description": {
+        "ru": "Идентификаторы физических позиций и различия блоков клавиатуры.",
+        "en": "Physical position identifiers and keyboard block differences."
+      }
+    },
+    {
+      "title": {
+        "ru": "Microsoft: Keyboard Ghosting Interactive Demonstration",
+        "en": "Microsoft: Keyboard Ghosting Interactive Demonstration"
+      },
+      "url": "https://www.microsoft.com/applied-sciences/projects/anti-ghosting-demo",
+      "description": {
+        "ru": "Ограничения регистрации одновременных нажатий и проверка сочетаний.",
+        "en": "Restrictions on registering simultaneous presses and checking combinations."
+      }
+    },
+    {
+      "title": {
+        "ru": "Wooting: Analog SDK",
+        "en": "Wooting: Analog SDK"
+      },
+      "url": "https://github.com/WootingKb/wooting-analog-sdk/blob/develop/docs/SDK_USAGE.md",
+      "description": {
+        "ru": "Пример отдельного интерфейса чтения аналоговых значений клавиш.",
+        "en": "An example of a separate interface for reading analog key values."
+      }
+    },
+    {
+      "title": {
+        "ru": "Wooting: Analog input technologies for keyboards",
+        "en": "Wooting: Analog input technologies for keyboards"
+      },
+      "url": "https://wooting.io/post/analog-input-technoalogies-for-keyboards",
+      "description": {
+        "ru": "Различие измерения хода и силы; примеры специальных технологий.",
+        "en": "Difference between stroke and force measurement; examples of special technologies."
+      }
+    },
+    {
+      "title": {
+        "ru": "Wooting: RGB SDK",
+        "en": "Wooting: RGB SDK"
+      },
+      "url": "https://github.com/WootingKb/wooting-rgb-sdk",
+      "description": {
+        "ru": "Пример программного управления подсветкой совместимой клавиатуры.",
+        "en": "An example of software control of the backlight of a compatible keyboard."
+      }
+    },
+    {
+      "title": {
+        "ru": "Microsoft: Raw Input Overview",
+        "en": "Microsoft: Raw Input Overview"
+      },
+      "url": "https://learn.microsoft.com/en-us/windows/win32/inputdev/about-raw-input",
+      "description": {
+        "ru": "Пример платформенного API, который позволяет различать источники ввода.",
+        "en": "An example of a platform API that allows you to differentiate between input sources."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C APG: Developing a Keyboard Interface",
+        "en": "W3C APG: Developing a Keyboard Interface"
+      },
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/keyboard-interface/",
+      "description": {
+        "ru": "Фокус, навигация, выбор и согласованные клавиатурные команды в интерфейсах.",
+        "en": "Focus, navigation, selection, and consistent keyboard commands across interfaces."
+      }
+    }
+  ]
+}

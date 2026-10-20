@@ -1,0 +1,1537 @@
+{
+  "id": "metroidbrainia",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики metroidbrainia",
+    "en": "Metroidbrainia mechanics"
+  },
+  "description": {
+    "ru": "Механики metroidbrainia: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Metroidbrainia mechanics: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "В metroidbrainia продвижение существенно зависит от знания игрока: открытое правило меняет доступные действия, маршруты или решения. Здесь сохранены 91 механика в 12 группах, приёмы прогрессии, обучения и пограничные случаи. Для проекта проверяйте, какое знание приобретается, как его вывести, что оно открывает и где применяется повторно. Конкретные решения игр не раскрываются.",
+    "en": "In metroidbrainia, progression depends heavily on the player's knowledge: an open rule changes the available actions, routes, or decisions. 91 mechanics in 12 groups, progression techniques, training techniques and edge cases are stored here. For a project, check what knowledge is acquired, how it is derived, what it reveals, and where it is reused. Specific game solutions are not disclosed."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие доступных действий",
+        "en": "Discovering available actions"
+      },
+      "description": {
+        "ru": "Игрок узнаёт, что его персонаж уже способен делать.",
+        "en": "The player learns what his character is already capable of doing."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-01-01",
+              "text": {
+                "ru": "Скрытая команда. Обнаружение действия, которое доступно с начала игры, но явно не объяснено",
+                "en": "Hidden command. Detecting an action that is available from the start of the game but not explicitly explained"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-02",
+              "text": {
+                "ru": "Длительное удержание. Знакомая кнопка вызывает другое действие, если удерживать её достаточно долго",
+                "en": "Long retention. A familiar button triggers a different action if you hold it down long enough"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-03",
+              "text": {
+                "ru": "Действие при отпускании. Результат зависит от момента отпускания кнопки, а не её нажатия",
+                "en": "Release action. The result depends on the moment the button is released, not pressed."
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-04",
+              "text": {
+                "ru": "Последовательность команд. Несколько обычных действий образуют специальную команду: жест, мелодию, комбинацию направлений",
+                "en": "Sequence of commands. Several ordinary actions form a special command: a gesture, a melody, a combination of directions"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-05",
+              "text": {
+                "ru": "Одновременное действие. Совместное нажатие или совмещение действий создаёт результат, которого каждое действие отдельно не даёт",
+                "en": "Simultaneous action. Pressing together or combining actions creates a result that each action does not produce separately."
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-06",
+              "text": {
+                "ru": "Контекстное действие. Команда работает иначе при определённой позе, ориентации, поверхности или положении относительно объекта",
+                "en": "Contextual action. The command works differently when given a certain pose, orientation, surface, or position relative to an object"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-07",
+              "text": {
+                "ru": "Осознанное бездействие. Для продвижения нужно перестать двигаться, атаковать, смотреть или вмешиваться",
+                "en": "Deliberate inaction. To advance, you must stop moving, attacking, looking, or interfering"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-01-08",
+              "text": {
+                "ru": "Воспроизведение образца. Игрок повторяет движение, ритм или поведение, увиденное у существа, механизма либо изображения",
+                "en": "Reproduction of sample. The player repeats the movement, rhythm or behavior seen in a creature, mechanism or image"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие свойств предметов и объектов",
+        "en": "Discovering object properties"
+      },
+      "description": {
+        "ru": "Знание расширяет применение уже доступных инструментов.",
+        "en": "Knowledge expands the use of already available tools."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-02-01",
+              "text": {
+                "ru": "Вторичная функция предмета. Инструмент имеет дополнительное применение, которое не следует из его первоначальной роли",
+                "en": "Secondary function of the item. The tool has additional uses that do not follow from its original role"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-02",
+              "text": {
+                "ru": "Воздействие на окружение. Оружие или способность взаимодействует с архитектурой, механизмами и материалами",
+                "en": "Impact on the environment. Weapon or ability interacts with architecture, mechanisms and materials"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-03",
+              "text": {
+                "ru": "Использование формы предмета. Важны длина, толщина, контур или ориентация объекта: его можно превратить в мост, распорку или шаблон",
+                "en": "Using the shape of an object. The length, thickness, contour or orientation of the object is important: it can be turned into a bridge, strut or template"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-04",
+              "text": {
+                "ru": "Зависимость функции от состояния. Мокрый, нагретый, заряженный, раскрытый или повреждённый предмет ведёт себя иначе",
+                "en": "Dependence of function on state. A wet, heated, charged, opened or damaged object behaves differently"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-05",
+              "text": {
+                "ru": "Неочевидная переносимость. Объект, воспринимавшийся частью комнаты, можно забрать и использовать в другом месте",
+                "en": "Unobvious portability. An object perceived as part of a room can be taken away and used elsewhere"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-06",
+              "text": {
+                "ru": "Скрытая интерактивность. Элемент декора оказывается полноценным объектом взаимодействия; открытое правило помогает распознавать аналогичные элементы",
+                "en": "Hidden interactivity. The decorative element turns out to be a full-fledged object of interaction; an open rule helps recognize similar elements"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-02-07",
+              "text": {
+                "ru": "Препятствие как инструмент. Опасность, ловушка или враждебный объект используется для решения другой задачи",
+                "en": "Obstacle as a tool. A hazard, trap, or hostile object is used to solve another problem"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие правил перемещения",
+        "en": "Discovering movement rules"
+      },
+      "description": {
+        "ru": "Здесь важен прежде всего пересмотр модели движения. Простое улучшение реакции само по себе к этому типу не относится. В Leap Year разработчик прямо связывает понимание секретов игры с доступом к новым областям. Это пример платформера, где открытия меняют доступную навигацию. Описание Leap Year.",
+        "en": "What is important here is, first of all, a revision of the movement model. A simple improvement in reaction in itself does not belong to this type. In Leap Year, the developer directly ties understanding the game's secrets to accessing new areas. This is an example of a platformer where discoveries change the available navigation. Description of Leap Year."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/2951770/Leap_Year/"],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-03-01",
+              "text": {
+                "ru": "Необычное правило прыжка. Возможность, высота или результат прыжка зависят от неочевидного условия",
+                "en": "Unusual jump rule. The possibility, height or result of a jump depends on a non-obvious condition"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-02",
+              "text": {
+                "ru": "Сохранение и перенос импульса. Скорость можно накопить, перенести между поверхностями или преобразовать в другое движение",
+                "en": "Conservation and transfer of momentum. Speed ​​can be accumulated, transferred between surfaces, or converted into other motion"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-03",
+              "text": {
+                "ru": "Условная безопасность падения. Опасность определяется способом падения, состоянием персонажа или поверхностью приземления",
+                "en": "Conditional fall safety. Danger is determined by the way you fall, the character's condition, or the landing surface"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-04",
+              "text": {
+                "ru": "Неочевидная проходимая поверхность. Стена, потолок, край объекта или декоративная конструкция допускают перемещение",
+                "en": "Unobvious walkable surface. Wall, ceiling, edge of object or decorative structure allows movement"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-05",
+              "text": {
+                "ru": "Отбрасывание как транспорт. Удар, взрыв или столкновение позволяет попасть в недоступную область",
+                "en": "Dropping as transport. Impact, explosion or collision allows you to enter an inaccessible area"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-06",
+              "text": {
+                "ru": "Перемещение на объектах. Предмет, существо или механизм может перевозить персонажа, хотя первоначально это неочевидно",
+                "en": "Moving on objects. An item, creature, or mechanism can carry a character, although this is not initially obvious"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-03-07",
+              "text": {
+                "ru": "Использование сил среды. Потоки воздуха, жидкости, притяжение или другие поля образуют скрытую транспортную систему",
+                "en": "Using environmental forces. Flows of air, liquid, gravity or other fields form a hidden transport system"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие физических и системных закономерностей",
+        "en": "Discovering physical and systemic rules"
+      },
+      "description": {
+        "ru": "Игрок выясняет, по каким законам работает мир. Эти законы могут быть вымышленными, если игра применяет их последовательно. Пример глубокого исследования небольшого набора взаимодействий: A Monster’s Expedition, где перемещение деревьев создаёт пути между островами. Разработчики отдельно подчёркивают простые механики со множеством открываемых возможностей. Описание Draknek & Friends.",
+        "en": "The player finds out by what laws the world works. These laws may be fictitious if the game applies them consistently. An example of deep exploration of a small set of interactions: A Monster's Expedition, where moving trees creates paths between islands. The developers specifically emphasize simple mechanics with many unlockable possibilities. Description of Draknek & Friends."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1052990/A_Monsters_Expedition/"
+      ],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-04-01",
+              "text": {
+                "ru": "Масса и равновесие. Вес объектов влияет на платформы, противовесы, опоры и устойчивость конструкций",
+                "en": "Mass and balance. The weight of objects affects platforms, counterweights, supports and structural stability"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-02",
+              "text": {
+                "ru": "Трение и сцепление. Поверхности по-разному удерживают объекты, передают движение или допускают скольжение",
+                "en": "Friction and adhesion. Surfaces hold objects differently, convey movement, or allow sliding"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-03",
+              "text": {
+                "ru": "Плавучесть и вытеснение. Предметы меняют уровень жидкости, становятся переправой или поднимают другие объекты",
+                "en": "Buoyancy and displacement. Objects change fluid levels, become bridges, or lift other objects"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-04",
+              "text": {
+                "ru": "Преобразование материала. Объект меняет свойства при замерзании, плавлении, разрушении, растворении или другой трансформации",
+                "en": "Material conversion. An object changes properties when frozen, melted, destroyed, dissolved, or otherwise transformed"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-05",
+              "text": {
+                "ru": "Тепло и горение. Игрок открывает условия нагрева, воспламенения, распространения и прекращения огня",
+                "en": "Heat and combustion. The player unlocks the conditions of heating, ignition, spread and cease fire"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-06",
+              "text": {
+                "ru": "Проводимость и передача сигнала. Электричество, энергия или условный сигнал распространяются по обнаруженным правилам",
+                "en": "Conductivity and signal transmission. Electricity, energy or conditioned signal propagates according to discovered rules"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-07",
+              "text": {
+                "ru": "Оптические взаимодействия. Свет отражается, преломляется, перекрывается или фокусируется, управляя устройствами и доступом",
+                "en": "Optical interactions. Light is reflected, refracted, blocked or focused to control devices and access"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-08",
+              "text": {
+                "ru": "Акустические взаимодействия. Звук распространяется через среду, отражается или вызывает резонанс и физическую реакцию",
+                "en": "Acoustic interactions. Sound travels through a medium, is reflected, or causes resonance and a physical reaction."
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-04-09",
+              "text": {
+                "ru": "Давление и потоки. Перекрытие каналов, изменение давления или направления течения перестраивает доступное пространство",
+                "en": "Pressure and flows. Closing channels, changing pressure or flow direction rearranges the available space"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Изучение существ и экосистем",
+        "en": "Study of creatures and ecosystems"
+      },
+      "description": {
+        "ru": "Игрок получает возможности через понимание чужого поведения. Эта группа особенно хорошо представлена в Toki Tori 2+: разработчики предлагают изучать поведение существ и управлять ими свистом и топаньем. Описание Two Tribes.",
+        "en": "The player gains opportunities through understanding other people's behavior. This group is especially well represented in Toki Tori 2+: the developers propose to study the behavior of creatures and control them by whistling and stomping. Description of Two Tribes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/201420/Toki_Tori_2/"],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-05-01",
+              "text": {
+                "ru": "Привлечение и отпугивание. Знание реакции на звук, свет, запах или движение позволяет направлять существ",
+                "en": "Attraction and repulsion. Knowing the reaction to sound, light, smell or movement allows you to guide creatures"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-02",
+              "text": {
+                "ru": "Ограничения восприятия. Обнаружение того, что существо видит, слышит и игнорирует, открывает безопасные маршруты",
+                "en": "Limitations of perception. Detecting what a creature sees, hears, and ignores reveals safe routes"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-03",
+              "text": {
+                "ru": "Хищник и добыча. Отношения между существами используются для освобождения проходов или изменения их расположения",
+                "en": "Predator and prey. Relationships between creatures are used to open passages or change their location"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-04",
+              "text": {
+                "ru": "Кормление и производство. Получив определённый ресурс, существо создаёт полезный объект, вещество или эффект",
+                "en": "Feeding and production. Having received a certain resource, a creature creates a useful object, substance or effect"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-05",
+              "text": {
+                "ru": "Изменение состояния существа. Сон, испуг, насыщение, рост или другая стадия меняют его возможности и реакции",
+                "en": "Changing the state of a creature. Sleep, fear, satiety, growth or another stage change its capabilities and reactions"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-06",
+              "text": {
+                "ru": "Взаимодействие нескольких видов. Нужный результат возникает из цепочки отношений между разными существами",
+                "en": "Interaction of several types. The desired result arises from a chain of relationships between different beings"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-05-07",
+              "text": {
+                "ru": "Общение с существами. Игрок осваивает сигналы, ритуалы или последовательности действий, вызывающие определённый ответ",
+                "en": "Communication with creatures. The player masters signals, rituals, or sequences of actions that elicit a specific response."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие способов восприятия",
+        "en": "Discovering ways of perceiving"
+      },
+      "description": {
+        "ru": "Меняется то, что игрок способен заметить и интерпретировать.",
+        "en": "What the player is able to notice and interpret changes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-06-01",
+              "text": {
+                "ru": "Правильная точка наблюдения. Разрозненные элементы складываются в значимую фигуру только с определённого места",
+                "en": "Correct observation point. Disparate elements form a significant figure only from a certain place"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-02",
+              "text": {
+                "ru": "Распознавание перекрытых объектов. Понимание устройства изображения позволяет замечать скрытые проходы, предметы и продолжения конструкций",
+                "en": "Recognition of occluded objects. Understanding the structure of the image allows you to notice hidden passages, objects and extensions of structures"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-03",
+              "text": {
+                "ru": "Чтение отражений и теней. Они сообщают сведения об объектах, которые невозможно непосредственно увидеть",
+                "en": "Reading reflections and shadows. They provide information about objects that cannot be directly seen"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-04",
+              "text": {
+                "ru": "Смена канала восприятия. Фильтр, спектр, освещение или режим наблюдения выявляет другой набор свойств",
+                "en": "Changing the channel of perception. A filter, spectrum, lighting or observation mode reveals a different set of properties"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-05",
+              "text": {
+                "ru": "Отрицательное пространство. Информацию несут промежутки и отсутствующие части, а не сами изображённые объекты",
+                "en": "Negative space. Information is carried by gaps and missing parts, and not by the depicted objects themselves."
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-06",
+              "text": {
+                "ru": "Чтение звукового рисунка. Высота, тембр, направление или последовательность звуков кодируют маршрут, состояние либо команду",
+                "en": "Reading a sound picture. The pitch, timbre, direction or sequence of sounds encodes a route, state or command"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-07",
+              "text": {
+                "ru": "Сопоставление разных чувств. Визуальная и звуковая информация по отдельности недостаточна, но вместе задаёт решение",
+                "en": "Comparison of different feelings. Visual and audio information separately are not sufficient, but together they provide a solution"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-06-08",
+              "text": {
+                "ru": "Влияние наблюдения. Состояние объекта зависит от того, наблюдают ли его, каким способом и при каких условиях",
+                "en": "The influence of observation. The state of an object depends on whether it is observed, in what way and under what conditions"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие пространственных и топологических правил",
+        "en": "Discovering spatial and topological rules"
+      },
+      "description": {
+        "ru": "Игрок узнаёт, как места связаны между собой. Antichamber прямо строит исследование вокруг неевклидова мира, перестраивающихся пространств и коридоров, которые необычно соединяются друг с другом. Описание Antichamber.",
+        "en": "The player learns how places are connected to each other. Antichamber explicitly builds exploration around a non-Euclidean world, rearranging spaces and corridors that connect to each other in unusual ways. Description Antichamber."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/219890/Antichamber/"],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-07-01",
+              "text": {
+                "ru": "Неевклидовы соединения. Пространства соединяются способом, который невозможно предсказать по обычной геометрии",
+                "en": "Non-Euclidean connections. Spaces connect in ways that cannot be predicted from conventional geometry."
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-02",
+              "text": {
+                "ru": "Зависимость перехода от направления. Вход с другой стороны или движение в обратную сторону приводит к иному результату",
+                "en": "Dependence of transition on direction. Entering from the other side or moving in the opposite direction leads to a different result"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-03",
+              "text": {
+                "ru": "Зависимость перехода от истории маршрута. Значение имеет последовательность ранее посещённых мест",
+                "en": "Dependence of transition on route history. The sequence of previously visited places matters"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-04",
+              "text": {
+                "ru": "Зацикленное пространство. Выход за границу возвращает в другую часть мира; это свойство можно использовать для обхода препятствий",
+                "en": "Looped space. Going abroad brings you back to another part of the world; this property can be used to avoid obstacles"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-05",
+              "text": {
+                "ru": "Вложенные пространства. Объект содержит область, которая повторяет, уменьшает или преобразует внешнее пространство",
+                "en": "Nested spaces. The object contains an area that repeats, reduces, or transforms the external space"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-06",
+              "text": {
+                "ru": "Связь между слоями мира. Изменение в одном измерении, масштабе или представлении влияет на соответствующее место в другом",
+                "en": "Connection between layers of the world. A change in one dimension, scale, or view affects the corresponding location in another"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-07-07",
+              "text": {
+                "ru": "Скрытый принцип адресации. Телепорт или транспортная сеть управляется координатами, символами либо вычисляемым адресом",
+                "en": "Hidden addressing principle. A teleport or transport network is controlled by coordinates, symbols, or a calculated address"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Открытие временных правил",
+        "en": "Discovering temporal rules"
+      },
+      "description": {
+        "ru": "Игрок понимает, когда и в какой последовательности нужно действовать. Outer Wilds использует меняющиеся со временем места и временную петлю. Официальное описание прямо приводит области, которые становятся недоступными из-за песка или разрушения планеты. Описание Mobius Digital.",
+        "en": "The player understands when and in what sequence to act. Outer Wilds uses locations that change over time and a time loop. The official description explicitly lists areas that become inaccessible due to sand or planetary destruction. Description of Mobius Digital."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://www.mobiusdigitalgames.com/outer-wilds.html"],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-08-01",
+              "text": {
+                "ru": "Временное окно доступа. Проход существует только до или после определённого события",
+                "en": "Time window of access. The passage only exists before or after a certain event"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-02",
+              "text": {
+                "ru": "Периодический цикл. Доступность места зависит от повторяющейся фазы: прилива, вращения, смены освещения или работы механизма",
+                "en": "Periodic cycle. Availability of the place depends on the repeating phase: tide, rotation, change of lighting or operation of the mechanism"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-03",
+              "text": {
+                "ru": "Расписание объектов и персонажей. Знание маршрутов и распорядка позволяет оказаться в нужном месте в нужное время",
+                "en": "Schedule of objects and characters. Knowing routes and routines allows you to be in the right place at the right time"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-04",
+              "text": {
+                "ru": "Отложенное последствие. Действие в одной области вызывает изменение в другой через известный промежуток времени",
+                "en": "Delayed consequence. An action in one area causes a change in another after a known period of time"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-05",
+              "text": {
+                "ru": "Синхронизация процессов. Нужно совместить несколько независимых событий или состояний",
+                "en": "Process synchronization. It is necessary to combine several independent events or states"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-06",
+              "text": {
+                "ru": "Последовательность подготовки. Правильные действия дают результат только в определённом порядке",
+                "en": "Sequence of preparation. Correct actions produce results only in a certain order"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-07",
+              "text": {
+                "ru": "Сброс как инструмент. Перезапуск цикла, возвращение к исходному состоянию или предусмотренная игрой гибель становятся частью маршрута",
+                "en": "Reset as a tool. Restarting the cycle, returning to the original state or death provided for by the game becomes part of the route"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-08-08",
+              "text": {
+                "ru": "Несколько временных состояний одного места. Сравнение прошлого, настоящего, будущего или разных стадий разрушения раскрывает способ продвижения",
+                "en": "Several temporary states of one place. Comparison of past, present, future or different stages of destruction reveals the way forward"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Расшифровка языков и систем обозначений",
+        "en": "Decoding languages ​​and notation systems"
+      },
+      "description": {
+        "ru": "Игрок осваивает способ чтения информации, пригодный для множества ситуаций. Lingo объединяет словесные головоломки с нелинейным исследованием взаимосвязанных пространств. Chants of Sennaar служит соседним примером языковой прогрессии: понимание нескольких связанных языков помогает преодолевать препятствия. Это полезные референсы для группы, без необходимости относить обе игры к одному строгому поджанру. Lingo, Chants of Sennaar.",
+        "en": "The player learns a way of reading information that is suitable for a variety of situations. Lingo combines word puzzles with non-linear exploration of interconnected spaces. Chants of Sennaar serves as a nearby example of language progression: understanding multiple related languages ​​helps overcome obstacles. These are useful references for the group, without having to categorize both games into one strict subgenre. Lingo, Chants of Sennaar."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://store.steampowered.com/app/1814170/Lingo/",
+        "https://store.steampowered.com/app/1931770/Chants_of_Sennaar/"
+      ],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-09-01",
+              "text": {
+                "ru": "Значения символов. По контексту устанавливается, какие объекты, действия или свойства обозначают знаки",
+                "en": "Symbol meanings. The context determines which objects, actions or properties the signs represent"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-02",
+              "text": {
+                "ru": "Правила записи звуков. Игрок обнаруживает, как письменность кодирует произношение",
+                "en": "Rules for recording sounds. The player discovers how writing encodes pronunciation"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-03",
+              "text": {
+                "ru": "Грамматика. Порядок слов, окончания или специальные маркеры меняют смысл сообщения",
+                "en": "Grammar. Word order, endings, or special markers change the meaning of the message"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-04",
+              "text": {
+                "ru": "Система счисления. Неизвестные числовые обозначения становятся инструментом чтения координат, количества и кодов",
+                "en": "Notation. Unknown numeric designations become a tool for reading coordinates, quantities and codes"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-05",
+              "text": {
+                "ru": "Направление и порядок чтения. Текст или изображение нужно читать по необычной траектории",
+                "en": "Direction and order of reading. Text or image must be read along an unusual path"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-06",
+              "text": {
+                "ru": "Визуальный оператор. Цвет, рамка, форма или расположение задают преобразование содержимого",
+                "en": "Visual operator. The color, border, shape, or placement determines how the content is transformed"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-07",
+              "text": {
+                "ru": "Преобразования слов. Решение строится на значении, звучании, составе или перестановке частей слова",
+                "en": "Word transformations. The solution is based on the meaning, sound, composition or rearrangement of parts of the word"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-08",
+              "text": {
+                "ru": "Перевод между системами. Один язык или код помогает расшифровать другой; соответствия становятся новым инструментом",
+                "en": "Transfer between systems. One language or code helps to decipher another; compliance becomes a new tool"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-09-09",
+              "text": {
+                "ru": "Исполняемый язык. Расшифрованная запись оказывается инструкцией для машины, существа или самого мира",
+                "en": "Executable language. The decrypted recording turns out to be instructions for a machine, a creature, or the world itself."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Выведение формальных правил",
+        "en": "Deriving Formal Rules"
+      },
+      "description": {
+        "ru": "Игрок обнаруживает условие правильности и затем решает новые задачи с его помощью. Taiji показывает, как единый интерфейс может поддерживать множество открываемых правил: игрок переключает клетки, но должен понять, что требуется в каждой системе задач. Описание Taiji.",
+        "en": "The player discovers a correctness condition and then solves new problems using it. Taiji shows how a single interface can support multiple unlockable rules: the player switches cells, but must understand what is required in each task system. Description Taiji."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://store.steampowered.com/app/1141580/Taiji/"],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-10-01",
+              "text": {
+                "ru": "Правило классификации. Нужно определить, какие объекты принадлежат одной категории и какое свойство действительно значимо",
+                "en": "Classification rule. We need to determine which objects belong to the same category and which property is truly significant"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-02",
+              "text": {
+                "ru": "Правило количества. Успех зависит от числа, суммы, соотношения или распределения элементов",
+                "en": "Quantity rule. Success depends on the number, sum, ratio or distribution of elements"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-03",
+              "text": {
+                "ru": "Правило соседства и связности. Значение имеют контакты, непрерывные области, изоляция и соединение частей",
+                "en": "Rule of neighborhood and connectivity. What matters are contacts, continuous areas, insulation and connection of parts"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-04",
+              "text": {
+                "ru": "Правило порядка. Элементы должны следовать обнаруженной последовательности, иерархии или зависимости",
+                "en": "Rule of order. Elements must follow a detected sequence, hierarchy, or dependency"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-05",
+              "text": {
+                "ru": "Симметрия и инвариант. Некоторые свойства обязаны сохраняться при повороте, отражении или преобразовании",
+                "en": "Symmetry and invariant. Some properties must be preserved when rotated, flipped, or transformed"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-06",
+              "text": {
+                "ru": "Композиция правил. Несколько известных ограничений действуют одновременно, создавая новый класс задач",
+                "en": "Composition of rules. Several known constraints act simultaneously, creating a new class of problems"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-07",
+              "text": {
+                "ru": "Приоритет и область действия. Игрок выясняет, какое правило применяется первым и на какие элементы распространяется",
+                "en": "Priority and scope. The player figures out which rule applies first and which elements apply"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-10-08",
+              "text": {
+                "ru": "Правило исключения. Особый знак или условие отменяет, инвертирует либо изменяет другое ограничение",
+                "en": "Exception rule. A special sign or condition cancels, inverts, or modifies another restriction"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Социальное знание",
+        "en": "Social knowledge"
+      },
+      "description": {
+        "ru": "Это возможные механики metroidbrainia при условии, что игрок осваивает применимый принцип. Обычная проверка репутации или выполненного квеста устроена иначе.",
+        "en": "These are possible mechanics for metroidbrainia, provided the player masters the applicable principle. The usual check of reputation or completed quest works differently."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-11-01",
+              "text": {
+                "ru": "Социальный протокол. Доступ открывает знание правил приветствия, обращения, дистанции или поведения",
+                "en": "Social protocol. Access is gained by knowing the rules of greeting, address, distance or behavior"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-11-02",
+              "text": {
+                "ru": "Распознавание роли и статуса. Одежда, символы и действия позволяют понять, кто какие полномочия имеет",
+                "en": "Role and status recognition. Clothing, symbols and actions make it clear who has what powers"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-11-03",
+              "text": {
+                "ru": "Подтверждение принадлежности. Игрок воспроизводит известные группе условности, чтобы его приняли за своего",
+                "en": "Proof of ownership. The player reproduces the conventions known to the group in order to be accepted as one of their own"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-11-04",
+              "text": {
+                "ru": "Информационная асимметрия. Продвижение зависит от понимания того, кто что знает, предполагает или скрывает",
+                "en": "Information asymmetry. Advancement depends on understanding who knows, assumes or hides what"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-11-05",
+              "text": {
+                "ru": "Проверяемое утверждение. Персонажа можно убедить, представив подходящее доказательство или выявив противоречие",
+                "en": "Verifiable statement. The character can be convinced by presenting suitable evidence or identifying a contradiction"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-11-06",
+              "text": {
+                "ru": "Посредничество между группами. Понимание разных языков, ценностей или обычаев позволяет наладить взаимодействие и открыть доступ",
+                "en": "Mediation between groups. Understanding different languages, values ​​or customs allows for interaction and access"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Переосмысление интерфейса и правил самой игры",
+        "en": "Rethinking the interface and rules of the game itself"
+      },
+      "description": {
+        "ru": "Эти приёмы подходят не каждой игре. Их нужно отличать от случайных ошибок и внешнего вмешательства в файлы. В TUNIC руководство одновременно содержит инструкции, карты и секреты. Важен сам подход: коммуникация правил становится загадкой, которую решает игрок. Разработчик подробно описывает этот принцип в статье о создании руководства. Статья Andrew Shouldice.",
+        "en": "These techniques are not suitable for every game. They must be distinguished from random errors and external interference in files. In TUNIC, the manual contains instructions, maps and secrets at the same time. The approach itself is important: the communication of the rules becomes a riddle that the player solves. The developer describes this principle in detail in the article on creating the guide. Article by Andrew Shouldice."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://blog.playstation.com/2022/09/21/the-creation-of-tunics-invaluable-in-game-manual/"
+      ],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-metroidbrainia-12-01",
+              "text": {
+                "ru": "Интерфейс как игровое пространство. Карта, инвентарь или меню допускают взаимодействие, которое меняет состояние мира",
+                "en": "Interface as a gaming space. The map, inventory, or menu allow interactions that change the state of the world"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-02",
+              "text": {
+                "ru": "Физические свойства документа. Сгиб, оборот страницы, наложение изображений или масштаб документа участвуют в решении",
+                "en": "Physical properties of the document. The fold, page turn, image overlay, or document scale are involved in the decision"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-03",
+              "text": {
+                "ru": "Метаданные как информация. Номера, временные отметки, подписи или другие служебные элементы оказываются частью закономерности",
+                "en": "Metadata as information. Numbers, timestamps, signatures, or other service elements appear to be part of a pattern"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-04",
+              "text": {
+                "ru": "Прогресс через предусмотренные операции сохранения. Загрузка, выбор состояния или работа со слотами участвуют в авторской головоломке",
+                "en": "Progress through the provided save operations. Loading, selecting a state or working with slots participate in the author's puzzle"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-05",
+              "text": {
+                "ru": "Правило генерации мира. Игрок осваивает закономерность построения меняющихся уровней, вместо запоминания единственной раскладки",
+                "en": "World generation rule. The player masters the pattern of building changing levels, instead of memorizing a single layout"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-06",
+              "text": {
+                "ru": "Открытие настоящего условия победы. Продвижение зависит от понимания того, что именно нужно изменить или завершить",
+                "en": "Unlocking the real victory condition. Progress depends on understanding what exactly needs to be changed or completed"
+              }
+            },
+            {
+              "id": "variant-metroidbrainia-12-07",
+              "text": {
+                "ru": "Переосмысление типа объекта. То, что считалось картинкой, картой, украшением или сообщением, оказывается действующим механизмом",
+                "en": "Rethinking the object type. What was thought to be a picture, map, decoration or message turns out to be a working mechanism"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как эти механики образуют прогрессию",
+        "en": "How do these mechanics form a progression?"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Возврат с новым пониманием. Изученное правило открывает возможности в уже посещённых местах.",
+            "en": "Return with new understanding. A learned rule opens up opportunities in places already visited."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Цепочка открытий. Одно знание позволяет получить следующее.",
+            "en": "Chain of discoveries. One knowledge allows you to get the next."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Несколько необходимых знаний. Препятствие требует совместить независимые открытия.",
+            "en": "Some necessary knowledge. The obstacle requires combining independent discoveries."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Альтернативные пути понимания. К одному выводу можно прийти через разные наблюдения или области.",
+            "en": "Alternative ways of understanding. One conclusion can be reached through different observations or areas."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Несколько способов преодоления. Разные знания позволяют обойти одну преграду разными методами.",
+            "en": "Several ways to overcome. Different knowledge allows you to bypass one obstacle using different methods."
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Постепенное обобщение. Сначала игрок узнаёт частный случай, затем обнаруживает более широкое правило.",
+            "en": "Gradual generalization. The player first learns a particular case, then discovers a broader rule."
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Пересмотр прежнего правила. Новые данные показывают, что первая модель была неполной.",
+            "en": "Revision of the previous rule. New data shows that the first model was incomplete."
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Отложенное объяснение. Препятствие встречается раньше места, где удобно понять способ его преодоления.",
+            "en": "Delayed explanation. An obstacle occurs before a place where it is convenient to understand the way to overcome it."
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Перенос между контекстами. Правило, изученное в одной форме, нужно распознать в другом материале, масштабе или ситуации.",
+            "en": "Transfer between contexts. A rule learned in one form must be recognized in another material, scale, or situation."
+          }
+        },
+        {
+          "id": "note-1-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Слои секретов. Завершение одного уровня исследования открывает признаки следующего.",
+            "en": "Layers of secrets. Completing one level of research unlocks signs of the next one."
+          }
+        },
+        {
+          "id": "note-1-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сохранение знания через сброс. Мир возвращается к исходному состоянию, а понимание игрока продолжает накапливаться.",
+            "en": "Preservation of knowledge through reset. The world returns to its original state, and the player's understanding continues to accumulate."
+          }
+        },
+        {
+          "id": "note-1-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Раннее прохождение при наличии знания. Догадка позволяет пропустить обычный путь обучения, если другие условия уже выполнены.",
+            "en": "Early passage with knowledge. Guessing allows you to skip the normal learning path if other conditions are already met."
+          }
+        },
+        {
+          "id": "note-1-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Финальный синтез. Завершающая задача требует связать несколько ранее изученных систем.",
+            "en": "Final synthesis. The final task requires connecting several previously studied systems."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Как игрок получает знание",
+        "en": "How does a player gain knowledge?"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наблюдение за демонстрацией. Существо, механизм или событие показывает работающий принцип.",
+            "en": "Observation of the demonstration. A creature, mechanism, or event shows a principle at work."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сравнение случаев. Две похожие ситуации различаются одним существенным условием.",
+            "en": "Comparison of cases. Two similar situations differ in one essential condition."
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Управляемый эксперимент. Игрок меняет параметр и наблюдает результат.",
+            "en": "Controlled experiment. The player changes the parameter and observes the result."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверка гипотезы. Игра даёт достаточно ясную обратную связь, чтобы различать возможные объяснения.",
+            "en": "Hypothesis testing. The game provides feedback clear enough to distinguish between possible explanations."
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Контрпример. Неудачная попытка опровергает слишком широкое правило.",
+            "en": "Counterexample. A failed attempt refutes an overly broad rule."
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сопоставление источников. Несколько неполных сообщений складываются в вывод.",
+            "en": "Comparison of sources. Several incomplete messages are added to the output."
+          }
+        },
+        {
+          "id": "note-2-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Расшифровка документа. Руководство, схема, карта или запись требуют интерпретации.",
+            "en": "Decoding the document. A manual, chart, map, or record requires interpretation."
+          }
+        },
+        {
+          "id": "note-2-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Повторное чтение. Старый источник приобретает новый смысл после другого открытия.",
+            "en": "Repeated reading. An old source takes on new meaning after another discovery."
+          }
+        },
+        {
+          "id": "note-2-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Журнал наблюдений. Записи и связи помогают работать с информацией, сохраняя необходимость самостоятельного вывода.",
+            "en": "Observation log. Records and connections help you work with information while preserving the need for independent conclusions."
+          }
+        },
+        {
+          "id": "note-2-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Постепенные подсказки. Сначала игра направляет внимание, затем предлагает эксперимент и только позднее раскрывает принцип.",
+            "en": "Gradual hints. The game first directs attention, then suggests an experiment, and only later reveals the principle."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Пограничные случаи",
+        "en": "Borderline Cases"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Пароль ; Знание кода открывает доступ; особенно содержателен случай, когда игрок осваивает способ получения кодов",
+            "en": "Password ; Knowing the code opens access; the case is especially meaningful when the player masters the method of obtaining codes"
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Секретный проход ; Игрок обнаруживает повторяемый признак или правило поиска таких проходов",
+            "en": "Secret Passage; The player discovers a repeatable sign or rule for searching for such passages"
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Новый предмет ; После получения предмета остаются неизвестные применения, которые предстоит открыть",
+            "en": "New item; After receiving the item, there are unknown uses that remain to be discovered."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сложный прыжок ; Главная преграда состоит в непонимании условия прыжка, хотя исполнение тоже может требовать навыка",
+            "en": "Difficult jump; The main obstacle is a lack of understanding of the conditions of the jump, although execution may also require skill"
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Детективный вывод ; Вывод даёт применимое знание о мире, маршруте или действии",
+            "en": "Detective Conclusion; Inference provides applicable knowledge about the world, route, or action"
+          }
+        },
+        {
+          "id": "note-3-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Информация о мире ; Сведения меняют доступные решения, а не только объясняют историю",
+            "en": "Information about the world; Information changes available solutions, not just explains history"
+          }
+        },
+        {
+          "id": "note-3-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Выполненный квест ; Полученное понимание имеет самостоятельное применение; проверка флага задания добавляет обычную сюжетную преграду",
+            "en": "Completed quest; The understanding gained has independent application; checking the quest flag adds the usual plot obstacle"
+          }
+        },
+        {
+          "id": "note-3-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Случайная комбинация ; Существуют наблюдения, позволяющие вывести комбинацию или принцип её построения",
+            "en": "Random combination; There are observations that allow us to deduce the combination or the principle of its construction"
+          }
+        },
+        {
+          "id": "note-3-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Найденная ошибка ; Она включена в устойчивые авторские правила; случайный баг сам по себе не образует механику жанра",
+            "en": "Error found; It is included in the stable copyright rules; a random bug in itself does not form the mechanics of the genre"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Описание Two Tribes",
+        "en": "Description of Two Tribes"
+      },
+      "url": "https://store.steampowered.com/app/201420/Toki_Tori_2/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Leap Year",
+        "en": "Description of Leap Year"
+      },
+      "url": "https://store.steampowered.com/app/2951770/Leap_Year/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Draknek & Friends",
+        "en": "Description of Draknek & Friends"
+      },
+      "url": "https://store.steampowered.com/app/1052990/A_Monsters_Expedition/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Antichamber",
+        "en": "Description of Antichamber"
+      },
+      "url": "https://store.steampowered.com/app/219890/Antichamber/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Mobius Digital",
+        "en": "Description of Mobius Digital"
+      },
+      "url": "https://www.mobiusdigitalgames.com/outer-wilds.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Lingo",
+        "en": "Lingo"
+      },
+      "url": "https://store.steampowered.com/app/1814170/Lingo/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Chants of Sennaar",
+        "en": "Chants of Sennaar"
+      },
+      "url": "https://store.steampowered.com/app/1931770/Chants_of_Sennaar/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Описание Taiji",
+        "en": "Description of Taiji"
+      },
+      "url": "https://store.steampowered.com/app/1141580/Taiji/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Статья Andrew Shouldice",
+        "en": "Article by Andrew Shouldice"
+      },
+      "url": "https://blog.playstation.com/2022/09/21/the-creation-of-tunics-invaluable-in-game-manual/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

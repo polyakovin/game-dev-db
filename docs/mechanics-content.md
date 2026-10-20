@@ -14,11 +14,11 @@ The `detective` catalog was originally authored for Game Dev DB on 2026-10-19. I
 | `detective` | 32 | 32 | 96 |
 | `boss-fight-atlas` | 124 | 124 | 124 |
 | `game-mechanics` | 199 | 199 | 199 |
-| `rpg-grind` | 30 | 30 | 30 |
+| `rpg-grind` | 42 | 42 | 42 |
 
 These are baseline counts, not a limit on future contributions. Counts in the site and exports are derived from current source data. A branch list in non-audio catalogs is simply the family's list of variants, while audio families preserve three named subbranches.
 
-The `rpg-grind` catalog was originally authored on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. It preserves six groups: character progression, equipment acquisition, equipment upgrades, resources and production, reputation and access, and repeatable challenges and collections. Each family has one action/reward loop and a hypothetical design example. Notes distinguish activities, goals and reward rules, illustrate combinations and describe prototype checks without claiming completed playtests. The checked official Warframe mastery and Final Fantasy XIV currency pages support only the specific released-game observations identified in the catalog. Its explicit provenance identifies original editorial authorship.
+The `rpg-grind` catalog was originally authored on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. It preserves six groups: character progression, equipment acquisition, equipment upgrades, resources and production, reputation and access, and repeatable challenges and collections. The original thirty families have an action/reward loop and a hypothetical design example. Twelve later discussion additions extend economy, companions, exploration, passive rewards and extraction while preserving every original identity. Notes distinguish activities, goals and reward rules, illustrate combinations and describe prototype checks without claiming completed playtests. The checked official Warframe mastery and Final Fantasy XIV currency pages support only the specific released-game observations identified in the catalog. Its explicit provenance identifies original editorial authorship.
 
 ## Source and localization contract
 
@@ -40,7 +40,7 @@ Detective examples were checked against developer/publisher pages for The Case o
 
 ## Public export contract
 
-`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently eighteen records, including the combined compatibility archive). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
+`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently sixty records, including the combined compatibility archive). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
 
 `/content/mechanics/{lang}/{id}.md` contains the same generated body and frontmatter metadata. Tree arrays are represented in the body rather than duplicated in frontmatter. Source descriptions and classification limits are retained. The additive manifest fields are `endpoints.mechanics`, `endpoints.mechanicsMarkdownTemplate`, and the mechanic counts. Existing lesson counts and templates retain their previous meanings. `llms.txt`, `llms-full.txt`, the sitemap and agent guidance discover the new catalogs.
 
@@ -55,3 +55,9 @@ The active `children` reference selects 34 play-relevant original families and a
 The scopes overlap: audience and learning purpose are independent axes. Shared original IDs remain stable within each catalog namespace. Review both successor catalogs when correcting shared entries. Each catalog has its own bilingual source, scope notes, examples and primary sources. Developer pages for Toca Boca World and Sago Mini World support only the described play examples. PhET and Minecraft Education support their specific inquiry and subject-tool examples; Dunlosky et al. contextualizes the instructional techniques. All new design scenarios are hypothetical. No educational outcome, age certification or completed playtest is claimed.
 
 The original `children-education.json` remains unchanged. Its HTML route and anchors, JSON record and Markdown endpoint preserve the complete original content, provenance and date. A static notice links both successors. Default `getMechanics(lang)` returns active references for cards and index counts; `{ includeArchived: true }` includes the archive for HTML and complete exports. Manifest totals describe the complete exported dataset, including archives. JSON v1 fields and identities are unchanged; four new localized records are added. Both new references link each other without JavaScript.
+
+## Consolidated discussion catalogs (2026-10-20)
+
+Twenty genre/design/device catalogs plus `perception` preserve 3,941 additional discussion items; twelve RPG grind additions bring the addition to 3,953. See the [complete coverage and verification record](research/discussion-mechanics.md) for per-catalog counts, overlaps, provenance and source-check limits. Families retain source groups; variants retain complete action, application and limitation fields. Hardware capability legends and supplementary design notes remain localized content. Counts are editorial units, not independent primitives or a claim of universal completeness.
+
+All thirty catalogs, including the combined compatibility archive, produce sixty localized records through the existing v1 contract. The catalog registry and editorial priority list expose the new references; HTML, Markdown, JSON, sitemap and agent discovery still derive from the same bilingual JSON. No local transcript, extraction script, translation cache or external translation runtime is required by the published site. English content was prepared with Google Translate following explicit user authorization and reviewed for domain terminology and technical conditions.

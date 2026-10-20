@@ -1,0 +1,2067 @@
+{
+  "id": "phone-haptics",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Вибрация и тактильная отдача телефона",
+    "en": "Phone haptics"
+  },
+  "description": {
+    "ru": "Вибрация и тактильная отдача телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone vibration and tactile feedback: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская систематизация: 160 карточек в 16 группах. Это механики, приёмы обратной связи, применения и экспериментальные расширения, а не 160 независимых физических эффектов. Примеры проектирования условные, не утверждения об использовавших их выпущенных играх.",
+    "en": "Author's systematization: 160 cards in 16 groups. These are mechanics, feedback techniques, applications and experimental extensions, not 160 independent physical effects. Design examples are hypothetical, not statements about the released games that used them."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-ui",
+      "section": "section-1",
+      "title": {
+        "ru": "Кнопки, жесты и интерфейс",
+        "en": "Buttons, gestures and interface"
+      },
+      "description": {
+        "ru": "Тактильная обратная связь делает события и границы различимыми.",
+        "en": "Haptic feedback makes events and boundaries discernible."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-ui-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h001",
+              "text": {
+                "ru": "Тактильная кнопка. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: касание. Правило: Короткий импульс подтверждает, что нажатие принято; отпускание при необходимости получает отдельный отклик. Применение: Виртуальные клавиши, игровой пульт, быстрые действия. Ограничения: Подтверждать реальное принятие команды, а не обещать успешное завершение операции.",
+                "en": "Tactile button. Role: Feedback. Features: Basic impulses. Input: touch. Rule: A short pulse confirms that the press has been accepted; releasing, if necessary, receives a separate response. Application: Virtual keys, game console, quick actions. Limitations: Confirm the actual acceptance of the command, and not promise the successful completion of the operation."
+              }
+            },
+            {
+              "id": "variant-h002",
+              "text": {
+                "ru": "Удержание до срабатывания. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание. Правило: Человек держит кнопку до сигнала готовности и отпускает после него; раннее отпускание отменяет действие. Применение: Заряд способности, подтверждение, взаимодействие без взгляда на экран. Ограничения: Длительность удержания известна приложению; датчик силы для этого не нужен.",
+                "en": "Hold until triggered. Role: Mechanics. Features: Basic impulses. Input: hold. Rule: A person holds the button until the ready signal and releases it after it; early release cancels the action. Application: Charge the ability, confirm, interact without looking at the screen. Limitations: The duration of the hold is known to the application; You don't need a force sensor for this."
+              }
+            },
+            {
+              "id": "variant-h003",
+              "text": {
+                "ru": "Ступени выбора. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Каждое пересечение дискретного значения даёт щелчок; пользователь отсчитывает шаги пальцем. Применение: Выбор предмета, числа, часа, уровня громкости. Ограничения: Не проигрывать десятки неразличимых щелчков при быстром движении.",
+                "en": "Steps of choice. Role: Feedback. Features: Basic impulses. Input: drag and drop. Rule: Each intersection of a discrete value produces a click; the user counts steps with his finger. Application: Selecting an object, date, hour, volume level. Limitations: Do not play dozens of indistinguishable clicks when moving quickly."
+              }
+            },
+            {
+              "id": "variant-h004",
+              "text": {
+                "ru": "Магнитная привязка. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Импульс возникает при попадании объекта в допустимую точку, сетку или линию выравнивания. Применение: Редакторы, строительство, расстановка инвентаря. Ограничения: Вибрация сообщает о программной привязке; физически палец не удерживается.",
+                "en": "Magnetic binding. Role: Feedback. Features: Basic impulses. Input: drag and drop. Rule: An impulse occurs when an object hits a valid point, grid or alignment line. Application: Editors, construction, inventory placement. Limitations: Vibration indicates software binding; I can't physically hold my finger..."
+              }
+            },
+            {
+              "id": "variant-h005",
+              "text": {
+                "ru": "Край диапазона. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: свайп. Правило: Особый отклик обозначает минимальное или максимальное значение, конец списка или границу карты. Применение: Ползунки, панорамирование, прокрутка. Ограничения: Отличать край от обычного изменения значения.",
+                "en": "End of the range. Role: Feedback. Features: Basic impulses. Input: swipe. Rule: A special response indicates a minimum or maximum value, the end of a list, or the edge of a map. Applications: Sliders, panning, scrolling. Limitations: Distinguish an edge from a normal value change."
+              }
+            },
+            {
+              "id": "variant-h006",
+              "text": {
+                "ru": "Порог жеста. Роль: Механика. Возможности: Базовые импульсы. Ввод: свайп. Правило: Импульс сообщает, что свайп пересёк порог; отпускание выполняет действие, возврат отменяет. Применение: Сброс карты, перезарядка жестом, архивирование. Ограничения: Оставлять возможность отмены до отпускания, если это часть правила.",
+                "en": "Gesture threshold. Role: Mechanics. Features: Basic impulses. Input: swipe. Rule: The pulse indicates that the swipe has crossed the threshold; releasing performs the action, returning cancels. Usage: Card reset, gesture reload, archiving. Limitations: Leave the ability to cancel until releasing if this is part of the rule."
+              }
+            },
+            {
+              "id": "variant-h007",
+              "text": {
+                "ru": "Захват и отпускание. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Разные короткие сигналы отмечают захват объекта и его успешное размещение. Применение: Drag-and-drop, пазлы, сборка конструкций. Ограничения: Неверное размещение получает иной отклик и понятную визуальную причину.",
+                "en": "Grab and release. Role: Feedback. Features: Basic impulses. Input: drag and drop. Rule: Various short beeps indicate the capture of an object and its successful placement. Applications: Drag-and-drop, puzzles, building structures. Limitations: Incorrect placement receives a different response and a clear visual reason."
+              }
+            },
+            {
+              "id": "variant-h008",
+              "text": {
+                "ru": "Успех, ошибка, предупреждение. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: состояние. Правило: Три различимых паттерна сообщают о результате или необходимости изменить действие. Применение: Ответ в викторине, сохранение, проверка хода. Ограничения: Использовать системные значения последовательно; не кодировать всё одной вибрацией.",
+                "en": "Success, error, warning. Role: Feedback. Features: Basic impulses. Input: status. Rule: Three distinguishable patterns communicate the result or need to change an action. Application: Answering a quiz, saving, checking progress. Limitations: Use system values ​​consistently; Don’t encode everything with one vibration."
+              }
+            },
+            {
+              "id": "variant-h009",
+              "text": {
+                "ru": "Тактильный фокус. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: При переходе фокуса на доступный элемент возникает импульс; пользователь затем активирует найденный элемент. Применение: Навигация одной рукой, вспомогательный режим интерфейса. Ограничения: Название и назначение элемента сообщает экранный диктор или другой канал.",
+                "en": "Tactile focus. Role: Application. Features: Basic impulses. Input: touch. Rule: When focus moves to an accessible element, an impulse is generated; the user then activates the found element. Application: One-handed navigation, assistive interface mode. Limitations: The name and purpose of the element is announced by Narrator or another channel."
+              }
+            },
+            {
+              "id": "variant-h010",
+              "text": {
+                "ru": "Прохождение этапов. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: состояние. Правило: Короткие сигналы отмечают реальные завершённые этапы, а финальный паттерн завершает последовательность. Применение: Загрузка нескольких объектов, создание персонажа, пошаговый мастер. Ограничения: Не подменять достоверный прогресс декоративным периодическим гудением.",
+                "en": "Passing stages. Role: Feedback. Features: Basic impulses. Input: status. Rule: Short beeps mark real completed stages, and the final pattern completes the sequence. Application: Loading multiple objects, character creation, step-by-step wizard. Limitations: Do not replace reliable progress with decorative periodic buzzing."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-space",
+      "section": "section-1",
+      "title": {
+        "ru": "Поиск, пространство и направление",
+        "en": "Search, space and direction"
+      },
+      "description": {
+        "ru": "Вибрация сообщает о пространственном отношении; направление считывает игрок или отдельный датчик.",
+        "en": "Vibration communicates spatial relationships; the direction is read by the player or a separate sensor."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-space-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h011",
+              "text": {
+                "ru": "Горячо-холодно. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: По мере приближения курсора к цели интервалы между импульсами сокращаются; игрок меняет направление по градиенту. Применение: Поиск сокровища, скрытой кнопки, утечки. Ограничения: Можно кодировать расстояние темпом без управления силой мотора.",
+                "en": "Hot and cold. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: As the cursor approaches the target, the intervals between pulses become shorter; the player changes direction along a gradient. Application: Search for treasure, hidden button, leak. Limitations: You can encode distance by tempo without controlling the motor power."
+              }
+            },
+            {
+              "id": "variant-h012",
+              "text": {
+                "ru": "Амплитудный детектор. Роль: Механика. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Игрок исследует область; сила вибрации растёт рядом с источником и помогает выбрать следующую точку поиска. Применение: Металлоискатель, аномалии, сбор ресурсов. Ограничения: Нужно различимое управление интенсивностью; предусмотреть вариант с темпом импульсов.",
+                "en": "Amplitude detector. Role: Mechanics. Features: Rich tactility. Input: drag and drop. Rule: The player explores the area; The vibration strength increases near the source and helps select the next search point. Applications: Metal detecting, anomalies, resource gathering. Limitations: Requires discernible intensity control; provide an option with the pulse rate."
+              }
+            },
+            {
+              "id": "variant-h013",
+              "text": {
+                "ru": "Сектор прицеливания. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, датчики. Правило: Сигнал появляется только тогда, когда виртуальный прицел или ориентация телефона попадает в нужный сектор. Применение: Поиск передатчика, наведение антенны, AR-квест. Ограничения: Для реального поворота нужны датчики; вибрация сама направление не измеряет.",
+                "en": "Aiming sector. Role: Mechanics. Features: Basic impulses. Input: touch, sensors. Rule: The signal appears only when the virtual sight or the orientation of the phone falls into the desired sector. Application: Searching for a transmitter, pointing the antenna, AR quest. Limitations: Sensors are needed for real rotation; Vibration itself does not measure direction."
+              }
+            },
+            {
+              "id": "variant-h014",
+              "text": {
+                "ru": "Радиальный сканер. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Игрок вращает луч; импульсы на углах пересечения с объектами позволяют запомнить их расположение. Применение: Радар, навигация в темноте, разведка. Ограничения: Угол задаётся положением луча; один мотор не обозначает физический сектор корпуса.",
+                "en": "Radial scanner. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: The player rotates the beam; pulses at the angles of intersection with objects allow you to remember their location. Application: Radar, navigation in the dark, reconnaissance. Limitations: The angle is set by the position of the beam; one motor does not indicate a physical sector of the body."
+              }
+            },
+            {
+              "id": "variant-h015",
+              "text": {
+                "ru": "Активный сонар. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: После запуска скана задержка до ответного импульса условно кодирует расстояние; игрок ждёт и сопоставляет эхо. Применение: Подводное исследование, поиск стен, тактическая разведка. Ограничения: Это игровое кодирование; оно не измеряет помещение без отдельной системы датчиков.",
+                "en": "Active sonar. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: After starting a scan, the delay until the response pulse conventionally encodes the distance; the player waits and matches the echo. Application: Underwater exploration, wall search, tactical reconnaissance. Limitations: This is game coding; it does not measure the room without a separate sensor system."
+              }
+            },
+            {
+              "id": "variant-h016",
+              "text": {
+                "ru": "Следование по контуру. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: При ведении пальца по невидимой линии возникают метки; потеря линии меняет или прекращает сигнал. Применение: Обводка, лабиринт, восстановление схемы. Ограничения: Дать отдельный сигнал потери контакта, чтобы пауза не выглядела сбоем.",
+                "en": "Following the contour. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: When you move your finger along an invisible line, marks appear; loss of line changes or stops the signal. Application: Stroke, labyrinth, circuit restoration. Limitations: Give a separate signal of loss of contact so that the pause does not look like a failure."
+              }
+            },
+            {
+              "id": "variant-h017",
+              "text": {
+                "ru": "Пересечение границ. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Вход в область и выход из неё получают разные паттерны; игрок картографирует зоны по переходам. Применение: Минные поля в игре, биомы, невидимые препятствия. Ограничения: Нужны различимые паттерны входа и выхода либо понятный контекст.",
+                "en": "Crossing borders. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: Entry into and exit from an area receive different patterns; the player maps zones using transitions. Application: Minefields in the game, biomes, invisible obstacles. Limitations: Requires distinguishable entry and exit patterns or clear context."
+              }
+            },
+            {
+              "id": "variant-h018",
+              "text": {
+                "ru": "Полоса правильного курса. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики, касание. Правило: В пределах допустимого отклонения идёт редкий подтверждающий сигнал; ошибка курса вызывает другой паттерн. Применение: Удержание маршрута, виртуальная антенна, обучение ориентации. Ограничения: Для маршрута в реальном мире нужны геоданные; это не надёжный канал предупреждения об опасности.",
+                "en": "Correct course strip. Role: Mechanics. Features: Basic impulses. Input: sensors, touch. Rule: Within the acceptable deviation there is a rare confirmation signal; a heading error causes a different pattern. Applications: Route keeping, virtual antenna, orientation training. Limitations: A route in the real world requires geodata; This is not a reliable danger warning channel."
+              }
+            },
+            {
+              "id": "variant-h019",
+              "text": {
+                "ru": "Кодированные повороты. Роль: Применение. Возможности: Базовые импульсы. Ввод: геоданные. Правило: Условленный ритм обозначает левый или правый поворот, а отдельная серия сообщает о приближении к манёвру. Применение: Пешеходный навигатор, маршрут внутри игры. Ограничения: Лево и право кодируются ритмом, а не локализацией вибрации; нужен короткий обучающий этап.",
+                "en": "Coded turns. Role: Application. Features: Basic impulses. Input: geodata. Rule: The agreed rhythm indicates a left or right turn, and a separate series reports the approach to the maneuver. Application: Pedestrian navigator, route within the game. Limitations: Left and right are encoded by rhythm, not vibration localization; Need a short training phase..."
+              }
+            },
+            {
+              "id": "variant-h020",
+              "text": {
+                "ru": "Метка места или объекта. Роль: Применение. Возможности: Базовые импульсы. Ввод: геоданные, камера, NFC/BLE. Правило: При подтверждённом обнаружении объекта или входе в зону телефон даёт идентифицирующий паттерн. Применение: Музейный квест, коллекционирование, геоигра. Ограничения: Местоположение определяют GPS, камера, NFC или BLE; учитывать их ошибки и задержку.",
+                "en": "Label of a place or object. Role: Application. Features: Basic impulses. Input: geodata, camera, NFC/BLE. Rule: Upon confirmed detection of an object or entry into a zone, the phone gives an identifying pattern. Application: Museum quest, collecting, geo-game. Limitations: Location is determined by GPS, camera, NFC or BLE; take into account their errors and delays."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timing",
+      "section": "section-1",
+      "title": {
+        "ru": "Время, ритм и реакция",
+        "en": "Timing, rhythm and reaction"
+      },
+      "description": {
+        "ru": "Игрок действует относительно момента, длительности или структуры тактильного сигнала.",
+        "en": "The player acts in relation to the moment, duration or structure of the tactile signal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-timing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h021",
+              "text": {
+                "ru": "Нажать по импульсу. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: После непредсказуемой паузы приходит сигнал; игрок нажимает как можно быстрее. Применение: Дуэль на реакцию, быстрый ответ, тренировка внимания. Ограничения: Измеряется задержка всей цепочки устройства; результаты разных моделей не равны лабораторным измерениям.",
+                "en": "Press on impulse. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: After an unpredictable pause, a signal arrives; the player presses as quickly as possible. Application: Reaction duel, quick response, attention training. Limitations: The delay of the entire device chain is measured; The results of different models are not equal to laboratory measurements."
+              }
+            },
+            {
+              "id": "variant-h022",
+              "text": {
+                "ru": "Не реагировать на ложный сигнал. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Один ритм требует нажатия, другой требует бездействия; лишняя реакция считается ошибкой. Применение: Go/no-go, распознавание команды, дуэль с обманкой. Ограничения: Паттерны должны уверенно различаться на целевых телефонах.",
+                "en": "Do not respond to a false signal. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: One rhythm requires pressing, another requires inaction; an unnecessary reaction is considered an error. Application: Go/no-go, command recognition, duel with a decoy. Limitations: Patterns must be reliably distinguishable on target phones."
+              }
+            },
+            {
+              "id": "variant-h023",
+              "text": {
+                "ru": "Остановить в нужный момент. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Серия импульсов показывает ход условной шкалы; игрок останавливает её в целевом окне. Применение: Вскрытие, ковка, критический удар. Ограничения: Дать достаточное временное окно с учётом задержки актуатора и восприятия.",
+                "en": "Stop at the right moment. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: A series of pulses shows the progress of a conventional scale; the player stops it in the target window. Application: Opening, forging, critical hit. Limitations: Give a sufficient time window taking into account the delay of the actuator and perception."
+              }
+            },
+            {
+              "id": "variant-h024",
+              "text": {
+                "ru": "Тактильный метроном. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, датчики. Правило: Регулярные сигналы задают долю; игрок синхронизирует нажатия или движения. Применение: Ритм-игра, барабаны, танцевальный ввод. Ограничения: Темп повторения импульсов не равен физической частоте колебаний мотора.",
+                "en": "Tactile metronome. Role: Mechanics. Features: Basic impulses. Input: touch, sensors. Rule: Regular signals set the beat; the player synchronizes clicks or movements. Application: Rhythm game, drums, dance input. Limitations: The rate of repetition of impulses is not equal to the physical frequency of motor oscillations."
+              }
+            },
+            {
+              "id": "variant-h025",
+              "text": {
+                "ru": "Сохранение темпа в тишине. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: После нескольких тактов сигналы исчезают; игрок продолжает ритм и получает оценку отклонения. Применение: Музыкальная память, внутренний метроном. Ограничения: Пропуск является правилом, поэтому начало и конец немой части должны быть понятны.",
+                "en": "Keeping the pace in silence. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: After a few clock cycles the signals disappear; the player continues the rhythm and receives a deviation score. Application: Musical memory, internal metronome. Limitations: Skip is the rule, so the beginning and end of the silent part must be clear."
+              }
+            },
+            {
+              "id": "variant-h026",
+              "text": {
+                "ru": "Длительность удержания. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание. Правило: Игрок ощущает образец продолжительности, затем воспроизводит его удержанием кнопки. Применение: Сравнение интервалов, управление клапаном, головоломка. Ограничения: На простых моторах короткие образцы могут сливаться; подобрать удобные интервалы.",
+                "en": "Hold duration. Role: Mechanics. Features: Basic impulses. Input: hold. Rule: Player senses a duration pattern, then plays it by holding a button. Applications: Interval comparison, valve control, puzzle. Limitations: On simple motors, short patterns may merge; choose convenient intervals."
+              }
+            },
+            {
+              "id": "variant-h027",
+              "text": {
+                "ru": "Ритмическое эхо. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Телефон проигрывает последовательность коротких и длинных сигналов; игрок повторяет её нажатиями. Применение: Simon, музыкальная память, открытие двери. Ограничения: Ограничивать длину и давать повтор образца по запросу.",
+                "en": "Rhythmic echo. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The phone plays a sequence of short and long beeps; the player repeats it by pressing. Application: Simon, musical memory, opening the door. Limitations: Limit the length and give a repeat of the pattern upon request."
+              }
+            },
+            {
+              "id": "variant-h028",
+              "text": {
+                "ru": "Отсчёт до события. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: таймер. Правило: Серия становится чаще перед стартом; финальный отличимый импульс обозначает ноль. Применение: Гонка, таймер хода, подготовка к рывку. Ограничения: Не смешивать подготовительный ритм с сигналом самого старта.",
+                "en": "Countdown to the event. Role: Feedback. Features: Basic impulses. Input: timer. Rule: The series becomes more frequent before the start; the final distinguishable impulse indicates zero. Application: Race, turn timer, preparation for a dash. Limitations: Do not mix the preparatory rhythm with the start signal itself."
+              }
+            },
+            {
+              "id": "variant-h029",
+              "text": {
+                "ru": "Раннее действие по предвестнику. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Подготовительный паттерн предсказывает удар; игрок выполняет защиту до финального импульса. Применение: Парирование, уклонение, спортивный старт. Ограничения: Начало сигнала должно предшествовать опасному событию на честное игровое окно.",
+                "en": "Early action on a precursor. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The preparatory pattern predicts the strike; the player performs defense until the final impulse. Application: Parry, evasion, sports start. Limitations: The start of the signal must precede a dangerous event in a fair playing window."
+              }
+            },
+            {
+              "id": "variant-h030",
+              "text": {
+                "ru": "Сдвиг фазы. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Игрок подстраивает собственный ритм так, чтобы попасть между импульсами или в заданную долю. Применение: Полиритм, обход лазеров, синхронизация механизмов. Ограничения: Начать с простых соотношений; плотные последовательности трудно считывать.",
+                "en": "Phase shift. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The player adjusts his own rhythm so as to fall between pulses or on a given beat. Application: Polyrhythm, bypassing lasers, synchronizing mechanisms. Limitations: Start with simple ratios; Dense sequences are difficult to read."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-control",
+      "section": "section-1",
+      "title": {
+        "ru": "Точность и управление по обратной связи",
+        "en": "Precision and feedback control"
+      },
+      "description": {
+        "ru": "Сигнал отражает состояние системы, а игрок непрерывно корректирует ввод.",
+        "en": "The signal reflects the state of the system, and the player continuously adjusts the input."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-control-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h031",
+              "text": {
+                "ru": "Удержание оптимума. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание, перетаскивание. Правило: Паттерн меняется при выходе из допустимого диапазона; игрок возвращает параметр в рабочую зону. Применение: Температура печи, давление, точность лечения в игре. Ограничения: Для направления коррекции нужны два разных сигнала или дополнительная шкала.",
+                "en": "Maintaining the optimum. Role: Mechanics. Features: Basic impulses. Input: hold, drag. Rule: The pattern changes when it leaves the acceptable range; the player returns the parameter to the working area. Application: Furnace temperature, pressure, accuracy of treatment in the game. Limitations: Two different signals or an additional scale are needed to direct the correction."
+              }
+            },
+            {
+              "id": "variant-h032",
+              "text": {
+                "ru": "Натяжение лески. Роль: Механика. Возможности: Богатая тактильность. Ввод: удержание, перетаскивание. Правило: При росте натяжения вибрация усиливается; игрок ослабляет или подтягивает леску, избегая обрыва. Применение: Рыбалка, буксировка, канат. Ограничения: Интенсивность можно заменить ступенями ритма; физического натяжения телефон не создаёт.",
+                "en": "Line tension. Role: Mechanics. Features: Rich tactility. Input: hold, drag. Rule: As tension increases, vibration increases; the player loosens or tightens the line, avoiding a break. Application: Fishing, towing, rope. Limitations: Intensity can be replaced by rhythm steps; The phone does not create any physical tension."
+              }
+            },
+            {
+              "id": "variant-h033",
+              "text": {
+                "ru": "Поймать поклёвку. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: На фоне редких касаний появляется характерный рывок; игрок подсекает только после нужного сигнала. Применение: Рыбалка, ловушка, реакция на редкое событие. Ограничения: Образец поклёвки должен отличаться от фоновых сигналов.",
+                "en": "Catch a bite. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Against the background of rare touches, a characteristic jerk appears; the player hooks only after the required signal. Application: Fishing, trapping, reaction to a rare event. Limitations: The bite pattern must differ from the background signals."
+              }
+            },
+            {
+              "id": "variant-h034",
+              "text": {
+                "ru": "Баланс неустойчивой системы. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание, датчики. Правило: Учащение импульсов сообщает о приближении к падению; игрок компенсирует отклонение. Применение: Канатоходец, перенос груза, виртуальный шар. Ограничения: Сигнал риска сам по себе не сообщает сторону отклонения; её кодируют отдельно.",
+                "en": "Balance of an unstable system. Role: Mechanics. Features: Basic impulses. Input: drag and drop, sensors. Rule: Increased impulses indicate an approaching fall; the player compensates for the deviation. Application: Rope walker, carrying a load, virtual ball. Limitations: The risk signal does not itself indicate the direction of the deviation; it is coded separately."
+              }
+            },
+            {
+              "id": "variant-h035",
+              "text": {
+                "ru": "Контроль перегрева. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание. Правило: Вибрация предупреждает о накоплении тепла; игрок чередует работу и охлаждение. Применение: Лазер, бур, двигатель, мини-игра ремонта. Ограничения: Короткие предупредительные серии обычно полезнее постоянного гудения.",
+                "en": "Overheat control. Role: Mechanics. Features: Basic impulses. Input: hold. Rule: Vibration warns of heat accumulation; the player alternates working and cooling. Applications: Laser, drill, engine, repair mini-game. Limitations: Short warning bursts are usually more useful than a constant buzzing."
+              }
+            },
+            {
+              "id": "variant-h036",
+              "text": {
+                "ru": "Кавитация или срыв режима. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Неровный паттерн обозначает неустойчивую работу; изменение подачи возвращает ровные редкие сигналы. Применение: Насос, турбина, космический двигатель. Ограничения: Это модель состояния; не выдавать её за реальное измерение оборудования.",
+                "en": "Cavitation or mode failure. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: An uneven pattern indicates erratic operation; changing the feed returns smooth sparse signals. Application: Pump, turbine, space engine. Limitations: This is a state model; Do not pass it off as a real equipment measurement."
+              }
+            },
+            {
+              "id": "variant-h037",
+              "text": {
+                "ru": "Поиск резонанса. Роль: Механика. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Игрок меняет виртуальную частоту, а максимум интенсивности обозначает совпадение с целью. Применение: Настройка радио, магический кристалл, научный пазл. Ограничения: Частота виртуальной системы не обязана совпадать с частотой вибромотора.",
+                "en": "Search for resonance. Role: Mechanics. Features: Rich tactility. Input: drag and drop. Rule: The player changes the virtual frequency, and the maximum intensity indicates a match with the target. Application: Radio tuning, magic crystal, science puzzle. Limitations: The frequency of the virtual system does not have to match the frequency of the vibration motor."
+              }
+            },
+            {
+              "id": "variant-h038",
+              "text": {
+                "ru": "Тактильная фиксация прицела. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание, датчики. Правило: Короткий сигнал сообщает о захвате цели, а иной паттерн о потере; игрок удерживает наведение. Применение: Стрельба, фотографирование в игре, сканирование. Ограничения: Не подменять вибрацией проверку реальной точности камеры или оружия.",
+                "en": "Tactile sight fixation. Role: Mechanics. Features: Basic impulses. Input: drag and drop, sensors. Rule: A short signal indicates the capture of the target, and another pattern indicates a loss; the player holds down the aim. Application: Shooting, in-game photography, scanning. Limitations: Do not substitute vibration for checking the actual accuracy of a camera or weapon."
+              }
+            },
+            {
+              "id": "variant-h039",
+              "text": {
+                "ru": "Плавное ведение инструмента. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Импульсы отмечают допустимую скорость; слишком резкое или медленное движение меняет обратную связь. Применение: Резка, полировка, шов в симуляторе. Ограничения: Оценивается траектория касания; реальное сопротивление инструмента не воспроизводится.",
+                "en": "Smooth tool guidance. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: Pulses mark the permissible speed; too sharp or slow movement changes the feedback. Application: Cutting, polishing, seam in the simulator. Limitations: Touch trajectory is estimated; The actual resistance of the instrument is not reproduced."
+              }
+            },
+            {
+              "id": "variant-h040",
+              "text": {
+                "ru": "Остановка по исчезновению сигнала. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание. Правило: Вибрация идёт во время опасного процесса; её окончание разрешает отпустить кнопку или перейти к следующему шагу. Применение: Разминирование в игре, шлюз, завершение сканирования. Ограничения: Добавить подтверждение окончания, чтобы системный обрыв вибрации не выглядел успехом.",
+                "en": "Stop when signal disappears. Role: Mechanics. Features: Basic impulses. Input: hold. Rule: Vibration occurs during a dangerous process; its completion allows you to release the button or go to the next step. Application: Clearing mines in the game, gateway, completing a scan. Limitations: Add confirmation of the end so that the system vibration break does not look like a success."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-combat",
+      "section": "section-1",
+      "title": {
+        "ru": "Бой, экшен и спорт",
+        "en": "Combat, action and sports"
+      },
+      "description": {
+        "ru": "События боя можно ощущать, а предвестники можно использовать для принятия решений.",
+        "en": "Combat events can be sensed and precursors can be used to make decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-combat-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h041",
+              "text": {
+                "ru": "Собственный выстрел. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: касание. Правило: Короткий удар синхронизирован с выстрелом; огибающая и серия различают типы оружия. Применение: Шутер, тир, аркадный бой. Ограничения: Вибрация имитирует ощущение события и не воспроизводит направленную отдачу оружия.",
+                "en": "Own shot. Role: Feedback. Features: Rich tactility. Input: touch. Rule: The short kick is synchronized with the shot; envelope and series distinguish between weapon types. Application: Shooter, shooting gallery, arcade combat. Limitations: Vibration simulates the feeling of an event and does not reproduce the directional recoil of a weapon."
+              }
+            },
+            {
+              "id": "variant-h042",
+              "text": {
+                "ru": "Попадание по противнику. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: состояние. Правило: Импульс возникает только при подтверждённом попадании, а критический удар имеет иной паттерн. Применение: Шутер, слэшер, спортивное попадание. Ограничения: Отделять этот сигнал от собственного выстрела и входящего урона.",
+                "en": "Hitting the enemy. Role: Feedback. Features: Basic impulses. Input: status. Rule: The impulse occurs only with a confirmed hit, and a critical hit has a different pattern. Application: Shooter, slasher, sports hit. Limitations: Separate this signal from your own shot and incoming damage."
+              }
+            },
+            {
+              "id": "variant-h043",
+              "text": {
+                "ru": "Получение урона. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: состояние. Правило: Короткая серия сообщает об ударе по персонажу; тяжёлый урон обозначается отдельно. Применение: Экшен, платформер, выживание. Ограничения: Сила обратной связи не должна маскировать следующие важные сигналы.",
+                "en": "Taking damage. Role: Feedback. Features: Basic impulses. Input: status. Rule: A short episode announces a hit to a character; heavy damage is indicated separately. Application: Action, platformer, survival. Limitations: The strength of the feedback should not mask the following important signals."
+              }
+            },
+            {
+              "id": "variant-h044",
+              "text": {
+                "ru": "Блок и парирование. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Предвестник обозначает окно защиты, а результат различается паттерном успешного парирования или простого блока. Применение: Фехтование, бой с боссом. Ограничения: Отклик результата дополняет механику; решение обеспечивается заблаговременным сигналом.",
+                "en": "Block and parry. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Harbinger denotes a window of defense, and the result differs in the pattern of a successful parry or a simple block. Application: Fencing, boss fight. Limitations: The response of the result complements the mechanics; the solution is provided by an early signal."
+              }
+            },
+            {
+              "id": "variant-h045",
+              "text": {
+                "ru": "Уклонение от невидимой атаки. Роль: Механика. Возможности: Базовые импульсы. Ввод: свайп. Правило: Различимый подготовительный ритм сообщает тип атаки; игрок выбирает нужное уклонение. Применение: Бой в темноте, доступный режим экшена. Ограничения: Нужен небольшой выучиваемый словарь атак, а не десятки похожих кодов.",
+                "en": "Evading an invisible attack. Role: Mechanics. Features: Basic impulses. Input: swipe. Rule: A distinguishable preparatory rhythm indicates the type of attack; the player selects the desired dodge. Application: Fight in the dark, available action mode. Limitations: You need a small learnable dictionary of attacks, and not dozens of similar codes."
+              }
+            },
+            {
+              "id": "variant-h046",
+              "text": {
+                "ru": "Перезарядка и готовность. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Этапы перезарядки отмечаются импульсами; точное действие по финальному сигналу даёт бонус. Применение: Активная перезарядка, заряд навыка. Ограничения: Обычная готовность может быть чистой обратной связью без обязательной реакции.",
+                "en": "Recharge and readiness. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Recharging stages are marked by pulses; precise action on the final signal gives a bonus. Application: Active cooldown, skill charge. Limitations: Normal readiness can be pure feedback without a mandatory reaction."
+              }
+            },
+            {
+              "id": "variant-h047",
+              "text": {
+                "ru": "Комбо по тактильному ритму. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Паттерн задаёт окно следующего удара; выдержанная последовательность продлевает комбо. Применение: Рукопашный бой, музыкальный экшен. Ограничения: Согласовать ритм с анимацией и правилами отмены движения.",
+                "en": "Tactile rhythm combo. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The pattern sets the next strike window; a sustained sequence prolongs the combo. Application: Hand-to-hand combat, musical action. Limitations: Match the rhythm with the animation and movement cancellation rules."
+              }
+            },
+            {
+              "id": "variant-h048",
+              "text": {
+                "ru": "Контакт, приземление, столкновение. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Короткий удар соответствует моменту контакта и условной тяжести столкновения. Применение: Платформер, скейтборд, физическая аркада. Ограничения: Много мелких контактов следует объединять, иначе они превращаются в гул.",
+                "en": "Contact, landing, collision. Role: Feedback. Features: Rich tactility. Input: status. Rule: A short hit corresponds to the moment of contact and the relative severity of the collision. Application: Platformer, skateboard, physics arcade. Limitations: Many small contacts should be combined, otherwise they turn into a rumble."
+              }
+            },
+            {
+              "id": "variant-h049",
+              "text": {
+                "ru": "Дефицит ресурса. Роль: Механика. Возможности: Базовые импульсы. Ввод: состояние. Правило: Редкий характерный сигнал сообщает о критическом запасе здоровья, кислорода или выносливости; игрок меняет тактику. Применение: Выживание, подводный бой, бег. Ограничения: Не превращать всё время низкого здоровья в непрерывную вибрацию.",
+                "en": "Resource shortage. Role: Mechanics. Features: Basic impulses. Input: status. Rule: A rare characteristic signal indicates a critical supply of health, oxygen or stamina; the player changes tactics. Application: Survival, underwater combat, running. Limitations: Do not turn all the time of low health into continuous vibration."
+              }
+            },
+            {
+              "id": "variant-h050",
+              "text": {
+                "ru": "Момент спортивного контакта. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, датчики. Правило: Предварительный сигнал помогает выбрать момент замаха, а импульс контакта подтверждает результат. Применение: Бейсбол, теннис, гольф в игре. Ограничения: Силу реального замаха нельзя надёжно получить только из факта вибрации.",
+                "en": "A moment of sporting contact. Role: Mechanics. Features: Basic impulses. Input: touch, sensors. Rule: The pre-signal helps to select the moment of the swing, and the contact impulse confirms the result. Application: Baseball, tennis, golf in the game. Limitations: The strength of the actual swing cannot be reliably obtained from the fact of vibration alone."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-simulation",
+      "section": "section-1",
+      "title": {
+        "ru": "Транспорт, машины и физические процессы",
+        "en": "Transport, machines and physical processes"
+      },
+      "description": {
+        "ru": "Сигнал связывают с состоянием модели, а не добавляют произвольный шум.",
+        "en": "The signal is associated with the state of the model, rather than adding arbitrary noise."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-simulation-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h051",
+              "text": {
+                "ru": "Двигатель и обороты. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Огибающая или плотность импульсов меняется с режимом двигателя, помогая различать холостой ход и нагрузку. Применение: Гонки, техника, космические симуляторы. Ограничения: Не обещать управление физической частотой мотора на всех телефонах.",
+                "en": "Engine and speed. Role: Feedback. Features: Rich tactility. Input: status. Rule: The envelope or pulse density changes with engine mode, helping to differentiate between idle and load. Applications: Racing, engineering, space sims. Limitations: Do not promise to control the physical frequency of the motor on all phones."
+              }
+            },
+            {
+              "id": "variant-h052",
+              "text": {
+                "ru": "Переключение передачи. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Паттерн сообщает о подходящем окне переключения; отдельный толчок подтверждает смену передачи. Применение: Драг-рейсинг, механическая коробка в игре. Ограничения: Предупреждение и подтверждение должны различаться.",
+                "en": "Changing gear. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The pattern reports a suitable switching window; a separate push confirms the gear change. Application: Drag racing, manual transmission in the game. Limitations: Warning and confirmation must be different."
+              }
+            },
+            {
+              "id": "variant-h053",
+              "text": {
+                "ru": "Пробуксовка и сцепление. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание, перетаскивание. Правило: Неровная серия появляется при потере сцепления; игрок ослабляет газ или меняет управление. Применение: Ралли, дрифт, вождение на льду. Ограничения: Вибрация сообщает о модели сцепления, а не поворачивает руль.",
+                "en": "Slip and clutch. Role: Mechanics. Features: Basic impulses. Input: hold, drag. Rule: An uneven series occurs when traction is lost; the player eases up the gas or changes the controls. Application: Rally, drift, ice driving. Limitations: Vibration reports the clutch pattern rather than turning the steering wheel."
+              }
+            },
+            {
+              "id": "variant-h054",
+              "text": {
+                "ru": "Дорога и рельеф. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Редкие удары, частая мелкая дрожь и мягкие пульсации обозначают разные покрытия. Применение: Грунт, брусчатка, рельсы, снег в игре. Ограничения: Поверхности различаются условным рисунком, а не точной механической копией материала.",
+                "en": "Road and terrain. Role: Feedback. Features: Rich tactility. Input: status. Rule: Rare impacts, frequent small tremors and soft pulsations indicate different surfaces. Application: Ground, paving stones, rails, snow in the game. Limitations: Surfaces differ in a conventional pattern, and not an exact mechanical copy of the material."
+              }
+            },
+            {
+              "id": "variant-h055",
+              "text": {
+                "ru": "Торможение на грани. Роль: Механика. Возможности: Базовые импульсы. Ввод: удержание. Правило: Пульсации предупреждают о блокировке или превышении заданного порога торможения; игрок корректирует ввод. Применение: Гоночный тренажёр, посадка аппарата. Ограничения: Это игровая подсказка, не имитация реальной педали ABS.",
+                "en": "Braking on the verge. Role: Mechanics. Features: Basic impulses. Input: hold. Rule: Pulsations warn of blocking or exceeding a preset braking threshold; the player corrects the input. Application: Racing simulator, vehicle landing. Limitations: This is a game hint, not an imitation of a real ABS pedal."
+              }
+            },
+            {
+              "id": "variant-h056",
+              "text": {
+                "ru": "Турбулентность и волны. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Короткие нерегулярные всплески соответствуют порывам или ударам волн. Применение: Полёт, морская навигация, буря. Ограничения: Фоновый рисунок не должен закрывать аварийные предупреждения.",
+                "en": "Turbulence and waves. Role: Feedback. Features: Rich tactility. Input: status. Rule: Short irregular bursts correspond to gusts or shocks of waves. Application: Flight, sea navigation, storm. Limitations: Background image should not obscure emergency warnings."
+              }
+            },
+            {
+              "id": "variant-h057",
+              "text": {
+                "ru": "Рабочий цикл инструмента. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: удержание. Правило: Запуск, рабочая фаза и остановка инструмента имеют разные огибающие. Применение: Дрель, пила, шлифовка в симуляторе. Ограничения: Ограничивать длительность непрерывной работы и предусматривать отключение.",
+                "en": "Tool duty cycle. Role: Feedback. Features: Rich tactility. Input: hold. Rule: The start, working phase and stop of the tool have different envelopes. Application: Drill, saw, grinding in the simulator. Limitations: Limit the duration of continuous operation and provide for shutdown."
+              }
+            },
+            {
+              "id": "variant-h058",
+              "text": {
+                "ru": "Заклинивание механизма. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, перетаскивание. Правило: Ритм становится прерывистым; игрок меняет усилие в модели или выполняет обратный ход. Применение: Ремонт, производство, механические головоломки. Ограничения: Телефон сообщает о заедании, но физически не блокирует движение пальца.",
+                "en": "Mechanism jamming. Role: Mechanics. Features: Basic impulses. Input: touch, drag. Rule: Rhythm becomes intermittent; the player changes the force in the model or performs a reverse move. Application: Repair, manufacturing, mechanical puzzles. Limitations: The phone reports a jam, but does not physically block the movement of the finger."
+              }
+            },
+            {
+              "id": "variant-h059",
+              "text": {
+                "ru": "Удары свободного тела. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: датчики. Правило: Когда виртуальный шар или груз сталкивается со стенкой контейнера, корпус отвечает импульсом. Применение: Шарик в коробке, кубики, наклонный лабиринт. Ограничения: Положение тела вычисляет симуляция; вибромотор не перемещает объект на экране.",
+                "en": "Free body strikes. Role: Feedback. Features: Basic impulses. Enter: sensors. Rule: When a virtual ball or weight collides with the wall of a container, the body responds with an impulse. Application: Ball in a box, cubes, inclined maze. Limitations: The position of the body is calculated by the simulation; The vibration motor does not move the object on the screen."
+              }
+            },
+            {
+              "id": "variant-h060",
+              "text": {
+                "ru": "Поток и заполнение. Роль: Механика. Возможности: Богатая тактильность. Ввод: наклон, датчики. Правило: Рисунок сигнала отражает темп виртуального потока и близость к переполнению; игрок регулирует наклон. Применение: Наливание, дозирование, алхимия. Ограничения: Нужны датчики наклона; объём жидкости здесь рассчитывает игра.",
+                "en": "Flow and filling. Role: Mechanics. Features: Rich tactility. Input: tilt, sensors. Rule: The signal pattern reflects the pace of the virtual flow and the proximity to overflow; the player adjusts the tilt. Application: Pouring, dosing, alchemy. Limitations: Tilt sensors required; The volume of liquid is calculated here by the game."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-materials",
+      "section": "section-1",
+      "title": {
+        "ru": "Материалы, инструменты и виртуальные предметы",
+        "en": "Materials, tools and virtual items"
+      },
+      "description": {
+        "ru": "Тактильный рисунок создаёт ассоциацию с предметом и может стать частью задачи.",
+        "en": "A tactile drawing creates an association with an object and can become part of a task."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-materials-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h061",
+              "text": {
+                "ru": "Проведение по текстуре. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: При движении пальца меняются плотность и характер импульсов, создавая условный образ шероховатости. Применение: Дерево, камень, ткань, поверхность карты. Ограничения: Обычный экран не приобретает физический рельеф или управляемое трение.",
+                "en": "Swipe over texture. Role: Feedback. Features: Rich tactility. Input: drag and drop. Rule: When you move your finger, the density and character of the impulses change, creating a conventional image of roughness. Application: Wood, stone, fabric, card surface. Limitations: A regular screen does not acquire physical relief or controlled friction."
+              }
+            },
+            {
+              "id": "variant-h062",
+              "text": {
+                "ru": "Материал по отклику. Роль: Механика. Возможности: Богатая тактильность. Ввод: касание. Правило: Игрок простукивает виртуальные образцы и выбирает материал по выученному паттерну. Применение: Геология в игре, сортировка, распознавание артефактов. Ограничения: Значения паттернов условные; нужна демонстрация образцов и проверка различимости.",
+                "en": "Response material. Role: Mechanics. Features: Rich tactility. Input: touch. Rule: The player taps virtual samples and selects material according to the learned pattern. Application: Geology in the game, sorting, recognition of artifacts. Limitations: The meanings of the patterns are conditional; demonstration of samples and verification of distinctiveness is needed."
+              }
+            },
+            {
+              "id": "variant-h063",
+              "text": {
+                "ru": "Трещина и разрушение. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Несколько нарастающих щелчков переходят в финальный удар при разрушении объекта. Применение: Лёд, стекло, дерево, вскрытие оболочки. Ограничения: Не использовать слишком громкий и длинный эффект для каждого мелкого объекта.",
+                "en": "Crack and destruction. Role: Feedback. Features: Rich tactility. Input: status. Rule: Several increasing clicks lead to the final blow when the object is destroyed. Application: Ice, glass, wood, opening the shell. Limitations: Do not use too loud and long effect for each small object."
+              }
+            },
+            {
+              "id": "variant-h064",
+              "text": {
+                "ru": "Упругий объект. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Натяжение отражается нарастанием, а отпускание коротким затухающим откликом. Применение: Резинка, лук, пружина, мягкая кнопка. Ограничения: Это сочетание визуального движения и вибрации; упругая сила пальцу не передаётся.",
+                "en": "Elastic object. Role: Feedback. Features: Rich tactility. Input: drag and drop. Rule: Tension is reflected by an increase, and release by a short decaying response. Applications: Elastic band, bow, spring, soft button. Limitations: This is a combination of visual movement and vibration; elastic force is not transferred to the finger."
+              }
+            },
+            {
+              "id": "variant-h065",
+              "text": {
+                "ru": "Зубцы и храповик. Роль: Механика. Возможности: Базовые импульсы. Ввод: вращение на экране. Правило: Каждый пройденный зубец отмечается щелчком; обратный ход получает иной сигнал или запрещается правилами. Применение: Лебёдка, сейф, ручная настройка. Ограничения: Запрет является программным, а не физическим упором.",
+                "en": "Teeth and ratchet. Role: Mechanics. Features: Basic impulses. Input: Rotate on screen. Rule: Each tooth passed is marked with a click; reverse motion receives a different signal or is prohibited by the rules. Application: Winch, safe, manual adjustment. Limitations: The prohibition is a software, not a physical stop."
+              }
+            },
+            {
+              "id": "variant-h066",
+              "text": {
+                "ru": "Нарезка на порции. Роль: Механика. Возможности: Базовые импульсы. Ввод: свайп. Правило: Импульс обозначает пересечение нужной линии; игрок дозирует шаги или число надрезов. Применение: Кулинария, раскрой, деление ресурса. Ограничения: Скорость свайпа и количество порций вычисляются по касаниям.",
+                "en": "Cutting into portions. Role: Mechanics. Features: Basic impulses. Input: swipe. Rule: Impulse indicates the intersection of the desired line; the player measures the steps or the number of cuts. Application: Cooking, cutting, resource division. Limitations: Swipe speed and number of servings are calculated by taps."
+              }
+            },
+            {
+              "id": "variant-h067",
+              "text": {
+                "ru": "Соскребание слоя. Роль: Механика. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Рабочий рисунок меняется при достижении нижнего слоя; игрок останавливается, чтобы не повредить основу. Применение: Реставрация, раскопки, очистка. Ограничения: Повреждение и глубина виртуальны; не имитировать медицинскую точность.",
+                "en": "Scraping off the layer. Role: Mechanics. Features: Rich tactility. Input: drag and drop. Rule: The working pattern changes when the bottom layer is reached; the player stops so as not to damage the base. Application: Restoration, excavation, cleaning. Limitations: Damage and depth are virtual; do not imitate medical accuracy."
+              }
+            },
+            {
+              "id": "variant-h068",
+              "text": {
+                "ru": "Штамп, печать, защёлка. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: касание. Правило: Отчётливый импульс соответствует окончательной фиксации объекта. Применение: Печать документа в игре, сборка, закрытие контейнера. Ограничения: Событие фиксации должно действительно произойти в модели.",
+                "en": "Stamp, seal, latch. Role: Feedback. Features: Basic impulses. Input: touch. Rule: A distinct impulse corresponds to the final fixation of an object. Application: Printing a document in a game, assembly, closing a container. Constraints: The commit event must actually occur in the model."
+              }
+            },
+            {
+              "id": "variant-h069",
+              "text": {
+                "ru": "Отрывание и расстёгивание. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Серия щелчков следует за перемещением пальца; финальный импульс отмечает полный разрыв соединения. Применение: Молния, липучка, перфорация, упаковка. Ограничения: Различать отдельные щелчки и непрерывный гул; физического сопротивления нет.",
+                "en": "Tearing and unfastening. Role: Feedback. Features: Rich tactility. Input: drag and drop. Rule: A series of clicks follows the movement of the finger; the final pulse marks the complete break of the connection. Applications: Zipper, Velcro, perforation, packaging. Limitations: Distinguish between individual clicks and a continuous hum; no physical resistance..."
+              }
+            },
+            {
+              "id": "variant-h070",
+              "text": {
+                "ru": "Сборка по посадке. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Правильное положение детали вызывает короткий сигнал; игрок ищет ориентацию и фиксирует соединение. Применение: Конструктор, оружейная сборка, ремонт. Ограничения: Для ориентации детали достаточно жеста; реальный поворот телефона необязателен.",
+                "en": "Assembly for landing. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: The correct position of the part causes a short signal; the player looks for the orientation and fixes the connection. Application: Constructor, weapon assembly, repair. Limitations: A gesture is enough to orient the part; real rotation of the phone is not necessary."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-puzzles",
+      "section": "section-1",
+      "title": {
+        "ru": "Головоломки, коды и обучение",
+        "en": "Puzzles, codes and training"
+      },
+      "description": {
+        "ru": "Игрок различает, запоминает, воспроизводит или преобразует тактильную информацию.",
+        "en": "The player distinguishes, remembers, reproduces or transforms tactile information."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-puzzles-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h071",
+              "text": {
+                "ru": "Замок с тактильными штифтами. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: При прохождении нужной позиции возникает особый щелчок; игрок запоминает положения и выставляет штифты. Применение: Взлом в игре, механический сейф. Ограничения: Сделать признак правильной позиции устойчивым к скорости движения пальца.",
+                "en": "Lock with tactile pins. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: When passing the desired position, a special click occurs; the player remembers the positions and sets the pins. Application: Hacking in a game, mechanical safe. Limitations: Make the sign of the correct position resistant to the speed of finger movement."
+              }
+            },
+            {
+              "id": "variant-h072",
+              "text": {
+                "ru": "Азбука из коротких и длинных. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Телефон передаёт символы ритмом, а игрок декодирует или отвечает нажатиями. Применение: Морзе, шпионский квест, обучение кодированию. Ограничения: Это последовательный код, а не полноценная замена речи для всех пользователей.",
+                "en": "ABC of short and long. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The phone transmits symbols in a rhythm, and the player decodes or responds by pressing. Application: Morse, spy quest, coding training. Limitations: This is a sequential code, not a full-fledged speech replacement for all users."
+              }
+            },
+            {
+              "id": "variant-h073",
+              "text": {
+                "ru": "Число импульсами. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Игрок считает короткие сигналы и использует число как ответ или часть комбинации. Применение: Счёт, PIN в головоломке, номер комнаты. Ограничения: Длинные числа лучше делить на группы; вибрация не является защищённым каналом.",
+                "en": "Number of pulses. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The player counts short signals and uses the number as an answer or part of a combination. Application: Counting, PIN in a puzzle, room number. Limitations: Long numbers are best divided into groups; vibration is not a protected channel."
+              }
+            },
+            {
+              "id": "variant-h074",
+              "text": {
+                "ru": "Найти совпадающую пару. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Скрытые карточки воспроизводят паттерны; игрок открывает одинаковые пары. Применение: Мемори, обучение различению, игра без зрительного сравнения. Ограничения: Пара определяется ритмом, не едва заметной разницей силы.",
+                "en": "Find a matching pair. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Hidden cards reproduce patterns; the player opens identical pairs. Application: Memory, learning to discriminate, playing without visual comparison. Limitations: The pair is determined by rhythm, not by a barely noticeable difference in strength."
+              }
+            },
+            {
+              "id": "variant-h075",
+              "text": {
+                "ru": "Лишний паттерн. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Несколько объектов дают похожие рисунки, один отличается; игрок выбирает исключение. Применение: Классификация, внимание, поиск неисправности. Ограничения: Различие должно быть значимым и доступным после повторного прослушивания касанием.",
+                "en": "Extra pattern. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Several objects produce similar patterns, one is different; the player selects an exception. Application: Classification, attention, troubleshooting. Limitations: The difference must be meaningful and accessible after repeated tapping."
+              }
+            },
+            {
+              "id": "variant-h076",
+              "text": {
+                "ru": "Порядок и перестановка. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Игрок сортирует объекты по длине, числу импульсов или выученной тактильной последовательности. Применение: Логическая цепочка, музыкальная фраза, сборка пароля. Ограничения: Не требовать точного ранжирования близких интенсивностей на разных устройствах.",
+                "en": "Order and rearrangement. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: The player sorts objects by length, number of pulses or a learned tactile sequence. Application: Logical chain, musical phrase, password assembly. Limitations: Do not require accurate ranking of similar intensities on different devices."
+              }
+            },
+            {
+              "id": "variant-h077",
+              "text": {
+                "ru": "Комбинация нескольких признаков. Роль: Механика. Возможности: Богатая тактильность. Ввод: касание. Правило: Один признак задаёт класс, другой вариант; игрок объединяет ритм и длительность либо интенсивность. Применение: Тактильные ключи, классификация устройств, сложный код. Ограничения: Сначала проверить каждый признак отдельно; затем обучить их совместному чтению.",
+                "en": "A combination of several signs. Role: Mechanics. Features: Rich tactility. Input: touch. Rule: One attribute specifies a class, another option; the player combines rhythm and duration or intensity. Application: Tactile keys, device classification, complex code. Limitations: First check each sign separately; then teach them to read together."
+              }
+            },
+            {
+              "id": "variant-h078",
+              "text": {
+                "ru": "Лабиринт по контакту. Роль: Механика. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Касание виртуальной стены даёт сигнал; игрок исследует ходы и строит маршрут в памяти. Применение: Невидимый лабиринт, исследовательский пазл. Ограничения: Не наказывать за попытку исследовать без достаточной обратной связи.",
+                "en": "Labyrinth by contact. Role: Mechanics. Features: Basic impulses. Input: drag and drop. Rule: Touching a virtual wall gives a signal; the player explores the moves and builds a route in memory. Application: Invisible maze, exploration puzzle. Restrictions: Do not penalize for trying to explore without sufficient feedback."
+              }
+            },
+            {
+              "id": "variant-h079",
+              "text": {
+                "ru": "Преобразование ритма. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Игрок получает рисунок и отвечает по правилу: удвоить интервалы, инвертировать короткое и длинное или повторить задом наперёд. Применение: Логика, программирование, музыкальные задачи. Ограничения: Чётко обозначить границы фразы и дать тренировочные примеры.",
+                "en": "Rhythm transformation. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The player receives a drawing and answers according to the rule: double the intervals, invert short and long, or repeat backwards. Application: Logic, programming, musical problems. Limitations: Clearly define the boundaries of the phrase and give training examples."
+              }
+            },
+            {
+              "id": "variant-h080",
+              "text": {
+                "ru": "Поиск скрытого правила. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Действия вызывают закономерные паттерны; игрок формулирует правило и проверяет его новыми действиями. Применение: Научное мышление, детективный терминал, чёрный ящик. Ограничения: Не менять правило случайно до того, как игрок может сделать проверяемый вывод.",
+                "en": "Finding a hidden rule. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Actions produce regular patterns; the player formulates a rule and tests it with new actions. Application: Scientific thinking, detective terminal, black box. Limitations: Do not accidentally change the rule before the player can make a testable conclusion."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-stealth",
+      "section": "section-1",
+      "title": {
+        "ru": "Стелс, опасность и хоррор",
+        "en": "Stealth, danger and horror"
+      },
+      "description": {
+        "ru": "Сигнал сообщает о риске, помогает выбирать момент и иногда сам становится уликой.",
+        "en": "The signal communicates risk, helps choose the moment and sometimes becomes evidence itself."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-stealth-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h081",
+              "text": {
+                "ru": "Приближение угрозы. Роль: Механика. Возможности: Базовые импульсы. Ввод: состояние. Правило: По мере роста опасности интервалы сокращаются; игрок решает, спрятаться, замереть или отступить. Применение: Стелс, преследователь, заражённая зона. Ограничения: Паттерн может сообщать риск, но для направления угрозы нужен отдельный код.",
+                "en": "Approaching threat. Role: Mechanics. Features: Basic impulses. Input: status. Rule: As danger increases, intervals become shorter; the player decides whether to hide, freeze or retreat. Application: Stealth, stalker, infested area. Limitations: The pattern can communicate risk, but a separate code is needed to direct the threat."
+              }
+            },
+            {
+              "id": "variant-h082",
+              "text": {
+                "ru": "Обнаружение врагом. Роль: Механика. Возможности: Базовые импульсы. Ввод: состояние. Правило: Разные серии обозначают подозрение, поиск и полное обнаружение; игрок выбирает ответ. Применение: Скрытное прохождение, социальный стелс. Ограничения: Переход состояния важнее непрерывного повторения одного предупреждения.",
+                "en": "Detection by the enemy. Role: Mechanics. Features: Basic impulses. Input: status. Rule: Different series indicate suspicion, search and complete detection; the player chooses the answer. Application: Secret passage, social stealth. Limitations: State transition is more important than the continuous repetition of one warning."
+              }
+            },
+            {
+              "id": "variant-h083",
+              "text": {
+                "ru": "Сердцебиение как шкала риска. Роль: Механика. Возможности: Базовые импульсы. Ввод: состояние. Правило: Парные импульсы ускоряются с условным стрессом персонажа; игрок снижает риск действиями. Применение: Прятки, хоррор, контроль паники. Ограничения: Это игровой параметр; не выдавать его за измерение реального пульса человека.",
+                "en": "Heartbeat as a risk scale. Role: Mechanics. Features: Basic impulses. Input: status. Rule: Paired impulses accelerate with the character's conditioned stress; the player reduces the risk by actions. Application: Hide and seek, horror, panic control. Limitations: This is a game parameter; do not pass it off as measuring a person’s real pulse."
+              }
+            },
+            {
+              "id": "variant-h084",
+              "text": {
+                "ru": "Шаги за стеной. Роль: Механика. Возможности: Базовые импульсы. Ввод: состояние. Правило: Ритм шагов позволяет оценить приближение и выбрать момент выхода из укрытия. Применение: Патруль, невидимый противник, побег. Ограничения: Тип шага и расстояние кодируются условно; один мотор не локализует источник в комнате.",
+                "en": "Footsteps behind the wall. Role: Mechanics. Features: Basic impulses. Input: status. Rule: The rhythm of steps allows you to evaluate the approach and choose the moment to leave cover. Application: Patrol, invisible enemy, escape. Limitations: The type of step and distance are coded conditionally; one motor does not localize the source in the room."
+              }
+            },
+            {
+              "id": "variant-h085",
+              "text": {
+                "ru": "Тактильный детектор аномалий. Роль: Механика. Возможности: Богатая тактильность. Ввод: перетаскивание, датчики. Правило: Игрок направляет прибор и сравнивает неровные сигналы, чтобы определить безопасный проход. Применение: Паранормальный квест, радиация в игре. Ограничения: Реальную радиацию или электромагнитные угрозы вибромотор не измеряет.",
+                "en": "Tactile anomaly detector. Role: Mechanics. Features: Rich tactility. Input: drag and drop, sensors. Rule: The player aims the device and compares the uneven signals to determine a safe passage. Application: Paranormal quest, radiation in the game. Limitations: The vibration motor does not measure real radiation or electromagnetic threats."
+              }
+            },
+            {
+              "id": "variant-h086",
+              "text": {
+                "ru": "Замереть после сигнала. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: После предупреждения игрок должен удерживать телефон неподвижно; превышение порога движения раскрывает персонажа. Применение: Красный свет, прятки, осторожная переноска. Ограничения: Фильтровать колебания от самого мотора, иначе устройство может наказать игрока за собственный сигнал.",
+                "en": "Freeze after the signal. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: After the warning, the player must hold the phone still; exceeding the movement threshold reveals the character. Application: Red light, hide and seek, careful carrying. Limitations: Filter vibrations from the motor itself, otherwise the device may punish the player for its own signal."
+              }
+            },
+            {
+              "id": "variant-h087",
+              "text": {
+                "ru": "Маскировка действия шумом. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Сильные импульсы обозначают безопасные интервалы виртуального шума; игрок действует только в эти моменты. Применение: Кража, пересечение скрипящего пола, обход охраны. Ограничения: Здесь шум является условием игрового мира, а не реальным акустическим измерением.",
+                "en": "Masking action with noise. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Strong impulses indicate safe intervals of virtual noise; the player acts only in these moments. Application: Theft, crossing a creaking floor, bypassing security. Limitations: Here noise is a condition of the game world, and not an actual acoustic dimension."
+              }
+            },
+            {
+              "id": "variant-h088",
+              "text": {
+                "ru": "Вибрация как выдающий звук. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Участники в одной комнате могут услышать реальный мотор; игрок решает, получать подсказку или сохранить тишину. Применение: Локальные прятки, настольная социальная игра. Ограничения: Звук зависит от корпуса и поверхности; на него нельзя рассчитывать как на равный соревновательный канал.",
+                "en": "Vibration as an outstanding sound. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: Participants in the same room can hear a real motor; the player decides whether to receive a hint or remain silent. Application: Local hide and seek, social board game. Limitations: Sound depends on the body and surface; it cannot be counted on as an equal competitive channel."
+              }
+            },
+            {
+              "id": "variant-h089",
+              "text": {
+                "ru": "Ложная тревога как улика. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Игрок сопоставляет несколько паттернов и другие признаки, чтобы отличить настоящий сигнал угрозы от помех. Применение: Детективный хоррор, ненадёжный прибор. Ограничения: Правило помех должно быть объяснимым; произвольный обман разрушает возможность учиться.",
+                "en": "False alarm as evidence. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: The player matches several patterns and other signs to distinguish a real threat signal from interference. Application: Detective horror, unreliable device. Limitations: The interference rule must be explainable; arbitrary deception destroys the opportunity to learn."
+              }
+            },
+            {
+              "id": "variant-h090",
+              "text": {
+                "ru": "Тактильный скример. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Короткий неожиданный всплеск совпадает с заранее подготовленным сюжетным событием. Применение: Хоррор, кульминация, внезапный контакт. Ограничения: Дать настройку интенсивности и отключение; частые всплески быстро теряют смысл.",
+                "en": "Tactile screamer. Role: Feedback. Features: Rich tactility. Input: status. Rule: A short sudden burst coincides with a pre-arranged plot event. Application: Horror, climax, sudden contact. Limitations: Give intensity adjustment and shutdown; Frequent outbursts quickly lose their meaning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-story",
+      "section": "section-1",
+      "title": {
+        "ru": "Повествование, эмоции и присутствие",
+        "en": "Narrative, emotion and presence"
+      },
+      "description": {
+        "ru": "Тактильный рисунок поддерживает сцену или обозначает узнаваемый мотив.",
+        "en": "Tactile patterns support a scene or indicate a recognizable motif."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-story-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h091",
+              "text": {
+                "ru": "Стук персонажа. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: состояние. Правило: Определённый ритм стука сопровождает появление персонажа и позже узнаётся без изображения. Применение: История в сообщениях, дверь, невидимый спутник. Ограничения: Ритм является авторским мотивом, а не универсальным эмоциональным кодом.",
+                "en": "Character knock. Role: Feedback. Features: Basic impulses. Input: status. Rule: A certain rhythm of knocking accompanies the appearance of a character and is later recognized without an image. Application: Story in messages, a door, an invisible companion. Limitations: Rhythm is an author's motive, not a universal emotional code."
+              }
+            },
+            {
+              "id": "variant-h092",
+              "text": {
+                "ru": "Характер через ритм. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Осторожные, резкие или неровные импульсы соответствуют поведению вымышленного собеседника. Применение: Диалоги, интерактивная проза, питомец. Ограничения: Эмоциональные трактовки требуют проверки с аудиторией и не одинаковы у всех.",
+                "en": "Character through rhythm. Role: Feedback. Features: Rich tactility. Input: status. Rule: Cautious, sharp or uneven impulses correspond to the behavior of a fictional interlocutor. Application: Dialogue, interactive prose, pet. Limitations: Emotional interpretations require testing with the audience and are not the same for everyone."
+              }
+            },
+            {
+              "id": "variant-h093",
+              "text": {
+                "ru": "Виртуальное прикосновение. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: касание, сеть. Правило: Касание объекта или согласованный жест партнёра вызывает короткий мягкий отклик. Применение: Забота о питомце, совместная история, социальное присутствие. Ограничения: Не обещать ощущение определённой части тела или реальную передачу силы.",
+                "en": "Virtual touch. Role: Feedback. Features: Rich tactility. Input: touch, network. Rule: Touching an object or a coordinated gesture from a partner causes a short, soft response. Application: Caring for a pet, shared history, social presence. Limitations: Do not promise sensation of a certain part of the body or real transfer of force."
+              }
+            },
+            {
+              "id": "variant-h094",
+              "text": {
+                "ru": "Дождь и капли. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Редкие нерегулярные импульсы сопровождают капли, более плотный рисунок обозначает ливень. Применение: Атмосфера, прогулка, погодная сцена. Ограничения: Выбирать заметные моменты; длительный фон утомляет и расходует заряд.",
+                "en": "Rain and drops. Role: Feedback. Features: Rich tactility. Input: status. Rule: Rare irregular pulses accompany drops, a denser pattern indicates a downpour. Application: Atmosphere, walk, weather scene. Limitations: Select noticeable moments; Long background is tiring and wastes battery."
+              }
+            },
+            {
+              "id": "variant-h095",
+              "text": {
+                "ru": "Гром и крупное событие. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Нарастание и затухание совпадают с громом, обвалом или пролётом тяжёлого объекта. Применение: Кат-сцена, катастрофа, кинематографичный момент. Ограничения: Синхронизировать с тем, когда событие достигает персонажа, если это важно для сцены.",
+                "en": "Thunder and a major event. Role: Feedback. Features: Rich tactility. Input: status. Rule: The rise and fall coincide with thunder, a landslide, or the passing of a heavy object. Application: Cut-scene, disaster, cinematic moment. Limitations: Synchronize with when the event reaches the character, if it is important for the scene."
+              }
+            },
+            {
+              "id": "variant-h096",
+              "text": {
+                "ru": "Внутренний ритм существа. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Дыхание, пульсация или биение крыла формируют узнаваемый тактильный образ живого объекта. Применение: Существо в руках, инкубатор, фантастическая биология. Ограничения: Это постановочная модель; не делать из неё медицинский показатель.",
+                "en": "The inner rhythm of a creature. Role: Feedback. Features: Rich tactility. Input: status. Rule: Breathing, pulsation or beating of a wing forms a recognizable tactile image of a living object. Application: Hand-held creature, incubator, science fiction biology. Limitations: This is a staged model; don't make it a medical indicator..."
+              }
+            },
+            {
+              "id": "variant-h097",
+              "text": {
+                "ru": "Узнаваемая способность. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: У заклинания или устройства есть собственная короткая последовательность запуска и завершения. Применение: Магия, гаджеты, коллекционные предметы. Ограничения: Словарь должен оставаться небольшим и различимым.",
+                "en": "Recognizable ability. Role: Feedback. Features: Rich tactility. Input: status. Rule: A spell or device has its own short start and end sequence. Uses: Magic, gadgets, collectibles. Limitations: Vocabulary must be kept small and distinct."
+              }
+            },
+            {
+              "id": "variant-h098",
+              "text": {
+                "ru": "Возвращение мотива. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Ранее выученный ритм появляется в новой сцене; игрок узнаёт персонажа, объект или связь событий. Применение: Детектив, воспоминания, сюжетная загадка. Ограничения: Если узнавание обязательно для прогресса, дать альтернативную доступную подсказку.",
+                "en": "Return of the motive. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: A previously learned rhythm appears in a new scene; the player recognizes a character, object or connection of events. Application: Detective, flashback, plot mystery. Limitations: If recognition is necessary for progress, give an alternative available clue."
+              }
+            },
+            {
+              "id": "variant-h099",
+              "text": {
+                "ru": "Намеренное отсутствие отклика. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание. Правило: Знакомое действие внезапно не вызывает ожидаемой вибрации; игрок проверяет, что изменилось в мире. Применение: Неисправный прибор, исчезнувший спутник, сюжетный поворот. Ограничения: Отсутствие сигнала неоднозначно; подтвердить его другим каналом и учесть системное отключение.",
+                "en": "Intentional lack of response. Role: Mechanics. Features: Basic impulses. Input: touch. Rule: A familiar action suddenly does not produce the expected vibration; the player checks what has changed in the world. Application: Faulty device, missing satellite, plot twist. Limitations: The absence of a signal is ambiguous; confirm it with another channel and take into account the system shutdown."
+              }
+            },
+            {
+              "id": "variant-h100",
+              "text": {
+                "ru": "Финальная тактильная фраза. Роль: Обратная связь. Возможности: Богатая тактильность. Ввод: состояние. Правило: Короткая композиция завершает сцену или повторяет освоенные сигналы в новом порядке. Применение: Финал уровня, завершение арки, награда. Ограничения: Не представлять длину или силу эффекта как обязательный показатель ценности награды.",
+                "en": "The final tactile phrase. Role: Feedback. Features: Rich tactility. Input: status. Rule: A short composition ends a scene or repeats mastered signals in a new order. Application: Level finale, arc completion, reward. Limitations: Do not present the length or strength of the effect as a mandatory indicator of the value of the reward."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-multi",
+      "section": "section-1",
+      "title": {
+        "ru": "Мультиплеер и социальное взаимодействие",
+        "en": "Multiplayer and social interaction"
+      },
+      "description": {
+        "ru": "Паттерны передают локальные роли, команды и моменты совместных действий.",
+        "en": "Patterns convey local roles, commands and moments of joint action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-multi-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h101",
+              "text": {
+                "ru": "Скрытая роль. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Приватный паттерн сообщает роль игроку, который затем действует по её правилам. Применение: Мафия, шпион, асимметричная настольная игра. Ограничения: Вибромотор может быть слышен окружающим; секретность не гарантируется.",
+                "en": "Hidden role. Role: Mechanics. Features: Basic impulses. Input: network, touch. Rule: The private pattern communicates the role to the player, who then acts according to its rules. Application: Mafia, spy, asymmetrical board game. Limitations: The vibration motor can be heard by others; privacy is not guaranteed."
+              }
+            },
+            {
+              "id": "variant-h102",
+              "text": {
+                "ru": "Оператор и исполнитель. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Один участник получает вибрационный код, другой видит инструкцию; они договариваются, как решить задачу. Применение: Кооперативное разминирование, коммуникационный пазл. Ограничения: Сигнал служит игровой асимметрии; связь между телефонами обеспечивает сеть.",
+                "en": "Operator and performer. Role: Mechanics. Features: Basic impulses. Input: network, touch. Rule: One participant receives a vibration code, the other sees instructions; they agree on how to solve the problem. Application: Cooperative demining, communication puzzle. Limitations: Signal serves game asymmetry; communication between phones is provided by the network..."
+              }
+            },
+            {
+              "id": "variant-h103",
+              "text": {
+                "ru": "Одновременное нажатие. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Общий тактильный отсчёт помогает нескольким игрокам нажать в одном окне. Применение: Ритуал, командный запуск, синхронный удар. Ограничения: Использовать общее запланированное время и допуск, а не сравнивать только время прихода сетевых пакетов.",
+                "en": "Simultaneous pressing. Role: Mechanics. Features: Basic impulses. Input: network, touch. Rule: A common tactile count helps multiple players click in the same window. Application: Ritual, team launch, synchronized strike. Limitations: Use the total scheduled time and tolerance, and do not compare only the arrival time of network packets."
+              }
+            },
+            {
+              "id": "variant-h104",
+              "text": {
+                "ru": "Передача эстафеты. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: После действия одного игрока следующий телефон получает паттерн очереди; задержка передачи влияет на результат. Применение: Командная цепочка, эстафета, совместная музыка. Ограничения: Ввести подтверждение получения и обработку разрыва соединения.",
+                "en": "Passing the baton. Role: Mechanics. Features: Basic impulses. Input: network, touch. Rule: After one player's action, the next phone receives the queue pattern; transmission delay affects the result. Application: Chain of command, relay race, joint music. Limitations: Introduce receipt acknowledgment and connection disconnection handling."
+              }
+            },
+            {
+              "id": "variant-h105",
+              "text": {
+                "ru": "Тактильный пинг. Роль: Применение. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Игрок отправляет короткий условный сигнал внимания или готовности; получатель подтверждает его. Применение: Кооператив, тихая командная связь. Ограничения: Ограничивать частоту и дать отключение входящих сигналов от других участников.",
+                "en": "Tactile ping. Role: Application. Features: Basic impulses. Input: network, touch. Rule: The player sends a short conditioned signal of attention or readiness; the recipient confirms it. Application: Co-op, silent team communication. Limitations: Limit the frequency and allow incoming signals from other participants to be turned off."
+              }
+            },
+            {
+              "id": "variant-h106",
+              "text": {
+                "ru": "Пароль рукопожатия. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, сеть. Правило: Участники сверяют заранее выученный ритм и решают, можно ли доверять персонажу или продолжить сцену. Применение: Социальная дедукция, секретная встреча в игре. Ограничения: Это игровой пароль; не использовать как реальную криптографическую аутентификацию.",
+                "en": "Handshake password. Role: Mechanics. Features: Basic impulses. Input: touch, network. Rule: Participants check the previously learned rhythm and decide whether to trust the character or continue the scene. Application: Social deduction, secret meeting in the game. Restrictions: This is the game password; do not use as real cryptographic authentication."
+              }
+            },
+            {
+              "id": "variant-h107",
+              "text": {
+                "ru": "Асимметричная информация об опасности. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть. Правило: Только один участник ощущает предвестник атаки и должен вовремя предупредить остальных. Применение: Командный босс, капитан и экипаж. Ограничения: Сеть и задержка восприятия входят в окно предупреждения.",
+                "en": "Asymmetrical hazard information. Role: Mechanics. Features: Basic impulses. Input: network. Rule: Only one member senses the precursor of an attack and must warn the others in time. Application: Team boss, captain and crew. Limitations: Network and perception delay are included in the warning window."
+              }
+            },
+            {
+              "id": "variant-h108",
+              "text": {
+                "ru": "Круговая последовательность. Роль: Механика. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Сигнал переходит между телефонами по порядку; участники угадывают следующего или меняют направление. Применение: Тактильный круг, вечеринка, игра на внимание. Ограничения: Порядок задаёт приложение; через воздух мотор сигнал другому телефону не передаёт.",
+                "en": "Circular sequence. Role: Mechanics. Features: Basic impulses. Input: network, touch. Rule: The signal passes between phones in order; participants guess the next one or change direction. Application: Tactile circle, party, attention game. Limitations: The order is determined by the application; The motor does not transmit a signal through the air to another phone."
+              }
+            },
+            {
+              "id": "variant-h109",
+              "text": {
+                "ru": "Тактильное сочинение вдвоём. Роль: Применение. Возможности: Базовые импульсы. Ввод: сеть, касание. Правило: Каждый добавляет импульсы к общей фразе, которая воспроизводится на устройствах участников. Применение: Совместная музыка, открытка, творческая игра. Ограничения: Ограничить длину фразы и предусмотреть локальное воспроизведение при сетевой задержке.",
+                "en": "Tactile essay for two. Role: Application. Features: Basic impulses. Input: network, touch. Rule: Everyone adds pulses to a common phrase that is played on the participants' devices. Application: Collaborative music, greeting card, creative play. Limitations: Limit the length of the phrase and allow for local playback when network latency occurs."
+              }
+            },
+            {
+              "id": "variant-h110",
+              "text": {
+                "ru": "Локальный телефон-эстафета. Роль: Механика. Возможности: Базовые импульсы. Ввод: касание, датчики. Правило: Участники передают один телефон; полученный сигнал требует передать его дальше или выполнить действие. Применение: Горячая картошка, party game, очередность. Ограничения: Передачу подтверждают касанием или датчиками; держать устройство в руках без бросков.",
+                "en": "Local telephone relay. Role: Mechanics. Features: Basic impulses. Input: touch, sensors. Rule: Participants hand over one phone; the received signal requires passing it on or performing an action. Application: Hot potato, party game, turn. Limitations: Transmission is confirmed by touch or sensors; hold the device in your hands without throwing..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-sensors",
+      "section": "section-1",
+      "title": {
+        "ru": "Движение телефона, сенсоры и AR",
+        "en": "Phone movement, sensors and AR"
+      },
+      "description": {
+        "ru": "Ввод получают отдельные сенсоры; вибрация сообщает результат или помогает корректировать движение.",
+        "en": "Individual sensors receive input; vibration communicates the result or helps correct movement."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-sensors-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h111",
+              "text": {
+                "ru": "Наклонный лабиринт. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: Игрок наклоняет телефон, а столкновения виртуального шарика и попадание в лунку отмечаются импульсами. Применение: Лабиринт, баланс, физическая головоломка. Ограничения: Нужна оценка ориентации; мотор не является датчиком наклона.",
+                "en": "Sloping labyrinth. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: The player tilts the phone, and collisions of the virtual ball and entering the hole are marked by impulses. Application: Maze, balance, physics puzzle. Limitations: Requires orientation assessment; The motor is not a tilt sensor."
+              }
+            },
+            {
+              "id": "variant-h112",
+              "text": {
+                "ru": "Тактильный горизонт. Роль: Применение. Возможности: Базовые импульсы. Ввод: датчики. Правило: Импульс сообщает о выравнивании телефона; отдельный код обозначает выход за допуск. Применение: Виртуальный уровень, учебный прибор, композиция кадра. Ограничения: Точность зависит от калибровки датчиков; вибрация может мешать съёмке в этот момент.",
+                "en": "Tactile horizon. Role: Application. Features: Basic impulses. Enter: sensors. Rule: The pulse reports the phone's alignment; a separate code indicates an out of tolerance. Application: Virtual level, educational device, frame composition. Limitations: Accuracy depends on sensor calibration; Vibration may interfere with shooting at this moment."
+              }
+            },
+            {
+              "id": "variant-h113",
+              "text": {
+                "ru": "Поворот к цели. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: Игрок вращает телефон до сигнала попадания в нужный угол, затем фиксирует положение. Применение: Антенна, замок ориентации, поиск направления. Ограничения: Опорный угол и дрейф определяются системой ориентации.",
+                "en": "Turn to the goal. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: The player rotates the phone until the signal hits the desired angle, then fixes the position. Application: Antenna, orientation lock, direction search. Limitations: The reference angle and drift are determined by the orientation system."
+              }
+            },
+            {
+              "id": "variant-h114",
+              "text": {
+                "ru": "Встряхивание с обратной связью. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: Шейки телефона заряжают виртуальный ресурс; импульсы отмечают засчитанные движения и достижение порога. Применение: Фонарик, шейкер, энергия артефакта. Ограничения: Фильтровать собственную вибрацию устройства; задавать умеренную амплитуду движения.",
+                "en": "Shaking with feedback. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: Phone necks charge the virtual resource; pulses mark counted movements and reaching the threshold. Application: Flashlight, shaker, artifact energy. Limitations: Filter the device’s own vibration; set a moderate range of motion."
+              }
+            },
+            {
+              "id": "variant-h115",
+              "text": {
+                "ru": "Равномерное покачивание. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: Сигналы показывают, насколько движение попадает в нужный ритм; игрок сглаживает траекторию. Применение: Укачивание виртуального существа, качели, баланс. Ограничения: Оцениваются данные сенсоров; размах и темп подбирают под удобный хват.",
+                "en": "Uniform rocking. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: Signals show how much the movement falls into the desired rhythm; the player smoothes the trajectory. Application: Rocking a virtual creature, swing, balance. Limitations: Sensor data is evaluated; the swing and tempo are adjusted to suit the comfortable grip."
+              }
+            },
+            {
+              "id": "variant-h116",
+              "text": {
+                "ru": "Плавная переноска. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: При резких ускорениях телефон выдаёт предупреждение; цель требует перенести виртуальный хрупкий груз ровно. Применение: Скрытная доставка, перенос яйца, обучение контролю движения. Ограничения: Вводить паузу или компенсацию после импульса, чтобы мотор не создавал ложную ошибку.",
+                "en": "Smooth carrying. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: During sudden acceleration, the phone issues a warning; the goal requires moving a virtual fragile load smoothly. Application: Covert delivery, egg transfer, learning to control movement. Limitations: Introduce a pause or compensation after the impulse so that the motor does not create a false error."
+              }
+            },
+            {
+              "id": "variant-h117",
+              "text": {
+                "ru": "Постукивание по корпусу. Роль: Механика. Возможности: Базовые импульсы. Ввод: датчики. Правило: Приложение распознаёт условленный стук и отвечает вибрацией; последовательность стуков управляет действием. Применение: Ритмический ввод, ответ персонажу, игра одной рукой. Ограничения: Надёжность зависит от устройства; пользовательский стук и собственный мотор нужно различать.",
+                "en": "Tapping on the body. Role: Mechanics. Features: Basic impulses. Enter: sensors. Rule: The application recognizes the specified knock and responds with vibration; a sequence of knocks controls the action. Applications: Rhythmic input, response to a character, one-handed play. Limitations: Reliability varies by device; custom knock and your own motor need to be distinguished..."
+              }
+            },
+            {
+              "id": "variant-h118",
+              "text": {
+                "ru": "Голос с тактильным результатом. Роль: Механика. Возможности: Базовые импульсы. Ввод: микрофон. Правило: При достижении заданной громкости, темпа или распознанной команды возникает сигнал; игрок корректирует голос. Применение: Голосовая игра, управление заклинанием, речевой ритм. Ограничения: Микрофон и алгоритм распознавания дают ввод; вибрация может создавать акустические помехи.",
+                "en": "Voice with tactile results. Role: Mechanics. Features: Basic impulses. Input: microphone. Rule: When a specified volume, tempo or recognized command is reached, a signal is generated; player adjusts voice. Application: Voice play, spell control, speech rhythm. Limitations: Microphone and recognition algorithm provide input; Vibration can create acoustic interference."
+              }
+            },
+            {
+              "id": "variant-h119",
+              "text": {
+                "ru": "AR-контакт. Роль: Обратная связь. Возможности: Базовые импульсы. Ввод: камера. Правило: Тактильный импульс возникает при подтверждённом пересечении луча, касании или подборе виртуального AR-объекта. Применение: AR-конструктор, музейный объект, настольная сцена. Ограничения: Возможны задержки трекинга; не вибрировать так, чтобы мешать устойчивости камеры.",
+                "en": "AR contact. Role: Feedback. Features: Basic impulses. Enter: camera. Rule: A tactile impulse occurs when a beam is confirmed to cross, touch or pick up a virtual AR object. Application: AR constructor, museum object, tabletop scene. Limitations: Tracking delays are possible; Do not vibrate in such a way as to interfere with the stability of the camera."
+              }
+            },
+            {
+              "id": "variant-h120",
+              "text": {
+                "ru": "Шаги и тактильная цель. Роль: Применение. Возможности: Базовые импульсы. Ввод: датчики. Правило: Приложение сравнивает распознанные шаги с заданным темпом и подаёт редкую корректирующую подсказку. Применение: Ритмичная прогулка, игровая ходьба, эксплоринг. Ограничения: Нужен источник событий шага; телефон может находиться в кармане, где сигнал ощущается иначе.",
+                "en": "Steps and tactile aim. Role: Application. Features: Basic impulses. Enter: sensors. Rule: The application compares recognized steps with a given pace and provides a rare corrective hint. Application: Rhythmic walking, play walking, exploring. Limitations: Requires a source of step events; The phone may be in your pocket, where the signal is felt differently."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-accessibility",
+      "section": "section-1",
+      "title": {
+        "ru": "Доступность и взаимодействие без взгляда",
+        "en": "Accessibility and interaction without looking"
+      },
+      "description": {
+        "ru": "Сигнал дополняет доступный интерфейс; пригодность проверяют с конкретными пользователями.",
+        "en": "The signal complements the available interface; suitability is checked with specific users."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-accessibility-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h121",
+              "text": {
+                "ru": "Дублирование значимых звуков. Роль: Применение. Возможности: Базовые импульсы. Ввод: состояние. Правило: События вроде таймера, попадания или звонка получают тактильный эквивалент. Применение: Пользователи с нарушением слуха, игра без звука. Ограничения: Не все звуки стоит кодировать; сохранить подписи и визуальные индикаторы.",
+                "en": "Duplication of significant sounds. Role: Application. Features: Basic impulses. Input: status. Rule: Events like a timer, hit, or bell get a tactile equivalent. Application: Hearing impaired users, playing without sound. Limitations: Not all sounds are worth encoding; save captions and visual indicators."
+              }
+            },
+            {
+              "id": "variant-h122",
+              "text": {
+                "ru": "Тактильное подтверждение с диктором. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Импульс подтверждает фокус или действие, пока экранный диктор сообщает содержание. Применение: Доступные меню, формы, инвентарь. Ограничения: Не перебивать системные жесты и собственную обратную связь средств доступности.",
+                "en": "Tactile confirmation with the announcer. Role: Application. Features: Basic impulses. Input: touch. Rule: Impulse confirms focus or action while narrator communicates content. Application: Accessible menus, forms, inventory. Limitations: Do not override system gestures or accessibility tools' own feedback."
+              }
+            },
+            {
+              "id": "variant-h123",
+              "text": {
+                "ru": "Нахождение виртуальных кнопок. Роль: Применение. Возможности: Базовые импульсы. Ввод: перетаскивание. Правило: Исследование экрана вызывает сигнал входа в активную область; подтверждающее действие выполняется отдельно. Применение: Крупные игровые органы управления, вспомогательный режим. Ограничения: Человек должен понимать название и назначение найденной области другим каналом.",
+                "en": "Finding virtual buttons. Role: Application. Features: Basic impulses. Input: drag and drop. Rule: Screen exploration triggers an active region entry signal; the confirming action is performed separately. Application: Large game controls, auxiliary mode. Limitations: A person must understand the name and purpose of the found area by another channel."
+              }
+            },
+            {
+              "id": "variant-h124",
+              "text": {
+                "ru": "Обученные команды без зрения. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Небольшой словарь ритмов обозначает команды, а пользователь подтверждает или отменяет действие. Применение: Аудиоигра, краткая навигация, интерфейс без постоянного взгляда. Ограничения: Провести обучение и дать повтор; не предполагать знание кодов заранее.",
+                "en": "Trained teams without vision. Role: Application. Features: Basic impulses. Input: touch. Rule: A small dictionary of rhythms indicates commands, and the user confirms or cancels the action. Application: Audio game, short navigation, interface without constant glance. Limitations: Provide training and give repetition; do not assume knowledge of the codes in advance."
+              }
+            },
+            {
+              "id": "variant-h125",
+              "text": {
+                "ru": "Пошаговый тактильный маршрут. Роль: Применение. Возможности: Базовые импульсы. Ввод: геоданные. Правило: В подходящих точках приложение сообщает следующий манёвр и запрашивает подтверждение. Применение: Ориентация в игре, доступный маршрут в контролируемой среде. Ограничения: Реальный маршрут требует надёжного позиционирования и других каналов ориентации.",
+                "en": "Step-by-step tactile route. Role: Application. Features: Basic impulses. Input: geodata. Rule: At suitable points, the application reports the next maneuver and asks for confirmation. Application: Orientation in a game, an accessible route in a controlled environment. Limitations: A real route requires reliable positioning and other orientation channels."
+              }
+            },
+            {
+              "id": "variant-h126",
+              "text": {
+                "ru": "Сигнал потери управления. Роль: Применение. Возможности: Базовые импульсы. Ввод: состояние. Правило: Особый паттерн сообщает о потере фокуса, соединения, трекинга или захвата объекта. Применение: Доступные редакторы, удалённое управление, AR. Ограничения: После сбоя давать ясный путь восстановления, а не только вибрацию.",
+                "en": "Loss of control signal. Role: Application. Features: Basic impulses. Input: status. Rule: A specific pattern indicates loss of focus, connection, tracking or capture of an object. Application: Accessible editors, remote control, AR. Limitations: After a failure, provide a clear recovery path, not just vibration."
+              }
+            },
+            {
+              "id": "variant-h127",
+              "text": {
+                "ru": "Персональная калибровка. Роль: Применение. Возможности: Богатая тактильность. Ввод: касание. Правило: Пользователь выбирает комфортный уровень и подтверждает, какие паттерны различимы; приложение адаптирует словарь. Применение: Игры с важными тактильными подсказками. Ограничения: Это настройка интерфейса; она не измеряет медицинскую норму чувствительности.",
+                "en": "Personal calibration. Role: Application. Features: Rich tactility. Input: touch. Rule: The user selects a comfort level and confirms which patterns are discernible; the application adapts the dictionary. Application: Games with important tactile cues. Limitations: This is an interface setting; it does not measure the medical standard of sensitivity."
+              }
+            },
+            {
+              "id": "variant-h128",
+              "text": {
+                "ru": "Адаптация к хвату и контексту. Роль: Применение. Возможности: Базовые импульсы. Ввод: настройка, датчики. Правило: Пользователь выбирает профиль для руки или кармана; меняются повторения и длительность сигналов. Применение: Прогулка, использование одной рукой, разные чехлы. Ограничения: Автоопределение контекста ненадёжно без проверки; сохранять ручной выбор.",
+                "en": "Adaptation to grip and context. Role: Application. Features: Basic impulses. Input: setup, sensors. Rule: The user selects a profile for the hand or pocket; repetitions and duration of signals vary. Application: Walking, one-handed use, different cases. Limitations: Auto-detecting context is unreliable without verification; save manual selection."
+              }
+            },
+            {
+              "id": "variant-h129",
+              "text": {
+                "ru": "Очередь важных сигналов. Роль: Применение. Возможности: Базовые импульсы. Ввод: состояние. Правило: При нескольких событиях приложение сначала передаёт самое важное, затем остальные с разделителями. Применение: Доступная игра, навигатор, многособытийный интерфейс. Ограничения: Нельзя рассчитывать, что пользователь расшифрует физически наложенные паттерны.",
+                "en": "Queue of important signals. Role: Application. Features: Basic impulses. Input: status. Rule: When there are several events, the application first transmits the most important one, then the rest with delimiters. Application: Accessible game, navigator, multi-event interface. Limitations: The user cannot be expected to decipher physically superimposed patterns."
+              }
+            },
+            {
+              "id": "variant-h130",
+              "text": {
+                "ru": "Равнозначный альтернативный режим. Роль: Применение. Возможности: Базовые импульсы. Ввод: настройка. Правило: При отключении вибрации ту же игровую информацию передают звук, текст, контрастные метки или иной ввод. Применение: Доступность, устройства без мотора, личные предпочтения. Ограничения: Сохранять содержание подсказок и честные временные окна, а не только визуальный эффект.",
+                "en": "Equivalent alternative mode. Role: Application. Features: Basic impulses. Input: setting. Rule: When vibration is turned off, the same game information is conveyed by sound, text, contrast marks or other input. Application: Accessibility, non-motorized devices, personal preference. Limitations: Keep hint content and fair time windows, not just visual effect."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-utility",
+      "section": "section-1",
+      "title": {
+        "ru": "Повседневные задачи и продуктивность",
+        "en": "Daily tasks and productivity"
+      },
+      "description": {
+        "ru": "Сигнал экономит взгляд на экран и помогает заметить состояние действия.",
+        "en": "The signal saves you from looking at the screen and helps you notice the state of the action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-utility-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h131",
+              "text": {
+                "ru": "Уведомление по категории. Роль: Применение. Возможности: Базовые импульсы. Ввод: уведомления. Правило: Разные события получают несколько различимых паттернов, позволяя решить, нужно ли смотреть на экран. Применение: Звонок, сообщение, напоминание, событие задачи. Ограничения: Фоновые уведомления используют системные механизмы; настройки пользователя имеют приоритет.",
+                "en": "Notification by category. Role: Application. Features: Basic impulses. Enter: notifications. Rule: Different events receive several distinct patterns, allowing you to decide whether to look at the screen. Application: Call, message, reminder, task event. Limitations: Background notifications use system mechanisms; User settings take precedence."
+              }
+            },
+            {
+              "id": "variant-h132",
+              "text": {
+                "ru": "Тихий таймер. Роль: Применение. Возможности: Базовые импульсы. Ввод: таймер. Правило: По окончании интервала возникает короткая заметная серия; повтор возможен до подтверждения. Применение: Кухня, фокус-сессия, выступление. Ограничения: Не обещать полную тишину: мотор может быть слышен, особенно на столе.",
+                "en": "Quiet timer. Role: Application. Features: Basic impulses. Input: timer. Rule: At the end of the interval, a short noticeable series occurs; repeat is possible until confirmation. Application: Kitchen, focus session, performance. Limitations: Do not promise complete silence: the motor can be heard, especially on the table."
+              }
+            },
+            {
+              "id": "variant-h133",
+              "text": {
+                "ru": "Подсказки докладчику. Роль: Применение. Возможности: Базовые импульсы. Ввод: таймер. Правило: Заранее оговорённые серии отмечают остаток времени и переход между частями выступления. Применение: Репетиция, интервью, презентация. Ограничения: Паттерны планируют до выступления; сигналы не должны требовать сложного счёта.",
+                "en": "Presenter tips. Role: Application. Features: Basic impulses. Input: timer. Rule: Pre-arranged series mark the remainder of the time and transition between parts of the performance. Application: Rehearsal, interview, presentation. Limitations: Patterns are planned before the performance; signals should not require complex calculations."
+              }
+            },
+            {
+              "id": "variant-h134",
+              "text": {
+                "ru": "Интервальный цикл. Роль: Применение. Возможности: Базовые импульсы. Ввод: таймер. Правило: Разные серии обозначают работу, отдых и конец очередного цикла. Применение: Помодоро, бытовые задачи, игровые тренировки. Ограничения: Для работы при заблокированном экране нужна проверка платформенного сценария.",
+                "en": "Interval cycle. Role: Application. Features: Basic impulses. Input: timer. Rule: Different series indicate work, rest and the end of the next cycle. Application: Pomodoro, household tasks, game training. Limitations: To work with a locked screen, you need to check the platform script."
+              }
+            },
+            {
+              "id": "variant-h135",
+              "text": {
+                "ru": "Обратная связь ввода текста. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Короткие отклики сопровождают ввод, удаление или принятие автозамены. Применение: Клавиатура, короткая форма, кодовый ввод. Ограничения: Частые импульсы могут утомлять; соблюдать системные настройки клавиатуры.",
+                "en": "Text input feedback. Role: Application. Features: Basic impulses. Input: touch. Rule: Short responses accompany input, deletion, or acceptance of autocorrect. Application: Keyboard, short form, code input. Limitations: Frequent impulses can be tiring; follow the system keyboard settings."
+              }
+            },
+            {
+              "id": "variant-h136",
+              "text": {
+                "ru": "Подтверждение сканирования. Роль: Применение. Возможности: Базовые импульсы. Ввод: камера, NFC. Правило: Успешное чтение кода или метки вызывает импульс, позволяя переходить к следующему объекту. Применение: Склад, билеты, инвентаризация, коллекции. Ограничения: Сигнал чтения не означает успешную оплату или отправку данных без отдельного подтверждения.",
+                "en": "Scan confirmation. Role: Application. Features: Basic impulses. Input: camera, NFC. Rule: Successful reading of a code or tag triggers a pulse, allowing you to move on to the next object. Application: Warehouse, tickets, inventory, collections. Limitations: A read signal does not mean successful payment or sending of data without separate confirmation."
+              }
+            },
+            {
+              "id": "variant-h137",
+              "text": {
+                "ru": "Достижение целевого значения. Роль: Применение. Возможности: Базовые импульсы. Ввод: перетаскивание, данные. Правило: Импульс сообщает, что ручная настройка достигла заданного значения или диапазона. Применение: Выдержка, размер, число повторений, аудиопараметр. Ограничения: Источник значения должен быть достоверным; не путать настройку с реальным измерением.",
+                "en": "Achieving the target value. Role: Application. Features: Basic impulses. Input: drag and drop, data. Rule: A pulse indicates that the manual tuning has reached a specified value or range. Application: Shutter speed, size, number of repetitions, audio parameter. Limitations: The source of the value must be reliable; Do not confuse setting with real measurement."
+              }
+            },
+            {
+              "id": "variant-h138",
+              "text": {
+                "ru": "Переход этапа инструкции. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание, таймер. Правило: Короткий сигнал отмечает завершение шага и готовность следующего. Применение: Рецепт, сборка, учебный процесс. Ограничения: Автоматический переход возможен только при подтверждённом событии или понятном таймере.",
+                "en": "Transition to the instruction stage. Role: Application. Features: Basic impulses. Input: touch, timer. Rule: A short signal marks the completion of a step and the readiness of the next one. Application: Recipe, assembly, educational process. Limitations: Automatic transition is only possible with a confirmed event or an understandable timer."
+              }
+            },
+            {
+              "id": "variant-h139",
+              "text": {
+                "ru": "Тактильная заметка в записи. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Импульс подтверждает, что метка добавлена к аудио или видео, не требуя длительного взгляда. Применение: Интервью, полевые записи, закладки. Ограничения: Вибрация может попасть в микрофон или дрогнуть в кадре; проверить сценарий записи.",
+                "en": "Tactile note in the recording. Role: Application. Features: Basic impulses. Input: touch. Rule: A pulse confirms that a mark has been added to audio or video without requiring a long glance. Applications: Interviews, field recordings, bookmarks. Limitations: Vibration may enter the microphone or shake the frame; check the recording script."
+              }
+            },
+            {
+              "id": "variant-h140",
+              "text": {
+                "ru": "Напоминание о состоянии. Роль: Применение. Возможности: Базовые импульсы. Ввод: состояние. Правило: Редкий сигнал сообщает о реально изменившемся состоянии: соединение потеряно, устройство готово, задача завершена. Применение: Удалённое управление, подключение аксессуара, длительная операция. Ограничения: Не использовать частые повторения для событий, на которые человек сейчас не может повлиять.",
+                "en": "Status reminder. Role: Application. Features: Basic impulses. Input: status. Rule: A rare signal indicates a really changed state: the connection is lost, the device is ready, the task is completed. Application: Remote control, connecting an accessory, long-term operation. Limitations: Do not use frequent repetitions for events that a person cannot currently influence."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-creative",
+      "section": "section-1",
+      "title": {
+        "ru": "Творчество, обучение ритму и расслабление",
+        "en": "Creativity, learning rhythm and relaxation"
+      },
+      "description": {
+        "ru": "Здесь важны выразительность и удобство, а не заявления о лечебном эффекте.",
+        "en": "Expressiveness and convenience are important here, not claims of therapeutic effect."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-creative-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h141",
+              "text": {
+                "ru": "Тактильная дорожка к музыке. Роль: Применение. Возможности: Богатая тактильность. Ввод: аудиоданные. Правило: Удары и выбранные акценты музыкальной дорожки получают синхронные вибрационные события. Применение: Музыкальный плеер, интерактивный клип, ритм-игра. Ограничения: Лучше отбирать значимые события; прямое копирование всех звуков превращается в гул.",
+                "en": "Tactile path to music. Role: Application. Features: Rich tactility. Input: audio data. Rule: Beats and selected accents of the music track receive synchronous vibration events. Application: Music player, interactive video clip, rhythm game. Limitations: It is better to select significant events; direct copying of all sounds turns into hum."
+              }
+            },
+            {
+              "id": "variant-h142",
+              "text": {
+                "ru": "Акценты фильма или ролика. Роль: Применение. Возможности: Богатая тактильность. Ввод: видеоданные. Правило: Автор отмечает моменты, которые сопровождаются коротким тактильным событием. Применение: Интерактивное кино, трейлер, обучающий ролик. Ограничения: Нужна синхронизация; это авторская тактильная дорожка, не автоматическая точная передача сцены.",
+                "en": "Accents of the film or video. Role: Application. Features: Rich tactility. Input: video data. Rule: The author marks moments that are accompanied by a short tactile event. Application: Interactive cinema, trailer, training video. Limitations: Synchronization is required; This is an author's tactile track, not an automatic accurate rendering of the scene."
+              }
+            },
+            {
+              "id": "variant-h143",
+              "text": {
+                "ru": "Тактильный секвенсор. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Пользователь расставляет импульсы и паузы на временной сетке, затем воспроизводит композицию. Применение: Музыкальный инструмент, редактор паттернов, прототипирование. Ограничения: Экспортировать семантику и тайминги; устройства воспроизводят рисунок по-разному.",
+                "en": "Tactile sequencer. Role: Application. Features: Basic impulses. Input: touch. Rule: The user places pulses and pauses on a time grid, then plays the composition. Application: Musical instrument, pattern editor, prototyping. Limitations: Export semantics and timings; devices reproduce the drawing differently."
+              }
+            },
+            {
+              "id": "variant-h144",
+              "text": {
+                "ru": "Вибрационная открытка. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание, сеть. Правило: Автор записывает короткий ритмический жест, а получатель по желанию воспроизводит его. Применение: Личное сообщение, поздравление, творческий обмен. Ограничения: Воспроизведение должно запускаться осознанно и допускать отключение.",
+                "en": "Vibration card. Role: Application. Features: Basic impulses. Input: touch, network. Rule: The author records a short rhythmic gesture, and the recipient plays it back at will. Application: Personal message, congratulations, creative exchange. Limitations: Playback must be started consciously and allow disconnection."
+              }
+            },
+            {
+              "id": "variant-h145",
+              "text": {
+                "ru": "Тактильная кисть. Роль: Применение. Возможности: Богатая тактильность. Ввод: перетаскивание. Правило: Отклик меняется со скоростью штриха, выбранным инструментом или пересечением границы. Применение: Рисование, каллиграфия в игре, музыкальная живопись. Ограничения: Он создаёт ассоциацию с инструментом, а не фактическую шероховатость поверхности.",
+                "en": "Tactile brush. Role: Application. Features: Rich tactility. Input: drag and drop. Rule: Response changes with stroke speed, selected tool, or boundary crossing. Applications: Drawing, game calligraphy, musical painting. Limitations: It creates an association with the tool rather than the actual surface roughness."
+              }
+            },
+            {
+              "id": "variant-h146",
+              "text": {
+                "ru": "Освоение ритмического рисунка. Роль: Применение. Возможности: Базовые импульсы. Ввод: касание. Правило: Ученик ощущает образец, воспроизводит его и получает различимые сигналы попадания и ошибки. Применение: Музыкальное обучение, длительности нот, метр. Ограничения: Проверять перенос навыка на нужный реальный инструмент отдельно.",
+                "en": "Mastering the rhythmic pattern. Role: Application. Features: Basic impulses. Input: touch. Rule: The student feels the sample, reproduces it and receives distinguishable hit and error signals. Application: Musical training, note durations, meter. Limitations: Test the transfer of the skill to the desired real instrument separately."
+              }
+            },
+            {
+              "id": "variant-h147",
+              "text": {
+                "ru": "Ритм вдоха и выдоха. Роль: Применение. Возможности: Богатая тактильность. Ввод: таймер. Правило: Плавное нарастание и затухание либо два разных паттерна обозначают фазы выбранного комфортного цикла. Применение: Расслабление, короткая пауза, медитативная игра. Ограничения: Без отдельного сенсора приложение не знает реального дыхания; медицинский эффект не заявляется.",
+                "en": "The rhythm of inhalation and exhalation. Role: Application. Features: Rich tactility. Input: timer. Rule: Smooth rise and fall or two different patterns indicate the phases of the selected comfort cycle. Application: Relaxation, short pause, meditative game. Limitations: Without a separate sensor, the application does not know the real breathing; No medical effect is claimed."
+              }
+            },
+            {
+              "id": "variant-h148",
+              "text": {
+                "ru": "Фокус на ощущении. Роль: Применение. Возможности: Базовые импульсы. Ввод: таймер, касание. Правило: Пользователь замечает редкие импульсы и отмечает их касанием без соревновательной оценки. Применение: Упражнение на внимание, спокойная интерактивная сцена. Ограничения: Дать возможность сразу остановить сеанс и настроить длительность.",
+                "en": "Focus on sensation. Role: Application. Features: Basic impulses. Input: timer, touch. Rule: The user notices rare impulses and marks them with a touch without competitive evaluation. Application: Exercise on attention, a calm interactive scene. Limitations: Provide the ability to immediately stop the session and adjust the duration."
+              }
+            },
+            {
+              "id": "variant-h149",
+              "text": {
+                "ru": "Мягкая тактильная игрушка. Роль: Применение. Возможности: Богатая тактильность. Ввод: касание, датчики. Правило: Жесты вызывают комфортные короткие рисунки, а пользователь сам выбирает подходящие отклики. Применение: Виртуальный фиджет, песочница, антистресс-игрушка. Ограничения: Комфорт индивидуален; не выдавать развлекательный инструмент за лечение.",
+                "en": "Soft tactile toy. Role: Application. Features: Rich tactility. Input: touch, sensors. Rule: Gestures evoke comfortable short drawings, and the user chooses the appropriate responses. Application: Virtual fidget, sandbox, anti-stress toy. Limitations: Comfort is individual; Do not pass off an entertainment instrument as treatment."
+              }
+            },
+            {
+              "id": "variant-h150",
+              "text": {
+                "ru": "Сравнение формы сигнала. Роль: Применение. Возможности: Богатая тактильность. Ввод: касание. Правило: Пользователь меняет длительность, ритм, интенсивность и огибающую и сравнивает ощущения попарно. Применение: Обучение haptic design, проверка палитры, редактор эффектов. Ограничения: Различать субъективную оценку и физическое измерение; результаты привязаны к устройству.",
+                "en": "Waveform comparison. Role: Application. Features: Rich tactility. Input: touch. Rule: The user changes the duration, rhythm, intensity and envelope and compares the sensations in pairs. Application: Teaching haptic design, palette checking, effects editor. Limitations: Distinguish between subjective assessment and physical measurement; results are linked to the device."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-experimental",
+      "section": "section-1",
+      "title": {
+        "ru": "Исследования и аппаратные расширения",
+        "en": "Research and hardware extensions"
+      },
+      "description": {
+        "ru": "Эти идеи требуют отдельного прототипа, калибровки или оборудования. Это не штатные возможности любого телефона.",
+        "en": "These ideas require separate prototype, calibration, or equipment. These are not standard features of any phone."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf",
+        "https://rllab.snu.ac.kr/publications/papers/2012_cpsna_vibephone.pdf",
+        "https://www.mdpi.com/1424-8220/14/11/21151",
+        "https://arxiv.org/abs/1410.8153",
+        "https://www.mdpi.com/2076-0825/12/7/289",
+        "https://la.disneyresearch.com/publication/teslatouch-electrovibration-for-touch-surfaces/",
+        "https://www.microsoft.com/en-us/research/publication/touchmover-actuated-3d-touchscreen-with-haptic-feedback/"
+      ],
+      "branches": [
+        {
+          "id": "family-experimental-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-h151",
+              "text": {
+                "ru": "Оценка давления по затуханию. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: датчики. Правило: Мотор возбуждает колебания, а сенсоры измеряют изменение отклика при нажатии; алгоритм оценивает условный уровень давления. Применение: Исследовательский ввод, дополнительная ось управления. Ограничения: Принцип исследован в GripSense; это косвенная оценка на конкретном оборудовании, не универсальный датчик силы.",
+                "en": "Estimation of pressure by attenuation. Role: Experiment. Features: Separate prototype. Enter: sensors. Rule: The motor excites vibrations, and the sensors measure the change in response when pressed; the algorithm estimates the conditional pressure level. Application: Research input, additional control axis. Limitations: Principle studied in GripSense; This is an indirect assessment on specific equipment, not a universal force sensor."
+              }
+            },
+            {
+              "id": "variant-h152",
+              "text": {
+                "ru": "Распознавание поверхности. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: датчики. Правило: Известное возбуждение мотора сопоставляют с измеренным откликом и обученными образцами поверхности. Применение: Прототип определения, на чём лежит телефон, контекстный интерфейс. Ограничения: VibePhone исследует такой подход; нужны обучающие данные и проверка конкретного набора поверхностей.",
+                "en": "Surface recognition. Role: Experiment. Features: Separate prototype. Enter: sensors. Rule: Known motor excitation is matched with measured response and trained surface samples. Application: Prototype for detecting where a phone is lying, contextual interface. Limitations: VibePhone explores this approach; we need training data and testing of a specific set of surfaces."
+              }
+            },
+            {
+              "id": "variant-h153",
+              "text": {
+                "ru": "Обмен через общую поверхность. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: датчики, второй телефон. Правило: Один телефон кодирует сообщение импульсами, другой пытается декодировать колебания поверхности акселерометром. Применение: Исследовательская коммуникация, настольный интерактивный объект. Ограничения: VibeComm показывает принцип; канал медленный и зависит от поверхности и калибровки, не заменяет сеть по умолчанию.",
+                "en": "Exchange through a common surface. Role: Experiment. Features: Separate prototype. Input: sensors, second phone. Rule: One phone encodes a message in pulses, the other tries to decode surface vibrations with an accelerometer. Application: Research communication, desktop interactive object. Limitations: VibeComm shows the principle; the channel is slow and depends on the surface and calibration, does not replace the default network."
+              }
+            },
+            {
+              "id": "variant-h154",
+              "text": {
+                "ru": "Слева и справа двумя телефонами. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: два устройства, сеть. Правило: Два независимо управляемых устройства подают раздельные сигналы, позволяя кодировать сторону телесным расположением. Применение: Эксперимент пространственного наведения, парная интерактивная сцена. Ограничения: Нужны два актуатора на разных местах и синхронизация; один обычный телефон такого канала не гарантирует.",
+                "en": "On the left and right there are two phones. Role: Experiment. Features: Separate prototype. Input: two devices, network. Rule: Two independently controlled devices provide separate signals, allowing side to be encoded by bodily location. Application: Spatial guidance experiment, paired interactive scene. Limitations: Requires two actuators at different locations and synchronization; One regular phone does not guarantee such a channel."
+              }
+            },
+            {
+              "id": "variant-h155",
+              "text": {
+                "ru": "Телефон и носимый актуатор. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: BLE, аксессуар. Правило: Телефон вычисляет событие, а браслет или иной совместимый аксессуар воспроизводит сигнал в заданном месте. Применение: Тренировка, доступная навигация, иммерсивная игра. Ограничения: Требуются протокол аксессуара, разрешения и проверка задержки; это отдельное оборудование.",
+                "en": "Phone and wearable actuator. Role: Experiment. Features: Separate prototype. Input: BLE, accessory. Rule: The phone calculates the event, and the bracelet or other compatible accessory plays the signal at the specified location. Application: Training, accessible navigation, immersive gaming. Limitations: Requires accessory protocol, permissions and latency testing; This is a separate piece of equipment..."
+              }
+            },
+            {
+              "id": "variant-h156",
+              "text": {
+                "ru": "Локальная вибрация экрана. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: специальный дисплей. Правило: Массив актуаторов или особая конструкция создают пространственно различимые области отклика. Применение: Исследовательская панель, тактильная карта, несколько независимых контактов. Ограничения: Стандартный API телефона не создаёт произвольную вибрацию под каждым пальцем.",
+                "en": "Local screen vibration. Role: Experiment. Features: Separate prototype. Input: special display. Rule: An array of actuators or a special design creates spatially distinct regions of response. Application: Research panel, tactile map, multiple independent contacts. Limitations: The standard phone API does not create random vibration under each finger."
+              }
+            },
+            {
+              "id": "variant-h157",
+              "text": {
+                "ru": "Управляемое трение поверхности. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: специальный дисплей. Правило: Специальная электростатическая или ультразвуковая система меняет ощущение скольжения пальца. Применение: Исследование текстур, тактильные границы, интерфейс материалов. Ограничения: Нужна соответствующая поверхность и управляющая электроника; обычного вибромотора недостаточно.",
+                "en": "Controlled surface friction. Role: Experiment. Features: Separate prototype. Input: special display. Rule: A special electrostatic or ultrasonic system changes the feeling of finger sliding. Applications: Texture exploration, tactile boundaries, material interfaces. Limitations: Requires appropriate surface and control electronics; A regular vibration motor is not enough..."
+              }
+            },
+            {
+              "id": "variant-h158",
+              "text": {
+                "ru": "Физическое сопротивление движению. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: механический аксессуар. Правило: Внешний механизм создаёт силу или упор, а телефон управляет сценарием и дополняет его вибрацией. Применение: Тренажёр, манипулятор, симулятор инструмента. Ограничения: Сопротивление создаёт аксессуар; вибрация телефона сама не удерживает палец или руку.",
+                "en": "Physical resistance to movement. Role: Experiment. Features: Separate prototype. Input: mechanical accessory. Rule: An external mechanism creates force or emphasis, and the phone controls the scenario and complements it with vibration. Application: Trainer, manipulator, tool simulator. Limitations: Resistance is created by an accessory; The vibration of the phone itself does not hold the finger or hand."
+              }
+            },
+            {
+              "id": "variant-h159",
+              "text": {
+                "ru": "Движение на вибрационной подставке. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: подставка, датчики. Правило: Концепция: асимметричная опора преобразует колебания корпуса в движение физической конструкции. Применение: Робототехнический эксперимент, физическая игрушка. Ограничения: Принцип bristlebot известен, но работоспособность с целым конкретным телефоном не установлена этим каталогом.",
+                "en": "Movement on a vibration stand. Role: Experiment. Features: Separate prototype. Input: stand, sensors. Rule: Concept: an asymmetrical support converts body vibrations into movement of a physical structure. Application: Robotics experiment, physical toy. Limitations: The bristlebot principle is known, but performance with a whole specific phone is not established by this catalog."
+              }
+            },
+            {
+              "id": "variant-h160",
+              "text": {
+                "ru": "Поверхность как резонатор. Роль: Эксперимент. Возможности: Отдельный прототип. Ввод: подставка, микрофон. Правило: Концепция: импульсы мотора возбуждают стол или корпус объекта, меняя слышимый и ощущаемый отклик. Применение: Интерактивная инсталляция, исследование акустики, материальный интерфейс. Ограничения: Эффект зависит от контакта и материала; управляемый звук и одинаковое ощущение у участников не гарантируются.",
+                "en": "The surface is like a resonator. Role: Experiment. Features: Separate prototype. Input: stand, microphone. Rule: Concept: Motor pulses excite the table or body of an object, changing the audible and felt response. Applications: Interactive installation, acoustics research, material interface. Limitations: Effect depends on contact and material; controlled sound and the same sensation for participants are not guaranteed."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Ограничения",
+        "en": "Restrictions"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Касание, наклон, вращение, встряхивание, голос и местоположение дают отдельные компоненты. Вибромотор обычно является выходом системы.",
+            "en": "Touch, tilt, rotate, shake, voice and location provide individual components. The vibration motor is usually the output of the system."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Базовые паттерны описывают импульсы и паузы; интенсивность, sharpness и огибающие требуют подходящих оборудования и API.",
+            "en": "Basic patterns describe pulses and pauses; intensity, sharpness and envelopes require the right hardware and API."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Темп импульсов не равен физической частоте колебаний. Sharpness не является универсальным регулятором частоты в герцах.",
+            "en": "The rate of impulses is not equal to the physical frequency of oscillations. Sharpness is not a universal hertz control."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Вибрация обычного телефона не даёт физического упора, веса, тяги или управляемого трения. Один актуатор не создаёт независимые произвольные зоны под разными пальцами.",
+            "en": "The vibration of a regular phone does not provide physical support, weight, traction or controlled friction. One actuator does not create independent arbitrary zones under different fingers."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "iOS: системная обратная связь и Core Haptics на поддерживаемых устройствах. Android: системные эффекты и собственные композиции; возможности мотора проверяются отдельно.",
+            "en": "iOS: System Feedback and Core Haptics on supported devices. Android: system effects and custom compositions; The motor capabilities are checked separately."
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Vibration API браузера задаёт интервалы импульсов и пауз. Safari API не поддерживает. Наличие функции или ответ true не доказывают фактического отклика.",
+            "en": "The browser's Vibration API sets the pulse and pause intervals. Safari API is not supported. The presence of a function or a response of true does not prove actual response."
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для фоновых напоминаний нужны предусмотренные платформой механизмы. Работа при заблокированном экране и системных прерываниях проверяется отдельно.",
+            "en": "Background reminders require mechanisms provided by the platform. Operation with a locked screen and system interrupts are tested separately."
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Различимость зависит от модели, чехла, хвата, положения и нагрузки на внимание. Вибрация может мешать микрофону, камере и датчикам.",
+            "en": "Distinction depends on the model, case, grip, position and attention load. Vibration can interfere with the microphone, camera, and sensors."
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Существенные сигналы должны иметь доступную альтернативу, обучение и настройку отключения. Важные одновременные события передаются по приоритету, а не случайным наложением.",
+            "en": "Significant signals must have an accessible alternative, training, and a shutdown setting. Important simultaneous events are transmitted by priority rather than randomly overlapping."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Роли",
+        "en": "Roles"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "M",
+            "en": "M"
+          },
+          "text": {
+            "ru": "Описание: Механика",
+            "en": "Description: Mechanics"
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "F",
+            "en": "F"
+          },
+          "text": {
+            "ru": "Описание: Обратная связь",
+            "en": "Description: Feedback"
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "A",
+            "en": "A"
+          },
+          "text": {
+            "ru": "Описание: Применение",
+            "en": "Description: Application"
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "X",
+            "en": "X"
+          },
+          "text": {
+            "ru": "Описание: Эксперимент",
+            "en": "Description: Experiment"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Возможности",
+        "en": "Possibilities"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "base",
+            "en": "base"
+          },
+          "text": {
+            "ru": "Описание: Базовые импульсы",
+            "en": "Description: Basic pulses"
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "rich",
+            "en": "rich"
+          },
+          "text": {
+            "ru": "Описание: Богатая тактильность",
+            "en": "Description: Rich tactility"
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "exp",
+            "en": "exp"
+          },
+          "text": {
+            "ru": "Описание: Отдельный прототип",
+            "en": "Description: Separate prototype"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Apple: Playing haptics",
+        "en": "Apple: Playing haptics"
+      },
+      "url": "https://developer.apple.com/design/human-interface-guidelines/playing-haptics",
+      "description": {
+        "ru": "Семантика системных паттернов, короткие и непрерывные события, интенсивность, sharpness, отключение и влияние на другие компоненты.",
+        "en": "Semantics of system patterns, short and continuous events, intensity, sharpness, shutdown and influence on other components."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: Core Haptics",
+        "en": "Apple: Core Haptics"
+      },
+      "url": "https://developer.apple.com/documentation/corehaptics",
+      "description": {
+        "ru": "Создание собственных событий, динамических паттернов и синхронизация с аудио на поддерживаемых устройствах.",
+        "en": "Create your own events, dynamic patterns and sync with audio on supported devices."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: параметры в реальном времени",
+        "en": "Apple: Real-time parameters"
+      },
+      "url": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time",
+      "description": {
+        "ru": "Изменение параметров по жесту и управление воспроизведением паттерна.",
+        "en": "Changing parameters by gesture and controlling pattern playback."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: CHHapticEngine.StoppedReason",
+        "en": "Apple: CHHapticEngine.StoppedReason"
+      },
+      "url": "https://developer.apple.com/documentation/corehaptics/chhapticengine/stoppedreason",
+      "description": {
+        "ru": "Прерывания, приостановка приложения и другие причины остановки движка.",
+        "en": "Interrupts, application suspension and other reasons for stopping the engine."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: обратная связь событий",
+        "en": "Android: Event Feedback"
+      },
+      "url": "https://developer.android.com/develop/ui/views/haptics/haptic-feedback",
+      "description": {
+        "ru": "Системная семантика нажатия, подтверждения и отказа; рекомендованные способы вызова и настройки пользователя.",
+        "en": "System semantics of clicking, confirming and refusing; Recommended methods for calling and setting up a user."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: возможности haptics API",
+        "en": "Android: haptics API capabilities"
+      },
+      "url": "https://developer.android.com/develop/ui/views/haptics/haptics-apis",
+      "description": {
+        "ru": "Различия устройств, проверка управления амплитудой и поддерживаемых эффектов, требования к фоновым сценариям.",
+        "en": "Device differences, checking amplitude control and supported effects, background scenario requirements."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: собственные эффекты",
+        "en": "Android: native effects"
+      },
+      "url": "https://developer.android.com/develop/ui/views/haptics/custom-haptic-effects",
+      "description": {
+        "ru": "Композиции и огибающие; продвинутые формы требуют совместимого оборудования и API.",
+        "en": "Compositions and envelopes; advanced forms require compatible hardware and APIs."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: принципы haptic design",
+        "en": "Android: haptic design principles"
+      },
+      "url": "https://developer.android.com/develop/ui/views/haptics/haptics-principles",
+      "description": {
+        "ru": "Чёткая связь события и ощущения, последовательность и комфорт.",
+        "en": "A clear connection between event and sensation, consistency and comfort."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: датчики движения",
+        "en": "Android: motion sensors"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_motion",
+      "description": {
+        "ru": "Источники ввода для наклона, ускорения, встряхивания и вращения.",
+        "en": "Input sources for tilt, acceleration, shake and rotation."
+      }
+    },
+    {
+      "title": {
+        "ru": "MDN: Navigator.vibrate()",
+        "en": "MDN: Navigator.vibrate()"
+      },
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate",
+      "description": {
+        "ru": "В браузере доступны длительности импульсов и пауз; нужна активация пользователем, поддержка ограничена.",
+        "en": "Pulse and pause durations are available in the browser; Requires user activation, limited support."
+      }
+    },
+    {
+      "title": {
+        "ru": "MDN: данные совместимости Vibration API",
+        "en": "MDN: Vibration API Compatibility Data"
+      },
+      "url": "https://github.com/mdn/browser-compat-data/blob/main/api/Navigator.json",
+      "description": {
+        "ru": "В записи vibrate: Safari не поддерживает API, а наличие функции или true не доказывает фактическую вибрацию.",
+        "en": "On the record vibrate: Safari does not support the API, and the presence of the function or true does not prove actual vibration."
+      }
+    },
+    {
+      "title": {
+        "ru": "Yoshida и др., 2023: восприятие при нагрузке",
+        "en": "Yoshida et al., 2023: Perception under load"
+      },
+      "url": "https://arxiv.org/abs/2305.06556",
+      "description": {
+        "ru": "Исследование показывает влияние ходьбы и когнитивной задачи на обнаружение сигналов; универсальные пороги отсюда не следуют.",
+        "en": "The study shows the effects of walking and a cognitive task on signal detection; universal thresholds do not follow from here."
+      }
+    },
+    {
+      "title": {
+        "ru": "GripSense, UIST 2012",
+        "en": "GripSense, UIST 2012"
+      },
+      "url": "https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf",
+      "description": {
+        "ru": "Исследование косвенной оценки давления по реакции устройства на колебания; результаты относятся к описанному прототипу.",
+        "en": "Study of indirect pressure assessment based on the device’s response to vibrations; the results refer to the described prototype."
+      }
+    },
+    {
+      "title": {
+        "ru": "VibePhone: Vibration-Based Surface Recognition, 2012",
+        "en": "VibePhone: Vibration-Based Surface Recognition, 2012"
+      },
+      "url": "https://rllab.snu.ac.kr/publications/papers/2012_cpsna_vibephone.pdf",
+      "description": {
+        "ru": "Исследование распознавания поверхности по вибрационному отклику.",
+        "en": "Study of surface recognition by vibration response."
+      }
+    },
+    {
+      "title": {
+        "ru": "VibeComm, Sensors 2014",
+        "en": "VibeComm, Sensors 2014"
+      },
+      "url": "https://www.mdpi.com/1424-8220/14/11/21151",
+      "description": {
+        "ru": "Исследовательская передача данных через колебания общей поверхности; ограниченная скорость и необходимость калибровки.",
+        "en": "Exploratory data transmission through vibrations of a common surface; limited speed and need for calibration."
+      }
+    },
+    {
+      "title": {
+        "ru": "Bristlebot: теоретический анализ, 2014",
+        "en": "Bristlebot: theoretical analysis, 2014"
+      },
+      "url": "https://arxiv.org/abs/1410.8153",
+      "description": {
+        "ru": "Механический принцип преобразования вибрации в перемещение с помощью опоры; не доказательство работы целого телефона на подставке.",
+        "en": "The mechanical principle of converting vibration into movement using a support; not proof of operation of a whole phone on a stand."
+      }
+    },
+    {
+      "title": {
+        "ru": "Localized haptics: PVDF actuators, 2023",
+        "en": "Localized haptics: PVDF actuators, 2023"
+      },
+      "url": "https://www.mdpi.com/2076-0825/12/7/289",
+      "description": {
+        "ru": "Исследовательская конструкция с несколькими актуаторами для пространственно различимой обратной связи на дисплее.",
+        "en": "An exploratory multi-actuator design for spatially discriminative display feedback."
+      }
+    },
+    {
+      "title": {
+        "ru": "Disney Research: TeslaTouch, 2010",
+        "en": "Disney Research: TeslaTouch, 2010"
+      },
+      "url": "https://la.disneyresearch.com/publication/teslatouch-electrovibration-for-touch-surfaces/",
+      "description": {
+        "ru": "Управляемое электростатическое трение требует специальной поверхности; это иной принцип, чем вибрация корпуса.",
+        "en": "Controlled electrostatic friction requires a special surface; This is a different principle than body vibration."
+      }
+    },
+    {
+      "title": {
+        "ru": "Microsoft Research: TouchMover, 2013",
+        "en": "Microsoft Research: TouchMover, 2013"
+      },
+      "url": "https://www.microsoft.com/en-us/research/publication/touchmover-actuated-3d-touchscreen-with-haptic-feedback/",
+      "description": {
+        "ru": "Пример физической силовой обратной связи с роботизированным дисплеем; не функция обычного телефона.",
+        "en": "Example of physical force feedback with robotic display; not a function of a regular phone."
+      }
+    }
+  ]
+}

@@ -1,0 +1,2107 @@
+{
+  "id": "phone-camera",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Камера телефона",
+    "en": "Phone camera interactions"
+  },
+  "description": {
+    "ru": "Камера телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone camera: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Игры, обучение, творчество и интерактивные приложения. Авторская систематизация игровых правил на базе проверенных технических возможностей. Примеры являются идеями применения, а не заявлениями о выпущенных продуктах.",
+    "en": "Games, learning, creativity and interactive applications. Author's systematization of game rules based on proven technical capabilities. Examples are application ideas and not statements of released products."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-framing",
+      "section": "section-1",
+      "title": {
+        "ru": "Кадрирование и визуальное внимание",
+        "en": "Framing and visual attention"
+      },
+      "description": {
+        "ru": "Что игрок показывает камере и как располагает это в кадре. Положение в изображении не равно положению в комнате. Для автоматической проверки нужен трекинг, маркер или ограниченная сцена.",
+        "en": "What the player shows to the camera and how he places it in the frame. The position in the image is not the same as the position in the room. To automatically check, you need tracking, a marker or a limited scene."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector"
+      ],
+      "branches": [
+        {
+          "id": "family-framing-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-001",
+              "text": {
+                "ru": "Наведение на цель. Действие: Совместить объект с прицелом, чтобы выбрать или активировать его. Применение: Фотоохота, выбор экспоната, сканер улик. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Targeting. Action: Combine an object with the sight to select or activate it. Application: Photo hunting, exhibit selection, evidence scanner. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-002",
+              "text": {
+                "ru": "Удержание в кадре. Действие: Не выпускать цель из заданной области, пока заполняется шкала. Применение: Приручение существа, длительное сканирование, сопровождение. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Staying in frame. Action: Do not let the target leave the specified area until the scale is filled. Application: Taming a creature, long-term scanning, tracking. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-003",
+              "text": {
+                "ru": "Заданный масштаб. Действие: Добиться нужной доли площади кадра, приближая телефон или меняя zoom. Применение: Подготовка снимка, управление зарядом, подбор крупности. Технологии: Анализ изображения.",
+                "en": "Specified scale. Action: Achieve the required portion of the frame area by moving the phone closer or changing the zoom. Application: Preparing the image, managing the charge, selecting the size. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-004",
+              "text": {
+                "ru": "Композиция по шаблону. Действие: Расположить несколько элементов в отмеченных зонах. Применение: Обучение фотографии, рекламная съёмка, головоломки с композицией. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Composition according to a template. Action: Place several elements in the marked areas. Application: Photography training, advertising shooting, composition puzzles. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-005",
+              "text": {
+                "ru": "Совмещение контуров. Действие: Наложить реальный контур на полупрозрачный образец. Применение: Поиск точки съёмки, реконструкция сцены, сборка силуэта. Технологии: Анализ изображения.",
+                "en": "Combination of contours. Action: Apply a real contour to a translucent sample. Application: Search for a shooting point, scene reconstruction, silhouette assembly. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-006",
+              "text": {
+                "ru": "Перспективное совмещение. Действие: Найти ракурс, в котором разнесённые предметы складываются в фигуру. Применение: Анаморфные загадки, иллюзии масштаба, визуальные пароли. Технологии: Анализ изображения.",
+                "en": "Prospective combination. Action: Find the angle in which spaced objects form a figure. Application: Anamorphic riddles, illusions of scale, visual passwords. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-007",
+              "text": {
+                "ru": "Состав кадра. Действие: Показать нужную комбинацию объектов и исключить запрещённые. Применение: Заказы фотографу, визуальные рецепты, сортировка предметов. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Frame composition. Action: Show the desired combination of objects and exclude prohibited ones. Application: Orders for a photographer, visual recipes, sorting objects. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-008",
+              "text": {
+                "ru": "Сканирование сектора. Действие: Последовательно осмотреть части сцены; игра учитывает покрытие. Применение: Поиск пропавшего, обследование комнаты, виртуальная панорама. Технологии: Анализ изображения; Пространственный трекинг AR.",
+                "en": "Scanning the sector. Action: Inspect parts of the scene one by one; the game takes into account coverage. Application: Search for a missing person, room inspection, virtual panorama. Technologies: Image analysis; AR spatial tracking."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-capture-time",
+      "section": "section-1",
+      "title": {
+        "ru": "Момент съёмки и режим записи",
+        "en": "Capture timing and recording modes"
+      },
+      "description": {
+        "ru": "Событием становится получение изображения или отрезка видео. Снимок можно проверять алгоритмом либо использовать как результат творчества. Частота и задержка захвата зависят от устройства.",
+        "en": "An event is the receipt of an image or a segment of video. The picture can be checked by an algorithm or used as a result of creativity. Capture frequency and latency vary by device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup"
+      ],
+      "branches": [
+        {
+          "id": "family-capture-time-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-009",
+              "text": {
+                "ru": "Снимок как действие. Действие: Нажать затвор, чтобы зафиксировать состояние и совершить игровой ход. Применение: Фотоатака, сбор доказательства, коллекционная карточка. Технологии: Захват камеры.",
+                "en": "A photograph as an action. Action: Press the shutter to freeze the state and make a game move. Application: Photo attack, collecting evidence, trading card. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-010",
+              "text": {
+                "ru": "Решающий момент. Действие: Снять кадр, пока цель находится в коротком допустимом состоянии. Применение: Репортаж, фотоохота, ритмическая съёмка. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Decisive moment. Action: Take a frame while the target is in a short acceptable state. Application: Reporting, photo hunting, rhythmic shooting. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-011",
+              "text": {
+                "ru": "Серийная съёмка. Действие: Сделать несколько кадров и выбрать удачный в пределах лимита. Применение: Ловля быстрого события, сравнение дублей, редакторская игра. Технологии: Захват камеры.",
+                "en": "Serial shooting. Action: Take several shots and choose a successful one within the limit. Application: Catching a quick event, comparison of takes, editorial game. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-012",
+              "text": {
+                "ru": "Выдержка наблюдения. Действие: Записывать непрерывно заданное время; разрыв сбрасывает прогресс. Применение: Исследование поведения, слежка в детективе, видеозадание. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Observation excerpt. Action: Record continuously the specified time; the gap resets progress. Application: Behavioral research, detective surveillance, video task. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-013",
+              "text": {
+                "ru": "Отложенный автоспуск. Действие: Запустить таймер и успеть собрать композицию или занять позу. Применение: Групповые задания, кооператив, постановочная фотография. Технологии: Захват камеры.",
+                "en": "Delayed self-timer. Action: Start the timer and have time to assemble a composition or take a pose. Application: Group tasks, cooperative, staged photography. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-014",
+              "text": {
+                "ru": "Событийный затвор. Действие: Камера автоматически фиксирует вход объекта, жест или изменение. Применение: Фотоловушка, автоматизация, причинно-следственные эксперименты. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Event shutter. Action: The camera automatically captures an object's input, gesture or change. Application: Camera trap, automation, cause-and-effect experiments. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-015",
+              "text": {
+                "ru": "Покадровая анимация. Действие: Сдвигать реальные предметы между отдельными снимками. Применение: Stop-motion, оживление игрушек, обучение анимации. Технологии: Захват камеры.",
+                "en": "Stop-motion animation. Action: Move real objects between separate pictures. Application: Stop-motion, bringing toys to life, teaching animation. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-016",
+              "text": {
+                "ru": "Изменение масштаба времени. Действие: Записать процесс и воспроизвести его ускоренно или замедленно. Применение: Наблюдение превращений, анализ трюка, монтажная головоломка. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Changing the time scale. Action: Record the process and play it back quickly or slowly. Application: Observation of transformations, trick analysis, editing puzzle. Technologies: Camera capture; Device capabilities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-camera-controls",
+      "section": "section-1",
+      "title": {
+        "ru": "Оптика и настройки камеры",
+        "en": "Optics and camera settings"
+      },
+      "description": {
+        "ru": "Игрок управляет способом получения изображения. Цифровые эффекты можно имитировать программно. Оптический zoom, ручная выдержка, фокус и выбор объективов доступны не в каждой комбинации камер и API.",
+        "en": "The player controls how the image is obtained. Digital effects can be simulated in software. Optical zoom, bulb exposure, focus and lens selection are not available with every camera and API combination."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developer.android.com/media/camera/camerax/configuration",
+        "https://developer.android.com/media/camera/camera2/multi-camera"
+      ],
+      "branches": [
+        {
+          "id": "family-camera-controls-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-017",
+              "text": {
+                "ru": "Изменение zoom. Действие: Увеличивать или уменьшать изображение для поиска детали или выбора цели. Применение: Виртуальный бинокль, расследование, учебная съёмка. Технологии: Захват камеры.",
+                "en": "Change zoom. Action: Zoom in or out to find a detail or select a target. Application: Virtual binoculars, investigation, training shooting. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-018",
+              "text": {
+                "ru": "Перевод фокуса. Действие: Переключать резкость между ближним и дальним объектом. Применение: Выбор слоя загадки, обучение фокусировке, расшифровка деталей. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Transfer of focus. Action: Switch sharpness between near and far objects. Application: Selecting a layer of the puzzle, learning to focus, deciphering details. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-019",
+              "text": {
+                "ru": "Фокус как параметр. Действие: Вращать регулятор до максимума резкости в выбранной зоне. Применение: Симулятор объектива, настройка прибора, макроквест. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Focus as a parameter. Action: Rotate the knob to maximum sharpness in the selected area. Application: Lens simulator, device setup, macroquest. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-020",
+              "text": {
+                "ru": "Экспозиция. Действие: Менять яркость захвата и искать рабочий диапазон изображения. Применение: Обучение фотографии, восстановление видимой детали, настройка сканера. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Exposition. Action: Change the brightness of the capture and look for the working range of the image. Application: Teaching photography, restoring visible details, setting up the scanner. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-021",
+              "text": {
+                "ru": "Выдержка и смаз. Действие: Подбирать длительность экспозиции под движение. Применение: Заморозка действия, художественный след, фотографический симулятор. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Exposure and lubrication. Action: Select the exposure duration according to the movement. Application: Action freezing, artistic trace, photographic simulator. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-022",
+              "text": {
+                "ru": "Баланс белого. Действие: Согласовать цветовую температуру снимка с эталоном. Применение: Цветовая калибровка, фотошкола, художественные задания. Технологии: Захват камеры; Возможности устройства.",
+                "en": "White balance. Action: Match the color temperature of the image with the standard. Application: Color calibration, photo school, art assignments. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-023",
+              "text": {
+                "ru": "Выбор объектива. Действие: Переключаться между доступными углами обзора и дистанциями фокусировки. Применение: Макропоиск, широкий обзор, задачи на перспективу. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Lens selection. Action: Switch between available viewing angles and focusing distances. Application: Macro search, wide view, perspective tasks. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-024",
+              "text": {
+                "ru": "Вспышка или фонарь. Действие: Включать подсветку, чтобы изменить видимую сцену или запустить игровое правило. Применение: Исследование тёмного макета, проявление отражений, режим сканера. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Flash or flashlight. Action: Turn on the backlight to change the visible scene or run a game rule. Application: Study of a dark layout, development of reflections, scanner mode. Technologies: Camera capture; Device capabilities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-light-color",
+      "section": "section-1",
+      "title": {
+        "ru": "Свет, цвет и тени",
+        "en": "Light, color and shadows"
+      },
+      "description": {
+        "ru": "Из изображения извлекаются простые визуальные величины. Автоэкспозиция и автобаланс белого меняют измерения. Камера без калибровки не заменяет люксметр или колориметр.",
+        "en": "Simple visual quantities are extracted from the image. Auto exposure and auto white balance change the measurements. An uncalibrated camera is not a replacement for a light meter or colorimeter."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developer.android.com/media/camera/camerax/configuration"
+      ],
+      "branches": [
+        {
+          "id": "family-light-color-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-025",
+              "text": {
+                "ru": "Яркость как регулятор. Действие: Подносить к камере светлую или тёмную поверхность для изменения параметра. Применение: Громкость инструмента, энергия существа, настройка виртуального света. Технологии: Анализ изображения.",
+                "en": "Brightness as a regulator. Action: Bring a light or dark surface to the camera to change the parameter. Application: Instrument volume, creature energy, setting virtual light. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-026",
+              "text": {
+                "ru": "Световой порог. Действие: Перейти между освещённой и затемнённой сценой, чтобы переключить состояние. Применение: День и ночь, скрытый мир, световая головоломка. Технологии: Анализ изображения.",
+                "en": "Light threshold. Action: Move between lit and dark scene to switch state. Application: Day and night, hidden world, light puzzle. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-027",
+              "text": {
+                "ru": "Показ цвета. Действие: Поднести цветной предмет; его оттенок задаёт команду или ресурс. Применение: Смешивание красок, цветовые заклинания, обучение цветам. Технологии: Анализ изображения.",
+                "en": "Showing color. Action: Bring a colored object; its shade is determined by a command or resource. Application: Mixing paints, color spells, teaching colors. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-028",
+              "text": {
+                "ru": "Сбор палитры. Действие: Найти в окружении несколько нужных оттенков. Применение: Коллекционирование, творческие прогулки, подбор оформления. Технологии: Анализ изображения.",
+                "en": "Collection of palette. Action: Find several desired shades in your surroundings. Application: Collecting, creative walks, design selection. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-029",
+              "text": {
+                "ru": "Цветовая последовательность. Действие: Показывать цвета в заданном порядке и темпе. Применение: Визуальный код, музыкальный секвенсор, игра на память. Технологии: Анализ изображения.",
+                "en": "Color sequence. Action: Show colors in a given order and tempo. Application: Visual code, music sequencer, memory game. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-030",
+              "text": {
+                "ru": "Световое рисование. Действие: Двигать небольшим источником света; программа накапливает его траекторию. Применение: Рисование в воздухе, руны, создание световых существ. Технологии: Анализ изображения.",
+                "en": "Light drawing. Action: Move a small light source; the program accumulates its trajectory. Application: Drawing in the air, runes, creating light creatures. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-031",
+              "text": {
+                "ru": "Тень как контроллер. Действие: Перемещать или менять тень на подготовленной поверхности. Применение: Театр теней, ловля целей, головоломки с формой. Технологии: Анализ изображения.",
+                "en": "Shadow as a controller. Action: Move or change a shadow on a prepared surface. Application: Shadow theatre, catching targets, shape puzzles. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-032",
+              "text": {
+                "ru": "Направление освещения. Действие: Переставлять источник света и оценивать тени или блики в контролируемой сцене. Применение: Учебная лаборатория, настройка портрета, оптические загадки. Технологии: Анализ изображения; Собственный алгоритм.",
+                "en": "Lighting direction. Action: Rearrange the light source and evaluate shadows or highlights in a controlled scene. Application: Educational laboratory, portrait setup, optical puzzles. Technologies: Image analysis; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-physical-optics",
+      "section": "section-1",
+      "title": {
+        "ru": "Физическое воздействие на изображение",
+        "en": "Physical manipulation of the image"
+      },
+      "description": {
+        "ru": "Игрок меняет не сцену в игре, а путь света к объективу. Затемнение не доказывает касание пальцем. Для зеркал, фильтров и преломления удобнее подготовленные сцены с понятными условиями.",
+        "en": "The player does not change the scene in the game, but the path of light to the lens. Blacking out does not prove finger touching. For mirrors, filters and refraction, prepared scenes with clear conditions are more convenient."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup"
+      ],
+      "branches": [
+        {
+          "id": "family-physical-optics-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-033",
+              "text": {
+                "ru": "Закрыть объектив. Действие: Полностью перекрыть изображение, чтобы спрятаться, переключить мир или поставить паузу. Применение: Хоррор, прятки, тактильная команда. Технологии: Анализ изображения.",
+                "en": "Close the lens. Action: Completely block the image to hide, switch the world or pause. Application: Horror, hide and seek, tactile command. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-034",
+              "text": {
+                "ru": "Частично перекрыть кадр. Действие: Открывать и закрывать области изображения; игра учитывает долю или положение перекрытия. Применение: Шторка, проявление картинки, визуальный регулятор. Технологии: Анализ изображения.",
+                "en": "Partially block the frame. Action: Open and close image areas; the game takes into account the share or position of the overlap. Application: Curtain, picture development, visual controller. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-035",
+              "text": {
+                "ru": "Ритм перекрытий. Действие: Чередовать закрытое и открытое состояние по временному рисунку. Применение: Кодовый замок, ритм-игра, визуальная азбука. Технологии: Анализ изображения.",
+                "en": "The rhythm of the ceilings. Action: Alternate closed and open states according to a temporary pattern. Application: Code lock, rhythm game, visual alphabet. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-036",
+              "text": {
+                "ru": "Цветной фильтр. Действие: Смотреть через безопасную прозрачную цветную плёнку и менять доступный цветовой канал. Применение: Оптические опыты, подготовленные шифры, смена режима мира. Технологии: Анализ изображения; Подготовленный реквизит.",
+                "en": "Color filter. Action: Look through a safe transparent color film and change the available color channel. Application: Optical experiments, prepared ciphers, changing the world mode. Technologies: Image analysis; Prepared props."
+              }
+            },
+            {
+              "id": "variant-cam-037",
+              "text": {
+                "ru": "Зеркальный обзор. Действие: Смотреть на цель через зеркало и управлять отражённым изображением. Применение: Загадки с отражениями, перископ, необычный ракурс. Технологии: Анализ изображения; Подготовленный реквизит.",
+                "en": "Mirror view. Action: Look at the target through the mirror and control the reflected image. Application: Riddles with reflections, periscope, unusual angle. Technologies: Image analysis; Prepared props."
+              }
+            },
+            {
+              "id": "variant-cam-038",
+              "text": {
+                "ru": "Преломляющая среда. Действие: Смотреть через прозрачный предмет и использовать деформацию изображения. Применение: Оптические загадки, художественные эффекты, виртуальная линза. Технологии: Анализ изображения; Подготовленный реквизит.",
+                "en": "Refractive medium. Action: Look through a transparent object and use image deformation. Application: Optical puzzles, artistic effects, virtual lens. Technologies: Image analysis; Prepared props."
+              }
+            },
+            {
+              "id": "variant-cam-039",
+              "text": {
+                "ru": "Физическая апертура. Действие: Смотреть через отверстие или маску и совмещать видимые фрагменты. Применение: Подзорная труба, поиск секрета, восстановление картинки. Технологии: Анализ изображения; Подготовленный реквизит.",
+                "en": "Physical aperture. Action: Look through a hole or mask and combine visible fragments. Application: Spyglass, searching for a secret, image restoration. Technologies: Image analysis; Prepared props."
+              }
+            },
+            {
+              "id": "variant-cam-040",
+              "text": {
+                "ru": "Экранная рекурсия. Действие: Направить камеру на экран с её же изображением и использовать повторяющийся рисунок. Применение: Видеоарт, рекурсивные лабиринты, визуальный синтезатор. Технологии: Анализ изображения; Подготовленный реквизит.",
+                "en": "Screen recursion. Action: Point the camera at the screen with its own image and use a repeating pattern. Application: Video art, recursive labyrinths, visual synthesizer. Technologies: Image analysis; Prepared props."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-motion-2d",
+      "section": "section-1",
+      "title": {
+        "ru": "Движение в плоскости изображения",
+        "en": "Motion in the image plane"
+      },
+      "description": {
+        "ru": "Поток кадров превращается в направления, скорости и траектории. Без дополнительных признаков движение камеры и движение объекта легко перепутать. Нужен неподвижный телефон, маркеры или компенсация движения.",
+        "en": "The flow of frames turns into directions, speeds and trajectories. Without additional cues, camera movement and object movement are easy to confuse. Need a fixed phone, markers or motion compensation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector"
+      ],
+      "branches": [
+        {
+          "id": "family-motion-2d-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-041",
+              "text": {
+                "ru": "Вход в область. Действие: Внести руку или предмет в отмеченную зону для нажатия виртуальной кнопки. Применение: Бесконтактный интерфейс, детская игра, реакция. Технологии: Анализ изображения.",
+                "en": "Entrance to the area. Action: Bring a hand or object into the marked area to press a virtual button. Application: Non-contact interface, children's game, reaction. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-042",
+              "text": {
+                "ru": "Пересечение линии. Действие: Провести объект через виртуальную границу в нужную сторону. Применение: Гол, счётчик проходов, конвейерная сортировка. Технологии: Анализ изображения.",
+                "en": "Crossing the line. Action: Move an object through the virtual boundary in the desired direction. Application: Goal, pass counter, conveyor sorting. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-043",
+              "text": {
+                "ru": "Скорость движения. Действие: Быстрее или медленнее перемещать цель, меняя силу действия. Применение: Удар, ускорение персонажа, визуальный музыкальный инструмент. Технологии: Анализ изображения.",
+                "en": "Movement speed. Action: Move the target faster or slower, changing the force of the action. Application: Impact, character acceleration, visual musical instrument. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-044",
+              "text": {
+                "ru": "Направление потока. Действие: Двигать сцену или контроллер влево, вправо, вверх или вниз. Применение: Руление, смахивание, бесконтактная навигация. Технологии: Анализ изображения.",
+                "en": "Flow direction. Action: Move the scene or controller left, right, up or down. Application: Steering, swiping, touchless navigation. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-045",
+              "text": {
+                "ru": "Траектория как символ. Действие: Нарисовать движением цели круг, зигзаг или другую фигуру. Применение: Руны, жестовые пароли, рисование полёта. Технологии: Анализ изображения.",
+                "en": "Trajectory as a symbol. Action: Draw a circle, zigzag or other shape with the target's movement. Application: Runes, gesture passwords, flight drawing. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-046",
+              "text": {
+                "ru": "Замирание. Действие: Сохранять неподвижность изображения или выделенного объекта. Применение: «Замри», стабилизация прицела, виртуальное обезвреживание. Технологии: Анализ изображения.",
+                "en": "Fading. Action: Keep the image or selected object still. Application: “Freeze”, sight stabilization, virtual neutralization. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-047",
+              "text": {
+                "ru": "Повтор маршрута. Действие: Провести отслеживаемую точку по образцу с допустимым отклонением. Применение: Тренировка координации, лабиринт, копирование рисунка. Технологии: Анализ изображения.",
+                "en": "Repeat route. Action: Draw the tracked point along the pattern with an acceptable deviation. Application: Coordination training, labyrinth, copying a picture. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-048",
+              "text": {
+                "ru": "Площадь изменений. Действие: Двигаться так, чтобы заполнить нужную долю кадра изменениями. Применение: Разгон стихии, коллективная активность, абстрактный танец. Технологии: Анализ изображения.",
+                "en": "Area of ​​change. Action: Move so as to fill the required portion of the frame with changes. Application: Acceleration of the elements, collective activity, abstract dance. Technologies: Image analysis."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-objects",
+      "section": "section-1",
+      "title": {
+        "ru": "Предметы, признаки и отношения",
+        "en": "Objects, signs and relationships"
+      },
+      "description": {
+        "ru": "Реальные вещи становятся входными данными для правил. Готовый детектор распознаёт свои классы. Узнавание конкретной игрушки, материала или состояния обычно требует отдельной модели и проверки на реальных сценах.",
+        "en": "Real things become input to the rules. The finished detector recognizes its classes. Recognizing a specific toy, material or condition usually requires a separate model and testing on real scenes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector",
+        "https://developers.google.com/ar/develop/augmented-images"
+      ],
+      "branches": [
+        {
+          "id": "family-objects-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-049",
+              "text": {
+                "ru": "Категория предмета. Действие: Показать объект нужного класса; игра принимает его как ответ. Применение: Scavenger hunt, словарь, поиск ресурсов. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Item category. Action: Show an object of the desired class; the game accepts it as an answer. Application: Scavenger hunt, dictionary, resource search. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-050",
+              "text": {
+                "ru": "Конкретный экземпляр. Действие: Показать заранее зарегистрированный предмет или его визуальную метку. Применение: Личный артефакт, ключ от уровня, коллекционная игрушка. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Specific instance. Action: Show a pre-registered item or its visual label. Application: Personal artifact, level key, collectible toy. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-051",
+              "text": {
+                "ru": "Подсчёт объектов. Действие: Показать заданное число видимых предметов одного или нескольких классов. Применение: Арифметика, комплектация заказа, визуальный инвентарь. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Counting objects. Action: Display a specified number of visible items of one or more classes. Application: Arithmetic, order picking, visual inventory. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-052",
+              "text": {
+                "ru": "Геометрическая форма. Действие: Найти круг, треугольник, симметричный или вытянутый объект. Применение: Обучение геометрии, сбор деталей, визуальная классификация. Технологии: Анализ изображения.",
+                "en": "Geometric shape. Action: Find a circle, triangle, symmetrical or elongated object. Application: Teaching geometry, collecting parts, visual classification. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-053",
+              "text": {
+                "ru": "Материал или фактура. Действие: Показать поверхность из ограниченного обученного набора. Применение: Каталог текстур, художественный поиск, условные ресурсы для крафта. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Material or texture. Action: Show a surface from a limited trained set. Application: Texture catalog, artistic search, conditional crafting resources. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-054",
+              "text": {
+                "ru": "Визуальное состояние. Действие: Перевести знакомый объект между различимыми состояниями. Применение: Открытая коробка как переключатель, сборка модели, проверка этапа задания. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Visual condition. Action: Translate a familiar object between distinguishable states. Application: Open box as a switch, model assembly, checking a task step. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-055",
+              "text": {
+                "ru": "Пространственное отношение в кадре. Действие: Поставить один объект выше, внутри контура или рядом с другим. Применение: Визуальные рецепты, обучение предлогам, композиционные загадки. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Spatial relationship in the frame. Action: Place one object above, inside a contour or next to another. Application: Visual recipes, teaching prepositions, compositional riddles. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-056",
+              "text": {
+                "ru": "Сравнение с образцом. Действие: Найти вещь или изображение, похожее на эталон, по выбранному критерию. Применение: Подбор пары, поиск отличий, визуальная память. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Comparison with a sample. Action: Find a thing or image similar to the standard according to the selected criterion. Application: Matching a pair, searching for differences, visual memory. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-text-codes",
+      "section": "section-1",
+      "title": {
+        "ru": "Текст, рисунки и машинные коды",
+        "en": "Text, pictures and machine codes"
+      },
+      "description": {
+        "ru": "Камера переводит видимые знаки в дискретные команды. OCR зависит от письменности и качества кадра. ML Kit Text Recognition v2 перечисляет Latin, Chinese, Devanagari, Japanese, Korean; для кириллицы нужен другой подход с подтверждённой поддержкой.",
+        "en": "The camera translates visible signs into discrete commands. OCR depends on the writing and the quality of the frame. ML Kit Text Recognition v2 lists Latin, Chinese, Devanagari, Japanese, Korean; For the Cyrillic alphabet, a different approach with proven support is needed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/ml-kit/vision/text-recognition/v2",
+        "https://developers.google.com/ml-kit/vision/barcode-scanning",
+        "https://developers.google.com/ar/develop/augmented-images"
+      ],
+      "branches": [
+        {
+          "id": "family-text-codes-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-057",
+              "text": {
+                "ru": "Печатное слово. Действие: Считать слово с карточки, вывески или страницы и применить его как команду. Применение: Языковая игра, словесная охота, поиск паролей. Технологии: Распознавание текста.",
+                "en": "The printed word. Action: Read a word from a card, sign or page and apply it as a command. Application: Language game, word hunt, password search. Technologies: Text recognition."
+              }
+            },
+            {
+              "id": "variant-cam-058",
+              "text": {
+                "ru": "Число или выражение. Действие: Считать цифры в подготовленном формате и проверить условие. Применение: Арифметика, цифровой замок, задачи с реальными ценниками. Технологии: Распознавание текста.",
+                "en": "Number or expression. Action: Read numbers in the prepared format and check the condition. Application: Arithmetic, digital lock, tasks with real price tags. Technologies: Text recognition."
+              }
+            },
+            {
+              "id": "variant-cam-059",
+              "text": {
+                "ru": "Рукописный ввод на бумаге. Действие: Написать символ или слово; камера распознаёт ограниченный алфавит. Применение: Обучение письму, бумажная консоль, ответ без касания экрана. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Handwriting on paper. Action: Write a symbol or word; camera recognizes limited alphabet. Application: Teaching writing, paper console, answering without touching the screen. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-060",
+              "text": {
+                "ru": "QR как триггер. Действие: Сканировать код, содержащий идентификатор предмета, задания или сеанса. Применение: Квесты, музейные маршруты, запуск уровня. Технологии: Распознавание кодов.",
+                "en": "QR as a trigger. Action: Scan a code containing the identifier of an item, task or session. Application: Quests, museum routes, starting a level. Technologies: Code recognition."
+              }
+            },
+            {
+              "id": "variant-cam-061",
+              "text": {
+                "ru": "Товарный штрихкод. Действие: Превратить код упаковки в ключ для локальной таблицы или генератора. Применение: Коллекционирование, бытовой roguelike, сортировка. Технологии: Распознавание кодов.",
+                "en": "Product barcode. Action: Turn the packaging code into a key for a local table or generator. Application: Collecting, household roguelike, sorting. Technologies: Code recognition."
+              }
+            },
+            {
+              "id": "variant-cam-062",
+              "text": {
+                "ru": "Fiducial-маркер. Действие: Показать геометрическую метку; её ID, угол и размер задают параметры. Применение: Физический контроллер, позиционирование фигурки, лаборатория. Технологии: Маркеры.",
+                "en": "Fiducial marker. Action: Show geometry label; its ID, angle and size set the parameters. Application: Physical controller, figurine positioning, laboratory. Technologies: Markers."
+              }
+            },
+            {
+              "id": "variant-cam-063",
+              "text": {
+                "ru": "Изображение-ключ. Действие: Навести камеру на заранее подготовленный постер, страницу или иллюстрацию. Применение: Оживающая книга, рекламный квест, музейный слой. Технологии: Маркеры; Пространственный трекинг AR.",
+                "en": "Image key. Action: Point the camera at a pre-prepared poster, page or illustration. Application: A book that comes to life, an advertising quest, a museum layer. Technologies: Markers; AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-064",
+              "text": {
+                "ru": "Оптическая последовательность. Действие: Считать меняющиеся кадры или световые состояния с другого экрана. Применение: Передача игрового кода, соединение устройств, визуальный протокол. Технологии: Анализ изображения; Собственный алгоритм.",
+                "en": "Optical sequence. Action: Read changing frames or light states from another screen. Application: Game code transmission, device connection, visual protocol. Technologies: Image analysis; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-paper-table",
+      "section": "section-1",
+      "title": {
+        "ru": "Бумага, карточки и настольные объекты",
+        "en": "Paper, cards and tabletop objects"
+      },
+      "description": {
+        "ru": "Игрок меняет физическую раскладку, а телефон читает её состояние. Кубики, рукопись и немаркированные фишки требуют отдельной обработки. Удобная стартовая конфигурация: неподвижная камера, контрастное поле, уникальные метки.",
+        "en": "The player changes the physical layout, and the phone reads its state. Dice, manuscript and unmarked tiles require separate processing. Convenient starting configuration: fixed camera, contrast field, unique markers."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/ml-kit/vision/barcode-scanning",
+        "https://developers.google.com/ar/develop/augmented-images"
+      ],
+      "branches": [
+        {
+          "id": "family-paper-table-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-065",
+              "text": {
+                "ru": "Оцифровка рисунка. Действие: Нарисовать силуэт на бумаге и перенести его в игровую сцену. Применение: Собственный персонаж, детское творчество, бумажный редактор. Технологии: Анализ изображения.",
+                "en": "Digitization of the drawing. Action: Draw a silhouette on paper and transfer it to the game scene. Application: Own character, children's creativity, paper editor. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-066",
+              "text": {
+                "ru": "Нарисованный уровень. Действие: Начертить стены, платформы или дорожки условными знаками. Применение: Редактор лабиринта, обучение алгоритмам, физический level design. Технологии: Анализ изображения.",
+                "en": "Drawn level. Action: Draw walls, platforms or paths with conventional signs. Application: Maze editor, teaching algorithms, physical level design. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-067",
+              "text": {
+                "ru": "Бумажная панель. Действие: Касаться или закрывать нарисованные области под камерой. Применение: Самодельный пульт, музыкальная клавиатура, интерактивный плакат. Технологии: Анализ изображения.",
+                "en": "Paper panel. Action: Touch or cover the drawn areas under the camera. Application: Homemade remote control, music keyboard, interactive poster. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-068",
+              "text": {
+                "ru": "Раскладка карточек. Действие: Менять набор и порядок распознанных карточек, чтобы менять программу или рецепт. Применение: Программирование для детей, составление истории, крафт. Технологии: Маркеры.",
+                "en": "Layout of cards. Action: Change the set and order of recognized cards in order to change the program or recipe. Application: Programming for children, writing a story, crafting. Technologies: Markers."
+              }
+            },
+            {
+              "id": "variant-cam-069",
+              "text": {
+                "ru": "Физические фишки. Действие: Переставлять и поворачивать отслеживаемые фишки на поле. Применение: Цифровая настолка, тактический бой, симуляция логистики. Технологии: Маркеры.",
+                "en": "Physical chips. Action: Rearrange and rotate tracked pieces on the field. Application: Digital board game, tactical combat, logistics simulation. Technologies: Markers."
+              }
+            },
+            {
+              "id": "variant-cam-070",
+              "text": {
+                "ru": "Чтение кубиков. Действие: Бросить контрастные кубики; камера считывает верхние грани. Применение: Автоматизация настолок, вероятностные опыты, party game. Технологии: Анализ изображения; Собственный алгоритм.",
+                "en": "Reading dice. Action: Roll contrasting dice; the camera reads the upper edges. Application: Tabletop automation, probabilistic experiments, party game. Technologies: Image analysis; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-071",
+              "text": {
+                "ru": "Конструктор под камерой. Действие: Собрать фигуру из различимых деталей и запустить её цифровую проверку. Применение: Геометрические задачи, цифровой двойник постройки, обучение. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Constructor under the camera. Action: Assemble a figure from distinguishable parts and run its digital verification. Application: Geometric tasks, digital twin of a building, training. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-072",
+              "text": {
+                "ru": "Бумажная деформация. Действие: Складывать или вращать размеченную бумагу, меняя видимые области и их связи. Применение: Оригами-головоломка, складной контроллер, бумажный интерфейс. Технологии: Маркеры; Собственный алгоритм.",
+                "en": "Paper warp. Action: Fold or rotate marked paper, changing visible areas and their connections. Application: Origami puzzle, folding controller, paper interface. Technologies: Markers; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-face-head",
+      "section": "section-1",
+      "title": {
+        "ru": "Лицо и положение головы",
+        "en": "Face and head position"
+      },
+      "description": {
+        "ru": "Фронтальная камера становится контроллером позы и присутствия. Лицевые ориентиры не подтверждают личность. Приближение по размеру лица приблизительно; поворот головы не даёт точку взгляда на экране.",
+        "en": "The front camera becomes a pose and presence controller. Facial landmarks do not confirm identity. Face size approximation; turning your head does not give you a point of view on the screen."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker"
+      ],
+      "branches": [
+        {
+          "id": "family-face-head-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-073",
+              "text": {
+                "ru": "Присутствие лица. Действие: Появиться перед камерой или выйти из кадра, чтобы включить игровое состояние. Применение: Прятки, персональный вход в сцену, интерактивное зеркало. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Presence of a person. Action: Appear in front of the camera or exit the frame to enable the game state. Application: Hide and seek, personal scene entry, interactive mirror. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-074",
+              "text": {
+                "ru": "Положение головы. Действие: Сдвигать голову в кадре и управлять персонажем или курсором. Применение: Бесконтактный арканоид, уклонение, интерфейс доступности. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Head position. Action: Move your head in the frame and control the character or cursor. Application: Contactless arkanoid, evasion, accessibility interface. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-075",
+              "text": {
+                "ru": "Поворот в стороны. Действие: Поворачивать голову влево и вправо для выбора направления. Применение: Руление, выбор ответа, управление обзором. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Turn to the sides. Action: Turn your head left and right to select direction. Application: Steering, response selection, view control. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-076",
+              "text": {
+                "ru": "Наклон головы. Действие: Наклонять голову к плечу и менять непрерывный параметр. Применение: Баланс, полёт, наклон виртуальной поверхности. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Head tilt. Action: Tilt your head to your shoulder and change a continuous parameter. Application: Balance, flight, tilt of a virtual surface. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-077",
+              "text": {
+                "ru": "Кивок или отрицание. Действие: Выполнить последовательность наклонов или поворотов для дискретной команды. Применение: Диалог, подтверждение, ритмическая игра. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Nod or denial. Action: Perform a sequence of tilts or turns for a discrete command. Application: Dialogue, confirmation, rhythm game. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-078",
+              "text": {
+                "ru": "Приближение лица. Действие: Менять видимый масштаб лица относительно калибровки. Применение: Надувание виртуального пузыря, zoom, комическая трансформация. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Approaching face. Action: Change the visible scale of the face relative to the calibration. Application: Inflating a virtual bubble, zoom, comic transformation. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-079",
+              "text": {
+                "ru": "Удержание позы головы. Действие: Оставаться в нужном диапазоне углов заданное время. Применение: Балансирующая игра, удержание луча, точное наведение. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Maintaining head posture. Action: Stay in the desired angle range for a given time. Application: Balancing game, beam holding, precise targeting. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-080",
+              "text": {
+                "ru": "Несколько лиц. Действие: Собрать в кадре нужное число участников и оценивать их расположение. Применение: Групповой портрет-квест, кооперативные ворота, party game. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Several faces. Action: Gather the required number of participants in the frame and evaluate their location. Application: Group portrait quest, cooperative gate, party game. Technologies: Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-face-actions",
+      "section": "section-1",
+      "title": {
+        "ru": "Глаза, рот и мимические действия",
+        "en": "Eyes, mouth and facial actions"
+      },
+      "description": {
+        "ru": "Игровое правило реагирует на видимое действие лица. Нужны калибровка и альтернативный ввод. Мимическая форма не доказывает эмоцию; моргание бывает непроизвольным. Точный eye tracking с RGB-камерой не следует обещать.",
+        "en": "The game rule reacts to the visible action of a person. Need calibration and alternate input. The facial form does not prove emotion; blinking is involuntary. Accurate eye tracking with an RGB camera should not be promised."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker"
+      ],
+      "branches": [
+        {
+          "id": "family-face-actions-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-081",
+              "text": {
+                "ru": "Моргание как кнопка. Действие: Намеренно закрыть и открыть глаза, чтобы выполнить действие. Применение: Выстрел, прыжок, экспериментальный бесконтактный ввод. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Blinking like a button. Action: Intentionally close and open your eyes to perform an action. Application: Shooting, jumping, experimental contactless input. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-082",
+              "text": {
+                "ru": "Подмигивание. Действие: Закрывать левый и правый глаз раздельно для разных команд. Применение: Двухкнопочная игра, скрытые сигналы, управление сторонами. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Wink. Action: Close left and right eyes separately for different commands. Application: Two-button game, hidden signals, side control. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-083",
+              "text": {
+                "ru": "Закрытые глаза. Действие: Держать глаза закрытыми; мир меняется по времени или при открытии. Применение: Хоррор, игра на память, аудиовизуальная загадка. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Closed eyes. Action: Keep your eyes closed; the world changes over time or when opened. Application: Horror, memory game, audio-visual mystery. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-084",
+              "text": {
+                "ru": "Грубое направление взгляда. Действие: После калибровки различать несколько крупных направлений движения глаз. Применение: Выбор из двух зон, эксперимент на внимание, управление персонажем. Технологии: Распознавание или модель машинного обучения; Экспериментальный прототип.",
+                "en": "Rough direction of view. Action: After calibration, distinguish several large directions of eye movement. Application: Choice of two zones, experiment on attention, character control. Technologies: Recognition or machine learning model; Experimental prototype."
+              }
+            },
+            {
+              "id": "variant-cam-085",
+              "text": {
+                "ru": "Открывание рта. Действие: Менять степень открытия рта как непрерывный параметр. Применение: Поедание целей, вокальный аватар без анализа звука, виртуальный инструмент. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Opening the mouth. Action: Change the degree of mouth opening as a continuous parameter. Application: Eating targets, vocal avatar without sound analysis, virtual instrument. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-086",
+              "text": {
+                "ru": "Улыбка и брови. Действие: Принимать заданную форму рта или поднимать брови для команды. Применение: Мимический тренажёр, комическая аркада, управление аватаром. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Smile and eyebrows. Action: Take a given mouth shape or raise eyebrows for a command. Application: Facial trainer, comic arcade, avatar control. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-087",
+              "text": {
+                "ru": "Повтор выражения. Действие: Воспроизвести показанную комбинацию лицевых движений. Применение: Мимическая память, актёрская игра, соревнование на точность. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Repeat expression. Action: Reproduce the combination of facial movements shown. Application: Facial memory, acting, accuracy competition. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-088",
+              "text": {
+                "ru": "Мимическая анимация. Действие: Передавать параметры лица цифровому персонажу в реальном времени. Применение: Виртуальный театр, создание анимации, персонаж в видеочате. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Mimic animation. Action: Transfer facial parameters to a digital character in real time. Application: Virtual theater, animation creation, video chat character. Technologies: Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hands",
+      "section": "section-1",
+      "title": {
+        "ru": "Кисти, пальцы и ручные жесты",
+        "en": "Hands, fingers and hand gestures"
+      },
+      "description": {
+        "ru": "Руки дают позиционные, дискретные и непрерывные команды. Нужно учитывать зеркальное отображение, перекрытия рук и выпадение из кадра. Положение пальцев не означает, что система понимает любой жестовый язык.",
+        "en": "Hands give positional, discrete and continuous commands. You need to take into account mirroring, overlapping hands, and falling out of frame. The position of the fingers does not mean that the system understands any sign language."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker"
+      ],
+      "branches": [
+        {
+          "id": "family-hands-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-089",
+              "text": {
+                "ru": "Указание пальцем. Действие: Двигать кончик пальца и наводить виртуальный указатель. Применение: Бесконтактное меню, рисование, выбор целей. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Finger pointing. Action: Move your fingertip and hover the virtual pointer. Application: Touchless menu, drawing, target selection. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-090",
+              "text": {
+                "ru": "Щипок. Действие: Свести большой и указательный пальцы для захвата, разжать для отпускания. Применение: Перетаскивание, сборка, работа с виртуальными объектами. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Pinch. Action: Bring your thumb and index finger together to grasp, unclench to release. Application: Drag and drop, assembly, working with virtual objects. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-091",
+              "text": {
+                "ru": "Кулак и ладонь. Действие: Сжимать и разжимать кисть для смены бинарного состояния. Применение: Щит и атака, удержание предмета, запуск эффекта. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Fist and palm. Action: Squeeze and unclench the hand to change the binary state. Application: Shield and attack, holding an object, launching an effect. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-092",
+              "text": {
+                "ru": "Количество пальцев. Действие: Показать число пальцами в согласованном наборе жестов. Применение: Арифметика, выбор ответа, числовой код. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Number of fingers. Action: Show a number with your fingers in a consistent set of gestures. Application: Arithmetic, answer choice, numeric code. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-093",
+              "text": {
+                "ru": "Поворот ладони. Действие: Менять угол кисти, чтобы крутить ручку, щит или объект. Применение: Пространственный пазл, управление прибором, жестовая музыка. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Turn the palm. Action: Change the angle of the hand to rotate a handle, shield or object. Application: Spatial puzzle, device control, gestural music. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-094",
+              "text": {
+                "ru": "Двуручное масштабирование. Действие: Разводить, сближать и поворачивать две кисти. Применение: Размер и вращение объекта, растяжение поля, лепка. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Two-handed zooming. Action: Spread, bring together and rotate two brushes. Application: Sizing and rotating an object, stretching a field, sculpting. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-095",
+              "text": {
+                "ru": "Жестовая траектория. Действие: Провести ладонью или пальцем последовательность движений. Применение: Заклинания, танцевальная игра для рук, команды роботу. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Gesture trajectory. Action: Run a sequence of movements with your palm or finger. Application: Spells, dance game for hands, robot commands. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-096",
+              "text": {
+                "ru": "Ручная пантомима. Действие: Воспроизвести жест из ограниченного обученного словаря. Применение: «Камень, ножницы, бумага», шарады, изучение выбранных жестов. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Manual pantomime. Action: Reproduce a gesture from a limited trained vocabulary. Application: Rock, paper, scissors, charades, learning selected gestures. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-body",
+      "section": "section-1",
+      "title": {
+        "ru": "Поза, движение тела и активные игры",
+        "en": "Posture, body movement and active play"
+      },
+      "description": {
+        "ru": "Телефон устанавливают так, чтобы камера видела нужные части тела. Игроку нужен видимый и свободный участок пространства. Оценка позы приблизительна и не заменяет диагностику или профессиональную оценку техники упражнений.",
+        "en": "The phone is installed so that the camera sees the necessary parts of the body. The player needs a visible and free area of ​​space. Posture assessments are approximate and do not replace diagnostics or professional assessment of exercise technique."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker"
+      ],
+      "branches": [
+        {
+          "id": "family-body-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-097",
+              "text": {
+                "ru": "Тело как джойстик. Действие: Смещать корпус относительно калиброванного центра. Применение: Управление полосой, полёт, балансирующая аркада. Технологии: Распознавание или модель машинного обучения.",
+                "en": "The body is like a joystick. Action: Move the body relative to the calibrated center. Application: Runway control, flight, balancing arcade. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-098",
+              "text": {
+                "ru": "Повтор позы. Действие: Совместить положение основных суставов с образцом. Применение: «Стена поз», обучение танцевальному движению, живая скульптура. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Repeat the pose. Action: Match the position of the main joints with the sample. Application: “Wall of poses”, dance movement training, living sculpture. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-099",
+              "text": {
+                "ru": "Приседание и вставание. Действие: Пересекать откалиброванные пороги положения таза и коленей. Применение: Уклонение, заряд прыжка, двигательная мини-игра. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Squatting and standing up. Action: Cross calibrated pelvic and knee position thresholds. Application: Evasion, jump charge, motor mini-game. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-100",
+              "text": {
+                "ru": "Подъём рук и шаги. Действие: Выполнять видимые действия нужной конечностью. Применение: Ритм-игра, разминка, координационные задания. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Raising hands and steps. Action: Perform visible actions with the desired limb. Application: Rhythm game, warm-up, coordination tasks. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-101",
+              "text": {
+                "ru": "Углы и амплитуда. Действие: Достичь заданного диапазона положения суставов. Применение: Двигательный пазл, управление размером аватара, тренировка координации. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Angles and amplitude. Action: Achieve a given joint position range. Application: Motor puzzle, avatar size control, coordination training. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-102",
+              "text": {
+                "ru": "Счёт повторений. Действие: Выполнить несколько завершённых циклов позы в правильном порядке. Применение: Активные задания, серии комбо, двигательный счётчик. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Counting repetitions. Action: Perform several completed pose cycles in the correct order. Application: Active tasks, combo series, motor counter. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-103",
+              "text": {
+                "ru": "Воспроизведение движения. Действие: Повторить временную последовательность поз с учётом темпа. Применение: Танцы, хореография, имитация персонажа. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Reproduction of movement. Action: Repeat a temporal sequence of poses taking into account the tempo. Application: Dancing, choreography, character imitation. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-104",
+              "text": {
+                "ru": "Удержание и баланс. Действие: Сохранять позу в допустимом диапазоне заданное время. Применение: «Замри», балансирующая игра, управление устойчивостью мира. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Retention and balance. Action: Maintain a pose within an acceptable range for a specified time. Application: “Freeze”, balancing game, world stability control. Technologies: Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-silhouette",
+      "section": "section-1",
+      "title": {
+        "ru": "Силуэт, маски и сегментация",
+        "en": "Silhouette, masks and segmentation"
+      },
+      "description": {
+        "ru": "Игра работает с формой занятой области, а не только с суставами. Качество маски зависит от модели, света, одежды и фона. Коллизия в 2D-изображении не означает физический контакт в 3D.",
+        "en": "The game works with the shape of the occupied area, not just the joints. The quality of the mask depends on the model, light, clothing and background. Collision in 2D does not mean physical contact in 3D."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker",
+        "https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter"
+      ],
+      "branches": [
+        {
+          "id": "family-silhouette-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-105",
+              "text": {
+                "ru": "Силуэт как коллайдер. Действие: Пересекать контуром тела виртуальные цели или отбивать частицы. Применение: Камерный Pong, ловля шаров, интерактивная инсталляция. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Silhouette as a collider. Action: Cross virtual targets with a body contour or hit particles. Application: Chamber Pong, catching balls, interactive installation. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-106",
+              "text": {
+                "ru": "Проход в отверстие. Действие: Подогнать силуэт под виртуальный проём. Применение: «Стена с дыркой», пространственная координация, групповой пазл. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Passage through the hole. Action: Fit the silhouette to the virtual opening. Application: “Wall with a hole”, spatial coordination, group puzzle. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-107",
+              "text": {
+                "ru": "Занятие зон. Действие: Закрыть телом нужные участки кадра и оставить другие открытыми. Применение: Живые кнопки, командный узор, динамический плакат. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Occupying zones. Action: Close the necessary parts of the frame with your body and leave others open. Application: Live buttons, command pattern, dynamic poster. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-108",
+              "text": {
+                "ru": "Рисование телом. Действие: Оставлять след маски или отдельных частей тела. Применение: Видеоарт, живопись движением, творческая игра. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Body drawing. Action: Leave a trace of a mask or individual parts of the body. Application: Video art, motion painting, creative play. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-109",
+              "text": {
+                "ru": "Силуэт как поверхность. Действие: Наносить на выделенного человека материал, узор или игровое состояние. Применение: Цифровой костюм, раскрашивание, маскировка персонажа. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Silhouette as a surface. Action: Apply a material, pattern or game state to a selected person. Application: Digital costume, coloring, character disguise. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-110",
+              "text": {
+                "ru": "Перекрытие виртуального слоя. Действие: Прятать цифровой объект за выделенным человеком в 2D-композиции. Применение: Фокус, оживающее зеркало, интерактивная сцена. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Virtual layer overlap. Action: Hide a digital object behind a selected person in a 2D composition. Application: Focus, animated mirror, interactive scene. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-111",
+              "text": {
+                "ru": "Форма группы. Действие: Составить общий силуэт из нескольких участников. Применение: Кооперативная скульптура, буквы телами, party game. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Group form. Action: Create a common silhouette from several participants. Application: Cooperative sculpture, letters with bodies, party game. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-112",
+              "text": {
+                "ru": "Замена окружения. Действие: Сохранять человека и подменять фон или его отдельные классы. Применение: Виртуальная сцена, видеотеатр, творческий портрет. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Changing the environment. Action: Save a person and replace the background or its individual classes. Application: Virtual stage, video theater, creative portrait. Technologies: Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-ar-geometry",
+      "section": "section-1",
+      "title": {
+        "ru": "AR: поверхности и геометрия пространства",
+        "en": "AR: surfaces and spatial geometry"
+      },
+      "description": {
+        "ru": "Камера вместе с трекингом связывает цифровые объекты с окружающим пространством. Обычный AR часто объединяет видео и IMU. Depth не обязательно требует LiDAR, но поддержка и точность зависят от устройства и сцены. Стекло и зеркала сложны для реконструкции.",
+        "en": "The camera, together with tracking, connects digital objects with the surrounding space. Conventional AR often combines video and IMU. Depth does not necessarily require LiDAR, but support and accuracy vary by device and scene. Glass and mirrors are difficult to reconstruct."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/ar/develop/fundamentals",
+        "https://developers.google.com/ar/develop/depth",
+        "https://developer.apple.com/documentation/arkit/understanding-world-tracking"
+      ],
+      "branches": [
+        {
+          "id": "family-ar-geometry-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-113",
+              "text": {
+                "ru": "Размещение на поверхности. Действие: Найти стол, пол или стену и закрепить на ней цифровой объект. Применение: Настольная стратегия, расстановка мебели, миниатюрный мир. Технологии: Пространственный трекинг AR.",
+                "en": "Placement on the surface. Action: Find a table, floor or wall and attach a digital object to it. Application: Tabletop strategy, furniture arrangement, miniature world. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-114",
+              "text": {
+                "ru": "Привязка к изображению. Действие: Закрепить цифровой объект на распознанной странице, карте или постере. Применение: Оживающая книга, карточная игра, интерактивная инструкция. Технологии: Маркеры; Пространственный трекинг AR.",
+                "en": "Link to image. Action: Attach a digital object to a recognized page, map or poster. Application: A book that comes to life, a card game, interactive instructions. Technologies: Markers; AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-115",
+              "text": {
+                "ru": "Измерение пространства. Действие: Выбрать точки и оценить расстояние, площадь или подходящий размер. Применение: Геометрические задания, масштабирование построек, примерка макета. Технологии: Пространственный трекинг AR.",
+                "en": "Measuring space. Action: Select points and estimate the distance, area or suitable size. Application: Geometric tasks, scaling of buildings, model fitting. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-116",
+              "text": {
+                "ru": "Реальные преграды. Действие: Использовать оценённую геометрию мебели и стен для цифровых столкновений. Применение: Шарики по комнате, арена, головоломки с рельефом. Технологии: Пространственный трекинг AR; Датчик или оценка глубины.",
+                "en": "Real obstacles. Action: Use estimated furniture and wall geometry for digital collisions. Applications: Balls around the room, arena, terrain puzzles. Technologies: AR spatial tracking; Sensor or depth estimation."
+              }
+            },
+            {
+              "id": "variant-cam-117",
+              "text": {
+                "ru": "Глубинное перекрытие. Действие: Прятать виртуальные объекты за реальными поверхностями по карте глубины. Применение: Прятки, поиск существ, убедительная AR-сцена. Технологии: Пространственный трекинг AR; Датчик или оценка глубины.",
+                "en": "Deep overlap. Action: Hide virtual objects behind real surfaces using a depth map. Application: Hide and seek, search for creatures, convincing AR scene. Technologies: AR spatial tracking; Sensor or depth estimation."
+              }
+            },
+            {
+              "id": "variant-cam-118",
+              "text": {
+                "ru": "Заполнение объёма. Действие: Использовать карту пространства для виртуальной воды, снега или заполнения. Применение: Симуляция затопления, терраформирование, творческие эффекты. Технологии: Пространственный трекинг AR; Датчик или оценка глубины.",
+                "en": "Filling the volume. Action: Use a spatial map for virtual water, snow or fill. Application: Flooding simulation, terraforming, creative effects. Technologies: AR spatial tracking; Sensor or depth estimation."
+              }
+            },
+            {
+              "id": "variant-cam-119",
+              "text": {
+                "ru": "Поверхность как маршрут. Действие: Построить путь или игровую сетку по распознанной геометрии. Применение: Комнатный tower defense, маршрут робота, пространственный пазл. Технологии: Пространственный трекинг AR; Собственный алгоритм.",
+                "en": "The surface is like a route. Action: Build a path or game grid using recognized geometry. Application: Indoor tower defense, robot route, spatial puzzle. Technologies: AR spatial tracking; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-120",
+              "text": {
+                "ru": "Геометрия как условие. Действие: Найти достаточно большую свободную поверхность или подходящую конфигурацию. Применение: Выбор арены, поиск места для базы, обучающий spatial puzzle. Технологии: Пространственный трекинг AR; Собственный алгоритм.",
+                "en": "Geometry as a condition. Action: Find a large enough free surface or a suitable configuration. Application: Selecting an arena, finding a location for a base, educational spatial puzzle. Technologies: AR spatial tracking; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-ar-rules",
+      "section": "section-1",
+      "title": {
+        "ru": "AR: точка зрения и правила наблюдения",
+        "en": "AR: viewpoint and observation rules"
+      },
+      "description": {
+        "ru": "Игрок действует перемещением телефона и изменением того, что видит. Границы экрана, прямая видимость в модели и человеческое внимание являются разными величинами. Возврат к месту требует релокализации, а постоянство между сеансами не возникает автоматически.",
+        "en": "The player acts by moving the phone and changing what he sees. Screen boundaries, line of sight in the model, and human attention are different quantities. Returning to a place requires relocalization, and consistency between sessions does not occur automatically."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/ar/develop/fundamentals",
+        "https://developers.google.com/ar/develop/depth",
+        "https://developer.apple.com/documentation/arkit/understanding-world-tracking"
+      ],
+      "branches": [
+        {
+          "id": "family-ar-rules-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-121",
+              "text": {
+                "ru": "Телефон как окно. Действие: Перемещать устройство, чтобы заглядывать в закреплённый цифровой мир. Применение: Диорама, виртуальный аквариум, исследование объекта. Технологии: Пространственный трекинг AR.",
+                "en": "The phone is like a window. Action: Move the device to look into a fixed digital world. Application: Diorama, virtual aquarium, object exploration. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-122",
+              "text": {
+                "ru": "Обход объекта. Действие: Осматривать цифровой или распознанный объект с разных сторон. Применение: Поиск слабого места, музейная модель, пространственная загадка. Технологии: Пространственный трекинг AR.",
+                "en": "Walking around the object. Action: Examine a digital or recognized object from different angles. Application: Finding a weak point, museum model, spatial riddle. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-123",
+              "text": {
+                "ru": "Угол как ключ. Действие: Найти точку, где элементы цифровой сцены складываются в ответ. Применение: Перспективная головоломка, выравнивание символов, скрытая надпись. Технологии: Пространственный трекинг AR.",
+                "en": "The angle is like a key. Action: Find the point where the elements of a digital scene add up to answer. Application: Perspective puzzle, character alignment, hidden caption. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-124",
+              "text": {
+                "ru": "Дистанция как действие. Действие: Войти в диапазон расстояний относительно виртуального объекта. Применение: Приручение, активация портала, игра на осторожность. Технологии: Пространственный трекинг AR.",
+                "en": "Distance as action. Action: Enter the range of distances relative to the virtual object. Application: Taming, activating a portal, playing with caution. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-125",
+              "text": {
+                "ru": "Наблюдение удерживает состояние. Действие: Держать объект в видимом секторе; при отворачивании он меняется. Применение: Хоррор, «не выпускай из виду», квантовая головоломка. Технологии: Пространственный трекинг AR.",
+                "en": "Observation holds the state. Action: Keep the object in the visible sector; when you turn away, it changes. Application: Horror, “keep in sight”, quantum puzzle. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-126",
+              "text": {
+                "ru": "Действие вне кадра. Действие: Убрать объект из обзора и вернуть его, чтобы запустить переход. Применение: Фокусы, превращения, пазл с наблюдением. Технологии: Пространственный трекинг AR.",
+                "en": "Action outside the frame. Action: Remove an object from view and return it to trigger the transition. Application: Tricks, transformations, observation puzzle. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-127",
+              "text": {
+                "ru": "Портал и переход границы. Действие: Провести телефон или игрока через заданную виртуальную область. Применение: Другая комната, смена масштаба мира, пространственный квест. Технологии: Пространственный трекинг AR.",
+                "en": "Portal and border crossing. Action: Guide the phone or player through a given virtual area. Application: Another room, changing the world scale, spatial quest. Technologies: AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-128",
+              "text": {
+                "ru": "Возврат к якорю. Действие: Повторно найти ранее сохранённое место и продолжить состояние объекта. Применение: Постоянный питомец, оставленный тайник, асинхронная сцена. Технологии: Пространственный трекинг AR; Возможности устройства.",
+                "en": "Return to anchor. Action: Re-find a previously saved location and continue the state of the object. Application: Permanent pet, abandoned cache, asynchronous scene. Technologies: AR spatial tracking; Device capabilities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-content",
+      "section": "section-1",
+      "title": {
+        "ru": "Съёмка как создание игрового контента",
+        "en": "Filming as game content creation"
+      },
+      "description": {
+        "ru": "Результат захвата становится материалом для следующего игрового действия. Преобразование может быть простым алгоритмом, редактором или моделью. Для генеративных методов нужно отдельно проверять задержку, стоимость и устойчивость результата.",
+        "en": "The result of the capture becomes the material for the next game action. The transformation can be a simple algorithm, an editor, or a model. For generative methods, latency, cost, and robustness of the result need to be checked separately."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter",
+        "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector"
+      ],
+      "branches": [
+        {
+          "id": "family-content-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-129",
+              "text": {
+                "ru": "Фототекстура. Действие: Снять поверхность и применить её к цифровому объекту. Применение: Создание одежды, оформление базы, библиотека материалов. Технологии: Захват камеры.",
+                "en": "Photo texture. Action: Capture a surface and apply it to a digital object. Application: Clothing creation, base design, material library. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-130",
+              "text": {
+                "ru": "Фото как спрайт. Действие: Вырезать объект из кадра и использовать как персонажа или предмет. Применение: Игра с собственными игрушками, коллаж, пользовательский инвентарь. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Photo like a sprite. Action: Cut an object out of the frame and use it as a character or object. Application: Playing with your own toys, collage, custom inventory. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-131",
+              "text": {
+                "ru": "Портрет как аватар. Действие: Создать внешний вид персонажа на основе выбранного снимка. Применение: Персонализация, сюжетный комикс, групповые персонажи. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Portrait as an avatar. Action: Create a character's appearance based on a selected photo. Application: Personalization, story comics, group characters. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-132",
+              "text": {
+                "ru": "Сцена как уровень. Действие: Преобразовать контуры или пятна изображения в игровую геометрию. Применение: Процедурный лабиринт, платформер из рисунка, фотопазл. Технологии: Анализ изображения.",
+                "en": "The stage is like a level. Action: Convert image contours or spots into game geometry. Application: Procedural maze, picture platformer, photo puzzle. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-133",
+              "text": {
+                "ru": "Изображение как seed. Действие: Стабильно преобразовать признаки снимка в параметры генератора. Применение: Монстр из упаковки, ежедневное подземелье, визуальный крафт. Технологии: Анализ изображения.",
+                "en": "Image as seed. Action: Stably convert image attributes into generator parameters. Application: Packaging monster, daily dungeon, visual crafting. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-134",
+              "text": {
+                "ru": "Визуальная музыка. Действие: Сопоставить цвета, линии или положения объектов нотам и тембрам. Применение: Камерный секвенсор, музыкальное обучение, саунд-дизайн. Технологии: Анализ изображения.",
+                "en": "Visual music. Action: Match colors, lines or positions of objects to notes and timbres. Application: Chamber sequencer, music teaching, sound design. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-135",
+              "text": {
+                "ru": "Трёхмерная копия. Действие: Снять объект с нескольких ракурсов и реконструировать модель. Применение: Оцифровка игрушек, музейный объект, создание ассетов. Технологии: Реконструкция сцены; Возможности устройства.",
+                "en": "Three-dimensional copy. Action: Take an object from several angles and reconstruct the model. Application: Digitization of toys, museum objects, asset creation. Technologies: Scene reconstruction; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-136",
+              "text": {
+                "ru": "Смысловая генерация. Действие: Использовать описание распознанной сцены для создания задания или истории. Применение: Квест из предметов комнаты, рассказ по фото, AI game master. Технологии: Распознавание или модель машинного обучения; Генеративная модель.",
+                "en": "Meaning generation. Action: Use the description of the recognized scene to create a task or story. Application: Quest from room objects, story from a photo, AI game master. Technologies: Recognition or machine learning model; Generative model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-memory",
+      "section": "section-1",
+      "title": {
+        "ru": "Время, видеопамять и сравнение состояний",
+        "en": "Time, video memory and state comparison"
+      },
+      "description": {
+        "ru": "Игра связывает несколько наблюдений одной сцены. Для сравнения нужны выравнивание и учёт смены света. Фото и время записи сами по себе не доказывают факт, место или авторство события.",
+        "en": "The game links several observations of one scene. For comparison, alignment and taking into account light changes are needed. Photos and recording times alone do not prove the fact, location, or authorship of an event."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup"
+      ],
+      "branches": [
+        {
+          "id": "family-memory-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-137",
+              "text": {
+                "ru": "Найти изменение. Действие: Сравнить сцену с эталоном и обнаружить добавленный, убранный или перемещённый объект. Применение: Детектив, память, контроль сборки. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Find change. Action: Compare the scene with a standard and detect an added, removed or moved object. Application: Detective, memory, assembly control. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-138",
+              "text": {
+                "ru": "Восстановить сцену. Действие: Воспроизвести прошлую раскладку по сохранённому снимку. Применение: Уборка-пазл, реконструкция улики, пространственная память. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Restore the scene. Action: Reproduce the previous layout using a saved image. Application: Puzzle cleaning, evidence reconstruction, spatial memory. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-139",
+              "text": {
+                "ru": "Совмещение с прошлым. Действие: Наложить прежний кадр и совместить ракурс или положение объекта. Применение: Повтор фотографии, анимация, наблюдение изменений. Технологии: Анализ изображения.",
+                "en": "Combination with the past. Action: Overlay the previous frame and combine the angle or position of the object. Application: Repeating a photograph, animation, observing changes. Technologies: Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-140",
+              "text": {
+                "ru": "Видеоэхо. Действие: Показывать запись с задержкой и взаимодействовать со своим прошлым движением. Применение: Дуэт с собой, головоломка времени, видеоперформанс. Технологии: Захват камеры.",
+                "en": "Video echo. Action: Show delayed recording and interact with your past movement. Application: Duet with yourself, time puzzle, video performance. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-141",
+              "text": {
+                "ru": "Призрачная траектория. Действие: Сохранить путь или позу и повторить либо обойти их. Применение: Координация, асинхронное соревнование, тренировка рисунка движения. Технологии: Анализ изображения; Распознавание или модель машинного обучения.",
+                "en": "Phantom trajectory. Action: Save a path or pose and repeat or bypass it. Application: Coordination, asynchronous competition, movement pattern training. Technologies: Image analysis; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-142",
+              "text": {
+                "ru": "Зацикленная видеочасть. Действие: Записать короткое действие и встроить его в повторяющийся игровой цикл. Применение: Видеомузыка, персонажи из живых актёров, монтажная игра. Технологии: Захват камеры.",
+                "en": "Looped video part. Action: Record a short action and build it into a repeating game loop. Application: Video music, live-action characters, editing game. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-143",
+              "text": {
+                "ru": "Последовательность действий. Действие: Проверять не только финал, но и порядок видимых этапов. Применение: Рецепт, сборка, обучение процедуре, визуальное комбо. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Sequence of actions. Action: Check not only the finale, but also the order of the visible steps. Application: Recipe, assembly, procedure training, visual combo. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-144",
+              "text": {
+                "ru": "Изменения за долгое время. Действие: Снимать одну сцену с интервалами и превращать наблюдаемые изменения в прогресс. Применение: Дневник постройки, творческий проект, наблюдение роста растения. Технологии: Захват камеры; Распознавание или модель машинного обучения.",
+                "en": "Changes over a long time. Action: Capture one scene at intervals and turn observed changes into progress. Application: Building diary, creative project, observing plant growth. Technologies: Camera capture; Recognition or machine learning model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-multiplayer",
+      "section": "section-1",
+      "title": {
+        "ru": "Несколько камер, участников и видеосвязь",
+        "en": "Multiple cameras, participants and video calling"
+      },
+      "description": {
+        "ru": "Камерное взаимодействие распределяется между людьми или точками съёмки. Одновременный захват разными камерами зависит от модели и режима. Совместная AR-сцена требует синхронизации координат и игрового состояния; видеопоток сам по себе её не даёт.",
+        "en": "Camera interaction is distributed between people or filming points. Simultaneous capture by different cameras depends on the model and mode. A collaborative AR scene requires synchronization of coordinates and game state; The video stream itself does not provide it."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developers.google.com/ar/develop/fundamentals",
+        "https://developer.android.com/media/camera/camera2/multi-camera"
+      ],
+      "branches": [
+        {
+          "id": "family-multiplayer-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-145",
+              "text": {
+                "ru": "Переключение фронт/тыл. Действие: Менять направленную на игрока и на окружение камеру как два игровых режима. Применение: «Я и мир», смена роли, перенос действия между сторонами телефона. Технологии: Захват камеры.",
+                "en": "Front/rear switching. Action: Change the camera aimed at the player and at the environment as two game modes. Application: “Me and the world”, change of role, transfer of action between the sides of the phone. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-146",
+              "text": {
+                "ru": "Фронтальная и тыловая одновременно. Действие: Связать действие лица с тем, что происходит перед задней камерой. Применение: Мимическое заклинание на предмет, реакция и событие, двойная сцена. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Front and rear at the same time. Action: Link the facial action with what is happening in front of the rear camera. Application: Mimic spell on an object, reaction and event, double scene. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-147",
+              "text": {
+                "ru": "Два задних ракурса. Действие: Использовать доступные камеры с разными полями зрения одновременно. Применение: Обзор и прицел, поиск детали, экспериментальная стереосцена. Технологии: Захват камеры; Возможности устройства.",
+                "en": "Two rear angles. Action: Use available cameras with different fields of view simultaneously. Application: Review and sighting, part search, experimental stereo scene. Technologies: Camera capture; Device capabilities."
+              }
+            },
+            {
+              "id": "variant-cam-148",
+              "text": {
+                "ru": "Общее поле нескольких телефонов. Действие: Совместить локальные карты и показывать одну пространственную игру. Применение: AR-настолка, совместная стройка, локальное сражение. Технологии: Пространственный трекинг AR; Сетевой обмен.",
+                "en": "Common field for several phones. Action: Combine local maps and show one spatial game. Application: AR tabletop, joint construction, local battle. Technologies: AR spatial tracking; Network exchange."
+              }
+            },
+            {
+              "id": "variant-cam-149",
+              "text": {
+                "ru": "Зеркальный дуэт. Действие: Повторять видимые движения другого участника в реальном времени. Применение: Танцевальная дуэль, синхронизация, командная координация. Технологии: Распознавание или модель машинного обучения; Сетевой обмен.",
+                "en": "Mirror duet. Action: Repeat the visible movements of another participant in real time. Application: Dance duel, synchronization, team coordination. Technologies: Recognition or machine learning model; Network exchange."
+              }
+            },
+            {
+              "id": "variant-cam-150",
+              "text": {
+                "ru": "Удалённый наблюдатель. Действие: Один игрок показывает мир камерой, другой направляет его по видеосвязи. Применение: Кооперативный детектив, квест-оператор, дистанционный экскурсовод. Технологии: Захват камеры; Сетевой обмен.",
+                "en": "Remote observer. Action: One player shows the world with a camera, the other guides it via video link. Application: Cooperative detective, quest operator, remote guide. Technologies: Camera capture; Network exchange."
+              }
+            },
+            {
+              "id": "variant-cam-151",
+              "text": {
+                "ru": "Раздельная информация. Действие: Показывать разным участникам разные камеры или цифровые слои. Применение: Асимметричный кооператив, шифры, поиск с оператором. Технологии: Захват камеры; Сетевой обмен.",
+                "en": "Separate information. Action: Show different participants different cameras or digital layers. Application: Asymmetric cooperative, ciphers, search with an operator. Technologies: Camera capture; Network exchange."
+              }
+            },
+            {
+              "id": "variant-cam-152",
+              "text": {
+                "ru": "Визуальная эстафета. Действие: Передавать следующему участнику кадр, жест или раскладку для продолжения. Применение: История по цепочке, фотоквест, коллективная анимация. Технологии: Захват камеры; Сетевой обмен.",
+                "en": "Visual relay race. Action: Pass a frame, gesture or layout to the next participant to continue. Application: Chain story, photo quest, group animation. Technologies: Camera capture; Network exchange."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-world-quests",
+      "section": "section-1",
+      "title": {
+        "ru": "Поиск в реальном мире и визуальные задания",
+        "en": "Real world search and visual tasks"
+      },
+      "description": {
+        "ru": "Камерные действия включаются в полноценные игровые циклы. Это составные механики: поиск плюс захват, распознавание и прогресс. Задания должны учитывать доступное окружение; распознавание допускает ошибку и подтверждение человеком.",
+        "en": "Chamber actions are included in full game cycles. These are the component mechanics: search plus capture, recognition and progression. Assignments must take into account the available environment; recognition allows for error and human confirmation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector",
+        "https://developers.google.com/ml-kit/vision/text-recognition/v2",
+        "https://developers.google.com/ar/develop/augmented-images"
+      ],
+      "branches": [
+        {
+          "id": "family-world-quests-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-153",
+              "text": {
+                "ru": "Фотоохота по списку. Действие: Последовательно снимать подходящие объекты и закрывать пункты задания. Применение: Городской квест, обучение лексике, детская экспедиция. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Photo hunt according to the list. Action: Consistently remove suitable objects and close the task points. Application: City quest, vocabulary training, children's expedition. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-154",
+              "text": {
+                "ru": "Визуальный бестиарий. Действие: Открывать записи коллекции по изображениям разрешённого набора объектов. Применение: Каталог игрушек, изучение природы, коллекционная игра. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Visual bestiary. Action: Open collection records based on images of a permitted set of objects. Application: Toy catalog, nature study, collectible game. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-155",
+              "text": {
+                "ru": "Улика с условиями. Действие: Зафиксировать нужный объект с нужной деталью или в нужном состоянии. Применение: Детектив, репортёрский квест, исследовательское обучение. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Evidence with conditions. Action: Fix the desired object with the desired detail or in the desired state. Application: Detective, reporter quest, investigative training. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-156",
+              "text": {
+                "ru": "Заказ на фотографию. Действие: Выполнить сочетание темы, композиции, момента и ограничений. Применение: Симулятор фотографа, творческое обучение, соревновательные задания. Технологии: Захват камеры.",
+                "en": "Order a photo. Action: Perform a combination of theme, composition, moment and constraints. Application: Photographer simulator, creative training, competitive tasks. Technologies: Camera capture."
+              }
+            },
+            {
+              "id": "variant-cam-157",
+              "text": {
+                "ru": "Окружение как ресурсы. Действие: Использовать визуальные признаки найденных вещей для получения игровых материалов. Применение: Городской крафт, прогулочная игра, ресурсная головоломка. Технологии: Распознавание или модель машинного обучения.",
+                "en": "Environment as resources. Action: Use visual attributes of found things to obtain game materials. Application: Urban crafting, walking game, resource puzzle. Technologies: Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-158",
+              "text": {
+                "ru": "Реальное действие меняет мир. Действие: Изменить физическую сцену, после чего цифровая система обновляет состояние. Применение: Сортировка на столе, постройка укрытия для виртуального существа, пазл. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Real action changes the world. Action: Change the physical scene, after which the digital system updates the state. Application: Sorting on a table, building a shelter for a virtual creature, puzzle. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-159",
+              "text": {
+                "ru": "Маршрут по визуальным ориентирам. Действие: Находить последовательность знакомых изображений или подготовленных объектов. Применение: Музейный квест, навигационная загадка, тематическая экскурсия. Технологии: Маркеры; Распознавание или модель машинного обучения.",
+                "en": "Route according to visual landmarks. Action: Find a sequence of familiar images or prepared objects. Application: Museum quest, navigation riddle, thematic excursion. Technologies: Markers; Recognition or machine learning model."
+              }
+            },
+            {
+              "id": "variant-cam-160",
+              "text": {
+                "ru": "Миссия от локальной сцены. Действие: Предложить задание из того, что система действительно обнаружила вокруг. Применение: Адаптивный scavenger hunt, бытовое обучение, игра без фиксированного реквизита. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Mission from the local scene. Action: Suggest a task from what the system actually detected around. Application: Adaptive scavenger hunt, everyday learning, game without fixed props. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hybrid",
+      "section": "section-1",
+      "title": {
+        "ru": "Гибридные и экспериментальные способы",
+        "en": "Hybrid and experimental methods"
+      },
+      "description": {
+        "ru": "Камера участвует в системе вместе с другими входами или сложной моделью. Здесь особенно важно проверять прототип на целевых телефонах. Эти варианты не являются универсальными возможностями любой камеры.",
+        "en": "The camera participates in the system along with other inputs or a complex model. This is where it is especially important to test the prototype on target phones. These options are not universal capabilities of any camera."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/documentation/avfoundation/capture-setup",
+        "https://developers.google.com/ar/develop/fundamentals",
+        "https://developers.google.com/ar/develop/geospatial",
+        "https://www.w3.org/TR/mediacapture-streams/"
+      ],
+      "branches": [
+        {
+          "id": "family-hybrid-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-cam-161",
+              "text": {
+                "ru": "Камера и микрофон. Действие: Согласовать видимое действие со звуком: жест со словом, движение с хлопком. Применение: Мультимодальные команды, ритм-игра, сценический перформанс. Технологии: Сочетание каналов; Звук.",
+                "en": "Camera and microphone. Action: Coordinate visible action with sound: gesture with word, movement with clap. Application: Multimodal commands, rhythm game, stage performance. Technologies: Combination of channels; Sound."
+              }
+            },
+            {
+              "id": "variant-cam-162",
+              "text": {
+                "ru": "Камера и IMU. Действие: Сопоставить видео с вращением и ускорением устройства. Применение: Пространственный контроллер, устойчивый AR-трекинг, движение телефона как инструмент. Технологии: Сочетание каналов; Пространственный трекинг AR.",
+                "en": "Camera and IMU. Action: Match the video with the rotation and acceleration of the device. Application: Spatial controller, sustainable AR tracking, phone movement as a tool. Technologies: Combination of channels; AR spatial tracking."
+              }
+            },
+            {
+              "id": "variant-cam-163",
+              "text": {
+                "ru": "Камера и местоположение. Действие: Объединить визуальный ориентир с GPS и при доступности визуальным позиционированием. Применение: Городская AR-игра, контент у достопримечательности, маршрут. Технологии: Сочетание каналов; Геолокация.",
+                "en": "Camera and location. Action: Combine a visual landmark with GPS and, if available, visual positioning. Application: Urban AR game, content at a landmark, route. Technologies: Combination of channels; Geolocation."
+              }
+            },
+            {
+              "id": "variant-cam-164",
+              "text": {
+                "ru": "Камера и сенсорный экран. Действие: Выбирать область касанием, затем связывать её с реальным объектом или эффектом. Применение: Интерактивное вырезание, трекинг выбранной цели, рисование поверх мира. Технологии: Сочетание каналов; Анализ изображения.",
+                "en": "Camera and touch screen. Action: Select an area by touch, then associate it with a real object or effect. Application: Interactive cutting, tracking a selected target, drawing on top of the world. Technologies: Combination of channels; Image analysis."
+              }
+            },
+            {
+              "id": "variant-cam-165",
+              "text": {
+                "ru": "Световой обмен между устройствами. Действие: Экран или фонарь одного устройства посылает код камере другого. Применение: Локальное соединение, игровой ключ, физический канал загадки. Технологии: Сочетание каналов; Собственный алгоритм.",
+                "en": "Light exchange between devices. Action: The screen or flashlight of one device sends a code to the camera of another. Application: Local connection, game key, physical riddle channel. Technologies: Combination of channels; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-166",
+              "text": {
+                "ru": "Визуальный управляющий агент. Действие: Модель интерпретирует ограниченную сцену и предлагает следующий ход или реакцию. Применение: Адаптивный ведущий, процедурное обучение, экспериментальный NPC. Технологии: Распознавание или модель машинного обучения; Генеративная модель; Экспериментальный прототип.",
+                "en": "Visual management agent. Action: The model interprets the limited scene and suggests the next move or reaction. Application: Adaptive presenter, procedural learning, experimental NPC. Technologies: Recognition or machine learning model; Generative model; Experimental prototype."
+              }
+            },
+            {
+              "id": "variant-cam-167",
+              "text": {
+                "ru": "Распознавание составного действия. Действие: По времени связывать предмет, жест и изменение сцены. Применение: Разбор визуального рецепта, интерактивная история, комплексное комбо. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм.",
+                "en": "Recognition of compound action. Action: To associate an object, gesture and scene change by time. Application: Analysis of a visual recipe, interactive story, complex combo. Technologies: Recognition or machine learning model; Own algorithm."
+              }
+            },
+            {
+              "id": "variant-cam-168",
+              "text": {
+                "ru": "Стиль исполнения. Действие: Сравнивать ритм, плавность или выразительность видимого движения с выбранным критерием. Применение: Творческий челлендж, оценка анимационного этюда, танцевальная игра. Технологии: Распознавание или модель машинного обучения; Собственный алгоритм; Экспериментальный прототип.",
+                "en": "Performance style. Action: Compare the rhythm, smoothness or expressiveness of visible movement with a selected criterion. Application: Creative challenge, evaluation of an animated sketch, dance game. Technologies: Recognition or machine learning model; Own algorithm; Experimental prototype."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Границы",
+        "en": "Borders"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Механика = действие человека → наблюдаемый сигнал → правило системы → результат или обратная связь.",
+            "en": "Mechanics = human action → observed signal → system rule → result or feedback."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "168 записей покрывают основные семейства взаимодействия. Список не является математически исчерпывающим: сочетания, новые модели и новое оборудование создают дополнительные механики. Часть записей является составными игровыми циклами.",
+            "en": "The 168 entries cover the major interaction families. The list is not mathematically exhaustive: combinations, new models and new equipment create additional mechanics. Some of the recordings are composite game loops."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Apple AVFoundation: захват и управление камерой",
+        "en": "Apple AVFoundation: Camera Capture and Control"
+      },
+      "url": "https://developer.apple.com/documentation/avfoundation/capture-setup",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android CameraX: zoom, torch, focus, exposure",
+        "en": "Android CameraX: zoom, torch, focus, exposure"
+      },
+      "url": "https://developer.android.com/media/camera/camerax/configuration",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "MediaPipe Face Landmarker",
+        "en": "MediaPipe Face Landmarker"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "MediaPipe Hand Landmarker",
+        "en": "MediaPipe Hand Landmarker"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/hand_landmarker",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "MediaPipe Pose Landmarker",
+        "en": "MediaPipe Pose Landmarker"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "MediaPipe Image Segmenter",
+        "en": "MediaPipe Image Segmenter"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/image_segmenter",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "MediaPipe Object Detector",
+        "en": "MediaPipe Object Detector"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/vision/object_detector",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ML Kit Text Recognition v2: поддерживаемые письменности",
+        "en": "ML Kit Text Recognition v2: supported scripts"
+      },
+      "url": "https://developers.google.com/ml-kit/vision/text-recognition/v2",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ML Kit Barcode Scanning",
+        "en": "ML Kit Barcode Scanning"
+      },
+      "url": "https://developers.google.com/ml-kit/vision/barcode-scanning",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ARCore Augmented Images",
+        "en": "ARCore Augmented Images"
+      },
+      "url": "https://developers.google.com/ar/develop/augmented-images",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ARCore: motion tracking, planes, anchors",
+        "en": "ARCore: motion tracking, planes, anchors"
+      },
+      "url": "https://developers.google.com/ar/develop/fundamentals",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ARCore Depth: глубина и окклюзия",
+        "en": "ARCore Depth: depth and occlusion"
+      },
+      "url": "https://developers.google.com/ar/develop/depth",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "ARCore Geospatial",
+        "en": "ARCore Geospatial"
+      },
+      "url": "https://developers.google.com/ar/develop/geospatial",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple ARKit: world tracking",
+        "en": "Apple ARKit: world tracking"
+      },
+      "url": "https://developer.apple.com/documentation/arkit/understanding-world-tracking",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android: multi-camera и аппаратные ограничения",
+        "en": "Android: multi-camera and hardware limitations"
+      },
+      "url": "https://developer.android.com/media/camera/camera2/multi-camera",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C Media Capture and Streams",
+        "en": "W3C Media Capture and Streams"
+      },
+      "url": "https://www.w3.org/TR/mediacapture-streams/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

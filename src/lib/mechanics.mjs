@@ -7,6 +7,27 @@ import detective from '../data/mechanics/detective.json' with { type: 'json' };
 import boss from '../data/mechanics/boss-fight-atlas.json' with { type: 'json' };
 import games from '../data/mechanics/game-mechanics.json' with { type: 'json' };
 import rpgGrind from '../data/mechanics/rpg-grind.json' with { type: 'json' };
+import visualNovel from '../data/mechanics/visual-novel.json' with { type: 'json' };
+import dialogue from '../data/mechanics/dialogue.json' with { type: 'json' };
+import deckBuilding from '../data/mechanics/deck-building.json' with { type: 'json' };
+import roguelike from '../data/mechanics/roguelike.json' with { type: 'json' };
+import metroidvania from '../data/mechanics/metroidvania.json' with { type: 'json' };
+import metroidbrainia from '../data/mechanics/metroidbrainia.json' with { type: 'json' };
+import puzzle from '../data/mechanics/puzzle.json' with { type: 'json' };
+import engagement from '../data/mechanics/engagement-retention.json' with { type: 'json' };
+import devices from '../data/mechanics/electronic-devices.json' with { type: 'json' };
+import drawing from '../data/mechanics/drawing.json' with { type: 'json' };
+import perception from '../data/mechanics/perception.json' with { type: 'json' };
+import camera from '../data/mechanics/phone-camera.json' with { type: 'json' };
+import microphone from '../data/mechanics/phone-microphone.json' with { type: 'json' };
+import motion from '../data/mechanics/phone-motion.json' with { type: 'json' };
+import flashlight from '../data/mechanics/phone-flashlight.json' with { type: 'json' };
+import haptics from '../data/mechanics/phone-haptics.json' with { type: 'json' };
+import touch from '../data/mechanics/phone-touch.json' with { type: 'json' };
+import magnetometer from '../data/mechanics/phone-magnetometer.json' with { type: 'json' };
+import keyboard from '../data/mechanics/keyboard.json' with { type: 'json' };
+import mouse from '../data/mechanics/mouse.json' with { type: 'json' };
+import trackpad from '../data/mechanics/trackpad.json' with { type: 'json' };
 import { absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 
@@ -21,6 +42,27 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
   boss,
   games,
   rpgGrind,
+  visualNovel,
+  dialogue,
+  deckBuilding,
+  roguelike,
+  metroidvania,
+  metroidbrainia,
+  puzzle,
+  engagement,
+  devices,
+  drawing,
+  perception,
+  camera,
+  microphone,
+  motion,
+  flashlight,
+  haptics,
+  touch,
+  magnetometer,
+  keyboard,
+  mouse,
+  trackpad,
 ]);
 
 /**

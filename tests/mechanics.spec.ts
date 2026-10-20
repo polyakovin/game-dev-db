@@ -21,6 +21,27 @@ const catalogs = [
   'boss-fight-atlas',
   'game-mechanics',
   'rpg-grind',
+  'visual-novel',
+  'dialogue',
+  'deck-building',
+  'roguelike',
+  'metroidvania',
+  'metroidbrainia',
+  'puzzle',
+  'engagement-retention',
+  'electronic-devices',
+  'drawing',
+  'perception',
+  'phone-camera',
+  'phone-microphone',
+  'phone-motion',
+  'phone-flashlight',
+  'phone-haptics',
+  'phone-touch',
+  'phone-magnetometer',
+  'keyboard',
+  'mouse',
+  'trackpad',
 ]
   .map((id) =>
     JSON.parse(
@@ -87,6 +108,8 @@ for (const lang of ['ru', 'en'] as const) {
       await page
         .locator('#mechanic-section')
         .selectOption(c.sections.at(-1).id);
+      if (first.section === c.sections.at(-1).id)
+        await page.locator('#mechanic-search').fill('no-such-mechanic-000');
       await expect(page.locator('[data-mechanic-empty]')).toBeVisible();
       await page.locator('[data-mechanic-empty] [data-reset]').click();
       await expect(page.locator('#mechanic-search')).toHaveValue('');

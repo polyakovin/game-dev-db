@@ -1,0 +1,1943 @@
+{
+  "id": "phone-motion",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Датчики движения телефона",
+    "en": "Phone motion interactions"
+  },
+  "description": {
+    "ru": "Датчики движения телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone motion sensors: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "96 механик и сценариев; базовые жесты, схемы управления и производные применения выделены по уровням. Примеры являются идеями дизайна, кроме отдельно подтверждённых продуктов.",
+    "en": "96 mechanics and scenarios; Basic gestures, control schemes and derived applications are separated into layers. Examples are design ideas other than individually confirmed products."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-tilt",
+      "section": "section-1",
+      "title": {
+        "ru": "Наклон и непрерывное управление",
+        "en": "Tilt and continuous control"
+      },
+      "description": {
+        "ru": "Как угол превращается в положение, скорость, усилие или параметр. Различия определяют ощущение управления, даже если исходный жест один.",
+        "en": "How an angle turns into a position, speed, force or parameter. The differences determine the feeling of control, even if the original gesture is the same."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-tilt-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m001",
+              "text": {
+                "ru": "Наклон → положение. Действие: Угол непосредственно задаёт положение объекта; возврат телефона возвращает объект. Применение: Ракетка в арканоиде, ползунок, позиция платформы, курсор. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Подходит для ограниченного диапазона; нужны нейтральная поза и небольшая мёртвая зона.",
+                "en": "Tilt → position. Action: The angle directly specifies the position of the object; returning the phone returns the object. Application: Arkanoid racket, slider, platform position, cursor. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Suitable for a limited range; you need a neutral posture and a small dead zone..."
+              }
+            },
+            {
+              "id": "variant-m002",
+              "text": {
+                "ru": "Наклон → скорость. Действие: Чем сильнее наклон, тем быстрее движется объект; в нейтрали он останавливается. Применение: Персонаж в платформере, скольжение по меню, прокрутка длинного текста. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Ограничивать максимальную скорость; дать возможность быстро остановиться.",
+                "en": "Incline → speed. Action: The stronger the tilt, the faster the object moves; in neutral it stops. Application: Platformer character, sliding through menus, scrolling long text. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Limit maximum speed; give me the opportunity to stop quickly..."
+              }
+            },
+            {
+              "id": "variant-m003",
+              "text": {
+                "ru": "Наклон → ускорение. Действие: Наклон добавляет ускорение; накопленная виртуальная скорость сохраняется. Применение: Корабль с инерцией, физическая головоломка, движение по скользкой поверхности. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Это модель игрового объекта, а не измеренная скорость телефона; торможение нужно объяснить.",
+                "en": "Tilt → acceleration. Action: Tilt adds acceleration; the accumulated virtual speed is preserved. Application: Ship with inertia, physics puzzle, movement on a slippery surface. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: This is a game object model, not a measured phone speed; braking needs to be explained."
+              }
+            },
+            {
+              "id": "variant-m004",
+              "text": {
+                "ru": "Наклон в двух осях. Действие: Два компонента наклона задают направление на плоскости, а отклонение от нейтрали задаёт величину ввода. Применение: Двумерный джойстик, перемещение по карте, управление дроном в условной плоскости. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Преобразовать оси под ориентацию экрана и выбрать круговую либо раздельную мёртвую зону.",
+                "en": "Tilt in two axes. Action: The two tilt components set the direction on the plane, and the deviation from the neutral sets the input amount. Application: 2D joystick, moving around the map, controlling the drone in a conventional plane. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Convert axes to screen orientation and select circular or split dead zone."
+              }
+            },
+            {
+              "id": "variant-m005",
+              "text": {
+                "ru": "Руль, крен и тангаж. Действие: Угол телефона управляет поворотом транспорта или отклонением виртуального корпуса. Применение: Автогонки, самолёт, сноуборд, лодка, планер. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Для спокойных наклонов хватает A; при быстрых вращениях предпочтительна связка с гироскопом.",
+                "en": "Rudder, roll and pitch. Action: The angle of the phone controls the rotation of the vehicle or the deviation of the virtual body. Application: Auto racing, airplane, snowboard, boat, glider. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: For quiet slopes, A is sufficient; for fast rotations, a combination with a gyroscope is preferable."
+              }
+            },
+            {
+              "id": "variant-m006",
+              "text": {
+                "ru": "Тонкая доводка прицела. Действие: Малые изменения ориентации сдвигают прицел относительно исходного положения. Применение: Стрельба после грубого наведения пальцем, снайперская оптика, указатель презентации. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Для горизонтального поворота и быстрой доводки нужен гироскоп; предусмотреть повторное центрирование.",
+                "en": "Fine adjustment of the sight. Action: Small changes in orientation move the sight relative to its original position. Application: Shooting after rough finger pointing, sniper optics, presentation pointer. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: For horizontal rotation and fast adjustment, a gyroscope is needed; provide for re-centering."
+              }
+            },
+            {
+              "id": "variant-m007",
+              "text": {
+                "ru": "Наклон → параметр. Действие: Одна ось изменяет величину, две оси управляют двумя связанными параметрами. Применение: Громкость и тембр, масштаб, сила ветра, угол и мощность запуска, смешивание цветов. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Обозначить пределы и текущее значение; решить, сохраняется ли оно после возврата в нейтраль.",
+                "en": "Tilt → parameter. Action: One axis changes the value, two axes control two related parameters. Application: Volume and timbre, scale, wind force, launch angle and power, color mixing. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: State the limits and current value; decide whether it persists after returning to neutral."
+              }
+            },
+            {
+              "id": "variant-m008",
+              "text": {
+                "ru": "Наклон → смешение состояний. Действие: Отклонение плавно меняет долю двух состояний или степень раскрытия эффекта. Применение: Мир света и тени, проявление скрытого слоя, прозрачность карточки, переход между формами. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Держать диапазон небольшим, чтобы экран оставался читаемым.",
+                "en": "Slope → state mixing. Action: Deviation smoothly changes the proportion of two states or the degree of disclosure of the effect. Application: The world of light and shadow, manifestation of a hidden layer, card transparency, transition between forms. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Keep the range small to keep the screen readable."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-pose",
+      "section": "section-1",
+      "title": {
+        "ru": "Положения и дискретные команды",
+        "en": "Positions and discrete commands"
+      },
+      "description": {
+        "ru": "Событие наступает при переходе в положение, пересечении порога или удержании позы.",
+        "en": "The event occurs when entering a position, crossing a threshold, or holding a pose."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-pose-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m009",
+              "text": {
+                "ru": "Команда по порогу. Действие: При пересечении углового порога выполняется одна команда. Применение: Уклонение, смена полосы, ответ «да/нет», перелистывание. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Нужны разные пороги включения и отпускания, иначе команда будет дребезжать.",
+                "en": "Threshold command. Action: When crossing the corner threshold, one command is executed. Application: Evasion, lane change, yes/no answer, flipping. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Different thresholds for turning on and releasing are needed, otherwise the command will rattle."
+              }
+            },
+            {
+              "id": "variant-m010",
+              "text": {
+                "ru": "Выбор положения или сектора. Действие: Несколько устойчивых наклонов соответствуют разным вариантам. Применение: Радиальное меню, выбор способности, направления, символа или ответа. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Число секторов ограничивает удобство; соседние положения должны легко различаться.",
+                "en": "Select a position or sector. Action: Several steady tilts correspond to different options. Application: Radial menu, select ability, direction, symbol or answer. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: The number of sectors limits convenience; adjacent positions should be easily distinguishable."
+              }
+            },
+            {
+              "id": "variant-m011",
+              "text": {
+                "ru": "Удержание позы. Действие: Команда подтверждается, если телефон остаётся в заданном положении достаточно долго. Применение: Замок, активация способности, выбор без касания, обучение позам. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Показывать прогресс и учитывать колебания руки; не требовать точного угла без допуска.",
+                "en": "Holding the pose. Action: The command is confirmed if the phone remains in the specified position for a long enough time. Application: Lock, ability activation, selection without touching, learning poses. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Show progress and take into account hand fluctuations; do not demand an exact angle without tolerance."
+              }
+            },
+            {
+              "id": "variant-m012",
+              "text": {
+                "ru": "Возврат в нейтраль. Действие: Возвращение после жеста считается отдельным событием. Применение: Завершение хода, отпускание рычага, отмена предпросмотра, готовность к следующему жесту. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Нейтраль должна быть доступна из удобного хвата, а не обязательно совпадать с горизонталью.",
+                "en": "Return to neutral. Action: Returning after a gesture is considered a separate event. Application: Completing a move, releasing a lever, canceling preview, ready for the next gesture. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the conditions described. Limitations: Neutral must be accessible from a comfortable grip and does not have to be horizontal."
+              }
+            },
+            {
+              "id": "variant-m013",
+              "text": {
+                "ru": "Экраном вниз или вверх. Действие: Переход между двумя ориентациями меняет состояние приложения. Применение: Пауза, скрытие информации, открытие карты, режим тишины внутри приложения. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Ориентация не доказывает контакт со столом; автоматические действия ОС зависят от платформы.",
+                "en": "Screen down or up. Action: The transition between two orientations changes the state of the application. Application: Pause, hide information, open a map, silence mode within the application. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Orientation does not prove contact with the table; Automatic OS actions depend on the platform."
+              }
+            },
+            {
+              "id": "variant-m014",
+              "text": {
+                "ru": "Переворот на 180°. Действие: Изменение направления вектора тяжести в осях телефона переключает сторону или правило. Применение: Переворот карточки, смена гравитации, альтернативный мир, новый раунд. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Поворот плоского телефона на столе вокруг вертикали так не определяется; это другой жест.",
+                "en": "180° flip. Action: Changing the direction of the gravity vector in the phone axes switches the side or rule. Application: Flipping the card, changing gravity, alternative world, new round. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Rotation of a flat phone on a table around the vertical is not defined this way; this is a different gesture..."
+              }
+            },
+            {
+              "id": "variant-m015",
+              "text": {
+                "ru": "Портрет ↔ альбом. Действие: Устойчивое изменение ориентации включает другой режим представления или взаимодействия. Применение: Карта против панели приборов, чтение против игры, смена инструмента. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Ориентацию интерфейса согласовать с системной блокировкой поворота и доступным API.",
+                "en": "Portrait ↔ album. Action: Persistent change in orientation enables a different mode of presentation or interaction. Application: Map vs. Dashboard, Reading vs. Game, Tool Change. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: The orientation of the interface must be consistent with the system rotation lock and the available API."
+              }
+            },
+            {
+              "id": "variant-m016",
+              "text": {
+                "ru": "Последовательность поз. Действие: Приложение проверяет порядок нескольких различимых ориентаций. Применение: Кодовый замок, танцевальная комбинация, заклинание, обучающая последовательность. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Нужны тайм-ауты и видимая обратная связь; такой жест не следует считать стойким паролем.",
+                "en": "Sequence of poses. Action: The application checks the order of several distinguishable orientations. Application: Code lock, dance combination, spell, training sequence. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Requires timeouts and visible feedback; such a gesture should not be considered a strong password."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-impulse",
+      "section": "section-1",
+      "title": {
+        "ru": "Рывки, взмахи и остановки",
+        "en": "Thrusts, swings and stops"
+      },
+      "description": {
+        "ru": "Короткие движения распознаются по направлению, пикам, длительности и порядку фаз. Это признаки движения, а не точная пространственная траектория.",
+        "en": "Short movements are recognized by direction, peaks, duration and phase order. These are signs of movement, not an exact spatial trajectory."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-impulse-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m017",
+              "text": {
+                "ru": "Одиночный толчок. Действие: Один короткий пик движения запускает событие. Применение: Прыжок, удар по виртуальному предмету, акцент, выбивание застрявшего объекта. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Отделять намеренный жест от перестановки телефона и случайного касания.",
+                "en": "Single push. Action: One short burst of movement triggers an event. Application: Jump, hit a virtual object, accent, dislodge a stuck object. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Separate intentional gesture from moving the phone and accidental touch."
+              }
+            },
+            {
+              "id": "variant-m018",
+              "text": {
+                "ru": "Направленный рывок. Действие: Начальная и последующая фазы импульса определяют условное направление жеста. Применение: Рывок персонажа, смахивание карточки, бросок предмета, короткое уклонение. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: При фиксированном хвате возможен A; свободное вращение требует компенсации ориентации.",
+                "en": "Directed jerk. Action: The initial and subsequent phases of the impulse determine the conditional direction of the gesture. Application: Character dash, card swipe, object throw, short dodge. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of movement from gravity. Limitations: With a fixed grip, A is possible; Free rotation requires orientation compensation."
+              }
+            },
+            {
+              "id": "variant-m019",
+              "text": {
+                "ru": "Толчок вперёд и оттягивание. Действие: Движение вдоль выбранной оси различается по знаку и порядку ускорений. Применение: Толкнуть дверь, притянуть предмет, толчок щитом, взаимодействие с рычагом. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Это классификация короткого жеста, а не измерение расстояния до объекта.",
+                "en": "Push forward and pull back. Action: Movement along the selected axis differs in the sign and order of acceleration. Application: Push a door, pull an object, push with a shield, interact with a lever. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separating movement from gravity. Limitations: This is a classification of a short gesture, not a measurement of distance to an object."
+              }
+            },
+            {
+              "id": "variant-m020",
+              "text": {
+                "ru": "Подъём и опускание жестом. Действие: Короткая направленная последовательность распознаётся как «поднять» или «опустить». Применение: Запуск шара, подъём платформы, подсечка в рыбалке, опускание щита. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Не приписывать акселерометру абсолютную высоту; для простого жеста нужен заданный хват.",
+                "en": "Raising and lowering gesture. Action: A short directional sequence is recognized as “raise” or “lower”. Application: Launching a ball, raising a platform, hooking in fishing, lowering a shield. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separating motion from gravity. Limitations: Do not assign absolute altitude to the accelerometer; For a simple gesture you need a given grip."
+              }
+            },
+            {
+              "id": "variant-m021",
+              "text": {
+                "ru": "Взмах с замахом. Действие: Движение делится на подготовку и рабочий взмах. Применение: Удар мечом, ракеткой, клюшкой или молотком; оценка момента попадания. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Сила игрового удара является условной оценкой признаков движения, а не физической силой контакта.",
+                "en": "Swing with a swing. Action: The movement is divided into preparation and working swing. Application: Strike with a sword, racket, club or hammer; estimation of the moment of impact. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating motion from gravity. Limitations: Playing hit force is a proxy for motion cues, not physical contact force."
+              }
+            },
+            {
+              "id": "variant-m022",
+              "text": {
+                "ru": "Резкая остановка. Действие: После движения приложение ищет фазу торможения и последующую стабильность. Применение: Поймать виртуальный предмет, остановить стрелку, завершить удар, парировать. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Один пик торможения не доказывает остановку; проверить короткое окно после него.",
+                "en": "Abrupt stop. Action: After movement, the application looks for the braking phase and subsequent stability. Application: Catch a virtual object, stop the arrow, complete a blow, parry. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: One peak of braking does not prove stopping; check the short window after it."
+              }
+            },
+            {
+              "id": "variant-m023",
+              "text": {
+                "ru": "Градация импульса. Действие: Амплитуда и длительность жеста выбирают категорию «мягко / обычно / сильно». Применение: Сила броска, глубина забивания, громкость ноты, дальность игрового толчка. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Калибровать диапазон на пользователе и ограничивать максимум; не поощрять всё более сильные движения.",
+                "en": "Pulse gradation. Action: The amplitude and duration of the gesture select the category “soft / usually / strong”. Application: Throwing force, driving depth, note volume, playing push range. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Calibrate the range on the user and limit the maximum; do not encourage increasingly stronger movements."
+              }
+            },
+            {
+              "id": "variant-m024",
+              "text": {
+                "ru": "Постукивание по корпусу. Действие: Короткая вибрация от лёгкого постукивания вызывает команду. Применение: Одинарный или двойной сигнал, скрытая кнопка, ритмический ввод. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Экспериментальный вариант: хват, чехол и датчик меняют сигнал; место удара одним акселерометром надёжно не определяется.",
+                "en": "Tapping on the body. Action: A short vibration from a light tap triggers a command. Application: Single or double signal, hidden button, rhythmic input. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Experimental: grip, case and sensor change the signal; The location of the impact cannot be reliably determined by the accelerometer alone."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-rhythm",
+      "section": "section-1",
+      "title": {
+        "ru": "Встряхивание, повторение и ритм",
+        "en": "Shaking, repetition and rhythm"
+      },
+      "description": {
+        "ru": "Серия движений становится количеством, темпом, интенсивностью или временным рисунком.",
+        "en": "A series of movements becomes a number, tempo, intensity or timing pattern."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-rhythm-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m025",
+              "text": {
+                "ru": "Встряхивание как команда. Действие: Серия разнонаправленных колебаний трактуется как один жест. Применение: Сброс поля, перемешивание, очистка эффекта, вызов действия. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Считать серию целиком, а не каждую полуволну отдельной командой.",
+                "en": "Shaking like a team. Action: A series of multidirectional oscillations is interpreted as one gesture. Application: Field reset, mixing, clearing an effect, calling an action. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Count the entire series, and not each half-wave as a separate command."
+              }
+            },
+            {
+              "id": "variant-m026",
+              "text": {
+                "ru": "Накопление от движения. Действие: Мера интенсивности движения за время наполняет виртуальный ресурс. Применение: Заряд батареи, разогрев, энергия заклинания, возбуждение существа. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Это условный игровой ресурс, не измерение работы или потраченных калорий.",
+                "en": "Accumulation from movement. Action: A measure of the intensity of movement over time fills a virtual resource. Application: Battery charge, warming up, spell energy, creature arousal. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: This is a conditional game resource, not a measurement of work or calories burned."
+              }
+            },
+            {
+              "id": "variant-m027",
+              "text": {
+                "ru": "Подсчёт полных циклов. Действие: Засчитываются завершённые пары фаз повторяющегося движения. Применение: Насос, качание, тренажёр моторики, задания на определённое число повторов. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Не путать цикл с числом пиков; задавать минимальную длительность и диапазон.",
+                "en": "Counting complete cycles. Action: Completed pairs of phases of a repeating movement are counted. Application: Pump, swing, motor skills trainer, tasks for a certain number of repetitions. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Do not confuse the cycle with the number of peaks; set the minimum duration and range."
+              }
+            },
+            {
+              "id": "variant-m028",
+              "text": {
+                "ru": "Удержание темпа. Действие: Частота повторений должна оставаться в целевом диапазоне. Применение: Гребля, работа механизма, поддержание горения, ритмический конвейер. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Нужны несколько циклов для оценки; темп должен быть удобен и подстраиваться под пользователя.",
+                "en": "Maintaining the pace. Action: Repetition rate must remain within target range. Applications: Rowing, machine operation, combustion maintenance, rhythmic conveyor. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Requires several cycles for evaluation; the pace should be comfortable and adapt to the user."
+              }
+            },
+            {
+              "id": "variant-m029",
+              "text": {
+                "ru": "Попадание в музыкальную долю. Действие: Импульс оценивается относительно заданного момента. Применение: Ритм-игра, виртуальный барабан, синхронное действие под музыку. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Опираться на временные метки и учитывать задержки звука, датчика и обратной связи.",
+                "en": "Hitting the musical beat. Action: The impulse is evaluated relative to a given moment. Application: Rhythm game, virtual drum, synchronized action to music. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Rely on timestamps and take into account audio, sensor and feedback delays."
+              }
+            },
+            {
+              "id": "variant-m030",
+              "text": {
+                "ru": "Правильная интенсивность. Действие: Успех даётся за движение внутри диапазона, а не за максимум. Применение: Взбивание смеси, калибровка машины, уход за хрупким существом. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Показывать нижнюю и верхнюю границы; сравнивать сглаженную меру, а не одиночный выброс.",
+                "en": "The right intensity. Action: Success is given for movement within the range, and not for the maximum. Application: Beating a mixture, calibrating a machine, caring for a fragile creature. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Show lower and upper bounds; compare a smoothed measure, not a single outlier."
+              }
+            },
+            {
+              "id": "variant-m031",
+              "text": {
+                "ru": "Чередование направлений. Действие: Проверяется порядок движений по осям или смена направления. Применение: Комбинация «влево-вправо-вверх», взлом, танцевальная партия, ритуал. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: С A задавать фиксированный хват; AG помогает сохранять смысл направлений при вращении.",
+                "en": "Alternation of directions. Action: The order of movements along the axes or change of direction is checked. Application: Combination “left-right-up”, hacking, dance party, ritual. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: With A set a fixed grip; AG helps maintain sense of directions when rotating."
+              }
+            },
+            {
+              "id": "variant-m032",
+              "text": {
+                "ru": "Раскачивание и смена ритма. Действие: Плавное периодическое движение, ускорение или замедление ритма управляет процессом. Применение: Укачивание персонажа, раскачка качелей, разгон резонанса, темповое заклинание. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Отделить поворот от линейного движения и согласовать игровую частоту с удобным жестом.",
+                "en": "Rocking and changing rhythm. Action: Smooth periodic movement, acceleration or deceleration of the rhythm controls the process. Application: Rocking a character, rocking a swing, accelerating resonance, tempo spell. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separating movement from gravity. Limitations: Separate rotation from linear movement and match the game frequency with a convenient gesture."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-steady",
+      "section": "section-1",
+      "title": {
+        "ru": "Неподвижность, баланс и точность",
+        "en": "Stillness, balance and precision"
+      },
+      "description": {
+        "ru": "Пользователь управляет качеством движения: удерживает, стабилизирует, плавно ведёт или вовремя замирает.",
+        "en": "The user controls the quality of movement: holds, stabilizes, drives smoothly or freezes in time."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-steady-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m033",
+              "text": {
+                "ru": "Замирание. Действие: Низкая изменчивость сигналов за окно времени считается выполнением условия. Применение: «Замри», скрытность, выжидание, остановка опасного механизма. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Малая активность сенсоров не доказывает абсолютный покой: равномерное перемещение не видно; гироскоп нужен для вращений.",
+                "en": "Fading. Action: Low variability of signals over a window of time is considered to fulfill the condition. Application: “Freeze”, stealth, waiting, stopping a dangerous mechanism. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: Low sensor activity does not prove absolute rest: uniform movement is not visible; A gyroscope is needed for rotation."
+              }
+            },
+            {
+              "id": "variant-m034",
+              "text": {
+                "ru": "Прицел с успокоением. Действие: Чем устойчивее ориентация, тем выше точность или быстрее заполняется шкала. Применение: Снайперский выстрел, фотографирование, сканирование, удержание луча. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Это игровая оценка стабильности; не обещать по ней улучшение реальной камеры.",
+                "en": "Sight with reassurance. Action: The more stable the orientation, the higher the accuracy or the faster the scale fills. Application: Sniper shot, photography, scanning, beam hold. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating motion from gravity. Limitations: This is a gaming stability assessment; Don't promise it will improve the real camera..."
+              }
+            },
+            {
+              "id": "variant-m035",
+              "text": {
+                "ru": "Горизонтальное равновесие. Действие: Телефон нужно удерживать близко к выбранной плоскости. Применение: Поднос, балансирующая платформа, уровень, хрупкий груз. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Выбрать допуск и разрешить удобную калибровку; при движении тела лучше AG.",
+                "en": "Horizontal balance. Action: The phone must be held close to the selected plane. Application: Tray, balancing platform, level, fragile load. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Select tolerance and allow convenient calibration; when moving the body, AG is better."
+              }
+            },
+            {
+              "id": "variant-m036",
+              "text": {
+                "ru": "Неудобная заданная поза. Действие: Целевая ориентация отличается от привычной нейтрали. Применение: Баланс канатоходца, удержание ключа в замке, позиционная головоломка. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Не требовать крайних положений кисти; увеличивать точность правила, а не амплитуду жеста.",
+                "en": "Uncomfortable preset position. Action: Target orientation is different from the usual neutral. Application: Tightrope walker's balance, holding a key in a lock, position puzzle. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Do not require extreme positions of the hand; increase the accuracy of the rule, not the amplitude of the gesture."
+              }
+            },
+            {
+              "id": "variant-m037",
+              "text": {
+                "ru": "Следование за движущейся целью. Действие: Игрок плавно ведёт ориентацию телефона вслед за целевым углом. Применение: Проводка антенны, ловля ветра, повторение жеста, кинетическая музыка. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Сравнивать угол и время с допуском; не превращать запаздывание фильтра в штраф.",
+                "en": "Following a moving target. Action: The player smoothly guides the orientation of the phone following the target angle. Application: Wiring an antenna, catching the wind, repeating a gesture, kinetic music. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: Compare angle and time to tolerance; do not turn the filter delay into a penalty."
+              }
+            },
+            {
+              "id": "variant-m038",
+              "text": {
+                "ru": "Компенсация возмущений. Действие: Игра меняет виртуальный баланс, а пользователь отвечает встречным наклоном. Применение: Шторм, шаткий мост, груз на платформе, балансирующий робот. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Возмущения создаются симуляцией; датчик не измеряет силы, действующие на виртуальный груз.",
+                "en": "Compensation for disturbances. Action: The game changes the virtual balance, and the user responds with a counter tilt. Application: Storm, shaky bridge, load on a platform, balancing robot. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Disturbances are generated by the simulation; the sensor does not measure the forces acting on the virtual load."
+              }
+            },
+            {
+              "id": "variant-m039",
+              "text": {
+                "ru": "Бережная переноска. Действие: Задача ограничивает резкие движения и нежелательный наклон одновременно. Применение: Нести виртуальную чашку, бомбу, спящего зверька, нестабильный образец. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Проверять относительную плавность и ориентацию; расстояние переноски отдельно не известно.",
+                "en": "Careful carrying. Action: The task limits sudden movements and unwanted tilt at the same time. Application: Carry a virtual cup, bomb, sleeping animal, unstable sample. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: Test relative smoothness and orientation; The carrying distance is not known separately."
+              }
+            },
+            {
+              "id": "variant-m040",
+              "text": {
+                "ru": "Остановка по сигналу. Действие: До сигнала движение разрешено, после него нужно быстро снизить активность. Применение: «Красный свет», музыкальные статуи, реакция на опасность, стоп-механизм. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Дать окно реакции и оценивать остаточное движение; однократного нулевого отсчёта недостаточно.",
+                "en": "Stop on signal. Action: Before the signal, movement is allowed, after it you need to quickly reduce activity. Application: “Red light”, musical statues, reaction to danger, stop mechanism. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: Provide a response window and evaluate residual motion; A single zero count is not enough."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-physics",
+      "section": "section-1",
+      "title": {
+        "ru": "Физические модели и материалы",
+        "en": "Physical models and materials"
+      },
+      "description": {
+        "ru": "Готовые правила для виртуальных объектов. Здесь наклон и ускорение приобретают предметный смысл; это производные сценарии, а не новые виды датчиков.",
+        "en": "Ready-made rules for virtual objects. Here tilt and acceleration acquire an objective meaning; These are derivative scenarios, not new types of sensors."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-physics-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m041",
+              "text": {
+                "ru": "Управление полем тяжести. Действие: Направление наклона задаёт виртуальную гравитацию, действующую на объекты. Применение: Шар в лабиринте, падающие блоки, перекатывание множества предметов. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Гравитация игры может иметь удобный масштаб и предел, не совпадающий с реальной.",
+                "en": "Gravity field control. Action: The direction of the tilt sets the virtual gravity acting on objects. Application: A ball in a maze, falling blocks, rolling of many objects. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Game gravity may have a convenient scale and limit that does not coincide with the real one."
+              }
+            },
+            {
+              "id": "variant-m042",
+              "text": {
+                "ru": "Баланс массы и опоры. Действие: Наклон перераспределяет виртуальную нагрузку относительно опоры. Применение: Стопка предметов, башня, мостик, балансирование нескольких грузов. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Отличие от простого лабиринта состоит в центре масс, опоре и условии опрокидывания.",
+                "en": "Balance of mass and support. Action: Tilt redistributes the virtual load relative to the support. Application: Stack of objects, tower, bridge, balancing several loads. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Difference from a simple labyrinth lies in the center of mass, support and capsizing condition."
+              }
+            },
+            {
+              "id": "variant-m043",
+              "text": {
+                "ru": "Переливание жидкости. Действие: Поза сосуда и время за угловым порогом определяют виртуальный поток. Применение: Налить точный объём, не пролить, смешать напиток, управлять топливом. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Объём вычисляется симуляцией; датчик не измеряет реальную жидкость в телефоне.",
+                "en": "Transfusion of liquid. Action: The pose of the vessel and the time behind the angular threshold determine the virtual flow. Application: Pour the exact volume, do not spill, mix a drink, manage fuel. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Volume is calculated by simulation; The sensor does not measure the actual liquid in the phone."
+              }
+            },
+            {
+              "id": "variant-m044",
+              "text": {
+                "ru": "Взбалтывание и смешивание. Действие: Встряхивание меняет состояние виртуальной смеси. Применение: Коктейль, краска, зелье, пена, растворение ингредиента. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Различать дозу движения, порядок ингредиентов и результат смешивания.",
+                "en": "Shaking and mixing. Action: Shaking changes the state of the virtual mixture. Application: Cocktail, paint, potion, foam, dissolving an ingredient. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Distinguish between the dose of movement, the order of the ingredients and the result of mixing."
+              }
+            },
+            {
+              "id": "variant-m045",
+              "text": {
+                "ru": "Оседание и расслоение. Действие: После встряхивания нужно выдержать покой или наклон. Применение: Отделить осадок, проявить слои, очистить образец, дождаться кристаллизации. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Здесь важно чередование активности и ожидания; кинетика является правилом симуляции.",
+                "en": "Subsidence and delamination. Action: After shaking, you need to maintain rest or tilt. Application: Separate the sediment, develop layers, clean the sample, wait for crystallization. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: The alternation of activity and wait is important here; kinetics is the rule of simulation."
+              }
+            },
+            {
+              "id": "variant-m046",
+              "text": {
+                "ru": "Просеивание и сортировка. Действие: Наклон направляет частицы, встряхивание освобождает или пропускает их через преграды. Применение: Сито, песок, золотоискательство, сортировка деталей. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Размеры, трение и проходы задаёт физическая модель; одна интенсивность не заменяет направление.",
+                "en": "Sifting and sorting. Action: Tilt directs particles, shaking releases or passes them through barriers. Application: Sieve, sand, gold prospecting, sorting parts. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Dimensions, friction and passages are determined by the physical model; Intensity alone does not replace direction."
+              }
+            },
+            {
+              "id": "variant-m047",
+              "text": {
+                "ru": "Волны, маятники и упругость. Действие: Временной рисунок движения возбуждает колебания виртуального объекта. Применение: Плеск воды, желе, пружина, маятник, раскачка подвеса. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Чтобы получить управляемый резонанс, учитывать фазу, а не только величину ускорения.",
+                "en": "Waves, pendulums and elasticity. Action: Temporary motion pattern excites vibrations of a virtual object. Application: Water splash, jelly, spring, pendulum, suspension swing. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of motion from gravity. Limitations: To obtain controlled resonance, consider the phase, not just the magnitude of the acceleration."
+              }
+            },
+            {
+              "id": "variant-m048",
+              "text": {
+                "ru": "Встряхнуть и отпустить симуляцию. Действие: Жест задаёт начальные импульсы виртуальным телам, после чего они движутся самостоятельно. Применение: Кости, снежный шар, частицы, перемешиваемая коробка. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Игровую случайность задаёт отдельный генератор; шум сенсора не обещает честный результат.",
+                "en": "Shake and release the simulation. Action: The gesture sets the initial impulses to the virtual bodies, after which they move on their own. Application: Bones, snow globe, particles, shuffled box. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Game randomness is set by a separate generator; Sensor noise does not promise an honest result."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-tools",
+      "section": "section-1",
+      "title": {
+        "ru": "Телефон как инструмент или реквизит",
+        "en": "Phone as a tool or prop"
+      },
+      "description": {
+        "ru": "Разные фазы и критерии движения превращают телефон в инструмент. Меч, ракетка и молоток считаются вариантами одной механики удара.",
+        "en": "Different phases and criteria of movement turn the phone into a tool. The sword, racket and hammer are all considered variations of the same hitting mechanics."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-tools-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m049",
+              "text": {
+                "ru": "Ударный инструмент. Действие: Короткий взмах вызывает контакт с виртуальной целью в определённый момент. Применение: Барабанная палочка, молоток, меч, ракетка, отбивание мяча. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Проверять рабочую фазу и контекст цели; точное место реального контакта неизвестно.",
+                "en": "Percussion instrument. Action: A short swing causes contact with a virtual target at a certain moment. Application: Drumstick, hammer, sword, racket, hitting the ball. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: Check the operating phase and context of the target; The exact location of the actual contact is unknown."
+              }
+            },
+            {
+              "id": "variant-m050",
+              "text": {
+                "ru": "Инструмент с рабочим ходом. Действие: Чередуются рабочий и обратный ход, причём результат даёт нужная фаза. Применение: Пила, напильник, точилка, щётка, условное полирование. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Распознавать движение в заданной оси; не пытаться восстановить точную линию движения кисти.",
+                "en": "Tool with working stroke. Action: The working and reverse strokes alternate, and the desired phase gives the result. Application: Saw, file, sharpener, brush, conditional polishing. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of motion from gravity. Limitations: Recognize motion in a given axis; do not try to restore the exact line of movement of the brush."
+              }
+            },
+            {
+              "id": "variant-m051",
+              "text": {
+                "ru": "Насос или мехи. Действие: Полный цикл даёт порцию воздуха, жидкости или давления в модели. Применение: Надуть предмет, поддерживать огонь, перекачивать ресурс, заводить механизм. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Засчитывать законченный цикл; не подменять его суммой любых встрясок.",
+                "en": "Pump or bellows. Action: A full cycle gives a portion of air, liquid or pressure in the model. Application: Inflate an object, maintain a fire, pump a resource, start a mechanism. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Count a completed cycle; do not replace it with the sum of any shocks."
+              }
+            },
+            {
+              "id": "variant-m052",
+              "text": {
+                "ru": "Заброс и подсечка. Действие: Подготовка, взмах и короткое встречное движение имеют разные значения. Применение: Рыбалка, бросок лассо, запуск гарпуна, ловля на трос. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Телефон остаётся в руке; дальность заброса вычисляет игровое правило.",
+                "en": "Casting and hooking. Action: Preparation, swing and short counter movement have different meanings. Application: Fishing, lasso throw, harpoon launch, line fishing. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: The phone remains in the hand; The casting distance is calculated by the game rule."
+              }
+            },
+            {
+              "id": "variant-m053",
+              "text": {
+                "ru": "Дозатор или солонка. Действие: Наклон открывает возможность сыпать, отдельные встряхивания дозируют. Применение: Посыпать блюдо, высыпать семена, распределить реагент, точная дозировка. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Поток зависит от сочетания позы и импульсов; это отличается от свободного переливания.",
+                "en": "Dispenser or salt shaker. Action: Tilt opens the possibility of pouring, individual shaking doses. Application: Sprinkle a dish, pour out seeds, distribute the reagent, precise dosage. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Flow depends on the combination of posture and impulses; This is different from free transfusion."
+              }
+            },
+            {
+              "id": "variant-m054",
+              "text": {
+                "ru": "Веер или опахало. Действие: Повторные взмахи создают виртуальный поток, интенсивность влияет на его величину. Применение: Раздуть огонь, направить парус, охладить предмет, разогнать туман. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Полезно ограничить темп и насыщать эффект; быстрые движения не должны быть обязательны.",
+                "en": "Fan or fan. Action: Repeated strokes create a virtual flow, the intensity affects its value. Application: Fan a fire, direct a sail, cool an object, disperse fog. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of movement from gravity. Limitations: Useful to limit tempo and saturate effect; fast movements should not be required."
+              }
+            },
+            {
+              "id": "variant-m055",
+              "text": {
+                "ru": "Черпак или ложка. Действие: Поза «зачерпнуть», бережное удержание и наклон «вылить» образуют цикл. Применение: Перенос жидкости, кормление, работа с песком, сбор ресурсов. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Состояние «зачерпнул» определяется игровой зоной или командой, а не реальным положением руки.",
+                "en": "Ladle or spoon. Action: The “scoop” pose, gentle holding and the “pour out” tilt form a cycle. Application: Liquid transfer, feeding, working with sand, collecting resources. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separating movement from gravity. Limitations: The \"scooped\" state is determined by the playing area or team, not the actual position of the hand."
+              }
+            },
+            {
+              "id": "variant-m056",
+              "text": {
+                "ru": "Дирижёрская палочка. Действие: Движение задаёт доли, акценты и переходы между музыкальными фразами. Применение: Музыкальная игра, управление ансамблем, интерактивный звук. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Распознавать ритм и грубую форму жеста; точный рисунок в воздухе требует пространственного трекинга.",
+                "en": "Baton. Action: Movement sets beats, accents and transitions between musical phrases. Application: Musical game, ensemble control, interactive sound. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of movement from gravity. Limitations: Recognize rhythm and rough form of gesture; accurate drawing in the air requires spatial tracking."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-spatial",
+      "section": "section-1",
+      "title": {
+        "ru": "Вращение и пространственные взаимодействия",
+        "en": "Rotation and spatial interactions"
+      },
+      "description": {
+        "ru": "Смежные motion-механики, которые часто называют акселерометрическими. Для них нужен гироскоп, магнитометр или визуальное отслеживание.",
+        "en": "Related motion mechanics, which are often called accelerometric. They require a gyroscope, magnetometer, or visual tracking."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-spatial-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m057",
+              "text": {
+                "ru": "Прямое вращение 3D-объекта. Действие: Изменение ориентации телефона переносится на виртуальный предмет. Применение: Осмотр модели, сборка, поиск скрытых граней, пространственная головоломка. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Нужна ориентация из sensor fusion; один акселерометр даёт лишь часть вращений.",
+                "en": "Direct rotation of a 3D object. Action: Changing the orientation of the phone is transferred to the virtual object. Application: Inspection of the model, assembly, search for hidden edges, spatial puzzle. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of movement from gravity. Limitations: Requires orientation from sensor fusion; one accelerometer gives only part of the rotations."
+              }
+            },
+            {
+              "id": "variant-m058",
+              "text": {
+                "ru": "Обзор вокруг себя. Действие: Поворот телефона управляет направлением взгляда в виртуальной сцене. Применение: Панорама 360°, окно в другой мир, поиск объектов вокруг игрока. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Гироскоп нужен для поворота по горизонтали; возможен дрейф и нужно центрирование.",
+                "en": "Review your surroundings. Action: Rotating the phone controls the direction of view in the virtual scene. Application: 360° Panorama, window into another world, searching for objects around the player. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: A gyroscope is needed for horizontal rotation; Drift is possible and centering is required."
+              }
+            },
+            {
+              "id": "variant-m059",
+              "text": {
+                "ru": "Вращательная ручка. Действие: Поворот вокруг выбранной оси изменяет угол механизма. Применение: Вентиль, отвёртка, сейфовый диск, настройка частоты. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Опора только на тяжесть перестаёт работать при совпадении оси с вертикалью.",
+                "en": "Rotary handle. Action: Rotation around the selected axis changes the angle of the mechanism. Application: Valve, screwdriver, safe disk, frequency setting. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: Reliance only on gravity stops working when the axis coincides with the vertical."
+              }
+            },
+            {
+              "id": "variant-m060",
+              "text": {
+                "ru": "Кручение и накопление оборотов. Действие: Угловая скорость либо сумма поворотов накапливает игровой результат. Применение: Завести пружину, раскрутить ротор, намотать нить, виртуальная лебёдка. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Для многократных оборотов учитывать разворачивание угла; удобнее короткие движения с повторным хватом.",
+                "en": "Torsion and accumulation of revolutions. Action: The angular velocity or the sum of turns accumulates the game result. Application: Wind up the spring, unwind the rotor, wind the thread, virtual winch. Sensors: Name: Accelerometer + gyroscope; Meaning: Bundle of sensors for orientation, rotation and separation of movement from gravity. Limitations: For multiple rotations, take into account the rotation of the angle; short movements with repeated grip are more convenient."
+              }
+            },
+            {
+              "id": "variant-m061",
+              "text": {
+                "ru": "Угловой щелчок. Действие: Короткий поворот и возврат распознаются как дискретный жест. Применение: Шаг поворота камеры, перелистывание, смена инструмента, парирование. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Это жест вращения, не линейный рывок; различать их по гироскопу.",
+                "en": "Corner click. Action: Short turn and return are recognized as a discrete gesture. Application: Camera rotation step, flipping, tool change, parry. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separation of movement from gravity. Limitations: This is a rotation gesture, not a linear jerk; distinguish them by gyroscope."
+              }
+            },
+            {
+              "id": "variant-m062",
+              "text": {
+                "ru": "Направление по компасу. Действие: Задача привязана к абсолютному азимуту, а не к стартовому положению. Применение: Поиск направления, ориентирование в квесте, привязанные к сторонам света загадки. Датчики: Название: Motion + магнитометр; Значение: Нужен дополнительный источник абсолютного направления. Ограничения: Требуется магнитометр или другой источник направления; металлическое окружение может мешать.",
+                "en": "Compass direction. Action: The task is tied to the absolute azimuth, and not to the starting position. Application: Finding directions, orientation in a quest, riddles tied to the cardinal directions. Sensors: Name: Motion + magnetometer; Meaning: Additional absolute heading source required. Limitations: Magnetometer or other heading source required; metal surroundings may interfere."
+              }
+            },
+            {
+              "id": "variant-m063",
+              "text": {
+                "ru": "Наведение на реальный объект. Действие: Ориентация и положение устройства задают луч в отслеживаемой сцене. Применение: AR-прицел, размещение объекта, обследование комнаты, пространственная головоломка. Датчики: Название: Камера + motion; Значение: Нужен визуально-инерциальный трекинг положения. Ограничения: Нужна камера с визуально-инерциальным трекингом; качество зависит от среды и устройства.",
+                "en": "Pointing to a real object. Action: The orientation and position of the device sets the beam in the tracked scene. Application: AR sight, object placement, room exploration, spatial puzzle. Sensors: Name: Camera + motion; Meaning: Requires visual-inertial position tracking. Limitations: Requires a camera with visual-inertial tracking; quality depends on the environment and device."
+              }
+            },
+            {
+              "id": "variant-m064",
+              "text": {
+                "ru": "Рисование траектории в воздухе. Действие: Восстановленная поза устройства образует линию или пространственный символ. Применение: 3D-рисование, обводка, пространственный жест, перемещение виртуального инструмента. Датчики: Название: Камера + motion; Значение: Нужен визуально-инерциальный трекинг положения. Ограничения: Точная траектория требует внешней коррекции; акселерометр без неё быстро накапливает ошибку.",
+                "en": "Drawing a trajectory in the air. Action: The reconstructed pose of the device forms a line or spatial symbol. Application: 3D drawing, tracing, spatial gesture, virtual tool movement. Sensors: Name: Camera + motion; Meaning: Visual-inertial position tracking is required. Limitations: Accurate trajectory requires external correction; The accelerometer quickly accumulates errors without it."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-activity",
+      "section": "section-1",
+      "title": {
+        "ru": "Движение тела и контекст устройства",
+        "en": "Body movement and device context"
+      },
+      "description": {
+        "ru": "Оценки зависят от того, где и как закреплён телефон. Событие датчика не доказывает конкретное действие человека.",
+        "en": "Ratings depend on where and how the phone is mounted. A sensor event does not prove a specific human action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-activity-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m065",
+              "text": {
+                "ru": "Шаг как событие. Действие: Повторяющийся рисунок движения классифицируется как шаг. Применение: Счётчик ходов, питомец от прогулок, пошаговое продвижение, прогулочный квест. Датчики: Название: Системное распознавание; Значение: Предпочтителен специализированный системный API; реализация зависит от устройства. Ограничения: Предпочтителен системный step detector; расположение телефона и чужие колебания влияют на оценку.",
+                "en": "Step as an event. Action: A repeating pattern of movement is classified as a step. Application: Move counter, walk pet, step progression, walking quest. Sensors: Name: System recognition; Meaning: Custom system API preferred; implementation depends on the device. Limitations: System step detector is preferred; The location of the phone and other people's fluctuations affect the assessment."
+              }
+            },
+            {
+              "id": "variant-m066",
+              "text": {
+                "ru": "Частота шагов как управление. Действие: Темп оценённых шагов меняет скорость или состояние виртуального процесса. Применение: Ритм прогулки, темп персонажа, адаптивная музыка, шаговый челлендж. Датчики: Название: Системное распознавание; Значение: Предпочтителен специализированный системный API; реализация зависит от устройства. Ограничения: Частота шагов не равна скорости перемещения и не даёт пройденное расстояние сама по себе.",
+                "en": "Step frequency as control. Action: The pace of the estimated steps changes the speed or state of the virtual process. Application: Walking rhythm, character pace, adaptive music, step challenge. Sensors: Name: System recognition; Meaning: Custom system API preferred; implementation depends on the device. Limitations: Step frequency does not equal movement speed and does not provide distance traveled by itself."
+              }
+            },
+            {
+              "id": "variant-m067",
+              "text": {
+                "ru": "Покой, ходьба или бег. Действие: Временное окно сигналов классифицируется в несколько широких состояний. Применение: Адаптивный режим игры, смена фонового звука, контекстный интерфейс. Датчики: Название: Системное распознавание; Значение: Предпочтителен специализированный системный API; реализация зависит от устройства. Ограничения: Это вероятностная оценка; использовать системные API и учитывать положение телефона.",
+                "en": "Rest, walking or running. Action: The time window of signals is classified into several broad states. Application: Adaptive game mode, background sound change, contextual interface. Sensors: Name: System recognition; Meaning: Custom system API preferred; implementation is device dependent. Limitations: This is a probabilistic estimate; use system APIs and take into account the position of the phone."
+              }
+            },
+            {
+              "id": "variant-m068",
+              "text": {
+                "ru": "Взять и положить устройство. Действие: Последовательность движения, изменения позы и последующей стабильности запускает переход. Применение: Начало сеанса, окончание раунда, пробуждение персонажа, настольный реквизит. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Без дополнительных признаков нельзя уверенно отличить стол от неподвижной руки.",
+                "en": "Pick up and put down the device. Action: A sequence of movement, posture changes and subsequent stability triggers the transition. Application: Start of session, end of round, character awakening, tabletop props. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separating movement from gravity. Limitations: Without additional features, it is impossible to reliably distinguish a table from a stationary hand."
+              }
+            },
+            {
+              "id": "variant-m069",
+              "text": {
+                "ru": "Обнаружение существенного движения. Действие: Факт перехода от покоя к активности меняет режим приложения. Применение: Возобновление процесса, пробуждение симуляции, пауза статичного сценария. Датчики: Название: Системное распознавание; Значение: Предпочтителен специализированный системный API; реализация зависит от устройства. Ограничения: Доступность событий и работа в фоне ограничиваются ОС; событие не сообщает точный маршрут.",
+                "en": "Significant motion detection. Action: The fact of transition from rest to activity changes the mode of the application. Application: Resume a process, wake up a simulation, pause a static scenario. Sensors: Name: System recognition; Meaning: Custom system API preferred; implementation depends on the device. Limitations: Event availability and background operation are limited by the OS; the event does not report the exact route."
+              }
+            },
+            {
+              "id": "variant-m070",
+              "text": {
+                "ru": "Повтор движения с заданным креплением. Действие: При фиксированном положении телефона проверяется грубый цикл движения тела. Применение: Двигательная игра, повтор наклонов, марш на месте, учебный счёт повторений. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Нельзя универсально определять приседания или прыжки при любом хвате; нужна отдельная проверка каждого движения.",
+                "en": "Repeating the movement with a given attachment. Action: When the phone is in a fixed position, the rough cycle of body movement is checked. Application: Motor game, tilt repetition, marching in place, training repetition counting. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating movement from gravity. Limitations: Cannot universally detect squats or jumps with any grip; Each movement needs to be checked separately."
+              }
+            },
+            {
+              "id": "variant-m071",
+              "text": {
+                "ru": "Прогулка с пространственным прогрессом. Действие: Шаги и активность соединяются с внешней оценкой перемещения. Применение: Открытие зон, маршрутный квест, карта прогулки, исследование местности. Датчики: Название: Motion + геолокация; Значение: Для положения и маршрута нужен дополнительный источник координат. Ограничения: Для маршрута нужны GPS/GNSS либо иные данные о позиции; акселерометр не заменяет геолокацию.",
+                "en": "Walk with spatial progress. Action: Steps and activity are connected with an external assessment of movement. Application: Opening zones, route quest, walk map, area exploration. Sensors: Name: Motion + geolocation; Meaning: Position and route require an additional source of coordinates. Limitations: Route requires GPS/GNSS or other position data; The accelerometer does not replace geolocation."
+              }
+            },
+            {
+              "id": "variant-m072",
+              "text": {
+                "ru": "Эпизод пониженной перегрузки. Действие: Малый модуль сырых показаний обнаруживается как кандидат на low-g-событие. Применение: Разбор уже записанного движения, учебная визуализация, аналитика устройства. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Экспериментальный сценарий; сигнал не доказывает падение. Для игры событие лучше имитировать, телефон не подбрасывать.",
+                "en": "Episode of reduced overload. Action: A small module of raw readings is detected as a candidate for a low-g event. Application: Analysis of already recorded movement, educational visualization, device analytics. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Experimental scenario; the signal does not prove a fall. For the game, it is better to imitate the event, do not throw the phone..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-combined",
+      "section": "section-1",
+      "title": {
+        "ru": "Составные жесты и другие каналы ввода",
+        "en": "Compound gestures and other input channels"
+      },
+      "description": {
+        "ru": "Касание, время, голос и состояние приложения помогают задать намерение и избежать случайных срабатываний.",
+        "en": "Touch, time, voice, and app state help set intent and avoid accidental triggers."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-combined-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m073",
+              "text": {
+                "ru": "Касание разрешает движение. Действие: Motion-ввод действует только пока зажата экранная кнопка. Применение: Управление без случайных жестов, прицеливание, работа виртуальным инструментом. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Для вращательных действий добавить G; отпускание должно сразу завершать активную фазу.",
+                "en": "Touch allows movement. Action: Motion input is valid only while the on-screen button is held down. Application: Control without random gestures, aiming, working with a virtual instrument. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: For rotational actions, add G; releasing should immediately end the active phase."
+              }
+            },
+            {
+              "id": "variant-m074",
+              "text": {
+                "ru": "Наклон выбирает, касание подтверждает. Действие: Положение меняет текущий выбор, палец совершает действие. Применение: Радиальное меню, прицел и выстрел, выбор ресурса, настройка и применение. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Разделить предпросмотр и исполнение; выбор не должен прыгать в момент нажатия.",
+                "en": "Tilt selects, touch confirms. Action: Position changes the current selection, the finger performs the action. Application: Radial menu, aim and shot, resource selection, configuration and application. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Separate preview and execution; The selection should not jump when pressed."
+              }
+            },
+            {
+              "id": "variant-m075",
+              "text": {
+                "ru": "Касание удерживает точку, наклон действует вокруг неё. Действие: Палец задаёт виртуальную опору, а движение телефона меняет силы или деформацию. Применение: Подвесить объект, натянуть мембрану, создать качели, повернуть деталь вокруг опоры. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Опора существует на экране; это правило модели, а не измерение точки опоры в реальном мире.",
+                "en": "Touch holds a point, tilt acts around it. Action: The finger sets a virtual support, and the movement of the phone changes the forces or deformation. Application: Suspend an object, pull a membrane, create a swing, rotate a part around the support. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: The support exists on the screen; This is a rule of the model, not a measurement of the fulcrum in the real world."
+              }
+            },
+            {
+              "id": "variant-m076",
+              "text": {
+                "ru": "Цепочка разных жестов. Действие: Игра ожидает этапы: встряхнуть, наклонить, удержать, остановить. Применение: Приготовление зелья, ремонт, сложное заклинание, производственный мини-процесс. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Явно показывать текущий этап, допустимые переходы и способ начать заново.",
+                "en": "A chain of different gestures. Action: The game awaits the stages: shake, tilt, hold, stop. Application: Potion preparation, repair, complex spell, mini-production process. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating motion from gravity. Limitations: Explicitly show the current stage, allowed transitions, and how to start over."
+              }
+            },
+            {
+              "id": "variant-m077",
+              "text": {
+                "ru": "Жест в разрешённое окно. Действие: Тот же жест даёт результат лишь в нужный момент. Применение: Парирование, музыкальный акцент, ловля, реакция на команду. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Учитывать временные метки; окно должно включать задержки интерфейса и различия устройств.",
+                "en": "Gesture to the allowed window. Action: The same gesture gives results only at the right moment. Application: Parrying, musical accent, catching, reaction to a command. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Consider timestamps; The window should include interface delays and device differences."
+              }
+            },
+            {
+              "id": "variant-m078",
+              "text": {
+                "ru": "Жест меняет смысл по состоянию. Действие: Контекст определяет значение движения: один ввод служит нескольким действиям. Применение: Встряхнуть коробку до открытия, стряхнуть мусор после; наклонять ёмкость только во время розлива. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Обратная связь должна заранее объяснять активное значение, иначе ввод будет казаться непредсказуемым.",
+                "en": "A gesture changes its meaning depending on its condition. Action: Context determines the meaning of the movement: one input serves several actions. Application: Shake the box before opening, shake off debris after; tilt the container only during pouring. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the conditions described. Limitations: Feedback must explain the active value in advance, otherwise the input will appear unpredictable."
+              }
+            },
+            {
+              "id": "variant-m079",
+              "text": {
+                "ru": "Голос и движение. Действие: Речь выбирает действие или объект, движение задаёт момент и параметр. Применение: Произнести заклинание и взмахнуть, назвать инструмент и использовать его, музыкальная импровизация. Датчики: Название: Motion + микрофон; Значение: Комбинированный ввод с отдельным звуковым каналом. Ограничения: Нужны микрофон и распознавание либо звуковой порог; это отдельный канал, не функция акселерометра.",
+                "en": "Voice and movement. Action: Speech selects an action or object, movement sets the moment and parameter. Application: Cast a spell and wave, name an instrument and use it, musical improvisation. Sensors: Name: Motion + microphone; Meaning: Combined input with a separate audio channel. Limitations: Requires microphone and recognition or audio threshold; This is a separate channel, not an accelerometer function."
+              }
+            },
+            {
+              "id": "variant-m080",
+              "text": {
+                "ru": "Поза и внешний контекст. Действие: Движение учитывается вместе с близостью, освещённостью или видимостью объекта. Применение: Реквизит у уха, скрытая подсказка, реакция «посмотри и поверни», настольный интерактив. Датчики: Название: Motion + другой датчик; Значение: Доступность дополнительного сигнала проверяется на целевой платформе. Ограничения: Соответствующие датчики/API могут быть недоступны; одна ориентация не доказывает близость к лицу.",
+                "en": "Pose and external context. Action: Motion is taken into account along with the proximity, illumination or visibility of the object. Application: Props at the ear, hidden hint, look and turn response, tabletop interactive. Sensors: Name: Motion + other sensor; Meaning: Additional signal availability is checked on the target platform. Limitations: Corresponding sensors/APIs may not be available; Orientation alone does not prove proximity to a person."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-social",
+      "section": "section-1",
+      "title": {
+        "ru": "Совместная игра и несколько устройств",
+        "en": "Co-op play and multiple devices"
+      },
+      "description": {
+        "ru": "Правило связывает движения нескольких участников. Сетевое совпадение событий не является доказательством физического контакта телефонов.",
+        "en": "A rule connects the movements of several participants. Network coincidence of events is not evidence of physical contact between phones."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-social-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m081",
+              "text": {
+                "ru": "Синхронное движение нескольких игроков. Действие: Устройства сравнивают моменты или форму движений. Применение: Общий музыкальный удар, совместное открытие двери, командное заклинание. Датчики: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста. Ограничения: Нужны сеть, синхронизация времени и допуск на задержки; датчики выбираются под жест.",
+                "en": "Synchronized movement of several players. Action: Devices compare the moments or form of movements. Application: Common musical blow, joint opening of a door, command spell. Sensors: Name: Motion + connection; Meaning: A network connects devices; specific sensors depend on the selected gesture. Limitations: Requires network, time synchronization and latency tolerance; sensors are selected according to the..."
+              }
+            },
+            {
+              "id": "variant-m082",
+              "text": {
+                "ru": "Дополняющие или встречные движения. Действие: Успех зависит от соотношения наклонов, а не совпадения каждого по отдельности. Применение: Встречные рычаги, общий баланс, кооперативный полёт, кинетическая головоломка. Датчики: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста. Ограничения: Заранее определить общую систему направлений; «влево» на разных экранах может отличаться.",
+                "en": "Complementary or counter movements. Action: Success depends on the ratio of the slopes, and not the coincidence of each individually. Application: Counter levers, general balance, cooperative flight, kinetic puzzle. Sensors: Name: Motion + connection; Meaning: A network connects devices; specific sensors depend on the selected gesture. Limitations: Define a general directional system in advance; “Left” may differ on different screens."
+              }
+            },
+            {
+              "id": "variant-m083",
+              "text": {
+                "ru": "Эстафета событий. Действие: Каждый участник должен выполнить движение после предыдущего. Применение: Ритмическая цепочка, передача энергии, командная последовательность, оркестр. Датчики: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста. Ограничения: Передавать номер шага и время; сеть не должна порождать повторное выполнение.",
+                "en": "Event relay. Action: Each participant must perform a movement after the previous one. Application: Rhythmic chain, energy transfer, command sequence, orchestra. Sensors: Name: Motion + connection; Meaning: A network connects devices; specific sensors depend on the selected gesture. Limitations: Transmit step number and time; the network should not generate repeated execution."
+              }
+            },
+            {
+              "id": "variant-m084",
+              "text": {
+                "ru": "Один телефон как хрупкая эстафетная палочка. Действие: Участники передают устройство, сохраняя заданную устойчивость. Применение: Передача виртуальной чашки, спящего существа, нестабильной бомбы. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Передачу между людьми нельзя надёжно определить одним акселерометром; подтверждать касанием или правилом раунда.",
+                "en": "One phone is like a fragile relay baton. Action: Participants pass the device while maintaining the specified stability. Application: Transfer of a virtual cup, sleeping creature, unstable bomb. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating motion from gravity. Limitations: Transmission between people cannot be reliably determined by a single accelerometer; confirm by touch or round rule."
+              }
+            },
+            {
+              "id": "variant-m085",
+              "text": {
+                "ru": "Скрытый экран и жест ответа. Действие: Экран видят другие игроки, владелец отвечает различимыми наклонами. Применение: Шарады у лба, угадывание слова, викторина со скрытой информацией. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Не заставлять игрока видеть экран; подтверждать действие звуком или вибрацией.",
+                "en": "Hidden screen and reply gesture. Action: The screen is visible to other players, the owner responds with discernible tilts. Application: Charades at the forehead, word guessing, quiz with hidden information. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Do not force the player to see the screen; confirm the action with sound or vibration."
+              }
+            },
+            {
+              "id": "variant-m086",
+              "text": {
+                "ru": "Асимметричная кооперация. Действие: Один участник видит цель или инструкцию, другой управляет движением. Применение: Сапёр с инструктором, навигатор и пилот, перенос груза по подсказкам. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Можно играть с одним телефоном; нужны понятные команды и обратная связь обеим ролям.",
+                "en": "Asymmetric cooperation. Action: One participant sees the target or instructions, the other controls the movement. Application: Sapper with an instructor, navigator and pilot, carrying cargo according to prompts. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Can be played with one phone; clear commands and feedback are needed for both roles."
+              }
+            },
+            {
+              "id": "variant-m087",
+              "text": {
+                "ru": "Телефон как удалённый motion-контроллер. Действие: Сигналы устройства управляют игрой на другом экране. Применение: Руль для компьютера, пульт презентации, общий телевизионный экран, музыкальный контроллер. Датчики: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста. Ограничения: Нужны соединение и обработка задержек; не передавать больше сенсорных данных, чем требуется управлению.",
+                "en": "Phone as a remote motion controller. Action: Device signals control the game on another screen. Application: Computer steering wheel, presentation remote, general TV screen, music controller. Sensors: Name: Motion + connection; Meaning: A network connects devices; specific sensors depend on the selected gesture. Limitations: Requires connection and delay handling; do not transmit more sensory data than required by the control."
+              }
+            },
+            {
+              "id": "variant-m088",
+              "text": {
+                "ru": "Символическая передача виртуального предмета. Действие: Участники выполняют согласованный жест отправки и приёма. Применение: Перелить напиток между экранами, передать карту, перебросить игровой ресурс. Датчики: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста. Ограничения: Получателя определяет соединение или явный выбор; совпавшие рывки не доказывают соседство или контакт телефонов.",
+                "en": "Symbolic transfer of a virtual object. Action: Participants perform a coordinated gesture of sending and receiving. Application: Pour a drink between screens, pass a card, transfer a game resource. Sensors: Name: Motion + connection; Meaning: A network connects devices; specific sensors depend on the selected gesture. Limitations: The recipient is determined by the connection or explicit choice; coincident jerks do not prove the proximity or contact of phones."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-applied",
+      "section": "section-1",
+      "title": {
+        "ru": "Интерфейсы, творчество и обучение",
+        "en": "Interfaces, creativity and learning"
+      },
+      "description": {
+        "ru": "Практические применения базовых жестов вне собственно игрового управления. Повторение исходного сигнала здесь намеренное: меняется задача пользователя.",
+        "en": "Practical applications of basic gestures outside of actual game controls. The repetition of the original signal here is intentional: the user’s task changes."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-applied-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m089",
+              "text": {
+                "ru": "Отмена движением. Действие: Распознанное встряхивание вызывает действие отмены в интерфейсе. Применение: Редактор, заметки, отмена перемещения, возврат последней операции. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Применение базового shake-жеста; обеспечить обычную кнопку отмены и возможность отключить motion-ввод.",
+                "en": "Cancel with motion. Action: Recognized shaking triggers an undo action in the interface. Application: Editor, notes, undo move, return last operation. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Use of a basic shake gesture; provide a regular cancel button and the ability to disable motion input."
+              }
+            },
+            {
+              "id": "variant-m090",
+              "text": {
+                "ru": "Случайный выбор или обновление. Действие: Встряхивание запрашивает новый вариант из заданного набора. Применение: Выбор задания, идеи, музыкального фрагмента, перемешивание списка. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Генератор выбора работает отдельно от жеста; для существенных изменений нужен понятный обратимый результат.",
+                "en": "Random selection or update. Action: Shaking requests a new option from a given set. Application: Selecting a task, idea, musical fragment, shuffling the list. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: The selection generator operates separately from the gesture; For significant changes you need a clear, reversible result."
+              }
+            },
+            {
+              "id": "variant-m091",
+              "text": {
+                "ru": "Параллакс и наклон интерфейса. Действие: Ориентация немного сдвигает слои изображения или блики. Применение: Карточки, иллюстрации, глубина меню, просмотр предметов, декоративная реакция. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Это параллакс по углу, не отслеживание реального положения головы или телефона; предусмотреть уменьшение движения.",
+                "en": "Parallax and tilt of the interface. Action: Orientation shifts image layers or highlights slightly. Application: Cards, illustrations, menu depth, item viewing, decorative response. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: This is parallax by angle, does not track the actual position of the head or phone; provide for a reduction in traffic..."
+              }
+            },
+            {
+              "id": "variant-m092",
+              "text": {
+                "ru": "Ударный музыкальный ввод. Действие: Импульсы вызывают ноты, амплитуда и ритм меняют артикуляцию. Применение: Виртуальный шейкер, барабан, семплер, создание петли, обучение ритму. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Случайные движения и вибрация самого телефона могут давать лишние события.",
+                "en": "Percussive music input. Action: Impulses cause notes, amplitude and rhythm change articulation. Application: Virtual shaker, drum, sampler, loop creation, rhythm training. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Random movements and vibration of the phone itself may produce unnecessary events."
+              }
+            },
+            {
+              "id": "variant-m093",
+              "text": {
+                "ru": "Непрерывная музыкальная выразительность. Действие: Наклон, вращение или интенсивность движения меняет звук без новых нажатий. Применение: Тембр, громкость, высота, фильтр, эффект, пространственное панорамирование. Датчики: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести. Ограничения: Для одного наклона достаточно A; G добавляет вращательную выразительность. Нужны сглаживание и музыкальные пределы.",
+                "en": "Continuous musical expression. Action: Tilt, rotation or intensity of movement changes the sound without new presses. Application: Timbre, volume, pitch, filter, effect, spatial panning. Sensors: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation and separating movement from gravity. Limitations: A is enough for one tilt; G adds rotational expression. Needs smoothing and musical limits..."
+              }
+            },
+            {
+              "id": "variant-m094",
+              "text": {
+                "ru": "Генеративная графика от движения. Действие: Признаки сигнала управляют цветом, толщиной, частицами и композицией. Применение: Рисование ритмом, кинетическая каллиграфия, интерактивная обложка, визуализатор музыки. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Графика интерпретирует движение; точное воспроизведение линии руки требует отслеживания позиции.",
+                "en": "Generative graphics from motion. Action: Signal attributes control color, thickness, particles and composition. Application: Rhythm drawing, kinetic calligraphy, interactive cover, music visualizer. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Graphics interpret motion; Accurate reproduction of the hand line requires position tracking."
+              }
+            },
+            {
+              "id": "variant-m095",
+              "text": {
+                "ru": "Уровень и измеритель наклона. Действие: Усреднённая проекция тяжести показывает отклонение от выбранной плоскости. Применение: Учебный уровень, выставление виртуального горизонта, проверка угла предмета. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Измерение статическое, зависит от калибровки и геометрии корпуса; не заявлять инструментальную точность без проверки.",
+                "en": "Level and tilt meter. Action: The average projection of gravity shows the deviation from the selected plane. Application: Educational level, setting a virtual horizon, checking the angle of an object. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Measurement is static, depends on calibration and body geometry; Do not declare instrumental accuracy without verification."
+              }
+            },
+            {
+              "id": "variant-m096",
+              "text": {
+                "ru": "Лаборатория движения. Действие: Приложение записывает ускорение, показывает оси и анализирует временной сигнал. Применение: Уроки о тяжести и инерции, сравнение колебаний, оценка частоты вибраций в доступной полосе. Датчики: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях. Ограничения: Результат зависит от частоты выборки и крепления; скорость и путь через интегрирование быстро дрейфуют без коррекции.",
+                "en": "Movement Laboratory. Action: The application records acceleration, shows the axes and analyzes the time signal. Application: Lessons on gravity and inertia, comparison of vibrations, estimation of vibration frequency in the available band. Sensors: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions. Limitations: Result depends on sampling frequency and fixture; the speed and path through the integration drift quickly without correction."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Датчики",
+        "en": "Sensors"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "A",
+            "en": "A"
+          },
+          "text": {
+            "ru": "Описание: Название: Акселерометр; Значение: Достаточен для указанного упрощённого сценария при описанных условиях.",
+            "en": "Description: Name: Accelerometer; Value: Sufficient for the specified simplified scenario under the described conditions."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "AG",
+            "en": "A.G."
+          },
+          "text": {
+            "ru": "Описание: Название: Акселерометр + гироскоп; Значение: Связка датчиков для ориентации, вращения и отделения движения от тяжести.",
+            "en": "Description: Name: Accelerometer + gyroscope; Meaning: A bunch of sensors for orientation, rotation, and separating motion from gravity."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "AGM",
+            "en": "AGM"
+          },
+          "text": {
+            "ru": "Описание: Название: Motion + магнитометр; Значение: Нужен дополнительный источник абсолютного направления.",
+            "en": "Description: Name: Motion + magnetometer; Meaning: An additional source of absolute direction is needed."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "V",
+            "en": "V"
+          },
+          "text": {
+            "ru": "Описание: Название: Камера + motion; Значение: Нужен визуально-инерциальный трекинг положения.",
+            "en": "Description: Name: Camera + motion; Meaning: Visual-inertial position tracking is required."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "SYS",
+            "en": "SYS"
+          },
+          "text": {
+            "ru": "Описание: Название: Системное распознавание; Значение: Предпочтителен специализированный системный API; реализация зависит от устройства.",
+            "en": "Description: Title: System recognition; Meaning: Custom system API preferred; implementation depends on the device."
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "GPS",
+            "en": "GPS"
+          },
+          "text": {
+            "ru": "Описание: Название: Motion + геолокация; Значение: Для положения и маршрута нужен дополнительный источник координат.",
+            "en": "Description: Name: Motion + geolocation; Meaning: Position and route require an additional coordinate source."
+          }
+        },
+        {
+          "id": "note-1-entry-7",
+          "title": {
+            "ru": "MIC",
+            "en": "MIC"
+          },
+          "text": {
+            "ru": "Описание: Название: Motion + микрофон; Значение: Комбинированный ввод с отдельным звуковым каналом.",
+            "en": "Description: Name: Motion + microphone; Meaning: Combined input with separate audio channel."
+          }
+        },
+        {
+          "id": "note-1-entry-8",
+          "title": {
+            "ru": "EXT",
+            "en": "EXT"
+          },
+          "text": {
+            "ru": "Описание: Название: Motion + другой датчик; Значение: Доступность дополнительного сигнала проверяется на целевой платформе.",
+            "en": "Description: Name: Motion + other sensor; Meaning: The availability of an additional signal is checked on the target platform."
+          }
+        },
+        {
+          "id": "note-1-entry-9",
+          "title": {
+            "ru": "NET",
+            "en": "NET"
+          },
+          "text": {
+            "ru": "Описание: Название: Motion + соединение; Значение: Сеть связывает устройства; конкретные датчики зависят от выбранного жеста.",
+            "en": "Description: Name: Motion + connection; Meaning: A network connects devices; the specific sensors depend on the selected gesture."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Что телефон действительно измеряет",
+        "en": "What the phone really measures"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сначала границы датчика",
+            "en": "First the sensor boundaries"
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Акселерометр: три компонента",
+            "en": "Accelerometer: three components"
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "В покое сырые показания имеют модуль около 1 g. По направлению этого вектора можно оценивать спокойный наклон. При разгоне и встряхивании к сигналу добавляется движение.",
+            "en": "At rest, raw readings have a modulus of about 1 g. The direction of this vector can be used to estimate the quiet slope. When accelerating and shaking, motion is added to the signal."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Данные и единицы Android · Условия измерения наклона",
+            "en": "Android Data and Units Tilt Measurement Conditions"
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Связка с гироскопом",
+            "en": "Connection with gyroscope"
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Гироскоп измеряет угловую скорость. Система объединения данных, sensor fusion, даёт оценку ориентации и помогает разделить тяжесть и линейное ускорение.",
+            "en": "The gyroscope measures angular velocity. The data fusion system, sensor fusion, provides an estimate of orientation and helps separate gravity and linear acceleration."
+          }
+        },
+        {
+          "id": "note-2-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для прицела, быстрых взмахов и свободного хвата обычно нужна эта связка. Надпись «motion» в API не означает, что всё получено одним акселерометром.",
+            "en": "For aiming, fast swings and a free grip, this bundle is usually needed. The inscription “motion” in the API does not mean that everything is received by one accelerometer."
+          }
+        },
+        {
+          "id": "note-2-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Обработанные данные Core Motion",
+            "en": "Processed Core Motion Data"
+          }
+        },
+        {
+          "id": "note-2-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Поворот вокруг вертикали",
+            "en": "Rotate around vertical"
+          }
+        },
+        {
+          "id": "note-2-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Если повернуть телефон вокруг направления тяжести, её проекции не изменятся. Такой поворот, yaw, одним акселерометром не определяется. Гироскоп даёт относительное вращение; для абсолютного азимута нужен дополнительный ориентир.",
+            "en": "If you rotate the phone around the direction of gravity, its projections will not change. Such a rotation, yaw, cannot be detected by the accelerometer alone. The gyroscope gives relative rotation; for absolute azimuth an additional reference point is needed."
+          }
+        },
+        {
+          "id": "note-2-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Физическое ограничение, NXP",
+            "en": "Physical limitation, NXP"
+          }
+        },
+        {
+          "id": "note-2-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Положение и путь",
+            "en": "Position and path"
+          }
+        },
+        {
+          "id": "note-2-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Интегрирование ускорения накапливает ошибку скорости, а затем координат. Акселерометр сам по себе не даёт надёжную траекторию, пройденные метры или точный жест письма в воздухе.",
+            "en": "Integrating the acceleration accumulates the velocity error and then the coordinate error. The accelerometer itself does not provide a reliable trajectory, meters traveled, or the exact gesture of writing in the air."
+          }
+        },
+        {
+          "id": "note-2-entry-14",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Камера и другие внешние ориентиры позволяют корректировать пространственное отслеживание. Визуально-инерциальный трекинг ARKit.",
+            "en": "The camera and other external references allow you to adjust spatial tracking. Visual-inertial tracking ARKit."
+          }
+        },
+        {
+          "id": "note-2-entry-15",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Почему координаты дрейфуют",
+            "en": "Why do coordinates drift?"
+          }
+        },
+        {
+          "id": "note-2-entry-16",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Как читать обозначения. «Акселерометр» означает, что для описанного упрощённого варианта достаточно его сигнала и обработки. «Акселерометр + гироскоп» означает рекомендуемую связку. Дополнительные каналы перечислены отдельно.",
+            "en": "How to read symbols. “Accelerometer” means that for the described simplified version, its signal and processing are sufficient. “Accelerometer + gyroscope” means the recommended combination. Additional channels are listed separately."
+          }
+        },
+        {
+          "id": "note-2-entry-17",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для спокойных наклонов можно оценивать тяжесть фильтром. При активном движении предпочтительны системные оценки gravity и linear acceleration. Конкретные знаки осей, единицы, частоты и наличие виртуальных сенсоров зависят от API и устройства.",
+            "en": "For quiet slopes, you can evaluate the severity with a filter. When actively moving, system estimates of gravity and linear acceleration are preferable. Specific axis signs, units, frequencies, and the presence of virtual sensors depend on the API and device."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Как превратить движение в надёжную механику",
+        "en": "How to turn movement into reliable mechanics"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Из каталога в прототип",
+            "en": "From catalog to prototype"
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Задать смысл сигнала.Наклон может менять положение, скорость или ускорение. Один жест при этих трёх правилах ощущается совершенно по-разному. Скорость виртуального объекта не обязана совпадать со скоростью телефона.",
+            "en": "Set the meaning of the signal. Tilt can change position, speed or acceleration. One gesture with these three rules feels completely different. The speed of the virtual object does not have to match the speed of the phone."
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Выбрать удобную нейтраль и оси.Пользователь калибрует привычный хват. Объяснить, что означает «вверх»: направление экрана, корпуса или мира. При смене ориентации экрана переопределять ввод согласованно.",
+            "en": "Select a comfortable neutral and axes. The user calibrates his usual grip. Explain what “up” means: the direction of the screen, the body, or the world. When changing screen orientation, override input consistently."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Использовать признаки во времени.Для жестов полезны модуль и направление линейного ускорения, пики и их порядок, длительность, мера интенсивности за окно, периодичность и угловая скорость. Резкость изменения ускорения можно оценивать отдельно, но она особенно чувствительна к шуму.",
+            "en": "Use features in time. For gestures, the modulus and direction of linear acceleration, peaks and their order, duration, measure of intensity per window, periodicity and angular velocity are useful. The severity of acceleration changes can be assessed separately, but is particularly sensitive to noise."
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Фильтровать и разделять фазы.Ввести мёртвую зону, разные пороги входа и выхода, минимальную длительность, паузу между жестами и проверку возврата. Сглаживание уменьшает шум, но добавляет задержку; универсальных порогов для всех телефонов нет.",
+            "en": "Filter and separate phases. Introduce a dead zone, different entry and exit thresholds, minimum duration, pause between gestures and return check. Anti-aliasing reduces noise but adds latency; There are no universal thresholds for all phones."
+          }
+        },
+        {
+          "id": "note-3-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Дать понятную обратную связь.Показывать нейтраль, текущее направление, прогресс и факт распознавания. Если игрок не видит экран, использовать звук или вибрацию. Собственная вибрация устройства тоже может попасть в сигнал.",
+            "en": "Give clear feedback. Show neutral, current direction, progress and recognition fact. If the player cannot see the screen, use sound or vibration. The device's own vibration can also get into the signal."
+          }
+        },
+        {
+          "id": "note-3-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Предусмотреть альтернативный ввод.Кнопка, касание или экранный джойстик сохраняют доступ к действию. Нужны настройка чувствительности, повторное центрирование и отключение motion-ввода. Декоративное движение должно учитывать предпочтение уменьшения анимации.",
+            "en": "Provide alternate input. A button, touch, or on-screen joystick maintains access to the action. You need to adjust the sensitivity, re-centering and disabling motion input. Decorative movement should take into account the preference for reducing animation."
+          }
+        },
+        {
+          "id": "note-3-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверять поведение в реальном окружении.Тестировать разные хваты, чехлы, положения тела, случайные касания, ходьбу и тряску транспорта. Удержание позы оценивать с допуском. Ограничивать эффект жеста, чтобы не требовались броски или максимальная сила.",
+            "en": "Test behavior in a real environment. Test different grips, covers, body positions, accidental touches, walking and shaking of vehicles. Maintaining the posture is assessed with tolerance. Limit the effect of the gesture so that throws or maximum force are not required."
+          }
+        },
+        {
+          "id": "note-3-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверить платформу, разрешения и жизненный цикл.Останавливать ненужный поток данных, учитывать паузу приложения и пропуски. В вебе проверить HTTPS, наличие событий и запрос разрешения после действия пользователя там, где он требуется. Наличие стандарта не гарантирует одинаковую поддержку браузерами. Спецификация W3C.",
+            "en": "Check platform, permissions and lifecycle. Stop unnecessary data flow, consider application pause and skips. On the web, check HTTPS, the presence of events and the request for permission after user action where it is required. Having a standard does not guarantee equal support across browsers. W3C specification."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Шесть готовых сочетаний",
+        "en": "Six ready-made combinations"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Комбинации для игры",
+            "en": "Combinations for the game"
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Хрупкий груз",
+            "en": "Fragile cargo"
+          }
+        },
+        {
+          "id": "note-4-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Баланс + ограничение резкости + переноска. Наклон вызывает скольжение груза, импульсы повреждают его, остановка позволяет восстановиться. Для отдельного маршрута нужен ещё источник позиции.",
+            "en": "Balance + sharpness limitation + carrying. Tilt causes the load to slide, impulses damage it, stopping allows it to recover. For a separate route, you also need a position source."
+          }
+        },
+        {
+          "id": "note-4-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Алхимическая кухня",
+            "en": "Alchemical kitchen"
+          }
+        },
+        {
+          "id": "note-4-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Встряхнуть → дать осесть → наклонить → остановить поток в нужный момент. Успех зависит от порядка, дозы движения и времени, а не от силы встряхивания.",
+            "en": "Shake → let it settle → tilt → stop the flow at the right time. Success depends on the order, dose of movement and timing, not on the strength of the shaking."
+          }
+        },
+        {
+          "id": "note-4-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сапёр с инструктором",
+            "en": "Sapper with instructor"
+          }
+        },
+        {
+          "id": "note-4-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Один игрок читает подсказки, другой удерживает позу, ведёт целевой угол и замирает по команде. Штрафовать превышение допуска, показывать состояние обеим ролям.",
+            "en": "One player reads the cues, the other holds the pose, leads the target angle and freezes on command. Penalize exceeding the tolerance, show the status to both roles."
+          }
+        },
+        {
+          "id": "note-4-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Музыкальная машина",
+            "en": "Music machine"
+          }
+        },
+        {
+          "id": "note-4-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наклон выбирает тембр, импульс ставит ноту, повторения задают ритм, неподвижность завершает фразу. Касание включает запись, чтобы обычное перемещение не меняло композицию.",
+            "en": "Tilt selects timbre, impulse sets a note, repetition sets rhythm, stillness completes a phrase. Touching turns on recording so that normal movement does not change the composition."
+          }
+        },
+        {
+          "id": "note-4-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Шторм на столе",
+            "en": "Storm on the table"
+          }
+        },
+        {
+          "id": "note-4-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наклон меняет тяжесть, встречное движение компенсирует виртуальный ветер, волны раскачивают груз. Игрок предсказывает инерцию, а не просто повторяет стрелки.",
+            "en": "The tilt changes the weight, the oncoming movement compensates for the virtual wind, the waves swing the load. The player predicts momentum rather than simply repeating the arrows."
+          }
+        },
+        {
+          "id": "note-4-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Точное заклинание",
+            "en": "Precise Spell"
+          }
+        },
+        {
+          "id": "note-4-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Удержать кнопку → выполнить последовательность направлений → выдержать позу → подтвердить. Голос может выбирать тип заклинания. Каждый этап имеет собственную обратную связь.",
+            "en": "Hold the button → perform a sequence of directions → maintain the pose → confirm. The voice can choose the type of spell. Each stage has its own feedback."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-5",
+      "title": {
+        "ru": "Реальные референсы",
+        "en": "Real references"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-5-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверенные применения",
+            "en": "Proven Applications"
+          }
+        },
+        {
+          "id": "note-5-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Doodle Jump",
+            "en": "Doodle Jump"
+          }
+        },
+        {
+          "id": "note-5-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разработчик описывает наклон для движения влево и вправо и касание для выстрела. Пример сочетания непрерывного motion-управления с дискретным сенсорным действием.",
+            "en": "The developer describes tilting to move left and right and tapping to shoot. An example of a combination of continuous motion control with discrete touch action."
+          }
+        },
+        {
+          "id": "note-5-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Описание Lima Sky в App Store",
+            "en": "Description of Lima Sky in the App Store"
+          }
+        },
+        {
+          "id": "note-5-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "iBeer",
+            "en": "iBeer"
+          }
+        },
+        {
+          "id": "note-5-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разработчик указывает наклон для имитации питья, встряхивание для пены и переливание между телефонами. Пример того, как материал и предметная метафора связывают разные жесты.",
+            "en": "The developer specifies tilting to simulate drinking, shaking for foam, and pouring between phones. An example of how material and object metaphor connect different gestures."
+          }
+        },
+        {
+          "id": "note-5-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Описание HOTTRIX",
+            "en": "Description of HOTTRIX"
+          }
+        },
+        {
+          "id": "note-5-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Shake to Undo",
+            "en": "Shake to Undo"
+          }
+        },
+        {
+          "id": "note-5-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "В руководстве iPhone описана настройка отключения отмены встряхиванием. Это пример команды с потенциальными случайными срабатываниями и необходимой альтернативой.",
+            "en": "The iPhone manual describes how to disable shake cancel. This is an example of a command with potential random occurrences and a necessary alternative."
+          }
+        },
+        {
+          "id": "note-5-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Руководство Apple",
+            "en": "Apple Guide"
+          }
+        },
+        {
+          "id": "note-5-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "phyphox",
+            "en": "phyphox"
+          }
+        },
+        {
+          "id": "note-5-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проект предоставляет эксперименты с ускорением и показывает различие показаний с тяжестью и без неё. Его материал об интегрировании объясняет ограничения восстановления пути.",
+            "en": "The project provides experiments with acceleration and shows the difference in readings with and without gravity. His material on integration explains the limitations of path reconstruction."
+          }
+        },
+        {
+          "id": "note-5-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Линейное ускорение · Ограничения интегрирования",
+            "en": "Linear Acceleration Integration Limits"
+          }
+        },
+        {
+          "id": "note-5-entry-14",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Остальные применения в каталоге являются оригинальными примерами дизайна. Они не приписываются конкретным играм и не означают, что распознавание уже реализовано или проверено на устройстве.",
+            "en": "The remaining applications in the catalog are original design examples. They are not attributed to specific games and do not mean that recognition has already been implemented or tested on the device."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-6",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-6-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-6-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Android Developers: Motion sensors",
+        "en": "Android Developers: Motion sensors"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_motion",
+      "description": {
+        "ru": "Сырые и виртуальные сенсоры, гироскоп, шаги и значительное движение; показания в покое и свободном падении.",
+        "en": "Raw and virtual sensors, gyroscope, steps and significant movement; readings at rest and free fall."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: Getting processed device-motion data",
+        "en": "Apple: Getting processed device-motion data"
+      },
+      "url": "https://developer.apple.com/documentation/coremotion/getting-processed-device-motion-data",
+      "description": {
+        "ru": "Core Motion объединяет датчики и предоставляет attitude, gravity, userAcceleration и rotationRate.",
+        "en": "Core Motion integrates sensors and provides attitude, gravity, userAcceleration and rotationRate."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: Understanding World Tracking",
+        "en": "Apple: Understanding World Tracking"
+      },
+      "url": "https://developer.apple.com/documentation/arkit/understanding-world-tracking",
+      "description": {
+        "ru": "Совмещение камеры и инерциальных датчиков для отслеживания положения и ориентации.",
+        "en": "Combining camera and inertial sensors for position and orientation tracking."
+      }
+    },
+    {
+      "title": {
+        "ru": "Analog Devices: AN-1057, Using an Accelerometer for Inclination Sensing",
+        "en": "Analog Devices: AN-1057, Using an Accelerometer for Inclination Sensing"
+      },
+      "url": "https://www.analog.com/en/resources/app-notes/an-1057.html",
+      "description": {
+        "ru": "Измерение наклона по тяжести и ошибки при дополнительном ускорении.",
+        "en": "Measurement of gravity tilt and error under additional acceleration."
+      }
+    },
+    {
+      "title": {
+        "ru": "NXP: AN4399, High Precision Calibration of a Three-Axis Accelerometer",
+        "en": "NXP: AN4399, High Precision Calibration of a Three-Axis Accelerometer"
+      },
+      "url": "https://www.nxp.com/docs/en/application-note/AN4399.pdf",
+      "description": {
+        "ru": "Поворот вокруг вектора тяжести не меняет его проекции; yaw одним акселерометром не определяется.",
+        "en": "Rotation around the gravity vector does not change its projection; yaw is not detected by the accelerometer alone."
+      }
+    },
+    {
+      "title": {
+        "ru": "phyphox: Integrated acceleration",
+        "en": "phyphox: Integrated acceleration"
+      },
+      "url": "https://phyphox.org/wiki/index.php/Integrated_acceleration",
+      "description": {
+        "ru": "Накопление ошибки при восстановлении скорости и положения интегрированием ускорения.",
+        "en": "Accumulation of error when restoring speed and position by integrating acceleration."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Device Orientation and Motion",
+        "en": "W3C: Device Orientation and Motion"
+      },
+      "url": "https://www.w3.org/TR/orientation-event/",
+      "description": {
+        "ru": "Веб-события, защищённый контекст и запрос доступа к данным движения.",
+        "en": "Web events, protected context, and requesting access to motion data."
+      }
+    },
+    {
+      "title": {
+        "ru": "Lima Sky: Doodle Jump, описание в App Store",
+        "en": "Lima Sky: Doodle Jump, description in the App Store"
+      },
+      "url": "https://apps.apple.com/us/app/doodle-jump/id307727765",
+      "description": {
+        "ru": "Подтверждённая схема: наклон для движения влево/вправо и касание для выстрела.",
+        "en": "Confirmed pattern: tilt to move left/right and touch to shoot."
+      }
+    },
+    {
+      "title": {
+        "ru": "HOTTRIX: iBeer",
+        "en": "HOTTRIX: iBeer"
+      },
+      "url": "https://www.hottrix.com/iBeer",
+      "description": {
+        "ru": "Подтверждённые сценарии: наклон для питья, встряхивание для пены, передача между телефонами.",
+        "en": "Confirmed scenarios: tilting for drinking, shaking for foam, transfer between phones."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple Support: Adjust how iPhone responds to your touch",
+        "en": "Apple Support: Adjust how iPhone responds to your touch"
+      },
+      "url": "https://support.apple.com/en-ca/guide/iphone/iph77bcdd132/ios",
+      "description": {
+        "ru": "Системная функция Shake to Undo и возможность её отключить.",
+        "en": "System function Shake to Undo and the ability to disable it."
+      }
+    },
+    {
+      "title": {
+        "ru": "phyphox: Acceleration without g",
+        "en": "phyphox: Acceleration without g"
+      },
+      "url": "https://phyphox.org/wiki/index.php?title=Sensor%3A_Acceleration_%28without_g%29",
+      "description": {
+        "ru": "Различие сырых показаний с тяжестью и виртуального линейного ускорения.",
+        "en": "Difference between raw readings with gravity and virtual linear acceleration."
+      }
+    }
+  ]
+}

@@ -1,0 +1,2954 @@
+{
+  "id": "electronic-devices",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Электронные устройства в играх",
+    "en": "Electronic devices in games"
+  },
+  "description": {
+    "ru": "Электронные устройства в играх: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Electronic devices in games: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская таксономия действий, форм задач и сквозных условий для проектирования. Категории пересекаются. Референсы подтверждают отдельные семейства, а не каждый вариант.",
+    "en": "Author's taxonomy of actions, task forms and end-to-end conditions for design. Categories overlap. References support individual families, not every variant."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Устройство",
+        "en": "Device"
+      }
+    },
+    {
+      "id": "section-2",
+      "title": {
+        "ru": "Мир",
+        "en": "World"
+      }
+    },
+    {
+      "id": "section-3",
+      "title": {
+        "ru": "Данные",
+        "en": "Data"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": {
+        "ru": "Связь",
+        "en": "Connection"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": {
+        "ru": "Инженерия",
+        "en": "Engineering"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": {
+        "ru": "Форма задачи",
+        "en": "Problem form"
+      }
+    },
+    {
+      "id": "section-7",
+      "title": {
+        "ru": "Условия",
+        "en": "Terms"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-g01",
+      "section": "section-1",
+      "title": {
+        "ru": "Обращение с устройством",
+        "en": "Handling the device"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g01-01",
+              "text": {
+                "ru": "Найти и забрать. Правило: Получить устройство с новыми функциями или чужими данными.",
+                "en": "Find and pick up. Rule: Get a device with new features or someone else's data."
+              }
+            },
+            {
+              "id": "variant-g01-02",
+              "text": {
+                "ru": "Осмотреть корпус. Правило: Найти маркировку, серийный номер, разъёмы и следы повреждений.",
+                "en": "Inspect the body. Rule: Find markings, serial number, connectors and signs of damage."
+              }
+            },
+            {
+              "id": "variant-g01-03",
+              "text": {
+                "ru": "Развернуть и открыть. Правило: Раскрыть ноутбук, выдвинуть клавиатуру или повернуть экран для доступа.",
+                "en": "Unfold and open. Rule: Open the laptop, slide out the keyboard or rotate the screen to access..."
+              }
+            },
+            {
+              "id": "variant-g01-04",
+              "text": {
+                "ru": "Разместить в мире. Правило: Поставить камеру, датчик или ноутбук там, где он сможет работать.",
+                "en": "Post to the world. Rule: Place the camera, sensor or laptop where it can work..."
+              }
+            },
+            {
+              "id": "variant-g01-05",
+              "text": {
+                "ru": "Удерживать при использовании. Правило: Занять руки устройством и ограничить другие действия персонажа.",
+                "en": "Hold when using. Rule: Keep your hands busy with the device and limit other character actions."
+              }
+            },
+            {
+              "id": "variant-g01-06",
+              "text": {
+                "ru": "Передать другому. Правило: Отдать устройство NPC или напарнику вместе с доступом и информацией.",
+                "en": "Pass it on to someone else. Rule: Give the device to an NPC or partner along with access and information."
+              }
+            },
+            {
+              "id": "variant-g01-07",
+              "text": {
+                "ru": "Сохранить устройство целым. Правило: Доставить хрупкую электронику, избегая воды, ударов и иных повреждений.",
+                "en": "Keep the device intact. Rule: Deliver fragile electronics avoiding water, shock or other damage."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g02",
+      "section": "section-1",
+      "title": {
+        "ru": "Питание и запуск",
+        "en": "Power and startup"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g02-01",
+              "text": {
+                "ru": "Включить или выключить. Правило: Запустить функцию или прекратить работу устройства.",
+                "en": "Turn on or off. Rule: Start a function or stop the device."
+              }
+            },
+            {
+              "id": "variant-g02-02",
+              "text": {
+                "ru": "Выполнить порядок запуска. Правило: Включить блоки и переключатели в нужной последовательности.",
+                "en": "Perform startup order. Rule: Turn on blocks and switches in the required sequence."
+              }
+            },
+            {
+              "id": "variant-g02-03",
+              "text": {
+                "ru": "Зарядить. Правило: Найти источник энергии и выделить время на восстановление заряда.",
+                "en": "Charge. Rule: Find a source of energy and take time to restore the charge."
+              }
+            },
+            {
+              "id": "variant-g02-04",
+              "text": {
+                "ru": "Заменить батарею. Правило: Восстановить питание расходным предметом.",
+                "en": "Replace the battery. Rule: Restore power to a consumable item."
+              }
+            },
+            {
+              "id": "variant-g02-05",
+              "text": {
+                "ru": "Восстановить электроснабжение. Правило: Подключить кабель, генератор или исправную линию питания.",
+                "en": "Restore power supply. Rule: Connect a cable, generator or working power line."
+              }
+            },
+            {
+              "id": "variant-g02-06",
+              "text": {
+                "ru": "Распределить мощность. Правило: Выбрать, какие устройства получат ограниченную энергию.",
+                "en": "Distribute power. Rule: Choose which devices will receive limited energy."
+              }
+            },
+            {
+              "id": "variant-g02-07",
+              "text": {
+                "ru": "Экономить заряд. Правило: Отключать функции и выбирать между длительностью и возможностями работы.",
+                "en": "Save battery. Rule: Disable functions and choose between duration and work capabilities."
+              }
+            },
+            {
+              "id": "variant-g02-08",
+              "text": {
+                "ru": "Перезагрузить. Правило: Устранить зависание ценой времени или потери текущей операции.",
+                "en": "Reboot. Rule: Eliminate hangs at the cost of time or loss of the current operation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g03",
+      "section": "section-1",
+      "title": {
+        "ru": "Ввод и управление интерфейсом",
+        "en": "Input and interface control"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g03-01",
+              "text": {
+                "ru": "Выбрать курсором. Правило: Найти нужный элемент на экране и активировать его.",
+                "en": "Select with cursor. Rule: Find the desired element on the screen and activate it."
+              }
+            },
+            {
+              "id": "variant-g03-02",
+              "text": {
+                "ru": "Управлять касаниями и жестами. Правило: Листать, рисовать жест, масштабировать или проводить пальцем по схеме.",
+                "en": "Control with touches and gestures. Rule: Scroll, draw a gesture, scale or swipe your finger along the diagram."
+              }
+            },
+            {
+              "id": "variant-g03-03",
+              "text": {
+                "ru": "Ввести текст или команду. Правило: Самостоятельно сформулировать запрос, ответ, код или инструкцию.",
+                "en": "Enter text or command. Rule: Formulate your own request, response, code or instruction."
+              }
+            },
+            {
+              "id": "variant-g03-04",
+              "text": {
+                "ru": "Манипулировать органами управления. Правило: Нажимать физические кнопки, двигать ползунки и вращать регуляторы.",
+                "en": "Manipulate controls. Rule: Press physical buttons, move sliders and turn knobs..."
+              }
+            },
+            {
+              "id": "variant-g03-05",
+              "text": {
+                "ru": "Перетаскивать объекты. Правило: Соединять данные, переносить файлы и собирать порядок элементов.",
+                "en": "Drag objects. Rule: Connect data, transfer files and collect the order of elements."
+              }
+            },
+            {
+              "id": "variant-g03-06",
+              "text": {
+                "ru": "Управлять окнами. Правило: Располагать, перекрывать и переключать окна для решения задачи.",
+                "en": "Manage windows. Rule: Position, overlap and switch windows to solve a problem."
+              }
+            },
+            {
+              "id": "variant-g03-07",
+              "text": {
+                "ru": "Подать голосовую команду. Правило: Использовать распознаваемое слово или фразу как игровой ввод.",
+                "en": "Give a voice command. Rule: Use a recognized word or phrase as game input."
+              }
+            },
+            {
+              "id": "variant-g03-08",
+              "text": {
+                "ru": "Повернуть или наклонить устройство. Правило: Использовать ориентацию, гироскоп либо совмещение экрана с объектом.",
+                "en": "Rotate or tilt the device. Rule: Use orientation, gyroscope or alignment of the screen with the object."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g04",
+      "section": "section-1",
+      "title": {
+        "ru": "Операционная система и программы",
+        "en": "Operating system and programs"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g04-01",
+              "text": {
+                "ru": "Запустить приложение. Правило: Выбрать инструмент, нужный для текущей задачи.",
+                "en": "Launch the application. Rule: Select the tool needed for the current task."
+              }
+            },
+            {
+              "id": "variant-g04-02",
+              "text": {
+                "ru": "Установить или удалить программу. Правило: Открыть новую возможность либо освободить ресурсы системы.",
+                "en": "Install or remove a program. Rule: Open a new opportunity or free up system resources."
+              }
+            },
+            {
+              "id": "variant-g04-03",
+              "text": {
+                "ru": "Обновить или откатить ПО. Правило: Получить совместимость или вернуть работоспособную версию.",
+                "en": "Update or roll back software. Rule: Get compatibility or return a working version."
+              }
+            },
+            {
+              "id": "variant-g04-04",
+              "text": {
+                "ru": "Настроить систему. Правило: Менять время, язык, яркость, звук и уведомления ради игрового эффекта.",
+                "en": "Set up the system. Rule: Change time, language, brightness, sound and notifications for game effect."
+              }
+            },
+            {
+              "id": "variant-g04-05",
+              "text": {
+                "ru": "Переключить режим. Правило: Выбрать безопасный, автономный, сервисный или иной режим работы.",
+                "en": "Switch mode. Rule: Select a safe, autonomous, service or other operating mode."
+              }
+            },
+            {
+              "id": "variant-g04-06",
+              "text": {
+                "ru": "Управлять процессами. Правило: Остановить мешающую программу или изменить приоритет вычислений.",
+                "en": "Manage processes. Rule: Stop the interfering program or change the computation priority."
+              }
+            },
+            {
+              "id": "variant-g04-07",
+              "text": {
+                "ru": "Изменить конфигурацию. Правило: Отредактировать параметры, определяющие поведение программы или устройства.",
+                "en": "Change configuration. Rule: Edit parameters that determine the behavior of a program or device."
+              }
+            },
+            {
+              "id": "variant-g04-08",
+              "text": {
+                "ru": "Сменить среду работы. Правило: Загрузиться с другого носителя, открыть виртуальную машину или альтернативную ОС.",
+                "en": "Change your work environment. Rule: Boot from another medium, open a virtual machine or an alternative OS."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g05",
+      "section": "section-2",
+      "title": {
+        "ru": "Персональные инструменты",
+        "en": "Personal tools"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Компьютер; Прибор.",
+        "en": "Devices: Smartphone; Computer; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g05-01",
+              "text": {
+                "ru": "Поставить будильник или таймер. Правило: Подготовить сигнал, отсроченное действие или напоминание к нужному моменту.",
+                "en": "Set an alarm or timer. Rule: Prepare a signal, delayed action or reminder for the right moment."
+              }
+            },
+            {
+              "id": "variant-g05-02",
+              "text": {
+                "ru": "Спланировать календарь. Правило: Согласовать встречи, сроки и доступность персонажей.",
+                "en": "Plan your calendar. Rule: Agree on meetings, deadlines and availability of characters."
+              }
+            },
+            {
+              "id": "variant-g05-03",
+              "text": {
+                "ru": "Выполнить вычисление. Правило: Получить нужное число через калькулятор или встроенный расчётный инструмент.",
+                "en": "Perform the calculation. Rule: Get the required number through a calculator or built-in calculation tool."
+              }
+            },
+            {
+              "id": "variant-g05-04",
+              "text": {
+                "ru": "Перевести текст или речь. Правило: Сделать понятными надпись, документ или разговор.",
+                "en": "Translate text or speech. Rule: Make an inscription, document or conversation understandable."
+              }
+            },
+            {
+              "id": "variant-g05-05",
+              "text": {
+                "ru": "Осветить пространство. Правило: Использовать фонарик или экран для исследования тёмной зоны.",
+                "en": "Light up the space. Rule: Use a flashlight or screen to explore the dark area..."
+              }
+            },
+            {
+              "id": "variant-g05-06",
+              "text": {
+                "ru": "Узнать прогноз и расписание. Правило: Спланировать действия с учётом предстоящих условий и событий.",
+                "en": "Find out the forecast and schedule. Rule: Plan actions taking into account upcoming conditions and events."
+              }
+            },
+            {
+              "id": "variant-g05-07",
+              "text": {
+                "ru": "Следить за состоянием персонажа. Правило: Считывать здоровье, пульс, нагрузку и иные данные через носимую электронику.",
+                "en": "Monitor the character's condition. Rule: Read health, heart rate, load and other data through wearable electronics."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g06",
+      "section": "section-3",
+      "title": {
+        "ru": "Доступ и идентификация",
+        "en": "Access and authentication"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g06-01",
+              "text": {
+                "ru": "Ввести пароль или PIN. Правило: Открыть защищённое устройство или раздел.",
+                "en": "Enter your password or PIN. Rule: Open a protected device or partition."
+              }
+            },
+            {
+              "id": "variant-g06-02",
+              "text": {
+                "ru": "Разгадать пароль по контексту. Правило: Найти ответ в окружении, переписке или биографии владельца.",
+                "en": "Unravel the password by context. Rule: Find the answer in the environment, correspondence or biography of the owner."
+              }
+            },
+            {
+              "id": "variant-g06-03",
+              "text": {
+                "ru": "Воспроизвести графический ключ. Правило: Вывести рисунок по следам или подсказке.",
+                "en": "Play pattern key. Rule: Draw a picture based on traces or a hint."
+              }
+            },
+            {
+              "id": "variant-g06-04",
+              "text": {
+                "ru": "Применить биометрию. Правило: Найти подходящий отпечаток, лицо, голос или владельца устройства.",
+                "en": "Apply biometrics. Rule: Find a matching fingerprint, face, voice or device owner."
+              }
+            },
+            {
+              "id": "variant-g06-05",
+              "text": {
+                "ru": "Предъявить цифровой ключ. Правило: Использовать пропуск, токен, сертификат или сохранённый билет.",
+                "en": "Present the digital key. Rule: Use a pass, token, certificate or saved ticket."
+              }
+            },
+            {
+              "id": "variant-g06-06",
+              "text": {
+                "ru": "Пройти второй фактор. Правило: Получить одноразовый код или подтверждение на другом устройстве.",
+                "en": "Pass the second factor. Rule: Receive a one-time code or confirmation on another device."
+              }
+            },
+            {
+              "id": "variant-g06-07",
+              "text": {
+                "ru": "Восстановить аккаунт. Правило: Ответить на контрольные вопросы или воспользоваться резервным способом входа.",
+                "en": "Recover your account. Rule: Answer security questions or use a backup login method."
+              }
+            },
+            {
+              "id": "variant-g06-08",
+              "text": {
+                "ru": "Сменить пользователя и права. Правило: Выбрать учётную запись с нужными полномочиями.",
+                "en": "Change user and rights. Rule: Select an account with the required permissions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g07",
+      "section": "section-3",
+      "title": {
+        "ru": "Поиск и извлечение сведений",
+        "en": "Finding and retrieving information"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g07-01",
+              "text": {
+                "ru": "Просмотреть каталоги. Правило: Найти нужный файл среди папок и вложений.",
+                "en": "View catalogs. Rule: Find the desired file among folders and attachments."
+              }
+            },
+            {
+              "id": "variant-g07-02",
+              "text": {
+                "ru": "Искать по ключевым словам. Правило: Выводить новые сведения через удачно выбранный запрос.",
+                "en": "Search by keywords. Rule: Display new information through a well-chosen query."
+              }
+            },
+            {
+              "id": "variant-g07-03",
+              "text": {
+                "ru": "Фильтровать записи. Правило: Ограничить результаты датой, автором, местом или типом данных.",
+                "en": "Filter entries. Rule: Limit results by date, author, location, or data type."
+              }
+            },
+            {
+              "id": "variant-g07-04",
+              "text": {
+                "ru": "Сортировать. Правило: Обнаружить закономерность через порядок записей.",
+                "en": "Sort. Rule: Discover a pattern through the order of records."
+              }
+            },
+            {
+              "id": "variant-g07-05",
+              "text": {
+                "ru": "Следовать по связям. Правило: Переходить между документами, ссылками, контактами и связанными объектами.",
+                "en": "Follow connections. Rule: Navigate between documents, links, contacts and related objects."
+              }
+            },
+            {
+              "id": "variant-g07-06",
+              "text": {
+                "ru": "Изучить историю активности. Правило: Восстановить действия по журналам вызовов, посещений и запусков.",
+                "en": "Review activity history. Rule: Restore actions based on call, visit and launch logs."
+              }
+            },
+            {
+              "id": "variant-g07-07",
+              "text": {
+                "ru": "Исследовать метаданные. Правило: Использовать время, координаты, автора и технические свойства файла.",
+                "en": "Explore metadata. Rule: Use time, coordinates, author and technical properties of the file."
+              }
+            },
+            {
+              "id": "variant-g07-08",
+              "text": {
+                "ru": "Открыть скрытый контент. Правило: Найти секретную папку, архив, черновик или недоступный обычному поиску раздел.",
+                "en": "Reveal hidden content. Rule: Find a secret folder, archive, draft or section inaccessible to normal search."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g08",
+      "section": "section-3",
+      "title": {
+        "ru": "Файлы и хранение",
+        "en": "Files and storage"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g08-01",
+              "text": {
+                "ru": "Скопировать или переместить. Правило: Забрать данные или положить их туда, где ими воспользуется другая система.",
+                "en": "Copy or move. Rule: Take the data or put it somewhere where another system will use it."
+              }
+            },
+            {
+              "id": "variant-g08-02",
+              "text": {
+                "ru": "Переименовать и организовать. Правило: Задать имя или структуру папок, от которых зависит распознавание данных.",
+                "en": "Rename and organize. Rule: Specify the name or folder structure on which data recognition depends."
+              }
+            },
+            {
+              "id": "variant-g08-03",
+              "text": {
+                "ru": "Удалить. Правило: Уничтожить улику, освободить место или убрать препятствие для работы системы.",
+                "en": "Delete. Rule: Destroy evidence, free up space, or remove an obstacle to the operation of the system."
+              }
+            },
+            {
+              "id": "variant-g08-04",
+              "text": {
+                "ru": "Восстановить удалённое. Правило: Вернуть сведения из корзины, резервной копии или остатков данных.",
+                "en": "Recover deleted items. Rule: Return information from the recycle bin, backup copy, or leftover data."
+              }
+            },
+            {
+              "id": "variant-g08-05",
+              "text": {
+                "ru": "Починить повреждённый файл. Правило: Восстановить структуру и сделать содержимое читаемым.",
+                "en": "Repair a damaged file. Rule: Restore the structure and make the content readable."
+              }
+            },
+            {
+              "id": "variant-g08-06",
+              "text": {
+                "ru": "Распаковать или собрать архив. Правило: Получить доступ к упакованным данным либо собрать разрозненные части.",
+                "en": "Unpack or collect the archive. Rule: Gain access to packaged data or collect scattered parts."
+              }
+            },
+            {
+              "id": "variant-g08-07",
+              "text": {
+                "ru": "Зашифровать или расшифровать. Правило: Защитить содержимое или открыть его с помощью игрового ключа.",
+                "en": "Encrypt or decrypt. Rule: Protect the content or open it with a game key."
+              }
+            },
+            {
+              "id": "variant-g08-08",
+              "text": {
+                "ru": "Управлять местом. Правило: Решить, какие снимки, записи и программы сохранить при ограниченном объёме.",
+                "en": "Manage the place. Rule: Decide which pictures, recordings and programs to save with limited space..."
+              }
+            },
+            {
+              "id": "variant-g08-09",
+              "text": {
+                "ru": "Создать резервную копию. Правило: Сохранить состояние данных перед рисковой операцией.",
+                "en": "Create a backup. Rule: Save the state of the data before a risky operation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g09",
+      "section": "section-3",
+      "title": {
+        "ru": "Создание и изменение контента",
+        "en": "Creating and editing content"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g09-01",
+              "text": {
+                "ru": "Написать документ. Правило: Сформировать текст, который прочитает персонаж или проверит система.",
+                "en": "Write a document. Rule: Generate text that will be read by the character or checked by the system."
+              }
+            },
+            {
+              "id": "variant-g09-02",
+              "text": {
+                "ru": "Заполнить таблицу или форму. Правило: Внести значения по правилам задачи.",
+                "en": "Fill out the table or form. Rule: Enter values ​​according to the rules of the problem."
+              }
+            },
+            {
+              "id": "variant-g09-03",
+              "text": {
+                "ru": "Изменить запись в базе. Правило: Исправить или подделать статус, владельца, допуск либо иной параметр мира.",
+                "en": "Change a record in the database. Rule: Correct or falsify status, owner, clearance or other parameter of the world."
+              }
+            },
+            {
+              "id": "variant-g09-04",
+              "text": {
+                "ru": "Отредактировать изображение. Правило: Обрезать, пометить, собрать или изменить картинку для нужного результата.",
+                "en": "Edit image. Rule: Crop, mark, assemble or change the picture for the desired result."
+              }
+            },
+            {
+              "id": "variant-g09-05",
+              "text": {
+                "ru": "Смонтировать звук или видео. Правило: Выбрать фрагменты и порядок, влияющие на смысл или проверку.",
+                "en": "Edit audio or video. Rule: Select fragments and order that affect meaning or verification."
+              }
+            },
+            {
+              "id": "variant-g09-06",
+              "text": {
+                "ru": "Собрать цифровой объект. Правило: Сделать схему, модель, чертёж или макет для дальнейшего применения.",
+                "en": "Collect a digital object. Rule: Make a diagram, model, drawing or layout for further use."
+              }
+            },
+            {
+              "id": "variant-g09-07",
+              "text": {
+                "ru": "Сфабриковать материал. Правило: Создать поддельный документ, переписку или медиазапись в рамках сюжета.",
+                "en": "Fabricate material. Rule: Create a fake document, correspondence or media recording as part of the story."
+              }
+            },
+            {
+              "id": "variant-g09-08",
+              "text": {
+                "ru": "Добавить заметки и связи. Правило: Пометить улики и построить собственную систему выводов.",
+                "en": "Add notes and connections. Rule: Label the evidence and build your own system of conclusions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g10",
+      "section": "section-4",
+      "title": {
+        "ru": "Звонки и голосовая связь",
+        "en": "Calls and voice communication"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Компьютер; Рация; Терминал.",
+        "en": "Devices: Smartphone; Computer; Walkie Talkie; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g10-01",
+              "text": {
+                "ru": "Позвонить по номеру. Правило: Самостоятельно набрать найденную комбинацию и установить контакт.",
+                "en": "Call the number. Rule: Dial the combination you found and establish contact yourself."
+              }
+            },
+            {
+              "id": "variant-g10-02",
+              "text": {
+                "ru": "Ответить или отклонить. Правило: Выбрать, принимать ли входящий вызов и связанные последствия.",
+                "en": "Reply or decline. Rule: Select whether to accept an incoming call and the associated consequences."
+              }
+            },
+            {
+              "id": "variant-g10-03",
+              "text": {
+                "ru": "Вести разговор. Правило: Выбирать реплики, сведения и тон общения через устройство.",
+                "en": "Carry on a conversation. Rule: Choose cues, information and tone of communication through the device."
+              }
+            },
+            {
+              "id": "variant-g10-04",
+              "text": {
+                "ru": "Прервать или удержать линию. Правило: Управлять длительностью контакта, риском и доступностью собеседника.",
+                "en": "Break or hold the line. Rule: Manage the duration of contact, risk and availability of the interlocutor."
+              }
+            },
+            {
+              "id": "variant-g10-05",
+              "text": {
+                "ru": "Пользоваться голосовой почтой. Правило: Прослушать оставленное сообщение или записать своё.",
+                "en": "Use voicemail. Rule: Listen to the message left or record your own..."
+              }
+            },
+            {
+              "id": "variant-g10-06",
+              "text": {
+                "ru": "Пройти голосовое меню. Правило: Выбрать правильные пункты автоматического оператора.",
+                "en": "Go through the voice menu. Rule: Select the correct points of the automatic operator."
+              }
+            },
+            {
+              "id": "variant-g10-07",
+              "text": {
+                "ru": "Соединить абонентов. Правило: Переключить линию, устроить конференцию или передать разговор адресату.",
+                "en": "Connect subscribers. Rule: Switch the line, arrange a conference or transfer the conversation to the recipient..."
+              }
+            },
+            {
+              "id": "variant-g10-08",
+              "text": {
+                "ru": "Общаться по видео. Правило: Использовать видимое окружение и жесты наряду с речью.",
+                "en": "Chat via video. Rule: Use visible surroundings and gestures along with speech..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g11",
+      "section": "section-4",
+      "title": {
+        "ru": "Сообщения и переписка",
+        "en": "Messages and correspondence"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Компьютер; Терминал.",
+        "en": "Devices: Smartphone; Computer; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g11-01",
+              "text": {
+                "ru": "Читать переписку. Правило: Извлекать сведения из сообщений и контекста разговора.",
+                "en": "Read the correspondence. Rule: Extract information from messages and conversation context."
+              }
+            },
+            {
+              "id": "variant-g11-02",
+              "text": {
+                "ru": "Выбрать ответ. Правило: Изменять отношения и ход событий через готовую реплику.",
+                "en": "Select answer. Rule: Change relationships and the course of events through a ready-made replica."
+              }
+            },
+            {
+              "id": "variant-g11-03",
+              "text": {
+                "ru": "Напечатать ответ. Правило: Формулировать сообщение, которое игра интерпретирует по своим правилам.",
+                "en": "Type answer. Rule: Formulate a message that the game interprets according to its own rules."
+              }
+            },
+            {
+              "id": "variant-g11-04",
+              "text": {
+                "ru": "Передать вложение. Правило: Отправить фотографию, файл, координаты или контакт.",
+                "en": "Submit attachment. Rule: Send a photo, file, coordinates or contact."
+              }
+            },
+            {
+              "id": "variant-g11-05",
+              "text": {
+                "ru": "Назначить время отправки. Правило: Отложить сообщение или успеть ответить в доступное окно.",
+                "en": "Set a sending time. Rule: Postpone the message or have time to respond in the available window."
+              }
+            },
+            {
+              "id": "variant-g11-06",
+              "text": {
+                "ru": "Не отвечать. Правило: Сделать молчание решением с последствиями для отношений или задания.",
+                "en": "Don't answer. Rule: Make silence a decision with consequences for the relationship or task."
+              }
+            },
+            {
+              "id": "variant-g11-07",
+              "text": {
+                "ru": "Сменить адресата или канал. Правило: Выбрать, кому и насколько публично раскрыть сведения.",
+                "en": "Change destination or channel. Rule: Choose to whom and how publicly to disclose information."
+              }
+            },
+            {
+              "id": "variant-g11-08",
+              "text": {
+                "ru": "Управлять контактами. Правило: Добавить, заблокировать или удалить человека, меняя доступные взаимодействия.",
+                "en": "Manage contacts. Rule: Add, block or remove a person, changing the available interactions."
+              }
+            },
+            {
+              "id": "variant-g11-09",
+              "text": {
+                "ru": "Получить и принять задание. Правило: Выбрать предложение, присланное через устройство, и запустить игровую задачу.",
+                "en": "Receive and accept the task. Rule: Select an offer sent through the device and start the game task."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g12",
+      "section": "section-3",
+      "title": {
+        "ru": "Браузер и интернет",
+        "en": "Browser and Internet"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g12-01",
+              "text": {
+                "ru": "Посетить сайт по адресу. Правило: Использовать найденный URL, домен или путь как ключ к контенту.",
+                "en": "Visit the site at. Rule: Use the found URL, domain or path as a key to the content."
+              }
+            },
+            {
+              "id": "variant-g12-02",
+              "text": {
+                "ru": "Исследовать поисковую выдачу. Правило: Выбрать полезный источник среди результатов и отвлекающих страниц.",
+                "en": "Explore search results. Rule: Select a useful source among results and distracting pages."
+              }
+            },
+            {
+              "id": "variant-g12-03",
+              "text": {
+                "ru": "Переходить по сайтам. Правило: Восстановить связи через ссылки, разделы и перекрёстные упоминания.",
+                "en": "Go to sites. Rule: Restore connections through links, sections and cross-mentions."
+              }
+            },
+            {
+              "id": "variant-g12-04",
+              "text": {
+                "ru": "Воспользоваться веб-сервисом. Правило: Получить результат через форму, калькулятор, справочник или кабинет.",
+                "en": "Use the web service. Rule: Get the result through a form, calculator, reference book or office."
+              }
+            },
+            {
+              "id": "variant-g12-05",
+              "text": {
+                "ru": "Скачать материал. Правило: Добыть файл или программу из сети с затратой времени и возможным риском.",
+                "en": "Download material. Rule: Retrieve a file or program from the network at a time-consuming and possible risk."
+              }
+            },
+            {
+              "id": "variant-g12-06",
+              "text": {
+                "ru": "Посмотреть архивную версию. Правило: Узнать прежнее содержимое изменённой страницы.",
+                "en": "View archived version. Rule: Find out the previous contents of the changed page."
+              }
+            },
+            {
+              "id": "variant-g12-07",
+              "text": {
+                "ru": "Найти закрытое сообщество. Правило: Получить приглашение или выполнить условие доступа к форуму и скрытому разделу.",
+                "en": "Find a gated community. Rule: Receive an invitation or fulfill the condition for access to the forum and hidden section."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g13",
+      "section": "section-4",
+      "title": {
+        "ru": "Соцсети и публичная идентичность",
+        "en": "Social networks and public identity"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Компьютер.",
+        "en": "Devices: Smartphone; Computer."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g13-01",
+              "text": {
+                "ru": "Опубликовать пост. Правило: Сделать информацию публичной и вызвать реакцию мира.",
+                "en": "Publish a post. Rule: Make information public and cause a reaction from the world..."
+              }
+            },
+            {
+              "id": "variant-g13-02",
+              "text": {
+                "ru": "Комментировать и реагировать. Правило: Повлиять на отношения, видимость публикации или доступ к сообществу.",
+                "en": "Comment and react. Rule: Impact relationships, post visibility, or community access."
+              }
+            },
+            {
+              "id": "variant-g13-03",
+              "text": {
+                "ru": "Развивать аудиторию. Правило: Выбирать контент и действия ради подписчиков и охвата.",
+                "en": "Develop an audience. Rule: Choose content and actions for the sake of subscribers and reach."
+              }
+            },
+            {
+              "id": "variant-g13-04",
+              "text": {
+                "ru": "Вести трансляцию. Правило: Удерживать внимание зрителей и реагировать на события эфира.",
+                "en": "Broadcast. Rule: Keep the attention of the audience and react to the events of the broadcast."
+              }
+            },
+            {
+              "id": "variant-g13-05",
+              "text": {
+                "ru": "Модерировать. Правило: Выявлять нарушения, удалять контент или ограничивать пользователей.",
+                "en": "Moderate. Rule: Detect violations, remove content or restrict users."
+              }
+            },
+            {
+              "id": "variant-g13-06",
+              "text": {
+                "ru": "Создать цифровую личность. Правило: Настроить профиль, псевдоним и образ, которому доверяют собеседники.",
+                "en": "Create a digital identity. Rule: Set up a profile, nickname and image that your interlocutors trust."
+              }
+            },
+            {
+              "id": "variant-g13-07",
+              "text": {
+                "ru": "Использовать знакомства. Правило: Выбирать анкеты, вступать в контакт и договариваться о встречах.",
+                "en": "Use connections. Rule: Select profiles, make contact and arrange meetings."
+              }
+            },
+            {
+              "id": "variant-g13-08",
+              "text": {
+                "ru": "Управлять репутацией. Правило: Отвечать на обвинения, раскрывать сведения или скрывать компромат.",
+                "en": "Manage reputation. Rule: Respond to accusations, disclose information or hide incriminating evidence..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g14",
+      "section": "section-2",
+      "title": {
+        "ru": "Покупки, деньги и услуги",
+        "en": "Shopping, money and services"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g14-01",
+              "text": {
+                "ru": "Купить или продать. Правило: Обменять виртуальные деньги и имущество через электронный сервис.",
+                "en": "Buy or sell. Rule: Exchange virtual money and property through an electronic service."
+              }
+            },
+            {
+              "id": "variant-g14-02",
+              "text": {
+                "ru": "Заказать доставку. Правило: Выбрать товар, место и время его появления в мире.",
+                "en": "Order delivery. Rule: Choose a product, place and time of its appearance in the world."
+              }
+            },
+            {
+              "id": "variant-g14-03",
+              "text": {
+                "ru": "Вызвать услугу. Правило: Заказать транспорт, помощь, ремонт или иной сервис.",
+                "en": "Call the service. Rule: Order transport, assistance, repair or other service."
+              }
+            },
+            {
+              "id": "variant-g14-04",
+              "text": {
+                "ru": "Перевести или снять деньги. Правило: Переместить средства между игровыми счетами и наличными.",
+                "en": "Transfer or withdraw money. Rule: Move funds between gaming accounts and cash."
+              }
+            },
+            {
+              "id": "variant-g14-05",
+              "text": {
+                "ru": "Оплатить счёт. Правило: Сохранить доступ к связи, электричеству, жилью или услуге.",
+                "en": "Pay the bill. Rule: Maintain access to communications, electricity, housing or services."
+              }
+            },
+            {
+              "id": "variant-g14-06",
+              "text": {
+                "ru": "Торговаться на аукционе. Правило: Выбрать ставку и момент сделки в конкуренции с другими участниками.",
+                "en": "Bargain at an auction. Rule: Choose a bet and the moment of the transaction in competition with other participants."
+              }
+            },
+            {
+              "id": "variant-g14-07",
+              "text": {
+                "ru": "Торговать активами. Правило: Использовать изменение виртуальных цен для получения ресурсов.",
+                "en": "Trade assets. Rule: Use changes in virtual prices to obtain resources."
+              }
+            },
+            {
+              "id": "variant-g14-08",
+              "text": {
+                "ru": "Применить билет или бронирование. Правило: Получить доступ к поездке, мероприятию или зарезервированному объекту.",
+                "en": "Apply ticket or reservation. Rule: Gain access to a trip, event or reserved facility."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g15",
+      "section": "section-2",
+      "title": {
+        "ru": "Рабочие и административные системы",
+        "en": "Work and administrative systems"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Терминал; Прибор.",
+        "en": "Devices: Computer; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g15-01",
+              "text": {
+                "ru": "Обработать заявку. Правило: Принять, классифицировать, решить или отклонить обращение.",
+                "en": "Process the application. Rule: Accept, classify, resolve or reject the request."
+              }
+            },
+            {
+              "id": "variant-g15-02",
+              "text": {
+                "ru": "Проверить личность. Правило: Сопоставить электронные сведения, документы и данные человека.",
+                "en": "Verify identity. Rule: Compare electronic information, documents and human data."
+              }
+            },
+            {
+              "id": "variant-g15-03",
+              "text": {
+                "ru": "Принять решение по делу. Правило: Назначить статус, допуск, штраф или распоряжение через систему.",
+                "en": "Make a decision on the case. Rule: Assign status, clearance, fine or order through the system."
+              }
+            },
+            {
+              "id": "variant-g15-04",
+              "text": {
+                "ru": "Распределить задачи. Правило: Назначить сотрудников, ресурсы и очередность работ.",
+                "en": "Distribute tasks. Rule: Assign employees, resources and work order."
+              }
+            },
+            {
+              "id": "variant-g15-05",
+              "text": {
+                "ru": "Организовать логистику. Правило: Управлять маршрутами, складом, отправлениями и заказами.",
+                "en": "Organize logistics. Rule: Manage routes, warehouse, shipments and orders."
+              }
+            },
+            {
+              "id": "variant-g15-06",
+              "text": {
+                "ru": "Провести исследование. Правило: Выбрать образец, режим и параметры цифрового или лабораторного анализа.",
+                "en": "Conduct research. Rule: Select sample, mode and parameters of digital or laboratory analysis."
+              }
+            },
+            {
+              "id": "variant-g15-07",
+              "text": {
+                "ru": "Выполнить рабочую норму. Правило: Обрабатывать информацию с требованиями к скорости и точности.",
+                "en": "Complete work quota. Rule: Process information with requirements for speed and accuracy."
+              }
+            },
+            {
+              "id": "variant-g15-08",
+              "text": {
+                "ru": "Отправить отчёт. Правило: Выбрать сведения, которые получит руководство, заказчик или другая сторона.",
+                "en": "Submit report. Rule: Select the information that will be received by management, the customer or another party."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g16",
+      "section": "section-3",
+      "title": {
+        "ru": "Съёмка, запись и сканирование",
+        "en": "Photography, recording and scanning"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Камера; Прибор; Терминал.",
+        "en": "Devices: Smartphone; Camera; Device; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g16-01",
+              "text": {
+                "ru": "Сфотографировать. Правило: Зафиксировать объект или событие как улику, достижение или ресурс.",
+                "en": "Take a photo. Rule: Record an object or event as evidence, achievement or resource..."
+              }
+            },
+            {
+              "id": "variant-g16-02",
+              "text": {
+                "ru": "Снять видео. Правило: Сохранить разворачивающееся событие, удерживая его в кадре.",
+                "en": "Make a video. Rule: Preserve the unfolding event by keeping it in the frame..."
+              }
+            },
+            {
+              "id": "variant-g16-03",
+              "text": {
+                "ru": "Записать звук. Правило: Получить разговор, сигнал или образец для последующего использования.",
+                "en": "Record sound. Rule: Receive a conversation, signal or pattern for later use."
+              }
+            },
+            {
+              "id": "variant-g16-04",
+              "text": {
+                "ru": "Настроить съёмку. Правило: Выбрать фокус, увеличение, экспозицию, вспышку и другие значимые параметры.",
+                "en": "Set up shooting. Rule: Select focus, zoom, exposure, flash and other relevant parameters."
+              }
+            },
+            {
+              "id": "variant-g16-05",
+              "text": {
+                "ru": "Построить нужный кадр. Правило: Совместить объекты, поймать момент или выполнить композиционное условие.",
+                "en": "Construct the desired frame. Rule: Combine objects, catch the moment or fulfill a compositional condition."
+              }
+            },
+            {
+              "id": "variant-g16-06",
+              "text": {
+                "ru": "Сканировать документ или код. Правило: Превратить физический носитель в доступные системе данные.",
+                "en": "Scan a document or code. Rule: Turn physical media into system-accessible data."
+              }
+            },
+            {
+              "id": "variant-g16-07",
+              "text": {
+                "ru": "Оцифровать объект. Правило: Снять форму, поверхность или набор свойств для модели и анализа.",
+                "en": "Digitize an object. Rule: Capture a shape, surface or set of properties for model and analysis."
+              }
+            },
+            {
+              "id": "variant-g16-08",
+              "text": {
+                "ru": "Установить скрытую запись. Правило: Разместить микрофон или камеру и получить данные без присутствия игрока.",
+                "en": "Set hidden recording. Rule: Place a microphone or camera and receive data without the presence of the player."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g17",
+      "section": "section-3",
+      "title": {
+        "ru": "Воспроизведение и анализ медиа",
+        "en": "Media playback and analysis"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Камера; Прибор.",
+        "en": "Devices: Computer; Smartphone; Camera; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g17-01",
+              "text": {
+                "ru": "Управлять воспроизведением. Правило: Останавливать, перематывать и замедлять запись для поиска деталей.",
+                "en": "Control playback. Rule: Pause, rewind and slow down the recording to look for details..."
+              }
+            },
+            {
+              "id": "variant-g17-02",
+              "text": {
+                "ru": "Выбирать канал или дорожку. Правило: Найти нужную передачу, звук, камеру либо слой записи.",
+                "en": "Select a channel or track. Rule: Find the desired program, sound, camera or recording layer."
+              }
+            },
+            {
+              "id": "variant-g17-03",
+              "text": {
+                "ru": "Увеличить и улучшить видимость. Правило: Изменить масштаб, контраст или фильтр для чтения скрытой детали.",
+                "en": "Increase and improve visibility. Rule: Change the scale, contrast or filter to read the hidden detail."
+              }
+            },
+            {
+              "id": "variant-g17-04",
+              "text": {
+                "ru": "Очистить и выделить звук. Правило: Отделить значимый сигнал от шума по игровым правилам.",
+                "en": "Clear and highlight audio. Rule: Separate the significant signal from the noise according to the game rules."
+              }
+            },
+            {
+              "id": "variant-g17-05",
+              "text": {
+                "ru": "Сопоставить записи. Правило: Синхронизировать ракурсы, голоса и моменты одного события.",
+                "en": "Compare records. Rule: Synchronize angles, voices and moments of one event."
+              }
+            },
+            {
+              "id": "variant-g17-06",
+              "text": {
+                "ru": "Расшифровать сообщение. Правило: Перевести код, спектр, ритм или искажённую речь в понятные сведения.",
+                "en": "Decipher the message. Rule: Translate code, spectrum, rhythm or distorted speech into understandable information."
+              }
+            },
+            {
+              "id": "variant-g17-07",
+              "text": {
+                "ru": "Воспроизвести запись в мире. Правило: Дать услышать или увидеть её NPC, датчику либо другой системе.",
+                "en": "Play the recording to the world. Rule: Let an NPC, sensor or other system hear or see it."
+              }
+            },
+            {
+              "id": "variant-g17-08",
+              "text": {
+                "ru": "Выбрать медиаконтент. Правило: Переключить музыку, видео или программу ради влияния на персонажей и окружение.",
+                "en": "Select media content. Rule: Switch music, video or program to influence characters and surroundings..."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g18",
+      "section": "section-3",
+      "title": {
+        "ru": "Цифровое расследование",
+        "en": "Digital Investigation"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g18-01",
+              "text": {
+                "ru": "Восстановить хронологию. Правило: Сопоставить даты и следы активности для реконструкции событий.",
+                "en": "Restore chronology. Rule: Compare dates and traces of activity to reconstruct events."
+              }
+            },
+            {
+              "id": "variant-g18-02",
+              "text": {
+                "ru": "Связать аккаунты и людей. Правило: Установить, кто скрывается за номером, ником или устройством.",
+                "en": "Link accounts and people. Rule: Determine who is hiding behind the number, nickname or device."
+              }
+            },
+            {
+              "id": "variant-g18-03",
+              "text": {
+                "ru": "Проверить алиби. Правило: Сравнить заявление человека с записями и цифровыми следами.",
+                "en": "Check the alibi. Rule: Compare the person's statement with records and digital traces..."
+              }
+            },
+            {
+              "id": "variant-g18-04",
+              "text": {
+                "ru": "Найти противоречие. Правило: Обнаружить несовпадение между несколькими источниками.",
+                "en": "Find a contradiction. Rule: Detect discrepancies between multiple sources."
+              }
+            },
+            {
+              "id": "variant-g18-05",
+              "text": {
+                "ru": "Вывести недостающие сведения. Правило: Получить адрес, пароль или личность через совокупность косвенных подсказок.",
+                "en": "Display missing information. Rule: Obtain an address, password or identity through a set of indirect clues."
+              }
+            },
+            {
+              "id": "variant-g18-06",
+              "text": {
+                "ru": "Проверить подлинность. Правило: Отличить исходную запись от подделки, монтажа или ложных данных.",
+                "en": "Check authenticity. Rule: Distinguish the original recording from forgery, editing or false data."
+              }
+            },
+            {
+              "id": "variant-g18-07",
+              "text": {
+                "ru": "Выбрать судьбу доказательств. Правило: Передать, опубликовать, скрыть или уничтожить добытые сведения.",
+                "en": "Choose the fate of the evidence. Rule: Transfer, publish, hide or destroy the obtained information."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g19",
+      "section": "section-2",
+      "title": {
+        "ru": "Навигация и дополненная реальность",
+        "en": "Navigation and augmented reality"
+      },
+      "description": {
+        "ru": " Устройства: Смартфон; Прибор; Терминал.",
+        "en": "Devices: Smartphone; Device; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g19-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g19-01",
+              "text": {
+                "ru": "Проложить маршрут. Правило: Выбрать путь с учётом доступности, времени и угроз.",
+                "en": "Get directions. Rule: Choose a path taking into account availability, time and threats."
+              }
+            },
+            {
+              "id": "variant-g19-02",
+              "text": {
+                "ru": "Найти координаты. Правило: Определить или ввести точку назначения.",
+                "en": "Find coordinates. Rule: Define or enter a destination."
+              }
+            },
+            {
+              "id": "variant-g19-03",
+              "text": {
+                "ru": "Отследить объект. Правило: Следовать за меняющимся положением человека, машины или маяка.",
+                "en": "Track an object. Rule: Follow the changing position of a person, machine or beacon."
+              }
+            },
+            {
+              "id": "variant-g19-04",
+              "text": {
+                "ru": "Ориентироваться по силе сигнала. Правило: Сужать область поиска через изменение показаний.",
+                "en": "Focus on signal strength. Rule: Narrow the search area by changing the readings."
+              }
+            },
+            {
+              "id": "variant-g19-05",
+              "text": {
+                "ru": "Триангулировать. Правило: Найти источник, сопоставив несколько направлений или измерений.",
+                "en": "Triangulate. Rule: Find the source by comparing several directions or measurements."
+              }
+            },
+            {
+              "id": "variant-g19-06",
+              "text": {
+                "ru": "Совместить AR-слой с миром. Правило: Открыть подсказку или действие при правильном положении устройства.",
+                "en": "Combine the AR layer with the world. Rule: Open a hint or action when the device is in the correct position."
+              }
+            },
+            {
+              "id": "variant-g19-07",
+              "text": {
+                "ru": "Отметить и передать позицию. Правило: Создать метку, которую увидит система, NPC или напарник.",
+                "en": "Mark and transfer the position. Rule: Create a mark that the system, NPC or partner will see."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g20",
+      "section": "section-2",
+      "title": {
+        "ru": "Измерения и обнаружение",
+        "en": "Measurements and detection"
+      },
+      "description": {
+        "ru": " Устройства: Прибор; Смартфон; Терминал.",
+        "en": "Devices: Device; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g20-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g20-01",
+              "text": {
+                "ru": "Снять показание. Правило: Узнать температуру, радиацию, давление или иной параметр.",
+                "en": "Take reading. Rule: Find out the temperature, radiation, pressure or other parameter."
+              }
+            },
+            {
+              "id": "variant-g20-02",
+              "text": {
+                "ru": "Обнаружить невидимое. Правило: Найти объект или явление через специальный режим прибора.",
+                "en": "Reveal the invisible. Rule: Find an object or phenomenon through a special mode of the device."
+              }
+            },
+            {
+              "id": "variant-g20-03",
+              "text": {
+                "ru": "Выбрать диапазон. Правило: Переключить частоту, чувствительность или тип сканирования.",
+                "en": "Select range. Rule: Switch frequency, sensitivity or scan type."
+              }
+            },
+            {
+              "id": "variant-g20-04",
+              "text": {
+                "ru": "Откалибровать. Правило: Настроить прибор по эталону, чтобы доверять результату.",
+                "en": "Calibrate. Rule: Set up the device according to the standard in order to trust the result."
+              }
+            },
+            {
+              "id": "variant-g20-05",
+              "text": {
+                "ru": "Снять серию измерений. Правило: Удерживать датчик или повторять проверку для достоверного вывода.",
+                "en": "Take a series of measurements. Rule: Hold the sensor or repeat the test for a reliable output."
+              }
+            },
+            {
+              "id": "variant-g20-06",
+              "text": {
+                "ru": "Различить сигнал и помеху. Правило: Отсеять ложные срабатывания и особенности среды.",
+                "en": "Distinguish between signal and interference. Rule: Weed out false positives and environmental features."
+              }
+            },
+            {
+              "id": "variant-g20-07",
+              "text": {
+                "ru": "Разместить сеть датчиков. Правило: Выбрать точки измерения для достаточного охвата территории.",
+                "en": "Place a network of sensors. Rule: Select measurement points for sufficient coverage of the area."
+              }
+            },
+            {
+              "id": "variant-g20-08",
+              "text": {
+                "ru": "Идентифицировать по базе. Правило: Сопоставить скан, лицо, номер или иной признак со справочными данными.",
+                "en": "Identify by database. Rule: Compare the scan, face, number or other sign with reference data."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g21",
+      "section": "section-2",
+      "title": {
+        "ru": "Наблюдение и охрана",
+        "en": "Surveillance and security"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Камера; Терминал; Прибор.",
+        "en": "Devices: Computer; Camera; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g21-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g21-01",
+              "text": {
+                "ru": "Переключать камеры. Правило: Выбирать точку зрения, которая даёт нужную информацию.",
+                "en": "Switch cameras. Rule: Choose a point of view that gives the necessary information."
+              }
+            },
+            {
+              "id": "variant-g21-02",
+              "text": {
+                "ru": "Наводить камеру. Правило: Поворачивать, приближать и удерживать цель в зоне наблюдения.",
+                "en": "Point the camera. Rule: Rotate, zoom in and hold the target in the observation area."
+              }
+            },
+            {
+              "id": "variant-g21-03",
+              "text": {
+                "ru": "Следить за несколькими потоками. Правило: Распределять внимание между независимыми событиями.",
+                "en": "Monitor multiple threads. Rule: Distribute attention between independent events."
+              }
+            },
+            {
+              "id": "variant-g21-04",
+              "text": {
+                "ru": "Замечать аномалии. Правило: Обнаруживать изменение, нарушение или появление угрозы.",
+                "en": "Notice anomalies. Rule: Detect a change, violation or threat."
+              }
+            },
+            {
+              "id": "variant-g21-05",
+              "text": {
+                "ru": "Настроить тревогу. Правило: Выбрать зоны, пороги и события для автоматического предупреждения.",
+                "en": "Set up an alarm. Rule: Select zones, thresholds and events for automatic warning."
+              }
+            },
+            {
+              "id": "variant-g21-06",
+              "text": {
+                "ru": "Сообщить об инциденте. Правило: Классифицировать наблюдение и вызвать подходящую реакцию.",
+                "en": "Report an incident. Rule: Classify an observation and elicit an appropriate response."
+              }
+            },
+            {
+              "id": "variant-g21-07",
+              "text": {
+                "ru": "Искать слепые зоны. Правило: Выяснить, чего система наблюдения не видит и не записывает.",
+                "en": "Look for blind spots. Rule: Find out what the surveillance system does not see or record."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g22",
+      "section": "section-2",
+      "title": {
+        "ru": "Управление внешними объектами",
+        "en": "Controlling external objects"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g22-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g22-01",
+              "text": {
+                "ru": "Открыть или запереть. Правило: Управлять электронными дверями, замками, шлюзами и воротами.",
+                "en": "Open or lock. Rule: Manage electronic doors, locks, locks and gates."
+              }
+            },
+            {
+              "id": "variant-g22-02",
+              "text": {
+                "ru": "Управлять освещением и климатом. Правило: Менять видимость, температуру и условия в помещении.",
+                "en": "Control lighting and climate. Rule: Change visibility, temperature and indoor conditions."
+              }
+            },
+            {
+              "id": "variant-g22-03",
+              "text": {
+                "ru": "Переключить инфраструктуру. Правило: Управлять лифтом, светофором, мостом или транспортной системой.",
+                "en": "Switch infrastructure. Rule: Operate an elevator, traffic light, bridge or transportation system."
+              }
+            },
+            {
+              "id": "variant-g22-04",
+              "text": {
+                "ru": "Пилотировать дистанционно. Правило: Вести дрон, робота, камеру на колёсах или другой управляемый аппарат.",
+                "en": "Pilot remotely. Rule: Drive a drone, robot, camera on wheels or other controlled vehicle..."
+              }
+            },
+            {
+              "id": "variant-g22-05",
+              "text": {
+                "ru": "Командовать автоматикой. Правило: Назначать турели, системе безопасности или роботу цель и режим.",
+                "en": "Command automation. Rule: Assign a target and mode to a turret, security system or robot."
+              }
+            },
+            {
+              "id": "variant-g22-06",
+              "text": {
+                "ru": "Управлять оборудованием. Правило: Выбирать режимы станка, принтера, медицинского или бытового устройства.",
+                "en": "Manage equipment. Rule: Select modes of a machine, printer, medical or household device."
+              }
+            },
+            {
+              "id": "variant-g22-07",
+              "text": {
+                "ru": "Запустить изготовление. Правило: Передать чертёж или рецепт машине и получить физический результат.",
+                "en": "Start production. Rule: Give a drawing or recipe to a machine and get a physical result..."
+              }
+            },
+            {
+              "id": "variant-g22-08",
+              "text": {
+                "ru": "Включить виртуальное пространство. Правило: Войти в симуляцию или управлять цифровым двойником объекта.",
+                "en": "Enable virtual space. Rule: Enter a simulation or control a digital twin of an object."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g23",
+      "section": "section-5",
+      "title": {
+        "ru": "Сети и радиоканалы",
+        "en": "Networks and radio channels"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Рация; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Walkie Talkie; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g23-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g23-01",
+              "text": {
+                "ru": "Подключиться к сети. Правило: Найти доступную точку связи и выполнить условия подключения.",
+                "en": "Connect to the network. Rule: Find an available connection point and fulfill the connection conditions."
+              }
+            },
+            {
+              "id": "variant-g23-02",
+              "text": {
+                "ru": "Настроить частоту и канал. Правило: Совпасть с нужным передатчиком или собеседником.",
+                "en": "Set frequency and channel. Rule: Match the desired transmitter or interlocutor."
+              }
+            },
+            {
+              "id": "variant-g23-03",
+              "text": {
+                "ru": "Направить антенну. Правило: Обеспечить приём через положение и ориентацию оборудования.",
+                "en": "Point the antenna. Rule: Ensure reception through the position and orientation of the equipment."
+              }
+            },
+            {
+              "id": "variant-g23-04",
+              "text": {
+                "ru": "Построить линию связи. Правило: Соединить устройства кабелем, ретрансляторами или промежуточными узлами.",
+                "en": "Build a communication line. Rule: Connect devices with cable, repeaters or intermediate nodes."
+              }
+            },
+            {
+              "id": "variant-g23-05",
+              "text": {
+                "ru": "Настроить маршрутизацию. Правило: Направить данные через работающий или разрешённый путь.",
+                "en": "Configure routing. Rule: Route data through a working or allowed path."
+              }
+            },
+            {
+              "id": "variant-g23-06",
+              "text": {
+                "ru": "Сопрячь устройства. Правило: Связать совместимые аппараты для совместной функции.",
+                "en": "Pair devices. Rule: Link compatible devices for a joint function."
+              }
+            },
+            {
+              "id": "variant-g23-07",
+              "text": {
+                "ru": "Устранить помехи. Правило: Найти препятствие или источник, мешающий передаче.",
+                "en": "Eliminate interference. Rule: Find an obstacle or source interfering with transmission."
+              }
+            },
+            {
+              "id": "variant-g23-08",
+              "text": {
+                "ru": "Работать в зоне покрытия. Правило: Перемещаться и планировать действия с учётом дальности связи.",
+                "en": "Work within the coverage area. Rule: Move and plan actions taking into account the communication range."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g24",
+      "section": "section-3",
+      "title": {
+        "ru": "Передача и синхронизация данных",
+        "en": "Data transfer and synchronization"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g24-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g24-01",
+              "text": {
+                "ru": "Скачать или выгрузить пакет. Правило: Перенести большой объём данных с затратой времени и канала.",
+                "en": "Download or upload the package. Rule: Transfer a large amount of data, costing time and bandwidth."
+              }
+            },
+            {
+              "id": "variant-g24-02",
+              "text": {
+                "ru": "Перенести данные на носителе. Правило: Физически доставить флешку, диск или карту памяти к другому устройству.",
+                "en": "Transfer data to storage media. Rule: Physically deliver a flash drive, disk or memory card to another device."
+              }
+            },
+            {
+              "id": "variant-g24-03",
+              "text": {
+                "ru": "Синхронизировать устройства. Правило: Сделать копии сведений или состояния согласованными.",
+                "en": "Synchronize devices. Rule: Make copies of information or status consistent."
+              }
+            },
+            {
+              "id": "variant-g24-04",
+              "text": {
+                "ru": "Восстановить передачу. Правило: Продолжить прерванную операцию и сохранить целостность результата.",
+                "en": "Restore transmission. Rule: Continue the interrupted operation and maintain the integrity of the result."
+              }
+            },
+            {
+              "id": "variant-g24-05",
+              "text": {
+                "ru": "Преобразовать формат. Правило: Сделать данные читаемыми для нужного устройства или приложения.",
+                "en": "Convert format. Rule: Make the data readable for the desired device or application."
+              }
+            },
+            {
+              "id": "variant-g24-06",
+              "text": {
+                "ru": "Напечатать или вывести наружу. Правило: Превратить цифровой файл в бумагу, проекцию или другой объект мира.",
+                "en": "Print or output. Rule: Turn a digital file into paper, projection or other world object."
+              }
+            },
+            {
+              "id": "variant-g24-07",
+              "text": {
+                "ru": "Разослать или опубликовать. Правило: Доставить данные нескольким адресатам, включая конкурирующие стороны.",
+                "en": "Send out or publish. Rule: Deliver data to multiple recipients, including competing parties."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g25",
+      "section": "section-5",
+      "title": {
+        "ru": "Программирование и автоматизация",
+        "en": "Programming and automation"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Терминал; Прибор.",
+        "en": "Devices: Computer; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g25-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g25-01",
+              "text": {
+                "ru": "Написать программу. Правило: Описать последовательность действий, которую исполнит машина.",
+                "en": "Write a program. Rule: Describe the sequence of actions that the machine will perform."
+              }
+            },
+            {
+              "id": "variant-g25-02",
+              "text": {
+                "ru": "Собрать логику из блоков. Правило: Связать условия, команды и данные без текстового кода.",
+                "en": "Assemble logic from blocks. Rule: Link conditions, commands and data without text code."
+              }
+            },
+            {
+              "id": "variant-g25-03",
+              "text": {
+                "ru": "Автоматизировать рутину. Правило: Создать макрос, сценарий или правило для повторяющихся действий.",
+                "en": "Automate the routine. Rule: Create a macro, script or rule for repeating actions..."
+              }
+            },
+            {
+              "id": "variant-g25-04",
+              "text": {
+                "ru": "Настроить события и расписание. Правило: Запускать функцию по времени, сигналу или изменению состояния.",
+                "en": "Set up events and schedule. Rule: Run a function based on time, signal or state change."
+              }
+            },
+            {
+              "id": "variant-g25-05",
+              "text": {
+                "ru": "Отладить. Правило: Найти причину ошибочного поведения через тесты и наблюдение.",
+                "en": "Debug. Rule: Find the cause of erroneous behavior through tests and observation."
+              }
+            },
+            {
+              "id": "variant-g25-06",
+              "text": {
+                "ru": "Оптимизировать. Правило: Уложить решение в ограничения времени, памяти, энергии или числа компонентов.",
+                "en": "Optimize. Rule: Bring the solution within the constraints of time, memory, energy or number of components."
+              }
+            },
+            {
+              "id": "variant-g25-07",
+              "text": {
+                "ru": "Настроить цифрового агента. Правило: Задать боту или ИИ цель, доступные действия и условия работы.",
+                "en": "Set up a digital agent. Rule: Give the bot or AI a goal, available actions and working conditions."
+              }
+            },
+            {
+              "id": "variant-g25-08",
+              "text": {
+                "ru": "Общаться с цифровым собеседником. Правило: Получать сведения и добиваться действий через диалог с программой или ИИ.",
+                "en": "Communicate with a digital interlocutor. Rule: Receive information and achieve action through dialogue with a program or AI."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g26",
+      "section": "section-5",
+      "title": {
+        "ru": "Проникновение и взлом",
+        "en": "Infiltration and hacking"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g26-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g26-01",
+              "text": {
+                "ru": "Разведать цифровую систему. Правило: Найти узлы, связи, защиту и доступные точки входа.",
+                "en": "Explore the digital system. Rule: Find nodes, connections, protection and available entry points."
+              }
+            },
+            {
+              "id": "variant-g26-02",
+              "text": {
+                "ru": "Подобрать средство доступа. Правило: Выбрать игровую программу или инструмент под конкретную защиту.",
+                "en": "Select a means of access. Rule: Choose a gaming program or tool for specific protection."
+              }
+            },
+            {
+              "id": "variant-g26-03",
+              "text": {
+                "ru": "Обойти аутентификацию. Правило: Получить вход альтернативным способом в рамках правил игры.",
+                "en": "Bypass authentication. Rule: Gain entry in an alternative way within the rules of the game."
+              }
+            },
+            {
+              "id": "variant-g26-04",
+              "text": {
+                "ru": "Получить привилегии. Правило: Открыть более высокий уровень управления системой.",
+                "en": "Get privileges. Rule: Open a higher level of system management."
+              }
+            },
+            {
+              "id": "variant-g26-05",
+              "text": {
+                "ru": "Выдать себя за доверенное лицо. Правило: Использовать цифровую личность и убеждение для получения доступа.",
+                "en": "Pretend to be a trusted person. Rule: Use digital identity and persuasion to gain access..."
+              }
+            },
+            {
+              "id": "variant-g26-06",
+              "text": {
+                "ru": "Перехватить сеанс или поток. Правило: Получить данные текущего соединения либо контроль над ним.",
+                "en": "Intercept a session or thread. Rule: Get data from the current connection or control over it."
+              }
+            },
+            {
+              "id": "variant-g26-07",
+              "text": {
+                "ru": "Внедрить программу. Правило: Изменить поведение чужого устройства с помощью игрового кода или модуля.",
+                "en": "Implement the program. Rule: Change the behavior of someone else's device using game code or module..."
+              }
+            },
+            {
+              "id": "variant-g26-08",
+              "text": {
+                "ru": "Проникнуть через цепочку узлов. Правило: Продвигаться от доступного устройства к защищённой цели.",
+                "en": "Penetrate a chain of nodes. Rule: Move from an accessible device to a protected target."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g27",
+      "section": "section-5",
+      "title": {
+        "ru": "Защита и цифровые следы",
+        "en": "Security and digital footprints"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g27-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g27-01",
+              "text": {
+                "ru": "Обнаружить вторжение. Правило: Распознать чужую активность по журналам, сигналам или поведению системы.",
+                "en": "Detect intrusion. Rule: Recognize someone else's activity by logs, signals or system behavior."
+              }
+            },
+            {
+              "id": "variant-g27-02",
+              "text": {
+                "ru": "Отразить атаку. Правило: Выполнить защитную процедуру до потери доступа или данных.",
+                "en": "Repel the attack. Rule: Perform a security procedure before losing access or data."
+              }
+            },
+            {
+              "id": "variant-g27-03",
+              "text": {
+                "ru": "Изолировать угрозу. Правило: Отключить узел, сеть или заражённый носитель.",
+                "en": "Isolate the threat. Rule: Disable the node, network or infected media."
+              }
+            },
+            {
+              "id": "variant-g27-04",
+              "text": {
+                "ru": "Удалить вредоносную программу. Правило: Восстановить контроль над системой.",
+                "en": "Remove the malware. Rule: Regain control of the system."
+              }
+            },
+            {
+              "id": "variant-g27-05",
+              "text": {
+                "ru": "Укрепить защиту. Правило: Настроить права, фильтры и средства безопасности.",
+                "en": "Strengthen your defense. Rule: Configure rights, filters and security controls."
+              }
+            },
+            {
+              "id": "variant-g27-06",
+              "text": {
+                "ru": "Скрыть присутствие. Правило: Уменьшить заметность действий и вероятность цифрового обнаружения.",
+                "en": "Hide presence. Rule: Reduce the visibility of actions and the likelihood of digital detection."
+              }
+            },
+            {
+              "id": "variant-g27-07",
+              "text": {
+                "ru": "Очистить следы. Правило: Убрать журналы, историю или другие свидетельства своих действий.",
+                "en": "Clear traces. Rule: Remove logs, history or other evidence of your actions."
+              }
+            },
+            {
+              "id": "variant-g27-08",
+              "text": {
+                "ru": "Проследить источник. Правило: Восстановить маршрут атаки или происхождение цифрового материала.",
+                "en": "Trace the source. Rule: Reconstruct the attack route or origin of the digital material."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g28",
+      "section": "section-5",
+      "title": {
+        "ru": "Сборка, ремонт и улучшение",
+        "en": "Assembly, repair and improvement"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g28-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g28-01",
+              "text": {
+                "ru": "Диагностировать неисправность. Правило: Определить причину отказа по симптомам и проверкам.",
+                "en": "Diagnose the malfunction. Rule: Determine the cause of failure based on symptoms and tests."
+              }
+            },
+            {
+              "id": "variant-g28-02",
+              "text": {
+                "ru": "Разобрать и собрать. Правило: Получить доступ к компонентам и восстановить устройство.",
+                "en": "Disassemble and assemble. Rule: Access components and restore the device."
+              }
+            },
+            {
+              "id": "variant-g28-03",
+              "text": {
+                "ru": "Очистить и обслужить. Правило: Устранить загрязнение, плохой контакт или последствия эксплуатации.",
+                "en": "Clean and maintain. Rule: Eliminate contamination, poor contact or consequences of use."
+              }
+            },
+            {
+              "id": "variant-g28-04",
+              "text": {
+                "ru": "Заменить компонент. Правило: Подобрать совместимую деталь и вернуть нужную функцию.",
+                "en": "Replace component. Rule: Select a compatible part and return the desired function."
+              }
+            },
+            {
+              "id": "variant-g28-05",
+              "text": {
+                "ru": "Соединить электронную схему. Правило: Проложить провода, соединить контакты или спаять элементы.",
+                "en": "Connect the electronic circuit. Rule: Lay wires, connect contacts or solder elements."
+              }
+            },
+            {
+              "id": "variant-g28-06",
+              "text": {
+                "ru": "Перепрошить. Правило: Изменить встроенное ПО для ремонта или новой возможности.",
+                "en": "Reflash. Rule: Change firmware for repair or new feature."
+              }
+            },
+            {
+              "id": "variant-g28-07",
+              "text": {
+                "ru": "Улучшить характеристики. Правило: Установить модуль, увеличивающий дальность, скорость, ёмкость или точность.",
+                "en": "Improve characteristics. Rule: Install a module that increases range, speed, capacity or accuracy."
+              }
+            },
+            {
+              "id": "variant-g28-08",
+              "text": {
+                "ru": "Провести испытание. Правило: Проверить результат под нагрузкой, включая перегрев и нестабильность.",
+                "en": "Conduct a test. Rule: Check the result under load, including overheating and instability."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g29",
+      "section": "section-2",
+      "title": {
+        "ru": "Саботаж и использование в окружении",
+        "en": "Sabotage and use in the environment"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Камера; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Camera; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g29-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g29-01",
+              "text": {
+                "ru": "Вывести электронику из строя. Правило: Разрушить устройство, чтобы прекратить его функцию.",
+                "en": "Disable electronics. Rule: Destroy a device to stop its function..."
+              }
+            },
+            {
+              "id": "variant-g29-02",
+              "text": {
+                "ru": "Обесточить цель. Правило: Разорвать питание конкретной системы.",
+                "en": "Disable the target. Rule: Disconnect power to a specific system."
+              }
+            },
+            {
+              "id": "variant-g29-03",
+              "text": {
+                "ru": "Заглушить связь. Правило: Лишить устройство канала, сохранив его физически целым.",
+                "en": "Silence the connection. Rule: Deprive the device of a channel while keeping it physically intact."
+              }
+            },
+            {
+              "id": "variant-g29-04",
+              "text": {
+                "ru": "Создать ложный сигнал. Правило: Подменить показание, тревогу или видеопоток для обмана системы.",
+                "en": "Create a false signal. Rule: Substitute a reading, alarm or video stream to deceive the system."
+              }
+            },
+            {
+              "id": "variant-g29-05",
+              "text": {
+                "ru": "Отвлечь звуком или светом. Правило: Заставить NPC отреагировать на звонок, экран или динамик.",
+                "en": "Distract with sound or light. Rule: Make an NPC respond to a bell, screen, or speaker."
+              }
+            },
+            {
+              "id": "variant-g29-06",
+              "text": {
+                "ru": "Подложить устройство. Правило: Оставить маяк, прослушку, приманку или иной работающий предмет.",
+                "en": "Place the device. Rule: Leave a beacon, wiretap, bait or other working item."
+              }
+            },
+            {
+              "id": "variant-g29-07",
+              "text": {
+                "ru": "Перегрузить систему. Правило: Вызвать отказ или опасное поведение через чрезмерную нагрузку.",
+                "en": "Reboot the system. Rule: Cause failure or dangerous behavior through excessive load."
+              }
+            },
+            {
+              "id": "variant-g29-08",
+              "text": {
+                "ru": "Использовать корпус как предмет. Правило: Подпереть, утяжелить, бросить или обменять устройство независимо от его ПО.",
+                "en": "Use the body as an object. Rule: Prop, weight, throw or exchange the device regardless of its software."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g30",
+      "section": "section-6",
+      "title": {
+        "ru": "Мини-игры внутри устройств",
+        "en": "Mini-games inside devices"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g30-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g30-01",
+              "text": {
+                "ru": "Выполнить нажатие вовремя. Правило: Остановить индикатор или нажать кнопку в нужный момент.",
+                "en": "Execute the press on time. Rule: Stop the indicator or press the button at the right moment."
+              }
+            },
+            {
+              "id": "variant-g30-02",
+              "text": {
+                "ru": "Воспроизвести последовательность. Правило: Запомнить и повторить сигналы, символы или команды.",
+                "en": "Play the sequence. Rule: Remember and repeat signals, symbols or commands."
+              }
+            },
+            {
+              "id": "variant-g30-03",
+              "text": {
+                "ru": "Соединить цепь. Правило: Проложить непрерывный путь между входом и выходом.",
+                "en": "Connect the chain. Rule: Lay a continuous path between the entrance and exit..."
+              }
+            },
+            {
+              "id": "variant-g30-04",
+              "text": {
+                "ru": "Решить кодовую головоломку. Правило: Вывести комбинацию по ограничениям и обратной связи.",
+                "en": "Solve the code puzzle. Rule: Derive a combination of constraints and feedback."
+              }
+            },
+            {
+              "id": "variant-g30-05",
+              "text": {
+                "ru": "Собрать повреждённое представление. Правило: Упорядочить фрагменты текста, изображения или сигнала.",
+                "en": "Reassemble the damaged view. Rule: Arrange fragments of text, image or signal."
+              }
+            },
+            {
+              "id": "variant-g30-06",
+              "text": {
+                "ru": "Удержать параметр в диапазоне. Правило: Балансировать шкалы и компенсировать изменение показателей.",
+                "en": "Keep the parameter in range. Rule: Balance the scales and compensate for changes in indicators."
+              }
+            },
+            {
+              "id": "variant-g30-07",
+              "text": {
+                "ru": "Пройти игру внутри игры. Правило: Играть на виртуальном компьютере, телефоне, консоли или автомате.",
+                "en": "Complete the game within the game. Rule: Play on a virtual computer, phone, console or slot machine."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g31",
+      "section": "section-7",
+      "title": {
+        "ru": "Ресурсы, внимание и опасность",
+        "en": "Resources, attention and danger"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Рация; Камера; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Walkie Talkie; Camera; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g31-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g31-01",
+              "text": {
+                "ru": "Работать до истечения времени. Правило: Завершить действие до тревоги, отключения или потери цели.",
+                "en": "Work until time runs out. Rule: Complete the action before alarm, disconnection or loss of target."
+              }
+            },
+            {
+              "id": "variant-g31-02",
+              "text": {
+                "ru": "Выбирать между параллельными задачами. Правило: Распределять внимание, пока события продолжаются независимо.",
+                "en": "Choose between parallel tasks. Rule: Distribute attention while events continue independently."
+              }
+            },
+            {
+              "id": "variant-g31-03",
+              "text": {
+                "ru": "Чередовать экран и окружение. Правило: Отрываться от интерфейса, чтобы замечать физическую угрозу.",
+                "en": "Alternate screen and environment. Rule: Look up from the interface to notice a physical threat..."
+              }
+            },
+            {
+              "id": "variant-g31-04",
+              "text": {
+                "ru": "Оставаться рядом с устройством. Правило: Удерживать позицию или соединение до завершения операции.",
+                "en": "Stay close to the device. Rule: Hold a position or connection until the operation is completed."
+              }
+            },
+            {
+              "id": "variant-g31-05",
+              "text": {
+                "ru": "Рисковать демаскировкой. Правило: Решать, когда использовать свет, звук или излучение прибора.",
+                "en": "Risk unmasking. Rule: Decide when to use light, sound or radiation from a device."
+              }
+            },
+            {
+              "id": "variant-g31-06",
+              "text": {
+                "ru": "Жертвовать функцией ради ресурса. Правило: Выбирать между скоростью, точностью, зарядом, нагревом и стоимостью.",
+                "en": "Sacrifice function for resource. Rule: Choose between speed, accuracy, charge, heat and cost."
+              }
+            },
+            {
+              "id": "variant-g31-07",
+              "text": {
+                "ru": "Продолжать при частичном отказе. Правило: Работать с треснувшим экраном, задержкой или неисправным вводом.",
+                "en": "Continue with partial failure. Rule: Deal with a cracked screen, lag or faulty input."
+              }
+            },
+            {
+              "id": "variant-g31-08",
+              "text": {
+                "ru": "Проверять достоверность интерфейса. Правило: Сопоставлять показания с миром, когда экран может вводить в заблуждение.",
+                "en": "Check the validity of the interface. Rule: Compare readings to the world when the screen can be misleading."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g32",
+      "section": "section-7",
+      "title": {
+        "ru": "Кооперация и противодействие",
+        "en": "Cooperation and opposition"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Рация; Терминал; Прибор.",
+        "en": "Devices: Computer; Smartphone; Walkie Talkie; Terminal; Device."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g32-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g32-01",
+              "text": {
+                "ru": "Разделить роли оператора и исполнителя. Правило: Один игрок видит систему, другой действует в мире.",
+                "en": "Separate the roles of operator and performer. Rule: One player sees the system, the other acts in the world..."
+              }
+            },
+            {
+              "id": "variant-g32-02",
+              "text": {
+                "ru": "Обменяться разными частями информации. Правило: Сопоставить сведения, которые недоступны одному участнику.",
+                "en": "Exchange different pieces of information. Rule: Compare information that is not available to one participant."
+              }
+            },
+            {
+              "id": "variant-g32-03",
+              "text": {
+                "ru": "Синхронно активировать. Правило: Выполнить действия на нескольких устройствах в согласованный момент.",
+                "en": "Synchronously activate. Rule: Perform actions on multiple devices at a coordinated time."
+              }
+            },
+            {
+              "id": "variant-g32-04",
+              "text": {
+                "ru": "Передать управление. Правило: Уступить аппарат или сеанс напарнику с нужной возможностью.",
+                "en": "Transfer control. Rule: Give up the device or session to a partner with the required ability."
+              }
+            },
+            {
+              "id": "variant-g32-05",
+              "text": {
+                "ru": "Защитить работающего оператора. Правило: Обеспечить ему время и безопасность для завершения задачи.",
+                "en": "Protect the working operator. Rule: Provide him time and safety to complete the task."
+              }
+            },
+            {
+              "id": "variant-g32-06",
+              "text": {
+                "ru": "Соревноваться за контроль. Правило: Перехватывать устройство или противостоять другому оператору.",
+                "en": "Compete for control. Rule: Intercept the device or confront another operator."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-g33",
+      "section": "section-6",
+      "title": {
+        "ru": "Границы экрана и мета-взаимодействие",
+        "en": "Screen Borders and Meta Interaction"
+      },
+      "description": {
+        "ru": " Устройства: Компьютер; Смартфон; Терминал.",
+        "en": "Devices: Computer; Smartphone; Terminal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-g33-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-g33-01",
+              "text": {
+                "ru": "Перенести сведения между слоями. Правило: Использовать результат из виртуальной системы в основном игровом мире.",
+                "en": "Transfer information between layers. Rule: Use the result from the virtual system in the main game world."
+              }
+            },
+            {
+              "id": "variant-g33-02",
+              "text": {
+                "ru": "Взаимодействовать с файлами игры. Правило: Выполнить предусмотренное головоломкой действие вне игрового окна.",
+                "en": "Interact with game files. Rule: Perform the action provided by the puzzle outside the game window."
+              }
+            },
+            {
+              "id": "variant-g33-03",
+              "text": {
+                "ru": "Использовать второй экран. Правило: Получить отдельный интерфейс на реальном телефоне или другом устройстве.",
+                "en": "Use a second screen. Rule: Get a separate interface on a real phone or other device."
+              }
+            },
+            {
+              "id": "variant-g33-04",
+              "text": {
+                "ru": "Обратиться к внешнему ресурсу. Правило: Использовать специально подготовленный сайт или цифровой материал как часть ARG.",
+                "en": "Contact an external resource. Rule: Use a specially prepared website or digital material as part of an ARG."
+              }
+            },
+            {
+              "id": "variant-g33-05",
+              "text": {
+                "ru": "Сопоставить реальные и игровые часы. Правило: Решить задачу, в которой время устройства влияет на доступность события.",
+                "en": "Compare real and game clocks. Rule: Solve a problem in which device time affects the availability of an event."
+              }
+            },
+            {
+              "id": "variant-g33-06",
+              "text": {
+                "ru": "Сменить точку управления. Правило: Действовать от лица программы, ИИ или цифрового аватара внутри устройства.",
+                "en": "Change control point. Rule: Act as a program, AI, or digital avatar inside the device."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Her Story",
+        "en": "Her Story"
+      },
+      "url": "https://store.steampowered.com/app/368370/Her_Story/",
+      "description": {
+        "ru": "Поиск видеозаписей по введённым словам и реконструкция истории.",
+        "en": "Search for video recordings using entered words and reconstruct the history."
+      }
+    },
+    {
+      "title": {
+        "ru": "SIMULACRA",
+        "en": "SIMULACRA"
+      },
+      "url": "https://store.steampowered.com/app/712730/SIMULACRA/",
+      "description": {
+        "ru": "Исследование чужого телефона, переписка, восстановление повреждённых данных.",
+        "en": "Examination of someone else's phone, correspondence, recovery of damaged data."
+      }
+    },
+    {
+      "title": {
+        "ru": "Hacknet",
+        "en": "Hacknet"
+      },
+      "url": "https://store.steampowered.com/app/365450/Hacknet/",
+      "description": {
+        "ru": "Работа через терминал и игровые процедуры проникновения в системы.",
+        "en": "Working through the terminal and game procedures for penetrating systems."
+      }
+    },
+    {
+      "title": {
+        "ru": "Watch Dogs: Legion",
+        "en": "Watch Dogs: Legion"
+      },
+      "url": "https://news.ubisoft.com/en-us/article/6FpthWVvUQ0qd3sUgDpgkI/watch-dogs-legion-handson-with-cargo-drones-recruitable-enemies-and-a-revamped-dedsec",
+      "description": {
+        "ru": "Перехват управления камерами, использование дронов и отвлечение через телефоны.",
+        "en": "Interception of cameras, use of drones and distraction through phones."
+      }
+    },
+    {
+      "title": {
+        "ru": "Hypnospace Outlaw",
+        "en": "Hypnospace Outlaw"
+      },
+      "url": "https://store.steampowered.com/app/844590/Hypnospace_Outlaw/",
+      "description": {
+        "ru": "Поиск на сайтах, модерация, загрузка приложений, вирусы и настройка рабочего стола.",
+        "en": "Searching sites, moderating, downloading applications, viruses and desktop settings."
+      }
+    },
+    {
+      "title": {
+        "ru": "Orwell: Keeping an Eye On You",
+        "en": "Orwell: Keeping an Eye On You"
+      },
+      "url": "https://store.steampowered.com/app/491950/Orwell_Keeping_an_Eye_On_You/",
+      "description": {
+        "ru": "Сопоставление личных данных и выбор сведений, которые получат силовые структуры.",
+        "en": "Comparison of personal data and selection of information that law enforcement agencies will receive."
+      }
+    },
+    {
+      "title": {
+        "ru": "PC Building Simulator",
+        "en": "PC Building Simulator"
+      },
+      "url": "https://store.steampowered.com/app/621060/PC_Building_Simulator/",
+      "description": {
+        "ru": "Диагностика, ремонт, сборка и улучшение компьютеров.",
+        "en": "Diagnostics, repair, assembly and improvement of computers."
+      }
+    },
+    {
+      "title": {
+        "ru": "SHENZHEN I/O",
+        "en": "SHENZHEN I/O"
+      },
+      "url": "https://www.zachtronics.com/shenzhen-io/",
+      "description": {
+        "ru": "Проектирование электронных схем, программирование микроконтроллеров и проверка устройств.",
+        "en": "Electronic circuit design, microcontroller programming and device testing."
+      }
+    },
+    {
+      "title": {
+        "ru": "EXAPUNKS",
+        "en": "EXAPUNKS"
+      },
+      "url": "https://www.zachtronics.com/exapunks/",
+      "description": {
+        "ru": "Программируемые агенты, работа с файлами и перемещение по сетям.",
+        "en": "Programmable agents, working with files and moving across networks."
+      }
+    },
+    {
+      "title": {
+        "ru": "Phasmophobia",
+        "en": "Phasmophobia"
+      },
+      "url": "https://www.kineticgames.co.uk/news/phasmophobia-eventide",
+      "description": {
+        "ru": "Измерения приборами, направленные микрофоны, камеры и интерпретация показаний.",
+        "en": "Instrument measurements, directional microphones, cameras and interpretation of readings."
+      }
+    },
+    {
+      "title": {
+        "ru": "Keep Talking and Nobody Explodes",
+        "en": "Keep Talking and Nobody Explodes"
+      },
+      "url": "https://keeptalkinggame.com/",
+      "description": {
+        "ru": "Разделение доступа к устройству и инструкции; координация действий по описанию.",
+        "en": "Separation of access to the device and instructions; coordination of actions according to the description."
+      }
+    },
+    {
+      "title": {
+        "ru": "Do Not Feed the Monkeys",
+        "en": "Do Not Feed the Monkeys"
+      },
+      "url": "https://www.donotfeedthemonkeys.com/donotfeedthemonkeys",
+      "description": {
+        "ru": "Наблюдение за людьми через камеры и вмешательство в их жизнь.",
+        "en": "Monitoring people through cameras and interfering in their lives."
+      }
+    },
+    {
+      "title": {
+        "ru": "NEEDY STREAMER OVERLOAD",
+        "en": "NEEDY STREAMER OVERLOAD"
+      },
+      "url": "https://store.steampowered.com/app/1451940/NEEDY_STREAMER_OVERLOAD/",
+      "description": {
+        "ru": "Выбор тем трансляций, рост аудитории, соцсети и ответы на сообщения.",
+        "en": "Selecting broadcast topics, audience growth, social networks and responding to messages."
+      }
+    }
+  ]
+}

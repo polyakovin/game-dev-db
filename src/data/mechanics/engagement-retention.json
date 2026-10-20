@@ -1,0 +1,1902 @@
+{
+  "id": "engagement-retention",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Вовлечение, удержание и аддиктивные паттерны",
+    "en": "Engagement, retention and addictive patterns"
+  },
+  "description": {
+    "ru": "Вовлечение, удержание и аддиктивные паттерны: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Engagement, retention, and addictive patterns: Actions, options, applications, and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Карта из 160 приёмов для анализа интереса, возвращения, расходов и давления на игрока. Вовлечённость сама по себе не означает зависимость; наличие отдельной механики не определяет диагноз и не доказывает причинность. Это авторская классификация для критического разбора дизайна, а не научно установленный перечень причин игрового расстройства. Оценивайте контекст, аудиторию, добровольность участия и возможность остановиться.",
+    "en": "A map of 160 techniques for analyzing interest, returns, costs and pressure on the player. Involvement in itself does not mean dependence; the presence of separate mechanics does not determine the diagnosis or prove causation. This is the author's classification for critical analysis of design, and not a scientifically established list of the causes of gaming disorder. Assess context, audience, voluntariness of participation, and opportunity to stop."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Короткий игровой цикл и приятная обратная связь",
+        "en": "Short gameplay loops and satisfying feedback"
+      },
+      "description": {
+        "ru": "Короткая последовательность действий и выразительный отклик поддерживают понимание результата и желание продолжить.",
+        "en": "A short sequence of actions and expressive feedback maintains understanding of the result and the desire to continue."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-01-01",
+              "text": {
+                "ru": "Короткий цикл «действие → результат → новое действие»: результат быстро создаёт повод продолжить",
+                "en": "Short cycle “action → result → new action”: the result quickly creates a reason to continue"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-02",
+              "text": {
+                "ru": "Мгновенная обратная связь: игра сразу подтверждает попадание, решение, сбор или улучшение",
+                "en": "Instant Feedback: The game immediately confirms a hit, decision, collection or improvement"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-03",
+              "text": {
+                "ru": "Выразительное подкрепление действия: звук, анимация, вибрация и эффекты делают повторение приятным",
+                "en": "Expressive action reinforcement: sound, animation, vibration and effects make repetition enjoyable"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-04",
+              "text": {
+                "ru": "Ритмическое повторение: движения и действия складываются в устойчивый приятный ритм",
+                "en": "Rhythmic repetition: movements and actions develop into a stable, pleasant rhythm"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-05",
+              "text": {
+                "ru": "Комбо: последовательность успешных действий повышает результат и побуждает поддерживать цепочку",
+                "en": "Combo: a sequence of successful actions increases the result and encourages you to maintain the chain"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-06",
+              "text": {
+                "ru": "Каскады: одно действие запускает серию последующих событий и наград",
+                "en": "Cascades: one action triggers a series of subsequent events and rewards"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-07",
+              "text": {
+                "ru": "Визуальное упорядочивание: очистка поля, заполнение пространства, сортировка и восстановление порядка дают локальное завершение",
+                "en": "Visual ordering: field clearing, space filling, sorting and restoring provide local completion"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-01-08",
+              "text": {
+                "ru": "Чередование напряжения и разрядки: опасный эпизод сменяется облегчением, после которого начинается следующий цикл",
+                "en": "Alternating tension and release: a dangerous episode is replaced by relief, after which the next cycle begins"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Мастерство и преодоление",
+        "en": "Mastery and challenge"
+      },
+      "description": {
+        "ru": "Мастерство, самостоятельность и отношения с другими игроками могут поддерживать интерес сами по себе. Исследования этих мотивов описывают удовольствие и желание продолжать игру, что нельзя автоматически приравнивать к зависимости. Ryan, Rigby, Przybylski.",
+        "en": "Skill, autonomy, and relationships with other players can keep things interesting on their own. Research on these motives describes pleasure and a desire to continue playing, which does not automatically equate to addiction. Ryan, Rigby, Przybylski."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://selfdeterminationtheory.org/SDT/documents/2006_RyanRigbyPrzybylski_MandE.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-02-01",
+              "text": {
+                "ru": "Постепенное повышение сложности: следующие задачи требуют немного большего умения",
+                "en": "Gradual increase in difficulty: the following tasks require a little more skill"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-02",
+              "text": {
+                "ru": "Адаптивная сложность: игра подстраивает требования под результаты игрока",
+                "en": "Adaptive difficulty: the game adapts the requirements to the player's performance"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-03",
+              "text": {
+                "ru": "Осваиваемые закономерности: атаки, маршруты и задачи позволяют заметить собственное обучение",
+                "en": "Mastered patterns: attacks, routes and tasks allow you to notice your own learning"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-04",
+              "text": {
+                "ru": "Быстрая повторная попытка: после ошибки можно сразу применить новое понимание",
+                "en": "Quick retry: after a mistake, you can immediately apply new understanding"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-05",
+              "text": {
+                "ru": "Информативное поражение: игрок видит конкретную исправимую причину неудачи",
+                "en": "Informative failure: the player sees a specific, correctable reason for failure."
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-06",
+              "text": {
+                "ru": "Близость к победе: небольшой недостающий результат побуждает попробовать ещё раз",
+                "en": "Close to winning: a small missing result encourages you to try again"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-07",
+              "text": {
+                "ru": "Сравнение с собственным рекордом: предыдущий результат становится следующей целью",
+                "en": "Comparison with your own record: the previous result becomes the next goal"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-02-08",
+              "text": {
+                "ru": "Высокий потолок мастерства: даже после освоения основ остаются точность, скорость, комбинации и оптимизация",
+                "en": "High skill ceiling: even after mastering the basics, accuracy, speed, combinations and optimization remain"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Прогрессия и расширение возможностей",
+        "en": "Progression and empowerment"
+      },
+      "description": {
+        "ru": "Развитие открывает новые возможности и создаёт последовательность достижимых целей.",
+        "en": "Development opens up new opportunities and creates a sequence of achievable goals."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-03-01",
+              "text": {
+                "ru": "Опыт и уровни: каждое занятие приближает заметную ступень развития",
+                "en": "Experience and levels: each lesson brings a noticeable stage of development closer"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-02",
+              "text": {
+                "ru": "Рост характеристик: числа демонстрируют накопленную силу",
+                "en": "Stat growth: numbers show accumulated power"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-03",
+              "text": {
+                "ru": "Деревья навыков: следующий узел обещает новую возможность",
+                "en": "Skill Trees: The Next Node Promises a New Opportunity"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-04",
+              "text": {
+                "ru": "Постепенное открытие механик: игра регулярно расширяет набор доступных действий",
+                "en": "Gradual discovery of mechanics: the game regularly expands the range of available actions"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-05",
+              "text": {
+                "ru": "Открытие территорий и режимов: прогресс даёт доступ к следующему пласту контента",
+                "en": "Unlocking territories and modes: progress gives access to the next layer of content"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-06",
+              "text": {
+                "ru": "Развитие базы или поселения: изменения сохраняются и становятся видимым результатом вложений",
+                "en": "Development of a base or settlement: changes are saved and become a visible result of investments"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-07",
+              "text": {
+                "ru": "Параллельная прокачка: персонаж, оружие, профессия и фракция развиваются одновременно",
+                "en": "Parallel leveling: character, weapon, profession and faction are developed simultaneously"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-03-08",
+              "text": {
+                "ru": "Продолжение роста после основного финала: дополнительные уровни и системы оставляют долгосрочные цели",
+                "en": "Continued growth after the main ending: additional levels and systems leave long-term goals"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Цели, завершение и видимый остаток",
+        "en": "Goals, completion and visible remainder"
+      },
+      "description": {
+        "ru": "Незавершённые цели и видимый остаток работы привлекают внимание к продолжению; учитывайте возможность спокойно остановиться.",
+        "en": "Unfinished goals and visible remaining work draw attention to continuation; consider the opportunity to stop calmly."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-04-01",
+              "text": {
+                "ru": "Полосы прогресса: показывают, сколько осталось до результата",
+                "en": "Progress bars: show how much time is left until the result"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-02",
+              "text": {
+                "ru": "Дробление большой цели: длинная задача превращается в последовательность небольших достижений",
+                "en": "Breaking down a big goal: turning a long task into a sequence of small achievements"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-03",
+              "text": {
+                "ru": "Несколько горизонтов целей: рядом существуют задачи на минуту, вечер и месяц",
+                "en": "Several goal horizons: nearby there are tasks for a minute, an evening and a month"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-04",
+              "text": {
+                "ru": "Списки достижений: дают явный перечень ещё не выполненного",
+                "en": "Achievements lists: provide an explicit list of what has not yet been accomplished"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-05",
+              "text": {
+                "ru": "Процент прохождения: превращает завершение всей игры в измеримую задачу",
+                "en": "Completion Rate: Turns completing an entire game into a measurable goal"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-06",
+              "text": {
+                "ru": "Ступенчатые оценки: звёзды, медали и ранги побуждают улучшать уже пройденное",
+                "en": "Stepped grades: stars, medals and ranks encourage you to improve what you have already completed"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-07",
+              "text": {
+                "ru": "Предварительный прогресс: часть шкалы или набора выдаётся сразу, создавая начатую цель",
+                "en": "Pre-progress: part of the scale or set is given out immediately, creating a goal in progress"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-04-08",
+              "text": {
+                "ru": "Показ следующей цели заранее: до окончания текущей задачи уже виден следующий привлекательный результат",
+                "en": "Show the next goal in advance: before the end of the current task, the next attractive result is already visible"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Расписания и организация наград",
+        "en": "Reward schedules and structure"
+      },
+      "description": {
+        "ru": "Правила времени и выдачи наград меняют ожидания игрока и ритм возвращения.",
+        "en": "Timing and reward rules change the player's expectations and the rhythm of the return."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-05-01",
+              "text": {
+                "ru": "Награда за каждое действие: полезный результат сопровождает практически каждое повторение",
+                "en": "A reward for every action: a useful result accompanies almost every repetition"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-02",
+              "text": {
+                "ru": "Награда за фиксированное число действий: например, сундук после нескольких побед",
+                "en": "Reward for a fixed number of actions: for example, a chest after several victories"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-03",
+              "text": {
+                "ru": "Награда через фиксированный интервал: получение привязано к прошедшему времени",
+                "en": "Reward at a fixed interval: receipt is tied to the elapsed time"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-04",
+              "text": {
+                "ru": "Награда после непредсказуемого числа попыток: неизвестно, какое повторение окажется успешным",
+                "en": "Reward after an unpredictable number of attempts: it is unknown which repetition will be successful"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-05",
+              "text": {
+                "ru": "Награда после непредсказуемого ожидания: игрок периодически проверяет, появилась ли возможность",
+                "en": "Reward after an unpredictable wait: the player periodically checks to see if the opportunity has appeared"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-06",
+              "text": {
+                "ru": "Нарастающие награды: продолжение серии увеличивает ценность следующего результата",
+                "en": "Increasing rewards: continuing a streak increases the value of the next result"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-07",
+              "text": {
+                "ru": "Одновременное продвижение нескольких наград: один матч заполняет несколько шкал",
+                "en": "Simultaneous promotion of multiple rewards: one match fills multiple bars"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-05-08",
+              "text": {
+                "ru": "Награда, запускающая новую активность: полученный ключ, билет или ресурс сразу открывает следующий цикл",
+                "en": "A reward that triggers a new activity: the received key, ticket or resource immediately opens the next cycle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Случайность, ожидание и азарт",
+        "en": "Randomness, anticipation and excitement"
+      },
+      "description": {
+        "ru": "Pity-система может ограничивать неудачи, а случайность может разнообразить игру. Риск зависит от цены попыток, прозрачности вероятностей, ограничений и сочетания с другими системами. Для платных лутбоксов исследования обнаруживали связь расходов с проблемным азартным поведением; корреляционное исследование само по себе не устанавливает направление причинности. Zendle и Cairns.",
+        "en": "The Pity system can limit bad luck, and randomness can add variety to the game. Risk depends on the cost of trying, the transparency of probabilities, limitations, and combination with other systems. For paid loot boxes, studies have found that spending is associated with problem gambling behavior; A correlational study does not by itself establish the direction of causation. Zendle and Cairns."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206767"
+      ],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-06-01",
+              "text": {
+                "ru": "Случайная награда: заранее неизвестно, что именно будет получено",
+                "en": "Random reward: it is not known in advance what exactly will be received"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-02",
+              "text": {
+                "ru": "Редкий крупный выигрыш: среди обычных результатов существует особенно желанный",
+                "en": "Rare big win: among the usual results there is a particularly desirable one"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-03",
+              "text": {
+                "ru": "Демонстрация «почти выпало»: оформление проигрыша создаёт впечатление близости к выигрышу",
+                "en": "“Almost hit” demonstration: framing a loss to create the impression of being close to winning"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-04",
+              "text": {
+                "ru": "Постепенное раскрытие результата: открытие сундука или призыва растягивает ожидание",
+                "en": "Gradual reveal of the result: opening a chest or summon extends the wait"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-05",
+              "text": {
+                "ru": "Гарантия после серии неудач, pity-система: счётчик создаёт отдельную цель до гарантированной награды",
+                "en": "Guarantee after a series of failures, pity system: the counter creates a separate goal until a guaranteed reward"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-06",
+              "text": {
+                "ru": "Повторная генерация результата, reroll: неудачную награду можно попытаться заменить",
+                "en": "Re-generating the result, reroll: you can try to replace the unsuccessful reward"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-07",
+              "text": {
+                "ru": "Улучшение с вероятностью успеха: вложенные ресурсы могут дать усиление или пропасть",
+                "en": "Improvement with probability of success: invested resources can give an increase or a loss"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-06-08",
+              "text": {
+                "ru": "Решение «забрать или рискнуть»: уже полученный выигрыш можно поставить ради большего",
+                "en": "The decision “take or risk”: the winnings already received can be bet for more"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Лут и коллекционирование",
+        "en": "Loot and collecting"
+      },
+      "description": {
+        "ru": "Получение добычи и заполнение коллекции дают долгосрочные цели и меняют ценность отдельных находок.",
+        "en": "Obtaining loot and completing the collection provides long-term goals and changes the value of individual finds."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-07-01",
+              "text": {
+                "ru": "Редкости предметов: понятная иерархия превращает получение более редкого объекта в цель",
+                "en": "Item rarities: a clear hierarchy makes getting a rarer item a goal"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-02",
+              "text": {
+                "ru": "Незавершённая коллекция: пустые места напоминают о недостающих предметах",
+                "en": "An unfinished collection: empty spaces remind of missing items"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-03",
+              "text": {
+                "ru": "Бонус за полный комплект: отдельные находки получают дополнительную ценность в наборе",
+                "en": "Full Set Bonus: Individual finds receive additional value in the set"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-04",
+              "text": {
+                "ru": "Сбор фрагментов: каждая небольшая находка приближает получение целого объекта",
+                "en": "Collecting fragments: every small find brings you closer to obtaining the whole object"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-05",
+              "text": {
+                "ru": "Прокачка через дубликаты: повторное получение предмета остаётся полезным",
+                "en": "Leveling through duplicates: getting an item again remains useful"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-06",
+              "text": {
+                "ru": "Случайные характеристики предметов: даже знакомая вещь может выпасть в лучшем варианте",
+                "en": "Random characteristics of items: even a familiar item can drop in the best variant"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-07",
+              "text": {
+                "ru": "Поиск синергии для билда: следующий предмет способен завершить желаемую комбинацию",
+                "en": "Finding synergy for a build: the next item is able to complete the desired combination"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-07-08",
+              "text": {
+                "ru": "Альтернативные версии: особые окраски, формы, подписи и варианты расширяют коллекцию без смены основной механики",
+                "en": "Alternate versions: special colors, shapes, signatures and variants expand the collection without changing the core mechanics"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Накопление и экономические циклы",
+        "en": "Accumulation and economic cycles"
+      },
+      "description": {
+        "ru": "Повторяемое накопление и расход ресурсов связывают текущую активность с будущими возможностями.",
+        "en": "The repeated accumulation and expenditure of resources links current activity to future possibilities."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-08-01",
+              "text": {
+                "ru": "Постоянный рост ресурсов: накопление само становится наблюдаемым результатом",
+                "en": "Constant growth of resources: accumulation itself becomes an observable result"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-02",
+              "text": {
+                "ru": "Доход во время отсутствия: возвращение сопровождается получением накопленного",
+                "en": "Income during absence: return is accompanied by receipt of accumulated"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-03",
+              "text": {
+                "ru": "Реинвестирование: заработанное увеличивает скорость следующего заработка",
+                "en": "Reinvestment: what you earn increases the speed of your next earnings"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-04",
+              "text": {
+                "ru": "Автоматизация: игрок постепенно передаёт рутину системе и переходит к управлению",
+                "en": "Automation: the player gradually transfers the routine to the system and moves on to control"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-05",
+              "text": {
+                "ru": "Производственные цепочки: улучшение одного звена создаёт следующую задачу в другом",
+                "en": "Production chains: improving one link creates the next task in another"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-06",
+              "text": {
+                "ru": "Ресурсные узкие места: нехватка конкретного материала направляет следующую активность",
+                "en": "Resource bottlenecks: shortage of a specific material directs the next activity"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-07",
+              "text": {
+                "ru": "Престиж и сброс ради постоянного бонуса: завершённый цикл превращается в начало более эффективного",
+                "en": "Prestige and reset for a permanent bonus: a completed cycle turns into the beginning of a more effective one"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-08-08",
+              "text": {
+                "ru": "Торговля и рыночная спекуляция: изменение цен создаёт поводы проверять рынок и совершать сделки",
+                "en": "Trading and market speculation: price changes create reasons to test the market and make trades"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Исследование и сюжетное любопытство",
+        "en": "Exploration and story curiosity"
+      },
+      "description": {
+        "ru": "Неизвестные области, события и сюжетные вопросы дают мотив искать новую информацию.",
+        "en": "Unknown areas, events, and plot questions provide motivation to seek new information."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-09-01",
+              "text": {
+                "ru": "Скрытые области: неизвестная часть мира обещает открытия",
+                "en": "Hidden areas: an unknown part of the world promises discoveries"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-02",
+              "text": {
+                "ru": "Секреты: окружение намекает, что игрок ещё что-то не обнаружил",
+                "en": "Secrets: the environment hints that the player has not yet discovered something"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-03",
+              "text": {
+                "ru": "Постепенное раскрытие истории: ответы выдаются по мере продвижения",
+                "en": "Gradual story unfolding: answers are revealed as you progress"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-04",
+              "text": {
+                "ru": "Клиффхэнгеры: эпизод заканчивается в момент незавершённого события",
+                "en": "Cliffhangers: The episode ends with an unfinished event"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-05",
+              "text": {
+                "ru": "Коллекционные фрагменты сюжета: полную картину нужно собрать из отдельных находок",
+                "en": "Collectible plot fragments: the complete picture must be assembled from individual finds"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-06",
+              "text": {
+                "ru": "Случайные встречи и события: следующая сессия может принести необычный эпизод",
+                "en": "Random encounters and events: the next session may bring an unusual episode"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-07",
+              "text": {
+                "ru": "Процедурная генерация: знакомые правила создают новые ситуации",
+                "en": "Procedural generation: familiar rules create new situations"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-09-08",
+              "text": {
+                "ru": "Ветвящиеся последствия: желание увидеть другой исход побуждает перепройти игру",
+                "en": "Branching consequences: the desire to see a different outcome encourages replaying the game"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Творчество, идентичность и привязанность",
+        "en": "Creativity, identity and attachment"
+      },
+      "description": {
+        "ru": "Создание собственного результата и связь с персонажами усиливают личную значимость происходящего.",
+        "en": "Creating your own outcome and connecting with the characters enhances the personal significance of the experience."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-10-01",
+              "text": {
+                "ru": "Создание собственного персонажа: игрок вкладывается в индивидуальный образ",
+                "en": "Creating your own character: the player invests in an individual image"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-02",
+              "text": {
+                "ru": "Косметическая персонализация: внешний вид становится способом самовыражения",
+                "en": "Cosmetic personalization: appearance becomes a way of self-expression"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-03",
+              "text": {
+                "ru": "Строительство и оформление: собственный мир остаётся незавершённым творческим проектом",
+                "en": "Construction and decoration: your own world remains an unfinished creative project"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-04",
+              "text": {
+                "ru": "Конструирование билдов, колод и команд: новые сочетания поддерживают эксперименты",
+                "en": "Designing builds, decks and teams: new combinations support experimentation"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-05",
+              "text": {
+                "ru": "Забота о существах и персонажах: развитие отношений создаёт эмоциональную привязанность",
+                "en": "Caring for Creatures and Characters: Developing relationships creates emotional attachment"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-06",
+              "text": {
+                "ru": "Долговременные последствия решений: история персонажа отражает личные выборы",
+                "en": "Long-term consequences of decisions: the character's story reflects personal choices"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-07",
+              "text": {
+                "ru": "Создание пользовательского контента: игру продолжают собственные уровни, сценарии и модификации",
+                "en": "Creation of user content: the game continues with its own levels, scenarios and modifications"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-10-08",
+              "text": {
+                "ru": "Публичное авторство: публикации, оценки и использование чужими игроками придают творчеству дополнительную значимость",
+                "en": "Public authorship: publications, ratings and use by other players give creativity additional significance"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Социальная принадлежность",
+        "en": "Social belonging"
+      },
+      "description": {
+        "ru": "Взаимодействие с другими участниками создаёт чувство принадлежности и причины возвращаться к совместной игре.",
+        "en": "Interaction with other participants creates a sense of belonging and a reason to return to playing together."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-11-01",
+              "text": {
+                "ru": "Постоянные группы и гильдии: игра становится местом регулярного общения",
+                "en": "Permanent groups and guilds: the game becomes a place of regular communication"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-02",
+              "text": {
+                "ru": "Совместное прохождение: удовольствие связано с общим действием",
+                "en": "Co-op: fun comes from shared action"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-03",
+              "text": {
+                "ru": "Взаимодополняющие роли: каждый участник получает понятную ценность для команды",
+                "en": "Complementary roles: each participant receives clear value for the team"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-04",
+              "text": {
+                "ru": "Общие долгосрочные проекты: группа строит, исследует или развивает что-то вместе",
+                "en": "Shared long-term projects: a group builds, explores, or develops something together"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-05",
+              "text": {
+                "ru": "Помощь и наставничество: полезность другим поддерживает участие",
+                "en": "Helping and Mentoring: Being helpful to others maintains participation."
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-06",
+              "text": {
+                "ru": "Подарки и обмен: взаимодействие продолжается между основными сессиями",
+                "en": "Gifts and Sharing: Interaction continues between main sessions"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-07",
+              "text": {
+                "ru": "Внутриигровые отношения: дружба, соперничество и романтические линии создают социальную историю",
+                "en": "In-Game Relationships: Friendships, Rivalries, and Romances Create a Social Story"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-11-08",
+              "text": {
+                "ru": "Общие ритуалы и события: регулярные встречи закрепляют игру в жизни сообщества",
+                "en": "Shared rituals and events: regular meetings anchor the game in community life"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Соревнование и признание",
+        "en": "Competition and recognition"
+      },
+      "description": {
+        "ru": "Сравнение результатов и признание достижений создают соревновательные и социальные цели.",
+        "en": "Comparing performance and recognizing achievements create competitive and social goals."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-12-01",
+              "text": {
+                "ru": "Рейтинговая лестница: всегда существует следующая позиция",
+                "en": "Rating ladder: there is always a next position"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-02",
+              "text": {
+                "ru": "Лиги и дивизионы: переход между ними создаёт заметные рубежи",
+                "en": "Leagues and divisions: the transition between them creates noticeable boundaries"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-03",
+              "text": {
+                "ru": "Таблицы лидеров: результат получает положение относительно других",
+                "en": "Leaderboards: The result gets a position relative to others"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-04",
+              "text": {
+                "ru": "Сравнение с друзьями: знакомый соперник делает цель конкретнее",
+                "en": "Comparison with friends: a familiar opponent makes the goal more specific"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-05",
+              "text": {
+                "ru": "Реванш: поражение оставляет желание изменить исход",
+                "en": "Revenge: defeat leaves a desire to change the outcome"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-06",
+              "text": {
+                "ru": "Серии побед и рекорды: текущий успех становится самостоятельной ценностью",
+                "en": "Streaks of victories and records: current success becomes an independent value"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-07",
+              "text": {
+                "ru": "Публичные знаки статуса: титулы, рамки, значки и редкие предметы демонстрируют достижения",
+                "en": "Public status symbols: titles, frames, badges and rare items show achievements"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-12-08",
+              "text": {
+                "ru": "Сезонное соревнование: новый период создаёт новую гонку и возможность пересмотреть своё положение",
+                "en": "Seasonal competition: a new period creates a new race and an opportunity to reconsider your position"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-13",
+      "section": "section-1",
+      "title": {
+        "ru": "Социальные обязательства и давление группы",
+        "en": "Social obligations and group pressure"
+      },
+      "description": {
+        "ru": "Групповые обязательства могут превращать участие в давление, когда пропуск затрагивает других или становится публичным.",
+        "en": "Group obligations can turn participation into pressure when omission affects others or becomes public."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-13-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-13-01",
+              "text": {
+                "ru": "Рейды по расписанию: участие требует появиться в конкретное время",
+                "en": "Scheduled raids: participation requires showing up at a specific time"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-02",
+              "text": {
+                "ru": "Квоты активности: сохранение места в группе зависит от регулярного вклада",
+                "en": "Activity quotas: maintaining a place in a group depends on regular contributions"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-03",
+              "text": {
+                "ru": "Зависимость общего результата от каждого участника: пропуск воспринимается как ущерб команде",
+                "en": "Dependence of the overall result on each participant: absence is perceived as damage to the team"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-04",
+              "text": {
+                "ru": "Дефицитная незаменимая роль: человеку сложно уйти, поскольку заменить его некем",
+                "en": "Scarce irreplaceable role: it is difficult for a person to leave because there is no one to replace him"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-05",
+              "text": {
+                "ru": "Долг взаимности: полученная помощь создаёт ожидание ответной активности",
+                "en": "Duty of reciprocity: help received creates an expectation of reciprocal activity."
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-06",
+              "text": {
+                "ru": "Публичная видимость отсутствия: пропуски становятся заметны группе",
+                "en": "Public visibility of absence: absences become visible to the group"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-07",
+              "text": {
+                "ru": "Награда, требующая приглашённых участников: прогресс зависит от привлечения других людей",
+                "en": "Reward requiring invited participants: progress depends on inviting other people"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-13-08",
+              "text": {
+                "ru": "Привязка к одной группе или серверу: накопленные связи и совместные активы затрудняют уход",
+                "en": "Tied to one group or server: accumulated connections and shared assets make leaving difficult"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-14",
+      "section": "section-1",
+      "title": {
+        "ru": "Привычка и календарное возвращение",
+        "en": "Habit and calendar-based return"
+      },
+      "description": {
+        "ru": "Игроки могут воспринимать такие награды и как полезную мотивацию, и как обязанность, рутину или источник страха что-то упустить. Это различие обнаружено в исследовании опыта игроков, а не только в критике дизайна. Frommel и Mandryk, Daily Quests or Daily Pests?.",
+        "en": "Players may perceive such rewards both as useful motivation and as an obligation, a chore, or a source of fear of missing out. This difference is found in player experience research, not just design criticism. Frommel and Mandryk, Daily Quests or Daily Pests?."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://doi.org/10.1145/3549489"],
+      "branches": [
+        {
+          "id": "family-14-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-14-01",
+              "text": {
+                "ru": "Ежедневная награда за вход: вход становится самостоятельным действием с вознаграждением",
+                "en": "Daily Login Reward: Logging in becomes a rewarding activity in its own right"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-02",
+              "text": {
+                "ru": "Серия последовательных дней, streak: ценность получает непрерывность посещений",
+                "en": "A series of consecutive days, streak: the value is gained by the continuity of visits"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-03",
+              "text": {
+                "ru": "Ежедневные задания: регулярно обновляют краткосрочную повестку",
+                "en": "Daily tasks: regularly update the short-term agenda"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-04",
+              "text": {
+                "ru": "Еженедельные задания: формируют более длинный повторяющийся цикл",
+                "en": "Weekly Challenges: Form a longer repeating cycle"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-05",
+              "text": {
+                "ru": "Восстанавливающаяся энергия: появление доступного ресурса задаёт время возвращения",
+                "en": "Renewable Energy: When an available resource becomes available, it sets the return time"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-06",
+              "text": {
+                "ru": "Таймеры строительства, крафта и экспедиций: завершение процесса становится поводом зайти",
+                "en": "Construction, crafting and expedition timers: completing the process becomes a reason to visit"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-07",
+              "text": {
+                "ru": "Ротация режимов и активностей: разные дни предлагают разные возможности",
+                "en": "Rotation of modes and activities: different days offer different opportunities"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-14-08",
+              "text": {
+                "ru": "Последовательная программа возвращения: после перерыва награды выдаются за несколько следующих посещений",
+                "en": "Sequential return program: after a break, rewards are issued for the next few visits"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-15",
+      "section": "section-1",
+      "title": {
+        "ru": "Ограниченная доступность и FOMO",
+        "en": "Limited availability and FOMO"
+      },
+      "description": {
+        "ru": "FOMO означает страх упустить возможность.",
+        "en": "FOMO means fear of missing out."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-15-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-15-01",
+              "text": {
+                "ru": "Временные события: контент доступен ограниченный период",
+                "en": "Temporary events: content available for a limited period"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-02",
+              "text": {
+                "ru": "Эксклюзивные награды события: пропуск грозит потерей конкретного предмета",
+                "en": "Exclusive event rewards: missing a specific item will result in the loss of a specific item."
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-03",
+              "text": {
+                "ru": "Боевой пропуск со сроком окончания: прогресс нужно завершить до дедлайна",
+                "en": "Battle pass with deadline: progress must be completed before the deadline"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-04",
+              "text": {
+                "ru": "Ротационный магазин: нужный товар появляется только в отдельные периоды",
+                "en": "Rotating store: the desired product appears only in certain periods"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-05",
+              "text": {
+                "ru": "Ограниченный баннер призыва: желаемого персонажа или предмет можно получить в определённое окно",
+                "en": "Limited summon banner: the desired character or item can be obtained in a certain window"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-06",
+              "text": {
+                "ru": "Короткие окна получения: награду необходимо забрать в узкий промежуток времени",
+                "en": "Short claim windows: the reward must be claimed within a narrow period of time"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-07",
+              "text": {
+                "ru": "Временные множители выгоды: бонусный опыт или добыча делают текущую сессию особенно выгодной",
+                "en": "Temporary benefit multipliers: bonus experience or loot make the current session especially profitable"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-15-08",
+              "text": {
+                "ru": "Сгорающие ресурсы и билеты: неиспользованная возможность исчезает",
+                "en": "Burning resources and tickets: unused opportunity disappears"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-16",
+      "section": "section-1",
+      "title": {
+        "ru": "Потери, сохранение достигнутого и вложенные усилия",
+        "en": "Losses, preserving progress and invested effort"
+      },
+      "description": {
+        "ru": "Последний приём особенно связан с использованием уже вложенных времени и денег: игроку труднее отказаться от цели, хотя продолжение может быть невыгодно. Скрытие долгосрочной стоимости рассматривается в работах о хищнической монетизации. King и Delfabbro.",
+        "en": "The latter technique is especially associated with the use of time and money already invested: it is more difficult for the player to abandon the goal, although continuing may be unprofitable. Hiding long-term value is considered in works on predatory monetization. King and Delfabbro."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://onlinelibrary.wiley.com/doi/abs/10.1111/add.14286"
+      ],
+      "branches": [
+        {
+          "id": "family-16-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-16-01",
+              "text": {
+                "ru": "Обнуление серии за пропуск: возвращение мотивируется сохранением streak",
+                "en": "Resetting streak for skipping: return is motivated by maintaining streak"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-02",
+              "text": {
+                "ru": "Падение рейтинга за неактивность: отсутствие уменьшает достигнутый статус",
+                "en": "Rating drop for inactivity: absence reduces achieved status"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-03",
+              "text": {
+                "ru": "Уязвимость имущества вне игры: базу или ресурсы могут отнять, пока игрок отсутствует",
+                "en": "Vulnerability of property outside the game: base or resources can be taken away while the player is absent"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-04",
+              "text": {
+                "ru": "Порча урожая и разрушение хозяйства: обслуживание предотвращает ухудшение состояния",
+                "en": "Crop spoilage and farm destruction: maintenance prevents deterioration"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-05",
+              "text": {
+                "ru": "Ограниченное окно возврата утраченного: после поражения нужно успеть вернуть вещи или ресурсы",
+                "en": "Limited window for returning what was lost: after a defeat you need to have time to return things or resources"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-06",
+              "text": {
+                "ru": "Потеря накопленных шансов или гарантий: смена события либо перерыв обесценивает незавершённый счётчик",
+                "en": "Loss of accumulated chances or guarantees: a change of event or a break invalidates the incomplete counter"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-07",
+              "text": {
+                "ru": "Остановка накопления при заполненном хранилище: отсутствие означает недополученный доход",
+                "en": "Stopping accumulation when storage is full: absence means lost income"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-16-08",
+              "text": {
+                "ru": "Позднее раскрытие полной цены цели: значительные требования становятся видны после существенных вложений",
+                "en": "Late disclosure of the full price of the target: significant requirements become visible after significant investments"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-17",
+      "section": "section-1",
+      "title": {
+        "ru": "Продление сессии и исчезновение удобных точек остановки",
+        "en": "Extending sessions and removing stopping points"
+      },
+      "description": {
+        "ru": "Последовательность событий и отсутствие удобных пауз могут затруднять завершение игровой сессии.",
+        "en": "The sequence of events and the lack of convenient pauses can make it difficult to complete a gaming session."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-17-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-17-01",
+              "text": {
+                "ru": "Автоматический запуск следующего матча: продолжение происходит по умолчанию",
+                "en": "Automatic start of the next match: continuation occurs by default"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-02",
+              "text": {
+                "ru": "Немедленный повтор без возвращения в меню: между попытками почти нет паузы для решения",
+                "en": "Immediate retry without returning to the menu: there is almost no pause between attempts to solve"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-03",
+              "text": {
+                "ru": "Следующая задача начинается до завершения предыдущей: одна активность постоянно переходит в другую",
+                "en": "The next task begins before the previous one is completed: one activity constantly transitions into another"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-04",
+              "text": {
+                "ru": "Несинхронное завершение целей: одна шкала заполнена, но другая почти дошла до награды",
+                "en": "Non-synchronous completion of goals: one scale is full, but the other is almost reaching the reward"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-05",
+              "text": {
+                "ru": "Бонус за непрерывную игру: остановка прерывает полезный множитель",
+                "en": "Continuous play bonus: stopping interrupts a useful multiplier"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-06",
+              "text": {
+                "ru": "Прогресс сохраняется только после длинного этапа: выход требует отказаться от части результата",
+                "en": "Progress is saved only after a long stage: exit requires giving up part of the result"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-07",
+              "text": {
+                "ru": "Отсутствие паузы в продолжительной активности: игроку трудно временно отвлечься",
+                "en": "No pause in prolonged activity: it is difficult for the player to be temporarily distracted"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-17-08",
+              "text": {
+                "ru": "Постоянно пополняемый поток контента: новые задачи появляются быстрее, чем исчезают завершённые",
+                "en": "Constantly updated content flow: new tasks appear faster than completed ones disappear"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-18",
+      "section": "section-1",
+      "title": {
+        "ru": "Продажа избавления от ограничений и преимущества",
+        "en": "Selling relief from constraints and advantages"
+      },
+      "description": {
+        "ru": "Продажа снятия ограничений или преимуществ связывает неудобство и силу игрока с расходами; оценивайте прозрачность и добровольность.",
+        "en": "Selling the removal of restrictions or benefits ties the player's inconvenience and power to costs; value transparency and voluntariness."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-18-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-18-01",
+              "text": {
+                "ru": "Покупка энергии и попыток: платёж позволяет продолжить после установленного ограничения",
+                "en": "Purchasing energy and attempts: payment allows you to continue beyond the set limit"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-02",
+              "text": {
+                "ru": "Платное продолжение после поражения: можно сохранить текущий забег или результат",
+                "en": "Paid continuation after defeat: you can save the current run or result"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-03",
+              "text": {
+                "ru": "Ускорение таймеров: ожидание снимается оплатой",
+                "en": "Acceleration of timers: waiting is removed by payment"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-04",
+              "text": {
+                "ru": "Платный пропуск гринда: деньги заменяют длительное повторение действий",
+                "en": "Paid grind pass: money replaces long repetition of actions"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-05",
+              "text": {
+                "ru": "Продажа устранения неудобств: тесный инвентарь, медленный сбор и другие ограничения снимаются покупкой",
+                "en": "Selling the elimination of inconveniences: cramped inventory, slow collection and other restrictions are removed by purchase"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-06",
+              "text": {
+                "ru": "Покупка соревновательного преимущества, pay-to-win: расходы становятся способом поддерживать конкурентоспособность",
+                "en": "Buying a competitive advantage, pay-to-win: spending becomes a way to stay competitive"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-07",
+              "text": {
+                "ru": "Регулярное устаревание платной силы: новые более сильные объекты создают потребность снова приобретать преимущество",
+                "en": "Regular obsolescence of paid power: new stronger objects create the need to gain advantage again"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-18-08",
+              "text": {
+                "ru": "Платная защита от потерь: покупка сохраняет серию, имущество, рейтинг или результат",
+                "en": "Paid loss protection: purchase saves series, property, rating or result"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-19",
+      "section": "section-1",
+      "title": {
+        "ru": "Механики повторных расходов",
+        "en": "Repeat spending patterns"
+      },
+      "description": {
+        "ru": "Продажа ускорений, ограничения удобства, непрозрачная валюта и давление на покупку описаны в исследовании проблемной монетизации с точки зрения игроков. Оно классифицирует их жалобы и опыт, но не доказывает, что каждый приём вызывает зависимость. Petrovskaya и Zendle.",
+        "en": "Selling boosts, convenience restrictions, opaque currency, and buying pressure are described in a study of problematic monetization from a player's perspective. It categorizes their complaints and experiences, but does not prove that each method is addictive. Petrovskaya and Zendle."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://link.springer.com/article/10.1007/s10551-021-04970-6"
+      ],
+      "branches": [
+        {
+          "id": "family-19-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-19-01",
+              "text": {
+                "ru": "Платные случайные награды: покупается попытка, а не гарантированный желаемый предмет",
+                "en": "Paid random rewards: buy an attempt, not a guaranteed desired item"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-02",
+              "text": {
+                "ru": "Несколько валют и обменных курсов: становится сложнее оценить расходы в обычных деньгах",
+                "en": "Multiple currencies and exchange rates: it becomes more difficult to estimate expenses in regular money"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-03",
+              "text": {
+                "ru": "Несовпадение размеров валютных пакетов и цен: остаток подталкивает к следующему пополнению",
+                "en": "Mismatch between the sizes of currency packages and prices: the balance pushes for the next replenishment"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-04",
+              "text": {
+                "ru": "Цепочки последовательных предложений: приобретение открывает следующую ступень покупки",
+                "en": "Chains of sequential offers: acquisition opens the next stage of purchase"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-05",
+              "text": {
+                "ru": "Растущие бонусы за накопленные расходы: потраченная сумма становится отдельной шкалой прогресса",
+                "en": "Increasing bonuses for accumulated spending: the amount spent becomes a separate progress bar"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-06",
+              "text": {
+                "ru": "Подписка с ежедневным получением оплаченного: покупка создаёт обязательство регулярно заходить",
+                "en": "Daily Receipt Subscription: Purchase creates an obligation to check in regularly"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-07",
+              "text": {
+                "ru": "Возврат стоимости пропуска при полном прохождении: завершение сезона становится условием получения валюты на следующий",
+                "en": "Refund of the cost of the pass upon complete completion: completion of the season becomes a condition for receiving currency for the next"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-19-08",
+              "text": {
+                "ru": "Платное восстановление упущенного: после пропуска дедлайна предлагается купить недостающий прогресс",
+                "en": "Paid restoration of lost progress: after missing a deadline, you are offered to buy the missing progress"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-20",
+      "section": "section-1",
+      "title": {
+        "ru": "Интерфейсные стимулы и персонализированное возвращение",
+        "en": "Interface incentives and personalized return prompts"
+      },
+      "description": {
+        "ru": "Исследователи тёмных паттернов отдельно подчёркивают роль реализации: похожий игровой приём может поддерживать интерес или действовать против интересов игрока в зависимости от устройства системы и аудитории. Zagal, Björk, Lewis, Dark Patterns in the Design of Games.",
+        "en": "Researchers of dark patterns specifically emphasize the role of implementation: a similar gaming technique can maintain interest or act against the interests of the player, depending on the design of the system and the audience. Zagal, Björk, Lewis, Dark Patterns in the Design of Games."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://ri.diva-portal.org/smash/get/diva2:1043332/FULLTEXT01.pdf"
+      ],
+      "branches": [
+        {
+          "id": "family-20-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-engagement-retention-20-01",
+              "text": {
+                "ru": "Постоянные индикаторы незабранного: значки и счётчики побуждают открывать разделы",
+                "en": "Constant indicators of unclaimed status: icons and counters encourage you to open sections"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-02",
+              "text": {
+                "ru": "Уведомления о готовности: игра напоминает о завершённом производстве или восстановленном ресурсе",
+                "en": "Ready notifications: the game reminds you when production is completed or a resource has been restored"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-03",
+              "text": {
+                "ru": "Уведомления об угрозе потери: сообщение побуждает вернуться для защиты достигнутого",
+                "en": "Loss Notifications: Message encourages you to return to protect your gains."
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-04",
+              "text": {
+                "ru": "Сообщения о действиях друзей: чужая активность становится поводом для собственной",
+                "en": "Messages about friends' activities: someone else's activity becomes a reason for your own"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-05",
+              "text": {
+                "ru": "Постоянная демонстрация будущих наград: желаемые предметы остаются перед глазами",
+                "en": "Constant demonstration of future rewards: desired items remain in front of your eyes"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-06",
+              "text": {
+                "ru": "Обязательное посещение магазина ради бесплатной награды: получение бесплатного сопровождается показом платных предложений",
+                "en": "Mandatory visit to the store for a free reward: receiving a free one is accompanied by the display of paid offers"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-07",
+              "text": {
+                "ru": "Предложения в момент неудачи или нехватки ресурса: покупка показывается тогда, когда решает возникшую проблему",
+                "en": "Suggestions at the time of failure or lack of resource: a purchase is shown when it solves the problem that has arisen"
+              }
+            },
+            {
+              "id": "variant-engagement-retention-20-08",
+              "text": {
+                "ru": "Персонализация стимулов по поведению: время, содержание уведомлений и предложения подстраиваются под конкретного игрока",
+                "en": "Personalization of incentives by behavior: time, content of notifications and offers are adjusted to the specific player"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Сочетания для анализа",
+        "en": "Combinations for analysis"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Случайная награда + платная попытка + временный баннер + исчезающий счётчик гарантии.",
+            "en": "Random reward + paid attempt + temporary banner + disappearing guarantee counter."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Ежедневная серия + штраф за пропуск + уведомление об угрозе потери + платное восстановление.",
+            "en": "Daily series + penalty for missing + notification of the threat of loss + paid restoration."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Купленный пропуск + дедлайн + ежедневные задания + возможность докупить недостающие уровни.",
+            "en": "Purchased pass + deadline + daily tasks + opportunity to purchase missing levels."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Командная квота + публичная видимость пропусков + незаменимая роль + награда всей группе.",
+            "en": "Team quota + public visibility of passes + irreplaceable role + reward for the whole group."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Несколько почти заполненных шкал + автоматический следующий матч + бонус за непрерывную сессию.",
+            "en": "Several almost full gauges + automatic next match + continuous session bonus."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Определение ВОЗ",
+        "en": "WHO definition"
+      },
+      "url": "https://www.who.int/news-room/questions-and-answers/item/addictive-behaviours-gaming-disorder",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Ryan, Rigby, Przybylski",
+        "en": "Ryan, Rigby, Przybylski"
+      },
+      "url": "https://selfdeterminationtheory.org/SDT/documents/2006_RyanRigbyPrzybylski_MandE.pdf",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Zendle и Cairns",
+        "en": "Zendle and Cairns"
+      },
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206767",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Frommel и Mandryk, Daily Quests or Daily Pests?",
+        "en": "Frommel and Mandryk, Daily Quests or Daily Pests?"
+      },
+      "url": "https://doi.org/10.1145/3549489",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "King и Delfabbro",
+        "en": "King and Delfabbro"
+      },
+      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/add.14286",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Petrovskaya и Zendle",
+        "en": "Petrovskaya and Zendle"
+      },
+      "url": "https://link.springer.com/article/10.1007/s10551-021-04970-6",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Zagal, Björk, Lewis, Dark Patterns in the Design of Games",
+        "en": "Zagal, Björk, Lewis, Dark Patterns in the Design of Games"
+      },
+      "url": "https://ri.diva-portal.org/smash/get/diva2:1043332/FULLTEXT01.pdf",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

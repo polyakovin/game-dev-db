@@ -1,0 +1,176 @@
+{
+  "id": "perception",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Исследовательское зрение и восприятие",
+    "en": "Investigative vision and perception"
+  },
+  "description": {
+    "ru": "Исследовательское зрение и восприятие: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Exploratory vision and perception: Actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Десять авторских идей исследовательского зрения. Герой раскрывает новый признак сцены, а игрок выбирает, куда смотреть, как сравнивать наблюдения и что означает находка. Световые и сенсорные эффекты являются условными игровыми инструментами, а не описанием реальных приборов. Идеи можно переносить в другие миры, сохраняя необходимость самостоятельного вывода.",
+    "en": "Ten original ideas for research vision. The hero reveals a new feature in the scene, and the player chooses where to look, how to compare observations, and what the discovery means. Light and touch effects are conditional game tools, and not a description of real devices. Ideas can be transferred to other worlds while maintaining the need for independent derivation."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-tools",
+      "section": "section-1",
+      "title": {
+        "ru": "Способы раскрывать признаки сцены",
+        "en": "Revealing properties of a scene"
+      },
+      "description": {
+        "ru": "Игровой инструмент раскрывает новый признак сцены; игрок выбирает точку наблюдения, сравнивает результаты и самостоятельно делает вывод.",
+        "en": "The game tool reveals a new feature of the scene; the player selects an observation point, compares the results and draws his own conclusion."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-tools-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-perception-01",
+              "text": {
+                "ru": "Скользящий свет. Правило: Ренди направляет луч почти параллельно поверхности. Игрок подбирает угол, чтобы увидеть вмятины, царапины или стёртые надписи. Например, следы на полу помогают понять, какой шкаф недавно двигали.",
+                "en": "Sliding light. Rule: Randy directs the beam almost parallel to the surface. The player adjusts the angle to see dents, scratches or erased inscriptions. For example, marks on the floor help to understand which cabinet was recently moved..."
+              }
+            },
+            {
+              "id": "variant-perception-02",
+              "text": {
+                "ru": "Звёздная призма. Правило: Ренди меняет цвет освещения, и разные материалы начинают проявляться по-разному. Игрок перебирает спектр: одинаковые на вид краски могут оказаться разными, а невидимая метка проступит только в определённом свете.",
+                "en": "Star prism. Rule: Randy changes the color of the light and different materials begin to appear differently. The player goes through the spectrum: colors that look the same may turn out to be different, and an invisible mark will appear only in a certain light."
+              }
+            },
+            {
+              "id": "variant-perception-03",
+              "text": {
+                "ru": "Луч-лупа. Правило: Один из лучей увеличивает выбранный участок сцены. Нужно настроить масштаб и фокус, чтобы рассмотреть волокна, отпечатки или устройство маленького замка. Слишком сильное увеличение мешает понять, какой части предмета принадлежит деталь.",
+                "en": "Magnifier beam. Rule: One of the rays magnifies the selected area of ​​the scene. You need to adjust the zoom and focus to see the fibers, prints or the structure of the small lock. Too much magnification makes it difficult to understand which part of the object the part belongs to."
+              }
+            },
+            {
+              "id": "variant-perception-04",
+              "text": {
+                "ru": "Устранение бликов. Правило: Ренди поворачивает особый световой фильтр. Игрок находит положение, при котором удаётся заглянуть под воду, сквозь стекло или под прозрачную плёнку. Так можно рассмотреть предмет на дне, сохраняя задачу достать его.",
+                "en": "Removing glare. Rule: Randy turns a special light filter. The player finds a position in which he can look under the water, through glass or under a transparent film. This way you can examine the object at the bottom, while maintaining the task of getting it."
+              }
+            },
+            {
+              "id": "variant-perception-05",
+              "text": {
+                "ru": "Отделяемая искорка. Правило: Ренди отправляет маленькую искру за угол, под мебель или внутрь щели и смотрит с её позиции. Игрок выбирает точку наблюдения: через одно отверстие виден механизм, через другое можно понять, что его заклинило.",
+                "en": "Separable spark. Rule: Randy sends a small spark around a corner, under furniture, or inside a crack and looks from its position. The player chooses an observation point: through one hole the mechanism is visible, through the other you can understand that it is jammed."
+              }
+            },
+            {
+              "id": "variant-perception-06",
+              "text": {
+                "ru": "Послойное зрение. Правило: Ренди настраивает глубину просмотра предмета. Игрок последовательно изучает оболочку, внутренние перегородки и сердцевину. Например, так можно проследить оборванный провод внутри стены.",
+                "en": "Layered vision. Rule: Randy adjusts the viewing depth of the item. The player sequentially examines the shell, internal partitions and core. For example, this is how you can trace a broken wire inside a wall."
+              }
+            },
+            {
+              "id": "variant-perception-07",
+              "text": {
+                "ru": "Тепловой след. Правило: Ренди различает, какие поверхности ещё хранят тепло. Игрок меняет чувствительность и сравнивает объекты: тёплая чашка, нагретое сиденье и остывающий двигатель помогают восстановить последовательность недавних действий.",
+                "en": "Thermal footprint Rule: Randy recognizes which surfaces still retain heat. The player changes sensitivity and compares objects: a warm cup, a heated seat and a cooling engine help restore the sequence of recent actions."
+              }
+            },
+            {
+              "id": "variant-perception-08",
+              "text": {
+                "ru": "Световое эхо. Правило: Ренди посылает импульс и воспринимает его возвращение как контуры пространства. Игрок выбирает направление и мощность, чтобы найти пустоту за стеной, оценить глубину колодца или заметить движение в тумане.",
+                "en": "Light echo. Rule: Randy sends out an impulse and perceives its return as the contours of space. The player chooses direction and power to find a void behind a wall, estimate the depth of a well, or spot movement in the fog."
+              }
+            },
+            {
+              "id": "variant-perception-09",
+              "text": {
+                "ru": "Светящаяся пыль. Правило: Ренди выпускает искристые частицы, которые показывают движение воздуха или воды. Игрок наблюдает за потоком: частицы уходят в незаметную щель, огибают невидимую преграду или собираются возле источника притяжения.",
+                "en": "Glowing dust. Rule: Randy releases sparkling particles that show the movement of air or water. The player watches the flow: particles go into an imperceptible gap, go around an invisible barrier, or gather near a source of attraction."
+              }
+            },
+            {
+              "id": "variant-perception-10",
+              "text": {
+                "ru": "Световой слепок. Правило: Ренди запоминает вид сцены и накладывает его на текущее изображение. Игрок совмещает ракурс и замечает изменения: предмет повернули, уровень воды поднялся, на стене появилась новая трещина. Это позволяет ставить собственные эксперименты: что изменится, если нажать рычаг и вернуться?.",
+                "en": "Light cast. Rule: Randy remembers the view of the scene and overlays it on the current image. The player combines the angle and notices changes: the object has been rotated, the water level has risen, a new crack has appeared on the wall. This allows you to set up your own experiments: what will change if you press the lever and come back?"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Mobius Digital: Outer Wilds",
+        "en": "Mobius Digital: Outer Wilds"
+      },
+      "url": "https://www.mobiusdigitalgames.com/outer-wilds.html",
+      "description": {
+        "ru": "Пример исследования и наблюдения в игре; не источник десяти авторских идей и не подтверждение физических возможностей вымышленных инструментов.",
+        "en": "An example of research and observation in a game; not a source of ten author's ideas and not an endorsement of the physical capabilities of fictitious instruments."
+      }
+    }
+  ]
+}

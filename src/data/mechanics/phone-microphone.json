@@ -1,0 +1,2089 @@
+{
+  "id": "phone-microphone",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Микрофон телефона",
+    "en": "Phone microphone interactions"
+  },
+  "description": {
+    "ru": "Микрофон телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone microphone: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская карта дизайна для мобильных игр и интерактивных приложений. 144 приёма в 18 группах, включая базовые сигналы, правила и сочетания. Применения являются проектными идеями, а не перечнем выпущенных игр.",
+    "en": "Author's design map for mobile games and interactive applications. 144 techniques in 18 groups, including basic signals, rules and combinations. Applications are design ideas and not a list of released games."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-level",
+      "section": "section-1",
+      "title": {
+        "ru": "Громкость и динамика",
+        "en": "Loudness and dynamics"
+      },
+      "description": {
+        "ru": "Уровень сигнала относительно фона и собственной калибровки игрока. Это не измерение силы голоса в физических единицах.",
+        "en": "Signal level relative to the background and the player's own calibration. This is not a measurement of vocal strength in physical units."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder"
+      ],
+      "branches": [
+        {
+          "id": "family-level-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-001",
+              "text": {
+                "ru": "Звуковая кнопка. Сигнал: Превышение порога уровня. Применение: Хлопком или коротким возгласом запустить прыжок, выстрел, подтверждение. Уровень доступа: Анализ сигнала.",
+                "en": "Sound button. Signal: Level threshold exceeded. Application: Use a clap or a short exclamation to launch a jump, shot, confirmation. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-002",
+              "text": {
+                "ru": "Пропорциональное управление. Сигнал: Текущий уровень сигнала. Применение: Голосом менять скорость, тягу, высоту полёта или размер кисти. Уровень доступа: Анализ сигнала.",
+                "en": "Proportional control. Signal: Current signal level. Application: Use your voice to change speed, thrust, flight altitude or hand size. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-003",
+              "text": {
+                "ru": "Несколько зон громкости. Сигнал: Попадание в тихую, среднюю или громкую зону. Применение: Выбирать между красться, идти и бежать без распознавания слов. Уровень доступа: Анализ сигнала.",
+                "en": "Multiple volume zones. Signal: Entering a quiet, medium or loud zone. Application: Choose between sneak, walk and run without recognizing words. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-004",
+              "text": {
+                "ru": "Удержание диапазона. Сигнал: Время внутри заданного коридора уровня. Применение: Стабилизировать реактор, не давая звуку стать слишком тихим или громким. Уровень доступа: Анализ сигнала.",
+                "en": "Range hold. Signal: Time within a given level corridor. Application: Stabilize the reactor, preventing the sound from becoming too quiet or loud. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-005",
+              "text": {
+                "ru": "Накопление звуковой энергии. Сигнал: Интеграл уровня за игровое окно. Применение: Постепенно наполнять шкалу заклинания; затраты определяет игра. Уровень доступа: Анализ сигнала.",
+                "en": "Accumulation of sound energy. Signal: Level integral over the game window. Application: Gradually fill the spell scale; costs are determined by the game. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-006",
+              "text": {
+                "ru": "Нарастание и затухание. Сигнал: Направление и скорость изменения уровня. Применение: Плавным усилением звука раскрыть мост, затиханием закрыть ловушку. Уровень доступа: Анализ сигнала.",
+                "en": "Fade in and out. Signal: Direction and rate of level change. Application: Open the bridge with a smooth increase in sound, close the trap with attenuation. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-007",
+              "text": {
+                "ru": "Контроль пиков. Сигнал: Короткие превышения комфортного порога. Применение: Осторожно обращаться с существом, которое реагирует на резкие звуки. Уровень доступа: Анализ сигнала.",
+                "en": "Peak control. Signal: Short exceeding of the comfortable threshold. Application: Handle with caution a creature that reacts to sharp sounds. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-008",
+              "text": {
+                "ru": "Тишина как действие. Сигнал: Уровень ниже порога при исправном входе. Применение: Прятаться от монстра, останавливать механизм, удерживать скрытность. Уровень доступа: Анализ сигнала.",
+                "en": "Silence as action. Signal: Level below threshold when input is working. Application: Hide from a monster, stop a mechanism, maintain stealth. Access level: Signal analysis."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-time",
+      "section": "section-1",
+      "title": {
+        "ru": "Время, ритм и паузы",
+        "en": "Time, rhythm and pauses"
+      },
+      "description": {
+        "ru": "Оцениваются моменты начала, окончания и интервалы между событиями. Для точного ритма нужна настройка задержки.",
+        "en": "The moments of beginning, end and intervals between events are estimated. For accurate rhythm, a delay setting is needed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder"
+      ],
+      "branches": [
+        {
+          "id": "family-time-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-009",
+              "text": {
+                "ru": "Короткий и длинный сигнал. Сигнал: Длительность одного звука. Применение: Коротким звуком прыгнуть, длинным зарядить усиленный прыжок. Уровень доступа: Анализ сигнала.",
+                "en": "Short and long signal. Signal: Duration of one sound. Application: Jump with a short sound, charge an enhanced jump with a long sound. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-010",
+              "text": {
+                "ru": "Число импульсов. Сигнал: Количество событий в окне. Применение: Одним хлопком выбрать первую дверь, двумя вторую, тремя третью. Уровень доступа: Анализ сигнала.",
+                "en": "Number of pulses. Signal: Number of events in the window. Application: Select the first door with one clap, the second with two, the third with three. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-011",
+              "text": {
+                "ru": "Ритмический пароль. Сигнал: Последовательность интервалов. Применение: Открыть замок знакомым рисунком стука. Уровень доступа: Анализ сигнала.",
+                "en": "Rhythmic password. Signal: Sequence of intervals. Application: Open the lock using a familiar knocking pattern. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-012",
+              "text": {
+                "ru": "Попадание в долю. Сигнал: Отклонение начала звука от такта. Применение: Хлопать или произносить слоги в музыкальной игре. Уровень доступа: Анализ сигнала.",
+                "en": "Getting into the share. Signal: Deviation of the beginning of the sound from the beat. Application: Clap or pronounce syllables in a musical game. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-013",
+              "text": {
+                "ru": "Темп как регулятор. Сигнал: Частота повторяющихся событий. Применение: Ускорять транспорт серией щелчков или ударов по столу. Уровень доступа: Анализ сигнала.",
+                "en": "Tempo as a regulator. Signal: Frequency of repeating events. Application: Accelerate transport with a series of clicks or hits on the table. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-014",
+              "text": {
+                "ru": "Пауза заданной длины. Сигнал: Интервал между звуками. Применение: Выдержать время перед ответом, чтобы обезвредить ловушку. Уровень доступа: Анализ сигнала.",
+                "en": "Pause of a specified length. Signal: Interval between sounds. Application: Allow time before responding to disarm the trap. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-015",
+              "text": {
+                "ru": "Реакция по сигналу. Сигнал: Время до первого ответа. Применение: Проверять реакцию хлопком после вспышки или звуковой подсказки. Уровень доступа: Анализ сигнала.",
+                "en": "Reaction on signal. Signal: Time until first response. Application: Check the response with a clap after a flash or sound prompt. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-016",
+              "text": {
+                "ru": "Повтори и преобразуй. Сигнал: Рисунок длительностей и пауз. Применение: Повторить услышанный ритм, сыграть его наоборот или продолжить ряд. Уровень доступа: Анализ сигнала.",
+                "en": "Repeat and transform. Signal: Drawing of durations and pauses. Application: Repeat a heard rhythm, play it in reverse or continue the series. Access level: Signal analysis."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-pitch",
+      "section": "section-1",
+      "title": {
+        "ru": "Высота тона",
+        "en": "Pitch"
+      },
+      "description": {
+        "ru": "Основная частота удобнее выделяется у одного устойчивого голоса или свиста. Диапазон лучше задавать относительно игрока.",
+        "en": "The fundamental frequency is more conveniently isolated from one stable voice or whistle. It is better to set the range relative to the player."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder"
+      ],
+      "branches": [
+        {
+          "id": "family-pitch-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-017",
+              "text": {
+                "ru": "Голосовой ползунок. Сигнал: Основная частота звука. Применение: Высоким тоном поднимать персонажа, низким опускать. Уровень доступа: Анализ сигнала.",
+                "en": "Voice slider. Signal: Fundamental frequency of sound. Application: Raise the character with a high tone, lower it with a low tone. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-018",
+              "text": {
+                "ru": "Тональные кнопки. Сигнал: Несколько относительных диапазонов. Применение: Выбирать одну из трёх стихий низким, средним или высоким тоном. Уровень доступа: Анализ сигнала.",
+                "en": "Tone buttons. Signal: Multiple relative ranges. Application: Select one of three elements in a low, medium or high tone. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-019",
+              "text": {
+                "ru": "Удержание ноты. Сигнал: Близость к целевой частоте. Применение: Удерживать луч на цели или сохранять мост открытым. Уровень доступа: Анализ сигнала.",
+                "en": "Holding a note. Signal: Close to target frequency. Application: Keep the beam on the target or keep the bridge open. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-020",
+              "text": {
+                "ru": "Глиссандо. Сигнал: Непрерывный подъём или спад высоты. Применение: Голосом проводить платформу по наклонной траектории. Уровень доступа: Анализ сигнала.",
+                "en": "Glissando. Alarm: Continuous rise or fall in altitude. Application: Use your voice to guide the platform along an inclined path. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-021",
+              "text": {
+                "ru": "Мелодический контур. Сигнал: Ряд подъёмов и спадов. Применение: Открыть дверь мотивом, который допускает удобную тональность. Уровень доступа: Анализ сигнала.",
+                "en": "Melodic contour. Signal: A series of ups and downs. Application: Open the door with a motive that allows for a convenient tonality. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-022",
+              "text": {
+                "ru": "Интервальный пароль. Сигнал: Отношения между последовательными тонами. Применение: Повторить расстояния между нотами независимо от стартовой ноты. Уровень доступа: Анализ сигнала.",
+                "en": "Interval password. Signal: The relationship between successive tones. Application: Repeat the distances between notes regardless of the starting note. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-023",
+              "text": {
+                "ru": "Точность интонации. Сигнал: Отклонение от заданных нот. Применение: Получать очки за попадание в мелодию. Уровень доступа: Анализ сигнала.",
+                "en": "Accuracy of intonation. Signal: Deviation from specified notes. Application: Get points for hitting the melody. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-024",
+              "text": {
+                "ru": "Вибрато и устойчивость. Сигнал: Колебания высоты во времени. Применение: Вибрато модулирует щит; ровный тон стабилизирует инструмент. Уровень доступа: Анализ сигнала.",
+                "en": "Vibrato and stability. Signal: Variation in altitude over time. Application: Vibrato modulates the shield; an even tone stabilizes the instrument. Access level: Signal analysis."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-timbre",
+      "section": "section-1",
+      "title": {
+        "ru": "Тембр, артикуляция и манера",
+        "en": "Timbre, articulation and manner"
+      },
+      "description": {
+        "ru": "Для различения звуков нужны правила спектрального анализа или обученная модель. Манера исполнения является игровым вводом.",
+        "en": "To distinguish sounds, you need spectral analysis rules or a trained model. The manner of performance is a game input."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/videos/play/wwdc2023/10101/",
+        "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier"
+      ],
+      "branches": [
+        {
+          "id": "family-timbre-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-025",
+              "text": {
+                "ru": "Гласные как кнопки. Сигнал: Классы «а», «о», «у», «и». Применение: Менять форму персонажа разными гласными. Уровень доступа: Распознавание.",
+                "en": "Vowels are like buttons. Signal: Classes “a”, “o”, “y”, “i”. Application: Change the character's shape with different vowels. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-026",
+              "text": {
+                "ru": "Согласные и слоги. Сигнал: Ограниченный набор «па», «та», «ка». Применение: Получить несколько ударных команд без полноценного распознавания речи. Уровень доступа: Распознавание.",
+                "en": "Consonants and syllables. Signal: Limited set of “pa”, “ta”, “ka”. Application: Receive several shock commands without full speech recognition. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-027",
+              "text": {
+                "ru": "Звонкий и шумовой звук. Сигнал: Периодичность и спектр. Применение: Гулом включать магнит, шипением охлаждать механизм. Уровень доступа: Распознавание.",
+                "en": "Voiced and noisy sound. Signal: Periodicity and spectrum. Application: Turn on the magnet with a hum, cool the mechanism with hissing. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-028",
+              "text": {
+                "ru": "Свист и гудение. Сигнал: Тип устойчивого звука. Применение: Свистом звать спутника, гудением управлять тяжёлым механизмом. Уровень доступа: Распознавание.",
+                "en": "Whistling and buzzing. Signal: A type of sustained sound. Application: Call a companion by whistling, control a heavy mechanism by humming. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-029",
+              "text": {
+                "ru": "Шёпот и обычная речь. Сигнал: Акустические признаки манеры. Применение: Передавать скрытую команду только шёпотом. Уровень доступа: Распознавание.",
+                "en": "Whispers and normal speech. Signal: Acoustic cues of manner. Application: Transmit a hidden command only in a whisper. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-030",
+              "text": {
+                "ru": "Рык, смех и другие вокализации. Сигнал: Заранее выбранные классы неречевых звуков. Применение: Изображать персонажей или вызывать разные реакции существа. Уровень доступа: Распознавание.",
+                "en": "Roars, laughter and other vocalizations. Signal: Pre-selected classes of non-speech sounds. Application: Depict characters or cause different reactions of a creature. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-031",
+              "text": {
+                "ru": "Подражание образцу. Сигнал: Сходство с записанным эталоном. Применение: Изобразить птицу, робота или фантастическое животное. Уровень доступа: Распознавание.",
+                "en": "Imitation of a model. Signal: Similarity to the recorded reference. Application: Depict a bird, robot or fantastic animal. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-032",
+              "text": {
+                "ru": "Выразительная подача. Сигнал: Темп, высота, паузы, акценты. Применение: Играть роль диктора или актёра по явной шкале исполнения, без «чтения чувств». Уровень доступа: Распознавание.",
+                "en": "Expressive presentation. Signal: Tempo, pitch, pauses, accents. Application: Play the role of a speaker or actor on an explicit scale of performance, without “reading feelings”. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-breath",
+      "section": "section-1",
+      "title": {
+        "ru": "Дуновение и дыхание",
+        "en": "Blowing and breathing"
+      },
+      "description": {
+        "ru": "Микрофон слышит шум потока и дыхательные звуки. Он не является датчиком расхода воздуха или надёжным измерителем объёма лёгких.",
+        "en": "The microphone hears flow noise and breathing sounds. It is not an air flow sensor or a reliable lung volume meter."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9428773/"
+      ],
+      "branches": [
+        {
+          "id": "family-breath-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-033",
+              "text": {
+                "ru": "Короткое дуновение. Сигнал: Короткий шум потока. Применение: Задуть свечу, сдуть пыль, сорвать семена одуванчика. Уровень доступа: Распознавание.",
+                "en": "A short whiff. Signal: Short flow noise. Application: Blow out a candle, blow away dust, pick dandelion seeds. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-034",
+              "text": {
+                "ru": "Продолжительное дуновение. Сигнал: Удержание шума потока. Применение: Дуть в парус, крутить мельницу, поддерживать полёт. Уровень доступа: Распознавание.",
+                "en": "Continuous blowing. Signal: Flow noise hold. Application: Blow into a sail, turn a mill, maintain flight. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-035",
+              "text": {
+                "ru": "Условная сила дуновения. Сигнал: Калиброванная интенсивность шума. Применение: Менять силу игрового ветра без обещания измерить реальное давление. Уровень доступа: D.",
+                "en": "Conditional blow force. Signal: Calibrated noise intensity. Application: Change the strength of the game wind without promising to measure the real pressure. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-036",
+              "text": {
+                "ru": "Серия дуновений. Сигнал: Число и ритм воздушных импульсов. Применение: Работать мехами, накачивать виртуальный шар, отстукивать воздушный код. Уровень доступа: Распознавание.",
+                "en": "A series of blows. Signal: Number and rhythm of air pulses. Application: Operate bellows, pump up a virtual ball, tap out an air code. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-037",
+              "text": {
+                "ru": "Ровный выдох. Сигнал: Стабильность и длительность слышимого выдоха. Применение: Удерживать мыльный пузырь или равномерно вести кисть. Уровень доступа: Распознавание.",
+                "en": "Exhale evenly. Signal: Stability and duration of audible exhalation. Application: Hold a soap bubble or move a brush evenly. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-038",
+              "text": {
+                "ru": "Различение вдоха и выдоха. Сигнал: Классификация фаз слышимого дыхания. Применение: Раскрывать и закрывать игровой цветок в такт дыханию. Уровень доступа: Распознавание.",
+                "en": "Distinguishing between inhalation and exhalation. Signal: Classification of audible breathing phases. Application: Open and close the game flower in rhythm with breathing. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-039",
+              "text": {
+                "ru": "Цикл дыхания и паузы. Сигнал: Последовательность обнаруженных фаз. Применение: Следовать спокойному игровому ритму; отсутствие звука учитывать как паузу ввода. Уровень доступа: Распознавание.",
+                "en": "Cycle of breathing and pause. Signal: Sequence of detected phases. Application: Follow the calm rhythm of the game; the absence of sound should be considered as an input pause. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-040",
+              "text": {
+                "ru": "Форма воздушной струи. Сигнал: Различие согласованных образцов дуновения. Применение: Разделить широкий и узкий поток на две способности после обучения. Уровень доступа: R.",
+                "en": "Air stream shape. Signal: Distinction of consistent blow patterns. Application: Divide the wide and narrow stream into two abilities after training. Access level: R."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-commands",
+      "section": "section-1",
+      "title": {
+        "ru": "Словесные команды",
+        "en": "Verbal commands"
+      },
+      "description": {
+        "ru": "Ограниченный словарь обычно легче сделать предсказуемым. Поддержка языка и работы без сети зависит от выбранного распознавателя.",
+        "en": "A limited vocabulary is usually easier to make predictable. Language and offline support depends on the selected resolver."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://developer.apple.com/videos/play/wwdc2023/10101/"],
+      "branches": [
+        {
+          "id": "family-commands-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-041",
+              "text": {
+                "ru": "Команда одним словом. Сигнал: Совпадение с игровым словарём. Применение: Сказать «прыжок», «стоп», «щит» для прямого управления. Уровень доступа: Распознавание.",
+                "en": "Command in one word. Signal: Match with the game dictionary. Application: Say “jump”, “stop”, “shield” for direct control. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-042",
+              "text": {
+                "ru": "Выбор реплики. Сигнал: Распознавание одного из показанных ответов. Применение: Отвечать персонажу или выбирать пункт меню вслух. Уровень доступа: Распознавание.",
+                "en": "Selecting a replica. Signal: Recognizes one of the displayed responses. Application: Answer a character or select a menu item out loud. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-043",
+              "text": {
+                "ru": "Адресация по имени. Сигнал: Имя объекта или персонажа. Применение: Сказать, кому двигаться или какой предмет взять. Уровень доступа: Распознавание.",
+                "en": "Addressing by name. Signal: The name of the object or character. Application: Tell who to move or what item to take. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-044",
+              "text": {
+                "ru": "Действие с параметрами. Сигнал: Глагол, цель, число, направление. Применение: Приказать «два шага вправо» или «поверни красный вентиль». Уровень доступа: Распознавание.",
+                "en": "Action with parameters. Signal: Verb, target, number, direction. Application: Order “two steps to the right” or “turn the red valve.” Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-045",
+              "text": {
+                "ru": "Очередь команд. Сигнал: Распознанная последовательность. Применение: Заранее запрограммировать маршрут робота несколькими фразами. Уровень доступа: Распознавание.",
+                "en": "Command queue. Signal: Recognized sequence. Application: Pre-program the robot's route with a few phrases. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-046",
+              "text": {
+                "ru": "Условный приказ. Сигнал: Ограниченная конструкция условия и действия. Применение: Сказать «если увидишь врага, спрячься» и проверить исполнение. Уровень доступа: Распознавание.",
+                "en": "Conditional order. Signal: A limited construction of condition and action. Application: Say “if you see the enemy, hide” and check the execution. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-047",
+              "text": {
+                "ru": "Исправление и отмена. Сигнал: Команды коррекции в текущем контексте. Применение: Отменить приказ или уточнить цель голосом. Уровень доступа: Распознавание.",
+                "en": "Correction and cancellation. Signal: Correction commands in the current context. Application: Cancel an order or clarify the target by voice. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-048",
+              "text": {
+                "ru": "Слово активации. Сигнал: Ключевое слово перед основной командой. Применение: Обращаться к игровому помощнику, не превращая любую речь в действие. Уровень доступа: Распознавание.",
+                "en": "Activation word. Signal: Keyword before the main command. Application: Contact the game assistant without turning any speech into action. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-language",
+      "section": "section-1",
+      "title": {
+        "ru": "Смысл речи и языковые правила",
+        "en": "The meaning of speech and language rules"
+      },
+      "description": {
+        "ru": "Это слой правил над распознанной речью. Свободный диалог требует проверки, что ответ действительно меняет допустимое состояние игры.",
+        "en": "This is a layer of rules over the recognized speech. Free dialogue requires checking that the response actually changes a valid game state."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": ["https://developer.apple.com/videos/play/wwdc2023/10101/"],
+      "branches": [
+        {
+          "id": "family-language-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-049",
+              "text": {
+                "ru": "Ответ на вопрос. Сигнал: Смысл или допустимый вариант ответа. Применение: Играть в викторину, отвечать на загадки, проходить устный экзамен. Уровень доступа: Распознавание.",
+                "en": "Answer to the question. Signal: Meaning or acceptable answer option. Application: Play a quiz, answer riddles, take an oral exam. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-050",
+              "text": {
+                "ru": "Словесные цепочки. Сигнал: Слова, категории, буквы и связи. Применение: Играть в города, ассоциации, перечисление объектов категории. Уровень доступа: Распознавание.",
+                "en": "Word chains. Signal: Words, categories, letters and connections. Application: Play cities, associations, listing category objects. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-051",
+              "text": {
+                "ru": "Запрещённые слова. Сигнал: Наличие заданных слов и выражений. Применение: Объяснять предмет без слов из списка или проходить разговорную ловушку. Уровень доступа: Распознавание.",
+                "en": "Forbidden words. Signal: Presence of specified words and expressions. Application: Explain an object without words from a list or pass a conversational trap. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-052",
+              "text": {
+                "ru": "Произнесённая формула. Сигнал: Порядок слов или слогов. Применение: Колдовать паролями, собирать заклинания из изученных частей. Уровень доступа: Распознавание.",
+                "en": "The spoken formula. Cue: The order of words or syllables. Application: Conjure passwords, collect spells from studied parts. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-053",
+              "text": {
+                "ru": "Произношение и чтение. Сигнал: Соответствие заданному слову и фонемам. Применение: Повторять фразы, читать роль, осваивать звуки языка. Уровень доступа: Распознавание.",
+                "en": "Pronunciation and reading. Signal: Matching the given word and phonemes. Application: Repeat phrases, read a role, master the sounds of a language. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-054",
+              "text": {
+                "ru": "Вопросы персонажу. Сигнал: Намерение, тема, объект вопроса. Применение: Расспрашивать свидетеля и находить противоречия по игровым фактам. Уровень доступа: Распознавание.",
+                "en": "Questions for the character. Signal: Intent, topic, object of the question. Application: Question a witness and find contradictions in game facts. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-055",
+              "text": {
+                "ru": "Переговоры и аргументы. Сигнал: Предложение, условие, довод. Применение: Торговаться с NPC, приводить доказательства, заключать договор. Уровень доступа: Распознавание.",
+                "en": "Negotiations and arguments. Signal: Proposal, condition, argument. Application: Bargain with NPCs, provide evidence, enter into an agreement. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-056",
+              "text": {
+                "ru": "Совместный рассказ. Сигнал: События, персонажи и ограничения в реплике. Применение: Продолжать историю, менять мир описанием, придумывать решения. Уровень доступа: Распознавание.",
+                "en": "Shared story. Signal: Events, characters and constraints in a cue. Application: Continue the story, change the world with a description, come up with solutions. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-music",
+      "section": "section-1",
+      "title": {
+        "ru": "Музыкальное исполнение",
+        "en": "Musical performance"
+      },
+      "description": {
+        "ru": "Здесь звук оценивается как исполнение: мелодия, ритм, фактура и согласование с другими партиями.",
+        "en": "Here the sound is assessed as performance: melody, rhythm, texture and coordination with other parts."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder",
+        "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier"
+      ],
+      "branches": [
+        {
+          "id": "family-music-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-057",
+              "text": {
+                "ru": "Караоке. Сигнал: Ноты, длительности и начало фраз. Применение: Петь партию и получать раздельную оценку ритма и высоты. Уровень доступа: Анализ сигнала.",
+                "en": "Karaoke. Signal: Notes, durations and beginnings of phrases. Application: Sing a part and get a separate assessment of rhythm and pitch. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-058",
+              "text": {
+                "ru": "Напой мотив. Сигнал: Сходство мелодии с образцом. Применение: Открывать музыкальные замки или искать выдуманную песню по напеву. Уровень доступа: Распознавание.",
+                "en": "Sing the tune. Signal: The similarity of the melody to the sample. Application: Open musical locks or search for a fictitious song by tune. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-059",
+              "text": {
+                "ru": "Вокальная перкуссия. Сигнал: Классы ударных звуков рта. Применение: Играть барабанную партию битбоксом. Уровень доступа: Распознавание.",
+                "en": "Vocal percussion. Signal: Classes of percussive mouth sounds. Application: Play a drum part with a beatbox. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-060",
+              "text": {
+                "ru": "Реальный инструмент. Сигнал: Ноты или акустические события инструмента. Применение: Использовать гитару, флейту или клавиши как контроллер. Уровень доступа: Распознавание.",
+                "en": "A real tool. Signal: The notes or acoustic events of an instrument. Application: Use a guitar, flute or keys as a controller. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-061",
+              "text": {
+                "ru": "Проверка строя. Сигнал: Основная частота отдельной ноты. Применение: Настраивать виртуальные струны и учиться слышать интервалы. Уровень доступа: Анализ сигнала.",
+                "en": "Checking the system. Signal: The fundamental frequency of a single note. Application: Tuning virtual strings and learning to hear intervals. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-062",
+              "text": {
+                "ru": "Гармоническая совместимость. Сигнал: Нота относительно текущего аккорда. Применение: Подбирать подходящие тона и достраивать сопровождение. Уровень доступа: Распознавание.",
+                "en": "Harmonic compatibility. Signal: The note relative to the current chord. Application: Select suitable tones and complete accompaniment. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-063",
+              "text": {
+                "ru": "Музыкальный диалог. Сигнал: Чередование вопроса и ответа мотивами. Применение: Отвечать существу музыкальной фразой и развивать мотив. Уровень доступа: Распознавание.",
+                "en": "Musical dialogue. Signal: Alternating question and answer with motives. Application: Answer the creature with a musical phrase and develop the motive. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-064",
+              "text": {
+                "ru": "Рисунок исполнения. Сигнал: Сочетание ритма, динамики и артикуляции. Применение: Разным исполнением одной фразы создавать разные эффекты. Уровень доступа: Распознавание.",
+                "en": "Execution drawing. Signal: A combination of rhythm, dynamics and articulation. Application: Different executions of one phrase can create different effects. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-body-objects",
+      "section": "section-1",
+      "title": {
+        "ru": "Звуки тела и предметов",
+        "en": "Sounds of the body and objects"
+      },
+      "description": {
+        "ru": "Микрофон получает акустический результат действия. Он не всегда определяет, какой именно жест или предмет его вызвал.",
+        "en": "The microphone receives the acoustic result of the action. He does not always determine what particular gesture or object caused it."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier"
+      ],
+      "branches": [
+        {
+          "id": "family-body-objects-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-065",
+              "text": {
+                "ru": "Хлопки ладонями. Сигнал: Резкий характерный импульс. Применение: Управлять прыжком, отбивать ритм, начинать раунд. Уровень доступа: Распознавание.",
+                "en": "Palm clapping. Signal: Sharp characteristic impulse. Application: Control the jump, beat the rhythm, start the round. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-066",
+              "text": {
+                "ru": "Щелчки пальцами. Сигнал: Короткий высокочастотный импульс. Применение: Стрелять, переключать режим, собирать музыкальную цепочку. Уровень доступа: Распознавание.",
+                "en": "Finger snapping. Signal: Short high frequency pulse. Application: Shoot, switch modes, collect a musical chain. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-067",
+              "text": {
+                "ru": "Щелчки языком и губами. Сигнал: Набор звуков рта. Применение: Давать тихие команды или играть персонажем без слов. Уровень доступа: Распознавание.",
+                "en": "Clicking tongue and lips. Signal: A set of mouth sounds. Application: Give quiet commands or play a character without words. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-068",
+              "text": {
+                "ru": "Стук по столу. Сигнал: Время и характер ударов. Применение: Использовать стол как барабан или вводить код. Уровень доступа: Анализ сигнала.",
+                "en": "Knocking on the table. Signal: The time and nature of the blows. Application: Use the table as a drum or enter a code. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-069",
+              "text": {
+                "ru": "Шаги и притопы. Сигнал: Повторяющиеся удары и их рисунок. Применение: Маршировать в ритм; фактические шаги при необходимости подтверждать IMU. Уровень доступа: Распознавание.",
+                "en": "Steps and stomps. Signal: Repeated beats and their pattern. Application: March to the rhythm; actual steps if necessary to confirm the IMU. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-070",
+              "text": {
+                "ru": "Шуршание и трение. Сигнал: Продолжительный шумовой рисунок. Применение: Пробуждать существо шорохом бумаги или рисовать звуковую текстуру. Уровень доступа: Распознавание.",
+                "en": "Rustling and friction. Signal: Continuous noise pattern. Application: Awaken a creature with the rustle of paper or draw a sound texture. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-071",
+              "text": {
+                "ru": "Звон и щелчки предметов. Сигнал: Класс звука реального предмета. Применение: Использовать связку ключей, колокольчик или крышку как игровой инструмент. Уровень доступа: Распознавание.",
+                "en": "Ringing and clicking of objects. Signal: The sound class of a real object. Application: Use a bunch of keys, a bell or a cap as a playing tool. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-072",
+              "text": {
+                "ru": "Переливание и сыпучие материалы. Сигнал: Характерный звук процесса. Применение: Собирать акустические ингредиенты или озвучивать алхимический рецепт. Уровень доступа: Распознавание.",
+                "en": "Transfer and bulk materials. Signal: The characteristic sound of the process. Application: Collect acoustic ingredients or voice an alchemical recipe. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-device",
+      "section": "section-1",
+      "title": {
+        "ru": "Контакт с телефоном и микрофоном",
+        "en": "Contact with the phone and microphone"
+      },
+      "description": {
+        "ru": "Чехол, хват, размещение отверстий и обработка входа сильно меняют результат. Специальные аксессуары указаны отдельно.",
+        "en": "The case, grip, hole placement, and entry treatment make a big difference in the outcome. Special accessories are listed separately."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://hcii.cmu.edu/hcii-impacts/tapsense",
+        "https://www.cmu.edu/news/stories/archives/2015/april/acoustruments-for-handheld-devices.html"
+      ],
+      "branches": [
+        {
+          "id": "family-device-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-073",
+              "text": {
+                "ru": "Прикрывание микрофона. Сигнал: Изменение уровня и спектра при перекрытии. Применение: Закрыть игровую «форточку», спрятать сигнал, включить режим тишины. Уровень доступа: D.",
+                "en": "Covering the microphone. Signal: Change in level and spectrum when overlapped. Application: Close the game “window”, hide the signal, turn on the silence mode. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-074",
+              "text": {
+                "ru": "Прикрыть и отпустить. Сигнал: Последовательность изменений спектра. Применение: Работать акустическим клапаном или передавать условный код. Уровень доступа: D.",
+                "en": "Cover and release. Signal: Sequence of spectrum changes. Application: Operate an acoustic valve or transmit a code. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-075",
+              "text": {
+                "ru": "Касание рядом с микрофоном. Сигнал: Контактный импульс через корпус. Применение: Получить дополнительную кнопку на краю устройства после калибровки. Уровень доступа: D.",
+                "en": "Touching near the microphone. Signal: Contact impulse through the housing. Application: Get an additional button on the edge of the device after calibration. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-076",
+              "text": {
+                "ru": "Стук по разным частям корпуса. Сигнал: Различие акустических откликов. Применение: Разделить крышку и боковую грань на два игровых действия. Уровень доступа: R.",
+                "en": "Knocking on different parts of the body. Signal: Difference in acoustic responses. Application: Divide the cover and side into two game actions. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-077",
+              "text": {
+                "ru": "Тип касания экрана. Сигнал: Различие подушечки, ногтя, костяшки. Применение: Связать лёгкое действие с пальцем, тяжёлое с костяшкой; нужен тач-ввод. Уровень доступа: D.",
+                "en": "Screen touch type. Signal: Distinction between pad, nail, knuckle. Application: Associate a light action with a finger, a heavy action with a knuckle; need touch input. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-078",
+              "text": {
+                "ru": "Трение по корпусу. Сигнал: Шум и его временной профиль. Применение: «Погладить» игровое существо или разогреть виртуальный предмет. Уровень доступа: D.",
+                "en": "Body friction. Signal: Noise and its time profile. Application: “Stroke” a game creature or warm up a virtual object. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-079",
+              "text": {
+                "ru": "Телефон на поверхности. Сигнал: Изменение передаваемых вибраций и отклика. Применение: Преобразить стол в игровую поверхность после настройки конкретного устройства. Уровень доступа: R.",
+                "en": "Phone on the surface. Signal: Change in transmitted vibrations and response. Application: Convert a table into a gaming surface after customizing a specific device. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-080",
+              "text": {
+                "ru": "Пассивный акустический аксессуар. Сигнал: Отклик канала между динамиком и микрофоном. Применение: Добавить трубку, клапан или насадку с игровым регулятором. Уровень доступа: R.",
+                "en": "Passive acoustic accessory. Signal: Channel response between speaker and microphone. Application: Add a tube, valve or nozzle with a game regulator. Access level: R."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-events",
+      "section": "section-1",
+      "title": {
+        "ru": "Распознавание внешних событий",
+        "en": "External Event Recognition"
+      },
+      "description": {
+        "ru": "Классификатор выбирает из обученных категорий с некоторой уверенностью. Нужен вариант «не распознано».",
+        "en": "The classifier selects from the trained categories with some confidence. You need the “not recognized” option."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier"
+      ],
+      "branches": [
+        {
+          "id": "family-events-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-081",
+              "text": {
+                "ru": "Событие заданного типа. Сигнал: Класс «звонок», «хлопок», «лай». Применение: Запускать игровое событие при появлении выбранного звука. Уровень доступа: Распознавание.",
+                "en": "An event of a given type. Signal: Class “bell”, “clap”, “bark”. Usage: Trigger a game event when the selected sound appears. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-082",
+              "text": {
+                "ru": "Звуковой поиск предметов. Сигнал: Подтверждённые категории звуков. Применение: Собирать коллекцию: найти шорох бумаги, звон металла, плеск. Уровень доступа: Распознавание.",
+                "en": "Sound search for objects. Signal: Confirmed sound categories. Application: Collect a collection: find the rustle of paper, the clink of metal, splashing. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-083",
+              "text": {
+                "ru": "Распознавание животных. Сигнал: Сходство с классами голосов животных. Применение: Вести звуковой дневник или искать подходящего виртуального спутника. Уровень доступа: Распознавание.",
+                "en": "Animal recognition. Signal: Similarity to classes of animal voices. Application: Keep a sound diary or search for a suitable virtual companion. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-084",
+              "text": {
+                "ru": "Материал по удару. Сигнал: Тембр отклика в контролируемых условиях. Применение: Сравнивать дерево, металл и стекло в исследовательской головоломке. Уровень доступа: Распознавание.",
+                "en": "Impact material. Signal: Timbre response under controlled conditions. Application: Compare wood, metal and glass in an exploration puzzle. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-085",
+              "text": {
+                "ru": "Состояние механизма. Сигнал: Отклонение от записанных игровых образцов. Применение: По звуку учебного макета искать, какой механизм работает иначе. Уровень доступа: Распознавание.",
+                "en": "Condition of the mechanism. Signal: Deviation from recorded game patterns. Application: Based on the sound of the educational model, look for which mechanism works differently. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-086",
+              "text": {
+                "ru": "Последовательность событий. Сигнал: Порядок классов и временные связи. Применение: Зачесть рецепт «стук, звон, шорох» или восстановить короткую сцену. Уровень доступа: Распознавание.",
+                "en": "Sequence of events. Signal: Class order and temporal connections. Application: Read the recipe for “knock, ringing, rustling” or restore a short scene. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-087",
+              "text": {
+                "ru": "Своя звуковая метка. Сигнал: Сходство с образцом, записанным игроком. Применение: Назначить любой удобный домашний звук на игровую команду. Уровень доступа: Распознавание.",
+                "en": "Your own sound mark. Signal: Similarity to the sample recorded by the player. Application: Assign any convenient home sound to a game command. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-088",
+              "text": {
+                "ru": "Необычный звук. Сигнал: Отклонение от изученного фона. Применение: Играть в сторожа или исследователя, реагирующего на новые события. Уровень доступа: Распознавание.",
+                "en": "Unusual sound. Signal: Deviation from the learned background. Application: Play a watchman or researcher reacting to new events. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-ambience",
+      "section": "section-1",
+      "title": {
+        "ru": "Фон и акустическая обстановка",
+        "en": "Background and acoustic environment"
+      },
+      "description": {
+        "ru": "Фон становится входом правил, а не просто помехой. Источники и причины шума не всегда можно установить.",
+        "en": "The background becomes an input to the rules rather than just a nuisance. The sources and causes of noise cannot always be determined."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder",
+        "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier"
+      ],
+      "branches": [
+        {
+          "id": "family-ambience-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-089",
+              "text": {
+                "ru": "Шум как ресурс. Сигнал: Общий относительный уровень окружения. Применение: Городской шум заряжает станцию, а тихая комната замедляет её. Уровень доступа: Анализ сигнала.",
+                "en": "Noise as a resource. Signal: Overall relative ambient level. Application: City noise charges the station, and a quiet room slows it down. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-090",
+              "text": {
+                "ru": "Шум как опасность. Сигнал: Превышение адаптивного порога. Применение: Реальные звуки повышают тревогу противников в хорроре. Уровень доступа: Анализ сигнала.",
+                "en": "Noise is like danger. Alarm: Adaptive threshold exceeded. Application: Real sounds increase the anxiety of opponents in horror. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-091",
+              "text": {
+                "ru": "Тихие окна. Сигнал: Отрезки с низким фоновым уровнем. Применение: Разрешать действие только в моменты акустического затишья. Уровень доступа: Анализ сигнала.",
+                "en": "Quiet windows. Signal: Sections with low background level. Application: Allow action only in moments of acoustic calm. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-092",
+              "text": {
+                "ru": "Изменение фона. Сигнал: Отличие текущих признаков от предыдущих. Применение: Перестраивать погоду или биом при смене звуковой обстановки. Уровень доступа: Распознавание.",
+                "en": "Change the background. Signal: The difference between current signs and previous ones. Application: Rebuild the weather or biome when the sound environment changes. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-093",
+              "text": {
+                "ru": "Тип звуковой среды. Сигнал: Набор вероятных категорий. Применение: Предлагать различный игровой контент в шумной или спокойной среде. Уровень доступа: Распознавание.",
+                "en": "Type of sound environment. Signal: A set of likely categories. Application: Offer various gaming content in noisy or quiet environments. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-094",
+              "text": {
+                "ru": "Соотношение голоса и фона. Сигнал: Оценка различимости речи. Применение: Давать задачу говорить разборчиво на фоне помех. Уровень доступа: Распознавание.",
+                "en": "Voice to background ratio. Signal: Speech intelligibility assessment. Application: Give the task of speaking clearly against a background of interference. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-095",
+              "text": {
+                "ru": "Маскировка игрового сигнала. Сигнал: Слышимость целевого звука среди помех. Применение: Вести поиск по маяку, который скрывается в реальном шуме. Уровень доступа: Распознавание.",
+                "en": "Masking the game signal. Signal: The audibility of the target sound among noise. Application: Search for a beacon that is hidden in real noise. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-096",
+              "text": {
+                "ru": "Акустический отпечаток сессии. Сигнал: Статистика спектра и событий за время. Применение: Генерировать палитру, существ или музыку из звуков конкретного сеанса. Уровень доступа: Распознавание.",
+                "en": "Acoustic fingerprint of the session. Signal: Spectrum and event statistics over time. Application: Generate a palette, creatures or music from the sounds of a specific session. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-space",
+      "section": "section-1",
+      "title": {
+        "ru": "Положение и несколько микрофонов",
+        "en": "Position and multiple microphones"
+      },
+      "description": {
+        "ru": "Физическое направление и дистанция требуют подходящих каналов или контролируемой процедуры. Обычный моносигнал их не гарантирует.",
+        "en": "Physical direction and distance require suitable channels or a controlled procedure. A regular mono signal does not guarantee them."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/reference/android/media/AudioRecord#getActiveMicrophones()",
+        "https://developer.apple.com/library/archive/qa/qa1799/"
+      ],
+      "branches": [
+        {
+          "id": "family-space-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-097",
+              "text": {
+                "ru": "Сторона источника. Сигнал: Разность времени и уровня между каналами. Применение: Выбирать левую или правую цель реальным звуком. Уровень доступа: D.",
+                "en": "Source side. Signal: Time and level difference between channels. Application: Select left or right target with real sound. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-098",
+              "text": {
+                "ru": "Направление источника. Сигнал: Оценка угла по массиву микрофонов. Применение: Использовать телефон как акустический компас. Уровень доступа: R.",
+                "en": "Source direction. Signal: Angle estimation from microphone array. Application: Use your phone as an acoustic compass. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-099",
+              "text": {
+                "ru": "Приближение и удаление. Сигнал: Изменения сигнала известного источника. Применение: Двигать телефон к маяку в игре «горячо-холодно». Уровень доступа: D.",
+                "en": "Approaching and moving away. Signal: Changes in a known source signal. Application: Move the phone to the lighthouse in the game \"hot and cold\". Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-100",
+              "text": {
+                "ru": "Направление через сканирование. Сигнал: Изменения при повороте телефона и данные IMU. Применение: Вращать телефон, чтобы искать наиболее различимый сигнал. Уровень доступа: D.",
+                "en": "Direction through scanning. Signal: Changes when the phone is rotated and IMU data. Application: Rotate the phone to search for the most distinguishable signal. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-101",
+              "text": {
+                "ru": "Выбор переднего или заднего ввода. Сигнал: Поддерживаемые источники и диаграммы. Применение: Переключать игровой «приёмник» между сторонами устройства. Уровень доступа: D.",
+                "en": "Selects front or rear input. Signal: Supported sources and charts. Application: Switch the game “receiver” between the sides of the device. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-102",
+              "text": {
+                "ru": "Фокус на источнике. Сигнал: Направленная обработка доступных каналов. Применение: Выделять один из заранее размещённых звуковых маяков. Уровень доступа: R.",
+                "en": "Focus on the source. Signal: Directional processing of available channels. Application: Select one of the pre-placed sound beacons. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-103",
+              "text": {
+                "ru": "Траектория источника. Сигнал: Изменение межканальных признаков во времени. Применение: Проводить звучащий предмет вокруг телефона как игровой жест. Уровень доступа: R.",
+                "en": "Source trajectory. Signal: Change of inter-channel features over time. Application: Move a sounding object around the phone as a game gesture. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-104",
+              "text": {
+                "ru": "Отклик помещения. Сигнал: Отражения контрольного импульса. Применение: Сравнивать игровые акустические профили комнаты после калибровки. Уровень доступа: R.",
+                "en": "Room response. Signal: Reflection of the control pulse. Application: Compare gaming room acoustic profiles after calibration. Access level: R."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-sonar",
+      "section": "section-1",
+      "title": {
+        "ru": "Динамик и микрофон как зонд",
+        "en": "Speaker and microphone as an acoustic probe"
+      },
+      "description": {
+        "ru": "Это активное акустическое зондирование. Телефон излучает известный сигнал и анализирует отражение; поддержка, точность и слышимость требуют проверки.",
+        "en": "This is active acoustic sensing. The phone emits a known signal and analyzes the reflection; support, accuracy and audibility require testing."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://homes.cs.washington.edu/~gshyam/Papers/fingerio.pdf",
+        "https://www.cmu.edu/news/stories/archives/2015/april/acoustruments-for-handheld-devices.html"
+      ],
+      "branches": [
+        {
+          "id": "family-sonar-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-105",
+              "text": {
+                "ru": "Бесконтактная кнопка. Сигнал: Изменение отражения от близкой руки. Применение: Взмахом над телефоном включать игровое действие. Уровень доступа: R.",
+                "en": "Contactless button. Signal: Change in reflection from a close hand. Application: By waving over the phone, activate the game action. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-106",
+              "text": {
+                "ru": "Приближение ладони. Сигнал: Оценка изменения дистанции до отражателя. Применение: Управлять виртуальным терменвоксом без касания. Уровень доступа: R.",
+                "en": "Approaching the palm. Signal: Estimation of changes in distance to the reflector. Application: Control a virtual theremin without touching. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-107",
+              "text": {
+                "ru": "Движение к телефону и от него. Сигнал: Доплеровский или фазовый признак. Применение: Толкать и тянуть игровой объект рукой в воздухе. Уровень доступа: R.",
+                "en": "Movement to and from the telephone. Signal: Doppler or phase signature. Application: Push and pull a game object with your hand in the air. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-108",
+              "text": {
+                "ru": "Траектория пальца. Сигнал: Изменения эха на нескольких каналах. Применение: Рисовать рядом с экраном или расширить рабочую область. Уровень доступа: R.",
+                "en": "Finger trajectory. Signal: Echo changes on multiple channels. Application: Draw next to the screen or expand the work area. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-109",
+              "text": {
+                "ru": "Круговой или боковой жест. Сигнал: Классификация траекторий отражателя. Применение: Переключать страницы или запускать круговое заклинание. Уровень доступа: R.",
+                "en": "Circular or side gesture. Signal: Classification of reflector trajectories. Application: Switch pages or cast a circular spell. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-110",
+              "text": {
+                "ru": "Изменение препятствий. Сигнал: Разница отражений контрольного сигнала. Применение: Замечать появление объекта в небольшой игровой зоне. Уровень доступа: R.",
+                "en": "Changing obstacles. Signal: The difference in reflections of the reference signal. Application: Notice the appearance of an object in a small play area. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-111",
+              "text": {
+                "ru": "Акустический резонатор. Сигнал: Изменение отклика подготовленного объекта. Применение: Собирать музыкальные замки из трубок и полостей. Уровень доступа: R.",
+                "en": "Acoustic resonator. Signal: Change in response of a prepared object. Application: Assemble musical castles from tubes and cavities. Access level: R."
+              }
+            },
+            {
+              "id": "variant-mic-112",
+              "text": {
+                "ru": "Дистанция между устройствами. Сигнал: Время прохождения звука с учётом задержек и синхронизации. Применение: Решать кооперативную задачу с взаимным расположением телефонов. Уровень доступа: R.",
+                "en": "Distance between devices. Signal: Sound travel time, taking into account delays and synchronization. Application: Solve a cooperative problem with the mutual arrangement of telephones. Access level: R."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-recording",
+      "section": "section-1",
+      "title": {
+        "ru": "Запись как игровой материал",
+        "en": "Recording as game material"
+      },
+      "description": {
+        "ru": "Запись, воспроизведение и обработка образуют механики даже без распознавания смысла. Сохранение и публикация являются отдельными решениями.",
+        "en": "Recording, playback and processing form mechanics even without recognizing the meaning. Saving and publishing are separate decisions."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder"
+      ],
+      "branches": [
+        {
+          "id": "family-recording-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-113",
+              "text": {
+                "ru": "Сбор сэмплов. Сигнал: Записанный короткий фрагмент. Применение: Коллекционировать звуки, собирать инвентарь из акустических находок. Уровень доступа: Анализ сигнала.",
+                "en": "Collection of samples. Signal: A short fragment recorded. Application: Collect sounds, collect inventory from acoustic finds. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-114",
+              "text": {
+                "ru": "Озвучивание персонажа. Сигнал: Реплики игрока, привязанные к событиям. Применение: Дать герою собственные возгласы и реплики. Уровень доступа: Анализ сигнала.",
+                "en": "Character voicing. Signal: Player responses tied to events. Application: Give the hero his own exclamations and remarks. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-115",
+              "text": {
+                "ru": "Повтор и сравнение. Сигнал: Сходство записи с новым исполнением. Применение: Запомнить свой сигнал, затем воспроизвести его для решения задачи. Уровень доступа: Распознавание.",
+                "en": "Repetition and comparison. Signal: Similarity between the recording and the new performance. Application: Remember your signal, then reproduce it to solve a problem. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-116",
+              "text": {
+                "ru": "Запись как приманка. Сигнал: Воспроизведение найденного или созданного сэмпла. Применение: Отвлекать противника, отвечать существу, имитировать событие. Уровень доступа: Анализ сигнала.",
+                "en": "Recording as bait. Signal: Plays a found or created sample. Application: Distract the enemy, respond to a creature, simulate an event. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-117",
+              "text": {
+                "ru": "Монтаж звуковой цепочки. Сигнал: Порядок и границы фрагментов. Применение: Собрать аудиофразу, музыкальный ключ или последовательность событий. Уровень доступа: Анализ сигнала.",
+                "en": "Installation of a sound chain. Signal: Order and boundaries of fragments. Application: Collect an audio phrase, musical key or sequence of events. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-118",
+              "text": {
+                "ru": "Преобразование записи. Сигнал: Скорость, высота, направление, фильтры. Применение: Преобразить звук в ключ, голос существа или читаемую подсказку. Уровень доступа: Анализ сигнала.",
+                "en": "Record conversion. Signal: Speed, altitude, direction, filters. Application: Convert sound into a key, a creature's voice or a readable hint. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-119",
+              "text": {
+                "ru": "Петля и наложение. Сигнал: Повтор фрагментов и смешение дорожек. Применение: Собирать собственное сопровождение и решать луперные головоломки. Уровень доступа: Анализ сигнала.",
+                "en": "Loop and overlap. Signal: Repeat fragments and mix tracks. Application: Collect your own accompaniment and solve looper puzzles. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-120",
+              "text": {
+                "ru": "Звук порождает объект. Сигнал: Правило преобразования признаков или записи. Применение: Создавать ландшафт, оружие, существ или рисунок из своего звука. Уровень доступа: Распознавание.",
+                "en": "Sound creates an object. Signal: A rule for transforming features or recording. Application: Create a landscape, weapon, creatures or picture from your sound. Access level: Recognition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-codes",
+      "section": "section-1",
+      "title": {
+        "ru": "Акустические коды и обмен данными",
+        "en": "Acoustic codes and data exchange"
+      },
+      "description": {
+        "ru": "Данные передаются либо рисунком сигналов, либо цифровым звуковым протоколом. Это отдельная задача от понимания речи.",
+        "en": "Data is transmitted either by a pattern of signals or by a digital audio protocol. This is a separate task from understanding speech."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://github.com/ggerganov/ggwave",
+        "https://developer.apple.com/shazamkit/"
+      ],
+      "branches": [
+        {
+          "id": "family-codes-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-121",
+              "text": {
+                "ru": "Азбука коротких и длинных сигналов. Сигнал: Длительности импульсов и пауз. Применение: Передавать сообщения Морзе, вскрывать звуковые замки. Уровень доступа: Анализ сигнала.",
+                "en": "The ABC of short and long signals. Signal: Duration of pulses and pauses. Application: Transmit Morse messages, open sound locks. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-122",
+              "text": {
+                "ru": "Тональный код. Сигнал: Последовательность частот. Применение: Использовать DTMF или выдуманную систему тональных символов. Уровень доступа: Анализ сигнала.",
+                "en": "Tone code. Signal: A sequence of frequencies. Application: Use DTMF or fictitious tone symbol system. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-123",
+              "text": {
+                "ru": "Короткий пакет через звук. Сигнал: Декодируемый цифровой сигнал. Применение: Передать seed уровня, код комнаты или небольшой игровой токен. Уровень доступа: D.",
+                "en": "Short packet through sound. Signal: Decodable digital signal. Application: Transfer a level seed, room code or small game token. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-124",
+              "text": {
+                "ru": "Звуковой маяк. Сигнал: Известный код в окружающем аудио. Применение: Открывать контент при обнаружении подготовленного маяка. Уровень доступа: D.",
+                "en": "Sound beacon. Signal: Known code in ambient audio. Usage: Open content when a prepared beacon is detected. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-125",
+              "text": {
+                "ru": "Узнать запись. Сигнал: Аудиоотпечаток готового фрагмента. Применение: Узнавать подготовленную песню или реплику и выдавать связанную задачу. Уровень доступа: Распознавание.",
+                "en": "Find out the record. Signal: Audio fingerprint of the finished fragment. Application: Recognize a prepared song or cue and issue a related task. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-126",
+              "text": {
+                "ru": "Второй экран. Сигнал: Позиция внутри распознанной записи. Применение: Синхронизировать телефон с фильмом, аудиоспектаклем или настольной игрой. Уровень доступа: Распознавание.",
+                "en": "Second screen. Signal: Position within the recognized record. Application: Synchronize your phone with a movie, audio play or board game. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-127",
+              "text": {
+                "ru": "Звуковой обмен ходом. Сигнал: Пакет от одного телефона другому. Применение: Передавать локальный ход без ввода кода; не обещать высокую скорость. Уровень доступа: D.",
+                "en": "Sound exchange of progress. Signal: A packet from one phone to another. Application: Transmit local move without entering a code; do not promise high speed. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-128",
+              "text": {
+                "ru": "Собери сообщение из эфира. Сигнал: Несколько распознанных пакетов или меток. Применение: Объединять фрагменты, полученные у разных подготовленных источников. Уровень доступа: D.",
+                "en": "Collect a message from the ether. Signal: Multiple recognized packets or tags. Application: Combine fragments obtained from different prepared sources. Access level: D."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-social",
+      "section": "section-1",
+      "title": {
+        "ru": "Несколько игроков и общение",
+        "en": "Multiple players and communication"
+      },
+      "description": {
+        "ru": "Это правила поверх микрофонного ввода. Сетевая близость и роли могут определяться игрой, а не физической локализацией звука.",
+        "en": "These are the rules on top of microphone input. Network proximity and roles may be determined by play rather than physical sound localization."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder",
+        "https://github.com/pyannote/pyannote-audio"
+      ],
+      "branches": [
+        {
+          "id": "family-social-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-129",
+              "text": {
+                "ru": "Различение игроков по голосу. Сигнал: Сходство с зарегистрированными голосовыми образцами. Применение: Назначать реплики персонажам; возможны ошибки, это игровая персонализация, а не защита доступа. Уровень доступа: Распознавание.",
+                "en": "Distinguishing players by voice. Signal: Similarity to recorded voice samples. Application: Assign lines to characters; errors are possible, this is game personalization, not access protection. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-130",
+              "text": {
+                "ru": "Вопрос и ответ. Сигнал: Парные действия участников. Применение: Один игрок подаёт мотив или код, другой отвечает подходящим сигналом. Уровень доступа: Распознавание.",
+                "en": "Question and answer. Signal: Paired actions of participants. Application: One player gives a motive or code, the other responds with a suitable signal. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-131",
+              "text": {
+                "ru": "Синхронное действие. Сигнал: Время событий на отдельных устройствах. Применение: Одновременно хлопнуть или произнести слово для общего действия. Уровень доступа: D.",
+                "en": "Synchronized action. Signal: Time of events on individual devices. Application: Clap or say a word at the same time for a general action. Access Level: D."
+              }
+            },
+            {
+              "id": "variant-mic-132",
+              "text": {
+                "ru": "Общий шумовой ресурс. Сигнал: Суммарный уровень в одном микрофоне. Применение: Совместно заряжать двигатель, удерживая общую громкость в диапазоне. Уровень доступа: Анализ сигнала.",
+                "en": "General noise resource. Signal: Total level in one microphone. Application: Charge the engine together while keeping the overall volume within the range. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-133",
+              "text": {
+                "ru": "Раздельные вокальные роли. Сигнал: Очерёдность или распознаваемые партии. Применение: Делить исполнение на бас, ритм и команды; перекрывающиеся голоса сложнее. Уровень доступа: Распознавание.",
+                "en": "Separate vocal roles. Signal: Sequence or recognized parts. Application: Divide performance into bass, rhythm and commands; overlapping voices are more difficult. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-134",
+              "text": {
+                "ru": "Ограниченный голосовой канал. Сигнал: Передача записанной речи по игровым правилам. Применение: Играть в рацию с задержкой, короткими окнами эфира и помехами. Уровень доступа: D.",
+                "en": "Limited voice channel. Signal: Transmission of recorded speech according to game rules. Application: Play walkie-talkie with delay, short air windows and interference. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-135",
+              "text": {
+                "ru": "Пространственный голосовой чат. Сигнал: Микрофонный поток и игровые координаты. Применение: Слышать товарищей по расстоянию между персонажами. Уровень доступа: D.",
+                "en": "Spatial voice chat. Signal: Microphone stream and game coordinates. Application: Hear comrades at a distance between characters. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-136",
+              "text": {
+                "ru": "Социальная дедукция. Сигнал: Живой разговор и решения людей. Применение: Обсуждать алиби, убеждать, договариваться; выводы делают игроки. Уровень доступа: D.",
+                "en": "Social deduction. Signal: Live conversation and people's decisions. Application: Discuss alibis, persuade, negotiate; the players make the conclusions. Access level: D."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-hybrid",
+      "section": "section-1",
+      "title": {
+        "ru": "Сочетание с другими вводами",
+        "en": "Combination with other inputs"
+      },
+      "description": {
+        "ru": "Эти приёмы требуют дополнительных датчиков, интерфейсов или правил. Микрофон даёт только свою часть данных.",
+        "en": "These techniques require additional sensors, interfaces, or rules. The microphone provides only its part of the data."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.android.com/media/platform/mediarecorder",
+        "https://www.w3.org/TR/mediacapture-streams/"
+      ],
+      "branches": [
+        {
+          "id": "family-hybrid-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-mic-137",
+              "text": {
+                "ru": "Коснуться и сказать. Сигнал: Выбор касанием и голосовая команда. Применение: Тапом указать объект, вслух задать действие. Уровень доступа: Распознавание.",
+                "en": "Touch and say. Signal: Touch selection and voice command. Application: Tap to indicate an object, set an action out loud. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-138",
+              "text": {
+                "ru": "Наклонить и подуть. Сигнал: IMU для направления, шум потока для силы. Применение: Направлять парусник наклоном и разгонять выдохом. Уровень доступа: D.",
+                "en": "Tilt and blow. Signal: IMU for direction, flow noise for force. Application: Direct the sailboat by tilting and accelerate by exhaling. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-139",
+              "text": {
+                "ru": "Навести камеру и озвучить. Сигнал: Камера для цели, звук для действия. Применение: Кормить или будить AR-существо реальным звуком. Уровень доступа: D.",
+                "en": "Point the camera and voice. Signal: Camera for target, sound for action. Application: Feed or wake up an AR creature with real sound. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-140",
+              "text": {
+                "ru": "Зажать и говорить. Сигнал: Кнопка задаёт окно микрофонного ввода. Применение: Колдовать голосом только пока удерживается руна. Уровень доступа: Анализ сигнала.",
+                "en": "Hold and speak. Signal: The button sets the microphone input window. Application: Cast a spell with your voice only while the rune is held. Access level: Signal analysis."
+              }
+            },
+            {
+              "id": "variant-mic-141",
+              "text": {
+                "ru": "Звук выбирает, жест подтверждает. Сигнал: Распознанный вариант и явное подтверждение. Применение: Произнести название предмета и провести пальцем для применения. Уровень доступа: Распознавание.",
+                "en": "The sound chooses, the gesture confirms. Signal: Recognized variant and explicit confirmation. Application: Say the name of the item and swipe it with your finger to apply. Access level: Recognition."
+              }
+            },
+            {
+              "id": "variant-mic-142",
+              "text": {
+                "ru": "Профиль гарнитуры. Сигнал: Другой аудиомаршрут и его задержка. Применение: Предложить режим с близким микрофоном; отдельно откалибровать ритм и дыхание. Уровень доступа: D.",
+                "en": "Headset profile. Signal: Another audio route and its delay. Application: Offer close microphone mode; separately calibrate rhythm and breathing. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-143",
+              "text": {
+                "ru": "Микрофон и движение. Сигнал: Звуковое событие и данные IMU. Применение: Отличать игровой взмах со звуком от случайной помехи. Уровень доступа: D.",
+                "en": "Microphone and movement. Signal: Audio event and IMU data. Application: Distinguish a game swing with sound from random interference. Access level: D."
+              }
+            },
+            {
+              "id": "variant-mic-144",
+              "text": {
+                "ru": "Записанный голос в касании. Сигнал: Запись плюс управление воспроизведением. Применение: Играть фразой как инструментом: скретчить, растягивать, ставить на паузу. Уровень доступа: Анализ сигнала.",
+                "en": "Recorded voice in touch. Signal: Recording plus playback control. Application: Play a phrase as an instrument: scratch, stretch, pause. Access level: Signal analysis."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Уровни",
+        "en": "Levels"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "S",
+            "en": "S"
+          },
+          "text": {
+            "ru": "Описание: Название: Анализ сигнала; Правило: Правила над аудиопотоком: уровень, время, частота, запись. Нужны настройка и проверка.",
+            "en": "Description: Title: Signal analysis; Rule: Rules for the audio stream: level, time, frequency, recording. Needs setup and testing."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "M",
+            "en": "M"
+          },
+          "text": {
+            "ru": "Описание: Название: Распознавание; Правило: Нужны классификатор, распознаватель речи или сравнение с образцом. Возможны ошибки и неопределённость.",
+            "en": "Description: Name: Recognition; Rule: You need a classifier, speech recognizer, or pattern matching. Errors and uncertainties are possible."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "D",
+            "en": "D"
+          },
+          "text": {
+            "ru": "Описание: Название: Зависит от устройства; Правило: Нужны определённые каналы, маршрут, датчики, второе устройство или особая конфигурация.",
+            "en": "Description: Name: Depends on the device; Rule: Requires specific channels, route, sensors, second device or special configuration."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "R",
+            "en": "R"
+          },
+          "text": {
+            "ru": "Описание: Название: Эксперимент; Правило: Исследовательское направление или идея, требующая отдельного прототипа. Для массового релиза пригодность не подтверждена.",
+            "en": "Description: Title: Experiment; Rule: A research direction or idea that requires a separate prototype. Suitability for mass release has not been confirmed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Схемы",
+        "en": "Schemes"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "Ввод как кнопка",
+            "en": "Enter as a button"
+          },
+          "text": {
+            "ru": "Событие запускает дискретное действие: хлопок → прыжок.",
+            "en": "The event triggers a discrete action: clap → jump."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "Ввод как ось",
+            "en": "Input as axis"
+          },
+          "text": {
+            "ru": "Непрерывный признак управляет величиной: тон → высота полёта.",
+            "en": "A continuous sign controls the value: tone → flight altitude."
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "Попадание в цель",
+            "en": "Hitting the target"
+          },
+          "text": {
+            "ru": "Нужно удержать диапазон: уровень → стабильность реактора.",
+            "en": "It is necessary to maintain the range: level → reactor stability."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "Ввод как ресурс",
+            "en": "Input as a resource"
+          },
+          "text": {
+            "ru": "Действие копит или расходует условную энергию: гул → заряд.",
+            "en": "An action accumulates or consumes conditional energy: hum → charge."
+          }
+        },
+        {
+          "id": "note-2-entry-5",
+          "title": {
+            "ru": "Ввод как риск",
+            "en": "Input as a risk"
+          },
+          "text": {
+            "ru": "Действие помогает и одновременно выдаёт игрока: речь → заклинание и тревога.",
+            "en": "The action helps and at the same time betrays the player: speech → spell and alarm."
+          }
+        },
+        {
+          "id": "note-2-entry-6",
+          "title": {
+            "ru": "Последовательность",
+            "en": "Subsequence"
+          },
+          "text": {
+            "ru": "Значение имеет порядок: стук, звон, слово → рецепт.",
+            "en": "The order matters: knock, ringing, word → recipe."
+          }
+        },
+        {
+          "id": "note-2-entry-7",
+          "title": {
+            "ru": "Повторение и память",
+            "en": "Repetition and memory"
+          },
+          "text": {
+            "ru": "Нужно запомнить, воспроизвести или преобразовать услышанное.",
+            "en": "You need to remember, reproduce or transform what you hear."
+          }
+        },
+        {
+          "id": "note-2-entry-8",
+          "title": {
+            "ru": "Поиск и коллекция",
+            "en": "Search and collection"
+          },
+          "text": {
+            "ru": "Нужно найти внешний звук и подтвердить его записью или распознаванием.",
+            "en": "You need to find the external sound and confirm it by recording or recognizing it."
+          }
+        },
+        {
+          "id": "note-2-entry-9",
+          "title": {
+            "ru": "Создание материала",
+            "en": "Creation of material"
+          },
+          "text": {
+            "ru": "Запись становится контентом: собственные сэмплы, персонажи, музыка.",
+            "en": "The recording becomes content: your own samples, characters, music."
+          }
+        },
+        {
+          "id": "note-2-entry-10",
+          "title": {
+            "ru": "Коммуникация",
+            "en": "Communication"
+          },
+          "text": {
+            "ru": "Звук передаёт сведения другому человеку, устройству или персонажу.",
+            "en": "Sound conveys information to another person, device, or character."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Ограничения",
+        "en": "Restrictions"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "Уровень не равен физической силе",
+            "en": "Level does not equal physical strength"
+          },
+          "text": {
+            "ru": "Цифровой уровень зависит от расстояния, усиления, ориентации и обработки. Для игровых шкал используйте относительную калибровку; без акустической калибровки не выдавайте его за dB SPL.",
+            "en": "Digital level depends on distance, gain, orientation and processing. For game scales, use relative calibration; without acoustic calibration, do not pass it off as dB SPL."
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "Несколько микрофонов не равны отдельным каналам",
+            "en": "Multiple microphones do not equal individual channels"
+          },
+          "text": {
+            "ru": "ОС может выдать обработанный моно- или стереопоток. Сначала проверьте доступные источники, каналы и маршруты на целевых моделях.",
+            "en": "The OS can output a processed mono or stereo stream. First check the available sources, channels and routes on the target models."
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "Шумоподавление может убрать игровой ввод",
+            "en": "Noise cancellation can remove gaming input"
+          },
+          "text": {
+            "ru": "Обработка для речи способна менять дуновение, шёпот, музыкальные звуки и паузы. Проверяйте реальный тракт; запрос отключения обработки сам по себе не является гарантией.",
+            "en": "Speech processing can change blows, whispers, musical sounds and pauses. Check the real path; a request to disable processing does not in itself constitute a guarantee."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "Тишина имеет несколько причин",
+            "en": "Silence has several reasons"
+          },
+          "text": {
+            "ru": "Низкий уровень не доказывает задержку дыхания. Отказ разрешения, прерванная запись или смена маршрута тоже могут давать отсутствие входа.",
+            "en": "A low level does not prove breath holding. Permission refusal, interrupted recording or route change can also result in no entry."
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "Голос рядом не даёт точного расстояния",
+            "en": "A voice nearby does not give an exact distance"
+          },
+          "text": {
+            "ru": "Громче может означать ближе, громче произнесено или иначе усилено. Для дистанции и направления нужен контролируемый метод и проверка.",
+            "en": "Louder can mean closer, louder spoken, or otherwise amplified. Distance and direction require a controlled method and testing."
+          }
+        },
+        {
+          "id": "note-3-entry-6",
+          "title": {
+            "ru": "Фазы дыхания требуют отдельного распознавания",
+            "en": "Breathing phases require separate recognition"
+          },
+          "text": {
+            "ru": "Не выводите вдох и выдох только из уровня. Обычная тихая работа дыхания может не попадать в микрофон; акустический ввод не заменяет физиологический датчик.",
+            "en": "Do not inhale and exhale only from the level. Normal quiet breathing work may not be picked up by the microphone; Acoustic input does not replace a physiological sensor."
+          }
+        },
+        {
+          "id": "note-3-entry-7",
+          "title": {
+            "ru": "Динамик телефона тоже попадает в микрофон",
+            "en": "The phone speaker also goes into the microphone"
+          },
+          "text": {
+            "ru": "Музыка и эффекты игры могут срабатывать как ввод. Нужны окна прослушивания, подходящая обработка или режим с наушниками, который также проверяется.",
+            "en": "Music and game effects can act as input. You need listening windows, suitable processing or a headphone mode, which is also checked."
+          }
+        },
+        {
+          "id": "note-3-entry-8",
+          "title": {
+            "ru": "Задержка является частью управления",
+            "en": "Latency is part of control"
+          },
+          "text": {
+            "ru": "Ритм, караоке и быстрые команды проверяйте по полному пути от действия до реакции. Bluetooth и смена маршрута требуют отдельной калибровки.",
+            "en": "Check rhythm, karaoke and quick commands along the full path from action to reaction. Bluetooth and route change require separate calibration."
+          }
+        },
+        {
+          "id": "note-3-entry-9",
+          "title": {
+            "ru": "Распознаватель не читает мысли",
+            "en": "The recognizer doesn't read minds"
+          },
+          "text": {
+            "ru": "Текст, манера и сходство голоса не доказывают личность, искренность, эмоцию или состояние здоровья. Для ролевой игры оценивайте явные признаки исполнения.",
+            "en": "Text, manner and similarity of voice do not prove personality, sincerity, emotion or health. For role-play, evaluate obvious signs of performance."
+          }
+        },
+        {
+          "id": "note-3-entry-10",
+          "title": {
+            "ru": "Честный сценарий ошибки",
+            "en": "Honest error scenario"
+          },
+          "text": {
+            "ru": "Показывайте обнаруженный ввод и допускайте повтор, настройку диапазона и альтернативное управление. Тестируйте разные голоса, акценты, чехлы и шумные помещения.",
+            "en": "Show detected input and allow replay, range adjustment, and alternate control. Test different voices, accents, covers, and noisy environments."
+          }
+        },
+        {
+          "id": "note-3-entry-11",
+          "title": {
+            "ru": "Запись должна быть явной",
+            "en": "The entry must be explicit"
+          },
+          "text": {
+            "ru": "Запрашивайте разрешение в понятном контексте, показывайте активное прослушивание и объясняйте хранение и отправку аудио. Сбор и публикация записей не нужны для большинства механик.",
+            "en": "Ask for permission in a clear context, show active listening, and explain storing and sharing audio. Collecting and publishing records is not necessary for most mechanics."
+          }
+        },
+        {
+          "id": "note-3-entry-12",
+          "title": {
+            "ru": "Веб и нативное приложение различаются",
+            "en": "Web and native app are different"
+          },
+          "text": {
+            "ru": "Браузерный доступ требует разрешения и безопасного контекста; отдельные каналы, маршруты, фон и распознавание зависят от платформы. Проверка браузера на компьютере не подтверждает телефон.",
+            "en": "Browser access requires permission and a secure context; individual channels, routes, background and recognition are platform dependent. Checking the browser on the computer does not confirm the phone."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Android: захват звука и обработка входа",
+        "en": "Android: Audio Capture and Input Processing"
+      },
+      "url": "https://developer.android.com/media/platform/mediarecorder",
+      "description": {
+        "ru": "Разрешение RECORD_AUDIO; обработка входа; проверка поддержки UNPROCESSED; проверка на реальном устройстве.",
+        "en": "Resolution RECORD_AUDIO; input processing; UNPROCESSED support check; testing on a real device."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android AudioRecord: активные микрофоны",
+        "en": "Android AudioRecord: active microphones"
+      },
+      "url": "https://developer.android.com/reference/android/media/AudioRecord#getActiveMicrophones()",
+      "description": {
+        "ru": "API сообщает, какие микрофоны участвуют в записи и как они отображаются на каналы; конфигурация может меняться.",
+        "en": "The API tells you which microphones are participating in the recording and how they are mapped to channels; configuration may change."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple QA1799: выбор микрофона",
+        "en": "Apple QA1799: microphone selection"
+      },
+      "url": "https://developer.apple.com/library/archive/qa/qa1799/",
+      "description": {
+        "ru": "Выбор доступных источников и диаграмм направленности зависит от оборудования и аудиосессии. Архивная документация, не обещание поддержки всех современных устройств.",
+        "en": "The selection of available sources and polar patterns depends on the equipment and audio session. Archived documentation, not a promise of support for all modern devices."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: настройка распознавания речи на устройстве",
+        "en": "Apple: Set up speech recognition on your device"
+      },
+      "url": "https://developer.apple.com/videos/play/wwdc2023/10101/",
+      "description": {
+        "ru": "Словарь предметной области, произношения, языковая модель и локальное распознавание для поддерживаемой конфигурации.",
+        "en": "Domain dictionary, pronunciations, language model, and local recognition for supported configuration."
+      }
+    },
+    {
+      "title": {
+        "ru": "Google MediaPipe: классификация аудио",
+        "en": "Google MediaPipe: Audio Classification"
+      },
+      "url": "https://developers.google.com/edge/mediapipe/solutions/audio/audio_classifier",
+      "description": {
+        "ru": "Классификатор выдаёт вероятные категории из заданного при обучении набора; доступны пороги и потоковый режим.",
+        "en": "The classifier produces probable categories from the set specified during training; thresholds and streaming mode available."
+      }
+    },
+    {
+      "title": {
+        "ru": "Breeze 2: дыхание как игровой ввод",
+        "en": "Breeze 2: Breathing as Game Input"
+      },
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9428773/",
+      "description": {
+        "ru": "Исследование распознавания фаз дыхания микрофоном смартфона в игровом приложении; не универсальная точность на любых телефонах.",
+        "en": "Study of recognition of breathing phases by a smartphone microphone in a gaming application; not universally accurate on all phones."
+      }
+    },
+    {
+      "title": {
+        "ru": "CMU: TapSense",
+        "en": "CMU: TapSense"
+      },
+      "url": "https://hcii.cmu.edu/hcii-impacts/tapsense",
+      "description": {
+        "ru": "Различение некоторых типов касаний по акустическому сигналу совместно с экранным вводом.",
+        "en": "Distinguishing certain types of touches based on an acoustic signal combined with on-screen input."
+      }
+    },
+    {
+      "title": {
+        "ru": "FingerIO: активный сонар для движения пальца",
+        "en": "FingerIO: active sonar for finger movement"
+      },
+      "url": "https://homes.cs.washington.edu/~gshyam/Papers/fingerio.pdf",
+      "description": {
+        "ru": "Исследовательская система с динамиком и микрофонами конкретного смартфона. Результат исследования не переносится автоматически на другие модели.",
+        "en": "Research system with speaker and microphones of a specific smartphone. The research result is not automatically transferred to other models."
+      }
+    },
+    {
+      "title": {
+        "ru": "CMU / Disney: Acoustruments",
+        "en": "CMU/Disney: Acoustruments"
+      },
+      "url": "https://www.cmu.edu/news/stories/archives/2015/april/acoustruments-for-handheld-devices.html",
+      "description": {
+        "ru": "Пассивные физические аксессуары изменяют акустический канал между динамиком и микрофоном.",
+        "en": "Passive physical accessories change the acoustic path between the speaker and microphone."
+      }
+    },
+    {
+      "title": {
+        "ru": "ggwave: небольшие данные через звук",
+        "en": "ggwave: small data via sound"
+      },
+      "url": "https://github.com/ggerganov/ggwave",
+      "description": {
+        "ru": "Открытая библиотека передачи небольших пакетов звуком. Скорость ограничена, устойчивость зависит от канала.",
+        "en": "An open library for transmitting small packets with sound. Speed ​​is limited, stability depends on the channel."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple ShazamKit: аудиоотпечатки и синхронизация",
+        "en": "Apple ShazamKit: Audio Fingerprinting and Sync"
+      },
+      "url": "https://developer.apple.com/shazamkit/",
+      "description": {
+        "ru": "Распознавание готовой записи по каталогу и синхронизация с позицией внутри фрагмента; не универсальное узнавание любого напевания.",
+        "en": "Recognition of a finished catalog entry and synchronization with the position within the fragment; not universal recognition of any humming."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Media Capture and Streams",
+        "en": "W3C: Media Capture and Streams"
+      },
+      "url": "https://www.w3.org/TR/mediacapture-streams/",
+      "description": {
+        "ru": "Веб-доступ к микрофону, разрешения, безопасный контекст и ограничения аудиотрека.",
+        "en": "Web microphone access, permissions, secure context, and audio track restrictions."
+      }
+    },
+    {
+      "title": {
+        "ru": "pyannote.audio: различение говорящих",
+        "en": "pyannote.audio: speaker discrimination"
+      },
+      "url": "https://github.com/pyannote/pyannote-audio",
+      "description": {
+        "ru": "Модели активности речи, смены говорящего, перекрытия голосов и голосовых представлений. Это основа алгоритмов, а не готовый универсальный API телефона.",
+        "en": "Patterns of speech activity, talker change, voice overlap, and vocal representations. This is the basis of the algorithms, and not a ready-made universal phone API."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1581 @@
+{
+  "id": "trackpad",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Взаимодействие с трекпадом",
+    "en": "Trackpad interactions"
+  },
+  "description": {
+    "ru": "Взаимодействие с трекпадом: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Trackpad Interaction: Actions, Options, Applications and Limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Указание и управление",
+        "en": "Pointing and control"
+      },
+      "description": {
+        "ru": "Положение и движение пальца задают выбор цели или непрерывное управление указателем; приложение может видеть только обработанный курсор.",
+        "en": "The position and movement of the finger determines target selection or continuous pointer control; the application can only see the processed cursor."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://www.w3.org/TR/pointerevents/",
+        "https://partner.steamgames.com/doc/features/steam_controller/input_source_modes?language=english"
+      ],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-1",
+              "text": {
+                "ru": "Относительное перемещение. Жест: Двигать палец, смещая указатель относительно текущей позиции. В интерфейсе: Навигация, точное наведение на элементы. В игре: Прицел, курсор приключения, выбор юнита. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Приложение обычно получает уже обработанное перемещение курсора, а не миллиметры пути пальца.",
+                "en": "Relative movement. Gesture: Move your finger, moving the pointer relative to the current position. In the interface: Navigation, precise targeting of elements. In the game: Sight, adventure cursor, unit selection. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The application usually receives the already processed cursor movement, and not the millimeters of the finger path."
+              }
+            },
+            {
+              "id": "variant-2",
+              "text": {
+                "ru": "Абсолютное позиционирование. Жест: Сопоставить положение на панели положению в рабочей области. В интерфейсе: Пульт для холста, переход в определённую точку карты. В игре: Прямое размещение ракетки или маркера. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Стандартный курсор ноутбука работает иначе. Нужны координаты поверхности или специальный режим драйвера.",
+                "en": "Absolute positioning. Gesture: Match the position on the panel to the position in the work area. In the interface: Remote for the canvas, jump to a specific point on the map. In the game: Direct placement of a racket or marker. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The standard laptop cursor works differently. You need surface coordinates or a special driver mode."
+              }
+            },
+            {
+              "id": "variant-3",
+              "text": {
+                "ru": "Управление скоростью от центра. Жест: Отклонение от фиксированного центра задаёт направление и скорость. В интерфейсе: Непрерывный панорамный обзор или прокрутка. В игре: Виртуальный стик движения, газ и руль. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Это программное отображение координат; нужен центр, нейтральная зона и понятный способ остановки.",
+                "en": "Speed ​​control from the center. Gesture: Deviation from a fixed center sets the direction and speed. In the interface: Continuous panoramic view or scrolling. In the game: Virtual movement stick, gas and steering wheel. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: This is a software display of coordinates; you need a center, a neutral zone and a clear way to stop..."
+              }
+            },
+            {
+              "id": "variant-4",
+              "text": {
+                "ru": "Плавающий виртуальный стик. Жест: Первое касание задаёт центр, дальнейшее смещение задаёт отклонение. В интерфейсе: Относительный пульт камеры без поиска центра поверхности. В игре: Управление персонажем с любой стартовой точки. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Положение пальца и начало контакта должны быть доступны приложению.",
+                "en": "Floating virtual stick. Gesture: The first touch sets the center, further displacement sets the deviation. In the interface: Relative camera remote control without searching for the center of the surface. In the game: Control the character from any starting point. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The position of the finger and the beginning of the contact must be accessible to the application."
+              }
+            },
+            {
+              "id": "variant-5",
+              "text": {
+                "ru": "Перехват с перестановкой пальца. Жест: Поднять палец, переставить его и продолжить относительное движение. В интерфейсе: Пересечь большой экран на маленькой панели. В игре: Продолжать разворот камеры несколькими проходами. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: ОС делает это для обычного курсора; приложение не обязательно видит сам отрыв.",
+                "en": "Interception with finger rearrangement. Gesture: Raise your finger, move it and continue the relative movement. In the interface: Cross the large screen on a small panel. In the game: Continue turning the camera in several passes. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The OS does this for a regular cursor; the application does not necessarily see the tear itself."
+              }
+            },
+            {
+              "id": "variant-6",
+              "text": {
+                "ru": "Касание как сцепление. Жест: Передавать движение только пока есть контакт; отрыв отключает канал. В интерфейсе: Временная регулировка без изменения значения при перестановке. В игре: Камера или инструмент активны только при касании. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Остановка указателя не доказывает, что палец поднят. Нужна фаза контакта.",
+                "en": "Touch is like grip. Gesture: Transmit movement only while there is contact; tearing off disables the channel. In the interface: Temporary adjustment without changing the value when rearranging. In the game: Camera or tool is active only when touched. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Stopping the pointer does not prove that the finger is raised. We need a contact phase..."
+              }
+            },
+            {
+              "id": "variant-7",
+              "text": {
+                "ru": "Грубая и точная регулировка. Жест: Менять коэффициент движения по модификатору или явному режиму. В интерфейсе: Точная настройка ползунка, монтаж, CAD. В игре: Прицеливание с пониженной чувствительностью. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: По скорости курсора нельзя надёжно восстановить физическую скорость пальца. Режим должен быть предсказуем.",
+                "en": "Coarse and fine adjustment. Gesture: Change the coefficient of movement by modifier or explicit mode. In the interface: Fine-tuning the slider, editing, CAD. In the game: Aiming with reduced sensitivity. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The physical speed of the finger cannot be reliably restored from the cursor speed. The regime must be predictable."
+              }
+            },
+            {
+              "id": "variant-8",
+              "text": {
+                "ru": "Ограничение одной осью. Жест: После начала движения зафиксировать горизонталь или вертикаль. В интерфейсе: Перенос строго по оси, выравнивание, регулировка числа. В игре: Полоса движения, рычаг, рельсовое прицеливание. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Это логика приложения; полезен явный индикатор выбранной оси.",
+                "en": "Limited to one axis. Gesture: After starting the movement, fix the horizontal or vertical. In the interface: Transfer strictly along the axis, alignment, number adjustment. In the game: Movement lane, lever, rail aiming. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: This is the application logic; An explicit indicator of the selected axis is useful."
+              }
+            },
+            {
+              "id": "variant-9",
+              "text": {
+                "ru": "Привязка к целям. Жест: Подводить указатель к сетке, узлам или соседним объектам. В интерфейсе: Стыковка блоков, схемы, редактирование. В игре: Сборка пазла, выбор маленьких интерактивных объектов. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Привязка не является жестом сенсора. Слишком сильное притяжение мешает свободному движению.",
+                "en": "Linking to goals. Gesture: Move the pointer to the grid, nodes or neighboring objects. In the interface: Docking blocks, diagrams, editing. In the game: Assembling a puzzle, selecting small interactive objects. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their removal may be unknown to him. Conditions: Snap is not a sensor gesture. Too much gravity interferes with free movement."
+              }
+            },
+            {
+              "id": "variant-10",
+              "text": {
+                "ru": "Выбор задержкой курсора. Жест: Оставить курсор на цели на заданное время. В интерфейсе: Подсказка, предпросмотр, активация без клика. В игре: Сканирование объекта, фиксация цели взглядоподобным указателем. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Это экранный hover. Датчик зависания пальца над панелью не требуется и не подразумевается.",
+                "en": "Select by cursor delay. Gesture: Leave the cursor on the target for a specified time. In the interface: Hint, preview, activation without clicking. In the game: Scanning an object, fixing the target with a gaze-like pointer. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: This is a screen hover. A finger hover sensor over the panel is not required or implied."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Касания и клики",
+        "en": "Touches and clicks"
+      },
+      "description": {
+        "ru": "Короткие контакты и нажатия вызывают дискретные команды с учётом количества, расположения и контекста касаний.",
+        "en": "Short contacts and presses trigger discrete commands based on the number, location and context of touches."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102482",
+        "https://support.microsoft.com/en-us/windows/hardware/input-devices/touch-gestures-for-windows",
+        "https://support.microsoft.com/en-us/surface/accessories/cover-keyboard/surface-touchpad-use-and-settings",
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html",
+        "https://www.w3.org/TR/pointerevents/"
+      ],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-11",
+              "text": {
+                "ru": "Одиночный тап. Жест: Коротко коснуться панели и убрать палец. В интерфейсе: Выбор, подтверждение, установка курсора. В игре: Взаимодействие с предметом, одиночное действие. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Tap-to-click должен быть включён. Приложение часто видит обычный клик и не знает, что это тап.",
+                "en": "Single tap. Gesture: Briefly touch the panel and remove your finger. In the interface: Select, confirm, place the cursor. In the game: Interact with an object, single action. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Tap-to-click must be enabled. The application often sees a normal click and does not know that it is a tap."
+              }
+            },
+            {
+              "id": "variant-12",
+              "text": {
+                "ru": "Нажатие с кликом. Жест: Продавить поверхность или нажать отдельную кнопку. В интерфейсе: Активация и начало перетаскивания. В игре: Выстрел, подтверждение команды. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Механический или тактильно имитированный клик не означает доступ к аналоговой силе.",
+                "en": "Pressing with click. Gesture: Press the surface or press a separate button. In the interface: Activation and start of dragging. In the game: Shoot, confirm the command. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: A mechanical or tactilely simulated click does not mean access to analog force."
+              }
+            },
+            {
+              "id": "variant-13",
+              "text": {
+                "ru": "Вторичный клик. Жест: Тап двумя пальцами, клик в углу либо отдельной правой кнопкой. В интерфейсе: Контекстное меню, дополнительные команды. В игре: Осмотр предмета, альтернативное действие. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Конкретный физический жест выбирается настройками ОС; приложению обычно достаточно secondary click.",
+                "en": "Secondary click. Gesture: Tap with two fingers, click in the corner or with a separate right button. In the interface: Context menu, additional commands. In the game: Inspect an object, alternative action. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The specific physical gesture is selected by the OS settings; the application usually only needs a secondary click."
+              }
+            },
+            {
+              "id": "variant-14",
+              "text": {
+                "ru": "Двойной тап или клик. Жест: Два быстрых нажатия в одной области. В интерфейсе: Открытие, выбор слова, увеличение по контексту. В игре: Быстрое перемещение, команда группе. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Согласовать временное окно с настройками ОС и не ломать одиночный клик.",
+                "en": "Double tap or click. Gesture: Two quick clicks in one area. In the interface: Open, select a word, zoom in context. In the game: Fast movement, group command. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Coordinate the time window with the OS settings and do not break a single click."
+              }
+            },
+            {
+              "id": "variant-15",
+              "text": {
+                "ru": "Тройной и многократный клик. Жест: Серия кликов с подсчётом количества. В интерфейсе: Выделение строки или абзаца по правилам редактора. В игре: Команда по числу нажатий, простая последовательность. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Смысл тройного клика зависит от приложения. Чем больше нажатий, тем выше риск ошибки.",
+                "en": "Triple and multiple clicks. Gesture: A series of clicks with counting the number. In the interface: Selecting a line or paragraph according to the editor's rules. In the game: Command by the number of clicks, a simple sequence. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The meaning of a triple click depends on the application. The more clicks, the higher the risk of error."
+              }
+            },
+            {
+              "id": "variant-16",
+              "text": {
+                "ru": "Двойной тап двумя пальцами. Жест: Дважды синхронно коснуться двумя пальцами. В интерфейсе: Умный масштаб: приблизить содержимое и вернуть обзор. В игре: Переключение между обзором поля и локальной сценой. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Smart Zoom есть в macOS; универсального межплатформенного события для этого действия нет.",
+                "en": "Double tap with two fingers. Gesture: Tap twice synchronously with two fingers. In the interface: Smart zoom: zoom in on content and return to view. In game: Switch between field view and local scene. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: Smart Zoom is available on macOS; There is no universal cross-platform event for this action."
+              }
+            },
+            {
+              "id": "variant-17",
+              "text": {
+                "ru": "Ритмические нажатия. Жест: Учитывать темп и интервалы серии тапов или кликов. В интерфейсе: Tap tempo, ввод ритма, обучение. В игре: Ритм-игра, музыкальный замок, повторение сигнала. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Проверять реальную задержку ввода; не считать пользовательский двойной клик отдельным жестом без причины.",
+                "en": "Rhythmic pressing. Gesture: Take into account the tempo and intervals of a series of taps or clicks. In the interface: Tap tempo, rhythm input, training. In the game: Rhythm game, musical lock, signal repetition. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Check the real input delay; Don't count a custom double click as a separate gesture for no reason."
+              }
+            },
+            {
+              "id": "variant-18",
+              "text": {
+                "ru": "Тап тремя пальцами. Жест: Короткое одновременное касание тремя пальцами. В интерфейсе: Команда второго уровня, поиск или обзор. В игре: Пауза или дополнительная способность в специальном режиме. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Часто назначен системной функции. Нужны доступный API и проверка конфликтов.",
+                "en": "Tap with three fingers. Gesture: Short simultaneous touch with three fingers. In the interface: Second level command, search or review. In the game: Pause or additional ability in a special mode. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Often assigned to a system function. We need an accessible API and conflict checking."
+              }
+            },
+            {
+              "id": "variant-19",
+              "text": {
+                "ru": "Тап четырьмя и более пальцами. Жест: Одновременное касание несколькими пальцами. В интерфейсе: Глобальная команда или смена рабочего контекста. В игре: Редкая команда, доступная после обучения. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Число отслеживаемых контактов и системные назначения различаются; не делать обязательным управлением.",
+                "en": "Tap with four or more fingers. Gesture: Simultaneous touching with several fingers. In the interface: Global command or changing the working context. In the game: Rare command, available after training. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. This does not guarantee that a device has multitouch. Conditions: The number of contacts tracked and system assignments vary; do not make mandatory management."
+              }
+            },
+            {
+              "id": "variant-20",
+              "text": {
+                "ru": "Тап в физической зоне. Жест: Коснуться определённого участка самой панели. В интерфейсе: Невидимая панель быстрых команд с экранными подсказками. В игре: Удар по сектору, выбор способности или ноты. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Позиция экранного курсора не сообщает, где палец коснулся физической панели.",
+                "en": "Tap in the physical area. Gesture: Touch a certain area of ​​the panel itself. In the interface: Invisible quick command panel with on-screen prompts. In the game: Hit a sector, select an ability or note. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The position of the on-screen cursor does not indicate where the finger touched the physical pad."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Удержание и отпускание",
+        "en": "Hold and release"
+      },
+      "description": {
+        "ru": "Длительность контакта и момент его завершения управляют зарядом, временным режимом или подтверждением действия.",
+        "en": "The duration of the contact and the moment of its completion control the charge, timing or confirmation of the action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html",
+        "https://www.w3.org/TR/pointerevents/"
+      ],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-21",
+              "text": {
+                "ru": "Удержание кнопки. Жест: Не отпускать клик, пока выполняется действие. В интерфейсе: Временный инструмент, просмотр, непрерывное действие. В игре: Автоогонь, блок, работа инструментом. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужен выход при потере фокуса, отмене или отпускании за пределами элемента.",
+                "en": "Hold the button. Gesture: Do not release the click while the action is being performed. In the interface: Temporary tool, view, continuous action. In the game: Auto-fire, block, work with the tool. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: An exit is needed when focus is lost, canceled or released outside the element."
+              }
+            },
+            {
+              "id": "variant-22",
+              "text": {
+                "ru": "Удержание контакта без клика. Жест: Держать палец на поверхности, не продавливая её. В интерфейсе: Временный режим или предпросмотр по касанию. В игре: Касание включает щит или удерживает объект. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Неподвижный курсор не равен неподвижному контакту; обычных mouse-событий недостаточно.",
+                "en": "Hold a contact without clicking. Gesture: Keep your finger on the surface without pressing it. In the interface: Temporary mode or touch preview. In the game: Touch turns on the shield or holds the object. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on a device does not guarantee this. Conditions: A stationary cursor is not equal to a stationary contact; regular mouse events are not enough..."
+              }
+            },
+            {
+              "id": "variant-23",
+              "text": {
+                "ru": "Долгое нажатие. Жест: Запускать команду после временного порога удерживаемого клика. В интерфейсе: Контекстная команда, защищённое подтверждение. В игре: Взлом, ремонт, взаимодействие с механизмом. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужны индикатор прогресса и отмена при движении. Для удержания без клика нужен T.",
+                "en": "Long press. Gesture: Launch a command after a time threshold of a held click. In the interface: Contextual command, secure confirmation. In the game: Hacking, repair, interaction with the mechanism. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: A progress indicator and cancellation during movement are needed. To hold without clicking you need T."
+              }
+            },
+            {
+              "id": "variant-24",
+              "text": {
+                "ru": "Автоповтор при удержании. Жест: После задержки повторять команду через интервалы. В интерфейсе: Изменение значения, листание, набор одинаковых элементов. В игре: Серийная постройка, очередь команд. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Пределы и ускорение повтора задаёт приложение.",
+                "en": "Auto repeat when held. Gesture: After a delay, repeat the command at intervals. In the interface: Changing a value, paging, a set of identical elements. In the game: Serial construction, command queue. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The limits and acceleration of the repetition are set by the application."
+              }
+            },
+            {
+              "id": "variant-25",
+              "text": {
+                "ru": "Накопление по времени. Жест: Длительность удержания увеличивает выбранную величину. В интерфейсе: Регулировка интенсивности при отсутствии датчика силы. В игре: Заряд выстрела, сила прыжка или броска. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Длительность и физическая сила нажатия являются разными каналами.",
+                "en": "Accumulation over time. Gesture: Hold duration increases the selected value. In the interface: Adjust the intensity in the absence of a force sensor. In the game: Shot charge, jump or throw force. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The duration and physical force of pressing are different channels."
+              }
+            },
+            {
+              "id": "variant-26",
+              "text": {
+                "ru": "Действие на отпускании. Жест: Подтверждать команду при снятии удерживаемой кнопки. В интерфейсе: Предпросмотр до окончательного выбора. В игре: Выстрел заряженным снарядом, запуск броска. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Отпускание кнопки доступно через P; отрыв пальца без клика требует T.",
+                "en": "Release action. Gesture: Confirm a command when releasing a held button. In the interface: Preview before final selection. In the game: Shoot a charged projectile, launch a throw. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Release of the button is available through P; lifting your finger without clicking requires T."
+              }
+            },
+            {
+              "id": "variant-27",
+              "text": {
+                "ru": "Удержание без движения. Жест: Оставаться в пределах допустимого отклонения. В интерфейсе: Стабильное подтверждение, выбор с отсечением случайного движения. В игре: Удержание равновесия, стабилизация прицела. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужен допуск на естественный тремор; физический контакт без кнопки требует T.",
+                "en": "Hold without moving. Gesture: Stay within the permissible deviation. In the interface: Stable confirmation, selection with cutting off random movement. In the game: Maintain balance, sight stabilization. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Allowance for natural tremor is required; physical contact without button requires T."
+              }
+            },
+            {
+              "id": "variant-28",
+              "text": {
+                "ru": "Удержание внутри цели. Жест: Сохранять нажатие и положение курсора в заданной зоне. В интерфейсе: Подтверждение в пределах кнопки или рабочей области. В игре: Сварка, захват, непрерывное сопровождение цели. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Следует явно показать границу и поведение при выходе.",
+                "en": "Holding inside the target. Gesture: Maintain the click and position of the cursor in a given area. In the interface: Confirmation within a button or work area. In the game: Welding, grabbing, continuous target tracking. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: The boundary and exit behavior should be clearly shown."
+              }
+            },
+            {
+              "id": "variant-29",
+              "text": {
+                "ru": "Выход из зоны для отмены. Жест: Увести курсор с цели перед отпусканием. В интерфейсе: Безопасная отмена выбора или подтверждения. В игре: Отмена заклинания, броска или размещения объекта. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Отмена события ОС и добровольная отмена игроком должны обрабатываться отдельно.",
+                "en": "Leaving the area to cancel. Gesture: Move the cursor away from the target before releasing. In the interface: Safely cancel a selection or confirmation. In game: Cancel a spell, throw or place an object. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Cancellation of an OS event and voluntary cancellation by the player must be processed separately."
+              }
+            },
+            {
+              "id": "variant-30",
+              "text": {
+                "ru": "Переключаемое удержание. Жест: Один клик включает режим, следующий выключает. В интерфейсе: Альтернатива долгому зажатию; фиксация инструмента. В игре: Переключаемый прицел, захват, автоматическое движение. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Состояние должно быть видно; это программная фиксация, а не свойство сенсора.",
+                "en": "Switchable hold. Gesture: One click turns on the mode, the next one turns it off. In the interface: An alternative to long pressing; tool fixation. In the game: Switchable sight, capture, automatic movement. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: The condition must be visible; This is a software fix, not a property of the sensor."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Перетаскивание и захват",
+        "en": "Dragging and grabbing"
+      },
+      "description": {
+        "ru": "Захват связывает движение указателя с объектом, а отпускание завершает перенос, бросок или настройку.",
+        "en": "Grabbing connects the pointer movement to the object, and releasing completes the carry, throw, or setup."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102482",
+        "https://support.microsoft.com/en-us/surface/accessories/cover-keyboard/surface-touchpad-use-and-settings",
+        "https://www.w3.org/TR/pointerevents/"
+      ],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-31",
+              "text": {
+                "ru": "Клик и перетаскивание. Жест: Удерживать кнопку и двигать палец. В интерфейсе: Перенос объекта, выделение, управление ползунком. В игре: Двигать предмет, прицеливаться натяжением. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Совместное движение и нажатие должно оставаться удобным на конкретном clickpad.",
+                "en": "Click and drag. Gesture: Hold the button and move your finger. In the interface: Move an object, select, control the slider. In the game: Move an object, aim by pulling. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The joint movement and pressing must remain comfortable on a specific clickpad."
+              }
+            },
+            {
+              "id": "variant-32",
+              "text": {
+                "ru": "Тап, второй тап с удержанием. Жест: Коснуться, затем сразу коснуться повторно и вести палец. В интерфейсе: Перетаскивание без продавливания панели. В игре: Перенос игровых предметов с меньшей нагрузкой на кисть. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Работает при соответствующей настройке драйвера или ОС.",
+                "en": "Tap, second tap and hold. Gesture: Touch, then immediately touch again and move your finger. In the interface: Drag without pressing the panel. In the game: Carrying game objects with less load on the hand. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Works with appropriate driver or OS settings."
+              }
+            },
+            {
+              "id": "variant-33",
+              "text": {
+                "ru": "Перетаскивание тремя пальцами. Жест: Вести тремя пальцами вместо удержания клика. В интерфейсе: Перемещение окон, объектов и выделений. В игре: Перенос фишек и управление рычагом. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: В macOS включается отдельно; игра обычно получает результат перетаскивания, а не три контакта.",
+                "en": "Three-finger dragging. Gesture: Swipe with three fingers instead of holding a click. In the interface: Moving windows, objects and selections. In the game: Moving pieces and controlling the lever. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: In macOS it is turned on separately; the game usually gets a drag result rather than three contacts."
+              }
+            },
+            {
+              "id": "variant-34",
+              "text": {
+                "ru": "Фиксация захвата. Жест: Продолжать перенос после краткого отрыва; завершить отдельным действием. В интерфейсе: Перенос на большую дистанцию, доступное управление. В игре: Перемещение тяжёлого предмета через всё поле. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Может обеспечиваться ОС или логикой приложения; нужна явная команда сброса.",
+                "en": "Fixation of the grip. Gesture: Continue carrying after a short break; complete with a separate action. In the interface: Transfer over a long distance, accessible controls. In the game: Moving a heavy object across the entire field. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: May be provided by the OS or application logic; need an explicit reset command."
+              }
+            },
+            {
+              "id": "variant-35",
+              "text": {
+                "ru": "Drag-and-drop. Жест: Захватить объект, перенести и отпустить на приёмнике. В интерфейсе: Файлы, карточки, размещение блоков. В игре: Инвентарь, крафт, сборка конструкции. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Показывать допустимые приёмники и результат до отпускания.",
+                "en": "Drag-and-drop. Gesture: Grab an object, move it and release it on the receiver. In the interface: Files, cards, placement of blocks. In the game: Inventory, crafting, assembling a structure. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Show valid receivers and the result before releasing."
+              }
+            },
+            {
+              "id": "variant-36",
+              "text": {
+                "ru": "Выделение рамкой. Жест: Протянуть прямоугольную область. В интерфейсе: Групповой выбор объектов, диапазон на холсте. В игре: Выбор отряда, области строительства. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Правила включения объектов внутрь рамки должны быть последовательны.",
+                "en": "Frame selection. Gesture: Draw a rectangular area. In the interface: Group selection of objects, range on the canvas. In the game: Select a squad, construction area. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: The rules for including objects inside the frame must be consistent."
+              }
+            },
+            {
+              "id": "variant-37",
+              "text": {
+                "ru": "Лассо. Жест: Обвести произвольную область с удержанием кнопки. В интерфейсе: Выделение по контуру, маска, редактор изображений. В игре: Захват территории, окружение группы объектов. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Для свободного следа без клика нужен T; через обычное перетаскивание достаточно P.",
+                "en": "Lasso. Gesture: Circle an arbitrary area while holding the button. In the interface: Selection along a contour, mask, image editor. In the game: Capture territory, encircling a group of objects. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: For a free trace without a click, T is needed; through normal drag and drop P is enough."
+              }
+            },
+            {
+              "id": "variant-38",
+              "text": {
+                "ru": "Перестановка в последовательности. Жест: Перетащить элемент между соседями. В интерфейсе: Сортировка списка, вкладок, временных блоков. В игре: Порядок карт, ходов, участников или способностей. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Предпросмотр места вставки уменьшает неопределённость.",
+                "en": "Rearrangement in sequence. Gesture: Drag an element between neighbors. In the interface: Sorting a list, tabs, time blocks. In the game: Order of cards, moves, participants or abilities. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Preview of the insertion site reduces uncertainty."
+              }
+            },
+            {
+              "id": "variant-39",
+              "text": {
+                "ru": "Натяжение с отпусканием. Жест: Тянуть от опорной точки, затем отпустить. В интерфейсе: Установка вектора и величины действия. В игре: Рогатка, лук, бильярдный удар, пружина. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Длина экранного вектора задаёт параметр программы, а не измеренную силу пальца.",
+                "en": "Tension and release. Gesture: Pull from the reference point, then release. In the interface: Setting the vector and magnitude of the action. In the game: Slingshot, bow, billiard shot, spring. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The length of the screen vector sets the program parameter, and not the measured finger strength."
+              }
+            },
+            {
+              "id": "variant-40",
+              "text": {
+                "ru": "Бросок с инерцией. Жест: Разогнать объект перетаскиванием и отпустить. В интерфейсе: Быстрое перемещение с программной инерцией. В игре: Метание, керлинг, шайба, бросок карточки. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Скорость нужно оценивать устойчиво и ограничивать; системное ускорение курсора влияет на ощущение.",
+                "en": "Throw with momentum. Gesture: Accelerate an object by dragging and releasing. In the interface: Fast movement with software inertia. In the game: Throwing, curling, puck, throwing a card. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Speed ​​must be assessed steadily and limited; System cursor acceleration affects the feel."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Прокрутка и временные оси",
+        "en": "Scrolling and timelines"
+      },
+      "description": {
+        "ru": "Прокрутка преобразуется в перемещение по пространству, шкале значений или времени с явно заданной чувствительностью.",
+        "en": "Scrolling is converted into movement across space, a scale of values ​​or time with an explicitly specified sensitivity."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102482",
+        "https://support.microsoft.com/en-us/windows/hardware/input-devices/touch-gestures-for-windows",
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html",
+        "https://www.w3.org/TR/pointerevents/",
+        "https://partner.steamgames.com/doc/features/steam_controller/input_source_modes?language=english"
+      ],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-41",
+              "text": {
+                "ru": "Вертикальная прокрутка. Жест: Вести два пальца вверх или вниз. В интерфейсе: Документы, списки, изменение параметра. В игре: Выбор предмета, высота прицела, приближение камеры. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: ОС может выдавать wheel-дельты. Направление зависит от настройки естественной прокрутки.",
+                "en": "Vertical scrolling. Gesture: Move two fingers up or down. In the interface: Documents, lists, change a parameter. In the game: Selecting an item, sight height, camera zoom. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: The OS can issue wheel deltas. The direction depends on the natural scrolling setting."
+              }
+            },
+            {
+              "id": "variant-42",
+              "text": {
+                "ru": "Горизонтальная прокрутка. Жест: Вести два пальца влево или вправо. В интерфейсе: Широкий холст, дорожки, таблица. В игре: Горизонтальная камера, смена полосы или позиции. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Браузер или ОС могут использовать этот ход для навигации назад и вперёд.",
+                "en": "Horizontal scrolling. Gesture: Move two fingers left or right. In the interface: Wide canvas, paths, table. In the game: Horizontal camera, change lane or position. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: The browser or OS can use this move to navigate back and forth."
+              }
+            },
+            {
+              "id": "variant-43",
+              "text": {
+                "ru": "Свободное панорамирование. Жест: Использовать обе компоненты прокрутки одновременно. В интерфейсе: Карта, большая схема, двумерный холст. В игре: Обзор поля стратегии или тактической карты. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Не каждый стек передаёт одинаково точные непрерывные дельты.",
+                "en": "Free panning. Gesture: Use both scrolling components at the same time. In the interface: Map, large diagram, 2D canvas. In game: Review of the strategy or tactical map field. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: Not every stack transmits equally accurate continuous deltas."
+              }
+            },
+            {
+              "id": "variant-44",
+              "text": {
+                "ru": "Инерционная прокрутка. Жест: После толчка продолжать движение с замедлением. В интерфейсе: Длинные ленты, каталоги, панорамы. В игре: Прокрутка колеса предметов, инерционный обзор. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Инерция может создаваться ОС или приложением; нельзя применять её дважды.",
+                "en": "Inertial scrolling. Gesture: After a push, continue moving with deceleration. In the interface: Long tapes, catalogs, panoramas. In the game: Scrolling the wheel of objects, inertial view. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: Inertia can be created by the OS or application; You can't use it twice."
+              }
+            },
+            {
+              "id": "variant-45",
+              "text": {
+                "ru": "Касание для остановки инерции. Жест: Положить пальцы на панель, чтобы остановить движение. В интерфейсе: Быстро остановить кинетическую прокрутку. В игре: Затормозить вращающееся колесо или обзор. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Нужен явный hold/touch-сигнал. libinput описывает hold; обычный wheel API этого не гарантирует.",
+                "en": "Touch to stop momentum. Gesture: Place your fingers on the panel to stop movement. In the interface: Quickly stop kinetic scrolling. In game: Slow down the spinning wheel or view. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: An explicit hold/touch signal is required. libinput describes hold; The regular wheel API does not guarantee this."
+              }
+            },
+            {
+              "id": "variant-46",
+              "text": {
+                "ru": "Краевая прокрутка. Жест: Вести один палец вдоль края поверхности. В интерфейсе: Непрерывная навигация, однопальцевый скролл. В игре: Лента инвентаря или вертикальное перемещение камеры. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужен режим драйвера или доступ к зоне панели; это не универсальный жест приложения.",
+                "en": "Edge scrolling. Gesture: Move one finger along the edge of the surface. In the interface: Continuous navigation, one-finger scrolling. In the game: Inventory ribbon or vertical camera movement. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Driver mode or access to the panel area is required; This is not a universal app gesture."
+              }
+            },
+            {
+              "id": "variant-47",
+              "text": {
+                "ru": "Круговая прокрутка. Жест: Вращать палец по кругу, накапливая угол. В интерфейсе: Длинный список, виртуальное колесо, изменение числа. В игре: Настройка сейфа, катушка, маховик. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Возможна через специальное отображение поверхности; альтернатива в приложении: круговой drag курсором.",
+                "en": "Circular scrolling. Gesture: Rotate your finger in a circle, accumulating an angle. In the interface: Long list, virtual wheel, change the number. In the game: Setting up a safe, reel, flywheel. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Possible through a special surface display; alternative in the application: circular drag cursor."
+              }
+            },
+            {
+              "id": "variant-48",
+              "text": {
+                "ru": "Прокрутка по шагам. Жест: Накопленные дельты переводить в дискретные переключения. В интерфейсе: Выбор строки, кадра, деления или инструмента. В игре: Перебор оружия, изменение шага ставки. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Не считать каждое wheel-событие отдельной ступенью: их частота зависит от устройства.",
+                "en": "Scroll by steps. Gesture: Convert accumulated deltas into discrete switches. In the interface: Select a line, frame, division or tool. In the game: Enumerate weapons, change the bet step. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: Do not consider each wheel event as a separate stage: their frequency depends on the device."
+              }
+            },
+            {
+              "id": "variant-49",
+              "text": {
+                "ru": "Скраббинг. Жест: Прокруткой непрерывно менять позицию на временной оси. В интерфейсе: Видео, звук, анимация, история изменений. В игре: Просмотр повтора, управление перемоткой времени. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Значение позиции и скорость воспроизведения являются разными отображениями одного ввода.",
+                "en": "Scrubbing. Gesture: Scroll to continuously change position on the time axis. In the interface: Video, sound, animation, history of changes. In the game: View replay, control time rewind. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: The position value and playback speed are different displays of the same input."
+              }
+            },
+            {
+              "id": "variant-50",
+              "text": {
+                "ru": "Грубый и точный скраббинг. Жест: По модификатору менять масштаб временной регулировки. В интерфейсе: Поиск сцены с переходом к покадровой точности. В игре: Точная остановка повтора или временной головоломки. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Для второй физической оси вне обычной прокрутки может потребоваться T; клавиша-модификатор проще.",
+                "en": "Rough and fine scrubbing. Gesture: Change the scale of time adjustment using a modifier. In the interface: Search for a scene with a transition to frame-by-frame precision. In the game: Exact stop of a repeat or time puzzle. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. Set varies. Conditions: A second physical axis outside of normal scrolling may require T; the modifier key is simpler."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Направления и траектории",
+        "en": "Directions and trajectories"
+      },
+      "description": {
+        "ru": "Направление, форма и порядок участков траектории становятся распознаваемой командой или условием игрового действия.",
+        "en": "The direction, shape and order of the trajectory sections become a recognizable command or condition of the game action."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html",
+        "https://www.w3.org/TR/pointerevents/"
+      ],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-51",
+              "text": {
+                "ru": "Направленный свайп. Жест: Выполнить распознаваемый ход вверх, вниз, влево или вправо. В интерфейсе: Перелистывание, закрытие карточки, переход. В игре: Уклонение, рубящий удар, быстрый приказ. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Число пальцев и доступность swipe определяет платформа. Альтернатива: распознавать drag через P.",
+                "en": "Directional swipe. Gesture: Perform a recognizable move up, down, left or right. In the interface: Flip, close the card, move. In the game: Dodge, slash, quick order. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: The number of fingers and swipe availability are determined by the platform. Alternative: recognize drag via P."
+              }
+            },
+            {
+              "id": "variant-52",
+              "text": {
+                "ru": "Диагональный росчерк. Жест: Сделать короткое перетаскивание в одном из восьми секторов. В интерфейсе: Расширенное меню команд по направлению. В игре: Восемь направлений удара или переката. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Без удержания кнопки и с привязкой к физическому движению нужен T.",
+                "en": "Diagonal stroke. Gesture: Make a short drag in one of eight sectors. In the interface: Expanded menu of directional commands. In the game: Eight directions of impact or roll. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Without holding the button and with reference to physical movement, T. is needed."
+              }
+            },
+            {
+              "id": "variant-53",
+              "text": {
+                "ru": "Быстрый росчерк. Жест: Учитывать скорость и направление короткого drag. В интерфейсе: Быстрое удаление, отправка, сдвиг элемента. В игре: Взмах, парирование, резкий толчок. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Порог скорости нужно отличать от порога длины и проверять с разной чувствительностью курсора.",
+                "en": "A quick stroke. Gesture: Take into account the speed and direction of a short drag. In the interface: Quickly delete, send, shift an element. In the game: Swing, parry, sharp push. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The speed threshold must be distinguished from the length threshold and checked with different cursor sensitivity."
+              }
+            },
+            {
+              "id": "variant-54",
+              "text": {
+                "ru": "Жест туда и обратно. Жест: Сменить направление в рамках одной траектории. В интерфейсе: Отмена, возврат, подтверждение последовательностью. В игре: Взвод механизма, передёргивание затвора, работа пилой. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Движение распознаётся приложением; это не стандартное событие touchpad.",
+                "en": "Gesture back and forth. Gesture: Change direction within one trajectory. In the interface: Cancel, return, confirm by sequence. In the game: Cocking the mechanism, jerking the shutter, working with a saw. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: The movement is recognized by the application; This is not a standard touchpad event."
+              }
+            },
+            {
+              "id": "variant-55",
+              "text": {
+                "ru": "Круг. Жест: Провести замкнутую окружность с удержанием кнопки. В интерфейсе: Вращение ручки или выбор циклического параметра. В игре: Завести механизм, перемешать, начертить круг заклинания. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужен допуск на неполное замыкание и форму. Контактный вариант без клика требует T.",
+                "en": "Circle. Gesture: Draw a closed circle while holding the button. In the interface: Rotate the knob or select a cyclic parameter. In the game: Start the mechanism, mix, draw a spell circle. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Requires tolerance for incomplete closure and shape. Contact option without click requires T."
+              }
+            },
+            {
+              "id": "variant-56",
+              "text": {
+                "ru": "Дуга. Жест: Провести часть окружности. В интерфейсе: Поворот, настройка угла, веерный выбор. В игре: Замах мечом, дуговой щит, управление вентилем. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Отличать желаемую дугу от случайного искривления движения.",
+                "en": "Arc. Gesture: Draw part of a circle. In the interface: Rotate, angle adjustment, fan selection. In the game: Sword swing, arc shield, valve control. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Distinguish the desired arc from a random curvature of movement."
+              }
+            },
+            {
+              "id": "variant-57",
+              "text": {
+                "ru": "Зигзаг. Жест: Провести последовательность поворотов. В интерфейсе: Команда по форме, графический код. В игре: Молния, разрез, взлом узора. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Длинные жестовые пароли плохо обнаружимы без подсказки.",
+                "en": "Zigzag. Gesture: Perform a sequence of turns. In the interface: Form command, graphic code. In the game: Lightning, cut, pattern hacking. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Long gesture passwords are difficult to detect without a hint."
+              }
+            },
+            {
+              "id": "variant-58",
+              "text": {
+                "ru": "Растирание. Жест: Многократно двигаться туда-сюда в небольшой области. В интерфейсе: Стирание, очистка маски, проявление слоя. В игре: Оттереть грязь, разжечь огонь, заточить предмет. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Ограничивать необходимое число повторов; движение само по себе не измеряет трение материала.",
+                "en": "Trituration. Gesture: Move back and forth repeatedly in a small area. In the interface: Erasing, clearing a mask, developing a layer. In the game: Wipe off dirt, light a fire, sharpen an object. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Limit the required number of repetitions; movement alone does not measure the friction of a material."
+              }
+            },
+            {
+              "id": "variant-59",
+              "text": {
+                "ru": "Рисование символа. Жест: Начертить букву, цифру или условный знак. В интерфейсе: Рукописный ввод, аннотация, команда по символу. В игре: Руны, заклинания, подпись, графический замок. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужны распознаватель и проверка ошибок. Стандартный trackpad API не распознаёт руны автоматически.",
+                "en": "Drawing a symbol. Gesture: Draw a letter, number or symbol. In the interface: Handwriting, annotation, symbol command. In the game: Runes, spells, signature, graphic lock. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: A recognizer and error checking are needed. The standard trackpad API does not recognize runes automatically."
+              }
+            },
+            {
+              "id": "variant-60",
+              "text": {
+                "ru": "Следование по контуру. Жест: Непрерывно вести курсор по заданной траектории. В интерфейсе: Обводка, тренажёр точности, ручная маска. В игре: Проводка через лабиринт, хирургия, соединение дорожек. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Необходимо учитывать допуск, видимость курсора и возможность переставить палец.",
+                "en": "Following the contour. Gesture: Continuously move the cursor along a given path. In the interface: Stroke, precision trainer, manual mask. In the game: Guiding through a labyrinth, surgery, connecting paths. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Tolerance, visibility of the cursor and the ability to rearrange the finger must be taken into account."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Геометрия нескольких контактов",
+        "en": "Multiple Contact Geometry"
+      },
+      "description": {
+        "ru": "Относительные положения нескольких контактов задают масштаб, угол и другие геометрические параметры; нужен доступ к этим данным.",
+        "en": "The relative positions of multiple contacts define scale, angle, and other geometric parameters; you need access to this data."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102482",
+        "https://support.microsoft.com/en-us/windows/hardware/input-devices/touch-gestures-for-windows",
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html"
+      ],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-61",
+              "text": {
+                "ru": "Сведение двух пальцев. Жест: Уменьшать расстояние между контактами. В интерфейсе: Уменьшение масштаба, переход к обзору. В игре: Отдаление карты или сжатие игрового объекта. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Из готового pinch часто доступен масштаб, но не координаты обеих точек.",
+                "en": "Bringing two fingers together. Gesture: Reduce the distance between contacts. In the interface: Zoom out, go to overview. In the game: Move the map away or shrink the game object. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: From a ready-made pinch the scale is often available, but not the coordinates of both points."
+              }
+            },
+            {
+              "id": "variant-62",
+              "text": {
+                "ru": "Разведение двух пальцев. Жест: Увеличивать расстояние между контактами. В интерфейсе: Приближение, раскрытие деталей. В игре: Увеличение карты, растяжение пружины, раскрытие щита. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Для физического моделирования обоих захватов нужен T.",
+                "en": "Spreading two fingers. Gesture: Increase the distance between contacts. In the interface: Zooming in, revealing details. In the game: Enlarging the map, stretching the spring, opening the shield. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set differs. Conditions: To physically simulate both grips, T. is required."
+              }
+            },
+            {
+              "id": "variant-63",
+              "text": {
+                "ru": "Вращение двумя пальцами. Жест: Менять угол линии между контактами. В интерфейсе: Поворот изображения, холста или модели. В игре: Вентиль, ориентация детали, поворот артефакта. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Поддержка rotate не следует автоматически из наличия pinch.",
+                "en": "Two finger rotation. Gesture: Change the angle of the line between contacts. In the interface: Rotate an image, canvas or model. In the game: Valve, part orientation, rotate an artifact. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: Rotate support does not automatically follow from the presence of pinch."
+              }
+            },
+            {
+              "id": "variant-64",
+              "text": {
+                "ru": "Одновременный перенос, масштаб и поворот. Жест: Перемещать центр, менять расстояние и угол пары. В интерфейсе: Свободное преобразование объекта или холста. В игре: Установка детали, манипуляция картой или механизмом. Уровень доступа: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается. Условия: Фреймворк должен разрешать совместное распознавание. Иначе нужен T и собственный обработчик.",
+                "en": "Simultaneous translation, scale and rotation. Gesture: Move the center, change the distance and angle of the pair. In the interface: Free transformation of an object or canvas. In the game: Installing a part, manipulating a card or mechanism. Access level: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies. Conditions: The framework must allow joint recognition. Otherwise, you need T and your own handler."
+              }
+            },
+            {
+              "id": "variant-65",
+              "text": {
+                "ru": "Один палец как якорь. Жест: Оставить контакт неподвижным, вторым менять радиус или угол. В интерфейсе: Преобразование относительно явной опорной точки. В игре: Рычаг, циркуль, намотка троса, прицел вокруг опоры. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Готового масштаба или поворота может быть мало: нужны обе координаты.",
+                "en": "One finger is like an anchor. Gesture: Leave the contact motionless, the second change the radius or angle. In the interface: Transformation relative to an explicit reference point. In the game: Lever, compass, winding the cable, sight around the support. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: A ready-made scale or rotation may not be enough: both coordinates are needed."
+              }
+            },
+            {
+              "id": "variant-66",
+              "text": {
+                "ru": "Два независимых захвата. Жест: Каждым контактом управлять отдельным концом объекта. В интерфейсе: Редактирование отрезка, диапазона или соединения. В игре: Натянуть верёвку, удержать две рукояти, поставить мост. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Приложение должно сохранять роли контактов и обрабатывать исчезновение одного из них.",
+                "en": "Two independent grips. Gesture: Each contact controls a separate end of an object. In the interface: Editing a segment, range or connection. In the game: Pull a rope, hold two handles, place a bridge. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. Having multitouch on a device does not guarantee this. Conditions: The application must preserve contact roles and handle the disappearance of one of them."
+              }
+            },
+            {
+              "id": "variant-67",
+              "text": {
+                "ru": "Растяжение по выбранной оси. Жест: Использовать отдельно изменение горизонтального или вертикального расстояния. В интерфейсе: Непропорциональный размер, ширина и высота. В игре: Сжать преграду, растянуть проход или платформу. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Обычный scalar pinch не сообщает полную геометрию пары.",
+                "en": "Stretch along the selected axis. Gesture: Use a separate change in horizontal or vertical distance. In the interface: Disproportional size, width and height. In the game: Shrink an obstacle, stretch a passage or platform. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: A regular scalar pinch does not report the full geometry of the pair."
+              }
+            },
+            {
+              "id": "variant-68",
+              "text": {
+                "ru": "Деформация по трём опорам. Жест: Тремя отслеживаемыми точками менять форму или аффинное преобразование. В интерфейсе: Наклон, сдвиг, деформация сетки. В игре: Гнуть мягкое тело, управлять тремя креплениями. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужны три независимые координаты. Двух точек недостаточно для однозначного общего shear-преобразования.",
+                "en": "Deformation along three supports. Gesture: Change shape or affine transformation with three tracked points. In the interface: Tilt, shift, deform the mesh. In the game: Bend a soft body, control three fasteners. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Three independent coordinates are needed. Two points are not enough for an unambiguous general shear transformation."
+              }
+            },
+            {
+              "id": "variant-69",
+              "text": {
+                "ru": "Разведение группы пальцев. Жест: Увеличивать разброс трёх и более контактов. В интерфейсе: Раскрытие группы, разворачивание структуры. В игре: Рассеять отряд, раскрыть устройство или поле. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Может совпадать с глобальным жестом ОС; требуются проверка перехвата и число контактов.",
+                "en": "Spreading a group of fingers. Gesture: Increase the spread of three or more contacts. In the interface: Expand a group, expand a structure. In the game: Scatter a squad, reveal a device or field. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: May coincide with the global OS gesture; interception verification and number of contacts are required."
+              }
+            },
+            {
+              "id": "variant-70",
+              "text": {
+                "ru": "Сведение группы пальцев. Жест: Собирать несколько контактов к общему центру. В интерфейсе: Сворачивание группы или переход к общей структуре. В игре: Собрать объекты, сжать область, сосредоточить энергию. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Не считать, что каждый палец имеет независимое измерение силы или известную анатомическую роль.",
+                "en": "Bringing together a group of fingers. Gesture: Collect multiple contacts to a common center. In the interface: Collapse a group or move to a common structure. In the game: Collect objects, compress an area, concentrate energy. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on a device does not guarantee this. Conditions: Do not assume that each finger has an independent force measurement or a known anatomical role."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Аккорды, роли и последовательности",
+        "en": "Chords, roles and sequences"
+      },
+      "description": {
+        "ru": "Сочетания контактов и их порядок распределяют роли между пальцами и позволяют составлять команды из нескольких фаз.",
+        "en": "Combinations of contacts and their order distribute roles between fingers and allow you to compose commands from several phases."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html"
+      ],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-71",
+              "text": {
+                "ru": "Число пальцев как режим. Жест: Одно, два или три касания включают разные функции. В интерфейсе: Один контакт рисует, два перемещают, три меняют инструмент. В игре: Смена типа действия без отдельной кнопки. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: ОС может уже использовать такую грамматику и не отдавать все касания приложению.",
+                "en": "Number of fingers as mode. Gesture: One, two or three touches enable different functions. In the interface: One contact draws, two move, three change the tool. In the game: Change the type of action without a separate button. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The OS may already use such a grammar and not give all touches to the application."
+              }
+            },
+            {
+              "id": "variant-72",
+              "text": {
+                "ru": "Пространственный аккорд. Жест: Одновременно касаться определённого набора зон. В интерфейсе: Комбинации команд, аккордовая клавиатура. В игре: Музыкальные аккорды, комбинация рун, несколько клапанов. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужны координаты нескольких контактов; число пальцев само по себе не задаёт аккорд.",
+                "en": "Spatial chord. Gesture: Touch a certain set of zones at the same time. In the interface: Command combinations, chord keyboard. In the game: Musical chords, rune combination, several valves. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The coordinates of several contacts are needed; The number of fingers in itself does not determine the chord."
+              }
+            },
+            {
+              "id": "variant-73",
+              "text": {
+                "ru": "Удержание плюс тап. Жест: Один контакт держит состояние, другой коротко касается. В интерфейсе: Временный модификатор плюс команда. В игре: Щит и удар, прицел и выстрел. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Фильтрация большого пальца может удалить опорный контакт.",
+                "en": "Hold plus tap. Gesture: One contact holds the state, the other briefly touches. In the interface: Temporary modifier plus command. In the game: Shield and strike, aim and shoot. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Thumb filtering may remove the reference contact."
+              }
+            },
+            {
+              "id": "variant-74",
+              "text": {
+                "ru": "Удержание плюс движение. Жест: Первый контакт фиксирует режим, второй непрерывно движется. В интерфейсе: Редактирование с модификатором, точная регулировка. В игре: Блок и направление защиты, захват и вращение. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Для обычного курсора вместо опорного пальца можно использовать клавишу.",
+                "en": "Hold plus movement. Gesture: The first contact fixes the mode, the second continuously moves. In the interface: Editing with a modifier, fine adjustment. In the game: Block and direction of protection, capture and rotation. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: For a regular cursor, instead of a support finger, you can use a key."
+              }
+            },
+            {
+              "id": "variant-75",
+              "text": {
+                "ru": "Два независимых канала. Жест: Развести два контакта по двум управляемым величинам. В интерфейсе: Два ползунка, XY-контроль с раздельными ролями. В игре: Две ракетки, две руки, газ и тормоз. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Один системный указатель не превращается в два. Проверять площадь панели и удобство рук.",
+                "en": "Two independent channels. Gesture: Move two contacts along two controlled values. In the interface: Two sliders, XY-control with separate roles. In the game: Two rackets, two hands, gas and brake. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: One system pointer does not turn into two. Check the panel area and hand comfort."
+              }
+            },
+            {
+              "id": "variant-76",
+              "text": {
+                "ru": "Чередование пальцев. Жест: Попеременно касаться двумя отслеживаемыми контактами. В интерфейсе: Барабанный ввод, метроном, обучение моторике. В игре: Бег, гребля, игра на ударных. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Два обычных клика позволяют вводить ритм, но не доказывают чередование физических пальцев.",
+                "en": "Alternating fingers. Gesture: Alternately touch with two tracked contacts. In the interface: Drum input, metronome, motor training. In game: Running, rowing, drumming. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Two regular clicks allow you to enter a rhythm, but do not prove the alternation of physical fingers."
+              }
+            },
+            {
+              "id": "variant-77",
+              "text": {
+                "ru": "Шагающие контакты. Жест: Последовательно переставлять пальцы с сохранением хотя бы одной опоры. В интерфейсе: Навигация по поверхности с непрерывным контактом. В игре: Карабканье, ходьба существа, перенос опор робота. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Роль должна назначаться по контакту и контексту, а не по догадке о том, какой это палец.",
+                "en": "Walking contacts. Gesture: Consistently rearrange fingers while maintaining at least one support. In the interface: Navigation on a surface with continuous contact. In the game: Climbing, walking of a creature, transfer of robot supports. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on a device does not guarantee this. Conditions: The role must be assigned by contact and context, and not by guessing which finger it is."
+              }
+            },
+            {
+              "id": "variant-78",
+              "text": {
+                "ru": "Порядок постановки. Жест: Считать разные последовательности появления контактов разными командами. В интерфейсе: Жестовый код, переключение инструмента. В игре: Замок, комбинация действий, последовательное включение механизмов. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Порядок поступления событий не всегда точно отражает почти одновременные касания.",
+                "en": "Staging order. Gesture: Count different sequences of appearance of contacts using different commands. In the interface: Gesture code, switching a tool. In the game: Lock, combination of actions, sequential activation of mechanisms. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on a device does not guarantee this. Conditions: The order of events does not always accurately reflect almost simultaneous touches."
+              }
+            },
+            {
+              "id": "variant-79",
+              "text": {
+                "ru": "Порядок снятия. Жест: Различать, какой из назначенных контактов отпущен первым. В интерфейсе: Разные способы подтверждения и завершения. В игре: Отпустить один захват, перебросить нагрузку, закончить комбинацию. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужны устойчивые идентификаторы в рамках последовательности и отдельная обработка отмены.",
+                "en": "Removal procedure. Gesture: Distinguish which of the assigned contacts is released first. In the interface: Different ways to confirm and complete. In the game: Release one grab, transfer a load, end a combination. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Stable identifiers within the sequence and separate cancellation processing are needed."
+              }
+            },
+            {
+              "id": "variant-80",
+              "text": {
+                "ru": "Добавление или снятие пальца во время движения. Жест: Переключать режим, сохраняя текущую траекторию. В интерфейсе: Точный режим, смена инструмента без остановки. В игре: Переход с ходьбы на бег, смена типа удара в замахе. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Распознаватель ОС может завершить один жест и начать другой; переход нельзя считать непрерывным по умолчанию.",
+                "en": "Adding or removing a finger while moving. Gesture: Switch mode while maintaining the current trajectory. In the interface: Precision mode, change tools without stopping. In the game: Switch from walking to running, change the type of impact in the swing. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The OS recognizer can end one gesture and begin another; The transition cannot be considered continuous by default."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Зоны и виртуальные органы управления",
+        "en": "Zones and virtual controls"
+      },
+      "description": {
+        "ru": "Участки поверхности получают виртуальные роли: стик, колесо, кнопка или независимая ось управления.",
+        "en": "Surface areas receive virtual roles: stick, wheel, button or independent control axis."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+        "https://www.w3.org/TR/pointerevents/",
+        "https://partner.steamgames.com/doc/features/steam_controller/input_source_modes?language=english"
+      ],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-81",
+              "text": {
+                "ru": "Сетка виртуальных кнопок. Жест: Разделить физическую панель на ячейки. В интерфейсе: Горячие команды, цифровая клавиатура, пульт. В игре: Быстрые слоты, барабанные пэды, способности. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужны экранная схема и достаточно крупные зоны; на панели нет самих подписей.",
+                "en": "Grid of virtual buttons. Gesture: Divide the physical panel into cells. In the interface: Hot commands, numeric keypad, remote control. In the game: Quick slots, drum pads, abilities. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: You need a screen layout and sufficiently large zones; There are no signatures on the panel."
+              }
+            },
+            {
+              "id": "variant-82",
+              "text": {
+                "ru": "Виртуальная крестовина. Жест: Центр и направления работают как цифровые кнопки. В интерфейсе: Навигация по меню, пошаговое смещение. В игре: Ходьба по клеткам, управление платформером. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Задаются нейтральная зона и правило диагоналей; специальный драйвер может отдать уже готовые кнопки.",
+                "en": "Virtual cross. Gesture: Center and directions work as number buttons. In the interface: Menu navigation, step-by-step shift. In the game: Walking on cells, platforming controls. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The neutral zone and the diagonal rule are set; a special driver can provide ready-made buttons."
+              }
+            },
+            {
+              "id": "variant-83",
+              "text": {
+                "ru": "Двумерный аналоговый пульт. Жест: Координаты X и Y независимо задают два параметра. В интерфейсе: Панорама и громкость, цвет и насыщенность, XY-эффект. В игре: Руль и газ, два параметра способности, управление балансом. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Это два программных параметра одной позиции, а не обязательно два контакта.",
+                "en": "Two-dimensional analogue remote control. Gesture: X and Y coordinates independently set two parameters. In the interface: Panorama and volume, color and saturation, XY effect. In the game: Steering wheel and gas, two ability parameters, balance control. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: These are two program parameters of one position, and not necessarily two contacts."
+              }
+            },
+            {
+              "id": "variant-84",
+              "text": {
+                "ru": "Радиальное меню. Жест: Открыть меню, выбрать сектор движением и подтвердить. В интерфейсе: Инструменты, команды, быстрый выбор. В игре: Колесо оружия, заклинаний или приказов. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Работает через курсор и удержание. Вариант с физическим центром панели требует T или специального режима.",
+                "en": "Radial menu. Gesture: Open the menu, select a sector with a movement and confirm. In the interface: Tools, commands, quick selection. In the game: Wheel of weapons, spells or orders. Access level: Cursor and buttons; The application gets the usual pointer and buttons. Physical fingers and their separation may be unknown to him. Conditions: Works through the cursor and holding. The option with a physical panel center requires T or special mode."
+              }
+            },
+            {
+              "id": "variant-85",
+              "text": {
+                "ru": "Внешнее кольцо как дополнительная команда. Жест: Выходить за заданный радиус относительно центра поверхности. В интерфейсе: Ускоренный режим или расширенный набор функций. В игре: Бег на внешнем кольце, ходьба ближе к центру. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Для обычного курсора возможен аналог относительно экранного центра; физическая зона требует координат панели.",
+                "en": "Outer ring as an additional command. Gesture: Go beyond a given radius relative to the center of the surface. In the interface: Accelerated mode or an expanded set of functions. In the game: Running on the outer ring, walking closer to the center. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: For a regular cursor, an analogue relative to the screen center is possible; physical zone requires panel coordinates."
+              }
+            },
+            {
+              "id": "variant-86",
+              "text": {
+                "ru": "Краевые полосы-ползунки. Жест: Выделить края под отдельные непрерывные параметры. В интерфейсе: Громкость, масштаб, прозрачность, временная ось. В игре: Здоровье инструмента, мощность, высота, тяга. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Контакты у края могут отфильтровываться драйвером. Не путать край панели с краем экранного окна.",
+                "en": "Edge slider stripes. Gesture: Select edges for individual continuous parameters. In the interface: Volume, scale, transparency, time axis. In the game: Tool health, power, height, thrust. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Contacts at the edge can be filtered out by the driver. Do not confuse the edge of the panel with the edge of the screen window."
+              }
+            },
+            {
+              "id": "variant-87",
+              "text": {
+                "ru": "Углы и квадранты. Жест: Назначить разным углам и половинам различные команды. В интерфейсе: Четыре быстрых инструмента или две группы управления. В игре: Левый и правый удары, четыре способности. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Это конкретная разметка поверхности; системные click-зоны не гарантируют произвольную разметку.",
+                "en": "Angles and quadrants. Gesture: Assign different commands to different corners and halves. In the interface: Four quick tools or two control groups. In the game: Left and right hits, four abilities. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: This is a specific surface marking; system click zones do not guarantee arbitrary markings."
+              }
+            },
+            {
+              "id": "variant-88",
+              "text": {
+                "ru": "Отображение в экранную область. Жест: Связать поверхность с выбранной частью экрана. В интерфейсе: Управление миникартой, конкретным монитором или панелью. В игре: Быстрый приказ на миникарте, точная работа с инвентарём. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Нужно учитывать пропорции и размер области. Steam Input описывает Mouse Region для поддерживаемых источников.",
+                "en": "Display in the screen area. Gesture: Link a surface to a selected part of the screen. In the interface: Control of the minimap, a specific monitor or panel. In the game: Quick order on the minimap, precise work with inventory. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The proportions and size of the area must be taken into account. Steam Input describes the Mouse Region for supported sources."
+              }
+            },
+            {
+              "id": "variant-89",
+              "text": {
+                "ru": "Модификатор другого устройства. Жест: С клавишей или кнопкой менять значение движения панели. В интерфейсе: Поворот вместо переноса, копирование при drag, точный ввод. В игре: Клавиатура отвечает за движение, панель за камеру; кнопка меняет инструмент. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Некоторые драйверы подавляют панель во время печати. Совместную работу надо проверить на устройстве.",
+                "en": "Modifier of another device. Gesture: With a key or button, change the value of the panel movement. In the interface: Rotate instead of transfer, copy when dragging, precise input. In the game: The keyboard is responsible for movement, the panel for the camera; button changes tool. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Some drivers suppress the panel during printing. Collaboration needs to be checked on the device."
+              }
+            },
+            {
+              "id": "variant-90",
+              "text": {
+                "ru": "Пересечение границ зон. Жест: Запускать действие при входе в зону или пересечении линии. В интерфейсе: Последовательный выбор, безкликовый ввод по маршруту. В игре: Струны, лазерные дорожки, ноты, соединение контактов. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Для зон физической панели нужен T. Для зон экранного холста достаточно траектории курсора P.",
+                "en": "Crossing zone boundaries. Gesture: Trigger an action when entering a zone or crossing a line. In the interface: Sequential selection, click-free input along a route. In the game: Strings, laser tracks, notes, connecting contacts. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: For zones of the physical panel, T is required. For zones of the screen canvas, the cursor trajectory P is sufficient."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Давление и сила",
+        "en": "Pressure and force"
+      },
+      "description": {
+        "ru": "Измеряемая сила нажатия задаёт значение или порог действия; обычный клик и размер контакта не заменяют датчик силы.",
+        "en": "The measured pressing force sets the value or threshold of action; normal click and contact size does not replace the force sensor."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102309",
+        "https://developer.apple.com/documentation/appkit/nsevent/pressurebehavior-swift.enum"
+      ],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-91",
+              "text": {
+                "ru": "Сильный клик. Жест: После обычного нажатия перейти к более сильному. В интерфейсе: Дополнительная контекстная команда или предпросмотр. В игре: Второе действие инструмента, усиленное взаимодействие. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Нужны поддерживаемые ступени давления; это не обычное долгое нажатие.",
+                "en": "Strong click. Gesture: After a normal press, move to a stronger one. In the interface: Additional contextual command or preview. In the game: Second tool action, enhanced interaction. Access level: Force sensor; Force measurement and a suitable API are needed. A simple click or a large contact area does not replace the sensor. Conditions: Supported pressure stages are required; This is not a normal long press."
+              }
+            },
+            {
+              "id": "variant-92",
+              "text": {
+                "ru": "Аналоговая сила. Жест: Непрерывно связывать величину нажатия с параметром. В интерфейсе: Интенсивность эффекта, уровень или усилие. В игре: Газ, тормоз, сжатие предмета, мощность двигателя. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Диапазон и шум зависят от устройства; давление не обязательно измеряется отдельно для каждого пальца.",
+                "en": "Analog power. Gesture: Continuously associate the amount of pressure with a parameter. In the interface: Effect intensity, level or force. In the game: Gas, brake, object compression, engine power. Access level: Force sensor; Force measurement and a suitable API are needed. A simple click or large contact area does not replace the sensor. Conditions: Range and noise vary by device; pressure is not necessarily measured separately for each finger."
+              }
+            },
+            {
+              "id": "variant-93",
+              "text": {
+                "ru": "Заряд от силы с отпусканием. Жест: Нарастить силу, затем снять нажатие для запуска. В интерфейсе: Выбор интенсивности перед подтверждением. В игре: Сильный бросок, удар, выстрел. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Заранее определить, используется сила в момент отпускания, пиковая сила или накопление во времени.",
+                "en": "Charge by force with release. Gesture: Increase the force, then release the press to start. In the interface: Select intensity before confirming. In the game: Strong throw, hit, shot. Access level: Force sensor; Force measurement and a suitable API are needed. A simple click or a large contact area does not replace the sensor. Conditions: Determine in advance whether a release force, a peak force, or an accumulation over time is used."
+              }
+            },
+            {
+              "id": "variant-94",
+              "text": {
+                "ru": "Несколько порогов силы. Жест: Разделить измеряемую силу на программные диапазоны. В интерфейсе: Предпросмотр, выбор, подтверждение одной кнопкой. В игре: Ходьба, бег, рывок или разные состояния инструмента. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Физически различимых щелчков может быть меньше, чем программных порогов. Нужен гистерезис.",
+                "en": "Several power thresholds. Gesture: Divide the measured force into program ranges. In the interface: Preview, selection, confirmation with one button. In the game: Walking, running, jerking or different instrument states. Access level: Force sensor; Force measurement and a suitable API are needed. A normal click or large contact area does not replace the sensor. Conditions: There may be fewer physically detectable clicks than software thresholds. Need hysteresis..."
+              }
+            },
+            {
+              "id": "variant-95",
+              "text": {
+                "ru": "Рисование с силой. Жест: Менять толщину или непрозрачность штриха по нажатию. В интерфейсе: Кисть, ретушь, рукописные пометки. В игре: Рисование рун с переменной толщиной, виртуальная гравировка. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Нужны одновременно траектория и давление; палец на trackpad не равен перу графического планшета.",
+                "en": "Drawing with power. Gesture: Change the thickness or opacity of a stroke by pressing. In the interface: Brush, retouching, handwritten notes. In the game: Drawing runes with variable thickness, virtual engraving. Access level: Force sensor; Force measurement and a suitable API are needed. A regular click or a large contact area does not replace the sensor. Conditions: Both trajectory and pressure are needed; the finger on the trackpad is not equal to the pen on the graphics tablet..."
+              }
+            },
+            {
+              "id": "variant-96",
+              "text": {
+                "ru": "Сила как скорость. Жест: Увеличивать темп изменения параметра при усилении нажатия. В интерфейсе: Быстрая перемотка, прокрутка или регулировка. В игре: Скорость механизма, намотки или движения. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Управление скоростью отличается от задания абсолютного значения; нужен понятный ноль.",
+                "en": "Strength is like speed. Gesture: Increase the rate of change of a parameter when pressing harder. In the interface: Fast rewind, scroll or adjust. In the game: Speed ​​of the mechanism, winding or movement. Access level: Force sensor; Force measurement and a suitable API are needed. A simple click or large contact area does not replace the sensor. Conditions: Speed ​​control is different from setting an absolute value; I need a clear zero..."
+              }
+            },
+            {
+              "id": "variant-97",
+              "text": {
+                "ru": "Сила как переключатель точности. Жест: Нажимать сильнее для более медленного и точного управления. В интерфейсе: Точный режим редактирования без отдельной клавиши. В игре: Стабилизация прицела или аккуратное манипулирование. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Нажатие само может сдвигать палец; удобство нужно проверять на реальной панели.",
+                "en": "Power as a precision switch. Gesture: Press harder for slower, more precise control. In the interface: Precise editing mode without a separate key. In the game: Crosshair stabilization or careful manipulation. Access level: Force sensor; Force measurement and a suitable API are needed. A regular click or a large contact area does not replace the sensor. Conditions: Pressing itself can move the finger; Convenience needs to be checked on a real panel."
+              }
+            },
+            {
+              "id": "variant-98",
+              "text": {
+                "ru": "Дополнительное нажатие во время drag. Жест: В процессе переноса менять силу и включать вторую функцию. В интерфейсе: Предпросмотр приёмника, раскрытие вложенной папки, дополнительный режим. В игре: Сжать захваченный предмет, изменить хват или силу инструмента. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Нужно согласовать pressure-события с захватом указателя и системным поведением.",
+                "en": "Additional click while dragging. Gesture: During the transfer process, change the force and enable the second function. In the interface: Preview of the receiver, expand a subfolder, additional mode. In the game: Squeeze the captured object, change the grip or strength of the tool. Access level: Force sensor; Force measurement and a suitable API are needed. A regular click or a large contact area does not replace the sensor. Conditions: Pressure events must be coordinated with pointer capture and system behavior."
+              }
+            },
+            {
+              "id": "variant-99",
+              "text": {
+                "ru": "Импульсы силы. Жест: Усиливать и ослаблять нажатие без полного отрыва. В интерфейсе: Экспрессивный музыкальный ввод, управление импульсами. В игре: Насос, пульсация способности, передача ритма силой. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Обычный клик не сообщает такую кривую; требуется сглаживание и пороги с допуском.",
+                "en": "Force impulses. Gesture: Strengthen and release pressure without completely lifting off. In the interface: Expressive music input, impulse control. In the game: Pump, pulsation ability, transmitting rhythm by force. Access level: Force sensor; Force measurement and a suitable API are needed. A normal click or a large contact area does not replace the sensor. Conditions: A normal click does not report such a curve; smoothing and thresholds with tolerance are required."
+              }
+            },
+            {
+              "id": "variant-100",
+              "text": {
+                "ru": "Удержание силы в диапазоне. Жест: Сохранять давление между нижней и верхней границами. В интерфейсе: Тренажёр дозирования усилия. В игре: Тонкая работа с хрупким предметом, натяжение струны, обезвреживание. Уровень доступа: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик. Условия: Это авторская игровая модель; пороги нужно калибровать, а альтернативу давать по времени или ползунку.",
+                "en": "Keeping strength in range. Gesture: Maintain pressure between the lower and upper boundaries. In the interface: Force dosing simulator. In the game: Fine work with a fragile object, string tension, neutralization. Access level: Force sensor; Force measurement and a suitable API are needed. A regular click or a large contact area does not replace the sensor. Conditions: This is an original gaming model; thresholds need to be calibrated, and an alternative given by time or slider."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Составные схемы управления",
+        "en": "Composite control schemes"
+      },
+      "description": {
+        "ru": "Несколько сигналов или осей объединяются в одно правило управления с отдельными ролями точности, направления и подтверждения.",
+        "en": "Multiple signals or axes are combined into one control rule with separate roles for accuracy, direction, and confirmation."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [
+        "https://support.apple.com/en-us/102482",
+        "https://www.w3.org/TR/pointerevents/",
+        "https://partner.steamgames.com/doc/features/steam_controller/input_source_modes?language=english"
+      ],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-101",
+              "text": {
+                "ru": "Виртуальный трекбол. Жест: Толчком задать скорость, после отрыва продолжить движение с инерцией. В интерфейсе: Дальний перенос указателя, вращение модели. В игре: Инерционная камера или вращающийся шар. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Для точного запуска по отрыву нужен контактный сигнал или специальный режим. Программная инерция не является физическим вращением панели.",
+                "en": "Virtual trackball. Gesture: Push to set the speed, after lifting off, continue moving with inertia. In the interface: Long-distance pointer movement, rotation of the model. In the game: Inertial chamber or rotating ball. Access level: Separate contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: For accurate lift-off triggering, a contact signal or a special mode is required. Software inertia is not physical rotation of the panel."
+              }
+            },
+            {
+              "id": "variant-102",
+              "text": {
+                "ru": "Продолжение движения у края. Жест: Довести контакт до края и продолжать менять параметр без дальнейшего перемещения. В интерфейсе: Прокрутка или вращение без постоянной перестановки пальца. В игре: Непрерывный разворот камеры, вращение башни. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Отдельно задать скорость у края и условие остановки. Драйвер может фильтровать краевые контакты.",
+                "en": "Continue moving at the edge. Gesture: Bring the contact to the edge and continue changing the parameter without further movement. In the interface: Scrolling or rotating without constantly moving the finger. In the game: Continuous camera rotation, tower rotation. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: Separately set the speed at the edge and the stopping condition. The driver can filter edge contacts."
+              }
+            },
+            {
+              "id": "variant-103",
+              "text": {
+                "ru": "Свайп от физического края. Жест: Учитывать не только направление, но и начало контакта у края панели. В интерфейсе: Выдвижная панель, дополнительный набор команд. В игре: Открытие инвентаря, карты или скрытой панели. Уровень доступа: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует. Условия: Край панели и край экранного окна различаются. ОС может перехватывать этот жест для глобальной функции.",
+                "en": "Swipe from the physical edge. Gesture: Consider not only the direction, but also the beginning of the contact at the edge of the panel. In the interface: Sliding panel, an additional set of commands. In the game: Opening inventory, map or hidden panel. Access level: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this. Conditions: The edge of the panel and the edge of the screen window are different. The OS may intercept this gesture for a global function."
+              }
+            },
+            {
+              "id": "variant-104",
+              "text": {
+                "ru": "Цепочка жестов. Жест: Выполнить несколько распознаваемых движений в заданном порядке. В интерфейсе: Жестовый макрос или многошаговая команда. В игре: Комбо, пароль, последовательность рун. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Через P можно распознавать последовательность drag и кликов. Цепочка без кнопки требует T; нужен понятный сброс ошибки.",
+                "en": "A chain of gestures. Gesture: Perform several recognizable movements in a given order. In the interface: Gesture macro or multi-step command. In the game: Combo, password, rune sequence. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: Through P, the sequence of drags and clicks can be recognized. A chain without a button requires T; I need a clear error reset."
+              }
+            },
+            {
+              "id": "variant-105",
+              "text": {
+                "ru": "Иерархическое меню росчерком. Жест: Последовательными направлениями выбрать раздел и вложенную команду. В интерфейсе: Быстрые команды в marking menu после обучения. В игре: Выбор категории и конкретного заклинания одним маршрутом. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Нужна видимая версия меню для обучения и запасной способ выбора.",
+                "en": "Hierarchical menu with a stroke. Gesture: Use sequential directions to select a section and a nested command. In the interface: Quick commands in the marking menu after training. In the game: Select a category and a specific spell in one route. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: A visible version of the menu is needed for training and a backup method for selecting."
+              }
+            },
+            {
+              "id": "variant-106",
+              "text": {
+                "ru": "Точность по поперечному смещению. Жест: Одной компонентой drag менять значение, другой регулировать чувствительность. В интерфейсе: Точный скраббинг: по горизонтали время, по вертикали масштаб шага. В игре: Выбор силы и точности, настройка временного механизма. Уровень доступа: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны. Условия: Это программное отображение траектории курсора. Обычная двухпальцевая прокрутка не гарантирует ту же геометрию.",
+                "en": "Lateral displacement accuracy. Gesture: Use one drag component to change the value, the other to adjust the sensitivity. In the interface: Precise scrubbing: horizontal time, vertical step scale. In the game: Select strength and accuracy, adjust the timing mechanism. Access level: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him. Conditions: This is a software display of the cursor trajectory. Regular two-finger scrolling does not guarantee the same geometry."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Тактильная обратная связь",
+        "en": "Haptic feedback"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "Тактильные деления",
+            "en": "Tactile divisions"
+          },
+          "text": {
+            "ru": "Короткий импульс при пересечении шага или сектора.; Ползунок, выбор кадра, радиальное меню.; Сейф, колесо оружия, переключатель.",
+            "en": "A short impulse when crossing a step or sector.; Slider, frame selection, radial menu.; Safe, weapon wheel, switch."
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "Ощущение границы",
+            "en": "Feeling the border"
+          },
+          "text": {
+            "ru": "Импульс при достижении края допустимого диапазона.; Конец списка или предел регулировки.; Конец хода рычага, край карты.",
+            "en": "Impulse when reaching the edge of the permissible range.; End of list or limit of adjustment.; End of lever stroke, edge of card."
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "Подтверждение привязки",
+            "en": "Binding confirmation"
+          },
+          "text": {
+            "ru": "Импульс при попадании на направляющую или точное значение.; Выравнивание, стыковка объектов.; Пазл, соединение деталей.",
+            "en": "Impulse when hitting the guide or exact value.; Alignment, joining of objects.; Puzzle, connecting parts."
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "Подтверждение состояния",
+            "en": "Status Confirmation"
+          },
+          "text": {
+            "ru": "Отдача при выборе, захвате, достижении порога или завершении.; Отличимые стадии операции.; Захват, заряд готов, действие подтверждено.",
+            "en": "Recoil when selected, captured, reached threshold or completed.; Distinguishable stages of the operation.; Capture, charge ready, action confirmed."
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "Тактильный рисунок движения",
+            "en": "Tactile movement pattern"
+          },
+          "text": {
+            "ru": "Импульсы по мере перемещения имитируют поверхность.; Виртуальная шкала или фактура.; Шероховатость, работа инструмента, движение по зубцам.",
+            "en": "The pulses imitate the surface as they move; Virtual scale or texture.; Roughness, tool operation, movement along the teeth."
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "Сигнал события или ошибки",
+            "en": "Event or error signal"
+          },
+          "text": {
+            "ru": "Различимый короткий сигнал о результате.; Недопустимая цель, ошибка, завершение.; Столкновение, тревога, неудачный захват.",
+            "en": "An audible short signal about the result.; Invalid target, error, termination.; Collision, alarm, failed capture."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Доступ к вводу",
+        "en": "Input Access"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "P",
+            "en": "P"
+          },
+          "text": {
+            "ru": "Описание: Курсор и кнопки; Приложение получает обычный указатель и кнопки. Физические пальцы и их отрыв при этом могут быть ему неизвестны.",
+            "en": "Description: Cursor and buttons; The application gets the usual pointer and buttons. The physical fingers and their separation may be unknown to him."
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "G",
+            "en": "G"
+          },
+          "text": {
+            "ru": "Описание: Готовый жест; Нужен жест, передаваемый ОС или фреймворком: прокрутка, масштабирование, поворот, swipe или hold. Набор различается.",
+            "en": "Description: Ready gesture; You need a gesture transmitted by the OS or framework: scroll, zoom, rotate, swipe or hold. The set varies."
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "T",
+            "en": "T"
+          },
+          "text": {
+            "ru": "Описание: Отдельные контакты; Нужен доступ к координатам, фазам и идентификаторам контактов. Наличие multitouch у устройства этого не гарантирует.",
+            "en": "Description: Individual contacts; You need access to coordinates, phases and contact IDs. The presence of multitouch on the device does not guarantee this."
+          }
+        },
+        {
+          "id": "note-2-entry-4",
+          "title": {
+            "ru": "F",
+            "en": "F"
+          },
+          "text": {
+            "ru": "Описание: Датчик силы; Нужны измерение силы и подходящий API. Обычный клик или большая площадь контакта не заменяют датчик.",
+            "en": "Description: Force sensor; Force measurement and a suitable API are needed. A regular click or a large contact area does not replace the sensor."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Что влияет на реализуемость",
+        "en": "What affects feasibility"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Тачпад является косвенным устройством: положение экранного курсора обычно не совпадает с положением пальца на поверхности. Выход курсора из элемента не означает отрыв пальца.",
+            "en": "The touchpad is an indirect device: the position of the screen cursor is usually not the same as the position of the finger on the surface. The cursor leaving the element does not mean lifting your finger."
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Системные жесты, особенно с тремя и четырьмя пальцами и от края, могут переключать приложения или рабочие столы. Приложение не всегда может их получить. Жесты macOS; Жесты Windows.",
+            "en": "System gestures, especially three- and four-finger and edge-based gestures, can switch apps or desktops. The application may not always receive them. macOS Gestures; Windows Gestures."
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Веб-приложение обычно работает с указателем и wheel-событиями. Pointer Events сами по себе не дают переносимого доступа ко всем пальцам ноутбучного тачпада. Наличие свойства pressure не доказывает измерение силы. W3C: Pointer Events.",
+            "en": "A web application typically works with a pointer and wheel events. Pointer Events by themselves do not provide portable access to all fingers of a laptop touchpad. The presence of the pressure property does not prove the measurement of force. W3C: Pointer Events."
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Число видимых контактов зависит от оборудования, драйвера и отсеивания ладони и большого пальца. Идентификатор контакта не сообщает, какой это анатомический палец. AppKit: контакты и системные жесты; libinput: swipe, pinch, hold.",
+            "en": "The number of visible contacts depends on the hardware, driver, and palm and thumb screening. The contact ID does not tell you which anatomical finger it is. AppKit: contacts and system gestures; libinput: swipe, pinch, hold."
+          }
+        },
+        {
+          "id": "note-3-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Датчик силы, сильный клик и тактильная отдача являются разными возможностями. Площадь контакта не равна силе, а сила не обязательно доступна отдельно для каждого пальца. Force Touch и тактильная отдача; AppKit: поведение давления.",
+            "en": "Force sensor, strong click and haptic feedback are different possibilities. Contact area does not equal force, and force is not necessarily available to each finger individually. Force Touch and haptic feedback; AppKit: pressure behavior."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Как выбирать механику",
+        "en": "How to choose mechanics"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для переносимого варианта начать с наведения, клика, перетаскивания и прокрутки. Давление и многопальцевые команды добавлять после проверки устройства.",
+            "en": "For a portable option, start with hover, click, drag and scroll. Add pressure and multi-finger commands after checking the device."
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделять физический сигнал и правило игры: сила, время удержания, длина движения и скорость являются разными параметрами.",
+            "en": "Separate the physical signal and the rule of the game: strength, holding time, length of movement and speed are different parameters."
+          }
+        },
+        {
+          "id": "note-4-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Показывать начало захвата, активный режим, порог, успешное завершение и отмену. Давать предварительный результат там, где это помогает.",
+            "en": "Show start of capture, active mode, threshold, successful completion and cancellation. Give preliminary results where it helps."
+          }
+        },
+        {
+          "id": "note-4-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Обрабатывать отмену жеста, потерю фокуса и захвата. Незавершённый жест не должен оставлять выстрел, движение или перенос включённым.",
+            "en": "Handle gesture cancellation, loss of focus and capture. An incomplete gesture should not leave a shot, move, or carry enabled."
+          }
+        },
+        {
+          "id": "note-4-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверять малую площадь панели, необходимость переставлять палец, работу одновременно с клавиатурой и удобство без продавливания.",
+            "en": "Check the small area of ​​the panel, the need to move your finger, work simultaneously with the keyboard, and comfort without pressing."
+          }
+        },
+        {
+          "id": "note-4-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Предусмотреть альтернативу давлению, сложным аккордам и длинным удержаниям. Не назначать единственный путь к важной команде на скрытый или системный жест.",
+            "en": "Provide alternatives to pressure, complex chords, and long holds. Don't assign the only path to an important command to a hidden or system gesture."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-5",
+      "title": {
+        "ru": "Что требует отдельного оборудования или исследования",
+        "en": "What requires separate equipment or research"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-5-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наклон пальца, его анатомическое распознавание, форма и площадь контакта, касание костяшкой, ладонь как команда, зависание над поверхностью и ввод стилусом не считаются базовыми каналами обычного тачпада. Отдельные устройства могут отдавать дополнительные данные, но это нужно подтвердить документацией и измерением. Отсеивание ладони может намеренно скрывать такие контакты.",
+            "en": "Finger tilt, anatomical recognition, contact shape and area, knuckle touch, palm as a command, hover and stylus input are not considered basic channels of a conventional touchpad. Individual devices may provide additional data, but this must be confirmed by documentation and measurement. Palm screening may intentionally hide such contacts."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-6",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-6-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-6-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Жесты macOS",
+        "en": "macOS Gestures"
+      },
+      "url": "https://support.apple.com/en-us/102482",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Жесты Windows",
+        "en": "Windows Gestures"
+      },
+      "url": "https://support.microsoft.com/en-us/windows/hardware/input-devices/touch-gestures-for-windows",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Клики и перетаскивание Surface",
+        "en": "Clicking and dragging Surface"
+      },
+      "url": "https://support.microsoft.com/en-us/surface/accessories/cover-keyboard/surface-touchpad-use-and-settings",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "AppKit: контакты и системные жесты",
+        "en": "AppKit: contacts and system gestures"
+      },
+      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Force Touch и тактильная отдача",
+        "en": "Force Touch and haptic feedback"
+      },
+      "url": "https://support.apple.com/en-us/102309",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "AppKit: поведение давления",
+        "en": "AppKit: pressure behavior"
+      },
+      "url": "https://developer.apple.com/documentation/appkit/nsevent/pressurebehavior-swift.enum",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "libinput: swipe, pinch, hold",
+        "en": "libinput: swipe, pinch, hold"
+      },
+      "url": "https://wayland.freedesktop.org/libinput/doc/latest/gestures.html",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Pointer Events",
+        "en": "W3C: Pointer Events"
+      },
+      "url": "https://www.w3.org/TR/pointerevents/",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "Steam Input: режимы поверхности",
+        "en": "Steam Input: Surface Modes"
+      },
+      "url": "https://partner.steamgames.com/doc/features/steam_controller/input_source_modes?language=english",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    },
+    {
+      "title": {
+        "ru": "AppKit: тактильная обратная связь",
+        "en": "AppKit: Haptic Feedback"
+      },
+      "url": "https://developer.apple.com/documentation/appkit/nshapticfeedbackmanager",
+      "description": {
+        "ru": "Первичный источник для отдельных приёмов; не подтверждает всю авторскую классификацию.",
+        "en": "Primary source for individual techniques; does not confirm the entire author's classification."
+      }
+    }
+  ]
+}

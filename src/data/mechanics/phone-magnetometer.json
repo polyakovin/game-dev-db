@@ -1,0 +1,1780 @@
+{
+  "id": "phone-magnetometer",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Магнитометр телефона",
+    "en": "Phone magnetometer interactions"
+  },
+  "description": {
+    "ru": "Магнитометр телефона: действия, варианты, применение и ограничения. Полный список из обсуждения, с поиском и источниками.",
+    "en": "Phone magnetometer: actions, options, applications and limitations. Complete list from the discussion, with search and sources."
+  },
+  "intro": {
+    "ru": "Авторская рабочая классификация для проектирования игр и взаимодействий. Варианты могут пересекаться и сочетаться; список не является общепринятым стандартом или доказанно исчерпывающим перечнем. Примеры применения условные, если рядом не указано конкретное подтверждаемое наблюдение. Источники поддерживают отдельные приёмы и технические ограничения.",
+    "en": "Author's working classification for designing games and interactions. Options can overlap and combine; the list is not a generally accepted standard or proven exhaustive list. Application examples are conditional unless a specific verifiable observation is indicated nearby. Sources support individual techniques and technical limitations."
+  },
+  "provenance": "Original editorial design catalog consolidated from project discussions on 2026-10-20. Complete discussion item lists and contextual limitations are preserved; linked primary sources support specific techniques, not the entire classification. English translation was prepared with machine assistance and editorial review.",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": {
+        "ru": "Каталог механик",
+        "en": "Mechanics catalog"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "family-01",
+      "section": "section-1",
+      "title": {
+        "ru": "Направление телефона",
+        "en": "Phone heading"
+      },
+      "description": {
+        "ru": "Азимут телефона относительно магнитного ориентира преобразуется в направление прицела, выбор сектора или маршрут.",
+        "en": "The azimuth of the phone relative to the magnetic landmark is converted into the direction of the sight, the choice of sector or route."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-01-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m001",
+              "text": {
+                "ru": "Прицеливание направлением. Действие: Поворачивать телефон; азимут задаёт горизонтальный угол прицела. Применение: Артиллерия, поиск созвездий, аудиотир вокруг игрока. Ограничения: Для вертикального прицела нужен наклон; точность компаса зависит от окружения. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Aiming by direction. Action: Rotate the phone; azimuth sets the horizontal angle of the sight. Application: Artillery, search for constellations, audio shooting range around the player. Limitations: A tilt is required for the vertical sight; The accuracy of the compass depends on the environment. Equipment: Phone without external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m002",
+              "text": {
+                "ru": "Радиальное меню. Действие: Наводить телефон в один из угловых секторов; сектор выбирает команду. Применение: Выбор заклинания, ответа, инструмента без касания экрана. Ограничения: Нужны широкие сектора и задержка переключения на границах. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Radial menu. Action: Point the phone at one of the corner sectors; sector selects a command. Application: Select a spell, answer, tool without touching the screen. Limitations: Need wide sectors and switching delay at the boundaries. Equipment: Phone without an external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m003",
+              "text": {
+                "ru": "Мир по сторонам света. Действие: В каждом направлении открывать свой слой или область мира. Применение: Четыре царства, ориентирование, пространственная аудиоистория. Ограничения: Содержание связано с азимутом, а не с реальным местоположением. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "The world according to the cardinal points. Action: In each direction, open a different layer or area of ​​the world. Application: Four kingdoms, orientation, spatial audio history. Limitations: Content related to azimuth, not real location. Equipment: Phone without external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m004",
+              "text": {
+                "ru": "Совмещение направления. Действие: Совместить азимут с заданным углом в пределах допуска. Применение: Настройка антенны, дверной замок, отражение луча. Ограничения: Добавить допуск и явное подтверждение попадания. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Combining directions. Action: Align azimuth with a given angle within tolerance. Application: Antenna alignment, door lock, beam reflection. Limitations: Add tolerance and explicit confirmation of hit. Equipment: Phone without external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m005",
+              "text": {
+                "ru": "Запретный сектор. Действие: Считать попадание телефона в опасный сектор ошибкой. Применение: Не смотреть на чудовище, не направлять луч на охранника. Ограничения: Использовать допуск и время реакции, чтобы шум не наказывал игрока. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Forbidden sector. Action: Consider the phone entering a dangerous sector as an error. Application: Do not look at the monster, do not direct the beam at the guard. Limitations: Use tolerance and reaction time so that the noise does not punish the player. Equipment: Phone without an external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m006",
+              "text": {
+                "ru": "Обзор на 360 градусов. Действие: Поворот телефона раскрывает части панорамы и окружающего звука. Применение: Панорамный квест, поиск объектов, музыкальные слои вокруг игрока. Ограничения: Компас задаёт мировой азимут; плавность обычно обеспечивает гироскоп. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "360 degree view. Action: Rotating the phone reveals parts of the panorama and ambient sound. Application: Panoramic quest, searching for objects, musical layers around the player. Limitations: The compass sets the world azimuth; smoothness is usually ensured by a gyroscope. Equipment: Phone without an external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m007",
+              "text": {
+                "ru": "Относительный ноль. Действие: Сохранить текущее направление; последующие углы считать относительно него. Применение: Управление турелью из удобной позы, меню относительно кресла. Ограничения: Если север не нужен, гироскоп часто предпочтительнее магнитометра. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Relative zero. Action: Save current direction; subsequent angles are considered relative to it. Application: Controlling the turret from a comfortable position, menu relative to the chair. Limitations: If north is not needed, a gyroscope is often preferable to a magnetometer. Equipment: Telephone without an external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m008",
+              "text": {
+                "ru": "Возврат к направлению. Действие: Показать направление, скрыть подсказку и попросить восстановить его. Применение: Тренировка пространственной памяти, головоломка с ориентиром. Ограничения: Оценивать угловую ошибку с допуском, а не требовать точного совпадения. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Return to direction. Action: Show the direction, hide the hint and ask to restore it. Application: Spatial memory training, landmark puzzle. Limitations: Estimate angular error with a tolerance, rather than requiring an exact match. Equipment: Phone without external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-02",
+      "section": "section-1",
+      "title": {
+        "ru": "Повороты во времени",
+        "en": "Rotation over time"
+      },
+      "description": {
+        "ru": "Изменение направления во времени задаёт поворот, последовательность или ритм действия; для устойчивости учитывают окружение.",
+        "en": "A change in direction over time sets the turn, sequence, or rhythm of an action; For sustainability, the environment is taken into account."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-02-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m009",
+              "text": {
+                "ru": "Последовательность направлений. Действие: Повернуться к нескольким азимутам в заданном порядке. Применение: Комбинационный замок, маршрут ритуала, повторение команды. Ограничения: Отделять достигнутый сектор от случайного пересечения по пути. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Sequence of directions. Action: Turn to several azimuths in a given order. Application: Combination lock, ritual route, command repetition. Limitations: Separate the achieved sector from a random intersection along the way. Equipment: Telephone without an external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m010",
+              "text": {
+                "ru": "Код с направлением вращения. Действие: Различать приход к углу по часовой стрелке и против неё. Применение: Сейф, вращающийся механизм, навигационная загадка. Ограничения: Нужно разворачивать угол через переход 359→0 градусов. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Code with direction of rotation. Action: Distinguish between approaching a corner clockwise and counterclockwise. Application: Safe, rotating mechanism, navigation riddle. Limitations: You need to turn the corner through the transition 359→0 degrees. Equipment: Phone without an external magnet. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m011",
+              "text": {
+                "ru": "Несколько оборотов. Действие: Считать полные повороты и их направление. Применение: Завести механизм, намотать верёвку, зарядить артефакт. Ограничения: Считать приращения угла; слишком быстрые повороты требуют гироскопа. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "A few turns. Action: Count complete turns and their direction. Application: Start a mechanism, wind a rope, load an artifact. Limitations: Count angle increments; turning too fast requires a gyroscope. Equipment: Phone without external magnet. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m012",
+              "text": {
+                "ru": "Удержание курса. Действие: Сохранять направление внутри окна несколько секунд. Применение: Стабилизация антенны, концентрация, защита канала. Ограничения: Использовать окно допуска и паузу при недостоверном компасе. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Staying on course. Action: Maintain the direction inside the window for several seconds. Application: Antenna stabilization, concentration, channel protection. Limitations: Use the tolerance window and pause when the compass is unreliable. Equipment: Phone without an external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m013",
+              "text": {
+                "ru": "Ритм поворотов. Действие: Достигать угловых секторов в такт. Применение: Танцевальная игра, музыкальный бой, световой дирижёр. Ограничения: Событие попадания в сектор лучше оценивать с временным окном. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Rhythm of turns. Action: Reach corner sectors on the beat. Application: Dance game, musical battle, light conductor. Limitations: The event of entering a sector is better assessed with a time window. Equipment: Phone without an external magnet. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m014",
+              "text": {
+                "ru": "Качание между границами. Действие: Попеременно достигать двух заданных направлений. Применение: Пилка, маятник, раскачка лодки, меха. Ограничения: Определять полный цикл между границами, а не считать шум. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Swinging between boundaries. Action: Alternately achieve two given directions. Application: File, pendulum, rocking a boat, bellows. Limitations: Determine a complete cycle between boundaries, and not count noise. Equipment: Telephone without an external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m015",
+              "text": {
+                "ru": "Скорость разворота. Действие: Связать скорость изменения мирового азимута с мощностью действия. Применение: Разгон вихря, управление панорамой, дозирование вращения. Ограничения: Производная компаса шумная; практически полезно объединение с гироскопом. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Turning speed. Action: Link the rate of change of world azimuth with the power of the action. Application: Acceleration of a vortex, panorama control, dosing of rotation. Limitations: The compass derivative is noisy; combination with a gyroscope is practically useful. Equipment: Phone without an external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m016",
+              "text": {
+                "ru": "Слежение за движущимся азимутом. Действие: Удерживать телефон на направлении цели, меняющемся со временем. Применение: Сопровождение спутника, настройка радара, дуэль на внимательность. Ограничения: Скорость цели и допуск должны учитывать задержку датчиков. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Tracking moving azimuth. Action: Keep the phone on the target's direction, changing over time. Application: Satellite tracking, radar alignment, duel of attention. Limitations: Target speed and tolerance must take into account the delay of the sensors. Equipment: Phone without an external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-03",
+      "section": "section-1",
+      "title": {
+        "ru": "Магнит как кнопка",
+        "en": "Using a magnet as a button"
+      },
+      "description": {
+        "ru": "Приближение и удаление магнитного источника пересекают порог сигнала и создают дискретную команду.",
+        "en": "Approaching and moving away the magnetic source crosses the signal threshold and creates a discrete command."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-03-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m017",
+              "text": {
+                "ru": "Поднести для активации. Действие: Поднести магнит; превышение порога изменения поля включает действие. Применение: Физический ключ, запуск сканера, бесконтактная кнопка. Ограничения: Порог выбирать после измерения фона; сильное поле может насытить датчик. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Bring it to activate. Action: Apply the magnet; exceeding the field change threshold triggers the action. Application: Physical key, scanner launch, contactless button. Limitations: Select the threshold after background measurement; strong field may saturate the sensor. Equipment: Phone and external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m018",
+              "text": {
+                "ru": "Убрать для активации. Действие: Снять магнит с фиксированного места; изменение поля запускает действие. Применение: Вытащить чеку, снять печать, извлечь батарею в квесте. Ограничения: Проверять переход состояния; постоянный магнит может влиять на автокалибровку. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Remove to activate. Action: Remove the magnet from its fixed place; changing the field triggers the action. Application: Pull out the pin, remove the seal, remove the battery in the quest. Limitations: Check state transition; a permanent magnet can affect auto-calibration. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m019",
+              "text": {
+                "ru": "Удержание магнита. Действие: Поддерживать магнит в активной зоне, пока нужно действие. Применение: Щит, луч, канал лечения, удержание двери. Ограничения: Нужны разные пороги входа и выхода, иначе состояние дребезжит. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Magnet retention. Action: Maintain a magnet in the active zone as long as an action is needed. Application: Shield, beam, healing channel, door holding. Limitations: Different entry and exit thresholds are needed, otherwise the state rattles. Equipment: Phone and external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m020",
+              "text": {
+                "ru": "Двойной магнитный импульс. Действие: Дважды поднести и убрать магнит за ограниченное время. Применение: Двойной выстрел, смена инструмента, подтверждение редкого действия. Ограничения: Задать минимальный интервал и защиту от повторного срабатывания. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Double magnetic pulse. Action: Apply and remove the magnet twice in a limited time. Application: Double shot, tool change, confirmation of a rare action. Limitations: Set the minimum interval and protection against re-activation. Equipment: Phone and external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m021",
+              "text": {
+                "ru": "Короткий и длинный импульс. Действие: Различать длительность нахождения в активной зоне. Применение: Лёгкая и тяжёлая атака, короткая и длинная команда. Ограничения: Для пользователя нужна понятная обратная связь о распознанной длительности. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Способ ввода.",
+                "en": "Short and long impulse. Action: Distinguish the duration of stay in the active zone. Application: Light and heavy attack, short and long command. Limitations: The user needs clear feedback about the recognized duration. Equipment: Phone and external magnet. Preparation: Easy start. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m022",
+              "text": {
+                "ru": "Подтверждение отпусканием. Действие: Ввод начинается при поднесении, подтверждается при удалении магнита. Применение: Зарядить и отпустить выстрел, выбрать и применить действие. Ограничения: Не путать потерю сигнала из-за движения телефона с намеренным отпусканием. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Confirmation by letting go. Action: Input begins when presented, confirmed when magnet is removed. Application: Load and release shot, select and apply action. Limitations: Do not confuse loss of signal due to phone movement with intentional release. Equipment: Phone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m023",
+              "text": {
+                "ru": "Несколько порогов. Действие: Проходить последовательные уровни изменения поля. Применение: Ступени заряда, переключение передач, три положения рычага без механики. Ограничения: Уровни требуют калибровки; поле не равно расстоянию в сантиметрах. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Several rapids. Action: Go through successive levels of field change. Application: Charge stages, gear shifting, three lever positions without mechanics. Limitations: Levels require calibration; the field is not equal to the distance in centimeters. Equipment: Telephone and external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m024",
+              "text": {
+                "ru": "Ритм приближений. Действие: Чередовать активное и неактивное состояния по рисунку. Применение: Магнитная азбука, ритм-игра, повторение сигнала. Ограничения: Работает как временной код, а не как передача уникальной личности предмета. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "The rhythm of approaches. Action: Alternate active and inactive states according to the pattern. Applications: Magnetic alphabet, rhythm game, signal repetition. Limitations: Works as a time code, not as a transfer of the unique personality of the item. Equipment: Phone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-04",
+      "section": "section-1",
+      "title": {
+        "ru": "Сила поля как аналоговый ввод",
+        "en": "Field strength as analog input"
+      },
+      "description": {
+        "ru": "Относительное изменение магнитного поля задаёт непрерывный параметр после настройки диапазона и нейтрального состояния.",
+        "en": "The relative change in magnetic field sets a continuous parameter after setting the range and neutral state."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-04-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m025",
+              "text": {
+                "ru": "Аналоговая близость. Действие: Плавно менять расстояние до магнита; нормированное изменение поля задаёт параметр. Применение: Газ, громкость, высота ноты, интенсивность заклинания. Ограничения: Приближение не всегда увеличивает модуль суммарного поля; калибровать рабочую траекторию. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Analog proximity. Action: Smoothly change the distance to the magnet; the normalized change in the field sets the parameter. Application: Gas, volume, note pitch, spell intensity. Limitations: Approximation does not always increase the module of the total field; calibrate the working trajectory. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m026",
+              "text": {
+                "ru": "Настройка в окно. Действие: Найти и удерживать значение между нижним и верхним порогом. Применение: Настроить радиостанцию, стабилизировать реактор, открыть замок. Ограничения: Окно должно быть шире шума и доступно в удобной позе. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Window setting. Action: Find and hold the value between the lower and upper threshold. Application: Set up the radio station, stabilize the reactor, open the lock. Limitations: The window must be wider than the noise and accessible in a comfortable position. Equipment: Telephone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m027",
+              "text": {
+                "ru": "Риск перегрузки. Действие: Наращивать значение, останавливаясь до опасного порога. Применение: Рискованный заряд, перегрев, добыча ресурса на грани. Ограничения: Перегрузка является игровым правилом; не требовать физического насыщения датчика. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Risk of overload. Action: Increase the value, stopping to a dangerous threshold. Application: Risky charge, overheating, resource extraction on the edge. Limitations: Overload is a game rule; do not require physical saturation of the sensor. Equipment: Phone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m028",
+              "text": {
+                "ru": "Накопление воздействия. Действие: Накапливать игровой ресурс по времени и величине изменения поля. Применение: Перекачка энергии, зарядка, плавка, медленный взлом. Ограничения: Интегрируется игровая шкала; показания не измеряют переданную физическую энергию. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Accumulation of impact. Action: Accumulate game resource based on time and magnitude of field change. Application: Energy transfer, charging, melting, slow hacking. Limitations: The game scale is integrated; readings do not measure physical energy transferred. Equipment: Telephone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m029",
+              "text": {
+                "ru": "Повторение кривой. Действие: Движением магнита повторять целевой график силы сигнала. Применение: Музыкальная фраза, точное изготовление, учебный тренажёр. Ограничения: Сравнивать сглаженные нормированные кривые с допуском по времени. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Repeating the curve. Action: Repeat the target signal strength graph by moving the magnet. Application: Musical phrase, precision manufacturing, training simulator. Limitations: Compare smoothed normalized curves with time tolerance. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m030",
+              "text": {
+                "ru": "Реакция на рост и спад. Действие: Отдельно трактовать увеличение и уменьшение сигнала. Применение: Вдох и выдох существа, натянуть и ослабить, качать насос. Ограничения: Нужны мёртвая зона производной и ограничения на скорость. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Reaction to growth and decline. Action: Separately interpret the increase and decrease of the signal. Application: Inhale and exhale the creature, tighten and loosen, pump the pump. Limitations: A derivative dead zone and speed restrictions are needed. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m031",
+              "text": {
+                "ru": "Поиск экстремума. Действие: Перемещать источник или телефон, сравнивая локальные максимумы и минимумы. Применение: Найти точку настройки, минимизировать помеху, провести исследование. Ограничения: Локальный экстремум не гарантирует ближайшую точку к магниту. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Search for extremum. Action: Move the source or telephone, comparing local maxima and minima. Application: Find the tuning point, minimize interference, conduct research. Limitations: Local extremum does not guarantee the closest point to the magnet. Equipment: Telephone and external magnet. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m032",
+              "text": {
+                "ru": "Стабильность сигнала. Действие: Удерживать выбранную величину с минимальными колебаниями. Применение: Обезвреживание, концентрация, настройка музыкального тона. Ограничения: Телефон и окружение должны быть достаточно неподвижны. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Игровое правило.",
+                "en": "Signal stability. Action: Maintain the selected value with minimal fluctuations. Application: Neutralization, concentration, adjustment of musical tone. Limitations: Phone and surroundings must be fairly still. Equipment: Phone and external magnet. Preparation: Easy start. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-05",
+      "section": "section-1",
+      "title": {
+        "ru": "Вектор и полярность",
+        "en": "Vector and polarity"
+      },
+      "description": {
+        "ru": "Компоненты вектора поля и изменение полярности различают состояния магнита в подготовленной геометрии.",
+        "en": "The field vector components and polarity changes differentiate the states of the magnet in the prepared geometry."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-05-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m033",
+              "text": {
+                "ru": "Две полярности. Действие: В одном гнезде переворачивать известный магнит; два шаблона дают две команды. Применение: Свет и тьма, нагрев и охлаждение, две стороны ключа. Ограничения: Знак оси сам по себе не определяет северный полюс при произвольном положении. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Two polarities. Action: Turn over a known magnet in one socket; two patterns give two commands. Application: Light and dark, heating and cooling, two sides of the key. Limitations: The axis sign itself does not determine the north pole at any position. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m034",
+              "text": {
+                "ru": "Три состояния полярности. Действие: Различать отсутствие магнита и две его ориентации в гнезде. Применение: Трёхпозиционный переключатель, плюс/ноль/минус, логический элемент. Ограничения: Сохранять три шаблона для конкретного магнита и посадочного места. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Three states of polarity. Action: Distinguish between the absence of a magnet and its two orientations in the socket. Application: Three-position switch, plus/zero/minus, logic gate. Limitations: Store three templates for a specific magnet and seat. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m035",
+              "text": {
+                "ru": "Выбор по ведущей оси. Действие: На ограниченных позициях различать, какая компонента изменения поля преобладает. Применение: Три типа воздействия, переключение осей, физическая классификация. Ограничения: Не обещает распознавания произвольных сторон телефона без обучения. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Selection by leading axis. Action: In limited positions, distinguish which component of the field change predominates. Application: Three types of influence, switching axes, physical classification. Limitations: Does not promise recognition of arbitrary sides of the phone without training. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m036",
+              "text": {
+                "ru": "Совпадение векторного шаблона. Действие: Добиться совпадения нормированного направления и величины поля с образцом. Применение: Магнитная подпись замка, восстановление конфигурации, лабораторная загадка. Ограничения: Разные конфигурации могут дать похожие измерения в одной точке. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Vector pattern matching. Action: To achieve the coincidence of the normalized direction and magnitude of the field with the sample. Application: Magnetic lock signature, configuration restoration, laboratory riddle. Limitations: Different configurations can give similar measurements at one point. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m037",
+              "text": {
+                "ru": "Вращение магнита на оси. Действие: Поворачивать магнит с фиксированными центром и осью; шаблоны задают угол. Применение: Ручка настройки, поворот ключа, колесо управления. Ограничения: Нужен механизм и выбор оси, дающей различимое изменение поля. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Rotation of a magnet on an axis. Action: Rotate a magnet with a fixed center and axis; templates set the angle. Application: Adjustment knob, turn the key, control wheel. Limitations: A mechanism and a choice of axis that gives a discernible change in the field are needed. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m038",
+              "text": {
+                "ru": "Курсор на заданной плоскости. Действие: Двигать один магнит по откалиброванной поверхности с фиксированной ориентацией. Применение: Курсор, лабиринт, управление фишкой рядом с экраном. Ограничения: Точность и однозначность зависят от геометрии; это не свободный 3D-трекинг. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "The cursor is on a given plane. Action: Move one magnet along a calibrated surface with a fixed orientation. Application: Cursor, labyrinth, control of a chip next to the screen. Limitations: Accuracy and unambiguity depend on geometry; This is not free 3D tracking. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m039",
+              "text": {
+                "ru": "Пространственные магнитные зоны. Действие: Обучить несколько положений магнита около телефона и распознавать выбранную зону. Применение: Внеэкранное меню, карманы инвентаря, выбор стихии жестом. Ограничения: Начинать с малого числа хорошо различимых зон и состояния «не уверен». Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Spatial magnetic zones. Action: Train several positions of the magnet near the phone and recognize the selected zone. Application: Off-screen menu, inventory pockets, element selection by gesture. Limitations: Start with a small number of clearly distinguishable zones and the “not sure” state. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m040",
+              "text": {
+                "ru": "Баланс двух источников. Действие: На направляющей двигать магнит относительно неподвижного источника, добиваясь целевого суммарного поля. Применение: Баланс сил, настройка компенсатора, физическая головоломка. Ограничения: Датчик видит сумму вкладов; раздельные позиции двух магнитов не восстанавливаются. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Balance of two sources. Action: Move the magnet on the guide relative to the stationary source, achieving the target total field. Application: Balance of forces, adjusting the compensator, physical puzzle. Limitations: The sensor sees the sum of the deposits; separate positions of two magnets are not restored. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-06",
+      "section": "section-1",
+      "title": {
+        "ru": "Жесты магнитом",
+        "en": "Gestures with a magnet"
+      },
+      "description": {
+        "ru": "Временная последовательность движений магнита распознаётся как жест с допусками к расстоянию и скорости.",
+        "en": "The time sequence of magnet movements is recognized as a gesture with tolerances for distance and speed."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-06-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m041",
+              "text": {
+                "ru": "Магнитный взмах. Действие: Провести магнитом через откалиброванную область слева направо или обратно. Применение: Взмах оружием, перелистывание, отбить снаряд. Ограничения: Направление требует обучения шаблонам, а не одного порога модуля поля. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Magnetic swing. Action: Swipe a magnet through a calibrated area from left to right or back. Application: Swinging a weapon, flipping, deflecting a projectile. Limitations: Direction requires learning patterns, not a single field module threshold. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m042",
+              "text": {
+                "ru": "Толчок и вытягивание. Действие: Различать последовательности приблизить-удалить и удалить-приблизить. Применение: Толкнуть или потянуть объект, выбросить или втянуть энергию. Ограничения: Ограничить траекторию; начальная позиция влияет на рисунок сигнала. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Push and pull. Action: Distinguish between the sequences of zoom-remove and remove-zoom. Application: Push or pull an object, throw out or draw in energy. Limitations: Limit the trajectory; the starting position affects the signal pattern. Equipment: Telephone and external magnet. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m043",
+              "text": {
+                "ru": "Круговой жест. Действие: Вести магнит по кругу в выбранной плоскости. Применение: Создать портал, перемешать зелье, зарядить круговую атаку. Ограничения: Нужны различимые шаблоны; поворот самого магнита может исказить сигнал. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Circle gesture. Action: Move the magnet in a circle in a selected plane. Application: Create a portal, mix a potion, charge a circular attack. Limitations: Requires discernible patterns; turning the magnet itself may distort the signal. Equipment: Phone and external magnet. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m044",
+              "text": {
+                "ru": "Жест восьмёркой. Действие: Повторить два связанных контура в рабочей области. Применение: Сложное заклинание, специальный приём, рисунок ритуала. Ограничения: Это распознавание ограниченного жеста; не выдавать за измерение точного контура. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Eight gesture. Action: Repeat two connected paths in the work area. Application: Complex spell, special move, ritual design. Limitations: This is limited gesture recognition; do not pass off as measuring an exact contour. Equipment: Telephone and external magnet. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m045",
+              "text": {
+                "ru": "Зигзаг или ломаная. Действие: Чередовать направления движения по обученному шаблону. Применение: Молния, резка, соединение виртуальных контактов. Ограничения: Слишком похожие жесты требуют упрощения словаря. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Zigzag or broken line. Action: Alternate directions of movement according to a trained pattern. Application: Lightning, cutting, connecting virtual contacts. Limitations: Too similar gestures require a simplified vocabulary. Equipment: Phone and external magnet. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m046",
+              "text": {
+                "ru": "Поворот запястья с магнитом. Действие: Различать характерные изменения ориентации магнита на кольце или держателе. Применение: Повернуть предмет, переключить режим инструмента, вращать виртуальную ручку. Ограничения: Движение кисти и изменение положения магнита смешиваются в одном сигнале. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Wrist rotation with magnet. Action: Distinguish characteristic changes in the orientation of a magnet on a ring or holder. Application: Rotate an object, switch tool mode, rotate a virtual pen. Limitations: Hand movement and change in magnet position are mixed in one signal. Equipment: Phone and external magnet. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m047",
+              "text": {
+                "ru": "Словарь пользовательских жестов. Действие: Записать несколько повторений жестов и сопоставлять новый сигнал с шаблонами. Применение: Персональные заклинания, доступный ввод, секретная игровая команда. Ограничения: Нужны обучение, проверка ложных срабатываний и отказ от уверенного ответа при сомнении. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Dictionary of user gestures. Action: Record several repetitions of gestures and match the new signal with patterns. Application: Personal spells, accessible input, secret game command. Limitations: Requires training, checking for false positives and refusing to answer confidently when in doubt. Equipment: Phone and external magnet. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m048",
+              "text": {
+                "ru": "Профиль скорости жеста. Действие: Различать похожие движения по рисунку «медленно-быстро-медленно». Применение: Качество удара, музыкальная артикуляция, техника изготовления. Ограничения: Оценка скорости условна без известной траектории; сравниваются временные шаблоны. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Gesture speed profile. Action: Distinguish similar movements by the “slow-fast-slow” pattern. Application: Quality of impact, musical articulation, manufacturing technique. Limitations: Estimation of speed is relative without a known trajectory; Temporary patterns are compared. Equipment: Phone and external magnet. Preparation: Experimental. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-07",
+      "section": "section-1",
+      "title": {
+        "ru": "Пассивные физические контроллеры",
+        "en": "Passive physical controllers"
+      },
+      "description": {
+        "ru": "Магнитный реквизит превращает физическое движение ручки, ползунка или другого механизма в сигнал телефона.",
+        "en": "Magnetic props turn the physical movement of a knob, slider, or other mechanism into a phone signal."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-07-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m049",
+              "text": {
+                "ru": "Механическая кнопка. Действие: Нажимать кнопку, перемещающую магнит или деталь в известном поле. Применение: Пассивный геймпад, спуск, кнопка на обороте телефона. Ограничения: Подобрать положение относительно реального датчика и предусмотреть возврат. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Mechanical button. Action: Press a button that moves a magnet or part in a known field. Application: Passive gamepad, trigger, button on the back of the phone. Limitations: Select the position relative to the real sensor and provide for return. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m050",
+              "text": {
+                "ru": "Линейный ползунок. Действие: Передвигать магнит по направляющей с заданными концами. Применение: Газ, громкость, положение заслонки, инвентарь на физической шкале. Ограничения: Нужна калибровка нелинейной зависимости сигнала от положения. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Linear slider. Action: Move the magnet along a guide with given ends. Application: Gas, volume, damper position, inventory on a physical scale. Limitations: Requires calibration of the nonlinear dependence of the signal on position. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m051",
+              "text": {
+                "ru": "Поворотная ручка. Действие: Поворачивать магнит в корпусе по фиксированной окружности или оси. Применение: Руль, радионастройка, музыкальный регулятор, сейф. Ограничения: Не каждая ось вращения даёт однозначный сигнал; тестировать полный диапазон. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Rotary handle. Action: Rotate the magnet in the housing along a fixed circle or axis. Application: Steering wheel, radio tuning, music controller, safe. Limitations: Not every axis of rotation gives an unambiguous signal; test the full range. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m052",
+              "text": {
+                "ru": "Джойстик с центровкой. Действие: Отклонять магнитный рычаг в ограниченной области; пружина возвращает его. Применение: Движение персонажа, управление камерой, аналоговый выбор. Ограничения: Нужны обучение нейтрали и областей отклонения; это не замена полноценному Hall-джойстику без разработки. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Joystick with centering. Action: Deflect the magnetic arm in a limited area; the spring returns it. Applications: Character movement, camera control, analog selection. Limitations: Neutral and deflection areas need training; This is not a replacement for a full-fledged Hall joystick without development. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m053",
+              "text": {
+                "ru": "Сжатие через упругую деталь. Действие: Сжимать пружину или эластичный элемент, смещающий магнит. Применение: Сила захвата, сила выстрела, музыкальная динамика. Ограничения: Измеряется смещение; силу можно оценить только через откалиброванную механику. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Compression through an elastic part. Action: Compress a spring or elastic element that displaces a magnet. Applications: Grip force, shooting force, musical dynamics. Limitations: Displacement is measured; force can only be assessed through calibrated mechanics. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m054",
+              "text": {
+                "ru": "Изгиб аксессуара. Действие: Гнуть пластину или дугу с магнитом, меняя его положение. Применение: Натяжение лука, деформация материала, управление гибким инструментом. Ограничения: Фиксировать точку крепления и проверять повторяемость после многократного изгиба. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Accessory bend. Action: Bend a plate or arc with a magnet, changing its position. Application: Tensioning a bow, deforming a material, controlling a flexible tool. Limitations: Fix the attachment point and check repeatability after repeated bending. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m055",
+              "text": {
+                "ru": "Кривошип или рукоятка. Действие: Вращать закреплённый магнит циклическим механизмом. Применение: Катушка удочки, мясорубка, заводная игрушка, генератор ресурса. Ограничения: Скорость вращения ограничена частотой выборки; пропуск циклов нужно обнаруживать. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Crank or handle. Action: Rotate a fixed magnet using a cyclic mechanism. Application: Fishing rod reel, meat grinder, wind-up toy, resource generator. Limitations: The rotation speed is limited by the sampling frequency; skipping cycles must be detected. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m056",
+              "text": {
+                "ru": "Рычаг с фиксацией. Действие: Переводить механизм между устойчивыми положениями. Применение: Коробка передач, рубильник, физический переключатель режимов. Ограничения: Нужно проверить, не компенсирует ли автокалибровка длительное постоянное состояние. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Lever with fixation. Action: Move the mechanism between stable positions. Application: Gearbox, switch, physical mode switch. Limitations: It is necessary to check whether auto-calibration compensates for a long-term constant state. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-08",
+      "section": "section-1",
+      "title": {
+        "ru": "Предметы и материальные носители",
+        "en": "Objects and physical tokens"
+      },
+      "description": {
+        "ru": "Подготовленные предметы получают различимые магнитные признаки; распознавание зависит от расположения и калибровки.",
+        "en": "Prepared objects receive distinguishable magnetic characteristics; recognition depends on location and calibration."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-08-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m057",
+              "text": {
+                "ru": "Вставка физического ключа. Действие: Вставить магнитный предмет в единственное подготовленное гнездо. Применение: Открыть дверь, запустить сюжет, активировать артефакт. Ограничения: Детектируется знакомая конфигурация поля; защита от копирования не обеспечивается. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Inserting a physical key. Action: Insert a magnetic object into the only prepared slot. Application: Open the door, start the plot, activate the artifact. Limitations: A familiar field configuration is detected; copy protection is not provided. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m058",
+              "text": {
+                "ru": "Выбор предмета по подписи. Действие: В одно гнездо по очереди вставлять подготовленные предметы с разными магнитными шаблонами. Применение: Фигурки персонажей, физический инвентарь, выбор инструмента. Ограничения: Классы могут пересекаться; нужен небольшой проверенный набор и точное положение. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Selecting an item by signature. Action: Insert prepared objects with different magnetic templates into one slot one by one. Application: Character figures, physical inventory, tool selection. Limitations: Classes may overlap; you need a small proven set and exact position. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m059",
+              "text": {
+                "ru": "Сторона или ориентация жетона. Действие: Перевернуть или повернуть один жетон в фиксированном месте. Применение: Выбор лица карты, состояния героя, направления действия. Ограничения: Различимость ориентаций требуется проверить на конкретной конструкции. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Side or orientation of the token. Action: Flip or rotate one token in a fixed location. Application: Selecting the face of the card, the state of the hero, the direction of action. Limitations: Distinction of orientations must be checked on a specific design. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m060",
+              "text": {
+                "ru": "Фишка на размеченной дорожке. Действие: Передвигать одну магнитную фишку по известным точкам или клеткам. Применение: Настольный лабиринт, маршрут, локальная тактическая задача. Ограничения: Один датчик не даёт надёжной полной картины нескольких фишек на большом поле. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "A chip on a marked path. Action: Move one magnetic chip along known points or cells. Application: Tabletop labyrinth, route, local tactical task. Limitations: One sensor does not provide a reliable complete picture of several chips on a large field. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m061",
+              "text": {
+                "ru": "Последовательность предъявлений. Действие: Прикладывать подготовленные предметы по одному в заданном порядке. Применение: Рецепт зелья, история из карточек, сборка команды. Ограничения: Порядок хранит приложение; оно не определяет все лежащие рядом предметы сразу. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Sequence of presentations. Action: Apply prepared items one at a time in a given order. Application: Potion recipe, story from cards, assembling a team. Limitations: The application stores the order; it does not detect all objects lying nearby at once. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m062",
+              "text": {
+                "ru": "Сканирование магнитного кода. Действие: Проводить носитель с крупными магнитными метками через направляющую. Применение: Физическая программа, команда в игрушке, страница с кодом. Ограничения: Специальный медленный код; чтение банковских магнитных полос не предполагается. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Способ ввода.",
+                "en": "Magnetic code scanning. Action: Guide media with large magnetic marks through the guide. Application: Physics program, toy command, code page. Limitations: Special slow code; reading banking magnetic stripes is not expected. Equipment: Magnetic details with a given geometry. Preparation: Experimental. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m063",
+              "text": {
+                "ru": "Открытие страницы или створки. Действие: Перемещать магнит вместе с известной створкой или отдельной страницей. Применение: Интерактивная книга, шкатулка, раскрывающийся объект. Ограничения: Много магнитов дают суммарное поле; начинать с одной подвижной части. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Способ ввода.",
+                "en": "Opening a page or flap. Action: Move a magnet along with a known fold or a separate page. Application: Interactive book, box, drop-down object. Limitations: Many magnets give a total field; start with one moving part. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Input method."
+              }
+            },
+            {
+              "id": "variant-m064",
+              "text": {
+                "ru": "Контроль шага сборки. Действие: Подносить очередной модуль к единственной зоне считывания перед установкой. Применение: Обучающий конструктор, последовательная сборка устройства, ремонт в квесте. Ограничения: Подтверждается предъявление модуля, а не правильность всей конструкции. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Assembly step control. Action: Bring the next module to a single reading zone before installation. Application: Educational constructor, sequential assembly of the device, repair in a quest. Limitations: The presentation of the module is confirmed, and not the correctness of the entire structure. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Game rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-09",
+      "section": "section-1",
+      "title": {
+        "ru": "Поиск и взаимодействие с пространством",
+        "en": "Search and interaction with space"
+      },
+      "description": {
+        "ru": "Изменения магнитного окружения становятся условием поиска или ориентирования на обследованной площадке.",
+        "en": "Changes in the magnetic environment become a condition for searching or orienting in the surveyed area."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-09-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m065",
+              "text": {
+                "ru": "Магнитное «горячо-холодно». Действие: Двигать телефон и по относительному сигналу искать спрятанный магнит. Применение: Поиск сокровища, детектив, исследование предмета сканером. Ограничения: Сигнал локальный и не обязан монотонно расти к цели; фиксировать ориентацию при сравнении. Оборудование: Обследованная или подготовленная площадка. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Magnetic “hot-cold”. Action: Move the phone and use the relative signal to look for a hidden magnet. Application: Treasure search, detective, examination of an object with a scanner. Limitations: The signal is local and does not have to grow monotonically towards the target; record orientation when comparing. Equipment: Surveyed or prepared site. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m066",
+              "text": {
+                "ru": "Карта поля. Действие: Снимать показания в размеченных точках и строить карту. Применение: Исследовательская игра, обучение, поиск аномалий, карта инсталляции. Ограничения: Координаты задаёт человек, камера или иной трекер; магнитометр сам их не измеряет. Оборудование: Обследованная или подготовленная площадка. Подготовка: Нужна настройка. Тип: Прикладной сценарий.",
+                "en": "Field map. Action: Take readings at marked points and build a map. Application: Research game, training, search for anomalies, installation map. Limitations: Coordinates are set by a person, camera or other tracker; the magnetometer itself does not measure them. Equipment: Surveyed or prepared site. Preparation: Needs setup. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m067",
+              "text": {
+                "ru": "Узнавание маршрута по отпечатку. Действие: Сопоставлять последовательность поля с заранее записанными проходами. Применение: Музейный маршрут, квест в здании, дополнительный ориентир без GNSS. Ограничения: Нужны карта, сопоставление и обычно инерциальные данные; переносимость между телефонами проверяется. Оборудование: Обследованная или подготовленная площадка. Подготовка: Экспериментальный. Тип: Прикладной сценарий.",
+                "en": "Route recognition by fingerprint. Action: Match field sequence to pre-recorded passages. Application: Museum route, building quest, additional landmark without GNSS. Limitations: Requires map, matching and usually inertial data; portability between phones is checked. Equipment: Surveyed or prepared site. Preparation: Experimental. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m068",
+              "text": {
+                "ru": "Сцена по зоне. Действие: Распознавать подготовленную область по локальному магнитному шаблону. Применение: Звуковая история, экспозиция, смена игрового окружения. Ограничения: Не полагаться на единичное значение поля как на уникальный адрес комнаты. Оборудование: Обследованная или подготовленная площадка. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Scene by zone. Action: Recognize a prepared area by local magnetic pattern. Applications: Sound history, exposure, changing game environments. Limitations: Do not rely on a single field value as a unique room address. Equipment: Surveyed or prepared area. Preparation: Experimental. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m069",
+              "text": {
+                "ru": "Магнитные контрольные точки. Действие: По очереди обнаруживать подготовленные локальные метки. Применение: Трасса для игрушки, маршрут квеста, контроль прохождения этапов. Ограничения: Нужны проверенные точки и ограниченная дистанция считывания; это не маяки на десятки метров. Оборудование: Обследованная или подготовленная площадка. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Magnetic control points. Action: Take turns to detect prepared local marks. Application: Toy track, quest route, control of stages. Limitations: Requires verified points and a limited reading distance; these are not beacons for tens of meters. Equipment: Surveyed or prepared site. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m070",
+              "text": {
+                "ru": "Сравнение градиента. Действие: Измерить поле в нескольких близких положениях и выбирать следующее направление по разнице. Применение: Исследование источника, виртуальный прибор, поиск локальной аномалии. Ограничения: Это пространственное сравнение последовательных измерений, а не градиент из одного отсчёта. Оборудование: Обследованная или подготовленная площадка. Подготовка: Экспериментальный. Тип: Игровое правило.",
+                "en": "Gradient comparison. Action: Measure the field at several close positions and select the next direction based on the difference. Application: Source investigation, virtual instrument, local anomaly search. Limitations: This is a spatial comparison of successive measurements, not a gradient from a single sample. Equipment: Surveyed or prepared site. Preparation: Experimental. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m071",
+              "text": {
+                "ru": "Избегание магнитных помех. Действие: Оставаться ниже порога отклонения от локального фона. Применение: Стелс рядом с подготовленными источниками, заражённые зоны, защита прибора. Ограничения: Нужно обследовать игровую площадку; случайные металлические объекты могут менять сложность. Оборудование: Обследованная или подготовленная площадка. Подготовка: Нужна настройка. Тип: Игровое правило.",
+                "en": "Avoiding magnetic interference. Action: Stay below the threshold for deviation from the local background. Application: Stealth near prepared sources, contaminated areas, device protection. Limitations: You need to examine the playground; random metal objects can change the difficulty. Equipment: Surveyed or prepared area. Preparation: Needs setup. Type: Game rule."
+              }
+            },
+            {
+              "id": "variant-m072",
+              "text": {
+                "ru": "Нарушение магнитной печати. Действие: Неподвижный телефон следит за состоянием магнита на крышке или предмете. Применение: Сюжетная сигнализация, ловушка, обнаружение открытия ящика. Ограничения: Это реквизит для игры; фоновые ограничения ОС и ложные срабатывания мешают охранным обещаниям. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Прикладной сценарий.",
+                "en": "Magnetic seal failure. Action: A fixed telephone monitors the status of a magnet on a lid or object. Applications: Story alarm, trap, drawer opening detection. Limitations: This is a game prop; background OS restrictions and false positives interfere with security promises. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Application script."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-10",
+      "section": "section-1",
+      "title": {
+        "ru": "Сочетания с другими каналами",
+        "en": "Combinations with other channels"
+      },
+      "description": {
+        "ru": "Магнитный сигнал дополняет касание, движение, звук или изображение, сохраняя отдельную роль каждого канала.",
+        "en": "The magnetic signal complements touch, movement, sound or image, maintaining a separate role for each channel."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-10-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m073",
+              "text": {
+                "ru": "Касание плюс направление. Действие: Навести телефон на мировой азимут и подтвердить касанием. Применение: Выстрел, выбор цели, направленный диалог, команда отряду. Ограничения: Магнитометр задаёт горизонтальный ориентир; касание отделяет намерение от осмотра. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Составная механика.",
+                "en": "Touch plus direction. Action: Point the phone at the world azimuth and confirm with a touch. Application: Shot, target selection, directed dialogue, command to a squad. Limitations: The magnetometer sets a horizontal reference; touch separates intention from inspection. Equipment: Telephone without external magnet. Preparation: Easy start. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m074",
+              "text": {
+                "ru": "Магнитный модификатор касаний. Действие: Удерживать магнит в зоне; касания в этот момент имеют другое значение. Применение: Альтернативный огонь, второй слой инструмента, временный режим редактирования. Ограничения: Проверять независимость магнитного сигнала от движений при касании. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Magnetic touch modifier. Action: Hold the magnet in the area; touches at this moment have a different meaning. Application: Alternate fire, second layer of the tool, temporary editing mode. Limitations: Check the independence of the magnetic signal from movements when touching. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m075",
+              "text": {
+                "ru": "Наклон плюс магнитный параметр. Действие: Наклоном телефона задавать один параметр, движением магнита другой. Применение: Руль и газ, прицел и сила, мелодия и громкость. Ограничения: Нужна компенсация изменения ориентации телефона; исходный векторный фон поворачивается. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Slope plus magnetic parameter. Action: By tilting the phone, set one parameter, by moving the magnet another. Application: Steering wheel and gas, aim and strength, melody and volume. Limitations: Need to compensate for changes in the orientation of the phone; the original vector background is rotated. Equipment: Phone and external magnet. Preparation: Experimental. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m076",
+              "text": {
+                "ru": "Действие только при неподвижности. Действие: Разрешать магнитный жест лишь когда гироскоп и акселерометр показывают устойчивое положение. Применение: Точный ввод, подтверждение ключа, снижение случайных срабатываний. Ограничения: Это программное условие; датчики движения сами по себе не убирают все магнитные помехи. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Action only when stationary. Action: Allow magnetic gesture only when the gyroscope and accelerometer indicate a stable position. Application: Accurate input, key confirmation, reduction of accidental activations. Limitations: This is a software condition; Motion sensors by themselves do not remove all magnetic interference. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m077",
+              "text": {
+                "ru": "Геопозиция плюс азимут. Действие: В известной географической точке смотреть в требуемое направление. Применение: Городской квест, поиск ориентира, ориентирование. Ограничения: Геопозиция поступает отдельно; для географического севера нужна поправка склонения. Оборудование: Телефон без внешнего магнита. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Geoposition plus azimuth. Action: At a known geographical point, look in the required direction. Application: City quest, search for landmarks, orientation. Limitations: Geoposition is supplied separately; for geographic north, a declination correction is needed. Equipment: Phone without an external magnet. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m078",
+              "text": {
+                "ru": "Камера плюс магнитный канал. Действие: Камера определяет объект или позу, магнит задаёт дополнительный режим или подтверждение. Применение: AR-артефакт, физическая игрушка с цифровым эффектом, интерактивный стенд. Ограничения: Позиционирование даёт камера; магнитометр не заменяет визуальный трекинг. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Camera plus magnetic channel. Action: The camera determines an object or pose, the magnet sets an additional mode or confirmation. Application: AR artifact, physical toy with a digital effect, interactive stand. Limitations: Positioning is provided by the camera; The magnetometer does not replace visual tracking. Equipment: Phone and external magnet. Preparation: Experimental. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m079",
+              "text": {
+                "ru": "Ввод со звуковой и виброобратной связью. Действие: По звуку или вибрации находить нужный сектор либо силу сигнала без постоянного взгляда на экран. Применение: Аудиоигра, учебный прибор, доступный интерфейс. Ограничения: Доступность требует проверки с пользователями; это форма обратной связи, а не новый датчик. Оборудование: Телефон и внешний магнит. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Input with sound and vibration feedback. Action: Find the desired sector or signal strength by sound or vibration without constantly looking at the screen. Application: Audio game, educational device, accessible interface. Limitations: Accessibility requires verification with users; This is a form of feedback, not a new sensor. Equipment: Phone and external magnet. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m080",
+              "text": {
+                "ru": "Голос плюс магнитный жест. Действие: Произнести команду, а магнитом выбрать интенсивность или подтвердить исполнение. Применение: Заклинание голосом, музыкальный инструмент, управление реквизитом. Ограничения: Голос распознаётся микрофоном; предусмотреть режим при шуме и без речи. Оборудование: Телефон и внешний магнит. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Voice plus magnetic gesture. Action: Say a command, and use a magnet to select the intensity or confirm execution. Application: Voice spell, musical instrument, props control. Limitations: Voice is recognized by a microphone; provide a mode in noise and without speech. Equipment: Telephone and external magnet. Preparation: Experimental. Type: Compound mechanics."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-11",
+      "section": "section-1",
+      "title": {
+        "ru": "Совместная игра и роли",
+        "en": "Cooperative play and roles"
+      },
+      "description": {
+        "ru": "Участники распределяют наблюдение, управление и обмен сигналами между несколькими подготовленными устройствами.",
+        "en": "Participants distribute monitoring, control and signal exchange among several prepared devices."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-11-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m081",
+              "text": {
+                "ru": "Разделённый контроллер. Действие: Один игрок держит телефон, другой управляет магнитом. Применение: Кооперативное пилотирование, настройка реактора, игра на коммуникацию. Ограничения: Разделять роли и ограничивать рабочую область; два независимых движения усложняют сигнал. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Split controller. Action: One player holds the phone, the other controls the magnet. Application: Cooperative piloting, reactor setup, communication game. Limitations: Separate roles and limit the work area; two independent movements complicate the signal. Equipment: Several players and prepared devices. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m082",
+              "text": {
+                "ru": "Совпадение направлений команды. Действие: Несколько телефонов одновременно достигают заданных азимутов. Применение: Командный ритуал, синхронная защита, распределённая головоломка. Ограничения: Нужны обмен данными и синхронизация; локальные магнитные помехи различаются. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Coincidence of team directions. Action: Several phones simultaneously reach specified azimuths. Application: Team ritual, synchronous defense, distributed puzzle. Limitations: Requires data exchange and synchronization; Local magnetic interference varies. Equipment: Multiple players and prepared devices. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m083",
+              "text": {
+                "ru": "Комплементарные направления. Действие: Каждый игрок должен держать своё направление, дополняющее остальные. Применение: Закрыть круг защиты, покрыть сектора, распределить наблюдение. Ограничения: Условие проверяет приложение; направление каждого телефона к другому из этого не следует. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Complementary directions. Action: Each player must maintain his own direction, complementary to the others. Application: Close the circle of protection, cover sectors, distribute surveillance. Limitations: The condition is checked by the application; the direction of each phone to another does not follow from this. Equipment: Several players and prepared devices. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m084",
+              "text": {
+                "ru": "Общий жетон хода. Действие: Передавать один магнитный предмет и предъявлять его телефону очередного игрока. Применение: Ход в настольной игре, физическое право голоса, эстафета. Ограничения: Право хода поддерживается правилами и приложением; магнитный жетон можно скопировать. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "General turn token. Action: Pass one magnetic object and present it to the phone of the next player. Application: Move in a board game, physical voting rights, relay race. Restrictions: The right to move is supported by the rules and the application; the magnetic token can be copied. Equipment: Several players and prepared devices. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m085",
+              "text": {
+                "ru": "Перетягивание суммарного поля. Действие: Два игрока двигают магниты на направляющих, пытаясь вывести общий сигнал в свою область. Применение: Перетягивание каната, баланс, борьба за настройку. Ограничения: Оценивается только суммарное поле; индивидуальный вклад каждого игрока не измеряется. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Drag the summary field. Action: Two players move magnets on guides, trying to bring the common signal into their area. Application: Tug of war, balance, struggle for adjustment. Limitations: Only the total field is evaluated; The individual contribution of each player is not measured. Equipment: Multiple players and prepared devices. Preparation: Experimental. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m086",
+              "text": {
+                "ru": "Эстафета обнаружений. Действие: Поднести один предмет к нескольким телефонам в нужном порядке. Применение: Физическая эстафета, доставка артефакта, совместный маршрут. Ограничения: Магнит сам не переносит цифровое состояние; порядок сверяется по сети или на одном устройстве. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Нужна настройка. Тип: Составная механика.",
+                "en": "Discovery relay. Action: Bring one item to several phones in the right order. Application: Physical relay race, artifact delivery, joint route. Limitations: The magnet itself does not transfer the digital state; the order is verified over the network or on one device. Equipment: Multiple players and prepared devices. Preparation: Needs setup. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m087",
+              "text": {
+                "ru": "Скрытый ввод второго игрока. Действие: Игрок с магнитом делает разрешённый жест вне поля зрения владельца экрана. Применение: Асимметричная загадка, фокус, поиск саботажника. Ограничения: Телефон должен различать ограниченный словарь действий; считывания мыслей или личности здесь нет. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Hidden input of the second player. Action: The player with the magnet makes a permitted gesture outside the screen owner's field of view. Application: Asymmetrical riddle, trick, search for saboteur. Limitations: The phone must recognize a limited vocabulary of actions; there is no reading of thoughts or personality here. Equipment: Several players and prepared devices. Preparation: Experimental. Type: Compound mechanics."
+              }
+            },
+            {
+              "id": "variant-m088",
+              "text": {
+                "ru": "Управляемое магнитное вмешательство. Действие: Один игрок пытается удержать цель по сигналу, другой меняет поле подготовленным реквизитом. Применение: Асимметричный бой, саботаж прибора, игра на восстановление контроля. Ограничения: Вмешательство является правилом; рядом с магнитом компас нельзя считать достоверным мировым ориентиром. Оборудование: Несколько игроков и подготовленные устройства. Подготовка: Экспериментальный. Тип: Составная механика.",
+                "en": "Controlled magnetic intervention. Action: One player tries to hold the target on a signal, the other changes the field with the prepared props. Application: Asymmetrical combat, sabotage of the device, game to regain control. Limitations: Intervention is the rule; next to a magnet, a compass cannot be considered a reliable world reference. Equipment: Several players and prepared devices. Preparation: Experimental. Type: Compound mechanics."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "family-12",
+      "section": "section-1",
+      "title": {
+        "ru": "Прикладные, учебные и творческие сценарии",
+        "en": "Applied, educational and creative scenarios"
+      },
+      "description": {
+        "ru": "Наблюдение и изменение магнитного сигнала используются для исследования, творчества и обучения без обещания точности лабораторного прибора.",
+        "en": "Observing and changing the magnetic signal is used for research, creativity and learning without the promise of laboratory instrument precision."
+      },
+      "example": {
+        "ru": "",
+        "en": ""
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "family-12-variants",
+          "title": {
+            "ru": "Варианты и применение",
+            "en": "Variants and applications"
+          },
+          "variants": [
+            {
+              "id": "variant-m089",
+              "text": {
+                "ru": "Визуализация поля. Действие: Показывать компоненты и модуль поля в реальном времени. Применение: Учебный тесламетр, графики, исследование бытовых источников. Ограничения: Это показания датчика телефона; точность зависит от модели и калибровки. Оборудование: Телефон без внешнего магнита. Подготовка: Простой старт. Тип: Прикладной сценарий.",
+                "en": "Field visualization. Action: Show components and field module in real time. Application: Educational Teslameter, graphs, research of household sources. Limitations: These are phone sensor readings; Accuracy depends on model and calibration. Equipment: Phone without external magnet. Preparation: Easy start. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m090",
+              "text": {
+                "ru": "Сравнение магнитных объектов. Действие: При одинаковом положении сравнивать относительные показания от образцов. Применение: Урок физики, сортировка подготовленных образцов, исследование магнитов. Ограничения: Не универсальный металлоискатель: медь, алюминий и любые скрытые предметы так не обнаруживаются надёжно. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Прикладной сценарий.",
+                "en": "Comparison of magnetic objects. Action: In the same position, compare the relative readings from the samples. Application: Physics lesson, sorting prepared samples, studying magnets. Limitations: Not a universal metal detector: copper, aluminum and any hidden objects are not detected reliably. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m091",
+              "text": {
+                "ru": "Изучение полюсов и линий поля. Действие: Переворачивать известный магнит и измерять поле в размеченных точках. Применение: Школьный эксперимент, интерактивное объяснение вектора и суперпозиции. Ограничения: Полярность интерпретировать только с учётом геометрии и системы координат. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Прикладной сценарий.",
+                "en": "Study of poles and field lines. Action: Invert a known magnet and measure the field at marked points. Application: School experiment, interactive explanation of vector and superposition. Limitations: Interpret polarity only taking into account the geometry and coordinate system. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m092",
+              "text": {
+                "ru": "Катушка как источник сигнала. Действие: Внешняя управляемая катушка создаёт медленные изменения поля для распознавания. Применение: Учебный опыт с током, подготовленный маяк, низкоскоростная команда. Ограничения: Нужны внешняя электроника, проверенные уровни поля и частоты; это не NFC и не радиомодем. Оборудование: Внешняя активная электроника. Подготовка: Экспериментальный. Тип: Прикладной сценарий.",
+                "en": "Coil as a signal source. Action: External controlled coil creates slow field changes for recognition. Application: Current training experience, prepared beacon, low speed command. Limitations: Requires external electronics, tested field levels and frequencies; This is not NFC or a radio modem. Equipment: External active electronics. Preparation: Experimental. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m093",
+              "text": {
+                "ru": "Подсчёт циклов механизма. Действие: Закреплённый магнит на медленно вращающемся механизме даёт периодический сигнал. Применение: Игрушечный тахометр, счётчик оборотов, исследование частоты. Ограничения: Частота выборки и фильтры ограничивают скорость; пропуск импульсов и алиасинг нужно проверять. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Прикладной сценарий.",
+                "en": "Counting machine cycles. Action: A magnet attached to a slowly rotating mechanism produces a periodic signal. Applications: Toy tachometer, revolution counter, frequency study. Limitations: Sampling rate and filters limit speed; Missing pulses and aliasing need to be checked. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m094",
+              "text": {
+                "ru": "Озвучивание и рисунок поля. Действие: Преобразовывать сигнал в звук, цвет, форму или движение. Применение: Музыкальная инсталляция, генеративное искусство, сенсорное обучение. Ограничения: Это художественное отображение; сила звука или яркость не являются физической энергией поля. Оборудование: Телефон и внешний магнит. Подготовка: Простой старт. Тип: Прикладной сценарий.",
+                "en": "Scoring and field drawing. Action: Convert a signal into sound, color, shape or movement. Applications: Music installation, generative art, sensory learning. Limitations: This is an artistic display; sound strength or brightness is not the physical energy of the field. Equipment: Telephone and external magnet. Preparation: Easy start. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m095",
+              "text": {
+                "ru": "Альтернативный физический ввод. Действие: Настроить удобный магнитный переключатель или регулятор в устойчивом креплении. Применение: Ввод при затруднённом касании, крупная кнопка, управление в перчатках. Ограничения: Конструкция и усилие подбираются с пользователем; необходим запасной способ управления. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Нужна настройка. Тип: Прикладной сценарий.",
+                "en": "Alternative physical input. Action: Set up a convenient magnetic switch or regulator in a stable mount. Application: Input with difficult touch, large button, operation with gloves. Limitations: Design and force are selected with the user; a backup control method is needed. Equipment: Magnetic props with a given geometry. Preparation: Needs setup. Type: Application script."
+              }
+            },
+            {
+              "id": "variant-m096",
+              "text": {
+                "ru": "Профиль по аксессуару. Действие: Распознавать подготовленный аксессуар при прикреплении и менять режим приложения. Применение: Рабочая панель, режим камеры, профиль игры, интерактивный стенд. Ограничения: Поддержка зависит от геометрии и ОС; запуск системных действий не гарантируется, MagSafe не равен API идентификации. Оборудование: Магнитный реквизит с заданной геометрией. Подготовка: Экспериментальный. Тип: Прикладной сценарий.",
+                "en": "Accessory profile. Action: Recognize the prepared accessory when attached and change the application mode. Application: Working panel, camera mode, game profile, interactive stand. Limitations: Support depends on geometry and OS; the launch of system actions is not guaranteed, MagSafe is not equal to the identification API. Equipment: Magnetic props with a given geometry. Preparation: Experimental. Type: Application script."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-1",
+      "title": {
+        "ru": "Оборудование",
+        "en": "Equipment"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-1-entry-1",
+          "title": {
+            "ru": "phone",
+            "en": "phone"
+          },
+          "text": {
+            "ru": "Описание: Телефон без внешнего магнита",
+            "en": "Description: Phone without external magnet"
+          }
+        },
+        {
+          "id": "note-1-entry-2",
+          "title": {
+            "ru": "magnet",
+            "en": "magnet"
+          },
+          "text": {
+            "ru": "Описание: Телефон и внешний магнит",
+            "en": "Description: Phone and external magnet"
+          }
+        },
+        {
+          "id": "note-1-entry-3",
+          "title": {
+            "ru": "fixture",
+            "en": "fixture"
+          },
+          "text": {
+            "ru": "Описание: Магнитный реквизит с заданной геометрией",
+            "en": "Description: Magnetic props with a given geometry"
+          }
+        },
+        {
+          "id": "note-1-entry-4",
+          "title": {
+            "ru": "place",
+            "en": "place"
+          },
+          "text": {
+            "ru": "Описание: Обследованная или подготовленная площадка",
+            "en": "Description: Surveyed or prepared site"
+          }
+        },
+        {
+          "id": "note-1-entry-5",
+          "title": {
+            "ru": "multi",
+            "en": "multi"
+          },
+          "text": {
+            "ru": "Описание: Несколько игроков и подготовленные устройства",
+            "en": "Description: Multiple players and prepared devices"
+          }
+        },
+        {
+          "id": "note-1-entry-6",
+          "title": {
+            "ru": "active",
+            "en": "active"
+          },
+          "text": {
+            "ru": "Описание: Внешняя активная электроника",
+            "en": "Description: External active electronics"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-2",
+      "title": {
+        "ru": "Подготовка",
+        "en": "Preparation"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-2-entry-1",
+          "title": {
+            "ru": "basic",
+            "en": "basic"
+          },
+          "text": {
+            "ru": "Описание: Простой старт",
+            "en": "Description: Easy start"
+          }
+        },
+        {
+          "id": "note-2-entry-2",
+          "title": {
+            "ru": "tune",
+            "en": "tune"
+          },
+          "text": {
+            "ru": "Описание: Нужна настройка",
+            "en": "Description: Needs setup"
+          }
+        },
+        {
+          "id": "note-2-entry-3",
+          "title": {
+            "ru": "experiment",
+            "en": "experiment"
+          },
+          "text": {
+            "ru": "Описание: Экспериментальный",
+            "en": "Description: Experimental"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-3",
+      "title": {
+        "ru": "Типы",
+        "en": "Types"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-3-entry-1",
+          "title": {
+            "ru": "input",
+            "en": "input"
+          },
+          "text": {
+            "ru": "Описание: Способ ввода",
+            "en": "Description: Input method"
+          }
+        },
+        {
+          "id": "note-3-entry-2",
+          "title": {
+            "ru": "Правило",
+            "en": "Rule"
+          },
+          "text": {
+            "ru": "Описание: Игровое правило",
+            "en": "Description: Game rule"
+          }
+        },
+        {
+          "id": "note-3-entry-3",
+          "title": {
+            "ru": "composite",
+            "en": "composite"
+          },
+          "text": {
+            "ru": "Описание: Составная механика",
+            "en": "Description: Compound Mechanics"
+          }
+        },
+        {
+          "id": "note-3-entry-4",
+          "title": {
+            "ru": "scenario",
+            "en": "scenario"
+          },
+          "text": {
+            "ru": "Описание: Прикладной сценарий",
+            "en": "Description: Application script"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-4",
+      "title": {
+        "ru": "Из чего строятся механики",
+        "en": "What are mechanics made of?"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-4-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "B = (Bx, By, Bz)",
+            "en": "B = (Bx, By, Bz)"
+          }
+        },
+        {
+          "id": "note-4-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Поле в одной точке",
+            "en": "Field at one point"
+          }
+        },
+        {
+          "id": "note-4-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Датчик измеряет три компоненты магнитного поля в микротеслах. Из них получают модуль, изменение относительно фона и временные шаблоны. Android: Position sensors Apple: CMMagnetometerData",
+            "en": "The sensor measures three components of the magnetic field in microteslas. From these, module, change relative to background, and temporal patterns are obtained. Android: Position sensors Apple: CMMagnetometerData"
+          }
+        },
+        {
+          "id": "note-4-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Азимут + время",
+            "en": "Azimuth + time"
+          }
+        },
+        {
+          "id": "note-4-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Направление телефона",
+            "en": "Phone heading"
+          }
+        },
+        {
+          "id": "note-4-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Компас использует поле вместе с оценкой вертикали. Гироскоп помогает с быстрым движением. Географический север требует поправки; он отличается от магнитного. Apple: trueHeading",
+            "en": "The compass uses the field along with a vertical estimate. The gyroscope helps with fast movement. Geographic north requires correction; it is different from magnetic. Apple: trueHeading"
+          }
+        },
+        {
+          "id": "note-4-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "ΔB + геометрия",
+            "en": "ΔB + geometry"
+          }
+        },
+        {
+          "id": "note-4-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Внешний реквизит",
+            "en": "External props"
+          }
+        },
+        {
+          "id": "note-4-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Магнит, направляющая, кнопка или подготовленное место превращают изменение поля в управляемый сигнал. Без заданной геометрии положение и ориентация источника неоднозначны.",
+            "en": "A magnet, guide, button or prepared area turns the field change into a controlled signal. Without a given geometry, the position and orientation of the source are ambiguous."
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-5",
+      "title": {
+        "ru": "Как выбрать направление разработки",
+        "en": "How to choose a development direction"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-5-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "УсловияПодходящие механикиПервый прототип",
+            "en": "Conditions Suitable mechanics First prototype"
+          }
+        },
+        {
+          "id": "note-5-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Только телефонАзимут, широкие сектора, удержание курсаСовместить направление и подтвердить касанием: M004 + M073",
+            "en": "Phone only Azimuth, wide sectors, heading hold Combine direction and confirm by touch: M004 + M073"
+          }
+        },
+        {
+          "id": "note-5-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Есть отдельный магнитКнопка, удержание, ритм, аналоговая шкалаПоднести магнит и удержать значение в окне: M017 + M026",
+            "en": "There is a separate magnet Button, hold, rhythm, analog scale. Place the magnet and hold the value in the window: M017 + M026"
+          }
+        },
+        {
+          "id": "note-5-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Можно сделать аксессуарКнопка, ползунок, ручка, рычаг, жетоныОдин ползунок с известными концами: M050",
+            "en": "Can be made accessory Button, slider, knob, lever, tokens One slider with known ends: M050"
+          }
+        },
+        {
+          "id": "note-5-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Есть площадка или несколько игроковПоиск, контрольные точки, разделённые ролиНайти подготовленный источник по обратной связи: M065",
+            "en": "There is a platform or several players Search, control points, divided roles Find a prepared source for feedback: M065"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-6",
+      "title": {
+        "ru": "Где проходит граница возможностей",
+        "en": "Where is the limit of possibility?"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-6-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Нет свободного 3D-трекинга",
+            "en": "No free 3D tracking"
+          }
+        },
+        {
+          "id": "note-6-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Три значения поля обычно недостаточны для однозначного восстановления неизвестных положения и ориентации магнита. Помогают направляющая, известная ориентация, карта, дополнительные датчики или иная система трекинга.",
+            "en": "Three field values ​​are usually insufficient to unambiguously reconstruct the unknown position and orientation of the magnet. A guide, a known orientation, a map, additional sensors, or another tracking system can help."
+          }
+        },
+        {
+          "id": "note-6-entry-3",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Нет универсального расстояния",
+            "en": "There is no universal distance"
+          }
+        },
+        {
+          "id": "note-6-entry-4",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Сигнал зависит от силы и ориентации магнита, направления движения, фонового поля и модели телефона. Приближение к магниту не обязано монотонно увеличивать модуль суммарного поля.",
+            "en": "The signal depends on the strength and orientation of the magnet, the direction of movement, the background field and the phone model. Approaching a magnet does not have to monotonically increase the modulus of the total field."
+          }
+        },
+        {
+          "id": "note-6-entry-5",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Нет независимых каналов для многих магнитов",
+            "en": "No independent channels for many magnets"
+          }
+        },
+        {
+          "id": "note-6-entry-6",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Телефон измеряет суммарное поле в месте датчика. Несколько предметов нужно считывать последовательно, ограничивать их состояния или распознавать небольшой набор заранее проверенных комбинаций.",
+            "en": "The phone measures the total field at the sensor location. Several objects must be read sequentially, their states must be limited, or a small set of pre-tested combinations must be recognized."
+          }
+        },
+        {
+          "id": "note-6-entry-7",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Компас и локальный магнит конфликтуют",
+            "en": "Compass and local magnet conflict"
+          }
+        },
+        {
+          "id": "note-6-entry-8",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Если магнит намеренно меняет поле, компас может перестать показывать мировой азимут. Для одновременного локального ввода и ориентации нужны отдельная модель компенсации, гироскоп или другой источник ориентира.",
+            "en": "If a magnet deliberately changes the field, the compass may no longer show world azimuth. Simultaneous local input and orientation require a separate compensation model, gyroscope, or other reference source."
+          }
+        },
+        {
+          "id": "note-6-entry-9",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Калибровка зависит от задачи",
+            "en": "Calibration depends on the application"
+          }
+        },
+        {
+          "id": "note-6-entry-10",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Отделять измерение естественного поля от искусственных магнитных жестов. Автокалибровка способна менять устойчивый сигнал от аксессуара. На Android проверять calibrated и uncalibrated данные; это разные API. Android: Position sensors",
+            "en": "Separate natural field measurement from artificial magnetic gestures. Auto-calibration is capable of changing the stable signal from the accessory. On Android, check calibrated and uncalibrated data; these are different APIs. Android: Position sensors"
+          }
+        },
+        {
+          "id": "note-6-entry-11",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Наклон и тряска не специфичны для магнитометра",
+            "en": "Tilt and shake are not specific to the magnetometer"
+          }
+        },
+        {
+          "id": "note-6-entry-12",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Для них предназначены акселерометр и гироскоп. На Android TYPE_GAME_ROTATION_VECTOR специально не использует магнитное поле. Если связь с севером или внешним магнитом не нужна, магнитометр может быть лишним. Android: Position sensors",
+            "en": "An accelerometer and a gyroscope are designed for them. On Android, TYPE_GAME_ROTATION_VECTOR specifically does not use a magnetic field. If communication with the north or an external magnet is not needed, a magnetometer may be superfluous. Android: Position sensors"
+          }
+        },
+        {
+          "id": "note-6-entry-13",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Нельзя обещать универсальный металлоискатель",
+            "en": "You can't promise a universal metal detector"
+          }
+        },
+        {
+          "id": "note-6-entry-14",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Доступен отклик на магнитные источники и некоторые ферромагнитные объекты в подходящих условиях. Надёжное обнаружение любых металлов, проводки, людей и скрытых предметов из этого не следует.",
+            "en": "Response to magnetic sources and some ferromagnetic objects is available under suitable conditions. Reliable detection of any metals, wiring, people and hidden objects does not follow from this."
+          }
+        },
+        {
+          "id": "note-6-entry-15",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Датчик измеряет, а не притягивает",
+            "en": "The sensor measures, not attracts"
+          }
+        },
+        {
+          "id": "note-6-entry-16",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Магнитометр не создаёт управляемое магнитное поле и не перемещает предметы. Магниты в корпусе телефона также не становятся программно управляемым приводом. Магнитометр, Hall-датчик крышки, NFC и MagSafe являются разными механизмами.",
+            "en": "The magnetometer does not create a controlled magnetic field and does not move objects. The magnets in the phone case also do not become a software-controlled drive. Magnetometer, Hall lid sensor, NFC and MagSafe are different mechanisms."
+          }
+        },
+        {
+          "id": "note-6-entry-17",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Есть аппаратные и платформенные ограничения",
+            "en": "There are hardware and platform limitations"
+          }
+        },
+        {
+          "id": "note-6-entry-18",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверять наличие датчика, диапазон, фактическую частоту и доступность API. Сильный магнит способен вывести показания за диапазон. Частота записи в приложении может отличаться от запрошенной; быстрые циклы требуют отдельной проверки.",
+            "en": "Check sensor availability, range, actual frequency and API availability. A strong magnet can push readings out of range. The frequency of recording in the application may differ from the requested one; fast cycles require separate testing."
+          }
+        },
+        {
+          "id": "note-6-entry-19",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Веб не равен нативному приложению",
+            "en": "Web is not equal to native app"
+          }
+        },
+        {
+          "id": "note-6-entry-20",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "По состоянию на 20 октября 2026 документация W3C указывает, что сырой Magnetometer API не доступен по умолчанию в браузерных движках. HTTPS и разрешения сами по себе не гарантируют поддержку. События ориентации не равнозначны доступу к Bx, By, Bz. W3C: Magnetometer, 14 мая 2026",
+            "en": "As of October 20, 2026, the W3C documentation indicates that the raw Magnetometer API is not available by default in browser engines. HTTPS and permissions alone do not guarantee support. Orientation events are not the same as accesses to Bx, By, Bz. W3C: Magnetometer, May 14, 2026"
+          }
+        },
+        {
+          "id": "note-6-entry-21",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Проверка на устройствах обязательна",
+            "en": "Verification on devices is required"
+          }
+        },
+        {
+          "id": "note-6-entry-22",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Найти положение датчика; измерить фон с чехлом и без него; протестировать ориентации, помехи и рабочие расстояния. Для прототипов выбирать слабый достаточный источник и крепление, не требующее сильного магнита рядом с камерой. MagPie, CHI 2025",
+            "en": "Find the sensor position; measure the background with and without a cover; test orientations, interference and operating distances. For prototypes, choose a weak, sufficient source and a mount that does not require a strong magnet near the camera. MagPie, CHI 2025"
+          }
+        }
+      ]
+    },
+    {
+      "id": "note-7",
+      "title": {
+        "ru": "Как пользоваться каталогом",
+        "en": "How to use the catalog"
+      },
+      "intro": {
+        "ru": "",
+        "en": ""
+      },
+      "entries": [
+        {
+          "id": "note-7-entry-1",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "Разделяйте действие игрока, распознаваемый сигнал, игровое правило и обратную связь. Родственные варианты здесь сохраняют контекст применения и не обязательно являются независимыми физическими примитивами.",
+            "en": "Separate player action, signal recognition, game rule, and feedback. The related variants here preserve the context of application and are not necessarily independent physical primitives."
+          }
+        },
+        {
+          "id": "note-7-entry-2",
+          "title": {
+            "ru": "",
+            "en": ""
+          },
+          "text": {
+            "ru": "При прототипировании сначала проверьте одно правило и условия отказа. Наличие API, датчика или источника не доказывает работу всех сценариев. Для устройств проверяйте доступность функций, калибровку и альтернативный ввод на реальном целевом оборудовании.",
+            "en": "When prototyping, test one rule and failure conditions first. The presence of an API, sensor, or source does not prove that all scenarios work. For devices, test feature availability, calibration, and alternate input on the actual target hardware."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Android: Position sensors",
+        "en": "Android: Position sensors"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_position",
+      "description": {
+        "ru": "Компоненты поля, вычисление ориентации, отличие game rotation vector от магнитного ориентира.",
+        "en": "Field components, orientation calculation, difference between game rotation vector and magnetic reference."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: CMMagnetometerData",
+        "en": "Apple: CMMagnetometerData"
+      },
+      "url": "https://developer.apple.com/documentation/coremotion/cmmagnetometerdata",
+      "description": {
+        "ru": "Доступ к трёхосевым измерениям магнитометра.",
+        "en": "Access triaxial magnetometer measurements."
+      }
+    },
+    {
+      "title": {
+        "ru": "Apple: trueHeading",
+        "en": "Apple: trueHeading"
+      },
+      "url": "https://developer.apple.com/documentation/corelocation/clheading/trueheading",
+      "description": {
+        "ru": "Географический север и необходимость данных о местоположении.",
+        "en": "Geographic north and the need for location data."
+      }
+    },
+    {
+      "title": {
+        "ru": "MagGetz, UIST 2013",
+        "en": "MagGetz, UIST 2013"
+      },
+      "url": "https://doi.org/10.1145/2501988.2501991",
+      "description": {
+        "ru": "Исследовательский прецедент пассивных магнитных контроллеров около мобильного устройства.",
+        "en": "Research precedent for passive magnetic controllers near a mobile device."
+      }
+    },
+    {
+      "title": {
+        "ru": "MagPie, CHI 2025",
+        "en": "MagPie, CHI 2025"
+      },
+      "url": "https://ixlab.cau.ac.kr/papers/magpie.pdf",
+      "description": {
+        "ru": "Модульные физические кнопки и рычаги на обороте телефона с использованием его магнитометра.",
+        "en": "Modular physical buttons and levers on the back of the phone using its magnetometer."
+      }
+    },
+    {
+      "title": {
+        "ru": "MagBoard, авторский препринт",
+        "en": "MagBoard, author's preprint"
+      },
+      "url": "https://arxiv.org/abs/1605.00284",
+      "description": {
+        "ru": "Исследовательский прецедент ввода магнитом по подготовленной сетке.",
+        "en": "Research precedent for magnetic input on a prepared grid."
+      }
+    },
+    {
+      "title": {
+        "ru": "Magnetic Field Sensing for Pedestrian and Robot Indoor Positioning",
+        "en": "Magnetic Field Sensing for Pedestrian and Robot Indoor Positioning"
+      },
+      "url": "https://arxiv.org/abs/2108.11824",
+      "description": {
+        "ru": "Авторская работа о локализации по магнитным данным в заданных условиях.",
+        "en": "Author's work on localization using magnetic data under given conditions."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Magnetometer, 14 мая 2026",
+        "en": "W3C: Magnetometer, May 14, 2026"
+      },
+      "url": "https://www.w3.org/TR/magnetometer/",
+      "description": {
+        "ru": "Доступ к сырому магнитометру в вебе; текущая спецификация не обещает доступности по умолчанию.",
+        "en": "Access to the raw magnetometer on the web; the current specification does not promise availability by default."
+      }
+    }
+  ]
+}
