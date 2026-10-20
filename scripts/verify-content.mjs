@@ -7,6 +7,7 @@ import { validateLenses, lensData } from '../src/lib/lenses.mjs';
 import { validateJams, jamData } from '../src/lib/jams.mjs';
 import { validateContentOrder } from '../src/lib/content-order.mjs';
 import { resourceGroups } from '../src/lib/resources.mjs';
+import { validateLearningPaths } from '../src/lib/learning-paths.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -255,6 +256,13 @@ for (const [index, resource] of resources.entries()) {
 
 errors.push(...validateMechanics());
 errors.push(...validatePractice(), ...validateLenses(), ...validateJams());
+errors.push(
+  ...validateLearningPaths({
+    lessons: [...lessons.keys()],
+    practice: practiceSource.tasks.map((t) => t.id),
+    lenses: lensData.lenses.map((l) => l.id),
+  }),
+);
 
 const ids = (items) => items.map((item) => item.id);
 const orderingScopes = {

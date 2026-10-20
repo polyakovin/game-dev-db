@@ -5,6 +5,7 @@ import { mechanicRecords, getMechanics } from '../../../lib/mechanics.mjs';
 import { practiceRecords, getPractice } from '../../../lib/practice.mjs';
 import { lensRecords, getLenses } from '../../../lib/lenses.mjs';
 import { jamData, jamSnapshot } from '../../../lib/jams.mjs';
+import { learningPathData } from '../../../lib/learning-paths.mjs';
 export async function GET() {
   const lessons = await getLessons();
   const mechanics = mechanicRecords();
@@ -23,6 +24,7 @@ export async function GET() {
       ...practiceRecords().map((c) => c.updatedAt),
       ...lensRecords().map((c) => c.updatedAt),
       jamData.updatedAt,
+      ...learningPathData.map((p) => p.updatedAt),
     ]
       .sort()
       .at(-1),
@@ -30,6 +32,7 @@ export async function GET() {
       lessons: lessons.length,
       translationPairs: lessons.length / 2,
       resources: resources.length,
+      learningPaths: learningPathData.length,
       jams: jamSnapshot().events.length,
       jamCalendars: jamData.calendars.length,
       lensCatalogs: lensRecords().length,
@@ -50,6 +53,7 @@ export async function GET() {
     },
     endpoints: {
       lessons: absolute('api/v1/lessons.json'),
+      learningPaths: absolute('api/v1/learning-paths.json'),
       resources: absolute('api/v1/resources.json'),
       jams: absolute('api/v1/jams.json'),
       mechanics: absolute('api/v1/mechanics.json'),

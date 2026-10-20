@@ -1,0 +1,97 @@
+---
+import { getLearningPaths } from '../lib/learning-paths.mjs';
+import { getLessons } from '../lib/content';
+import { path, type Locale } from '../lib/site';
+interface Props {
+  lang: Locale;
+  id: string;
+}
+const { lang, id } = Astro.props;
+const route = getLearningPaths(lang).find((p) =>
+  p.lessons.some((l) => l.id === id),
+);
+const position = route?.lessons.findIndex((l) => l.id === id) ?? -1;
+const lessons = await getLessons(lang);
+const title = (lessonId: string) =>
+  lessons.find((l) => l.data.id === lessonId)!.data.title;
+const adjacent = route
+  ? [
+      {
+        lesson: route.lessons[position - 1],
+        label: lang === 'ru' ? 'Предыдущий урок' : 'Previous lesson',
+        rel: 'prev',
+      },
+      {
+        lesson: route.lessons[position + 1],
+        label: lang === 'ru' ? 'Следующий урок' : 'Next lesson',
+        rel: 'next',
+      },
+    ]
+  : [];
+---
+
+{route && (
+  <nav
+    class="lesson-path"
+    data-lesson-path
+    aria-label={lang === 'ru' ? 'Учебный раздел' : 'Learning path'}
+  >
+    <p>
+      <a href={path(`${lang}/learn/${route.id}/`)}>{route.title}</a>
+      <span>
+        {' '}
+        · {lang === 'ru' ? 'Урок' : 'Lesson'} {position + 1} /{' '}
+        {route.lessons.length}
+      </span>
+    </p>
+    <div>
+      {adjacent
+        .filter((item) => item.lesson)
+        .map((item) => (
+          <a rel={item.rel} href={path(`${lang}/lessons/${item.lesson.id}/`)}>
+            <span>{item.label}</span>
+            <strong>{title(item.lesson.id)}</strong>
+          </a>
+        ))}
+    </div>
+  </nav>
+)}
+
+<style>
+  .lesson-path {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  p {
+    margin: 0 0 1rem;
+  }
+  p > a {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  p > span,
+  a > span {
+    color: var(--muted);
+  }
+  div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  div a {
+    display: grid;
+    gap: 0.35rem;
+    text-decoration: none;
+  }
+  div a:hover strong {
+    color: var(--accent);
+  }
+  @media (max-width: 600px) {
+    div {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

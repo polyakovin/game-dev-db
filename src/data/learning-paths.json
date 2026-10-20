@@ -1,0 +1,58 @@
+[
+  {
+    "id": "level-design",
+    "updatedAt": "2026-10-20",
+    "title": { "ru": "Левел-дизайн", "en": "Level design" },
+    "description": {
+      "ru": "От чернового пространства к понятному маршруту и обучению одной механике.",
+      "en": "From a rough playable space to readable routes and teaching one mechanic."
+    },
+    "lessons": ["level-blockout", "level-wayfinding", "teaching-a-mechanic"],
+    "prerequisites": ["scope-and-prototype", "input-and-feedback"],
+    "practice": ["paper-current", "signal-room", "three-minute-museum"],
+    "lenses": ["schell-026", "schell-032", "schell-034"]
+  },
+  {
+    "id": "balance",
+    "updatedAt": "2026-10-20",
+    "title": { "ru": "Баланс и прогрессия", "en": "Balance and progression" },
+    "description": {
+      "ru": "Цена выбора, случайные серии и улучшения, которые меняют действия игрока.",
+      "en": "Choice costs, random streaks and upgrades that change player actions."
+    },
+    "lessons": ["choice-cost", "controlled-randomness", "progression-pacing"],
+    "prerequisites": ["scope-and-prototype"],
+    "practice": ["last-ferry", "weather-window", "remove-the-market"],
+    "lenses": ["schell-039", "schell-036", "schell-055"]
+  },
+  {
+    "id": "npc-behavior",
+    "updatedAt": "2026-10-20",
+    "title": { "ru": "Поведение NPC", "en": "NPC behavior" },
+    "description": {
+      "ru": "Что персонаж знает, как выбирает действие и каким путём добирается к цели.",
+      "en": "What a character knows, how it selects an action and how it reaches a destination."
+    },
+    "lessons": ["npc-perception", "npc-action-selection", "npc-pathfinding"],
+    "prerequisites": ["game-loop", "state-machines", "collision-basics"],
+    "practice": ["shared-workshop"],
+    "lenses": ["schell-028", "schell-031", "schell-062"]
+  },
+  {
+    "id": "game-verification",
+    "updatedAt": "2026-10-20",
+    "title": { "ru": "Проверка игры", "en": "Game verification" },
+    "description": {
+      "ru": "Наблюдение за игроком, проверка поведения и поиск барьеров доступности.",
+      "en": "Player observation, behavior acceptance and finding accessibility barriers."
+    },
+    "lessons": [
+      "running-a-playtest",
+      "gameplay-acceptance",
+      "game-accessibility"
+    ],
+    "prerequisites": ["scope-and-prototype", "state-machines"],
+    "practice": ["three-minute-museum", "rhythm-without-hurry"],
+    "lenses": ["schell-103", "schell-033", "schell-060"]
+  }
+]

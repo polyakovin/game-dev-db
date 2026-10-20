@@ -1,0 +1,62 @@
+---
+import { getLearningPaths } from '../lib/learning-paths.mjs';
+import { path, type Locale } from '../lib/site';
+import Icon from './Icon.astro';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+---
+
+<section class="learning-paths" aria-labelledby="learning-paths-heading">
+  <div class="section-heading">
+    <h2 id="learning-paths-heading">
+      {lang === 'ru' ? 'Учебные разделы' : 'Learning paths'}
+    </h2>
+    <span class="section-caption">
+      {lang === 'ru'
+        ? 'Три урока и практика в каждом'
+        : 'Three lessons and practice in each'}
+    </span>
+  </div>
+  <div class="path-grid">
+    {getLearningPaths(lang).map((entry, i) => (
+      <a
+        class="lesson-card"
+        data-learning-path-card
+        href={path(`${lang}/learn/${entry.id}/`)}
+      >
+        <div class="card-top">
+          <span class="category-tag">
+            {lang === 'ru' ? 'Учебный раздел' : 'Learning path'}
+          </span>
+          <span class="card-index">{String(i + 1).padStart(2, '0')}</span>
+        </div>
+        <h3>{entry.title}</h3>
+        <p>{entry.description}</p>
+        <div class="card-bottom">
+          <span>
+            {entry.lessons.length} {lang === 'ru' ? 'урока' : 'lessons'}
+          </span>
+          <Icon name="arrow" size={18} />
+        </div>
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .learning-paths {
+    margin: 3rem 0;
+  }
+  .path-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  @media (max-width: 600px) {
+    .path-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

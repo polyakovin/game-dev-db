@@ -9,7 +9,7 @@ and static publishing workflow.
 ## Requirements
 
 ### Requirement: Bilingual knowledge catalog
-The portal SHALL provide Russian and English catalogs and eight paired original lessons,
+The portal SHALL provide Russian and English catalogs and twenty paired original lessons,
 with stable lesson IDs, categories, sources, reading time and language metadata.
 
 #### Scenario: Read a lesson without JavaScript

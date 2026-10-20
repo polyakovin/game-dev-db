@@ -2,6 +2,7 @@
 import { render } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
+import LessonPath from '../../../components/LessonPath.astro';
 import { getLessons } from '../../../lib/content';
 import { path, REPO, ui } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -86,6 +87,7 @@ const related = (await getLessons(data.lang))
       </div>
     </aside>
   </div>
+  <LessonPath lang={data.lang} id={data.id} />
   {related.length > 0 && (
     <section class="related">
       <h2>

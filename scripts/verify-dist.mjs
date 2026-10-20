@@ -7,6 +7,10 @@ import { practiceRecords } from '../src/lib/practice.mjs';
 import { lensRecords } from '../src/lib/lenses.mjs';
 import { jamSnapshot, getJams } from '../src/lib/jams.mjs';
 import { getResources } from '../src/lib/resources.mjs';
+import {
+  learningPathRecords,
+  learningPathData,
+} from '../src/lib/learning-paths.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -157,6 +161,7 @@ for (const required of [
   'llms-full.txt',
   'api/v1/manifest.json',
   'api/v1/lessons.json',
+  'api/v1/learning-paths.json',
   'api/v1/resources.json',
   'api/v1/mechanics.json',
   'api/v1/practice.json',
@@ -245,12 +250,14 @@ for (const lang of ['ru', 'en']) {
 
 const manifest = exports.get('api/v1/manifest.json');
 const lessonExport = exports.get('api/v1/lessons.json');
+const pathExport = exports.get('api/v1/learning-paths.json');
 const resourceExport = exports.get('api/v1/resources.json');
 const mechanicExport = exports.get('api/v1/mechanics.json');
 const practiceExport = exports.get('api/v1/practice.json');
 for (const [name, payload] of [
   ['manifest', manifest],
   ['lessons', lessonExport],
+  ['learning-paths', pathExport],
   ['resources', resourceExport],
   ['mechanics', mechanicExport],
   ['practice', practiceExport],
@@ -259,6 +266,40 @@ for (const [name, payload] of [
     errors.push(`${name} JSON: schemaVersion must be 1`);
   if (!payload || payload.license !== 'CC-BY-4.0' || !payload.attribution)
     errors.push(`${name} JSON: content license and attribution are required`);
+}
+if (JSON.stringify(pathExport?.paths) !== JSON.stringify(learningPathRecords()))
+  errors.push('Learning paths JSON differs from the shared source records');
+if (
+  manifest?.counts?.learningPaths !== learningPathData.length ||
+  manifest?.endpoints?.learningPaths !==
+    `${site}${base}api/v1/learning-paths.json`
+)
+  errors.push('Manifest: learning path count or endpoint is incorrect');
+for (const route of learningPathRecords()) {
+  const file = await resolveFile(new URL(route.url).pathname);
+  if (!file) {
+    errors.push(`Learning path page missing: ${route.lang}/${route.id}`);
+    continue;
+  }
+  const $ = await document(file);
+  if ($('h1').text() !== route.title)
+    errors.push(`Learning path ${route.id}: title differs from source`);
+  for (const [selector, items] of [
+    ['[data-path-lesson]', route.lessons],
+    ['[data-path-practice]', route.practice],
+    ['[data-path-lens]', route.lenses],
+  ]) {
+    const hrefs = $(selector)
+      .toArray()
+      .map((node) => $(node).attr('href'));
+    const expected = items.map(
+      (item) => new URL(item.url).pathname + new URL(item.url).hash,
+    );
+    if (JSON.stringify(hrefs) !== JSON.stringify(expected))
+      errors.push(
+        `Learning path ${route.lang}/${route.id}: ${selector} order or links differ`,
+      );
+  }
 }
 if (!Array.isArray(lessonExport?.lessons)) {
   errors.push('Lessons JSON must contain a lessons array');

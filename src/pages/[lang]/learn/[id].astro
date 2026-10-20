@@ -1,0 +1,202 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getLearningPaths } from '../../../lib/learning-paths.mjs';
+import { getLessons } from '../../../lib/content';
+import { getPractice } from '../../../lib/practice.mjs';
+import { getLenses } from '../../../lib/lenses.mjs';
+import { locales, path, ui } from '../../../lib/site';
+export function getStaticPaths() {
+  return locales.flatMap((lang) =>
+    getLearningPaths(lang).map((route) => ({
+      params: { lang, id: route.id },
+      props: { route },
+    })),
+  );
+}
+const { route } = Astro.props;
+const { lang } = route;
+const ru = lang === 'ru';
+const lessons = await getLessons(lang);
+const lessonFor = (id: string) => lessons.find((l) => l.data.id === id)!.data;
+const practice = getPractice(lang);
+const lenses = getLenses(lang);
+---
+
+<Layout
+  lang={lang}
+  title={route.title}
+  description={route.description}
+  alternate={`learn/${route.id}/`}
+>
+  <a class="back-link" href={path(`${lang}/#learning-paths-heading`)}>
+    ← {ru ? 'Все учебные разделы' : 'All learning paths'}
+  </a>
+  <header class="article-header">
+    <div class="eyebrow">{ru ? 'Учебный раздел' : 'Learning path'}</div>
+    <h1>{route.title}</h1>
+    <p>{route.description}</p>
+    <div class="article-meta">
+      <span>
+        {route.lessons.length} {ru ? 'урока' : 'lessons'}
+      </span>
+      <span>
+        {route.lessons.reduce((sum, l) => sum + lessonFor(l.id).minutes, 0)}{' '}
+        {ru
+          ? 'мин чтения; практика отдельно'
+          : 'min reading; practice separately'}
+      </span>
+      <span>
+        {ui[lang].updated}:{' '}
+        <time datetime={route.updatedAt}>{route.updatedAt}</time>
+      </span>
+    </div>
+  </header>
+  <section class="path-prerequisites" aria-labelledby="prerequisites-heading">
+    <h2 id="prerequisites-heading">
+      {ru ? 'Перед началом' : 'Before you start'}
+    </h2>
+    <p>
+      {ru
+        ? 'При необходимости освежите основы:'
+        : 'Refresh these foundations if needed:'}
+    </p>
+    <ul>
+      {route.prerequisites.map((l) => (
+        <li>
+          <a href={path(`${lang}/lessons/${l.id}/`)}>{lessonFor(l.id).title}</a>
+        </li>
+      ))}
+    </ul>
+  </section>
+  <section aria-labelledby="sequence-heading">
+    <div class="section-heading">
+      <h2 id="sequence-heading">
+        {ru ? 'Порядок изучения' : 'Lesson sequence'}
+      </h2>
+    </div>
+    <ol class="path-lessons" data-path-lessons>
+      {route.lessons.map((l) => {
+        const lesson = lessonFor(l.id);
+        return (
+          <li>
+            <h3>
+              <a data-path-lesson href={path(`${lang}/lessons/${l.id}/`)}>
+                {lesson.title}
+              </a>
+            </h3>
+            <p>{lesson.description}</p>
+            <div class="lesson-meta">
+              <span>
+                {ui[lang][lesson.level]} · {lesson.minutes} {ui[lang].minutes}
+              </span>
+              <a href={path(`content/${lang}/${l.id}.md`)}>
+                {ui[lang].markdown}
+              </a>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  </section>
+  <section class="path-practice" aria-labelledby="practice-heading">
+    <h2 id="practice-heading">
+      {ru ? 'Применить на практике' : 'Put it into practice'}
+    </h2>
+    {route.id === 'npc-behavior' && (
+      <p>
+        {ru
+          ? '«Общая мастерская» помогает сформулировать роли и конфликт ресурсов перед проектированием помощника. Реализацию NPC проверяйте заданиями из уроков.'
+          : 'Shared Workshop helps define roles and resource conflicts before designing a companion. Use the lesson tasks to check NPC implementation.'}
+      </p>
+    )}
+    <ul>
+      {route.practice.map((p) => (
+        <li>
+          <a data-path-practice href={path(`${lang}/practice/#${p.id}`)}>
+            {practice.tasks.find((t) => t.id === p.id)!.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <h2>{ru ? 'Проверить через призмы' : 'Review through lenses'}</h2>
+    <ul>
+      {route.lenses.map((l) => (
+        <li>
+          <a data-path-lens href={path(`${lang}/lenses/#${l.id}`)}>
+            {lenses.lenses.find((lens) => lens.id === l.id)!.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="notice">
+      {ru
+        ? 'В уроках есть самостоятельные учебные примеры и ссылки на первоисточники. Числа и сценарии иллюстрируют принцип; результат нужно проверить в своей игре.'
+        : 'Lessons contain original teaching examples and primary-source links. Numbers and scenarios illustrate a principle; verify the result in your own game.'}
+    </p>
+  </section>
+</Layout>
+
+<style>
+  section {
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    margin-bottom: 0.75rem;
+  }
+  .path-prerequisites,
+  .path-practice {
+    max-width: 75ch;
+  }
+  ul {
+    padding-left: 1.3rem;
+  }
+  li {
+    margin: 0.6rem 0;
+  }
+  a {
+    color: var(--accent);
+  }
+  .path-lessons {
+    padding-left: 1.8rem;
+  }
+  .path-lessons li {
+    padding: 1.5rem;
+    margin: 0 0 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+  }
+  .path-lessons li::marker {
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  h3 {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+  h3 a {
+    color: var(--ink);
+  }
+  h3 a:hover {
+    color: var(--accent);
+  }
+  .path-lessons p {
+    color: var(--muted);
+    max-width: 75ch;
+  }
+  .lesson-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .path-practice h2:not(:first-child) {
+    margin-top: 2rem;
+  }
+  @media (max-width: 600px) {
+    .path-lessons li {
+      padding: 1rem;
+    }
+  }
+</style>

@@ -45,6 +45,12 @@ Individual Markdown exports retain the original lesson body and frontmatter data
 
 ## Boundaries
 
+Learning paths use `src/data/learning-paths.json` and a shared localization/reference
+validator in `src/lib/learning-paths.mjs`. Homepage cards, static
+`{lang}/learn/{id}/` pages, lesson sequence navigation and additive
+`api/v1/learning-paths.json` share these ordered identities. The lesson collection
+remains the sole source of lesson text and metadata. See [the path contract](learning-paths.md).
+
 Practice uses one bilingual JSON catalogue in `src/data/practice.json`.
 `src/lib/practice.mjs` derives localized HTML records and full Markdown; source
 validation and built-output comparisons check the same contract. See

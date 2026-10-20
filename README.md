@@ -7,6 +7,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 ## What is here
 
 - Original lessons about game foundations, design, engineering, and AI-assisted workflows.
+- Four practical learning paths with twelve new lesson pairs: level design, balance, NPC behavior and game verification. Each connects lessons to exercises and design lenses.
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
 - Mechanic references for voice/audio games, point-and-click adventures, children's games, educational games for different ages, detective games and 30 RPG grind mechanics, plus 124 Boss Fight Atlas mechanics and 199 Game Mechanics entries with their source and game references, in Russian and English.
@@ -45,6 +46,7 @@ Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then f
 | Full lesson corpus          | `llms-full.txt`                                   |
 | Export manifest             | `api/v1/manifest.json`                            |
 | Structured lessons          | `api/v1/lessons.json`                             |
+| Learning paths              | `api/v1/learning-paths.json`                      |
 | Resource catalog            | `api/v1/resources.json`                           |
 | Game jams and calendars     | `api/v1/jams.json`                                |
 | Mechanic catalogs           | `api/v1/mechanics.json`                           |

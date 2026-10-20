@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Icon from '../../components/Icon.astro';
 import MechanicsCards from '../../components/MechanicsCards.astro';
+import LearningPaths from '../../components/LearningPaths.astro';
 import { getLessons } from '../../lib/content';
 import { getPractice } from '../../lib/practice.mjs';
 import { getLenses } from '../../lib/lenses.mjs';
@@ -210,6 +211,8 @@ const lensCatalog = getLenses(lang);
       <Icon name="arrow" size={16} />
     </span>
   </a>
+
+  <LearningPaths lang={lang} />
 
   <section id="catalog" class="catalog" aria-label={t.catalog}>
     <div class="section-heading">
