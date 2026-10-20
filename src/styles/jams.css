@@ -1,0 +1,195 @@
+.jams-js [data-jam-events]:not([data-ready]) {
+  visibility: hidden;
+}
+.jams-calendar-jump,
+.jam-entry,
+.jams-empty > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--accent);
+  font-size: 13px;
+}
+.jams-calendar-jump {
+  margin-top: 18px;
+}
+.jams-count,
+.jams-time-note {
+  color: var(--muted);
+  font-size: 12px;
+}
+.jams-count {
+  margin: 0;
+}
+.jams-time-note {
+  margin-bottom: 22px;
+}
+.jams-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.jam-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: var(--surface);
+}
+.jam-card[hidden],
+.jams-empty[hidden] {
+  display: none;
+}
+.jam-card-top,
+.jam-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.jam-status {
+  padding: 5px 9px;
+  color: var(--muted);
+  background: var(--surface-alt);
+  border-radius: 4px;
+  font-size: 11px;
+}
+.jam-status.is-open {
+  color: var(--positive);
+  background: var(--positive-bg);
+}
+.jam-format,
+.jam-organizer {
+  color: var(--muted);
+  font-size: 11px;
+}
+.jam-card h3 {
+  font-size: 22px;
+  line-height: 1.35;
+  letter-spacing: -0.5px;
+  margin: 22px 0 5px;
+  overflow-wrap: anywhere;
+}
+.jam-card h3 a:hover {
+  color: var(--accent);
+}
+.jam-card > p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.jam-card .jam-organizer {
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.jam-dates {
+  margin: 8px 0 20px;
+  padding: 15px 0;
+  border-block: 1px solid var(--line);
+  font-size: 12px;
+}
+.jam-dates > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+}
+.jam-dates > div + div {
+  margin-top: 8px;
+}
+.jam-dates dt {
+  color: var(--muted);
+}
+.jam-dates dd {
+  margin: 0;
+}
+.jam-requirements {
+  color: var(--muted);
+}
+.jam-card-bottom {
+  margin-top: auto;
+  padding-top: 20px;
+}
+.jam-card-bottom > span {
+  color: var(--muted);
+  font-size: 10px;
+}
+.jams-empty {
+  padding: 30px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 7px;
+}
+.jams-empty h3 {
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+.jams-empty p {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 14px;
+}
+.jams-calendars {
+  margin-top: 48px;
+  scroll-margin-top: 100px;
+}
+.jams-calendars h2 {
+  font-size: 26px;
+  margin: 0 0 10px;
+  letter-spacing: -0.5px;
+}
+.jams-calendars > p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.jam-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+.jam-calendar {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.jam-calendar:hover {
+  border-color: var(--accent);
+}
+.jam-calendar h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.jam-calendar p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+}
+.jams-snapshot {
+  margin-top: 26px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.jams-snapshot a {
+  color: var(--accent);
+}
+@media (max-width: 700px) {
+  .jams-grid,
+  .jam-calendar-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .jam-card {
+    padding: 20px;
+  }
+  [data-jam-events] .section-heading {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

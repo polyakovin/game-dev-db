@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { validateMechanics, mechanicCatalogs } from '../src/lib/mechanics.mjs';
 import { validatePractice, practiceSource } from '../src/lib/practice.mjs';
 import { validateLenses, lensData } from '../src/lib/lenses.mjs';
+import { validateJams } from '../src/lib/jams.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -251,7 +252,7 @@ for (const [index, resource] of resources.entries()) {
 }
 
 errors.push(...validateMechanics());
-errors.push(...validatePractice(), ...validateLenses());
+errors.push(...validatePractice(), ...validateLenses(), ...validateJams());
 
 if (errors.length) {
   console.error(

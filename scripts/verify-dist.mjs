@@ -5,6 +5,7 @@ import matter from 'gray-matter';
 import { mechanicRecords } from '../src/lib/mechanics.mjs';
 import { practiceRecords } from '../src/lib/practice.mjs';
 import { lensRecords } from '../src/lib/lenses.mjs';
+import { jamSnapshot, getJams } from '../src/lib/jams.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -150,6 +151,9 @@ for (const required of [
   'api/v1/mechanics.json',
   'api/v1/practice.json',
   'api/v1/lenses.json',
+  'api/v1/jams.json',
+  'ru/jams/index.html',
+  'en/jams/index.html',
   'ru/practice/index.html',
   'en/practice/index.html',
 ]) {
@@ -327,6 +331,7 @@ for (const key of [
   'mechanics',
   'practice',
   'lenses',
+  'jams',
   'discovery',
   'fullText',
 ]) {
@@ -528,6 +533,57 @@ for (const catalog of lensCatalogs) {
     !exports.get('llms.txt')?.includes(catalog.markdownUrl)
   )
     errors.push(`Lens agent discovery or corpus missing: ${key}`);
+}
+
+const jamExport = exports.get('api/v1/jams.json');
+if (!jamExport || !Number.isFinite(Date.parse(jamExport.generatedAt))) {
+  errors.push('Jams JSON is missing a valid generation timestamp');
+} else {
+  const generated = new Date(jamExport.generatedAt);
+  if (JSON.stringify(jamExport) !== JSON.stringify(jamSnapshot(generated)))
+    errors.push('Jams JSON differs from the current bilingual source snapshot');
+  if (
+    manifest?.counts?.jams !== jamExport.events.length ||
+    manifest?.counts?.jamCalendars !== jamExport.calendars.length
+  )
+    errors.push('Manifest jam counts differ from the exported snapshot');
+  if (!exports.get('llms.txt')?.includes('/api/v1/jams.json'))
+    errors.push('Jam export is missing from agent discovery');
+  for (const lang of ['ru', 'en']) {
+    const file = await resolveFile(`${base}${lang}/jams/`);
+    if (!file) continue;
+    const $ = await document(file);
+    const snapshotAt = $('[data-jam-generated-at]').attr('datetime');
+    if (!snapshotAt || !Number.isFinite(Date.parse(snapshotAt))) {
+      errors.push(`Jams ${lang}: build timestamp missing`);
+      continue;
+    }
+    const catalog = getJams(lang, new Date(snapshotAt));
+    if (
+      $('[data-jam]').length !== catalog.events.length ||
+      $('[data-jam-count]').text() !== String(catalog.events.length)
+    )
+      errors.push(`Jams ${lang}: HTML count differs from its source snapshot`);
+    for (const event of catalog.events) {
+      const card = $(`[data-jam-id="${event.id}"]`);
+      if (
+        card.find('h3').text() !== event.title ||
+        card.find('.jam-requirements').text() !== event.requirements ||
+        card.find('.jam-entry').attr('href') !== event.url ||
+        card.attr('data-ends-at') !== event.endsAt
+      )
+        errors.push(
+          `Jams ${lang}/${event.id}: content or deadline differs from source`,
+        );
+    }
+    if ($('[data-jam-calendar]').length !== catalog.calendars.length)
+      errors.push(`Jams ${lang}: missing discovery calendars`);
+    for (const calendar of catalog.calendars)
+      if (
+        $(`[data-jam-calendar="${calendar.id}"]`).attr('href') !== calendar.url
+      )
+        errors.push(`Jams ${lang}: incorrect calendar link ${calendar.id}`);
+  }
 }
 
 if (errors.length) {

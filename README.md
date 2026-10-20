@@ -8,6 +8,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 
 - Original lessons about game foundations, design, engineering, and AI-assisted workflows.
 - Curated links to primary documentation and useful external learning resources.
+- Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
 - Mechanic references for voice/audio games, point-and-click adventures, children's educational games and detective games, in Russian and English.
 - Twelve original game-design exercises with constraints, deliverables and checks, in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
@@ -45,6 +46,7 @@ Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then f
 | Export manifest             | `api/v1/manifest.json`                            |
 | Structured lessons          | `api/v1/lessons.json`                             |
 | Resource catalog            | `api/v1/resources.json`                           |
+| Game jams and calendars     | `api/v1/jams.json`                                |
 | Mechanic catalogs           | `api/v1/mechanics.json`                           |
 | Game-design practice        | `api/v1/practice.json`                            |
 | Design lenses | `api/v1/lenses.json` |
@@ -54,6 +56,8 @@ Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then f
 | Practice collection         | `content/practice/{lang}/game-design-practice.md` |
 
 The production site root is `https://polyakovin.github.io/game-dev-db/`. These are public files generated at build time, without an API key or server. Individual Markdown exports preserve lesson content and source metadata and add canonical URLs, attribution, and license fields to frontmatter. Read [the agent workflow](docs/agent-workflow.md) for attribution, language, and update guidance.
+
+Game jams are available at [`ru/jams/`](https://polyakovin.github.io/game-dev-db/ru/jams/) and [`en/jams/`](https://polyakovin.github.io/game-dev-db/en/jams/). The browser hides events at their submission deadline. A daily verified deployment refreshes static snapshots; JSON consumers must filter `endsAt > now` at read time. New events remain curated editorial additions. See [the jam content contract](docs/jams-content.md).
 
 ## Contribute
 

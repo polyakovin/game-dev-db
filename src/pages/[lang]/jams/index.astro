@@ -1,0 +1,210 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import { getJams } from '../../../lib/jams.mjs';
+import { jamStatus } from '../../../lib/jam-time.mjs';
+import { locales, path, type Locale } from '../../../lib/site';
+import '../../../styles/jams.css';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const ru = lang === 'ru';
+const now = new Date();
+const catalog = getJams(lang, now);
+const labels = ru
+  ? {
+      open: 'Идёт приём работ',
+      upcoming: 'Скоро старт',
+      count: 'Актуальных джемов',
+      title: 'Геймджемы',
+    }
+  : {
+      open: 'Submissions open',
+      upcoming: 'Upcoming',
+      count: 'Current jams',
+      title: 'Game jams',
+    };
+const format = (value: string, withTime = true) =>
+  new Intl.DateTimeFormat(ru ? 'ru-RU' : 'en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    ...(withTime
+      ? { hour: '2-digit' as const, minute: '2-digit' as const }
+      : {}),
+    timeZone: 'UTC',
+  }).format(new Date(value));
+---
+
+<Layout
+  lang={lang}
+  title={labels.title}
+  section="jams"
+  alternate="jams/"
+  description={
+    ru
+      ? 'Текущие и предстоящие геймджемы: сроки, условия участия и официальные ссылки.'
+      : 'Current and upcoming game jams: deadlines, entry requirements and official links.'
+  }
+>
+  <script is:inline>
+    document.documentElement.classList.add('jams-js');
+  </script>
+  <header class="page-header">
+    <div class="eyebrow">
+      {ru ? 'Практика с общим дедлайном' : 'Make something. Meet a deadline.'}
+    </div>
+    <h1>{ru ? 'Сделайте игру на джеме.' : 'Make a game at a jam.'}</h1>
+    <p>
+      {ru
+        ? 'Выберите событие, прочитайте условия и присоединяйтесь. Здесь остаются только джемы, у которых ещё не закончился приём работ.'
+        : 'Choose an event, read its rules and join in. Only jams whose submission deadline has not passed stay on this list.'}
+    </p>
+    <a class="jams-calendar-jump" href="#calendars">
+      {ru ? 'Где искать ещё джемы' : 'Find more jams'}{' '}
+      <Icon name="arrow" size={16} />
+    </a>
+  </header>
+
+  <section
+    data-jam-events
+    data-open-label={labels.open}
+    data-upcoming-label={labels.upcoming}
+    aria-labelledby="jam-events-title"
+  >
+    <div class="section-heading">
+      <h2 id="jam-events-title">
+        {ru ? 'Текущие и предстоящие' : 'Current and upcoming'}
+      </h2>
+      <p class="jams-count" aria-live="polite" aria-atomic="true">
+        {labels.count}: <span data-jam-count>{catalog.events.length}</span>
+      </p>
+    </div>
+    <p class="jams-time-note">
+      {ru
+        ? 'Все даты и время указаны в UTC. После дедлайна событие скрывается автоматически.'
+        : 'All dates and times are in UTC. Events disappear automatically at their submission deadline.'}
+    </p>
+    <div class="jams-grid" data-jam-list>
+      {catalog.events.map((event) => {
+        const status = jamStatus(event, now.getTime());
+        return (
+          <article
+            class="jam-card"
+            data-jam
+            data-jam-id={event.id}
+            data-starts-at={event.startsAt}
+            data-ends-at={event.endsAt}
+          >
+            <div class="jam-card-top">
+              <span
+                class:list={['jam-status', { 'is-open': status === 'open' }]}
+                data-jam-status
+              >
+                {status === 'open' ? labels.open : labels.upcoming}
+              </span>
+              <span class="jam-format">{ru ? 'Онлайн' : 'Online'}</span>
+            </div>
+            <h3>
+              <a href={event.url}>{event.title}</a>
+            </h3>
+            <p class="jam-organizer">{event.organizer}</p>
+            <p>{event.description}</p>
+            <dl class="jam-dates">
+              <div>
+                <dt>{ru ? 'Старт' : 'Starts'}</dt>
+                <dd>
+                  <time datetime={event.startsAt}>
+                    {format(event.startsAt)}
+                  </time>
+                </dd>
+              </div>
+              <div>
+                <dt>{ru ? 'Подать до' : 'Submit before'}</dt>
+                <dd>
+                  <time datetime={event.endsAt}>{format(event.endsAt)}</time>
+                </dd>
+              </div>
+            </dl>
+            <p class="jam-requirements">{event.requirements}</p>
+            <div class="jam-card-bottom">
+              <a class="jam-entry" href={event.url}>
+                {ru ? 'Правила и участие' : 'Rules and entry'}{' '}
+                <Icon name="external" size={15} />
+              </a>
+              <span>
+                {ru ? 'Проверено' : 'Checked'}{' '}
+                <time datetime={event.verifiedAt}>
+                  {format(event.verifiedAt, false)}
+                </time>
+              </span>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+    <div class="jams-empty" data-jam-empty hidden={catalog.events.length > 0}>
+      <h3>{ru ? 'Новые джемы ещё впереди.' : 'More jams are on the way.'}</h3>
+      <p>
+        {ru
+          ? 'У всех событий в этой подборке завершился приём работ. В календарях ниже можно найти другие джемы и присоединиться к ним.'
+          : 'Submissions have closed for every event in this selection. Use the calendars below to find another jam to join.'}
+      </p>
+      <a href="#calendars">
+        {ru ? 'Открыть календари' : 'Browse calendars'}{' '}
+        <Icon name="arrow" size={16} />
+      </a>
+    </div>
+  </section>
+
+  <noscript>
+    <p class="notice">
+      {ru
+        ? 'JavaScript выключен: показана подборка на момент сборки. Прошедшие события исчезнут при следующей публикации сайта; точные сроки проверяйте у организатора.'
+        : 'JavaScript is disabled: this is the build-time selection. Expired events disappear at the next site publication; confirm deadlines with the organizer.'}
+    </p>
+  </noscript>
+
+  <section
+    class="jams-calendars"
+    id="calendars"
+    aria-labelledby="jam-calendars-title"
+  >
+    <h2 id="jam-calendars-title">
+      {ru ? 'Где искать ещё джемы' : 'Find more jams'}
+    </h2>
+    <p>
+      {ru
+        ? 'Календари и сообщества помогают найти новые события и проверить ближайший выпуск.'
+        : 'Calendars and communities help you discover new events and check the next edition.'}
+    </p>
+    <div class="jam-calendar-grid">
+      {catalog.calendars.map((calendar) => (
+        <a
+          class="jam-calendar"
+          data-jam-calendar={calendar.id}
+          href={calendar.url}
+        >
+          <h3>
+            {calendar.title} <Icon name="external" size={16} />
+          </h3>
+          <p>{calendar.description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+  <p class="jams-snapshot">
+    {ru ? 'Снимок подборки' : 'Selection snapshot'}:{' '}
+    <time datetime={catalog.generatedAt} data-jam-generated-at>
+      {format(catalog.generatedAt)} UTC
+    </time>
+    .{' '}
+    <a href={path('api/v1/jams.json')}>{ru ? 'Данные в JSON' : 'JSON data'}</a>
+  </p>
+</Layout>
+
+<script>
+  import '../../../scripts/jams.ts';
+</script>

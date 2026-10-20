@@ -9,6 +9,7 @@ export async function GET() {
       absolute(`${lang}/mechanics/`),
       absolute(`${lang}/practice/`),
       absolute(`${lang}/lenses/`),
+      absolute(`${lang}/jams/`),
       absolute(`${lang}/for-agents/`),
     ]),
     ...(await getLessons()).map(({ data }) =>

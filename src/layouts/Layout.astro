@@ -9,7 +9,13 @@ interface Props {
   title: string;
   description?: string;
   section?:
-    'catalog' | 'mechanics' | 'practice' | 'lenses' | 'resources' | 'agents';
+    | 'catalog'
+    | 'mechanics'
+    | 'practice'
+    | 'lenses'
+    | 'jams'
+    | 'resources'
+    | 'agents';
   alternate?: string;
 }
 const {
@@ -30,6 +36,7 @@ const nav = [
   { key: 'mechanics', href: path(`${lang}/mechanics/`), icon: 'layers' },
   { key: 'lenses', href: path(`${lang}/lenses/`), icon: 'search' },
   { key: 'practice', href: path(`${lang}/practice/`), icon: 'play' },
+  { key: 'jams', href: path(`${lang}/jams/`), icon: 'calendar' },
   { key: 'resources', href: path(`${lang}/resources/`), icon: 'layers' },
   { key: 'agents', href: path(`${lang}/for-agents/`), icon: 'code' },
 ] as const;

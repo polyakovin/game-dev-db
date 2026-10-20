@@ -344,6 +344,26 @@ const lensCatalog = getLenses(lang);
     </a>
   </section>
 
+  <a class="start-strip" data-jams-link href={path(`${lang}/jams/`)}>
+    <span class="start-icon">
+      <Icon name="calendar" />
+    </span>
+    <span>
+      <strong>
+        {lang === 'ru' ? 'Сделайте игру на джеме.' : 'Make a game at a jam.'}
+      </strong>
+      <span class="start-description">
+        {lang === 'ru'
+          ? 'Текущие события, ближайшие старты и условия участия.'
+          : 'Open events, upcoming starts and entry requirements.'}
+      </span>
+    </span>
+    <span class="start-action">
+      {lang === 'ru' ? 'Выбрать джем' : 'Find a jam'}{' '}
+      <Icon name="arrow" size={16} />
+    </span>
+  </a>
+
   <section class="agent-banner">
     <span class="agent-banner-icon">
       <Icon name="code" size={27} />
