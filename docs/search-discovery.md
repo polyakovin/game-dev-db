@@ -63,6 +63,11 @@ JSON and Markdown records in both languages. It exits nonzero for broken require
 endpoints and reports host robots separately. It does not submit URLs or measure
 AI citations. Run `npm run preview -- --host 127.0.0.1 --port 4322` for the local target.
 
+CI browser tests use the built preview after verification, so the checked pages
+match the deployable artifact and cannot be interrupted by development reloads.
+Locally, use `PLAYWRIGHT_PREVIEW=1 npm run test:e2e` after `npm run verify` to test
+the same artifact. Screenshots use Playwright's per-test output directory on all platforms.
+
 ## Host robots and AI crawlers
 
 Only `https://polyakovin.github.io/robots.txt` controls this host. The project file

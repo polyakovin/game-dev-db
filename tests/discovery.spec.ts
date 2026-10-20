@@ -8,7 +8,7 @@ for (const lang of ['ru', 'en'] as const) {
       browser,
       request,
       baseURL,
-    }) => {
+    }, testInfo) => {
       const index = await (
         await request.get(`${base}/api/v1/knowledge/${lang}/index.json`)
       ).json();
@@ -69,7 +69,7 @@ for (const lang of ['ru', 'en'] as const) {
         ).toBe(true);
         if (type === 'mechanic')
           await page.screenshot({
-            path: `/private/tmp/game-dev-db-discovery-${lang}-${colorScheme}-mobile.png`,
+            path: testInfo.outputPath(`${lang}-${colorScheme}-mobile.png`),
           });
       }
       // Native TOC is usable by keyboard without any client script.
@@ -77,7 +77,7 @@ for (const lang of ['ru', 'en'] as const) {
       await expect(page.locator('[data-toc] a').first()).toBeVisible();
       if (type === 'mechanic')
         await page.screenshot({
-          path: `/private/tmp/game-dev-db-discovery-${lang}-desktop.png`,
+          path: testInfo.outputPath(`${lang}-desktop.png`),
         });
       await page.locator('[data-toc] a').first().focus();
       await page.keyboard.press('Enter');
