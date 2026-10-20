@@ -13,6 +13,8 @@ sources:
     url: https://book.leveldesignbook.com/process/blockout/playtesting
 ---
 
+## Prerequisites
+
 “How did you like the game?” often produces a polite answer that is hard to act on. It is more useful to choose an uncertainty beforehand and observe what someone does in a specific play situation.
 
 ## The principle
@@ -21,7 +23,11 @@ Form a question, prepare a suitable game segment and observe. [The Level Design 
 
 Testing a first encounter requires someone who does not already know the solution. The same person's repeat attempt can check usability, but no longer reproduces first discovery. A few observations can reveal problems; they do not establish the preferences of an entire audience.
 
-## Example: a station delivery
+<span id="example-a-station-delivery"></span>
+
+## Practical example
+
+### A station delivery
 
 The teaching question is: “Can a new player deliver a battery to the antenna without spoken explanation?” Prepare one level version, the same starting state and a consistent objective. Invite the person to play and explain that the game is being tested, not their abilities. Obtain consent before recording screen or voice.
 

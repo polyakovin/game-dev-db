@@ -13,6 +13,8 @@ sources:
     url: https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter28_Modeling_Perception_and_Awareness_in_Tom_Clancy%27s_Splinter_Cell_Blacklist.pdf
 ---
 
+## Prerequisites
+
 Game code knows every object's coordinates. An NPC does not have to. Here, AI means a character behavior algorithm rather than a language model.
 
 ## The principle
@@ -21,7 +23,11 @@ Separate observation from decision. Perception reports “target visible” or �
 
 Start with [States and transitions](/game-dev-db/en/lessons/state-machines/). Explicitly define which information each state can access. If an NPC uses hidden player coordinates after losing sight, that should be a deliberate game rule rather than accidental data leakage.
 
-## Example: an observation drone
+<span id="example-an-observation-drone"></span>
+
+## Practical example
+
+### An observation drone
 
 In this original teaching model, a drone detects the player within a 90° sector and 8 m range if a ray to a target sample point is unobstructed. Radius alone is insufficient: a wall blocks observation. A ray to one point is also a simplification and can behave oddly at cover edges.
 

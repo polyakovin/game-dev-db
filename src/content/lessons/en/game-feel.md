@@ -6,7 +6,7 @@ description: 'Tune response, emphasis, and effects so players understand an acti
 category: 'design'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['game-feel', 'feedback', 'accessibility']
 sources:
   [
@@ -21,7 +21,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 Begin with a mechanic that already follows its rules: jumping lands correctly, hits cause damage, or collected items enter the inventory. If the result is wrong, effects make diagnosis harder. Choose one action and keep a baseline version for comparison.
 
@@ -33,7 +35,11 @@ Give each effect a specific question to answer. A brief silhouette change confir
 
 The talk [Juice It or Lose It](https://www.gdcvault.com/play/1016487/juice-it-or-lose) is a useful starting point for studying expressive game reactions. The exercise and comparison criteria below are original practice material for this portal.
 
-## Example: hitting a training target
+<span id="example-hitting-a-training-target"></span>
+
+## Practical example
+
+### Hitting a training target
 
 Create a stationary target with three health points. Each accepted hit removes one point. Start by showing only the counter, then introduce confirmation effects one at a time.
 

@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import Icon from '../../../components/Icon.astro';
 import { getJams } from '../../../lib/jams.mjs';
 import { jamStatus } from '../../../lib/jam-time.mjs';
@@ -92,6 +93,7 @@ const format = (value: string, withTime = true) =>
         const status = jamStatus(event, now.getTime());
         return (
           <article
+            id={event.id}
             class="jam-card"
             data-jam
             data-jam-id={event.id}
@@ -141,6 +143,7 @@ const format = (value: string, withTime = true) =>
                 </time>
               </span>
             </div>
+            <KnowledgeLinks identity={`jam/${event.id}`} lang={lang} compact />
           </article>
         );
       })}
@@ -183,6 +186,7 @@ const format = (value: string, withTime = true) =>
     <div class="jam-calendar-grid">
       {catalog.calendars.map((calendar) => (
         <a
+          id={`calendar-${calendar.id}`}
           class="jam-calendar"
           data-jam-calendar={calendar.id}
           href={calendar.url}

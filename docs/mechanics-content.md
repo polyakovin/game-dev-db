@@ -56,6 +56,30 @@ The scopes overlap: audience and learning purpose are independent axes. Shared o
 
 The original `children-education.json` remains unchanged. Its HTML route and anchors, JSON record and Markdown endpoint preserve the complete original content, provenance and date. A static notice links both successors. Default `getMechanics(lang)` returns active references for cards and index counts; `{ includeArchived: true }` includes the archive for HTML and complete exports. Manifest totals describe the complete exported dataset, including archives. JSON v1 fields and identities are unchanged; four new localized records are added. Both new references link each other without JavaScript.
 
+## Unified mechanic sources (2026-10-20)
+
+Active common families are authored once in `src/data/mechanic-families.json`.
+Catalog placements use `{ref, id, section}`; edit shared wording in the registry,
+not in a placement. `resolveMechanicCatalog` resolves references before editorial
+ordering, localization and validation. Unknown references and text overrides fail
+validation. Catalog URLs and all existing family/branch/variant anchors remain stable.
+
+Each active family has a meaningful paired `description`. `classification` retains
+source category wording; `categoryIds` lists all applicable sections, including the
+primary `section`. Section filtering uses membership, while HTML placement remains
+unique. These fields are shared by HTML and exports.
+
+`src/data/mechanic-catalogs.json` owns `status` and `supersededBy`. The original
+combined archive source remains unchanged; status and successor links are added to
+HTML, JSON and Markdown by the shared transformation. Existing manifest totals keep
+their complete-dataset meaning; additive active/archive counts expose current scope.
+Markdown now retains explicit family, branch and variant anchors and family URLs.
+This supersedes the earlier instruction to manually synchronize active family copies.
+
+Where the definition already exists as a variant, `descriptionRef` names that
+variant instead of copying its bilingual text. The resolver produces the same
+localized `description` for every family and rejects missing definition targets.
+
 ## Consolidated discussion catalogs (2026-10-20)
 
 Twenty genre/design/device catalogs plus `perception` preserve 3,941 additional discussion items. The later RPG grind discussion gaps are covered by the expanded 110-family reference; its authoritative source is retained without duplicating those concepts. See the [complete coverage and verification record](research/discussion-mechanics.md) for per-catalog counts, overlaps, provenance and source-check limits. Families retain source groups; variants retain complete action, application and limitation fields. Hardware capability legends and supplementary design notes remain localized content. Counts are editorial units, not independent primitives or a claim of universal completeness.

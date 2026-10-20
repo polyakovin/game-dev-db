@@ -122,10 +122,6 @@
         "ru": "Размашистый удар",
         "en": "Wide swing"
       },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
-      },
       "example": {
         "ru": "",
         "en": ""
@@ -188,7 +184,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-wide-swing-definition"
     },
     {
       "id": "boss-lunge",
@@ -196,10 +197,6 @@
       "title": {
         "ru": "Выпад",
         "en": "Lunge"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -263,7 +260,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-lunge-definition"
     },
     {
       "id": "boss-ground-slam",
@@ -271,10 +273,6 @@
       "title": {
         "ru": "Удар по земле",
         "en": "Ground slam"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -331,7 +329,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-ground-slam-definition"
     },
     {
       "id": "boss-landing-jump",
@@ -339,10 +342,6 @@
       "title": {
         "ru": "Прыжок с приземлением",
         "en": "Landing jump"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -413,7 +412,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-landing-jump-definition"
     },
     {
       "id": "boss-charge",
@@ -421,10 +425,6 @@
       "title": {
         "ru": "Таран",
         "en": "Charge"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -530,7 +530,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-charge-definition"
     },
     {
       "id": "boss-grab",
@@ -538,10 +543,6 @@
       "title": {
         "ru": "Захват",
         "en": "Grab"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -605,7 +606,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-grab-definition"
     },
     {
       "id": "boss-sweep",
@@ -613,10 +619,6 @@
       "title": {
         "ru": "Круговой удар",
         "en": "Arc sweep"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -673,7 +675,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-sweep-definition"
     },
     {
       "id": "boss-burrow-and-emerge",
@@ -681,10 +688,6 @@
       "title": {
         "ru": "Подкоп с выныриванием",
         "en": "Burrow and emerge"
-      },
-      "description": {
-        "ru": "Раздел источника: Тело и ближний бой.",
-        "en": "Source section: Body and melee."
       },
       "example": {
         "ru": "",
@@ -748,7 +751,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Тело и ближний бой.",
+        "en": "Source section: Body and melee."
+      },
+      "descriptionRef": "boss-burrow-and-emerge-definition"
     },
     {
       "id": "boss-single-shot",
@@ -756,10 +764,6 @@
       "title": {
         "ru": "Одиночный выстрел",
         "en": "Single shot"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -823,7 +827,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-single-shot-definition"
     },
     {
       "id": "boss-projectile-fan",
@@ -831,10 +840,6 @@
       "title": {
         "ru": "Веер снарядов",
         "en": "Projectile fan"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -898,7 +903,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-projectile-fan-definition"
     },
     {
       "id": "boss-ring-volley",
@@ -906,10 +916,6 @@
       "title": {
         "ru": "Кольцевой залп",
         "en": "Ring volley"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -973,7 +979,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-ring-volley-definition"
     },
     {
       "id": "boss-spiral-barrage",
@@ -981,10 +992,6 @@
       "title": {
         "ru": "Спиральный обстрел",
         "en": "Spiral barrage"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1048,7 +1055,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-spiral-barrage-definition"
     },
     {
       "id": "boss-gap-volley",
@@ -1056,10 +1068,6 @@
       "title": {
         "ru": "Залп с разрывом",
         "en": "Gap volley"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1116,7 +1124,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-gap-volley-definition"
     },
     {
       "id": "boss-crossfire",
@@ -1124,10 +1137,6 @@
       "title": {
         "ru": "Перекрёстный огонь",
         "en": "Crossfire"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1191,7 +1200,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-crossfire-definition"
     },
     {
       "id": "boss-ricochet-projectile",
@@ -1199,10 +1213,6 @@
       "title": {
         "ru": "Рикошетирующий снаряд",
         "en": "Ricochet projectile"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1266,7 +1276,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-ricochet-projectile-definition"
     },
     {
       "id": "boss-splitting-projectile",
@@ -1274,10 +1289,6 @@
       "title": {
         "ru": "Разделяющийся снаряд",
         "en": "Splitting projectile"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1341,7 +1352,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-splitting-projectile-definition"
     },
     {
       "id": "boss-returning-projectile",
@@ -1349,10 +1365,6 @@
       "title": {
         "ru": "Возвратный снаряд",
         "en": "Returning projectile"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1416,7 +1428,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-returning-projectile-definition"
     },
     {
       "id": "boss-orbiting-projectiles",
@@ -1424,10 +1441,6 @@
       "title": {
         "ru": "Орбитальные снаряды",
         "en": "Orbiting projectiles"
-      },
-      "description": {
-        "ru": "Раздел источника: Снаряды.",
-        "en": "Source section: Projectiles."
       },
       "example": {
         "ru": "",
@@ -1491,7 +1504,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Снаряды.",
+        "en": "Source section: Projectiles."
+      },
+      "descriptionRef": "boss-orbiting-projectiles-definition"
     },
     {
       "id": "boss-straight-beam",
@@ -1499,10 +1517,6 @@
       "title": {
         "ru": "Прямой луч",
         "en": "Straight beam"
-      },
-      "description": {
-        "ru": "Раздел источника: Лучи.",
-        "en": "Source section: Beams."
       },
       "example": {
         "ru": "",
@@ -1566,7 +1580,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Лучи.",
+        "en": "Source section: Beams."
+      },
+      "descriptionRef": "boss-straight-beam-definition"
     },
     {
       "id": "boss-scanning-beam",
@@ -1574,10 +1593,6 @@
       "title": {
         "ru": "Сканирующий луч",
         "en": "Scanning beam"
-      },
-      "description": {
-        "ru": "Раздел источника: Лучи.",
-        "en": "Source section: Beams."
       },
       "example": {
         "ru": "",
@@ -1641,7 +1656,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Лучи.",
+        "en": "Source section: Beams."
+      },
+      "descriptionRef": "boss-scanning-beam-definition"
     },
     {
       "id": "boss-rotating-beams",
@@ -1649,10 +1669,6 @@
       "title": {
         "ru": "Вращающиеся лучи",
         "en": "Rotating beams"
-      },
-      "description": {
-        "ru": "Раздел источника: Лучи.",
-        "en": "Source section: Beams."
       },
       "example": {
         "ru": "",
@@ -1716,7 +1732,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Лучи.",
+        "en": "Source section: Beams."
+      },
+      "descriptionRef": "boss-rotating-beams-definition"
     },
     {
       "id": "boss-pulse-beam",
@@ -1724,10 +1745,6 @@
       "title": {
         "ru": "Импульсный луч",
         "en": "Pulse beam"
-      },
-      "description": {
-        "ru": "Раздел источника: Лучи.",
-        "en": "Source section: Beams."
       },
       "example": {
         "ru": "",
@@ -1791,7 +1808,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Лучи.",
+        "en": "Source section: Beams."
+      },
+      "descriptionRef": "boss-pulse-beam-definition"
     },
     {
       "id": "boss-marked-area-strike",
@@ -1799,10 +1821,6 @@
       "title": {
         "ru": "Удар по отмеченной области",
         "en": "Marked-area strike"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -1866,7 +1884,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-marked-area-strike-definition"
     },
     {
       "id": "boss-chain-explosions",
@@ -1874,10 +1897,6 @@
       "title": {
         "ru": "Цепные взрывы",
         "en": "Chain explosions"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -1962,7 +1981,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-chain-explosions-definition"
     },
     {
       "id": "boss-shockwave",
@@ -1970,10 +1994,6 @@
       "title": {
         "ru": "Ударная волна",
         "en": "Shockwave"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -2037,7 +2057,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-shockwave-definition"
     },
     {
       "id": "boss-lingering-hazard",
@@ -2045,10 +2070,6 @@
       "title": {
         "ru": "Остаточная опасная зона",
         "en": "Lingering hazard"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -2112,7 +2133,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-lingering-hazard-definition"
     },
     {
       "id": "boss-mine",
@@ -2120,10 +2146,6 @@
       "title": {
         "ru": "Мина",
         "en": "Mine"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -2208,7 +2230,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-mine-definition"
     },
     {
       "id": "boss-hazard-trail",
@@ -2216,10 +2243,6 @@
       "title": {
         "ru": "Опасный след",
         "en": "Hazard trail"
-      },
-      "description": {
-        "ru": "Раздел источника: Зоны и ловушки.",
-        "en": "Source section: Zones and traps."
       },
       "example": {
         "ru": "",
@@ -2283,7 +2306,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Зоны и ловушки.",
+        "en": "Source section: Zones and traps."
+      },
+      "descriptionRef": "boss-hazard-trail-definition"
     },
     {
       "id": "boss-moving-hazard",
@@ -2291,10 +2319,6 @@
       "title": {
         "ru": "Подвижная опасная зона",
         "en": "Moving hazard"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2372,7 +2396,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-moving-hazard-definition"
     },
     {
       "id": "boss-converging-threats",
@@ -2380,10 +2409,6 @@
       "title": {
         "ru": "Сходящиеся угрозы",
         "en": "Converging threats"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2461,7 +2486,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-converging-threats-definition"
     },
     {
       "id": "boss-platform-destruction",
@@ -2469,10 +2499,6 @@
       "title": {
         "ru": "Разрушение опоры",
         "en": "Platform destruction"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2536,7 +2562,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-platform-destruction-definition"
     },
     {
       "id": "boss-shrinking-safe-area",
@@ -2544,10 +2575,6 @@
       "title": {
         "ru": "Сужение безопасной области",
         "en": "Shrinking safe area"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2611,7 +2638,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-shrinking-safe-area-definition"
     },
     {
       "id": "boss-pull",
@@ -2619,10 +2651,6 @@
       "title": {
         "ru": "Притягивание",
         "en": "Pull"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2700,7 +2728,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-pull-definition"
     },
     {
       "id": "boss-knockback",
@@ -2708,10 +2741,6 @@
       "title": {
         "ru": "Отталкивание",
         "en": "Knockback"
-      },
-      "description": {
-        "ru": "Раздел источника: Арена.",
-        "en": "Source section: Arena."
       },
       "example": {
         "ru": "",
@@ -2775,7 +2804,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Арена.",
+        "en": "Source section: Arena."
+      },
+      "descriptionRef": "boss-knockback-definition"
     },
     {
       "id": "boss-summon",
@@ -2783,10 +2817,6 @@
       "title": {
         "ru": "Призыв",
         "en": "Summon"
-      },
-      "description": {
-        "ru": "Раздел источника: Дополнительные цели.",
-        "en": "Source section: Additional targets."
       },
       "example": {
         "ru": "",
@@ -2843,7 +2873,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Дополнительные цели.",
+        "en": "Source section: Additional targets."
+      },
+      "descriptionRef": "boss-summon-definition"
     },
     {
       "id": "boss-turret-deployment",
@@ -2851,10 +2886,6 @@
       "title": {
         "ru": "Установка турели",
         "en": "Turret deployment"
-      },
-      "description": {
-        "ru": "Раздел источника: Дополнительные цели.",
-        "en": "Source section: Additional targets."
       },
       "example": {
         "ru": "",
@@ -2925,7 +2956,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Дополнительные цели.",
+        "en": "Source section: Additional targets."
+      },
+      "descriptionRef": "boss-turret-deployment-definition"
     },
     {
       "id": "boss-threat-generator",
@@ -2933,10 +2969,6 @@
       "title": {
         "ru": "Генератор угроз",
         "en": "Threat generator"
-      },
-      "description": {
-        "ru": "Раздел источника: Дополнительные цели.",
-        "en": "Source section: Additional targets."
       },
       "example": {
         "ru": "",
@@ -3007,7 +3039,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Дополнительные цели.",
+        "en": "Source section: Additional targets."
+      },
+      "descriptionRef": "boss-threat-generator-definition"
     },
     {
       "id": "boss-decoy",
@@ -3015,10 +3052,6 @@
       "title": {
         "ru": "Ложная цель",
         "en": "Decoy"
-      },
-      "description": {
-        "ru": "Раздел источника: Дополнительные цели.",
-        "en": "Source section: Additional targets."
       },
       "example": {
         "ru": "",
@@ -3096,7 +3129,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Дополнительные цели.",
+        "en": "Source section: Additional targets."
+      },
+      "descriptionRef": "boss-decoy-definition"
     },
     {
       "id": "boss-target-lock",
@@ -3104,10 +3142,6 @@
       "title": {
         "ru": "Наведение с фиксацией",
         "en": "Target lock"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3171,7 +3205,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-target-lock-definition"
     },
     {
       "id": "boss-predictive-aiming",
@@ -3179,10 +3218,6 @@
       "title": {
         "ru": "Наведение с упреждением",
         "en": "Predictive aiming"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3260,7 +3295,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-predictive-aiming-definition"
     },
     {
       "id": "boss-source-tracking",
@@ -3268,10 +3308,6 @@
       "title": {
         "ru": "Сопровождение источником",
         "en": "Source tracking"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3349,7 +3385,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-source-tracking-definition"
     },
     {
       "id": "boss-homing-projectile",
@@ -3357,10 +3398,6 @@
       "title": {
         "ru": "Самонаведение снаряда",
         "en": "Homing projectile"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3424,7 +3461,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-homing-projectile-definition"
     },
     {
       "id": "boss-burst-fire",
@@ -3432,10 +3474,6 @@
       "title": {
         "ru": "Очередь",
         "en": "Burst fire"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3513,7 +3551,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-burst-fire-definition"
     },
     {
       "id": "boss-volley",
@@ -3521,10 +3564,6 @@
       "title": {
         "ru": "Залп",
         "en": "Volley"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3595,7 +3634,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-volley-definition"
     },
     {
       "id": "boss-attack-combination",
@@ -3603,10 +3647,6 @@
       "title": {
         "ru": "Комбинация атак",
         "en": "Attack combination"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3663,7 +3703,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-attack-combination-definition"
     },
     {
       "id": "boss-delayed-activation",
@@ -3671,10 +3716,6 @@
       "title": {
         "ru": "Отложенная активация",
         "en": "Delayed activation"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3745,7 +3786,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-delayed-activation-definition"
     },
     {
       "id": "boss-speed-change",
@@ -3753,10 +3799,6 @@
       "title": {
         "ru": "Изменение скорости",
         "en": "Speed change"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3827,7 +3869,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-speed-change-definition"
     },
     {
       "id": "boss-limited-spread",
@@ -3835,10 +3882,6 @@
       "title": {
         "ru": "Ограниченный разброс",
         "en": "Limited spread"
-      },
-      "description": {
-        "ru": "Раздел источника: Наведение и ритм.",
-        "en": "Source section: Targeting and rhythm."
       },
       "example": {
         "ru": "",
@@ -3916,7 +3959,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Наведение и ритм.",
+        "en": "Source section: Targeting and rhythm."
+      },
+      "descriptionRef": "boss-limited-spread-definition"
     },
     {
       "id": "boss-directional-shield",
@@ -3924,10 +3972,6 @@
       "title": {
         "ru": "Направленный щит",
         "en": "Directional shield"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -3991,7 +4035,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-directional-shield-definition"
     },
     {
       "id": "boss-damage-type-resistance",
@@ -3999,10 +4048,6 @@
       "title": {
         "ru": "Сопротивление типу урона",
         "en": "Damage-type resistance"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4073,7 +4118,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-damage-type-resistance-definition"
     },
     {
       "id": "boss-situational-immunity",
@@ -4081,10 +4131,6 @@
       "title": {
         "ru": "Ситуационный иммунитет",
         "en": "Situational immunity"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4155,7 +4201,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-situational-immunity-definition"
     },
     {
       "id": "boss-weak-point",
@@ -4163,10 +4214,6 @@
       "title": {
         "ru": "Уязвимая точка",
         "en": "Weak point"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4230,7 +4277,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-weak-point-definition"
     },
     {
       "id": "boss-part-break",
@@ -4238,10 +4290,6 @@
       "title": {
         "ru": "Разрушение части",
         "en": "Part break"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4312,7 +4360,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-part-break-definition"
     },
     {
       "id": "boss-attack-reflection",
@@ -4320,10 +4373,6 @@
       "title": {
         "ru": "Отражение атак",
         "en": "Attack reflection"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4394,7 +4443,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-attack-reflection-definition"
     },
     {
       "id": "boss-counter-stance",
@@ -4402,10 +4456,6 @@
       "title": {
         "ru": "Контратакующая стойка",
         "en": "Counter stance"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4476,7 +4526,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-counter-stance-definition"
     },
     {
       "id": "boss-absorption-power-up",
@@ -4484,10 +4539,6 @@
       "title": {
         "ru": "Поглощение с усилением",
         "en": "Absorption power-up"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4558,7 +4609,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-absorption-power-up-definition"
     },
     {
       "id": "boss-interruptible-wind-up",
@@ -4566,10 +4622,6 @@
       "title": {
         "ru": "Прерываемая подготовка",
         "en": "Interruptible wind-up"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4640,7 +4692,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-interruptible-wind-up-definition"
     },
     {
       "id": "boss-loadout-adaptation",
@@ -4648,10 +4705,6 @@
       "title": {
         "ru": "Адаптация к арсеналу",
         "en": "Loadout adaptation"
-      },
-      "description": {
-        "ru": "Раздел источника: Защита.",
-        "en": "Source section: Defense."
       },
       "example": {
         "ru": "",
@@ -4722,7 +4775,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Защита.",
+        "en": "Source section: Defense."
+      },
+      "descriptionRef": "boss-loadout-adaptation-definition"
     },
     {
       "id": "boss-telegraph",
@@ -4730,10 +4788,6 @@
       "title": {
         "ru": "Предупреждение",
         "en": "Telegraph"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -4797,7 +4851,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-telegraph-definition"
     },
     {
       "id": "boss-wind-up",
@@ -4805,10 +4864,6 @@
       "title": {
         "ru": "Подготовка",
         "en": "Wind-up"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -4879,7 +4934,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-wind-up-definition"
     },
     {
       "id": "boss-attack-lock",
@@ -4887,10 +4947,6 @@
       "title": {
         "ru": "Фиксация атаки",
         "en": "Attack lock"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -4961,7 +5017,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-attack-lock-definition"
     },
     {
       "id": "boss-active-phase",
@@ -4969,10 +5030,6 @@
       "title": {
         "ru": "Активная фаза",
         "en": "Active phase"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -5043,7 +5100,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-active-phase-definition"
     },
     {
       "id": "boss-recovery",
@@ -5051,10 +5113,6 @@
       "title": {
         "ru": "Восстановление",
         "en": "Recovery"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -5125,7 +5183,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-recovery-definition"
     },
     {
       "id": "boss-fight-phase",
@@ -5133,10 +5196,6 @@
       "title": {
         "ru": "Фаза боя",
         "en": "Fight phase"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -5193,7 +5252,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-fight-phase-definition"
     },
     {
       "id": "boss-enrage",
@@ -5201,10 +5265,6 @@
       "title": {
         "ru": "Ярость",
         "en": "Enrage"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -5261,7 +5321,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-enrage-definition"
     },
     {
       "id": "boss-survival-phase",
@@ -5269,10 +5334,6 @@
       "title": {
         "ru": "Фаза выживания",
         "en": "Survival phase"
-      },
-      "description": {
-        "ru": "Раздел источника: Структура и читаемость.",
-        "en": "Source section: Structure and readability."
       },
       "example": {
         "ru": "",
@@ -5343,7 +5404,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Структура и читаемость.",
+        "en": "Source section: Structure and readability."
+      },
+      "descriptionRef": "boss-survival-phase-definition"
     },
     {
       "id": "boss-teleport",
@@ -5351,10 +5417,6 @@
       "title": {
         "ru": "Телепортация",
         "en": "Teleport"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5432,7 +5494,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-teleport-definition"
     },
     {
       "id": "boss-boundary-attack",
@@ -5440,10 +5507,6 @@
       "title": {
         "ru": "Атака с границы арены",
         "en": "Boundary attack"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5521,7 +5584,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-boundary-attack-definition"
     },
     {
       "id": "boss-forced-scrolling",
@@ -5529,10 +5597,6 @@
       "title": {
         "ru": "Принудительная прокрутка",
         "en": "Forced scrolling"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5610,7 +5674,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-forced-scrolling-definition"
     },
     {
       "id": "boss-chase-herding",
@@ -5618,10 +5687,6 @@
       "title": {
         "ru": "Погоня с загоном",
         "en": "Chase herding"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5706,7 +5771,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-chase-herding-definition"
     },
     {
       "id": "boss-escape-phase",
@@ -5714,10 +5784,6 @@
       "title": {
         "ru": "Побег босса",
         "en": "Escape phase"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5802,7 +5868,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-escape-phase-definition"
     },
     {
       "id": "boss-relocated-arena",
@@ -5810,10 +5881,6 @@
       "title": {
         "ru": "Вложенная или сменная арена",
         "en": "Nested / relocated arena"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5898,7 +5965,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-relocated-arena-definition"
     },
     {
       "id": "boss-control-mode-shift",
@@ -5906,10 +5978,6 @@
       "title": {
         "ru": "Смена режима управления",
         "en": "Control mode shift"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -5994,7 +6062,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-control-mode-shift-definition"
     },
     {
       "id": "boss-boss-as-terrain",
@@ -6002,10 +6075,6 @@
       "title": {
         "ru": "Босс как уровень",
         "en": "Boss as terrain"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6083,7 +6152,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-boss-as-terrain-definition"
     },
     {
       "id": "boss-cover-line-of-sight",
@@ -6091,10 +6165,6 @@
       "title": {
         "ru": "Укрытие и линия видимости",
         "en": "Cover and line of sight"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6179,7 +6249,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-cover-line-of-sight-definition"
     },
     {
       "id": "boss-forced-inertia",
@@ -6187,10 +6262,6 @@
       "title": {
         "ru": "Принудительная инерция",
         "en": "Forced inertia"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6268,7 +6339,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-forced-inertia-definition"
     },
     {
       "id": "boss-wraparound-projectile",
@@ -6276,10 +6352,6 @@
       "title": {
         "ru": "Зацикленная траектория",
         "en": "Wraparound projectile"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6357,7 +6429,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-wraparound-projectile-definition"
     },
     {
       "id": "boss-beat-synced-attack",
@@ -6365,10 +6442,6 @@
       "title": {
         "ru": "Ритмическая синхронизация",
         "en": "Beat-synced attack"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6446,7 +6519,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-beat-synced-attack-definition"
     },
     {
       "id": "boss-secondary-cues-invisibility",
@@ -6454,10 +6532,6 @@
       "title": {
         "ru": "Скрытый босс и вторичные следы",
         "en": "Invisibility"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6535,7 +6609,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-secondary-cues-invisibility-definition"
     },
     {
       "id": "boss-sound-detection",
@@ -6543,10 +6622,6 @@
       "title": {
         "ru": "Обнаружение игрока по шуму",
         "en": "Sound detection"
-      },
-      "description": {
-        "ru": "Раздел источника: Пространство, движение и восприятие.",
-        "en": "Source section: Space, movement, and perception."
       },
       "example": {
         "ru": "",
@@ -6624,7 +6699,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Пространство, движение и восприятие.",
+        "en": "Source section: Space, movement, and perception."
+      },
+      "descriptionRef": "boss-sound-detection-definition"
     },
     {
       "id": "boss-objective-linked-invulnerability",
@@ -6632,10 +6712,6 @@
       "title": {
         "ru": "Неуязвимость, привязанная к цели",
         "en": "Objective-linked invulnerability"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -6713,7 +6789,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-objective-linked-invulnerability-definition"
     },
     {
       "id": "boss-wave-clear-objective",
@@ -6721,10 +6802,6 @@
       "title": {
         "ru": "Победа через волны",
         "en": "Wave-clear objective"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -6802,7 +6879,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-wave-clear-objective-definition"
     },
     {
       "id": "boss-environmental-weapon",
@@ -6810,10 +6892,6 @@
       "title": {
         "ru": "Орудие окружения",
         "en": "Environmental weapon"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -6891,7 +6969,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-environmental-weapon-definition"
     },
     {
       "id": "boss-encounter-specific-tool",
@@ -6899,10 +6982,6 @@
       "title": {
         "ru": "Особый инструмент боя",
         "en": "Encounter-specific tool"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -6980,7 +7059,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-encounter-specific-tool-definition"
     },
     {
       "id": "boss-player-controlled-boss",
@@ -6988,10 +7072,6 @@
       "title": {
         "ru": "Босс под управлением другого игрока",
         "en": "Player-controlled boss"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7076,7 +7156,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-player-controlled-boss-definition"
     },
     {
       "id": "boss-projectile-rally",
@@ -7084,10 +7169,6 @@
       "title": {
         "ru": "Ответный залп",
         "en": "Projectile rally"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7172,7 +7253,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-projectile-rally-definition"
     },
     {
       "id": "boss-baited-self-hit",
@@ -7180,10 +7266,6 @@
       "title": {
         "ru": "Самоповреждение через приманку",
         "en": "Baited self-hit"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7261,7 +7343,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-baited-self-hit-definition"
     },
     {
       "id": "boss-posture-stagger-gauge",
@@ -7269,10 +7356,6 @@
       "title": {
         "ru": "Шкала стойкости и добивание",
         "en": "Posture stagger gauge"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7350,7 +7433,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-posture-stagger-gauge-definition"
     },
     {
       "id": "boss-pacifist-resolution",
@@ -7358,10 +7446,6 @@
       "title": {
         "ru": "Ненасильственное завершение",
         "en": "Pacifist resolution"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7446,7 +7530,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-pacifist-resolution-definition"
     },
     {
       "id": "boss-persistent-progress",
@@ -7454,10 +7543,6 @@
       "title": {
         "ru": "Сохранение прогресса между попытками",
         "en": "Persistent encounter progress"
-      },
-      "description": {
-        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
-        "en": "Source section: Encounter goals and vulnerability."
       },
       "example": {
         "ru": "",
@@ -7542,7 +7627,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Цель боя и открытие уязвимости.",
+        "en": "Source section: Encounter goals and vulnerability."
+      },
+      "descriptionRef": "boss-persistent-progress-definition"
     },
     {
       "id": "boss-status-buildup",
@@ -7550,10 +7640,6 @@
       "title": {
         "ru": "Накопление состояния",
         "en": "Status buildup"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -7638,7 +7724,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-status-buildup-definition"
     },
     {
       "id": "boss-instant-kill",
@@ -7646,10 +7737,6 @@
       "title": {
         "ru": "Мгновенная казнь",
         "en": "Instant-kill condition"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -7734,7 +7821,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-instant-kill-definition"
     },
     {
       "id": "boss-maximum-health-reduction",
@@ -7742,10 +7834,6 @@
       "title": {
         "ru": "Снижение максимального здоровья",
         "en": "Maximum-health reduction"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -7830,7 +7918,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-maximum-health-reduction-definition"
     },
     {
       "id": "boss-ability-lock",
@@ -7838,10 +7931,6 @@
       "title": {
         "ru": "Блокировка способности или лечения",
         "en": "Ability or healing lock"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -7919,7 +8008,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-ability-lock-definition"
     },
     {
       "id": "boss-resource-steal",
@@ -7927,10 +8021,6 @@
       "title": {
         "ru": "Кража или выбивание ресурса",
         "en": "Resource steal or drop"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8008,7 +8098,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-resource-steal-definition"
     },
     {
       "id": "boss-on-hit-healing",
@@ -8016,10 +8111,6 @@
       "title": {
         "ru": "Лечение при попадании или вампиризм",
         "en": "On-hit healing or lifesteal"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8104,7 +8195,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-on-hit-healing-definition"
     },
     {
       "id": "boss-self-heal-cast",
@@ -8112,10 +8208,6 @@
       "title": {
         "ru": "Прерываемое самолечение",
         "en": "Interruptible self-heal"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8193,7 +8285,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-self-heal-cast-definition"
     },
     {
       "id": "boss-external-healing-source",
@@ -8201,10 +8298,6 @@
       "title": {
         "ru": "Перехватываемые источники лечения",
         "en": "Interceptable healing sources"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8282,7 +8375,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-external-healing-source-definition"
     },
     {
       "id": "boss-damage-rate-cap",
@@ -8290,10 +8388,6 @@
       "title": {
         "ru": "Адаптивное ограничение темпа урона",
         "en": "Adaptive damage-rate cap"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8385,7 +8479,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-damage-rate-cap-definition"
     },
     {
       "id": "boss-loadout-mirror",
@@ -8393,10 +8492,6 @@
       "title": {
         "ru": "Зеркало экипировки",
         "en": "Loadout mirror"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8474,7 +8569,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-loadout-mirror-definition"
     },
     {
       "id": "boss-moveset-shapeshifting",
@@ -8482,10 +8582,6 @@
       "title": {
         "ru": "Смена чужих наборов атак",
         "en": "Moveset shapeshifting"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8563,7 +8659,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-moveset-shapeshifting-definition"
     },
     {
       "id": "boss-ally-theft",
@@ -8571,10 +8672,6 @@
       "title": {
         "ru": "Кража и подчинение союзника",
         "en": "Ally theft and charm"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8652,7 +8749,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-ally-theft-definition"
     },
     {
       "id": "boss-false-death",
@@ -8660,10 +8762,6 @@
       "title": {
         "ru": "Ложная смерть и возвращение",
         "en": "False death and return"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8741,7 +8839,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-false-death-definition"
     },
     {
       "id": "boss-action-reactive-punish",
@@ -8749,10 +8852,6 @@
       "title": {
         "ru": "Реакция на действие игрока",
         "en": "Action-reactive punish"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8830,7 +8929,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-action-reactive-punish-definition"
     },
     {
       "id": "boss-run-history-manifestation",
@@ -8838,10 +8942,6 @@
       "title": {
         "ru": "История прохождения внутри боя",
         "en": "Run-history manifestation"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -8919,7 +9019,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-run-history-manifestation-definition"
     },
     {
       "id": "boss-real-time-progression",
@@ -8927,10 +9032,6 @@
       "title": {
         "ru": "Реальное время меняет бой",
         "en": "Real-time progression"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -9008,7 +9109,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-real-time-progression-definition"
     },
     {
       "id": "boss-interface-interaction",
@@ -9016,10 +9122,6 @@
       "title": {
         "ru": "Внешний интерфейс как правило боя",
         "en": "Interface interaction"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -9097,7 +9199,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-interface-interaction-definition"
     },
     {
       "id": "boss-world-state-variant",
@@ -9105,10 +9212,6 @@
       "title": {
         "ru": "Контекстное правило мира",
         "en": "World-state encounter variant"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -9186,7 +9289,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-world-state-variant-definition"
     },
     {
       "id": "boss-party-size-scaling",
@@ -9194,10 +9302,6 @@
       "title": {
         "ru": "Масштабирование по числу игроков",
         "en": "Party-size scaling"
-      },
-      "description": {
-        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
-        "en": "Source section: States, resources, and scaling."
       },
       "example": {
         "ru": "",
@@ -9275,7 +9379,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Состояния, ресурсы и масштабирование.",
+        "en": "Source section: States, resources, and scaling."
+      },
+      "descriptionRef": "boss-party-size-scaling-definition"
     },
     {
       "id": "boss-partner-revival",
@@ -9283,10 +9392,6 @@
       "title": {
         "ru": "Воскрешение напарника",
         "en": "Partner revival"
-      },
-      "description": {
-        "ru": "Раздел источника: Связи между несколькими боссами.",
-        "en": "Source section: Multi-boss relationships."
       },
       "example": {
         "ru": "",
@@ -9371,7 +9476,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Связи между несколькими боссами.",
+        "en": "Source section: Multi-boss relationships."
+      },
+      "descriptionRef": "boss-partner-revival-definition"
     },
     {
       "id": "boss-kill-order-inheritance",
@@ -9379,10 +9489,6 @@
       "title": {
         "ru": "Наследование силы по порядку убийства",
         "en": "Kill-order inheritance"
-      },
-      "description": {
-        "ru": "Раздел источника: Связи между несколькими боссами.",
-        "en": "Source section: Multi-boss relationships."
       },
       "example": {
         "ru": "",
@@ -9460,7 +9566,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Связи между несколькими боссами.",
+        "en": "Source section: Multi-boss relationships."
+      },
+      "descriptionRef": "boss-kill-order-inheritance-definition"
     },
     {
       "id": "boss-shared-group-health",
@@ -9468,10 +9579,6 @@
       "title": {
         "ru": "Общее здоровье группы",
         "en": "Shared group health"
-      },
-      "description": {
-        "ru": "Раздел источника: Связи между несколькими боссами.",
-        "en": "Source section: Multi-boss relationships."
       },
       "example": {
         "ru": "",
@@ -9549,7 +9656,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Связи между несколькими боссами.",
+        "en": "Source section: Multi-boss relationships."
+      },
+      "descriptionRef": "boss-shared-group-health-definition"
     },
     {
       "id": "boss-coordinated-duo-attack",
@@ -9557,10 +9669,6 @@
       "title": {
         "ru": "Связанный приём пары",
         "en": "Coordinated duo attack"
-      },
-      "description": {
-        "ru": "Раздел источника: Связи между несколькими боссами.",
-        "en": "Source section: Multi-boss relationships."
       },
       "example": {
         "ru": "",
@@ -9638,7 +9746,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Связи между несколькими боссами.",
+        "en": "Source section: Multi-boss relationships."
+      },
+      "descriptionRef": "boss-coordinated-duo-attack-definition"
     },
     {
       "id": "boss-stack-damage",
@@ -9646,10 +9759,6 @@
       "title": {
         "ru": "Разделение урона",
         "en": "Shared-damage stack"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -9727,7 +9836,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-stack-damage-definition"
     },
     {
       "id": "boss-personal-spread",
@@ -9735,10 +9849,6 @@
       "title": {
         "ru": "Разведение персональных зон",
         "en": "Personal spread"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -9816,7 +9926,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-personal-spread-definition"
     },
     {
       "id": "boss-tower-soak",
@@ -9824,10 +9939,6 @@
       "title": {
         "ru": "Занятие точки",
         "en": "Tower soak"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -9912,7 +10023,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-tower-soak-definition"
     },
     {
       "id": "boss-entity-tether",
@@ -9920,10 +10036,6 @@
       "title": {
         "ru": "Связь между сущностями",
         "en": "Entity tether"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -9994,7 +10106,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-entity-tether-definition"
     },
     {
       "id": "boss-gaze-check",
@@ -10002,10 +10119,6 @@
       "title": {
         "ru": "Проверка направления взгляда",
         "en": "Gaze check"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10076,7 +10189,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-gaze-check-definition"
     },
     {
       "id": "boss-proximity-damage",
@@ -10084,10 +10202,6 @@
       "title": {
         "ru": "Урон по расстоянию",
         "en": "Proximity damage"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10158,7 +10272,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-proximity-damage-definition"
     },
     {
       "id": "boss-tank-swap",
@@ -10166,10 +10285,6 @@
       "title": {
         "ru": "Сильный удар и смена цели",
         "en": "Tankbuster and target handoff"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10247,7 +10362,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-tank-swap-definition"
     },
     {
       "id": "boss-debuff-handoff",
@@ -10255,10 +10375,6 @@
       "title": {
         "ru": "Передача состояния",
         "en": "Debuff handoff"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10329,7 +10445,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-debuff-handoff-definition"
     },
     {
       "id": "boss-ordered-targets",
@@ -10337,10 +10458,6 @@
       "title": {
         "ru": "Очередь отмеченных целей",
         "en": "Ordered targets"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10411,7 +10528,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-ordered-targets-definition"
     },
     {
       "id": "boss-pairing-polarity",
@@ -10419,10 +10541,6 @@
       "title": {
         "ru": "Парность полярностей",
         "en": "Pairing polarity"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10493,7 +10611,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-pairing-polarity-definition"
     },
     {
       "id": "boss-party-split",
@@ -10501,10 +10624,6 @@
       "title": {
         "ru": "Параллельные задачи группы",
         "en": "Party split"
-      },
-      "description": {
-        "ru": "Раздел источника: Кооперативная координация.",
-        "en": "Source section: Cooperative coordination."
       },
       "example": {
         "ru": "",
@@ -10575,7 +10694,12 @@
             }
           ]
         }
-      ]
+      ],
+      "classification": {
+        "ru": "Раздел источника: Кооперативная координация.",
+        "en": "Source section: Cooperative coordination."
+      },
+      "descriptionRef": "boss-party-split-definition"
     }
   ],
   "notes": [

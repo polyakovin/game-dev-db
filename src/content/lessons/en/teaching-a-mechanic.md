@@ -13,6 +13,8 @@ sources:
     url: https://thegamedesignforum.com/features/RD_SMW_1.html
 ---
 
+## Prerequisites
+
 Players can read a hint without understanding the rule. To check understanding, let them perform an action and independently transfer it to a slightly different situation.
 
 ## The principle
@@ -21,7 +23,11 @@ Choose one skill the level should clarify. A useful aspect of [Reverse Design: S
 
 For your prototype, separate introduction, independent attempt and skill transfer. This is a working structure, not a mandatory law for every level. It does not replace understandable controls, accessible hints or testing with your audience.
 
-## Example: a pulse platform
+<span id="example-a-pulse-platform"></span>
+
+## Practical example
+
+### A pulse platform
 
 This invented level teaches a platform that rises for one second after a button press. In the first room, the button and platform are visible together, and a failed jump returns the player to safe ground. They can observe the relationship between action and movement without losing progress.
 

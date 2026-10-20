@@ -6,7 +6,7 @@ description: 'Write testable tasks, preserve project context, and accept changes
 category: 'workflow'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['agents', 'specification', 'contributing']
 sources:
   [
@@ -21,7 +21,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 Use a repository or small project that can be launched. An agent can inspect code, suggest changes, and run checks. You provide intent and accept the outcome. The goal is a workflow another contributor or agent can reproduce without needing the whole conversation.
 
@@ -33,7 +35,11 @@ A useful task describes observable behavior, boundaries, and verification. “Im
 
 Separate durable knowledge from the current task. A concise AGENTS.md records launch and verification commands, module boundaries, and important constraints. The specification describes required behavior. A change plan lists small implementation steps. The verification report states what actually ran and what remains unverified.
 
-## Example: a dash that respects doors
+<span id="example-a-dash-that-respects-doors"></span>
+
+## Practical example
+
+### A dash that respects doors
 
 Write scenarios before editing code:
 

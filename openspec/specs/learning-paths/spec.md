@@ -6,14 +6,14 @@ Help readers apply game-development references through short ordered learning pa
 ## Requirements
 
 ### Requirement: Four practical learning paths
-The portal SHALL expose level design, balance, NPC behavior and game verification paths in RU and EN. Each SHALL contain three ordered original lesson pairs, prerequisites and links to existing practice exercises and design lenses.
+The portal SHALL expose the four level design, balance, NPC behavior and game verification paths and a first-prototype path in RU and EN. Each SHALL contain ordered lessons, optional prerequisites, practice, lenses, an explicit deliverable and completion checks. A lesson SHALL be reusable across paths without copying its text.
 
 #### Scenario: Start from the knowledge base
 - **WHEN** a reader opens either language homepage
-- **THEN** four path cards lead to static localized path pages with three ordered lesson links
+- **THEN** five path cards lead to static localized path pages with ordered lesson links and explicit completion outcomes
 
 #### Scenario: Read without scripts
-- **WHEN** a reader opens `/game-dev-db/ru/learn/level-design/` without JavaScript
+- **WHEN** a reader opens /game-dev-db/ru/learn/level-design/ without JavaScript
 - **THEN** the description, prerequisites, complete lesson list and practice/lens links remain usable
 
 ### Requirement: Lesson sequence navigation
@@ -44,3 +44,10 @@ The build SHALL publish path metadata at `/api/v1/learning-paths.json` and adver
 #### Scenario: Detect a broken reference
 - **WHEN** a path points to a missing lesson, exercise or lens
 - **THEN** content verification fails before publication
+
+### Requirement: Path context and rationale parity
+Lessons SHALL show navigation for each containing path. Context explaining an indirect practice link SHALL be authored in the path data and retained in HTML and exported records.
+
+#### Scenario: Reuse a lesson
+- **WHEN** a lesson belongs to two paths
+- **THEN** both containing paths and their independent adjacent lesson sequences are available

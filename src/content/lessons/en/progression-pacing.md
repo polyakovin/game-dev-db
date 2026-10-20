@@ -13,6 +13,8 @@ sources:
     url: https://gamebalanceconcepts.wordpress.com/2010/08/18/level-7-advancement-progression-and-pacing/
 ---
 
+## Prerequisites
+
 A character's level can increase while their actions remain unchanged. Design progression by describing the experience between stages: a new capability, a different risk or a shorter route to a familiar goal.
 
 ## The principle
@@ -21,7 +23,11 @@ Separate numerical growth, skill development and unlocking actions. The [progres
 
 Start with an intended change: after the first upgrade, perhaps players can quickly clear a small obstacle and focus on choosing a route. Then choose numbers and check whether that change occurs. This is a design hypothesis, not a universal genre rule.
 
-## Example: three station-cleanup stages
+<span id="example-three-station-cleanup-stages"></span>
+
+## Practical example
+
+### Three station-cleanup stages
 
 In this illustrative model, every hit connects, damage is constant and obstacles do not regenerate.
 

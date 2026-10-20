@@ -13,15 +13,21 @@ sources:
     url: https://www.redblobgames.com/pathfinding/a-star/introduction.html
 ---
 
+## Prerequisites
+
 Finding a sequence of cells and moving a character through it without getting stuck are separate tasks. Start with a space model, then check both parts.
 
 ## The principle
 
 Search operates on a graph: nodes and allowed transitions between them. [Red Blob Games](https://www.redblobgames.com/pathfinding/a-star/introduction.html) applies the same idea to different spatial representations. A tile grid is convenient but optional.
 
-With equal edge costs, BFS finds a path with the fewest transitions. With differing nonnegative costs, Dijkstra accounts for their sum. A* adds an estimate of the remaining cost. On a four-connected grid without diagonals, Manhattan distance multiplied by the minimum step cost is a suitable lower bound; unusual transitions such as teleporters can invalidate it.
+With equal edge costs, breadth-first search (BFS) finds a path with the fewest transitions. With differing nonnegative costs, Dijkstra accounts for their sum. A* adds an estimate of the remaining cost. On a four-connected grid without diagonals, Manhattan distance multiplied by the minimum step cost is a suitable lower bound; unusual transitions such as teleporters can invalidate it.
 
-## Example: maintenance corridors
+<span id="example-maintenance-corridors"></span>
+
+## Practical example
+
+### Maintenance corridors
 
 This illustrative graph has two routes from A to G. Only the listed edges exist, and each is bidirectional:
 
@@ -47,7 +53,7 @@ Now place the corridors in a game. Include robot width when computing traversabi
 ## Verify it
 
 1. Calculate both path costs manually and compare the algorithm's result.
-2. Remove access to the goal and check an explicit “no path” result.
+2. Remove D–G: route A–B–G must remain, with cost 5. Then remove B–G and check an explicit “no path” result.
 3. Check start equal to goal and a door closing during travel.
 4. Follow the computed route with the real collider, including narrow turns.
 

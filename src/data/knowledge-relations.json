@@ -1,0 +1,262 @@
+[
+  {
+    "from": "lesson/game-loop",
+    "type": "requires",
+    "to": "lesson/scope-and-prototype"
+  },
+  {
+    "from": "lesson/input-and-feedback",
+    "type": "requires",
+    "to": "lesson/game-loop"
+  },
+  {
+    "from": "lesson/collision-basics",
+    "type": "requires",
+    "to": "lesson/game-loop"
+  },
+  {
+    "from": "lesson/state-machines",
+    "type": "requires",
+    "to": "lesson/input-and-feedback"
+  },
+  {
+    "from": "lesson/game-feel",
+    "type": "requires",
+    "to": "lesson/input-and-feedback"
+  },
+  {
+    "from": "lesson/performance-budget",
+    "type": "requires",
+    "to": "lesson/game-loop"
+  },
+  {
+    "from": "lesson/agent-workflow",
+    "type": "requires",
+    "to": "lesson/scope-and-prototype"
+  },
+  {
+    "from": "lesson/agent-workflow",
+    "type": "requires",
+    "to": "lesson/state-machines"
+  },
+  {
+    "from": "lesson/level-blockout",
+    "type": "requires",
+    "to": "lesson/scope-and-prototype"
+  },
+  {
+    "from": "lesson/level-blockout",
+    "type": "requires",
+    "to": "lesson/collision-basics"
+  },
+  {
+    "from": "lesson/level-wayfinding",
+    "type": "requires",
+    "to": "lesson/level-blockout"
+  },
+  {
+    "from": "lesson/teaching-a-mechanic",
+    "type": "requires",
+    "to": "lesson/input-and-feedback"
+  },
+  {
+    "from": "lesson/teaching-a-mechanic",
+    "type": "requires",
+    "to": "lesson/level-wayfinding"
+  },
+  {
+    "from": "lesson/choice-cost",
+    "type": "requires",
+    "to": "lesson/scope-and-prototype"
+  },
+  {
+    "from": "lesson/controlled-randomness",
+    "type": "requires",
+    "to": "lesson/choice-cost"
+  },
+  {
+    "from": "lesson/progression-pacing",
+    "type": "requires",
+    "to": "lesson/choice-cost"
+  },
+  {
+    "from": "lesson/progression-pacing",
+    "type": "requires",
+    "to": "lesson/controlled-randomness"
+  },
+  {
+    "from": "lesson/npc-perception",
+    "type": "requires",
+    "to": "lesson/state-machines"
+  },
+  {
+    "from": "lesson/npc-action-selection",
+    "type": "requires",
+    "to": "lesson/npc-perception"
+  },
+  {
+    "from": "lesson/npc-pathfinding",
+    "type": "requires",
+    "to": "lesson/collision-basics"
+  },
+  {
+    "from": "lesson/running-a-playtest",
+    "type": "requires",
+    "to": "lesson/scope-and-prototype"
+  },
+  {
+    "from": "lesson/gameplay-acceptance",
+    "type": "requires",
+    "to": "lesson/agent-workflow"
+  },
+  {
+    "from": "lesson/gameplay-acceptance",
+    "type": "requires",
+    "to": "lesson/state-machines"
+  },
+  {
+    "from": "lesson/game-accessibility",
+    "type": "requires",
+    "to": "lesson/input-and-feedback"
+  },
+  {
+    "from": "lesson/game-accessibility",
+    "type": "requires",
+    "to": "lesson/game-feel"
+  },
+  {
+    "from": "lesson/scope-and-prototype",
+    "type": "explains",
+    "to": "mechanic/boss-fight-atlas--boss-telegraph"
+  },
+  {
+    "from": "lesson/input-and-feedback",
+    "type": "explains",
+    "to": "mechanic/voice-audio--family-01"
+  },
+  {
+    "from": "lesson/input-and-feedback",
+    "type": "explains",
+    "to": "mechanic/point-and-click--family-43"
+  },
+  {
+    "from": "lesson/state-machines",
+    "type": "explains",
+    "to": "mechanic/boss-fight-atlas--boss-wind-up"
+  },
+  {
+    "from": "lesson/collision-basics",
+    "type": "explains",
+    "to": "mechanic/point-and-click--family-20"
+  },
+  {
+    "from": "lesson/game-feel",
+    "type": "explains",
+    "to": "mechanic/game-mechanics--gm-low-health-feedback"
+  },
+  {
+    "from": "lesson/level-blockout",
+    "type": "explains",
+    "to": "mechanic/game-mechanics--gm-forced-path"
+  },
+  {
+    "from": "lesson/level-wayfinding",
+    "type": "explains",
+    "to": "mechanic/voice-audio--family-13"
+  },
+  {
+    "from": "lesson/teaching-a-mechanic",
+    "type": "explains",
+    "to": "mechanic/detective--family-27"
+  },
+  {
+    "from": "lesson/choice-cost",
+    "type": "explains",
+    "to": "mechanic/rpg-grind--item-evolution"
+  },
+  {
+    "from": "lesson/controlled-randomness",
+    "type": "explains",
+    "to": "mechanic/rpg-grind--rarity-hunting"
+  },
+  {
+    "from": "lesson/progression-pacing",
+    "type": "explains",
+    "to": "mechanic/rpg-grind--experience-leveling"
+  },
+  {
+    "from": "lesson/progression-pacing",
+    "type": "explains",
+    "to": "mechanic/rpg-grind--equipment-sets"
+  },
+  {
+    "from": "lesson/npc-perception",
+    "type": "explains",
+    "to": "mechanic/boss-fight-atlas--boss-cover-line-of-sight"
+  },
+  {
+    "from": "lesson/npc-perception",
+    "type": "explains",
+    "to": "mechanic/voice-audio--family-22"
+  },
+  {
+    "from": "lesson/npc-action-selection",
+    "type": "explains",
+    "to": "mechanic/point-and-click--family-31"
+  },
+  {
+    "from": "lesson/npc-pathfinding",
+    "type": "explains",
+    "to": "mechanic/point-and-click--family-24"
+  },
+  {
+    "from": "lesson/game-accessibility",
+    "type": "explains",
+    "to": "mechanic/game-mechanics--gm-difficulty-level"
+  },
+  {
+    "from": "lesson/npc-perception",
+    "type": "practices",
+    "to": "practice/maintenance-patrol"
+  },
+  {
+    "from": "lesson/npc-action-selection",
+    "type": "practices",
+    "to": "practice/maintenance-patrol"
+  },
+  {
+    "from": "lesson/npc-pathfinding",
+    "type": "practices",
+    "to": "practice/maintenance-patrol"
+  },
+  {
+    "from": "lesson/progression-pacing",
+    "type": "practices",
+    "to": "practice/three-workshop-shifts"
+  },
+  {
+    "from": "lesson/controlled-randomness",
+    "type": "practices",
+    "to": "practice/three-workshop-shifts"
+  },
+  {
+    "from": "lesson/scope-and-prototype",
+    "type": "practices",
+    "to": "practice/paper-current"
+  },
+  {
+    "from": "lesson/game-feel",
+    "type": "practices",
+    "to": "practice/rhythm-without-hurry"
+  },
+  {
+    "from": "lesson/performance-budget",
+    "type": "related",
+    "to": "lesson/gameplay-acceptance"
+  },
+  {
+    "from": "lesson/agent-workflow",
+    "type": "reviews",
+    "to": "lens/schell-103"
+  }
+]

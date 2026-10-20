@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import LessonPath from '../../../components/LessonPath.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLessons } from '../../../lib/content';
 import { path, REPO, ui } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -15,9 +16,6 @@ const { lesson } = Astro.props;
 const { data } = lesson;
 const t = ui[data.lang];
 const { Content, headings } = await render(lesson);
-const related = (await getLessons(data.lang))
-  .filter((l) => l.data.id !== data.id && l.data.category === data.category)
-  .slice(0, 2);
 ---
 
 <Layout
@@ -88,23 +86,7 @@ const related = (await getLessons(data.lang))
     </aside>
   </div>
   <LessonPath lang={data.lang} id={data.id} />
-  {related.length > 0 && (
-    <section class="related">
-      <h2>
-        {data.lang === 'ru'
-          ? 'Рядом с этой темой'
-          : 'Explore this topic further'}
-      </h2>
-      <div class="related-links">
-        {related.map(({ data: d }) => (
-          <a href={path(`${d.lang}/lessons/${d.id}/`)}>
-            {d.title}
-            <Icon name="arrow" size={18} />
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
+  <KnowledgeLinks identity={`lesson/${data.id}`} lang={data.lang} />
 </Layout>
 <script>
   import '../../../scripts/table-of-contents';

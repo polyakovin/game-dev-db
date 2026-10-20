@@ -15,6 +15,8 @@ sources:
     url: https://docs.godotengine.org/en/stable/tutorials/scripting/debug/overview_of_debugging_tools.html
 ---
 
+## Prerequisites
+
 A game can launch and accept a button press while the mechanic still breaks its rule. Check promised behavior under known conditions, then separately assess how players experience it.
 
 ## The principle
@@ -23,7 +25,11 @@ Write the initial state, event and expected observable result. This matches the 
 
 Separate a pure rule from integration. Charge consumption can be checked in a model; door collision, sound and recovery from pause need checks inside the game. Engine debugging tools help expose causes, but a clean console does not establish correct mechanics.
 
-## Example: a single-charge dash
+<span id="example-a-single-charge-dash"></span>
+
+## Practical example
+
+### A single-charge dash
 
 In this teaching contract, a dash consumes one charge and lasts 0.2 seconds of game time. Pause stops the game timer. Death cancels dash movement without returning the charge. These are authored example rules, not universal requirements.
 

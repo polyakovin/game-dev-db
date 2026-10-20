@@ -6,7 +6,7 @@ description: 'Define legal character states, event priority, and transition chec
 category: 'foundations'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['state-machines', 'architecture', 'testing']
 sources:
   [
@@ -17,7 +17,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 You need conditions, functions, and a simple enumeration. Use a character that can move, dash, and die. The useful outcome is a transition table that explains which actions are allowed at each moment.
 
@@ -27,7 +29,11 @@ Flags such as `isDashing`, `isDead`, and `canMove` can contradict each other. A 
 
 Do not put the entire game into one enumeration. Movement and menu visibility may be independent concerns. Start with a boundary: this machine controls the character's available actions. Health, position, and remaining dash duration remain ordinary data.
 
-## Example: a short dash
+<span id="example-a-short-dash"></span>
+
+## Practical example
+
+### A short dash
 
 Assume a dash lasts 0.18 seconds and death interrupts it immediately. These are exercise parameters, not universal recommendations for responsive controls.
 
@@ -61,7 +67,7 @@ Notice the ordering: death is checked first and ends the update. This gives simu
 
 ## Common mistakes
 
-An animation callback must not accidentally revive a dead character by reporting that a dash has finished. Accept an event only in a compatible state. For delayed callbacks, checking the identity of the action that created them can also be useful.
+An animation callback, a function run after an animation event, must not accidentally revive a dead character by reporting that a dash has finished. Accept an event only in a compatible state. For delayed callbacks, checking the identity of the action that created them can also be useful.
 
 Avoid building a framework for dozens of imagined future states. Start with an enumeration and a small transition function. If the table fills up with combinations such as running-with-weapon and running-without-weapon, check whether independent systems have been combined unnecessarily.
 

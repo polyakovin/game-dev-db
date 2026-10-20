@@ -214,6 +214,27 @@ const lensCatalog = getLenses(lang);
 
   <LearningPaths lang={lang} />
 
+  <a class="start-strip" href={path(`${lang}/search/`)} data-global-search-link>
+    <span class="start-icon">
+      <Icon name="search" />
+    </span>
+    <span>
+      <strong>
+        {lang === 'ru'
+          ? 'Найдите нужное во всей базе.'
+          : 'Find what you need across the whole knowledge base.'}
+      </strong>
+      <span class="start-description">
+        {lang === 'ru'
+          ? 'Общий поиск по урокам, механикам, упражнениям, призмам и ресурсам.'
+          : 'Search lessons, mechanics, exercises, lenses and resources together.'}
+      </span>
+    </span>
+    <span class="start-action">
+      {lang === 'ru' ? 'Открыть поиск' : 'Open search'}
+    </span>
+  </a>
+
   <section id="catalog" class="catalog" aria-label={t.catalog}>
     <div class="section-heading">
       <h2>

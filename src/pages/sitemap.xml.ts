@@ -6,6 +6,7 @@ export async function GET() {
   const urls = [
     ...locales.flatMap((lang) => [
       absolute(`${lang}/`),
+      absolute(`${lang}/search/`),
       absolute(`${lang}/resources/`),
       absolute(`${lang}/mechanics/`),
       absolute(`${lang}/practice/`),

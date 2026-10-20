@@ -1,8 +1,59 @@
 [
   {
+    "id": "first-prototype",
+    "updatedAt": "2026-10-20",
+    "title": {
+      "ru": "Первый проверяемый прототип",
+      "en": "Your first verifiable prototype"
+    },
+    "description": {
+      "ru": "Одна сцена: от вопроса и управления до отклика, измерений и проверки работы агента.",
+      "en": "One scene: from a question and input to feedback, measurement and reviewing agent work."
+    },
+    "lessons": [
+      "scope-and-prototype",
+      "game-loop",
+      "input-and-feedback",
+      "collision-basics",
+      "state-machines",
+      "game-feel",
+      "performance-budget",
+      "agent-workflow",
+      "gameplay-acceptance"
+    ],
+    "prerequisites": [],
+    "practice": ["paper-current", "rhythm-without-hurry"],
+    "lenses": ["schell-002", "schell-033", "schell-103"],
+    "outcome": {
+      "ru": "Одна игровая сцена с одним действием, быстрым рестартом и воспроизводимой проверкой.",
+      "en": "One playable scene with a single action, quick restart and a reproducible check."
+    },
+    "checks": [
+      {
+        "ru": "Прототип отвечает на записанный вопрос и имеет критерий остановки.",
+        "en": "The prototype answers a recorded question and has a stopping criterion."
+      },
+      {
+        "ru": "Действие, пауза, повторный запуск и отклик проверены в целевой среде.",
+        "en": "The action, pause, restart and feedback are checked in the target environment."
+      },
+      {
+        "ru": "Изменения агента объяснены и подтверждены наблюдаемыми результатами.",
+        "en": "Agent changes are explained and supported by observable results."
+      }
+    ],
+    "practiceRationale": {
+      "ru": "Начните с бумажной проверки идеи. Затем используйте задания уроков, чтобы собрать одну сцену и проверить её по условиям выше.",
+      "en": "Start with a paper test of the idea. Then use the lesson tasks to build one scene and check it against the conditions above."
+    }
+  },
+  {
     "id": "level-design",
     "updatedAt": "2026-10-20",
-    "title": { "ru": "Левел-дизайн", "en": "Level design" },
+    "title": {
+      "ru": "Левел-дизайн",
+      "en": "Level design"
+    },
     "description": {
       "ru": "От чернового пространства к понятному маршруту и обучению одной механике.",
       "en": "From a rough playable space to readable routes and teaching one mechanic."
@@ -10,38 +61,106 @@
     "lessons": ["level-blockout", "level-wayfinding", "teaching-a-mechanic"],
     "prerequisites": ["scope-and-prototype", "input-and-feedback"],
     "practice": ["paper-current", "signal-room", "three-minute-museum"],
-    "lenses": ["schell-026", "schell-032", "schell-034"]
+    "lenses": ["schell-026", "schell-032", "schell-034"],
+    "outcome": {
+      "ru": "Проходимый блокаут с маршрутом, ориентирами и обучением одной механике.",
+      "en": "A traversable blockout with a route, landmarks and one taught mechanic."
+    },
+    "checks": [
+      {
+        "ru": "Маршрут пройден без подсказок автора.",
+        "en": "The route is completed without the author’s hints."
+      },
+      {
+        "ru": "Размеры и сигналы проверены реальным игровым действием.",
+        "en": "Dimensions and cues are checked through actual gameplay."
+      }
+    ],
+    "practiceRationale": {
+      "ru": "Упражнения помогают проверить решения из уроков. Сохраните условия и результат сравнения.",
+      "en": "Use the exercises to check decisions from the lessons. Preserve conditions and comparison results."
+    }
   },
   {
     "id": "balance",
     "updatedAt": "2026-10-20",
-    "title": { "ru": "Баланс и прогрессия", "en": "Balance and progression" },
+    "title": {
+      "ru": "Баланс и прогрессия",
+      "en": "Balance and progression"
+    },
     "description": {
       "ru": "Цена выбора, случайные серии и улучшения, которые меняют действия игрока.",
       "en": "Choice costs, random streaks and upgrades that change player actions."
     },
     "lessons": ["choice-cost", "controlled-randomness", "progression-pacing"],
     "prerequisites": ["scope-and-prototype"],
-    "practice": ["last-ferry", "weather-window", "remove-the-market"],
-    "lenses": ["schell-039", "schell-036", "schell-055"]
+    "practice": [
+      "last-ferry",
+      "weather-window",
+      "remove-the-market",
+      "three-workshop-shifts"
+    ],
+    "lenses": ["schell-039", "schell-036", "schell-055"],
+    "outcome": {
+      "ru": "Таблица цены выбора и трёх этапов прогрессии с журналом сравнения.",
+      "en": "A choice-cost and three-stage progression table with comparison logs."
+    },
+    "checks": [
+      {
+        "ru": "Полезность вариантов зависит от ситуации.",
+        "en": "Option usefulness depends on the situation."
+      },
+      {
+        "ru": "Пороги покупок и случайные серии проверены отдельно.",
+        "en": "Purchase thresholds and random streaks are checked separately."
+      }
+    ],
+    "practiceRationale": {
+      "ru": "Упражнения помогают проверить решения из уроков. Сохраните условия и результат сравнения.",
+      "en": "Use the exercises to check decisions from the lessons. Preserve conditions and comparison results."
+    }
   },
   {
     "id": "npc-behavior",
     "updatedAt": "2026-10-20",
-    "title": { "ru": "Поведение NPC", "en": "NPC behavior" },
+    "title": {
+      "ru": "Поведение NPC",
+      "en": "NPC behavior"
+    },
     "description": {
       "ru": "Что персонаж знает, как выбирает действие и каким путём добирается к цели.",
       "en": "What a character knows, how it selects an action and how it reaches a destination."
     },
     "lessons": ["npc-perception", "npc-action-selection", "npc-pathfinding"],
     "prerequisites": ["game-loop", "state-machines", "collision-basics"],
-    "practice": ["shared-workshop"],
-    "lenses": ["schell-028", "schell-031", "schell-062"]
+    "practice": ["shared-workshop", "maintenance-patrol"],
+    "lenses": ["schell-028", "schell-031", "schell-062"],
+    "outcome": {
+      "ru": "Робот с наблюдениями, памятью, выбором действий и проверенным движением по маршруту.",
+      "en": "A robot with observations, memory, action selection and verified route following."
+    },
+    "checks": [
+      {
+        "ru": "В журнале видна причина каждого решения.",
+        "en": "The log explains every decision."
+      },
+      {
+        "ru": "Потеря цели и закрытие двери обработаны явно.",
+        "en": "Lost targets and closing doors are handled explicitly."
+      }
+    ],
+    "practiceRationale": {
+      "ru": "«Общая мастерская» помогает сформулировать роли и конфликт ресурсов. «Ремонтный патруль» соединяет восприятие, выбор и выполнение маршрута в проверяемую систему.",
+      "en": "Shared Workshop helps define roles and resource conflicts. Maintenance Patrol connects perception, selection and route following into a verifiable system."
+    }
   },
   {
     "id": "game-verification",
     "updatedAt": "2026-10-20",
-    "title": { "ru": "Проверка игры", "en": "Game verification" },
+    "title": {
+      "ru": "Проверка игры",
+      "en": "Game verification"
+    },
     "description": {
       "ru": "Наблюдение за игроком, проверка поведения и поиск барьеров доступности.",
       "en": "Player observation, behavior acceptance and finding accessibility barriers."
@@ -53,6 +172,24 @@
     ],
     "prerequisites": ["scope-and-prototype", "state-machines"],
     "practice": ["three-minute-museum", "rhythm-without-hurry"],
-    "lenses": ["schell-103", "schell-033", "schell-060"]
+    "lenses": ["schell-103", "schell-033", "schell-060"],
+    "outcome": {
+      "ru": "Повторяемый сценарий проверки, запись плейтеста и список барьеров доступности.",
+      "en": "A repeatable acceptance scenario, playtest record and list of accessibility barriers."
+    },
+    "checks": [
+      {
+        "ru": "Ожидаемое поведение отделено от наблюдаемого.",
+        "en": "Expected behavior is distinct from observations."
+      },
+      {
+        "ru": "Проверка выполнена в целевой среде с сохранёнными условиями.",
+        "en": "Checks run in the target environment with recorded conditions."
+      }
+    ],
+    "practiceRationale": {
+      "ru": "Упражнения помогают проверить решения из уроков. Сохраните условия и результат сравнения.",
+      "en": "Use the exercises to check decisions from the lessons. Preserve conditions and comparison results."
+    }
   }
 ]

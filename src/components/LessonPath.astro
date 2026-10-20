@@ -7,15 +7,18 @@ interface Props {
   id: string;
 }
 const { lang, id } = Astro.props;
-const route = getLearningPaths(lang).find((p) =>
+const routes = getLearningPaths(lang).filter((p) =>
   p.lessons.some((l) => l.id === id),
 );
-const position = route?.lessons.findIndex((l) => l.id === id) ?? -1;
 const lessons = await getLessons(lang);
 const title = (lessonId: string) =>
   lessons.find((l) => l.data.id === lessonId)!.data.title;
-const adjacent = route
-  ? [
+const navigations = routes.map((route) => {
+  const position = route.lessons.findIndex((lesson) => lesson.id === id);
+  return {
+    route,
+    position,
+    adjacent: [
       {
         lesson: route.lessons[position - 1],
         label: lang === 'ru' ? 'Предыдущий урок' : 'Previous lesson',
@@ -26,14 +29,16 @@ const adjacent = route
         label: lang === 'ru' ? 'Следующий урок' : 'Next lesson',
         rel: 'next',
       },
-    ]
-  : [];
+    ].filter((item) => item.lesson),
+  };
+});
 ---
 
-{route && (
+{navigations.map(({ route, position, adjacent }) => (
   <nav
     class="lesson-path"
     data-lesson-path
+    data-path-id={route.id}
     aria-label={lang === 'ru' ? 'Учебный раздел' : 'Learning path'}
   >
     <p>
@@ -55,7 +60,7 @@ const adjacent = route
         ))}
     </div>
   </nav>
-)}
+))}
 
 <style>
   .lesson-path {

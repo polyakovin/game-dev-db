@@ -6,7 +6,7 @@ description: 'Choose one question, limit the work, and decide what to do after e
 category: 'design'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['scope', 'prototyping', 'playtesting']
 sources:
   [
@@ -17,7 +17,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 You do not need an engine or an existing project. You need an idea for a player action and an uncertainty that blocks the next decision. The outcome is a small investigation with a clear stopping point, rather than a list of everything the game might eventually include.
 
@@ -29,7 +31,11 @@ Limit the action, environment, and outcome. One enemy, one room, and two warning
 
 Distinguish an idea prototype from a vertical slice. Investigation may only need placeholder graphics and a manually triggered scenario. A slice demonstrates an integrated piece of intended production quality, so it has different costs. Choose the form that supports the upcoming decision.
 
-## Example: can players read an attack?
+<span id="example-can-players-read-an-attack"></span>
+
+## Practical example
+
+### Can players read an attack?
 
 Write an experiment card before development:
 

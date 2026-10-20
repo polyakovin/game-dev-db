@@ -126,3 +126,7 @@ When correcting a substantive issue, check both versions. If a contribution is n
 Один урок должен помогать принять конкретное решение или проверить часть игры. Объясните принцип, покажите небольшой пример, назовите типичные ошибки и дайте проверку результата. Это особенно важно для разработчика, который поручает написание кода ИИ.
 
 Создавайте пару `ru/{id}.md` и `en/{id}.md` с одинаковым стабильным `id`. Заголовки и описания переводятся, категория и смысл материала сохраняются. Источники указываются в `sources`; проверяйте, что они подтверждают утверждения. Перед pull request просмотрите обе версии и выполните `npm run verify`.
+
+## Consistent lesson structure
+
+All lesson bodies use six H2 sections, in order: prerequisites, principle, practical example, common mistakes, verification, agent task. The localized headings are validated by `npm run check:content`. Specific example names belong under H3; legacy H2 fragment IDs remain explicit anchors. Both languages must match reading metadata and source URLs.

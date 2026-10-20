@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getPractice } from '../../../lib/practice.mjs';
 import { locales, ui, path, type Locale } from '../../../lib/site';
 import '../../../styles/practice.css';
@@ -236,6 +237,11 @@ const searchable = (task: (typeof catalog.tasks)[number]) =>
             <a class="practice-permalink" href={`#${task.id}`}>
               {labels.permalink}
             </a>
+            <KnowledgeLinks
+              identity={`practice/${task.id}`}
+              lang={lang}
+              compact
+            />
           </div>
         </details>
       ))}

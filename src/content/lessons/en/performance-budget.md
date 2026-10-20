@@ -6,7 +6,7 @@ description: 'Set a measurable target, locate the bottleneck with a profiler, an
 category: 'engineering'
 level: 'intermediate'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['performance', 'profiling', 'frame-time']
 sources:
   [
@@ -17,7 +17,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 You need a playable scene and access to the target device, or an explicitly identified intermediate environment. This lesson turns “make it faster” into a measurement of a particular workload. Low-level optimization expertise is not required.
 
@@ -29,9 +31,13 @@ Do not automatically add every CPU and GPU timing together, because their work m
 
 [Godot's optimization guidance](https://docs.godotengine.org/en/stable/tutorials/performance/general_optimization.html) recommends finding bottlenecks through measurement and checking the effect of changes. It also distinguishes sustained slow execution, individual stalls, and long loading operations. Each needs an appropriate observation scenario.
 
-## Example: an enemy arena
+<span id="example-an-enemy-arena"></span>
 
-Suppose an empty arena feels smooth, but spawning a wave causes a stall. Do not start by rewriting movement. Create a repeatable scenario with the same arena, enemy count, random seed, and spawn timing.
+## Practical example
+
+### An enemy arena
+
+Suppose an empty arena feels smooth, but spawning a wave causes a stall. Do not start by rewriting movement. Create a repeatable scenario with the same arena, enemy count, random seed (the generator’s initial value), and spawn timing.
 
 ```text
 scenario: spawn-wave
@@ -44,7 +50,7 @@ report: median, p95, p99 frame time and longest frame
 compare: baseline versus one isolated change
 ```
 
-This is an example procedure. Choose durations that fit your game and keep them constant across comparisons. High frame-time percentiles help expose slower frames hidden by an average. A short recording can still miss rare failures.
+This is an example procedure. Choose durations that fit your game and keep them constant across comparisons. p95 and p99 mark the bounds within which roughly 95% and 99% of measured frames fall, exposing occasional slow frames hidden by an average. A short recording can still miss rare failures.
 
 Capture a profile around the spawn event. If object creation and resource preparation dominate, investigate preloading or spreading the work over time. If updating every object is consistently expensive, inspect update frequency and workload. Choose a fix from the evidence instead of selecting a fashionable optimization technique.
 

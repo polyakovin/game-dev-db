@@ -42,6 +42,18 @@ export async function GET() {
       practiceTranslationPairs: getPractice('ru').counts.tasks,
       mechanics: mechanics.length,
       mechanicsTranslationPairs: mechanics.length / 2,
+      activeMechanicCatalogs: getMechanics('ru').length,
+      archivedMechanicCatalogs: getMechanics('ru', {
+        includeArchived: true,
+      }).filter((c) => c.status === 'archived').length,
+      activeMechanicFamilies: getMechanics('ru').reduce(
+        (n, c) => n + c.counts.families,
+        0,
+      ),
+      activeMechanicVariants: getMechanics('ru').reduce(
+        (n, c) => n + c.counts.variants,
+        0,
+      ),
       mechanicFamilies: getMechanics('ru', { includeArchived: true }).reduce(
         (n, c) => n + c.counts.families,
         0,
@@ -53,6 +65,15 @@ export async function GET() {
     },
     endpoints: {
       lessons: absolute('api/v1/lessons.json'),
+      knowledgeIndexTemplate: absolute('api/v1/knowledge/{lang}/index.json'),
+      knowledgeSearchTemplate: absolute('api/v1/knowledge/{lang}/search.json'),
+      knowledgeRecordTemplate: absolute(
+        'api/v1/knowledge/{lang}/{type}/{id}.json',
+      ),
+      knowledgeMarkdownTemplate: absolute(
+        'content/knowledge/{lang}/{type}/{id}.md',
+      ),
+      sources: absolute('api/v1/sources.json'),
       learningPaths: absolute('api/v1/learning-paths.json'),
       resources: absolute('api/v1/resources.json'),
       jams: absolute('api/v1/jams.json'),

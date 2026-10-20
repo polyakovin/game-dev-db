@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLearningPaths } from '../../../lib/learning-paths.mjs';
 import { getLessons } from '../../../lib/content';
 import { getPractice } from '../../../lib/practice.mjs';
@@ -37,7 +38,7 @@ const lenses = getLenses(lang);
     <p>{route.description}</p>
     <div class="article-meta">
       <span>
-        {route.lessons.length} {ru ? 'урока' : 'lessons'}
+        {route.lessons.length} {ru ? 'уроков' : 'lessons'}
       </span>
       <span>
         {route.lessons.reduce((sum, l) => sum + lessonFor(l.id).minutes, 0)}{' '}
@@ -57,8 +58,12 @@ const lenses = getLenses(lang);
     </h2>
     <p>
       {ru
-        ? 'При необходимости освежите основы:'
-        : 'Refresh these foundations if needed:'}
+        ? route.prerequisites.length
+          ? 'При необходимости освежите основы:'
+          : 'Начните с вопроса к прототипу. Готовый игровой проект не требуется.'
+        : route.prerequisites.length
+          ? 'Refresh these foundations if needed:'
+          : 'Start with a prototype question. No existing game project is required.'}
     </p>
     <ul>
       {route.prerequisites.map((l) => (
@@ -102,13 +107,7 @@ const lenses = getLenses(lang);
     <h2 id="practice-heading">
       {ru ? 'Применить на практике' : 'Put it into practice'}
     </h2>
-    {route.id === 'npc-behavior' && (
-      <p>
-        {ru
-          ? '«Общая мастерская» помогает сформулировать роли и конфликт ресурсов перед проектированием помощника. Реализацию NPC проверяйте заданиями из уроков.'
-          : 'Shared Workshop helps define roles and resource conflicts before designing a companion. Use the lesson tasks to check NPC implementation.'}
-      </p>
-    )}
+    <p>{route.practiceRationale}</p>
     <ul>
       {route.practice.map((p) => (
         <li>
@@ -134,6 +133,16 @@ const lenses = getLenses(lang);
         : 'Lessons contain original teaching examples and primary-source links. Numbers and scenarios illustrate a principle; verify the result in your own game.'}
     </p>
   </section>
+  <section data-path-outcome>
+    <h2>{ru ? 'Результат и проверка' : 'Outcome and verification'}</h2>
+    <p>{route.outcome}</p>
+    <ul>
+      {route.checks.map((check) => (
+        <li>{check}</li>
+      ))}
+    </ul>
+  </section>
+  <KnowledgeLinks identity={`path/${route.id}`} lang={lang} />
 </Layout>
 
 <style>

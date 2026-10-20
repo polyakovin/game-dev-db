@@ -15,6 +15,7 @@ export const absolute = (relative = '') =>
   `${SITE}/${relative.replace(/^\//, '')}`;
 export const ui = {
   ru: {
+    searchNav: 'Поиск',
     catalog: 'База знаний',
     resources: 'Референсы',
     mechanics: 'Механики',
@@ -41,7 +42,7 @@ export const ui = {
     intermediate: 'Средний',
     minutes: 'мин',
     search: 'Найти принцип, тему или инструмент…',
-    searchLabel: 'Поиск по базе знаний',
+    searchLabel: 'Поиск по урокам',
     lessons: 'Материалы',
     results: 'Найдено',
     empty: 'Пока ничего не нашлось',
@@ -57,6 +58,7 @@ export const ui = {
     license: 'Код MIT · Материалы CC BY 4.0',
   },
   en: {
+    searchNav: 'Search',
     catalog: 'Knowledge base',
     resources: 'References',
     mechanics: 'Mechanics',
@@ -83,7 +85,7 @@ export const ui = {
     intermediate: 'Intermediate',
     minutes: 'min',
     search: 'Find a principle, topic or tool…',
-    searchLabel: 'Search the knowledge base',
+    searchLabel: 'Search lessons',
     lessons: 'Lessons',
     results: 'Results',
     empty: 'No matching lessons yet',

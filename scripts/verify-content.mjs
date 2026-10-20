@@ -8,6 +8,7 @@ import { validateJams, jamData } from '../src/lib/jams.mjs';
 import { validateContentOrder } from '../src/lib/content-order.mjs';
 import { resourceGroups } from '../src/lib/resources.mjs';
 import { validateLearningPaths } from '../src/lib/learning-paths.mjs';
+import { buildKnowledge, validateKnowledge } from '../src/lib/knowledge.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -130,6 +131,30 @@ for (const lang of languages) {
         }
       }
     }
+    const expectedHeadings =
+      lang === 'ru'
+        ? [
+            'Что нужно знать',
+            'Принцип',
+            'Практический пример',
+            'Частые ошибки',
+            'Проверка результата',
+            'Задание для ИИ-агента',
+          ]
+        : [
+            'Prerequisites',
+            'The principle',
+            'Practical example',
+            'Common mistakes',
+            'Verify it',
+            'Prompt for an AI agent',
+          ];
+    check(
+      JSON.stringify([...content.matchAll(/^## (.+)$/gm)].map((m) => m[1])) ===
+        JSON.stringify(expectedHeadings),
+      location,
+      'lesson must use the six canonical sections in order',
+    );
     const words = content.trim().split(/\s+/u).filter(Boolean).length;
     check(
       words >= 120,
@@ -143,7 +168,7 @@ for (const lang of languages) {
     );
     const key = `${lang}/${data.id}`;
     check(!lessons.has(key), location, `duplicate lesson identity: ${key}`);
-    lessons.set(key, { data, location });
+    lessons.set(key, { data, location, body: content });
   }
 }
 
@@ -157,13 +182,33 @@ for (const { data, location } of lessons.values()) {
     'a matching RU/EN translation is required',
   );
   if (counterpart) {
-    for (const field of ['category', 'level', 'updatedAt']) {
+    for (const field of ['category', 'level', 'updatedAt', 'minutes']) {
       check(
         data[field] === counterpart.data[field],
         location,
         `${field} must match its translation`,
       );
     }
+    check(
+      JSON.stringify(data.sources?.map((s) => s.url).sort()) ===
+        JSON.stringify(counterpart.data.sources?.map((s) => s.url).sort()),
+      location,
+      'source URLs must match their translation',
+    );
+  }
+}
+
+for (const lang of languages) {
+  try {
+    const dataset = buildKnowledge(
+      [...lessons.values()]
+        .filter((l) => l.data.lang === lang)
+        .map((l) => ({ ...l.data, body: l.body })),
+      lang,
+    );
+    errors.push(...validateKnowledge(dataset));
+  } catch (error) {
+    errors.push(`knowledge/${lang}: ${error.message}`);
   }
 }
 

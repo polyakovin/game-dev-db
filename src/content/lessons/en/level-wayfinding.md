@@ -13,6 +13,8 @@ sources:
     url: https://book.leveldesignbook.com/process/blockout/wayfinding
 ---
 
+## Prerequisites
+
 An open passage is not enough. Players need information to locate themselves, choose a direction and recognize progress toward their destination.
 
 ## The principle
@@ -21,7 +23,11 @@ A readable route supports decisions. It does not need to make everyone follow th
 
 Separate three questions: “Where am I?”, “Where do I want to go?” and “How can I get there?” A landmark may answer only the first. A visible tower does not explain where its staircase is. A maze can deliberately create uncertainty; distinguish that from an accidentally unreadable door.
 
-## Example: an observation station
+<span id="example-an-observation-station"></span>
+
+## Practical example
+
+### An observation station
 
 In this teaching level, the player carries a battery to an antenna. The antenna is visible from the starting platform, but its entrance is one floor above. Place the staircase so its upper landing is also visible from the start. Mark a side workshop with a tool symbol; mark the antenna door with the same antenna outline visible in the world.
 

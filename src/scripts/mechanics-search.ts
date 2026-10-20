@@ -20,10 +20,13 @@ const update = () => {
   let variantCount = 0;
   for (const family of families) {
     const context = norm(
-      `${family.querySelector('[data-family-title]')!.textContent} ${family.querySelector('[data-family-description]')?.textContent ?? ''} ${family.querySelector('[data-references]')?.textContent ?? ''}`,
+      `${family.querySelector('[data-family-title]')!.textContent} ${family.querySelector('[data-references]')?.textContent ?? ''}`,
     );
     const sectionOK =
-      filter.value === 'all' || family.dataset.section === filter.value;
+      filter.value === 'all' ||
+      (family.dataset.categories ?? family.dataset.section ?? '')
+        .split(' ')
+        .includes(filter.value);
     let matches = 0;
     for (const branch of family.querySelectorAll<HTMLElement>(
       '[data-branch]',
@@ -41,6 +44,22 @@ const update = () => {
       }
       branch.hidden = branchMatches === 0;
       matches += branchMatches;
+    }
+    const definition = norm(
+      family.querySelector('[data-family-description]')?.textContent ?? '',
+    );
+    if (
+      !matches &&
+      sectionOK &&
+      tokens.length > 0 &&
+      tokens.every((token) => definition.includes(token))
+    ) {
+      family
+        .querySelectorAll<HTMLElement>('[data-branch], [data-variant]')
+        .forEach((element) => {
+          element.hidden = false;
+        });
+      matches = family.querySelectorAll('[data-variant]').length;
     }
     family.hidden = matches === 0;
     if (matches) {

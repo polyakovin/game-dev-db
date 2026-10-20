@@ -30,40 +30,43 @@ import mouse from '../data/mechanics/mouse.json' with { type: 'json' };
 import trackpad from '../data/mechanics/trackpad.json' with { type: 'json' };
 import { absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
+import { resolveMechanicCatalog } from './mechanic-source.mjs';
 
 /** @typedef {Omit<typeof voice, 'families'> & { provenance?: string, families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
-export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
-  voice,
-  point,
-  children,
-  education,
-  combined,
-  detective,
-  boss,
-  games,
-  rpgGrind,
-  visualNovel,
-  dialogue,
-  deckBuilding,
-  roguelike,
-  metroidvania,
-  metroidbrainia,
-  puzzle,
-  engagement,
-  devices,
-  drawing,
-  perception,
-  camera,
-  microphone,
-  motion,
-  flashlight,
-  haptics,
-  touch,
-  magnetometer,
-  keyboard,
-  mouse,
-  trackpad,
-]);
+export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ (
+  [
+    voice,
+    point,
+    children,
+    education,
+    combined,
+    detective,
+    boss,
+    games,
+    rpgGrind,
+    visualNovel,
+    dialogue,
+    deckBuilding,
+    roguelike,
+    metroidvania,
+    metroidbrainia,
+    puzzle,
+    engagement,
+    devices,
+    drawing,
+    perception,
+    camera,
+    microphone,
+    motion,
+    flashlight,
+    haptics,
+    touch,
+    magnetometer,
+    keyboard,
+    mouse,
+    trackpad,
+  ].map((source) => resolveMechanicCatalog(source))
+);
 
 /**
  * @param {'ru' | 'en'} lang
@@ -71,12 +74,15 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
  */
 export function getMechanics(lang, { includeArchived = false } = {}) {
   const catalogs = mechanicCatalogs.filter(
-    (catalog) => includeArchived || catalog.id !== 'children-education',
+    (catalog) => includeArchived || catalog.status !== 'archived',
   );
   return orderEntries(catalogs, 'mechanics').map((source) => {
     const catalog = orderMechanicCatalog(source);
     const families = catalog.families.map((family) => ({
       id: family.id,
+      canonicalId: family.canonicalId,
+      categoryIds: family.categoryIds,
+      classification: family.classification?.[lang] ?? '',
       section: family.section,
       title: family.title[lang],
       description: family.description[lang],
@@ -97,6 +103,8 @@ export function getMechanics(lang, { includeArchived = false } = {}) {
     }));
     return {
       id: catalog.id,
+      status: catalog.status,
+      supersededBy: catalog.supersededBy,
       lang,
       title: catalog.title[lang],
       description: catalog.description[lang],
@@ -152,6 +160,18 @@ export function mechanicsMarkdown(catalog) {
     '',
     catalog.intro,
     '',
+    ...(catalog.status === 'archived'
+      ? [
+          ru
+            ? 'Статус: архив. Актуальные справочники:'
+            : 'Status: archived. Current references:',
+          ...catalog.supersededBy.map(
+            (id) =>
+              `- [${id}](${absolute(`${catalog.lang}/mechanics/${id}/`)})`,
+          ),
+          '',
+        ]
+      : []),
     ...catalog.sections.flatMap((section) => [
       `## ${section.title}`,
       '',
@@ -160,11 +180,17 @@ export function mechanicsMarkdown(catalog) {
         .flatMap((f) => [
           `### ${catalog.families.indexOf(f) + 1}. ${f.title}`,
           '',
+          `<a id="${f.id}"></a>`,
+          `id: ${f.id}`,
+          `canonicalId: ${f.canonicalId}`,
+          `url: ${catalog.url}#${f.id}`,
+          '',
           ...(f.description ? [f.description, ''] : []),
           ...f.branches.flatMap((branch) => [
             `#### ${branch.title}`,
             '',
-            ...branch.variants.map((v) => `- ${v.text}`),
+            `<a id="${branch.id}"></a>`,
+            ...branch.variants.map((v) => `- ${v.text} <a id="${v.id}"></a>`),
             '',
           ]),
           ...(f.example
@@ -246,7 +272,14 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
       );
   };
   const catalogIds = new Set();
-  for (const c of catalogs) {
+  for (const input of catalogs) {
+    let c;
+    try {
+      c = resolveMechanicCatalog(input);
+    } catch (error) {
+      errors.push(error.message);
+      continue;
+    }
     if (!c || typeof c !== 'object') {
       errors.push('Catalog must be an object');
       continue;
@@ -328,9 +361,21 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
     for (const f of catalog.families) {
       identity(f.id);
       localized(f.title, `${location}/${f.id}/title`);
-      localized(f.description, `${location}/${f.id}/description`, true);
+      localized(
+        f.description,
+        `${location}/${f.id}/description`,
+        catalog.status === 'archived',
+      );
       localized(f.example, `${location}/${f.id}/example`, true);
       check(sections.has(f.section), location, `unknown section ${f.section}`);
+      check(
+        Array.isArray(f.categoryIds) &&
+          f.categoryIds.includes(f.section) &&
+          new Set(f.categoryIds).size === f.categoryIds.length &&
+          f.categoryIds.every((id) => sections.has(id)),
+        location,
+        `invalid categories for ${f.id}`,
+      );
       check(
         Array.isArray(f.sourceUrls) &&
           f.sourceUrls.every((url) => sourceUrls.has(url)),

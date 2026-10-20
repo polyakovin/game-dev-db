@@ -45,6 +45,11 @@ Individual Markdown exports retain the original lesson body and frontmatter data
 
 ## Boundaries
 
+The common knowledge layer adapts every authored content type to a uniform record
+without copying lesson bodies or forcing identical domain-specific fields. It
+builds typed direct/reverse relationships, source usage, global search indexes and
+individual JSON/Markdown records. See [the common content contract](knowledge-content.md).
+
 Learning paths use `src/data/learning-paths.json` and a shared localization/reference
 validator in `src/lib/learning-paths.mjs`. Homepage cards, static
 `{lang}/learn/{id}/` pages, lesson sequence navigation and additive

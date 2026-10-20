@@ -1,0 +1,122 @@
+---
+import { getKnowledge, type KnowledgeRelation } from '../lib/knowledge-content';
+import type { Locale } from '../lib/site';
+interface Props {
+  identity: string;
+  lang: Locale;
+  compact?: boolean;
+}
+const { identity, lang, compact = false } = Astro.props;
+const record = (await getKnowledge(lang)).records.find(
+  (r) => r.key === identity,
+);
+const local = (value: string) => {
+  const url = new URL(value);
+  return url.pathname + url.search + url.hash;
+};
+const groups = new Map<string, KnowledgeRelation[]>();
+for (const relation of record?.relations ?? []) {
+  const entries = groups.get(relation.label) ?? [];
+  if (!entries.some((entry) => entry.key === relation.key))
+    entries.push(relation);
+  groups.set(relation.label, entries);
+}
+---
+
+{record && (
+  <aside
+    class:list={['knowledge-links', { compact }]}
+    data-knowledge-links={identity}
+    aria-label={lang === 'ru' ? 'Связи материала' : 'Knowledge connections'}
+  >
+    {[...groups].map(([label, entries]) => (
+      <div class="knowledge-link-group">
+        <h3>{label}</h3>
+        <ul>
+          {entries.slice(0, 6).map((entry) => (
+            <li>
+              <a href={local(entry.url)} data-knowledge-target={entry.key}>
+                {entry.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {entries.length > 6 && (
+          <details>
+            <summary>
+              {lang === 'ru' ? 'Ещё' : 'More'}: {entries.length - 6}
+            </summary>
+            <ul>
+              {entries.slice(6).map((entry) => (
+                <li>
+                  <a href={local(entry.url)} data-knowledge-target={entry.key}>
+                    {entry.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+      </div>
+    ))}
+    <div class="knowledge-formats">
+      <a href={local(record.markdownUrl)}>Markdown</a>
+      <a href={local(record.jsonUrl)}>JSON</a>
+    </div>
+  </aside>
+)}
+<style>
+  .knowledge-links {
+    margin-top: 2rem;
+    padding: 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+    gap: 1.25rem;
+    min-width: 0;
+  }
+  .knowledge-links.compact {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    background: var(--surface-alt);
+  }
+  .knowledge-link-group {
+    min-width: 0;
+  }
+  h3 {
+    font-size: 0.9rem;
+    margin: 0 0 0.65rem;
+    color: var(--muted);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.45rem;
+  }
+  a {
+    color: var(--accent);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  summary {
+    cursor: pointer;
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .knowledge-formats {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1rem;
+  }
+  .knowledge-formats a {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+</style>

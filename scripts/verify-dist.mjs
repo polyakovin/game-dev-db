@@ -8,6 +8,11 @@ import { lensRecords } from '../src/lib/lenses.mjs';
 import { jamSnapshot, getJams } from '../src/lib/jams.mjs';
 import { getResources } from '../src/lib/resources.mjs';
 import {
+  buildKnowledge,
+  knowledgeIndex,
+  knowledgeMarkdown,
+} from '../src/lib/knowledge.mjs';
+import {
   learningPathRecords,
   learningPathData,
 } from '../src/lib/learning-paths.mjs';
@@ -640,6 +645,65 @@ if (!jamExport || !Number.isFinite(Date.parse(jamExport.generatedAt))) {
         $(`[data-jam-calendar="${calendar.id}"]`).attr('href') !== calendar.url
       )
         errors.push(`Jams ${lang}: incorrect calendar link ${calendar.id}`);
+  }
+}
+
+for (const lang of ['ru', 'en']) {
+  const dataset = buildKnowledge(
+    sourceLessons
+      .filter((lesson) => lesson.data.lang === lang)
+      .map(({ data, content }) => ({ ...data, body: content })),
+    lang,
+  );
+  for (const [filename, search] of [
+    ['index.json', false],
+    ['search.json', true],
+  ]) {
+    const actual = JSON.parse(
+      await readFile(
+        path.join(dist, `api/v1/knowledge/${lang}/${filename}`),
+        'utf8',
+      ),
+    );
+    if (
+      JSON.stringify(actual) !==
+      JSON.stringify(knowledgeIndex(dataset, { search }))
+    )
+      errors.push(`Knowledge ${lang}/${filename} differs from source`);
+  }
+  for (const record of dataset.records) {
+    const jsonFile = await resolveFile(new URL(record.jsonUrl).pathname);
+    const markdownFile = await resolveFile(
+      new URL(record.markdownUrl).pathname,
+    );
+    if (!jsonFile || !markdownFile) {
+      errors.push(`Knowledge record missing: ${record.key}/${lang}`);
+      continue;
+    }
+    const actual = JSON.parse(await readFile(jsonFile, 'utf8'));
+    if (JSON.stringify(actual.record) !== JSON.stringify(record))
+      errors.push(`Knowledge JSON differs: ${record.key}/${lang}`);
+    const markdown = matter(await readFile(markdownFile, 'utf8'));
+    if (
+      markdown.content.trim() !== knowledgeMarkdown(record).trim() ||
+      markdown.data.key !== record.key ||
+      JSON.stringify(markdown.data.sourceIds) !==
+        JSON.stringify(record.sourceIds)
+    )
+      errors.push(`Knowledge Markdown differs: ${record.key}/${lang}`);
+    await checkReference(
+      record.url,
+      new URL(base, site),
+      `Knowledge ${record.key}/${lang}`,
+      false,
+    );
+    for (const relation of record.relations)
+      await checkReference(
+        relation.url,
+        new URL(base, site),
+        `Knowledge relation ${record.key}/${lang}`,
+        false,
+      );
   }
 }
 

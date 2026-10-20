@@ -12,8 +12,10 @@ sources:
   - title: 'Game Accessibility Guidelines: Basic'
     url: https://gameaccessibilityguidelines.com/basic/
   - title: 'Microsoft Xbox Accessibility Guideline 117: Visual distractions'
-    url: https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/117
+    url: https://learn.microsoft.com/en-us/xbox/accessibility/xbox-accessibility-guidelines/117
 ---
+
+## Prerequisites
 
 A barrier can appear before the first gameplay task: tiny menus, mandatory button holds or an audio-only cue. Check the entire player journey, including settings and recovery from mistakes.
 
@@ -23,7 +25,11 @@ State what information the player needs and what action they must perform. Find 
 
 Settings are usable only if players can reach them before the problematic scene. Changes should persist, and control hints should match remapped inputs. Developer checks find obvious errors but do not replace feedback from players with varied needs.
 
-## Example: starting a pumping station
+<span id="example-starting-a-pumping-station"></span>
+
+## Practical example
+
+### Starting a pumping station
 
 This original teaching scenario requires matching three symbols, holding a lever and noticing pump overheating. Examine barriers separately:
 

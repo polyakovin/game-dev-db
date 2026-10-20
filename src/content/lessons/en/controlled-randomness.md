@@ -15,6 +15,8 @@ sources:
     url: https://gamebalanceconcepts.wordpress.com/2010/08/04/level-5-probability-and-randomness-gone-horribly-wrong/
 ---
 
+## Prerequisites
+
 A reward with a 25% chance need not appear once every four attempts. A short session can differ considerably from the average across many runs.
 
 ## The principle
@@ -23,7 +25,11 @@ Before implementation, name the event, its probability and dependencies between 
 
 Independent rolls do not suit every design. You can limit failure streaks, but the next outcome then depends on history. That choice is not automatically fair: define whose experience and which behavior matter.
 
-## Example: expedition batteries
+<span id="example-expedition-batteries"></span>
+
+## Practical example
+
+### Expedition batteries
 
 In this teaching model, each crate independently contains a battery with probability 0.25. Across five crates, the expected battery count is `5 × 0.25 = 1.25`. The probability of finding none is `0.75^5 ≈ 23.73%`. An average above one coexists with a substantial chance of getting no batteries.
 
@@ -35,7 +41,7 @@ If a battery is required to finish the level, provide recovery from a poor outco
 
 - Testing 25% with four rolls and declaring the generator broken.
 - Applying independent-event formulas to dependent outcomes.
-- Saving only the seed while losing the order of generator calls.
+- Saving only the seed (the generator’s initial value) while losing the order of generator calls.
 
 ## Verify it
 

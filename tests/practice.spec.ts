@@ -45,14 +45,22 @@ for (const lang of ['ru', 'en'] as const) {
   }) => {
     await page.goto(`${base}/${lang}/`);
     await page.locator(`main a[href="${base}/${lang}/practice/"]`).click();
-    await expect(page.locator('[data-exercise]:visible')).toHaveCount(12);
+    await expect(page.locator('[data-exercise]:visible')).toHaveCount(
+      catalog.counts.tasks,
+    );
     await expect(
       page.locator('.sidebar a[aria-current="page"]'),
     ).toHaveAttribute('href', `${base}/${lang}/practice/`);
     await page.locator('#practice-topic').selectOption('chance');
-    await expect(page.locator('[data-exercise]:visible')).toHaveCount(2);
+    await expect(page.locator('[data-exercise]:visible')).toHaveCount(
+      catalog.tasks.filter((task) => task.topic === 'chance').length,
+    );
     await page.locator('#practice-duration').selectOption('60');
-    await expect(page.locator('[data-exercise]:visible')).toHaveCount(1);
+    await expect(page.locator('[data-exercise]:visible')).toHaveCount(
+      catalog.tasks.filter(
+        (task) => task.topic === 'chance' && task.minutes <= 60,
+      ).length,
+    );
     await page
       .locator('#practice-search')
       .fill(lang === 'ru' ? 'последних ресурсов' : 'last resources');
@@ -68,8 +76,12 @@ for (const lang of ['ru', 'en'] as const) {
     await expect(page.locator('#practice-search')).toHaveValue('');
     await expect(page.locator('#practice-topic')).toHaveValue('');
     await expect(page.locator('#practice-duration')).toHaveValue('');
-    await expect(page.locator('[data-exercise]:visible')).toHaveCount(12);
-    await expect(page.locator('[data-practice-count]')).toHaveText('12');
+    await expect(page.locator('[data-exercise]:visible')).toHaveCount(
+      catalog.counts.tasks,
+    );
+    await expect(page.locator('[data-practice-count]')).toHaveText(
+      String(catalog.counts.tasks).padStart(2, '0'),
+    );
     await expect(page.locator('#practice-search')).toBeFocused();
     await expect(page.locator('.practice-sources')).toContainText(
       catalog.provenance,
@@ -103,7 +115,7 @@ for (const lang of ['ru', 'en'] as const) {
     );
     await expect(page.locator('#two-windows')).toHaveAttribute('open', '');
     await expect(page.locator('#two-windows [data-exercise-title]')).toHaveText(
-      getPractice(other).tasks.at(-1)!.title,
+      getPractice(other).tasks.find((task) => task.id === 'two-windows')!.title,
     );
     expect(
       await page.evaluate(
@@ -125,7 +137,9 @@ test('both practice languages remain complete and operable without JavaScript', 
   const page = await context.newPage();
   for (const lang of ['ru', 'en'] as const) {
     await page.goto(`${base}/${lang}/practice/`);
-    await expect(page.locator('[data-exercise]')).toHaveCount(12);
+    await expect(page.locator('[data-exercise]')).toHaveCount(
+      getPractice(lang).counts.tasks,
+    );
     await expect(page.locator('.practice-controls')).toBeHidden();
     await page.locator('#two-windows summary').click();
     await expect(
@@ -133,7 +147,10 @@ test('both practice languages remain complete and operable without JavaScript', 
     ).toBeVisible();
     await expect(
       page.locator('#two-windows [data-exercise-reflection]'),
-    ).toHaveText(getPractice(lang).tasks.at(-1)!.reflection);
+    ).toHaveText(
+      getPractice(lang).tasks.find((task) => task.id === 'two-windows')!
+        .reflection,
+    );
     await expect(
       page.locator(
         '.practice-sources a[href="https://designgames.wordpress.com/toc/"]',
@@ -154,7 +171,7 @@ test('practice exports and discovery retain complete content, provenance and can
   const manifest = await (
     await request.get(`${base}/api/v1/manifest.json`)
   ).json();
-  expect(manifest.counts.practiceTasks).toBe(12);
+  expect(manifest.counts.practiceTasks).toBe(14);
   expect(manifest.endpoints.practice).toBe(
     'https://polyakovin.github.io/game-dev-db/api/v1/practice.json',
   );
@@ -165,7 +182,7 @@ test('practice exports and discovery retain complete content, provenance and can
   expect(data.catalogs).toHaveLength(2);
   const discovery = await (await request.get(`${base}/llms.txt`)).text();
   for (const catalog of data.catalogs) {
-    expect(catalog.tasks).toHaveLength(12);
+    expect(catalog.tasks).toHaveLength(14);
     expect(catalog.provenance).toContain('Ian Schreiber');
     expect(discovery).toContain(catalog.markdownUrl);
     const markdown = await (

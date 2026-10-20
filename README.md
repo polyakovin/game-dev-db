@@ -7,11 +7,11 @@ A bilingual, open-source knowledge base for developers building games with AI as
 ## What is here
 
 - Original lessons about game foundations, design, engineering, and AI-assisted workflows.
-- Four practical learning paths with twelve new lesson pairs: level design, balance, NPC behavior and game verification. Each connects lessons to exercises and design lenses.
+- Five practical learning paths: a first verifiable prototype, level design, balance, NPC behavior and game verification. Each connects reusable lessons to exercises, lenses and completion checks.
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
 - Bilingual mechanic references for genres, puzzles, dialogue, drawing, investigation, children and education, RPG grind, engagement, electronic devices and physical input. Includes complete discussion catalogs and the attributed Boss Fight Atlas and Game Mechanics indexes; see [coverage](docs/research/discussion-mechanics.md).
-- Twelve original game-design exercises with constraints, deliverables and checks, in Russian and English.
+- Fourteen original game-design exercises, including NPC and progression capstones, with constraints, deliverables and checks in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.
 - Static Markdown and JSON exports for AI agents and other tools.
@@ -39,6 +39,11 @@ npm run verify
 ## Read with an agent
 
 Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then fetch only the lessons needed for the task.
+
+For cross-content retrieval, start with `api/v1/knowledge/{lang}/index.json` and
+follow one record's `jsonUrl` or `markdownUrl`. Every content type uses the same
+record envelope with sections, sources and typed connections. Human readers can
+use the shared search at `{lang}/search/`. See [the common content contract](docs/knowledge-content.md).
 
 | Format                      | Endpoint relative to the site root                |
 | --------------------------- | ------------------------------------------------- |

@@ -1,0 +1,3754 @@
+{
+  "shared-family-02": {
+    "id": "family-02",
+    "title": {
+      "ru": "Поиск и обнаружение",
+      "en": "Search and discovery"
+    },
+    "example": {
+      "ru": "Найти в комнате все предметы, которые начинаются на заданный звук.",
+      "en": "Find room objects whose names begin with a specified sound."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-02-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-02-variant-1",
+            "text": {
+              "ru": "Найти предмет в сцене",
+              "en": "Find an object in a scene"
+            }
+          },
+          {
+            "id": "family-02-variant-2",
+            "text": {
+              "ru": "Найти все объекты заданного типа",
+              "en": "Find all objects of a specified type"
+            }
+          },
+          {
+            "id": "family-02-variant-3",
+            "text": {
+              "ru": "Найти отличия",
+              "en": "Find differences"
+            }
+          },
+          {
+            "id": "family-02-variant-4",
+            "text": {
+              "ru": "Найти скрытый или частично закрытый объект",
+              "en": "Find a hidden or partly obscured object"
+            }
+          },
+          {
+            "id": "family-02-variant-5",
+            "text": {
+              "ru": "Найти предмет по словесному описанию",
+              "en": "Find an object from a verbal description"
+            }
+          },
+          {
+            "id": "family-02-variant-6",
+            "text": {
+              "ru": "Найти источник звука",
+              "en": "Locate a sound source"
+            }
+          },
+          {
+            "id": "family-02-variant-7",
+            "text": {
+              "ru": "Найти объект по нескольким признакам",
+              "en": "Search by several properties"
+            }
+          },
+          {
+            "id": "family-02-variant-8",
+            "text": {
+              "ru": "Найти аномалию",
+              "en": "Find an anomaly"
+            }
+          },
+          {
+            "id": "family-02-variant-9",
+            "text": {
+              "ru": "Найти пропавший элемент",
+              "en": "Find a missing element"
+            }
+          },
+          {
+            "id": "family-02-variant-10",
+            "text": {
+              "ru": "Искать с инструментом: лупой, фонарём, сканером",
+              "en": "Search with a magnifier, flashlight or scanner"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-02-variant-1"
+  },
+  "shared-family-03": {
+    "id": "family-03",
+    "title": {
+      "ru": "Различение признаков и сигналов",
+      "en": "Distinguishing properties and signals"
+    },
+    "example": {
+      "ru": "Узнать инструмент по звуку, затем выбрать его изображение.",
+      "en": "Identify an instrument by sound and select its picture."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-03-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-03-variant-1",
+            "text": {
+              "ru": "Различать цвета и оттенки",
+              "en": "Distinguish colors and shades"
+            }
+          },
+          {
+            "id": "family-03-variant-2",
+            "text": {
+              "ru": "Различать формы и контуры",
+              "en": "Distinguish shapes and contours"
+            }
+          },
+          {
+            "id": "family-03-variant-3",
+            "text": {
+              "ru": "Различать размер и пропорции",
+              "en": "Distinguish size and proportions"
+            }
+          },
+          {
+            "id": "family-03-variant-4",
+            "text": {
+              "ru": "Различать положение и направление",
+              "en": "Distinguish position and direction"
+            }
+          },
+          {
+            "id": "family-03-variant-5",
+            "text": {
+              "ru": "Различать похожие символы",
+              "en": "Distinguish similar symbols"
+            }
+          },
+          {
+            "id": "family-03-variant-6",
+            "text": {
+              "ru": "Различать высоту и тембр звука",
+              "en": "Distinguish pitch and timbre"
+            }
+          },
+          {
+            "id": "family-03-variant-7",
+            "text": {
+              "ru": "Различать ритмы",
+              "en": "Distinguish rhythms"
+            }
+          },
+          {
+            "id": "family-03-variant-8",
+            "text": {
+              "ru": "Различать фактуры на ощупь",
+              "en": "Distinguish textures by touch"
+            }
+          },
+          {
+            "id": "family-03-variant-9",
+            "text": {
+              "ru": "Распознавать объект по силуэту или фрагменту",
+              "en": "Recognize silhouettes or fragments"
+            }
+          },
+          {
+            "id": "family-03-variant-10",
+            "text": {
+              "ru": "Узнавать объект в другом ракурсе",
+              "en": "Recognize an object from another angle"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-03-variant-1"
+  },
+  "shared-family-04": {
+    "id": "family-04",
+    "title": {
+      "ru": "Сопоставление и установление соответствий",
+      "en": "Matching and correspondence"
+    },
+    "example": {
+      "ru": "Соединить животное, его след и место обитания.",
+      "en": "Connect an animal, its tracks and its habitat."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-04-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-04-variant-1",
+            "text": {
+              "ru": "Соединить одинаковые объекты",
+              "en": "Match identical objects"
+            }
+          },
+          {
+            "id": "family-04-variant-2",
+            "text": {
+              "ru": "Соединить предмет с силуэтом",
+              "en": "Match an object to its silhouette"
+            }
+          },
+          {
+            "id": "family-04-variant-3",
+            "text": {
+              "ru": "Соединить часть с целым",
+              "en": "Match a part to a whole"
+            }
+          },
+          {
+            "id": "family-04-variant-4",
+            "text": {
+              "ru": "Соединить слово с изображением",
+              "en": "Match words to pictures"
+            }
+          },
+          {
+            "id": "family-04-variant-5",
+            "text": {
+              "ru": "Соединить звук с источником",
+              "en": "Match sounds to sources"
+            }
+          },
+          {
+            "id": "family-04-variant-6",
+            "text": {
+              "ru": "Соединить число с количеством",
+              "en": "Match numbers to quantities"
+            }
+          },
+          {
+            "id": "family-04-variant-7",
+            "text": {
+              "ru": "Соединить символ с действием",
+              "en": "Match symbols to actions"
+            }
+          },
+          {
+            "id": "family-04-variant-8",
+            "text": {
+              "ru": "Соединить объект с функцией",
+              "en": "Match objects to functions"
+            }
+          },
+          {
+            "id": "family-04-variant-9",
+            "text": {
+              "ru": "Соединить причину со следствием",
+              "en": "Match causes to effects"
+            }
+          },
+          {
+            "id": "family-04-variant-10",
+            "text": {
+              "ru": "Сопоставить разные изображения одного понятия",
+              "en": "Match representations of one concept"
+            }
+          },
+          {
+            "id": "family-04-variant-11",
+            "text": {
+              "ru": "Установить соответствие один ко многим",
+              "en": "Establish one-to-many correspondence"
+            }
+          },
+          {
+            "id": "family-04-variant-12",
+            "text": {
+              "ru": "Установить соответствие многие ко многим",
+              "en": "Establish many-to-many correspondence"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-04-variant-1"
+  },
+  "shared-family-05": {
+    "id": "family-05",
+    "title": {
+      "ru": "Сортировка и классификация",
+      "en": "Sorting and classification"
+    },
+    "example": {
+      "ru": "Разложить фигуры по цвету, затем по форме, затем по обоим признакам.",
+      "en": "Sort shapes by color, shape and then both properties."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-05-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-05-variant-1",
+            "text": {
+              "ru": "Разложить по одному признаку",
+              "en": "Sort by one property"
+            }
+          },
+          {
+            "id": "family-05-variant-2",
+            "text": {
+              "ru": "Разложить по нескольким признакам",
+              "en": "Sort by several properties"
+            }
+          },
+          {
+            "id": "family-05-variant-3",
+            "text": {
+              "ru": "Найти лишний объект",
+              "en": "Find an outlier"
+            }
+          },
+          {
+            "id": "family-05-variant-4",
+            "text": {
+              "ru": "Найти общую категорию",
+              "en": "Find a shared category"
+            }
+          },
+          {
+            "id": "family-05-variant-5",
+            "text": {
+              "ru": "Поместить объект в пересечение категорий",
+              "en": "Place objects at category intersections"
+            }
+          },
+          {
+            "id": "family-05-variant-6",
+            "text": {
+              "ru": "Построить вложенные категории",
+              "en": "Build nested categories"
+            }
+          },
+          {
+            "id": "family-05-variant-7",
+            "text": {
+              "ru": "Менять правило сортировки",
+              "en": "Change sorting rules"
+            }
+          },
+          {
+            "id": "family-05-variant-8",
+            "text": {
+              "ru": "Самостоятельно придумать правило",
+              "en": "Invent a rule"
+            }
+          },
+          {
+            "id": "family-05-variant-9",
+            "text": {
+              "ru": "Допускать несколько обоснованных классификаций",
+              "en": "Accept several justified classifications"
+            }
+          },
+          {
+            "id": "family-05-variant-10",
+            "text": {
+              "ru": "Пересортировать после изменения свойства",
+              "en": "Resort after a property changes"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-05-variant-1"
+  },
+  "shared-family-06": {
+    "id": "family-06",
+    "title": {
+      "ru": "Сравнение и упорядочивание",
+      "en": "Comparison and ordering"
+    },
+    "example": {
+      "ru": "Расставить ёмкости от самой маленькой до самой большой.",
+      "en": "Arrange containers from smallest to largest."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-06-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-06-variant-1",
+            "text": {
+              "ru": "Найти одинаковое и различное",
+              "en": "Find similarities and differences"
+            }
+          },
+          {
+            "id": "family-06-variant-2",
+            "text": {
+              "ru": "Выбрать большее или меньшее",
+              "en": "Choose larger or smaller"
+            }
+          },
+          {
+            "id": "family-06-variant-3",
+            "text": {
+              "ru": "Сравнить количества без пересчёта",
+              "en": "Compare quantities without counting"
+            }
+          },
+          {
+            "id": "family-06-variant-4",
+            "text": {
+              "ru": "Сравнить длину, массу, объём",
+              "en": "Compare length, mass and volume"
+            }
+          },
+          {
+            "id": "family-06-variant-5",
+            "text": {
+              "ru": "Выстроить по возрастанию",
+              "en": "Sort in ascending order"
+            }
+          },
+          {
+            "id": "family-06-variant-6",
+            "text": {
+              "ru": "Выстроить по убыванию",
+              "en": "Sort in descending order"
+            }
+          },
+          {
+            "id": "family-06-variant-7",
+            "text": {
+              "ru": "Найти минимум или максимум",
+              "en": "Find a minimum or maximum"
+            }
+          },
+          {
+            "id": "family-06-variant-8",
+            "text": {
+              "ru": "Найти ближайшее значение",
+              "en": "Find the nearest value"
+            }
+          },
+          {
+            "id": "family-06-variant-9",
+            "text": {
+              "ru": "Сравнить несколько критериев",
+              "en": "Compare several criteria"
+            }
+          },
+          {
+            "id": "family-06-variant-10",
+            "text": {
+              "ru": "Выбрать подходящий объект под заданный порог",
+              "en": "Select an object satisfying a threshold"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-06-variant-1"
+  },
+  "shared-family-07": {
+    "id": "family-07",
+    "title": {
+      "ru": "Запоминание и восстановление",
+      "en": "Memory and reconstruction"
+    },
+    "example": {
+      "ru": "Запомнить заказ и собрать его после того, как список исчезнет.",
+      "en": "Remember an order and assemble it after the list disappears."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-07-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-07-variant-1",
+            "text": {
+              "ru": "Открывать парные карточки",
+              "en": "Turn over matching cards"
+            }
+          },
+          {
+            "id": "family-07-variant-2",
+            "text": {
+              "ru": "Повторить последовательность",
+              "en": "Repeat a sequence"
+            }
+          },
+          {
+            "id": "family-07-variant-3",
+            "text": {
+              "ru": "Восстановить расположение объектов",
+              "en": "Restore object positions"
+            }
+          },
+          {
+            "id": "family-07-variant-4",
+            "text": {
+              "ru": "Вспомнить исчезнувший объект",
+              "en": "Recall a vanished object"
+            }
+          },
+          {
+            "id": "family-07-variant-5",
+            "text": {
+              "ru": "Вспомнить изменившийся объект",
+              "en": "Recall a changed object"
+            }
+          },
+          {
+            "id": "family-07-variant-6",
+            "text": {
+              "ru": "Повторить маршрут",
+              "en": "Repeat a route"
+            }
+          },
+          {
+            "id": "family-07-variant-7",
+            "text": {
+              "ru": "Удержать инструкцию из нескольких шагов",
+              "en": "Retain multistep instructions"
+            }
+          },
+          {
+            "id": "family-07-variant-8",
+            "text": {
+              "ru": "Вспомнить после отвлекающего задания",
+              "en": "Recall after a distracting task"
+            }
+          },
+          {
+            "id": "family-07-variant-9",
+            "text": {
+              "ru": "Воспроизвести без образца",
+              "en": "Reproduce without a model"
+            }
+          },
+          {
+            "id": "family-07-variant-10",
+            "text": {
+              "ru": "Восстановить увиденное в другой форме",
+              "en": "Reconstruct observations in another form"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-07-variant-1"
+  },
+  "shared-family-08": {
+    "id": "family-08",
+    "title": {
+      "ru": "Внимание, переключение и торможение действия",
+      "en": "Attention, switching and inhibition"
+    },
+    "example": {
+      "ru": "Нажимать на зелёных рыбок, но пропускать зелёных рыбок с полосками.",
+      "en": "Select green fish while ignoring green fish with stripes."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-08-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-08-variant-1",
+            "text": {
+              "ru": "Реагировать только на целевой сигнал",
+              "en": "Respond only to a target cue"
+            }
+          },
+          {
+            "id": "family-08-variant-2",
+            "text": {
+              "ru": "Не реагировать на запрещённый сигнал",
+              "en": "Ignore forbidden cues"
+            }
+          },
+          {
+            "id": "family-08-variant-3",
+            "text": {
+              "ru": "Остановить начатое действие по сигналу",
+              "en": "Stop an action on cue"
+            }
+          },
+          {
+            "id": "family-08-variant-4",
+            "text": {
+              "ru": "Играть в «наоборот»",
+              "en": "Play with reversed rules"
+            }
+          },
+          {
+            "id": "family-08-variant-5",
+            "text": {
+              "ru": "Следить за движущимся объектом",
+              "en": "Track a moving object"
+            }
+          },
+          {
+            "id": "family-08-variant-6",
+            "text": {
+              "ru": "Замечать редкие события",
+              "en": "Notice rare events"
+            }
+          },
+          {
+            "id": "family-08-variant-7",
+            "text": {
+              "ru": "Переключаться между правилами",
+              "en": "Switch between rules"
+            }
+          },
+          {
+            "id": "family-08-variant-8",
+            "text": {
+              "ru": "Игнорировать отвлекающие признаки",
+              "en": "Ignore distracting properties"
+            }
+          },
+          {
+            "id": "family-08-variant-9",
+            "text": {
+              "ru": "Распределять внимание между каналами",
+              "en": "Divide attention across channels"
+            }
+          },
+          {
+            "id": "family-08-variant-10",
+            "text": {
+              "ru": "Делать паузу перед выбором",
+              "en": "Pause before choosing"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-08-variant-1"
+  },
+  "shared-family-09": {
+    "id": "family-09",
+    "title": {
+      "ru": "Порядок, последовательности и процедуры",
+      "en": "Order, sequences and procedures"
+    },
+    "example": {
+      "ru": "Разложить картинки приготовления хлеба в правильном порядке.",
+      "en": "Order pictures showing how bread is made."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-09-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-09-variant-1",
+            "text": {
+              "ru": "Расставить события по времени",
+              "en": "Order events by time"
+            }
+          },
+          {
+            "id": "family-09-variant-2",
+            "text": {
+              "ru": "Восстановить инструкцию",
+              "en": "Restore instructions"
+            }
+          },
+          {
+            "id": "family-09-variant-3",
+            "text": {
+              "ru": "Собрать рецепт",
+              "en": "Assemble a recipe"
+            }
+          },
+          {
+            "id": "family-09-variant-4",
+            "text": {
+              "ru": "Упорядочить стадии жизненного цикла",
+              "en": "Order life-cycle stages"
+            }
+          },
+          {
+            "id": "family-09-variant-5",
+            "text": {
+              "ru": "Найти пропущенный шаг",
+              "en": "Find a missing step"
+            }
+          },
+          {
+            "id": "family-09-variant-6",
+            "text": {
+              "ru": "Найти нарушенный порядок",
+              "en": "Find incorrect order"
+            }
+          },
+          {
+            "id": "family-09-variant-7",
+            "text": {
+              "ru": "Добавить начало или завершение",
+              "en": "Add a beginning or ending"
+            }
+          },
+          {
+            "id": "family-09-variant-8",
+            "text": {
+              "ru": "Соблюсти зависимости между шагами",
+              "en": "Respect step dependencies"
+            }
+          },
+          {
+            "id": "family-09-variant-9",
+            "text": {
+              "ru": "Построить расписание",
+              "en": "Build a schedule"
+            }
+          },
+          {
+            "id": "family-09-variant-10",
+            "text": {
+              "ru": "Различить обязательный и необязательный шаг",
+              "en": "Distinguish required and optional steps"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-09-variant-1"
+  },
+  "shared-family-10": {
+    "id": "family-10",
+    "title": {
+      "ru": "Закономерности, аналогии и правила",
+      "en": "Patterns, analogies and rules"
+    },
+    "example": {
+      "ru": "Определить правило волшебной машины по нескольким преобразованиям.",
+      "en": "Infer a magic machine's rule from several transformations."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-10-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-10-variant-1",
+            "text": {
+              "ru": "Продолжить повторяющийся узор",
+              "en": "Continue a repeating pattern"
+            }
+          },
+          {
+            "id": "family-10-variant-2",
+            "text": {
+              "ru": "Продолжить числовой ряд",
+              "en": "Continue a number sequence"
+            }
+          },
+          {
+            "id": "family-10-variant-3",
+            "text": {
+              "ru": "Продолжить чередование действий",
+              "en": "Continue alternating actions"
+            }
+          },
+          {
+            "id": "family-10-variant-4",
+            "text": {
+              "ru": "Найти правило преобразования",
+              "en": "Infer a transformation rule"
+            }
+          },
+          {
+            "id": "family-10-variant-5",
+            "text": {
+              "ru": "Заполнить пропуск в узоре",
+              "en": "Fill a pattern gap"
+            }
+          },
+          {
+            "id": "family-10-variant-6",
+            "text": {
+              "ru": "Найти нарушение закономерности",
+              "en": "Find a pattern violation"
+            }
+          },
+          {
+            "id": "family-10-variant-7",
+            "text": {
+              "ru": "Решить аналогию",
+              "en": "Solve an analogy"
+            }
+          },
+          {
+            "id": "family-10-variant-8",
+            "text": {
+              "ru": "Достроить матрицу по двум признакам",
+              "en": "Complete a two-property matrix"
+            }
+          },
+          {
+            "id": "family-10-variant-9",
+            "text": {
+              "ru": "Вывести правило по примерам",
+              "en": "Infer rules from examples"
+            }
+          },
+          {
+            "id": "family-10-variant-10",
+            "text": {
+              "ru": "Создать собственную закономерность",
+              "en": "Create a pattern"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-10-variant-1"
+  },
+  "shared-family-13": {
+    "id": "family-13",
+    "title": {
+      "ru": "Пространственная ориентация и преобразования",
+      "en": "Spatial orientation and transformations"
+    },
+    "example": {
+      "ru": "Выбрать, как будет выглядеть башня с другой стороны.",
+      "en": "Choose how a tower looks from the other side."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-13-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-13-variant-1",
+            "text": {
+              "ru": "Различать лево и право",
+              "en": "Distinguish left and right"
+            }
+          },
+          {
+            "id": "family-13-variant-2",
+            "text": {
+              "ru": "Различать над, под, между, за",
+              "en": "Distinguish above, below, between and behind"
+            }
+          },
+          {
+            "id": "family-13-variant-3",
+            "text": {
+              "ru": "Поворачивать фигуры",
+              "en": "Rotate shapes"
+            }
+          },
+          {
+            "id": "family-13-variant-4",
+            "text": {
+              "ru": "Отражать фигуры",
+              "en": "Reflect shapes"
+            }
+          },
+          {
+            "id": "family-13-variant-5",
+            "text": {
+              "ru": "Менять масштаб",
+              "en": "Change scale"
+            }
+          },
+          {
+            "id": "family-13-variant-6",
+            "text": {
+              "ru": "Достраивать симметрию",
+              "en": "Complete symmetry"
+            }
+          },
+          {
+            "id": "family-13-variant-7",
+            "text": {
+              "ru": "Соотносить вид сверху и сбоку",
+              "en": "Relate top and side views"
+            }
+          },
+          {
+            "id": "family-13-variant-8",
+            "text": {
+              "ru": "Читать координаты",
+              "en": "Read coordinates"
+            }
+          },
+          {
+            "id": "family-13-variant-9",
+            "text": {
+              "ru": "Соединять развёртку с объёмным телом",
+              "en": "Match nets to solids"
+            }
+          },
+          {
+            "id": "family-13-variant-10",
+            "text": {
+              "ru": "Мысленно складывать и разворачивать",
+              "en": "Mentally fold and unfold"
+            }
+          },
+          {
+            "id": "family-13-variant-11",
+            "text": {
+              "ru": "Ориентироваться с точки зрения другого персонажа",
+              "en": "Use another character's viewpoint"
+            }
+          },
+          {
+            "id": "family-13-variant-12",
+            "text": {
+              "ru": "Переводить между планом и пространством",
+              "en": "Translate between plans and spaces"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-13-variant-1"
+  },
+  "shared-family-14": {
+    "id": "family-14",
+    "title": {
+      "ru": "Перестановка и пространственные головоломки",
+      "en": "Rearrangement and spatial puzzles"
+    },
+    "example": {
+      "ru": "Передвинуть блоки, чтобы освободить путь машине.",
+      "en": "Move blocks to clear a vehicle's path."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-14-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-14-variant-1",
+            "text": {
+              "ru": "Собирать пазл",
+              "en": "Assemble jigsaws"
+            }
+          },
+          {
+            "id": "family-14-variant-2",
+            "text": {
+              "ru": "Складывать танграм",
+              "en": "Solve tangrams"
+            }
+          },
+          {
+            "id": "family-14-variant-3",
+            "text": {
+              "ru": "Передвигать плитки в свободную клетку",
+              "en": "Slide tiles into an empty space"
+            }
+          },
+          {
+            "id": "family-14-variant-4",
+            "text": {
+              "ru": "Толкать ящики",
+              "en": "Push boxes"
+            }
+          },
+          {
+            "id": "family-14-variant-5",
+            "text": {
+              "ru": "Разблокировать путь",
+              "en": "Unblock a path"
+            }
+          },
+          {
+            "id": "family-14-variant-6",
+            "text": {
+              "ru": "Переставлять элементы местами",
+              "en": "Swap elements"
+            }
+          },
+          {
+            "id": "family-14-variant-7",
+            "text": {
+              "ru": "Укладывать фигуры в ограниченную область",
+              "en": "Pack shapes into limited space"
+            }
+          },
+          {
+            "id": "family-14-variant-8",
+            "text": {
+              "ru": "Выходить из лабиринта",
+              "en": "Escape a maze"
+            }
+          },
+          {
+            "id": "family-14-variant-9",
+            "text": {
+              "ru": "Распутывать линии",
+              "en": "Untangle lines"
+            }
+          },
+          {
+            "id": "family-14-variant-10",
+            "text": {
+              "ru": "Воспроизводить объёмную композицию",
+              "en": "Reproduce a three-dimensional arrangement"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-14-variant-1"
+  },
+  "shared-family-15": {
+    "id": "family-15",
+    "title": {
+      "ru": "Составление целого и разбиение на части",
+      "en": "Wholes and parts"
+    },
+    "example": {
+      "ru": "Собрать одну площадь из разных наборов геометрических деталей.",
+      "en": "Build one area using different sets of geometric pieces."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-15-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-15-variant-1",
+            "text": {
+              "ru": "Собирать целое из фрагментов",
+              "en": "Assemble fragments into a whole"
+            }
+          },
+          {
+            "id": "family-15-variant-2",
+            "text": {
+              "ru": "Делить целое на равные части",
+              "en": "Divide into equal parts"
+            }
+          },
+          {
+            "id": "family-15-variant-3",
+            "text": {
+              "ru": "Делить на неравные части по условию",
+              "en": "Divide unequally under a condition"
+            }
+          },
+          {
+            "id": "family-15-variant-4",
+            "text": {
+              "ru": "Находить недостающую часть",
+              "en": "Find a missing part"
+            }
+          },
+          {
+            "id": "family-15-variant-5",
+            "text": {
+              "ru": "Собирать целое несколькими способами",
+              "en": "Assemble in several ways"
+            }
+          },
+          {
+            "id": "family-15-variant-6",
+            "text": {
+              "ru": "Разбирать сложный объект на простые",
+              "en": "Decompose complex objects"
+            }
+          },
+          {
+            "id": "family-15-variant-7",
+            "text": {
+              "ru": "Перекомпоновывать части с сохранением количества",
+              "en": "Rearrange while preserving quantity"
+            }
+          },
+          {
+            "id": "family-15-variant-8",
+            "text": {
+              "ru": "Соотносить деталь и уровень системы",
+              "en": "Relate parts to system levels"
+            }
+          },
+          {
+            "id": "family-15-variant-9",
+            "text": {
+              "ru": "Находить границы частей",
+              "en": "Find part boundaries"
+            }
+          },
+          {
+            "id": "family-15-variant-10",
+            "text": {
+              "ru": "Проверять, достаточно ли деталей",
+              "en": "Check whether enough pieces exist"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-15-variant-1"
+  },
+  "shared-family-22": {
+    "id": "family-22",
+    "title": {
+      "ru": "Причины, последствия и прогноз",
+      "en": "Causes, consequences and prediction"
+    },
+    "example": {
+      "ru": "Предсказать, какой участок сада останется без воды после закрытия клапана.",
+      "en": "Predict which garden area loses water after a valve closes."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-22-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-22-variant-1",
+            "text": {
+              "ru": "Предсказать результат действия",
+              "en": "Predict an action's result"
+            }
+          },
+          {
+            "id": "family-22-variant-2",
+            "text": {
+              "ru": "Выбрать действие для нужного результата",
+              "en": "Choose an action for an outcome"
+            }
+          },
+          {
+            "id": "family-22-variant-3",
+            "text": {
+              "ru": "Восстановить причину по последствиям",
+              "en": "Infer causes from effects"
+            }
+          },
+          {
+            "id": "family-22-variant-4",
+            "text": {
+              "ru": "Построить цепочку причин",
+              "en": "Build causal chains"
+            }
+          },
+          {
+            "id": "family-22-variant-5",
+            "text": {
+              "ru": "Найти несколько причин",
+              "en": "Identify multiple causes"
+            }
+          },
+          {
+            "id": "family-22-variant-6",
+            "text": {
+              "ru": "Учесть отложенное последствие",
+              "en": "Account for delayed effects"
+            }
+          },
+          {
+            "id": "family-22-variant-7",
+            "text": {
+              "ru": "Проверить альтернативный сценарий",
+              "en": "Test alternative scenarios"
+            }
+          },
+          {
+            "id": "family-22-variant-8",
+            "text": {
+              "ru": "Различить совпадение и причинную связь",
+              "en": "Distinguish coincidence from causation"
+            }
+          },
+          {
+            "id": "family-22-variant-9",
+            "text": {
+              "ru": "Найти побочный эффект",
+              "en": "Find side effects"
+            }
+          },
+          {
+            "id": "family-22-variant-10",
+            "text": {
+              "ru": "Найти обратную связь в системе",
+              "en": "Find feedback in a system"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-22-variant-1"
+  },
+  "shared-family-25": {
+    "id": "family-25",
+    "title": {
+      "ru": "Ресурсы, обмен и экономика",
+      "en": "Resources, exchange and economics"
+    },
+    "example": {
+      "ru": "Купить ингредиенты для обеда, уложившись в бюджет.",
+      "en": "Buy meal ingredients within a budget."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-25-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-25-variant-1",
+            "text": {
+              "ru": "Собирать ресурсы",
+              "en": "Collect resources"
+            }
+          },
+          {
+            "id": "family-25-variant-2",
+            "text": {
+              "ru": "Переносить и доставлять предметы",
+              "en": "Transport and deliver items"
+            }
+          },
+          {
+            "id": "family-25-variant-3",
+            "text": {
+              "ru": "Распределять ограниченный запас",
+              "en": "Allocate limited stock"
+            }
+          },
+          {
+            "id": "family-25-variant-4",
+            "text": {
+              "ru": "Покупать и продавать",
+              "en": "Buy and sell"
+            }
+          },
+          {
+            "id": "family-25-variant-5",
+            "text": {
+              "ru": "Считать стоимость и сдачу",
+              "en": "Calculate prices and change"
+            }
+          },
+          {
+            "id": "family-25-variant-6",
+            "text": {
+              "ru": "Обменивать предметы",
+              "en": "Exchange items"
+            }
+          },
+          {
+            "id": "family-25-variant-7",
+            "text": {
+              "ru": "Составлять бюджет",
+              "en": "Build a budget"
+            }
+          },
+          {
+            "id": "family-25-variant-8",
+            "text": {
+              "ru": "Копить для цели",
+              "en": "Save toward a goal"
+            }
+          },
+          {
+            "id": "family-25-variant-9",
+            "text": {
+              "ru": "Изготавливать по рецепту",
+              "en": "Craft from recipes"
+            }
+          },
+          {
+            "id": "family-25-variant-10",
+            "text": {
+              "ru": "Учитывать стоимость упущенной возможности",
+              "en": "Account for opportunity cost"
+            }
+          },
+          {
+            "id": "family-25-variant-11",
+            "text": {
+              "ru": "Планировать запасы",
+              "en": "Plan supplies"
+            }
+          },
+          {
+            "id": "family-25-variant-12",
+            "text": {
+              "ru": "Распределять ресурсы справедливо",
+              "en": "Allocate resources fairly"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-25-variant-1"
+  },
+  "shared-family-27": {
+    "id": "family-27",
+    "title": {
+      "ru": "Навигация и исследование пространства",
+      "en": "Navigation and spatial exploration"
+    },
+    "example": {
+      "ru": "Найти музей по плану города, соблюдая правила перехода улиц.",
+      "en": "Find a museum using a city plan and street-crossing rules."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-27-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-27-variant-1",
+            "text": {
+              "ru": "Идти к цели по указателям",
+              "en": "Follow signs to a goal"
+            }
+          },
+          {
+            "id": "family-27-variant-2",
+            "text": {
+              "ru": "Следовать карте",
+              "en": "Follow a map"
+            }
+          },
+          {
+            "id": "family-27-variant-3",
+            "text": {
+              "ru": "Строить карту во время движения",
+              "en": "Map while moving"
+            }
+          },
+          {
+            "id": "family-27-variant-4",
+            "text": {
+              "ru": "Исследовать неизвестные участки",
+              "en": "Explore unknown areas"
+            }
+          },
+          {
+            "id": "family-27-variant-5",
+            "text": {
+              "ru": "Выбирать развилки",
+              "en": "Choose junctions"
+            }
+          },
+          {
+            "id": "family-27-variant-6",
+            "text": {
+              "ru": "Использовать ориентиры",
+              "en": "Use landmarks"
+            }
+          },
+          {
+            "id": "family-27-variant-7",
+            "text": {
+              "ru": "Искать краткий или безопасный путь",
+              "en": "Find short or safe routes"
+            }
+          },
+          {
+            "id": "family-27-variant-8",
+            "text": {
+              "ru": "Возвращаться по собственному маршруту",
+              "en": "Retrace one's own route"
+            }
+          },
+          {
+            "id": "family-27-variant-9",
+            "text": {
+              "ru": "Открывать проходы инструментами",
+              "en": "Open passages with tools"
+            }
+          },
+          {
+            "id": "family-27-variant-10",
+            "text": {
+              "ru": "Ориентироваться по компасу",
+              "en": "Use a compass"
+            }
+          },
+          {
+            "id": "family-27-variant-11",
+            "text": {
+              "ru": "Находить объекты на местности",
+              "en": "Locate objects outdoors"
+            }
+          },
+          {
+            "id": "family-27-variant-12",
+            "text": {
+              "ru": "Управлять транспортом по правилам",
+              "en": "Operate vehicles under rules"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-27-variant-1"
+  },
+  "shared-family-28": {
+    "id": "family-28",
+    "title": {
+      "ru": "Физические и механические головоломки",
+      "en": "Physical and mechanical puzzles"
+    },
+    "example": {
+      "ru": "Настроить зеркала так, чтобы луч попал на приёмник.",
+      "en": "Adjust mirrors to direct a beam onto a receiver."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-28-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-28-variant-1",
+            "text": {
+              "ru": "Направлять поток воды",
+              "en": "Direct water flows"
+            }
+          },
+          {
+            "id": "family-28-variant-2",
+            "text": {
+              "ru": "Проводить свет через зеркала",
+              "en": "Route light through mirrors"
+            }
+          },
+          {
+            "id": "family-28-variant-3",
+            "text": {
+              "ru": "Соединять электрическую цепь",
+              "en": "Connect electrical circuits"
+            }
+          },
+          {
+            "id": "family-28-variant-4",
+            "text": {
+              "ru": "Использовать рычаги и блоки",
+              "en": "Use levers and pulleys"
+            }
+          },
+          {
+            "id": "family-28-variant-5",
+            "text": {
+              "ru": "Уравновешивать конструкцию",
+              "en": "Balance structures"
+            }
+          },
+          {
+            "id": "family-28-variant-6",
+            "text": {
+              "ru": "Управлять шестерёнками",
+              "en": "Control gears"
+            }
+          },
+          {
+            "id": "family-28-variant-7",
+            "text": {
+              "ru": "Менять трение или наклон",
+              "en": "Change friction or slope"
+            }
+          },
+          {
+            "id": "family-28-variant-8",
+            "text": {
+              "ru": "Запускать цепную реакцию",
+              "en": "Trigger chain reactions"
+            }
+          },
+          {
+            "id": "family-28-variant-9",
+            "text": {
+              "ru": "Настраивать траекторию",
+              "en": "Adjust trajectories"
+            }
+          },
+          {
+            "id": "family-28-variant-10",
+            "text": {
+              "ru": "Использовать магнитные взаимодействия",
+              "en": "Use magnetic interactions"
+            }
+          },
+          {
+            "id": "family-28-variant-11",
+            "text": {
+              "ru": "Открывать механизм комбинацией действий",
+              "en": "Open mechanisms through action combinations"
+            }
+          },
+          {
+            "id": "family-28-variant-12",
+            "text": {
+              "ru": "Переключать режимы устройства",
+              "en": "Switch device modes"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-28-variant-1"
+  },
+  "shared-family-29": {
+    "id": "family-29",
+    "title": {
+      "ru": "Конструирование и инженерное проектирование",
+      "en": "Construction and engineering design"
+    },
+    "example": {
+      "ru": "Построить мост из ограниченного числа деталей и проверить его нагрузкой.",
+      "en": "Build a bridge with limited parts and load-test it."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-29-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-29-variant-1",
+            "text": {
+              "ru": "Строить по образцу",
+              "en": "Build from a model"
+            }
+          },
+          {
+            "id": "family-29-variant-2",
+            "text": {
+              "ru": "Строить по чертежу",
+              "en": "Build from a plan"
+            }
+          },
+          {
+            "id": "family-29-variant-3",
+            "text": {
+              "ru": "Строить по функциональному условию",
+              "en": "Build to functional requirements"
+            }
+          },
+          {
+            "id": "family-29-variant-4",
+            "text": {
+              "ru": "Выбирать материалы",
+              "en": "Choose materials"
+            }
+          },
+          {
+            "id": "family-29-variant-5",
+            "text": {
+              "ru": "Укреплять конструкцию",
+              "en": "Reinforce structures"
+            }
+          },
+          {
+            "id": "family-29-variant-6",
+            "text": {
+              "ru": "Соединять модули",
+              "en": "Connect modules"
+            }
+          },
+          {
+            "id": "family-29-variant-7",
+            "text": {
+              "ru": "Испытывать нагрузкой",
+              "en": "Test under load"
+            }
+          },
+          {
+            "id": "family-29-variant-8",
+            "text": {
+              "ru": "Улучшать прототип",
+              "en": "Improve prototypes"
+            }
+          },
+          {
+            "id": "family-29-variant-9",
+            "text": {
+              "ru": "Строить с лимитом деталей",
+              "en": "Build with limited parts"
+            }
+          },
+          {
+            "id": "family-29-variant-10",
+            "text": {
+              "ru": "Сравнивать проекты",
+              "en": "Compare designs"
+            }
+          },
+          {
+            "id": "family-29-variant-11",
+            "text": {
+              "ru": "Разбирать и использовать детали повторно",
+              "en": "Disassemble and reuse parts"
+            }
+          },
+          {
+            "id": "family-29-variant-12",
+            "text": {
+              "ru": "Проектировать для заданного пользователя",
+              "en": "Design for a specified user"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-29-variant-1"
+  },
+  "shared-family-32": {
+    "id": "family-32",
+    "title": {
+      "ru": "Точное управление и мелкие движения",
+      "en": "Precise control and small movements"
+    },
+    "example": {
+      "ru": "Провести карандашом по маршруту, не выходя за границы.",
+      "en": "Guide a pencil along a path without crossing its boundaries."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-32-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-32-variant-1",
+            "text": {
+              "ru": "Попасть в цель касанием",
+              "en": "Touch a target accurately"
+            }
+          },
+          {
+            "id": "family-32-variant-2",
+            "text": {
+              "ru": "Перетащить в нужную область",
+              "en": "Drag into a target area"
+            }
+          },
+          {
+            "id": "family-32-variant-3",
+            "text": {
+              "ru": "Вставить деталь в паз",
+              "en": "Fit parts into slots"
+            }
+          },
+          {
+            "id": "family-32-variant-4",
+            "text": {
+              "ru": "Вести объект по дорожке",
+              "en": "Guide objects along paths"
+            }
+          },
+          {
+            "id": "family-32-variant-5",
+            "text": {
+              "ru": "Обвести контур",
+              "en": "Trace contours"
+            }
+          },
+          {
+            "id": "family-32-variant-6",
+            "text": {
+              "ru": "Повернуть до нужного положения",
+              "en": "Rotate into position"
+            }
+          },
+          {
+            "id": "family-32-variant-7",
+            "text": {
+              "ru": "Управлять силой или длительностью нажатия",
+              "en": "Control press force or duration"
+            }
+          },
+          {
+            "id": "family-32-variant-8",
+            "text": {
+              "ru": "Ловить движущиеся объекты",
+              "en": "Catch moving objects"
+            }
+          },
+          {
+            "id": "family-32-variant-9",
+            "text": {
+              "ru": "Согласовать два действия",
+              "en": "Coordinate two actions"
+            }
+          },
+          {
+            "id": "family-32-variant-10",
+            "text": {
+              "ru": "Соблюдать порядок штрихов",
+              "en": "Follow stroke order"
+            }
+          },
+          {
+            "id": "family-32-variant-11",
+            "text": {
+              "ru": "Нанизывать, застёгивать, складывать",
+              "en": "Thread, fasten and fold"
+            }
+          },
+          {
+            "id": "family-32-variant-12",
+            "text": {
+              "ru": "Вырезать или сгибать по линии",
+              "en": "Cut or fold along lines"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-32-variant-1"
+  },
+  "shared-family-33": {
+    "id": "family-33",
+    "title": {
+      "ru": "Ритм, темп и музыкальные действия",
+      "en": "Rhythm, tempo and musical actions"
+    },
+    "example": {
+      "ru": "Повторить ритм персонажа хлопками, затем придумать ответный.",
+      "en": "Clap a character's rhythm and invent a response."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-33-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-33-variant-1",
+            "text": {
+              "ru": "Повторить ритм",
+              "en": "Repeat a rhythm"
+            }
+          },
+          {
+            "id": "family-33-variant-2",
+            "text": {
+              "ru": "Попасть действием в долю",
+              "en": "Act on a beat"
+            }
+          },
+          {
+            "id": "family-33-variant-3",
+            "text": {
+              "ru": "Дополнить ритмический рисунок",
+              "en": "Complete a rhythmic pattern"
+            }
+          },
+          {
+            "id": "family-33-variant-4",
+            "text": {
+              "ru": "Различить длительности",
+              "en": "Distinguish durations"
+            }
+          },
+          {
+            "id": "family-33-variant-5",
+            "text": {
+              "ru": "Изменить темп",
+              "en": "Change tempo"
+            }
+          },
+          {
+            "id": "family-33-variant-6",
+            "text": {
+              "ru": "Синхронизировать движения",
+              "en": "Synchronize movements"
+            }
+          },
+          {
+            "id": "family-33-variant-7",
+            "text": {
+              "ru": "Повторить мелодию",
+              "en": "Repeat a melody"
+            }
+          },
+          {
+            "id": "family-33-variant-8",
+            "text": {
+              "ru": "Различить высоту звуков",
+              "en": "Distinguish pitches"
+            }
+          },
+          {
+            "id": "family-33-variant-9",
+            "text": {
+              "ru": "Соединить нотную запись и звучание",
+              "en": "Match notation to sound"
+            }
+          },
+          {
+            "id": "family-33-variant-10",
+            "text": {
+              "ru": "Собрать аккомпанемент",
+              "en": "Assemble accompaniment"
+            }
+          },
+          {
+            "id": "family-33-variant-11",
+            "text": {
+              "ru": "Создать ритмическую композицию",
+              "en": "Create rhythmic compositions"
+            }
+          },
+          {
+            "id": "family-33-variant-12",
+            "text": {
+              "ru": "Согласовать партии в ансамбле",
+              "en": "Coordinate ensemble parts"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-33-variant-1"
+  },
+  "shared-family-34": {
+    "id": "family-34",
+    "title": {
+      "ru": "Движение всем телом",
+      "en": "Whole-body movement"
+    },
+    "example": {
+      "ru": "Показать телом угол, который соответствует заданной картинке.",
+      "en": "Represent an angle from a picture with the body."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-34-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-34-variant-1",
+            "text": {
+              "ru": "Повторить позу",
+              "en": "Repeat a pose"
+            }
+          },
+          {
+            "id": "family-34-variant-2",
+            "text": {
+              "ru": "Повторить движение",
+              "en": "Repeat a movement"
+            }
+          },
+          {
+            "id": "family-34-variant-3",
+            "text": {
+              "ru": "Выполнить последовательность движений",
+              "en": "Perform movement sequences"
+            }
+          },
+          {
+            "id": "family-34-variant-4",
+            "text": {
+              "ru": "Переместиться в обозначенную зону",
+              "en": "Move to a marked zone"
+            }
+          },
+          {
+            "id": "family-34-variant-5",
+            "text": {
+              "ru": "Сохранять равновесие",
+              "en": "Maintain balance"
+            }
+          },
+          {
+            "id": "family-34-variant-6",
+            "text": {
+              "ru": "Остановиться по сигналу",
+              "en": "Stop on cue"
+            }
+          },
+          {
+            "id": "family-34-variant-7",
+            "text": {
+              "ru": "Показать понятие движением",
+              "en": "Express concepts through movement"
+            }
+          },
+          {
+            "id": "family-34-variant-8",
+            "text": {
+              "ru": "Согласовать движения с партнёром",
+              "en": "Coordinate with a partner"
+            }
+          },
+          {
+            "id": "family-34-variant-9",
+            "text": {
+              "ru": "Проходить полосу по правилам",
+              "en": "Follow rules through an obstacle course"
+            }
+          },
+          {
+            "id": "family-34-variant-10",
+            "text": {
+              "ru": "Бросать в цель",
+              "en": "Throw at targets"
+            }
+          },
+          {
+            "id": "family-34-variant-11",
+            "text": {
+              "ru": "Изображать форму или величину телом",
+              "en": "Represent shape or magnitude with the body"
+            }
+          },
+          {
+            "id": "family-34-variant-12",
+            "text": {
+              "ru": "Переключать движение при смене правила",
+              "en": "Switch movement when rules change"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-34-variant-1"
+  },
+  "shared-family-35": {
+    "id": "family-35",
+    "title": {
+      "ru": "Предметные и смешанные взаимодействия",
+      "en": "Physical and mixed interactions"
+    },
+    "example": {
+      "ru": "Построить реальную башню и сопоставить её с планом в приложении.",
+      "en": "Build a real tower and compare it with an app plan."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-35-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-35-variant-1",
+            "text": {
+              "ru": "Играть физическими карточками",
+              "en": "Play with physical cards"
+            }
+          },
+          {
+            "id": "family-35-variant-2",
+            "text": {
+              "ru": "Строить из реальных кубиков",
+              "en": "Build with real blocks"
+            }
+          },
+          {
+            "id": "family-35-variant-3",
+            "text": {
+              "ru": "Считать жетоны и фишки",
+              "en": "Count tokens and pieces"
+            }
+          },
+          {
+            "id": "family-35-variant-4",
+            "text": {
+              "ru": "Пользоваться тактильными материалами",
+              "en": "Use tactile materials"
+            }
+          },
+          {
+            "id": "family-35-variant-5",
+            "text": {
+              "ru": "Управлять физическим роботом",
+              "en": "Control physical robots"
+            }
+          },
+          {
+            "id": "family-35-variant-6",
+            "text": {
+              "ru": "Связывать метку предмета с цифровой сценой",
+              "en": "Link object tags to digital scenes"
+            }
+          },
+          {
+            "id": "family-35-variant-7",
+            "text": {
+              "ru": "Выполнять задание вне экрана",
+              "en": "Complete off-screen tasks"
+            }
+          },
+          {
+            "id": "family-35-variant-8",
+            "text": {
+              "ru": "Фотографировать найденные объекты",
+              "en": "Photograph found objects"
+            }
+          },
+          {
+            "id": "family-35-variant-9",
+            "text": {
+              "ru": "Использовать дополненную реальность",
+              "en": "Use augmented reality"
+            }
+          },
+          {
+            "id": "family-35-variant-10",
+            "text": {
+              "ru": "Соединять настольное поле и приложение",
+              "en": "Combine boards and apps"
+            }
+          },
+          {
+            "id": "family-35-variant-11",
+            "text": {
+              "ru": "Использовать реальные измерительные приборы",
+              "en": "Use real measuring tools"
+            }
+          },
+          {
+            "id": "family-35-variant-12",
+            "text": {
+              "ru": "Менять физический объект и наблюдать цифровой результат",
+              "en": "Change physical objects and observe digital results"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-35-variant-1"
+  },
+  "shared-family-44": {
+    "id": "family-44",
+    "title": {
+      "ru": "Сюжет, роли и решения персонажа",
+      "en": "Story, roles and character decisions"
+    },
+    "example": {
+      "ru": "В роли смотрителя парка разобраться, почему животным не хватает воды.",
+      "en": "Act as a park ranger investigating the animals' water shortage."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-44-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-44-variant-1",
+            "text": {
+              "ru": "Выбирать реплики",
+              "en": "Choose dialogue"
+            }
+          },
+          {
+            "id": "family-44-variant-2",
+            "text": {
+              "ru": "Выбирать поступок",
+              "en": "Choose actions"
+            }
+          },
+          {
+            "id": "family-44-variant-3",
+            "text": {
+              "ru": "Выполнять роль с обязанностями",
+              "en": "Fulfill role duties"
+            }
+          },
+          {
+            "id": "family-44-variant-4",
+            "text": {
+              "ru": "Расследовать историю",
+              "en": "Investigate stories"
+            }
+          },
+          {
+            "id": "family-44-variant-5",
+            "text": {
+              "ru": "Восстанавливать мотивы персонажа",
+              "en": "Reconstruct character motives"
+            }
+          },
+          {
+            "id": "family-44-variant-6",
+            "text": {
+              "ru": "Менять точку зрения",
+              "en": "Change viewpoints"
+            }
+          },
+          {
+            "id": "family-44-variant-7",
+            "text": {
+              "ru": "Видеть последствия решений",
+              "en": "Observe decision consequences"
+            }
+          },
+          {
+            "id": "family-44-variant-8",
+            "text": {
+              "ru": "Проигрывать альтернативный эпизод",
+              "en": "Play alternative episodes"
+            }
+          },
+          {
+            "id": "family-44-variant-9",
+            "text": {
+              "ru": "Исполнять профессиональную роль",
+              "en": "Perform professional roles"
+            }
+          },
+          {
+            "id": "family-44-variant-10",
+            "text": {
+              "ru": "Вести историю через задания",
+              "en": "Advance stories through tasks"
+            }
+          },
+          {
+            "id": "family-44-variant-11",
+            "text": {
+              "ru": "Решать дилемму",
+              "en": "Resolve dilemmas"
+            }
+          },
+          {
+            "id": "family-44-variant-12",
+            "text": {
+              "ru": "Согласовывать действие с ролью и контекстом",
+              "en": "Match actions to role and context"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-44-variant-1"
+  },
+  "shared-family-45": {
+    "id": "family-45",
+    "title": {
+      "ru": "Эмоции, отношения и социальная перспектива",
+      "en": "Emotions, relationships and social perspective"
+    },
+    "example": {
+      "ru": "Помочь двум персонажам договориться об общей игрушке.",
+      "en": "Help two characters agree on sharing a toy."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-45-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-45-variant-1",
+            "text": {
+              "ru": "Распознавать эмоцию по нескольким признакам",
+              "en": "Recognize emotions through several cues"
+            }
+          },
+          {
+            "id": "family-45-variant-2",
+            "text": {
+              "ru": "Связывать эмоцию и ситуацию",
+              "en": "Relate emotions to situations"
+            }
+          },
+          {
+            "id": "family-45-variant-3",
+            "text": {
+              "ru": "Различать переживания разных персонажей",
+              "en": "Distinguish characters' experiences"
+            }
+          },
+          {
+            "id": "family-45-variant-4",
+            "text": {
+              "ru": "Учитывать чужую информацию",
+              "en": "Account for others' information"
+            }
+          },
+          {
+            "id": "family-45-variant-5",
+            "text": {
+              "ru": "Подбирать способ попросить помощь",
+              "en": "Choose how to request help"
+            }
+          },
+          {
+            "id": "family-45-variant-6",
+            "text": {
+              "ru": "Выбирать способ разрешить конфликт",
+              "en": "Choose conflict-resolution methods"
+            }
+          },
+          {
+            "id": "family-45-variant-7",
+            "text": {
+              "ru": "Делиться и договариваться",
+              "en": "Share and negotiate"
+            }
+          },
+          {
+            "id": "family-45-variant-8",
+            "text": {
+              "ru": "Устанавливать личную границу",
+              "en": "Set personal boundaries"
+            }
+          },
+          {
+            "id": "family-45-variant-9",
+            "text": {
+              "ru": "Распознавать недопонимание",
+              "en": "Recognize misunderstandings"
+            }
+          },
+          {
+            "id": "family-45-variant-10",
+            "text": {
+              "ru": "Сравнивать несколько допустимых реакций",
+              "en": "Compare acceptable reactions"
+            }
+          },
+          {
+            "id": "family-45-variant-11",
+            "text": {
+              "ru": "Называть своё состояние",
+              "en": "Name one's own state"
+            }
+          },
+          {
+            "id": "family-45-variant-12",
+            "text": {
+              "ru": "Выбирать способ сделать паузу",
+              "en": "Choose how to pause"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-45-variant-1"
+  },
+  "shared-family-46": {
+    "id": "family-46",
+    "title": {
+      "ru": "Кооперация и распределённая задача",
+      "en": "Cooperation and distributed tasks"
+    },
+    "example": {
+      "ru": "У одного игрока схема, у другого детали; конструкцию можно собрать только через объяснение.",
+      "en": "One player has the plan and another the parts, requiring explanation to build."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-46-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-46-variant-1",
+            "text": {
+              "ru": "Решать общую задачу",
+              "en": "Solve shared tasks"
+            }
+          },
+          {
+            "id": "family-46-variant-2",
+            "text": {
+              "ru": "Делить роли",
+              "en": "Divide roles"
+            }
+          },
+          {
+            "id": "family-46-variant-3",
+            "text": {
+              "ru": "Передавать предметы или сведения",
+              "en": "Transfer items or information"
+            }
+          },
+          {
+            "id": "family-46-variant-4",
+            "text": {
+              "ru": "Иметь разные части информации",
+              "en": "Hold complementary information"
+            }
+          },
+          {
+            "id": "family-46-variant-5",
+            "text": {
+              "ru": "Совмещать разные способности",
+              "en": "Combine abilities"
+            }
+          },
+          {
+            "id": "family-46-variant-6",
+            "text": {
+              "ru": "Действовать по очереди",
+              "en": "Take turns"
+            }
+          },
+          {
+            "id": "family-46-variant-7",
+            "text": {
+              "ru": "Действовать синхронно",
+              "en": "Act synchronously"
+            }
+          },
+          {
+            "id": "family-46-variant-8",
+            "text": {
+              "ru": "Согласовывать общий план",
+              "en": "Agree on plans"
+            }
+          },
+          {
+            "id": "family-46-variant-9",
+            "text": {
+              "ru": "Проверять решение партнёра",
+              "en": "Check a partner's solution"
+            }
+          },
+          {
+            "id": "family-46-variant-10",
+            "text": {
+              "ru": "Менять роли",
+              "en": "Switch roles"
+            }
+          },
+          {
+            "id": "family-46-variant-11",
+            "text": {
+              "ru": "Строить общий продукт",
+              "en": "Build shared products"
+            }
+          },
+          {
+            "id": "family-46-variant-12",
+            "text": {
+              "ru": "Играть вместе с взрослым",
+              "en": "Play with an adult"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-46-variant-1"
+  },
+  "shared-family-47": {
+    "id": "family-47",
+    "title": {
+      "ru": "Соревнование, переговоры и взаимный выбор",
+      "en": "Competition, negotiation and mutual choice"
+    },
+    "example": {
+      "ru": "Обменяться карточками, чтобы каждый собрал нужный набор.",
+      "en": "Trade cards so everyone completes a required set."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-47-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-47-variant-1",
+            "text": {
+              "ru": "Соревноваться в решении",
+              "en": "Compete in solving"
+            }
+          },
+          {
+            "id": "family-47-variant-2",
+            "text": {
+              "ru": "Соревноваться с собственным результатом",
+              "en": "Compete with one's previous result"
+            }
+          },
+          {
+            "id": "family-47-variant-3",
+            "text": {
+              "ru": "Играть команда против команды",
+              "en": "Play team against team"
+            }
+          },
+          {
+            "id": "family-47-variant-4",
+            "text": {
+              "ru": "Выбирать действия одновременно",
+              "en": "Choose simultaneously"
+            }
+          },
+          {
+            "id": "family-47-variant-5",
+            "text": {
+              "ru": "Предугадывать решение соперника",
+              "en": "Anticipate opponents"
+            }
+          },
+          {
+            "id": "family-47-variant-6",
+            "text": {
+              "ru": "Обмениваться предметами по договорённости",
+              "en": "Exchange by agreement"
+            }
+          },
+          {
+            "id": "family-47-variant-7",
+            "text": {
+              "ru": "Делить общий ресурс",
+              "en": "Divide shared resources"
+            }
+          },
+          {
+            "id": "family-47-variant-8",
+            "text": {
+              "ru": "Участвовать в простом аукционе",
+              "en": "Participate in simple auctions"
+            }
+          },
+          {
+            "id": "family-47-variant-9",
+            "text": {
+              "ru": "Голосовать за общий вариант",
+              "en": "Vote on shared choices"
+            }
+          },
+          {
+            "id": "family-47-variant-10",
+            "text": {
+              "ru": "Выбирать кооперацию или личную выгоду",
+              "en": "Choose cooperation or personal benefit"
+            }
+          },
+          {
+            "id": "family-47-variant-11",
+            "text": {
+              "ru": "Согласовывать правила",
+              "en": "Agree on rules"
+            }
+          },
+          {
+            "id": "family-47-variant-12",
+            "text": {
+              "ru": "Сравнивать способы без обязательного победителя",
+              "en": "Compare methods without requiring a winner"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-47-variant-1"
+  },
+  "shared-family-48": {
+    "id": "family-48",
+    "title": {
+      "ru": "Творческое выражение",
+      "en": "Creative expression"
+    },
+    "example": {
+      "ru": "Придумать и нарисовать существо, приспособленное к заданной среде.",
+      "en": "Invent and draw a creature adapted to a specified environment."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-48-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-48-variant-1",
+            "text": {
+              "ru": "Рисовать свободно",
+              "en": "Draw freely"
+            }
+          },
+          {
+            "id": "family-48-variant-2",
+            "text": {
+              "ru": "Рисовать по условию",
+              "en": "Draw under constraints"
+            }
+          },
+          {
+            "id": "family-48-variant-3",
+            "text": {
+              "ru": "Составлять коллаж",
+              "en": "Create collages"
+            }
+          },
+          {
+            "id": "family-48-variant-4",
+            "text": {
+              "ru": "Создавать персонажа",
+              "en": "Create characters"
+            }
+          },
+          {
+            "id": "family-48-variant-5",
+            "text": {
+              "ru": "Сочинять мелодию",
+              "en": "Compose melodies"
+            }
+          },
+          {
+            "id": "family-48-variant-6",
+            "text": {
+              "ru": "Сочинять историю",
+              "en": "Write stories"
+            }
+          },
+          {
+            "id": "family-48-variant-7",
+            "text": {
+              "ru": "Создавать анимацию",
+              "en": "Create animations"
+            }
+          },
+          {
+            "id": "family-48-variant-8",
+            "text": {
+              "ru": "Озвучивать сцену",
+              "en": "Voice scenes"
+            }
+          },
+          {
+            "id": "family-48-variant-9",
+            "text": {
+              "ru": "Изменять готовую работу",
+              "en": "Modify existing works"
+            }
+          },
+          {
+            "id": "family-48-variant-10",
+            "text": {
+              "ru": "Комбинировать материалы",
+              "en": "Combine materials"
+            }
+          },
+          {
+            "id": "family-48-variant-11",
+            "text": {
+              "ru": "Создавать несколько интерпретаций",
+              "en": "Create several interpretations"
+            }
+          },
+          {
+            "id": "family-48-variant-12",
+            "text": {
+              "ru": "Представлять замысел аудитории",
+              "en": "Present ideas to an audience"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-48-variant-1"
+  },
+  "shared-family-49": {
+    "id": "family-49",
+    "title": {
+      "ru": "Открытые проекты и создание собственных игр",
+      "en": "Open projects and creating games"
+    },
+    "example": {
+      "ru": "Создать лабиринт, который можно пройти ровно за десять команд.",
+      "en": "Create a maze solvable in exactly ten commands."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-49-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-49-variant-1",
+            "text": {
+              "ru": "Выбрать собственную цель",
+              "en": "Choose personal goals"
+            }
+          },
+          {
+            "id": "family-49-variant-2",
+            "text": {
+              "ru": "Планировать проект",
+              "en": "Plan projects"
+            }
+          },
+          {
+            "id": "family-49-variant-3",
+            "text": {
+              "ru": "Создавать мир",
+              "en": "Create worlds"
+            }
+          },
+          {
+            "id": "family-49-variant-4",
+            "text": {
+              "ru": "Создавать уровень",
+              "en": "Create levels"
+            }
+          },
+          {
+            "id": "family-49-variant-5",
+            "text": {
+              "ru": "Создавать задачу для другого",
+              "en": "Create tasks for others"
+            }
+          },
+          {
+            "id": "family-49-variant-6",
+            "text": {
+              "ru": "Создавать правила игры",
+              "en": "Create game rules"
+            }
+          },
+          {
+            "id": "family-49-variant-7",
+            "text": {
+              "ru": "Выбирать критерии успеха",
+              "en": "Select success criteria"
+            }
+          },
+          {
+            "id": "family-49-variant-8",
+            "text": {
+              "ru": "Исследовать без заданного ответа",
+              "en": "Explore without preset answers"
+            }
+          },
+          {
+            "id": "family-49-variant-9",
+            "text": {
+              "ru": "Собирать портфолио",
+              "en": "Build portfolios"
+            }
+          },
+          {
+            "id": "family-49-variant-10",
+            "text": {
+              "ru": "Испытывать работу на пользователе",
+              "en": "Test with users"
+            }
+          },
+          {
+            "id": "family-49-variant-11",
+            "text": {
+              "ru": "Дорабатывать по обратной связи",
+              "en": "Revise from feedback"
+            }
+          },
+          {
+            "id": "family-49-variant-12",
+            "text": {
+              "ru": "Комбинировать несколько инструментов",
+              "en": "Combine tools"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Базовые действия",
+      "en": "Core actions"
+    },
+    "descriptionRef": "family-49-variant-1"
+  },
+  "shared-family-58": {
+    "id": "family-58",
+    "title": {
+      "ru": "Цели, задания и условия успеха",
+      "en": "Goals, tasks and success conditions"
+    },
+    "example": {
+      "ru": "Восстановить мост, чтобы жители снова могли попасть в школу.",
+      "en": "Restore a bridge so residents can reach school again."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-58-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-58-variant-1",
+            "text": {
+              "ru": "Достичь точки",
+              "en": "Reach a point"
+            }
+          },
+          {
+            "id": "family-58-variant-2",
+            "text": {
+              "ru": "Доставить предмет",
+              "en": "Deliver items"
+            }
+          },
+          {
+            "id": "family-58-variant-3",
+            "text": {
+              "ru": "Собрать набор",
+              "en": "Collect sets"
+            }
+          },
+          {
+            "id": "family-58-variant-4",
+            "text": {
+              "ru": "Восстановить объект",
+              "en": "Restore objects"
+            }
+          },
+          {
+            "id": "family-58-variant-5",
+            "text": {
+              "ru": "Помочь персонажу",
+              "en": "Help characters"
+            }
+          },
+          {
+            "id": "family-58-variant-6",
+            "text": {
+              "ru": "Удержать систему в рабочем состоянии",
+              "en": "Maintain working systems"
+            }
+          },
+          {
+            "id": "family-58-variant-7",
+            "text": {
+              "ru": "Выполнить заказ",
+              "en": "Complete orders"
+            }
+          },
+          {
+            "id": "family-58-variant-8",
+            "text": {
+              "ru": "Открыть область",
+              "en": "Unlock areas"
+            }
+          },
+          {
+            "id": "family-58-variant-9",
+            "text": {
+              "ru": "Разгадать тайну",
+              "en": "Solve mysteries"
+            }
+          },
+          {
+            "id": "family-58-variant-10",
+            "text": {
+              "ru": "Построить работающий объект",
+              "en": "Build working objects"
+            }
+          },
+          {
+            "id": "family-58-variant-11",
+            "text": {
+              "ru": "Набрать целевое количество",
+              "en": "Reach target quantities"
+            }
+          },
+          {
+            "id": "family-58-variant-12",
+            "text": {
+              "ru": "Пройти без определённой ошибки",
+              "en": "Finish without a specified error"
+            }
+          },
+          {
+            "id": "family-58-variant-13",
+            "text": {
+              "ru": "Найти все решения",
+              "en": "Find all solutions"
+            }
+          },
+          {
+            "id": "family-58-variant-14",
+            "text": {
+              "ru": "Улучшить собственный результат",
+              "en": "Improve personal results"
+            }
+          },
+          {
+            "id": "family-58-variant-15",
+            "text": {
+              "ru": "Завершить совместный проект",
+              "en": "Complete shared projects"
+            }
+          },
+          {
+            "id": "family-58-variant-16",
+            "text": {
+              "ru": "Получить результат с несколькими допустимыми способами",
+              "en": "Reach outcomes through several valid methods"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-58-variant-1"
+  },
+  "shared-family-59": {
+    "id": "family-59",
+    "title": {
+      "ru": "Ограничения, темп и информация",
+      "en": "Constraints, pace and information"
+    },
+    "example": {
+      "ru": "Собрать конструкцию из шести деталей, имея несколько вариантов решения.",
+      "en": "Build with six parts while allowing several solutions."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-59-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-59-variant-1",
+            "text": {
+              "ru": "Ограничить число ходов",
+              "en": "Limit turns"
+            }
+          },
+          {
+            "id": "family-59-variant-2",
+            "text": {
+              "ru": "Ограничить ресурсы",
+              "en": "Limit resources"
+            }
+          },
+          {
+            "id": "family-59-variant-3",
+            "text": {
+              "ru": "Ограничить набор инструментов",
+              "en": "Limit tools"
+            }
+          },
+          {
+            "id": "family-59-variant-4",
+            "text": {
+              "ru": "Ограничить время",
+              "en": "Limit time"
+            }
+          },
+          {
+            "id": "family-59-variant-5",
+            "text": {
+              "ru": "Использовать пошаговый режим",
+              "en": "Use turn-based play"
+            }
+          },
+          {
+            "id": "family-59-variant-6",
+            "text": {
+              "ru": "Использовать события в реальном времени",
+              "en": "Use real-time events"
+            }
+          },
+          {
+            "id": "family-59-variant-7",
+            "text": {
+              "ru": "Давать возможность паузы",
+              "en": "Allow pauses"
+            }
+          },
+          {
+            "id": "family-59-variant-8",
+            "text": {
+              "ru": "Скрыть часть информации",
+              "en": "Hide information"
+            }
+          },
+          {
+            "id": "family-59-variant-9",
+            "text": {
+              "ru": "Открывать информацию по действию",
+              "en": "Reveal information through actions"
+            }
+          },
+          {
+            "id": "family-59-variant-10",
+            "text": {
+              "ru": "Менять условия во время задачи",
+              "en": "Change conditions during tasks"
+            }
+          },
+          {
+            "id": "family-59-variant-11",
+            "text": {
+              "ru": "Добавлять случайные события",
+              "en": "Add random events"
+            }
+          },
+          {
+            "id": "family-59-variant-12",
+            "text": {
+              "ru": "Добавлять взаимосвязанные цели",
+              "en": "Add linked goals"
+            }
+          },
+          {
+            "id": "family-59-variant-13",
+            "text": {
+              "ru": "Вводить запрет на действие",
+              "en": "Prohibit actions"
+            }
+          },
+          {
+            "id": "family-59-variant-14",
+            "text": {
+              "ru": "Сделать последствия отложенными",
+              "en": "Delay consequences"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-59-variant-1"
+  },
+  "shared-family-60": {
+    "id": "family-60",
+    "title": {
+      "ru": "Прогрессия, освоение и открытие возможностей",
+      "en": "Progression, mastery and new capabilities"
+    },
+    "example": {
+      "ru": "После освоения команды поворота дать роботу новые маршруты.",
+      "en": "After mastering turns, give the robot new routes."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-60-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-60-variant-1",
+            "text": {
+              "ru": "Открывать уровни",
+              "en": "Unlock levels"
+            }
+          },
+          {
+            "id": "family-60-variant-2",
+            "text": {
+              "ru": "Открывать новые инструменты",
+              "en": "Unlock tools"
+            }
+          },
+          {
+            "id": "family-60-variant-3",
+            "text": {
+              "ru": "Открывать новые правила",
+              "en": "Unlock rules"
+            }
+          },
+          {
+            "id": "family-60-variant-4",
+            "text": {
+              "ru": "Развивать игровой мир",
+              "en": "Develop the world"
+            }
+          },
+          {
+            "id": "family-60-variant-5",
+            "text": {
+              "ru": "Развивать персонажа",
+              "en": "Develop characters"
+            }
+          },
+          {
+            "id": "family-60-variant-6",
+            "text": {
+              "ru": "Вести карту освоенных умений",
+              "en": "Map mastered skills"
+            }
+          },
+          {
+            "id": "family-60-variant-7",
+            "text": {
+              "ru": "Добавлять составные задачи",
+              "en": "Add composite tasks"
+            }
+          },
+          {
+            "id": "family-60-variant-8",
+            "text": {
+              "ru": "Давать выбор следующей ветви",
+              "en": "Offer next-branch choices"
+            }
+          },
+          {
+            "id": "family-60-variant-9",
+            "text": {
+              "ru": "Возвращаться в старую область с новым умением",
+              "en": "Revisit areas with new skills"
+            }
+          },
+          {
+            "id": "family-60-variant-10",
+            "text": {
+              "ru": "Открывать творческий режим",
+              "en": "Unlock creative modes"
+            }
+          },
+          {
+            "id": "family-60-variant-11",
+            "text": {
+              "ru": "Постепенно расширять самостоятельность",
+              "en": "Expand independence gradually"
+            }
+          },
+          {
+            "id": "family-60-variant-12",
+            "text": {
+              "ru": "Завершать тематические главы",
+              "en": "Complete thematic chapters"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-60-variant-1"
+  },
+  "shared-family-61": {
+    "id": "family-61",
+    "title": {
+      "ru": "Награды, коллекции и игровые последствия",
+      "en": "Rewards, collections and game consequences"
+    },
+    "example": {
+      "ru": "Успешно выращенные растения остаются в саду, который ребёнок создал.",
+      "en": "Successfully grown plants remain in the child's garden."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-61-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-61-variant-1",
+            "text": {
+              "ru": "Начислять очки",
+              "en": "Award points"
+            }
+          },
+          {
+            "id": "family-61-variant-2",
+            "text": {
+              "ru": "Выдавать звёзды или значки",
+              "en": "Award stars or badges"
+            }
+          },
+          {
+            "id": "family-61-variant-3",
+            "text": {
+              "ru": "Давать предмет за задачу",
+              "en": "Reward tasks with items"
+            }
+          },
+          {
+            "id": "family-61-variant-4",
+            "text": {
+              "ru": "Пополнять коллекцию",
+              "en": "Expand collections"
+            }
+          },
+          {
+            "id": "family-61-variant-5",
+            "text": {
+              "ru": "Открывать часть истории",
+              "en": "Reveal story fragments"
+            }
+          },
+          {
+            "id": "family-61-variant-6",
+            "text": {
+              "ru": "Менять внешний вид мира",
+              "en": "Change world appearance"
+            }
+          },
+          {
+            "id": "family-61-variant-7",
+            "text": {
+              "ru": "Давать новую способность",
+              "en": "Grant abilities"
+            }
+          },
+          {
+            "id": "family-61-variant-8",
+            "text": {
+              "ru": "Показывать личное улучшение",
+              "en": "Show personal improvement"
+            }
+          },
+          {
+            "id": "family-61-variant-9",
+            "text": {
+              "ru": "Давать содержательный результат действия",
+              "en": "Provide meaningful action results"
+            }
+          },
+          {
+            "id": "family-61-variant-10",
+            "text": {
+              "ru": "Показывать вклад в общую цель",
+              "en": "Show contributions to shared goals"
+            }
+          },
+          {
+            "id": "family-61-variant-11",
+            "text": {
+              "ru": "Давать выбрать награду",
+              "en": "Allow reward choice"
+            }
+          },
+          {
+            "id": "family-61-variant-12",
+            "text": {
+              "ru": "Собирать созданные работы в альбом",
+              "en": "Collect creations in albums"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-61-variant-1"
+  },
+  "shared-family-62": {
+    "id": "family-62",
+    "title": {
+      "ru": "Самостоятельность, идентичность и постоянный мир",
+      "en": "Autonomy, identity and persistent worlds"
+    },
+    "example": {
+      "ru": "Выбрать, какой участок города восстановить, и решить, как это сделать.",
+      "en": "Choose a city area to restore and decide how to do it."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-62-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-62-variant-1",
+            "text": {
+              "ru": "Выбирать персонажа",
+              "en": "Choose characters"
+            }
+          },
+          {
+            "id": "family-62-variant-2",
+            "text": {
+              "ru": "Настраивать внешний вид",
+              "en": "Customize appearance"
+            }
+          },
+          {
+            "id": "family-62-variant-3",
+            "text": {
+              "ru": "Выбирать тему или маршрут",
+              "en": "Choose themes or routes"
+            }
+          },
+          {
+            "id": "family-62-variant-4",
+            "text": {
+              "ru": "Выбирать порядок заданий",
+              "en": "Choose task order"
+            }
+          },
+          {
+            "id": "family-62-variant-5",
+            "text": {
+              "ru": "Выбирать инструмент",
+              "en": "Choose tools"
+            }
+          },
+          {
+            "id": "family-62-variant-6",
+            "text": {
+              "ru": "Выбирать способ решения",
+              "en": "Choose solution methods"
+            }
+          },
+          {
+            "id": "family-62-variant-7",
+            "text": {
+              "ru": "Сохранять собственные постройки",
+              "en": "Preserve constructions"
+            }
+          },
+          {
+            "id": "family-62-variant-8",
+            "text": {
+              "ru": "Заботиться о персонаже",
+              "en": "Care for characters"
+            }
+          },
+          {
+            "id": "family-62-variant-9",
+            "text": {
+              "ru": "Возвращаться к долгому проекту",
+              "en": "Return to long projects"
+            }
+          },
+          {
+            "id": "family-62-variant-10",
+            "text": {
+              "ru": "Менять мир своими решениями",
+              "en": "Change the world through decisions"
+            }
+          },
+          {
+            "id": "family-62-variant-11",
+            "text": {
+              "ru": "Создавать собственные цели",
+              "en": "Create personal goals"
+            }
+          },
+          {
+            "id": "family-62-variant-12",
+            "text": {
+              "ru": "Выбирать сложность или поддержку",
+              "en": "Choose difficulty or support"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-62-variant-1"
+  },
+  "shared-family-63": {
+    "id": "family-63",
+    "title": {
+      "ru": "Ходы, случайные инструменты и управление набором действий",
+      "en": "Turns, random tools and action-set management"
+    },
+    "example": {
+      "ru": "Выбирать карточки инструментов для решения задачи, имея ограниченное число ходов.",
+      "en": "Select tool cards to solve a problem with limited turns."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-63-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-63-variant-1",
+            "text": {
+              "ru": "Ходить по очереди",
+              "en": "Take turns"
+            }
+          },
+          {
+            "id": "family-63-variant-2",
+            "text": {
+              "ru": "Бросать кубик и перемещаться",
+              "en": "Roll dice and move"
+            }
+          },
+          {
+            "id": "family-63-variant-3",
+            "text": {
+              "ru": "Тянуть карточку задания",
+              "en": "Draw task cards"
+            }
+          },
+          {
+            "id": "family-63-variant-4",
+            "text": {
+              "ru": "Выбирать из открытого набора",
+              "en": "Choose from an open set"
+            }
+          },
+          {
+            "id": "family-63-variant-5",
+            "text": {
+              "ru": "Собирать набор карт",
+              "en": "Collect card sets"
+            }
+          },
+          {
+            "id": "family-63-variant-6",
+            "text": {
+              "ru": "Строить колоду",
+              "en": "Build decks"
+            }
+          },
+          {
+            "id": "family-63-variant-7",
+            "text": {
+              "ru": "Использовать комбинацию карт",
+              "en": "Use card combinations"
+            }
+          },
+          {
+            "id": "family-63-variant-8",
+            "text": {
+              "ru": "Размещать фишки для выбора действия",
+              "en": "Place pieces to select actions"
+            }
+          },
+          {
+            "id": "family-63-variant-9",
+            "text": {
+              "ru": "Ставить жетоны на прогноз",
+              "en": "Wager tokens on predictions"
+            }
+          },
+          {
+            "id": "family-63-variant-10",
+            "text": {
+              "ru": "Менять доступный набор действий",
+              "en": "Change available actions"
+            }
+          },
+          {
+            "id": "family-63-variant-11",
+            "text": {
+              "ru": "Обменивать ход на информацию",
+              "en": "Exchange turns for information"
+            }
+          },
+          {
+            "id": "family-63-variant-12",
+            "text": {
+              "ru": "Делать скрытый одновременный выбор",
+              "en": "Make hidden simultaneous choices"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-63-variant-1"
+  },
+  "shared-family-64": {
+    "id": "family-64",
+    "title": {
+      "ru": "Форматы и сочетания механик",
+      "en": "Formats and mechanic combinations"
+    },
+    "example": {
+      "ru": "Квест объединяет чтение записок, поиск объектов, выводы и работу с картой.",
+      "en": "A quest combines notes, object search, inference and maps."
+    },
+    "sourceUrls": [],
+    "branches": [
+      {
+        "id": "family-64-branch-1",
+        "title": {
+          "ru": "Варианты",
+          "en": "Variants"
+        },
+        "variants": [
+          {
+            "id": "family-64-variant-1",
+            "text": {
+              "ru": "Викторина",
+              "en": "Quizzes"
+            }
+          },
+          {
+            "id": "family-64-variant-2",
+            "text": {
+              "ru": "Лото или бинго",
+              "en": "Lotto or bingo"
+            }
+          },
+          {
+            "id": "family-64-variant-3",
+            "text": {
+              "ru": "Домино",
+              "en": "Dominoes"
+            }
+          },
+          {
+            "id": "family-64-variant-4",
+            "text": {
+              "ru": "Мемори",
+              "en": "Memory matching"
+            }
+          },
+          {
+            "id": "family-64-variant-5",
+            "text": {
+              "ru": "Игра с перемещением по полю",
+              "en": "Movement board games"
+            }
+          },
+          {
+            "id": "family-64-variant-6",
+            "text": {
+              "ru": "Карточная игра",
+              "en": "Card games"
+            }
+          },
+          {
+            "id": "family-64-variant-7",
+            "text": {
+              "ru": "Пазл или головоломка",
+              "en": "Puzzles"
+            }
+          },
+          {
+            "id": "family-64-variant-8",
+            "text": {
+              "ru": "Квест или комната загадок",
+              "en": "Quests or escape rooms"
+            }
+          },
+          {
+            "id": "family-64-variant-9",
+            "text": {
+              "ru": "Приключение с исследованием",
+              "en": "Exploration adventures"
+            }
+          },
+          {
+            "id": "family-64-variant-10",
+            "text": {
+              "ru": "Платформер с учебным действием",
+              "en": "Platformers with learning actions"
+            }
+          },
+          {
+            "id": "family-64-variant-11",
+            "text": {
+              "ru": "Раннер с выбором объектов",
+              "en": "Object-selection runners"
+            }
+          },
+          {
+            "id": "family-64-variant-12",
+            "text": {
+              "ru": "Ритмическая игра",
+              "en": "Rhythm games"
+            }
+          },
+          {
+            "id": "family-64-variant-13",
+            "text": {
+              "ru": "Симулятор",
+              "en": "Simulations"
+            }
+          },
+          {
+            "id": "family-64-variant-14",
+            "text": {
+              "ru": "Стратегическая игра",
+              "en": "Strategy games"
+            }
+          },
+          {
+            "id": "family-64-variant-15",
+            "text": {
+              "ru": "Песочница или конструктор",
+              "en": "Sandboxes or construction tools"
+            }
+          },
+          {
+            "id": "family-64-variant-16",
+            "text": {
+              "ru": "Интерактивная книга",
+              "en": "Interactive books"
+            }
+          },
+          {
+            "id": "family-64-variant-17",
+            "text": {
+              "ru": "Ролевая игра",
+              "en": "Roleplaying games"
+            }
+          },
+          {
+            "id": "family-64-variant-18",
+            "text": {
+              "ru": "Командная игра",
+              "en": "Team games"
+            }
+          },
+          {
+            "id": "family-64-variant-19",
+            "text": {
+              "ru": "Подвижная игра",
+              "en": "Active movement games"
+            }
+          },
+          {
+            "id": "family-64-variant-20",
+            "text": {
+              "ru": "Игра с реальными предметами и приложением",
+              "en": "Physical-object and app games"
+            }
+          }
+        ]
+      }
+    ],
+    "classification": {
+      "ru": "Игровая структура",
+      "en": "Game structure"
+    },
+    "descriptionRef": "family-64-variant-1"
+  }
+}

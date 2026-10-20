@@ -39,3 +39,12 @@ reset, result counts, shared-anchor reveal and matching-language anchor links.
 The manifest, agent indexes, full corpus and sitemap derive their links from
 the same records. An exercise describes an activity; it does not authorize an
 agent to execute that activity without a user's request.
+
+## Integration exercises (2026-10-20)
+
+The collection now contains fourteen exercises. `maintenance-patrol` joins NPC
+perception, memory, action selection and route following, including closing doors
+and unreachable goals. `three-workshop-shifts` checks progression through action
+counts, purchase ordering and random reward sequences. Both use the same complete
+bilingual field structure as the twelve original tasks. Their scenarios and checks
+are original illustrative work, not executed playtests or copied book exercises.

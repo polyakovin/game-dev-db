@@ -11,6 +11,7 @@ interface Props {
   description?: string;
   section?:
     | 'catalog'
+    | 'searchNav'
     | 'mechanics'
     | 'practice'
     | 'lenses'
@@ -34,6 +35,7 @@ const canonical = new URL(Astro.url.pathname, 'https://polyakovin.github.io')
   .href;
 const nav = [
   { key: 'catalog', href: path(`${lang}/`), icon: 'book' },
+  { key: 'searchNav', href: path(`${lang}/search/`), icon: 'search' },
   { key: 'mechanics', href: path(`${lang}/mechanics/`), icon: 'layers' },
   { key: 'lenses', href: path(`${lang}/lenses/`), icon: 'search' },
   { key: 'practice', href: path(`${lang}/practice/`), icon: 'play' },

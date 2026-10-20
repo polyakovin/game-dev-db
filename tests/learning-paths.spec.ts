@@ -31,14 +31,14 @@ test('path validation catches broken translations, references and membership', (
   const broken = structuredClone(learningPathData);
   broken[0].practice.push('missing-exercise');
   broken[1].lenses.push('missing-lens');
-  broken[1].lessons.push(broken[0].lessons[0]);
+  broken[1].lessons.push(broken[1].lessons[0]);
   broken[2].updatedAt = '2026-02-30';
   broken[3].title.en = '';
   const errors = validateLearningPaths(available, broken).join();
   for (const message of [
     'missing-exercise',
     'missing-lens',
-    'multiple paths',
+    'duplicate lessons reference',
     'invalid update date',
     'title.en',
   ])
@@ -61,7 +61,7 @@ test('path export matches source and manifest exposes the additive dataset', asy
   const manifest = await (
     await request.get(`${base}/api/v1/manifest.json`)
   ).json();
-  expect(manifest.counts.learningPaths).toBe(4);
+  expect(manifest.counts.learningPaths).toBe(learningPathData.length);
   expect(manifest.counts.translationPairs).toBeGreaterThanOrEqual(20);
   expect(manifest.endpoints.learningPaths).toContain(
     `${base}/api/v1/learning-paths.json`,
@@ -73,7 +73,9 @@ for (const lang of ['ru', 'en'] as const) {
     page,
   }) => {
     await page.goto(`${base}/${lang}/`);
-    await expect(page.locator('[data-learning-path-card]')).toHaveCount(4);
+    await expect(page.locator('[data-learning-path-card]')).toHaveCount(
+      learningPathData.length,
+    );
     for (const route of learningPathData) {
       await page.goto(`${base}/${lang}/learn/${route.id}/`);
       await expect(page.locator('h1')).toHaveText(route.title[lang]);
@@ -156,10 +158,12 @@ for (const lang of ['ru', 'en'] as const) {
     });
     const page = await context.newPage();
     await page.goto(`${base}/${lang}/`);
-    await page.locator('[data-learning-path-card]').first().click();
+    await page
+      .locator('[data-learning-path-card][href$="/learn/level-design/"]')
+      .click();
     await expect(page.locator('[data-path-lesson]')).toHaveCount(3);
     await page.locator('[data-path-lesson]').first().click();
-    await expect(page.locator('article h2')).toHaveCount(6);
+    await expect(page.locator('article h2')).toHaveCount(7);
     await page.locator('[data-lesson-path] a[rel="next"]').click();
     await expect(page).toHaveURL(new RegExp('/lessons/level-wayfinding/$'));
     await page.locator('[data-language-switch]').click();

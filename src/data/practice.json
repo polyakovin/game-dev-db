@@ -1,6 +1,6 @@
 {
   "id": "game-design-practice",
-  "updatedAt": "2026-10-10",
+  "updatedAt": "2026-10-20",
   "title": {
     "ru": "Практикум по геймдизайну",
     "en": "Game design practice"
@@ -90,6 +90,13 @@
       "title": {
         "ru": "Мультиплеер",
         "en": "Multiplayer"
+      }
+    },
+    {
+      "id": "npc",
+      "title": {
+        "ru": "Поведение NPC",
+        "en": "NPC behavior"
       }
     }
   ],
@@ -763,6 +770,122 @@
             "Identify a reason to cooperate and check whether one participant dominates."
           ],
           "reflection": "Which information needs to stay separate to keep both roles involved?"
+        }
+      }
+    },
+    {
+      "id": "maintenance-patrol",
+      "topic": "npc",
+      "minutes": 90,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Ремонтный патруль",
+          "format": "Небольшая сцена или пошаговая модель с журналом событий",
+          "goal": "Соединить восприятие, память, выбор действия и выполнение маршрута.",
+          "brief": "Робот патрулирует станцию, замечает неисправность и идёт её устранять. Между ним и целью может закрыться дверь. Известная роботу позиция цели и фактическое состояние мира хранятся отдельно.",
+          "constraints": [
+            "Одна карта, один робот и одна неисправность. Граф и стоимость рёбер заданы явно.",
+            "Робот получает сведения только через наблюдения; память имеет срок действия.",
+            "Каждая смена действия записывает время, наблюдение и причину."
+          ],
+          "steps": [
+            "Задайте состояния патруля, движения к неисправности, ремонта и поиска; выпишите условия переходов.",
+            "Разделите наблюдения и память. Сценарий потери видимости не должен мгновенно сообщать новое положение цели.",
+            "Соедините выбор действия с поиском пути и движением; при закрытии двери пересчитайте маршрут или верните явный отказ.",
+            "Повторите сценарии: цель видима, цель потеряна, дверь закрылась, цель недостижима. Сохраните одинаковые начальные условия."
+          ],
+          "deliverable": "Запускаемая сцена или воспроизводимая пошаговая модель, карта, таблица переходов и четыре журнала с объяснениями решений.",
+          "checks": [
+            "При одинаковых начальных условиях и наблюдениях робот принимает одинаковые решения.",
+            "После потери видимости используется последняя известная позиция, затем память истекает.",
+            "Закрытая дверь не приводит к движению через стену или бесконечному пересчёту каждый кадр.",
+            "Результаты «цель достигнута», «пути нет» и «старт совпадает с целью» различимы."
+          ],
+          "reflection": "Какое решение оказалось неверным из-за памяти, какое из-за приоритета, а какое из-за маршрута? Измените только один из этих слоёв."
+        },
+        "en": {
+          "title": "Maintenance patrol",
+          "format": "A small scene or step-by-step model with an event log",
+          "goal": "Connect perception, memory, action selection and route following.",
+          "brief": "A robot patrols a station, detects a fault and moves to repair it. A door may close between it and the target. Store the robot’s known target position separately from the actual world state.",
+          "constraints": [
+            "Use one map, one robot and one fault. Specify the graph and edge costs explicitly.",
+            "The robot learns through observations only; its memory expires.",
+            "Every action change logs time, observation and reason."
+          ],
+          "steps": [
+            "Define patrol, move-to-fault, repair and search states, including transition conditions.",
+            "Separate observations from memory. Losing sight must not instantly reveal the target’s new position.",
+            "Connect action selection to path search and movement; recompute after a closing door or return an explicit failure.",
+            "Repeat these scenarios: visible target, lost target, closing door and unreachable target. Preserve identical starting conditions."
+          ],
+          "deliverable": "A runnable scene or reproducible step-by-step model, map, transition table and four logs explaining decisions.",
+          "checks": [
+            "Identical starting conditions and observations produce identical decisions.",
+            "After losing sight, the robot uses the last known position until memory expires.",
+            "A closed door causes neither wall traversal nor endless path recomputation each frame.",
+            "Target reached, no route and start equal to goal are distinguishable results."
+          ],
+          "reflection": "Which wrong decision came from memory, which from priorities and which from navigation? Change only one of these layers."
+        }
+      }
+    },
+    {
+      "id": "three-workshop-shifts",
+      "topic": "chance",
+      "minutes": 60,
+      "level": "intermediate",
+      "content": {
+        "ru": {
+          "title": "Три смены мастерской",
+          "format": "Таблица, калькулятор и бумажный прототип",
+          "goal": "Проверить темп прогрессии через стоимость действий и изменения доступных решений.",
+          "brief": "Игрок ремонтирует приборы, зарабатывает детали и улучшает два инструмента. Спроектируйте три этапа: начало, первое улучшение и специализацию. Числа являются параметрами вашего эксперимента, а не готовым балансом.",
+          "constraints": [
+            "Два инструмента, один ресурс и три этапа. На каждом этапе задана стоимость одного ремонта.",
+            "Хотя бы одно улучшение меняет правило действия, а не только множитель награды.",
+            "Время действия и ресурсная цена записаны раздельно."
+          ],
+          "steps": [
+            "Составьте таблицу цены улучшений, времени ремонта и дохода; вычислите число действий до каждой покупки.",
+            "Проверьте два порядка покупок на одинаковой последовательности задач. Запишите, где выгоднее каждый инструмент.",
+            "Добавьте случайную награду и сравните независимые броски с заранее заданной последовательностью; сохраните результаты по попыткам.",
+            "Измените один порог цены и повторите проверку: какие решения стали доступны раньше или позже?"
+          ],
+          "deliverable": "Таблица трёх этапов, два сравнимых журнала покупок и объяснение изменения темпа после одной правки.",
+          "checks": [
+            "Вычисленное число действий учитывает округление до целого ремонта.",
+            "Оба инструмента имеют хотя бы одну ситуацию полезного применения.",
+            "Улучшение правила меняет решение игрока, а не только отображаемое число.",
+            "Среднее ожидание награды не выдаётся за гарантию для короткой последовательности."
+          ],
+          "reflection": "Где игрок повторяет уже решённую задачу без нового выбора? Как уменьшить этот участок, сохранив понятность следующей цели?"
+        },
+        "en": {
+          "title": "Three workshop shifts",
+          "format": "A spreadsheet, calculator and paper prototype",
+          "goal": "Check progression pacing through action costs and changes to available decisions.",
+          "brief": "The player repairs devices, earns parts and upgrades two tools. Design three stages: the start, a first upgrade and specialization. The numbers are experiment parameters rather than a ready-made balance.",
+          "constraints": [
+            "Use two tools, one resource and three stages. Specify the cost of one repair at each stage.",
+            "At least one upgrade changes an action rule rather than only a reward multiplier.",
+            "Record action time separately from resource cost."
+          ],
+          "steps": [
+            "Tabulate upgrade prices, repair times and income; calculate the action count before each purchase.",
+            "Compare two purchase orders on the same task sequence. Record where each tool is preferable.",
+            "Add a random reward and compare independent rolls with a predefined sequence; retain attempt-level results.",
+            "Change one price threshold and repeat the check: which decisions become available earlier or later?"
+          ],
+          "deliverable": "A three-stage table, two comparable purchase logs and an explanation of the pacing change after one edit.",
+          "checks": [
+            "Action counts account for rounding up to a whole repair.",
+            "Each tool has at least one situation in which it is useful.",
+            "The rule-changing upgrade changes a player decision alongside the displayed number.",
+            "An average reward expectation is not presented as a guarantee for a short sequence."
+          ],
+          "reflection": "Where does the player repeat a solved task without a new choice? How can you shorten that section while keeping the next goal understandable?"
         }
       }
     }

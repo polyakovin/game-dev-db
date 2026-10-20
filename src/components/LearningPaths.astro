@@ -15,8 +15,8 @@ const { lang } = Astro.props;
     </h2>
     <span class="section-caption">
       {lang === 'ru'
-        ? 'Три урока и практика в каждом'
-        : 'Three lessons and practice in each'}
+        ? 'Уроки, практика и проверяемый результат'
+        : 'Lessons, practice and a verifiable outcome'}
     </span>
   </div>
   <div class="path-grid">
@@ -36,7 +36,7 @@ const { lang } = Astro.props;
         <p>{entry.description}</p>
         <div class="card-bottom">
           <span>
-            {entry.lessons.length} {lang === 'ru' ? 'урока' : 'lessons'}
+            {entry.lessons.length} {lang === 'ru' ? 'уроков' : 'lessons'}
           </span>
           <Icon name="arrow" size={18} />
         </div>

@@ -2,13 +2,16 @@ import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { validateMechanics } from '../src/lib/mechanics.mjs';
 import { orderMechanicCatalog } from '../src/lib/content-order.mjs';
+import { resolveMechanicCatalog } from '../src/lib/mechanic-source.mjs';
 
 const base = '/game-dev-db';
 const readCatalog = (id: string) =>
-  JSON.parse(
-    readFileSync(
-      new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
-      'utf8',
+  resolveMechanicCatalog(
+    JSON.parse(
+      readFileSync(
+        new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
+        'utf8',
+      ),
     ),
   );
 const catalogs = [
@@ -51,7 +54,7 @@ const catalogs = [
       ),
     ),
   )
-  .map(orderMechanicCatalog);
+  .map((catalog) => orderMechanicCatalog(resolveMechanicCatalog(catalog)));
 
 const activeCatalogs = catalogs.filter(
   (catalog) => catalog.id !== 'children-education',
@@ -295,9 +298,10 @@ test('split catalogs retain original identities and expand their distinct scopes
   for (const retained of children.families.filter((f: any) =>
     originalIds.has(f.id),
   )) {
-    expect(retained).toEqual(
-      original.families.find((f: any) => f.id === retained.id),
-    );
+    const previous = original.families.find((f: any) => f.id === retained.id);
+    expect(retained.branches).toEqual(previous.branches);
+    expect(retained.title).toEqual(previous.title);
+    expect(retained.example).toEqual(previous.example);
   }
   expect(children.families.some((f: any) => f.id === 'toy-play')).toBe(true);
   expect(

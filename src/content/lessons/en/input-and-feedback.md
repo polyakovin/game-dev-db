@@ -6,7 +6,7 @@ description: 'Turn button presses into gameplay intent and show whether an actio
 category: 'foundations'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['input', 'feedback', 'accessibility']
 sources:
   [
@@ -17,7 +17,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 Use an early playable prototype with one action, such as interacting with a door. You need an input handler and a small amount of game state. The goal is for players to understand the result of a press while game rules remain independent of a particular key.
 
@@ -29,7 +31,11 @@ An action mapping lets several input devices express the same intent. Godot prov
 
 Movement usually depends on a held input. Toggling a menu or using an item usually needs a press edge: the change from released to pressed. Toggling on every held frame makes one physical press repeatedly open and close the menu.
 
-## Example: a locked door
+<span id="example-a-locked-door"></span>
+
+## Practical example
+
+### A locked door
 
 Define three outcomes: opened, needs a key, and out of range. Game logic returns one outcome; presentation selects a suitable message, sound, or animation.
 

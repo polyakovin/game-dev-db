@@ -1,6 +1,6 @@
 {
   "id": "point-and-click",
-  "updatedAt": "2026-10-09",
+  "updatedAt": "2026-10-20",
   "title": {
     "ru": "Механики point-and-click-квестов",
     "en": "Point-and-click adventure mechanics"
@@ -72,8 +72,8 @@
         "en": "Inspection, search and perception"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок исследует сцену и замечает объекты или изменения, которые дают новое действие или знание.",
+        "en": "The player examines a scene and notices objects or changes that reveal an action or new information."
       },
       "example": {
         "ru": "",
@@ -156,8 +156,8 @@
         "en": "Movement and spatial access"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок открывает проходы и выбирает доступные места, меняя возможности дальнейшего исследования.",
+        "en": "The player opens passages and chooses accessible locations, changing what can be explored next."
       },
       "example": {
         "ru": "",
@@ -240,8 +240,8 @@
         "en": "Direct environmental manipulation"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок изменяет окружение непосредственным действием: двигает, открывает, поворачивает или нажимает.",
+        "en": "The player changes the environment directly by moving, opening, turning or pressing something."
       },
       "example": {
         "ru": "",
@@ -324,8 +324,8 @@
         "en": "Acquiring, transferring and losing items"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок получает, передаёт или теряет предмет, меняя доступные способы решения задачи.",
+        "en": "The player acquires, transfers or loses an item, changing the available ways to solve a problem."
       },
       "example": {
         "ru": "",
@@ -408,8 +408,8 @@
         "en": "Using items"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок выбирает предмет и подходящую цель, чтобы вызвать предусмотренное правилом изменение.",
+        "en": "The player selects an item and a suitable target to cause a rule-defined change."
       },
       "example": {
         "ru": "",
@@ -492,8 +492,8 @@
         "en": "Combining, crafting and disassembly"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок соединяет или разбирает предметы, получая другие инструменты и материалы.",
+        "en": "The player combines or dismantles items to obtain different tools and materials."
       },
       "example": {
         "ru": "",
@@ -576,8 +576,8 @@
         "en": "Item properties and states"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок меняет свойство предмета, чтобы он начал иначе взаимодействовать с миром.",
+        "en": "The player changes an item property so that it interacts differently with the world."
       },
       "example": {
         "ru": "",
@@ -667,8 +667,8 @@
         "en": "Inventory storage and limits"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Ограничения хранения заставляют игрока выбирать, какие предметы носить, оставлять или возвращать.",
+        "en": "Storage limits require the player to choose which items to carry, leave or retrieve."
       },
       "example": {
         "ru": "",
@@ -751,8 +751,8 @@
         "en": "Gathering and processing information"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок записывает и сопоставляет сведения, превращая наблюдения в доступное решение.",
+        "en": "The player records and compares information to turn observations into an available solution."
       },
       "example": {
         "ru": "",
@@ -835,8 +835,8 @@
         "en": "Knowledge as a progression condition"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Продвижение зависит от понимания правила или факта, а не только от полученного предмета.",
+        "en": "Progress depends on understanding a rule or fact alongside acquiring items."
       },
       "example": {
         "ru": "",
@@ -926,8 +926,8 @@
         "en": "Deduction, proof and hypothesis testing"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок формулирует вывод и проверяет, согласуется ли он с доступными свидетельствами.",
+        "en": "The player forms a conclusion and checks whether the available evidence supports it."
       },
       "example": {
         "ru": "",
@@ -1012,8 +1012,8 @@
         "en": "Reconstructing events and history"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок восстанавливает порядок и причины событий по сохранившимся следам.",
+        "en": "The player reconstructs event order and causes from the traces that remain."
       },
       "example": {
         "ru": "",
@@ -1096,8 +1096,8 @@
         "en": "Ciphers, languages and sign systems"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок выводит значение символов и правила преобразования сообщений.",
+        "en": "The player infers symbol meanings and rules for transforming messages."
       },
       "example": {
         "ru": "",
@@ -1180,8 +1180,8 @@
         "en": "Dialogue interactions"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок выбирает реплики и темы, чтобы получить сведения или изменить ход разговора.",
+        "en": "The player chooses lines and topics to obtain information or change a conversation."
       },
       "example": {
         "ru": "",
@@ -1264,8 +1264,8 @@
         "en": "Persuasion, deception and verbal conflict"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок использует аргументы, ложь или давление, учитывая реакцию собеседника.",
+        "en": "The player uses arguments, deception or pressure while considering the other character's response."
       },
       "example": {
         "ru": "",
@@ -1348,8 +1348,8 @@
         "en": "Relationships and social simulation"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игровые отношения меняются после действий и определяют дальнейшие реакции персонажей.",
+        "en": "Relationships change after actions and shape characters' later responses."
       },
       "example": {
         "ru": "",
@@ -1432,8 +1432,8 @@
         "en": "Exchanging services and task chains"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Выполнение поручения даёт услугу или предмет, необходимый для следующего звена задачи.",
+        "en": "Completing a task earns a service or item needed for the next dependency."
       },
       "example": {
         "ru": "",
@@ -1516,8 +1516,8 @@
         "en": "Mechanisms, switches and tuning"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок меняет положения органов управления и проверяет состояние механизма.",
+        "en": "The player changes controls and checks the resulting mechanism state."
       },
       "example": {
         "ru": "",
@@ -1600,8 +1600,8 @@
         "en": "Flows, networks and resource distribution"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок соединяет узлы и распределяет потоки, учитывая связи и ограничения сети.",
+        "en": "The player connects nodes and distributes flows while respecting network links and limits."
       },
       "example": {
         "ru": "",
@@ -1684,8 +1684,8 @@
         "en": "Physics, environmental properties and experiment"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок экспериментирует со свойствами материалов и среды, наблюдая последствия.",
+        "en": "The player experiments with material and environmental properties and observes the consequences."
       },
       "example": {
         "ru": "",
@@ -1768,8 +1768,8 @@
         "en": "Spatial, visual and optical puzzles"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок меняет расположение объектов, свет или точку обзора для получения нужной конфигурации.",
+        "en": "The player changes object placement, light or viewpoint to produce a required configuration."
       },
       "example": {
         "ru": "",
@@ -1852,8 +1852,8 @@
         "en": "Sound, music and rhythm"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок различает и воспроизводит звуки, мелодии или ритмические последовательности.",
+        "en": "The player distinguishes and reproduces sounds, melodies or rhythmic sequences."
       },
       "example": {
         "ru": "",
@@ -1936,8 +1936,8 @@
         "en": "Logic, mathematics and combinatorics"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок применяет логические и количественные ограничения, исключая неподходящие комбинации.",
+        "en": "The player applies logical and quantitative constraints to rule out invalid combinations."
       },
       "example": {
         "ru": "",
@@ -2020,8 +2020,8 @@
         "en": "Maps, routes and mazes"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок использует карту и ориентиры, чтобы выбрать и проверить путь через пространство.",
+        "en": "The player uses maps and landmarks to select and verify a route through a space."
       },
       "example": {
         "ru": "",
@@ -2104,8 +2104,8 @@
         "en": "Sequences and staged actions"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок задаёт порядок действий, учитывая зависимости и промежуточные состояния.",
+        "en": "The player orders actions while accounting for dependencies and intermediate states."
       },
       "example": {
         "ru": "",
@@ -2188,8 +2188,8 @@
         "en": "Time, schedules and waiting"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Доступность действия зависит от расписания, длительности или выбранного момента.",
+        "en": "An action becomes available according to a schedule, duration or chosen moment."
       },
       "example": {
         "ru": "",
@@ -2272,8 +2272,8 @@
         "en": "Rewinding, loops and changing history"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок возвращает или повторяет события, используя знания о предыдущем прохождении.",
+        "en": "The player rewinds or repeats events using knowledge from earlier attempts."
       },
       "example": {
         "ru": "",
@@ -2356,8 +2356,8 @@
         "en": "Worlds, layers and state switching"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Переключение слоя мира меняет доступные объекты, правила и возможные действия.",
+        "en": "Switching world layers changes available objects, rules and actions."
       },
       "example": {
         "ru": "",
@@ -2440,8 +2440,8 @@
         "en": "Abilities, forms and controlled entities"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок меняет форму или управляемую сущность, получая другой набор действий.",
+        "en": "The player changes form or controlled entity to gain a different set of actions."
       },
       "example": {
         "ru": "",
@@ -2524,8 +2524,8 @@
         "en": "Multiple protagonists and coordination"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок координирует нескольких героев, распределяя действия между их возможностями.",
+        "en": "The player coordinates multiple protagonists by assigning actions to their different abilities."
       },
       "example": {
         "ru": "",
@@ -2608,8 +2608,8 @@
         "en": "NPC, animal and living-system behavior"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок наблюдает и меняет поведение существ, используя их потребности и реакции.",
+        "en": "The player observes and influences creatures through their needs and responses."
       },
       "example": {
         "ru": "",
@@ -2692,8 +2692,8 @@
         "en": "Stealth, disguise and trace concealment"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок управляет заметностью и следами, чтобы избежать обнаружения или изменить чужие выводы.",
+        "en": "The player manages visibility and traces to avoid detection or influence others' conclusions."
       },
       "example": {
         "ru": "",
@@ -2776,8 +2776,8 @@
         "en": "Computers, phones and media environments"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок исследует устройства и медиаматериалы, используя их интерфейсы как часть игрового мира.",
+        "en": "The player explores devices and media through interfaces that belong to the game world."
       },
       "example": {
         "ru": "",
@@ -2860,8 +2860,8 @@
         "en": "Content creation and narrative control"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок создаёт содержание или задаёт события, влияющие на развитие рассказа.",
+        "en": "The player creates content or stages events that shape the unfolding narrative."
       },
       "example": {
         "ru": "",
@@ -2944,8 +2944,8 @@
         "en": "Motor and arcade sequences"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Короткое испытание требует точности движения, реакции или удержания состояния.",
+        "en": "A short challenge requires movement precision, reactions or maintaining a state."
       },
       "example": {
         "ru": "",
@@ -3028,8 +3028,8 @@
         "en": "Board, card and game challenges"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Внутриигровое испытание использует отдельный набор настольных, карточных или иных игровых правил.",
+        "en": "An in-game challenge uses a distinct set of board, card or other game rules."
       },
       "example": {
         "ru": "",
@@ -3112,8 +3112,8 @@
         "en": "RPG systems, economy, survival and management"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок распределяет ресурсы, развивает способности и поддерживает систему в рабочем состоянии.",
+        "en": "The player allocates resources, develops abilities and keeps a system functioning."
       },
       "example": {
         "ru": "",
@@ -3196,8 +3196,8 @@
         "en": "Metagame and the fourth wall"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок использует знание интерфейса и условностей игры как часть решения внутри или вокруг её мира.",
+        "en": "The player uses knowledge of the interface and game conventions as part of a solution within or around its world."
       },
       "example": {
         "ru": "",
@@ -3280,8 +3280,8 @@
         "en": "Cooperative play and device capabilities"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Задача использует обмен между участниками или доступные возможности устройства.",
+        "en": "A challenge uses coordination between participants or the device's available capabilities."
       },
       "example": {
         "ru": "",
@@ -3364,8 +3364,8 @@
         "en": "Dependencies and task organization"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок определяет зависимости между задачами и выбирает допустимый порядок выполнения.",
+        "en": "The player identifies task dependencies and chooses a valid execution order."
       },
       "example": {
         "ru": "",
@@ -3448,8 +3448,8 @@
         "en": "Solutions, choices and consequences"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Выбор решения меняет последующие условия, доступные действия или итог ситуации.",
+        "en": "Choosing a solution changes later conditions, available actions or the outcome."
       },
       "example": {
         "ru": "",
@@ -3532,8 +3532,8 @@
         "en": "Errors, retries and variation"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игрок учится на ошибке и повторяет попытку с сохранёнными знаниями или изменёнными условиями.",
+        "en": "The player learns from failure and retries with retained knowledge or changed conditions."
       },
       "example": {
         "ru": "",
@@ -3623,8 +3623,8 @@
         "en": "Input and action selection"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Способ ввода определяет, как игрок обозначает намерение и выбирает действие.",
+        "en": "The input method determines how the player expresses an intention and selects an action."
       },
       "example": {
         "ru": "",
@@ -3707,8 +3707,8 @@
         "en": "Memory, hints and playthrough convenience"
       },
       "description": {
-        "ru": "",
-        "en": ""
+        "ru": "Игра сохраняет сведения и предлагает подсказки, помогая восстановить контекст и выбрать следующий шаг.",
+        "en": "The game records information and offers hints to help recover context and choose a next step."
       },
       "example": {
         "ru": "",

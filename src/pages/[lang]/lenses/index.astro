@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLenses } from '../../../lib/lenses.mjs';
 import { locales, path, REPO, type Locale } from '../../../lib/site';
 export function getStaticPaths() {
@@ -163,6 +164,11 @@ const catalog = getLenses(lang);
                     {ru ? 'Прямая ссылка' : 'Permalink'}
                   </a>
                 </div>
+                <KnowledgeLinks
+                  identity={`lens/${lens.id}`}
+                  lang={lang}
+                  compact
+                />
               </div>
             </details>
           ))}

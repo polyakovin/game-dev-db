@@ -13,3 +13,13 @@ Human pages are `{lang}/learn/{id}/` relative to `/game-dev-db/`. Four homepage 
 Existing lessons, Markdown endpoints, full corpus and JSON lesson exports keep their schema and now include the new content automatically. Built-output checks compare path JSON to the shared records and HTML ordering to exported IDs. Browser tests cover language switching, adjacent lessons, discovery, keyboard operation, script-free reading and narrow layouts.
 
 Primary-source review and authorship limits are recorded in [the research notes](research/learning-paths.md). Use ordinary internal links to exercises and lenses in lesson Markdown so those connections survive when a lesson is fetched independently.
+
+## Reusable paths and outcomes (2026-10-20)
+
+Five paths now include a first verifiable prototype. Lesson membership is reusable:
+a lesson can appear in several independently ordered paths, and its page shows each
+path's previous/next navigation. Prerequisites may be empty for the starter path.
+Each path has bilingual `outcome`, `checks` and `practiceRationale`; these fields
+appear unchanged in localized HTML and JSON. NPC and balance link the new capstones.
+The outcome and checks describe a deliverable to create, never a claimed test result.
+This supersedes the earlier single-membership and nonempty-prerequisite constraints.

@@ -13,6 +13,8 @@ sources:
     url: https://gamebalanceconcepts.wordpress.com/2010/07/21/level-3-transitive-mechanics-and-cost-curves/
 ---
 
+## Prerequisites
+
 Two weapons with different numbers may offer the same decision: take the one that is better in every situation. Begin balancing by asking what the player pays and when they receive value.
 
 ## The principle
@@ -21,7 +23,11 @@ Cost can include resources, time, an occupied slot and a forgone opportunity. Co
 
 An option dominates another in the selected model if it is no worse on every relevant criterion and better on at least one. “Relevant” requires explicit assumptions: range or accuracy cannot silently disappear from a real game's comparison.
 
-## Example: rescue tools
+<span id="example-rescue-tools"></span>
+
+## Practical example
+
+### Rescue tools
 
 In an illustrative game, players cut through debris. A saw removes 12 durability per action and consumes 3 charges. A cutter removes 8 and consumes 2. Both remove 4 durability per charge. That does not establish equivalence.
 

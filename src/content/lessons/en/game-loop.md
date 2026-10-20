@@ -6,7 +6,7 @@ description: 'Separate simulation speed from frame rate and verify pauses, frame
 category: 'foundations'
 level: 'beginner'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['game-loop', 'time', 'simulation']
 sources:
   [
@@ -25,7 +25,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 You only need variables, functions, and coordinates. By the end, you should be able to identify what updates the world, state the units of movement speed, and explain why a rendered frame is not necessarily one simulation step.
 
@@ -37,7 +39,11 @@ The expression `x += 3` moves three units per call. More calls therefore produce
 
 A simulation sensitive to step size can use a fixed update interval. Accumulated real time is consumed in equal simulation steps, while rendering happens independently. Limiting catch-up steps requires a deliberate overload policy, such as letting simulation time fall behind. [Fix Your Timestep!](https://github.com/mas-bandwidth/gafferongames/blob/main/content/post/fix_your_timestep.md) explores that tradeoff.
 
-## A concrete exercise
+<span id="a-concrete-exercise"></span>
+
+## Practical example
+
+### A concrete exercise
 
 Start with one square and no collisions. Give it a speed of 120 units per second. After two seconds of uninterrupted movement, it should travel 240 units, regardless of how many frames were displayed.
 
@@ -52,7 +58,7 @@ render():
 
 This is teaching pseudocode, not a complete engine loop. Call `update` 120 times using `1/60`, then run a fresh case with 60 calls using `1/30`. Compare final positions with a small numerical tolerance. Finally, try uneven intervals whose sum is still two seconds.
 
-In a browser, `requestAnimationFrame` schedules a callback before repainting and normally pauses in background tabs. Its timestamp uses milliseconds; see the [MDN reference](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame). Define a resume policy. For this exercise, discard the old timestamp when focus returns so that the square continues from a paused position.
+In a browser, `requestAnimationFrame` schedules a callback (a function run by the browser) before repainting and normally pauses in background tabs. Its timestamp uses milliseconds; see the [MDN reference](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame). Define a resume policy. For this exercise, discard the old timestamp when focus returns so that the square continues from a paused position.
 
 ## Common mistakes
 

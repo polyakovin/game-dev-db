@@ -1,5 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getMechanics } from '../../../lib/mechanics.mjs';
 import { locales, path, ui, REPO } from '../../../lib/site';
 export function getStaticPaths() {
@@ -26,13 +27,14 @@ const t = ui[lang];
   <a class="back-link" href={path(`${lang}/mechanics/`)}>
     ← {ru ? 'Все справочники механик' : 'All mechanic references'}
   </a>
-  {['children-education', 'children', 'education'].includes(catalog.id) && (
+  {(catalog.status === 'archived' ||
+    ['children', 'education'].includes(catalog.id)) && (
     <aside
       class="notice catalog-scope-notice"
       data-catalog-scope
       aria-label={ru ? 'Связанные справочники' : 'Related references'}
     >
-      {catalog.id === 'children-education' ? (
+      {catalog.status === 'archived' ? (
         <>
           <p>
             {ru
@@ -40,18 +42,13 @@ const t = ui[lang];
               : 'This reference has been split into two. Children’s games are defined by audience; educational games by learning purpose. The original version remains below for existing links.'}
           </p>
           <ul>
-            <li>
-              <a href={path(`${lang}/mechanics/children/`)}>
-                {ru ? 'Механики детских игр' : 'Children’s game mechanics'}
-              </a>
-            </li>
-            <li>
-              <a href={path(`${lang}/mechanics/education/`)}>
-                {ru
-                  ? 'Механики образовательных игр'
-                  : 'Educational game mechanics'}
-              </a>
-            </li>
+            {catalog.supersededBy.map((id: string) => (
+              <li>
+                <a href={path(`${lang}/mechanics/${id}/`)}>
+                  {getMechanics(lang).find((c) => c.id === id)?.title}
+                </a>
+              </li>
+            ))}
           </ul>
         </>
       ) : catalog.id === 'children' ? (
@@ -175,6 +172,7 @@ const t = ui[lang];
                 class="mechanic-family"
                 data-family
                 data-section={section.id}
+                data-categories={family.categoryIds.join(' ')}
               >
                 <summary>
                   <span class="family-number">
@@ -191,6 +189,9 @@ const t = ui[lang];
                   </span>
                 </summary>
                 <div class="mechanic-family-body">
+                  {family.classification && (
+                    <p class="small-note">{family.classification}</p>
+                  )}
                   {family.branches.map((branch) => (
                     <section data-branch>
                       <h3 id={branch.id} data-branch-title>
@@ -252,6 +253,11 @@ const t = ui[lang];
                       ))}
                     </div>
                   )}
+                  <KnowledgeLinks
+                    identity={`mechanic/${family.canonicalId}`}
+                    lang={lang}
+                    compact
+                  />
                 </div>
               </details>
             ))}

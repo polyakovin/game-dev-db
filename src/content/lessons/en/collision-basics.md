@@ -6,7 +6,7 @@ description: 'Separate overlap detection, physical response, and gameplay events
 category: 'engineering'
 level: 'intermediate'
 minutes: 6
-updatedAt: '2026-10-09'
+updatedAt: '2026-10-20'
 tags: ['collision', 'physics', 'testing']
 sources:
   [
@@ -21,7 +21,9 @@ sources:
   ]
 ---
 
-## Before you start
+<span id="before-you-start"></span>
+
+## Prerequisites
 
 You need coordinates and basic conditions. Begin with two unrotated rectangles. The goal is to define exactly what contact means without confusing geometry with damage rules.
 
@@ -33,7 +35,11 @@ For axis-aligned rectangles, compare their intervals on both axes. A larger scen
 
 When using an engine, first learn its physics object types and interaction filters. The [Godot physics introduction](https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html), for example, distinguishes detection areas from physical bodies and explains collision layers and masks. Do not place custom movement on top of a physics solver without understanding their update order.
 
-## Example: a hazard area
+<span id="example-a-hazard-area"></span>
+
+## Practical example
+
+### A hazard area
 
 Assume rectangle coordinates describe the top-left corner and dimensions are positive. For this exercise, touching edges without overlapping area does not count as a hit.
 

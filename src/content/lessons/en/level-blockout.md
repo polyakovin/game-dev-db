@@ -15,6 +15,8 @@ sources:
     url: https://book.leveldesignbook.com/process/blockout/metrics
 ---
 
+## Prerequisites
+
 A blockout, or graybox, tests play in a space that is still easy to rebuild. Cubes, planes and placeholder signs are enough when the character already moves according to the real rules.
 
 ## The principle
@@ -23,7 +25,11 @@ A floor plan shows connections between rooms. A playable draft shows how those c
 
 Start with a question: for example, “Can the player notice the closing door and choose a detour in time?” An attractive editor view cannot answer it. If the core mechanic is missing, conclusions about suitable geometry remain provisional.
 
-## Example: a warehouse door
+<span id="example-a-warehouse-door"></span>
+
+## Practical example
+
+### A warehouse door
 
 This is an original teaching scenario, not a reported test result. The character is 0.8 m wide and moves at 4 m/s. A warehouse has a direct corridor of 12 m and a detour of 20 m. Without stops, they take 3 and 5 seconds. The direct door closes 4 seconds after a signal.
 

@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ResourceCard from '../../components/ResourceCard.astro';
+import KnowledgeLinks from '../../components/KnowledgeLinks.astro';
 import { getResources, resourceGroup } from '../../lib/resources.mjs';
 import { orderEntries } from '../../lib/content-order.mjs';
 import { locales, type Locale } from '../../lib/site';
@@ -125,7 +126,14 @@ const description =
       <p>{group.description}</p>
       <div class="resource-list">
         {group.resources.map((resource) => (
-          <ResourceCard resource={resource} lang={lang} />
+          <div id={`resource-${resource.id}`}>
+            <ResourceCard resource={resource} lang={lang} />
+            <KnowledgeLinks
+              identity={`resource/${resource.id}`}
+              lang={lang}
+              compact
+            />
+          </div>
         ))}
       </div>
     </section>

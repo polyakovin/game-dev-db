@@ -16,6 +16,9 @@ export function getLearningPaths(lang) {
     title: entry.title[lang],
     description: entry.description[lang],
     updatedAt: entry.updatedAt,
+    outcome: entry.outcome[lang],
+    checks: entry.checks.map((check) => check[lang]),
+    practiceRationale: entry.practiceRationale[lang],
     url: absolute(`${lang}/learn/${entry.id}/`),
     lessons: entry.lessons.map(lesson),
     prerequisites: entry.prerequisites.map(lesson),
@@ -44,7 +47,6 @@ export function learningPathRecords() {
 export function validateLearningPaths(available, paths = data) {
   const errors = [];
   const ids = new Set();
-  const membership = new Set();
   for (const entry of paths) {
     const at = `learning-paths/${entry.id}`;
     if (
@@ -61,16 +63,32 @@ export function validateLearningPaths(available, paths = data) {
     )
       errors.push(`${at}: invalid update date`);
     for (const lang of ['ru', 'en']) {
-      for (const field of ['title', 'description'])
+      for (const field of [
+        'title',
+        'description',
+        'outcome',
+        'practiceRationale',
+      ])
         if (
           typeof entry[field]?.[lang] !== 'string' ||
           !entry[field][lang].trim()
         )
           errors.push(`${at}: missing ${field}.${lang}`);
+      if (
+        !Array.isArray(entry.checks) ||
+        !entry.checks.length ||
+        entry.checks.some(
+          (check) => typeof check?.[lang] !== 'string' || !check[lang].trim(),
+        )
+      )
+        errors.push(`${at}: missing checks.${lang}`);
     }
     for (const field of ['lessons', 'prerequisites', 'practice', 'lenses']) {
       const values = entry[field];
-      if (!Array.isArray(values) || values.length === 0) {
+      if (
+        !Array.isArray(values) ||
+        (field !== 'prerequisites' && values.length === 0)
+      ) {
         errors.push(`${at}: ${field} must be nonempty`);
         continue;
       }
@@ -86,9 +104,6 @@ export function validateLearningPaths(available, paths = data) {
       }
     }
     for (const id of Array.isArray(entry.lessons) ? entry.lessons : []) {
-      if (membership.has(id))
-        errors.push(`${at}: lesson ${id} belongs to multiple paths`);
-      membership.add(id);
       if (entry.prerequisites?.includes(id))
         errors.push(`${at}: lesson ${id} is its own prerequisite`);
     }

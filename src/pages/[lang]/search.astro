@@ -1,0 +1,161 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { locales, path, type Locale } from '../../lib/site';
+import { knowledgeTypes, typeLabels } from '../../lib/knowledge.mjs';
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const ru = lang === 'ru';
+const labels: Record<string, string> = typeLabels[lang];
+const sections = [
+  { route: '', ru: 'Уроки и маршруты', en: 'Lessons and learning paths' },
+  { route: 'mechanics/', ru: 'Механики', en: 'Mechanics' },
+  { route: 'practice/', ru: 'Упражнения', en: 'Exercises' },
+  { route: 'lenses/', ru: 'Призмы', en: 'Lenses' },
+  { route: 'resources/', ru: 'Ресурсы', en: 'Resources' },
+  { route: 'jams/', ru: 'Геймджемы и календари', en: 'Jams and calendars' },
+];
+---
+
+<Layout
+  lang={lang}
+  title={ru ? 'Поиск по всей базе' : 'Search the whole knowledge base'}
+  section="searchNav"
+  alternate="search/"
+>
+  <header class="page-header">
+    <div class="eyebrow">{ru ? 'Найти и применить' : 'Find and apply'}</div>
+    <h1>{ru ? 'Поиск по всей базе.' : 'Search the whole knowledge base.'}</h1>
+    <p>
+      {ru
+        ? 'Уроки, механики, упражнения, призмы и источники. Ищите по названию, определению, тексту и синонимам.'
+        : 'Lessons, mechanics, exercises, lenses and sources. Search titles, definitions, text and aliases.'}
+    </p>
+  </header>
+  <section
+    data-knowledge-search
+    data-index={path(`api/v1/knowledge/${lang}/search.json`)}
+    data-type-labels={JSON.stringify(typeLabels[lang])}
+  >
+    <div class="search-controls" data-search-controls hidden>
+      <label for="knowledge-query">
+        {ru ? 'Что хотите найти?' : 'What do you want to find?'}
+      </label>
+      <div class="search-box">
+        <input
+          id="knowledge-query"
+          type="search"
+          autocomplete="off"
+          placeholder={
+            ru
+              ? 'Например, гринд, столкновения или память NPC'
+              : 'For example, grind, collisions or NPC memory'
+          }
+        />
+      </div>
+      <div class="search-filters">
+        <label for="knowledge-type">
+          {ru ? 'Тип материала' : 'Content type'}
+        </label>
+        <select id="knowledge-type">
+          <option value="all">{ru ? 'Все материалы' : 'All content'}</option>
+          {knowledgeTypes.map((type) => (
+            <option value={type}>{labels[type]}</option>
+          ))}
+        </select>
+        <button class="copy-button" type="button" data-knowledge-reset>
+          {ru ? 'Сбросить' : 'Reset'}
+        </button>
+      </div>
+    </div>
+    <p aria-live="polite" data-knowledge-status></p>
+    <div class="lesson-grid" data-knowledge-results></div>
+    <div class="empty-state" data-knowledge-empty hidden>
+      <h2>{ru ? 'Совпадений нет' : 'No matches'}</h2>
+      <p>
+        {ru
+          ? 'Попробуйте другое слово или снимите ограничение типа.'
+          : 'Try another term or remove the type filter.'}
+      </p>
+      <button class="copy-button" type="button" data-knowledge-reset>
+        {ru ? 'Сбросить' : 'Reset'}
+      </button>
+    </div>
+    <button class="copy-button" type="button" data-knowledge-more hidden>
+      {ru ? 'Показать ещё' : 'Show more'}
+    </button>
+  </section>
+  <nav
+    class="search-sections"
+    aria-label={ru ? 'Открыть раздел базы' : 'Open a section'}
+  >
+    <h2>{ru ? 'Просмотреть по разделам' : 'Browse by section'}</h2>
+    <ul>
+      {sections.map((section) => (
+        <li>
+          <a href={path(`${lang}/${section.route}`)}>{section[lang]}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+  <noscript>
+    <p class="notice">
+      {ru
+        ? 'Для поиска нужен JavaScript. Все материалы доступны в разделах по ссылкам выше.'
+        : 'Search requires JavaScript. All content remains available through the section links above.'}
+    </p>
+  </noscript>
+</Layout>
+<script>
+  import '../../scripts/knowledge-search';
+</script>
+<style>
+  .search-controls {
+    max-width: 800px;
+  }
+  .search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0;
+  }
+  select {
+    max-width: 100%;
+    padding: 0.65rem;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--control-line);
+    border-radius: 5px;
+    font: inherit;
+  }
+  .search-sections {
+    margin-top: 3rem;
+  }
+  .search-sections ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  .search-sections a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  [data-knowledge-status] {
+    margin: 1.5rem 0;
+    color: var(--muted);
+  }
+  [data-knowledge-more] {
+    margin-top: 1.5rem;
+  }
+  [data-knowledge-results] :global(h2) {
+    font-size: 1.15rem;
+    margin: 0.8rem 0;
+  }
+  [data-knowledge-results] :global(.lesson-card) {
+    min-width: 0;
+  }
+</style>

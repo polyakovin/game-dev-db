@@ -15,6 +15,8 @@ sources:
     url: https://www.gameaipro.com/GameAIPro/GameAIPro_Chapter09_An_Introduction_to_Utility_Theory.pdf
 ---
 
+## Prerequisites
+
 A character may need charging, repairs and helping the player simultaneously. Write the selection rule explicitly before adding behavioral architecture.
 
 ## The principle
@@ -23,7 +25,11 @@ First filter eligible actions, then select one, then execute it. Do not let each
 
 A state machine suits a few distinct modes. A behavior tree suits sequences of conditions and actions. Comparing situational value can use a common scoring scale, as described in the utility-theory chapter. Scoring does not replace prohibitions or eligibility checks.
 
-## Example: a maintenance robot
+<span id="example-a-maintenance-robot"></span>
+
+## Practical example
+
+### A maintenance robot
 
 In this teaching model, a robot can charge, repair a pump or help the player open a heavy door. Battery is normalized from 0 to 1. Below 0.1, a mandatory rule sends it to an available charger. If no route exists, it waits safely and reports why.
 
