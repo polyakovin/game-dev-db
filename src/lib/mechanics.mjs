@@ -32,7 +32,7 @@ import { absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 import { resolveMechanicCatalog } from './mechanic-source.mjs';
 
-/** @typedef {Omit<typeof voice, 'families'> & { provenance?: string, families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
+/** @typedef {Omit<typeof voice, 'families' | 'sections'> & { provenance?: string, sections: (typeof voice.sections[number] & { group?: { ru: string, en: string } })[], families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
 export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ (
   [
     voice,
@@ -113,6 +113,7 @@ export function getMechanics(lang, { includeArchived = false } = {}) {
       sections: catalog.sections.map((section) => ({
         id: section.id,
         title: section.title[lang],
+        ...(section.group ? { group: section.group[lang] } : {}),
       })),
       families,
       notes: catalog.notes.map((note) => ({
@@ -152,6 +153,25 @@ export function getMechanics(lang, { includeArchived = false } = {}) {
   });
 }
 
+/**
+ * Preserve reading order and keep ungrouped catalogs flat.
+ * @template {{ group?: string }} T
+ * @param {T[]} sections
+ */
+export function groupMechanicSections(sections) {
+  /** @type {{ title?: string, sections: T[] }[]} */
+  const groups = [];
+  for (const section of sections) {
+    let group = groups.at(-1);
+    if (!group || group.title !== section.group) {
+      group = { title: section.group, sections: [] };
+      groups.push(group);
+    }
+    group.sections.push(section);
+  }
+  return groups;
+}
+
 /** @param {ReturnType<typeof getMechanics>[number]} catalog */
 export function mechanicsMarkdown(catalog) {
   const ru = catalog.lang === 'ru';
@@ -172,13 +192,18 @@ export function mechanicsMarkdown(catalog) {
           '',
         ]
       : []),
-    ...catalog.sections.flatMap((section) => [
-      `## ${section.title}`,
+    ...catalog.sections.flatMap((section, index) => [
+      ...(section.group && section.group !== catalog.sections[index - 1]?.group
+        ? [`## ${section.group}`, '']
+        : []),
+      `${section.group ? '###' : '##'} ${section.title}`,
+      '',
+      `<a id="${section.id}"></a>`,
       '',
       ...catalog.families
         .filter((f) => f.section === section.id)
         .flatMap((f) => [
-          `### ${catalog.families.indexOf(f) + 1}. ${f.title}`,
+          `${section.group ? '####' : '###'} ${catalog.families.indexOf(f) + 1}. ${f.title}`,
           '',
           `<a id="${f.id}"></a>`,
           `id: ${f.id}`,
@@ -187,7 +212,7 @@ export function mechanicsMarkdown(catalog) {
           '',
           ...(f.description ? [f.description, ''] : []),
           ...f.branches.flatMap((branch) => [
-            `#### ${branch.title}`,
+            `${section.group ? '#####' : '####'} ${branch.title}`,
             '',
             `<a id="${branch.id}"></a>`,
             ...branch.variants.map((v) => `- ${v.text} <a id="${v.id}"></a>`),
@@ -201,7 +226,7 @@ export function mechanicsMarkdown(catalog) {
             : []),
           ...(f.references.length
             ? [
-                `#### ${ru ? 'Референсы и материалы' : 'References and further reading'}`,
+                `${section.group ? '#####' : '####'} ${ru ? 'Референсы и материалы' : 'References and further reading'}`,
                 '',
                 ...f.references.map(
                   (reference) => `- [${reference.title}](${reference.url})`,
@@ -352,6 +377,8 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
     for (const s of catalog.sections) {
       identity(s.id);
       localized(s.title, `${location}/${s.id}`);
+      if (s.group !== undefined)
+        localized(s.group, `${location}/${s.id}/group`);
       check(
         catalog.families.some((f) => f.section === s.id),
         location,

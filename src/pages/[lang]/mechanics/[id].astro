@@ -1,7 +1,10 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
-import { getMechanics } from '../../../lib/mechanics.mjs';
+import {
+  getMechanics,
+  groupMechanicSections,
+} from '../../../lib/mechanics.mjs';
 import { locales, path, ui, REPO } from '../../../lib/site';
 export function getStaticPaths() {
   return locales.flatMap((lang) =>
@@ -15,6 +18,7 @@ const { catalog } = Astro.props;
 const lang = catalog.lang;
 const ru = lang === 'ru';
 const t = ui[lang];
+const sectionGroups = groupMechanicSections(catalog.sections);
 ---
 
 <Layout
@@ -124,9 +128,17 @@ const t = ui[lang];
         <label for="mechanic-section">{ru ? 'Раздел' : 'Section'}</label>
         <select id="mechanic-section">
           <option value="all">{ru ? 'Все разделы' : 'All sections'}</option>
-          {catalog.sections.map((s) => (
-            <option value={s.id}>{s.title}</option>
-          ))}
+          {sectionGroups.map((group) =>
+            group.title ? (
+              <optgroup label={group.title}>
+                {group.sections.map((s) => (
+                  <option value={s.id}>{s.title}</option>
+                ))}
+              </optgroup>
+            ) : (
+              group.sections.map((s) => <option value={s.id}>{s.title}</option>)
+            ),
+          )}
         </select>
         <div class="mechanics-actions">
           <button type="button" data-expand>
@@ -157,111 +169,136 @@ const t = ui[lang];
           {t.reset}
         </button>
       </div>
-      {catalog.sections.map((section) => (
-        <section
-          id={section.id}
-          class="mechanics-section"
-          data-mechanic-section
+      {sectionGroups.map((group) => (
+        <div
+          class:list={[
+            'mechanics-section-group',
+            { 'is-grouped': group.title },
+          ]}
+          data-mechanic-group
         >
-          <h2>{section.title}</h2>
-          {catalog.families
-            .filter((f) => f.section === section.id)
-            .map((family) => (
-              <details
-                id={family.id}
-                class="mechanic-family"
-                data-family
-                data-section={section.id}
-                data-categories={family.categoryIds.join(' ')}
+          {group.title && <h2>{group.title}</h2>}
+          {group.sections.map((section) => {
+            const SectionHeading = group.title ? 'h3' : 'h2';
+            const BranchHeading = group.title ? 'h4' : 'h3';
+            return (
+              <section
+                id={section.id}
+                class="mechanics-section"
+                data-mechanic-section
               >
-                <summary>
-                  <span class="family-number">
-                    {catalog.families.indexOf(family) + 1}
-                  </span>
-                  <span class="family-heading">
-                    <strong data-family-title>{family.title}</strong>
-                    {family.description && (
-                      <span data-family-description>{family.description}</span>
-                    )}
-                  </span>
-                  <span class="family-count">
-                    {family.branches.reduce((n, b) => n + b.variants.length, 0)}
-                  </span>
-                </summary>
-                <div class="mechanic-family-body">
-                  {family.classification && (
-                    <p class="small-note">{family.classification}</p>
-                  )}
-                  {family.branches.map((branch) => (
-                    <section data-branch>
-                      <h3 id={branch.id} data-branch-title>
-                        {branch.title}
-                      </h3>
-                      <ul>
-                        {branch.variants.map((variant) => (
-                          <li id={variant.id} data-variant>
-                            {variant.text}
-                          </li>
+                <SectionHeading>{section.title}</SectionHeading>
+                {catalog.families
+                  .filter((f) => f.section === section.id)
+                  .map((family) => (
+                    <details
+                      id={family.id}
+                      class="mechanic-family"
+                      data-family
+                      data-section={section.id}
+                      data-categories={family.categoryIds.join(' ')}
+                    >
+                      <summary>
+                        <span class="family-number">
+                          {catalog.families.indexOf(family) + 1}
+                        </span>
+                        <span class="family-heading">
+                          <strong data-family-title>{family.title}</strong>
+                          {family.description && (
+                            <span data-family-description>
+                              {family.description}
+                            </span>
+                          )}
+                        </span>
+                        <span class="family-count">
+                          {family.branches.reduce(
+                            (n, b) => n + b.variants.length,
+                            0,
+                          )}
+                        </span>
+                      </summary>
+                      <div class="mechanic-family-body">
+                        {family.classification && (
+                          <p class="small-note">{family.classification}</p>
+                        )}
+                        {family.branches.map((branch) => (
+                          <section data-branch>
+                            <BranchHeading id={branch.id} data-branch-title>
+                              {branch.title}
+                            </BranchHeading>
+                            <ul>
+                              {branch.variants.map((variant) => (
+                                <li id={variant.id} data-variant>
+                                  {variant.text}
+                                </li>
+                              ))}
+                            </ul>
+                          </section>
                         ))}
-                      </ul>
-                    </section>
+                        {family.example && (
+                          <p class="mechanic-example">
+                            <strong>
+                              {ru
+                                ? 'Пример проектирования.'
+                                : 'Design example.'}
+                            </strong>{' '}
+                            {family.example}
+                          </p>
+                        )}
+                        {family.references.length > 0 && (
+                          <section data-references>
+                            <BranchHeading>
+                              {ru
+                                ? 'Референсы и материалы'
+                                : 'References and further reading'}
+                            </BranchHeading>
+                            <ul>
+                              {family.references.map((reference) => (
+                                <li>
+                                  <a href={reference.url} data-reference>
+                                    {reference.title}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </section>
+                        )}
+                        {family.sourceUrls.length > 0 && (
+                          <div class="mechanic-example">
+                            <span>
+                              {family.references.length
+                                ? ru
+                                  ? 'Источник механики: '
+                                  : 'Mechanic source: '
+                                : ru
+                                  ? 'Примеры отдельных приёмов: '
+                                  : 'Examples of particular techniques: '}
+                            </span>
+                            {family.sourceUrls.map((url, i) => (
+                              <>
+                                <a href={url}>
+                                  {
+                                    catalog.sources.find((s) => s.url === url)
+                                      ?.title
+                                  }
+                                </a>
+                                {i < family.sourceUrls.length - 1 && ', '}
+                              </>
+                            ))}
+                          </div>
+                        )}
+                        <KnowledgeLinks
+                          identity={`mechanic/${family.canonicalId}`}
+                          lang={lang}
+                          compact
+                        />
+                      </div>
+                    </details>
                   ))}
-                  {family.example && (
-                    <p class="mechanic-example">
-                      <strong>
-                        {ru ? 'Пример проектирования.' : 'Design example.'}
-                      </strong>{' '}
-                      {family.example}
-                    </p>
-                  )}
-                  {family.references.length > 0 && (
-                    <section data-references>
-                      <h3>
-                        {ru
-                          ? 'Референсы и материалы'
-                          : 'References and further reading'}
-                      </h3>
-                      <ul>
-                        {family.references.map((reference) => (
-                          <li>
-                            <a href={reference.url} data-reference>
-                              {reference.title}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </section>
-                  )}
-                  {family.sourceUrls.length > 0 && (
-                    <div class="mechanic-example">
-                      <span>
-                        {family.references.length
-                          ? ru
-                            ? 'Источник механики: '
-                            : 'Mechanic source: '
-                          : ru
-                            ? 'Примеры отдельных приёмов: '
-                            : 'Examples of particular techniques: '}
-                      </span>
-                      {family.sourceUrls.map((url, i) => (
-                        <>
-                          <a href={url}>
-                            {catalog.sources.find((s) => s.url === url)?.title}
-                          </a>
-                          {i < family.sourceUrls.length - 1 && ', '}
-                        </>
-                      ))}
-                    </div>
-                  )}
-                  <KnowledgeLinks
-                    identity={`mechanic/${family.canonicalId}`}
-                    lang={lang}
-                    compact
-                  />
-                </div>
-              </details>
-            ))}
-        </section>
+              </section>
+            );
+          })}
+        </div>
       ))}
       {catalog.notes.map((note) => (
         <section id={note.id} class="mechanics-note">
@@ -298,13 +335,27 @@ const t = ui[lang];
     <aside class="mechanics-toc">
       <nav aria-label={t.toc} data-toc>
         <p class="nav-label">{t.toc}</p>
-        {[
-          ...catalog.sections,
-          ...catalog.notes,
-          { id: 'sources', title: ru ? 'Источники' : 'Sources' },
-        ].map((s) => (
-          <a href={`#${s.id}`}>{s.title}</a>
+        {sectionGroups.map((group) => (
+          <div class="mechanics-toc-group">
+            {group.title && <p class="toc-group-label">{group.title}</p>}
+            {group.sections.map((s) => (
+              <a href={`#${s.id}`}>{s.title}</a>
+            ))}
+          </div>
         ))}
+        <div
+          class:list={[
+            'mechanics-toc-notes',
+            { 'has-groups': sectionGroups.some((group) => group.title) },
+          ]}
+        >
+          {[
+            ...catalog.notes,
+            { id: 'sources', title: ru ? 'Источники' : 'Sources' },
+          ].map((s) => (
+            <a href={`#${s.id}`}>{s.title}</a>
+          ))}
+        </div>
       </nav>
     </aside>
   </div>

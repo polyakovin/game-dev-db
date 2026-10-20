@@ -49,9 +49,9 @@ test('RPG coverage includes four layers, major missing systems and every origina
     'banking-extraction',
   ])
     expect(source.families.map((f: any) => f.id)).toContain(id);
-  expect(
-    new Set(source.sections.map((s: any) => s.title.en.split(' · ')[0])),
-  ).toEqual(new Set(['Activities', 'Goals', 'Rewards', 'Constraints']));
+  expect(new Set(source.sections.map((s: any) => s.group.en))).toEqual(
+    new Set(['Activities', 'Goals', 'Rewards', 'Constraints']),
+  );
   for (const family of source.families) {
     expect(family.description.ru.length).toBeGreaterThan(20);
     expect(family.description.en.length).toBeGreaterThan(20);

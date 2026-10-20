@@ -76,6 +76,13 @@ const update = () => {
       ...section.querySelectorAll<HTMLDetailsElement>('[data-family]'),
     ].some((f) => !f.hidden);
   }
+  for (const group of document.querySelectorAll<HTMLElement>(
+    '[data-mechanic-group]',
+  )) {
+    group.hidden = ![
+      ...group.querySelectorAll<HTMLElement>('[data-mechanic-section]'),
+    ].some((section) => !section.hidden);
+  }
   resultStatus.textContent = `${resultStatus.dataset.familiesLabel}: ${familyCount} / ${families.length} · ${resultStatus.dataset.variantsLabel}: ${variantCount} / ${totalVariants}`;
   empty.hidden = familyCount !== 0;
 };
