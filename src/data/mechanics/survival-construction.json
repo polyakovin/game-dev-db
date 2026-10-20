@@ -1,0 +1,583 @@
+{
+  "id": "survival-construction",
+  "overviewGroupId": "g13",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Выживание, крафт и строительство",
+    "en": "Survival, crafting and construction"
+  },
+  "description": {
+    "ru": "Выживание связывает расход запасов, состояние среды и подготовку безопасного возвращения; строительство меняет эту зависимость.",
+    "en": "Survival connects supply consumption, environmental conditions and preparing a safe return; construction changes that relationship."
+  },
+  "intro": {
+    "ru": "Выживание связывает расход запасов, состояние среды и подготовку безопасного возвращения; строительство меняет эту зависимость. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Survival connects supply consumption, environmental conditions and preparing a safe return; construction changes that relationship. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t117",
+      "section": "mechanics",
+      "title": {
+        "ru": "Голод, жажда, температура и усталость",
+        "en": "Hunger, thirst, temperature and fatigue"
+      },
+      "description": {
+        "ru": "Потребности расходуют запас пригодности к действию; игрок решает, когда прервать задачу ради восстановления.",
+        "en": "Needs deplete readiness for action, requiring decisions about interrupting a task to recover."
+      },
+      "example": {
+        "ru": "Мокрый исследователь выбирает сушку у костра вместо продолжения короткой дороги по морозу.",
+        "en": "A soaked explorer chooses to dry beside a fire rather than continue a short freezing route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, даёт ли потребность выбор времени и способа восстановления вместо постоянного обязательного нажатия.",
+        "en": "Test whether a need offers recovery timing and method choices instead of constant mandatory input."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t117-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t117-v1",
+              "text": {
+                "ru": "Голод ограничивает длительность автономного выхода.",
+                "en": "Hunger limits the duration of an unsupported trip."
+              }
+            },
+            {
+              "id": "t117-v2",
+              "text": {
+                "ru": "Жажда связывает маршрут с источниками воды.",
+                "en": "Thirst connects routes to water sources."
+              }
+            },
+            {
+              "id": "t117-v3",
+              "text": {
+                "ru": "Температура меняет ценность одежды и укрытия.",
+                "en": "Temperature changes the value of clothes and shelter."
+              }
+            },
+            {
+              "id": "t117-v4",
+              "text": {
+                "ru": "Усталость ухудшает действие до вынужденного отдыха.",
+                "en": "Fatigue degrades action before forced rest."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t118",
+      "section": "mechanics",
+      "title": {
+        "ru": "Погода, сезоны и подготовка к угрозам",
+        "en": "Weather, seasons and threat preparation"
+      },
+      "description": {
+        "ru": "Предсказуемые изменения погоды и сезонов вознаграждают подготовку запасов, маршрутов и защиты до появления угрозы.",
+        "en": "Weather and seasonal changes reward preparing supplies, routes and protection before a threat arrives."
+      },
+      "example": {
+        "ru": "Замерзающая река открывает зимний путь, но оттепель требует заранее перенести склад.",
+        "en": "A frozen river opens a winter route, but a thaw requires relocating a depot beforehand."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, достаточно ли ранних признаков изменения погоды, чтобы подготовка была возможна без знания сценария.",
+        "en": "Test whether early weather signals allow preparation without prior knowledge of the scenario."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t118-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t118-v1",
+              "text": {
+                "ru": "Прогноз сообщает степень уверенности события.",
+                "en": "Forecasts state their confidence about an event."
+              }
+            },
+            {
+              "id": "t118-v2",
+              "text": {
+                "ru": "Сезон меняет доступность сырья и дорог.",
+                "en": "Seasons change material and route availability."
+              }
+            },
+            {
+              "id": "t118-v3",
+              "text": {
+                "ru": "Шторм заставляет закреплять уязвимые конструкции.",
+                "en": "Storms require securing vulnerable structures."
+              }
+            },
+            {
+              "id": "t118-v4",
+              "text": {
+                "ru": "Переходный период открывает короткое окно сбора.",
+                "en": "Transition periods create brief gathering windows."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t119",
+      "section": "mechanics",
+      "title": {
+        "ru": "Укрытия, лагеря и безопасные места",
+        "en": "Shelters, camps and safe places"
+      },
+      "description": {
+        "ru": "Укрытие превращает опасное место в точку восстановления, хранения и планирования, но требует выбора позиции и обслуживания.",
+        "en": "A shelter turns dangerous space into recovery, storage and planning support, but requires siting and upkeep."
+      },
+      "example": {
+        "ru": "Лагерь у воды удобен для пополнения запасов, но попадает в зону сезонного разлива.",
+        "en": "A waterside camp eases resupply but lies in a seasonal flood zone."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, видны ли ограничения убежища: безопасность от холода не должна молча означать защиту от всех угроз.",
+        "en": "Test that shelter limits are visible: cold protection should not silently imply safety from every threat."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t119-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t119-v1",
+              "text": {
+                "ru": "Костёр даёт тепло ценой дыма и топлива.",
+                "en": "A fire provides heat but consumes fuel and emits smoke."
+              }
+            },
+            {
+              "id": "t119-v2",
+              "text": {
+                "ru": "Лагерь переносится с потерей части запасов.",
+                "en": "A camp can move while losing some supplies."
+              }
+            },
+            {
+              "id": "t119-v3",
+              "text": {
+                "ru": "Запираемое помещение защищает от одной угрозы.",
+                "en": "An enclosed room protects against one threat type."
+              }
+            },
+            {
+              "id": "t119-v4",
+              "text": {
+                "ru": "Сеть убежищ сокращает риск дальнего маршрута.",
+                "en": "A shelter network reduces long-route exposure."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t120",
+      "section": "mechanics",
+      "title": {
+        "ru": "Сбор ресурсов и поиск пропитания",
+        "en": "Resource gathering and foraging"
+      },
+      "description": {
+        "ru": "Сбор превращает знание местности и доступность инструментов в возобновляемый запас материалов и пищи.",
+        "en": "Gathering converts terrain knowledge and tool access into a renewable stock of materials and food."
+      },
+      "example": {
+        "ru": "Следы птиц помогают найти ягоды, но полный сбор оставляет участок без быстрого восстановления.",
+        "en": "Bird activity leads to berries, but stripping the patch prevents quick recovery."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, различает ли игрок ещё не найденный, истощённый и недоступный без инструмента ресурс.",
+        "en": "Test whether players distinguish undiscovered, depleted and tool-inaccessible resource states."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t120-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t120-v1",
+              "text": {
+                "ru": "Сезонный ресурс требует правильного времени.",
+                "en": "Seasonal resources require the right timing."
+              }
+            },
+            {
+              "id": "t120-v2",
+              "text": {
+                "ru": "Инструмент меняет скорость и качество добычи.",
+                "en": "Tools change harvesting speed and output quality."
+              }
+            },
+            {
+              "id": "t120-v3",
+              "text": {
+                "ru": "Истощение переносит поиск на другой участок.",
+                "en": "Depletion moves the search to another patch."
+              }
+            },
+            {
+              "id": "t120-v4",
+              "text": {
+                "ru": "Признак окружения помогает распознать пригодный объект.",
+                "en": "Environmental signs identify usable objects."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t121",
+      "section": "mechanics",
+      "title": {
+        "ru": "Крафт, рецепты и открытие технологий",
+        "en": "Crafting, recipes and technology discovery"
+      },
+      "description": {
+        "ru": "Крафт связывает материалы, рецепт и рабочее место в производство нового предмета или открытие следующей технологии.",
+        "en": "Crafting connects materials, recipes and workstations to produce items or unlock the next technology."
+      },
+      "example": {
+        "ru": "Медный провод можно заменить серебряным, получив иной диапазон работы самодельного датчика.",
+        "en": "Silver wire replaces copper and changes a homemade sensor's operating range."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте предпросмотр расхода, отмену заказа и сохранение материалов при невозможном размещении результата.",
+        "en": "Test cost previews, order cancellation and material preservation when the output cannot be placed."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t121-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t121-v1",
+              "text": {
+                "ru": "Фиксированный рецепт требует точного состава.",
+                "en": "Fixed recipes require a precise ingredient set."
+              }
+            },
+            {
+              "id": "t121-v2",
+              "text": {
+                "ru": "Замена материала меняет свойства результата.",
+                "en": "Material substitution changes output properties."
+              }
+            },
+            {
+              "id": "t121-v3",
+              "text": {
+                "ru": "Эксперимент открывает ещё неизвестный рецепт.",
+                "en": "Experiments reveal previously unknown recipes."
+              }
+            },
+            {
+              "id": "t121-v4",
+              "text": {
+                "ru": "Станок ограничивает место и время изготовления.",
+                "en": "Workstations constrain crafting place and duration."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t122",
+      "section": "mechanics",
+      "title": {
+        "ru": "Свободное и модульное строительство",
+        "en": "Freeform and modular construction"
+      },
+      "description": {
+        "ru": "Строительство размещает элементы по правилам соединения или свободной геометрии, создавая пространство для дальнейших действий.",
+        "en": "Construction places elements using connection rules or free geometry, creating space for later actions."
+      },
+      "example": {
+        "ru": "Игрок строит мост из секций, а затем сохраняет подходящую опору как повторяемый модуль.",
+        "en": "A player builds a sectional bridge and saves a suitable support as a reusable module."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте отмену, пересечение деталей и доступность внутренних помещений после завершения строительства.",
+        "en": "Test undo, overlapping parts and access to interior spaces after construction is completed."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t122-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t122-v1",
+              "text": {
+                "ru": "Сетка упрощает предсказуемое совмещение деталей.",
+                "en": "A grid enables predictable part alignment."
+              }
+            },
+            {
+              "id": "t122-v2",
+              "text": {
+                "ru": "Сокет допускает только совместимые соединения.",
+                "en": "Sockets accept only compatible connections."
+              }
+            },
+            {
+              "id": "t122-v3",
+              "text": {
+                "ru": "Свободный поворот расширяет форму конструкции.",
+                "en": "Free rotation expands possible structure shapes."
+              }
+            },
+            {
+              "id": "t122-v4",
+              "text": {
+                "ru": "Чертёж повторяет проверенную группу элементов.",
+                "en": "Blueprints repeat a tested group of elements."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t123",
+      "section": "mechanics",
+      "title": {
+        "ru": "Прочность конструкций и разрушение",
+        "en": "Structural integrity and destruction"
+      },
+      "description": {
+        "ru": "Устойчивость конструкции зависит от опор, связей и нагрузки; разрушение меняет путь передачи усилий и доступную геометрию.",
+        "en": "Structural stability depends on supports, connections and loads; failure changes load paths and usable geometry."
+      },
+      "example": {
+        "ru": "Снятая колонна не рушит зал сразу, но переносит нагрузку на заметно трескающуюся балку.",
+        "en": "Removing a column shifts load to a visibly cracking beam before the hall collapses."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, объяснима ли потеря устойчивости по показанным опорам; не выдавайте условную игровую модель за расчёт здания.",
+        "en": "Test whether shown supports explain failure; do not present a simplified game model as a building calculation."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t123-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t123-v1",
+              "text": {
+                "ru": "Пролёт ограничивается допустимой длиной опоры.",
+                "en": "Spans are limited by supported reach."
+              }
+            },
+            {
+              "id": "t123-v2",
+              "text": {
+                "ru": "Материал задаёт различную прочность элемента.",
+                "en": "Materials give elements different strengths."
+              }
+            },
+            {
+              "id": "t123-v3",
+              "text": {
+                "ru": "Перегрузка предупреждает о грядущем разрушении.",
+                "en": "Overloading warns of an approaching failure."
+              }
+            },
+            {
+              "id": "t123-v4",
+              "text": {
+                "ru": "Каскад распространяет потерю связи по частям.",
+                "en": "Cascades propagate the loss of supporting links."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t125",
+      "section": "mechanics",
+      "title": {
+        "ru": "Охота, экосистема и отношения хищник-жертва",
+        "en": "Hunting, ecosystems and predator-prey relationships"
+      },
+      "description": {
+        "ru": "Охота использует следы и поведение добычи, а изменения популяций влияют на дальнейшую доступность пищи и опасностей.",
+        "en": "Hunting uses prey traces and behavior, while population changes affect future food availability and hazards."
+      },
+      "example": {
+        "ru": "Исчезновение мелкой добычи заставляет хищников подходить ближе к лагерю.",
+        "en": "Depleted small prey causes predators to approach the camp more frequently."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, даёт ли наблюдение поведения полезный прогноз, и сохраняется ли экосистема после длительного отсутствия игрока.",
+        "en": "Test whether observed behavior supports useful predictions and the ecosystem persists while the player is absent."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t125-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t125-v1",
+              "text": {
+                "ru": "След показывает направление и давность движения.",
+                "en": "Tracks indicate movement direction and recency."
+              }
+            },
+            {
+              "id": "t125-v2",
+              "text": {
+                "ru": "Приманка использует предпочтение конкретного вида.",
+                "en": "Bait uses preferences of a particular species."
+              }
+            },
+            {
+              "id": "t125-v3",
+              "text": {
+                "ru": "Ветер меняет успешность скрытого сближения.",
+                "en": "Wind changes the success of a concealed approach."
+              }
+            },
+            {
+              "id": "t125-v4",
+              "text": {
+                "ru": "Восполнение популяции связывает добычу с темпом охоты.",
+                "en": "Population recovery connects yields to hunting pace."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t126",
+      "section": "mechanics",
+      "title": {
+        "ru": "Выбор риска, эвакуация и сохранение добычи",
+        "en": "Risk, evacuation and securing loot"
+      },
+      "description": {
+        "ru": "Риск повышает возможную добычу, но только фиксация результата защищает её от потери в следующем опасном действии.",
+        "en": "Risk increases potential gains, but banking a result is what protects it from loss in the next dangerous action."
+      },
+      "example": {
+        "ru": "Второй контейнер ценен, но его вскрытие включает сигнал и задерживает эвакуацию.",
+        "en": "A second container is valuable, but opening it triggers an alarm and delays extraction."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понятен ли перечень теряемого до принятия риска и существует ли безопасная точка остановки.",
+        "en": "Test that possible losses are clear before accepting risk and that a safe stopping point exists."
+      },
+      "sourceUrls": ["https://www.klei.com/games/dont-starve"],
+      "branches": [
+        {
+          "id": "t126-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t126-v1",
+              "text": {
+                "ru": "Эвакуация завершает текущую возможность добычи.",
+                "en": "Extraction ends the current opportunity to gather."
+              }
+            },
+            {
+              "id": "t126-v2",
+              "text": {
+                "ru": "Тайник сохраняет часть груза до выхода.",
+                "en": "Caches preserve part of the cargo before leaving."
+              }
+            },
+            {
+              "id": "t126-v3",
+              "text": {
+                "ru": "Страховка ограничивает конкретную категорию потерь.",
+                "en": "Insurance limits a particular category of loss."
+              }
+            },
+            {
+              "id": "t126-v4",
+              "text": {
+                "ru": "Дополнительная цель повышает награду и заметность.",
+                "en": "Extra objectives raise rewards and visibility."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Klei: Don’t Starve",
+        "en": "Klei: Don’t Starve"
+      },
+      "url": "https://www.klei.com/games/dont-starve",
+      "description": {
+        "ru": "Описание разработчика: выживание, использование среды и сезонные изменения. Сценарии ниже являются авторскими предложениями, а не описанием правил этой игры.",
+        "en": "Developer overview of wilderness survival, environmental use and seasonal changes. The scenarios below are editorial proposals, not descriptions of that game’s rules."
+      }
+    }
+  ]
+}

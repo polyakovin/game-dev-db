@@ -1,0 +1,291 @@
+{
+  "id": "run-structures",
+  "overviewGroupId": "g07",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Roguelike и структура забега",
+    "en": "Roguelikes and run structure"
+  },
+  "description": {
+    "ru": "Структура забега связывает ограниченные ресурсы, изменение состава возможностей и последствия поражения в один законченный цикл.",
+    "en": "Run structure connects limited resources, changing capabilities and failure consequences into a complete play cycle."
+  },
+  "intro": {
+    "ru": "Структура забега связывает ограниченные ресурсы, изменение состава возможностей и последствия поражения в один законченный цикл. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Run structure connects limited resources, changing capabilities and failure consequences into a complete play cycle. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t060",
+      "section": "mechanics",
+      "title": {
+        "ru": "Традиционные пошаговые roguelike",
+        "en": "Traditional turn-based roguelikes"
+      },
+      "description": {
+        "ru": "Пошаговый забег чередует одно решение игрока с изменением враждебного мира, сохраняя цену каждого расходника и маршрута.",
+        "en": "A turn-based run alternates one player decision with hostile world changes, preserving the cost of consumables and routes."
+      },
+      "example": {
+        "ru": "Герой тратит ход на отступление в дверь, чтобы не сражаться сразу с тремя противниками.",
+        "en": "A hero spends a turn retreating to a door to avoid fighting three opponents at once."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, не проходит ли скрыто время при чтении интерфейса и отмене ещё не подтверждённой команды.",
+        "en": "Test that inspecting the interface and canceling an unconfirmed command do not secretly advance world time."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t060-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t060-v1",
+              "text": {
+                "ru": "Ожидание пропускает действие ради выгодной позиции.",
+                "en": "Waiting trades an action for a better position."
+              }
+            },
+            {
+              "id": "t060-v2",
+              "text": {
+                "ru": "Неизвестный предмет требует идентификации.",
+                "en": "Unknown items require identification."
+              }
+            },
+            {
+              "id": "t060-v3",
+              "text": {
+                "ru": "Дверной проход ограничивает число атакующих.",
+                "en": "Doorways limit the number of simultaneous attackers."
+              }
+            },
+            {
+              "id": "t060-v4",
+              "text": {
+                "ru": "Постоянная смерть завершает историю персонажа.",
+                "en": "Permanent death ends the character's current story."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t061",
+      "section": "mechanics",
+      "title": {
+        "ru": "Action-roguelike",
+        "en": "Action roguelikes"
+      },
+      "description": {
+        "ru": "Бой в реальном времени соединяется с временным развитием, поэтому исполнение и выбор улучшений вместе определяют исход забега.",
+        "en": "Real-time combat combines with temporary progression so execution and upgrade choices jointly determine a run's outcome."
+      },
+      "example": {
+        "ru": "После комнаты игрок берёт усиление рывка, отказываясь от более сильного, но медленного удара.",
+        "en": "After a room, the player upgrades a dash instead of taking a stronger but slower attack."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте первые награды для разных стартовых оружий: случайный выбор не должен сразу делать управление бесполезным.",
+        "en": "Test early rewards with different starting weapons so random options cannot immediately invalidate the controls."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t061-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t061-v1",
+              "text": {
+                "ru": "Комната задаёт компактную проверку текущего билда.",
+                "en": "Rooms provide compact tests of the current build."
+              }
+            },
+            {
+              "id": "t061-v2",
+              "text": {
+                "ru": "Уклонение расходует ограниченное окно безопасности.",
+                "en": "Dodging spends a limited safety window."
+              }
+            },
+            {
+              "id": "t061-v3",
+              "text": {
+                "ru": "Награда предлагает несколько направлений развития.",
+                "en": "Rewards offer several development directions."
+              }
+            },
+            {
+              "id": "t061-v4",
+              "text": {
+                "ru": "Босс проверяет освоение выбранной связки.",
+                "en": "Bosses test mastery of the selected combination."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t062",
+      "section": "mechanics",
+      "title": {
+        "ru": "Survivor-like и автоматические атаки",
+        "en": "Survivor-likes and automatic attacks"
+      },
+      "description": {
+        "ru": "Автоматические атаки оставляют игроку выбор маршрута и состава усилений, превращая движение среди волн в основной навык.",
+        "en": "Automatic attacks leave route selection and upgrades to the player, making movement through waves the central skill."
+      },
+      "example": {
+        "ru": "Круговой огонь позволяет идти через мелкую толпу, но дальний противник вынуждает менять траекторию.",
+        "en": "Circular fire permits movement through small enemies, but ranged opponents force a route change."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, остаётся ли движение решением после сильных улучшений, а не превращается в ожидание таймера.",
+        "en": "Test whether movement remains a decision after strong upgrades rather than waiting for a timer."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t062-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t062-v1",
+              "text": {
+                "ru": "Автонаведение выбирает цель по явному правилу.",
+                "en": "Auto-targeting selects targets by a stated rule."
+              }
+            },
+            {
+              "id": "t062-v2",
+              "text": {
+                "ru": "Подбор опыта требует подхода к опасному месту.",
+                "en": "Experience pickups require approaching danger."
+              }
+            },
+            {
+              "id": "t062-v3",
+              "text": {
+                "ru": "Эволюция оружия требует сочетания улучшений.",
+                "en": "Weapon evolution needs a combination of upgrades."
+              }
+            },
+            {
+              "id": "t062-v4",
+              "text": {
+                "ru": "Волна меняет безопасную форму маршрута.",
+                "en": "Waves change the shape of safe movement routes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t063",
+      "section": "mechanics",
+      "title": {
+        "ru": "Dungeon crawler и истощение в подземелье",
+        "en": "Dungeon crawlers and resource attrition"
+      },
+      "description": {
+        "ru": "Подземелье истощает запас отряда через последовательные встречи; выбор глубины связывается с возможностью безопасного возвращения.",
+        "en": "A dungeon depletes party supplies through successive encounters, connecting depth choices to a safe return."
+      },
+      "example": {
+        "ru": "Отряд видит сокровищницу, но оставшегося света хватает только на возвращение по знакомому пути.",
+        "en": "A party spots a treasury but has only enough light to return along the known route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте обратный путь после последнего допустимого боя и доступность решения об отступлении до полного истощения.",
+        "en": "Test the return route after the last affordable encounter and the option to retreat before total exhaustion."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t063-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t063-v1",
+              "text": {
+                "ru": "Факел ограничивает время уверенного исследования.",
+                "en": "Torches limit confident exploration time."
+              }
+            },
+            {
+              "id": "t063-v2",
+              "text": {
+                "ru": "Привал восстанавливает силы ценой риска встречи.",
+                "en": "Rest restores strength at the risk of an encounter."
+              }
+            },
+            {
+              "id": "t063-v3",
+              "text": {
+                "ru": "Короткий путь сокращает будущие затраты входа.",
+                "en": "Shortcuts reduce later entry costs."
+              }
+            },
+            {
+              "id": "t063-v4",
+              "text": {
+                "ru": "Необязательная комната обменивает запас на шанс находки.",
+                "en": "Optional rooms trade supplies for possible discoveries."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

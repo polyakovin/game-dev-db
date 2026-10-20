@@ -1,0 +1,167 @@
+{
+  "id": "controller-input",
+  "overviewGroupId": "g28",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Классические устройства ввода",
+    "en": "Traditional input devices"
+  },
+  "description": {
+    "ru": "Контроллер превращает физическое движение в игровой параметр; диапазон, нейтральное положение и обратная связь должны быть согласованы.",
+    "en": "Controllers turn physical movement into game parameters; range, neutral position and feedback should agree."
+  },
+  "intro": {
+    "ru": "Контроллер превращает физическое движение в игровой параметр; диапазон, нейтральное положение и обратная связь должны быть согласованы. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Controllers turn physical movement into game parameters; range, neutral position and feedback should agree. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t283",
+      "section": "mechanics",
+      "title": {
+        "ru": "Геймпад, стики и триггеры",
+        "en": "Gamepads, sticks and triggers"
+      },
+      "description": {
+        "ru": "Стики и триггеры задают непрерывные значения, а кнопки переключают действия и режимы без необходимости смотреть на устройство.",
+        "en": "Sticks and triggers provide continuous values while buttons switch actions and modes without looking at the device."
+      },
+      "example": {
+        "ru": "Лёгкое нажатие триггера натягивает лук, а полное завершает подготовку без автоматического выстрела.",
+        "en": "A light trigger pull draws a bow while a full pull completes preparation without automatically firing."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте дрейф стика, переподключение и контроллер без нужной оси; аппаратная функция не должна предполагаться по названию API.",
+        "en": "Test stick drift, reconnection and missing axes; an API name alone does not establish hardware capability."
+      },
+      "sourceUrls": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API"
+      ],
+      "branches": [
+        {
+          "id": "t283-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t283-v1",
+              "text": {
+                "ru": "Мёртвая зона отделяет покой от малого движения.",
+                "en": "Dead zones separate rest from small movement."
+              }
+            },
+            {
+              "id": "t283-v2",
+              "text": {
+                "ru": "Кривая чувствительности меняет точность малых отклонений.",
+                "en": "Response curves alter precision near the center."
+              }
+            },
+            {
+              "id": "t283-v3",
+              "text": {
+                "ru": "Аналоговый триггер дозирует силу действия.",
+                "en": "Analog triggers modulate action strength."
+              }
+            },
+            {
+              "id": "t283-v4",
+              "text": {
+                "ru": "Переназначение сохраняет смысл при другой раскладке.",
+                "en": "Remapping preserves meaning across different layouts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t285",
+      "section": "mechanics",
+      "title": {
+        "ru": "Трекбол, колесо и вращающийся контроллер",
+        "en": "Trackballs, wheels and rotary controllers"
+      },
+      "description": {
+        "ru": "Вращающийся ввод управляет относительным изменением или углом, поддерживая непрерывную корректировку без обычной границы экрана.",
+        "en": "Rotary input controls relative change or angle, supporting continuous correction without a normal screen boundary."
+      },
+      "example": {
+        "ru": "Игрок вращает вентиль трекболом, меняя скорость подачи без переноса указателя к краю экрана.",
+        "en": "A player turns a valve with a trackball, adjusting flow without moving a pointer to the screen edge."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте направление, единицы и потерю событий при быстром вращении, включая устройство с другим числом шагов.",
+        "en": "Test direction, units and missed events during fast rotation, including devices with different step counts."
+      },
+      "sourceUrls": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API"
+      ],
+      "branches": [
+        {
+          "id": "t285-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t285-v1",
+              "text": {
+                "ru": "Относительное вращение накапливает изменение параметра.",
+                "en": "Relative rotation accumulates parameter changes."
+              }
+            },
+            {
+              "id": "t285-v2",
+              "text": {
+                "ru": "Абсолютный угол выбирает положение шкалы.",
+                "en": "Absolute angles select a dial position."
+              }
+            },
+            {
+              "id": "t285-v3",
+              "text": {
+                "ru": "Инерция сохраняет движение после прекращения ввода.",
+                "en": "Inertia preserves motion after input stops."
+              }
+            },
+            {
+              "id": "t285-v4",
+              "text": {
+                "ru": "Щелчки разделяют непрерывный ход на позиции.",
+                "en": "Detents divide continuous travel into positions."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "MDN: Gamepad API",
+        "en": "MDN: Gamepad API"
+      },
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API",
+      "description": {
+        "ru": "Документация интерфейса ввода; конкретные возможности контроллера требуют отдельной проверки.",
+        "en": "Input API documentation; actual controller capabilities require separate verification."
+      }
+    }
+  ]
+}

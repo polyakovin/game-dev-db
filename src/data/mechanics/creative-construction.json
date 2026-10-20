@@ -1,0 +1,369 @@
+{
+  "id": "creative-construction",
+  "overviewGroupId": "g23",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Творчество, конструирование и свободная игра",
+    "en": "Creativity, construction and free play"
+  },
+  "description": {
+    "ru": "Творческие механики дают управляемые ограничения формы, соединений и внешности, сохраняя право игрока выбирать собственный результат.",
+    "en": "Creative mechanics constrain shape, connections and appearance while preserving the player’s choice of a personal result."
+  },
+  "intro": {
+    "ru": "Творческие механики дают управляемые ограничения формы, соединений и внешности, сохраняя право игрока выбирать собственный результат. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Creative mechanics constrain shape, connections and appearance while preserving the player’s choice of a personal result. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t229",
+      "section": "mechanics",
+      "title": {
+        "ru": "Лепка, скульптура и изменение формы",
+        "en": "Modeling, sculpting and shape manipulation"
+      },
+      "description": {
+        "ru": "Изменение формы добавляет, убирает или перемещает материал, позволяя исследовать объём и выразительность выбранных ограничений.",
+        "en": "Shape manipulation adds, removes or moves material to explore volume and expression under selected constraints."
+      },
+      "example": {
+        "ru": "Игрок лепит полую маску, чередуя наращивание оболочки и удаление внутренних участков.",
+        "en": "A player sculpts a hollow mask by growing its shell and removing interior material."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте отмену серии правок и сохранение тонких деталей при изменении масштаба кисти.",
+        "en": "Test undoing a sequence of edits and preserving thin details when changing brush scale."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html"
+      ],
+      "branches": [
+        {
+          "id": "t229-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t229-v1",
+              "text": {
+                "ru": "Добавление наращивает объём в области кисти.",
+                "en": "Adding grows volume around a brush."
+              }
+            },
+            {
+              "id": "t229-v2",
+              "text": {
+                "ru": "Вычитание вырезает материал из формы.",
+                "en": "Subtraction removes material from a shape."
+              }
+            },
+            {
+              "id": "t229-v3",
+              "text": {
+                "ru": "Сглаживание ослабляет локальные резкие переходы.",
+                "en": "Smoothing softens sharp local transitions."
+              }
+            },
+            {
+              "id": "t229-v4",
+              "text": {
+                "ru": "Симметрия повторяет правку относительно плоскости.",
+                "en": "Symmetry repeats edits across a plane."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t230",
+      "section": "mechanics",
+      "title": {
+        "ru": "Строительные наборы и сборка механизмов",
+        "en": "Construction kits and mechanism assembly"
+      },
+      "description": {
+        "ru": "Детали соединяются в конструкцию, поведение которой возникает из ограничений шарниров, передачи движения и источников силы.",
+        "en": "Parts form a construction whose behavior emerges from joints, motion transmission and power sources."
+      },
+      "example": {
+        "ru": "Мост из деталей поднимается одним мотором через редуктор, но скорость открытия зависит от передачи.",
+        "en": "A modular bridge rises through a geared motor, with opening speed determined by the ratio."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте замкнутые соединения и неподвижные части: энергия не должна появляться из конфликта ограничений.",
+        "en": "Test closed connections and anchored parts so conflicting constraints cannot generate energy."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html"
+      ],
+      "branches": [
+        {
+          "id": "t230-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t230-v1",
+              "text": {
+                "ru": "Шарнир оставляет одну разрешённую ось движения.",
+                "en": "Hinges leave one permitted rotation axis."
+              }
+            },
+            {
+              "id": "t230-v2",
+              "text": {
+                "ru": "Шестерня передаёт вращение с заданным отношением.",
+                "en": "Gears transmit rotation at a specified ratio."
+              }
+            },
+            {
+              "id": "t230-v3",
+              "text": {
+                "ru": "Привод подаёт силу в ограниченном режиме.",
+                "en": "Actuators apply force within a limited mode."
+              }
+            },
+            {
+              "id": "t230-v4",
+              "text": {
+                "ru": "Нагрузка проверяет полезность собранного механизма.",
+                "en": "Loads test the assembled mechanism's usefulness."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t232",
+      "section": "mechanics",
+      "title": {
+        "ru": "Одежда, внешность и создание персонажей",
+        "en": "Clothing, appearance and character design"
+      },
+      "description": {
+        "ru": "Редактор внешности сочетает параметры, предметы и ограничения совместимости, позволяя выразить выбранный образ персонажа.",
+        "en": "Appearance editors combine parameters, items and compatibility rules to express a chosen character identity."
+      },
+      "example": {
+        "ru": "Игрок собирает образ исследователя, меняя силуэт одежды и палитру независимо от боевых характеристик.",
+        "en": "A player creates an explorer's look by changing clothing silhouette and palette independently of combat stats."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте крайние сочетания форм и одежды, включая сохранение образа и отсутствие скрытой смены игрового преимущества.",
+        "en": "Test extreme body and clothing combinations, saved appearances and absence of hidden gameplay advantages."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html"
+      ],
+      "branches": [
+        {
+          "id": "t232-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t232-v1",
+              "text": {
+                "ru": "Параметр меняет форму без смены функции.",
+                "en": "Parameters change shape without changing function."
+              }
+            },
+            {
+              "id": "t232-v2",
+              "text": {
+                "ru": "Слой одежды взаимодействует с другими слоями.",
+                "en": "Clothing layers interact with other layers."
+              }
+            },
+            {
+              "id": "t232-v3",
+              "text": {
+                "ru": "Палитра сохраняет согласованный набор цветов.",
+                "en": "Palettes preserve a consistent set of colors."
+              }
+            },
+            {
+              "id": "t232-v4",
+              "text": {
+                "ru": "Пресет позволяет вернуться к сохранённому образу.",
+                "en": "Presets restore a saved appearance."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t234",
+      "section": "mechanics",
+      "title": {
+        "ru": "Съёмка, монтаж и создание представлений",
+        "en": "Filming, editing and performance creation"
+      },
+      "description": {
+        "ru": "Создание представления соединяет постановку, запись и монтаж, позволяя управлять порядком кадров, длительностью и точкой внимания зрителя.",
+        "en": "Performance creation combines staging, recording and editing to control shot order, duration and the audience's attention."
+      },
+      "example": {
+        "ru": "Игрок снимает один проход персонажа с двух сторон и собирает сцену с реакцией наблюдателя.",
+        "en": "A player records a character crossing from two angles and edits it with an observer's reaction."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сохранение исходных записей при монтаже и воспроизводимость результата после изменения объектов сцены.",
+        "en": "Test source-recording preservation during edits and playback after scene objects have changed."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html"
+      ],
+      "branches": [
+        {
+          "id": "t234-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t234-v1",
+              "text": {
+                "ru": "Постановка задаёт положение актёров и объектов.",
+                "en": "Staging positions actors and objects."
+              }
+            },
+            {
+              "id": "t234-v2",
+              "text": {
+                "ru": "Камера выбирает ракурс доступного события.",
+                "en": "Cameras choose viewpoints on available events."
+              }
+            },
+            {
+              "id": "t234-v3",
+              "text": {
+                "ru": "Монтаж соединяет записанные фрагменты по времени.",
+                "en": "Editing joins recorded fragments over time."
+              }
+            },
+            {
+              "id": "t234-v4",
+              "text": {
+                "ru": "Звуковая дорожка меняет ритм и смысл сцены.",
+                "en": "Soundtracks change a scene's rhythm and meaning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t237",
+      "section": "mechanics",
+      "title": {
+        "ru": "Совместное творчество и пользовательский контент",
+        "en": "Collaborative creation and user-generated content"
+      },
+      "description": {
+        "ru": "Совместный редактор согласует изменения нескольких авторов, а пользовательский контент сохраняет авторство, зависимости и условия доступа к результату.",
+        "en": "Collaborative editors coordinate several authors' changes while user-generated content preserves authorship, dependencies and access conditions."
+      },
+      "example": {
+        "ru": "Один автор строит уровень, второй настраивает события, а предварительная версия фиксирует их совместимый результат.",
+        "en": "One author builds a level, another configures events and a preview version captures their compatible result."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте конфликт одновременных правок и удалённую зависимость: чужая работа не должна теряться без видимого решения.",
+        "en": "Test simultaneous edit conflicts and removed dependencies so another author's work is not silently lost."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html"
+      ],
+      "branches": [
+        {
+          "id": "t237-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t237-v1",
+              "text": {
+                "ru": "Общая сцена показывает действия других авторов.",
+                "en": "Shared scenes reveal other authors' actions."
+              }
+            },
+            {
+              "id": "t237-v2",
+              "text": {
+                "ru": "Права ограничивают редактирование выбранной области.",
+                "en": "Permissions restrict editing in selected areas."
+              }
+            },
+            {
+              "id": "t237-v3",
+              "text": {
+                "ru": "Версия сохраняет возможность вернуться к прошлому результату.",
+                "en": "Versions restore earlier results."
+              }
+            },
+            {
+              "id": "t237-v4",
+              "text": {
+                "ru": "Публикуемый набор включает необходимые зависимости.",
+                "en": "Published packages include required dependencies."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Physics introduction",
+        "en": "Godot: Physics introduction"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+      "description": {
+        "ru": "Документация физических тел, столкновений и материалов. Контекст программной модели, не свидетельство точности реального спорта или техники.",
+        "en": "Documentation of physics bodies, collisions and materials. Software-model context, not evidence of real sport or vehicle accuracy."
+      }
+    },
+    {
+      "title": {
+        "ru": "Godot: Prototyping levels with CSG",
+        "en": "Godot: Prototyping levels with CSG"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/3d/csg_tools.html",
+      "description": {
+        "ru": "Документация комбинаций и вычитания геометрических форм для прототипа. Не описание полноценной системы скульптуры или редактора одежды.",
+        "en": "Documentation of combining and subtracting geometric shapes for prototypes; not a full sculpting or clothing-editor specification."
+      }
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "id": "stealth-infiltration",
+  "overviewGroupId": "g04",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Стелс, проникновение и побег",
+    "en": "Stealth, infiltration and escape"
+  },
+  "description": {
+    "ru": "Стелс управляет тем, что знают наблюдатели: видимостью, подозрением, следами, ложными целями и путями отхода.",
+    "en": "Stealth manages what observers know through visibility, suspicion, traces, decoys and escape routes."
+  },
+  "intro": {
+    "ru": "Стелс управляет тем, что знают наблюдатели: видимостью, подозрением, следами, ложными целями и путями отхода. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Stealth manages what observers know through visibility, suspicion, traces, decoys and escape routes. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t031",
+      "section": "mechanics",
+      "title": {
+        "ru": "Видимость, шум и обнаружение",
+        "en": "Visibility, noise and detection"
+      },
+      "description": {
+        "ru": "Обнаружение зависит от наблюдаемого сигнала, препятствий и внимания наблюдателя, поэтому игрок управляет заметностью своих действий.",
+        "en": "Detection depends on observable signals, obstacles and observer attention, letting players manage the visibility of their actions."
+      },
+      "example": {
+        "ru": "Игрок бежит во время работы пресса, который маскирует звук шагов.",
+        "en": "The player runs while an industrial press masks the sound of footsteps."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте обнаружение у края препятствия и объясните, какой именно сигнал заметил наблюдатель.",
+        "en": "Test detection near an obstacle edge and show which signal the observer actually noticed."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t031-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t031-v1",
+              "text": {
+                "ru": "Свет увеличивает различимость силуэта.",
+                "en": "Light increases silhouette visibility."
+              }
+            },
+            {
+              "id": "t031-v2",
+              "text": {
+                "ru": "Шум распространяется с учётом препятствий.",
+                "en": "Noise propagation accounts for obstacles."
+              }
+            },
+            {
+              "id": "t031-v3",
+              "text": {
+                "ru": "Скорость движения меняет громкость шага.",
+                "en": "Movement speed changes footstep loudness."
+              }
+            },
+            {
+              "id": "t031-v4",
+              "text": {
+                "ru": "Краткий контакт накапливает обнаружение.",
+                "en": "Brief contacts accumulate detection progress."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t032",
+      "section": "mechanics",
+      "title": {
+        "ru": "Подозрение, тревога и поиск",
+        "en": "Suspicion, alerts and searching"
+      },
+      "description": {
+        "ru": "Подозрение переводит наблюдателя от обычного поведения к проверке, тревоге и поиску последней известной цели.",
+        "en": "Suspicion moves observers from routine behavior through investigation, alerts and searching for a last known target."
+      },
+      "example": {
+        "ru": "Охранник проверяет открытую дверь, зовёт напарника и затем осматривает соседние комнаты.",
+        "en": "A guard investigates an open door, calls a partner and then searches nearby rooms."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, не получает ли поисковик точную позицию скрытого игрока без нового наблюдения.",
+        "en": "Test that a searching guard cannot obtain the hidden player's exact position without observing a new signal."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t032-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t032-v1",
+              "text": {
+                "ru": "Проверка ведёт к источнику странного сигнала.",
+                "en": "Investigation approaches an unusual signal source."
+              }
+            },
+            {
+              "id": "t032-v2",
+              "text": {
+                "ru": "Тревога передаётся доступным каналом связи.",
+                "en": "Alerts spread through available communication channels."
+              }
+            },
+            {
+              "id": "t032-v3",
+              "text": {
+                "ru": "Поиск расходится от последнего контакта.",
+                "en": "Search expands from the last known contact."
+              }
+            },
+            {
+              "id": "t032-v4",
+              "text": {
+                "ru": "Возврат сохраняет память о замеченной угрозе.",
+                "en": "Returning to routine preserves memory of a threat."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t033",
+      "section": "mechanics",
+      "title": {
+        "ru": "Укрытие тела и следов",
+        "en": "Hiding bodies and traces"
+      },
+      "description": {
+        "ru": "Сокрытие тел и следов задерживает обнаружение совершённого действия, но требует времени и оставляет новые уязвимости.",
+        "en": "Hiding bodies and traces delays discovery of an action but costs time and can create new vulnerabilities."
+      },
+      "example": {
+        "ru": "Игрок прячет охранника, но пропущенный обход заставляет диспетчера прислать смену.",
+        "en": "A guard is concealed, but a missed patrol check prompts a dispatcher to send a replacement."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сохранение следов после смены комнаты и понятность различий между скрытым телом и убранными уликами.",
+        "en": "Test trace persistence across room changes and distinguish hiding a body from removing evidence."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t033-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t033-v1",
+              "text": {
+                "ru": "Переноска замедляет движение и занимает руки.",
+                "en": "Carrying slows movement and occupies the hands."
+              }
+            },
+            {
+              "id": "t033-v2",
+              "text": {
+                "ru": "Контейнер ограничивает число спрятанных объектов.",
+                "en": "Containers limit the number of hidden objects."
+              }
+            },
+            {
+              "id": "t033-v3",
+              "text": {
+                "ru": "Уборка удаляет след конкретного типа.",
+                "en": "Cleaning removes a specific type of trace."
+              }
+            },
+            {
+              "id": "t033-v4",
+              "text": {
+                "ru": "Отсутствие персонажа само вызывает проверку.",
+                "en": "A missing character can itself trigger investigation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t034",
+      "section": "mechanics",
+      "title": {
+        "ru": "Маскировка и социальное проникновение",
+        "en": "Disguises and social infiltration"
+      },
+      "description": {
+        "ru": "Социальное проникновение использует ожидаемую роль вместо физической невидимости: доступ зависит от одежды, поведения и узнавания.",
+        "en": "Social infiltration uses an expected role instead of invisibility: access depends on clothing, behavior and recognition."
+      },
+      "example": {
+        "ru": "Форма техника позволяет войти в зал, но работа с сейфом вызывает подозрение у дежурного.",
+        "en": "A technician's uniform permits entry, but touching a safe attracts the attendant's suspicion."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, видны ли границы допуска до нарушения и объясняется ли узнавание конкретным наблюдателем.",
+        "en": "Test that access boundaries are visible before a violation and recognition has an identifiable observer."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t034-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t034-v1",
+              "text": {
+                "ru": "Форма открывает зоны конкретной профессии.",
+                "en": "A uniform opens areas for a specific profession."
+              }
+            },
+            {
+              "id": "t034-v2",
+              "text": {
+                "ru": "Знаток замечает чужого внутри своей группы.",
+                "en": "An insider recognizes strangers within their group."
+              }
+            },
+            {
+              "id": "t034-v3",
+              "text": {
+                "ru": "Запретное действие разрушает правдоподобие роли.",
+                "en": "Forbidden actions undermine the assumed role."
+              }
+            },
+            {
+              "id": "t034-v4",
+              "text": {
+                "ru": "Документ подтверждает допуск при проверке.",
+                "en": "Documents confirm access during an inspection."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t035",
+      "section": "mechanics",
+      "title": {
+        "ru": "Приманки, отвлечения и саботаж",
+        "en": "Lures, distractions and sabotage"
+      },
+      "description": {
+        "ru": "Отвлечение меняет приоритет наблюдателя, а саботаж перестраивает среду так, чтобы подготовить дальнейшее скрытое действие.",
+        "en": "Distraction changes observer priorities while sabotage changes the environment to prepare a later covert action."
+      },
+      "example": {
+        "ru": "Отключённый насос заставляет техника уйти с поста и открыть служебный коридор.",
+        "en": "A disabled pump makes a technician leave their post and open a service corridor."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте повторное отвлечение: реакция должна учитывать уже замеченный обман или явно разрешать повтор.",
+        "en": "Test repeated distractions: reactions should account for a known trick or explicitly allow repetition."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t035-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t035-v1",
+              "text": {
+                "ru": "Звук уводит ближайшего доступного наблюдателя.",
+                "en": "Sound redirects the nearest available observer."
+              }
+            },
+            {
+              "id": "t035-v2",
+              "text": {
+                "ru": "Приманка требует подходящей мотивации цели.",
+                "en": "A lure requires a relevant target motivation."
+              }
+            },
+            {
+              "id": "t035-v3",
+              "text": {
+                "ru": "Поломка вызывает обслуживающий персонал.",
+                "en": "A breakdown summons maintenance personnel."
+              }
+            },
+            {
+              "id": "t035-v4",
+              "text": {
+                "ru": "Ложная тревога освобождает другую зону.",
+                "en": "A false alarm frees a different area."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t036",
+      "section": "mechanics",
+      "title": {
+        "ru": "Слежка, разведка и контрнаблюдение",
+        "en": "Tailing, reconnaissance and counter-surveillance"
+      },
+      "description": {
+        "ru": "Слежка сохраняет контакт с целью, разведка собирает её привычки, а контрнаблюдение проверяет, не раскрыт ли сам наблюдатель.",
+        "en": "Tailing maintains contact, reconnaissance learns routines and counter-surveillance checks whether the observer has been exposed."
+      },
+      "example": {
+        "ru": "Курьер меняет улицу, а игрок переключается на дальнюю камеру вместо опасного сближения.",
+        "en": "A courier changes streets and the player switches to a distant camera instead of closing dangerously."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте восстановление контакта по известному маршруту после краткой потери прямой видимости.",
+        "en": "Test regaining contact through a known route after a brief interruption of direct visibility."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t036-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t036-v1",
+              "text": {
+                "ru": "Дистанция балансирует потерю цели и узнавание.",
+                "en": "Distance balances losing a target against recognition."
+              }
+            },
+            {
+              "id": "t036-v2",
+              "text": {
+                "ru": "Маршрут использует несколько точек наблюдения.",
+                "en": "Routes use several observation positions."
+              }
+            },
+            {
+              "id": "t036-v3",
+              "text": {
+                "ru": "Фото фиксирует проверяемое действие цели.",
+                "en": "Photographs preserve a verifiable target action."
+              }
+            },
+            {
+              "id": "t036-v4",
+              "text": {
+                "ru": "Проверочный поворот выявляет повторяющего путь преследователя.",
+                "en": "A checking turn reveals a follower copying the route."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t037",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ограбления и синхронное проникновение",
+        "en": "Heists and coordinated infiltration"
+      },
+      "description": {
+        "ru": "Совместное проникновение распределяет зависимые действия по ролям и синхронизирует их в ограниченное окно доступа.",
+        "en": "Coordinated infiltration assigns dependent actions to roles and synchronizes them within a limited access window."
+      },
+      "example": {
+        "ru": "Один участник отключает питание, второй открывает ворота, третий выводит груз к машине.",
+        "en": "One participant cuts power, another opens a gate and a third moves cargo to a vehicle."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте срыв одного действия: команда должна понимать, как отменить синхронизацию и перейти к запасному плану.",
+        "en": "Test one failed action so the team can understand how to cancel synchronization and use its fallback plan."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t037-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t037-v1",
+              "text": {
+                "ru": "Разведка открывает варианты подготовки операции.",
+                "en": "Reconnaissance unlocks operation preparations."
+              }
+            },
+            {
+              "id": "t037-v2",
+              "text": {
+                "ru": "Синхронный приказ объединяет несколько действий.",
+                "en": "Synchronized orders combine several actions."
+              }
+            },
+            {
+              "id": "t037-v3",
+              "text": {
+                "ru": "Запасной план меняет маршрут после тревоги.",
+                "en": "A fallback plan changes routes after an alert."
+              }
+            },
+            {
+              "id": "t037-v4",
+              "text": {
+                "ru": "Добыча замедляет завершающий отход команды.",
+                "en": "Loot slows the team's final escape."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t038",
+      "section": "mechanics",
+      "title": {
+        "ru": "Побег, погоня и уход от преследования",
+        "en": "Escape, chases and evading pursuit"
+      },
+      "description": {
+        "ru": "Побег разрывает контакт с преследователем через маршрут, препятствия и смену заметности, а не только через скорость бега.",
+        "en": "Escape breaks pursuer contact through routes, obstacles and changed visibility rather than running speed alone."
+      },
+      "example": {
+        "ru": "Игрок закрывает решётку, меняет одежду в мастерской и выходит из другого входа.",
+        "en": "A player closes a grille, changes clothes in a workshop and leaves through another exit."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте момент завершения погони: исчезновение угрозы должно следовать разрыву информации, а не скрытому таймеру.",
+        "en": "Test the end of pursuit: safety should follow lost information rather than an unexplained hidden timer."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t038-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t038-v1",
+              "text": {
+                "ru": "Развилка заставляет преследователя угадывать путь.",
+                "en": "Branches make a pursuer infer the chosen route."
+              }
+            },
+            {
+              "id": "t038-v2",
+              "text": {
+                "ru": "Барьер покупает время ценой расходника.",
+                "en": "A barrier buys time at the cost of a consumable."
+              }
+            },
+            {
+              "id": "t038-v3",
+              "text": {
+                "ru": "Толпа позволяет раствориться при смене поведения.",
+                "en": "Crowds hide a player who changes behavior."
+              }
+            },
+            {
+              "id": "t038-v4",
+              "text": {
+                "ru": "Транспорт меняет скорость и доступные проходы.",
+                "en": "Vehicles change speed and usable passages."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

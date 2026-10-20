@@ -45,6 +45,17 @@ export function validateMechanicDirections(source) {
       )
         errors.push(`${direction?.id}: invalid or duplicate catalog ID`);
       catalogIds.add(direction?.catalogId);
+      if ('materialRef' in direction && direction.materialRef !== undefined) {
+        const ref = /** @type {{catalogId?: string, familyId?: string}} */ (
+          direction.materialRef
+        );
+        for (const key of ['catalogId', 'familyId'])
+          if (
+            typeof ref?.[key] !== 'string' ||
+            !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(ref[key])
+          )
+            errors.push(`${direction.id}: invalid materialRef.${key}`);
+      }
     }
   }
   return errors;
@@ -68,20 +79,47 @@ export function getMechanicDirections(lang, catalogs = getMechanics(lang)) {
     title: group.title[lang],
     directions: group.directions.map((direction) => {
       represented.add(direction.catalogId);
-      const catalog = byId.get(direction.catalogId);
+      const reference =
+        /** @type {{materialRef?: {catalogId: string, familyId: string}}} */ (
+          direction
+        ).materialRef;
+      const standalone = byId.get(direction.catalogId);
+      const parent = reference ? byId.get(reference.catalogId) : undefined;
+      const family = parent?.families.find(
+        (item) => item.id === reference?.familyId,
+      );
+      const catalog = standalone ?? (family ? parent : undefined);
+      const targeted = !standalone && family;
+      if (catalog) represented.add(catalog.id);
       return {
         id: direction.id,
         catalogId: direction.catalogId,
         title: direction.title[lang],
         status: catalog ? 'ready' : 'in-development',
-        url: catalog?.url ?? null,
-        description: catalog?.description ?? '',
-        counts: catalog?.counts ?? null,
+        url: catalog
+          ? `${catalog.url}${targeted ? `#${family.id}` : ''}`
+          : null,
+        materialRef: targeted
+          ? { catalogId: catalog.id, familyId: family.id }
+          : null,
+        description: targeted
+          ? family.description
+          : (catalog?.description ?? ''),
+        counts: targeted
+          ? {
+              families: 1,
+              branches: family.branches.length,
+              variants: family.branches.reduce(
+                (total, branch) => total + branch.variants.length,
+                0,
+              ),
+            }
+          : (catalog?.counts ?? null),
         searchText: [
           ...Object.values(group.title),
           ...Object.values(direction.title),
           catalog?.title ?? '',
-          catalog?.description ?? '',
+          targeted ? family.description : (catalog?.description ?? ''),
         ].join(' '),
       };
     }),
@@ -93,6 +131,7 @@ export function getMechanicDirections(lang, catalogs = getMechanics(lang)) {
       catalogId: catalog.id,
       title: catalog.title,
       status: 'ready',
+      materialRef: null,
       url: catalog.url,
       description: catalog.description,
       counts: catalog.counts,
@@ -115,6 +154,30 @@ export function getMechanicDirections(lang, catalogs = getMechanics(lang)) {
       entries: directions.length + additionalCatalogs.length,
     },
   };
+}
+
+/** Validate authored overview targets without changing pure discovery behavior. */
+export function validateDirectionMaterials(catalogs = getMechanics('ru')) {
+  const errors = [];
+  const byId = new Map(catalogs.map((catalog) => [catalog.id, catalog]));
+  for (const direction of data.groups.flatMap((group) => group.directions)) {
+    const reference =
+      /** @type {{materialRef?: {catalogId: string, familyId: string}}} */ (
+        direction
+      ).materialRef;
+    if (!reference) continue;
+    const catalog = byId.get(reference.catalogId);
+    const family = catalog?.families.find(
+      (item) => item.id === reference.familyId,
+    );
+    if (!catalog || (catalog.status && catalog.status !== 'active') || !family)
+      errors.push(`${direction.id}: missing active overview target`);
+    else if (
+      family.branches.reduce((n, branch) => n + branch.variants.length, 0) < 4
+    )
+      errors.push(`${direction.id}: overview needs four concrete variants`);
+  }
+  return errors;
 }
 
 export function mechanicDirectionRecords() {

@@ -1,0 +1,725 @@
+{
+  "id": "activity-simulators",
+  "overviewGroupId": "g14",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Симуляторы занятий и профессий",
+    "en": "Activity and profession simulators"
+  },
+  "description": {
+    "ru": "Симуляторы деятельности превращают наблюдение, последовательность операций и ограниченные инструменты в проверяемую рабочую задачу.",
+    "en": "Activity simulators turn observation, operation sequences and limited tools into a testable work task."
+  },
+  "intro": {
+    "ru": "Симуляторы деятельности превращают наблюдение, последовательность операций и ограниченные инструменты в проверяемую рабочую задачу. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Activity simulators turn observation, operation sequences and limited tools into a testable work task. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t127",
+      "section": "mechanics",
+      "title": {
+        "ru": "Фермерство, садоводство и животноводство",
+        "en": "Farming, gardening and animal husbandry"
+      },
+      "description": {
+        "ru": "Хозяйство связывает подготовку участка, цикл роста и уход за животными с сезонным планом производства.",
+        "en": "Farming connects land preparation, growth cycles and animal care to a seasonal production plan."
+      },
+      "example": {
+        "ru": "Игрок оставляет часть поля под корм, чтобы животные продолжали давать продукцию зимой.",
+        "en": "A player reserves some land for feed to maintain animal production through winter."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одновременное созревание культур и возможность завершить сессию без обязательного немедленного сбора.",
+        "en": "Test simultaneous crop maturity and ending a session without mandatory immediate harvesting."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t127-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t127-v1",
+              "text": {
+                "ru": "Посев занимает участок до созревания.",
+                "en": "Sowing occupies a plot until crops mature."
+              }
+            },
+            {
+              "id": "t127-v2",
+              "text": {
+                "ru": "Полив поддерживает выбранный темп роста.",
+                "en": "Watering supports a chosen growth rate."
+              }
+            },
+            {
+              "id": "t127-v3",
+              "text": {
+                "ru": "Почва меняет пригодность разных культур.",
+                "en": "Soil changes suitability for different crops."
+              }
+            },
+            {
+              "id": "t127-v4",
+              "text": {
+                "ru": "Уход за животным связывает корм с продукцией.",
+                "en": "Animal care connects feed to useful output."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t128",
+      "section": "mechanics",
+      "title": {
+        "ru": "Готовка, рецепты и работа кухни",
+        "en": "Cooking, recipes and kitchen work"
+      },
+      "description": {
+        "ru": "Кухня превращает ингредиенты в заказ через зависимые операции, заставляя согласовывать готовность компонентов и доступность рабочего места.",
+        "en": "Kitchens transform ingredients into orders through dependent steps, requiring aligned component readiness and workstation availability."
+      },
+      "example": {
+        "ru": "Гарнир готовится заранее, пока ограниченная плита занята основным блюдом следующего заказа.",
+        "en": "Side dishes are prepared while a limited stove cooks the next order's main dish."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте порядок операций и потерю качества при ожидании, сохраняя понятную причину испорченного игрового блюда.",
+        "en": "Test operation order and waiting-related quality loss with clear explanations for spoiled game dishes."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t128-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t128-v1",
+              "text": {
+                "ru": "Подготовка сокращает работу после получения заказа.",
+                "en": "Preparation reduces work after an order arrives."
+              }
+            },
+            {
+              "id": "t128-v2",
+              "text": {
+                "ru": "Нагрев требует выбора момента остановки.",
+                "en": "Heating requires deciding when to stop."
+              }
+            },
+            {
+              "id": "t128-v3",
+              "text": {
+                "ru": "Сборка соединяет компоненты нужной готовности.",
+                "en": "Assembly combines components at suitable readiness."
+              }
+            },
+            {
+              "id": "t128-v4",
+              "text": {
+                "ru": "Загрязнение рабочего места создаёт задачу очистки.",
+                "en": "Dirty stations create a cleaning task."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t129",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рыбалка, охота и добывающие промыслы",
+        "en": "Fishing, hunting and harvesting trades"
+      },
+      "description": {
+        "ru": "Добывающий промысел сочетает выбор места и инструмента с чтением поведения цели и моментом извлечения ресурса.",
+        "en": "Harvesting trades combine site and tool choices with reading target behavior and timing resource collection."
+      },
+      "example": {
+        "ru": "Рыбак ослабляет леску при рывке и подтягивает добычу только в короткую паузу сопротивления.",
+        "en": "An angler loosens the line during a surge and reels in during a brief pause in resistance."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте различимость сигнала поклёвки и перегрузки снасти, включая альтернативу обязательной вибрации.",
+        "en": "Test distinct bite and overload signals, including an alternative to mandatory vibration feedback."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t129-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t129-v1",
+              "text": {
+                "ru": "Наживка выбирает вероятную категорию добычи.",
+                "en": "Bait selects a likely catch category."
+              }
+            },
+            {
+              "id": "t129-v2",
+              "text": {
+                "ru": "Натяжение требует дозировать тягу.",
+                "en": "Tension requires modulating the pulling force."
+              }
+            },
+            {
+              "id": "t129-v3",
+              "text": {
+                "ru": "Следы сужают область поиска цели.",
+                "en": "Tracks narrow the target search area."
+              }
+            },
+            {
+              "id": "t129-v4",
+              "text": {
+                "ru": "Лимит добычи сохраняет восстановление участка.",
+                "en": "Harvest limits preserve site recovery."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t131",
+      "section": "mechanics",
+      "title": {
+        "ru": "Уборка, сортировка и восстановление",
+        "en": "Cleaning, sorting and restoration"
+      },
+      "description": {
+        "ru": "Восстановление переводит объект из загрязнённого или повреждённого состояния в упорядоченное через выбор подходящего инструмента и области работы.",
+        "en": "Restoration turns dirty or damaged objects into ordered states through suitable tools and work-area selection."
+      },
+      "example": {
+        "ru": "Реставратор убирает грязь с вывески, сохраняя исходную краску и заметные следы авторского рисунка.",
+        "en": "A restorer cleans a sign while preserving original paint and visible marks of the artist's work."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте границу завершения и объясните остаток задачи, чтобы игрок не искал единственный невидимый пиксель.",
+        "en": "Test completion boundaries and remaining-work feedback to avoid hunting one invisible leftover pixel."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t131-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t131-v1",
+              "text": {
+                "ru": "Очистка снимает конкретный тип загрязнения.",
+                "en": "Cleaning removes a specific contaminant type."
+              }
+            },
+            {
+              "id": "t131-v2",
+              "text": {
+                "ru": "Сортировка распределяет предметы по категориям.",
+                "en": "Sorting assigns objects to categories."
+              }
+            },
+            {
+              "id": "t131-v3",
+              "text": {
+                "ru": "Снятие слоя открывает скрытую поверхность.",
+                "en": "Removing a layer reveals a hidden surface."
+              }
+            },
+            {
+              "id": "t131-v4",
+              "text": {
+                "ru": "Ремонт сохраняет желательные следы старения.",
+                "en": "Repair preserves desirable signs of aging."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t132",
+      "section": "mechanics",
+      "title": {
+        "ru": "Строительство, земляные работы и техника",
+        "en": "Construction, earthmoving and machinery"
+      },
+      "description": {
+        "ru": "Работа техникой согласует положение машины, инструмент и последовательность перемещения материала для достижения заданной формы участка.",
+        "en": "Machinery work coordinates vehicle placement, tools and material movement to achieve a target site shape."
+      },
+      "example": {
+        "ru": "Экскаватор вынимает грунт слоями и складывает его так, чтобы не перекрыть подъезд самосвала.",
+        "en": "An excavator removes soil in layers without blocking the truck's access route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте столкновения рабочего инструмента и точность оценки объёма; явно задайте упрощения игровой модели техники.",
+        "en": "Test tool collisions and volume estimates with explicit simplifications for the game's machinery model."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t132-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t132-v1",
+              "text": {
+                "ru": "Ковш переносит ограниченный объём материала.",
+                "en": "Buckets carry limited material volumes."
+              }
+            },
+            {
+              "id": "t132-v2",
+              "text": {
+                "ru": "Опора ограничивает безопасную рабочую область.",
+                "en": "Supports constrain a machine's working region."
+              }
+            },
+            {
+              "id": "t132-v3",
+              "text": {
+                "ru": "Разметка задаёт требуемую высоту или контур.",
+                "en": "Markings define target height or contour."
+              }
+            },
+            {
+              "id": "t132-v4",
+              "text": {
+                "ru": "Смена инструмента меняет доступный тип операции.",
+                "en": "Tool changes enable different operation types."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t133",
+      "section": "mechanics",
+      "title": {
+        "ru": "Медицина, спасение и аварийные службы",
+        "en": "Medicine, rescue and emergency services"
+      },
+      "description": {
+        "ru": "Игровая спасательная процедура требует определить состояние, выбрать ограниченное средство и выполнить действия в зависимости от результата.",
+        "en": "A game rescue procedure requires identifying a state, choosing limited equipment and acting according to the result."
+      },
+      "example": {
+        "ru": "Спасатели в условной аварийной сцене сначала обеспечивают доступ к пострадавшему, затем организуют перенос.",
+        "en": "Rescuers in a fictional accident first establish access to a casualty and then arrange transport."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте зависимость шагов в заявленных игровых правилах; такую модель нельзя оценивать как подтверждение реального навыка спасения.",
+        "en": "Test step dependencies within stated game rules; do not treat the model as validation of real rescue competence."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t133-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t133-v1",
+              "text": {
+                "ru": "Осмотр открывает доступную игровую информацию.",
+                "en": "Assessment reveals available game information."
+              }
+            },
+            {
+              "id": "t133-v2",
+              "text": {
+                "ru": "Приоритет распределяет ограниченную команду.",
+                "en": "Priorities allocate a limited team."
+              }
+            },
+            {
+              "id": "t133-v3",
+              "text": {
+                "ru": "Процедура имеет явные предпосылки и завершение.",
+                "en": "Procedures have explicit prerequisites and completion."
+              }
+            },
+            {
+              "id": "t133-v4",
+              "text": {
+                "ru": "Передача случая сохраняет сведения для следующего участника.",
+                "en": "Handoffs preserve information for the next participant."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t134",
+      "section": "mechanics",
+      "title": {
+        "ru": "Расследование технических происшествий",
+        "en": "Technical incident investigation"
+      },
+      "description": {
+        "ru": "Техническое расследование сопоставляет журналы, симптомы и состояние компонентов, чтобы отличить первичную причину от последующих отказов.",
+        "en": "Technical investigation compares logs, symptoms and component states to distinguish root causes from subsequent failures."
+      },
+      "example": {
+        "ru": "Остановка насоса оказывается следствием обрыва питания, а не причиной падения давления.",
+        "en": "A stopped pump proves to be a consequence of lost power rather than the cause of pressure loss."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте наличие альтернативных объяснений симптома и возможность подтвердить причину отдельным наблюдением.",
+        "en": "Test alternative explanations for a symptom and confirmation through an independent observation."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t134-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t134-v1",
+              "text": {
+                "ru": "Журнал ограничивает порядок возможных событий.",
+                "en": "Logs constrain the possible event sequence."
+              }
+            },
+            {
+              "id": "t134-v2",
+              "text": {
+                "ru": "Измерение проверяет состояние отдельного компонента.",
+                "en": "Measurements test individual component states."
+              }
+            },
+            {
+              "id": "t134-v3",
+              "text": {
+                "ru": "Изоляция исключает конкурирующую причину.",
+                "en": "Isolation eliminates a competing cause."
+              }
+            },
+            {
+              "id": "t134-v4",
+              "text": {
+                "ru": "Повтор запуска проверяет воспроизводимость версии.",
+                "en": "Restarting tests whether a hypothesis reproduces."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t135",
+      "section": "mechanics",
+      "title": {
+        "ru": "Проверка документов, инспекция и контроль",
+        "en": "Document checks, inspections and control"
+      },
+      "description": {
+        "ru": "Инспекция сравнивает предъявленные сведения с действующими игровыми требованиями, разрешая пропуск, запрос уточнения или отказ.",
+        "en": "Inspection compares submitted information with current in-game requirements to permit entry, seek clarification or refuse."
+      },
+      "example": {
+        "ru": "Пропуск действителен по дате, но имя в заказе не совпадает с именем предъявителя.",
+        "en": "A permit is current but the name on the order differs from the holder's name."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте решение на границе даты и порядок применения нескольких одновременно действующих инструкций.",
+        "en": "Test date-boundary decisions and the application order of several simultaneously active instructions."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t135-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t135-v1",
+              "text": {
+                "ru": "Поле проверяется по явному правилу допуска.",
+                "en": "Fields are checked against explicit entry rules."
+              }
+            },
+            {
+              "id": "t135-v2",
+              "text": {
+                "ru": "Несовпадение связывает два документа.",
+                "en": "Mismatches connect two submitted documents."
+              }
+            },
+            {
+              "id": "t135-v3",
+              "text": {
+                "ru": "Изменение инструкции меняет последующие решения.",
+                "en": "Instruction changes affect later decisions."
+              }
+            },
+            {
+              "id": "t135-v4",
+              "text": {
+                "ru": "Исключение требует отдельного подтверждения.",
+                "en": "Exceptions require separate confirmation."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t136",
+      "section": "mechanics",
+      "title": {
+        "ru": "Доставка, диспетчеризация и обслуживание клиентов",
+        "en": "Delivery, dispatching and customer service"
+      },
+      "description": {
+        "ru": "Доставка связывает последовательность адресов с вместимостью, сроками и состоянием заказа, превращая путь в задачу обслуживания.",
+        "en": "Delivery connects address order to capacity, deadlines and order condition, turning routing into a service problem."
+      },
+      "example": {
+        "ru": "Охлаждённый груз нужно доставить первым, хотя другой адрес географически ближе.",
+        "en": "Chilled cargo must arrive first even though another address is geographically closer."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте полный маршрут с погрузкой и передачей, включая отказ получателя и повреждение товара по игровым правилам.",
+        "en": "Test loading and handoff across a full route, including recipient refusal and game-defined cargo damage."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t136-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t136-v1",
+              "text": {
+                "ru": "Окно приёмки ограничивает время прибытия.",
+                "en": "Receiving windows constrain arrival times."
+              }
+            },
+            {
+              "id": "t136-v2",
+              "text": {
+                "ru": "Груз требует совместимого транспорта.",
+                "en": "Cargo requires compatible transport."
+              }
+            },
+            {
+              "id": "t136-v3",
+              "text": {
+                "ru": "Объединение заказов экономит путь ценой ожидания.",
+                "en": "Combining orders saves distance but adds waiting."
+              }
+            },
+            {
+              "id": "t136-v4",
+              "text": {
+                "ru": "Возврат требует нового свободного места.",
+                "en": "Returns require newly available cargo capacity."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t137",
+      "section": "mechanics",
+      "title": {
+        "ru": "Научные эксперименты и работа с приборами",
+        "en": "Scientific experiments and instruments"
+      },
+      "description": {
+        "ru": "Эксперимент меняет выбранную переменную, измеряет результат и сравнивает его с ожиданием, сохраняя условия проверки.",
+        "en": "An experiment changes a selected variable, measures results and compares them with expectations while preserving test conditions."
+      },
+      "example": {
+        "ru": "Игрок меняет один реагент и сравнивает показания двух одинаково настроенных условных датчиков.",
+        "en": "A player changes one reagent and compares two identically configured fictional sensors."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, можно ли воспроизвести опыт по журналу и отличить игровое предположение от измеренного результата.",
+        "en": "Test reproducing an experiment from its log and distinguishing an assumption from an observed game result."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t137-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t137-v1",
+              "text": {
+                "ru": "Контроль удерживает остальные условия одинаковыми.",
+                "en": "Controls keep other conditions unchanged."
+              }
+            },
+            {
+              "id": "t137-v2",
+              "text": {
+                "ru": "Прибор имеет известную точность и диапазон.",
+                "en": "Instruments have stated precision and range."
+              }
+            },
+            {
+              "id": "t137-v3",
+              "text": {
+                "ru": "Повтор отличает устойчивую связь от случайного результата.",
+                "en": "Repetition separates stable links from chance outcomes."
+              }
+            },
+            {
+              "id": "t137-v4",
+              "text": {
+                "ru": "Протокол сохраняет настройку и наблюдение.",
+                "en": "Protocols preserve settings and observations."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t138",
+      "section": "mechanics",
+      "title": {
+        "ru": "Симуляторы бизнеса, офиса и бюрократии",
+        "en": "Business, office and bureaucracy simulators"
+      },
+      "description": {
+        "ru": "Офисная задача переводит документы и запросы через ограниченные полномочия, согласования и сроки, показывая цену организационных зависимостей.",
+        "en": "Office tasks move documents and requests through limited authority, approvals and deadlines to expose organizational dependencies."
+      },
+      "example": {
+        "ru": "Закупка требует подписи руководителя, который доступен только до начала совещания.",
+        "en": "A purchase needs a manager's signature before the manager leaves for a meeting."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, видна ли причина остановки документа и можно ли устранить её без перебора всех сотрудников.",
+        "en": "Test whether a stalled document has a visible cause and a solution beyond trying every employee."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t138-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t138-v1",
+              "text": {
+                "ru": "Маршрут согласования задаёт обязательный порядок.",
+                "en": "Approval routes impose a required sequence."
+              }
+            },
+            {
+              "id": "t138-v2",
+              "text": {
+                "ru": "Полномочие разрешает конкретный тип решения.",
+                "en": "Authority permits a specific decision type."
+              }
+            },
+            {
+              "id": "t138-v3",
+              "text": {
+                "ru": "Шаблон ускоряет повторяемую обработку.",
+                "en": "Templates speed up repeated processing."
+              }
+            },
+            {
+              "id": "t138-v4",
+              "text": {
+                "ru": "Возврат на доработку создаёт дополнительный цикл.",
+                "en": "Revision requests create another work cycle."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

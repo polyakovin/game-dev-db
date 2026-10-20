@@ -2,6 +2,8 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import matter from 'gray-matter';
 import { validateMechanics, mechanicCatalogs } from '../src/lib/mechanics.mjs';
+import { validateDirectionMaterials } from '../src/lib/mechanic-directions.mjs';
+import { validateMechanicOverviews } from '../src/lib/mechanic-overview-validation.mjs';
 import { validatePractice, practiceSource } from '../src/lib/practice.mjs';
 import { validateLenses, lensData } from '../src/lib/lenses.mjs';
 import { validateJams, jamData } from '../src/lib/jams.mjs';
@@ -300,6 +302,7 @@ for (const [index, resource] of resources.entries()) {
 }
 
 errors.push(...validateMechanics());
+errors.push(...validateDirectionMaterials(), ...validateMechanicOverviews());
 errors.push(...validatePractice(), ...validateLenses(), ...validateJams());
 errors.push(
   ...validateLearningPaths({

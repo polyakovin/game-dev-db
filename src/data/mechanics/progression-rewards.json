@@ -1,0 +1,415 @@
+{
+  "id": "progression-rewards",
+  "overviewGroupId": "g24",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Прогрессия, награды и удержание",
+    "en": "Progression, rewards and retention"
+  },
+  "description": {
+    "ru": "Прогрессия меняет возможности и цели игрока; награды должны объяснять новые решения и сохранять удобные точки остановки.",
+    "en": "Progression changes player options and goals; rewards should explain new decisions and preserve useful stopping points."
+  },
+  "intro": {
+    "ru": "Прогрессия меняет возможности и цели игрока; награды должны объяснять новые решения и сохранять удобные точки остановки. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Progression changes player options and goals; rewards should explain new decisions and preserve useful stopping points. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t240",
+      "section": "mechanics",
+      "title": {
+        "ru": "Открытие возможностей и расширение пространства действий",
+        "en": "Unlocking abilities and expanding available actions"
+      },
+      "description": {
+        "ru": "Открытие способности расширяет набор допустимых действий и позволяет переосмыслить ранее недоступные задачи.",
+        "en": "Unlocking an ability expands legal actions and allows previously inaccessible challenges to be reconsidered."
+      },
+      "example": {
+        "ru": "Способность переносить заряд позволяет не только открыть дверь, но и перестроить маршрут питания.",
+        "en": "Carrying electrical charge opens a door and also enables rerouting a power network."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, появляются ли после открытия хотя бы два разных применения способности, понятных из её правила.",
+        "en": "Test whether an unlock enables at least two different applications understandable from the ability's rule."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t240-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t240-v1",
+              "text": {
+                "ru": "Новый глагол открывает иной тип взаимодействия.",
+                "en": "A new verb enables another type of interaction."
+              }
+            },
+            {
+              "id": "t240-v2",
+              "text": {
+                "ru": "Улучшение снимает прежнее ограничение действия.",
+                "en": "An upgrade removes an existing action constraint."
+              }
+            },
+            {
+              "id": "t240-v3",
+              "text": {
+                "ru": "Знание раскрывает уже доступную возможность.",
+                "en": "Knowledge reveals an already available capability."
+              }
+            },
+            {
+              "id": "t240-v4",
+              "text": {
+                "ru": "Общий доступ переносит открытие на других героев.",
+                "en": "Shared access transfers an unlock to other characters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t241",
+      "section": "mechanics",
+      "title": {
+        "ru": "Коллекции, альбомы и заполнение наборов",
+        "en": "Collections, albums and set completion"
+      },
+      "description": {
+        "ru": "Коллекция превращает разрозненные находки в видимый набор, где недостающие элементы направляют дальнейший поиск.",
+        "en": "A collection turns separate findings into a visible set whose missing entries guide further searches."
+      },
+      "example": {
+        "ru": "Альбом растений показывает незаполненную горную категорию и предлагает исследовать другую высоту.",
+        "en": "A plant album's empty mountain category suggests exploring at a different altitude."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте последние элементы набора: путь к завершению должен быть понятнее бесконечного слепого повторения.",
+        "en": "Test the final collection entries: completion should have a clearer path than endless blind repetition."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t241-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t241-v1",
+              "text": {
+                "ru": "Силуэт подсказывает форму отсутствующего объекта.",
+                "en": "Silhouettes suggest the shape of a missing entry."
+              }
+            },
+            {
+              "id": "t241-v2",
+              "text": {
+                "ru": "Категория объединяет предметы по общему признаку.",
+                "en": "Categories connect items through a shared feature."
+              }
+            },
+            {
+              "id": "t241-v3",
+              "text": {
+                "ru": "Обмен превращает повтор в путь к пробелу.",
+                "en": "Trading turns duplicates into a path toward gaps."
+              }
+            },
+            {
+              "id": "t241-v4",
+              "text": {
+                "ru": "История находки сохраняет место и обстоятельства.",
+                "en": "Discovery history preserves location and circumstances."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t242",
+      "section": "mechanics",
+      "title": {
+        "ru": "Достижения, испытания и мастерство",
+        "en": "Achievements, challenges and mastery"
+      },
+      "description": {
+        "ru": "Испытание задаёт отдельный критерий мастерства и отмечает способ выполнения, выходящий за обычное завершение задачи.",
+        "en": "A challenge sets a separate mastery criterion and recognizes execution beyond ordinary objective completion."
+      },
+      "example": {
+        "ru": "Уровень можно пройти обычным путём, а отдельная медаль требует не касаться неподвижных опор.",
+        "en": "A level allows an ordinary route, while a separate medal requires avoiding stationary platforms."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, фиксирует ли система нарушение условия сразу и позволяет ли повторить испытание без лишнего ожидания.",
+        "en": "Test immediate feedback for a broken challenge rule and retrying without unnecessary waiting."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t242-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t242-v1",
+              "text": {
+                "ru": "Медаль различает несколько уровней исполнения.",
+                "en": "Medals distinguish levels of execution quality."
+              }
+            },
+            {
+              "id": "t242-v2",
+              "text": {
+                "ru": "Условие запрещает привычный сильный инструмент.",
+                "en": "Restrictions remove a familiar powerful tool."
+              }
+            },
+            {
+              "id": "t242-v3",
+              "text": {
+                "ru": "Рекорд сохраняет лучший результат попытки.",
+                "en": "Records preserve the best result of an attempt."
+              }
+            },
+            {
+              "id": "t242-v4",
+              "text": {
+                "ru": "Серия проверяет устойчивость навыка без ошибки.",
+                "en": "Streaks test consistent execution without mistakes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t243",
+      "section": "mechanics",
+      "title": {
+        "ru": "Лут, редкость и распределение наград",
+        "en": "Loot, rarity and reward distribution"
+      },
+      "description": {
+        "ru": "Система добычи распределяет награды по условиям и вероятностям, связывая неопределённость с понятным направлением поиска.",
+        "en": "A loot system distributes rewards through conditions and probabilities, connecting uncertainty to a clear search direction."
+      },
+      "example": {
+        "ru": "Нужный модуль случайно выпадает на станции, а десять жетонов позволяют получить его напрямую.",
+        "en": "A station can drop a needed module, while ten tokens allow obtaining it directly."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте крайние серии неудач и понятность правил гарантии; не выдавайте среднее ожидание за обещанный срок.",
+        "en": "Test long failure streaks and guarantee clarity; do not present an average wait as a promised completion time."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t243-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t243-v1",
+              "text": {
+                "ru": "Таблица связывает источник с возможной наградой.",
+                "en": "Loot tables connect sources to possible rewards."
+              }
+            },
+            {
+              "id": "t243-v2",
+              "text": {
+                "ru": "Вес меняет относительную частоту предмета.",
+                "en": "Weights alter an item's relative frequency."
+              }
+            },
+            {
+              "id": "t243-v3",
+              "text": {
+                "ru": "Гарантия ограничивает число неудачных попыток.",
+                "en": "Guarantees limit unsuccessful attempts."
+              }
+            },
+            {
+              "id": "t243-v4",
+              "text": {
+                "ru": "Защита от дублей сужает незавершённый набор.",
+                "en": "Duplicate protection narrows an unfinished collection."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t244",
+      "section": "mechanics",
+      "title": {
+        "ru": "Idle, incremental и офлайн-прогресс",
+        "en": "Idle, incremental and offline progress"
+      },
+      "description": {
+        "ru": "Накопление продолжается с ограниченным участием игрока, который выбирает улучшения и периодически меняет устройство производства.",
+        "en": "Accumulation continues with limited player attention while upgrades periodically change the production structure."
+      },
+      "example": {
+        "ru": "Мастерская работает без игрока, пока склад не заполнится и не потребует нового распределения товаров.",
+        "en": "A workshop runs unattended until storage fills and calls for a new allocation of goods."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте смену часов и повторную загрузку: один интервал не должен начисляться дважды или давать отрицательный доход.",
+        "en": "Test clock changes and repeated loads so one interval is not rewarded twice or converted into negative income."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t244-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t244-v1",
+              "text": {
+                "ru": "Автопроизводство заменяет повторное ручное действие.",
+                "en": "Automatic production replaces repeated manual input."
+              }
+            },
+            {
+              "id": "t244-v2",
+              "text": {
+                "ru": "Лимит хранения задаёт предел накопления.",
+                "en": "Storage caps limit accumulated output."
+              }
+            },
+            {
+              "id": "t244-v3",
+              "text": {
+                "ru": "Офлайн-расчёт восстанавливает прошедший интервал.",
+                "en": "Offline simulation accounts for an elapsed interval."
+              }
+            },
+            {
+              "id": "t244-v4",
+              "text": {
+                "ru": "Узкое место меняет выгодную следующую покупку.",
+                "en": "Bottlenecks change the best next purchase."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t245",
+      "section": "mechanics",
+      "title": {
+        "ru": "Престиж, сброс и повторное развитие",
+        "en": "Prestige, resets and renewed progression"
+      },
+      "description": {
+        "ru": "Добровольный сброс обменивает часть текущего развития на устойчивое изменение правил следующего цикла.",
+        "en": "A voluntary reset trades some current progression for persistent changes to the next development cycle."
+      },
+      "example": {
+        "ru": "Перезапуск фабрики убирает станки, но оставляет чертёж, позволяющий объединять операции.",
+        "en": "Restarting a factory removes machines but preserves a blueprint for combining operations."
+      },
+      "prototypeCheck": {
+        "ru": "До подтверждения покажите потери и сохранения; проверьте, даёт ли повторный цикл новые решения помимо ожидания.",
+        "en": "Show losses and retained progress before confirmation; test for new decisions beyond waiting through another cycle."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t245-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t245-v1",
+              "text": {
+                "ru": "Множитель сокращает уже освоенную часть роста.",
+                "en": "Multipliers shorten already mastered growth stages."
+              }
+            },
+            {
+              "id": "t245-v2",
+              "text": {
+                "ru": "Новая ветка открывает иной путь развития.",
+                "en": "New branches open another development route."
+              }
+            },
+            {
+              "id": "t245-v3",
+              "text": {
+                "ru": "Частичный сброс сохраняет выбранный проект.",
+                "en": "Partial resets preserve a chosen project."
+              }
+            },
+            {
+              "id": "t245-v4",
+              "text": {
+                "ru": "Убывающая выгода меняет лучший момент перезапуска.",
+                "en": "Diminishing gains change the best restart timing."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

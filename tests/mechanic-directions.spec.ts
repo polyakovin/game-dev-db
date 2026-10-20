@@ -3,6 +3,7 @@ import {
   getMechanicDirections,
   mechanicDirectionData,
   validateMechanicDirections,
+  validateDirectionMaterials,
 } from '../src/lib/mechanic-directions.mjs';
 import { getMechanics } from '../src/lib/mechanics.mjs';
 
@@ -39,7 +40,11 @@ test('the complete direction map has bilingual stable identities and validated c
 
 test('readiness follows available catalog content and never treats archives as ready', () => {
   const source = mechanicDirectionData.groups[0].directions[0];
-  const existing = getMechanics('ru');
+  const reference = 'materialRef' in source ? source.materialRef : undefined;
+  const existing = getMechanics('ru').filter(
+    (catalog) =>
+      catalog.id !== source.catalogId && catalog.id !== reference?.catalogId,
+  );
   const added = {
     ...existing[0],
     id: source.catalogId,
@@ -62,6 +67,53 @@ test('readiness follows available catalog content and never treats archives as r
     status: 'in-development',
     url: null,
   });
+});
+
+test('a direction resolves to a real family and prefers a standalone catalog', () => {
+  const source = mechanicDirectionData.groups[0].directions[0];
+  if (!('materialRef' in source)) throw new Error('Missing overview fixture');
+  const reference = source.materialRef;
+  if (!reference) throw new Error('Missing overview target');
+  const catalogs = getMechanics('ru');
+  const lookup = (items: typeof catalogs) =>
+    getMechanicDirections('ru', items).groups[0].directions[0];
+  const familyTarget = lookup(catalogs);
+  expect(familyTarget.url).toContain(`#${reference.familyId}`);
+  expect(familyTarget.counts?.families).toBe(1);
+  const missing = catalogs.map((catalog) =>
+    catalog.id === reference.catalogId
+      ? {
+          ...catalog,
+          families: catalog.families.filter(
+            (family) => family.id !== reference.familyId,
+          ),
+        }
+      : catalog,
+  );
+  expect(lookup(missing)).toMatchObject({
+    status: 'in-development',
+    url: null,
+  });
+  expect(validateDirectionMaterials(missing).join()).toContain(source.id);
+  for (const status of ['archived', 'draft']) {
+    const unavailable = catalogs.map((catalog) =>
+      catalog.id === reference.catalogId ? { ...catalog, status } : catalog,
+    );
+    expect(lookup(unavailable)).toMatchObject({
+      status: 'in-development',
+      url: null,
+    });
+    expect(validateDirectionMaterials(unavailable).join()).toContain(source.id);
+  }
+  const standalone = {
+    ...catalogs[0],
+    id: source.catalogId,
+    url:
+      'https://polyakovin.github.io/game-dev-db/ru/mechanics/' +
+      source.catalogId +
+      '/',
+  };
+  expect(lookup([...catalogs, standalone]).url).toBe(standalone.url);
 });
 
 for (const lang of ['ru', 'en'] as const) {
@@ -92,7 +144,7 @@ for (const lang of ['ru', 'en'] as const) {
       page.locator('[data-direction][data-status="in-development"]'),
     ).toHaveCount(index.counts.inDevelopment);
     await expect(page.locator('[data-mechanics-card]')).toHaveCount(
-      getMechanics(lang).length,
+      index.counts.readyMaterials,
     );
     const rendered = await page
       .locator('[data-direction]:not([data-group="general"])')
@@ -112,7 +164,9 @@ for (const lang of ['ru', 'en'] as const) {
         id: direction.id,
         title: direction.title,
         status: direction.status,
-        links: direction.url ? [new URL(direction.url).pathname] : [],
+        links: direction.url
+          ? [new URL(direction.url).pathname + new URL(direction.url).hash]
+          : [],
         label:
           direction.status === 'ready'
             ? lang === 'ru'
@@ -180,7 +234,7 @@ for (const lang of ['ru', 'en'] as const) {
     await page.locator('#direction-search').fill(directions[0].title);
     await expect(page.locator(`#${directions[0].id}`)).toBeVisible();
     await page.locator('#direction-ready').check();
-    await expect(page.locator('[data-direction-empty]')).toBeVisible();
+    await expect(page.locator(`#${directions[0].id}`)).toBeVisible();
     await page.locator('[data-direction-controls] [type="reset"]').click();
     await expect(page.locator('[data-direction]:visible')).toHaveCount(
       index.counts.entries,
@@ -232,7 +286,9 @@ for (const lang of ['ru', 'en'] as const) {
       page.locator('[data-direction][data-status="in-development"]:visible'),
     ).toHaveCount(index.counts.inDevelopment);
     await page.locator(`#${readyDirection.id} a`).click();
-    await expect(page).toHaveURL(new URL(readyDirection.url!).pathname);
+    await expect(page).toHaveURL(
+      new URL(readyDirection.url!).pathname + new URL(readyDirection.url!).hash,
+    );
     await context.close();
   });
 }

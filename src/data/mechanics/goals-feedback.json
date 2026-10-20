@@ -1,0 +1,403 @@
+{
+  "id": "goals-feedback",
+  "overviewGroupId": "g27",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Цели, сложность, обучение и обратная связь",
+    "en": "Goals, difficulty, learning and feedback"
+  },
+  "description": {
+    "ru": "Цели и обратная связь объясняют ценность действия, причины результата и способы улучшить следующую попытку.",
+    "en": "Goals and feedback explain the value of an action, the causes of its result and ways to improve the next attempt."
+  },
+  "intro": {
+    "ru": "Цели и обратная связь объясняют ценность действия, причины результата и способы улучшить следующую попытку. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Goals and feedback explain the value of an action, the causes of its result and ways to improve the next attempt. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t270",
+      "section": "mechanics",
+      "title": {
+        "ru": "Победа, поражение и альтернативные условия успеха",
+        "en": "Victory, defeat and alternative success conditions"
+      },
+      "description": {
+        "ru": "Условия завершения определяют ценность действий; альтернативный успех позволяет выполнить смысл задачи разными ограниченными способами.",
+        "en": "Completion conditions define action value; alternative successes fulfill an objective through different constrained approaches."
+      },
+      "example": {
+        "ru": "Поселение можно защитить победой в бою или своевременной эвакуацией всех жителей.",
+        "en": "A settlement can be defended through battle or by evacuating all residents in time."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одновременное выполнение условий победы и поражения; приоритет результата должен быть явным.",
+        "en": "Test simultaneous victory and defeat conditions with an explicit outcome priority."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t270-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t270-v1",
+              "text": {
+                "ru": "Основная цель задаёт обязательное условие завершения.",
+                "en": "Primary objectives set mandatory completion criteria."
+              }
+            },
+            {
+              "id": "t270-v2",
+              "text": {
+                "ru": "Альтернатива заменяет бой переговорами или обходом.",
+                "en": "Alternatives replace combat with negotiation or bypass."
+              }
+            },
+            {
+              "id": "t270-v3",
+              "text": {
+                "ru": "Ничья имеет отдельный результат и последствия.",
+                "en": "Draws have distinct results and consequences."
+              }
+            },
+            {
+              "id": "t270-v4",
+              "text": {
+                "ru": "Поражение сохраняет часть полезного изменения мира.",
+                "en": "Failure preserves some useful world changes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t271",
+      "section": "mechanics",
+      "title": {
+        "ru": "Счёт, комбо, множители и рекорды",
+        "en": "Scores, combos, multipliers and records"
+      },
+      "description": {
+        "ru": "Счёт оценивает действия, а серии и множители связывают награду с последовательностью и устойчивостью исполнения.",
+        "en": "Scores evaluate actions while combos and multipliers link rewards to sequence and consistent execution."
+      },
+      "example": {
+        "ru": "Разные трюки повышают множитель, а повтор одного безопасного трюка постепенно теряет ценность.",
+        "en": "Varied tricks raise a multiplier while repeating one safe trick gradually loses value."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте бесконечный набор очков без продвижения и совпадение показанного счёта с итоговым подсчётом.",
+        "en": "Test indefinite scoring without progress and agreement between displayed and final totals."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t271-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t271-v1",
+              "text": {
+                "ru": "Базовые очки задают вес отдельного действия.",
+                "en": "Base points weight individual actions."
+              }
+            },
+            {
+              "id": "t271-v2",
+              "text": {
+                "ru": "Комбо требует следующего успеха до истечения окна.",
+                "en": "Combos require another success before a window closes."
+              }
+            },
+            {
+              "id": "t271-v3",
+              "text": {
+                "ru": "Множитель повышает цену сохранения серии.",
+                "en": "Multipliers raise the value of keeping a streak."
+              }
+            },
+            {
+              "id": "t271-v4",
+              "text": {
+                "ru": "Рекорд фиксирует результат по общим условиям режима.",
+                "en": "Records preserve results under shared mode conditions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t272",
+      "section": "mechanics",
+      "title": {
+        "ru": "Время прохождения, speedrun и оптимизация маршрута",
+        "en": "Completion time, speedrunning and route optimization"
+      },
+      "description": {
+        "ru": "Прохождение на время превращает маршрут, переходы и надёжность исполнения в совместную задачу минимизации длительности.",
+        "en": "Timed completion turns routing, transitions and execution reliability into a shared duration-minimization problem."
+      },
+      "example": {
+        "ru": "Короткий прыжок экономит секунды, но длинный обход даёт более устойчивую попытку без перезапуска.",
+        "en": "A short jump saves seconds while a longer bypass provides a more reliable no-reset attempt."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте таймер при паузе, загрузке и смене частоты кадров; условия сравнения результатов должны совпадать.",
+        "en": "Test timing across pauses, loading and frame-rate changes so compared runs share the same timing rules."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t272-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t272-v1",
+              "text": {
+                "ru": "Сегмент отделяет локальную потерю времени.",
+                "en": "Splits identify local time losses."
+              }
+            },
+            {
+              "id": "t272-v2",
+              "text": {
+                "ru": "Призрак показывает собственную предыдущую траекторию.",
+                "en": "Ghosts display a previous personal trajectory."
+              }
+            },
+            {
+              "id": "t272-v3",
+              "text": {
+                "ru": "Маршрут обменивает скорость на вероятность ошибки.",
+                "en": "Routes trade speed against failure probability."
+              }
+            },
+            {
+              "id": "t272-v4",
+              "text": {
+                "ru": "Категория ограничивает разрешённые приёмы прохождения.",
+                "en": "Categories constrain permitted completion techniques."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t277",
+      "section": "mechanics",
+      "title": {
+        "ru": "Обратная связь, game feel и читаемость состояния",
+        "en": "Feedback, game feel and state readability"
+      },
+      "description": {
+        "ru": "Обратная связь делает состояние и причинность действия читаемыми через согласованное изображение, звук, движение и тактильный ответ.",
+        "en": "Feedback makes state and action causality readable through coordinated visuals, sound, motion and tactile response."
+      },
+      "example": {
+        "ru": "Отражённый удар меняет звук и положение оружия, сохраняя различимость даже без тряски камеры.",
+        "en": "A blocked strike changes sound and weapon motion and remains readable without camera shake."
+      },
+      "prototypeCheck": {
+        "ru": "Отключите декоративные эффекты и звук по отдельности: ключевой результат должен оставаться распознаваемым доступным каналом.",
+        "en": "Disable decoration and audio separately; essential outcomes should remain identifiable through an available channel."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t277-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t277-v1",
+              "text": {
+                "ru": "Подготовка показывает будущую область воздействия.",
+                "en": "Anticipation shows an upcoming effect region."
+              }
+            },
+            {
+              "id": "t277-v2",
+              "text": {
+                "ru": "Контакт подтверждает момент успешного действия.",
+                "en": "Contact feedback confirms a successful action."
+              }
+            },
+            {
+              "id": "t277-v3",
+              "text": {
+                "ru": "Разный сигнал различает блок и промах.",
+                "en": "Distinct cues separate blocks from misses."
+              }
+            },
+            {
+              "id": "t277-v4",
+              "text": {
+                "ru": "Настройка ослабляет эффект без потери смысла.",
+                "en": "Settings reduce intensity without removing meaning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t279",
+      "section": "mechanics",
+      "title": {
+        "ru": "Диегетический интерфейс и взаимодействие через приборы",
+        "en": "Diegetic interfaces and in-world instruments"
+      },
+      "description": {
+        "ru": "Прибор внутри мира показывает состояние и требует действий персонажа, превращая чтение интерфейса в часть пространственной задачи.",
+        "en": "In-world instruments display state and require character actions, making interface reading part of a spatial challenge."
+      },
+      "example": {
+        "ru": "Заряд аккумулятора виден на переносном приборе, который приходится поднять вместо оружия.",
+        "en": "Battery charge appears on a handheld instrument that must be raised instead of a weapon."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте чтение шкалы при малом разрешении и альтернативу, если положение прибора делает обязательную информацию недоступной.",
+        "en": "Test gauge readability at low resolution and alternatives when instrument placement hides essential information."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t279-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t279-v1",
+              "text": {
+                "ru": "Шкала на предмете требует повернуть его к себе.",
+                "en": "Object-mounted gauges require orienting the object."
+              }
+            },
+            {
+              "id": "t279-v2",
+              "text": {
+                "ru": "Панель открывает управление только рядом.",
+                "en": "Panels permit control only while nearby."
+              }
+            },
+            {
+              "id": "t279-v3",
+              "text": {
+                "ru": "Экран прибора ограничивает поле обзора.",
+                "en": "Instrument screens constrain the field of view."
+              }
+            },
+            {
+              "id": "t279-v4",
+              "text": {
+                "ru": "Дублирующий сигнал сохраняет важное состояние доступным.",
+                "en": "Redundant cues preserve essential state access."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t278",
+      "section": "mechanics",
+      "title": {
+        "ru": "Инвентари, карты и интерфейс как игровое пространство",
+        "en": "Inventories, maps and interfaces as play spaces"
+      },
+      "description": {
+        "ru": "Интерфейс становится игровым пространством, когда размещение, соединение или чтение его элементов непосредственно меняет решение задачи.",
+        "en": "Interfaces become play spaces when placing, connecting or interpreting their elements directly changes a challenge's solution."
+      },
+      "example": {
+        "ru": "Игрок переставляет комнаты на карте, меняя реальные соединения дверей в подземелье.",
+        "en": "A player rearranges map rooms and changes actual doorway connections in a dungeon."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, видна ли связь интерфейсной операции с миром и можно ли отменить действие до создания тупика.",
+        "en": "Test visible links between interface operations and world changes, with undo before creating a dead end."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t278-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t278-v1",
+              "text": {
+                "ru": "Упаковка связывает форму предмета с местом хранения.",
+                "en": "Packing connects item shapes to storage space."
+              }
+            },
+            {
+              "id": "t278-v2",
+              "text": {
+                "ru": "Карта разрешает переставлять связи между комнатами.",
+                "en": "Maps permit rearranging connections between rooms."
+              }
+            },
+            {
+              "id": "t278-v3",
+              "text": {
+                "ru": "Окно перекрывает или раскрывает часть мира.",
+                "en": "Windows hide or reveal parts of a world."
+              }
+            },
+            {
+              "id": "t278-v4",
+              "text": {
+                "ru": "Панель соединяет команды в исполняемую последовательность.",
+                "en": "Panels connect commands into executable sequences."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Game Accessibility Guidelines",
+        "en": "Game Accessibility Guidelines"
+      },
+      "url": "https://gameaccessibilityguidelines.com/",
+      "description": {
+        "ru": "Первичный справочник авторов рекомендаций по моторной, сенсорной и когнитивной доступности.",
+        "en": "The guideline authors’ primary reference on motor, sensory and cognitive accessibility."
+      }
+    }
+  ]
+}

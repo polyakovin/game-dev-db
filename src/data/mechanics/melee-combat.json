@@ -1,0 +1,621 @@
+{
+  "id": "melee-combat",
+  "overviewGroupId": "g02",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Ближний бой и боевые системы",
+    "en": "Melee and combat systems"
+  },
+  "description": {
+    "ru": "Контактный бой: дистанция, подготовка удара, защита, комбинации, захваты и управление группой противников.",
+    "en": "Contact combat: range, attack commitment, defense, combinations, grapples and managing groups of opponents."
+  },
+  "intro": {
+    "ru": "Ближний бой строится на выборе дистанции и момента обязательства. После начала действия игрок может потерять возможность немедленно защититься, поэтому противник должен показывать подготовку, область действия и результат контакта. Эти обзоры разделяют бой на читаемые решения: кого атаковать, когда продолжить серию, какую защиту выбрать и как выйти из опасной позиции. Сначала проверяйте одну атаку и один ответ без декоративных эффектов. Отдельный подробный каталог боссов остаётся доступен в общей карте; здесь раскрыты остальные направления контактного боя. Источники показывают способы описания состояний и анимационных переходов, а не задают обязательную для всех игр боевую формулу.",
+    "en": "Melee combat revolves around distance and the moment of commitment. Starting an action can temporarily remove the ability to defend, so opponents need readable preparation, reach and contact results. These overviews separate decisions about targets, continuing a sequence, choosing a defense and escaping a bad position. Start by testing one attack and one response without decorative effects. The dedicated boss reference remains available in the direction map; this catalog covers the other contact-combat topics. Sources illustrate state and animation-transition models rather than prescribing a universal combat formula."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t011",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рукопашный бой и beat ’em up",
+        "en": "Hand-to-hand combat and beat ’em ups"
+      },
+      "description": {
+        "ru": "Игрок выбирает цель, дистанцию и направление удара, связывая перемещение с моментом безопасного контакта и выходом из окружения.",
+        "en": "The player chooses a target, distance and attack direction, connecting movement to safe contact timing and escape from surrounding enemies."
+      },
+      "example": {
+        "ru": "В переулке игрок отталкивает ближайшего врага к стене и проходит через освободившуюся сторону, прежде чем продолжать бой.",
+        "en": "In an alley, the player pushes the nearest enemy toward a wall and exits through the opened side before continuing the fight."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте столкновения с одним и несколькими врагами: один взмах не должен получать лишние попадания от повторной проверки той же цели.",
+        "en": "Test one enemy and a crowd: repeated overlap checks should not grant unintended extra hits to the same target from one swing."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t011-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t011-v1",
+              "text": {
+                "ru": "Раздельные дистанции: короткий удар быстрее, длинный достаёт отходящего противника.",
+                "en": "Distinct ranges: a short strike is quicker, while a long strike reaches retreating opponents."
+              }
+            },
+            {
+              "id": "t011-v2",
+              "text": {
+                "ru": "Направленный контакт: положение перед целью, сбоку или сзади меняет доступный ответ.",
+                "en": "Directional contact: front, side or rear positioning changes the available response."
+              }
+            },
+            {
+              "id": "t011-v3",
+              "text": {
+                "ru": "Подброс и падение: удар временно переводит цель в другое состояние движения.",
+                "en": "Launch and knockdown: a hit temporarily puts the target in another movement state."
+              }
+            },
+            {
+              "id": "t011-v4",
+              "text": {
+                "ru": "Подбор предмета: оружие окружения меняет радиус и расходуется при использовании.",
+                "en": "Environmental weapons: picked-up objects change reach and are consumed through use."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t012",
+      "section": "mechanics",
+      "title": {
+        "ru": "Файтинг и дуэли",
+        "en": "Fighting games and duels"
+      },
+      "description": {
+        "ru": "Дуэль превращает дистанцию, подготовку и восстановление в обмен преимуществами: игрок провоцирует действие и выбирает подходящий ответ.",
+        "en": "A duel turns range, startup and recovery into exchanges of advantage: the player provokes an action and selects a response."
+      },
+      "example": {
+        "ru": "В тренировочной дуэли длинный выпад ловит отступление, но после промаха позволяет противнику приблизиться и ответить короткой серией.",
+        "en": "In a training duel, a long lunge catches retreating movement but lets the opponent approach and answer with a short sequence after a miss."
+      },
+      "prototypeCheck": {
+        "ru": "Для каждого удара проверьте попадание, блок и промах отдельно; преимущества должны соответствовать разрешённым переходам состояний.",
+        "en": "Test a hit, a block and a miss for each move separately; resulting advantages should follow the permitted state transitions."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t012-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t012-v1",
+              "text": {
+                "ru": "Высота атаки: разные зоны требуют разных вариантов защиты или изменения стойки.",
+                "en": "Attack height: different target zones require different defenses or stance changes."
+              }
+            },
+            {
+              "id": "t012-v2",
+              "text": {
+                "ru": "Промах с наказанием: выход из радиуса открывает ответ во время восстановления.",
+                "en": "Whiff punishment: leaving an attack's reach opens a response during recovery."
+              }
+            },
+            {
+              "id": "t012-v3",
+              "text": {
+                "ru": "Отмена движения: разрешённый переход сокращает обязательство ценой ресурса или условия.",
+                "en": "Move canceling: a permitted transition reduces commitment at a resource or condition cost."
+              }
+            },
+            {
+              "id": "t012-v4",
+              "text": {
+                "ru": "Разрушение защиты: пассивный блок уступает захвату, накопленному давлению или смене угла.",
+                "en": "Defense breaking: passive blocking loses to throws, accumulated pressure or a changed angle."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t013",
+      "section": "mechanics",
+      "title": {
+        "ru": "Комбо и character action",
+        "en": "Combos and character action"
+      },
+      "description": {
+        "ru": "Игрок связывает действия по разрешённым переходам, выбирая между надёжным завершением серии, продолжением давления и сохранением защитного ответа.",
+        "en": "The player connects actions through permitted transitions, trading reliable finishers against continued pressure and preserved defensive options."
+      },
+      "example": {
+        "ru": "Игрок завершает короткую серию отталкиванием или тратит заряд отмены, чтобы уйти из атаки второго противника.",
+        "en": "The player finishes a short sequence with a push or spends a cancel charge to escape another opponent's attack."
+      },
+      "prototypeCheck": {
+        "ru": "Отправляйте следующее нажатие до, внутри и после окна продолжения; буфер не должен выполнять действие дважды.",
+        "en": "Send the next input before, during and after the follow-up window; the buffer should not execute the action twice."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t013-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t013-v1",
+              "text": {
+                "ru": "Ветвление серии: одинаковое начало ведёт к разным завершающим действиям.",
+                "en": "Branching sequences: the same opening leads to different finishers."
+              }
+            },
+            {
+              "id": "t013-v2",
+              "text": {
+                "ru": "Условное продолжение: следующий удар разрешается только после подтверждённого контакта.",
+                "en": "Conditional follow-ups: the next strike is permitted only after confirmed contact."
+              }
+            },
+            {
+              "id": "t013-v3",
+              "text": {
+                "ru": "Ресурс отмены: переход в уклонение или новую атаку расходует ограниченный запас.",
+                "en": "Cancel resources: transitioning into a dodge or another attack spends a limited reserve."
+              }
+            },
+            {
+              "id": "t013-v4",
+              "text": {
+                "ru": "Смена цели: продолжение серии переводит удар на другого доступного противника.",
+                "en": "Target switching: continuing a sequence redirects the next strike to another reachable opponent."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t014",
+      "section": "mechanics",
+      "title": {
+        "ru": "Soulslike и управление выносливостью",
+        "en": "Soulslikes and stamina management"
+      },
+      "description": {
+        "ru": "Игрок сохраняет возможность ответить на следующую угрозу, распределяя ресурс между атакой, уклонением, блоком и восстановлением позиции.",
+        "en": "The player preserves a response to the next threat by dividing a resource between attacking, dodging, blocking and repositioning."
+      },
+      "example": {
+        "ru": "У тяжёлой двери игрок оставляет запас для уклонения после второго удара, хотя третий мог бы добить текущую цель.",
+        "en": "At a heavy doorway, the player saves enough reserve to dodge after a second strike even though a third could finish the current target."
+      },
+      "prototypeCheck": {
+        "ru": "Сравните исходы при полном и почти пустом запасе: интерфейс должен объяснять недоступное действие до его опасной попытки.",
+        "en": "Compare full and nearly depleted reserves: feedback should explain an unavailable action before the player makes a dangerous attempt."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t014-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t014-v1",
+              "text": {
+                "ru": "Общий запас: атака и защита конкурируют за одну шкалу возможностей.",
+                "en": "Shared reserves: attacks and defenses compete for the same resource."
+              }
+            },
+            {
+              "id": "t014-v2",
+              "text": {
+                "ru": "Уязвимое восстановление: после серии требуется пауза, дистанция или безопасная позиция.",
+                "en": "Exposed recovery: a sequence requires a pause, distance or a safe position afterward."
+              }
+            },
+            {
+              "id": "t014-v3",
+              "text": {
+                "ru": "Тяжёлое обязательство: сильное действие труднее прервать и опаснее применять вслепую.",
+                "en": "Heavy commitment: powerful actions are harder to interrupt and riskier to use blindly."
+              }
+            },
+            {
+              "id": "t014-v4",
+              "text": {
+                "ru": "Разные защиты: дистанционное избегание, блок и уклонение решают разные угрозы.",
+                "en": "Distinct defenses: spacing, blocking and dodging solve different threats."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t015",
+      "section": "mechanics",
+      "title": {
+        "ru": "Hack and slash",
+        "en": "Hack and slash"
+      },
+      "description": {
+        "ru": "Игрок поддерживает поток атак и выбирает порядок применения способностей, чтобы быстро разбирать группы с разными сопротивлениями и угрозами.",
+        "en": "The player sustains attacks and chooses ability order to clear groups with different resistances and threats efficiently."
+      },
+      "example": {
+        "ru": "В группе с лекарем игрок сначала пробивает проход рывком, отмечает лекаря и использует его уничтожение для цепного взрыва.",
+        "en": "Against a group with a healer, the player opens a path with a dash, marks the healer and uses its defeat to trigger a chain explosion."
+      },
+      "prototypeCheck": {
+        "ru": "На плотной группе проверьте предел цепи, число поражённых целей и читаемость следующей угрозы под эффектами.",
+        "en": "In a dense group, test chain limits, affected-target counts and whether the next threat stays readable beneath effects."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t015-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t015-v1",
+              "text": {
+                "ru": "Площадное поражение: выбор центра и радиуса важнее точечного наведения.",
+                "en": "Area damage: choosing a center and radius matters more than precise targeting."
+              }
+            },
+            {
+              "id": "t015-v2",
+              "text": {
+                "ru": "Цепные реакции: уничтоженная или помеченная цель передаёт воздействие соседям.",
+                "en": "Chain reactions: a destroyed or marked target passes effects to nearby enemies."
+              }
+            },
+            {
+              "id": "t015-v3",
+              "text": {
+                "ru": "Короткие перезарядки: чередование способностей поддерживает темп вместо повторения одной.",
+                "en": "Short cooldown cycles: alternating abilities maintains tempo instead of repeating one action."
+              }
+            },
+            {
+              "id": "t015-v4",
+              "text": {
+                "ru": "Приоритетные цели: поддержка или опасный стрелок требуют изменить маршрут через толпу.",
+                "en": "Priority targets: support units or dangerous shooters require a new route through the crowd."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t016",
+      "section": "mechanics",
+      "title": {
+        "ru": "Блокирование, парирование и контратаки",
+        "en": "Blocking, parrying and counterattacks"
+      },
+      "description": {
+        "ru": "Игрок сопоставляет защитное действие с направлением и временем угрозы; успешная защита может менять темп обмена, позицию или доступный ответ.",
+        "en": "The player matches a defense to threat direction and timing; success can change exchange tempo, position or the available response."
+      },
+      "example": {
+        "ru": "Противник чередует широкий удар и выпад; блок выдерживает оба, но точное парирование выпада позволяет выбить его оружие.",
+        "en": "An opponent alternates a sweep and a lunge; blocking handles both, but precisely parrying the lunge allows a disarm."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте начало и конец защитного окна, несколько одновременных попаданий и ясность различия между блоком и парированием.",
+        "en": "Test the start and end of the defensive window, simultaneous hits and the readability of blocking versus parrying."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t016-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t016-v1",
+              "text": {
+                "ru": "Удерживаемый блок: снижает последствия контакта, пока сохраняются направление и ресурс.",
+                "en": "Held blocking: reduces contact consequences while direction and resources remain valid."
+              }
+            },
+            {
+              "id": "t016-v2",
+              "text": {
+                "ru": "Парирование по времени: короткое окно превращает попадание в открытие для ответа.",
+                "en": "Timed parrying: a short window turns an incoming hit into an opening."
+              }
+            },
+            {
+              "id": "t016-v3",
+              "text": {
+                "ru": "Направленная защита: выбранный сектор закрывает одну угрозу и оставляет другие.",
+                "en": "Directional defense: a chosen sector covers one threat while exposing others."
+              }
+            },
+            {
+              "id": "t016-v4",
+              "text": {
+                "ru": "Контратака по условию: ответ открывается только после определённого успешного защитного действия.",
+                "en": "Conditional counterattacks: a response opens only after a specified successful defense."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t017",
+      "section": "mechanics",
+      "title": {
+        "ru": "Захваты, броски и борьба",
+        "en": "Grapples, throws and wrestling"
+      },
+      "description": {
+        "ru": "Игрок устанавливает контролируемый контакт с целью и выбирает продолжение, ограничивая перемещение обоих участников на время взаимодействия.",
+        "en": "The player establishes controlled contact with a target and selects a follow-up, restricting both participants' movement during the interaction."
+      },
+      "example": {
+        "ru": "На узком мосту игрок может бросить врага за спину, освободив проход, или прижать его к опоре для короткого оглушения.",
+        "en": "On a narrow bridge, the player can throw an enemy behind them to clear a path or pin it against a support for a short stun."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте захват у стены, на краю и при гибели участника: оба персонажа должны возвращаться в корректное самостоятельное состояние.",
+        "en": "Test grabs near walls, edges and a participant's defeat: both characters should return to valid independent states."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t017-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t017-v1",
+              "text": {
+                "ru": "Захват с дистанции: вход требует подходящей близости, направления и состояния цели.",
+                "en": "Range-gated grabs: entry requires suitable proximity, facing and target state."
+              }
+            },
+            {
+              "id": "t017-v2",
+              "text": {
+                "ru": "Бросок по выбору: направление завершения меняет столкновение со стенами или другими врагами.",
+                "en": "Chosen throws: release direction changes collisions with walls or other enemies."
+              }
+            },
+            {
+              "id": "t017-v3",
+              "text": {
+                "ru": "Сопротивление: захваченная цель получает явное окно или ресурс освобождения.",
+                "en": "Resistance: the grabbed target receives an explicit escape window or resource."
+              }
+            },
+            {
+              "id": "t017-v4",
+              "text": {
+                "ru": "Совместимая геометрия: взаимодействие корректируется или запрещается возле препятствия.",
+                "en": "Geometry compatibility: obstacles cause a clear adjustment or refusal of the interaction."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t018",
+      "section": "mechanics",
+      "title": {
+        "ru": "Бой с толпой и контроль пространства",
+        "en": "Crowd combat and space control"
+      },
+      "description": {
+        "ru": "Игрок управляет положением относительно нескольких угроз, распределяя внимание и создавая временные безопасные сектора вместо обмена ударами на месте.",
+        "en": "The player manages position relative to several threats, dividing attention and creating temporary safe sectors instead of trading hits in place."
+      },
+      "example": {
+        "ru": "В зале с колоннами игрок закрывает дальнего стрелка препятствием и встречает преследователей по одному в проходе.",
+        "en": "In a columned hall, the player blocks a distant shooter's sightline and meets pursuers one at a time in a passage."
+      },
+      "prototypeCheck": {
+        "ru": "Добавляйте врагов по одному и измеряйте одновременные угрозы: рост сложности должен оставлять различимые решения и выходы.",
+        "en": "Add enemies individually and inspect simultaneous threats: increasing difficulty should retain distinguishable decisions and escape routes."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t018-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t018-v1",
+              "text": {
+                "ru": "Ограничение атакующих: часть группы ожидает доступного места или разрешения для входа.",
+                "en": "Attacker limits: some enemies wait for a free position or permission to engage."
+              }
+            },
+            {
+              "id": "t018-v2",
+              "text": {
+                "ru": "Сдерживание сектора: широкое действие временно освобождает направление отхода.",
+                "en": "Sector suppression: a broad action temporarily clears an escape direction."
+              }
+            },
+            {
+              "id": "t018-v3",
+              "text": {
+                "ru": "Разделение группы: препятствие или приманка меняет момент встречи с разными врагами.",
+                "en": "Group separation: obstacles or lures stagger encounters with different enemies."
+              }
+            },
+            {
+              "id": "t018-v4",
+              "text": {
+                "ru": "Связанные роли: защитник, стрелок и поддержка заставляют менять приоритеты.",
+                "en": "Linked roles: defenders, shooters and support units force changing priorities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t020",
+      "section": "mechanics",
+      "title": {
+        "ru": "Разрушаемые части, ранения и состояния",
+        "en": "Breakable parts, injuries and conditions"
+      },
+      "description": {
+        "ru": "Игрок выбирает часть цели или тип воздействия, чтобы изменить её возможности, а не только уменьшить общий запас здоровья.",
+        "en": "The player selects a target part or effect type to change its capabilities rather than merely reduce shared health."
+      },
+      "example": {
+        "ru": "У механического стража можно повредить ноги для замедления или разрушить дальнее оружие, сохранив быстрый ближний бой.",
+        "en": "A mechanical guard can lose leg function and slow down, or lose its ranged weapon while retaining fast melee attacks."
+      },
+      "prototypeCheck": {
+        "ru": "После каждого разрушения проверьте изменение доступных действий и внешние признаки; урон в уже сломанную часть должен иметь явное правило.",
+        "en": "After each break, check available actions and visible changes; attacking an already broken part should follow an explicit rule."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+        "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html"
+      ],
+      "branches": [
+        {
+          "id": "t020-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t020-v1",
+              "text": {
+                "ru": "Локальная прочность: отдельная часть имеет собственное условие разрушения.",
+                "en": "Local durability: a separate part has its own break condition."
+              }
+            },
+            {
+              "id": "t020-v2",
+              "text": {
+                "ru": "Потеря функции: повреждение оружия, ноги или сенсора меняет поведение цели.",
+                "en": "Functional loss: damaging a weapon, limb or sensor changes the target's behavior."
+              }
+            },
+            {
+              "id": "t020-v3",
+              "text": {
+                "ru": "Накопление состояния: повторное воздействие пересекает порог оглушения, ранения или уязвимости.",
+                "en": "State accumulation: repeated effects cross a stagger, injury or vulnerability threshold."
+              }
+            },
+            {
+              "id": "t020-v4",
+              "text": {
+                "ru": "Восстановление части: цель чинится или меняет конфигурацию, если игрок не продолжает давление.",
+                "en": "Part recovery: the target repairs or reconfigures unless the player maintains pressure."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора книги о состояниях, разрешённых действиях и переходах; технический контекст для боевых состояний.",
+        "en": "The book author's original text on states, permitted actions and transitions; implementation context for combat states."
+      }
+    },
+    {
+      "title": {
+        "ru": "Godot: AnimationTree",
+        "en": "Godot: AnimationTree"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/animation/animation_tree.html",
+      "description": {
+        "ru": "Документация смешивания анимаций и переходов состояний в Godot; визуальное смешивание само по себе не определяет правила попадания.",
+        "en": "Godot documentation for animation blending and state transitions; visual blending alone does not define hit rules."
+      }
+    }
+  ]
+}

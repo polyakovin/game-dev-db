@@ -1,0 +1,103 @@
+{
+  "id": "puzzle-transformations",
+  "overviewGroupId": "g17",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Головоломки и интеллектуальные задачи",
+    "en": "Puzzles and reasoning challenges"
+  },
+  "description": {
+    "ru": "Объединение объектов меняет поле задач: результат одного хода становится материалом следующего решения.",
+    "en": "Combining objects changes the puzzle board: one move’s output becomes the material for another decision."
+  },
+  "intro": {
+    "ru": "Объединение объектов меняет поле задач: результат одного хода становится материалом следующего решения. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Combining objects changes the puzzle board: one move’s output becomes the material for another decision. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t168",
+      "section": "mechanics",
+      "title": {
+        "ru": "Merge, объединение и выращивание объектов",
+        "en": "Merging, combining and growing objects"
+      },
+      "description": {
+        "ru": "Совместимые объекты объединяются в новое состояние, поэтому игрок планирует одновременно рост цепочки и свободное место.",
+        "en": "Compatible objects combine into a new state, requiring players to plan both chain growth and available space."
+      },
+      "example": {
+        "ru": "Три саженца дают дерево, но для его плодов нужно заранее освободить соседние клетки.",
+        "en": "Three saplings produce a tree, but neighboring cells must be cleared before it can yield fruit."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте переполненное поле: игрок должен заранее видеть необратимое объединение и способ освободить место.",
+        "en": "Test a full board: players should see irreversible merges in advance and understand how to clear space."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t168-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t168-v1",
+              "text": {
+                "ru": "Пара одинаковых объектов создаёт следующий ранг.",
+                "en": "A matching pair produces the next object rank."
+              }
+            },
+            {
+              "id": "t168-v2",
+              "text": {
+                "ru": "Тройка повышает отдачу ценой подготовки.",
+                "en": "Triples improve yield but require preparation."
+              }
+            },
+            {
+              "id": "t168-v3",
+              "text": {
+                "ru": "Цепная реакция объединяет результаты без паузы.",
+                "en": "Chain reactions merge outputs without a pause."
+              }
+            },
+            {
+              "id": "t168-v4",
+              "text": {
+                "ru": "Генератор расходует ресурс и занимает место.",
+                "en": "Generators consume resources and occupy space."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "PuzzleScript: Rules",
+        "en": "PuzzleScript: Rules"
+      },
+      "url": "https://www.puzzlescript.net/Documentation/rules.html",
+      "description": {
+        "ru": "Документация автора о преобразовании узоров и состоянии игрового поля.",
+        "en": "The creator’s documentation of pattern replacement and board state."
+      }
+    }
+  ]
+}

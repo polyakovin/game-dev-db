@@ -119,6 +119,14 @@ test('sitemap contains unique focused pages, matching language pairs and actual 
     .map((_, node) => $(node).text())
     .get();
   expect(new Set(urls).size).toBe(urls.length);
+  const byUrl = new Map(
+    $('url')
+      .toArray()
+      .map((element) => {
+        const node = $(element);
+        return [node.find('loc').text(), node] as const;
+      }),
+  );
   expect(
     urls.every(
       (url) =>
@@ -136,13 +144,11 @@ test('sitemap contains unique focused pages, matching language pairs and actual 
         r.type,
       ),
     )) {
-      expect(urls).toContain(entry.url);
-      const node = $('url').filter(
-        (_, node) => $(node).find('loc').text() === entry.url,
-      );
-      expect(node.find('xhtml\\:link')).toHaveLength(2);
+      const node = byUrl.get(entry.url);
+      expect(node, entry.url).toBeDefined();
+      expect(node!.find('xhtml\\:link')).toHaveLength(2);
       if (entry.updatedAt)
-        expect(node.find('lastmod').text()).toBe(entry.updatedAt);
+        expect(node!.find('lastmod').text()).toBe(entry.updatedAt);
     }
   }
 });

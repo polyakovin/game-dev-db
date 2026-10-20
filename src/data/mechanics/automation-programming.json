@@ -1,0 +1,583 @@
+{
+  "id": "automation-programming",
+  "overviewGroupId": "g12",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Автоматизация и программирование",
+    "en": "Automation and programming"
+  },
+  "description": {
+    "ru": "Автоматизация переносит повторяемую работу в систему; задача игрока состоит в построении связей и поиске ограничивающего звена.",
+    "en": "Automation moves repeated work into a system; the player builds connections and identifies the limiting stage."
+  },
+  "intro": {
+    "ru": "Автоматизация переносит повторяемую работу в систему; задача игрока состоит в построении связей и поиске ограничивающего звена. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Automation moves repeated work into a system; the player builds connections and identifies the limiting stage. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t107",
+      "section": "mechanics",
+      "title": {
+        "ru": "Производственные цепочки и фабрики",
+        "en": "Production chains and factories"
+      },
+      "description": {
+        "ru": "Фабрика связывает рецепты в цепь, где выход одного этапа становится входом другого и ограничивает общий выпуск.",
+        "en": "A factory connects recipes so one stage's output becomes another's input and constrains total production."
+      },
+      "example": {
+        "ru": "Три печи кормят два сборщика, пока нехватка одного реагента не останавливает всю цепь.",
+        "en": "Three furnaces feed two assemblers until one missing reagent stalls the whole chain."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте устойчивый выпуск за длинный интервал, а не только скорость при полных входных буферах.",
+        "en": "Measure sustained output over a long interval rather than only with fully stocked input buffers."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t107-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t107-v1",
+              "text": {
+                "ru": "Соотношение рецептов задаёт число параллельных станков.",
+                "en": "Recipe ratios determine parallel machine counts."
+              }
+            },
+            {
+              "id": "t107-v2",
+              "text": {
+                "ru": "Побочный выход требует отдельной линии.",
+                "en": "Byproducts require a separate output line."
+              }
+            },
+            {
+              "id": "t107-v3",
+              "text": {
+                "ru": "Модульная секция упрощает расширение мощности.",
+                "en": "Modular cells simplify capacity expansion."
+              }
+            },
+            {
+              "id": "t107-v4",
+              "text": {
+                "ru": "Обратная переработка возвращает часть сырья.",
+                "en": "Recycling returns part of the raw materials."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t108",
+      "section": "mechanics",
+      "title": {
+        "ru": "Конвейеры, трубы и распределение потоков",
+        "en": "Conveyors, pipes and flow distribution"
+      },
+      "description": {
+        "ru": "Транспортные линии переносят поток с ограниченной скоростью, а разветвления распределяют его между потребителями.",
+        "en": "Transport lines carry limited-rate flows while junctions distribute them among consumers."
+      },
+      "example": {
+        "ru": "Приоритетная ветка сначала снабжает ремонт, а остаток металла уходит на продажу.",
+        "en": "A priority branch first supplies repairs and sends surplus metal to sales."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте заблокированный выход и повторный запуск: поток не должен теряться или навсегда застревать в развилке.",
+        "en": "Test blocked outputs and restarting so material is neither lost nor permanently stuck at a junction."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t108-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t108-v1",
+              "text": {
+                "ru": "Разделитель задаёт долю или приоритет выхода.",
+                "en": "Splitters set output shares or priorities."
+              }
+            },
+            {
+              "id": "t108-v2",
+              "text": {
+                "ru": "Слияние требует правила конкурирующих потоков.",
+                "en": "Mergers need rules for competing flows."
+              }
+            },
+            {
+              "id": "t108-v3",
+              "text": {
+                "ru": "Фильтр отделяет выбранный тип материала.",
+                "en": "Filters separate a selected material type."
+              }
+            },
+            {
+              "id": "t108-v4",
+              "text": {
+                "ru": "Обход сохраняет работу при блокировке ветки.",
+                "en": "Bypasses preserve operation when a branch blocks."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t109",
+      "section": "mechanics",
+      "title": {
+        "ru": "Склады, буферы и пропускная способность",
+        "en": "Storage, buffers and throughput"
+      },
+      "description": {
+        "ru": "Буфер хранит разницу между поступлением и потреблением, скрывая короткие сбои, но не увеличивая устойчивую мощность линии.",
+        "en": "Buffers store differences between arrivals and consumption, absorbing brief disruptions without raising sustained line capacity."
+      },
+      "example": {
+        "ru": "Склад переживает минутный разрыв поставки, но постепенно пустеет при постоянно недостаточном добытчике.",
+        "en": "Storage absorbs a brief delivery gap but drains under a persistently undersized extractor."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, отличает ли индикатор временный запас от реальной пропускной способности ограничивающего этапа.",
+        "en": "Test that indicators distinguish temporary inventory from the actual throughput of the limiting stage."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t109-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t109-v1",
+              "text": {
+                "ru": "Лимит хранения останавливает предыдущий этап.",
+                "en": "Storage limits stop an upstream stage."
+              }
+            },
+            {
+              "id": "t109-v2",
+              "text": {
+                "ru": "Запас сглаживает нерегулярную доставку.",
+                "en": "Inventory smooths irregular deliveries."
+              }
+            },
+            {
+              "id": "t109-v3",
+              "text": {
+                "ru": "Порог запуска объединяет мелкие партии.",
+                "en": "Batch thresholds combine small arrivals."
+              }
+            },
+            {
+              "id": "t109-v4",
+              "text": {
+                "ru": "Переполнение переводит избыток на запасной выход.",
+                "en": "Overflow redirects surplus to an alternate output."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t110",
+      "section": "mechanics",
+      "title": {
+        "ru": "Железные дороги и диспетчеризация",
+        "en": "Railways and dispatching"
+      },
+      "description": {
+        "ru": "Железная дорога делит путь между составами; расписание и сигналы согласуют доступ к ограниченным участкам.",
+        "en": "Railways share track between trains; schedules and signals coordinate access to limited sections."
+      },
+      "example": {
+        "ru": "Пустой поезд ждёт на разъезде, пропуская гружёный состав к единственной разгрузочной платформе.",
+        "en": "An empty train waits in a loop while a loaded train reaches the single unloading platform."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте взаимную блокировку на кольце и объяснение того, какой занятый участок запрещает движение.",
+        "en": "Test circular deadlocks and explanations for the occupied section preventing movement."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t110-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t110-v1",
+              "text": {
+                "ru": "Блокировка запрещает одновременное занятие участка.",
+                "en": "Block control prevents shared section occupancy."
+              }
+            },
+            {
+              "id": "t110-v2",
+              "text": {
+                "ru": "Разъезд даёт встречным поездам возможность разойтись.",
+                "en": "Passing loops allow opposing trains to pass."
+              }
+            },
+            {
+              "id": "t110-v3",
+              "text": {
+                "ru": "Условный приказ меняет станцию по запасу груза.",
+                "en": "Conditional orders change stations with cargo levels."
+              }
+            },
+            {
+              "id": "t110-v4",
+              "text": {
+                "ru": "Длина платформы ограничивает обслуживаемый состав.",
+                "en": "Platform length limits the serviceable train size."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t111",
+      "section": "mechanics",
+      "title": {
+        "ru": "Роботы, дроны и автономная доставка",
+        "en": "Robots, drones and autonomous delivery"
+      },
+      "description": {
+        "ru": "Автономная доставка назначает переносчиков на запросы, учитывая вместимость, маршрут и доступный энергетический запас.",
+        "en": "Autonomous delivery assigns carriers to requests using capacity, routes and available energy."
+      },
+      "example": {
+        "ru": "Дроны перестают обслуживать дальний склад, когда обратного заряда недостаточно для возвращения.",
+        "en": "Drones stop serving a distant depot when their remaining charge cannot cover the return trip."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте доставку при исчезновении получателя и правило возврата уже поднятого груза.",
+        "en": "Test deliveries when recipients disappear and the return rule for cargo already picked up."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t111-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t111-v1",
+              "text": {
+                "ru": "Запрос задаёт желательный запас предмета.",
+                "en": "Requests set a desired item stock level."
+              }
+            },
+            {
+              "id": "t111-v2",
+              "text": {
+                "ru": "Пакет объединяет совместимые доставки.",
+                "en": "Batching combines compatible deliveries."
+              }
+            },
+            {
+              "id": "t111-v3",
+              "text": {
+                "ru": "Зарядка создаёт очередь обслуживания роботов.",
+                "en": "Charging creates a robot service queue."
+              }
+            },
+            {
+              "id": "t111-v4",
+              "text": {
+                "ru": "Резервный путь обходит недоступную область.",
+                "en": "Fallback routes avoid an inaccessible region."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t112",
+      "section": "mechanics",
+      "title": {
+        "ru": "Энергосети и управление нагрузкой",
+        "en": "Power grids and load management"
+      },
+      "description": {
+        "ru": "Энергосеть распределяет ограниченную выработку между потребителями, запасами и потерями, заставляя выбирать приоритет нагрузки.",
+        "en": "Power grids split limited generation among consumers, storage and losses, requiring load priorities."
+      },
+      "example": {
+        "ru": "Ночной завод питается от накопителя, а при его разряде отключается реклама раньше насосов.",
+        "en": "A night factory uses stored energy and cuts advertising before water pumps when reserves run low."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одновременное включение потребителей и отсутствие бесконечного создания энергии в цикле зарядки.",
+        "en": "Test simultaneous consumer startup and prevent energy creation through charging cycles."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t112-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t112-v1",
+              "text": {
+                "ru": "Накопитель переносит избыток в другое время.",
+                "en": "Storage shifts surplus to another time period."
+              }
+            },
+            {
+              "id": "t112-v2",
+              "text": {
+                "ru": "Пиковая нагрузка требует краткого резерва.",
+                "en": "Peak demand needs a temporary reserve."
+              }
+            },
+            {
+              "id": "t112-v3",
+              "text": {
+                "ru": "Отключение низкого приоритета сохраняет важную службу.",
+                "en": "Load shedding preserves a critical service."
+              }
+            },
+            {
+              "id": "t112-v4",
+              "text": {
+                "ru": "Разделение сети ограничивает распространение отказа.",
+                "en": "Network separation contains a spreading failure."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t113",
+      "section": "mechanics",
+      "title": {
+        "ru": "Логические схемы, сигналы и обратная связь",
+        "en": "Logic circuits, signals and feedback"
+      },
+      "description": {
+        "ru": "Сигнал измеряет состояние системы, логическое условие выбирает ответ, а обратная связь повторяет управление по результату.",
+        "en": "Signals measure state, conditions select responses and feedback repeats control based on the result."
+      },
+      "example": {
+        "ru": "Насос включается ниже трети резервуара и выключается выше двух третей, избегая дрожания команды.",
+        "en": "A pump starts below one-third storage and stops above two-thirds to avoid command chatter."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте шум возле порога и задержку измерения: управление не должно застревать в непреднамеренном колебании.",
+        "en": "Test threshold noise and measurement delay so control avoids unintended oscillation."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t113-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t113-v1",
+              "text": {
+                "ru": "Порог включает насос при низком запасе.",
+                "en": "Thresholds start a pump at low inventory."
+              }
+            },
+            {
+              "id": "t113-v2",
+              "text": {
+                "ru": "Гистерезис предотвращает частое переключение.",
+                "en": "Hysteresis prevents repeated rapid switching."
+              }
+            },
+            {
+              "id": "t113-v3",
+              "text": {
+                "ru": "Задержка отделяет команду от результата.",
+                "en": "Delays separate commands from their results."
+              }
+            },
+            {
+              "id": "t113-v4",
+              "text": {
+                "ru": "Логическое И объединяет несколько условий допуска.",
+                "en": "Logical AND combines several permission conditions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t115",
+      "section": "mechanics",
+      "title": {
+        "ru": "Программирование как игровая задача",
+        "en": "Programming as a gameplay challenge"
+      },
+      "description": {
+        "ru": "Программа становится решением задачи, если выполняет известные преобразования входа в выход при ограниченных командах и памяти.",
+        "en": "A program solves a task by transforming specified inputs into outputs with limited instructions and memory."
+      },
+      "example": {
+        "ru": "Робот сортирует посылки по метке, используя один датчик и две доступные ячейки памяти.",
+        "en": "A robot sorts labeled parcels with one sensor and only two available memory cells."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте скрытые тестовые входы: рабочий ответ не должен зависеть только от показанного учебного примера.",
+        "en": "Test unseen inputs so a valid program does not merely memorize the displayed tutorial example."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t115-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t115-v1",
+              "text": {
+                "ru": "Последовательность задаёт порядок простых команд.",
+                "en": "Sequences order a set of simple instructions."
+              }
+            },
+            {
+              "id": "t115-v2",
+              "text": {
+                "ru": "Цикл повторяет действие до условия завершения.",
+                "en": "Loops repeat actions until a stopping condition."
+              }
+            },
+            {
+              "id": "t115-v3",
+              "text": {
+                "ru": "Ветвление выбирает ответ по входному значению.",
+                "en": "Branches choose responses from input values."
+              }
+            },
+            {
+              "id": "t115-v4",
+              "text": {
+                "ru": "Ограничение памяти заставляет переиспользовать данные.",
+                "en": "Memory limits require reusing stored data."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t116",
+      "section": "mechanics",
+      "title": {
+        "ru": "Оптимизация производительности игровой системы",
+        "en": "Optimizing a production or automation system"
+      },
+      "description": {
+        "ru": "Оптимизация улучшает измеримый результат работающей системы, заставляя сравнивать скорость, стоимость, пространство и устойчивость.",
+        "en": "Optimization improves a working system's measurable result by comparing speed, cost, space and resilience."
+      },
+      "example": {
+        "ru": "Компактная линия делает меньше деталей в минуту, но оставляет место для второго вида продукции.",
+        "en": "A compact line produces fewer parts per minute but leaves room for another product."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте несколько независимых метрик и покажите компромисс вместо объявления одного решения лучшим во всём.",
+        "en": "Test independent metrics and expose tradeoffs rather than declaring one solution universally best."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t116-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t116-v1",
+              "text": {
+                "ru": "Время оценивает задержку одной завершённой задачи.",
+                "en": "Time measures completed-task latency."
+              }
+            },
+            {
+              "id": "t116-v2",
+              "text": {
+                "ru": "Стоимость считает расход элементов решения.",
+                "en": "Cost counts components used by the solution."
+              }
+            },
+            {
+              "id": "t116-v3",
+              "text": {
+                "ru": "Площадь ограничивает занимаемое пространство.",
+                "en": "Area limits the footprint of a design."
+              }
+            },
+            {
+              "id": "t116-v4",
+              "text": {
+                "ru": "Надёжность проверяет работу при изменении входа.",
+                "en": "Reliability tests operation under changed inputs."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Factorio: Content",
+        "en": "Factorio: Content"
+      },
+      "url": "https://www.factorio.com/game/content",
+      "description": {
+        "ru": "Описание разработчика: производство, транспорт и сигнальные сети как связанная игровая система.",
+        "en": "Developer overview of production, transport and circuit networks as connected gameplay systems."
+      }
+    }
+  ]
+}

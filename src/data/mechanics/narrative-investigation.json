@@ -1,0 +1,463 @@
+{
+  "id": "narrative-investigation",
+  "overviewGroupId": "g19",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Повествование, диалоги и расследования",
+    "en": "Narrative, dialogue and investigation"
+  },
+  "description": {
+    "ru": "Повествовательная задача даёт игроку основания для интерпретации, проверяемые следствия выбора и способы пересмотреть версию.",
+    "en": "Narrative challenges give players grounds for interpretation, observable consequences of choice and ways to revise a hypothesis."
+  },
+  "intro": {
+    "ru": "Повествовательная задача даёт игроку основания для интерпретации, проверяемые следствия выбора и способы пересмотреть версию. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Narrative challenges give players grounds for interpretation, observable consequences of choice and ways to revise a hypothesis. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t191",
+      "section": "mechanics",
+      "title": {
+        "ru": "Допрос, показания и поиск противоречий",
+        "en": "Interrogation, testimony and contradictions"
+      },
+      "description": {
+        "ru": "Показания становятся проверяемыми утверждениями; игрок ищет несовместимость между ними и известными фактами.",
+        "en": "Testimony becomes a set of testable claims; the player seeks incompatibilities with other claims and known facts."
+      },
+      "example": {
+        "ru": "Свидетель утверждает, что слышал колокол, хотя журнал ремонта фиксирует его отсутствие.",
+        "en": "A witness claims to have heard a bell while a repair log shows it had been removed."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, можно ли объяснить противоречие словами игрока, а не только угадать предусмотренную пару кнопок.",
+        "en": "Test whether a player can explain a contradiction rather than merely guess the intended pair of buttons."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t191-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t191-v1",
+              "text": {
+                "ru": "Уточнение сужает расплывчатое утверждение.",
+                "en": "Clarification narrows an ambiguous statement."
+              }
+            },
+            {
+              "id": "t191-v2",
+              "text": {
+                "ru": "Противоречие связывает две несовместимые версии.",
+                "en": "Contradictions connect incompatible accounts."
+              }
+            },
+            {
+              "id": "t191-v3",
+              "text": {
+                "ru": "Предъявление проверяет уместность конкретной улики.",
+                "en": "Presenting evidence tests a specific clue's relevance."
+              }
+            },
+            {
+              "id": "t191-v4",
+              "text": {
+                "ru": "Повторный вопрос учитывает новое знание свидетеля.",
+                "en": "Repeated questions account for a witness's new knowledge."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t192",
+      "section": "mechanics",
+      "title": {
+        "ru": "Поиск, сопоставление и предъявление улик",
+        "en": "Finding, connecting and presenting evidence"
+      },
+      "description": {
+        "ru": "Улики приобретают значение через происхождение, сопоставление и предъявление в подходящем контексте проверки.",
+        "en": "Evidence gains meaning through provenance, comparison and presentation within a relevant test context."
+      },
+      "example": {
+        "ru": "Кусок ткани совпадает с ремонтом плаща, а фотография показывает, кто носил его в нужный день.",
+        "en": "Fabric matches a repaired cloak and a photograph shows who wore it on the relevant day."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте каждый вывод без одной улики: система должна различать доказательство, подозрение и неподтверждённую версию.",
+        "en": "Test conclusions with one clue removed and distinguish proof, suspicion and an unsupported hypothesis."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t192-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t192-v1",
+              "text": {
+                "ru": "Происхождение отличает находку от чужого пересказа.",
+                "en": "Provenance distinguishes findings from hearsay."
+              }
+            },
+            {
+              "id": "t192-v2",
+              "text": {
+                "ru": "Сопоставление проверяет общие признаки образцов.",
+                "en": "Comparison tests shared properties of samples."
+              }
+            },
+            {
+              "id": "t192-v3",
+              "text": {
+                "ru": "Цепочка связывает независимые факты в вывод.",
+                "en": "Chains connect independent facts into a conclusion."
+              }
+            },
+            {
+              "id": "t192-v4",
+              "text": {
+                "ru": "Предъявление меняет доступность новой информации.",
+                "en": "Presentation changes access to new information."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t193",
+      "section": "mechanics",
+      "title": {
+        "ru": "Реконструкция событий и причинных связей",
+        "en": "Reconstructing events and causal relationships"
+      },
+      "description": {
+        "ru": "Реконструкция восстанавливает последовательность действий и причинные зависимости, позволяя проверять несколько объяснений одних следов.",
+        "en": "Reconstruction restores event sequences and causal dependencies, supporting tests of several explanations for the same traces."
+      },
+      "example": {
+        "ru": "Упавшая полка могла разбить окно до ухода человека или уже после срабатывания таймера.",
+        "en": "A fallen shelf could have broken a window before a person left or after a timer activated."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, требует ли итоговая версия причинного объяснения, а не простого размещения всех событий по времени.",
+        "en": "Test that the final account requires causal explanation rather than merely sorting every event by time."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t193-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t193-v1",
+              "text": {
+                "ru": "Хронология ограничивает допустимый порядок событий.",
+                "en": "Timelines constrain possible event order."
+              }
+            },
+            {
+              "id": "t193-v2",
+              "text": {
+                "ru": "Положение предметов показывает возможное действие.",
+                "en": "Object placement suggests a feasible action."
+              }
+            },
+            {
+              "id": "t193-v3",
+              "text": {
+                "ru": "Эксперимент проверяет физическую выполнимость версии.",
+                "en": "Experiments test a hypothesis's physical feasibility."
+              }
+            },
+            {
+              "id": "t193-v4",
+              "text": {
+                "ru": "Альтернатива объясняет тот же след иным механизмом.",
+                "en": "Alternatives explain the same trace differently."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t195",
+      "section": "mechanics",
+      "title": {
+        "ru": "Процедурные истории и драматургические системы",
+        "en": "Procedural stories and drama systems"
+      },
+      "description": {
+        "ru": "Драматургическая система выбирает события по состоянию персонажей и незавершённым конфликтам, поддерживая причинную связность истории.",
+        "en": "A drama system selects events from character states and unresolved conflicts to maintain narrative causality."
+      },
+      "example": {
+        "ru": "Потерявший работу сосед просит помощи только у персонажа, которому ранее доверял.",
+        "en": "A neighbor who loses a job asks for help only from someone previously trusted."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте длинную цепь событий на противоречие знаниям, отношениям и уже совершённым необратимым действиям.",
+        "en": "Test long event chains against established knowledge, relationships and irreversible actions."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t195-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t195-v1",
+              "text": {
+                "ru": "Предусловие допускает событие только в подходящем мире.",
+                "en": "Preconditions permit events only in suitable states."
+              }
+            },
+            {
+              "id": "t195-v2",
+              "text": {
+                "ru": "Мотив объясняет выбор действия персонажем.",
+                "en": "Motives explain a character's chosen action."
+              }
+            },
+            {
+              "id": "t195-v3",
+              "text": {
+                "ru": "Последствие изменяет доступные дальнейшие события.",
+                "en": "Consequences change available subsequent events."
+              }
+            },
+            {
+              "id": "t195-v4",
+              "text": {
+                "ru": "Память не даёт забыть уже раскрытый конфликт.",
+                "en": "Memory preserves previously revealed conflicts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t196",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ролевая импровизация и совместное сочинение",
+        "en": "Role-playing improvisation and collaborative storytelling"
+      },
+      "description": {
+        "ru": "Участники предлагают действия и детали мира, а согласованные правила определяют, что становится общим фактом истории.",
+        "en": "Participants propose actions and world details while agreed rules determine what becomes a shared story fact."
+      },
+      "example": {
+        "ru": "Один игрок описывает угрозу, второй решает ответ героя, а третий задаёт последствие по правилу.",
+        "en": "One player describes a threat, another chooses a hero's response and a third applies the consequence rule."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте спор двух предложений: участники должны понимать право решения и иметь способ пересмотреть неудобную сцену.",
+        "en": "Test conflicting proposals so participants know who decides and how an uncomfortable scene can be revised."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t196-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t196-v1",
+              "text": {
+                "ru": "Роль даёт право вводить конкретный тип факта.",
+                "en": "Roles grant authority over specific fact types."
+              }
+            },
+            {
+              "id": "t196-v2",
+              "text": {
+                "ru": "Проверка разрешает спорный исход действия.",
+                "en": "Resolution rules settle contested action outcomes."
+              }
+            },
+            {
+              "id": "t196-v3",
+              "text": {
+                "ru": "Передача сцены меняет ведущего рассказчика.",
+                "en": "Scene handoffs change the active narrator."
+              }
+            },
+            {
+              "id": "t196-v4",
+              "text": {
+                "ru": "Граница содержания согласуется до продолжения сцены.",
+                "en": "Content boundaries are agreed before continuing."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t197",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ненадёжный рассказчик и проверка интерпретаций",
+        "en": "Unreliable narrators and testing interpretations"
+      },
+      "description": {
+        "ru": "Ненадёжное сообщение заставляет сравнивать рассказ с независимыми признаками и пересматривать степень доверия источнику.",
+        "en": "Unreliable reports require comparison with independent signs and revision of trust in their source."
+      },
+      "example": {
+        "ru": "Дневник описывает победу, но повреждения ворот указывают на отступление его автора.",
+        "en": "A diary describes a victory while damage to the gates suggests its author retreated."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, существуют ли наблюдаемые основания для сомнения до развязки, а не только ретроспективное объявление обмана.",
+        "en": "Test for observable reasons to doubt before the ending instead of revealing deception only in retrospect."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t197-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t197-v1",
+              "text": {
+                "ru": "Ограниченная память оставляет заметные пробелы.",
+                "en": "Limited memory leaves recognizable gaps."
+              }
+            },
+            {
+              "id": "t197-v2",
+              "text": {
+                "ru": "Заинтересованность искажает выбор сообщаемых фактов.",
+                "en": "Self-interest distorts which facts are reported."
+              }
+            },
+            {
+              "id": "t197-v3",
+              "text": {
+                "ru": "Другой ракурс раскрывает пропущенное событие.",
+                "en": "Another viewpoint reveals an omitted event."
+              }
+            },
+            {
+              "id": "t197-v4",
+              "text": {
+                "ru": "Подтверждение повышает доверие отдельному утверждению.",
+                "en": "Corroboration raises trust in a particular claim."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t188",
+      "section": "mechanics",
+      "title": {
+        "ru": "Интерактивная проза и выбор действия текстом",
+        "en": "Interactive fiction and text-based actions"
+      },
+      "description": {
+        "ru": "Интерактивная проза переводит чтение в выбор действия, после которого текст сообщает изменение состояния и доступные продолжения.",
+        "en": "Interactive fiction turns reading into an action choice, after which text reports state changes and available continuations."
+      },
+      "example": {
+        "ru": "Команда осмотра обнаруживает ключ, после чего повторное описание стола отмечает пустое место.",
+        "en": "Inspection reveals a key and a later table description acknowledges the emptied space."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте синонимы, неизвестную команду и действия в неправильном порядке: ответ должен объяснять состояние без угадывания глагола.",
+        "en": "Test synonyms, unknown commands and out-of-order actions with state explanations instead of verb guessing."
+      },
+      "sourceUrls": ["https://github.com/inkle/ink"],
+      "branches": [
+        {
+          "id": "t188-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t188-v1",
+              "text": {
+                "ru": "Ссылка задаёт одно из явно названных действий.",
+                "en": "Links provide explicitly named actions."
+              }
+            },
+            {
+              "id": "t188-v2",
+              "text": {
+                "ru": "Парсер понимает ограниченную грамматику команды.",
+                "en": "Parsers accept a constrained command grammar."
+              }
+            },
+            {
+              "id": "t188-v3",
+              "text": {
+                "ru": "Память состояния меняет описание знакомого места.",
+                "en": "State memory changes familiar place descriptions."
+              }
+            },
+            {
+              "id": "t188-v4",
+              "text": {
+                "ru": "Уточнение разрешает неоднозначность названного объекта.",
+                "en": "Clarification resolves ambiguous object references."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "inkle: ink",
+        "en": "inkle: ink"
+      },
+      "url": "https://github.com/inkle/ink",
+      "description": {
+        "ru": "Первичная документация инструмента интерактивного повествования; контекст выбора, переменных и последствий.",
+        "en": "Primary interactive-narrative tool documentation; context for choices, variables and consequences."
+      }
+    }
+  ]
+}

@@ -1,0 +1,717 @@
+[
+  {
+    "directionId": "t045",
+    "direction": {
+      "ru": "Навигация, карты и ориентирование",
+      "en": "Navigation, maps and wayfinding"
+    },
+    "catalogId": "metroidvania",
+    "familyId": "family-group-19",
+    "family": "Карта и ориентирование",
+    "variants": 11
+  },
+  {
+    "directionId": "t064",
+    "direction": {
+      "ru": "Ветвящиеся маршруты и выбор следующей комнаты",
+      "en": "Branching routes and choosing the next room"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-05",
+    "family": "Маршрут и доступ к областям",
+    "variants": 14
+  },
+  {
+    "directionId": "t065",
+    "direction": {
+      "ru": "Временные билды, драфт улучшений и синергии",
+      "en": "Temporary builds, upgrade drafts and synergies"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-18",
+    "family": "Сборка билда и синергии",
+    "variants": 20
+  },
+  {
+    "directionId": "t066",
+    "direction": {
+      "ru": "Смерть, наследование и метапрогрессия",
+      "en": "Death, inheritance and metaprogression"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-31",
+    "family": "Метапрогрессия между забегами",
+    "variants": 16
+  },
+  {
+    "directionId": "t114",
+    "direction": {
+      "ru": "Визуальное программирование и команды агентам",
+      "en": "Visual programming and agent commands"
+    },
+    "catalogId": "electronic-devices",
+    "familyId": "family-g25",
+    "family": "Программирование и автоматизация",
+    "variants": 8
+  },
+  {
+    "directionId": "t124",
+    "direction": {
+      "ru": "Инвентарь, переносимый вес и упаковка",
+      "en": "Inventory, carrying weight and packing"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-21",
+    "family": "Инвентарь и переноска",
+    "variants": 13
+  },
+  {
+    "directionId": "t130",
+    "direction": {
+      "ru": "Ремонт, разборка и диагностика",
+      "en": "Repair, disassembly and diagnosis"
+    },
+    "catalogId": "electronic-devices",
+    "familyId": "family-g28",
+    "family": "Сборка, ремонт и улучшение",
+    "variants": 8
+  },
+  {
+    "directionId": "t160",
+    "direction": {
+      "ru": "Логический вывод и ограничения",
+      "en": "Logical deduction and constraints"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-deduction",
+    "family": "Дедукция и скрытое состояние",
+    "variants": 10
+  },
+  {
+    "directionId": "t161",
+    "direction": {
+      "ru": "Числовые, арифметические и алгебраические задачи",
+      "en": "Numerical, arithmetic and algebraic puzzles"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-arithmetic",
+    "family": "Числа, операции и комбинаторика",
+    "variants": 11
+  },
+  {
+    "directionId": "t162",
+    "direction": {
+      "ru": "Словесные, языковые и орфографические игры",
+      "en": "Word, language and spelling games"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-words",
+    "family": "Буквы и слова",
+    "variants": 10
+  },
+  {
+    "directionId": "t163",
+    "direction": {
+      "ru": "Пространственные преобразования и геометрия",
+      "en": "Spatial transformations and geometry"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-geometry",
+    "family": "Геометрия, разрезание и складывание",
+    "variants": 10
+  },
+  {
+    "directionId": "t164",
+    "direction": {
+      "ru": "Sokoban, толкание и перестановка объектов",
+      "en": "Sokoban, pushing and rearrangement"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-manipulation",
+    "family": "Толкание, перенос и сцепление",
+    "variants": 10
+  },
+  {
+    "directionId": "t165",
+    "direction": {
+      "ru": "Физические головоломки",
+      "en": "Physics puzzles"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-physics",
+    "family": "Силы, опоры и движение",
+    "variants": 14
+  },
+  {
+    "directionId": "t166",
+    "direction": {
+      "ru": "Маршруты, потоки, сети и соединения",
+      "en": "Routes, flows, networks and connections"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-networks",
+    "family": "Соединения, сети и контуры",
+    "variants": 10
+  },
+  {
+    "directionId": "t167",
+    "direction": {
+      "ru": "Сопоставление, match-3 и очистка поля",
+      "en": "Matching, match-3 and board clearing"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-matching",
+    "family": "Совпадения и очистка поля",
+    "variants": 10
+  },
+  {
+    "directionId": "t169",
+    "direction": {
+      "ru": "Падающие блоки и упаковка пространства",
+      "en": "Falling blocks and spatial packing"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-assembly",
+    "family": "Сборка, укладка и упаковка",
+    "variants": 10
+  },
+  {
+    "directionId": "t170",
+    "direction": {
+      "ru": "Поиск предметов и визуальных отличий",
+      "en": "Hidden objects and spot-the-difference"
+    },
+    "catalogId": "children",
+    "familyId": "family-02",
+    "family": "Поиск и обнаружение",
+    "variants": 10
+  },
+  {
+    "directionId": "t171",
+    "direction": {
+      "ru": "Коды, шифры и расшифровка",
+      "en": "Codes, ciphers and decoding"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-language",
+    "family": "Шифры, языки и смысл",
+    "variants": 11
+  },
+  {
+    "directionId": "t172",
+    "direction": {
+      "ru": "Escape room, замки и многоступенчатые загадки",
+      "en": "Escape rooms, locks and layered riddles"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-tools",
+    "family": "Предметы, инструменты и окружение",
+    "variants": 10
+  },
+  {
+    "directionId": "t173",
+    "direction": {
+      "ru": "Мета-головоломки и открытие скрытого правила",
+      "en": "Metapuzzles and discovering hidden rules"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-metarules",
+    "family": "Открытие правил и метаголоволомки",
+    "variants": 11
+  },
+  {
+    "directionId": "t176",
+    "direction": {
+      "ru": "Розыгрыш руки и управление запасом карт",
+      "en": "Hand play and card management"
+    },
+    "catalogId": "deck-building",
+    "familyId": "family-hand",
+    "family": "Управление рукой",
+    "variants": 10
+  },
+  {
+    "directionId": "t189",
+    "direction": {
+      "ru": "Ветвление сюжета и отложенные последствия",
+      "en": "Branching narratives and delayed consequences"
+    },
+    "catalogId": "visual-novel",
+    "familyId": "family-02",
+    "family": "Условия и последствия выбора",
+    "variants": 11
+  },
+  {
+    "directionId": "t194",
+    "direction": {
+      "ru": "Нелинейный рассказ и сбор истории из фрагментов",
+      "en": "Nonlinear storytelling and assembling fragments"
+    },
+    "catalogId": "visual-novel",
+    "familyId": "family-21",
+    "family": "Структуры повествования",
+    "variants": 12
+  },
+  {
+    "directionId": "t199",
+    "direction": {
+      "ru": "Дружба, романтические отношения и привязанность",
+      "en": "Friendship, romance and attachment"
+    },
+    "catalogId": "dialogue",
+    "familyId": "family-relationships",
+    "family": "Отношения на длинной дистанции",
+    "variants": 8
+  },
+  {
+    "directionId": "t201",
+    "direction": {
+      "ru": "Переговоры, обещания и доверие",
+      "en": "Negotiation, promises and trust"
+    },
+    "catalogId": "dialogue",
+    "familyId": "family-negotiation",
+    "family": "Торг, сделки и обязательства",
+    "variants": 8
+  },
+  {
+    "directionId": "t203",
+    "direction": {
+      "ru": "Кооперация с разделённой информацией",
+      "en": "Cooperation with divided information"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-24",
+    "family": "Кооперация с разделённой информацией",
+    "variants": 12
+  },
+  {
+    "directionId": "t205",
+    "direction": {
+      "ru": "Синхронизация, передача предметов и совместные действия",
+      "en": "Synchronization, item passing and joint actions"
+    },
+    "catalogId": "point-and-click",
+    "familyId": "family-30",
+    "family": "Несколько героев и координация",
+    "variants": 8
+  },
+  {
+    "directionId": "t209",
+    "direction": {
+      "ru": "Локальный мультиплеер, общий экран и общие органы управления",
+      "en": "Local multiplayer, shared screens and shared controls"
+    },
+    "catalogId": "keyboard",
+    "familyId": "family-multiplayer",
+    "family": "Совместная и соревновательная игра",
+    "variants": 8
+  },
+  {
+    "directionId": "t220",
+    "direction": {
+      "ru": "Исполнение мелодий и музыкальных фраз",
+      "en": "Performing melodies and musical phrases"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-11",
+    "family": "Пение и музыкальное исполнение",
+    "variants": 12
+  },
+  {
+    "directionId": "t223",
+    "direction": {
+      "ru": "Звук как материал для записи и преобразования",
+      "en": "Sound recording and transformation"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-20",
+    "family": "Запись, монтаж и воспроизведение",
+    "variants": 12
+  },
+  {
+    "directionId": "t224",
+    "direction": {
+      "ru": "Аудионавигация и пространственный слух",
+      "en": "Audio navigation and spatial hearing"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-13",
+    "family": "Навигация и пространственная память",
+    "variants": 12
+  },
+  {
+    "directionId": "t225",
+    "direction": {
+      "ru": "Эхолокация и акустическое исследование",
+      "en": "Echolocation and acoustic exploration"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-21",
+    "family": "Эхолокация и акустические свойства мира",
+    "variants": 12
+  },
+  {
+    "directionId": "t226",
+    "direction": {
+      "ru": "Музыкальные правила мира и синхронизация событий",
+      "en": "Musical world rules and event synchronization"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-23",
+    "family": "Музыка как система правил мира",
+    "variants": 12
+  },
+  {
+    "directionId": "t227",
+    "direction": {
+      "ru": "Слуховое распознавание, память и разделение потоков",
+      "en": "Auditory recognition, memory and stream separation"
+    },
+    "catalogId": "voice-audio",
+    "familyId": "family-16",
+    "family": "Избирательное внимание и разделение потоков",
+    "variants": 12
+  },
+  {
+    "directionId": "t231",
+    "direction": {
+      "ru": "Декорирование, интерьер и ландшафт",
+      "en": "Decoration, interiors and landscaping"
+    },
+    "catalogId": "children",
+    "familyId": "dress-decorate",
+    "family": "Переодевание и обустройство пространства",
+    "variants": 8
+  },
+  {
+    "directionId": "t233",
+    "direction": {
+      "ru": "Фотография и композиционные задания",
+      "en": "Photography and composition challenges"
+    },
+    "catalogId": "phone-camera",
+    "familyId": "family-framing",
+    "family": "Кадрирование и визуальное внимание",
+    "variants": 8
+  },
+  {
+    "directionId": "t235",
+    "direction": {
+      "ru": "Песочницы, игрушки и игра без обязательной цели",
+      "en": "Sandboxes, toys and play without mandatory goals"
+    },
+    "catalogId": "children",
+    "familyId": "toy-play",
+    "family": "Свободные манипуляции и реакция игрушки",
+    "variants": 8
+  },
+  {
+    "directionId": "t236",
+    "direction": {
+      "ru": "Создание уровней, правил и модификаций",
+      "en": "Creating levels, rules and modifications"
+    },
+    "catalogId": "children",
+    "familyId": "family-49",
+    "family": "Открытые проекты и создание собственных игр",
+    "variants": 12
+  },
+  {
+    "directionId": "t239",
+    "direction": {
+      "ru": "Опыт, уровни и деревья развития",
+      "en": "Experience, levels and development trees"
+    },
+    "catalogId": "engagement-retention",
+    "familyId": "family-03",
+    "family": "Прогрессия и расширение возможностей",
+    "variants": 8
+  },
+  {
+    "directionId": "t246",
+    "direction": {
+      "ru": "Долгосрочные проекты и накопительные цели",
+      "en": "Long-term projects and cumulative goals"
+    },
+    "catalogId": "engagement-retention",
+    "familyId": "family-04",
+    "family": "Цели, завершение и видимый остаток",
+    "variants": 8
+  },
+  {
+    "directionId": "t247",
+    "direction": {
+      "ru": "Ежедневные циклы, серии действий и возвращение в игру",
+      "en": "Daily cycles, streaks and returning to play"
+    },
+    "catalogId": "engagement-retention",
+    "familyId": "family-14",
+    "family": "Привычка и календарное возвращение",
+    "variants": 8
+  },
+  {
+    "directionId": "t248",
+    "direction": {
+      "ru": "Временные петли",
+      "en": "Time loops"
+    },
+    "catalogId": "visual-novel",
+    "familyId": "family-17",
+    "family": "Петли, время и повторные прохождения",
+    "variants": 11
+  },
+  {
+    "directionId": "t249",
+    "direction": {
+      "ru": "Перемотка, отмена и восстановление состояния",
+      "en": "Rewinding, undoing and restoring state"
+    },
+    "catalogId": "point-and-click",
+    "familyId": "family-27",
+    "family": "Перемотка, петли и изменение истории",
+    "variants": 8
+  },
+  {
+    "directionId": "t253",
+    "direction": {
+      "ru": "Расписания, дедлайны и события по времени",
+      "en": "Schedules, deadlines and timed events"
+    },
+    "catalogId": "point-and-click",
+    "familyId": "family-26",
+    "family": "Время, расписания и ожидание",
+    "variants": 8
+  },
+  {
+    "directionId": "t254",
+    "direction": {
+      "ru": "Смена измерений и параллельных миров",
+      "en": "Dimension switching and parallel worlds"
+    },
+    "catalogId": "point-and-click",
+    "familyId": "family-28",
+    "family": "Переключение миров, слоёв и состояний",
+    "variants": 8
+  },
+  {
+    "directionId": "t258",
+    "direction": {
+      "ru": "Переключение перспективы и альтернативное представление мира",
+      "en": "Perspective switching and alternative world representations"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-perspective",
+    "family": "Перспектива и изображение",
+    "variants": 10
+  },
+  {
+    "directionId": "t261",
+    "direction": {
+      "ru": "Огонь, жидкости, электричество и распространение воздействий",
+      "en": "Fire, liquids, electricity and spreading effects"
+    },
+    "catalogId": "puzzle",
+    "familyId": "family-materials",
+    "family": "Материалы, среды и превращения",
+    "variants": 10
+  },
+  {
+    "directionId": "t264",
+    "direction": {
+      "ru": "Поведение NPC, цели и выбор действий",
+      "en": "NPC behavior, goals and action selection"
+    },
+    "catalogId": "point-and-click",
+    "familyId": "family-31",
+    "family": "Поведение NPC, животных и живых систем",
+    "variants": 8
+  },
+  {
+    "directionId": "t267",
+    "direction": {
+      "ru": "Процедурная генерация уровней и задач",
+      "en": "Procedural generation of levels and challenges"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-04",
+    "family": "Процедурная генерация",
+    "variants": 15
+  },
+  {
+    "directionId": "t268",
+    "direction": {
+      "ru": "Управляемая случайность и предсказуемость",
+      "en": "Controlled randomness and predictability"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-28",
+    "family": "Управление случайностью",
+    "variants": 12
+  },
+  {
+    "directionId": "t273",
+    "direction": {
+      "ru": "Риск-награда и добровольное усложнение",
+      "en": "Risk-reward and voluntary challenges"
+    },
+    "catalogId": "roguelike",
+    "familyId": "family-27",
+    "family": "Риск и награда",
+    "variants": 15
+  },
+  {
+    "directionId": "t274",
+    "direction": {
+      "ru": "Смерть, штрафы, чекпоинты и сохранение",
+      "en": "Death, penalties, checkpoints and saving"
+    },
+    "catalogId": "metroidvania",
+    "familyId": "family-group-20",
+    "family": "Сохранение, смерть и транспорт",
+    "variants": 11
+  },
+  {
+    "directionId": "t275",
+    "direction": {
+      "ru": "Адаптивная сложность и помощь игроку",
+      "en": "Adaptive difficulty and player assistance"
+    },
+    "catalogId": "education",
+    "familyId": "family-53",
+    "family": "Адаптация сложности и персонализация",
+    "variants": 12
+  },
+  {
+    "directionId": "t276",
+    "direction": {
+      "ru": "Обучение механике, подсказки и открытие правил",
+      "en": "Teaching mechanics, hints and rule discovery"
+    },
+    "catalogId": "education",
+    "familyId": "family-51",
+    "family": "Введение, показ и учебная поддержка",
+    "variants": 12
+  },
+  {
+    "directionId": "t284",
+    "direction": {
+      "ru": "Стилус и графический планшет",
+      "en": "Styluses and graphics tablets"
+    },
+    "catalogId": "phone-touch",
+    "familyId": "family-13",
+    "family": "Нажим, геометрия контакта и стилус",
+    "variants": 8
+  },
+  {
+    "directionId": "t286",
+    "direction": {
+      "ru": "Управление одной кнопкой",
+      "en": "One-button controls"
+    },
+    "catalogId": "keyboard",
+    "familyId": "family-accessibility",
+    "family": "Доступные схемы управления",
+    "variants": 8
+  },
+  {
+    "directionId": "t287",
+    "direction": {
+      "ru": "Одновременный ввод, аккорды и комбинации",
+      "en": "Simultaneous inputs, chords and combinations"
+    },
+    "catalogId": "keyboard",
+    "familyId": "family-chords",
+    "family": "Одновременные нажатия",
+    "variants": 8
+  },
+  {
+    "directionId": "t295",
+    "direction": {
+      "ru": "Геолокация, перемещение и ориентация на местности",
+      "en": "Geolocation, movement and real-world orientation"
+    },
+    "catalogId": "electronic-devices",
+    "familyId": "family-g19",
+    "family": "Навигация и дополненная реальность",
+    "variants": 7
+  },
+  {
+    "directionId": "t301",
+    "direction": {
+      "ru": "AR и mixed reality: привязка к реальному миру",
+      "en": "AR and mixed reality anchored to the physical world"
+    },
+    "catalogId": "phone-camera",
+    "familyId": "family-ar-geometry",
+    "family": "AR: поверхности и геометрия пространства",
+    "variants": 8
+  },
+  {
+    "directionId": "t302",
+    "direction": {
+      "ru": "Камера, распознавание позы и движение всем телом",
+      "en": "Camera-based pose recognition and full-body movement"
+    },
+    "catalogId": "phone-camera",
+    "familyId": "family-body",
+    "family": "Поза, движение тела и активные игры",
+    "variants": 8
+  },
+  {
+    "directionId": "t303",
+    "direction": {
+      "ru": "Взгляд, моргание и управление глазами",
+      "en": "Gaze, blinking and eye controls"
+    },
+    "catalogId": "phone-camera",
+    "familyId": "family-face-actions",
+    "family": "Глаза, рот и мимические действия",
+    "variants": 8
+  },
+  {
+    "directionId": "t312",
+    "direction": {
+      "ru": "Сюжетно-ролевая игра и игра по договорённости",
+      "en": "Pretend play and negotiated rules"
+    },
+    "catalogId": "children",
+    "familyId": "pretend-play",
+    "family": "Замещение предметов и воображаемые правила",
+    "variants": 8
+  },
+  {
+    "directionId": "t313",
+    "direction": {
+      "ru": "Сенсорная игра и исследование материалов",
+      "en": "Sensory play and material exploration"
+    },
+    "catalogId": "children",
+    "familyId": "sensory-materials",
+    "family": "Сенсорная игра с материалами",
+    "variants": 8
+  },
+  {
+    "directionId": "t314",
+    "direction": {
+      "ru": "Обучение чтению, языку и коммуникации",
+      "en": "Reading, language and communication learning"
+    },
+    "catalogId": "education",
+    "familyId": "family-37",
+    "family": "Чтение, письмо и работа с символами",
+    "variants": 12
+  },
+  {
+    "directionId": "t319",
+    "direction": {
+      "ru": "Игры с переключателями, сканированием и альтернативными каналами",
+      "en": "Switch access, scanning and alternative channels"
+    },
+    "catalogId": "keyboard",
+    "familyId": "family-accessibility",
+    "family": "Доступные схемы управления",
+    "variants": 8
+  }
+]

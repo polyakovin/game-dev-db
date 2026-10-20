@@ -1,0 +1,643 @@
+{
+  "id": "tactics-defense",
+  "overviewGroupId": "g09",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Тактика и оборона",
+    "en": "Tactics and defense"
+  },
+  "description": {
+    "ru": "Тактика и оборона превращают расположение, порядок действий и подготовку в ограниченные ресурсы.",
+    "en": "Tactics and defense turn positioning, action order and preparation into limited resources."
+  },
+  "intro": {
+    "ru": "Тактика и оборона превращают расположение, порядок действий и подготовку в ограниченные ресурсы. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Tactics and defense turn positioning, action order and preparation into limited resources. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t077",
+      "section": "mechanics",
+      "title": {
+        "ru": "Пошаговые бои на клетках",
+        "en": "Turn-based grid combat"
+      },
+      "description": {
+        "ru": "Клетки делают допустимые перемещения и области воздействия дискретными, позволяя рассчитать последовательность боя.",
+        "en": "Grid cells discretize legal movement and effect areas, allowing combat sequences to be planned."
+      },
+      "example": {
+        "ru": "Лучник поднимается на уступ, откуда видит цель за низким препятствием.",
+        "en": "An archer climbs a ledge to see a target behind a low obstruction."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте совпадение предпросмотра пути с реальным расходом хода, включая диагонали и перепады высоты.",
+        "en": "Test that path previews match actual turn costs, including diagonal movement and elevation changes."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t077-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t077-v1",
+              "text": {
+                "ru": "Дальность считается по выбранному соседству.",
+                "en": "Range uses the selected neighborhood metric."
+              }
+            },
+            {
+              "id": "t077-v2",
+              "text": {
+                "ru": "Высота меняет доступность атаки и пути.",
+                "en": "Elevation changes attack and route availability."
+              }
+            },
+            {
+              "id": "t077-v3",
+              "text": {
+                "ru": "Зона контроля ограничивает проход рядом с врагом.",
+                "en": "Control zones restrict movement beside enemies."
+              }
+            },
+            {
+              "id": "t077-v4",
+              "text": {
+                "ru": "Поворот меняет защищённые стороны бойца.",
+                "en": "Facing changes which sides of a unit are protected."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t078",
+      "section": "mechanics",
+      "title": {
+        "ru": "Инициатива и экономика действий",
+        "en": "Initiative and action economy"
+      },
+      "description": {
+        "ru": "Инициатива определяет очерёдность, а бюджет действий ограничивает сочетания движения, атаки и подготовки в ходе.",
+        "en": "Initiative sets order while an action budget limits combinations of movement, attacks and preparation within a turn."
+      },
+      "example": {
+        "ru": "Боец сохраняет одно действие для перехвата врага вместо дополнительного перемещения.",
+        "en": "A fighter reserves one action to intercept an enemy instead of moving farther."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, нельзя ли без затрат бесконечно откладывать ход или восстанавливать больше действий, чем потрачено.",
+        "en": "Test for free infinite delays and loops that restore more actions than they consume."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t078-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t078-v1",
+              "text": {
+                "ru": "Очки действий допускают разную длину комбинации.",
+                "en": "Action points support combinations of different lengths."
+              }
+            },
+            {
+              "id": "t078-v2",
+              "text": {
+                "ru": "Отсрочка меняет место в очереди.",
+                "en": "Delaying changes a unit's place in the order."
+              }
+            },
+            {
+              "id": "t078-v3",
+              "text": {
+                "ru": "Реакция расходует запас вне своего хода.",
+                "en": "Reactions spend a reserve outside the owner's turn."
+              }
+            },
+            {
+              "id": "t078-v4",
+              "text": {
+                "ru": "Дорогой удар оставляет меньше возможностей защиты.",
+                "en": "A costly attack leaves fewer defensive options."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t079",
+      "section": "mechanics",
+      "title": {
+        "ru": "Позиционирование, фланги и укрытия",
+        "en": "Positioning, flanking and cover"
+      },
+      "description": {
+        "ru": "Позиция меняет защищённость и доступ к целям, а фланг позволяет обойти преимущество прямого столкновения.",
+        "en": "Position changes protection and target access, while flanking circumvents the advantage of a frontal engagement."
+      },
+      "example": {
+        "ru": "Два бойца занимают разные двери, чтобы противник не мог закрыться одной баррикадой.",
+        "en": "Two fighters occupy separate doors so one barricade cannot protect the opponent from both."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, отображается ли защита относительно выбранного атакующего, а не как постоянное свойство клетки.",
+        "en": "Test that protection is shown relative to the selected attacker rather than as a fixed cell property."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t079-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t079-v1",
+              "text": {
+                "ru": "Укрытие защищает только с заданной стороны.",
+                "en": "Cover protects only against specified directions."
+              }
+            },
+            {
+              "id": "t079-v2",
+              "text": {
+                "ru": "Перекрёстный огонь лишает безопасного направления.",
+                "en": "Crossfire removes a safe facing direction."
+              }
+            },
+            {
+              "id": "t079-v3",
+              "text": {
+                "ru": "Высота расширяет обзор ценой заметности.",
+                "en": "Height expands vision at the cost of exposure."
+              }
+            },
+            {
+              "id": "t079-v4",
+              "text": {
+                "ru": "Подавление ограничивает смену позиции.",
+                "en": "Suppression restricts a change of position."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t080",
+      "section": "mechanics",
+      "title": {
+        "ru": "Вытеснение и использование окружения",
+        "en": "Displacement and environmental tactics"
+      },
+      "description": {
+        "ru": "Принудительное перемещение меняет тактическую задачу без прямого урона, используя опасности и устройство поля.",
+        "en": "Forced movement changes tactical situations without direct damage by using hazards and board structure."
+      },
+      "example": {
+        "ru": "Щитоносец толкает врага на плиту, которая закрывает ворота перед подкреплением.",
+        "en": "A shield bearer pushes an enemy onto a plate that closes a gate on reinforcements."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте столкновение вытесняемой цели с краем поля, союзником и неподвижным объектом.",
+        "en": "Test displacement into a board edge, an allied unit and an immovable obstacle."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t080-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t080-v1",
+              "text": {
+                "ru": "Толчок сдвигает цель на заданное число клеток.",
+                "en": "A push moves a target a stated number of cells."
+              }
+            },
+            {
+              "id": "t080-v2",
+              "text": {
+                "ru": "Притягивание открывает ранее закрытую линию.",
+                "en": "Pulling opens a previously blocked line."
+              }
+            },
+            {
+              "id": "t080-v3",
+              "text": {
+                "ru": "Обмен местами спасает уязвимого союзника.",
+                "en": "Swapping positions rescues a vulnerable ally."
+              }
+            },
+            {
+              "id": "t080-v4",
+              "text": {
+                "ru": "Разрушение опоры меняет доступную геометрию.",
+                "en": "Destroying a support changes usable geometry."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t081",
+      "section": "mechanics",
+      "title": {
+        "ru": "Планирование одновременно исполняемых ходов",
+        "en": "Planning simultaneously executed turns"
+      },
+      "description": {
+        "ru": "Участники планируют на одном состоянии мира, затем система совместно исполняет приказы с заранее понятными конфликтами.",
+        "en": "Participants plan from one world state, then the system jointly executes orders using explicit conflict rules."
+      },
+      "example": {
+        "ru": "Два отряда одновременно идут к мосту, а быстрый разведчик занимает переправу первым.",
+        "en": "Two squads move toward a bridge simultaneously and the faster scout occupies it first."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте все парные конфликты приказов и совпадение воспроизведения с показанными правилами приоритета.",
+        "en": "Test paired order conflicts and ensure playback matches the displayed priority rules."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t081-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t081-v1",
+              "text": {
+                "ru": "Короткая фаза снижает неопределённость прогноза.",
+                "en": "Short phases reduce prediction uncertainty."
+              }
+            },
+            {
+              "id": "t081-v2",
+              "text": {
+                "ru": "Приоритет разрешает встречное занятие клетки.",
+                "en": "Priority resolves competing claims to a cell."
+              }
+            },
+            {
+              "id": "t081-v3",
+              "text": {
+                "ru": "Перехват срабатывает при пересечении пути.",
+                "en": "Interception triggers when movement paths cross."
+              }
+            },
+            {
+              "id": "t081-v4",
+              "text": {
+                "ru": "Отмена ограничена моментом подтверждения плана.",
+                "en": "Cancellation ends when a plan is confirmed."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t082",
+      "section": "mechanics",
+      "title": {
+        "ru": "Автобаттлеры и подготовка состава",
+        "en": "Auto battlers and roster preparation"
+      },
+      "description": {
+        "ru": "Игрок собирает и расставляет состав перед боем, а автоматическое исполнение проверяет подготовку и сочетание ролей.",
+        "en": "The player assembles and positions a roster before combat, and automated execution tests preparation and role combinations."
+      },
+      "example": {
+        "ru": "Хрупкого стрелка ставят за танком, но прыгающий противник заставляет изменить второй ряд.",
+        "en": "A fragile shooter stands behind a tank until a jumping enemy forces a rear-line adjustment."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, может ли игрок по повтору объяснить проигрыш через состав и расстановку, а не скрытый выбор цели.",
+        "en": "Test whether a replay explains a loss through roster and placement rather than opaque targeting."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t082-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t082-v1",
+              "text": {
+                "ru": "Покупка требует выбора между силой и запасом денег.",
+                "en": "Purchases trade current strength against savings."
+              }
+            },
+            {
+              "id": "t082-v2",
+              "text": {
+                "ru": "Синергия состава меняет общее правило боя.",
+                "en": "Roster synergy changes a shared combat rule."
+              }
+            },
+            {
+              "id": "t082-v3",
+              "text": {
+                "ru": "Расстановка задаёт первую цель автоматического бойца.",
+                "en": "Deployment determines an automated unit's first target."
+              }
+            },
+            {
+              "id": "t082-v4",
+              "text": {
+                "ru": "Слияние дубликатов сокращает число свободных мест.",
+                "en": "Merging duplicates reduces available board pieces."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t083",
+      "section": "mechanics",
+      "title": {
+        "ru": "Tower defense",
+        "en": "Tower defense"
+      },
+      "description": {
+        "ru": "Игрок размещает оборону вдоль пути врагов, распределяя бюджет между охватом маршрута, типами урона и улучшениями.",
+        "en": "The player places defenses along enemy routes, splitting a budget between coverage, damage types and upgrades."
+      },
+      "example": {
+        "ru": "Замедляющая башня перед поворотом даёт артиллерии время поразить плотную группу.",
+        "en": "A slowing tower before a bend gives artillery time to hit a dense group."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, остаются ли две жизнеспособные схемы обороны при одинаковом бюджете и известной волне.",
+        "en": "Test whether two viable defense layouts exist for the same budget and a known enemy wave."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t083-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t083-v1",
+              "text": {
+                "ru": "Башня перекрывает ограниченный участок пути.",
+                "en": "A tower covers a limited route segment."
+              }
+            },
+            {
+              "id": "t083-v2",
+              "text": {
+                "ru": "Замедление увеличивает время под огнём.",
+                "en": "Slowing increases time spent under fire."
+              }
+            },
+            {
+              "id": "t083-v3",
+              "text": {
+                "ru": "Броня требует сменить тип защиты.",
+                "en": "Armor calls for a different defense type."
+              }
+            },
+            {
+              "id": "t083-v4",
+              "text": {
+                "ru": "Продажа позволяет перестроить ответ между волнами.",
+                "en": "Selling enables rebuilding between enemy waves."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t084",
+      "section": "mechanics",
+      "title": {
+        "ru": "Изменение маршрутов противника и лабиринты",
+        "en": "Rerouting enemies and building mazes"
+      },
+      "description": {
+        "ru": "Строительство меняет путь противника, превращая длину маршрута и доступные проходы в ресурс обороны.",
+        "en": "Building changes enemy routes, making travel length and available passages defensive resources."
+      },
+      "example": {
+        "ru": "Игрок открывает западные ворота после залпа, направляя следующую группу по длинной петле.",
+        "en": "A player opens the west gate after a volley to send the next group around a long loop."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте пересчёт пути при строительстве под движущимся врагом и запрет необъяснимого телепортирования.",
+        "en": "Test route recalculation when building near a moving enemy and prevent unexplained teleportation."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t084-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t084-v1",
+              "text": {
+                "ru": "Препятствие удлиняет путь до цели.",
+                "en": "Obstacles lengthen the path to the objective."
+              }
+            },
+            {
+              "id": "t084-v2",
+              "text": {
+                "ru": "Ворота переключают маршрут по сигналу.",
+                "en": "Gates switch routes in response to a signal."
+              }
+            },
+            {
+              "id": "t084-v3",
+              "text": {
+                "ru": "Запрет полной блокировки сохраняет достижимость.",
+                "en": "A no-blocking rule preserves reachability."
+              }
+            },
+            {
+              "id": "t084-v4",
+              "text": {
+                "ru": "Разрушитель прокладывает короткий путь сквозь стены.",
+                "en": "A breaker cuts a shorter route through walls."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t085",
+      "section": "mechanics",
+      "title": {
+        "ru": "Оборона базы, осады и волны",
+        "en": "Base defense, sieges and waves"
+      },
+      "description": {
+        "ru": "Волны проверяют устойчивость базы, а подготовка и ремонт распределяют ограниченные ресурсы между текущей и будущей угрозой.",
+        "en": "Waves test a base's resilience while preparation and repair split limited resources between current and future threats."
+      },
+      "example": {
+        "ru": "После воздушной волны игрок ремонтирует крышу, откладывая усиление сухопутных ворот.",
+        "en": "After an aerial wave, the player repairs a roof and postpones strengthening the ground gate."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте восстановление после тяжёлой волны: формально живая база не должна неизбежно проигрывать без решения.",
+        "en": "Test recovery after a hard wave so a surviving base is not inevitably lost without further decisions."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t085-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t085-v1",
+              "text": {
+                "ru": "Разведка волны показывает будущий состав.",
+                "en": "Wave scouting reveals the upcoming composition."
+              }
+            },
+            {
+              "id": "t085-v2",
+              "text": {
+                "ru": "Ремонт конкурирует с покупкой новой защиты.",
+                "en": "Repairs compete with buying additional defenses."
+              }
+            },
+            {
+              "id": "t085-v3",
+              "text": {
+                "ru": "Осада атакует конкретные слабые элементы.",
+                "en": "Sieges attack specific structural weaknesses."
+              }
+            },
+            {
+              "id": "t085-v4",
+              "text": {
+                "ru": "Передышка разрешает перенос оборонительных средств.",
+                "en": "Respite allows relocating defensive equipment."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t086",
+      "section": "mechanics",
+      "title": {
+        "ru": "Контроль территории, точек и линий снабжения",
+        "en": "Territory, objective and supply-line control"
+      },
+      "description": {
+        "ru": "Удерживаемые места дают очки, ресурсы или снабжение, а связность территории делает обход альтернативой прямому штурму.",
+        "en": "Held locations provide score, resources or supply, while territorial connectivity makes bypassing an alternative to assault."
+      },
+      "example": {
+        "ru": "Обходной отряд перерезает дорогу и лишает укреплённую точку подкреплений.",
+        "en": "A flanking squad cuts a road and deprives a fortified objective of reinforcements."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понятно ли, какой разрыв связи отключил доход или снабжение конкретной точки.",
+        "en": "Test whether players can identify the specific broken connection that disabled an objective's income or supply."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t086-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t086-v1",
+              "text": {
+                "ru": "Захват требует непрерывного присутствия.",
+                "en": "Capture requires uninterrupted presence."
+              }
+            },
+            {
+              "id": "t086-v2",
+              "text": {
+                "ru": "Линия снабжения связывает объект с базой.",
+                "en": "A supply line connects an objective to its base."
+              }
+            },
+            {
+              "id": "t086-v3",
+              "text": {
+                "ru": "Нейтрализация прерывает доход без полного захвата.",
+                "en": "Neutralization interrupts income without full capture."
+              }
+            },
+            {
+              "id": "t086-v4",
+              "text": {
+                "ru": "Несколько точек заставляют разделить силы.",
+                "en": "Multiple objectives require splitting forces."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "OpenRA",
+        "en": "OpenRA"
+      },
+      "url": "https://www.openra.net/",
+      "description": {
+        "ru": "Первичный проект открытых стратегий: командование, туман войны и модификация правил.",
+        "en": "Primary open-source strategy project: unit commands, fog of war and rule modification."
+      }
+    }
+  ]
+}

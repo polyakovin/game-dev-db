@@ -1,0 +1,705 @@
+{
+  "id": "movement-platforming",
+  "overviewGroupId": "g01",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Передвижение и платформинг",
+    "en": "Movement and platforming"
+  },
+  "description": {
+    "ru": "Прыжки, инерция, паркур, лазание, верёвки, полёт и плавание: управляемые действия, варианты правил и проверки прототипа.",
+    "en": "Jumping, momentum, parkour, climbing, ropes, flight and swimming: controllable actions, rule variants and prototype checks."
+  },
+  "intro": {
+    "ru": "Передвижение связывает ввод, траекторию и доступное пространство. Игрок оценивает опору, скорость и запас возможностей, выбирает действие и корректирует движение по обратной связи. Здесь разобраны десять направлений: от плоского платформера до движения в воде. Для первого прототипа достаточно нескольких поверхностей и одного отличающегося правила; камера, столкновения и момент восстановления управления должны позволять понять причину успеха или ошибки. Документация Godot даёт примеры реализации, а разбор автора Celeste и TowerFall показывает один конкретный подход к движению и опорам; эти решения не являются обязательными для любого движка.",
+    "en": "Movement connects input, trajectory and accessible space. Players assess support, speed and remaining abilities, choose an action and correct their motion through feedback. These ten directions range from flat platforming to underwater movement. A first prototype needs only a few surfaces and one distinctive rule; the camera, collisions and return of control should explain success or failure. Godot documentation provides implementation examples, while the Celeste and TowerFall author describes one approach to movement and platforms; these choices are not mandatory in every engine."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t001",
+      "section": "mechanics",
+      "title": {
+        "ru": "Платформеры 2D",
+        "en": "2D platformers"
+      },
+      "description": {
+        "ru": "Игрок управляет положением на плоскости и временем прыжка, превращая доступные поверхности в последовательность достижимых опор.",
+        "en": "The player controls position on a plane and jump timing, turning surfaces into a sequence of reachable supports."
+      },
+      "example": {
+        "ru": "В испытании над ямой короткий прыжок ведёт на нижнюю опору, а длинный требует дождаться подвижной платформы.",
+        "en": "In a pit challenge, a short jump reaches a lower ledge while a long jump requires waiting for a moving platform."
+      },
+      "prototypeCheck": {
+        "ru": "Сравните попытки с ранним и поздним отпусканием: траектории должны различаться предсказуемо, без скрытой смены правил.",
+        "en": "Compare early and late releases: trajectories should differ predictably without a hidden change in the rules."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t001-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t001-v1",
+              "text": {
+                "ru": "Высота от удержания: отпускание кнопки сокращает подъём и уточняет приземление.",
+                "en": "Variable jump height: releasing the button shortens ascent and refines landing."
+              }
+            },
+            {
+              "id": "t001-v2",
+              "text": {
+                "ru": "Односторонняя опора: проход снизу разрешён, приземление сверху останавливает падение.",
+                "en": "One-way support: passing from below is allowed, but landing from above stops a fall."
+              }
+            },
+            {
+              "id": "t001-v3",
+              "text": {
+                "ru": "Движущаяся платформа: момент входа выбирается с учётом её траектории.",
+                "en": "Moving platform: entry timing depends on the platform's trajectory."
+              }
+            },
+            {
+              "id": "t001-v4",
+              "text": {
+                "ru": "Воздушный рывок: дополнительное смещение расходует заряд до следующей опоры.",
+                "en": "Air dash: an extra displacement consumes a charge until the next support."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t002",
+      "section": "mechanics",
+      "title": {
+        "ru": "Платформеры 3D",
+        "en": "3D platformers"
+      },
+      "description": {
+        "ru": "Игрок выбирает путь и точку приземления в объёме; камера и ориентиры помогают оценить глубину и направление движения.",
+        "en": "The player chooses routes and landing points in three dimensions; the camera and landmarks communicate depth and movement direction."
+      },
+      "example": {
+        "ru": "На башне один маршрут виден сверху, другой скрывается за поворотом; тень героя помогает выбрать площадку приземления.",
+        "en": "On a tower, one route is visible from above while another turns behind it; the character's shadow helps identify the landing platform."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте один прыжок с трёх ракурсов: игрок должен различать недолёт, перелёт и ошибку направления.",
+        "en": "Test one jump from three camera angles: players should distinguish falling short, overshooting and choosing the wrong direction."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t002-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t002-v1",
+              "text": {
+                "ru": "Относительно камеры: одно направление ввода переводится в направление текущего обзора.",
+                "en": "Camera-relative input: an input direction maps to the current viewing direction."
+              }
+            },
+            {
+              "id": "t002-v2",
+              "text": {
+                "ru": "Свободный обзор: поворот камеры не меняет уже заданную траекторию прыжка.",
+                "en": "Free look: rotating the camera does not redirect an already committed jump."
+              }
+            },
+            {
+              "id": "t002-v3",
+              "text": {
+                "ru": "Фиксация цели: движение строится вокруг выбранного объекта, сохраняя дистанцию.",
+                "en": "Target lock: movement orbits a chosen object while controlling distance."
+              }
+            },
+            {
+              "id": "t002-v4",
+              "text": {
+                "ru": "Захват края: допустимая зона автоматически завершает неточное приземление на уступ.",
+                "en": "Ledge catch: an allowed region completes an imprecise landing onto an edge."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t003",
+      "section": "mechanics",
+      "title": {
+        "ru": "Точные прыжки и приземления",
+        "en": "Precision jumping and landing"
+      },
+      "description": {
+        "ru": "Игрок согласует ввод с коротким окном подходящего состояния; послабления могут прощать неточность, сохраняя понятную траекторию.",
+        "en": "The player aligns input with a short valid-state window; forgiveness can absorb imprecision while preserving an understandable trajectory."
+      },
+      "example": {
+        "ru": "В комнате с низким потолком короткое нажатие проходит под шипами, а удержание приводит к видимому столкновению.",
+        "en": "In a low-ceiling room, a short press clears the spikes while holding the button produces a visible collision."
+      },
+      "prototypeCheck": {
+        "ru": "Отдельно меняйте окно буфера и геометрию: успех должен зависеть от заявленного послабления, а не от случайного кадра.",
+        "en": "Change the input buffer and geometry separately: success should follow the intended forgiveness rule rather than an accidental frame."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t003-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t003-v1",
+              "text": {
+                "ru": "Буфер прыжка: нажатие перед касанием земли выполняется сразу после приземления.",
+                "en": "Jump buffering: a press shortly before ground contact executes after landing."
+              }
+            },
+            {
+              "id": "t003-v2",
+              "text": {
+                "ru": "Поздний прыжок: короткое окно после схода с края ещё позволяет оттолкнуться.",
+                "en": "Late jump: a short window after leaving an edge still permits takeoff."
+              }
+            },
+            {
+              "id": "t003-v3",
+              "text": {
+                "ru": "Управление вершиной: изменение ускорения около верхней точки даёт время на корректировку.",
+                "en": "Apex control: adjusted acceleration near the top allows trajectory correction."
+              }
+            },
+            {
+              "id": "t003-v4",
+              "text": {
+                "ru": "Ограничение повтора: удержание не вызывает новый прыжок без отдельного разрешения.",
+                "en": "Repeat gating: holding the button does not trigger another jump without permission."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t004",
+      "section": "mechanics",
+      "title": {
+        "ru": "Инерция и сохранение скорости",
+        "en": "Momentum and speed preservation"
+      },
+      "description": {
+        "ru": "Игрок разгоняется, тормозит и сохраняет импульс, выбирая между быстрым прохождением участка и возможностью точно изменить траекторию.",
+        "en": "The player accelerates, brakes and preserves momentum, trading fast traversal against precise trajectory changes."
+      },
+      "example": {
+        "ru": "На маршруте короткий путь требует резкого торможения, а широкий обход позволяет сохранить скорость для длинного разрыва.",
+        "en": "A short route requires hard braking, while a wider detour preserves speed for a long gap."
+      },
+      "prototypeCheck": {
+        "ru": "Запишите скорость перед одинаковым прыжком с разных опор и проверьте, соответствует ли дальность выбранной модели импульса.",
+        "en": "Record takeoff speed from different supports and check that jump distance follows the chosen momentum model."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t004-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t004-v1",
+              "text": {
+                "ru": "Плавный разгон: скорость набирается постепенно и требует места перед препятствием.",
+                "en": "Gradual acceleration: speed builds over time and needs space before an obstacle."
+              }
+            },
+            {
+              "id": "t004-v2",
+              "text": {
+                "ru": "Раздельное торможение: отпускание и противоположный ввод гасят скорость по-разному.",
+                "en": "Distinct braking: releasing input and pressing the opposite direction reduce speed differently."
+              }
+            },
+            {
+              "id": "t004-v3",
+              "text": {
+                "ru": "Ограниченный контроль в воздухе: ошибочный разгон нельзя полностью исправить после отрыва.",
+                "en": "Limited air control: a poor run-up cannot be fully corrected after takeoff."
+              }
+            },
+            {
+              "id": "t004-v4",
+              "text": {
+                "ru": "Перенос импульса: уклон, движущаяся опора или ускоритель влияют на последующий прыжок.",
+                "en": "Momentum transfer: a slope, moving support or booster affects the next jump."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t005",
+      "section": "mechanics",
+      "title": {
+        "ru": "Паркур и преодоление препятствий",
+        "en": "Parkour and obstacle traversal"
+      },
+      "description": {
+        "ru": "Игрок читает форму препятствия и связывает разные способы преодоления, сохраняя движение через последовательность точек контакта.",
+        "en": "The player reads obstacle geometry and chains traversal techniques, maintaining motion through a sequence of contact points."
+      },
+      "example": {
+        "ru": "Герой перепрыгивает ограждение, скользит под балкой и использует стену, чтобы выйти на соседнюю крышу.",
+        "en": "A character vaults a fence, slides beneath a beam and uses a wall to reach the next roof."
+      },
+      "prototypeCheck": {
+        "ru": "Повторите цепочку на медленной и быстрой скорости; недоступное действие должно объясняться геометрией или состоянием, а не угадыванием кнопки.",
+        "en": "Repeat the chain slowly and quickly; unavailable actions should be explained by geometry or state rather than guessing an input."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t005-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t005-v1",
+              "text": {
+                "ru": "Перелезание: высота и свободное место определяют возможность перейти через преграду.",
+                "en": "Vaulting: obstacle height and free space determine whether traversal is possible."
+              }
+            },
+            {
+              "id": "t005-v2",
+              "text": {
+                "ru": "Бег по стене: контакт удерживает особое движение до потери скорости или поверхности.",
+                "en": "Wall running: contact maintains special motion until speed or usable surface runs out."
+              }
+            },
+            {
+              "id": "t005-v3",
+              "text": {
+                "ru": "Скольжение под препятствием: низкая стойка обменивает управление на сохранение импульса.",
+                "en": "Sliding under obstacles: a low stance trades steering control for retained momentum."
+              }
+            },
+            {
+              "id": "t005-v4",
+              "text": {
+                "ru": "Цепочка контактов: успешное завершение действия открывает немедленный переход к следующему.",
+                "en": "Contact chaining: a successful action permits an immediate transition into the next."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t006",
+      "section": "mechanics",
+      "title": {
+        "ru": "Лазание и удержание на поверхностях",
+        "en": "Climbing and holding onto surfaces"
+      },
+      "description": {
+        "ru": "Игрок выбирает последовательность зацепов и распределяет возможность удержания, чтобы менять высоту без безопасной опоры под ногами.",
+        "en": "The player selects a sequence of handholds and manages grip capacity to change height without safe ground below."
+      },
+      "example": {
+        "ru": "Скальная стенка предлагает короткий нависающий путь и длинный маршрут через площадку для восстановления.",
+        "en": "A cliff offers a short overhanging route and a longer path through a recovery ledge."
+      },
+      "prototypeCheck": {
+        "ru": "Отключите расход сил и сравните маршруты: ограничение должно менять выбор, сохраняя хотя бы один доступный путь.",
+        "en": "Disable exertion and compare routes: the constraint should change choices while leaving at least one viable path."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t006-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t006-v1",
+              "text": {
+                "ru": "Явные зацепы: движение разрешено между отмеченными достижимыми точками.",
+                "en": "Explicit handholds: movement connects marked points within reach."
+              }
+            },
+            {
+              "id": "t006-v2",
+              "text": {
+                "ru": "Свободная поверхность: доступность зависит от материала, угла или сцепления.",
+                "en": "Climbable surfaces: material, slope or traction determines access."
+              }
+            },
+            {
+              "id": "t006-v3",
+              "text": {
+                "ru": "Запас удержания: расход сил ограничивает длинный подъём и ценность промежуточного отдыха.",
+                "en": "Grip reserves: exertion limits long climbs and makes rest positions valuable."
+              }
+            },
+            {
+              "id": "t006-v4",
+              "text": {
+                "ru": "Срыв и восстановление: ослабление хватки допускает спасение на нижнем зацепе.",
+                "en": "Slip recovery: a failing grip can be rescued by catching a lower hold."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t007",
+      "section": "mechanics",
+      "title": {
+        "ru": "Крюк, верёвки и раскачивание",
+        "en": "Grappling hooks, ropes and swinging"
+      },
+      "description": {
+        "ru": "Игрок закрепляет связь с точкой мира, изменяет длину или натяжение и использует момент отпускания для переноса движения.",
+        "en": "The player connects to a world anchor, changes length or tension and uses release timing to carry motion onward."
+      },
+      "example": {
+        "ru": "Над пропастью игрок выбирает высокий якорь для дальнего перелёта или низкий для входа в узкое окно.",
+        "en": "Above a chasm, the player chooses a high anchor for distance or a low one to enter a narrow opening."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте отпускание до, внизу и после нижней точки дуги; направления вылета должны быть различимы и воспроизводимы.",
+        "en": "Test releases before, at and after the bottom of the arc; launch directions should be distinct and reproducible."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t007-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t007-v1",
+              "text": {
+                "ru": "Выбор якоря: дальность, видимость и тип поверхности ограничивают закрепление.",
+                "en": "Anchor selection: range, visibility and surface type restrict attachment."
+              }
+            },
+            {
+              "id": "t007-v2",
+              "text": {
+                "ru": "Маятниковое движение: натянутая связь ограничивает удаление и превращает падение в дугу.",
+                "en": "Pendulum motion: a taut link limits distance and turns falling into an arc."
+              }
+            },
+            {
+              "id": "t007-v3",
+              "text": {
+                "ru": "Подтягивание: укорочение связи меняет высоту, скорость или расстояние до якоря.",
+                "en": "Reeling in: shortening the link changes height, speed or anchor distance."
+              }
+            },
+            {
+              "id": "t007-v4",
+              "text": {
+                "ru": "Отпускание: разрыв связи сохраняет выбранную модель скорости по касательной.",
+                "en": "Release: detachment preserves the chosen tangential-velocity model."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t008",
+      "section": "mechanics",
+      "title": {
+        "ru": "Полёт и планирование",
+        "en": "Flight and gliding"
+      },
+      "description": {
+        "ru": "Игрок управляет высотой, скоростью и запасом поддерживающей силы, выбирая траекторию между набором высоты и сохранением дальности.",
+        "en": "The player manages altitude, speed and available support, choosing trajectories that trade climbing against sustained travel."
+      },
+      "example": {
+        "ru": "Планер достигает далёкой площадки через два восходящих потока; прямой маршрут короче, но расходует запас высоты.",
+        "en": "A glider reaches a distant platform through two updrafts; a direct route is shorter but spends its altitude reserve."
+      },
+      "prototypeCheck": {
+        "ru": "Постройте одинаковые пролёты с разной стартовой высотой и проверьте, объясняет ли интерфейс достижимую дальность.",
+        "en": "Build equivalent crossings from different starting heights and check whether feedback explains the reachable distance."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t008-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t008-v1",
+              "text": {
+                "ru": "Планирование: потеря высоты преобразуется в горизонтальную дальность без постоянного подъёма.",
+                "en": "Gliding: altitude loss becomes horizontal travel without continuous lift."
+              }
+            },
+            {
+              "id": "t008-v2",
+              "text": {
+                "ru": "Тяга с ресурсом: двигатель поддерживает высоту, пока хватает топлива или энергии.",
+                "en": "Resource-limited thrust: an engine sustains height while fuel or energy lasts."
+              }
+            },
+            {
+              "id": "t008-v3",
+              "text": {
+                "ru": "Минимальная скорость: слишком крутой подъём ухудшает управляемость по выбранному правилу.",
+                "en": "Minimum speed: an overly steep climb reduces control under an explicit rule."
+              }
+            },
+            {
+              "id": "t008-v4",
+              "text": {
+                "ru": "Восходящий поток: локальная зона позволяет восстановить высоту перед следующим перелётом.",
+                "en": "Updrafts: a local zone restores altitude before the next crossing."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t009",
+      "section": "mechanics",
+      "title": {
+        "ru": "Плавание и подводное движение",
+        "en": "Swimming and underwater movement"
+      },
+      "description": {
+        "ru": "Игрок перемещается в объёме с сопротивлением среды и выбирает глубину, направление усилия и момент возвращения к поверхности.",
+        "en": "The player moves through a resisting volume, choosing depth, effort direction and when to return to the surface."
+      },
+      "example": {
+        "ru": "Подводный проход имеет короткий сильный поток и длинную защищённую петлю с местом для пополнения воздуха.",
+        "en": "An underwater passage offers a short strong current and a long sheltered loop with an air-replenishment point."
+      },
+      "prototypeCheck": {
+        "ru": "Сравните движение по течению и против него; игрок должен понимать относительную скорость и иметь способ вернуться.",
+        "en": "Compare movement with and against the current; players should understand relative speed and retain a way back."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t009-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t009-v1",
+              "text": {
+                "ru": "Плавучесть: отсутствие ввода ведёт к всплытию, погружению или нейтральной глубине.",
+                "en": "Buoyancy: no input causes rising, sinking or neutral depth."
+              }
+            },
+            {
+              "id": "t009-v2",
+              "text": {
+                "ru": "Запас воздуха: удаление от поверхности ограничено временем или доступом к пополнению.",
+                "en": "Air reserves: time or access to replenishment limits distance from the surface."
+              }
+            },
+            {
+              "id": "t009-v3",
+              "text": {
+                "ru": "Течения: движение среды складывается с управляемой скоростью и меняет маршрут.",
+                "en": "Currents: water motion combines with controlled speed and changes the route."
+              }
+            },
+            {
+              "id": "t009-v4",
+              "text": {
+                "ru": "Переход сред: выход на берег или погружение явно меняет набор действий.",
+                "en": "Medium transitions: entering water or reaching shore explicitly changes available actions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t010",
+      "section": "mechanics",
+      "title": {
+        "ru": "Раннеры и полосы препятствий",
+        "en": "Runners and obstacle courses"
+      },
+      "description": {
+        "ru": "Продвижение вперёд задано игрой или ожидаемой непрерывностью, а игрок выбирает момент уклонения и последовательность преодоления препятствий.",
+        "en": "Forward progress is imposed or expected to continue, while the player chooses dodge timing and obstacle-clearing sequences."
+      },
+      "example": {
+        "ru": "Бегун выбирает длинную внешнюю полосу без разрывов или короткую цепочку прыжка, приседания и поворота.",
+        "en": "A runner chooses a long outer lane without gaps or a short sequence of jumping, ducking and turning."
+      },
+      "prototypeCheck": {
+        "ru": "Меняйте скорость отдельно от расстояния между препятствиями и проверяйте, остаётся ли время на распознавание следующего действия.",
+        "en": "Change speed separately from obstacle spacing and check whether there is still time to recognize the next action."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+        "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+        "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html"
+      ],
+      "branches": [
+        {
+          "id": "t010-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t010-v1",
+              "text": {
+                "ru": "Смена полос: дискретные позиции упрощают выбор безопасного коридора.",
+                "en": "Lane switching: discrete positions simplify selection of a safe corridor."
+              }
+            },
+            {
+              "id": "t010-v2",
+              "text": {
+                "ru": "Ритм препятствий: подготовка следующего действия начинается до завершения предыдущего.",
+                "en": "Obstacle rhythm: preparation for the next action begins before the previous one ends."
+              }
+            },
+            {
+              "id": "t010-v3",
+              "text": {
+                "ru": "Скорость потока: ускорение сокращает время решения при сохранении видимого предупреждения.",
+                "en": "Flow speed: acceleration shortens decision time while retaining visible warning."
+              }
+            },
+            {
+              "id": "t010-v4",
+              "text": {
+                "ru": "Ветвление маршрута: безопасный обход конкурирует с более выгодной сложной линией.",
+                "en": "Route branching: a safe detour competes with a harder but more rewarding line."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: обзор движения в 2D",
+        "en": "Godot: 2D movement overview"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html",
+      "description": {
+        "ru": "Примеры различных схем движения и их реализации в Godot; не универсальные значения ускорения или скорости.",
+        "en": "Examples of movement schemes and their implementation in Godot, not universal acceleration or speed values."
+      }
+    },
+    {
+      "title": {
+        "ru": "Maddy Thorson: физика Celeste и TowerFall",
+        "en": "Maddy Thorson: Celeste & TowerFall Physics"
+      },
+      "url": "https://www.mattmakesgames.com/articles/celeste_and_towerfall_physics/index.html",
+      "description": {
+        "ru": "Первичный авторский разбор движения, столкновений и взаимодействия с движущимися опорами в этих играх.",
+        "en": "The original developer's account of movement, collisions and moving-platform interactions in those games."
+      }
+    },
+    {
+      "title": {
+        "ru": "Godot: CharacterBody3D",
+        "en": "Godot: CharacterBody3D"
+      },
+      "url": "https://docs.godotengine.org/en/stable/classes/class_characterbody3d.html",
+      "description": {
+        "ru": "Условия работы управляемого трёхмерного тела, столкновений и скольжения в Godot.",
+        "en": "Godot-specific behavior of a controlled 3D body, collisions and sliding."
+      }
+    }
+  ]
+}

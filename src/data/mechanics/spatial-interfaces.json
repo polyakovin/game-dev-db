@@ -1,0 +1,614 @@
+{
+  "id": "spatial-interfaces",
+  "overviewGroupId": "g30",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Пространственные и альтернативные интерфейсы",
+    "en": "Spatial and alternative interfaces"
+  },
+  "description": {
+    "ru": "Пространственный и специальный ввод требует калибровки, ясного подтверждения действия и способа продолжить при потере сигнала.",
+    "en": "Spatial and specialized input requires calibration, clear action confirmation and a way to continue after signal loss."
+  },
+  "intro": {
+    "ru": "Пространственный и специальный ввод требует калибровки, ясного подтверждения действия и способа продолжить при потере сигнала. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Spatial and specialized input requires calibration, clear action confirmation and a way to continue after signal loss. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t299",
+      "section": "mechanics",
+      "title": {
+        "ru": "VR: захват, жесты и манипуляции руками",
+        "en": "VR grabbing, gestures and hand manipulation"
+      },
+      "description": {
+        "ru": "Пространственный захват связывает положение руки с виртуальным объектом, задавая начало контакта, удержание и отпускание.",
+        "en": "Spatial grabbing links hand pose to a virtual object through contact start, holding and release rules."
+      },
+      "example": {
+        "ru": "Игрок держит корпус одной рукой, а другой поворачивает рукоять, ограниченную осью шарнира.",
+        "en": "A player holds a housing with one hand and turns an axis-constrained crank with the other."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте потерю отслеживания руки и альтернативу захвата контроллером; объект не должен внезапно улетать при восстановлении сигнала.",
+        "en": "Test lost hand tracking and controller alternatives so objects do not launch unexpectedly when tracking returns."
+      },
+      "sourceUrls": [
+        "https://www.khronos.org/openxr/",
+        "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API"
+      ],
+      "branches": [
+        {
+          "id": "t299-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t299-v1",
+              "text": {
+                "ru": "Прямой захват требует близкого контакта.",
+                "en": "Direct grabbing requires close contact."
+              }
+            },
+            {
+              "id": "t299-v2",
+              "text": {
+                "ru": "Дальний луч выбирает удалённый объект.",
+                "en": "Distant rays select remote objects."
+              }
+            },
+            {
+              "id": "t299-v3",
+              "text": {
+                "ru": "Двуручное действие задаёт ориентацию по двум точкам.",
+                "en": "Two-handed actions derive orientation from two points."
+              }
+            },
+            {
+              "id": "t299-v4",
+              "text": {
+                "ru": "Отпускание передаёт оценённую скорость броска.",
+                "en": "Release transfers an estimated throwing velocity."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t300",
+      "section": "mechanics",
+      "title": {
+        "ru": "VR: перемещение, тело и пространство комнаты",
+        "en": "VR locomotion, bodies and room-scale space"
+      },
+      "description": {
+        "ru": "Перемещение в VR связывает физическую позу с виртуальным маршрутом, сохраняя понятные границы пространства и способов поворота.",
+        "en": "VR locomotion connects physical pose to virtual routes while maintaining understandable space boundaries and turning methods."
+      },
+      "example": {
+        "ru": "Игрок осматривает верстак физическим шагом, а между комнатами перемещается выбранным способом телепортации.",
+        "en": "A player inspects a bench by stepping physically and travels between rooms using selected teleport controls."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сидячий режим, повторный центр и изменение границы отслеживания, не делая физический шаг обязательным для прохождения.",
+        "en": "Test seated play, recentering and tracking-boundary changes without requiring a physical step for completion."
+      },
+      "sourceUrls": [
+        "https://www.khronos.org/openxr/",
+        "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API"
+      ],
+      "branches": [
+        {
+          "id": "t300-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t300-v1",
+              "text": {
+                "ru": "Телепорт выбирает проверенную точку назначения.",
+                "en": "Teleportation selects a validated destination."
+              }
+            },
+            {
+              "id": "t300-v2",
+              "text": {
+                "ru": "Непрерывный ход задаёт скорость отдельной осью.",
+                "en": "Continuous movement assigns speed to a separate axis."
+              }
+            },
+            {
+              "id": "t300-v3",
+              "text": {
+                "ru": "Поворот шагом меняет ориентацию дискретно.",
+                "en": "Snap turning changes orientation in steps."
+              }
+            },
+            {
+              "id": "t300-v4",
+              "text": {
+                "ru": "Комнатный масштаб использует доступный физический участок.",
+                "en": "Room-scale movement uses the available physical area."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t304",
+      "section": "mechanics",
+      "title": {
+        "ru": "Дыхание, пульс и биосигналы",
+        "en": "Breathing, pulse and biosignals"
+      },
+      "description": {
+        "ru": "Биосигнал или дыхательный ввод меняет игровой параметр по измеренному признаку, сохраняя калибровку и возможность добровольного отказа.",
+        "en": "Biosignal or breathing input changes a game parameter from a measured feature while preserving calibration and voluntary opt-out."
+      },
+      "example": {
+        "ru": "Виртуальный парус раскрывается по спокойному дыхательному ритму, который можно заменить удержанием кнопки.",
+        "en": "A virtual sail opens with a comfortable breathing rhythm that can be replaced by holding a button."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте согласие, отсутствие сигнала и персональную калибровку; игровой индикатор не должен выдавать медицинский вывод.",
+        "en": "Test consent, signal loss and personal calibration; a game indicator must not present medical conclusions."
+      },
+      "sourceUrls": [
+        "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview"
+      ],
+      "branches": [
+        {
+          "id": "t304-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t304-v1",
+              "text": {
+                "ru": "Ритм дыхания управляет условным расширением объекта.",
+                "en": "Breathing rhythm controls a fictional object's expansion."
+              }
+            },
+            {
+              "id": "t304-v2",
+              "text": {
+                "ru": "Пульсовой ввод использует только доступный датчик.",
+                "en": "Pulse input uses an actually available sensor."
+              }
+            },
+            {
+              "id": "t304-v3",
+              "text": {
+                "ru": "Сглаживание уменьшает случайные скачки измерения.",
+                "en": "Smoothing reduces random measurement jumps."
+              }
+            },
+            {
+              "id": "t304-v4",
+              "text": {
+                "ru": "Ручная замена сохраняет задачу без биосигнала.",
+                "en": "Manual substitutes preserve play without biosignals."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t305",
+      "section": "mechanics",
+      "title": {
+        "ru": "Музыкальные инструменты и специализированные контроллеры",
+        "en": "Musical instruments and specialized controllers"
+      },
+      "description": {
+        "ru": "Специализированный контроллер переводит привычный жест исполнения в игровое действие через явно заданное соответствие входных событий.",
+        "en": "Specialized controllers translate familiar performance gestures into game actions through explicit event mappings."
+      },
+      "example": {
+        "ru": "Клавиши музыкального контроллера открывают ворота по последовательности, а педаль удерживает уже открытый проход.",
+        "en": "A music controller's keys open gates in sequence while a pedal holds an opened passage."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте фактический формат событий, одновременно удержанные ноты и замену обычной клавиатурой при отсутствии контроллера.",
+        "en": "Test actual event formats, simultaneously held notes and a keyboard substitute when the controller is absent."
+      },
+      "sourceUrls": ["https://www.w3.org/TR/webmidi/"],
+      "branches": [
+        {
+          "id": "t305-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t305-v1",
+              "text": {
+                "ru": "Нота выбирает действие по таблице соответствия.",
+                "en": "Notes select actions through a mapping table."
+              }
+            },
+            {
+              "id": "t305-v2",
+              "text": {
+                "ru": "Сила события дозирует параметр при поддержке канала.",
+                "en": "Event strength modulates values when supported."
+              }
+            },
+            {
+              "id": "t305-v3",
+              "text": {
+                "ru": "Педаль меняет режим или удерживает эффект.",
+                "en": "Pedals change modes or sustain effects."
+              }
+            },
+            {
+              "id": "t305-v4",
+              "text": {
+                "ru": "Калибровка согласует задержку с музыкой.",
+                "en": "Calibration aligns input latency with music."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t306",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рули, педали, джойстики и кабины",
+        "en": "Steering wheels, pedals, joysticks and cockpits"
+      },
+      "description": {
+        "ru": "Кабинный ввод распределяет управление между осями, педалями и переключателями, сохраняя согласованный диапазон и нейтральное состояние.",
+        "en": "Cockpit input distributes control across axes, pedals and switches with consistent ranges and neutral states."
+      },
+      "example": {
+        "ru": "Игровой грузовик использует руль и две педали, но сохраняет управление кнопками для отсутствующей третьей оси.",
+        "en": "A game truck uses a wheel and two pedals while buttons replace a missing third axis."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте калибровку крайних положений, объединённые оси и подключение нескольких устройств; силовая отдача требует отдельной поддержки.",
+        "en": "Test end-stop calibration, combined axes and multiple devices; force feedback needs separate capability support."
+      },
+      "sourceUrls": [
+        "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API"
+      ],
+      "branches": [
+        {
+          "id": "t306-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t306-v1",
+              "text": {
+                "ru": "Руль задаёт угол в поддерживаемом диапазоне.",
+                "en": "Wheels set angles within their supported range."
+              }
+            },
+            {
+              "id": "t306-v2",
+              "text": {
+                "ru": "Педали дают раздельное или совмещённое значение.",
+                "en": "Pedals expose separate or combined values."
+              }
+            },
+            {
+              "id": "t306-v3",
+              "text": {
+                "ru": "Рычаг удерживает абсолютное положение параметра.",
+                "en": "Levers preserve an absolute parameter position."
+              }
+            },
+            {
+              "id": "t306-v4",
+              "text": {
+                "ru": "Профиль связывает функции с конкретным устройством.",
+                "en": "Profiles map functions to a specific device."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t308",
+      "section": "mechanics",
+      "title": {
+        "ru": "Свет, проекции, поверхности и интерактивные инсталляции",
+        "en": "Light, projections, surfaces and interactive installations"
+      },
+      "description": {
+        "ru": "Инсталляция связывает положение участника и физических поверхностей с проецируемым ответом, требуя устойчивого пространственного соответствия.",
+        "en": "Installations connect participant positions and physical surfaces to projected responses through stable spatial alignment."
+      },
+      "example": {
+        "ru": "На стол проецируется русло, а перемещаемые физические блоки меняют путь виртуальной воды.",
+        "en": "A projected river crosses a table and moving physical blocks changes its virtual water route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте смещение проектора, перекрытие камеры и изменение освещения; предусмотрите явный режим повторной калибровки.",
+        "en": "Test projector movement, camera occlusion and lighting changes with an explicit recalibration mode."
+      },
+      "sourceUrls": [
+        "https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html"
+      ],
+      "branches": [
+        {
+          "id": "t308-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t308-v1",
+              "text": {
+                "ru": "Калибровка сопоставляет координаты камеры и проекции.",
+                "en": "Calibration aligns camera and projection coordinates."
+              }
+            },
+            {
+              "id": "t308-v2",
+              "text": {
+                "ru": "Касание выбирает область на реальной поверхности.",
+                "en": "Touch selects a region on a physical surface."
+              }
+            },
+            {
+              "id": "t308-v3",
+              "text": {
+                "ru": "Тень становится управляемым игровым объектом.",
+                "en": "Shadows become controllable play objects."
+              }
+            },
+            {
+              "id": "t308-v4",
+              "text": {
+                "ru": "Несколько участников делят общую область действия.",
+                "en": "Several participants share one interaction area."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t307",
+      "section": "mechanics",
+      "title": {
+        "ru": "Физические предметы, метки, NFC и QR",
+        "en": "Physical objects, markers, NFC and QR"
+      },
+      "description": {
+        "ru": "Физический носитель сообщает идентификатор или положение, а игра связывает распознанное значение с конкретным объектом и допустимым действием.",
+        "en": "Physical tokens provide identifiers or poses that a game maps to a specific object and permitted action."
+      },
+      "example": {
+        "ru": "Карточка с QR добавляет предмет в локальную коллекцию, а повторное чтение открывает его уже существующую запись.",
+        "en": "A QR card adds an item to a local collection and rescanning opens its existing record."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте неизвестную метку, повторное чтение и отсутствие NFC в целевой среде, сохранив явную альтернативу выбора.",
+        "en": "Test unknown tags, repeat reads and missing NFC access in the target environment with an explicit selection alternative."
+      },
+      "sourceUrls": [
+        "https://developer.android.com/develop/connectivity/nfc/nfc"
+      ],
+      "branches": [
+        {
+          "id": "t307-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t307-v1",
+              "text": {
+                "ru": "QR выбирает запись по прочитанному идентификатору.",
+                "en": "QR codes select records by a read identifier."
+              }
+            },
+            {
+              "id": "t307-v2",
+              "text": {
+                "ru": "NFC требует поддерживаемого считывателя и доступного канала.",
+                "en": "NFC requires a supported reader and accessible channel."
+              }
+            },
+            {
+              "id": "t307-v3",
+              "text": {
+                "ru": "Геометрическая метка задаёт наблюдаемое положение.",
+                "en": "Geometric markers provide observed poses."
+              }
+            },
+            {
+              "id": "t307-v4",
+              "text": {
+                "ru": "Физическая фигурка может кодировать ограниченный набор свойств.",
+                "en": "Physical figures can encode a limited property set."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t309",
+      "section": "mechanics",
+      "title": {
+        "ru": "Текстовый ввод, команды и разговорный интерфейс",
+        "en": "Text input, commands and conversational interfaces"
+      },
+      "description": {
+        "ru": "Командный интерфейс переводит текст или речь в ограниченное действие, показывая распознанное намерение и результат исполнения.",
+        "en": "Command interfaces translate text or speech into constrained actions and expose interpreted intent and execution results."
+      },
+      "example": {
+        "ru": "Команда «открыть шлюз» вызывает выбор между двумя шлюзами, а не случайное исполнение одного варианта.",
+        "en": "“open the airlock” requests a choice between two airlocks instead of randomly executing one interpretation."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте неизвестную команду и ошибочную интерпретацию; свободная формулировка не должна скрывать фактические границы доступных действий.",
+        "en": "Test unknown commands and misinterpretations; free wording should not hide actual action limits."
+      },
+      "sourceUrls": ["https://github.com/ganelson/inform"],
+      "branches": [
+        {
+          "id": "t309-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t309-v1",
+              "text": {
+                "ru": "Грамматика задаёт допустимые глаголы и объекты.",
+                "en": "Grammars define supported verbs and objects."
+              }
+            },
+            {
+              "id": "t309-v2",
+              "text": {
+                "ru": "Уточнение разрешает неоднозначное имя цели.",
+                "en": "Clarification resolves ambiguous target names."
+              }
+            },
+            {
+              "id": "t309-v3",
+              "text": {
+                "ru": "Подтверждение отделяет распознавание от важного действия.",
+                "en": "Confirmation separates recognition from important actions."
+              }
+            },
+            {
+              "id": "t309-v4",
+              "text": {
+                "ru": "История позволяет повторить или исправить команду.",
+                "en": "History permits repeating or correcting a command."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Khronos: OpenXR",
+        "en": "Khronos: OpenXR"
+      },
+      "url": "https://www.khronos.org/openxr/",
+      "description": {
+        "ru": "Первичный стандарт интерфейсов XR. Поддержка отслеживания рук и отдельных расширений определяется средой; стандарт не гарантирует произвольный биосигнал или NFC.",
+        "en": "Primary XR interface standard. Hand-tracking and extension support depend on the runtime; the standard does not guarantee arbitrary biosignals or NFC."
+      }
+    },
+    {
+      "title": {
+        "ru": "MDN: WebXR Device API",
+        "en": "MDN: WebXR Device API"
+      },
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API",
+      "description": {
+        "ru": "Документация веб-интерфейса XR и проверки совместимых устройств; доступность браузеров и возможностей ограничена.",
+        "en": "Documentation of web XR interfaces and compatible-device discovery; browser and capability availability is limited."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android Developers: Sensors overview",
+        "en": "Android Developers: Sensors overview"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview",
+      "description": {
+        "ru": "Контекст типов датчиков, включая пульсовой сигнал при наличии подходящего оборудования. Это не обещание биосигнала в браузере.",
+        "en": "Sensor-type context, including heart-rate signals with suitable hardware; not a promise of biosignal access in a browser."
+      }
+    },
+    {
+      "title": {
+        "ru": "W3C: Web MIDI API",
+        "en": "W3C: Web MIDI API"
+      },
+      "url": "https://www.w3.org/TR/webmidi/",
+      "description": {
+        "ru": "Первичный проект стандарта событий MIDI, входов и выходов. Фактический доступ и формат контроллера проверяются отдельно.",
+        "en": "Primary draft standard for MIDI events, inputs and outputs. Actual access and controller format require separate checks."
+      }
+    },
+    {
+      "title": {
+        "ru": "MDN: Gamepad API",
+        "en": "MDN: Gamepad API"
+      },
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API",
+      "description": {
+        "ru": "Контекст осей и кнопок устройства; не гарантия поддержки любого руля, педалей или силовой отдачи.",
+        "en": "Device-axis and button context; not a guarantee of arbitrary wheel, pedal or force-feedback support."
+      }
+    },
+    {
+      "title": {
+        "ru": "OpenCV: Geometric transformations",
+        "en": "OpenCV: Geometric transformations"
+      },
+      "url": "https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html",
+      "description": {
+        "ru": "Первичная документация преобразования координат изображения, включая перспективное преобразование; часть контекста калибровки поверхности.",
+        "en": "Primary image-coordinate transformation documentation, including perspective transforms; part of surface-calibration context."
+      }
+    },
+    {
+      "title": {
+        "ru": "Android Developers: NFC basics",
+        "en": "Android Developers: NFC basics"
+      },
+      "url": "https://developer.android.com/develop/connectivity/nfc/nfc",
+      "description": {
+        "ru": "Первичная документация чтения NFC-меток Android. Не утверждение доступности NFC в каждом телефоне или веб-приложении.",
+        "en": "Primary Android NFC-tag documentation; not a claim of NFC availability in every phone or web application."
+      }
+    },
+    {
+      "title": {
+        "ru": "Inform 7",
+        "en": "Inform 7"
+      },
+      "url": "https://github.com/ganelson/inform",
+      "description": {
+        "ru": "Первичный открытый проект языка интерактивной прозы и текстовых действий; контекст ограниченного словаря команд.",
+        "en": "Primary open-source interactive-fiction and text-action language project; context for constrained command vocabularies."
+      }
+    }
+  ]
+}

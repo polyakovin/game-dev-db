@@ -1,0 +1,415 @@
+{
+  "id": "exploration-adventures",
+  "overviewGroupId": "g05",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Исследование и приключения",
+    "en": "Exploration and adventures"
+  },
+  "description": {
+    "ru": "Исследование связывает выбор маршрута с наблюдением, новым знанием и ценой возвращения.",
+    "en": "Exploration connects route choices to observation, new knowledge and the cost of returning."
+  },
+  "intro": {
+    "ru": "Исследование связывает выбор маршрута с наблюдением, новым знанием и ценой возвращения. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Exploration connects route choices to observation, new knowledge and the cost of returning. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t040",
+      "section": "mechanics",
+      "title": {
+        "ru": "Action-adventure",
+        "en": "Action-adventure"
+      },
+      "description": {
+        "ru": "Игрок чередует бой, преодоление препятствий и поиск инструментов, открывающих дальнейшее приключение.",
+        "en": "The player alternates combat, traversal and finding tools that open further stages of an adventure."
+      },
+      "example": {
+        "ru": "Щит отражает луч врага и направляет свет на закрытую дверь.",
+        "en": "A shield reflects an enemy beam and directs light toward a locked door."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, что новый инструмент полезен после обучающей комнаты и не превращается в одноразовый ключ.",
+        "en": "Check that the new tool remains useful beyond its tutorial room instead of becoming a disposable key."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t040-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t040-v1",
+              "text": {
+                "ru": "Инструмент открывает путь и меняет бой.",
+                "en": "A tool opens routes and changes combat."
+              }
+            },
+            {
+              "id": "t040-v2",
+              "text": {
+                "ru": "Подземелье обучает одному новому действию.",
+                "en": "A dungeon teaches one new action."
+              }
+            },
+            {
+              "id": "t040-v3",
+              "text": {
+                "ru": "Спутник даёт доступ к иной зоне.",
+                "en": "A companion grants access to another area."
+              }
+            },
+            {
+              "id": "t040-v4",
+              "text": {
+                "ru": "Возврат показывает изменение знакомого места.",
+                "en": "Returning reveals changes to a familiar place."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t043",
+      "section": "mechanics",
+      "title": {
+        "ru": "Открытый мир и свободное исследование",
+        "en": "Open worlds and free exploration"
+      },
+      "description": {
+        "ru": "Свободное исследование позволяет самому выбирать цель и порядок посещения мест по заметным признакам мира.",
+        "en": "Free exploration lets players choose destinations and visiting order from recognizable world features."
+      },
+      "example": {
+        "ru": "Дым за горой уводит от дороги к лагерю, которого ещё нет на карте.",
+        "en": "Smoke beyond a mountain draws the player off the road toward an unmapped camp."
+      },
+      "prototypeCheck": {
+        "ru": "Спрячьте маркеры и проверьте, может ли игрок сформулировать следующую цель по самому окружению.",
+        "en": "Hide objective markers and test whether the environment itself suggests a meaningful next destination."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t043-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t043-v1",
+              "text": {
+                "ru": "Ориентир привлекает без маркера задания.",
+                "en": "A landmark attracts without a quest marker."
+              }
+            },
+            {
+              "id": "t043-v2",
+              "text": {
+                "ru": "Слух открывает приблизительную область поиска.",
+                "en": "A rumor identifies an approximate search area."
+              }
+            },
+            {
+              "id": "t043-v3",
+              "text": {
+                "ru": "Дорога предлагает безопасный длинный путь.",
+                "en": "A road offers a safer but longer route."
+              }
+            },
+            {
+              "id": "t043-v4",
+              "text": {
+                "ru": "Системное событие меняет текущий маршрут.",
+                "en": "A systemic event changes the current route."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t044",
+      "section": "mechanics",
+      "title": {
+        "ru": "Экспедиции и возвращение на базу",
+        "en": "Expeditions and returning to base"
+      },
+      "description": {
+        "ru": "Экспедиция ограничивает дальность исследования запасами и заставляет решать, когда возвращаться с находками.",
+        "en": "An expedition limits exploration by supplies and asks when to return with discoveries."
+      },
+      "example": {
+        "ru": "Геолог берёт последний образец перед бурей и выбирает между коротким перевалом и долиной.",
+        "en": "A geologist collects a final sample before a storm, choosing a pass or a longer valley route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понятна ли цена обратного пути до того, как игрок потратит последний обязательный запас.",
+        "en": "Check whether return costs are understandable before the player spends the final essential supply."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t044-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t044-v1",
+              "text": {
+                "ru": "Запасы определяют доступную дальность пути.",
+                "en": "Supplies determine the available travel radius."
+              }
+            },
+            {
+              "id": "t044-v2",
+              "text": {
+                "ru": "Промежуточный лагерь расширяет радиус вылазки.",
+                "en": "A forward camp extends the expedition range."
+              }
+            },
+            {
+              "id": "t044-v3",
+              "text": {
+                "ru": "Неизвестная зона повышает ценность разведки.",
+                "en": "An unknown region increases reconnaissance value."
+              }
+            },
+            {
+              "id": "t044-v4",
+              "text": {
+                "ru": "Повреждение снаряжения меняет обратный маршрут.",
+                "en": "Damaged equipment changes the return route."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t046",
+      "section": "mechanics",
+      "title": {
+        "ru": "Археология и интерпретация окружения",
+        "en": "Archaeology and interpreting environments"
+      },
+      "description": {
+        "ru": "Игрок восстанавливает прошлое по расположению предметов, слоям среды и различиям между наблюдаемыми следами.",
+        "en": "The player reconstructs the past from object placement, environmental layers and differences between traces."
+      },
+      "example": {
+        "ru": "Заложенная дверь и поздняя роспись показывают, что храм использовался двумя разными группами.",
+        "en": "A sealed doorway and a later mural suggest two different groups occupied the same temple."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, опирается ли вывод на наблюдаемые признаки, а не на угадывание авторского ответа.",
+        "en": "Check that the conclusion follows observable evidence rather than guessing an author's intended answer."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t046-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t046-v1",
+              "text": {
+                "ru": "Слои показывают порядок перестройки места.",
+                "en": "Layers reveal the order of site rebuilding."
+              }
+            },
+            {
+              "id": "t046-v2",
+              "text": {
+                "ru": "Сопоставление связывает находки разных комнат.",
+                "en": "Comparison links findings from separate rooms."
+              }
+            },
+            {
+              "id": "t046-v3",
+              "text": {
+                "ru": "Инструмент открывает скрытый след материала.",
+                "en": "A tool exposes a hidden material trace."
+              }
+            },
+            {
+              "id": "t046-v4",
+              "text": {
+                "ru": "Версия проверяется независимым свидетельством.",
+                "en": "A hypothesis meets independent corroboration."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t047",
+      "section": "mechanics",
+      "title": {
+        "ru": "Поиск сокровищ и секретов",
+        "en": "Treasure hunting and secrets"
+      },
+      "description": {
+        "ru": "Поиск секрета соединяет подсказку, интерпретацию места и действие, раскрывающее скрытую награду.",
+        "en": "Secret hunting combines a clue, interpretation of a location and an action revealing a hidden reward."
+      },
+      "example": {
+        "ru": "Тень колокольни указывает на плиту только утром, а старый рисунок объясняет нужное время.",
+        "en": "A bell tower's shadow points at a slab only in the morning, as an old drawing suggests."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, различимы ли намеренная подсказка и декоративная деталь до получения награды.",
+        "en": "Test whether an intentional clue can be distinguished from decoration before the reward is found."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t047-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t047-v1",
+              "text": {
+                "ru": "Карта задаёт отношения вместо координат.",
+                "en": "A map gives relationships instead of coordinates."
+              }
+            },
+            {
+              "id": "t047-v2",
+              "text": {
+                "ru": "Звук помогает обнаружить скрытый проход.",
+                "en": "Sound suggests the presence of a hidden passage."
+              }
+            },
+            {
+              "id": "t047-v3",
+              "text": {
+                "ru": "Повторный визит использует новый инструмент.",
+                "en": "A return visit uses a newly acquired tool."
+              }
+            },
+            {
+              "id": "t047-v4",
+              "text": {
+                "ru": "Цепочка тайников оставляет следующую зацепку.",
+                "en": "A cache chain provides the next meaningful clue."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t048",
+      "section": "mechanics",
+      "title": {
+        "ru": "Walking simulator и исследование через наблюдение",
+        "en": "Walking simulators and observational exploration"
+      },
+      "description": {
+        "ru": "Наблюдение и перемещение раскрывают события через детали среды, не требуя постоянного боя или проверки реакции.",
+        "en": "Observation and movement reveal events through environmental detail without requiring continuous combat or reflex tests."
+      },
+      "example": {
+        "ru": "Пустая комната получает новый смысл после прочтения письма в соседнем доме.",
+        "en": "An empty room gains new meaning after a letter is read in the neighboring house."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, передаёт ли расположение предметов смысл без обязательного объясняющего монолога.",
+        "en": "Test whether object placement communicates meaning without a compulsory explanatory monologue."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t048-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t048-v1",
+              "text": {
+                "ru": "Маршрут меняет порядок открытия истории.",
+                "en": "Routes alter the order of narrative discovery."
+              }
+            },
+            {
+              "id": "t048-v2",
+              "text": {
+                "ru": "Предмет запускает короткое воспоминание.",
+                "en": "An object triggers a brief recollection."
+              }
+            },
+            {
+              "id": "t048-v3",
+              "text": {
+                "ru": "Повторный осмотр раскрывает новую деталь.",
+                "en": "Looking again reveals a newly meaningful detail."
+              }
+            },
+            {
+              "id": "t048-v4",
+              "text": {
+                "ru": "Отказ от осмотра сохраняет иной темп.",
+                "en": "Skipping inspection preserves another reading pace."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Ray-casting",
+        "en": "Godot: Ray-casting"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html",
+      "description": {
+        "ru": "Первичная документация пространственных запросов; контекст взаимодействия с окружением.",
+        "en": "Primary documentation of spatial queries; implementation context for interactions with an environment."
+      }
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "id": "horror-tension",
+  "overviewGroupId": "g21",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Хоррор и напряжение",
+    "en": "Horror and tension"
+  },
+  "description": {
+    "ru": "Хоррор строит решения вокруг недостатка уверенности, средств защиты и безопасного времени для восстановления.",
+    "en": "Horror builds decisions around limited certainty, defensive means and safe recovery time."
+  },
+  "intro": {
+    "ru": "Хоррор строит решения вокруг недостатка уверенности, средств защиты и безопасного времени для восстановления. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Horror builds decisions around limited certainty, defensive means and safe recovery time. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t210",
+      "section": "mechanics",
+      "title": {
+        "ru": "Survival horror и ограниченные средства защиты",
+        "en": "Survival horror and limited defenses"
+      },
+      "description": {
+        "ru": "Ограниченная защита превращает встречу с угрозой в выбор между сопротивлением, обходом и расходом редкого запаса.",
+        "en": "Limited defenses turn threatening encounters into choices between resistance, avoidance and spending a scarce reserve."
+      },
+      "example": {
+        "ru": "Последний патрон открывает проход, но привлекает противника из соседнего крыла.",
+        "en": "The last round clears a passage but attracts an opponent from another wing."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте проходимость при минимальном допустимом запасе, включая отказ от необязательного боя.",
+        "en": "Test completion with the minimum viable supplies, including avoidance of optional combat."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t210-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t210-v1",
+              "text": {
+                "ru": "Боезапас ограничивает число прямых столкновений.",
+                "en": "Ammunition limits direct confrontations."
+              }
+            },
+            {
+              "id": "t210-v2",
+              "text": {
+                "ru": "Шум выстрела привлекает дополнительную угрозу.",
+                "en": "Gunfire noise attracts additional threats."
+              }
+            },
+            {
+              "id": "t210-v3",
+              "text": {
+                "ru": "Расходник создаёт короткое окно безопасности.",
+                "en": "Consumables create a brief safety window."
+              }
+            },
+            {
+              "id": "t210-v4",
+              "text": {
+                "ru": "Повреждение уменьшает возможности дальнейшего побега.",
+                "en": "Injuries reduce options for subsequent escape."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t211",
+      "section": "mechanics",
+      "title": {
+        "ru": "Скрытность и побег от угрозы",
+        "en": "Hiding and escaping from threats"
+      },
+      "description": {
+        "ru": "Скрытность сохраняет неизвестность позиции, а побег требует разорвать контакт и найти безопасный следующий шаг.",
+        "en": "Hiding preserves uncertainty about position, while escape requires breaking contact and finding a safe next move."
+      },
+      "example": {
+        "ru": "Игрок прячется за стеллажом, затем выходит под шум механизма, чтобы добраться до двери.",
+        "en": "A player hides behind shelving and moves under machinery noise to reach a door."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, выводится ли поиск из наблюдений угрозы, а не из постоянного знания позиции игрока.",
+        "en": "Test that searching follows threat observations rather than permanent knowledge of player position."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t211-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t211-v1",
+              "text": {
+                "ru": "Укрытие закрывает обзор, но не убирает шум.",
+                "en": "Hiding blocks vision but does not remove noise."
+              }
+            },
+            {
+              "id": "t211-v2",
+              "text": {
+                "ru": "Задержка дыхания ограничивает время неподвижности.",
+                "en": "Held breath limits motionless hiding time."
+              }
+            },
+            {
+              "id": "t211-v3",
+              "text": {
+                "ru": "Приманка переносит внимание в другую комнату.",
+                "en": "Decoys shift attention to another room."
+              }
+            },
+            {
+              "id": "t211-v4",
+              "text": {
+                "ru": "Переход между убежищами создаёт окно риска.",
+                "en": "Moving between shelters creates exposure windows."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t212",
+      "section": "mechanics",
+      "title": {
+        "ru": "Психологический хоррор и неопределённость",
+        "en": "Psychological horror and uncertainty"
+      },
+      "description": {
+        "ru": "Неопределённость заставляет выбирать интерпретацию неполных сигналов, сохраняя сомнение без произвольной отмены всех правил.",
+        "en": "Uncertainty requires interpreting incomplete signals while preserving doubt without arbitrarily invalidating every rule."
+      },
+      "example": {
+        "ru": "Звук шагов может быть эхом, но открытая позже дверь даёт независимый признак присутствия.",
+        "en": "Footsteps may be echoes, but a later open door provides independent evidence of a presence."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, остаётся ли полезным внимательное наблюдение после раскрытия приёма ненадёжного восприятия.",
+        "en": "Test whether careful observation remains useful after unreliable perception has been revealed."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t212-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t212-v1",
+              "text": {
+                "ru": "Противоречивый сигнал допускает несколько объяснений.",
+                "en": "Conflicting signals permit several explanations."
+              }
+            },
+            {
+              "id": "t212-v2",
+              "text": {
+                "ru": "Повторная сцена меняет только важную деталь.",
+                "en": "Repeated scenes alter one meaningful detail."
+              }
+            },
+            {
+              "id": "t212-v3",
+              "text": {
+                "ru": "Ограниченный источник имеет проверяемую надёжность.",
+                "en": "Limited sources have testable reliability."
+              }
+            },
+            {
+              "id": "t212-v4",
+              "text": {
+                "ru": "Последствие отличает реальную угрозу от видимости.",
+                "en": "Consequences distinguish threats from appearances."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t213",
+      "section": "mechanics",
+      "title": {
+        "ru": "Поиск аномалий и распознавание изменений",
+        "en": "Anomaly hunting and detecting changes"
+      },
+      "description": {
+        "ru": "Игрок сравнивает знакомое место с текущим состоянием и принимает решение, является ли изменение значимой аномалией.",
+        "en": "Players compare a familiar place with its current state and decide whether a change is a meaningful anomaly."
+      },
+      "example": {
+        "ru": "На знакомом этаже меняется направление эвакуационной стрелки, хотя мебель остаётся прежней.",
+        "en": "An evacuation arrow changes direction on a familiar floor while the furniture remains unchanged."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте различимость аномалии при разных разрешениях и исключите случайные изменения освещения из списка ответов.",
+        "en": "Test anomaly visibility across resolutions and exclude incidental lighting variation from valid answers."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t213-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t213-v1",
+              "text": {
+                "ru": "Базовая сцена даёт время изучить норму.",
+                "en": "Baseline scenes provide time to learn normality."
+              }
+            },
+            {
+              "id": "t213-v2",
+              "text": {
+                "ru": "Изменение объекта нарушает сохранённое ожидание.",
+                "en": "Object changes violate a learned expectation."
+              }
+            },
+            {
+              "id": "t213-v3",
+              "text": {
+                "ru": "Правило отчёта задаёт цену ложной тревоги.",
+                "en": "Reporting rules set the cost of false alarms."
+              }
+            },
+            {
+              "id": "t213-v4",
+              "text": {
+                "ru": "Новый цикл проверяет другой тип признака.",
+                "en": "New cycles test a different feature type."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t214",
+      "section": "mechanics",
+      "title": {
+        "ru": "Преследователь и адаптация его поведения",
+        "en": "Pursuers and adaptive behavior"
+      },
+      "description": {
+        "ru": "Преследователь выбирает поведение по наблюдениям и памяти, а адаптация делает привычный способ спасения менее надёжным.",
+        "en": "A pursuer selects behavior from observations and memory, making habitual escape methods less reliable through adaptation."
+      },
+      "example": {
+        "ru": "После нескольких исчезновений в шкафах противник чаще проверяет шкафы, но не знает нужный заранее.",
+        "en": "Repeated closet escapes make a pursuer check closets more often without knowing the correct one."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте обучение только на доступных наблюдениях и наличие другого жизнеспособного способа уйти.",
+        "en": "Test learning from available observations only and preserve another viable way to escape."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t214-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t214-v1",
+              "text": {
+                "ru": "Память повышает интерес к уже использованному укрытию.",
+                "en": "Memory raises interest in a previously used hiding place."
+              }
+            },
+            {
+              "id": "t214-v2",
+              "text": {
+                "ru": "Слух создаёт последнюю известную область поиска.",
+                "en": "Hearing creates a last known search region."
+              }
+            },
+            {
+              "id": "t214-v3",
+              "text": {
+                "ru": "Обход меняет маршрут при закрытой прямой дороге.",
+                "en": "Flanking changes routes when a direct path closes."
+              }
+            },
+            {
+              "id": "t214-v4",
+              "text": {
+                "ru": "Предел адаптации сохраняет возможность контригры.",
+                "en": "Adaptation limits preserve counterplay."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t215",
+      "section": "mechanics",
+      "title": {
+        "ru": "Убежища, передышки и цикл напряжения",
+        "en": "Sanctuaries, respite and tension cycles"
+      },
+      "description": {
+        "ru": "Передышка снижает непосредственный риск и позволяет восстановить план; выход из безопасной зоны возвращает неопределённость.",
+        "en": "Respite reduces immediate risk and restores planning time; leaving safety reintroduces uncertainty."
+      },
+      "example": {
+        "ru": "Освещённая диспетчерская позволяет читать карту, но топливо для следующего выхода остаётся ограниченным.",
+        "en": "A lit control room allows map reading, but fuel for the next excursion remains limited."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понимает ли игрок момент отдыха и может ли спокойно остановить сессию внутри убежища.",
+        "en": "Test recognition of respite and the ability to stop a session comfortably inside a sanctuary."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t215-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t215-v1",
+              "text": {
+                "ru": "Явная граница отделяет убежище от угрозы.",
+                "en": "Clear boundaries separate shelter from danger."
+              }
+            },
+            {
+              "id": "t215-v2",
+              "text": {
+                "ru": "Ограниченный запас не восстанавливает всё бесплатно.",
+                "en": "Limited supplies prevent free complete recovery."
+              }
+            },
+            {
+              "id": "t215-v3",
+              "text": {
+                "ru": "Короткая безопасная петля даёт время осмыслить сцену.",
+                "en": "Short safe loops provide time to interpret events."
+              }
+            },
+            {
+              "id": "t215-v4",
+              "text": {
+                "ru": "Нарушение убежища заранее меняет известное правило.",
+                "en": "Breached sanctuaries signal a changed rule beforehand."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t216",
+      "section": "mechanics",
+      "title": {
+        "ru": "Сенсорные ограничения и неполная информация",
+        "en": "Sensory limitations and incomplete information"
+      },
+      "description": {
+        "ru": "Ограниченный канал восприятия меняет способ получения сведений, повышая ценность доступного сигнала и проверки предположений.",
+        "en": "A constrained perception channel changes information gathering, increasing the value of available signals and verification."
+      },
+      "example": {
+        "ru": "Прибор видит движение за стеной, но обновляется редко и не показывает точную форму существа.",
+        "en": "An instrument detects motion behind a wall but updates slowly and shows no exact creature shape."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, остаются ли различимыми обязательные сигналы при настройках доступности и отключённом декоративном эффекте.",
+        "en": "Test essential signal readability with accessibility settings and decorative effects disabled."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t216-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t216-v1",
+              "text": {
+                "ru": "Световой конус ограничивает видимый сектор.",
+                "en": "Light cones restrict the visible sector."
+              }
+            },
+            {
+              "id": "t216-v2",
+              "text": {
+                "ru": "Шум скрывает тихое приближение угрозы.",
+                "en": "Noise masks a quiet approaching threat."
+              }
+            },
+            {
+              "id": "t216-v3",
+              "text": {
+                "ru": "Прибор показывает след с задержкой.",
+                "en": "Instruments display traces with a delay."
+              }
+            },
+            {
+              "id": "t216-v4",
+              "text": {
+                "ru": "Альтернативный канал сохраняет важное действие доступным.",
+                "en": "Alternative channels preserve essential accessibility."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t217",
+      "section": "mechanics",
+      "title": {
+        "ru": "Кооперативный хоррор и риск для группы",
+        "en": "Cooperative horror and group risk"
+      },
+      "description": {
+        "ru": "Групповой риск возникает из разделения задач, взаимной зависимости и ограниченных каналов связи под угрозой.",
+        "en": "Group risk arises from split tasks, mutual dependence and limited communication while under threat."
+      },
+      "example": {
+        "ru": "Участник запускает генератор в подвале, пока остальные держат дверь и сообщают о приближении угрозы.",
+        "en": "One participant starts a basement generator while others hold a door and report the approaching threat."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте восстановление группы после отключения участника и полезность действий оставшегося в одиночестве игрока.",
+        "en": "Test recovery after a disconnect and useful actions for a participant left alone."
+      },
+      "sourceUrls": ["https://www.amnesiagame.com/"],
+      "branches": [
+        {
+          "id": "t217-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t217-v1",
+              "text": {
+                "ru": "Разделение открывает цель быстрее ценой поддержки.",
+                "en": "Splitting speeds objectives at the cost of support."
+              }
+            },
+            {
+              "id": "t217-v2",
+              "text": {
+                "ru": "Шум связи раскрывает местоположение команды.",
+                "en": "Communication noise exposes the team."
+              }
+            },
+            {
+              "id": "t217-v3",
+              "text": {
+                "ru": "Спасение вынуждает менять общий маршрут.",
+                "en": "Rescue forces a shared route change."
+              }
+            },
+            {
+              "id": "t217-v4",
+              "text": {
+                "ru": "Общий ресурс требует заранее согласовать расход.",
+                "en": "Shared resources require coordinated spending."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Frictional Games: Amnesia",
+        "en": "Frictional Games: Amnesia"
+      },
+      "url": "https://www.amnesiagame.com/",
+      "description": {
+        "ru": "Описание разработчика: исследование, неопределённость, скрытность и побег как способы взаимодействовать с угрозой. Не источник всех предложенных вариантов.",
+        "en": "Developer overview of exploration, uncertainty, hiding and escape as responses to threats; not evidence for every proposed variant."
+      }
+    }
+  ]
+}

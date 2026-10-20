@@ -1,0 +1,643 @@
+{
+  "id": "strategy-planning",
+  "overviewGroupId": "g08",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Стратегии",
+    "en": "Strategy games"
+  },
+  "description": {
+    "ru": "Стратегия соединяет производство, территорию, информацию и долгосрочные обязательства перед неопределённым противником.",
+    "en": "Strategy connects production, territory, information and long-term commitments against an uncertain opponent."
+  },
+  "intro": {
+    "ru": "Стратегия соединяет производство, территорию, информацию и долгосрочные обязательства перед неопределённым противником. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Strategy connects production, territory, information and long-term commitments against an uncertain opponent. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t067",
+      "section": "mechanics",
+      "title": {
+        "ru": "Стратегии в реальном времени",
+        "en": "Real-time strategy"
+      },
+      "description": {
+        "ru": "Команды исполняются непрерывно, пока игрок делит внимание между развитием экономики, разведкой и управлением армией.",
+        "en": "Commands execute continuously while attention is divided between economic growth, scouting and army control."
+      },
+      "example": {
+        "ru": "Второй рудник ускоряет выпуск войск, но требует прикрыть два удалённых прохода.",
+        "en": "A second mine accelerates unit production but requires defending two distant approaches."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, доступны ли полезные приказы при низкой скорости ввода без обязательного повторного кликанья.",
+        "en": "Test whether useful orders remain available at a low input rate without compulsory repeated clicking."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t067-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t067-v1",
+              "text": {
+                "ru": "Очередь производства связывает ресурсы со временем.",
+                "en": "Production queues commit resources over time."
+              }
+            },
+            {
+              "id": "t067-v2",
+              "text": {
+                "ru": "Группа командует несколькими отрядами сразу.",
+                "en": "Control groups command several units together."
+              }
+            },
+            {
+              "id": "t067-v3",
+              "text": {
+                "ru": "Рейд заставляет оторваться от развития.",
+                "en": "Raids interrupt uninterrupted economic growth."
+              }
+            },
+            {
+              "id": "t067-v4",
+              "text": {
+                "ru": "Расширение повышает доход и длину обороны.",
+                "en": "Expansion raises income and defensive frontage."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t068",
+      "section": "mechanics",
+      "title": {
+        "ru": "Пошаговые стратегии",
+        "en": "Turn-based strategy"
+      },
+      "description": {
+        "ru": "Ход выделяет время на планирование, а очередность участников определяет, какие изменения мира увидит следующий игрок.",
+        "en": "Turns provide planning time while player order determines which world changes the next participant observes."
+      },
+      "example": {
+        "ru": "Армия берёт мост сейчас, чтобы обеспечить снабжение наступления в следующем раунде.",
+        "en": "An army takes a bridge now to supply an offensive in the following round."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте преимущество первого хода на одинаковых стартовых позициях и доступность компенсирующего ответа.",
+        "en": "Test first-turn advantage from equal starting positions and the availability of compensating responses."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t068-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t068-v1",
+              "text": {
+                "ru": "Очередной ход даёт ответ на известное действие.",
+                "en": "Sequential turns answer an observed action."
+              }
+            },
+            {
+              "id": "t068-v2",
+              "text": {
+                "ru": "Одновременный приказ требует прогноза соперника.",
+                "en": "Simultaneous orders require predicting opponents."
+              }
+            },
+            {
+              "id": "t068-v3",
+              "text": {
+                "ru": "Лимит действий ограничивает широту одного хода.",
+                "en": "Action limits constrain the scope of one turn."
+              }
+            },
+            {
+              "id": "t068-v4",
+              "text": {
+                "ru": "Фаза снабжения связывает планы нескольких ходов.",
+                "en": "Supply phases connect plans across several turns."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t069",
+      "section": "mechanics",
+      "title": {
+        "ru": "4X",
+        "en": "4X"
+      },
+      "description": {
+        "ru": "Исследование, расширение, развитие и борьба за господство связывают множество поселений в одну долгую стратегию.",
+        "en": "Exploration, expansion, development and conflict connect multiple settlements into a long-term strategy."
+      },
+      "example": {
+        "ru": "Империя жертвует удобной границей ради редкого ресурса, нужного для научного проекта.",
+        "en": "An empire accepts an awkward border to obtain a rare resource for a research project."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, сохраняется ли осмысленная стратегия для отстающей державы после потери одной колонии.",
+        "en": "Test whether a trailing empire retains meaningful strategic options after losing one colony."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t069-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t069-v1",
+              "text": {
+                "ru": "Разведка открывает пригодные для роста места.",
+                "en": "Scouting reveals suitable expansion locations."
+              }
+            },
+            {
+              "id": "t069-v2",
+              "text": {
+                "ru": "Колонизация увеличивает затраты на управление.",
+                "en": "Colonization increases administrative overhead."
+              }
+            },
+            {
+              "id": "t069-v3",
+              "text": {
+                "ru": "Технологии задают несовместимые приоритеты развития.",
+                "en": "Research imposes competing development priorities."
+              }
+            },
+            {
+              "id": "t069-v4",
+              "text": {
+                "ru": "Альтернативная победа меняет цену войны.",
+                "en": "Alternative victories change the value of warfare."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t070",
+      "section": "mechanics",
+      "title": {
+        "ru": "Глобальные стратегии и династии",
+        "en": "Grand strategy and dynasties"
+      },
+      "description": {
+        "ru": "Долгая симуляция связывает территории, институты и преемственность власти, превращая личные связи в стратегический ресурс.",
+        "en": "A long simulation connects territory, institutions and succession, turning personal relationships into strategic resources."
+      },
+      "example": {
+        "ru": "Правитель выбирает наследника, рискуя расколоть союз двух влиятельных домов.",
+        "en": "A ruler chooses an heir at the risk of splitting an alliance between powerful houses."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте преемственность целей после смены правителя: игрок должен понимать новые права и угрозы.",
+        "en": "Test goal continuity after succession: players should understand their new claims and threats."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t070-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t070-v1",
+              "text": {
+                "ru": "Наследование делит накопленную территорию.",
+                "en": "Inheritance divides accumulated territory."
+              }
+            },
+            {
+              "id": "t070-v2",
+              "text": {
+                "ru": "Брак создаёт право и обязательство союза.",
+                "en": "Marriage creates claims and alliance obligations."
+              }
+            },
+            {
+              "id": "t070-v3",
+              "text": {
+                "ru": "Вассал меняет поддержку при конфликте интересов.",
+                "en": "A vassal changes support with conflicting interests."
+              }
+            },
+            {
+              "id": "t070-v4",
+              "text": {
+                "ru": "Реформа укрепляет центр ценой сопротивления.",
+                "en": "Reform strengthens the center but invites resistance."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t071",
+      "section": "mechanics",
+      "title": {
+        "ru": "Военные стратегии и оперативное планирование",
+        "en": "Wargames and operational planning"
+      },
+      "description": {
+        "ru": "Оперативный план связывает передвижение соединений, снабжение и сроки, а бой проверяет выполнимость выбранного замысла.",
+        "en": "An operational plan connects formations, supply and timing, with combat testing whether the intended maneuver is feasible."
+      },
+      "example": {
+        "ru": "Захват переправы имеет смысл только до прихода вражеских резервов и расхода топлива.",
+        "en": "Capturing a crossing matters only before enemy reserves arrive and fuel runs out."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, показывает ли интерфейс причину остановки операции: приказ, снабжение или недоступную местность.",
+        "en": "Test whether the interface explains a stalled operation through orders, supply or inaccessible terrain."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t071-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t071-v1",
+              "text": {
+                "ru": "Снабжение ограничивает глубину наступления.",
+                "en": "Supply limits the depth of an offensive."
+              }
+            },
+            {
+              "id": "t071-v2",
+              "text": {
+                "ru": "Резерв отвечает на непредвиденный прорыв.",
+                "en": "Reserves answer an unexpected breakthrough."
+              }
+            },
+            {
+              "id": "t071-v3",
+              "text": {
+                "ru": "Местность меняет стоимость перегруппировки.",
+                "en": "Terrain changes the cost of redeployment."
+              }
+            },
+            {
+              "id": "t071-v4",
+              "text": {
+                "ru": "Разведданные стареют после перемещения врага.",
+                "en": "Intelligence ages when enemy formations move."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t072",
+      "section": "mechanics",
+      "title": {
+        "ru": "RTT и командование без строительства базы",
+        "en": "Real-time tactics without base building"
+      },
+      "description": {
+        "ru": "Ограниченный состав войск выполняет задачу без производственной базы; потери меняют доступные способы дальнейшего боя.",
+        "en": "A limited roster completes objectives without a production base; losses change the options for later engagements."
+      },
+      "example": {
+        "ru": "Инженер подрывает мост, пока два уцелевших отряда задерживают преследование.",
+        "en": "An engineer demolishes a bridge while two surviving squads delay pursuit."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте миссию после допустимых потерь: отсутствие одного специалиста не должно создавать скрытый тупик.",
+        "en": "Test the mission after permitted losses so losing one specialist does not create a hidden dead end."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t072-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t072-v1",
+              "text": {
+                "ru": "Расстановка до боя задаёт первоначальный план.",
+                "en": "Pre-battle deployment establishes the initial plan."
+              }
+            },
+            {
+              "id": "t072-v2",
+              "text": {
+                "ru": "Подкрепление приходит в выбранную точку.",
+                "en": "Reinforcements arrive at a chosen location."
+              }
+            },
+            {
+              "id": "t072-v3",
+              "text": {
+                "ru": "Ветеран сохраняет ценность между миссиями.",
+                "en": "Veterans retain value between missions."
+              }
+            },
+            {
+              "id": "t072-v4",
+              "text": {
+                "ru": "Отступление обменивает позицию на сохранение сил.",
+                "en": "Retreat trades position for preserving forces."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t073",
+      "section": "mechanics",
+      "title": {
+        "ru": "MOBA и контроль линий",
+        "en": "MOBAs and lane control"
+      },
+      "description": {
+        "ru": "Герои распределяются по линиям и общим целям, превращая локальный успех в преимущество команды на карте.",
+        "en": "Heroes divide between lanes and shared objectives, converting local success into team-wide map advantage."
+      },
+      "example": {
+        "ru": "Игрок отдаёт часть дохода на линии, чтобы помочь союзникам захватить центральный объект.",
+        "en": "A player gives up some lane income to help allies capture a central objective."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, есть ли полезный вклад у отставшего героя помимо безнадёжного повторного столкновения.",
+        "en": "Test whether a behind hero can contribute beyond repeatedly taking an unwinnable direct fight."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t073-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t073-v1",
+              "text": {
+                "ru": "Волна миньонов меняет безопасную дистанцию.",
+                "en": "Minion waves change the safe engagement distance."
+              }
+            },
+            {
+              "id": "t073-v2",
+              "text": {
+                "ru": "Возврат на базу уступает временный контроль.",
+                "en": "Returning to base yields temporary control."
+              }
+            },
+            {
+              "id": "t073-v3",
+              "text": {
+                "ru": "Лесной маршрут скрывает помощь соседней линии.",
+                "en": "A jungle route conceals help for another lane."
+              }
+            },
+            {
+              "id": "t073-v4",
+              "text": {
+                "ru": "Общая цель требует своевременной перегруппировки.",
+                "en": "A shared objective requires timely regrouping."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t074",
+      "section": "mechanics",
+      "title": {
+        "ru": "Асимметричные фракции",
+        "en": "Asymmetric factions"
+      },
+      "description": {
+        "ru": "Фракции получают разные способы решать общие стратегические задачи; равновесие строится на сопоставимой полезности решений.",
+        "en": "Factions solve shared strategic problems through different systems; balance depends on comparable practical options."
+      },
+      "example": {
+        "ru": "Кочевая сторона уводит склады от набега, но теряет производство во время переезда.",
+        "en": "A nomadic faction moves depots away from a raid but suspends production during relocation."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте каждую пару фракций на малой и большой карте, включая доступные ответы на раннюю атаку.",
+        "en": "Test every faction pairing on small and large maps, including responses to early aggression."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t074-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t074-v1",
+              "text": {
+                "ru": "Разный ресурс меняет маршрут развития.",
+                "en": "Different resources alter development routes."
+              }
+            },
+            {
+              "id": "t074-v2",
+              "text": {
+                "ru": "Мобильная база заменяет стационарную оборону.",
+                "en": "A mobile base replaces stationary defense."
+              }
+            },
+            {
+              "id": "t074-v3",
+              "text": {
+                "ru": "Численность компенсирует слабость отдельного бойца.",
+                "en": "Numbers compensate for individual unit weakness."
+              }
+            },
+            {
+              "id": "t074-v4",
+              "text": {
+                "ru": "Преобразование местности создаёт особую зону силы.",
+                "en": "Terrain conversion creates a unique power zone."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t075",
+      "section": "mechanics",
+      "title": {
+        "ru": "Дипломатия и международные отношения",
+        "en": "Diplomacy and international relations"
+      },
+      "description": {
+        "ru": "Дипломатия превращает обещания, обмен и угрозы в способы менять поведение других держав без непосредственного боя.",
+        "en": "Diplomacy uses promises, exchange and threats to change other powers' behavior without immediate combat."
+      },
+      "example": {
+        "ru": "Доступ к порту оплачивается защитой торгового пути, который проходит через спорный пролив.",
+        "en": "Port access is paid for by protecting a trade route through a disputed strait."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понимает ли игрок условия вступления договора в силу и последствия его досрочного нарушения.",
+        "en": "Test whether players understand when a treaty activates and the consequences of breaking it early."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t075-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t075-v1",
+              "text": {
+                "ru": "Договор связывает выгоду с обязательством.",
+                "en": "Treaties connect benefits to obligations."
+              }
+            },
+            {
+              "id": "t075-v2",
+              "text": {
+                "ru": "Гарантия втягивает союзника в будущий конфликт.",
+                "en": "Guarantees involve allies in future conflicts."
+              }
+            },
+            {
+              "id": "t075-v3",
+              "text": {
+                "ru": "Санкция меняет цену торговли с противником.",
+                "en": "Sanctions change the cost of enemy trade."
+              }
+            },
+            {
+              "id": "t075-v4",
+              "text": {
+                "ru": "Репутация ограничивает доверие после обмана.",
+                "en": "Reputation limits trust after broken promises."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t076",
+      "section": "mechanics",
+      "title": {
+        "ru": "Туман войны, разведка и информационное преимущество",
+        "en": "Fog of war, reconnaissance and information advantage"
+      },
+      "description": {
+        "ru": "Скрытая информация заставляет добывать, оценивать и обновлять сведения вместо принятия решений по полной карте.",
+        "en": "Hidden information requires acquiring, evaluating and updating intelligence instead of acting on a complete map."
+      },
+      "example": {
+        "ru": "Замеченная колонна исчезает в лесу, и игрок проверяет две вероятные дороги наблюдателями.",
+        "en": "A spotted column disappears into woods, prompting observers to check two likely roads."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, не раскрывают ли скрытого врага интерфейс, звук выделения или автоматическое наведение без разведки.",
+        "en": "Test whether interface cues, selection sounds or automatic targeting reveal unscouted enemies."
+      },
+      "sourceUrls": ["https://www.openra.net/"],
+      "branches": [
+        {
+          "id": "t076-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t076-v1",
+              "text": {
+                "ru": "Обзор показывает только текущую видимость.",
+                "en": "Vision shows only currently observable areas."
+              }
+            },
+            {
+              "id": "t076-v2",
+              "text": {
+                "ru": "Последний контакт сохраняет устаревшую позицию.",
+                "en": "Last contact preserves an outdated position."
+              }
+            },
+            {
+              "id": "t076-v3",
+              "text": {
+                "ru": "Разведчик меняет безопасность на сведения.",
+                "en": "Scouts trade safety for useful information."
+              }
+            },
+            {
+              "id": "t076-v4",
+              "text": {
+                "ru": "Ложная цель искажает вывод о силах врага.",
+                "en": "Decoys distort estimates of enemy strength."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "OpenRA",
+        "en": "OpenRA"
+      },
+      "url": "https://www.openra.net/",
+      "description": {
+        "ru": "Первичный проект открытых стратегий: командование, туман войны и модификация правил.",
+        "en": "Primary open-source strategy project: unit commands, fog of war and rule modification."
+      }
+    }
+  ]
+}

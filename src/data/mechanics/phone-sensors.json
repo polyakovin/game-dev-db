@@ -1,0 +1,167 @@
+{
+  "id": "phone-sensors",
+  "overviewGroupId": "g29",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Телефон и встроенные датчики",
+    "en": "Phones and built-in sensors"
+  },
+  "description": {
+    "ru": "Датчик даёт зависимый от устройства сигнал; механика должна проверять доступность канала и различать измерение, шум и отсутствие данных.",
+    "en": "Sensors provide device-dependent signals; mechanics must check channel availability and distinguish measurements, noise and missing data."
+  },
+  "intro": {
+    "ru": "Датчик даёт зависимый от устройства сигнал; механика должна проверять доступность канала и различать измерение, шум и отсутствие данных. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Sensors provide device-dependent signals; mechanics must check channel availability and distinguish measurements, noise and missing data. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t296",
+      "section": "mechanics",
+      "title": {
+        "ru": "Свет, приближение и другие доступные датчики",
+        "en": "Light, proximity and other available sensors"
+      },
+      "description": {
+        "ru": "Доступный датчик переводит физическое условие рядом с телефоном в игровое состояние, если устройство предоставляет подходящее измерение.",
+        "en": "An available sensor turns a nearby physical condition into game state when the device exposes an appropriate measurement."
+      },
+      "example": {
+        "ru": "Условный росток раскрывается при смене света, а ползунок позволяет играть без доступа к датчику освещённости.",
+        "en": "A fictional sprout opens as light changes, with a slider supporting devices lacking light-sensor access."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте наличие датчика и доступа в целевой среде, обработку отсутствующих данных и работу замены без выдуманных измерений.",
+        "en": "Test sensor and access availability in the target environment, missing-data handling and fallback without fabricated readings."
+      },
+      "sourceUrls": [
+        "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview"
+      ],
+      "branches": [
+        {
+          "id": "t296-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t296-v1",
+              "text": {
+                "ru": "Освещённость выбирает состояние по устойчивому диапазону.",
+                "en": "Ambient light selects a state within a stable range."
+              }
+            },
+            {
+              "id": "t296-v2",
+              "text": {
+                "ru": "Приближение переключает режим при закрытии датчика.",
+                "en": "Proximity switches modes when a sensor is covered."
+              }
+            },
+            {
+              "id": "t296-v3",
+              "text": {
+                "ru": "Порог с запасом подавляет дрожание границы.",
+                "en": "Threshold margins suppress boundary chatter."
+              }
+            },
+            {
+              "id": "t296-v4",
+              "text": {
+                "ru": "Ручной режим заменяет недоступное измерение.",
+                "en": "Manual controls replace unavailable measurements."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t297",
+      "section": "mechanics",
+      "title": {
+        "ru": "Несколько телефонов и взаимодействие между устройствами",
+        "en": "Multiple phones and cross-device interaction"
+      },
+      "description": {
+        "ru": "Несколько телефонов делят информацию, роли или пространство ввода, согласуя события через явно установленную общую сессию.",
+        "en": "Several phones divide information, roles or input space while coordinating events through an explicitly shared session."
+      },
+      "example": {
+        "ru": "Один телефон показывает карту, второй управляет механизмом, а поворот подтверждается общим индикатором.",
+        "en": "One phone shows a map, another controls machinery and a shared indicator confirms a rotation."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте вход в правильную сессию, задержку и повторное подключение; не предполагайте прямой обмен без проверенного транспорта.",
+        "en": "Test joining the correct session, latency and reconnection; direct exchange needs a verified transport mechanism."
+      },
+      "sourceUrls": [
+        "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview"
+      ],
+      "branches": [
+        {
+          "id": "t297-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t297-v1",
+              "text": {
+                "ru": "Личный экран скрывает роль от других участников.",
+                "en": "Private screens conceal roles from other participants."
+              }
+            },
+            {
+              "id": "t297-v2",
+              "text": {
+                "ru": "Общий экран объединяет результаты отдельных вводов.",
+                "en": "Shared displays combine separate input results."
+              }
+            },
+            {
+              "id": "t297-v3",
+              "text": {
+                "ru": "Передача объекта подтверждается на двух устройствах.",
+                "en": "Transfers are confirmed across both devices."
+              }
+            },
+            {
+              "id": "t297-v4",
+              "text": {
+                "ru": "Разрыв связи переводит роль в определённое ожидание.",
+                "en": "Disconnections put roles into an explicit waiting state."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Android Developers: Sensors overview",
+        "en": "Android Developers: Sensors overview"
+      },
+      "url": "https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview",
+      "description": {
+        "ru": "Первичная документация типов датчиков, определения их наличия и чтения событий. Наличие датчика и доступ к нему зависят от конкретной среды.",
+        "en": "Primary documentation of sensor types, availability detection and events. Sensor presence and access depend on the particular environment."
+      }
+    }
+  ]
+}

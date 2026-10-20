@@ -1,0 +1,283 @@
+{
+  "id": "learning-accessibility",
+  "overviewGroupId": "g31",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Дети, обучение и доступность",
+    "en": "Children, education and accessibility"
+  },
+  "description": {
+    "ru": "Учебная задача должна проверять заявленное действие, а доступность позволяет выполнить его через разные моторные и сенсорные каналы.",
+    "en": "Learning tasks should assess the stated action while accessibility supports different motor and sensory channels."
+  },
+  "intro": {
+    "ru": "Учебная задача должна проверять заявленное действие, а доступность позволяет выполнить его через разные моторные и сенсорные каналы. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Learning tasks should assess the stated action while accessibility supports different motor and sensory channels. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t315",
+      "section": "mechanics",
+      "title": {
+        "ru": "Математика, естественные науки и исследовательские задачи",
+        "en": "Mathematics, science and inquiry challenges"
+      },
+      "description": {
+        "ru": "Учебная задача требует применить математическое или исследовательское действие и объясняет результат через наблюдаемые отношения.",
+        "en": "Learning tasks require mathematical or inquiry actions and explain results through observable relationships."
+      },
+      "example": {
+        "ru": "Игрок меняет длину игрового маятника и сначала отмечает ожидаемое направление изменения периода.",
+        "en": "A player changes a game pendulum's length and first predicts how its period will change."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте перенос на новую задачу, а не только успешный повтор знакомого экрана; учебный эффект требует отдельного исследования.",
+        "en": "Test transfer to a new problem rather than repetition of a familiar screen; learning efficacy needs separate study."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t315-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t315-v1",
+              "text": {
+                "ru": "Модель количества связывает символ с объектами.",
+                "en": "Quantity models connect symbols to objects."
+              }
+            },
+            {
+              "id": "t315-v2",
+              "text": {
+                "ru": "Гипотеза предсказывает результат до проверки.",
+                "en": "Hypotheses predict results before testing."
+              }
+            },
+            {
+              "id": "t315-v3",
+              "text": {
+                "ru": "Изменение одной переменной позволяет сравнить условия.",
+                "en": "Single-variable changes permit condition comparisons."
+              }
+            },
+            {
+              "id": "t315-v4",
+              "text": {
+                "ru": "Объяснение переносит решение на новую задачу.",
+                "en": "Explanations transfer solutions to a new task."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t316",
+      "section": "mechanics",
+      "title": {
+        "ru": "Профессиональные тренажёры и процедурная практика",
+        "en": "Professional simulators and procedural practice"
+      },
+      "description": {
+        "ru": "Процедурная практика воспроизводит заданный порядок решений и действий с обратной связью о пропущенных условиях и ошибках.",
+        "en": "Procedural practice reproduces a specified sequence of decisions and actions with feedback on missing conditions and errors."
+      },
+      "example": {
+        "ru": "Учебный тренажёр оборудования меняет состояние одного индикатора, требуя выбрать другую ветку игровой процедуры.",
+        "en": "An equipment trainer changes one indicator and requires a different branch of its simulated procedure."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сценарий с профильным специалистом; выполнение игровой последовательности само по себе не подтверждает профессиональную квалификацию.",
+        "en": "Review the scenario with a domain specialist; completing a game sequence alone does not establish professional competence."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t316-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t316-v1",
+              "text": {
+                "ru": "Демонстрация показывает цель и порядок этапов.",
+                "en": "Demonstrations show goals and stage order."
+              }
+            },
+            {
+              "id": "t316-v2",
+              "text": {
+                "ru": "Практика позволяет безопасно повторить шаг.",
+                "en": "Practice permits safely repeating a step."
+              }
+            },
+            {
+              "id": "t316-v3",
+              "text": {
+                "ru": "Ветвление проверяет действие при изменённом условии.",
+                "en": "Branches test actions under changed conditions."
+              }
+            },
+            {
+              "id": "t316-v4",
+              "text": {
+                "ru": "Разбор отделяет правильный результат от неверного процесса.",
+                "en": "Debriefs distinguish correct outcomes from faulty processes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t317",
+      "section": "mechanics",
+      "title": {
+        "ru": "Аргументация, проверка источников и критическое чтение",
+        "en": "Argumentation, source verification and critical reading"
+      },
+      "description": {
+        "ru": "Критическое чтение сравнивает утверждение с источником, качеством основания и возможным альтернативным объяснением.",
+        "en": "Critical reading compares claims with sources, evidential quality and possible alternative explanations."
+      },
+      "example": {
+        "ru": "Игрок сравнивает заголовок с таблицей, замечая, что вывод относится только к одной группе наблюдений.",
+        "en": "A player compares a headline with its table and notices the conclusion applies to only one observed group."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, требуется ли оценивать основания, а не выбирать правильный ответ по внешнему виду или знакомому имени источника.",
+        "en": "Test reasoning about evidence rather than selecting by visual appearance or a familiar source name."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t317-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t317-v1",
+              "text": {
+                "ru": "Происхождение связывает цитату с исходным материалом.",
+                "en": "Provenance connects a quote to original material."
+              }
+            },
+            {
+              "id": "t317-v2",
+              "text": {
+                "ru": "Контекст проверяет границы сделанного вывода.",
+                "en": "Context tests the limits of an inference."
+              }
+            },
+            {
+              "id": "t317-v3",
+              "text": {
+                "ru": "Аргумент отделяет основание от утверждения.",
+                "en": "Arguments separate evidence from the claim."
+              }
+            },
+            {
+              "id": "t317-v4",
+              "text": {
+                "ru": "Контрпример проверяет слишком широкое обобщение.",
+                "en": "Counterexamples test an overbroad generalization."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t318",
+      "section": "mechanics",
+      "title": {
+        "ru": "Доступная игра при разных моторных и сенсорных возможностях",
+        "en": "Accessible play across motor and sensory abilities"
+      },
+      "description": {
+        "ru": "Доступность сохраняет смысл игровой задачи при разных способах восприятия и движения, предлагая настраиваемый ввод и представление.",
+        "en": "Accessibility preserves a challenge's meaning across perception and movement differences through configurable controls and presentation."
+      },
+      "example": {
+        "ru": "Ритмическая дверь показывает импульс светом и звуком, а окно нажатия можно расширить независимо от громкости.",
+        "en": "A rhythmic door presents visual and audio pulses and permits widening the input window independently of volume."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте полную последовательность без одного канала и с альтернативным вводом; настройки должны сохраняться и применяться до обучения.",
+        "en": "Test complete sequences with one channel absent and alternate input; settings should persist and apply before tutorials."
+      },
+      "sourceUrls": ["https://gameaccessibilityguidelines.com/"],
+      "branches": [
+        {
+          "id": "t318-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t318-v1",
+              "text": {
+                "ru": "Переназначение меняет физический способ команды.",
+                "en": "Remapping changes the physical command method."
+              }
+            },
+            {
+              "id": "t318-v2",
+              "text": {
+                "ru": "Дублирование передаёт сигнал несколькими каналами.",
+                "en": "Redundant cues communicate through several channels."
+              }
+            },
+            {
+              "id": "t318-v3",
+              "text": {
+                "ru": "Настройка времени меняет доступное окно реакции.",
+                "en": "Timing settings alter available response windows."
+              }
+            },
+            {
+              "id": "t318-v4",
+              "text": {
+                "ru": "Упрощённый жест заменяет недоступное удержание или аккорд.",
+                "en": "Simplified gestures replace inaccessible holds or chords."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Game Accessibility Guidelines",
+        "en": "Game Accessibility Guidelines"
+      },
+      "url": "https://gameaccessibilityguidelines.com/",
+      "description": {
+        "ru": "Первичный справочник авторов рекомендаций по моторной, сенсорной и когнитивной доступности.",
+        "en": "The guideline authors’ primary reference on motor, sensory and cognitive accessibility."
+      }
+    }
+  ]
+}

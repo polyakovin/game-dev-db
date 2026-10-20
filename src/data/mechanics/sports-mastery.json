@@ -1,0 +1,663 @@
+{
+  "id": "sports-mastery",
+  "overviewGroupId": "g16",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Спорт и физическое мастерство",
+    "en": "Sports and physical mastery"
+  },
+  "description": {
+    "ru": "Спортивные механики связывают точность исполнения с пространством, состоянием участника и понятными условиями зачёта.",
+    "en": "Sports mechanics connect execution precision to space, participant state and understandable scoring conditions."
+  },
+  "intro": {
+    "ru": "Спортивные механики связывают точность исполнения с пространством, состоянием участника и понятными условиями зачёта. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Sports mechanics connect execution precision to space, participant state and understandable scoring conditions. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t149",
+      "section": "mechanics",
+      "title": {
+        "ru": "Командные игры с мячом",
+        "en": "Team ball sports"
+      },
+      "description": {
+        "ru": "Командная игра с мячом связывает владение, свободное пространство и согласованный переход между атакой и защитой.",
+        "en": "Team ball sports connect possession, open space and coordinated transitions between attack and defense."
+      },
+      "example": {
+        "ru": "Игрок уводит защитника, чтобы партнёр получил мяч в освободившемся коридоре.",
+        "en": "A player draws a defender away so a teammate can receive in the vacated lane."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте предсказуемость выбора адресата передачи и управляемого защитника в плотной группе.",
+        "en": "Test predictable pass-recipient and defender selection within a dense group."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t149-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t149-v1",
+              "text": {
+                "ru": "Передача перемещает мяч быстрее бегущего игрока.",
+                "en": "Passes move a ball faster than a runner."
+              }
+            },
+            {
+              "id": "t149-v2",
+              "text": {
+                "ru": "Открывание создаёт доступную линию паса.",
+                "en": "Off-ball movement opens passing lanes."
+              }
+            },
+            {
+              "id": "t149-v3",
+              "text": {
+                "ru": "Прессинг меняет риск потери владения.",
+                "en": "Pressing changes the risk of losing possession."
+              }
+            },
+            {
+              "id": "t149-v4",
+              "text": {
+                "ru": "Переключение выбирает управляемого участника команды.",
+                "en": "Switching chooses the currently controlled teammate."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t150",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ракеточные виды спорта",
+        "en": "Racket sports"
+      },
+      "description": {
+        "ru": "Ракеточная дуэль чередует приём и ответ, меняя доступное время через размещение мяча, вращение и позицию участника.",
+        "en": "Racket duels alternate receiving and responding, changing available time through placement, spin and player position."
+      },
+      "example": {
+        "ru": "Сильный удар отводит соперника назад, после чего короткий ответ заставляет его бежать к сетке.",
+        "en": "A strong shot pushes an opponent back and a following drop shot forces a run toward the net."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте читаемость точки отскока и момент принятия команды, особенно при раннем вводе следующего удара.",
+        "en": "Test bounce-point readability and command timing, especially early input for the next shot."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t150-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t150-v1",
+              "text": {
+                "ru": "Сила удара сокращает время ответа.",
+                "en": "Shot power reduces response time."
+              }
+            },
+            {
+              "id": "t150-v2",
+              "text": {
+                "ru": "Вращение меняет отскок после касания.",
+                "en": "Spin changes the post-contact bounce."
+              }
+            },
+            {
+              "id": "t150-v3",
+              "text": {
+                "ru": "Укороченный удар наказывает дальнюю позицию.",
+                "en": "Drop shots punish a distant position."
+              }
+            },
+            {
+              "id": "t150-v4",
+              "text": {
+                "ru": "Восстановление возвращает игрока к следующему приёму.",
+                "en": "Recovery prepares the player for the next return."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t151",
+      "section": "mechanics",
+      "title": {
+        "ru": "Лёгкая атлетика и соревнования на результат",
+        "en": "Athletics and performance competitions"
+      },
+      "description": {
+        "ru": "Соревнование на результат оценивает исполнение по времени, дальности или высоте, связывая подготовку с точным моментом усилия.",
+        "en": "Performance events evaluate time, distance or height, connecting preparation to a precise effort moment."
+      },
+      "example": {
+        "ru": "Спортсмен выбирает более устойчивый разбег, жертвуя небольшой скоростью ради точного отталкивания.",
+        "en": "An athlete chooses a steadier approach and sacrifices some speed for precise takeoff."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте зависимость результата от частоты ввода, чтобы успех не определялся только скоростью многократного нажатия.",
+        "en": "Test dependence on input frequency so success is not determined solely by repeated button-press speed."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t151-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t151-v1",
+              "text": {
+                "ru": "Старт проверяет реакцию на разрешающий сигнал.",
+                "en": "Starts test reactions to an authorization cue."
+              }
+            },
+            {
+              "id": "t151-v2",
+              "text": {
+                "ru": "Темп распределяет запас усилия по дистанции.",
+                "en": "Pacing distributes effort across the distance."
+              }
+            },
+            {
+              "id": "t151-v3",
+              "text": {
+                "ru": "Отталкивание использует ограниченную зону допуска.",
+                "en": "Takeoff uses a limited valid launch zone."
+              }
+            },
+            {
+              "id": "t151-v4",
+              "text": {
+                "ru": "Попытки позволяют пересмотреть подготовку по результату.",
+                "en": "Attempts allow adjusting preparation from results."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t152",
+      "section": "mechanics",
+      "title": {
+        "ru": "Гимнастика, акробатика и оценка исполнения",
+        "en": "Gymnastics, acrobatics and execution scoring"
+      },
+      "description": {
+        "ru": "Оцениваемая связка сочетает сложность элемента, качество исполнения и устойчивость переходов в ограниченной программе.",
+        "en": "Scored routines combine element difficulty, execution quality and transition stability within a limited program."
+      },
+      "example": {
+        "ru": "Игрок заменяет сложный финальный элемент на надёжный, чтобы сохранить чистое приземление всей программы.",
+        "en": "A player replaces a difficult finale with a reliable element to preserve a clean routine landing."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте раздельное объяснение оценки за сложность и ошибки, чтобы итог не выглядел произвольным числом.",
+        "en": "Test separate explanations for difficulty and deductions so the result does not appear arbitrary."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t152-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t152-v1",
+              "text": {
+                "ru": "Сложность повышает потенциальную оценку.",
+                "en": "Difficulty raises the potential score."
+              }
+            },
+            {
+              "id": "t152-v2",
+              "text": {
+                "ru": "Баланс поддерживается непрерывной коррекцией.",
+                "en": "Balance requires continuous correction."
+              }
+            },
+            {
+              "id": "t152-v3",
+              "text": {
+                "ru": "Приземление завершает рискованную фазу элемента.",
+                "en": "Landing ends an element's risky phase."
+              }
+            },
+            {
+              "id": "t152-v4",
+              "text": {
+                "ru": "Связка получает бонус за подходящий переход.",
+                "en": "Connections reward suitable transitions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t153",
+      "section": "mechanics",
+      "title": {
+        "ru": "Скейтбординг, сноубординг и экстремальные виды спорта",
+        "en": "Skateboarding, snowboarding and extreme sports"
+      },
+      "description": {
+        "ru": "Экстремальный спорт связывает выбор линии, накопленную скорость и исполнение трюка с безопасным возвращением на поверхность.",
+        "en": "Extreme sports connect route choice, accumulated speed and trick execution to a controlled return to the surface."
+      },
+      "example": {
+        "ru": "Игрок выбирает менее высокий трамплин, чтобы успеть развернуться и попасть на следующую перилу.",
+        "en": "A player chooses a lower ramp to finish rotating and reach the next rail."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте понятность поверхности приземления и возможность отменить неподходящий трюк до необратимой фазы.",
+        "en": "Test landing-surface readability and canceling an unsuitable trick before its irreversible phase."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t153-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t153-v1",
+              "text": {
+                "ru": "Разбег задаёт высоту доступного прыжка.",
+                "en": "Approach speed determines available jump height."
+              }
+            },
+            {
+              "id": "t153-v2",
+              "text": {
+                "ru": "Грань открывает скольжение при точном входе.",
+                "en": "Edges permit grinding after a precise entry."
+              }
+            },
+            {
+              "id": "t153-v3",
+              "text": {
+                "ru": "Поворот должен завершиться до приземления.",
+                "en": "Rotation must finish before landing."
+              }
+            },
+            {
+              "id": "t153-v4",
+              "text": {
+                "ru": "Разнообразие связывает трюки в более ценную серию.",
+                "en": "Variety links tricks into more valuable chains."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t154",
+      "section": "mechanics",
+      "title": {
+        "ru": "Гольф, бильярд и точность траектории",
+        "en": "Golf, billiards and trajectory precision"
+      },
+      "description": {
+        "ru": "Точный удар задаёт траекторию и дальнейшие контакты, позволяя планировать результат по углу, силе и свойствам поверхности.",
+        "en": "Precision strikes set trajectories and later contacts, allowing planning through angle, force and surface properties."
+      },
+      "example": {
+        "ru": "Шар сначала касается борта, чтобы подойти к цели с доступной стороны.",
+        "en": "A ball first hits a rail to approach the target from an accessible side."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте совпадение предпросмотра с выбранной моделью контакта, явно ограничив точность дальнего прогноза.",
+        "en": "Test previews against the selected collision model and state limits on long-range prediction."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t154-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t154-v1",
+              "text": {
+                "ru": "Предпросмотр показывает ограниченную часть пути.",
+                "en": "Previews show a limited part of the path."
+              }
+            },
+            {
+              "id": "t154-v2",
+              "text": {
+                "ru": "Сила меняет дистанцию и отскок.",
+                "en": "Force changes distance and rebounds."
+              }
+            },
+            {
+              "id": "t154-v3",
+              "text": {
+                "ru": "Вращение влияет на последующее движение.",
+                "en": "Spin affects subsequent movement."
+              }
+            },
+            {
+              "id": "t154-v4",
+              "text": {
+                "ru": "Последовательный контакт открывает непрямой путь к цели.",
+                "en": "Sequential contacts open an indirect target route."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t155",
+      "section": "mechanics",
+      "title": {
+        "ru": "Боулинг, дартс и метание",
+        "en": "Bowling, darts and throwing"
+      },
+      "description": {
+        "ru": "Метание соединяет подготовку направления, момент отпускания и распределение силы, оценивая место завершения траектории.",
+        "en": "Throwing connects direction preparation, release timing and force allocation, scoring where the trajectory ends."
+      },
+      "example": {
+        "ru": "Игрок уменьшает силу следующего броска после перелёта, сохраняя уже найденное направление.",
+        "en": "A player lowers the next throw's force after overshooting while keeping the successful direction."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте повторяемость одинакового ввода и отдельно покажите случайный разброс, если он присутствует в правилах.",
+        "en": "Test identical-input repeatability and separately communicate random spread when it is part of the rules."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t155-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t155-v1",
+              "text": {
+                "ru": "Прицел задаёт предполагаемую линию броска.",
+                "en": "Aiming sets an intended throw line."
+              }
+            },
+            {
+              "id": "t155-v2",
+              "text": {
+                "ru": "Отпускание фиксирует момент приложения силы.",
+                "en": "Release timing fixes force application."
+              }
+            },
+            {
+              "id": "t155-v3",
+              "text": {
+                "ru": "Разброс отражает выбранную сложность исполнения.",
+                "en": "Spread reflects chosen execution difficulty."
+              }
+            },
+            {
+              "id": "t155-v4",
+              "text": {
+                "ru": "Серия позволяет корректировать следующую попытку.",
+                "en": "Series allow adjusting the next attempt."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t156",
+      "section": "mechanics",
+      "title": {
+        "ru": "Спортивные единоборства",
+        "en": "Combat sports"
+      },
+      "description": {
+        "ru": "Спортивный поединок связывает дистанцию, разрешённые действия и состояние участника с системой очков и остановок.",
+        "en": "Combat sports connect distance, permitted actions and participant condition to scoring and stoppage rules."
+      },
+      "example": {
+        "ru": "Участник входит в клинч, чтобы прервать серию ударов, но теряет возможность свободного перемещения.",
+        "en": "A participant clinches to interrupt a striking sequence but loses free movement."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте объяснение зачтённого действия и нарушения именно выбранных игровых правил поединка.",
+        "en": "Test explanations for valid scoring actions and violations under the chosen game's combat rules."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t156-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t156-v1",
+              "text": {
+                "ru": "Дистанция открывает разные виды атаки.",
+                "en": "Range opens different attack types."
+              }
+            },
+            {
+              "id": "t156-v2",
+              "text": {
+                "ru": "Защита тратит запас и создаёт ответное окно.",
+                "en": "Defense spends reserves and creates a response window."
+              }
+            },
+            {
+              "id": "t156-v3",
+              "text": {
+                "ru": "Клинч меняет доступные действия обоих участников.",
+                "en": "Clinches change both participants' available actions."
+              }
+            },
+            {
+              "id": "t156-v4",
+              "text": {
+                "ru": "Раунд позволяет восстановить часть состояния.",
+                "en": "Rounds restore part of a participant's condition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t157",
+      "section": "mechanics",
+      "title": {
+        "ru": "Спортивный менеджмент и тренировка команды",
+        "en": "Sports management and team training"
+      },
+      "description": {
+        "ru": "Менеджмент команды распределяет тренировочное время, состав и ресурсы между текущим результатом и будущим развитием участников.",
+        "en": "Team management distributes training time, roster slots and resources between current results and future participant development."
+      },
+      "example": {
+        "ru": "Тренер выпускает резервиста сейчас, чтобы восстановить лидера перед более важным соперником.",
+        "en": "A coach fields a reserve now to recover a leading player before a more important opponent."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, виден ли вклад тренировочного плана в поведение команды, отдельно от случайного исхода матча.",
+        "en": "Test whether training plans visibly influence team behavior separately from random match outcomes."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t157-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t157-v1",
+              "text": {
+                "ru": "Тренировка улучшает навык ценой усталости.",
+                "en": "Training improves skills at a fatigue cost."
+              }
+            },
+            {
+              "id": "t157-v2",
+              "text": {
+                "ru": "Ротация сохраняет готовность к следующему матчу.",
+                "en": "Rotation preserves readiness for the next match."
+              }
+            },
+            {
+              "id": "t157-v3",
+              "text": {
+                "ru": "Роль меняет вклад участника в общую схему.",
+                "en": "Roles change contributions to a shared system."
+              }
+            },
+            {
+              "id": "t157-v4",
+              "text": {
+                "ru": "Разведка снижает неопределённость выбора новичка.",
+                "en": "Scouting reduces uncertainty about a recruit."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t158",
+      "section": "mechanics",
+      "title": {
+        "ru": "Вымышленные виды спорта и гибридные правила",
+        "en": "Fictional sports and hybrid rules"
+      },
+      "description": {
+        "ru": "Вымышленный спорт задаёт понятный набор пространственных правил и условий зачёта, затем исследует их сочетание с необычным движением.",
+        "en": "Fictional sports establish readable spatial rules and scoring conditions, then combine them with unusual movement."
+      },
+      "example": {
+        "ru": "В игре с низкой гравитацией команда передаёт мяч между тремя воротами на разных поверхностях.",
+        "en": "A low-gravity game passes a ball between three goals mounted on different surfaces."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте первое объяснение правил без знания реального спортивного прототипа и наличие ответа на доминирующую тактику.",
+        "en": "Test initial rule comprehension without knowledge of a real sport and counterplay to a dominant tactic."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html"
+      ],
+      "branches": [
+        {
+          "id": "t158-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t158-v1",
+              "text": {
+                "ru": "Новая среда меняет обычную траекторию мяча.",
+                "en": "New environments change ordinary ball paths."
+              }
+            },
+            {
+              "id": "t158-v2",
+              "text": {
+                "ru": "Несколько ворот перераспределяют защиту.",
+                "en": "Multiple goals redistribute defensive coverage."
+              }
+            },
+            {
+              "id": "t158-v3",
+              "text": {
+                "ru": "Смена ролей меняет разрешённое взаимодействие.",
+                "en": "Role changes alter permitted interactions."
+              }
+            },
+            {
+              "id": "t158-v4",
+              "text": {
+                "ru": "Особый ресурс даёт ограниченный способ нарушить шаблон.",
+                "en": "Special resources provide limited pattern-breaking actions."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Physics introduction",
+        "en": "Godot: Physics introduction"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+      "description": {
+        "ru": "Документация физических тел, столкновений и материалов. Контекст программной модели, не свидетельство точности реального спорта или техники.",
+        "en": "Documentation of physics bodies, collisions and materials. Software-model context, not evidence of real sport or vehicle accuracy."
+      }
+    }
+  ]
+}

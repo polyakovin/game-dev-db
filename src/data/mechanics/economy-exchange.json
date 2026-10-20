@@ -1,0 +1,643 @@
+{
+  "id": "economy-exchange",
+  "overviewGroupId": "g10",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Экономика и обмен",
+    "en": "Economy and exchange"
+  },
+  "description": {
+    "ru": "Экономические правила связывают производство, распределение, обязательства и обмен; цены должны объяснять дефицит и доступные альтернативы.",
+    "en": "Economic rules connect production, allocation, commitments and exchange; prices should communicate scarcity and available alternatives."
+  },
+  "intro": {
+    "ru": "Экономические правила связывают производство, распределение, обязательства и обмен; цены должны объяснять дефицит и доступные альтернативы. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Economic rules connect production, allocation, commitments and exchange; prices should communicate scarcity and available alternatives. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t087",
+      "section": "mechanics",
+      "title": {
+        "ru": "Добыча, преобразование и расход ресурсов",
+        "en": "Resource extraction, transformation and consumption"
+      },
+      "description": {
+        "ru": "Ресурс проходит добычу, преобразование и потребление; игрок согласует скорость этапов и стоимость потерь.",
+        "en": "Resources pass through extraction, transformation and consumption; players align stage rates and the cost of waste."
+      },
+      "example": {
+        "ru": "Плавильня даёт металл и шлак, который занимает склад до запуска дорожного производства.",
+        "en": "A smelter makes metal and slag that fills storage until road production begins."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сохранение количества на каждом этапе, включая отмену переработки и заполненный выходной склад.",
+        "en": "Check quantity conservation at each stage, including canceled processing and full output storage."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t087-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t087-v1",
+              "text": {
+                "ru": "Месторождение истощается после заданного объёма.",
+                "en": "Deposits deplete after a stated total yield."
+              }
+            },
+            {
+              "id": "t087-v2",
+              "text": {
+                "ru": "Рецепт преобразует несколько видов сырья.",
+                "en": "Recipes transform several raw material types."
+              }
+            },
+            {
+              "id": "t087-v3",
+              "text": {
+                "ru": "Побочный продукт требует отдельного применения.",
+                "en": "Byproducts require a separate useful destination."
+              }
+            },
+            {
+              "id": "t087-v4",
+              "text": {
+                "ru": "Расходник поддерживает работу другого процесса.",
+                "en": "Consumables sustain another production process."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t088",
+      "section": "mechanics",
+      "title": {
+        "ru": "Торговля и торговые маршруты",
+        "en": "Trade and trade routes"
+      },
+      "description": {
+        "ru": "Торговля переносит товар между местами с разной потребностью, а маршрут связывает маржу со временем и риском.",
+        "en": "Trade moves goods between locations with different needs; routes connect margin to travel time and risk."
+      },
+      "example": {
+        "ru": "Зерно едет в шахтёрский город, а обратным рейсом тот же транспорт везёт инструменты.",
+        "en": "Grain travels to a mining town and the same vehicle brings tools on its return trip."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте прибыль с учётом времени, содержания и пустого обратного пути, а не одной разницы цен.",
+        "en": "Check profit including time, upkeep and an empty return journey rather than price differences alone."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t088-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t088-v1",
+              "text": {
+                "ru": "Разница цен оплачивает путь перевозчика.",
+                "en": "Price differences compensate a carrier's journey."
+              }
+            },
+            {
+              "id": "t088-v2",
+              "text": {
+                "ru": "Караван требует вместимость и сопровождение.",
+                "en": "Caravans need capacity and protection."
+              }
+            },
+            {
+              "id": "t088-v3",
+              "text": {
+                "ru": "Обратный груз повышает полезность рейса.",
+                "en": "Return cargo improves the value of a trip."
+              }
+            },
+            {
+              "id": "t088-v4",
+              "text": {
+                "ru": "Закрытие границы меняет доступный маршрут.",
+                "en": "Border closures change available trade routes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t089",
+      "section": "mechanics",
+      "title": {
+        "ru": "Спрос, предложение и образование цен",
+        "en": "Supply, demand and price formation"
+      },
+      "description": {
+        "ru": "Цена отражает доступность товара и готовность потребителей покупать, создавая обратную связь между поставкой и спросом.",
+        "en": "Prices reflect availability and willingness to buy, creating feedback between supply and demand."
+      },
+      "example": {
+        "ru": "Массовая доставка угля снижает его цену, заставляя переключить часть транспорта на дерево.",
+        "en": "A large coal delivery lowers its price and encourages shifting some vehicles to timber."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте границы цен и скорость возврата к равновесию после одной необычно большой сделки.",
+        "en": "Test price bounds and adjustment speed after one unusually large transaction."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t089-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t089-v1",
+              "text": {
+                "ru": "Избыток снижает цену следующей продажи.",
+                "en": "Surplus lowers the next selling price."
+              }
+            },
+            {
+              "id": "t089-v2",
+              "text": {
+                "ru": "Дефицит повышает ценность новой поставки.",
+                "en": "Shortages increase the value of new supply."
+              }
+            },
+            {
+              "id": "t089-v3",
+              "text": {
+                "ru": "Замена товара уменьшает зависимость покупателя.",
+                "en": "Substitutes reduce buyer dependence on one item."
+              }
+            },
+            {
+              "id": "t089-v4",
+              "text": {
+                "ru": "Задержка реакции создаёт риск перепроизводства.",
+                "en": "Delayed reactions create overproduction risk."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t090",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рынки, аукционы и торги",
+        "en": "Markets, auctions and bidding"
+      },
+      "description": {
+        "ru": "Аукцион распределяет ограниченный объект через конкурирующие предложения, а рынок показывает доступные условия обмена.",
+        "en": "Auctions allocate scarce objects through competing offers while markets expose available exchange conditions."
+      },
+      "example": {
+        "ru": "Игроки тайно оценивают право строить мост, зная только ожидаемый поток грузов.",
+        "en": "Players secretly value a bridge-building right based on an expected freight flow."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одинаковые ставки, момент закрытия и возврат зарезервированного ресурса проигравшему участнику.",
+        "en": "Test tied bids, closing time and returning reserved resources to losing participants."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t090-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t090-v1",
+              "text": {
+                "ru": "Открытые ставки показывают текущую лучшую цену.",
+                "en": "Open bidding reveals the current best price."
+              }
+            },
+            {
+              "id": "t090-v2",
+              "text": {
+                "ru": "Закрытая заявка требует оценки без наблюдения.",
+                "en": "Sealed bids require valuation without observation."
+              }
+            },
+            {
+              "id": "t090-v3",
+              "text": {
+                "ru": "Обратный аукцион выбирает минимальную цену услуги.",
+                "en": "Reverse auctions choose the lowest service price."
+              }
+            },
+            {
+              "id": "t090-v4",
+              "text": {
+                "ru": "Лимитный приказ ждёт подходящего предложения.",
+                "en": "Limit orders wait for a matching offer."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t091",
+      "section": "mechanics",
+      "title": {
+        "ru": "Бартер, переговоры и оценка сделки",
+        "en": "Barter, negotiation and deal evaluation"
+      },
+      "description": {
+        "ru": "Бартер сопоставляет субъективную полезность разных вещей, позволяя улучшать предложение уступками и условиями.",
+        "en": "Barter compares subjective item utility and improves offers through concessions and conditions."
+      },
+      "example": {
+        "ru": "Кузнец отдаёт инструмент за редкую руду и обещание доставить топливо до зимы.",
+        "en": "A smith trades a tool for rare ore and a promise to deliver fuel before winter."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, различает ли интерфейс немедленный обмен, обещание и условие, которое ещё не исполнено.",
+        "en": "Test that immediate exchange, promises and unfulfilled conditions remain distinguishable."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t091-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t091-v1",
+              "text": {
+                "ru": "Потребность меняет ценность одного предмета.",
+                "en": "Needs change the value of an individual item."
+              }
+            },
+            {
+              "id": "t091-v2",
+              "text": {
+                "ru": "Пакет связывает несколько встречных уступок.",
+                "en": "Bundles connect several reciprocal concessions."
+              }
+            },
+            {
+              "id": "t091-v3",
+              "text": {
+                "ru": "Отсрочка переносит часть оплаты в будущее.",
+                "en": "Deferred payment moves part of the price forward."
+              }
+            },
+            {
+              "id": "t091-v4",
+              "text": {
+                "ru": "Отказ сохраняет возможность другого партнёра.",
+                "en": "Walking away preserves another potential partner."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t092",
+      "section": "mechanics",
+      "title": {
+        "ru": "Бюджеты, долг и инвестиции в игровом мире",
+        "en": "Budgets, debt and investment in a game world"
+      },
+      "description": {
+        "ru": "Игровой бюджет ограничивает текущие расходы, а долг и вложения перераспределяют возможности между настоящими и будущими ходами.",
+        "en": "An in-game budget limits current spending while debt and investment redistribute options between present and future turns."
+      },
+      "example": {
+        "ru": "Город занимает на мост, но должен сохранить средства на содержание транспорта до открытия переправы.",
+        "en": "A city borrows for a bridge but must fund transport upkeep until the crossing opens."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте прогноз денежных потоков, особенно одновременное наступление нескольких игровых обязательств.",
+        "en": "Check the cash-flow forecast, especially several in-game commitments falling due together."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t092-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t092-v1",
+              "text": {
+                "ru": "Содержание создаёт регулярное обязательство.",
+                "en": "Upkeep creates a recurring commitment."
+              }
+            },
+            {
+              "id": "t092-v2",
+              "text": {
+                "ru": "Заём увеличивает средства вместе с будущей выплатой.",
+                "en": "Borrowing adds funds and a future repayment."
+              }
+            },
+            {
+              "id": "t092-v3",
+              "text": {
+                "ru": "Проект задерживает доход до завершения.",
+                "en": "Projects delay income until completion."
+              }
+            },
+            {
+              "id": "t092-v4",
+              "text": {
+                "ru": "Резерв позволяет пережить временный провал выручки.",
+                "en": "Reserves absorb a temporary revenue shortfall."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t093",
+      "section": "mechanics",
+      "title": {
+        "ru": "Контракты, заказы и выполнение обязательств",
+        "en": "Contracts, orders and commitments"
+      },
+      "description": {
+        "ru": "Контракт связывает награду с явными условиями поставки, качества и срока, превращая обещание в план использования ресурсов.",
+        "en": "A contract connects payment to delivery, quality and timing conditions, turning a promise into a resource plan."
+      },
+      "example": {
+        "ru": "Мастерская берёт заказ на двадцать деталей и отказывается от второй сделки, чтобы выдержать срок.",
+        "en": "A workshop accepts twenty parts and declines another job to meet the deadline."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте условия приёмки до подписания и корректное завершение при частичной или досрочной поставке.",
+        "en": "Test acceptance conditions before signing and correct settlement after partial or early delivery."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t093-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t093-v1",
+              "text": {
+                "ru": "Заказ резервирует ограниченную мощность производства.",
+                "en": "Orders reserve limited production capacity."
+              }
+            },
+            {
+              "id": "t093-v2",
+              "text": {
+                "ru": "Частичная поставка оплачивается отдельным правилом.",
+                "en": "Partial deliveries use an explicit payment rule."
+              }
+            },
+            {
+              "id": "t093-v3",
+              "text": {
+                "ru": "Штраф ограничивает выгоду позднего выполнения.",
+                "en": "Penalties limit the benefit of late completion."
+              }
+            },
+            {
+              "id": "t093-v4",
+              "text": {
+                "ru": "Переговоры меняют срок вместе с ценой.",
+                "en": "Negotiation changes the deadline and price together."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t094",
+      "section": "mechanics",
+      "title": {
+        "ru": "Собственность, аренда и налоги",
+        "en": "Ownership, rent and taxes"
+      },
+      "description": {
+        "ru": "Собственность определяет право использования объекта, аренда ограничивает его срок, а налог связывает владение с регулярным платежом.",
+        "en": "Ownership grants usage rights, rent limits their duration and taxation connects holding an asset to recurring payment."
+      },
+      "example": {
+        "ru": "Порт арендует склад на сезон, сохраняя деньги для транспорта вместо покупки здания.",
+        "en": "A port rents seasonal storage and preserves money for vehicles instead of buying the building."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте окончание аренды с чужим грузом внутри: правила освобождения места должны быть заранее понятны.",
+        "en": "Test lease expiry with cargo inside so the rules for clearing the space are known beforehand."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t094-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t094-v1",
+              "text": {
+                "ru": "Покупка переносит долгосрочные расходы владельцу.",
+                "en": "Purchases transfer long-term costs to an owner."
+              }
+            },
+            {
+              "id": "t094-v2",
+              "text": {
+                "ru": "Аренда снижает начальный вход в производство.",
+                "en": "Rent lowers the initial cost of production access."
+              }
+            },
+            {
+              "id": "t094-v3",
+              "text": {
+                "ru": "Налог делает пустующий участок затратным.",
+                "en": "Taxes make an unused plot costly to hold."
+              }
+            },
+            {
+              "id": "t094-v4",
+              "text": {
+                "ru": "Сервитут разрешает конкретный проход через чужое место.",
+                "en": "Easements permit a specific use of another plot."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t095",
+      "section": "mechanics",
+      "title": {
+        "ru": "Дефицит, инфляция и ресурсные стоки",
+        "en": "Scarcity, inflation and resource sinks"
+      },
+      "description": {
+        "ru": "Ограничение предложения и удаление ресурсов регулируют их ценность, а рост денежной массы меняет доступность игровых покупок.",
+        "en": "Supply limits and resource removal regulate value while currency growth changes access to in-game purchases."
+      },
+      "example": {
+        "ru": "Дешёвое массовое производство увеличивает доход, но обслуживание оборудования растёт с его числом.",
+        "en": "Cheap mass production raises income while machine maintenance grows with the installed fleet."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте многократный длинный цикл экономики, отдельно измеряя создание и удаление каждого ресурса.",
+        "en": "Test many long economic cycles, measuring the creation and removal of each resource separately."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t095-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t095-v1",
+              "text": {
+                "ru": "Ремонт удаляет часть валюты из обращения.",
+                "en": "Repair removes some currency from circulation."
+              }
+            },
+            {
+              "id": "t095-v2",
+              "text": {
+                "ru": "Порча ограничивает хранение вечного запаса.",
+                "en": "Spoilage limits indefinite inventory hoarding."
+              }
+            },
+            {
+              "id": "t095-v3",
+              "text": {
+                "ru": "Сбор за сделку повышает цену частого обмена.",
+                "en": "Transaction fees raise the cost of repeated exchange."
+              }
+            },
+            {
+              "id": "t095-v4",
+              "text": {
+                "ru": "Лимит источника не даёт бесконечно наращивать добычу.",
+                "en": "Source caps prevent unlimited extraction growth."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t096",
+      "section": "mechanics",
+      "title": {
+        "ru": "Экономическое соперничество и взаимозависимость",
+        "en": "Economic competition and interdependence"
+      },
+      "description": {
+        "ru": "Конкуренты борются за ограниченные возможности, но специализация и обмен могут сделать их взаимно зависимыми.",
+        "en": "Competitors contest limited opportunities, while specialization and exchange can make them mutually dependent."
+      },
+      "example": {
+        "ru": "Две компании спорят за руду, но одна производит двигатели для транспорта другой.",
+        "en": "Two companies contest ore but one produces engines for the other's vehicles."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, может ли слабый участник сменить нишу или партнёра после захвата одного критичного ресурса.",
+        "en": "Test whether a weaker participant can change niche or partner after a critical resource is captured."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t096-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t096-v1",
+              "text": {
+                "ru": "Общий источник ограничивает суммарную добычу.",
+                "en": "Shared sources limit total extraction."
+              }
+            },
+            {
+              "id": "t096-v2",
+              "text": {
+                "ru": "Специализация улучшает выпуск выбранного товара.",
+                "en": "Specialization improves a chosen product's output."
+              }
+            },
+            {
+              "id": "t096-v3",
+              "text": {
+                "ru": "Договор поставки связывает планы соперников.",
+                "en": "Supply agreements connect competitors' plans."
+              }
+            },
+            {
+              "id": "t096-v4",
+              "text": {
+                "ru": "Заменитель даёт выход из зависимости монополии.",
+                "en": "Substitutes offer escape from monopoly dependence."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Factorio: Content",
+        "en": "Factorio: Content"
+      },
+      "url": "https://www.factorio.com/game/content",
+      "description": {
+        "ru": "Описание разработчика: производство, транспорт и сигнальные сети как связанная игровая система.",
+        "en": "Developer overview of production, transport and circuit networks as connected gameplay systems."
+      }
+    }
+  ]
+}

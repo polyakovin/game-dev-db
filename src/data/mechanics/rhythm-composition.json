@@ -1,0 +1,229 @@
+{
+  "id": "rhythm-composition",
+  "overviewGroupId": "g22",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Звук, музыка и ритм",
+    "en": "Sound, music and rhythm"
+  },
+  "description": {
+    "ru": "Музыкальное действие связывает положение в такте, форму движения и выбор звучащих элементов в общую систему обратной связи.",
+    "en": "Musical action connects beat position, movement form and sound selection through shared feedback rules."
+  },
+  "intro": {
+    "ru": "Музыкальное действие связывает положение в такте, форму движения и выбор звучащих элементов в общую систему обратной связи. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Musical action connects beat position, movement form and sound selection through shared feedback rules. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t221",
+      "section": "mechanics",
+      "title": {
+        "ru": "Танец и движение в ритм",
+        "en": "Dance and rhythmic movement"
+      },
+      "description": {
+        "ru": "Ритмическое движение сопоставляет момент и форму действия с музыкальной структурой, позволяя оценивать координацию и выразительность.",
+        "en": "Rhythmic movement aligns action timing and shape with musical structure to assess coordination and expression."
+      },
+      "example": {
+        "ru": "Игрок выбирает собственную связку, сохраняя опорные шаги на сильных долях припева.",
+        "en": "A player chooses a sequence while keeping anchor steps on the chorus's strong beats."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте калибровку задержки и альтернативу распознаванию всего тела, если устройство не видит часть движения.",
+        "en": "Test latency calibration and alternatives when tracking cannot observe part of a full-body movement."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/audio/sync_with_audio.html"
+      ],
+      "branches": [
+        {
+          "id": "t221-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t221-v1",
+              "text": {
+                "ru": "Шаг попадает в заданную долю такта.",
+                "en": "Steps land on specified beats."
+              }
+            },
+            {
+              "id": "t221-v2",
+              "text": {
+                "ru": "Поза удерживается в течение музыкальной фразы.",
+                "en": "Poses persist through a musical phrase."
+              }
+            },
+            {
+              "id": "t221-v3",
+              "text": {
+                "ru": "Переход оценивает связь двух движений.",
+                "en": "Transitions assess the connection between movements."
+              }
+            },
+            {
+              "id": "t221-v4",
+              "text": {
+                "ru": "Свободная часть допускает несколько верных исполнений.",
+                "en": "Freestyle sections allow several valid performances."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t222",
+      "section": "mechanics",
+      "title": {
+        "ru": "Музыкальное сочинение и импровизация",
+        "en": "Music composition and improvisation"
+      },
+      "description": {
+        "ru": "Игрок собирает музыкальную фразу из допустимых элементов, а система сохраняет связь между выбором, временем и слышимым результатом.",
+        "en": "Players assemble musical phrases from permitted elements while the system links choices, timing and audible results."
+      },
+      "example": {
+        "ru": "Игрок строит мелодию поверх басовой петли и меняет её окончание в ответ на партию союзника.",
+        "en": "A player builds melody over a bass loop and changes its ending in response to a partner."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, слышна ли связь конкретного действия с результатом и можно ли отменить запись без потери остальных слоёв.",
+        "en": "Test the audible link between action and output and undoing a recording without losing other layers."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/audio/sync_with_audio.html"
+      ],
+      "branches": [
+        {
+          "id": "t222-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t222-v1",
+              "text": {
+                "ru": "Петля повторяет выбранный фрагмент.",
+                "en": "Loops repeat a selected fragment."
+              }
+            },
+            {
+              "id": "t222-v2",
+              "text": {
+                "ru": "Слой добавляет ритм или гармоническую опору.",
+                "en": "Layers add rhythm or harmonic support."
+              }
+            },
+            {
+              "id": "t222-v3",
+              "text": {
+                "ru": "Импровизация меняет ноты внутри заданного лада.",
+                "en": "Improvisation changes notes within a selected mode."
+              }
+            },
+            {
+              "id": "t222-v4",
+              "text": {
+                "ru": "Обмен фразами связывает двух исполнителей.",
+                "en": "Phrase exchanges connect two performers."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t219",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ритмическое попадание и окна точности",
+        "en": "Beat matching and timing windows"
+      },
+      "description": {
+        "ru": "Ритмическое попадание сравнивает момент ввода с опорным событием музыки и переводит временное отклонение в понятный результат.",
+        "en": "Rhythm matching compares input time with a musical reference event and translates timing error into an understandable result."
+      },
+      "example": {
+        "ru": "Короткая нота оценивает момент нажатия, а длинная требует ещё и своевременного отпускания.",
+        "en": "A short note evaluates press timing while a long note also requires timely release."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте ранние и поздние нажатия симметрично относительно выбранного правила, отдельно измеряя задержку аудио и ввода.",
+        "en": "Test early and late presses under the chosen rule and measure audio and input latency separately."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/audio/sync_with_audio.html"
+      ],
+      "branches": [
+        {
+          "id": "t219-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t219-v1",
+              "text": {
+                "ru": "Окно делит попадания по степени точности.",
+                "en": "Timing windows grade input precision."
+              }
+            },
+            {
+              "id": "t219-v2",
+              "text": {
+                "ru": "Удержание проверяет начало и длительность ноты.",
+                "en": "Held notes test both onset and duration."
+              }
+            },
+            {
+              "id": "t219-v3",
+              "text": {
+                "ru": "Синкопа переносит действие между сильными долями.",
+                "en": "Syncopation places actions between strong beats."
+              }
+            },
+            {
+              "id": "t219-v4",
+              "text": {
+                "ru": "Калибровка компенсирует постоянную задержку тракта.",
+                "en": "Calibration compensates a constant playback delay."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Sync the gameplay with audio and music",
+        "en": "Godot: Sync the gameplay with audio and music"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/audio/sync_with_audio.html",
+      "description": {
+        "ru": "Технический контекст синхронизации и задержки воспроизведения. Документация помечает обновление примеров к текущей версии как незавершённое; конкретный API требует проверки в целевой версии.",
+        "en": "Implementation context for synchronization and playback latency. The documentation marks its update for the current version as unfinished; specific APIs need target-version verification."
+      }
+    }
+  ]
+}

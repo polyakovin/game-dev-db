@@ -31,8 +31,9 @@ import trackpad from '../data/mechanics/trackpad.json' with { type: 'json' };
 import { absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 import { resolveMechanicCatalog } from './mechanic-source.mjs';
+import { overviewCatalogs } from './mechanic-overviews.mjs';
 
-/** @typedef {Omit<typeof voice, 'families' | 'sections'> & { provenance?: string, sections: (typeof voice.sections[number] & { group?: { ru: string, en: string } })[], families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
+/** @typedef {Omit<typeof voice, 'families' | 'sections'> & { provenance?: string, sections: (typeof voice.sections[number] & { group?: { ru: string, en: string } })[], families: (typeof voice.families[number] & { prototypeCheck?: {ru: string, en: string}, references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
 export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ (
   [
     voice,
@@ -65,6 +66,7 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ (
     keyboard,
     mouse,
     trackpad,
+    ...overviewCatalogs,
   ].map((source) => resolveMechanicCatalog(source))
 );
 
@@ -86,7 +88,16 @@ export function getMechanics(lang, { includeArchived = false } = {}) {
       section: family.section,
       title: family.title[lang],
       description: family.description[lang],
-      example: family.example[lang],
+      example: [
+        family.example[lang],
+        ...(family.prototypeCheck?.[lang]
+          ? [
+              `${lang === 'ru' ? 'Проверка прототипа' : 'Prototype check'}: ${family.prototypeCheck[lang]}`,
+            ]
+          : []),
+      ]
+        .filter(Boolean)
+        .join('\n\n'),
       sourceUrls: family.sourceUrls,
       references: (family.references ?? []).map((reference) => ({
         title: reference.title[lang],

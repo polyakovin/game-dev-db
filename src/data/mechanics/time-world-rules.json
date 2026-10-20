@@ -1,0 +1,403 @@
+{
+  "id": "time-world-rules",
+  "overviewGroupId": "g25",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Время, информация и правила мира",
+    "en": "Time, information and world rules"
+  },
+  "description": {
+    "ru": "Временные и пространственные правила меняют причинность действий; интерфейс должен показывать, какое состояние сохраняется после преобразования.",
+    "en": "Time and space rules change action causality; the interface must show which state survives a transformation."
+  },
+  "intro": {
+    "ru": "Временные и пространственные правила меняют причинность действий; интерфейс должен показывать, какое состояние сохраняется после преобразования. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Time and space rules change action causality; the interface must show which state survives a transformation. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t250",
+      "section": "mechanics",
+      "title": {
+        "ru": "Остановка, замедление и ускорение времени",
+        "en": "Stopping, slowing and accelerating time"
+      },
+      "description": {
+        "ru": "Изменение скорости времени даёт дополнительные возможности анализа и исполнения, но требует определить исключения для всех систем мира.",
+        "en": "Changing time speed creates analysis and execution opportunities, but requires explicit exceptions across world systems."
+      },
+      "example": {
+        "ru": "Снаряд замедляется внутри сферы, позволяя игроку переместить отражатель до его выхода.",
+        "en": "A projectile slows inside a sphere so a reflector can move before it exits."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте таймеры, звук и физику на границе темпов, включая паузу внутри другого замедления.",
+        "en": "Test timers, audio and physics across rate boundaries, including pausing within another slow-motion effect."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t250-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t250-v1",
+              "text": {
+                "ru": "Остановка замораживает мир, сохраняя выбор команды.",
+                "en": "Stopping freezes the world but permits commands."
+              }
+            },
+            {
+              "id": "t250-v2",
+              "text": {
+                "ru": "Замедление расширяет окно реакции игрока.",
+                "en": "Slow motion expands a player's response window."
+              }
+            },
+            {
+              "id": "t250-v3",
+              "text": {
+                "ru": "Ускорение пропускает предсказуемый повтор цикла.",
+                "en": "Fast-forward skips predictable repeated cycles."
+              }
+            },
+            {
+              "id": "t250-v4",
+              "text": {
+                "ru": "Локальное поле меняет темп отдельных объектов.",
+                "en": "Local fields alter the rate of selected objects."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t251",
+      "section": "mechanics",
+      "title": {
+        "ru": "Параллельные временные линии и причинность",
+        "en": "Parallel timelines and causality"
+      },
+      "description": {
+        "ru": "Несколько временных состояний связываются причинным правилом, поэтому действие в одной линии меняет возможности другой.",
+        "en": "Multiple temporal states connect through causal rules, letting actions in one timeline change another's possibilities."
+      },
+      "example": {
+        "ru": "Посаженное в прошлом дерево становится опорой моста в будущем, если землю не затопили.",
+        "en": "A tree planted in the past supports a future bridge unless the ground is flooded."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте смену причинного факта после использования его результата; правило парадокса должно оставаться последовательным.",
+        "en": "Test changing a cause after its result has been used and preserve consistent paradox rules."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t251-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t251-v1",
+              "text": {
+                "ru": "Прошлое меняет устойчивый объект будущего.",
+                "en": "Past actions alter a persistent future object."
+              }
+            },
+            {
+              "id": "t251-v2",
+              "text": {
+                "ru": "Развилка создаёт независимые последствия выбора.",
+                "en": "Branches create independent choice consequences."
+              }
+            },
+            {
+              "id": "t251-v3",
+              "text": {
+                "ru": "Инвариант сохраняет выбранный факт между линиями.",
+                "en": "Invariants preserve selected facts across timelines."
+              }
+            },
+            {
+              "id": "t251-v4",
+              "text": {
+                "ru": "Парадокс имеет заранее определённое разрешение.",
+                "en": "Paradoxes have a predefined resolution rule."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t252",
+      "section": "mechanics",
+      "title": {
+        "ru": "Запись действий, повторы и взаимодействие с копией",
+        "en": "Recorded actions, replays and interacting with copies"
+      },
+      "description": {
+        "ru": "Запись превращает последовательность действий в повторяемого участника, с которым текущий игрок может синхронизировать новые действия.",
+        "en": "Recording turns an action sequence into a repeating participant with whom the current player can coordinate new actions."
+      },
+      "example": {
+        "ru": "Первая запись держит рычаг, пока текущий персонаж переносит груз через открытый шлюз.",
+        "en": "A first recording holds a lever while the current character carries cargo through an open gate."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте расхождение повтора при изменённой геометрии: система должна явно выбрать повтор ввода или готовой траектории.",
+        "en": "Test replay divergence after geometry changes and explicitly choose input replay or stored-trajectory playback."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t252-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t252-v1",
+              "text": {
+                "ru": "Призрак повторяет ввод по общей шкале времени.",
+                "en": "Ghosts replay input on a shared timeline."
+              }
+            },
+            {
+              "id": "t252-v2",
+              "text": {
+                "ru": "Копия сталкивается с изменившимся окружением.",
+                "en": "Copies encounter the changed environment."
+              }
+            },
+            {
+              "id": "t252-v3",
+              "text": {
+                "ru": "Новая запись заменяет ограниченный слот повтора.",
+                "en": "New recordings replace a limited replay slot."
+              }
+            },
+            {
+              "id": "t252-v4",
+              "text": {
+                "ru": "Синхронизация совмещает действия разных попыток.",
+                "en": "Synchronization aligns actions from different attempts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t255",
+      "section": "mechanics",
+      "title": {
+        "ru": "Изменение масштаба, гравитации и системы отсчёта",
+        "en": "Changing scale, gravity and reference frames"
+      },
+      "description": {
+        "ru": "Изменение масштаба или системы отсчёта перестраивает доступные поверхности, расстояния и направления действия сил.",
+        "en": "Changing scale or reference frames reshapes usable surfaces, distances and force directions."
+      },
+      "example": {
+        "ru": "Игрок уменьшает куб для переноса, затем увеличивает его под рычагом в качестве опоры.",
+        "en": "A player shrinks a cube for transport and enlarges it under a lever as support."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте столкновения и скорость на переходе масштаба; единицы интерфейса должны совпадать с выбранным правилом.",
+        "en": "Test collision and velocity across scale transitions and align interface units with the selected rule."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t255-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t255-v1",
+              "text": {
+                "ru": "Уменьшение открывает тесный проход.",
+                "en": "Shrinking opens a narrow passage."
+              }
+            },
+            {
+              "id": "t255-v2",
+              "text": {
+                "ru": "Рост превращает мелкий объект в платформу.",
+                "en": "Growth turns a small object into a platform."
+              }
+            },
+            {
+              "id": "t255-v3",
+              "text": {
+                "ru": "Поворот гравитации меняет роль стены и пола.",
+                "en": "Gravity rotation changes wall and floor roles."
+              }
+            },
+            {
+              "id": "t255-v4",
+              "text": {
+                "ru": "Движущаяся опора задаёт относительную скорость.",
+                "en": "Moving supports define relative velocity."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t256",
+      "section": "mechanics",
+      "title": {
+        "ru": "Порталы, топология и неевклидовы пространства",
+        "en": "Portals, topology and non-Euclidean spaces"
+      },
+      "description": {
+        "ru": "Портал соединяет несоседние области, а необычная топология меняет ожидания маршрута, видимости и возвращения.",
+        "en": "Portals connect nonadjacent regions while unusual topology changes expectations about routes, visibility and returning."
+      },
+      "example": {
+        "ru": "Дверь на балконе ведёт в нижнюю комнату, а окно показывает её с несовместимого обычной геометрии ракурса.",
+        "en": "A balcony door leads downstairs while a window shows that room from an otherwise incompatible angle."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте путь камеры, снаряда и переносимого предмета через соединение, включая последовательные переходы.",
+        "en": "Test camera, projectile and carried-object paths through a connection, including repeated transitions."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t256-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t256-v1",
+              "text": {
+                "ru": "Парный портал сохраняет явную связь входа и выхода.",
+                "en": "Paired portals maintain explicit entry-exit links."
+              }
+            },
+            {
+              "id": "t256-v2",
+              "text": {
+                "ru": "Ориентация выхода преобразует направление движения.",
+                "en": "Exit orientation transforms movement direction."
+              }
+            },
+            {
+              "id": "t256-v3",
+              "text": {
+                "ru": "Зацикленная комната возвращает с новой стороны.",
+                "en": "Looping rooms return travelers from another side."
+              }
+            },
+            {
+              "id": "t256-v4",
+              "text": {
+                "ru": "Односторонняя связь создаёт цену необратимого перехода.",
+                "en": "One-way connections make transitions irreversible."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t257",
+      "section": "mechanics",
+      "title": {
+        "ru": "Изменение правил и метаигра с интерфейсом",
+        "en": "Changing rules and interface metagames"
+      },
+      "description": {
+        "ru": "Игрок меняет действующее правило или использует интерфейс как объект мира, расширяя обычный набор разрешённых преобразований.",
+        "en": "Players change an active rule or treat interface elements as world objects, expanding ordinary permitted transformations."
+      },
+      "example": {
+        "ru": "Замена слова «стена» на «дверь» открывает группу проходов, но одновременно убирает нужную опору.",
+        "en": "Replacing a rule's wall with door opens passages but simultaneously removes a needed support."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте самоприменение правила и способ восстановления после создания состояния без доступных действий.",
+        "en": "Test self-applying rules and recovery after creating a state with no available actions."
+      },
+      "sourceUrls": ["https://www.puzzlescript.net/Documentation/rules.html"],
+      "branches": [
+        {
+          "id": "t257-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t257-v1",
+              "text": {
+                "ru": "Слово правила меняет свойство группы объектов.",
+                "en": "Rule words change properties of an object group."
+              }
+            },
+            {
+              "id": "t257-v2",
+              "text": {
+                "ru": "Перестановка условия меняет способ победы.",
+                "en": "Reordering conditions changes the victory method."
+              }
+            },
+            {
+              "id": "t257-v3",
+              "text": {
+                "ru": "Окно интерфейса становится переносимой геометрией.",
+                "en": "Interface windows become movable geometry."
+              }
+            },
+            {
+              "id": "t257-v4",
+              "text": {
+                "ru": "Изменение правила имеет видимую область действия.",
+                "en": "Rule changes have a visible scope of effect."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "PuzzleScript: Rules",
+        "en": "PuzzleScript: Rules"
+      },
+      "url": "https://www.puzzlescript.net/Documentation/rules.html",
+      "description": {
+        "ru": "Документация автора о преобразовании узоров и состоянии игрового поля.",
+        "en": "The creator’s documentation of pattern replacement and board state."
+      }
+    }
+  ]
+}

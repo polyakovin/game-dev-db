@@ -1,0 +1,415 @@
+{
+  "id": "systemic-worlds",
+  "overviewGroupId": "g26",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Системный мир, случайность и поведение NPC",
+    "en": "Systemic worlds, randomness and NPC behavior"
+  },
+  "description": {
+    "ru": "Системный мир применяет одни правила к нескольким объектам, позволяя игроку прогнозировать новые сочетания по известным взаимодействиям.",
+    "en": "A systemic world applies shared rules to multiple objects so players can predict new combinations from known interactions."
+  },
+  "intro": {
+    "ru": "Системный мир применяет одни правила к нескольким объектам, позволяя игроку прогнозировать новые сочетания по известным взаимодействиям. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "A systemic world applies shared rules to multiple objects so players can predict new combinations from known interactions. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t260",
+      "section": "mechanics",
+      "title": {
+        "ru": "Системные взаимодействия и immersive sim",
+        "en": "Systemic interactions and immersive sims"
+      },
+      "description": {
+        "ru": "Общие свойства объектов порождают несколько способов решить задачу, а игрок переносит знание правила в непредусмотренное сочетание.",
+        "en": "Shared object properties produce several solutions, allowing players to transfer known rules into unanticipated combinations."
+      },
+      "example": {
+        "ru": "Металлический ящик становится проводником, грузом для плиты или подвижным укрытием по общим правилам.",
+        "en": "A metal crate becomes a conductor, pressure-plate weight or movable cover under shared rules."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одно свойство на нескольких классах объектов: визуально одинаковое правило не должно молча иметь разные исключения.",
+        "en": "Test one property across object classes so visually identical rules do not hide inconsistent exceptions."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t260-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t260-v1",
+              "text": {
+                "ru": "Материал определяет реакцию на воздействие.",
+                "en": "Materials determine responses to effects."
+              }
+            },
+            {
+              "id": "t260-v2",
+              "text": {
+                "ru": "Среда передаёт эффект между объектами.",
+                "en": "Environments carry effects between objects."
+              }
+            },
+            {
+              "id": "t260-v3",
+              "text": {
+                "ru": "Инструмент работает вне сюжетно заданной цели.",
+                "en": "Tools work beyond a scripted target."
+              }
+            },
+            {
+              "id": "t260-v4",
+              "text": {
+                "ru": "Последствие сохраняется после ухода игрока.",
+                "en": "Consequences persist after the player leaves."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t262",
+      "section": "mechanics",
+      "title": {
+        "ru": "Физические материалы, деформация и разрушение",
+        "en": "Physical materials, deformation and destruction"
+      },
+      "description": {
+        "ru": "Материал определяет реакцию на силу и повреждение, а изменение формы или разрушение создаёт новую структуру взаимодействий.",
+        "en": "Materials determine responses to force and damage; deformation and destruction create a new interaction structure."
+      },
+      "example": {
+        "ru": "Тонкая панель сгибается и открывает щель, а стеклянная перегородка распадается на отдельные препятствия.",
+        "en": "A thin panel bends open while a glass divider breaks into separate obstacles."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте проходимость и взаимодействие с обломками после сохранения и загрузки разрушенной сцены.",
+        "en": "Test traversal and fragment interactions after saving and loading a destroyed scene."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t262-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t262-v1",
+              "text": {
+                "ru": "Упругость возвращает форму после нагрузки.",
+                "en": "Elasticity restores shape after a load."
+              }
+            },
+            {
+              "id": "t262-v2",
+              "text": {
+                "ru": "Пластичность сохраняет вмятину после контакта.",
+                "en": "Plasticity preserves a dent after contact."
+              }
+            },
+            {
+              "id": "t262-v3",
+              "text": {
+                "ru": "Хрупкость разделяет объект при превышении порога.",
+                "en": "Brittleness splits objects above a threshold."
+              }
+            },
+            {
+              "id": "t262-v4",
+              "text": {
+                "ru": "Фрагменты наследуют выбранные свойства исходника.",
+                "en": "Fragments inherit selected original properties."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t263",
+      "section": "mechanics",
+      "title": {
+        "ru": "Экология, пищевые цепи и восстановление среды",
+        "en": "Ecology, food chains and environmental recovery"
+      },
+      "description": {
+        "ru": "Экосистема связывает доступность пищи, численность видов и состояние среды, позволяя вмешательству распространяться по зависимостям.",
+        "en": "An ecosystem connects food availability, population sizes and environmental conditions, allowing interventions to propagate."
+      },
+      "example": {
+        "ru": "Очистка ручья возвращает насекомых, затем рыбу и питающихся ею птиц по очереди.",
+        "en": "Cleaning a stream brings back insects, then fish and finally birds that feed on them."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте длительный ход симуляции без игрока и объясните упрощения модели вместо обещания реальной экологической точности.",
+        "en": "Test long unattended simulation and explain simplifications rather than claiming real ecological accuracy."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t263-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t263-v1",
+              "text": {
+                "ru": "Хищник ограничивает численность добычи.",
+                "en": "Predators limit prey populations."
+              }
+            },
+            {
+              "id": "t263-v2",
+              "text": {
+                "ru": "Растение восстанавливается при подходящих условиях.",
+                "en": "Plants recover under suitable conditions."
+              }
+            },
+            {
+              "id": "t263-v3",
+              "text": {
+                "ru": "Загрязнение меняет пригодность участка для вида.",
+                "en": "Pollution changes a site's suitability for a species."
+              }
+            },
+            {
+              "id": "t263-v4",
+              "text": {
+                "ru": "Восстановление начинается с устранения причины ущерба.",
+                "en": "Recovery starts by removing the damage source."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t265",
+      "section": "mechanics",
+      "title": {
+        "ru": "Распорядки, потребности и память персонажей",
+        "en": "Character routines, needs and memory"
+      },
+      "description": {
+        "ru": "Распорядок соединяет потребности, доступные места и память событий, создавая объяснимые повседневные маршруты персонажа.",
+        "en": "Routines connect needs, available places and event memory to produce understandable daily character routes."
+      },
+      "example": {
+        "ru": "Мастер идёт за обедом, но после кражи кошелька выбирает более дешёвую столовую.",
+        "en": "A craftsperson goes for lunch but chooses a cheaper canteen after a wallet theft."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте закрытое рабочее место и пропущенную встречу: NPC не должен бесконечно пытаться выполнить недоступное действие.",
+        "en": "Test closed workplaces and missed appointments so NPCs do not endlessly attempt unavailable actions."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t265-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t265-v1",
+              "text": {
+                "ru": "Расписание задаёт ожидаемое место в заданное время.",
+                "en": "Schedules set expected places at specified times."
+              }
+            },
+            {
+              "id": "t265-v2",
+              "text": {
+                "ru": "Потребность прерывает план ради восстановления.",
+                "en": "Needs interrupt plans for recovery."
+              }
+            },
+            {
+              "id": "t265-v3",
+              "text": {
+                "ru": "Память изменяет отношение к знакомому месту.",
+                "en": "Memory changes attitudes toward familiar places."
+              }
+            },
+            {
+              "id": "t265-v4",
+              "text": {
+                "ru": "Недоступность цели вызывает запасной вариант поведения.",
+                "en": "Unavailable destinations trigger fallback behavior."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t266",
+      "section": "mechanics",
+      "title": {
+        "ru": "Обучение существ и дрессировка",
+        "en": "Creature training and taming"
+      },
+      "description": {
+        "ru": "Обучение существа связывает сигнал, действие и последствие, позволяя постепенно закреплять понятный ограниченный набор команд.",
+        "en": "Creature training connects signals, actions and consequences to establish a clear, limited command vocabulary over time."
+      },
+      "example": {
+        "ru": "Существо учится приносить отмеченный предмет, а затем выполняет команду в другой комнате с отвлекающими объектами.",
+        "en": "A creature learns to retrieve a marked object and later attempts it among distractors in another room."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте связь награды с последним действием и отличие отказа, непонимания команды и усталости.",
+        "en": "Test reward attribution to an action and distinguish refusal, misunderstood commands and fatigue."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t266-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t266-v1",
+              "text": {
+                "ru": "Подкрепление повышает вероятность выбранного ответа.",
+                "en": "Reinforcement increases a selected response's likelihood."
+              }
+            },
+            {
+              "id": "t266-v2",
+              "text": {
+                "ru": "Контекст ограничивает перенос освоенной команды.",
+                "en": "Context limits transfer of learned commands."
+              }
+            },
+            {
+              "id": "t266-v3",
+              "text": {
+                "ru": "Доверие открывает более сложное совместное действие.",
+                "en": "Trust unlocks more complex joint actions."
+              }
+            },
+            {
+              "id": "t266-v4",
+              "text": {
+                "ru": "Отдых предотвращает бесконечную непрерывную практику.",
+                "en": "Rest prevents endless uninterrupted practice."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t269",
+      "section": "mechanics",
+      "title": {
+        "ru": "Симуляция общества, популяций и автономных сообществ",
+        "en": "Simulated societies, populations and autonomous communities"
+      },
+      "description": {
+        "ru": "Автономное сообщество распределяет роли и ресурсы без прямого приказа каждому участнику, создавая наблюдаемые коллективные последствия.",
+        "en": "An autonomous community distributes roles and resources without direct commands to each member, producing observable collective outcomes."
+      },
+      "example": {
+        "ru": "Открытие шахты привлекает рабочих, увеличивает спрос на жильё и меняет доступность ремесленников.",
+        "en": "A mine attracts workers, raises housing demand and changes the availability of craftspeople."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте происхождение общего показателя по отдельным действиям агентов; не выдавайте условную симуляцию за прогноз общества.",
+        "en": "Trace aggregate statistics to agent actions and avoid presenting a simplified simulation as a social forecast."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t269-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t269-v1",
+              "text": {
+                "ru": "Правило выбора работы меняет структуру занятости.",
+                "en": "Job-choice rules change employment structure."
+              }
+            },
+            {
+              "id": "t269-v2",
+              "text": {
+                "ru": "Миграция отвечает на различия доступных условий.",
+                "en": "Migration responds to differences in living conditions."
+              }
+            },
+            {
+              "id": "t269-v3",
+              "text": {
+                "ru": "Связи передают сведения между участниками.",
+                "en": "Social links transmit information among members."
+              }
+            },
+            {
+              "id": "t269-v4",
+              "text": {
+                "ru": "Коллективное решение агрегирует разные предпочтения.",
+                "en": "Collective decisions aggregate different preferences."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

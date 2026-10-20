@@ -1,0 +1,601 @@
+{
+  "id": "role-playing-systems",
+  "overviewGroupId": "g06",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Ролевые системы",
+    "en": "Role-playing systems"
+  },
+  "description": {
+    "ru": "Ролевые системы связывают особенности персонажа, состав отряда, снаряжение и последствия решений.",
+    "en": "Role-playing systems connect character identity, party composition, equipment and consequential choices."
+  },
+  "intro": {
+    "ru": "Ролевые системы связывают особенности персонажа, состав отряда, снаряжение и последствия решений. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Role-playing systems connect character identity, party composition, equipment and consequential choices. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t049",
+      "section": "mechanics",
+      "title": {
+        "ru": "Создание персонажа и распределение характеристик",
+        "en": "Character creation and attribute allocation"
+      },
+      "description": {
+        "ru": "Создание персонажа распределяет ограниченный потенциал между способностями и задаёт исходные способы решения задач.",
+        "en": "Character creation allocates limited potential across abilities and establishes initial ways of solving problems."
+      },
+      "example": {
+        "ru": "Слабый в бою архивист получает доступ к библиотеке и распознаёт древние предупреждения.",
+        "en": "An archivist with weak combat skills gains library access and understands ancient warnings."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте стартовые задания для крайних распределений очков, включая персонажа без боевой специализации.",
+        "en": "Test opening quests with extreme allocations, including a character without a combat specialization."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t049-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t049-v1",
+              "text": {
+                "ru": "Очки характеристик требуют взаимного компромисса.",
+                "en": "Attribute points require explicit tradeoffs."
+              }
+            },
+            {
+              "id": "t049-v2",
+              "text": {
+                "ru": "Происхождение меняет начальные связи героя.",
+                "en": "Background changes initial character connections."
+              }
+            },
+            {
+              "id": "t049-v3",
+              "text": {
+                "ru": "Недостаток оплачивает дополнительное преимущество.",
+                "en": "A drawback purchases an additional advantage."
+              }
+            },
+            {
+              "id": "t049-v4",
+              "text": {
+                "ru": "Перераспределение позволяет исправить ранний выбор.",
+                "en": "Respecialization can revise an early choice."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t050",
+      "section": "mechanics",
+      "title": {
+        "ru": "Классы, специализации и смена ролей",
+        "en": "Classes, specializations and role switching"
+      },
+      "description": {
+        "ru": "Класс задаёт доступные действия, специализация меняет акценты, а смена роли перестраивает обязанности персонажа.",
+        "en": "A class defines available actions, specialization changes emphasis and role switching changes responsibilities."
+      },
+      "example": {
+        "ru": "Лекарь перед экспедицией выбирает барьеры вместо восстановления здоровья после попадания.",
+        "en": "A healer prepares barriers instead of restoring health after damage before an expedition."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, меняет ли специализация порядок действий, а не только числовую эффективность одинакового цикла.",
+        "en": "Test whether specialization changes action order rather than only numerical efficiency of the same loop."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t050-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t050-v1",
+              "text": {
+                "ru": "Фиксированный класс сохраняет сильную идентичность.",
+                "en": "A fixed class maintains a strong identity."
+              }
+            },
+            {
+              "id": "t050-v2",
+              "text": {
+                "ru": "Подкласс меняет способ расходования ресурса.",
+                "en": "A subclass changes how its resource is spent."
+              }
+            },
+            {
+              "id": "t050-v3",
+              "text": {
+                "ru": "Смена вне боя позволяет готовиться к задаче.",
+                "en": "Out-of-combat switching enables preparation."
+              }
+            },
+            {
+              "id": "t050-v4",
+              "text": {
+                "ru": "Гибрид получает гибкость ценой глубины.",
+                "en": "A hybrid trades specialization for flexibility."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t051",
+      "section": "mechanics",
+      "title": {
+        "ru": "Билды и синергии способностей",
+        "en": "Builds and ability synergies"
+      },
+      "description": {
+        "ru": "Билд связывает способности, ресурсы и условия срабатывания в повторяемую последовательность взаимного усиления.",
+        "en": "A build connects abilities, resources and triggers into a repeatable sequence of mutually reinforcing actions."
+      },
+      "example": {
+        "ru": "Парирование даёт заряд льда, которым следующий удар создаёт замедляющую область.",
+        "en": "A parry grants frost charge that the next strike spends to create a slowing zone."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте замкнутые циклы ресурсов: сочетание не должно непреднамеренно давать бесконечное бесплатное действие.",
+        "en": "Test closed resource loops so combinations do not accidentally provide infinitely repeated free actions."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t051-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t051-v1",
+              "text": {
+                "ru": "Триггер превращает защиту в источник атаки.",
+                "en": "A trigger turns defense into an attack source."
+              }
+            },
+            {
+              "id": "t051-v2",
+              "text": {
+                "ru": "Порог характеристики открывает новый эффект.",
+                "en": "A stat threshold unlocks an additional effect."
+              }
+            },
+            {
+              "id": "t051-v3",
+              "text": {
+                "ru": "Преобразование меняет тип входящего ресурса.",
+                "en": "Conversion changes the type of an input resource."
+              }
+            },
+            {
+              "id": "t051-v4",
+              "text": {
+                "ru": "Антисинергия запрещает совместное усиление.",
+                "en": "An anti-synergy prevents combined amplification."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t052",
+      "section": "mechanics",
+      "title": {
+        "ru": "Партийные роли и состав отряда",
+        "en": "Party roles and team composition"
+      },
+      "description": {
+        "ru": "Состав группы распределяет необходимые функции между персонажами и определяет взаимное прикрытие в бою и исследовании.",
+        "en": "Party composition distributes functions among characters and determines mutual support in combat and exploration."
+      },
+      "example": {
+        "ru": "Разведчик отмечает ловушки, защитник держит проход, а инженер открывает боковой путь.",
+        "en": "A scout marks traps, a defender holds a passage and an engineer opens a side route."
+      },
+      "prototypeCheck": {
+        "ru": "Уберите одного специалиста и проверьте альтернативное решение, если состав группы не задан жёстко.",
+        "en": "Remove one specialist and test alternative solutions when the party composition is not mandatory."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t052-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t052-v1",
+              "text": {
+                "ru": "Роли дополняют слабые стороны союзников.",
+                "en": "Roles cover weaknesses of other party members."
+              }
+            },
+            {
+              "id": "t052-v2",
+              "text": {
+                "ru": "Резерв меняет состав между столкновениями.",
+                "en": "Reserves change the roster between encounters."
+              }
+            },
+            {
+              "id": "t052-v3",
+              "text": {
+                "ru": "Связка требует двух последовательных действий.",
+                "en": "A combination requires two coordinated actions."
+              }
+            },
+            {
+              "id": "t052-v4",
+              "text": {
+                "ru": "Универсал страхует отсутствие специалиста.",
+                "en": "A generalist covers for an absent specialist."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t053",
+      "section": "mechanics",
+      "title": {
+        "ru": "Снаряжение, аффиксы и наборы предметов",
+        "en": "Equipment, affixes and item sets"
+      },
+      "description": {
+        "ru": "Снаряжение изменяет доступные свойства персонажа, а аффиксы и наборы связывают выбор вещей с поведением в игре.",
+        "en": "Equipment changes character properties, while affixes and sets connect item selection to actual behavior."
+      },
+      "example": {
+        "ru": "Лёгкие сапоги усиливают выход из уклонения, но полный комплект лишает героя тяжёлого щита.",
+        "en": "Light boots improve attacks after dodging, but the full set rules out a heavy shield."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сравнение предметов: игрок должен видеть, какое условие активирует бонус и чем оплачивается замена.",
+        "en": "Test item comparisons: players should see a bonus trigger and the cost of replacing equipment."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t053-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t053-v1",
+              "text": {
+                "ru": "Аффикс усиливается при конкретном условии.",
+                "en": "An affix grows stronger under a stated condition."
+              }
+            },
+            {
+              "id": "t053-v2",
+              "text": {
+                "ru": "Набор меняет правило после сбора частей.",
+                "en": "A set changes a rule after enough pieces are worn."
+              }
+            },
+            {
+              "id": "t053-v3",
+              "text": {
+                "ru": "Вес ограничивает сочетание тяжёлых вещей.",
+                "en": "Weight limits combinations of heavy equipment."
+              }
+            },
+            {
+              "id": "t053-v4",
+              "text": {
+                "ru": "Замена свойства сохраняет ценную основу.",
+                "en": "Replacing a property preserves a valuable item base."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t054",
+      "section": "mechanics",
+      "title": {
+        "ru": "Статусы, стихии и сопротивления",
+        "en": "Status effects, elements and resistances"
+      },
+      "description": {
+        "ru": "Статус временно меняет правила действия, стихия связывает взаимодействия, а сопротивление ограничивает эффект.",
+        "en": "A status temporarily changes action rules, an element connects interactions and resistance limits their effects."
+      },
+      "example": {
+        "ru": "Мокрая броня проводит разряд между целями, но изолирующая обувь разрывает цепь.",
+        "en": "Wet armor conducts a discharge between targets, while insulating footwear breaks the chain."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте порядок применения стихий и объяснение иммунитета, включая повторное наложение уже активного статуса.",
+        "en": "Test elemental application order and immunity feedback, including reapplying an already active status."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t054-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t054-v1",
+              "text": {
+                "ru": "Накопление доводит воздействие до порога.",
+                "en": "Buildup brings an effect toward a threshold."
+              }
+            },
+            {
+              "id": "t054-v2",
+              "text": {
+                "ru": "Рассеивание снимает выбранное состояние.",
+                "en": "Dispelling removes a chosen status condition."
+              }
+            },
+            {
+              "id": "t054-v3",
+              "text": {
+                "ru": "Реакция стихий создаёт новый эффект.",
+                "en": "An elemental reaction creates another effect."
+              }
+            },
+            {
+              "id": "t054-v4",
+              "text": {
+                "ru": "Убывание длительности ограничивает цепочку контроля.",
+                "en": "Diminishing duration limits repeated crowd control."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t055",
+      "section": "mechanics",
+      "title": {
+        "ru": "Развитие навыков через использование",
+        "en": "Learning skills through use"
+      },
+      "description": {
+        "ru": "Навык развивается от подходящего использования; игрок выбирает практику, которая одновременно решает текущую задачу.",
+        "en": "A skill improves through relevant use, letting players practice while also addressing a current objective."
+      },
+      "example": {
+        "ru": "Вскрытие новых типов замков развивает ремесло лучше бесконечного открытия одного простого ящика.",
+        "en": "Opening new lock types improves the craft more than repeatedly reopening one easy box."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, не выгоднее ли бессмысленное повторение безопасного действия вместо применения навыка по назначению.",
+        "en": "Test whether meaningless safe repetition outperforms applying the skill to its intended challenges."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t055-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t055-v1",
+              "text": {
+                "ru": "Успешное действие начисляет опыт навыка.",
+                "en": "A successful action grants skill experience."
+              }
+            },
+            {
+              "id": "t055-v2",
+              "text": {
+                "ru": "Новая ситуация даёт больше старого повтора.",
+                "en": "A novel situation gives more than rote repetition."
+              }
+            },
+            {
+              "id": "t055-v3",
+              "text": {
+                "ru": "Наставник открывает следующий предел роста.",
+                "en": "A mentor unlocks the next development ceiling."
+              }
+            },
+            {
+              "id": "t055-v4",
+              "text": {
+                "ru": "Перенос практики поддерживает родственные умения.",
+                "en": "Practice transfers to related abilities."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t057",
+      "section": "mechanics",
+      "title": {
+        "ru": "Репутация, фракции и мировоззрение",
+        "en": "Reputation, factions and alignment"
+      },
+      "description": {
+        "ru": "Репутация хранит отношение сообществ к поступкам героя и меняет доступ к услугам, заданиям и поддержке.",
+        "en": "Reputation stores how communities view the character's actions and changes access to services, quests and support."
+      },
+      "example": {
+        "ru": "Спасение контрабандиста открывает тайный причал, но ухудшает отношения с портовой стражей.",
+        "en": "Rescuing a smuggler opens a secret pier but harms relations with the harbor watch."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, видна ли связь между поступком и реакцией фракции, особенно при отложенном распространении слуха.",
+        "en": "Test whether actions visibly explain faction reactions, especially when rumors spread after a delay."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t057-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t057-v1",
+              "text": {
+                "ru": "Фракции по-разному оценивают один поступок.",
+                "en": "Factions evaluate the same action differently."
+              }
+            },
+            {
+              "id": "t057-v2",
+              "text": {
+                "ru": "Свидетель определяет распространение сведений.",
+                "en": "Witnesses determine how information spreads."
+              }
+            },
+            {
+              "id": "t057-v3",
+              "text": {
+                "ru": "Прощение требует отдельного исправления вреда.",
+                "en": "Forgiveness requires repairing specific harm."
+              }
+            },
+            {
+              "id": "t057-v4",
+              "text": {
+                "ru": "Локальная известность не равна мировой славе.",
+                "en": "Local recognition differs from worldwide fame."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t058",
+      "section": "mechanics",
+      "title": {
+        "ru": "Квесты, контракты и последствия решений",
+        "en": "Quests, contracts and consequences"
+      },
+      "description": {
+        "ru": "Задание задаёт обязательство и условия завершения, а последствия сохраняют различия между способами выполнения.",
+        "en": "A quest defines a commitment and completion conditions, while consequences preserve differences between solutions."
+      },
+      "example": {
+        "ru": "Доставку лекарства можно завершить для заказчика или отдать груз заболевшей деревне по пути.",
+        "en": "Medicine can reach the paying client or be given to a sick village encountered on the route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте завершение задания после гибели важного NPC и при получении нужного предмета до принятия заказа.",
+        "en": "Test quest completion after an important NPC dies and when the required item is obtained before acceptance."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t058-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t058-v1",
+              "text": {
+                "ru": "Альтернатива позволяет выполнить цель без боя.",
+                "en": "Alternatives allow completing an objective without combat."
+              }
+            },
+            {
+              "id": "t058-v2",
+              "text": {
+                "ru": "Срок изменяет ситуацию при промедлении.",
+                "en": "A deadline changes the situation after a delay."
+              }
+            },
+            {
+              "id": "t058-v3",
+              "text": {
+                "ru": "Конфликт заказов требует выбрать обязательство.",
+                "en": "Conflicting jobs force a commitment choice."
+              }
+            },
+            {
+              "id": "t058-v4",
+              "text": {
+                "ru": "Последствие меняет мир после выдачи награды.",
+                "en": "Consequences change the world after payment."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

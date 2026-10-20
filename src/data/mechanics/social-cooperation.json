@@ -1,0 +1,477 @@
+{
+  "id": "social-cooperation",
+  "overviewGroupId": "g20",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Социальные отношения и совместная игра",
+    "en": "Social relationships and shared play"
+  },
+  "description": {
+    "ru": "Социальные механики связывают разные возможности участников через заботу, доверие, координацию и конфликт обязательств.",
+    "en": "Social mechanics connect participants’ different capabilities through care, trust, coordination and conflicting commitments."
+  },
+  "intro": {
+    "ru": "Социальные механики связывают разные возможности участников через заботу, доверие, координацию и конфликт обязательств. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Social mechanics connect participants’ different capabilities through care, trust, coordination and conflicting commitments. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t200",
+      "section": "mechanics",
+      "title": {
+        "ru": "Забота о питомцах и зависимых персонажах",
+        "en": "Caring for pets and dependent characters"
+      },
+      "description": {
+        "ru": "Забота отслеживает потребности зависимого персонажа и превращает наблюдение за его сигналами в выбор подходящего действия.",
+        "en": "Care tracks a dependent character's needs and turns observing its signals into choosing suitable actions."
+      },
+      "example": {
+        "ru": "Питомец отказывается играть из-за усталости, поэтому новая игрушка не заменяет отдых.",
+        "en": "A tired pet refuses to play, so a new toy cannot substitute for rest."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понятна ли причина отказа и можно ли закончить сессию без неожиданного наказания зависимого персонажа.",
+        "en": "Test understandable refusal reasons and ending a session without unexpectedly penalizing the dependent character."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t200-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t200-v1",
+              "text": {
+                "ru": "Сигнал различает голод, усталость и скуку.",
+                "en": "Signals distinguish hunger, fatigue and boredom."
+              }
+            },
+            {
+              "id": "t200-v2",
+              "text": {
+                "ru": "Привычка связывает уход с устойчивым расписанием.",
+                "en": "Routines connect care to a stable schedule."
+              }
+            },
+            {
+              "id": "t200-v3",
+              "text": {
+                "ru": "Предпочтение меняет подходящую форму заботы.",
+                "en": "Preferences change the appropriate form of care."
+              }
+            },
+            {
+              "id": "t200-v4",
+              "text": {
+                "ru": "Самостоятельность постепенно уменьшает обязательный контроль.",
+                "en": "Growing independence reduces mandatory supervision."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t204",
+      "section": "mechanics",
+      "title": {
+        "ru": "Асимметричные роли и способности",
+        "en": "Asymmetric roles and abilities"
+      },
+      "description": {
+        "ru": "Разные роли получают несовпадающие действия и информацию, создавая зависимость от вклада другого участника.",
+        "en": "Different roles receive distinct actions and information, making progress depend on another participant's contribution."
+      },
+      "example": {
+        "ru": "Диспетчер меняет мосты на карте, пока пилот сообщает о невидимых диспетчеру препятствиях.",
+        "en": "A dispatcher changes bridges on a map while a pilot reports obstacles invisible to the dispatcher."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте полезную занятость обеих ролей на каждом этапе, включая момент ошибки одного участника.",
+        "en": "Test useful activity for both roles at every stage, including when one participant makes an error."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t204-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t204-v1",
+              "text": {
+                "ru": "Оператор видит карту, исполнитель видит препятствие.",
+                "en": "Operators see maps while agents see obstacles."
+              }
+            },
+            {
+              "id": "t204-v2",
+              "text": {
+                "ru": "Сильная роль создаёт путь для точной роли.",
+                "en": "A powerful role creates a route for a precise role."
+              }
+            },
+            {
+              "id": "t204-v3",
+              "text": {
+                "ru": "Смена ролей позволяет освоить обе перспективы.",
+                "en": "Role swaps teach both viewpoints."
+              }
+            },
+            {
+              "id": "t204-v4",
+              "text": {
+                "ru": "Самостоятельная подзадача сохраняет занятость ожидающего.",
+                "en": "Independent subtasks occupy a waiting participant."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t206",
+      "section": "mechanics",
+      "title": {
+        "ru": "Спасение, поддержка и распределение ответственности",
+        "en": "Rescue, support and shared responsibility"
+      },
+      "description": {
+        "ru": "Поддержка меняет возможности союзника, а спасение требует перераспределить риск и время всей группы.",
+        "en": "Support changes an ally's capabilities while rescue redistributes risk and time across the group."
+      },
+      "example": {
+        "ru": "Один участник несёт раненого, второй открывает двери, третий отвлекает преследователя.",
+        "en": "One participant carries an injured ally, another opens doors and a third distracts a pursuer."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, может ли пострадавший сохранять полезное участие или быстро вернуться в игру после неудачного спасения.",
+        "en": "Test useful participation or a timely return to play after an unsuccessful rescue."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t206-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t206-v1",
+              "text": {
+                "ru": "Подъём требует непрерывного безопасного контакта.",
+                "en": "Reviving requires uninterrupted safe contact."
+              }
+            },
+            {
+              "id": "t206-v2",
+              "text": {
+                "ru": "Прикрытие открывает путь к пострадавшему.",
+                "en": "Covering fire opens a path to a downed ally."
+              }
+            },
+            {
+              "id": "t206-v3",
+              "text": {
+                "ru": "Передача ресурса меняет личный запас поддержки.",
+                "en": "Resource transfers change personal support reserves."
+              }
+            },
+            {
+              "id": "t206-v4",
+              "text": {
+                "ru": "Эвакуация ограничивает скорость и доступные действия.",
+                "en": "Evacuation limits speed and available actions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t207",
+      "section": "mechanics",
+      "title": {
+        "ru": "Предательство, коалиции и временные союзы",
+        "en": "Betrayal, coalitions and temporary alliances"
+      },
+      "description": {
+        "ru": "Временный союз объединяет интересы до определённого условия, после которого участник может изменить обязательства ради личной цели.",
+        "en": "Temporary alliances align interests until a condition changes, allowing participants to revise commitments for personal goals."
+      },
+      "example": {
+        "ru": "Соперники вместе открывают хранилище, но заранее договариваются о моменте свободного раздела добычи.",
+        "en": "Rivals open a vault together and agree beforehand when unrestricted loot division begins."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, известна ли возможность предательства до начала партии и есть ли у обманутого осмысленный ответ.",
+        "en": "Test that betrayal is known to be possible before play and that a betrayed player retains meaningful responses."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t207-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t207-v1",
+              "text": {
+                "ru": "Общая угроза делает сотрудничество выгодным.",
+                "en": "Shared threats make cooperation advantageous."
+              }
+            },
+            {
+              "id": "t207-v2",
+              "text": {
+                "ru": "Скрытая цель создаёт расхождение интересов.",
+                "en": "Hidden goals create divergent interests."
+              }
+            },
+            {
+              "id": "t207-v3",
+              "text": {
+                "ru": "Договор ограничивает допустимый момент выхода.",
+                "en": "Agreements limit when a participant may leave."
+              }
+            },
+            {
+              "id": "t207-v4",
+              "text": {
+                "ru": "Репутация переносит последствия измены в следующую встречу.",
+                "en": "Reputation carries betrayal consequences forward."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t198",
+      "section": "mechanics",
+      "title": {
+        "ru": "Социальные симуляторы и повседневная жизнь",
+        "en": "Social simulations and everyday life"
+      },
+      "description": {
+        "ru": "Повседневная симуляция связывает расписание, потребности, работу и отношения, позволяя игроку самостоятельно выбирать приоритеты жизни персонажа.",
+        "en": "Everyday-life simulation connects routines, needs, work and relationships while players choose the character's life priorities."
+      },
+      "example": {
+        "ru": "Персонаж выбирает встречу с другом вместо дополнительной смены, откладывая покупку мебели.",
+        "en": "A character visits a friend instead of working an extra shift and delays buying furniture."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте несколько устойчивых распорядков с разными приоритетами, чтобы одна обязательная последовательность не вытесняла выбор.",
+        "en": "Test viable routines with different priorities so one mandatory sequence does not eliminate choice."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t198-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t198-v1",
+              "text": {
+                "ru": "Расписание ограничивает число совместимых дел дня.",
+                "en": "Schedules limit compatible daily activities."
+              }
+            },
+            {
+              "id": "t198-v2",
+              "text": {
+                "ru": "Работа приносит ресурс ценой свободного времени.",
+                "en": "Work produces resources at a free-time cost."
+              }
+            },
+            {
+              "id": "t198-v3",
+              "text": {
+                "ru": "Отношение меняется по истории совместных действий.",
+                "en": "Relationships change through shared history."
+              }
+            },
+            {
+              "id": "t198-v4",
+              "text": {
+                "ru": "Дом отражает выбранный способ повседневной жизни.",
+                "en": "Homes reflect a chosen everyday lifestyle."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t202",
+      "section": "mechanics",
+      "title": {
+        "ru": "Социальная дедукция и скрытые роли",
+        "en": "Social deduction and hidden roles"
+      },
+      "description": {
+        "ru": "Скрытые роли дают участникам разные знания и цели, а обсуждение позволяет сопоставлять заявления с наблюдаемыми поступками.",
+        "en": "Hidden roles give participants different knowledge and goals, while discussion compares statements with observed actions."
+      },
+      "example": {
+        "ru": "Участник заявляет, что охранял дверь, но общедоступный журнал фиксирует его в другом секторе.",
+        "en": "A participant claims to have guarded a door while a public log places them elsewhere."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, дают ли наблюдения основания для вывода, а не только случайное обвинение, включая полезность роли после выбывания.",
+        "en": "Test evidential grounds beyond random accusations and useful participation after elimination."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t202-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t202-v1",
+              "text": {
+                "ru": "Ночная фаза скрывает источник отдельного действия.",
+                "en": "Night phases conceal the source of an action."
+              }
+            },
+            {
+              "id": "t202-v2",
+              "text": {
+                "ru": "Публичное голосование фиксирует групповую версию.",
+                "en": "Public votes commit the group to a hypothesis."
+              }
+            },
+            {
+              "id": "t202-v3",
+              "text": {
+                "ru": "Частная способность даёт проверяемый фрагмент знания.",
+                "en": "Private abilities provide testable information fragments."
+              }
+            },
+            {
+              "id": "t202-v4",
+              "text": {
+                "ru": "Блеф предлагает объяснение, совместимое с частью фактов.",
+                "en": "Bluffs explain part of the observed evidence."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t208",
+      "section": "mechanics",
+      "title": {
+        "ru": "Party games, викторины и коллективное угадывание",
+        "en": "Party games, trivia and collective guessing"
+      },
+      "description": {
+        "ru": "Короткие коллективные раунды распределяют право ответа, подсказки и оценку, поддерживая участие людей с разным уровнем знакомства с игрой.",
+        "en": "Short group rounds distribute answers, clues and scoring while supporting participants with different levels of familiarity."
+      },
+      "example": {
+        "ru": "Команда собирает ответ из трёх подсказок, каждая из которых видна только одному участнику.",
+        "en": "A team assembles an answer from three clues, each visible to only one participant."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте длительность ожидания и возможность участия без быстрого чтения, особенно для последнего отвечающего.",
+        "en": "Test waiting time and participation without fast reading, especially for the final respondent."
+      },
+      "sourceUrls": [
+        "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown"
+      ],
+      "branches": [
+        {
+          "id": "t208-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t208-v1",
+              "text": {
+                "ru": "Викторина проверяет ответ с явным источником решения.",
+                "en": "Trivia checks answers against an explicit solution source."
+              }
+            },
+            {
+              "id": "t208-v2",
+              "text": {
+                "ru": "Угадывание ограничивает словарь подсказки.",
+                "en": "Guessing restricts the clue vocabulary."
+              }
+            },
+            {
+              "id": "t208-v3",
+              "text": {
+                "ru": "Голосование выбирает наиболее подходящее предложение.",
+                "en": "Voting selects the most fitting proposal."
+              }
+            },
+            {
+              "id": "t208-v4",
+              "text": {
+                "ru": "Командный раунд объединяет раздельные фрагменты знания.",
+                "en": "Team rounds combine separate knowledge fragments."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Robert Nystrom: State",
+        "en": "Robert Nystrom: State"
+      },
+      "url": "https://github.com/munificent/game-programming-patterns/blob/master/book/state.markdown",
+      "description": {
+        "ru": "Первичный текст автора о состояниях и переходах; контекст реализации правил, не подтверждение всех авторских вариантов.",
+        "en": "The author’s original discussion of states and transitions; rule implementation context, not evidence for every editorial variant."
+      }
+    }
+  ]
+}

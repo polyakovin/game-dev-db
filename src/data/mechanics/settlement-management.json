@@ -1,0 +1,643 @@
+{
+  "id": "settlement-management",
+  "overviewGroupId": "g11",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Управление организациями и поселениями",
+    "en": "Organization and settlement management"
+  },
+  "description": {
+    "ru": "Управление организацией распределяет пространство, время, персонал и услуги между конкурирующими потребностями.",
+    "en": "Organization management allocates space, time, staff and services among competing needs."
+  },
+  "intro": {
+    "ru": "Управление организацией распределяет пространство, время, персонал и услуги между конкурирующими потребностями. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Organization management allocates space, time, staff and services among competing needs. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t097",
+      "section": "mechanics",
+      "title": {
+        "ru": "Градостроительство",
+        "en": "City building"
+      },
+      "description": {
+        "ru": "Градостроительство соединяет размещение жилья, рабочих мест и услуг с потоками жителей и устойчивостью поселения.",
+        "en": "City building connects homes, jobs and services through resident flows and settlement resilience."
+      },
+      "example": {
+        "ru": "Новый квартал даёт рабочих, но перегружает единственный мост к производству.",
+        "en": "A new district supplies workers but overloads the only bridge to the industrial area."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте путь жителя от дома к услуге: геометрическая близость не должна заменять реальную доступность.",
+        "en": "Test a resident's actual service route so geometric proximity does not substitute for reachable access."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t097-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t097-v1",
+              "text": {
+                "ru": "Плотность повышает спрос на общую инфраструктуру.",
+                "en": "Density increases demand on shared infrastructure."
+              }
+            },
+            {
+              "id": "t097-v2",
+              "text": {
+                "ru": "Дорога меняет доступность участка для жителей.",
+                "en": "Roads change how residents reach a plot."
+              }
+            },
+            {
+              "id": "t097-v3",
+              "text": {
+                "ru": "Служба покрывает ограниченный радиус или маршрут.",
+                "en": "Services cover a limited radius or travel route."
+              }
+            },
+            {
+              "id": "t097-v4",
+              "text": {
+                "ru": "Рост населения открывает новый тип потребности.",
+                "en": "Population growth introduces a new type of need."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t098",
+      "section": "mechanics",
+      "title": {
+        "ru": "Колонии и управление поселенцами",
+        "en": "Colonies and colonist management"
+      },
+      "description": {
+        "ru": "Колония связывает индивидуальные потребности и навыки поселенцев с общей очередью работ и ограниченными запасами.",
+        "en": "A colony connects individual colonist needs and skills to shared work queues and limited supplies."
+      },
+      "example": {
+        "ru": "Лучший строитель заболел, и игрок откладывает расширение ради утепления лазарета.",
+        "en": "The best builder falls ill and expansion is postponed to insulate the infirmary."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, объясняет ли назначение работы нехватку навыка, недоступный материал и конкурирующий приоритет.",
+        "en": "Test that job assignment explains missing skills, inaccessible materials and competing priorities."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t098-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t098-v1",
+              "text": {
+                "ru": "Приоритет распределяет исполнителей между задачами.",
+                "en": "Priorities distribute workers between tasks."
+              }
+            },
+            {
+              "id": "t098-v2",
+              "text": {
+                "ru": "Навык меняет скорость и качество работы.",
+                "en": "Skills change work speed and output quality."
+              }
+            },
+            {
+              "id": "t098-v3",
+              "text": {
+                "ru": "Личное состояние прерывает общий производственный план.",
+                "en": "Personal conditions interrupt shared production plans."
+              }
+            },
+            {
+              "id": "t098-v4",
+              "text": {
+                "ru": "Зона допуска ограничивает опасное назначение.",
+                "en": "Access zones restrict dangerous assignments."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t099",
+      "section": "mechanics",
+      "title": {
+        "ru": "Предприятия и tycoon",
+        "en": "Businesses and tycoon games"
+      },
+      "description": {
+        "ru": "Предприятие превращает вложения, мощности и обслуживание клиентов в выручку, которую игрок возвращает в развитие.",
+        "en": "A business turns investment, capacity and customer service into revenue that funds further development."
+      },
+      "example": {
+        "ru": "Небольшая пекарня покупает вторую печь, но сталкивается с нехваткой продавцов.",
+        "en": "A small bakery buys another oven and then faces a shortage of counter staff."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте прибыльность при неполной загрузке, включая оплату простаивающего оборудования и персонала.",
+        "en": "Test profitability below full capacity, including idle equipment and staff costs."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t099-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t099-v1",
+              "text": {
+                "ru": "Цена меняет поток и ожидания клиента.",
+                "en": "Price changes customer flow and expectations."
+              }
+            },
+            {
+              "id": "t099-v2",
+              "text": {
+                "ru": "Мощность ограничивает число выполненных заказов.",
+                "en": "Capacity limits the number of completed orders."
+              }
+            },
+            {
+              "id": "t099-v3",
+              "text": {
+                "ru": "Репутация влияет на будущий спрос.",
+                "en": "Reputation affects future customer demand."
+              }
+            },
+            {
+              "id": "t099-v4",
+              "text": {
+                "ru": "Расширение увеличивает постоянные расходы.",
+                "en": "Expansion increases recurring operating costs."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t100",
+      "section": "mechanics",
+      "title": {
+        "ru": "Парки развлечений, зоопарки и аттракционы",
+        "en": "Theme parks, zoos and attractions"
+      },
+      "description": {
+        "ru": "Парк согласует привлекательность объектов с маршрутами, очередями, обслуживанием и потребностями посетителей или животных.",
+        "en": "A park aligns attraction appeal with paths, queues, maintenance and visitor or animal needs."
+      },
+      "example": {
+        "ru": "Популярный аттракцион загружает соседнюю дорожку и мешает проходу к тихой зоне животных.",
+        "en": "A popular ride crowds a nearby path and blocks access to a quiet animal area."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте весь путь посетителя и обслуживания, включая часы пик и временное закрытие главной дорожки.",
+        "en": "Test visitor and service routes during peak hours and temporary closure of a main path."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t100-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t100-v1",
+              "text": {
+                "ru": "Привлекательность перераспределяет поток посетителей.",
+                "en": "Appeal redistributes the visitor flow."
+              }
+            },
+            {
+              "id": "t100-v2",
+              "text": {
+                "ru": "Очередь занимает место и снижает терпение.",
+                "en": "Queues occupy space and consume patience."
+              }
+            },
+            {
+              "id": "t100-v3",
+              "text": {
+                "ru": "Содержание предотвращает остановку объекта.",
+                "en": "Maintenance prevents attraction downtime."
+              }
+            },
+            {
+              "id": "t100-v4",
+              "text": {
+                "ru": "Среда обитания требует совместимых условий.",
+                "en": "Habitats require compatible environmental conditions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t101",
+      "section": "mechanics",
+      "title": {
+        "ru": "Больницы, школы и общественные службы",
+        "en": "Hospitals, schools and public services"
+      },
+      "description": {
+        "ru": "Общественная служба распределяет ограниченную пропускную способность по обращениям с разной срочностью и длительностью обработки.",
+        "en": "A public service allocates limited capacity among requests with different urgency and processing duration."
+      },
+      "example": {
+        "ru": "Игровая клиника направляет сложный случай в лабораторию, которая уже перегружена обычными анализами.",
+        "en": "A game clinic refers a complex case to a laboratory already crowded with routine tests."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, не скрывает ли среднее время обслуживания критические задержки одной категории обращений.",
+        "en": "Test whether average service time hides critical delays for one request category."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t101-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t101-v1",
+              "text": {
+                "ru": "Триаж задаёт приоритет по срочности случая.",
+                "en": "Triage prioritizes cases by urgency."
+              }
+            },
+            {
+              "id": "t101-v2",
+              "text": {
+                "ru": "Специализация ограничивает доступные процедуры.",
+                "en": "Specialization limits available procedures."
+              }
+            },
+            {
+              "id": "t101-v3",
+              "text": {
+                "ru": "Направление переводит клиента между службами.",
+                "en": "Referrals move clients between services."
+              }
+            },
+            {
+              "id": "t101-v4",
+              "text": {
+                "ru": "Покрытие района меняет доступ к помощи.",
+                "en": "District coverage changes access to assistance."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t102",
+      "section": "mechanics",
+      "title": {
+        "ru": "Расписания, очереди и обслуживание",
+        "en": "Schedules, queues and service"
+      },
+      "description": {
+        "ru": "Очереди связывают момент поступления задачи с доступностью исполнителя; расписание заранее распределяет ограниченные интервалы.",
+        "en": "Queues connect task arrivals to worker availability; scheduling allocates limited time slots in advance."
+      },
+      "example": {
+        "ru": "Ремонтная мастерская оставляет свободный интервал между плановыми заказами для срочной поломки.",
+        "en": "A repair shop leaves a gap between planned bookings for an urgent breakdown."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте голодание низкого приоритета и обработку отмены записи с освобождением зарезервированного интервала.",
+        "en": "Test low-priority starvation and cancellation that correctly releases a reserved time slot."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t102-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t102-v1",
+              "text": {
+                "ru": "Живая очередь сохраняет порядок поступления.",
+                "en": "Arrival queues preserve request order."
+              }
+            },
+            {
+              "id": "t102-v2",
+              "text": {
+                "ru": "Запись резервирует время до появления клиента.",
+                "en": "Appointments reserve time before a client arrives."
+              }
+            },
+            {
+              "id": "t102-v3",
+              "text": {
+                "ru": "Приоритетная линия обслуживает срочные задачи.",
+                "en": "Priority lanes serve urgent requests."
+              }
+            },
+            {
+              "id": "t102-v4",
+              "text": {
+                "ru": "Переключение требует времени переналадки.",
+                "en": "Switching tasks requires setup time."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t103",
+      "section": "mechanics",
+      "title": {
+        "ru": "Персонал, квалификация и делегирование",
+        "en": "Staff, skills and delegation"
+      },
+      "description": {
+        "ru": "Персонал выполняет делегированные задачи по навыкам, доступному времени и полномочиям, снижая потребность в ручных приказах.",
+        "en": "Staff perform delegated work according to skill, time and authority, reducing the need for manual orders."
+      },
+      "example": {
+        "ru": "Опытный механик получает право заказывать запчасти, пока новичок выполняет плановое обслуживание.",
+        "en": "An experienced mechanic orders parts independently while a trainee handles routine maintenance."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте объяснение автоматического выбора исполнителя и возможность отменить ошибочное делегирование.",
+        "en": "Test explanations for automatic worker selection and the ability to override an unsuitable assignment."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t103-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t103-v1",
+              "text": {
+                "ru": "Квалификация открывает особый тип задания.",
+                "en": "Qualifications unlock particular task types."
+              }
+            },
+            {
+              "id": "t103-v2",
+              "text": {
+                "ru": "Смена ограничивает доступность исполнителя.",
+                "en": "Shifts limit worker availability."
+              }
+            },
+            {
+              "id": "t103-v3",
+              "text": {
+                "ru": "Обучение расходует время ради будущей скорости.",
+                "en": "Training spends time for future efficiency."
+              }
+            },
+            {
+              "id": "t103-v4",
+              "text": {
+                "ru": "Полномочие разрешает самостоятельную закупку.",
+                "en": "Authority permits independent purchasing decisions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t104",
+      "section": "mechanics",
+      "title": {
+        "ru": "Потребности, удовлетворённость и конфликты жителей",
+        "en": "Resident needs, satisfaction and conflict"
+      },
+      "description": {
+        "ru": "Потребности жителей конкурируют за услуги и пространство, а неудовлетворённость меняет их поведение и отношение к управлению.",
+        "en": "Resident needs compete for services and space, while unmet needs change behavior and attitudes toward management."
+      },
+      "example": {
+        "ru": "Ночная мастерская улучшает занятость, но жители соседнего дома требуют снизить шум.",
+        "en": "A night workshop improves employment while nearby residents ask for less noise."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, можно ли проследить общую оценку удовлетворённости до конкретной потребности и доступного решения.",
+        "en": "Test whether satisfaction scores lead back to a specific unmet need and an actionable response."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t104-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t104-v1",
+              "text": {
+                "ru": "Порог потребности запускает поиск услуги.",
+                "en": "Need thresholds trigger a service search."
+              }
+            },
+            {
+              "id": "t104-v2",
+              "text": {
+                "ru": "Группа ценит отличающийся набор условий.",
+                "en": "Groups value different sets of conditions."
+              }
+            },
+            {
+              "id": "t104-v3",
+              "text": {
+                "ru": "Конфликт связывает выгоду одних с потерей других.",
+                "en": "Conflicts connect one group's gain to another's loss."
+              }
+            },
+            {
+              "id": "t104-v4",
+              "text": {
+                "ru": "Обратная связь показывает конкретную причину недовольства.",
+                "en": "Feedback names specific dissatisfaction causes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t105",
+      "section": "mechanics",
+      "title": {
+        "ru": "Инфраструктура, зонирование и соседство",
+        "en": "Infrastructure, zoning and adjacency"
+      },
+      "description": {
+        "ru": "Инфраструктура соединяет участки потоками, а зонирование и соседство определяют совместимость размещённых функций.",
+        "en": "Infrastructure connects plots through flows, while zoning and adjacency determine functional compatibility."
+      },
+      "example": {
+        "ru": "Школа рядом с жильём доступна пешком, но грузовой въезд фабрики пересекает её основной путь.",
+        "en": "A school is walkable from housing, but a factory freight entrance crosses the main school route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте непрерывность сетей после перестройки участка и объяснение отрицательного соседства.",
+        "en": "Test network continuity after redeveloping a plot and clear explanations for negative adjacency."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t105-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t105-v1",
+              "text": {
+                "ru": "Сеть передаёт услугу только связанным участкам.",
+                "en": "Networks serve only connected plots."
+              }
+            },
+            {
+              "id": "t105-v2",
+              "text": {
+                "ru": "Соседство создаёт бонус или отрицательный эффект.",
+                "en": "Adjacency creates bonuses or negative effects."
+              }
+            },
+            {
+              "id": "t105-v3",
+              "text": {
+                "ru": "Зона ограничивает будущие типы застройки.",
+                "en": "Zones constrain future building types."
+              }
+            },
+            {
+              "id": "t105-v4",
+              "text": {
+                "ru": "Магистраль имеет ограниченную пропускную способность.",
+                "en": "Trunk routes have limited throughput."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t106",
+      "section": "mechanics",
+      "title": {
+        "ru": "Кризисы, аварии и восстановление",
+        "en": "Crises, accidents and recovery"
+      },
+      "description": {
+        "ru": "Кризис нарушает обычные зависимости системы, заставляя выявлять причину, ограничивать ущерб и восстанавливать работу по приоритету.",
+        "en": "A crisis breaks normal system dependencies, requiring diagnosis, damage containment and prioritized restoration."
+      },
+      "example": {
+        "ru": "Авария электростанции останавливает насосы, поэтому игрок сначала питает водозабор резервом.",
+        "en": "A power-station failure stops pumps, so backup power first restores the water intake."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, показывает ли система первопричину аварии отдельно от последующих отключений зависимых служб.",
+        "en": "Test whether the system distinguishes the initial failure from subsequent dependent service outages."
+      },
+      "sourceUrls": ["https://www.factorio.com/game/content"],
+      "branches": [
+        {
+          "id": "t106-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t106-v1",
+              "text": {
+                "ru": "Локализация изолирует повреждённый участок.",
+                "en": "Isolation contains a damaged subsystem."
+              }
+            },
+            {
+              "id": "t106-v2",
+              "text": {
+                "ru": "Резерв временно заменяет отказавший источник.",
+                "en": "Reserves temporarily replace a failed source."
+              }
+            },
+            {
+              "id": "t106-v3",
+              "text": {
+                "ru": "Каскад распространяет нехватку по зависимостям.",
+                "en": "Cascades spread shortages through dependencies."
+              }
+            },
+            {
+              "id": "t106-v4",
+              "text": {
+                "ru": "Восстановление выбирает порядок запуска служб.",
+                "en": "Recovery chooses the order of service restart."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Factorio: Content",
+        "en": "Factorio: Content"
+      },
+      "url": "https://www.factorio.com/game/content",
+      "description": {
+        "ru": "Описание разработчика: производство, транспорт и сигнальные сети как связанная игровая система.",
+        "en": "Developer overview of production, transport and circuit networks as connected gameplay systems."
+      }
+    }
+  ]
+}

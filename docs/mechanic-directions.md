@@ -6,9 +6,9 @@ The mechanics index includes the agreed editorial map of 329 directions in 32 gr
 
 Edit `src/data/mechanic-directions.json`. Group and direction IDs are shared by Russian and English and are public HTML anchors; preserve them when changing titles. Every title must have complete `ru` and `en` values. `catalogId` identifies the existing or expected mechanic catalog for that topic. IDs and catalog associations must be unique.
 
-`getMechanicDirections(lang)` resolves the source against active registered catalogs from `getMechanics(lang)`. A matching catalog is `ready`, with its canonical URL and actual counts. An absent, draft or archived catalog leaves its direction `in-development`, with `url: null` and `counts: null`. The visible labels are «В разработке» and “In development”. The map does not store a second readiness boolean and does not create empty article routes.
+`getMechanicDirections(lang)` resolves the source against active registered catalogs from `getMechanics(lang)`. A matching standalone catalog is preferred. An optional `materialRef` can instead target an existing family in an active group catalog; the ready URL then includes that family's anchor and its counts describe that one family. An absent, draft or archived target leaves its direction `in-development`, with `url: null` and `counts: null`. The visible labels are «В разработке» and “In development”. The map does not store a second readiness boolean and does not create empty article routes. See [overview authoring](mechanic-overviews.md).
 
-Prepared discussion content stays in development until its catalog is integrated. Currently seven map directions have a catalog; the general Game Mechanics index supplies an eighth ready material. These are derived counts, not contractual limits. A newly registered matching catalog becomes ready on the next build. Other active catalogs appear in the additional general-reference group so existing materials remain discoverable.
+Prepared discussion content stays in development until its catalog or precise family target is integrated. Counts are derived from current content, not stored editorial totals. A newly registered matching catalog becomes ready on the next build. Other active catalogs appear in the additional general-reference group so existing materials remain discoverable.
 
 ## Reading and filters
 

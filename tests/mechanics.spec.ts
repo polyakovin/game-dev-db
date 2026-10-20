@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
-import { validateMechanics } from '../src/lib/mechanics.mjs';
+import { validateMechanics, mechanicCatalogs } from '../src/lib/mechanics.mjs';
+import { getMechanicDirections } from '../src/lib/mechanic-directions.mjs';
 import { orderMechanicCatalog } from '../src/lib/content-order.mjs';
 import { resolveMechanicCatalog } from '../src/lib/mechanic-source.mjs';
 
@@ -14,38 +15,8 @@ const readCatalog = (id: string) =>
       ),
     ),
   );
-const catalogs = [
-  'voice-audio',
-  'point-and-click',
-  'children',
-  'education',
-  'children-education',
-  'detective',
-  'boss-fight-atlas',
-  'game-mechanics',
-  'rpg-grind',
-  'visual-novel',
-  'dialogue',
-  'deck-building',
-  'roguelike',
-  'metroidvania',
-  'metroidbrainia',
-  'puzzle',
-  'engagement-retention',
-  'electronic-devices',
-  'drawing',
-  'perception',
-  'phone-camera',
-  'phone-microphone',
-  'phone-motion',
-  'phone-flashlight',
-  'phone-haptics',
-  'phone-touch',
-  'phone-magnetometer',
-  'keyboard',
-  'mouse',
-  'trackpad',
-]
+const catalogs = mechanicCatalogs
+  .map((catalog) => catalog.id)
   .map((id) =>
     JSON.parse(
       readFileSync(
@@ -68,7 +39,7 @@ for (const lang of ['ru', 'en'] as const) {
     );
     await page.locator(`.sidebar a[href="${base}/${lang}/mechanics/"]`).click();
     await expect(page.locator('[data-mechanics-card]')).toHaveCount(
-      activeCatalogs.length,
+      getMechanicDirections(lang).counts.readyMaterials,
     );
     await expect(
       page.locator(
@@ -77,9 +48,11 @@ for (const lang of ['ru', 'en'] as const) {
     ).toHaveCount(0);
     for (const c of activeCatalogs)
       await expect(
-        page.locator(
-          `[data-mechanics-card][href="${base}/${lang}/mechanics/${c.id}/"]`,
-        ),
+        page
+          .locator(
+            `[data-mechanics-card][href^="${base}/${lang}/mechanics/${c.id}/"]`,
+          )
+          .first(),
       ).toBeVisible();
   });
   for (const c of catalogs) {
@@ -261,6 +234,10 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
     const source = catalogs.find((catalog) => catalog.id === c.id);
     for (const family of c.families) {
       const original = source.families.find((f: any) => f.id === family.id);
+      if (original.prototypeCheck?.[c.lang]) {
+        expect(family.example).toContain(original.prototypeCheck[c.lang]);
+        expect(c.body).toContain(original.prototypeCheck[c.lang]);
+      }
       expect(family.references).toEqual(
         (original.references ?? []).map((reference: any) => ({
           title: reference.title[c.lang],

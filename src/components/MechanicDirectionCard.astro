@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { path, type Locale } from '../lib/site';
+import { type Locale } from '../lib/site';
 import { getMechanicDirections } from '../lib/mechanic-directions.mjs';
 type Direction = ReturnType<
   typeof getMechanicDirections
@@ -13,6 +13,7 @@ interface Props {
 const { direction, lang, groupId } = Astro.props;
 const ready = direction.status === 'ready';
 const Tag = ready ? 'a' : 'div';
+const target = direction.url ? new URL(direction.url) : null;
 ---
 
 <li
@@ -25,7 +26,7 @@ const Tag = ready ? 'a' : 'div';
 >
   <Tag
     class:list={['direction-card', { 'direction-card-ready': ready }]}
-    href={ready ? path(`${lang}/mechanics/${direction.catalogId}/`) : undefined}
+    href={ready && target ? `${target.pathname}${target.hash}` : undefined}
     data-mechanics-card={ready || undefined}
   >
     <span

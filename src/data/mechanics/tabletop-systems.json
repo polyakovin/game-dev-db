@@ -1,0 +1,684 @@
+{
+  "id": "tabletop-systems",
+  "overviewGroupId": "g18",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Карты, кости и настольные механики",
+    "en": "Cards, dice and tabletop mechanics"
+  },
+  "description": {
+    "ru": "Настольные механики распределяют ограниченные действия и скрытую информацию через карты, кости, позиции и обещания.",
+    "en": "Tabletop mechanisms allocate limited actions and hidden information through cards, dice, positions and commitments."
+  },
+  "intro": {
+    "ru": "Настольные механики распределяют ограниченные действия и скрытую информацию через карты, кости, позиции и обещания. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Tabletop mechanisms allocate limited actions and hidden information through cards, dice, positions and commitments. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t175",
+      "section": "mechanics",
+      "title": {
+        "ru": "Конструирование колоды до партии",
+        "en": "Pre-game deck construction"
+      },
+      "description": {
+        "ru": "Колода собирается до партии по ограничениям формата; игрок задаёт соотношение инструментов и вероятность нужного сочетания.",
+        "en": "Decks are built before play under format constraints, setting tool ratios and the likelihood of useful combinations."
+      },
+      "example": {
+        "ru": "Быстрая колода добавляет дешёвые ответы, жертвуя частью мощных завершающих карт.",
+        "en": "A fast deck adds cheap responses at the expense of powerful finishing cards."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте начальные руки и долю партий без осмысленного первого действия при допустимой стартовой колоде.",
+        "en": "Test opening hands and the share of games lacking a meaningful first action with a legal starting deck."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t175-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t175-v1",
+              "text": {
+                "ru": "Лимит копий ограничивает повтор сильной карты.",
+                "en": "Copy limits restrict repeated powerful cards."
+              }
+            },
+            {
+              "id": "t175-v2",
+              "text": {
+                "ru": "Кривая стоимости задаёт темп первых ходов.",
+                "en": "Cost curves determine early-turn tempo."
+              }
+            },
+            {
+              "id": "t175-v3",
+              "text": {
+                "ru": "Побочный набор меняет состав между партиями.",
+                "en": "Sideboards change composition between games."
+              }
+            },
+            {
+              "id": "t175-v4",
+              "text": {
+                "ru": "Условие командира ограничивает допустимые карты.",
+                "en": "Leader rules restrict eligible card choices."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t178",
+      "section": "mechanics",
+      "title": {
+        "ru": "Взятки, сброс и коллекционирование наборов",
+        "en": "Trick-taking, shedding and set collection"
+      },
+      "description": {
+        "ru": "Правила взяток, сброса и наборов меняют ценность одной карты в зависимости от порядка хода и уже раскрытых карт.",
+        "en": "Tricks, shedding and set rules change a card's value according to turn order and previously revealed cards."
+      },
+      "example": {
+        "ru": "Игрок сохраняет слабую карту нужной масти, чтобы избежать вынужденного расхода козыря позже.",
+        "en": "A player keeps a weak card of one suit to avoid spending a trump later."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте допустимость ответа при отсутствии масти и одинаковую трактовку старшинства в интерфейсе и подсчёте.",
+        "en": "Test legal responses when a suit is absent and consistent rank interpretation in the interface and scoring."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t178-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t178-v1",
+              "text": {
+                "ru": "Масть обязывает отвечать совместимой картой.",
+                "en": "Following suit requires a compatible response."
+              }
+            },
+            {
+              "id": "t178-v2",
+              "text": {
+                "ru": "Козырь меняет обычный порядок старшинства.",
+                "en": "Trumps change the normal strength order."
+              }
+            },
+            {
+              "id": "t178-v3",
+              "text": {
+                "ru": "Сброс освобождает руку ценой потери варианта.",
+                "en": "Discarding frees a hand but removes an option."
+              }
+            },
+            {
+              "id": "t178-v4",
+              "text": {
+                "ru": "Набор даёт ценность сочетанию вместо одиночной силы.",
+                "en": "Sets value combinations over individual strength."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t179",
+      "section": "mechanics",
+      "title": {
+        "ru": "Размещение работников и выбор действий",
+        "en": "Worker placement and action selection"
+      },
+      "description": {
+        "ru": "Работник резервирует действие на общем предложении, поэтому выбор одновременно приносит пользу и закрывает возможность сопернику.",
+        "en": "Workers reserve actions in a shared offer, so placement both grants a benefit and denies an opponent an opportunity."
+      },
+      "example": {
+        "ru": "Заняв лесопилку сейчас, игрок получает дерево и мешает сопернику вовремя завершить строительство.",
+        "en": "Occupying a sawmill now supplies timber and prevents a rival from finishing construction on time."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, есть ли полезное запасное действие после блокировки первого выбора, особенно для последнего участника.",
+        "en": "Test useful fallback actions after a first choice is blocked, especially for the last participant."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t179-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t179-v1",
+              "text": {
+                "ru": "Уникальное место принимает одного работника.",
+                "en": "Exclusive spaces accept one worker."
+              }
+            },
+            {
+              "id": "t179-v2",
+              "text": {
+                "ru": "Доплата разрешает повторно занять действие.",
+                "en": "Extra payment permits repeating an occupied action."
+              }
+            },
+            {
+              "id": "t179-v3",
+              "text": {
+                "ru": "Специалист усиливает конкретный тип места.",
+                "en": "Specialists improve a particular space type."
+              }
+            },
+            {
+              "id": "t179-v4",
+              "text": {
+                "ru": "Возврат работников открывает новый раунд выбора.",
+                "en": "Worker retrieval opens another action round."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t180",
+      "section": "mechanics",
+      "title": {
+        "ru": "Контроль областей, большинство и окружение",
+        "en": "Area control, majorities and enclosure"
+      },
+      "description": {
+        "ru": "Влияние на области сравнивается по присутствию, связности или окружению, связывая размещение с будущим моментом подсчёта.",
+        "en": "Influence is compared by presence, connectivity or enclosure, linking placement to the timing of a future scoring check."
+      },
+      "example": {
+        "ru": "Один жетон соединяет два слабых участка и создаёт большинство к концу раунда.",
+        "en": "One token connects two weak areas and creates a majority before the round ends."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте ничьи и разрыв связи непосредственно перед подсчётом: момент фиксации должен быть видимым.",
+        "en": "Test ties and broken connections immediately before scoring so the evaluation moment is visible."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t180-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t180-v1",
+              "text": {
+                "ru": "Большинство получает награду при подсчёте.",
+                "en": "Majorities earn rewards when scoring occurs."
+              }
+            },
+            {
+              "id": "t180-v2",
+              "text": {
+                "ru": "Окружение меняет владельца изолированной области.",
+                "en": "Enclosure changes an isolated region's owner."
+              }
+            },
+            {
+              "id": "t180-v3",
+              "text": {
+                "ru": "Связность позволяет поддерживать соседний участок.",
+                "en": "Connectivity supports an adjacent territory."
+              }
+            },
+            {
+              "id": "t180-v4",
+              "text": {
+                "ru": "Ничья сохраняет спорный статус или делит награду.",
+                "en": "Ties preserve disputes or split a reward."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t181",
+      "section": "mechanics",
+      "title": {
+        "ru": "Укладка тайлов и построение общего поля",
+        "en": "Tile placement and shared boards"
+      },
+      "description": {
+        "ru": "Размещение тайла меняет общее поле и набор допустимых продолжений, заставляя учитывать границы и соседние элементы.",
+        "en": "Placing a tile changes a shared board and its legal continuations, requiring attention to edges and neighboring pieces."
+      },
+      "example": {
+        "ru": "Дорожный тайл завершает короткий путь соперника, но открывает собственную длинную цепь.",
+        "en": "A road tile completes a rival's short route while opening the player's longer chain."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте допустимость каждого поворота и предпросмотр всех областей, которые завершает один тайл.",
+        "en": "Test every rotation and preview all regions completed by a single placed tile."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t181-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t181-v1",
+              "text": {
+                "ru": "Совпадение границ ограничивает соседство.",
+                "en": "Matching edges constrain adjacency."
+              }
+            },
+            {
+              "id": "t181-v2",
+              "text": {
+                "ru": "Замыкание области запускает получение очков.",
+                "en": "Closing a region triggers scoring."
+              }
+            },
+            {
+              "id": "t181-v3",
+              "text": {
+                "ru": "Общий тайл полезен сразу нескольким игрокам.",
+                "en": "Shared tiles can benefit several participants."
+              }
+            },
+            {
+              "id": "t181-v4",
+              "text": {
+                "ru": "Поворот выбирает между разными продолжениями сети.",
+                "en": "Rotation chooses between alternative network continuations."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t182",
+      "section": "mechanics",
+      "title": {
+        "ru": "Кости, перебросы и назначение результатов",
+        "en": "Dice, rerolls and result assignment"
+      },
+      "description": {
+        "ru": "Бросок даёт ограниченный набор значений, а переброс и назначение превращают случайный результат в управляемый ресурс.",
+        "en": "A roll supplies limited values; rerolling and assignment turn a random outcome into a manageable resource."
+      },
+      "example": {
+        "ru": "Шестёрку можно отдать атаке или дальнему движению, но не обоим действиям одновременно.",
+        "en": "A six can power an attack or long movement but cannot serve both actions at once."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте сохранение и повторный бросок при одновременных подтверждениях: одна кость должна расходоваться только раз.",
+        "en": "Test locking and rerolling during simultaneous confirmations so each die is consumed only once."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t182-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t182-v1",
+              "text": {
+                "ru": "Сохранение фиксирует часть удачных костей.",
+                "en": "Keeping dice locks in useful results."
+              }
+            },
+            {
+              "id": "t182-v2",
+              "text": {
+                "ru": "Переброс тратит ограниченное число попыток.",
+                "en": "Rerolls consume a limited attempt budget."
+              }
+            },
+            {
+              "id": "t182-v3",
+              "text": {
+                "ru": "Назначение распределяет значения между действиями.",
+                "en": "Assignment distributes values between actions."
+              }
+            },
+            {
+              "id": "t182-v4",
+              "text": {
+                "ru": "Модификатор изменяет результат за отдельную цену.",
+                "en": "Modifiers alter results for an explicit cost."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t183",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ставки, блеф и push your luck",
+        "en": "Wagers, bluffing and pushing your luck"
+      },
+      "description": {
+        "ru": "Игрок решает, продолжать ли неопределённую попытку, повышая выигрыш и риск потерять ещё не закреплённый результат.",
+        "en": "The player chooses whether to continue an uncertain attempt, increasing rewards and the risk of losing unbanked gains."
+      },
+      "example": {
+        "ru": "Экспедиция может забрать три находки или открыть ещё одну комнату, рискуя всем грузом.",
+        "en": "An expedition can bank three discoveries or open another room while risking the whole cargo."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, понимает ли игрок возможную потерю до решения продолжить, и не меняется ли заявленная вероятность скрыто.",
+        "en": "Test loss comprehension before continuing and ensure stated probabilities do not change invisibly."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t183-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t183-v1",
+              "text": {
+                "ru": "Остановка фиксирует уже полученную награду.",
+                "en": "Stopping banks the accumulated reward."
+              }
+            },
+            {
+              "id": "t183-v2",
+              "text": {
+                "ru": "Блеф меняет оценку скрытого состояния другими.",
+                "en": "Bluffing changes others' estimate of hidden state."
+              }
+            },
+            {
+              "id": "t183-v3",
+              "text": {
+                "ru": "Ставка ограничивает максимальную возможную потерю.",
+                "en": "Stakes limit the maximum possible loss."
+              }
+            },
+            {
+              "id": "t183-v4",
+              "text": {
+                "ru": "Открытая вероятность делает риск сравнимым.",
+                "en": "Visible probabilities make risks comparable."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t184",
+      "section": "mechanics",
+      "title": {
+        "ru": "Скрытые приказы и одновременный выбор",
+        "en": "Hidden orders and simultaneous selection"
+      },
+      "description": {
+        "ru": "Одновременный скрытый выбор делает предсказание намерений важнее реакции на уже исполненный приказ.",
+        "en": "Simultaneous hidden choices emphasize predicting intentions rather than reacting to an order already executed."
+      },
+      "example": {
+        "ru": "Оба игрока тайно выбирают мост или обход, а один может разведать направление ценой скорости.",
+        "en": "Both players secretly choose a bridge or bypass and one can scout at the cost of speed."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, что подтверждённый план нельзя изменить после получения информации о чужом раскрытии.",
+        "en": "Test that a confirmed plan cannot change after information from another participant's reveal is received."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t184-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t184-v1",
+              "text": {
+                "ru": "Закрытый приказ фиксируется до раскрытия.",
+                "en": "Sealed orders lock before their reveal."
+              }
+            },
+            {
+              "id": "t184-v2",
+              "text": {
+                "ru": "Приоритет разрешает конфликт одинаковых целей.",
+                "en": "Priority resolves conflicting identical targets."
+              }
+            },
+            {
+              "id": "t184-v3",
+              "text": {
+                "ru": "Разведка открывает часть чужого плана.",
+                "en": "Scouting exposes part of another plan."
+              }
+            },
+            {
+              "id": "t184-v4",
+              "text": {
+                "ru": "Обманный приказ расходует действие на ложный сигнал.",
+                "en": "Decoy orders spend an action on misleading signals."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t185",
+      "section": "mechanics",
+      "title": {
+        "ru": "Пространственная ловкость и цифровые настольные игрушки",
+        "en": "Dexterity and digital tabletop toys"
+      },
+      "description": {
+        "ru": "Точное физическое действие определяет положение игровых объектов, а цифровая модель переводит результат в состояние партии.",
+        "en": "Physical precision determines game-piece placement while a digital model translates the result into game state."
+      },
+      "example": {
+        "ru": "Игрок запускает фишку от борта, чтобы обойти чужой заслон и остановиться в целевой зоне.",
+        "en": "A player rebounds a piece off a rail to bypass a blocker and stop within a target zone."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одинаковый ввод при разной частоте кадров и возможность ясно увидеть исходную точку приложения силы.",
+        "en": "Test identical input at different frame rates and clear visibility of the initial force application point."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t185-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t185-v1",
+              "text": {
+                "ru": "Щелчок задаёт импульс и направление фишки.",
+                "en": "Flicks set a piece's impulse and direction."
+              }
+            },
+            {
+              "id": "t185-v2",
+              "text": {
+                "ru": "Баланс ограничивает безопасную высоту башни.",
+                "en": "Balance limits a tower's safe height."
+              }
+            },
+            {
+              "id": "t185-v3",
+              "text": {
+                "ru": "Отскок позволяет обойти прямое препятствие.",
+                "en": "Rebounds bypass a direct obstruction."
+              }
+            },
+            {
+              "id": "t185-v4",
+              "text": {
+                "ru": "Зона посадки различает качество исполнения.",
+                "en": "Landing zones distinguish execution quality."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t177",
+      "section": "mechanics",
+      "title": {
+        "ru": "Драфт и выбор из общего предложения",
+        "en": "Drafting and shared offers"
+      },
+      "description": {
+        "ru": "Драфт распределяет доступные элементы последовательным выбором: взятый объект одновременно усиливает участника и исчезает из чужого предложения.",
+        "en": "Drafting distributes elements through sequential selection: taking an item improves one participant and removes an option from others."
+      },
+      "example": {
+        "ru": "Игрок берёт подходящую карту, оставляя сопернику выбор между двумя несовместимыми стратегиями.",
+        "en": "A player takes a fitting card and leaves a rival to choose between incompatible strategies."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте полный оборот предложения, ничьи при одновременном выборе и наличие полезного решения у последнего участника.",
+        "en": "Test full offer circulation, simultaneous-pick conflicts and useful options for the final participant."
+      },
+      "sourceUrls": [
+        "https://www.puzzlescript.net/Documentation/rules.html",
+        "https://magic.wizards.com/en/rules"
+      ],
+      "branches": [
+        {
+          "id": "t177-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t177-v1",
+              "text": {
+                "ru": "Передаваемый пакет меняет набор после каждого выбора.",
+                "en": "Passing packs change offers after each selection."
+              }
+            },
+            {
+              "id": "t177-v2",
+              "text": {
+                "ru": "Открытый ряд показывает доступное всем предложение.",
+                "en": "Open rows display a shared public offer."
+              }
+            },
+            {
+              "id": "t177-v3",
+              "text": {
+                "ru": "Змеиный порядок компенсирует преимущество первого выбора.",
+                "en": "Snake order compensates for first-pick advantage."
+              }
+            },
+            {
+              "id": "t177-v4",
+              "text": {
+                "ru": "Запрет убирает опасный вариант вместо получения своего.",
+                "en": "Bans remove a dangerous option instead of gaining one."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "PuzzleScript: Rules",
+        "en": "PuzzleScript: Rules"
+      },
+      "url": "https://www.puzzlescript.net/Documentation/rules.html",
+      "description": {
+        "ru": "Документация автора о преобразовании узоров и состоянии игрового поля.",
+        "en": "The creator’s documentation of pattern replacement and board state."
+      }
+    },
+    {
+      "title": {
+        "ru": "Wizards of the Coast: Magic rules",
+        "en": "Wizards of the Coast: Magic rules"
+      },
+      "url": "https://magic.wizards.com/en/rules",
+      "description": {
+        "ru": "Первичный пример формализованных правил карточной игры, включая отдельные базовые и полные правила. Не описание всех настольных механик ниже.",
+        "en": "Primary example of formal card-game rules, with separate basic and comprehensive references; not a description of all mechanisms below."
+      }
+    }
+  ]
+}

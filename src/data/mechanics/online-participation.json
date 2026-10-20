@@ -1,0 +1,643 @@
+{
+  "id": "online-participation",
+  "overviewGroupId": "g32",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Онлайн-миры и структура участия",
+    "en": "Online worlds and participation"
+  },
+  "description": {
+    "ru": "Онлайн-механики связывают личный вклад с общим состоянием, временем участия и явными обязательствами между игроками.",
+    "en": "Online mechanics connect individual contributions to shared state, participation timing and explicit commitments between players."
+  },
+  "intro": {
+    "ru": "Онлайн-механики связывают личный вклад с общим состоянием, временем участия и явными обязательствами между игроками. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Online mechanics connect individual contributions to shared state, participation timing and explicit commitments between players. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t320",
+      "section": "mechanics",
+      "title": {
+        "ru": "Постоянные миры и общий прогресс сервера",
+        "en": "Persistent worlds and shared server progress"
+      },
+      "description": {
+        "ru": "Постоянный мир сохраняет изменения между сессиями, превращая личное действие в часть общей истории и состояния сервера.",
+        "en": "Persistent worlds preserve changes between sessions, making individual actions part of shared server state and history."
+      },
+      "example": {
+        "ru": "Игроки строят общий мост по частям, а поздно вошедший участник видит уже проложенный путь.",
+        "en": "Players build a bridge in stages and a later participant sees the completed route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте повтор доставки события после разрыва связи: одно действие должно изменять общий ресурс только один раз.",
+        "en": "Test event redelivery after disconnection so one action changes a shared resource only once."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t320-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t320-v1",
+              "text": {
+                "ru": "Общий проект накапливает вклад разных сессий.",
+                "en": "Shared projects accumulate contributions across sessions."
+              }
+            },
+            {
+              "id": "t320-v2",
+              "text": {
+                "ru": "Восстановление мира ограничивает необратимое истощение.",
+                "en": "World recovery limits irreversible depletion."
+              }
+            },
+            {
+              "id": "t320-v3",
+              "text": {
+                "ru": "Права определяют, кто меняет конкретный объект.",
+                "en": "Permissions define who can alter an object."
+              }
+            },
+            {
+              "id": "t320-v4",
+              "text": {
+                "ru": "Журнал показывает источник важных изменений.",
+                "en": "Logs identify causes of important changes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t321",
+      "section": "mechanics",
+      "title": {
+        "ru": "Гильдии, кланы и совместные долгосрочные цели",
+        "en": "Guilds, clans and long-term collective goals"
+      },
+      "description": {
+        "ru": "Гильдия связывает участников общими правами, запасами и долгосрочными проектами, распределяя вклад между разным временем участия.",
+        "en": "Guilds connect participants through shared permissions, supplies and long-term projects across different participation schedules."
+      },
+      "example": {
+        "ru": "Одна группа добывает материалы утром, а другая вечером завершает общую постройку по видимому плану.",
+        "en": "One group gathers materials in the morning and another completes a shared construction that evening."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте выход участника, смену руководителя и доступ к ранее внесённым ресурсам по опубликованным правилам группы.",
+        "en": "Test member departure, leadership changes and access to prior contributions under the group's stated rules."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t321-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t321-v1",
+              "text": {
+                "ru": "Роль даёт ограниченные права управления.",
+                "en": "Roles grant limited management permissions."
+              }
+            },
+            {
+              "id": "t321-v2",
+              "text": {
+                "ru": "Склад разделяет личный и общий запас.",
+                "en": "Storage separates personal and shared supplies."
+              }
+            },
+            {
+              "id": "t321-v3",
+              "text": {
+                "ru": "Проект показывает необходимый вклад по категориям.",
+                "en": "Projects show contributions needed by category."
+              }
+            },
+            {
+              "id": "t321-v4",
+              "text": {
+                "ru": "История сохраняет прозрачность распределения наград.",
+                "en": "History makes reward allocation transparent."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t322",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рейды и многоступенчатая групповая координация",
+        "en": "Raids and multi-stage group coordination"
+      },
+      "description": {
+        "ru": "Рейд делит большую задачу на фазы с разными обязанностями, связывая личное исполнение с восстановлением общего плана после ошибки.",
+        "en": "Raids divide a large objective into phases with distinct responsibilities, connecting execution to recovering a shared plan after mistakes."
+      },
+      "example": {
+        "ru": "Два участника передают заряд по цепи, пока остальные удерживают проходы к центральному устройству.",
+        "en": "Two participants pass a charge along a chain while others hold routes to a central device."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте различимость личной ошибки и сетевой задержки, а также возможность восстановить роль после отключения.",
+        "en": "Test distinctions between personal errors and network delay and recovering a role after a disconnect."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t322-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t322-v1",
+              "text": {
+                "ru": "Фаза меняет доступные угрозы и приоритеты.",
+                "en": "Phases change threats and priorities."
+              }
+            },
+            {
+              "id": "t322-v2",
+              "text": {
+                "ru": "Назначение закрепляет конкретную обязанность.",
+                "en": "Assignments establish specific responsibilities."
+              }
+            },
+            {
+              "id": "t322-v3",
+              "text": {
+                "ru": "Передача роли страхует выбывшего участника.",
+                "en": "Role handoffs cover a removed participant."
+              }
+            },
+            {
+              "id": "t322-v4",
+              "text": {
+                "ru": "Короткий разбор показывает причину общего поражения.",
+                "en": "Debriefs explain causes of shared failure."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t323",
+      "section": "mechanics",
+      "title": {
+        "ru": "PvP, дуэли, командные и массовые сражения",
+        "en": "PvP, duels, team battles and mass combat"
+      },
+      "description": {
+        "ru": "Соперничество распределяет цели и условия поражения между игроками, а формат команды определяет цену координации и личного риска.",
+        "en": "Competition distributes objectives and defeat conditions among players, with team formats shaping coordination and personal risk."
+      },
+      "example": {
+        "ru": "Команда выигрывает удержанием связи между точками, даже если проигрывает по числу индивидуальных устранений.",
+        "en": "A team wins by linking objectives despite trailing in individual eliminations."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте доступность контригры и ясное объяснение общего результата при разных вкладах участников.",
+        "en": "Test counterplay availability and clear explanations of shared outcomes across different participant contributions."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t323-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t323-v1",
+              "text": {
+                "ru": "Дуэль изолирует сравнение двух наборов решений.",
+                "en": "Duels isolate two sets of decisions."
+              }
+            },
+            {
+              "id": "t323-v2",
+              "text": {
+                "ru": "Командная цель делает поддержку полезнее личного счёта.",
+                "en": "Team objectives value support beyond personal score."
+              }
+            },
+            {
+              "id": "t323-v3",
+              "text": {
+                "ru": "Большой бой разделяется на локальные задачи.",
+                "en": "Large battles split into local tasks."
+              }
+            },
+            {
+              "id": "t323-v4",
+              "text": {
+                "ru": "Подбор учитывает заявленные параметры режима.",
+                "en": "Matchmaking uses the mode's stated parameters."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t324",
+      "section": "mechanics",
+      "title": {
+        "ru": "Battle royale и сокращающееся поле",
+        "en": "Battle royale and shrinking play areas"
+      },
+      "description": {
+        "ru": "Сокращающееся безопасное поле вынуждает перемещаться и повышает плотность встреч, связывая добычу с прогнозом будущего маршрута.",
+        "en": "Shrinking safe areas force movement and increase encounter density, connecting looting to predicting a future route."
+      },
+      "example": {
+        "ru": "Отряд оставляет богатый склад, потому что путь к следующей зоне проходит через уже занятый мост.",
+        "en": "A squad abandons a rich depot because the route to the next zone crosses an occupied bridge."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте достижимость следующей зоны из допустимых текущих позиций и видимость её границы на разных покрытиях.",
+        "en": "Test next-zone reachability from valid current positions and boundary visibility over different terrain."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t324-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t324-v1",
+              "text": {
+                "ru": "Предупреждение показывает следующую безопасную область.",
+                "en": "Warnings reveal the next safe region."
+              }
+            },
+            {
+              "id": "t324-v2",
+              "text": {
+                "ru": "Урон вне зоны ограничивает время задержки.",
+                "en": "Out-of-zone damage limits delay time."
+              }
+            },
+            {
+              "id": "t324-v3",
+              "text": {
+                "ru": "Случайный старт меняет доступную добычу.",
+                "en": "Variable starts change available loot."
+              }
+            },
+            {
+              "id": "t324-v4",
+              "text": {
+                "ru": "Возвращение союзника создаёт дополнительную цель риска.",
+                "en": "Ally recovery creates an additional risk objective."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t325",
+      "section": "mechanics",
+      "title": {
+        "ru": "Асинхронное соперничество, призраки и послания",
+        "en": "Asynchronous competition, ghosts and messages"
+      },
+      "description": {
+        "ru": "Асинхронное участие сохраняет результат или сообщение одного игрока, чтобы другой мог взаимодействовать с ним в другое время.",
+        "en": "Asynchronous participation preserves one player's result or message for another to encounter at a different time."
+      },
+      "example": {
+        "ru": "Игрок оставляет призрак своего прыжка, чтобы другой участник сравнил момент отталкивания после входа в игру.",
+        "en": "A player leaves a jump ghost so another can compare takeoff timing in a later session."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте совместимость версии правил и ограничение содержания сообщений, включая удалённый или недоступный повтор.",
+        "en": "Test rule-version compatibility and message constraints, including deleted or unavailable replays."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t325-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t325-v1",
+              "text": {
+                "ru": "Призрак воспроизводит маршрут завершённой попытки.",
+                "en": "Ghosts replay a completed attempt's route."
+              }
+            },
+            {
+              "id": "t325-v2",
+              "text": {
+                "ru": "Послание даёт ограниченную подсказку месту.",
+                "en": "Messages provide limited location clues."
+              }
+            },
+            {
+              "id": "t325-v3",
+              "text": {
+                "ru": "Испытание публикует условия для повторения.",
+                "en": "Challenges publish reproducible conditions."
+              }
+            },
+            {
+              "id": "t325-v4",
+              "text": {
+                "ru": "Отложенный ход позволяет отвечать между сессиями.",
+                "en": "Deferred turns support responses across sessions."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t326",
+      "section": "mechanics",
+      "title": {
+        "ru": "Игровые рынки, подарки и обмен между игроками",
+        "en": "Player markets, gifts and trading"
+      },
+      "description": {
+        "ru": "Обмен между игроками переводит владение ресурсом по согласованным условиям, связывая доверие с прозрачностью и атомарным завершением сделки.",
+        "en": "Player exchange transfers resource ownership under agreed terms, connecting trust to transparency and atomic settlement."
+      },
+      "example": {
+        "ru": "Игроки подтверждают обмен руды на инструмент, а изменение предмета сбрасывает оба подтверждения.",
+        "en": "Players confirm ore for a tool and changing either item clears both confirmations."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте одновременную отмену и разрыв связи: ни товар, ни валюта не должны дублироваться или исчезать между участниками.",
+        "en": "Test simultaneous cancellation and disconnection so items and currency cannot duplicate or disappear between participants."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t326-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t326-v1",
+              "text": {
+                "ru": "Окно обмена требует подтверждения обеих сторон.",
+                "en": "Trade windows require confirmation from both parties."
+              }
+            },
+            {
+              "id": "t326-v2",
+              "text": {
+                "ru": "Подарок отделяется от ожидаемой встречной оплаты.",
+                "en": "Gifts are distinct from expected reciprocal payment."
+              }
+            },
+            {
+              "id": "t326-v3",
+              "text": {
+                "ru": "Рынок резервирует товар до завершения заказа.",
+                "en": "Markets reserve goods until order completion."
+              }
+            },
+            {
+              "id": "t326-v4",
+              "text": {
+                "ru": "Ограничение обращения сохраняет назначение награды.",
+                "en": "Trading limits preserve a reward's intended role."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t327",
+      "section": "mechanics",
+      "title": {
+        "ru": "Сезоны, события и изменение мира",
+        "en": "Seasons, events and world changes"
+      },
+      "description": {
+        "ru": "Сезон меняет условия участия на известный период, а события добавляют общие цели и наблюдаемые изменения мира.",
+        "en": "Seasons change participation conditions for a stated period while events add shared goals and observable world changes."
+      },
+      "example": {
+        "ru": "Сезон наводнения открывает лодочные маршруты, а построенные игроками дамбы меняют итоговую карту.",
+        "en": "A flood season opens boat routes and player-built levees change the final map."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте поздний вход и переход между периодами, заранее показывая сохраняемый прогресс и доступность наград.",
+        "en": "Test late entry and period transitions with advance visibility of retained progress and reward availability."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t327-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t327-v1",
+              "text": {
+                "ru": "Набор правил создаёт новый вариант знакомой задачи.",
+                "en": "Rulesets create new versions of familiar tasks."
+              }
+            },
+            {
+              "id": "t327-v2",
+              "text": {
+                "ru": "Общая цель суммирует вклад участников.",
+                "en": "Shared objectives aggregate participant contributions."
+              }
+            },
+            {
+              "id": "t327-v3",
+              "text": {
+                "ru": "Переход сезона имеет явное правило сохранения.",
+                "en": "Season transitions state what progress survives."
+              }
+            },
+            {
+              "id": "t327-v4",
+              "text": {
+                "ru": "Повтор события даёт доступ пропустившим участникам.",
+                "en": "Event returns offer access to absent participants."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t329",
+      "section": "mechanics",
+      "title": {
+        "ru": "ARG, трансмедиа и игра за пределами приложения",
+        "en": "ARGs, transmedia and play beyond the application"
+      },
+      "description": {
+        "ru": "Игра за пределами приложения связывает вымышленные материалы и разные каналы в проверяемую цепочку задач и раскрытий.",
+        "en": "Play beyond an app connects fictional materials and different channels into a verifiable chain of challenges and reveals."
+      },
+      "example": {
+        "ru": "Вымышленные сайт и аудиозапись дают две половины кода, а встроенный архив сохраняет обе версии.",
+        "en": "A fictional site and audio recording provide code halves while an in-game archive preserves both."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте прохождение при исчезновении внешнего ресурса и ясную границу вымысла, исключив необходимость контакта с посторонними людьми.",
+        "en": "Test completion when an external resource disappears and clear fictional boundaries without requiring contact with uninvolved people."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t329-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t329-v1",
+              "text": {
+                "ru": "Документ содержит зацепку к следующему материалу.",
+                "en": "Documents contain clues to another material."
+              }
+            },
+            {
+              "id": "t329-v2",
+              "text": {
+                "ru": "Канал раскрывает отличающийся фрагмент истории.",
+                "en": "Channels reveal different story fragments."
+              }
+            },
+            {
+              "id": "t329-v3",
+              "text": {
+                "ru": "Общий архив сохраняет уже найденные участниками сведения.",
+                "en": "Shared archives preserve participant discoveries."
+              }
+            },
+            {
+              "id": "t329-v4",
+              "text": {
+                "ru": "Внутриигровая замена поддерживает недоступный внешний шаг.",
+                "en": "In-game substitutes support unavailable external steps."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t328",
+      "section": "mechanics",
+      "title": {
+        "ru": "Боевые пропуски, игровые магазины и монетизация",
+        "en": "Battle passes, in-game stores and monetization"
+      },
+      "description": {
+        "ru": "Монетизация задаёт условия получения платного содержания, а магазин и пропуск связывают цену с известным составом и порядком открытия.",
+        "en": "Monetization sets paid-content conditions, while stores and passes connect prices to known content and unlock sequences."
+      },
+      "example": {
+        "ru": "Сезонный пропуск заранее показывает состав и срок, а уже полученные предметы сохраняются после конца сезона.",
+        "en": "A season pass shows contents and duration beforehand while earned items remain after the season ends."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте понятность полной цены, срока, сохраняемых предметов и условий возврата к игре без ежедневного обязательства.",
+        "en": "Test full-price clarity, duration, retained items and returning to play without a daily obligation."
+      },
+      "sourceUrls": ["https://partner.steamgames.com/doc/features/multiplayer"],
+      "branches": [
+        {
+          "id": "t328-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t328-v1",
+              "text": {
+                "ru": "Прямая покупка даёт заранее описанный предмет.",
+                "en": "Direct purchases grant a described item."
+              }
+            },
+            {
+              "id": "t328-v2",
+              "text": {
+                "ru": "Пропуск открывает путь наград по явным условиям.",
+                "en": "Passes unlock reward tracks under stated conditions."
+              }
+            },
+            {
+              "id": "t328-v3",
+              "text": {
+                "ru": "Подписка предоставляет доступ на указанный период.",
+                "en": "Subscriptions provide access for a stated period."
+              }
+            },
+            {
+              "id": "t328-v4",
+              "text": {
+                "ru": "Косметический набор меняет внешний вид без скрытого усиления.",
+                "en": "Cosmetic bundles change appearance without hidden power."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Steamworks: Multiplayer",
+        "en": "Steamworks: Multiplayer"
+      },
+      "url": "https://partner.steamgames.com/doc/features/multiplayer",
+      "description": {
+        "ru": "Первичная документация инфраструктуры сетевых сессий. Дизайн гильдий, рынков и сезонов ниже представляет авторские варианты, а не обязательные правила Steam.",
+        "en": "Primary documentation of multiplayer-session infrastructure. Guild, market and season designs below are editorial alternatives, not Steam-mandated rules."
+      }
+    }
+  ]
+}

@@ -1,0 +1,663 @@
+{
+  "id": "shooting-projectiles",
+  "overviewGroupId": "g03",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Стрельба и снаряды",
+    "en": "Shooting and projectiles"
+  },
+  "description": {
+    "ru": "Прицеливание, дистанция, движение, боезапас и риск в десяти направлениях стрелковых игр.",
+    "en": "Aiming, range, movement, ammunition and risk across ten forms of shooting games."
+  },
+  "intro": {
+    "ru": "Стрелковая механика связывает выбор позиции с моментом выстрела. Разделяйте направление взгляда, направление оружия и фактическую проверку попадания: камера может видеть цель, когда ствол перекрыт стеной. Для снарядов важны время полёта и читаемая траектория; для мгновенных попаданий важны обратная связь и согласованность прицела. Следующие обзоры предлагают самостоятельные варианты правил и условные сценарии. Документация Godot описывает запросы пересечения луча, а не сетевую компенсацию задержки или универсальную модель оружия.",
+    "en": "Shooting connects position selection to the moment of firing. Distinguish view direction, weapon direction and the actual hit query: the camera may see a target while a wall blocks the muzzle. Traveling projectiles need readable trajectories and flight time; immediate hits need clear feedback and a consistent reticle. These overviews propose original rules and hypothetical scenarios. Godot's documentation explains ray intersection queries, not network lag compensation or a universal weapon model."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t021",
+      "section": "mechanics",
+      "title": {
+        "ru": "Шутеры от первого лица",
+        "en": "First-person shooters"
+      },
+      "description": {
+        "ru": "Игрок управляет взглядом и оружием от первого лица, выбирая между точностью, скоростью и открытой позицией.",
+        "en": "The player controls a first-person view and weapon, trading precision against speed and exposure."
+      },
+      "example": {
+        "ru": "В коридоре быстрый противник заставляет выбирать между дробовиком и точным выстрелом через дверь.",
+        "en": "A fast corridor enemy forces a choice between a shotgun and a precise shot through a doorway."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте попадание у края стены: линия камеры и линия ствола не должны давать необъяснимый результат.",
+        "en": "Test shots beside a wall: camera and muzzle lines must not produce an unexplained hit result."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t021-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t021-v1",
+              "text": {
+                "ru": "Прицеливание: зум сужает обзор ради точности.",
+                "en": "Aim down sights: zoom trades awareness for precision."
+              }
+            },
+            {
+              "id": "t021-v2",
+              "text": {
+                "ru": "Стрельба от бедра: движение расширяет разброс.",
+                "en": "Hip fire: movement increases the spread of shots."
+              }
+            },
+            {
+              "id": "t021-v3",
+              "text": {
+                "ru": "Упреждение: медленный снаряд требует вести цель.",
+                "en": "Leading shots: slow projectiles require prediction."
+              }
+            },
+            {
+              "id": "t021-v4",
+              "text": {
+                "ru": "Перезарядка: пустой магазин создаёт окно уязвимости.",
+                "en": "Reloading: an empty magazine creates vulnerability."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t022",
+      "section": "mechanics",
+      "title": {
+        "ru": "Шутеры от третьего лица и укрытия",
+        "en": "Third-person shooters and cover"
+      },
+      "description": {
+        "ru": "Камера за персонажем позволяет читать окружение, а укрытие меняет доступные углы стрельбы и перемещения.",
+        "en": "A camera behind the character exposes surrounding space, while cover changes firing angles and movement options."
+      },
+      "example": {
+        "ru": "Фланговый проход вынуждает оставить удобное укрытие, пока напарник удерживает противника огнём.",
+        "en": "A flanking route forces the player to leave cover while a partner suppresses the opponent."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте обе стороны препятствия: видимая цель не должна означать выстрел сквозь закрывающую ствол геометрию.",
+        "en": "Test both sides of an obstacle: seeing a target must not permit firing through geometry blocking the muzzle."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t022-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t022-v1",
+              "text": {
+                "ru": "Привязка: персонаж занимает грань укрытия.",
+                "en": "Cover snapping: the character occupies a cover edge."
+              }
+            },
+            {
+              "id": "t022-v2",
+              "text": {
+                "ru": "Выглядывание: выстрел временно открывает тело.",
+                "en": "Peeking: firing temporarily exposes the body."
+              }
+            },
+            {
+              "id": "t022-v3",
+              "text": {
+                "ru": "Смена плеча: камера меняет доступный обзор.",
+                "en": "Shoulder swapping: the camera changes the visible angle."
+              }
+            },
+            {
+              "id": "t022-v4",
+              "text": {
+                "ru": "Разрушение: укрытие теряет защиту от попаданий.",
+                "en": "Destruction: repeated hits remove cover protection."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t023",
+      "section": "mechanics",
+      "title": {
+        "ru": "Арена-шутеры",
+        "en": "Arena shooters"
+      },
+      "description": {
+        "ru": "Арена превращает оружие, высоту и возобновляемые ресурсы в маршрут непрерывного движения и борьбы за контроль.",
+        "en": "An arena turns weapons, elevation and respawning resources into a route of continuous movement and control."
+      },
+      "example": {
+        "ru": "Броня появляется на нижней площадке, но соперник сверху заранее простреливает подход.",
+        "en": "Armor spawns on a lower platform while an opponent above can already cover the approach."
+      },
+      "prototypeCheck": {
+        "ru": "Нарисуйте маршруты к ресурсам: проверьте, что одна позиция не контролирует все появления без перемещения.",
+        "en": "Map resource routes and test whether one stationary position can control every important spawn."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t023-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t023-v1",
+              "text": {
+                "ru": "Контроль: сильное оружие появляется в опасной зоне.",
+                "en": "Control: strong weapons spawn in exposed locations."
+              }
+            },
+            {
+              "id": "t023-v2",
+              "text": {
+                "ru": "Вертикаль: прыжковые площадки открывают верхний маршрут.",
+                "en": "Verticality: jump pads open an elevated route."
+              }
+            },
+            {
+              "id": "t023-v3",
+              "text": {
+                "ru": "Дуэль: таймер ресурса задаёт момент столкновения.",
+                "en": "Duels: resource timers determine encounter timing."
+              }
+            },
+            {
+              "id": "t023-v4",
+              "text": {
+                "ru": "Площадной огонь: взрыв перекрывает путь отхода.",
+                "en": "Splash fire: explosions deny an escape route."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t024",
+      "section": "mechanics",
+      "title": {
+        "ru": "Тактические шутеры",
+        "en": "Tactical shooters"
+      },
+      "description": {
+        "ru": "Короткое время поражения делает информацию, дисциплину позиции и согласованный выход важнее непрерывного огня.",
+        "en": "A short elimination window makes information, positional discipline and coordinated entry central decisions."
+      },
+      "example": {
+        "ru": "Команда проверяет две двери, оставляя одного игрока наблюдать за возможным обходом.",
+        "en": "A team clears two doorways while one player watches a possible flanking route."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте читаемость причины гибели и наличие контригры для удерживаемого узкого прохода.",
+        "en": "Test whether players understand an elimination and can counter a defended choke point."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t024-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t024-v1",
+              "text": {
+                "ru": "Углы: последовательная проверка ограничивает число угроз.",
+                "en": "Angle clearing: sequential checks limit simultaneous threats."
+              }
+            },
+            {
+              "id": "t024-v2",
+              "text": {
+                "ru": "Подавление: огонь запрещает безопасное перемещение.",
+                "en": "Suppression: fire denies safe movement through a lane."
+              }
+            },
+            {
+              "id": "t024-v3",
+              "text": {
+                "ru": "Экипировка: снаряжение меняет скорость и защиту.",
+                "en": "Loadouts: equipment trades movement against protection."
+              }
+            },
+            {
+              "id": "t024-v4",
+              "text": {
+                "ru": "Раунд: ограниченная жизнь повышает цену разведки.",
+                "en": "Rounds: limited lives increase the value of reconnaissance."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t025",
+      "section": "mechanics",
+      "title": {
+        "ru": "Геройские шутеры",
+        "en": "Hero shooters"
+      },
+      "description": {
+        "ru": "Уникальные способности героев меняют общую задачу стрельбы и создают зависимости между ролями команды.",
+        "en": "Distinct hero abilities modify shared shooting rules and create dependencies between team roles."
+      },
+      "example": {
+        "ru": "Щит позволяет перенести стационарную турель, но команда временно теряет защиту другой линии.",
+        "en": "A shield enables moving a stationary turret while temporarily exposing another team lane."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте состав без одного героя: базовая задача должна оставаться разрешимой без обязательного выбора.",
+        "en": "Test a roster missing one hero: the core objective should remain solvable without a compulsory pick."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t025-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t025-v1",
+              "text": {
+                "ru": "Роли: защитник открывает окно для атакующего.",
+                "en": "Roles: a defender creates an opening for an attacker."
+              }
+            },
+            {
+              "id": "t025-v2",
+              "text": {
+                "ru": "Перезарядка навыка: сила доступна отдельными окнами.",
+                "en": "Cooldowns: powerful skills appear in separate windows."
+              }
+            },
+            {
+              "id": "t025-v3",
+              "text": {
+                "ru": "Комбинация: метка союзника усиливает последующий удар.",
+                "en": "Combos: an ally's mark strengthens a following attack."
+              }
+            },
+            {
+              "id": "t025-v4",
+              "text": {
+                "ru": "Контрвыбор: герой меняет состав под угрозу.",
+                "en": "Counterpicks: changing heroes answers a specific threat."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t026",
+      "section": "mechanics",
+      "title": {
+        "ru": "Лутер-шутеры",
+        "en": "Looter shooters"
+      },
+      "description": {
+        "ru": "Стрельба добывает снаряжение, а свойства добычи меняют последующий стиль боя и выбор цели.",
+        "en": "Shooting produces equipment whose properties reshape later combat and target selection."
+      },
+      "example": {
+        "ru": "Винтовка возвращает заряд после точного попадания и поощряет медленный бой вместо длинной очереди.",
+        "en": "A rifle restores charge after a precision hit, favoring deliberate fire over sustained bursts."
+      },
+      "prototypeCheck": {
+        "ru": "Сравните предметы на одинаковой мишени: отделите рост числа урона от появления нового решения.",
+        "en": "Compare items on the same target and separate increased damage numbers from genuinely new decisions."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t026-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t026-v1",
+              "text": {
+                "ru": "Аффиксы: условный бонус меняет предпочтительную дистанцию.",
+                "en": "Affixes: conditional bonuses change preferred range."
+              }
+            },
+            {
+              "id": "t026-v2",
+              "text": {
+                "ru": "Редкость: необычный предмет добавляет новое действие.",
+                "en": "Rarity: an unusual item introduces a new action."
+              }
+            },
+            {
+              "id": "t026-v3",
+              "text": {
+                "ru": "Наборы: несколько вещей связывают способности.",
+                "en": "Sets: several items connect separate abilities."
+              }
+            },
+            {
+              "id": "t026-v4",
+              "text": {
+                "ru": "Сравнение: показатели объясняют реальную смену роли.",
+                "en": "Comparison: item stats explain a practical role change."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t027",
+      "section": "mechanics",
+      "title": {
+        "ru": "Extraction-шутеры",
+        "en": "Extraction shooters"
+      },
+      "description": {
+        "ru": "Вылазка заканчивается только при эвакуации; добыча увеличивает будущую ценность выхода и риск продолжения.",
+        "en": "A sortie ends only upon extraction; acquired loot raises both the value of leaving and the risk of continuing."
+      },
+      "example": {
+        "ru": "Найденный двигатель замедляет бег, а ближайший выход требует ждать шумный подъёмник.",
+        "en": "A recovered engine slows movement, and the nearest exit requires waiting for a noisy lift."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте ранний выход с малой добычей: он должен быть осмысленной стратегией, а не скрытым поражением.",
+        "en": "Test extracting early with modest loot: it should be a meaningful strategy rather than a disguised failure."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t027-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t027-v1",
+              "text": {
+                "ru": "Выходы: разные точки требуют разных условий.",
+                "en": "Exits: different extraction points impose different conditions."
+              }
+            },
+            {
+              "id": "t027-v2",
+              "text": {
+                "ru": "Шум: бой раскрывает положение другим участникам.",
+                "en": "Noise: combat reveals position to other participants."
+              }
+            },
+            {
+              "id": "t027-v3",
+              "text": {
+                "ru": "Страхование: часть потери возвращается по явному правилу.",
+                "en": "Insurance: a stated rule recovers part of a loss."
+              }
+            },
+            {
+              "id": "t027-v4",
+              "text": {
+                "ru": "Груз: ценность мешает скорости и скрытности.",
+                "en": "Cargo: valuable loads hinder speed and stealth."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t028",
+      "section": "mechanics",
+      "title": {
+        "ru": "Рельсовые и light-gun-шутеры",
+        "en": "Rail and light-gun shooters"
+      },
+      "description": {
+        "ru": "Маршрут камеры задан системой, а игрок распределяет внимание между целями, угрозами и окнами выстрела.",
+        "en": "The system fixes the camera route while the player allocates attention among targets, threats and firing windows."
+      },
+      "example": {
+        "ru": "Поезд проходит мимо трёх башен; выстрел в стрелку открывает более безопасный путь.",
+        "en": "A train passes three towers; shooting a track switch opens a safer route."
+      },
+      "prototypeCheck": {
+        "ru": "Повторите сцену с медленным прицеливанием: угрозы должны появляться до обязательного окна реакции.",
+        "en": "Replay with slower aiming and ensure threats appear before their mandatory response window begins."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t028-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t028-v1",
+              "text": {
+                "ru": "Приоритет: опасная цель перебивает набор очков.",
+                "en": "Priority: a dangerous target interrupts score collection."
+              }
+            },
+            {
+              "id": "t028-v2",
+              "text": {
+                "ru": "Перезарядка: пауза стрельбы требует выбора момента.",
+                "en": "Reloading: a firing pause requires deliberate timing."
+              }
+            },
+            {
+              "id": "t028-v3",
+              "text": {
+                "ru": "Развилка: поражение переключателя меняет маршрут.",
+                "en": "Branches: hitting a switch changes the route."
+              }
+            },
+            {
+              "id": "t028-v4",
+              "text": {
+                "ru": "Укрытие: отдельная команда прерывает прицеливание.",
+                "en": "Cover: a separate command interrupts aiming to defend."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t029",
+      "section": "mechanics",
+      "title": {
+        "ru": "Twin-stick и multidirectional shooters",
+        "en": "Twin-stick and multidirectional shooters"
+      },
+      "description": {
+        "ru": "Перемещение и направление огня управляются независимо, создавая бой на отступлении и удержание дистанции.",
+        "en": "Movement and firing direction are independent, enabling retreating attacks and deliberate range control."
+      },
+      "example": {
+        "ru": "Герой отступает по спирали и стреляет в центр роя, сохраняя безопасный внешний круг.",
+        "en": "The hero retreats along a spiral while shooting into a swarm and preserving an outer safety lane."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте независимость осей и разную чувствительность: остановка движения не должна случайно менять прицел.",
+        "en": "Test independent axes and sensitivity settings: stopping movement must not unexpectedly change aim."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t029-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t029-v1",
+              "text": {
+                "ru": "Круговой бой: движение обходит центр группы.",
+                "en": "Circling: movement routes around a group's center."
+              }
+            },
+            {
+              "id": "t029-v2",
+              "text": {
+                "ru": "Фиксация: удержание направления облегчает длинную очередь.",
+                "en": "Aim lock: holding direction supports sustained fire."
+              }
+            },
+            {
+              "id": "t029-v3",
+              "text": {
+                "ru": "Перегрев: огонь требует периодического охлаждения.",
+                "en": "Overheat: firing requires periodic cooling breaks."
+              }
+            },
+            {
+              "id": "t029-v4",
+              "text": {
+                "ru": "Отдача: выстрел помогает или мешает перемещению.",
+                "en": "Recoil: shots assist or obstruct character movement."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t030",
+      "section": "mechanics",
+      "title": {
+        "ru": "Shoot ’em up, bullet hell и bullet grazing",
+        "en": "Shoot ’em ups, bullet hell and bullet grazing"
+      },
+      "description": {
+        "ru": "Игрок читает узоры снарядов и выбирает безопасную траекторию; близкий проход может дополнительно давать награду.",
+        "en": "The player reads projectile patterns and chooses safe paths; near misses can optionally grant a reward."
+      },
+      "example": {
+        "ru": "Медленные кольца пересекаются с прицельной очередью, которую можно увести к краю экрана.",
+        "en": "Slow rings intersect an aimed stream that the player can draw toward the screen edge."
+      },
+      "prototypeCheck": {
+        "ru": "Отобразите хитбокс и зону грейзинга; проверьте проходы без случайного наложения неразличимых снарядов.",
+        "en": "Display the hitbox and graze region; verify safe gaps without unreadable projectile overlaps."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html"
+      ],
+      "branches": [
+        {
+          "id": "t030-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t030-v1",
+              "text": {
+                "ru": "Коридоры: узор оставляет предсказуемые проходы.",
+                "en": "Lanes: a pattern leaves predictable safe corridors."
+              }
+            },
+            {
+              "id": "t030-v2",
+              "text": {
+                "ru": "Прицельный залп: движение выманивает поток в сторону.",
+                "en": "Aimed volleys: movement draws a stream away."
+              }
+            },
+            {
+              "id": "t030-v3",
+              "text": {
+                "ru": "Грейзинг: близость к пуле даёт отдельный ресурс.",
+                "en": "Grazing: passing near a bullet earns a separate resource."
+              }
+            },
+            {
+              "id": "t030-v4",
+              "text": {
+                "ru": "Бомба: ограниченный запас очищает опасное поле.",
+                "en": "Bombs: a limited stock clears a dangerous field."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Ray-casting",
+        "en": "Godot: Ray-casting"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/physics/ray-casting.html",
+      "description": {
+        "ru": "Первичная документация запросов пересечения луча в 2D и 3D; техническая основа проверки попадания и линии видимости.",
+        "en": "Primary documentation of 2D and 3D ray intersection queries; implementation context for hit and line-of-sight checks."
+      }
+    }
+  ]
+}

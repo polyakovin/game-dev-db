@@ -1,0 +1,684 @@
+{
+  "id": "vehicles-racing",
+  "overviewGroupId": "g15",
+  "updatedAt": "2026-10-21",
+  "title": {
+    "ru": "Транспорт, гонки и техника",
+    "en": "Vehicles, racing and machinery"
+  },
+  "description": {
+    "ru": "Транспортные механики связывают управление, инерцию, маршрут и состояние машины; выбранная степень упрощения должна быть последовательной.",
+    "en": "Vehicle mechanics connect controls, momentum, routes and machine condition; the chosen simplifications should stay consistent."
+  },
+  "intro": {
+    "ru": "Транспортные механики связывают управление, инерцию, маршрут и состояние машины; выбранная степень упрощения должна быть последовательной. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
+    "en": "Vehicle mechanics connect controls, momentum, routes and machine condition; the chosen simplifications should stay consistent. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+  },
+  "provenance": "Original bilingual editorial overviews authored for Game Dev DB on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
+  "sections": [
+    {
+      "id": "mechanics",
+      "title": {
+        "ru": "Механики и варианты",
+        "en": "Mechanics and variants"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "t139",
+      "section": "mechanics",
+      "title": {
+        "ru": "Аркадные гонки",
+        "en": "Arcade racing"
+      },
+      "description": {
+        "ru": "Аркадная гонка делает траекторию, момент ускорения и борьбу за позицию читаемыми при упрощённой модели движения.",
+        "en": "Arcade racing makes lines, acceleration timing and positional contests readable through simplified vehicle motion."
+      },
+      "example": {
+        "ru": "Ускорение перед поворотом помогает обойти соперника, но затрудняет вход в узкий тоннель.",
+        "en": "Boosting before a bend passes a rival but complicates entry into a narrow tunnel."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте объяснимость потери скорости и действие помощи, особенно при смене покрытия на одном повороте.",
+        "en": "Test understandable speed losses and assistance behavior when surface types change within a bend."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t139-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t139-v1",
+              "text": {
+                "ru": "Ускоритель расходует запас ради краткого преимущества.",
+                "en": "Boost spends reserves for a brief advantage."
+              }
+            },
+            {
+              "id": "t139-v2",
+              "text": {
+                "ru": "Помощь поворота удерживает доступную траекторию.",
+                "en": "Steering assistance maintains usable racing lines."
+              }
+            },
+            {
+              "id": "t139-v3",
+              "text": {
+                "ru": "Срезка обменивает риск на длину пути.",
+                "en": "Shortcuts trade risk against route length."
+              }
+            },
+            {
+              "id": "t139-v4",
+              "text": {
+                "ru": "Догоняющий механизм меняет плотность гонки.",
+                "en": "Catch-up rules change how closely racers compete."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t140",
+      "section": "mechanics",
+      "title": {
+        "ru": "Автосимуляторы и настройка автомобиля",
+        "en": "Driving simulators and car tuning"
+      },
+      "description": {
+        "ru": "Настройка машины меняет поведение на трассе, позволяя согласовать управляемость, ресурс деталей и выбранный стиль прохождения.",
+        "en": "Vehicle setup changes track behavior to align handling, component endurance and a selected driving style."
+      },
+      "example": {
+        "ru": "Короткая передача помогает на подъёме, но ограничивает скорость на длинной прямой.",
+        "en": "Short gearing helps on a climb but limits speed on a long straight."
+      },
+      "prototypeCheck": {
+        "ru": "Сравните одну настройку за раз на одинаковом участке и отдельно обозначьте упрощения модели автомобиля.",
+        "en": "Compare one setup variable at a time on the same section and identify the vehicle model's simplifications."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t140-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t140-v1",
+              "text": {
+                "ru": "Передаточное отношение меняет разгон и предел скорости.",
+                "en": "Gear ratios trade acceleration against top speed."
+              }
+            },
+            {
+              "id": "t140-v2",
+              "text": {
+                "ru": "Подвеска меняет реакцию на неровность.",
+                "en": "Suspension changes responses to uneven ground."
+              }
+            },
+            {
+              "id": "t140-v3",
+              "text": {
+                "ru": "Баланс торможения меняет устойчивость входа.",
+                "en": "Brake balance changes entry stability."
+              }
+            },
+            {
+              "id": "t140-v4",
+              "text": {
+                "ru": "Износ заставляет пересмотреть исходную настройку.",
+                "en": "Wear requires revisiting the initial setup."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t141",
+      "section": "mechanics",
+      "title": {
+        "ru": "Ралли, бездорожье и сцепление",
+        "en": "Rally, off-road driving and traction"
+      },
+      "description": {
+        "ru": "Изменчивое сцепление связывает выбор траектории с покрытием и прогнозом следующего участка вместо одной постоянной скорости поворота.",
+        "en": "Changing grip connects line choices to surface conditions and the next section rather than one constant cornering speed."
+      },
+      "example": {
+        "ru": "Пилот снижает скорость до гребня, потому что заметки предупреждают о гравийном повороте сразу за ним.",
+        "en": "A driver slows before a crest because notes warn of a gravel turn immediately beyond it."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте соответствие визуального покрытия фактическому сцеплению и заблаговременность подсказки перед слепой зоной.",
+        "en": "Test surface appearance against actual grip and cue timing before blind sections."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t141-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t141-v1",
+              "text": {
+                "ru": "Гравий увеличивает неопределённость торможения.",
+                "en": "Gravel increases braking uncertainty."
+              }
+            },
+            {
+              "id": "t141-v2",
+              "text": {
+                "ru": "Колея направляет колёса и ограничивает смену линии.",
+                "en": "Ruts guide wheels and restrict line changes."
+              }
+            },
+            {
+              "id": "t141-v3",
+              "text": {
+                "ru": "Разведка сообщает о скрытом повороте.",
+                "en": "Reconnaissance describes a hidden turn."
+              }
+            },
+            {
+              "id": "t141-v4",
+              "text": {
+                "ru": "Вода меняет доступный безопасный темп.",
+                "en": "Water changes the usable safe pace."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t142",
+      "section": "mechanics",
+      "title": {
+        "ru": "Дрифт, трюки и управление заносом",
+        "en": "Drifting, stunts and skid control"
+      },
+      "description": {
+        "ru": "Управляемый занос и трюки превращают потерю обычного сцепления в оцениваемое действие с выбором входа, удержания и выхода.",
+        "en": "Controlled skids and stunts turn reduced grip into scored actions with deliberate entry, sustain and recovery phases."
+      },
+      "example": {
+        "ru": "Игрок связывает два заноса через прямой участок, сохраняя скорость без касания стены.",
+        "en": "A player connects two drifts across a straight while preserving speed without wall contact."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте, различимы ли контролируемый занос и обычное скольжение и объясняется ли обрыв серии.",
+        "en": "Test distinction between a controlled drift and ordinary sliding and explain why a chain ends."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t142-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t142-v1",
+              "text": {
+                "ru": "Угол заноса повышает награду вместе с риском.",
+                "en": "Drift angle raises reward alongside risk."
+              }
+            },
+            {
+              "id": "t142-v2",
+              "text": {
+                "ru": "Связка требует плавно сменить сторону.",
+                "en": "Transitions require smoothly switching sides."
+              }
+            },
+            {
+              "id": "t142-v3",
+              "text": {
+                "ru": "Приземление проверяет положение и скорость.",
+                "en": "Landings test orientation and velocity."
+              }
+            },
+            {
+              "id": "t142-v4",
+              "text": {
+                "ru": "Повтор трюка уменьшает полезность безопасного шаблона.",
+                "en": "Repeated tricks reduce the value of a safe pattern."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t143",
+      "section": "mechanics",
+      "title": {
+        "ru": "Боевые гонки и преследование",
+        "en": "Combat racing and pursuit"
+      },
+      "description": {
+        "ru": "Гонка с воздействиями добавляет выбор цели и защиты к задаче скорости, позволяя менять расстановку участников на маршруте.",
+        "en": "Combat racing adds target and defense choices to speed management, changing the field's order along a route."
+      },
+      "example": {
+        "ru": "Преследователь ставит ловушку на коротком пути, заставляя лидера выбирать более длинный обход.",
+        "en": "A chaser traps a shortcut and forces the leader to consider a longer bypass."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте контригру последовательно получаемым атакам, чтобы потеря управления не становилась бесконечной цепью.",
+        "en": "Test counterplay to consecutive attacks so loss of control cannot become an endless chain."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t143-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t143-v1",
+              "text": {
+                "ru": "Оружие требует подходящей дистанции и угла.",
+                "en": "Weapons need suitable range and angles."
+              }
+            },
+            {
+              "id": "t143-v2",
+              "text": {
+                "ru": "Щит тратится до или после видимого предупреждения.",
+                "en": "Shields are spent around a visible warning."
+              }
+            },
+            {
+              "id": "t143-v3",
+              "text": {
+                "ru": "Ловушка наказывает предсказуемую траекторию.",
+                "en": "Traps punish predictable racing lines."
+              }
+            },
+            {
+              "id": "t143-v4",
+              "text": {
+                "ru": "Погоня задаёт разные цели беглецу и преследователю.",
+                "en": "Pursuits assign different fugitive and chaser goals."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t144",
+      "section": "mechanics",
+      "title": {
+        "ru": "Мотоспорт и баланс двухколёсного транспорта",
+        "en": "Motorcycle racing and two-wheel balance"
+      },
+      "description": {
+        "ru": "Двухколёсный транспорт связывает поворот и устойчивость с балансом, выбором линии и работой с неровностями.",
+        "en": "Two-wheeled vehicles connect turning and stability to balance, line selection and handling uneven surfaces."
+      },
+      "example": {
+        "ru": "Игрок переносит вес перед приземлением, чтобы сохранить устойчивость на следующем коротком повороте.",
+        "en": "A player shifts weight before landing to remain stable for a following short turn."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте связь баланса с изображением машины и альтернативную схему для устройства без аналоговых триггеров.",
+        "en": "Test visual balance feedback and an alternative scheme for devices without analog triggers."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t144-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t144-v1",
+              "text": {
+                "ru": "Наклон задаёт вход в поворот.",
+                "en": "Leaning establishes entry into a turn."
+              }
+            },
+            {
+              "id": "t144-v2",
+              "text": {
+                "ru": "Перенос веса меняет поведение на прыжке.",
+                "en": "Weight shifts change behavior during jumps."
+              }
+            },
+            {
+              "id": "t144-v3",
+              "text": {
+                "ru": "Торможение перед препятствием требует подготовки.",
+                "en": "Braking before obstacles requires preparation."
+              }
+            },
+            {
+              "id": "t144-v4",
+              "text": {
+                "ru": "Контакт с поверхностью определяет восстановление равновесия.",
+                "en": "Surface contact determines balance recovery."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t145",
+      "section": "mechanics",
+      "title": {
+        "ru": "Авиация и воздушный бой",
+        "en": "Aviation and aerial combat"
+      },
+      "description": {
+        "ru": "Полёт соединяет ориентацию, скорость и запас энергии, а воздушный бой добавляет выбор выгодного сближения с целью.",
+        "en": "Flight connects orientation, speed and energy reserves while aerial combat adds advantageous approach selection."
+      },
+      "example": {
+        "ru": "Самолёт уходит выше противника, но слишком крутой набор оставляет его без скорости для следующего манёвра.",
+        "en": "An aircraft climbs above an opponent, but an excessive climb leaves insufficient speed for the next maneuver."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте понятность потери управляемости и выбранные упрощения полётной модели, отдельно от декоративных эффектов.",
+        "en": "Test understandable control loss and chosen flight-model simplifications separately from decorative effects."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t145-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t145-v1",
+              "text": {
+                "ru": "Набор высоты обменивает скорость на положение.",
+                "en": "Climbing trades speed for position."
+              }
+            },
+            {
+              "id": "t145-v2",
+              "text": {
+                "ru": "Поворот меняет курс ценой энергии.",
+                "en": "Turning changes heading at an energy cost."
+              }
+            },
+            {
+              "id": "t145-v3",
+              "text": {
+                "ru": "Перехват требует прогнозировать точку сближения.",
+                "en": "Interception predicts a meeting point."
+              }
+            },
+            {
+              "id": "t145-v4",
+              "text": {
+                "ru": "Повреждение ограничивает доступный диапазон манёвра.",
+                "en": "Damage restricts the usable maneuvering envelope."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t146",
+      "section": "mechanics",
+      "title": {
+        "ru": "Космические полёты и орбитальные манёвры",
+        "en": "Spaceflight and orbital maneuvers"
+      },
+      "description": {
+        "ru": "Космический манёвр изменяет траекторию импульсом; игрок планирует расход запаса и последующее сближение вместо непрерывного движения к цели.",
+        "en": "Space maneuvers change trajectories through thrust, requiring planning reserves and later encounters rather than continuously steering at a target."
+      },
+      "example": {
+        "ru": "Корабль сначала согласует скорость со станцией и только затем закрывает оставшуюся дистанцию.",
+        "en": "A craft first matches station velocity and only then closes the remaining distance."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте систему отсчёта скорости и объясните, использует ли игра орбитальную модель или условное свободное движение.",
+        "en": "Test velocity reference frames and clarify whether the game uses orbital motion or simplified free movement."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t146-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t146-v1",
+              "text": {
+                "ru": "Импульс меняет будущую траекторию движения.",
+                "en": "Burns change a future trajectory."
+              }
+            },
+            {
+              "id": "t146-v2",
+              "text": {
+                "ru": "Стыковка требует согласовать относительную скорость.",
+                "en": "Docking requires matching relative velocity."
+              }
+            },
+            {
+              "id": "t146-v3",
+              "text": {
+                "ru": "Запас топлива ограничивает число коррекций.",
+                "en": "Fuel limits the number of corrections."
+              }
+            },
+            {
+              "id": "t146-v4",
+              "text": {
+                "ru": "План узла показывает ожидаемый результат манёвра.",
+                "en": "Maneuver nodes preview expected results."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t147",
+      "section": "mechanics",
+      "title": {
+        "ru": "Морской транспорт и подводные аппараты",
+        "en": "Marine vehicles and submersibles"
+      },
+      "description": {
+        "ru": "Управление судном связывает инерцию и среду с маршрутом, а подводный аппарат добавляет выбор глубины и ограниченный обзор.",
+        "en": "Marine controls connect inertia and environment to routing, while submersibles add depth choice and limited visibility."
+      },
+      "example": {
+        "ru": "Буксир начинает поворот до входа в узкий канал, учитывая боковое течение.",
+        "en": "A tug begins turning before entering a narrow channel to account for a cross-current."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте различие скорости относительно воды и берега, если обе используются игровыми правилами.",
+        "en": "Test the distinction between water-relative and shore-relative speed when both affect game rules."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t147-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t147-v1",
+              "text": {
+                "ru": "Инерция требует заранее начинать торможение.",
+                "en": "Inertia requires starting braking early."
+              }
+            },
+            {
+              "id": "t147-v2",
+              "text": {
+                "ru": "Течение меняет путь относительно неподвижной карты.",
+                "en": "Currents change paths relative to the map."
+              }
+            },
+            {
+              "id": "t147-v3",
+              "text": {
+                "ru": "Осадка ограничивает доступную глубину прохода.",
+                "en": "Draft limits the depth of usable passages."
+              }
+            },
+            {
+              "id": "t147-v4",
+              "text": {
+                "ru": "Сонар даёт неполную картину скрытого препятствия.",
+                "en": "Sonar provides incomplete views of hidden obstacles."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "t148",
+      "section": "mechanics",
+      "title": {
+        "ru": "Железнодорожные, грузовые и пассажирские симуляторы",
+        "en": "Rail, freight and passenger transport simulators"
+      },
+      "description": {
+        "ru": "Транспортная работа согласует расписание, вместимость и остановки с ограничениями пути и требованиями пассажиров или груза.",
+        "en": "Transport operations align timetables, capacity and stops with route constraints and passenger or cargo needs."
+      },
+      "example": {
+        "ru": "Тяжёлый поезд тормозит раньше, чтобы точно остановиться у короткой платформы и сохранить пересадку.",
+        "en": "A heavy train brakes earlier to stop at a short platform and preserve a transfer connection."
+      },
+      "prototypeCheck": {
+        "ru": "Проверьте погрузку, доступность дверей и расчёт расписания после задержки на одной промежуточной остановке.",
+        "en": "Test loading, door access and timetable updates after a delay at one intermediate stop."
+      },
+      "sourceUrls": [
+        "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+        "https://www.openttd.org/about"
+      ],
+      "branches": [
+        {
+          "id": "t148-variants",
+          "title": {
+            "ru": "Варианты механики",
+            "en": "Mechanic variants"
+          },
+          "variants": [
+            {
+              "id": "t148-v1",
+              "text": {
+                "ru": "Остановка требует попасть в зону посадки.",
+                "en": "Stops require reaching a boarding zone."
+              }
+            },
+            {
+              "id": "t148-v2",
+              "text": {
+                "ru": "Масса груза меняет разгон и торможение.",
+                "en": "Cargo mass changes acceleration and braking."
+              }
+            },
+            {
+              "id": "t148-v3",
+              "text": {
+                "ru": "Расписание связывает рейс с пересадкой.",
+                "en": "Timetables connect trips to transfers."
+              }
+            },
+            {
+              "id": "t148-v4",
+              "text": {
+                "ru": "Обслуживание техники прерывает доступность транспорта.",
+                "en": "Maintenance interrupts vehicle availability."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [],
+  "sources": [
+    {
+      "title": {
+        "ru": "Godot: Physics introduction",
+        "en": "Godot: Physics introduction"
+      },
+      "url": "https://docs.godotengine.org/en/stable/tutorials/physics/physics_introduction.html",
+      "description": {
+        "ru": "Документация физических тел, столкновений и материалов. Контекст программной модели, не свидетельство точности реального спорта или техники.",
+        "en": "Documentation of physics bodies, collisions and materials. Software-model context, not evidence of real sport or vehicle accuracy."
+      }
+    },
+    {
+      "title": {
+        "ru": "OpenTTD: About",
+        "en": "OpenTTD: About"
+      },
+      "url": "https://www.openttd.org/about",
+      "description": {
+        "ru": "Первичный проект транспортной игры: маршруты, приказы, инфраструктура и работа транспорта. Не источник орбитальной или аэродинамической модели.",
+        "en": "Primary transport-game project: routes, orders, infrastructure and transport operations. Not a source for an orbital or aerodynamic model."
+      }
+    }
+  ]
+}

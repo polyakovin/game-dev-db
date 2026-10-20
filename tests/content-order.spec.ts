@@ -63,6 +63,8 @@ for (const lang of ['ru', 'en'] as const) {
     page,
     request,
   }) => {
+    // This integration check visits every catalog and its Markdown export.
+    test.setTimeout(120_000);
     const lessons = (
       await (await request.get(`${base}/api/v1/lessons.json`)).json()
     ).lessons.filter((l: any) => l.lang === lang);
@@ -73,7 +75,7 @@ for (const lang of ['ru', 'en'] as const) {
         .evaluateAll((cards) =>
           cards.map((card) => card.getAttribute('href')!.split('/').at(-2)),
         );
-    expect(await lessonIds()).toEqual(ids(lessons));
+    await expect.poll(lessonIds).toEqual(ids(lessons));
     expect(lessons.slice(0, 3).map((l: any) => l.id)).toEqual([
       'scope-and-prototype',
       'game-loop',
@@ -81,7 +83,7 @@ for (const lang of ['ru', 'en'] as const) {
     ]);
     await page.locator('#lesson-search').fill('nonexistent-priority-check');
     await page.locator('#reset-search').click();
-    expect(await lessonIds()).toEqual(ids(lessons));
+    await expect.poll(lessonIds).toEqual(ids(lessons));
 
     const mechanics = (
       await (await request.get(`${base}/api/v1/mechanics.json`)).json()
@@ -116,7 +118,7 @@ for (const lang of ['ru', 'en'] as const) {
         ...directionIndex.groups.flatMap((group: any) => group.directions),
       ]
         .filter((entry: any) => entry.status === 'ready')
-        .map((entry: any) => entry.catalogId),
+        .map((entry: any) => entry.materialRef?.catalogId ?? entry.catalogId),
     );
     for (const catalog of mechanics) {
       await page.goto(new URL(catalog.url).pathname);
