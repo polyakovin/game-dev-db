@@ -52,7 +52,7 @@ const t = ui[lang];
     </div>
   </header>
   <div class="mechanics-layout">
-    <div class="mechanics-content">
+    <div class="mechanics-content" data-toc-content>
       <div class="mechanics-controls" hidden>
         <label for="mechanic-search">
           {ru
@@ -237,7 +237,7 @@ const t = ui[lang];
       </section>
     </div>
     <aside class="mechanics-toc">
-      <nav aria-label={t.toc}>
+      <nav aria-label={t.toc} data-toc>
         <p class="nav-label">{t.toc}</p>
         {[
           ...catalog.sections,
@@ -252,4 +252,5 @@ const t = ui[lang];
 </Layout>
 <script>
   import '../../../scripts/mechanics-search';
+  import '../../../scripts/table-of-contents';
 </script>

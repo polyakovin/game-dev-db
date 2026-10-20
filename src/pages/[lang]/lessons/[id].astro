@@ -46,7 +46,7 @@ const related = (await getLessons(data.lang))
     </div>
   </header>
   <div class="article-layout">
-    <article class="prose">
+    <article class="prose" data-toc-content>
       <Content />
       <section class="article-sources" id="sources">
         <h2>{t.sources}</h2>
@@ -63,7 +63,7 @@ const related = (await getLessons(data.lang))
     <aside class="article-aside">
       <div class="sticky-toc">
         <p class="nav-label">{t.toc}</p>
-        <nav aria-label={t.toc}>
+        <nav aria-label={t.toc} data-toc>
           {headings
             .filter((h) => h.depth === 2)
             .map((h) => (
@@ -104,3 +104,6 @@ const related = (await getLessons(data.lang))
     </section>
   )}
 </Layout>
+<script>
+  import '../../../scripts/table-of-contents';
+</script>

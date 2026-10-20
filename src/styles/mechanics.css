@@ -231,6 +231,9 @@
 .mechanics-toc a:hover {
   color: var(--accent);
 }
+.mechanics-toc a[aria-current='location']::before {
+  left: -17px;
+}
 summary:focus-visible,
 select:focus-visible {
   outline: 2px solid var(--accent);
@@ -254,6 +257,12 @@ select:focus-visible {
   }
   .mechanics-toc .nav-label {
     width: 100%;
+  }
+  .mechanics-toc a {
+    padding-left: 10px;
+  }
+  .mechanics-toc a[aria-current='location']::before {
+    left: 0;
   }
 }
 @media (max-width: 650px) {

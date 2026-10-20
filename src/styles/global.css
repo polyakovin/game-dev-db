@@ -860,6 +860,22 @@ footer a:hover {
 .article-aside nav a:hover {
   color: var(--accent);
 }
+[data-toc] a {
+  position: relative;
+}
+[data-toc] a[aria-current='location'] {
+  color: var(--accent);
+}
+[data-toc] a[aria-current='location']::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -16px;
+  width: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+}
 .article-tools {
   display: flex;
   flex-direction: column;
