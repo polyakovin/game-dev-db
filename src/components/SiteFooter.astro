@@ -1,0 +1,66 @@
+---
+import Icon from './Icon.astro';
+import { REPO, ui, type Locale } from '../lib/site';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const t = ui[lang];
+const copy = {
+  ru: {
+    createdBy: 'Создал и поддерживает',
+    contacts: 'Контакты автора',
+    email: 'Почта',
+    contribute: 'Участие в проекте',
+    guide: 'Как помочь',
+    correction: 'Предложить исправление',
+  },
+  en: {
+    createdBy: 'Created and maintained by',
+    contacts: 'Author contacts',
+    email: 'Email',
+    contribute: 'Contribute',
+    guide: 'How to contribute',
+    correction: 'Suggest a correction',
+  },
+}[lang];
+---
+
+<footer class="site-footer">
+  <div class="footer-project">
+    <p class="footer-title">Game Dev DB</p>
+    <p>{t.footer}</p>
+    <a href={`${REPO}/blob/main/CONTENT-LICENSE.md`}>{t.license}</a>
+  </div>
+  <div class="footer-creator">
+    <p class="footer-byline">
+      {copy.createdBy}{' '}
+      <a href="https://github.com/polyakovin" rel="author">
+        Igor Polyakov
+      </a>
+    </p>
+    <nav class="footer-contacts" aria-label={copy.contacts}>
+      <a href="https://t.me/polyakovin">
+        Telegram <Icon name="external" size={13} />
+      </a>
+      <a href="https://www.linkedin.com/in/polyakovin/">
+        LinkedIn <Icon name="external" size={13} />
+      </a>
+      <a href="mailto:web@polyakovin.ru">{copy.email}</a>
+    </nav>
+  </div>
+  <nav class="footer-contribute" aria-label={copy.contribute}>
+    <p class="footer-title">{copy.contribute}</p>
+    <a href={`${REPO}/blob/main/CONTRIBUTING.md`}>
+      {copy.guide} <Icon name="arrow" size={14} />
+    </a>
+    <a href={`${REPO}/issues/new`}>
+      {copy.correction} <Icon name="external" size={13} />
+    </a>
+    <a href={REPO}>
+      GitHub <Icon name="external" size={13} />
+    </a>
+  </nav>
+</footer>

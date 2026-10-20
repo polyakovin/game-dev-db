@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import ThemeHead from '../components/ThemeHead.astro';
 import ThemeSwitch from '../components/ThemeSwitch.astro';
 import { path, absolute, REPO, ui, categories, type Locale } from '../lib/site';
@@ -163,10 +164,7 @@ const nav = [
       <main id="main" tabindex="-1">
         <slot />
       </main>
-      <footer>
-        <span>{t.footer}</span>
-        <a href={`${REPO}/blob/main/CONTENT-LICENSE.md`}>{t.license}</a>
-      </footer>
+      <SiteFooter lang={lang} />
     </div>
   </body>
 </html>
