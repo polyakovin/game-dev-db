@@ -1,0 +1,55 @@
+---
+import Icon from './Icon.astro';
+import { path, type Locale } from '../lib/site';
+import { getMechanicDirections } from '../lib/mechanic-directions.mjs';
+type Direction = ReturnType<
+  typeof getMechanicDirections
+>['groups'][number]['directions'][number];
+interface Props {
+  direction: Direction;
+  lang: Locale;
+  groupId: string;
+}
+const { direction, lang, groupId } = Astro.props;
+const ready = direction.status === 'ready';
+const Tag = ready ? 'a' : 'div';
+---
+
+<li
+  id={direction.id}
+  data-direction
+  data-direction-id={direction.id}
+  data-group={groupId}
+  data-status={direction.status}
+  data-search={direction.searchText}
+>
+  <Tag
+    class:list={['direction-card', { 'direction-card-ready': ready }]}
+    href={ready ? path(`${lang}/mechanics/${direction.catalogId}/`) : undefined}
+    data-mechanics-card={ready || undefined}
+  >
+    <span
+      class:list={['direction-status', { 'direction-status-ready': ready }]}
+    >
+      {ready
+        ? lang === 'ru'
+          ? 'Готово'
+          : 'Ready'
+        : lang === 'ru'
+          ? 'В разработке'
+          : 'In development'}
+    </span>
+    <h3>{direction.title}</h3>
+    {ready && direction.counts && (
+      <div class="direction-card-footer">
+        <span>
+          {lang === 'ru' ? 'Семейства' : 'Families'}:{' '}
+          {direction.counts.families}
+          <span aria-hidden="true"> · </span>
+          {lang === 'ru' ? 'Варианты' : 'Variants'}: {direction.counts.variants}
+        </span>
+        <Icon name="arrow" size={16} />
+      </div>
+    )}
+  </Tag>
+</li>

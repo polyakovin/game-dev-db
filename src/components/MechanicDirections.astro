@@ -1,0 +1,130 @@
+---
+import { getMechanicDirections } from '../lib/mechanic-directions.mjs';
+import { path, type Locale } from '../lib/site';
+import MechanicDirectionCard from './MechanicDirectionCard.astro';
+import '../styles/mechanic-directions.css';
+interface Props {
+  lang: Locale;
+}
+const { lang } = Astro.props;
+const ru = lang === 'ru';
+const index = getMechanicDirections(lang);
+const generalTitle = ru ? 'Общие справочники' : 'General references';
+---
+
+<div data-direction-index data-lang={lang}>
+  <form class="direction-controls" data-direction-controls hidden role="search">
+    <div class="direction-search-field">
+      <label for="direction-search">
+        {ru ? 'Поиск по направлениям' : 'Search directions'}
+      </label>
+      <input
+        id="direction-search"
+        type="search"
+        placeholder={
+          ru
+            ? 'Например: стелс, ритм, торговля…'
+            : 'For example: stealth, rhythm, trade…'
+        }
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label for="direction-group">{ru ? 'Раздел' : 'Group'}</label>
+      <select id="direction-group">
+        <option value="all">{ru ? 'Все разделы' : 'All groups'}</option>
+        {index.additionalCatalogs.length > 0 && (
+          <option value="general">{generalTitle}</option>
+        )}
+        {index.groups.map((group) => (
+          <option value={group.id}>{group.title}</option>
+        ))}
+      </select>
+    </div>
+    <label class="direction-ready-control" for="direction-ready">
+      <input id="direction-ready" type="checkbox" />
+      <span>{ru ? 'Только готовые' : 'Ready only'}</span>
+    </label>
+    <button type="reset" class="direction-reset">
+      {ru ? 'Сбросить' : 'Reset'}
+    </button>
+  </form>
+  <noscript>
+    <p class="notice">
+      {ru
+        ? 'Все направления показаны ниже. Для поиска и фильтрации включите JavaScript.'
+        : 'All directions are listed below. Enable JavaScript to search and filter.'}
+    </p>
+  </noscript>
+  <div class="direction-result-line">
+    <p data-direction-result role="status" aria-live="polite">
+      {ru ? 'Показано' : 'Showing'}: {index.counts.entries} /{' '}
+      {index.counts.entries}
+    </p>
+    <a href={path('api/v1/mechanic-directions.json')}>JSON</a>
+  </div>
+  <div class="empty-state direction-empty" data-direction-empty hidden>
+    <h2>{ru ? 'Ничего не нашлось' : 'No matches'}</h2>
+    <p>
+      {ru
+        ? 'Измените запрос, выберите другой раздел или отключите фильтр готовых материалов.'
+        : 'Change the query, choose another group or turn off the ready-only filter.'}
+    </p>
+    <button type="button" class="direction-reset" data-direction-reset>
+      {ru ? 'Сбросить фильтры' : 'Reset filters'}
+    </button>
+  </div>
+  {index.additionalCatalogs.length > 0 && (
+    <section
+      class="direction-group"
+      data-direction-group="general"
+      aria-labelledby="general"
+    >
+      <div class="direction-group-heading">
+        <h2 id="general">{generalTitle}</h2>
+        <span data-direction-group-count>
+          {index.additionalCatalogs.length} / {index.additionalCatalogs.length}
+        </span>
+      </div>
+      <ul class="direction-grid">
+        {index.additionalCatalogs.map((direction) => (
+          <MechanicDirectionCard
+            direction={direction}
+            lang={lang}
+            groupId="general"
+          />
+        ))}
+      </ul>
+    </section>
+  )}
+  {index.groups.map((group, i) => (
+    <section
+      class="direction-group"
+      data-direction-group={group.id}
+      aria-labelledby={group.id}
+    >
+      <div class="direction-group-heading">
+        <span class="direction-group-number" aria-hidden="true">
+          {String(i + 1).padStart(2, '0')}
+        </span>
+        <h2 id={group.id}>{group.title}</h2>
+        <span data-direction-group-count>
+          {group.directions.length} / {group.directions.length}
+        </span>
+      </div>
+      <ul class="direction-grid">
+        {group.directions.map((direction) => (
+          <MechanicDirectionCard
+            direction={direction}
+            lang={lang}
+            groupId={group.id}
+          />
+        ))}
+      </ul>
+    </section>
+  ))}
+</div>
+
+<script>
+  import '../scripts/mechanic-directions-search';
+</script>

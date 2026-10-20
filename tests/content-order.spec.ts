@@ -59,7 +59,7 @@ test('editorial validation rejects duplicate identities and stale scopes or entr
 });
 
 for (const lang of ['ru', 'en'] as const) {
-  test(`${lang}: catalog groups and items share importance order with exports`, async ({
+  test(`${lang}: catalog groups and items share editorial order with their exports`, async ({
     page,
     request,
   }) => {
@@ -87,7 +87,6 @@ for (const lang of ['ru', 'en'] as const) {
       await (await request.get(`${base}/api/v1/mechanics.json`)).json()
     ).catalogs.filter((c: any) => c.lang === lang);
     expect(mechanics[0].id).toBe('game-mechanics');
-    await page.goto(`${base}/${lang}/mechanics/`);
     expect(
       await page
         .locator('[data-mechanics-card]')
@@ -98,6 +97,26 @@ for (const lang of ['ru', 'en'] as const) {
       ids(
         mechanics.filter((catalog: any) => catalog.id !== 'children-education'),
       ),
+    );
+    const directionIndex = (
+      await (
+        await request.get(`${base}/api/v1/mechanic-directions.json`)
+      ).json()
+    ).indexes.find((index: any) => index.lang === lang);
+    await page.goto(`${base}/${lang}/mechanics/`);
+    expect(
+      await page
+        .locator('[data-mechanics-card]')
+        .evaluateAll((cards) =>
+          cards.map((c) => c.getAttribute('href')!.split('/').at(-2)),
+        ),
+    ).toEqual(
+      [
+        ...directionIndex.additionalCatalogs,
+        ...directionIndex.groups.flatMap((group: any) => group.directions),
+      ]
+        .filter((entry: any) => entry.status === 'ready')
+        .map((entry: any) => entry.catalogId),
     );
     for (const catalog of mechanics) {
       await page.goto(new URL(catalog.url).pathname);

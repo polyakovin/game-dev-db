@@ -1,13 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import MechanicsCards from '../../../components/MechanicsCards.astro';
+import MechanicDirections from '../../../components/MechanicDirections.astro';
 import { getMechanics } from '../../../lib/mechanics.mjs';
+import { getMechanicDirections } from '../../../lib/mechanic-directions.mjs';
 import { locales, ui, type Locale } from '../../../lib/site';
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Locale;
 const ru = lang === 'ru';
+const directions = getMechanicDirections(lang);
 const counts = getMechanics(lang).reduce(
   (sum, c) => ({
     families: sum.families + c.counts.families,
@@ -30,10 +32,20 @@ const counts = getMechanics(lang).reduce(
     <h1>{ru ? 'Из чего складывается игра.' : 'What makes up a game.'}</h1>
     <p>
       {ru
-        ? 'Подробные карты механик: действия игрока, ответвления, сочетания и примеры с источниками. Выберите формат и найдите подходящий приём для прототипа.'
-        : 'Detailed mechanic maps: player actions, variants, combinations and sourced examples. Choose a format and find a technique for your prototype.'}
+        ? 'Полная карта направлений: жанры, игровые системы и способы взаимодействия. Открывайте готовые обзоры или исследуйте всю структуру. Материалы, которые ещё готовятся, отмечены «В разработке».'
+        : 'A complete map of genres, game systems and ways to interact. Open ready references or explore the full structure. Upcoming materials are labeled “In development”.'}
     </p>
     <div class="article-meta">
+      <span>
+        {ru ? 'Направления' : 'Directions'}: {directions.counts.directions}
+      </span>
+      <span>
+        {ru ? 'Разделы' : 'Groups'}: {directions.counts.groups}
+      </span>
+      <span>
+        {ru ? 'Готовые материалы' : 'Ready materials'}:{' '}
+        {directions.counts.readyMaterials}
+      </span>
       <span>
         {ru ? 'Семейства' : 'Families'}: {counts.families}
       </span>
@@ -43,7 +55,7 @@ const counts = getMechanics(lang).reduce(
       <span>RU + EN</span>
     </div>
   </header>
-  <MechanicsCards lang={lang} />
+  <MechanicDirections lang={lang} />
   <p class="notice mechanics-notice">
     {ru
       ? 'Это рабочие классификации пространства дизайна. Семейства могут пересекаться, а примеры проектирования являются иллюстрациями. Источники подтверждают отдельные приёмы и методологию.'

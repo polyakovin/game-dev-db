@@ -1,0 +1,2926 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-20",
+  "groups": [
+    {
+      "id": "g01",
+      "title": {
+        "ru": "Передвижение и платформинг",
+        "en": "Movement and platforming"
+      },
+      "directions": [
+        {
+          "id": "t001",
+          "title": {
+            "ru": "Платформеры 2D",
+            "en": "2D platformers"
+          },
+          "catalogId": "2d-platformers"
+        },
+        {
+          "id": "t002",
+          "title": {
+            "ru": "Платформеры 3D",
+            "en": "3D platformers"
+          },
+          "catalogId": "3d-platformers"
+        },
+        {
+          "id": "t003",
+          "title": {
+            "ru": "Точные прыжки и приземления",
+            "en": "Precision jumping and landing"
+          },
+          "catalogId": "precision-jumping-and-landing"
+        },
+        {
+          "id": "t004",
+          "title": {
+            "ru": "Инерция и сохранение скорости",
+            "en": "Momentum and speed preservation"
+          },
+          "catalogId": "momentum-and-speed-preservation"
+        },
+        {
+          "id": "t005",
+          "title": {
+            "ru": "Паркур и преодоление препятствий",
+            "en": "Parkour and obstacle traversal"
+          },
+          "catalogId": "parkour-and-obstacle-traversal"
+        },
+        {
+          "id": "t006",
+          "title": {
+            "ru": "Лазание и удержание на поверхностях",
+            "en": "Climbing and holding onto surfaces"
+          },
+          "catalogId": "climbing-and-holding-onto-surfaces"
+        },
+        {
+          "id": "t007",
+          "title": {
+            "ru": "Крюк, верёвки и раскачивание",
+            "en": "Grappling hooks, ropes and swinging"
+          },
+          "catalogId": "grappling-hooks-ropes-and-swinging"
+        },
+        {
+          "id": "t008",
+          "title": {
+            "ru": "Полёт и планирование",
+            "en": "Flight and gliding"
+          },
+          "catalogId": "flight-and-gliding"
+        },
+        {
+          "id": "t009",
+          "title": {
+            "ru": "Плавание и подводное движение",
+            "en": "Swimming and underwater movement"
+          },
+          "catalogId": "swimming-and-underwater-movement"
+        },
+        {
+          "id": "t010",
+          "title": {
+            "ru": "Раннеры и полосы препятствий",
+            "en": "Runners and obstacle courses"
+          },
+          "catalogId": "runners-and-obstacle-courses"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title": {
+        "ru": "Ближний бой и боевые системы",
+        "en": "Melee and combat systems"
+      },
+      "directions": [
+        {
+          "id": "t011",
+          "title": {
+            "ru": "Рукопашный бой и beat ’em up",
+            "en": "Hand-to-hand combat and beat ’em ups"
+          },
+          "catalogId": "hand-to-hand-combat-and-beat-em-ups"
+        },
+        {
+          "id": "t012",
+          "title": {
+            "ru": "Файтинг и дуэли",
+            "en": "Fighting games and duels"
+          },
+          "catalogId": "fighting-games-and-duels"
+        },
+        {
+          "id": "t013",
+          "title": {
+            "ru": "Комбо и character action",
+            "en": "Combos and character action"
+          },
+          "catalogId": "combos-and-character-action"
+        },
+        {
+          "id": "t014",
+          "title": {
+            "ru": "Soulslike и управление выносливостью",
+            "en": "Soulslikes and stamina management"
+          },
+          "catalogId": "soulslikes-and-stamina-management"
+        },
+        {
+          "id": "t015",
+          "title": {
+            "ru": "Hack and slash",
+            "en": "Hack and slash"
+          },
+          "catalogId": "hack-and-slash"
+        },
+        {
+          "id": "t016",
+          "title": {
+            "ru": "Блокирование, парирование и контратаки",
+            "en": "Blocking, parrying and counterattacks"
+          },
+          "catalogId": "blocking-parrying-and-counterattacks"
+        },
+        {
+          "id": "t017",
+          "title": {
+            "ru": "Захваты, броски и борьба",
+            "en": "Grapples, throws and wrestling"
+          },
+          "catalogId": "grapples-throws-and-wrestling"
+        },
+        {
+          "id": "t018",
+          "title": {
+            "ru": "Бой с толпой и контроль пространства",
+            "en": "Crowd combat and space control"
+          },
+          "catalogId": "crowd-combat-and-space-control"
+        },
+        {
+          "id": "t019",
+          "title": {
+            "ru": "Механики боссов",
+            "en": "Boss mechanics"
+          },
+          "catalogId": "boss-fight-atlas"
+        },
+        {
+          "id": "t020",
+          "title": {
+            "ru": "Разрушаемые части, ранения и состояния",
+            "en": "Breakable parts, injuries and conditions"
+          },
+          "catalogId": "breakable-parts-injuries-and-conditions"
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title": {
+        "ru": "Стрельба и снаряды",
+        "en": "Shooting and projectiles"
+      },
+      "directions": [
+        {
+          "id": "t021",
+          "title": {
+            "ru": "Шутеры от первого лица",
+            "en": "First-person shooters"
+          },
+          "catalogId": "first-person-shooters"
+        },
+        {
+          "id": "t022",
+          "title": {
+            "ru": "Шутеры от третьего лица и укрытия",
+            "en": "Third-person shooters and cover"
+          },
+          "catalogId": "third-person-shooters-and-cover"
+        },
+        {
+          "id": "t023",
+          "title": {
+            "ru": "Арена-шутеры",
+            "en": "Arena shooters"
+          },
+          "catalogId": "arena-shooters"
+        },
+        {
+          "id": "t024",
+          "title": {
+            "ru": "Тактические шутеры",
+            "en": "Tactical shooters"
+          },
+          "catalogId": "tactical-shooters"
+        },
+        {
+          "id": "t025",
+          "title": {
+            "ru": "Геройские шутеры",
+            "en": "Hero shooters"
+          },
+          "catalogId": "hero-shooters"
+        },
+        {
+          "id": "t026",
+          "title": {
+            "ru": "Лутер-шутеры",
+            "en": "Looter shooters"
+          },
+          "catalogId": "looter-shooters"
+        },
+        {
+          "id": "t027",
+          "title": {
+            "ru": "Extraction-шутеры",
+            "en": "Extraction shooters"
+          },
+          "catalogId": "extraction-shooters"
+        },
+        {
+          "id": "t028",
+          "title": {
+            "ru": "Рельсовые и light-gun-шутеры",
+            "en": "Rail and light-gun shooters"
+          },
+          "catalogId": "rail-and-light-gun-shooters"
+        },
+        {
+          "id": "t029",
+          "title": {
+            "ru": "Twin-stick и multidirectional shooters",
+            "en": "Twin-stick and multidirectional shooters"
+          },
+          "catalogId": "twin-stick-and-multidirectional-shooters"
+        },
+        {
+          "id": "t030",
+          "title": {
+            "ru": "Shoot ’em up, bullet hell и bullet grazing",
+            "en": "Shoot ’em ups, bullet hell and bullet grazing"
+          },
+          "catalogId": "shoot-em-ups-bullet-hell-and-bullet-grazing"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title": {
+        "ru": "Стелс, проникновение и побег",
+        "en": "Stealth, infiltration and escape"
+      },
+      "directions": [
+        {
+          "id": "t031",
+          "title": {
+            "ru": "Видимость, шум и обнаружение",
+            "en": "Visibility, noise and detection"
+          },
+          "catalogId": "visibility-noise-and-detection"
+        },
+        {
+          "id": "t032",
+          "title": {
+            "ru": "Подозрение, тревога и поиск",
+            "en": "Suspicion, alerts and searching"
+          },
+          "catalogId": "suspicion-alerts-and-searching"
+        },
+        {
+          "id": "t033",
+          "title": {
+            "ru": "Укрытие тела и следов",
+            "en": "Hiding bodies and traces"
+          },
+          "catalogId": "hiding-bodies-and-traces"
+        },
+        {
+          "id": "t034",
+          "title": {
+            "ru": "Маскировка и социальное проникновение",
+            "en": "Disguises and social infiltration"
+          },
+          "catalogId": "disguises-and-social-infiltration"
+        },
+        {
+          "id": "t035",
+          "title": {
+            "ru": "Приманки, отвлечения и саботаж",
+            "en": "Lures, distractions and sabotage"
+          },
+          "catalogId": "lures-distractions-and-sabotage"
+        },
+        {
+          "id": "t036",
+          "title": {
+            "ru": "Слежка, разведка и контрнаблюдение",
+            "en": "Tailing, reconnaissance and counter-surveillance"
+          },
+          "catalogId": "tailing-reconnaissance-and-counter-surveillance"
+        },
+        {
+          "id": "t037",
+          "title": {
+            "ru": "Ограбления и синхронное проникновение",
+            "en": "Heists and coordinated infiltration"
+          },
+          "catalogId": "heists-and-coordinated-infiltration"
+        },
+        {
+          "id": "t038",
+          "title": {
+            "ru": "Побег, погоня и уход от преследования",
+            "en": "Escape, chases and evading pursuit"
+          },
+          "catalogId": "escape-chases-and-evading-pursuit"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title": {
+        "ru": "Исследование и приключения",
+        "en": "Exploration and adventures"
+      },
+      "directions": [
+        {
+          "id": "t039",
+          "title": {
+            "ru": "Point-and-click-квесты",
+            "en": "Point-and-click adventures"
+          },
+          "catalogId": "point-and-click"
+        },
+        {
+          "id": "t040",
+          "title": {
+            "ru": "Action-adventure",
+            "en": "Action-adventure"
+          },
+          "catalogId": "action-adventure"
+        },
+        {
+          "id": "t041",
+          "title": {
+            "ru": "Метроидвании",
+            "en": "Metroidvanias"
+          },
+          "catalogId": "metroidvania"
+        },
+        {
+          "id": "t042",
+          "title": {
+            "ru": "Метроидбрейнии и прогресс через знание",
+            "en": "Metroidbrainias and knowledge-based progression"
+          },
+          "catalogId": "metroidbrainia"
+        },
+        {
+          "id": "t043",
+          "title": {
+            "ru": "Открытый мир и свободное исследование",
+            "en": "Open worlds and free exploration"
+          },
+          "catalogId": "open-worlds-and-free-exploration"
+        },
+        {
+          "id": "t044",
+          "title": {
+            "ru": "Экспедиции и возвращение на базу",
+            "en": "Expeditions and returning to base"
+          },
+          "catalogId": "expeditions-and-returning-to-base"
+        },
+        {
+          "id": "t045",
+          "title": {
+            "ru": "Навигация, карты и ориентирование",
+            "en": "Navigation, maps and wayfinding"
+          },
+          "catalogId": "navigation-maps-and-wayfinding"
+        },
+        {
+          "id": "t046",
+          "title": {
+            "ru": "Археология и интерпретация окружения",
+            "en": "Archaeology and interpreting environments"
+          },
+          "catalogId": "archaeology-and-interpreting-environments"
+        },
+        {
+          "id": "t047",
+          "title": {
+            "ru": "Поиск сокровищ и секретов",
+            "en": "Treasure hunting and secrets"
+          },
+          "catalogId": "treasure-hunting-and-secrets"
+        },
+        {
+          "id": "t048",
+          "title": {
+            "ru": "Walking simulator и исследование через наблюдение",
+            "en": "Walking simulators and observational exploration"
+          },
+          "catalogId": "walking-simulators-and-observational-exploration"
+        }
+      ]
+    },
+    {
+      "id": "g06",
+      "title": {
+        "ru": "Ролевые системы",
+        "en": "Role-playing systems"
+      },
+      "directions": [
+        {
+          "id": "t049",
+          "title": {
+            "ru": "Создание персонажа и распределение характеристик",
+            "en": "Character creation and attribute allocation"
+          },
+          "catalogId": "character-creation-and-attribute-allocation"
+        },
+        {
+          "id": "t050",
+          "title": {
+            "ru": "Классы, специализации и смена ролей",
+            "en": "Classes, specializations and role switching"
+          },
+          "catalogId": "classes-specializations-and-role-switching"
+        },
+        {
+          "id": "t051",
+          "title": {
+            "ru": "Билды и синергии способностей",
+            "en": "Builds and ability synergies"
+          },
+          "catalogId": "builds-and-ability-synergies"
+        },
+        {
+          "id": "t052",
+          "title": {
+            "ru": "Партийные роли и состав отряда",
+            "en": "Party roles and team composition"
+          },
+          "catalogId": "party-roles-and-team-composition"
+        },
+        {
+          "id": "t053",
+          "title": {
+            "ru": "Снаряжение, аффиксы и наборы предметов",
+            "en": "Equipment, affixes and item sets"
+          },
+          "catalogId": "equipment-affixes-and-item-sets"
+        },
+        {
+          "id": "t054",
+          "title": {
+            "ru": "Статусы, стихии и сопротивления",
+            "en": "Status effects, elements and resistances"
+          },
+          "catalogId": "status-effects-elements-and-resistances"
+        },
+        {
+          "id": "t055",
+          "title": {
+            "ru": "Развитие навыков через использование",
+            "en": "Learning skills through use"
+          },
+          "catalogId": "learning-skills-through-use"
+        },
+        {
+          "id": "t056",
+          "title": {
+            "ru": "RPG-гринд и повторяемые циклы",
+            "en": "RPG grinding and repeatable loops"
+          },
+          "catalogId": "rpg-grind"
+        },
+        {
+          "id": "t057",
+          "title": {
+            "ru": "Репутация, фракции и мировоззрение",
+            "en": "Reputation, factions and alignment"
+          },
+          "catalogId": "reputation-factions-and-alignment"
+        },
+        {
+          "id": "t058",
+          "title": {
+            "ru": "Квесты, контракты и последствия решений",
+            "en": "Quests, contracts and consequences"
+          },
+          "catalogId": "quests-contracts-and-consequences"
+        }
+      ]
+    },
+    {
+      "id": "g07",
+      "title": {
+        "ru": "Roguelike и структура забега",
+        "en": "Roguelikes and run structure"
+      },
+      "directions": [
+        {
+          "id": "t059",
+          "title": {
+            "ru": "Roguelike и roguelite",
+            "en": "Roguelikes and roguelites"
+          },
+          "catalogId": "roguelike"
+        },
+        {
+          "id": "t060",
+          "title": {
+            "ru": "Традиционные пошаговые roguelike",
+            "en": "Traditional turn-based roguelikes"
+          },
+          "catalogId": "traditional-turn-based-roguelikes"
+        },
+        {
+          "id": "t061",
+          "title": {
+            "ru": "Action-roguelike",
+            "en": "Action roguelikes"
+          },
+          "catalogId": "action-roguelikes"
+        },
+        {
+          "id": "t062",
+          "title": {
+            "ru": "Survivor-like и автоматические атаки",
+            "en": "Survivor-likes and automatic attacks"
+          },
+          "catalogId": "survivor-likes-and-automatic-attacks"
+        },
+        {
+          "id": "t063",
+          "title": {
+            "ru": "Dungeon crawler и истощение в подземелье",
+            "en": "Dungeon crawlers and resource attrition"
+          },
+          "catalogId": "dungeon-crawlers-and-resource-attrition"
+        },
+        {
+          "id": "t064",
+          "title": {
+            "ru": "Ветвящиеся маршруты и выбор следующей комнаты",
+            "en": "Branching routes and choosing the next room"
+          },
+          "catalogId": "branching-routes-and-choosing-the-next-room"
+        },
+        {
+          "id": "t065",
+          "title": {
+            "ru": "Временные билды, драфт улучшений и синергии",
+            "en": "Temporary builds, upgrade drafts and synergies"
+          },
+          "catalogId": "temporary-builds-upgrade-drafts-and-synergies"
+        },
+        {
+          "id": "t066",
+          "title": {
+            "ru": "Смерть, наследование и метапрогрессия",
+            "en": "Death, inheritance and metaprogression"
+          },
+          "catalogId": "death-inheritance-and-metaprogression"
+        }
+      ]
+    },
+    {
+      "id": "g08",
+      "title": {
+        "ru": "Стратегии",
+        "en": "Strategy games"
+      },
+      "directions": [
+        {
+          "id": "t067",
+          "title": {
+            "ru": "Стратегии в реальном времени",
+            "en": "Real-time strategy"
+          },
+          "catalogId": "real-time-strategy"
+        },
+        {
+          "id": "t068",
+          "title": {
+            "ru": "Пошаговые стратегии",
+            "en": "Turn-based strategy"
+          },
+          "catalogId": "turn-based-strategy"
+        },
+        {
+          "id": "t069",
+          "title": {
+            "ru": "4X",
+            "en": "4X"
+          },
+          "catalogId": "4x"
+        },
+        {
+          "id": "t070",
+          "title": {
+            "ru": "Глобальные стратегии и династии",
+            "en": "Grand strategy and dynasties"
+          },
+          "catalogId": "grand-strategy-and-dynasties"
+        },
+        {
+          "id": "t071",
+          "title": {
+            "ru": "Военные стратегии и оперативное планирование",
+            "en": "Wargames and operational planning"
+          },
+          "catalogId": "wargames-and-operational-planning"
+        },
+        {
+          "id": "t072",
+          "title": {
+            "ru": "RTT и командование без строительства базы",
+            "en": "Real-time tactics without base building"
+          },
+          "catalogId": "real-time-tactics-without-base-building"
+        },
+        {
+          "id": "t073",
+          "title": {
+            "ru": "MOBA и контроль линий",
+            "en": "MOBAs and lane control"
+          },
+          "catalogId": "mobas-and-lane-control"
+        },
+        {
+          "id": "t074",
+          "title": {
+            "ru": "Асимметричные фракции",
+            "en": "Asymmetric factions"
+          },
+          "catalogId": "asymmetric-factions"
+        },
+        {
+          "id": "t075",
+          "title": {
+            "ru": "Дипломатия и международные отношения",
+            "en": "Diplomacy and international relations"
+          },
+          "catalogId": "diplomacy-and-international-relations"
+        },
+        {
+          "id": "t076",
+          "title": {
+            "ru": "Туман войны, разведка и информационное преимущество",
+            "en": "Fog of war, reconnaissance and information advantage"
+          },
+          "catalogId": "fog-of-war-reconnaissance-and-information-advantage"
+        }
+      ]
+    },
+    {
+      "id": "g09",
+      "title": {
+        "ru": "Тактика и оборона",
+        "en": "Tactics and defense"
+      },
+      "directions": [
+        {
+          "id": "t077",
+          "title": {
+            "ru": "Пошаговые бои на клетках",
+            "en": "Turn-based grid combat"
+          },
+          "catalogId": "turn-based-grid-combat"
+        },
+        {
+          "id": "t078",
+          "title": {
+            "ru": "Инициатива и экономика действий",
+            "en": "Initiative and action economy"
+          },
+          "catalogId": "initiative-and-action-economy"
+        },
+        {
+          "id": "t079",
+          "title": {
+            "ru": "Позиционирование, фланги и укрытия",
+            "en": "Positioning, flanking and cover"
+          },
+          "catalogId": "positioning-flanking-and-cover"
+        },
+        {
+          "id": "t080",
+          "title": {
+            "ru": "Вытеснение и использование окружения",
+            "en": "Displacement and environmental tactics"
+          },
+          "catalogId": "displacement-and-environmental-tactics"
+        },
+        {
+          "id": "t081",
+          "title": {
+            "ru": "Планирование одновременно исполняемых ходов",
+            "en": "Planning simultaneously executed turns"
+          },
+          "catalogId": "planning-simultaneously-executed-turns"
+        },
+        {
+          "id": "t082",
+          "title": {
+            "ru": "Автобаттлеры и подготовка состава",
+            "en": "Auto battlers and roster preparation"
+          },
+          "catalogId": "auto-battlers-and-roster-preparation"
+        },
+        {
+          "id": "t083",
+          "title": {
+            "ru": "Tower defense",
+            "en": "Tower defense"
+          },
+          "catalogId": "tower-defense"
+        },
+        {
+          "id": "t084",
+          "title": {
+            "ru": "Изменение маршрутов противника и лабиринты",
+            "en": "Rerouting enemies and building mazes"
+          },
+          "catalogId": "rerouting-enemies-and-building-mazes"
+        },
+        {
+          "id": "t085",
+          "title": {
+            "ru": "Оборона базы, осады и волны",
+            "en": "Base defense, sieges and waves"
+          },
+          "catalogId": "base-defense-sieges-and-waves"
+        },
+        {
+          "id": "t086",
+          "title": {
+            "ru": "Контроль территории, точек и линий снабжения",
+            "en": "Territory, objective and supply-line control"
+          },
+          "catalogId": "territory-objective-and-supply-line-control"
+        }
+      ]
+    },
+    {
+      "id": "g10",
+      "title": {
+        "ru": "Экономика и обмен",
+        "en": "Economy and exchange"
+      },
+      "directions": [
+        {
+          "id": "t087",
+          "title": {
+            "ru": "Добыча, преобразование и расход ресурсов",
+            "en": "Resource extraction, transformation and consumption"
+          },
+          "catalogId": "resource-extraction-transformation-and-consumption"
+        },
+        {
+          "id": "t088",
+          "title": {
+            "ru": "Торговля и торговые маршруты",
+            "en": "Trade and trade routes"
+          },
+          "catalogId": "trade-and-trade-routes"
+        },
+        {
+          "id": "t089",
+          "title": {
+            "ru": "Спрос, предложение и образование цен",
+            "en": "Supply, demand and price formation"
+          },
+          "catalogId": "supply-demand-and-price-formation"
+        },
+        {
+          "id": "t090",
+          "title": {
+            "ru": "Рынки, аукционы и торги",
+            "en": "Markets, auctions and bidding"
+          },
+          "catalogId": "markets-auctions-and-bidding"
+        },
+        {
+          "id": "t091",
+          "title": {
+            "ru": "Бартер, переговоры и оценка сделки",
+            "en": "Barter, negotiation and deal evaluation"
+          },
+          "catalogId": "barter-negotiation-and-deal-evaluation"
+        },
+        {
+          "id": "t092",
+          "title": {
+            "ru": "Бюджеты, долг и инвестиции в игровом мире",
+            "en": "Budgets, debt and investment in a game world"
+          },
+          "catalogId": "budgets-debt-and-investment-in-a-game-world"
+        },
+        {
+          "id": "t093",
+          "title": {
+            "ru": "Контракты, заказы и выполнение обязательств",
+            "en": "Contracts, orders and commitments"
+          },
+          "catalogId": "contracts-orders-and-commitments"
+        },
+        {
+          "id": "t094",
+          "title": {
+            "ru": "Собственность, аренда и налоги",
+            "en": "Ownership, rent and taxes"
+          },
+          "catalogId": "ownership-rent-and-taxes"
+        },
+        {
+          "id": "t095",
+          "title": {
+            "ru": "Дефицит, инфляция и ресурсные стоки",
+            "en": "Scarcity, inflation and resource sinks"
+          },
+          "catalogId": "scarcity-inflation-and-resource-sinks"
+        },
+        {
+          "id": "t096",
+          "title": {
+            "ru": "Экономическое соперничество и взаимозависимость",
+            "en": "Economic competition and interdependence"
+          },
+          "catalogId": "economic-competition-and-interdependence"
+        }
+      ]
+    },
+    {
+      "id": "g11",
+      "title": {
+        "ru": "Управление организациями и поселениями",
+        "en": "Organization and settlement management"
+      },
+      "directions": [
+        {
+          "id": "t097",
+          "title": {
+            "ru": "Градостроительство",
+            "en": "City building"
+          },
+          "catalogId": "city-building"
+        },
+        {
+          "id": "t098",
+          "title": {
+            "ru": "Колонии и управление поселенцами",
+            "en": "Colonies and colonist management"
+          },
+          "catalogId": "colonies-and-colonist-management"
+        },
+        {
+          "id": "t099",
+          "title": {
+            "ru": "Предприятия и tycoon",
+            "en": "Businesses and tycoon games"
+          },
+          "catalogId": "businesses-and-tycoon-games"
+        },
+        {
+          "id": "t100",
+          "title": {
+            "ru": "Парки развлечений, зоопарки и аттракционы",
+            "en": "Theme parks, zoos and attractions"
+          },
+          "catalogId": "theme-parks-zoos-and-attractions"
+        },
+        {
+          "id": "t101",
+          "title": {
+            "ru": "Больницы, школы и общественные службы",
+            "en": "Hospitals, schools and public services"
+          },
+          "catalogId": "hospitals-schools-and-public-services"
+        },
+        {
+          "id": "t102",
+          "title": {
+            "ru": "Расписания, очереди и обслуживание",
+            "en": "Schedules, queues and service"
+          },
+          "catalogId": "schedules-queues-and-service"
+        },
+        {
+          "id": "t103",
+          "title": {
+            "ru": "Персонал, квалификация и делегирование",
+            "en": "Staff, skills and delegation"
+          },
+          "catalogId": "staff-skills-and-delegation"
+        },
+        {
+          "id": "t104",
+          "title": {
+            "ru": "Потребности, удовлетворённость и конфликты жителей",
+            "en": "Resident needs, satisfaction and conflict"
+          },
+          "catalogId": "resident-needs-satisfaction-and-conflict"
+        },
+        {
+          "id": "t105",
+          "title": {
+            "ru": "Инфраструктура, зонирование и соседство",
+            "en": "Infrastructure, zoning and adjacency"
+          },
+          "catalogId": "infrastructure-zoning-and-adjacency"
+        },
+        {
+          "id": "t106",
+          "title": {
+            "ru": "Кризисы, аварии и восстановление",
+            "en": "Crises, accidents and recovery"
+          },
+          "catalogId": "crises-accidents-and-recovery"
+        }
+      ]
+    },
+    {
+      "id": "g12",
+      "title": {
+        "ru": "Автоматизация и программирование",
+        "en": "Automation and programming"
+      },
+      "directions": [
+        {
+          "id": "t107",
+          "title": {
+            "ru": "Производственные цепочки и фабрики",
+            "en": "Production chains and factories"
+          },
+          "catalogId": "production-chains-and-factories"
+        },
+        {
+          "id": "t108",
+          "title": {
+            "ru": "Конвейеры, трубы и распределение потоков",
+            "en": "Conveyors, pipes and flow distribution"
+          },
+          "catalogId": "conveyors-pipes-and-flow-distribution"
+        },
+        {
+          "id": "t109",
+          "title": {
+            "ru": "Склады, буферы и пропускная способность",
+            "en": "Storage, buffers and throughput"
+          },
+          "catalogId": "storage-buffers-and-throughput"
+        },
+        {
+          "id": "t110",
+          "title": {
+            "ru": "Железные дороги и диспетчеризация",
+            "en": "Railways and dispatching"
+          },
+          "catalogId": "railways-and-dispatching"
+        },
+        {
+          "id": "t111",
+          "title": {
+            "ru": "Роботы, дроны и автономная доставка",
+            "en": "Robots, drones and autonomous delivery"
+          },
+          "catalogId": "robots-drones-and-autonomous-delivery"
+        },
+        {
+          "id": "t112",
+          "title": {
+            "ru": "Энергосети и управление нагрузкой",
+            "en": "Power grids and load management"
+          },
+          "catalogId": "power-grids-and-load-management"
+        },
+        {
+          "id": "t113",
+          "title": {
+            "ru": "Логические схемы, сигналы и обратная связь",
+            "en": "Logic circuits, signals and feedback"
+          },
+          "catalogId": "logic-circuits-signals-and-feedback"
+        },
+        {
+          "id": "t114",
+          "title": {
+            "ru": "Визуальное программирование и команды агентам",
+            "en": "Visual programming and agent commands"
+          },
+          "catalogId": "visual-programming-and-agent-commands"
+        },
+        {
+          "id": "t115",
+          "title": {
+            "ru": "Программирование как игровая задача",
+            "en": "Programming as a gameplay challenge"
+          },
+          "catalogId": "programming-as-a-gameplay-challenge"
+        },
+        {
+          "id": "t116",
+          "title": {
+            "ru": "Оптимизация производительности игровой системы",
+            "en": "Optimizing a production or automation system"
+          },
+          "catalogId": "optimizing-a-production-or-automation-system"
+        }
+      ]
+    },
+    {
+      "id": "g13",
+      "title": {
+        "ru": "Выживание, крафт и строительство",
+        "en": "Survival, crafting and construction"
+      },
+      "directions": [
+        {
+          "id": "t117",
+          "title": {
+            "ru": "Голод, жажда, температура и усталость",
+            "en": "Hunger, thirst, temperature and fatigue"
+          },
+          "catalogId": "hunger-thirst-temperature-and-fatigue"
+        },
+        {
+          "id": "t118",
+          "title": {
+            "ru": "Погода, сезоны и подготовка к угрозам",
+            "en": "Weather, seasons and threat preparation"
+          },
+          "catalogId": "weather-seasons-and-threat-preparation"
+        },
+        {
+          "id": "t119",
+          "title": {
+            "ru": "Укрытия, лагеря и безопасные места",
+            "en": "Shelters, camps and safe places"
+          },
+          "catalogId": "shelters-camps-and-safe-places"
+        },
+        {
+          "id": "t120",
+          "title": {
+            "ru": "Сбор ресурсов и поиск пропитания",
+            "en": "Resource gathering and foraging"
+          },
+          "catalogId": "resource-gathering-and-foraging"
+        },
+        {
+          "id": "t121",
+          "title": {
+            "ru": "Крафт, рецепты и открытие технологий",
+            "en": "Crafting, recipes and technology discovery"
+          },
+          "catalogId": "crafting-recipes-and-technology-discovery"
+        },
+        {
+          "id": "t122",
+          "title": {
+            "ru": "Свободное и модульное строительство",
+            "en": "Freeform and modular construction"
+          },
+          "catalogId": "freeform-and-modular-construction"
+        },
+        {
+          "id": "t123",
+          "title": {
+            "ru": "Прочность конструкций и разрушение",
+            "en": "Structural integrity and destruction"
+          },
+          "catalogId": "structural-integrity-and-destruction"
+        },
+        {
+          "id": "t124",
+          "title": {
+            "ru": "Инвентарь, переносимый вес и упаковка",
+            "en": "Inventory, carrying weight and packing"
+          },
+          "catalogId": "inventory-carrying-weight-and-packing"
+        },
+        {
+          "id": "t125",
+          "title": {
+            "ru": "Охота, экосистема и отношения хищник-жертва",
+            "en": "Hunting, ecosystems and predator-prey relationships"
+          },
+          "catalogId": "hunting-ecosystems-and-predator-prey-relationships"
+        },
+        {
+          "id": "t126",
+          "title": {
+            "ru": "Выбор риска, эвакуация и сохранение добычи",
+            "en": "Risk, evacuation and securing loot"
+          },
+          "catalogId": "risk-evacuation-and-securing-loot"
+        }
+      ]
+    },
+    {
+      "id": "g14",
+      "title": {
+        "ru": "Симуляторы занятий и профессий",
+        "en": "Activity and profession simulators"
+      },
+      "directions": [
+        {
+          "id": "t127",
+          "title": {
+            "ru": "Фермерство, садоводство и животноводство",
+            "en": "Farming, gardening and animal husbandry"
+          },
+          "catalogId": "farming-gardening-and-animal-husbandry"
+        },
+        {
+          "id": "t128",
+          "title": {
+            "ru": "Готовка, рецепты и работа кухни",
+            "en": "Cooking, recipes and kitchen work"
+          },
+          "catalogId": "cooking-recipes-and-kitchen-work"
+        },
+        {
+          "id": "t129",
+          "title": {
+            "ru": "Рыбалка, охота и добывающие промыслы",
+            "en": "Fishing, hunting and harvesting trades"
+          },
+          "catalogId": "fishing-hunting-and-harvesting-trades"
+        },
+        {
+          "id": "t130",
+          "title": {
+            "ru": "Ремонт, разборка и диагностика",
+            "en": "Repair, disassembly and diagnosis"
+          },
+          "catalogId": "repair-disassembly-and-diagnosis"
+        },
+        {
+          "id": "t131",
+          "title": {
+            "ru": "Уборка, сортировка и восстановление",
+            "en": "Cleaning, sorting and restoration"
+          },
+          "catalogId": "cleaning-sorting-and-restoration"
+        },
+        {
+          "id": "t132",
+          "title": {
+            "ru": "Строительство, земляные работы и техника",
+            "en": "Construction, earthmoving and machinery"
+          },
+          "catalogId": "construction-earthmoving-and-machinery"
+        },
+        {
+          "id": "t133",
+          "title": {
+            "ru": "Медицина, спасение и аварийные службы",
+            "en": "Medicine, rescue and emergency services"
+          },
+          "catalogId": "medicine-rescue-and-emergency-services"
+        },
+        {
+          "id": "t134",
+          "title": {
+            "ru": "Расследование технических происшествий",
+            "en": "Technical incident investigation"
+          },
+          "catalogId": "technical-incident-investigation"
+        },
+        {
+          "id": "t135",
+          "title": {
+            "ru": "Проверка документов, инспекция и контроль",
+            "en": "Document checks, inspections and control"
+          },
+          "catalogId": "document-checks-inspections-and-control"
+        },
+        {
+          "id": "t136",
+          "title": {
+            "ru": "Доставка, диспетчеризация и обслуживание клиентов",
+            "en": "Delivery, dispatching and customer service"
+          },
+          "catalogId": "delivery-dispatching-and-customer-service"
+        },
+        {
+          "id": "t137",
+          "title": {
+            "ru": "Научные эксперименты и работа с приборами",
+            "en": "Scientific experiments and instruments"
+          },
+          "catalogId": "scientific-experiments-and-instruments"
+        },
+        {
+          "id": "t138",
+          "title": {
+            "ru": "Симуляторы бизнеса, офиса и бюрократии",
+            "en": "Business, office and bureaucracy simulators"
+          },
+          "catalogId": "business-office-and-bureaucracy-simulators"
+        }
+      ]
+    },
+    {
+      "id": "g15",
+      "title": {
+        "ru": "Транспорт, гонки и техника",
+        "en": "Vehicles, racing and machinery"
+      },
+      "directions": [
+        {
+          "id": "t139",
+          "title": {
+            "ru": "Аркадные гонки",
+            "en": "Arcade racing"
+          },
+          "catalogId": "arcade-racing"
+        },
+        {
+          "id": "t140",
+          "title": {
+            "ru": "Автосимуляторы и настройка автомобиля",
+            "en": "Driving simulators and car tuning"
+          },
+          "catalogId": "driving-simulators-and-car-tuning"
+        },
+        {
+          "id": "t141",
+          "title": {
+            "ru": "Ралли, бездорожье и сцепление",
+            "en": "Rally, off-road driving and traction"
+          },
+          "catalogId": "rally-off-road-driving-and-traction"
+        },
+        {
+          "id": "t142",
+          "title": {
+            "ru": "Дрифт, трюки и управление заносом",
+            "en": "Drifting, stunts and skid control"
+          },
+          "catalogId": "drifting-stunts-and-skid-control"
+        },
+        {
+          "id": "t143",
+          "title": {
+            "ru": "Боевые гонки и преследование",
+            "en": "Combat racing and pursuit"
+          },
+          "catalogId": "combat-racing-and-pursuit"
+        },
+        {
+          "id": "t144",
+          "title": {
+            "ru": "Мотоспорт и баланс двухколёсного транспорта",
+            "en": "Motorcycle racing and two-wheel balance"
+          },
+          "catalogId": "motorcycle-racing-and-two-wheel-balance"
+        },
+        {
+          "id": "t145",
+          "title": {
+            "ru": "Авиация и воздушный бой",
+            "en": "Aviation and aerial combat"
+          },
+          "catalogId": "aviation-and-aerial-combat"
+        },
+        {
+          "id": "t146",
+          "title": {
+            "ru": "Космические полёты и орбитальные манёвры",
+            "en": "Spaceflight and orbital maneuvers"
+          },
+          "catalogId": "spaceflight-and-orbital-maneuvers"
+        },
+        {
+          "id": "t147",
+          "title": {
+            "ru": "Морской транспорт и подводные аппараты",
+            "en": "Marine vehicles and submersibles"
+          },
+          "catalogId": "marine-vehicles-and-submersibles"
+        },
+        {
+          "id": "t148",
+          "title": {
+            "ru": "Железнодорожные, грузовые и пассажирские симуляторы",
+            "en": "Rail, freight and passenger transport simulators"
+          },
+          "catalogId": "rail-freight-and-passenger-transport-simulators"
+        }
+      ]
+    },
+    {
+      "id": "g16",
+      "title": {
+        "ru": "Спорт и физическое мастерство",
+        "en": "Sports and physical mastery"
+      },
+      "directions": [
+        {
+          "id": "t149",
+          "title": {
+            "ru": "Командные игры с мячом",
+            "en": "Team ball sports"
+          },
+          "catalogId": "team-ball-sports"
+        },
+        {
+          "id": "t150",
+          "title": {
+            "ru": "Ракеточные виды спорта",
+            "en": "Racket sports"
+          },
+          "catalogId": "racket-sports"
+        },
+        {
+          "id": "t151",
+          "title": {
+            "ru": "Лёгкая атлетика и соревнования на результат",
+            "en": "Athletics and performance competitions"
+          },
+          "catalogId": "athletics-and-performance-competitions"
+        },
+        {
+          "id": "t152",
+          "title": {
+            "ru": "Гимнастика, акробатика и оценка исполнения",
+            "en": "Gymnastics, acrobatics and execution scoring"
+          },
+          "catalogId": "gymnastics-acrobatics-and-execution-scoring"
+        },
+        {
+          "id": "t153",
+          "title": {
+            "ru": "Скейтбординг, сноубординг и экстремальные виды спорта",
+            "en": "Skateboarding, snowboarding and extreme sports"
+          },
+          "catalogId": "skateboarding-snowboarding-and-extreme-sports"
+        },
+        {
+          "id": "t154",
+          "title": {
+            "ru": "Гольф, бильярд и точность траектории",
+            "en": "Golf, billiards and trajectory precision"
+          },
+          "catalogId": "golf-billiards-and-trajectory-precision"
+        },
+        {
+          "id": "t155",
+          "title": {
+            "ru": "Боулинг, дартс и метание",
+            "en": "Bowling, darts and throwing"
+          },
+          "catalogId": "bowling-darts-and-throwing"
+        },
+        {
+          "id": "t156",
+          "title": {
+            "ru": "Спортивные единоборства",
+            "en": "Combat sports"
+          },
+          "catalogId": "combat-sports"
+        },
+        {
+          "id": "t157",
+          "title": {
+            "ru": "Спортивный менеджмент и тренировка команды",
+            "en": "Sports management and team training"
+          },
+          "catalogId": "sports-management-and-team-training"
+        },
+        {
+          "id": "t158",
+          "title": {
+            "ru": "Вымышленные виды спорта и гибридные правила",
+            "en": "Fictional sports and hybrid rules"
+          },
+          "catalogId": "fictional-sports-and-hybrid-rules"
+        }
+      ]
+    },
+    {
+      "id": "g17",
+      "title": {
+        "ru": "Головоломки и интеллектуальные задачи",
+        "en": "Puzzles and reasoning challenges"
+      },
+      "directions": [
+        {
+          "id": "t159",
+          "title": {
+            "ru": "Головоломки: общий каталог",
+            "en": "Puzzles: general reference"
+          },
+          "catalogId": "puzzle"
+        },
+        {
+          "id": "t160",
+          "title": {
+            "ru": "Логический вывод и ограничения",
+            "en": "Logical deduction and constraints"
+          },
+          "catalogId": "logical-deduction-and-constraints"
+        },
+        {
+          "id": "t161",
+          "title": {
+            "ru": "Числовые, арифметические и алгебраические задачи",
+            "en": "Numerical, arithmetic and algebraic puzzles"
+          },
+          "catalogId": "numerical-arithmetic-and-algebraic-puzzles"
+        },
+        {
+          "id": "t162",
+          "title": {
+            "ru": "Словесные, языковые и орфографические игры",
+            "en": "Word, language and spelling games"
+          },
+          "catalogId": "word-language-and-spelling-games"
+        },
+        {
+          "id": "t163",
+          "title": {
+            "ru": "Пространственные преобразования и геометрия",
+            "en": "Spatial transformations and geometry"
+          },
+          "catalogId": "spatial-transformations-and-geometry"
+        },
+        {
+          "id": "t164",
+          "title": {
+            "ru": "Sokoban, толкание и перестановка объектов",
+            "en": "Sokoban, pushing and rearrangement"
+          },
+          "catalogId": "sokoban-pushing-and-rearrangement"
+        },
+        {
+          "id": "t165",
+          "title": {
+            "ru": "Физические головоломки",
+            "en": "Physics puzzles"
+          },
+          "catalogId": "physics-puzzles"
+        },
+        {
+          "id": "t166",
+          "title": {
+            "ru": "Маршруты, потоки, сети и соединения",
+            "en": "Routes, flows, networks and connections"
+          },
+          "catalogId": "routes-flows-networks-and-connections"
+        },
+        {
+          "id": "t167",
+          "title": {
+            "ru": "Сопоставление, match-3 и очистка поля",
+            "en": "Matching, match-3 and board clearing"
+          },
+          "catalogId": "matching-match-3-and-board-clearing"
+        },
+        {
+          "id": "t168",
+          "title": {
+            "ru": "Merge, объединение и выращивание объектов",
+            "en": "Merging, combining and growing objects"
+          },
+          "catalogId": "merging-combining-and-growing-objects"
+        },
+        {
+          "id": "t169",
+          "title": {
+            "ru": "Падающие блоки и упаковка пространства",
+            "en": "Falling blocks and spatial packing"
+          },
+          "catalogId": "falling-blocks-and-spatial-packing"
+        },
+        {
+          "id": "t170",
+          "title": {
+            "ru": "Поиск предметов и визуальных отличий",
+            "en": "Hidden objects and spot-the-difference"
+          },
+          "catalogId": "hidden-objects-and-spot-the-difference"
+        },
+        {
+          "id": "t171",
+          "title": {
+            "ru": "Коды, шифры и расшифровка",
+            "en": "Codes, ciphers and decoding"
+          },
+          "catalogId": "codes-ciphers-and-decoding"
+        },
+        {
+          "id": "t172",
+          "title": {
+            "ru": "Escape room, замки и многоступенчатые загадки",
+            "en": "Escape rooms, locks and layered riddles"
+          },
+          "catalogId": "escape-rooms-locks-and-layered-riddles"
+        },
+        {
+          "id": "t173",
+          "title": {
+            "ru": "Мета-головоломки и открытие скрытого правила",
+            "en": "Metapuzzles and discovering hidden rules"
+          },
+          "catalogId": "metapuzzles-and-discovering-hidden-rules"
+        }
+      ]
+    },
+    {
+      "id": "g18",
+      "title": {
+        "ru": "Карты, кости и настольные механики",
+        "en": "Cards, dice and tabletop mechanics"
+      },
+      "directions": [
+        {
+          "id": "t174",
+          "title": {
+            "ru": "Декбилдинг",
+            "en": "Deck building"
+          },
+          "catalogId": "deck-building"
+        },
+        {
+          "id": "t175",
+          "title": {
+            "ru": "Конструирование колоды до партии",
+            "en": "Pre-game deck construction"
+          },
+          "catalogId": "pre-game-deck-construction"
+        },
+        {
+          "id": "t176",
+          "title": {
+            "ru": "Розыгрыш руки и управление запасом карт",
+            "en": "Hand play and card management"
+          },
+          "catalogId": "hand-play-and-card-management"
+        },
+        {
+          "id": "t177",
+          "title": {
+            "ru": "Драфт и выбор из общего предложения",
+            "en": "Drafting and shared offers"
+          },
+          "catalogId": "drafting-and-shared-offers"
+        },
+        {
+          "id": "t178",
+          "title": {
+            "ru": "Взятки, сброс и коллекционирование наборов",
+            "en": "Trick-taking, shedding and set collection"
+          },
+          "catalogId": "trick-taking-shedding-and-set-collection"
+        },
+        {
+          "id": "t179",
+          "title": {
+            "ru": "Размещение работников и выбор действий",
+            "en": "Worker placement and action selection"
+          },
+          "catalogId": "worker-placement-and-action-selection"
+        },
+        {
+          "id": "t180",
+          "title": {
+            "ru": "Контроль областей, большинство и окружение",
+            "en": "Area control, majorities and enclosure"
+          },
+          "catalogId": "area-control-majorities-and-enclosure"
+        },
+        {
+          "id": "t181",
+          "title": {
+            "ru": "Укладка тайлов и построение общего поля",
+            "en": "Tile placement and shared boards"
+          },
+          "catalogId": "tile-placement-and-shared-boards"
+        },
+        {
+          "id": "t182",
+          "title": {
+            "ru": "Кости, перебросы и назначение результатов",
+            "en": "Dice, rerolls and result assignment"
+          },
+          "catalogId": "dice-rerolls-and-result-assignment"
+        },
+        {
+          "id": "t183",
+          "title": {
+            "ru": "Ставки, блеф и push your luck",
+            "en": "Wagers, bluffing and pushing your luck"
+          },
+          "catalogId": "wagers-bluffing-and-pushing-your-luck"
+        },
+        {
+          "id": "t184",
+          "title": {
+            "ru": "Скрытые приказы и одновременный выбор",
+            "en": "Hidden orders and simultaneous selection"
+          },
+          "catalogId": "hidden-orders-and-simultaneous-selection"
+        },
+        {
+          "id": "t185",
+          "title": {
+            "ru": "Пространственная ловкость и цифровые настольные игрушки",
+            "en": "Dexterity and digital tabletop toys"
+          },
+          "catalogId": "dexterity-and-digital-tabletop-toys"
+        }
+      ]
+    },
+    {
+      "id": "g19",
+      "title": {
+        "ru": "Повествование, диалоги и расследования",
+        "en": "Narrative, dialogue and investigation"
+      },
+      "directions": [
+        {
+          "id": "t186",
+          "title": {
+            "ru": "Визуальные новеллы",
+            "en": "Visual novels"
+          },
+          "catalogId": "visual-novel"
+        },
+        {
+          "id": "t187",
+          "title": {
+            "ru": "Диалоговые механики",
+            "en": "Dialogue mechanics"
+          },
+          "catalogId": "dialogue"
+        },
+        {
+          "id": "t188",
+          "title": {
+            "ru": "Интерактивная проза и выбор действия текстом",
+            "en": "Interactive fiction and text-based actions"
+          },
+          "catalogId": "interactive-fiction-and-text-based-actions"
+        },
+        {
+          "id": "t189",
+          "title": {
+            "ru": "Ветвление сюжета и отложенные последствия",
+            "en": "Branching narratives and delayed consequences"
+          },
+          "catalogId": "branching-narratives-and-delayed-consequences"
+        },
+        {
+          "id": "t190",
+          "title": {
+            "ru": "Детективные механики",
+            "en": "Detective mechanics"
+          },
+          "catalogId": "detective"
+        },
+        {
+          "id": "t191",
+          "title": {
+            "ru": "Допрос, показания и поиск противоречий",
+            "en": "Interrogation, testimony and contradictions"
+          },
+          "catalogId": "interrogation-testimony-and-contradictions"
+        },
+        {
+          "id": "t192",
+          "title": {
+            "ru": "Поиск, сопоставление и предъявление улик",
+            "en": "Finding, connecting and presenting evidence"
+          },
+          "catalogId": "finding-connecting-and-presenting-evidence"
+        },
+        {
+          "id": "t193",
+          "title": {
+            "ru": "Реконструкция событий и причинных связей",
+            "en": "Reconstructing events and causal relationships"
+          },
+          "catalogId": "reconstructing-events-and-causal-relationships"
+        },
+        {
+          "id": "t194",
+          "title": {
+            "ru": "Нелинейный рассказ и сбор истории из фрагментов",
+            "en": "Nonlinear storytelling and assembling fragments"
+          },
+          "catalogId": "nonlinear-storytelling-and-assembling-fragments"
+        },
+        {
+          "id": "t195",
+          "title": {
+            "ru": "Процедурные истории и драматургические системы",
+            "en": "Procedural stories and drama systems"
+          },
+          "catalogId": "procedural-stories-and-drama-systems"
+        },
+        {
+          "id": "t196",
+          "title": {
+            "ru": "Ролевая импровизация и совместное сочинение",
+            "en": "Role-playing improvisation and collaborative storytelling"
+          },
+          "catalogId": "role-playing-improvisation-and-collaborative-storytelling"
+        },
+        {
+          "id": "t197",
+          "title": {
+            "ru": "Ненадёжный рассказчик и проверка интерпретаций",
+            "en": "Unreliable narrators and testing interpretations"
+          },
+          "catalogId": "unreliable-narrators-and-testing-interpretations"
+        }
+      ]
+    },
+    {
+      "id": "g20",
+      "title": {
+        "ru": "Социальные отношения и совместная игра",
+        "en": "Social relationships and shared play"
+      },
+      "directions": [
+        {
+          "id": "t198",
+          "title": {
+            "ru": "Социальные симуляторы и повседневная жизнь",
+            "en": "Social simulations and everyday life"
+          },
+          "catalogId": "social-simulations-and-everyday-life"
+        },
+        {
+          "id": "t199",
+          "title": {
+            "ru": "Дружба, романтические отношения и привязанность",
+            "en": "Friendship, romance and attachment"
+          },
+          "catalogId": "friendship-romance-and-attachment"
+        },
+        {
+          "id": "t200",
+          "title": {
+            "ru": "Забота о питомцах и зависимых персонажах",
+            "en": "Caring for pets and dependent characters"
+          },
+          "catalogId": "caring-for-pets-and-dependent-characters"
+        },
+        {
+          "id": "t201",
+          "title": {
+            "ru": "Переговоры, обещания и доверие",
+            "en": "Negotiation, promises and trust"
+          },
+          "catalogId": "negotiation-promises-and-trust"
+        },
+        {
+          "id": "t202",
+          "title": {
+            "ru": "Социальная дедукция и скрытые роли",
+            "en": "Social deduction and hidden roles"
+          },
+          "catalogId": "social-deduction-and-hidden-roles"
+        },
+        {
+          "id": "t203",
+          "title": {
+            "ru": "Кооперация с разделённой информацией",
+            "en": "Cooperation with divided information"
+          },
+          "catalogId": "cooperation-with-divided-information"
+        },
+        {
+          "id": "t204",
+          "title": {
+            "ru": "Асимметричные роли и способности",
+            "en": "Asymmetric roles and abilities"
+          },
+          "catalogId": "asymmetric-roles-and-abilities"
+        },
+        {
+          "id": "t205",
+          "title": {
+            "ru": "Синхронизация, передача предметов и совместные действия",
+            "en": "Synchronization, item passing and joint actions"
+          },
+          "catalogId": "synchronization-item-passing-and-joint-actions"
+        },
+        {
+          "id": "t206",
+          "title": {
+            "ru": "Спасение, поддержка и распределение ответственности",
+            "en": "Rescue, support and shared responsibility"
+          },
+          "catalogId": "rescue-support-and-shared-responsibility"
+        },
+        {
+          "id": "t207",
+          "title": {
+            "ru": "Предательство, коалиции и временные союзы",
+            "en": "Betrayal, coalitions and temporary alliances"
+          },
+          "catalogId": "betrayal-coalitions-and-temporary-alliances"
+        },
+        {
+          "id": "t208",
+          "title": {
+            "ru": "Party games, викторины и коллективное угадывание",
+            "en": "Party games, trivia and collective guessing"
+          },
+          "catalogId": "party-games-trivia-and-collective-guessing"
+        },
+        {
+          "id": "t209",
+          "title": {
+            "ru": "Локальный мультиплеер, общий экран и общие органы управления",
+            "en": "Local multiplayer, shared screens and shared controls"
+          },
+          "catalogId": "local-multiplayer-shared-screens-and-shared-controls"
+        }
+      ]
+    },
+    {
+      "id": "g21",
+      "title": {
+        "ru": "Хоррор и напряжение",
+        "en": "Horror and tension"
+      },
+      "directions": [
+        {
+          "id": "t210",
+          "title": {
+            "ru": "Survival horror и ограниченные средства защиты",
+            "en": "Survival horror and limited defenses"
+          },
+          "catalogId": "survival-horror-and-limited-defenses"
+        },
+        {
+          "id": "t211",
+          "title": {
+            "ru": "Скрытность и побег от угрозы",
+            "en": "Hiding and escaping from threats"
+          },
+          "catalogId": "hiding-and-escaping-from-threats"
+        },
+        {
+          "id": "t212",
+          "title": {
+            "ru": "Психологический хоррор и неопределённость",
+            "en": "Psychological horror and uncertainty"
+          },
+          "catalogId": "psychological-horror-and-uncertainty"
+        },
+        {
+          "id": "t213",
+          "title": {
+            "ru": "Поиск аномалий и распознавание изменений",
+            "en": "Anomaly hunting and detecting changes"
+          },
+          "catalogId": "anomaly-hunting-and-detecting-changes"
+        },
+        {
+          "id": "t214",
+          "title": {
+            "ru": "Преследователь и адаптация его поведения",
+            "en": "Pursuers and adaptive behavior"
+          },
+          "catalogId": "pursuers-and-adaptive-behavior"
+        },
+        {
+          "id": "t215",
+          "title": {
+            "ru": "Убежища, передышки и цикл напряжения",
+            "en": "Sanctuaries, respite and tension cycles"
+          },
+          "catalogId": "sanctuaries-respite-and-tension-cycles"
+        },
+        {
+          "id": "t216",
+          "title": {
+            "ru": "Сенсорные ограничения и неполная информация",
+            "en": "Sensory limitations and incomplete information"
+          },
+          "catalogId": "sensory-limitations-and-incomplete-information"
+        },
+        {
+          "id": "t217",
+          "title": {
+            "ru": "Кооперативный хоррор и риск для группы",
+            "en": "Cooperative horror and group risk"
+          },
+          "catalogId": "cooperative-horror-and-group-risk"
+        }
+      ]
+    },
+    {
+      "id": "g22",
+      "title": {
+        "ru": "Звук, музыка и ритм",
+        "en": "Sound, music and rhythm"
+      },
+      "directions": [
+        {
+          "id": "t218",
+          "title": {
+            "ru": "Голосовые и аудиомеханики",
+            "en": "Voice and audio mechanics"
+          },
+          "catalogId": "voice-audio"
+        },
+        {
+          "id": "t219",
+          "title": {
+            "ru": "Ритмическое попадание и окна точности",
+            "en": "Beat matching and timing windows"
+          },
+          "catalogId": "beat-matching-and-timing-windows"
+        },
+        {
+          "id": "t220",
+          "title": {
+            "ru": "Исполнение мелодий и музыкальных фраз",
+            "en": "Performing melodies and musical phrases"
+          },
+          "catalogId": "performing-melodies-and-musical-phrases"
+        },
+        {
+          "id": "t221",
+          "title": {
+            "ru": "Танец и движение в ритм",
+            "en": "Dance and rhythmic movement"
+          },
+          "catalogId": "dance-and-rhythmic-movement"
+        },
+        {
+          "id": "t222",
+          "title": {
+            "ru": "Музыкальное сочинение и импровизация",
+            "en": "Music composition and improvisation"
+          },
+          "catalogId": "music-composition-and-improvisation"
+        },
+        {
+          "id": "t223",
+          "title": {
+            "ru": "Звук как материал для записи и преобразования",
+            "en": "Sound recording and transformation"
+          },
+          "catalogId": "sound-recording-and-transformation"
+        },
+        {
+          "id": "t224",
+          "title": {
+            "ru": "Аудионавигация и пространственный слух",
+            "en": "Audio navigation and spatial hearing"
+          },
+          "catalogId": "audio-navigation-and-spatial-hearing"
+        },
+        {
+          "id": "t225",
+          "title": {
+            "ru": "Эхолокация и акустическое исследование",
+            "en": "Echolocation and acoustic exploration"
+          },
+          "catalogId": "echolocation-and-acoustic-exploration"
+        },
+        {
+          "id": "t226",
+          "title": {
+            "ru": "Музыкальные правила мира и синхронизация событий",
+            "en": "Musical world rules and event synchronization"
+          },
+          "catalogId": "musical-world-rules-and-event-synchronization"
+        },
+        {
+          "id": "t227",
+          "title": {
+            "ru": "Слуховое распознавание, память и разделение потоков",
+            "en": "Auditory recognition, memory and stream separation"
+          },
+          "catalogId": "auditory-recognition-memory-and-stream-separation"
+        }
+      ]
+    },
+    {
+      "id": "g23",
+      "title": {
+        "ru": "Творчество, конструирование и свободная игра",
+        "en": "Creativity, construction and free play"
+      },
+      "directions": [
+        {
+          "id": "t228",
+          "title": {
+            "ru": "Рисование как игровое действие",
+            "en": "Drawing as a gameplay action"
+          },
+          "catalogId": "drawing"
+        },
+        {
+          "id": "t229",
+          "title": {
+            "ru": "Лепка, скульптура и изменение формы",
+            "en": "Modeling, sculpting and shape manipulation"
+          },
+          "catalogId": "modeling-sculpting-and-shape-manipulation"
+        },
+        {
+          "id": "t230",
+          "title": {
+            "ru": "Строительные наборы и сборка механизмов",
+            "en": "Construction kits and mechanism assembly"
+          },
+          "catalogId": "construction-kits-and-mechanism-assembly"
+        },
+        {
+          "id": "t231",
+          "title": {
+            "ru": "Декорирование, интерьер и ландшафт",
+            "en": "Decoration, interiors and landscaping"
+          },
+          "catalogId": "decoration-interiors-and-landscaping"
+        },
+        {
+          "id": "t232",
+          "title": {
+            "ru": "Одежда, внешность и создание персонажей",
+            "en": "Clothing, appearance and character design"
+          },
+          "catalogId": "clothing-appearance-and-character-design"
+        },
+        {
+          "id": "t233",
+          "title": {
+            "ru": "Фотография и композиционные задания",
+            "en": "Photography and composition challenges"
+          },
+          "catalogId": "photography-and-composition-challenges"
+        },
+        {
+          "id": "t234",
+          "title": {
+            "ru": "Съёмка, монтаж и создание представлений",
+            "en": "Filming, editing and performance creation"
+          },
+          "catalogId": "filming-editing-and-performance-creation"
+        },
+        {
+          "id": "t235",
+          "title": {
+            "ru": "Песочницы, игрушки и игра без обязательной цели",
+            "en": "Sandboxes, toys and play without mandatory goals"
+          },
+          "catalogId": "sandboxes-toys-and-play-without-mandatory-goals"
+        },
+        {
+          "id": "t236",
+          "title": {
+            "ru": "Создание уровней, правил и модификаций",
+            "en": "Creating levels, rules and modifications"
+          },
+          "catalogId": "creating-levels-rules-and-modifications"
+        },
+        {
+          "id": "t237",
+          "title": {
+            "ru": "Совместное творчество и пользовательский контент",
+            "en": "Collaborative creation and user-generated content"
+          },
+          "catalogId": "collaborative-creation-and-user-generated-content"
+        }
+      ]
+    },
+    {
+      "id": "g24",
+      "title": {
+        "ru": "Прогрессия, награды и удержание",
+        "en": "Progression, rewards and retention"
+      },
+      "directions": [
+        {
+          "id": "t238",
+          "title": {
+            "ru": "Удержание и вовлечение",
+            "en": "Engagement and retention"
+          },
+          "catalogId": "engagement-retention"
+        },
+        {
+          "id": "t239",
+          "title": {
+            "ru": "Опыт, уровни и деревья развития",
+            "en": "Experience, levels and development trees"
+          },
+          "catalogId": "experience-levels-and-development-trees"
+        },
+        {
+          "id": "t240",
+          "title": {
+            "ru": "Открытие возможностей и расширение пространства действий",
+            "en": "Unlocking abilities and expanding available actions"
+          },
+          "catalogId": "unlocking-abilities-and-expanding-available-actions"
+        },
+        {
+          "id": "t241",
+          "title": {
+            "ru": "Коллекции, альбомы и заполнение наборов",
+            "en": "Collections, albums and set completion"
+          },
+          "catalogId": "collections-albums-and-set-completion"
+        },
+        {
+          "id": "t242",
+          "title": {
+            "ru": "Достижения, испытания и мастерство",
+            "en": "Achievements, challenges and mastery"
+          },
+          "catalogId": "achievements-challenges-and-mastery"
+        },
+        {
+          "id": "t243",
+          "title": {
+            "ru": "Лут, редкость и распределение наград",
+            "en": "Loot, rarity and reward distribution"
+          },
+          "catalogId": "loot-rarity-and-reward-distribution"
+        },
+        {
+          "id": "t244",
+          "title": {
+            "ru": "Idle, incremental и офлайн-прогресс",
+            "en": "Idle, incremental and offline progress"
+          },
+          "catalogId": "idle-incremental-and-offline-progress"
+        },
+        {
+          "id": "t245",
+          "title": {
+            "ru": "Престиж, сброс и повторное развитие",
+            "en": "Prestige, resets and renewed progression"
+          },
+          "catalogId": "prestige-resets-and-renewed-progression"
+        },
+        {
+          "id": "t246",
+          "title": {
+            "ru": "Долгосрочные проекты и накопительные цели",
+            "en": "Long-term projects and cumulative goals"
+          },
+          "catalogId": "long-term-projects-and-cumulative-goals"
+        },
+        {
+          "id": "t247",
+          "title": {
+            "ru": "Ежедневные циклы, серии действий и возвращение в игру",
+            "en": "Daily cycles, streaks and returning to play"
+          },
+          "catalogId": "daily-cycles-streaks-and-returning-to-play"
+        }
+      ]
+    },
+    {
+      "id": "g25",
+      "title": {
+        "ru": "Время, информация и правила мира",
+        "en": "Time, information and world rules"
+      },
+      "directions": [
+        {
+          "id": "t248",
+          "title": {
+            "ru": "Временные петли",
+            "en": "Time loops"
+          },
+          "catalogId": "time-loops"
+        },
+        {
+          "id": "t249",
+          "title": {
+            "ru": "Перемотка, отмена и восстановление состояния",
+            "en": "Rewinding, undoing and restoring state"
+          },
+          "catalogId": "rewinding-undoing-and-restoring-state"
+        },
+        {
+          "id": "t250",
+          "title": {
+            "ru": "Остановка, замедление и ускорение времени",
+            "en": "Stopping, slowing and accelerating time"
+          },
+          "catalogId": "stopping-slowing-and-accelerating-time"
+        },
+        {
+          "id": "t251",
+          "title": {
+            "ru": "Параллельные временные линии и причинность",
+            "en": "Parallel timelines and causality"
+          },
+          "catalogId": "parallel-timelines-and-causality"
+        },
+        {
+          "id": "t252",
+          "title": {
+            "ru": "Запись действий, повторы и взаимодействие с копией",
+            "en": "Recorded actions, replays and interacting with copies"
+          },
+          "catalogId": "recorded-actions-replays-and-interacting-with-copies"
+        },
+        {
+          "id": "t253",
+          "title": {
+            "ru": "Расписания, дедлайны и события по времени",
+            "en": "Schedules, deadlines and timed events"
+          },
+          "catalogId": "schedules-deadlines-and-timed-events"
+        },
+        {
+          "id": "t254",
+          "title": {
+            "ru": "Смена измерений и параллельных миров",
+            "en": "Dimension switching and parallel worlds"
+          },
+          "catalogId": "dimension-switching-and-parallel-worlds"
+        },
+        {
+          "id": "t255",
+          "title": {
+            "ru": "Изменение масштаба, гравитации и системы отсчёта",
+            "en": "Changing scale, gravity and reference frames"
+          },
+          "catalogId": "changing-scale-gravity-and-reference-frames"
+        },
+        {
+          "id": "t256",
+          "title": {
+            "ru": "Порталы, топология и неевклидовы пространства",
+            "en": "Portals, topology and non-Euclidean spaces"
+          },
+          "catalogId": "portals-topology-and-non-euclidean-spaces"
+        },
+        {
+          "id": "t257",
+          "title": {
+            "ru": "Изменение правил и метаигра с интерфейсом",
+            "en": "Changing rules and interface metagames"
+          },
+          "catalogId": "changing-rules-and-interface-metagames"
+        },
+        {
+          "id": "t258",
+          "title": {
+            "ru": "Переключение перспективы и альтернативное представление мира",
+            "en": "Perspective switching and alternative world representations"
+          },
+          "catalogId": "perspective-switching-and-alternative-world-representations"
+        },
+        {
+          "id": "t259",
+          "title": {
+            "ru": "Необычное восприятие и гипотетические сенсорные способности",
+            "en": "Unusual perception and hypothetical sensory abilities"
+          },
+          "catalogId": "perception"
+        }
+      ]
+    },
+    {
+      "id": "g26",
+      "title": {
+        "ru": "Системный мир, случайность и поведение NPC",
+        "en": "Systemic worlds, randomness and NPC behavior"
+      },
+      "directions": [
+        {
+          "id": "t260",
+          "title": {
+            "ru": "Системные взаимодействия и immersive sim",
+            "en": "Systemic interactions and immersive sims"
+          },
+          "catalogId": "systemic-interactions-and-immersive-sims"
+        },
+        {
+          "id": "t261",
+          "title": {
+            "ru": "Огонь, жидкости, электричество и распространение воздействий",
+            "en": "Fire, liquids, electricity and spreading effects"
+          },
+          "catalogId": "fire-liquids-electricity-and-spreading-effects"
+        },
+        {
+          "id": "t262",
+          "title": {
+            "ru": "Физические материалы, деформация и разрушение",
+            "en": "Physical materials, deformation and destruction"
+          },
+          "catalogId": "physical-materials-deformation-and-destruction"
+        },
+        {
+          "id": "t263",
+          "title": {
+            "ru": "Экология, пищевые цепи и восстановление среды",
+            "en": "Ecology, food chains and environmental recovery"
+          },
+          "catalogId": "ecology-food-chains-and-environmental-recovery"
+        },
+        {
+          "id": "t264",
+          "title": {
+            "ru": "Поведение NPC, цели и выбор действий",
+            "en": "NPC behavior, goals and action selection"
+          },
+          "catalogId": "npc-behavior-goals-and-action-selection"
+        },
+        {
+          "id": "t265",
+          "title": {
+            "ru": "Распорядки, потребности и память персонажей",
+            "en": "Character routines, needs and memory"
+          },
+          "catalogId": "character-routines-needs-and-memory"
+        },
+        {
+          "id": "t266",
+          "title": {
+            "ru": "Обучение существ и дрессировка",
+            "en": "Creature training and taming"
+          },
+          "catalogId": "creature-training-and-taming"
+        },
+        {
+          "id": "t267",
+          "title": {
+            "ru": "Процедурная генерация уровней и задач",
+            "en": "Procedural generation of levels and challenges"
+          },
+          "catalogId": "procedural-generation-of-levels-and-challenges"
+        },
+        {
+          "id": "t268",
+          "title": {
+            "ru": "Управляемая случайность и предсказуемость",
+            "en": "Controlled randomness and predictability"
+          },
+          "catalogId": "controlled-randomness-and-predictability"
+        },
+        {
+          "id": "t269",
+          "title": {
+            "ru": "Симуляция общества, популяций и автономных сообществ",
+            "en": "Simulated societies, populations and autonomous communities"
+          },
+          "catalogId": "simulated-societies-populations-and-autonomous-communities"
+        }
+      ]
+    },
+    {
+      "id": "g27",
+      "title": {
+        "ru": "Цели, сложность, обучение и обратная связь",
+        "en": "Goals, difficulty, learning and feedback"
+      },
+      "directions": [
+        {
+          "id": "t270",
+          "title": {
+            "ru": "Победа, поражение и альтернативные условия успеха",
+            "en": "Victory, defeat and alternative success conditions"
+          },
+          "catalogId": "victory-defeat-and-alternative-success-conditions"
+        },
+        {
+          "id": "t271",
+          "title": {
+            "ru": "Счёт, комбо, множители и рекорды",
+            "en": "Scores, combos, multipliers and records"
+          },
+          "catalogId": "scores-combos-multipliers-and-records"
+        },
+        {
+          "id": "t272",
+          "title": {
+            "ru": "Время прохождения, speedrun и оптимизация маршрута",
+            "en": "Completion time, speedrunning and route optimization"
+          },
+          "catalogId": "completion-time-speedrunning-and-route-optimization"
+        },
+        {
+          "id": "t273",
+          "title": {
+            "ru": "Риск-награда и добровольное усложнение",
+            "en": "Risk-reward and voluntary challenges"
+          },
+          "catalogId": "risk-reward-and-voluntary-challenges"
+        },
+        {
+          "id": "t274",
+          "title": {
+            "ru": "Смерть, штрафы, чекпоинты и сохранение",
+            "en": "Death, penalties, checkpoints and saving"
+          },
+          "catalogId": "death-penalties-checkpoints-and-saving"
+        },
+        {
+          "id": "t275",
+          "title": {
+            "ru": "Адаптивная сложность и помощь игроку",
+            "en": "Adaptive difficulty and player assistance"
+          },
+          "catalogId": "adaptive-difficulty-and-player-assistance"
+        },
+        {
+          "id": "t276",
+          "title": {
+            "ru": "Обучение механике, подсказки и открытие правил",
+            "en": "Teaching mechanics, hints and rule discovery"
+          },
+          "catalogId": "teaching-mechanics-hints-and-rule-discovery"
+        },
+        {
+          "id": "t277",
+          "title": {
+            "ru": "Обратная связь, game feel и читаемость состояния",
+            "en": "Feedback, game feel and state readability"
+          },
+          "catalogId": "feedback-game-feel-and-state-readability"
+        },
+        {
+          "id": "t278",
+          "title": {
+            "ru": "Инвентари, карты и интерфейс как игровое пространство",
+            "en": "Inventories, maps and interfaces as play spaces"
+          },
+          "catalogId": "inventories-maps-and-interfaces-as-play-spaces"
+        },
+        {
+          "id": "t279",
+          "title": {
+            "ru": "Диегетический интерфейс и взаимодействие через приборы",
+            "en": "Diegetic interfaces and in-world instruments"
+          },
+          "catalogId": "diegetic-interfaces-and-in-world-instruments"
+        }
+      ]
+    },
+    {
+      "id": "g28",
+      "title": {
+        "ru": "Классические устройства ввода",
+        "en": "Traditional input devices"
+      },
+      "directions": [
+        {
+          "id": "t280",
+          "title": {
+            "ru": "Клавиатура",
+            "en": "Keyboard"
+          },
+          "catalogId": "keyboard"
+        },
+        {
+          "id": "t281",
+          "title": {
+            "ru": "Мышь",
+            "en": "Mouse"
+          },
+          "catalogId": "mouse"
+        },
+        {
+          "id": "t282",
+          "title": {
+            "ru": "Трекпад",
+            "en": "Trackpad"
+          },
+          "catalogId": "trackpad"
+        },
+        {
+          "id": "t283",
+          "title": {
+            "ru": "Геймпад, стики и триггеры",
+            "en": "Gamepads, sticks and triggers"
+          },
+          "catalogId": "gamepads-sticks-and-triggers"
+        },
+        {
+          "id": "t284",
+          "title": {
+            "ru": "Стилус и графический планшет",
+            "en": "Styluses and graphics tablets"
+          },
+          "catalogId": "styluses-and-graphics-tablets"
+        },
+        {
+          "id": "t285",
+          "title": {
+            "ru": "Трекбол, колесо и вращающийся контроллер",
+            "en": "Trackballs, wheels and rotary controllers"
+          },
+          "catalogId": "trackballs-wheels-and-rotary-controllers"
+        },
+        {
+          "id": "t286",
+          "title": {
+            "ru": "Управление одной кнопкой",
+            "en": "One-button controls"
+          },
+          "catalogId": "one-button-controls"
+        },
+        {
+          "id": "t287",
+          "title": {
+            "ru": "Одновременный ввод, аккорды и комбинации",
+            "en": "Simultaneous inputs, chords and combinations"
+          },
+          "catalogId": "simultaneous-inputs-chords-and-combinations"
+        }
+      ]
+    },
+    {
+      "id": "g29",
+      "title": {
+        "ru": "Телефон и встроенные датчики",
+        "en": "Phones and built-in sensors"
+      },
+      "directions": [
+        {
+          "id": "t288",
+          "title": {
+            "ru": "Камера телефона",
+            "en": "Phone camera"
+          },
+          "catalogId": "phone-camera"
+        },
+        {
+          "id": "t289",
+          "title": {
+            "ru": "Микрофон телефона",
+            "en": "Phone microphone"
+          },
+          "catalogId": "phone-microphone"
+        },
+        {
+          "id": "t290",
+          "title": {
+            "ru": "Движение телефона: акселерометр и гироскоп",
+            "en": "Phone movement: accelerometer and gyroscope"
+          },
+          "catalogId": "phone-motion"
+        },
+        {
+          "id": "t291",
+          "title": {
+            "ru": "Фонарик и вспышка телефона",
+            "en": "Phone flashlight and flash"
+          },
+          "catalogId": "phone-flashlight"
+        },
+        {
+          "id": "t292",
+          "title": {
+            "ru": "Вибрация и тактильная отдача телефона",
+            "en": "Phone vibration and haptic feedback"
+          },
+          "catalogId": "phone-haptics"
+        },
+        {
+          "id": "t293",
+          "title": {
+            "ru": "Сенсорный экран и мультитач",
+            "en": "Touchscreens and multitouch"
+          },
+          "catalogId": "phone-touch"
+        },
+        {
+          "id": "t294",
+          "title": {
+            "ru": "Магнитометр и компас телефона",
+            "en": "Phone magnetometer and compass"
+          },
+          "catalogId": "phone-magnetometer"
+        },
+        {
+          "id": "t295",
+          "title": {
+            "ru": "Геолокация, перемещение и ориентация на местности",
+            "en": "Geolocation, movement and real-world orientation"
+          },
+          "catalogId": "geolocation-movement-and-real-world-orientation"
+        },
+        {
+          "id": "t296",
+          "title": {
+            "ru": "Свет, приближение и другие доступные датчики",
+            "en": "Light, proximity and other available sensors"
+          },
+          "catalogId": "light-proximity-and-other-available-sensors"
+        },
+        {
+          "id": "t297",
+          "title": {
+            "ru": "Несколько телефонов и взаимодействие между устройствами",
+            "en": "Multiple phones and cross-device interaction"
+          },
+          "catalogId": "multiple-phones-and-cross-device-interaction"
+        }
+      ]
+    },
+    {
+      "id": "g30",
+      "title": {
+        "ru": "Пространственные и альтернативные интерфейсы",
+        "en": "Spatial and alternative interfaces"
+      },
+      "directions": [
+        {
+          "id": "t298",
+          "title": {
+            "ru": "Электронные устройства и приборы",
+            "en": "Electronic devices and instruments"
+          },
+          "catalogId": "electronic-devices"
+        },
+        {
+          "id": "t299",
+          "title": {
+            "ru": "VR: захват, жесты и манипуляции руками",
+            "en": "VR grabbing, gestures and hand manipulation"
+          },
+          "catalogId": "vr-grabbing-gestures-and-hand-manipulation"
+        },
+        {
+          "id": "t300",
+          "title": {
+            "ru": "VR: перемещение, тело и пространство комнаты",
+            "en": "VR locomotion, bodies and room-scale space"
+          },
+          "catalogId": "vr-locomotion-bodies-and-room-scale-space"
+        },
+        {
+          "id": "t301",
+          "title": {
+            "ru": "AR и mixed reality: привязка к реальному миру",
+            "en": "AR and mixed reality anchored to the physical world"
+          },
+          "catalogId": "ar-and-mixed-reality-anchored-to-the-physical-world"
+        },
+        {
+          "id": "t302",
+          "title": {
+            "ru": "Камера, распознавание позы и движение всем телом",
+            "en": "Camera-based pose recognition and full-body movement"
+          },
+          "catalogId": "camera-based-pose-recognition-and-full-body-movement"
+        },
+        {
+          "id": "t303",
+          "title": {
+            "ru": "Взгляд, моргание и управление глазами",
+            "en": "Gaze, blinking and eye controls"
+          },
+          "catalogId": "gaze-blinking-and-eye-controls"
+        },
+        {
+          "id": "t304",
+          "title": {
+            "ru": "Дыхание, пульс и биосигналы",
+            "en": "Breathing, pulse and biosignals"
+          },
+          "catalogId": "breathing-pulse-and-biosignals"
+        },
+        {
+          "id": "t305",
+          "title": {
+            "ru": "Музыкальные инструменты и специализированные контроллеры",
+            "en": "Musical instruments and specialized controllers"
+          },
+          "catalogId": "musical-instruments-and-specialized-controllers"
+        },
+        {
+          "id": "t306",
+          "title": {
+            "ru": "Рули, педали, джойстики и кабины",
+            "en": "Steering wheels, pedals, joysticks and cockpits"
+          },
+          "catalogId": "steering-wheels-pedals-joysticks-and-cockpits"
+        },
+        {
+          "id": "t307",
+          "title": {
+            "ru": "Физические предметы, метки, NFC и QR",
+            "en": "Physical objects, markers, NFC and QR"
+          },
+          "catalogId": "physical-objects-markers-nfc-and-qr"
+        },
+        {
+          "id": "t308",
+          "title": {
+            "ru": "Свет, проекции, поверхности и интерактивные инсталляции",
+            "en": "Light, projections, surfaces and interactive installations"
+          },
+          "catalogId": "light-projections-surfaces-and-interactive-installations"
+        },
+        {
+          "id": "t309",
+          "title": {
+            "ru": "Текстовый ввод, команды и разговорный интерфейс",
+            "en": "Text input, commands and conversational interfaces"
+          },
+          "catalogId": "text-input-commands-and-conversational-interfaces"
+        }
+      ]
+    },
+    {
+      "id": "g31",
+      "title": {
+        "ru": "Дети, обучение и доступность",
+        "en": "Children, education and accessibility"
+      },
+      "directions": [
+        {
+          "id": "t310",
+          "title": {
+            "ru": "Механики детских игр",
+            "en": "Children’s play mechanics"
+          },
+          "catalogId": "children"
+        },
+        {
+          "id": "t311",
+          "title": {
+            "ru": "Образовательные механики для разных возрастов",
+            "en": "Educational mechanics for different ages"
+          },
+          "catalogId": "education"
+        },
+        {
+          "id": "t312",
+          "title": {
+            "ru": "Сюжетно-ролевая игра и игра по договорённости",
+            "en": "Pretend play and negotiated rules"
+          },
+          "catalogId": "pretend-play-and-negotiated-rules"
+        },
+        {
+          "id": "t313",
+          "title": {
+            "ru": "Сенсорная игра и исследование материалов",
+            "en": "Sensory play and material exploration"
+          },
+          "catalogId": "sensory-play-and-material-exploration"
+        },
+        {
+          "id": "t314",
+          "title": {
+            "ru": "Обучение чтению, языку и коммуникации",
+            "en": "Reading, language and communication learning"
+          },
+          "catalogId": "reading-language-and-communication-learning"
+        },
+        {
+          "id": "t315",
+          "title": {
+            "ru": "Математика, естественные науки и исследовательские задачи",
+            "en": "Mathematics, science and inquiry challenges"
+          },
+          "catalogId": "mathematics-science-and-inquiry-challenges"
+        },
+        {
+          "id": "t316",
+          "title": {
+            "ru": "Профессиональные тренажёры и процедурная практика",
+            "en": "Professional simulators and procedural practice"
+          },
+          "catalogId": "professional-simulators-and-procedural-practice"
+        },
+        {
+          "id": "t317",
+          "title": {
+            "ru": "Аргументация, проверка источников и критическое чтение",
+            "en": "Argumentation, source verification and critical reading"
+          },
+          "catalogId": "argumentation-source-verification-and-critical-reading"
+        },
+        {
+          "id": "t318",
+          "title": {
+            "ru": "Доступная игра при разных моторных и сенсорных возможностях",
+            "en": "Accessible play across motor and sensory abilities"
+          },
+          "catalogId": "accessible-play-across-motor-and-sensory-abilities"
+        },
+        {
+          "id": "t319",
+          "title": {
+            "ru": "Игры с переключателями, сканированием и альтернативными каналами",
+            "en": "Switch access, scanning and alternative channels"
+          },
+          "catalogId": "switch-access-scanning-and-alternative-channels"
+        }
+      ]
+    },
+    {
+      "id": "g32",
+      "title": {
+        "ru": "Онлайн-миры и структура участия",
+        "en": "Online worlds and participation"
+      },
+      "directions": [
+        {
+          "id": "t320",
+          "title": {
+            "ru": "Постоянные миры и общий прогресс сервера",
+            "en": "Persistent worlds and shared server progress"
+          },
+          "catalogId": "persistent-worlds-and-shared-server-progress"
+        },
+        {
+          "id": "t321",
+          "title": {
+            "ru": "Гильдии, кланы и совместные долгосрочные цели",
+            "en": "Guilds, clans and long-term collective goals"
+          },
+          "catalogId": "guilds-clans-and-long-term-collective-goals"
+        },
+        {
+          "id": "t322",
+          "title": {
+            "ru": "Рейды и многоступенчатая групповая координация",
+            "en": "Raids and multi-stage group coordination"
+          },
+          "catalogId": "raids-and-multi-stage-group-coordination"
+        },
+        {
+          "id": "t323",
+          "title": {
+            "ru": "PvP, дуэли, командные и массовые сражения",
+            "en": "PvP, duels, team battles and mass combat"
+          },
+          "catalogId": "pvp-duels-team-battles-and-mass-combat"
+        },
+        {
+          "id": "t324",
+          "title": {
+            "ru": "Battle royale и сокращающееся поле",
+            "en": "Battle royale and shrinking play areas"
+          },
+          "catalogId": "battle-royale-and-shrinking-play-areas"
+        },
+        {
+          "id": "t325",
+          "title": {
+            "ru": "Асинхронное соперничество, призраки и послания",
+            "en": "Asynchronous competition, ghosts and messages"
+          },
+          "catalogId": "asynchronous-competition-ghosts-and-messages"
+        },
+        {
+          "id": "t326",
+          "title": {
+            "ru": "Игровые рынки, подарки и обмен между игроками",
+            "en": "Player markets, gifts and trading"
+          },
+          "catalogId": "player-markets-gifts-and-trading"
+        },
+        {
+          "id": "t327",
+          "title": {
+            "ru": "Сезоны, события и изменение мира",
+            "en": "Seasons, events and world changes"
+          },
+          "catalogId": "seasons-events-and-world-changes"
+        },
+        {
+          "id": "t328",
+          "title": {
+            "ru": "Боевые пропуски, игровые магазины и монетизация",
+            "en": "Battle passes, in-game stores and monetization"
+          },
+          "catalogId": "battle-passes-in-game-stores-and-monetization"
+        },
+        {
+          "id": "t329",
+          "title": {
+            "ru": "ARG, трансмедиа и игра за пределами приложения",
+            "en": "ARGs, transmedia and play beyond the application"
+          },
+          "catalogId": "args-transmedia-and-play-beyond-the-application"
+        }
+      ]
+    }
+  ]
+}
