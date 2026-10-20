@@ -1,5 +1,7 @@
 ---
 import { path } from '../lib/site';
+import '../styles/theme.css';
+import ThemeHead from '../components/ThemeHead.astro';
 ---
 
 <!doctype html>
@@ -9,6 +11,7 @@ import { path } from '../lib/site';
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="refresh" content={`0;url=${path('ru/')}`} />
     <title>Game Dev DB</title>
+    <ThemeHead />
     <link rel="canonical" href="https://polyakovin.github.io/game-dev-db/ru/" />
   </head>
   <body>

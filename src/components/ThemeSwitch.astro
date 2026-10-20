@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+import { ui, type Locale } from '../lib/site';
+interface Props {
+  lang: Locale;
+}
+const t = ui[Astro.props.lang];
+const choices = [
+  { value: 'system', icon: 'monitor', label: t.themeSystem },
+  { value: 'light', icon: 'sun', label: t.themeLight },
+  { value: 'dark', icon: 'moon', label: t.themeDark },
+];
+---
+
+<div
+  class="theme-switch"
+  role="group"
+  aria-label={t.theme}
+  data-theme-controls
+  hidden
+>
+  {choices.map(({ value, icon, label }) => (
+    <button
+      type="button"
+      data-theme-choice={value}
+      aria-label={label}
+      aria-pressed="false"
+      title={label}
+    >
+      <Icon name={icon} size={16} />
+    </button>
+  ))}
+</div>

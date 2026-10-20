@@ -1,6 +1,6 @@
 .lenses-use {
   border-left: 3px solid var(--accent);
-  background: #eeede5;
+  background: var(--surface-alt);
   padding: 18px 22px;
   margin-bottom: 28px;
   font-size: 13px;
@@ -21,7 +21,7 @@
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 7px;
-  background: #eeede5;
+  background: var(--surface-alt);
 }
 .lenses-controls[hidden] {
   display: none;

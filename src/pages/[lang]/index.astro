@@ -59,7 +59,7 @@ const lensCatalog = getLenses(lang);
             height="16"
             patternUnits="userSpaceOnUse"
           >
-            <circle cx="1" cy="1" r="1" fill="#dedbd0" />
+            <circle cx="1" cy="1" r="1" fill="var(--diagram-grid)" />
           </pattern>
           <marker
             id="arrowhead"
@@ -72,7 +72,7 @@ const lensCatalog = getLenses(lang);
           >
             <path
               d="m1 1 7 4-7 4"
-              stroke="#958d7d"
+              stroke="var(--diagram-line)"
               stroke-width="1.6"
               fill="none"
             />
@@ -81,7 +81,7 @@ const lensCatalog = getLenses(lang);
         <rect width="320" height="190" fill="url(#dots)" />
         <path
           d="M83 84H125 M200 84h38 M264 114v35H57v-35"
-          stroke="#958d7d"
+          stroke="var(--diagram-line)"
           stroke-width="1.5"
           marker-end="url(#arrowhead)"
         />
@@ -91,20 +91,31 @@ const lensCatalog = getLenses(lang);
           width="62"
           height="60"
           rx="10"
-          fill="#f6f5f0"
-          stroke="#c3bdaf"
+          fill="var(--diagram-node)"
+          stroke="var(--line-strong)"
         />
-        <path d="M42 83h26m-13-13v26" stroke="#787263" stroke-width="5" />
-        <rect x="128" y="48" width="70" height="72" rx="10" fill="#cd5735" />
-        <path d="m151 68 25 16-25 16V68Z" fill="#fff8ed" />
+        <path
+          d="M42 83h26m-13-13v26"
+          stroke="var(--diagram-symbol)"
+          stroke-width="5"
+        />
+        <rect
+          x="128"
+          y="48"
+          width="70"
+          height="72"
+          rx="10"
+          fill="var(--accent)"
+        />
+        <path d="m151 68 25 16-25 16V68Z" fill="var(--on-ink)" />
         <rect
           x="238"
           y="54"
           width="62"
           height="60"
           rx="10"
-          fill="#f6f5f0"
-          stroke="#c3bdaf"
+          fill="var(--diagram-node)"
+          stroke="var(--line-strong)"
         />
         <rect
           x="251"
@@ -112,15 +123,19 @@ const lensCatalog = getLenses(lang);
           width="36"
           height="25"
           rx="2"
-          stroke="#787263"
+          stroke="var(--diagram-symbol)"
           stroke-width="2"
         />
-        <path d="M260 101h18m-9-8v8" stroke="#787263" stroke-width="2" />
+        <path
+          d="M260 101h18m-9-8v8"
+          stroke="var(--diagram-symbol)"
+          stroke-width="2"
+        />
         <text
           x="55"
           y="39"
           text-anchor="middle"
-          fill="#777266"
+          fill="var(--muted)"
           font-size="10"
           font-family="monospace"
         >
@@ -130,7 +145,7 @@ const lensCatalog = getLenses(lang);
           x="163"
           y="33"
           text-anchor="middle"
-          fill="#a2462e"
+          fill="var(--accent)"
           font-size="10"
           font-family="monospace"
         >
@@ -140,7 +155,7 @@ const lensCatalog = getLenses(lang);
           x="269"
           y="39"
           text-anchor="middle"
-          fill="#777266"
+          fill="var(--muted)"
           font-size="10"
           font-family="monospace"
         >

@@ -57,6 +57,7 @@ Design lenses use `src/data/lenses.json` as a single bilingual source. `src/lib/
 - **Presentation:** Astro layouts, components, styles, and language-specific interface labels. Use semantic HTML and preserve keyboard access.
 - **Fonts:** Golos Text and IBM Plex Mono are bundled from the pinned Fontsource packages and served by the site. Preserve their separate OFL-1.1 notices when publishing the font assets.
 - **Interaction:** client-side catalog search and filters. Core lesson reading must work without JavaScript.
+- **Appearance:** `src/styles/theme.css` owns semantic light/dark colors, including the system-aware CSS fallback and light print palette. `ThemeHead.astro` resolves the namespaced `game-dev-db:theme` local preference before body rendering and handles system/storage changes defensively. `ThemeSwitch.astro` exposes localized system/light/dark buttons after initialization. Shared and standalone pages load the same palette; keep presentation and SVG colors on its tokens.
 - **Exports:** build-time transformations of the collection. Preserve identifiers, language, sources, canonical URLs, and license context.
 - **Deployment:** GitHub Actions builds and publishes the generated artifact to GitHub Pages. GitHub Pages supplies HTTPS and static hosting.
 

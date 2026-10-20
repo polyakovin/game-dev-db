@@ -3,17 +3,10 @@
 @import '@fontsource/ibm-plex-mono/500.css';
 @import './mechanics.css';
 @import './lenses.css';
+@import './theme.css';
 :root {
-  --paper: #f7f6f2;
-  --surface: #fffefa;
-  --ink: #282b29;
-  --muted: #686d60;
-  --line: #e3e2da;
-  --accent: #c75031;
   --sidebar: 242px;
   font-family: 'Golos Text Variable', system-ui, sans-serif;
-  color: var(--ink);
-  background: var(--paper);
   font-synthesis: none;
   line-height: 1.55;
 }
@@ -28,7 +21,8 @@ a {
   text-decoration: none;
 }
 button,
-input {
+input,
+select {
   font: inherit;
   color: inherit;
 }
@@ -37,16 +31,18 @@ button {
 }
 a,
 button,
-input {
+input,
+select {
   outline-offset: 5px;
 }
 a:focus-visible,
 button:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   outline: 2px solid var(--accent);
 }
 ::selection {
-  background: #ead3bf;
+  background: var(--selection);
 }
 h1,
 h2,
@@ -78,7 +74,7 @@ svg {
   left: 16px;
   z-index: 20;
   background: var(--ink);
-  color: white;
+  color: var(--on-ink);
   padding: 12px 18px;
 }
 .skip-link:focus {
@@ -89,7 +85,7 @@ svg {
   inset: 0 auto 0 0;
   width: var(--sidebar);
   border-right: 1px solid var(--line);
-  background: #f0f0e9;
+  background: var(--sidebar-bg);
   padding: 32px 20px 24px;
   display: flex;
   flex-direction: column;
@@ -149,14 +145,14 @@ svg {
   font-size: 12px;
   border-radius: 5px;
   margin: 3px 0;
-  color: #62665d;
+  color: var(--muted);
 }
 .nav-item:hover {
-  background: #e9e9e0;
+  background: var(--hover);
 }
 .nav-item.active {
   color: var(--accent);
-  background: #e9e8de;
+  background: var(--active);
   font-weight: 550;
 }
 .nav-dot {
@@ -175,7 +171,7 @@ svg {
   align-items: center;
   font-size: 12px;
   padding: 10px 12px;
-  color: #676b62;
+  color: var(--muted);
 }
 .category-nav a:hover {
   color: var(--accent);
@@ -184,12 +180,12 @@ svg {
   font:
     10px 'IBM Plex Mono',
     monospace;
-  color: #9c9e92;
+  color: var(--muted);
 }
 .sidebar-bottom {
   margin-top: auto;
   padding: 22px 10px 0;
-  border-top: 1px solid #dfdfd5;
+  border-top: 1px solid var(--line);
 }
 .open-label {
   display: flex;
@@ -202,7 +198,7 @@ svg {
 .open-label > span {
   width: 6px;
   height: 6px;
-  background: #6f8263;
+  background: var(--positive);
   border-radius: 50%;
 }
 .sidebar-bottom p {
@@ -239,7 +235,7 @@ svg {
 }
 .breadcrumb .slash {
   margin: 0 12px;
-  color: #b4b7a9;
+  color: var(--muted);
 }
 .desktop-crumb > span:last-child {
   color: var(--ink);
@@ -248,6 +244,33 @@ svg {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+.theme-switch {
+  display: flex;
+  flex-shrink: 0;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+}
+.theme-switch button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--muted);
+}
+.theme-switch button:hover {
+  background: var(--hover);
+  color: var(--ink);
+}
+.theme-switch button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--on-ink);
 }
 .language-switch {
   display: flex;
@@ -265,7 +288,7 @@ svg {
 }
 .language-switch span {
   background: var(--ink);
-  color: #fffefa;
+  color: var(--on-ink);
 }
 .language-switch a {
   color: var(--muted);
@@ -344,7 +367,7 @@ footer a:hover {
 }
 .intro-description {
   font-size: 13px;
-  color: #686d60;
+  color: var(--muted);
   max-width: 470px;
   line-height: 1.9;
   margin-bottom: 23px;
@@ -356,19 +379,19 @@ footer a:hover {
   font:
     10px 'IBM Plex Mono',
     monospace;
-  color: #686d60;
+  color: var(--muted);
 }
 .intro-meta i {
   width: 3px;
   height: 3px;
-  background: #b0b2a4;
+  background: var(--muted);
   border-radius: 50%;
 }
 .loop-visual {
   width: 300px;
   flex-shrink: 0;
-  border: 1px solid #dedcd0;
-  background: #eeede4;
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
   border-radius: 7px;
   padding: 17px 17px 13px;
   transform: rotate(-2deg);
@@ -381,10 +404,10 @@ footer a:hover {
   font:
     8px 'IBM Plex Mono',
     monospace;
-  color: #7c7c6c;
+  color: var(--muted);
 }
 .visual-topline {
-  border-bottom: 1px solid #dcd9cb;
+  border-bottom: 1px solid var(--line);
   padding-bottom: 12px;
 }
 .loop-diagram {
@@ -401,9 +424,9 @@ footer a:hover {
   letter-spacing: 1px;
 }
 .start-strip {
-  border: 1px solid #e1d9c9;
+  border: 1px solid var(--callout-line);
   border-radius: 6px;
-  background: #eeebdf;
+  background: var(--callout);
   display: flex;
   align-items: center;
   gap: 16px;
@@ -411,7 +434,7 @@ footer a:hover {
   margin: 0 0 42px;
 }
 .start-strip:hover {
-  border-color: #b7a28d;
+  border-color: var(--line-strong);
 }
 .start-icon {
   display: flex;
@@ -419,9 +442,9 @@ footer a:hover {
   justify-content: center;
   width: 36px;
   height: 36px;
-  border: 1px solid #d8d1bf;
+  border: 1px solid var(--callout-line);
   border-radius: 50%;
-  color: #8e6a45;
+  color: var(--callout-ink);
 }
 .start-strip strong {
   display: block;
@@ -431,7 +454,7 @@ footer a:hover {
 .start-description {
   display: block;
   font-size: 11px;
-  color: #6e6959;
+  color: var(--muted);
   margin-top: 3px;
 }
 .start-action {
@@ -441,7 +464,7 @@ footer a:hover {
   align-items: center;
   white-space: nowrap;
   font-size: 11px;
-  color: #846347;
+  color: var(--callout-ink);
 }
 .section-heading {
   display: flex;
@@ -463,28 +486,28 @@ footer a:hover {
   font:
     10px 'IBM Plex Mono',
     monospace;
-  color: #686d60;
+  color: var(--muted);
   border: 1px solid var(--line);
   border-radius: 4px;
   padding: 3px 6px;
 }
 .section-caption {
   font-size: 10px;
-  color: #686d60;
+  color: var(--muted);
 }
 .search-box {
   display: flex;
   align-items: center;
   gap: 12px;
-  border: 1px solid #dcded2;
+  border: 1px solid var(--control-line);
   background: var(--surface);
   border-radius: 5px;
   padding: 0 15px;
-  color: #8a8e82;
+  color: var(--muted);
 }
 .search-box:focus-within {
   border-color: var(--accent);
-  box-shadow: 0 0 0 2px #c7503110;
+  box-shadow: 0 0 0 2px var(--focus-halo);
 }
 .search-box input {
   width: 100%;
@@ -496,7 +519,7 @@ footer a:hover {
   min-width: 0;
 }
 .search-box input::placeholder {
-  color: #686d60;
+  color: var(--muted);
 }
 .search-box kbd {
   font:
@@ -521,12 +544,12 @@ footer a:hover {
   transition: background 0.15s;
 }
 .filters button:hover {
-  background: #ebeae1;
+  background: var(--hover);
 }
 .filters button[aria-pressed='true'] {
   background: var(--ink);
   border-color: var(--ink);
-  color: #fffefa;
+  color: var(--on-ink);
 }
 .lesson-grid {
   display: grid;
@@ -548,8 +571,8 @@ footer a:hover {
 }
 .lesson-card:hover {
   transform: translateY(-3px);
-  border-color: #c7b7a4;
-  box-shadow: 0 5px 16px #292a2410;
+  border-color: var(--line-strong);
+  box-shadow: 0 5px 16px var(--shadow);
 }
 .card-top {
   display: flex;
@@ -562,7 +585,7 @@ footer a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #62683e;
+  color: var(--tag-foundations);
   font-size: 9px;
   font-weight: 500;
   line-height: 1.5;
@@ -574,19 +597,19 @@ footer a:hover {
   border-radius: 1px;
 }
 .category-tag.engineering {
-  color: #4e6c7b;
+  color: var(--tag-engineering);
 }
 .category-tag.design {
-  color: #a15432;
+  color: var(--tag-design);
 }
 .category-tag.workflow {
-  color: #78628a;
+  color: var(--tag-workflow);
 }
 .card-index {
   font:
     10px 'IBM Plex Mono',
     monospace;
-  color: #acafa2;
+  color: var(--muted);
 }
 .lesson-card h3 {
   font-size: 16px;
@@ -597,7 +620,7 @@ footer a:hover {
 }
 .lesson-card > p {
   font-size: 11px;
-  color: #686d60;
+  color: var(--muted);
   line-height: 1.8;
   margin-bottom: 22px;
 }
@@ -606,19 +629,19 @@ footer a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  border-top: 1px solid #eeeee7;
+  border-top: 1px solid var(--line);
   padding-top: 12px;
   font:
     9px 'IBM Plex Mono',
     monospace;
-  color: #666b5e;
+  color: var(--muted);
 }
 .card-bottom b {
   font-weight: 400;
   margin: 0 9px;
 }
 .card-arrow {
-  color: #7b7e73;
+  color: var(--muted);
 }
 .lesson-card:hover .card-arrow {
   color: var(--accent);
@@ -644,7 +667,7 @@ footer a:hover {
 .button-primary {
   border: 0;
   background: var(--ink);
-  color: #fff;
+  color: var(--on-ink);
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 12px;
@@ -658,14 +681,14 @@ footer a:hover {
   gap: 18px;
 }
 .agent-banner-icon {
-  background: #ebece4;
+  background: var(--positive-bg);
   width: 51px;
   height: 51px;
   border-radius: 9px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #657360;
+  color: var(--positive);
 }
 .agent-banner .eyebrow {
   font-size: 8px;
@@ -786,7 +809,7 @@ footer a:hover {
   line-height: 1.7;
 }
 .prose :not(pre) > code {
-  background: #eaeae1;
+  background: var(--surface-alt);
   border-radius: 3px;
   padding: 2px 5px;
   font-size: 0.85em;
@@ -797,11 +820,11 @@ footer a:hover {
 }
 .prose blockquote {
   margin: 24px 0;
-  background: #eeede4;
+  background: var(--surface-alt);
   border-left: 3px solid var(--accent);
   padding: 20px 22px;
   font-size: 14px;
-  color: #62685d;
+  color: var(--muted);
 }
 .prose blockquote p:last-child {
   margin-bottom: 0;
@@ -919,9 +942,9 @@ footer a:hover {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: #e9ece3;
+  background: var(--positive-bg);
   border-radius: 7px;
-  color: #75806d;
+  color: var(--positive);
 }
 .resource-meta {
   display: flex;
@@ -948,7 +971,7 @@ footer a:hover {
 .notice {
   font-size: 12px;
   color: var(--muted);
-  background: #eeede5;
+  background: var(--surface-alt);
   padding: 17px 20px;
   border-radius: 5px;
   margin-top: 26px;
@@ -988,8 +1011,8 @@ footer a:hover {
   line-height: 1.9;
 }
 .agent-guide pre {
-  background: #2c302c;
-  color: #e9ecdf;
+  background: var(--code-bg);
+  color: var(--code-ink);
   padding: 24px;
   border-radius: 7px;
   font:
@@ -1120,7 +1143,16 @@ footer a:hover {
     height: 65px;
   }
   .topbar-actions {
-    gap: 15px;
+    gap: 8px;
+  }
+  .topbar {
+    gap: 12px;
+  }
+  .theme-switch button {
+    width: 26px;
+  }
+  .mobile-brand {
+    white-space: nowrap;
   }
   .github-link span,
   .github-link > svg:last-child {
@@ -1294,6 +1326,14 @@ footer a:hover {
     font-size: 9px;
   }
 }
+@media (max-width: 360px) {
+  .topbar {
+    padding-inline: 12px;
+  }
+  .mobile-brand {
+    font-size: 14px;
+  }
+}
 @media (max-width: 390px) {
   .lesson-grid {
     grid-template-columns: 1fr;
@@ -1311,7 +1351,7 @@ footer a:hover {
     gap: 8px;
   }
   .topbar-actions {
-    gap: 10px;
+    gap: 8px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

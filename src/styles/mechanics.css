@@ -39,7 +39,7 @@
 }
 .mechanics-controls {
   padding: 22px;
-  background: #eeede5;
+  background: var(--surface-alt);
   border: 1px solid var(--line);
   border-radius: 7px;
 }
@@ -193,7 +193,7 @@
 }
 .mechanics-note-grid > div {
   padding: 16px;
-  background: #eeede5;
+  background: var(--surface-alt);
   border-radius: 5px;
 }
 .mechanics-note-grid h3 {

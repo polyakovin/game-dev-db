@@ -1,5 +1,7 @@
 ---
 import { path } from '../lib/site';
+import '../styles/theme.css';
+import ThemeHead from '../components/ThemeHead.astro';
 ---
 
 <!doctype html>
@@ -9,11 +11,12 @@ import { path } from '../lib/site';
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>404 · Game Dev DB</title>
     <meta name="robots" content="noindex" />
+    <ThemeHead />
     <style>
       body {
         font-family: system-ui, sans-serif;
-        background: #f7f6f2;
-        color: #282b29;
+        background: var(--paper);
+        color: var(--ink);
         max-width: 600px;
         margin: 15vh auto;
         padding: 24px;
@@ -25,7 +28,7 @@ import { path } from '../lib/site';
         line-height: 1.8;
       }
       a {
-        color: #c75031;
+        color: var(--accent);
       }
     </style>
   </head>

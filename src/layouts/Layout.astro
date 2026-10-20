@@ -1,6 +1,8 @@
 ---
 import '../styles/global.css';
 import Icon from '../components/Icon.astro';
+import ThemeHead from '../components/ThemeHead.astro';
+import ThemeSwitch from '../components/ThemeSwitch.astro';
 import { path, absolute, REPO, ui, categories, type Locale } from '../lib/site';
 interface Props {
   lang: Locale;
@@ -39,7 +41,7 @@ const nav = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#f6f5f0" />
+    <ThemeHead />
     <title>{title} · Game Dev DB</title>
     <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
@@ -122,6 +124,7 @@ const nav = [
           </span>
         </div>
         <div class="topbar-actions">
+          <ThemeSwitch lang={lang} />
           <div
             class="language-switch"
             aria-label={lang === 'ru' ? 'Язык' : 'Language'}
