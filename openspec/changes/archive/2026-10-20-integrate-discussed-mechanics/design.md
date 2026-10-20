@@ -16,7 +16,7 @@ See proposal.md for motivation. Existing JSON catalogs share a bilingual tree an
 - Keep source descriptions and family-level URL associations; retain application and limitation columns as labeled variant text. Put modifiers, boundary cases and methodology into supplementary notes. Avoid a separate raw-data runtime or duplicated public files.
 - Use complete RU/EN values in authored JSON. A temporary translation tool may assist preparation; review terminology, capability restrictions, numeric coverage and locale completeness before publishing. No translation service is used at runtime.
 - Record sanitized topic/count coverage in project research documentation. Keep local extraction scripts, translation caches and private transcript data outside Git.
-- Register catalogs explicitly and extend editorial ordering, preserving all existing routes. Update RPG grind additively. Verify the complete shared source and scope commits to task-owned paths.
+- Register catalogs explicitly and extend editorial ordering, preserving all existing routes. Adopt the authoritative expanded RPG grind reference, which already covers the twelve later discussion gaps, rather than duplicating those concepts. Verify the complete shared source and scope commits to task-owned paths.
 
 ## Risks / Trade-offs
 

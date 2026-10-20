@@ -4,7 +4,7 @@ The audit reviewed the project conversation inventory, complete available discus
 
 ## Added coverage
 
-The twenty genre/design/device catalogs and the ten-item perception catalog preserve 3,941 core entries. Twelve later RPG grind additions bring the total addition to 3,953 entries. Counts describe editorial records, not independent physical primitives or an exhaustive universal taxonomy. Supplemental notes, modifiers and prototype combinations are counted separately.
+The twenty genre/design/device catalogs and the ten-item perception catalog add 3,941 core entries. The twelve later RPG grind discussion gaps are already covered by the expanded reference published during integration, so that 110-family/330-variant source is retained without duplicate additions. Counts describe editorial records, not independent physical primitives or an exhaustive universal taxonomy. Supplemental notes, modifiers and prototype combinations are counted separately.
 
 | Catalog | Families | Core entries | Coverage |
 | --- | ---: | ---: | --- |
@@ -29,9 +29,9 @@ The twenty genre/design/device catalogs and the ten-item perception catalog pres
 | `metroidbrainia` | 12 | 91 | Complete discussion list |
 | `engagement-retention` | 20 | 160 | Complete discussion list |
 | `perception` | 1 | 10 | Complete discussion list |
-| `rpg-grind` | 42 | 42 | 30 existing + 12 additions |
+| `rpg-grind` | 110 | 330 | Expanded reference retained; all later gaps covered |
 
-Trackpad coverage uses the latest complete artifact with 106 input patterns, plus six supplementary haptic patterns; an earlier progress message mentioned only 100 input patterns. Roguelike coverage includes all 603 bullets in 40 groups. Engagement/retention preserves 160 numbered entries and five illustrative combinations in notes. Metroidbrainia preserves 91 numbered entries, 13 progression patterns, ten knowledge-discovery patterns and nine boundary cases. RPG grind keeps all original thirty family/branch/variant identities and adds economy/trade, companions/relationships, expeditions, base production, dispatch missions, offline progress, unwanted-loot exchange, bad-luck protection and extraction. Existing fragments retain their original meaning.
+Trackpad coverage uses the latest complete artifact with 106 input patterns, plus six supplementary haptic patterns; an earlier progress message mentioned only 100 input patterns. Roguelike coverage includes all 603 bullets in 40 groups. Engagement/retention preserves 160 numbered entries and five illustrative combinations in notes. Metroidbrainia preserves 91 numbered entries, 13 progression patterns, ten knowledge-discovery patterns and nine boundary cases. RPG grind keeps all original thirty family/branch/variant identities and original variant text. Its expanded coverage includes economy/trade, companions/relationships, expeditions, base production, dispatch missions, offline progress, unwanted-loot exchange, bad-luck protection and extraction. Existing fragments retain their original meaning.
 
 ## Already covered or outside the addition
 
@@ -49,6 +49,8 @@ The engagement catalog is an analytical taxonomy, not diagnostic guidance or pro
 
 ## Verification record
 
-Node 24 verification passed on an isolated copy containing only this change: `npm run verify`, `npm run format:check` and all 267 Playwright tests. The complete shared working version also passed 277 browser tests, providing a compatibility check against the parallel knowledge-content changes. Russian and English production-preview pages were inspected at 1440px and 390px in light and dark appearance; fonts loaded, requests succeeded and no horizontal overflow was observed.
+Final merged verification passed on Node 24: `npm run verify`, `npm run format:check` and all 273 Playwright tests, including the expanded RPG grind reference. An earlier shared working version also passed 277 browser tests, providing a compatibility check against parallel knowledge-content changes. Russian and English production-preview pages were inspected at 1440px and 390px in light and dark appearance; fonts loaded, requests succeeded and no horizontal overflow was observed.
 
-All 3,941 new variant identities and names were compared with the imported lists. Every original RPG grind family remains unchanged. English text was prepared with Google Translate following explicit user authorization, then reviewed with terminology corrections for cards, discards, dialogue lines, runs, leading targets and hardware constraints. Structural validation, untranslated-text checks and numeric/negation review support the translation review; they do not constitute independent verification of every game example. No translation service is used by the published site. Hardware and playtest limits described above still apply.
+All 3,941 new variant identities and names were compared with the imported lists. The expanded RPG grind source retains all original family/branch/variant identities and original variant text. English text was prepared with Google Translate following explicit user authorization, then reviewed with terminology corrections for cards, discards, dialogue lines, runs, leading targets and hardware constraints. Structural validation, untranslated-text checks and numeric/negation review support the translation review; they do not constitute independent verification of every game example. No translation service is used by the published site. Hardware and playtest limits described above still apply.
+
+The final integration adopts the authoritative RPG grind source unchanged from its expansion commit. Coverage mapping: `gold-farming`; `market-arbitrage`; `trade-routes`; `companion-leveling`/`pet-training`; `companion-rapport`; `procedural-expeditions`/`chest-circuits`; `passive-production`; `dispatch-missions`; `offline-accumulation`; `unwanted-reward-compensation`; `hard-pity`/`soft-pity`; and `banking-extraction`. `regional-investment` covers territorial development. These existing records replace the proposed twelve duplicate additions. The coverage mapping and final merged source passed content, export and browser validation.

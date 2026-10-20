@@ -98,11 +98,11 @@ Mechanic JSON and Markdown SHALL preserve all source-based mechanics, matching R
 - **THEN** content validation fails before publication
 
 ### Requirement: Dedicated RPG grind reference
-The portal SHALL publish a bilingual `rpg-grind` catalog containing the 30 requested mechanics in six groups. Each mechanic SHALL describe a repeatable action, its progression goal and an illustrative design example. Notes SHALL explain overlapping classification layers and reward design. Released-game claims SHALL link to primary sources and remain distinct from hypothetical examples.
+The portal SHALL publish a bilingual `rpg-grind` reference with at least 110 families and 330 variants across activities, progression goals, reward rules and pacing/cost constraints. It SHALL cover economy, exploration, companions, delegation and metaprogression as well as combat, crafting and gear. Descriptions, illustrative examples, coverage notes and sourced game observations SHALL stay aligned across languages. Published identities SHALL remain valid.
 
 #### Scenario: Discover and filter RPG grind mechanics
 - **WHEN** a reader opens the home page or mechanics index in either language
-- **THEN** the RPG grind card links to `/game-dev-db/{lang}/mechanics/rpg-grind/`, where all 30 mechanics can be searched and filtered by the six groups
+- **THEN** the RPG grind card links to `/game-dev-db/{lang}/mechanics/rpg-grind/`, where the expanded reference can be searched and filtered by explicit layer and subject groups
 
 #### Scenario: Read without scripts and switch language
 - **WHEN** a reader opens the RPG grind reference without JavaScript or on a narrow screen
@@ -110,7 +110,15 @@ The portal SHALL publish a bilingual `rpg-grind` catalog containing the 30 reque
 
 #### Scenario: Retrieve the complete RPG grind reference
 - **WHEN** an agent follows the existing mechanics JSON or RPG grind Markdown endpoint
-- **THEN** it receives all 30 mechanics with matching RU/EN identities, complete notes, checked sources, original provenance and the existing v1 license and canonical URL fields
+- **THEN** it receives every family and variant with matching RU/EN identities, complete notes, checked sources, original provenance and the existing v1 license and canonical URL fields
+
+#### Scenario: Follow a previously published identity
+- **WHEN** a reader follows any original RPG grind section, family or variant fragment
+- **THEN** that identity still resolves within the expanded reference and its original mechanic remains available
+
+#### Scenario: Check the scope of the reference
+- **WHEN** a designer reads the coverage and combination notes
+- **THEN** the reference distinguishes repeated actions, development goals, reward rules and constraints, explains their combinations and states its scope without claiming that every possible combination has been enumerated
 
 ### Requirement: Separate children's play and educational discovery
 The portal SHALL expose `children` and `education` cards instead of the combined card on the home page and mechanics index. Each reference SHALL state its scope and link the other under `/game-dev-db/{lang}/mechanics/`. Children's play SHALL include non-instructional play; education SHALL cover learners beyond children.
