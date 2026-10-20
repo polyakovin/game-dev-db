@@ -4,6 +4,7 @@ import children from '../data/mechanics/children-education.json' with { type: 'j
 import detective from '../data/mechanics/detective.json' with { type: 'json' };
 import boss from '../data/mechanics/boss-fight-atlas.json' with { type: 'json' };
 import games from '../data/mechanics/game-mechanics.json' with { type: 'json' };
+import rpgGrind from '../data/mechanics/rpg-grind.json' with { type: 'json' };
 import { absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 
@@ -15,6 +16,7 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
   detective,
   boss,
   games,
+  rpgGrind,
 ]);
 
 /** @param {'ru' | 'en'} lang */

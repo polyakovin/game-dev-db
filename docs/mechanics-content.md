@@ -12,8 +12,11 @@ The `detective` catalog was originally authored for Game Dev DB on 2026-10-19. I
 | `detective` | 32 | 32 | 96 |
 | `boss-fight-atlas` | 124 | 124 | 124 |
 | `game-mechanics` | 199 | 199 | 199 |
+| `rpg-grind` | 30 | 30 | 30 |
 
 These are baseline counts, not a limit on future contributions. Counts in the site and exports are derived from current source data. A branch list in non-audio catalogs is simply the family's list of variants, while audio families preserve three named subbranches.
+
+The `rpg-grind` catalog was originally authored on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. It preserves six groups: character progression, equipment acquisition, equipment upgrades, resources and production, reputation and access, and repeatable challenges and collections. Each family has one action/reward loop and a hypothetical design example. Notes distinguish activities, goals and reward rules, illustrate combinations and describe prototype checks without claiming completed playtests. The checked official Warframe mastery and Final Fantasy XIV currency pages support only the specific released-game observations identified in the catalog. Its explicit provenance identifies original editorial authorship.
 
 ## Source and localization contract
 
@@ -35,7 +38,7 @@ Detective examples were checked against developer/publisher pages for The Case o
 
 ## Public export contract
 
-`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently twelve records). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
+`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently fourteen records). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
 
 `/content/mechanics/{lang}/{id}.md` contains the same generated body and frontmatter metadata. Tree arrays are represented in the body rather than duplicated in frontmatter. Source descriptions and classification limits are retained. The additive manifest fields are `endpoints.mechanics`, `endpoints.mechanicsMarkdownTemplate`, and the mechanic counts. Existing lesson counts and templates retain their previous meanings. `llms.txt`, `llms-full.txt`, the sitemap and agent guidance discover the new catalogs.
 

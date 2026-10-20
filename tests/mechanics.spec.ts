@@ -11,6 +11,7 @@ const catalogs = [
   'detective',
   'boss-fight-atlas',
   'game-mechanics',
+  'rpg-grind',
 ]
   .map((id) =>
     JSON.parse(

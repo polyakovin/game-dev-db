@@ -1,0 +1,1281 @@
+{
+  "id": "rpg-grind",
+  "updatedAt": "2026-10-20",
+  "title": {
+    "ru": "Механики гринда для RPG",
+    "en": "RPG grind mechanics"
+  },
+  "description": {
+    "ru": "30 механик: прокачка, добыча и улучшение снаряжения, ресурсы, репутация, испытания и коллекции. Действия, награды и примеры циклов.",
+    "en": "30 mechanics covering leveling, loot, upgrades, resources, reputation, challenges and collections. Actions, rewards and example loops."
+  },
+  "intro": {
+    "ru": "Рабочая карта гринда для RPG: 30 механик в шести группах. Для каждой показаны повторяемое действие, цель развития и пример проектирования. Механики можно сочетать; они описывают разные слои цикла, а не взаимоисключающие типы игр. Примеры проектирования условные. Отдельные наблюдения о выпущенных играх сопровождаются первичными источниками.",
+    "en": "A working map of RPG grinding: 30 mechanics in six groups. Each shows a repeated action, a progression goal and a design example. Mechanics can be combined; they describe different layers of a loop rather than mutually exclusive game types. Design examples are hypothetical. Specific observations about released games are supported by primary sources."
+  },
+  "provenance": "Original editorial taxonomy authored for Game Dev DB on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. Primary sources support only the stated Warframe mastery and Final Fantasy XIV currency examples; other design examples are hypothetical.",
+  "sections": [
+    {
+      "id": "character-progression",
+      "title": {
+        "ru": "Прокачка персонажа",
+        "en": "Character progression"
+      }
+    },
+    {
+      "id": "equipment-loot",
+      "title": {
+        "ru": "Добыча снаряжения",
+        "en": "Equipment acquisition"
+      }
+    },
+    {
+      "id": "equipment-upgrades",
+      "title": {
+        "ru": "Улучшение снаряжения",
+        "en": "Equipment upgrades"
+      }
+    },
+    {
+      "id": "resources-production",
+      "title": {
+        "ru": "Ресурсы и производство",
+        "en": "Resources and production"
+      }
+    },
+    {
+      "id": "reputation-access",
+      "title": {
+        "ru": "Репутация и открытие доступа",
+        "en": "Reputation and access"
+      }
+    },
+    {
+      "id": "challenges-collections",
+      "title": {
+        "ru": "Повторяемые испытания и коллекции",
+        "en": "Repeatable challenges and collections"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "experience-leveling",
+      "section": "character-progression",
+      "title": {
+        "ru": "Накопление опыта",
+        "en": "Experience leveling"
+      },
+      "description": {
+        "ru": "Повторяемые действия дают опыт, который повышает уровень персонажа и открывает характеристики или способности.",
+        "en": "Repeated actions award experience that raises character level and unlocks attributes or abilities."
+      },
+      "example": {
+        "ru": "За зачистку лагеря герой получает опыт; следующий уровень даёт очко для выбора способности.",
+        "en": "Clearing a camp awards experience; the next level grants a point to spend on an ability."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "experience-leveling-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "experience-leveling-repeat",
+              "text": {
+                "ru": "Побеждать врагов и выполнять задания → получать опыт и повышать уровень.",
+                "en": "Defeat enemies and complete quests → earn experience and gain levels."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skill-use",
+      "section": "character-progression",
+      "title": {
+        "ru": "Развитие навыка через использование",
+        "en": "Learning by using skills"
+      },
+      "description": {
+        "ru": "Навык развивается при выполнении соответствующего действия. Правила начисления определяют, какие попытки считаются полезной практикой.",
+        "en": "A skill develops through its associated action. Award rules determine which attempts count as useful practice."
+      },
+      "example": {
+        "ru": "Успешное вскрытие незнакомого замка повышает навык взлома; повторное открытие того же замка опыта не даёт.",
+        "en": "Picking an unfamiliar lock improves lockpicking; reopening the same lock grants no experience."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "skill-use-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "skill-use-repeat",
+              "text": {
+                "ru": "Взламывать замки, колдовать или скрываться → развивать соответствующий навык.",
+                "en": "Pick locks, cast spells or sneak → improve the corresponding skill."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weapon-proficiency",
+      "section": "character-progression",
+      "title": {
+        "ru": "Мастерство владения оружием",
+        "en": "Weapon proficiency"
+      },
+      "description": {
+        "ru": "Использование выбранного типа оружия развивает отдельную шкалу мастерства и открывает связанные приёмы.",
+        "en": "Using a chosen weapon type advances a separate proficiency track and unlocks related techniques."
+      },
+      "example": {
+        "ru": "Победы с копьём заполняют шкалу мастерства, после чего игрок выбирает новую атаку против щитов.",
+        "en": "Victories with a spear fill a proficiency track, letting the player choose a new attack against shields."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "weapon-proficiency-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "weapon-proficiency-repeat",
+              "text": {
+                "ru": "Сражаться определённым типом оружия → открывать приёмы и бонусы владения.",
+                "en": "Fight with a particular weapon type → unlock techniques and proficiency bonuses."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "profession-leveling",
+      "section": "character-progression",
+      "title": {
+        "ru": "Прокачка профессий",
+        "en": "Profession leveling"
+      },
+      "description": {
+        "ru": "Сбор и изготовление предметов повышают профессиональный ранг и расширяют набор доступных рецептов или ресурсов.",
+        "en": "Gathering and crafting raise a profession rank and expand the available recipes or resources."
+      },
+      "example": {
+        "ru": "Кузнец выполняет заказы на железные инструменты, повышает ранг и получает рецепт стального клинка.",
+        "en": "A smith completes iron-tool orders, raises their rank and unlocks a steel-blade recipe."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "profession-leveling-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "profession-leveling-repeat",
+              "text": {
+                "ru": "Создавать предметы, варить зелья или добывать руду → получать доступ к сложным рецептам.",
+                "en": "Craft items, brew potions or mine ore → gain access to advanced recipes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breadth-mastery",
+      "section": "character-progression",
+      "title": {
+        "ru": "Освоение разных классов и предметов",
+        "en": "Mastery across classes and equipment"
+      },
+      "description": {
+        "ru": "Развитие новых классов или образцов снаряжения пополняет общий прогресс. Правило учёта новых объектов побуждает пробовать разные стили.",
+        "en": "Developing new classes or equipment contributes to shared progression. Rules for counting new items encourage trying different play styles."
+      },
+      "example": {
+        "ru": "Первое освоение каждого типа посоха даёт очки общего ранга, а повторное освоение копии очков не добавляет.",
+        "en": "Mastering each staff type for the first time grants overall rank points; mastering a duplicate adds none."
+      },
+      "sourceUrls": [
+        "https://support.warframe.com/hc/en-us/articles/218718097-Mastery-Basics"
+      ],
+      "branches": [
+        {
+          "id": "breadth-mastery-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "breadth-mastery-repeat",
+              "text": {
+                "ru": "Прокачивать новые классы или предметы → повышать общий ранг и открывать возможности.",
+                "en": "Level new classes or items → raise an overall rank and unlock options."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "target-boss-farming",
+      "section": "equipment-loot",
+      "title": {
+        "ru": "Фарм конкретного босса",
+        "en": "Targeted boss farming"
+      },
+      "description": {
+        "ru": "Игрок выбирает противника с известной таблицей добычи и повторяет бой ради определённого предмета.",
+        "en": "The player chooses an enemy with a known loot table and repeats the fight for a particular item."
+      },
+      "example": {
+        "ru": "Ледяной страж может оставить щит от холода, поэтому игрок возвращается к нему перед походом в снежный регион.",
+        "en": "An ice guardian can drop a cold-resistant shield, so the player returns before entering a snowy region."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "target-boss-farming-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "target-boss-farming-repeat",
+              "text": {
+                "ru": "Повторно побеждать выбранного босса → получать попытки добыть нужный предмет.",
+                "en": "Defeat a chosen boss repeatedly → get attempts at obtaining a desired item."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rarity-hunting",
+      "section": "equipment-loot",
+      "title": {
+        "ru": "Охота за редкостью",
+        "en": "Rarity hunting"
+      },
+      "description": {
+        "ru": "Повторная добыча даёт шанс заменить предмет версией более высокого качества или редкости.",
+        "en": "Repeated looting offers a chance to replace an item with a higher-quality or rarer version."
+      },
+      "example": {
+        "ru": "Сундуки крепости содержат оружие нескольких редкостей; игрок ищет редкую версию для своего уровня.",
+        "en": "Fortress chests contain weapons of several rarities; the player seeks a rare version appropriate to their level."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "rarity-hunting-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "rarity-hunting-repeat",
+              "text": {
+                "ru": "Собирать случайную добычу → находить предметы более высокого качества.",
+                "en": "Collect random loot → find higher-quality items."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "perfect-rolls",
+      "section": "equipment-loot",
+      "title": {
+        "ru": "Поиск идеальных характеристик",
+        "en": "Hunting perfect rolls"
+      },
+      "description": {
+        "ru": "Копии одного предмета различаются набором свойств или их значениями. Целью становится подходящая конкретному билду комбинация.",
+        "en": "Copies of an item differ in their properties or values. The goal becomes a combination suited to a particular build."
+      },
+      "example": {
+        "ru": "Лучник ищет кольцо одновременно со скоростью атаки и восстановлением выносливости.",
+        "en": "An archer seeks a ring with both attack speed and stamina recovery."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "perfect-rolls-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "perfect-rolls-repeat",
+              "text": {
+                "ru": "Добывать копии одного предмета → искать нужное сочетание свойств и значений.",
+                "en": "Loot copies of an item → seek a desired combination of properties and values."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equipment-sets",
+      "section": "equipment-loot",
+      "title": {
+        "ru": "Сбор комплектов",
+        "en": "Equipment set collection"
+      },
+      "description": {
+        "ru": "Отдельные части комплекта дают дополнительные эффекты при совместном использовании. Прогресс измеряется составом набора.",
+        "en": "Individual set pieces grant additional effects when used together. Progress is measured by set completion."
+      },
+      "example": {
+        "ru": "Две части набора усиливают яд, а четвёртая меняет способ его распространения.",
+        "en": "Two set pieces strengthen poison, while the fourth changes how it spreads."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "equipment-sets-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "equipment-sets-repeat",
+              "text": {
+                "ru": "Получать части набора → открывать бонусы за несколько надетых предметов.",
+                "en": "Obtain set pieces → unlock bonuses for wearing multiple pieces."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fragment-collection",
+      "section": "equipment-loot",
+      "title": {
+        "ru": "Сбор фрагментов",
+        "en": "Fragment collection"
+      },
+      "description": {
+        "ru": "Части будущего предмета накапливаются до известного порога. Каждый полученный фрагмент приближает конкретную награду.",
+        "en": "Parts of a future item accumulate toward a known threshold. Each acquired fragment brings a specific reward closer."
+      },
+      "example": {
+        "ru": "Каждая победа над хранителем даёт фрагмент; из десяти фрагментов собирается амулет.",
+        "en": "Each guardian victory grants a fragment; ten fragments assemble into an amulet."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "fragment-collection-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "fragment-collection-repeat",
+              "text": {
+                "ru": "Накапливать осколки или детали → собирать предмет после достижения порога.",
+                "en": "Accumulate shards or components → assemble an item upon reaching the threshold."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enhancement-levels",
+      "section": "equipment-upgrades",
+      "title": {
+        "ru": "Заточка",
+        "en": "Equipment enhancement"
+      },
+      "description": {
+        "ru": "Материалы расходуются на последовательные ступени усиления существующего предмета. Цена и вероятность успеха задаются отдельно.",
+        "en": "Materials are spent on successive enhancement levels of an existing item. Cost and success probability are separate design choices."
+      },
+      "example": {
+        "ru": "Игрок собирает кристаллы и гарантированно повышает меч с третьей ступени до четвёртой.",
+        "en": "The player gathers crystals and upgrades a sword from enhancement level three to four with guaranteed success."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "enhancement-levels-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "enhancement-levels-repeat",
+              "text": {
+                "ru": "Добывать материалы → повышать уровень улучшения предмета.",
+                "en": "Gather materials → raise an item’s enhancement level."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "property-rerolls",
+      "section": "equipment-upgrades",
+      "title": {
+        "ru": "Переброс свойств",
+        "en": "Property rerolling"
+      },
+      "description": {
+        "ru": "Игрок расходует ресурсы, чтобы заменить свойства уже полученного предмета и приблизить его к нужной конфигурации.",
+        "en": "The player spends resources to replace properties on an acquired item and move it toward a desired configuration."
+      },
+      "example": {
+        "ru": "За пыль зачарования можно заменить сопротивление огню на случайное свойство, сохранив остальные параметры кольца.",
+        "en": "Enchantment dust replaces fire resistance with a random property while preserving the ring’s other attributes."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "property-rerolls-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "property-rerolls-repeat",
+              "text": {
+                "ru": "Тратить накопленные ресурсы → заменять неудачные характеристики.",
+                "en": "Spend accumulated resources → replace unwanted properties."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gem-rune-upgrades",
+      "section": "equipment-upgrades",
+      "title": {
+        "ru": "Развитие камней и рун",
+        "en": "Gem and rune upgrading"
+      },
+      "description": {
+        "ru": "Вставки в снаряжение имеют собственный цикл добычи и усиления, который можно переносить между предметами по правилам игры.",
+        "en": "Equipment inserts have their own acquisition and upgrade loop, with transfer between items governed by the game’s rules."
+      },
+      "example": {
+        "ru": "Три малых рубина объединяются в один большой рубин для оружейного гнезда.",
+        "en": "Three small rubies combine into one large ruby for a weapon socket."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "gem-rune-upgrades-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "gem-rune-upgrades-repeat",
+              "text": {
+                "ru": "Собирать и объединять камни или руны → усиливать вставки в снаряжении.",
+                "en": "Collect and combine gems or runes → strengthen equipment inserts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "item-evolution",
+      "section": "equipment-upgrades",
+      "title": {
+        "ru": "Эволюция предмета",
+        "en": "Item evolution"
+      },
+      "description": {
+        "ru": "Предмет меняет форму или набор возможностей после выполнения связанных с ним условий использования.",
+        "en": "An item changes form or capabilities after its usage conditions are fulfilled."
+      },
+      "example": {
+        "ru": "Посох пробуждается после побед над духами с его помощью и получает новое заклинание.",
+        "en": "A staff awakens after being used to defeat spirits and gains a new spell."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "item-evolution-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "item-evolution-repeat",
+              "text": {
+                "ru": "Выполнять условия с экипированным предметом → открывать его следующую форму.",
+                "en": "Fulfill conditions with an equipped item → unlock its next form."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duplicate-fusion",
+      "section": "equipment-upgrades",
+      "title": {
+        "ru": "Усиление дубликатами",
+        "en": "Duplicate fusion"
+      },
+      "description": {
+        "ru": "Повторные экземпляры расходуются для усиления выбранного предмета. Дубликаты становятся отдельным ресурсом прогрессии.",
+        "en": "Duplicate copies are consumed to strengthen a chosen item, making duplicates a progression resource."
+      },
+      "example": {
+        "ru": "Копия талисмана расходуется на повышение ранга основного талисмана и увеличение его заряда.",
+        "en": "A duplicate talisman is consumed to raise the main talisman’s rank and increase its charge."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "duplicate-fusion-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "duplicate-fusion-repeat",
+              "text": {
+                "ru": "Получать повторные экземпляры → расходовать их на развитие основного предмета.",
+                "en": "Obtain duplicate copies → consume them to develop the main item."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gathering-routes",
+      "section": "resources-production",
+      "title": {
+        "ru": "Маршруты сбора",
+        "en": "Gathering routes"
+      },
+      "description": {
+        "ru": "Игрок повторяет маршрут по точкам добычи и оптимизирует порядок посещения, вместимость и возвращение на базу.",
+        "en": "The player repeats a route through gathering nodes and optimizes visit order, carrying capacity and return trips."
+      },
+      "example": {
+        "ru": "Травник строит круговой маршрут через болото, чтобы собрать ингредиенты и вернуться к алхимическому столу.",
+        "en": "An herbalist plans a loop through a swamp to gather ingredients and return to an alchemy table."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "gathering-routes-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "gathering-routes-repeat",
+              "text": {
+                "ru": "Обходить месторождения, растения и другие точки → накапливать сырьё.",
+                "en": "Visit mineral deposits, plants and other nodes → accumulate raw materials."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monster-ingredients",
+      "section": "resources-production",
+      "title": {
+        "ru": "Охота за ингредиентами",
+        "en": "Hunting for ingredients"
+      },
+      "description": {
+        "ru": "Нужный материал связан с определённым существом, местом или условием охоты, что направляет выбор целей.",
+        "en": "A required material is tied to a creature, location or hunting condition, directing target selection."
+      },
+      "example": {
+        "ru": "Для морозного зелья нужны железы пещерных ящеров, поэтому игрок ищет их логова.",
+        "en": "A frost potion needs cave-lizard glands, so the player searches for their lairs."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "monster-ingredients-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "monster-ingredients-repeat",
+              "text": {
+                "ru": "Выслеживать определённых существ → добывать части для крафта.",
+                "en": "Track particular creatures → obtain crafting parts."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "loot-salvaging",
+      "section": "resources-production",
+      "title": {
+        "ru": "Разбор добычи",
+        "en": "Loot salvaging"
+      },
+      "description": {
+        "ru": "Ненужная добыча превращается в сырьё для другого прогресса. Ценность предмета определяется также результатом разбора.",
+        "en": "Unwanted loot becomes materials for another progression path. An item’s value also depends on its salvage yield."
+      },
+      "example": {
+        "ru": "Лишние доспехи разбираются на слитки, из которых игрок усиливает выбранный нагрудник.",
+        "en": "Spare armor is salvaged into ingots used to strengthen a chosen chest piece."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "loot-salvaging-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "loot-salvaging-repeat",
+              "text": {
+                "ru": "Собирать ненужное снаряжение → превращать его в материалы для полезного.",
+                "en": "Collect unwanted equipment → turn it into materials for useful equipment."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "production-chains",
+      "section": "resources-production",
+      "title": {
+        "ru": "Производственные цепочки",
+        "en": "Production chains"
+      },
+      "description": {
+        "ru": "Конечный предмет требует нескольких стадий переработки. Игрок накапливает сырьё и промежуточные компоненты.",
+        "en": "A final item requires multiple processing stages. The player accumulates raw materials and intermediate components."
+      },
+      "example": {
+        "ru": "Руда превращается в слитки, слитки в пластины, а пластины вместе с кожей в доспех.",
+        "en": "Ore becomes ingots, ingots become plates, and plates plus leather become armor."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "production-chains-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "production-chains-repeat",
+              "text": {
+                "ru": "Добывать сырьё, перерабатывать и собирать компоненты → создавать ценные предметы.",
+                "en": "Gather raw materials, process them and assemble components → craft valuable items."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consumable-supply",
+      "section": "resources-production",
+      "title": {
+        "ru": "Обеспечение расходниками",
+        "en": "Consumable supply"
+      },
+      "description": {
+        "ru": "Используемые в приключениях запасы регулярно заканчиваются. Их восполнение связывает подготовку с повторной добычей.",
+        "en": "Supplies used on adventures run out regularly. Replenishing them connects preparation to repeated gathering."
+      },
+      "example": {
+        "ru": "Перед походом группа собирает травы и готовит запас лечебных зелий на несколько боёв.",
+        "en": "Before an expedition, the party gathers herbs and prepares healing potions for several fights."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "consumable-supply-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "consumable-supply-repeat",
+              "text": {
+                "ru": "Собирать ингредиенты и готовить запасы → пополнять зелья, еду и боеприпасы.",
+                "en": "Gather ingredients and prepare supplies → replenish potions, food and ammunition."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "faction-reputation",
+      "section": "reputation-access",
+      "title": {
+        "ru": "Репутация фракций",
+        "en": "Faction reputation"
+      },
+      "description": {
+        "ru": "Повторяемая помощь выбранной стороне повышает отношение или ранг и открывает связанные с фракцией возможности.",
+        "en": "Repeated help for a chosen faction raises standing or rank and unlocks faction-specific options."
+      },
+      "example": {
+        "ru": "Доставка припасов исследователям повышает доверие и открывает покупку карты скрытых пещер.",
+        "en": "Delivering supplies to researchers raises trust and unlocks a map of hidden caves for purchase."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "faction-reputation-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "faction-reputation-repeat",
+              "text": {
+                "ru": "Выполнять поручения фракции → открывать торговцев, способности и награды.",
+                "en": "Complete faction assignments → unlock vendors, abilities and rewards."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "token-currency",
+      "section": "reputation-access",
+      "title": {
+        "ru": "Накопление жетонов",
+        "en": "Token accumulation"
+      },
+      "description": {
+        "ru": "Активности приносят специальную валюту, которую можно обменять на выбранную награду по известной цене.",
+        "en": "Activities award a dedicated currency that can be exchanged for a chosen reward at a known price."
+      },
+      "example": {
+        "ru": "За каждый поход герой получает два жетона и может купить выбранные перчатки за двадцать жетонов.",
+        "en": "Each expedition grants two tokens; the hero can buy chosen gloves for twenty tokens."
+      },
+      "sourceUrls": [
+        "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_exchange.html"
+      ],
+      "branches": [
+        {
+          "id": "token-currency-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "token-currency-repeat",
+              "text": {
+                "ru": "Проходить активности с гарантированной валютой → покупать нужное снаряжение.",
+                "en": "Complete activities awarding guaranteed currency → buy desired equipment."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "access-keys",
+      "section": "reputation-access",
+      "title": {
+        "ru": "Сбор ключей и билетов",
+        "en": "Key and ticket collection"
+      },
+      "description": {
+        "ru": "Одна повторяемая активность выдаёт расходуемый доступ к другой. Ключ задаёт стоимость попытки получить следующую награду.",
+        "en": "One repeatable activity awards consumable access to another. A key establishes the cost of attempting the next reward."
+      },
+      "example": {
+        "ru": "Три печати с пограничных застав объединяются в ключ от сокровищницы.",
+        "en": "Three seals from border outposts combine into a treasury key."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "access-keys-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "access-keys-repeat",
+              "text": {
+                "ru": "Фармить доступные активности → получать попытки входа к боссу или в подземелье.",
+                "en": "Farm available activities → gain entry attempts to a boss or dungeon."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "settlement-development",
+      "section": "reputation-access",
+      "title": {
+        "ru": "Развитие поселения",
+        "en": "Settlement development"
+      },
+      "description": {
+        "ru": "Сдача материалов и выполнение заказов развивают общую базу, открывая здания, услуги или улучшения.",
+        "en": "Contributing materials and completing orders develop a shared base, unlocking buildings, services or upgrades."
+      },
+      "example": {
+        "ru": "Игрок привозит древесину и камень для кузницы, после чего в поселении появляется ремонт снаряжения.",
+        "en": "The player delivers wood and stone for a smithy, unlocking equipment repairs in the settlement."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "settlement-development-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "settlement-development-repeat",
+              "text": {
+                "ru": "Сдавать ресурсы и выполнять заказы → строить мастерские и открывать услуги.",
+                "en": "Contribute resources and complete orders → build workshops and unlock services."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recipe-research",
+      "section": "reputation-access",
+      "title": {
+        "ru": "Исследование рецептов",
+        "en": "Recipe research"
+      },
+      "description": {
+        "ru": "Повторяемая работа с образцами постепенно открывает знания, которые расширяют набор доступного крафта.",
+        "en": "Repeated work with samples gradually unlocks knowledge that expands available crafting options."
+      },
+      "example": {
+        "ru": "Исследование найденных ядов заполняет шкалу изучения и открывает рецепт противоядия.",
+        "en": "Researching collected poisons fills a study track and unlocks an antidote recipe."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "recipe-research-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "recipe-research-repeat",
+              "text": {
+                "ru": "Находить образцы, разбирать предметы или экспериментировать → открывать рецепты.",
+                "en": "Find samples, dismantle items or experiment → unlock recipes."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scaling-dungeons",
+      "section": "challenges-collections",
+      "title": {
+        "ru": "Подземелья растущей сложности",
+        "en": "Scaling dungeons"
+      },
+      "description": {
+        "ru": "Знакомое подземелье проходится на более высоких ступенях сложности ради следующего уровня наград.",
+        "en": "A familiar dungeon is completed at higher difficulty tiers for the next level of rewards."
+      },
+      "example": {
+        "ru": "После успешной зачистки открывается ступень с новыми модификаторами врагов и более сильной добычей.",
+        "en": "A successful clear unlocks a tier with new enemy modifiers and stronger loot."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "scaling-dungeons-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "scaling-dungeons-repeat",
+              "text": {
+                "ru": "Повторять прохождение на следующих ступенях → получать более сильные награды.",
+                "en": "Repeat runs at higher tiers → obtain stronger rewards."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endless-waves",
+      "section": "challenges-collections",
+      "title": {
+        "ru": "Бесконечные волны",
+        "en": "Endless waves"
+      },
+      "description": {
+        "ru": "Игрок продолжает выдерживать последовательные волны и решает, стоит ли риск следующего этапа дополнительной награды.",
+        "en": "The player survives successive waves and decides whether the extra reward is worth the next stage’s risk."
+      },
+      "example": {
+        "ru": "После каждой пятой волны отряд может забрать добычу или остаться ради следующего сундука.",
+        "en": "After every fifth wave, the party can claim its loot or stay for the next chest."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "endless-waves-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "endless-waves-repeat",
+              "text": {
+                "ru": "Дольше выдерживать натиск → добираться до следующих порогов наград.",
+                "en": "Survive the assault longer → reach further reward thresholds."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "repeatable-contracts",
+      "section": "challenges-collections",
+      "title": {
+        "ru": "Контракты и охотничьи заказы",
+        "en": "Repeatable contracts and bounties"
+      },
+      "description": {
+        "ru": "Короткие задания обновляют цели внутри знакомого набора действий. Награды связывают отдельные вылазки с долгосрочной целью.",
+        "en": "Short assignments refresh targets within a familiar action set. Rewards connect individual expeditions to a long-term goal."
+      },
+      "example": {
+        "ru": "Доска заказов предлагает охоту на разные виды чудовищ, а игрок выбирает нужную награду.",
+        "en": "A bounty board offers hunts for different monster types, letting the player choose the reward they need."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "repeatable-contracts-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "repeatable-contracts-repeat",
+              "text": {
+                "ru": "Выполнять повторяемые задачи с разными целями → получать деньги, опыт и материалы.",
+                "en": "Complete repeatable tasks with different targets → earn money, experience and materials."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collectibles",
+      "section": "challenges-collections",
+      "title": {
+        "ru": "Коллекционирование",
+        "en": "Collectible completion"
+      },
+      "description": {
+        "ru": "Повторяемые активности заполняют коллекцию, которая может давать внешние отличия, записи или награды за завершение.",
+        "en": "Repeatable activities fill a collection that can award cosmetic distinctions, records or completion rewards."
+      },
+      "example": {
+        "ru": "Игрок посещает логова разных зверей, чтобы заполнить бестиарий и получить оформление лагеря.",
+        "en": "The player visits different beast lairs to complete a bestiary and earn a camp decoration."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "collectibles-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "collectibles-repeat",
+              "text": {
+                "ru": "Повторять связанные активности → собирать облики, питомцев, маунтов и трофеи.",
+                "en": "Repeat associated activities → collect appearances, pets, mounts and trophies."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prestige-rebirth",
+      "section": "challenges-collections",
+      "title": {
+        "ru": "Престиж и перерождение",
+        "en": "Prestige and rebirth"
+      },
+      "description": {
+        "ru": "После достижения порога игрок сбрасывает часть развития и повторяет путь с постоянной наградой или новыми условиями.",
+        "en": "After reaching a threshold, the player resets part of their progression and repeats the journey with a permanent reward or new conditions."
+      },
+      "example": {
+        "ru": "На предельном уровне герой может переродиться, потеряв уровни, но сохранив открытый дополнительный слот таланта.",
+        "en": "At the level cap, a hero can be reborn, losing levels but keeping an unlocked extra talent slot."
+      },
+      "sourceUrls": [],
+      "branches": [
+        {
+          "id": "prestige-rebirth-loop",
+          "title": {
+            "ru": "Действие → награда",
+            "en": "Action → reward"
+          },
+          "variants": [
+            {
+              "id": "prestige-rebirth-repeat",
+              "text": {
+                "ru": "Повторять цикл развития после частичного сброса → получать постоянные бонусы или возможности.",
+                "en": "Repeat a progression cycle after a partial reset → gain permanent bonuses or options."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "id": "design-layers",
+      "title": {
+        "ru": "Как сочетать механики",
+        "en": "Combining mechanics"
+      },
+      "intro": {
+        "ru": "Гринд здесь означает повторяемые действия ради накопления или развития. Каталог объединяет несколько слоёв дизайна, поэтому семейства могут пересекаться.",
+        "en": "Here, grinding means repeated actions for accumulation or progression. The catalog spans several design layers, so families can overlap."
+      },
+      "entries": [
+        {
+          "id": "activity-goal-reward",
+          "title": {
+            "ru": "Действие, цель и правило награды",
+            "en": "Activity, goal and reward rule"
+          },
+          "text": {
+            "ru": "Сначала выберите действие: бой, сбор или изготовление. Затем задайте цель: уровень, предмет, доступ или коллекцию. Отдельно решите, как выдавать награду: гарантированно, случайно или по накопительной шкале. Подземелье является форматом активности, комплект является целью, а жетоны являются способом приблизиться к ней.",
+            "en": "First choose an activity: combat, gathering or crafting. Then choose a goal: a level, item, access or collection. Separately decide how rewards arrive: guaranteed, random or through an accumulation track. A dungeon is an activity format, a set is a goal, and tokens are a way to approach it."
+          }
+        },
+        {
+          "id": "combined-loop",
+          "title": {
+            "ru": "Пример сочетания",
+            "en": "Example combination"
+          },
+          "text": {
+            "ru": "Иллюстрация: охота на монстров даёт случайный шанс получить легендарный клинок и гарантированный фрагмент за победу. Десять фрагментов позволяют изготовить клинок. Здесь сочетаются целевой фарм, случайная добыча и накопительная награда; числа условные.",
+            "en": "Illustration: monster hunts offer a random chance of a legendary blade and a guaranteed fragment per victory. Ten fragments can craft the blade. This combines targeted farming, random loot and an accumulated reward; the numbers are illustrative."
+          }
+        },
+        {
+          "id": "schedule-modifiers",
+          "title": {
+            "ru": "Расписание и ограничения",
+            "en": "Schedules and limits"
+          },
+          "text": {
+            "ru": "Ежедневные задания, недельные лимиты, энергия и временные события задают расписание или ограничивают попытки. Их можно применять к разным циклам из списка. Само ожидание таймера не добавляет нового действия игрока.",
+            "en": "Daily quests, weekly caps, energy and timed events schedule activities or limit attempts. They can modify different loops in this list. Waiting for a timer does not itself add a new player action."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reward-design",
+      "title": {
+        "ru": "Награды и проверки прототипа",
+        "en": "Rewards and prototype checks"
+      },
+      "intro": {
+        "ru": "Следующие вопросы помогают проверить выбранный цикл. Это рекомендации для проектирования, а не результаты проведённых исследований.",
+        "en": "The following questions help evaluate a chosen loop. These are design recommendations, not findings from completed research."
+      },
+      "entries": [
+        {
+          "id": "visible-progress",
+          "title": {
+            "ru": "Видимый прогресс",
+            "en": "Visible progress"
+          },
+          "text": {
+            "ru": "Покажите цель, текущий вклад и стоимость следующего шага. Для случайной добычи решите, нужен ли гарантированный путь через фрагменты, жетоны или обмен. Если попытки независимы и шанс награды равен p, после n попыток вероятность получить хотя бы одну награду равна 1 − (1 − p)^n. Это вероятность, а не обещание награды к определённой попытке.",
+            "en": "Show the goal, current contribution and cost of the next step. For random loot, decide whether fragments, tokens or exchange should provide a guaranteed path. With independent attempts and reward chance p, the probability of at least one reward after n attempts is 1 − (1 − p)^n. This is a probability, not a promise of a reward by a particular attempt."
+          }
+        },
+        {
+          "id": "meaningful-choice",
+          "title": {
+            "ru": "Выбор внутри повторения",
+            "en": "Choices within repetition"
+          },
+          "text": {
+            "ru": "Проверьте, может ли игрок выбирать маршрут, сложность, билд или тип награды. Изменение чисел без изменения решений может быстро исчерпать интерес; это предположение нужно проверить на игроках конкретного прототипа.",
+            "en": "Check whether the player can choose a route, difficulty, build or reward type. Changing numbers without changing decisions may lose its appeal quickly; test this hypothesis with players of the specific prototype."
+          }
+        },
+        {
+          "id": "session-boundaries",
+          "title": {
+            "ru": "Границы сессии и стоимость",
+            "en": "Session boundaries and cost"
+          },
+          "text": {
+            "ru": "Дайте возможность завершить сессию после понятного шага и увидеть сохранённый прогресс. Оцените полную стоимость цели с учётом ключей, расходников, неудачных попыток и возвратов. Для заточки заранее укажите риск потери ресурсов или предмета, если он предусмотрен.",
+            "en": "Let players end a session after a clear step and see saved progress. Estimate the goal’s full cost including keys, consumables, failed attempts and return trips. For enhancement, state any intended risk of losing materials or the item in advance."
+          }
+        },
+        {
+          "id": "prototype-check",
+          "title": {
+            "ru": "Небольшая проверка",
+            "en": "A small prototype check"
+          },
+          "text": {
+            "ru": "Соберите один цикл с одной долгосрочной целью. Попросите игрока объяснить, что он получит после следующего повтора и почему хочет продолжить. Зафиксируйте фактическое время до улучшения, число попыток без полезной награды и момент добровольной остановки; затем пересмотрите цену и состав наград.",
+            "en": "Build one loop with one long-term goal. Ask the player what the next repetition will award and why they want to continue. Record the actual time to an upgrade, attempts without a useful reward and the voluntary stopping point, then revisit reward costs and composition."
+          }
+        }
+      ]
+    },
+    {
+      "id": "released-game-examples",
+      "title": {
+        "ru": "Примеры выпущенных игр",
+        "en": "Released-game examples"
+      },
+      "intro": {
+        "ru": "Официальные страницы проверены 20 октября 2026 года. Они подтверждают только следующие наблюдения; остальные примеры проектирования в каталоге придуманы.",
+        "en": "Official pages were checked on 20 October 2026. They support only the observations below; the catalog’s other design examples are hypothetical."
+      },
+      "entries": [
+        {
+          "id": "warframe-mastery-example",
+          "title": {
+            "ru": "Warframe: общий ранг за освоение снаряжения",
+            "en": "Warframe: overall rank through equipment mastery"
+          },
+          "text": {
+            "ru": "Официальная справка Warframe описывает общий прогресс Mastery за повышение рангов разных варфреймов и оружия. Повторная копия уже учтённого предмета не приносит этот прогресс повторно. Это пример освоения разных предметов, а не подтверждение всех вариантов прокачки из каталога.",
+            "en": "Warframe’s official support describes overall Mastery progression from ranking up different Warframes and weapons. A duplicate of an already counted item does not award that progress again. This exemplifies equipment breadth, not every progression option in this catalog."
+          }
+        },
+        {
+          "id": "ffxiv-token-example",
+          "title": {
+            "ru": "Final Fantasy XIV: обмен валюты на снаряжение",
+            "en": "Final Fantasy XIV: exchanging currency for equipment"
+          },
+          "text": {
+            "ru": "Официальное руководство Final Fantasy XIV перечисляет торговцев, обменивающих Allagan tomestones и похожие жетоны на оружие, снаряжение и предметы. Это подтверждает выбор награды через обмен валюты; условные цены из примеров каталога не относятся к игре.",
+            "en": "Final Fantasy XIV’s official guide lists vendors exchanging Allagan tomestones and similar tokens for weapons, gear and items. This supports reward selection through currency exchange; the catalog’s illustrative prices are not game values."
+          }
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": {
+        "ru": "Warframe: основы Mastery",
+        "en": "Warframe: Mastery Basics"
+      },
+      "url": "https://support.warframe.com/hc/en-us/articles/218718097-Mastery-Basics",
+      "description": {
+        "ru": "Официальная справка об общем прогрессе за ранги разных варфреймов и оружия и однократном учёте предмета. Подтверждает пример освоения разного снаряжения.",
+        "en": "Official support on overall progression from ranking different Warframes and weapons and counting each item once. Supports the equipment-breadth example."
+      }
+    },
+    {
+      "title": {
+        "ru": "Final Fantasy XIV: обмен Allagan tomestones",
+        "en": "Final Fantasy XIV: Exchanging Tomestones"
+      },
+      "url": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_exchange.html",
+      "description": {
+        "ru": "Официальное руководство по обмену tomestones и похожих жетонов на оружие, снаряжение и предметы. Подтверждает пример выбора награды через валюту.",
+        "en": "Official guide to exchanging tomestones and similar tokens for weapons, gear and items. Supports the example of selecting rewards through currency."
+      }
+    }
+  ]
+}
