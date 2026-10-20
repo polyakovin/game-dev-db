@@ -14,11 +14,11 @@ The `detective` catalog was originally authored for Game Dev DB on 2026-10-19. I
 | `detective` | 32 | 32 | 96 |
 | `boss-fight-atlas` | 124 | 124 | 124 |
 | `game-mechanics` | 199 | 199 | 199 |
-| `rpg-grind` | 30 | 30 | 30 |
+| `rpg-grind` | 110 | 110 | 330 |
 
 These are baseline counts, not a limit on future contributions. Counts in the site and exports are derived from current source data. A branch list in non-audio catalogs is simply the family's list of variants, while audio families preserve three named subbranches.
 
-The `rpg-grind` catalog was originally authored on 2026-10-20 from the user-requested list of 30 RPG grind mechanics. It preserves six groups: character progression, equipment acquisition, equipment upgrades, resources and production, reputation and access, and repeatable challenges and collections. Each family has one action/reward loop and a hypothetical design example. Notes distinguish activities, goals and reward rules, illustrate combinations and describe prototype checks without claiming completed playtests. The checked official Warframe mastery and Final Fantasy XIV currency pages support only the specific released-game observations identified in the catalog. Its explicit provenance identifies original editorial authorship.
+The `rpg-grind` catalog was originally authored on 2026-10-20 and expanded from thirty introductory items into 110 families and 330 concrete variants across eighteen sections. Four labeled layers distinguish activities, progression goals, reward rules and schedule/cost constraints. The source retains all original structural identities and original variant text. It covers economy, exploration, companions, delegation, offline accumulation, world/social progress and metaprogression alongside combat, crafting and gear. Notes supply a coverage map, seven loop recipes, classification boundaries and a system audit. Eight primary sources support only the identified game observations; variants and design examples remain hypothetical. See [RPG grind coverage](rpg-grind-content.md) for the editorial and compatibility checks.
 
 ## Source and localization contract
 
