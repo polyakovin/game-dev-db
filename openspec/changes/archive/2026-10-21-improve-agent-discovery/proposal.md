@@ -10,7 +10,7 @@ Agents can already retrieve individual knowledge records, but most mechanics, ex
 - Give common records precise canonical page URLs; retain existing type-specific v1 exports and catalog placements.
 - Link individual pages from catalogs, search, agent indexes and a dated, language-aware sitemap.
 - Expose per-record Markdown/JSON discovery and accurate structured metadata; provide reusable repository instructions for agents.
-- Deliver a reproducible discovery audit and an RU/EN question set, plus exact webmaster registration and root robots instructions. Complete accessible account setup and deployment; report authentication requirements explicitly.
+- Deliver a reproducible discovery audit and an RU/EN question set, plus optional webmaster registration and root robots instructions. Publish the verified site without external analytics, tracking or account integrations.
 
 ## Capabilities
 

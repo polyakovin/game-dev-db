@@ -2,6 +2,8 @@
 
 The portal can be crawled and retrieved without JavaScript, accounts or an API key.
 Technical accessibility does not establish search indexing or AI citations.
+The site does not integrate external analytics, counters or tracking scripts.
+The public HTTP audit runs only when explicitly invoked; it does not collect visitor data.
 
 ## Public entry points
 
@@ -28,7 +30,11 @@ are navigation and semantic aids, not special ranking permissions. Google states
 that its AI search features need no special AI files or schema:
 [AI features and your website](https://developers.google.com/search/docs/appearance/ai-features).
 
-## Register and inspect search indexing
+## Optional webmaster accounts
+
+Connecting external webmaster accounts is outside this release. The following
+owner procedure is retained as a reference if that decision changes; none of
+these accounts, verification tags or analytics services is configured by this change.
 
 Use the existing owner accounts. Do not create accounts, accept terms or claim
 verification on the owner's behalf without the required authenticated flow.

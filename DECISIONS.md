@@ -27,3 +27,11 @@ with a dated record and explanation.
 - Review/kill date: 2026-10-09, at the end of the implementation session. Review the build, content checks, agent exports, and deployed site. Report any unmet acceptance criteria; reduce or defer scope rather than exceeding the time or spending budget.
 - What would reverse this decision: Withdrawal of the owner's request, a requirement for paid infrastructure, an unresolved licensing or security issue, or inability to deliver a verifiable static slice within the time box.
 - Evidence integrity: Preserve `commercial-project.json` and all `pending` gates. Do not record implementation work as interviews, confirmed demand, customers, payments, or commercial validation.
+
+### 2026-10-20 — discovery without analytics — `go`
+
+- Context: The owner requested improved discovery by search engines and AI agents, deferred webmaster account setup, and explicitly declined analytics services.
+- Evidence refs: The owner's 2026-10-20 instructions in the project chat.
+- Decision: Publish static discovery pages, attributed exports, sitemap improvements and a manually invoked public-URL audit. Do not connect external analytics services, visitor counters or tracking scripts. External webmaster accounts are outside this release.
+- Rationale: Searchable public content and reliable retrieval can be improved without collecting visitor data. HTTP checks do not establish indexing or AI citation; those outcomes remain unmeasured unless explicitly evaluated.
+- What would reverse this decision: A later explicit owner request to change the analytics or external account scope.

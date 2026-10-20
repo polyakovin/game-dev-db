@@ -14,7 +14,7 @@
 
 - [x] 3.1 Add a production audit and 15 paired discovery questions with an unevaluated baseline; verify the audit against a local preview and document search/citation measurement and account prerequisites.
 - [x] 3.2 Run npm run verify, full browser tests and relevant formatting; inspect RU/EN pages and report actual results.
-- [ ] 3.3 Push the scoped commit, verify GitHub Pages completion and run the production audit; attempt accessible webmaster registration and record any login or ownership blocker explicitly.
+- [x] 3.3 Push the scoped commit, verify GitHub Pages completion and run the production audit; record that external webmaster integrations are outside this release and no analytics or trackers are connected.
 
 ## Workflow follow-up
 

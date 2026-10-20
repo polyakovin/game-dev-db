@@ -17,7 +17,7 @@ Non-goals: training-model inclusion, ranking guarantees, fabricated examples or 
 - Add focused links through shared KnowledgeLinks, keeping existing expandable catalogs intact. Add per-record format alternates to focused pages and lessons, and an llms link to the shared document head.
 - Build one deduplicated sitemap from existing human routes plus focused records, known authored dates and RU/EN pairs. Escape XML, avoid build-time lastmod values and exclude archives.
 - Keep llms.txt as an entry map and publish short per-language topic indexes. Provide an AGENTS.md snippet through the agent guide and a public text endpoint. Use WebPage/CreativeWork metadata only when supported by visible authored content.
-- Keep external registration separate from code validation: inspect accessible webmaster sessions, submit verified URLs when authorized access exists, otherwise deliver exact account steps. Root robots is optional for crawling; document the separate user-site ownership rather than falsely fixing it inside this repository.
+- Keep optional webmaster registration separate from code validation. External account integrations are outside this release; do not add analytics, counters or tracking scripts. Root robots is optional for crawling; document the separate user-site ownership rather than falsely fixing it inside this repository.
 - Add a dependency-free production audit and 15 paired discovery questions. Record observations without claiming AI citations that were never measured.
 
 ## Risks / Trade-offs

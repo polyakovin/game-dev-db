@@ -1,10 +1,9 @@
-# Spec Delta
+# search-discovery Specification
 
 ## Purpose
-
 Help search engines and AI agents discover and cite focused bilingual game-development knowledge while preserving catalog navigation and source attribution.
 
-## ADDED Requirements
+## Requirements
 
 ### Requirement: Focused static knowledge pages
 Active mechanics, exercises and lenses SHALL have standalone RU/EN HTML pages under `/game-dev-db/{lang}/knowledge/{type}/{id}/`. They SHALL preserve authored sections, sources, provenance and licenses from their common records, with corresponding language links and navigation to original collections. Existing catalog routes and anchors SHALL remain usable.
@@ -44,3 +43,10 @@ The project SHALL provide a public-URL audit and paired RU/EN discovery question
 #### Scenario: Check the production deployment
 - **WHEN** the audit runs against the published site
 - **THEN** it checks entry points, sitemap and representative focused pages, records observed failures and exits unsuccessfully for broken required endpoints
+
+### Requirement: Discovery without visitor tracking
+Discovery improvements SHALL NOT connect external analytics services, visitor counters or tracking scripts. The public-URL audit SHALL run only when explicitly invoked and SHALL NOT collect visitor behavior. External webmaster accounts SHALL remain outside this release.
+
+#### Scenario: Read a focused page
+- **WHEN** a reader opens a focused page in either language
+- **THEN** its discovery metadata and machine formats work without an analytics integration or visitor tracking request
