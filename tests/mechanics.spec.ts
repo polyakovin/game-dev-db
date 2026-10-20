@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { validateMechanics } from '../src/lib/mechanics.mjs';
+import { orderMechanicCatalog } from '../src/lib/content-order.mjs';
 
 const base = '/game-dev-db';
 const catalogs = [
@@ -10,14 +11,16 @@ const catalogs = [
   'detective',
   'boss-fight-atlas',
   'game-mechanics',
-].map((id) =>
-  JSON.parse(
-    readFileSync(
-      new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
-      'utf8',
+]
+  .map((id) =>
+    JSON.parse(
+      readFileSync(
+        new URL(`../src/data/mechanics/${id}.json`, import.meta.url),
+        'utf8',
+      ),
     ),
-  ),
-);
+  )
+  .map(orderMechanicCatalog);
 
 for (const lang of ['ru', 'en'] as const) {
   test(`${lang}: mechanics discovery from home and index`, async ({ page }) => {

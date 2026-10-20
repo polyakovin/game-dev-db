@@ -1,0 +1,1159 @@
+{
+  "lesson-categories": ["foundations", "design", "engineering", "workflow"],
+  "lessons": [
+    "scope-and-prototype",
+    "game-loop",
+    "input-and-feedback",
+    "collision-basics",
+    "state-machines",
+    "game-feel",
+    "performance-budget",
+    "agent-workflow"
+  ],
+  "mechanics": [
+    "game-mechanics",
+    "boss-fight-atlas",
+    "point-and-click",
+    "detective",
+    "children-education",
+    "voice-audio"
+  ],
+  "resource-groups": [
+    "books",
+    "practice",
+    "research",
+    "development",
+    "channels"
+  ],
+  "resources": [
+    "schell-art-of-game-design",
+    "game-design-workshop",
+    "challenges-for-game-designers",
+    "theory-of-fun",
+    "game-feel-book",
+    "rules-of-play",
+    "creating-game-stories",
+    "architecture-of-video-game-worlds",
+    "platformer-toolkit",
+    "puzzlescript",
+    "twine",
+    "baba-is-you",
+    "game-builder-garage",
+    "super-mario-maker-2",
+    "game-design-concepts",
+    "mit-game-design-course",
+    "mda-framework",
+    "level-design-book",
+    "game-balance-concepts",
+    "reverse-design-super-mario-world",
+    "lost-garden",
+    "godot-first-2d-game",
+    "gdquest-learn-gdscript",
+    "unity-prototyping",
+    "game-loop-pattern",
+    "godot-input",
+    "collision-2d",
+    "state-pattern",
+    "godot-physics",
+    "fixed-timestep",
+    "animation-frame",
+    "game-accessibility-guidelines",
+    "accessible-motion",
+    "game-mechanics",
+    "boss-fight-atlas",
+    "kenney-assets",
+    "develop-games",
+    "godot-performance",
+    "red-blob-games",
+    "game-math-primer",
+    "nature-of-code",
+    "game-ai-pro",
+    "pcg-book",
+    "fast-paced-multiplayer",
+    "lospec-pixel-art",
+    "saint11-pixel-art",
+    "blender-manual",
+    "learn-opengl",
+    "book-of-shaders",
+    "catlike-coding",
+    "ray-tracing-in-one-weekend",
+    "pbr-book",
+    "game-audio-learning",
+    "freesound",
+    "poly-haven",
+    "open-game-art",
+    "ink-narrative",
+    "roguelike-tutorial",
+    "steamworks-coming-soon",
+    "how-to-market-a-game",
+    "openspec",
+    "github-contributing",
+    "game-makers-toolkit",
+    "sakurai-creating-games",
+    "gdc-talks",
+    "curious-archive"
+  ],
+  "practice-topics": [
+    "prototyping",
+    "choice",
+    "audience",
+    "iteration",
+    "puzzles",
+    "chance",
+    "strategy",
+    "motor-skill",
+    "story",
+    "multiplayer"
+  ],
+  "practice-tasks": [
+    "paper-current",
+    "last-ferry",
+    "one-rule-two-worlds",
+    "three-minute-museum",
+    "remove-the-market",
+    "signal-room",
+    "weather-window",
+    "forecast-and-surprise",
+    "shared-workshop",
+    "rhythm-without-hurry",
+    "light-for-two",
+    "two-windows"
+  ],
+  "lens-themes": [
+    "experience",
+    "player",
+    "concept",
+    "rules",
+    "balance",
+    "interface",
+    "production",
+    "story",
+    "world",
+    "social",
+    "purpose"
+  ],
+  "lenses/experience": [
+    "schell-002",
+    "schell-005",
+    "schell-001",
+    "schell-008",
+    "schell-006",
+    "schell-007",
+    "schell-004",
+    "schell-003"
+  ],
+  "lenses/player": [
+    "schell-019",
+    "schell-023",
+    "schell-022",
+    "schell-021",
+    "schell-020",
+    "schell-025",
+    "schell-024"
+  ],
+  "lenses/concept": [
+    "schell-014",
+    "schell-009",
+    "schell-016",
+    "schell-015",
+    "schell-011",
+    "schell-017",
+    "schell-010",
+    "schell-012",
+    "schell-013",
+    "schell-018"
+  ],
+  "lenses/rules": [
+    "schell-032",
+    "schell-031",
+    "schell-033",
+    "schell-028",
+    "schell-034",
+    "deterding-skill-atoms",
+    "schell-026",
+    "schell-027",
+    "schell-030",
+    "schell-036",
+    "schell-035",
+    "schell-029"
+  ],
+  "lenses/balance": [
+    "schell-039",
+    "schell-038",
+    "schell-053",
+    "schell-037",
+    "schell-048",
+    "schell-041",
+    "schell-046",
+    "schell-047",
+    "schell-049",
+    "schell-052",
+    "schell-042",
+    "schell-043",
+    "schell-044",
+    "schell-045",
+    "schell-040",
+    "schell-050",
+    "schell-051"
+  ],
+  "lenses/interface": [
+    "schell-059",
+    "schell-063",
+    "schell-062",
+    "schell-060",
+    "schell-061",
+    "schell-054",
+    "schell-055",
+    "schell-058",
+    "schell-066",
+    "schell-067",
+    "schell-067-5",
+    "schell-064",
+    "schell-065",
+    "schell-056",
+    "schell-057"
+  ],
+  "lenses/production": [
+    "schell-103",
+    "schell-101",
+    "schell-104",
+    "schell-102",
+    "schell-100",
+    "schell-107",
+    "schell-109",
+    "schell-108",
+    "schell-105",
+    "schell-106"
+  ],
+  "lenses/story": [
+    "schell-069",
+    "schell-078",
+    "schell-079",
+    "schell-068",
+    "schell-070",
+    "schell-074",
+    "schell-080",
+    "schell-084",
+    "schell-083",
+    "schell-073",
+    "schell-081",
+    "schell-072",
+    "schell-076",
+    "schell-075",
+    "schell-071",
+    "schell-077",
+    "schell-082"
+  ],
+  "lenses/world": [
+    "schell-086",
+    "schell-085",
+    "schell-087",
+    "schell-089",
+    "schell-091",
+    "schell-092",
+    "schell-094",
+    "schell-093-5",
+    "schell-095",
+    "schell-088",
+    "schell-090",
+    "schell-093",
+    "schell-095-5"
+  ],
+  "lenses/social": ["schell-098", "schell-096", "schell-099", "schell-097"],
+  "lenses/purpose": ["schell-111", "schell-110", "schell-113", "schell-112"],
+  "jam-calendars": [
+    "itch-jams",
+    "indie-game-jams",
+    "global-game-jam",
+    "ludum-dare"
+  ],
+  "mechanics/voice-audio/sections": [
+    "speech",
+    "hearing",
+    "voice",
+    "material",
+    "social"
+  ],
+  "mechanics/voice-audio/speech/families": [
+    "family-01",
+    "family-03",
+    "family-02",
+    "family-05",
+    "family-04"
+  ],
+  "mechanics/voice-audio/voice/families": [
+    "family-06",
+    "family-08",
+    "family-07",
+    "family-10",
+    "family-09",
+    "family-11"
+  ],
+  "mechanics/voice-audio/hearing/families": [
+    "family-12",
+    "family-13",
+    "family-15",
+    "family-14",
+    "family-16",
+    "family-17"
+  ],
+  "mechanics/voice-audio/material/families": [
+    "family-20",
+    "family-22",
+    "family-21",
+    "family-18",
+    "family-19",
+    "family-23"
+  ],
+  "mechanics/voice-audio/social/families": [
+    "family-24",
+    "family-25",
+    "family-26",
+    "family-27"
+  ],
+  "mechanics/point-and-click/sections": [
+    "section-1",
+    "section-6",
+    "section-2",
+    "section-3",
+    "section-7",
+    "section-4",
+    "section-5"
+  ],
+  "mechanics/point-and-click/section-1/families": [
+    "family-01",
+    "family-02",
+    "family-05",
+    "family-04",
+    "family-03",
+    "family-06",
+    "family-07",
+    "family-08"
+  ],
+  "mechanics/point-and-click/section-2/families": [
+    "family-09",
+    "family-14",
+    "family-10",
+    "family-11",
+    "family-12",
+    "family-15",
+    "family-17",
+    "family-16",
+    "family-13"
+  ],
+  "mechanics/point-and-click/section-3/families": [
+    "family-18",
+    "family-23",
+    "family-21",
+    "family-25",
+    "family-24",
+    "family-20",
+    "family-19",
+    "family-22"
+  ],
+  "mechanics/point-and-click/section-4/families": [
+    "family-26",
+    "family-31",
+    "family-29",
+    "family-30",
+    "family-28",
+    "family-27",
+    "family-33",
+    "family-32",
+    "family-34"
+  ],
+  "mechanics/point-and-click/section-5/families": [
+    "family-35",
+    "family-36",
+    "family-37",
+    "family-39",
+    "family-38"
+  ],
+  "mechanics/point-and-click/section-6/families": [
+    "family-40",
+    "family-41",
+    "family-42"
+  ],
+  "mechanics/point-and-click/section-7/families": ["family-43", "family-44"],
+  "mechanics/children-education/sections": [
+    "learning",
+    "perception",
+    "logic",
+    "action",
+    "systems",
+    "language",
+    "progress",
+    "social"
+  ],
+  "mechanics/children-education/perception/families": [
+    "family-01",
+    "family-04",
+    "family-02",
+    "family-03",
+    "family-05",
+    "family-06",
+    "family-07",
+    "family-08"
+  ],
+  "mechanics/children-education/logic/families": [
+    "family-09",
+    "family-10",
+    "family-15",
+    "family-13",
+    "family-11",
+    "family-12",
+    "family-14",
+    "family-16"
+  ],
+  "mechanics/children-education/systems/families": [
+    "family-17",
+    "family-18",
+    "family-22",
+    "family-23",
+    "family-19",
+    "family-26",
+    "family-24",
+    "family-25",
+    "family-20",
+    "family-21"
+  ],
+  "mechanics/children-education/action/families": [
+    "family-27",
+    "family-29",
+    "family-30",
+    "family-31",
+    "family-28",
+    "family-32",
+    "family-34",
+    "family-35",
+    "family-33"
+  ],
+  "mechanics/children-education/language/families": [
+    "family-38",
+    "family-41",
+    "family-36",
+    "family-37",
+    "family-40",
+    "family-39",
+    "family-43",
+    "family-42"
+  ],
+  "mechanics/children-education/social/families": [
+    "family-46",
+    "family-44",
+    "family-45",
+    "family-48",
+    "family-50",
+    "family-49",
+    "family-47"
+  ],
+  "mechanics/children-education/learning/families": [
+    "family-51",
+    "family-54",
+    "family-52",
+    "family-53",
+    "family-55",
+    "family-57",
+    "family-56"
+  ],
+  "mechanics/children-education/progress/families": [
+    "family-58",
+    "family-60",
+    "family-59",
+    "family-61",
+    "family-62",
+    "family-63",
+    "family-64"
+  ],
+  "mechanics/detective/sections": [
+    "evidence",
+    "reasoning",
+    "testimony",
+    "reconstruction",
+    "conclusions",
+    "structure"
+  ],
+  "mechanics/detective/evidence/families": [
+    "family-01",
+    "family-03",
+    "family-04",
+    "family-02",
+    "family-05"
+  ],
+  "mechanics/detective/testimony/families": [
+    "family-06",
+    "family-07",
+    "family-09",
+    "family-08",
+    "family-10"
+  ],
+  "mechanics/detective/reconstruction/families": [
+    "family-12",
+    "family-14",
+    "family-15",
+    "family-11",
+    "family-13",
+    "family-16"
+  ],
+  "mechanics/detective/reasoning/families": [
+    "family-17",
+    "family-18",
+    "family-20",
+    "family-19",
+    "family-21",
+    "family-22"
+  ],
+  "mechanics/detective/conclusions/families": [
+    "family-23",
+    "family-27",
+    "family-24",
+    "family-26",
+    "family-25"
+  ],
+  "mechanics/detective/structure/families": [
+    "family-28",
+    "family-29",
+    "family-31",
+    "family-30",
+    "family-32"
+  ],
+  "mechanics/boss-fight-atlas/sections": [
+    "catalog-part-9",
+    "catalog-part-1",
+    "catalog-part-2",
+    "catalog-part-4",
+    "catalog-part-8",
+    "catalog-part-7",
+    "catalog-part-5",
+    "catalog-part-3",
+    "catalog-part-6",
+    "catalog-part-11",
+    "catalog-part-10",
+    "catalog-part-12",
+    "catalog-part-13",
+    "catalog-part-14"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-1/families": [
+    "boss-wide-swing",
+    "boss-lunge",
+    "boss-ground-slam",
+    "boss-charge",
+    "boss-sweep",
+    "boss-landing-jump",
+    "boss-grab",
+    "boss-burrow-and-emerge"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-2/families": [
+    "boss-single-shot",
+    "boss-projectile-fan",
+    "boss-gap-volley",
+    "boss-ring-volley",
+    "boss-crossfire",
+    "boss-ricochet-projectile",
+    "boss-splitting-projectile",
+    "boss-returning-projectile",
+    "boss-spiral-barrage",
+    "boss-orbiting-projectiles"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-3/families": [
+    "boss-straight-beam",
+    "boss-scanning-beam",
+    "boss-pulse-beam",
+    "boss-rotating-beams"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-4/families": [
+    "boss-marked-area-strike",
+    "boss-shockwave",
+    "boss-lingering-hazard",
+    "boss-mine",
+    "boss-chain-explosions",
+    "boss-hazard-trail"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-5/families": [
+    "boss-moving-hazard",
+    "boss-shrinking-safe-area",
+    "boss-knockback",
+    "boss-pull",
+    "boss-platform-destruction",
+    "boss-converging-threats"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-6/families": [
+    "boss-summon",
+    "boss-turret-deployment",
+    "boss-threat-generator",
+    "boss-decoy"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-7/families": [
+    "boss-target-lock",
+    "boss-volley",
+    "boss-burst-fire",
+    "boss-attack-combination",
+    "boss-predictive-aiming",
+    "boss-source-tracking",
+    "boss-delayed-activation",
+    "boss-homing-projectile",
+    "boss-speed-change",
+    "boss-limited-spread"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-8/families": [
+    "boss-weak-point",
+    "boss-directional-shield",
+    "boss-interruptible-wind-up",
+    "boss-part-break",
+    "boss-situational-immunity",
+    "boss-damage-type-resistance",
+    "boss-counter-stance",
+    "boss-attack-reflection",
+    "boss-absorption-power-up",
+    "boss-loadout-adaptation"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-9/families": [
+    "boss-telegraph",
+    "boss-wind-up",
+    "boss-active-phase",
+    "boss-recovery",
+    "boss-attack-lock",
+    "boss-fight-phase",
+    "boss-enrage",
+    "boss-survival-phase"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-10/families": [
+    "boss-teleport",
+    "boss-cover-line-of-sight",
+    "boss-boundary-attack",
+    "boss-chase-herding",
+    "boss-boss-as-terrain",
+    "boss-forced-scrolling",
+    "boss-relocated-arena",
+    "boss-control-mode-shift",
+    "boss-escape-phase",
+    "boss-forced-inertia",
+    "boss-beat-synced-attack",
+    "boss-secondary-cues-invisibility",
+    "boss-sound-detection",
+    "boss-wraparound-projectile"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-11/families": [
+    "boss-objective-linked-invulnerability",
+    "boss-environmental-weapon",
+    "boss-posture-stagger-gauge",
+    "boss-encounter-specific-tool",
+    "boss-baited-self-hit",
+    "boss-projectile-rally",
+    "boss-wave-clear-objective",
+    "boss-persistent-progress",
+    "boss-pacifist-resolution",
+    "boss-player-controlled-boss"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-12/families": [
+    "boss-status-buildup",
+    "boss-ability-lock",
+    "boss-self-heal-cast",
+    "boss-party-size-scaling",
+    "boss-action-reactive-punish",
+    "boss-on-hit-healing",
+    "boss-external-healing-source",
+    "boss-resource-steal",
+    "boss-false-death",
+    "boss-maximum-health-reduction",
+    "boss-instant-kill",
+    "boss-damage-rate-cap",
+    "boss-loadout-mirror",
+    "boss-moveset-shapeshifting",
+    "boss-ally-theft",
+    "boss-world-state-variant",
+    "boss-run-history-manifestation",
+    "boss-real-time-progression",
+    "boss-interface-interaction"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-13/families": [
+    "boss-shared-group-health",
+    "boss-coordinated-duo-attack",
+    "boss-kill-order-inheritance",
+    "boss-partner-revival"
+  ],
+  "mechanics/boss-fight-atlas/catalog-part-14/families": [
+    "boss-personal-spread",
+    "boss-stack-damage",
+    "boss-tower-soak",
+    "boss-tank-swap",
+    "boss-entity-tether",
+    "boss-party-split",
+    "boss-proximity-damage",
+    "boss-gaze-check",
+    "boss-debuff-handoff",
+    "boss-ordered-targets",
+    "boss-pairing-polarity"
+  ],
+  "mechanics/game-mechanics/sections": [
+    "gm-category-movement",
+    "gm-category-world-interactions",
+    "gm-category-combat",
+    "gm-category-health",
+    "gm-category-visual-feedback",
+    "gm-category-visual-indicators",
+    "gm-category-camera-perception",
+    "gm-category-navigation-guidance",
+    "gm-category-resources",
+    "gm-category-progression",
+    "gm-category-saving",
+    "gm-category-difficulty",
+    "gm-category-weapons",
+    "gm-category-gunplay",
+    "gm-category-obstacles",
+    "gm-category-access-security",
+    "gm-category-doors",
+    "gm-category-abilities",
+    "gm-category-character",
+    "gm-category-economics",
+    "gm-category-stealth",
+    "gm-category-environmental-hazards",
+    "gm-category-destruction",
+    "gm-category-physics",
+    "gm-category-vehicles",
+    "gm-category-map",
+    "gm-category-worldbuilding",
+    "gm-category-story",
+    "gm-category-scripted",
+    "gm-category-diegetic",
+    "gm-category-immersion",
+    "gm-category-weather",
+    "gm-category-lights",
+    "gm-category-super-powers",
+    "gm-category-environmental-traces",
+    "gm-category-atmosphere",
+    "gm-category-visual-effects",
+    "gm-category-cinematic",
+    "gm-category-low-agency",
+    "gm-category-fire",
+    "gm-category-damage",
+    "gm-category-killing",
+    "gm-category-blood",
+    "gm-category-satisfying",
+    "gm-category-immersion-killers"
+  ],
+  "mechanics/game-mechanics/gm-category-camera-perception/families": [
+    "gm-fixed-camera-angles",
+    "gm-enemy-health-bars",
+    "gm-night-vision",
+    "gm-see-through-vision",
+    "gm-magical-vision",
+    "gm-thermal-vision",
+    "gm-recon-drone",
+    "gm-cctv-access",
+    "gm-bullet-time",
+    "gm-bullet-cam",
+    "gm-raindrops-on-screen"
+  ],
+  "mechanics/game-mechanics/gm-category-doors/families": [
+    "gm-trying-to-open-locked-doors",
+    "gm-automatic-doors"
+  ],
+  "mechanics/game-mechanics/gm-category-immersion/families": [
+    "gm-visible-player-body",
+    "gm-casting-shadow",
+    "gm-flashlight",
+    "gm-moving-environmental-parts",
+    "gm-footprints",
+    "gm-mirrors",
+    "gm-moving-lights",
+    "gm-wet-surfaces",
+    "gm-tire-tracks",
+    "gm-flickering-lights",
+    "gm-smoke-and-flare-markers",
+    "gm-distorting-glass",
+    "gm-heat-haze",
+    "gm-broken-mirrors",
+    "gm-tv-movies"
+  ],
+  "mechanics/game-mechanics/gm-category-worldbuilding/families": [
+    "gm-readable-notes",
+    "gm-views-outside",
+    "gm-distant-background-scenery",
+    "gm-vending-machines-props"
+  ],
+  "mechanics/game-mechanics/gm-category-saving/families": [
+    "gm-manual-save-points"
+  ],
+  "mechanics/game-mechanics/gm-category-progression/families": [
+    "gm-skill-tree",
+    "gm-perk-system",
+    "gm-destructible-barriers",
+    "gm-clearing-obstacles-with-explosions",
+    "gm-clearing-obstacles-with-fire",
+    "gm-boss-hierarchy",
+    "gm-territory-liberation",
+    "gm-cheat-codes"
+  ],
+  "mechanics/game-mechanics/gm-category-stealth/families": [
+    "gm-surveillance-cameras",
+    "gm-searchlights",
+    "gm-hiding-bodies",
+    "gm-dragging-bodies",
+    "gm-carrying-bodies",
+    "gm-shooting-out-lights",
+    "gm-trackable-footprints",
+    "gm-invisibility"
+  ],
+  "mechanics/game-mechanics/gm-category-world-interactions/families": [
+    "gm-elevators",
+    "gm-terrain-deformation"
+  ],
+  "mechanics/game-mechanics/gm-category-physics/families": ["gm-cloth-physics"],
+  "mechanics/game-mechanics/gm-category-resources/families": [
+    "gm-grid-inventory",
+    "gm-tetris-inventory",
+    "gm-diegetic-inventory",
+    "gm-lockpicking"
+  ],
+  "mechanics/game-mechanics/gm-category-combat/families": [
+    "gm-player-damage-feedback",
+    "gm-enemy-hit-reaction",
+    "gm-enemies-reloading-weapons",
+    "gm-struggle-escape",
+    "gm-stabbing",
+    "gm-environmental-takedowns",
+    "gm-sniping",
+    "gm-outpost-clearing",
+    "gm-electricuting-enemies",
+    "gm-freezing-enemies",
+    "gm-throwing-enemies",
+    "gm-self-guided-missiles",
+    "gm-shooting-down-helicopters"
+  ],
+  "mechanics/game-mechanics/gm-category-diegetic/families": [
+    "gm-diegetic-map",
+    "gm-diegetic-health-display",
+    "gm-diegetic-menu",
+    "gm-handheld-sensor",
+    "gm-diegetic-healing",
+    "gm-protagonist-self-hints"
+  ],
+  "mechanics/game-mechanics/gm-category-obstacles/families": [
+    "gm-device-puzzle"
+  ],
+  "mechanics/game-mechanics/gm-category-gunplay/families": [
+    "gm-manning-a-machine-gun",
+    "gm-diegetic-ammo-display",
+    "gm-blood-decals",
+    "gm-blood-splatters"
+  ],
+  "mechanics/game-mechanics/gm-category-weapons/families": [
+    "gm-reloading-gun",
+    "gm-vending-machines-shops",
+    "gm-wall-penetrating-weapons"
+  ],
+  "mechanics/game-mechanics/gm-category-movement/families": [
+    "gm-opening-doors",
+    "gm-walking-on-stairs",
+    "gm-climbing-ladders",
+    "gm-jumping-to-ledges",
+    "gm-ledge-climb-up",
+    "gm-swimming",
+    "gm-diving",
+    "gm-climbing-over-fences",
+    "gm-crawling-through-vents",
+    "gm-squeezing-through-narrow-spaces",
+    "gm-crawling-under-floors",
+    "gm-ledge-jumping",
+    "gm-shimmying-along-ledges",
+    "gm-fast-travel",
+    "gm-climbing-ropes",
+    "gm-rappelling",
+    "gm-zipline",
+    "gm-sliding-down-the-ladder",
+    "gm-monkey-bar-traversal",
+    "gm-tyrolean-traverse",
+    "gm-walking-on-ice",
+    "gm-parachuting",
+    "gm-wall-running-on-ropes",
+    "gm-jetpack",
+    "gm-jump-boost-packs",
+    "gm-wingsuit"
+  ],
+  "mechanics/game-mechanics/gm-category-health/families": [
+    "gm-health-pickups",
+    "gm-health-stations",
+    "gm-eating-to-heal",
+    "gm-drinking-to-heal",
+    "gm-resting-to-heal",
+    "gm-floating-health-bars",
+    "gm-health-based-character-portrait"
+  ],
+  "mechanics/game-mechanics/gm-category-destruction/families": [
+    "gm-destructible-walls",
+    "gm-destructible-floors",
+    "gm-force-opening-doors",
+    "gm-throwing-objects",
+    "gm-chipping-concrete",
+    "gm-cutting-down-trees-with-bullets"
+  ],
+  "mechanics/game-mechanics/gm-category-fire/families": [
+    "gm-environmental-fire-hazards"
+  ],
+  "mechanics/game-mechanics/gm-category-weather/families": [
+    "gm-day-night-cycle",
+    "gm-rain",
+    "gm-fog",
+    "gm-snow",
+    "gm-thunderstorm",
+    "gm-dynamic-weather",
+    "gm-traces-in-snow",
+    "gm-snowstorm",
+    "gm-tornado"
+  ],
+  "mechanics/game-mechanics/gm-category-vehicles/families": [
+    "gm-driving-cars",
+    "gm-stealing-cars",
+    "gm-carjacking",
+    "gm-diegetic-vehicle-repair",
+    "gm-pilotable-mech",
+    "gm-navigating-rapids",
+    "gm-taxi-missions",
+    "gm-vehicle-destruction-debris",
+    "gm-wreck-model-replacement",
+    "gm-running-npcs-over"
+  ],
+  "mechanics/game-mechanics/gm-category-damage/families": [
+    "gm-player-death-animations"
+  ],
+  "mechanics/game-mechanics/gm-category-killing/families": [
+    "gm-enemy-death-animation"
+  ],
+  "mechanics/game-mechanics/gm-category-lights/families": ["gm-torch"],
+  "mechanics/game-mechanics/gm-category-scripted/families": [
+    "gm-location-triggered-event",
+    "gm-in-game-cutscene",
+    "gm-set-piece",
+    "gm-quick-time-events",
+    "gm-scripted-scares",
+    "gm-scripted-spectacle"
+  ],
+  "mechanics/game-mechanics/gm-category-immersion-killers/families": [
+    "gm-bullet-impact-desync",
+    "gm-invincible-until-death",
+    "gm-artificial-progression-gate",
+    "gm-forced-path",
+    "gm-enemy-outpost-respawn",
+    "gm-disappearing-bodies-and-wrecks",
+    "gm-leaving-mission-area",
+    "gm-forced-return-to-map",
+    "gm-broken-sense-of-isolation",
+    "gm-fake-mirrors",
+    "gm-all-or-nothing-gore",
+    "gm-over-the-top-blood-splashes",
+    "gm-player-as-savior"
+  ],
+  "mechanics/game-mechanics/gm-category-character/families": [
+    "gm-character-customization"
+  ],
+  "mechanics/game-mechanics/gm-category-visual-indicators/families": [
+    "gm-health-display",
+    "gm-diegetic-interface"
+  ],
+  "mechanics/game-mechanics/gm-category-blood/families": ["gm-blood-pools"],
+  "mechanics/game-mechanics/gm-category-access-security/families": [
+    "gm-keycards",
+    "gm-keypad-codes",
+    "gm-combination-lock"
+  ],
+  "mechanics/game-mechanics/gm-category-visual-effects/families": [
+    "gm-magnifying-glass-effect"
+  ],
+  "mechanics/game-mechanics/gm-category-economics/families": [
+    "gm-traveling-merchant"
+  ],
+  "mechanics/game-mechanics/gm-category-difficulty/families": [
+    "gm-difficulty-level"
+  ],
+  "mechanics/game-mechanics/gm-category-abilities/families": [
+    "gm-character-classes"
+  ],
+  "mechanics/game-mechanics/gm-category-low-agency/families": [
+    "gm-playable-cutscene"
+  ],
+  "mechanics/game-mechanics/gm-category-cinematic/families": [
+    "gm-look-around-cutscene"
+  ],
+  "mechanics/game-mechanics/gm-category-satisfying/families": [
+    "gm-gibbing",
+    "gm-exploding-heads",
+    "gm-limb-ripping",
+    "gm-cutting-in-half",
+    "gm-ripping-apart",
+    "gm-shredding",
+    "gm-head-crushing",
+    "gm-spine-ripping"
+  ],
+  "mechanics/game-mechanics/gm-category-environmental-traces/families": [
+    "gm-blood-footprints"
+  ],
+  "mechanics/game-mechanics/gm-category-super-powers/families": [
+    "gm-telekinesis"
+  ],
+  "mechanics/game-mechanics/gm-category-visual-feedback/families": [
+    "gm-low-health-feedback",
+    "gm-showing-door-lock-state"
+  ],
+  "mechanics/game-mechanics/gm-category-map/families": [
+    "gm-natural-world-boundaries"
+  ],
+  "mechanics/game-mechanics/gm-category-story/families": [
+    "gm-secret-early-ending"
+  ],
+  "mechanics/game-mechanics/gm-category-environmental-hazards/families": [
+    "gm-electrical-hazards",
+    "gm-toxic-liquids",
+    "gm-lava",
+    "gm-electrifying-water",
+    "gm-sinking-in-swamp",
+    "gm-feeding-enemies-to-creatures"
+  ],
+  "mechanics/game-mechanics/gm-category-atmosphere/families": [
+    "gm-water-light-reflections"
+  ],
+  "mechanics/game-mechanics/gm-category-navigation-guidance/families": [
+    "gm-diegetic-hints"
+  ],
+  "mechanics/voice-audio/family-03/branches": [
+    "family-03-branch-2",
+    "family-03-branch-1",
+    "family-03-branch-3"
+  ],
+  "mechanics/voice-audio/family-06/branches": [
+    "family-06-branch-2",
+    "family-06-branch-3",
+    "family-06-branch-1"
+  ],
+  "mechanics/voice-audio/family-01-branch-3/variants": [
+    "family-01-branch-3-variant-3",
+    "family-01-branch-3-variant-1",
+    "family-01-branch-3-variant-2",
+    "family-01-branch-3-variant-4"
+  ],
+  "mechanics/children-education/family-01-branch-1/variants": [
+    "family-01-variant-1",
+    "family-01-variant-4",
+    "family-01-variant-5",
+    "family-01-variant-2",
+    "family-01-variant-3",
+    "family-01-variant-7",
+    "family-01-variant-9",
+    "family-01-variant-8",
+    "family-01-variant-6",
+    "family-01-variant-10"
+  ],
+  "mechanics/point-and-click/family-01-branch-1/variants": [
+    "family-01-variant-1",
+    "family-01-variant-2",
+    "family-01-variant-6",
+    "family-01-variant-3",
+    "family-01-variant-4",
+    "family-01-variant-5",
+    "family-01-variant-7"
+  ],
+  "mechanics/voice-audio/notes": [
+    "encoding",
+    "modifiers",
+    "transfer",
+    "combinations",
+    "boundaries"
+  ],
+  "mechanics/voice-audio/encoding/entries": [
+    "encoding-2",
+    "encoding-1",
+    "encoding-3",
+    "encoding-5",
+    "encoding-4",
+    "encoding-7",
+    "encoding-8",
+    "encoding-6"
+  ],
+  "mechanics/voice-audio/modifiers/entries": [
+    "modifiers-1",
+    "modifiers-2",
+    "modifiers-4",
+    "modifiers-3",
+    "modifiers-7",
+    "modifiers-8",
+    "modifiers-5",
+    "modifiers-9",
+    "modifiers-6",
+    "modifiers-10"
+  ],
+  "mechanics/voice-audio/transfer/entries": [
+    "transfer-3",
+    "transfer-8",
+    "transfer-4",
+    "transfer-7",
+    "transfer-1",
+    "transfer-2",
+    "transfer-5",
+    "transfer-6"
+  ],
+  "mechanics/voice-audio/combinations/entries": [
+    "combinations-1",
+    "combinations-5",
+    "combinations-3",
+    "combinations-7",
+    "combinations-2",
+    "combinations-6",
+    "combinations-4",
+    "combinations-9",
+    "combinations-14",
+    "combinations-8",
+    "combinations-10",
+    "combinations-12",
+    "combinations-13",
+    "combinations-15",
+    "combinations-16",
+    "combinations-11"
+  ],
+  "mechanics/children-education/axes/entries": [
+    "axes-11",
+    "axes-3",
+    "axes-9",
+    "axes-10",
+    "axes-1",
+    "axes-2",
+    "axes-4",
+    "axes-5",
+    "axes-6",
+    "axes-7",
+    "axes-8",
+    "axes-12"
+  ],
+  "mechanics/children-education/combinations/entries": [
+    "combinations-3",
+    "combinations-2",
+    "combinations-1",
+    "combinations-4",
+    "combinations-5",
+    "combinations-6"
+  ],
+  "mechanics/detective/notes": [
+    "investigation-loop",
+    "fair-investigation",
+    "prototype-checks",
+    "prototype-recipes",
+    "game-examples"
+  ],
+  "mechanics/detective/fair-investigation/entries": [
+    "fair-investigation-1",
+    "fair-investigation-2",
+    "fair-investigation-4",
+    "fair-investigation-3",
+    "fair-investigation-6",
+    "fair-investigation-5"
+  ],
+  "mechanics/point-and-click/axes/entries": [
+    "axes-1",
+    "axes-2",
+    "axes-5",
+    "axes-4",
+    "axes-6",
+    "axes-8",
+    "axes-3",
+    "axes-7"
+  ]
+}

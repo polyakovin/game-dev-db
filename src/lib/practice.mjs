@@ -1,10 +1,18 @@
 import source from '../data/practice.json' with { type: 'json' };
 import { absolute } from './site.ts';
+import { orderEntries, orderWithinGroups } from './content-order.mjs';
 
 export const practiceSource = source;
 
 /** @param {'ru' | 'en'} lang */
 export function getPractice(lang) {
+  const topics = orderEntries(source.topics, 'practice-topics');
+  const tasks = orderWithinGroups(
+    source.tasks,
+    topics,
+    (task) => task.topic,
+    (items) => orderEntries(items, 'practice-tasks'),
+  );
   const url = absolute(`${lang}/practice/`);
   return {
     id: source.id,
@@ -15,11 +23,11 @@ export function getPractice(lang) {
     durationNote: source.durationNote[lang],
     provenance: source.provenance[lang],
     updatedAt: source.updatedAt,
-    topics: source.topics.map((topic) => ({
+    topics: topics.map((topic) => ({
       id: topic.id,
       title: topic.title[lang],
     })),
-    tasks: source.tasks.map((task) => ({
+    tasks: tasks.map((task) => ({
       id: task.id,
       topic: task.topic,
       level: task.level,

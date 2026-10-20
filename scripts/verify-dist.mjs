@@ -6,6 +6,7 @@ import { mechanicRecords } from '../src/lib/mechanics.mjs';
 import { practiceRecords } from '../src/lib/practice.mjs';
 import { lensRecords } from '../src/lib/lenses.mjs';
 import { jamSnapshot, getJams } from '../src/lib/jams.mjs';
+import { getResources } from '../src/lib/resources.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
@@ -318,9 +319,11 @@ if (!Array.isArray(lessonExport?.lessons)) {
   }
 }
 if (
-  JSON.stringify(resourceExport?.resources) !== JSON.stringify(sourceResources)
+  JSON.stringify(resourceExport?.resources) !== JSON.stringify(getResources())
 )
-  errors.push('Resources JSON differs from source resources');
+  errors.push(
+    'Resources JSON differs from editorially ordered source resources',
+  );
 if (
   manifest?.counts?.lessons !== sourceLessons.length ||
   manifest?.counts?.translationPairs !== sourceLessons.length / 2 ||

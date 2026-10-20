@@ -1,14 +1,15 @@
+import { contentOrder, orderByImportance } from './content-order.mjs';
+
 export const SITE = 'https://polyakovin.github.io/game-dev-db';
 export const REPO = 'https://github.com/polyakovin/game-dev-db';
 export const BASE = '/game-dev-db';
 export const locales = ['ru', 'en'] as const;
 export type Locale = (typeof locales)[number];
-export const categories = [
-  'foundations',
-  'design',
-  'engineering',
-  'workflow',
-] as const;
+export const categories = orderByImportance(
+  ['foundations', 'design', 'engineering', 'workflow'] as const,
+  'lesson-categories',
+  (id) => id,
+);
 export const path = (relative = '') => `${BASE}/${relative.replace(/^\//, '')}`;
 export const absolute = (relative = '') =>
   `${SITE}/${relative.replace(/^\//, '')}`;
@@ -99,13 +100,4 @@ export const ui = {
   },
 } as const;
 
-export const order = [
-  'scope-and-prototype',
-  'game-loop',
-  'state-machines',
-  'input-and-feedback',
-  'collision-basics',
-  'game-feel',
-  'performance-budget',
-  'agent-workflow',
-];
+export const order = contentOrder.lessons;

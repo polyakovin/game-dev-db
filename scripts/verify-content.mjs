@@ -4,7 +4,9 @@ import matter from 'gray-matter';
 import { validateMechanics, mechanicCatalogs } from '../src/lib/mechanics.mjs';
 import { validatePractice, practiceSource } from '../src/lib/practice.mjs';
 import { validateLenses, lensData } from '../src/lib/lenses.mjs';
-import { validateJams } from '../src/lib/jams.mjs';
+import { validateJams, jamData } from '../src/lib/jams.mjs';
+import { validateContentOrder } from '../src/lib/content-order.mjs';
+import { resourceGroups } from '../src/lib/resources.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -253,6 +255,40 @@ for (const [index, resource] of resources.entries()) {
 
 errors.push(...validateMechanics());
 errors.push(...validatePractice(), ...validateLenses(), ...validateJams());
+
+const ids = (items) => items.map((item) => item.id);
+const orderingScopes = {
+  'lesson-categories': categories,
+  lessons: [...new Set([...lessons.values()].map((lesson) => lesson.data.id))],
+  mechanics: ids(mechanicCatalogs),
+  'resource-groups': ids(resourceGroups),
+  resources: ids(resources),
+  'practice-topics': ids(practiceSource.topics),
+  'practice-tasks': ids(practiceSource.tasks),
+  'lens-themes': ids(lensData.themes),
+  'jam-calendars': ids(jamData.calendars),
+};
+for (const theme of lensData.themes)
+  orderingScopes[`lenses/${theme.id}`] = ids(
+    lensData.lenses.filter((lens) => lens.theme === theme.id),
+  );
+for (const catalog of mechanicCatalogs) {
+  const scope = `mechanics/${catalog.id}`;
+  orderingScopes[`${scope}/sections`] = ids(catalog.sections);
+  orderingScopes[`${scope}/notes`] = ids(catalog.notes);
+  for (const section of catalog.sections)
+    orderingScopes[`${scope}/${section.id}/families`] = ids(
+      catalog.families.filter((family) => family.section === section.id),
+    );
+  for (const family of catalog.families) {
+    orderingScopes[`${scope}/${family.id}/branches`] = ids(family.branches);
+    for (const branch of family.branches)
+      orderingScopes[`${scope}/${branch.id}/variants`] = ids(branch.variants);
+  }
+  for (const note of catalog.notes)
+    orderingScopes[`${scope}/${note.id}/entries`] = ids(note.entries);
+}
+errors.push(...validateContentOrder(orderingScopes));
 
 if (errors.length) {
   console.error(

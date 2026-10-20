@@ -1,5 +1,6 @@
 import data from '../data/jams.json' with { type: 'json' };
 import { currentJams } from './jam-time.mjs';
+import { orderEntries } from './content-order.mjs';
 
 export const jamData = data;
 export const jamReadTimeRule =
@@ -16,7 +17,7 @@ export function jamSnapshot(now = new Date()) {
       'Original editorial summaries are CC BY 4.0. Linked events and their rules retain their owners’ rights.',
     readTimeRule: jamReadTimeRule,
     events: currentJams(data.events, now.getTime()),
-    calendars: data.calendars,
+    calendars: orderEntries(data.calendars, 'jam-calendars'),
   };
 }
 

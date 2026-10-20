@@ -1,10 +1,18 @@
 import data from '../data/lenses.json' with { type: 'json' };
 import { absolute } from './site.ts';
+import { orderEntries, orderWithinGroups } from './content-order.mjs';
 
 export const lensData = data;
 
 /** @param {'ru' | 'en'} lang */
 export function getLenses(lang) {
+  const themes = orderEntries(data.themes, 'lens-themes');
+  const lenses = orderWithinGroups(
+    data.lenses,
+    themes,
+    (lens) => lens.theme,
+    (items, theme) => orderEntries(items, `lenses/${theme}`),
+  );
   return {
     id: data.id,
     lang,
@@ -13,13 +21,13 @@ export function getLenses(lang) {
     intro: data.intro[lang],
     rights: data.rights[lang],
     updatedAt: data.updatedAt,
-    themes: data.themes.map((t) => ({ id: t.id, title: t.title[lang] })),
+    themes: themes.map((t) => ({ id: t.id, title: t.title[lang] })),
     sources: data.sources.map((s) => ({
       ...s,
       title: s.title[lang],
       description: s.description[lang],
     })),
-    lenses: data.lenses.map((lens) => {
+    lenses: lenses.map((lens) => {
       const source = data.sources.find((s) => s.id === lens.sourceId);
       return {
         ...lens,

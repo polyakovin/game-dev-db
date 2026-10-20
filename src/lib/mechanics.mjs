@@ -5,6 +5,7 @@ import detective from '../data/mechanics/detective.json' with { type: 'json' };
 import boss from '../data/mechanics/boss-fight-atlas.json' with { type: 'json' };
 import games from '../data/mechanics/game-mechanics.json' with { type: 'json' };
 import { absolute } from './site.ts';
+import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 
 /** @typedef {Omit<typeof voice, 'families'> & { provenance?: string, families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
 export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
@@ -18,7 +19,8 @@ export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
 
 /** @param {'ru' | 'en'} lang */
 export function getMechanics(lang) {
-  return mechanicCatalogs.map((catalog) => {
+  return orderEntries(mechanicCatalogs, 'mechanics').map((source) => {
+    const catalog = orderMechanicCatalog(source);
     const families = catalog.families.map((family) => ({
       id: family.id,
       section: family.section,

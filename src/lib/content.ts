@@ -1,15 +1,16 @@
 import { getCollection } from 'astro:content';
-import { absolute, order, type Locale } from './site';
+import { absolute, type Locale } from './site';
+import { orderByImportance } from './content-order.mjs';
 
 export async function getLessons(lang?: Locale) {
   const lessons = await getCollection('lessons');
-  return lessons
-    .filter((lesson) => !lang || lesson.data.lang === lang)
-    .sort(
-      (a, b) =>
-        order.indexOf(a.data.id) - order.indexOf(b.data.id) ||
-        a.data.lang.localeCompare(b.data.lang),
-    );
+  return orderByImportance(
+    lessons
+      .filter((lesson) => !lang || lesson.data.lang === lang)
+      .sort((a, b) => a.data.lang.localeCompare(b.data.lang)),
+    'lessons',
+    (lesson) => lesson.data.id,
+  );
 }
 
 export async function lessonRecords() {

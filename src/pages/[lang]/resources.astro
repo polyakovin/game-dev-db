@@ -1,7 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ResourceCard from '../../components/ResourceCard.astro';
-import resources from '../../data/resources.json';
+import { getResources, resourceGroup } from '../../lib/resources.mjs';
+import { orderEntries } from '../../lib/content-order.mjs';
 import { locales, type Locale } from '../../lib/site';
 import '../../styles/resources.css';
 export function getStaticPaths() {
@@ -74,18 +75,12 @@ const groups =
             'Math, algorithms, graphics, audio, assets and releases: technical primary sources and practical tools.',
         },
       ];
-function groupFor(resource: (typeof resources)[number]) {
-  if (resource.category !== 'design') return 'development';
-  if (resource.kind === 'book') return 'books';
-  if (resource.format === 'channel') return 'channels';
-  if (resource.kind === 'tool') return 'practice';
-  if (resource.kind === 'article' || resource.format === 'course')
-    return 'research';
-  return 'development';
-}
-const selection = groups.map((group) => ({
+const resources = getResources();
+const selection = orderEntries(groups, 'resource-groups').map((group) => ({
   ...group,
-  resources: resources.filter((resource) => groupFor(resource) === group.id),
+  resources: resources.filter(
+    (resource) => resourceGroup(resource) === group.id,
+  ),
 }));
 const title =
   lang === 'ru' ? 'Ресурсы по разработке игр' : 'Game development resources';
