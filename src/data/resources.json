@@ -1569,5 +1569,167 @@
       "ru": "Пройти Basic и проверить переназначение управления, читаемость текста и альтернативу цветовым сигналам.",
       "en": "Review Basic, then check remappable controls, readable text and alternatives to color-only signals."
     }
+  },
+  {
+    "id": "juicing-cameras-math",
+    "title": {
+      "ru": "GDC: Juicing Your Cameras With Math",
+      "en": "GDC: Juicing Your Cameras With Math"
+    },
+    "description": {
+      "ru": "Доклад о кадрировании, сглаживании движения, тряске камеры и динамическом разделении экрана. Помогает связать математическое поведение камеры с читаемостью игры.",
+      "en": "A talk on framing, smoothed motion, camera shake and dynamic split-screen. Connects the mathematics of camera behavior to game readability."
+    },
+    "url": "https://www.gdcvault.com/play/1023557/Math-for-Game-Programmers-Juicing",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Squirrel Eiserloh / SMU Guildhall",
+      "en": "Squirrel Eiserloh / SMU Guildhall"
+    },
+    "access": {
+      "ru": "GDC помечает доклад 2016 года как бесплатный. Запись на английском; материал посвящён математике камеры, а не API актуального движка.",
+      "en": "GDC labels this 2016 talk as free content. The recording is in English and covers camera mathematics rather than a current engine API."
+    },
+    "practice": {
+      "ru": "Сравнить резкое и сглаженное слежение на одном маршруте. Проверить видимость препятствий и возможность отключить тряску без потери сигнала о попадании.",
+      "en": "Compare immediate and smoothed following along the same route. Check obstacle visibility and whether shake can be disabled without losing hit feedback."
+    }
+  },
+  {
+    "id": "riot-automated-testing",
+    "title": {
+      "ru": "Riot Games: Automated Testing for League of Legends",
+      "en": "Riot Games: Automated Testing for League of Legends"
+    },
+    "description": {
+      "ru": "Инженерный разбор автотестов игровых правил: подготовка состояния, команды, наблюдение результата и ожидание условий. Полезен при превращении сценариев приёмки в проверки.",
+      "en": "An engineering account of gameplay automation: state setup, commands, result checks and conditional waits. Useful when turning acceptance scenarios into executable checks."
+    },
+    "url": "https://www.riotgames.com/en/news/automated-testing-league-legends",
+    "category": "workflow",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Джим «Anodoin» Меррилл / Riot Games",
+      "en": "Jim ‘Anodoin’ Merrill / Riot Games"
+    },
+    "access": {
+      "ru": "Статья открыта и опубликована 26 февраля 2016 года. Примеры отражают тогдашнюю инфраструктуру Riot; это разбор подхода, а не готовая библиотека для вашего движка.",
+      "en": "The public article was published on February 26, 2016. Examples reflect Riot’s infrastructure at that time; this is an approach to study rather than a library for your engine."
+    },
+    "practice": {
+      "ru": "Для одной способности задать начальное состояние, выполнить действие и дождаться ожидаемого условия с тайм-аутом. Проверить, что намеренная ошибка в правиле приводит к сбою теста.",
+      "en": "For one ability, set the initial state, issue an action and wait for the expected condition with a timeout. Check that a deliberate rule defect makes the test fail."
+    }
+  },
+  {
+    "id": "tiled",
+    "title": {
+      "ru": "Tiled",
+      "en": "Tiled"
+    },
+    "description": {
+      "ru": "Редактор уровней с тайлами, объектными слоями, собственными свойствами и экспортом в JSON и Lua. Подходит для прототипов карт и отделения данных уровня от кода игры.",
+      "en": "A level editor with tiles, object layers, custom properties and JSON or Lua export. Useful for map prototypes and keeping level data separate from game code."
+    },
+    "url": "https://www.mapeditor.org/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Торбьёрн Линдейер и участники Tiled",
+      "en": "Thorbjørn Lindeijer and Tiled contributors"
+    },
+    "access": {
+      "ru": "Редактор с открытым исходным кодом и документация доступны бесплатно. Поддержка формата карты, объектов и коллизий зависит от интеграции с выбранным движком.",
+      "en": "The open-source editor and documentation are available for free. Map, object and collision support depend on the integration with your chosen engine."
+    },
+    "practice": {
+      "ru": "Собрать карту с двумя маршрутами и объектным слоем препятствий. Экспортировать её, загрузить в игру и проверить проходимость реальным коллайдером персонажа.",
+      "en": "Create a map with two routes and an obstacle object layer. Export it, load it into a game and test passage using the character’s actual collider."
+    }
+  },
+  {
+    "id": "renderdoc",
+    "title": {
+      "ru": "RenderDoc",
+      "en": "RenderDoc"
+    },
+    "description": {
+      "ru": "Графический отладчик с захватом кадра и разбором состояния рендеринга. Помогает исследовать команды отрисовки, ресурсы и причины неверного изображения в собственной игре.",
+      "en": "A graphics debugger with frame capture and rendering-state inspection. Helps investigate draw calls, resources and incorrect output in your own game."
+    },
+    "url": "https://github.com/baldurk/renderdoc",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Бальдур Карлссон и участники RenderDoc",
+      "en": "Baldur Karlsson and RenderDoc contributors"
+    },
+    "access": {
+      "ru": "Бесплатный инструмент под MIT для Windows, Linux и Android. Совместимость зависит от графического API; macOS и Metal не поддерживаются. Сверяйтесь с матрицей проекта.",
+      "en": "A free MIT-licensed tool for Windows, Linux and Android. Compatibility depends on the graphics API; macOS and Metal are unsupported. Check the project’s support matrix."
+    },
+    "practice": {
+      "ru": "Захватить кадр своего небольшого проекта на поддерживаемом API. Найти отрисовку одного объекта и проверить привязанные текстуры и состояние смешивания.",
+      "en": "Capture a frame from your small project on a supported API. Find one object’s draw call and inspect its bound textures and blending state."
+    }
+  },
+  {
+    "id": "jsfxr",
+    "title": {
+      "ru": "jsfxr",
+      "en": "jsfxr"
+    },
+    "description": {
+      "ru": "Браузерный генератор коротких ретрозвуков и JavaScript-библиотека на основе sfxr. Удобен для прототипов и настройки различимых сигналов прыжка, попадания и подбора предмета.",
+      "en": "A browser generator for short retro sound effects and a JavaScript library based on sfxr. Useful for prototypes and distinct jump, hit and pickup cues."
+    },
+    "url": "https://github.com/chr15m/jsfxr",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Эрик Фредриксен, Крис Маккормик; на основе sfxr Томаса Петтерссона",
+      "en": "Eric Fredricksen and Chris McCormick; based on Tomas Pettersson’s sfxr"
+    },
+    "access": {
+      "ru": "Репозиторий под Unlicense содержит библиотеку и ссылку на веб-генератор sfxr.me. Библиотеку можно использовать в браузере или Node.js.",
+      "en": "The Unlicense repository contains the library and links to the sfxr.me web generator. The library can be used in a browser or Node.js."
+    },
+    "practice": {
+      "ru": "Сделать три различимых звука для прыжка, попадания и подбора предмета. Сохранить параметры и проверить сигналы в прототипе при одинаковой громкости.",
+      "en": "Create distinct jump, hit and pickup sounds. Save their parameters and compare the cues in a prototype at matched loudness."
+    }
+  },
+  {
+    "id": "pixelorama",
+    "title": {
+      "ru": "Pixelorama",
+      "en": "Pixelorama"
+    },
+    "description": {
+      "ru": "Редактор пиксельной графики и анимации со слоями, палитрами и экспортом спрайт-листов. Позволяет пройти путь от первого спрайта до проверенной в игре анимации.",
+      "en": "A pixel art and animation editor with layers, palettes and spritesheet export. Useful for taking a first sprite through to an animation checked in a game."
+    },
+    "url": "https://github.com/Orama-Interactive/Pixelorama",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Orama Interactive и участники Pixelorama",
+      "en": "Orama Interactive and Pixelorama contributors"
+    },
+    "access": {
+      "ru": "Открытый проект под MIT. Стабильные сборки для Windows, Linux и macOS доступны в GitHub Releases; есть веб-версия. Документация ещё дополняется.",
+      "en": "An open-source MIT-licensed project. GitHub Releases provides stable builds for Windows, Linux and macOS; a web version is also available. Documentation is still being expanded."
+    },
+    "practice": {
+      "ru": "Создать анимацию из четырёх кадров и экспортировать спрайт-лист. При загрузке в игру проверить порядок кадров, прозрачность и отсутствие размытия при выбранном масштабе.",
+      "en": "Create a four-frame animation and export a spritesheet. In the game, check frame order, transparency and sharpness at the chosen scale."
+    }
   }
 ]

@@ -102,3 +102,37 @@ Game UI Database and Pattern Language for Game Design remain outside this
 addition because current access/content could not be fully verified. The parked
 gamedesignpatterns.com domain is excluded. The research's twelve priority labels
 are editorial recommendations and are not added as public rankings.
+
+## 2026-10-20: curated awesome-list follow-up
+
+The maintainer authorized additions from the reviewed
+[Reddit thread](https://www.reddit.com/r/gamedev/comments/5abuks/awesome_gamedev_repositories/),
+[FronkonGames list](https://github.com/FronkonGames/Awesome-Gamedev) and
+[Calinou list](https://github.com/Calinou/awesome-gamedev). Six independent resource
+records bring the catalog from 66 to 72 entries. This is an editorial addition
+within the existing resource contract; groups, ordering rules, routes and v1 fields
+are unchanged. Existing entries, including Game Programming Patterns, Red Blob
+Games, Catlike Coding, Kenney, Freesound and OpenGameArt, are retained without
+duplicates. The lists are discovery sources; cards link directly to primary
+destinations and use original RU/EN descriptions and practice prompts.
+
+| Resource                                                                                                      | Primary evidence and selection purpose                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Juicing Your Cameras With Math](https://www.gdcvault.com/play/1023557/Math-for-Game-Programmers-Juicing)     | GDC identifies Squirrel Eiserloh / SMU Guildhall, the 2016 session, free-content status and coverage of framing, smoothing, shake and dynamic split-screen. A focused technical talk, distinct from the existing general GDC channel.                  |
+| [Automated Testing for League of Legends](https://www.riotgames.com/en/news/automated-testing-league-legends) | Jim Merrill's February 26, 2016 Riot article describes gameplay state setup, commands, assertions and conditional waits. The card labels the historical infrastructure context rather than presenting the Python examples as a current engine library. |
+| [Tiled](https://www.mapeditor.org/)                                                                           | The project site identifies the free open-source editor, object layers, custom formats, exports and Thorbjørn Lindeijer with contributors. Map export and runtime collision integration remain separate steps in the practice prompt.                  |
+| [RenderDoc](https://github.com/baldurk/renderdoc)                                                             | The project README describes frame capture, links its documentation and MIT license, and supplies a graphics API/platform matrix. The card states the macOS/Metal limitation and asks readers to inspect their own project.                            |
+| [jsfxr](https://github.com/chr15m/jsfxr)                                                                      | The maintained repository credits Eric Fredricksen's HTML5 port and Chris McCormick, links the original sfxr, and documents browser/Node.js usage, presets and serialized sound parameters under Unlicense.                                            |
+| [Pixelorama](https://github.com/Orama-Interactive/Pixelorama)                                                 | The Orama Interactive repository identifies MIT licensing, stable release and web download routes, animation features and spritesheet export. The linked documentation explicitly remains a work in progress.                                          |
+
+The old Pixelorama URL in the Calinou list redirected to an unrelated gambling
+site during research. The card uses the verified project repository instead.
+GitHub remains the primary destination for jsfxr's maintained version and for
+RenderDoc, whose project website could not be retrieved by the research reader.
+All six cards have English destination-language labels; translated card text does
+not imply a Russian source page. No transcripts, external code, artwork or
+third-party list descriptions are imported.
+
+Primary project pages and access notes were checked on 2026-10-20. This source
+review did not install the external applications, play the complete GDC recording
+or execute Riot's historical test infrastructure. No such execution is claimed.
