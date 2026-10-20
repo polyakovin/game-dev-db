@@ -20,7 +20,7 @@ const update = () => {
   let variantCount = 0;
   for (const family of families) {
     const context = norm(
-      `${family.querySelector('[data-family-title]')!.textContent} ${family.querySelector('[data-family-description]')?.textContent ?? ''}`,
+      `${family.querySelector('[data-family-title]')!.textContent} ${family.querySelector('[data-family-description]')?.textContent ?? ''} ${family.querySelector('[data-references]')?.textContent ?? ''}`,
     );
     const sectionOK =
       filter.value === 'all' || family.dataset.section === filter.value;

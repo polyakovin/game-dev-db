@@ -1,5 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { readFileSync } from 'node:fs';
+import { validateMechanics } from '../src/lib/mechanics.mjs';
 
 const base = '/game-dev-db';
 const catalogs = [
@@ -7,6 +8,8 @@ const catalogs = [
   'point-and-click',
   'children-education',
   'detective',
+  'boss-fight-atlas',
+  'game-mechanics',
 ].map((id) =>
   JSON.parse(
     readFileSync(
@@ -126,10 +129,61 @@ for (const lang of ['ru', 'en'] as const) {
       await page.locator('[data-family] summary').first().click();
       await expect(page.locator('[data-variant]').first()).toBeVisible();
       await expect(page.locator('#sources a')).toHaveCount(c.sources.length);
+      for (const family of c.families) {
+        const references = page.locator(`#${family.id} [data-reference]`);
+        await expect(references).toHaveCount(family.references?.length ?? 0);
+      }
+      for (const [i, reference] of (c.families[0].references ?? []).entries()) {
+        const link = page
+          .locator('[data-family]')
+          .first()
+          .locator('[data-reference]')
+          .nth(i);
+        await expect(link).toBeVisible();
+        await expect(link).toHaveText(reference.title[lang]);
+        await expect(link).toHaveAttribute('href', reference.url);
+      }
       await context.close();
     });
   }
+  for (const id of ['boss-fight-atlas', 'game-mechanics']) {
+    test(`${lang}/${id}: search by a game reference and retain readable numbering`, async ({
+      page,
+    }) => {
+      const catalog = catalogs.find((c) => c.id === id);
+      const family = catalog.families[0];
+      const reference = family.references[0];
+      await page.goto(`${base}/${lang}/mechanics/${id}/`);
+      await page.locator('#mechanic-search').fill(reference.title[lang]);
+      await expect(page.locator(`#${family.id}`)).toBeVisible();
+      await expect(
+        page.locator(`#${family.id} [data-reference]`).first(),
+      ).toBeVisible();
+      await page.locator('[data-reset]').first().click();
+      await expect(
+        page.locator(`#${catalog.families[99].id} .family-number`),
+      ).toHaveText('100');
+    });
+  }
 }
+
+test('mechanic references reject missing translations and unsafe URLs', () => {
+  const source = catalogs.find((c) => c.id === 'game-mechanics');
+  expect(validateMechanics([source])).toEqual([]);
+  for (const invalid of [
+    { title: { ru: 'Референс' }, url: 'https://example.org/' },
+    { title: { ru: 'Референс', en: 'Reference' }, url: 'javascript:alert(1)' },
+    {
+      title: { ru: 'Референс', en: 'Reference' },
+      url: 'https://user:password@example.org/',
+    },
+    null,
+  ]) {
+    const catalog = structuredClone(source);
+    catalog.families[0].references = [invalid];
+    expect(validateMechanics([catalog]).length).toBeGreaterThan(0);
+  }
+});
 
 test('mechanic exports preserve full tree, Markdown and manifest discovery', async ({
   request,
@@ -156,10 +210,22 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
       c.families.at(-1).branches.at(-1).variants.at(-1).text,
     );
     expect(c.body).toContain(c.sources[0].url);
+    const source = catalogs.find((catalog) => catalog.id === c.id);
+    for (const family of c.families) {
+      const original = source.families.find((f: any) => f.id === family.id);
+      expect(family.references).toEqual(
+        (original.references ?? []).map((reference: any) => ({
+          title: reference.title[c.lang],
+          url: reference.url,
+        })),
+      );
+      for (const reference of family.references) {
+        expect(c.body).toContain(`[${reference.title}](${reference.url})`);
+      }
+    }
     expect(c.provenance).toBe(
-      c.id === 'detective'
-        ? catalogs.find((source) => source.id === 'detective').provenance
-        : 'Original taxonomy adapted from user-selected design discussions; linked sources support specific examples, not the whole classification.',
+      catalogs.find((source) => source.id === c.id).provenance ??
+        'Original taxonomy adapted from user-selected design discussions; linked sources support specific examples, not the whole classification.',
     );
   }
 });

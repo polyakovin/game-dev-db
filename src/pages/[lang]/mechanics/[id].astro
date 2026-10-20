@@ -124,7 +124,9 @@ const t = ui[lang];
                 data-section={section.id}
               >
                 <summary>
-                  <span class="family-number">{family.id.slice(-2)}</span>
+                  <span class="family-number">
+                    {catalog.families.indexOf(family) + 1}
+                  </span>
                   <span class="family-heading">
                     <strong data-family-title>{family.title}</strong>
                     {family.description && (
@@ -158,12 +160,34 @@ const t = ui[lang];
                       {family.example}
                     </p>
                   )}
+                  {family.references.length > 0 && (
+                    <section data-references>
+                      <h3>
+                        {ru
+                          ? 'Референсы и материалы'
+                          : 'References and further reading'}
+                      </h3>
+                      <ul>
+                        {family.references.map((reference) => (
+                          <li>
+                            <a href={reference.url} data-reference>
+                              {reference.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </section>
+                  )}
                   {family.sourceUrls.length > 0 && (
                     <div class="mechanic-example">
                       <span>
-                        {ru
-                          ? 'Примеры отдельных приёмов: '
-                          : 'Examples of particular techniques: '}
+                        {family.references.length
+                          ? ru
+                            ? 'Источник механики: '
+                            : 'Mechanic source: '
+                          : ru
+                            ? 'Примеры отдельных приёмов: '
+                            : 'Examples of particular techniques: '}
                       </span>
                       {family.sourceUrls.map((url, i) => (
                         <>

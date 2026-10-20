@@ -2,9 +2,19 @@ import voice from '../data/mechanics/voice-audio.json' with { type: 'json' };
 import point from '../data/mechanics/point-and-click.json' with { type: 'json' };
 import children from '../data/mechanics/children-education.json' with { type: 'json' };
 import detective from '../data/mechanics/detective.json' with { type: 'json' };
+import boss from '../data/mechanics/boss-fight-atlas.json' with { type: 'json' };
+import games from '../data/mechanics/game-mechanics.json' with { type: 'json' };
 import { absolute } from './site.ts';
 
-export const mechanicCatalogs = [voice, point, children, detective];
+/** @typedef {Omit<typeof voice, 'families'> & { provenance?: string, families: (typeof voice.families[number] & { references?: { title: { ru: string, en: string }, url: string }[] })[] }} MechanicCatalog */
+export const mechanicCatalogs = /** @type {MechanicCatalog[]} */ ([
+  voice,
+  point,
+  children,
+  detective,
+  boss,
+  games,
+]);
 
 /** @param {'ru' | 'en'} lang */
 export function getMechanics(lang) {
@@ -16,6 +26,10 @@ export function getMechanics(lang) {
       description: family.description[lang],
       example: family.example[lang],
       sourceUrls: family.sourceUrls,
+      references: (family.references ?? []).map((reference) => ({
+        title: reference.title[lang],
+        url: reference.url,
+      })),
       branches: family.branches.map((branch) => ({
         id: branch.id,
         title: branch.title[lang],
@@ -88,7 +102,7 @@ export function mechanicsMarkdown(catalog) {
       ...catalog.families
         .filter((f) => f.section === section.id)
         .flatMap((f) => [
-          `### ${f.id.slice(-2)}. ${f.title}`,
+          `### ${catalog.families.indexOf(f) + 1}. ${f.title}`,
           '',
           ...(f.description ? [f.description, ''] : []),
           ...f.branches.flatMap((branch) => [
@@ -100,6 +114,16 @@ export function mechanicsMarkdown(catalog) {
           ...(f.example
             ? [
                 `${ru ? 'Пример проектирования' : 'Design example'}: ${f.example}`,
+                '',
+              ]
+            : []),
+          ...(f.references.length
+            ? [
+                `#### ${ru ? 'Референсы и материалы' : 'References and further reading'}`,
+                '',
+                ...f.references.map(
+                  (reference) => `- [${reference.title}](${reference.url})`,
+                ),
                 '',
               ]
             : []),
@@ -171,7 +195,7 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
       errors.push('Catalog must be an object');
       continue;
     }
-    const catalog = /** @type {typeof voice} */ (c);
+    const catalog = /** @type {MechanicCatalog} */ (c);
     const location = `mechanics/${catalog.id}`;
     check(
       /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(catalog.id),
@@ -257,6 +281,28 @@ export function validateMechanics(catalogs = mechanicCatalogs) {
         location,
         'unlisted family source',
       );
+      if (f.references !== undefined) {
+        check(
+          Array.isArray(f.references),
+          location,
+          'references must be an array',
+        );
+        for (const reference of Array.isArray(f.references)
+          ? f.references
+          : []) {
+          localized(reference?.title, `${location}/${f.id}/reference/title`);
+          let valid = false;
+          try {
+            const url = new URL(reference?.url);
+            valid =
+              url.protocol === 'https:' &&
+              !!url.hostname &&
+              !url.username &&
+              !url.password;
+          } catch {}
+          check(valid, `${location}/${f.id}`, 'invalid reference URL');
+        }
+      }
       check(
         Array.isArray(f.branches) && f.branches.length > 0,
         location,

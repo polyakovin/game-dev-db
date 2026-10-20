@@ -14,8 +14,17 @@ const base = '/game-dev-db/';
 const sourceResources = JSON.parse(
   await readFile(path.join(root, 'src/data/resources.json'), 'utf8'),
 );
+const catalogRecords = mechanicRecords();
 const externalResourceUrls = new Set(
-  sourceResources.map((resource) => new URL(resource.url).href),
+  [
+    ...sourceResources.map((resource) => resource.url),
+    ...catalogRecords.flatMap((catalog) => [
+      ...catalog.sources.map((source) => source.url),
+      ...catalog.families.flatMap((family) =>
+        family.references.map((reference) => reference.url),
+      ),
+    ]),
+  ].map((url) => new URL(url).href),
 );
 const errors = [];
 const documentCache = new Map();
@@ -73,7 +82,7 @@ async function checkReference(reference, from, location, checkAnchor = true) {
   }
   if (url.origin !== site) return;
   if (!url.pathname.startsWith(base)) {
-    // Other GitHub Pages projects can be explicitly listed as external resources.
+    // Other Pages projects must be explicitly attributed resources or mechanic sources.
     if (/^https?:\/\//i.test(reference) && externalResourceUrls.has(url.href))
       return;
     errors.push(
@@ -347,7 +356,6 @@ for (const key of [
     );
 }
 
-const catalogRecords = mechanicRecords();
 if (JSON.stringify(mechanicExport?.catalogs) !== JSON.stringify(catalogRecords))
   errors.push('Mechanics JSON differs from complete localized source records');
 if (
@@ -379,6 +387,11 @@ for (const catalog of catalogRecords) {
   for (const family of families) {
     if ($(`#${family.id} [data-family-title]`).text() !== family.title)
       errors.push(`Mechanics HTML family differs: ${key}/${family.id}`);
+    const references = $(`#${family.id} [data-reference]`)
+      .toArray()
+      .map((a) => ({ title: $(a).text(), url: $(a).attr('href') }));
+    if (JSON.stringify(references) !== JSON.stringify(family.references))
+      errors.push(`Mechanics HTML references differ: ${key}/${family.id}`);
     for (const branch of family.branches)
       for (const variant of branch.variants) {
         if ($(`#${variant.id}`).text() !== variant.text)

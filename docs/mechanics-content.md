@@ -10,6 +10,8 @@ The `detective` catalog was originally authored for Game Dev DB on 2026-10-19. I
 | `point-and-click` | 44 | 44 | 355 |
 | `children-education` | 64 | 64 | 749 |
 | `detective` | 32 | 32 | 96 |
+| `boss-fight-atlas` | 124 | 124 | 124 |
+| `game-mechanics` | 199 | 199 | 199 |
 
 These are baseline counts, not a limit on future contributions. Counts in the site and exports are derived from current source data. A branch list in non-audio catalogs is simply the family's list of variants, while audio families preserve three named subbranches.
 
@@ -21,6 +23,10 @@ Sections, families, branches, variants, notes and note entries have shared IDs. 
 
 An optional nonempty `provenance` string overrides the exported origin statement for an individual catalog. The original three catalogs retain their existing fallback; `detective` identifies its original editorial authorship. This preserves the public v1 string field and avoids attributing newly written material to imported discussions.
 
+The `boss-fight-atlas` and `game-mechanics` catalogs are editorial reference indexes checked on 2026-10-20, covering all 124 and 199 publicly listed entries respectively. Each entry has an original short RU/EN definition and preserves source categories and mechanic-page links. Boss Fight Atlas retains 14 source sections, paired RU/EN lesson links, boss/game video references and further reading (786 unique reference destinations within families). Game Mechanics groups entries by the first source-index category (45 sections), retains all category labels and links to 664 game-specific galleries plus the source's Matrix film analogy. The source's 685 gallery examples include repeated games; one game-specific gallery link preserves access to multiple examples. No media or complete third-party lesson bodies are imported. See [source integration notes](research/external-mechanics.md).
+
+Families may add `references`, an array of `{ "title": { "ru": "…", "en": "…" }, "url": "https://…" }`. Labels must exist in both languages; URLs must use HTTPS without embedded credentials. Localized exports expose `{ "title": "…", "url": "…" }` and an empty array for catalogs without references. HTML and Markdown preserve every label and link beside its mechanic. Search includes reference labels. The global `sourceUrls` list continues to identify mechanic sources; `references` preserves each mechanic's game/gallery/video and further-reading associations without claiming independent verification of them. Original local definitions use CC BY 4.0; linked source material and media retain their owners' rights.
+
 Examples attached to children's families are hypothetical designs. Combination titles identify design concepts, not released games. Released-game sources support the specific technique described beside the link; no source certifies the entire original taxonomy. The educational papers supply methodological context, not evidence that all listed actions improve general cognitive skills or transfer outside the game. Age suitability and learning outcomes require separate assessment.
 
 Primary source descriptions were reviewed during integration. A Blind Legend now links to its co-producer DOWiNO's explanation of binaural audio. The original DOI for Foundations of Game-Based Learning is retained; its text was checked through the ERIC-hosted paper when DOI retrieval was unavailable. No third-party article bodies or assets were imported.
@@ -29,7 +35,7 @@ Detective examples were checked against developer/publisher pages for The Case o
 
 ## Public export contract
 
-`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently eight records). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
+`src/lib/mechanics.mjs` localizes the source tree, calculates counts and generates Markdown. `/api/v1/mechanics.json` has `schemaVersion: 1`, license/attribution fields and a `catalogs` array with one record per catalog and language (currently twelve records). Each record includes `id`, `lang`, content, tree identities, notes, sources, counts, canonical `url`, `markdownUrl`, licenses, attribution, provenance and the complete Markdown `body`.
 
 `/content/mechanics/{lang}/{id}.md` contains the same generated body and frontmatter metadata. Tree arrays are represented in the body rather than duplicated in frontmatter. Source descriptions and classification limits are retained. The additive manifest fields are `endpoints.mechanics`, `endpoints.mechanicsMarkdownTemplate`, and the mechanic counts. Existing lesson counts and templates retain their previous meanings. `llms.txt`, `llms-full.txt`, the sitemap and agent guidance discover the new catalogs.
 

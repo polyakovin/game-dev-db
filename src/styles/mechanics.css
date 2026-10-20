@@ -215,6 +215,8 @@
 .mechanics-toc nav {
   position: sticky;
   top: 24px;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -243,6 +245,8 @@ select:focus-visible {
   }
   .mechanics-toc nav {
     position: static;
+    max-height: none;
+    overflow-y: visible;
     flex-direction: row;
     flex-wrap: wrap;
     border: 0;
