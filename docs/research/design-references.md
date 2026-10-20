@@ -46,3 +46,59 @@ ranking or numeric review score is maintained in the public dataset.
 ## Local validation
 
 `npm run verify` passed with Node 24 and the bundled Python runtime. Formatting passed. All 29 Playwright tests passed against an isolated server on port 4324, including both resource languages, every source URL, language switching, keyboard jump navigation, narrow layouts and non-JavaScript use. Desktop, mobile and practice-section screenshots were visually reviewed from the production preview build.
+
+## 2026-10-20: open-resource expansion
+
+The maintainer requested publication of the researched selection of 32 additional
+resources. The catalog now contains 66 records. All additions use the existing
+localized title, description, authors, access and practice fields. Resource IDs,
+the five static groups, the kind enum and the v1 export contract are unchanged.
+The page introduction now covers game development beyond game design.
+
+The additions cover level design and balance, game math, algorithms and NPC AI,
+procedural generation, networking, rendering, art, audio, asset libraries,
+narrative tools, accessibility and release preparation. Recommendations and
+practice prompts are original editorial material; source contents are linked,
+not copied or hosted.
+
+Access notes distinguish public reading from reuse rights and paid companion
+products. Important primary evidence includes:
+
+- [The Level Design Book](https://book.leveldesignbook.com/) promises free reading,
+  identifies unfinished sections and specifies CC BY-NC-SA 4.0; its
+  [author page](https://book.leveldesignbook.com/appendix/about) identifies Robert
+  Yang and contributors.
+- [Game Design Concepts](https://gamedesignconcepts.wordpress.com/2009/04/21/syllabus-and-schedule/)
+  has open lectures but requires a paid textbook; the archived class is not
+  presented as a currently running course.
+- [Game AI Pro](https://www.gameaipro.com/) makes chapters available to download
+  while prohibiting rehosting. Its game AI material is distinct from LLM coding.
+- [LearnOpenGL About](https://learnopengl.com/About) identifies Joey de Vries and
+  lists CC BY-NC 4.0 for code examples. The card does not equate free reading with
+  unrestricted commercial code reuse.
+- [The Nature of Code credits](https://natureofcode.com/credits/) identify Daniel
+  Shiffman and CC BY-NC-SA 4.0 for the book.
+- [Kenney support](https://kenney.nl/support) and
+  [Poly Haven licensing](https://polyhaven.com/license) describe CC0 assets;
+  paid convenience products and game performance requirements remain separate.
+- [Freesound FAQ](https://freesound.org/help/faq/) requires registration for
+  downloads and explains varying licenses. [OpenGameArt FAQ](https://opengameart.org/content/faq)
+  likewise requires checking each asset's terms.
+- [GDQuest's repository](https://github.com/GDQuest/learn-gdscript) confirms the
+  specific free interactive course; other GDQuest courses are not labeled free.
+- [ink](https://www.inklestudios.com/ink/) identifies MIT-licensed tools and integration.
+- [Game Audio Learning's author page](https://www.gameaudiolearning.com/about)
+  identifies Greg Lester and Jonny Sands; its public roadmap includes some paid
+  external recommendations.
+
+The research checked public author, project and access pages on 2026-10-20.
+It did not complete every course, run all sample code or download every asset.
+Blender's manual returned HTTP 200 to a direct request after the search reader
+failed to retrieve it. Version-sensitive tutorials retain caveats.
+The Russian links for The Book of Shaders and Godot are labeled RU in both page
+languages; translated card copy does not imply translated source content.
+
+Game UI Database and Pattern Language for Game Design remain outside this
+addition because current access/content could not be fully verified. The parked
+gamedesignpatterns.com domain is excluded. The research's twelve priority labels
+are editorial recommendations and are not added as public rankings.

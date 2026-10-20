@@ -700,5 +700,874 @@
       "en": "Course materials are free; some recommended books are paid."
     },
     "format": "course"
+  },
+  {
+    "id": "level-design-book",
+    "title": {
+      "ru": "The Level Design Book",
+      "en": "The Level Design Book"
+    },
+    "description": {
+      "ru": "Практическое руководство по созданию 3D-уровней: от замысла и blockout до маршрутов, плейтестов и итераций. Подходит для работы в разных движках.",
+      "en": "A practical reference for designing 3D levels, from intent and blockouts to routes, playtesting and iteration. Useful across game engines."
+    },
+    "url": "https://book.leveldesignbook.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Роберт Янг и участники проекта",
+      "en": "Robert Yang and contributors"
+    },
+    "access": {
+      "ru": "Бесплатная онлайн-книга; отдельные разделы ещё в работе. Текст: CC BY-NC-SA 4.0.",
+      "en": "Free online book; some sections are still in progress. Text: CC BY-NC-SA 4.0."
+    },
+    "practice": {
+      "ru": "Раздел How to make a level: собрать blockout одной комнаты и проверить маршрут на игроке.",
+      "en": "Read How to make a level, build a one-room blockout and test its route with a player."
+    }
+  },
+  {
+    "id": "game-balance-concepts",
+    "title": {
+      "ru": "Game Balance Concepts",
+      "en": "Game Balance Concepts"
+    },
+    "description": {
+      "ru": "Курс Иэна Шрайбера помогает рассматривать баланс через модели, вероятности и взаимодействия систем. Особенно полезен для объяснения решений за пределами «подкрутим числа».",
+      "en": "Ian Schreiber’s course examines balance through models, probabilities and interacting systems. Useful for explaining a change beyond adjusting numbers."
+    },
+    "url": "https://gamebalanceconcepts.wordpress.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Иэн Шрайбер",
+      "en": "Ian Schreiber"
+    },
+    "access": {
+      "ru": "Материалы курса 2010 года доступны бесплатно под CC BY 3.0 US. Это основы баланса, а не руководство по текущим движкам.",
+      "en": "The 2010 course materials are free under CC BY 3.0 US. They cover balance fundamentals rather than current engine APIs."
+    },
+    "practice": {
+      "ru": "Взять одну игровую характеристику и описать её стоимость, пользу и ограничения.",
+      "en": "Choose one game statistic and describe its cost, benefit and constraints."
+    },
+    "format": "course"
+  },
+  {
+    "id": "game-design-concepts",
+    "title": {
+      "ru": "Game Design Concepts",
+      "en": "Game Design Concepts"
+    },
+    "description": {
+      "ru": "Пошаговый авторский курс о правилах, прототипировании, итерациях и проверке игры. Удобен как каркас последовательного обучения геймдизайну.",
+      "en": "A structured course on rules, prototyping, iteration and testing a game. Useful as a foundation for learning game design through small projects."
+    },
+    "url": "https://gamedesignconcepts.wordpress.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Иэн Шрайбер",
+      "en": "Ian Schreiber"
+    },
+    "access": {
+      "ru": "Лекции и задания курса 2009 года открыты; программа требует платный учебник Challenges for Game Designers. Учебные форумы архивные.",
+      "en": "The 2009 lectures and assignments are open; the syllabus requires the paid textbook Challenges for Game Designers. Class forums are archival."
+    },
+    "practice": {
+      "ru": "Начать с Level 1 и сделать небольшой бумажный прототип.",
+      "en": "Start at Level 1 and build a small paper prototype."
+    },
+    "format": "course"
+  },
+  {
+    "id": "lost-garden",
+    "title": {
+      "ru": "Lost Garden",
+      "en": "Lost Garden"
+    },
+    "description": {
+      "ru": "Разборы игровых систем, обучения игрока, прототипирования и экономики дизайна. Ценен аргументацией и примерами, а не обещанием универсальной формулы успеха.",
+      "en": "Essays on game systems, player learning, prototyping and the business of design. Use their models as hypotheses to examine in your own game."
+    },
+    "url": "https://lostgarden.com/",
+    "category": "design",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Дэниел Кук",
+      "en": "Daniel Cook"
+    },
+    "access": {
+      "ru": "Публичные статьи бесплатные. Возраст материалов различается; авторские модели проверяйте на своей игре.",
+      "en": "Public articles are free. Publication dates vary; test the author’s models against your own game."
+    },
+    "practice": {
+      "ru": "Открыть Worth reading, выбрать одну модель и сопоставить её с наблюдением за игроком.",
+      "en": "Open Worth reading, choose a model and compare it with observed player behavior."
+    }
+  },
+  {
+    "id": "reverse-design-super-mario-world",
+    "title": {
+      "ru": "Reverse Design: Super Mario World",
+      "en": "Reverse Design: Super Mario World"
+    },
+    "description": {
+      "ru": "Подробный пример анализа уровней и того, как игра развивает знакомые задачи. Полезен, когда хочется перейти от впечатлений к разбору структуры.",
+      "en": "A detailed analysis of levels and how Super Mario World develops familiar challenges. Useful for moving from impressions to structural analysis."
+    },
+    "url": "https://thegamedesignforum.com/features/RD_SMW_1.html",
+    "category": "design",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "The Game Design Forum",
+      "en": "The Game Design Forum"
+    },
+    "access": {
+      "ru": "Веб-разбор открыт; переработанные печатные издания продаются отдельно. Это авторская интерпретация, а не документация Nintendo.",
+      "en": "The web analysis is open; revised print editions are sold separately. It is an interpretation rather than Nintendo’s production documentation."
+    },
+    "practice": {
+      "ru": "Разобрать короткий уровень на повторяющиеся задачи и их вариации.",
+      "en": "Break a short level into recurring challenges and their variations."
+    }
+  },
+  {
+    "id": "red-blob-games",
+    "title": {
+      "ru": "Red Blob Games",
+      "en": "Red Blob Games"
+    },
+    "description": {
+      "ru": "Интерактивные объяснения A*, гексагональных сеток, видимости и генерации карт. Можно менять параметры и сразу видеть, почему алгоритм ведёт себя именно так.",
+      "en": "Interactive explanations of A*, hex grids, visibility and map generation. Change parameters to see why an algorithm behaves as it does."
+    },
+    "url": "https://www.redblobgames.com/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Амит Патель / Red Blob Games",
+      "en": "Amit Patel / Red Blob Games"
+    },
+    "access": {
+      "ru": "Все статьи бесплатны, без регистрации и рекламы. Лицензии сопроводительного кода: MIT или Apache 2.0; права на текст отличаются.",
+      "en": "All articles are free, without registration or ads. Accompanying code uses MIT or Apache 2.0; text rights are separate."
+    },
+    "practice": {
+      "ru": "Introduction to A*: сравнить BFS, Dijkstra и A* на одной карте.",
+      "en": "Read Introduction to A* and compare BFS, Dijkstra and A* on the same map."
+    }
+  },
+  {
+    "id": "game-math-primer",
+    "title": {
+      "ru": "3D Math Primer for Graphics and Game Development",
+      "en": "3D Math Primer for Graphics and Game Development"
+    },
+    "description": {
+      "ru": "Фундамент по координатам, векторам, матрицам и преобразованиям. Хороший источник для объяснения того, что делает код движения, камеры и ориентации объектов.",
+      "en": "A foundation in coordinates, vectors, matrices and transformations. Useful for understanding movement, cameras and object orientation."
+    },
+    "url": "https://gamemath.com/book/",
+    "category": "foundations",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Флетчер Данн, Иэн Парберри",
+      "en": "Fletcher Dunn, Ian Parberry"
+    },
+    "access": {
+      "ru": "Полная книга бесплатно на авторском сайте. Это математический учебник, а не курс по конкретному движку.",
+      "en": "The full book is free on the author’s site. It teaches mathematics rather than a particular game engine."
+    },
+    "practice": {
+      "ru": "Системы координат и векторы: объяснить преобразование направления из локального пространства в мировое.",
+      "en": "Study coordinates and vectors, then explain how to transform a direction from local to world space."
+    }
+  },
+  {
+    "id": "nature-of-code",
+    "title": {
+      "ru": "The Nature of Code",
+      "en": "The Nature of Code"
+    },
+    "description": {
+      "ru": "Наглядно связывает векторы, силы, частицы, автономных агентов и генеративные системы. Подходит для освоения поведения и движения через небольшие эксперименты.",
+      "en": "Connects vectors, forces, particles, autonomous agents and generative systems through small experiments. Examples use JavaScript and p5.js."
+    },
+    "url": "https://natureofcode.com/",
+    "category": "foundations",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Дэниел Шиффман",
+      "en": "Daniel Shiffman"
+    },
+    "access": {
+      "ru": "Вся онлайн-книга с примерами и упражнениями открыта. Текст: CC BY-NC-SA 4.0; условия кода проверяйте отдельно.",
+      "en": "The complete online book, examples and exercises are open. Text: CC BY-NC-SA 4.0; check code terms separately."
+    },
+    "practice": {
+      "ru": "Сделать объект с силами и ограничением скорости, затем добавить steering.",
+      "en": "Build an object with forces and a speed limit, then add steering behavior."
+    }
+  },
+  {
+    "id": "game-ai-pro",
+    "title": {
+      "ru": "Game AI Pro",
+      "en": "Game AI Pro"
+    },
+    "description": {
+      "ru": "Профессиональные статьи о поведении NPC, поиске пути, utility AI, деревьях поведения и отладке. Это игровой AI, а не применение LLM для написания кода.",
+      "en": "Professional articles on NPC behavior, pathfinding, utility AI, behavior trees and debugging. Covers game AI rather than LLM coding assistants."
+    },
+    "url": "https://www.gameaipro.com/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Стив Рабин, редактор серии, и авторы глав",
+      "en": "Steve Rabin, series editor, and chapter authors"
+    },
+    "access": {
+      "ru": "Все главы доступны для бесплатного скачивания. Книги разных лет; правообладатели запрещают размещать копии глав на других сайтах.",
+      "en": "All chapters are free to download. Publication dates vary; rights holders prohibit rehosting the chapters on other sites."
+    },
+    "practice": {
+      "ru": "Выбрать главу о простой FSM или utility AI и реализовать одного проверяемого противника.",
+      "en": "Choose a chapter on a simple FSM or utility AI and implement one testable opponent."
+    }
+  },
+  {
+    "id": "pcg-book",
+    "title": {
+      "ru": "Procedural Content Generation in Games",
+      "en": "Procedural Content Generation in Games"
+    },
+    "description": {
+      "ru": "Объясняет генерацию подземелий, ландшафтов, правил и квестов, а также способы оценивать генераторы. Помогает отделить случайность от управляемого качества результата.",
+      "en": "Explains generation of dungeons, terrain, rules and quests, along with ways to evaluate generators. Useful for distinguishing randomness from controllable quality."
+    },
+    "url": "https://www.pcgbook.com/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Нур Шейкер, Юлиан Тогелиус, Марк Дж. Нельсон",
+      "en": "Noor Shaker, Julian Togelius, Mark J. Nelson"
+    },
+    "access": {
+      "ru": "Финальные авторские версии глав издания 2016 года легально открыты в PDF. Книга посвящена фундаментальным методам PCG.",
+      "en": "The final author versions of the 2016 chapters are legally available as PDFs. The book covers foundational PCG methods."
+    },
+    "practice": {
+      "ru": "Глава о constructive generation: создать генератор комнат и проверку связности.",
+      "en": "Use the constructive-generation chapter to build a room generator and a connectivity check."
+    }
+  },
+  {
+    "id": "fast-paced-multiplayer",
+    "title": {
+      "ru": "Fast-Paced Multiplayer: сетевой код",
+      "en": "Fast-Paced Multiplayer"
+    },
+    "description": {
+      "ru": "Последовательно объясняет авторитетный сервер, prediction, reconciliation, interpolation и lag compensation. Удачная точка входа перед реализацией сетевой игры.",
+      "en": "Explains authoritative servers, prediction, reconciliation, interpolation and lag compensation step by step. A conceptual starting point for networked games."
+    },
+    "url": "https://www.gabrielgambetta.com/client-server-game-architecture.html",
+    "category": "engineering",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Габриэль Гамбетта",
+      "en": "Gabriel Gambetta"
+    },
+    "access": {
+      "ru": "Статьи и демонстрация открыты. Транспорт, безопасность и эксплуатацию сервера нужно проектировать отдельно.",
+      "en": "The articles and demo are open. Transport, security and server operation require separate design."
+    },
+    "practice": {
+      "ru": "Сравнить поведение клиента с задержкой до и после client-side prediction.",
+      "en": "Compare a delayed client’s behavior before and after client-side prediction."
+    }
+  },
+  {
+    "id": "learn-opengl",
+    "title": {
+      "ru": "LearnOpenGL",
+      "en": "LearnOpenGL"
+    },
+    "description": {
+      "ru": "Последовательное обучение графическому конвейеру, освещению, материалам и продвинутым эффектам. Подходит для понимания того, что обычно скрывает игровой движок.",
+      "en": "A step-by-step guide to the graphics pipeline, lighting, materials and rendering effects. Examples use C++ and OpenGL."
+    },
+    "url": "https://learnopengl.com/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Джоуи де Врис",
+      "en": "Joey de Vries"
+    },
+    "access": {
+      "ru": "Чтение и PDF бесплатные. На странице About для примеров кода указана CC BY-NC 4.0; перед переносом проверяйте условия.",
+      "en": "Reading and the PDF are free. The About page lists CC BY-NC 4.0 for code examples; check the terms before reuse."
+    },
+    "practice": {
+      "ru": "Пройти Getting started и вывести текстурированный объект собственным шейдером.",
+      "en": "Complete Getting started and render a textured object with your own shader."
+    }
+  },
+  {
+    "id": "book-of-shaders",
+    "title": {
+      "ru": "The Book of Shaders",
+      "en": "The Book of Shaders"
+    },
+    "description": {
+      "ru": "Учит фрагментным шейдерам через форму, цвет, шум и процедурные узоры. Есть русский перевод и примеры, которые удобно изучать прямо в браузере.",
+      "en": "Introduces fragment shaders through shapes, color, noise and procedural patterns. Links to the Russian translation with browser-based examples."
+    },
+    "url": "https://thebookofshaders.com/?lan=ru",
+    "category": "engineering",
+    "language": "ru",
+    "kind": "book",
+    "authors": {
+      "ru": "Патрицио Гонзалес Виво, Джен Лоу",
+      "en": "Patricio Gonzalez Vivo, Jen Lowe"
+    },
+    "access": {
+      "ru": "Опубликованные главы бесплатные; часть оглавления ещё не написана. По ссылке русский перевод, на сайте есть другие языки.",
+      "en": "Published chapters are free; some planned chapters are unfinished. The link is the Russian translation; other languages are available on the site."
+    },
+    "practice": {
+      "ru": "Изменить smoothstep и координаты в примере, затем собрать собственную маску или эффект.",
+      "en": "Modify smoothstep and coordinates in an example, then build your own mask or effect."
+    }
+  },
+  {
+    "id": "catlike-coding",
+    "title": {
+      "ru": "Catlike Coding",
+      "en": "Catlike Coding"
+    },
+    "description": {
+      "ru": "Подробные текстовые руководства по Unity, C#, движению, процедурным мешам, шуму и рендерингу. Особенно полезны, когда нужно понять алгоритм и его реализацию.",
+      "en": "Detailed text tutorials on Unity, C#, movement, procedural meshes, noise and rendering. Useful for connecting an algorithm to its implementation."
+    },
+    "url": "https://catlikecoding.com/unity/tutorials/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Джаспер Флик",
+      "en": "Jasper Flick"
+    },
+    "access": {
+      "ru": "Публичные уроки бесплатные; поддержка автора необязательна. Серии привязаны к версиям Unity и пакетам.",
+      "en": "Public tutorials are free; supporting the author is optional. Series target particular Unity and package versions."
+    },
+    "practice": {
+      "ru": "Выбрать серию Movement или Procedural Meshes, сверив её версию Unity со своей.",
+      "en": "Choose Movement or Procedural Meshes and match its Unity version to your project."
+    }
+  },
+  {
+    "id": "ray-tracing-in-one-weekend",
+    "title": {
+      "ru": "Ray Tracing in One Weekend",
+      "en": "Ray Tracing in One Weekend"
+    },
+    "description": {
+      "ru": "Позволяет собрать небольшой path tracer и понять пересечения лучей, материалы, выборки и освещение через собственный код.",
+      "en": "Build a small path tracer to understand ray intersections, materials, sampling and lighting through your own code."
+    },
+    "url": "https://raytracing.github.io/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Питер Ширли, Тревор Дэвид Блэк, Стив Холлаш",
+      "en": "Peter Shirley, Trevor David Black, Steve Hollasch"
+    },
+    "access": {
+      "ru": "Книги и исходный код бесплатны; проект указывает CC0. Это учебный офлайн-рендерер.",
+      "en": "The books and source code are free; the project specifies CC0. This is an educational offline renderer."
+    },
+    "practice": {
+      "ru": "Первая книга: вывести сферу, затем добавить материал и накопление выборок.",
+      "en": "Use the first book to render a sphere, then add a material and sample accumulation."
+    }
+  },
+  {
+    "id": "pbr-book",
+    "title": {
+      "ru": "Physically Based Rendering",
+      "en": "Physically Based Rendering"
+    },
+    "description": {
+      "ru": "Глубокое объяснение физически обоснованного рендеринга, где теория связана с устройством полноценного рендерера. Подходит как технический справочник.",
+      "en": "An in-depth reference on physically based rendering that connects mathematical theory to a complete renderer’s implementation."
+    },
+    "url": "https://www.pbr-book.org/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "book",
+    "authors": {
+      "ru": "Мэтт Фарр, Венцель Якоб, Грег Хамфрис",
+      "en": "Matt Pharr, Wenzel Jakob, Greg Humphreys"
+    },
+    "access": {
+      "ru": "Третье и четвёртое издания целиком открыты онлайн. Нужны математика, C++ и основы компьютерной графики.",
+      "en": "The complete third and fourth editions are free online. Requires mathematics, C++ and graphics fundamentals."
+    },
+    "practice": {
+      "ru": "Прочитать обзор системы и проследить путь одного луча через реализацию.",
+      "en": "Read the system overview and trace a ray through the implementation."
+    }
+  },
+  {
+    "id": "lospec-pixel-art",
+    "title": {
+      "ru": "Lospec Pixel Art Tutorials",
+      "en": "Lospec Pixel Art Tutorials"
+    },
+    "description": {
+      "ru": "Удобный поиск уроков по спрайтам, анимации, палитрам, светотени, тайлам и 1-bit-графике. Помогает найти разбор конкретной визуальной проблемы.",
+      "en": "Find tutorials on sprites, animation, palettes, shading, tiles and 1-bit art. Useful for solving one specific visual problem."
+    },
+    "url": "https://lospec.com/pixel-art-tutorials",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Lospec и авторы уроков",
+      "en": "Lospec and tutorial authors"
+    },
+    "access": {
+      "ru": "Каталог и многие уроки бесплатные; среди ссылок встречаются платные книги. Проверяйте доступность конкретного материала.",
+      "en": "The catalog and many tutorials are free; some links lead to paid books. Check access for the selected material."
+    },
+    "practice": {
+      "ru": "Фильтр 1bit или walkcycle: сделать несколько кадров и сравнить читаемость силуэта.",
+      "en": "Use the 1bit or walkcycle tag to make several frames and compare silhouette readability."
+    }
+  },
+  {
+    "id": "saint11-pixel-art",
+    "title": {
+      "ru": "Saint11: Pixel Art Tutorials",
+      "en": "Saint11: Pixel Art Tutorials"
+    },
+    "description": {
+      "ru": "Компактные авторские уроки по пиксель-арту в виде небольших иллюстрированных листов. Удобны для точечной практики и разбора одной техники.",
+      "en": "Compact illustrated pixel-art lessons, each focused on a particular technique. Useful for short exercises and targeted reference."
+    },
+    "url": "https://saint11.art/blog/pixel-art-tutorials/",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Педро Медейрос / Saint11",
+      "en": "Pedro Medeiros / Saint11"
+    },
+    "access": {
+      "ru": "Все уроки этой серии открыты. ZIP-архив продаётся как удобная упаковка тех же материалов.",
+      "en": "All tutorials in this series are open. A ZIP archive is sold as a convenient package of the same material."
+    },
+    "practice": {
+      "ru": "Выбрать один урок, воспроизвести приём и применить его к своему спрайту.",
+      "en": "Choose one lesson, reproduce the technique and apply it to your own sprite."
+    }
+  },
+  {
+    "id": "blender-manual",
+    "title": {
+      "ru": "Blender Manual",
+      "en": "Blender Manual"
+    },
+    "description": {
+      "ru": "Авторитетная опора по моделированию, материалам, анимации, риггингу и экспорту. Полезна для проверки конкретной операции или ограничения инструмента.",
+      "en": "The official reference for modeling, materials, animation, rigging and export. Use it to check a particular operation or tool limitation."
+    },
+    "url": "https://docs.blender.org/manual/en/latest/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Blender Foundation и участники проекта",
+      "en": "Blender Foundation and contributors"
+    },
+    "access": {
+      "ru": "Официальная документация бесплатная. Выбирайте руководство под установленную версию Blender.",
+      "en": "The official documentation is free. Choose the manual matching your installed Blender version."
+    },
+    "practice": {
+      "ru": "Открыть раздел под конкретную задачу, например анимацию или экспорт glTF.",
+      "en": "Open the section for a concrete task, such as animation or glTF export."
+    }
+  },
+  {
+    "id": "game-audio-learning",
+    "title": {
+      "ru": "Game Audio Learning Portal",
+      "en": "Game Audio Learning Portal"
+    },
+    "description": {
+      "ru": "Связывает основы звука, запись, синтез, интеграцию в игру, middleware, пайплайны и QA. Закрывает частый пробел между «нашёл звук» и «звук правильно работает в игре».",
+      "en": "Connects sound fundamentals, recording, synthesis, game integration, middleware, pipelines and QA in one learning roadmap."
+    },
+    "url": "https://www.gameaudiolearning.com/learningroadmap",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Грег Лестер, Джонни Сэндс и участники сообщества",
+      "en": "Greg Lester, Jonny Sands and community contributors"
+    },
+    "access": {
+      "ru": "Карта и опубликованные статьи открыты. Рекомендованные книги, библиотеки и инструменты могут быть платными.",
+      "en": "The roadmap and published articles are open. Recommended books, libraries and tools may be paid."
+    },
+    "practice": {
+      "ru": "How Sound Gets Into Games: собрать звук события с несколькими вариантами воспроизведения.",
+      "en": "Read How Sound Gets Into Games and create an event with several sound variations."
+    }
+  },
+  {
+    "id": "freesound",
+    "title": {
+      "ru": "Freesound",
+      "en": "Freesound"
+    },
+    "description": {
+      "ru": "Большая библиотека полевых записей, эффектов и звуковых фрагментов. Полезна для поиска исходного материала и последующего звукового дизайна.",
+      "en": "A library of field recordings, effects and audio snippets. Useful for finding source material and building your own sound design."
+    },
+    "url": "https://freesound.org/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Music Technology Group, Universitat Pompeu Fabra, и сообщество",
+      "en": "Music Technology Group, Universitat Pompeu Fabra, and the community"
+    },
+    "access": {
+      "ru": "Скачивание бесплатно после регистрации и входа. Лицензии записей различаются: CC0, CC BY, CC BY-NC и старые варианты.",
+      "en": "Downloads are free after registration and sign-in. Individual licenses vary: CC0, CC BY, CC BY-NC and older variants."
+    },
+    "practice": {
+      "ru": "Найти несколько исходников одного события, проверить их лицензии и собрать собственный эффект.",
+      "en": "Find several source recordings for an event, check their licenses and combine them into an effect."
+    }
+  },
+  {
+    "id": "kenney-assets",
+    "title": {
+      "ru": "Kenney Assets",
+      "en": "Kenney Assets"
+    },
+    "description": {
+      "ru": "Наборы графики, интерфейса, моделей и звуков помогают быстро собрать читаемый прототип. Особенно удобны, когда нужен согласованный визуальный набор.",
+      "en": "Consistent packs of art, interface elements, models and sounds for building readable prototypes quickly."
+    },
+    "url": "https://kenney.nl/assets",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Kenney",
+      "en": "Kenney"
+    },
+    "access": {
+      "ru": "Отдельные наборы ассетов бесплатны, CC0. All-in-1 и отдельные инструменты могут продаваться; логотип не входит в эту лицензию.",
+      "en": "Individual asset packs are free under CC0. All-in-1 and some tools may be paid; the logo is outside that asset license."
+    },
+    "practice": {
+      "ru": "Собрать прототип одной механики на ассетах из одного набора.",
+      "en": "Prototype one mechanic using assets from a single pack."
+    }
+  },
+  {
+    "id": "poly-haven",
+    "title": {
+      "ru": "Poly Haven",
+      "en": "Poly Haven"
+    },
+    "description": {
+      "ru": "Качественные исходники для 3D-сцен: окружение, PBR-материалы и модели. Полезны и для прототипа, и для изучения структуры материалов.",
+      "en": "HDRIs, PBR textures and models for 3D scenes. Useful for prototyping and learning how material sets are organized."
+    },
+    "url": "https://polyhaven.com/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Команда Poly Haven",
+      "en": "The Poly Haven team"
+    },
+    "access": {
+      "ru": "Ассеты доступны под CC0. Для игры проверяйте размеры текстур, память, геометрию и стоимость рендеринга.",
+      "en": "Assets are available under CC0. Check texture sizes, memory, geometry and rendering cost for your game."
+    },
+    "practice": {
+      "ru": "Собрать небольшой набор материалов и проверить его на целевом устройстве.",
+      "en": "Build a small material set and test it on the target device."
+    }
+  },
+  {
+    "id": "open-game-art",
+    "title": {
+      "ru": "OpenGameArt",
+      "en": "OpenGameArt"
+    },
+    "description": {
+      "ru": "Ассеты сообщества: 2D, 3D, текстуры, музыка и эффекты. Хороший дополнительный источник для прототипов и жанровых заготовок.",
+      "en": "Community-made 2D art, models, textures, music and sound effects. An additional source of prototype and genre-specific assets."
+    },
+    "url": "https://opengameart.org/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "Сообщество OpenGameArt",
+      "en": "The OpenGameArt community"
+    },
+    "access": {
+      "ru": "Скачивание открыто. Лицензии и требования к атрибуции различаются у каждого набора; единой лицензии на каталог нет.",
+      "en": "Downloads are open. Licenses and attribution requirements vary by asset pack; there is no single catalog-wide license."
+    },
+    "practice": {
+      "ru": "Подобрать небольшой набор с совместимыми лицензиями и сохранить атрибуцию рядом с файлами.",
+      "en": "Choose a small set with compatible licenses and keep attribution beside the files."
+    }
+  },
+  {
+    "id": "gdquest-learn-gdscript",
+    "title": {
+      "ru": "GDQuest: Learn GDScript From Zero",
+      "en": "GDQuest: Learn GDScript From Zero"
+    },
+    "description": {
+      "ru": "Учит основам программирования через небольшие упражнения прямо в браузере. Удобная отправная точка для человека, который пока не понимает код, написанный ИИ.",
+      "en": "Learn programming fundamentals through small browser exercises. Useful for understanding code before relying on an AI assistant to produce it."
+    },
+    "url": "https://gdquest.github.io/learn-gdscript/",
+    "category": "foundations",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Команда GDQuest",
+      "en": "The GDQuest team"
+    },
+    "access": {
+      "ru": "Именно этот курс бесплатный, с открытым исходным кодом. Другие курсы GDQuest могут быть платными.",
+      "en": "This particular course is free and open source. Other GDQuest courses may be paid."
+    },
+    "practice": {
+      "ru": "Пройти упражнения по переменным, условиям и функциям, затем изменить одно задание самостоятельно.",
+      "en": "Complete the variables, conditions and functions exercises, then modify one task yourself."
+    },
+    "format": "course"
+  },
+  {
+    "id": "godot-first-2d-game",
+    "title": {
+      "ru": "Godot: ваша первая 2D-игра",
+      "en": "Godot: your first 2D game (Russian tutorial)"
+    },
+    "description": {
+      "ru": "Показывает, как связать сцены, управление, врагов, счёт и интерфейс в законченную небольшую игру. Хороший следующий шаг после основ GDScript.",
+      "en": "Connect scenes, controls, enemies, scoring and UI in a complete small game. A next step after GDScript basics; links to the Russian tutorial."
+    },
+    "url": "https://docs.godotengine.org/ru/stable/getting_started/first_2d_game/index.html",
+    "category": "foundations",
+    "language": "ru",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Участники проекта Godot",
+      "en": "Godot contributors"
+    },
+    "access": {
+      "ru": "Официальный tutorial и исходники бесплатные. Нужен небольшой опыт программирования; выбирайте документацию под свою версию Godot.",
+      "en": "The official tutorial and source are free. Some programming experience is expected; choose documentation matching your Godot version."
+    },
+    "practice": {
+      "ru": "Собрать Dodge the Creeps, а затем самостоятельно добавить паузу или новое условие проигрыша.",
+      "en": "Build Dodge the Creeps, then independently add a pause or a new loss condition."
+    },
+    "format": "course"
+  },
+  {
+    "id": "ink-narrative",
+    "title": {
+      "ru": "ink / Inky",
+      "en": "ink / Inky"
+    },
+    "description": {
+      "ru": "Позволяет писать ветвящиеся истории и диалоги с переменными и условиями. Полезен для отделения нарративных правил от кода игрового движка.",
+      "en": "Write branching stories and dialogue with variables and conditions. Useful for separating narrative rules from the game engine’s implementation."
+    },
+    "url": "https://www.inklestudios.com/ink/",
+    "category": "design",
+    "language": "en",
+    "kind": "tool",
+    "authors": {
+      "ru": "inkle",
+      "en": "inkle"
+    },
+    "access": {
+      "ru": "ink, Inky и Unity-интеграция бесплатны, MIT. Интерфейс, сохранения и локализацию игры нужно продумать отдельно.",
+      "en": "ink, Inky and the Unity integration are free under MIT. Plan the game’s UI, saves and localization separately."
+    },
+    "practice": {
+      "ru": "Создать короткий диалог, где предыдущий выбор меняет доступную реплику.",
+      "en": "Create a short dialogue in which an earlier choice changes an available line."
+    }
+  },
+  {
+    "id": "roguelike-tutorial",
+    "title": {
+      "ru": "Yet Another Roguelike Tutorial",
+      "en": "Yet Another Roguelike Tutorial"
+    },
+    "description": {
+      "ru": "Небольшой roguelike позволяет поэтапно изучить карту, сущности, ходовую логику, видимость, врагов и инвентарь. Полезен как учебный проект с ограниченным объёмом.",
+      "en": "Build a small roguelike while learning maps, entities, turn logic, visibility, enemies and inventory within a limited project."
+    },
+    "url": "https://rogueliketutorials.com/tutorials/tcod/v2/",
+    "category": "engineering",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "TStand90 и участники проекта Roguelike Tutorials",
+      "en": "TStand90 and Roguelike Tutorials contributors"
+    },
+    "access": {
+      "ru": "Опубликованные главы бесплатные. Tutorial TCOD помечен 2020 годом; сверяйте версии Python и библиотек.",
+      "en": "Published chapters are free. The TCOD tutorial is labeled 2020; check Python and library versions."
+    },
+    "practice": {
+      "ru": "Реализовать движение по карте и одно правило взаимодействия до добавления контента.",
+      "en": "Implement map movement and one interaction rule before adding content."
+    },
+    "format": "course"
+  },
+  {
+    "id": "how-to-market-a-game",
+    "title": {
+      "ru": "How To Market A Game",
+      "en": "How To Market A Game"
+    },
+    "description": {
+      "ru": "Разборы позиционирования, Steam, страниц игр, фестивалей и списков желаемого. Полезное дополнение к технической базе, чтобы думать о поиске своей аудитории.",
+      "en": "Case studies on positioning, Steam pages, festivals and wishlists. Useful for thinking about how a game reaches its audience."
+    },
+    "url": "https://howtomarketagame.com/blog/",
+    "category": "workflow",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Крис Зуковски",
+      "en": "Chris Zukowski"
+    },
+    "access": {
+      "ru": "Блог бесплатный, курсы продаются отдельно. Выводы по отдельным выборкам не гарантируют продажи вашей игры.",
+      "en": "The blog is free; courses are sold separately. Findings from particular samples do not guarantee your game’s sales."
+    },
+    "practice": {
+      "ru": "Сопоставить свою страницу игры с одним конкретным разбором и сформулировать проверяемое изменение.",
+      "en": "Compare your store page with one case study and propose a testable change."
+    }
+  },
+  {
+    "id": "steamworks-coming-soon",
+    "title": {
+      "ru": "Steamworks Documentation",
+      "en": "Steamworks Documentation"
+    },
+    "description": {
+      "ru": "Первичный источник по странице Coming Soon и подготовке выпуска в Steam. Полезен для проверки требований, которые в чужих статьях могут уже устареть.",
+      "en": "The primary source for a Steam Coming Soon page and preparing a release. Useful for checking platform requirements against third-party advice."
+    },
+    "url": "https://partner.steamgames.com/doc/store/coming_soon",
+    "category": "workflow",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Valve",
+      "en": "Valve"
+    },
+    "access": {
+      "ru": "Открытая документация бесплатная. Публикация в Steam требует аккаунта и выполнения условий площадки.",
+      "en": "Public documentation is free. Publishing on Steam requires an account and compliance with the platform’s terms."
+    },
+    "practice": {
+      "ru": "Прочитать требования Coming Soon и составить список нужных материалов страницы.",
+      "en": "Read the Coming Soon requirements and list the materials needed for the store page."
+    }
+  },
+  {
+    "id": "develop-games",
+    "title": {
+      "ru": "Develop.games",
+      "en": "Develop.games"
+    },
+    "description": {
+      "ru": "Короткая вводная о навыках, инструментах, команде и выпуске игры. Может помочь новичку составить карту вопросов перед первым маленьким проектом.",
+      "en": "An introductory guide to skills, tools, teams and releasing a game. Useful for mapping the questions behind a first small project."
+    },
+    "url": "https://develop.games/",
+    "category": "workflow",
+    "language": "en",
+    "kind": "article",
+    "authors": {
+      "ru": "Джейсон Тор Холл / Pirate Software",
+      "en": "Jason Thor Hall / Pirate Software"
+    },
+    "access": {
+      "ru": "Текст открыт. Авторские советы, цены и условия движков сверяйте с официальными источниками.",
+      "en": "The text is open. Check the author’s advice, prices and engine terms against official sources."
+    },
+    "practice": {
+      "ru": "Выделить три неизвестные области своего проекта и выбрать один минимальный прототип.",
+      "en": "Identify three unfamiliar parts of your project and choose one minimal prototype."
+    }
+  },
+  {
+    "id": "game-accessibility-guidelines",
+    "title": {
+      "ru": "Game Accessibility Guidelines",
+      "en": "Game Accessibility Guidelines"
+    },
+    "description": {
+      "ru": "Конкретные проверки управления, текста, звука, цвета и сложности. Удобно превращать в требования к игре и чек-лист приёмки результата работы разработчика или ИИ.",
+      "en": "Concrete checks for controls, text, sound, color and difficulty. Useful for game requirements and reviewing work by developers or AI assistants."
+    },
+    "url": "https://gameaccessibilityguidelines.com/basic/",
+    "category": "design",
+    "language": "en",
+    "kind": "documentation",
+    "authors": {
+      "ru": "Студии, специалисты и исследователи Game Accessibility Guidelines",
+      "en": "Game Accessibility Guidelines studios, specialists and researchers"
+    },
+    "access": {
+      "ru": "Рекомендации и примеры открыты. Выбирайте подходящие пункты и проверяйте их с игроками.",
+      "en": "Guidelines and examples are open. Choose relevant recommendations and test them with players."
+    },
+    "practice": {
+      "ru": "Пройти Basic и проверить переназначение управления, читаемость текста и альтернативу цветовым сигналам.",
+      "en": "Review Basic, then check remappable controls, readable text and alternatives to color-only signals."
+    }
   }
 ]
