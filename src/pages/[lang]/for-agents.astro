@@ -1,6 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import { locales, ui, path, absolute, type Locale } from '../../lib/site';
+import { agentInstructions } from '../../lib/discovery.mjs';
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
 }
@@ -8,6 +9,18 @@ const lang = Astro.params.lang as Locale;
 const t = ui[lang];
 const ru = lang === 'ru';
 const endpoints = [
+  [
+    `llms/${lang}.txt`,
+    ru
+      ? 'Карта тем на выбранном языке и порядок загрузки отдельных записей.'
+      : 'A topic map in the selected language and an individual-record retrieval workflow.',
+  ],
+  [
+    `agent-instructions/${lang}.md`,
+    ru
+      ? 'Готовый фрагмент для AGENTS.md вашего игрового проекта.'
+      : 'A reusable snippet for your game project’s AGENTS.md.',
+  ],
   [
     `api/v1/knowledge/${lang}/index.json`,
     ru
@@ -167,6 +180,7 @@ const prompt = ru
     <button
       class="copy-button"
       data-copy
+      data-copy-target="#agent-prompt"
       data-done={ru ? 'Скопировано' : 'Copied'}
       data-failed={
         ru
@@ -182,6 +196,26 @@ const prompt = ru
         ? 'Если агент не умеет открывать ссылки, откройте нужный материал на сайте и вставьте его текст в чат вместе со ссылкой на статью.'
         : 'If your agent cannot open links, open the relevant material on this site and paste its text into the chat along with the article link.'}
     </p>
+    <h2>{ru ? 'Подключить к проекту' : 'Connect your project'}</h2>
+    <p>
+      {ru
+        ? 'Добавьте этот фрагмент в AGENTS.md своего игрового проекта, если хотите использовать базу при следующих задачах. Сохраните действующие правила проекта и выберите подходящий язык.'
+        : 'Add this snippet to your game project’s AGENTS.md to use the reference in future tasks. Keep the project’s existing rules and choose the appropriate language.'}
+    </p>
+    <pre id="repository-instructions">{agentInstructions(lang)}</pre>
+    <button
+      class="copy-button"
+      data-copy
+      data-copy-target="#repository-instructions"
+      data-done={ru ? 'Скопировано' : 'Copied'}
+      data-failed={
+        ru
+          ? 'Выделите и скопируйте текст выше'
+          : 'Select and copy the text above'
+      }
+    >
+      {ru ? 'Скопировать для AGENTS.md' : 'Copy for AGENTS.md'}
+    </button>
     <h2>
       {ru
         ? 'Технические адреса для агентов'
@@ -230,18 +264,22 @@ const prompt = ru
   </div>
 </Layout>
 <script>
-  const button = document.querySelector<HTMLButtonElement>('[data-copy]');
-  button?.addEventListener('click', async () => {
-    const status = document.querySelector<HTMLElement>('[data-copy-status]')!;
-    try {
-      await navigator.clipboard.writeText(
-        document.querySelector('#agent-prompt')!.textContent!,
-      );
-      status.textContent = button.dataset.done!;
-      button.textContent = button.dataset.done!;
-    } catch {
-      status.textContent = button.dataset.failed!;
-      button.textContent = button.dataset.failed!;
-    }
-  });
+  document
+    .querySelectorAll<HTMLButtonElement>('[data-copy]')
+    .forEach((button) =>
+      button.addEventListener('click', async () => {
+        const status =
+          document.querySelector<HTMLElement>('[data-copy-status]')!;
+        try {
+          await navigator.clipboard.writeText(
+            document.querySelector(button.dataset.copyTarget!)!.textContent!,
+          );
+          status.textContent = button.dataset.done!;
+          button.textContent = button.dataset.done!;
+        } catch {
+          status.textContent = button.dataset.failed!;
+          button.textContent = button.dataset.failed!;
+        }
+      }),
+    );
 </script>

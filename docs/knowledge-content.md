@@ -55,6 +55,14 @@ All routes are relative to the `/game-dev-db/` site root:
 - `api/v1/knowledge/{lang}/{type}/{id}.json`: one complete common record.
 - `content/knowledge/{lang}/{type}/{id}.md`: the same record as frontmatter and Markdown.
 - `api/v1/sources.json`: shared source identities and bilingual usage locations.
+- `{lang}/knowledge/{type}/{id}/`: focused active mechanic, exercise and lens pages.
+- `llms/{lang}.txt` and `agent-instructions/{lang}.md`: localized discovery and optional project integration.
+
+For active mechanics, exercises and lenses, the common record's `url` now cites
+the focused HTML page; `placements` preserves collection fragments. Legacy
+type-specific APIs retain their original URLs and shapes. Focused HTML renders
+the same sections, sources, provenance and licenses as the common machine record.
+See [search discovery](search-discovery.md) for sitemap behavior and webmaster setup.
 
 Search excludes archives and expired jams; consumers must also check `endsAt` at
 read time. Catalog filters stay available. Multiple mechanic categories affect

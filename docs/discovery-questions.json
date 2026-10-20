@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Unbranded discovery and supported-citation evaluation; relevance targets are not measured outcomes.",
+  "results": null,
+  "evaluationStatus": "not-evaluated",
+  "questions": [
+    {
+      "id": "q01",
+      "question": {
+        "ru": "Как организовать состояния персонажа, чтобы переходы не ломались из-за множества флагов?",
+        "en": "How should I organize character states so transitions do not break under many boolean flags?"
+      },
+      "relevantKeys": ["lesson/state-machines"]
+    },
+    {
+      "id": "q02",
+      "question": {
+        "ru": "Как согласовать видимую форму атаки с её коллизией и проверить крайние случаи?",
+        "en": "How can I align an attack visual with its collision shape and test edge cases?"
+      },
+      "relevantKeys": ["lesson/collision-basics"]
+    },
+    {
+      "id": "q03",
+      "question": {
+        "ru": "Как сделать скорость движения независимой от частоты кадров?",
+        "en": "How can I make movement speed independent of frame rate?"
+      },
+      "relevantKeys": ["lesson/game-loop"]
+    },
+    {
+      "id": "q04",
+      "question": {
+        "ru": "Как ограничить случайность наград, сохранив непредсказуемость?",
+        "en": "How can I constrain random rewards while preserving unpredictability?"
+      },
+      "relevantKeys": ["lesson/controlled-randomness"]
+    },
+    {
+      "id": "q05",
+      "question": {
+        "ru": "Как выбрать минимальный игровой прототип и критерии его готовности?",
+        "en": "How do I choose a minimal game prototype and its completion criteria?"
+      },
+      "relevantKeys": ["lesson/scope-and-prototype"]
+    },
+    {
+      "id": "q06",
+      "question": {
+        "ru": "Как проверить, что игра понятно подтверждает действия игрока?",
+        "en": "How can I verify that a game clearly acknowledges player actions?"
+      },
+      "relevantKeys": ["lesson/input-and-feedback"]
+    },
+    {
+      "id": "q07",
+      "question": {
+        "ru": "Как спроектировать темп прогрессии и избежать однообразного гринда?",
+        "en": "How can I design progression pacing and avoid repetitive grinding?"
+      },
+      "relevantKeys": ["lesson/progression-pacing"]
+    },
+    {
+      "id": "q08",
+      "question": {
+        "ru": "Как отделить восприятие противника от выбора его следующего действия?",
+        "en": "How do I separate enemy perception from choosing its next action?"
+      },
+      "relevantKeys": ["lesson/npc-perception"]
+    },
+    {
+      "id": "q09",
+      "question": {
+        "ru": "Как проверить поиск пути, если маршрут перекрыли или цель недостижима?",
+        "en": "How can I test pathfinding when a route is blocked or a goal is unreachable?"
+      },
+      "relevantKeys": ["lesson/npc-pathfinding"]
+    },
+    {
+      "id": "q10",
+      "question": {
+        "ru": "Как выбрать действие NPC и избежать постоянного переключения между решениями?",
+        "en": "How can I select NPC actions and prevent constant switching between decisions?"
+      },
+      "relevantKeys": ["lesson/npc-action-selection"]
+    },
+    {
+      "id": "q11",
+      "question": {
+        "ru": "Как научить игрока новой механике через сам игровой процесс?",
+        "en": "How can I teach a new mechanic through gameplay?"
+      },
+      "relevantKeys": ["lesson/teaching-a-mechanic"]
+    },
+    {
+      "id": "q12",
+      "question": {
+        "ru": "Как помочь игроку ориентироваться на уровне без постоянных указателей?",
+        "en": "How can I help players navigate a level without constant waypoints?"
+      },
+      "relevantKeys": ["lesson/level-wayfinding"]
+    },
+    {
+      "id": "q13",
+      "question": {
+        "ru": "Как провести плейтест прототипа и превратить наблюдения в конкретные изменения?",
+        "en": "How do I run a prototype playtest and turn observations into specific changes?"
+      },
+      "relevantKeys": ["lesson/running-a-playtest"]
+    },
+    {
+      "id": "q14",
+      "question": {
+        "ru": "Как проверить доступность управления и обратной связи в небольшом игровом проекте?",
+        "en": "How can I check control and feedback accessibility in a small game project?"
+      },
+      "relevantKeys": ["lesson/game-accessibility"]
+    },
+    {
+      "id": "q15",
+      "question": {
+        "ru": "Как задать проверяемые критерии приёмки игровой механики для ИИ-агента?",
+        "en": "How can I define testable acceptance criteria for an AI agent implementing a game mechanic?"
+      },
+      "relevantKeys": ["lesson/gameplay-acceptance"]
+    }
+  ]
+}

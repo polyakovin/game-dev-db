@@ -4,6 +4,12 @@ There are two separate uses: consuming Game Dev DB as a knowledge source and con
 
 ## Consume the knowledge base
 
+For a compact language-specific entry point, use `llms/ru.txt` or `llms/en.txt`.
+The agent page also offers a reusable `agent-instructions/{lang}.md` snippet for a
+game project's AGENTS.md. Start with metadata, then fetch selected individual
+records. Search discovery, webmaster registration and measurement are documented
+in [search discovery](search-discovery.md).
+
 1. Fetch `https://polyakovin.github.io/game-dev-db/llms.txt` to discover the dataset.
 2. Read `https://polyakovin.github.io/game-dev-db/api/v1/manifest.json` and select the desired export.
 3. Use lesson metadata to choose a topic and the user's language. A lesson's stable `id` joins its RU and EN versions.

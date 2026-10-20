@@ -19,6 +19,9 @@ interface Props {
     | 'resources'
     | 'agents';
   alternate?: string;
+  formats?: { markdownUrl: string; jsonUrl: string };
+  structuredData?: Record<string, unknown>;
+  robots?: string;
 }
 const {
   lang,
@@ -28,6 +31,9 @@ const {
     : 'Game development principles for people and AI agents. An open knowledge base in Russian and English.',
   section = 'catalog',
   alternate = '',
+  formats,
+  structuredData,
+  robots,
 } = Astro.props;
 const t = ui[lang];
 const other = lang === 'ru' ? 'en' : 'ru';
@@ -51,12 +57,41 @@ const nav = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    {robots && <meta name="robots" content={robots} />}
     <ThemeHead />
     <title>{title} · Game Dev DB</title>
     <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="ru" href={absolute(`ru/${alternate}`)} />
     <link rel="alternate" hreflang="en" href={absolute(`en/${alternate}`)} />
+    <link
+      rel="help"
+      type="text/plain"
+      href={path('llms.txt')}
+      title="Game Dev DB agent index"
+    />
+    {formats && (
+      <>
+        <link
+          rel="alternate"
+          type="text/markdown"
+          href={formats.markdownUrl}
+          title="Markdown"
+        />
+        <link
+          rel="alternate"
+          type="application/json"
+          href={formats.jsonUrl}
+          title="Knowledge record"
+        />
+      </>
+    )}
+    {structuredData && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')}
+      />
+    )}
     <link
       rel="alternate"
       type="application/json"

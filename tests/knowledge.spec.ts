@@ -240,14 +240,16 @@ for (const lang of ['ru', 'en'] as const) {
     );
     await expect(application).toHaveAttribute(
       'href',
-      `${base}/${lang}/mechanics/rpg-grind/#experience-leveling`,
+      `${base}/${lang}/knowledge/mechanic/rpg-grind--experience-leveling/`,
     );
     await application.click();
+    await expect(
+      page.locator('[data-knowledge-target="lesson/progression-pacing"]'),
+    ).toBeVisible();
+    await page.locator('#collections a').first().click();
     await page.locator('#experience-leveling > summary').click();
     await expect(
-      page.locator(
-        '#experience-leveling [data-knowledge-target="lesson/progression-pacing"]',
-      ),
+      page.locator('#experience-leveling [data-knowledge-page]'),
     ).toBeVisible();
     await page.goto(`${base}/${lang}/search/`);
     await expect(page.locator('[data-search-controls]')).toBeHidden();

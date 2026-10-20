@@ -12,32 +12,39 @@ Do not edit build output in `dist/`. Change the Markdown source or the generator
 
 ## Public routes
 
+Focused active mechanics, exercises and lenses also render at
+`{lang}/knowledge/{type}/{id}/`. Their common record URLs and typed relationships
+point to these pages; original catalog fragments remain in `placements` and all
+legacy type-specific exports remain compatible. The shared record supplies HTML,
+individual JSON/Markdown and structured metadata. The sitemap lists unique active
+HTML pages with authored dates and language pairs. See [search discovery](search-discovery.md).
+
 All paths below are relative to the configured site root. In production that root is `https://polyakovin.github.io/game-dev-db/`.
 
-| Route                                             | Purpose                                                |
-| ------------------------------------------------- | ------------------------------------------------------ |
-| `ru/`, `en/`                                      | Language-specific lesson catalogs and search           |
-| `{lang}/lessons/{id}/`                            | A rendered lesson                                      |
-| `{lang}/resources/`                               | Referenced external resources                          |
-| `{lang}/mechanics/`                               | Mechanic reference index                               |
-| `{lang}/mechanics/{id}/`                          | A complete mechanic taxonomy                           |
-| `{lang}/practice/`                                | Original design exercises with stable exercise anchors |
-| `{lang}/lenses/` | Searchable attributed design lenses |
-| `{lang}/jams/` | Current and upcoming game jams and discovery calendars |
-| `{lang}/for-agents/`                              | Guidance for machine consumers                         |
-| `llms.txt`                                        | Compact entry point for agents                         |
-| `llms-full.txt`                                   | Combined lesson text                                   |
-| `api/v1/manifest.json`                            | Export entry point and dataset metadata                |
-| `api/v1/lessons.json`                             | Structured lesson collection                           |
-| `api/v1/resources.json`                           | Resource collection                                    |
-| `api/v1/mechanics.json`                           | Complete localized mechanic taxonomies                 |
-| `api/v1/practice.json`                            | Complete localized practice collections                |
-| `api/v1/lenses.json` | Complete localized design-lens records |
-| `api/v1/jams.json` | Bilingual current event snapshot and discovery calendars |
-| `content/lenses/{lang}/game-design.md` | Complete design-lens reference as Markdown |
-| `content/{lang}/{id}.md`                          | One lesson as Markdown                                 |
-| `content/mechanics/{lang}/{id}.md`                | One mechanic taxonomy as Markdown                      |
-| `content/practice/{lang}/game-design-practice.md` | The full practice collection as Markdown               |
+| Route                                             | Purpose                                                  |
+| ------------------------------------------------- | -------------------------------------------------------- |
+| `ru/`, `en/`                                      | Language-specific lesson catalogs and search             |
+| `{lang}/lessons/{id}/`                            | A rendered lesson                                        |
+| `{lang}/resources/`                               | Referenced external resources                            |
+| `{lang}/mechanics/`                               | Mechanic reference index                                 |
+| `{lang}/mechanics/{id}/`                          | A complete mechanic taxonomy                             |
+| `{lang}/practice/`                                | Original design exercises with stable exercise anchors   |
+| `{lang}/lenses/`                                  | Searchable attributed design lenses                      |
+| `{lang}/jams/`                                    | Current and upcoming game jams and discovery calendars   |
+| `{lang}/for-agents/`                              | Guidance for machine consumers                           |
+| `llms.txt`                                        | Compact entry point for agents                           |
+| `llms-full.txt`                                   | Combined lesson text                                     |
+| `api/v1/manifest.json`                            | Export entry point and dataset metadata                  |
+| `api/v1/lessons.json`                             | Structured lesson collection                             |
+| `api/v1/resources.json`                           | Resource collection                                      |
+| `api/v1/mechanics.json`                           | Complete localized mechanic taxonomies                   |
+| `api/v1/practice.json`                            | Complete localized practice collections                  |
+| `api/v1/lenses.json`                              | Complete localized design-lens records                   |
+| `api/v1/jams.json`                                | Bilingual current event snapshot and discovery calendars |
+| `content/lenses/{lang}/game-design.md`            | Complete design-lens reference as Markdown               |
+| `content/{lang}/{id}.md`                          | One lesson as Markdown                                   |
+| `content/mechanics/{lang}/{id}.md`                | One mechanic taxonomy as Markdown                        |
+| `content/practice/{lang}/game-design-practice.md` | The full practice collection as Markdown                 |
 
 The `api` paths are static files, not a live server API. Clients should fetch a snapshot and process it locally. There is no authentication, mutation endpoint, or guaranteed refresh interval.
 

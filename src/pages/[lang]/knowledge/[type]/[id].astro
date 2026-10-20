@@ -1,0 +1,124 @@
+---
+import { satteri } from '@astrojs/markdown-satteri';
+import Layout from '../../../../layouts/Layout.astro';
+import KnowledgeLinks from '../../../../components/KnowledgeLinks.astro';
+import { getKnowledge } from '../../../../lib/knowledge-content';
+import { hasFocusedPage, recordMetadata } from '../../../../lib/discovery.mjs';
+import { typeLabels } from '../../../../lib/knowledge.mjs';
+import { locales, path, ui } from '../../../../lib/site';
+
+export async function getStaticPaths() {
+  return (
+    await Promise.all(
+      locales.map(async (lang) =>
+        (await getKnowledge(lang)).records
+          .filter(hasFocusedPage)
+          .map((record) => ({
+            params: { lang, type: record.type, id: record.id },
+            props: { record },
+          })),
+      ),
+    )
+  ).flat();
+}
+const { record } = Astro.props;
+const lang = record.lang;
+const ru = lang === 'ru';
+const t = ui[lang];
+const pageTitle = `${record.title} · ${record.type === 'mechanic' ? record.placements[0].title : typeLabels[lang][record.type as keyof typeof typeLabels.ru]}`;
+const section = { mechanic: 'mechanics', practice: 'practice', lens: 'lenses' }[
+  record.type
+] as 'mechanics' | 'practice' | 'lenses';
+const renderer = await satteri().createRenderer({ syntaxHighlight: false });
+const sections = await Promise.all(
+  record.sections.map(async (entry) => ({
+    ...entry,
+    html: (await renderer.render(entry.body)).code,
+  })),
+);
+const local = (url: string) => {
+  const target = new URL(url);
+  return target.pathname + target.hash;
+};
+---
+
+<Layout
+  lang={lang}
+  title={pageTitle}
+  description={record.summary}
+  section={section}
+  alternate={`knowledge/${record.type}/${record.id}/`}
+  formats={record}
+  structuredData={recordMetadata(record)}
+>
+  <a class="back-link" href={path(`${lang}/${section}/`)}>
+    ← {t[section]}
+  </a>
+  <header class="article-header">
+    <div class="eyebrow">
+      {typeLabels[lang][record.type as keyof typeof typeLabels.ru]}
+    </div>
+    <h1>{record.title}</h1>
+    <p>{record.summary}</p>
+    {record.updatedAt && (
+      <div class="article-meta">
+        <span>
+          {t.updated}:{' '}
+          <time datetime={record.updatedAt}>{record.updatedAt}</time>
+        </span>
+      </div>
+    )}
+    <div class="mechanics-links">
+      <a href={local(record.markdownUrl)}>Markdown</a>
+      <a href={local(record.jsonUrl)}>JSON</a>
+    </div>
+  </header>
+  <div class="article-layout">
+    <article class="prose" data-toc-content data-knowledge-record={record.key}>
+      {sections.map((entry) => (
+        <section id={entry.id} data-record-section={entry.id}>
+          <h2>{entry.title}</h2>
+          <div set:html={entry.html} />
+        </section>
+      ))}
+      <section id="sources" class="article-sources">
+        <h2>{t.sources}</h2>
+        <p>{record.provenance}</p>
+        <ul>
+          {record.sources.map((source) => (
+            <li>
+              <a href={source.url}>{source.title} ↗</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <section id="collections">
+        <h2>{ru ? 'В справочниках' : 'In collections'}</h2>
+        <ul>
+          {record.placements.map((placement) => (
+            <li>
+              <a href={local(placement.url)}>{placement.title}</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+      <div class="article-license">CC BY 4.0 · {record.attribution}</div>
+    </article>
+    <aside class="article-aside">
+      <div class="sticky-toc">
+        <p class="nav-label">{t.toc}</p>
+        <nav aria-label={t.toc} data-toc>
+          {sections.map((entry) => (
+            <a href={`#${entry.id}`}>{entry.title}</a>
+          ))}
+          <a href="#sources">{t.sources}</a>
+          <a href="#collections">{ru ? 'В справочниках' : 'In collections'}</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+  <KnowledgeLinks identity={record.key} lang={lang} />
+</Layout>
+<script>
+  import '../../../../scripts/table-of-contents';
+</script>

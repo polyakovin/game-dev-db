@@ -27,6 +27,7 @@ const sectionGroups = groupMechanicSections(catalog.sections);
   description={catalog.description}
   section="mechanics"
   alternate={`mechanics/${catalog.id}/`}
+  robots={catalog.status === 'archived' ? 'noindex, follow' : undefined}
 >
   <a class="back-link" href={path(`${lang}/mechanics/`)}>
     ← {ru ? 'Все справочники механик' : 'All mechanic references'}

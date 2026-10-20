@@ -1,6 +1,7 @@
 ---
 import { getKnowledge, type KnowledgeRelation } from '../lib/knowledge-content';
 import type { Locale } from '../lib/site';
+import { hasFocusedPage } from '../lib/discovery.mjs';
 interface Props {
   identity: string;
   lang: Locale;
@@ -60,6 +61,12 @@ for (const relation of record?.relations ?? []) {
       </div>
     ))}
     <div class="knowledge-formats">
+      {hasFocusedPage(record) &&
+        new URL(record.url).pathname !== Astro.url.pathname && (
+          <a href={local(record.url)} data-knowledge-page>
+            {lang === 'ru' ? 'Открыть отдельно' : 'Open individual page'}
+          </a>
+        )}
       <a href={local(record.markdownUrl)}>Markdown</a>
       <a href={local(record.jsonUrl)}>JSON</a>
     </div>

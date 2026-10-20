@@ -2,6 +2,7 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { load } from 'cheerio';
 import matter from 'gray-matter';
+import { hasFocusedPage, recordMetadata } from '../src/lib/discovery.mjs';
 import { mechanicRecords } from '../src/lib/mechanics.mjs';
 import { practiceRecords } from '../src/lib/practice.mjs';
 import { lensRecords } from '../src/lib/lenses.mjs';
@@ -39,6 +40,24 @@ const externalResourceUrls = new Set(
 const errors = [];
 const documentCache = new Map();
 const exports = new Map();
+const sitemap = load(await readFile(path.join(dist, 'sitemap.xml'), 'utf8'), {
+  xmlMode: true,
+});
+const sitemapUrls = sitemap('url > loc')
+  .map((_, node) => sitemap(node).text())
+  .get();
+const sitemapSet = new Set(sitemapUrls);
+if (sitemapUrls.length !== sitemapSet.size)
+  errors.push('Sitemap contains duplicate URLs');
+for (const url of sitemapUrls) {
+  if (
+    url.includes('#') ||
+    url.includes('/api/') ||
+    url.includes('children-education')
+  )
+    errors.push(`Sitemap contains noncanonical URL: ${url}`);
+  await checkReference(url, new URL(base, site), 'sitemap');
+}
 
 async function filesIn(directory) {
   const entries = await readdir(directory, { withFileTypes: true });
@@ -691,6 +710,55 @@ for (const lang of ['ru', 'en']) {
         JSON.stringify(record.sourceIds)
     )
       errors.push(`Knowledge Markdown differs: ${record.key}/${lang}`);
+    if (hasFocusedPage(record) || record.type === 'lesson') {
+      const htmlFile = await resolveFile(new URL(record.url).pathname);
+      if (!htmlFile) {
+        errors.push(`Focused page missing: ${record.key}/${lang}`);
+        continue;
+      }
+      const $ = await document(htmlFile);
+      if (
+        $('h1').text() !== record.title ||
+        $('link[rel="canonical"]').attr('href') !== record.url
+      )
+        errors.push(`Focused page identity differs: ${record.key}/${lang}`);
+      if (
+        $('link[type="text/markdown"]').attr('href') !== record.markdownUrl ||
+        $('link[title="Knowledge record"]').attr('href') !== record.jsonUrl
+      )
+        errors.push(
+          `Focused page format discovery differs: ${record.key}/${lang}`,
+        );
+      try {
+        if (
+          JSON.stringify(
+            JSON.parse($('script[type="application/ld+json"]').text()),
+          ) !== JSON.stringify(recordMetadata(record))
+        )
+          errors.push(`Focused page metadata differs: ${record.key}/${lang}`);
+      } catch {
+        errors.push(`Invalid structured metadata: ${record.key}/${lang}`);
+      }
+      if (!sitemapSet.has(record.url))
+        errors.push(`Sitemap missing focused page: ${record.key}/${lang}`);
+      if (hasFocusedPage(record)) {
+        const actualSections = $('[data-record-section]')
+          .map((_, node) => $(node).attr('id'))
+          .get();
+        if (
+          JSON.stringify(actualSections) !==
+          JSON.stringify(record.sections.map((s) => s.id))
+        )
+          errors.push(`Focused page sections differ: ${record.key}/${lang}`);
+        for (const source of record.sources)
+          if (
+            !$('#sources a')
+              .toArray()
+              .some((node) => $(node).attr('href') === source.url)
+          )
+            errors.push(`Focused page source missing: ${record.key}/${lang}`);
+      }
+    }
     await checkReference(
       record.url,
       new URL(base, site),

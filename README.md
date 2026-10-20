@@ -40,6 +40,13 @@ npm run verify
 
 Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then fetch only the lessons needed for the task.
 
+Language-specific starts: [Русский](https://polyakovin.github.io/game-dev-db/llms/ru.txt)
+and [English](https://polyakovin.github.io/game-dev-db/llms/en.txt). The
+[agent guide](https://polyakovin.github.io/game-dev-db/en/for-agents/) includes an
+AGENTS.md integration snippet. Individual mechanics, exercises and lenses have
+focused bilingual HTML pages alongside JSON and Markdown. See
+[discovery operations and evaluation](docs/search-discovery.md).
+
 For cross-content retrieval, start with `api/v1/knowledge/{lang}/index.json` and
 follow one record's `jsonUrl` or `markdownUrl`. Every content type uses the same
 record envelope with sections, sources and typed connections. Human readers can
@@ -56,8 +63,8 @@ use the shared search at `{lang}/search/`. See [the common content contract](doc
 | Game jams and calendars     | `api/v1/jams.json`                                |
 | Mechanic catalogs           | `api/v1/mechanics.json`                           |
 | Game-design practice        | `api/v1/practice.json`                            |
-| Design lenses | `api/v1/lenses.json` |
-| Lens reference | `content/lenses/{lang}/game-design.md` |
+| Design lenses               | `api/v1/lenses.json`                              |
+| Lens reference              | `content/lenses/{lang}/game-design.md`            |
 | Individual lesson           | `content/{lang}/{id}.md`                          |
 | Individual mechanic catalog | `content/mechanics/{lang}/{id}.md`                |
 | Practice collection         | `content/practice/{lang}/game-design-practice.md` |

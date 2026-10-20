@@ -13,6 +13,7 @@
     "check": "node scripts/run-tool.mjs astro check",
     "check:content": "node scripts/verify-content.mjs",
     "check:dist": "node scripts/verify-dist.mjs",
+    "check:discovery": "node scripts/audit-discovery.mjs",
     "spec": "node scripts/run-tool.mjs openspec",
     "verify": "npm run check && npm run check:content && npm run build && npm run check:dist && npm run spec -- validate --all --strict && python3 scripts/commercial-project.py check .",
     "test": "npm run verify",
@@ -21,6 +22,7 @@
     "format:check": "prettier --check src scripts/*.mjs tests *.json *.mjs *.ts"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "0.4.3",
     "@fontsource-variable/golos-text": "5.3.0",
     "@fontsource/ibm-plex-mono": "5.3.0",
     "astro": "7.3.8"

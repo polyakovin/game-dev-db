@@ -30,6 +30,7 @@ export interface KnowledgeRecord {
   sources: { id: string; title: string; url: string }[];
   sections: { id: string; title: string; body: string }[];
   relations: KnowledgeRelation[];
+  placements: { title: string; url: string }[];
   supersededBy: string[];
   license: string;
   codeLicense: string;

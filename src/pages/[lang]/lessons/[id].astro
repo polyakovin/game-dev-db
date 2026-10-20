@@ -6,6 +6,8 @@ import LessonPath from '../../../components/LessonPath.astro';
 import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLessons } from '../../../lib/content';
 import { path, REPO, ui } from '../../../lib/site';
+import { getKnowledge } from '../../../lib/knowledge-content';
+import { recordMetadata } from '../../../lib/discovery.mjs';
 export async function getStaticPaths() {
   return (await getLessons()).map((lesson) => ({
     params: { lang: lesson.data.lang, id: lesson.data.id },
@@ -16,6 +18,9 @@ const { lesson } = Astro.props;
 const { data } = lesson;
 const t = ui[data.lang];
 const { Content, headings } = await render(lesson);
+const record = (await getKnowledge(data.lang)).records.find(
+  (r) => r.key === `lesson/${data.id}`,
+)!;
 ---
 
 <Layout
@@ -23,6 +28,8 @@ const { Content, headings } = await render(lesson);
   title={data.title}
   description={data.description}
   alternate={`lessons/${data.id}/`}
+  formats={record}
+  structuredData={recordMetadata(record)}
 >
   <a class="back-link" href={path(`${data.lang}/`)}>
     ← {t.back}

@@ -9,6 +9,7 @@ import { getResources } from './resources.mjs';
 import { getJams } from './jams.mjs';
 import { absolute } from './site.ts';
 import { orderByImportance } from './content-order.mjs';
+import { hasFocusedPage } from './discovery.mjs';
 
 export const knowledgeTypes = [
   'lesson',
@@ -590,6 +591,18 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
         provenance: jams.rights,
       },
     );
+  }
+
+  // Common records cite focused HTML pages; legacy collection exports and anchors
+  // retain their original addresses. Resolve these before sources and graph links.
+  for (const record of records.values()) {
+    if (!hasFocusedPage(record)) continue;
+    if (!record.placements.length)
+      record.placements.push({
+        title: ru ? 'В исходной подборке' : 'In the original collection',
+        url: record.url,
+      });
+    record.url = absolute(`${lang}/knowledge/${record.type}/${record.id}/`);
   }
 
   const edges = new Map();
