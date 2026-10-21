@@ -1,0 +1,59 @@
+{
+  "shared-family-02": {
+    "updatedAt": "2026-10-21",
+    "description": {
+      "ru": "Игрок ищет заданный объект среди деталей сцены. Подсказка направляет внимание, а находка даёт понятное подтверждение.",
+      "en": "The player finds a target among the details of a scene. A clue guides their attention; finding the target gives clear confirmation."
+    },
+    "image": {
+      "src": "images/mechanics/hidden-folks-jungle.png",
+      "width": 2048,
+      "height": 1152,
+      "game": "Hidden Folks",
+      "sourceUrl": "https://hiddenfolks.com/press/hidden-folks-1",
+      "originalUrl": "https://hiddenfolks.com/images/hf1/HiddenFolks-JungleTutorial.png",
+      "credit": "Adriaan de Jongh & Sylvain Tegroeg",
+      "rights": "© Adriaan de Jongh & Sylvain Tegroeg. All rights reserved.",
+      "alt": {
+        "ru": "Hidden Folks: джунгли с персонажами, найденный исследователь и нижняя панель целей с текстовой подсказкой.",
+        "en": "Hidden Folks: a jungle scene with characters, a discovered explorer and the target strip with a written clue below."
+      },
+      "caption": {
+        "ru": "Найти исследователя в джунглях",
+        "en": "Find the explorer in the jungle"
+      },
+      "markers": [
+        {
+          "x": 53.5,
+          "y": 94,
+          "label": { "ru": "Цель и подсказка", "en": "Target and clue" }
+        },
+        {
+          "x": 64,
+          "y": 42,
+          "label": { "ru": "Найденный персонаж", "en": "Discovered character" }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Усложняйте окружение, а не уменьшайте цель до пикселя.",
+        "en": "Add scene complexity rather than shrinking the target to a pixel."
+      },
+      {
+        "ru": "Давайте подсказку по запросу и явно отмечайте находку.",
+        "en": "Offer a clue on request and clearly confirm each find."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hidden Folks",
+        "url": "https://hiddenfolks.com/press/hidden-folks-1"
+      },
+      {
+        "title": "Hidden Through Time",
+        "url": "https://www.rogueside.com/hidden-through-time/"
+      }
+    ]
+  }
+}

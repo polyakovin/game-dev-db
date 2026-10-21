@@ -1,6 +1,6 @@
 # Content license
 
-Original educational lessons and their translations in `src/content/lessons/`, mechanic catalogs and their translations in `src/data/mechanics/`, original lens explanations and review prompts in `src/data/lenses.json`, and original resource descriptions in `src/data/resources.json`, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file explicitly states otherwise. This license also applies to that content when rendered as HTML or distributed through generated Markdown and JSON exports.
+Original educational lessons and their translations in `src/content/lessons/`, mechanic catalogs and their translations in `src/data/mechanics/`, original compact descriptions and advice in `src/data/mechanic-previews.json`, original lens explanations and review prompts in `src/data/lenses.json`, and original resource descriptions in `src/data/resources.json`, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file explicitly states otherwise. This license also applies to that content when rendered as HTML or distributed through generated Markdown and JSON exports.
 
 Copyright © 2026 Game Dev DB contributors. Individual contributions are recorded in the repository history.
 
@@ -17,6 +17,13 @@ Use the actual title, canonical lesson URL, and a truthful description of change
 Software, build tooling, tests, configuration, and repository development documentation are licensed under [MIT](LICENSE). Original code snippets within educational lessons may also be used under MIT, so they can be adapted directly into projects. The surrounding explanation remains CC BY 4.0.
 
 External links, third-party quotations, trademarks, and explicitly attributed external code or media retain their respective rights and licenses. Linking a resource does not relicense it or authorize copying its full contents. Check the original source before reuse.
+
+## Mechanic screenshot
+
+The Hidden Folks screenshot in `public/images/mechanics/hidden-folks-jungle.png`
+is third-party promotional media from the game's official press kit, used for an
+attributed editorial illustration. © Adriaan de Jongh & Sylvain Tegroeg. All rights
+reserved. It is excluded from MIT and CC BY 4.0. See its [source and credit](public/images/mechanics/README.md).
 
 ## Bundled fonts
 

@@ -1,0 +1,407 @@
+---
+import type { KnowledgeRecord } from '../lib/knowledge-content';
+import { path } from '../lib/site';
+interface Props {
+  record: KnowledgeRecord;
+}
+const { record } = Astro.props;
+const preview = record.attributes.preview!;
+const { image } = preview;
+const ru = record.lang === 'ru';
+const local = (url: string) => new URL(url).pathname + new URL(url).hash;
+---
+
+<article class="mechanic-preview" data-mechanic-preview={record.key}>
+  <header class="preview-header">
+    <a class="preview-back" href={path(`${record.lang}/mechanics/`)}>
+      ← {ru ? 'Механики' : 'Mechanics'}
+    </a>
+    <h1>{record.title}</h1>
+    <nav
+      class="preview-categories"
+      aria-label={ru ? 'Категории механики' : 'Mechanic categories'}
+    >
+      {record.placements.map((placement) => (
+        <a href={local(placement.url)}>
+          {placement.title.replace(ru ? ' механики' : ' mechanics', '')}
+        </a>
+      ))}
+    </nav>
+  </header>
+
+  <div class="preview-grid">
+    <p class="preview-description">{preview.description}</p>
+    <figure class="preview-figure">
+      <div class="preview-image">
+        <img
+          src={path(image.src)}
+          width={image.width}
+          height={image.height}
+          alt={image.alt}
+          fetchpriority="high"
+        />
+        {image.markers.map((marker, i) => (
+          <span
+            class="preview-marker"
+            style={`left:${marker.x}%;top:${marker.y}%`}
+            aria-hidden="true"
+          >
+            {i + 1}
+          </span>
+        ))}
+      </div>
+      <figcaption>
+        <div class="preview-image-title">
+          <strong>{image.game}</strong>
+          <span>{image.caption}</span>
+        </div>
+        <ol class="preview-legend">
+          {image.markers.map((marker) => (
+            <li>{marker.label}</li>
+          ))}
+        </ol>
+        <a class="preview-credit" href={image.sourceUrl} title={image.rights}>
+          © {image.credit} · {ru ? 'Пресс-кит' : 'Press kit'} ↗
+        </a>
+      </figcaption>
+    </figure>
+
+    <section class="preview-tips" aria-labelledby="preview-tips-heading">
+      <h2 id="preview-tips-heading">{ru ? 'Как применять' : 'Design tips'}</h2>
+      <ul>
+        {preview.tips.map((tip) => (
+          <li>{tip}</li>
+        ))}
+      </ul>
+    </section>
+    <section
+      class="preview-examples"
+      id="sources"
+      aria-labelledby="preview-examples-heading"
+    >
+      <h2 id="preview-examples-heading">{ru ? 'Ещё примеры' : 'Examples'}</h2>
+      <div>
+        {record.sources.map((source) => (
+          <a href={source.url}>{source.title} ↗</a>
+        ))}
+      </div>
+    </section>
+  </div>
+
+  <footer class="preview-footer">
+    <span>
+      {ru ? 'Текст' : 'Text'}:{' '}
+      <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
+      Game Dev DB
+    </span>
+    <nav aria-label={ru ? 'Полные данные механики' : 'Full mechanic data'}>
+      <a href={local(record.markdownUrl)}>Markdown</a>
+      <a href={local(record.jsonUrl)}>JSON</a>
+    </nav>
+  </footer>
+</article>
+
+<style>
+  .mechanic-preview {
+    --preview-gap: clamp(20px, 3vw, 44px);
+    overflow-wrap: anywhere;
+  }
+  .preview-header {
+    position: relative;
+    margin-bottom: 22px;
+  }
+  .preview-back {
+    color: var(--muted);
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  a:hover {
+    color: var(--accent);
+  }
+  h1 {
+    font-size: clamp(28px, 3.5vw, 44px);
+    font-weight: 550;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+    margin: 0 0 14px;
+  }
+  .preview-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .preview-categories a {
+    font-size: 11px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 3px 9px;
+    color: var(--muted);
+  }
+  .preview-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    column-gap: var(--preview-gap);
+    row-gap: 22px;
+  }
+  .preview-description {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .preview-figure {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    margin: 0;
+    align-self: start;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+  }
+  .preview-image {
+    position: relative;
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: inherit;
+  }
+  .preview-marker {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    background: #c75031;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font:
+      600 12px 'IBM Plex Mono',
+      monospace;
+    box-shadow: 0 1px 5px #0003;
+  }
+  figcaption {
+    padding: 13px 16px;
+    border-top: 1px solid var(--line);
+  }
+  .preview-image-title {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    font-size: 12px;
+  }
+  .preview-image-title strong {
+    font-weight: 600;
+  }
+  .preview-image-title span {
+    color: var(--muted);
+  }
+  .preview-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    padding: 0;
+    margin: 9px 0;
+    list-style: none;
+    counter-reset: markers;
+    font-size: 12px;
+  }
+  .preview-legend li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    counter-increment: markers;
+  }
+  .preview-legend li::before {
+    content: counter(markers);
+    font:
+      500 10px 'IBM Plex Mono',
+      monospace;
+    color: var(--accent);
+  }
+  .preview-credit {
+    display: inline-block;
+    font-size: 10px;
+    color: var(--muted);
+  }
+  h2 {
+    font:
+      500 11px 'IBM Plex Mono',
+      monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .preview-tips {
+    grid-column: 2;
+    grid-row: 2;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+  }
+  .preview-tips ul {
+    padding-left: 17px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .preview-tips li + li {
+    margin-top: 8px;
+  }
+  .preview-tips li::marker {
+    color: var(--accent);
+  }
+  .preview-examples {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .preview-examples div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+  .preview-examples a {
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: 4px;
+  }
+  .preview-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-top: 1px solid var(--line);
+    margin-top: 24px;
+    padding-top: 12px;
+    color: var(--muted);
+    font-size: 10px;
+  }
+  .preview-footer nav {
+    display: flex;
+    gap: 16px;
+  }
+  @media (max-width: 700px) {
+    .preview-header {
+      margin-bottom: 8px;
+    }
+    .preview-back {
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 27px;
+      line-height: 1.1;
+      letter-spacing: -0.9px;
+      margin-bottom: 8px;
+    }
+    .preview-categories {
+      gap: 6px;
+    }
+    .preview-categories a {
+      font-size: 10px;
+      padding: 2px 7px;
+    }
+    .preview-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .preview-description {
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .preview-figure {
+      width: 100%;
+    }
+    figcaption {
+      padding: 7px 10px;
+    }
+    .preview-image-title {
+      font-size: 10px;
+      gap: 3px 6px;
+    }
+    .preview-legend {
+      font-size: 10px;
+      gap: 4px 12px;
+      margin: 5px 0;
+    }
+    .preview-credit {
+      font-size: 9px;
+    }
+    .preview-marker {
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    }
+    .preview-tips {
+      border-top: 0;
+      padding-top: 0;
+    }
+    h2 {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+    .preview-tips ul {
+      font-size: 12px;
+      line-height: 1.4;
+      padding-left: 15px;
+    }
+    .preview-tips li + li {
+      margin-top: 3px;
+    }
+    .preview-examples {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 4px 12px;
+    }
+    .preview-examples h2 {
+      margin: 0;
+    }
+    .preview-examples div {
+      font-size: 11px;
+      gap: 5px 12px;
+    }
+    .preview-footer {
+      font-size: 9px;
+      margin-top: 10px;
+      padding-top: 6px;
+      gap: 4px;
+    }
+    .preview-footer nav {
+      gap: 10px;
+    }
+  }
+  @media (min-width: 701px) and (max-height: 740px) {
+    .preview-header {
+      margin-bottom: 18px;
+    }
+    .preview-back {
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    .preview-grid {
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 16px 32px;
+    }
+    .preview-description {
+      font-size: 16px;
+    }
+    .preview-footer {
+      margin-top: 18px;
+    }
+  }
+</style>

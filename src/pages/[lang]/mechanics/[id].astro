@@ -1,4 +1,5 @@
 ---
+import { hasMechanicPreview } from '../../../lib/mechanic-previews.mjs';
 import Layout from '../../../layouts/Layout.astro';
 import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import {
@@ -205,6 +206,19 @@ const sectionGroups = groupMechanicSections(catalog.sections);
                         </span>
                         <span class="family-heading">
                           <strong data-family-title>{family.title}</strong>
+                          {hasMechanicPreview(family.canonicalId) && (
+                            <a
+                              class="pilot-page-link"
+                              href={path(
+                                `${lang}/knowledge/mechanic/${family.canonicalId}/`,
+                              )}
+                              data-mechanic-preview-link
+                            >
+                              {ru
+                                ? 'Описание и пример ↗'
+                                : 'Overview and example ↗'}
+                            </a>
+                          )}
                           {family.description && (
                             <span data-family-description>
                               {family.description}
@@ -361,6 +375,17 @@ const sectionGroups = groupMechanicSections(catalog.sections);
     </aside>
   </div>
 </Layout>
+<style>
+  .pilot-page-link {
+    display: inline-block;
+    width: fit-content;
+    color: var(--accent);
+    font-size: 12px;
+    padding: 5px 0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>
 <script>
   import '../../../scripts/mechanics-search';
   import '../../../scripts/table-of-contents';

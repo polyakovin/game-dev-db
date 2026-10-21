@@ -12,6 +12,11 @@ Do not edit build output in `dist/`. Change the Markdown source or the generator
 
 ## Public routes
 
+One mechanic currently pilots a compact illustrated view at its existing focused
+URL. Optional `attributes.preview` supplies the same bilingual content to HTML,
+JSON and Markdown; full taxonomy sections and catalog anchors remain intact.
+See [compact mechanic pilot](mechanic-previews.md).
+
 Focused active mechanics, exercises and lenses also render at
 `{lang}/knowledge/{type}/{id}/`. Their common record URLs and typed relationships
 point to these pages; original catalog fragments remain in `placements` and all

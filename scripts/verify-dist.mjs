@@ -741,7 +741,7 @@ for (const lang of ['ru', 'en']) {
       }
       if (!sitemapSet.has(record.url))
         errors.push(`Sitemap missing focused page: ${record.key}/${lang}`);
-      if (hasFocusedPage(record)) {
+      if (hasFocusedPage(record) && !record.attributes.preview) {
         const actualSections = $('[data-record-section]')
           .map((_, node) => $(node).attr('id'))
           .get();
@@ -757,6 +757,33 @@ for (const lang of ['ru', 'en']) {
               .some((node) => $(node).attr('href') === source.url)
           )
             errors.push(`Focused page source missing: ${record.key}/${lang}`);
+      }
+      if (record.attributes.preview) {
+        const preview = record.attributes.preview;
+        if (
+          $('[data-mechanic-preview]').attr('data-mechanic-preview') !==
+            record.key ||
+          $('.preview-description').text() !== preview.description ||
+          $('.preview-image img').attr('src') !==
+            `${base}${preview.image.src}` ||
+          $('.preview-image img').attr('alt') !== preview.image.alt ||
+          $('.preview-tips li')
+            .map((_, node) => $(node).text())
+            .get()
+            .join('\n') !== preview.tips.join('\n')
+        )
+          errors.push(
+            `Compact mechanic content differs: ${record.key}/${lang}`,
+          );
+        for (const source of record.sources)
+          if (
+            !$('#sources a')
+              .toArray()
+              .some((node) => $(node).attr('href') === source.url)
+          )
+            errors.push(
+              `Compact mechanic source missing: ${record.key}/${lang}`,
+            );
       }
     }
     await checkReference(

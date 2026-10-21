@@ -10,6 +10,7 @@ import { getJams } from './jams.mjs';
 import { absolute } from './site.ts';
 import { orderByImportance } from './content-order.mjs';
 import { hasFocusedPage } from './discovery.mjs';
+import { getMechanicPreview } from './mechanic-previews.mjs';
 
 export const knowledgeTypes = [
   'lesson',
@@ -597,6 +598,15 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
   // retain their original addresses. Resolve these before sources and graph links.
   for (const record of records.values()) {
     if (!hasFocusedPage(record)) continue;
+    const preview =
+      record.type === 'mechanic' && getMechanicPreview(record.id, lang);
+    if (preview) {
+      record.attributes.preview = preview;
+      record.updatedAt = preview.updatedAt;
+      record.summary = preview.description;
+      for (const source of preview.examples)
+        record.sources.push({ title: source.title, url: source.url });
+    }
     if (!record.placements.length)
       record.placements.push({
         title: ru ? 'В исходной подборке' : 'In the original collection',
@@ -753,6 +763,26 @@ export function knowledgeMarkdown(record) {
     '',
     record.summary,
     '',
+    ...(record.attributes.preview
+      ? [
+          `## ${record.lang === 'ru' ? 'На одном экране' : 'At a glance'}`,
+          '',
+          `![${record.attributes.preview.image.alt}](${absolute(record.attributes.preview.image.src)})`,
+          '',
+          `[${record.attributes.preview.image.game}](${record.attributes.preview.image.sourceUrl}) · ${record.attributes.preview.image.rights}`,
+          '',
+          ...record.attributes.preview.image.markers.map(
+            (marker, i) => `${i + 1}. ${marker.label}`,
+          ),
+          '',
+          ...record.attributes.preview.tips.map((tip) => `- ${tip}`),
+          '',
+          ...record.attributes.preview.examples.map(
+            (example) => `- [${example.title}](${example.url})`,
+          ),
+          '',
+        ]
+      : []),
     ...record.sections.flatMap((s) => [`## ${s.title}`, '', s.body, '']),
     '## ' +
       (record.lang === 'ru' ? 'Связанные материалы' : 'Connected materials'),

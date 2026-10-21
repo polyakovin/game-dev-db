@@ -2,6 +2,26 @@ import { getLessons } from './content';
 import { buildKnowledge } from './knowledge.mjs';
 import type { Locale } from './site';
 
+export interface MechanicPreview {
+  updatedAt: string;
+  description: string;
+  image: {
+    src: string;
+    width: number;
+    height: number;
+    game: string;
+    sourceUrl: string;
+    originalUrl: string;
+    credit: string;
+    rights: string;
+    alt: string;
+    caption: string;
+    markers: { x: number; y: number; label: string }[];
+  };
+  tips: string[];
+  examples: { title: string; url: string }[];
+}
+
 export interface KnowledgeRelation {
   type: string;
   direction: string;
@@ -36,6 +56,9 @@ export interface KnowledgeRecord {
   codeLicense: string;
   attribution: string;
   provenance: string;
+  attributes: {
+    preview?: MechanicPreview;
+  };
 }
 export interface KnowledgeDataset {
   schemaVersion: number;
