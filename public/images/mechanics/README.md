@@ -167,3 +167,16 @@ respectively. `hunt-extraction-guide.webp` comes from Crytek’s [official playe
 guide](https://www.huntshowdown.com/player-guide/en_US), showing its extraction
 countdown. All images retain third-party rights and are excluded from MIT and
 CC BY 4.0; the same WebP size and resolution limits apply.
+
+`adventure-*.webp` adds inspected puzzle and adventure screenshots from the
+publisher-distributed Steam galleries recorded in each card. These cover Day of
+the Tentacle Remastered, Thimbleweed Park, Machinarium, The Room, The Case of the
+Golden Idol, Return of the Obra Dinn, Chants of Sennaar, Ghost Trick, Her Story,
+Storyteller, Braid, Inscryption, There Is No Game: Wrong Dimension, Portal,
+The Talos Principle, Human Resource Machine, Opus Magnum, SpaceChem,
+A Little to the Left, Dorfromantik, Patrick’s Parabox, Gorogoa, Paper Trail,
+Noita, 7 Billion Humans, Letter Quest, Hexcells, Bejeweled 3 and Keep Talking
+and Nobody Explodes. The selected VR screenshot shows the game’s virtual hands;
+it is not a hardware mockup. The native 640px Portal screenshot is not enlarged.
+All derivatives retain their exact original source URLs and credits, use the
+same bounded WebP budget, and remain excluded from MIT and CC BY 4.0.
