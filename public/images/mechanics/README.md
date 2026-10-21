@@ -89,3 +89,17 @@ its source gallery’s older release-year caption is not repeated. The Far Cry 6
 health-bar image avoids an ambiguously labeled Assassin’s Creed comparison.
 New derivatives are added to the same 1440px / 250KiB WebP budget. Medical pickups
 and a fixed healing cabinet share one relevant screenshot with different markers.
+
+`interaction-*.webp` uses inspected screenshots or timed frames from Game
+Mechanics pages for inventory, locks, progression, territory, trade and stealth.
+Game credits include Endnight, Bethesda, Ubisoft, id Software, Naughty Dog,
+Volition, Rockstar, EA Redwood Shores, 3D Realms, Capcom, Red Barrels, Ion Storm,
+IO Interactive, Konami and Valve. Each card records its exact source. The
+Uncharted frame retains the MKIceAndFire watermark. The blood-decal example uses
+Far Cry 5 rather than an ambiguously identified Wolfenstein 3D modification.
+
+`minecraft-cheat-commands.webp` is a resized, compressed derivative of the
+[command-entry screenshot](https://learn.microsoft.com/en-us/minecraft/creator/documents/media/commands/chatcommands.png?view=minecraft-bedrock-stable)
+in Microsoft Learn’s [Introduction to Commands](https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable).
+Minecraft imagery remains © Mojang AB / Microsoft; it is excluded from the
+portal’s MIT and CC BY 4.0 licenses. Retrieved 2026-10-22.

@@ -9692,5 +9692,1907 @@
         "url": "https://gamemechanics.org/patterns/tetris-inventory"
       }
     ]
+  },
+  "game-mechanics--gm-diegetic-inventory": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Инвентарь внутри мира",
+      "en": "In-world inventory"
+    },
+    "description": {
+      "ru": "Герой раскладывает вещи в физическом контейнере или на поверхности. Выбор предметов остаётся частью сцены и действий персонажа.",
+      "en": "The hero lays items out in a physical container or on a surface. Choosing an item remains part of the scene and the character’s actions."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-diegetic-inventory.webp",
+      "width": 1200,
+      "height": 675,
+      "game": "Sons of the Forest",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-inventory",
+      "originalUrl": "https://cdn.gamemechanics.org/sons_of_the_forest_inventory.jpg",
+      "credit": "Endnight Games; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Припасы разложены на складном коврике",
+        "en": "Supplies laid out on a folding mat"
+      },
+      "alt": {
+        "ru": "В Sons of the Forest припасы и инструменты лежат на коврике; в центре подготовлены палки и клейкая лента.",
+        "en": "Supplies and tools lie on a mat in Sons of the Forest, with sticks and tape placed in the central work area."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 58,
+          "label": {
+            "ru": "Предметы лежат на рабочей поверхности",
+            "en": "Items lie on a physical work surface"
+          }
+        },
+        {
+          "x": 70,
+          "y": 54,
+          "label": {
+            "ru": "Подсказка взаимодействия с разложенными вещами",
+            "en": "Interaction prompt beside the laid-out items"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте узнаваемое расположение часто используемых вещей.",
+        "en": "Keep frequently used items in recognizable positions."
+      },
+      {
+        "ru": "Объясняйте, продолжается ли опасность во время выбора предмета.",
+        "en": "Communicate whether threats remain active while choosing an item."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sons of the Forest",
+        "url": "https://gamemechanics.org/patterns/diegetic-inventory"
+      }
+    ]
+  },
+  "game-mechanics--gm-lockpicking": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вскрытие замка",
+      "en": "Lockpicking"
+    },
+    "description": {
+      "ru": "Игрок подбирает положение инструмента или тратит ресурс, чтобы открыть замок. Успех связывает точность действий с доступом к проходу или добыче.",
+      "en": "The player finds a tool position or spends a resource to open a lock. Success connects precise action with access to a passage or loot."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-lockpicking.webp",
+      "width": 600,
+      "height": 336,
+      "game": "The Elder Scrolls V: Skyrim",
+      "sourceUrl": "https://gamemechanics.org/patterns/lockpicking",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/skyrim_pick_lock.webm",
+      "sourceFrameSeconds": 5.16,
+      "credit": "Bethesda Game Studios; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отмычка и поворот личинки",
+        "en": "A lockpick and a turning cylinder"
+      },
+      "alt": {
+        "ru": "В Skyrim отмычка вставлена под углом в замок решётки; второй инструмент поворачивает его личинку.",
+        "en": "In Skyrim, a pick enters a barred gate’s lock at an angle while a second tool turns the cylinder."
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 37,
+          "label": {
+            "ru": "Угол отмычки",
+            "en": "Lockpick angle"
+          }
+        },
+        {
+          "x": 52,
+          "y": 57,
+          "label": {
+            "ru": "Поворот личинки замка",
+            "en": "Turning the lock cylinder"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте понятную обратную связь о близости верного положения.",
+        "en": "Give clear feedback about proximity to the correct position."
+      },
+      {
+        "ru": "Учитывайте повторение мини-игры и альтернативный способ открыть замок.",
+        "en": "Consider repeated use and an alternative way to open the lock."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Elder Scrolls V: Skyrim",
+        "url": "https://gamemechanics.org/patterns/lockpicking"
+      }
+    ]
+  },
+  "game-mechanics--gm-perk-system": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Система перков",
+      "en": "Perk system"
+    },
+    "description": {
+      "ru": "Игрок выбирает отдельные улучшения, меняющие свойства героя или правила действий. Стоимость и ограничения выбора задают развитие сборки.",
+      "en": "The player chooses upgrades that change the hero’s properties or action rules. Costs and selection limits shape a character build."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-perk-system.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Far Cry 5",
+      "sourceUrl": "https://gamemechanics.org/patterns/perk-system",
+      "originalUrl": "https://cdn.gamemechanics.org/far_cry_5_perks.jpg",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Journey Pack расширяет переносимый запас",
+        "en": "Journey Pack expands carrying capacity"
+      },
+      "alt": {
+        "ru": "На экране перков Far Cry 5 выбран Journey Pack: видны стоимость 7 и доступные 14 очков.",
+        "en": "Far Cry 5’s perk screen highlights Journey Pack, showing a cost of 7 and 14 available points."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 7,
+          "label": {
+            "ru": "Доступные очки перков",
+            "en": "Available perk points"
+          }
+        },
+        {
+          "x": 49,
+          "y": 55,
+          "label": {
+            "ru": "Выбранный перк и его стоимость",
+            "en": "Selected perk and its cost"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте новые возможности от простого роста чисел.",
+        "en": "Distinguish new capabilities from simple numeric increases."
+      },
+      {
+        "ru": "Показывайте эффект улучшения до подтверждения покупки.",
+        "en": "Preview an upgrade’s effect before confirming its purchase."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 5",
+        "url": "https://gamemechanics.org/patterns/perk-system"
+      }
+    ]
+  },
+  "game-mechanics--gm-destructible-barriers": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушаемые преграды",
+      "en": "Destructible barriers"
+    },
+    "description": {
+      "ru": "Уничтожение преграды открывает путь или доступ к содержимому. Материал и повреждения помогают понять, куда можно приложить силу.",
+      "en": "Destroying a barrier opens a route or access to its contents. Material and damage cues show where force can be applied."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-destructible-barriers.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Return to Castle Wolfenstein",
+      "sourceUrl": "https://gamemechanics.org/patterns/destructible-barriers",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/return_to_castle_wolfenstein_destroy_barrier.webm",
+      "sourceFrameSeconds": 5.43,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Доски перекрывают люк в полу",
+        "en": "Boards block a floor hatch"
+      },
+      "alt": {
+        "ru": "В Return to Castle Wolfenstein повреждённые деревянные доски перекрывают отверстие в полу перед игроком.",
+        "en": "Damaged wooden planks block a floor opening ahead of the player in Return to Castle Wolfenstein."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 43,
+          "label": {
+            "ru": "Повреждённая деревянная преграда",
+            "en": "Damaged wooden barrier"
+          }
+        },
+        {
+          "x": 59,
+          "y": 64,
+          "label": {
+            "ru": "Отверстие под досками",
+            "en": "Opening beneath the planks"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Визуально отличайте разрушаемые материалы от постоянных стен.",
+        "en": "Visually distinguish breakable materials from permanent walls."
+      },
+      {
+        "ru": "После разрушения оставляйте физически проходимый маршрут.",
+        "en": "Leave a physically usable route after destruction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein",
+        "url": "https://gamemechanics.org/patterns/destructible-barriers"
+      }
+    ]
+  },
+  "game-mechanics--gm-clearing-obstacles-with-fire": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Расчистка пути огнём",
+      "en": "Clear obstacles with fire"
+    },
+    "description": {
+      "ru": "Огонь уничтожает горючую преграду и освобождает проход. Игрок связывает источник огня с подходящим материалом окружения.",
+      "en": "Fire destroys a flammable barrier and opens a passage. The player connects a fire source to a suitable environmental material."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-clearing-obstacles-with-fire.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Uncharted: Drake’s Fortune",
+      "sourceUrl": "https://gamemechanics.org/patterns/clearing-obstacles-with-fire",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/uncharted_clearing_with_fire.webm",
+      "sourceFrameSeconds": 6.51,
+      "credit": "Naughty Dog / Sony Computer Entertainment; frame from clip via GameMechanics.org; visible recording watermark: MKIceAndFire",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Горящая преграда перед Дрейком",
+        "en": "A burning barrier ahead of Drake"
+      },
+      "alt": {
+        "ru": "В Uncharted: Drake’s Fortune деревянная преграда горит внутри каменного прохода перед героем.",
+        "en": "A wooden barrier burns inside a stone passage ahead of the hero in Uncharted: Drake’s Fortune."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 41,
+          "label": {
+            "ru": "Горящий материал преграды",
+            "en": "The barrier’s burning material"
+          }
+        },
+        {
+          "x": 64,
+          "y": 69,
+          "label": {
+            "ru": "Проход, который освобождает огонь",
+            "en": "The route opened by the fire"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте горючий материал до применения огня.",
+        "en": "Signal flammable materials before fire is applied."
+      },
+      {
+        "ru": "Показывайте завершение горения и доступность прохода.",
+        "en": "Communicate when burning ends and passage becomes available."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Uncharted: Drake’s Fortune",
+        "url": "https://gamemechanics.org/patterns/clearing-obstacles-with-fire"
+      }
+    ]
+  },
+  "game-mechanics--gm-boss-hierarchy": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Иерархия боссов",
+      "en": "Boss hierarchy"
+    },
+    "description": {
+      "ru": "Боссы связаны порядком подчинения или условиями доступа. Победы над нижними звеньями приближают игрока к главной цели.",
+      "en": "Bosses are connected by hierarchy or access requirements. Defeating lower tiers brings the player closer to the main target."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-boss-hierarchy.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Tom Clancy’s Ghost Recon: Wildlands",
+      "sourceUrl": "https://gamemechanics.org/patterns/boss-hierarchy",
+      "originalUrl": "https://cdn.gamemechanics.org/ghost_recon_wildlands_boss_tree.webp",
+      "credit": "Ubisoft Paris; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Структура картеля ведёт к Эль Суэньо",
+        "en": "The cartel structure leads to El Sueño"
+      },
+      "alt": {
+        "ru": "На схеме картеля Ghost Recon: Wildlands портрет Эль Суэньо находится в центре, вокруг показаны руководители и подчинённые.",
+        "en": "Ghost Recon: Wildlands’ cartel chart places El Sueño at the center, surrounded by leaders and subordinates."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 46,
+          "label": {
+            "ru": "Главная цель в центре структуры",
+            "en": "The main target at the center"
+          }
+        },
+        {
+          "x": 29,
+          "y": 66,
+          "label": {
+            "ru": "Нижние звенья и промежуточные цели",
+            "en": "Lower tiers and intermediate targets"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какие победы открывают следующий уровень иерархии.",
+        "en": "Show which victories unlock the next tier of the hierarchy."
+      },
+      {
+        "ru": "Сохраняйте понятную общую цель при свободном порядке прохождения.",
+        "en": "Keep the overall objective clear when progression order is flexible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Ghost Recon: Wildlands",
+        "url": "https://gamemechanics.org/patterns/boss-hierarchy"
+      }
+    ]
+  },
+  "game-mechanics--gm-territory-liberation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Освобождение территории",
+      "en": "Territory liberation"
+    },
+    "description": {
+      "ru": "Локальные победы меняют контроль над участками карты. Карта и поведение мира показывают, где влияние противника ослабло.",
+      "en": "Local victories change control over map regions. The map and world behavior show where enemy influence has weakened."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-territory-liberation.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Far Cry 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/territory-liberation",
+      "originalUrl": "https://cdn.gamemechanics.org/far_cry_3_outpost_map.jpg",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Красная зона влияния вокруг аванпоста",
+        "en": "A red influence area around an outpost"
+      },
+      "alt": {
+        "ru": "Карта Far Cry 3 окрашивает вражескую территорию красным; внутри видны аванпосты и другие значки мест.",
+        "en": "Far Cry 3’s map colors enemy territory red, with outposts and other location icons inside it."
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 41,
+          "label": {
+            "ru": "Красная область вражеского влияния",
+            "en": "Red area of enemy influence"
+          }
+        },
+        {
+          "x": 49,
+          "y": 45,
+          "label": {
+            "ru": "Аванпост внутри контролируемого участка",
+            "en": "An outpost within the controlled region"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте изменение цвета карты с реальными изменениями в мире.",
+        "en": "Connect map color changes to actual changes in the world."
+      },
+      {
+        "ru": "Объясняйте, какие задачи освобождают регион и что даёт результат.",
+        "en": "Explain which tasks liberate a region and what the outcome provides."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 3",
+        "url": "https://gamemechanics.org/patterns/territory-liberation"
+      }
+    ]
+  },
+  "game-mechanics--gm-difficulty-level": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Выбор сложности",
+      "en": "Difficulty selection"
+    },
+    "description": {
+      "ru": "Выбранный режим меняет параметры испытания или доступную помощь. Игрок заранее подбирает нагрузку под свой опыт и цели.",
+      "en": "The selected mode changes challenge parameters or available assistance. The player chooses a suitable challenge for their experience and goals."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-difficulty-level.webp",
+      "width": 800,
+      "height": 600,
+      "game": "Doom",
+      "sourceUrl": "https://gamemechanics.org/patterns/difficulty-level",
+      "originalUrl": "https://cdn.gamemechanics.org/doom_difficulty_levels.jpg",
+      "credit": "id Software; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пять уровней сложности Doom",
+        "en": "Five Doom difficulty levels"
+      },
+      "alt": {
+        "ru": "В меню Doom под надписью Choose Skill Level перечислены пять вариантов, от I’m Too Young to Die до Nightmare.",
+        "en": "Doom’s Choose Skill Level menu lists five options from I’m Too Young to Die to Nightmare."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 34,
+          "label": {
+            "ru": "Список уровней перед началом игры",
+            "en": "Difficulty list before the game begins"
+          }
+        },
+        {
+          "x": 59,
+          "y": 63,
+          "label": {
+            "ru": "Nightmare как отдельный крайний режим",
+            "en": "Nightmare as a distinct extreme option"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте конкретные изменения, стоящие за названием режима.",
+        "en": "Explain the concrete changes behind each mode’s name."
+      },
+      {
+        "ru": "Разрешайте смену сложности, если это совместимо с устройством игры.",
+        "en": "Allow difficulty changes when they fit the game’s structure."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom",
+        "url": "https://gamemechanics.org/patterns/difficulty-level"
+      }
+    ]
+  },
+  "game-mechanics--gm-vending-machines-shops": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Торговый автомат",
+      "en": "Vending-machine shop"
+    },
+    "description": {
+      "ru": "Игрок покупает товары через устройство в игровом мире. Положение автомата связывает снабжение с маршрутом и текущими угрозами.",
+      "en": "The player buys goods through a device in the world. The machine’s location connects resupply to routes and current threats."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-vending-machines-shops.webp",
+      "width": 900,
+      "height": 506,
+      "game": "BioShock",
+      "sourceUrl": "https://gamemechanics.org/patterns/vending-machines-shops",
+      "originalUrl": "https://cdn.gamemechanics.org/bioshock_vending_machine.jpg",
+      "credit": "Irrational Games / 2K; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Circus of Values в коридоре Восторга",
+        "en": "Circus of Values in a Rapture corridor"
+      },
+      "alt": {
+        "ru": "В BioShock торговый автомат Circus of Values с изображением клоуна встроен в стену коридора.",
+        "en": "A clown-branded Circus of Values vending machine stands against a corridor wall in BioShock."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 35,
+          "label": {
+            "ru": "Узнаваемый торговый автомат",
+            "en": "A recognizable vending machine"
+          }
+        },
+        {
+          "x": 53,
+          "y": 57,
+          "label": {
+            "ru": "Панель товаров внутри устройства",
+            "en": "The machine’s product panel"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте цену, остаток валюты и результат покупки рядом.",
+        "en": "Show price, remaining currency and purchase result together."
+      },
+      {
+        "ru": "Делайте автомат заметным с обычного маршрута движения.",
+        "en": "Make the machine visible from normal movement routes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "BioShock",
+        "url": "https://gamemechanics.org/patterns/vending-machines-shops"
+      }
+    ]
+  },
+  "game-mechanics--gm-wall-penetrating-weapons": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пробитие укрытий",
+      "en": "Wall-penetrating weapons"
+    },
+    "description": {
+      "ru": "Выстрел проходит через допускающую пробитие преграду. Игрок может атаковать цель за укрытием, учитывая материал и положение врага.",
+      "en": "A shot passes through a penetrable barrier. The player can attack a target behind cover while considering material and enemy position."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-wall-penetrating-weapons.webp",
+      "width": 500,
+      "height": 364,
+      "game": "Red Faction",
+      "sourceUrl": "https://gamemechanics.org/patterns/wall-penetrating-weapons",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/red_faction_raildriver.webm",
+      "sourceFrameSeconds": 0.64,
+      "credit": "Volition / THQ; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Rail Driver находит цель за стеной",
+        "en": "Rail Driver locates a target behind a wall"
+      },
+      "alt": {
+        "ru": "В Red Faction зелёный прицел Rail Driver показывает жёлтый силуэт врага сквозь стену.",
+        "en": "Red Faction’s green Rail Driver scope shows a yellow enemy silhouette through a wall."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 45,
+          "label": {
+            "ru": "Цель видна через преграду",
+            "en": "Target visible through the barrier"
+          }
+        },
+        {
+          "x": 71,
+          "y": 48,
+          "label": {
+            "ru": "Стена между оружием и целью",
+            "en": "Wall between weapon and target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте правила пробития с материалами и толщиной преград.",
+        "en": "Keep penetration rules consistent with barrier material and thickness."
+      },
+      {
+        "ru": "Давайте сигнал попадания даже при закрытой линии обзора.",
+        "en": "Provide hit feedback even when the line of sight is blocked."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Red Faction",
+        "url": "https://gamemechanics.org/patterns/wall-penetrating-weapons"
+      }
+    ]
+  },
+  "game-mechanics--gm-manning-a-machine-gun": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Стационарный пулемёт",
+      "en": "Mounted machine gun"
+    },
+    "description": {
+      "ru": "Герой занимает огневую точку и управляет установленным оружием. Высокая огневая мощь ограничена позицией и доступным сектором обстрела.",
+      "en": "The hero takes control of a fixed weapon emplacement. Its firepower is limited by position and the available firing arc."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-manning-a-machine-gun.webp",
+      "width": 600,
+      "height": 476,
+      "game": "Return to Castle Wolfenstein",
+      "sourceUrl": "https://gamemechanics.org/patterns/manning-a-machine-gun",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_machine_gun.webm",
+      "sourceFrameSeconds": 1.87,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пулемёт на стене крепости",
+        "en": "A machine gun on a fortress wall"
+      },
+      "alt": {
+        "ru": "В Return to Castle Wolfenstein игрок стреляет из установленного пулемёта вдоль каменной стены.",
+        "en": "The player fires a mounted machine gun along a stone wall in Return to Castle Wolfenstein."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 71,
+          "label": {
+            "ru": "Установленный пулемёт в руках игрока",
+            "en": "Mounted gun under player control"
+          }
+        },
+        {
+          "x": 57,
+          "y": 43,
+          "label": {
+            "ru": "Ограниченный маршрут перед огневой точкой",
+            "en": "A constrained route ahead of the emplacement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте границы поворота до появления угроз за спиной.",
+        "en": "Communicate turning limits before threats appear behind the player."
+      },
+      {
+        "ru": "Оставляйте понятный и быстрый выход из огневой позиции.",
+        "en": "Provide a clear, quick way to leave the emplacement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein",
+        "url": "https://gamemechanics.org/patterns/manning-a-machine-gun"
+      }
+    ]
+  },
+  "game-mechanics--gm-blood-decals": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Следы крови на поверхностях",
+      "en": "Blood decals"
+    },
+    "description": {
+      "ru": "Попадание оставляет отметку крови на стене или полу. След сохраняет результат события после исчезновения мгновенных эффектов.",
+      "en": "A hit leaves a blood mark on a wall or floor. The mark preserves evidence of the event after immediate effects disappear."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-blood-decals.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Far Cry 5",
+      "sourceUrl": "https://gamemechanics.org/patterns/blood-decals",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_5_blood_decal.webm",
+      "sourceFrameSeconds": 2.68,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "След остаётся на стене за целью",
+        "en": "A mark remains on the wall behind the target"
+      },
+      "alt": {
+        "ru": "В Far Cry 5 после падения противника на светлой стене магазина остаётся кровавое пятно.",
+        "en": "A blood mark remains on a shop’s pale wall after an enemy falls in Far Cry 5."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 39,
+          "label": {
+            "ru": "Сохранившееся пятно на стене",
+            "en": "Persistent mark on the wall"
+          }
+        },
+        {
+          "x": 57,
+          "y": 75,
+          "label": {
+            "ru": "Положение упавшего противника",
+            "en": "Position of the fallen enemy"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте число и время жизни следов ради читаемости сцены.",
+        "en": "Limit decal count and lifetime to preserve scene readability."
+      },
+      {
+        "ru": "Проверяйте прикрепление к подвижным и разрушаемым поверхностям.",
+        "en": "Check attachment to moving and destructible surfaces."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 5",
+        "url": "https://gamemechanics.org/patterns/blood-decals"
+      }
+    ]
+  },
+  "game-mechanics--gm-blood-splatters": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Брызги при попадании",
+      "en": "Blood splatters"
+    },
+    "description": {
+      "ru": "Короткий выброс частиц показывает место и момент попадания. Эффект быстро исчезает, сохраняя читаемость дальнейшего боя.",
+      "en": "A short burst of particles shows the location and timing of a hit. It fades quickly so the rest of the fight remains readable."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-blood-splatters.webp",
+      "width": 498,
+      "height": 264,
+      "game": "Max Payne 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/blood-splatters",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/max_payne_3_blood.webm",
+      "sourceFrameSeconds": 11.58,
+      "credit": "Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Короткий выброс частиц от выстрела",
+        "en": "A brief particle burst from a shot"
+      },
+      "alt": {
+        "ru": "В Max Payne 3 возле поражённого противника видны красные частицы попадания.",
+        "en": "Red hit particles appear around a struck enemy in Max Payne 3."
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 54,
+          "label": {
+            "ru": "Частицы у места попадания",
+            "en": "Particles at the hit location"
+          }
+        },
+        {
+          "x": 43,
+          "y": 65,
+          "label": {
+            "ru": "Поражённая цель",
+            "en": "The struck target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Масштабируйте эффект по силе удара, сохраняя силуэт цели.",
+        "en": "Scale the effect by impact strength while preserving the target silhouette."
+      },
+      {
+        "ru": "Предусмотрите настройку интенсивности кровавых эффектов.",
+        "en": "Provide an option to adjust blood-effect intensity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Max Payne 3",
+        "url": "https://gamemechanics.org/patterns/blood-splatters"
+      }
+    ]
+  },
+  "game-mechanics--gm-device-puzzle": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Головоломка с устройством",
+      "en": "Device puzzle"
+    },
+    "description": {
+      "ru": "Игрок меняет соединения, положения или настройки устройства. Задача решена, когда система приходит в нужное состояние.",
+      "en": "The player changes a device’s connections, positions or settings. The puzzle is solved when the system reaches the required state."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-device-puzzle.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Dead Space",
+      "sourceUrl": "https://gamemechanics.org/patterns/device-puzzle",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_space_comm_puzzle.jpg",
+      "credit": "EA Redwood Shores / Electronic Arts; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Схема связи на панели управления",
+        "en": "A communications layout on a control panel"
+      },
+      "alt": {
+        "ru": "В Dead Space Айзек смотрит на панель Communication Control с узлами и соединениями схемы.",
+        "en": "Isaac faces a Communication Control panel containing nodes and connections in Dead Space."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 40,
+          "label": {
+            "ru": "Узлы и соединения устройства",
+            "en": "Device nodes and connections"
+          }
+        },
+        {
+          "x": 56,
+          "y": 21,
+          "label": {
+            "ru": "Часть схемы вне центрального соединения",
+            "en": "A section outside the central connection"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте изменение состояния после каждого действия.",
+        "en": "Show state changes after each action."
+      },
+      {
+        "ru": "Давайте вывести правило из устройства, а не угадывать комбинации.",
+        "en": "Make the rule inferable from the device rather than requiring blind guesses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space",
+        "url": "https://gamemechanics.org/patterns/device-puzzle"
+      }
+    ]
+  },
+  "game-mechanics--gm-keycards": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Карта доступа",
+      "en": "Keycard"
+    },
+    "description": {
+      "ru": "Карта с нужными правами открывает соответствующий проход. Поиск предмета и возвращение к замку связывают участки уровня.",
+      "en": "A card with the required access opens a matching passage. Finding it and returning to the lock connects parts of the level."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-keycards.webp",
+      "width": 598,
+      "height": 332,
+      "game": "Duke Nukem 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/keycards",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/duke_nukem_3d_keycard.webm",
+      "sourceFrameSeconds": 0.89,
+      "credit": "3D Realms; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Красная карта для панели доступа",
+        "en": "A red card for an access panel"
+      },
+      "alt": {
+        "ru": "В Duke Nukem 3D рука героя использует красную панель; над ней появляется сообщение Unlocked.",
+        "en": "The hero’s hand uses a red access panel in Duke Nukem 3D, with Unlocked displayed above it."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 47,
+          "label": {
+            "ru": "Панель доступа, принимающая карту",
+            "en": "Access panel that accepts the card"
+          }
+        },
+        {
+          "x": 45,
+          "y": 21,
+          "label": {
+            "ru": "Подтверждение снятия блокировки",
+            "en": "Confirmation that the lock has been released"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Повторяйте цвет или символ карты на соответствующей двери.",
+        "en": "Repeat the card’s color or symbol on the matching door."
+      },
+      {
+        "ru": "Помогайте вспомнить место ранее встреченного замка.",
+        "en": "Help players recall where they encountered the matching lock."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D",
+        "url": "https://gamemechanics.org/patterns/keycards"
+      }
+    ]
+  },
+  "game-mechanics--gm-keypad-codes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Код на клавиатуре",
+      "en": "Keypad code"
+    },
+    "description": {
+      "ru": "Игрок вводит найденную или известную комбинацию цифр. Проверка кода превращает знание в доступ к двери, сейфу или устройству.",
+      "en": "The player enters a discovered or known number sequence. Code verification turns knowledge into access to a door, safe or device."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-keypad-codes.webp",
+      "width": 600,
+      "height": 328,
+      "game": "Tom Clancy’s Splinter Cell",
+      "sourceUrl": "https://gamemechanics.org/patterns/keypad-codes",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_code_door.webm",
+      "sourceFrameSeconds": 3.54,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ввод цифр на панели двери",
+        "en": "Entering digits on a door panel"
+      },
+      "alt": {
+        "ru": "В Splinter Cell крупным планом открыта цифровая панель возле двери; набранные цифры видны в её дисплее.",
+        "en": "Splinter Cell shows a close-up keypad beside a door, with entered digits visible on its display."
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 38,
+          "label": {
+            "ru": "Дисплей набранного кода",
+            "en": "Display of entered digits"
+          }
+        },
+        {
+          "x": 37,
+          "y": 64,
+          "label": {
+            "ru": "Кнопки цифрового ввода",
+            "en": "Numeric entry buttons"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Храните найденные коды в доступном журнале.",
+        "en": "Keep discovered codes in an accessible journal."
+      },
+      {
+        "ru": "Различайте неполный ввод, неверный код и успешный доступ.",
+        "en": "Distinguish incomplete entry, an incorrect code and successful access."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Splinter Cell",
+        "url": "https://gamemechanics.org/patterns/keypad-codes"
+      }
+    ]
+  },
+  "game-mechanics--gm-combination-lock": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кодовый замок",
+      "en": "Combination lock"
+    },
+    "description": {
+      "ru": "Правильная последовательность положений или символов снимает блокировку. Вращение диска связывает найденную комбинацию с действиями игрока.",
+      "en": "The correct sequence of positions or symbols releases the lock. Turning a dial connects a discovered combination to player actions."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-combination-lock.webp",
+      "width": 564,
+      "height": 322,
+      "game": "Resident Evil Requiem",
+      "sourceUrl": "https://gamemechanics.org/patterns/combination-lock",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/resident_evil_requiem_safe.webm",
+      "sourceFrameSeconds": 7.55,
+      "credit": "Capcom; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Диск кодового замка на сейфе",
+        "en": "A combination dial on a safe"
+      },
+      "alt": {
+        "ru": "В Resident Evil Requiem крупным планом показан сейф с поворотным диском кодового замка.",
+        "en": "Resident Evil Requiem shows a close-up safe with a rotating combination dial."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 48,
+          "label": {
+            "ru": "Поворотный диск с делениями",
+            "en": "Rotating dial with markings"
+          }
+        },
+        {
+          "x": 32,
+          "y": 48,
+          "label": {
+            "ru": "Запорный механизм двери сейфа",
+            "en": "Safe-door locking mechanism"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте направление вращения и момент фиксации значения.",
+        "en": "Communicate rotation direction and when a value is registered."
+      },
+      {
+        "ru": "Упрощайте повторное открытие уже решённого замка.",
+        "en": "Simplify reopening a lock that has already been solved."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resident Evil Requiem",
+        "url": "https://gamemechanics.org/patterns/combination-lock"
+      }
+    ]
+  },
+  "game-mechanics--gm-trying-to-open-locked-doors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Проверка запертой двери",
+      "en": "Try a locked door"
+    },
+    "description": {
+      "ru": "Попытка повернуть ручку или толкнуть дверь подтверждает блокировку. Герой реагирует на отказ так, чтобы игрок понял состояние прохода.",
+      "en": "Turning a handle or pushing a door confirms that it is locked. The hero’s reaction makes the blocked passage understandable."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-trying-to-open-locked-doors.webp",
+      "width": 798,
+      "height": 446,
+      "game": "Outlast",
+      "sourceUrl": "https://gamemechanics.org/patterns/trying-to-open-locked-doors",
+      "originalUrl": "https://cdn.gamemechanics.org/outlast_closed-doors.webm",
+      "sourceFrameSeconds": 1.1,
+      "credit": "Red Barrels; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Рука пробует открыть дверь",
+        "en": "A hand tries to open the door"
+      },
+      "alt": {
+        "ru": "В Outlast рука героя тянется к ручке деревянной двери, которая остаётся закрытой.",
+        "en": "The hero’s hand reaches toward a wooden door handle in Outlast, and the door remains shut."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 68,
+          "label": {
+            "ru": "Рука у закрытой двери",
+            "en": "Hand against the closed door"
+          }
+        },
+        {
+          "x": 37,
+          "y": 62,
+          "label": {
+            "ru": "Ручка и область взаимодействия",
+            "en": "Handle and interaction area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Подтверждайте отказ жестом и звуком без долгой задержки.",
+        "en": "Confirm refusal with a brief gesture and sound."
+      },
+      {
+        "ru": "Отличайте запертую дверь от декоративной неподвижной панели.",
+        "en": "Distinguish a locked door from a decorative fixed panel."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Outlast",
+        "url": "https://gamemechanics.org/patterns/trying-to-open-locked-doors"
+      }
+    ]
+  },
+  "game-mechanics--gm-automatic-doors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Автоматическая дверь",
+      "en": "Automatic door"
+    },
+    "description": {
+      "ru": "Дверь открывается при приближении или другом заданном условии. Игрок проходит через неё без отдельного действия с ручкой.",
+      "en": "A door opens on approach or another defined condition. The player passes through without a separate handle interaction."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-automatic-doors.webp",
+      "width": 600,
+      "height": 340,
+      "game": "Doom 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/automatic-doors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/doom_3_open_doors.webm",
+      "sourceFrameSeconds": 0.88,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Дверные створки освобождают проход",
+        "en": "Door panels clear the passage"
+      },
+      "alt": {
+        "ru": "В Doom 3 автоматические створки разошлись и открыли игроку путь в технический коридор.",
+        "en": "Automatic door panels have moved apart to reveal a maintenance corridor in Doom 3."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 48,
+          "label": {
+            "ru": "Открывшийся проход",
+            "en": "The opened passage"
+          }
+        },
+        {
+          "x": 77,
+          "y": 34,
+          "label": {
+            "ru": "Ушедшая в сторону створка",
+            "en": "A panel moved out of the way"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Срабатывайте достаточно рано для обычной скорости движения.",
+        "en": "Trigger early enough for normal movement speed."
+      },
+      {
+        "ru": "Не зажимайте персонажей и переносимые предметы закрывающимися створками.",
+        "en": "Avoid trapping characters or carried objects between closing panels."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3",
+        "url": "https://gamemechanics.org/patterns/automatic-doors"
+      }
+    ]
+  },
+  "game-mechanics--gm-traveling-merchant": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Странствующий торговец",
+      "en": "Traveling merchant"
+    },
+    "description": {
+      "ru": "Продавец перемещается по миру, поэтому доступ к обмену зависит от встречи. Игрок решает, воспользоваться ли снабжением прямо сейчас.",
+      "en": "A merchant moves through the world, making trade depend on an encounter. The player decides whether to resupply now."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-traveling-merchant.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Far Cry 4",
+      "sourceUrl": "https://gamemechanics.org/patterns/traveling-merchant",
+      "originalUrl": "https://cdn.gamemechanics.org/far-cry-4-merchant.jpg",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Шерпа предлагает торговлю на горной тропе",
+        "en": "A Sherpa offers trade on a mountain path"
+      },
+      "alt": {
+        "ru": "В Far Cry 4 перед игроком стоит шерпа с большим рюкзаком; рядом видна подсказка торговли.",
+        "en": "A Sherpa carrying a large pack stands before the player in Far Cry 4, with a trade prompt nearby."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 39,
+          "label": {
+            "ru": "Торговец с переносимым запасом",
+            "en": "Merchant with portable stock"
+          }
+        },
+        {
+          "x": 44,
+          "y": 60,
+          "label": {
+            "ru": "Подсказка начала торговли",
+            "en": "Prompt to start trading"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте маршрут или сигнал присутствия торговца.",
+        "en": "Provide a route or signal that the merchant is nearby."
+      },
+      {
+        "ru": "Учитывайте, как игрок пополнит важные запасы после пропущенной встречи.",
+        "en": "Account for essential resupply after a missed encounter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 4",
+        "url": "https://gamemechanics.org/patterns/traveling-merchant"
+      }
+    ]
+  },
+  "game-mechanics--gm-surveillance-cameras": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Камера охраны",
+      "en": "Security camera"
+    },
+    "description": {
+      "ru": "Камера наблюдает за зоной и участвует в обнаружении игрока. Её направление, состояние и реакция задают условия скрытного прохода.",
+      "en": "A camera watches an area and helps detect the player. Its direction, state and response shape the conditions for sneaking past."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-surveillance-cameras.webp",
+      "width": 900,
+      "height": 499,
+      "game": "Deus Ex",
+      "sourceUrl": "https://gamemechanics.org/patterns/surveillance-cameras",
+      "originalUrl": "https://cdn.gamemechanics.org/deus_ex_surveillance_camera.jpg",
+      "credit": "Ion Storm; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Камера над дверью контролирует подход",
+        "en": "A camera above a door watches the approach"
+      },
+      "alt": {
+        "ru": "В Deus Ex над проходом установлена камера с зелёным индикатором.",
+        "en": "A camera with a green indicator is mounted above a passage in Deus Ex."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 28,
+          "label": {
+            "ru": "Объектив камеры над проходом",
+            "en": "Camera lens above the passage"
+          }
+        },
+        {
+          "x": 50,
+          "y": 73,
+          "label": {
+            "ru": "Контролируемый маршрут у двери",
+            "en": "Watched route beside the door"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте сектор обзора или давайте прочитать его по движению камеры.",
+        "en": "Show the view sector or make it inferable from camera movement."
+      },
+      {
+        "ru": "Различайте наблюдение, подозрение и сработавшую тревогу.",
+        "en": "Distinguish observation, suspicion and an active alarm."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deus Ex",
+        "url": "https://gamemechanics.org/patterns/surveillance-cameras"
+      }
+    ]
+  },
+  "game-mechanics--gm-searchlights": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поисковый прожектор",
+      "en": "Searchlight"
+    },
+    "description": {
+      "ru": "Движущийся луч осматривает пространство и может обнаружить героя. Игрок выбирает маршрут и момент перемещения между освещёнными зонами.",
+      "en": "A moving beam scans the area and may reveal the hero. The player chooses a route and movement timing around illuminated zones."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-searchlights.webp",
+      "width": 500,
+      "height": 274,
+      "game": "The Last of Us",
+      "sourceUrl": "https://gamemechanics.org/patterns/searchlights",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tlou_searchlight.webm",
+      "sourceFrameSeconds": 3.16,
+      "credit": "Naughty Dog / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Луч ищет героев за укрытием",
+        "en": "A beam searches beyond the heroes’ cover"
+      },
+      "alt": {
+        "ru": "В The Last of Us герои прячутся за низкой стеной, пока луч прожектора освещает местность впереди.",
+        "en": "The heroes crouch behind a low wall while a searchlight illuminates the area ahead in The Last of Us."
+      },
+      "markers": [
+        {
+          "x": 61,
+          "y": 24,
+          "label": {
+            "ru": "Видимый поисковый луч",
+            "en": "Visible search beam"
+          }
+        },
+        {
+          "x": 31,
+          "y": 71,
+          "label": {
+            "ru": "Низкое укрытие на маршруте",
+            "en": "Low cover along the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимую границу света с фактической зоной обнаружения.",
+        "en": "Match the visible beam boundary to the actual detection area."
+      },
+      {
+        "ru": "Давайте предсказуемое окно для перехода между укрытиями.",
+        "en": "Provide a predictable window for moving between cover."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Last of Us",
+        "url": "https://gamemechanics.org/patterns/searchlights"
+      }
+    ]
+  },
+  "game-mechanics--gm-hiding-bodies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сокрытие тел",
+      "en": "Hide bodies"
+    },
+    "description": {
+      "ru": "Герой убирает тело из зоны наблюдения или прячет в контейнер. Это снижает риск, что противники найдут следы произошедшего.",
+      "en": "The hero moves a body out of sight or hides it in a container. This reduces the chance of enemies discovering evidence."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-hiding-bodies.webp",
+      "width": 600,
+      "height": 334,
+      "game": "Hitman: Absolution",
+      "sourceUrl": "https://gamemechanics.org/patterns/hiding-bodies",
+      "originalUrl": "https://cdn.gamemechanics.org/hitman_absolution_hide_body.webm",
+      "sourceFrameSeconds": 5.27,
+      "credit": "IO Interactive; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Тело помещают в контейнер",
+        "en": "A body is placed in a container"
+      },
+      "alt": {
+        "ru": "В Hitman: Absolution Агент 47 поднимает тело над краем открытого контейнера.",
+        "en": "Agent 47 lifts a body over the rim of an open container in Hitman: Absolution."
+      },
+      "markers": [
+        {
+          "x": 73,
+          "y": 35,
+          "label": {
+            "ru": "Тело, помещаемое внутрь",
+            "en": "Body being placed inside"
+          }
+        },
+        {
+          "x": 77,
+          "y": 67,
+          "label": {
+            "ru": "Контейнер для сокрытия",
+            "en": "Hiding container"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте доступные места сокрытия и их вместимость.",
+        "en": "Communicate hiding locations and their capacity."
+      },
+      {
+        "ru": "Учитывайте видимость героя во время самой анимации сокрытия.",
+        "en": "Account for the hero’s visibility during the hiding animation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hitman: Absolution",
+        "url": "https://gamemechanics.org/patterns/hiding-bodies"
+      }
+    ]
+  },
+  "game-mechanics--gm-dragging-bodies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перетаскивание тел",
+      "en": "Drag bodies"
+    },
+    "description": {
+      "ru": "Герой волочит тело по поверхности в другое место. Ограниченная скорость и заметность заставляют заранее выбирать короткий безопасный маршрут.",
+      "en": "The hero drags a body along the ground. Limited speed and visibility make choosing a short, safe route important."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-dragging-bodies.webp",
+      "width": 564,
+      "height": 374,
+      "game": "HITMAN",
+      "sourceUrl": "https://gamemechanics.org/patterns/dragging-bodies",
+      "originalUrl": "https://cdn.gamemechanics.org/hitman_2_drag_body.webm",
+      "sourceFrameSeconds": 2.9,
+      "credit": "IO Interactive; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Агент 47 тянет тело по полу",
+        "en": "Agent 47 drags a body along the floor"
+      },
+      "alt": {
+        "ru": "В HITMAN Агент 47 наклонился и удерживает лежащее тело, перетаскивая его по подвалу.",
+        "en": "Agent 47 bends down to hold a prone body while dragging it through a cellar in HITMAN."
+      },
+      "markers": [
+        {
+          "x": 15,
+          "y": 85,
+          "label": {
+            "ru": "Захват тела для перетаскивания",
+            "en": "Grip used to drag the body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте прохождение тела через двери и узкие повороты.",
+        "en": "Check dragging through doorways and tight turns."
+      },
+      {
+        "ru": "Давайте быстро отпустить тело при появлении угрозы.",
+        "en": "Allow quickly releasing the body when a threat appears."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HITMAN",
+        "url": "https://gamemechanics.org/patterns/dragging-bodies"
+      }
+    ]
+  },
+  "game-mechanics--gm-carrying-bodies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Переноска тел",
+      "en": "Carry bodies"
+    },
+    "description": {
+      "ru": "Герой поднимает тело и несёт его к выбранному месту. Занятые руки и изменённая скорость создают отдельное состояние перемещения.",
+      "en": "The hero lifts a body and carries it elsewhere. Occupied hands and changed speed create a distinct movement state."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-carrying-bodies.webp",
+      "width": 600,
+      "height": 356,
+      "game": "Tom Clancy’s Splinter Cell",
+      "sourceUrl": "https://gamemechanics.org/patterns/carrying-bodies",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_carry_body.webm",
+      "sourceFrameSeconds": 3.22,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сэм несёт охранника на плече",
+        "en": "Sam carries a guard over his shoulder"
+      },
+      "alt": {
+        "ru": "В Splinter Cell Сэм несёт охранника через дверной проход, тело перекинуто через плечо.",
+        "en": "Sam carries a guard through a doorway in Splinter Cell, with the body slung over his shoulder."
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 36,
+          "label": {
+            "ru": "Тело на плече героя",
+            "en": "Body on the hero’s shoulder"
+          }
+        },
+        {
+          "x": 49,
+          "y": 78,
+          "label": {
+            "ru": "Герой перемещается с дополнительной ношей",
+            "en": "Hero moving with the extra load"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте доступные действия с занятыми руками персонажа.",
+        "en": "Match available actions to the character’s occupied hands."
+      },
+      {
+        "ru": "Различайте переноску, сбрасывание и укладку тела.",
+        "en": "Distinguish carrying, dropping and setting a body down."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Splinter Cell",
+        "url": "https://gamemechanics.org/patterns/carrying-bodies"
+      }
+    ]
+  },
+  "game-mechanics--gm-shooting-out-lights": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Уничтожение света выстрелом",
+      "en": "Shoot out lights"
+    },
+    "description": {
+      "ru": "Выстрел гасит источник света и меняет видимость участка. Игрок создаёт тёмный маршрут, рискуя привлечь внимание шумом.",
+      "en": "A shot disables a light source and changes visibility. The player creates a darker route while risking attention from the noise."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-shooting-out-lights.webp",
+      "width": 600,
+      "height": 336,
+      "game": "Tom Clancy’s Splinter Cell",
+      "sourceUrl": "https://gamemechanics.org/patterns/shooting-out-lights",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_shooting_out_lights.webm",
+      "sourceFrameSeconds": 4.01,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Прицеливание в потолочный светильник",
+        "en": "Aiming at a ceiling light"
+      },
+      "alt": {
+        "ru": "В Splinter Cell Сэм направляет пистолет на потолочный светильник; справа виден индикатор освещённости.",
+        "en": "Sam aims a pistol at a ceiling light in Splinter Cell, with the visibility meter on the right."
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 23,
+          "label": {
+            "ru": "Светильник как разрушаемая цель",
+            "en": "Light fixture as a breakable target"
+          }
+        },
+        {
+          "x": 93,
+          "y": 72,
+          "label": {
+            "ru": "Индикатор освещённости героя",
+            "en": "The hero’s visibility meter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте погасший свет с реальным изменением обнаружения.",
+        "en": "Connect extinguished lights to actual detection changes."
+      },
+      {
+        "ru": "Учитывайте реакцию охраны на выстрел и поломку освещения.",
+        "en": "Account for guards reacting to the shot and broken lighting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Splinter Cell",
+        "url": "https://gamemechanics.org/patterns/shooting-out-lights"
+      }
+    ]
+  },
+  "game-mechanics--gm-trackable-footprints": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Выслеживание по следам",
+      "en": "Track footprints"
+    },
+    "description": {
+      "ru": "Сохранившиеся отпечатки позволяют восстановить маршрут персонажа. Следы сообщают направление движения даже после ухода цели из поля зрения.",
+      "en": "Persistent footprints reveal a character’s route. They communicate movement direction even after the target leaves sight."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-trackable-footprints.webp",
+      "width": 400,
+      "height": 298,
+      "game": "Metal Gear Solid",
+      "sourceUrl": "https://gamemechanics.org/patterns/trackable-footprints",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/metal_gear_solid_footprints.webm",
+      "sourceFrameSeconds": 4.3,
+      "credit": "Konami; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Следы на снегу возле ящиков",
+        "en": "Footprints in snow beside crates"
+      },
+      "alt": {
+        "ru": "В Metal Gear Solid на снегу около ящиков видны тёмные отпечатки; рядом движется охранник.",
+        "en": "Dark footprints mark the snow beside crates in Metal Gear Solid, with a guard nearby."
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 64,
+          "label": {
+            "ru": "Цепочка отпечатков на снегу",
+            "en": "A trail of footprints in the snow"
+          }
+        },
+        {
+          "x": 56,
+          "y": 50,
+          "label": {
+            "ru": "Персонаж рядом с обнаружимым следом",
+            "en": "Character beside the readable trail"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте направление и возраст следа понятными в выбранном масштабе.",
+        "en": "Make trail direction and age readable at the chosen scale."
+      },
+      {
+        "ru": "Определите, кто видит следы и как долго они сохраняются.",
+        "en": "Define who can read the footprints and how long they persist."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metal Gear Solid",
+        "url": "https://gamemechanics.org/patterns/trackable-footprints"
+      }
+    ]
+  },
+  "game-mechanics--gm-invisibility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Невидимость",
+      "en": "Invisibility"
+    },
+    "description": {
+      "ru": "Способность снижает визуальную заметность героя. Игрок использует маскировку для прохода мимо угроз, учитывая её ограничения.",
+      "en": "An ability reduces the hero’s visual visibility. The player uses camouflage to pass threats while accounting for its limits."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-invisibility.webp",
+      "width": 600,
+      "height": 332,
+      "game": "Tom Clancy’s Ghost Recon: Future Soldier",
+      "sourceUrl": "https://gamemechanics.org/patterns/invisibility",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/ghost_recon_future_soldier_invisibility.webm",
+      "sourceFrameSeconds": 2.69,
+      "credit": "Ubisoft Paris / Ubisoft Red Storm; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Оптическая маскировка на фоне укрытия",
+        "en": "Optical camouflage beside cover"
+      },
+      "alt": {
+        "ru": "В Ghost Recon: Future Soldier силуэт бойца почти сливается с окружением у бетонного укрытия.",
+        "en": "A soldier’s silhouette nearly blends into the surroundings beside concrete cover in Ghost Recon: Future Soldier."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 76,
+          "label": {
+            "ru": "Замаскированный силуэт героя",
+            "en": "The hero’s camouflaged silhouette"
+          }
+        },
+        {
+          "x": 19,
+          "y": 72,
+          "label": {
+            "ru": "Укрытие сохраняет контекст позиции",
+            "en": "Cover retains positional context"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте слабую видимость, полную невидимость и шум.",
+        "en": "Distinguish reduced visibility, full invisibility and noise."
+      },
+      {
+        "ru": "Показывайте действия, которые ослабляют или снимают маскировку.",
+        "en": "Communicate actions that weaken or cancel camouflage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Ghost Recon: Future Soldier",
+        "url": "https://gamemechanics.org/patterns/invisibility"
+      }
+    ]
+  },
+  "game-mechanics--gm-electrical-hazards": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Электрические опасности",
+      "en": "Electrical hazards"
+    },
+    "description": {
+      "ru": "Контакт с проводником или разрядом создаёт угрозу урона. Свет, звук и искры заранее обозначают опасный участок.",
+      "en": "Contact with a conductor or discharge creates a damage threat. Light, sound and sparks warn of the dangerous area in advance."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-electrical-hazards.webp",
+      "width": 498,
+      "height": 278,
+      "game": "Half-Life 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/electrical-hazards",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/half_life2_electric_fence.webm",
+      "sourceFrameSeconds": 1.49,
+      "credit": "Valve; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разряд при контакте с оградой",
+        "en": "An electrical discharge on fence contact"
+      },
+      "alt": {
+        "ru": "В Half-Life 2 на металлической ограде вспыхивают электрические разряды рядом с прижатым к ней зомби.",
+        "en": "Electrical arcs flare on a metal fence beside a zombie pressed against it in Half-Life 2."
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 31,
+          "label": {
+            "ru": "Разряд на проводящей ограде",
+            "en": "Discharge on the conducting fence"
+          }
+        },
+        {
+          "x": 53,
+          "y": 46,
+          "label": {
+            "ru": "Контакт персонажа с опасным объектом",
+            "en": "Character contact with the hazardous object"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте зону урона с видимым проводником или разрядом.",
+        "en": "Match the damage area to the visible conductor or discharge."
+      },
+      {
+        "ru": "Показывайте отключение опасности отдельным изменением состояния.",
+        "en": "Give hazard deactivation a distinct state change."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Half-Life 2",
+        "url": "https://gamemechanics.org/patterns/electrical-hazards"
+      }
+    ]
+  },
+  "game-mechanics--gm-cheat-codes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Чит-коды и команды",
+      "en": "Cheat codes and commands"
+    },
+    "description": {
+      "ru": "Специальная команда меняет обычные правила: выдаёт предметы, переключает режим или изменяет мир. Доступ к таким командам задаёт сама игра.",
+      "en": "A special command changes normal rules: it grants items, switches modes or alters the world. The game determines access to these commands."
+    },
+    "image": {
+      "src": "images/mechanics/minecraft-cheat-commands.webp",
+      "width": 1440,
+      "height": 924,
+      "game": "Minecraft",
+      "sourceUrl": "https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable",
+      "originalUrl": "https://learn.microsoft.com/en-us/minecraft/creator/documents/media/commands/chatcommands.png?view=minecraft-bedrock-stable",
+      "credit": "Mojang Studios / Microsoft; screenshot via Microsoft Learn",
+      "rights": "Minecraft imagery © Mojang AB / Microsoft. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Minecraft: команды доступны через чат",
+        "en": "Minecraft: commands are entered through chat"
+      },
+      "alt": {
+        "ru": "Официальный скриншот Minecraft: поверх мира открыт чат со списком команд, внизу находится поле ввода со знаком /.",
+        "en": "An official Minecraft screenshot shows chat and a command list over the world, with a slash in the input field below."
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 51,
+          "label": {
+            "ru": "Список команд объясняет их действие",
+            "en": "The command list explains their effects"
+          }
+        },
+        {
+          "x": 35,
+          "y": 94,
+          "label": {
+            "ru": "Поле ввода команды начинается со знака /",
+            "en": "Command entry begins with a slash"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте экспериментальный режим от сохранений с обычным прогрессом.",
+        "en": "Separate experimental modes from saves with ordinary progression."
+      },
+      {
+        "ru": "Подтверждайте применение команды и давайте открыть справку.",
+        "en": "Confirm command execution and provide accessible help."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Minecraft",
+        "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable"
+      }
+    ]
   }
 }
