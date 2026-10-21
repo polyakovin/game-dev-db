@@ -75,3 +75,17 @@ Study of a fully adaptive framework (2015)](https://recipp.ipp.pt/bitstreams/be8
 The figure identifies its screenshot source as NeoGAF; that provenance is retained
 in the card’s rights metadata. This is a copyrighted Pillars of Eternity screenshot,
 not original portal artwork or an image licensed under CC BY 4.0.
+
+`combat-*.webp` adds inspected Game Mechanics examples for combat, recovery and
+status interfaces: Return to Castle Wolfenstein, Wolfenstein 3D, F.E.A.R. and
+F.E.A.R. 2, Sleeping Dogs, Hitman 2: Silent Assassin, Far Cry 4 and Far Cry 6,
+BioShock, RoboCop: Rogue City, Resistance 3, Just Cause, Condemned, Duke Nukem 3D,
+Resident Evil, Deus Ex: Mankind Divided, Assassin’s Creed Unity, Metal Gear Solid
+Delta, Call of Duty: Warzone, Sniper Ghost Warrior Contracts and Driveclub.
+Video frames retain the source URL and timestamp; static source comparisons
+include Doom portraits and Dead Space door states. Visible recording watermarks
+are preserved. The Resident Evil 4 inventory screenshot depicts the 2023 remake;
+its source gallery’s older release-year caption is not repeated. The Far Cry 6
+health-bar image avoids an ambiguously labeled Assassin’s Creed comparison.
+New derivatives are added to the same 1440px / 250KiB WebP budget. Medical pickups
+and a fixed healing cabinet share one relevant screenshot with different markers.

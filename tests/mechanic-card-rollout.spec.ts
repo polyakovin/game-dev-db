@@ -168,16 +168,24 @@ for (const lang of ['ru', 'en'] as const) {
       route(lang, ready[0].record.id),
     );
     await page.getByRole('searchbox').fill('инвентарь');
-    await expect(page.locator('[data-card-library-item]:visible')).toHaveCount(
-      1,
-    );
     await expect(
-      page.locator('[data-card-library-item]:visible'),
-    ).toHaveAttribute('href', route(lang, 'game-mechanics--gm-grid-inventory'));
+      links.filter({
+        has: page.getByRole('heading', {
+          name: getMechanicPreview('game-mechanics--gm-grid-inventory', lang)!
+            .title,
+          exact: true,
+        }),
+      }),
+    ).toBeVisible();
+    await expect(links.first()).toBeHidden();
     await page.locator('[data-language-switch]').click();
-    await expect(page.locator('[data-card-library-item]:visible')).toHaveCount(
-      1,
-    );
+    await expect(page.getByRole('searchbox')).toHaveValue('инвентарь');
+    const otherLang = lang === 'ru' ? 'en' : 'ru';
+    await expect(
+      page.locator(
+        `[data-card-library-item][href="${route(otherLang, 'game-mechanics--gm-grid-inventory')}"]`,
+      ),
+    ).toBeVisible();
     await page.getByRole('searchbox').fill('no-such-mechanic-zz');
     await expect(page.locator('[data-card-library-empty]')).toBeVisible();
   });

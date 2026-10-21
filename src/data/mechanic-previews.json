@@ -7779,5 +7779,1918 @@
         "url": "https://store.steampowered.com/app/291650/Pillars_of_Eternity/"
       }
     ]
+  },
+  "game-mechanics--gm-player-damage-feedback": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сигнал полученного урона",
+      "en": "Damage feedback"
+    },
+    "description": {
+      "ru": "Попадание меняет изображение, звук или интерфейс. Игрок сразу понимает, что получил урон, и может искать укрытие.",
+      "en": "A hit changes the image, sound or interface. The player immediately recognizes damage and can seek cover."
+    },
+    "image": {
+      "src": "images/mechanics/combat-player-damage-feedback.webp",
+      "width": 600,
+      "height": 478,
+      "game": "Return to Castle Wolfenstein (2001)",
+      "sourceUrl": "https://gamemechanics.org/patterns/player-damage-feedback",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_damage.webm",
+      "sourceFrameSeconds": 0.23,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Красная вспышка при попадании",
+        "en": "A red flash signals a hit"
+      },
+      "alt": {
+        "ru": "В Return to Castle Wolfenstein выстрел врага окрашивает вид от первого лица в красный цвет.",
+        "en": "An enemy shot tints the first-person view red in Return to Castle Wolfenstein."
+      },
+      "markers": [
+        {
+          "x": 24,
+          "y": 20,
+          "label": {
+            "ru": "Красный оттенок: сигнал попадания",
+            "en": "Red tint: a hit signal"
+          }
+        },
+        {
+          "x": 55,
+          "y": 39,
+          "label": {
+            "ru": "Враг остаётся видимым сквозь эффект",
+            "en": "The enemy remains visible through the effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте сигнал коротким и различимым во время боя.",
+        "en": "Keep the signal brief and readable during combat."
+      },
+      {
+        "ru": "Сохраняйте обзор; предусмотрите снижение интенсивности вспышек.",
+        "en": "Preserve visibility and provide a reduced-flash setting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein (2001)",
+        "url": "https://gamemechanics.org/patterns/player-damage-feedback"
+      }
+    ]
+  },
+  "game-mechanics--gm-enemy-hit-reaction": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Реакция врага на попадание",
+      "en": "Enemy hit reaction"
+    },
+    "description": {
+      "ru": "Враг вздрагивает, меняет позу или прерывает действие при попадании. Видимая реакция подтверждает результат атаки.",
+      "en": "An enemy flinches, changes pose or interrupts an action when hit. The visible reaction confirms the attack connected."
+    },
+    "image": {
+      "src": "images/mechanics/combat-enemy-hit-reaction.webp",
+      "width": 798,
+      "height": 480,
+      "game": "Wolfenstein 3D (1992)",
+      "sourceUrl": "https://gamemechanics.org/patterns/enemy-hit-reaction",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/wolfenstein_3d_hit.webm",
+      "sourceFrameSeconds": 1.16,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Солдат отшатывается от выстрела",
+        "en": "A soldier recoils from a shot"
+      },
+      "alt": {
+        "ru": "В Wolfenstein 3D раненый солдат отклоняется в сторону; возле головы видны красные пиксели попадания.",
+        "en": "A wounded soldier leans sideways in Wolfenstein 3D, with red hit pixels beside his head."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 29,
+          "label": {
+            "ru": "Изменившаяся поза раненого врага",
+            "en": "The wounded enemy’s changed pose"
+          }
+        },
+        {
+          "x": 66,
+          "y": 21,
+          "label": {
+            "ru": "Видимый след попадания",
+            "en": "Visible hit effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте лёгкий отклик и прерывание атаки.",
+        "en": "Distinguish a light reaction from an interrupted attack."
+      },
+      {
+        "ru": "Ограничивайте серии оглушений, если враг должен успевать отвечать.",
+        "en": "Limit repeated stun reactions when enemies must be able to retaliate."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Wolfenstein 3D (1992)",
+        "url": "https://gamemechanics.org/patterns/enemy-hit-reaction"
+      }
+    ]
+  },
+  "game-mechanics--gm-enemies-reloading-weapons": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перезарядка врага",
+      "en": "Enemy reload"
+    },
+    "description": {
+      "ru": "После расхода магазина враг прекращает стрелять и перезаряжает оружие. Эта пауза создаёт окно для движения или атаки.",
+      "en": "After emptying a magazine, an enemy stops firing to reload. This pause creates an opening to move or attack."
+    },
+    "image": {
+      "src": "images/mechanics/combat-enemies-reloading-weapons.webp",
+      "width": 596,
+      "height": 468,
+      "game": "Return to Castle Wolfenstein (2001)",
+      "sourceUrl": "https://gamemechanics.org/patterns/enemies-reloading-weapons",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_enemy_reload.webm",
+      "sourceFrameSeconds": 5.72,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Пауза между очередями",
+        "en": "A pause between bursts"
+      },
+      "alt": {
+        "ru": "Солдат Return to Castle Wolfenstein держит оружие перед собой во время паузы перезарядки.",
+        "en": "A Return to Castle Wolfenstein soldier handles his weapon during a reload pause."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 44,
+          "label": {
+            "ru": "Руки у оружия во время перезарядки",
+            "en": "Hands at the weapon during the reload"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте перезарядку узнаваемым жестом и звуком.",
+        "en": "Communicate reloads with a recognizable gesture and sound."
+      },
+      {
+        "ru": "Давайте игроку достаточно времени, чтобы воспользоваться паузой.",
+        "en": "Allow enough time for the player to exploit the opening."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein (2001)",
+        "url": "https://gamemechanics.org/patterns/enemies-reloading-weapons"
+      }
+    ]
+  },
+  "game-mechanics--gm-struggle-escape": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Освобождение из захвата",
+      "en": "Escape a grapple"
+    },
+    "description": {
+      "ru": "Когда враг схватил героя, специальное действие позволяет вырваться. Подсказка должна ясно сообщать нужный ввод и момент освобождения.",
+      "en": "When an enemy grabs the hero, a special action breaks the hold. The prompt should clearly show the required input and the escape moment."
+    },
+    "image": {
+      "src": "images/mechanics/combat-struggle-escape.webp",
+      "width": 800,
+      "height": 444,
+      "game": "F.E.A.R. 2: Project Origin (2009)",
+      "sourceUrl": "https://gamemechanics.org/patterns/struggle-escape",
+      "originalUrl": "https://cdn.gamemechanics.org/fear_2_struggle.webm",
+      "sourceFrameSeconds": 1.77,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Борьба с захватившим существом",
+        "en": "Struggling against a grabbing creature"
+      },
+      "alt": {
+        "ru": "В F.E.A.R. 2 существо удерживает героя вблизи; в центре видна подсказка действия.",
+        "en": "A creature holds the player at close range in F.E.A.R. 2, with an action prompt near the center."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Подсказка действия для освобождения",
+            "en": "Escape action prompt"
+          }
+        },
+        {
+          "x": 76,
+          "y": 62,
+          "label": {
+            "ru": "Контакт рук: герой удерживает нападающего",
+            "en": "Hands in contact: the hero holds the attacker back"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предлагайте удержание кнопки как альтернативу частым нажатиям.",
+        "en": "Offer holding a button as an alternative to rapid presses."
+      },
+      {
+        "ru": "Явно показывайте успех и возвращение обычного управления.",
+        "en": "Clearly signal success and the return of normal control."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R. 2: Project Origin (2009)",
+        "url": "https://gamemechanics.org/patterns/struggle-escape"
+      }
+    ]
+  },
+  "game-mechanics--gm-stabbing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Колотый удар",
+      "en": "Stab"
+    },
+    "description": {
+      "ru": "Направленный удар остриём поражает цель вблизи. Дистанция и момент контакта определяют, достанет ли оружие противника.",
+      "en": "A thrust with a weapon’s point strikes at close range. Distance and contact timing determine whether the attack reaches its target."
+    },
+    "image": {
+      "src": "images/mechanics/combat-stabbing.webp",
+      "width": 600,
+      "height": 340,
+      "game": "Return to Castle Wolfenstein (2001)",
+      "sourceUrl": "https://gamemechanics.org/patterns/stabbing",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_stabbing.webm",
+      "sourceFrameSeconds": 2.02,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Атака ножом с близкой дистанции",
+        "en": "A close-range knife attack"
+      },
+      "alt": {
+        "ru": "Игрок наносит ножевой удар стоящему впереди солдату в Return to Castle Wolfenstein.",
+        "en": "The player stabs a soldier directly ahead in Return to Castle Wolfenstein."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 54,
+          "label": {
+            "ru": "Цель в пределах ближней атаки",
+            "en": "Target within melee reach"
+          }
+        },
+        {
+          "x": 58,
+          "y": 79,
+          "label": {
+            "ru": "Выдвинутая вперёд рука с ножом",
+            "en": "The knife hand thrust forward"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимую длину оружия с дальностью попадания.",
+        "en": "Match hit reach to the weapon’s visible length."
+      },
+      {
+        "ru": "Подтверждайте контакт отдельным звуком и реакцией цели.",
+        "en": "Confirm contact with a distinct sound and target reaction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein (2001)",
+        "url": "https://gamemechanics.org/patterns/stabbing"
+      }
+    ]
+  },
+  "game-mechanics--gm-environmental-takedowns": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Добивание через окружение",
+      "en": "Environmental takedown"
+    },
+    "description": {
+      "ru": "Герой использует ближайший объект против захваченного врага. Окружение превращается в часть боевого приёма.",
+      "en": "The hero uses a nearby object against a grabbed enemy. The environment becomes part of the combat move."
+    },
+    "image": {
+      "src": "images/mechanics/combat-environmental-takedowns.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Sleeping Dogs (2012)",
+      "sourceUrl": "https://gamemechanics.org/patterns/environmental-takedowns",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/sleeping_dogs_electricute.webm",
+      "sourceFrameSeconds": 2.02,
+      "credit": "United Front Games / Square Enix; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Враг прижат к электрическому щиту",
+        "en": "An enemy is pushed into an electrical panel"
+      },
+      "alt": {
+        "ru": "В Sleeping Dogs Уэй стоит перед врагом, которого бьёт током у открытого электрического щита.",
+        "en": "Wei faces an enemy being electrocuted against an open electrical panel in Sleeping Dogs."
+      },
+      "markers": [
+        {
+          "x": 85,
+          "y": 19,
+          "label": {
+            "ru": "Электрический щит как опасный объект",
+            "en": "Electrical panel as an environmental hazard"
+          }
+        },
+        {
+          "x": 82,
+          "y": 60,
+          "label": {
+            "ru": "Враг, попавший под действие объекта",
+            "en": "Enemy affected by the object"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Заранее обозначайте пригодные для приёма объекты.",
+        "en": "Make usable environmental objects recognizable in advance."
+      },
+      {
+        "ru": "Проверяйте подход к объекту и положение обоих персонажей.",
+        "en": "Check the approach route and both characters’ positions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sleeping Dogs (2012)",
+        "url": "https://gamemechanics.org/patterns/environmental-takedowns"
+      }
+    ]
+  },
+  "game-mechanics--gm-sniping": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Снайперская стрельба",
+      "en": "Sniping"
+    },
+    "description": {
+      "ru": "Увеличение и точный прицел помогают поразить удалённую цель. Узкий обзор делает важными выбор позиции и момент выстрела.",
+      "en": "Magnification and a precise sight help hit a distant target. The narrow view makes positioning and shot timing important."
+    },
+    "image": {
+      "src": "images/mechanics/combat-sniping.webp",
+      "width": 600,
+      "height": 370,
+      "game": "Hitman 2: Silent Assassin (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/sniping",
+      "originalUrl": "https://cdn.gamemechanics.org/hitman_2_sniping.webm",
+      "sourceFrameSeconds": 7.61,
+      "credit": "IO Interactive; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Удалённая цель в оптическом прицеле",
+        "en": "A distant target through a scope"
+      },
+      "alt": {
+        "ru": "В Hitman 2: Silent Assassin круг оптического прицела выделяет охранника в окне здания.",
+        "en": "The circular scope frames a guard in a building window in Hitman 2: Silent Assassin."
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 36,
+          "label": {
+            "ru": "Удалённая цель в окне",
+            "en": "Distant target in a window"
+          }
+        },
+        {
+          "x": 48,
+          "y": 63,
+          "label": {
+            "ru": "Шкала оптического прицела",
+            "en": "Scope reticle scale"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемый силуэт цели на рабочей дистанции.",
+        "en": "Keep target silhouettes readable at the intended range."
+      },
+      {
+        "ru": "Балансируйте увеличение потерей периферийного обзора.",
+        "en": "Balance magnification against reduced peripheral vision."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hitman 2: Silent Assassin (2002)",
+        "url": "https://gamemechanics.org/patterns/sniping"
+      }
+    ]
+  },
+  "game-mechanics--gm-outpost-clearing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зачистка аванпоста",
+      "en": "Clear an outpost"
+    },
+    "description": {
+      "ru": "Игрок устраняет защитников вражеской точки. Завершение зачистки меняет её состояние и может открыть безопасный доступ к территории.",
+      "en": "The player defeats an enemy location’s defenders. Completing the encounter changes its state and may open safe access to the area."
+    },
+    "image": {
+      "src": "images/mechanics/combat-outpost-clearing.webp",
+      "width": 460,
+      "height": 254,
+      "game": "Far Cry 4 (2014)",
+      "sourceUrl": "https://gamemechanics.org/patterns/outpost-clearing",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_4_outpost_liberation2.webm",
+      "sourceFrameSeconds": 8.98,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Проникновение на охраняемый аванпост",
+        "en": "Entering a guarded outpost"
+      },
+      "alt": {
+        "ru": "В Far Cry 4 герой приближается сзади к охраннику внутри аванпоста; рядом видны укрепления и постройки.",
+        "en": "In Far Cry 4, the player approaches a guard from behind among an outpost’s fortifications and buildings."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 48,
+          "label": {
+            "ru": "Защитник точки",
+            "en": "An outpost defender"
+          }
+        },
+        {
+          "x": 29,
+          "y": 38,
+          "label": {
+            "ru": "Укрепления задают маршруты подхода",
+            "en": "Fortifications shape approach routes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разрешайте несколько маршрутов и способов нейтрализации охраны.",
+        "en": "Allow multiple routes and ways to neutralize defenders."
+      },
+      {
+        "ru": "После зачистки ясно показывайте смену контроля над точкой.",
+        "en": "Clearly communicate the location’s change of control after clearing it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 4 (2014)",
+        "url": "https://gamemechanics.org/patterns/outpost-clearing"
+      }
+    ]
+  },
+  "game-mechanics--gm-electricuting-enemies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Электрическая атака",
+      "en": "Electrocuting enemies"
+    },
+    "description": {
+      "ru": "Электрический эффект наносит урон или временно нарушает действия врага. Визуальный разряд помогает прочитать поражённые цели.",
+      "en": "An electrical effect deals damage or briefly disrupts an enemy’s actions. Visible arcs help identify affected targets."
+    },
+    "image": {
+      "src": "images/mechanics/combat-electricuting-enemies.webp",
+      "width": 350,
+      "height": 354,
+      "game": "BioShock (2007)",
+      "sourceUrl": "https://gamemechanics.org/patterns/electricuting-enemies",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/bioshock_electricty.webm",
+      "sourceFrameSeconds": 2.95,
+      "credit": "Irrational Games / 2K; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Electro Bolt поражает противника",
+        "en": "Electro Bolt hits an enemy"
+      },
+      "alt": {
+        "ru": "В BioShock электрические дуги окружают противника перед игроком.",
+        "en": "Electrical arcs surround an enemy ahead of the player in BioShock."
+      },
+      "markers": [
+        {
+          "x": 71,
+          "y": 44,
+          "label": {
+            "ru": "Поражённый электричеством враг",
+            "en": "Enemy affected by electricity"
+          }
+        },
+        {
+          "x": 49,
+          "y": 62,
+          "label": {
+            "ru": "Разряды показывают действие эффекта",
+            "en": "Arcs communicate the effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте урон, оглушение и цепное распространение эффекта.",
+        "en": "Distinguish damage, stun and chain propagation."
+      },
+      {
+        "ru": "Показывайте устойчивость врага, если разряд его не останавливает.",
+        "en": "Show resistance when an electrical hit does not interrupt the enemy."
+      }
+    ],
+    "examples": [
+      {
+        "title": "BioShock (2007)",
+        "url": "https://gamemechanics.org/patterns/electricuting-enemies"
+      }
+    ]
+  },
+  "game-mechanics--gm-throwing-enemies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бросок противника",
+      "en": "Throw an enemy"
+    },
+    "description": {
+      "ru": "После захвата игрок бросает противника в выбранном направлении. Положение цели, препятствия и зона приземления становятся частью атаки.",
+      "en": "After a grab, the player throws an enemy in a chosen direction. Target position, obstacles and landing space become part of the attack."
+    },
+    "image": {
+      "src": "images/mechanics/combat-throwing-enemies.webp",
+      "width": 600,
+      "height": 334,
+      "game": "RoboCop: Rogue City (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/throwing-enemies",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_throw_guy.webm",
+      "sourceFrameSeconds": 4.95,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org; visible recording watermark: Swifty Unknown",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Брошенный враг летит по коридору",
+        "en": "A thrown enemy flies down a corridor"
+      },
+      "alt": {
+        "ru": "В RoboCop: Rogue City враг находится в воздухе перед игроком после броска.",
+        "en": "An enemy is airborne ahead of the player after a throw in RoboCop: Rogue City."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 60,
+          "label": {
+            "ru": "Враг в полёте после броска",
+            "en": "Enemy airborne after the throw"
+          }
+        },
+        {
+          "x": 62,
+          "y": 49,
+          "label": {
+            "ru": "Коридор задаёт направление броска",
+            "en": "The corridor defines the throw direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте направление броска до подтверждения действия.",
+        "en": "Communicate throw direction before the action is committed."
+      },
+      {
+        "ru": "Проверяйте столкновения и свободное место для приземления.",
+        "en": "Check collisions and available landing space."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City (2023)",
+        "url": "https://gamemechanics.org/patterns/throwing-enemies"
+      }
+    ]
+  },
+  "game-mechanics--gm-self-guided-missiles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Самонаводящиеся снаряды",
+      "en": "Homing projectiles"
+    },
+    "description": {
+      "ru": "Ракета или другой снаряд после запуска корректирует путь к выбранной цели. Сначала игрок задаёт цель, затем система ведёт снаряд.",
+      "en": "A missile or other projectile adjusts its path toward a selected target after launch. The player selects the target and the system guides the projectile."
+    },
+    "image": {
+      "src": "images/mechanics/combat-self-guided-missiles.webp",
+      "width": 460,
+      "height": 254,
+      "game": "Resistance 3 (2011)",
+      "sourceUrl": "https://gamemechanics.org/patterns/self-guided-missiles",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/resistance3_bullseye.webm",
+      "sourceFrameSeconds": 3.84,
+      "credit": "Insomniac Games / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Bullseye: пули следуют к помеченной цели",
+        "en": "Bullseye: rounds follow a tagged target"
+      },
+      "alt": {
+        "ru": "В Resistance 3 светящиеся трассы выстрелов Bullseye изгибаются к цели у дальней стены.",
+        "en": "Glowing Bullseye shot trails curve toward a target by the far wall in Resistance 3."
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 61,
+          "label": {
+            "ru": "Изгибающиеся трассы снарядов",
+            "en": "Curving projectile trails"
+          }
+        },
+        {
+          "x": 27,
+          "y": 72,
+          "label": {
+            "ru": "Область помеченной цели",
+            "en": "The tagged target’s area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте захват цели от ручного управления снарядом.",
+        "en": "Distinguish target acquisition from manual projectile steering."
+      },
+      {
+        "ru": "Показывайте потерю цели и ограничения поворота.",
+        "en": "Communicate target loss and turning limits."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resistance 3 (2011)",
+        "url": "https://gamemechanics.org/patterns/self-guided-missiles"
+      }
+    ]
+  },
+  "game-mechanics--gm-shooting-down-helicopters": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Уничтожение вертолёта",
+      "en": "Shoot down a helicopter"
+    },
+    "description": {
+      "ru": "Игрок поражает воздушную цель и доводит её до разрушения. Движение вертолёта требует следить за небом и выбирать момент атаки.",
+      "en": "The player damages an aerial target until it is destroyed. Helicopter movement requires watching the sky and choosing attack timing."
+    },
+    "image": {
+      "src": "images/mechanics/combat-shooting-down-helicopters.webp",
+      "width": 400,
+      "height": 220,
+      "game": "Just Cause (2006)",
+      "sourceUrl": "https://gamemechanics.org/patterns/shooting-down-helicopters",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/just_cause_helicopter_anti-aircraft_gun.webm",
+      "sourceFrameSeconds": 6.29,
+      "credit": "Avalanche Studios / Eidos Interactive; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Вертолёт под огнём зенитного орудия",
+        "en": "A helicopter under anti-aircraft fire"
+      },
+      "alt": {
+        "ru": "В Just Cause повреждённый вертолёт оставляет дым в небе над установленным орудием игрока.",
+        "en": "A damaged helicopter trails smoke above the player’s mounted gun in Just Cause."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 30,
+          "label": {
+            "ru": "Дымящийся вертолёт",
+            "en": "Smoking helicopter"
+          }
+        },
+        {
+          "x": 43,
+          "y": 78,
+          "label": {
+            "ru": "Установленное оружие игрока",
+            "en": "The player’s mounted gun"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте попадание, критическое повреждение и падение.",
+        "en": "Distinguish a hit, critical damage and a crash."
+      },
+      {
+        "ru": "Давайте воздушной угрозе заметный звук и силуэт.",
+        "en": "Give aerial threats a recognizable sound and silhouette."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Cause (2006)",
+        "url": "https://gamemechanics.org/patterns/shooting-down-helicopters"
+      }
+    ]
+  },
+  "game-mechanics--gm-health-pickups": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подбираемая аптечка",
+      "en": "Health pickup"
+    },
+    "description": {
+      "ru": "Аптечка в мире восстанавливает здоровье после подбора или применения. Её положение связывает риск пути с возможностью восстановиться.",
+      "en": "A medkit in the world restores health when collected or used. Its placement connects route risk with an opportunity to recover."
+    },
+    "image": {
+      "src": "images/mechanics/combat-health-stations.webp",
+      "width": 600,
+      "height": 336,
+      "game": "Condemned: Criminal Origins (2006)",
+      "sourceUrl": "https://gamemechanics.org/patterns/health-stations",
+      "originalUrl": "https://cdn.gamemechanics.org/condemned_halth_kit_station.webm",
+      "sourceFrameSeconds": 4.06,
+      "credit": "Monolith Productions / Sega; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Аптечка, доступная для применения",
+        "en": "A medkit available to use"
+      },
+      "alt": {
+        "ru": "В Condemned на полке медицинского шкафчика выделена аптечка с красным крестом и подсказкой применения.",
+        "en": "A red-cross medkit is highlighted on a medical cabinet shelf with a use prompt in Condemned."
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 51,
+          "label": {
+            "ru": "Отдельная аптечка на полке",
+            "en": "An individual medkit on the shelf"
+          }
+        },
+        {
+          "x": 53,
+          "y": 26,
+          "label": {
+            "ru": "Подсказка применения аптечки",
+            "en": "Medkit use prompt"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте аптечку узнаваемой среди других предметов.",
+        "en": "Make medkits recognizable among other objects."
+      },
+      {
+        "ru": "Размещайте лечение с учётом пути обратно и ближайших угроз.",
+        "en": "Place healing with return routes and nearby threats in mind."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Condemned: Criminal Origins (2006)",
+        "url": "https://gamemechanics.org/patterns/health-stations"
+      }
+    ]
+  },
+  "game-mechanics--gm-health-stations": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Станция лечения",
+      "en": "Health station"
+    },
+    "description": {
+      "ru": "Фиксированная точка восстанавливает здоровье при взаимодействии. Чтобы лечиться, игроку приходится добраться до неё и остановиться.",
+      "en": "A fixed location restores health through interaction. The player must reach it and stop to recover."
+    },
+    "image": {
+      "src": "images/mechanics/combat-health-stations.webp",
+      "width": 600,
+      "height": 336,
+      "game": "Condemned: Criminal Origins (2006)",
+      "sourceUrl": "https://gamemechanics.org/patterns/health-stations",
+      "originalUrl": "https://cdn.gamemechanics.org/condemned_halth_kit_station.webm",
+      "sourceFrameSeconds": 4.06,
+      "credit": "Monolith Productions / Sega; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Стационарный медицинский шкафчик",
+        "en": "A fixed medical cabinet"
+      },
+      "alt": {
+        "ru": "Открытый медицинский шкафчик в Condemned содержит аптечки; в углу экрана видна шкала здоровья.",
+        "en": "An open medical cabinet in Condemned contains medkits, with the health meter visible in the screen corner."
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 57,
+          "label": {
+            "ru": "Фиксированный шкафчик с запасом аптечек",
+            "en": "A fixed cabinet containing medkits"
+          }
+        },
+        {
+          "x": 9,
+          "y": 6,
+          "label": {
+            "ru": "Шкала здоровья игрока",
+            "en": "The player’s health meter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте оставшийся запас лечения или исчерпанное состояние.",
+        "en": "Show remaining healing supplies or an exhausted state."
+      },
+      {
+        "ru": "Выбирайте место, где риск остановки соответствует ценности лечения.",
+        "en": "Match the risk of stopping to the value of the healing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Condemned: Criminal Origins (2006)",
+        "url": "https://gamemechanics.org/patterns/health-stations"
+      }
+    ]
+  },
+  "game-mechanics--gm-eating-to-heal": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лечение едой",
+      "en": "Eat to heal"
+    },
+    "description": {
+      "ru": "Употребление еды возвращает часть здоровья. Пища в окружении становится полезным ресурсом, а не только украшением сцены.",
+      "en": "Eating restores some health. Food in the environment becomes a useful resource as well as part of the scene."
+    },
+    "image": {
+      "src": "images/mechanics/combat-eating-to-heal.webp",
+      "width": 600,
+      "height": 478,
+      "game": "Return to Castle Wolfenstein (2001)",
+      "sourceUrl": "https://gamemechanics.org/patterns/eating-to-heal",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_meal.webm",
+      "sourceFrameSeconds": 1.82,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Еда на столе восстанавливает здоровье",
+        "en": "Food on a table restores health"
+      },
+      "alt": {
+        "ru": "В Return to Castle Wolfenstein перед игроком лежит тарелка с едой; внизу слева показано здоровье.",
+        "en": "A plate of food sits ahead of the player in Return to Castle Wolfenstein, with health shown at the lower left."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 49,
+          "label": {
+            "ru": "Порция еды на столе",
+            "en": "A serving of food on the table"
+          }
+        },
+        {
+          "x": 5,
+          "y": 92,
+          "label": {
+            "ru": "Текущее здоровье",
+            "en": "Current health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какая еда доступна для употребления.",
+        "en": "Communicate which food can be consumed."
+      },
+      {
+        "ru": "Согласуйте восстановление с доступностью пищи в уровне.",
+        "en": "Balance recovery against how much food the level supplies."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein (2001)",
+        "url": "https://gamemechanics.org/patterns/eating-to-heal"
+      }
+    ]
+  },
+  "game-mechanics--gm-drinking-to-heal": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лечение напитками",
+      "en": "Drink to heal"
+    },
+    "description": {
+      "ru": "Питьё восстанавливает здоровье персонажа. Источник жидкости или запас напитков определяет, где и как долго можно лечиться.",
+      "en": "Drinking restores the character’s health. A water source or drink supply determines where and for how long recovery is possible."
+    },
+    "image": {
+      "src": "images/mechanics/combat-drinking-to-heal.webp",
+      "width": 598,
+      "height": 332,
+      "game": "Duke Nukem 3D (1996)",
+      "sourceUrl": "https://gamemechanics.org/patterns/drinking-to-heal",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/duke_nukem_3d_drink_water.webm",
+      "sourceFrameSeconds": 6.5,
+      "credit": "3D Realms; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Вода из сломанного гидранта",
+        "en": "Water from a broken hydrant"
+      },
+      "alt": {
+        "ru": "В Duke Nukem 3D струя воды бьёт из гидранта перед игроком; значение здоровья находится внизу.",
+        "en": "Water sprays from a hydrant ahead of the player in Duke Nukem 3D, with health displayed below."
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 32,
+          "label": {
+            "ru": "Струя воды для питья",
+            "en": "A water stream to drink from"
+          }
+        },
+        {
+          "x": 12,
+          "y": 92,
+          "label": {
+            "ru": "Здоровье на панели состояния",
+            "en": "Health on the status panel"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, лечит ли источник постепенно или за одно действие.",
+        "en": "Communicate whether a source heals gradually or in one use."
+      },
+      {
+        "ru": "Учитывайте повторное использование доступных источников.",
+        "en": "Account for repeated use of accessible sources."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D (1996)",
+        "url": "https://gamemechanics.org/patterns/drinking-to-heal"
+      }
+    ]
+  },
+  "game-mechanics--gm-floating-health-bars": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Здоровье над персонажем",
+      "en": "Floating health bars"
+    },
+    "description": {
+      "ru": "Шкала здоровья следует за персонажем на экране. Игрок сопоставляет остаток здоровья с конкретной целью прямо в боевой сцене.",
+      "en": "A health bar follows a character on screen. The player can associate remaining health with a specific target within the combat scene."
+    },
+    "image": {
+      "src": "images/mechanics/combat-floating-health-bars.webp",
+      "width": 672,
+      "height": 378,
+      "game": "Far Cry 6",
+      "sourceUrl": "https://gamemechanics.org/patterns/floating-health-bars",
+      "originalUrl": "https://cdn.gamemechanics.org/far_cry_6_health_bars.jpg",
+      "credit": "Ubisoft; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Шкала следует за врагом",
+        "en": "The bar follows an enemy"
+      },
+      "alt": {
+        "ru": "В Far Cry 6 белая шкала здоровья и значок находятся над идущим впереди противником.",
+        "en": "A white health bar and icon sit above an enemy walking ahead in Far Cry 6."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 26,
+          "label": {
+            "ru": "Шкала здоровья привязана к цели",
+            "en": "The health bar is attached to the target"
+          }
+        },
+        {
+          "x": 45,
+          "y": 49,
+          "label": {
+            "ru": "Персонаж, которому принадлежит шкала",
+            "en": "The character that owns the bar"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Смещайте шкалу так, чтобы не перекрывать голову и прицел.",
+        "en": "Position the bar so it does not obscure heads or the crosshair."
+      },
+      {
+        "ru": "Снижайте шум: показывайте шкалы по важности или при наведении.",
+        "en": "Reduce clutter by showing bars by relevance or on targeting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 6",
+        "url": "https://gamemechanics.org/patterns/floating-health-bars"
+      }
+    ]
+  },
+  "game-mechanics--gm-health-based-character-portrait": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Здоровье через портрет",
+      "en": "Health-based portrait"
+    },
+    "description": {
+      "ru": "Лицо героя меняется при потере здоровья. Степень повреждений превращает портрет в эмоциональный индикатор состояния.",
+      "en": "The hero’s face changes as health is lost. Increasing injury turns the portrait into an expressive status indicator."
+    },
+    "image": {
+      "src": "images/mechanics/combat-health-based-character-portrait.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Doom (1993)",
+      "sourceUrl": "https://gamemechanics.org/patterns/health-based-character-portrait",
+      "originalUrl": "https://cdn.gamemechanics.org/doom_health_portrait.jpg",
+      "credit": "id Software; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Лицо Doomguy при разном здоровье",
+        "en": "Doomguy’s face at different health levels"
+      },
+      "alt": {
+        "ru": "Сравнение портретов Doomguy от здорового до сильно раненого поверх игрового экрана Doom.",
+        "en": "A comparison of Doomguy portraits from healthy to badly wounded over a Doom gameplay screen."
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 43,
+          "label": {
+            "ru": "Портрет при высоком здоровье",
+            "en": "Portrait at high health"
+          }
+        },
+        {
+          "x": 80,
+          "y": 43,
+          "label": {
+            "ru": "Сильные повреждения лица",
+            "en": "Severe facial injuries"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте числовой или другой точный индикатор здоровья.",
+        "en": "Retain a numeric or another precise health indicator."
+      },
+      {
+        "ru": "Делайте стадии различимыми без опоры только на цвет.",
+        "en": "Make stages distinguishable without relying on color alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom (1993)",
+        "url": "https://gamemechanics.org/patterns/health-based-character-portrait"
+      }
+    ]
+  },
+  "game-mechanics--gm-showing-door-lock-state": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Видимое состояние замка",
+      "en": "Visible door lock state"
+    },
+    "description": {
+      "ru": "Свет, надпись или значок на двери показывает, доступен ли проход. Игрок узнаёт состояние замка до попытки открыть дверь.",
+      "en": "A light, label or icon on a door shows whether passage is available. The player learns its lock state before trying to open it."
+    },
+    "image": {
+      "src": "images/mechanics/combat-showing-door-lock-state.webp",
+      "width": 1107,
+      "height": 578,
+      "game": "Dead Space (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/showing-door-lock-state",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_space_door_locked.jpg",
+      "credit": "Motive Studio / Electronic Arts; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "LOCKED и UNLOCKED прямо на двери",
+        "en": "LOCKED and UNLOCKED on the door"
+      },
+      "alt": {
+        "ru": "Сравнение двух состояний двери в Dead Space: красный знак LOCKED слева и голубой UNLOCKED справа.",
+        "en": "Two Dead Space door states: a red LOCKED sign on the left and a blue UNLOCKED sign on the right."
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 54,
+          "label": {
+            "ru": "LOCKED: проход закрыт",
+            "en": "LOCKED: passage unavailable"
+          }
+        },
+        {
+          "x": 86,
+          "y": 58,
+          "label": {
+            "ru": "UNLOCKED: дверь доступна",
+            "en": "UNLOCKED: door available"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дублируйте цвет надписью, формой или символом.",
+        "en": "Supplement color with text, shape or a symbol."
+      },
+      {
+        "ru": "Обновляйте сигнал одновременно с фактическим состоянием замка.",
+        "en": "Update the signal together with the actual lock state."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space (2023)",
+        "url": "https://gamemechanics.org/patterns/showing-door-lock-state"
+      }
+    ]
+  },
+  "game-mechanics--gm-fixed-camera-angles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фиксированные ракурсы",
+      "en": "Fixed camera angles"
+    },
+    "description": {
+      "ru": "Камера использует заранее выбранные позиции и переключается при перемещении героя. Ракурс задаёт композицию и объём доступной информации.",
+      "en": "The camera uses preselected positions and switches as the hero moves. Each angle controls composition and the amount of visible information."
+    },
+    "image": {
+      "src": "images/mechanics/combat-fixed-camera-angles.webp",
+      "width": 600,
+      "height": 444,
+      "game": "Resident Evil (1996)",
+      "sourceUrl": "https://gamemechanics.org/patterns/fixed-camera-angles",
+      "originalUrl": "https://cdn.gamemechanics.org/resident_evil_1996_perspectives.webm",
+      "sourceFrameSeconds": 3.93,
+      "credit": "Capcom; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Заранее выбранный вид зала сверху",
+        "en": "A preselected overhead hall view"
+      },
+      "alt": {
+        "ru": "В Resident Evil камера смотрит на зал с верхней точки; герой виден у стола в нижней части кадра.",
+        "en": "A high fixed camera looks across a hall in Resident Evil, with the hero by a table near the bottom of the frame."
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 67,
+          "label": {
+            "ru": "Герой внутри фиксированного ракурса",
+            "en": "The hero within the fixed view"
+          }
+        },
+        {
+          "x": 75,
+          "y": 29,
+          "label": {
+            "ru": "Композиция показывает зал и проход",
+            "en": "The composition shows the hall and passage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте управление при смене направления экранных осей.",
+        "en": "Check controls when screen directions change across cuts."
+      },
+      {
+        "ru": "Не скрывайте обязательную угрозу за границей соседнего ракурса.",
+        "en": "Keep required threats readable across adjacent camera views."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resident Evil (1996)",
+        "url": "https://gamemechanics.org/patterns/fixed-camera-angles"
+      }
+    ]
+  },
+  "game-mechanics--gm-see-through-vision": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зрение сквозь преграды",
+      "en": "See-through vision"
+    },
+    "description": {
+      "ru": "Специальный режим показывает цели за непрозрачной поверхностью. Игрок получает сведения для планирования до прямого контакта.",
+      "en": "A special mode reveals targets behind opaque surfaces. The player gains planning information before making direct contact."
+    },
+    "image": {
+      "src": "images/mechanics/combat-see-through-vision.webp",
+      "width": 500,
+      "height": 278,
+      "game": "Deus Ex: Mankind Divided (2016)",
+      "sourceUrl": "https://gamemechanics.org/patterns/see-through-vision",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/deus_ex_mankind_divided_see_thru_walls.webm",
+      "sourceFrameSeconds": 1.64,
+      "credit": "Eidos-Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Smart Vision показывает людей за стеной",
+        "en": "Smart Vision reveals people behind a wall"
+      },
+      "alt": {
+        "ru": "В Deus Ex: Mankind Divided два оранжевых силуэта видны за стеной рядом с дверью.",
+        "en": "Two orange silhouettes appear behind a wall beside a door in Deus Ex: Mankind Divided."
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 44,
+          "label": {
+            "ru": "Силуэт за непрозрачной стеной",
+            "en": "Silhouette behind an opaque wall"
+          }
+        },
+        {
+          "x": 76,
+          "y": 47,
+          "label": {
+            "ru": "Дверь сохраняет контекст помещения",
+            "en": "The door preserves room context"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте сведения режима от обычной видимости персонажа.",
+        "en": "Distinguish mode information from normal character visibility."
+      },
+      {
+        "ru": "Ограничивайте дальность, длительность или цену информации.",
+        "en": "Bound information by range, duration or cost."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deus Ex: Mankind Divided (2016)",
+        "url": "https://gamemechanics.org/patterns/see-through-vision"
+      }
+    ]
+  },
+  "game-mechanics--gm-magical-vision": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Особое зрение",
+      "en": "Special vision"
+    },
+    "description": {
+      "ru": "Особый режим восприятия выделяет важные цели и признаки мира. Он помогает заметить информацию, которую трудно прочитать в обычном виде.",
+      "en": "A special perception mode highlights important targets and world features. It helps reveal information that is hard to read in the normal view."
+    },
+    "image": {
+      "src": "images/mechanics/combat-magical-vision.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Assassin's Creed Unity (2014)",
+      "sourceUrl": "https://gamemechanics.org/patterns/magical-vision",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/ac_unity_eagle_view.webm",
+      "sourceFrameSeconds": 7.32,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Орлиное зрение выделяет врагов",
+        "en": "Eagle Vision highlights enemies"
+      },
+      "alt": {
+        "ru": "В Assassin’s Creed Unity два врага подсвечены красным за деревянным укрытием рядом с Арно.",
+        "en": "Two enemies glow red behind wooden cover beside Arno in Assassin’s Creed Unity."
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 36,
+          "label": {
+            "ru": "Выделенные режимом враги",
+            "en": "Enemies highlighted by the mode"
+          }
+        },
+        {
+          "x": 50,
+          "y": 59,
+          "label": {
+            "ru": "Арно остаётся в контексте укрытия",
+            "en": "Arno remains framed by the cover"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Закрепляйте за цветами и контурами устойчивые значения.",
+        "en": "Keep color and outline meanings consistent."
+      },
+      {
+        "ru": "Избегайте обязательного постоянного сканирования каждого помещения.",
+        "en": "Avoid requiring constant scanning of every room."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Assassin's Creed Unity (2014)",
+        "url": "https://gamemechanics.org/patterns/magical-vision"
+      }
+    ]
+  },
+  "game-mechanics--gm-thermal-vision": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тепловизор",
+      "en": "Thermal vision"
+    },
+    "description": {
+      "ru": "Режим переводит температурные различия в контрастные пятна. Тёплые цели легче различить на фоне окружения.",
+      "en": "The mode turns temperature differences into contrasting shapes. Warm targets become easier to distinguish from their surroundings."
+    },
+    "image": {
+      "src": "images/mechanics/combat-thermal-vision.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Metal Gear Solid Delta: Snake Eater (2025)",
+      "sourceUrl": "https://gamemechanics.org/patterns/thermal-vision",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/mgsdelta_thermal_goggles.webm",
+      "sourceFrameSeconds": 14.02,
+      "credit": "Konami; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Тёплые силуэты в лесу",
+        "en": "Warm silhouettes in a forest"
+      },
+      "alt": {
+        "ru": "В Metal Gear Solid Delta тепловой режим выделяет две фигуры в лесу на фоне холодного растительного окружения.",
+        "en": "Thermal vision in Metal Gear Solid Delta highlights two figures against the cooler forest background."
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 36,
+          "label": {
+            "ru": "Тёплый силуэт слева",
+            "en": "Warm silhouette on the left"
+          }
+        },
+        {
+          "x": 70,
+          "y": 29,
+          "label": {
+            "ru": "Вторая цель на холодном фоне",
+            "en": "A second target against a cooler background"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, какие поверхности и объекты пропускают такой обзор.",
+        "en": "Communicate which surfaces and objects allow this view."
+      },
+      {
+        "ru": "Делайте цели различимыми при разных настройках цветового зрения.",
+        "en": "Keep targets readable across color-vision settings."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metal Gear Solid Delta: Snake Eater (2025)",
+        "url": "https://gamemechanics.org/patterns/thermal-vision"
+      }
+    ]
+  },
+  "game-mechanics--gm-recon-drone": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разведывательный дрон",
+      "en": "Recon drone"
+    },
+    "description": {
+      "ru": "Игрок управляет удалённой камерой дрона, чтобы осмотреть местность и отметить угрозы. Герой в это время остаётся в другом месте.",
+      "en": "The player controls a drone’s remote camera to scout terrain and mark threats. The hero remains elsewhere during reconnaissance."
+    },
+    "image": {
+      "src": "images/mechanics/combat-recon-drone.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Call of Duty: Warzone (2022)",
+      "sourceUrl": "https://gamemechanics.org/patterns/recon-drone",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/cod_drone_s.webm",
+      "sourceFrameSeconds": 8.07,
+      "credit": "Activision; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Обзор квартала с камеры дрона",
+        "en": "A drone-camera view over a city block"
+      },
+      "alt": {
+        "ru": "В Call of Duty: Warzone камера дрона показывает крыши; в интерфейсе видны заряд батареи и состояние аппарата.",
+        "en": "A drone camera overlooks rooftops in Call of Duty: Warzone, with battery and device status in its interface."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 35,
+          "label": {
+            "ru": "Отмеченная точка среди зданий",
+            "en": "A marked location among the buildings"
+          }
+        },
+        {
+          "x": 25,
+          "y": 81,
+          "label": {
+            "ru": "Индикатор батареи дрона",
+            "en": "Drone battery indicator"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте запас заряда, дальность связи и путь возврата.",
+        "en": "Show battery charge, link range and a return route."
+      },
+      {
+        "ru": "Делайте заметной уязвимость героя во время разведки.",
+        "en": "Communicate the hero’s vulnerability while scouting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Call of Duty: Warzone (2022)",
+        "url": "https://gamemechanics.org/patterns/recon-drone"
+      }
+    ]
+  },
+  "game-mechanics--gm-cctv-access": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Камеры наблюдения",
+      "en": "CCTV access"
+    },
+    "description": {
+      "ru": "Через установленную камеру игрок осматривает удалённую зону. Такой обзор помогает подготовиться к маршруту, не входя в помещение.",
+      "en": "The player views a remote area through a fixed camera. This helps plan a route without entering the space."
+    },
+    "image": {
+      "src": "images/mechanics/combat-cctv-access.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Duke Nukem 3D (1996)",
+      "sourceUrl": "https://gamemechanics.org/patterns/cctv-access",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/duke_nukem_3d_security_cams.webm",
+      "sourceFrameSeconds": 5.33,
+      "credit": "3D Realms; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Удалённый обзор двора",
+        "en": "A remote courtyard view"
+      },
+      "alt": {
+        "ru": "В Duke Nukem 3D кадр с надписью REC и угловыми метками показывает двор с противником.",
+        "en": "A view labeled REC with corner brackets shows a courtyard and enemy in Duke Nukem 3D."
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 13,
+          "label": {
+            "ru": "REC и рамка обозначают камеру",
+            "en": "REC and frame brackets identify the camera view"
+          }
+        },
+        {
+          "x": 43,
+          "y": 44,
+          "label": {
+            "ru": "Противник в удалённой зоне",
+            "en": "Enemy in the remote area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Помогайте связать ракурс камеры с местом на уровне.",
+        "en": "Help players connect the camera angle to its level location."
+      },
+      {
+        "ru": "Явно показывайте возврат к обычному управлению героем.",
+        "en": "Make returning to normal character control clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D (1996)",
+        "url": "https://gamemechanics.org/patterns/cctv-access"
+      }
+    ]
+  },
+  "game-mechanics--gm-bullet-time": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Замедление времени",
+      "en": "Bullet time"
+    },
+    "description": {
+      "ru": "Мир на время движется медленнее, давая игроку больше времени на прицеливание и реакцию. Ограничение ресурса делает момент активации выбором.",
+      "en": "The world temporarily moves more slowly, giving the player more time to aim and react. A limited resource makes activation timing a choice."
+    },
+    "image": {
+      "src": "images/mechanics/combat-bullet-time.webp",
+      "width": 498,
+      "height": 276,
+      "game": "F.E.A.R. (2005)",
+      "sourceUrl": "https://gamemechanics.org/patterns/bullet-time",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_bullet_time.webm",
+      "sourceFrameSeconds": 4.91,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Reflex Time во время перестрелки",
+        "en": "Reflex Time during a firefight"
+      },
+      "alt": {
+        "ru": "В F.E.A.R. перестрелка в режиме Reflex Time показана с характерным размытием по краям и видимыми следами выстрелов.",
+        "en": "A F.E.A.R. firefight during Reflex Time has characteristic edge blur and visible shot effects."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 56,
+          "label": {
+            "ru": "Противник в центре замедленной сцены",
+            "en": "Enemy at the center of the slowed scene"
+          }
+        },
+        {
+          "x": 15,
+          "y": 42,
+          "label": {
+            "ru": "Визуальный эффект активного режима",
+            "en": "Visual effect of the active mode"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте предсказуемое соотношение скорости героя и мира.",
+        "en": "Keep the speed relationship between hero and world predictable."
+      },
+      {
+        "ru": "Ясно показывайте включение, оставшийся ресурс и завершение режима.",
+        "en": "Clearly show activation, remaining resource and the mode ending."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R. (2005)",
+        "url": "https://gamemechanics.org/patterns/bullet-time"
+      }
+    ]
+  },
+  "game-mechanics--gm-bullet-cam": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Камера снаряда",
+      "en": "Bullet camera"
+    },
+    "description": {
+      "ru": "После выстрела камера следует за снарядом и показывает путь к цели. Короткая смена ракурса подчёркивает дальность и результат попадания.",
+      "en": "After a shot, the camera follows the projectile toward its target. The brief change of view emphasizes distance and impact."
+    },
+    "image": {
+      "src": "images/mechanics/combat-bullet-cam.webp",
+      "width": 540,
+      "height": 304,
+      "game": "Sniper Ghost Warrior Contracts (2019)",
+      "sourceUrl": "https://gamemechanics.org/patterns/bullet-cam",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/sniper_ghost_warrior_contracts_bulletcam_3.webm",
+      "sourceFrameSeconds": 0.81,
+      "credit": "CI Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Камера движется рядом с пулей",
+        "en": "The camera travels beside the bullet"
+      },
+      "alt": {
+        "ru": "В Sniper Ghost Warrior Contracts пуля занимает передний план, а впереди остаётся причал с красными дымовыми сигналами.",
+        "en": "A bullet fills the foreground in Sniper Ghost Warrior Contracts, with a dock and red smoke signals ahead."
+      },
+      "markers": [
+        {
+          "x": 26,
+          "y": 29,
+          "label": {
+            "ru": "Пуля рядом с камерой",
+            "en": "The bullet beside the camera"
+          }
+        },
+        {
+          "x": 66,
+          "y": 54,
+          "label": {
+            "ru": "Путь к цели сохраняет контекст местности",
+            "en": "The path toward the target retains location context"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не включайте длинный пролёт для каждого рядового выстрела.",
+        "en": "Avoid long fly-throughs for every ordinary shot."
+      },
+      {
+        "ru": "Разрешайте пропустить эффект и быстро возвращайтесь к управлению.",
+        "en": "Allow skipping the effect and return control promptly."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sniper Ghost Warrior Contracts (2019)",
+        "url": "https://gamemechanics.org/patterns/bullet-cam"
+      }
+    ]
+  },
+  "game-mechanics--gm-raindrops-on-screen": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Капли на экране",
+      "en": "Raindrops on screen"
+    },
+    "description": {
+      "ru": "Капли на условной линзе делают дождь ощутимым в самом изображении. Эффект усиливает присутствие, сохраняя читаемость игрового действия.",
+      "en": "Droplets on the implied lens bring rain into the image itself. The effect strengthens presence while preserving readable gameplay."
+    },
+    "image": {
+      "src": "images/mechanics/combat-raindrops-on-screen.webp",
+      "width": 460,
+      "height": 254,
+      "game": "Driveclub (2014)",
+      "sourceUrl": "https://gamemechanics.org/patterns/raindrops-on-screen",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/drive_club_storm.webm",
+      "sourceFrameSeconds": 4.88,
+      "credit": "Evolution Studios / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Капли поверх вида мокрой трассы",
+        "en": "Droplets over a wet racetrack view"
+      },
+      "alt": {
+        "ru": "В Driveclub капли и разводы на условной линзе накладываются на машины и мокрую дорогу.",
+        "en": "Droplets and streaks on the implied lens overlay cars and the wet road in Driveclub."
+      },
+      "markers": [
+        {
+          "x": 14,
+          "y": 51,
+          "label": {
+            "ru": "Размытая капля на условной линзе",
+            "en": "A blurred droplet on the implied lens"
+          }
+        },
+        {
+          "x": 51,
+          "y": 65,
+          "label": {
+            "ru": "Машина и дорога остаются видимыми",
+            "en": "The car and road remain visible"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не перекрывайте каплями критические ориентиры и интерфейс.",
+        "en": "Keep droplets from obscuring critical landmarks and interface elements."
+      },
+      {
+        "ru": "Дайте возможность снизить интенсивность эффекта.",
+        "en": "Provide an option to reduce effect intensity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Driveclub (2014)",
+        "url": "https://gamemechanics.org/patterns/raindrops-on-screen"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-hints": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подсказки внутри мира",
+      "en": "In-world hints"
+    },
+    "description": {
+      "ru": "Надпись, знак или реплика внутри игрового мира объясняет действие. Игрок узнаёт правило, продолжая исследовать сцену.",
+      "en": "A message, sign or line of dialogue within the world explains an action. The player learns a rule while continuing to explore the scene."
+    },
+    "image": {
+      "src": "images/mechanics/combat-diegetic-hints.webp",
+      "width": 738,
+      "height": 410,
+      "game": "Dead Space (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-hints",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_space_tip.jpg",
+      "credit": "Motive Studio / Electronic Arts; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Правило боя написано на стене",
+        "en": "A combat rule written on the wall"
+      },
+      "alt": {
+        "ru": "В Dead Space над верстаком написано «Cut off their limbs», рядом стоит Айзек с оружием.",
+        "en": "In Dead Space, “Cut off their limbs” is written above a workbench beside armed Isaac."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 24,
+          "label": {
+            "ru": "Надпись подсказывает отсечение конечностей",
+            "en": "The writing hints at cutting off limbs"
+          }
+        },
+        {
+          "x": 33,
+          "y": 58,
+          "label": {
+            "ru": "Подсказка встроена в исследуемое помещение",
+            "en": "The hint is part of the room being explored"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Размещайте подсказку в естественном поле внимания до нужного действия.",
+        "en": "Place the hint in the natural field of attention before it is needed."
+      },
+      {
+        "ru": "Проверяйте локализацию и читаемость текста на малом экране.",
+        "en": "Check localization and text readability on small screens."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space (2023)",
+        "url": "https://gamemechanics.org/patterns/diegetic-hints"
+      }
+    ]
+  },
+  "game-mechanics--gm-tetris-inventory": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Укладка инвентаря",
+      "en": "Inventory packing"
+    },
+    "description": {
+      "ru": "Предметы занимают разное число клеток в ограниченной сетке. Игрок переставляет и поворачивает вещи, чтобы освободить место для нужного.",
+      "en": "Items occupy different amounts of space in a limited grid. The player moves and rotates them to make room for what matters."
+    },
+    "image": {
+      "src": "images/mechanics/combat-tetris-inventory.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "Resident Evil 4 (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/tetris-inventory",
+      "originalUrl": "https://cdn.gamemechanics.org/resident_evil_4_remake_inventory.jpg",
+      "credit": "Capcom; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Оружие разной формы в кейсе Леона",
+        "en": "Different weapon shapes in Leon’s case"
+      },
+      "alt": {
+        "ru": "В Resident Evil 4 оружие и припасы уложены в клетчатый кейс; винтовка занимает длинный ряд, ниже остаются свободные клетки.",
+        "en": "Weapons and supplies fill a gridded case in Resident Evil 4; a rifle occupies a long row with empty cells below."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 31,
+          "label": {
+            "ru": "Длинное оружие занимает ряд клеток",
+            "en": "A long weapon occupies a row of cells"
+          }
+        },
+        {
+          "x": 50,
+          "y": 54,
+          "label": {
+            "ru": "Свободные клетки для новых предметов",
+            "en": "Empty cells for new items"
+          }
+        }
+      ],
+      "crop": {
+        "x": 245,
+        "y": 68,
+        "width": 515,
+        "height": 370
+      }
+    },
+    "tips": [
+      {
+        "ru": "Показывайте габариты и допустимое положение до переноса предмета.",
+        "en": "Preview item footprints and valid placement before moving them."
+      },
+      {
+        "ru": "Добавляйте автоматическую укладку, если перестановка становится рутиной.",
+        "en": "Offer automatic packing when rearrangement becomes routine."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resident Evil 4 (2023)",
+        "url": "https://gamemechanics.org/patterns/tetris-inventory"
+      }
+    ]
   }
 }
