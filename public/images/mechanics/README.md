@@ -114,3 +114,23 @@ MKIceAndFire and SHIRRAKO watermarks remain visible and are credited as shown.
 The decorative vending-machine example uses Outlast rather than implying that
 Deus Ex’s machines necessarily lack purchase interactions. The brief F.E.A.R. 2
 apparition is framed more closely while retaining the hospital corridor context.
+
+`atmosphere-*.webp` covers in-world interfaces, embodiment, reflections, animated
+props, surface traces and weather using the exact Game Mechanics galleries and
+clips recorded in the cards. Visible MKIceAndFire and KVO watermarks remain in
+place. The wet-road card reuses the already compressed Driveclub frame rather
+than shipping another copy. Snow coverage uses Red Dead Redemption 2; the
+snowstorm uses Metro Exodus instead of a winter clip with an uncertain Tomb
+Raider release label.
+
+`minecraft-day-night.webp` retains the official comparison of lighting at four
+times of day from Microsoft Learn’s [Introduction to Commands](https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable).
+Its [original comparison image](https://learn.microsoft.com/en-us/minecraft/creator/documents/media/commands/introduction-to-commands.jpg?view=minecraft-bedrock-stable)
+remains © Mojang AB / Microsoft and is excluded from MIT and CC BY 4.0. The
+comparison was supplied by the source, not constructed from unrelated frames.
+
+`mudrunner-tire-tracks.webp` is a bounded WebP derivative of a screenshot in
+[MudRunner’s publisher-distributed Steam gallery](https://store.steampowered.com/app/675010/MudRunner/).
+Credit: Saber Interactive / Focus Entertainment. The original image URL remains
+in the card metadata. The screenshot retains its original rights and is excluded
+from the portal’s MIT and CC BY 4.0 licenses.

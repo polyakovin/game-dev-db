@@ -13218,5 +13218,1607 @@
         "url": "https://gamemechanics.org/patterns/scripted-scares"
       }
     ]
+  },
+  "game-mechanics--gm-scripted-spectacle": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сценарное зрелище",
+      "en": "Scripted spectacle"
+    },
+    "description": {
+      "ru": "Зрелищное событие воспроизводится по заранее заданному сценарию.",
+      "en": "A dramatic event follows a predetermined script."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-scripted-spectacle.webp",
+      "width": 600,
+      "height": 340,
+      "game": "Doom 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/scripted-spectacle",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/doom_3_spectacle.webm",
+      "sourceFrameSeconds": 3.12,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Событие разворачивается за стеклом лаборатории",
+        "en": "An event unfolds behind laboratory glass"
+      },
+      "alt": {
+        "ru": "Doom 3: Событие разворачивается за стеклом лаборатории.",
+        "en": "Doom 3: An event unfolds behind laboratory glass."
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 42,
+          "label": {
+            "ru": "Постановочное действие за стеклом",
+            "en": "Staged action beyond the glass"
+          }
+        }
+      ],
+      "crop": {
+        "x": 80,
+        "y": 10,
+        "width": 420,
+        "height": 280
+      }
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте видимость события и проверяйте момент, когда игрок его заметит.",
+        "en": "Keep the event visible and check when the player will notice it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3",
+        "url": "https://gamemechanics.org/patterns/scripted-spectacle"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-map": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Карта как предмет мира",
+      "en": "In-world map"
+    },
+    "description": {
+      "ru": "Для навигации персонаж использует физически представленную карту.",
+      "en": "Navigation uses a map represented as a physical world object."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-diegetic-map.webp",
+      "width": 1200,
+      "height": 750,
+      "game": "Far Cry 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-map",
+      "originalUrl": "https://cdn.gamemechanics.org/far_cry_2_map_5.webp",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Карту в руках дополняет переносной GPS",
+        "en": "A handheld map is complemented by a portable GPS"
+      },
+      "alt": {
+        "ru": "Far Cry 2: Карту в руках дополняет переносной GPS.",
+        "en": "Far Cry 2: A handheld map is complemented by a portable GPS."
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 71,
+          "label": {
+            "ru": "Физическая карта в руках героя",
+            "en": "Physical map in the hero’s hands"
+          }
+        },
+        {
+          "x": 74,
+          "y": 66,
+          "label": {
+            "ru": "Отдельный навигационный прибор",
+            "en": "A separate navigation device"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте читаемость карты в движении и связь ориентиров с местностью.",
+        "en": "Check map readability while moving and how landmarks relate to the terrain."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 2",
+        "url": "https://gamemechanics.org/patterns/diegetic-map"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-health-display": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Здоровье на экипировке",
+      "en": "Health displayed on equipment"
+    },
+    "description": {
+      "ru": "Состояние здоровья показывает устройство или элемент экипировки героя.",
+      "en": "A world device or equipment component indicates character health."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-diegetic-health-display.webp",
+      "width": 1440,
+      "height": 576,
+      "game": "Dead Space",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-health-display",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_space_health_display.jpg",
+      "credit": "Electronic Arts; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Шкала на костюме меняется вместе со здоровьем",
+        "en": "The suit’s meter changes with health"
+      },
+      "alt": {
+        "ru": "Dead Space: Шкала на костюме меняется вместе со здоровьем.",
+        "en": "Dead Space: The suit’s meter changes with health."
+      },
+      "markers": [
+        {
+          "x": 8,
+          "y": 68,
+          "label": {
+            "ru": "Заполненная шкала на спине",
+            "en": "Filled meter on the back"
+          }
+        },
+        {
+          "x": 75,
+          "y": 60,
+          "label": {
+            "ru": "Красный остаток шкалы при низком здоровье",
+            "en": "A red remainder at low health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дублируйте цвет формой или заполнением и сохраняйте индикатор в поле зрения.",
+        "en": "Supplement color with shape or fill level and keep the indicator visible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space",
+        "url": "https://gamemechanics.org/patterns/diegetic-health-display"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-menu": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Меню внутри мира",
+      "en": "In-world menu"
+    },
+    "description": {
+      "ru": "Пункты меню представлены предметом или устройством в мире.",
+      "en": "Menu options appear on an object or device within the world."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-diegetic-menu.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Metro 2033 Redux",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-menu",
+      "originalUrl": "https://cdn.gamemechanics.org/metro-2033-redux-main-menu.jpg",
+      "credit": "4A Games; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Новая игра на бумаге, продолжение на экране",
+        "en": "New game on paper, continue on a screen"
+      },
+      "alt": {
+        "ru": "Metro 2033 Redux: Новая игра на бумаге, продолжение на экране.",
+        "en": "Metro 2033 Redux: New game on paper, continue on a screen."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 43,
+          "label": {
+            "ru": "Пункт меню на листе в машинке",
+            "en": "Menu option on the typewriter paper"
+          }
+        },
+        {
+          "x": 84,
+          "y": 54,
+          "label": {
+            "ru": "Продолжение игры на экране телевизора",
+            "en": "Continue option on the television"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемые подписи, явный фокус и обычную навигацию с клавиатуры.",
+        "en": "Retain readable labels, clear focus and conventional keyboard navigation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metro 2033 Redux",
+        "url": "https://gamemechanics.org/patterns/diegetic-menu"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-healing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лечение видимым действием",
+      "en": "Visible healing action"
+    },
+    "description": {
+      "ru": "Восстановление здоровья сопровождается действием персонажа внутри мира.",
+      "en": "Health restoration includes an observable in-world character action."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-diegetic-healing.webp",
+      "width": 400,
+      "height": 220,
+      "game": "Far Cry 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-healing",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_2_healing.webm",
+      "sourceFrameSeconds": 17.58,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой обрабатывает повреждение на руке",
+        "en": "The hero attends to an arm injury"
+      },
+      "alt": {
+        "ru": "Far Cry 2: Герой обрабатывает повреждение на руке.",
+        "en": "Far Cry 2: The hero attends to an arm injury."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 57,
+          "label": {
+            "ru": "Руки и инструмент в анимации лечения",
+            "en": "Hands and tool in the healing animation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте длительность действия с риском остановки и моментом восстановления.",
+        "en": "Connect action duration to the risk of stopping and the recovery moment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 2",
+        "url": "https://gamemechanics.org/patterns/diegetic-healing"
+      }
+    ]
+  },
+  "game-mechanics--gm-protagonist-self-hints": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подсказки в репликах героя",
+      "en": "Protagonist self-hints"
+    },
+    "description": {
+      "ru": "Персонаж проговаривает наблюдения или следующий шаг для игрока.",
+      "en": "The protagonist voices observations or a suggested next step."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-protagonist-self-hints.webp",
+      "width": 900,
+      "height": 504,
+      "game": "Alan Wake 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/protagonist-self-hints",
+      "originalUrl": "https://cdn.gamemechanics.org/alan_wake_talking_to_himself.jpg",
+      "credit": "Remedy Entertainment; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Реплика подсказывает применить лампу у входа",
+        "en": "A spoken hint suggests using the lamp at an entrance"
+      },
+      "alt": {
+        "ru": "Alan Wake 2: Реплика подсказывает применить лампу у входа.",
+        "en": "Alan Wake 2: A spoken hint suggests using the lamp at an entrance."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 85,
+          "label": {
+            "ru": "Субтитр реплики о следующем действии",
+            "en": "Subtitle of a line about the next action"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте время на самостоятельное решение и настройку частоты подсказок.",
+        "en": "Allow time for independent solving and adjustable hint frequency."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Alan Wake 2",
+        "url": "https://gamemechanics.org/patterns/protagonist-self-hints"
+      }
+    ]
+  },
+  "game-mechanics--gm-visible-player-body": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Видимое тело героя",
+      "en": "Visible player body"
+    },
+    "description": {
+      "ru": "При взгляде вниз игрок видит тело своего персонажа.",
+      "en": "Looking down reveals the playable character's own body."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-visible-player-body.webp",
+      "width": 1200,
+      "height": 675,
+      "game": "Outlast",
+      "sourceUrl": "https://gamemechanics.org/patterns/visible-player-body",
+      "originalUrl": "https://cdn.gamemechanics.org/outlast_body.jpg",
+      "credit": "Red Barrels; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "При взгляде вниз видны руки, туловище и ноги",
+        "en": "Looking down reveals hands, torso and legs"
+      },
+      "alt": {
+        "ru": "Outlast: При взгляде вниз видны руки, туловище и ноги.",
+        "en": "Outlast: Looking down reveals hands, torso and legs."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 81,
+          "label": {
+            "ru": "Тело героя в виде от первого лица",
+            "en": "The hero’s body in first-person view"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимое тело с камерой, позой и фактическими столкновениями.",
+        "en": "Keep the visible body consistent with camera, pose and actual collisions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Outlast",
+        "url": "https://gamemechanics.org/patterns/visible-player-body"
+      }
+    ]
+  },
+  "game-mechanics--gm-casting-shadow": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тень персонажа",
+      "en": "Character shadow"
+    },
+    "description": {
+      "ru": "Свет создаёт видимую тень управляемого героя в окружении.",
+      "en": "Lighting casts the playable character's visible shadow into the scene."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-casting-shadow.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "F.E.A.R.",
+      "sourceUrl": "https://gamemechanics.org/patterns/casting-shadow",
+      "originalUrl": "https://cdn.gamemechanics.org/fear_shadow2.jpg",
+      "credit": "Monolith Productions; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Силуэт героя с оружием отбрасывается на стену",
+        "en": "The armed hero’s silhouette falls on a wall"
+      },
+      "alt": {
+        "ru": "F.E.A.R.: Силуэт героя с оружием отбрасывается на стену.",
+        "en": "F.E.A.R.: The armed hero’s silhouette falls on a wall."
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 55,
+          "label": {
+            "ru": "Тень головы и оружия героя",
+            "en": "Shadow of the hero’s head and weapon"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте соответствие тени позе и источнику света.",
+        "en": "Check that the shadow matches the pose and light source."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R.",
+        "url": "https://gamemechanics.org/patterns/casting-shadow"
+      }
+    ]
+  },
+  "game-mechanics--gm-moving-environmental-parts": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Движущиеся детали окружения",
+      "en": "Moving environmental parts"
+    },
+    "description": {
+      "ru": "Анимированные элементы показывают работу механизмов или жизнь места.",
+      "en": "Animated scenery suggests working machinery or an active setting."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-moving-environmental-parts.webp",
+      "width": 626,
+      "height": 436,
+      "game": "Doom 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/moving-environmental-parts",
+      "originalUrl": "https://cdn.gamemechanics.org/doom_3_machinery.webm",
+      "sourceFrameSeconds": 11.25,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Подвижные узлы лабораторного устройства",
+        "en": "Moving components of laboratory equipment"
+      },
+      "alt": {
+        "ru": "Doom 3: Подвижные узлы лабораторного устройства.",
+        "en": "Doom 3: Moving components of laboratory equipment."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 29,
+          "label": {
+            "ru": "Анимированный узел действующего механизма",
+            "en": "Animated component of an operating mechanism"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте фоновое движение и объекты, влияющие на игровой маршрут.",
+        "en": "Distinguish background motion from objects affecting the playable route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3",
+        "url": "https://gamemechanics.org/patterns/moving-environmental-parts"
+      }
+    ]
+  },
+  "game-mechanics--gm-footprints": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отпечатки шагов",
+      "en": "Footprints"
+    },
+    "description": {
+      "ru": "Контакт ног с поверхностью оставляет следы движения.",
+      "en": "Foot contact leaves marks recording movement across a surface."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-footprints.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Duke Nukem 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/footprints",
+      "originalUrl": "https://cdn.gamemechanics.org/duke_nukem_steps.jpg",
+      "credit": "3D Realms; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Следы подошв остаются на деревянном полу",
+        "en": "Sole prints remain on a wooden floor"
+      },
+      "alt": {
+        "ru": "Duke Nukem 3D: Следы подошв остаются на деревянном полу.",
+        "en": "Duke Nukem 3D: Sole prints remain on a wooden floor."
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 69,
+          "label": {
+            "ru": "Отпечаток подошвы после шага",
+            "en": "A sole print left by a step"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте след с материалом поверхности и моментом контакта ноги.",
+        "en": "Match the print to the surface material and timing of foot contact."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D",
+        "url": "https://gamemechanics.org/patterns/footprints"
+      }
+    ]
+  },
+  "game-mechanics--gm-mirrors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зеркало",
+      "en": "Mirror"
+    },
+    "description": {
+      "ru": "Отражающая поверхность показывает сцену с другого направления.",
+      "en": "A reflective surface shows the scene from another direction."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-mirrors.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Duke Nukem 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/mirrors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/duke-nukem-3d-mirror.webm",
+      "sourceFrameSeconds": 2.29,
+      "credit": "3D Realms; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой отражается в зеркале комнаты",
+        "en": "The hero appears in a room’s mirror"
+      },
+      "alt": {
+        "ru": "Duke Nukem 3D: Герой отражается в зеркале комнаты.",
+        "en": "Duke Nukem 3D: The hero appears in a room’s mirror."
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 43,
+          "label": {
+            "ru": "Отражение управляемого персонажа",
+            "en": "Reflection of the player character"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте положение отражения, анимацию и видимость предметов в руках.",
+        "en": "Check reflection position, animation and visibility of held items."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D",
+        "url": "https://gamemechanics.org/patterns/mirrors"
+      }
+    ]
+  },
+  "game-mechanics--gm-moving-lights": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подвижный источник света",
+      "en": "Moving light"
+    },
+    "description": {
+      "ru": "Перемещение лампы меняет освещение и тени во времени.",
+      "en": "A moving light changes illumination and shadows over time."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-moving-lights.webp",
+      "width": 498,
+      "height": 372,
+      "game": "F.E.A.R.",
+      "sourceUrl": "https://gamemechanics.org/patterns/moving-lights",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_lamp.webm",
+      "sourceFrameSeconds": 2.16,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Качающаяся лампа меняет световое пятно в коридоре",
+        "en": "A swinging lamp shifts the lit area in a corridor"
+      },
+      "alt": {
+        "ru": "F.E.A.R.: Качающаяся лампа меняет световое пятно в коридоре.",
+        "en": "F.E.A.R.: A swinging lamp shifts the lit area in a corridor."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 26,
+          "label": {
+            "ru": "Подвижная лампа под потолком",
+            "en": "Moving ceiling lamp"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте движение лампы, светового пятна и теней.",
+        "en": "Keep lamp, light patch and shadow movement consistent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R.",
+        "url": "https://gamemechanics.org/patterns/moving-lights"
+      }
+    ]
+  },
+  "game-mechanics--gm-wet-surfaces": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Мокрые отражающие поверхности",
+      "en": "Wet reflective surfaces"
+    },
+    "description": {
+      "ru": "Влага меняет блеск и отражающую способность материалов.",
+      "en": "Moisture changes a material's sheen and reflectivity."
+    },
+    "image": {
+      "src": "images/mechanics/combat-raindrops-on-screen.webp",
+      "width": 460,
+      "height": 254,
+      "game": "Driveclub (2014)",
+      "sourceUrl": "https://gamemechanics.org/patterns/wet-surfaces",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/drive_club_storm.webm",
+      "sourceFrameSeconds": 4.88,
+      "credit": "Evolution Studios / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "На мокром асфальте видны световые отблески",
+        "en": "Light glints are visible on wet asphalt"
+      },
+      "alt": {
+        "ru": "Driveclub (2014): На мокром асфальте видны световые отблески.",
+        "en": "Driveclub (2014): Light glints are visible on wet asphalt."
+      },
+      "markers": [
+        {
+          "x": 24,
+          "y": 66,
+          "label": {
+            "ru": "Отблески на мокром покрытии дороги",
+            "en": "Glints on the wet road surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Подбирайте блеск по материалу, не превращая все влажные поверхности в зеркала.",
+        "en": "Tune gloss by material rather than making every wet surface mirror-like."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Driveclub (2014)",
+        "url": "https://gamemechanics.org/patterns/wet-surfaces"
+      }
+    ]
+  },
+  "game-mechanics--gm-tire-tracks": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Следы шин",
+      "en": "Tire tracks"
+    },
+    "description": {
+      "ru": "Колёса оставляют на поверхности читаемый след движения.",
+      "en": "Wheels leave a readable trail of vehicle movement on a surface."
+    },
+    "image": {
+      "src": "images/mechanics/mudrunner-tire-tracks.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "MudRunner",
+      "sourceUrl": "https://store.steampowered.com/app/675010/MudRunner/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/675010/ss_06a211b2c74b30ff539339e9a87f69f2272c5dbb.1920x1080.jpg?t=1784714181",
+      "credit": "Saber Interactive / Focus Entertainment; screenshot from the publisher’s Steam gallery",
+      "rights": "MudRunner imagery © its respective rights holders. Publisher-distributed screenshot; all rights reserved and excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Колея от колёс в мягком грунте",
+        "en": "Wheel ruts in soft ground"
+      },
+      "alt": {
+        "ru": "В MudRunner грузовик идёт по грязной дороге; перед его колёсами видны глубокие борозды колеи.",
+        "en": "A MudRunner truck follows a muddy road with deep wheel ruts visible ahead of its tires."
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 82,
+          "label": {
+            "ru": "Борозды колеи на дороге",
+            "en": "Wheel ruts along the road"
+          }
+        },
+        {
+          "x": 54,
+          "y": 69,
+          "label": {
+            "ru": "Колёса в продавленном грунте",
+            "en": "Wheels in the deformed ground"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Соединяйте следы по траектории колёс и учитывайте повороты.",
+        "en": "Connect tracks along wheel paths and account for turning."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MudRunner",
+        "url": "https://store.steampowered.com/app/675010/MudRunner/"
+      }
+    ]
+  },
+  "game-mechanics--gm-flickering-lights": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Мерцающий свет",
+      "en": "Flickering lights"
+    },
+    "description": {
+      "ru": "Нестабильная яркость меняет видимость и атмосферу участка.",
+      "en": "Unstable brightness changes local visibility and atmosphere."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-flickering-lights.webp",
+      "width": 600,
+      "height": 334,
+      "game": "F.E.A.R.",
+      "sourceUrl": "https://gamemechanics.org/patterns/flickering-lights",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_lights.webm",
+      "sourceFrameSeconds": 0.82,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Нестабильный светильник освещает проход",
+        "en": "An unstable light illuminates a passage"
+      },
+      "alt": {
+        "ru": "F.E.A.R.: Нестабильный светильник освещает проход.",
+        "en": "F.E.A.R.: An unstable light illuminates a passage."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 24,
+          "label": {
+            "ru": "Мерцающий потолочный светильник",
+            "en": "Flickering ceiling fixture"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемость пути и настройку интенсивности вспышек.",
+        "en": "Preserve route readability and adjustable flash intensity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R.",
+        "url": "https://gamemechanics.org/patterns/flickering-lights"
+      }
+    ]
+  },
+  "game-mechanics--gm-smoke-and-flare-markers": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дымовой маркер",
+      "en": "Smoke marker"
+    },
+    "description": {
+      "ru": "Дым или яркий огонь отмечает важную точку в пространстве.",
+      "en": "Smoke or a bright flare marks an important world location."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-smoke-and-flare-markers.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Rage 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/smoke-and-flare-markers",
+      "originalUrl": "https://cdn.gamemechanics.org/rage_2_flare.png",
+      "credit": "Avalanche Studios / id Software; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Цветной столб дыма отмечает точку среди скал",
+        "en": "A colored smoke column marks a location among rocks"
+      },
+      "alt": {
+        "ru": "Rage 2: Цветной столб дыма отмечает точку среди скал.",
+        "en": "Rage 2: A colored smoke column marks a location among rocks."
+      },
+      "markers": [
+        {
+          "x": 77,
+          "y": 30,
+          "label": {
+            "ru": "Заметный издалека дымовой сигнал",
+            "en": "Smoke signal visible from a distance"
+          }
+        },
+        {
+          "x": 77,
+          "y": 51,
+          "label": {
+            "ru": "Отмеченная точка у основания дыма",
+            "en": "Marked location at the base of the smoke"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте цвет, высоту и силуэт маркера различимыми на фоне местности.",
+        "en": "Keep marker color, height and silhouette distinct from the terrain."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rage 2",
+        "url": "https://gamemechanics.org/patterns/smoke-and-flare-markers"
+      }
+    ]
+  },
+  "game-mechanics--gm-distorting-glass": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Искажающее стекло",
+      "en": "Distorting glass"
+    },
+    "description": {
+      "ru": "Стекло изменяет вид объектов за ним за счёт преломления.",
+      "en": "Glass refracts the view of objects behind it."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-distorting-glass.webp",
+      "width": 800,
+      "height": 444,
+      "game": "F.E.A.R. 2: Project Origin",
+      "sourceUrl": "https://gamemechanics.org/patterns/distorting-glass",
+      "originalUrl": "https://cdn.gamemechanics.org/fear_2_distorted_glass.webm",
+      "sourceFrameSeconds": 1.35,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Через стекло двери вид комнаты теряет чёткость",
+        "en": "A door’s glass blurs the view of the room beyond"
+      },
+      "alt": {
+        "ru": "F.E.A.R. 2: Project Origin: Через стекло двери вид комнаты теряет чёткость.",
+        "en": "F.E.A.R. 2: Project Origin: A door’s glass blurs the view of the room beyond."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 47,
+          "label": {
+            "ru": "Стекло между камерой и соседним помещением",
+            "en": "Glass between the camera and the adjacent room"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте полезные силуэты, если за стеклом находится важная цель.",
+        "en": "Preserve useful silhouettes when an important target is behind the glass."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R. 2: Project Origin",
+        "url": "https://gamemechanics.org/patterns/distorting-glass"
+      }
+    ]
+  },
+  "game-mechanics--gm-heat-haze": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Марево от нагрева",
+      "en": "Heat haze"
+    },
+    "description": {
+      "ru": "Искажение изображения создаёт впечатление нагретого воздуха.",
+      "en": "Image distortion suggests heated air."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-heat-haze.webp",
+      "width": 600,
+      "height": 334,
+      "game": "Gothic 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/heat-haze",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/gothic_3_heat_haze.webm",
+      "sourceFrameSeconds": 3.7,
+      "credit": "Piranha Bytes; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Над факелом дрожит изображение фона",
+        "en": "The background shimmers above a torch"
+      },
+      "alt": {
+        "ru": "Gothic 3: Над факелом дрожит изображение фона.",
+        "en": "Gothic 3: The background shimmers above a torch."
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 37,
+          "label": {
+            "ru": "Область искажения над пламенем",
+            "en": "Distortion area above the flame"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Привязывайте искажение к источнику жара и ограничивайте его силу.",
+        "en": "Anchor distortion to the heat source and limit its strength."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Gothic 3",
+        "url": "https://gamemechanics.org/patterns/heat-haze"
+      }
+    ]
+  },
+  "game-mechanics--gm-broken-mirrors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повреждённое зеркало",
+      "en": "Broken mirror"
+    },
+    "description": {
+      "ru": "Повреждение меняет зеркало и видимое в нём отражение.",
+      "en": "Damage changes a mirror and its reflected view."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-broken-mirrors.webp",
+      "width": 500,
+      "height": 278,
+      "game": "Duke Nukem Forever",
+      "sourceUrl": "https://gamemechanics.org/patterns/broken-mirrors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/duke-nukem-forever-broken-mirror.webm",
+      "sourceFrameSeconds": 1.92,
+      "credit": "3D Realms / Gearbox Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Трещины и утраченные участки разрывают отражение",
+        "en": "Cracks and missing sections break up the reflection"
+      },
+      "alt": {
+        "ru": "Duke Nukem Forever: Трещины и утраченные участки разрывают отражение.",
+        "en": "Duke Nukem Forever: Cracks and missing sections break up the reflection."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 36,
+          "label": {
+            "ru": "Трещины и повреждённая отражающая поверхность",
+            "en": "Cracks and damaged reflective surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте повреждение, видимое отражение и звук разрушения.",
+        "en": "Keep damage, the visible reflection and breaking sound consistent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem Forever",
+        "url": "https://gamemechanics.org/patterns/broken-mirrors"
+      }
+    ]
+  },
+  "game-mechanics--gm-tv-movies": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Видео внутри игры",
+      "en": "In-world video"
+    },
+    "description": {
+      "ru": "Игрок может остановиться и смотреть медиаконтент в игровом мире.",
+      "en": "The player can stop to watch media within the game world."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-tv-movies.webp",
+      "width": 900,
+      "height": 499,
+      "game": "Doom 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/tv-movies",
+      "originalUrl": "https://cdn.gamemechanics.org/doom_3_tv.jpg",
+      "credit": "id Software; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Видеопрограмма на экране в коридоре",
+        "en": "A video program on a corridor screen"
+      },
+      "alt": {
+        "ru": "Doom 3: Видеопрограмма на экране в коридоре.",
+        "en": "Doom 3: A video program on a corridor screen."
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 24,
+          "label": {
+            "ru": "Экран с медиаконтентом внутри мира",
+            "en": "Screen with media content inside the world"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте услышать важную реплику и поддерживайте субтитры для передачи смысла.",
+        "en": "Make important lines audible and support subtitles for their meaning."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3",
+        "url": "https://gamemechanics.org/patterns/tv-movies"
+      }
+    ]
+  },
+  "game-mechanics--gm-day-night-cycle": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Смена дня и ночи",
+      "en": "Day–night cycle"
+    },
+    "description": {
+      "ru": "Игровое время меняет освещение мира по повторяющемуся циклу. День и ночь могут влиять на видимость, поведение мира и выбор маршрута.",
+      "en": "Game time changes world lighting in a repeating cycle. Day and night may affect visibility, world behavior and route choices."
+    },
+    "image": {
+      "src": "images/mechanics/minecraft-day-night.webp",
+      "width": 1170,
+      "height": 500,
+      "game": "Minecraft",
+      "sourceUrl": "https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable",
+      "originalUrl": "https://learn.microsoft.com/en-us/minecraft/creator/documents/media/commands/introduction-to-commands.jpg?view=minecraft-bedrock-stable",
+      "credit": "Mojang Studios / Microsoft; comparison screenshot via Microsoft Learn",
+      "rights": "Minecraft imagery © Mojang AB / Microsoft. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Minecraft: освещение в разное время суток",
+        "en": "Minecraft: lighting at different times of day"
+      },
+      "alt": {
+        "ru": "Minecraft: Minecraft: освещение в разное время суток.",
+        "en": "Minecraft: Minecraft: lighting at different times of day."
+      },
+      "markers": [
+        {
+          "x": 12,
+          "y": 59,
+          "label": {
+            "ru": "Ночная темнота",
+            "en": "Nighttime darkness"
+          }
+        },
+        {
+          "x": 63,
+          "y": 60,
+          "label": {
+            "ru": "Дневное освещение",
+            "en": "Daylight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте влияние темноты на ориентиры, угрозы и доступность действий.",
+        "en": "Account for darkness affecting landmarks, threats and available actions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Minecraft",
+        "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable"
+      }
+    ]
+  },
+  "game-mechanics--gm-rain": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дождь",
+      "en": "Rain"
+    },
+    "description": {
+      "ru": "Осадки визуально и акустически меняют окружение.",
+      "en": "Precipitation changes the environment's appearance and sound."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-rain.webp",
+      "width": 460,
+      "height": 252,
+      "game": "The Last of Us",
+      "sourceUrl": "https://gamemechanics.org/patterns/rain",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tlou_rain-mt92ib86.webm",
+      "sourceFrameSeconds": 6.14,
+      "credit": "Naughty Dog / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Дождь в ночном городском дворе",
+        "en": "Rain in a city courtyard at night"
+      },
+      "alt": {
+        "ru": "The Last of Us: Дождь в ночном городском дворе.",
+        "en": "The Last of Us: Rain in a city courtyard at night."
+      },
+      "markers": [
+        {
+          "x": 63,
+          "y": 42,
+          "label": {
+            "ru": "Полосы дождя на освещённом фоне",
+            "en": "Rain streaks against a lit background"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте осадки, звук, влажность материалов и условия видимости.",
+        "en": "Keep precipitation, sound, material wetness and visibility consistent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Last of Us",
+        "url": "https://gamemechanics.org/patterns/rain"
+      }
+    ]
+  },
+  "game-mechanics--gm-fog": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Туман",
+      "en": "Fog"
+    },
+    "description": {
+      "ru": "Взвесь в воздухе ограничивает дальность обзора.",
+      "en": "Airborne haze limits viewing distance."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-fog.webp",
+      "width": 1344,
+      "height": 756,
+      "game": "Silent Hill 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/fog",
+      "originalUrl": "https://cdn.gamemechanics.org/silent_hill_2_fog.jpg",
+      "credit": "Konami; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Дальние надгробия теряются в тумане",
+        "en": "Distant gravestones disappear into fog"
+      },
+      "alt": {
+        "ru": "Silent Hill 2: Дальние надгробия теряются в тумане.",
+        "en": "Silent Hill 2: Distant gravestones disappear into fog."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 38,
+          "label": {
+            "ru": "Постепенное исчезновение дальнего плана",
+            "en": "The distant view gradually disappears"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте дальность обзора с необходимыми ориентирами и угрозами.",
+        "en": "Match viewing distance to required landmarks and threats."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Silent Hill 2",
+        "url": "https://gamemechanics.org/patterns/fog"
+      }
+    ]
+  },
+  "game-mechanics--gm-snow": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Снег",
+      "en": "Snow"
+    },
+    "description": {
+      "ru": "Снежные осадки и покрытие задают состояние окружающей среды.",
+      "en": "Snowfall and ground cover establish environmental conditions."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-snow.webp",
+      "width": 498,
+      "height": 278,
+      "game": "Red Dead Redemption 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/snow",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rdr2_footprints_in_snow.webm",
+      "sourceFrameSeconds": 5.24,
+      "credit": "Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Артур идёт по заснеженному склону",
+        "en": "Arthur walks across a snow-covered slope"
+      },
+      "alt": {
+        "ru": "Red Dead Redemption 2: Артур идёт по заснеженному склону.",
+        "en": "Red Dead Redemption 2: Arthur walks across a snow-covered slope."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 66,
+          "label": {
+            "ru": "Снежное покрытие вокруг персонажа",
+            "en": "Snow cover around the character"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемость пути и отражайте глубину снега в движении.",
+        "en": "Keep routes readable and reflect snow depth in movement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Red Dead Redemption 2",
+        "url": "https://gamemechanics.org/patterns/snow"
+      }
+    ]
+  },
+  "game-mechanics--gm-thunderstorm": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Гроза",
+      "en": "Thunderstorm"
+    },
+    "description": {
+      "ru": "Молнии и гром меняют световую и звуковую картину сцены.",
+      "en": "Lightning and thunder alter a scene's lighting and sound."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-thunderstorm.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Forza Horizon 5",
+      "sourceUrl": "https://gamemechanics.org/patterns/thunderstorm",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/forza_horizon_5_storm.webm",
+      "sourceFrameSeconds": 0.65,
+      "credit": "Playground Games / Xbox Game Studios; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Молния видна над трассой за автомобилем",
+        "en": "Lightning is visible above the road beyond the car"
+      },
+      "alt": {
+        "ru": "Forza Horizon 5: Молния видна над трассой за автомобилем.",
+        "en": "Forza Horizon 5: Lightning is visible above the road beyond the car."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 43,
+          "label": {
+            "ru": "Разряд на фоне грозового неба",
+            "en": "Lightning against a stormy sky"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте вспышку со звуком и предусмотрите снижение её интенсивности.",
+        "en": "Coordinate the flash with sound and provide reduced intensity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Forza Horizon 5",
+        "url": "https://gamemechanics.org/patterns/thunderstorm"
+      }
+    ]
+  },
+  "game-mechanics--gm-dynamic-weather": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Динамическая погода",
+      "en": "Dynamic weather"
+    },
+    "description": {
+      "ru": "Погодные состояния сменяются по ходу игры.",
+      "en": "Weather conditions transition during play."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-dynamic-weather.webp",
+      "width": 598,
+      "height": 342,
+      "game": "Gothic",
+      "sourceUrl": "https://gamemechanics.org/patterns/dynamic-weather",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/gothic_1_weather.webm",
+      "sourceFrameSeconds": 6.88,
+      "credit": "Piranha Bytes; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пасмурная погода меняет вид открытой местности",
+        "en": "Overcast weather changes the appearance of open terrain"
+      },
+      "alt": {
+        "ru": "Gothic: Пасмурная погода меняет вид открытой местности.",
+        "en": "Gothic: Overcast weather changes the appearance of open terrain."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 33,
+          "label": {
+            "ru": "Изменившиеся освещение и видимость",
+            "en": "Changed lighting and visibility"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте переход между состояниями и учитывайте его влияние на игру.",
+        "en": "Communicate transitions between states and account for gameplay effects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Gothic",
+        "url": "https://gamemechanics.org/patterns/dynamic-weather"
+      }
+    ]
+  },
+  "game-mechanics--gm-traces-in-snow": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Следы в снегу",
+      "en": "Traces in snow"
+    },
+    "description": {
+      "ru": "Передвижение оставляет в снегу заметные отпечатки или борозды.",
+      "en": "Movement leaves visible impressions or grooves in snow."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-traces-in-snow.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Uncharted 2: Among Thieves",
+      "sourceUrl": "https://gamemechanics.org/patterns/traces-in-snow",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/uncharted_2_snow.webm",
+      "sourceFrameSeconds": 2.82,
+      "credit": "Naughty Dog / Sony Computer Entertainment; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "За Дрейком остаётся цепочка следов",
+        "en": "A trail of prints follows Drake"
+      },
+      "alt": {
+        "ru": "Uncharted 2: Among Thieves: За Дрейком остаётся цепочка следов.",
+        "en": "Uncharted 2: Among Thieves: A trail of prints follows Drake."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 80,
+          "label": {
+            "ru": "Отпечатки на снежном маршруте",
+            "en": "Prints along the snowy route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте глубину следа с толщиной снега, скоростью и позой персонажа.",
+        "en": "Match print depth to snow thickness, speed and character pose."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Uncharted 2: Among Thieves",
+        "url": "https://gamemechanics.org/patterns/traces-in-snow"
+      }
+    ]
+  },
+  "game-mechanics--gm-snowstorm": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Метель",
+      "en": "Snowstorm"
+    },
+    "description": {
+      "ru": "Плотный снег и ветер меняют видимость и восприятие пути.",
+      "en": "Heavy snow and wind alter visibility and route perception."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-snowstorm.webp",
+      "width": 460,
+      "height": 252,
+      "game": "Metro Exodus",
+      "sourceUrl": "https://gamemechanics.org/patterns/snowstorm",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/metro_exodus_blizzard.webm",
+      "sourceFrameSeconds": 8.32,
+      "credit": "4A Games; frame from clip via GameMechanics.org; visible source watermark: KVO",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Снег и ветер скрывают путь между разрушенными зданиями",
+        "en": "Snow and wind obscure a route between ruined buildings"
+      },
+      "alt": {
+        "ru": "Metro Exodus: Снег и ветер скрывают путь между разрушенными зданиями.",
+        "en": "Metro Exodus: Snow and wind obscure a route between ruined buildings."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 29,
+          "label": {
+            "ru": "Снежные частицы ограничивают обзор",
+            "en": "Snow particles limit visibility"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Оставляйте близкие ориентиры и предсказуемую обратную связь о направлении.",
+        "en": "Retain nearby landmarks and predictable directional feedback."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metro Exodus",
+        "url": "https://gamemechanics.org/patterns/snowstorm"
+      }
+    ]
+  },
+  "game-mechanics--gm-tornado": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Торнадо",
+      "en": "Tornado"
+    },
+    "description": {
+      "ru": "Подвижный вихрь создаёт область опасности и воздействия на окружение.",
+      "en": "A moving vortex creates hazards and affects the environment."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-tornado.webp",
+      "width": 400,
+      "height": 220,
+      "game": "Just Cause 4",
+      "sourceUrl": "https://gamemechanics.org/patterns/tornado",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/just_cause_4_tornado.webm",
+      "sourceFrameSeconds": 16.66,
+      "credit": "Avalanche Studios; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Вихрь поднимает предметы рядом с дорогой",
+        "en": "A funnel lifts objects beside the road"
+      },
+      "alt": {
+        "ru": "Just Cause 4: Вихрь поднимает предметы рядом с дорогой.",
+        "en": "Just Cause 4: A funnel lifts objects beside the road."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 33,
+          "label": {
+            "ru": "Подвижная воронка торнадо",
+            "en": "The tornado’s moving funnel"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Заранее показывайте область воздействия и возможность отступления.",
+        "en": "Signal the affected area and an escape route in advance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Cause 4",
+        "url": "https://gamemechanics.org/patterns/tornado"
+      }
+    ]
+  },
+  "game-mechanics--gm-torch": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Факел",
+      "en": "Torch"
+    },
+    "description": {
+      "ru": "Переносимое пламя освещает окружение и может участвовать во взаимодействиях.",
+      "en": "A carried flame illuminates surroundings and may support world interactions."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-torch.webp",
+      "width": 500,
+      "height": 278,
+      "game": "Tomb Raider",
+      "sourceUrl": "https://gamemechanics.org/patterns/torch",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_torch.webm",
+      "sourceFrameSeconds": 6.08,
+      "credit": "Crystal Dynamics; frame from clip via GameMechanics.org; visible recording watermark: MKIceAndFire",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Лара держит переносимый источник огня в пещере",
+        "en": "Lara holds a portable flame inside a cave"
+      },
+      "alt": {
+        "ru": "Tomb Raider: Лара держит переносимый источник огня в пещере.",
+        "en": "Tomb Raider: Lara holds a portable flame inside a cave."
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 26,
+          "label": {
+            "ru": "Пламя факела в поднятой руке",
+            "en": "Torch flame in the raised hand"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте границу света и возможность зажигать подходящие объекты.",
+        "en": "Show the lit area and the ability to ignite suitable objects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider",
+        "url": "https://gamemechanics.org/patterns/torch"
+      }
+    ]
   }
 }
