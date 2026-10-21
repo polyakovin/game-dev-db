@@ -1,16 +1,67 @@
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { resolve, sep } from 'node:path';
 import { mechanicPreviews } from './mechanic-previews.mjs';
 
-/** Read original PNG/JPEG dimensions without a native dependency at build time. */
+export const MAX_MECHANIC_IMAGE_EDGE = 1440;
+export const MAX_MECHANIC_IMAGE_BYTES = 250 * 1024;
+
+export function isWebP(bytes) {
+  return (
+    bytes.length >= 12 &&
+    bytes.toString('ascii', 0, 4) === 'RIFF' &&
+    bytes.toString('ascii', 8, 12) === 'WEBP'
+  );
+}
+
+/** Read WebP, PNG and JPEG dimensions without native build dependencies. */
 export function mechanicImageSize(bytes) {
+  if (isWebP(bytes)) {
+    if (bytes.readUInt32LE(4) + 8 !== bytes.length)
+      throw new Error('invalid WebP container length');
+    let dimensions;
+    let hasImage = false;
+    for (let offset = 12; offset + 8 <= bytes.length;) {
+      const kind = bytes.toString('ascii', offset, offset + 4);
+      const length = bytes.readUInt32LE(offset + 4);
+      const start = offset + 8;
+      const end = start + length;
+      if (end > bytes.length) throw new Error('truncated WebP chunk');
+      if (kind === 'VP8X' && length >= 10)
+        dimensions = {
+          width: bytes.readUIntLE(start + 4, 3) + 1,
+          height: bytes.readUIntLE(start + 7, 3) + 1,
+        };
+      if (kind === 'VP8 ' && length >= 10) {
+        if (bytes.readUIntLE(start + 3, 3) !== 0x2a019d)
+          throw new Error('invalid WebP frame header');
+        hasImage = true;
+        dimensions ??= {
+          width: bytes.readUInt16LE(start + 6) & 0x3fff,
+          height: bytes.readUInt16LE(start + 8) & 0x3fff,
+        };
+      }
+      if (kind === 'VP8L' && length >= 5) {
+        if (bytes[start] !== 0x2f)
+          throw new Error('invalid WebP lossless header');
+        hasImage = true;
+        const packed = bytes.readUInt32LE(start + 1);
+        dimensions ??= {
+          width: (packed & 0x3fff) + 1,
+          height: ((packed >>> 14) & 0x3fff) + 1,
+        };
+      }
+      offset = end + (length % 2);
+    }
+    if (!hasImage || !dimensions) throw new Error('missing WebP image frame');
+    return dimensions;
+  }
   if (
     bytes.length >= 24 &&
     bytes.subarray(0, 8).equals(Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]))
   )
     return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
   if (bytes.length < 4 || bytes.readUInt16BE(0) !== 0xffd8)
-    throw new Error('expected a PNG or JPEG screenshot');
+    throw new Error('expected a WebP, PNG or JPEG screenshot');
   let offset = 2;
   while (offset + 4 <= bytes.length) {
     if (bytes[offset] !== 0xff) throw new Error('invalid JPEG marker');
@@ -94,14 +145,20 @@ export function validateMechanicPreviews(
       typeof image.src === 'string' ? resolve(root, image.src) : '';
     if (
       !filename.startsWith(root + sep) ||
-      !/^images\/mechanics\/[a-z0-9-]+\.(?:png|jpg|jpeg)$/.test(image.src ?? '')
+      !/^images\/mechanics\/[a-z0-9-]+\.webp$/.test(image.src ?? '')
     )
-      error('image.src: expected a local mechanic screenshot');
+      error('image.src: expected a local WebP mechanic screenshot');
     else {
       try {
-        const actual = mechanicImageSize(readFileSync(filename));
+        const bytes = readFileSync(filename);
+        if (!isWebP(bytes)) error('image file: expected actual WebP format');
+        if (bytes.length > MAX_MECHANIC_IMAGE_BYTES)
+          error(`image file: exceeds ${MAX_MECHANIC_IMAGE_BYTES} bytes`);
+        const actual = mechanicImageSize(bytes);
         if (actual.width !== image.width || actual.height !== image.height)
-          error('image dimensions differ from the original file');
+          error('image dimensions differ from the published file');
+        if (Math.max(actual.width, actual.height) > MAX_MECHANIC_IMAGE_EDGE)
+          error(`image file: exceeds ${MAX_MECHANIC_IMAGE_EDGE} pixels`);
       } catch (cause) {
         error(`image file: ${cause.message}`);
       }
@@ -164,5 +221,8 @@ export function validateMechanicPreviews(
         if (!example.title?.trim() || !https(example.url))
           error('invalid example link');
   }
+  for (const filename of readdirSync(resolve(root, 'images/mechanics')))
+    if (/\.(?:png|jpe?g|gif|avif)$/i.test(filename))
+      errors.push(`mechanic images: ${filename} must be converted to WebP`);
   return errors;
 }

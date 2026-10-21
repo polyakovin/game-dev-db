@@ -14,6 +14,8 @@ and systems rather than rare variants.
   numbered tooltips, brief advice and primary example links.
 - Validate local image dimensions, crops, marker placement, source attribution,
   complete localization and canonical coverage before enabling each card.
+- Publish raster illustrations as compressed WebP, bounded to 1440 pixels on
+  the long edge and 250 KiB per file; preserve original source URLs and rights.
 - Reuse the reviewed compact/minimal responsive layouts and existing stable URLs.
 - Publish verified groups in priority order while retaining full reference
   sections and machine exports. Do not mark unsourced illustrations complete.

@@ -81,7 +81,10 @@ for (const lang of ['ru', 'en'] as const) {
         await page.evaluate(() => document.fonts.ready);
         const image = page.locator('.preview-image img');
         await expect(image).toBeVisible();
-        await expect(image).toHaveJSProperty('naturalWidth', 2048);
+        await expect(image).toHaveJSProperty(
+          'naturalWidth',
+          getMechanicPreview(id, lang)!.image.width,
+        );
         await expect(page.locator('.preview-marker')).toHaveCount(2);
         await expect(page.locator('.preview-categories a')).toHaveCount(2);
         const layout = await page.evaluate(() => {

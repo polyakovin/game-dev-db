@@ -3,6 +3,7 @@
 - [x] Support concise card titles and bounded example links without losing full sources.
 - [x] Validate authored card content, attribution, local images, crops and markers.
 - [x] Generalize discovery and verification beyond the single pilot.
+- [x] Convert all raster illustrations to compressed WebP and enforce image budgets.
 
 ## Authored rollout, in priority order
 - [ ] Cover broadly used movement, interaction, health and combat techniques.

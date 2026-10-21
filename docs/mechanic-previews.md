@@ -18,9 +18,12 @@ illustrated card. Archived compatibility records are excluded.
 contains a short bilingual display title and description, screenshot alt text/caption and numbered markers,
 one or two short application tips and primary-source example links. Image metadata keeps
 the local source path, dimensions, original URL, source page, authors and rights.
-Optional `image.crop` records a rectangle in original screenshot pixels. It frames
+Optional `image.crop` records a rectangle in published WebP pixels. It frames
 the relevant area while keeping enough scene or interface context to explain the example.
-The original PNG/JPEG stays unchanged; HTML remaps percentage markers into the cropped frame. Only the
+Published raster illustrations are compressed WebP derivatives, at most 1440 pixels
+on the long edge and 250 KiB each. Original source URLs remain in the metadata;
+redundant PNG/JPEG originals are not shipped. HTML remaps percentage markers into
+the cropped frame. Only the
 image is framed with clipping; text and navigation are never clipped.
 Numbered markers are buttons with localized tooltips using the existing marker
 labels. Pointer hover, keyboard focus and touch open the hint; Escape, pointer
@@ -36,8 +39,8 @@ unchanged. Cards show at most two authored example links, while all original
 reference sources and image source attribution remain in machine exports.
 
 `src/lib/mechanic-preview-validation.mjs` is part of canonical content validation.
-It checks both languages, short-content limits, HTTPS attribution, original local
-PNG/JPEG dimensions, crop bounds and marker membership. Crop rectangles include
+It checks both languages, short-content limits, HTTPS attribution, actual WebP
+format, published dimensions and byte budgets, crop bounds and marker membership. Crop rectangles include
 their origin and exclude their far edge; percentage coordinates are compared in
 the same units without a tolerance that changes that boundary.
 
@@ -71,3 +74,10 @@ Browser checks cover both languages/themes at 298×314, 375×375, 298×496, 319�
 required content, no scroll/clipped text, full-width main layout, picture
 occupancy, no-JS access, category links and exports. The image's intentional crop
 is not mistaken for concealed text. Run `npm run verify` and `npm run test:e2e`.
+
+Prepare new screenshots with `node scripts/optimize-mechanic-images.mjs` to preview
+conversion, then add `--write` to apply it. This editorial command requires the
+`cwebp` CLI (libwebp); normal builds and validation need no native image dependency.
+The converter starts at quality 82, reduces quality or dimensions when needed,
+strips metadata, never upscales, rescales crop edges and retains percentage markers.
+Review the result and tooltips visually before publication.

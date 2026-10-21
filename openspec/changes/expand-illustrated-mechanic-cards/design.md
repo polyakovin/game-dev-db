@@ -13,8 +13,12 @@ Keep authored bilingual cards in the existing mechanic preview source. Add a
 concise display title without replacing the stable record title. A card needs
 an inspected screenshot from a known game/application, its original source and
 rights, and labels pointing to the relevant visible elements. Use official
-publisher/developer materials where available. Crop via metadata; preserve the
-source image. Reuse an image only when it actually demonstrates the mechanic.
+publisher/developer materials where available. Publish compressed WebP derivatives
+with a maximum long edge of 1440 pixels and maximum file size of 250 KiB. Keep
+original source URLs and rights; do not ship redundant PNG/JPEG originals.
+Resize without upscaling and rebase crop pixel coordinates to the published
+dimensions. Percentage markers retain their positions. Crop via metadata.
+Reuse an image only when it actually demonstrates the mechanic.
 Keep one or two short tips and a bounded set of explicit example links; full
 reference sources remain in the record and exports.
 
@@ -29,7 +33,8 @@ complete; maintain an actionable report of remaining canonical IDs.
 ## Verification
 
 Validate localization, stable identity, source URLs, local image files and
-dimensions, crop bounds, marker membership and short-content limits. Exercise
+dimensions, actual WebP format, image size budgets, crop bounds, marker membership
+and short-content limits. Exercise
 every new card in RU/EN at tiny portrait, short landscape, desktop and fullscreen
 sizes. Retain keyboard/touch tooltips, no-JS titles, both themes, category links,
 search and full JSON/Markdown parity. Run canonical checks and browser tests,
