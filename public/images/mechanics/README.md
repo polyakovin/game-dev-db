@@ -36,6 +36,7 @@ Crops and contextual markers are HTML/CSS overlays.
 | `drg-*.webp` | Deep Rock Galactic / Ghost Ship Games, Coffee Stain Publishing | [Publisher’s Steam gallery](https://store.steampowered.com/app/548430/Deep_Rock_Galactic/) |
 | `monster-train-*.webp` | Monster Train / Shiny Shoe, Good Shepherd Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/1102190/Monster_Train/) |
 | `subnautica-*.webp` | Subnautica / Unknown Worlds Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/264710/Subnautica/) |
+| `just-cause-*.webp` | Just Cause 3 / Avalanche Studios, Square Enix | [Publisher’s Steam gallery](https://store.steampowered.com/app/225540/Just_Cause_3/) |
 | `tomb-raider-jump.webp` | Rise of the Tomb Raider / Crystal Dynamics, Eidos-Montréal | [Publisher’s Steam gallery](https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/) |
 | `spiritfarer-*.webp` | Spiritfarer / Thunder Lotus | [Official press kit](https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/) |
 | `gungeon-bullet-rings.webp` | Enter the Gungeon / Dodge Roll, Devolver Digital | [Publisher's Steam page](https://store.steampowered.com/app/311690/Enter_the_Gungeon/) |
@@ -59,3 +60,18 @@ These frames are excluded from MIT and CC BY 4.0.
 | `tomb-raider-classic-climb.webp` | Tomb Raider (1996) / Core Design | [Ledge climb-up](https://gamemechanics.org/patterns/ledge-climb-up) |
 | `splinter-cell-fence.webp` | Tom Clancy’s Splinter Cell (2002) / Ubisoft Montréal | [Climbing over fences](https://gamemechanics.org/patterns/climbing-over-fences) |
 | `splinter-cell-vent.webp`, `splinter-cell-night-vision.webp` | Splinter Cell: Chaos Theory (2005) / Ubisoft Montréal | [Crawling through vents](https://gamemechanics.org/patterns/crawling-through-vents) |
+
+`traversal-*.webp` uses similarly documented frames from the corresponding Game
+Mechanics pattern pages. These include Far Cry 2, Splinter Cell, Doom 3, Tomb
+Raider III, Shadow of the Tomb Raider, Uncharted: The Lost Legacy, Mass Effect:
+Andromeda, Starfield and Hitman: Codename 47. Metadata records each clip URL,
+requested extraction timestamp, game developer and source host. The source host
+is not asserted to be the recording’s creator. Visible recording watermarks are
+preserved; the Shadow of the Tomb Raider frame credits MKIceAndFire.
+
+`pillars-dialogue-gates.webp` reproduces the game screenshot in figure 4 on
+PDF page 27 of José Tiago dos Santos Suzano Magalhães, [Adaptive Game Design:
+Study of a fully adaptive framework (2015)](https://recipp.ipp.pt/bitstreams/be8bf81f-cd71-4f66-8cba-ae2cb1039981/download#page=27).
+The figure identifies its screenshot source as NeoGAF; that provenance is retained
+in the card’s rights metadata. This is a copyrighted Pillars of Eternity screenshot,
+not original portal artwork or an image licensed under CC BY 4.0.

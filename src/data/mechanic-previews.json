@@ -6550,8 +6550,8 @@
       "sourceUrl": "https://gamemechanics.org/patterns/ledge-climb-up",
       "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_1_ledge_climb_up.webm",
       "sourceFrameSeconds": 2.6,
-      "credit": "Core Design; gameplay capture: GameMechanics.org",
-      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "credit": "Core Design; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
       "caption": {
         "ru": "Подтягивание из виса на площадку",
         "en": "Pulling from a hang onto a platform"
@@ -6606,8 +6606,8 @@
       "sourceUrl": "https://gamemechanics.org/patterns/climbing-over-fences",
       "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_climb_fence.webm",
       "sourceFrameSeconds": 4.5,
-      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
-      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
       "caption": {
         "ru": "Переход через верх сетчатого забора",
         "en": "Crossing the top of a chain-link fence"
@@ -6670,8 +6670,8 @@
       "sourceUrl": "https://gamemechanics.org/patterns/crawling-through-vents",
       "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_chaos_theory_vents.webm",
       "sourceFrameSeconds": 0.29,
-      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
-      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
       "caption": {
         "ru": "Вход в вентиляционный проход",
         "en": "Entering a ventilation passage"
@@ -6734,8 +6734,8 @@
       "sourceUrl": "https://gamemechanics.org/patterns/crawling-through-vents",
       "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_chaos_theory_vents.webm",
       "sourceFrameSeconds": 1.44,
-      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
-      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
       "caption": {
         "ru": "Зелёный режим внутри тёмного прохода",
         "en": "Green viewing mode inside a dark passage"
@@ -6790,8 +6790,8 @@
       "sourceUrl": "https://gamemechanics.org/patterns/climbing-over-fences",
       "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_climb_fence.webm",
       "sourceFrameSeconds": 4.5,
-      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
-      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
       "caption": {
         "ru": "Сетчатая поверхность как опора",
         "en": "A chain-link surface as support"
@@ -6825,6 +6825,958 @@
       {
         "title": "Tom Clancy's Splinter Cell (2002)",
         "url": "https://gamemechanics.org/patterns/climbing-over-fences"
+      }
+    ]
+  },
+  "game-mechanics--gm-fast-travel": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Быстрое перемещение",
+      "en": "Fast travel"
+    },
+    "description": {
+      "ru": "Игрок выбирает доступный пункт и пропускает обычное преодоление пути. Условия доступа и цена перехода определяют, когда это выгодно.",
+      "en": "The player selects an available destination and skips ordinary travel. Access rules and travel costs determine when the shortcut is useful."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-fast-travel.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Far Cry 2 (2008)",
+      "sourceUrl": "https://gamemechanics.org/patterns/fast-travel",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_2_bus.webm",
+      "sourceFrameSeconds": 1.94,
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Карта маршрутов на автобусной остановке",
+        "en": "A route map at a bus stop"
+      },
+      "alt": {
+        "ru": "Far Cry 2: персонаж стоит перед картой автобусных маршрутов на остановке; рядом видна открытая территория.",
+        "en": "Far Cry 2: the player faces a bus-route map at a stop, beside the open landscape."
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 44,
+          "label": {
+            "ru": "Карта пунктов быстрого перемещения",
+            "en": "A map of fast-travel destinations"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте доступные пункты и ограничения до подтверждения.",
+        "en": "Show available destinations and restrictions before confirmation."
+      },
+      {
+        "ru": "Не теряйте сведения о времени и цене перехода.",
+        "en": "Keep travel time and cost visible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 2 (2008)",
+        "url": "https://gamemechanics.org/patterns/fast-travel"
+      }
+    ]
+  },
+  "game-mechanics--gm-shimmying-along-ledges": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Перемещение вдоль уступа",
+      "en": "Shimmying along a ledge"
+    },
+    "description": {
+      "ru": "Персонаж движется боком, удерживаясь руками за край. Узкая полоса опоры создаёт маршрут там, где нельзя пройти обычным шагом.",
+      "en": "The character moves sideways while hanging from an edge. A narrow support creates a route where ordinary walking is impossible."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-shimmying-along-ledges.webp",
+      "width": 498,
+      "height": 330,
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/shimmying-along-ledges",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_ledge.webm",
+      "sourceFrameSeconds": 3.39,
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Вис на краю под охраняемой площадкой",
+        "en": "Hanging below a guarded platform"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell: Сэм висит на краю стены под площадкой, на которой стоят охранники.",
+        "en": "Tom Clancy's Splinter Cell: Sam hangs from a wall edge beneath a platform occupied by guards."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 31,
+          "label": {
+            "ru": "Захват края для бокового движения",
+            "en": "Edge grip for sideways movement"
+          }
+        },
+        {
+          "x": 80,
+          "y": 31,
+          "label": {
+            "ru": "Продолжение опоры вдоль стены",
+            "en": "The support continues along the wall"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятное направление движения относительно камеры.",
+        "en": "Keep movement direction understandable relative to the camera."
+      },
+      {
+        "ru": "Проверяйте переходы через углы и выходы на площадку.",
+        "en": "Check corner transitions and exits onto a platform."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/shimmying-along-ledges"
+      }
+    ]
+  },
+  "game-mechanics--gm-squeezing-through-narrow-spaces": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Протискивание в узком проходе",
+      "en": "Squeezing through a gap"
+    },
+    "description": {
+      "ru": "Узкий проход меняет позу и ограничивает движение персонажа. Игрок проходит боком между препятствиями, сохраняя контроль направления.",
+      "en": "A narrow passage changes the character’s posture and restricts movement. The player moves sideways between obstacles while controlling direction."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-squeezing-through-narrow-spaces.webp",
+      "width": 600,
+      "height": 328,
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/squeezing-through-narrow-spaces",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_narrow.webm",
+      "sourceFrameSeconds": 3.92,
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Движение боком между стенами",
+        "en": "Moving sideways between walls"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell: Сэм прижимается к деревянной стене в тесном промежутке между двумя поверхностями.",
+        "en": "Tom Clancy's Splinter Cell: Sam presses against a wooden wall in a tight gap between two surfaces."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 69,
+          "label": {
+            "ru": "Персонаж проходит в боковой позе",
+            "en": "The character adopts a sideways posture"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте вход в узкий участок заметным и предсказуемым.",
+        "en": "Make the entrance to the narrow section visible and predictable."
+      },
+      {
+        "ru": "Проверяйте камеру и столкновения на всём пути.",
+        "en": "Check camera placement and collisions along the whole passage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/squeezing-through-narrow-spaces"
+      }
+    ]
+  },
+  "game-mechanics--gm-crawling-under-floors": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Ползание под полом",
+      "en": "Crawling under a floor"
+    },
+    "description": {
+      "ru": "Пространство под основным полом становится скрытым маршрутом. Низкий потолок ограничивает позу, обзор и использование снаряжения.",
+      "en": "Space beneath the main floor becomes a concealed route. Its low ceiling restricts posture, visibility and equipment use."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-crawling-under-floors.webp",
+      "width": 598,
+      "height": 332,
+      "game": "Doom 3 (2004)",
+      "sourceUrl": "https://gamemechanics.org/patterns/crawling-under-floors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/doom_3_under_floor.webm",
+      "sourceFrameSeconds": 12.41,
+      "credit": "id Software; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Решётчатый пол над скрытым проходом",
+        "en": "A grated floor above the concealed passage"
+      },
+      "alt": {
+        "ru": "Doom 3: фонарь освещает решётку основного пола над головой; персонаж находится в техническом пространстве снизу.",
+        "en": "Doom 3: a flashlight illuminates the grated main floor overhead while the player occupies the service space below."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 45,
+          "label": {
+            "ru": "Основной пол виден над персонажем",
+            "en": "The main floor is visible overhead"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте скрытый маршрут с понятными входом и выходом.",
+        "en": "Give the concealed route a recognizable entrance and exit."
+      },
+      {
+        "ru": "Проверяйте, что ограничения камеры не скрывают важный поворот.",
+        "en": "Ensure camera restrictions do not hide a necessary turn."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3 (2004)",
+        "url": "https://gamemechanics.org/patterns/crawling-under-floors"
+      }
+    ]
+  },
+  "game-mechanics--gm-rappelling": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Спуск по верёвке",
+      "en": "Rappelling"
+    },
+    "description": {
+      "ru": "Верёвка удерживает персонажа у вертикальной поверхности и позволяет управлять спуском. Игрок выбирает высоту остановки и точку выхода.",
+      "en": "A rope supports the character beside a vertical surface and controls descent. The player chooses a stopping height and an exit point."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-rappelling.webp",
+      "width": 600,
+      "height": 428,
+      "crop": {
+        "x": 170,
+        "y": 110,
+        "width": 430,
+        "height": 318
+      },
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/rappelling",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_abseiling.webm",
+      "sourceFrameSeconds": 2.89,
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Управляемый спуск по фасаду",
+        "en": "Controlled descent along a facade"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell: Сэм удерживается на верёвке перед окном фасада.",
+        "en": "Tom Clancy's Splinter Cell: Sam hangs from a rope in front of a window on the facade."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 56,
+          "label": {
+            "ru": "Персонаж удерживается у фасада",
+            "en": "The character is supported beside the facade"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте контролировать скорость и остановку перед нужной точкой.",
+        "en": "Allow speed control and stopping before the desired exit."
+      },
+      {
+        "ru": "Согласуйте выход с верёвки с доступной поверхностью.",
+        "en": "Match rope exits to usable surfaces."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/rappelling"
+      }
+    ]
+  },
+  "game-mechanics--gm-sliding-down-the-ladder": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Скольжение по лестнице",
+      "en": "Sliding down a ladder"
+    },
+    "description": {
+      "ru": "Игрок ускоряет спуск, сохраняя захват лестницы. Быстрое движение экономит время, но требует понятной остановки и безопасного схода.",
+      "en": "The player descends faster while maintaining a ladder grip. The quicker move saves time but needs predictable braking and a safe exit."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-sliding-down-the-ladder.webp",
+      "width": 600,
+      "height": 328,
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/sliding-down-the-ladder",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_slide_ladder.webm",
+      "sourceFrameSeconds": 2.82,
+      "credit": "Ubisoft Montréal; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Быстрый спуск в вертикальном проходе",
+        "en": "A fast descent through a vertical passage"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell: вид сверху показывает Сэма на лестнице, уходящей вниз между перекрытиями.",
+        "en": "Tom Clancy's Splinter Cell: an overhead view shows Sam on a ladder descending between floors."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 54,
+          "label": {
+            "ru": "Персонаж на пути быстрого спуска",
+            "en": "Character on the fast descent route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте ускоренный спуск от отпускания лестницы.",
+        "en": "Distinguish a fast descent from letting go of the ladder."
+      },
+      {
+        "ru": "Предусмотрите остановку до нижнего края.",
+        "en": "Allow braking before the bottom end."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/sliding-down-the-ladder"
+      }
+    ]
+  },
+  "game-mechanics--gm-monkey-bar-traversal": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Перемещение на руках под опорой",
+      "en": "Overhead traversal"
+    },
+    "description": {
+      "ru": "Персонаж переносит вес на руки и перемещается под горизонтальной опорой. Маршрут зависит от доступного захвата над головой.",
+      "en": "The character hangs by their hands and moves beneath a horizontal support. The route depends on usable overhead grips."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-monkey-bar-traversal.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Tomb Raider III (1998)",
+      "sourceUrl": "https://gamemechanics.org/patterns/monkey-bar-traversal",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_3_over_head.webm",
+      "sourceFrameSeconds": 3.88,
+      "credit": "Core Design; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Движение под потолочной конструкцией",
+        "en": "Moving beneath an overhead structure"
+      },
+      "alt": {
+        "ru": "Tomb Raider III: Лара висит на руках под потолочной конструкцией в пещерном коридоре.",
+        "en": "Tomb Raider III: Lara hangs by her hands beneath an overhead structure in a cave passage."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 48,
+          "label": {
+            "ru": "Руки удерживают персонажа под опорой",
+            "en": "Hands support the character beneath the structure"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте доступную область захвата над головой.",
+        "en": "Mark the usable overhead grip area."
+      },
+      {
+        "ru": "Проверяйте отпускание и приземление с любого участка маршрута.",
+        "en": "Check letting go and landing from each part of the route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider III (1998)",
+        "url": "https://gamemechanics.org/patterns/monkey-bar-traversal"
+      }
+    ]
+  },
+  "game-mechanics--gm-tyrolean-traverse": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Переправа по натянутой верёвке",
+      "en": "Tyrolean traverse"
+    },
+    "description": {
+      "ru": "Персонаж удерживается за натянутую верёвку руками и ногами и продвигается над провалом. Движение связывает две удалённые опоры.",
+      "en": "The character grips a taut rope with hands and legs and advances above a drop, connecting two distant supports."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-tyrolean-traverse.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Shadow of the Tomb Raider (2018)",
+      "sourceUrl": "https://gamemechanics.org/patterns/tyrolean-traverse",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/shadow_of_tomb_raider_tyrolean_traverse.webm",
+      "sourceFrameSeconds": 0.88,
+      "credit": "Eidos-Montréal / Crystal Dynamics; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved. Recording watermark: MKIceAndFire.",
+      "caption": {
+        "ru": "Переправа над глубоким провалом",
+        "en": "Crossing above a deep drop"
+      },
+      "alt": {
+        "ru": "Shadow of the Tomb Raider: Лара удерживается руками и ногами на верёвке над глубоким туманным провалом.",
+        "en": "Shadow of the Tomb Raider: Lara grips a rope with hands and legs above a deep, misty drop."
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 49,
+          "label": {
+            "ru": "Захват верёвки руками и ногами",
+            "en": "Gripping the rope with hands and legs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте точку назначения и направление движения.",
+        "en": "Show the destination and movement direction."
+      },
+      {
+        "ru": "Согласуйте вход на верёвку и выход с геометрией обеих опор.",
+        "en": "Match entry and exit transitions to the supports at both ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shadow of the Tomb Raider (2018)",
+        "url": "https://gamemechanics.org/patterns/tyrolean-traverse"
+      }
+    ]
+  },
+  "game-mechanics--gm-parachuting": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Спуск с парашютом",
+      "en": "Parachuting"
+    },
+    "description": {
+      "ru": "Раскрытый купол замедляет падение и даёт управлять местом приземления. Игрок учитывает высоту, скорость снижения и препятствия на пути.",
+      "en": "An open canopy slows the fall and allows control over the landing point. The player considers altitude, descent speed and obstacles."
+    },
+    "image": {
+      "src": "images/mechanics/just-cause-parachute.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Just Cause 3",
+      "sourceUrl": "https://store.steampowered.com/app/225540/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_3f7f935e42ab9a7816a6e0f9442da5a5a6362789.1920x1080.jpg?t=1782912719",
+      "credit": "Avalanche Studios / Square Enix",
+      "rights": "© 2014 Square Enix Ltd. All rights reserved. Developed by Avalanche Studios.",
+      "caption": {
+        "ru": "Парашют над побережьем Медичи",
+        "en": "A parachute above the Medici coast"
+      },
+      "alt": {
+        "ru": "Just Cause 3: Рико висит на стропах под раскрытым чёрным парашютом над прибрежным поселением.",
+        "en": "Just Cause 3: Rico hangs beneath an open black parachute above a coastal settlement."
+      },
+      "markers": [
+        {
+          "x": 75,
+          "y": 28,
+          "label": {
+            "ru": "Раскрытый купол замедляет снижение",
+            "en": "An open canopy slows the descent"
+          }
+        },
+        {
+          "x": 48,
+          "y": 68,
+          "label": {
+            "ru": "Местность для выбора точки приземления",
+            "en": "Terrain for choosing a landing point"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте оценить точку приземления до раскрытия купола.",
+        "en": "Allow the landing area to be assessed before deploying the canopy."
+      },
+      {
+        "ru": "Проверяйте управление рядом со зданиями и склонами.",
+        "en": "Check steering near buildings and slopes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Cause 3",
+        "url": "https://store.steampowered.com/app/225540/"
+      }
+    ]
+  },
+  "game-mechanics--gm-wall-running-on-ropes": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Бег по стене на верёвке",
+      "en": "Rope-assisted wall running"
+    },
+    "description": {
+      "ru": "Верёвка удерживает персонажа у стены, позволяя перемещаться вдоль неё и набирать размах. Момент отпускания определяет следующий прыжок.",
+      "en": "A rope keeps the character near a wall while they move along it and build momentum. Release timing determines the next jump."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-wall-running-on-ropes.webp",
+      "width": 498,
+      "height": 278,
+      "game": "Uncharted: The Lost Legacy (2017)",
+      "sourceUrl": "https://gamemechanics.org/patterns/wall-running-on-ropes",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/uncharted_tll_rope_run.webm",
+      "sourceFrameSeconds": 1.68,
+      "credit": "Naughty Dog; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Перемещение по стене с опорой на верёвку",
+        "en": "Moving along a wall while supported by a rope"
+      },
+      "alt": {
+        "ru": "Uncharted: The Lost Legacy: героиня удерживается на верёвке у каменной стены и отталкивается от поверхности ногами.",
+        "en": "Uncharted: The Lost Legacy: the heroine hangs from a rope beside a stone wall with her feet braced against it."
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 62,
+          "label": {
+            "ru": "Ноги опираются на стену при удержании верёвки",
+            "en": "Feet brace against the wall while the rope supports the body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Помогайте оценить амплитуду и направление следующего прыжка.",
+        "en": "Help players judge the range and direction of the next jump."
+      },
+      {
+        "ru": "Не меняйте направление ввода неожиданно при движении камеры.",
+        "en": "Avoid unexpected input-direction changes as the camera moves."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Uncharted: The Lost Legacy (2017)",
+        "url": "https://gamemechanics.org/patterns/wall-running-on-ropes"
+      }
+    ]
+  },
+  "game-mechanics--gm-jetpack": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Реактивный ранец",
+      "en": "Jetpack"
+    },
+    "description": {
+      "ru": "Ранец создаёт тягу для подъёма и коррекции движения в воздухе. Ограниченная длительность работы влияет на дальность и момент включения.",
+      "en": "A jetpack supplies thrust for ascent and midair correction. Limited operating time shapes its range and when to activate it."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-jetpack.webp",
+      "width": 480,
+      "height": 270,
+      "game": "Mass Effect: Andromeda (2017)",
+      "sourceUrl": "https://gamemechanics.org/patterns/jetpack",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/mass-effect-andromeda-jetpack.webm",
+      "sourceFrameSeconds": 0.38,
+      "credit": "BioWare; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Реактивная тяга при перемещении",
+        "en": "Jet thrust during traversal"
+      },
+      "alt": {
+        "ru": "Mass Effect: Andromeda: за спиной персонажа виден яркий выброс тяги на фоне заснеженных скал и строения.",
+        "en": "Mass Effect: Andromeda: a bright thrust plume appears behind the character amid snowy rocks and a structure."
+      },
+      "markers": [
+        {
+          "x": 22,
+          "y": 78,
+          "label": {
+            "ru": "Выброс тяги за спиной персонажа",
+            "en": "Thrust behind the character"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте доступную тягу и ожидаемое место приземления.",
+        "en": "Show available thrust and the expected landing area."
+      },
+      {
+        "ru": "Проверяйте обходы препятствий через верх и края уровня.",
+        "en": "Check routes over obstacles and around level boundaries."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mass Effect: Andromeda (2017)",
+        "url": "https://gamemechanics.org/patterns/jetpack"
+      }
+    ]
+  },
+  "game-mechanics--gm-jump-boost-packs": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Прыжковый ускоритель",
+      "en": "Jump boost pack"
+    },
+    "description": {
+      "ru": "Короткий импульс продлевает прыжок или поднимает персонажа выше обычного. Игрок сочетает толчки с инерцией и доступным запасом тяги.",
+      "en": "A short impulse extends a jump or lifts the character higher. The player combines boosts with momentum and available thrust."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-jump-boost-packs.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Starfield (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/jump-boost-packs",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/starfield-boost-pack.webm",
+      "sourceFrameSeconds": 4.84,
+      "credit": "Bethesda Game Studios; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Импульс над промышленной площадкой",
+        "en": "A boost above an industrial platform"
+      },
+      "alt": {
+        "ru": "Starfield: персонаж с ранцем находится в воздухе перед промышленными конструкциями; под ранцем видна светлая струя.",
+        "en": "Starfield: a backpack-equipped character is airborne among industrial structures, with a pale thrust plume below the pack."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 67,
+          "label": {
+            "ru": "Ранец поддерживает движение в воздухе",
+            "en": "The pack boosts airborne movement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте обычный прыжок и дополнительный импульс.",
+        "en": "Distinguish an ordinary jump from an additional boost."
+      },
+      {
+        "ru": "Показывайте, когда станет доступен следующий толчок.",
+        "en": "Show when another boost becomes available."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Starfield (2023)",
+        "url": "https://gamemechanics.org/patterns/jump-boost-packs"
+      }
+    ]
+  },
+  "game-mechanics--gm-wingsuit": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Полёт в вингсьюте",
+      "en": "Wingsuit flight"
+    },
+    "description": {
+      "ru": "Костюм превращает падение в планирование. Игрок меняет положение тела, обменивая высоту на скорость и расстояние до следующего ориентира.",
+      "en": "The suit turns falling into gliding. The player changes body position, trading altitude for speed and distance to the next landmark."
+    },
+    "image": {
+      "src": "images/mechanics/just-cause-wingsuit.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Just Cause 3",
+      "sourceUrl": "https://store.steampowered.com/app/225540/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_7ea2465254fcbd03eb88802a48edd7069ac91848.1920x1080.jpg?t=1782912719",
+      "credit": "Avalanche Studios / Square Enix",
+      "rights": "© 2014 Square Enix Ltd. All rights reserved. Developed by Avalanche Studios.",
+      "caption": {
+        "ru": "Планирование над прибрежным городом",
+        "en": "Gliding above a coastal town"
+      },
+      "alt": {
+        "ru": "Just Cause 3: Рико летит в вингсьюте с разведёнными руками над городом, рядом со скалами и морским побережьем.",
+        "en": "Just Cause 3: Rico glides in a wingsuit with arms extended above a town, beside cliffs and the coast."
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 37,
+          "label": {
+            "ru": "Положение тела во время планирования",
+            "en": "Body position while gliding"
+          }
+        },
+        {
+          "x": 77,
+          "y": 68,
+          "label": {
+            "ru": "Пространство для выбора траектории",
+            "en": "Space for choosing the flight path"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте оценить потерю высоты при повороте и разгоне.",
+        "en": "Help players judge altitude loss when turning or accelerating."
+      },
+      {
+        "ru": "Сохраняйте читаемость препятствий на высокой скорости.",
+        "en": "Keep obstacles readable at high speed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Cause 3",
+        "url": "https://store.steampowered.com/app/225540/"
+      }
+    ]
+  },
+  "game-mechanics--gm-elevators": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лифты",
+      "en": "Elevators"
+    },
+    "description": {
+      "ru": "Подвижная платформа связывает уровни и переносит персонажа между ними. Вызов, ожидание и выход должны быть понятны без догадок.",
+      "en": "A moving platform connects levels and carries the character between them. Calling, waiting for and leaving it should be understandable."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-elevators.webp",
+      "width": 600,
+      "height": 354,
+      "game": "Hitman: Codename 47 (2000)",
+      "sourceUrl": "https://gamemechanics.org/patterns/elevators",
+      "originalUrl": "https://cdn.gamemechanics.org/hitman_47_elevator.webm",
+      "sourceFrameSeconds": 10.31,
+      "credit": "IO Interactive; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Кабина лифта и панель управления",
+        "en": "An elevator cabin and its controls"
+      },
+      "alt": {
+        "ru": "Hitman: Codename 47: Агент 47 находится в решётчатой кабине лифта рядом с панелью кнопок; за решёткой видна шахта.",
+        "en": "Hitman: Codename 47: Agent 47 stands in a grated elevator cabin beside a button panel, with the shaft visible beyond."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 45,
+          "label": {
+            "ru": "Панель управления лифтом",
+            "en": "Elevator control panel"
+          }
+        },
+        {
+          "x": 19,
+          "y": 49,
+          "label": {
+            "ru": "Дверная решётка кабины",
+            "en": "The cabin’s grated doorway"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сообщайте, движется ли платформа и на каком уровне она находится.",
+        "en": "Show whether the platform is moving and which level it occupies."
+      },
+      {
+        "ru": "Проверяйте вход и выход без застревания в дверях.",
+        "en": "Check entry and exit without getting caught in the doors."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hitman: Codename 47 (2000)",
+        "url": "https://gamemechanics.org/patterns/elevators"
+      }
+    ]
+  },
+  "movement-platforming--t008": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Полёт и планирование",
+      "en": "Flight and gliding"
+    },
+    "description": {
+      "ru": "Воздушное движение связывает высоту, скорость и направление. Игрок строит траекторию, учитывая запас энергии или неизбежную потерю высоты.",
+      "en": "Airborne movement links altitude, speed and direction. The player plans a path around an energy budget or unavoidable altitude loss."
+    },
+    "image": {
+      "src": "images/mechanics/just-cause-wingsuit.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Just Cause 3",
+      "sourceUrl": "https://store.steampowered.com/app/225540/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/225540/ss_7ea2465254fcbd03eb88802a48edd7069ac91848.1920x1080.jpg?t=1782912719",
+      "credit": "Avalanche Studios / Square Enix",
+      "rights": "© 2014 Square Enix Ltd. All rights reserved. Developed by Avalanche Studios.",
+      "caption": {
+        "ru": "Планирование с выбором воздушного маршрута",
+        "en": "Gliding along a chosen aerial route"
+      },
+      "alt": {
+        "ru": "Just Cause 3: персонаж в вингсьюте летит между склонами, городом и побережьем; рельеф задаёт доступные маршруты.",
+        "en": "Just Cause 3: a wingsuit-equipped character flies among slopes, a town and the coast, with terrain shaping possible routes."
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 37,
+          "label": {
+            "ru": "Персонаж управляет направлением полёта",
+            "en": "The character controls flight direction"
+          }
+        },
+        {
+          "x": 77,
+          "y": 68,
+          "label": {
+            "ru": "Рельеф задаёт условия маршрута",
+            "en": "Terrain shapes the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Поддерживайте ориентиры для оценки высоты и скорости.",
+        "en": "Provide landmarks for judging altitude and speed."
+      },
+      {
+        "ru": "Согласуйте повороты и торможение с типом воздушного движения.",
+        "en": "Match turning and braking to the type of aerial movement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Cause 3",
+        "url": "https://store.steampowered.com/app/225540/"
+      }
+    ]
+  },
+  "dialogue--family-gates": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Условия доступности реплик",
+      "en": "Dialogue reply requirements"
+    },
+    "description": {
+      "ru": "Состояние героя, знания, предметы и прошлые действия открывают или закрывают ответы. Игрок видит условия и выбирает из доступных реплик.",
+      "en": "The character’s state, knowledge, items and past actions unlock or block replies. The player sees requirements and chooses among available lines."
+    },
+    "image": {
+      "src": "images/mechanics/pillars-dialogue-gates.webp",
+      "width": 1136,
+      "height": 426,
+      "game": "Pillars of Eternity",
+      "sourceUrl": "https://recipp.ipp.pt/bitstreams/be8bf81f-cd71-4f66-8cba-ae2cb1039981/download#page=27",
+      "originalUrl": "https://recipp.ipp.pt/bitstreams/be8bf81f-cd71-4f66-8cba-ae2cb1039981/download#page=27",
+      "credit": "Obsidian Entertainment; image via Magalhães (2015), fig. 4",
+      "rights": "© respective game rights holders. Screenshot reproduced in J. Magalhães, Adaptive Game Design (2015), figure 4, citing NeoGAF. All rights reserved.",
+      "caption": {
+        "ru": "Доступные реплики и закрытые требования",
+        "en": "Available replies and unmet requirements"
+      },
+      "alt": {
+        "ru": "Pillars of Eternity: окно разговора с Heodan. Красные строки Perception 14 и Resolve 15 закрыты; светлая реплика Intellect 13 доступна.",
+        "en": "Pillars of Eternity: a conversation with Heodan. Red Perception 14 and Resolve 15 rows are unavailable, while the light Intellect 13 reply is available."
+      },
+      "markers": [
+        {
+          "x": 33,
+          "y": 35,
+          "label": {
+            "ru": "Perception 14: условие не выполнено",
+            "en": "Perception 14: requirement not met"
+          }
+        },
+        {
+          "x": 23,
+          "y": 40,
+          "label": {
+            "ru": "Intellect 13: реплика доступна",
+            "en": "Intellect 13: reply available"
+          }
+        }
+      ],
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 520,
+        "height": 340
+      }
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте причину блокировки, если её скрытие не служит замыслу.",
+        "en": "Explain why a reply is locked unless concealing it serves the design."
+      },
+      {
+        "ru": "Отличайте закрытую реплику от доступной проверки с риском провала.",
+        "en": "Distinguish a locked reply from an available check that can still fail."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pillars of Eternity",
+        "url": "https://store.steampowered.com/app/291650/Pillars_of_Eternity/"
       }
     ]
   }
