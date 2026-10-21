@@ -12,6 +12,7 @@ const viewports = [
   { width: 375, height: 667 },
   { width: 390, height: 844 },
   { width: 400, height: 500 },
+  { width: 480, height: 500 },
   { width: 516, height: 314 },
   { width: 600, height: 600 },
   { width: 700, height: 500 },
@@ -148,7 +149,9 @@ for (const lang of ['ru', 'en'] as const) {
   }) => {
     await page.goto(route(lang));
     await page.evaluate(() => document.fonts.ready);
-    for (const width of [479, 480, 515, 600, 700, 739, 740, 800, 900, 1024]) {
+    for (const width of [
+      479, 480, 481, 515, 560, 600, 619, 620, 700, 739, 740, 800, 900, 1024,
+    ]) {
       await page.setViewportSize({ width, height: 500 });
       const dimensions = await page.evaluate(() => ({
         width: document.documentElement.scrollWidth,

@@ -35,7 +35,7 @@ Complete advice and examples remain in JSON/Markdown at every size. Enlarged
 text uses natural flow rather than hiding text to enforce a screen boundary.
 
 Browser checks cover both languages/themes at 298×496, 319×849, 320×500, 375×667, 390×844,
-400×500, 516×314, 600×600, 700×500, 800×500, 1024×600, 1280×720, 1440×900,
+400×500, 480×500, 516×314, 600×600, 700×500, 800×500, 1024×600, 1280×720, 1440×900,
 1510×900 and 1920×1080. Resize checks cross layout breakpoints. They check visible
 required content, no scroll/clipped text, full-width main layout, picture
 occupancy, no-JS access, category links and exports. The image's intentional crop

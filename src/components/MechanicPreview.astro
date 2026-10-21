@@ -358,6 +358,11 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
       display: none;
     }
   }
+  @media (min-width: 480px) and (max-width: 619px) and (max-height: 550px) {
+    .preview-tips {
+      display: none;
+    }
+  }
   @media (min-width: 480px) and (max-height: 459px) {
     .preview-tips {
       display: none;
