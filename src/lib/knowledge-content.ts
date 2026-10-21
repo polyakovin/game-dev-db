@@ -14,6 +14,7 @@ export interface MechanicPreview {
     game: string;
     sourceUrl: string;
     originalUrl: string;
+    sourceFrameSeconds?: number;
     credit: string;
     rights: string;
     alt: string;

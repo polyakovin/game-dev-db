@@ -74,6 +74,33 @@ test('resizing preserves crop edges, including the full-image far edge', () => {
   ).toEqual({ x: 1, y: 1, width: 1223, height: 688 });
 });
 
+test('gameplay frames require an auditable nonnegative source timestamp', () => {
+  const id = 'shared-family-02';
+  const entry = structuredClone(mechanicPreviews[id]);
+  const records = buildKnowledge([], 'ru', []).records;
+  const capture = {
+    ...entry,
+    image: { ...entry.image, originalUrl: 'https://example.org/capture.webm' },
+  };
+  expect(
+    validateMechanicPreviews(records, { [id]: capture }).join('\n'),
+  ).toMatch(/sourceFrameSeconds/);
+  for (const sourceFrameSeconds of [0, 2.6]) {
+    const valid = {
+      ...capture,
+      image: { ...capture.image, sourceFrameSeconds },
+    };
+    expect(validateMechanicPreviews(records, { [id]: valid })).toEqual([]);
+  }
+  const invalid = {
+    ...capture,
+    image: { ...capture.image, sourceFrameSeconds: -1 },
+  };
+  expect(
+    validateMechanicPreviews(records, { [id]: invalid }).join('\n'),
+  ).toMatch(/nonnegative/);
+});
+
 test('publication rejects oversized WebP and leftover source raster files', () => {
   const root = mkdtempSync(join(tmpdir(), 'gddb-image-test-'));
   const id = 'shared-family-02';
@@ -93,6 +120,19 @@ test('publication rejects oversized WebP and leftover source raster files', () =
     expect(
       validateMechanicPreviews(records, { [id]: entry }, root).join('\n'),
     ).toMatch(/exceeds .* bytes/);
+    writeFileSync(join(root, entry.image.src), bytes);
+    writeFileSync(join(root, 'images/mechanics/unused.webp'), oversized);
+    expect(
+      validateMechanicPreviews(records, { [id]: entry }, root).join('\n'),
+    ).toMatch(/unused.webp: exceeds .* bytes/);
+    const wide = Buffer.alloc(10);
+    wide.writeUIntLE(0x2a019d, 3, 3);
+    wide.writeUInt16LE(1441, 6);
+    wide.writeUInt16LE(810, 8);
+    writeFileSync(join(root, 'images/mechanics/wide.webp'), webp('VP8 ', wide));
+    expect(
+      validateMechanicPreviews(records, { [id]: entry }, root).join('\n'),
+    ).toMatch(/wide.webp: exceeds 1440 pixels/);
     writeFileSync(
       join(root, 'images/mechanics/original.jpg'),
       Buffer.from('unused'),

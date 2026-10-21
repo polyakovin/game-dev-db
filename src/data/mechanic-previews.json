@@ -6531,5 +6531,301 @@
         "url": "https://store.steampowered.com/app/391220/"
       }
     ]
+  },
+  "game-mechanics--gm-ledge-climb-up": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Подтягивание на уступ",
+      "en": "Climbing onto a ledge"
+    },
+    "description": {
+      "ru": "Из положения виса персонаж подтягивается на верхнюю поверхность. Переход связывает захват края с обычным движением по опоре.",
+      "en": "From a hanging position, the character pulls onto the upper surface. The transition connects edge grabbing with ordinary movement."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-classic-climb.webp",
+      "width": 598,
+      "height": 334,
+      "game": "Tomb Raider (1996)",
+      "sourceUrl": "https://gamemechanics.org/patterns/ledge-climb-up",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_1_ledge_climb_up.webm",
+      "sourceFrameSeconds": 2.6,
+      "credit": "Core Design; gameplay capture: GameMechanics.org",
+      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "caption": {
+        "ru": "Подтягивание из виса на площадку",
+        "en": "Pulling from a hang onto a platform"
+      },
+      "alt": {
+        "ru": "Tomb Raider (1996): Лара опирается руками на каменный край и подтягивает корпус на верхнюю площадку.",
+        "en": "Tomb Raider (1996): Lara braces her hands on a stone edge and pulls her body onto the upper platform."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 53,
+          "label": {
+            "ru": "Переход с края на верхнюю поверхность",
+            "en": "Transition from the edge to the upper surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте свободное место для тела над краем.",
+        "en": "Check that there is enough body clearance above the edge."
+      },
+      {
+        "ru": "Согласуйте конец анимации с восстановлением управления.",
+        "en": "Align the animation’s end with control becoming available again."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider (1996)",
+        "url": "https://gamemechanics.org/patterns/ledge-climb-up"
+      }
+    ]
+  },
+  "game-mechanics--gm-climbing-over-fences": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Перелезание через ограждение",
+      "en": "Climbing over a fence"
+    },
+    "description": {
+      "ru": "Персонаж взбирается на преграду, переносит вес через верх и спускается с другой стороны. Игрок оценивает высоту и место приземления.",
+      "en": "The character climbs a barrier, shifts their weight over its top and descends on the far side. The player judges height and landing space."
+    },
+    "image": {
+      "src": "images/mechanics/splinter-cell-fence.webp",
+      "width": 600,
+      "height": 328,
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/climbing-over-fences",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_climb_fence.webm",
+      "sourceFrameSeconds": 4.5,
+      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
+      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "caption": {
+        "ru": "Переход через верх сетчатого забора",
+        "en": "Crossing the top of a chain-link fence"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell (2002): Сэм переносит корпус через верх сетчатого ограждения в узком проходе.",
+        "en": "Tom Clancy's Splinter Cell (2002): Sam moves his body over a chain-link fence in a narrow passage."
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 53,
+          "label": {
+            "ru": "Персонаж переносит вес через верх",
+            "en": "The character shifts weight over the top"
+          }
+        },
+        {
+          "x": 54,
+          "y": 75,
+          "label": {
+            "ru": "Пространство за ограждением",
+            "en": "Space on the far side"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какие ограждения можно преодолеть.",
+        "en": "Show which fences can be crossed."
+      },
+      {
+        "ru": "Проверяйте обе стороны ограждения и безопасный выход из действия.",
+        "en": "Check both sides and a safe exit from the action."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/climbing-over-fences"
+      }
+    ]
+  },
+  "game-mechanics--gm-crawling-through-vents": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Проход через вентиляцию",
+      "en": "Crawling through vents"
+    },
+    "description": {
+      "ru": "Низкий технический проход открывает альтернативный маршрут. Ограниченные размеры меняют позу, обзор и доступные действия персонажа.",
+      "en": "A low service passage provides an alternative route. Its restricted size changes the character’s posture, view and available actions."
+    },
+    "image": {
+      "src": "images/mechanics/splinter-cell-vent.webp",
+      "width": 600,
+      "height": 366,
+      "game": "Splinter Cell: Chaos Theory (2005)",
+      "sourceUrl": "https://gamemechanics.org/patterns/crawling-through-vents",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_chaos_theory_vents.webm",
+      "sourceFrameSeconds": 0.29,
+      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
+      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "caption": {
+        "ru": "Вход в вентиляционный проход",
+        "en": "Entering a ventilation passage"
+      },
+      "alt": {
+        "ru": "Splinter Cell: Chaos Theory: в режиме ночного видения Сэм находится под квадратным вентиляционным отверстием в стене.",
+        "en": "Splinter Cell: Chaos Theory: in night vision, Sam stands beneath a square ventilation opening in the wall."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 16,
+          "label": {
+            "ru": "Вход в технический проход",
+            "en": "Entrance to the service passage"
+          }
+        },
+        {
+          "x": 51,
+          "y": 69,
+          "label": {
+            "ru": "Персонаж у входа в вентиляцию",
+            "en": "Character at the vent entrance"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте вход заметным, сохраняя ощущение скрытого маршрута.",
+        "en": "Keep the entrance discoverable while retaining a hidden-route feel."
+      },
+      {
+        "ru": "Проверяйте повороты, выходы и положение камеры в низком проходе.",
+        "en": "Check corners, exits and camera placement inside the low passage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Splinter Cell: Chaos Theory (2005)",
+        "url": "https://gamemechanics.org/patterns/crawling-through-vents"
+      }
+    ]
+  },
+  "game-mechanics--gm-night-vision": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Ночное видение",
+      "en": "Night vision"
+    },
+    "description": {
+      "ru": "Особый режим изображения помогает ориентироваться в темноте. Его включение меняет читаемость сцены и набор заметных деталей.",
+      "en": "A special viewing mode helps navigation in darkness. Switching it on changes scene readability and which details stand out."
+    },
+    "image": {
+      "src": "images/mechanics/splinter-cell-night-vision.webp",
+      "width": 600,
+      "height": 366,
+      "game": "Splinter Cell: Chaos Theory (2005)",
+      "sourceUrl": "https://gamemechanics.org/patterns/crawling-through-vents",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_chaos_theory_vents.webm",
+      "sourceFrameSeconds": 1.44,
+      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
+      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "caption": {
+        "ru": "Зелёный режим внутри тёмного прохода",
+        "en": "Green viewing mode inside a dark passage"
+      },
+      "alt": {
+        "ru": "Splinter Cell: Chaos Theory: ночное видение показывает стенки и поворот вентиляционного прохода в зелёных тонах с круглыми краями изображения.",
+        "en": "Splinter Cell: Chaos Theory: night vision reveals vent walls and a turn in green tones, with rounded image edges."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 47,
+          "label": {
+            "ru": "Ночное видение раскрывает геометрию прохода",
+            "en": "Night vision reveals the passage geometry"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте активный режим отдельным понятным признаком.",
+        "en": "Give the active mode a clear indicator."
+      },
+      {
+        "ru": "Проверяйте переходы между очень тёмными и яркими областями.",
+        "en": "Check transitions between very dark and brightly lit areas."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Splinter Cell: Chaos Theory (2005)",
+        "url": "https://gamemechanics.org/patterns/crawling-through-vents"
+      }
+    ]
+  },
+  "movement-platforming--t006": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лазание по поверхностям",
+      "en": "Climbing surfaces"
+    },
+    "description": {
+      "ru": "Игрок использует подходящую поверхность как опору для рук и ног. Важны доступность захвата, границы лазания и переход к следующему участку пути.",
+      "en": "The player uses a suitable surface for hand and foot support. Grabs, climb boundaries and transitions determine the available route."
+    },
+    "image": {
+      "src": "images/mechanics/splinter-cell-fence.webp",
+      "width": 600,
+      "height": 328,
+      "game": "Tom Clancy's Splinter Cell (2002)",
+      "sourceUrl": "https://gamemechanics.org/patterns/climbing-over-fences",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_climb_fence.webm",
+      "sourceFrameSeconds": 4.5,
+      "credit": "Ubisoft Montréal; gameplay capture: GameMechanics.org",
+      "rights": "© respective game rights holders. Gameplay capture: Game Mechanics. All rights reserved.",
+      "caption": {
+        "ru": "Сетчатая поверхность как опора",
+        "en": "A chain-link surface as support"
+      },
+      "alt": {
+        "ru": "Tom Clancy's Splinter Cell (2002): Сэм держится за сетчатый забор и преодолевает его верхнюю кромку.",
+        "en": "Tom Clancy's Splinter Cell (2002): Sam holds a chain-link fence while crossing its top edge."
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 53,
+          "label": {
+            "ru": "Руки и ноги опираются на поверхность",
+            "en": "Hands and feet use the surface for support"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте доступные для лазания материалы от декорации.",
+        "en": "Distinguish climbable surfaces from decoration."
+      },
+      {
+        "ru": "Проверяйте переходы на край, на землю и на соседнюю опору.",
+        "en": "Check transitions to edges, ground and adjacent supports."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy's Splinter Cell (2002)",
+        "url": "https://gamemechanics.org/patterns/climbing-over-fences"
+      }
+    ]
   }
 }

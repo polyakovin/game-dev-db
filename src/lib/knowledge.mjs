@@ -783,6 +783,12 @@ export function knowledgeMarkdown(record) {
           '',
           `[${record.attributes.preview.image.game}](${record.attributes.preview.image.sourceUrl}) · ${record.attributes.preview.image.rights}`,
           '',
+          ...(record.attributes.preview.image.sourceFrameSeconds !== undefined
+            ? [
+                `[${record.lang === 'ru' ? 'Исходная запись' : 'Source recording'}](${record.attributes.preview.image.originalUrl}), ${record.attributes.preview.image.sourceFrameSeconds} s`,
+                '',
+              ]
+            : []),
           ...record.attributes.preview.image.markers.map(
             (marker, i) => `${i + 1}. ${marker.label}`,
           ),

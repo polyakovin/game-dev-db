@@ -139,6 +139,17 @@ export function validateMechanicPreviews(
     for (const field of ['sourceUrl', 'originalUrl'])
       if (!https(image[field]))
         error(`image.${field}: expected an HTTPS source`);
+    const sourceIsVideo = /\.(?:webm|mp4)(?:\?|$)/i.test(
+      image.originalUrl ?? '',
+    );
+    if (
+      (sourceIsVideo || image.sourceFrameSeconds !== undefined) &&
+      (!Number.isFinite(image.sourceFrameSeconds) ||
+        image.sourceFrameSeconds < 0)
+    )
+      error(
+        'image.sourceFrameSeconds: expected a nonnegative source timestamp',
+      );
     localized(image.alt, 'image.alt', 260);
     localized(image.caption, 'image.caption', 80);
     const filename =
@@ -221,8 +232,31 @@ export function validateMechanicPreviews(
         if (!example.title?.trim() || !https(example.url))
           error('invalid example link');
   }
-  for (const filename of readdirSync(resolve(root, 'images/mechanics')))
-    if (/\.(?:png|jpe?g|gif|avif)$/i.test(filename))
+  const referenced = new Set(
+    Object.values(source).map((card) => card.image?.src),
+  );
+  for (const filename of readdirSync(resolve(root, 'images/mechanics'))) {
+    if (/\.(?:png|jpe?g|gif|avif|bmp|tiff?|ico)$/i.test(filename))
       errors.push(`mechanic images: ${filename} must be converted to WebP`);
+    // Apply the budget to every shipped image, including an unused asset.
+    if (
+      /\.webp$/i.test(filename) &&
+      !referenced.has(`images/mechanics/${filename}`)
+    ) {
+      try {
+        const bytes = readFileSync(resolve(root, 'images/mechanics', filename));
+        if (!isWebP(bytes)) throw new Error('expected actual WebP format');
+        const size = mechanicImageSize(bytes);
+        if (Math.min(size.width, size.height) < 1)
+          throw new Error('invalid dimensions');
+        if (Math.max(size.width, size.height) > MAX_MECHANIC_IMAGE_EDGE)
+          throw new Error(`exceeds ${MAX_MECHANIC_IMAGE_EDGE} pixels`);
+        if (bytes.length > MAX_MECHANIC_IMAGE_BYTES)
+          throw new Error(`exceeds ${MAX_MECHANIC_IMAGE_BYTES} bytes`);
+      } catch (cause) {
+        errors.push(`mechanic images: ${filename}: ${cause.message}`);
+      }
+    }
+  }
   return errors;
 }

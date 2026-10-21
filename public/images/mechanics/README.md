@@ -45,3 +45,17 @@ visible mechanic, without claiming that every current menu or numerical value
 matches the image. These screenshots retain their original rights and are
 excluded from MIT and CC BY 4.0. Publication in a press kit or store gallery is
 not a general open-content license.
+
+## Frames from gameplay recordings
+
+For precise traversal actions, these files use inspected frames from gameplay
+recordings published by [Game Mechanics](https://gamemechanics.org/). Each card
+keeps the exact clip URL and `image.sourceFrameSeconds`; the source videos are
+not shipped. Game and recording rights remain with their respective holders.
+These frames are excluded from MIT and CC BY 4.0.
+
+| File | Game / original developer | Recording page |
+| --- | --- | --- |
+| `tomb-raider-classic-climb.webp` | Tomb Raider (1996) / Core Design | [Ledge climb-up](https://gamemechanics.org/patterns/ledge-climb-up) |
+| `splinter-cell-fence.webp` | Tom Clancy’s Splinter Cell (2002) / Ubisoft Montréal | [Climbing over fences](https://gamemechanics.org/patterns/climbing-over-fences) |
+| `splinter-cell-vent.webp`, `splinter-cell-night-vision.webp` | Splinter Cell: Chaos Theory (2005) / Ubisoft Montréal | [Crawling through vents](https://gamemechanics.org/patterns/crawling-through-vents) |

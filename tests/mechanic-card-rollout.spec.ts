@@ -142,6 +142,10 @@ for (const lang of ['ru', 'en'] as const) {
           ? card.image.originalUrl
           : card.image.sourceUrl,
       );
+      if ('sourceFrameSeconds' in card.image) {
+        expect(markdown).toContain(card.image.originalUrl);
+        expect(markdown).toContain(`${card.image.sourceFrameSeconds} s`);
+      }
       expect(markdown).toContain(
         payload.record.sections.find(
           (section: { id: string; body: string }) => section.id === 'variants',

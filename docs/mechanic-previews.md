@@ -81,3 +81,9 @@ conversion, then add `--write` to apply it. This editorial command requires the
 The converter starts at quality 82, reduces quality or dimensions when needed,
 strips metadata, never upscales, rescales crop edges and retains percentage markers.
 Review the result and tooltips visually before publication.
+
+A frame extracted from a gameplay recording keeps the original clip URL in
+`image.originalUrl` and its exact nonnegative timestamp in
+`image.sourceFrameSeconds`. Attribute both the game and the recording source.
+The Markdown export links to the clip and timestamp; JSON preserves the metadata.
+Only the inspected compressed WebP frame is published, without the source video.

@@ -19,6 +19,9 @@ original source URLs and rights; do not ship redundant PNG/JPEG originals.
 Resize without upscaling and rebase crop pixel coordinates to the published
 dimensions. Percentage markers retain their positions. Crop via metadata.
 Reuse an image only when it actually demonstrates the mechanic.
+For a screenshot extracted from a gameplay recording, retain the exact source
+clip URL and `image.sourceFrameSeconds`, plus game and recording attribution.
+Inspect the chosen frame in the recording's context; publish only its WebP image.
 Keep one or two short tips and a bounded set of explicit example links; full
 reference sources remain in the record and exports.
 
