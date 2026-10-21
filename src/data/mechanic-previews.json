@@ -9,7 +9,12 @@
       "src": "images/mechanics/hidden-folks-jungle.png",
       "width": 2048,
       "height": 1152,
-      "crop": { "x": 600, "y": 80, "width": 1080, "height": 1072 },
+      "crop": {
+        "x": 600,
+        "y": 80,
+        "width": 1080,
+        "height": 1072
+      },
       "game": "Hidden Folks",
       "sourceUrl": "https://hiddenfolks.com/press/hidden-folks-1",
       "originalUrl": "https://hiddenfolks.com/images/hf1/HiddenFolks-JungleTutorial.png",
@@ -27,12 +32,18 @@
         {
           "x": 53.5,
           "y": 94,
-          "label": { "ru": "Цель и подсказка", "en": "Target and clue" }
+          "label": {
+            "ru": "Цель и подсказка",
+            "en": "Target and clue"
+          }
         },
         {
           "x": 64,
           "y": 42,
-          "label": { "ru": "Найденный персонаж", "en": "Discovered character" }
+          "label": {
+            "ru": "Найденный персонаж",
+            "en": "Discovered character"
+          }
         }
       ]
     },
@@ -54,6 +65,1367 @@
       {
         "title": "Hidden Through Time",
         "url": "https://www.rogueside.com/hidden-through-time/"
+      }
+    ],
+    "title": {
+      "ru": "Поиск и обнаружение",
+      "en": "Search and discovery"
+    }
+  },
+  "movement-platforming--t003": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Точные прыжки",
+      "en": "Precision jumping"
+    },
+    "description": {
+      "ru": "Игрок выбирает момент отрыва и корректирует движение в воздухе, чтобы попасть на опору и обойти опасность.",
+      "en": "The player times takeoff and adjusts movement in the air to reach a safe surface and avoid hazards."
+    },
+    "image": {
+      "src": "images/mechanics/celeste-air-movement.png",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 400,
+        "y": 0,
+        "width": 1500,
+        "height": 1080
+      },
+      "game": "Celeste",
+      "sourceUrl": "https://www.celestegame.com/",
+      "originalUrl": "https://www.celestegame.com/images/screenshots/02.png",
+      "credit": "Maddy Makes Games / Extremely OK Games",
+      "rights": "© Maddy Makes Games / Extremely OK Games. All rights reserved.",
+      "caption": {
+        "ru": "Движение между шипами",
+        "en": "Moving between spikes"
+      },
+      "alt": {
+        "ru": "Celeste: героиня в воздухе, шипы на платформах и безопасная опора справа.",
+        "en": "Celeste: Madeline in the air, spikes on platforms and a safe surface to the right."
+      },
+      "markers": [
+        {
+          "x": 41.5,
+          "y": 10,
+          "label": {
+            "ru": "Персонаж корректирует движение в воздухе",
+            "en": "The character adjusts movement in the air"
+          }
+        },
+        {
+          "x": 84,
+          "y": 50,
+          "label": {
+            "ru": "Безопасная опора среди шипов",
+            "en": "A safe surface among spikes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте понять, где можно приземлиться, до начала прыжка.",
+        "en": "Show safe landing surfaces before takeoff."
+      },
+      {
+        "ru": "Буфер ввода и поздний прыжок прощают небольшую неточность.",
+        "en": "Input buffering and coyote time can forgive small timing errors."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Celeste",
+        "url": "https://www.celestegame.com/"
+      }
+    ]
+  },
+  "game-mechanics--gm-health-display": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Здоровье",
+      "en": "Health display"
+    },
+    "description": {
+      "ru": "Показатель здоровья сообщает, сколько урона ещё выдержит персонаж. Текущее значение и предел помогают оценить риск следующего действия.",
+      "en": "A health display shows how much damage a character can still take. Current and maximum values help the player judge the next risk."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Здоровье участников боя",
+        "en": "Health in combat"
+      },
+      "alt": {
+        "ru": "Slay the Spire: герой и три противника с числовыми шкалами здоровья под ними.",
+        "en": "Slay the Spire: the hero and three enemies with numerical health bars underneath."
+      },
+      "markers": [
+        {
+          "x": 26,
+          "y": 71,
+          "label": {
+            "ru": "Текущее и максимальное здоровье героя",
+            "en": "Current and maximum player health"
+          }
+        },
+        {
+          "x": 70,
+          "y": 69,
+          "label": {
+            "ru": "Здоровье выбранного противника",
+            "en": "An enemy’s remaining health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Меняйте шкалу сразу после события, которое меняет здоровье.",
+        "en": "Update the bar immediately after health changes."
+      },
+      {
+        "ru": "Не полагайтесь только на цвет: добавьте форму или число.",
+        "en": "Use shape or numbers as well as color."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "game-mechanics--gm-opening-doors": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Открывание дверей",
+      "en": "Opening doors"
+    },
+    "description": {
+      "ru": "Действие у двери меняет доступность прохода. Дверь связывает понятный объект в мире с переходом в следующую зону.",
+      "en": "Acting at a door changes access to a passage. A recognizable world object becomes the transition into another area."
+    },
+    "image": {
+      "src": "images/mechanics/hades-exit.png",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 350,
+        "y": 0,
+        "width": 1450,
+        "height": 1080
+      },
+      "game": "Hades",
+      "sourceUrl": "https://www.supergiantgames.com/games/hades/",
+      "originalUrl": "https://images.ctfassets.net/5owu3y35gz1g/jce84av2Stq3zFI4KGSlB/7e016dd8d9956468e2a681edbe5bb0ac/Hades_Aug2019_01.png?w=1920&q=80",
+      "credit": "Supergiant Games",
+      "rights": "© Supergiant Games. All rights reserved.",
+      "caption": {
+        "ru": "Выход из комнаты",
+        "en": "A room exit"
+      },
+      "alt": {
+        "ru": "Hades: Загрей на площадке перед большой украшенной дверью в следующую комнату.",
+        "en": "Hades: Zagreus stands in front of a decorated doorway leading to the next chamber."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 25,
+          "label": {
+            "ru": "Дверь обозначает переход между комнатами",
+            "en": "The doorway marks a transition between chambers"
+          }
+        },
+        {
+          "x": 41,
+          "y": 40,
+          "label": {
+            "ru": "Персонаж подходит к проходу",
+            "en": "The character approaches the passage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте доступный проход от запертого до взаимодействия.",
+        "en": "Distinguish an available passage from a locked one before interaction."
+      },
+      {
+        "ru": "Подтверждайте смену состояния движением, звуком или светом.",
+        "en": "Confirm state changes through movement, sound or lighting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hades",
+        "url": "https://www.supergiantgames.com/games/hades/"
+      }
+    ]
+  },
+  "game-mechanics--gm-grid-inventory": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Инвентарь в ячейках",
+      "en": "Grid inventory"
+    },
+    "description": {
+      "ru": "Предметы занимают ячейки, а игрок выбирает, что хранить, надеть или использовать. Пустые слоты показывают доступное место.",
+      "en": "Items occupy slots. The player chooses what to store, equip or use, while empty slots show available space."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-inventory.jpg",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 700,
+        "y": 280,
+        "width": 1200,
+        "height": 800
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_4f5fdc3cf42feca8dafb1f7d2910ef96e62708a2.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Вещи и экипировка",
+        "en": "Items and equipment"
+      },
+      "alt": {
+        "ru": "Disco Elysium: сетка одежды справа, выбранный предмет и слоты экипировки возле героя.",
+        "en": "Disco Elysium: a clothing grid, an inspected item and equipment slots beside the character."
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 73,
+          "label": {
+            "ru": "Ячейки хранящихся предметов",
+            "en": "Slots containing stored items"
+          }
+        },
+        {
+          "x": 54,
+          "y": 57,
+          "label": {
+            "ru": "Слоты надетой экипировки",
+            "en": "Slots for equipped items"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте результат переноса до подтверждения действия.",
+        "en": "Preview the result of moving an item before confirmation."
+      },
+      {
+        "ru": "Отделяйте хранение от экипировки и быстрых действий.",
+        "en": "Distinguish storage, equipment and quick actions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "dialogue--family-selection": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Выбор реплики",
+      "en": "Dialogue choices"
+    },
+    "description": {
+      "ru": "Игрок выбирает одну из доступных реплик. Ответ меняет разговор, раскрывает сведения или переводит отношения в другое состояние.",
+      "en": "The player chooses an available reply. Their answer changes the conversation, reveals information or affects a relationship."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-dialogue.jpg",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 750,
+        "y": 50,
+        "width": 1100,
+        "height": 950
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_23836438cd455287232be5ae9c4f48d5c488967b.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Варианты ответа",
+        "en": "Choosing a reply"
+      },
+      "alt": {
+        "ru": "Disco Elysium: разговор у стойки и три пронумерованных варианта ответа в правой панели.",
+        "en": "Disco Elysium: a conversation at the counter and three numbered replies in the right-hand panel."
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 72,
+          "label": {
+            "ru": "Выбор из доступных реплик",
+            "en": "Choose from the available replies"
+          }
+        },
+        {
+          "x": 79,
+          "y": 36,
+          "label": {
+            "ru": "Контекст разговора перед решением",
+            "en": "Conversation context before the decision"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Формулировка должна передавать намерение будущего ответа.",
+        "en": "Make the wording convey the intent of the resulting reply."
+      },
+      {
+        "ru": "Показывайте значимые последствия выбора понятной реакцией.",
+        "en": "Use a clear response to communicate meaningful consequences."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "rpg-grind--experience-leveling": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Опыт и уровни",
+      "en": "Experience and levels"
+    },
+    "description": {
+      "ru": "За действия начисляется опыт. Достижение порога даёт очко развития или новый уровень и превращает повторение в накопленный прогресс.",
+      "en": "Actions award experience. Reaching a threshold grants an upgrade point or level, turning repeated activity into lasting progress."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-skills.jpg",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 850,
+        "y": 0,
+        "width": 1050,
+        "height": 1000
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_9125a718ee9ba85386ae5d4eb820f3266073fc97.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Опыт и очки навыков",
+        "en": "Experience and skill points"
+      },
+      "alt": {
+        "ru": "Disco Elysium: лист навыков с текущим опытом, очками развития и кнопкой повышения навыка.",
+        "en": "Disco Elysium: the skill sheet with an experience counter, skill points and an upgrade button."
+      },
+      "markers": [
+        {
+          "x": 91.5,
+          "y": 80,
+          "label": {
+            "ru": "Опыт до следующего очка развития",
+            "en": "Experience toward the next upgrade point"
+          }
+        },
+        {
+          "x": 80,
+          "y": 85,
+          "label": {
+            "ru": "Очко можно вложить в выбранный навык",
+            "en": "Spend a point on the selected skill"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Свяжите источник опыта с действием, которому хотите учить.",
+        "en": "Award experience for the actions you want players to practice."
+      },
+      {
+        "ru": "Объясняйте награду за порог до его достижения.",
+        "en": "Explain the threshold reward before the player reaches it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "roguelike--family-25": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лечение и восстановление",
+      "en": "Healing and recovery"
+    },
+    "description": {
+      "ru": "Восстановление возвращает потраченный запас, но требует времени, предмета или отказа от другой выгоды. Игрок выбирает момент лечения.",
+      "en": "Recovery restores a depleted resource at a cost in time, items or another opportunity. The player chooses when to heal."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-rest.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss11.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Отдых у костра",
+        "en": "Resting at a campfire"
+      },
+      "alt": {
+        "ru": "Slay the Spire: у костра доступны отдых и улучшение карты как альтернативные действия.",
+        "en": "Slay the Spire: a campfire offers rest or a card upgrade as alternative actions."
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 34,
+          "label": {
+            "ru": "Отдых восстанавливает здоровье",
+            "en": "Rest restores health"
+          }
+        },
+        {
+          "x": 58,
+          "y": 34,
+          "label": {
+            "ru": "Улучшение карты — альтернативная выгода",
+            "en": "A card upgrade is the alternative benefit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте цену лечения понятной до расхода ресурса.",
+        "en": "Make the healing cost clear before spending the resource."
+      },
+      {
+        "ru": "Решение лечиться интереснее при безопасной альтернативе.",
+        "en": "A safe alternative makes the decision to heal more meaningful."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-play": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Энергия и стоимость карт",
+      "en": "Card costs and energy"
+    },
+    "description": {
+      "ru": "Карта расходует ограниченный ресурс хода. Игрок сопоставляет стоимость с эффектом и выбирает, какие действия поместятся в бюджет.",
+      "en": "Playing a card spends a limited turn resource. The player weighs cost against effect and chooses actions that fit the budget."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Цена карты и запас энергии",
+        "en": "Card cost and available energy"
+      },
+      "alt": {
+        "ru": "Slay the Spire: слева осталась одна единица энергии, выбранная карта стоит одну единицу.",
+        "en": "Slay the Spire: one energy remains on the left and the selected card costs one energy."
+      },
+      "markers": [
+        {
+          "x": 11,
+          "y": 82,
+          "label": {
+            "ru": "Энергия, оставшаяся на этот ход",
+            "en": "Energy remaining this turn"
+          }
+        },
+        {
+          "x": 43,
+          "y": 63,
+          "label": {
+            "ru": "Стоимость выбранной карты",
+            "en": "The selected card’s cost"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Остаток ресурса и стоимость должны быть видны одновременно.",
+        "en": "Show the remaining resource and the cost at the same time."
+      },
+      {
+        "ru": "Объясняйте, почему недоступную карту нельзя разыграть.",
+        "en": "Explain why an unavailable card cannot be played."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-draw": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Добор карт",
+      "en": "Drawing cards"
+    },
+    "description": {
+      "ru": "Добор переводит карты из колоды в руку. Новые варианты расширяют выбор, но их ценность зависит от оставшегося ресурса и плана хода.",
+      "en": "Drawing moves cards from the deck to the hand. More options matter only if they fit the remaining resources and turn plan."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Колода, рука и сброс",
+        "en": "Draw pile, hand and discard"
+      },
+      "alt": {
+        "ru": "Slay the Spire: стопка добора слева внизу, карты в руке и стопка сброса справа.",
+        "en": "Slay the Spire: the draw pile at bottom left, the player’s hand and the discard pile at bottom right."
+      },
+      "markers": [
+        {
+          "x": 4,
+          "y": 93,
+          "label": {
+            "ru": "Стопка, из которой добираются карты",
+            "en": "The pile that supplies drawn cards"
+          }
+        },
+        {
+          "x": 32,
+          "y": 86,
+          "label": {
+            "ru": "Добранные карты становятся доступными в руке",
+            "en": "Drawn cards become available in the hand"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте получение карты от разрешения её разыграть.",
+        "en": "Separate receiving a card from permission to play it."
+      },
+      {
+        "ru": "Показывайте источник добора и изменение числа карт.",
+        "en": "Show where draws come from and how the hand size changes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-acquire": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Получение карт",
+      "en": "Acquiring cards"
+    },
+    "description": {
+      "ru": "Новые карты меняют возможности будущих ходов. Игрок оценивает не только силу покупки, но и её место в уже собранной колоде.",
+      "en": "New cards change future turns. The player considers both a purchase’s strength and its place in the existing deck."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-shop.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss4.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Покупка новых карт",
+        "en": "Buying new cards"
+      },
+      "alt": {
+        "ru": "Slay the Spire: торговец предлагает карты с разными ценами для добавления в колоду.",
+        "en": "Slay the Spire: a merchant offers cards at different prices for addition to the deck."
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 29,
+          "label": {
+            "ru": "Предложение новых карт",
+            "en": "New cards on offer"
+          }
+        },
+        {
+          "x": 23,
+          "y": 50,
+          "label": {
+            "ru": "Цена добавления карты в колоду",
+            "en": "The cost of adding a card to the deck"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте сравнить карту с составом колоды до покупки.",
+        "en": "Let players compare an offer with their deck before buying."
+      },
+      {
+        "ru": "Слабая карта тоже меняет частоту появления остальных.",
+        "en": "Even a weak addition changes how often other cards appear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "roguelike--family-26": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Магазины и покупки",
+      "en": "Shops and purchases"
+    },
+    "description": {
+      "ru": "Игрок обменивает валюту на предметы и услуги. Ограниченный запас денег заставляет выбирать между усилением сейчас и будущими тратами.",
+      "en": "The player trades currency for items or services. Limited funds create a choice between immediate power and later spending."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-shop.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss4.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Ограниченный бюджет покупок",
+        "en": "A limited shopping budget"
+      },
+      "alt": {
+        "ru": "Slay the Spire: запас золота сверху и товары с отдельными ценами на прилавке.",
+        "en": "Slay the Spire: gold at the top and individually priced goods on the merchant’s counter."
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 3,
+          "label": {
+            "ru": "Доступный запас валюты",
+            "en": "Available currency"
+          }
+        },
+        {
+          "x": 60,
+          "y": 69,
+          "label": {
+            "ru": "Цена отдельного товара",
+            "en": "The price of one item"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте остаток денег после предполагаемой покупки.",
+        "en": "Show how much money a planned purchase would leave."
+      },
+      {
+        "ru": "Дайте товарам разные применения, а не только разную силу.",
+        "en": "Give goods different uses, not only different power levels."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-hand": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Управление рукой",
+      "en": "Managing a card hand"
+    },
+    "description": {
+      "ru": "Карты в руке задают доступные действия. Игрок выбирает порядок розыгрыша, сохраняет полезные варианты или отказывается от лишних.",
+      "en": "The cards in hand define available actions. The player sequences plays, keeps useful options or discards unwanted ones."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Выбор действий из руки",
+        "en": "Selecting actions from the hand"
+      },
+      "alt": {
+        "ru": "Slay the Spire: несколько карт в нижней части экрана и выбранная карта на переднем плане.",
+        "en": "Slay the Spire: cards along the bottom and one selected card shown in front."
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 87,
+          "label": {
+            "ru": "Карты с разными доступными действиями",
+            "en": "Cards offering different actions"
+          }
+        },
+        {
+          "x": 51,
+          "y": 71,
+          "label": {
+            "ru": "Выбранная карта раскрыта для чтения",
+            "en": "The selected card is enlarged for inspection"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемость карт при разном размере руки.",
+        "en": "Keep cards readable at different hand sizes."
+      },
+      {
+        "ru": "Не превращайте выбор карты в поиск маленькой зоны нажатия.",
+        "en": "Avoid making card selection a search for tiny click targets."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-effects": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Эффекты карт",
+      "en": "Card effects"
+    },
+    "description": {
+      "ru": "Разыгранная карта меняет состояние боя: наносит урон, даёт защиту или накладывает эффект. Сочетание последствий создаёт тактический выбор.",
+      "en": "A played card changes combat through damage, defense or status effects. Combining consequences creates tactical choices."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Действие и его цели",
+        "en": "An action and its targets"
+      },
+      "alt": {
+        "ru": "Slay the Spire: текст эффекта на выбранной карте и несколько противников со шкалами состояния.",
+        "en": "Slay the Spire: effect text on a selected card and several enemies with health and status indicators."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 87,
+          "label": {
+            "ru": "Описание последствий розыгрыша",
+            "en": "The consequences of playing the card"
+          }
+        },
+        {
+          "x": 70,
+          "y": 72,
+          "label": {
+            "ru": "Состояние цели, на которую повлияет карта",
+            "en": "The target state affected by the card"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Укажите цели и порядок применения нескольких эффектов.",
+        "en": "Specify targets and the order of multiple effects."
+      },
+      {
+        "ru": "Подтверждайте каждый существенный результат на самой цели.",
+        "en": "Confirm each meaningful result on the affected target."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-market": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Предложение карт",
+      "en": "Card offers"
+    },
+    "description": {
+      "ru": "Рынок определяет, какие карты можно получить сейчас. Размер предложения и способ обновления меняют планирование и ценность отказа.",
+      "en": "A market determines which cards are available now. Offer size and refresh rules affect planning and the value of passing."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-shop.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss4.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Ассортимент торговца",
+        "en": "The merchant’s selection"
+      },
+      "alt": {
+        "ru": "Slay the Spire: несколько карт разной стоимости и дополнительные услуги у одного торговца.",
+        "en": "Slay the Spire: differently priced cards and additional services at one merchant."
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 29,
+          "label": {
+            "ru": "Набор доступных карт",
+            "en": "The currently available card selection"
+          }
+        },
+        {
+          "x": 38,
+          "y": 50,
+          "label": {
+            "ru": "Цены позволяют сравнить предложения",
+            "en": "Prices let the player compare offers"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, когда ассортимент обновится или исчезнет.",
+        "en": "Explain when an offer will refresh or disappear."
+      },
+      {
+        "ru": "У игрока должна оставаться осмысленная возможность отказаться.",
+        "en": "Keep passing up an offer a meaningful option."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "deck-building--family-cycle": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Оборот колоды",
+      "en": "Deck cycling"
+    },
+    "description": {
+      "ru": "Сыгранные карты уходят в сброс. Когда колода заканчивается, её новый оборот возвращает знакомые действия в другом порядке.",
+      "en": "Played cards enter the discard pile. When the draw pile runs out, a new cycle brings familiar actions back in another order."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Две стопки одного цикла",
+        "en": "Two piles in one cycle"
+      },
+      "alt": {
+        "ru": "Slay the Spire: счётчики колоды и сброса по краям нижней панели.",
+        "en": "Slay the Spire: draw and discard counters at opposite ends of the bottom panel."
+      },
+      "markers": [
+        {
+          "x": 4,
+          "y": 93,
+          "label": {
+            "ru": "Карты, оставшиеся до нового оборота",
+            "en": "Cards remaining before the next cycle"
+          }
+        },
+        {
+          "x": 96,
+          "y": 94,
+          "label": {
+            "ru": "Сброс для будущего перемешивания",
+            "en": "Discarded cards for a future shuffle"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте сброс и окончательное удаление карты из оборота.",
+        "en": "Distinguish discarding from removing a card from the cycle."
+      },
+      {
+        "ru": "Показывайте момент перемешивания, а не меняйте стопки незаметно.",
+        "en": "Make the shuffle visible instead of silently changing piles."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "game-mechanics--gm-manual-save-points": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Точки сохранения",
+      "en": "Save points"
+    },
+    "description": {
+      "ru": "Игрок сохраняет прогресс в узнаваемом месте мира. Расстояние до следующей точки определяет, какой участок придётся повторить после неудачи.",
+      "en": "The player saves progress at a recognizable world location. The next save point determines how much progress a failure puts at risk."
+    },
+    "image": {
+      "src": "images/mechanics/hollow-knight-bench.jpg",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 600,
+        "y": 300,
+        "width": 1050,
+        "height": 750
+      },
+      "game": "Hollow Knight",
+      "sourceUrl": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/ss_92c7e8f34c00bdb455070ecdd5b746f0d2f6d808.1920x1080.jpg?t=1776125684",
+      "credit": "Team Cherry",
+      "rights": "© Team Cherry. All rights reserved.",
+      "caption": {
+        "ru": "Отдых на скамье в Hollow Knight",
+        "en": "Resting at a bench in Hollow Knight"
+      },
+      "alt": {
+        "ru": "Hollow Knight: Рыцарь сидит на освещённой скамье в Грязьмуте рядом с другими персонажами.",
+        "en": "Hollow Knight: the Knight sits on an illuminated bench in Dirtmouth beside other characters."
+      },
+      "markers": [
+        {
+          "x": 61.5,
+          "y": 79,
+          "label": {
+            "ru": "Скамья служит местом отдыха и сохранения",
+            "en": "The bench provides a place to rest and save"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте точку узнаваемой и подтверждайте завершение сохранения.",
+        "en": "Make save points recognizable and confirm a successful save."
+      },
+      {
+        "ru": "Соотносите длину повторного участка с тяжестью поражения.",
+        "en": "Match the repeated section’s length to the cost of failure."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://store.steampowered.com/app/367520/Hollow_Knight/"
+      }
+    ]
+  },
+  "game-mechanics--gm-enemy-health-bars": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Здоровье противников",
+      "en": "Enemy health bars"
+    },
+    "description": {
+      "ru": "Шкала у противника показывает оставшийся запас здоровья. Игрок сравнивает цели и оценивает, хватит ли следующей атаки для победы.",
+      "en": "An enemy’s bar shows remaining health. The player compares targets and estimates whether the next attack can defeat one."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "crop": {
+        "x": 950,
+        "y": 250,
+        "width": 900,
+        "height": 650
+      },
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Отдельные шкалы трёх противников",
+        "en": "Separate bars for three enemies"
+      },
+      "alt": {
+        "ru": "Slay the Spire: у каждого из трёх противников есть собственная шкала с текущим и максимальным здоровьем.",
+        "en": "Slay the Spire: each of three enemies has its own current and maximum health bar."
+      },
+      "markers": [
+        {
+          "x": 68.5,
+          "y": 69.5,
+          "label": {
+            "ru": "Текущее здоровье отдельной цели",
+            "en": "The current health of an individual target"
+          }
+        },
+        {
+          "x": 82,
+          "y": 68,
+          "label": {
+            "ru": "Другая цель имеет свой запас здоровья",
+            "en": "Another target has its own health pool"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Привязывайте шкалу к цели так, чтобы её нельзя было перепутать.",
+        "en": "Keep the bar clearly attached to its target."
+      },
+      {
+        "ru": "Сохраняйте читаемость при нескольких противниках рядом.",
+        "en": "Keep nearby enemy bars readable and distinct."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "roguelike--family-12": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Блок и защита",
+      "en": "Block and defense"
+    },
+    "description": {
+      "ru": "Защита уменьшает или предотвращает входящий урон. Игрок сравнивает ожидаемую угрозу с ценой защитного действия и оставшимися возможностями.",
+      "en": "Defense reduces or prevents incoming damage. The player weighs the expected threat against its cost and other available actions."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-battle.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss8.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Блок героя и объявленная атака",
+        "en": "The player’s block and an announced attack"
+      },
+      "alt": {
+        "ru": "Slay the Spire: у героя есть пять единиц блока, а над противником показана готовящаяся атака.",
+        "en": "Slay the Spire: the player has five block and an enemy displays an upcoming attack."
+      },
+      "markers": [
+        {
+          "x": 19.5,
+          "y": 71,
+          "label": {
+            "ru": "Блок уменьшит входящий урон",
+            "en": "Block will reduce incoming damage"
+          }
+        },
+        {
+          "x": 70,
+          "y": 38,
+          "label": {
+            "ru": "Объявленная атака помогает оценить угрозу",
+            "en": "The announced attack helps estimate the threat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, что именно блокируется и когда защита исчезает.",
+        "en": "Explain what is blocked and when the defense expires."
+      },
+      {
+        "ru": "Показывайте угрозу достаточно рано для защитного решения.",
+        "en": "Reveal the threat early enough to allow a defensive decision."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "roguelike--family-31": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Прогресс между забегами",
+      "en": "Progress between runs"
+    },
+    "description": {
+      "ru": "Часть достижений сохраняется после завершения забега. Новые возможности меняют будущие попытки, даже если текущая закончилась поражением.",
+      "en": "Some progress survives the end of a run. New options change future attempts, even when the current one ends in defeat."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-unlocks.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss20.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Карты открываются для будущих забегов",
+        "en": "Cards unlocked for future runs"
+      },
+      "alt": {
+        "ru": "Slay the Spire: экран открытых карт прямо сообщает, что они появятся в будущих забегах.",
+        "en": "Slay the Spire: an unlock screen states that the new cards will appear in future runs."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 24,
+          "label": {
+            "ru": "Открытие сохраняется между попытками",
+            "en": "The unlock persists between attempts"
+          }
+        },
+        {
+          "x": 50,
+          "y": 80,
+          "label": {
+            "ru": "Новые карты появятся в будущих забегах",
+            "en": "The new cards become available in future runs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте новые варианты игры от обязательного роста силы.",
+        "en": "Distinguish new play options from mandatory power growth."
+      },
+      {
+        "ru": "Объясняйте, что сохраняется, до завершения попытки.",
+        "en": "Explain what carries over before the attempt ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "roguelike--family-17": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Развитие внутри забега",
+      "en": "Upgrades within a run"
+    },
+    "description": {
+      "ru": "Игрок усиливает персонажа по ходу попытки. Каждое улучшение меняет ближайшие решения, но может исчезнуть после завершения забега.",
+      "en": "The player grows stronger during an attempt. Each upgrade changes immediate decisions but may be lost when the run ends."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-rest.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss11.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Улучшение карты вместо отдыха",
+        "en": "Upgrading a card instead of resting"
+      },
+      "alt": {
+        "ru": "Slay the Spire: в лагере можно улучшить карту или восстановить здоровье.",
+        "en": "Slay the Spire: a campfire offers a card upgrade or health recovery."
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 34,
+          "label": {
+            "ru": "Улучшение усиливает карту в текущем забеге",
+            "en": "The upgrade improves a card for this run"
+          }
+        },
+        {
+          "x": 43,
+          "y": 34,
+          "label": {
+            "ru": "Отдых конкурирует за ту же возможность",
+            "en": "Rest competes for the same opportunity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте оценить улучшение в контексте уже выбранного билда.",
+        "en": "Let players judge an upgrade in the context of their current build."
+      },
+      {
+        "ru": "Не смешивайте временное усиление с постоянным открытием.",
+        "en": "Distinguish temporary upgrades from persistent unlocks."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "roguelike--family-27": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Риск и награда",
+      "en": "Risk and reward"
+    },
+    "description": {
+      "ru": "Более выгодное действие подвергает игрока большей опасности или лишает страховки. Выбор требует сравнить возможную выгоду с ценой неудачи.",
+      "en": "A more rewarding action adds danger or gives up a safety net. The player weighs the potential benefit against the cost of failure."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-rest.jpg",
+      "width": 1920,
+      "height": 1080,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss11.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Усилиться или восстановить здоровье",
+        "en": "Gain power or recover health"
+      },
+      "alt": {
+        "ru": "Slay the Spire: отдых и улучшение карты доступны как взаимоисключающие решения у костра.",
+        "en": "Slay the Spire: resting and upgrading a card are mutually exclusive campfire choices."
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 34,
+          "label": {
+            "ru": "Улучшение даёт силу без восстановления здоровья",
+            "en": "Upgrading gains power without recovering health"
+          }
+        },
+        {
+          "x": 43,
+          "y": 34,
+          "label": {
+            "ru": "Отдых даёт запас безопасности перед следующим боем",
+            "en": "Rest adds a safety margin for the next fight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте возможные потери до принятия риска.",
+        "en": "Show the possible losses before the risk is accepted."
+      },
+      {
+        "ru": "Безопасный выбор тоже должен продвигать игрока к цели.",
+        "en": "The safer choice should still advance the player’s goal."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
       }
     ]
   }

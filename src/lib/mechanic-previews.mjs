@@ -1,11 +1,14 @@
 import previews from '../data/mechanic-previews.json' with { type: 'json' };
 
+export const mechanicPreviews = previews;
+
 /** Optional authored single-screen presentation, keyed by canonical identity. */
 export function getMechanicPreview(id, lang) {
   const entry = previews[id];
   if (!entry) return null;
   return {
     updatedAt: entry.updatedAt,
+    title: entry.title?.[lang],
     description: entry.description[lang],
     image: {
       ...entry.image,

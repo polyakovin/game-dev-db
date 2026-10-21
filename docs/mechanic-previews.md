@@ -1,12 +1,21 @@
-# Compact mechanic pilot
+# Illustrated mechanic cards
 
-The Search and discovery record (`mechanic/shared-family-02`) has an authored
-compact view at its existing `/{lang}/knowledge/mechanic/shared-family-02/` URL.
-Both children and education catalog placements link there. Other mechanics retain
-the article view until this pilot is reviewed.
+Active canonical mechanics are being expanded from the reviewed Search and
+discovery pilot into illustrated cards at their existing focused URLs. Shared
+placements link to one canonical card. `/ru/mechanics/cards/` and its English
+counterpart list authored cards in editorial priority order; the mechanics index
+highlights the first six. Other records retain their full reference view until
+their illustration and compact content have been checked.
+
+`src/data/mechanic-card-order.json` covers every active canonical mechanic once.
+Its order reflects cross-genre usefulness and first-prototype value, not measured
+market popularity. Run `node scripts/mechanic-card-report.mjs` for the next pending
+records, `--json` for the exhaustive inventory and `--require-complete` for the
+final rollout gate. A reference page or queue entry does not count as an authored
+illustrated card. Archived compatibility records are excluded.
 
 `src/data/mechanic-previews.json` is keyed by canonical mechanic ID. Each entry
-contains bilingual description, screenshot alt text/caption and numbered markers,
+contains a short bilingual display title and description, screenshot alt text/caption and numbered markers,
 two short application tips and primary-source example links. Image metadata keeps
 the local source path, dimensions, original URL, source page, authors and rights.
 Optional `image.crop` records a rectangle in original screenshot pixels. It removes
@@ -22,6 +31,15 @@ also show the visible legend.
 `src/lib/mechanic-previews.mjs` localizes it once; the knowledge builder exposes it
 as optional `attributes.preview`, uses the description for `summary` and includes
 example sources in the source registry. Existing taxonomy sections stay intact.
+The compact display title is also a search alias; the full record title remains
+unchanged. Cards show at most two authored example links, while all original
+reference sources and image source attribution remain in machine exports.
+
+`src/lib/mechanic-preview-validation.mjs` is part of canonical content validation.
+It checks both languages, short-content limits, HTTPS attribution, original local
+PNG/JPEG dimensions, crop bounds and marker membership. Crop rectangles include
+their origin and exclude their far edge; percentage coordinates are compared in
+the same units without a tolerance that changes that boundary.
 
 HTML and common JSON/Markdown use these same fields. The Markdown also renders
 the concise explanation, illustration, marker labels, tips and example links.

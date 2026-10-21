@@ -604,8 +604,20 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
       record.attributes.preview = preview;
       record.updatedAt = preview.updatedAt;
       record.summary = preview.description;
-      for (const source of preview.examples)
-        record.sources.push({ title: source.title, url: source.url });
+      if (preview.title && preview.title !== record.title)
+        record.aliases = [...new Set([...record.aliases, preview.title])];
+      for (const source of [
+        { title: preview.image.game, url: preview.image.sourceUrl },
+        ...preview.examples,
+      ])
+        if (
+          !record.sources.some(
+            (existing) =>
+              canonicalSourceUrl(existing.url) ===
+              canonicalSourceUrl(source.url),
+          )
+        )
+          record.sources.push({ title: source.title, url: source.url });
     }
     if (!record.placements.length)
       record.placements.push({

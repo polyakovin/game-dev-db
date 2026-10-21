@@ -22,6 +22,7 @@ export async function GET() {
       'search/',
       'resources/',
       'mechanics/',
+      'mechanics/cards/',
       'practice/',
       'lenses/',
       'jams/',

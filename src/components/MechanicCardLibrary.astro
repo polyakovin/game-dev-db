@@ -1,0 +1,211 @@
+---
+import { getKnowledge } from '../lib/knowledge-content';
+import { getMechanicCardQueue } from '../lib/mechanic-card-order.mjs';
+import { mechanicPreviews } from '../lib/mechanic-previews.mjs';
+import { path, type Locale } from '../lib/site';
+interface Props {
+  lang: Locale;
+  limit?: number;
+}
+const { lang, limit } = Astro.props;
+const ru = lang === 'ru';
+const inventory = getMechanicCardQueue((await getKnowledge(lang)).records);
+const queue = inventory.filter((entry) => entry.illustrated);
+const cards = limit ? queue.slice(0, limit) : queue;
+const local = (url: string) => new URL(url).pathname;
+---
+
+<section
+  class="mechanic-card-library"
+  data-card-library
+  aria-labelledby="mechanic-cards-heading"
+>
+  <div class="card-library-heading">
+    <div>
+      <h2 id="mechanic-cards-heading">
+        {ru ? 'Механики на одном экране' : 'Mechanics at a glance'}
+      </h2>
+      <p>
+        {ru
+          ? 'Короткое описание и разбор на скриншоте. Сначала базовые и универсальные приёмы.'
+          : 'A short definition and an annotated game screenshot. Broadly useful techniques come first.'}
+      </p>
+      {!limit && (
+        <p class="card-library-coverage">
+          {ru
+            ? `С иллюстрациями: ${queue.length} из ${inventory.length}.`
+            : `Illustrated: ${queue.length} of ${inventory.length}.`}{' '}
+          <a href={path(`${lang}/mechanics/`)}>
+            {ru
+              ? 'Все записи в каталоге направлений'
+              : 'All entries by direction'}{' '}
+            →
+          </a>
+        </p>
+      )}
+    </div>
+    {limit && (
+      <a href={path(`${lang}/mechanics/cards/`)}>
+        {ru ? 'Все карточки' : 'All cards'} ({queue.length}) →
+      </a>
+    )}
+  </div>
+  {!limit && (
+    <form
+      class="card-library-search"
+      data-card-library-controls
+      hidden
+      role="search"
+    >
+      <label for="card-query">
+        {ru ? 'Найти механику' : 'Find a mechanic'}
+      </label>
+      <input
+        id="card-query"
+        type="search"
+        data-card-library-query
+        autocomplete="off"
+        placeholder={
+          ru
+            ? 'Например: здоровье, инвентарь, диалог…'
+            : 'For example: health, inventory, dialogue…'
+        }
+      />
+      <p data-card-library-count role="status" aria-live="polite">
+        {ru ? 'Карточек' : 'Cards'}: {queue.length}
+      </p>
+    </form>
+  )}
+  <div class="mechanic-card-grid">
+    {cards.map(({ record }) => {
+      const card = record.attributes.preview!;
+      const bilingual =
+        mechanicPreviews[record.id as keyof typeof mechanicPreviews];
+      return (
+        <a
+          class="mechanic-library-card"
+          href={local(record.url)}
+          data-card-library-item
+          data-card-search={`${Object.values(bilingual.title).join(' ')} ${Object.values(bilingual.description).join(' ')} ${record.title} ${record.aliases.join(' ')}`.toLocaleLowerCase(
+            lang,
+          )}
+        >
+          <img
+            src={path(card.image.src)}
+            width={card.image.width}
+            height={card.image.height}
+            loading="lazy"
+            alt=""
+          />
+          <div>
+            <h3>{card.title ?? record.title}</h3>
+            <p>{card.description}</p>
+            <span>{card.image.game} ↗</span>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+  <p data-card-library-empty hidden>
+    {ru
+      ? 'Ничего не найдено. Попробуйте другое слово.'
+      : 'No matches. Try another word.'}
+  </p>
+</section>
+<script>
+  import '../scripts/mechanic-card-library';
+</script>
+<style>
+  .mechanic-card-library {
+    margin-bottom: 36px;
+  }
+  .card-library-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  h2 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    letter-spacing: -0.04em;
+  }
+  .card-library-heading p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 700px;
+  }
+  .card-library-heading > a {
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .mechanic-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    gap: 14px;
+  }
+  .mechanic-library-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    overflow: clip;
+  }
+  .mechanic-library-card:hover {
+    border-color: var(--accent);
+  }
+  img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background: var(--surface);
+  }
+  .mechanic-library-card > div {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    letter-spacing: -0.03em;
+  }
+  .mechanic-library-card p {
+    font-size: 13px;
+    line-height: 1.45;
+    margin: 0 0 12px;
+  }
+  .mechanic-library-card span {
+    margin-top: auto;
+    color: var(--muted);
+    font-size: 11px;
+  }
+  .card-library-search {
+    margin: 20px 0;
+  }
+  .card-library-search label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  input {
+    width: min(100%, 600px);
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--ink);
+  }
+  .card-library-search p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 8px 0 0;
+  }
+</style>

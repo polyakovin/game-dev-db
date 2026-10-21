@@ -23,7 +23,10 @@ for (const lang of ['ru', 'en'] as const) {
       });
       const page = await context.newPage();
       await page.goto(new URL(record.url).pathname);
-      await expect(page.locator('h1')).toHaveText(record.title);
+      const preview = record.attributes.preview;
+      await expect(page.locator('h1')).toHaveText(
+        preview?.title ?? record.title,
+      );
       await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
         'href',
         record.url,
@@ -43,11 +46,23 @@ for (const lang of ['ru', 'en'] as const) {
       expect(metadata.name).toBe(record.title);
       expect(metadata.citation).toEqual(record.sources.map((s: any) => s.url));
       expect(metadata.dateModified ?? null).toBe(record.updatedAt);
-      expect(
-        await page
-          .locator('[data-record-section]')
-          .evaluateAll((items) => items.map((item) => item.id)),
-      ).toEqual(record.sections.map((s: any) => s.id));
+      if (preview) {
+        await expect(page.locator('.preview-description')).toHaveText(
+          preview.description,
+        );
+        await expect(page.locator('.preview-image img')).toBeVisible();
+        const markdown = await (
+          await request.get(new URL(record.markdownUrl).pathname)
+        ).text();
+        for (const section of record.sections)
+          expect(markdown).toContain(section.body);
+      } else {
+        expect(
+          await page
+            .locator('[data-record-section]')
+            .evaluateAll((items) => items.map((item) => item.id)),
+        ).toEqual(record.sections.map((s: any) => s.id));
+      }
       await expect(page.locator('#collections a').first()).toHaveAttribute(
         'href',
         new URL(record.placements[0].url).pathname +
@@ -74,14 +89,25 @@ for (const lang of ['ru', 'en'] as const) {
       }
       // Native TOC is usable by keyboard without any client script.
       await page.setViewportSize({ width: 1280, height: 900 });
-      await expect(page.locator('[data-toc] a').first()).toBeVisible();
+      const navigation = page
+        .locator(preview ? '#collections a' : '[data-toc] a')
+        .first();
+      await expect(navigation).toBeVisible();
       if (type === 'mechanic')
         await page.screenshot({
           path: testInfo.outputPath(`${lang}-desktop.png`),
         });
-      await page.locator('[data-toc] a').first().focus();
+      await navigation.focus();
       await page.keyboard.press('Enter');
-      await expect(page).toHaveURL(new RegExp(`#${record.sections[0].id}$`));
+      if (preview)
+        await expect(page).toHaveURL(
+          record.placements[0].url.replace(
+            new URL(record.url).origin,
+            baseURL!,
+          ),
+        );
+      else
+        await expect(page).toHaveURL(new RegExp(`#${record.sections[0].id}$`));
       await context.close();
     });
   }

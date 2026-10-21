@@ -19,8 +19,9 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
 
 <article class="mechanic-preview" data-mechanic-preview={record.key}>
   <header class="preview-header">
-    <h1>{record.title}</h1>
+    <h1>{preview.title ?? record.title}</h1>
     <nav
+      id="collections"
       class="preview-categories"
       aria-label={ru ? 'Категории механики' : 'Mechanic categories'}
     >
@@ -82,7 +83,7 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
           ))}
         </ol>
         <a class="preview-credit" href={image.sourceUrl} title={image.rights}>
-          © {image.credit} · {ru ? 'Пресс-кит' : 'Press kit'} ↗
+          © {image.credit} · {ru ? 'Источник' : 'Source'} ↗
         </a>
       </figcaption>
     </figure>
@@ -103,10 +104,17 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     >
       <h2 id="preview-examples-heading">{ru ? 'Ещё примеры' : 'Examples'}</h2>
       <div>
-        {record.sources.map((source) => (
+        {preview.examples.map((source) => (
           <a href={source.url}>{source.title} ↗</a>
         ))}
       </div>
+      {record.relations.slice(0, 2).map((relation) => (
+        <div class="preview-related">
+          <a href={local(relation.url)} data-knowledge-target={relation.key}>
+            {relation.label}: {relation.title} →
+          </a>
+        </div>
+      ))}
     </section>
   </div>
 
@@ -189,7 +197,7 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     display: grid;
     place-items: center;
     container-type: size;
-    background: #fff;
+    background: var(--surface);
     border-radius: 8px 8px 0 0;
   }
   .preview-image {

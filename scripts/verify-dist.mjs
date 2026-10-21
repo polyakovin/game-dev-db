@@ -718,7 +718,7 @@ for (const lang of ['ru', 'en']) {
       }
       const $ = await document(htmlFile);
       if (
-        $('h1').text() !== record.title ||
+        $('h1').text() !== (record.attributes.preview?.title ?? record.title) ||
         $('link[rel="canonical"]').attr('href') !== record.url
       )
         errors.push(`Focused page identity differs: ${record.key}/${lang}`);
@@ -763,6 +763,7 @@ for (const lang of ['ru', 'en']) {
         if (
           $('[data-mechanic-preview]').attr('data-mechanic-preview') !==
             record.key ||
+          $('h1').text() !== (preview.title ?? record.title) ||
           $('.preview-description').text() !== preview.description ||
           $('.preview-image img').attr('src') !==
             `${base}${preview.image.src}` ||
@@ -775,7 +776,7 @@ for (const lang of ['ru', 'en']) {
           errors.push(
             `Compact mechanic content differs: ${record.key}/${lang}`,
           );
-        for (const source of record.sources)
+        for (const source of preview.examples)
           if (
             !$('#sources a')
               .toArray()
@@ -784,6 +785,10 @@ for (const lang of ['ru', 'en']) {
             errors.push(
               `Compact mechanic source missing: ${record.key}/${lang}`,
             );
+        if ($('.preview-credit').attr('href') !== preview.image.sourceUrl)
+          errors.push(
+            `Compact mechanic image credit missing: ${record.key}/${lang}`,
+          );
       }
     }
     await checkReference(

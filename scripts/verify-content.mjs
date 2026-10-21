@@ -11,6 +11,8 @@ import { validateContentOrder } from '../src/lib/content-order.mjs';
 import { resourceGroups } from '../src/lib/resources.mjs';
 import { validateLearningPaths } from '../src/lib/learning-paths.mjs';
 import { buildKnowledge, validateKnowledge } from '../src/lib/knowledge.mjs';
+import { validateMechanicCardOrder } from '../src/lib/mechanic-card-order.mjs';
+import { validateMechanicPreviews } from '../src/lib/mechanic-preview-validation.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const languages = ['ru', 'en'];
@@ -209,6 +211,11 @@ for (const lang of languages) {
       lang,
     );
     errors.push(...validateKnowledge(dataset));
+    if (lang === 'ru')
+      errors.push(
+        ...validateMechanicCardOrder(dataset.records),
+        ...validateMechanicPreviews(dataset.records),
+      );
   } catch (error) {
     errors.push(`knowledge/${lang}: ${error.message}`);
   }

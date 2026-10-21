@@ -4,6 +4,7 @@ import type { Locale } from './site';
 
 export interface MechanicPreview {
   updatedAt: string;
+  title?: string;
   description: string;
   image: {
     src: string;
