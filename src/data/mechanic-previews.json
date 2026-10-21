@@ -3252,5 +3252,3284 @@
         "url": "https://store.steampowered.com/app/427520/Factorio/"
       }
     ]
+  },
+  "game-mechanics--gm-reloading-gun": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Перезарядка оружия",
+      "en": "Reloading"
+    },
+    "description": {
+      "ru": "Игрок переносит боеприпасы из запаса в магазин. Во время перезарядки он временно теряет возможность стрелять.",
+      "en": "The player moves ammunition from reserve into the magazine, trading a short pause in firing for another burst."
+    },
+    "image": {
+      "src": "images/mechanics/drg-autocannon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_e6e1d97ee0a5fc8b82c5a9a1aacba178206e3522.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Магазин и запас автопушки",
+        "en": "Autocannon magazine and reserve"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: автопушка стреляет по насекомым; экран на корпусе показывает 73 снаряда в магазине и 330 в запасе.",
+        "en": "Deep Rock Galactic: an autocannon fires at bugs; its built-in display shows 73 rounds loaded and 330 in reserve."
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 70,
+          "label": {
+            "ru": "73 в магазине, 330 в запасе",
+            "en": "73 loaded, 330 in reserve"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте запас отдельно от заряженного магазина.",
+        "en": "Show reserve ammunition separately from the loaded magazine."
+      },
+      {
+        "ru": "Дайте понять, когда перезарядку можно прервать.",
+        "en": "Make it clear when reloading can be interrupted."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-climbing-ladders": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Подъём по лестницам",
+      "en": "Climbing ladders"
+    },
+    "description": {
+      "ru": "Лестница соединяет разные высоты и задаёт понятную линию движения. Вход, выход и возможность падения должны читаться заранее.",
+      "en": "A ladder connects different heights along a clear route. Players should recognize its entry, exit and fall risk in advance."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-ladder.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_8fb56a4fb17d6c777c12952d6642652b063b5528.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Лестница между ярусами пещеры",
+        "en": "A ladder between cave levels"
+      },
+      "alt": {
+        "ru": "Spelunky: герой у нижнего конца лестницы, соединяющей два яруса; выше виден взрыв.",
+        "en": "Spelunky: the explorer is below a ladder connecting two cave levels, with an explosion overhead."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 31,
+          "label": {
+            "ru": "Вертикальный путь между ярусами",
+            "en": "A vertical route between levels"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте захват лестницы от обычного прыжка.",
+        "en": "Distinguish grabbing the ladder from an ordinary jump."
+      },
+      {
+        "ru": "Проверяйте выход наверху и внизу без застревания.",
+        "en": "Check that both ladder exits work without snagging."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "game-mechanics--gm-climbing-ropes": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лазание по верёвке",
+      "en": "Climbing ropes"
+    },
+    "description": {
+      "ru": "Верёвка создаёт вертикальный маршрут в открытом пространстве. Игрок цепляется за неё, меняет высоту и выбирает момент отпускания.",
+      "en": "A rope creates a vertical route through open space. The player grabs it, changes height and chooses when to let go."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-rope.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 400,
+        "y": 0,
+        "width": 700,
+        "height": 720
+      },
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_1fa00992272eea478c750d925c9eda920fa760a8.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Подъём с переносимым персонажем",
+        "en": "Climbing while carrying a character"
+      },
+      "alt": {
+        "ru": "Spelunky: исследователь держится за верёвку над опасным алтарём и несёт другого персонажа.",
+        "en": "Spelunky: the explorer clings to a rope above a dangerous altar while carrying another character."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 52,
+          "label": {
+            "ru": "Персонаж удерживается на верёвке",
+            "en": "Explorer holding the rope"
+          }
+        },
+        {
+          "x": 50,
+          "y": 20,
+          "label": {
+            "ru": "Точка крепления над провалом",
+            "en": "Anchor above the drop"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте доступную длину и точку крепления.",
+        "en": "Show the usable length and anchor point."
+      },
+      {
+        "ru": "Продумайте переход с верёвки на ближайшую опору.",
+        "en": "Support a reliable transition from rope to nearby ground."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "game-mechanics--gm-zipline": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Перемещение по тросу",
+      "en": "Zipline traversal"
+    },
+    "description": {
+      "ru": "Натянутый трос позволяет пересечь провал на подвесе. Маршрут виден заранее, а игрок выбирает момент посадки и схода.",
+      "en": "A suspended cable carries the player across a gap. Its route is visible before boarding, and the player chooses when to get off."
+    },
+    "image": {
+      "src": "images/mechanics/drg-zipline.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_3fff97072bf18e192b0bc99f59209d357c62d624.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Команда пересекает пещеру",
+        "en": "The team crosses a cavern"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: три гнома на подвесах движутся по тросу над глубокой пещерой; слева стоит опорная установка.",
+        "en": "Deep Rock Galactic: three dwarves ride a zipline across a deep cavern, with its anchor on the left."
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 42,
+          "label": {
+            "ru": "Персонаж на подвесе",
+            "en": "A rider suspended from the cable"
+          }
+        },
+        {
+          "x": 11,
+          "y": 23,
+          "label": {
+            "ru": "Опора и начало маршрута",
+            "en": "Anchor and start of the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выделяйте начало и конец троса на фоне окружения.",
+        "en": "Keep both ends of the cable visible against the environment."
+      },
+      {
+        "ru": "Предусмотрите безопасный сход с подвеса.",
+        "en": "Provide a predictable way to leave the cable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "rpg-grind--fishing": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Рыбалка",
+      "en": "Fishing"
+    },
+    "description": {
+      "ru": "Игрок выбирает место, забрасывает снасть и реагирует на поклёвку. Условия водоёма и действия при вываживании определяют добычу.",
+      "en": "The player chooses a spot, casts a line and responds to a bite. The location and the retrieval challenge determine the catch."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-fishing.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 338,
+        "y": 263,
+        "width": 825,
+        "height": 547
+      },
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-01.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Ловля рыбы с борта корабля",
+        "en": "Fishing from the ship"
+      },
+      "alt": {
+        "ru": "Spiritfarer: Стелла сидит с удочкой на краю корабля, леска уходит в воду; рядом находится кот.",
+        "en": "Spiritfarer: Stella fishes from the edge of her ship; the line reaches the water and her cat sits nearby."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 59,
+          "label": {
+            "ru": "Рыбак и удочка на борту",
+            "en": "Angler and rod aboard the ship"
+          }
+        },
+        {
+          "x": 32,
+          "y": 92,
+          "label": {
+            "ru": "Леска уходит в воду",
+            "en": "The line reaches the water"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте ожидание поклёвки от активного вываживания.",
+        "en": "Separate waiting for a bite from the active retrieval challenge."
+      },
+      {
+        "ru": "Делайте сигнал поклёвки заметным без звука.",
+        "en": "Make bites recognizable without relying on sound."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "game-mechanics--gm-walking-on-stairs": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Ходьба по ступеням",
+      "en": "Walking on stairs"
+    },
+    "description": {
+      "ru": "Ступени соединяют высоты в обычном маршруте движения. Персонаж проходит их без отдельных команд и мелких зацепов.",
+      "en": "Stairs connect different heights along an ordinary movement route. Characters traverse them without extra commands or snagging."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-fishing.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 638,
+        "y": 263,
+        "width": 750,
+        "height": 487
+      },
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-01.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Переход между палубами",
+        "en": "A passage between deck levels"
+      },
+      "alt": {
+        "ru": "Spiritfarer: деревянные ступени соединяют основную палубу с площадкой, где Стелла ловит рыбу.",
+        "en": "Spiritfarer: wooden steps connect the main deck to the platform where Stella is fishing."
+      },
+      "markers": [
+        {
+          "x": 69,
+          "y": 66,
+          "label": {
+            "ru": "Ступени между уровнями палубы",
+            "en": "Steps between deck levels"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимые ступени с коллизией движения.",
+        "en": "Align the visible stairs with the movement collision."
+      },
+      {
+        "ru": "Проверяйте скорость и камеру при подъёме и спуске.",
+        "en": "Check speed and camera behavior in both directions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "game-mechanics--gm-terrain-deformation": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Изменение рельефа",
+      "en": "Terrain deformation"
+    },
+    "description": {
+      "ru": "Действия меняют форму поверхности: появляются ямы, проходы и новые опоры. Изменённый рельеф влияет на последующие действия.",
+      "en": "Actions reshape the terrain, creating pits, passages and footholds. The altered surface affects what the player can do next."
+    },
+    "image": {
+      "src": "images/mechanics/drg-mining.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_82bae16c1411fad6a4a09c8c9f62cdf86bd6e8c9.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Кирки изменяют поверхность породы",
+        "en": "Pickaxes reshape the rock"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: два игрока разбивают кирками породу; от стены отлетают крупные золотистые осколки.",
+        "en": "Deep Rock Galactic: two players strike the rock with pickaxes, sending golden chunks away from the wall."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 54,
+          "label": {
+            "ru": "Область, которую разбивают кирками",
+            "en": "Rock being broken with pickaxes"
+          }
+        },
+        {
+          "x": 68,
+          "y": 34,
+          "label": {
+            "ru": "Инструмент игрока",
+            "en": "The player’s tool"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обновляйте столкновения вместе с видимой геометрией.",
+        "en": "Update collisions together with the visible geometry."
+      },
+      {
+        "ru": "Проверяйте, может ли игрок выбраться из созданной ямы.",
+        "en": "Check that players can escape pits they create."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-destructible-walls": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Разрушаемые стены",
+      "en": "Destructible walls"
+    },
+    "description": {
+      "ru": "Игрок разрушает преграду и открывает новый проход или линию обзора. Материал и повреждения помогают оценить результат удара.",
+      "en": "Breaking a barrier opens a new passage or line of sight. Its material and visible damage help players predict the effect of a strike."
+    },
+    "image": {
+      "src": "images/mechanics/drg-mining.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_82bae16c1411fad6a4a09c8c9f62cdf86bd6e8c9.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Разрушение скальной преграды",
+        "en": "Breaking through a rock barrier"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: кирки разбивают скальную стену перед игроками, открывая пространство в породе.",
+        "en": "Deep Rock Galactic: pickaxes break the rock wall in front of the players, opening space in the stone."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 53,
+          "label": {
+            "ru": "Участок разрушаемой стены",
+            "en": "A section of destructible wall"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте разрушаемые материалы от прочих поверхностей.",
+        "en": "Distinguish breakable materials from other surfaces."
+      },
+      {
+        "ru": "Проверяйте маршруты и обзор после разрушения.",
+        "en": "Check routes and sightlines after destruction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-freezing-enemies": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Замораживание врагов",
+      "en": "Freezing enemies"
+    },
+    "description": {
+      "ru": "Холод временно обездвиживает противника или ограничивает его действия. Игрок использует паузу для атаки, отхода или помощи союзнику.",
+      "en": "Cold temporarily immobilizes an enemy or restricts its actions, creating an opening to attack, retreat or help a teammate."
+    },
+    "image": {
+      "src": "images/mechanics/drg-freezing.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_5d41a7c4b219d60ab4463721352bd019adfb396c.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Криопушка останавливает противников",
+        "en": "The cryo cannon stops enemies"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: криопушка выпускает белую струю в насекомых; замороженные враги покрыты голубым льдом.",
+        "en": "Deep Rock Galactic: a cryo cannon sprays a white stream at bugs; frozen enemies are coated in blue ice."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 27,
+          "label": {
+            "ru": "Противник покрыт льдом",
+            "en": "An enemy coated in ice"
+          }
+        },
+        {
+          "x": 72,
+          "y": 72,
+          "label": {
+            "ru": "Криопушка создаёт поток холода",
+            "en": "The cryo cannon projects cold"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте полную заморозку от простого замедления.",
+        "en": "Distinguish complete freezing from a movement slowdown."
+      },
+      {
+        "ru": "Сообщайте о скором окончании эффекта.",
+        "en": "Signal when the freezing effect is about to end."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-ammo-display": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Боезапас на оружии",
+      "en": "Ammo displayed on the weapon"
+    },
+    "description": {
+      "ru": "Остаток патронов виден на самом оружии. Игрок следит за боезапасом в пространстве действия, сохраняя связь с игровым миром.",
+      "en": "A display built into the weapon shows remaining ammunition, keeping resource information within the scene of the action."
+    },
+    "image": {
+      "src": "images/mechanics/drg-autocannon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_e6e1d97ee0a5fc8b82c5a9a1aacba178206e3522.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Экран встроен в корпус автопушки",
+        "en": "A display built into the autocannon"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: яркие числа 73 и 330 показаны на экране корпуса оружия, прямо перед руками игрока.",
+        "en": "Deep Rock Galactic: the numbers 73 and 330 appear on a display built into the weapon in front of the player’s hands."
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 70,
+          "label": {
+            "ru": "Числа на корпусе оружия",
+            "en": "Numbers displayed on the weapon"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте читаемость при движении оружия и ярких эффектах.",
+        "en": "Keep the display legible during weapon motion and bright effects."
+      },
+      {
+        "ru": "Не полагайтесь только на цвет предупреждения.",
+        "en": "Do not communicate low ammunition through color alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-interface": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Интерфейс внутри мира",
+      "en": "Diegetic interface"
+    },
+    "description": {
+      "ru": "Информация встроена в предметы игрового мира: экраны, приборы и инструменты. Игрок читает её в контексте действия.",
+      "en": "Information appears on objects within the game world, such as screens, instruments and tools, so players read it in context."
+    },
+    "image": {
+      "src": "images/mechanics/drg-autocannon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_e6e1d97ee0a5fc8b82c5a9a1aacba178206e3522.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Прибор на оружии вместо отдельной панели",
+        "en": "An instrument attached to the weapon"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: счётчик боезапаса находится на автопушке и повёрнут вместе с ней к игроку.",
+        "en": "Deep Rock Galactic: an ammunition counter is attached to the autocannon and faces the player along with the weapon."
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 70,
+          "label": {
+            "ru": "Информация привязана к предмету в мире",
+            "en": "Information attached to a world object"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сначала обеспечьте читаемость, затем добавляйте стилизацию прибора.",
+        "en": "Ensure readability before styling the instrument."
+      },
+      {
+        "ru": "Проверяйте информацию при любом фоне и положении предмета.",
+        "en": "Check the information against different backgrounds and object poses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-flashlight": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Фонарик",
+      "en": "Flashlight"
+    },
+    "description": {
+      "ru": "Направленный переносной свет раскрывает часть тёмного пространства. Поворот луча становится решением о том, куда смотреть дальше.",
+      "en": "A portable directional light reveals part of a dark space. Turning the beam becomes a decision about where to look next."
+    },
+    "image": {
+      "src": "images/mechanics/drg-zipline.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_3fff97072bf18e192b0bc99f59209d357c62d624.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Налобные фонари освещают пещеру",
+        "en": "Headlamps illuminate the cavern"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: налобные фонари гномов на тросе создают направленные конусы света в тёмной пещере.",
+        "en": "Deep Rock Galactic: dwarves on a zipline cast directional cones of light from their headlamps into a dark cavern."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 37,
+          "label": {
+            "ru": "Конус переносного света",
+            "en": "A cone of portable light"
+          }
+        },
+        {
+          "x": 77,
+          "y": 26,
+          "label": {
+            "ru": "За пределами луча темно",
+            "en": "Darkness outside the beam"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте минимальную читаемость маршрута вне луча.",
+        "en": "Keep the route minimally readable outside the beam."
+      },
+      {
+        "ru": "Проверяйте блики и контраст при близких поверхностях.",
+        "en": "Check glare and contrast when the light faces a nearby surface."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-character-classes": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Классы персонажей",
+      "en": "Character classes"
+    },
+    "description": {
+      "ru": "Класс определяет набор инструментов, сильные стороны и роль героя. Выбор меняет способы решения задач и взаимодействия с командой.",
+      "en": "A class defines a character’s tools, strengths and role, changing how they solve problems and contribute to a team."
+    },
+    "image": {
+      "src": "images/mechanics/drg-loadout.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_4cac98f49fde6e994a64e813baaf7b34a195d2cc.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Снаряжение класса Driller",
+        "en": "The Driller’s equipment"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: экран Driller показывает огнемёт, пистолет, заряды взрывчатки и усиленные буры.",
+        "en": "Deep Rock Galactic: the Driller loadout shows a flamethrower, pistol, explosive charges and reinforced drills."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 94,
+          "label": {
+            "ru": "Выбран класс Driller",
+            "en": "The selected class is Driller"
+          }
+        },
+        {
+          "x": 86,
+          "y": 43,
+          "label": {
+            "ru": "Буры определяют способ прокладывать путь",
+            "en": "Drills provide a distinct way to create routes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте каждому классу полезное действие за пределами нанесения урона.",
+        "en": "Give each class a useful action beyond dealing damage."
+      },
+      {
+        "ru": "Объясняйте роль на примере задачи, а не только списка характеристик.",
+        "en": "Explain a role through a task, not only a list of statistics."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-character-customization": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Настройка внешности",
+      "en": "Character customization"
+    },
+    "description": {
+      "ru": "Игрок меняет внешний вид героя и получает понятный предварительный просмотр. Выбранный образ помогает выразить предпочтения и узнавать персонажа.",
+      "en": "The player changes a character’s appearance with a clear preview. The chosen look expresses preferences and makes the character recognizable."
+    },
+    "image": {
+      "src": "images/mechanics/drg-customization.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_d93c676ba296854f7b9261520e0262477c787820.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Внешность и победная анимация Scout",
+        "en": "Scout appearance and victory move"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: вокруг модели Scout расположены слоты внешности; выбранная победная анимация показана на модели.",
+        "en": "Deep Rock Galactic: appearance slots surround a Scout model, which previews the selected victory move."
+      },
+      "markers": [
+        {
+          "x": 71,
+          "y": 53,
+          "label": {
+            "ru": "Слоты бороды и волос",
+            "en": "Beard and hair slots"
+          }
+        },
+        {
+          "x": 31,
+          "y": 74,
+          "label": {
+            "ru": "Выбор победной анимации",
+            "en": "Victory move selection"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте изменения сразу на модели персонажа.",
+        "en": "Preview changes immediately on the character model."
+      },
+      {
+        "ru": "Отделяйте внешний вид от параметров, влияющих на баланс.",
+        "en": "Separate appearance choices from balance-affecting statistics."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "game-mechanics--gm-resting-to-heal": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лечение отдыхом",
+      "en": "Healing by resting"
+    },
+    "description": {
+      "ru": "Безопасное место позволяет восстановить здоровье перед продолжением пути. Отдых может конкурировать с улучшением или другим действием.",
+      "en": "A safe resting place restores health before the journey continues. Rest can compete with upgrading or another useful action."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-rest.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss11.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Отдых или улучшение у костра",
+        "en": "Rest or upgrade at a campfire"
+      },
+      "alt": {
+        "ru": "Slay the Spire: у костра показаны действия Rest и Smith; отдых восстанавливает здоровье, улучшение меняет карту.",
+        "en": "Slay the Spire: a campfire offers Rest and Smith; resting restores health, while smithing upgrades a card."
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 43,
+          "label": {
+            "ru": "Отдых восстанавливает здоровье",
+            "en": "Rest restores health"
+          }
+        },
+        {
+          "x": 58,
+          "y": 47,
+          "label": {
+            "ru": "Альтернатива: улучшить карту",
+            "en": "Alternative: upgrade a card"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ожидаемое восстановление до подтверждения отдыха.",
+        "en": "Show the expected recovery before confirming rest."
+      },
+      {
+        "ru": "Делайте альтернативу отдыху понятной и сравнимой.",
+        "en": "Make the alternative to resting clear and comparable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "game-mechanics--gm-clearing-obstacles-with-explosions": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Расчистка пути взрывом",
+      "en": "Clearing a path with explosives"
+    },
+    "description": {
+      "ru": "Взрыв уничтожает преграду и создаёт новый маршрут. Игрок соотносит пользу прохода с расходом взрывчатки и опасностью для себя.",
+      "en": "An explosion removes a barrier and opens a route. The player weighs the new passage against explosive cost and nearby danger."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-explosion.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_d9ed1da2c639aad60ad5cb6715be2f0a4f8f2f63.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Взрыв меняет устройство пещеры",
+        "en": "An explosion reshapes the cave"
+      },
+      "alt": {
+        "ru": "Spelunky: взрыв разбрасывает осколки породы у лестницы; рядом находится исследователь.",
+        "en": "Spelunky: an explosion sends rock fragments flying beside a ladder, near the explorer."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 62,
+          "label": {
+            "ru": "Зона взрыва и разрушения породы",
+            "en": "Explosion and rock destruction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте радиус опасности до взрыва.",
+        "en": "Communicate the danger radius before detonation."
+      },
+      {
+        "ru": "Проверяйте, что после разрушения новый проход действительно доступен.",
+        "en": "Ensure the new passage is usable after the barrier breaks."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "game-mechanics--gm-lava": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Лава",
+      "en": "Lava"
+    },
+    "description": {
+      "ru": "Опасная поверхность ограничивает безопасные маршруты. Игрок пересекает её по опорам или ищет обход, учитывая последствия касания.",
+      "en": "A hazardous surface limits safe routes. The player uses platforms or searches for a detour while accounting for the cost of contact."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-lava.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_5a77c050e2855d7e98b7a89f152e7a34082c77c7.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Опасная поверхность под ареной",
+        "en": "A hazard beneath the arena"
+      },
+      "alt": {
+        "ru": "Spelunky: широкая полоса яркой лавы проходит под платформами с несколькими персонажами.",
+        "en": "Spelunky: a wide strip of glowing lava lies beneath platforms occupied by several characters."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 81,
+          "label": {
+            "ru": "Лава под безопасными опорами",
+            "en": "Lava below the safe platforms"
+          }
+        },
+        {
+          "x": 42,
+          "y": 47,
+          "label": {
+            "ru": "Опора над опасной поверхностью",
+            "en": "A foothold above the hazard"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте опасную жидкость силуэтом, движением и звуком.",
+        "en": "Distinguish hazardous liquid through shape, motion and sound."
+      },
+      {
+        "ru": "Обозначайте безопасные опоры до первого рискованного прыжка.",
+        "en": "Show safe footholds before the first risky jump."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "game-mechanics--gm-walking-on-ice": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Движение по льду",
+      "en": "Moving on ice"
+    },
+    "description": {
+      "ru": "Скользкая поверхность меняет сцепление и торможение. Игрок раньше начинает останавливаться и учитывает инерцию перед краем платформы.",
+      "en": "A slippery surface changes grip and braking. The player must stop earlier and account for momentum near platform edges."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-ice.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_cd898bb5ce94c255d7e3ef17caecc157f6af535b.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Ледяные платформы в пещере",
+        "en": "Ice platforms in the cavern"
+      },
+      "alt": {
+        "ru": "Spelunky: пол и нависающие платформы покрыты ярким голубым льдом; герой находится над нижней площадкой.",
+        "en": "Spelunky: bright blue ice covers the floor and overhead platforms; the explorer is above the lower platform."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 78,
+          "label": {
+            "ru": "Протяжённая ледяная поверхность",
+            "en": "An extended icy surface"
+          }
+        },
+        {
+          "x": 83,
+          "y": 26,
+          "label": {
+            "ru": "Лёд обозначен тем же материалом на платформах",
+            "en": "The same ice material marks upper platforms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Вводите новое сцепление на участке без смертельного края.",
+        "en": "Introduce the changed grip on a section without a lethal edge."
+      },
+      {
+        "ru": "Сохраняйте понятную обратную связь о торможении.",
+        "en": "Keep braking feedback readable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "role-playing-systems--t050": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Классы и специализации",
+      "en": "Classes and specializations"
+    },
+    "description": {
+      "ru": "Роль героя задаёт доступные инструменты, а специализация уточняет стиль игры. Ограничения выбора помогают персонажам дополнять друг друга.",
+      "en": "A character’s role defines available tools, while specialization shapes play style. Choice restrictions help characters complement each other."
+    },
+    "image": {
+      "src": "images/mechanics/drg-loadout.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_4cac98f49fde6e994a64e813baaf7b34a195d2cc.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Специализация через набор инструментов",
+        "en": "Specialization through a toolset"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: набор снаряжения Driller включает усиленные буры и взрывчатку, отличающие его роль в команде.",
+        "en": "Deep Rock Galactic: the Driller’s equipment includes reinforced drills and explosives that distinguish its team role."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 94,
+          "label": {
+            "ru": "Класс персонажа",
+            "en": "Character class"
+          }
+        },
+        {
+          "x": 86,
+          "y": 43,
+          "label": {
+            "ru": "Инструмент, определяющий роль",
+            "en": "A role-defining tool"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какие задачи роль решает лучше остальных.",
+        "en": "Show which tasks the role handles particularly well."
+      },
+      {
+        "ru": "Проверяйте, остаётся ли у каждой роли полезный выбор в одиночной игре.",
+        "en": "Ensure each role retains useful choices during solo play."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "shooting-projectiles--t021": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Шутер от первого лица",
+      "en": "First-person shooter"
+    },
+    "description": {
+      "ru": "Игрок наводит оружие из точки зрения персонажа. Положение, обзор и расход боеприпасов определяют решения во время боя.",
+      "en": "The player aims from the character’s viewpoint. Position, visibility and ammunition use shape decisions during combat."
+    },
+    "image": {
+      "src": "images/mechanics/drg-autocannon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_e6e1d97ee0a5fc8b82c5a9a1aacba178206e3522.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Оружие и цель в одном поле зрения",
+        "en": "Weapon and target in one view"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: руки и автопушка видны от первого лица; впереди группа приближающихся насекомых.",
+        "en": "Deep Rock Galactic: the player’s hands and autocannon appear in first person, facing a group of approaching bugs."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 50,
+          "label": {
+            "ru": "Цель перед персонажем",
+            "en": "A target in front of the character"
+          }
+        },
+        {
+          "x": 74,
+          "y": 81,
+          "label": {
+            "ru": "Оружие видно от первого лица",
+            "en": "Weapon visible in first person"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не закрывайте оружием ключевую область прицеливания.",
+        "en": "Keep the weapon clear of the main aiming area."
+      },
+      {
+        "ru": "Разделяйте сигналы выстрела, попадания и уничтожения цели.",
+        "en": "Distinguish feedback for firing, hitting and defeating a target."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "role-playing-systems--t054": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Статусы и стихийные эффекты",
+      "en": "Status and elemental effects"
+    },
+    "description": {
+      "ru": "Воздействия временно меняют возможности цели: движение, защиту или доступные действия. Игрок выбирает эффект под ситуацию и сопротивления.",
+      "en": "Effects temporarily change a target’s movement, defense or available actions. Players choose effects to suit the situation and resistances."
+    },
+    "image": {
+      "src": "images/mechanics/drg-freezing.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_5d41a7c4b219d60ab4463721352bd019adfb396c.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Холод меняет состояние противника",
+        "en": "Cold changes an enemy’s state"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: холод криопушки превращает насекомых в голубые ледяные фигуры.",
+        "en": "Deep Rock Galactic: a cryo cannon’s cold turns bugs into blue frozen figures."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 27,
+          "label": {
+            "ru": "Видимое состояние заморозки",
+            "en": "A visible frozen state"
+          }
+        },
+        {
+          "x": 42,
+          "y": 52,
+          "label": {
+            "ru": "Холод воздействует на следующую цель",
+            "en": "Cold affects another target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте активный статус независимо от краткого эффекта попадания.",
+        "en": "Show an active status separately from the brief hit effect."
+      },
+      {
+        "ru": "Объясняйте иммунитет и сопротивление до расходования редкого ресурса.",
+        "en": "Explain immunity and resistance before a rare resource is spent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "creative-construction--t232": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Создание внешности персонажа",
+      "en": "Designing a character’s appearance"
+    },
+    "description": {
+      "ru": "Игрок собирает образ из совместимых деталей и сразу видит результат. Ограничения деталей поддерживают узнаваемость и читаемость силуэта.",
+      "en": "The player combines compatible appearance options and previews the result. Constraints help preserve identity and a readable silhouette."
+    },
+    "image": {
+      "src": "images/mechanics/drg-customization.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_d93c676ba296854f7b9261520e0262477c787820.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Модель рядом с настройками внешности",
+        "en": "A model beside appearance options"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: модель Scout окружена слотами одежды, волос, бороды и победной анимации.",
+        "en": "Deep Rock Galactic: a Scout model is surrounded by appearance and victory-move slots."
+      },
+      "markers": [
+        {
+          "x": 71,
+          "y": 53,
+          "label": {
+            "ru": "Категории внешности",
+            "en": "Appearance categories"
+          }
+        },
+        {
+          "x": 49,
+          "y": 51,
+          "label": {
+            "ru": "Предварительный просмотр образа",
+            "en": "Preview of the chosen appearance"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте выбранный образ при переходе между категориями.",
+        "en": "Keep the chosen look when switching categories."
+      },
+      {
+        "ru": "Дайте сравнить вариант с текущим видом до покупки или подтверждения.",
+        "en": "Allow comparison with the current look before purchase or confirmation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "rpg-grind--season-journey": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Сезонный путь развития",
+      "en": "Season progression track"
+    },
+    "description": {
+      "ru": "Действия в течение сезона продвигают игрока по цепочке целей и наград. Ближайший этап и условия прогресса остаются видны.",
+      "en": "Actions during a season advance a sequence of goals and rewards. The next milestone and the requirements for progress remain visible."
+    },
+    "image": {
+      "src": "images/mechanics/drg-season-rewards.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/16b75c6d2a231b45b56328abe335fde8cee9ebe4/ss_16b75c6d2a231b45b56328abe335fde8cee9ebe4.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Задания и шкала сезонных наград",
+        "en": "Season challenges and reward track"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: сезонная панель показывает задания, текущий уровень 3 и последовательность предстоящих наград.",
+        "en": "Deep Rock Galactic: the season panel shows challenges, current level 3 and a sequence of upcoming rewards."
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 83,
+          "label": {
+            "ru": "Текущий уровень и прогресс",
+            "en": "Current level and progress"
+          }
+        },
+        {
+          "x": 51,
+          "y": 83,
+          "label": {
+            "ru": "Лента ближайших наград",
+            "en": "Upcoming reward track"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте требование этапа рядом с его наградой.",
+        "en": "Place a milestone’s requirement beside its reward."
+      },
+      {
+        "ru": "Ясно сообщайте, что происходит с незавершённым прогрессом в конце сезона.",
+        "en": "Explain what happens to unfinished progress when the season ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "rpg-grind--fixed-payout": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Гарантированная награда",
+      "en": "Guaranteed reward"
+    },
+    "description": {
+      "ru": "За выполнение известного условия игрок получает заранее указанную награду. Это позволяет планировать прогресс без зависимости от удачи.",
+      "en": "Completing a known requirement grants a stated reward, allowing the player to plan progress without depending on luck."
+    },
+    "image": {
+      "src": "images/mechanics/drg-season-rewards.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 188,
+        "y": 338,
+        "width": 750,
+        "height": 300
+      },
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/16b75c6d2a231b45b56328abe335fde8cee9ebe4/ss_16b75c6d2a231b45b56328abe335fde8cee9ebe4.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Задание с указанной выплатой",
+        "en": "A challenge with a stated payout"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: задания на сезонной панели показывают прогресс выполнения и конкретные награды, включая 3750 опыта.",
+        "en": "Deep Rock Galactic: season challenges show completion progress and explicit rewards, including 3750 experience."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 62,
+          "label": {
+            "ru": "Заранее указано +3750 опыта",
+            "en": "A stated reward of +3750 experience"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте точную выплату до принятия задания.",
+        "en": "Show the exact payout before accepting the task."
+      },
+      {
+        "ru": "Не смешивайте гарантированную часть с возможным случайным бонусом.",
+        "en": "Keep the guaranteed payout distinct from any random bonus."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "survival-construction--t120": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Сбор ресурсов",
+      "en": "Gathering resources"
+    },
+    "description": {
+      "ru": "Игрок находит источник, извлекает материал и переносит его к месту использования. Ценность ресурса сопоставляется с временем и опасностью добычи.",
+      "en": "The player finds a source, extracts material and carries it to where it is needed, weighing its value against collection time and danger."
+    },
+    "image": {
+      "src": "images/mechanics/drg-mining.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_82bae16c1411fad6a4a09c8c9f62cdf86bd6e8c9.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Совместная добыча кирками",
+        "en": "Mining together with pickaxes"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: два игрока кирками выбивают золотистую породу из стены пещеры.",
+        "en": "Deep Rock Galactic: two players use pickaxes to extract golden rock from a cavern wall."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 55,
+          "label": {
+            "ru": "Ресурс извлекается из породы",
+            "en": "Material extracted from the rock"
+          }
+        },
+        {
+          "x": 71,
+          "y": 30,
+          "label": {
+            "ru": "Инструмент добычи",
+            "en": "A gathering tool"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте источник, выпавший ресурс и уже подобранный запас.",
+        "en": "Distinguish the source, dropped material and collected stock."
+      },
+      {
+        "ru": "Ограничивайте повторение добычи полезными решениями о маршруте и риске.",
+        "en": "Give repeated gathering meaningful route and risk decisions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "survival-construction--t122": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Модульное строительство",
+      "en": "Modular construction"
+    },
+    "description": {
+      "ru": "Игрок размещает готовые модули в допустимых местах. Их сочетание задаёт устройство базы, доступность помещений и рабочие маршруты.",
+      "en": "The player places prefabricated modules in valid locations. Their arrangement shapes the base, room access and working routes."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-building.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-03.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Размещение сада на корабле",
+        "en": "Placing a garden aboard the ship"
+      },
+      "alt": {
+        "ru": "Spiritfarer: в режиме строительства зелёный контур сада размещается на сетке между другими зданиями корабля.",
+        "en": "Spiritfarer: build mode shows a green garden preview on a grid among the ship’s other buildings."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 66,
+          "label": {
+            "ru": "Предпросмотр размещаемого модуля",
+            "en": "Preview of the module being placed"
+          }
+        },
+        {
+          "x": 10,
+          "y": 73,
+          "label": {
+            "ru": "Материалы для строительства",
+            "en": "Required construction materials"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте допустимость размещения до подтверждения.",
+        "en": "Preview placement validity before confirmation."
+      },
+      {
+        "ru": "Проверяйте доступ к помещению после перестройки.",
+        "en": "Check that rooms remain accessible after rearrangement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "settlement-management--t105": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Размещение и соседство построек",
+      "en": "Building placement and adjacency"
+    },
+    "description": {
+      "ru": "Расположение объектов определяет доступность и удобство базы. Игрок учитывает занятое место, связи между постройками и маршруты перемещения.",
+      "en": "Object placement determines a base’s accessibility and convenience. Players consider occupied space, building connections and travel routes."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-building.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-03.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Планировка помещений и лестниц",
+        "en": "Arranging rooms and ladders"
+      },
+      "alt": {
+        "ru": "Spiritfarer: помещения стоят друг над другом на палубе; лестницы связывают уровни, а новый сад показан зелёным контуром.",
+        "en": "Spiritfarer: rooms are stacked above the deck, ladders connect levels and a new garden appears as a green preview."
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 55,
+          "label": {
+            "ru": "Лестница связывает уровни построек",
+            "en": "A ladder connects building levels"
+          }
+        },
+        {
+          "x": 48,
+          "y": 66,
+          "label": {
+            "ru": "Новый объект занимает место на сетке",
+            "en": "A new object occupies grid space"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте проверить маршрут к постройке ещё до её установки.",
+        "en": "Allow access routes to be checked before placing a building."
+      },
+      {
+        "ru": "Сделайте перестановку достаточно дешёвой для исправления планировки.",
+        "en": "Keep rearrangement affordable enough to correct a layout."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "rhythm-composition--t219": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Попадание в ритм",
+      "en": "Rhythm timing"
+    },
+    "description": {
+      "ru": "Игрок нажимает нужную кнопку, когда сигнал достигает линии проверки. Видимый ритм и окно точности помогают связывать ввод с музыкой.",
+      "en": "The player presses the matching button as a cue reaches a timing line. A visible rhythm and timing window connect input to the music."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-rhythm.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-09.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Музыкальное действие в саду",
+        "en": "A musical action in the garden"
+      },
+      "alt": {
+        "ru": "Spiritfarer: над садом видны нотные линии с символами кнопок X, Y и B; зелёная полоса отмечает позицию исполнения.",
+        "en": "Spiritfarer: musical lines above the garden carry X, Y and B button cues, with a green bar marking the playing position."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 42,
+          "label": {
+            "ru": "Линия проверки момента нажатия",
+            "en": "The timing line"
+          }
+        },
+        {
+          "x": 63,
+          "y": 30,
+          "label": {
+            "ru": "Подходящий символ кнопки",
+            "en": "An approaching button cue"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте настроить задержку ввода и звука.",
+        "en": "Allow input and audio latency calibration."
+      },
+      {
+        "ru": "Различайте раннее, точное и позднее нажатие.",
+        "en": "Distinguish early, accurate and late presses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "dialogue--family-space": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Разговор в игровом пространстве",
+      "en": "Conversation in the world"
+    },
+    "description": {
+      "ru": "Реплики появляются рядом с участниками сцены. Положение героев и окружение сохраняют контекст разговора без отдельного экрана диалога.",
+      "en": "Lines appear beside the participants in the scene. Character positions and the environment preserve context without a separate dialogue screen."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-dialogue.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-02.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Реплика рядом с участниками сцены",
+        "en": "A line beside the scene’s participants"
+      },
+      "alt": {
+        "ru": "Spiritfarer: текстовое облачко находится над персонажами, стоящими у прилавка в ночном поселении.",
+        "en": "Spiritfarer: a speech bubble appears above characters standing at a stall in a nighttime settlement."
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 40,
+          "label": {
+            "ru": "Реплика привязана к участнику сцены",
+            "en": "A line tied to a scene participant"
+          }
+        },
+        {
+          "x": 34,
+          "y": 68,
+          "label": {
+            "ru": "Собеседники остаются в окружении",
+            "en": "Participants remain in the environment"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Следите, чтобы облачко не перекрывало важное действие.",
+        "en": "Keep speech bubbles clear of important actions."
+      },
+      {
+        "ru": "Связывайте реплику с говорящим и без различения цвета.",
+        "en": "Identify the speaker without relying on color alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "dialogue--family-interface": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Представление диалога",
+      "en": "Dialogue presentation"
+    },
+    "description": {
+      "ru": "Интерфейс показывает, кто говорит и какую реплику нужно прочитать. Размер текста, темп и размещение помогают следить за разговором.",
+      "en": "The interface identifies the speaker and presents the current line. Text size, pacing and placement help the player follow the conversation."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-dialogue.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-02.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Текстовое облачко в сцене",
+        "en": "A speech bubble in the scene"
+      },
+      "alt": {
+        "ru": "Spiritfarer: светлое облачко с текстом контрастирует с ночным окружением и указывает на говорящего.",
+        "en": "Spiritfarer: a light speech bubble contrasts with the nighttime scene and points toward the speaker."
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 40,
+          "label": {
+            "ru": "Контрастная область текста",
+            "en": "A contrasting text area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте игроку достаточно времени для чтения.",
+        "en": "Allow enough time to read each line."
+      },
+      {
+        "ru": "Проверяйте длинные переводы и увеличенный размер шрифта.",
+        "en": "Check long translations and enlarged text."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "rpg-grind--trade-routes": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Торговые маршруты",
+      "en": "Trade routes"
+    },
+    "description": {
+      "ru": "Игрок связывает места добычи и торговли в повторяемый маршрут. Прибыль зависит от доступных товаров, стоимости пути и нужд получателей.",
+      "en": "The player links resource sources and trading locations into a repeatable route. Returns depend on goods, travel costs and buyers’ needs."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-trader.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-07.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Торговец на острове",
+        "en": "An island merchant"
+      },
+      "alt": {
+        "ru": "Spiritfarer: Стелла стоит у торгового прилавка на острове; под прилавком отображается действие Buy.",
+        "en": "Spiritfarer: Stella stands at an island merchant’s stall, with a Buy interaction prompt below it."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 85,
+          "label": {
+            "ru": "Взаимодействие для покупки",
+            "en": "Purchase interaction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, что можно купить в пункте назначения.",
+        "en": "Show which goods are available at the destination."
+      },
+      {
+        "ru": "Сопоставляйте выгоду сделки с затратами на путь.",
+        "en": "Make trading gains comparable to travel costs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "exploration-adventures--t043": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Свободное исследование мира",
+      "en": "Open-world exploration"
+    },
+    "description": {
+      "ru": "Игрок выбирает, какую область посетить следующей. Ориентиры, неизвестные места и сведения о ресурсах помогают построить собственный маршрут.",
+      "en": "The player chooses which area to visit next. Landmarks, unexplored places and resource information support a self-directed route."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-map.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-05.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Карта с местами и ресурсами",
+        "en": "A map of locations and resources"
+      },
+      "alt": {
+        "ru": "Spiritfarer: курсор выбирает Gurenu Fields на карте; всплывающая панель перечисляет найденные ресурсы острова.",
+        "en": "Spiritfarer: the cursor selects Gurenu Fields on the map; a panel lists resources found on the island."
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 41,
+          "label": {
+            "ru": "Сведения о выбранной области",
+            "en": "Information about the selected area"
+          }
+        },
+        {
+          "x": 73,
+          "y": 20,
+          "label": {
+            "ru": "Другие места для исследования",
+            "en": "Other places to explore"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте выбирать маршрут по интересу и ожидаемой находке.",
+        "en": "Let interest and expected discoveries guide route choices."
+      },
+      {
+        "ru": "Отличайте неизвестную область от посещённой, но не завершённой.",
+        "en": "Distinguish unexplored areas from visited but unfinished ones."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "rpg-grind--map-completion": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Исследование карты",
+      "en": "Map completion"
+    },
+    "description": {
+      "ru": "Игрок постепенно раскрывает места и отмечает найденные возможности. Карта показывает, где ещё остались задачи, ресурсы или неизвестные участки.",
+      "en": "The player gradually reveals locations and records discoveries. The map shows where tasks, resources or unexplored areas remain."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-map.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-05.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Открытая область и список находок",
+        "en": "A discovered area and its resources"
+      },
+      "alt": {
+        "ru": "Spiritfarer: на карте выделен остров Gurenu Fields и показан список найденных ресурсов, включая sheep, oak log и strawberry.",
+        "en": "Spiritfarer: the map highlights Gurenu Fields and lists discovered resources, including sheep, oak logs and strawberries."
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 46,
+          "label": {
+            "ru": "Список найденного в области",
+            "en": "A list of discoveries in the area"
+          }
+        },
+        {
+          "x": 15,
+          "y": 72,
+          "label": {
+            "ru": "Другие отмеченные места",
+            "en": "Other marked locations"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте отметку завершения с реальными условиями области.",
+        "en": "Match completion markers to the area’s actual requirements."
+      },
+      {
+        "ru": "Дайте различить обязательные задачи и необязательные находки.",
+        "en": "Distinguish required tasks from optional discoveries."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "goals-feedback--t279": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Интерфейс через приборы",
+      "en": "Information through instruments"
+    },
+    "description": {
+      "ru": "Игрок получает сведения через предметы и устройства персонажа. Привязка к миру поддерживает контекст, если показания остаются читаемыми.",
+      "en": "The player reads information through the character’s objects and instruments. Their place in the world supports context when displays remain legible."
+    },
+    "image": {
+      "src": "images/mechanics/drg-autocannon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/ss_e6e1d97ee0a5fc8b82c5a9a1aacba178206e3522.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Показания на корпусе оружия",
+        "en": "Readings on the weapon housing"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: электронный дисплей с боезапасом встроен в корпус автопушки перед игроком.",
+        "en": "Deep Rock Galactic: an electronic ammunition display is built into the autocannon’s housing in front of the player."
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 70,
+          "label": {
+            "ru": "Показания на внутриигровом приборе",
+            "en": "Readings on an in-world instrument"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Держите критические показания доступными во время действия.",
+        "en": "Keep critical readings accessible during action."
+      },
+      {
+        "ru": "Проверяйте прибор на маленьком экране и при сниженной яркости.",
+        "en": "Check the instrument on small screens and at lower brightness."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "roguelike--family-06": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Исследование и информация",
+      "en": "Exploration and information"
+    },
+    "description": {
+      "ru": "Игрок раскрывает устройство мира и свойства встреченных существ. Записи о находках помогают готовиться к следующим неизвестным ситуациям.",
+      "en": "The player uncovers the world and the properties of its creatures. Records of discoveries help prepare for unfamiliar situations."
+    },
+    "image": {
+      "src": "images/mechanics/spelunky-journal.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Spelunky",
+      "sourceUrl": "https://store.steampowered.com/app/239350/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239350/ss_73bdc6122f9f0b4f8bfa1f6162b1df08c2fda638.1920x1080.jpg?t=1632912566",
+      "credit": "Mossmouth",
+      "rights": "© Mossmouth. All rights reserved.",
+      "caption": {
+        "ru": "Журнал найденных противников",
+        "en": "A journal of discovered enemies"
+      },
+      "alt": {
+        "ru": "Spelunky: открытый журнал показывает скелета и скорпиона, описания их поведения и счётчики встреч.",
+        "en": "Spelunky: an open journal shows a skeleton and a scorpion with behavior descriptions and encounter statistics."
+      },
+      "markers": [
+        {
+          "x": 36,
+          "y": 57,
+          "label": {
+            "ru": "Запись о поведении скелета",
+            "en": "An entry explaining skeleton behavior"
+          }
+        },
+        {
+          "x": 65,
+          "y": 34,
+          "label": {
+            "ru": "Другой противник в журнале",
+            "en": "Another enemy in the journal"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте уже известные сведения и ещё не открытые записи.",
+        "en": "Distinguish known information from undiscovered entries."
+      },
+      {
+        "ru": "Давайте применять знания при следующей встрече, а не только собирать записи.",
+        "en": "Let knowledge affect the next encounter, beyond collecting journal entries."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spelunky",
+        "url": "https://store.steampowered.com/app/239350/"
+      }
+    ]
+  },
+  "rpg-grind--choice-rewards": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Выбор награды",
+      "en": "Choosing a reward"
+    },
+    "description": {
+      "ru": "Игрок выбирает одну награду из небольшого предложения. Ограниченный выбор позволяет направлять развитие, сохраняя случайность находок.",
+      "en": "The player selects one reward from a small offer. This limited choice lets them guide progression while keeping discoveries uncertain."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-reward.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 300,
+        "y": 90,
+        "width": 825,
+        "height": 720
+      },
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_f8d8e271f4e51ec75660cacb70364005c7352ff1.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Одна из двух карт или отказ",
+        "en": "One of two cards, or skip"
+      },
+      "alt": {
+        "ru": "Monster Train: экран Awoken Banner предлагает Animus of Speed и Vinemother; внизу есть отказ от карты за 10 монет.",
+        "en": "Monster Train: an Awoken Banner offers Animus of Speed and Vinemother, with an option below to skip for 10 coins."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 63,
+          "label": {
+            "ru": "Первый вариант награды",
+            "en": "First reward option"
+          }
+        },
+        {
+          "x": 60,
+          "y": 63,
+          "label": {
+            "ru": "Второй вариант с другим эффектом",
+            "en": "Second option with a different effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте сравнить награды по их влиянию на текущую сборку.",
+        "en": "Make rewards comparable by their effect on the current build."
+      },
+      {
+        "ru": "Предусмотрите отказ, если добавление награды может мешать стратегии.",
+        "en": "Allow skipping when adding a reward could harm the strategy."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "game-mechanics--gm-jumping-to-ledges": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Прыжок к уступу",
+      "en": "Jumping to a ledge"
+    },
+    "description": {
+      "ru": "Игрок прыгает через разрыв и направляет персонажа к захватываемому уступу. Читаемая цель помогает заранее оценить траекторию.",
+      "en": "The player jumps across a gap toward a grabbable ledge. A readable target helps them judge the trajectory before committing."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-jump.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Rise of the Tomb Raider",
+      "sourceUrl": "https://store.steampowered.com/app/391220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/ss_749f99146e5ebad371e37d95bfab7b17847c1d81.1920x1080.jpg?t=1766187095",
+      "credit": "Crystal Dynamics / Eidos-Montréal",
+      "rights": "© 2015 Crystal Dynamics group of companies. All rights reserved.",
+      "caption": {
+        "ru": "Прыжок через разрыв в руинах",
+        "en": "Jumping across a gap in the ruins"
+      },
+      "alt": {
+        "ru": "Rise of the Tomb Raider: Лара находится в воздухе между каменными опорами; слева виден освещённый уступ.",
+        "en": "Rise of the Tomb Raider: Lara is airborne between stone supports, with a lit ledge visible on the left."
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 37,
+          "label": {
+            "ru": "Персонаж в прыжке",
+            "en": "Character in mid-jump"
+          }
+        },
+        {
+          "x": 32,
+          "y": 49,
+          "label": {
+            "ru": "Уступ на другой стороне разрыва",
+            "en": "A ledge on the far side of the gap"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте захватываемый уступ материалом и формой.",
+        "en": "Use material and shape to distinguish a grabbable ledge."
+      },
+      {
+        "ru": "Делайте захват достаточно терпимым к небольшим ошибкам прицеливания.",
+        "en": "Allow a little aiming error when catching the ledge."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rise of the Tomb Raider",
+        "url": "https://store.steampowered.com/app/391220/"
+      }
+    ]
+  },
+  "game-mechanics--gm-ledge-jumping": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Прыжки между уступами",
+      "en": "Jumping between ledges"
+    },
+    "description": {
+      "ru": "Цепочка отдельных опор задаёт маршрут через разрывы. Игрок выбирает направление и момент прыжка, оценивая расстояние до следующей опоры.",
+      "en": "A sequence of footholds creates a route across gaps. The player chooses jump direction and timing while judging the next landing."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-jump.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Rise of the Tomb Raider",
+      "sourceUrl": "https://store.steampowered.com/app/391220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/ss_749f99146e5ebad371e37d95bfab7b17847c1d81.1920x1080.jpg?t=1766187095",
+      "credit": "Crystal Dynamics / Eidos-Montréal",
+      "rights": "© 2015 Crystal Dynamics group of companies. All rights reserved.",
+      "caption": {
+        "ru": "Разрыв между каменными опорами",
+        "en": "A gap between stone supports"
+      },
+      "alt": {
+        "ru": "Rise of the Tomb Raider: Лара прыгает от площадки справа к каменным уступам слева через глубокий разрыв.",
+        "en": "Rise of the Tomb Raider: Lara jumps from the platform on the right toward stone ledges across a deep gap."
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 83,
+          "label": {
+            "ru": "Опора, с которой начат прыжок",
+            "en": "The platform at the start of the jump"
+          }
+        },
+        {
+          "x": 32,
+          "y": 49,
+          "label": {
+            "ru": "Следующая опора через разрыв",
+            "en": "The next foothold across the gap"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте расстояния с доступной дальностью прыжка.",
+        "en": "Match gap distances to the available jump range."
+      },
+      {
+        "ru": "Показывайте следующую опору до момента отрыва.",
+        "en": "Show the next foothold before takeoff."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rise of the Tomb Raider",
+        "url": "https://store.steampowered.com/app/391220/"
+      }
+    ]
+  },
+  "game-mechanics--gm-swimming": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Плавание",
+      "en": "Swimming"
+    },
+    "description": {
+      "ru": "В воде игрок управляет направлением и глубиной движения. Вертикальные ориентиры и понятная скорость помогают не теряться в объёмном пространстве.",
+      "en": "In water, the player controls movement direction and depth. Vertical landmarks and readable speed help navigation through three-dimensional space."
+    },
+    "image": {
+      "src": "images/mechanics/subnautica-scanner.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Subnautica",
+      "sourceUrl": "https://store.steampowered.com/app/264710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112",
+      "credit": "Unknown Worlds Entertainment",
+      "rights": "© Unknown Worlds Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Движение среди рифов",
+        "en": "Moving among reefs"
+      },
+      "alt": {
+        "ru": "Subnautica: вид из маски пловца среди подводных скал, рыб и кораллов; слева видна рука, справа сканер.",
+        "en": "Subnautica: a swimmer’s mask frames underwater rocks, fish and coral; a hand is visible on the left and a scanner on the right."
+      },
+      "markers": [
+        {
+          "x": 11,
+          "y": 79,
+          "label": {
+            "ru": "Рука пловца в воде",
+            "en": "The swimmer’s hand"
+          }
+        },
+        {
+          "x": 47,
+          "y": 48,
+          "label": {
+            "ru": "Проход между подводными скалами",
+            "en": "A passage between underwater rocks"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте ясно различать подъём, спуск и движение вперёд.",
+        "en": "Make ascent, descent and forward motion distinct."
+      },
+      {
+        "ru": "Используйте окружение для оценки скорости и глубины.",
+        "en": "Use the environment to communicate speed and depth."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Subnautica",
+        "url": "https://store.steampowered.com/app/264710/"
+      }
+    ]
+  },
+  "game-mechanics--gm-diving": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Погружение под воду",
+      "en": "Diving underwater"
+    },
+    "description": {
+      "ru": "Уход под поверхность открывает вертикальное пространство для исследования. Игрок планирует спуск, запас воздуха и путь к безопасному возвращению.",
+      "en": "Descending beneath the surface opens a vertical space to explore. The player plans depth, air supply and a safe return route."
+    },
+    "image": {
+      "src": "images/mechanics/subnautica-diving.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Subnautica",
+      "sourceUrl": "https://store.steampowered.com/app/264710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_9fdfcc7572ae22b4afa21e6de3b23c962ca5bb55.1920x1080.jpg?t=1777456112",
+      "credit": "Unknown Worlds Entertainment",
+      "rights": "© Unknown Worlds Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Подводный мир под освещённой поверхностью",
+        "en": "The underwater world below the lit surface"
+      },
+      "alt": {
+        "ru": "Subnautica: сверху через воду проходит солнечный свет; впереди подводный аппарат и дно с красной растительностью.",
+        "en": "Subnautica: sunlight passes through the water overhead, above a submersible and a seabed covered in red plants."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 25,
+          "label": {
+            "ru": "Освещённая поверхность над игроком",
+            "en": "The lit surface above the player"
+          }
+        },
+        {
+          "x": 32,
+          "y": 80,
+          "label": {
+            "ru": "Дно и ориентиры под водой",
+            "en": "The seabed and underwater landmarks"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Помогайте оценить обратный путь до исчерпания воздуха.",
+        "en": "Help players judge the return route before their air runs out."
+      },
+      {
+        "ru": "Различайте ограничение воздуха и опасность глубины.",
+        "en": "Distinguish air limits from depth hazards."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Subnautica",
+        "url": "https://store.steampowered.com/app/264710/"
+      }
+    ]
+  },
+  "movement-platforming--t009": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Подводное движение",
+      "en": "Underwater movement"
+    },
+    "description": {
+      "ru": "Трёхмерное движение в воде добавляет подъём и спуск к обычной навигации. Сопротивление среды меняет разгон, остановку и работу инструментов.",
+      "en": "Movement through water adds ascent and descent to ordinary navigation. Resistance changes acceleration, braking and tool use."
+    },
+    "image": {
+      "src": "images/mechanics/subnautica-scanner.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Subnautica",
+      "sourceUrl": "https://store.steampowered.com/app/264710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112",
+      "credit": "Unknown Worlds Entertainment",
+      "rights": "© Unknown Worlds Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Навигация в объёмном подводном пространстве",
+        "en": "Navigating a three-dimensional underwater space"
+      },
+      "alt": {
+        "ru": "Subnautica: пловец со сканером находится среди подводных скал и живых существ на разной высоте.",
+        "en": "Subnautica: a swimmer with a scanner moves among underwater rocks and creatures at different heights."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 48,
+          "label": {
+            "ru": "Ориентиры на разной глубине",
+            "en": "Landmarks at different depths"
+          }
+        },
+        {
+          "x": 11,
+          "y": 79,
+          "label": {
+            "ru": "Вид от первого лица в воде",
+            "en": "First-person view underwater"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Настраивайте управление глубиной отдельно от направления взгляда.",
+        "en": "Tune depth controls separately from view direction."
+      },
+      {
+        "ru": "Сохраняйте ориентиры при подъёме и развороте.",
+        "en": "Keep landmarks recognizable when ascending or turning."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Subnautica",
+        "url": "https://store.steampowered.com/app/264710/"
+      }
+    ]
+  },
+  "game-mechanics--gm-handheld-sensor": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Ручной сканер",
+      "en": "Handheld scanner"
+    },
+    "description": {
+      "ru": "Переносной прибор раскрывает свойства выбранной цели. Игрок направляет его на объект и получает сведения, недоступные обычному наблюдению.",
+      "en": "A portable instrument reveals information about a selected target. The player points it at an object to learn more than observation alone allows."
+    },
+    "image": {
+      "src": "images/mechanics/subnautica-scanner.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Subnautica",
+      "sourceUrl": "https://store.steampowered.com/app/264710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112",
+      "credit": "Unknown Worlds Entertainment",
+      "rights": "© Unknown Worlds Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Сканер готов к исследованию цели",
+        "en": "The scanner is ready to examine a target"
+      },
+      "alt": {
+        "ru": "Subnautica: в правой руке находится сканер с надписью READY TO SCAN, перед ним рыба и подводное окружение.",
+        "en": "Subnautica: the right hand holds a scanner displaying READY TO SCAN, facing a fish and the underwater environment."
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 64,
+          "label": {
+            "ru": "Экран состояния READY TO SCAN",
+            "en": "READY TO SCAN status display"
+          }
+        },
+        {
+          "x": 49,
+          "y": 54,
+          "label": {
+            "ru": "Объект перед прибором",
+            "en": "An object in front of the instrument"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какая цель сейчас выбрана прибором.",
+        "en": "Show which target the instrument currently addresses."
+      },
+      {
+        "ru": "Отделяйте новую находку от уже изученной.",
+        "en": "Distinguish a new discovery from an already studied target."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Subnautica",
+        "url": "https://store.steampowered.com/app/264710/"
+      }
+    ]
+  },
+  "game-mechanics--gm-pilotable-mech": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Управляемый мех",
+      "en": "Pilotable mech"
+    },
+    "description": {
+      "ru": "Пилотируемая машина меняет масштаб движения и взаимодействия. Игрок использует её защиту, инструменты и особые возможности в подходящих условиях.",
+      "en": "A piloted machine changes the scale of movement and interaction. The player uses its protection, tools and capabilities where they are useful."
+    },
+    "image": {
+      "src": "images/mechanics/subnautica-prawn.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Subnautica",
+      "sourceUrl": "https://store.steampowered.com/app/264710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_883a98ad56021ce409219e1b749818866b6115cd.1920x1080.jpg?t=1777456112",
+      "credit": "Unknown Worlds Entertainment",
+      "rights": "© Unknown Worlds Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Экзокостюм на морском дне",
+        "en": "An exosuit on the seabed"
+      },
+      "alt": {
+        "ru": "Subnautica: экзокостюм Prawn Suit с двумя ногами и манипуляторами находится перед огромным скелетом на морском дне.",
+        "en": "Subnautica: a Prawn Suit with two legs and mechanical arms stands before an enormous skeleton on the seabed."
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 73,
+          "label": {
+            "ru": "Пилотируемый экзокостюм Prawn Suit",
+            "en": "The pilotable Prawn Suit exosuit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте переход между обычным управлением и машиной предсказуемым.",
+        "en": "Make the transition between on-foot and vehicle controls predictable."
+      },
+      {
+        "ru": "Давайте машине задачи, которые используют её особые возможности.",
+        "en": "Provide tasks that use the machine’s distinct capabilities."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Subnautica",
+        "url": "https://store.steampowered.com/app/264710/"
+      }
+    ]
+  },
+  "roguelike--family-03": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Стартовые условия забега",
+      "en": "Run starting conditions"
+    },
+    "description": {
+      "ru": "Перед забегом игрок выбирает состав, правила или ограничения. Эти условия задают доступные стратегии и делают повторные попытки различными.",
+      "en": "Before a run, the player chooses a roster, rules or restrictions. These conditions shape available strategies and vary repeated attempts."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-challenge.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_482b7d543a1e5773eb469b4702258b7eb34f2da1.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Настройка кланов и модификаторов",
+        "en": "Choosing clans and modifiers"
+      },
+      "alt": {
+        "ru": "Monster Train: экран Customize Challenge показывает основной и союзный кланы, модификаторы и уровень Covenant.",
+        "en": "Monster Train: Customize Challenge displays primary and allied clans, mutators and a Covenant level."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 17,
+          "label": {
+            "ru": "Начальный набор кланов",
+            "en": "Starting clan combination"
+          }
+        },
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Модификаторы правил забега",
+            "en": "Run rule modifiers"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте влияние каждого условия до старта.",
+        "en": "Explain each condition’s effect before starting."
+      },
+      {
+        "ru": "Позволяйте быстро повторить ту же конфигурацию.",
+        "en": "Make it quick to repeat the same configuration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-05": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Выбор маршрута забега",
+      "en": "Choosing a run route"
+    },
+    "description": {
+      "ru": "На развилках игрок выбирает следующий узел и отказывается от альтернатив. Предстоящие услуги, награды и опасности формируют план забега.",
+      "en": "At a fork, the player chooses the next node and gives up alternatives. Upcoming services, rewards and threats shape the run plan."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-route.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_622feb3c33c2c6cd07dc8bab01809183e0b9dce0.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Развилки между узлами маршрута",
+        "en": "Forks between route nodes"
+      },
+      "alt": {
+        "ru": "Monster Train: карта показывает два расходящихся пути с узлами событий, магазинов и боёв.",
+        "en": "Monster Train: the map shows branching paths with event, shop and battle nodes."
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 53,
+          "label": {
+            "ru": "Одна ветвь маршрута",
+            "en": "One route branch"
+          }
+        },
+        {
+          "x": 57,
+          "y": 53,
+          "label": {
+            "ru": "Альтернативная ветвь",
+            "en": "The alternative branch"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте тип узла до выбора пути.",
+        "en": "Identify a node’s type before the route choice."
+      },
+      {
+        "ru": "Дайте сравнить будущие развилки, а не только ближайший шаг.",
+        "en": "Allow comparison of later forks, beyond the immediate next step."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-33": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Карточный рогалик",
+      "en": "Deckbuilding roguelike"
+    },
+    "description": {
+      "ru": "Игрок проходит цепочку боёв и собирает колоду по ходу забега. Случайные предложения и ограниченные ресурсы требуют менять план под находки.",
+      "en": "The player progresses through battles while building a deck during the run. Random offers and limited resources require adapting to discoveries."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-battle.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_edce778e9006c559cc347542ba2a61ed1461c945.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Карты управляют боем на этажах поезда",
+        "en": "Cards control combat on the train’s floors"
+      },
+      "alt": {
+        "ru": "Monster Train: внизу расположена рука карт, слева запас энергии, а существа размещены на этажах поезда.",
+        "en": "Monster Train: a hand of cards sits below an energy counter and creatures positioned on the train’s floors."
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 82,
+          "label": {
+            "ru": "Рука карт для текущего решения",
+            "en": "The hand for the current decision"
+          }
+        },
+        {
+          "x": 9,
+          "y": 83,
+          "label": {
+            "ru": "Энергия ограничивает действия",
+            "en": "Energy limits available actions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте новые карты с уже работающими частями сборки.",
+        "en": "Connect new cards to the build’s existing strengths."
+      },
+      {
+        "ru": "Давайте достаточно информации для планирования следующего хода.",
+        "en": "Provide enough information to plan the next turn."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-29": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Призыв и отряд в забеге",
+      "en": "Summons and party in a run"
+    },
+    "description": {
+      "ru": "Игрок добавляет союзников и распределяет их позиции или роли. Выживание отряда зависит от состава и сочетания способностей.",
+      "en": "The player adds allies and assigns their positions or roles. The party’s survival depends on its composition and combined abilities."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-battle.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_edce778e9006c559cc347542ba2a61ed1461c945.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Существа размещены по этажам",
+        "en": "Creatures positioned on different floors"
+      },
+      "alt": {
+        "ru": "Monster Train: призванные существа стоят на разных этажах поезда; внизу доступны карты существ и заклинаний.",
+        "en": "Monster Train: summoned creatures occupy different train floors, above a hand of unit and spell cards."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 41,
+          "label": {
+            "ru": "Союзные существа на этаже",
+            "en": "Allied units on a floor"
+          }
+        },
+        {
+          "x": 34,
+          "y": 13,
+          "label": {
+            "ru": "Союзник на другом этаже",
+            "en": "An ally on another floor"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, кого союзник защищает и какую цель атакует.",
+        "en": "Show whom an ally protects and which target it attacks."
+      },
+      {
+        "ru": "Делайте ограничения численности и размещения понятными.",
+        "en": "Make unit and placement limits clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-18": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Сборка билда и синергии",
+      "en": "Builds and synergies"
+    },
+    "description": {
+      "ru": "Игрок сочетает карты, предметы и улучшения так, чтобы они усиливали друг друга. Полезность находки зависит от уже выбранного направления.",
+      "en": "The player combines cards, items and upgrades that reinforce one another. A discovery’s value depends on the build already taking shape."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-upgrade.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_13f43b3b31bff7891d899172799dc0dbf3a2c0c7.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Выбор носителя улучшения Multistrike",
+        "en": "Choosing a recipient for Multistrike"
+      },
+      "alt": {
+        "ru": "Monster Train: Frenzystone предлагает улучшить существо свойством Multistrike 1; ниже показаны подходящие карты отряда.",
+        "en": "Monster Train: Frenzystone offers Multistrike 1 for a unit, with eligible unit cards shown below."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 13,
+          "label": {
+            "ru": "Улучшение с конкретным эффектом",
+            "en": "An upgrade with a specific effect"
+          }
+        },
+        {
+          "x": 51,
+          "y": 52,
+          "label": {
+            "ru": "Выбор карты для усиления",
+            "en": "Choosing a card to upgrade"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте увидеть итоговый эффект комбинации до подтверждения.",
+        "en": "Preview the combined effect before confirmation."
+      },
+      {
+        "ru": "Не сводите все сочетания к одному очевидному усилению урона.",
+        "en": "Support combinations beyond one obvious damage upgrade."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-19": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Добыча и новые предметы",
+      "en": "Loot and new acquisitions"
+    },
+    "description": {
+      "ru": "Новые находки расширяют возможности текущего забега. Игрок оценивает свойства, совместимость со сборкой и цену отказа от альтернатив.",
+      "en": "New acquisitions expand the current run’s options. Players evaluate properties, build compatibility and the cost of rejecting alternatives."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-reward.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 300,
+        "y": 90,
+        "width": 825,
+        "height": 720
+      },
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_f8d8e271f4e51ec75660cacb70364005c7352ff1.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Новая карта как находка забега",
+        "en": "A new card as a run acquisition"
+      },
+      "alt": {
+        "ru": "Monster Train: две новые карты существ предлагаются на выбор, с видимыми эффектами, атакой и здоровьем.",
+        "en": "Monster Train: two new unit cards are offered with visible effects, attack and health."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 71,
+          "label": {
+            "ru": "Свойства первой находки",
+            "en": "Properties of the first acquisition"
+          }
+        },
+        {
+          "x": 60,
+          "y": 71,
+          "label": {
+            "ru": "Свойства альтернативы",
+            "en": "Properties of the alternative"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте свойства без необходимости подбирать предмет.",
+        "en": "Show properties without requiring the player to take the item."
+      },
+      {
+        "ru": "Обозначайте, сохраняется ли находка после окончания забега.",
+        "en": "Clarify whether an acquisition persists after the run ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "roguelike--family-39": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Сложность и испытания забега",
+      "en": "Run difficulty and challenges"
+    },
+    "description": {
+      "ru": "Дополнительные правила меняют требования к прохождению. Игрок заранее видит ограничения и может выбрать подходящее испытание.",
+      "en": "Additional rules change the demands of a run. The player sees restrictions in advance and chooses an appropriate challenge."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-challenge.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_482b7d543a1e5773eb469b4702258b7eb34f2da1.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© 2020 Shiny Shoe LLC. All rights reserved.",
+      "caption": {
+        "ru": "Испытание с выбранными модификаторами",
+        "en": "A challenge with selected modifiers"
+      },
+      "alt": {
+        "ru": "Monster Train: Customize Challenge показывает три модификатора, уровень Covenant и переключатель Hell Rush.",
+        "en": "Monster Train: Customize Challenge shows three mutators, a Covenant level and a Hell Rush toggle."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Правила меняют условия испытания",
+            "en": "Rules change the challenge conditions"
+          }
+        },
+        {
+          "x": 46,
+          "y": 73,
+          "label": {
+            "ru": "Дополнительный уровень Covenant",
+            "en": "An additional Covenant level"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте изменения правил до начала попытки.",
+        "en": "Show rule changes before the attempt begins."
+      },
+      {
+        "ru": "Сравнивайте результаты только при сопоставимых условиях.",
+        "en": "Compare results under comparable conditions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "movement-platforming--t002": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Платформер в трёх измерениях",
+      "en": "3D platforming"
+    },
+    "description": {
+      "ru": "Игрок оценивает расстояния и высоты в объёмном пространстве. Камера, ориентиры и управление прыжком помогают точно выбрать следующую опору.",
+      "en": "The player judges distances and heights in three-dimensional space. Camera framing, landmarks and jump controls help target the next foothold."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-jump.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Rise of the Tomb Raider",
+      "sourceUrl": "https://store.steampowered.com/app/391220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/ss_749f99146e5ebad371e37d95bfab7b17847c1d81.1920x1080.jpg?t=1766187095",
+      "credit": "Crystal Dynamics / Eidos-Montréal",
+      "rights": "© 2015 Crystal Dynamics group of companies. All rights reserved.",
+      "caption": {
+        "ru": "Высота, глубина и следующая опора",
+        "en": "Height, depth and the next foothold"
+      },
+      "alt": {
+        "ru": "Rise of the Tomb Raider: прыжок между каменными площадками показан сбоку с глубиной руин и провалом под героиней.",
+        "en": "Rise of the Tomb Raider: a jump between stone platforms is framed from the side, showing the ruins’ depth and the drop below Lara."
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 49,
+          "label": {
+            "ru": "Целевая площадка в объёмной сцене",
+            "en": "A target platform in a 3D scene"
+          }
+        },
+        {
+          "x": 84,
+          "y": 37,
+          "label": {
+            "ru": "Положение персонажа в воздухе",
+            "en": "The character’s airborne position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте видимость приземления из рабочей камеры.",
+        "en": "Check landing visibility from the gameplay camera."
+      },
+      {
+        "ru": "Используйте тень и контекст сцены для оценки глубины.",
+        "en": "Use shadows and scene context to support depth perception."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rise of the Tomb Raider",
+        "url": "https://store.steampowered.com/app/391220/"
+      }
+    ]
+  },
+  "movement-platforming--t005": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Паркур и преодоление препятствий",
+      "en": "Parkour and traversal"
+    },
+    "description": {
+      "ru": "Игрок связывает прыжки и другие перемещения в маршрут через окружение. Читаемые опоры помогают сохранять темп и выбирать безопасную траекторию.",
+      "en": "The player links jumps and other moves into a route through the environment. Readable footholds support momentum and safe trajectory choices."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-jump.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Rise of the Tomb Raider",
+      "sourceUrl": "https://store.steampowered.com/app/391220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/ss_749f99146e5ebad371e37d95bfab7b17847c1d81.1920x1080.jpg?t=1766187095",
+      "credit": "Crystal Dynamics / Eidos-Montréal",
+      "rights": "© 2015 Crystal Dynamics group of companies. All rights reserved.",
+      "caption": {
+        "ru": "Маршрут через разрушенное сооружение",
+        "en": "A route through a ruined structure"
+      },
+      "alt": {
+        "ru": "Rise of the Tomb Raider: Лара преодолевает разрыв между каменными опорами в разрушенном сооружении.",
+        "en": "Rise of the Tomb Raider: Lara crosses a gap between stone supports in a ruined structure."
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 49,
+          "label": {
+            "ru": "Продолжение маршрута на другой стороне",
+            "en": "The route continues across the gap"
+          }
+        },
+        {
+          "x": 84,
+          "y": 37,
+          "label": {
+            "ru": "Перемещение между опорами",
+            "en": "Traversal between footholds"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте визуальный язык опор для разных движений.",
+        "en": "Use consistent visual cues for traversal surfaces."
+      },
+      {
+        "ru": "Сохраняйте управление при переходе от одного движения к другому.",
+        "en": "Maintain control when transitioning between moves."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rise of the Tomb Raider",
+        "url": "https://store.steampowered.com/app/391220/"
+      }
+    ]
+  },
+  "exploration-adventures--t040": {
+    "updatedAt": "2026-10-21",
+    "title": {
+      "ru": "Action-adventure",
+      "en": "Action-adventure"
+    },
+    "description": {
+      "ru": "Исследование сочетается с действиями, требующими управления персонажем. Новые маршруты, препятствия и находки связывают освоение мира с мастерством.",
+      "en": "Exploration combines with character-control challenges. Routes, obstacles and discoveries connect learning about the world with mastering its actions."
+    },
+    "image": {
+      "src": "images/mechanics/tomb-raider-jump.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Rise of the Tomb Raider",
+      "sourceUrl": "https://store.steampowered.com/app/391220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391220/ss_749f99146e5ebad371e37d95bfab7b17847c1d81.1920x1080.jpg?t=1766187095",
+      "credit": "Crystal Dynamics / Eidos-Montréal",
+      "rights": "© 2015 Crystal Dynamics group of companies. All rights reserved.",
+      "caption": {
+        "ru": "Исследование через преодоление разрыва",
+        "en": "Exploration through a traversal challenge"
+      },
+      "alt": {
+        "ru": "Rise of the Tomb Raider: путь через руины продолжается за разрывом, который Лара преодолевает прыжком.",
+        "en": "Rise of the Tomb Raider: the route through the ruins continues across a gap that Lara crosses by jumping."
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 49,
+          "label": {
+            "ru": "Путь к следующей части пространства",
+            "en": "A route to the next part of the space"
+          }
+        },
+        {
+          "x": 84,
+          "y": 37,
+          "label": {
+            "ru": "Действие для продолжения исследования",
+            "en": "An action that advances exploration"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте действиям открывать новые сведения и маршруты.",
+        "en": "Let actions reveal information and open routes."
+      },
+      {
+        "ru": "Чередуйте требовательные действия с возможностью осмотреться.",
+        "en": "Alternate demanding actions with opportunities to observe."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Rise of the Tomb Raider",
+        "url": "https://store.steampowered.com/app/391220/"
+      }
+    ]
   }
 }

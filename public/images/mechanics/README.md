@@ -32,6 +32,12 @@ Crops and contextual markers are HTML/CSS overlays.
 | `hollow-knight-*.webp` | Hollow Knight / Team Cherry | [Publisher's Steam page](https://store.steampowered.com/app/367520/Hollow_Knight/) |
 | `last-epoch-*.webp` | Last Epoch / Eleventh Hour Games | [Publisher's Steam page](https://store.steampowered.com/app/899770/Last_Epoch/) |
 | `factorio-copper-wire.webp` | Factorio / Wube Software | [Publisher's Steam page](https://store.steampowered.com/app/427520/Factorio/) |
+| `spelunky-*.webp` | Spelunky / Mossmouth | [Publisher’s Steam gallery](https://store.steampowered.com/app/239350/Spelunky/) |
+| `drg-*.webp` | Deep Rock Galactic / Ghost Ship Games, Coffee Stain Publishing | [Publisher’s Steam gallery](https://store.steampowered.com/app/548430/Deep_Rock_Galactic/) |
+| `monster-train-*.webp` | Monster Train / Shiny Shoe, Good Shepherd Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/1102190/Monster_Train/) |
+| `subnautica-*.webp` | Subnautica / Unknown Worlds Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/264710/Subnautica/) |
+| `tomb-raider-jump.webp` | Rise of the Tomb Raider / Crystal Dynamics, Eidos-Montréal | [Publisher’s Steam gallery](https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/) |
+| `spiritfarer-*.webp` | Spiritfarer / Thunder Lotus | [Official press kit](https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/) |
 | `gungeon-bullet-rings.webp` | Enter the Gungeon / Dodge Roll, Devolver Digital | [Publisher's Steam page](https://store.steampowered.com/app/311690/Enter_the_Gungeon/) |
 
 Some press-kit screenshots show an older published build. Cards discuss the

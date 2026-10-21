@@ -39,3 +39,6 @@ every new card in RU/EN at tiny portrait, short landscape, desktop and fullscree
 sizes. Retain keyboard/touch tooltips, no-JS titles, both themes, category links,
 search and full JSON/Markdown parity. Run canonical checks and browser tests,
 then verify each published batch on GitHub Pages.
+The complete rollout exercises every authored card in both languages. Allow up
+to 60 minutes for the CI verification job as coverage grows, retaining the full
+browser suite rather than sampling away cards.
