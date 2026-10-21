@@ -168,9 +168,14 @@ const nav = [
       <header class="topbar">
         <div class="breadcrumb">
           {compact ? (
-            <a class="compact-brand" href={path(`${lang}/`)}>
-              game dev <span>/ db</span>
-            </a>
+            <>
+              <a class="compact-brand" href={path(`${lang}/`)}>
+                game dev <span>/ db</span>
+              </a>
+              <a class="compact-back" href={path(`${lang}/mechanics/`)}>
+                ← {t.mechanics}
+              </a>
+            </>
           ) : (
             <>
               <span class="mobile-brand">game dev / db</span>
@@ -221,22 +226,41 @@ const nav = [
   </body>
 </html>
 <style is:global>
+  .compact-page {
+    --compact-toolbar: 48px;
+  }
   .compact-page .workspace {
     margin-left: 0;
+    block-size: 100svh;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    min-width: 0;
   }
   .compact-page .topbar {
-    height: 64px;
+    height: auto;
+    min-height: var(--compact-toolbar);
+    padding: 4px clamp(16px, 2vw, 36px);
+    gap: 12px;
+    row-gap: 4px;
     flex-wrap: wrap;
-    padding: 0 max(24px, calc((100vw - 1200px) / 2));
+  }
+  .compact-page .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    min-width: 0;
   }
   .compact-page main {
-    max-width: 1200px;
+    max-width: none;
+    width: 100%;
     min-height: 0;
-    padding: 24px 32px 18px;
+    margin: 0;
+    padding: clamp(12px, 2vw, 28px);
+    container: mechanic-shell / inline-size;
   }
   .compact-brand {
     color: var(--ink);
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 650;
     letter-spacing: -0.8px;
     white-space: nowrap;
@@ -244,12 +268,29 @@ const nav = [
   .compact-brand span {
     color: var(--accent);
   }
+  .compact-back {
+    white-space: nowrap;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .compact-back:hover {
+    color: var(--accent);
+  }
+  .compact-page .topbar-actions {
+    gap: 12px;
+  }
+  .compact-page .theme-switch button {
+    width: 26px;
+    height: 26px;
+  }
   @media (max-width: 700px) {
-    .compact-page .topbar {
-      min-height: 50px;
-      height: auto;
-      padding: 6px 16px;
+    .compact-page {
+      --compact-toolbar: 44px;
     }
+    .compact-page .topbar {
+      padding: 4px 12px;
+    }
+    .compact-page .compact-brand,
     .compact-page .github-link {
       display: none;
     }
@@ -257,10 +298,12 @@ const nav = [
       gap: 8px;
     }
     .compact-page main {
-      padding: 12px 16px;
+      padding: 10px 12px;
     }
-    .compact-brand {
-      font-size: 16px;
+  }
+  @container mechanic-shell (max-width: 280px) {
+    .mechanic-preview {
+      padding-bottom: 12px;
     }
   }
 </style>

@@ -5,6 +5,22 @@ import { getMechanicPreview } from '../src/lib/mechanic-previews.mjs';
 const base = '/game-dev-db';
 const id = 'shared-family-02';
 const route = (lang: string) => `${base}/${lang}/knowledge/mechanic/${id}/`;
+const viewports = [
+  { width: 319, height: 849 },
+  { width: 320, height: 500 },
+  { width: 375, height: 667 },
+  { width: 390, height: 844 },
+  { width: 400, height: 500 },
+  { width: 516, height: 314 },
+  { width: 600, height: 600 },
+  { width: 700, height: 500 },
+  { width: 800, height: 500 },
+  { width: 1024, height: 600 },
+  { width: 1280, height: 720 },
+  { width: 1440, height: 900 },
+  { width: 1510, height: 900 },
+  { width: 1920, height: 1080 },
+];
 
 test('pilot adds bilingual presentation while preserving shared identity and full taxonomy', () => {
   for (const lang of ['ru', 'en']) {
@@ -19,6 +35,19 @@ test('pilot adds bilingual presentation while preserving shared identity and ful
       record.sections.find((s: any) => s.id === 'variants').body,
     ).toContain('family-02-variant-10');
     const preview = getMechanicPreview(id, lang)!;
+    const crop = preview.image.crop!;
+    expect(crop.x + crop.width).toBeLessThanOrEqual(preview.image.width);
+    expect(crop.y + crop.height).toBeLessThanOrEqual(preview.image.height);
+    for (const marker of preview.image.markers) {
+      expect((marker.x / 100) * preview.image.width).toBeGreaterThan(crop.x);
+      expect((marker.x / 100) * preview.image.width).toBeLessThan(
+        crop.x + crop.width,
+      );
+      expect((marker.y / 100) * preview.image.height).toBeGreaterThan(crop.y);
+      expect((marker.y / 100) * preview.image.height).toBeLessThan(
+        crop.y + crop.height,
+      );
+    }
     expect(record.summary).toBe(preview.description);
     expect(record.attributes.preview).toEqual(preview);
     const markdown = knowledgeMarkdown(record);
@@ -32,15 +61,10 @@ test('pilot adds bilingual presentation while preserving shared identity and ful
 
 for (const lang of ['ru', 'en'] as const) {
   for (const colorScheme of ['light', 'dark'] as const) {
-    for (const viewport of [
-      { width: 1280, height: 720 },
-      { width: 1440, height: 900 },
-      { width: 375, height: 667 },
-      { width: 390, height: 844 },
-    ]) {
+    for (const viewport of viewports) {
       test(`${lang} ${colorScheme} ${viewport.width}×${viewport.height}: whole mechanic fits without scrolling or clipping`, async ({
         page,
-      }) => {
+      }, testInfo) => {
         await page.setViewportSize(viewport);
         await page.emulateMedia({ colorScheme });
         await page.goto(route(lang));
@@ -49,7 +73,7 @@ for (const lang of ['ru', 'en'] as const) {
         await expect(image).toBeVisible();
         await expect(image).toHaveJSProperty('naturalWidth', 2048);
         await expect(page.locator('.preview-marker')).toHaveCount(2);
-        await expect(page.locator('.preview-tips li')).toHaveCount(2);
+        await expect(page.locator('.preview-categories a')).toHaveCount(2);
         const layout = await page.evaluate(() => {
           const root = document.documentElement;
           const article = document.querySelector('[data-mechanic-preview]')!;
@@ -57,8 +81,21 @@ for (const lang of ['ru', 'en'] as const) {
             width: root.scrollWidth,
             height: root.scrollHeight,
             bottom: article.getBoundingClientRect().bottom,
+            main: document
+              .querySelector('main')!
+              .getBoundingClientRect()
+              .toJSON(),
+            frame: document
+              .querySelector('.preview-viewport')!
+              .getBoundingClientRect()
+              .toJSON(),
+            image: document
+              .querySelector('.preview-image')!
+              .getBoundingClientRect()
+              .toJSON(),
             scrollers: [...article.querySelectorAll('*')]
               .filter((el) => {
+                if (el.closest('[data-image-crop]')) return false;
                 const css = getComputedStyle(el);
                 return (
                   (el.scrollHeight > el.clientHeight + 1 &&
@@ -74,10 +111,57 @@ for (const lang of ['ru', 'en'] as const) {
         expect(layout.height).toBeLessThanOrEqual(viewport.height);
         expect(layout.bottom).toBeLessThanOrEqual(viewport.height);
         expect(layout.scrollers).toEqual([]);
+        expect(layout.main.width).toBeGreaterThanOrEqual(viewport.width - 1);
+        expect(layout.main.bottom).toBeGreaterThanOrEqual(viewport.height - 1);
+        // The screenshot fills the available frame on at least one axis.
+        expect(
+          Math.max(
+            layout.image.width / layout.frame.width,
+            layout.image.height / layout.frame.height,
+          ),
+        ).toBeGreaterThan(0.98);
+        expect(layout.image.height).toBeGreaterThan(70);
+        await expect(page.locator('.preview-description')).toBeInViewport({
+          ratio: 1,
+        });
+        for (const marker of await page.locator('.preview-marker').all())
+          await expect(marker).toBeInViewport({ ratio: 1 });
         await expect(page.locator('.preview-footer a').last()).toBeInViewport();
+        if (
+          lang === 'ru' &&
+          colorScheme === 'dark' &&
+          [319, 516, 1510].includes(viewport.width)
+        )
+          await page.screenshot({
+            path: testInfo.outputPath(
+              `viewport-${viewport.width}x${viewport.height}.png`,
+            ),
+            fullPage: true,
+          });
       });
     }
   }
+
+  test(`${lang}: resizing through breakpoints preserves the required content and viewport fit`, async ({
+    page,
+  }) => {
+    await page.goto(route(lang));
+    await page.evaluate(() => document.fonts.ready);
+    for (const width of [479, 480, 515, 600, 700, 739, 740, 800, 900, 1024]) {
+      await page.setViewportSize({ width, height: 500 });
+      const dimensions = await page.evaluate(() => ({
+        width: document.documentElement.scrollWidth,
+        height: document.documentElement.scrollHeight,
+      }));
+      expect(dimensions, `${width}×500`).toEqual({ width, height: 500 });
+      await expect(page.locator('.preview-description')).toBeInViewport({
+        ratio: 1,
+      });
+      await expect(page.locator('.preview-credit')).toBeInViewport({
+        ratio: 1,
+      });
+    }
+  });
 
   test(`${lang}: both categories open the same pilot without JavaScript; full exports and language link resolve`, async ({
     browser,

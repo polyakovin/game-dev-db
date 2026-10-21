@@ -52,11 +52,23 @@ Discovery improvements SHALL NOT connect external analytics services, visitor co
 - **THEN** its discovery metadata and machine formats work without an analytics integration or visitor tracking request
 
 ### Requirement: Compact mechanic pilot
-The Search and discovery pilot SHALL present a short definition, an attributed real-game screenshot with explanatory markers, advice and example links in RU/EN. Its default view SHALL fit desktop and phone viewports without page or internal scrolling, clipping or collapsed content. Enlarged text SHALL remain readable through natural flow. Other mechanics SHALL keep their current presentation pending review.
+The pilot SHALL show its short RU/EN definition, attributed real-game screenshot, categories and format links within the viewport. The illustration SHALL fill remaining space while retaining the marked scene and clue. Advice and extra examples SHALL appear when space permits. Default portrait, landscape and fullscreen views SHALL avoid page/internal scrolling and clipped text. Enlarged text SHALL retain natural flow. Other mechanics SHALL keep their current view.
 
 #### Scenario: Inspect the pilot at standard sizes
 - **WHEN** a reader opens either language at 1280×720, 1440×900, 375×667 or 390×844 using default text size
-- **THEN** all pilot content and navigation fit the viewport, the image loads locally, and its marked scene and target strip remain visible
+- **THEN** all displayed pilot content and navigation fit the viewport, the image loads locally, and its marked scene and target strip remain visible
+
+#### Scenario: Resize a short or intermediate window
+- **WHEN** the default viewport is resized through 320×500, 400×500, 516×314, 600×600, 700×500, 800×500 or 1024×600
+- **THEN** required content remains visible without page/internal scrolling or clipping, and optional content appears only when it fits
+
+#### Scenario: Use fullscreen and tall windows
+- **WHEN** the default viewport is 319×849, 1510×900 or 1920×1080
+- **THEN** the page uses the available main area and the illustration grows into its remaining space instead of leaving fixed external margins or a vacant lower half
+
+#### Scenario: Enlarge text
+- **WHEN** the reader enlarges the page to 200 percent
+- **THEN** text and links remain readable and reachable in normal document flow without concealed content
 
 #### Scenario: Reuse one mechanic from two categories
 - **WHEN** a reader follows Search and discovery in children or education

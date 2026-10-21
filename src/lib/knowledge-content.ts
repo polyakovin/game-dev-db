@@ -9,6 +9,7 @@ export interface MechanicPreview {
     src: string;
     width: number;
     height: number;
+    crop?: { x: number; y: number; width: number; height: number };
     game: string;
     sourceUrl: string;
     originalUrl: string;
