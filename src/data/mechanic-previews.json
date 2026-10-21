@@ -23047,5 +23047,1768 @@
         "url": "https://store.steampowered.com/app/400/"
       }
     ]
+  },
+  "dialogue--family-access": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Начало и завершение разговора",
+      "en": "Starting and ending a conversation"
+    },
+    "description": {
+      "ru": "Условия, инициатор и способ входа в разговор определяют, когда общение начинается и как его можно завершить.",
+      "en": "Entry conditions, initiator and controls determine when a conversation starts and how it can end."
+    },
+    "image": {
+      "src": "images/mechanics/duolingo-video-call.webp",
+      "width": 1400,
+      "height": 800,
+      "crop": {
+        "x": 150,
+        "y": 50,
+        "width": 1100,
+        "height": 700
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://blog.duolingo.com/product-highlights/",
+      "originalUrl": "https://storage.ghost.io/c/7a/33/7a33d0f4-927d-4fe8-a6bf-96131b5e76d4/content/images/2025/12/EN-DuolingoProductYIR-Video-Call-1.png",
+      "credit": "Duolingo, Inc.; official screenshot comparison of Video Call with Lily",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Начало звонка и кнопка завершения",
+        "en": "Starting a call and ending it"
+      },
+      "alt": {
+        "ru": "Начало звонка и кнопка завершения",
+        "en": "Starting a call and ending it"
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 58,
+          "label": {
+            "ru": "Кнопка запускает разговор с Лили",
+            "en": "The button starts a conversation with Lily"
+          }
+        },
+        {
+          "x": 50,
+          "y": 84,
+          "label": {
+            "ru": "Звонок можно завершить отдельно",
+            "en": "A separate button ends the call"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте начало разговора и способ выхода до первого ответа.",
+        "en": "Make the start and exit controls clear before the first response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://blog.duolingo.com/product-highlights/"
+      }
+    ]
+  },
+  "dialogue--family-input": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Составление и свободный ввод",
+      "en": "Composed responses and free text input"
+    },
+    "description": {
+      "ru": "Ответ собирается из элементов или вводится свободно, после чего система интерпретирует содержание и форму.",
+      "en": "Players compose a reply or enter it freely; the system interprets its content and form."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-ai-dungeon-01.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 60,
+        "y": 300,
+        "width": 1320,
+        "height": 510
+      },
+      "game": "AI Dungeon",
+      "sourceUrl": "https://store.steampowered.com/app/1519310/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1519310/ss_ee95450224396e9e199c8222a92a89dfa3dcbd1d.1920x1080.jpg?t=1709918592",
+      "credit": "Latitude",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Свободный текст под историей в AI Dungeon",
+        "en": "Free text beneath the story in AI Dungeon"
+      },
+      "alt": {
+        "ru": "Свободный текст под историей в AI Dungeon",
+        "en": "Free text beneath the story in AI Dungeon"
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 97,
+          "label": {
+            "ru": "Поле принимает собственный текст действия",
+            "en": "Enter an action in your own words"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "При непонятом вводе помогайте уточнить намерение игрока.",
+        "en": "Help players clarify their intent when input is not understood."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AI Dungeon",
+        "url": "https://store.steampowered.com/app/1519310/"
+      }
+    ]
+  },
+  "dialogue--family-topology": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Структура диалогового графа",
+      "en": "Dialogue graph structure"
+    },
+    "description": {
+      "ru": "Связи между узлами разговора задают ветвления, возвраты, слияния и порядок доступных тем.",
+      "en": "Connections between dialogue nodes determine branches, loops, merges and the order of available topics."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-dialogue.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 563,
+        "y": 38,
+        "width": 825,
+        "height": 712
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_23836438cd455287232be5ae9c4f48d5c488967b.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Разные ответы открывают продолжения разговора",
+        "en": "Replies offer different conversation paths"
+      },
+      "alt": {
+        "ru": "Разные ответы открывают продолжения разговора",
+        "en": "Replies offer different conversation paths"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 72,
+          "label": {
+            "ru": "Доступные ответы задают следующие переходы",
+            "en": "Available replies define the next transitions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте понять, какие темы можно повторить и какие решения окончательны.",
+        "en": "Make repeatable topics and final decisions distinguishable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "dialogue--family-topics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Управление темами",
+      "en": "Topic management"
+    },
+    "description": {
+      "ru": "Выбор и переключение тем управляют тем, о чём говорят персонажи и какие вопросы остаются открытыми.",
+      "en": "Players choose, switch or return to topics; knowledge and conversation state determine which questions are available."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-oblivion-03.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "The Elder Scrolls IV: Oblivion® Game of the Year Edition (2009)",
+      "sourceUrl": "https://store.steampowered.com/app/22330/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22330/0000009040.1920x1080.jpg?t=1745343031",
+      "credit": "Bethesda Game Studios / Bethesda Softworks",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Список тем рядом с собеседником в Oblivion",
+        "en": "A topic list beside the character in Oblivion"
+      },
+      "alt": {
+        "ru": "Список тем рядом с собеседником в Oblivion",
+        "en": "A topic list beside the character in Oblivion"
+      },
+      "markers": [
+        {
+          "x": 14,
+          "y": 72,
+          "label": {
+            "ru": "Список позволяет выбрать вопрос для обсуждения",
+            "en": "The list lets the player select a topic"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте новые темы и уже обсуждённые вопросы.",
+        "en": "Distinguish new topics from questions already discussed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Elder Scrolls IV: Oblivion® Game of the Year Edition (2009)",
+        "url": "https://store.steampowered.com/app/22330/"
+      }
+    ]
+  },
+  "dialogue--family-timing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время и темп",
+      "en": "Time and pace"
+    },
+    "description": {
+      "ru": "Длительность, паузы и сроки ответа становятся частью правила общения и его последствий.",
+      "en": "Duration, pauses and response deadlines become part of dialogue rules and consequences."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-as-dusk-falls-13.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "As Dusk Falls",
+      "sourceUrl": "https://store.steampowered.com/app/1341820/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1341820/ss_c00e53a88a8d8d22c753da26a11c7dd03844af9a.1920x1080.jpg?t=1718812917",
+      "credit": "INTERIOR/NIGHT / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Таймер выбора ответа в As Dusk Falls",
+        "en": "A reply deadline in As Dusk Falls"
+      },
+      "alt": {
+        "ru": "Таймер выбора ответа в As Dusk Falls",
+        "en": "A reply deadline in As Dusk Falls"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 7,
+          "label": {
+            "ru": "На ответ отведено ограниченное время",
+            "en": "The reply has a time limit"
+          }
+        },
+        {
+          "x": 39,
+          "y": 33,
+          "label": {
+            "ru": "Варианты доступны до окончания отсчёта",
+            "en": "Options remain available until the countdown ends"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте результат молчания и позволяйте увеличить время выбора.",
+        "en": "Explain the result of silence and allow more time to choose."
+      }
+    ],
+    "examples": [
+      {
+        "title": "As Dusk Falls",
+        "url": "https://store.steampowered.com/app/1341820/"
+      }
+    ]
+  },
+  "dialogue--family-interruption": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перебивания и очередность",
+      "en": "Interruptions and taking turns"
+    },
+    "description": {
+      "ru": "Момент вмешательства и распределение очереди определяют, кто продолжит говорить и как изменится разговор.",
+      "en": "Participants take turns, interrupt or yield the floor; rules determine who can speak and when."
+    },
+    "image": {
+      "src": "images/mechanics/duolingo-video-call.webp",
+      "width": 1400,
+      "height": 800,
+      "crop": {
+        "x": 525,
+        "y": 50,
+        "width": 735,
+        "height": 700
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://blog.duolingo.com/product-highlights/",
+      "originalUrl": "https://storage.ghost.io/c/7a/33/7a33d0f4-927d-4fe8-a6bf-96131b5e76d4/content/images/2025/12/EN-DuolingoProductYIR-Video-Call-1.png",
+      "credit": "Duolingo, Inc.; official screenshot comparison of Video Call with Lily",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ответ по кнопке в разговоре с Лили",
+        "en": "A button controls the reply to Lily"
+      },
+      "alt": {
+        "ru": "Ответ по кнопке в разговоре с Лили",
+        "en": "A button controls the reply to Lily"
+      },
+      "markers": [
+        {
+          "x": 77,
+          "y": 84,
+          "label": {
+            "ru": "Push-to-talk помогает закончить свою реплику",
+            "en": "Push-to-talk lets the speaker finish their turn"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте явный сигнал, когда система слушает и когда начинает отвечать.",
+        "en": "Clearly indicate when the system listens and when it begins replying."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://blog.duolingo.com/product-highlights/"
+      }
+    ]
+  },
+  "dialogue--family-costs": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ресурсы и ставки",
+      "en": "Resources and stakes"
+    },
+    "description": {
+      "ru": "Реплика или попытка влияния требует времени, ресурса либо принятия риска и обязательства.",
+      "en": "A line or influence attempt costs time or resources, or commits the player to a risk or obligation."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_f9b5015e5e7b0cc860e8985d3f9d773e6874cb57.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Карта тратит терпение покупателя",
+        "en": "A card spends customer patience"
+      },
+      "alt": {
+        "ru": "Карта тратит терпение покупателя",
+        "en": "A card spends customer patience"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 15,
+          "label": {
+            "ru": "Стоимость этой карты: 2 терпения",
+            "en": "This card costs 2 patience"
+          }
+        },
+        {
+          "x": 4,
+          "y": 74,
+          "label": {
+            "ru": "Оставшееся терпение ограничивает продолжение торга",
+            "en": "Remaining patience limits further negotiation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте цену реплики до выбора и остаток ресурса после неё.",
+        "en": "Show the cost before a reply and the remaining resource afterwards."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-persuasion": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Убеждение и влияние",
+      "en": "Persuasion and Influence"
+    },
+    "description": {
+      "ru": "Выбранные аргументы и способы подачи меняют мнение, решение или готовность собеседника действовать.",
+      "en": "The player tries to change another character’s decision, belief or behaviour through dialogue."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-dialogue.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 563,
+        "y": 38,
+        "width": 825,
+        "height": 712
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_23836438cd455287232be5ae9c4f48d5c488967b.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Попытка давления через Authority",
+        "en": "Attempting to exert Authority"
+      },
+      "alt": {
+        "ru": "Попытка давления через Authority",
+        "en": "Attempting to exert Authority"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 72,
+          "label": {
+            "ru": "Проверка авторитета влияет на попытку давления",
+            "en": "An Authority check governs an attempt to exert pressure"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте цели собеседника, а не только уровень навыка героя.",
+        "en": "Account for the other character’s goals as well as the hero’s skill."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "dialogue--family-negotiation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Торг, сделки и обязательства",
+      "en": "Bargaining, transactions and obligations"
+    },
+    "description": {
+      "ru": "Участники предлагают условия, обменивают ресурсы и принимают обязательства с последствиями.",
+      "en": "Participants negotiate an exchange, price or obligation, taking their own goals and limits into account."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_339bea90d419d56460d11343576be82b01a652c9.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Цена зелья и возражение покупателя",
+        "en": "A potion price and the customer’s objection"
+      },
+      "alt": {
+        "ru": "Цена зелья и возражение покупателя",
+        "en": "A potion price and the customer’s objection"
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 44,
+          "label": {
+            "ru": "Цена зелья: 60 монет, надбавка 20%",
+            "en": "Potion price: 60 coins, with a 20% markup"
+          }
+        },
+        {
+          "x": 53,
+          "y": 28,
+          "label": {
+            "ru": "Покупатель возражает против предложенной цены",
+            "en": "The customer objects to the proposed price"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте сторонам понятные интересы и предел допустимой уступки.",
+        "en": "Give both sides clear interests and a limit on acceptable concessions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-emotions": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Эмоциональное состояние",
+      "en": "Emotional state"
+    },
+    "description": {
+      "ru": "Речь и события меняют эмоциональное состояние персонажа, которое влияет на дальнейшие реакции.",
+      "en": "The emotional state of participants changes which replies are available and how they are received."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_f9b5015e5e7b0cc860e8985d3f9d773e6874cb57.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Стресс Сильвии во время торга",
+        "en": "Sylvia’s stress during negotiation"
+      },
+      "alt": {
+        "ru": "Стресс Сильвии во время торга",
+        "en": "Sylvia’s stress during negotiation"
+      },
+      "markers": [
+        {
+          "x": 86,
+          "y": 86,
+          "label": {
+            "ru": "Индикатор показывает стресс Сильвии",
+            "en": "The indicator shows Sylvia’s stress"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте изменение эмоций с понятными событиями разговора.",
+        "en": "Connect emotional changes to clear events in the conversation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-relationships": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отношения на длинной дистанции",
+      "en": "Long-term relationships"
+    },
+    "description": {
+      "ru": "История общения формирует доверие, близость, конфликты и долгосрочные возможности отношений.",
+      "en": "Repeated conversations change trust, affinity or other lasting relationships between characters."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_1a48567b697d25dee05de6d998e8946ec5ff0ca1.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Симпатия в разговоре с Saffron",
+        "en": "Affinity during a conversation with Saffron"
+      },
+      "alt": {
+        "ru": "Симпатия в разговоре с Saffron",
+        "en": "Affinity during a conversation with Saffron"
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 63,
+          "label": {
+            "ru": "Сердце отмечает положительную реакцию Saffron",
+            "en": "A heart marks Saffron’s positive response"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какие поступки укрепляют отношения на длинной дистанции.",
+        "en": "Show which actions strengthen a relationship over time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-identity": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Самовыражение и личность героя",
+      "en": "Self-expression and character identity"
+    },
+    "description": {
+      "ru": "Ответ выражает характер, убеждения и самоопределение героя, в том числе без немедленной внешней награды.",
+      "en": "A response expresses the hero’s character and beliefs, even without an immediate external reward."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-pentiment-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Pentiment",
+      "sourceUrl": "https://store.steampowered.com/app/1205520/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205520/ss_115917c4fe73896ec794b7e8e1795db02f33a11b.1920x1080.jpg?t=1759874806",
+      "credit": "Obsidian Entertainment / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Прошлое героя определяет будущие варианты",
+        "en": "The hero’s background affects later choices"
+      },
+      "alt": {
+        "ru": "Прошлое героя определяет будущие варианты",
+        "en": "The hero’s background affects later choices"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 28,
+          "label": {
+            "ru": "Выбор Craftsman задаёт черту героя",
+            "en": "Choosing Craftsman defines the hero’s background"
+          }
+        },
+        {
+          "x": 57,
+          "y": 17,
+          "label": {
+            "ru": "Подсказка объясняет влияние на дальнейшие решения",
+            "en": "The explanation links background to later choices"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Поддерживайте выбранный характер героя последовательными репликами.",
+        "en": "Support the chosen character identity with consistent dialogue."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pentiment",
+        "url": "https://store.steampowered.com/app/1205520/"
+      }
+    ]
+  },
+  "dialogue--family-information": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Знания и обмен сведениями",
+      "en": "Knowledge and information sharing"
+    },
+    "description": {
+      "ru": "Разговор открывает, уточняет, проверяет и передаёт сведения о мире и других персонажах.",
+      "en": "Conversation reveals, verifies, withholds or transfers knowledge that changes further decisions."
+    },
+    "image": {
+      "src": "images/mechanics/la-noire-notebook-manual.webp",
+      "width": 1362,
+      "height": 1067,
+      "crop": {
+        "x": 0,
+        "y": 240,
+        "width": 650,
+        "height": 460
+      },
+      "game": "L.A. Noire",
+      "sourceUrl": "https://store.steampowered.com/manual/110800/",
+      "originalUrl": "https://store.steampowered.com/manual/110800/#page=7",
+      "credit": "Team Bondi / Rockstar Games; notebook screenshot from the official PC manual, PDF page 7",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Известные сведения открывают темы допроса",
+        "en": "Known facts provide interrogation topics"
+      },
+      "alt": {
+        "ru": "Известные сведения открывают темы допроса",
+        "en": "Known facts provide interrogation topics"
+      },
+      "markers": [
+        {
+          "x": 28,
+          "y": 32,
+          "label": {
+            "ru": "Вопросы связаны с уже найденными сведениями дела",
+            "en": "Questions refer to information already found in the case"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте известный факт, заявление собеседника и догадку героя.",
+        "en": "Distinguish established facts, a character’s claims and the hero’s guesses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "L.A. Noire",
+        "url": "https://store.steampowered.com/manual/110800/"
+      }
+    ]
+  },
+  "dialogue--family-deception": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ложь и скрытые намерения",
+      "en": "Lies and hidden intentions"
+    },
+    "description": {
+      "ru": "Игрок скрывает сведения, создаёт ложное впечатление или распознаёт несоответствие между словами и намерением.",
+      "en": "A participant hides intentions or distorts facts; the player constructs a lie or checks another character’s claims."
+    },
+    "image": {
+      "src": "images/mechanics/la-noire-reactions-manual.webp",
+      "width": 1362,
+      "height": 1067,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 700,
+        "height": 800
+      },
+      "game": "L.A. Noire",
+      "sourceUrl": "https://store.steampowered.com/manual/110800/",
+      "originalUrl": "https://store.steampowered.com/manual/110800/#page=9",
+      "credit": "Team Bondi / Rockstar Games; source comparison from the official PC manual, PDF page 9",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Постановочные реакции свидетелей в L.A. Noire",
+        "en": "Scripted witness reactions in L.A. Noire"
+      },
+      "alt": {
+        "ru": "Постановочные реакции свидетелей в L.A. Noire",
+        "en": "Scripted witness reactions in L.A. Noire"
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 10,
+          "label": {
+            "ru": "Игра даёт наблюдать реакцию во время ответа",
+            "en": "The game lets the player observe a reaction during an answer"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сопоставляйте ответы с уликами: одна мимика не доказывает ложь.",
+        "en": "Compare answers with evidence: a facial expression alone does not prove a lie."
+      }
+    ],
+    "examples": [
+      {
+        "title": "L.A. Noire",
+        "url": "https://store.steampowered.com/manual/110800/"
+      }
+    ]
+  },
+  "dialogue--family-interrogation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Допрос и доказательства",
+      "en": "Interrogation and evidence"
+    },
+    "description": {
+      "ru": "Вопросы и предъявленные улики проверяют версию событий и вызывают новые показания.",
+      "en": "The player asks questions, compares testimony and presents evidence to uncover contradictions or missing facts."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-ace-attorney-trilogy-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Phoenix Wright: Ace Attorney Trilogy",
+      "sourceUrl": "https://store.steampowered.com/app/787480/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/787480/04cc6bd6f7fb90e9e94925b6d716896a549d0ca9/ss_04cc6bd6f7fb90e9e94925b6d716896a549d0ca9.1920x1080.jpg?t=1768866317",
+      "credit": "CAPCOM Co., Ltd.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Показания свидетеля и материалы дела",
+        "en": "Witness testimony and the court record"
+      },
+      "alt": {
+        "ru": "Показания свидетеля и материалы дела",
+        "en": "Witness testimony and the court record"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 75,
+          "label": {
+            "ru": "Свидетель даёт проверяемое показание",
+            "en": "The witness makes a statement that can be checked"
+          }
+        },
+        {
+          "x": 79,
+          "y": 94,
+          "label": {
+            "ru": "Материалы дела доступны во время показаний",
+            "en": "The court record remains available during testimony"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Противоречие должно вытекать из доступных игроку фактов.",
+        "en": "A contradiction should follow from facts available to the player."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Phoenix Wright: Ace Attorney Trilogy",
+        "url": "https://store.steampowered.com/app/787480/"
+      }
+    ]
+  },
+  "dialogue--family-arguments": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Аргументация и спор",
+      "en": "Argumentation and debate"
+    },
+    "description": {
+      "ru": "Игрок выбирает основания и связи между утверждениями, чтобы построить аргумент или найти противоречие.",
+      "en": "The player connects claims with reasons to build an argument or identify a contradiction."
+    },
+    "image": {
+      "src": "images/mechanics/la-noire-notebook-manual.webp",
+      "width": 1362,
+      "height": 1067,
+      "crop": {
+        "x": 0,
+        "y": 240,
+        "width": 650,
+        "height": 460
+      },
+      "game": "L.A. Noire",
+      "sourceUrl": "https://store.steampowered.com/manual/110800/",
+      "originalUrl": "https://store.steampowered.com/manual/110800/#page=7",
+      "credit": "Team Bondi / Rockstar Games; notebook screenshot from the official PC manual, PDF page 7",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Проверка слов через Review Evidence",
+        "en": "Checking a claim through Review Evidence"
+      },
+      "alt": {
+        "ru": "Проверка слов через Review Evidence",
+        "en": "Checking a claim through Review Evidence"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 55,
+          "label": {
+            "ru": "Перед обвинением можно свериться с доказательствами",
+            "en": "Review the evidence before challenging a claim"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте связь между тезисом, уликой и сделанным выводом.",
+        "en": "Make the connection between claim, evidence and conclusion clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "L.A. Noire",
+        "url": "https://store.steampowered.com/manual/110800/"
+      }
+    ]
+  },
+  "dialogue--family-languages": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Языки, коды и перевод",
+      "en": "Languages, codes and translation"
+    },
+    "description": {
+      "ru": "Знание языка, обозначений и кодов определяет возможность понимать сообщения и выражать намерения.",
+      "en": "Understanding unfamiliar speech, symbols or codes becomes a condition for meaningful communication."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-chants-sennaar-01.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 263,
+        "y": 338,
+        "width": 637,
+        "height": 450
+      },
+      "game": "Chants of Sennaar",
+      "sourceUrl": "https://store.steampowered.com/app/1931770/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931770/ss_0c7b55a542bab74ccb3bbab18346c0f68296ebf4.1920x1080.jpg?t=1774006124",
+      "credit": "Rundisc / Focus Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Собеседник говорит незнакомыми знаками",
+        "en": "A character speaks through unfamiliar glyphs"
+      },
+      "alt": {
+        "ru": "Собеседник говорит незнакомыми знаками",
+        "en": "A character speaks through unfamiliar glyphs"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 67,
+          "label": {
+            "ru": "Реплика требует понять значения глифов",
+            "en": "Understanding the reply requires interpreting the glyphs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте контекст для вывода значения, а не только готовый перевод.",
+        "en": "Provide context for inferring meaning as well as an eventual translation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Chants of Sennaar",
+        "url": "https://store.steampowered.com/app/1931770/"
+      }
+    ]
+  },
+  "dialogue--family-nonverbal": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Невербальное общение",
+      "en": "Nonverbal communication"
+    },
+    "description": {
+      "ru": "Жесты, поза, взгляд и другие неречевые действия передают смысл или изменяют реакцию собеседника.",
+      "en": "Gestures, expressions, posture, proximity or shared actions convey meaning alongside words or instead of them."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-sky-children-light-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sky: Children of the Light",
+      "sourceUrl": "https://store.steampowered.com/app/2325290/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2325290/1154941ab3ec11e456a53828e841fea742356760/ss_1154941ab3ec11e456a53828e841fea742356760.1920x1080.jpg?t=1791580167",
+      "credit": "thatgamecompany",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Музыка и жесты собирают игроков вместе",
+        "en": "Music and gestures bring players together"
+      },
+      "alt": {
+        "ru": "Музыка и жесты собирают игроков вместе",
+        "en": "Music and gestures bring players together"
+      },
+      "markers": [
+        {
+          "x": 63,
+          "y": 52,
+          "label": {
+            "ru": "Игра на инструменте становится общим действием",
+            "en": "Playing an instrument becomes a shared activity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте намерение жеста узнаваемым и подтверждайте реакцию.",
+        "en": "Make the intent of a gesture recognisable and acknowledge the response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sky: Children of the Light",
+        "url": "https://store.steampowered.com/app/2325290/"
+      }
+    ]
+  },
+  "dialogue--family-groups": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Групповые разговоры",
+      "en": "Group conversations"
+    },
+    "description": {
+      "ru": "Несколько собеседников обмениваются репликами, формируют коалиции и реагируют на распределение внимания.",
+      "en": "Several speakers exchange lines, form alliances and react to how attention is distributed."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-pentiment-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Pentiment",
+      "sourceUrl": "https://store.steampowered.com/app/1205520/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205520/ss_d6e8594853dc8a16033c3644a0fbb05909f2848b.1920x1080.jpg?t=1759874806",
+      "credit": "Obsidian Entertainment / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Несколько персонажей реагируют на одно событие",
+        "en": "Several characters respond to the same event"
+      },
+      "alt": {
+        "ru": "Несколько персонажей реагируют на одно событие",
+        "en": "Several characters respond to the same event"
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 29,
+          "label": {
+            "ru": "Имя привязывает реплику к участнику сцены",
+            "en": "A speaker’s name identifies the source of a line"
+          }
+        },
+        {
+          "x": 80,
+          "y": 50,
+          "label": {
+            "ru": "Другой участник реагирует собственной репликой",
+            "en": "Another participant responds with their own line"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятную связь между говорящим, репликой и адресатом.",
+        "en": "Keep the speaker, line and intended listener easy to identify."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pentiment",
+        "url": "https://store.steampowered.com/app/1205520/"
+      }
+    ]
+  },
+  "dialogue--family-multiplayer": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместные решения игроков",
+      "en": "Joint player decisions"
+    },
+    "description": {
+      "ru": "Участники совместно выбирают ответ или распределяют право решения, информацию и влияние на беседу.",
+      "en": "Several players contribute to a conversation or make a shared decision under explicit rules."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-as-dusk-falls-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "As Dusk Falls",
+      "sourceUrl": "https://store.steampowered.com/app/1341820/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1341820/ss_2765f4e56734c84608a874cb263d2f05675b715e.1920x1080.jpg?t=1718812917",
+      "credit": "INTERIOR/NIGHT / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Участники выбора и переопределение решения",
+        "en": "Participants and an override of the shared decision"
+      },
+      "alt": {
+        "ru": "Участники выбора и переопределение решения",
+        "en": "Participants and an override of the shared decision"
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 6,
+          "label": {
+            "ru": "May использует право переопределить выбор группы",
+            "en": "May uses an override on the group’s choice"
+          }
+        },
+        {
+          "x": 81,
+          "y": 46,
+          "label": {
+            "ru": "Вариант связан с отметками участников",
+            "en": "Player markers are attached to the available choices"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте правило общего решения и условия личного переопределения.",
+        "en": "Explain how the group decides and when an individual can override it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "As Dusk Falls",
+        "url": "https://store.steampowered.com/app/1341820/"
+      }
+    ]
+  },
+  "dialogue--family-channels": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Переписка и связь на расстоянии",
+      "en": "Messaging and remote communication"
+    },
+    "description": {
+      "ru": "Разговор проходит через сообщения и устройства, поэтому время доставки, формат и доступ к каналу влияют на решения.",
+      "en": "Messages, calls or other communication channels change access, timing and the context of a conversation."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-emily-is-away-02.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 180,
+        "y": 0,
+        "width": 1080,
+        "height": 750
+      },
+      "game": "Emily is Away",
+      "sourceUrl": "https://store.steampowered.com/app/417860/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/417860/ss_7318e7d1c250028664392d1fa59cf663a8340cce.1920x1080.jpg?t=1619107266",
+      "credit": "Kyle Seeley",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разговор через окно мессенджера",
+        "en": "Conversation through an instant messenger"
+      },
+      "alt": {
+        "ru": "Разговор через окно мессенджера",
+        "en": "Conversation through an instant messenger"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 31,
+          "label": {
+            "ru": "История сообщений сохраняет контекст переписки",
+            "en": "Message history preserves the context of the exchange"
+          }
+        },
+        {
+          "x": 47,
+          "y": 65,
+          "label": {
+            "ru": "Ответ выбирается внутри канала переписки",
+            "en": "The reply is chosen within the messaging channel"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Используйте задержки, историю и статус канала как часть общения.",
+        "en": "Use delays, history and channel status as part of the exchange."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Emily is Away",
+        "url": "https://store.steampowered.com/app/417860/"
+      }
+    ]
+  },
+  "dialogue--family-consequences": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Последствия разговора",
+      "en": "Consequences of the conversation"
+    },
+    "description": {
+      "ru": "Сказанное меняет доступные действия, обязательства, отношения и последующие события мира.",
+      "en": "A conversation changes actions, relationships, resources or world state, immediately or later."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_339bea90d419d56460d11343576be82b01a652c9.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Торг меняет стоимость предлагаемого зелья",
+        "en": "Negotiation changes the potion’s offered price"
+      },
+      "alt": {
+        "ru": "Торг меняет стоимость предлагаемого зелья",
+        "en": "Negotiation changes the potion’s offered price"
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 44,
+          "label": {
+            "ru": "Надбавка 20% отражается в текущей цене",
+            "en": "The 20% markup appears in the current price"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте результат разговора в изменившемся состоянии игры.",
+        "en": "Show the conversation’s result through a changed game state."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-failure": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Провал, повторение и пересмотр",
+      "en": "Failure, repetition and revision"
+    },
+    "description": {
+      "ru": "Ошибки и отказ собеседника создают условия повторной попытки, исправления позиции или принятия последствий.",
+      "en": "Errors or rejection create opportunities to retry, revise a position or accept the consequences."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_339bea90d419d56460d11343576be82b01a652c9.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Возражение покупателя во время торга",
+        "en": "A customer objects during negotiation"
+      },
+      "alt": {
+        "ru": "Возражение покупателя во время торга",
+        "en": "A customer objects during negotiation"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 28,
+          "label": {
+            "ru": "Покупатель считает предложенную цену завышенной",
+            "en": "The customer considers the proposed price too high"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отказ должен давать информацию для следующей попытки или другого решения.",
+        "en": "A refusal should inform another attempt or a different decision."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-minigames": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Диалог как отдельное испытание",
+      "en": "Dialogue as a standalone challenge"
+    },
+    "description": {
+      "ru": "Общение получает отдельные правила успеха: последовательность, ресурсы, время или точность ответа.",
+      "en": "Conversation follows a distinct challenge with its own sequences, resources, deadlines or response rules."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_f9b5015e5e7b0cc860e8985d3f9d773e6874cb57.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Карты, терпение и завершение хода в торге",
+        "en": "Cards, patience and turn endings structure negotiation"
+      },
+      "alt": {
+        "ru": "Карты, терпение и завершение хода в торге",
+        "en": "Cards, patience and turn endings structure negotiation"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 15,
+          "label": {
+            "ru": "Переговорная карта имеет стоимость и эффект",
+            "en": "A negotiation card has a cost and an effect"
+          }
+        },
+        {
+          "x": 92,
+          "y": 50,
+          "label": {
+            "ru": "Завершение хода тратит терпение; сделка закрывается отдельно",
+            "en": "Ending the turn costs patience; closing the deal is a separate action"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Правила миниигры должны поддерживать смысл разговора и цели сторон.",
+        "en": "Make the minigame’s rules support the conversation and both sides’ goals."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "dialogue--family-inner": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Внутренний диалог",
+      "en": "Inner dialogue"
+    },
+    "description": {
+      "ru": "Герой взаимодействует с собственными мыслями, внутренними голосами и конкурирующими мотивами.",
+      "en": "The hero interacts with their own thoughts, inner voices and competing motives."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-check.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_dec29c440fab2f7817d68c1380c019290eb1755e.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Навыки героя вступают во внутренний разговор",
+        "en": "The hero’s skills contribute to an inner conversation"
+      },
+      "alt": {
+        "ru": "Навыки героя вступают во внутренний разговор",
+        "en": "The hero’s skills contribute to an inner conversation"
+      },
+      "markers": [
+        {
+          "x": 78,
+          "y": 57,
+          "label": {
+            "ru": "Visual Calculus добавляет свой вывод",
+            "en": "Visual Calculus adds its own deduction"
+          }
+        }
+      ],
+      "crop": {
+        "x": 750,
+        "y": 180,
+        "width": 600,
+        "height": 500
+      }
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте голоса по мотивам и позиции, а не только по оформлению.",
+        "en": "Distinguish inner voices by motives and viewpoint as well as presentation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "dialogue--family-voice": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Голос как игровое действие",
+      "en": "Voice as a game action"
+    },
+    "description": {
+      "ru": "Голосовое исполнение, распознавание речи и особенности произнесения становятся частью действия игрока.",
+      "en": "Spoken performance, speech recognition or pronunciation becomes part of a player action."
+    },
+    "image": {
+      "src": "images/mechanics/duolingo-video-call.webp",
+      "width": 1400,
+      "height": 800,
+      "crop": {
+        "x": 525,
+        "y": 50,
+        "width": 735,
+        "height": 700
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://blog.duolingo.com/product-highlights/",
+      "originalUrl": "https://storage.ghost.io/c/7a/33/7a33d0f4-927d-4fe8-a6bf-96131b5e76d4/content/images/2025/12/EN-DuolingoProductYIR-Video-Call-1.png",
+      "credit": "Duolingo, Inc.; official screenshot comparison of Video Call with Lily",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Голосовой ответ по кнопке Tap to Speak",
+        "en": "A spoken reply through Tap to Speak"
+      },
+      "alt": {
+        "ru": "Голосовой ответ по кнопке Tap to Speak",
+        "en": "A spoken reply through Tap to Speak"
+      },
+      "markers": [
+        {
+          "x": 77,
+          "y": 84,
+          "label": {
+            "ru": "Микрофон принимает произнесённую реплику",
+            "en": "The microphone receives a spoken reply"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Подтверждайте начало записи и позволяйте повторить нераспознанный ответ.",
+        "en": "Confirm when recording starts and allow an unrecognised reply to be repeated."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://blog.duolingo.com/product-highlights/"
+      }
+    ]
+  },
+  "dialogue--family-etiquette": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Статус, этикет и ритуалы",
+      "en": "Status, etiquette and rituals"
+    },
+    "description": {
+      "ru": "Социальный статус, ритуалы и принятые формы обращения меняют доступность и смысл реплик.",
+      "en": "Social status, forms of address and rituals determine appropriate dialogue options and other characters’ reactions."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-pentiment-11.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 525,
+        "y": 225,
+        "width": 788,
+        "height": 488
+      },
+      "game": "Pentiment",
+      "sourceUrl": "https://store.steampowered.com/app/1205520/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205520/ss_88593d62ce96069e28d113c331e710be024ed221.1920x1080.jpg?t=1759874806",
+      "credit": "Obsidian Entertainment / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Обращение по титулу к барону в Pentiment",
+        "en": "Addressing a baron by title in Pentiment"
+      },
+      "alt": {
+        "ru": "Обращение по титулу к барону в Pentiment",
+        "en": "Addressing a baron by title in Pentiment"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 43,
+          "label": {
+            "ru": "Титул и форма приветствия отражают статус собеседника",
+            "en": "The title and greeting reflect the character’s social status"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Заранее показывайте социальные нормы и допустимые формы обращения.",
+        "en": "Establish social norms and appropriate forms of address in advance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pentiment",
+        "url": "https://store.steampowered.com/app/1205520/"
+      }
+    ]
+  },
+  "dialogue--family-agency": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Цели и самостоятельность NPC",
+      "en": "NPC Goals and Autonomy"
+    },
+    "description": {
+      "ru": "Собственные цели и состояние NPC определяют инициативу, выбор тем и отказ от предложенного разговора.",
+      "en": "An NPC pursues their own goals, sets limits and may refuse, redirect or end a conversation."
+    },
+    "image": {
+      "src": "images/mechanics/disco-elysium-dialogue.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 563,
+        "y": 38,
+        "width": 825,
+        "height": 712
+      },
+      "game": "Disco Elysium",
+      "sourceUrl": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/ss_23836438cd455287232be5ae9c4f48d5c488967b.1920x1080.jpg?t=1780913406",
+      "credit": "ZA/UM",
+      "rights": "© ZA/UM. All rights reserved.",
+      "caption": {
+        "ru": "Garte настаивает на оплате долга",
+        "en": "Garte insists on repayment"
+      },
+      "alt": {
+        "ru": "Garte настаивает на оплате долга",
+        "en": "Garte insists on repayment"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 50,
+          "label": {
+            "ru": "Собеседник возвращает разговор к собственной цели",
+            "en": "The other character returns to their own objective"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Пусть отказ и встречное требование NPC следуют из его интересов.",
+        "en": "Make NPC refusals and counter-demands follow their own interests."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Disco Elysium",
+        "url": "https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/"
+      }
+    ]
+  },
+  "dialogue--family-memory": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Память и история общения",
+      "en": "Memory and history of communication"
+    },
+    "description": {
+      "ru": "Система сохраняет сказанное и использует историю разговора для последующих реакций и проверки согласованности.",
+      "en": "The system retains earlier statements and uses conversation history for later reactions and consistency checks."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-pentiment-11.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 525,
+        "y": 225,
+        "width": 788,
+        "height": 488
+      },
+      "game": "Pentiment",
+      "sourceUrl": "https://store.steampowered.com/app/1205520/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1205520/ss_88593d62ce96069e28d113c331e710be024ed221.1920x1080.jpg?t=1759874806",
+      "credit": "Obsidian Entertainment / Xbox Game Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Gernot напоминает о предыдущей встрече",
+        "en": "Gernot recalls an earlier meeting"
+      },
+      "alt": {
+        "ru": "Gernot напоминает о предыдущей встрече",
+        "en": "Gernot recalls an earlier meeting"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 48,
+          "label": {
+            "ru": "Реплика прямо ссылается на прошлый визит",
+            "en": "The line explicitly refers to a previous visit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Храните значимые факты общения и проверяйте непротиворечивость новых реплик.",
+        "en": "Retain significant facts from conversations and check new lines for consistency."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pentiment",
+        "url": "https://store.steampowered.com/app/1205520/"
+      }
+    ]
+  },
+  "dialogue--family-reactive": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Системный подбор и генерация",
+      "en": "Rule-based selection and generation"
+    },
+    "description": {
+      "ru": "Правила подбирают или формируют реплики из состояния мира и персонажей; качество и границы генерации проверяют отдельно.",
+      "en": "Rules select or generate lines from world and character state; quality and generation boundaries require separate checks."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-vaudeville-01.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 488,
+        "y": 113,
+        "width": 952,
+        "height": 697
+      },
+      "game": "Vaudeville",
+      "sourceUrl": "https://store.steampowered.com/app/2240920/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2240920/ss_31ae0ee63bba90fbc7756f9f8351eee424406ff8.1920x1080.jpg?t=1770214371",
+      "credit": "Bumblebee Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Генерируемые ответы NPC в Vaudeville",
+        "en": "Generated NPC replies in Vaudeville"
+      },
+      "alt": {
+        "ru": "Генерируемые ответы NPC в Vaudeville",
+        "en": "Generated NPC replies in Vaudeville"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 77,
+          "label": {
+            "ru": "NPC формирует ответ в истории разговора",
+            "en": "The NPC generates a reply in the conversation history"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте допустимые факты и отделяйте текст ответа от игровых полномочий.",
+        "en": "Validate permitted facts and separate generated text from authority over game state."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Vaudeville",
+        "url": "https://store.steampowered.com/app/2240920/"
+      }
+    ]
+  },
+  "dialogue--family-accessibility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Доступность и управление чтением",
+      "en": "Accessibility and reading controls"
+    },
+    "description": {
+      "ru": "Настройки чтения и альтернативного ввода обеспечивают доступ к содержанию и управлению разговором.",
+      "en": "Reading controls and alternative inputs provide access to dialogue content and interaction."
+    },
+    "image": {
+      "src": "images/mechanics/duolingo-video-call.webp",
+      "width": 1400,
+      "height": 800,
+      "crop": {
+        "x": 905,
+        "y": 335,
+        "width": 350,
+        "height": 410
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://blog.duolingo.com/product-highlights/",
+      "originalUrl": "https://storage.ghost.io/c/7a/33/7a33d0f4-927d-4fe8-a6bf-96131b5e76d4/content/images/2025/12/EN-DuolingoProductYIR-Video-Call-1.png",
+      "credit": "Duolingo, Inc.; official screenshot comparison of Video Call with Lily",
+      "rights": "Screenshots © their respective rights holders. Provided in the official guide or product article; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Кнопка субтитров в голосовом разговоре",
+        "en": "A captions control in a voice conversation"
+      },
+      "alt": {
+        "ru": "Кнопка субтитров в голосовом разговоре",
+        "en": "A captions control in a voice conversation"
+      },
+      "markers": [
+        {
+          "x": 85,
+          "y": 84,
+          "label": {
+            "ru": "CC позволяет подключить текст к устной реплике",
+            "en": "CC provides text alongside the spoken dialogue"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Субтитры и альтернативный ввод должны сохранять смысл и управление.",
+        "en": "Captions and alternative inputs should preserve meaning and control."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://blog.duolingo.com/product-highlights/"
+      }
+    ]
   }
 }

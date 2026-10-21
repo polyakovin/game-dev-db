@@ -180,3 +180,24 @@ and Nobody Explodes. The selected VR screenshot shows the game’s virtual hands
 it is not a hardware mockup. The native 640px Portal screenshot is not enlarged.
 All derivatives retain their exact original source URLs and credits, use the
 same bounded WebP budget, and remain excluded from MIT and CC BY 4.0.
+
+`dialogue-*.webp` adds inspected publisher-distributed Steam screenshots from
+Potionomics, AI Dungeon, Vaudeville, Oblivion, Phoenix Wright: Ace Attorney
+Trilogy, Sky: Children of the Light, Emily is Away, Pentiment, As Dusk Falls and
+Chants of Sennaar. Each card keeps the exact original image URL and credits.
+The AI Dungeon illustration is an actual screenshot of its story interface;
+the portal did not generate its in-game artwork. As Dusk Falls shows the active
+group-choice override rather than a simple majority vote.
+
+`la-noire-*-manual.webp` retains source-provided screenshot comparisons and the
+in-game casebook from PDF pages 9 and 7 of the [official L.A. Noire PC manual](https://store.steampowered.com/manual/110800/).
+Credit: Team Bondi / Rockstar Games. Page crops retain the relevant gameplay
+context; facial reactions are scripted game cues and are not presented as proof
+of lying outside the game.
+
+`duolingo-video-call.webp` retains the official three-screen comparison from
+Duolingo's [product highlights](https://blog.duolingo.com/product-highlights/).
+Credit: Duolingo, Inc. Separate cards frame the call controls, push-to-talk reply
+and captions control. The source supplied the comparison; the portal adds only
+HTML markers and crops. All these files follow the same 1440px / 250KiB WebP
+budget, retain third-party rights and are excluded from MIT and CC BY 4.0.
