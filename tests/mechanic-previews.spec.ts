@@ -6,6 +6,7 @@ const base = '/game-dev-db';
 const id = 'shared-family-02';
 const route = (lang: string) => `${base}/${lang}/knowledge/mechanic/${id}/`;
 const viewports = [
+  { width: 298, height: 496 },
   { width: 319, height: 849 },
   { width: 320, height: 500 },
   { width: 375, height: 667 },
