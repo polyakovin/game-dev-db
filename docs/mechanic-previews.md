@@ -13,6 +13,11 @@ Optional `image.crop` records a rectangle in original screenshot pixels. It remo
 unused white margins while retaining the scene, clue and target strip. The PNG
 stays unchanged; HTML remaps percentage markers into the cropped frame. Only the
 image is framed with clipping; text and navigation are never clipped.
+Numbered markers are buttons with localized tooltips using the existing marker
+labels. Pointer hover, keyboard focus and touch open the hint; Escape, pointer
+exit or an outside tap dismiss it. The tooltip uses the browser's popover layer
+to escape image cropping and is positioned inside the viewport without changing
+page dimensions. The visible legend and native title remain the no-JS fallback.
 `src/lib/mechanic-previews.mjs` localizes it once; the knowledge builder exposes it
 as optional `attributes.preview`, uses the description for `summary` and includes
 example sources in the source registry. Existing taxonomy sections stay intact.

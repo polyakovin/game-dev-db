@@ -49,13 +49,26 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
             fetchpriority="high"
           />
           {image.markers.map((marker, i) => (
-            <span
-              class="preview-marker"
-              style={`left:clamp(16px,${(((marker.x / 100) * image.width - crop.x) / crop.width) * 100}%,calc(100% - 16px));top:clamp(16px,${(((marker.y / 100) * image.height - crop.y) / crop.height) * 100}%,calc(100% - 16px))`}
-              aria-hidden="true"
-            >
-              {i + 1}
-            </span>
+            <>
+              <button
+                type="button"
+                class="preview-marker"
+                style={`left:clamp(16px,${(((marker.x / 100) * image.width - crop.x) / crop.width) * 100}%,calc(100% - 16px));top:clamp(16px,${(((marker.y / 100) * image.height - crop.y) / crop.height) * 100}%,calc(100% - 16px))`}
+                aria-label={`${ru ? 'Метка' : 'Marker'} ${i + 1}`}
+                aria-describedby={`mechanic-tooltip-${i + 1}`}
+                title={marker.label}
+              >
+                {i + 1}
+              </button>
+              <span
+                id={`mechanic-tooltip-${i + 1}`}
+                class="preview-tooltip"
+                role="tooltip"
+                popover="manual"
+              >
+                {marker.label}
+              </span>
+            </>
           ))}
         </div>
       </div>
@@ -109,6 +122,9 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     </nav>
   </footer>
 </article>
+<script>
+  import '../scripts/mechanic-tooltips';
+</script>
 
 <style>
   .mechanic-preview {
@@ -202,10 +218,30 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
+    padding: 0;
+    cursor: help;
     font:
       600 clamp(10px, 1vw, 14px) 'IBM Plex Mono',
       monospace;
     box-shadow: 0 1px 5px #0003;
+  }
+  .preview-tooltip {
+    position: fixed;
+    inset: auto;
+    margin: 0;
+    width: max-content;
+    max-width: min(260px, calc(100vw - 24px));
+    padding: 8px 10px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--ink);
+    color: var(--on-ink);
+    box-shadow: 0 4px 16px #0003;
+    font:
+      13px/1.4 'Golos Text Variable',
+      system-ui,
+      sans-serif;
+    overflow-wrap: anywhere;
   }
   figcaption {
     flex: none;
