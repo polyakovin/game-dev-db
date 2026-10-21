@@ -103,3 +103,14 @@ Far Cry 5 rather than an ambiguously identified Wolfenstein 3D modification.
 in Microsoft Learn’s [Introduction to Commands](https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable).
 Minecraft imagery remains © Mojang AB / Microsoft; it is excluded from the
 portal’s MIT and CC BY 4.0 licenses. Retrieved 2026-10-22.
+
+`world-*.webp` adds inspected hazard, driving and event examples from the
+corresponding Game Mechanics pattern pages. Credits include Valve, Techland,
+Konami, People Can Fly, Greylock, Monolith, Teyon, DICE, Crytek, id Software,
+Ubisoft, Rockstar, Core Design, Creative Assembly, Red Barrels,
+EA Redwood Shores and Crystal Dynamics. Metadata retains each exact image or
+clip URL and the frame time where applicable. QuietGamer, GRAVITY BOOTS,
+MKIceAndFire and SHIRRAKO watermarks remain visible and are credited as shown.
+The decorative vending-machine example uses Outlast rather than implying that
+Deus Ex’s machines necessarily lack purchase interactions. The brief F.E.A.R. 2
+apparition is framed more closely while retaining the hospital corridor context.

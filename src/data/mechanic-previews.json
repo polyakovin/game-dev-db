@@ -11594,5 +11594,1629 @@
         "url": "https://learn.microsoft.com/en-us/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable"
       }
     ]
+  },
+  "game-mechanics--gm-toxic-liquids": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Токсичная жидкость",
+      "en": "Toxic liquid"
+    },
+    "description": {
+      "ru": "Опасная жидкость наносит урон или другой вред при контакте.",
+      "en": "Contact with a hazardous liquid applies damage or another harmful effect."
+    },
+    "image": {
+      "src": "images/mechanics/world-toxic-liquids.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Half-Life 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/toxic-liquids",
+      "originalUrl": "https://cdn.gamemechanics.org/half_life_2_radioactive-sludge.jpg",
+      "credit": "Valve; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Загрязнённая вода в бетонном канале",
+        "en": "Contaminated water in a concrete channel"
+      },
+      "alt": {
+        "ru": "Half-Life 2: Загрязнённая вода в бетонном канале.",
+        "en": "Half-Life 2: Contaminated water in a concrete channel."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 58,
+          "label": {
+            "ru": "Опасная жидкость на маршруте",
+            "en": "Hazardous liquid along the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте опасность до контакта и показывайте безопасный путь.",
+        "en": "Signal the hazard before contact and show a safe route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Half-Life 2",
+        "url": "https://gamemechanics.org/patterns/toxic-liquids"
+      }
+    ]
+  },
+  "game-mechanics--gm-electrifying-water": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Электризация воды",
+      "en": "Electrify water"
+    },
+    "description": {
+      "ru": "Электрический источник превращает воду в область поражения.",
+      "en": "An electrical source turns water into a damaging area."
+    },
+    "image": {
+      "src": "images/mechanics/world-electrifying-water.webp",
+      "width": 548,
+      "height": 298,
+      "game": "Dying Light",
+      "sourceUrl": "https://gamemechanics.org/patterns/electrifying-water",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/dying_light_electrify_zombies.webm",
+      "sourceFrameSeconds": 4.38,
+      "credit": "Techland; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разряды поражают врагов в луже",
+        "en": "Electrical arcs hit enemies in a puddle"
+      },
+      "alt": {
+        "ru": "Dying Light: Разряды поражают врагов в луже.",
+        "en": "Dying Light: Electrical arcs hit enemies in a puddle."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 60,
+          "label": {
+            "ru": "Разряды распространяются по мокрому участку",
+            "en": "Discharges spread across the wet area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте границу поражения и отключение тока заметными.",
+        "en": "Make the damage boundary and power-off state clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dying Light",
+        "url": "https://gamemechanics.org/patterns/electrifying-water"
+      }
+    ]
+  },
+  "game-mechanics--gm-sinking-in-swamp": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Погружение в болото",
+      "en": "Sink in a swamp"
+    },
+    "description": {
+      "ru": "Топкая поверхность замедляет персонажа или затягивает его вниз.",
+      "en": "Soft ground slows the character or draws them downward."
+    },
+    "image": {
+      "src": "images/mechanics/world-sinking-in-swamp.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Metal Gear Solid 3: Snake Eater",
+      "sourceUrl": "https://gamemechanics.org/patterns/sinking-in-swamp",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/metalgearsolid_swamp.webm",
+      "sourceFrameSeconds": 2.95,
+      "credit": "Konami; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Снейк погружается в топкую почву",
+        "en": "Snake sinks into soft ground"
+      },
+      "alt": {
+        "ru": "Metal Gear Solid 3: Snake Eater: Снейк погружается в топкую почву.",
+        "en": "Metal Gear Solid 3: Snake Eater: Snake sinks into soft ground."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 54,
+          "label": {
+            "ru": "Герой постепенно скрывается в трясине",
+            "en": "The hero gradually disappears into the mire"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предупреждайте о погружении и давайте понятный способ выбраться.",
+        "en": "Warn of sinking and provide an understandable way to escape."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metal Gear Solid 3: Snake Eater",
+        "url": "https://gamemechanics.org/patterns/sinking-in-swamp"
+      }
+    ]
+  },
+  "game-mechanics--gm-feeding-enemies-to-creatures": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Существа против врагов",
+      "en": "Use creatures against enemies"
+    },
+    "description": {
+      "ru": "Игрок подводит противника под атаку опасного существа.",
+      "en": "The player exposes an enemy to an attacking creature."
+    },
+    "image": {
+      "src": "images/mechanics/world-feeding-enemies-to-creatures.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Bulletstorm",
+      "sourceUrl": "https://gamemechanics.org/patterns/feeding-enemies-to-creatures",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/bulletstorm_feeder.webm",
+      "sourceFrameSeconds": 0.6,
+      "credit": "People Can Fly / Epic Games; frame from clip via GameMechanics.org; visible source watermark: GRAVITY BOOTS",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Врага бросают к хищному растению",
+        "en": "An enemy is thrown toward a carnivorous plant"
+      },
+      "alt": {
+        "ru": "Bulletstorm: Врага бросают к хищному растению.",
+        "en": "Bulletstorm: An enemy is thrown toward a carnivorous plant."
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 48,
+          "label": {
+            "ru": "Враг в полёте после удара",
+            "en": "Enemy airborne after the hit"
+          }
+        },
+        {
+          "x": 45,
+          "y": 25,
+          "label": {
+            "ru": "Хищное растение рядом с целью",
+            "en": "Carnivorous plant beside the target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте связь между опасным существом, маршрутом и противником.",
+        "en": "Make the relationship between creature, route and enemy visible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bulletstorm",
+        "url": "https://gamemechanics.org/patterns/feeding-enemies-to-creatures"
+      }
+    ]
+  },
+  "game-mechanics--gm-destructible-floors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушаемый пол",
+      "en": "Destructible floor"
+    },
+    "description": {
+      "ru": "Разрушение перекрытия создаёт отверстие между уровнями.",
+      "en": "Breaking a floor creates an opening between elevations."
+    },
+    "image": {
+      "src": "images/mechanics/world-destructible-floors.webp",
+      "width": 700,
+      "height": 300,
+      "game": "Severed Steel",
+      "sourceUrl": "https://gamemechanics.org/patterns/destructible-floors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/severed_steel_destructible_floor.webm",
+      "sourceFrameSeconds": 0.89,
+      "credit": "Greylock Studio; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пробоина открывает нижний уровень",
+        "en": "A hole exposes the lower level"
+      },
+      "alt": {
+        "ru": "Severed Steel: Пробоина открывает нижний уровень.",
+        "en": "Severed Steel: A hole exposes the lower level."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 77,
+          "label": {
+            "ru": "Проход сквозь разрушенное перекрытие",
+            "en": "Opening through the destroyed floor"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте изменение маршрутов и видимости между этажами.",
+        "en": "Account for changed routes and sightlines between floors."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Severed Steel",
+        "url": "https://gamemechanics.org/patterns/destructible-floors"
+      }
+    ]
+  },
+  "game-mechanics--gm-force-opening-doors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Силовое открывание двери",
+      "en": "Force a door open"
+    },
+    "description": {
+      "ru": "Персонаж выбивает или раздвигает дверь силовым действием.",
+      "en": "The character forces a door open through physical exertion."
+    },
+    "image": {
+      "src": "images/mechanics/world-force-opening-doors.webp",
+      "width": 600,
+      "height": 334,
+      "game": "F.E.A.R.",
+      "sourceUrl": "https://gamemechanics.org/patterns/force-opening-doors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_door.webm",
+      "sourceFrameSeconds": 1.96,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Створка летит внутрь комнаты после удара",
+        "en": "A door panel flies into the room after a kick"
+      },
+      "alt": {
+        "ru": "F.E.A.R.: Створка летит внутрь комнаты после удара.",
+        "en": "F.E.A.R.: A door panel flies into the room after a kick."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 42,
+          "label": {
+            "ru": "Выбитая створка освобождает проход",
+            "en": "The displaced panel clears the passage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте отклик двери с силой и направлением действия героя.",
+        "en": "Match the door’s response to the force and direction of the hero’s action."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R.",
+        "url": "https://gamemechanics.org/patterns/force-opening-doors"
+      }
+    ]
+  },
+  "game-mechanics--gm-throwing-objects": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бросок предмета",
+      "en": "Throw an object"
+    },
+    "description": {
+      "ru": "Игрок поднимает объект и задаёт ему траекторию броска.",
+      "en": "The player picks up an object and launches it along a thrown trajectory."
+    },
+    "image": {
+      "src": "images/mechanics/world-throwing-objects.webp",
+      "width": 1326,
+      "height": 736,
+      "game": "RoboCop: Rogue City",
+      "sourceUrl": "https://gamemechanics.org/patterns/throwing-objects",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_throw_monitor.webm",
+      "sourceFrameSeconds": 0.82,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Робокоп держит монитор перед броском",
+        "en": "RoboCop holds a monitor before throwing it"
+      },
+      "alt": {
+        "ru": "RoboCop: Rogue City: Робокоп держит монитор перед броском.",
+        "en": "RoboCop: Rogue City: RoboCop holds a monitor before throwing it."
+      },
+      "markers": [
+        {
+          "x": 75,
+          "y": 65,
+          "label": {
+            "ru": "Поднятый монитор как метательный предмет",
+            "en": "The lifted monitor as a throwable object"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "До броска показывайте направление и допустимую зону попадания.",
+        "en": "Preview direction and the valid target area before throwing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City",
+        "url": "https://gamemechanics.org/patterns/throwing-objects"
+      }
+    ]
+  },
+  "game-mechanics--gm-chipping-concrete": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сколы от выстрелов",
+      "en": "Surface chipping"
+    },
+    "description": {
+      "ru": "Попадания отделяют мелкие части поверхности вместо одной плоской отметки.",
+      "en": "Impacts remove small surface fragments rather than leaving only flat marks."
+    },
+    "image": {
+      "src": "images/mechanics/world-chipping-concrete.webp",
+      "width": 400,
+      "height": 276,
+      "game": "Battlefield 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/chipping-concrete",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/battlefield_3_tiles.webm",
+      "sourceFrameSeconds": 8.23,
+      "credit": "DICE / Electronic Arts; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Облицовка колонны осыпается под огнём",
+        "en": "Column cladding breaks away under fire"
+      },
+      "alt": {
+        "ru": "Battlefield 3: Облицовка колонны осыпается под огнём.",
+        "en": "Battlefield 3: Column cladding breaks away under fire."
+      },
+      "markers": [
+        {
+          "x": 36,
+          "y": 37,
+          "label": {
+            "ru": "Отлетевшие куски облицовки",
+            "en": "Detached cladding fragments"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте различие между мелкими сколами и разрушением опоры.",
+        "en": "Distinguish small chips from destruction of the supporting structure."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Battlefield 3",
+        "url": "https://gamemechanics.org/patterns/chipping-concrete"
+      }
+    ]
+  },
+  "game-mechanics--gm-cutting-down-trees-with-bullets": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Деревья падают от выстрелов",
+      "en": "Fell trees with gunfire"
+    },
+    "description": {
+      "ru": "Достаточное повреждение ствола приводит к падению дерева.",
+      "en": "Sufficient gunfire damage to a trunk makes a tree fall."
+    },
+    "image": {
+      "src": "images/mechanics/world-cutting-down-trees-with-bullets.webp",
+      "width": 460,
+      "height": 282,
+      "game": "Crysis",
+      "sourceUrl": "https://gamemechanics.org/patterns/cutting-down-trees-with-bullets",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/crysis_forest.webm",
+      "sourceFrameSeconds": 1.3,
+      "credit": "Crytek; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Обстрел ствола пальмы",
+        "en": "Shooting a palm trunk"
+      },
+      "alt": {
+        "ru": "В Crysis прицел направлен на ствол пальмы; вокруг места попадания видны пыль и искры.",
+        "en": "The Crysis sight is aimed at a palm trunk, with dust and sparks around the impact point."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 40,
+          "label": {
+            "ru": "Попадания повреждают ствол дерева",
+            "en": "Hits damage the tree trunk"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте падение дерева, столкновения и изменение доступных путей.",
+        "en": "Check falling-tree collisions and changes to available routes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crysis",
+        "url": "https://gamemechanics.org/patterns/cutting-down-trees-with-bullets"
+      }
+    ]
+  },
+  "game-mechanics--gm-cloth-physics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Физика ткани",
+      "en": "Cloth physics"
+    },
+    "description": {
+      "ru": "Гибкий материал деформируется под действием движения и внешних сил.",
+      "en": "Flexible material deforms in response to movement and external forces."
+    },
+    "image": {
+      "src": "images/mechanics/world-cloth-physics.webp",
+      "width": 698,
+      "height": 546,
+      "game": "Return to Castle Wolfenstein",
+      "sourceUrl": "https://gamemechanics.org/patterns/cloth-physics",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_curtains.webm",
+      "sourceFrameSeconds": 1.13,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Занавеска изгибается возле окна",
+        "en": "A curtain bends beside a window"
+      },
+      "alt": {
+        "ru": "Return to Castle Wolfenstein: Занавеска изгибается возле окна.",
+        "en": "Return to Castle Wolfenstein: A curtain bends beside a window."
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 40,
+          "label": {
+            "ru": "Гибкая ткань у оконной рамы",
+            "en": "Flexible fabric beside the window frame"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте сложность симуляции и проверяйте пересечения с окружением.",
+        "en": "Bound simulation complexity and check intersections with the environment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein",
+        "url": "https://gamemechanics.org/patterns/cloth-physics"
+      }
+    ]
+  },
+  "game-mechanics--gm-driving-cars": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вождение автомобиля",
+      "en": "Drive a car"
+    },
+    "description": {
+      "ru": "Игрок управляет движением дорожного транспорта.",
+      "en": "The player controls a road vehicle's movement."
+    },
+    "image": {
+      "src": "images/mechanics/world-driving-cars.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Far Cry 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/driving-cars",
+      "originalUrl": "https://cdn.gamemechanics.org/far-cry-3-jeep.png",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Вид из салона на прибрежную дорогу",
+        "en": "An interior view of a coastal road"
+      },
+      "alt": {
+        "ru": "Far Cry 3: Вид из салона на прибрежную дорогу.",
+        "en": "Far Cry 3: An interior view of a coastal road."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 85,
+          "label": {
+            "ru": "Рука на руле в виде из салона",
+            "en": "Hand on the wheel in the interior view"
+          }
+        },
+        {
+          "x": 66,
+          "y": 64,
+          "label": {
+            "ru": "Дорога задаёт направление движения",
+            "en": "The road establishes the driving direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте обзор, скорость и читаемость ближайших поворотов.",
+        "en": "Balance visibility, speed and readability of approaching turns."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 3",
+        "url": "https://gamemechanics.org/patterns/driving-cars"
+      }
+    ]
+  },
+  "game-mechanics--gm-stealing-cars": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Угон припаркованной машины",
+      "en": "Steal a parked car"
+    },
+    "description": {
+      "ru": "Игрок получает доступ к чужой машине без находящегося внутри водителя.",
+      "en": "The player takes an unoccupied vehicle belonging to someone else."
+    },
+    "image": {
+      "src": "images/mechanics/world-stealing-cars.webp",
+      "width": 500,
+      "height": 278,
+      "game": "Grand Theft Auto V",
+      "sourceUrl": "https://gamemechanics.org/patterns/stealing-cars",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/gtav_stealing_car.webm",
+      "sourceFrameSeconds": 5,
+      "credit": "Rockstar North / Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой садится в стоящий красный автомобиль",
+        "en": "The character enters a parked red car"
+      },
+      "alt": {
+        "ru": "Grand Theft Auto V: Герой садится в стоящий красный автомобиль.",
+        "en": "Grand Theft Auto V: The character enters a parked red car."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 58,
+          "label": {
+            "ru": "Открытая дверь припаркованной машины",
+            "en": "The parked car’s open door"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Явно различайте доступный транспорт и декоративные машины.",
+        "en": "Clearly distinguish usable vehicles from decorative cars."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grand Theft Auto V",
+        "url": "https://gamemechanics.org/patterns/stealing-cars"
+      }
+    ]
+  },
+  "game-mechanics--gm-carjacking": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Захват машины с водителем",
+      "en": "Carjacking"
+    },
+    "description": {
+      "ru": "Игрок отбирает транспорт у находящегося внутри персонажа.",
+      "en": "The player takes a vehicle from its current occupant."
+    },
+    "image": {
+      "src": "images/mechanics/world-carjacking.webp",
+      "width": 400,
+      "height": 226,
+      "game": "Grand Theft Auto III",
+      "sourceUrl": "https://gamemechanics.org/patterns/carjacking",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/gta_iii_carjacking.webm",
+      "sourceFrameSeconds": 1.42,
+      "credit": "DMA Design / Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Водителя вытаскивают из жёлтого такси",
+        "en": "A driver is pulled from a yellow taxi"
+      },
+      "alt": {
+        "ru": "Grand Theft Auto III: Водителя вытаскивают из жёлтого такси.",
+        "en": "Grand Theft Auto III: A driver is pulled from a yellow taxi."
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 62,
+          "label": {
+            "ru": "Конфликт у занятого водительского места",
+            "en": "A struggle at the occupied driver’s seat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте переход управления и реакцию покидающего машину водителя.",
+        "en": "Show control transferring and the displaced driver’s reaction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grand Theft Auto III",
+        "url": "https://gamemechanics.org/patterns/carjacking"
+      }
+    ]
+  },
+  "game-mechanics--gm-diegetic-vehicle-repair": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Видимый ремонт машины",
+      "en": "In-world vehicle repair"
+    },
+    "description": {
+      "ru": "Персонаж выполняет видимое действие ремонта возле машины.",
+      "en": "The character performs a visible repair action beside a vehicle."
+    },
+    "image": {
+      "src": "images/mechanics/world-diegetic-vehicle-repair.webp",
+      "width": 500,
+      "height": 274,
+      "game": "Far Cry 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/diegetic-vehicle-repair",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_2_fixing_car.webm",
+      "sourceFrameSeconds": 3.92,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой работает ключом под открытым капотом",
+        "en": "The hero uses a wrench beneath an open hood"
+      },
+      "alt": {
+        "ru": "Far Cry 2: Герой работает ключом под открытым капотом.",
+        "en": "Far Cry 2: The hero uses a wrench beneath an open hood."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 57,
+          "label": {
+            "ru": "Руки и инструмент внутри моторного отсека",
+            "en": "Hands and tool inside the engine bay"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте завершение видимого ремонта с восстановлением работы машины.",
+        "en": "Connect the visible repair’s completion to restored vehicle function."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 2",
+        "url": "https://gamemechanics.org/patterns/diegetic-vehicle-repair"
+      }
+    ]
+  },
+  "game-mechanics--gm-navigating-rapids": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Преодоление порогов",
+      "en": "Navigate rapids"
+    },
+    "description": {
+      "ru": "На быстром течении игрок проводит судно между препятствиями.",
+      "en": "The player steers a craft through obstacles in fast-flowing water."
+    },
+    "image": {
+      "src": "images/mechanics/world-navigating-rapids.webp",
+      "width": 418,
+      "height": 234,
+      "game": "Tomb Raider III",
+      "sourceUrl": "https://gamemechanics.org/patterns/navigating-rapids",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_3_whitewater_kayak.webm",
+      "sourceFrameSeconds": 1.71,
+      "credit": "Core Design; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Лара ведёт байдарку по бурной реке в каньоне",
+        "en": "Lara steers a kayak along a rushing canyon river"
+      },
+      "alt": {
+        "ru": "Tomb Raider III: Лара ведёт байдарку по бурной реке в каньоне.",
+        "en": "Tomb Raider III: Lara steers a kayak along a rushing canyon river."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 55,
+          "label": {
+            "ru": "Байдарка на быстром течении",
+            "en": "Kayak in the fast current"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте заранее прочитать поток, препятствия и место следующего поворота.",
+        "en": "Make current, obstacles and the next turn readable in advance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider III",
+        "url": "https://gamemechanics.org/patterns/navigating-rapids"
+      }
+    ]
+  },
+  "game-mechanics--gm-taxi-missions": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Работа таксистом",
+      "en": "Taxi missions"
+    },
+    "description": {
+      "ru": "Игрок перевозит пассажиров к заданным пунктам за награду.",
+      "en": "The player transports passengers to requested destinations for rewards."
+    },
+    "image": {
+      "src": "images/mechanics/world-taxi-missions.webp",
+      "width": 458,
+      "height": 262,
+      "game": "Grand Theft Auto: San Andreas",
+      "sourceUrl": "https://gamemechanics.org/patterns/taxi-missions",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/gta_sa_taxi.webm",
+      "sourceFrameSeconds": 20.39,
+      "credit": "Rockstar North / Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пассажир выходит после доставки; показана награда",
+        "en": "A passenger exits after delivery, with the reward displayed"
+      },
+      "alt": {
+        "ru": "Grand Theft Auto: San Andreas: Пассажир выходит после доставки; показана награда.",
+        "en": "Grand Theft Auto: San Andreas: A passenger exits after delivery, with the reward displayed."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 24,
+          "label": {
+            "ru": "Награда за доставку и скорость",
+            "en": "Reward for delivery and speed"
+          }
+        },
+        {
+          "x": 42,
+          "y": 75,
+          "label": {
+            "ru": "Пассажир покидает такси",
+            "en": "Passenger leaving the taxi"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте цель поездки, время и расчёт награды без лишних окон.",
+        "en": "Show destination, time and reward calculation without extra dialogs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grand Theft Auto: San Andreas",
+        "url": "https://gamemechanics.org/patterns/taxi-missions"
+      }
+    ]
+  },
+  "game-mechanics--gm-vehicle-destruction-debris": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обломки транспорта",
+      "en": "Vehicle destruction debris"
+    },
+    "description": {
+      "ru": "Разрушение машины отделяет и разбрасывает части её конструкции.",
+      "en": "Vehicle destruction detaches and scatters structural pieces."
+    },
+    "image": {
+      "src": "images/mechanics/world-vehicle-destruction-debris.webp",
+      "width": 598,
+      "height": 372,
+      "game": "Far Cry 5",
+      "sourceUrl": "https://gamemechanics.org/patterns/vehicle-destruction-debris",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_5_detonate_truck.webm",
+      "sourceFrameSeconds": 1.31,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "От взорвавшейся машины разлетаются детали",
+        "en": "Parts scatter from an exploding vehicle"
+      },
+      "alt": {
+        "ru": "Far Cry 5: От взорвавшейся машины разлетаются детали.",
+        "en": "Far Cry 5: Parts scatter from an exploding vehicle."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 52,
+          "label": {
+            "ru": "Отдельная деталь в полёте",
+            "en": "A detached part in flight"
+          }
+        },
+        {
+          "x": 45,
+          "y": 29,
+          "label": {
+            "ru": "Основная область разрушения",
+            "en": "The main destruction area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте время жизни обломков и их влияние на движение игрока.",
+        "en": "Limit debris lifetime and its effect on player movement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 5",
+        "url": "https://gamemechanics.org/patterns/vehicle-destruction-debris"
+      }
+    ]
+  },
+  "game-mechanics--gm-wreck-model-replacement": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Замена машины моделью обломков",
+      "en": "Replace a vehicle with a wreck"
+    },
+    "description": {
+      "ru": "После уничтожения исходная машина заменяется подготовленной разрушенной моделью.",
+      "en": "A prepared wreck model replaces a vehicle after destruction."
+    },
+    "image": {
+      "src": "images/mechanics/world-wreck-model-replacement.webp",
+      "width": 568,
+      "height": 354,
+      "game": "Tom Clancy’s Ghost Recon: Breakpoint",
+      "sourceUrl": "https://gamemechanics.org/patterns/wreck-model-replacement",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/ghost_recon_breakpoint_exploding_sports_car_s.webm",
+      "sourceFrameSeconds": 4.78,
+      "credit": "Ubisoft Paris; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "После взрыва остаётся обгоревший кузов",
+        "en": "A charred body remains after the explosion"
+      },
+      "alt": {
+        "ru": "Tom Clancy’s Ghost Recon: Breakpoint: После взрыва остаётся обгоревший кузов.",
+        "en": "Tom Clancy’s Ghost Recon: Breakpoint: A charred body remains after the explosion."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 62,
+          "label": {
+            "ru": "Разрушенный вариант кузова",
+            "en": "The wrecked version of the vehicle body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте положение, габариты и важные столкновения при замене модели.",
+        "en": "Preserve position, dimensions and important collisions when replacing the model."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Ghost Recon: Breakpoint",
+        "url": "https://gamemechanics.org/patterns/wreck-model-replacement"
+      }
+    ]
+  },
+  "game-mechanics--gm-running-npcs-over": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Столкновение машины с NPC",
+      "en": "Run over NPCs"
+    },
+    "description": {
+      "ru": "Движущийся транспорт поражает персонажей при столкновении.",
+      "en": "A moving vehicle damages characters on collision."
+    },
+    "image": {
+      "src": "images/mechanics/world-running-npcs-over.webp",
+      "width": 800,
+      "height": 446,
+      "game": "Tomb Raider: The Last Revelation",
+      "sourceUrl": "https://gamemechanics.org/patterns/running-npcs-over",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_4_running_over.webm",
+      "sourceFrameSeconds": 2,
+      "credit": "Core Design; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Персонаж отброшен после контакта с джипом",
+        "en": "A character is thrown after contact with a jeep"
+      },
+      "alt": {
+        "ru": "Tomb Raider: The Last Revelation: Персонаж отброшен после контакта с джипом.",
+        "en": "Tomb Raider: The Last Revelation: A character is thrown after contact with a jeep."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 84,
+          "label": {
+            "ru": "Персонаж после столкновения",
+            "en": "Character after the collision"
+          }
+        },
+        {
+          "x": 55,
+          "y": 50,
+          "label": {
+            "ru": "Движущийся джип на маршруте",
+            "en": "Moving jeep along the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте реакцию с фактической скоростью и направлением столкновения.",
+        "en": "Match the reaction to actual collision speed and direction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider: The Last Revelation",
+        "url": "https://gamemechanics.org/patterns/running-npcs-over"
+      }
+    ]
+  },
+  "game-mechanics--gm-natural-world-boundaries": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Естественные границы мира",
+      "en": "Natural world boundaries"
+    },
+    "description": {
+      "ru": "География и правдоподобные препятствия ограничивают доступное пространство.",
+      "en": "Geography and plausible obstacles delimit accessible space."
+    },
+    "image": {
+      "src": "images/mechanics/world-natural-world-boundaries.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Far Cry Primal",
+      "sourceUrl": "https://gamemechanics.org/patterns/natural-world-boundaries",
+      "originalUrl": "https://cdn.gamemechanics.org/far_cry_primal_map_edge.jpg",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org; visible source watermark: QuietGamer",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Крутые скалы ограничивают доступный маршрут",
+        "en": "Steep cliffs bound the accessible route"
+      },
+      "alt": {
+        "ru": "Far Cry Primal: Крутые скалы ограничивают доступный маршрут.",
+        "en": "Far Cry Primal: Steep cliffs bound the accessible route."
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 36,
+          "label": {
+            "ru": "Скальная стена как правдоподобная граница",
+            "en": "Rock face as a plausible boundary"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не обещайте проходимость формой поверхности, если маршрут закрыт.",
+        "en": "Avoid suggesting a traversable surface when the route is blocked."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry Primal",
+        "url": "https://gamemechanics.org/patterns/natural-world-boundaries"
+      }
+    ]
+  },
+  "game-mechanics--gm-readable-notes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Читаемая записка",
+      "en": "Readable note"
+    },
+    "description": {
+      "ru": "Записка даёт сведения о мире, событиях или решении задачи. Игрок открывает документ в окружении и читает его в удобном виде.",
+      "en": "A note provides information about the world, events or a puzzle. The player opens a document in the environment and reads it in a suitable view."
+    },
+    "image": {
+      "src": "images/mechanics/world-readable-notes.webp",
+      "width": 800,
+      "height": 442,
+      "game": "Return to Castle Wolfenstein",
+      "sourceUrl": "https://gamemechanics.org/patterns/readable-notes",
+      "originalUrl": "https://cdn.gamemechanics.org/rtcw_note.webm",
+      "sourceFrameSeconds": 1.59,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Найденный приказ развёрнут поверх вида комнаты",
+        "en": "A discovered order is opened over the room view"
+      },
+      "alt": {
+        "ru": "Return to Castle Wolfenstein: Найденный приказ развёрнут поверх вида комнаты.",
+        "en": "Return to Castle Wolfenstein: A discovered order is opened over the room view."
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 47,
+          "label": {
+            "ru": "Документ с доступным для чтения текстом",
+            "en": "Document with readable text"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предлагайте масштабирование текста и сохраняйте найденные сведения в журнале.",
+        "en": "Offer text scaling and keep discovered information in a journal."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein",
+        "url": "https://gamemechanics.org/patterns/readable-notes"
+      }
+    ]
+  },
+  "game-mechanics--gm-views-outside": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вид за пределы помещения",
+      "en": "Views outside"
+    },
+    "description": {
+      "ru": "Окна и проёмы показывают пространство за границами текущего интерьера.",
+      "en": "Windows and openings reveal space beyond the current interior."
+    },
+    "image": {
+      "src": "images/mechanics/world-views-outside.webp",
+      "width": 1344,
+      "height": 756,
+      "game": "Alien: Isolation",
+      "sourceUrl": "https://gamemechanics.org/patterns/views-outside",
+      "originalUrl": "https://cdn.gamemechanics.org/alien_isolation_view.jpg",
+      "credit": "Creative Assembly / Sega; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Через окно станции видна планета",
+        "en": "A planet is visible through a station window"
+      },
+      "alt": {
+        "ru": "Alien: Isolation: Через окно станции видна планета.",
+        "en": "Alien: Isolation: A planet is visible through a station window."
+      },
+      "markers": [
+        {
+          "x": 37,
+          "y": 47,
+          "label": {
+            "ru": "Внешний мир за рамой окна",
+            "en": "The outside world beyond the window frame"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Используйте внешний вид для ориентации, масштаба и контраста с интерьером.",
+        "en": "Use exterior views for orientation, scale and contrast with the interior."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Alien: Isolation",
+        "url": "https://gamemechanics.org/patterns/views-outside"
+      }
+    ]
+  },
+  "game-mechanics--gm-distant-background-scenery": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дальний фоновый пейзаж",
+      "en": "Distant background scenery"
+    },
+    "description": {
+      "ru": "Недоступный фон показывает продолжение мира за игровой областью.",
+      "en": "Unreachable scenery suggests a world beyond the playable area."
+    },
+    "image": {
+      "src": "images/mechanics/world-distant-background-scenery.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Duke Nukem 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/distant-background-scenery",
+      "originalUrl": "https://cdn.gamemechanics.org/duke_nukem_3d_skyline.jpg",
+      "credit": "3D Realms; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Огни города продолжаются за ограждением крыши",
+        "en": "City lights extend beyond a rooftop fence"
+      },
+      "alt": {
+        "ru": "Duke Nukem 3D: Огни города продолжаются за ограждением крыши.",
+        "en": "Duke Nukem 3D: City lights extend beyond a rooftop fence."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 31,
+          "label": {
+            "ru": "Недоступный городской фон",
+            "en": "Unreachable city backdrop"
+          }
+        },
+        {
+          "x": 28,
+          "y": 54,
+          "label": {
+            "ru": "Ограждение отделяет игровую площадку",
+            "en": "A fence bounds the playable area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте фон с доступной зоной по масштабу, свету и перспективе.",
+        "en": "Match backdrop and playable space in scale, lighting and perspective."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D",
+        "url": "https://gamemechanics.org/patterns/distant-background-scenery"
+      }
+    ]
+  },
+  "game-mechanics--gm-vending-machines-props": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Автомат как декорация",
+      "en": "Vending machine as a prop"
+    },
+    "description": {
+      "ru": "Автомат служит деталью обжитого места без обязательной функции покупки.",
+      "en": "A vending machine establishes an inhabited setting without necessarily offering purchases."
+    },
+    "image": {
+      "src": "images/mechanics/world-vending-machines-props.webp",
+      "width": 1331,
+      "height": 748,
+      "game": "Outlast",
+      "sourceUrl": "https://gamemechanics.org/patterns/vending-machines-props",
+      "originalUrl": "https://cdn.gamemechanics.org/outlast_vending_machines.jpg",
+      "credit": "Red Barrels; image via GameMechanics.org; visible source watermark: SHIRRAKO",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Автоматы с напитками в заброшенном помещении",
+        "en": "Drink machines in an abandoned room"
+      },
+      "alt": {
+        "ru": "В Outlast два автомата с напитками стоят в заброшенной комнате за частично открытой дверью.",
+        "en": "Two drink machines stand in an abandoned room beyond a partly open door in Outlast."
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 55,
+          "label": {
+            "ru": "Автомат как бытовая деталь помещения",
+            "en": "A vending machine as an everyday detail of the room"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не используйте активную подсветку взаимодействия для чисто декоративного объекта.",
+        "en": "Avoid active interaction highlighting for a purely decorative object."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deus Ex",
+        "url": "https://gamemechanics.org/patterns/vending-machines-props"
+      }
+    ]
+  },
+  "game-mechanics--gm-secret-early-ending": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Секретная ранняя концовка",
+      "en": "Secret early ending"
+    },
+    "description": {
+      "ru": "Необычное раннее решение позволяет завершить историю раньше основного маршрута.",
+      "en": "An unusual early choice ends the story before its main route."
+    },
+    "image": {
+      "src": "images/mechanics/world-secret-early-ending.webp",
+      "width": 600,
+      "height": 332,
+      "game": "Far Cry 4",
+      "sourceUrl": "https://gamemechanics.org/patterns/secret-early-ending",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_4_alternate_ending.webm",
+      "sourceFrameSeconds": 4.75,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пэйган Мин возвращается к оставшемуся в столовой герою",
+        "en": "Pagan Min returns to the hero who stayed in the dining room"
+      },
+      "alt": {
+        "ru": "Far Cry 4: Пэйган Мин возвращается к оставшемуся в столовой герою.",
+        "en": "Far Cry 4: Pagan Min returns to the hero who stayed in the dining room."
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 46,
+          "label": {
+            "ru": "Возвращение персонажа после ожидания",
+            "en": "A character’s return after waiting"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте альтернативный исход понятным и не стирайте основной прогресс.",
+        "en": "Make the alternative outcome understandable and preserve main-route progress."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 4",
+        "url": "https://gamemechanics.org/patterns/secret-early-ending"
+      }
+    ]
+  },
+  "game-mechanics--gm-location-triggered-event": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Событие при входе в зону",
+      "en": "Location-triggered event"
+    },
+    "description": {
+      "ru": "Пересечение заданной зоны запускает игровое событие.",
+      "en": "Entering a specified area triggers an event."
+    },
+    "image": {
+      "src": "images/mechanics/world-location-triggered-event.webp",
+      "width": 600,
+      "height": 340,
+      "game": "Doom 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/location-triggered-event",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/doom_3_hanging_man.webm",
+      "sourceFrameSeconds": 4.04,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Враг появляется из верхнего проёма в коридоре",
+        "en": "An enemy appears from an upper opening in the corridor"
+      },
+      "alt": {
+        "ru": "Doom 3: Враг появляется из верхнего проёма в коридоре.",
+        "en": "Doom 3: An enemy appears from an upper opening in the corridor."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 44,
+          "label": {
+            "ru": "Появившийся при приближении враг",
+            "en": "Enemy appearing on approach"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Определяйте повторный запуск и проверяйте подход с разных направлений.",
+        "en": "Define retrigger behavior and test approaches from different directions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom 3",
+        "url": "https://gamemechanics.org/patterns/location-triggered-event"
+      }
+    ]
+  },
+  "game-mechanics--gm-in-game-cutscene": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кат-сцена в игровом мире",
+      "en": "In-game cutscene"
+    },
+    "description": {
+      "ru": "Персонажи разыгрывают постановочную сцену в текущем игровом мире. Обстановка и внешний вид героя сохраняют связь с предыдущим действием.",
+      "en": "Characters perform a staged sequence in the current game world. The setting and the hero’s appearance stay connected to the preceding action."
+    },
+    "image": {
+      "src": "images/mechanics/world-in-game-cutscene.webp",
+      "width": 600,
+      "height": 334,
+      "game": "Dead Space",
+      "sourceUrl": "https://gamemechanics.org/patterns/in-game-cutscene",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/dead_space_scripted_attack_org.webm",
+      "sourceFrameSeconds": 5.47,
+      "credit": "EA Redwood Shores / Electronic Arts; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Айзек наблюдает за событиями по другую сторону стекла",
+        "en": "Isaac watches events on the other side of glass"
+      },
+      "alt": {
+        "ru": "Dead Space: Айзек наблюдает за событиями по другую сторону стекла.",
+        "en": "Dead Space: Isaac watches events on the other side of glass."
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 44,
+          "label": {
+            "ru": "Постановочное действие в соседнем помещении",
+            "en": "Staged action in the adjacent room"
+          }
+        },
+        {
+          "x": 35,
+          "y": 60,
+          "label": {
+            "ru": "Герой остаётся в текущем игровом пространстве",
+            "en": "The hero remains in the current game space"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ясно показывайте момент потери и возвращения управления.",
+        "en": "Clearly communicate when control is removed and restored."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space",
+        "url": "https://gamemechanics.org/patterns/in-game-cutscene"
+      }
+    ]
+  },
+  "game-mechanics--gm-set-piece": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Постановочный игровой эпизод",
+      "en": "Set-piece"
+    },
+    "description": {
+      "ru": "Сценарный эпизод связывает движение, опасности и зрелище: например, побег из рушащейся пещеры. Игрок продолжает действовать внутри сцены.",
+      "en": "A staged sequence combines movement, threats and spectacle, such as escaping a collapsing cave. The player keeps acting within the scene."
+    },
+    "image": {
+      "src": "images/mechanics/world-set-piece.webp",
+      "width": 360,
+      "height": 202,
+      "game": "Tomb Raider",
+      "sourceUrl": "https://gamemechanics.org/patterns/set-piece",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/tomb_raider_opening.webm",
+      "sourceFrameSeconds": 12.25,
+      "credit": "Crystal Dynamics; frame from clip via GameMechanics.org; visible source watermark: MKIceAndFire",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Лара бежит через разрушающуюся пещеру",
+        "en": "Lara runs through a collapsing cave"
+      },
+      "alt": {
+        "ru": "Tomb Raider: Лара бежит через разрушающуюся пещеру.",
+        "en": "Tomb Raider: Lara runs through a collapsing cave."
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 71,
+          "label": {
+            "ru": "Героиня на маршруте побега",
+            "en": "Heroine on the escape route"
+          }
+        },
+        {
+          "x": 62,
+          "y": 29,
+          "label": {
+            "ru": "Разрушение окружения создаёт угрозу",
+            "en": "Environmental collapse creates the threat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятный путь и проверяйте синхронизацию при разной скорости игрока.",
+        "en": "Keep the route readable and test timing at different player speeds."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tomb Raider",
+        "url": "https://gamemechanics.org/patterns/set-piece"
+      }
+    ]
+  },
+  "game-mechanics--gm-quick-time-events": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Быстрая команда в сцене",
+      "en": "Quick-time event"
+    },
+    "description": {
+      "ru": "Короткое окно ввода связывает своевременную команду с исходом эпизода.",
+      "en": "A brief input window ties a timely command to a sequence's outcome."
+    },
+    "image": {
+      "src": "images/mechanics/world-quick-time-events.webp",
+      "width": 460,
+      "height": 254,
+      "game": "Far Cry 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/quick-time-events",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_3_qte_fight.webm",
+      "sourceFrameSeconds": 7.82,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Подсказка Space появляется во время схватки",
+        "en": "A Space prompt appears during a struggle"
+      },
+      "alt": {
+        "ru": "Far Cry 3: Подсказка Space появляется во время схватки.",
+        "en": "Far Cry 3: A Space prompt appears during a struggle."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 75,
+          "label": {
+            "ru": "Нужная кнопка и короткое окно ввода",
+            "en": "Required button and a brief input window"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте достаточно времени и предлагайте доступную альтернативу вводу.",
+        "en": "Provide enough time and an accessible input alternative."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 3",
+        "url": "https://gamemechanics.org/patterns/quick-time-events"
+      }
+    ]
+  },
+  "game-mechanics--gm-scripted-scares": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сценарный испуг",
+      "en": "Scripted scare"
+    },
+    "description": {
+      "ru": "Вход в зону или другое условие запускает подготовленный испуг: появление фигуры, резкое движение или звук.",
+      "en": "Entering an area or another trigger initiates a prepared scare, such as an apparition, sudden motion or sound."
+    },
+    "image": {
+      "src": "images/mechanics/world-scripted-scares.webp",
+      "width": 600,
+      "height": 334,
+      "crop": {
+        "x": 120,
+        "y": 20,
+        "width": 390,
+        "height": 290
+      },
+      "game": "F.E.A.R. 2: Project Origin",
+      "sourceUrl": "https://gamemechanics.org/patterns/scripted-scares",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_2_scare2.webm",
+      "sourceFrameSeconds": 2.25,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Фигура возникает в больничном коридоре при вспышке света",
+        "en": "A figure appears in a hospital corridor during a light flash"
+      },
+      "alt": {
+        "ru": "F.E.A.R. 2: Project Origin: Фигура возникает в больничном коридоре при вспышке света.",
+        "en": "F.E.A.R. 2: Project Origin: A figure appears in a hospital corridor during a light flash."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 40,
+          "label": {
+            "ru": "Краткое появление фигуры впереди",
+            "en": "Brief appearance of a figure ahead"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте повторный проход и настройку интенсивности пугающих эффектов.",
+        "en": "Account for revisits and adjustable scare-effect intensity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R. 2: Project Origin",
+        "url": "https://gamemechanics.org/patterns/scripted-scares"
+      }
+    ]
   }
 }
