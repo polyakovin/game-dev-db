@@ -8,8 +8,9 @@ for (const lang of ['ru', 'en'] as const) {
   for (const viewport of [
     { width: 1280, height: 720 },
     { width: 298, height: 496 },
+    { width: 298, height: 314 },
   ]) {
-    test(`${lang} ${viewport.width}: marker tooltips support hover, keyboard, dismissal and viewport bounds`, async ({
+    test(`${lang} ${viewport.width}×${viewport.height}: marker tooltips support hover, keyboard, dismissal and viewport bounds`, async ({
       page,
     }, testInfo) => {
       await page.setViewportSize(viewport);
@@ -102,6 +103,17 @@ for (const lang of ['ru', 'en'] as const) {
         labels[i].label,
       );
     }
+    await page.setViewportSize({ width: 298, height: 314 });
+    await expect(page.locator('figcaption')).toBeHidden();
+    await expect(page.locator('h1')).toBeInViewport({ ratio: 1 });
+    await expect(page.locator('.preview-description')).toBeInViewport({
+      ratio: 1,
+    });
+    for (let i = 0; i < labels.length; i++)
+      await expect(page.locator('.preview-marker').nth(i)).toHaveAttribute(
+        'title',
+        labels[i].label,
+      );
     await context.close();
   });
 }

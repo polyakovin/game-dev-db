@@ -6,6 +6,12 @@ const base = '/game-dev-db';
 const id = 'shared-family-02';
 const route = (lang: string) => `${base}/${lang}/knowledge/mechanic/${id}/`;
 const viewports = [
+  { width: 298, height: 314 },
+  { width: 298, height: 300 },
+  { width: 479, height: 314 },
+  { width: 480, height: 400 },
+  { width: 900, height: 400 },
+  { width: 375, height: 375 },
   { width: 298, height: 496 },
   { width: 319, height: 849 },
   { width: 320, height: 500 },
@@ -128,7 +134,10 @@ for (const lang of ['ru', 'en'] as const) {
         });
         for (const marker of await page.locator('.preview-marker').all())
           await expect(marker).toBeInViewport({ ratio: 1 });
-        await expect(page.locator('.preview-footer a').last()).toBeInViewport();
+        if (await page.locator('.preview-footer').isVisible())
+          await expect(
+            page.locator('.preview-footer a').last(),
+          ).toBeInViewport();
         if (
           lang === 'ru' &&
           colorScheme === 'dark' &&
@@ -161,10 +170,67 @@ for (const lang of ['ru', 'en'] as const) {
       await expect(page.locator('.preview-description')).toBeInViewport({
         ratio: 1,
       });
-      await expect(page.locator('.preview-credit')).toBeInViewport({
+      if (await page.locator('.preview-credit').isVisible())
+        await expect(page.locator('.preview-credit')).toBeInViewport({
+          ratio: 1,
+        });
+    }
+  });
+
+  test(`${lang}: minimal windows keep only the core content and recover the full layout on resize`, async ({
+    page,
+  }, testInfo) => {
+    await page.goto(route(lang));
+    for (const viewport of [
+      { width: 298, height: 314 },
+      { width: 479, height: 314 },
+      { width: 375, height: 375 },
+      { width: 320, height: 500 },
+      { width: 516, height: 314 },
+      { width: 620, height: 640 },
+    ]) {
+      await page.setViewportSize(viewport);
+      for (const selector of [
+        '.topbar',
+        '.preview-categories',
+        'figcaption',
+        '.preview-tips',
+        '.preview-examples',
+        '.preview-footer',
+      ])
+        await expect(page.locator(selector)).toBeHidden();
+      await expect(page.locator('h1')).toBeInViewport({ ratio: 1 });
+      await expect(page.locator('.preview-description')).toBeInViewport({
         ratio: 1,
       });
+      await expect(page.locator('.preview-image')).toBeInViewport({ ratio: 1 });
+      expect(
+        await page.evaluate(() => ({
+          width: document.documentElement.scrollWidth,
+          height: document.documentElement.scrollHeight,
+        })),
+      ).toEqual(viewport);
+      if (viewport.width === 298) {
+        const image = await page.locator('.preview-image').boundingBox();
+        const description = await page
+          .locator('.preview-description')
+          .boundingBox();
+        expect(image!.width).toBeGreaterThan(130);
+        expect(Math.abs(image!.y - description!.y)).toBeLessThan(1);
+        if (lang === 'ru')
+          await page.screenshot({
+            path: testInfo.outputPath('minimal-298x314.png'),
+          });
+      }
     }
+    await page.setViewportSize({ width: 1280, height: 720 });
+    for (const selector of [
+      '.topbar',
+      '.preview-categories',
+      'figcaption',
+      '.preview-footer',
+    ])
+      await expect(page.locator(selector)).toBeVisible();
   });
 
   test(`${lang}: both categories open the same pilot without JavaScript; full exports and language link resolve`, async ({

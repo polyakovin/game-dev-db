@@ -33,7 +33,6 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
   </header>
 
   <div class="preview-grid">
-    <p class="preview-description">{preview.description}</p>
     <figure class="preview-figure">
       <div class="preview-viewport">
         <div
@@ -87,6 +86,7 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
         </a>
       </figcaption>
     </figure>
+    <p class="preview-description">{preview.description}</p>
 
     <section class="preview-tips" aria-labelledby="preview-tips-heading">
       <h2 id="preview-tips-heading">{ru ? 'Как применять' : 'Design tips'}</h2>
@@ -424,6 +424,72 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
       gap: 3px;
     }
   }
+  @media (max-width: 620px) and (max-height: 640px),
+    (max-width: 900px) and (max-height: 400px) {
+    .mechanic-preview {
+      min-block-size: 0;
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-rows: auto auto minmax(0, 1fr);
+      grid-template-areas: 'heading' 'description' 'figure';
+      gap: 12px;
+    }
+    .preview-categories,
+    figcaption,
+    .preview-tips,
+    .preview-examples,
+    .preview-footer {
+      display: none;
+    }
+    h1 {
+      margin: 0;
+    }
+    .preview-figure {
+      border: 0;
+      background: transparent;
+    }
+    .preview-viewport {
+      background: transparent;
+      border-radius: 8px;
+    }
+    .preview-image {
+      background: #fff;
+      border-radius: 8px;
+    }
+  }
+  @media (min-width: 480px) and (max-width: 900px) and (max-height: 400px) {
+    .mechanic-preview {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'figure heading' 'figure description';
+      column-gap: 16px;
+    }
+    .preview-description {
+      align-self: start;
+    }
+  }
+  @media (max-width: 479px) and (max-height: 400px) {
+    .mechanic-preview {
+      display: flow-root;
+    }
+    .preview-header {
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    .preview-figure {
+      float: inline-end;
+      width: min(50%, calc(100svh - 80px));
+      aspect-ratio: 1;
+      margin: 0 0 8px 12px;
+    }
+    .preview-viewport {
+      block-size: 100%;
+    }
+    .preview-description {
+      font-size: 14px;
+    }
+  }
   @container mechanic-shell (max-width: 230px) {
     .mechanic-preview {
       display: flex;
@@ -431,6 +497,8 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
       block-size: auto;
     }
     .preview-figure {
+      float: none;
+      width: auto;
       flex: none;
       block-size: 270px;
     }
