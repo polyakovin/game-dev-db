@@ -134,3 +134,16 @@ comparison was supplied by the source, not constructed from unrelated frames.
 Credit: Saber Interactive / Focus Entertainment. The original image URL remains
 in the card metadata. The screenshot retains its original rights and is excluded
 from the portal’s MIT and CC BY 4.0 licenses.
+
+`impact-*.webp` adds inspected frames and source screenshots for remote object
+manipulation, scripted sequences, damage presentation and progression boundaries.
+The cards preserve each original Game Mechanics gallery URL, clip timestamp and
+visible watermark. Credits include Valve, Capcom, Rockstar, id Software, Raven,
+Monolith, Ubisoft, Bethesda, Dambuster, Teyon, People Can Fly, Capcom Vancouver,
+Midway and EA Redwood Shores, as applicable to each
+record. Static comparisons retain the source's combined views and annotations;
+portal markers remain separate HTML overlays. The blood-footprints record reuses
+the existing Duke Nukem 3D screenshot. The Max Payne 3 blood-pool frame is a
+separate, timestamped view of the same source recording used for blood splatters.
+All derivatives follow the 1440px / 250KiB WebP budget and retain third-party
+rights, excluded from the portal's MIT and CC BY 4.0 licenses.

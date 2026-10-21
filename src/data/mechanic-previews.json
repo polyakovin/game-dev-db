@@ -14820,5 +14820,1651 @@
         "url": "https://gamemechanics.org/patterns/torch"
       }
     ]
+  },
+  "game-mechanics--gm-telekinesis": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Телекинез",
+      "en": "Telekinesis"
+    },
+    "description": {
+      "ru": "Игрок перемещает объекты на расстоянии без прямого физического контакта.",
+      "en": "The player moves objects remotely without direct physical contact."
+    },
+    "image": {
+      "src": "images/mechanics/impact-telekinesis.webp",
+      "width": 600,
+      "height": 332,
+      "game": "Half-Life 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/telekinesis",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/half_life_2_gravity_gun_saw.webm",
+      "sourceFrameSeconds": 6.1,
+      "credit": "Valve; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Гравипушка удерживает диск пилы на расстоянии",
+        "en": "The Gravity Gun holds a saw blade at a distance"
+      },
+      "alt": {
+        "ru": "Half-Life 2: Гравипушка удерживает диск пилы на расстоянии.",
+        "en": "Half-Life 2: The Gravity Gun holds a saw blade at a distance."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 44,
+          "label": {
+            "ru": "Предмет удерживается в воздухе",
+            "en": "Object held in the air"
+          }
+        },
+        {
+          "x": 66,
+          "y": 70,
+          "label": {
+            "ru": "Устройство для дистанционного воздействия",
+            "en": "Device for remote manipulation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте выбранный объект, дистанцию воздействия и момент отпускания.",
+        "en": "Show the selected object, manipulation range and release moment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Half-Life 2",
+        "url": "https://gamemechanics.org/patterns/telekinesis"
+      }
+    ]
+  },
+  "game-mechanics--gm-blood-footprints": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кровавые отпечатки шагов",
+      "en": "Bloody footprints"
+    },
+    "description": {
+      "ru": "После контакта с кровью шаги оставляют окрашенные отпечатки.",
+      "en": "Footsteps leave stained prints after contact with blood."
+    },
+    "image": {
+      "src": "images/mechanics/atmosphere-footprints.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Duke Nukem 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/blood-footprints",
+      "originalUrl": "https://cdn.gamemechanics.org/duke_nukem_steps.jpg",
+      "credit": "3D Realms; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Окрашенные следы подошв на деревянном полу",
+        "en": "Colored sole prints on a wooden floor"
+      },
+      "alt": {
+        "ru": "Duke Nukem 3D: Окрашенные следы подошв на деревянном полу.",
+        "en": "Duke Nukem 3D: Colored sole prints on a wooden floor."
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 69,
+          "label": {
+            "ru": "Окрашенный отпечаток после контакта с кровью",
+            "en": "Colored print after contact with blood"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте материал пола и ограничивайте длину следа после загрязнения.",
+        "en": "Account for floor material and limit the trail after contamination."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duke Nukem 3D",
+        "url": "https://gamemechanics.org/patterns/blood-footprints"
+      }
+    ]
+  },
+  "game-mechanics--gm-water-light-reflections": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Световые отражения от воды",
+      "en": "Light reflected from water"
+    },
+    "description": {
+      "ru": "Движение водной поверхности создаёт меняющийся узор света.",
+      "en": "A moving water surface produces changing patterns of reflected light."
+    },
+    "image": {
+      "src": "images/mechanics/impact-water-light-reflections.webp",
+      "width": 500,
+      "height": 280,
+      "game": "F.E.A.R.",
+      "sourceUrl": "https://gamemechanics.org/patterns/water-light-reflections",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_water.webm",
+      "sourceFrameSeconds": 1.6,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Световой узор от воды играет на стенах",
+        "en": "Light patterns from water move across the walls"
+      },
+      "alt": {
+        "ru": "F.E.A.R.: Световой узор от воды играет на стенах.",
+        "en": "F.E.A.R.: Light patterns from water move across the walls."
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 41,
+          "label": {
+            "ru": "Меняющийся узор света на стене",
+            "en": "Changing light pattern on the wall"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте движение узора с водой и положением источника света.",
+        "en": "Match pattern movement to the water and light-source position."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R.",
+        "url": "https://gamemechanics.org/patterns/water-light-reflections"
+      }
+    ]
+  },
+  "game-mechanics--gm-magnifying-glass-effect": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Эффект увеличительного стекла",
+      "en": "Magnifying glass effect"
+    },
+    "description": {
+      "ru": "Оптическая поверхность увеличивает видимую через неё часть сцены.",
+      "en": "An optical surface magnifies the scene viewed through it."
+    },
+    "image": {
+      "src": "images/mechanics/impact-magnifying-glass-effect.webp",
+      "width": 600,
+      "height": 350,
+      "game": "Half-Life 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/magnifying-glass-effect",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/half_life_2_magnifying_glass.webm",
+      "sourceFrameSeconds": 4.15,
+      "credit": "Valve; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Линза увеличивает часть лаборатории",
+        "en": "A lens magnifies part of the laboratory"
+      },
+      "alt": {
+        "ru": "Half-Life 2: Линза увеличивает часть лаборатории.",
+        "en": "Half-Life 2: A lens magnifies part of the laboratory."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 71,
+          "label": {
+            "ru": "Увеличенный вид внутри границы линзы",
+            "en": "Magnified view within the lens boundary"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте увеличение с положением линзы и читаемостью её границы.",
+        "en": "Match magnification to lens position and keep its boundary readable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Half-Life 2",
+        "url": "https://gamemechanics.org/patterns/magnifying-glass-effect"
+      }
+    ]
+  },
+  "game-mechanics--gm-look-around-cutscene": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кат-сцена со свободным обзором",
+      "en": "Cutscene with free look"
+    },
+    "description": {
+      "ru": "Во время постановочной сцены игрок управляет направлением взгляда.",
+      "en": "The player controls viewing direction during a staged scene."
+    },
+    "image": {
+      "src": "images/mechanics/impact-look-around-cutscene.webp",
+      "width": 400,
+      "height": 218,
+      "game": "The Elder Scrolls V: Skyrim",
+      "sourceUrl": "https://gamemechanics.org/patterns/look-around-cutscene",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/skyrim_carriage.webm",
+      "sourceFrameSeconds": 13.39,
+      "credit": "Bethesda Game Studios; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Игрок выбирает ракурс во время поездки в повозке",
+        "en": "The player chooses the view during a scripted cart ride"
+      },
+      "alt": {
+        "ru": "The Elder Scrolls V: Skyrim: Игрок выбирает ракурс во время поездки в повозке.",
+        "en": "The Elder Scrolls V: Skyrim: The player chooses the view during a scripted cart ride."
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 52,
+          "label": {
+            "ru": "Выбранное направление взгляда на попутчика",
+            "en": "Chosen viewing direction toward a fellow passenger"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ставьте важные события так, чтобы игрок мог заметить их при свободном обзоре.",
+        "en": "Stage important events so they can be noticed with a freely moving view."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Elder Scrolls V: Skyrim",
+        "url": "https://gamemechanics.org/patterns/look-around-cutscene"
+      }
+    ]
+  },
+  "game-mechanics--gm-playable-cutscene": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Управляемая кат-сцена",
+      "en": "Playable cutscene"
+    },
+    "description": {
+      "ru": "Игрок сохраняет ограниченное действие внутри постановочного эпизода.",
+      "en": "The player retains limited action during a staged sequence."
+    },
+    "image": {
+      "src": "images/mechanics/impact-playable-cutscene.webp",
+      "width": 460,
+      "height": 252,
+      "game": "Far Cry 5",
+      "sourceUrl": "https://gamemechanics.org/patterns/playable-cutscene",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_5_opening_play_cutscene.webm",
+      "sourceFrameSeconds": 11.72,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой сам идёт за группой к церкви",
+        "en": "The hero walks behind the group toward the church"
+      },
+      "alt": {
+        "ru": "Far Cry 5: Герой сам идёт за группой к церкви.",
+        "en": "Far Cry 5: The hero walks behind the group toward the church."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 59,
+          "label": {
+            "ru": "Спутники задают маршрут постановочного эпизода",
+            "en": "Companions establish the staged sequence’s route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Явно показывайте, какие действия доступны, и возвращайте полный контроль предсказуемо.",
+        "en": "Clearly communicate available actions and restore full control predictably."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 5",
+        "url": "https://gamemechanics.org/patterns/playable-cutscene"
+      }
+    ]
+  },
+  "game-mechanics--gm-environmental-fire-hazards": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Огонь как опасность окружения",
+      "en": "Environmental fire hazard"
+    },
+    "description": {
+      "ru": "Участок с пламенем угрожает персонажам и влияет на выбор пути.",
+      "en": "A burning area threatens characters and affects route choice."
+    },
+    "image": {
+      "src": "images/mechanics/impact-environmental-fire-hazards.webp",
+      "width": 514,
+      "height": 322,
+      "game": "Tom Clancy’s Splinter Cell",
+      "sourceUrl": "https://gamemechanics.org/patterns/environmental-fire-hazards",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_fire.webm",
+      "sourceFrameSeconds": 2.05,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пламя ограничивает проход через здание",
+        "en": "Flames constrain the route through a building"
+      },
+      "alt": {
+        "ru": "Tom Clancy’s Splinter Cell: Пламя ограничивает проход через здание.",
+        "en": "Tom Clancy’s Splinter Cell: Flames constrain the route through a building."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 37,
+          "label": {
+            "ru": "Горящий участок на маршруте героя",
+            "en": "Burning area along the hero’s route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Совмещайте видимую границу пламени с областью урона.",
+        "en": "Match the visible flame boundary to the damage area."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Splinter Cell",
+        "url": "https://gamemechanics.org/patterns/environmental-fire-hazards"
+      }
+    ]
+  },
+  "game-mechanics--gm-player-death-animations": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Анимация смерти игрока",
+      "en": "Player death animation"
+    },
+    "description": {
+      "ru": "Гибель персонажа получает отдельное визуальное завершение.",
+      "en": "Character death triggers a distinct visual sequence."
+    },
+    "image": {
+      "src": "images/mechanics/impact-player-death-animations.webp",
+      "width": 600,
+      "height": 478,
+      "game": "Return to Castle Wolfenstein",
+      "sourceUrl": "https://gamemechanics.org/patterns/player-death-animations",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_death.webm",
+      "sourceFrameSeconds": 1.18,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "При гибели героя камера падает и наклоняется",
+        "en": "The camera falls and tilts when the hero dies"
+      },
+      "alt": {
+        "ru": "Return to Castle Wolfenstein: При гибели героя камера падает и наклоняется.",
+        "en": "Return to Castle Wolfenstein: The camera falls and tilts when the hero dies."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 52,
+          "label": {
+            "ru": "Наклонённый вид и сообщение о поражении",
+            "en": "Tilted view and failure message"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ясно завершайте управление и показывайте доступное действие для продолжения.",
+        "en": "Clearly end control and show the available action for continuing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein",
+        "url": "https://gamemechanics.org/patterns/player-death-animations"
+      }
+    ]
+  },
+  "game-mechanics--gm-enemy-death-animation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Анимация смерти противника",
+      "en": "Enemy death animation"
+    },
+    "description": {
+      "ru": "Смертельный урон запускает завершающую анимацию врага.",
+      "en": "Lethal damage triggers an enemy's death sequence."
+    },
+    "image": {
+      "src": "images/mechanics/impact-enemy-death-animation.webp",
+      "width": 320,
+      "height": 200,
+      "game": "Wolfenstein 3D",
+      "sourceUrl": "https://gamemechanics.org/patterns/enemy-death-animation",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/wolfenstein-3d-kill.webm",
+      "sourceFrameSeconds": 1.5,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Враг переходит в позу поверженного персонажа",
+        "en": "The enemy changes to a defeated pose"
+      },
+      "alt": {
+        "ru": "Wolfenstein 3D: Враг переходит в позу поверженного персонажа.",
+        "en": "Wolfenstein 3D: The enemy changes to a defeated pose."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 58,
+          "label": {
+            "ru": "Завершающий кадр анимации врага",
+            "en": "Final frame of the enemy’s animation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте гибель от оглушения и обычной реакции на попадание.",
+        "en": "Distinguish death from stun and ordinary hit reactions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Wolfenstein 3D",
+        "url": "https://gamemechanics.org/patterns/enemy-death-animation"
+      }
+    ]
+  },
+  "game-mechanics--gm-blood-pools": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лужи крови",
+      "en": "Blood pools"
+    },
+    "description": {
+      "ru": "Вокруг раненого или погибшего персонажа появляется след на поверхности.",
+      "en": "A surface pool marks an injured or dead character's location."
+    },
+    "image": {
+      "src": "images/mechanics/impact-blood-pools.webp",
+      "width": 498,
+      "height": 264,
+      "game": "Max Payne 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/blood-splatters",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/max_payne_3_blood.webm",
+      "sourceFrameSeconds": 1.05,
+      "credit": "Rockstar Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "След крови под лежащим персонажем",
+        "en": "A pool beneath a prone character"
+      },
+      "alt": {
+        "ru": "Max Payne 3: След крови под лежащим персонажем.",
+        "en": "Max Payne 3: A pool beneath a prone character."
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 77,
+          "label": {
+            "ru": "Кровь на поверхности под телом",
+            "en": "Blood on the surface beneath the body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте форму следа с поверхностью и ограничивайте его время жизни.",
+        "en": "Match the mark’s shape to the surface and bound its lifetime."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Max Payne 3",
+        "url": "https://gamemechanics.org/patterns/blood-splatters"
+      }
+    ]
+  },
+  "game-mechanics--gm-gibbing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Распад модели на фрагменты",
+      "en": "Gibbing"
+    },
+    "description": {
+      "ru": "Смертельное воздействие разделяет модель противника на фрагменты.",
+      "en": "A lethal impact breaks an enemy model into fragments."
+    },
+    "image": {
+      "src": "images/mechanics/impact-gibbing.webp",
+      "width": 600,
+      "height": 410,
+      "game": "Quake",
+      "sourceUrl": "https://gamemechanics.org/patterns/gibbing",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/quake_gibs-mta4pvo6.webm",
+      "sourceFrameSeconds": 2.73,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Объёмные фрагменты вместо цельной модели",
+        "en": "Three-dimensional fragments replace an intact model"
+      },
+      "alt": {
+        "ru": "Quake: Объёмные фрагменты вместо цельной модели.",
+        "en": "Quake: Three-dimensional fragments replace an intact model."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 51,
+          "label": {
+            "ru": "Фрагмент модели в полёте",
+            "en": "Model fragment in flight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятный результат атаки и ограничивайте количество физических фрагментов.",
+        "en": "Keep the attack result clear and limit the number of physical fragments."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Quake",
+        "url": "https://gamemechanics.org/patterns/gibbing"
+      }
+    ]
+  },
+  "game-mechanics--gm-exploding-heads": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушение модели головы",
+      "en": "Head destruction effect"
+    },
+    "description": {
+      "ru": "Отдельный эффект показывает разрушение головы при попадании.",
+      "en": "A distinct effect depicts head destruction on impact."
+    },
+    "image": {
+      "src": "images/mechanics/impact-exploding-heads.webp",
+      "width": 600,
+      "height": 332,
+      "game": "RoboCop: Rogue City",
+      "sourceUrl": "https://gamemechanics.org/patterns/exploding-heads",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_blow_up_head2.webm",
+      "sourceFrameSeconds": 1.26,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отдельный эффект разрушения головы при попадании",
+        "en": "A distinct head-destruction effect on a hit"
+      },
+      "alt": {
+        "ru": "RoboCop: Rogue City: Отдельный эффект разрушения головы при попадании.",
+        "en": "RoboCop: Rogue City: A distinct head-destruction effect on a hit."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 48,
+          "label": {
+            "ru": "Область изменения модели и эффекта попадания",
+            "en": "Area of the model change and impact effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте смену модели, частицы и анимацию с моментом игрового попадания.",
+        "en": "Synchronize model changes, particles and animation with the gameplay hit."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City",
+        "url": "https://gamemechanics.org/patterns/exploding-heads"
+      }
+    ]
+  },
+  "game-mechanics--gm-limb-ripping": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отрывание конечности",
+      "en": "Limb ripping"
+    },
+    "description": {
+      "ru": "Специальное боевое действие отделяет конечность противника.",
+      "en": "A combat action detaches an opponent's limb."
+    },
+    "image": {
+      "src": "images/mechanics/impact-limb-ripping.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Dead Rising 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/limb-ripping",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/dead_rising_rip-mt9zcig9.webm",
+      "sourceFrameSeconds": 2.93,
+      "credit": "Capcom; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Герой отделяет руку у модели зомби",
+        "en": "The hero detaches an arm from a zombie model"
+      },
+      "alt": {
+        "ru": "Dead Rising 2: Герой отделяет руку у модели зомби.",
+        "en": "Dead Rising 2: The hero detaches an arm from a zombie model."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 56,
+          "label": {
+            "ru": "Конечность в момент завершающего приёма",
+            "en": "Limb during the finishing move"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте захват, позы и переход цели в новое состояние.",
+        "en": "Coordinate the grab, poses and transition to the target’s new state."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Rising 2",
+        "url": "https://gamemechanics.org/patterns/limb-ripping"
+      }
+    ]
+  },
+  "game-mechanics--gm-cutting-in-half": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рассечение модели пополам",
+      "en": "Cutting a model in half"
+    },
+    "description": {
+      "ru": "Атака делит тело цели на две части.",
+      "en": "An attack separates a target's body into two sections."
+    },
+    "image": {
+      "src": "images/mechanics/impact-cutting-in-half.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Bulletstorm",
+      "sourceUrl": "https://gamemechanics.org/patterns/cutting-in-half",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/bulletstorm_boneduster.webm",
+      "sourceFrameSeconds": 0.41,
+      "credit": "People Can Fly / Epic Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Модель противника разделяется на две части",
+        "en": "The enemy model separates into two parts"
+      },
+      "alt": {
+        "ru": "Bulletstorm: Модель противника разделяется на две части.",
+        "en": "Bulletstorm: The enemy model separates into two parts."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 25,
+          "label": {
+            "ru": "Отделившаяся верхняя часть модели",
+            "en": "Detached upper portion of the model"
+          }
+        },
+        {
+          "x": 51,
+          "y": 62,
+          "label": {
+            "ru": "Нижняя часть модели остаётся в кадре",
+            "en": "The lower portion remains in view"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте части модели и столкновения с направлением игрового воздействия.",
+        "en": "Match model parts and collisions to the direction of the gameplay impact."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bulletstorm",
+        "url": "https://gamemechanics.org/patterns/cutting-in-half"
+      }
+    ]
+  },
+  "game-mechanics--gm-ripping-apart": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрыв модели противника",
+      "en": "Ripping an enemy model apart"
+    },
+    "description": {
+      "ru": "Силовое действие разрывает тело противника.",
+      "en": "A forceful action tears an enemy's body apart."
+    },
+    "image": {
+      "src": "images/mechanics/impact-ripping-apart.webp",
+      "width": 760,
+      "height": 422,
+      "game": "Dead Rising 4",
+      "sourceUrl": "https://gamemechanics.org/patterns/ripping-apart",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/dead_rising_4_rip_apart.webm",
+      "sourceFrameSeconds": 4.2,
+      "credit": "Capcom Vancouver / Capcom; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Экзокостюм выполняет завершающий разрыв модели",
+        "en": "An exosuit performs a finishing model-separation move"
+      },
+      "alt": {
+        "ru": "Dead Rising 4: Экзокостюм выполняет завершающий разрыв модели.",
+        "en": "Dead Rising 4: An exosuit performs a finishing model-separation move."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 37,
+          "label": {
+            "ru": "Захват модели в завершающей анимации",
+            "en": "Model grip in the finishing animation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте состыковку поз, отделяемых частей и завершения анимации.",
+        "en": "Check coordination of poses, detached parts and animation completion."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Rising 4",
+        "url": "https://gamemechanics.org/patterns/ripping-apart"
+      }
+    ]
+  },
+  "game-mechanics--gm-shredding": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Измельчение модели",
+      "en": "Shredding"
+    },
+    "description": {
+      "ru": "Продолжительное воздействие визуально дробит тело цели.",
+      "en": "A sustained effect visibly shreds a target's body."
+    },
+    "image": {
+      "src": "images/mechanics/impact-shredding.webp",
+      "width": 500,
+      "height": 362,
+      "game": "Painkiller",
+      "sourceUrl": "https://gamemechanics.org/patterns/shredding",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/painkiller_rotator.webm",
+      "sourceFrameSeconds": 5.89,
+      "credit": "People Can Fly; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Вращающийся ротор оружия дробит модель цели",
+        "en": "A weapon’s rotating mechanism fragments the target model"
+      },
+      "alt": {
+        "ru": "Painkiller: Вращающийся ротор оружия дробит модель цели.",
+        "en": "Painkiller: A weapon’s rotating mechanism fragments the target model."
+      },
+      "markers": [
+        {
+          "x": 74,
+          "y": 67,
+          "label": {
+            "ru": "Ротор оружия при ближнем воздействии",
+            "en": "Weapon rotor during close contact"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Настраивайте количество фрагментов и видимость результата без перегрузки кадра.",
+        "en": "Tune fragment count and result visibility without overwhelming the frame."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Painkiller",
+        "url": "https://gamemechanics.org/patterns/shredding"
+      }
+    ]
+  },
+  "game-mechanics--gm-head-crushing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Раздавливание головы",
+      "en": "Head-crushing animation"
+    },
+    "description": {
+      "ru": "Ближнее действие использует отдельный эффект сдавливания головы.",
+      "en": "A close-range action uses a distinct head-crushing effect."
+    },
+    "image": {
+      "src": "images/mechanics/impact-head-crushing.webp",
+      "width": 720,
+      "height": 404,
+      "game": "Doom",
+      "sourceUrl": "https://gamemechanics.org/patterns/head-crushing",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/dooom_crush.webm",
+      "sourceFrameSeconds": 0.6,
+      "credit": "id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ближнее добивание с отдельной реакцией головы",
+        "en": "A close-range finisher with a distinct head reaction"
+      },
+      "alt": {
+        "ru": "Doom: Ближнее добивание с отдельной реакцией головы.",
+        "en": "Doom: A close-range finisher with a distinct head reaction."
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 56,
+          "label": {
+            "ru": "Момент завершающего удара",
+            "en": "Moment of the finishing strike"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте контакт, смену состояния модели и возврат управления.",
+        "en": "Coordinate contact, model-state changes and the return of control."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Doom",
+        "url": "https://gamemechanics.org/patterns/head-crushing"
+      }
+    ]
+  },
+  "game-mechanics--gm-spine-ripping": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Извлечение позвоночника",
+      "en": "Spine-ripping finisher"
+    },
+    "description": {
+      "ru": "Добивание использует узнаваемый приём с извлечением позвоночника.",
+      "en": "A finishing move depicts removal of an opponent's spine."
+    },
+    "image": {
+      "src": "images/mechanics/impact-spine-ripping.webp",
+      "width": 500,
+      "height": 274,
+      "game": "Mortal Kombat",
+      "sourceUrl": "https://gamemechanics.org/patterns/spine-ripping",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/mortal_kombat_spine_rip2.webm",
+      "sourceFrameSeconds": 3.3,
+      "credit": "Midway; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Саб-Зиро завершает приём Spine Rip",
+        "en": "Sub-Zero completes Spine Rip"
+      },
+      "alt": {
+        "ru": "Mortal Kombat: Саб-Зиро завершает приём Spine Rip.",
+        "en": "Mortal Kombat: Sub-Zero completes Spine Rip."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 52,
+          "label": {
+            "ru": "Отделённая часть модели в финальной позе",
+            "en": "Detached model part in the final pose"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Синхронизируйте позы, отделяемые части модели и окончание анимации.",
+        "en": "Synchronize poses, detached model parts and animation completion."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mortal Kombat",
+        "url": "https://gamemechanics.org/patterns/spine-ripping"
+      }
+    ]
+  },
+  "game-mechanics--gm-bullet-impact-desync": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рассинхронизация попадания",
+      "en": "Shot and hit desync"
+    },
+    "description": {
+      "ru": "Видимый выстрел и его попадание не совпадают по времени или месту. Это мешает игроку прочитать направление и результат атаки.",
+      "en": "The visible shot and its impact do not match in time or position. This makes attack direction and outcome harder to read."
+    },
+    "image": {
+      "src": "images/mechanics/impact-bullet-impact-desync.webp",
+      "width": 1358,
+      "height": 756,
+      "game": "RoboCop: Rogue City",
+      "sourceUrl": "https://gamemechanics.org/patterns/bullet-impact-desync",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocob_kill.webm",
+      "sourceFrameSeconds": 2.75,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выстрел и эффект попадания в одном эпизоде",
+        "en": "Shot and impact effects within one encounter"
+      },
+      "alt": {
+        "ru": "RoboCop: Rogue City: Выстрел и эффект попадания в одном эпизоде.",
+        "en": "RoboCop: Rogue City: Shot and impact effects within one encounter."
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 76,
+          "label": {
+            "ru": "Эффект выстрела у оружия",
+            "en": "Shot effect at the weapon"
+          }
+        },
+        {
+          "x": 50,
+          "y": 45,
+          "label": {
+            "ru": "Область попадания и ответного эффекта",
+            "en": "Hit location and response effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Синхронизируйте игровой урон, след снаряда, вспышку и реакцию цели.",
+        "en": "Synchronize gameplay damage, projectile trace, muzzle flash and target response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City",
+        "url": "https://gamemechanics.org/patterns/bullet-impact-desync"
+      }
+    ]
+  },
+  "game-mechanics--gm-invincible-until-death": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Нет реакции до гибели",
+      "en": "No reaction before death"
+    },
+    "description": {
+      "ru": "Противник получает попадания, но сохраняет прежнюю позу и действие вплоть до гибели. Игроку трудно оценить результат атаки.",
+      "en": "An enemy takes hits but keeps the same pose and action until death, making the attack’s result difficult to judge."
+    },
+    "image": {
+      "src": "images/mechanics/impact-invincible-until-death.webp",
+      "width": 494,
+      "height": 298,
+      "game": "RoboCop: Rogue City",
+      "sourceUrl": "https://gamemechanics.org/patterns/invincible-until-death",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_multiple_hits-mtfm7mwz.webm",
+      "sourceFrameSeconds": 4.7,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Попадания не меняют позу противника",
+        "en": "Hits do not change the enemy’s pose"
+      },
+      "alt": {
+        "ru": "RoboCop: Rogue City: Попадания не меняют позу противника.",
+        "en": "RoboCop: Rogue City: Hits do not change the enemy’s pose."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 54,
+          "label": {
+            "ru": "Враг продолжает действие после попаданий",
+            "en": "Enemy continues acting after hits"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте стойкость к прерыванию и отсутствующий сигнал попадания.",
+        "en": "Distinguish resistance to interruption from missing hit feedback."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City",
+        "url": "https://gamemechanics.org/patterns/invincible-until-death"
+      }
+    ]
+  },
+  "game-mechanics--gm-artificial-progression-gate": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Условная блокировка прогресса",
+      "en": "Artificial progression gate"
+    },
+    "description": {
+      "ru": "Сценарное условие запрещает проход независимо от физических возможностей героя.",
+      "en": "A scripted condition blocks passage regardless of the character's physical capabilities."
+    },
+    "image": {
+      "src": "images/mechanics/impact-artificial-progression-gate.webp",
+      "width": 1287,
+      "height": 1440,
+      "game": "Dead Island 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/artificial-progression-gate",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_island_2_gate.jpg",
+      "credit": "Dambuster Studios / Deep Silver; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Кодовая панель запирает проход через ограду",
+        "en": "A code panel locks passage through a fence"
+      },
+      "alt": {
+        "ru": "Сравнение двух видов Dead Island 2: закрытая ограда сверху и панель с требованием кода снизу.",
+        "en": "Two Dead Island 2 views: a closed fence above and a panel requiring a code below."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 23,
+          "label": {
+            "ru": "Ограда и закрытый проход",
+            "en": "Fence and closed passage"
+          }
+        },
+        {
+          "x": 45,
+          "y": 75,
+          "label": {
+            "ru": "Панель требует код доступа",
+            "en": "The panel requires an access code"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте требование кода с реальными возможностями обхода препятствия.",
+        "en": "Match the code requirement to actual ways of bypassing the obstacle."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Island 2",
+        "url": "https://gamemechanics.org/patterns/artificial-progression-gate"
+      }
+    ]
+  },
+  "game-mechanics--gm-forced-path": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Единственный допустимый путь",
+      "en": "Forced path"
+    },
+    "description": {
+      "ru": "Устройство уровня оставляет игроку один маршрут продвижения.",
+      "en": "Level structure leaves the player a single route forward."
+    },
+    "image": {
+      "src": "images/mechanics/impact-forced-path.webp",
+      "width": 796,
+      "height": 446,
+      "game": "Dead Island 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/forced-path",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_island2_opening.webm",
+      "sourceFrameSeconds": 31.08,
+      "credit": "Dambuster Studios / Deep Silver; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Проход среди обломков задаёт маршрут вступления",
+        "en": "A passage through wreckage defines the opening route"
+      },
+      "alt": {
+        "ru": "Dead Island 2: Проход среди обломков задаёт маршрут вступления.",
+        "en": "Dead Island 2: A passage through wreckage defines the opening route."
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 65,
+          "label": {
+            "ru": "Разрешённый проход среди обломков",
+            "en": "Allowed passage through the wreckage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте доступный путь с тем, что обещает видимое окружение.",
+        "en": "Keep the usable route consistent with what the visible environment suggests."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Island 2",
+        "url": "https://gamemechanics.org/patterns/forced-path"
+      }
+    ]
+  },
+  "game-mechanics--gm-enemy-outpost-respawn": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Возвращение врагов на аванпост",
+      "en": "Outpost enemy respawn"
+    },
+    "description": {
+      "ru": "Очищенная точка вновь заселяется противниками по правилам игры.",
+      "en": "A cleared location becomes occupied by enemies again."
+    },
+    "image": {
+      "src": "images/mechanics/impact-enemy-outpost-respawn.webp",
+      "width": 1024,
+      "height": 527,
+      "game": "Far Cry 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/enemy-outpost-respawn",
+      "originalUrl": "https://cdn.gamemechanics.org/far-cry-2.jpg",
+      "credit": "Ubisoft Montréal; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Блокпост на маршруте в Far Cry 2",
+        "en": "An outpost along a Far Cry 2 route"
+      },
+      "alt": {
+        "ru": "Far Cry 2: Блокпост на маршруте в Far Cry 2.",
+        "en": "Far Cry 2: An outpost along a Far Cry 2 route."
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 54,
+          "label": {
+            "ru": "Точка, которую повторно занимают противники",
+            "en": "Location that enemies occupy again"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Привязывайте возвращение врагов к понятным условиям и действиям игрока.",
+        "en": "Tie enemy returns to understandable conditions and player actions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 2",
+        "url": "https://gamemechanics.org/patterns/enemy-outpost-respawn"
+      }
+    ]
+  },
+  "game-mechanics--gm-disappearing-bodies-and-wrecks": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Исчезновение тел и обломков",
+      "en": "Disappearing bodies and wrecks"
+    },
+    "description": {
+      "ru": "Игра удаляет оставшиеся после боя объекты из мира.",
+      "en": "The game removes objects left behind after combat."
+    },
+    "image": {
+      "src": "images/mechanics/impact-disappearing-bodies-and-wrecks.webp",
+      "width": 498,
+      "height": 278,
+      "game": "Tom Clancy’s Ghost Recon: Breakpoint",
+      "sourceUrl": "https://gamemechanics.org/patterns/disappearing-bodies-and-wrecks",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/ghost_recon_breakpoint_disappearing_bodies.webm",
+      "sourceFrameSeconds": 0.28,
+      "credit": "Ubisoft Paris; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "В записи отмечены места исчезающих тел",
+        "en": "The recording highlights locations of disappearing bodies"
+      },
+      "alt": {
+        "ru": "Кадр Ghost Recon: Breakpoint с наблюдением с высоты; исходные красные окружности отмечают места с телами.",
+        "en": "An overhead Ghost Recon: Breakpoint view; red circles already present in the source mark body locations."
+      },
+      "markers": [
+        {
+          "x": 74,
+          "y": 75,
+          "label": {
+            "ru": "Помеченное место с телом до исчезновения",
+            "en": "Marked body location before disappearance"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Удаляйте объекты вне поля зрения или через понятный визуальный переход.",
+        "en": "Remove objects outside the view or through an understandable visual transition."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Ghost Recon: Breakpoint",
+        "url": "https://gamemechanics.org/patterns/disappearing-bodies-and-wrecks"
+      }
+    ]
+  },
+  "game-mechanics--gm-leaving-mission-area": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Граница задания",
+      "en": "Leaving the mission area"
+    },
+    "description": {
+      "ru": "Удаление от места задания запускает предупреждение или последствие.",
+      "en": "Moving away from the mission area triggers a warning or consequence."
+    },
+    "image": {
+      "src": "images/mechanics/impact-leaving-mission-area.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Tom Clancy’s Ghost Recon: Wildlands",
+      "sourceUrl": "https://gamemechanics.org/patterns/leaving-mission-area",
+      "originalUrl": "https://cdn.gamemechanics.org/ghost_recon_wildlands_go_back.jpg",
+      "credit": "Ubisoft Paris; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Предупреждение требует вернуться в область задания",
+        "en": "A warning asks the player to return to the mission area"
+      },
+      "alt": {
+        "ru": "Tom Clancy’s Ghost Recon: Wildlands: Предупреждение требует вернуться в область задания.",
+        "en": "Tom Clancy’s Ghost Recon: Wildlands: A warning asks the player to return to the mission area."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 16,
+          "label": {
+            "ru": "Предупреждение о границе задания",
+            "en": "Mission-boundary warning"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте границу и последствие до начала необратимого отсчёта.",
+        "en": "Communicate the boundary and consequence before an irreversible countdown begins."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Ghost Recon: Wildlands",
+        "url": "https://gamemechanics.org/patterns/leaving-mission-area"
+      }
+    ]
+  },
+  "game-mechanics--gm-forced-return-to-map": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Возврат в игровую область",
+      "en": "Forced return to the map"
+    },
+    "description": {
+      "ru": "Выход за допустимую границу возвращает персонажа в игровую область.",
+      "en": "Crossing an allowed boundary relocates the character back into play."
+    },
+    "image": {
+      "src": "images/mechanics/impact-forced-return-to-map.webp",
+      "width": 498,
+      "height": 268,
+      "game": "Far Cry 3",
+      "sourceUrl": "https://gamemechanics.org/patterns/forced-return-to-map",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/far_cry_3_map_edge.webm",
+      "sourceFrameSeconds": 0.88,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "За границей карты начинается отсчёт до возврата",
+        "en": "A return countdown starts beyond the map boundary"
+      },
+      "alt": {
+        "ru": "Far Cry 3: За границей карты начинается отсчёт до возврата.",
+        "en": "Far Cry 3: A return countdown starts beyond the map boundary."
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 43,
+          "label": {
+            "ru": "Предупреждение о выходе за границу",
+            "en": "Out-of-bounds warning"
+          }
+        },
+        {
+          "x": 50,
+          "y": 17,
+          "label": {
+            "ru": "Обратный отсчёт до принудительного возврата",
+            "en": "Countdown before forced return"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте достаточно времени развернуться и сохраняйте понятную ориентацию после возврата.",
+        "en": "Allow enough time to turn around and preserve clear orientation after return."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Far Cry 3",
+        "url": "https://gamemechanics.org/patterns/forced-return-to-map"
+      }
+    ]
+  },
+  "game-mechanics--gm-broken-sense-of-isolation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Нарушенное чувство одиночества",
+      "en": "Broken sense of isolation"
+    },
+    "description": {
+      "ru": "Неподходящие контакты или подсказки ослабляют задуманное уединение героя.",
+      "en": "Incongruous contact or guidance weakens an intended sense of isolation."
+    },
+    "image": {
+      "src": "images/mechanics/impact-broken-sense-of-isolation.webp",
+      "width": 900,
+      "height": 506,
+      "game": "Dead Space",
+      "sourceUrl": "https://gamemechanics.org/patterns/broken-sense-of-isolation",
+      "originalUrl": "https://cdn.gamemechanics.org/dead_space_radio.jpg",
+      "credit": "Electronic Arts; image via GameMechanics.org; visible source watermark: MKIceAndFire",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Входящий вызов во время одиночного исследования",
+        "en": "An incoming call during solitary exploration"
+      },
+      "alt": {
+        "ru": "Dead Space: Входящий вызов во время одиночного исследования.",
+        "en": "Dead Space: An incoming call during solitary exploration."
+      },
+      "markers": [
+        {
+          "x": 71,
+          "y": 60,
+          "label": {
+            "ru": "Входящий аудиовызов рядом с героем",
+            "en": "Incoming audio call beside the hero"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выбирайте частоту внешних контактов под нужное ощущение изоляции.",
+        "en": "Choose contact frequency to support the intended sense of isolation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dead Space",
+        "url": "https://gamemechanics.org/patterns/broken-sense-of-isolation"
+      }
+    ]
+  },
+  "game-mechanics--gm-fake-mirrors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зеркало без отражения героя",
+      "en": "Mirror without player reflection"
+    },
+    "description": {
+      "ru": "Поверхность выглядит зеркальной, но не показывает ожидаемое отражение. Из-за этого материал спорит с правилами восприятия сцены.",
+      "en": "A surface looks mirror-like but does not show the expected reflection, conflicting with the scene’s visual rules."
+    },
+    "image": {
+      "src": "images/mechanics/impact-fake-mirrors.webp",
+      "width": 600,
+      "height": 332,
+      "game": "Resident Evil 2",
+      "sourceUrl": "https://gamemechanics.org/patterns/fake-mirrors",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/resident_evil2_2019_mirror.webm",
+      "sourceFrameSeconds": 0.82,
+      "credit": "Capcom; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Леон перед поверхностью без своего отражения",
+        "en": "Leon faces a surface without his own reflection"
+      },
+      "alt": {
+        "ru": "Resident Evil 2: Леон перед поверхностью без своего отражения.",
+        "en": "Resident Evil 2: Leon faces a surface without his own reflection."
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 44,
+          "label": {
+            "ru": "Зеркальная поверхность без видимого героя",
+            "en": "Mirror-like surface without the visible hero"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте отражение героя и предметов с разных ракурсов или меняйте материал.",
+        "en": "Check hero and object reflections from different angles or change the material."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resident Evil 2",
+        "url": "https://gamemechanics.org/patterns/fake-mirrors"
+      }
+    ]
+  },
+  "game-mechanics--gm-all-or-nothing-gore": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повреждения «всё или ничего»",
+      "en": "All-or-nothing damage"
+    },
+    "description": {
+      "ru": "Видимые тяжёлые повреждения появляются лишь при переходе к смерти.",
+      "en": "Severe visible injury appears only when the target transitions to death."
+    },
+    "image": {
+      "src": "images/mechanics/impact-all-or-nothing-gore.webp",
+      "width": 598,
+      "height": 308,
+      "game": "F.E.A.R. 2: Project Origin",
+      "sourceUrl": "https://gamemechanics.org/patterns/all-or-nothing-gore",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/fear_2_splash_death2-mtfldrp2.webm",
+      "sourceFrameSeconds": 1.91,
+      "credit": "Monolith Productions; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Внешний вид резко меняется после смертельного урона",
+        "en": "Appearance changes abruptly after lethal damage"
+      },
+      "alt": {
+        "ru": "F.E.A.R. 2: Project Origin: Внешний вид резко меняется после смертельного урона.",
+        "en": "F.E.A.R. 2: Project Origin: Appearance changes abruptly after lethal damage."
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 40,
+          "label": {
+            "ru": "Резкий переход к разрушенной модели",
+            "en": "Abrupt transition to a destroyed model"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте переход состояния соразмерным игровому урону и стилю проекта.",
+        "en": "Match the state transition to gameplay damage and the project’s style."
+      }
+    ],
+    "examples": [
+      {
+        "title": "F.E.A.R. 2: Project Origin",
+        "url": "https://gamemechanics.org/patterns/all-or-nothing-gore"
+      }
+    ]
+  },
+  "game-mechanics--gm-over-the-top-blood-splashes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Избыточный эффект крови",
+      "en": "Excessive blood effects"
+    },
+    "description": {
+      "ru": "Эффект попадания использует нарочито большой объём крови.",
+      "en": "Hit effects use an exaggerated amount of blood."
+    },
+    "image": {
+      "src": "images/mechanics/impact-over-the-top-blood-splashes.webp",
+      "width": 600,
+      "height": 368,
+      "game": "RoboCop: Rogue City",
+      "sourceUrl": "https://gamemechanics.org/patterns/over-the-top-blood-splashes",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_multiple_hits2.webm",
+      "sourceFrameSeconds": 2.09,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Эффект крови сопоставим с силуэтом цели",
+        "en": "The blood effect rivals the target’s silhouette in size"
+      },
+      "alt": {
+        "ru": "RoboCop: Rogue City: Эффект крови сопоставим с силуэтом цели.",
+        "en": "RoboCop: Rogue City: The blood effect rivals the target’s silhouette in size."
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 56,
+          "label": {
+            "ru": "Большой объём частиц вокруг цели",
+            "en": "Large particle volume around the target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте силуэт цели, даже если стиль требует обильных эффектов.",
+        "en": "Preserve the target silhouette even when the style calls for abundant effects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City",
+        "url": "https://gamemechanics.org/patterns/over-the-top-blood-splashes"
+      }
+    ]
+  },
+  "game-mechanics--gm-player-as-savior": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Игрок как всеобщий спаситель",
+      "en": "Player as universal savior"
+    },
+    "description": {
+      "ru": "Окружение постоянно возлагает решение чужих проблем на персонажа игрока.",
+      "en": "The setting repeatedly relies on the player character to solve others' problems."
+    },
+    "image": {
+      "src": "images/mechanics/impact-player-as-savior.webp",
+      "width": 1344,
+      "height": 756,
+      "game": "Fallout 4",
+      "sourceUrl": "https://gamemechanics.org/patterns/player-as-savior",
+      "originalUrl": "https://cdn.gamemechanics.org/fallout-4-another-settlement.jpg",
+      "credit": "Bethesda Game Studios; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Престон просит помочь очередному поселению",
+        "en": "Preston asks for help for another settlement"
+      },
+      "alt": {
+        "ru": "Fallout 4: Престон просит помочь очередному поселению.",
+        "en": "Fallout 4: Preston asks for help for another settlement."
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 80,
+          "label": {
+            "ru": "Реплика передаёт герою новую задачу",
+            "en": "A line assigns another task to the hero"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте NPC решать часть задач самостоятельно и учитывайте отказ игрока.",
+        "en": "Let NPCs resolve some problems independently and account for player refusal."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Fallout 4",
+        "url": "https://gamemechanics.org/patterns/player-as-savior"
+      }
+    ]
   }
 }
