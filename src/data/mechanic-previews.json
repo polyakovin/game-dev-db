@@ -16466,5 +16466,2221 @@
         "url": "https://gamemechanics.org/patterns/player-as-savior"
       }
     ]
+  },
+  "movement-platforming--t004": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Инерция и сохранение скорости",
+      "en": "Momentum and speed retention"
+    },
+    "description": {
+      "ru": "Игрок разгоняется, тормозит и сохраняет импульс, выбирая между быстрым прохождением участка и возможностью точно изменить траекторию.",
+      "en": "The player accelerates, brakes and preserves momentum, trading fast traversal against precise trajectory changes."
+    },
+    "image": {
+      "src": "images/mechanics/priority-sonic-mania-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sonic Mania",
+      "sourceUrl": "https://store.steampowered.com/app/584400/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/ss_27efb8f61892a9bd732952c76dae9dd7ad1b6748.1920x1080.jpg?t=1785856230",
+      "credit": "Christian Whitehead / Headcannon / PagodaWest Games / SEGA",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Соник проходит изгиб рельефа",
+        "en": "Sonic crosses a curved section of terrain"
+      },
+      "alt": {
+        "ru": "Соник проходит изгиб рельефа",
+        "en": "Sonic crosses a curved section of terrain"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 74,
+          "label": {
+            "ru": "Движущийся герой",
+            "en": "Moving character"
+          }
+        },
+        {
+          "x": 33,
+          "y": 71,
+          "label": {
+            "ru": "Склон меняет направление движения",
+            "en": "The slope changes movement direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте разгон и торможение на склонах, а не только на ровной поверхности.",
+        "en": "Test acceleration and braking on slopes as well as flat ground."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Mania",
+        "url": "https://store.steampowered.com/app/584400/"
+      }
+    ]
+  },
+  "movement-platforming--t007": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Крюк, верёвки и раскачивание",
+      "en": "Grapples, ropes and swinging"
+    },
+    "description": {
+      "ru": "Игрок закрепляет связь с точкой мира, изменяет длину или натяжение и использует момент отпускания для переноса движения.",
+      "en": "The player connects to a world anchor, changes length or tension and uses release timing to carry motion onward."
+    },
+    "image": {
+      "src": "images/mechanics/traversal-wall-running-on-ropes.webp",
+      "width": 498,
+      "height": 278,
+      "game": "Uncharted: The Lost Legacy (2017)",
+      "sourceUrl": "https://gamemechanics.org/patterns/wall-running-on-ropes",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/uncharted_tll_rope_run.webm",
+      "sourceFrameSeconds": 1.68,
+      "credit": "Naughty Dog; clip via GameMechanics.org",
+      "rights": "© respective game rights holders. Clip source: GameMechanics.org. All rights reserved.",
+      "caption": {
+        "ru": "Героиня движется по стене на закреплённой верёвке",
+        "en": "The heroine traverses a wall on an anchored rope"
+      },
+      "alt": {
+        "ru": "Героиня движется по стене на закреплённой верёвке",
+        "en": "The heroine traverses a wall on an anchored rope"
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 62,
+          "label": {
+            "ru": "Героиня движется с опорой на верёвку",
+            "en": "The heroine moves while supported by the rope"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте точку крепления и момент безопасного отпускания читаемыми.",
+        "en": "Make the anchor and safe release moment readable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Uncharted: The Lost Legacy (2017)",
+        "url": "https://gamemechanics.org/patterns/wall-running-on-ropes"
+      }
+    ]
+  },
+  "movement-platforming--t010": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Раннеры и полосы препятствий",
+      "en": "Runners and obstacle courses"
+    },
+    "description": {
+      "ru": "Продвижение вперёд задано игрой или ожидаемой непрерывностью, а игрок выбирает момент уклонения и последовательность преодоления препятствий.",
+      "en": "Forward progress is imposed or expected to continue, while the player chooses dodge timing and obstacle-clearing sequences."
+    },
+    "image": {
+      "src": "images/mechanics/priority-mirrors-edge-01.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Mirror's Edge™",
+      "sourceUrl": "https://store.steampowered.com/app/17410/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17410/0000006706.1920x1080.jpg?t=1777394972",
+      "credit": "DICE / Electronic Arts",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Маршрут через шахту в Mirror’s Edge",
+        "en": "A route through a shaft in Mirror’s Edge"
+      },
+      "alt": {
+        "ru": "Маршрут через шахту в Mirror’s Edge",
+        "en": "A route through a shaft in Mirror’s Edge"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 54,
+          "label": {
+            "ru": "Выделенная красным опора на маршруте",
+            "en": "A red support marks the route"
+          }
+        },
+        {
+          "x": 48,
+          "y": 75,
+          "label": {
+            "ru": "Глубина шахты задаёт цену ошибки",
+            "en": "The shaft’s depth establishes the cost of a mistake"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте увидеть следующее препятствие до обязательного действия.",
+        "en": "Reveal the next obstacle before its required action."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mirror's Edge™",
+        "url": "https://store.steampowered.com/app/17410/"
+      }
+    ]
+  },
+  "melee-combat--t011": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рукопашный бой и beat ’em up",
+      "en": "Brawling and beat ’em up"
+    },
+    "description": {
+      "ru": "Игрок выбирает цель, дистанцию и направление удара, связывая перемещение с моментом безопасного контакта и выходом из окружения.",
+      "en": "The player chooses a target, distance and attack direction, connecting movement to safe contact timing and escape from surrounding enemies."
+    },
+    "image": {
+      "src": "images/mechanics/priority-streets-of-rage4-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Streets of Rage 4",
+      "sourceUrl": "https://store.steampowered.com/app/985890/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/985890/ss_4dcdd6d0cb38e3bcb747ac7cf69b6b608ae2d46a.1920x1080.jpg?t=1763718423",
+      "credit": "Dotemu / Guard Crush / Lizardcube",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Бой с несколькими противниками на платформе",
+        "en": "A fight against several enemies on a platform"
+      },
+      "alt": {
+        "ru": "Бой с несколькими противниками на платформе",
+        "en": "A fight against several enemies on a platform"
+      },
+      "markers": [
+        {
+          "x": 36,
+          "y": 55,
+          "label": {
+            "ru": "Удар по ближайшей цели",
+            "en": "Attack against the nearest target"
+          }
+        },
+        {
+          "x": 74,
+          "y": 60,
+          "label": {
+            "ru": "Противники с другого направления",
+            "en": "Enemies approach from another direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте зоны контакта и оставляйте путь выхода из окружения.",
+        "en": "Separate contact zones and leave a way out of surrounding enemies."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Streets of Rage 4",
+        "url": "https://store.steampowered.com/app/985890/"
+      }
+    ]
+  },
+  "melee-combat--t012": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Файтинг и дуэли",
+      "en": "Fighting games and duels"
+    },
+    "description": {
+      "ru": "Дуэль превращает дистанцию, подготовку и восстановление в обмен преимуществами: игрок провоцирует действие и выбирает подходящий ответ.",
+      "en": "A duel turns range, startup and recovery into exchanges of advantage: the player provokes an action and selects a response."
+    },
+    "image": {
+      "src": "images/mechanics/priority-street-fighter6-09.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Street Fighter™ 6",
+      "sourceUrl": "https://store.steampowered.com/app/1364780/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1364780/ss_201488fc9f1aa5e29e2fc6d96ef2b66e41ddf32e.1920x1080.jpg?t=1791866175",
+      "credit": "CAPCOM Co., Ltd.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Воздушный удар и низкая позиция соперника",
+        "en": "An airborne attack meets a low opponent position"
+      },
+      "alt": {
+        "ru": "Воздушный удар и низкая позиция соперника",
+        "en": "An airborne attack meets a low opponent position"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 50,
+          "label": {
+            "ru": "Атакующий боец в воздухе",
+            "en": "Attacking fighter in the air"
+          }
+        },
+        {
+          "x": 77,
+          "y": 74,
+          "label": {
+            "ru": "Низкая позиция второго бойца",
+            "en": "Second fighter’s low position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте дистанцию, подготовку и восстановление приёмов различимыми.",
+        "en": "Make range, startup and recovery distinguishable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Street Fighter™ 6",
+        "url": "https://store.steampowered.com/app/1364780/"
+      }
+    ]
+  },
+  "melee-combat--t013": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Комбо и character action",
+      "en": "Combos and character action"
+    },
+    "description": {
+      "ru": "Игрок связывает действия по разрешённым переходам, выбирая между надёжным завершением серии, продолжением давления и сохранением защитного ответа.",
+      "en": "The player connects actions through permitted transitions, trading reliable finishers against continued pressure and preserved defensive options."
+    },
+    "image": {
+      "src": "images/mechanics/priority-devil-may-cry5-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Devil May Cry 5",
+      "sourceUrl": "https://store.steampowered.com/app/601150/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/ss_d1e0b403f593f17ad195c5382a7788d71c6f406a.1920x1080.jpg?t=1790215341",
+      "credit": "CAPCOM Co., Ltd.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Широкий удар мечом в Devil May Cry 5",
+        "en": "A broad sword strike in Devil May Cry 5"
+      },
+      "alt": {
+        "ru": "Широкий удар мечом в Devil May Cry 5",
+        "en": "A broad sword strike in Devil May Cry 5"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 53,
+          "label": {
+            "ru": "Продолжение атаки мечом",
+            "en": "Sword attack in a sequence"
+          }
+        },
+        {
+          "x": 79,
+          "y": 62,
+          "label": {
+            "ru": "Цель в зоне ближнего удара",
+            "en": "Target within melee range"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте допустимые продолжения серии и момент возврата к защите.",
+        "en": "Distinguish valid combo follow-ups from the return to defense."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Devil May Cry 5",
+        "url": "https://store.steampowered.com/app/601150/"
+      }
+    ]
+  },
+  "melee-combat--t014": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бой с управлением выносливостью",
+      "en": "Stamina-based combat"
+    },
+    "description": {
+      "ru": "Игрок сохраняет возможность ответить на следующую угрозу, распределяя ресурс между атакой, уклонением, блоком и восстановлением позиции.",
+      "en": "The player preserves a response to the next threat by dividing a resource between attacking, dodging, blocking and repositioning."
+    },
+    "image": {
+      "src": "images/mechanics/dark-souls-stamina-manual.webp",
+      "width": 534,
+      "height": 287,
+      "game": "Dark Souls",
+      "sourceUrl": "https://store.steampowered.com/app/211420/",
+      "originalUrl": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/211420/manuals/DarkSouls_PC_Manual_Online_GB.pdf?t=1721682669#page=6",
+      "credit": "FromSoftware / Bandai Namco; screenshot extracted from official PC manual, PDF page 6",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Шкалы героя в официальном руководстве Dark Souls",
+        "en": "Character gauges in the official Dark Souls manual"
+      },
+      "alt": {
+        "ru": "Шкалы героя в официальном руководстве Dark Souls",
+        "en": "Character gauges in the official Dark Souls manual"
+      },
+      "markers": [
+        {
+          "x": 20,
+          "y": 10,
+          "label": {
+            "ru": "Выносливость под шкалой здоровья",
+            "en": "Stamina below the health gauge"
+          }
+        },
+        {
+          "x": 49,
+          "y": 65,
+          "label": {
+            "ru": "Герой с оружием и щитом",
+            "en": "Character carrying a weapon and shield"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Оставляйте понятную цену действий и время восстановления ресурса.",
+        "en": "Communicate action costs and resource recovery time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dark Souls",
+        "url": "https://store.steampowered.com/app/211420/"
+      }
+    ]
+  },
+  "melee-combat--t015": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Hack and slash",
+      "en": "Hack and slash"
+    },
+    "description": {
+      "ru": "Игрок поддерживает поток атак и выбирает порядок применения способностей, чтобы быстро разбирать группы с разными сопротивлениями и угрозами.",
+      "en": "The player sustains attacks and chooses ability order to clear groups with different resistances and threats efficiently."
+    },
+    "image": {
+      "src": "images/mechanics/priority-grim-dawn-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Grim Dawn",
+      "sourceUrl": "https://store.steampowered.com/app/219990/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219990/ss_163bf567dd0b246da53cf4d7d0724ac8d8a7e075.1920x1080.jpg?t=1791567021",
+      "credit": "Crate Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Способности героя против группы врагов",
+        "en": "The hero uses abilities against a group of enemies"
+      },
+      "alt": {
+        "ru": "Способности героя против группы врагов",
+        "en": "The hero uses abilities against a group of enemies"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 63,
+          "label": {
+            "ru": "Несколько целей в зоне действия",
+            "en": "Several targets within the affected area"
+          }
+        },
+        {
+          "x": 46,
+          "y": 96,
+          "label": {
+            "ru": "Панель выбранных способностей",
+            "en": "Selected ability bar"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте угрозы в толпе и сохраняйте видимость героя среди эффектов.",
+        "en": "Differentiate crowd threats and keep the hero visible among effects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grim Dawn",
+        "url": "https://store.steampowered.com/app/219990/"
+      }
+    ]
+  },
+  "melee-combat--t016": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Блок, парирование и контратаки",
+      "en": "Blocks, parries and counters"
+    },
+    "description": {
+      "ru": "Игрок сопоставляет защитное действие с направлением и временем угрозы; успешная защита может менять темп обмена, позицию или доступный ответ.",
+      "en": "The player matches a defense to threat direction and timing; success can change exchange tempo, position or the available response."
+    },
+    "image": {
+      "src": "images/mechanics/priority-dark-souls3-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "DARK SOULS™ III",
+      "sourceUrl": "https://store.steampowered.com/app/374320/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/ss_701aa9c2f62f458fd3c9a2bd9561ad5e7f41f662.1920x1080.jpg?t=1748630784",
+      "credit": "FromSoftware, Inc. / Bandai Namco Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Воин выставляет щит навстречу противнику",
+        "en": "A warrior raises a shield toward an enemy"
+      },
+      "alt": {
+        "ru": "Воин выставляет щит навстречу противнику",
+        "en": "A warrior raises a shield toward an enemy"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 39,
+          "label": {
+            "ru": "Щит перекрывает направление атаки",
+            "en": "Shield covers the incoming attack direction"
+          }
+        },
+        {
+          "x": 77,
+          "y": 63,
+          "label": {
+            "ru": "Противник перед защитником",
+            "en": "Enemy in front of the defender"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте удержание блока от короткого окна парирования.",
+        "en": "Distinguish a sustained block from a brief parry window."
+      }
+    ],
+    "examples": [
+      {
+        "title": "DARK SOULS™ III",
+        "url": "https://store.steampowered.com/app/374320/"
+      }
+    ]
+  },
+  "melee-combat--t017": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Захваты, броски и борьба",
+      "en": "Grabs, throws and wrestling"
+    },
+    "description": {
+      "ru": "Игрок устанавливает контролируемый контакт с целью и выбирает продолжение, ограничивая перемещение обоих участников на время взаимодействия.",
+      "en": "The player establishes controlled contact with a target and selects a follow-up, restricting both participants' movement during the interaction."
+    },
+    "image": {
+      "src": "images/mechanics/combat-throwing-enemies.webp",
+      "width": 600,
+      "height": 334,
+      "game": "RoboCop: Rogue City (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/throwing-enemies",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/robocop_throw_guy.webm",
+      "sourceFrameSeconds": 4.95,
+      "credit": "Teyon / Nacon; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Бросок противника в коридор",
+        "en": "Throwing an enemy down a corridor"
+      },
+      "alt": {
+        "ru": "Бросок противника в коридор",
+        "en": "Throwing an enemy down a corridor"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 60,
+          "label": {
+            "ru": "Противник в анимации броска",
+            "en": "Enemy during the throw animation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте позы участников и определите условия выхода из захвата.",
+        "en": "Coordinate both poses and define how to escape the grab."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoboCop: Rogue City (2023)",
+        "url": "https://gamemechanics.org/patterns/throwing-enemies"
+      }
+    ]
+  },
+  "melee-combat--t018": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бой с толпой",
+      "en": "Crowd combat"
+    },
+    "description": {
+      "ru": "Игрок управляет положением относительно нескольких угроз, распределяя внимание и создавая временные безопасные сектора вместо обмена ударами на месте.",
+      "en": "The player manages position relative to several threats, dividing attention and creating temporary safe sectors instead of trading hits in place."
+    },
+    "image": {
+      "src": "images/mechanics/priority-devil-may-cry5-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Devil May Cry 5",
+      "sourceUrl": "https://store.steampowered.com/app/601150/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/601150/ss_4ce180ed8979a51c72de51f985e9e9ba13500508.1920x1080.jpg?t=1790215341",
+      "credit": "CAPCOM Co., Ltd.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Атака по группе демонов в Devil May Cry 5",
+        "en": "An attack against several demons in Devil May Cry 5"
+      },
+      "alt": {
+        "ru": "Атака по группе демонов в Devil May Cry 5",
+        "en": "An attack against several demons in Devil May Cry 5"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 64,
+          "label": {
+            "ru": "Герой в центре нескольких угроз",
+            "en": "Hero among several threats"
+          }
+        },
+        {
+          "x": 29,
+          "y": 34,
+          "label": {
+            "ru": "Противники по краям области атаки",
+            "en": "Enemies around the attack area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не позволяйте всем врагам одновременно занимать одну и ту же точку атаки.",
+        "en": "Avoid having every enemy occupy the same attack position at once."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Devil May Cry 5",
+        "url": "https://store.steampowered.com/app/601150/"
+      }
+    ]
+  },
+  "melee-combat--t020": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушаемые части и ранения",
+      "en": "Destructible parts and wounds"
+    },
+    "description": {
+      "ru": "Игрок выбирает часть цели или тип воздействия, чтобы изменить её возможности, а не только уменьшить общий запас здоровья.",
+      "en": "The player selects a target part or effect type to change its capabilities rather than merely reduce shared health."
+    },
+    "image": {
+      "src": "images/mechanics/impact-cutting-in-half.webp",
+      "width": 498,
+      "height": 276,
+      "game": "Bulletstorm",
+      "sourceUrl": "https://gamemechanics.org/patterns/cutting-in-half",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/bulletstorm_boneduster.webm",
+      "sourceFrameSeconds": 0.41,
+      "credit": "People Can Fly / Epic Games; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разделение модели противника в Bulletstorm",
+        "en": "An enemy model separates in Bulletstorm"
+      },
+      "alt": {
+        "ru": "Разделение модели противника в Bulletstorm",
+        "en": "An enemy model separates in Bulletstorm"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 25,
+          "label": {
+            "ru": "Отделённая часть модели",
+            "en": "Detached model part"
+          }
+        },
+        {
+          "x": 51,
+          "y": 62,
+          "label": {
+            "ru": "Оставшаяся часть модели",
+            "en": "Remaining model part"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте изменение модели с понятным изменением возможностей цели.",
+        "en": "Connect model changes to clear changes in the target’s capabilities."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bulletstorm",
+        "url": "https://gamemechanics.org/patterns/cutting-in-half"
+      }
+    ]
+  },
+  "shooting-projectiles--t022": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Стрельба от третьего лица и укрытия",
+      "en": "Third-person shooting and cover"
+    },
+    "description": {
+      "ru": "Камера за персонажем позволяет читать окружение, а укрытие меняет доступные углы стрельбы и перемещения.",
+      "en": "A camera behind the character exposes surrounding space, while cover changes firing angles and movement options."
+    },
+    "image": {
+      "src": "images/mechanics/priority-the-division2-09.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Tom Clancy’s The Division® 2",
+      "sourceUrl": "https://store.steampowered.com/app/2221490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2221490/e09d80f7831b7dcacd4a3b2334d9ca6589ef25ca/ss_e09d80f7831b7dcacd4a3b2334d9ca6589ef25ca.1920x1080.jpg?t=1791884938",
+      "credit": "Ubisoft",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Агент использует фургон как укрытие",
+        "en": "An agent uses a van as cover"
+      },
+      "alt": {
+        "ru": "Агент использует фургон как укрытие",
+        "en": "An agent uses a van as cover"
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 70,
+          "label": {
+            "ru": "Герой у границы укрытия",
+            "en": "Character at the cover edge"
+          }
+        },
+        {
+          "x": 26,
+          "y": 42,
+          "label": {
+            "ru": "Фургон закрывает часть направлений огня",
+            "en": "The van blocks some firing directions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте линию выстрела и выход из укрытия отдельно от положения камеры.",
+        "en": "Check firing lines and cover exits separately from camera position."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s The Division® 2",
+        "url": "https://store.steampowered.com/app/2221490/"
+      }
+    ]
+  },
+  "shooting-projectiles--t023": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Арена-шутеры",
+      "en": "Arena shooters"
+    },
+    "description": {
+      "ru": "Арена превращает оружие, высоту и возобновляемые ресурсы в маршрут непрерывного движения и борьбы за контроль.",
+      "en": "An arena turns weapons, elevation and respawning resources into a route of continuous movement and control."
+    },
+    "image": {
+      "src": "images/mechanics/priority-doom-eternal-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "DOOM Eternal",
+      "sourceUrl": "https://store.steampowered.com/app/782330/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/ss_af3b43c4be0029b52ceefaf55ebe1918e2cb3471.1920x1080.jpg?t=1783432602",
+      "credit": "id Software / Bethesda Softworks",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Открытая боевая площадка с перепадами высоты",
+        "en": "An open combat area with elevation changes"
+      },
+      "alt": {
+        "ru": "Открытая боевая площадка с перепадами высоты",
+        "en": "An open combat area with elevation changes"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 76,
+          "label": {
+            "ru": "Проходы между участками арены",
+            "en": "Routes between arena sections"
+          }
+        },
+        {
+          "x": 84,
+          "y": 63,
+          "label": {
+            "ru": "Угроза в открытом пространстве",
+            "en": "Threat in open space"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте ресурсы и высотные позиции маршрутами без безопасного тупика.",
+        "en": "Connect resources and elevated positions with routes that avoid safe dead ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "DOOM Eternal",
+        "url": "https://store.steampowered.com/app/782330/"
+      }
+    ]
+  },
+  "shooting-projectiles--t024": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тактические шутеры",
+      "en": "Tactical shooters"
+    },
+    "description": {
+      "ru": "Короткое время поражения делает информацию, дисциплину позиции и согласованный выход важнее непрерывного огня.",
+      "en": "A short elimination window makes information, positional discipline and coordinated entry central decisions."
+    },
+    "image": {
+      "src": "images/mechanics/priority-counter-strike2-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Counter-Strike 2",
+      "sourceUrl": "https://store.steampowered.com/app/730/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_0f8cf82d019c614760fd20801f2bb4001da7ea77.1920x1080.jpg?t=1791824795",
+      "credit": "Valve",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Игрок проверяет узкий проход в Counter-Strike 2",
+        "en": "A player checks a narrow passage in Counter-Strike 2"
+      },
+      "alt": {
+        "ru": "Игрок проверяет узкий проход в Counter-Strike 2",
+        "en": "A player checks a narrow passage in Counter-Strike 2"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 58,
+          "label": {
+            "ru": "Угол ограничивает доступную информацию",
+            "en": "A corner limits available information"
+          }
+        },
+        {
+          "x": 61,
+          "y": 60,
+          "label": {
+            "ru": "Оружие направлено вдоль прохода",
+            "en": "Weapon aimed along the passage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте наблюдение, звук и линию огня полезными для решения о выходе.",
+        "en": "Make observation, sound and firing lines inform the decision to enter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Counter-Strike 2",
+        "url": "https://store.steampowered.com/app/730/"
+      }
+    ]
+  },
+  "shooting-projectiles--t025": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Геройские шутеры",
+      "en": "Hero shooters"
+    },
+    "description": {
+      "ru": "Уникальные способности героев меняют общую задачу стрельбы и создают зависимости между ролями команды.",
+      "en": "Distinct hero abilities modify shared shooting rules and create dependencies between team roles."
+    },
+    "image": {
+      "src": "images/mechanics/priority-overwatch2-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Overwatch®",
+      "sourceUrl": "https://store.steampowered.com/app/2357570/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2357570/b17b61def60cb8b3f693cb3a6b80152f7963b04e/ss_b17b61def60cb8b3f693cb3a6b80152f7963b04e.1920x1080.jpg?t=1791576843",
+      "credit": "Blizzard Entertainment, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Способности разных героев в общем сражении",
+        "en": "Different heroes use abilities in a shared fight"
+      },
+      "alt": {
+        "ru": "Способности разных героев в общем сражении",
+        "en": "Different heroes use abilities in a shared fight"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 64,
+          "label": {
+            "ru": "Способность создаёт заметную область воздействия",
+            "en": "An ability creates a visible affected area"
+          }
+        },
+        {
+          "x": 80,
+          "y": 45,
+          "label": {
+            "ru": "Другой герой действует рядом",
+            "en": "Another hero acts nearby"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте роль героя и общие правила стрельбы; показывайте эффекты союзникам.",
+        "en": "Distinguish hero roles from shared shooting rules and show effects to teammates."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Overwatch®",
+        "url": "https://store.steampowered.com/app/2357570/"
+      }
+    ]
+  },
+  "shooting-projectiles--t026": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лутер-шутеры",
+      "en": "Looter shooters"
+    },
+    "description": {
+      "ru": "Стрельба добывает снаряжение, а свойства добычи меняют последующий стиль боя и выбор цели.",
+      "en": "Shooting produces equipment whose properties reshape later combat and target selection."
+    },
+    "image": {
+      "src": "images/mechanics/borderlands2-inventory-manual.webp",
+      "width": 499,
+      "height": 281,
+      "game": "Borderlands 2",
+      "sourceUrl": "https://store.steampowered.com/manual/49520/",
+      "originalUrl": "https://store.steampowered.com/manual/49520/#page=11",
+      "credit": "Gearbox Software / 2K; screenshot extracted from official PC manual, PDF page 11",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выбор оружия и сравнение его параметров",
+        "en": "Weapon selection and stat comparison"
+      },
+      "alt": {
+        "ru": "Выбор оружия и сравнение его параметров",
+        "en": "Weapon selection and stat comparison"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 30,
+          "label": {
+            "ru": "Карточка оружия с параметрами",
+            "en": "Weapon card with statistics"
+          }
+        },
+        {
+          "x": 52,
+          "y": 37,
+          "label": {
+            "ru": "Ячейка экипированного оружия",
+            "en": "Equipped weapon slot"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, как новая добыча меняет действия в бою, а не только число урона.",
+        "en": "Show how new loot changes combat actions as well as damage numbers."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Borderlands 2",
+        "url": "https://store.steampowered.com/manual/49520/"
+      }
+    ]
+  },
+  "shooting-projectiles--t027": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Extraction-шутеры",
+      "en": "Extraction shooters"
+    },
+    "description": {
+      "ru": "Вылазка заканчивается только при эвакуации; добыча увеличивает будущую ценность выхода и риск продолжения.",
+      "en": "A sortie ends only upon extraction; acquired loot raises both the value of leaving and the risk of continuing."
+    },
+    "image": {
+      "src": "images/mechanics/hunt-extraction-guide.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 240,
+        "y": 0,
+        "width": 960,
+        "height": 600
+      },
+      "game": "Hunt: Showdown 1896",
+      "sourceUrl": "https://www.huntshowdown.com/player-guide/en_US",
+      "originalUrl": "https://www.huntshowdown.com/files/playerguide/landing/Phase2_Step6_poster2448.jpg",
+      "credit": "Crytek; extraction screenshot from official player guide",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Лодка и отсчёт эвакуации в Hunt",
+        "en": "A boat and extraction countdown in Hunt"
+      },
+      "alt": {
+        "ru": "Лодка и отсчёт эвакуации в Hunt",
+        "en": "A boat and extraction countdown in Hunt"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 36,
+          "label": {
+            "ru": "До завершения эвакуации остаётся 30 секунд",
+            "en": "Extraction countdown shows 30 seconds"
+          }
+        },
+        {
+          "x": 50,
+          "y": 18,
+          "label": {
+            "ru": "Лодка обозначает место выхода",
+            "en": "The boat marks the extraction location"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте получение добычи от её сохранения после успешного выхода.",
+        "en": "Distinguish acquiring loot from securing it through a successful extraction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hunt: Showdown 1896",
+        "url": "https://www.huntshowdown.com/player-guide/en_US"
+      }
+    ]
+  },
+  "shooting-projectiles--t028": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рельсовые и light-gun-шутеры",
+      "en": "Rail and light-gun shooters"
+    },
+    "description": {
+      "ru": "Маршрут камеры задан системой, а игрок распределяет внимание между целями, угрозами и окнами выстрела.",
+      "en": "The system fixes the camera route while the player allocates attention among targets, threats and firing windows."
+    },
+    "image": {
+      "src": "images/mechanics/priority-house-of-the-dead-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "THE HOUSE OF THE DEAD: Remake",
+      "sourceUrl": "https://store.steampowered.com/app/1694600/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1694600/ss_ae7abb78e57ba73aa67a6803377e402b8608439b.1920x1080.jpg?t=1784895759",
+      "credit": "MegaPixel Studio S. A. / Forever Entertainment S. A.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Противники появляются перед заданной камерой",
+        "en": "Enemies appear in front of a system-driven camera"
+      },
+      "alt": {
+        "ru": "Противники появляются перед заданной камерой",
+        "en": "Enemies appear in front of a system-driven camera"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 50,
+          "label": {
+            "ru": "Близкая цель требует быстрой реакции",
+            "en": "A nearby target demands a quick reaction"
+          }
+        },
+        {
+          "x": 78,
+          "y": 50,
+          "label": {
+            "ru": "Дополнительная угроза в глубине кадра",
+            "en": "Another threat deeper in the scene"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте время распознать цель после смены ракурса.",
+        "en": "Allow time to recognize a target after a camera change."
+      }
+    ],
+    "examples": [
+      {
+        "title": "THE HOUSE OF THE DEAD: Remake",
+        "url": "https://store.steampowered.com/app/1694600/"
+      }
+    ]
+  },
+  "shooting-projectiles--t029": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Независимые движение и прицел",
+      "en": "Independent movement and aim"
+    },
+    "description": {
+      "ru": "Перемещение и направление огня управляются независимо, создавая бой на отступлении и удержание дистанции.",
+      "en": "Movement and firing direction are independent, enabling retreating attacks and deliberate range control."
+    },
+    "image": {
+      "src": "images/mechanics/gungeon-bullet-rings.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://store.steampowered.com/app/311690/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/311690/ss_0893ef2bd93d4e9e2138006424d088523a5daecd.1920x1080.jpg?t=1779733990",
+      "credit": "Dodge Roll / Devolver Digital",
+      "rights": "© Dodge Roll / Devolver Digital. All rights reserved.",
+      "caption": {
+        "ru": "Герой выбирает позицию среди колец снарядов",
+        "en": "The hero chooses a position among projectile rings"
+      },
+      "alt": {
+        "ru": "Герой выбирает позицию среди колец снарядов",
+        "en": "The hero chooses a position among projectile rings"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 50,
+          "label": {
+            "ru": "Направление перемещения выбирается отдельно от огня",
+            "en": "Movement direction is chosen separately from shooting"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте удобство одновременного движения и изменения направления огня.",
+        "en": "Test comfort when moving and changing fire direction at the same time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://store.steampowered.com/app/311690/"
+      }
+    ]
+  },
+  "goals-feedback--t271": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Счёт, серии и рекорды",
+      "en": "Scores, combos and records"
+    },
+    "description": {
+      "ru": "Счёт оценивает действия, а серии и множители связывают награду с последовательностью и устойчивостью исполнения.",
+      "en": "Scores evaluate actions while combos and multipliers link rewards to sequence and consistent execution."
+    },
+    "image": {
+      "src": "images/mechanics/priority-sonic-mania-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sonic Mania",
+      "sourceUrl": "https://store.steampowered.com/app/584400/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/ss_27efb8f61892a9bd732952c76dae9dd7ad1b6748.1920x1080.jpg?t=1785856230",
+      "credit": "Christian Whitehead / Headcannon / PagodaWest Games / SEGA",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Счёт рядом со временем и собранными кольцами",
+        "en": "Score beside time and collected rings"
+      },
+      "alt": {
+        "ru": "Счёт рядом со временем и собранными кольцами",
+        "en": "Score beside time and collected rings"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 8,
+          "label": {
+            "ru": "Счёт за действия игрока",
+            "en": "Score earned through player actions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте причину начисления очков и условия сохранения серии.",
+        "en": "Explain why points are awarded and what preserves a combo."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Mania",
+        "url": "https://store.steampowered.com/app/584400/"
+      }
+    ]
+  },
+  "goals-feedback--t272": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прохождение на время",
+      "en": "Timed completion and speedruns"
+    },
+    "description": {
+      "ru": "Прохождение на время превращает маршрут, переходы и надёжность исполнения в совместную задачу минимизации длительности.",
+      "en": "Timed completion turns routing, transitions and execution reliability into a shared duration-minimization problem."
+    },
+    "image": {
+      "src": "images/mechanics/priority-sonic-mania-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sonic Mania",
+      "sourceUrl": "https://store.steampowered.com/app/584400/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/ss_27efb8f61892a9bd732952c76dae9dd7ad1b6748.1920x1080.jpg?t=1785856230",
+      "credit": "Christian Whitehead / Headcannon / PagodaWest Games / SEGA",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Таймер прохождения участка в Sonic Mania",
+        "en": "Section timer in Sonic Mania"
+      },
+      "alt": {
+        "ru": "Таймер прохождения участка в Sonic Mania",
+        "en": "Section timer in Sonic Mania"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 14,
+          "label": {
+            "ru": "Текущее время прохождения",
+            "en": "Current completion time"
+          }
+        },
+        {
+          "x": 51,
+          "y": 74,
+          "label": {
+            "ru": "Действия героя определяют темп маршрута",
+            "en": "Character actions determine route pace"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте время попытки, личный рекорд и цену безопасного маршрута.",
+        "en": "Separate attempt time, personal best and the cost of a safer route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Mania",
+        "url": "https://store.steampowered.com/app/584400/"
+      }
+    ]
+  },
+  "goals-feedback--t277": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обратная связь и читаемость",
+      "en": "Feedback and readability"
+    },
+    "description": {
+      "ru": "Обратная связь делает состояние и причинность действия читаемыми через согласованное изображение, звук, движение и тактильный ответ.",
+      "en": "Feedback makes state and action causality readable through coordinated visuals, sound, motion and tactile response."
+    },
+    "image": {
+      "src": "images/mechanics/combat-player-damage-feedback.webp",
+      "width": 600,
+      "height": 478,
+      "game": "Return to Castle Wolfenstein (2001)",
+      "sourceUrl": "https://gamemechanics.org/patterns/player-damage-feedback",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/rtcw_damage.webm",
+      "sourceFrameSeconds": 0.23,
+      "credit": "Gray Matter Interactive / id Software; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Игра показывает полученный героем урон",
+        "en": "The game signals damage received by the hero"
+      },
+      "alt": {
+        "ru": "Игра показывает полученный героем урон",
+        "en": "The game signals damage received by the hero"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 48,
+          "label": {
+            "ru": "Сигнал попадания в поле зрения",
+            "en": "Hit feedback within the view"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте изображение, звук и изменение чисел с одним игровым событием.",
+        "en": "Align visuals, sound and numerical changes with the same gameplay event."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Return to Castle Wolfenstein (2001)",
+        "url": "https://gamemechanics.org/patterns/player-damage-feedback"
+      }
+    ]
+  },
+  "goals-feedback--t278": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Интерфейс как игровое пространство",
+      "en": "Interface as a play space"
+    },
+    "description": {
+      "ru": "Интерфейс становится игровым пространством, когда размещение, соединение или чтение его элементов непосредственно меняет решение задачи.",
+      "en": "Interfaces become play spaces when placing, connecting or interpreting their elements directly changes a challenge's solution."
+    },
+    "image": {
+      "src": "images/mechanics/combat-tetris-inventory.webp",
+      "width": 1024,
+      "height": 576,
+      "crop": {
+        "x": 245,
+        "y": 68,
+        "width": 515,
+        "height": 370
+      },
+      "game": "Resident Evil 4 (2023)",
+      "sourceUrl": "https://gamemechanics.org/patterns/tetris-inventory",
+      "originalUrl": "https://cdn.gamemechanics.org/resident_evil_4_remake_inventory.jpg",
+      "credit": "Capcom; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Предметы занимают место в сетке чемодана",
+        "en": "Items occupy cells in the case grid"
+      },
+      "alt": {
+        "ru": "Предметы занимают место в сетке чемодана",
+        "en": "Items occupy cells in the case grid"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 45,
+          "label": {
+            "ru": "Форма предмета влияет на укладку",
+            "en": "An item’s shape affects packing"
+          }
+        },
+        {
+          "x": 70,
+          "y": 62,
+          "label": {
+            "ru": "Свободные ячейки ограничивают следующее размещение",
+            "en": "Free cells constrain the next placement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ограничения размещения до подтверждения действия.",
+        "en": "Show placement constraints before an action is confirmed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Resident Evil 4 (2023)",
+        "url": "https://gamemechanics.org/patterns/tetris-inventory"
+      }
+    ]
+  },
+  "economy-exchange--t088": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Торговля и торговые маршруты",
+      "en": "Trade and trade routes"
+    },
+    "description": {
+      "ru": "Торговля переносит товар между местами с разной потребностью, а маршрут связывает маржу со временем и риском.",
+      "en": "Trade moves goods between locations with different needs; routes connect margin to travel time and risk."
+    },
+    "image": {
+      "src": "images/mechanics/priority-anno1800-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Anno 1800",
+      "sourceUrl": "https://store.steampowered.com/app/916440/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/916440/957eb75b4ed13d3d313e0cda02b2486c99207f3b/ss_957eb75b4ed13d3d313e0cda02b2486c99207f3b.1920x1080.jpg?t=1791465786",
+      "credit": "Ubisoft Mainz / Ubisoft",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Корабли и торговый порт в Anno 1800",
+        "en": "Ships and a trading harbor in Anno 1800"
+      },
+      "alt": {
+        "ru": "Корабли и торговый порт в Anno 1800",
+        "en": "Ships and a trading harbor in Anno 1800"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 67,
+          "label": {
+            "ru": "Корабль связывает удалённые порты",
+            "en": "A ship connects distant ports"
+          }
+        },
+        {
+          "x": 61,
+          "y": 42,
+          "label": {
+            "ru": "Порт принимает морские перевозки",
+            "en": "A harbor receives sea transport"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте время рейса, вместимость и риск наряду с разницей цен.",
+        "en": "Account for travel time, capacity and risk alongside price differences."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Anno 1800",
+        "url": "https://store.steampowered.com/app/916440/"
+      }
+    ]
+  },
+  "economy-exchange--t089": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Спрос, предложение и цены",
+      "en": "Supply, demand and prices"
+    },
+    "description": {
+      "ru": "Цена отражает доступность товара и готовность потребителей покупать, создавая обратную связь между поставкой и спросом.",
+      "en": "Prices reflect availability and willingness to buy, creating feedback between supply and demand."
+    },
+    "image": {
+      "src": "images/mechanics/priority-offworld-trading-00.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 675,
+        "height": 675
+      },
+      "game": "Offworld Trading Company",
+      "sourceUrl": "https://store.steampowered.com/app/271240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/ss_fdb1d1301e763bd7cdbed153a2e83a2801bbdc67.1920x1080.jpg?t=1790866876",
+      "credit": "Mohawk Games / Stardock Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Запасы ресурсов и разные рыночные цены",
+        "en": "Resource stocks and distinct market prices"
+      },
+      "alt": {
+        "ru": "Запасы ресурсов и разные рыночные цены",
+        "en": "Resource stocks and distinct market prices"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 16,
+          "label": {
+            "ru": "Цена ресурса на рынке",
+            "en": "Resource market price"
+          }
+        },
+        {
+          "x": 10,
+          "y": 16,
+          "label": {
+            "ru": "Текущий запас ресурса",
+            "en": "Current resource stock"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте причину изменения цены и задержку реакции рынка.",
+        "en": "Show why a price changes and how quickly the market responds."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Offworld Trading Company",
+        "url": "https://store.steampowered.com/app/271240/"
+      }
+    ]
+  },
+  "economy-exchange--t090": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рынки, аукционы и торги",
+      "en": "Markets, auctions and bidding"
+    },
+    "description": {
+      "ru": "Аукцион распределяет ограниченный объект через конкурирующие предложения, а рынок показывает доступные условия обмена.",
+      "en": "Auctions allocate scarce objects through competing offers while markets expose available exchange conditions."
+    },
+    "image": {
+      "src": "images/mechanics/priority-offworld-trading-00.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 1050,
+        "y": 0,
+        "width": 390,
+        "height": 488
+      },
+      "game": "Offworld Trading Company",
+      "sourceUrl": "https://store.steampowered.com/app/271240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/ss_fdb1d1301e763bd7cdbed153a2e83a2801bbdc67.1920x1080.jpg?t=1790866876",
+      "credit": "Mohawk Games / Stardock Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Котировки корпораций и продажа акций",
+        "en": "Corporate share prices and sell actions"
+      },
+      "alt": {
+        "ru": "Котировки корпораций и продажа акций",
+        "en": "Corporate share prices and sell actions"
+      },
+      "markers": [
+        {
+          "x": 94,
+          "y": 7,
+          "label": {
+            "ru": "Текущая котировка корпорации",
+            "en": "Current corporate share price"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте объект сделки, цену и момент окончательного подтверждения.",
+        "en": "Show the traded asset, price and final confirmation moment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Offworld Trading Company",
+        "url": "https://store.steampowered.com/app/271240/"
+      }
+    ]
+  },
+  "economy-exchange--t091": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бартер и оценка сделки",
+      "en": "Barter and deal evaluation"
+    },
+    "description": {
+      "ru": "Бартер сопоставляет субъективную полезность разных вещей, позволяя улучшать предложение уступками и условиями.",
+      "en": "Barter compares subjective item utility and improves offers through concessions and conditions."
+    },
+    "image": {
+      "src": "images/mechanics/borderlands2-trade-manual.webp",
+      "width": 352,
+      "height": 204,
+      "game": "Borderlands 2",
+      "sourceUrl": "https://store.steampowered.com/manual/49520/",
+      "originalUrl": "https://store.steampowered.com/manual/49520/#page=13",
+      "credit": "Gearbox Software / 2K; screenshot extracted from official PC manual, PDF page 13",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Предложения двух игроков перед подтверждением",
+        "en": "Two players’ offers before confirmation"
+      },
+      "alt": {
+        "ru": "Предложения двух игроков перед подтверждением",
+        "en": "Two players’ offers before confirmation"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 26,
+          "label": {
+            "ru": "Предметы, которые игрок предлагает",
+            "en": "Items offered by the player"
+          }
+        },
+        {
+          "x": 55,
+          "y": 26,
+          "label": {
+            "ru": "Предметы, которые игрок получает",
+            "en": "Items received by the player"
+          }
+        },
+        {
+          "x": 41,
+          "y": 73,
+          "label": {
+            "ru": "Подтверждение обмена",
+            "en": "Trade confirmation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте обе стороны сделки и отменяйте согласие после изменения предложения.",
+        "en": "Show both sides and reset agreement when an offer changes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Borderlands 2",
+        "url": "https://store.steampowered.com/manual/49520/"
+      }
+    ]
+  },
+  "economy-exchange--t092": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бюджеты, долг и инвестиции",
+      "en": "Budgets, debt and investment"
+    },
+    "description": {
+      "ru": "Игровой бюджет ограничивает текущие расходы, а долг и вложения перераспределяют возможности между настоящими и будущими ходами.",
+      "en": "An in-game budget limits current spending while debt and investment redistribute options between present and future turns."
+    },
+    "image": {
+      "src": "images/mechanics/priority-offworld-trading-00.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 675,
+        "height": 600
+      },
+      "game": "Offworld Trading Company",
+      "sourceUrl": "https://store.steampowered.com/app/271240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/ss_fdb1d1301e763bd7cdbed153a2e83a2801bbdc67.1920x1080.jpg?t=1790866876",
+      "credit": "Mohawk Games / Stardock Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Доступные средства и накопленный долг",
+        "en": "Available cash and accumulated debt"
+      },
+      "alt": {
+        "ru": "Доступные средства и накопленный долг",
+        "en": "Available cash and accumulated debt"
+      },
+      "markers": [
+        {
+          "x": 15,
+          "y": 4,
+          "label": {
+            "ru": "Доступные средства и сумма долга",
+            "en": "Available cash and debt amount"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте текущий запас денег от дохода за ход и будущих обязательств.",
+        "en": "Separate current cash from income per turn and future obligations."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Offworld Trading Company",
+        "url": "https://store.steampowered.com/app/271240/"
+      }
+    ]
+  },
+  "economy-exchange--t093": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Контракты и заказы",
+      "en": "Contracts and orders"
+    },
+    "description": {
+      "ru": "Контракт связывает награду с явными условиями поставки, качества и срока, превращая обещание в план использования ресурсов.",
+      "en": "A contract connects payment to delivery, quality and timing conditions, turning a promise into a resource plan."
+    },
+    "image": {
+      "src": "images/mechanics/borderlands2-mission-log-manual.webp",
+      "width": 499,
+      "height": 281,
+      "game": "Borderlands 2",
+      "sourceUrl": "https://store.steampowered.com/manual/49520/",
+      "originalUrl": "https://store.steampowered.com/manual/49520/#page=11",
+      "credit": "Gearbox Software / 2K; screenshot extracted from official PC manual, PDF page 11",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Журнал показывает цель задания и награду",
+        "en": "The log shows a mission objective and reward"
+      },
+      "alt": {
+        "ru": "Журнал показывает цель задания и награду",
+        "en": "The log shows a mission objective and reward"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 34,
+          "label": {
+            "ru": "Условие выполнения задания",
+            "en": "Mission completion condition"
+          }
+        },
+        {
+          "x": 31,
+          "y": 80,
+          "label": {
+            "ru": "Награда за выполнение",
+            "en": "Reward for completion"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Фиксируйте условия и награду до принятия обязательства.",
+        "en": "State conditions and rewards before the commitment is accepted."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Borderlands 2",
+        "url": "https://store.steampowered.com/manual/49520/"
+      }
+    ]
+  },
+  "economy-exchange--t094": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Собственность, аренда и налоги",
+      "en": "Ownership, rent and taxes"
+    },
+    "description": {
+      "ru": "Собственность определяет право использования объекта, аренда ограничивает его срок, а налог связывает владение с регулярным платежом.",
+      "en": "Ownership grants usage rights, rent limits their duration and taxation connects holding an asset to recurring payment."
+    },
+    "image": {
+      "src": "images/mechanics/priority-victoria3-06.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 0,
+        "y": 75,
+        "width": 600,
+        "height": 713
+      },
+      "game": "Victoria 3",
+      "sourceUrl": "https://store.steampowered.com/app/529340/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/529340/67b8a722d24c05abe47444df64ad6201f893678d/ss_67b8a722d24c05abe47444df64ad6201f893678d.1920x1080.jpg?t=1791467998",
+      "credit": "Paradox Development Studio / Paradox Interactive",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Налоговые поступления в государственном бюджете",
+        "en": "Tax revenue within the national budget"
+      },
+      "alt": {
+        "ru": "Налоговые поступления в государственном бюджете",
+        "en": "Tax revenue within the national budget"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 38,
+          "label": {
+            "ru": "Выбранный уровень налогообложения",
+            "en": "Selected taxation level"
+          }
+        },
+        {
+          "x": 18,
+          "y": 50,
+          "label": {
+            "ru": "Доходы от налогов на потребление",
+            "en": "Revenue from consumption taxes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте право владения и регулярную стоимость содержания.",
+        "en": "Separate ownership rights from recurring upkeep costs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Victoria 3",
+        "url": "https://store.steampowered.com/app/529340/"
+      }
+    ]
+  },
+  "economy-exchange--t095": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дефицит и ресурсные стоки",
+      "en": "Scarcity and resource sinks"
+    },
+    "description": {
+      "ru": "Ограничение предложения и удаление ресурсов регулируют их ценность, а рост денежной массы меняет доступность игровых покупок.",
+      "en": "Supply limits and resource removal regulate value while currency growth changes access to in-game purchases."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-shop.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss4.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Покупки обменивают золото на ограниченные предложения",
+        "en": "Purchases exchange gold for limited offers"
+      },
+      "alt": {
+        "ru": "Покупки обменивают золото на ограниченные предложения",
+        "en": "Purchases exchange gold for limited offers"
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 80,
+          "label": {
+            "ru": "Удаление карты расходует золото",
+            "en": "Removing a card spends gold"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сопоставляйте источники валюты с расходами, сохраняющими полезность выбора.",
+        "en": "Balance currency sources with sinks that preserve meaningful choices."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "economy-exchange--t096": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Экономическое соперничество",
+      "en": "Economic competition"
+    },
+    "description": {
+      "ru": "Конкуренты борются за ограниченные возможности, но специализация и обмен могут сделать их взаимно зависимыми.",
+      "en": "Competitors contest limited opportunities, while specialization and exchange can make them mutually dependent."
+    },
+    "image": {
+      "src": "images/mechanics/priority-offworld-trading-00.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 863,
+        "y": 0,
+        "width": 577,
+        "height": 563
+      },
+      "game": "Offworld Trading Company",
+      "sourceUrl": "https://store.steampowered.com/app/271240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/ss_fdb1d1301e763bd7cdbed153a2e83a2801bbdc67.1920x1080.jpg?t=1790866876",
+      "credit": "Mohawk Games / Stardock Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Корпорации соперничают за ресурсы и доли рынка",
+        "en": "Corporations compete for resources and market ownership"
+      },
+      "alt": {
+        "ru": "Корпорации соперничают за ресурсы и доли рынка",
+        "en": "Corporations compete for resources and market ownership"
+      },
+      "markers": [
+        {
+          "x": 92,
+          "y": 7,
+          "label": {
+            "ru": "Стоимость одной корпорации",
+            "en": "One corporation’s share value"
+          }
+        },
+        {
+          "x": 92,
+          "y": 19,
+          "label": {
+            "ru": "Стоимость конкурирующей корпорации",
+            "en": "A competing corporation’s share value"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Создавайте способы конкурировать за возможности, а не только за размер запаса.",
+        "en": "Create competition over opportunities as well as accumulated wealth."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Offworld Trading Company",
+        "url": "https://store.steampowered.com/app/271240/"
+      }
+    ]
+  },
+  "progression-rewards--t240": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Открытие новых возможностей",
+      "en": "Unlocking new possibilities"
+    },
+    "description": {
+      "ru": "Открытие способности расширяет набор допустимых действий и позволяет переосмыслить ранее недоступные задачи.",
+      "en": "Unlocking an ability expands legal actions and allows previously inaccessible challenges to be reconsidered."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-unlocks.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss20.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Постоянное открытие новых карт для будущих забегов",
+        "en": "Permanent card unlocks for future runs"
+      },
+      "alt": {
+        "ru": "Постоянное открытие новых карт для будущих забегов",
+        "en": "Permanent card unlocks for future runs"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 45,
+          "label": {
+            "ru": "Новые элементы расширяют будущий набор действий",
+            "en": "New elements expand future action options"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Возвращайте игрока к задачам, которые раскрывают пользу нового действия.",
+        "en": "Revisit challenges that reveal the value of a newly unlocked action."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "progression-rewards--t242": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Достижения и испытания",
+      "en": "Achievements and challenges"
+    },
+    "description": {
+      "ru": "Испытание задаёт отдельный критерий мастерства и отмечает способ выполнения, выходящий за обычное завершение задачи.",
+      "en": "A challenge sets a separate mastery criterion and recognizes execution beyond ordinary objective completion."
+    },
+    "image": {
+      "src": "images/mechanics/monster-train-challenge.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Monster Train",
+      "sourceUrl": "https://store.steampowered.com/app/1102190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1102190/ss_482b7d543a1e5773eb469b4702258b7eb34f2da1.1920x1080.jpg?t=1779381275",
+      "credit": "Shiny Shoe / Good Shepherd Entertainment",
+      "rights": "© Shiny Shoe / Good Shepherd Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Отдельные условия испытания в Monster Train",
+        "en": "Distinct challenge conditions in Monster Train"
+      },
+      "alt": {
+        "ru": "Отдельные условия испытания в Monster Train",
+        "en": "Distinct challenge conditions in Monster Train"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 44,
+          "label": {
+            "ru": "Параметры отдельного испытания",
+            "en": "Parameters of a distinct challenge"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Описывайте проверяемое условие и показывайте прогресс его выполнения.",
+        "en": "Describe the checked condition and show progress toward it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Train",
+        "url": "https://store.steampowered.com/app/1102190/"
+      }
+    ]
+  },
+  "progression-rewards--t243": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лут и редкость наград",
+      "en": "Loot and reward rarity"
+    },
+    "description": {
+      "ru": "Система добычи распределяет награды по условиям и вероятностям, связывая неопределённость с понятным направлением поиска.",
+      "en": "A loot system distributes rewards through conditions and probabilities, connecting uncertainty to a clear search direction."
+    },
+    "image": {
+      "src": "images/mechanics/priority-grim-dawn-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Grim Dawn",
+      "sourceUrl": "https://store.steampowered.com/app/219990/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219990/ss_925b8ae450ec79c00b987528e579bc999d48adfa.1920x1080.jpg?t=1791567021",
+      "credit": "Crate Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Добыча на земле отмечена цветными лучами",
+        "en": "Loot on the ground is marked by colored beams"
+      },
+      "alt": {
+        "ru": "Добыча на земле отмечена цветными лучами",
+        "en": "Loot on the ground is marked by colored beams"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 43,
+          "label": {
+            "ru": "Группы предметов с цветовой маркировкой",
+            "en": "Groups of color-marked items"
+          }
+        },
+        {
+          "x": 20,
+          "y": 27,
+          "label": {
+            "ru": "Выделенная добыча среди окружения",
+            "en": "Loot distinguished from the environment"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дублируйте редкость текстом или формой и обозначайте способы поиска награды.",
+        "en": "Back rarity colors with text or shape and show how to pursue a reward."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grim Dawn",
+        "url": "https://store.steampowered.com/app/219990/"
+      }
+    ]
+  },
+  "progression-rewards--t244": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Idle и накопительный прогресс",
+      "en": "Idle and incremental progression"
+    },
+    "description": {
+      "ru": "Накопление продолжается с ограниченным участием игрока, который выбирает улучшения и периодически меняет устройство производства.",
+      "en": "Accumulation continues with limited player attention while upgrades periodically change the production structure."
+    },
+    "image": {
+      "src": "images/mechanics/priority-cookie-clicker-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Cookie Clicker",
+      "sourceUrl": "https://store.steampowered.com/app/1454400/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1454400/ss_0ccbd62dbbf733bf630885d76f7bdf61af93d0be.1920x1080.jpg?t=1792369237",
+      "credit": "Orteil / DashNet / Playsaurus",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Производство печенья и покупка новых зданий",
+        "en": "Cookie production and building purchases"
+      },
+      "alt": {
+        "ru": "Производство печенья и покупка новых зданий",
+        "en": "Cookie production and building purchases"
+      },
+      "markers": [
+        {
+          "x": 16,
+          "y": 21,
+          "label": {
+            "ru": "Накопленная валюта",
+            "en": "Accumulated currency"
+          }
+        },
+        {
+          "x": 91,
+          "y": 41,
+          "label": {
+            "ru": "Покупки меняют темп производства",
+            "en": "Purchases change the production rate"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте прирост от улучшения и ограничивайте бесконечное ожидание.",
+        "en": "Show each upgrade’s production gain and avoid unbounded waiting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cookie Clicker",
+        "url": "https://store.steampowered.com/app/1454400/"
+      }
+    ]
+  },
+  "progression-rewards--t245": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Престиж и повторное развитие",
+      "en": "Prestige and repeated progression"
+    },
+    "description": {
+      "ru": "Добровольный сброс обменивает часть текущего развития на устойчивое изменение правил следующего цикла.",
+      "en": "A voluntary reset trades some current progression for persistent changes to the next development cycle."
+    },
+    "image": {
+      "src": "images/mechanics/priority-realm-grinder-12.webp",
+      "width": 974,
+      "height": 638,
+      "game": "Realm Grinder",
+      "sourceUrl": "https://store.steampowered.com/app/610080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/610080/ss_b3ca5b13f31f51bb8176f9d6dd025e1f1d51b297.1920x1080.jpg?t=1592248284",
+      "credit": "Divine Games / Kongregate",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отречение предлагает бонус к следующему циклу",
+        "en": "Abdication offers a bonus for the next cycle"
+      },
+      "alt": {
+        "ru": "Отречение предлагает бонус к следующему циклу",
+        "en": "Abdication offers a bonus for the next cycle"
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 4,
+          "label": {
+            "ru": "Добровольный сброс через Abdication",
+            "en": "Voluntary reset through Abdication"
+          }
+        },
+        {
+          "x": 39,
+          "y": 96,
+          "label": {
+            "ru": "Постоянный ресурс развития",
+            "en": "Persistent progression resource"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "До сброса перечисляйте сохраняемые бонусы и утрачиваемое развитие.",
+        "en": "List retained bonuses and lost progression before a reset."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Realm Grinder",
+        "url": "https://store.steampowered.com/app/610080/"
+      }
+    ]
   }
 }

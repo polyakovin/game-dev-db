@@ -147,3 +147,23 @@ the existing Duke Nukem 3D screenshot. The Max Payne 3 blood-pool frame is a
 separate, timestamped view of the same source recording used for blood splatters.
 All derivatives follow the 1440px / 250KiB WebP budget and retain third-party
 rights, excluded from the portal's MIT and CC BY 4.0 licenses.
+
+`priority-*.webp` illustrates broad movement, combat, economy and progression
+families with inspected publisher-distributed Steam screenshots. Games include
+Sonic Mania, Mirror’s Edge, Streets of Rage 4, Street Fighter 6, Devil May Cry 5,
+Dark Souls III, Grim Dawn, Counter-Strike 2, Overwatch, The House of the Dead:
+Remake, Doom Eternal, The Division 2, Anno 1800, Victoria 3, Offworld Trading
+Company, Cookie Clicker and Realm Grinder. Per-card metadata retains each exact
+original screenshot URL, developer and publisher credits. Related records reuse
+the same bounded file with distinct crops and contextual markers.
+
+`dark-souls-stamina-manual.webp` is the native grayscale game-screen image from
+PDF page 6 of the [official Dark Souls PC manual](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/211420/manuals/DarkSouls_PC_Manual_Online_GB.pdf?t=1721682669).
+`borderlands2-*-manual.webp` retains inventory, mission-log and trade screenshots
+from PDF pages 11 and 13 of the [official Borderlands 2 PC manual](https://store.steampowered.com/manual/49520/).
+These are screenshots extracted from the source manuals, with no enlargement or
+invented interface. Credit: FromSoftware / Bandai Namco and Gearbox Software / 2K,
+respectively. `hunt-extraction-guide.webp` comes from Crytek’s [official player
+guide](https://www.huntshowdown.com/player-guide/en_US), showing its extraction
+countdown. All images retain third-party rights and are excluded from MIT and
+CC BY 4.0; the same WebP size and resolution limits apply.
