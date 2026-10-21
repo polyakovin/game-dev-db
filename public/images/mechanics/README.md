@@ -27,7 +27,10 @@ Source files remain unchanged; crops and contextual markers are HTML/CSS overlay
 | `disco-elysium-*.jpg` | Disco Elysium / ZA/UM | [Publisher's Steam page](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/) |
 | `hades-*.png`, `hades-*.jpg` | Hades / Supergiant Games | [Official Hades media](https://www.supergiantgames.com/games/hades/) |
 | `stardew-valley-*.jpg` | Stardew Valley / ConcernedApe | [Publisher's Steam page](https://store.steampowered.com/app/413150/Stardew_Valley/) |
-| `hollow-knight-bench.jpg` | Hollow Knight / Team Cherry | [Publisher's Steam page](https://store.steampowered.com/app/367520/Hollow_Knight/) |
+| `hollow-knight-*.jpg` | Hollow Knight / Team Cherry | [Publisher's Steam page](https://store.steampowered.com/app/367520/Hollow_Knight/) |
+| `last-epoch-*.jpg` | Last Epoch / Eleventh Hour Games | [Publisher's Steam page](https://store.steampowered.com/app/899770/Last_Epoch/) |
+| `factorio-copper-wire.jpg` | Factorio / Wube Software | [Publisher's Steam page](https://store.steampowered.com/app/427520/Factorio/) |
+| `gungeon-bullet-rings.jpg` | Enter the Gungeon / Dodge Roll, Devolver Digital | [Publisher's Steam page](https://store.steampowered.com/app/311690/Enter_the_Gungeon/) |
 
 Some press-kit screenshots show an older published build. Cards discuss the
 visible mechanic, without claiming that every current menu or numerical value

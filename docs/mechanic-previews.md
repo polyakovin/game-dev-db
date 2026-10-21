@@ -16,11 +16,11 @@ illustrated card. Archived compatibility records are excluded.
 
 `src/data/mechanic-previews.json` is keyed by canonical mechanic ID. Each entry
 contains a short bilingual display title and description, screenshot alt text/caption and numbered markers,
-two short application tips and primary-source example links. Image metadata keeps
+one or two short application tips and primary-source example links. Image metadata keeps
 the local source path, dimensions, original URL, source page, authors and rights.
-Optional `image.crop` records a rectangle in original screenshot pixels. It removes
-unused white margins while retaining the scene, clue and target strip. The PNG
-stays unchanged; HTML remaps percentage markers into the cropped frame. Only the
+Optional `image.crop` records a rectangle in original screenshot pixels. It frames
+the relevant area while keeping enough scene or interface context to explain the example.
+The original PNG/JPEG stays unchanged; HTML remaps percentage markers into the cropped frame. Only the
 image is framed with clipping; text and navigation are never clipped.
 Numbered markers are buttons with localized tooltips using the existing marker
 labels. Pointer hover, keyboard focus and touch open the hint; Escape, pointer
