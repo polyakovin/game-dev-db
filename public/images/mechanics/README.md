@@ -24,24 +24,24 @@ Display crops and contextual markers are HTML/CSS overlays; source-extraction
 crops are documented separately below. The separately documented
 NetHack and 2048 captures below retain their own free-software licenses.
 
-| Files | Game / credit | Publisher or developer source |
-| --- | --- | --- |
-| `celeste-air-movement.webp` | Celeste / Maddy Makes Games, Extremely OK Games | [Official Celeste site](https://www.celestegame.com/) |
-| `slay-the-spire-*.webp` | Slay the Spire / Mega Crit | [Official press kit](https://www.megacrit.com/press-kits/slay-the-spire/) |
-| `disco-elysium-*.webp` | Disco Elysium / ZA/UM | [Publisher's Steam page](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/) |
-| `hades-*.webp` | Hades / Supergiant Games | [Official Hades media](https://www.supergiantgames.com/games/hades/) |
-| `stardew-valley-*.webp` | Stardew Valley / ConcernedApe | [Publisher's Steam page](https://store.steampowered.com/app/413150/Stardew_Valley/) |
-| `hollow-knight-*.webp` | Hollow Knight / Team Cherry | [Publisher's Steam page](https://store.steampowered.com/app/367520/Hollow_Knight/) |
-| `last-epoch-*.webp` | Last Epoch / Eleventh Hour Games | [Publisher's Steam page](https://store.steampowered.com/app/899770/Last_Epoch/) |
-| `factorio-copper-wire.webp` | Factorio / Wube Software | [Publisher's Steam page](https://store.steampowered.com/app/427520/Factorio/) |
-| `spelunky-*.webp` | Spelunky / Mossmouth | [Publisher’s Steam gallery](https://store.steampowered.com/app/239350/Spelunky/) |
-| `drg-*.webp` | Deep Rock Galactic / Ghost Ship Games, Coffee Stain Publishing | [Publisher’s Steam gallery](https://store.steampowered.com/app/548430/Deep_Rock_Galactic/) |
-| `monster-train-*.webp` | Monster Train / Shiny Shoe, Good Shepherd Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/1102190/Monster_Train/) |
-| `subnautica-*.webp` | Subnautica / Unknown Worlds Entertainment | [Publisher’s Steam gallery](https://store.steampowered.com/app/264710/Subnautica/) |
-| `just-cause-*.webp` | Just Cause 3 / Avalanche Studios, Square Enix | [Publisher’s Steam gallery](https://store.steampowered.com/app/225540/Just_Cause_3/) |
-| `tomb-raider-jump.webp` | Rise of the Tomb Raider / Crystal Dynamics, Eidos-Montréal | [Publisher’s Steam gallery](https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/) |
-| `spiritfarer-*.webp` | Spiritfarer / Thunder Lotus | [Official press kit](https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/) |
-| `gungeon-bullet-rings.webp` | Enter the Gungeon / Dodge Roll, Devolver Digital | [Publisher's Steam page](https://store.steampowered.com/app/311690/Enter_the_Gungeon/) |
+| Files                       | Game / credit                                                  | Publisher or developer source                                                                     |
+| --------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `celeste-air-movement.webp` | Celeste / Maddy Makes Games, Extremely OK Games                | [Official Celeste site](https://www.celestegame.com/)                                             |
+| `slay-the-spire-*.webp`     | Slay the Spire / Mega Crit                                     | [Official press kit](https://www.megacrit.com/press-kits/slay-the-spire/)                         |
+| `disco-elysium-*.webp`      | Disco Elysium / ZA/UM                                          | [Publisher's Steam page](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/) |
+| `hades-*.webp`              | Hades / Supergiant Games                                       | [Official Hades media](https://www.supergiantgames.com/games/hades/)                              |
+| `stardew-valley-*.webp`     | Stardew Valley / ConcernedApe                                  | [Publisher's Steam page](https://store.steampowered.com/app/413150/Stardew_Valley/)               |
+| `hollow-knight-*.webp`      | Hollow Knight / Team Cherry                                    | [Publisher's Steam page](https://store.steampowered.com/app/367520/Hollow_Knight/)                |
+| `last-epoch-*.webp`         | Last Epoch / Eleventh Hour Games                               | [Publisher's Steam page](https://store.steampowered.com/app/899770/Last_Epoch/)                   |
+| `factorio-copper-wire.webp` | Factorio / Wube Software                                       | [Publisher's Steam page](https://store.steampowered.com/app/427520/Factorio/)                     |
+| `spelunky-*.webp`           | Spelunky / Mossmouth                                           | [Publisher’s Steam gallery](https://store.steampowered.com/app/239350/Spelunky/)                  |
+| `drg-*.webp`                | Deep Rock Galactic / Ghost Ship Games, Coffee Stain Publishing | [Publisher’s Steam gallery](https://store.steampowered.com/app/548430/Deep_Rock_Galactic/)        |
+| `monster-train-*.webp`      | Monster Train / Shiny Shoe, Good Shepherd Entertainment        | [Publisher’s Steam gallery](https://store.steampowered.com/app/1102190/Monster_Train/)            |
+| `subnautica-*.webp`         | Subnautica / Unknown Worlds Entertainment                      | [Publisher’s Steam gallery](https://store.steampowered.com/app/264710/Subnautica/)                |
+| `just-cause-*.webp`         | Just Cause 3 / Avalanche Studios, Square Enix                  | [Publisher’s Steam gallery](https://store.steampowered.com/app/225540/Just_Cause_3/)              |
+| `tomb-raider-jump.webp`     | Rise of the Tomb Raider / Crystal Dynamics, Eidos-Montréal     | [Publisher’s Steam gallery](https://store.steampowered.com/app/391220/Rise_of_the_Tomb_Raider/)   |
+| `spiritfarer-*.webp`        | Spiritfarer / Thunder Lotus                                    | [Official press kit](https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/)             |
+| `gungeon-bullet-rings.webp` | Enter the Gungeon / Dodge Roll, Devolver Digital               | [Publisher's Steam page](https://store.steampowered.com/app/311690/Enter_the_Gungeon/)            |
 
 Some press-kit screenshots show an older published build. Cards discuss the
 visible mechanic, without claiming that every current menu or numerical value
@@ -57,10 +57,10 @@ keeps the exact clip URL and `image.sourceFrameSeconds`; the source videos are
 not shipped. Game and recording rights remain with their respective holders.
 These frames are excluded from MIT and CC BY 4.0.
 
-| File | Game / original developer | Recording page |
-| --- | --- | --- |
-| `tomb-raider-classic-climb.webp` | Tomb Raider (1996) / Core Design | [Ledge climb-up](https://gamemechanics.org/patterns/ledge-climb-up) |
-| `splinter-cell-fence.webp` | Tom Clancy’s Splinter Cell (2002) / Ubisoft Montréal | [Climbing over fences](https://gamemechanics.org/patterns/climbing-over-fences) |
+| File                                                         | Game / original developer                             | Recording page                                                                      |
+| ------------------------------------------------------------ | ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `tomb-raider-classic-climb.webp`                             | Tomb Raider (1996) / Core Design                      | [Ledge climb-up](https://gamemechanics.org/patterns/ledge-climb-up)                 |
+| `splinter-cell-fence.webp`                                   | Tom Clancy’s Splinter Cell (2002) / Ubisoft Montréal  | [Climbing over fences](https://gamemechanics.org/patterns/climbing-over-fences)     |
 | `splinter-cell-vent.webp`, `splinter-cell-night-vision.webp` | Splinter Cell: Chaos Theory (2005) / Ubisoft Montréal | [Crawling through vents](https://gamemechanics.org/patterns/crawling-through-vents) |
 
 `traversal-*.webp` uses similarly documented frames from the corresponding Game
@@ -379,3 +379,30 @@ the portal licenses. It was cropped from the PDF to the figure and converted
 to WebP. The figure's application scenarios retain their original labels;
 Stardew Valley imagery remains © ConcernedApe. The card describes a research
 prototype and a proposed gamepad scenario.
+
+## Keyboard, trackpad, touch and motion examples
+
+`control-*.webp` includes public Wootility 5.4.2 demo screens, PowerToys
+Keyboard Manager documentation, Apple's Trackpad and Preview support screens,
+and QWOP captured through its public browser interface. The Wootility capture
+uses the demo device; no physical keyboard configuration was changed. Its
+analog curve measures key travel, not pressing force. Keyboard Sports images
+are explicitly identified as material for an announced game.
+
+AudioSwift frames come from short demonstrations linked on the developer's
+[website](https://audioswiftapp.com/). Exact video URLs and frame times remain
+in each card. They show trackpad controls alongside the musical software and,
+where available, the physical hand action. AudioSwift is © Nigel Ríos;
+third-party host apps and instruments retain their respective rights.
+
+`input-*.webp`, `touch-*.webp`, and `motion-*.webp` use attributed App Store
+screens from Pokémon Smile, Magic Piano, Blek, Touchgrind Skate 2, Bounden,
+Active Arcade, Just Dance Controller, Tilt to Live, Heads Up!, Labyrinth 2,
+RIDGID Level, iBeer, Pedometer++ and NFC Tools. Procreate Pocket gesture and
+interface screenshots come from Savage Interactive's official handbook.
+Exact source URLs and publisher credits are stored with each selected image.
+Captions distinguish a developer's instructional composition from a raw game
+screen where relevant. The handheld Just Dance example requires a compatible
+console. Hardware pressure is distinguished from an on-screen pressure slider.
+All these images retain their original rights and are excluded from the
+portal's MIT and CC BY 4.0 licenses.

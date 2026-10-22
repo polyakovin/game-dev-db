@@ -58106,5 +58106,3914 @@
         "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
       }
     ]
+  },
+  "mouse--family-hover": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Наведение и присутствие",
+      "en": "Hovering and pointer presence"
+    },
+    "description": {
+      "ru": "Указатель запускает реакцию без клика: подсветку, подсказку или действие после задержки. В Into the Breach наведение объясняет свойство клетки.",
+      "en": "The pointer triggers a response without clicking: a highlight, tooltip or dwell action. Into the Breach explains a tile when hovered."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-into-breach-00.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Into the Breach",
+      "sourceUrl": "https://store.steampowered.com/app/590380/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/ss_6113590509c195f98fa64cd738df534762e0c358.1920x1080.jpg?t=1755610784",
+      "credit": "Subset Games / Subset Games",
+      "rights": "© Subset Games / Subset Games. All rights reserved.",
+      "caption": {
+        "ru": "Into the Breach: наведение открывает подсказку о пропасти",
+        "en": "Into the Breach: hovering reveals a chasm tooltip"
+      },
+      "alt": {
+        "ru": "Into the Breach: наведение открывает подсказку о пропасти",
+        "en": "Into the Breach: hovering reveals a chasm tooltip"
+      },
+      "markers": [
+        {
+          "x": 86,
+          "y": 91,
+          "label": {
+            "ru": "Подсказка свойства клетки под указателем",
+            "en": "A tooltip describes the tile under the pointer"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не прячьте обязательные действия исключительно за наведением.",
+        "en": "Do not make essential actions depend solely on hovering."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Into the Breach",
+        "url": "https://store.steampowered.com/app/590380/"
+      }
+    ]
+  },
+  "mouse--family-hold": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Удержание и отпускание",
+      "en": "Hold and release"
+    },
+    "description": {
+      "ru": "Нажатие начинает действие, удержание меняет его параметр, а отпускание завершает. В мини-гольфе это подготовка и выполнение удара.",
+      "en": "Pressing starts an action, holding changes its parameter and releasing completes it. Mini-golf uses this for preparing and taking a shot."
+    },
+    "image": {
+      "src": "images/mechanics/general-golf-with-friends-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Golf With Your Friends",
+      "sourceUrl": "https://store.steampowered.com/app/431240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431240/ss_eab882834b54a0a3eb89b4a658b72596f364e9e0.1920x1080.jpg?t=1789740480",
+      "credit": "Blacklight Interactive / Team17 / Team17",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed screenshot from Steam; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Направление и сила задают движение мяча к лунке",
+        "en": "Direction and power guide the ball toward the hole"
+      },
+      "alt": {
+        "ru": "Направление и сила задают движение мяча к лунке",
+        "en": "Direction and power guide the ball toward the hole"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 63,
+          "label": {
+            "ru": "Мяч и линия прицеливания сохраняют точку удара",
+            "en": "The ball and aiming line retain the shot origin"
+          }
+        },
+        {
+          "x": 18,
+          "y": 88,
+          "label": {
+            "ru": "Шкала силы задаёт параметр удара",
+            "en": "The power meter sets the shot strength"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте текущую силу и давайте отменить незавершённое действие.",
+        "en": "Show current power and allow an unfinished action to be cancelled."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Golf With Your Friends",
+        "url": "https://store.steampowered.com/app/431240/"
+      }
+    ]
+  },
+  "mouse--family-wheel": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Колесо и прокрутка",
+      "en": "Wheel and scrolling"
+    },
+    "description": {
+      "ru": "Колесо задаёт прокрутку или изменение параметра. В Preview прокрутка перемещает видимую часть документа и помогает просматривать длинный PDF.",
+      "en": "The wheel scrolls or changes a parameter. In Preview scrolling moves the visible document region and helps navigate a long PDF."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-preview.webp",
+      "width": 788,
+      "height": 750,
+      "game": "Preview (macOS)",
+      "sourceUrl": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26",
+      "originalUrl": "https://help.apple.com/assets/67DB77BFAE89A3DDC700A869/67DB77C0E2208881620C3D38/en_US/918f957676bf215f21f57328147e8435.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official support screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Preview: страница документа и прокручиваемая колонка миниатюр",
+        "en": "Preview: a document page and a scrollable thumbnail sidebar"
+      },
+      "alt": {
+        "ru": "Preview: страница документа и прокручиваемая колонка миниатюр",
+        "en": "Preview: a document page and a scrollable thumbnail sidebar"
+      },
+      "markers": [
+        {
+          "x": 13,
+          "y": 67,
+          "label": {
+            "ru": "Миниатюры связывают прокрутку с положением в документе",
+            "en": "Thumbnails relate scrolling to the position in the document"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте масштаб и проверяйте чувствительность колеса и тачпада.",
+        "en": "Bound the zoom range and check wheel and trackpad sensitivity."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Preview (macOS)",
+        "url": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26"
+      }
+    ]
+  },
+  "mouse--family-chords": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Комбинации и режимы",
+      "en": "Combinations and modes"
+    },
+    "description": {
+      "ru": "Сочетание кнопок или выбранный режим меняет смысл следующего клика. В Day of the Tentacle предмет применяется через выбранный глагол.",
+      "en": "A button combination or selected mode changes the next click’s meaning. Day of the Tentacle applies an item through a selected verb."
+    },
+    "image": {
+      "src": "images/mechanics/adventure-day-of-the-tentacle-07.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 180,
+        "y": 0,
+        "width": 1080,
+        "height": 810
+      },
+      "game": "Day of the Tentacle Remastered",
+      "sourceUrl": "https://store.steampowered.com/app/388210/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388210/ss_9eefffbc6bf66978cb5b8570665b09774d4f604a.1920x1080.jpg?t=1731602439",
+      "credit": "Double Fine Productions / Shiny Shoe",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Действие Use и отдельные предметы инвентаря",
+        "en": "The Use action and separate inventory items"
+      },
+      "alt": {
+        "ru": "Действие Use и отдельные предметы инвентаря",
+        "en": "The Use action and separate inventory items"
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 80,
+          "label": {
+            "ru": "Действие применения предмета",
+            "en": "Item-use action"
+          }
+        },
+        {
+          "x": 63,
+          "y": 81,
+          "label": {
+            "ru": "Предмет из инвентаря",
+            "en": "Inventory item"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Постоянно показывайте активный режим и простой способ выйти из него.",
+        "en": "Keep the active mode visible and provide a simple way to leave it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Day of the Tentacle Remastered",
+        "url": "https://store.steampowered.com/app/388210/"
+      }
+    ]
+  },
+  "mouse--family-transform": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Параметры и геометрия",
+      "en": "Parameters and geometry"
+    },
+    "description": {
+      "ru": "Смещение указателя превращается в угол, размер или другое значение. В The Room движение задаёт положение деталей кодового механизма.",
+      "en": "Pointer displacement becomes an angle, size or another value. In The Room movement sets the position of a combination mechanism’s parts."
+    },
+    "image": {
+      "src": "images/mechanics/adventure-the-room-03.webp",
+      "width": 1440,
+      "height": 867,
+      "game": "The Room",
+      "sourceUrl": "https://store.steampowered.com/app/288160/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/288160/ss_6a558d5b9cc41f74c8985e0dbd5935f3ef0a36ca.1920x1080.jpg?t=1646758287",
+      "credit": "Fireproof Games",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Кольца и символы кодового механизма",
+        "en": "Rings and symbols in a combination mechanism"
+      },
+      "alt": {
+        "ru": "Кольца и символы кодового механизма",
+        "en": "Rings and symbols in a combination mechanism"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 57,
+          "label": {
+            "ru": "Вращающиеся части меняют конфигурацию",
+            "en": "Rotating parts change the configuration"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте движение с одной понятной осью и сохраняйте точку захвата.",
+        "en": "Map motion to a clear axis and preserve the grab point."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Room",
+        "url": "https://store.steampowered.com/app/288160/"
+      }
+    ]
+  },
+  "mouse--family-timing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время, ритм и реакция",
+      "en": "Timing, rhythm and reaction"
+    },
+    "description": {
+      "ru": "Результат клика зависит от момента. В тесте Human Benchmark нужно дождаться зелёного сигнала и нажать как можно скорее.",
+      "en": "A click’s result depends on its timing. Human Benchmark asks the player to wait for green and respond as quickly as possible."
+    },
+    "image": {
+      "src": "images/mechanics/learning-human-benchmark-reaction.webp",
+      "width": 1280,
+      "height": 464,
+      "game": "Human Benchmark",
+      "sourceUrl": "https://humanbenchmark.com/tests/reactiontime",
+      "originalUrl": "https://humanbenchmark.com/tests/reactiontime",
+      "credit": "Human Benchmark; public test capture, 2026-10-22",
+      "rights": "© Human Benchmark. Actual unsigned test session captured 2026-10-22. Cropped to the application header and task area; advertising outside the task omitted. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Human Benchmark: в красном состоянии нужно ждать зелёного сигнала",
+        "en": "Human Benchmark: the red state requires waiting for the green signal"
+      },
+      "alt": {
+        "ru": "Human Benchmark: в красном состоянии нужно ждать зелёного сигнала",
+        "en": "Human Benchmark: the red state requires waiting for the green signal"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 51,
+          "label": {
+            "ru": "Wait for green запрещает преждевременное нажатие",
+            "en": "Wait for green requires withholding the click"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте преждевременное нажатие от пропуска и поздней реакции.",
+        "en": "Distinguish premature input, missed input and late responses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Human Benchmark",
+        "url": "https://humanbenchmark.com/tests/reactiontime"
+      }
+    ]
+  },
+  "mouse--family-combat": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прицеливание и бой",
+      "en": "Aiming and Combat"
+    },
+    "description": {
+      "ru": "Движение мыши задаёт направление взгляда или прицела, а кнопка запускает атаку. Игрок совмещает наведение, перемещение и момент выстрела.",
+      "en": "Mouse movement sets the view or aim direction while a button triggers an attack. The player combines aiming, movement and shot timing."
+    },
+    "image": {
+      "src": "images/mechanics/priority-counter-strike2-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Counter-Strike 2",
+      "sourceUrl": "https://store.steampowered.com/app/730/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/ss_0f8cf82d019c614760fd20801f2bb4001da7ea77.1920x1080.jpg?t=1791824795",
+      "credit": "Valve",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Игрок проверяет узкий проход в Counter-Strike 2",
+        "en": "A player checks a narrow passage in Counter-Strike 2"
+      },
+      "alt": {
+        "ru": "Игрок проверяет узкий проход в Counter-Strike 2",
+        "en": "A player checks a narrow passage in Counter-Strike 2"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 58,
+          "label": {
+            "ru": "Угол ограничивает доступную информацию",
+            "en": "A corner limits available information"
+          }
+        },
+        {
+          "x": 61,
+          "y": 60,
+          "label": {
+            "ru": "Оружие направлено вдоль прохода",
+            "en": "Weapon aimed along the passage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте настроить чувствительность и отключить нежелательное ускорение.",
+        "en": "Allow sensitivity adjustment and removal of unwanted acceleration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Counter-Strike 2",
+        "url": "https://store.steampowered.com/app/730/"
+      }
+    ]
+  },
+  "mouse--family-movement": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перемещение и камера",
+      "en": "Moving and Camera"
+    },
+    "description": {
+      "ru": "Указатель задаёт место назначения или движение камеры. В Machinarium щелчок по доступной части сцены направляет туда героя.",
+      "en": "The pointer selects a destination or moves the camera. In Machinarium clicking an accessible part of the scene directs the character there."
+    },
+    "image": {
+      "src": "images/mechanics/adventure-machinarium-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Machinarium",
+      "sourceUrl": "https://store.steampowered.com/app/40700/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/40700/80f825bcb9c71fcfef60ab6847b545b7b4928a21/ss_80f825bcb9c71fcfef60ab6847b545b7b4928a21.1920x1080.jpg?t=1791501193",
+      "credit": "Amanita Design",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Мост и закрытые проходы в Machinarium",
+        "en": "A bridge and closed passages in Machinarium"
+      },
+      "alt": {
+        "ru": "Мост и закрытые проходы в Machinarium",
+        "en": "A bridge and closed passages in Machinarium"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 75,
+          "label": {
+            "ru": "Мост связывает участки сцены",
+            "en": "A bridge connects scene areas"
+          }
+        },
+        {
+          "x": 58,
+          "y": 48,
+          "label": {
+            "ru": "Ворота ограничивают доступ",
+            "en": "A gate limits access"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте достижимые места и объясняйте, почему путь недоступен.",
+        "en": "Show reachable destinations and explain blocked paths."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Machinarium",
+        "url": "https://store.steampowered.com/app/40700/"
+      }
+    ]
+  },
+  "mouse--family-physical": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Физические предметы и инструменты",
+      "en": "Physical objects and tools"
+    },
+    "description": {
+      "ru": "Движение мыши изображает работу руки или инструмента. В The Room игрок непосредственно двигает и поворачивает детали предмета.",
+      "en": "Mouse movement represents a hand or tool. In The Room the player directly moves and turns an object’s parts."
+    },
+    "image": {
+      "src": "images/mechanics/adventure-the-room-01.webp",
+      "width": 1440,
+      "height": 867,
+      "game": "The Room",
+      "sourceUrl": "https://store.steampowered.com/app/288160/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/288160/ss_3d7f2102dad1c45593170232d6bb2470bb265680.1920x1080.jpg?t=1646758287",
+      "credit": "Fireproof Games",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Кнопки и вращающаяся панель шкатулки",
+        "en": "Buttons and a rotating box panel"
+      },
+      "alt": {
+        "ru": "Кнопки и вращающаяся панель шкатулки",
+        "en": "Buttons and a rotating box panel"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 47,
+          "label": {
+            "ru": "Орган управления на поверхности объекта",
+            "en": "A control on the object’s surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте направление жеста с видимым движением предмета.",
+        "en": "Match gesture direction to the visible motion of the object."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Room",
+        "url": "https://store.steampowered.com/app/288160/"
+      }
+    ]
+  },
+  "keyboard--family-key-events": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "События одной клавиши",
+      "en": "Single key events"
+    },
+    "description": {
+      "ru": "Нажатие, удержание и отпускание клавиши получают разные роли. Например, клавиша прыжка запускает движение и может влиять на его высоту.",
+      "en": "Pressing, holding and releasing a key have different roles. A jump key, for example, starts movement and can affect its height."
+    },
+    "image": {
+      "src": "images/mechanics/celeste-air-movement.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 300,
+        "y": 0,
+        "width": 1125,
+        "height": 810
+      },
+      "game": "Celeste",
+      "sourceUrl": "https://www.celestegame.com/",
+      "originalUrl": "https://www.celestegame.com/images/screenshots/02.png",
+      "credit": "Maddy Makes Games / Extremely OK Games",
+      "rights": "© Maddy Makes Games / Extremely OK Games. All rights reserved.",
+      "caption": {
+        "ru": "Движение между шипами",
+        "en": "Moving between spikes"
+      },
+      "alt": {
+        "ru": "Celeste: героиня в воздухе, шипы на платформах и безопасная опора справа.",
+        "en": "Celeste: Madeline in the air, spikes on platforms and a safe surface to the right."
+      },
+      "markers": [
+        {
+          "x": 41.5,
+          "y": 10,
+          "label": {
+            "ru": "Персонаж корректирует движение в воздухе",
+            "en": "The character adjusts movement in the air"
+          }
+        },
+        {
+          "x": 84,
+          "y": 50,
+          "label": {
+            "ru": "Безопасная опора среди шипов",
+            "en": "A safe surface among spikes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обрабатывайте отпускание и потерю фокуса, чтобы действие не залипало.",
+        "en": "Handle release and focus loss so actions cannot remain stuck."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Celeste",
+        "url": "https://www.celestegame.com/"
+      }
+    ]
+  },
+  "keyboard--family-repetition": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повторения и частота",
+      "en": "Repetition and input rate"
+    },
+    "description": {
+      "ru": "Серия отдельных нажатий задаёт повторяемые действия. В Crypt of the NecroDancer каждый новый шаг требуется снова согласовать с музыкальным ударом.",
+      "en": "A series of separate key presses produces repeated actions. In Crypt of the NecroDancer every new step must be timed to another musical beat."
+    },
+    "image": {
+      "src": "images/mechanics/systems-crypt-necrodancer-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Crypt of the NecroDancer",
+      "sourceUrl": "https://store.steampowered.com/app/247080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/247080/ss_bb057affa1f4ccac14d1a58e5707cd0fd66e82e7.1920x1080.jpg?t=1791916929",
+      "credit": "Brace Yourself Games / Brace Yourself Games / Klei Entertainment",
+      "rights": "© Brace Yourself Games / Brace Yourself Games / Klei Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "alt": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 88,
+          "label": {
+            "ru": "Нижняя шкала помогает попадать действиями в ритм",
+            "en": "The lower beat bar helps time actions to the music"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте отдельные нажатия и автоповтор, который создаёт ОС.",
+        "en": "Distinguish separate presses from operating-system key repeat."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crypt of the NecroDancer",
+        "url": "https://store.steampowered.com/app/247080/"
+      }
+    ]
+  },
+  "keyboard--family-timing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время и ритм",
+      "en": "Time and rhythm"
+    },
+    "description": {
+      "ru": "Момент нажатия сравнивают с временным окном. В Crypt of the NecroDancer движение и атаки должны попадать в музыкальный ритм.",
+      "en": "A key press is compared with a timing window. Crypt of the NecroDancer requires movement and attacks to follow the musical beat."
+    },
+    "image": {
+      "src": "images/mechanics/systems-crypt-necrodancer-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Crypt of the NecroDancer",
+      "sourceUrl": "https://store.steampowered.com/app/247080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/247080/ss_bb057affa1f4ccac14d1a58e5707cd0fd66e82e7.1920x1080.jpg?t=1791916929",
+      "credit": "Brace Yourself Games / Brace Yourself Games / Klei Entertainment",
+      "rights": "© Brace Yourself Games / Brace Yourself Games / Klei Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "alt": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 88,
+          "label": {
+            "ru": "Нижняя шкала помогает попадать действиями в ритм",
+            "en": "The lower beat bar helps time actions to the music"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте окно действия и позволяйте настроить аудиовизуальную задержку.",
+        "en": "Show the input window and allow audiovisual latency calibration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crypt of the NecroDancer",
+        "url": "https://store.steampowered.com/app/247080/"
+      }
+    ]
+  },
+  "keyboard--family-chords": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Одновременные нажатия",
+      "en": "Simultaneous presses"
+    },
+    "description": {
+      "ru": "Несколько одновременно зажатых клавиш образуют одну команду. PowerToys позволяет заменить одно сочетание другим, сохраняя смысл действия.",
+      "en": "Several keys held together form one command. PowerToys can replace one shortcut with another while preserving the intended action."
+    },
+    "image": {
+      "src": "images/mechanics/control-powertoys-shortcut.webp",
+      "width": 1440,
+      "height": 592,
+      "crop": {
+        "x": 0,
+        "y": 169,
+        "width": 964,
+        "height": 218
+      },
+      "game": "PowerToys Keyboard Manager",
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager",
+      "originalUrl": "https://learn.microsoft.com/en-us/windows/powertoys/images/keyboard-manager/keyboard-remap-shortcut.png",
+      "credit": "Microsoft",
+      "rights": "Imagery © Microsoft. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "PowerToys: сочетание Alt+C переназначено на Ctrl+C",
+        "en": "PowerToys: Alt+C is remapped to Ctrl+C"
+      },
+      "alt": {
+        "ru": "PowerToys: сочетание Alt+C переназначено на Ctrl+C",
+        "en": "PowerToys: Alt+C is remapped to Ctrl+C"
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 48,
+          "label": {
+            "ru": "Две клавиши образуют исходное сочетание Alt+C",
+            "en": "Two keys form the source shortcut Alt+C"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте доступность сочетаний и конфликты с командами системы.",
+        "en": "Check chord availability and conflicts with system shortcuts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "PowerToys Keyboard Manager",
+        "url": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager"
+      }
+    ]
+  },
+  "keyboard--family-sequences": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Последовательности и грамматики",
+      "en": "Sequences and grammars"
+    },
+    "description": {
+      "ru": "Порядок нажатий образует команду с собственной грамматикой. В терминале Hacknet строку сначала набирают, затем передают на исполнение.",
+      "en": "Ordered key presses form a command with its own grammar. In Hacknet a terminal line is typed first and then submitted for execution."
+    },
+    "image": {
+      "src": "images/mechanics/interface-hacknet-00.webp",
+      "width": 1440,
+      "height": 809,
+      "game": "Hacknet",
+      "sourceUrl": "https://store.steampowered.com/app/365450/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/365450/ss_182ebf5aa570fc0ad0d1d974d43137e858ddeb54.1920x1080.jpg?t=1758156718",
+      "credit": "Team Fractal Alligator / Fellow Traveller",
+      "rights": "© Team Fractal Alligator / Fellow Traveller. All rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hacknet: краткая справка с командами рядом с терминалом",
+        "en": "Hacknet: a quick command reference beside the terminal"
+      },
+      "alt": {
+        "ru": "Hacknet: краткая справка с командами рядом с терминалом",
+        "en": "Hacknet: a quick command reference beside the terminal"
+      },
+      "markers": [
+        {
+          "x": 7,
+          "y": 31,
+          "label": {
+            "ru": "Quick Reference Guide объясняет команды",
+            "en": "Quick Reference Guide explains the commands"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте границы команды и давайте исправить ошибку до подтверждения.",
+        "en": "Show command boundaries and allow correction before submission."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hacknet",
+        "url": "https://store.steampowered.com/app/365450/"
+      }
+    ]
+  },
+  "keyboard--family-movement": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Направления и непрерывное управление",
+      "en": "Directions and continuous control"
+    },
+    "description": {
+      "ru": "Клавиши направлений задают состояние движения, пока остаются зажатыми. Скорость, ускорение и противоположные направления определяет сама игра.",
+      "en": "Directional keys maintain movement while held. The game defines speed, acceleration and how opposing directions interact."
+    },
+    "image": {
+      "src": "images/mechanics/celeste-air-movement.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 300,
+        "y": 0,
+        "width": 1125,
+        "height": 810
+      },
+      "game": "Celeste",
+      "sourceUrl": "https://www.celestegame.com/",
+      "originalUrl": "https://www.celestegame.com/images/screenshots/02.png",
+      "credit": "Maddy Makes Games / Extremely OK Games",
+      "rights": "© Maddy Makes Games / Extremely OK Games. All rights reserved.",
+      "caption": {
+        "ru": "Движение между шипами",
+        "en": "Moving between spikes"
+      },
+      "alt": {
+        "ru": "Celeste: героиня в воздухе, шипы на платформах и безопасная опора справа.",
+        "en": "Celeste: Madeline in the air, spikes on platforms and a safe surface to the right."
+      },
+      "markers": [
+        {
+          "x": 41.5,
+          "y": 10,
+          "label": {
+            "ru": "Персонаж корректирует движение в воздухе",
+            "en": "The character adjusts movement in the air"
+          }
+        },
+        {
+          "x": 84,
+          "y": 50,
+          "label": {
+            "ru": "Безопасная опора среди шипов",
+            "en": "A safe surface among spikes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Явно определите диагонали и одновременное удержание противоположных направлений.",
+        "en": "Define diagonals and simultaneous opposing directions explicitly."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Celeste",
+        "url": "https://www.celestegame.com/"
+      }
+    ]
+  },
+  "keyboard--family-modes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Режимы и назначение клавиш",
+      "en": "Modes and assignment of keys"
+    },
+    "description": {
+      "ru": "Назначение клавиши меняется по настройке или контексту. В PowerToys можно поменять A и B местами, не меняя физические подписи клавиатуры.",
+      "en": "A key’s assignment changes through settings or context. PowerToys can swap A and B without changing the keyboard’s physical labels."
+    },
+    "image": {
+      "src": "images/mechanics/control-powertoys-remap.webp",
+      "width": 1440,
+      "height": 901,
+      "crop": {
+        "x": 0,
+        "y": 266,
+        "width": 1440,
+        "height": 398
+      },
+      "game": "PowerToys Keyboard Manager",
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager",
+      "originalUrl": "https://learn.microsoft.com/en-us/windows/powertoys/images/keyboard-manager/keyboard-remap-a-b.png",
+      "credit": "Microsoft",
+      "rights": "Imagery © Microsoft. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "PowerToys: взаимное переназначение клавиш A и B",
+        "en": "PowerToys: mutually remapping the A and B keys"
+      },
+      "alt": {
+        "ru": "PowerToys: взаимное переназначение клавиш A и B",
+        "en": "PowerToys: mutually remapping the A and B keys"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 47,
+          "label": {
+            "ru": "Физическое A отправляет приложению B",
+            "en": "Physical A sends B to the application"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте назначенное действие с учётом текущей раскладки и режима.",
+        "en": "Show the assigned action using the current layout and mode."
+      }
+    ],
+    "examples": [
+      {
+        "title": "PowerToys Keyboard Manager",
+        "url": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager"
+      }
+    ]
+  },
+  "keyboard--family-space": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Клавиатура как пространство",
+      "en": "Keyboard as a spatial surface"
+    },
+    "description": {
+      "ru": "Расположение клавиш становится картой действий. В анонсированном Keyboard Sports игровое пространство построено вокруг целой клавиатуры.",
+      "en": "Key positions become a map of actions. The announced Keyboard Sports builds its game space around the whole keyboard."
+    },
+    "image": {
+      "src": "images/mechanics/control-keyboard-sports-0.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Keyboard Sports - Saving QWERTY (announced)",
+      "sourceUrl": "https://store.steampowered.com/app/700720/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/700720/ss_ce8309932b1d8f2c20bd60058d242cd14bc069e0.1920x1080.jpg?t=1787144101",
+      "credit": "Triband",
+      "rights": "Imagery © Triband. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Keyboard Sports: анонсированный эпизод с клавиатурным полем",
+        "en": "Keyboard Sports: an announced scene with a keyboard-shaped field"
+      },
+      "alt": {
+        "ru": "Keyboard Sports: анонсированный эпизод с клавиатурным полем",
+        "en": "Keyboard Sports: an announced scene with a keyboard-shaped field"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 75,
+          "label": {
+            "ru": "Длинная область Space включена в устройство сцены",
+            "en": "The long Space area is part of the scene’s layout"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте различия ANSI, ISO и компактных клавиатур.",
+        "en": "Account for ANSI, ISO and compact keyboard layouts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Keyboard Sports - Saving QWERTY (announced)",
+        "url": "https://store.steampowered.com/app/700720/"
+      }
+    ]
+  },
+  "keyboard--family-coordination": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Координация рук и пальцев",
+      "en": "Hand-finger coordination"
+    },
+    "description": {
+      "ru": "Разные клавиши независимо управляют частями системы. В QWOP пары Q/W и O/P управляют бёдрами и голенями, из чего игрок собирает движение.",
+      "en": "Different keys independently control parts of a system. QWOP maps Q/W and O/P to thighs and calves, requiring the player to coordinate movement."
+    },
+    "image": {
+      "src": "images/mechanics/control-qwop.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 320,
+        "y": 82,
+        "width": 640,
+        "height": 384
+      },
+      "game": "QWOP",
+      "sourceUrl": "https://www.foddy.net/legacy/Athletics.html",
+      "originalUrl": "https://www.foddy.net/legacy/Athletics.html",
+      "credit": "Bennett Foddy",
+      "rights": "Imagery © Bennett Foddy. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "QWOP: отдельные клавиши управляют бёдрами и голенями",
+        "en": "QWOP: separate keys control thighs and calves"
+      },
+      "alt": {
+        "ru": "QWOP: отдельные клавиши управляют бёдрами и голенями",
+        "en": "QWOP: separate keys control thighs and calves"
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 18,
+          "label": {
+            "ru": "O и P управляют голенями; Q и W отвечают за бёдра",
+            "en": "O and P control calves; Q and W control thighs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не считайте нажатую клавишу доказательством использования конкретного пальца.",
+        "en": "A key press does not prove which finger produced it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "QWOP",
+        "url": "https://www.foddy.net/legacy/Athletics.html"
+      }
+    ]
+  },
+  "keyboard--family-object": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Клавиатура как физический предмет",
+      "en": "Keyboard as a physical object"
+    },
+    "description": {
+      "ru": "Форма и подписи физических клавиш входят в загадку. В анонсированном Keyboard Sports просьба сесть связывается с длинной клавишей Space.",
+      "en": "Physical key shapes and labels become puzzle material. The announced Keyboard Sports connects a request to sit down with the long Space key."
+    },
+    "image": {
+      "src": "images/mechanics/control-keyboard-sports-0.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Keyboard Sports - Saving QWERTY (announced)",
+      "sourceUrl": "https://store.steampowered.com/app/700720/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/700720/ss_ce8309932b1d8f2c20bd60058d242cd14bc069e0.1920x1080.jpg?t=1787144101",
+      "credit": "Triband",
+      "rights": "Imagery © Triband. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Keyboard Sports: подсказка «SPACE» связывает слово и форму клавиши",
+        "en": "Keyboard Sports: the SPACE clue connects a word with a key’s shape"
+      },
+      "alt": {
+        "ru": "Keyboard Sports: подсказка «SPACE» связывает слово и форму клавиши",
+        "en": "Keyboard Sports: the SPACE clue connects a word with a key’s shape"
+      },
+      "markers": [
+        {
+          "x": 36,
+          "y": 40,
+          "label": {
+            "ru": "Подсказка называет Space, а сцена предлагает длинное сиденье",
+            "en": "The clue names Space and the scene presents a long seat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обычные клавиатурные события не сообщают форму кейкапов или ориентацию корпуса.",
+        "en": "Normal key events do not report keycap shapes or keyboard orientation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Keyboard Sports - Saving QWERTY (announced)",
+        "url": "https://store.steampowered.com/app/700720/"
+      }
+    ]
+  },
+  "keyboard--family-absence": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бездействие и ограничения ввода",
+      "en": "Inactivity and input constraints"
+    },
+    "description": {
+      "ru": "Отсутствие нажатия тоже получает последствия. В Crypt of the NecroDancer пропущенный музыкальный удар не останавливает движение противников.",
+      "en": "The absence of a key press also has consequences. In Crypt of the NecroDancer missing a musical beat does not stop enemy movement."
+    },
+    "image": {
+      "src": "images/mechanics/systems-crypt-necrodancer-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Crypt of the NecroDancer",
+      "sourceUrl": "https://store.steampowered.com/app/247080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/247080/ss_bb057affa1f4ccac14d1a58e5707cd0fd66e82e7.1920x1080.jpg?t=1791916929",
+      "credit": "Brace Yourself Games / Brace Yourself Games / Klei Entertainment",
+      "rights": "© Brace Yourself Games / Brace Yourself Games / Klei Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "alt": {
+        "ru": "Движение и атаки подчиняются музыкальному ритму",
+        "en": "Movement and attacks follow the musical beat"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 88,
+          "label": {
+            "ru": "Нижняя шкала помогает попадать действиями в ритм",
+            "en": "The lower beat bar helps time actions to the music"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте последствия бездействия и отличайте его от потери фокуса окна.",
+        "en": "Explain inactivity consequences and distinguish it from window focus loss."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crypt of the NecroDancer",
+        "url": "https://store.steampowered.com/app/247080/"
+      }
+    ]
+  },
+  "keyboard--family-navigation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Навигация и выбор",
+      "en": "Navigation and selection"
+    },
+    "description": {
+      "ru": "Клавиши перемещают фокус или напрямую выбирают элемент. В NetHack буквы рядом с предметами позволяют обращаться к ним через клавиатурные команды.",
+      "en": "Keys move focus or select an item directly. In NetHack item letters let keyboard commands address particular inventory entries."
+    },
+    "image": {
+      "src": "images/mechanics/systems-nethack-inventory.webp",
+      "width": 644,
+      "height": 461,
+      "game": "NetHack (menucolors)",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nethack-inventory.png",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Nethack-inventory.png",
+      "credit": "NetHack developers; screenshot by Shen, 2006, with the menucolors patch",
+      "rights": "NetHack General Public License. Converted to WebP on 2026-10-22. License: https://www.nethack.org/common/license.html; bundled copy: images/mechanics/nethack-license.txt. Source: https://commons.wikimedia.org/wiki/File:Nethack-inventory.png",
+      "caption": {
+        "ru": "NetHack: буквенные обозначения адресуют предметы инвентаря",
+        "en": "NetHack: letter labels address inventory items"
+      },
+      "alt": {
+        "ru": "NetHack: буквенные обозначения адресуют предметы инвентаря",
+        "en": "NetHack: letter labels address inventory items"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 82,
+          "label": {
+            "ru": "Буква k связана с лампой в текущем инвентаре",
+            "en": "The letter k addresses the lamp in this inventory"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте видимый фокус и не меняйте назначение клавиш неожиданно.",
+        "en": "Keep focus visible and avoid unexpected key reassignment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "NetHack Guidebook",
+        "url": "https://www.nethack.org/v343/Guidebook.html"
+      }
+    ]
+  },
+  "keyboard--family-multiplayer": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместная и соревновательная игра",
+      "en": "Cooperative and competitive play"
+    },
+    "description": {
+      "ru": "Участники получают разные области одной клавиатуры. Overcooked! 2 поддерживает такое разделение для двух локальных игроков на компьютере.",
+      "en": "Players receive separate areas of one keyboard. Overcooked! 2 supports splitting a computer keyboard between two local players."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-overcooked2-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Overcooked! 2",
+      "sourceUrl": "https://store.steampowered.com/app/728880/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/ss_a87a245229d8196f25301685d991467412e9fef8.1920x1080.jpg?t=1789548883",
+      "credit": "Ghost Town Games Ltd. / Team17 / Team17",
+      "rights": "© Ghost Town Games Ltd. / Team17 / Team17. All rights reserved.",
+      "caption": {
+        "ru": "Заказы, рабочие места и таймер общей кухни",
+        "en": "Orders, workstations and a shared kitchen timer"
+      },
+      "alt": {
+        "ru": "Заказы, рабочие места и таймер общей кухни",
+        "en": "Orders, workstations and a shared kitchen timer"
+      },
+      "markers": [
+        {
+          "x": 13,
+          "y": 7,
+          "label": {
+            "ru": "Заказы показывают нужные блюда и ингредиенты",
+            "en": "Orders show required dishes and ingredients"
+          }
+        },
+        {
+          "x": 48,
+          "y": 34,
+          "label": {
+            "ru": "Плиты и тарелки образуют цепочку приготовления",
+            "en": "Stoves and plates form a preparation chain"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте совместные сочетания на обычных клавиатурах и оставляйте место рукам.",
+        "en": "Test combined inputs on ordinary keyboards and leave enough room for both players’ hands."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Overcooked! 2",
+        "url": "https://store.steampowered.com/app/728880/"
+      },
+      {
+        "title": "Team17: local split keyboard",
+        "url": "https://www.team17.com/news/overcooked-2-faq"
+      }
+    ]
+  },
+  "keyboard--family-sensors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Аналоговые клавиши и датчики",
+      "en": "Analog Keys and Sensors"
+    },
+    "description": {
+      "ru": "Специальная клавиатура сообщает глубину хода клавиш как аналоговое значение. В Wootility кривая связывает миллиметры хода с выходом контроллера.",
+      "en": "A specialised keyboard reports key travel as an analog value. Wootility maps millimetres of travel to controller output through a response curve."
+    },
+    "image": {
+      "src": "images/mechanics/control-wootility-analog.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 390,
+        "y": 360,
+        "width": 860,
+        "height": 340
+      },
+      "game": "Wootility 5.4.2 (demo)",
+      "sourceUrl": "https://wooting.io/wootility",
+      "originalUrl": "https://wootility.io/",
+      "credit": "Wooting",
+      "rights": "Imagery © Wooting. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Wootility, демо: аналоговое значение зависит от глубины хода",
+        "en": "Wootility demo: analog output depends on key travel"
+      },
+      "alt": {
+        "ru": "Wootility, демо: аналоговое значение зависит от глубины хода",
+        "en": "Wootility demo: analog output depends on key travel"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 90,
+          "label": {
+            "ru": "Горизонтальная ось измеряет ход в миллиметрах, а не силу",
+            "en": "The horizontal axis measures travel in millimetres, not force"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте устройство и API; обычное событие keydown не содержит глубину хода.",
+        "en": "Check the device and API; an ordinary keydown event contains no travel depth."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Wootility 5.4.2 (demo)",
+        "url": "https://wooting.io/wootility"
+      }
+    ]
+  },
+  "keyboard--family-feedback": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Световая и физическая обратная связь",
+      "en": "Light and physical feedback"
+    },
+    "description": {
+      "ru": "Подсветка становится выходным каналом. В демо Wootility видна цветовая карта; игровые подсказки потребуют отдельной связи со состоянием игры.",
+      "en": "Lighting becomes an output channel. Wootility’s demo shows a colour map; game cues additionally require a link to the game state."
+    },
+    "image": {
+      "src": "images/mechanics/control-wootility-rgb.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 390,
+        "y": 110,
+        "width": 860,
+        "height": 575
+      },
+      "game": "Wootility 5.4.2 (demo)",
+      "sourceUrl": "https://wooting.io/wootility",
+      "originalUrl": "https://wootility.io/",
+      "credit": "Wooting",
+      "rights": "Imagery © Wooting. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Wootility, демо: карта цветов и настройки RGB-эффекта",
+        "en": "Wootility demo: a colour map and RGB effect settings"
+      },
+      "alt": {
+        "ru": "Wootility, демо: карта цветов и настройки RGB-эффекта",
+        "en": "Wootility demo: a colour map and RGB effect settings"
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 20,
+          "label": {
+            "ru": "Клавиши получают независимо различимые цвета",
+            "en": "Keys receive visually distinguishable colours"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дублируйте световые сигналы на экране и проверяйте поддержку RGB API.",
+        "en": "Mirror light cues on screen and check RGB API support."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Wootility 5.4.2 (demo)",
+        "url": "https://wooting.io/wootility"
+      }
+    ]
+  },
+  "keyboard--family-hybrids": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Гибриды и встроенные контроллеры",
+      "en": "Hybrids and embedded controllers"
+    },
+    "description": {
+      "ru": "Клавиши объединяются с другим контроллером. В AudioSwift клавиатура запускает ноты, а трекпад меняет параметры синтезатора.",
+      "en": "Keys combine with another controller. In AudioSwift the keyboard triggers notes while the trackpad changes synthesizer parameters."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-8.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/yqt0o62p84omwo9zdcacb/09-Utilities-MIDI-Keys.mp4?rlkey=3pmy5octl15j8klsneydy1dvl&st=c3vxluvv&raw=1",
+      "sourceFrameSeconds": 3,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift: клавиатура и трекпад совместно управляют синтезатором",
+        "en": "AudioSwift: keyboard and trackpad jointly control a synthesizer"
+      },
+      "alt": {
+        "ru": "AudioSwift: клавиатура и трекпад совместно управляют синтезатором",
+        "en": "AudioSwift: keyboard and trackpad jointly control a synthesizer"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 70,
+          "label": {
+            "ru": "Трекпад меняет параметр Vibrato при клавиатурном исполнении",
+            "en": "The trackpad changes Vibrato during keyboard performance"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте роли каналов и сохраняйте управление при отключении одного из них.",
+        "en": "Separate input roles and retain control if one channel disconnects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "keyboard--family-accessibility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Доступные схемы управления",
+      "en": "Accessible control schemes"
+    },
+    "description": {
+      "ru": "Переназначение сохраняет действие при другой моторной схеме. В PowerToys пользователь выбирает удобную клавишу вместо исходной.",
+      "en": "Remapping preserves an action under a different motor input scheme. PowerToys lets the user choose a more convenient key in place of the original."
+    },
+    "image": {
+      "src": "images/mechanics/control-powertoys-remap.webp",
+      "width": 1440,
+      "height": 901,
+      "crop": {
+        "x": 0,
+        "y": 266,
+        "width": 1440,
+        "height": 398
+      },
+      "game": "PowerToys Keyboard Manager",
+      "sourceUrl": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager",
+      "originalUrl": "https://learn.microsoft.com/en-us/windows/powertoys/images/keyboard-manager/keyboard-remap-a-b.png",
+      "credit": "Microsoft",
+      "rights": "Imagery © Microsoft. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "PowerToys: взаимное переназначение клавиш A и B",
+        "en": "PowerToys: mutually remapping the A and B keys"
+      },
+      "alt": {
+        "ru": "PowerToys: взаимное переназначение клавиш A и B",
+        "en": "PowerToys: mutually remapping the A and B keys"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 47,
+          "label": {
+            "ru": "Физическое A отправляет приложению B",
+            "en": "Physical A sends B to the application"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разрешайте переназначать весь набор действий, включая подтверждение и отмену.",
+        "en": "Allow remapping of every action, including confirmation and cancellation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "PowerToys Keyboard Manager",
+        "url": "https://learn.microsoft.com/en-us/windows/powertoys/keyboard-manager"
+      }
+    ]
+  },
+  "keyboard--family-cognition": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Память, внимание и обучение",
+      "en": "Memory, attention and learning"
+    },
+    "description": {
+      "ru": "Набор становится задачей на память, внимание или понимание команд. В Hacknet игрок применяет синтаксис терминала к текущей проблеме.",
+      "en": "Typing becomes a task involving memory, attention or command comprehension. In Hacknet the player applies terminal syntax to the current problem."
+    },
+    "image": {
+      "src": "images/mechanics/interface-hacknet-00.webp",
+      "width": 1440,
+      "height": 809,
+      "game": "Hacknet",
+      "sourceUrl": "https://store.steampowered.com/app/365450/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/365450/ss_182ebf5aa570fc0ad0d1d974d43137e858ddeb54.1920x1080.jpg?t=1758156718",
+      "credit": "Team Fractal Alligator / Fellow Traveller",
+      "rights": "© Team Fractal Alligator / Fellow Traveller. All rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hacknet: краткая справка с командами рядом с терминалом",
+        "en": "Hacknet: a quick command reference beside the terminal"
+      },
+      "alt": {
+        "ru": "Hacknet: краткая справка с командами рядом с терминалом",
+        "en": "Hacknet: a quick command reference beside the terminal"
+      },
+      "markers": [
+        {
+          "x": 7,
+          "y": 31,
+          "label": {
+            "ru": "Quick Reference Guide объясняет команды",
+            "en": "Quick Reference Guide explains the commands"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте знание команды от скорости печати, если проверяется понимание.",
+        "en": "Separate command knowledge from typing speed when testing understanding."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hacknet",
+        "url": "https://store.steampowered.com/app/365450/"
+      }
+    ]
+  },
+  "trackpad--family-01": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Указание и управление",
+      "en": "Pointing and control"
+    },
+    "description": {
+      "ru": "Движение пальца переводится в движение указателя. В macOS скорость отслеживания настраивается отдельно от силы клика и жестов нескольких пальцев.",
+      "en": "Finger motion becomes pointer motion. macOS configures tracking speed separately from click force and multi-finger gestures."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-force-touch.webp",
+      "width": 1440,
+      "height": 1225,
+      "crop": {
+        "x": 473,
+        "y": 418,
+        "width": 936,
+        "height": 687
+      },
+      "game": "macOS Trackpad settings",
+      "sourceUrl": "https://support.apple.com/en-us/102309",
+      "originalUrl": "https://cdsassets.apple.com/live/7WUAS350/images/macos/tahoe/macos-tahoe-26-system-settings-trackpad-point-and-click-look-up-and-data-detectors.png",
+      "credit": "Apple",
+      "rights": "Imagery © Apple. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "macOS: скорость указателя отделена от силы клика",
+        "en": "macOS: pointer speed is separate from click force"
+      },
+      "alt": {
+        "ru": "macOS: скорость указателя отделена от силы клика",
+        "en": "macOS: pointer speed is separate from click force"
+      },
+      "markers": [
+        {
+          "x": 74,
+          "y": 44,
+          "label": {
+            "ru": "Tracking speed меняет движение указателя по экрану",
+            "en": "Tracking speed adjusts pointer motion on screen"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не путайте координаты курсора с координатами контакта на поверхности.",
+        "en": "Do not confuse cursor coordinates with finger coordinates on the surface."
+      }
+    ],
+    "examples": [
+      {
+        "title": "macOS Trackpad settings",
+        "url": "https://support.apple.com/en-us/102309"
+      }
+    ]
+  },
+  "trackpad--family-02": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Касания и клики",
+      "en": "Touches and clicks"
+    },
+    "description": {
+      "ru": "Касание или физическое нажатие вызывает команду. В macOS можно отдельно включить tap-to-click и выбрать двухпальцевый вторичный клик.",
+      "en": "A tap or physical press triggers a command. macOS separately enables tap-to-click and configures a two-finger secondary click."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-force-touch.webp",
+      "width": 1440,
+      "height": 1225,
+      "crop": {
+        "x": 473,
+        "y": 832,
+        "width": 936,
+        "height": 273
+      },
+      "game": "macOS Trackpad settings",
+      "sourceUrl": "https://support.apple.com/en-us/102309",
+      "originalUrl": "https://cdsassets.apple.com/live/7WUAS350/images/macos/tahoe/macos-tahoe-26-system-settings-trackpad-point-and-click-look-up-and-data-detectors.png",
+      "credit": "Apple",
+      "rights": "Imagery © Apple. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "macOS: отдельные настройки касания и вторичного клика",
+        "en": "macOS: separate settings for tapping and secondary click"
+      },
+      "alt": {
+        "ru": "macOS: отдельные настройки касания и вторичного клика",
+        "en": "macOS: separate settings for tapping and secondary click"
+      },
+      "markers": [
+        {
+          "x": 77,
+          "y": 78,
+          "label": {
+            "ru": "Вторичный клик настроен на два пальца",
+            "en": "Secondary click is configured for two fingers"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте настройки ОС и предоставляйте альтернативу многопальцевым жестам.",
+        "en": "Respect OS settings and offer an alternative to multi-finger gestures."
+      }
+    ],
+    "examples": [
+      {
+        "title": "macOS Trackpad settings",
+        "url": "https://support.apple.com/en-us/102309"
+      }
+    ]
+  },
+  "trackpad--family-03": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Удержание и отпускание",
+      "en": "Hold and release"
+    },
+    "description": {
+      "ru": "Касание запускает ноту, а отпускание может завершить её. Отдельный режим sustain в AudioSwift позволяет сохранить звучание после завершения контакта.",
+      "en": "Touch starts a note and release can end it. AudioSwift’s separate sustain mode can retain the sound after finger contact ends."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-6.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/hggbp41f16g87i1mb8z5s/07-Workflow-Scale.mp4?rlkey=1i7ekbx0r5m32sudh0er3r4lb&st=byr4pjge&raw=1",
+      "sourceFrameSeconds": 3,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift Scale: касания трекпада используются для исполнения нот",
+        "en": "AudioSwift Scale: trackpad contacts are used to play notes"
+      },
+      "alt": {
+        "ru": "AudioSwift Scale: касания трекпада используются для исполнения нот",
+        "en": "AudioSwift Scale: trackpad contacts are used to play notes"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 52,
+          "label": {
+            "ru": "Контакт показан на виртуальной поверхности инструмента",
+            "en": "A contact appears on the instrument’s virtual surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Задавайте поведение отпускания явно и не оставляйте зависшие активные действия.",
+        "en": "Define release behavior and prevent active actions from remaining stuck."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "trackpad--family-04": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перетаскивание и захват",
+      "en": "Dragging and grabbing"
+    },
+    "description": {
+      "ru": "Захват связывает указатель с объектом, а отпускание завершает перенос. В Mini Metro перетаскивание прокладывает линию между станциями.",
+      "en": "Grabbing links the pointer to an object and release completes the drag. In Mini Metro dragging builds a line between stations."
+    },
+    "image": {
+      "src": "images/mechanics/interface-mini-metro-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Mini Metro",
+      "sourceUrl": "https://store.steampowered.com/app/287980/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/287980/ss_c7bc5df7e606504709e9f53ff9c7584ac4c01b18.1920x1080.jpg?t=1724386220",
+      "credit": "Dinosaur Polo Club / Dinosaur Polo Club",
+      "rights": "© Dinosaur Polo Club / Dinosaur Polo Club. All rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Mini Metro: цветные линии соединяют станции разных форм",
+        "en": "Mini Metro: colored lines connect differently shaped stations"
+      },
+      "alt": {
+        "ru": "Mini Metro: цветные линии соединяют станции разных форм",
+        "en": "Mini Metro: colored lines connect differently shaped stations"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 47,
+          "label": {
+            "ru": "Соединения определяют пути поездов и пересадки",
+            "en": "Connections define train routes and transfers"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте захват при выходе указателя из объекта и позволяйте отменить перенос.",
+        "en": "Retain capture outside the object and allow dragging to be cancelled."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mini Metro",
+        "url": "https://store.steampowered.com/app/287980/"
+      }
+    ]
+  },
+  "trackpad--family-05": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прокрутка и временные оси",
+      "en": "Scrolling and timelines"
+    },
+    "description": {
+      "ru": "Два пальца прокручивают документ, сохраняя его масштаб. В Preview так перемещаются между участками страниц и миниатюрами большого PDF.",
+      "en": "Two-finger scrolling moves through a document without changing its scale. Preview uses this to navigate PDF pages and thumbnails."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-preview.webp",
+      "width": 788,
+      "height": 750,
+      "game": "Preview (macOS)",
+      "sourceUrl": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26",
+      "originalUrl": "https://help.apple.com/assets/67DB77BFAE89A3DDC700A869/67DB77C0E2208881620C3D38/en_US/918f957676bf215f21f57328147e8435.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official support screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Preview: страница документа и прокручиваемая колонка миниатюр",
+        "en": "Preview: a document page and a scrollable thumbnail sidebar"
+      },
+      "alt": {
+        "ru": "Preview: страница документа и прокручиваемая колонка миниатюр",
+        "en": "Preview: a document page and a scrollable thumbnail sidebar"
+      },
+      "markers": [
+        {
+          "x": 13,
+          "y": 67,
+          "label": {
+            "ru": "Миниатюры связывают прокрутку с положением в документе",
+            "en": "Thumbnails relate scrolling to the position in the document"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте прокрутку и pinch, учитывая инерцию и направление, выбранное в ОС.",
+        "en": "Distinguish scrolling from pinching and respect OS direction and inertia."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Preview (macOS)",
+        "url": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26"
+      }
+    ]
+  },
+  "trackpad--family-06": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Направления и траектории",
+      "en": "Directions and trajectories"
+    },
+    "description": {
+      "ru": "След движения задаёт геометрию пути. Через перетаскивание указателя трекпад позволяет рисовать линии, из которых в Line Rider строится трасса.",
+      "en": "A motion trace defines path geometry. Pointer dragging lets a trackpad draw the lines that form a course in Line Rider."
+    },
+    "image": {
+      "src": "images/mechanics/interface-line-rider.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 530,
+        "y": 300,
+        "width": 540,
+        "height": 250
+      },
+      "game": "Line Rider",
+      "sourceUrl": "https://www.linerider.com/",
+      "originalUrl": "https://www.linerider.com/",
+      "credit": "Boštjan Čadež; original browser capture, 2026-10-22",
+      "rights": "© Boštjan Čadež. Actual unsigned Line Rider session, version 2250.0. The route was drawn through normal controls and the simulation paused at frame 28. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Line Rider: персонаж едет по нарисованному склону",
+        "en": "Line Rider: the rider travels along a drawn slope"
+      },
+      "alt": {
+        "ru": "Line Rider: персонаж едет по нарисованному склону",
+        "en": "Line Rider: the rider travels along a drawn slope"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 57,
+          "label": {
+            "ru": "Положение линии определяет поверхность движения саней",
+            "en": "The drawn line determines the sled’s riding surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для росчерков учитывайте форму и направление, а не только длину перемещения.",
+        "en": "For stroke gestures, consider shape and direction rather than distance alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Line Rider",
+        "url": "https://www.linerider.com/"
+      }
+    ]
+  },
+  "trackpad--family-07": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Геометрия нескольких контактов",
+      "en": "Multiple Contact Geometry"
+    },
+    "description": {
+      "ru": "Расстояние между пальцами меняет масштаб. В Preview pinch приближает или отдаляет документ; приложение может получать готовый жест вместо двух координат.",
+      "en": "Finger separation changes scale. Pinching zooms a document in Preview; the app may receive a recognised gesture instead of two contact coordinates."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-preview.webp",
+      "width": 788,
+      "height": 750,
+      "game": "Preview (macOS)",
+      "sourceUrl": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26",
+      "originalUrl": "https://help.apple.com/assets/67DB77BFAE89A3DDC700A869/67DB77C0E2208881620C3D38/en_US/918f957676bf215f21f57328147e8435.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official support screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Preview: масштаб страницы меняется жестом pinch или кнопками панели",
+        "en": "Preview: page scale changes with a pinch or toolbar controls"
+      },
+      "alt": {
+        "ru": "Preview: масштаб страницы меняется жестом pinch или кнопками панели",
+        "en": "Preview: page scale changes with a pinch or toolbar controls"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 4,
+          "label": {
+            "ru": "Кнопки масштаба дают альтернативу двухпальцевому жесту",
+            "en": "Zoom controls provide an alternative to a two-finger gesture"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не обещайте координаты пальцев, если API передаёт только готовое изменение масштаба.",
+        "en": "Do not promise finger coordinates when the API only supplies a zoom gesture."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Preview (macOS)",
+        "url": "https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/11.0/mac/26"
+      }
+    ]
+  },
+  "trackpad--family-08": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Аккорды, роли и последовательности",
+      "en": "Chords, roles and sequences"
+    },
+    "description": {
+      "ru": "Несколько контактов получают независимые роли. В AudioSwift разные зоны трекпада запускают ноты, поэтому касания можно сочетать в музыкальное действие.",
+      "en": "Multiple contacts receive independent roles. AudioSwift maps trackpad zones to notes, letting contacts combine into musical actions."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-4.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/z7hef1ztnd56mheic3wgn/05-Core-Features-Triggers-MPE.mp4?rlkey=ao0d1fw6tnmt2sa4nsc36eccx&st=zyrj4jr0&raw=1",
+      "sourceFrameSeconds": 2.8166665,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift Trigger: сетка нот соответствует зонам трекпада",
+        "en": "AudioSwift Trigger: the note grid maps to trackpad zones"
+      },
+      "alt": {
+        "ru": "AudioSwift Trigger: сетка нот соответствует зонам трекпада",
+        "en": "AudioSwift Trigger: the note grid maps to trackpad zones"
+      },
+      "markers": [
+        {
+          "x": 36,
+          "y": 74,
+          "label": {
+            "ru": "Сетка разделяет поверхность на независимо назначенные зоны",
+            "en": "The grid divides the surface into independently assigned zones"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте роли контактов при добавлении и отрыве пальцев.",
+        "en": "Preserve contact roles as fingers join and leave the surface."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "trackpad--family-09": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зоны и виртуальные органы управления",
+      "en": "Zones and virtual controls"
+    },
+    "description": {
+      "ru": "Поверхность делится на виртуальные органы управления. В AudioSwift отдельные вертикальные зоны меняют Expression, Dynamics, Reverb и Release.",
+      "en": "The surface is divided into virtual controls. In AudioSwift separate vertical zones change Expression, Dynamics, Reverb and Release."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-2.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/01xx9msnyfkak43g0j99r/03-Core-Features-Sliders.mp4?rlkey=q5fpwrws8j8i4lglzjgfbwvsb&st=9adzkxde&raw=1",
+      "sourceFrameSeconds": 3,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift Slider: независимые вертикальные регуляторы на трекпаде",
+        "en": "AudioSwift Slider: independent vertical trackpad controls"
+      },
+      "alt": {
+        "ru": "AudioSwift Slider: независимые вертикальные регуляторы на трекпаде",
+        "en": "AudioSwift Slider: independent vertical trackpad controls"
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 32,
+          "label": {
+            "ru": "Каждая зона связана со своим параметром инструмента",
+            "en": "Each zone maps to its own instrument parameter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте границы зон видимыми и учитывайте ограничение доступа к сырым касаниям.",
+        "en": "Show zone boundaries and check access to raw contacts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "trackpad--family-10": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Давление и сила",
+      "en": "Pressure and force"
+    },
+    "description": {
+      "ru": "Force Touch измеряет усилие и различает обычный клик и более сильное нажатие. В macOS порог клика настраивается только для подходящего трекпада.",
+      "en": "Force Touch measures force and distinguishes a click from a firmer press. macOS exposes click-force settings only for compatible trackpads."
+    },
+    "image": {
+      "src": "images/mechanics/control-macos-force-touch.webp",
+      "width": 1440,
+      "height": 1225,
+      "crop": {
+        "x": 473,
+        "y": 598,
+        "width": 936,
+        "height": 239
+      },
+      "game": "macOS Trackpad settings",
+      "sourceUrl": "https://support.apple.com/en-us/102309",
+      "originalUrl": "https://cdsassets.apple.com/live/7WUAS350/images/macos/tahoe/macos-tahoe-26-system-settings-trackpad-point-and-click-look-up-and-data-detectors.png",
+      "credit": "Apple",
+      "rights": "Imagery © Apple. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "macOS: сила клика и включение Force Click",
+        "en": "macOS: click force and Force Click activation"
+      },
+      "alt": {
+        "ru": "macOS: сила клика и включение Force Click",
+        "en": "macOS: click force and Force Click activation"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 52,
+          "label": {
+            "ru": "Light, Medium и Firm задают требуемое усилие клика",
+            "en": "Light, Medium and Firm set the required click force"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте Force Touch отдельно: обычный клик и площадь касания не измеряют силу.",
+        "en": "Check Force Touch support; a click or contact area is not a force measurement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "macOS Trackpad settings",
+        "url": "https://support.apple.com/en-us/102309"
+      }
+    ]
+  },
+  "trackpad--family-11": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Составные схемы управления",
+      "en": "Composite control schemes"
+    },
+    "description": {
+      "ru": "Каналы получают разные роли в одной задаче. В демонстрации AudioSwift клавиатура играет ноты, а трекпад управляет двумерным параметром синтезатора.",
+      "en": "Channels receive distinct roles in one task. AudioSwift’s demo plays notes on a keyboard while a trackpad controls a two-dimensional synth parameter."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-3.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/fc2ycw35tusq9f0joj5s5/04-Core-Features-XY-Pads.mp4?rlkey=hc7s0jir9zb5du0z08f9xipon&st=nltffpdt&raw=1",
+      "sourceFrameSeconds": 3,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift XY: трекпад меняет звук во время исполнения на клавишах",
+        "en": "AudioSwift XY: a trackpad shapes sound during keyboard performance"
+      },
+      "alt": {
+        "ru": "AudioSwift XY: трекпад меняет звук во время исполнения на клавишах",
+        "en": "AudioSwift XY: a trackpad shapes sound during keyboard performance"
+      },
+      "markers": [
+        {
+          "x": 24,
+          "y": 55,
+          "label": {
+            "ru": "Точка XY связывает две оси движения с параметрами звука",
+            "en": "The XY point maps two motion axes to sound parameters"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не меняйте роли осей и подтверждения посреди активного жеста.",
+        "en": "Do not change axis or confirmation roles during an active gesture."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "phone-touch--family-01": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Касания и выбор",
+      "en": "Taps and selection"
+    },
+    "description": {
+      "ru": "Короткое касание выбирает объект или запускает команду. В Pokémon Smile крупная кнопка начинает игровой сеанс, а отдельные значки открывают разделы.",
+      "en": "A short tap selects an object or starts a command. Pokémon Smile uses a large start button and separate icons for other sections."
+    },
+    "image": {
+      "src": "images/mechanics/input-pokemon-smile-1.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 35,
+        "y": 325,
+        "width": 650,
+        "height": 620
+      },
+      "game": "Pokémon Smile",
+      "sourceUrl": "https://apps.apple.com/us/app/pok%C3%A9mon-smile/id1512331079?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/77/73/f9/7773f950-f8d0-ddde-7bc1-24e9cfc38591/4c4395db-2b85-4247-9852-2e380223c876_MainMenu_5.5_EN.png/720x1560bb.jpg",
+      "credit": "The Pokemon Company",
+      "rights": "Imagery © The Pokemon Company. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Pokémon Smile: крупная кнопка начала и отдельные разделы меню",
+        "en": "Pokémon Smile: a large start button and separate menu sections"
+      },
+      "alt": {
+        "ru": "Pokémon Smile: крупная кнопка начала и отдельные разделы меню",
+        "en": "Pokémon Smile: a large start button and separate menu sections"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 38,
+          "label": {
+            "ru": "Касание Get Brushing запускает основной сеанс",
+            "en": "Tapping Get Brushing starts the main session"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте область касания достаточно большой и позволяйте уйти с кнопки до отпускания.",
+        "en": "Make touch targets large enough and allow moving off a button before release."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pokémon Smile",
+        "url": "https://apps.apple.com/us/app/pok%C3%A9mon-smile/id1512331079?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-02": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Удержание и отпускание",
+      "en": "Hold and release"
+    },
+    "description": {
+      "ru": "Удержание после движения включает другой режим. В Procreate Pocket нарисованный контур превращается в ровную фигуру, если задержать палец на холсте.",
+      "en": "Holding after movement activates another mode. In Procreate Pocket a drawn outline snaps into a clean shape when the finger stays on the canvas."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-gestures-18.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 0,
+        "y": 150,
+        "width": 640,
+        "height": 900
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/fdd30b3f5a7591aaad69aa0074697667c08c1c7a-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: QuickShape распознал треугольник после удержания",
+        "en": "Procreate Pocket: QuickShape recognised a triangle after holding"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: QuickShape распознал треугольник после удержания",
+        "en": "Procreate Pocket: QuickShape recognised a triangle after holding"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 59,
+          "label": {
+            "ru": "После удержания контур стал ровным треугольником",
+            "en": "Holding turned the outline into a clean triangle"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте переход в режим удержания и давайте настроить задержку.",
+        "en": "Show the hold-mode transition and allow its delay to be adjusted."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures"
+      }
+    ]
+  },
+  "phone-touch--family-03": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Темп, ритм и последовательности",
+      "en": "Tempo, rhythm and sequences"
+    },
+    "description": {
+      "ru": "Касания задают ритм и темп последовательности. В Magic Piano подсветка показывает нужные ноты, а игрок исполняет музыкальную фразу.",
+      "en": "Taps set a sequence’s rhythm and tempo. In Magic Piano illuminated notes guide the player through a musical phrase."
+    },
+    "image": {
+      "src": "images/mechanics/input-magic-piano-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 734,
+        "width": 720,
+        "height": 500
+      },
+      "game": "Magic Piano: game by Smule",
+      "sourceUrl": "https://apps.apple.com/us/app/magic-piano-game-by-smule/id421254504?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/ab/37/53/ab3753d1-1c11-ed8d-46f3-2cae69c9ef48/mzl.poqlffyd.jpg/720x1560bb.jpg",
+      "credit": "Smule",
+      "rights": "Imagery © Smule. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Magic Piano: последовательность нот и клавиши исполнения",
+        "en": "Magic Piano: a note sequence and performance keys"
+      },
+      "alt": {
+        "ru": "Magic Piano: последовательность нот и клавиши исполнения",
+        "en": "Magic Piano: a note sequence and performance keys"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 87,
+          "label": {
+            "ru": "Подсвеченные ноты связывают последовательность с касаниями",
+            "en": "Illuminated notes connect the sequence to touch input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте свободный темп исполнения и проверку попадания в строгое временное окно.",
+        "en": "Distinguish free performance tempo from a strict timing-window test."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Magic Piano: game by Smule",
+        "url": "https://apps.apple.com/us/app/magic-piano-game-by-smule/id421254504?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-04": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перетаскивание и размещение",
+      "en": "Dragging and placement"
+    },
+    "description": {
+      "ru": "Контакт захватывает элемент, движение переносит его, отпускание размещает. В Procreate Pocket перетаскиванием меняют порядок слоёв.",
+      "en": "Touch grabs an element, movement drags it and release places it. Procreate Pocket uses dragging to reorder layers."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-gestures-22.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 0,
+        "y": 640,
+        "width": 640,
+        "height": 660
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/5e177eab8478b6ee10a47fde4e7964bffa775051-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: выбранный слой переносят внутри списка",
+        "en": "Procreate Pocket: a selected layer can be dragged within the list"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: выбранный слой переносят внутри списка",
+        "en": "Procreate Pocket: a selected layer can be dragged within the list"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 75,
+          "label": {
+            "ru": "Выбранный слой сохраняет отдельную строку и миниатюру",
+            "en": "The selected layer retains its own row and thumbnail"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте место вставки и отменяйте перенос, если контакт потерян.",
+        "en": "Show the insertion position and cancel the drag if contact is lost."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures"
+      }
+    ]
+  },
+  "phone-touch--family-05": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Свайпы, рывки и броски",
+      "en": "Swipes, jerks and throws"
+    },
+    "description": {
+      "ru": "Быстрый направленный штрих задаёт действие. В Fruit Ninja путь пальца становится разрезом, который может задеть несколько фруктов за один свайп.",
+      "en": "A quick directional stroke defines an action. In Fruit Ninja the finger path becomes a cut that can hit several fruit in one swipe."
+    },
+    "image": {
+      "src": "images/mechanics/touch-fruit-ninja-4.webp",
+      "width": 720,
+      "height": 405,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 280
+      },
+      "game": "Fruit Ninja Classic",
+      "sourceUrl": "https://apps.apple.com/us/app/fruit-ninja-classic/id362949845?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c0/76/a8/c076a85e-2abd-f1e5-2cc5-44ec11ce50a4/a25aaed1-86e9-48c2-8bfe-4dd511077ed9_ENGLISH_SC05_2208x1242.png/720x1560bb.jpg",
+      "credit": "Halfbrick Studios",
+      "rights": "© Halfbrick Studios. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Fruit Ninja: один росчерк разрезает три фрукта",
+        "en": "Fruit Ninja: one stroke slices three fruit"
+      },
+      "alt": {
+        "ru": "Fruit Ninja: один росчерк разрезает три фрукта",
+        "en": "Fruit Ninja: one stroke slices three fruit"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 40,
+          "label": {
+            "ru": "Светлый след показывает путь разреза через фрукты",
+            "en": "The bright trail shows the cutting path through the fruit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте путь целиком, чтобы быстрый жест не проскочил между целями.",
+        "en": "Check the whole path so a fast stroke cannot skip between targets."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Fruit Ninja Classic",
+        "url": "https://apps.apple.com/us/app/fruit-ninja-classic/id362949845?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-06": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рисование и геометрия пути",
+      "en": "Drawing and Path Geometry"
+    },
+    "description": {
+      "ru": "Нарисованный путь становится правилом движения. В Blek линия продолжает повторять заданный рисунок, собирая цветные круги и обходя чёрные препятствия.",
+      "en": "A drawn path becomes a motion rule. In Blek the line repeats its pattern, collecting coloured circles while avoiding black obstacles."
+    },
+    "image": {
+      "src": "images/mechanics/input-blek-3.webp",
+      "width": 720,
+      "height": 405,
+      "crop": {
+        "x": 350,
+        "y": 90,
+        "width": 350,
+        "height": 310
+      },
+      "game": "Blek",
+      "sourceUrl": "https://apps.apple.com/us/app/blek/id742625884?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/a8/32/eb/a832eb7e-4545-1324-58c7-86b0834a72f4/5dcc43ca-d520-4d83-ac90-223546436976_EN_4_IPHONE_55.png/720x1560bb.jpg",
+      "credit": "kunabi brother GmbH",
+      "rights": "Imagery © kunabi brother GmbH. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blek: рисунок пальца задаёт дальнейшее движение линии",
+        "en": "Blek: a finger-drawn pattern determines the line’s later movement"
+      },
+      "alt": {
+        "ru": "Blek: рисунок пальца задаёт дальнейшее движение линии",
+        "en": "Blek: a finger-drawn pattern determines the line’s later movement"
+      },
+      "markers": [
+        {
+          "x": 71,
+          "y": 51,
+          "label": {
+            "ru": "Геометрия штриха становится повторяемой траекторией",
+            "en": "Stroke geometry becomes a repeating trajectory"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте увидеть полученную траекторию и быстро повторить попытку.",
+        "en": "Show the resulting trajectory and allow a quick retry."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blek",
+        "url": "https://apps.apple.com/us/app/blek/id742625884?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-07": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Работа с поверхностью",
+      "en": "Surface interactions"
+    },
+    "description": {
+      "ru": "Движение по области меняет её содержимое. В Procreate Pocket одинаковый жест рисует, смешивает или стирает в зависимости от выбранного инструмента.",
+      "en": "Moving across a region changes its contents. In Procreate Pocket the same gesture paints, smudges or erases according to the selected tool."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-1.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 0,
+        "y": 80,
+        "width": 640,
+        "height": 900
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/b02387ad9c976f389db133d48dadfcd5ce0adce7-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: кисть, смешивание и ластик меняют смысл штриха",
+        "en": "Procreate Pocket: paint, smudge and erase change a stroke’s meaning"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: кисть, смешивание и ластик меняют смысл штриха",
+        "en": "Procreate Pocket: paint, smudge and erase change a stroke’s meaning"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 10,
+          "label": {
+            "ru": "Ластик меняет поверхность по пути контакта",
+            "en": "The eraser changes the surface along the contact path"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте активный инструмент и позволяйте отменить последнее изменение.",
+        "en": "Show the active tool and allow the latest change to be undone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-touch--family-08": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Непрерывное управление",
+      "en": "Continuous Control"
+    },
+    "description": {
+      "ru": "Положение пальца непрерывно задаёт значение. В Procreate Pocket вертикальный слайдер меняет размер кисти; отвод пальца в сторону повышает точность.",
+      "en": "Finger position continuously sets a value. Procreate Pocket’s vertical slider changes brush size; moving sideways increases adjustment precision."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-0.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 350,
+        "y": 420,
+        "width": 290,
+        "height": 510
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/0de741e2b23abb6d5e0756a214d621a945bc35bd-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: размер кисти задаётся непрерывным слайдером",
+        "en": "Procreate Pocket: a continuous slider sets brush size"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: размер кисти задаётся непрерывным слайдером",
+        "en": "Procreate Pocket: a continuous slider sets brush size"
+      },
+      "markers": [
+        {
+          "x": 94,
+          "y": 38,
+          "label": {
+            "ru": "Верхний слайдер регулирует размер кисти",
+            "en": "The upper slider controls brush size"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте контроль после выхода пальца за границы исходного регулятора.",
+        "en": "Retain control when the finger moves outside the original control."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-touch--family-09": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Геометрия нескольких касаний",
+      "en": "Multi-touch geometry"
+    },
+    "description": {
+      "ru": "Два контакта задают масштаб и поворот. В Procreate Pocket пальцы приближают холст и разворачивают его в удобное для рисования положение.",
+      "en": "Two contacts set scale and rotation. In Procreate Pocket fingers zoom the canvas and rotate it to a comfortable drawing angle."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-gestures-4.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 0,
+        "y": 180,
+        "width": 640,
+        "height": 1100
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/570543055caeaa36cf6285c879fba107bc81ef9e-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: холст развёрнут жестом двух пальцев",
+        "en": "Procreate Pocket: the canvas is rotated with a two-finger gesture"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: холст развёрнут жестом двух пальцев",
+        "en": "Procreate Pocket: the canvas is rotated with a two-finger gesture"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 53,
+          "label": {
+            "ru": "Наклон рисунка отражает поворот холста, а не самого штриха",
+            "en": "The tilted image reflects canvas rotation rather than stroke rotation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "При смене числа контактов не допускайте скачка центра, масштаба или угла.",
+        "en": "Avoid jumps in center, scale or angle when the contact count changes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/gestures"
+      }
+    ]
+  },
+  "phone-touch--family-10": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Координация нескольких касаний",
+      "en": "Multi-touch coordination"
+    },
+    "description": {
+      "ru": "Контакты независимо управляют частями объекта. В Touchgrind Skate 2 два пальца работают с виртуальной доской подобно пальцам на фингерборде.",
+      "en": "Contacts independently control parts of an object. Touchgrind Skate 2 uses two fingers on a virtual board much like a physical fingerboard."
+    },
+    "image": {
+      "src": "images/mechanics/input-touchgrind-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 650,
+        "width": 720,
+        "height": 630
+      },
+      "game": "Touchgrind Skate 2",
+      "sourceUrl": "https://apps.apple.com/us/app/touchgrind-skate-2/id720068876?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/fa/db/b8/fadbb833-4bbf-b66d-0221-f0219b8f4ff5/mzl.ozfeehxb.jpg/720x1560bb.jpg",
+      "credit": "Illusion Labs",
+      "rights": "Imagery © Illusion Labs. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Touchgrind Skate 2: два пальца управляют одной доской",
+        "en": "Touchgrind Skate 2: two fingers control one board"
+      },
+      "alt": {
+        "ru": "Touchgrind Skate 2: два пальца управляют одной доской",
+        "en": "Touchgrind Skate 2: two fingers control one board"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 73,
+          "label": {
+            "ru": "Разные позиции пальцев участвуют в управлении доской",
+            "en": "Different finger positions participate in board control"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте идентификаторы контактов, чтобы роли пальцев не менялись местами.",
+        "en": "Retain contact identifiers so finger roles cannot swap."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Touchgrind Skate 2",
+        "url": "https://apps.apple.com/us/app/touchgrind-skate-2/id720068876?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-11": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ограничения контакта",
+      "en": "Contact restrictions"
+    },
+    "description": {
+      "ru": "Правило требует сохранять контакты в нужных местах. В Bounden два участника держат большие пальцы на концах экрана и ведут устройство по заданию.",
+      "en": "The rule requires contacts to stay in specific places. In Bounden two players keep thumbs at opposite screen ends while following the device’s path."
+    },
+    "image": {
+      "src": "images/mechanics/input-bounden-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 1110
+      },
+      "game": "Bounden",
+      "sourceUrl": "https://apps.apple.com/us/app/bounden/id850456491?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/63/97/6e/63976ed5-f550-de02-5746-9347662485dd/3135f553-ed89-497f-ac8c-6dce738a7dbf_1.png/720x1560bb.jpg",
+      "credit": "Adriaan de Jongh",
+      "rights": "Imagery © Adriaan de Jongh. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "alt": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 49,
+          "label": {
+            "ru": "Оба участника сохраняют контакт, двигая общий телефон",
+            "en": "Both players retain contact while moving the shared phone"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Поясняйте допустимое число контактов и мягко обрабатывайте случайный отрыв.",
+        "en": "Explain the allowed contact count and handle accidental release gracefully."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bounden",
+        "url": "https://apps.apple.com/us/app/bounden/id850456491?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-12": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Контекст, пространство и совместная игра",
+      "en": "Context, space and cooperative play"
+    },
+    "description": {
+      "ru": "Один экран распределяет роли между участниками. В Bounden каждый держит свой конец телефона, а совместное вращение устройства превращается в танец.",
+      "en": "One screen distributes roles between participants. In Bounden each holds one end of a phone and rotating it together becomes a dance."
+    },
+    "image": {
+      "src": "images/mechanics/input-bounden-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 1110
+      },
+      "game": "Bounden",
+      "sourceUrl": "https://apps.apple.com/us/app/bounden/id850456491?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/63/97/6e/63976ed5-f550-de02-5746-9347662485dd/3135f553-ed89-497f-ac8c-6dce738a7dbf_1.png/720x1560bb.jpg",
+      "credit": "Adriaan de Jongh",
+      "rights": "Imagery © Adriaan de Jongh. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "alt": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 49,
+          "label": {
+            "ru": "Оба участника сохраняют контакт, двигая общий телефон",
+            "en": "Both players retain contact while moving the shared phone"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте ориентацию экрана для каждого участника и оставляйте место для рук.",
+        "en": "Account for each player’s viewing angle and leave enough hand space."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bounden",
+        "url": "https://apps.apple.com/us/app/bounden/id850456491?uo=4"
+      }
+    ]
+  },
+  "phone-touch--family-13": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Нажим, геометрия контакта и стилус",
+      "en": "Pressure, contact geometry and stylus"
+    },
+    "description": {
+      "ru": "Аппаратный нажим требует подходящего датчика. В Procreate Pocket на устройствах без 3D Touch изменение нажима кисти заменяет экранный слайдер.",
+      "en": "Hardware pressure input requires a compatible sensor. On devices without 3D Touch, Procreate Pocket substitutes an on-screen brush-pressure slider."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-9.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 0,
+        "y": 650,
+        "width": 640,
+        "height": 500
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/a13df385bd27c5fddb898bef2fdcaeb9eb090abb-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: слайдер нажима как замена аппаратному 3D Touch",
+        "en": "Procreate Pocket: a pressure slider substitutes for hardware 3D Touch"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: слайдер нажима как замена аппаратному 3D Touch",
+        "en": "Procreate Pocket: a pressure slider substitutes for hardware 3D Touch"
+      },
+      "markers": [
+        {
+          "x": 84,
+          "y": 65,
+          "label": {
+            "ru": "Brush Pressure Slider включает программный регулятор нажима",
+            "en": "Brush Pressure Slider enables a software pressure control"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Площадь контакта не равна силе; проверяйте конкретный телефон и стилус.",
+        "en": "Contact area is not force; check the specific phone and stylus."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-touch--family-14": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тактильная отдача",
+      "en": "Tactile feedback"
+    },
+    "description": {
+      "ru": "Короткий тактильный сигнал подтверждает смену состояния. В Procreate Pocket удержание нижнего слайдера переключает режим и сопровождается откликом.",
+      "en": "A brief tactile cue confirms a state change. In Procreate Pocket holding the lower slider switches its mode and produces haptic feedback."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-0.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 350,
+        "y": 420,
+        "width": 290,
+        "height": 510
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/0de741e2b23abb6d5e0756a214d621a945bc35bd-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "markers": [
+        {
+          "x": 94,
+          "y": 53,
+          "label": {
+            "ru": "Удержание переключает Pressure/Opacity и даёт тактильный сигнал",
+            "en": "Holding switches Pressure/Opacity with a tactile cue"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дублируйте смену режима визуально: не каждый телефон поддерживает тактильный отклик.",
+        "en": "Show mode changes visually too; not every phone supports haptic feedback."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-touch--family-15": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сочетания с функциями телефона",
+      "en": "Combinations with phone functions"
+    },
+    "description": {
+      "ru": "Касание работает вместе с другим каналом телефона. В One Hand Clapping движение героя сочетается с голосом, который меняет музыкальное окружение.",
+      "en": "Touch works with another phone input channel. In One Hand Clapping character movement combines with a voice that changes the musical environment."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-0.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/1f/79/08/1f79088b-e68d-8037-720e-c402e244d062/ae0e08aa-0ff2-409d-90aa-04cf904759d6_OneHandClapping_Screenshot_01_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 50,
+          "label": {
+            "ru": "Музыкальное действие влияет на доступный путь",
+            "en": "Musical action affects the available route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте намеренное действие от случайного шума и сохраняйте альтернативное управление.",
+        "en": "Separate intended actions from incidental noise and retain an alternative control scheme."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-tilt": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Наклон и непрерывное управление",
+      "en": "Tilt and continuous control"
+    },
+    "description": {
+      "ru": "Наклон телефона задаёт непрерывное движение. В Tilt to Live игрок ведёт белую стрелку между опасными точками и полезными предметами.",
+      "en": "Phone tilt produces continuous movement. In Tilt to Live the player steers a white arrow between dangerous dots and useful pickups."
+    },
+    "image": {
+      "src": "images/mechanics/input-tilt-live-0.webp",
+      "width": 720,
+      "height": 405,
+      "game": "Tilt to Live",
+      "sourceUrl": "https://apps.apple.com/us/app/tilt-to-live/id335454448?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2e/5b/d0/2e5bd0d1-32c9-de31-b654-133792014432/pr_source.png/720x1560bb.jpg",
+      "credit": "One Man Left",
+      "rights": "Imagery © One Man Left. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Tilt to Live: белая стрелка управляется наклоном телефона",
+        "en": "Tilt to Live: tilting the phone steers the white arrow"
+      },
+      "alt": {
+        "ru": "Tilt to Live: белая стрелка управляется наклоном телефона",
+        "en": "Tilt to Live: tilting the phone steers the white arrow"
+      },
+      "markers": [
+        {
+          "x": 37,
+          "y": 57,
+          "label": {
+            "ru": "Положение стрелки меняется при наклоне устройства",
+            "en": "Tilting the device changes the arrow’s position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте откалибровать нейтральное положение и настроить чувствительность.",
+        "en": "Allow neutral-position calibration and sensitivity adjustment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tilt to Live",
+        "url": "https://apps.apple.com/us/app/tilt-to-live/id335454448?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-pose": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Положения и дискретные команды",
+      "en": "Positions and discrete commands"
+    },
+    "description": {
+      "ru": "Переход в заданное положение вызывает дискретную команду. В Heads Up! наклон телефона вниз отмечает правильный ответ, а вверх пропускает слово.",
+      "en": "Moving into a defined orientation triggers a discrete command. In Heads Up! tilting down marks a correct answer and tilting up passes the word."
+    },
+    "image": {
+      "src": "images/mechanics/touch-heads-up-1.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 665,
+        "height": 692
+      },
+      "game": "Heads Up!",
+      "sourceUrl": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4a/6c/32/4a6c323e-755f-3136-8f38-061f97340877/Screen2.jpg/720x1560bb.jpg",
+      "credit": "Warner Bros.",
+      "rights": "© Warner Bros.. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Heads Up!: наклон вниз подтверждает угаданное слово",
+        "en": "Heads Up!: tilting down confirms a correctly guessed word"
+      },
+      "alt": {
+        "ru": "Heads Up!: наклон вниз подтверждает угаданное слово",
+        "en": "Heads Up!: tilting down confirms a correctly guessed word"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 20,
+          "label": {
+            "ru": "Стрелка связывает наклон вниз с результатом Correct",
+            "en": "The arrow links a downward tilt to Correct"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Используйте разные пороги входа и выхода, чтобы положение не дребезжало.",
+        "en": "Use separate entry and exit thresholds to avoid orientation chatter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Heads Up!",
+        "url": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-impulse": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рывки, взмахи и остановки",
+      "en": "Thrusts, swings and stops"
+    },
+    "description": {
+      "ru": "Рывок выделяют по пику ускорения и длительности события. График phyphox показывает исходный сигнал; игровое условие распознавания задают отдельно.",
+      "en": "A jerk is detected through an acceleration peak and event duration. phyphox shows the raw signal; the game defines its recognition rule separately."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-1.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 522,
+        "width": 663,
+        "height": 336
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/db/0a/22/db0a22d8-b781-9180-4abd-6cbd103e668f/iphone-02-accelerometer.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: резкий пик на графике ускорения по оси Y",
+        "en": "phyphox: a sharp peak in Y-axis acceleration"
+      },
+      "alt": {
+        "ru": "phyphox: резкий пик на графике ускорения по оси Y",
+        "en": "phyphox: a sharp peak in Y-axis acceleration"
+      },
+      "markers": [
+        {
+          "x": 21,
+          "y": 43,
+          "label": {
+            "ru": "Резкое изменение ускорения видно отдельно от последующих колебаний",
+            "en": "A sharp acceleration change precedes the later oscillations"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте длительность и повторное срабатывание, а не только один высокий отсчёт.",
+        "en": "Check duration and retrigger behavior rather than a single high sample."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-rhythm": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Встряхивание, повторение и ритм",
+      "en": "Shaking, repetition and rhythm"
+    },
+    "description": {
+      "ru": "Движения телефона становятся ритмическим вводом. В ручном режиме Just Dance Controller смартфон держат в правой руке во время танца.",
+      "en": "Phone movements become rhythmic input. Just Dance Controller’s handheld mode uses a smartphone held in the dancer’s right hand."
+    },
+    "image": {
+      "src": "images/mechanics/input-just-dance-controller-2.webp",
+      "width": 663,
+      "height": 1440,
+      "game": "Just Dance Controller",
+      "sourceUrl": "https://apps.apple.com/us/app/just-dance-controller/id1634629424?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b6/a5/88/b6a58827-cba5-34a3-70dc-05cab7b47a16/JD27_1320x2868_EN_3.jpg/720x1560bb.jpg",
+      "credit": "Ubisoft",
+      "rights": "Imagery © Ubisoft. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Just Dance Controller: ручной режим требует совместимую консоль",
+        "en": "Just Dance Controller: handheld mode needs a compatible console"
+      },
+      "alt": {
+        "ru": "Just Dance Controller: ручной режим требует совместимую консоль",
+        "en": "Just Dance Controller: handheld mode needs a compatible console"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 70,
+          "label": {
+            "ru": "Режим Hand Controller использует телефон в руке",
+            "en": "Hand Controller mode uses a phone held in the hand"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не приравнивайте движение одной руки к точному отслеживанию позы всего тела.",
+        "en": "Do not equate one hand’s motion with precise full-body pose tracking."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Just Dance Controller",
+        "url": "https://apps.apple.com/us/app/just-dance-controller/id1634629424?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-steady": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Неподвижность, баланс и точность",
+      "en": "Stillness, balance and precision"
+    },
+    "description": {
+      "ru": "Игрок уменьшает отклонение от целевого положения. В RIDGID Level центральный индикатор позволяет увидеть, насколько телефон выровнен.",
+      "en": "The player reduces deviation from a target orientation. RIDGID Level’s central indicator shows how closely the phone is levelled."
+    },
+    "image": {
+      "src": "images/mechanics/motion-ridgid-level-3.webp",
+      "width": 720,
+      "height": 405,
+      "game": "RIDGID Level",
+      "sourceUrl": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/12/7b/99/127b9912-1872-21d4-c607-9596ce0cad8c/mzl.yiqsoqzk.png/720x1560bb.jpg",
+      "credit": "RIDGID Software Solutions",
+      "rights": "© RIDGID Software Solutions. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "RIDGID Level: выравнивание индикатора относительно центра",
+        "en": "RIDGID Level: aligning the indicator with the center"
+      },
+      "alt": {
+        "ru": "RIDGID Level: выравнивание индикатора относительно центра",
+        "en": "RIDGID Level: aligning the indicator with the center"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Центральная мишень помогает корректировать наклон",
+            "en": "The central target helps correct device tilt"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Задавайте допустимое отклонение и время удержания с учётом шума датчика.",
+        "en": "Set orientation tolerance and hold duration with sensor noise in mind."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RIDGID Level",
+        "url": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-physics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Физические модели и материалы",
+      "en": "Physical models and materials"
+    },
+    "description": {
+      "ru": "Наклон получает физический смысл: шар катится по виртуальной поверхности. В Labyrinth 2 нужно учитывать стены, отверстия и дополнительные препятствия.",
+      "en": "Tilt gains a physical meaning: a ball rolls over a virtual surface. Labyrinth 2 adds walls, holes and other obstacles to the route."
+    },
+    "image": {
+      "src": "images/mechanics/motion-labyrinth-2-1.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 100,
+        "width": 720,
+        "height": 1080
+      },
+      "game": "Labyrinth 2",
+      "sourceUrl": "https://apps.apple.com/us/app/labyrinth-2/id307758884?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple111/v4/a8/8f/04/a88f0414-5dda-cc59-a63b-552203b2d32e/pr_source.png/720x1560bb.jpg",
+      "credit": "Illusion Labs",
+      "rights": "© Illusion Labs. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Labyrinth 2: наклон ведёт металлический шар через препятствия",
+        "en": "Labyrinth 2: tilting guides a metal ball through obstacles"
+      },
+      "alt": {
+        "ru": "Labyrinth 2: наклон ведёт металлический шар через препятствия",
+        "en": "Labyrinth 2: tilting guides a metal ball through obstacles"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 60,
+          "label": {
+            "ru": "Шар взаимодействует с геометрией виртуальной поверхности",
+            "en": "The ball interacts with the virtual surface geometry"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте направление тяжести, трение и чувствительность управления.",
+        "en": "Keep gravity direction, friction and input sensitivity consistent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Labyrinth 2",
+        "url": "https://apps.apple.com/us/app/labyrinth-2/id307758884?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-tools": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Телефон как инструмент или реквизит",
+      "en": "Phone as a tool or prop"
+    },
+    "description": {
+      "ru": "Телефон становится реквизитом с предметным жестом. В iBeer его наклоняют как стакан, а виртуальная жидкость реагирует на движение.",
+      "en": "The phone becomes a prop with a familiar physical gesture. In iBeer it is tilted like a glass and the virtual liquid responds to movement."
+    },
+    "image": {
+      "src": "images/mechanics/motion-ibeer-0.webp",
+      "width": 720,
+      "height": 1280,
+      "game": "iBeer - Drink from your phone",
+      "sourceUrl": "https://apps.apple.com/us/app/ibeer-drink-from-your-phone/id475905823?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/6b/23/16/6b2316e1-7308-858e-0f43-5c915e7f0d10/pr_source.jpg/720x1560bb.jpg",
+      "credit": "Hottrix",
+      "rights": "© Hottrix. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "iBeer: телефон используется как виртуальный стакан",
+        "en": "iBeer: the phone is used as a virtual glass"
+      },
+      "alt": {
+        "ru": "iBeer: телефон используется как виртуальный стакан",
+        "en": "iBeer: the phone is used as a virtual glass"
+      },
+      "markers": [
+        {
+          "x": 25,
+          "y": 41,
+          "label": {
+            "ru": "Экран имитирует жидкость в наклонённом стакане",
+            "en": "The screen imitates liquid in a tilted glass"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выбирайте удобный диапазон движения и ясно показывайте виртуальный результат.",
+        "en": "Use a comfortable movement range and make the virtual result clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "iBeer - Drink from your phone",
+        "url": "https://apps.apple.com/us/app/ibeer-drink-from-your-phone/id475905823?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-spatial": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вращение и пространственный ввод",
+      "en": "Rotation and spatial interactions"
+    },
+    "description": {
+      "ru": "Поворот телефона управляет направлением в виртуальном пространстве. В Bounden совместным движением ведут ориентир через последовательность колец.",
+      "en": "Phone rotation controls a direction in virtual space. In Bounden players move a shared device to guide a marker through a sequence of rings."
+    },
+    "image": {
+      "src": "images/mechanics/input-bounden-2.webp",
+      "width": 720,
+      "height": 1280,
+      "game": "Bounden",
+      "sourceUrl": "https://apps.apple.com/us/app/bounden/id850456491?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/63/72/61/637261d8-340a-dbef-ef3c-f9413b667773/36d1656c-543a-4c8c-8d58-db48a2561e9f_3.png/720x1560bb.jpg",
+      "credit": "Adriaan de Jongh",
+      "rights": "Imagery © Adriaan de Jongh. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Bounden: кольца задают последовательность пространственных поворотов",
+        "en": "Bounden: rings define a sequence of spatial rotations"
+      },
+      "alt": {
+        "ru": "Bounden: кольца задают последовательность пространственных поворотов",
+        "en": "Bounden: rings define a sequence of spatial rotations"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 38,
+          "label": {
+            "ru": "Кольца задают направление следующего движения",
+            "en": "Rings indicate the direction of the next movement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для вращения вокруг всех осей проверяйте гироскоп; акселерометр не даёт полный курс.",
+        "en": "Check gyroscope support; an accelerometer alone does not provide full heading."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bounden",
+        "url": "https://apps.apple.com/us/app/bounden/id850456491?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-activity": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Движение тела и контекст устройства",
+      "en": "Body movement and device context"
+    },
+    "description": {
+      "ru": "Системная оценка движения становится счётчиком активности. Pedometer++ показывает вычисленные шаги и их изменение по дням.",
+      "en": "A system estimate of movement becomes an activity counter. Pedometer++ displays estimated steps and how they vary across days."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pedometer-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 46,
+        "y": 360,
+        "width": 573,
+        "height": 1052
+      },
+      "game": "Pedometer++",
+      "sourceUrl": "https://apps.apple.com/us/app/pedometer/id712286167?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d8/87/43/d8874376-16e3-f28f-f780-623170e5149c/iOS_26_-_Panel_1.png/720x1560bb.jpg",
+      "credit": "Cross Forward Consulting, LLC",
+      "rights": "© Cross Forward Consulting, LLC. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Pedometer++: вычисленное количество шагов и история по дням",
+        "en": "Pedometer++: estimated step count and daily history"
+      },
+      "alt": {
+        "ru": "Pedometer++: вычисленное количество шагов и история по дням",
+        "en": "Pedometer++: estimated step count and daily history"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 42,
+          "label": {
+            "ru": "Число шагов получено оценкой движения, а не прямым наблюдением ног",
+            "en": "Step count is a movement estimate, not direct observation of the feet"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте положение телефона и не считайте каждый пик ускорения отдельным шагом.",
+        "en": "Check phone placement and do not treat every acceleration peak as a step."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pedometer++",
+        "url": "https://apps.apple.com/us/app/pedometer/id712286167?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-combined": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Составные жесты и другие каналы ввода",
+      "en": "Combined gestures and input channels"
+    },
+    "description": {
+      "ru": "Касание задаёт намерение, а движение меняет игровой параметр. В Bounden оба участника сохраняют контакт с экраном и вместе поворачивают телефон.",
+      "en": "Touch establishes intent while movement changes a game parameter. In Bounden both players retain screen contact while rotating the phone together."
+    },
+    "image": {
+      "src": "images/mechanics/input-bounden-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 720,
+        "height": 1110
+      },
+      "game": "Bounden",
+      "sourceUrl": "https://apps.apple.com/us/app/bounden/id850456491?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/63/97/6e/63976ed5-f550-de02-5746-9347662485dd/3135f553-ed89-497f-ac8c-6dce738a7dbf_1.png/720x1560bb.jpg",
+      "credit": "Adriaan de Jongh",
+      "rights": "Imagery © Adriaan de Jongh. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "alt": {
+        "ru": "Bounden: схема удержания двух концов экрана из галереи разработчика",
+        "en": "Bounden: the developer’s diagram of holding opposite screen ends"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 49,
+          "label": {
+            "ru": "Оба участника сохраняют контакт, двигая общий телефон",
+            "en": "Both players retain contact while moving the shared phone"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте условия начала, активного движения и завершения составного жеста.",
+        "en": "Separate start, active-motion and completion conditions for a combined gesture."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bounden",
+        "url": "https://apps.apple.com/us/app/bounden/id850456491?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-social": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместная игра и несколько устройств",
+      "en": "Co-op play and multiple devices"
+    },
+    "description": {
+      "ru": "Участники получают разные роли: один держит телефон, другие дают подсказки. В Heads Up! слово скрыто от владельца, а ответ подтверждается наклоном.",
+      "en": "Players take different roles: one holds the phone and others give clues. Heads Up! hides the word from its holder and accepts a tilt to confirm it."
+    },
+    "image": {
+      "src": "images/mechanics/touch-heads-up-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 314,
+        "width": 665,
+        "height": 923
+      },
+      "game": "Heads Up!",
+      "sourceUrl": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1d/00/4b/1d004bc2-47ac-fb70-1eb9-d42e1a2f1c80/Screen1.jpg/720x1560bb.jpg",
+      "credit": "Warner Bros.",
+      "rights": "© Warner Bros.. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Heads Up!: друзья видят слово, а владелец телефона получает подсказки",
+        "en": "Heads Up!: friends see the word while the phone’s holder receives clues"
+      },
+      "alt": {
+        "ru": "Heads Up!: друзья видят слово, а владелец телефона получает подсказки",
+        "en": "Heads Up!: friends see the word while the phone’s holder receives clues"
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 30,
+          "label": {
+            "ru": "Слово на лбу видно другим участникам, но не владельцу",
+            "en": "The forehead word is visible to others but not the holder"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сопровождайте результат звуком или тактильным сигналом, если экран скрыт от игрока.",
+        "en": "Confirm results through sound or touch when the screen is hidden from the player."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Heads Up!",
+        "url": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4"
+      }
+    ]
+  },
+  "phone-motion--family-applied": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Интерфейсы, творчество и обучение",
+      "en": "Interfaces, creativity and learning"
+    },
+    "description": {
+      "ru": "Данные ориентации помогают выполнять практическую задачу. RIDGID Level накладывает виртуальный уровень на изображение камеры для сравнения с реальной сценой.",
+      "en": "Orientation data supports a practical task. RIDGID Level overlays a virtual level on the camera image for comparison with the real scene."
+    },
+    "image": {
+      "src": "images/mechanics/motion-ridgid-level-2.webp",
+      "width": 720,
+      "height": 405,
+      "game": "RIDGID Level",
+      "sourceUrl": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/82/2f/ce/822fce6a-36c4-5489-77a4-a272709dfd3c/mzl.mepckujn.png/720x1560bb.jpg",
+      "credit": "RIDGID Software Solutions",
+      "rights": "© RIDGID Software Solutions. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "RIDGID Level: виртуальный уровень поверх изображения камеры",
+        "en": "RIDGID Level: a virtual level over the camera image"
+      },
+      "alt": {
+        "ru": "RIDGID Level: виртуальный уровень поверх изображения камеры",
+        "en": "RIDGID Level: a virtual level over the camera image"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Индикатор наклона сопоставляется с видимым окружением",
+            "en": "The tilt indicator is compared with the visible surroundings"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте калибровать устройство с учётом чехла и выступа камеры.",
+        "en": "Allow device calibration that accounts for its case and camera bump."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RIDGID Level",
+        "url": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4"
+      }
+    ]
+  },
+  "children--guessing-games": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Угадывание по вопросам и подсказкам",
+      "en": "Guessing through questions and clues"
+    },
+    "description": {
+      "ru": "Один участник знает ответ, а другой восстанавливает его по подсказкам. В Heads Up! друзья описывают слово, которого не видит угадывающий.",
+      "en": "One participant knows the answer and another reconstructs it from clues. In Heads Up! friends describe a word the guesser cannot see."
+    },
+    "image": {
+      "src": "images/mechanics/touch-heads-up-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 314,
+        "width": 665,
+        "height": 923
+      },
+      "game": "Heads Up!",
+      "sourceUrl": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1d/00/4b/1d004bc2-47ac-fb70-1eb9-d42e1a2f1c80/Screen1.jpg/720x1560bb.jpg",
+      "credit": "Warner Bros.",
+      "rights": "© Warner Bros.. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Heads Up!: друзья видят слово, а владелец телефона получает подсказки",
+        "en": "Heads Up!: friends see the word while the phone’s holder receives clues"
+      },
+      "alt": {
+        "ru": "Heads Up!: друзья видят слово, а владелец телефона получает подсказки",
+        "en": "Heads Up!: friends see the word while the phone’s holder receives clues"
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 30,
+          "label": {
+            "ru": "Слово на лбу видно другим участникам, но не владельцу",
+            "en": "The forehead word is visible to others but not the holder"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выбирайте знакомые категории и заранее объясняйте допустимые способы подсказки.",
+        "en": "Choose familiar categories and explain which types of clues are allowed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Heads Up!",
+        "url": "https://apps.apple.com/us/app/heads-up/id623592465?uo=4"
+      }
+    ]
+  },
+  "shared-family-34": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Движение всем телом",
+      "en": "Whole-body movement"
+    },
+    "description": {
+      "ru": "Движение тела становится управлением. Active Arcade использует камеру телефона, чтобы связать прыжки и другие движения с событиями на экране.",
+      "en": "Body motion becomes control. Active Arcade uses a phone camera to connect jumps and other movements with on-screen events."
+    },
+    "image": {
+      "src": "images/mechanics/input-active-arcade-1.webp",
+      "width": 720,
+      "height": 405,
+      "crop": {
+        "x": 225,
+        "y": 60,
+        "width": 495,
+        "height": 285
+      },
+      "game": "Active Arcade",
+      "sourceUrl": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/a6/f6/47/a6f64733-077d-715b-80b4-dfef3fecf396/8e690756-92fb-4664-952a-0adc89822d2d_body-motion-gameplay-.jpg/720x1560bb.jpg",
+      "credit": "Nex",
+      "rights": "Imagery © Nex. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "alt": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 43,
+          "label": {
+            "ru": "Камера видит участника, а игра добавляет счёт и эффекты",
+            "en": "The camera sees the player while the game adds scores and effects"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Устанавливайте телефон неподвижно и показывайте границы видимой зоны.",
+        "en": "Keep the phone stationary and show the visible play area."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Active Arcade",
+        "url": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4"
+      }
+    ]
+  },
+  "spatial-interfaces--t304": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дыхание, пульс и биосигналы",
+      "en": "Breathing, pulse and biosignals"
+    },
+    "description": {
+      "ru": "Дыхательное действие превращается в управляющий сигнал. В Candle дуновение у микрофона гасит виртуальную свечу; это шум воздуха, а не измерение пульса.",
+      "en": "A breathing action becomes a control signal. In Candle blowing near the microphone extinguishes a virtual flame; it measures air noise, not pulse."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-candle-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 330,
+        "width": 720,
+        "height": 950
+      },
+      "game": "Candle - Ultra Real Blow Out",
+      "sourceUrl": "https://apps.apple.com/us/app/candle-ultra-real-blow-out/id434064534?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2a/98/b9/2a98b919-8f7a-a15c-a1bc-7d52fc337ae5/mzl.fxebghmv.png/720x1440bb.jpg",
+      "credit": "Poets Road, Inc",
+      "rights": "© Poets Road, Inc. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Candle: виртуальное пламя реагирует на дуновение в микрофон",
+        "en": "Candle: a virtual flame reacts to blowing into the microphone"
+      },
+      "alt": {
+        "ru": "Candle: виртуальное пламя реагирует на дуновение в микрофон",
+        "en": "Candle: a virtual flame reacts to blowing into the microphone"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Приложение связывает дуновение с состоянием пламени",
+            "en": "The app maps blowing to the flame’s state"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отличайте микрофонное дуновение от измерений отдельным биометрическим датчиком.",
+        "en": "Distinguish microphone blowing from measurements by a dedicated biometric sensor."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Candle - Ultra Real Blow Out",
+        "url": "https://apps.apple.com/us/app/candle-ultra-real-blow-out/id434064534?uo=4"
+      }
+    ]
+  },
+  "spatial-interfaces--t305": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Музыкальные и специальные контроллеры",
+      "en": "Musical and specialised controllers"
+    },
+    "description": {
+      "ru": "Привычный жест исполнения передаёт команды приложению. В демонстрации AudioSwift музыкальные клавиши запускают ноты, а трекпад меняет звук.",
+      "en": "A familiar performance gesture sends commands to an app. AudioSwift’s demo uses musical keys to trigger notes and a trackpad to shape sound."
+    },
+    "image": {
+      "src": "images/mechanics/control-audioswift-3.webp",
+      "width": 1024,
+      "height": 576,
+      "game": "AudioSwift",
+      "sourceUrl": "https://audioswiftapp.com/",
+      "originalUrl": "https://www.dropbox.com/scl/fi/fc2ycw35tusq9f0joj5s5/04-Core-Features-XY-Pads.mp4?rlkey=hc7s0jir9zb5du0z08f9xipon&st=nltffpdt&raw=1",
+      "sourceFrameSeconds": 3,
+      "credit": "Nigel Ríos; host apps and instruments retain their respective rights",
+      "rights": "Imagery © Nigel Ríos; host apps and instruments retain their respective rights. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "AudioSwift XY: трекпад меняет звук во время исполнения на клавишах",
+        "en": "AudioSwift XY: a trackpad shapes sound during keyboard performance"
+      },
+      "alt": {
+        "ru": "AudioSwift XY: трекпад меняет звук во время исполнения на клавишах",
+        "en": "AudioSwift XY: a trackpad shapes sound during keyboard performance"
+      },
+      "markers": [
+        {
+          "x": 24,
+          "y": 55,
+          "label": {
+            "ru": "Точка XY связывает две оси движения с параметрами звука",
+            "en": "The XY point maps two motion axes to sound parameters"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте соответствие физических элементов нотам или действиям приложения.",
+        "en": "Show how physical controls map to notes or application actions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "AudioSwift",
+        "url": "https://audioswiftapp.com/"
+      }
+    ]
+  },
+  "spatial-interfaces--t307": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Физические предметы, NFC и QR",
+      "en": "Physical objects, NFC and QR"
+    },
+    "description": {
+      "ru": "Физический носитель передаёт идентификатор или запись. NFC Tools показывает прочитанную метку; в игровом сценарии её связывают с предметом или действием.",
+      "en": "A physical carrier supplies an identifier or record. NFC Tools displays a read tag; a game scenario can map that tag to an item or action."
+    },
+    "image": {
+      "src": "images/mechanics/touch-nfc-tools-1.webp",
+      "width": 663,
+      "height": 1440,
+      "game": "NFC Tools",
+      "sourceUrl": "https://apps.apple.com/us/app/nfc-tools/id1252962749?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/a0/b1/7d/a0b17d13-0043-7f38-3a1e-560b2d77e4ea/02.jpeg/720x1560bb.jpg",
+      "credit": "wakdev",
+      "rights": "© wakdev. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "NFC Tools: сведения и запись, прочитанные с физической NFC-метки",
+        "en": "NFC Tools: information and a record read from a physical NFC tag"
+      },
+      "alt": {
+        "ru": "NFC Tools: сведения и запись, прочитанные с физической NFC-метки",
+        "en": "NFC Tools: information and a record read from a physical NFC tag"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 28,
+          "label": {
+            "ru": "Серийный номер идентифицирует метку, но сам по себе не даёт разрешение",
+            "en": "A serial number identifies a tag but does not grant permission"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте допустимое действие отдельно от распознавания метки.",
+        "en": "Validate the allowed action separately from recognising the tag."
+      }
+    ],
+    "examples": [
+      {
+        "title": "NFC Tools",
+        "url": "https://apps.apple.com/us/app/nfc-tools/id1252962749?uo=4"
+      }
+    ]
+  },
+  "phone-sensors--t296": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Свет, приближение и другие датчики",
+      "en": "Light, proximity and other sensors"
+    },
+    "description": {
+      "ru": "Доступный канал измерения становится входом. Здесь phyphox оценивает яркость через камеру и показывает график вместе с изображением сцены.",
+      "en": "An available measurement channel becomes input. Here phyphox estimates brightness through the camera and plots it alongside the scene image."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-2.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 171,
+        "width": 663,
+        "height": 974
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cd/9b/f6/cd9bf6f7-2965-318a-ed9d-37fd0f031daa/iphone-03-camera-luminance.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: оценка яркости через камеру, а не отдельный датчик света",
+        "en": "phyphox: camera-based brightness estimation, not a separate light sensor"
+      },
+      "alt": {
+        "ru": "phyphox: оценка яркости через камеру, а не отдельный датчик света",
+        "en": "phyphox: camera-based brightness estimation, not a separate light sensor"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 20,
+          "label": {
+            "ru": "Численная оценка яркости связана с наблюдаемой камерой сценой",
+            "en": "The brightness estimate relates to the scene observed by the camera"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте доступный API: камера и отдельный датчик освещённости дают разные данные.",
+        "en": "Check the available API; a camera and a dedicated light sensor provide different data."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
   }
 }
