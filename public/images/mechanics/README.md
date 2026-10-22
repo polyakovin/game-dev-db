@@ -201,3 +201,31 @@ Credit: Duolingo, Inc. Separate cards frame the call controls, push-to-talk repl
 and captions control. The source supplied the comparison; the portal adds only
 HTML markers and crops. All these files follow the same 1440px / 250KiB WebP
 budget, retain third-party rights and are excluded from MIT and CC BY 4.0.
+
+`rpg-*.webp` adds inspected screenshots for repeatable progression, gathering,
+crafting, companions and shared projects. Steam-distributed sources include
+Melvor Idle, Shop Titans, Albion Online, Guild Wars 2 and Palworld. Existing
+Factorio, Last Epoch, Slay the Spire, Potionomics and Realm Grinder files are
+reused when the same visible system illustrates another canonical record.
+
+`rpg-mhr-*.webp` comes from Capcom's [Monster Hunter Rise: Sunbreak web manual](https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/6).
+The original image URL and relevant manual chapter are retained in every card.
+These show actual capture, gathering, quest and equipment interfaces. Credits:
+Capcom. The source's low-resolution screenshots are not enlarged.
+
+`rpg-ffxiv-*.webp` retains official Square Enix screenshots from the
+[UI Guide](https://na.finalfantasyxiv.com/uiguide/),
+[Palace of the Dead guide](https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/),
+[Chocobo Racing guide](https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/),
+[Island Sanctuary guide](https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/island_sanctuary/),
+[Ishgardian Restoration guide](https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/)
+and [PvP system guide](https://na.finalfantasyxiv.com/lodestone/playguide/pvpguide/system/).
+Existing source annotations remain visible. The failed floor-101 save is
+identified as a failed attempt, not an available continuation.
+
+`rpg-nms-visions-*.webp` uses Hello Games' [official Visions update](https://www.nomanssky.com/visions-update/)
+screenshots of excavated remains and storm crystals. `rpg-bdo-enhancement-*.webp`
+uses Pearl Abyss' [official enhancement guide](https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48).
+Devour's 100% conversion is distinguished from a guaranteed enhancement after
+failed attempts. All these images retain third-party rights, are excluded from
+MIT and CC BY 4.0, and follow the same compressed WebP budget.

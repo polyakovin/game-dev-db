@@ -24810,5 +24810,3467 @@
         "url": "https://blog.duolingo.com/product-highlights/"
       }
     ]
+  },
+  "rpg-grind--target-boss-farming": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фарм конкретного босса",
+      "en": "Targeted boss farming"
+    },
+    "description": {
+      "ru": "Игрок выбирает противника с известной таблицей добычи и повторяет бой ради определённого предмета.",
+      "en": "The player chooses an enemy with a known loot table and repeats the fight for a particular item."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_50b5acf56b52a04b3b0bb1cadc8f9db5f6966ea3.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выбор Greater Anubis по списку добычи",
+        "en": "Choosing Greater Anubis for its listed loot"
+      },
+      "alt": {
+        "ru": "Выбор Greater Anubis по списку добычи",
+        "en": "Choosing Greater Anubis for its listed loot"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 39,
+          "label": {
+            "ru": "Вид добычи известен до отправки отряда",
+            "en": "The possible loot is visible before dispatch"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте связь нужного предмета с конкретным источником.",
+        "en": "Show the connection between the desired item and its specific source."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--monster-ingredients": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Охота за ингредиентами",
+      "en": "Hunting for ingredients"
+    },
+    "description": {
+      "ru": "Нужный материал связан с определённым существом, местом или условием охоты, что направляет выбор целей.",
+      "en": "A required material is tied to a creature, location or hunting condition, directing target selection."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-03.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 510,
+        "y": 225,
+        "width": 435,
+        "height": 488
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_4d1ff907a39313707c27cddb1fc1b0a03a743859.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Кости, кожа и мясо от выбранной цели",
+        "en": "Bones, leather and meat from the chosen target"
+      },
+      "alt": {
+        "ru": "Кости, кожа и мясо от выбранной цели",
+        "en": "Bones, leather and meat from the chosen target"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 62,
+          "label": {
+            "ru": "Победы дают связанные с существом материалы",
+            "en": "Defeating the creature provides its associated materials"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте находить источник материала из рецепта изготовления.",
+        "en": "Let players find the source of a material from its crafting recipe."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--mob-pack-farming": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зачистка групп врагов",
+      "en": "Enemy-pack farming"
+    },
+    "description": {
+      "ru": "Игрок собирает и уничтожает группы обычных врагов, выбирая плотность, маршрут и расход ресурсов.",
+      "en": "The player gathers and defeats ordinary enemy packs, choosing density, routing and resource expenditure."
+    },
+    "image": {
+      "src": "images/mechanics/priority-grim-dawn-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Grim Dawn",
+      "sourceUrl": "https://store.steampowered.com/app/219990/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219990/ss_163bf567dd0b246da53cf4d7d0724ac8d8a7e075.1920x1080.jpg?t=1791567021",
+      "credit": "Crate Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Урон по группе противников",
+        "en": "Damaging a group of enemies"
+      },
+      "alt": {
+        "ru": "Урон по группе противников",
+        "en": "Damaging a group of enemies"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Несколько целей участвуют в одной схватке",
+            "en": "Several targets take part in the same encounter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Плотность врагов должна создавать выбор между скоростью и опасностью.",
+        "en": "Enemy density should create a choice between speed and danger."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Grim Dawn",
+        "url": "https://store.steampowered.com/app/219990/"
+      }
+    ]
+  },
+  "rpg-grind--rare-elite-hunting": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Охота на редких и элитных врагов",
+      "en": "Rare and elite hunting"
+    },
+    "description": {
+      "ru": "Ценность попытки зависит от обнаружения особой цели, а не только от числа убийств.",
+      "en": "An attempt's value depends on locating a special target rather than merely maximizing kills."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-40.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/6",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/page/66_22_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Особый заражённый монстр в Sunbreak",
+        "en": "An afflicted monster in Sunbreak"
+      },
+      "alt": {
+        "ru": "Особый заражённый монстр в Sunbreak",
+        "en": "An afflicted monster in Sunbreak"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 45,
+          "label": {
+            "ru": "Особое состояние отличает цель от обычного монстра",
+            "en": "An afflicted state distinguishes the target from an ordinary monster"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отмечайте особую цель и объясняйте, чем её добыча отличается.",
+        "en": "Identify special targets and explain how their loot differs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/6"
+      }
+    ]
+  },
+  "rpg-grind--monster-capture": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Захват живой добычи",
+      "en": "Live capture"
+    },
+    "description": {
+      "ru": "Повторяемая охота завершается поимкой; подготовка и момент захвата отличаются от обычного добивания.",
+      "en": "A repeated hunt ends in capture; preparation and timing differ from an ordinary finishing blow."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-36.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/6",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/page/66_15_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ослабленный монстр попадает в ловушку",
+        "en": "A weakened monster is caught in a trap"
+      },
+      "alt": {
+        "ru": "Ослабленный монстр попадает в ловушку",
+        "en": "A weakened monster is caught in a trap"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 48,
+          "label": {
+            "ru": "Для поимки нужны ловушка и усыпляющие предметы",
+            "en": "Capture requires a trap and tranquilising items"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Заранее показывайте условия поимки и необходимые инструменты.",
+        "en": "Show capture conditions and required tools in advance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/6"
+      }
+    ]
+  },
+  "rpg-grind--enemy-chains": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Цепочки боевых целей",
+      "en": "Combat target chains"
+    },
+    "description": {
+      "ru": "Одна победа открывает или усиливает следующую цель, формируя повторяемую последовательность.",
+      "en": "One victory unlocks or strengthens the next target, forming a repeatable sequence."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-23.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/3",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/63_13_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ключевые задания открывают следующее испытание",
+        "en": "Key quests unlock the next challenge"
+      },
+      "alt": {
+        "ru": "Ключевые задания открывают следующее испытание",
+        "en": "Key quests unlock the next challenge"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 18,
+          "label": {
+            "ru": "Счётчик показывает выполненные ключевые задания",
+            "en": "The counter tracks completed key quests"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какая победа продвигает цепочку и что откроется дальше.",
+        "en": "Show which victory advances the chain and what becomes available next."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/3"
+      }
+    ]
+  },
+  "rpg-grind--scaling-dungeons": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подземелья растущей сложности",
+      "en": "Scaling dungeons"
+    },
+    "description": {
+      "ru": "Знакомое подземелье проходится на более высоких ступенях сложности ради следующего уровня наград.",
+      "en": "A familiar dungeon is completed at higher difficulty tiers for the next level of rewards."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-deep-24.webp",
+      "width": 614,
+      "height": 436,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/Z/0vQvUw2XGtslK31KK1GPGbODVY.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сохранённые попытки на 1-м и 101-м этажах",
+        "en": "Saved attempts on floors 1 and 101"
+      },
+      "alt": {
+        "ru": "Сохранённые попытки на 1-м и 101-м этажах",
+        "en": "Saved attempts on floors 1 and 101"
+      },
+      "markers": [
+        {
+          "x": 16,
+          "y": 80,
+          "label": {
+            "ru": "Неудачная попытка дошла до 101-го этажа",
+            "en": "The failed attempt reached floor 101"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте ступень испытания, условия продолжения и цену неудачи.",
+        "en": "Distinguish challenge tier, continuation rules and the cost of failure."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/"
+      }
+    ]
+  },
+  "rpg-grind--repeatable-contracts": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Контракты и охотничьи заказы",
+      "en": "Repeatable contracts and bounties"
+    },
+    "description": {
+      "ru": "Короткие задания обновляют цели внутри знакомого набора действий. Награды связывают отдельные вылазки с долгосрочной целью.",
+      "en": "Short assignments refresh targets within a familiar action set. Rewards connect individual expeditions to a long-term goal."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-28.webp",
+      "width": 454,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/3",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/63_20_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Список дополнительных охотничьих поручений",
+        "en": "A list of optional hunting subquests"
+      },
+      "alt": {
+        "ru": "Список дополнительных охотничьих поручений",
+        "en": "A list of optional hunting subquests"
+      },
+      "markers": [
+        {
+          "x": 25,
+          "y": 50,
+          "label": {
+            "ru": "Можно взять поручение под текущую охоту",
+            "en": "Select a subquest that fits the planned hunt"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте короткие поручения с долгосрочными целями игрока.",
+        "en": "Connect short contracts to the player’s longer-term goals."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/3"
+      }
+    ]
+  },
+  "rpg-grind--raid-cycle": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повторные рейды",
+      "en": "Repeated raid clears"
+    },
+    "description": {
+      "ru": "Группа воспроизводит многоэтапное испытание, распределяя роли, добычу и доступные попытки.",
+      "en": "A group repeats a multi-stage challenge, allocating roles, loot and available attempts."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-albion-online-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Albion Online",
+      "sourceUrl": "https://store.steampowered.com/app/761890/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/761890/b761038ae99b39be0e2487c128a1442d4529dfdb/ss_b761038ae99b39be0e2487c128a1442d4529dfdb.1920x1080.jpg?t=1788194761",
+      "credit": "Sandbox Interactive GmbH",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Совместный поход в подземелье Albion Online",
+        "en": "A group expedition into an Albion Online dungeon"
+      },
+      "alt": {
+        "ru": "Совместный поход в подземелье Albion Online",
+        "en": "A group expedition into an Albion Online dungeon"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 43,
+          "label": {
+            "ru": "Участники действуют вместе в одной боевой сцене",
+            "en": "Party members act together in a shared encounter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте роли, допуск и порядок распределения добычи понятными группе.",
+        "en": "Make roles, entry requirements and loot distribution clear to the group."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Albion Online",
+        "url": "https://store.steampowered.com/app/761890/"
+      }
+    ]
+  },
+  "rpg-grind--world-event-cycles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Цепочки мировых событий",
+      "en": "World-event cycles"
+    },
+    "description": {
+      "ru": "Повторяемые события меняют локальное состояние мира и открывают следующие задания или награды.",
+      "en": "Repeated events change local world state and unlock later objectives or rewards."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-guild-wars-2-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Guild Wars 2®",
+      "sourceUrl": "https://store.steampowered.com/app/1284210/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1284210/ss_a4e94a02fcf6c667feda35a2cabcf3a6779ea1c5.1920x1080.jpg?t=1791907845",
+      "credit": "ArenaNet® / NCSOFT",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Открытое событие с общей боевой целью",
+        "en": "An open-world event with a shared combat target"
+      },
+      "alt": {
+        "ru": "Открытое событие с общей боевой целью",
+        "en": "An open-world event with a shared combat target"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 29,
+          "label": {
+            "ru": "Участники сражаются с общей целью события",
+            "en": "Players fight the event’s shared target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте текущий этап события и условия перехода к следующему.",
+        "en": "Show the event’s current stage and the condition for advancing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Guild Wars 2®",
+        "url": "https://store.steampowered.com/app/1284210/"
+      }
+    ]
+  },
+  "rpg-grind--pvp-progression": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Накопительный прогресс в PvP",
+      "en": "Cumulative PvP progression"
+    },
+    "description": {
+      "ru": "Матчи приносят опыт, валюту или отметки участия независимо от отдельной шкалы соревновательного мастерства.",
+      "en": "Matches award experience, currency or participation marks separately from competitive skill rating."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-pvp-system-63.webp",
+      "width": 880,
+      "height": 474,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/pvpguide/system/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/W/khuQeeKryhJ_LFXegtBKpcRYYY.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отдельная шкала наград за участие в PvP",
+        "en": "A separate reward track for PvP participation"
+      },
+      "alt": {
+        "ru": "Отдельная шкала наград за участие в PvP",
+        "en": "A separate reward track for PvP participation"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 53,
+          "label": {
+            "ru": "Уровни серии открывают последовательные награды",
+            "en": "Series levels unlock a sequence of rewards"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте награду за участие от рейтинга соревновательного мастерства.",
+        "en": "Separate participation rewards from competitive skill rating."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/pvpguide/system/"
+      }
+    ]
+  },
+  "rpg-grind--repeatable-trials": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повторяемые испытания мастерства",
+      "en": "Repeatable skill trials"
+    },
+    "description": {
+      "ru": "Знакомое испытание проверяет исполнение и выдаёт награды за выполнение условий.",
+      "en": "A familiar trial tests execution and awards completion of specified conditions."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-racing-47.webp",
+      "width": 528,
+      "height": 296,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/Y/rK-jRyfkfMdOadU5FXHER_vF-Y.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Повторяемое испытание Chocobo Challenge",
+        "en": "A repeatable Chocobo Challenge race"
+      },
+      "alt": {
+        "ru": "Повторяемое испытание Chocobo Challenge",
+        "en": "A repeatable Chocobo Challenge race"
+      },
+      "markers": [
+        {
+          "x": 8,
+          "y": 11,
+          "label": {
+            "ru": "Позиция в заезде показывает результат исполнения",
+            "en": "Race position reflects performance in the challenge"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте сравнивать повторные попытки по стабильным правилам.",
+        "en": "Use stable rules so repeated attempts can be compared."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/"
+      }
+    ]
+  },
+  "rpg-grind--procedural-expeditions": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Процедурные экспедиции",
+      "en": "Procedural expeditions"
+    },
+    "description": {
+      "ru": "Одинаковая цель повторяется в меняющейся конфигурации маршрутов, встреч и ресурсов.",
+      "en": "The same objective repeats across changing routes, encounters and resources."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-deep-41.webp",
+      "width": 274,
+      "height": 322,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/r/OJj4hijjJsRRnIDi36I-Hm9f-c.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Карта текущего этажа Palace of the Dead",
+        "en": "The current floor map in Palace of the Dead"
+      },
+      "alt": {
+        "ru": "Карта текущего этажа Palace of the Dead",
+        "en": "The current floor map in Palace of the Dead"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 53,
+          "label": {
+            "ru": "Комнаты и проходы задают маршрут этой попытки",
+            "en": "Rooms and passages define this attempt’s route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте узнаваемую цель при изменяющихся маршрутах и встречах.",
+        "en": "Keep the objective recognisable as routes and encounters change."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/"
+      }
+    ]
+  },
+  "rpg-grind--gathering-routes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Маршруты сбора",
+      "en": "Gathering routes"
+    },
+    "description": {
+      "ru": "Игрок повторяет маршрут по точкам добычи и оптимизирует порядок посещения, вместимость и возвращение на базу.",
+      "en": "The player repeats a route through gathering nodes and optimizes visit order, carrying capacity and return trips."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-albion-online-10.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Albion Online",
+      "sourceUrl": "https://store.steampowered.com/app/761890/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/761890/c1f90394188db2eeada6ea8a7a9f56e0fec6eb26/ss_c1f90394188db2eeada6ea8a7a9f56e0fec6eb26.1920x1080.jpg?t=1788194761",
+      "credit": "Sandbox Interactive GmbH",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сбор ресурсов в открытой зоне",
+        "en": "Gathering resources in an open zone"
+      },
+      "alt": {
+        "ru": "Сбор ресурсов в открытой зоне",
+        "en": "Gathering resources in an open zone"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 49,
+          "label": {
+            "ru": "Добывающая точка становится остановкой маршрута",
+            "en": "A resource node becomes a stop on the gathering route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте возвращение на базу и вместимость вместе со скоростью сбора.",
+        "en": "Account for the return trip and storage capacity as well as gathering speed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Albion Online",
+        "url": "https://store.steampowered.com/app/761890/"
+      }
+    ]
+  },
+  "rpg-grind--loot-salvaging": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разбор добычи",
+      "en": "Loot salvaging"
+    },
+    "description": {
+      "ru": "Ненужная добыча превращается в сырьё для другого прогресса. Ценность предмета определяется также результатом разбора.",
+      "en": "Unwanted loot becomes materials for another progression path. An item’s value also depends on its salvage yield."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-bdo-enhancement-45.webp",
+      "width": 597,
+      "height": 928,
+      "game": "Black Desert",
+      "sourceUrl": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48",
+      "originalUrl": "https://s1.pearlcdn.com/NAEU/Upload/WIKI/ef9aa78826120230309123331092.png",
+      "credit": "Pearl Abyss; official guide screenshot, source annotations retained",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Devour превращает снаряжение в усиление шанса",
+        "en": "Devour converts equipment into enhancement chance"
+      },
+      "alt": {
+        "ru": "Devour превращает снаряжение в усиление шанса",
+        "en": "Devour converts equipment into enhancement chance"
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 60,
+          "label": {
+            "ru": "Предмет расходуется ради прироста шанса улучшения",
+            "en": "The item is consumed to increase enhancement chance"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте выход разбора до уничтожения предмета.",
+        "en": "Show salvage output before the item is destroyed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Black Desert",
+        "url": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48"
+      }
+    ]
+  },
+  "rpg-grind--consumable-supply": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обеспечение расходниками",
+      "en": "Consumable supply"
+    },
+    "description": {
+      "ru": "Используемые в приключениях запасы регулярно заканчиваются. Их восполнение связывает подготовку с повторной добычей.",
+      "en": "Supplies used on adventures run out regularly. Replenishing them connects preparation to repeated gathering."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-05.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 203,
+        "y": 203,
+        "width": 382,
+        "height": 510
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_92d81e3ecd4bc0c27fe3b3f6098b72844a0b1e1e.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Материалы и заряды создаваемого зелья",
+        "en": "Ingredients and charges of the crafted potion"
+      },
+      "alt": {
+        "ru": "Материалы и заряды создаваемого зелья",
+        "en": "Ingredients and charges of the crafted potion"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 37,
+          "label": {
+            "ru": "Зелье имеет ограниченный запас применений",
+            "en": "The potion has a finite number of charges"
+          }
+        },
+        {
+          "x": 23,
+          "y": 62,
+          "label": {
+            "ru": "Рецепт требует пополнения материалов",
+            "en": "The recipe requires replenishing its ingredients"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Планируйте запас под длину вылазки и доступные способы пополнения.",
+        "en": "Balance supplies against expedition length and available replenishment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--animal-husbandry": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Уход за хозяйственными животными",
+      "en": "Livestock care"
+    },
+    "description": {
+      "ru": "Повторяемый уход поддерживает получение возобновляемых продуктов от животных.",
+      "en": "Repeated care sustains renewable animal products."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-island-11.webp",
+      "width": 960,
+      "height": 540,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/island_sanctuary/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/U/W6N7f-C18mVwg5pEXRgBd3--zc.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Уход за животным на острове",
+        "en": "Tending an animal on the island"
+      },
+      "alt": {
+        "ru": "Уход за животным на острове",
+        "en": "Tending an animal on the island"
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 49,
+          "label": {
+            "ru": "Животное остаётся частью хозяйства, требующей ухода",
+            "en": "The animal remains part of the farm and needs care"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте уход с понятным состоянием животного и возобновляемым продуктом.",
+        "en": "Connect care to a clear animal state and renewable output."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/island_sanctuary/"
+      }
+    ]
+  },
+  "rpg-grind--craft-quality": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Изготовление высокого качества",
+      "en": "Quality-focused crafting"
+    },
+    "description": {
+      "ru": "Повторное изготовление нацелено на качество результата, зависящее от процесса или затрат.",
+      "en": "Repeated crafting targets result quality determined by process or expenditure."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-restoration-33.webp",
+      "width": 640,
+      "height": 460,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/T/n9OfIXHhFz6ECH9BxT_JvBcPug.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Качество изделия и материалы в рецепте",
+        "en": "Item quality and ingredients in a crafting recipe"
+      },
+      "alt": {
+        "ru": "Качество изделия и материалы в рецепте",
+        "en": "Item quality and ingredients in a crafting recipe"
+      },
+      "markers": [
+        {
+          "x": 88,
+          "y": 23,
+          "label": {
+            "ru": "Качество учитывается отдельно от завершения изготовления",
+            "en": "Quality is tracked separately from crafting completion"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте управлять качеством через процесс, а не только число повторов.",
+        "en": "Let the crafting process influence quality alongside repeated attempts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/"
+      }
+    ]
+  },
+  "rpg-grind--archaeology-surveys": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Археология и раскопки",
+      "en": "Archaeology and excavation"
+    },
+    "description": {
+      "ru": "Поиск следов, локализация и раскопка дают материалы или части исторических коллекций.",
+      "en": "Finding traces, locating sites and excavating yield materials or historical collection pieces."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-nms-visions-19.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "No Man’s Sky",
+      "sourceUrl": "https://www.nomanssky.com/visions-update/",
+      "originalUrl": "https://www.nomanssky.com/media/legacy/uploads/2018/11/visions-archeology-3.jpg",
+      "credit": "Hello Games; official Visions update screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Раскопанный скелет в No Man’s Sky",
+        "en": "An excavated skeleton in No Man’s Sky"
+      },
+      "alt": {
+        "ru": "Раскопанный скелет в No Man’s Sky",
+        "en": "An excavated skeleton in No Man’s Sky"
+      },
+      "markers": [
+        {
+          "x": 46,
+          "y": 63,
+          "label": {
+            "ru": "Кости обнаружены под поверхностью и открыты раскопкой",
+            "en": "Buried bones have been exposed through excavation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте связь между поисковым признаком, раскопкой и найденной историей.",
+        "en": "Connect the search clue, excavation and the history of the discovery."
+      }
+    ],
+    "examples": [
+      {
+        "title": "No Man’s Sky",
+        "url": "https://www.nomanssky.com/visions-update/"
+      }
+    ]
+  },
+  "rpg-grind--chest-circuits": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Маршруты сундуков и тайников",
+      "en": "Chest and cache circuits"
+    },
+    "description": {
+      "ru": "Игрок повторяет обход восстанавливающихся хранилищ, выбирая доступ, риск и скорость маршрута.",
+      "en": "The player repeats a circuit of replenishing caches, balancing access, risk and route speed."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-deep-48.webp",
+      "width": 400,
+      "height": 400,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/p/exfG7TCcnGkpp1equTd_rjxp6Y.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сундук на этаже повторяемого подземелья",
+        "en": "A chest on a floor of a repeatable dungeon"
+      },
+      "alt": {
+        "ru": "Сундук на этаже повторяемого подземелья",
+        "en": "A chest on a floor of a repeatable dungeon"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Тип сундука помогает оценить полезность находки на маршруте",
+            "en": "The chest type helps assess its value along the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Меняйте риск доступа и маршрут, сохраняя понятное правило восстановления.",
+        "en": "Vary access risk and routes while keeping reset rules clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/deepdungeon/"
+      }
+    ]
+  },
+  "rpg-grind--environmental-windows": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Добыча в особых условиях мира",
+      "en": "Condition-dependent gathering"
+    },
+    "description": {
+      "ru": "Нужный ресурс доступен при определённой погоде, времени или состоянии окружения.",
+      "en": "A desired resource is available under particular weather, time or environmental conditions."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-nms-visions-23.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "No Man’s Sky",
+      "sourceUrl": "https://www.nomanssky.com/visions-update/",
+      "originalUrl": "https://www.nomanssky.com/media/legacy/uploads/2018/11/visions-crystals-1.jpg",
+      "credit": "Hello Games; official Visions update screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Шторм открывает сбор светящихся кристаллов",
+        "en": "A storm enables harvesting luminous crystals"
+      },
+      "alt": {
+        "ru": "Шторм открывает сбор светящихся кристаллов",
+        "en": "A storm enables harvesting luminous crystals"
+      },
+      "markers": [
+        {
+          "x": 61,
+          "y": 71,
+          "label": {
+            "ru": "Штормовые кристаллы активны во время опасной погоды",
+            "en": "Storm crystals become harvestable during dangerous weather"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сообщайте нужные условия мира до того, как игрок отправится за ресурсом.",
+        "en": "Communicate required world conditions before the gathering trip."
+      }
+    ],
+    "examples": [
+      {
+        "title": "No Man’s Sky",
+        "url": "https://www.nomanssky.com/visions-update/"
+      }
+    ]
+  },
+  "rpg-grind--gold-farming": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фарм денег",
+      "en": "Money farming"
+    },
+    "description": {
+      "ru": "Игрок выбирает повторяемую активность по чистому денежному доходу после расходов.",
+      "en": "The player chooses repeatable activities by net currency income after expenses."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_21b6f74ed696af1bbf1f565c567e6f9f15864db9.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Продажа созданного снаряжения за золото",
+        "en": "Selling crafted equipment for gold"
+      },
+      "alt": {
+        "ru": "Продажа созданного снаряжения за золото",
+        "en": "Selling crafted equipment for gold"
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 25,
+          "label": {
+            "ru": "Цена показывает доход до подтверждения продажи",
+            "en": "The price shows proceeds before the sale is confirmed"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сравнивайте чистый доход после затрат, а не только крупную цену продажи.",
+        "en": "Compare net returns after costs as well as the headline sale price."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--market-arbitrage": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перепродажа и арбитраж",
+      "en": "Resale and arbitrage"
+    },
+    "description": {
+      "ru": "Прогресс возникает из разницы цен с учётом комиссий, спроса, риска и замороженного капитала.",
+      "en": "Progress comes from price differences after fees, demand, risk and tied-up capital."
+    },
+    "image": {
+      "src": "images/mechanics/priority-offworld-trading-00.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 675,
+        "height": 675
+      },
+      "game": "Offworld Trading Company",
+      "sourceUrl": "https://store.steampowered.com/app/271240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/271240/ss_fdb1d1301e763bd7cdbed153a2e83a2801bbdc67.1920x1080.jpg?t=1790866876",
+      "credit": "Mohawk Games / Stardock Entertainment",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Текущие цены ресурсов на рынке",
+        "en": "Current resource prices on the market"
+      },
+      "alt": {
+        "ru": "Текущие цены ресурсов на рынке",
+        "en": "Current resource prices on the market"
+      },
+      "markers": [
+        {
+          "x": 5,
+          "y": 36,
+          "label": {
+            "ru": "Котировки помогают выбирать момент покупки и продажи",
+            "en": "Quotes help select when to buy and sell"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте комиссии, объём сделки и изменение цены от самой торговли.",
+        "en": "Account for fees, order size and the price impact of trading."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Offworld Trading Company",
+        "url": "https://store.steampowered.com/app/271240/"
+      }
+    ]
+  },
+  "rpg-grind--market-production": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Производство на продажу",
+      "en": "Market-oriented production"
+    },
+    "description": {
+      "ru": "Игрок повторяет выпуск товаров ради маржи, выбирая объём и ассортимент под спрос.",
+      "en": "The player repeats production for profit, choosing volume and assortment according to demand."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_21b6f74ed696af1bbf1f565c567e6f9f15864db9.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ассортимент мастерской предлагается покупателю",
+        "en": "A workshop’s stock is offered to a customer"
+      },
+      "alt": {
+        "ru": "Ассортимент мастерской предлагается покупателю",
+        "en": "A workshop’s stock is offered to a customer"
+      },
+      "markers": [
+        {
+          "x": 76,
+          "y": 24,
+          "label": {
+            "ru": "Созданное снаряжение выставлено для продажи",
+            "en": "Crafted equipment is stocked for sale"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сопоставляйте выпуск товаров со спросом и доступными ресурсами.",
+        "en": "Match production to demand and available resources."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--service-orders": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Заказы на услуги",
+      "en": "Service orders"
+    },
+    "description": {
+      "ru": "Повторяемые услуги другим персонажам или игрокам дают оплату за навык, выполнение условий или доставку.",
+      "en": "Repeated services for characters or players pay for skill, conditions fulfilled or delivery."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-restoration-37.webp",
+      "width": 640,
+      "height": 506,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/B/2PMZgcmtPbtvaiLEnqUZo1aP3g.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Приём изготовленных изделий по заказу",
+        "en": "Turning in requested crafted items"
+      },
+      "alt": {
+        "ru": "Приём изготовленных изделий по заказу",
+        "en": "Turning in requested crafted items"
+      },
+      "markers": [
+        {
+          "x": 26,
+          "y": 24,
+          "label": {
+            "ru": "Заказ называет предмет и требуемую ценность результата",
+            "en": "The order identifies the item and its required collectability"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Фиксируйте требования и оплату до начала работы над заказом.",
+        "en": "State requirements and payment before work on the order begins."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/"
+      }
+    ]
+  },
+  "rpg-grind--currency-conversion": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обмен и переработка валют",
+      "en": "Currency and material conversion"
+    },
+    "description": {
+      "ru": "Накопленный ресурс переводится в другой по установленному курсу, рецепту или рынку.",
+      "en": "An accumulated resource converts into another through a fixed rate, recipe or market."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-bdo-enhancement-45.webp",
+      "width": 597,
+      "height": 928,
+      "game": "Black Desert",
+      "sourceUrl": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48",
+      "originalUrl": "https://s1.pearlcdn.com/NAEU/Upload/WIKI/ef9aa78826120230309123331092.png",
+      "credit": "Pearl Abyss; official guide screenshot, source annotations retained",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Предмет обменивается на запас шанса улучшения",
+        "en": "Equipment is exchanged for enhancement chance"
+      },
+      "alt": {
+        "ru": "Предмет обменивается на запас шанса улучшения",
+        "en": "Equipment is exchanged for enhancement chance"
+      },
+      "markers": [
+        {
+          "x": 76,
+          "y": 59,
+          "label": {
+            "ru": "Конверсия меняет запас с 226 до 228",
+            "en": "The conversion increases the stored value from 226 to 228"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте курс, расходуемый объект и необратимость преобразования.",
+        "en": "Show the exchange rate, consumed object and whether conversion is reversible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Black Desert",
+        "url": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48"
+      }
+    ]
+  },
+  "rpg-grind--worker-assignment": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Назначение работников",
+      "en": "Worker assignment"
+    },
+    "description": {
+      "ru": "Игрок распределяет работников по задачам, поддерживая их ресурсы, эффективность и очередь работ.",
+      "en": "The player allocates workers to tasks while maintaining resources, efficiency and work queues."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-palworld-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Palworld",
+      "sourceUrl": "https://store.steampowered.com/app/1623730/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/ss_1e6f7cf3c58086df2a3e9b13a988c2681d372b2d.1920x1080.jpg?t=1790336367",
+      "credit": "Pocketpair",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Помощники обслуживают производственную линию",
+        "en": "Pals operate a production line"
+      },
+      "alt": {
+        "ru": "Помощники обслуживают производственную линию",
+        "en": "Pals operate a production line"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 72,
+          "label": {
+            "ru": "Работа помощников поддерживает выпуск предметов",
+            "en": "Assigned Pals keep item production running"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте нехватку работников, навыка, сырья и места на складе.",
+        "en": "Distinguish shortages of workers, skills, ingredients and storage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Palworld",
+        "url": "https://store.steampowered.com/app/1623730/"
+      }
+    ]
+  },
+  "rpg-grind--dispatch-missions": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отправка отрядов в экспедиции",
+      "en": "Dispatch missions"
+    },
+    "description": {
+      "ru": "Подготовленный отряд выполняет задачу без прямого управления; игрок выбирает состав, ставку и длительность.",
+      "en": "A prepared squad performs a task without direct control; the player chooses composition, investment and duration."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_50b5acf56b52a04b3b0bb1cadc8f9db5f6966ea3.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выбранный отряд и длительность похода",
+        "en": "The selected team and expedition duration"
+      },
+      "alt": {
+        "ru": "Выбранный отряд и длительность похода",
+        "en": "The selected team and expedition duration"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 45,
+          "label": {
+            "ru": "Состав отряда выбирается перед отправкой",
+            "en": "Choose the team before dispatch"
+          }
+        },
+        {
+          "x": 30,
+          "y": 91,
+          "label": {
+            "ru": "Поход займёт 1 час 36 минут",
+            "en": "The expedition will take 1 hour 36 minutes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте время, требования и возможную награду перед отправкой.",
+        "en": "Show duration, requirements and possible rewards before dispatch."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--passive-production": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пассивное производство",
+      "en": "Passive production"
+    },
+    "description": {
+      "ru": "Построенная система выдаёт ресурс по времени при наличии входов и свободного места.",
+      "en": "A built system produces resources over time while inputs and storage remain available."
+    },
+    "image": {
+      "src": "images/mechanics/factorio-copper-wire.webp",
+      "width": 1224,
+      "height": 689,
+      "game": "Factorio",
+      "sourceUrl": "https://store.steampowered.com/app/427520/Factorio/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_37aa19e26e20e18a220fd8870dac6efb0e98b5f0.1920x1080.jpg?t=1787348817",
+      "credit": "Wube Software",
+      "rights": "© Wube Software. All rights reserved.",
+      "caption": {
+        "ru": "Автоматы перерабатывают поступающее сырьё",
+        "en": "Machines process incoming resources"
+      },
+      "alt": {
+        "ru": "Автоматы перерабатывают поступающее сырьё",
+        "en": "Machines process incoming resources"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 69,
+          "label": {
+            "ru": "Автомат выпускает кабель при подаче медных пластин",
+            "en": "The machine produces cable when supplied with copper plates"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте выпуск с подачей сырья и свободным местом для результата.",
+        "en": "Connect output to input supply and available storage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Factorio",
+        "url": "https://store.steampowered.com/app/427520/Factorio/"
+      }
+    ]
+  },
+  "rpg-grind--offline-accumulation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Офлайн-накопление",
+      "en": "Offline accumulation"
+    },
+    "description": {
+      "ru": "Система начисляет ограниченный прогресс за время отсутствия; правила симуляции и предел задаются явно.",
+      "en": "The system awards bounded progress during absence, with explicit simulation rules and caps."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-03.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 525,
+        "y": 60,
+        "width": 390,
+        "height": 705
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_4d1ff907a39313707c27cddb1fc1b0a03a743859.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отчёт о прогрессе за время отсутствия",
+        "en": "A report of progress accumulated while away"
+      },
+      "alt": {
+        "ru": "Отчёт о прогрессе за время отсутствия",
+        "en": "A report of progress accumulated while away"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 27,
+          "label": {
+            "ru": "Отчёт показывает срок отсутствия и предел начисления",
+            "en": "The report shows absence duration and the accumulation cap"
+          }
+        },
+        {
+          "x": 50,
+          "y": 78,
+          "label": {
+            "ru": "Накопленный результат перечислен явно",
+            "en": "Accumulated results are listed explicitly"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте предел и правила офлайн-расчёта до выхода из игры.",
+        "en": "Explain the cap and offline simulation rules before the player leaves."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--production-logistics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Логистика производства",
+      "en": "Production logistics"
+    },
+    "description": {
+      "ru": "Повторяемое перемещение ресурсов между узлами определяет пропускную способность производственной системы.",
+      "en": "Repeated movement of resources between nodes determines production throughput."
+    },
+    "image": {
+      "src": "images/mechanics/factorio-copper-wire.webp",
+      "width": 1224,
+      "height": 689,
+      "game": "Factorio",
+      "sourceUrl": "https://store.steampowered.com/app/427520/Factorio/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ss_37aa19e26e20e18a220fd8870dac6efb0e98b5f0.1920x1080.jpg?t=1787348817",
+      "credit": "Wube Software",
+      "rights": "© Wube Software. All rights reserved.",
+      "caption": {
+        "ru": "Ленты соединяют вход и выход производственных узлов",
+        "en": "Belts connect production inputs and outputs"
+      },
+      "alt": {
+        "ru": "Ленты соединяют вход и выход производственных узлов",
+        "en": "Belts connect production inputs and outputs"
+      },
+      "markers": [
+        {
+          "x": 74,
+          "y": 51,
+          "label": {
+            "ru": "Промежуточный продукт перемещается к следующему потребителю",
+            "en": "Intermediate output moves to the next consumer"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте находить узкое место по потоку ресурсов.",
+        "en": "Let players identify bottlenecks by following resource flow."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Factorio",
+        "url": "https://store.steampowered.com/app/427520/Factorio/"
+      }
+    ]
+  },
+  "rpg-grind--skill-use": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие навыка через использование",
+      "en": "Learning by using skills"
+    },
+    "description": {
+      "ru": "Навык развивается при выполнении соответствующего действия. Правила начисления определяют, какие попытки считаются полезной практикой.",
+      "en": "A skill develops through its associated action. Award rules determine which attempts count as useful practice."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_1033d8584e0525c823c813f2fc252d05ee00f6e3.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Добыча руды повышает Mining",
+        "en": "Mining ore increases the Mining skill"
+      },
+      "alt": {
+        "ru": "Добыча руды повышает Mining",
+        "en": "Mining ore increases the Mining skill"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 7,
+          "label": {
+            "ru": "Сообщение подтверждает повышение Mining до 72",
+            "en": "The notification confirms Mining has reached level 72"
+          }
+        },
+        {
+          "x": 89,
+          "y": 73,
+          "label": {
+            "ru": "Повторяемая добыча продвигает нужный навык",
+            "en": "Repeated mining advances the corresponding skill"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Засчитывайте полезную практику и сообщайте, что именно развилось.",
+        "en": "Reward meaningful practice and show exactly what improved."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--profession-leveling": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прокачка профессий",
+      "en": "Profession leveling"
+    },
+    "description": {
+      "ru": "Сбор и изготовление предметов повышают профессиональный ранг и расширяют набор доступных рецептов или ресурсов.",
+      "en": "Gathering and crafting raise a profession rank and expand the available recipes or resources."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-07.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_3ff76c8b0fe31a1e1d31c9ec2251797069a1fbe4.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Уровень Runecrafting открывает новые рецепты",
+        "en": "Runecrafting level unlocks new recipes"
+      },
+      "alt": {
+        "ru": "Уровень Runecrafting открывает новые рецепты",
+        "en": "Runecrafting level unlocks new recipes"
+      },
+      "markers": [
+        {
+          "x": 90,
+          "y": 71,
+          "label": {
+            "ru": "Следующая руна требует 75-го уровня профессии",
+            "en": "The next rune requires profession level 75"
+          }
+        },
+        {
+          "x": 28,
+          "y": 8,
+          "label": {
+            "ru": "Текущий профессиональный уровень: 74",
+            "en": "The current profession level is 74"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ближайшие открытия и действия, которые дают профессиональный опыт.",
+        "en": "Show upcoming unlocks and the actions that provide profession experience."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--rarity-hunting": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Охота за редкостью",
+      "en": "Rarity hunting"
+    },
+    "description": {
+      "ru": "Повторная добыча даёт шанс заменить предмет версией более высокого качества или редкости.",
+      "en": "Repeated looting offers a chance to replace an item with a higher-quality or rarer version."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_57ad4b635da2184e5699f0b59347207bc311fdc9.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Предмет качества Flawless после улучшения",
+        "en": "A Flawless-quality item after enchanting"
+      },
+      "alt": {
+        "ru": "Предмет качества Flawless после улучшения",
+        "en": "A Flawless-quality item after enchanting"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Качество Flawless отличает этот экземпляр предмета",
+            "en": "Flawless quality distinguishes this copy of the item"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте редкость и ценность результата отдельно от частоты попыток.",
+        "en": "Explain result rarity and value separately from the number of attempts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--perfect-rolls": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск идеальных характеристик",
+      "en": "Hunting perfect rolls"
+    },
+    "description": {
+      "ru": "Копии одного предмета различаются набором свойств или их значениями. Целью становится подходящая конкретному билду комбинация.",
+      "en": "Copies of an item differ in their properties or values. The goal becomes a combination suited to a particular build."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-76.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/91_46_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выбор типа случайного усиления брони",
+        "en": "Choosing a random armour augmentation type"
+      },
+      "alt": {
+        "ru": "Выбор типа случайного усиления брони",
+        "en": "Choosing a random armour augmentation type"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 57,
+          "label": {
+            "ru": "Skills+ смещает результаты в сторону навыков",
+            "en": "Skills+ biases results towards added skills"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте оценить пригодность набора свойств для конкретного билда.",
+        "en": "Let players judge how a property combination fits a particular build."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1"
+      }
+    ]
+  },
+  "rpg-grind--equipment-sets": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сбор комплектов",
+      "en": "Equipment set collection"
+    },
+    "description": {
+      "ru": "Отдельные части комплекта дают дополнительные эффекты при совместном использовании. Прогресс измеряется составом набора.",
+      "en": "Individual set pieces grant additional effects when used together. Progress is measured by set completion."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-78.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/2",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/92_20_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Бонус сопротивлений за 3, 4 и 5 частей",
+        "en": "Resistance bonuses for 3, 4 and 5 matching pieces"
+      },
+      "alt": {
+        "ru": "Бонус сопротивлений за 3, 4 и 5 частей",
+        "en": "Resistance bonuses for 3, 4 and 5 matching pieces"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 73,
+          "label": {
+            "ru": "Пять частей комплекта дают +3 ко всем сопротивлениям",
+            "en": "Five set pieces grant +3 to all resistances"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте активный порог и эффект добавления следующей части.",
+        "en": "Show the active threshold and the effect of adding the next piece."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/2"
+      }
+    ]
+  },
+  "rpg-grind--item-base-hunting": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск основы для крафта",
+      "en": "Crafting-base hunting"
+    },
+    "description": {
+      "ru": "Целью добычи становится заготовка с подходящими врождёнными свойствами или возможностями обработки.",
+      "en": "The loot goal is a base with suitable inherent properties or crafting capacity."
+    },
+    "image": {
+      "src": "images/mechanics/last-epoch-forge.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 563,
+        "height": 810
+      },
+      "game": "Last Epoch",
+      "sourceUrl": "https://store.steampowered.com/app/899770/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/899770/ss_2e36b4ef4b1682679932004ab95540ae2d4456f5.1920x1080.jpg?t=1792426633",
+      "credit": "Eleventh Hour Games",
+      "rights": "© Eleventh Hour Games. All rights reserved.",
+      "caption": {
+        "ru": "Основа предмета и возможности дальнейшей обработки",
+        "en": "An item base and its remaining crafting options"
+      },
+      "alt": {
+        "ru": "Основа предмета и возможности дальнейшей обработки",
+        "en": "An item base and its remaining crafting options"
+      },
+      "markers": [
+        {
+          "x": 20,
+          "y": 24,
+          "label": {
+            "ru": "Выбранный предмет служит основой для улучшений",
+            "en": "The selected item provides the base for further crafting"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ограничения основы до вложения редких материалов.",
+        "en": "Show an item base’s limits before rare materials are invested."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Last Epoch",
+        "url": "https://store.steampowered.com/app/899770/"
+      }
+    ]
+  },
+  "rpg-grind--property-rerolls": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Переброс свойств",
+      "en": "Property rerolling"
+    },
+    "description": {
+      "ru": "Игрок расходует ресурсы, чтобы заменить свойства уже полученного предмета и приблизить его к нужной конфигурации.",
+      "en": "The player spends resources to replace properties on an acquired item and move it toward a desired configuration."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-75.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/91_45_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сравнение старых и случайно полученных свойств",
+        "en": "Comparing current and randomly augmented properties"
+      },
+      "alt": {
+        "ru": "Сравнение старых и случайно полученных свойств",
+        "en": "Comparing current and randomly augmented properties"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 56,
+          "label": {
+            "ru": "Новый результат меняет защиту, сопротивления и навыки",
+            "en": "The new result changes defence, resistances and skills"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте сравнить результат и осознанно решить, сохранять ли его.",
+        "en": "Let players compare the result and decide whether to keep it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1"
+      }
+    ]
+  },
+  "rpg-grind--item-evolution": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Эволюция предмета",
+      "en": "Item evolution"
+    },
+    "description": {
+      "ru": "Предмет меняет форму или набор возможностей после выполнения связанных с ним условий использования.",
+      "en": "An item changes form or capabilities after its usage conditions are fulfilled."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-68.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/91_12_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Вход в кузницу для развития оружия",
+        "en": "Entering the smithy to upgrade a weapon"
+      },
+      "alt": {
+        "ru": "Вход в кузницу для развития оружия",
+        "en": "Entering the smithy to upgrade a weapon"
+      },
+      "markers": [
+        {
+          "x": 22,
+          "y": 27,
+          "label": {
+            "ru": "Forge/Upgrade Weapon открывает развитие выбранного оружия",
+            "en": "Forge/Upgrade Weapon opens the weapon development interface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятную связь между исходным предметом и его следующей формой.",
+        "en": "Keep the connection between an original item and its next form clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1"
+      }
+    ]
+  },
+  "rpg-grind--companion-leveling": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прокачка спутников",
+      "en": "Companion leveling"
+    },
+    "description": {
+      "ru": "Спутник имеет собственный прогресс силы, способностей или роли, связанный с совместными действиями.",
+      "en": "A companion has separate power, ability or role progression tied to shared activities."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-chocobo-rank-14.webp",
+      "width": 896,
+      "height": 304,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/faq/faq-chocobo/chocobo_rank.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/6d/fb435a792e63f8635b1d8516a9ad3a5096ff0e.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Спутник получает опыт и достигает нового ранга",
+        "en": "The companion gains experience and reaches a new rank"
+      },
+      "alt": {
+        "ru": "Спутник получает опыт и достигает нового ранга",
+        "en": "The companion gains experience and reaches a new rank"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 34,
+          "label": {
+            "ru": "Журнал сообщает опыт чокобо и достижение 8-го ранга",
+            "en": "The log reports chocobo experience and advancement to rank 8"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте собственный прогресс спутника отдельно от уровня героя.",
+        "en": "Show companion progression separately from the hero’s level."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/faq/faq-chocobo/chocobo_rank.html"
+      }
+    ]
+  },
+  "rpg-grind--companion-rapport": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отношения с отдельным NPC",
+      "en": "Individual NPC relationships"
+    },
+    "description": {
+      "ru": "Повторяемые поступки меняют доверие конкретного персонажа и открывают его реакции, услуги или задания.",
+      "en": "Repeated actions change an individual character's trust, unlocking reactions, services or quests."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-potionomics-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Potionomics",
+      "sourceUrl": "https://store.steampowered.com/app/1874490/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1874490/ss_1a48567b697d25dee05de6d998e8946ec5ff0ca1.1920x1080.jpg?t=1750960791",
+      "credit": "Voracious Games / XSEED Games / Marvelous USA, Inc.",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Положительная реакция Saffron во время общения",
+        "en": "Saffron responds positively during a conversation"
+      },
+      "alt": {
+        "ru": "Положительная реакция Saffron во время общения",
+        "en": "Saffron responds positively during a conversation"
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 63,
+          "label": {
+            "ru": "Реакция отмечает изменение личного отношения",
+            "en": "The response signals a change in personal affinity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте доверие с последовательными действиями и конкретными отношениями.",
+        "en": "Connect trust to consistent actions and specific relationships."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Potionomics",
+        "url": "https://store.steampowered.com/app/1874490/"
+      }
+    ]
+  },
+  "rpg-grind--pet-training": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обучение питомцев",
+      "en": "Pet training"
+    },
+    "description": {
+      "ru": "У питомца развиваются команды, поведение или полезные способности через повторяемую практику.",
+      "en": "A pet develops commands, behavior or useful abilities through repeated practice."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-chocobo-skills-13.webp",
+      "width": 896,
+      "height": 1040,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/faq/faq-chocobo/chocobo_skill.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/31/e1c0bb234ece23afd6d224d7ed32586aaec10f.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Очки навыков развивают роль спутника",
+        "en": "Skill points develop the companion’s role"
+      },
+      "alt": {
+        "ru": "Очки навыков развивают роль спутника",
+        "en": "Skill points develop the companion’s role"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 61,
+          "label": {
+            "ru": "Ветки Defender, Healer и Attacker задают специализацию",
+            "en": "Defender, Healer and Attacker branches define specialisations"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте обучение поведению, новые команды и простой рост характеристик.",
+        "en": "Distinguish learned behaviour, new commands and stat increases."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/faq/faq-chocobo/chocobo_skill.html"
+      }
+    ]
+  },
+  "rpg-grind--mount-training": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие ездовых животных",
+      "en": "Mount training"
+    },
+    "description": {
+      "ru": "Поездки, упражнения или ресурсы улучшают движение и возможности конкретного средства передвижения.",
+      "en": "Riding, exercises or resources improve a particular mount's movement and capabilities."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-racing-38.webp",
+      "width": 594,
+      "height": 297,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/r/_K9jg5on9ZoPq0xFhcGFPqf1j4.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Тренировка повышает скорость ездового чокобо",
+        "en": "Training improves a racing chocobo’s speed"
+      },
+      "alt": {
+        "ru": "Тренировка повышает скорость ездового чокобо",
+        "en": "Training improves a racing chocobo’s speed"
+      },
+      "markers": [
+        {
+          "x": 77,
+          "y": 30,
+          "label": {
+            "ru": "Maximum Speed меняется с 14 до 16",
+            "en": "Maximum Speed rises from 14 to 16"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте результат упражнения до расходования доступной тренировки.",
+        "en": "Preview the result before spending a training session."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/"
+      }
+    ]
+  },
+  "rpg-grind--breeding-lines": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разведение и наследование",
+      "en": "Breeding and inheritance"
+    },
+    "description": {
+      "ru": "Игрок повторяет подбор родителей и выращивание потомства ради заданных наследуемых признаков.",
+      "en": "The player repeats parent selection and offspring raising for desired inherited traits."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-racing-42.webp",
+      "width": 600,
+      "height": 576,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/g/_DaGHy8vHh5G6mJQ6Eig81dDAY.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Сопоставление родителей и наследуемых признаков",
+        "en": "Comparing parents and heritable traits"
+      },
+      "alt": {
+        "ru": "Сопоставление родителей и наследуемых признаков",
+        "en": "Comparing parents and heritable traits"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 31,
+          "label": {
+            "ru": "Пара подбирается по характеристикам и наследуемым способностям",
+            "en": "The parents are compared by stats and inherited abilities"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте наследуемые признаки, случайность и условия выращивания.",
+        "en": "Distinguish inherited traits, randomness and growth requirements."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/"
+      }
+    ]
+  },
+  "rpg-grind--hatching-growth": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Выведение и выращивание существ",
+      "en": "Hatching and raising creatures"
+    },
+    "description": {
+      "ru": "Яйца или молодые существа требуют условий и ухода до получения пригодного спутника или коллекционного результата.",
+      "en": "Eggs or young creatures require conditions and care before becoming usable companions or collectibles."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-racing-43.webp",
+      "width": 474,
+      "height": 353,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/F/3rbnxPeoQsuEgSyvTxcLHI7Hz4.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Птенца можно получить после указанного срока",
+        "en": "The fledgling becomes available after the stated time"
+      },
+      "alt": {
+        "ru": "Птенца можно получить после указанного срока",
+        "en": "The fledgling becomes available after the stated time"
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 65,
+          "label": {
+            "ru": "Документ задаёт дату получения выращенного птенца",
+            "en": "The document specifies when the fledgling can be collected"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сообщайте срок и условия роста вместе с результатом разведения.",
+        "en": "State growth duration and requirements alongside the breeding result."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/"
+      }
+    ]
+  },
+  "rpg-grind--token-currency": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Накопление жетонов",
+      "en": "Token accumulation"
+    },
+    "description": {
+      "ru": "Активности приносят специальную валюту, которую можно обменять на выбранную награду по известной цене.",
+      "en": "Activities award a dedicated currency that can be exchanged for a chosen reward at a known price."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-currency-13.webp",
+      "width": 896,
+      "height": 544,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/6a/da90fc8309d4f3b790a3b4ddfef806ef91b0bb.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Отдельные запасы Allagan Tomestones",
+        "en": "Separate balances of Allagan Tomestones"
+      },
+      "alt": {
+        "ru": "Отдельные запасы Allagan Tomestones",
+        "en": "Separate balances of Allagan Tomestones"
+      },
+      "markers": [
+        {
+          "x": 27,
+          "y": 62,
+          "label": {
+            "ru": "Жетоны накапливаются отдельно от обычных денег",
+            "en": "Tokens accumulate separately from ordinary currency"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте источники, предел хранения и доступные награды за жетоны.",
+        "en": "Show sources, storage limits and rewards available for tokens."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html"
+      }
+    ]
+  },
+  "rpg-grind--access-keys": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сбор ключей и билетов",
+      "en": "Key and ticket collection"
+    },
+    "description": {
+      "ru": "Одна повторяемая активность выдаёт расходуемый доступ к другой. Ключ задаёт стоимость попытки получить следующую награду.",
+      "en": "One repeatable activity awards consumable access to another. A key establishes the cost of attempting the next reward."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_50b5acf56b52a04b3b0bb1cadc8f9db5f6966ea3.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ключ входит в таблицу наград за босса",
+        "en": "A key is included in the boss’s loot table"
+      },
+      "alt": {
+        "ru": "Ключ входит в таблицу наград за босса",
+        "en": "A key is included in the boss’s loot table"
+      },
+      "markers": [
+        {
+          "x": 93,
+          "y": 48,
+          "label": {
+            "ru": "Шанс получить ключ из этого похода: 25%",
+            "en": "This expedition has a 25% chance to provide a key"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, какой доступ открывает ключ и когда он расходуется.",
+        "en": "Explain what a key unlocks and when it is consumed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--settlement-development": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие поселения",
+      "en": "Settlement development"
+    },
+    "description": {
+      "ru": "Сдача материалов и выполнение заказов развивают общую базу, открывая здания, услуги или улучшения.",
+      "en": "Contributing materials and completing orders develop a shared base, unlocking buildings, services or upgrades."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-island-09.webp",
+      "width": 858,
+      "height": 530,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/island_sanctuary/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/-/h3wsgQC05g_xsv_BGSbo4kJKoM.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Материалы превращают свободный участок в постройку",
+        "en": "Materials turn a vacant plot into a building"
+      },
+      "alt": {
+        "ru": "Материалы превращают свободный участок в постройку",
+        "en": "Materials turn a vacant plot into a building"
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 66,
+          "label": {
+            "ru": "Список показывает требуемые и имеющиеся строительные материалы",
+            "en": "The list compares required building materials with inventory"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте понять, какую возможность поселения откроет следующее вложение.",
+        "en": "Show which settlement capability the next investment unlocks."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/island_sanctuary/"
+      }
+    ]
+  },
+  "rpg-grind--guild-projects": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие гильдии",
+      "en": "Guild development"
+    },
+    "description": {
+      "ru": "Личные повторяемые действия пополняют общий запас, открывающий возможности постоянной группы.",
+      "en": "Individual repeated activities contribute to shared resources that unlock persistent group options."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_39b519e8208d0600caf7b040e5da393715d599c1.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Постоянная гильдия и её общие возможности",
+        "en": "A persistent guild and its shared capabilities"
+      },
+      "alt": {
+        "ru": "Постоянная гильдия и её общие возможности",
+        "en": "A persistent guild and its shared capabilities"
+      },
+      "markers": [
+        {
+          "x": 78,
+          "y": 89,
+          "label": {
+            "ru": "Guild Perks открывает общие преимущества гильдии",
+            "en": "Guild Perks provides access to shared guild benefits"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте вклад участников и общую цель, к которой он приближает.",
+        "en": "Show individual contributions and the shared objective they advance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--community-construction": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместное восстановление мира",
+      "en": "Community construction"
+    },
+    "description": {
+      "ru": "Общий вклад многих участников изменяет состояние объекта или региона и открывает следующий этап.",
+      "en": "Combined contributions from many participants change an object or region and unlock the next stage."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-restoration-49.webp",
+      "width": 640,
+      "height": 548,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/_/qJb2_1q3qIT_9Pu81owr-M_FiA.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Общий этап восстановления района",
+        "en": "A shared stage of district restoration"
+      },
+      "alt": {
+        "ru": "Общий этап восстановления района",
+        "en": "A shared stage of district restoration"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 13,
+          "label": {
+            "ru": "Общее строительство переходит к очередным Concerted Works",
+            "en": "Shared construction advances towards the next Concerted Works"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте личный вклад с видимым изменением общего объекта.",
+        "en": "Connect individual contributions to a visible change in the shared project."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/"
+      }
+    ]
+  },
+  "rpg-grind--prestige-rebirth": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Престиж и перерождение",
+      "en": "Prestige and rebirth"
+    },
+    "description": {
+      "ru": "После достижения порога игрок сбрасывает часть развития и повторяет путь с постоянной наградой или новыми условиями.",
+      "en": "After reaching a threshold, the player resets part of their progression and repeats the journey with a permanent reward or new conditions."
+    },
+    "image": {
+      "src": "images/mechanics/priority-realm-grinder-12.webp",
+      "width": 974,
+      "height": 638,
+      "game": "Realm Grinder",
+      "sourceUrl": "https://store.steampowered.com/app/610080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/610080/ss_b3ca5b13f31f51bb8176f9d6dd025e1f1d51b297.1920x1080.jpg?t=1592248284",
+      "credit": "Divine Games / Kongregate",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Abdication меняет текущий прогресс на постоянную выгоду",
+        "en": "Abdication exchanges current progress for a lasting benefit"
+      },
+      "alt": {
+        "ru": "Abdication меняет текущий прогресс на постоянную выгоду",
+        "en": "Abdication exchanges current progress for a lasting benefit"
+      },
+      "markers": [
+        {
+          "x": 25,
+          "y": 4,
+          "label": {
+            "ru": "Кнопка Abdicate завершает текущий цикл развития",
+            "en": "Abdicate ends the current progression cycle"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, что сбросится и какая выгода останется.",
+        "en": "Show what resets and which benefits remain."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Realm Grinder",
+        "url": "https://store.steampowered.com/app/610080/"
+      }
+    ]
+  },
+  "rpg-grind--achievement-tiers": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Многоступенчатые достижения",
+      "en": "Tiered achievements"
+    },
+    "description": {
+      "ru": "Одна тема имеет последовательные количественные или качественные пороги с отдельными наградами.",
+      "en": "A theme has successive quantitative or qualitative thresholds with separate rewards."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-achievement-13.webp",
+      "width": 896,
+      "height": 768,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/faq/faq-other/achieve_exchange.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/33/c50134aa5eb2fa3be808e298512a9a97f1efd0.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пороги 10, 50 и 100 одобрений игроков",
+        "en": "Thresholds of 10, 50 and 100 player commendations"
+      },
+      "alt": {
+        "ru": "Пороги 10, 50 и 100 одобрений игроков",
+        "en": "Thresholds of 10, 50 and 100 player commendations"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 65,
+          "label": {
+            "ru": "Следующая ступень требует 50 одобрений",
+            "en": "The next tier requires 50 commendations"
+          }
+        },
+        {
+          "x": 82,
+          "y": 70,
+          "label": {
+            "ru": "За выполненную ступень доступна отдельная награда",
+            "en": "A completed tier provides its own reward"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте достигнутый порог, готовую награду и следующую цель.",
+        "en": "Distinguish reached thresholds, claimable rewards and the next objective."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/faq/faq-other/achieve_exchange.html"
+      }
+    ]
+  },
+  "rpg-grind--weighted-loot": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Случайная награда с весами",
+      "en": "Weighted random rewards"
+    },
+    "description": {
+      "ru": "Результат выбирается из распределения вероятностей; частота попыток и состав таблицы определяют путь к цели.",
+      "en": "The result is drawn from a probability distribution; attempt frequency and table composition determine the path to a goal."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-09.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 818,
+        "y": 420,
+        "width": 600,
+        "height": 293
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_95358489ee0448102954f2c72e16d995d192d6e1.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Вероятности рыбы, мусора и особой находки",
+        "en": "Chances of fish, junk and a special find"
+      },
+      "alt": {
+        "ru": "Вероятности рыбы, мусора и особой находки",
+        "en": "Chances of fish, junk and a special find"
+      },
+      "markers": [
+        {
+          "x": 81,
+          "y": 56,
+          "label": {
+            "ru": "Выбранный водоём задаёт веса разных результатов",
+            "en": "The fishing location defines the weights of different outcomes"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте вероятности и условия, которые меняют распределение наград.",
+        "en": "Show probabilities and the conditions that change reward distribution."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--unwanted-reward-compensation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Компенсация неподходящей награды",
+      "en": "Unwanted-reward compensation"
+    },
+    "description": {
+      "ru": "Неудачный для текущей цели результат сохраняет часть ценности через замену или альтернативный прогресс.",
+      "en": "A result unsuitable for the current goal retains value through replacement or alternative progress."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-bdo-enhancement-45.webp",
+      "width": 597,
+      "height": 928,
+      "game": "Black Desert",
+      "sourceUrl": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48",
+      "originalUrl": "https://s1.pearlcdn.com/NAEU/Upload/WIKI/ef9aa78826120230309123331092.png",
+      "credit": "Pearl Abyss; official guide screenshot, source annotations retained",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ненужное снаряжение сохраняет ценность через Devour",
+        "en": "Unneeded equipment retains value through Devour"
+      },
+      "alt": {
+        "ru": "Ненужное снаряжение сохраняет ценность через Devour",
+        "en": "Unneeded equipment retains value through Devour"
+      },
+      "markers": [
+        {
+          "x": 21,
+          "y": 34,
+          "label": {
+            "ru": "Предмет можно превратить в ресурс следующего улучшения",
+            "en": "The item can become a resource for a later enhancement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте неподходящей добыче понятный альтернативный путь использования.",
+        "en": "Give unwanted loot a clear alternative use."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Black Desert",
+        "url": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48"
+      }
+    ]
+  },
+  "rpg-grind--upgrade-refunds": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Возврат и страховка улучшений",
+      "en": "Upgrade refunds and protection"
+    },
+    "description": {
+      "ru": "Правила сохраняют часть вложений при замене предмета, неудаче или смене направления развития.",
+      "en": "Rules preserve part of an investment when replacing an item, failing or changing progression direction."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-69.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/page/91_15_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Жёлтая стрелка разрешает откат улучшения оружия",
+        "en": "A yellow arrow identifies a reversible weapon upgrade"
+      },
+      "alt": {
+        "ru": "Жёлтая стрелка разрешает откат улучшения оружия",
+        "en": "A yellow arrow identifies a reversible weapon upgrade"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 26,
+          "label": {
+            "ru": "Откат возвращает материалы по правилам этого улучшения",
+            "en": "Rollback refunds materials under the upgrade’s rules"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Указывайте возвращаемую часть вложений до подтверждения отката.",
+        "en": "Show the refundable portion before rollback is confirmed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1"
+      }
+    ]
+  },
+  "rpg-grind--risk-reward": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повышение награды за риск",
+      "en": "Risk-reward scaling"
+    },
+    "description": {
+      "ru": "Игрок принимает дополнительные угрозы или ограничения ради изменения награды.",
+      "en": "The player accepts extra threats or restrictions in exchange for changed rewards."
+    },
+    "image": {
+      "src": "images/mechanics/slay-the-spire-rest.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Slay the Spire",
+      "sourceUrl": "https://www.megacrit.com/press-kits/slay-the-spire/",
+      "originalUrl": "https://www.megacrit.com/images/ss11.jpg",
+      "credit": "Mega Crit",
+      "rights": "© Mega Crit. All rights reserved.",
+      "caption": {
+        "ru": "Усиление вместо лечения увеличивает риск следующего боя",
+        "en": "Choosing power over healing increases risk in the next fight"
+      },
+      "alt": {
+        "ru": "Усиление вместо лечения увеличивает риск следующего боя",
+        "en": "Choosing power over healing increases risk in the next fight"
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 34,
+          "label": {
+            "ru": "Игрок усиливается, сохраняя риск из-за недостающего здоровья",
+            "en": "The player gains power while retaining the risk of missing health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сравнивайте дополнительную выгоду с возможной потерей накопленного.",
+        "en": "Compare the extra benefit against the possible loss of accumulated progress."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Slay the Spire",
+        "url": "https://www.megacrit.com/press-kits/slay-the-spire/"
+      }
+    ]
+  },
+  "rpg-grind--soft-pity": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рост шанса после неудач",
+      "en": "Increasing chance after failures"
+    },
+    "description": {
+      "ru": "Вероятность изменяется в зависимости от истории подходящих попыток без обязательной фиксированной гарантии.",
+      "en": "Probability changes with qualifying attempt history without necessarily providing a fixed guarantee."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-bdo-enhancement-35.webp",
+      "width": 592,
+      "height": 890,
+      "game": "Black Desert",
+      "sourceUrl": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48",
+      "originalUrl": "https://s1.pearlcdn.com/NAEU/Upload/WIKI/23318d3fdee20230309121803409.png",
+      "credit": "Pearl Abyss; official guide screenshot, source annotations retained",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Накопленный шанс повышает вероятность улучшения",
+        "en": "Accumulated enhancement chance raises success probability"
+      },
+      "alt": {
+        "ru": "Накопленный шанс повышает вероятность улучшения",
+        "en": "Accumulated enhancement chance raises success probability"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 60,
+          "label": {
+            "ru": "Добавленный шанс увеличивает вероятность без полной гарантии",
+            "en": "Added chance increases probability without making success certain"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте рост вероятности от гарантии и объясняйте сброс счётчика.",
+        "en": "Distinguish increased probability from a guarantee and explain counter resets."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Black Desert",
+        "url": "https://www.sa.playblackdesert.com/Pt-BR/Wiki?wikiNo=48"
+      }
+    ]
+  },
+  "rpg-grind--parallel-goals": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прогресс нескольких целей за действие",
+      "en": "Parallel goal progression"
+    },
+    "description": {
+      "ru": "Одно действие осмысленно продвигает несколько независимых целей, позволяя выбирать выгодные сочетания.",
+      "en": "One activity meaningfully advances several independent goals, allowing useful combinations."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-03.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 525,
+        "y": 225,
+        "width": 390,
+        "height": 345
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_4d1ff907a39313707c27cddb1fc1b0a03a743859.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Одна активность даёт опыт нескольких навыков и материалы",
+        "en": "One activity provides several skills’ experience and materials"
+      },
+      "alt": {
+        "ru": "Одна активность даёт опыт нескольких навыков и материалы",
+        "en": "One activity provides several skills’ experience and materials"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 36,
+          "label": {
+            "ru": "Один цикл продвигает Attack, Hitpoints и Summoning",
+            "en": "The same cycle advances Attack, Hitpoints and Summoning"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте находить действия, полезные сразу для нескольких целей.",
+        "en": "Let players discover actions that advance several objectives at once."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--loot-pool-focus": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Настройка пула добычи",
+      "en": "Loot-pool focusing"
+    },
+    "description": {
+      "ru": "Игрок вкладывает ресурс или делает выбор, чтобы изменить допустимые награды или их относительные веса.",
+      "en": "The player invests resources or makes a choice to change eligible rewards or their relative weights."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-76.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/en/page/91_46_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выбор режима меняет вероятные свойства результата",
+        "en": "Selecting a mode changes likely result properties"
+      },
+      "alt": {
+        "ru": "Выбор режима меняет вероятные свойства результата",
+        "en": "Selecting a mode changes likely result properties"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 43,
+          "label": {
+            "ru": "Stability и Skills+ смещают случайное усиление к разным свойствам",
+            "en": "Stability and Skills+ bias results towards different properties"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, что меняется в пуле и что остаётся случайным.",
+        "en": "Explain which parts of the outcome pool change and which remain random."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/9/1"
+      }
+    ]
+  },
+  "rpg-grind--weekly-caps": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Недельные лимиты и право на награду",
+      "en": "Weekly caps and reward eligibility"
+    },
+    "description": {
+      "ru": "За установленный период можно получить ограниченное число наград или единиц валюты независимо от числа прохождений.",
+      "en": "A period permits a limited number of rewards or currency units regardless of run count."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-currency-13.webp",
+      "width": 896,
+      "height": 544,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/6a/da90fc8309d4f3b790a3b4ddfef806ef91b0bb.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Недельный лимит исчерпан, а общий запас ещё может расти",
+        "en": "The weekly allowance is full while total storage has room"
+      },
+      "alt": {
+        "ru": "Недельный лимит исчерпан, а общий запас ещё может расти",
+        "en": "The weekly allowance is full while total storage has room"
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 88,
+          "label": {
+            "ru": "За эту неделю получено 450 из 450 доступных жетонов",
+            "en": "This week’s 450-token allowance has been fully earned"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте лимит получения за период и общую вместимость валюты.",
+        "en": "Distinguish the period’s earning allowance from total currency storage."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html"
+      }
+    ]
+  },
+  "rpg-grind--stamina-attempts": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Восстанавливаемый бюджет попыток",
+      "en": "Regenerating attempt budget"
+    },
+    "description": {
+      "ru": "Действия тратят ресурс, который восстанавливается со временем или через игру и ограничивает частоту повторов.",
+      "en": "Activities consume a resource restored over time or through play, limiting repetition frequency."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_21b6f74ed696af1bbf1f565c567e6f9f15864db9.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Энергии не хватает на надбавку к цене",
+        "en": "There is insufficient energy to apply a surcharge"
+      },
+      "alt": {
+        "ru": "Энергии не хватает на надбавку к цене",
+        "en": "There is insufficient energy to apply a surcharge"
+      },
+      "markers": [
+        {
+          "x": 92,
+          "y": 52,
+          "label": {
+            "ru": "Надбавка стоит 865 энергии при запасе 784",
+            "en": "Surcharge costs 865 energy with only 784 available"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте стоимость попытки и способы восстановления бюджета.",
+        "en": "Show attempt costs and ways to restore the available budget."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "rpg-grind--respawn-windows": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Восстановление источников",
+      "en": "Source respawn windows"
+    },
+    "description": {
+      "ru": "Добытый источник возвращается по правилам времени или состояния мира, меняя доступность повторной попытки.",
+      "en": "A harvested source returns according to time or world-state rules, changing repeat availability."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-mhr-47.webp",
+      "width": 512,
+      "height": 256,
+      "game": "Monster Hunter Rise: Sunbreak",
+      "sourceUrl": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/8",
+      "originalUrl": "https://game.capcom.com/manual/Multi-Platform/locale/page/68_4_1.jpg",
+      "credit": "Capcom; official web manual screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Возобновляемая точка сбора материалов",
+        "en": "A replenishing material gathering point"
+      },
+      "alt": {
+        "ru": "Возобновляемая точка сбора материалов",
+        "en": "A replenishing material gathering point"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 53,
+          "label": {
+            "ru": "После сбора эта точка восстанавливается по правилам мира",
+            "en": "The gathering point replenishes after harvesting"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сообщайте условия восстановления и предлагайте другие полезные цели на время ожидания.",
+        "en": "Explain replenishment rules and offer useful alternatives while waiting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Monster Hunter Rise: Sunbreak",
+        "url": "https://game.capcom.com/manual/Multi-Platform/en/windows/page/6/8"
+      }
+    ]
+  },
+  "rpg-grind--crafting-cooldowns": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Временные ограничения производства",
+      "en": "Production time constraints"
+    },
+    "description": {
+      "ru": "Изготовление или исследование занимает время, поэтому игрок управляет очередью и доступной мощностью.",
+      "en": "Crafting or research takes time, requiring queue and capacity management."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-05.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 203,
+        "y": 203,
+        "width": 382,
+        "height": 510
+      },
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_92d81e3ecd4bc0c27fe3b3f6098b72844a0b1e1e.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Один цикл изготовления зелья занимает две секунды",
+        "en": "One potion crafting cycle takes two seconds"
+      },
+      "alt": {
+        "ru": "Один цикл изготовления зелья занимает две секунды",
+        "en": "One potion crafting cycle takes two seconds"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 82,
+          "label": {
+            "ru": "Длительность производства указана рядом с Create",
+            "en": "Production duration appears beside Create"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте оставшееся время и причину остановки очереди.",
+        "en": "Show remaining time and the reason a production queue stops."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
+  },
+  "rpg-grind--seasonal-resets": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сезонный сброс части прогресса",
+      "en": "Seasonal partial resets"
+    },
+    "description": {
+      "ru": "Новый сезон обнуляет оговорённые шкалы или экономику и сохраняет обозначенные результаты.",
+      "en": "A new season resets specified tracks or the economy while preserving stated outcomes."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-pvp-system-63.webp",
+      "width": 880,
+      "height": 474,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/pvpguide/system/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/W/khuQeeKryhJ_LFXegtBKpcRYYY.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Серия ограничивает период накопления PvP-наград",
+        "en": "A series defines the period for earning PvP rewards"
+      },
+      "alt": {
+        "ru": "Серия ограничивает период накопления PvP-наград",
+        "en": "A series defines the period for earning PvP rewards"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 10,
+          "label": {
+            "ru": "Номер серии отделяет её прогресс от других периодов",
+            "en": "The series number distinguishes this reward period from others"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "До смены сезона перечисляйте сбрасываемые шкалы и сохраняемые награды.",
+        "en": "Before a new season, list which tracks reset and which rewards persist."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/pvpguide/system/"
+      }
+    ]
+  },
+  "rpg-grind--loot-binding": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Привязка и обращение предметов",
+      "en": "Item binding and circulation"
+    },
+    "description": {
+      "ru": "Правила передачи определяют, можно ли заменить личный фарм торговлей и когда предмет выходит из экономики.",
+      "en": "Transfer rules determine whether trade can replace personal farming and when an item leaves circulation."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-racing-43.webp",
+      "width": 474,
+      "height": 353,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/F/3rbnxPeoQsuEgSyvTxcLHI7Hz4.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Документ помечен как Untradable",
+        "en": "The document is marked Untradable"
+      },
+      "alt": {
+        "ru": "Документ помечен как Untradable",
+        "en": "The document is marked Untradable"
+      },
+      "markers": [
+        {
+          "x": 63,
+          "y": 36,
+          "label": {
+            "ru": "Ограничение исключает передачу этого предмета через торговлю",
+            "en": "The restriction prevents trading this item to another player"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте момент привязки и допустимые способы передачи до получения предмета.",
+        "en": "Explain binding triggers and transfer restrictions before item acquisition."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/goldsaucer/chocoboracing/"
+      }
+    ]
+  },
+  "rpg-grind--storage-pressure": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вместимость и управление запасом",
+      "en": "Capacity and stock management"
+    },
+    "description": {
+      "ru": "Ограниченный инвентарь или склад заставляет выбирать, что сохранить, переработать, доставить или оставить.",
+      "en": "Limited inventory or storage requires choices about keeping, processing, transporting or abandoning goods."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-melvor-idle-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Melvor Idle",
+      "sourceUrl": "https://store.steampowered.com/app/1267910/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1267910/ss_a73d53bc3bf6301b7f9cc4274a49a05fab1aba13.1920x1080.jpg?t=1789749689",
+      "credit": "Games by Malcs / Jagex Ltd",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Заполненный банк и действия с выбранным предметом",
+        "en": "A crowded bank and actions for the selected item"
+      },
+      "alt": {
+        "ru": "Заполненный банк и действия с выбранным предметом",
+        "en": "A crowded bank and actions for the selected item"
+      },
+      "markers": [
+        {
+          "x": 21,
+          "y": 23,
+          "label": {
+            "ru": "Число занятых ячеек ограничивает дальнейшее накопление",
+            "en": "Occupied bank slots limit further accumulation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте сравнивать хранение, продажу и переработку без лишних переходов.",
+        "en": "Let players compare storage, sale and recycling without unnecessary navigation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Melvor Idle",
+        "url": "https://store.steampowered.com/app/1267910/"
+      }
+    ]
   }
 }
