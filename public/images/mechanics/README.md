@@ -20,7 +20,8 @@ The card collection uses compressed WebP derivatives of publisher/developer scre
 source page, dimensions, authors and rights in `src/data/mechanic-previews.json`.
 Published files are resized without upscaling to at most 1440 pixels on the long
 edge and compressed to at most 250 KiB. Original URLs retain source provenance.
-Crops and contextual markers are HTML/CSS overlays. The separately documented
+Display crops and contextual markers are HTML/CSS overlays; source-extraction
+crops are documented separately below. The separately documented
 NetHack and 2048 captures below retain their own free-software licenses.
 
 | Files | Game / credit | Publisher or developer source |
@@ -343,3 +344,38 @@ GNU Free Documentation License 1.3 or later; a complete copy is included in
 [`krita-documentation-license.txt`](krita-documentation-license.txt). The image was
 converted to WebP without changing its content. Its own license is retained and
 is separate from the portal's MIT and CC BY 4.0 licenses.
+
+## Audio and sensor examples
+
+`sensor-*.webp` uses attributed developer-distributed App Store screenshots of
+phyphox, Physics Toolbox Magnetometer, GuitarTuna, Simply Sing, Scream Go Hero,
+One Hand Clapping, Smule, Shazam, Dolby On, Candle and Morse-It. Every selected
+image retains its exact source URL and publisher in card metadata. Examples
+show the visible control or measurement; they do not imply that every proposed
+combination in a design family is already implemented by the pictured app.
+Design scenarios and research prototypes are identified in the text.
+
+The phyphox Sonar frame is at 185 seconds of the developers' demonstration
+<https://www.youtube.com/watch?v=Ebj3v701HE0>. The Mark of the Ninja frame is at
+50 seconds of Klei's Remastered trailer. The Ōkami brush attack is at 71.5 seconds
+of CAPCOM's launch trailer. Steam trailer sources remain in each card. Videos
+are research sources; only compressed still frames are shipped.
+
+`sensor-siri-ios5-timer.webp` is a historical screenshot from Apple's iOS 5 user
+guide, printed page 53. It demonstrates a recognized timer command and does not
+present the historical interface as the current Siri UI.
+
+`sensor-magboard-photo.webp` is the authors' photograph from PDF page 2 of
+[MagBoard](https://arxiv.org/abs/1605.00284), credited to Heba Abdelnasser,
+Moustafa Youssef and Khaled A. Harras. It shows the printed input overlay and
+calculator result. Third-party application imagery retains its own rights.
+
+`sensor-magpie-figure1.webp` reproduces Figure 1 from the authors'
+[MagPie paper](https://ixlab.cau.ac.kr/papers/magpie.pdf), CHI 2025. Authors:
+Insu Kim, Suhyeon Shin, Jaemin Choi, Junseob Kim, Junhyub Lee, Sangeun Oh,
+Eunji Park and Hyosu Kim. The figure is licensed under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), separately from
+the portal licenses. It was cropped from the PDF to the figure and converted
+to WebP. The figure's application scenarios retain their original labels;
+Stardew Valley imagery remains © ConcernedApe. The card describes a research
+prototype and a proposed gamepad scenario.

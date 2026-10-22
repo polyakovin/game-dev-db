@@ -55091,47 +55091,3019 @@
       "en": "Multiple players and communication"
     },
     "description": {
-      "ru": "Микрофон передаёт речь между участниками или распределяет звуковые роли. Игра использует согласование действий через разговор.",
-      "en": "A microphone carries speech between participants or assigns audio roles. Conversation coordinates their actions."
+      "ru": "Микрофон записывает голос участника для совместного исполнения или общения. Роли, очередность и согласование определяют общий результат.",
+      "en": "The microphone captures a participant’s voice for shared performance or communication. Roles, turn-taking and coordination shape the result."
     },
     "image": {
-      "src": "images/mechanics/adventure-keep-talking-00.webp",
-      "width": 1440,
-      "height": 810,
-      "game": "Keep Talking and Nobody Explodes",
-      "sourceUrl": "https://store.steampowered.com/app/341800/",
-      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/ss_55f22f9996c327c281d241ed09d43c74337d7e30.1920x1080.jpg?t=1699020889",
-      "credit": "Steel Crate Games",
-      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "src": "images/mechanics/sensor-smule-5.webp",
+      "width": 810,
+      "height": 1440,
+      "crop": {
+        "x": 32,
+        "y": 345,
+        "width": 745,
+        "height": 1065
+      },
+      "game": "Smule: Sing, Duet & Record",
+      "sourceUrl": "https://apps.apple.com/us/app/smule-sing-duet-record/id509993510?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/ac/e3/d9ace348-46d0-cd26-6439-dfaa54125e5b/90e8fece-4cdd-47b0-b047-ac865836d78e_Iphone_5_U002c5__6.png/1280x1440bb.jpg",
+      "credit": "Smule",
+      "rights": "© Smule. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
       "caption": {
-        "ru": "Сапёр видит модули, которые нужно описать эксперту",
-        "en": "The defuser sees modules that must be described to an expert"
+        "ru": "Smule: выбор дуэта с другим исполнителем",
+        "en": "Smule: choosing a duet with another performer"
       },
       "alt": {
-        "ru": "Сапёр видит модули, которые нужно описать эксперту",
-        "en": "The defuser sees modules that must be described to an expert"
+        "ru": "Smule: выбор дуэта с другим исполнителем",
+        "en": "Smule: choosing a duet with another performer"
       },
       "markers": [
         {
           "x": 51,
-          "y": 50,
+          "y": 53,
           "label": {
-            "ru": "Модули требуют обмена точными сведениями",
-            "en": "Modules require exchanging precise information"
+            "ru": "Два исполнителя объединены в предложение дуэта",
+            "en": "Two performers are paired in a duet entry"
           }
         }
       ]
     },
     "tips": [
       {
-        "ru": "Предусматривайте локальное отключение микрофона и текстовую альтернативу.",
-        "en": "Provide local microphone muting and a text alternative."
+        "ru": "Различайте живое одновременное исполнение и добавление партии к готовой записи.",
+        "en": "Distinguish live simultaneous performance from adding a part to an existing recording."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Smule: Sing, Duet & Record",
+        "url": "https://apps.apple.com/us/app/smule-sing-duet-record/id509993510?uo=4"
+      }
+    ]
+  },
+  "drawing--family-g05": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Линия как логическое решение",
+      "en": "Line as a logical solution"
+    },
+    "description": {
+      "ru": "Решением служат геометрические или топологические свойства нарисованной линии.",
+      "en": "The solution is the geometric or topological properties of the drawn line."
+    },
+    "image": {
+      "src": "images/mechanics/interface-lyne-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "LYNE",
+      "sourceUrl": "https://store.steampowered.com/app/266010/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/266010/ss_a29f964ec36af3fedfad85050e565a2fb493c425.1920x1080.jpg?t=1724979609",
+      "credit": "Thomas Bowker / Thomas Bowker",
+      "rights": "© Thomas Bowker / Thomas Bowker. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "LYNE: линии соединяют одинаковые фигуры через узлы поля",
+        "en": "LYNE: lines connect matching shapes through the board’s nodes"
+      },
+      "alt": {
+        "ru": "LYNE: линии соединяют одинаковые фигуры через узлы поля",
+        "en": "LYNE: lines connect matching shapes through the board’s nodes"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 51,
+          "label": {
+            "ru": "Линия должна удовлетворять ограничениям соединения узлов",
+            "en": "The line must satisfy the node-connection constraints"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте условие прохождения линии и точность движения руки.",
+        "en": "Distinguish the line’s logical constraints from hand precision."
+      }
+    ],
+    "examples": [
+      {
+        "title": "LYNE",
+        "url": "https://store.steampowered.com/app/266010/"
+      }
+    ]
+  },
+  "drawing--family-g07": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рисунок как маршрут и управление",
+      "en": "Drawing as a route and control"
+    },
+    "description": {
+      "ru": "Линия задаёт движение существа, транспорта, снаряда или исполнителя.",
+      "en": "The line defines the movement of a creature, vehicle, projectile or performer."
+    },
+    "image": {
+      "src": "images/mechanics/interface-line-rider.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 530,
+        "y": 300,
+        "width": 540,
+        "height": 250
+      },
+      "game": "Line Rider",
+      "sourceUrl": "https://www.linerider.com/",
+      "originalUrl": "https://www.linerider.com/",
+      "credit": "Boštjan Čadež; original browser capture, 2026-10-22",
+      "rights": "© Boštjan Čadež. Actual unsigned Line Rider session, version 2250.0. The route was drawn through normal controls and the simulation paused at frame 28. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Line Rider: персонаж едет по нарисованному склону",
+        "en": "Line Rider: the rider travels along a drawn slope"
+      },
+      "alt": {
+        "ru": "Line Rider: персонаж едет по нарисованному склону",
+        "en": "Line Rider: the rider travels along a drawn slope"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 57,
+          "label": {
+            "ru": "Положение линии определяет поверхность движения саней",
+            "en": "The drawn line determines the sled’s riding surface"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте быстро проверить маршрут движением и исправить его.",
+        "en": "Allow quick simulation of a route and easy revision."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Line Rider",
+        "url": "https://www.linerider.com/"
+      }
+    ]
+  },
+  "drawing--family-g10": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Захват и раздел пространства",
+      "en": "Capturing and dividing space"
+    },
+    "description": {
+      "ru": "Нарисованная граница меняет принадлежность, доступность или состояние области.",
+      "en": "A drawn boundary changes the ownership, accessibility, or state of an area."
+    },
+    "image": {
+      "src": "images/mechanics/interface-qix.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 416,
+        "y": 0,
+        "width": 608,
+        "height": 810
+      },
+      "game": "QIX",
+      "sourceUrl": "https://www.arcadearchives.com/en/title/aca-198/",
+      "originalUrl": "https://www.arcadearchives.com/wp/wp-content/uploads/2024/12/aca-m2ziquck-ss02.png",
+      "credit": "TAITO / HAMSTER",
+      "rights": "© TAITO / HAMSTER Corporation. Publisher-distributed screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "QIX: замкнутые области входят в процент захваченного поля",
+        "en": "QIX: enclosed areas contribute to the claimed percentage"
+      },
+      "alt": {
+        "ru": "QIX: замкнутые области входят в процент захваченного поля",
+        "en": "QIX: enclosed areas contribute to the claimed percentage"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 35,
+          "label": {
+            "ru": "Закрашенные области уже захвачены",
+            "en": "Colored areas have been claimed"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте замыкание границы и область, которую она изменит.",
+        "en": "Show boundary closure and the area it will change."
+      }
+    ],
+    "examples": [
+      {
+        "title": "QIX",
+        "url": "https://www.arcadearchives.com/en/title/aca-198/"
+      }
+    ]
+  },
+  "drawing--family-g11": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бой и защита штрихами",
+      "en": "Combat and defense with strokes"
+    },
+    "description": {
+      "ru": "Положение, направление или завершение линии непосредственно определяют боевое действие.",
+      "en": "The position, direction or completion of the line directly determines the combat action."
+    },
+    "image": {
+      "src": "images/mechanics/interface-okami-power-slash.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "ŌKAMI HD",
+      "sourceUrl": "https://store.steampowered.com/app/587620/",
+      "originalUrl": "https://video.akamai.steamstatic.com/store_trailers/587620/137524/9e78a2260313db4692ef61246ad27ddae9b07ad7/1750556998/hls_264_master.m3u8?t=1513107712",
+      "sourceFrameSeconds": 71.5,
+      "credit": "CAPCOM",
+      "rights": "© CAPCOM. Frame at 71.5 seconds of the publisher’s launch trailer, showing the Celestial Brush stroke in combat. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ōkami: штрих Небесной кисти задаёт удар по противникам",
+        "en": "Ōkami: a Celestial Brush stroke defines an attack against enemies"
+      },
+      "alt": {
+        "ru": "Ōkami: штрих Небесной кисти задаёт удар по противникам",
+        "en": "Ōkami: a Celestial Brush stroke defines an attack against enemies"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 56,
+          "label": {
+            "ru": "Штрих в режиме кисти проходит через область боя",
+            "en": "The brush-mode stroke crosses the combat area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте понять, какие цели пересекает штрих и когда действие подтверждено.",
+        "en": "Show which targets the stroke crosses and when the action is confirmed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "ŌKAMI HD",
+        "url": "https://store.steampowered.com/app/587620/"
+      }
+    ]
+  },
+  "phone-magnetometer--family-01": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Направление телефона",
+      "en": "Phone heading"
+    },
+    "description": {
+      "ru": "Азимут телефона можно связать с направлением прицела, сектором или маршрутом. Магнитный и географический север требуют разных поправок.",
+      "en": "Phone heading can control an aim direction, sector or route. Magnetic and geographic north require different corrections."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-2.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/58/b1/a958b1b9-4cea-7513-75d5-8e6283b73916/03-find-north.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: компас с переключением Magnetic / True; выбран True",
+        "en": "Physics Toolbox: a Magnetic / True compass with True selected"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: компас с переключением Magnetic / True; выбран True",
+        "en": "Physics Toolbox: a Magnetic / True compass with True selected"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 38,
+          "label": {
+            "ru": "317°: азимут в выбранном режиме географического севера",
+            "en": "317°: heading in the selected true-north mode"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для устойчивого азимута учитывайте наклон, калибровку и помехи.",
+        "en": "Account for tilt, calibration and interference when estimating heading."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-02": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повороты во времени",
+      "en": "Turns over time"
+    },
+    "description": {
+      "ru": "Изменение направления или компонентов поля во времени может задавать поворот, последовательность или ритмический жест в игровом сценарии.",
+      "en": "Changes in heading or field components over time can define a turn, sequence or rhythmic gesture in a game scenario."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/3d/af/0f3daf9c-4f2c-17c7-83d3-c4ae62057601/01-magnetometer.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: три компонента поля и общий модуль во времени",
+        "en": "Physics Toolbox: three field components and total magnitude over time"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: три компонента поля и общий модуль во времени",
+        "en": "Physics Toolbox: three field components and total magnitude over time"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 67,
+          "label": {
+            "ru": "Кривые показывают изменение измерений во времени",
+            "en": "Curves show measurements changing over time"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сравнивайте изменение с исходным положением и учитывайте внешние магнитные поля.",
+        "en": "Compare changes with a baseline and account for external magnetic fields."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-03": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Магнит как кнопка",
+      "en": "A magnet as a button"
+    },
+    "description": {
+      "ru": "Приближение магнита меняет поле. В сценарии порог изменения можно использовать как нажатие, а удаление магнита как отпускание.",
+      "en": "Bringing a magnet near changes the field. A scenario can map a threshold crossing to a press and its removal to a release."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-3.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/23/58/7623583b-a84f-fd15-b138-fa78cf800baa/04-record-lab-data.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 64,
+          "label": {
+            "ru": "Пик поля может служить входным сигналом порогового действия",
+            "en": "A field peak can supply a threshold-action input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Задавайте разные пороги включения и выключения, чтобы уменьшить дребезг.",
+        "en": "Use different activation and release thresholds to reduce chatter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-04": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сила поля как аналоговый ввод",
+      "en": "Field strength as analog input"
+    },
+    "description": {
+      "ru": "Измеренная сила поля может непрерывно управлять параметром. Расстояние до конкретного магнита оценивают только после калибровки его поля.",
+      "en": "Measured field strength can continuously control a parameter. Distance to a particular magnet requires calibration of that magnet’s field."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-1.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/f5/50/8ff550e6-5be0-28e2-4866-fa592a510357/02-measure-3-axes.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: численное показание поля и значения по трём осям",
+        "en": "Physics Toolbox: total field strength and three-axis readings"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: численное показание поля и значения по трём осям",
+        "en": "Physics Toolbox: total field strength and three-axis readings"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 57,
+          "label": {
+            "ru": "50,54 мкТ: измеренная величина, которую можно связать с параметром",
+            "en": "50.54 μT: a measurement that can be mapped to a parameter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не приравнивайте величину поля к универсальному расстоянию до любого предмета.",
+        "en": "Do not treat field strength as a universal distance to any object."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-05": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вектор и полярность",
+      "en": "Vector and polarity"
+    },
+    "description": {
+      "ru": "Компоненты магнитного поля могут задавать направление или различать положения магнита. Для сравнения знаков нужно сохранять систему координат телефона.",
+      "en": "Field components can define direction or distinguish magnet positions. Comparing signs requires a consistent phone coordinate frame."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0f/3d/af/0f3daf9c-4f2c-17c7-83d3-c4ae62057601/01-magnetometer.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: три компонента поля и общий модуль во времени",
+        "en": "Physics Toolbox: three field components and total magnitude over time"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: три компонента поля и общий модуль во времени",
+        "en": "Physics Toolbox: three field components and total magnitude over time"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 67,
+          "label": {
+            "ru": "Кривые показывают изменение измерений во времени",
+            "en": "Curves show measurements changing over time"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сначала вычитайте фоновое поле и фиксируйте ориентацию телефона.",
+        "en": "Subtract the background field and keep phone orientation fixed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-06": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Жесты магнитом",
+      "en": "Magnet gestures"
+    },
+    "description": {
+      "ru": "Сценарий может различать магнитные жесты по последовательности пиков, длительности и изменениям компонентов поля. Прибор показывает исходный сигнал.",
+      "en": "A scenario can distinguish magnet gestures through peak sequences, duration and field-component changes. The instrument shows the input signal."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-3.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/23/58/7623583b-a84f-fd15-b138-fa78cf800baa/04-record-lab-data.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 64,
+          "label": {
+            "ru": "Пик поля может служить входным сигналом порогового действия",
+            "en": "A field peak can supply a threshold-action input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте жесты на разных расстояниях и отделяйте их от случайного движения телефона.",
+        "en": "Test gestures at several distances and separate them from accidental phone motion."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-09": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск по изменениям поля",
+      "en": "Searching through field changes"
+    },
+    "description": {
+      "ru": "Игрок может искать источник магнитного поля, перемещая телефон и сравнивая измерения. Изменение сигнала направляет дальнейший поиск.",
+      "en": "The player can locate a magnetic-field source by moving the phone and comparing readings. Signal changes guide further searching."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-3.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/23/58/7623583b-a84f-fd15-b138-fa78cf800baa/04-record-lab-data.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 64,
+          "label": {
+            "ru": "Пик поля может служить входным сигналом порогового действия",
+            "en": "A field peak can supply a threshold-action input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Магнитометр измеряет поле и не является универсальным детектором любого металла.",
+        "en": "A magnetometer measures fields and does not detect every kind of metal."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-10": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сочетание с другими каналами",
+      "en": "Combining input channels"
+    },
+    "description": {
+      "ru": "Магнитное направление можно дополнить наклоном, касанием или местоположением. Компас True показывает пример поправки к географическому северу.",
+      "en": "Magnetic heading can be combined with tilt, touch or location. The True compass illustrates correction to geographic north."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-2.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a9/58/b1/a958b1b9-4cea-7513-75d5-8e6283b73916/03-find-north.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: компас с переключением Magnetic / True; выбран True",
+        "en": "Physics Toolbox: a Magnetic / True compass with True selected"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: компас с переключением Magnetic / True; выбран True",
+        "en": "Physics Toolbox: a Magnetic / True compass with True selected"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 38,
+          "label": {
+            "ru": "317°: азимут в выбранном режиме географического севера",
+            "en": "317°: heading in the selected true-north mode"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте время измерений и проверяйте доступность каждого канала.",
+        "en": "Align measurement timing and check the availability of every input channel."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-12": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Учебные и творческие сценарии",
+      "en": "Learning and creative scenarios"
+    },
+    "description": {
+      "ru": "Измерения магнитного поля можно записывать, сравнивать и превращать в учебную задачу или выразительный параметр. Условия опыта сохраняют вместе с данными.",
+      "en": "Magnetic readings can be recorded, compared and used in a learning task or expressive parameter. Keep experiment conditions alongside the data."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-3.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/23/58/7623583b-a84f-fd15-b138-fa78cf800baa/04-record-lab-data.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: запись резких изменений магнитного поля",
+        "en": "Physics Toolbox: a recording of sharp magnetic-field changes"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 64,
+          "label": {
+            "ru": "Пик поля может служить входным сигналом порогового действия",
+            "en": "A field peak can supply a threshold-action input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте измерение прибора и вывод, который делает участник опыта.",
+        "en": "Distinguish the instrument’s reading from the experimenter’s conclusion."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-01": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прямые голосовые команды",
+      "en": "Direct voice commands"
+    },
+    "description": {
+      "ru": "Игрок произносит команду, указывает действие и цель. Игра распознаёт намерение, выполняет приказ и показывает результат.",
+      "en": "The player speaks a command specifying an action and target. The game recognizes the intent, executes the order and shows the result."
+    },
+    "image": {
+      "src": "images/mechanics/interface-there-came-echo-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "There Came an Echo",
+      "sourceUrl": "https://store.steampowered.com/app/319740/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/319740/ss_61fbbe3a716ef02ceb0e802efa846a20b39d8a2c.1920x1080.jpg?t=1568690498",
+      "credit": "Iridium Studios / Iridium Studios",
+      "rights": "© Iridium Studios / Iridium Studios. Publisher-distributed Steam screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "There Came an Echo: приказы отряду и ориентир ALPHA 5",
+        "en": "There Came an Echo: squad orders and the ALPHA 5 waypoint"
+      },
+      "alt": {
+        "ru": "There Came an Echo: приказы отряду и ориентир ALPHA 5",
+        "en": "There Came an Echo: squad orders and the ALPHA 5 waypoint"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 45,
+          "label": {
+            "ru": "MOVE TO ALPHA 5 задаёт действие и именованную цель",
+            "en": "MOVE TO ALPHA 5 specifies an action and a named target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Подтверждайте распознанную команду до опасного или необратимого действия.",
+        "en": "Confirm recognized commands before dangerous or irreversible actions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "There Came an Echo",
+        "url": "https://store.steampowered.com/app/319740/"
+      }
+    ]
+  },
+  "voice-audio--family-02": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Командование и делегирование",
+      "en": "Commanding and delegation"
+    },
+    "description": {
+      "ru": "Голосовой приказ задаёт цель другим персонажам или агентам. Игрок распределяет задачи, выбирает исполнителей и согласует момент действий.",
+      "en": "A spoken order assigns a goal to other characters or agents. The player allocates tasks, selects executors and coordinates timing."
+    },
+    "image": {
+      "src": "images/mechanics/interface-there-came-echo-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "There Came an Echo",
+      "sourceUrl": "https://store.steampowered.com/app/319740/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/319740/ss_61fbbe3a716ef02ceb0e802efa846a20b39d8a2c.1920x1080.jpg?t=1568690498",
+      "credit": "Iridium Studios / Iridium Studios",
+      "rights": "© Iridium Studios / Iridium Studios. Publisher-distributed Steam screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "There Came an Echo: приказы отряду и ориентир ALPHA 5",
+        "en": "There Came an Echo: squad orders and the ALPHA 5 waypoint"
+      },
+      "alt": {
+        "ru": "There Came an Echo: приказы отряду и ориентир ALPHA 5",
+        "en": "There Came an Echo: squad orders and the ALPHA 5 waypoint"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 45,
+          "label": {
+            "ru": "MOVE TO ALPHA 5 задаёт действие и именованную цель",
+            "en": "MOVE TO ALPHA 5 specifies an action and a named target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отображайте исполнителя и статус приказа отдельно для каждого участника.",
+        "en": "Show each participant’s executor and order status separately."
+      }
+    ],
+    "examples": [
+      {
+        "title": "There Came an Echo",
+        "url": "https://store.steampowered.com/app/319740/"
+      }
+    ]
+  },
+  "voice-audio--family-04": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Переговоры, убеждение и обман",
+      "en": "Negotiation, persuasion and deception"
+    },
+    "description": {
+      "ru": "Содержание произнесённой реплики используется, чтобы повлиять на собеседника. Игрок учитывает его знания, цели и возможную реакцию.",
+      "en": "A spoken line’s content is used to influence another speaker. The player considers their knowledge, goals and possible response."
+    },
+    "image": {
+      "src": "images/mechanics/dialogue-vaudeville-01.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 488,
+        "y": 113,
+        "width": 952,
+        "height": 697
+      },
+      "game": "Vaudeville",
+      "sourceUrl": "https://store.steampowered.com/app/2240920/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2240920/ss_31ae0ee63bba90fbc7756f9f8351eee424406ff8.1920x1080.jpg?t=1770214371",
+      "credit": "Bumblebee Studios",
+      "rights": "Game imagery © its respective rights holders. Publisher-distributed Steam screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Vaudeville: свободные реплики NPC; поддерживаются речь и текст",
+        "en": "Vaudeville: free-form NPC dialogue supports speech and text"
+      },
+      "alt": {
+        "ru": "Vaudeville: свободные реплики NPC; поддерживаются речь и текст",
+        "en": "Vaudeville: free-form NPC dialogue supports speech and text"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 77,
+          "label": {
+            "ru": "NPC формирует ответ в истории разговора",
+            "en": "The NPC generates a reply in the conversation history"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте непонятое распознавателем высказывание и осознанный отказ персонажа.",
+        "en": "Distinguish recognition failure from a character’s deliberate refusal."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Vaudeville",
+        "url": "https://store.steampowered.com/app/2240920/"
+      }
+    ]
+  },
+  "voice-audio--family-06": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Громкость и сила звука",
+      "en": "Loudness and sound intensity"
+    },
+    "description": {
+      "ru": "Уровень звука управляет действием. Тихий и громкий голос могут задавать разные режимы, скорость или величину движения.",
+      "en": "Sound level controls an action. Quiet and loud voices can select different modes, speeds or movement magnitudes."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-scream-go-0.webp",
+      "width": 810,
+      "height": 1440,
+      "game": "Scream Go Hero",
+      "sourceUrl": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/55/be/ca/55becae8-2635-2e86-cea6-491bb90c2418/mzl.erwphtle.jpg/1280x1440bb.jpg",
+      "credit": "Ketchapp",
+      "rights": "© Ketchapp. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "alt": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 50,
+          "label": {
+            "ru": "Прыжок между платформами управляется уровнем голоса",
+            "en": "Voice level controls the jump between platforms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Настраивайте чувствительность под микрофон и условия помещения.",
+        "en": "Calibrate sensitivity for the microphone and room."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Scream Go Hero",
+        "url": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-07": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Высота тона и мелодический контур",
+      "en": "Pitch and melodic contour"
+    },
+    "description": {
+      "ru": "Игрок воспроизводит нужную высоту звука или меняет её по заданному контуру. Интерфейс показывает отклонение от цели.",
+      "en": "The player produces a target pitch or follows a pitch contour. The interface shows deviation from the target."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-guitar-tuna-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 405,
+        "width": 540,
+        "height": 810
+      },
+      "game": "GuitarTuna: Tune & Play Guitar",
+      "sourceUrl": "https://apps.apple.com/us/app/guitartuna-tune-play-guitar/id527588389?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/aa/de/1eaade13-411b-988d-9108-157363db920b/b52ff2a0-b0be-4904-b573-3b8c2c27d333_App_store_GT_9x16_1242x2208_3.png/720x1560bb.jpg",
+      "credit": "Yousician Ltd",
+      "rights": "© Yousician Ltd. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "GuitarTuna: отклонение высоты принятого звука от целевой ноты",
+        "en": "GuitarTuna: the received pitch’s deviation from the target note"
+      },
+      "alt": {
+        "ru": "GuitarTuna: отклонение высоты принятого звука от целевой ноты",
+        "en": "GuitarTuna: the received pitch’s deviation from the target note"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 58,
+          "label": {
+            "ru": "Индикатор −5 и Tune up показывают направление коррекции",
+            "en": "The −5 reading and Tune up indicate the correction direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выбирайте доступный диапазон и разрешайте его индивидуальную настройку.",
+        "en": "Choose a comfortable range and allow individual adjustment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "GuitarTuna: Tune & Play Guitar",
+        "url": "https://apps.apple.com/us/app/guitartuna-tune-play-guitar/id527588389?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-08": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Длительность, темп и паузы",
+      "en": "Duration, tempo and pauses"
+    },
+    "description": {
+      "ru": "Правило учитывает начало, длительность и промежутки между звуками. Исполнение должно совпасть с нужным временным рисунком.",
+      "en": "Rules consider sound onset, duration and gaps. Performance must match the required timing pattern."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-1.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f1/c4/ab/f1c4abe8-d24a-e0d7-173d-b2285473fa1a/60ee6b32-9e9f-4eca-ac38-820ffcaaa605_OneHandClapping_Screenshot_02_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 30,
+          "label": {
+            "ru": "Последовательность светящихся точек задаёт контур исполнения",
+            "en": "The glowing points define the performance contour"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте ошибку времени и ошибку высоты тона.",
+        "en": "Distinguish timing errors from pitch errors."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-09": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тембр, артикуляция и имитация",
+      "en": "Timbre, articulation and imitation"
+    },
+    "description": {
+      "ru": "Важна форма звучания: спектральный состав, артикуляция или узнаваемый звуковой рисунок. Одной громкости или высоты недостаточно.",
+      "en": "Sound shape matters: spectral content, articulation or a recognizable acoustic pattern. Loudness or pitch alone is not enough."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-3.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 88,
+        "width": 663,
+        "height": 867
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/4c/8c/974c8c83-6b57-a61d-6f00-26079b8534e6/iphone-04-audio-spectrum.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "alt": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 43,
+          "label": {
+            "ru": "Полосы отражают распределение энергии по частотам",
+            "en": "Bands represent energy distributed across frequencies"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте устойчивость признаков к разным голосам и микрофонам.",
+        "en": "Check feature robustness across voices and microphones."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-10": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Неречевые звуки у микрофона",
+      "en": "Nonverbal microphone sounds"
+    },
+    "description": {
+      "ru": "Микрофон может принимать хлопок, гудение, щелчок или другой неречевой звук. Правило связывает его признаки с действием.",
+      "en": "A microphone can receive a clap, hum, click or another nonverbal sound. Rules map its features to an action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-scream-go-0.webp",
+      "width": 810,
+      "height": 1440,
+      "game": "Scream Go Hero",
+      "sourceUrl": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/55/be/ca/55becae8-2635-2e86-cea6-491bb90c2418/mzl.erwphtle.jpg/1280x1440bb.jpg",
+      "credit": "Ketchapp",
+      "rights": "© Ketchapp. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "alt": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 50,
+          "label": {
+            "ru": "Прыжок между платформами управляется уровнем голоса",
+            "en": "Voice level controls the jump between platforms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не требуйте конкретное слово, если действие зависит только от уровня звука.",
+        "en": "Do not require a specific word when only sound level matters."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Scream Go Hero",
+        "url": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-11": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пение и музыкальное исполнение",
+      "en": "Singing and musical performance"
+    },
+    "description": {
+      "ru": "Игрок исполняет музыкальный материал, соотнося высоту, длительность и ритм звуков с образцом или собственной партией.",
+      "en": "The player performs music by matching pitch, duration and rhythm to a model or an assigned part."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-simply-sing-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 592,
+        "width": 665,
+        "height": 471
+      },
+      "game": "Simply Sing: My Singing App",
+      "sourceUrl": "https://apps.apple.com/us/app/simply-sing-my-singing-app/id1592900217?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/18/5a/d3185ac5-d85f-6939-c048-38ade193b110/7.png/720x1560bb.jpg",
+      "credit": "Simply Ltd",
+      "rights": "© Simply Ltd. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Simply Sing: ноты и линия голоса во время исполнения песни",
+        "en": "Simply Sing: notes and a voice trace during song performance"
+      },
+      "alt": {
+        "ru": "Simply Sing: ноты и линия голоса во время исполнения песни",
+        "en": "Simply Sing: notes and a voice trace during song performance"
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 57,
+          "label": {
+            "ru": "Целевая нота и линия исполнения дают обратную связь",
+            "en": "The target note and performance trace provide feedback"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отдельно показывайте ошибки интонации и ритма.",
+        "en": "Show pitch and rhythm errors separately."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Simply Sing: My Singing App",
+        "url": "https://apps.apple.com/us/app/simply-sing-my-singing-app/id1592900217?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-12": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Локализация источника звука",
+      "en": "Sound-source localization"
+    },
+    "description": {
+      "ru": "Игрок определяет направление и движение источника по пространственному звучанию. Правильная оценка положения помогает выбрать действие.",
+      "en": "The player locates a source and its movement through spatial sound. Estimating its position helps select an action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-blind-drive-3.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Blind Drive",
+      "sourceUrl": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/49/64/a2/4964a27a-e780-a9da-8191-19c8a4ba92f9/9636f08b-efd0-4ea7-b5e6-2b0cbb80d34c_3.jpg/1440x1080bb.jpg",
+      "credit": "Giori Politi",
+      "rights": "© Giori Politi. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "alt": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Дорожную ситуацию нужно восстанавливать по звучанию",
+            "en": "The road situation must be reconstructed through sound"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте проверить каналы и предусматривайте альтернативу стереослуху.",
+        "en": "Offer channel testing and an alternative to stereo hearing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blind Drive",
+        "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-13": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Навигация и пространственная память",
+      "en": "Navigation and spatial memory"
+    },
+    "description": {
+      "ru": "Звуковые ориентиры помогают представить пространство, запомнить путь и провести персонажа или другого участника к цели.",
+      "en": "Audio landmarks help build a spatial model, remember a route and guide a character or another participant to a goal."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-blind-drive-3.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Blind Drive",
+      "sourceUrl": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/49/64/a2/4964a27a-e780-a9da-8191-19c8a4ba92f9/9636f08b-efd0-4ea7-b5e6-2b0cbb80d34c_3.jpg/1440x1080bb.jpg",
+      "credit": "Giori Politi",
+      "rights": "© Giori Politi. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "alt": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Дорожную ситуацию нужно восстанавливать по звучанию",
+            "en": "The road situation must be reconstructed through sound"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте ключевые ориентиры различимыми и повторяемыми.",
+        "en": "Make key landmarks distinguishable and repeatable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blind Drive",
+        "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-14": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Реакция, тайминг и предсказание",
+      "en": "Reaction, timing and prediction"
+    },
+    "description": {
+      "ru": "Игрок распознаёт звуковой сигнал и выполняет действие в нужный момент. Повторяющийся рисунок позволяет предсказывать следующий сигнал.",
+      "en": "The player recognizes a sound cue and acts at the right moment. Repeating patterns allow anticipation of the next cue."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-1.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f1/c4/ab/f1c4abe8-d24a-e0d7-173d-b2285473fa1a/60ee6b32-9e9f-4eca-ac38-820ffcaaa605_OneHandClapping_Screenshot_02_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 30,
+          "label": {
+            "ru": "Последовательность светящихся точек задаёт контур исполнения",
+            "en": "The glowing points define the performance contour"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте задержку аудио и ввода на целевом устройстве.",
+        "en": "Check audio and input latency on the target device."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-16": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Избирательное слуховое внимание",
+      "en": "Selective auditory attention"
+    },
+    "description": {
+      "ru": "Игрок выделяет важный звуковой поток среди конкурирующих: угрозу, речь или сигнал задачи. Выбор определяет дальнейшее действие.",
+      "en": "The player picks out a relevant stream among competing sounds, such as a threat, speech or task cue, to choose the next action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-blind-drive-3.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Blind Drive",
+      "sourceUrl": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/49/64/a2/4964a27a-e780-a9da-8191-19c8a4ba92f9/9636f08b-efd0-4ea7-b5e6-2b0cbb80d34c_3.jpg/1440x1080bb.jpg",
+      "credit": "Giori Politi",
+      "rights": "© Giori Politi. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "alt": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Дорожную ситуацию нужно восстанавливать по звучанию",
+            "en": "The road situation must be reconstructed through sound"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте разборчивость критического сигнала и регулируйте уровни потоков.",
+        "en": "Keep critical cues intelligible and let stream levels be adjusted."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blind Drive",
+        "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-19": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Звуковые коды и скрытые сообщения",
+      "en": "Audio codes and hidden messages"
+    },
+    "description": {
+      "ru": "Игрок обнаруживает правило кодирования и переводит звуковую последовательность в сообщение, команду или настройку устройства.",
+      "en": "The player discovers a coding rule and translates a sound sequence into a message, command or device setting."
+    },
+    "image": {
+      "src": "images/mechanics/interface-keep-talking-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Keep Talking and Nobody Explodes",
+      "sourceUrl": "https://store.steampowered.com/app/341800/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/341800/ss_11c9963bc5d93a2c31857c94760305208fc9b023.1920x1080.jpg?t=1699020889",
+      "credit": "Steel Crate Games / Steel Crate Games",
+      "rights": "© Steel Crate Games / Steel Crate Games. Publisher-distributed Steam screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Keep Talking: модуль Морзе с настройкой частоты ответа",
+        "en": "Keep Talking: a Morse module with a response-frequency control"
+      },
+      "alt": {
+        "ru": "Keep Talking: модуль Морзе с настройкой частоты ответа",
+        "en": "Keep Talking: a Morse module with a response-frequency control"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 48,
+          "label": {
+            "ru": "После расшифровки выбирают частоту и отправляют ответ кнопкой TX",
+            "en": "Decoding determines the frequency; TX transmits the response"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте повторить сигнал и свериться с доступным правилом кода.",
+        "en": "Allow signal replay and consultation of the coding rule."
       }
     ],
     "examples": [
       {
         "title": "Keep Talking and Nobody Explodes",
         "url": "https://store.steampowered.com/app/341800/"
+      }
+    ]
+  },
+  "voice-audio--family-20": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Запись, монтаж и воспроизведение",
+      "en": "Recording, editing and playback"
+    },
+    "description": {
+      "ru": "Игрок записывает, выбирает или преобразует звук. Полученный материал используется как сообщение, доказательство или часть творческой задачи.",
+      "en": "The player records, selects or transforms sound. The result serves as a message, evidence or part of a creative task."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-dolby-on-3.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 110,
+        "y": 428,
+        "width": 500,
+        "height": 820
+      },
+      "game": "Dolby On: Record Audio & Video",
+      "sourceUrl": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/ac/1c/d5/ac1cd50f-7217-8033-3aee-371e6a670733/03831f86-bfc2-4b4a-99aa-f8379373726b_iPhone_1242_x_2208_screen_04.jpg/720x1560bb.jpg",
+      "credit": "Dolby Laboratories",
+      "rights": "© Dolby Laboratories. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Dolby On: инструменты обработки и воспроизведения записи",
+        "en": "Dolby On: recording processing and playback tools"
+      },
+      "alt": {
+        "ru": "Dolby On: инструменты обработки и воспроизведения записи",
+        "en": "Dolby On: recording processing and playback tools"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 80,
+          "label": {
+            "ru": "Инструменты изменяют звучание сохранённой записи",
+            "en": "Tools modify the sound of the saved recording"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте оригинальную запись и возможность отмены обработки.",
+        "en": "Preserve the original recording and allow processing to be undone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dolby On: Record Audio & Video",
+        "url": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-21": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Излучение звука и эхолокация",
+      "en": "Sound emission and echolocation"
+    },
+    "description": {
+      "ru": "Приложение излучает звук и анализирует его отражение. Задержка и форма сигнала помогают оценить расстояние или свойства окружения.",
+      "en": "An app emits sound and analyzes reflections. Signal delay and shape help estimate distance or properties of the environment."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-sonar-185.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "phyphox",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0",
+      "sourceFrameSeconds": 185,
+      "credit": "RWTH Aachen University / phyphox",
+      "rights": "© RWTH Aachen University / phyphox. Frame from the developers’ sonar demonstration. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "alt": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 47,
+          "label": {
+            "ru": "Пик отражения сопоставлен с расстоянием в сантиметрах",
+            "en": "The echo peak is mapped to distance in centimeters"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте отражения и задержки на реальном устройстве, сохраняя единицы измерения.",
+        "en": "Test echoes and latency on real hardware and retain measurement units."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s"
+      }
+    ]
+  },
+  "voice-audio--family-23": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Музыка меняет игровой мир",
+      "en": "Music changes the game world"
+    },
+    "description": {
+      "ru": "Музыкальные отношения или исполнение меняют состояние пространства: создают путь, активируют объект или преобразуют препятствие.",
+      "en": "Musical relationships or performance change the environment by creating a route, activating an object or transforming an obstacle."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-0.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/1f/79/08/1f79088b-e68d-8037-720e-c402e244d062/ae0e08aa-0ff2-409d-90aa-04cf904759d6_OneHandClapping_Screenshot_01_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 50,
+          "label": {
+            "ru": "Музыкальное действие влияет на доступный путь",
+            "en": "Musical action affects the available route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте музыкальное действие с видимым изменением мира.",
+        "en": "Connect the musical action with a visible change in the world."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-26": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Роли, убеждение и обман игроков",
+      "en": "Player roles, persuasion and deception"
+    },
+    "description": {
+      "ru": "Участники обсуждают сведения, интерпретируют заявления и влияют на решения других в рамках игровых ролей.",
+      "en": "Participants discuss evidence, interpret statements and influence others’ decisions within assigned game roles."
+    },
+    "image": {
+      "src": "images/mechanics/broad-among-us-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Among Us",
+      "sourceUrl": "https://store.steampowered.com/app/945360/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/ss_17be75e178e3520c986504504ada8535de19cc0d.1920x1080.jpg?t=1792187809",
+      "credit": "Innersloth / Innersloth",
+      "rights": "© Innersloth / Innersloth. All rights reserved.",
+      "caption": {
+        "ru": "Among Us: обсуждение и голосование; голосовой канал может быть внешним",
+        "en": "Among Us: discussion and voting; voice communication may use an external channel"
+      },
+      "alt": {
+        "ru": "Among Us: обсуждение и голосование; голосовой канал может быть внешним",
+        "en": "Among Us: discussion and voting; voice communication may use an external channel"
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 47,
+          "label": {
+            "ru": "Публичные сообщения позволяют сопоставить заявления участников",
+            "en": "Public messages let players compare participants’ claims"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте игровой обман и нарушение согласованных правил общения.",
+        "en": "Distinguish in-game deception from violations of agreed communication rules."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Among Us",
+        "url": "https://store.steampowered.com/app/945360/"
+      }
+    ]
+  },
+  "voice-audio--family-27": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместное и соревновательное пение",
+      "en": "Cooperative and competitive singing"
+    },
+    "description": {
+      "ru": "Игроки согласуют партии или сравнивают исполнение. Система учитывает индивидуальный вклад и общие музыкальные отношения.",
+      "en": "Players coordinate parts or compare performances. The system considers individual contributions and shared musical relationships."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-smule-5.webp",
+      "width": 810,
+      "height": 1440,
+      "crop": {
+        "x": 32,
+        "y": 345,
+        "width": 745,
+        "height": 1065
+      },
+      "game": "Smule: Sing, Duet & Record",
+      "sourceUrl": "https://apps.apple.com/us/app/smule-sing-duet-record/id509993510?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/ac/e3/d9ace348-46d0-cd26-6439-dfaa54125e5b/90e8fece-4cdd-47b0-b047-ac865836d78e_Iphone_5_U002c5__6.png/1280x1440bb.jpg",
+      "credit": "Smule",
+      "rights": "© Smule. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Smule: выбор дуэта с другим исполнителем",
+        "en": "Smule: choosing a duet with another performer"
+      },
+      "alt": {
+        "ru": "Smule: выбор дуэта с другим исполнителем",
+        "en": "Smule: choosing a duet with another performer"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 53,
+          "label": {
+            "ru": "Два исполнителя объединены в предложение дуэта",
+            "en": "Two performers are paired in a duet entry"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Уточняйте, оценивается ли точность, выразительность или совместное согласование.",
+        "en": "Specify whether evaluation concerns accuracy, expression or coordination."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Smule: Sing, Duet & Record",
+        "url": "https://apps.apple.com/us/app/smule-sing-duet-record/id509993510?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-level": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Громкость и динамика",
+      "en": "Loudness and dynamics"
+    },
+    "description": {
+      "ru": "Уровень входного звука задаёт действие или его величину. Приложение различает тишину, тихий звук и более сильный сигнал после настройки чувствительности.",
+      "en": "Input sound level selects an action or its magnitude. After sensitivity calibration, the app distinguishes silence, quiet sound and a stronger signal."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-scream-go-0.webp",
+      "width": 810,
+      "height": 1440,
+      "game": "Scream Go Hero",
+      "sourceUrl": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/55/be/ca/55becae8-2635-2e86-cea6-491bb90c2418/mzl.erwphtle.jpg/1280x1440bb.jpg",
+      "credit": "Ketchapp",
+      "rights": "© Ketchapp. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "alt": {
+        "ru": "Scream Go Hero: голос перемещает героя, громкий звук вызывает прыжок",
+        "en": "Scream Go Hero: voice moves the hero and a loud sound triggers jumping"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 50,
+          "label": {
+            "ru": "Прыжок между платформами управляется уровнем голоса",
+            "en": "Voice level controls the jump between platforms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не считайте амплитуду микрофона абсолютным уровнем дБ без калибровки.",
+        "en": "Do not treat microphone amplitude as an absolute dB reading without calibration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Scream Go Hero",
+        "url": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-time": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время, ритм и паузы",
+      "en": "Timing, rhythm and pauses"
+    },
+    "description": {
+      "ru": "Приложение использует начало, длительность и паузы входного звука. Игрок удерживает голос или воспроизводит нужную последовательность событий.",
+      "en": "An app uses sound onset, duration and gaps. The player sustains a voice input or reproduces a required event sequence."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-1.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/f1/c4/ab/f1c4abe8-d24a-e0d7-173d-b2285473fa1a/60ee6b32-9e9f-4eca-ac38-820ffcaaa605_OneHandClapping_Screenshot_02_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое исполнение следует заданному контуру",
+        "en": "One Hand Clapping: vocal performance follows a target contour"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 30,
+          "label": {
+            "ru": "Последовательность светящихся точек задаёт контур исполнения",
+            "en": "The glowing points define the performance contour"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте задержку микрофона отдельно от времени игрового окна.",
+        "en": "Account for microphone latency separately from the gameplay timing window."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-pitch": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Высота тона",
+      "en": "Pitch"
+    },
+    "description": {
+      "ru": "Микрофон принимает звучание, а приложение оценивает основную частоту. Игрок подстраивает голос или инструмент к ноте либо мелодическому контуру.",
+      "en": "The microphone captures sound and the app estimates its fundamental frequency. The player adjusts a voice or instrument to a note or contour."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-guitar-tuna-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 405,
+        "width": 540,
+        "height": 810
+      },
+      "game": "GuitarTuna: Tune & Play Guitar",
+      "sourceUrl": "https://apps.apple.com/us/app/guitartuna-tune-play-guitar/id527588389?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1e/aa/de/1eaade13-411b-988d-9108-157363db920b/b52ff2a0-b0be-4904-b573-3b8c2c27d333_App_store_GT_9x16_1242x2208_3.png/720x1560bb.jpg",
+      "credit": "Yousician Ltd",
+      "rights": "© Yousician Ltd. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "GuitarTuna: отклонение высоты принятого звука от целевой ноты",
+        "en": "GuitarTuna: the received pitch’s deviation from the target note"
+      },
+      "alt": {
+        "ru": "GuitarTuna: отклонение высоты принятого звука от целевой ноты",
+        "en": "GuitarTuna: the received pitch’s deviation from the target note"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 58,
+          "label": {
+            "ru": "Индикатор −5 и Tune up показывают направление коррекции",
+            "en": "The −5 reading and Tune up indicate the correction direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не принимайте самый сильный спектральный пик за основную частоту во всех случаях.",
+        "en": "Do not assume the strongest spectral peak is always the fundamental."
+      }
+    ],
+    "examples": [
+      {
+        "title": "GuitarTuna: Tune & Play Guitar",
+        "url": "https://apps.apple.com/us/app/guitartuna-tune-play-guitar/id527588389?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-timbre": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Тембр и артикуляция",
+      "en": "Timbre and articulation"
+    },
+    "description": {
+      "ru": "Спектральная структура, атака и артикуляция могут различать формы звучания. Показанный спектр позволяет наблюдать признаки входного сигнала.",
+      "en": "Spectral structure, onset and articulation can distinguish sound forms. The shown spectrum makes input-signal features observable."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-3.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 88,
+        "width": 663,
+        "height": 867
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/4c/8c/974c8c83-6b57-a61d-6f00-26079b8534e6/iphone-04-audio-spectrum.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "alt": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 43,
+          "label": {
+            "ru": "Полосы отражают распределение энергии по частотам",
+            "en": "Bands represent energy distributed across frequencies"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте признаки на разных микрофонах и с разным расстоянием до телефона.",
+        "en": "Test features across microphones and distances from the phone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-breath": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дуновение и дыхание",
+      "en": "Blowing and breathing"
+    },
+    "description": {
+      "ru": "Дуновение создаёт шум у микрофона и меняет состояние приложения. Виртуальную свечу можно погасить или снова зажечь дуновением.",
+      "en": "Blowing creates noise at the microphone and changes the app’s state. A virtual candle can be extinguished or lit by blowing."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-candle-0.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 330,
+        "width": 720,
+        "height": 950
+      },
+      "game": "Candle - Ultra Real Blow Out",
+      "sourceUrl": "https://apps.apple.com/us/app/candle-ultra-real-blow-out/id434064534?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2a/98/b9/2a98b919-8f7a-a15c-a1bc-7d52fc337ae5/mzl.fxebghmv.png/720x1440bb.jpg",
+      "credit": "Poets Road, Inc",
+      "rights": "© Poets Road, Inc. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Candle: виртуальное пламя реагирует на дуновение в микрофон",
+        "en": "Candle: a virtual flame reacts to blowing into the microphone"
+      },
+      "alt": {
+        "ru": "Candle: виртуальное пламя реагирует на дуновение в микрофон",
+        "en": "Candle: a virtual flame reacts to blowing into the microphone"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Приложение связывает дуновение с состоянием пламени",
+            "en": "The app maps blowing to the flame’s state"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте фильтрацию ветра и предлагайте альтернативное управление.",
+        "en": "Account for wind filtering and provide alternative controls."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Candle - Ultra Real Blow Out",
+        "url": "https://apps.apple.com/us/app/candle-ultra-real-blow-out/id434064534?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-music": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Музыкальное исполнение",
+      "en": "Musical performance"
+    },
+    "description": {
+      "ru": "Телефон принимает пение или звучание инструмента и сопоставляет исполнение с нотами, ритмом или партией другого участника.",
+      "en": "The phone receives singing or instrument sound and compares the performance with notes, rhythm or another participant’s part."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-simply-sing-0.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 592,
+        "width": 665,
+        "height": 471
+      },
+      "game": "Simply Sing: My Singing App",
+      "sourceUrl": "https://apps.apple.com/us/app/simply-sing-my-singing-app/id1592900217?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d3/18/5a/d3185ac5-d85f-6939-c048-38ade193b110/7.png/720x1560bb.jpg",
+      "credit": "Simply Ltd",
+      "rights": "© Simply Ltd. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Simply Sing: ноты и линия голоса во время исполнения песни",
+        "en": "Simply Sing: notes and a voice trace during song performance"
+      },
+      "alt": {
+        "ru": "Simply Sing: ноты и линия голоса во время исполнения песни",
+        "en": "Simply Sing: notes and a voice trace during song performance"
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 57,
+          "label": {
+            "ru": "Целевая нота и линия исполнения дают обратную связь",
+            "en": "The target note and performance trace provide feedback"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте настроить диапазон и задержку до оценки исполнения.",
+        "en": "Allow range and latency adjustment before evaluating a performance."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Simply Sing: My Singing App",
+        "url": "https://apps.apple.com/us/app/simply-sing-my-singing-app/id1592900217?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-body-objects": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Звуки тела и предметов",
+      "en": "Body and object sounds"
+    },
+    "description": {
+      "ru": "Хлопок, щелчок или стук могут стать игровым вводом. Для различения событий используют временные и спектральные признаки звука.",
+      "en": "Claps, clicks or taps can become game input. Event recognition uses temporal and spectral sound features."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-3.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 88,
+        "width": 663,
+        "height": 867
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/97/4c/8c/974c8c83-6b57-a61d-6f00-26079b8534e6/iphone-04-audio-spectrum.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "alt": {
+        "ru": "phyphox: спектр показывает частотную структуру звука во времени",
+        "en": "phyphox: a spectrum shows the sound’s frequency structure over time"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 43,
+          "label": {
+            "ru": "Полосы отражают распределение энергии по частотам",
+            "en": "Bands represent energy distributed across frequencies"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте распознавание события от простого превышения порога громкости.",
+        "en": "Distinguish event recognition from merely crossing a loudness threshold."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-device": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Контакт с телефоном и микрофоном",
+      "en": "Contact with the phone and microphone"
+    },
+    "description": {
+      "ru": "В проектном сценарии постукивание или касание корпуса создаёт звуковой импульс у микрофона. Правило преобразует этот сигнал в действие.",
+      "en": "In a design scenario, tapping or touching the case creates a microphone impulse. A rule maps that signal to an action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-scream-go-0.webp",
+      "width": 810,
+      "height": 1440,
+      "game": "Scream Go Hero",
+      "sourceUrl": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/55/be/ca/55becae8-2635-2e86-cea6-491bb90c2418/mzl.erwphtle.jpg/1280x1440bb.jpg",
+      "credit": "Ketchapp",
+      "rights": "© Ketchapp. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Scream Go Hero: пример управления по уровню входного звука",
+        "en": "Scream Go Hero: an example of input-level control"
+      },
+      "alt": {
+        "ru": "Scream Go Hero: пример управления по уровню входного звука",
+        "en": "Scream Go Hero: an example of input-level control"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 50,
+          "label": {
+            "ru": "Прыжок между платформами управляется уровнем голоса",
+            "en": "Voice level controls the jump between platforms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не выдавайте шум контакта за точное измерение силы нажатия.",
+        "en": "Do not present contact noise as a precise force measurement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Scream Go Hero",
+        "url": "https://apps.apple.com/us/app/scream-go-hero/id1212039074?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-events": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Распознавание внешнего звука",
+      "en": "Recognizing external sound"
+    },
+    "description": {
+      "ru": "Приложение определяет внешнее акустическое событие или запись по признакам сигнала. Результат становится сведением для дальнейшего действия.",
+      "en": "An app identifies an external acoustic event or recording through signal features. The result informs the next action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-shazam-1.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 60,
+        "y": 310,
+        "width": 600,
+        "height": 900
+      },
+      "game": "Shazam: Find Music & Concerts",
+      "sourceUrl": "https://apps.apple.com/us/app/shazam-find-music-concerts/id284993459?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/38/c1/a938c111-4474-60ad-c2f8-1869ea3d53c4/b772946c-7391-483b-9702-bdb275b1ac76_en-US_2.Track_Page.png/720x1560bb.jpg",
+      "credit": "Apple",
+      "rights": "© Apple. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Shazam: результат определения проигрываемой музыкальной записи",
+        "en": "Shazam: identification result for a playing music recording"
+      },
+      "alt": {
+        "ru": "Shazam: результат определения проигрываемой музыкальной записи",
+        "en": "Shazam: identification result for a playing music recording"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 70,
+          "label": {
+            "ru": "Результат связывает услышанный фрагмент с названием записи",
+            "en": "The result links the heard excerpt to a recording title"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте найденное совпадение и уверенность распознавания.",
+        "en": "Distinguish a found match from recognition confidence."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shazam: Find Music & Concerts",
+        "url": "https://apps.apple.com/us/app/shazam-find-music-concerts/id284993459?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-ambience": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фон и акустическая обстановка",
+      "en": "Background and acoustic environment"
+    },
+    "description": {
+      "ru": "Приложение учитывает шумовой фон и выделяет полезный звук. В сценарии фон может влиять на пороги, слышимость и выбор режима обработки.",
+      "en": "An app accounts for background noise and isolates useful sound. A scenario can use the environment to adjust thresholds, audibility or processing."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-dolby-on-4.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 80,
+        "y": 0,
+        "width": 560,
+        "height": 900
+      },
+      "game": "Dolby On: Record Audio & Video",
+      "sourceUrl": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/42/0d/3f/420d3fe4-b7d6-77b2-ae46-5281e9efd50f/2b2c8ab7-44e2-425d-a83d-99765bc2335e_iPhone_1242_x_2208_screen_05.jpg/720x1560bb.jpg",
+      "credit": "Dolby Laboratories",
+      "rights": "© Dolby Laboratories. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Dolby On: настройка Noise Reduction при обработке записи",
+        "en": "Dolby On: Noise Reduction settings for a recording"
+      },
+      "alt": {
+        "ru": "Dolby On: настройка Noise Reduction при обработке записи",
+        "en": "Dolby On: Noise Reduction settings for a recording"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 43,
+          "label": {
+            "ru": "Параметр задаёт степень подавления фонового шума",
+            "en": "The parameter controls background-noise reduction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте исходную запись для сравнения с обработанной.",
+        "en": "Keep the original recording for comparison with processing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dolby On: Record Audio & Video",
+        "url": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-space": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Положение и несколько микрофонов",
+      "en": "Position and multiple microphones"
+    },
+    "description": {
+      "ru": "Положение источника или препятствия оценивают по акустическому сигналу. Движение телефона и дополнительные каналы могут расширять наблюдение.",
+      "en": "Acoustic signals can help locate a source or obstacle. Phone movement and additional channels can expand the observations."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-sonar-185.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "phyphox",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0",
+      "sourceFrameSeconds": 185,
+      "credit": "RWTH Aachen University / phyphox",
+      "rights": "© RWTH Aachen University / phyphox. Frame from the developers’ sonar demonstration. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "alt": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 47,
+          "label": {
+            "ru": "Пик отражения сопоставлен с расстоянием в сантиметрах",
+            "en": "The echo peak is mapped to distance in centimeters"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Один микрофон без движения или модели не даёт надёжного полного 3D-направления.",
+        "en": "A single stationary microphone without a model does not reliably provide a full 3D direction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s"
+      }
+    ]
+  },
+  "phone-microphone--family-sonar": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Динамик и микрофон как зонд",
+      "en": "Speaker and microphone as a probe"
+    },
+    "description": {
+      "ru": "Телефон излучает звуковой импульс и записывает отражение. По задержке возвращения сигнала приложение оценивает расстояние до препятствия.",
+      "en": "The phone emits a sound pulse and records its reflection. Return-signal delay is used to estimate obstacle distance."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-sonar-185.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "phyphox",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ebj3v701HE0",
+      "sourceFrameSeconds": 185,
+      "credit": "RWTH Aachen University / phyphox",
+      "rights": "© RWTH Aachen University / phyphox. Frame from the developers’ sonar demonstration. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "alt": {
+        "ru": "phyphox Sonar: отражённый сигнал показан по шкале расстояния",
+        "en": "phyphox Sonar: reflected signal on a distance scale"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 47,
+          "label": {
+            "ru": "Пик отражения сопоставлен с расстоянием в сантиметрах",
+            "en": "The echo peak is mapped to distance in centimeters"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте переотражения, задержку устройства и скорость звука в условиях опыта.",
+        "en": "Check multiple reflections, device latency and the sound speed under experiment conditions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://www.youtube.com/watch?v=Ebj3v701HE0&t=185s"
+      }
+    ]
+  },
+  "phone-microphone--family-recording": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Запись как игровой материал",
+      "en": "Recordings as game material"
+    },
+    "description": {
+      "ru": "Захваченный микрофоном звук сохраняется, редактируется или воспроизводится. Игровое правило использует запись как объект задачи.",
+      "en": "Microphone audio is saved, edited or replayed. A game rule uses the recording as a task object."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-dolby-on-3.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 110,
+        "y": 428,
+        "width": 500,
+        "height": 820
+      },
+      "game": "Dolby On: Record Audio & Video",
+      "sourceUrl": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource116/v4/ac/1c/d5/ac1cd50f-7217-8033-3aee-371e6a670733/03831f86-bfc2-4b4a-99aa-f8379373726b_iPhone_1242_x_2208_screen_04.jpg/720x1560bb.jpg",
+      "credit": "Dolby Laboratories",
+      "rights": "© Dolby Laboratories. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Dolby On: инструменты обработки и воспроизведения записи",
+        "en": "Dolby On: recording processing and playback tools"
+      },
+      "alt": {
+        "ru": "Dolby On: инструменты обработки и воспроизведения записи",
+        "en": "Dolby On: recording processing and playback tools"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 80,
+          "label": {
+            "ru": "Инструменты изменяют звучание сохранённой записи",
+            "en": "Tools modify the sound of the saved recording"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте начало и конец записи и сохраняйте возможность удалить её локально.",
+        "en": "Show recording start and end, and allow local deletion."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dolby On: Record Audio & Video",
+        "url": "https://apps.apple.com/us/app/dolby-on-record-audio-video/id1443964192?uo=4"
+      }
+    ]
+  },
+  "phone-microphone--family-hybrid": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сочетание с другими вводами",
+      "en": "Combining input methods"
+    },
+    "description": {
+      "ru": "Голос или другой звук объединяется с касанием, движением либо кнопкой. У каждого канала есть своя роль в общем действии.",
+      "en": "Voice or other sound combines with touch, motion or a button. Each channel has a distinct role in the combined action."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-one-hand-clapping-0.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "One Hand Clapping - OHC",
+      "sourceUrl": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/1f/79/08/1f79088b-e68d-8037-720e-c402e244d062/ae0e08aa-0ff2-409d-90aa-04cf904759d6_OneHandClapping_Screenshot_01_2208x1242.jpg/1280x1440bb.jpg",
+      "credit": "THQ Nordic Mobile GmbH",
+      "rights": "© THQ Nordic Mobile GmbH. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "alt": {
+        "ru": "One Hand Clapping: голосовое действие связано с платформами и маршрутом",
+        "en": "One Hand Clapping: vocal action is linked to platforms and the route"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 50,
+          "label": {
+            "ru": "Музыкальное действие влияет на доступный путь",
+            "en": "Musical action affects the available route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте движение персонажа и звуковое воздействие понятной обратной связью.",
+        "en": "Use clear feedback to separate character movement from sound-driven effects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "One Hand Clapping - OHC",
+        "url": "https://apps.apple.com/us/app/one-hand-clapping-ohc/id1524426643?uo=4"
+      }
+    ]
+  },
+  "phone-magnetometer--family-07": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пассивные магнитные контроллеры",
+      "en": "Passive magnetic controllers"
+    },
+    "description": {
+      "ru": "Пассивная кнопка или рычаг меняет поле у датчика телефона. MagPie показывает исследовательский прототип настраиваемого механического ввода.",
+      "en": "A passive button or lever changes the phone sensor’s magnetic field. MagPie is a research prototype for customizable mechanical input."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-magpie-figure1.webp",
+      "width": 1010,
+      "height": 352,
+      "game": "MagPie prototype",
+      "sourceUrl": "https://ixlab.cau.ac.kr/papers/magpie.pdf#page=1",
+      "originalUrl": "https://ixlab.cau.ac.kr/papers/magpie.pdf",
+      "credit": "Insu Kim et al.; CHI 2025 / Chung-Ang University and Korea University",
+      "rights": "Figure 1 by Insu Kim, Suhyeon Shin, Jaemin Choi, Junseob Kim, Junhyub Lee, Sangeun Oh, Eunji Park and Hyosu Kim. CC BY-NC 4.0: https://creativecommons.org/licenses/by-nc/4.0/ . Cropped from PDF page 1 to the figure and converted to WebP. Figure includes third-party application imagery; Stardew Valley graphics © ConcernedApe. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "MagPie: магнитные кнопки и предложенный сценарий геймпада",
+        "en": "MagPie: magnetic buttons and a proposed gamepad scenario"
+      },
+      "alt": {
+        "ru": "MagPie: магнитные кнопки и предложенный сценарий геймпада",
+        "en": "MagPie: magnetic buttons and a proposed gamepad scenario"
+      },
+      "markers": [
+        {
+          "x": 83,
+          "y": 43,
+          "label": {
+            "ru": "Перемещение механического модуля меняет магнитную сигнатуру",
+            "en": "Moving the mechanical module changes its magnetic signature"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте магнитные помехи и сочетания одновременно нажатых элементов.",
+        "en": "Test magnetic interference and combinations of simultaneous inputs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MagPie prototype",
+        "url": "https://ixlab.cau.ac.kr/papers/magpie.pdf#page=1"
+      }
+    ]
+  },
+  "phone-magnetometer--family-08": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Предметы и материальные носители",
+      "en": "Objects and tangible media"
+    },
+    "description": {
+      "ru": "Физическая накладка связывает положение магнита с командой. В прототипе MagBoard печатная сетка задаёт клавиши для приложения на телефоне.",
+      "en": "A physical overlay maps magnet position to a command. In the MagBoard prototype, a printed grid defines keys for a phone application."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-magboard-photo.webp",
+      "width": 709,
+      "height": 651,
+      "game": "MagBoard prototype / Calculator",
+      "sourceUrl": "https://arxiv.org/abs/1605.00284",
+      "originalUrl": "https://arxiv.org/pdf/1605.00284",
+      "credit": "Heba Abdelnasser, Moustafa Youssef and Khaled A. Harras",
+      "rights": "Photo from the authors’ MagBoard paper, arXiv:1605.00284, PDF page 2. Third-party application imagery retains its own rights. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "MagBoard: печатная накладка и результат ввода в калькуляторе",
+        "en": "MagBoard: a printed overlay and the resulting calculator input"
+      },
+      "alt": {
+        "ru": "MagBoard: печатная накладка и результат ввода в калькуляторе",
+        "en": "MagBoard: a printed overlay and the resulting calculator input"
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 57,
+          "label": {
+            "ru": "Магнит над ячейкой выбирает соответствующую команду",
+            "en": "A magnet over a cell selects the corresponding command"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Регистрируйте расположение накладки и не обещайте уникальное распознавание любого предмета.",
+        "en": "Register overlay placement and do not promise unique recognition of arbitrary objects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MagBoard prototype / Calculator",
+        "url": "https://arxiv.org/abs/1605.00284"
+      }
+    ]
+  },
+  "phone-magnetometer--family-11": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместная игра и роли",
+      "en": "Shared play and roles"
+    },
+    "description": {
+      "ru": "Сценарий совместной игры может соединять измерения нескольких участников. Записи поля дают общий материал для сравнения и распределённых задач.",
+      "en": "A cooperative design scenario can combine readings from several participants. Field recordings provide shared material for comparison and distributed tasks."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-physics-magnet-3.webp",
+      "width": 665,
+      "height": 1440,
+      "crop": {
+        "x": 51,
+        "y": 323,
+        "width": 563,
+        "height": 1034
+      },
+      "game": "Physics Toolbox Magnetometer",
+      "sourceUrl": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/76/23/58/7623583b-a84f-fd15-b138-fa78cf800baa/04-record-lab-data.png/720x1560bb.jpg",
+      "credit": "Chrystian Vieyra",
+      "rights": "© Chrystian Vieyra. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Physics Toolbox: запись поля как материал для общей задачи",
+        "en": "Physics Toolbox: a field recording as material for a shared task"
+      },
+      "alt": {
+        "ru": "Physics Toolbox: запись поля как материал для общей задачи",
+        "en": "Physics Toolbox: a field recording as material for a shared task"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 64,
+          "label": {
+            "ru": "Пик поля может служить входным сигналом порогового действия",
+            "en": "A field peak can supply a threshold-action input"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте время, оси и калибровку приборов участников.",
+        "en": "Align participants’ measurement timing, axes and calibration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Physics Toolbox Magnetometer",
+        "url": "https://apps.apple.com/us/app/physics-toolbox-magnetometer/id1003749103?uo=4"
+      }
+    ]
+  },
+  "shared-family-35": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Предметные и смешанные взаимодействия",
+      "en": "Tangible and mixed interactions"
+    },
+    "description": {
+      "ru": "Физический предмет, карточка или инструмент связан с цифровым действием. Игрок управляет объектом в реальном мире и видит результат на экране.",
+      "en": "A physical object, card or tool connects to a digital action. The player manipulates a real-world object and sees the screen result."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-magboard-photo.webp",
+      "width": 709,
+      "height": 651,
+      "game": "MagBoard prototype / Calculator",
+      "sourceUrl": "https://arxiv.org/abs/1605.00284",
+      "originalUrl": "https://arxiv.org/pdf/1605.00284",
+      "credit": "Heba Abdelnasser, Moustafa Youssef and Khaled A. Harras",
+      "rights": "Photo from the authors’ MagBoard paper, arXiv:1605.00284, PDF page 2. Third-party application imagery retains its own rights. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "MagBoard: печатная накладка и результат ввода в калькуляторе",
+        "en": "MagBoard: a printed overlay and the resulting calculator input"
+      },
+      "alt": {
+        "ru": "MagBoard: печатная накладка и результат ввода в калькуляторе",
+        "en": "MagBoard: a printed overlay and the resulting calculator input"
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 57,
+          "label": {
+            "ru": "Магнит над ячейкой выбирает соответствующую команду",
+            "en": "A magnet over a cell selects the corresponding command"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какой физический объект распознан и какое действие он вызвал.",
+        "en": "Show the recognized physical object and the action it triggered."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MagBoard prototype / Calculator",
+        "url": "https://arxiv.org/abs/1605.00284"
+      }
+    ]
+  },
+  "phone-microphone--family-commands": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Словесные команды",
+      "en": "Spoken commands"
+    },
+    "description": {
+      "ru": "Микрофон принимает словесную команду, приложение распознаёт действие и его параметры. Подтверждение позволяет проверить правильность выполнения.",
+      "en": "The microphone receives a spoken command. The app recognizes its action and parameters, then confirms execution so the result can be checked."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-siri-ios5-timer.webp",
+      "width": 320,
+      "height": 480,
+      "game": "Siri (iOS 5)",
+      "sourceUrl": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf#page=53",
+      "originalUrl": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf",
+      "credit": "Apple Inc.",
+      "rights": "© Apple Inc. Historical iOS 5 user-guide screenshot, printed page 53. Used to illustrate the voice-command interaction, not a current interface. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Siri: голосовая команда запускает таймер; интерфейс iOS 5",
+        "en": "Siri: a spoken command starts a timer; historical iOS 5 interface"
+      },
+      "alt": {
+        "ru": "Siri: голосовая команда запускает таймер; интерфейс iOS 5",
+        "en": "Siri: a spoken command starts a timer; historical iOS 5 interface"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 40,
+          "label": {
+            "ru": "Запущенный таймер подтверждает выполнение распознанного запроса",
+            "en": "The running timer confirms execution of the recognized request"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте распознанные параметры перед действием с существенными последствиями.",
+        "en": "Show recognized parameters before an action with significant consequences."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Siri (iOS 5)",
+        "url": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf#page=53"
+      }
+    ]
+  },
+  "phone-microphone--family-codes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Акустические коды и обмен данными",
+      "en": "Acoustic codes and data exchange"
+    },
+    "description": {
+      "ru": "Последовательность звуков несёт закодированное сообщение. Микрофон принимает сигнал, а декодер переводит временной или частотный рисунок в данные.",
+      "en": "A sound sequence carries an encoded message. The microphone receives it, and a decoder translates temporal or frequency patterns into data."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-morse-it-4.webp",
+      "width": 720,
+      "height": 1280,
+      "game": "Morse-It",
+      "sourceUrl": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/34/96/00/3496003f-ae4b-4019-936c-d0a598f7d7c0/e930babf-81f4-4d3d-9860-ff5a23b1a5a2_5_-_5.5_-_iPhone_8_Plus-5.png/720x1440bb.jpg",
+      "credit": "Francis Bonnin",
+      "rights": "© Francis Bonnin. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Morse-It: декодирование принятого микрофоном кода в текст",
+        "en": "Morse-It: decoding microphone-received code into text"
+      },
+      "alt": {
+        "ru": "Morse-It: декодирование принятого микрофоном кода в текст",
+        "en": "Morse-It: decoding microphone-received code into text"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 27,
+          "label": {
+            "ru": "Текстовый результат и нижняя полоса принятого сигнала",
+            "en": "Decoded text and the received-signal strip below"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте отсутствие сигнала, ошибку синхронизации и недопустимый символ.",
+        "en": "Distinguish no signal, synchronization errors and invalid symbols."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Morse-It",
+        "url": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4"
+      }
+    ]
+  },
+  "voice-audio--family-22": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Управление слышимостью",
+      "en": "Controlling audibility"
+    },
+    "description": {
+      "ru": "Игрок меняет слышимость действий, создаёт отвлекающий шум или использует тишину. Противник реагирует на доступный ему звуковой сигнал.",
+      "en": "The player changes action audibility, creates distracting noise or uses silence. Enemies respond to the sound cues available to them."
+    },
+    "image": {
+      "src": "images/mechanics/interface-mark-ninja-noise.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Mark of the Ninja: Remastered",
+      "sourceUrl": "https://store.steampowered.com/app/860950/",
+      "originalUrl": "https://video.akamai.steamstatic.com/store_trailers/860950/186745/1e7eeceedbb4b6a382dbc31c6cc079109f5f1a50/1750590484/hls_264_master.m3u8?t=1537890640",
+      "sourceFrameSeconds": 50,
+      "credit": "Klei Entertainment",
+      "rights": "© Klei Entertainment. Frame at 50 seconds from the publisher’s Remastered trailer. Visible sound rings and guard reaction. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Mark of the Ninja: кольца шума и реакция охранника",
+        "en": "Mark of the Ninja: sound rings and a guard’s reaction"
+      },
+      "alt": {
+        "ru": "Mark of the Ninja: кольца шума и реакция охранника",
+        "en": "Mark of the Ninja: sound rings and a guard’s reaction"
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 58,
+          "label": {
+            "ru": "Значок над охранником показывает реакцию на слышимый шум",
+            "en": "The guard’s overhead icon indicates a response to audible noise"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какой шум был услышан и кто на него отреагировал.",
+        "en": "Show which sound was heard and who reacted."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mark of the Ninja: Remastered",
+        "url": "https://store.steampowered.com/app/860950/"
+      }
+    ]
+  },
+  "spatial-interfaces--t309": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Текст, команды и разговорный интерфейс",
+      "en": "Text, commands and conversation"
+    },
+    "description": {
+      "ru": "Текстовый или голосовой запрос задаёт действие через смысл команды. Система уточняет параметры и сообщает, что было выполнено.",
+      "en": "A typed or spoken request specifies an action through command meaning. The system clarifies parameters and reports what it executed."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-siri-ios5-timer.webp",
+      "width": 320,
+      "height": 480,
+      "game": "Siri (iOS 5)",
+      "sourceUrl": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf#page=53",
+      "originalUrl": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf",
+      "credit": "Apple Inc.",
+      "rights": "© Apple Inc. Historical iOS 5 user-guide screenshot, printed page 53. Used to illustrate the voice-command interaction, not a current interface. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Siri: голосовая команда запускает таймер; интерфейс iOS 5",
+        "en": "Siri: a spoken command starts a timer; historical iOS 5 interface"
+      },
+      "alt": {
+        "ru": "Siri: голосовая команда запускает таймер; интерфейс iOS 5",
+        "en": "Siri: a spoken command starts a timer; historical iOS 5 interface"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 40,
+          "label": {
+            "ru": "Запущенный таймер подтверждает выполнение распознанного запроса",
+            "en": "The running timer confirms execution of the recognized request"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте ввод запроса от его подтверждения и выполнения.",
+        "en": "Separate request entry from confirmation and execution."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Siri (iOS 5)",
+        "url": "https://cdsassets.apple.com/live/6GJYWVAV/user/ma1622_iphone_ios5_user_guide.pdf#page=53"
+      }
+    ]
+  },
+  "learning-accessibility--t318": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Доступная игра",
+      "en": "Accessible play"
+    },
+    "description": {
+      "ru": "Игра сохраняет содержательную задачу, предлагая другой канал восприятия или управления. Blind Drive показывает навигацию по звуку при ограниченной картинке.",
+      "en": "A game preserves its core challenge while offering another perception or control channel. Blind Drive illustrates navigation through sound."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-blind-drive-3.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Blind Drive",
+      "sourceUrl": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/49/64/a2/4964a27a-e780-a9da-8191-19c8a4ba92f9/9636f08b-efd0-4ea7-b5e6-2b0cbb80d34c_3.jpg/1440x1080bb.jpg",
+      "credit": "Giori Politi",
+      "rights": "© Giori Politi. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "alt": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Дорожную ситуацию нужно восстанавливать по звучанию",
+            "en": "The road situation must be reconstructed through sound"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте доступность с участниками, для которых предназначена альтернативная схема.",
+        "en": "Test accessibility with people who need the alternative control or perception method."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blind Drive",
+        "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
       }
     ]
   }
