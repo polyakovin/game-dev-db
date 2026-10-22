@@ -278,3 +278,20 @@ skill panels are identified separately.
 [Character Progression preview](https://www.newworld.com/en-us/news/articles/character-progression).
 It shows the historical Hatchet mastery interface, not a claim about the current
 release UI. All new files use the same compressed WebP and dimension budgets.
+
+## Creative, social, tabletop and sports examples
+
+`general-*.webp` adds inspected publisher-distributed Steam screenshots of
+creative sandboxes, child-play patterns, tabletop games, sports, vehicles,
+horror and spatial interaction. The store's game title, original CDN URL and
+credits remain in each card. Captions identify the actual pictured activity;
+examples can demonstrate a shared mechanic across categories without asserting
+that the example belongs to every category. Screenshots never imply an age
+rating or an endorsement of the game's suitability for children.
+
+`general-pro-gymnast-00.webp` is the developer's
+[Pro Gymnast screenshot](https://www.walaber.com/pro-gymnast) with grip/release
+prompts, the timer and score. Controller hints are identified as hints.
+`general-car-mechanic2021-09.webp` illustrates a virtual photo mode; it is not
+a physical camera sensor capture. All files retain visible source markings,
+third-party rights and the same WebP size limits.
