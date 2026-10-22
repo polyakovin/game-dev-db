@@ -66222,5 +66222,1999 @@
         "url": "https://store.steampowered.com/app/349220/"
       }
     ]
+  },
+  "boss-fight-atlas--boss-survival-phase": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фаза выживания",
+      "en": "Survival phase"
+    },
+    "description": {
+      "ru": "Игрок должен выдержать период угроз до возвращения обычной цели боя.",
+      "en": "The player must endure a threat interval before the normal objective resumes."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-kx9dptidb-0-1.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Ori and the Blind Forest",
+      "sourceUrl": "https://www.youtube.com/watch?v=Kx9DPTIDB_0&t=1s",
+      "originalUrl": "https://www.youtube.com/watch?v=Kx9DPTIDB_0",
+      "sourceFrameSeconds": 1,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by CINEMATIC GAMING",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by CINEMATIC GAMING. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Ori and the Blind Forest: финальный маршрут побега от Куро",
+        "en": "Ori and the Blind Forest: the final escape route from Kuro"
+      },
+      "alt": {
+        "ru": "Ori and the Blind Forest: финальный маршрут побега от Куро",
+        "en": "Ori and the Blind Forest: the final escape route from Kuro"
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 64,
+          "label": {
+            "ru": "Цель этапа пройти опасный маршрут, а не истощить здоровье босса",
+            "en": "Survive the route rather than deplete the boss’s health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте цель выживания от нанесения урона и ясно обозначайте конец этапа.",
+        "en": "Distinguish surviving from dealing damage and make the phase endpoint clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Blind Forest",
+        "url": "https://www.youtube.com/watch?v=Kx9DPTIDB_0&t=1s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-returning-projectile": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Возвратный снаряд",
+      "en": "Returning projectile"
+    },
+    "description": {
+      "ru": "Снаряд после удаления возвращается и повторно угрожает пройденному пространству.",
+      "en": "A projectile returns after travelling outward, threatening previously crossed space again."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-130.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 130,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: возвратные лезвия Повелителей богомолов",
+        "en": "Hollow Knight: the Mantis Lords’ returning blades"
+      },
+      "alt": {
+        "ru": "Hollow Knight: возвратные лезвия Повелителей богомолов",
+        "en": "Hollow Knight: the Mantis Lords’ returning blades"
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 62,
+          "label": {
+            "ru": "Лезвие проходит маршрут наружу и обратно; опасен и возврат",
+            "en": "The blade travels out and back; the return path is dangerous too"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте точку разворота и учитывайте обратный путь в безопасном ответе.",
+        "en": "Show the turnaround and include the return path in the safe response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-orbiting-projectiles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Орбитальные снаряды",
+      "en": "Orbiting projectiles"
+    },
+    "description": {
+      "ru": "Снаряды движутся вокруг центра и ограничивают доступ к нему.",
+      "en": "Projectiles circle a center and constrain access to it."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-popz58ucjwa-53.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=POpz58ucJwA&t=53s",
+      "originalUrl": "https://www.youtube.com/watch?v=POpz58ucJwA",
+      "sourceFrameSeconds": 53,
+      "credit": "Team Cherry; gameplay capture by New Dawn Games",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by New Dawn Games. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: сферы движутся вокруг Повелителя душ",
+        "en": "Hollow Knight: orbs move around Soul Master"
+      },
+      "alt": {
+        "ru": "Hollow Knight: сферы движутся вокруг Повелителя душ",
+        "en": "Hollow Knight: orbs move around Soul Master"
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 32,
+          "label": {
+            "ru": "Сфера входит в орбитальный строй вокруг движущегося босса",
+            "en": "An orb belongs to a formation orbiting the moving boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте движение центра орбиты и вращение самих снарядов.",
+        "en": "Distinguish movement of the orbit center from the projectiles’ rotation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=POpz58ucJwA&t=53s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-mine": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Мина",
+      "en": "Mine"
+    },
+    "description": {
+      "ru": "Размещённый объект срабатывает по условию приближения, контакта или времени.",
+      "en": "A placed object activates through proximity, contact or timing rules."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-rv6vnqvy-4o-62.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://www.youtube.com/watch?v=RV6vnqvy-4o&t=62s",
+      "originalUrl": "https://www.youtube.com/watch?v=RV6vnqvy-4o",
+      "sourceFrameSeconds": 62,
+      "credit": "Dodge Roll / Devolver Digital; gameplay capture by RiggyRob + Pimmsy Play",
+      "rights": "Game graphics © Dodge Roll / Devolver Digital. Gameplay recording by RiggyRob + Pimmsy Play. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Enter the Gungeon: мины Mine Flayer и зоны их опасного выброса",
+        "en": "Enter the Gungeon: Mine Flayer’s mines and their hazardous discharge areas"
+      },
+      "alt": {
+        "ru": "Enter the Gungeon: мины Mine Flayer и зоны их опасного выброса",
+        "en": "Enter the Gungeon: Mine Flayer’s mines and their hazardous discharge areas"
+      },
+      "markers": [
+        {
+          "x": 61,
+          "y": 44,
+          "label": {
+            "ru": "Мина остаётся в точке, а красная область показывает опасное направление",
+            "en": "The mine stays in place; red marks its dangerous discharge direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте установку, готовность и срабатывание мины заметными состояниями.",
+        "en": "Give placement, armed and triggered mines distinct visible states."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://www.youtube.com/watch?v=RV6vnqvy-4o&t=62s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-directional-shield": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Направленный щит",
+      "en": "Directional shield"
+    },
+    "description": {
+      "ru": "Защита блокирует урон только с определённых направлений.",
+      "en": "Protection blocks damage only from specified directions."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-itv6y-0gbfg-215.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 350,
+        "height": 285
+      },
+      "game": "Hades",
+      "sourceUrl": "https://www.youtube.com/watch?v=iTV6y_0GBfg&t=215s",
+      "originalUrl": "https://www.youtube.com/watch?v=iTV6y_0GBfg",
+      "sourceFrameSeconds": 215,
+      "credit": "Supergiant Games; gameplay capture by Guides Gamepressure",
+      "rights": "Game graphics © Supergiant Games. Gameplay recording by Guides Gamepressure. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hades: щит Тесея защищает направление перед ним",
+        "en": "Hades: Theseus’s shield protects the direction in front of him"
+      },
+      "alt": {
+        "ru": "Hades: щит Тесея защищает направление перед ним",
+        "en": "Hades: Theseus’s shield protects the direction in front of him"
+      },
+      "markers": [
+        {
+          "x": 12,
+          "y": 48,
+          "label": {
+            "ru": "Фронтальный щит заставляет искать другой угол атаки",
+            "en": "The frontal shield encourages an attack from another angle"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ориентацию защиты и оставляйте достижимый путь к открытому направлению.",
+        "en": "Show the defense direction and leave a reachable path to an exposed angle."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hades",
+        "url": "https://www.youtube.com/watch?v=iTV6y_0GBfg&t=215s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-interruptible-wind-up": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прерываемая подготовка",
+      "en": "Interruptible wind-up"
+    },
+    "description": {
+      "ru": "Успешное вмешательство до завершения подготовки отменяет опасную атаку.",
+      "en": "Successful intervention before preparation ends cancels a dangerous attack."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-8d6nqm5fdk0-104.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Sea of Stars",
+      "sourceUrl": "https://www.youtube.com/watch?v=8d6NqM5FDk0&t=104s",
+      "originalUrl": "https://www.youtube.com/watch?v=8d6NqM5FDk0",
+      "sourceFrameSeconds": 104,
+      "credit": "Sabotage Studio; gameplay capture by DigitalTQ",
+      "rights": "Game graphics © Sabotage Studio. Gameplay recording by DigitalTQ. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Sea of Stars: замки и счётчик ходов при подготовке Pyro Hox",
+        "en": "Sea of Stars: locks and a turn counter while Pyro Hox is prepared"
+      },
+      "alt": {
+        "ru": "Sea of Stars: замки и счётчик ходов при подготовке Pyro Hox",
+        "en": "Sea of Stars: locks and a turn counter while Pyro Hox is prepared"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 21,
+          "label": {
+            "ru": "Символы замков задают нужные типы ударов до окончания счётчика",
+            "en": "Lock symbols specify required hit types before the counter expires"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Указывайте способ прерывания и остаток времени; различайте ослабление и отмену атаки.",
+        "en": "Show the interrupt method and time remaining; distinguish weakening from cancellation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sea of Stars",
+        "url": "https://www.youtube.com/watch?v=8d6NqM5FDk0&t=104s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-situational-immunity": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ситуационный иммунитет",
+      "en": "Situational immunity"
+    },
+    "description": {
+      "ru": "Временное условие делает босса невосприимчивым до изменения состояния.",
+      "en": "A temporary condition makes the boss immune until its state changes."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-dmq29xa5hha-127.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=dMq29xa5hhA&t=127s",
+      "originalUrl": "https://www.youtube.com/watch?v=dMq29xa5hhA",
+      "sourceFrameSeconds": 127,
+      "credit": "Team Cherry; gameplay capture by Metamorfosis Gaming",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by Metamorfosis Gaming. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: защитная оболочка Уумуу закрывает уязвимое ядро",
+        "en": "Hollow Knight: Uumuu’s protective membrane covers its vulnerable core"
+      },
+      "alt": {
+        "ru": "Hollow Knight: защитная оболочка Уумуу закрывает уязвимое ядро",
+        "en": "Hollow Knight: Uumuu’s protective membrane covers its vulnerable core"
+      },
+      "markers": [
+        {
+          "x": 83,
+          "y": 32,
+          "label": {
+            "ru": "Пока оболочка цела, обычная атака не даёт нужного окна урона",
+            "en": "The intact membrane prevents the normal damage opportunity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте условие снятия защиты видимым и подтверждайте открывшееся окно.",
+        "en": "Make the protection-removal condition visible and confirm the damage window."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=dMq29xa5hhA&t=127s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-burst-fire": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Очередь",
+      "en": "Burst fire"
+    },
+    "description": {
+      "ru": "Короткая последовательность выстрелов создаёт единое окно давления.",
+      "en": "A short sequence of shots forms one pressure window."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-xjzk50cb24s-40.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=xJzK50Cb24s&t=40s",
+      "originalUrl": "https://www.youtube.com/watch?v=xJzK50Cb24s",
+      "sourceFrameSeconds": 40,
+      "credit": "Team Cherry; gameplay capture by PC Indie Master Race",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by PC Indie Master Race. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: Навозный защитник выпускает шары короткой серией",
+        "en": "Hollow Knight: Dung Defender releases balls in a short series"
+      },
+      "alt": {
+        "ru": "Hollow Knight: Навозный защитник выпускает шары короткой серией",
+        "en": "Hollow Knight: Dung Defender releases balls in a short series"
+      },
+      "markers": [
+        {
+          "x": 61,
+          "y": 31,
+          "label": {
+            "ru": "Несколько выпущенных подряд шаров образуют одно окно давления",
+            "en": "Successive balls form a single pressure window"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Задавайте читаемые начало и конец серии, а не только интервал отдельных выстрелов.",
+        "en": "Give the burst readable boundaries as well as spacing between individual shots."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=xJzK50Cb24s&t=40s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-attack-combination": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Комбинация атак",
+      "en": "Attack combination"
+    },
+    "description": {
+      "ru": "Связанные атаки образуют последовательность с общим ритмом и переходами.",
+      "en": "Linked attacks form a sequence with shared timing and transitions."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vcwh1bhhnko-182.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Dark Souls III",
+      "sourceUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=182s",
+      "originalUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo",
+      "sourceFrameSeconds": 182,
+      "credit": "FromSoftware / Bandai Namco Entertainment; gameplay capture by Shirrako",
+      "rights": "Game graphics © FromSoftware / Bandai Namco Entertainment. Gameplay recording by Shirrako. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Dark Souls III: Танцовщица связывает круговые удары в серию",
+        "en": "Dark Souls III: the Dancer links sweeping strikes into a combination"
+      },
+      "alt": {
+        "ru": "Dark Souls III: Танцовщица связывает круговые удары в серию",
+        "en": "Dark Souls III: the Dancer links sweeping strikes into a combination"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 64,
+          "label": {
+            "ru": "Клинок проходит по дуге рядом с корпусом босса",
+            "en": "A blade follows an arc beside the boss’s body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте продолжение серии и сохраняйте различимую паузу после её окончания.",
+        "en": "Signal the next strike in the sequence and preserve a distinct pause when it ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dark Souls III",
+        "url": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=182s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-delayed-activation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отложенная активация",
+      "en": "Delayed activation"
+    },
+    "description": {
+      "ru": "Между предупреждением и действием угрозы задана заметная задержка.",
+      "en": "A deliberate delay separates warning from threat activation."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-rv6vnqvy-4o-62.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://www.youtube.com/watch?v=RV6vnqvy-4o&t=62s",
+      "originalUrl": "https://www.youtube.com/watch?v=RV6vnqvy-4o",
+      "sourceFrameSeconds": 62,
+      "credit": "Dodge Roll / Devolver Digital; gameplay capture by RiggyRob + Pimmsy Play",
+      "rights": "Game graphics © Dodge Roll / Devolver Digital. Gameplay recording by RiggyRob + Pimmsy Play. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Enter the Gungeon: красные области предупреждают о выбросе из мин",
+        "en": "Enter the Gungeon: red areas warn of the mines’ discharge"
+      },
+      "alt": {
+        "ru": "Enter the Gungeon: красные области предупреждают о выбросе из мин",
+        "en": "Enter the Gungeon: red areas warn of the mines’ discharge"
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 42,
+          "label": {
+            "ru": "Предупреждение появляется до опасного выброса из установленной мины",
+            "en": "The placed mine shows a warning before its dangerous discharge"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте длительность предупреждения с расстоянием до безопасной позиции.",
+        "en": "Match warning duration to the distance required to reach safety."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://www.youtube.com/watch?v=RV6vnqvy-4o&t=62s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-shrinking-safe-area": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сужение безопасной области",
+      "en": "Shrinking safe area"
+    },
+    "description": {
+      "ru": "Доступная безопасная часть арены постепенно уменьшается.",
+      "en": "The arena's safe portion gradually contracts."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-bgh04-wcryk-62.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=62s",
+      "originalUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk",
+      "sourceFrameSeconds": 62,
+      "credit": "Team Cherry; gameplay capture by PrizMatex",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by PrizMatex. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: шипы и световая стена сжимают безопасный участок",
+        "en": "Hollow Knight: spikes and a light wall compress the safe area"
+      },
+      "alt": {
+        "ru": "Hollow Knight: шипы и световая стена сжимают безопасный участок",
+        "en": "Hollow Knight: spikes and a light wall compress the safe area"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 89,
+          "label": {
+            "ru": "Занятая шипами часть пола оставляет меньше места для уклонения",
+            "en": "The spike-covered floor leaves less room to evade"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте достижимость оставшейся зоны с учётом скорости игрока и других угроз.",
+        "en": "Check that the remaining safe area is reachable given player speed and other threats."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=62s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-lingering-hazard": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Остаточная опасная зона",
+      "en": "Lingering hazard"
+    },
+    "description": {
+      "ru": "После атаки участок остаётся опасным некоторое время.",
+      "en": "An attacked location remains hazardous for a period afterward."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-bgh04-wcryk-62.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=62s",
+      "originalUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk",
+      "sourceFrameSeconds": 62,
+      "credit": "Team Cherry; gameplay capture by PrizMatex",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by PrizMatex. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: напольные шипы остаются во время следующих атак",
+        "en": "Hollow Knight: floor spikes remain active during subsequent attacks"
+      },
+      "alt": {
+        "ru": "Hollow Knight: напольные шипы остаются во время следующих атак",
+        "en": "Hollow Knight: floor spikes remain active during subsequent attacks"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 89,
+          "label": {
+            "ru": "Опасный пол сохраняется, пока босс добавляет другую угрозу",
+            "en": "The hazardous floor persists while the boss adds another threat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте понять, когда зона исчезнет, и учитывайте её при планировании следующей атаки.",
+        "en": "Show when the hazard expires and account for it when planning the next attack."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=62s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-teleport": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Телепортация",
+      "en": "Teleport"
+    },
+    "description": {
+      "ru": "Босс меняет место без обычного прохождения промежуточного пути.",
+      "en": "The boss relocates without normally traversing the intervening space."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-7jwq9kjwpye-17.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=7JWQ9KjwPyE&t=17s",
+      "originalUrl": "https://www.youtube.com/watch?v=7JWQ9KjwPyE",
+      "sourceFrameSeconds": 17,
+      "credit": "Team Cherry; gameplay capture by fireb0rn",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by fireb0rn. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: появление Кошмарного короля Гримма из красного дыма",
+        "en": "Hollow Knight: Nightmare King Grimm appears from red smoke"
+      },
+      "alt": {
+        "ru": "Hollow Knight: появление Кошмарного короля Гримма из красного дыма",
+        "en": "Hollow Knight: Nightmare King Grimm appears from red smoke"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 57,
+          "label": {
+            "ru": "Дым обозначает новую точку появления босса",
+            "en": "Smoke marks the boss’s new arrival point"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте исчезновение, выбор новой точки и момент возобновления опасности.",
+        "en": "Separate disappearance, destination selection and renewed danger."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=7JWQ9KjwPyE&t=17s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-decoy": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ложная цель",
+      "en": "Decoy"
+    },
+    "description": {
+      "ru": "Ложные объекты затрудняют выбор настоящей цели.",
+      "en": "False objects complicate identification of the real target."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-muywmltb2km-84.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Terraria",
+      "sourceUrl": "https://www.youtube.com/watch?v=mUyWmLTb2KM&t=84s",
+      "originalUrl": "https://www.youtube.com/watch?v=mUyWmLTb2KM",
+      "sourceFrameSeconds": 84,
+      "credit": "Re-Logic; gameplay capture by Byro",
+      "rights": "Game graphics © Re-Logic. Gameplay recording by Byro. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Terraria: Мозг Ктулху создаёт несколько похожих образов",
+        "en": "Terraria: Brain of Cthulhu creates several similar images"
+      },
+      "alt": {
+        "ru": "Terraria: Мозг Ктулху создаёт несколько похожих образов",
+        "en": "Terraria: Brain of Cthulhu creates several similar images"
+      },
+      "markers": [
+        {
+          "x": 28,
+          "y": 24,
+          "label": {
+            "ru": "Полупрозрачный образ отвлекает от настоящей цели",
+            "en": "A translucent image distracts from the real target"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Оставляйте проверяемое различие между оригиналом и копиями, а не случайную угадайку.",
+        "en": "Leave a testable distinction between the original and copies rather than a random guess."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Terraria",
+        "url": "https://www.youtube.com/watch?v=mUyWmLTb2KM&t=84s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-objective-linked-invulnerability": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Неуязвимость, привязанная к цели",
+      "en": "Objective-linked invulnerability"
+    },
+    "description": {
+      "ru": "Устранение отдельной цели снимает защиту основного противника.",
+      "en": "Completing a separate objective removes the main opponent's protection."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-nosooqesnv0-188.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=NOSoOqEsnv0&t=188s",
+      "originalUrl": "https://www.youtube.com/watch?v=NOSoOqEsnv0",
+      "sourceFrameSeconds": 188,
+      "credit": "Team Cherry; gameplay capture by 2CPhoenix",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by 2CPhoenix. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight, Пантеон: ядра медуз снимают защиту Уумуу",
+        "en": "Hollow Knight, Godhome: jellyfish cores remove Uumuu’s protection"
+      },
+      "alt": {
+        "ru": "Hollow Knight, Пантеон: ядра медуз снимают защиту Уумуу",
+        "en": "Hollow Knight, Godhome: jellyfish cores remove Uumuu’s protection"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 69,
+          "label": {
+            "ru": "Ядро отдельной медузы нужно направить в защищённого босса",
+            "en": "An auxiliary jellyfish core must be directed into the shielded boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте отдельную цель, результат её выполнения и последующее окно атаки.",
+        "en": "Show the separate objective, its result and the following attack window."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=NOSoOqEsnv0&t=188s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-environmental-weapon": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Орудие окружения",
+      "en": "Environmental weapon"
+    },
+    "description": {
+      "ru": "Объект арены становится средством поражения босса.",
+      "en": "An arena object becomes a means of damaging the boss."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-gcemrrxqcbe-50.webp",
+      "width": 256,
+      "height": 224,
+      "game": "Super Metroid",
+      "sourceUrl": "https://www.youtube.com/watch?v=gcemRrXqCbE&t=50s",
+      "originalUrl": "https://www.youtube.com/watch?v=gcemRrXqCbE",
+      "sourceFrameSeconds": 50,
+      "credit": "Nintendo; gameplay capture by Desbreko",
+      "rights": "Game graphics © Nintendo. Gameplay recording by Desbreko. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Super Metroid: Grapple Beam соединяет Дрейгона с контактом в стене",
+        "en": "Super Metroid: the Grapple Beam connects Draygon to a wall contact"
+      },
+      "alt": {
+        "ru": "Super Metroid: Grapple Beam соединяет Дрейгона с контактом в стене",
+        "en": "Super Metroid: the Grapple Beam connects Draygon to a wall contact"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 29,
+          "label": {
+            "ru": "Повреждённая установка в стене проводит электрический урон",
+            "en": "The damaged wall installation becomes an electrical damage source"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте подготовку орудия окружения от его использования и обычного оружия.",
+        "en": "Distinguish preparing the environmental weapon from using it and from normal attacks."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Super Metroid",
+        "url": "https://www.youtube.com/watch?v=gcemRrXqCbE&t=50s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-encounter-specific-tool": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Особый инструмент боя",
+      "en": "Encounter-specific tool"
+    },
+    "description": {
+      "ru": "Особое средство боя даёт действие, необходимое для текущего противника.",
+      "en": "An encounter-specific tool provides an action needed against this opponent."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-0lb4p-qnjiw-215.webp",
+      "width": 256,
+      "height": 224,
+      "game": "Super Metroid",
+      "sourceUrl": "https://www.youtube.com/watch?v=0lb4p-Qnjiw&t=215s",
+      "originalUrl": "https://www.youtube.com/watch?v=0lb4p-Qnjiw",
+      "sourceFrameSeconds": 215,
+      "credit": "Nintendo; gameplay capture by Desbreko",
+      "rights": "Game graphics © Nintendo. Gameplay recording by Desbreko. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Super Metroid: Hyper Beam используется в финале боя с Mother Brain",
+        "en": "Super Metroid: the Hyper Beam is used in the Mother Brain finale"
+      },
+      "alt": {
+        "ru": "Super Metroid: Hyper Beam используется в финале боя с Mother Brain",
+        "en": "Super Metroid: the Hyper Beam is used in the Mother Brain finale"
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 63,
+          "label": {
+            "ru": "Полученный на этом этапе луч меняет возможности Самус в финале",
+            "en": "The beam gained in this phase changes Samus’s options for the finale"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обучайте новому инструменту в безопасном окне и делайте его роль в бое очевидной.",
+        "en": "Teach the special tool in a safe window and make its role in the encounter clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Super Metroid",
+        "url": "https://www.youtube.com/watch?v=0lb4p-Qnjiw&t=215s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-baited-self-hit": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Самоповреждение через приманку",
+      "en": "Baited self-hit"
+    },
+    "description": {
+      "ru": "Игрок направляет действие босса так, чтобы тот повредил себя.",
+      "en": "The player steers a boss action into damaging the boss itself."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-jxhxv5ecs3u-25.webp",
+      "width": 640,
+      "height": 360,
+      "game": "The Binding of Isaac: Rebirth",
+      "sourceUrl": "https://www.youtube.com/watch?v=JXhXv5EcS3U&t=25s",
+      "originalUrl": "https://www.youtube.com/watch?v=JXhXv5EcS3U",
+      "sourceFrameSeconds": 25,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by StoryShifty",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by StoryShifty. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: Чаб уязвим к проглоченной бомбе",
+        "en": "The Binding of Isaac: Chub is vulnerable to a swallowed bomb"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: Чаб уязвим к проглоченной бомбе",
+        "en": "The Binding of Isaac: Chub is vulnerable to a swallowed bomb"
+      },
+      "markers": [
+        {
+          "x": 91,
+          "y": 48,
+          "label": {
+            "ru": "Проглоченная приманка взрывается внутри босса",
+            "en": "The swallowed bait explodes inside the boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте возможность приманки до наказания и подтверждайте удачное попадание.",
+        "en": "Signal the bait opportunity before punishment and confirm a successful hit."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Rebirth",
+        "url": "https://www.youtube.com/watch?v=JXhXv5EcS3U&t=25s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-wave-clear-objective": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Победа через волны",
+      "en": "Wave-clear objective"
+    },
+    "description": {
+      "ru": "Продвижение боя определяется завершением последовательных волн.",
+      "en": "Encounter progress depends on completing successive enemy waves."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-gq-7d79ulri-15.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 150,
+        "y": 0,
+        "width": 340,
+        "height": 360
+      },
+      "game": "The Binding of Isaac: Repentance",
+      "sourceUrl": "https://www.youtube.com/watch?v=Gq-7D79ULRI&t=15s",
+      "originalUrl": "https://www.youtube.com/watch?v=Gq-7D79ULRI",
+      "sourceFrameSeconds": 15,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by Alexix128",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by Alexix128. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: Great Gideon проверяет зачистку волн",
+        "en": "The Binding of Isaac: Great Gideon is resolved by clearing waves"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: Great Gideon проверяет зачистку волн",
+        "en": "The Binding of Isaac: Great Gideon is resolved by clearing waves"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 94,
+          "label": {
+            "ru": "Счётчик 2/6 показывает продвижение через шесть волн",
+            "en": "The 2/6 counter shows progress through six waves"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, что продвигает встречу: зачистка, выживание или непосредственный урон.",
+        "en": "Explain whether clearing enemies, surviving or direct damage advances the encounter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Repentance",
+        "url": "https://www.youtube.com/watch?v=Gq-7D79ULRI&t=15s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-persistent-progress": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сохранение прогресса между попытками",
+      "en": "Persistent encounter progress"
+    },
+    "description": {
+      "ru": "Выполненные этапы сохраняются после поражения и учитываются в следующей попытке.",
+      "en": "Completed milestones survive defeat and shape the next attempt."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-thhfamddo54-42.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Dark Souls",
+      "sourceUrl": "https://www.youtube.com/watch?v=THhfAmDDO54&t=42s",
+      "originalUrl": "https://www.youtube.com/watch?v=THhfAmDDO54",
+      "sourceFrameSeconds": 42,
+      "credit": "FromSoftware / Bandai Namco Entertainment; gameplay capture by Speer Gaming",
+      "rights": "Game graphics © FromSoftware / Bandai Namco Entertainment. Gameplay recording by Speer Gaming. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Dark Souls: разрушение бокового узла Ложа Хаоса засчитывается отдельно",
+        "en": "Dark Souls: destroying a Bed of Chaos side node records separate progress"
+      },
+      "alt": {
+        "ru": "Dark Souls: разрушение бокового узла Ложа Хаоса засчитывается отдельно",
+        "en": "Dark Souls: destroying a Bed of Chaos side node records separate progress"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 46,
+          "label": {
+            "ru": "Уничтоженный боковой узел не требуется разрушать заново после смерти",
+            "en": "A destroyed side node does not have to be destroyed again after death"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Явно подтверждайте сохранённый этап и состояние, с которого начнётся следующая попытка.",
+        "en": "Confirm the saved milestone and the state used for the next attempt."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dark Souls",
+        "url": "https://www.youtube.com/watch?v=THhfAmDDO54&t=42s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-pacifist-resolution": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ненасильственное завершение",
+      "en": "Pacifist resolution"
+    },
+    "description": {
+      "ru": "Условие завершения позволяет закончить встречу без убийства противника.",
+      "en": "A completion condition ends the encounter without killing the opponent."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-o9locrmum54-44.webp",
+      "width": 640,
+      "height": 360,
+      "game": "The Binding of Isaac: Repentance",
+      "sourceUrl": "https://www.youtube.com/watch?v=O9LOcrmuM54&t=44s",
+      "originalUrl": "https://www.youtube.com/watch?v=O9LOcrmuM54",
+      "sourceFrameSeconds": 44,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by Hertz-01",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by Hertz-01. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: награда Plum Flute после мирного ухода Baby Plum",
+        "en": "The Binding of Isaac: Plum Flute awarded after Baby Plum leaves peacefully"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: награда Plum Flute после мирного ухода Baby Plum",
+        "en": "The Binding of Isaac: Plum Flute awarded after Baby Plum leaves peacefully"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 22,
+          "label": {
+            "ru": "Plum Flute подтверждает исход, полученный выжиданием без атак",
+            "en": "Plum Flute confirms the outcome earned by waiting without attacking"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте заметить мирный выход и сохраняйте возможность выбрать его осознанно.",
+        "en": "Make the peaceful route discoverable and let players choose it deliberately."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Repentance",
+        "url": "https://www.youtube.com/watch?v=O9LOcrmuM54&t=44s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-player-controlled-boss": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Босс под управлением другого игрока",
+      "en": "Player-controlled boss"
+    },
+    "description": {
+      "ru": "Решения босса принимает другой игрок в рамках заданных правил.",
+      "en": "Another player makes boss decisions within defined rules."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-bqyb4ipilr4-480.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Crawl",
+      "sourceUrl": "https://www.youtube.com/watch?v=BQYB4ipIlR4&t=480s",
+      "originalUrl": "https://www.youtube.com/watch?v=BQYB4ipIlR4",
+      "sourceFrameSeconds": 480,
+      "credit": "Powerhoof; gameplay capture by Milky Way Mammals",
+      "rights": "Game graphics © Powerhoof. Gameplay recording by Milky Way Mammals. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Crawl: участники группы управляют боссом против игрока-героя",
+        "en": "Crawl: group participants control the boss against the human challenger"
+      },
+      "alt": {
+        "ru": "Crawl: участники группы управляют боссом против игрока-героя",
+        "en": "Crawl: group participants control the boss against the human challenger"
+      },
+      "markers": [
+        {
+          "x": 27,
+          "y": 91,
+          "label": {
+            "ru": "Панель BOSS показывает участников на стороне босса",
+            "en": "The BOSS panel identifies participants controlling the boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Балансируйте читаемость атак и доступные действия для обеих сторон встречи.",
+        "en": "Balance attack readability and available actions for both sides of the encounter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crawl",
+        "url": "https://www.youtube.com/watch?v=BQYB4ipIlR4&t=480s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-boss-as-terrain": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Босс как уровень",
+      "en": "Boss as terrain"
+    },
+    "description": {
+      "ru": "Тело босса становится поверхностью для перемещения и достижения целей.",
+      "en": "The boss's body becomes terrain for traversal and reaching objectives."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-u7mop3fhwfk-53.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Sonic Origins: Sonic 3 & Knuckles",
+      "sourceUrl": "https://www.youtube.com/watch?v=U7mop3FhwFk&t=53s",
+      "originalUrl": "https://www.youtube.com/watch?v=U7mop3FhwFk",
+      "sourceFrameSeconds": 53,
+      "credit": "SEGA; gameplay capture by VictorVeloDragon",
+      "rights": "Game graphics © SEGA. Gameplay recording by VictorVeloDragon. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Sonic Origins: части Egg Golem служат опорами на пути к верхней цели",
+        "en": "Sonic Origins: Egg Golem’s parts provide footholds toward the upper target"
+      },
+      "alt": {
+        "ru": "Sonic Origins: части Egg Golem служат опорами на пути к верхней цели",
+        "en": "Sonic Origins: Egg Golem’s parts provide footholds toward the upper target"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 60,
+          "label": {
+            "ru": "Выступ руки становится промежуточной опорой для подъёма",
+            "en": "The arm ledge becomes an intermediate foothold for climbing"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте безопасную опору, контактный урон и уязвимую часть тела босса.",
+        "en": "Distinguish safe footholds, contact damage and the boss’s vulnerable body part."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Origins: Sonic 3 & Knuckles",
+        "url": "https://www.youtube.com/watch?v=U7mop3FhwFk&t=53s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-chase-herding": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Погоня с загоном",
+      "en": "Chase herding"
+    },
+    "description": {
+      "ru": "Преследование направляет игрока в заданные участки или маршруты.",
+      "en": "Pursuit steers the player toward particular areas or routes."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-1qrti6rrscc-5.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Sonic Advance 2",
+      "sourceUrl": "https://www.youtube.com/watch?v=1Qrti6Rrscc&t=5s",
+      "originalUrl": "https://www.youtube.com/watch?v=1Qrti6Rrscc",
+      "sourceFrameSeconds": 5,
+      "credit": "SEGA / Dimps; gameplay capture by NintenU",
+      "rights": "Game graphics © SEGA / Dimps. Gameplay recording by NintenU. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Sonic Advance 2: движение Egg Hammer Tank II ограничивает позицию Соника",
+        "en": "Sonic Advance 2: Egg Hammer Tank II’s movement constrains Sonic’s position"
+      },
+      "alt": {
+        "ru": "Sonic Advance 2: движение Egg Hammer Tank II ограничивает позицию Соника",
+        "en": "Sonic Advance 2: Egg Hammer Tank II’s movement constrains Sonic’s position"
+      },
+      "markers": [
+        {
+          "x": 62,
+          "y": 65,
+          "label": {
+            "ru": "Движущаяся машина и молот сжимают пространство рядом с героем",
+            "en": "The moving machine and hammer restrict space beside the hero"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Задавайте пределы давления и оставляйте путь выхода из зажима.",
+        "en": "Define pressure limits and leave an escape route from being cornered."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Advance 2",
+        "url": "https://www.youtube.com/watch?v=1Qrti6Rrscc&t=5s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-forced-scrolling": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Принудительная прокрутка",
+      "en": "Forced scrolling"
+    },
+    "description": {
+      "ru": "Смещение игрового пространства заставляет поддерживать движение.",
+      "en": "Scrolling play space forces continued movement."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-1qrti6rrscc-5.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Sonic Advance 2",
+      "sourceUrl": "https://www.youtube.com/watch?v=1Qrti6Rrscc&t=5s",
+      "originalUrl": "https://www.youtube.com/watch?v=1Qrti6Rrscc",
+      "sourceFrameSeconds": 5,
+      "credit": "SEGA / Dimps; gameplay capture by NintenU",
+      "rights": "Game graphics © SEGA / Dimps. Gameplay recording by NintenU. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Sonic Advance 2: бой проходит на непрерывно прокручиваемом маршруте",
+        "en": "Sonic Advance 2: the encounter runs along a continuously scrolling route"
+      },
+      "alt": {
+        "ru": "Sonic Advance 2: бой проходит на непрерывно прокручиваемом маршруте",
+        "en": "Sonic Advance 2: the encounter runs along a continuously scrolling route"
+      },
+      "markers": [
+        {
+          "x": 40,
+          "y": 83,
+          "label": {
+            "ru": "Движение маршрута требует удерживаться в рабочей части экрана",
+            "en": "Route motion requires staying in the usable screen area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте минимальную скорость продвижения и время на реакцию у края экрана.",
+        "en": "Check required forward speed and reaction time near screen boundaries."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sonic Advance 2",
+        "url": "https://www.youtube.com/watch?v=1Qrti6Rrscc&t=5s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-control-mode-shift": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Смена режима управления",
+      "en": "Control mode shift"
+    },
+    "description": {
+      "ru": "Фаза боя меняет доступные способы управления персонажем.",
+      "en": "An encounter stage changes the available character control mode."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-cu9nv5am5ay-175.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Undertale",
+      "sourceUrl": "https://www.youtube.com/watch?v=cU9Nv5aM5aY&t=175s",
+      "originalUrl": "https://www.youtube.com/watch?v=cU9Nv5aM5aY",
+      "sourceFrameSeconds": 175,
+      "credit": "Toby Fox; gameplay capture by Fasgort",
+      "rights": "Game graphics © Toby Fox. Gameplay recording by Fasgort. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Undertale: синяя душа в бою с Папирусом подчиняется гравитации",
+        "en": "Undertale: the blue soul obeys gravity during the Papyrus fight"
+      },
+      "alt": {
+        "ru": "Undertale: синяя душа в бою с Папирусом подчиняется гравитации",
+        "en": "Undertale: the blue soul obeys gravity during the Papyrus fight"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 79,
+          "label": {
+            "ru": "В синем режиме нужно прыгать через кости, а не свободно летать",
+            "en": "Blue mode requires jumping over bones rather than moving freely"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте смену режима заранее и давайте безопасно проверить новое управление.",
+        "en": "Signal the mode change and allow a safe test of the new controls."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Undertale",
+        "url": "https://www.youtube.com/watch?v=cU9Nv5aM5aY&t=175s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-relocated-arena": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вложенная или сменная арена",
+      "en": "Nested / relocated arena"
+    },
+    "description": {
+      "ru": "Бой переносится в другое пространство с собственными ограничениями.",
+      "en": "The encounter moves into another space with its own constraints."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-yvbpzmhwlgk-31.webp",
+      "width": 640,
+      "height": 360,
+      "game": "The Binding of Isaac: Repentance",
+      "sourceUrl": "https://www.youtube.com/watch?v=YvBpZmHWLGk&t=31s",
+      "originalUrl": "https://www.youtube.com/watch?v=YvBpZmHWLGk",
+      "sourceFrameSeconds": 31,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by SlayXc2",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by SlayXc2. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: внутренняя арена Rotgut меняет вид боя на боковой",
+        "en": "The Binding of Isaac: Rotgut’s internal arena changes combat to a side view"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: внутренняя арена Rotgut меняет вид боя на боковой",
+        "en": "The Binding of Isaac: Rotgut’s internal arena changes combat to a side view"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 52,
+          "label": {
+            "ru": "После переноса игрок действует на отдельной платформенной арене",
+            "en": "After relocation the player acts in a separate platform arena"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте понятную связь новой арены с общей встречей и условиями возвращения.",
+        "en": "Keep the new arena’s connection to the encounter and return conditions clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Repentance",
+        "url": "https://www.youtube.com/watch?v=YvBpZmHWLGk&t=31s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-secondary-cues-invisibility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Скрытый босс и вторичные следы",
+      "en": "Invisibility"
+    },
+    "description": {
+      "ru": "Положение скрытого босса раскрывают следы, звук или иные косвенные признаки.",
+      "en": "Traces, sound or other indirect cues reveal a hidden boss's position."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-bisn9nm9zqo-70.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Metroid Dread",
+      "sourceUrl": "https://www.youtube.com/watch?v=BIsn9Nm9zqo&t=70s",
+      "originalUrl": "https://www.youtube.com/watch?v=BIsn9Nm9zqo",
+      "sourceFrameSeconds": 70,
+      "credit": "Nintendo / MercurySteam; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Nintendo / MercurySteam. Gameplay recording by Boss Fight Database. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Metroid Dread: при маскировке Корпиуса остаётся виден кончик хвоста",
+        "en": "Metroid Dread: Corpius’s tail tip remains visible while it is cloaked"
+      },
+      "alt": {
+        "ru": "Metroid Dread: при маскировке Корпиуса остаётся виден кончик хвоста",
+        "en": "Metroid Dread: Corpius’s tail tip remains visible while it is cloaked"
+      },
+      "markers": [
+        {
+          "x": 75,
+          "y": 23,
+          "label": {
+            "ru": "Свечение хвоста помогает определить позицию скрытого босса",
+            "en": "The glowing tail helps locate the concealed boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте надёжный вторичный след: свечение, звук, тень или влияние на окружение.",
+        "en": "Preserve a reliable secondary cue such as glow, sound, shadow or environmental effects."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Metroid Dread",
+        "url": "https://www.youtube.com/watch?v=BIsn9Nm9zqo&t=70s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-sound-detection": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Обнаружение игрока по шуму",
+      "en": "Sound detection"
+    },
+    "description": {
+      "ru": "Шум от действий игрока влияет на обнаружение и реакцию босса.",
+      "en": "Noise from player actions affects boss detection and response."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-xowpwgjflpc-180.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Little Nightmares",
+      "sourceUrl": "https://www.youtube.com/watch?v=XowPwgjFlpc&t=180s",
+      "originalUrl": "https://www.youtube.com/watch?v=XowPwgjFlpc",
+      "sourceFrameSeconds": 180,
+      "credit": "Tarsier Studios / Bandai Namco Entertainment; gameplay capture by FFM TV",
+      "rights": "Game graphics © Tarsier Studios / Bandai Namco Entertainment. Gameplay recording by FFM TV. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Little Nightmares: слепой Сторож ориентируется на шум рядом с Шестой",
+        "en": "Little Nightmares: the blind Janitor tracks noise near Six"
+      },
+      "alt": {
+        "ru": "Little Nightmares: слепой Сторож ориентируется на шум рядом с Шестой",
+        "en": "Little Nightmares: the blind Janitor tracks noise near Six"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 43,
+          "label": {
+            "ru": "Закрытые глаза Сторожа делают шум важным каналом обнаружения",
+            "en": "The Janitor’s covered eyes make noise an important detection channel"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте слышимость с действиями игрока и показывайте реакцию противника на шум.",
+        "en": "Connect noise to player actions and show the enemy’s response to it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Little Nightmares",
+        "url": "https://www.youtube.com/watch?v=XowPwgjFlpc&t=180s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-wraparound-projectile": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Зацикленная траектория",
+      "en": "Wraparound projectile"
+    },
+    "description": {
+      "ru": "Выход снаряда через одну границу возвращает его с другой стороны.",
+      "en": "A projectile exiting one boundary returns from another side."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-o-emldm8gp0-55.webp",
+      "width": 640,
+      "height": 360,
+      "game": "The Binding of Isaac: Repentance",
+      "sourceUrl": "https://www.youtube.com/watch?v=o-emlDM8Gp0&t=55s",
+      "originalUrl": "https://www.youtube.com/watch?v=o-emlDM8Gp0",
+      "sourceFrameSeconds": 55,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by thereisnofuture",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by thereisnofuture. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: фиолетовые снаряды Continuum у Hush проходят края",
+        "en": "The Binding of Isaac: Hush’s purple Continuum shots pass through arena edges"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: фиолетовые снаряды Continuum у Hush проходят края",
+        "en": "The Binding of Isaac: Hush’s purple Continuum shots pass through arena edges"
+      },
+      "markers": [
+        {
+          "x": 95,
+          "y": 62,
+          "label": {
+            "ru": "Continuum переносит снаряды через край к противоположной стороне",
+            "en": "Continuum carries projectiles across an edge to the opposite side"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте точки выхода и возвращения; сохраняйте предсказуемую траекторию после переноса.",
+        "en": "Signal exit and reentry points and preserve a predictable path after wraparound."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Repentance",
+        "url": "https://www.youtube.com/watch?v=o-emlDM8Gp0&t=55s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-status-buildup": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Накопление состояния",
+      "en": "Status buildup"
+    },
+    "description": {
+      "ru": "Повторные воздействия наполняют шкалу, а порог запускает отдельный эффект.",
+      "en": "Repeated exposure fills a gauge whose threshold triggers a separate effect."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-i-vpbdz-uaw-6.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Salt and Sanctuary",
+      "sourceUrl": "https://www.youtube.com/watch?v=i-VPBdz-UAw&t=6s",
+      "originalUrl": "https://www.youtube.com/watch?v=i-VPBdz-UAw",
+      "sourceFrameSeconds": 6,
+      "credit": "Ska Studios; gameplay capture by Heliomagus",
+      "rights": "Game graphics © Ska Studios. Gameplay recording by Heliomagus. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Salt and Sanctuary: шкала накопления яда перед входом к боссу",
+        "en": "Salt and Sanctuary: a poison buildup gauge on the approach to the boss"
+      },
+      "alt": {
+        "ru": "Salt and Sanctuary: шкала накопления яда перед входом к боссу",
+        "en": "Salt and Sanctuary: a poison buildup gauge on the approach to the boss"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 3,
+          "label": {
+            "ru": "Зелёная шкала со значком яда отделяет накопление от обычного здоровья",
+            "en": "The green poison gauge separates buildup from ordinary health"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте накопление, срабатывание состояния и его длительность или способ снятия.",
+        "en": "Distinguish buildup, status activation and its duration or removal method."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Salt and Sanctuary",
+        "url": "https://www.youtube.com/watch?v=i-VPBdz-UAw&t=6s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-ability-lock": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Блокировка способности или лечения",
+      "en": "Ability or healing lock"
+    },
+    "description": {
+      "ru": "Выбранное действие временно недоступно по объявленному правилу.",
+      "en": "A named action becomes temporarily unavailable under an announced rule."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-w5nuxcvw-g8-5.webp",
+      "width": 240,
+      "height": 426,
+      "crop": {
+        "x": 20,
+        "y": 130,
+        "width": 200,
+        "height": 170
+      },
+      "game": "Terraria",
+      "sourceUrl": "https://www.youtube.com/watch?v=W5NUXcvW_G8&t=5s",
+      "originalUrl": "https://www.youtube.com/watch?v=W5NUXcvW_G8",
+      "sourceFrameSeconds": 5,
+      "credit": "Re-Logic; gameplay capture by arnie",
+      "rights": "Game graphics © Re-Logic. Gameplay recording by arnie. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Terraria: значок Moon Bite в поясняющем ролике о Лунном лорде",
+        "en": "Terraria: the Moon Bite icon in a Moon Lord explainer"
+      },
+      "alt": {
+        "ru": "Terraria: значок Moon Bite в поясняющем ролике о Лунном лорде",
+        "en": "Terraria: the Moon Bite icon in a Moon Lord explainer"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Лунный укус блокирует вампирское лечение, но не остальные его виды",
+            "en": "Moon Bite temporarily blocks lifesteal rather than all forms of healing"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Точно называйте заблокированное действие, срок ограничения и доступные альтернативы.",
+        "en": "Name the blocked action, restriction duration and remaining alternatives precisely."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Terraria",
+        "url": "https://www.youtube.com/watch?v=W5NUXcvW_G8&t=5s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-self-heal-cast": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прерываемое самолечение",
+      "en": "Interruptible self-heal"
+    },
+    "description": {
+      "ru": "Босс готовит лечение, которое игрок может прервать до завершения.",
+      "en": "The boss prepares a heal that the player can interrupt before completion."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-rqxou8lqnbq-137.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Bloodborne",
+      "sourceUrl": "https://www.youtube.com/watch?v=RQxOU8lqnBQ&t=137s",
+      "originalUrl": "https://www.youtube.com/watch?v=RQxOU8lqnBQ",
+      "sourceFrameSeconds": 137,
+      "credit": "FromSoftware / Sony Computer Entertainment; gameplay capture by PowerPyx",
+      "rights": "Game graphics © FromSoftware / Sony Computer Entertainment. Gameplay recording by PowerPyx. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Bloodborne: низкое здоровье Амелии в боевой сцене",
+        "en": "Bloodborne: Vicar Amelia at low health in combat"
+      },
+      "alt": {
+        "ru": "Bloodborne: низкое здоровье Амелии в боевой сцене",
+        "en": "Bloodborne: Vicar Amelia at low health in combat"
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 86,
+          "label": {
+            "ru": "Молитва Амелии может восстановить эту полосу, если лечение не прервать",
+            "en": "Amelia’s prayer can restore this bar if her healing is not interrupted"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте подготовку лечения от восстановления здоровья и показывайте способ прерывания.",
+        "en": "Separate healing preparation from health restoration and show how to interrupt it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bloodborne",
+        "url": "https://www.youtube.com/watch?v=RQxOU8lqnBQ&t=137s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-on-hit-healing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лечение при попадании или вампиризм",
+      "en": "On-hit healing or lifesteal"
+    },
+    "description": {
+      "ru": "Оговорённый контакт восстанавливает здоровье босса.",
+      "en": "A qualifying contact restores boss health."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-9adcfkcxblm-201.webp",
+      "width": 320,
+      "height": 240,
+      "game": "Pokémon FireRed and LeafGreen",
+      "sourceUrl": "https://www.youtube.com/watch?v=9ADcfkcxblM&t=201s",
+      "originalUrl": "https://www.youtube.com/watch?v=9ADcfkcxblM",
+      "sourceFrameSeconds": 201,
+      "credit": "Nintendo / Game Freak / The Pokémon Company; gameplay capture by Juan Ocampo",
+      "rights": "Game graphics © Nintendo / Game Freak / The Pokémon Company. Gameplay recording by Juan Ocampo. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Pokémon FireRed: Giga Drain Тангелы Эрики отнимает энергию Butterfree",
+        "en": "Pokémon FireRed: Erika’s Tangela drains Butterfree’s energy with Giga Drain"
+      },
+      "alt": {
+        "ru": "Pokémon FireRed: Giga Drain Тангелы Эрики отнимает энергию Butterfree",
+        "en": "Pokémon FireRed: Erika’s Tangela drains Butterfree’s energy with Giga Drain"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 78,
+          "label": {
+            "ru": "Сообщение подтверждает вытягивание энергии целью атаки Giga Drain",
+            "en": "The message confirms energy drained by Giga Drain"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте одновременно потерю здоровья у цели и восстановление у атакующего.",
+        "en": "Show the target’s health loss and the attacker’s recovery together."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Pokémon FireRed and LeafGreen",
+        "url": "https://www.youtube.com/watch?v=9ADcfkcxblM&t=201s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-external-healing-source": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перехватываемые источники лечения",
+      "en": "Interceptable healing sources"
+    },
+    "description": {
+      "ru": "Лечение приходит от отдельного источника, который можно перехватить.",
+      "en": "Healing comes from a separate source that can be intercepted."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-q1a3blmg5f4-9.webp",
+      "width": 640,
+      "height": 350,
+      "game": "Genshin Impact",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q1A3BLMg5F4&t=9s",
+      "originalUrl": "https://www.youtube.com/watch?v=Q1A3BLMg5F4",
+      "sourceFrameSeconds": 9,
+      "credit": "HoYoverse; gameplay capture by CS Success Gamer",
+      "rights": "Game graphics © HoYoverse. Gameplay recording by CS Success Gamer. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Genshin Impact: призмы возрождения Электро гипостазиса можно уничтожить",
+        "en": "Genshin Impact: Electro Hypostasis Revival Prisms can be destroyed"
+      },
+      "alt": {
+        "ru": "Genshin Impact: призмы возрождения Электро гипостазиса можно уничтожить",
+        "en": "Genshin Impact: Electro Hypostasis Revival Prisms can be destroyed"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 49,
+          "label": {
+            "ru": "Уничтожение отдельных призм мешает боссу восстановиться",
+            "en": "Destroying the separate prisms prevents the boss from recovering"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте источник восстановления и срок, за который группа может его перехватить.",
+        "en": "Show the recovery source and the time available to intercept it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Genshin Impact",
+        "url": "https://www.youtube.com/watch?v=Q1A3BLMg5F4&t=9s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-resource-steal": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кража или выбивание ресурса",
+      "en": "Resource steal or drop"
+    },
+    "description": {
+      "ru": "Попадание меняет владельца ресурса или выбрасывает его для возможного возврата.",
+      "en": "A hit transfers resource ownership or drops it for possible recovery."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-xqlxp2yua64-120.webp",
+      "width": 640,
+      "height": 360,
+      "game": "The Binding of Isaac: Afterbirth",
+      "sourceUrl": "https://www.youtube.com/watch?v=XQlXp2yua64&t=120s",
+      "originalUrl": "https://www.youtube.com/watch?v=XQlXp2yua64",
+      "sourceFrameSeconds": 120,
+      "credit": "Nicalis / Edmund McMillen; gameplay capture by quackalakes",
+      "rights": "Game graphics © Nicalis / Edmund McMillen. Gameplay recording by quackalakes. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Binding of Isaac: запас монет находится под угрозой у Ультра Жадности",
+        "en": "The Binding of Isaac: the coin reserve is at risk against Ultra Greed"
+      },
+      "alt": {
+        "ru": "The Binding of Isaac: запас монет находится под угрозой у Ультра Жадности",
+        "en": "The Binding of Isaac: the coin reserve is at risk against Ultra Greed"
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 15,
+          "label": {
+            "ru": "Попадания Ультра Жадности могут выбивать монеты из запаса игрока",
+            "en": "Ultra Greed’s hits can knock coins out of the player’s reserve"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте временно выбитый ресурс, возможность подобрать его и окончательную потерю.",
+        "en": "Distinguish dropped resources, opportunities to recover them and permanent loss."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Binding of Isaac: Afterbirth",
+        "url": "https://www.youtube.com/watch?v=XQlXp2yua64&t=120s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-false-death": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ложная смерть и возвращение",
+      "en": "False death and return"
+    },
+    "description": {
+      "ru": "Видимое поражение босса запускает возвращение или новую фазу.",
+      "en": "An apparent boss defeat triggers revival or another phase."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final--4gt-ztkauk-104.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=_4GT_ztkAUk&t=104s",
+      "originalUrl": "https://www.youtube.com/watch?v=_4GT_ztkAUk",
+      "sourceFrameSeconds": 104,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hollow Knight: Повелитель душ атакует снова после ложного завершения",
+        "en": "Hollow Knight: Soul Master attacks again after an apparent ending"
+      },
+      "alt": {
+        "ru": "Hollow Knight: Повелитель душ атакует снова после ложного завершения",
+        "en": "Hollow Knight: Soul Master attacks again after an apparent ending"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 54,
+          "label": {
+            "ru": "После эффекта победы босс возвращается с новым ударом в пол",
+            "en": "After the apparent victory effect the boss returns with a ground strike"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Используйте ложное завершение осмысленно и оставляйте игроку время вернуть управление.",
+        "en": "Use false endings deliberately and allow time to regain control."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=_4GT_ztkAUk&t=104s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-forced-inertia": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Принудительная инерция",
+      "en": "Forced inertia"
+    },
+    "description": {
+      "ru": "Сохранение импульса ограничивает возможность мгновенно изменить движение.",
+      "en": "Retained momentum limits immediate changes in movement."
+    },
+    "image": {
+      "src": "images/mechanics/boss-final-ltriaxxprfs-17.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Mega Man (Legacy Collection)",
+      "sourceUrl": "https://www.youtube.com/watch?v=lTRIaXXPRfs&t=17s",
+      "originalUrl": "https://www.youtube.com/watch?v=lTRIaXXPRfs",
+      "sourceFrameSeconds": 17,
+      "credit": "Capcom; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Capcom. Gameplay recording by Boss Fight Database. Original visible source markings retained. All rights reserved; excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Mega Man: ледяной пол в комнате Ice Man меняет остановку движения",
+        "en": "Mega Man: the icy floor in Ice Man’s room changes stopping behavior"
+      },
+      "alt": {
+        "ru": "Mega Man: ледяной пол в комнате Ice Man меняет остановку движения",
+        "en": "Mega Man: the icy floor in Ice Man’s room changes stopping behavior"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 90,
+          "label": {
+            "ru": "На скользком полу нужно учитывать остаточное движение после ввода",
+            "en": "The slippery floor requires accounting for motion after input ends"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте почувствовать инерцию до опасной атаки и учитывайте время торможения.",
+        "en": "Let players feel the inertia before a dangerous attack and allow braking time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mega Man (Legacy Collection)",
+        "url": "https://www.youtube.com/watch?v=lTRIaXXPRfs&t=17s"
+      }
+    ]
   }
 }

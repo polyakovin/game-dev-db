@@ -485,3 +485,11 @@ Square Enix's Crystalline Conflict guide, and `online-duolingo-leagues.webp`
 comes from Duolingo's official explanation of its weekly leagues. The Black
 Watchmen screen uses the publisher's fictional investigation website example.
 Original publishers and capture authors retain their respective rights.
+
+Additional `boss-final-*.webp` frames retain the original game graphics and
+capture authors' rights. Each card stores the exact public recording URL,
+source time and uploader credit. A caption distinguishes an observed active
+move from a preparatory state, a UI indicator, a conditional rule or an
+explainer's enlargement. The Moon Bite illustration is explicitly the icon
+shown in an explanatory video, and poison buildup is identified on the
+approach to the boss. Creator overlays and game-version context are retained.
