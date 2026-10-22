@@ -18,12 +18,20 @@ Software, build tooling, tests, configuration, and repository development docume
 
 External links, third-party quotations, trademarks, and explicitly attributed external code or media retain their respective rights and licenses. Linking a resource does not relicense it or authorize copying its full contents. Check the original source before reuse.
 
-## Mechanic screenshot
+## Mechanic screenshots
 
-The Hidden Folks screenshot in `public/images/mechanics/hidden-folks-jungle.png`
+The Hidden Folks screenshot in `public/images/mechanics/hidden-folks-jungle.webp`
 is third-party promotional media from the game's official press kit, used for an
 attributed editorial illustration. © Adriaan de Jongh & Sylvain Tegroeg. All rights
 reserved. It is excluded from MIT and CC BY 4.0. See its [source and credit](public/images/mechanics/README.md).
+
+Other game screenshots retain the rights and provenance recorded in each card's
+`image.credit`, `image.rights`, `image.sourceUrl` and `image.originalUrl` fields.
+They do not acquire the portal's content license through publication here.
+The NetHack inventory capture remains under the [NetHack General Public
+License](public/images/mechanics/nethack-license.txt). The original 2048 capture
+uses Gabriele Cirulli's game under its [MIT license](public/images/mechanics/2048-license.txt).
+Those notices accompany the published images.
 
 ## Bundled fonts
 

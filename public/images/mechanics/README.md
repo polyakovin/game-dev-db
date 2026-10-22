@@ -16,11 +16,12 @@ Numbered annotations are HTML overlays, not changes to the source image.
 ## Additional editorial screenshots
 
 The card collection uses compressed WebP derivatives of publisher/developer screenshots retrieved on
-2026-10-21 from the sources below. Each card records its exact original image URL,
+2026-10-21 and 2026-10-22 from the sources below. Each card records its exact original image URL,
 source page, dimensions, authors and rights in `src/data/mechanic-previews.json`.
 Published files are resized without upscaling to at most 1440 pixels on the long
 edge and compressed to at most 250 KiB. Original URLs retain source provenance.
-Crops and contextual markers are HTML/CSS overlays.
+Crops and contextual markers are HTML/CSS overlays. The separately documented
+NetHack and 2048 captures below retain their own free-software licenses.
 
 | Files | Game / credit | Publisher or developer source |
 | --- | --- | --- |
@@ -229,3 +230,36 @@ uses Pearl Abyss' [official enhancement guide](https://www.sa.playblackdesert.co
 Devour's 100% conversion is distinguished from a guaranteed enhancement after
 failed attempts. All these images retain third-party rights, are excluded from
 MIT and CC BY 4.0, and follow the same compressed WebP budget.
+
+## Narrative and system examples
+
+`narrative-*.webp` and `broad-*.webp` use inspected publisher-distributed Steam
+screenshots for investigation, visual novels, cooperative games and system
+interfaces. `systems-*.webp` adds publisher screenshots of roguelike, card and
+exploration examples. Exact original URLs, game names and credits are recorded
+per image in `src/data/mechanic-previews.json`; each numbered overlay explains a
+visible detail. Store watermarks and published build labels are preserved.
+
+`progression-essence-transfer.webp` is the inspected frame at 14.92 seconds in
+Blizzard's animated [Diablo Immortal closed-alpha preview](https://news.blizzard.com/en-us/article/23657317/diablo-immortal-closed-alpha-the-crusade-begins).
+It shows a helmet before and after inheriting a legendary property. The original
+animation URL and timestamp remain in card metadata. This is a historical
+interface example, not a claim that the current interface is identical.
+
+### Freely licensed captures
+
+- `systems-nethack-inventory.webp`: NetHack developers; screenshot by Shen, 2006,
+  with the menucolors patch. [Original capture and provenance](https://commons.wikimedia.org/wiki/File:Nethack-inventory.png).
+  Converted from PNG to lossless WebP on 2026-10-22. The image remains under the
+  NetHack General Public License, supplied in [nethack-license.txt](nethack-license.txt).
+  It shows the actual game inventory, including unidentified scrolls, food and a
+  cursed equipped helmet.
+- `systems-2048-original.webp`: Gabriele Cirulli, original 2048. Captured from an
+  unmodified local copy of the [original game](https://github.com/gabrielecirulli/2048)
+  on 2026-10-22 after normal keyboard moves. No tile values or positions were
+  inserted. Converted to lossless WebP; the [original MIT notice](2048-license.txt)
+  accompanies the image.
+
+These image-specific notices take precedence over the general rights-reserved
+statement for publisher media. The portal code and original explanatory text
+retain their respective MIT and CC BY 4.0 licenses.

@@ -6,7 +6,7 @@
 - [x] Convert all raster illustrations to compressed WebP and enforce image budgets.
 
 ## Authored rollout, in priority order
-- [ ] Cover broadly used movement, interaction, health and combat techniques.
+- [x] Cover broadly used movement, interaction, health and combat techniques.
 - [ ] Cover inventory, dialogue, resources, rewards and character progression.
 - [ ] Cover exploration, puzzles, narrative and information mechanics.
 - [ ] Cover construction, production, strategy, tactics and social systems.
