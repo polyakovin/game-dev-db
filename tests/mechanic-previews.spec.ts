@@ -250,7 +250,9 @@ for (const lang of ['ru', 'en'] as const) {
     const page = await context.newPage();
     for (const catalog of ['children', 'education']) {
       await page.goto(`${base}/${lang}/mechanics/${catalog}/`);
-      await page.locator('[data-mechanic-preview-link]').click();
+      await page
+        .locator(`[data-mechanic-preview-link][href="${route(lang)}"]`)
+        .click();
       await expect(page).toHaveURL(new RegExp(`${route(lang)}$`));
       await expect(page.locator('.preview-categories a')).toHaveCount(2);
       await expect(page.locator('.preview-description')).toBeVisible();
