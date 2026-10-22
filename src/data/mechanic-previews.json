@@ -46177,5 +46177,2070 @@
         "url": "https://store.steampowered.com/app/351510/"
       }
     ]
+  },
+  "boss-fight-atlas--boss-telegraph": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Предупреждение",
+      "en": "Telegraph"
+    },
+    "description": {
+      "ru": "Сигнал заранее сообщает вид, место или момент будущей опасности.",
+      "en": "A cue previews the type, location or timing of an upcoming threat."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-6anmowvo7tc-12.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s",
+      "originalUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc",
+      "sourceFrameSeconds": 12,
+      "credit": "Studio MDHR; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Тонкий указатель предупреждает о луче робота",
+        "en": "A thin targeting line warns of the robot’s beam"
+      },
+      "alt": {
+        "ru": "Тонкий указатель предупреждает о луче робота",
+        "en": "A thin targeting line warns of the robot’s beam"
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 9,
+          "label": {
+            "ru": "Головной излучатель задаёт видимый источник угрозы",
+            "en": "The head emitter provides a visible threat origin"
+          }
+        },
+        {
+          "x": 32,
+          "y": 64,
+          "label": {
+            "ru": "Тонкая линия обозначает направление перед мощным лучом",
+            "en": "A thin line marks the direction before the powerful beam"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте направление, форму и момент опасности до начала урона.",
+        "en": "Show threat direction, shape and timing before damage begins."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-wind-up": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подготовка",
+      "en": "Wind-up"
+    },
+    "description": {
+      "ru": "Подготовительное действие отделяет решение об атаке от её опасной части.",
+      "en": "A preparatory action separates attack commitment from its damaging stage."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-26.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=26s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 26,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Повелитель богомолов готовится атаковать со стены",
+        "en": "A Mantis Lord prepares to attack from the wall"
+      },
+      "alt": {
+        "ru": "Повелитель богомолов готовится атаковать со стены",
+        "en": "A Mantis Lord prepares to attack from the wall"
+      },
+      "markers": [
+        {
+          "x": 91,
+          "y": 53,
+          "label": {
+            "ru": "Поза босса на стене предшествует выпаду",
+            "en": "The boss’s wall stance precedes a lunge"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте подготовке отличимую позу и достаточное время для выбранного ответа.",
+        "en": "Give preparation a distinct pose and enough time for the intended response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=26s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-active-phase": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Активная фаза",
+      "en": "Active phase"
+    },
+    "description": {
+      "ru": "На этом отрезке времени действует поражающая часть атаки.",
+      "en": "The attack's damaging component is active during this interval."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-29.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=29s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 29,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Копьё босса направлено в полосу под ним",
+        "en": "The boss’s spear points into the area beneath it"
+      },
+      "alt": {
+        "ru": "Копьё босса направлено в полосу под ним",
+        "en": "The boss’s spear points into the area beneath it"
+      },
+      "markers": [
+        {
+          "x": 55,
+          "y": 76,
+          "label": {
+            "ru": "Оружие и тело занимают опасную полосу атаки",
+            "en": "Weapon and body occupy the attack’s dangerous lane"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте активную область удара с видимой позой и эффектом атаки.",
+        "en": "Align the active hit area with the visible pose and attack effect."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=29s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-recovery": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Восстановление",
+      "en": "Recovery"
+    },
+    "description": {
+      "ru": "После атаки босс временно ограничен в действиях и доступен для ответа.",
+      "en": "After attacking, the boss has limited actions and offers a response opportunity."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-99.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=99s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 99,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Рогатый жук остаётся на платформе между атаками",
+        "en": "Horn Beetle remains on the platform between attacks"
+      },
+      "alt": {
+        "ru": "Рогатый жук остаётся на платформе между атаками",
+        "en": "Horn Beetle remains on the platform between attacks"
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 61,
+          "label": {
+            "ru": "Окончание движения создаёт момент для сближения",
+            "en": "The end of movement creates a chance to approach"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте читаемое окно ответа после сильного приёма и показывайте его окончание.",
+        "en": "Provide a readable response window after a strong move and show when it ends."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=99s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-attack-lock": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фиксация атаки",
+      "en": "Attack lock"
+    },
+    "description": {
+      "ru": "Явный момент останавливает дальнейшую корректировку выбранной атаки.",
+      "en": "An explicit moment ends further adjustment of a chosen attack."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-rwzmf4u366o-283.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=rwZmf4u366o&t=283s",
+      "originalUrl": "https://www.youtube.com/watch?v=rwZmf4u366o",
+      "sourceFrameSeconds": 283,
+      "credit": "Team Cherry; gameplay capture by ProsafiaGaming",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by ProsafiaGaming. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Выпад Хорнет проходит на фиксированной высоте",
+        "en": "Hornet’s lunge crosses at a fixed height"
+      },
+      "alt": {
+        "ru": "Выпад Хорнет проходит на фиксированной высоте",
+        "en": "Hornet’s lunge crosses at a fixed height"
+      },
+      "markers": [
+        {
+          "x": 37,
+          "y": 76,
+          "label": {
+            "ru": "Положение копья и корпуса задаёт линию выпада",
+            "en": "Needle and body position define the lunge line"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Обозначайте момент прекращения доведения отдельно от начала движения.",
+        "en": "Signal when tracking ends separately from the start of movement."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=rwZmf4u366o&t=283s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-fight-phase": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фаза боя",
+      "en": "Fight phase"
+    },
+    "description": {
+      "ru": "Изменение состояния боя переключает согласованный набор правил.",
+      "en": "An encounter state change switches a coherent package of rules."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-403.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=403s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 403,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Новый участок боя с Морой меняет пространство движения",
+        "en": "A new section of Mora’s fight changes traversal space"
+      },
+      "alt": {
+        "ru": "Новый участок боя с Морой меняет пространство движения",
+        "en": "A new section of Mora’s fight changes traversal space"
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 52,
+          "label": {
+            "ru": "Тело Моры занимает новый участок маршрута",
+            "en": "Mora’s body occupies a new section of the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Смена фазы должна ясно менять задачу, а не только цвет полосы здоровья.",
+        "en": "A phase change should visibly change the task rather than only the health-bar color."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=403s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-enrage": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ярость",
+      "en": "Enrage"
+    },
+    "description": {
+      "ru": "Условие усиливает давление босса через параметры или новые действия.",
+      "en": "A condition increases boss pressure through parameters or new actions."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vayy2fauqno-58.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 120,
+        "y": 145,
+        "width": 320,
+        "height": 150
+      },
+      "game": "Terraria",
+      "sourceUrl": "https://www.youtube.com/watch?v=VaYY2fauQNo&t=58s",
+      "originalUrl": "https://www.youtube.com/watch?v=VaYY2fauQNo",
+      "sourceFrameSeconds": 58,
+      "credit": "Re-Logic; gameplay capture by HACH439",
+      "rights": "Game graphics © Re-Logic. Gameplay recording by HACH439. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Поздняя форма Ока Ктулху меняет рисунок боя",
+        "en": "Eye of Cthulhu’s later form changes the fight pattern"
+      },
+      "alt": {
+        "ru": "Поздняя форма Ока Ктулху меняет рисунок боя",
+        "en": "Eye of Cthulhu’s later form changes the fight pattern"
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 64,
+          "label": {
+            "ru": "Изменившийся облик босса помогает распознать новое состояние",
+            "en": "The boss’s changed appearance helps identify the new state"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отдельно настраивайте скорость, урон и паузы усиленной формы.",
+        "en": "Tune the stronger form’s speed, damage and pauses separately."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Terraria",
+        "url": "https://www.youtube.com/watch?v=VaYY2fauQNo&t=58s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-wide-swing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Размашистый удар",
+      "en": "Wide swing"
+    },
+    "description": {
+      "ru": "Широкая дуга удара перекрывает пространство перед боссом и по бокам.",
+      "en": "A broad attack arc covers space ahead of and beside the boss."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vcwh1bhhnko-67.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Dark Souls III",
+      "sourceUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=67s",
+      "originalUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo",
+      "sourceFrameSeconds": 67,
+      "credit": "FromSoftware / Bandai Namco Entertainment; gameplay capture by Shirrako",
+      "rights": "Game graphics © FromSoftware / Bandai Namco Entertainment. Gameplay recording by Shirrako. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Танцовщица ведёт оружие через пространство перед собой",
+        "en": "The Dancer swings a weapon through the space ahead"
+      },
+      "alt": {
+        "ru": "Танцовщица ведёт оружие через пространство перед собой",
+        "en": "The Dancer swings a weapon through the space ahead"
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 68,
+          "label": {
+            "ru": "Оружие проходит через ближнюю область перед боссом",
+            "en": "The weapon crosses the area close in front of the boss"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ширину и направление взмаха так, чтобы путь обхода оставался понятным.",
+        "en": "Show swing width and direction so the route around it stays clear."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dark Souls III",
+        "url": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=67s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-lunge": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Выпад",
+      "en": "Lunge"
+    },
+    "description": {
+      "ru": "Короткое движение корпуса совмещает сближение с ударом.",
+      "en": "A short body thrust combines closing distance with an attack."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-14.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=14s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 14,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Прыжок Хаула пересекает пространство перед героем",
+        "en": "Howl’s pounce crosses the space ahead of the hero"
+      },
+      "alt": {
+        "ru": "Прыжок Хаула пересекает пространство перед героем",
+        "en": "Howl’s pounce crosses the space ahead of the hero"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 47,
+          "label": {
+            "ru": "Тело Хаула вытянуто по направлению прыжка",
+            "en": "Howl’s body stretches along the pounce direction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте дальность выпада с ясной подготовкой и доступным выходом из линии.",
+        "en": "Connect lunge reach to a clear preparation and an available exit from its line."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=14s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-ground-slam": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Удар по земле",
+      "en": "Ground slam"
+    },
+    "description": {
+      "ru": "Удар в поверхность создаёт область поражения вокруг точки контакта.",
+      "en": "A ground impact creates a damaging area around its contact point."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-103.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "sourceFrameSeconds": 103,
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=103s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "caption": {
+        "ru": "Рогатый жук ударяет по земле после прыжка",
+        "en": "Horn Beetle strikes the ground after jumping"
+      },
+      "alt": {
+        "ru": "Рогатый жук ударяет по земле после прыжка",
+        "en": "Horn Beetle strikes the ground after jumping"
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 74,
+          "label": {
+            "ru": "Контакт с землёй задаёт начало ударного эффекта",
+            "en": "Ground contact marks the start of the impact effect"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте сам удар, распространяющуюся волну и остаточную опасность.",
+        "en": "Distinguish the impact itself from a traveling wave and any lingering hazard."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=rwZmf4u366o&t=166s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-landing-jump": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прыжок с приземлением",
+      "en": "Landing jump"
+    },
+    "description": {
+      "ru": "Босс прыгает к выбранной точке и угрожает зоной приземления.",
+      "en": "The boss leaps toward a chosen location and threatens its landing area."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-95.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=95s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 95,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Рогатый жук находится в воздухе перед приземлением",
+        "en": "Horn Beetle is airborne before landing"
+      },
+      "alt": {
+        "ru": "Рогатый жук находится в воздухе перед приземлением",
+        "en": "Horn Beetle is airborne before landing"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 39,
+          "label": {
+            "ru": "Положение тела показывает высоту и область будущего контакта",
+            "en": "Body position shows height and the area of upcoming contact"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте оценить место приземления до касания земли и начала ударного эффекта.",
+        "en": "Let the landing area be judged before ground contact and the impact effect."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=95s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-single-shot": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Одиночный выстрел",
+      "en": "Single shot"
+    },
+    "description": {
+      "ru": "Один снаряд задаёт отдельную читаемую траекторию угрозы.",
+      "en": "One projectile creates a single readable threat trajectory."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ol3-4y0es9m-22.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=22s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M",
+      "sourceFrameSeconds": 22,
+      "credit": "Studio MDHR; gameplay capture by LociGuides",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by LociGuides. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Крупное яйцо отделено от источника выстрела",
+        "en": "A large egg is separated from the firing source"
+      },
+      "alt": {
+        "ru": "Крупное яйцо отделено от источника выстрела",
+        "en": "A large egg is separated from the firing source"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 72,
+          "label": {
+            "ru": "Одиночный крупный снаряд движется через игровую область",
+            "en": "A single large projectile crosses the play area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сделайте скорость, размер и направление отдельного выстрела согласованными.",
+        "en": "Keep a single shot’s speed, size and direction consistent."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=22s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-projectile-fan": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Веер снарядов",
+      "en": "Projectile fan"
+    },
+    "description": {
+      "ru": "Несколько направлений выстрела образуют расходящийся веер.",
+      "en": "Several firing directions form a spreading fan."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ol3-4y0es9m-73.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=73s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M",
+      "sourceFrameSeconds": 73,
+      "credit": "Studio MDHR; gameplay capture by LociGuides",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by LociGuides. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Перья Уолли расходятся в разных направлениях",
+        "en": "Wally’s feathers spread in different directions"
+      },
+      "alt": {
+        "ru": "Перья Уолли расходятся в разных направлениях",
+        "en": "Wally’s feathers spread in different directions"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 39,
+          "label": {
+            "ru": "Разные направления перьев образуют широкий обстрел",
+            "en": "Different feather directions form a broad barrage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте просвет между снарядами на дистанции, где игрок пересекает веер.",
+        "en": "Check projectile gaps at the distance where the player crosses the fan."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=73s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-gap-volley": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Залп с разрывом",
+      "en": "Gap volley"
+    },
+    "description": {
+      "ru": "В плотном залпе оставлен проход, к которому игрок должен переместиться.",
+      "en": "A dense volley leaves an opening the player must reach."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-akaljuzqhxa-118.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://www.youtube.com/watch?v=aKALjUZqhXA&t=118s",
+      "originalUrl": "https://www.youtube.com/watch?v=aKALjUZqhXA",
+      "sourceFrameSeconds": 118,
+      "credit": "Dodge Roll / Devolver Digital; gameplay capture by IGN Guides",
+      "rights": "Game graphics © Dodge Roll / Devolver Digital. Gameplay recording by IGN Guides. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Проход в стене пуль High Dragun",
+        "en": "A passage through High Dragun’s bullet wall"
+      },
+      "alt": {
+        "ru": "Проход в стене пуль High Dragun",
+        "en": "A passage through High Dragun’s bullet wall"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 55,
+          "label": {
+            "ru": "Свободная область даёт маршрут через плотный залп",
+            "en": "An open area provides a route through the dense volley"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте просвет заранее и проверяйте, что игрок успевает до него добраться.",
+        "en": "Reveal the gap early and verify that the player can reach it in time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://www.youtube.com/watch?v=aKALjUZqhXA&t=118s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-ring-volley": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кольцевой залп",
+      "en": "Ring volley"
+    },
+    "description": {
+      "ru": "Одновременные выстрелы расходятся вокруг источника по окружности.",
+      "en": "Simultaneous shots radiate around their source."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ynvmgusv7bc-33.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://www.youtube.com/watch?v=ynVmgUSV7Bc&t=33s",
+      "originalUrl": "https://www.youtube.com/watch?v=ynVmgUSV7Bc",
+      "sourceFrameSeconds": 33,
+      "credit": "Dodge Roll / Devolver Digital; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Dodge Roll / Devolver Digital. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Пули образуют кольцо вокруг Короля пуль",
+        "en": "Bullets form a ring around Bullet King"
+      },
+      "alt": {
+        "ru": "Пули образуют кольцо вокруг Короля пуль",
+        "en": "Bullets form a ring around Bullet King"
+      },
+      "markers": [
+        {
+          "x": 28,
+          "y": 49,
+          "label": {
+            "ru": "Кольцо расходится от общего центра босса",
+            "en": "The ring expands from the boss’s shared center"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте число пуль, скорость расширения и доступную ширину прохода.",
+        "en": "Align bullet count, expansion speed and available gap width."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://www.youtube.com/watch?v=ynVmgUSV7Bc&t=33s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-ricochet-projectile": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рикошетирующий снаряд",
+      "en": "Ricochet projectile"
+    },
+    "description": {
+      "ru": "Столкновение с границей меняет направление дальнейшего полёта снаряда.",
+      "en": "A boundary collision changes a projectile's subsequent direction."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-xjzk50cb24s-40.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=xJzK50Cb24s&t=40s",
+      "originalUrl": "https://www.youtube.com/watch?v=xJzK50Cb24s",
+      "sourceFrameSeconds": 40,
+      "credit": "Team Cherry; gameplay capture by PC Indie Master Race",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by PC Indie Master Race. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Шары Навозного защитника отскакивают от поверхностей",
+        "en": "Dung Defender’s balls bounce off surfaces"
+      },
+      "alt": {
+        "ru": "Шары Навозного защитника отскакивают от поверхностей",
+        "en": "Dung Defender’s balls bounce off surfaces"
+      },
+      "markers": [
+        {
+          "x": 61,
+          "y": 31,
+          "label": {
+            "ru": "Шар сохраняет угрозу после отскока",
+            "en": "A ball remains dangerous after bouncing"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте правило отскока устойчивым и отмечайте контакт с поверхностью.",
+        "en": "Keep bounce rules consistent and make surface contact visible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=xJzK50Cb24s&t=40s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-spiral-barrage": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Спиральный обстрел",
+      "en": "Spiral barrage"
+    },
+    "description": {
+      "ru": "Вращение направления стрельбы превращает последовательность снарядов в спираль.",
+      "en": "Rotating the firing direction arranges successive projectiles into a spiral."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ynvmgusv7bc-26.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Enter the Gungeon",
+      "sourceUrl": "https://www.youtube.com/watch?v=ynVmgUSV7Bc&t=26s",
+      "originalUrl": "https://www.youtube.com/watch?v=ynVmgUSV7Bc",
+      "sourceFrameSeconds": 26,
+      "credit": "Dodge Roll / Devolver Digital; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Dodge Roll / Devolver Digital. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Изогнутые ряды пуль расходятся вокруг босса",
+        "en": "Curving bullet rows spread around the boss"
+      },
+      "alt": {
+        "ru": "Изогнутые ряды пуль расходятся вокруг босса",
+        "en": "Curving bullet rows spread around the boss"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 41,
+          "label": {
+            "ru": "Соседние ряды образуют поворачивающийся рисунок обстрела",
+            "en": "Adjacent rows form a turning barrage pattern"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте скорость смены направления и достижимость безопасного коридора.",
+        "en": "Check direction-change speed and whether the safe corridor remains reachable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Enter the Gungeon",
+        "url": "https://www.youtube.com/watch?v=ynVmgUSV7Bc&t=26s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-weak-point": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Уязвимая точка",
+      "en": "Weak point"
+    },
+    "description": {
+      "ru": "Попадание в выделенную часть цели даёт доступ к урону или усиленному эффекту.",
+      "en": "Hitting a designated target region enables damage or an enhanced effect."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-95.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=95s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 95,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Светящаяся задняя часть Рогатого жука открыта в прыжке",
+        "en": "Horn Beetle’s glowing rear is exposed during a jump"
+      },
+      "alt": {
+        "ru": "Светящаяся задняя часть Рогатого жука открыта в прыжке",
+        "en": "Horn Beetle’s glowing rear is exposed during a jump"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 36,
+          "label": {
+            "ru": "Оранжевая часть отличается от защищённого панциря",
+            "en": "The orange rear differs from the armored shell"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте уязвимость через устойчивый признак и возможность занять нужную позицию.",
+        "en": "Explain vulnerability through a consistent cue and a way to reach the right position."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=95s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-part-break": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушение части",
+      "en": "Part break"
+    },
+    "description": {
+      "ru": "Разрушение отдельной части меняет способности или уязвимость босса.",
+      "en": "Destroying a component changes the boss's abilities or vulnerability."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-6anmowvo7tc-38.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=38s",
+      "originalUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc",
+      "sourceFrameSeconds": 38,
+      "credit": "Studio MDHR; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разрушенные узлы меняют облик робота доктора Кала",
+        "en": "Destroyed components change Dr. Kahl’s robot"
+      },
+      "alt": {
+        "ru": "Разрушенные узлы меняют облик робота доктора Кала",
+        "en": "Destroyed components change Dr. Kahl’s robot"
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 55,
+          "label": {
+            "ru": "Повреждённые части корпуса отличаются от целых узлов",
+            "en": "Damaged body sections differ from intact components"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте разрушение части с заметным изменением доступных атак или защиты.",
+        "en": "Connect a broken part to a visible change in attacks or defenses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=38s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-target-lock": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Наведение с фиксацией",
+      "en": "Target lock"
+    },
+    "description": {
+      "ru": "Босс следит за целью до явного момента фиксации направления.",
+      "en": "The boss tracks its target until an explicit direction-lock moment."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-6anmowvo7tc-12.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s",
+      "originalUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc",
+      "sourceFrameSeconds": 12,
+      "credit": "Studio MDHR; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Линия прицеливания задаёт будущую опасную полосу",
+        "en": "An aiming line defines the upcoming dangerous lane"
+      },
+      "alt": {
+        "ru": "Линия прицеливания задаёт будущую опасную полосу",
+        "en": "An aiming line defines the upcoming dangerous lane"
+      },
+      "markers": [
+        {
+          "x": 37,
+          "y": 56,
+          "label": {
+            "ru": "Указатель делает направление будущего луча явным",
+            "en": "The targeting line makes the upcoming beam direction explicit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте слежение, фиксацию и исполнение атаки разными сигналами.",
+        "en": "Use distinct cues for tracking, locking and attack execution."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-volley": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Залп",
+      "en": "Volley"
+    },
+    "description": {
+      "ru": "Группа угроз выпускается совместно по одному правилу атаки.",
+      "en": "A group of threats is released together under one attack rule."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ol3-4y0es9m-73.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=73s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M",
+      "sourceFrameSeconds": 73,
+      "credit": "Studio MDHR; gameplay capture by LociGuides",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by LociGuides. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Несколько перьев одновременно занимают игровое пространство",
+        "en": "Several feathers occupy the play area together"
+      },
+      "alt": {
+        "ru": "Несколько перьев одновременно занимают игровое пространство",
+        "en": "Several feathers occupy the play area together"
+      },
+      "markers": [
+        {
+          "x": 38,
+          "y": 39,
+          "label": {
+            "ru": "Группа снарядов создаёт общую задачу уклонения",
+            "en": "A projectile group creates a shared dodging task"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проектируйте залп как один рисунок снарядов с понятными промежутками.",
+        "en": "Design a volley as one projectile pattern with readable gaps."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=73s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-source-tracking": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сопровождение источником",
+      "en": "Source tracking"
+    },
+    "description": {
+      "ru": "Источник атаки продолжает поворачиваться вслед за целью.",
+      "en": "The attack source continues turning to follow its target."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-6anmowvo7tc-12.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s",
+      "originalUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc",
+      "sourceFrameSeconds": 12,
+      "credit": "Studio MDHR; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Головной излучатель связан с направлением указателя",
+        "en": "The head emitter is connected to the targeting direction"
+      },
+      "alt": {
+        "ru": "Головной излучатель связан с направлением указателя",
+        "en": "The head emitter is connected to the targeting direction"
+      },
+      "markers": [
+        {
+          "x": 68,
+          "y": 9,
+          "label": {
+            "ru": "Видимый излучатель задаёт начало прицельной линии",
+            "en": "The visible emitter anchors the aiming line"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте связь видимого источника, указателя и действительной линии атаки.",
+        "en": "Keep the visible source, targeting cue and actual attack line connected."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=12s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-homing-projectile": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Самонаведение снаряда",
+      "en": "Homing projectile"
+    },
+    "description": {
+      "ru": "Уже выпущенный снаряд корректирует траекторию вслед за целью.",
+      "en": "An already launched projectile adjusts its trajectory to follow a target."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-bgh04-wcryk-51.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=51s",
+      "originalUrl": "https://www.youtube.com/watch?v=bgh04-wCRyk",
+      "sourceFrameSeconds": 51,
+      "credit": "Team Cherry; gameplay capture by PrizMatex",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by PrizMatex. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Светящиеся сферы преследуют героя в бою с Лучезарностью",
+        "en": "Glowing orbs pursue the hero during the Radiance fight"
+      },
+      "alt": {
+        "ru": "Светящиеся сферы преследуют героя в бою с Лучезарностью",
+        "en": "Glowing orbs pursue the hero during the Radiance fight"
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 34,
+          "label": {
+            "ru": "Самостоятельная сфера отделена от тела босса",
+            "en": "An independent orb is separated from the boss’s body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте поворот, время жизни или число корректировок самонаведения.",
+        "en": "Limit homing turn rate, lifetime or the number of course corrections."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=bgh04-wCRyk&t=51s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-converging-threats": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сходящиеся угрозы",
+      "en": "Converging threats"
+    },
+    "description": {
+      "ru": "Несколько угроз сближаются, сокращая доступное пространство для ответа.",
+      "en": "Several threats converge and reduce available response space."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-130.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 130,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Два лезвия сходятся к середине арены",
+        "en": "Two blades converge toward the arena center"
+      },
+      "alt": {
+        "ru": "Два лезвия сходятся к середине арены",
+        "en": "Two blades converge toward the arena center"
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 62,
+          "label": {
+            "ru": "Левое лезвие движется со стороны стены",
+            "en": "The left blade moves in from the wall"
+          }
+        },
+        {
+          "x": 89,
+          "y": 62,
+          "label": {
+            "ru": "Второе лезвие ограничивает выход с другой стороны",
+            "en": "The other blade limits escape on the opposite side"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте общую безопасную область при наложении угроз, а не каждую отдельно.",
+        "en": "Check the shared safe area when threats overlap rather than testing each alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-straight-beam": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Прямой луч",
+      "en": "Straight beam"
+    },
+    "description": {
+      "ru": "Прямой протяжённый луч перекрывает линию между источником и концом атаки.",
+      "en": "An extended straight beam blocks a line from its source to its endpoint."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-6anmowvo7tc-14.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=14s",
+      "originalUrl": "https://www.youtube.com/watch?v=6anMOwVo7tc",
+      "sourceFrameSeconds": 14,
+      "credit": "Studio MDHR; gameplay capture by Boss Fight Database",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Boss Fight Database. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Мощный луч сохраняет прямую геометрию атаки",
+        "en": "The powerful beam keeps a straight attack geometry"
+      },
+      "alt": {
+        "ru": "Мощный луч сохраняет прямую геометрию атаки",
+        "en": "The powerful beam keeps a straight attack geometry"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 43,
+          "label": {
+            "ru": "Полоса луча связывает излучатель с опасной областью",
+            "en": "The beam lane connects its emitter to the dangerous area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимую ширину луча и область урона на всей длине.",
+        "en": "Align visible beam width with its damage area along the entire length."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=6anMOwVo7tc&t=14s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-scanning-beam": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сканирующий луч",
+      "en": "Scanning beam"
+    },
+    "description": {
+      "ru": "Направление луча смещается, проводя опасную линию по арене.",
+      "en": "A beam changes direction, sweeping a dangerous line across the arena."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-rivhpmkqgv4-18.webp",
+      "width": 854,
+      "height": 470,
+      "game": "Terraria",
+      "sourceUrl": "https://www.youtube.com/watch?v=RIVHPmKQgV4&t=18s",
+      "originalUrl": "https://www.youtube.com/watch?v=RIVHPmKQgV4",
+      "sourceFrameSeconds": 18,
+      "credit": "Re-Logic; gameplay capture by DumbCrispyCat",
+      "rights": "Game graphics © Re-Logic. Gameplay recording by DumbCrispyCat. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Луч лобного глаза Лунного лорда пересекает пространство",
+        "en": "Moon Lord’s forehead-eye beam sweeps across the space"
+      },
+      "alt": {
+        "ru": "Луч лобного глаза Лунного лорда пересекает пространство",
+        "en": "Moon Lord’s forehead-eye beam sweeps across the space"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 45,
+          "label": {
+            "ru": "Луч выходит из видимого глаза босса",
+            "en": "The beam originates from the boss’s visible eye"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте начало проводки и направление движения до включения урона.",
+        "en": "Show the sweep’s starting point and direction before damage begins."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Terraria",
+        "url": "https://www.youtube.com/watch?v=RIVHPmKQgV4&t=18s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-summon": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Призыв",
+      "en": "Summon"
+    },
+    "description": {
+      "ru": "Босс вводит дополнительных противников, требующих распределять внимание.",
+      "en": "The boss introduces extra enemies that compete for attention."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-rwzmf4u366o-1010.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=rwZmf4u366o&t=1010s",
+      "originalUrl": "https://www.youtube.com/watch?v=rwZmf4u366o",
+      "sourceFrameSeconds": 1010,
+      "credit": "Team Cherry; gameplay capture by ProsafiaGaming",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by ProsafiaGaming. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Коллекционер выпускает существ в пространство боя",
+        "en": "The Collector releases creatures into the fight"
+      },
+      "alt": {
+        "ru": "Коллекционер выпускает существ в пространство боя",
+        "en": "The Collector releases creatures into the fight"
+      },
+      "markers": [
+        {
+          "x": 89,
+          "y": 48,
+          "label": {
+            "ru": "Дополнительное существо появляется рядом с основной угрозой",
+            "en": "An additional creature appears beside the main threat"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте число призванных существ и давайте понятный способ снизить давление.",
+        "en": "Limit summoned creature counts and provide a clear way to reduce pressure."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=rwZmf4u366o&t=1010s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-turret-deployment": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Установка турели",
+      "en": "Turret deployment"
+    },
+    "description": {
+      "ru": "Установленный объект самостоятельно создаёт угрозы из новой точки.",
+      "en": "A deployed object independently generates threats from a new position."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-s0lrozjzvme-41.webp",
+      "width": 640,
+      "height": 360,
+      "game": "OTXO",
+      "sourceUrl": "https://www.youtube.com/watch?v=s0lrozjZVmE&t=41s",
+      "originalUrl": "https://www.youtube.com/watch?v=s0lrozjZVmE",
+      "sourceFrameSeconds": 41,
+      "credit": "Lateralis Heavy Industries / Super Rare Originals; gameplay capture by Thricetwice",
+      "rights": "Game graphics © Lateralis Heavy Industries / Super Rare Originals. Gameplay recording by Thricetwice. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Закреплённое копьё остаётся на стене арены",
+        "en": "An embedded spear remains on the arena wall"
+      },
+      "alt": {
+        "ru": "Закреплённое копьё остаётся на стене арены",
+        "en": "An embedded spear remains on the arena wall"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 29,
+          "label": {
+            "ru": "Оружие в стене служит отдельным источником огня",
+            "en": "The weapon in the wall acts as a separate firing source"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте установку, включение и окончание работы автономного орудия.",
+        "en": "Separate placement, activation and shutdown of an autonomous weapon."
+      }
+    ],
+    "examples": [
+      {
+        "title": "OTXO",
+        "url": "https://www.youtube.com/watch?v=s0lrozjZVmE&t=41s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-threat-generator": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Генератор угроз",
+      "en": "Threat generator"
+    },
+    "description": {
+      "ru": "Отдельная цель продолжает производить опасности, пока её не нейтрализуют.",
+      "en": "A separate target continues producing hazards until neutralized."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-s0lrozjzvme-41.webp",
+      "width": 640,
+      "height": 360,
+      "game": "OTXO",
+      "sourceUrl": "https://www.youtube.com/watch?v=s0lrozjZVmE&t=41s",
+      "originalUrl": "https://www.youtube.com/watch?v=s0lrozjZVmE",
+      "sourceFrameSeconds": 41,
+      "credit": "Lateralis Heavy Industries / Super Rare Originals; gameplay capture by Thricetwice",
+      "rights": "Game graphics © Lateralis Heavy Industries / Super Rare Originals. Gameplay recording by Thricetwice. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Установленное оружие дополняет угрозу движущегося босса",
+        "en": "A deployed weapon adds to the moving boss’s threat"
+      },
+      "alt": {
+        "ru": "Установленное оружие дополняет угрозу движущегося босса",
+        "en": "A deployed weapon adds to the moving boss’s threat"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 29,
+          "label": {
+            "ru": "Закреплённый источник продолжает участвовать в обстреле",
+            "en": "The fixed source continues participating in the barrage"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте источник повторных угроз и условие, при котором он перестаёт работать.",
+        "en": "Show the recurring threat’s source and the condition that stops it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "OTXO",
+        "url": "https://www.youtube.com/watch?v=s0lrozjZVmE&t=41s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-posture-stagger-gauge": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Шкала стойкости и добивание",
+      "en": "Posture stagger gauge"
+    },
+    "description": {
+      "ru": "Накопленное нарушение стойкости открывает окно особого удара.",
+      "en": "Accumulated posture pressure opens a special attack opportunity."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-5rerwohkv2o-54.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Eastern Exorcist",
+      "sourceUrl": "https://www.youtube.com/watch?v=5rerWOhKv2o&t=54s",
+      "originalUrl": "https://www.youtube.com/watch?v=5rerWOhKv2o",
+      "sourceFrameSeconds": 54,
+      "credit": "Wildfire Game / bilibili; gameplay capture by Fuzzy Bearbarian",
+      "rights": "Game graphics © Wildfire Game / bilibili. Gameplay recording by Fuzzy Bearbarian. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "У Чу отдельно показаны здоровье и шкала брони",
+        "en": "Chu has separate health and armor bars"
+      },
+      "alt": {
+        "ru": "У Чу отдельно показаны здоровье и шкала брони",
+        "en": "Chu has separate health and armor bars"
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 18,
+          "label": {
+            "ru": "Синяя шкала брони отличается от здоровья над ней",
+            "en": "The blue armor bar differs from the health bar above"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте заполнение или истощение шкалы, открытое окно и отдельное добивание.",
+        "en": "Distinguish gauge buildup or depletion, the resulting window and a separate finisher."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Eastern Exorcist",
+        "url": "https://www.youtube.com/watch?v=5rerWOhKv2o&t=54s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-moving-hazard": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подвижная опасная зона",
+      "en": "Moving hazard"
+    },
+    "description": {
+      "ru": "Опасная область меняет положение и вытесняет игрока с текущего маршрута.",
+      "en": "A hazardous area moves and displaces the player from their route."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-u6jy7hrz3ry-54.webp",
+      "width": 854,
+      "height": 480,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=u6JY7Hrz3RY&t=54s",
+      "originalUrl": "https://www.youtube.com/watch?v=u6JY7Hrz3RY",
+      "sourceFrameSeconds": 54,
+      "credit": "Studio MDHR; gameplay capture by Gamer Jayvee",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by Gamer Jayvee. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Огненные существа движутся по языку дракона",
+        "en": "Fire creatures move along the dragon’s tongue"
+      },
+      "alt": {
+        "ru": "Огненные существа движутся по языку дракона",
+        "en": "Fire creatures move along the dragon’s tongue"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 86,
+          "label": {
+            "ru": "Несколько движущихся угроз занимают нижний маршрут",
+            "en": "Several moving threats occupy the lower route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте направление и темп опасной зоны, сохраняя достижимый путь обхода.",
+        "en": "Show the hazard’s direction and pace while preserving a reachable route around it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=u6JY7Hrz3RY&t=54s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-platform-destruction": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разрушение опоры",
+      "en": "Platform destruction"
+    },
+    "description": {
+      "ru": "Босс разрушает опору и меняет доступные места для стояния.",
+      "en": "The boss destroys a support and changes available footing."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-1398.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=1398s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "sourceFrameSeconds": 1398,
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Разрушение площадки меняет путь в бою со Визгуньей",
+        "en": "Platform destruction changes the route in the Shriek fight"
+      },
+      "alt": {
+        "ru": "Разрушение площадки меняет путь в бою со Визгуньей",
+        "en": "Platform destruction changes the route in the Shriek fight"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 58,
+          "label": {
+            "ru": "Разорванная опора меняет доступное пространство движения",
+            "en": "A broken support changes the available movement space"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте оценить новую опору и путь спасения до окончательного разрушения старой.",
+        "en": "Let players assess the next support and escape route before the old one is destroyed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Ori and the Will of the Wisps",
+        "url": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=1398s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-coordinated-duo-attack": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Связанный приём пары",
+      "en": "Coordinated duo attack"
+    },
+    "description": {
+      "ru": "Два босса выполняют связанные части одного согласованного приёма.",
+      "en": "Two bosses execute linked parts of one coordinated attack."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-130.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 130,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Два Повелителя богомолов согласуют броски лезвий",
+        "en": "Two Mantis Lords coordinate their blade throws"
+      },
+      "alt": {
+        "ru": "Два Повелителя богомолов согласуют броски лезвий",
+        "en": "Two Mantis Lords coordinate their blade throws"
+      },
+      "markers": [
+        {
+          "x": 8,
+          "y": 36,
+          "label": {
+            "ru": "Один босс атакует с левой стены",
+            "en": "One boss attacks from the left wall"
+          }
+        },
+        {
+          "x": 92,
+          "y": 36,
+          "label": {
+            "ru": "Напарник занимает зеркальную позицию справа",
+            "en": "Its partner holds a mirrored position on the right"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте общую подготовку пары читаемой и проверяйте безопасный ответ на весь приём.",
+        "en": "Make the pair’s shared preparation readable and test a response to the whole move."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s"
+      }
+    ]
+  },
+  "rpg-grind--recipe-research": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Исследование рецептов",
+      "en": "Recipe research"
+    },
+    "description": {
+      "ru": "Повторяемая работа с образцами постепенно открывает знания, которые расширяют набор доступного крафта.",
+      "en": "Repeated work with samples gradually unlocks knowledge that expands available crafting options."
+    },
+    "image": {
+      "src": "images/mechanics/progression-skyrim-alchemy.webp",
+      "width": 947,
+      "height": 530,
+      "game": "The Elder Scrolls V: Skyrim",
+      "sourceUrl": "https://store.steampowered.com/manual/72850/",
+      "originalUrl": "https://cdn.akamai.steamstatic.com/steam/apps/72850/manuals/skyrim_gfw_manual-07.pdf?t=1647357402",
+      "credit": "Bethesda Game Studios; screenshot from official PC manual, printed page 16",
+      "rights": "Game graphics © the respective rights holders. Source screenshot attribution retained; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Неизвестный эффект зелья предстоит открыть экспериментом",
+        "en": "An unknown potion effect remains to be discovered through experiment"
+      },
+      "alt": {
+        "ru": "Неизвестный эффект зелья предстоит открыть экспериментом",
+        "en": "An unknown potion effect remains to be discovered through experiment"
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 75,
+          "label": {
+            "ru": "Unknown Effect показывает ещё не изученный результат сочетания",
+            "en": "Unknown Effect marks an undiscovered result of the combination"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте открытые свойства и объясняйте, что именно дал новый эксперимент.",
+        "en": "Preserve discovered properties and explain what a new experiment revealed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Elder Scrolls V: Skyrim",
+        "url": "https://store.steampowered.com/manual/72850/"
+      }
+    ]
+  },
+  "automation-programming--t111": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Роботы и автономная доставка",
+      "en": "Robots and autonomous delivery"
+    },
+    "description": {
+      "ru": "Автономная доставка назначает переносчиков на запросы, учитывая вместимость, маршрут и доступный энергетический запас.",
+      "en": "Autonomous delivery assigns carriers to requests using capacity, routes and available energy."
+    },
+    "image": {
+      "src": "images/mechanics/systems-factorio-logistic-robots.webp",
+      "width": 420,
+      "height": 336,
+      "game": "Factorio",
+      "sourceUrl": "https://wiki.factorio.com/File:RoboTrainStation_small.gif",
+      "originalUrl": "https://wiki.factorio.com/images/RoboTrainStation_small.gif",
+      "sourceFrameSeconds": 0.3,
+      "credit": "Wube Software; capture by Cardinal via Official Factorio Wiki, updated for 2.0.41",
+      "rights": "Game graphics © the respective rights holders. Source screenshot attribution retained; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Роботы обслуживают перегрузку ресурсов у железной дороги",
+        "en": "Robots handle resource transfers beside a railway"
+      },
+      "alt": {
+        "ru": "Роботы обслуживают перегрузку ресурсов у железной дороги",
+        "en": "Robots handle resource transfers beside a railway"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 30,
+          "label": {
+            "ru": "Летающие переносчики связывают станции и места хранения",
+            "en": "Flying carriers connect stations with storage locations"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте запрос, доступного переносчика и причину задержки доставки.",
+        "en": "Show the request, available carrier and reason for any delivery delay."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Factorio",
+        "url": "https://wiki.factorio.com/File:RoboTrainStation_small.gif"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-shockwave": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ударная волна",
+      "en": "Shockwave"
+    },
+    "description": {
+      "ru": "Фронт удара расширяется от источника и пересекает позиции игроков.",
+      "en": "A wavefront expands from its source and crosses player positions."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-dvub8cimpig-103.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Ori and the Will of the Wisps",
+      "credit": "Moon Studios / Xbox Game Studios; gameplay capture by Gellot",
+      "rights": "Game graphics © Moon Studios / Xbox Game Studios. Gameplay recording by Gellot. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "sourceFrameSeconds": 103,
+      "sourceUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg&t=103s",
+      "originalUrl": "https://www.youtube.com/watch?v=DvuB8cImPIg",
+      "caption": {
+        "ru": "Волна после удара жука движется по полу",
+        "en": "A wave from the beetle’s impact travels along the floor"
+      },
+      "alt": {
+        "ru": "Волна после удара жука движется по полу",
+        "en": "A wave from the beetle’s impact travels along the floor"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 71,
+          "label": {
+            "ru": "Оранжевая волна отделена от самого тела босса",
+            "en": "The orange wave is separated from the boss’s body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте точку удара от движущегося фронта и проверяйте способ его пересечения.",
+        "en": "Distinguish the impact point from the moving front and test how the player crosses it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=rwZmf4u366o&t=166s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-crossfire": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перекрёстный огонь",
+      "en": "Crossfire"
+    },
+    "description": {
+      "ru": "Разнесённые источники создают пересекающиеся направления обстрела.",
+      "en": "Separated sources create intersecting lines of fire."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vg3h6uvtwyy-130.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Hollow Knight",
+      "sourceUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s",
+      "originalUrl": "https://www.youtube.com/watch?v=VG3h6uVtWyY",
+      "sourceFrameSeconds": 130,
+      "credit": "Team Cherry; gameplay capture by FeelTheDango",
+      "rights": "Game graphics © Team Cherry. Gameplay recording by FeelTheDango. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Лезвия атакуют с противоположных стен арены",
+        "en": "Blades attack from opposite arena walls"
+      },
+      "alt": {
+        "ru": "Лезвия атакуют с противоположных стен арены",
+        "en": "Blades attack from opposite arena walls"
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 62,
+          "label": {
+            "ru": "Левое лезвие движется со стороны стены",
+            "en": "The left blade moves in from the wall"
+          }
+        },
+        {
+          "x": 89,
+          "y": 62,
+          "label": {
+            "ru": "Второе лезвие ограничивает выход с другой стороны",
+            "en": "The other blade limits escape on the opposite side"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте все источники огня и проверяйте доступный ответ при их наложении.",
+        "en": "Show every firing source and test an available response when they overlap."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hollow Knight",
+        "url": "https://www.youtube.com/watch?v=VG3h6uVtWyY&t=130s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-sweep": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Круговой удар",
+      "en": "Arc sweep"
+    },
+    "description": {
+      "ru": "Атака описывает дугу вокруг закреплённого конца или центра вращения.",
+      "en": "An attack sweeps an arc around an anchored endpoint or pivot."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-vcwh1bhhnko-182.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Dark Souls III",
+      "sourceUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=182s",
+      "originalUrl": "https://www.youtube.com/watch?v=vCWh1bhHNKo",
+      "sourceFrameSeconds": 182,
+      "credit": "FromSoftware / Bandai Namco Entertainment; gameplay capture by Shirrako",
+      "rights": "Game graphics © FromSoftware / Bandai Namco Entertainment. Gameplay recording by Shirrako. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Два клинка Танцовщицы охватывают пространство вокруг неё",
+        "en": "The Dancer’s two blades cover the space around her"
+      },
+      "alt": {
+        "ru": "Два клинка Танцовщицы охватывают пространство вокруг неё",
+        "en": "The Dancer’s two blades cover the space around her"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 64,
+          "label": {
+            "ru": "Клинок проходит по дуге рядом с корпусом босса",
+            "en": "A blade follows an arc beside the boss’s body"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте внутренний и внешний маршруты обхода кругового удара.",
+        "en": "Test both inner and outer routes around the circular sweep."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dark Souls III",
+        "url": "https://www.youtube.com/watch?v=vCWh1bhHNKo&t=182s"
+      }
+    ]
+  },
+  "boss-fight-atlas--boss-splitting-projectile": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Разделяющийся снаряд",
+      "en": "Splitting projectile"
+    },
+    "description": {
+      "ru": "В заданный момент один снаряд порождает несколько новых траекторий.",
+      "en": "At a defined moment, one projectile produces several new trajectories."
+    },
+    "image": {
+      "src": "images/mechanics/boss-frame-ol3-4y0es9m-27-5.webp",
+      "width": 640,
+      "height": 360,
+      "game": "Cuphead",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=27.5s",
+      "originalUrl": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M",
+      "sourceFrameSeconds": 27.5,
+      "credit": "Studio MDHR; gameplay capture by LociGuides",
+      "rights": "Game graphics © Studio MDHR. Gameplay recording by LociGuides. Visible source markings preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Крупное яйцо распадается на несколько маленьких снарядов",
+        "en": "A large egg splits into several smaller projectiles"
+      },
+      "alt": {
+        "ru": "Крупное яйцо распадается на несколько маленьких снарядов",
+        "en": "A large egg splits into several smaller projectiles"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 58,
+          "label": {
+            "ru": "После разрушения яйца появляются отдельные снаряды",
+            "en": "Separate projectiles appear after the egg breaks"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте момент разделения и сохраняйте понятный рисунок дочерних снарядов.",
+        "en": "Show the split moment and preserve a readable pattern of child projectiles."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cuphead",
+        "url": "https://www.youtube.com/watch?v=Ol3-4Y0eS9M&t=27.5s"
+      }
+    ]
   }
 }

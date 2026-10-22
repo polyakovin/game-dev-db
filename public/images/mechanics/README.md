@@ -295,3 +295,24 @@ prompts, the timer and score. Controller hints are identified as hints.
 `general-car-mechanic2021-09.webp` illustrates a virtual photo mode; it is not
 a physical camera sensor capture. All files retain visible source markings,
 third-party rights and the same WebP size limits.
+
+## Boss encounter frames and research interfaces
+
+`boss-frame-*.webp` contains selected frames from public encounter recordings
+linked by the source Boss Fight Atlas. Each card retains the original video URL,
+exact frame time and the recording creator in addition to the game rights holder.
+Frame filenames are lowercase; case-sensitive video IDs remain intact in source
+URLs. Frames are inspected independently of inherited timestamps: an introduction
+is not labeled as an active attack. Existing creator watermarks remain visible.
+
+`progression-skyrim-alchemy.webp` is extracted from Bethesda's
+[official PC manual](https://cdn.akamai.steamstatic.com/steam/apps/72850/manuals/skyrim_gfw_manual-07.pdf?t=1647357402),
+printed page 16. Its original CMYK JPEG is converted to RGB before WebP encoding.
+The image shows an unknown potion effect and the selected ingredient combination.
+
+`systems-factorio-logistic-robots.webp` is the frame at 0.3 seconds from
+[Cardinal's Factorio 2.0.41 logistics capture](https://wiki.factorio.com/File:RoboTrainStation_small.gif)
+on the Official Factorio Wiki. Game graphics remain © Wube Software; the recording
+creator and source are credited in card metadata. The original animation and
+source videos are not shipped. These files use the same WebP budgets and retain
+third-party rights outside the portal's MIT and CC BY 4.0 licenses.
