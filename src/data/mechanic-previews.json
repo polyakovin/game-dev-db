@@ -62015,5 +62015,2888 @@
         "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
       }
     ]
+  },
+  "phone-haptics--family-ui": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кнопки, жесты и интерфейс",
+      "en": "Buttons, gestures and interfaces"
+    },
+    "description": {
+      "ru": "Короткий тактильный сигнал подтверждает действие интерфейса. В Procreate Pocket удержание слайдера переключает его режим и сопровождается откликом.",
+      "en": "A brief tactile cue confirms an interface action. In Procreate Pocket holding a slider switches its mode and produces haptic feedback."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-0.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 350,
+        "y": 420,
+        "width": 290,
+        "height": 510
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/0de741e2b23abb6d5e0756a214d621a945bc35bd-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "markers": [
+        {
+          "x": 94,
+          "y": 53,
+          "label": {
+            "ru": "Удержание переключает Pressure/Opacity и даёт тактильный сигнал",
+            "en": "Holding switches Pressure/Opacity with a tactile cue"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Используйте различимые сигналы для разных результатов и дублируйте важное визуально.",
+        "en": "Use distinguishable cues for different outcomes and mirror important feedback visually."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-haptics--family-space": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск, пространство и направление",
+      "en": "Search, space and direction"
+    },
+    "description": {
+      "ru": "Положение в виртуальном поле меняет тактильный ответ. В HapticPalette ось Y задаёт интенсивность, а ось X резкость паттерна.",
+      "en": "Position in a virtual field changes tactile output. In HapticPalette the Y axis sets intensity and the X axis sets pattern sharpness."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-palette.webp",
+      "width": 965,
+      "height": 631,
+      "game": "HapticPalette (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time",
+      "originalUrl": "https://developer.apple.com/tutorials/images/com.apple.corehaptics/HapticPaletteAxes@2x.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official annotated app screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "alt": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 37,
+          "label": {
+            "ru": "Позиция контакта задаёт низкую резкость и высокую интенсивность",
+            "en": "This touch position selects low sharpness and high intensity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Один вибромотор не указывает направление сам по себе; задайте понятное правило поиска.",
+        "en": "A single motor does not convey direction by itself; define a clear search rule."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticPalette (Apple sample)",
+        "url": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
+      }
+    ]
+  },
+  "phone-haptics--family-timing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время, ритм и реакция",
+      "en": "Timing, rhythm and reaction"
+    },
+    "description": {
+      "ru": "Моменты импульсов и паузы задают ритм. В Haptrix отдельные тактильные события размещают на шкале, чтобы собрать различимую последовательность.",
+      "en": "Pulse times and pauses define rhythm. Haptrix places individual haptic events on a timeline to create a distinguishable sequence."
+    },
+    "image": {
+      "src": "images/mechanics/control-haptrix-transients.webp",
+      "width": 1440,
+      "height": 900,
+      "crop": {
+        "x": 47,
+        "y": 71,
+        "width": 1343,
+        "height": 494
+      },
+      "game": "Haptrix",
+      "sourceUrl": "https://www.haptrix.com/store",
+      "originalUrl": "https://www.haptrix.com/images/screenshots/transients.png",
+      "credit": "nthState / NTHSTATE LTD",
+      "rights": "© nthState / NTHSTATE LTD. Official Haptrix screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Haptrix: отдельные импульсы на временной шкале",
+        "en": "Haptrix: individual pulses on a timeline"
+      },
+      "alt": {
+        "ru": "Haptrix: отдельные импульсы на временной шкале",
+        "en": "Haptrix: individual pulses on a timeline"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 31,
+          "label": {
+            "ru": "Положение столбика задаёт время, высота отражает интенсивность",
+            "en": "A bar’s position sets time and its height represents intensity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте распознаваемость ритма на самом телефоне, а не только по графику.",
+        "en": "Test rhythm recognition on the actual phone, not only through the graph."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Haptrix",
+        "url": "https://www.haptrix.com/store"
+      }
+    ]
+  },
+  "phone-haptics--family-control": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Точность по тактильному отклику",
+      "en": "Precision through haptic feedback"
+    },
+    "description": {
+      "ru": "Непрерывный тактильный отклик помогает различать состояние ввода. В HapticPalette движение пальца сразу меняет интенсивность и резкость вибрации.",
+      "en": "Continuous tactile feedback makes input states distinguishable. In HapticPalette finger movement immediately changes vibration intensity and sharpness."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-palette.webp",
+      "width": 965,
+      "height": 631,
+      "game": "HapticPalette (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time",
+      "originalUrl": "https://developer.apple.com/tutorials/images/com.apple.corehaptics/HapticPaletteAxes@2x.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official annotated app screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "alt": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 37,
+          "label": {
+            "ru": "Позиция контакта задаёт низкую резкость и высокую интенсивность",
+            "en": "This touch position selects low sharpness and high intensity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте устойчивое соответствие между действием, параметром и ощущаемым сигналом.",
+        "en": "Keep a stable mapping between action, parameter and perceived feedback."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticPalette (Apple sample)",
+        "url": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
+      }
+    ]
+  },
+  "phone-haptics--family-combat": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бой, экшен и спорт",
+      "en": "Combat, action and sports"
+    },
+    "description": {
+      "ru": "Удар можно подтвердить коротким импульсом. В учебном HapticBounce сила тактильного сигнала связана со скоростью столкновения шарика с границей.",
+      "en": "An impact can be confirmed with a brief pulse. The HapticBounce sample links haptic strength to the ball’s collision speed at a boundary."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-bounce-965.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 60,
+        "y": 20,
+        "width": 520,
+        "height": 275
+      },
+      "game": "HapticBounce (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/videos/play/wwdc2019/520/",
+      "originalUrl": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/520gfafwrte8ytre/520/520_sd_introducing_core_haptics.mp4?dl=1",
+      "sourceFrameSeconds": 965,
+      "credit": "Apple / WWDC 2019",
+      "rights": "© Apple. Frame from Introducing Core Haptics, WWDC 2019 session 520. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "alt": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "markers": [
+        {
+          "x": 20,
+          "y": 68,
+          "label": {
+            "ru": "Столкновения шарика запускают звуковой и тактильный отклик",
+            "en": "The ball’s collisions trigger audio and haptic feedback"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте отклик с подтверждённым попаданием и различайте атаку, блок и промах.",
+        "en": "Link feedback to confirmed hits and distinguish attacks, blocks and misses."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticBounce (Apple sample)",
+        "url": "https://developer.apple.com/videos/play/wwdc2019/520/"
+      }
+    ]
+  },
+  "phone-haptics--family-simulation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Транспорт, машины и физика",
+      "en": "Vehicles, machines and physics"
+    },
+    "description": {
+      "ru": "Тактильный сигнал следует состоянию физической модели. В HapticBounce более быстрое столкновение шарика с краем даёт более сильный отклик.",
+      "en": "The tactile signal follows a physics model. HapticBounce produces stronger feedback when the ball hits the screen edge faster."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-bounce-965.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 60,
+        "y": 20,
+        "width": 520,
+        "height": 275
+      },
+      "game": "HapticBounce (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/videos/play/wwdc2019/520/",
+      "originalUrl": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/520gfafwrte8ytre/520/520_sd_introducing_core_haptics.mp4?dl=1",
+      "sourceFrameSeconds": 965,
+      "credit": "Apple / WWDC 2019",
+      "rights": "© Apple. Frame from Introducing Core Haptics, WWDC 2019 session 520. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "alt": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "markers": [
+        {
+          "x": 20,
+          "y": 68,
+          "label": {
+            "ru": "Столкновения шарика запускают звуковой и тактильный отклик",
+            "en": "The ball’s collisions trigger audio and haptic feedback"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выбирайте параметр модели для силы сигнала и ограничивайте максимальный уровень.",
+        "en": "Choose a model parameter for signal strength and bound its maximum level."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticBounce (Apple sample)",
+        "url": "https://developer.apple.com/videos/play/wwdc2019/520/"
+      }
+    ]
+  },
+  "phone-haptics--family-materials": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Материалы, инструменты и предметы",
+      "en": "Materials, tools and objects"
+    },
+    "description": {
+      "ru": "Характер вибрации создаёт ассоциацию с предметом или материалом. HapticPalette позволяет сравнить мягкий и резкий отклик при разных параметрах.",
+      "en": "Vibration character suggests an object or material. HapticPalette lets users compare dull and crisp feedback under different parameters."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-palette.webp",
+      "width": 965,
+      "height": 631,
+      "game": "HapticPalette (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time",
+      "originalUrl": "https://developer.apple.com/tutorials/images/com.apple.corehaptics/HapticPaletteAxes@2x.png",
+      "credit": "Apple",
+      "rights": "© Apple. Official annotated app screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "alt": {
+        "ru": "HapticPalette: две координаты задают параметры вибрации",
+        "en": "HapticPalette: two coordinates set vibration parameters"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 37,
+          "label": {
+            "ru": "Позиция контакта задаёт низкую резкость и высокую интенсивность",
+            "en": "This touch position selects low sharpness and high intensity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не выдавайте обычную вибрацию корпуса за физическое изменение трения экрана.",
+        "en": "Do not describe chassis vibration as a physical change in screen friction."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticPalette (Apple sample)",
+        "url": "https://developer.apple.com/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time"
+      }
+    ]
+  },
+  "phone-haptics--family-puzzles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Головоломки, коды и обучение",
+      "en": "Puzzles, codes and learning"
+    },
+    "description": {
+      "ru": "Проектный сценарий: последовательность вибраций становится кодом для запоминания и повтора. Haptrix показывает отдельные импульсы на шкале времени.",
+      "en": "Design scenario: a vibration sequence becomes a code to remember and repeat. Haptrix shows separate pulses on a timeline."
+    },
+    "image": {
+      "src": "images/mechanics/control-haptrix-transients.webp",
+      "width": 1440,
+      "height": 900,
+      "crop": {
+        "x": 47,
+        "y": 71,
+        "width": 1343,
+        "height": 494
+      },
+      "game": "Haptrix",
+      "sourceUrl": "https://www.haptrix.com/store",
+      "originalUrl": "https://www.haptrix.com/images/screenshots/transients.png",
+      "credit": "nthState / NTHSTATE LTD",
+      "rights": "© nthState / NTHSTATE LTD. Official Haptrix screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Haptrix: заготовка последовательности для проектного тактильного кода",
+        "en": "Haptrix: a sequence that can form a designed tactile code"
+      },
+      "alt": {
+        "ru": "Haptrix: заготовка последовательности для проектного тактильного кода",
+        "en": "Haptrix: a sequence that can form a designed tactile code"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 31,
+          "label": {
+            "ru": "Положение столбика задаёт время, высота отражает интенсивность",
+            "en": "A bar’s position sets time and its height represents intensity"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Начинайте с малого числа различимых сигналов и давайте повторить последовательность.",
+        "en": "Start with a few distinguishable cues and allow the sequence to be replayed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Haptrix",
+        "url": "https://www.haptrix.com/store"
+      }
+    ]
+  },
+  "phone-haptics--family-stealth": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Стелс, опасность и хоррор",
+      "en": "Stealth, danger and horror"
+    },
+    "description": {
+      "ru": "Проектный сценарий: усиление тактильного рисунка сообщает о росте опасности. В Haptrix для такого сигнала задают интенсивность и огибающую.",
+      "en": "Design scenario: a growing tactile pattern signals increasing danger. Haptrix provides intensity and envelope controls for such a cue."
+    },
+    "image": {
+      "src": "images/mechanics/control-haptrix-adsr.webp",
+      "width": 1440,
+      "height": 900,
+      "crop": {
+        "x": 47,
+        "y": 71,
+        "width": 1343,
+        "height": 494
+      },
+      "game": "Haptrix",
+      "sourceUrl": "https://www.haptrix.com/store",
+      "originalUrl": "https://www.haptrix.com/images/screenshots/adsr.png",
+      "credit": "nthState / NTHSTATE LTD",
+      "rights": "© nthState / NTHSTATE LTD. Official Haptrix screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Haptrix: настройка огибающей для проектного сигнала опасности",
+        "en": "Haptrix: envelope controls for a designed danger cue"
+      },
+      "alt": {
+        "ru": "Haptrix: настройка огибающей для проектного сигнала опасности",
+        "en": "Haptrix: envelope controls for a designed danger cue"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 32,
+          "label": {
+            "ru": "Нарастание, удержание и спад формируют характер сигнала",
+            "en": "Attack, sustain and release shape the signal"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте предупреждение и уже случившийся урон, чтобы сигнал помогал действовать.",
+        "en": "Distinguish warnings from damage already received so feedback supports decisions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Haptrix",
+        "url": "https://www.haptrix.com/store"
+      }
+    ]
+  },
+  "phone-haptics--family-story": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повествование и присутствие",
+      "en": "Narrative and presence"
+    },
+    "description": {
+      "ru": "Проектный сценарий: узнаваемый тактильный мотив сопровождает сцену. Haptrix позволяет настроить длительность и нарастание такого сигнала.",
+      "en": "Design scenario: a recognisable tactile motif accompanies a scene. Haptrix lets a designer set the duration and build-up of that signal."
+    },
+    "image": {
+      "src": "images/mechanics/control-haptrix-adsr.webp",
+      "width": 1440,
+      "height": 900,
+      "crop": {
+        "x": 47,
+        "y": 71,
+        "width": 1343,
+        "height": 494
+      },
+      "game": "Haptrix",
+      "sourceUrl": "https://www.haptrix.com/store",
+      "originalUrl": "https://www.haptrix.com/images/screenshots/adsr.png",
+      "credit": "nthState / NTHSTATE LTD",
+      "rights": "© nthState / NTHSTATE LTD. Official Haptrix screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Haptrix: длительность и огибающая проектного тактильного мотива",
+        "en": "Haptrix: duration and envelope of a designed tactile motif"
+      },
+      "alt": {
+        "ru": "Haptrix: длительность и огибающая проектного тактильного мотива",
+        "en": "Haptrix: duration and envelope of a designed tactile motif"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 32,
+          "label": {
+            "ru": "Нарастание, удержание и спад формируют характер сигнала",
+            "en": "Attack, sustain and release shape the signal"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Повторяйте мотив последовательно и оставляйте возможность уменьшить его силу.",
+        "en": "Use the motif consistently and allow its strength to be reduced."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Haptrix",
+        "url": "https://www.haptrix.com/store"
+      }
+    ]
+  },
+  "phone-haptics--family-multi": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Совместные сигналы и команды",
+      "en": "Shared cues and commands"
+    },
+    "description": {
+      "ru": "В прототипе VibeComm вибрации передают команду через общую поверхность. Несколько телефонов принимают её акселерометрами и синхронно меняют экран.",
+      "en": "In the VibeComm prototype vibrations carry a command through a shared surface. Phones receive it through accelerometers and change their screens together."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-vibecomm-17.webp",
+      "width": 710,
+      "height": 428,
+      "crop": {
+        "x": 244,
+        "y": 5,
+        "width": 222,
+        "height": 170
+      },
+      "game": "VibeComm (research prototype)",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4279528/",
+      "originalUrl": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ec0e/4279528/93d7cc4d9b2a/sensors-14-21151f17.jpg",
+      "credit": "Inhwan Hwang / Jungchan Cho / Songhwai Oh",
+      "rights": "Figure 17 © 2014 Inhwan Hwang, Jungchan Cho and Songhwai Oh. CC BY 4.0: https://creativecommons.org/licenses/by/4.0/. Cropped and converted to WebP; research prototype, not a universal phone feature.",
+      "caption": {
+        "ru": "VibeComm: исследовательская передача команды нескольким телефонам",
+        "en": "VibeComm: research prototype sending one command to multiple phones"
+      },
+      "alt": {
+        "ru": "VibeComm: исследовательская передача команды нескольким телефонам",
+        "en": "VibeComm: research prototype sending one command to multiple phones"
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 28,
+          "label": {
+            "ru": "Приёмники показывают одинаковый результат принятой команды",
+            "en": "Receivers display the same result after receiving the command"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Это медленный экспериментальный канал: нужны общая поверхность и калибровка.",
+        "en": "This is a low-rate experimental channel requiring a shared surface and calibration."
+      }
+    ],
+    "examples": [
+      {
+        "title": "VibeComm (research prototype)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4279528/"
+      }
+    ]
+  },
+  "phone-haptics--family-sensors": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Движение, сенсоры и AR",
+      "en": "Movement, sensors and AR"
+    },
+    "description": {
+      "ru": "Датчик получает ввод, а вибромотор сообщает результат. В HapticBounce наклон двигает шарик, после чего столкновения вызывают тактильный отклик.",
+      "en": "A sensor supplies input and the motor reports the result. In HapticBounce tilt moves a ball and its collisions produce haptic feedback."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-apple-bounce-965.webp",
+      "width": 640,
+      "height": 360,
+      "crop": {
+        "x": 60,
+        "y": 20,
+        "width": 520,
+        "height": 275
+      },
+      "game": "HapticBounce (Apple sample)",
+      "sourceUrl": "https://developer.apple.com/videos/play/wwdc2019/520/",
+      "originalUrl": "https://devstreaming-cdn.apple.com/videos/wwdc/2019/520gfafwrte8ytre/520/520_sd_introducing_core_haptics.mp4?dl=1",
+      "sourceFrameSeconds": 965,
+      "credit": "Apple / WWDC 2019",
+      "rights": "© Apple. Frame from Introducing Core Haptics, WWDC 2019 session 520. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "alt": {
+        "ru": "HapticBounce: пример связи тактильного импульса со столкновением",
+        "en": "HapticBounce: a sample linking a tactile pulse to a collision"
+      },
+      "markers": [
+        {
+          "x": 20,
+          "y": 68,
+          "label": {
+            "ru": "Столкновения шарика запускают звуковой и тактильный отклик",
+            "en": "The ball’s collisions trigger audio and haptic feedback"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте, что сам вибромотор может вносить помехи в измерения движения.",
+        "en": "Account for the vibration motor interfering with motion measurements."
+      }
+    ],
+    "examples": [
+      {
+        "title": "HapticBounce (Apple sample)",
+        "url": "https://developer.apple.com/videos/play/wwdc2019/520/"
+      }
+    ]
+  },
+  "phone-haptics--family-accessibility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Доступность без взгляда на экран",
+      "en": "Accessibility without looking"
+    },
+    "description": {
+      "ru": "Тактильные подтверждения дополняют управление без взгляда. В Blind Drive основу составляет звук, а для мобильной версии разработаны тактильные эффекты.",
+      "en": "Tactile confirmation supports control without looking. Blind Drive relies on sound and includes haptic effects designed for its mobile version."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-blind-drive-3.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Blind Drive",
+      "sourceUrl": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource114/v4/49/64/a2/4964a27a-e780-a9da-8191-19c8a4ba92f9/9636f08b-efd0-4ea7-b5e6-2b0cbb80d34c_3.jpg/1440x1080bb.jpg",
+      "credit": "Giori Politi",
+      "rights": "© Giori Politi. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "alt": {
+        "ru": "Blind Drive: ограниченный экран, основные угрозы передаются звуком",
+        "en": "Blind Drive: a limited display, with key threats communicated through sound"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 58,
+          "label": {
+            "ru": "Дорожную ситуацию нужно восстанавливать по звучанию",
+            "en": "The road situation must be reconstructed through sound"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте интерфейс с целевыми участниками и оставляйте тактильный канал настраиваемым.",
+        "en": "Test with the intended users and keep haptic feedback adjustable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Blind Drive",
+        "url": "https://apps.apple.com/us/app/blind-drive/id964294239?uo=4"
+      }
+    ]
+  },
+  "phone-haptics--family-utility": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повседневные задачи",
+      "en": "Everyday tasks"
+    },
+    "description": {
+      "ru": "Короткий отклик позволяет заметить смену состояния без постоянного контроля глазами. В Procreate Pocket так подтверждается переключение режима слайдера.",
+      "en": "A short cue makes state changes noticeable without constant visual checking. Procreate Pocket uses it to confirm a slider’s mode change."
+    },
+    "image": {
+      "src": "images/mechanics/touch-pocket-interface-0.webp",
+      "width": 640,
+      "height": 1387,
+      "crop": {
+        "x": 350,
+        "y": 420,
+        "width": 290,
+        "height": 510
+      },
+      "game": "Procreate Pocket",
+      "sourceUrl": "https://help.procreate.com/pocket/handbook/interface-gestures/interface",
+      "originalUrl": "https://cdn.sanity.io/images/skm640rd/production/0de741e2b23abb6d5e0756a214d621a945bc35bd-1179x2556.png?auto=format&auto=format&w=640",
+      "credit": "Savage Interactive",
+      "rights": "© Savage Interactive. Developer-distributed app screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "alt": {
+        "ru": "Procreate Pocket: нижний слайдер подтверждает смену режима откликом",
+        "en": "Procreate Pocket: the lower slider confirms a mode change with haptics"
+      },
+      "markers": [
+        {
+          "x": 94,
+          "y": 53,
+          "label": {
+            "ru": "Удержание переключает Pressure/Opacity и даёт тактильный сигнал",
+            "en": "Holding switches Pressure/Opacity with a tactile cue"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Выделяйте только полезные события, чтобы постоянная вибрация не обесценивала сигнал.",
+        "en": "Reserve feedback for useful events so constant vibration does not weaken its meaning."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Procreate Pocket",
+        "url": "https://help.procreate.com/pocket/handbook/interface-gestures/interface"
+      }
+    ]
+  },
+  "phone-haptics--family-creative": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Творчество и работа с ритмом",
+      "en": "Creativity and rhythm"
+    },
+    "description": {
+      "ru": "Музыкальная фраза становится основой тактильного рисунка. Haptrix при импорте аудио умеет добавлять импульсы на найденные удары ритма.",
+      "en": "A musical phrase becomes a basis for a tactile pattern. Haptrix can add pulses at detected beats while importing audio."
+    },
+    "image": {
+      "src": "images/mechanics/control-haptrix-importaudio.webp",
+      "width": 1128,
+      "height": 1080,
+      "crop": {
+        "x": 110,
+        "y": 75,
+        "width": 905,
+        "height": 860
+      },
+      "game": "Haptrix",
+      "sourceUrl": "https://www.haptrix.com/store",
+      "originalUrl": "https://www.haptrix.com/images/screenshots/importAudio.png",
+      "credit": "nthState / NTHSTATE LTD",
+      "rights": "© nthState / NTHSTATE LTD. Official Haptrix screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Haptrix: импорт аудио с добавлением тактильных импульсов по ритму",
+        "en": "Haptrix: importing audio with tactile pulses on detected beats"
+      },
+      "alt": {
+        "ru": "Haptrix: импорт аудио с добавлением тактильных импульсов по ритму",
+        "en": "Haptrix: importing audio with tactile pulses on detected beats"
+      },
+      "markers": [
+        {
+          "x": 17,
+          "y": 40,
+          "label": {
+            "ru": "Beat Detection добавляет события на найденные музыкальные удары",
+            "en": "Beat Detection adds events at detected musical beats"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте синхронизацию на устройстве и сохраняйте ручную правку автоматически найденных событий.",
+        "en": "Check device timing and allow manual correction of automatically detected events."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Haptrix",
+        "url": "https://www.haptrix.com/store"
+      }
+    ]
+  },
+  "phone-haptics--family-experimental": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Исследования и аппаратные расширения",
+      "en": "Research and hardware extensions"
+    },
+    "description": {
+      "ru": "GripSense использует вибромотор и гироскоп для косвенной оценки нажима. Это исследовательский метод с калибровкой, а не штатный датчик силы телефона.",
+      "en": "GripSense uses a motor and gyroscope to estimate pressure indirectly. This calibrated research method is not a standard phone force sensor."
+    },
+    "image": {
+      "src": "images/mechanics/haptic-gripsense-photo.webp",
+      "width": 1029,
+      "height": 1440,
+      "crop": {
+        "x": 62,
+        "y": 205,
+        "width": 738,
+        "height": 984
+      },
+      "game": "GripSense (research prototype)",
+      "sourceUrl": "https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf",
+      "originalUrl": "https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf",
+      "credit": "Mayank Goel / Jacob O. Wobbrock / Shwetak N. Patel",
+      "rights": "© The authors / ACM, UIST 2012. Photograph extracted from Figure 1 on PDF page 1. Research prototype; separate rights retained. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "GripSense: фото из исследования управления нажимом одним пальцем",
+        "en": "GripSense: a photograph from research into one-finger pressure input"
+      },
+      "alt": {
+        "ru": "GripSense: фото из исследования управления нажимом одним пальцем",
+        "en": "GripSense: a photograph from research into one-finger pressure input"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 56,
+          "label": {
+            "ru": "Прототип оценивает нажим по косвенным вибрационным признакам",
+            "en": "The prototype estimates pressure from indirect vibration measurements"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте конкретную аппаратную модель, хват и условия измерения.",
+        "en": "Validate the specific hardware model, grip and measurement conditions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "GripSense (research prototype)",
+        "url": "https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf"
+      }
+    ]
+  },
+  "controller-input--t285": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Трекбол, колесо и вращающийся ввод",
+      "en": "Trackball, wheel and rotary input"
+    },
+    "description": {
+      "ru": "Вращение задаёт угол или его изменение. В Crankin’s Time Travel Adventure рукоятка Playdate двигает личную временную линию героя вперёд и назад.",
+      "en": "Rotation supplies an angle or its change. In Crankin’s Time Travel Adventure the Playdate crank moves the character’s timeline forwards or backwards."
+    },
+    "image": {
+      "src": "images/mechanics/control-crankin.webp",
+      "width": 400,
+      "height": 240,
+      "game": "Crankin’s Time Travel Adventure",
+      "sourceUrl": "https://play.date/games/crankin/",
+      "originalUrl": "https://play.date/media/games/com.uvula.crankin/Crankin-2_ssOLbgr.png",
+      "credit": "uvula / Keita Takahashi / Ryan Mohler / Matthew Grimm / Shaun Inman / Panic",
+      "rights": "© uvula and respective rights holders. Publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Crankin’s Time Travel Adventure: рукоятка управляет временем героя",
+        "en": "Crankin’s Time Travel Adventure: the crank controls the character’s time"
+      },
+      "alt": {
+        "ru": "Crankin’s Time Travel Adventure: рукоятка управляет временем героя",
+        "en": "Crankin’s Time Travel Adventure: the crank controls the character’s time"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 61,
+          "label": {
+            "ru": "Вращение двигает героя по его временной линии, не перематывая весь мир",
+            "en": "The crank moves the hero along a personal timeline"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте изменение угла и абсолютную позицию; определяйте реакцию на остановку.",
+        "en": "Distinguish angle changes from absolute position and define what stopping does."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crankin’s Time Travel Adventure",
+        "url": "https://play.date/games/crankin/"
+      }
+    ]
+  },
+  "spatial-interfaces--t306": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рули, педали, джойстики и кабины",
+      "en": "Wheels, pedals, joysticks and cockpits"
+    },
+    "description": {
+      "ru": "Руль и педали передают осевой ввод, а силовой отклик дополняет управление. В BeamNG.drive график показывает усилие, которое игра отправляет на руль.",
+      "en": "A wheel and pedals supply axis input while force feedback supplements control. BeamNG.drive plots the force the game sends to the wheel."
+    },
+    "image": {
+      "src": "images/mechanics/control-beamng-wheel.webp",
+      "width": 453,
+      "height": 193,
+      "game": "BeamNG.drive",
+      "sourceUrl": "https://documentation.beamng.com/support/hardware/steering_wheel_setup/",
+      "originalUrl": "https://documentation.beamng.com/support/hardware/steering_wheel_setup/Beamng_ffb_app.png",
+      "credit": "BeamNG GmbH",
+      "rights": "© BeamNG GmbH. Official documentation or publisher-distributed image; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "BeamNG.drive: график силовой обратной связи руля",
+        "en": "BeamNG.drive: a plot of steering-wheel force feedback"
+      },
+      "alt": {
+        "ru": "BeamNG.drive: график силовой обратной связи руля",
+        "en": "BeamNG.drive: a plot of steering-wheel force feedback"
+      },
+      "markers": [
+        {
+          "x": 34,
+          "y": 22,
+          "label": {
+            "ru": "График сопоставляет текущую силу с пределом обратной связи",
+            "en": "The graph compares current force with the feedback limit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Калибруйте центр и края осей, а силу обратной связи проверяйте на ограничение амплитуды.",
+        "en": "Calibrate axis centers and endpoints, and check force feedback for clipping."
+      }
+    ],
+    "examples": [
+      {
+        "title": "BeamNG.drive",
+        "url": "https://documentation.beamng.com/support/hardware/steering_wheel_setup/"
+      }
+    ]
+  },
+  "spatial-interfaces--t308": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Проекции и интерактивные поверхности",
+      "en": "Projection and interactive surfaces"
+    },
+    "description": {
+      "ru": "Проекция связывает виртуальную сцену с комнатой. В прототипе RoomAlive камеры и проекторы согласуют изображение со стенами, полом и мебелью.",
+      "en": "Projection maps a virtual scene onto physical surfaces. The RoomAlive research prototype uses calibrated projectors and cameras across a room."
+    },
+    "image": {
+      "src": "images/mechanics/control-roomalive.webp",
+      "width": 933,
+      "height": 555,
+      "game": "RoomAlive (research prototype)",
+      "sourceUrl": "https://github.com/microsoft/RoomAliveToolkit",
+      "originalUrl": "https://raw.githubusercontent.com/microsoft/RoomAliveToolkit/master/RoomAliveToolkitForUnity/docs/images/Roomalive.png",
+      "credit": "Microsoft Research / RoomAlive authors",
+      "rights": "© Microsoft Research and the RoomAlive authors. Official research project photograph. Source repository licensing applies; not relicensed under portal CC BY 4.0.",
+      "caption": {
+        "ru": "RoomAlive: проекция учитывает стены, мебель и устройство комнаты",
+        "en": "RoomAlive: projection follows the room’s walls, furniture and geometry"
+      },
+      "alt": {
+        "ru": "RoomAlive: проекция учитывает стены, мебель и устройство комнаты",
+        "en": "RoomAlive: projection follows the room’s walls, furniture and geometry"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 62,
+          "label": {
+            "ru": "Проецируемый рисунок согласован с поверхностями мебели и пола",
+            "en": "The projected pattern follows furniture and floor surfaces"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Калибруйте проекторы и камеры вместе и учитывайте тени от людей и предметов.",
+        "en": "Calibrate projectors and cameras together and account for people and object shadows."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RoomAlive (research prototype)",
+        "url": "https://github.com/microsoft/RoomAliveToolkit"
+      }
+    ]
+  },
+  "phone-camera--family-framing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кадрирование и визуальное внимание",
+      "en": "Framing and visual attention"
+    },
+    "description": {
+      "ru": "Игрок направляет камеру и помещает нужный объект в кадр. Seeing AI помогает выровнять документ перед чтением; положение в кадре не равно координатам комнаты.",
+      "en": "The player aims the camera and frames a target. Seeing AI helps align a document for reading; image position does not establish room coordinates."
+    },
+    "image": {
+      "src": "images/mechanics/input-seeing-ai-4.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 280,
+        "width": 540,
+        "height": 940
+      },
+      "game": "Seeing AI",
+      "sourceUrl": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a4/1e/7c/a41e7cca-464f-349c-b6a4-ee9f92f6b529/1a75694e-ca86-4d81-b001-35e6ce9f1866_iPhone8_Document-en.jpg/720x1560bb.jpg",
+      "credit": "Microsoft Corporation",
+      "rights": "Imagery © Microsoft Corporation. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Seeing AI: рамка документа помогает подготовить снимок",
+        "en": "Seeing AI: a document outline helps prepare the capture"
+      },
+      "alt": {
+        "ru": "Seeing AI: рамка документа помогает подготовить снимок",
+        "en": "Seeing AI: a document outline helps prepare the capture"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 55,
+          "label": {
+            "ru": "Рамка выделяет страницу, которую нужно удержать в кадре",
+            "en": "The outline marks the page to keep in view"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, что попало в кадр и что ещё нужно выровнять.",
+        "en": "Show what is in frame and what still needs alignment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Seeing AI",
+        "url": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-capture-time": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Момент съёмки и режим записи",
+      "en": "Capture timing and recording modes"
+    },
+    "description": {
+      "ru": "Событием становится нажатие спуска или начало записи. В Stop Motion Studio игрок снимает отдельные кадры и собирает движение из последовательности снимков.",
+      "en": "Pressing the shutter or starting recording creates an event. Stop Motion Studio builds motion from a sequence of individually captured frames."
+    },
+    "image": {
+      "src": "images/mechanics/input-stop-motion-1.webp",
+      "width": 720,
+      "height": 405,
+      "game": "Stop Motion Studio",
+      "sourceUrl": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0e/b7/cb/0eb7cbe4-ad03-f3dd-beeb-bea88b4f104b/73d281b5-668b-47ef-8846-ca1621a35e30_5_5_2.png/720x1560bb.jpg",
+      "credit": "CATEATER, LLC",
+      "rights": "Imagery © CATEATER, LLC. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Stop Motion Studio: спуск добавляет кадр в покадровую анимацию",
+        "en": "Stop Motion Studio: the shutter adds a frame to the animation"
+      },
+      "alt": {
+        "ru": "Stop Motion Studio: спуск добавляет кадр в покадровую анимацию",
+        "en": "Stop Motion Studio: the shutter adds a frame to the animation"
+      },
+      "markers": [
+        {
+          "x": 92,
+          "y": 50,
+          "label": {
+            "ru": "Красная кнопка захватывает очередной кадр сцены",
+            "en": "The red button captures the next frame of the scene"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Подтверждайте захват и учитывайте задержку между командой и снимком.",
+        "en": "Confirm capture and account for delay between the command and the image."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Stop Motion Studio",
+        "url": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-camera-controls": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Оптика и настройки камеры",
+      "en": "Optics and camera settings"
+    },
+    "description": {
+      "ru": "Настройки камеры меняют способ получения изображения. В интерфейсе Halide Mark II ручная фокусировка задаёт дистанцию; доступные параметры зависят от камеры.",
+      "en": "Camera settings change image capture. In the Halide Mark II interface, manual focus sets the distance; available controls depend on the camera."
+    },
+    "image": {
+      "src": "images/mechanics/camera-halide-4.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 105,
+        "y": 390,
+        "width": 510,
+        "height": 870
+      },
+      "game": "Halide (Mark II gallery)",
+      "sourceUrl": "https://apps.apple.com/us/app/halide-mark-iii-pro-camera/id885697368?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ce/21/46/ce214679-8f6e-0a1b-e62a-8624f16f9941/85c2b261-8d55-41c8-ae9b-597cb9e00ed1_55_App_Store_Screen_4.png/720x1560bb.jpg",
+      "credit": "Lux Optics Incorporated",
+      "rights": "© Lux Optics Incorporated. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Halide: ручной фокус в опубликованной галерее Mark II",
+        "en": "Halide: manual focus in the published Mark II gallery"
+      },
+      "alt": {
+        "ru": "Halide: ручной фокус в опубликованной галерее Mark II",
+        "en": "Halide: manual focus in the published Mark II gallery"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 86,
+          "label": {
+            "ru": "Шкала ручной фокусировки показывает дистанцию 0,7 м",
+            "en": "The manual focus scale shows a distance of 0.7 m"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте оптические параметры, цифровой зум и обработку готового кадра.",
+        "en": "Distinguish optical controls, digital zoom and post-capture processing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Halide (Mark II gallery)",
+        "url": "https://apps.apple.com/us/app/halide-mark-iii-pro-camera/id885697368?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-light-color": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Свет, цвет и тени",
+      "en": "Light, color and shadows"
+    },
+    "description": {
+      "ru": "Игра извлекает яркость или цвет из изображения. В phyphox видны камерное превью и оценка яркости; автоэкспозиция мешает сравнивать кадры без калибровки.",
+      "en": "A game extracts brightness or color from the image. phyphox shows a camera preview and brightness estimate; autoexposure complicates uncalibrated comparisons."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-2.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 171,
+        "width": 663,
+        "height": 974
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cd/9b/f6/cd9bf6f7-2965-318a-ed9d-37fd0f031daa/iphone-03-camera-luminance.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: оценка яркости через камеру, а не отдельный датчик света",
+        "en": "phyphox: camera-based brightness estimation, not a separate light sensor"
+      },
+      "alt": {
+        "ru": "phyphox: оценка яркости через камеру, а не отдельный датчик света",
+        "en": "phyphox: camera-based brightness estimation, not a separate light sensor"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 20,
+          "label": {
+            "ru": "Численная оценка яркости связана с наблюдаемой камерой сценой",
+            "en": "The brightness estimate relates to the scene observed by the camera"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для сравнения фиксируйте экспозицию и баланс белого, если устройство позволяет.",
+        "en": "Lock exposure and white balance for comparisons when the device permits it."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-physical-optics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Физическое воздействие на изображение",
+      "en": "Physical manipulation of the image"
+    },
+    "description": {
+      "ru": "Зеркало или фильтр меняет путь света к объективу. В Osmo красный отражатель направляет камеру на стол; для такого ввода нужны совместимая база и детали.",
+      "en": "A mirror or filter changes the light path into the lens. Osmo’s red reflector directs the camera toward the table, using compatible base hardware and pieces."
+    },
+    "image": {
+      "src": "images/mechanics/camera-osmo-tangram-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 185,
+        "width": 720,
+        "height": 1095
+      },
+      "game": "Osmo Tangram",
+      "sourceUrl": "https://apps.apple.com/us/app/osmo-tangram/id1539533255?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/fc/32/bcfc32de-742d-cf03-637c-3cf428664589/16cb7312-89cf-44a2-98f5-aac575a10b85_Tangram_1242_x_2208_3.png/720x1560bb.jpg",
+      "credit": "Tangible Play",
+      "rights": "© Tangible Play. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Osmo Tangram: отражатель над камерой и физические детали на столе",
+        "en": "Osmo Tangram: a camera reflector and physical pieces on the table"
+      },
+      "alt": {
+        "ru": "Osmo Tangram: отражатель над камерой и физические детали на столе",
+        "en": "Osmo Tangram: a camera reflector and physical pieces on the table"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 22,
+          "label": {
+            "ru": "Красный отражатель направляет поле зрения камеры на стол",
+            "en": "The red reflector redirects the camera’s view onto the table"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сначала задайте положение камеры и оптики, затем проверяйте распознавание.",
+        "en": "Define camera and optical placement before testing recognition."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Osmo Tangram",
+        "url": "https://apps.apple.com/us/app/osmo-tangram/id1539533255?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-motion-2d": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Движение в плоскости изображения",
+      "en": "Motion in the image plane"
+    },
+    "description": {
+      "ru": "Кадры превращаются в направления и траектории движения. В Active Arcade камера считывает движения игрока; телефон должен стоять неподвижно и видеть тело.",
+      "en": "Frames become movement directions and paths. Active Arcade reads player motion through the camera; the phone needs a stable position and a clear body view."
+    },
+    "image": {
+      "src": "images/mechanics/input-active-arcade-1.webp",
+      "width": 720,
+      "height": 405,
+      "crop": {
+        "x": 225,
+        "y": 60,
+        "width": 495,
+        "height": 285
+      },
+      "game": "Active Arcade",
+      "sourceUrl": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/a6/f6/47/a6f64733-077d-715b-80b4-dfef3fecf396/8e690756-92fb-4664-952a-0adc89822d2d_body-motion-gameplay-.jpg/720x1560bb.jpg",
+      "credit": "Nex",
+      "rights": "Imagery © Nex. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "alt": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 43,
+          "label": {
+            "ru": "Камера видит участника, а игра добавляет счёт и эффекты",
+            "en": "The camera sees the player while the game adds scores and effects"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не смешивайте движение игрока с дрожанием камеры; показывайте границы рабочей зоны.",
+        "en": "Separate player motion from camera shake and show the usable tracking area."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Active Arcade",
+        "url": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-objects": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Предметы, признаки и отношения",
+      "en": "Objects, signs and relationships"
+    },
+    "description": {
+      "ru": "Камера распознаёт предметы поддерживаемых классов. В Seeing AI отдельный режим определяет банкноты; это не универсальное узнавание любых вещей и материалов.",
+      "en": "The camera recognizes supported object classes. Seeing AI has a dedicated currency mode; it does not identify every object or material."
+    },
+    "image": {
+      "src": "images/mechanics/input-seeing-ai-3.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 280,
+        "width": 540,
+        "height": 940
+      },
+      "game": "Seeing AI",
+      "sourceUrl": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ee/e4/23/eee42313-d4c2-2728-6052-cda58984e9e4/dc602422-f4bb-4b6a-a7cb-e8a578e7b5d0_iPhone8_Currency-en.jpg/720x1560bb.jpg",
+      "credit": "Microsoft Corporation",
+      "rights": "Imagery © Microsoft Corporation. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Seeing AI: отдельный режим распознавания банкнот",
+        "en": "Seeing AI: a dedicated currency recognition mode"
+      },
+      "alt": {
+        "ru": "Seeing AI: отдельный режим распознавания банкнот",
+        "en": "Seeing AI: a dedicated currency recognition mode"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 55,
+          "label": {
+            "ru": "Банкнота находится в кадре режима Currency",
+            "en": "A banknote is in view in Currency mode"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничьте классы объектов и предусмотрите подтверждение спорного результата.",
+        "en": "Limit supported classes and allow confirmation of uncertain results."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Seeing AI",
+        "url": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-text-codes": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Текст, рисунки и машинные коды",
+      "en": "Text, pictures and machine codes"
+    },
+    "description": {
+      "ru": "Камера переводит видимые знаки в данные. В режиме Product приложения Seeing AI звуковые подсказки помогают навести камеру на штрихкод товара.",
+      "en": "The camera turns visible symbols into data. Seeing AI’s Product mode uses audio guidance to help aim the camera at a product barcode."
+    },
+    "image": {
+      "src": "images/mechanics/input-seeing-ai-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 280,
+        "width": 540,
+        "height": 940
+      },
+      "game": "Seeing AI",
+      "sourceUrl": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0c/43/4d/0c434dca-3f16-3c9d-dbfa-3a6bf7481ffd/e94945ac-96c2-4193-91c0-b508e51d97ce_iPhone8_Product-en.jpg/720x1560bb.jpg",
+      "credit": "Microsoft Corporation",
+      "rights": "Imagery © Microsoft Corporation. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Seeing AI: наведение камеры на штрихкод в режиме Product",
+        "en": "Seeing AI: aiming at a barcode in Product mode"
+      },
+      "alt": {
+        "ru": "Seeing AI: наведение камеры на штрихкод в режиме Product",
+        "en": "Seeing AI: aiming at a barcode in Product mode"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 70,
+          "label": {
+            "ru": "Штрихкод должен быть виден целиком и достаточно чётко",
+            "en": "The barcode must be fully visible and clear enough"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте поддерживаемые коды и письменности, а не только качество камеры.",
+        "en": "Check supported codes and scripts as well as camera quality."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Seeing AI",
+        "url": "https://apps.apple.com/us/app/seeing-ai/id999062298?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-paper-table": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бумага, карточки и настольные объекты",
+      "en": "Paper, cards and tabletop objects"
+    },
+    "description": {
+      "ru": "Игрок меняет раскладку реальных деталей, а камера читает её. Osmo Tangram сопоставляет фигуру на столе с заданием на экране; нужны база и совместимые детали.",
+      "en": "The player rearranges physical pieces and the camera reads them. Osmo Tangram matches tabletop shapes to onscreen puzzles, using its base and compatible pieces."
+    },
+    "image": {
+      "src": "images/mechanics/camera-osmo-tangram-2.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 185,
+        "width": 720,
+        "height": 1095
+      },
+      "game": "Osmo Tangram",
+      "sourceUrl": "https://apps.apple.com/us/app/osmo-tangram/id1539533255?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/bc/fc/32/bcfc32de-742d-cf03-637c-3cf428664589/16cb7312-89cf-44a2-98f5-aac575a10b85_Tangram_1242_x_2208_3.png/720x1560bb.jpg",
+      "credit": "Tangible Play",
+      "rights": "© Tangible Play. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Osmo Tangram: физическая раскладка и её экранное представление",
+        "en": "Osmo Tangram: physical pieces and their onscreen representation"
+      },
+      "alt": {
+        "ru": "Osmo Tangram: физическая раскладка и её экранное представление",
+        "en": "Osmo Tangram: physical pieces and their onscreen representation"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 83,
+          "label": {
+            "ru": "Камера через отражатель наблюдает раскладку деталей перед телефоном",
+            "en": "The camera uses the reflector to observe pieces in front of the phone"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дайте обратную связь для потерянной детали, перекрытия и неправильной раскладки.",
+        "en": "Provide feedback for missing pieces, occlusion and incorrect arrangements."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Osmo Tangram",
+        "url": "https://apps.apple.com/us/app/osmo-tangram/id1539533255?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-face-head": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Лицо и положение головы",
+      "en": "Face and head position"
+    },
+    "description": {
+      "ru": "Положение головы управляет указателем. Head Tracking в iOS использует камеру для движения указателя и удержание для действия; это не подтверждение личности.",
+      "en": "Head position controls a pointer. iOS Head Tracking uses the camera for pointer motion and dwell for actions; it does not establish identity."
+    },
+    "image": {
+      "src": "images/mechanics/camera-apple-head-tracking.webp",
+      "width": 490,
+      "height": 1008,
+      "crop": {
+        "x": 25,
+        "y": 105,
+        "width": 440,
+        "height": 815
+      },
+      "game": "Head Tracking (iOS)",
+      "sourceUrl": "https://support.apple.com/guide/iphone/control-iphone-with-the-movement-of-your-head-iph9c3dc17cf/ios",
+      "originalUrl": "https://ipcdn-web.apple.com/assets/v2/web/e44793cc-1a1a-4ac0-a00b-345b478691f8",
+      "credit": "Apple",
+      "rights": "© Apple. Official documentation or publisher-distributed image; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "iOS Head Tracking: включённое слежение и меню AssistiveTouch",
+        "en": "iOS Head Tracking: enabled tracking and the AssistiveTouch menu"
+      },
+      "alt": {
+        "ru": "iOS Head Tracking: включённое слежение и меню AssistiveTouch",
+        "en": "iOS Head Tracking: enabled tracking and the AssistiveTouch menu"
+      },
+      "markers": [
+        {
+          "x": 76,
+          "y": 19,
+          "label": {
+            "ru": "Head Tracking включён: камера отслеживает движение головы",
+            "en": "Head Tracking is enabled to track head movement"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте дрейф, чувствительность и возможность остановить указатель.",
+        "en": "Account for drift, sensitivity and a way to pause the pointer."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Head Tracking (iOS)",
+        "url": "https://support.apple.com/guide/iphone/control-iphone-with-the-movement-of-your-head-iph9c3dc17cf/ios"
+      }
+    ]
+  },
+  "phone-camera--family-face-actions": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Глаза, рот и мимические действия",
+      "en": "Eyes, mouth and facial actions"
+    },
+    "description": {
+      "ru": "Видимое действие лица становится командой. В iOS Head Tracking можно назначить действие поднятию бровей или открытию рта; мимика не доказывает эмоцию.",
+      "en": "A visible facial action becomes a command. iOS Head Tracking can map eyebrow raises or an open mouth to actions; facial shape does not prove emotion."
+    },
+    "image": {
+      "src": "images/mechanics/camera-apple-head-tracking.webp",
+      "width": 490,
+      "height": 1008,
+      "crop": {
+        "x": 25,
+        "y": 105,
+        "width": 440,
+        "height": 815
+      },
+      "game": "Head Tracking (iOS)",
+      "sourceUrl": "https://support.apple.com/guide/iphone/control-iphone-with-the-movement-of-your-head-iph9c3dc17cf/ios",
+      "originalUrl": "https://ipcdn-web.apple.com/assets/v2/web/e44793cc-1a1a-4ac0-a00b-345b478691f8",
+      "credit": "Apple",
+      "rights": "© Apple. Official documentation or publisher-distributed image; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "iOS Head Tracking: отдельные назначения для мимических действий",
+        "en": "iOS Head Tracking: separate mappings for facial actions"
+      },
+      "alt": {
+        "ru": "iOS Head Tracking: отдельные назначения для мимических действий",
+        "en": "iOS Head Tracking: separate mappings for facial actions"
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 42,
+          "label": {
+            "ru": "Open Mouth можно связать с действием; здесь назначение ещё None",
+            "en": "Open Mouth can map to an action; this screenshot still shows None"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Калибруйте порог и отличайте намеренную команду от обычного моргания или речи.",
+        "en": "Calibrate thresholds and distinguish intentional commands from blinking or speech."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Head Tracking (iOS)",
+        "url": "https://support.apple.com/guide/iphone/control-iphone-with-the-movement-of-your-head-iph9c3dc17cf/ios"
+      }
+    ]
+  },
+  "phone-camera--family-hands": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кисти, пальцы и ручные жесты",
+      "en": "Hands, fingers and hand gestures"
+    },
+    "description": {
+      "ru": "Камера оценивает положения кисти и пальцев. MediaPipe показывает ориентиры руки; правила жестов строят поверх этих точек с учётом перекрытий и потери трекинга.",
+      "en": "The camera estimates hand and finger positions. MediaPipe provides hand landmarks; gesture rules must handle occlusion and tracking loss."
+    },
+    "image": {
+      "src": "images/mechanics/camera-mp-hand.webp",
+      "width": 1024,
+      "height": 574,
+      "game": "MediaPipe Hand Landmarker",
+      "sourceUrl": "https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker",
+      "originalUrl": "https://ai.google.dev/static/mediapipe/images/solutions/examples/hand_landmark.png",
+      "credit": "Google / original image contributors",
+      "rights": "© Google / original image contributors. Official documentation or publisher-distributed image; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "MediaPipe Hand Landmarker: ориентиры руки на исходном изображении",
+        "en": "MediaPipe Hand Landmarker: hand landmarks over the source image"
+      },
+      "alt": {
+        "ru": "MediaPipe Hand Landmarker: ориентиры руки на исходном изображении",
+        "en": "MediaPipe Hand Landmarker: hand landmarks over the source image"
+      },
+      "markers": [
+        {
+          "x": 45,
+          "y": 55,
+          "label": {
+            "ru": "Точки и связи описывают положение пальцев и кисти",
+            "en": "Points and connections describe finger and hand positions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не обещайте понимание произвольного жеста без отдельной модели и проверки.",
+        "en": "Do not promise arbitrary gesture understanding without a tested model."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MediaPipe Hand Landmarker",
+        "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker"
+      }
+    ]
+  },
+  "phone-camera--family-body": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поза, движение тела и активные игры",
+      "en": "Posture, body movement and active play"
+    },
+    "description": {
+      "ru": "Поза и движение тела заменяют кнопки. В Active Arcade игрок действует перед камерой телефона, а игра сопоставляет движения с экранными целями.",
+      "en": "Body pose and motion replace buttons. In Active Arcade the player moves in front of the phone camera to interact with onscreen targets."
+    },
+    "image": {
+      "src": "images/mechanics/input-active-arcade-1.webp",
+      "width": 720,
+      "height": 405,
+      "crop": {
+        "x": 225,
+        "y": 60,
+        "width": 495,
+        "height": 285
+      },
+      "game": "Active Arcade",
+      "sourceUrl": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource115/v4/a6/f6/47/a6f64733-077d-715b-80b4-dfef3fecf396/8e690756-92fb-4664-952a-0adc89822d2d_body-motion-gameplay-.jpg/720x1560bb.jpg",
+      "credit": "Nex",
+      "rights": "Imagery © Nex. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "alt": {
+        "ru": "Active Arcade: движение человека участвует в игровом действии",
+        "en": "Active Arcade: a person’s movement participates in gameplay"
+      },
+      "markers": [
+        {
+          "x": 65,
+          "y": 43,
+          "label": {
+            "ru": "Камера видит участника, а игра добавляет счёт и эффекты",
+            "en": "The camera sees the player while the game adds scores and effects"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Покажите нужную дистанцию, границы кадра и свободное пространство для движения.",
+        "en": "Show the required distance, frame boundaries and clear movement space."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Active Arcade",
+        "url": "https://apps.apple.com/us/app/active-arcade/id1553158383?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-silhouette": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Силуэт, маски и сегментация",
+      "en": "Silhouette, masks and segmentation"
+    },
+    "description": {
+      "ru": "Сегментация отделяет занятую человеком область от фона. Пример MediaPipe показывает исходный портрет и маску; пересечение в кадре не доказывает контакт в 3D.",
+      "en": "Segmentation separates a person’s image area from the background. MediaPipe shows a portrait and its mask; image overlap does not establish 3D contact."
+    },
+    "image": {
+      "src": "images/mechanics/camera-mp-segmentation.webp",
+      "width": 1024,
+      "height": 574,
+      "game": "MediaPipe Image Segmenter",
+      "sourceUrl": "https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter",
+      "originalUrl": "https://ai.google.dev/static/mediapipe/images/solutions/examples/image_segmentation.png",
+      "credit": "Google / original image contributors",
+      "rights": "© Google / original image contributors. Official documentation or publisher-distributed image; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "MediaPipe Image Segmenter: исходное изображение и маска человека",
+        "en": "MediaPipe Image Segmenter: the source image and a person mask"
+      },
+      "alt": {
+        "ru": "MediaPipe Image Segmenter: исходное изображение и маска человека",
+        "en": "MediaPipe Image Segmenter: the source image and a person mask"
+      },
+      "markers": [
+        {
+          "x": 73,
+          "y": 48,
+          "label": {
+            "ru": "Розовая область обозначает сегмент человека, белая фон",
+            "en": "The pink area marks the person segment; white marks the background"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте контур при смене света, одежды и фона, особенно около волос и рук.",
+        "en": "Test mask edges under different lighting, clothes and backgrounds."
+      }
+    ],
+    "examples": [
+      {
+        "title": "MediaPipe Image Segmenter",
+        "url": "https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter"
+      }
+    ]
+  },
+  "phone-camera--family-ar-geometry": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "AR: поверхности и геометрия пространства",
+      "en": "AR: surfaces and spatial geometry"
+    },
+    "description": {
+      "ru": "Сканирование связывает изображение с геометрией пространства. Polycam строит модели помещений; метод, оборудование и точность зависят от режима и устройства.",
+      "en": "Scanning links images to spatial geometry. Polycam builds room models; the method, hardware requirements and accuracy depend on mode and device."
+    },
+    "image": {
+      "src": "images/mechanics/camera-polycam-0.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 83,
+        "y": 369,
+        "width": 499,
+        "height": 979
+      },
+      "game": "Polycam 3D Scanner & Modeling",
+      "sourceUrl": "https://apps.apple.com/us/app/polycam-3d-scanner-modeling/id1532482376?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/14/41/bc/1441bcd9-8346-7904-55b4-693c5667d983/as16.9Base.png/720x1560bb.jpg",
+      "credit": "Polycam Inc.",
+      "rights": "© Polycam Inc.. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Polycam: реконструированная трёхмерная модель комнаты",
+        "en": "Polycam: a reconstructed three-dimensional room model"
+      },
+      "alt": {
+        "ru": "Polycam: реконструированная трёхмерная модель комнаты",
+        "en": "Polycam: a reconstructed three-dimensional room model"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 57,
+          "label": {
+            "ru": "Объёмная модель сохраняет взаимное расположение поверхностей комнаты",
+            "en": "The 3D model represents the room’s surface layout"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предусмотрите потерю трекинга и трудные поверхности: стекло, зеркала, однотонные стены.",
+        "en": "Handle tracking loss and difficult glass, mirrors and featureless surfaces."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Polycam 3D Scanner & Modeling",
+        "url": "https://apps.apple.com/us/app/polycam-3d-scanner-modeling/id1532482376?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-ar-rules": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "AR: точка зрения и правила наблюдения",
+      "en": "AR: viewpoint and observation rules"
+    },
+    "description": {
+      "ru": "Игрок меняет точку зрения и наводит камеру на пространственные цели. В Measure нужно совместить указатель с точками объекта; результат измерения приблизителен.",
+      "en": "The player changes viewpoint and aims at spatial targets. Measure requires aligning the pointer with object points; its measurements are approximate."
+    },
+    "image": {
+      "src": "images/mechanics/camera-apple-measure.webp",
+      "width": 490,
+      "height": 1008,
+      "game": "Measure (iOS)",
+      "sourceUrl": "https://support.apple.com/guide/iphone/measure-dimensions-iphd8ac2cfea/ios",
+      "originalUrl": "https://ipcdn-web.apple.com/assets/v2/web/1f7529ac-b23e-4b34-a44c-4e84c42893d6",
+      "credit": "Apple",
+      "rights": "© Apple. Official documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Measure: прямоугольник и размеры поверх изображения коробки",
+        "en": "Measure: a rectangle and dimensions over the camera view of a box"
+      },
+      "alt": {
+        "ru": "Measure: прямоугольник и размеры поверх изображения коробки",
+        "en": "Measure: a rectangle and dimensions over the camera view of a box"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Центральный указатель помогает выбирать точки в пространстве",
+            "en": "The central pointer helps select points in space"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте видимость в кадре, прямую видимость в модели и внимание человека.",
+        "en": "Distinguish screen visibility, model line of sight and human attention."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Measure (iOS)",
+        "url": "https://support.apple.com/guide/iphone/measure-dimensions-iphd8ac2cfea/ios"
+      }
+    ]
+  },
+  "phone-camera--family-content": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Съёмка как создание игрового контента",
+      "en": "Filming as game content creation"
+    },
+    "description": {
+      "ru": "Снятые изображения становятся материалом для творчества. В Stop Motion Studio отдельные кадры превращаются в редактируемую последовательность анимации.",
+      "en": "Captured images become creative material. Stop Motion Studio turns individual frames into an editable animation sequence."
+    },
+    "image": {
+      "src": "images/mechanics/input-stop-motion-0.webp",
+      "width": 720,
+      "height": 405,
+      "game": "Stop Motion Studio",
+      "sourceUrl": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/f5/81/d5f581c4-b078-8daf-2537-ed01da4ef627/bd2cc9e8-4e63-4155-bb2d-d408a2102a4a_5_5_1.png/720x1560bb.jpg",
+      "credit": "CATEATER, LLC",
+      "rights": "Imagery © CATEATER, LLC. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Stop Motion Studio: снимки сцены образуют ленту кадров",
+        "en": "Stop Motion Studio: captured images form a frame sequence"
+      },
+      "alt": {
+        "ru": "Stop Motion Studio: снимки сцены образуют ленту кадров",
+        "en": "Stop Motion Studio: captured images form a frame sequence"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 88,
+          "label": {
+            "ru": "Лента позволяет выбирать и редактировать снятые кадры",
+            "en": "The timeline lets the creator select and edit captured frames"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отделяйте захват материала от редактирования и явно показывайте сохранённый результат.",
+        "en": "Separate capture from editing and clearly show the saved result."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Stop Motion Studio",
+        "url": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-memory": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Время, видеопамять и сравнение состояний",
+      "en": "Time, video memory and state comparison"
+    },
+    "description": {
+      "ru": "Последовательность снимков сохраняет историю сцены. В Stop Motion Studio лента кадров позволяет сравнивать этапы движения и возвращаться к нужному снимку.",
+      "en": "A frame sequence preserves a scene’s history. Stop Motion Studio’s timeline lets the creator compare motion stages and revisit individual captures."
+    },
+    "image": {
+      "src": "images/mechanics/input-stop-motion-0.webp",
+      "width": 720,
+      "height": 405,
+      "game": "Stop Motion Studio",
+      "sourceUrl": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/f5/81/d5f581c4-b078-8daf-2537-ed01da4ef627/bd2cc9e8-4e63-4155-bb2d-d408a2102a4a_5_5_1.png/720x1560bb.jpg",
+      "credit": "CATEATER, LLC",
+      "rights": "Imagery © CATEATER, LLC. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Stop Motion Studio: сохранённые кадры одной сцены",
+        "en": "Stop Motion Studio: saved frames from one scene"
+      },
+      "alt": {
+        "ru": "Stop Motion Studio: сохранённые кадры одной сцены",
+        "en": "Stop Motion Studio: saved frames from one scene"
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 88,
+          "label": {
+            "ru": "Выбранный кадр можно сопоставить с соседними в последовательности",
+            "en": "The selected frame can be compared with its neighbors"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для сравнения состояний учитывайте сдвиг камеры и изменение освещения.",
+        "en": "Account for camera movement and lighting changes when comparing states."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Stop Motion Studio",
+        "url": "https://apps.apple.com/us/app/stop-motion-studio/id441651297?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-multiplayer": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Несколько камер и видеосвязь",
+      "en": "Multiple cameras and video calling"
+    },
+    "description": {
+      "ru": "Камеры связывают участников общего видеосеанса. В Google Meet видны несколько собеседников; видеосвязь не задаёт общие координаты AR-сцены.",
+      "en": "Cameras connect participants in a video session. Google Meet shows multiple callers; video calling alone does not synchronize an AR scene’s coordinates."
+    },
+    "image": {
+      "src": "images/mechanics/input-google-meet-4.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 90,
+        "y": 390,
+        "width": 540,
+        "height": 890
+      },
+      "game": "Google Meet",
+      "sourceUrl": "https://apps.apple.com/us/app/google-meet/id1096918571?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d4/b4/3d/d4b43de5-ec61-76d1-1af3-0bdf6bc053df/6f6667ac-1f37-434f-80db-7cc600c7bf3b_APP_IPHONE_55-5.png/720x1560bb.jpg",
+      "credit": "Google",
+      "rights": "Imagery © Google. Developer-distributed screenshot or frame; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Google Meet: видеопотоки участников общего звонка",
+        "en": "Google Meet: participant video feeds in a shared call"
+      },
+      "alt": {
+        "ru": "Google Meet: видеопотоки участников общего звонка",
+        "en": "Google Meet: participant video feeds in a shared call"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 56,
+          "label": {
+            "ru": "Плитки показывают отдельные видеопотоки участников",
+            "en": "Tiles show separate participant video streams"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Учитывайте задержку, потерю кадров и согласие участников на передачу изображения.",
+        "en": "Account for delay, dropped frames and consent to transmit video."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Google Meet",
+        "url": "https://apps.apple.com/us/app/google-meet/id1096918571?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-world-quests": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск в мире и визуальные задания",
+      "en": "World search and visual tasks"
+    },
+    "description": {
+      "ru": "Поиск, съёмка и распознавание образуют задание. Seek предлагает находить виды в природе и получать значки; здесь показано историческое задание 2020 года.",
+      "en": "Search, capture and recognition form a task. Seek offers wildlife challenges and badges; this screenshot shows a historical challenge from 2020."
+    },
+    "image": {
+      "src": "images/mechanics/camera-seek-5.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 40,
+        "y": 290,
+        "width": 640,
+        "height": 990
+      },
+      "game": "Seek by iNaturalist",
+      "sourceUrl": "https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/14/f1/c0/14f1c099-353b-318b-b0ae-782d68f8fc50/pr_source.png/720x1560bb.jpg",
+      "credit": "iNaturalist",
+      "rights": "© iNaturalist. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Seek: историческое задание Citizen Science, апрель 2020 года",
+        "en": "Seek: the historical Citizen Science challenge, April 2020"
+      },
+      "alt": {
+        "ru": "Seek: историческое задание Citizen Science, апрель 2020 года",
+        "en": "Seek: the historical Citizen Science challenge, April 2020"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 75,
+          "label": {
+            "ru": "Start the Challenge запускает задание по наблюдению видов",
+            "en": "Start the Challenge begins a species observation task"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предлагайте доступные местные цели и позволяйте исправлять ошибку распознавания.",
+        "en": "Offer locally accessible targets and allow recognition errors to be corrected."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Seek by iNaturalist",
+        "url": "https://apps.apple.com/us/app/seek-by-inaturalist/id1353224144?uo=4"
+      }
+    ]
+  },
+  "phone-camera--family-hybrid": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Гибридные и экспериментальные способы",
+      "en": "Hybrid and experimental methods"
+    },
+    "description": {
+      "ru": "Камера сочетается с другими входами. В RIDGID Level изображение окружения дополняет угловой индикатор; картинка и ориентация поступают из разных каналов.",
+      "en": "The camera combines with other inputs. RIDGID Level overlays an angle indicator on the surroundings; image and orientation come from separate channels."
+    },
+    "image": {
+      "src": "images/mechanics/motion-ridgid-level-2.webp",
+      "width": 720,
+      "height": 405,
+      "game": "RIDGID Level",
+      "sourceUrl": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/82/2f/ce/822fce6a-36c4-5489-77a4-a272709dfd3c/mzl.mepckujn.png/720x1560bb.jpg",
+      "credit": "RIDGID Software Solutions",
+      "rights": "© RIDGID Software Solutions. Publisher-distributed App Store screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "RIDGID Level: виртуальный уровень поверх изображения камеры",
+        "en": "RIDGID Level: a virtual level over the camera image"
+      },
+      "alt": {
+        "ru": "RIDGID Level: виртуальный уровень поверх изображения камеры",
+        "en": "RIDGID Level: a virtual level over the camera image"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 50,
+          "label": {
+            "ru": "Индикатор наклона сопоставляется с видимым окружением",
+            "en": "The tilt indicator is compared with the visible surroundings"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте временное согласование изображения и датчиков на целевых устройствах.",
+        "en": "Test image and sensor synchronization on target devices."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RIDGID Level",
+        "url": "https://apps.apple.com/us/app/ridgid-level/id444491222?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-control": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Управление светом",
+      "en": "Light control"
+    },
+    "description": {
+      "ru": "Приложение включает LED и меняет доступные параметры света. В phyphox задаются яркость, частота и доля включения; пределы зависят от телефона.",
+      "en": "The app switches the LED and adjusts supported light controls. phyphox sets brightness, frequency and duty cycle; limits depend on the phone."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-4.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 92,
+        "width": 663,
+        "height": 970
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/83/1f/3e831fc9-b4dc-57f8-fad4-b2fd5cd5243c/iphone-05-strobe.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "alt": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 16,
+          "label": {
+            "ru": "Яркость и частота задают работу физического фонарика телефона",
+            "en": "Brightness and frequency control the phone’s physical flashlight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте доступность LED и аппаратные пределы; предусмотрите простое выключение.",
+        "en": "Check LED availability and hardware limits, and provide an easy way to turn it off."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-timing": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ритм, время и световые коды",
+      "en": "Rhythm, time and light codes"
+    },
+    "description": {
+      "ru": "Вспышки и паузы кодируют последовательность. Morse-It передаёт текст азбукой Морзе через экран, звук и поддерживаемый фонарик устройства.",
+      "en": "Flashes and pauses encode a sequence. Morse-It sends text as Morse code using the screen, sound and the device flashlight where supported."
+    },
+    "image": {
+      "src": "images/mechanics/flash-morse-encode.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 50,
+        "width": 720,
+        "height": 650
+      },
+      "game": "Morse-It",
+      "sourceUrl": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/e7/81/95/e7819588-ed18-f189-d310-f9fe38042879/f80c3936-c8ce-4640-bd6a-fd6ad5b820d8_5_-_5.5_-_iPhone_8_Plus-1.png/720x1560bb.jpg",
+      "credit": "Francis Bonnin",
+      "rights": "© Francis Bonnin. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "alt": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 22,
+          "label": {
+            "ru": "Две точки и тире задают текущий символ светового кода",
+            "en": "Two dots and a dash represent the current light-code symbol"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ограничивайте частоту вспышек и предлагайте звук или статическое представление кода.",
+        "en": "Limit flashing frequency and offer sound or a static code representation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Morse-It",
+        "url": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-movement": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Направление и движение телефона",
+      "en": "Direction and movement of the phone"
+    },
+    "description": {
+      "ru": "Движение телефона меняет освещение объекта. Исследовательский WildLight использует кадры с движущимся LED для восстановления формы и отражающих свойств.",
+      "en": "Moving the phone changes object lighting. The WildLight research prototype uses images with a moving LED to recover shape and reflectance."
+    },
+    "image": {
+      "src": "images/mechanics/flash-wildlight.webp",
+      "width": 1440,
+      "height": 387,
+      "crop": {
+        "x": 285,
+        "y": 0,
+        "width": 283,
+        "height": 132
+      },
+      "game": "WildLight (research prototype)",
+      "sourceUrl": "https://junxuan-li.github.io/wildlight-website/",
+      "originalUrl": "https://junxuan-li.github.io/wildlight-website/static/images/teaser.jpg",
+      "credit": "Ziang Cheng, Junxuan Li, Hongdong Li",
+      "rights": "© Ziang Cheng, Junxuan Li, Hongdong Li. Author-distributed research figure; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "WildLight: снимок объекта при освещении фонариком телефона",
+        "en": "WildLight: an object photographed using the phone flashlight"
+      },
+      "alt": {
+        "ru": "WildLight: снимок объекта при освещении фонариком телефона",
+        "en": "WildLight: an object photographed using the phone flashlight"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 24,
+          "label": {
+            "ru": "На снимке с фонариком виден изменившийся свет на модели автомобиля",
+            "en": "The flashlight image shows changed lighting on the model car"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте направление корпуса, положение источника и видимое камерой пятно света.",
+        "en": "Distinguish device orientation, light position and the camera-visible light patch."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WildLight (research prototype)",
+        "url": "https://junxuan-li.github.io/wildlight-website/"
+      }
+    ]
+  },
+  "phone-flashlight--family-shadows": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Перекрытие света и тени",
+      "en": "Occlusion and shadows"
+    },
+    "description": {
+      "ru": "Перекрытие света меняет тень и видимую форму. WildLight исследует восстановление сцены по освещённым кадрам; игра с ручными тенями потребует отдельных правил.",
+      "en": "Occluding light changes shadows and visible form. WildLight reconstructs scenes from lit images; a hand-shadow game needs its own recognition rules."
+    },
+    "image": {
+      "src": "images/mechanics/flash-wildlight.webp",
+      "width": 1440,
+      "height": 387,
+      "crop": {
+        "x": 285,
+        "y": 0,
+        "width": 283,
+        "height": 132
+      },
+      "game": "WildLight (research prototype)",
+      "sourceUrl": "https://junxuan-li.github.io/wildlight-website/",
+      "originalUrl": "https://junxuan-li.github.io/wildlight-website/static/images/teaser.jpg",
+      "credit": "Ziang Cheng, Junxuan Li, Hongdong Li",
+      "rights": "© Ziang Cheng, Junxuan Li, Hongdong Li. Author-distributed research figure; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "WildLight: освещённый объект и тёмная область под ним",
+        "en": "WildLight: a lit object and the dark region beneath it"
+      },
+      "alt": {
+        "ru": "WildLight: освещённый объект и тёмная область под ним",
+        "en": "WildLight: a lit object and the dark region beneath it"
+      },
+      "markers": [
+        {
+          "x": 32,
+          "y": 30,
+          "label": {
+            "ru": "Тень зависит от геометрии сцены и положения источника света",
+            "en": "The shadow depends on scene geometry and light position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Готовьте контрастную сцену и не считайте любую тёмную область жестом игрока.",
+        "en": "Prepare a high-contrast scene and do not treat every dark patch as a player gesture."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WildLight (research prototype)",
+        "url": "https://junxuan-li.github.io/wildlight-website/"
+      }
+    ]
+  },
+  "phone-flashlight--family-optics": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Отражение, просвечивание и материалы",
+      "en": "Reflection, transmission and materials"
+    },
+    "description": {
+      "ru": "Материал меняет отражение света LED. WildLight оценивает форму и отражающие свойства по нескольким снимкам; это исследовательский метод, а не датчик материала.",
+      "en": "Materials change LED reflections. WildLight estimates shape and reflectance from multiple images; it is a research method, not a material sensor."
+    },
+    "image": {
+      "src": "images/mechanics/flash-wildlight.webp",
+      "width": 1440,
+      "height": 387,
+      "crop": {
+        "x": 285,
+        "y": 0,
+        "width": 283,
+        "height": 132
+      },
+      "game": "WildLight (research prototype)",
+      "sourceUrl": "https://junxuan-li.github.io/wildlight-website/",
+      "originalUrl": "https://junxuan-li.github.io/wildlight-website/static/images/teaser.jpg",
+      "credit": "Ziang Cheng, Junxuan Li, Hongdong Li",
+      "rights": "© Ziang Cheng, Junxuan Li, Hongdong Li. Author-distributed research figure; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "WildLight: изменение отражения при подсветке физического объекта",
+        "en": "WildLight: changed reflections when a physical object is illuminated"
+      },
+      "alt": {
+        "ru": "WildLight: изменение отражения при подсветке физического объекта",
+        "en": "WildLight: changed reflections when a physical object is illuminated"
+      },
+      "markers": [
+        {
+          "x": 28,
+          "y": 24,
+          "label": {
+            "ru": "Подсветка меняет видимую яркость и отражения на поверхности",
+            "en": "Illumination changes visible brightness and surface reflections"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для оптической задачи фиксируйте условия и проверяйте отражения на реальных материалах.",
+        "en": "Control the setup and test reflections on real materials."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WildLight (research prototype)",
+        "url": "https://junxuan-li.github.io/wildlight-website/"
+      }
+    ]
+  },
+  "phone-flashlight--family-camera": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск, камера и дополненная реальность",
+      "en": "Search, camera and augmented reality"
+    },
+    "description": {
+      "ru": "Камера наблюдает сцену, освещённую LED телефона. WildLight использует такие кадры для реконструкции; вспышка и автоматическая экспозиция меняют результат.",
+      "en": "The camera observes a scene lit by the phone LED. WildLight uses these images for reconstruction; flash and autoexposure affect the result."
+    },
+    "image": {
+      "src": "images/mechanics/flash-wildlight.webp",
+      "width": 1440,
+      "height": 387,
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 568,
+        "height": 266
+      },
+      "game": "WildLight (research prototype)",
+      "sourceUrl": "https://junxuan-li.github.io/wildlight-website/",
+      "originalUrl": "https://junxuan-li.github.io/wildlight-website/static/images/teaser.jpg",
+      "credit": "Ziang Cheng, Junxuan Li, Hongdong Li",
+      "rights": "© Ziang Cheng, Junxuan Li, Hongdong Li. Author-distributed research figure; respective rights retained. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "WildLight: входные изображения без фонарика и с ним",
+        "en": "WildLight: input images without and with the flashlight"
+      },
+      "alt": {
+        "ru": "WildLight: входные изображения без фонарика и с ним",
+        "en": "WildLight: input images without and with the flashlight"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 24,
+          "label": {
+            "ru": "Правый входной кадр снят с включённым фонариком",
+            "en": "The right input image was captured with the flashlight on"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте захват и LED; отражения от близких поверхностей могут скрывать объект.",
+        "en": "Synchronize capture with the LED; nearby reflections can obscure the target."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WildLight (research prototype)",
+        "url": "https://junxuan-li.github.io/wildlight-website/"
+      }
+    ]
+  },
+  "phone-flashlight--family-world": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Изменение игрового мира",
+      "en": "Changing the game world"
+    },
+    "description": {
+      "ru": "Проектный сценарий: включение LED одновременно меняет виртуальную сцену. phyphox показывает реальный световой канал; игровые изменения задаются отдельно.",
+      "en": "Design scenario: switching the LED also changes a virtual scene. phyphox illustrates the physical light channel; game-world changes need separate rules."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-4.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 92,
+        "width": 663,
+        "height": 970
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/83/1f/3e831fc9-b4dc-57f8-fad4-b2fd5cd5243c/iphone-05-strobe.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "alt": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 16,
+          "label": {
+            "ru": "Яркость и частота задают работу физического фонарика телефона",
+            "en": "Brightness and frequency control the phone’s physical flashlight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Явно связывайте световую команду с изменением сцены и обрабатывайте недоступный LED.",
+        "en": "Clearly link the light command to the scene change and handle an unavailable LED."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-agents": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Свет, скрытность и внимание существ",
+      "en": "Light, stealth and agent attention"
+    },
+    "description": {
+      "ru": "Проектный сценарий: команда света влияет на виртуального противника или живую игру. Интерфейс phyphox иллюстрирует LED, а не распознавание существ.",
+      "en": "Design scenario: a light command affects a virtual enemy or live game. The phyphox interface illustrates LED output, not creature detection."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-4.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 92,
+        "width": 663,
+        "height": 970
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/83/1f/3e831fc9-b4dc-57f8-fad4-b2fd5cd5243c/iphone-05-strobe.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "alt": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 16,
+          "label": {
+            "ru": "Яркость и частота задают работу физического фонарика телефона",
+            "en": "Brightness and frequency control the phone’s physical flashlight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте программную реакцию противника и наблюдение реального света человеком.",
+        "en": "Distinguish a programmed enemy reaction from a person observing real light."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-economy": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ресурс, риск и ограничения",
+      "en": "Resource, risk and limitations"
+    },
+    "description": {
+      "ru": "Проектный сценарий: запас или таймер ограничивает свет и создаёт выбор момента. phyphox показывает регулировку LED; игровой запас задаётся отдельным правилом.",
+      "en": "Design scenario: a charge budget or timer limits light and creates timing choices. phyphox shows LED control; the game resource requires a separate rule."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-4.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 92,
+        "width": 663,
+        "height": 970
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/83/1f/3e831fc9-b4dc-57f8-fad4-b2fd5cd5243c/iphone-05-strobe.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "alt": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 16,
+          "label": {
+            "ru": "Яркость и частота задают работу физического фонарика телефона",
+            "en": "Brightness and frequency control the phone’s physical flashlight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Не приравнивайте игровой заряд к батарее телефона; дайте понятный индикатор запаса.",
+        "en": "Keep the game charge separate from phone battery level and show a clear resource meter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-multiplayer": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кооператив, соревнование и связь",
+      "en": "Cooperation and light communication"
+    },
+    "description": {
+      "ru": "Свет передаёт сигнал другому участнику. Morse-It кодирует текст вспышками; человек читает их в прямой видимости, без обещания автоматической связи.",
+      "en": "Light carries a signal to another participant. Morse-It encodes text as flashes for a person in line of sight; automatic reception is not implied."
+    },
+    "image": {
+      "src": "images/mechanics/flash-morse-encode.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 50,
+        "width": 720,
+        "height": 650
+      },
+      "game": "Morse-It",
+      "sourceUrl": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/e7/81/95/e7819588-ed18-f189-d310-f9fe38042879/f80c3936-c8ce-4640-bd6a-fd6ad5b820d8_5_-_5.5_-_iPhone_8_Plus-1.png/720x1560bb.jpg",
+      "credit": "Francis Bonnin",
+      "rights": "© Francis Bonnin. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "alt": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 22,
+          "label": {
+            "ru": "Две точки и тире задают текущий символ светового кода",
+            "en": "Two dots and a dash represent the current light-code symbol"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте алфавит, видимость и подтверждение сообщения; предусмотрите несветовой канал.",
+        "en": "Agree on the code, visibility and acknowledgment, and provide a non-light channel."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Morse-It",
+        "url": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-feedback": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Световая обратная связь и атмосфера",
+      "en": "Light feedback and atmosphere"
+    },
+    "description": {
+      "ru": "LED подтверждает событие или поддерживает атмосферу. phyphox показывает управление импульсами; привязка световых сигналов к сюжету проектируется отдельно.",
+      "en": "The LED becomes an output channel for events or atmosphere. phyphox shows pulse control; narrative mappings must be designed separately."
+    },
+    "image": {
+      "src": "images/mechanics/sensor-phyphox-4.webp",
+      "width": 663,
+      "height": 1440,
+      "crop": {
+        "x": 0,
+        "y": 92,
+        "width": 663,
+        "height": 970
+      },
+      "game": "phyphox",
+      "sourceUrl": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3e/83/1f/3e831fc9-b4dc-57f8-fad4-b2fd5cd5243c/iphone-05-strobe.png/720x1560bb.jpg",
+      "credit": "RWTH Aachen University",
+      "rights": "© RWTH Aachen University. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "alt": {
+        "ru": "phyphox: яркость, частота и длительность импульсов LED",
+        "en": "phyphox: LED brightness, frequency and pulse duration"
+      },
+      "markers": [
+        {
+          "x": 64,
+          "y": 16,
+          "label": {
+            "ru": "Яркость и частота задают работу физического фонарика телефона",
+            "en": "Brightness and frequency control the phone’s physical flashlight"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Дополняйте световую обратную связь другим каналом и позволяйте отключить вспышки.",
+        "en": "Pair light feedback with another channel and allow flashes to be disabled."
+      }
+    ],
+    "examples": [
+      {
+        "title": "phyphox",
+        "url": "https://apps.apple.com/us/app/phyphox/id1127319693?uo=4"
+      }
+    ]
+  },
+  "phone-flashlight--family-practice": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Творчество, обучение и бытовые задачи",
+      "en": "Creativity, learning and everyday tasks"
+    },
+    "description": {
+      "ru": "Свет помогает изучать и воспроизводить код. В Morse-It текст превращается в точки, тире и вспышки; экранный свет и задний LED остаются разными выходами.",
+      "en": "Light helps teach and reproduce a code. Morse-It converts text to dots, dashes and flashes; screen light and the rear LED remain different outputs."
+    },
+    "image": {
+      "src": "images/mechanics/flash-morse-encode.webp",
+      "width": 720,
+      "height": 1280,
+      "crop": {
+        "x": 0,
+        "y": 50,
+        "width": 720,
+        "height": 650
+      },
+      "game": "Morse-It",
+      "sourceUrl": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource126/v4/e7/81/95/e7819588-ed18-f189-d310-f9fe38042879/f80c3936-c8ce-4640-bd6a-fd6ad5b820d8_5_-_5.5_-_iPhone_8_Plus-1.png/720x1560bb.jpg",
+      "credit": "Francis Bonnin",
+      "rights": "© Francis Bonnin. Developer-distributed App Store screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "alt": {
+        "ru": "Morse-It: кодирование текста последовательностью световых сигналов",
+        "en": "Morse-It: encoding text as a light-signal sequence"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 22,
+          "label": {
+            "ru": "Две точки и тире задают текущий символ светового кода",
+            "en": "Two dots and a dash represent the current light-code symbol"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Для обучения показывайте символ и паузу вместе с сигналом, регулируйте темп.",
+        "en": "For learning, show symbols and pauses alongside the signal and make speed adjustable."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Morse-It",
+        "url": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4"
+      }
+    ]
   }
 }

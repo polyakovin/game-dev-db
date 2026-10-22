@@ -406,3 +406,57 @@ screen where relevant. The handheld Just Dance example requires a compatible
 console. Hardware pressure is distinguished from an on-screen pressure slider.
 All these images retain their original rights and are excluded from the
 portal's MIT and CC BY 4.0 licenses.
+
+## Haptic and spatial examples
+
+Haptrix editor screenshots are © nthState / NTHSTATE LTD, verified against the
+publisher's Mac App Store listing. They show transient events, envelopes and
+audio-import controls. A proposed warning, puzzle or narrative use is labeled
+as a design scenario, rather than a feature of the pictured editor.
+
+`haptic-apple-palette.webp` is Apple's annotated HapticPalette interface.
+`haptic-apple-bounce-965.webp` is the HapticBounce demonstration at 965 seconds
+of Apple's WWDC 2019 session 520. The physical phone and moving ball provide
+context for the collision-based haptic example. Apple retains its rights.
+
+`haptic-gripsense-photo.webp` is the one-finger photograph from Figure 1 of
+[GripSense, UIST 2012](https://ubicomplab.cs.washington.edu/pdfs/gripsense.pdf),
+by Mayank Goel, Jacob O. Wobbrock and Shwetak N. Patel. It is a calibrated
+research prototype using indirect vibration measurements, not a claim that
+all phones expose a force sensor. The authors and ACM retain their rights.
+
+`haptic-vibecomm-17.webp` is cropped from Figure 17 of
+[VibeComm](https://pmc.ncbi.nlm.nih.gov/articles/PMC4279528/), © 2014 Inhwan Hwang,
+Jungchan Cho and Songhwai Oh, licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The figure was cropped
+and converted to WebP. It shows an experimental communication channel through
+a shared physical surface; it is not ordinary wireless phone pairing.
+
+The Crankin screenshot is distributed by Panic for uvula's Playdate game.
+The BeamNG.drive graph is from the official steering-wheel setup guide.
+The RoomAlive photograph is distributed in Microsoft's RoomAliveToolkit
+repository and is explicitly identified as a research installation. Their
+source URLs and credits are retained in the corresponding cards; their imagery
+is not relicensed under the portal's content license.
+
+## Camera and flashlight examples
+
+Camera images use publisher-distributed App Store screens from Seeing AI,
+Halide (the historical Mark II gallery), Osmo Tangram, Polycam, Seek,
+Stop Motion Studio, Google Meet, Active Arcade and RIDGID Level. Osmo's
+reflector requires compatible base hardware and pieces. Seek's pictured
+challenge is explicitly dated April 2020. Apple supplies the Head Tracking
+and Measure screens through its official iPhone guide. Google supplies the
+MediaPipe hand-landmark and segmentation examples through its documentation;
+these are developer examples rather than promises of universal recognition.
+All original image rights remain with the credited publishers and contributors.
+
+The phyphox flashlight screen is distributed by RWTH Aachen University.
+Morse-It screenshots are distributed by Francis Bonnin; its documented
+outputs include the screen, sound and supported device flashlight.
+The WildLight image is from the authors' [research project](https://junxuan-li.github.io/wildlight-website/),
+by Ziang Cheng, Junxuan Li and Hongdong Li. Selected input-image regions are
+cropped for the cards and converted to WebP. This is a research reconstruction
+method, not a built-in phone material sensor. Proposed game rules using LED
+output are labeled as design scenarios. These third-party images are excluded
+from the portal's MIT and CC BY 4.0 licenses.
