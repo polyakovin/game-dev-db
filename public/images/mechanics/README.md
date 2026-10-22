@@ -460,3 +460,28 @@ cropped for the cards and converted to WebP. This is a research reconstruction
 method, not a built-in phone material sensor. Proposed game rules using LED
 output are labeled as design scenarios. These third-party images are excluded
 from the portal's MIT and CC BY 4.0 licenses.
+
+## Remaining RPG and online examples
+
+The final RPG selections include Square Enix's treasure-map comparison,
+Leap of Faith course, faction quest givers, Duty Roulette reward panel,
+loot-rule settings and New Game+ chapter menu. Historical interfaces are
+identified by their patch material. Diablo III's Urshi illustration is from
+the 2014 patch 2.1 preview; Diablo IV's board illustration is from the 2024
+2.0 PTR and visibly retains its not-final marking. The Warframe mod screen
+comes from Digital Extremes' Quick Start guide, with Mastery behavior linked
+to the separate official Mastery guide. Clash Royale's evolved Skeletons
+screen is from Supercell's 2023 evolution announcement. Hearthstone's pack
+image is explicitly described as a publisher reward composition, with pack
+protection linked to Blizzard's patch 17.0 explanation. These images retain
+their original rights and are not covered by the portal's content license.
+
+`online-steam-market.webp` is a read-only capture of Steam's public market
+listings on 22 October 2026, taken without signing in or making a transaction.
+Its pictured quantities and prices describe that capture, not current offers.
+`online-pubg-zone.webp` is the frame at 1.75 seconds of the Blue Zone clip
+served by PUBG's official overview page. `online-ffxiv-roster.webp` comes from
+Square Enix's Crystalline Conflict guide, and `online-duolingo-leagues.webp`
+comes from Duolingo's official explanation of its weekly leagues. The Black
+Watchmen screen uses the publisher's fictional investigation website example.
+Original publishers and capture authors retain their respective rights.

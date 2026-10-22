@@ -64898,5 +64898,1329 @@
         "url": "https://apps.apple.com/us/app/morse-it/id284942940?uo=4"
       }
     ]
+  },
+  "rpg-grind--treasure-maps": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Поиск сокровищ по картам",
+      "en": "Treasure-map hunting"
+    },
+    "description": {
+      "ru": "Расходуемая карта или набор указаний направляет повторяемую вылазку к тайнику.",
+      "en": "A consumable map or clue set directs a repeatable expedition toward a cache."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-treasure.webp",
+      "width": 600,
+      "height": 338,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://jp.finalfantasyxiv.com/blog/003047.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/blog_image/jp_blog/20201202_mm_10.png",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: фрагмент карты сокровищ сопоставляется с картой местности",
+        "en": "FFXIV: a treasure-map fragment is compared with the regional map"
+      },
+      "alt": {
+        "ru": "FFXIV: фрагмент карты сокровищ сопоставляется с картой местности",
+        "en": "FFXIV: a treasure-map fragment is compared with the regional map"
+      },
+      "markers": [
+        {
+          "x": 80,
+          "y": 61,
+          "label": {
+            "ru": "Крест на фрагменте нужно сопоставить с особенностями местности",
+            "en": "Match the fragment’s cross to features on the regional map"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте достаточно ориентиров, чтобы поиск требовал наблюдения, а не перебора точек.",
+        "en": "Provide enough landmarks for observation rather than blind coordinate guessing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://jp.finalfantasyxiv.com/blog/003047.html"
+      }
+    ]
+  },
+  "rpg-grind--stealing-loops": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кражи и контрабанда",
+      "en": "Theft and smuggling"
+    },
+    "description": {
+      "ru": "Кража связывает разведку, скрытное проникновение и сбыт. В Thief Simulator сведения о жильцах помогают выбрать время, а добычу можно продавать через BlackBay.",
+      "en": "Theft links scouting, stealthy entry and resale. In Thief Simulator occupant information helps time a break-in, and stolen goods can be sold through BlackBay."
+    },
+    "image": {
+      "src": "images/mechanics/interface-thief-simulator-00.webp",
+      "width": 1440,
+      "height": 801,
+      "game": "Thief Simulator",
+      "sourceUrl": "https://store.steampowered.com/app/704850/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/704850/ss_9e1561664616cc8ca9c7cec407ad846633e6d976.1920x1080.jpg?t=1791445574",
+      "credit": "Noble Muffins / PlayWay S.A.",
+      "rights": "© Noble Muffins / PlayWay S.A.. Publisher-distributed Steam screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Thief Simulator: проникновение в дом и сведения о жильцах",
+        "en": "Thief Simulator: a break-in with occupant information"
+      },
+      "alt": {
+        "ru": "Thief Simulator: проникновение в дом и сведения о жильцах",
+        "en": "Thief Simulator: a break-in with occupant information"
+      },
+      "markers": [
+        {
+          "x": 88,
+          "y": 15,
+          "label": {
+            "ru": "Сведения о жильцах помогают планировать безопасное время проникновения",
+            "en": "Occupant information helps plan a safer time to enter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте ценную добычу с риском обнаружения и понятным способом сбыта.",
+        "en": "Link valuable loot to detection risk and a clear resale route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Thief Simulator",
+        "url": "https://store.steampowered.com/app/704850/"
+      }
+    ]
+  },
+  "rpg-grind--puzzle-circuits": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повторяемые головоломки и маршруты",
+      "en": "Repeatable puzzles and routes"
+    },
+    "description": {
+      "ru": "Повторяемый маршрут проверяет ориентирование и исполнение. В FFXIV Leap of Faith игрок проходит платформы и собирает трофеи ради MGP в отдельные сеансы события.",
+      "en": "A repeatable course tests navigation and execution. FFXIV’s Leap of Faith rewards platform traversal and trophy collection with MGP in separate event sessions."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-leap.webp",
+      "width": 530,
+      "height": 298,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/70df23d56f34c6616e72133cdf7baed4c601a293",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/70df23d56f34c6616e72133cdf7baed4c601a293_29.png?1539943243",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV Leap of Faith: платформы и собираемые трофеи маршрута",
+        "en": "FFXIV Leap of Faith: platforms and collectible course trophies"
+      },
+      "alt": {
+        "ru": "FFXIV Leap of Faith: платформы и собираемые трофеи маршрута",
+        "en": "FFXIV Leap of Faith: platforms and collectible course trophies"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 40,
+          "label": {
+            "ru": "Трофей на платформе добавляет цель к прохождению маршрута",
+            "en": "A platform trophy adds a collection goal to the route"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Меняйте раскладку или цели и ограничивайте повтор награды одним сеансом.",
+        "en": "Vary layouts or objectives and define reward eligibility for each session."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/70df23d56f34c6616e72133cdf7baed4c601a293"
+      }
+    ]
+  },
+  "rpg-grind--breadth-mastery": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Освоение разных классов и предметов",
+      "en": "Mastery across classes and equipment"
+    },
+    "description": {
+      "ru": "Разные образцы экипировки пополняют общий прогресс. В Warframe первые уровни новых Warframe и оружия дают Mastery; прокачка копии не повторяет эти очки.",
+      "en": "New equipment contributes to shared progress. In Warframe, initial ranks on different frames and weapons earn Mastery; ranking a duplicate does not repeat it."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-mastery.webp",
+      "width": 600,
+      "height": 340,
+      "game": "Warframe (Quick Start interface)",
+      "sourceUrl": "https://www.warframe.com/uk/game/quickstart",
+      "originalUrl": "https://www-static.warframe.com/images/mainSiteAssets/quickstartPage/qs-mod1.jpg",
+      "credit": "Digital Extremes",
+      "rights": "© Digital Extremes. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Warframe: вместимость модов связана с рангом развиваемого Warframe",
+        "en": "Warframe: mod capacity relates to the rank of the equipped frame"
+      },
+      "alt": {
+        "ru": "Warframe: вместимость модов связана с рангом развиваемого Warframe",
+        "en": "Warframe: mod capacity relates to the rank of the equipped frame"
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 7,
+          "label": {
+            "ru": "Вместимость модов развивается с рангом; Mastery учитывает разные образцы",
+            "en": "Mod capacity grows with rank; Mastery counts distinct equipment"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, что уже засчитано, чтобы повторная прокачка не выглядела потерянным вкладом.",
+        "en": "Show what already counted so repeated leveling is not mistaken for new progress."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Warframe (Quick Start interface)",
+        "url": "https://www.warframe.com/uk/game/quickstart"
+      },
+      {
+        "title": "Warframe: Mastery Ranks Guide",
+        "url": "https://www.warframe.com/en/news/guida-grado-maestria"
+      }
+    ]
+  },
+  "rpg-grind--post-cap-progress": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие после предельного уровня",
+      "en": "Post-cap progression"
+    },
+    "description": {
+      "ru": "После основного предела опыт развивает отдельную систему. В Diablo IV доски совершенствования продолжают развитие героя; показана версия PTR 2.0, 2024 год.",
+      "en": "After the main level cap, experience feeds another system. Diablo IV’s Paragon boards extend character growth; the image is from the 2024 2.0 PTR."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-paragon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Diablo IV (2.0 PTR, 2024)",
+      "sourceUrl": "https://news.blizzard.com/en-gb/article/24130178/the-2-0-ptr-what-you-need-to-know",
+      "originalUrl": "https://bnetcmsus-a.akamaihd.net/cms/page_media/2VUZCQJB505Z1724871463849.png",
+      "credit": "Blizzard Entertainment",
+      "rights": "© Blizzard Entertainment. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Diablo IV, PTR 2.0 (2024): доски совершенствования, не финальный UI",
+        "en": "Diablo IV, 2.0 PTR (2024): Paragon boards, not final UI"
+      },
+      "alt": {
+        "ru": "Diablo IV, PTR 2.0 (2024): доски совершенствования, не финальный UI",
+        "en": "Diablo IV, 2.0 PTR (2024): Paragon boards, not final UI"
+      },
+      "markers": [
+        {
+          "x": 39,
+          "y": 27,
+          "label": {
+            "ru": "Узлы досок задают дополнительное направление развития после уровней",
+            "en": "Board nodes provide another progression path after character levels"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте смысл основного предела и объясняйте силу каждого следующего вложения.",
+        "en": "Preserve the meaning of the main cap and explain each further investment."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Diablo IV (2.0 PTR, 2024)",
+        "url": "https://news.blizzard.com/en-gb/article/24130178/the-2-0-ptr-what-you-need-to-know"
+      }
+    ]
+  },
+  "rpg-grind--fragment-collection": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сбор фрагментов",
+      "en": "Fragment collection"
+    },
+    "description": {
+      "ru": "Фрагменты накапливаются до конкретной награды. В Clash Royale шесть осколков карты открывают её эволюцию; здесь показана уже открытая эволюция Скелетов.",
+      "en": "Fragments accumulate toward a specific unlock. In Clash Royale, six shards unlock a card’s Evolution; the image shows an already evolved Skeletons card."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-evolution.webp",
+      "width": 990,
+      "height": 435,
+      "crop": {
+        "x": 15,
+        "y": 15,
+        "width": 560,
+        "height": 405
+      },
+      "game": "Clash Royale (2023 interface)",
+      "sourceUrl": "https://supercell.com/en/games/clashroyale/blog/release-notes/card-evolution-2/",
+      "originalUrl": "https://clashroyale.inbox.supercell.com/9jtsgmsiuthj/_NbHW4pnUBYws9jNM7YodxNHv4aTSEAwK0H3iDVrbL4/352148b1a34c1c4956825e274151cd81/368597019_1686918325.png",
+      "credit": "Supercell",
+      "rights": "© Supercell. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Clash Royale: открытая эволюция Скелетов, интерфейс 2023 года",
+        "en": "Clash Royale: unlocked Skeletons Evolution, 2023 interface"
+      },
+      "alt": {
+        "ru": "Clash Royale: открытая эволюция Скелетов, интерфейс 2023 года",
+        "en": "Clash Royale: unlocked Skeletons Evolution, 2023 interface"
+      },
+      "markers": [
+        {
+          "x": 18,
+          "y": 22,
+          "label": {
+            "ru": "Фиолетовый значок отмечает эволюцию, открываемую сбором осколков",
+            "en": "The purple icon marks an Evolution unlocked by collecting shards"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте цель, число недостающих частей и правило обработки лишних фрагментов.",
+        "en": "Show the target, remaining fragments and the rule for excess copies."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Clash Royale (2023 interface)",
+        "url": "https://supercell.com/en/games/clashroyale/blog/release-notes/card-evolution-2/"
+      }
+    ]
+  },
+  "rpg-grind--gem-rune-upgrades": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Развитие камней и рун",
+      "en": "Gem and rune upgrading"
+    },
+    "description": {
+      "ru": "Камень имеет собственный ранг развития. В Diablo III Урши улучшает легендарные самоцветы после великого портала; показан исторический анонс 2.1, 2014 год.",
+      "en": "A gem has its own progression rank. Diablo III’s Urshi upgrades Legendary Gems after Greater Rifts; the image is from the historical 2014 patch 2.1 preview."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-gems.webp",
+      "width": 1200,
+      "height": 750,
+      "game": "Diablo III (2014 preview)",
+      "sourceUrl": "https://news.blizzard.com/en-us/article/15317478/patch-2-1-0-preview-greater-rifts",
+      "originalUrl": "https://bnetcmsus-a.akamaihd.net/cms/content_folder_media/EXH6RZIAVLVE1408586229644.jpg",
+      "credit": "Blizzard Entertainment",
+      "rights": "© Blizzard Entertainment. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Diablo III, анонс 2.1 (2014): выбор улучшения легендарного самоцвета",
+        "en": "Diablo III, 2.1 preview (2014): choosing a Legendary Gem upgrade"
+      },
+      "alt": {
+        "ru": "Diablo III, анонс 2.1 (2014): выбор улучшения легендарного самоцвета",
+        "en": "Diablo III, 2.1 preview (2014): choosing a Legendary Gem upgrade"
+      },
+      "markers": [
+        {
+          "x": 23,
+          "y": 79,
+          "label": {
+            "ru": "Кнопка с самоцветом выбирает улучшение камня у Урши",
+            "en": "The gem button selects a Legendary Gem upgrade with Urshi"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте шанс, ограничения ранга и возможность перенести вставку в другой предмет.",
+        "en": "Explain upgrade chances, rank limits and moving the gem between items."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Diablo III (2014 preview)",
+        "url": "https://news.blizzard.com/en-us/article/15317478/patch-2-1-0-preview-greater-rifts"
+      }
+    ]
+  },
+  "rpg-grind--duplicate-fusion": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Усиление дубликатами",
+      "en": "Duplicate fusion"
+    },
+    "description": {
+      "ru": "Одинаковые экземпляры расходуются для усиления результата. В 2048 две двойки сливаются в четвёрку; в RPG тот же принцип применяют к дубликатам предметов.",
+      "en": "Matching copies are consumed to strengthen the result. In 2048, two 2 tiles merge into a 4; RPGs can apply this principle to duplicate items."
+    },
+    "image": {
+      "src": "images/mechanics/systems-2048-original.webp",
+      "width": 500,
+      "height": 694,
+      "game": "2048",
+      "sourceUrl": "https://github.com/gabrielecirulli/2048",
+      "originalUrl": "https://github.com/gabrielecirulli/2048/blob/master/index.html",
+      "credit": "Gabriele Cirulli; screenshot of the unmodified original game, captured 2026-10-22",
+      "rights": "© 2014 Gabriele Cirulli, MIT License. Screenshot converted to WebP on 2026-10-22. License copy: images/mechanics/2048-license.txt.",
+      "caption": {
+        "ru": "Оригинальная 2048 после серии обычных ходов",
+        "en": "The original 2048 after a sequence of normal moves"
+      },
+      "alt": {
+        "ru": "Оригинальная 2048 после серии обычных ходов",
+        "en": "The original 2048 after a sequence of normal moves"
+      },
+      "markers": [
+        {
+          "x": 86,
+          "y": 55,
+          "label": {
+            "ru": "Соседние двойки можно объединить в четвёрку",
+            "en": "Adjacent twos can be merged into a four"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте рецепт слияния и итог до расходования копий.",
+        "en": "Show the fusion recipe and result before consuming copies."
+      }
+    ],
+    "examples": [
+      {
+        "title": "2048",
+        "url": "https://play2048.co/"
+      },
+      {
+        "title": "Original source",
+        "url": "https://github.com/gabrielecirulli/2048"
+      }
+    ]
+  },
+  "rpg-grind--faction-reputation": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Репутация фракций",
+      "en": "Faction reputation"
+    },
+    "description": {
+      "ru": "Повторяемая помощь повышает отношение фракции и открывает награды. В FFXIV ежедневные поручения сильфов и амалджа развивают отдельную репутацию.",
+      "en": "Repeated help raises a faction’s opinion and unlocks rewards. FFXIV daily quests for the sylphs and Amalj’aa build separate reputations."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-reputation.webp",
+      "width": 530,
+      "height": 146,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/03843d6bf7ba69adc37d7955ff7af43f3c43828a_2.png?1512110391",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: выдающие поручения сильфы и амалджа, материал версии 2.1",
+        "en": "FFXIV: sylph and Amalj’aa quest givers, patch 2.1 material"
+      },
+      "alt": {
+        "ru": "FFXIV: выдающие поручения сильфы и амалджа, материал версии 2.1",
+        "en": "FFXIV: sylph and Amalj’aa quest givers, patch 2.1 material"
+      },
+      "markers": [
+        {
+          "x": 16,
+          "y": 52,
+          "label": {
+            "ru": "Поручения Тонаксии повышают репутацию у сильфов",
+            "en": "Tonaxia’s quests raise reputation with the sylphs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте ранг с понятными привилегиями и показывайте цену конфликта фракций.",
+        "en": "Connect ranks to clear benefits and show the cost of faction conflicts."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a"
+      }
+    ]
+  },
+  "rpg-grind--new-game-plus": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Повторное прохождение с переносом",
+      "en": "New Game Plus"
+    },
+    "description": {
+      "ru": "Повторное прохождение сохраняет оговорённый прогресс. Вариант FFXIV New Game+ позволяет заново проходить открытые главы без сброса героя и повторной награды.",
+      "en": "Replay preserves specified progress. FFXIV’s New Game+ variant replays unlocked story chapters without resetting the character or repeating quest rewards."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-newgame.webp",
+      "width": 530,
+      "height": 298,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/3a23a8ba13b2c4152681ec4fa5716915b851002f",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/3a23a8ba13b2c4152681ec4fa5716915b851002f_8.png?1573113797",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV New Game+: выбор уже открытой главы истории",
+        "en": "FFXIV New Game+: choosing an already unlocked story chapter"
+      },
+      "alt": {
+        "ru": "FFXIV New Game+: выбор уже открытой главы истории",
+        "en": "FFXIV New Game+: choosing an already unlocked story chapter"
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 43,
+          "label": {
+            "ru": "Игрок выбирает главу для повторного прохождения",
+            "en": "The player selects a story chapter to replay"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "До старта объясняйте, что переносится, что сбрасывается и выдаются ли награды снова.",
+        "en": "Before replay, explain what carries over, what resets and whether rewards repeat."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/3a23a8ba13b2c4152681ec4fa5716915b851002f"
+      }
+    ]
+  },
+  "rpg-grind--loot-ownership": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Личная и общая добыча",
+      "en": "Personal and shared loot"
+    },
+    "description": {
+      "ru": "Правило определяет, кому принадлежит выпавшая награда и как участники делят результат общего действия.",
+      "en": "The rule determines who owns a reward and how participants divide a shared outcome."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-loot.webp",
+      "width": 522,
+      "height": 529,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/464263b3ce6026cdf98a49bf8f98c204c6199e5a",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/464263b3ce6026cdf98a49bf8f98c204c6199e5a_79.png?1512110407",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: правило Normal распределяет добычу через Need, Greed и Pass",
+        "en": "FFXIV: Normal loot rules use Need, Greed and Pass"
+      },
+      "alt": {
+        "ru": "FFXIV: правило Normal распределяет добычу через Need, Greed и Pass",
+        "en": "FFXIV: Normal loot rules use Need, Greed and Pass"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 25,
+          "label": {
+            "ru": "Выбранное правило определяет, как группа разыгрывает общую добычу",
+            "en": "The selected rule defines how the party rolls for shared loot"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сообщайте правила владения до боя и делайте результат распределения видимым.",
+        "en": "State ownership rules before combat and make distribution results visible."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/464263b3ce6026cdf98a49bf8f98c204c6199e5a"
+      }
+    ]
+  },
+  "rpg-grind--duplicate-protection": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Защита от повторов",
+      "en": "Duplicate protection"
+    },
+    "description": {
+      "ru": "Система учитывает полученные карты. В Hearthstone защита в наборах ограничивает повторы внутри редкости, пока не собрана нужная часть комплекта.",
+      "en": "The system tracks acquired cards when awarding new ones. Hearthstone pack protection limits duplicates within a rarity until its collection requirement is met."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-hearthstone-4.webp",
+      "width": 720,
+      "height": 333,
+      "game": "Hearthstone",
+      "sourceUrl": "https://apps.apple.com/us/app/hearthstone/id625257520?uo=4",
+      "originalUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8f/a8/ea/8fa8ea66-9f8d-1b20-7830-93b6cee4f11f/e2f76c40-8ad7-48e1-8253-8c8793df8429_bl_hs_2688x1242_set03_s08_JW.jpg/720x1560bb.jpg",
+      "credit": "Blizzard Entertainment, Inc.",
+      "rights": "© Blizzard Entertainment, Inc.. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Hearthstone: издательская композиция наград с набором карт",
+        "en": "Hearthstone: a publisher reward composition including a card pack"
+      },
+      "alt": {
+        "ru": "Hearthstone: издательская композиция наград с набором карт",
+        "en": "Hearthstone: a publisher reward composition including a card pack"
+      },
+      "markers": [
+        {
+          "x": 67,
+          "y": 63,
+          "label": {
+            "ru": "Защита от повторов применяется к картам при открытии таких наборов",
+            "en": "Duplicate protection applies to cards when opening these packs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте защиту от повторов и шансы редкости; это разные правила выдачи.",
+        "en": "Distinguish duplicate protection from rarity odds; they are separate reward rules."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hearthstone",
+        "url": "https://apps.apple.com/us/app/hearthstone/id625257520?uo=4"
+      },
+      {
+        "title": "Hearthstone: duplicate protection, patch 17.0",
+        "url": "https://hearthstone.blizzard.com/en-us/news/23357896/ashes-of-outland-patch-17-0-march-26"
+      }
+    ]
+  },
+  "rpg-grind--daily-cycles": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ежедневные циклы",
+      "en": "Daily cycles"
+    },
+    "description": {
+      "ru": "Периодический сброс обновляет задания или бонусы и задаёт ритм повторения.",
+      "en": "A periodic reset refreshes objectives or bonuses and establishes repetition cadence."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-daily.webp",
+      "width": 530,
+      "height": 356,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/03843d6bf7ba69adc37d7955ff7af43f3c43828a_44.png?1512110391",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: отдельный ежедневный бонус за Duty Roulette, интерфейс 2.1",
+        "en": "FFXIV: a separate daily Duty Roulette bonus, patch 2.1 interface"
+      },
+      "alt": {
+        "ru": "FFXIV: отдельный ежедневный бонус за Duty Roulette, интерфейс 2.1",
+        "en": "FFXIV: a separate daily Duty Roulette bonus, patch 2.1 interface"
+      },
+      "markers": [
+        {
+          "x": 74,
+          "y": 43,
+          "label": {
+            "ru": "Ежедневная надбавка отделена от обычной награды за прохождение",
+            "en": "The daily bonus is separate from the normal completion reward"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Указывайте время сброса и не превращайте пропущенный день в необратимую потерю.",
+        "en": "State the reset time and avoid making a missed day an irreversible loss."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a"
+      }
+    ]
+  },
+  "rpg-grind--catch-up": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Догоняющая прогрессия",
+      "en": "Catch-up progression"
+    },
+    "description": {
+      "ru": "Путь к прошлому снаряжению становится короче. В FFXIV экипировку прошлых этапов покупают за общие Poetics вместо исходной валюты каждого этапа.",
+      "en": "The route to older gear becomes shorter. FFXIV lets players buy gear from previous stages with shared Poetics instead of each stage’s original currency."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-currency-13.webp",
+      "width": 896,
+      "height": 544,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/uiguide/na/6a/da90fc8309d4f3b790a3b4ddfef806ef91b0bb.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: Poetics входят в систему обмена на снаряжение прошлых этапов",
+        "en": "FFXIV: Poetics are used to exchange for gear from earlier stages"
+      },
+      "alt": {
+        "ru": "FFXIV: Poetics входят в систему обмена на снаряжение прошлых этапов",
+        "en": "FFXIV: Poetics are used to exchange for gear from earlier stages"
+      },
+      "markers": [
+        {
+          "x": 27,
+          "y": 62,
+          "label": {
+            "ru": "Жетоны накапливаются отдельно от обычных денег",
+            "en": "Tokens accumulate separately from ordinary currency"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Ускоряйте доступ к общей игре, сохраняя понятную ценность освоения и свежих наград.",
+        "en": "Speed access to shared play while preserving mastery and recent reward value."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_number.html"
+      },
+      {
+        "title": "FFXIV: Exchanging Tomestones",
+        "url": "https://na.finalfantasyxiv.com/uiguide/currency/currency-ats/ats_exchange.html"
+      }
+    ]
+  },
+  "role-playing-systems--t057": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Репутация, фракции и мировоззрение",
+      "en": "Reputation, factions and alignment"
+    },
+    "description": {
+      "ru": "Репутация хранит отношение сообществ к поступкам героя и меняет доступ к услугам, заданиям и поддержке.",
+      "en": "Reputation stores how communities view the character's actions and changes access to services, quests and support."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-final-reputation.webp",
+      "width": 530,
+      "height": 146,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a",
+      "originalUrl": "https://img.finalfantasyxiv.com/t/03843d6bf7ba69adc37d7955ff7af43f3c43828a_2.png?1512110391",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Publisher-distributed screenshot or documentation image; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV: выдающие поручения сильфы и амалджа, материал версии 2.1",
+        "en": "FFXIV: sylph and Amalj’aa quest givers, patch 2.1 material"
+      },
+      "alt": {
+        "ru": "FFXIV: выдающие поручения сильфы и амалджа, материал версии 2.1",
+        "en": "FFXIV: sylph and Amalj’aa quest givers, patch 2.1 material"
+      },
+      "markers": [
+        {
+          "x": 16,
+          "y": 52,
+          "label": {
+            "ru": "Поручения Тонаксии повышают репутацию у сильфов",
+            "en": "Tonaxia’s quests raise reputation with the sylphs"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, какие поступки меняют отношение и какие услуги зависят от ранга.",
+        "en": "Show which actions change standing and which services depend on reputation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/topics/detail/03843d6bf7ba69adc37d7955ff7af43f3c43828a"
+      }
+    ]
+  },
+  "online-participation--t320": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Постоянный мир и прогресс сервера",
+      "en": "Persistent worlds and server progress"
+    },
+    "description": {
+      "ru": "Общий мир сохраняет вклад между сессиями. В FFXIV восстановление Ишгарда связывает личные поставки с этапами общей стройки сервера.",
+      "en": "A shared world preserves contributions between sessions. FFXIV’s Ishgardian Restoration links personal deliveries to server-wide construction stages."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-ffxiv-restoration-49.webp",
+      "width": 640,
+      "height": 548,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/_/qJb2_1q3qIT_9Pu81owr-M_FiA.jpg",
+      "credit": "Square Enix; official guide screenshot",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Общий этап восстановления района",
+        "en": "A shared stage of district restoration"
+      },
+      "alt": {
+        "ru": "Общий этап восстановления района",
+        "en": "A shared stage of district restoration"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 13,
+          "label": {
+            "ru": "Общее строительство переходит к очередным Concerted Works",
+            "en": "Shared construction advances towards the next Concerted Works"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте личный вклад, общий этап и момент обновления состояния сервера.",
+        "en": "Distinguish personal contribution, shared milestones and server-state update timing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/ishgardian_restoration/"
+      }
+    ]
+  },
+  "online-participation--t321": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Гильдии и долгосрочные общие цели",
+      "en": "Guilds and long-term shared goals"
+    },
+    "description": {
+      "ru": "Гильдия объединяет участников общими правами и проектами. В Shop Titans вклад в город и его развитие сохраняется, даже когда участники играют в разное время.",
+      "en": "A guild connects members through shared rights and projects. Shop Titans preserves town investment and growth while members play at different times."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_39b519e8208d0600caf7b040e5da393715d599c1.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Постоянная гильдия и её общие возможности",
+        "en": "A persistent guild and its shared capabilities"
+      },
+      "alt": {
+        "ru": "Постоянная гильдия и её общие возможности",
+        "en": "A persistent guild and its shared capabilities"
+      },
+      "markers": [
+        {
+          "x": 78,
+          "y": 89,
+          "label": {
+            "ru": "Guild Perks открывает общие преимущества гильдии",
+            "en": "Guild Perks provides access to shared guild benefits"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Определите права на общий запас и судьбу вклада при выходе участника из гильдии.",
+        "en": "Define shared-resource permissions and what happens to contributions when members leave."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "online-participation--t322": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рейды и групповая координация",
+      "en": "Raids and group coordination"
+    },
+    "description": {
+      "ru": "Общая задача требует согласовать роли, атаки и восстановление после ошибок. В Albion Online группа координирует бой с боссом в подземелье.",
+      "en": "A shared encounter requires roles, attacks and recovery to align. In Albion Online a group coordinates a boss fight in a dungeon."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-albion-online-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Albion Online",
+      "sourceUrl": "https://store.steampowered.com/app/761890/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/761890/b761038ae99b39be0e2487c128a1442d4529dfdb/ss_b761038ae99b39be0e2487c128a1442d4529dfdb.1920x1080.jpg?t=1788194761",
+      "credit": "Sandbox Interactive GmbH",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Совместный поход в подземелье Albion Online",
+        "en": "A group expedition into an Albion Online dungeon"
+      },
+      "alt": {
+        "ru": "Совместный поход в подземелье Albion Online",
+        "en": "A group expedition into an Albion Online dungeon"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 43,
+          "label": {
+            "ru": "Участники действуют вместе в одной боевой сцене",
+            "en": "Party members act together in a shared encounter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте обязанности и переходы фаз заметными всей группе, оставляйте способы восстановления.",
+        "en": "Make duties and phase transitions visible to everyone and allow recovery from errors."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Albion Online",
+        "url": "https://store.steampowered.com/app/761890/"
+      }
+    ]
+  },
+  "online-participation--t323": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "PvP, дуэли и командные сражения",
+      "en": "PvP, duels and team battles"
+    },
+    "description": {
+      "ru": "Игроки соревнуются с другими игроками по общим правилам победы. В FFXIV Crystalline Conflict две команды по пять участников борются за продвижение кристалла.",
+      "en": "Players compete under shared victory rules. In FFXIV Crystalline Conflict, two teams of five fight to move the tactical crystal."
+    },
+    "image": {
+      "src": "images/mechanics/online-ffxiv-roster.webp",
+      "width": 880,
+      "height": 242,
+      "game": "Final Fantasy XIV",
+      "sourceUrl": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/crystallineconflict/",
+      "originalUrl": "https://lds-img.finalfantasyxiv.com/h/c/DgfjLVmdmxPiu5JyjVoOBd0TTw.jpg",
+      "credit": "Square Enix",
+      "rights": "© Square Enix. Official image or public interface capture; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "FFXIV Crystalline Conflict: отдельные списки своей и вражеской команд",
+        "en": "FFXIV Crystalline Conflict: separate player and enemy team lists"
+      },
+      "alt": {
+        "ru": "FFXIV Crystalline Conflict: отдельные списки своей и вражеской команд",
+        "en": "FFXIV Crystalline Conflict: separate player and enemy team lists"
+      },
+      "markers": [
+        {
+          "x": 31,
+          "y": 42,
+          "label": {
+            "ru": "Списки показывают по пять участников и состав ролей каждой команды",
+            "en": "The lists show five participants and each team’s role composition"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте личные боевые возможности с командной целью и правилами подбора игроков.",
+        "en": "Align individual combat tools with the team objective and matchmaking rules."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Final Fantasy XIV",
+        "url": "https://na.finalfantasyxiv.com/lodestone/playguide/contentsguide/crystallineconflict/"
+      }
+    ]
+  },
+  "online-participation--t324": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Battle royale и сокращение поля",
+      "en": "Battle royale and shrinking play areas"
+    },
+    "description": {
+      "ru": "Безопасное поле сужается и вынуждает менять позицию. В PUBG синяя зона наносит урон за его пределами, повышая риск задержки и плотность встреч.",
+      "en": "The safe area shrinks and forces repositioning. PUBG’s Blue Zone damages players outside it, increasing the cost of delay and concentrating encounters."
+    },
+    "image": {
+      "src": "images/mechanics/online-pubg-zone.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "PUBG: BATTLEGROUNDS",
+      "sourceUrl": "https://www.pubg.com/en-asia/game-info/overview",
+      "originalUrl": "https://wstatic-prod.pubg.com/web/live/main_e126bfe/videos/video-scene3-3.309e2a9.mp4",
+      "sourceFrameSeconds": 1.75,
+      "credit": "KRAFTON",
+      "rights": "© KRAFTON. Official image or public interface capture; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "PUBG: граница синей зоны в официальной игровой демонстрации",
+        "en": "PUBG: the Blue Zone boundary in the official gameplay demonstration"
+      },
+      "alt": {
+        "ru": "PUBG: граница синей зоны в официальной игровой демонстрации",
+        "en": "PUBG: the Blue Zone boundary in the official gameplay demonstration"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 57,
+          "label": {
+            "ru": "Синяя граница отделяет опасную область от оставшегося безопасного поля",
+            "en": "The blue boundary separates danger from the remaining safe area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте предупреждение, время на переход и информацию о следующей безопасной области.",
+        "en": "Provide warning, travel time and information about the next safe area."
+      }
+    ],
+    "examples": [
+      {
+        "title": "PUBG: BATTLEGROUNDS",
+        "url": "https://www.pubg.com/en-asia/game-info/overview"
+      }
+    ]
+  },
+  "online-participation--t325": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Асинхронное соперничество и послания",
+      "en": "Asynchronous competition and messages"
+    },
+    "description": {
+      "ru": "Результаты сохраняются для сравнения без одновременной игры. В Duolingo участники набирают XP в разное время, а недельная таблица сопоставляет их вклад.",
+      "en": "Results persist without simultaneous play. Duolingo participants earn XP at different times, and a weekly leaderboard compares their contributions."
+    },
+    "image": {
+      "src": "images/mechanics/online-duolingo-leagues.webp",
+      "width": 702,
+      "height": 615,
+      "crop": {
+        "x": 24,
+        "y": 28,
+        "width": 315,
+        "height": 560
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://blog.duolingo.com/duolingo-leagues-leaderboards/",
+      "originalUrl": "https://storage.ghost.io/c/7a/33/7a33d0f4-927d-4fe8-a6bf-96131b5e76d4/content/images/2023/04/tournament-soon--1-.png",
+      "credit": "Duolingo",
+      "rights": "© Duolingo. Official image or public interface capture; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Duolingo: недельная таблица участников и накопленных XP",
+        "en": "Duolingo: a weekly leaderboard with accumulated participant XP"
+      },
+      "alt": {
+        "ru": "Duolingo: недельная таблица участников и накопленных XP",
+        "en": "Duolingo: a weekly leaderboard with accumulated participant XP"
+      },
+      "markers": [
+        {
+          "x": 42,
+          "y": 40,
+          "label": {
+            "ru": "Таблица хранит очки участников независимо от времени их занятий",
+            "en": "The table stores scores independently of when participants practice"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сравнивайте сопоставимые условия и явно указывайте период, к которому относится результат.",
+        "en": "Compare equivalent conditions and clearly state the result’s time window."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://blog.duolingo.com/duolingo-leagues-leaderboards/"
+      }
+    ]
+  },
+  "online-participation--t326": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рынки, подарки и обмен между игроками",
+      "en": "Markets, gifts and player trading"
+    },
+    "description": {
+      "ru": "Рынок передаёт предмет по согласованной цене. Steam Community Market показывает предложения участников, доступное количество и минимальную цену лота.",
+      "en": "A market transfers items at an agreed price. Steam Community Market shows participant listings, available quantities and starting prices."
+    },
+    "image": {
+      "src": "images/mechanics/online-steam-market.webp",
+      "width": 1266,
+      "height": 712,
+      "crop": {
+        "x": 150,
+        "y": 65,
+        "width": 950,
+        "height": 625
+      },
+      "game": "Steam Community Market",
+      "sourceUrl": "https://steamcommunity.com/market/",
+      "originalUrl": "https://steamcommunity.com/market/",
+      "credit": "Valve / respective game publishers",
+      "rights": "© Valve / respective game publishers. Official image or public interface capture; all rights reserved. Excluded from portal MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Steam Community Market: публичные лоты, снимок 22 октября 2026 года",
+        "en": "Steam Community Market: public listings, captured October 22, 2026"
+      },
+      "alt": {
+        "ru": "Steam Community Market: публичные лоты, снимок 22 октября 2026 года",
+        "en": "Steam Community Market: public listings, captured October 22, 2026"
+      },
+      "markers": [
+        {
+          "x": 59,
+          "y": 29,
+          "label": {
+            "ru": "Цена и число предложений видны до выбора конкретного предмета",
+            "en": "Price and listing quantity are visible before choosing an item"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте комиссию, условия передачи и окончательную цену до подтверждения сделки.",
+        "en": "Show fees, transfer conditions and the final price before confirming a trade."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Steam Community Market",
+        "url": "https://steamcommunity.com/market/"
+      }
+    ]
+  },
+  "online-participation--t327": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Сезоны, события и изменение мира",
+      "en": "Seasons, events and world changes"
+    },
+    "description": {
+      "ru": "Сезон задаёт общий набор целей и наград на период участия. В Deep Rock Galactic задания и дорожка сезонного прогресса объединяют несколько вылазок.",
+      "en": "A season defines shared goals and rewards for a period. Deep Rock Galactic links expeditions through assignments and a seasonal reward track."
+    },
+    "image": {
+      "src": "images/mechanics/drg-season-rewards.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Deep Rock Galactic",
+      "sourceUrl": "https://store.steampowered.com/app/548430/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/548430/16b75c6d2a231b45b56328abe335fde8cee9ebe4/ss_16b75c6d2a231b45b56328abe335fde8cee9ebe4.1920x1080.jpg?t=1792497307",
+      "credit": "Ghost Ship Games / Coffee Stain Publishing",
+      "rights": "© Ghost Ship Games / Coffee Stain Publishing. All rights reserved.",
+      "caption": {
+        "ru": "Задания и шкала сезонных наград",
+        "en": "Season challenges and reward track"
+      },
+      "alt": {
+        "ru": "Deep Rock Galactic: сезонная панель показывает задания, текущий уровень 3 и последовательность предстоящих наград.",
+        "en": "Deep Rock Galactic: the season panel shows challenges, current level 3 and a sequence of upcoming rewards."
+      },
+      "markers": [
+        {
+          "x": 10,
+          "y": 83,
+          "label": {
+            "ru": "Текущий уровень и прогресс",
+            "en": "Current level and progress"
+          }
+        },
+        {
+          "x": 51,
+          "y": 83,
+          "label": {
+            "ru": "Лента ближайших наград",
+            "en": "Upcoming reward track"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте период и доступность прошлых наград; не скрывайте последствия смены сезона.",
+        "en": "Show the season period and past reward access, including what changes between seasons."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deep Rock Galactic",
+        "url": "https://store.steampowered.com/app/548430/"
+      }
+    ]
+  },
+  "online-participation--t328": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пропуски, магазины и платный доступ",
+      "en": "Passes, stores and paid access"
+    },
+    "description": {
+      "ru": "Платное предложение задаёт состав и условия доступа. В Duolingo сравнение Super с бесплатным режимом показывает, какие возможности входят в подписку.",
+      "en": "A paid offer defines access and its conditions. Duolingo compares Super with the free tier to show which features the subscription includes."
+    },
+    "image": {
+      "src": "images/mechanics/learning-duolingo-super-comparison.webp",
+      "width": 1280,
+      "height": 720,
+      "crop": {
+        "x": 175,
+        "y": 375,
+        "width": 930,
+        "height": 345
+      },
+      "game": "Duolingo",
+      "sourceUrl": "https://www.duolingo.com/super",
+      "originalUrl": "https://www.duolingo.com/super",
+      "credit": "Duolingo; public website capture, 2026-10-22",
+      "rights": "© Duolingo. Signed-out public subscription page captured without starting a trial or signing in, 2026-10-22. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Duolingo: публичное сравнение ограничений бесплатного доступа и Super",
+        "en": "Duolingo: public comparison of free access and Super limitations"
+      },
+      "alt": {
+        "ru": "Duolingo: публичное сравнение ограничений бесплатного доступа и Super",
+        "en": "Duolingo: public comparison of free access and Super limitations"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 79,
+          "label": {
+            "ru": "Бесконечные жизни отмечены как преимущество Super",
+            "en": "Unlimited hearts are listed as a Super benefit"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "До оплаты раскрывайте состав, срок, цену и условия продления платного доступа.",
+        "en": "Before payment, disclose contents, duration, price and renewal conditions."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Duolingo",
+        "url": "https://www.duolingo.com/super"
+      }
+    ]
+  },
+  "online-participation--t329": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "ARG, трансмедиа и игра вне приложения",
+      "en": "ARGs, transmedia and play beyond the app"
+    },
+    "description": {
+      "ru": "Задачи продолжаются в связанных материалах разных каналов. В The Black Watchmen расследование ведёт на вымышленный сайт, который становится частью головоломки.",
+      "en": "Puzzles continue through linked material across channels. The Black Watchmen leads an investigation to a fictional website that becomes part of the puzzle."
+    },
+    "image": {
+      "src": "images/mechanics/interface-black-watchmen-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "The Black Watchmen",
+      "sourceUrl": "https://store.steampowered.com/app/349220/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/349220/ss_effdc393f7b6af8d3602d320d2cb1b6fa4f3967a.1920x1080.jpg?t=1702491751",
+      "credit": "Alice & Smith / Alice & Smith",
+      "rights": "© Alice & Smith / Alice & Smith. Publisher-distributed Steam screenshot. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "The Black Watchmen: вымышленный сайт как материал расследования",
+        "en": "The Black Watchmen: a fictional website as investigation material"
+      },
+      "alt": {
+        "ru": "The Black Watchmen: вымышленный сайт как материал расследования",
+        "en": "The Black Watchmen: a fictional website as investigation material"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 38,
+          "label": {
+            "ru": "Содержимое связанного сайта нужно исследовать как часть игровой задачи",
+            "en": "The linked website’s content must be investigated as part of the puzzle"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Отмечайте границы игры и не требуйте контакта с непричастными людьми или организациями.",
+        "en": "Make the game’s boundaries clear and avoid involving unrelated people or organizations."
+      }
+    ],
+    "examples": [
+      {
+        "title": "The Black Watchmen",
+        "url": "https://store.steampowered.com/app/349220/"
+      }
+    ]
   }
 }
