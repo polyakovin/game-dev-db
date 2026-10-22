@@ -263,3 +263,18 @@ interface example, not a claim that the current interface is identical.
 These image-specific notices take precedence over the general rights-reserved
 statement for publisher media. The portal code and original explanatory text
 retain their respective MIT and CC BY 4.0 licenses.
+
+## Strategy and activity examples
+
+`strategy-*.webp` uses inspected publisher-distributed Steam screenshots for
+strategy, tactical combat, settlement management, stealth and activity
+simulators. Captions describe visible interfaces or in-game scenes, and the
+original Steam CDN image URL, game title and credits remain in card metadata.
+Civilization VI's turn counter is distinguished from its active research button;
+XCOM 2's shot breakdown identifies aim, range and flanking; RimWorld health and
+skill panels are identified separately.
+
+`progression-newworld-weapon.webp` comes from Amazon Games'
+[Character Progression preview](https://www.newworld.com/en-us/news/articles/character-progression).
+It shows the historical Hatchet mastery interface, not a claim about the current
+release UI. All new files use the same compressed WebP and dimension budgets.

@@ -39733,5 +39733,2826 @@
         "url": "https://github.com/gabrielecirulli/2048"
       }
     ]
+  },
+  "strategy-planning--t067": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Стратегии в реальном времени",
+      "en": "Real-time strategy"
+    },
+    "description": {
+      "ru": "Команды исполняются непрерывно, пока игрок делит внимание между развитием экономики, разведкой и управлением армией.",
+      "en": "Commands execute continuously while attention is divided between economic growth, scouting and army control."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-age-empires4-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Age of Empires IV: Anniversary Edition",
+      "sourceUrl": "https://store.steampowered.com/app/1466860/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1466860/ss_5384805fa5d365b069f197498269fabd7143cb4c.1920x1080.jpg?t=1780854334",
+      "credit": "World's Edge / Relic Entertainment / Forgotten Empires / Climax Studios / Xbox Game Studios",
+      "rights": "© World's Edge / Relic Entertainment / Forgotten Empires / Climax Studios / Xbox Game Studios. All rights reserved.",
+      "caption": {
+        "ru": "Экономика поселения развивается в реальном времени",
+        "en": "A settlement economy develops in real time"
+      },
+      "alt": {
+        "ru": "Экономика поселения развивается в реальном времени",
+        "en": "A settlement economy develops in real time"
+      },
+      "markers": [
+        {
+          "x": 70,
+          "y": 73,
+          "label": {
+            "ru": "Жители собирают урожай на полях",
+            "en": "Villagers harvest the fields"
+          }
+        },
+        {
+          "x": 30,
+          "y": 24,
+          "label": {
+            "ru": "Мельница рядом с источником пищи",
+            "en": "A mill beside the food source"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте простаивающих рабочих и угрозы, чтобы игрок мог распределять внимание.",
+        "en": "Expose idle workers and threats so the player can divide attention."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Age of Empires IV: Anniversary Edition",
+        "url": "https://store.steampowered.com/app/1466860/"
+      }
+    ]
+  },
+  "strategy-planning--t068": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пошаговые стратегии",
+      "en": "Turn-based strategy"
+    },
+    "description": {
+      "ru": "Ход выделяет время на планирование, а очередность участников определяет, какие изменения мира увидит следующий игрок.",
+      "en": "Turns provide planning time while player order determines which world changes the next participant observes."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-civilization6-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sid Meier’s Civilization® VI",
+      "sourceUrl": "https://store.steampowered.com/app/289070/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/ss_b2bf12299c38214fe520af0f724a6349d17ed330.1920x1080.jpg?t=1792602288",
+      "credit": "Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux)",
+      "rights": "© Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux). All rights reserved.",
+      "caption": {
+        "ru": "Управление городом между завершениями хода",
+        "en": "Managing a city between turns"
+      },
+      "alt": {
+        "ru": "Управление городом между завершениями хода",
+        "en": "Managing a city between turns"
+      },
+      "markers": [
+        {
+          "x": 9,
+          "y": 32,
+          "label": {
+            "ru": "Сводка роста и удобств города",
+            "en": "City growth and amenities summary"
+          }
+        },
+        {
+          "x": 92,
+          "y": 4,
+          "label": {
+            "ru": "Счётчик показывает текущий ход 118 из 330",
+            "en": "The counter shows the current turn: 118 of 330"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Перед завершением хода показывайте неиспользованные действия и важные последствия.",
+        "en": "Before ending a turn, show unused actions and important consequences."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sid Meier’s Civilization® VI",
+        "url": "https://store.steampowered.com/app/289070/"
+      }
+    ]
+  },
+  "strategy-planning--t069": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "4X",
+      "en": "4X"
+    },
+    "description": {
+      "ru": "Исследование, расширение, развитие и борьба за господство связывают множество поселений в одну долгую стратегию.",
+      "en": "Exploration, expansion, development and conflict connect multiple settlements into a long-term strategy."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-civilization6-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sid Meier’s Civilization® VI",
+      "sourceUrl": "https://store.steampowered.com/app/289070/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/ss_cf53258cb8c4d283e52cf8dce3edf8656f83adc6.1920x1080.jpg?t=1792602288",
+      "credit": "Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux)",
+      "rights": "© Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux). All rights reserved.",
+      "caption": {
+        "ru": "Территория державы и ещё не исследованные земли",
+        "en": "An empire’s territory and unexplored land"
+      },
+      "alt": {
+        "ru": "Территория державы и ещё не исследованные земли",
+        "en": "An empire’s territory and unexplored land"
+      },
+      "markers": [
+        {
+          "x": 47,
+          "y": 48,
+          "label": {
+            "ru": "Границы контролируемой территории",
+            "en": "Borders of controlled territory"
+          }
+        },
+        {
+          "x": 79,
+          "y": 27,
+          "label": {
+            "ru": "Неразведанная часть карты скрывает возможности",
+            "en": "Unexplored map areas conceal opportunities"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте исследование, расширение и развитие общими ограниченными ресурсами.",
+        "en": "Connect exploration, expansion and development through shared limited resources."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sid Meier’s Civilization® VI",
+        "url": "https://store.steampowered.com/app/289070/"
+      }
+    ]
+  },
+  "strategy-planning--t070": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Глобальные стратегии и династии",
+      "en": "Grand strategy and dynasties"
+    },
+    "description": {
+      "ru": "Долгая симуляция связывает территории, институты и преемственность власти, превращая личные связи в стратегический ресурс.",
+      "en": "A long simulation connects territory, institutions and succession, turning personal relationships into strategic resources."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-crusader-kings3-07.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Crusader Kings III",
+      "sourceUrl": "https://store.steampowered.com/app/1158310/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/6ebda65d44c09d5f2c5db0e0a86663fc669713e5/ss_6ebda65d44c09d5f2c5db0e0a86663fc669713e5.1920x1080.jpg?t=1792414688",
+      "credit": "Paradox Development Studio / Paradox Interactive",
+      "rights": "© Paradox Development Studio / Paradox Interactive. All rights reserved.",
+      "caption": {
+        "ru": "Родословная связывает правителя с династией",
+        "en": "A family tree connects the ruler to a dynasty"
+      },
+      "alt": {
+        "ru": "Родословная связывает правителя с династией",
+        "en": "A family tree connects the ruler to a dynasty"
+      },
+      "markers": [
+        {
+          "x": 66,
+          "y": 52,
+          "label": {
+            "ru": "Связи между поколениями династии Химена",
+            "en": "Links between generations of the Jimena dynasty"
+          }
+        },
+        {
+          "x": 14,
+          "y": 34,
+          "label": {
+            "ru": "Карточка короля Альфонсо VI Леонского",
+            "en": "Profile of King Alfonso VI of León"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте последствия наследования и союзов понятными до смены правителя.",
+        "en": "Make succession and alliance consequences clear before the ruler changes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Crusader Kings III",
+        "url": "https://store.steampowered.com/app/1158310/"
+      }
+    ]
+  },
+  "strategy-planning--t071": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Оперативное планирование",
+      "en": "Operational planning"
+    },
+    "description": {
+      "ru": "Оперативный план связывает передвижение соединений, снабжение и сроки, а бой проверяет выполнимость выбранного замысла.",
+      "en": "An operational plan connects formations, supply and timing, with combat testing whether the intended maneuver is feasible."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-warno-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "WARNO",
+      "sourceUrl": "https://store.steampowered.com/app/1611600/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1611600/ss_539bf094c8c2fdaf96332aeddaf143d5d90d712e.1920x1080.jpg?t=1787123302",
+      "credit": "Eugen Systems / Eugen Systems",
+      "rights": "© Eugen Systems / Eugen Systems. All rights reserved.",
+      "caption": {
+        "ru": "Army General: соединения на оперативной карте",
+        "en": "Army General: formations on an operational map"
+      },
+      "alt": {
+        "ru": "Army General: соединения на оперативной карте",
+        "en": "Army General: formations on an operational map"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 32,
+          "label": {
+            "ru": "Расположение соединений на карте кампании",
+            "en": "Formation locations on the campaign map"
+          }
+        },
+        {
+          "x": 48,
+          "y": 82,
+          "label": {
+            "ru": "Состав выбранного соединения",
+            "en": "Composition of the selected formation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, как перемещение соединения влияет на доступные бои и подкрепления.",
+        "en": "Explain how moving a formation changes available battles and reinforcements."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WARNO",
+        "url": "https://store.steampowered.com/app/1611600/"
+      }
+    ]
+  },
+  "strategy-planning--t072": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Командование без строительства базы",
+      "en": "Command without base building"
+    },
+    "description": {
+      "ru": "Ограниченный состав войск выполняет задачу без производственной базы; потери меняют доступные способы дальнейшего боя.",
+      "en": "A limited roster completes objectives without a production base; losses change the options for later engagements."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-shadow-tactics-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shadow Tactics: Blades of the Shogun",
+      "sourceUrl": "https://store.steampowered.com/app/418240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418240/ss_613e55b14d286aa7b57ccb99a879a10c6d03a47d.1920x1080.jpg?t=1789475696",
+      "credit": "Mimimi Games / Daedalic Entertainment",
+      "rights": "© Mimimi Games / Daedalic Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Отряд обходит патруль через укрытия",
+        "en": "A squad uses cover to bypass a patrol"
+      },
+      "alt": {
+        "ru": "Отряд обходит патруль через укрытия",
+        "en": "A squad uses cover to bypass a patrol"
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 33,
+          "label": {
+            "ru": "Один из героев скрыт за зданием",
+            "en": "A squad member is hidden behind a building"
+          }
+        },
+        {
+          "x": 80,
+          "y": 78,
+          "label": {
+            "ru": "Второй герой занимает отдельную позицию",
+            "en": "Another squad member holds a separate position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте ролям отряда разные способы преодолеть одно препятствие.",
+        "en": "Give squad roles different ways to overcome the same obstacle."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shadow Tactics: Blades of the Shogun",
+        "url": "https://store.steampowered.com/app/418240/"
+      }
+    ]
+  },
+  "strategy-planning--t073": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "MOBA и контроль линий",
+      "en": "MOBAs and lane control"
+    },
+    "description": {
+      "ru": "Герои распределяются по линиям и общим целям, превращая локальный успех в преимущество команды на карте.",
+      "en": "Heroes divide between lanes and shared objectives, converting local success into team-wide map advantage."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-dota2-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Dota 2",
+      "sourceUrl": "https://store.steampowered.com/app/570/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/ss_d0f973ce376ca5b6c08e081cb035e86ced105fa9.1920x1080.jpg?t=1791407503",
+      "credit": "Valve / Valve",
+      "rights": "© Valve / Valve. All rights reserved.",
+      "caption": {
+        "ru": "Герои и крипы сталкиваются на линии",
+        "en": "Heroes and creeps meet in a lane"
+      },
+      "alt": {
+        "ru": "Герои и крипы сталкиваются на линии",
+        "en": "Heroes and creeps meet in a lane"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 43,
+          "label": {
+            "ru": "Столкновение героев на линии",
+            "en": "Heroes clash in the lane"
+          }
+        },
+        {
+          "x": 6,
+          "y": 86,
+          "label": {
+            "ru": "Миникарта связывает линию с остальным полем",
+            "en": "The minimap connects the lane to the wider battlefield"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте цену ухода с линии и пользу командной цели видимыми для всей команды.",
+        "en": "Make the cost of leaving a lane and the value of team objectives visible to everyone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Dota 2",
+        "url": "https://store.steampowered.com/app/570/"
+      }
+    ]
+  },
+  "strategy-planning--t074": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Асимметричные фракции",
+      "en": "Asymmetric factions"
+    },
+    "description": {
+      "ru": "Фракции получают разные способы решать общие стратегические задачи; равновесие строится на сопоставимой полезности решений.",
+      "en": "Factions solve shared strategic problems through different systems; balance depends on comparable practical options."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-red-alert3-11.webp",
+      "width": 1224,
+      "height": 918,
+      "game": "Command & Conquer™ Red Alert™ 3",
+      "sourceUrl": "https://store.steampowered.com/app/17480/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/17480/0000006512.1920x1080.jpg?t=1779987212",
+      "credit": "EA Los Angeles / Electronic Arts",
+      "rights": "© EA Los Angeles / Electronic Arts. All rights reserved.",
+      "caption": {
+        "ru": "Стороны используют различающуюся боевую технику",
+        "en": "Opposing sides use different combat vehicles"
+      },
+      "alt": {
+        "ru": "Стороны используют различающуюся боевую технику",
+        "en": "Opposing sides use different combat vehicles"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 37,
+          "label": {
+            "ru": "Техника с электрическим оружием",
+            "en": "A vehicle firing an electrical weapon"
+          }
+        },
+        {
+          "x": 18,
+          "y": 66,
+          "label": {
+            "ru": "Противник использует другие боевые машины",
+            "en": "The opponent fields different combat vehicles"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте равноценность ответов на угрозы, а не совпадение характеристик фракций.",
+        "en": "Compare the usefulness of responses to threats rather than matching faction statistics."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Command & Conquer™ Red Alert™ 3",
+        "url": "https://store.steampowered.com/app/17480/"
+      }
+    ]
+  },
+  "strategy-planning--t075": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Дипломатия и международные отношения",
+      "en": "Diplomacy and international relations"
+    },
+    "description": {
+      "ru": "Дипломатия превращает обещания, обмен и угрозы в способы менять поведение других держав без непосредственного боя.",
+      "en": "Diplomacy uses promises, exchange and threats to change other powers' behavior without immediate combat."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-civilization6-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sid Meier’s Civilization® VI",
+      "sourceUrl": "https://store.steampowered.com/app/289070/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/ss_12cc6e1f4084de5bc0f66bfdbe3aaf3e59388b53.1920x1080.jpg?t=1792602288",
+      "credit": "Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux)",
+      "rights": "© Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux). All rights reserved.",
+      "caption": {
+        "ru": "Дипломатический экран Гильгамеша",
+        "en": "Gilgamesh’s diplomatic interface"
+      },
+      "alt": {
+        "ru": "Дипломатический экран Гильгамеша",
+        "en": "Gilgamesh’s diplomatic interface"
+      },
+      "markers": [
+        {
+          "x": 16,
+          "y": 81,
+          "label": {
+            "ru": "Действия для дружбы, торговли и требований",
+            "en": "Actions for friendship, trade and demands"
+          }
+        },
+        {
+          "x": 15,
+          "y": 32,
+          "label": {
+            "ru": "Панель показывает состояние отношений",
+            "en": "The panel shows the relationship state"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте причины отношения державы и цену обещаний до заключения соглашения.",
+        "en": "Show why an empire feels this way and the cost of promises before a deal is signed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sid Meier’s Civilization® VI",
+        "url": "https://store.steampowered.com/app/289070/"
+      }
+    ]
+  },
+  "strategy-planning--t076": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Туман войны и разведка",
+      "en": "Fog of war and reconnaissance"
+    },
+    "description": {
+      "ru": "Скрытая информация заставляет добывать, оценивать и обновлять сведения вместо принятия решений по полной карте.",
+      "en": "Hidden information requires acquiring, evaluating and updating intelligence instead of acting on a complete map."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-civilization6-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Sid Meier’s Civilization® VI",
+      "sourceUrl": "https://store.steampowered.com/app/289070/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/ss_cf53258cb8c4d283e52cf8dce3edf8656f83adc6.1920x1080.jpg?t=1792602288",
+      "credit": "Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux)",
+      "rights": "© Firaxis Games / Aspyr (Mac) / Aspyr (Linux) / 2K / Aspyr (Mac) / Aspyr (Linux). All rights reserved.",
+      "caption": {
+        "ru": "Разведанная местность окружена скрытой картой",
+        "en": "Explored terrain is surrounded by hidden map areas"
+      },
+      "alt": {
+        "ru": "Разведанная местность окружена скрытой картой",
+        "en": "Explored terrain is surrounded by hidden map areas"
+      },
+      "markers": [
+        {
+          "x": 76,
+          "y": 38,
+          "label": {
+            "ru": "Неразведанная местность показана условным рисунком",
+            "en": "Unexplored terrain is drawn as an abstract map"
+          }
+        },
+        {
+          "x": 48,
+          "y": 38,
+          "label": {
+            "ru": "Исследованная область раскрывает рельеф и ресурсы",
+            "en": "Explored land reveals terrain and resources"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте неизвестную область и устаревшие сведения об уже посещённом месте.",
+        "en": "Distinguish unknown territory from outdated information about a previously visited place."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Sid Meier’s Civilization® VI",
+        "url": "https://store.steampowered.com/app/289070/"
+      }
+    ]
+  },
+  "tactics-defense--t077": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Пошаговые бои на клетках",
+      "en": "Turn-based grid combat"
+    },
+    "description": {
+      "ru": "Клетки делают допустимые перемещения и области воздействия дискретными, позволяя рассчитать последовательность боя.",
+      "en": "Grid cells discretize legal movement and effect areas, allowing combat sequences to be planned."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-into-breach-00.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Into the Breach",
+      "sourceUrl": "https://store.steampowered.com/app/590380/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/ss_6113590509c195f98fa64cd738df534762e0c358.1920x1080.jpg?t=1755610784",
+      "credit": "Subset Games / Subset Games",
+      "rights": "© Subset Games / Subset Games. All rights reserved.",
+      "caption": {
+        "ru": "Клетчатое поле показывает угрозы перед ходом",
+        "en": "A grid shows threats before the turn"
+      },
+      "alt": {
+        "ru": "Клетчатое поле показывает угрозы перед ходом",
+        "en": "A grid shows threats before the turn"
+      },
+      "markers": [
+        {
+          "x": 63,
+          "y": 46,
+          "label": {
+            "ru": "Красная клетка отмечает угрожаемую позицию",
+            "en": "A red tile marks a threatened position"
+          }
+        },
+        {
+          "x": 44,
+          "y": 48,
+          "label": {
+            "ru": "Мех занимает конкретную клетку поля",
+            "en": "A mech occupies a particular grid tile"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте допустимые клетки и последствия перемещения до подтверждения приказа.",
+        "en": "Show legal tiles and movement consequences before an order is confirmed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Into the Breach",
+        "url": "https://store.steampowered.com/app/590380/"
+      }
+    ]
+  },
+  "tactics-defense--t078": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Инициатива и экономика действий",
+      "en": "Initiative and action economy"
+    },
+    "description": {
+      "ru": "Инициатива определяет очерёдность, а бюджет действий ограничивает сочетания движения, атаки и подготовки в ходе.",
+      "en": "Initiative sets order while an action budget limits combinations of movement, attacks and preparation within a turn."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-into-breach-00.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Into the Breach",
+      "sourceUrl": "https://store.steampowered.com/app/590380/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/ss_6113590509c195f98fa64cd738df534762e0c358.1920x1080.jpg?t=1755610784",
+      "credit": "Subset Games / Subset Games",
+      "rights": "© Subset Games / Subset Games. All rights reserved.",
+      "caption": {
+        "ru": "Отряд действует до команды завершить ход",
+        "en": "The squad acts before the turn is ended"
+      },
+      "alt": {
+        "ru": "Отряд действует до команды завершить ход",
+        "en": "The squad acts before the turn is ended"
+      },
+      "markers": [
+        {
+          "x": 9,
+          "y": 12,
+          "label": {
+            "ru": "End Turn завершает действия стороны игрока",
+            "en": "End Turn finishes the player side’s actions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте расход действия явным и позволяйте проверить порядок событий до подтверждения.",
+        "en": "Make action costs explicit and let the player inspect event order before committing."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Into the Breach",
+        "url": "https://store.steampowered.com/app/590380/"
+      }
+    ]
+  },
+  "tactics-defense--t079": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Позиция, фланги и укрытия",
+      "en": "Position, flanks and cover"
+    },
+    "description": {
+      "ru": "Позиция меняет защищённость и доступ к целям, а фланг позволяет обойти преимущество прямого столкновения.",
+      "en": "Position changes protection and target access, while flanking circumvents the advantage of a frontal engagement."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-xcom2-04.webp",
+      "width": 615,
+      "height": 346,
+      "game": "XCOM® 2",
+      "sourceUrl": "https://store.steampowered.com/app/268500/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268500/ss_50b987ea0074e44de58a9b4df87efb529cc8f625.1920x1080.jpg?t=1772813016",
+      "credit": "Firaxis Games / Feral Interactive (Mac) / Feral Interactive (Linux) / 2K / Feral Interactive (Mac) / Feral Interactive (Linux)",
+      "rights": "© Firaxis Games / Feral Interactive (Mac) / Feral Interactive (Linux) / 2K / Feral Interactive (Mac) / Feral Interactive (Linux). All rights reserved.",
+      "caption": {
+        "ru": "Позиция влияет на расчёт выстрела",
+        "en": "Position affects the shot calculation"
+      },
+      "alt": {
+        "ru": "Позиция влияет на расчёт выстрела",
+        "en": "Position affects the shot calculation"
+      },
+      "markers": [
+        {
+          "x": 24,
+          "y": 88,
+          "label": {
+            "ru": "Меткость и дальность входят в расчёт выстрела",
+            "en": "Aim and weapon range contribute to the shot calculation"
+          }
+        },
+        {
+          "x": 73,
+          "y": 88,
+          "label": {
+            "ru": "Обход цели с фланга даёт бонус",
+            "en": "Flanking the target adds a bonus"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте изменение шанса попадания через конкретную позицию и укрытие.",
+        "en": "Explain changes in hit chance through the actual position and cover."
+      }
+    ],
+    "examples": [
+      {
+        "title": "XCOM® 2",
+        "url": "https://store.steampowered.com/app/268500/"
+      }
+    ]
+  },
+  "tactics-defense--t080": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Вытеснение и использование окружения",
+      "en": "Displacement and environmental tactics"
+    },
+    "description": {
+      "ru": "Принудительное перемещение меняет тактическую задачу без прямого урона, используя опасности и устройство поля.",
+      "en": "Forced movement changes tactical situations without direct damage by using hazards and board structure."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-into-breach-00.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Into the Breach",
+      "sourceUrl": "https://store.steampowered.com/app/590380/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/ss_6113590509c195f98fa64cd738df534762e0c358.1920x1080.jpg?t=1755610784",
+      "credit": "Subset Games / Subset Games",
+      "rights": "© Subset Games / Subset Games. All rights reserved.",
+      "caption": {
+        "ru": "Пропасть превращает толчок в опасную атаку",
+        "en": "A chasm turns a push into a dangerous attack"
+      },
+      "alt": {
+        "ru": "Пропасть превращает толчок в опасную атаку",
+        "en": "A chasm turns a push into a dangerous attack"
+      },
+      "markers": [
+        {
+          "x": 63,
+          "y": 72,
+          "label": {
+            "ru": "Пропасть рядом с боевыми клетками",
+            "en": "A chasm beside the combat tiles"
+          }
+        },
+        {
+          "x": 86,
+          "y": 91,
+          "label": {
+            "ru": "Подсказка: наземный юнит погибает при падении",
+            "en": "Tooltip: a ground unit pushed into the chasm is destroyed"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте конечную клетку толчка и взаимодействие с опасностью до выполнения.",
+        "en": "Preview the destination of a push and its hazard interaction before execution."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Into the Breach",
+        "url": "https://store.steampowered.com/app/590380/"
+      }
+    ]
+  },
+  "tactics-defense--t081": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Одновременное исполнение планов",
+      "en": "Simultaneous plan execution"
+    },
+    "description": {
+      "ru": "Участники планируют на одном состоянии мира, затем система совместно исполняет приказы с заранее понятными конфликтами.",
+      "en": "Participants plan from one world state, then the system jointly executes orders using explicit conflict rules."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-frozen-synapse-00.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Frozen Synapse",
+      "sourceUrl": "https://store.steampowered.com/app/98200/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/98200/ss_8a3c20ebb40066b04e78d7a74e4013a4d69fd57e.1920x1080.jpg?t=1458256347",
+      "credit": "Mode 7 / Mode 7",
+      "rights": "© Mode 7 / Mode 7. All rights reserved.",
+      "caption": {
+        "ru": "Маршруты задают будущие действия отряда",
+        "en": "Routes define the squad’s upcoming actions"
+      },
+      "alt": {
+        "ru": "Маршруты задают будущие действия отряда",
+        "en": "Routes define the squad’s upcoming actions"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 57,
+          "label": {
+            "ru": "Зелёные точки задают маршрут бойца",
+            "en": "Green waypoints define a unit’s route"
+          }
+        },
+        {
+          "x": 51,
+          "y": 64,
+          "label": {
+            "ru": "Направление приказа на поле боя",
+            "en": "An order direction on the battlefield"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Разделяйте фазу планирования и исполнение, сохраняя разбор конфликтующих приказов.",
+        "en": "Separate planning from execution and preserve a readable account of conflicting orders."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Frozen Synapse",
+        "url": "https://store.steampowered.com/app/98200/"
+      }
+    ]
+  },
+  "tactics-defense--t082": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Автобаттлеры и подготовка состава",
+      "en": "Auto battlers and roster preparation"
+    },
+    "description": {
+      "ru": "Игрок собирает и расставляет состав перед боем, а автоматическое исполнение проверяет подготовку и сочетание ролей.",
+      "en": "The player assembles and positions a roster before combat, and automated execution tests preparation and role combinations."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-mechabellum-02.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Mechabellum",
+      "sourceUrl": "https://store.steampowered.com/app/669330/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/669330/6b34d114c6c2d2b8aaafe6d44f1a7cbbb9cd8f03/ss_6b34d114c6c2d2b8aaafe6d44f1a7cbbb9cd8f03.1920x1080.jpg?t=1792451146",
+      "credit": "Game River / Dreamhaven",
+      "rights": "© Game River / Dreamhaven. All rights reserved.",
+      "caption": {
+        "ru": "Автоматический бой проверяет состав и расстановку",
+        "en": "Automatic combat tests the army and its placement"
+      },
+      "alt": {
+        "ru": "Автоматический бой проверяет состав и расстановку",
+        "en": "Automatic combat tests the army and its placement"
+      },
+      "markers": [
+        {
+          "x": 43,
+          "y": 49,
+          "label": {
+            "ru": "Группы разных машин образуют боевой состав",
+            "en": "Groups of different machines form the army"
+          }
+        },
+        {
+          "x": 93,
+          "y": 55,
+          "label": {
+            "ru": "Панель доступных типов подразделений",
+            "en": "Panel of available unit types"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "После боя показывайте, какие позиции и сочетания отрядов определили исход.",
+        "en": "After combat, show which positions and unit combinations shaped the outcome."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Mechabellum",
+        "url": "https://store.steampowered.com/app/669330/"
+      }
+    ]
+  },
+  "tactics-defense--t083": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Tower defense",
+      "en": "Tower defense"
+    },
+    "description": {
+      "ru": "Игрок размещает оборону вдоль пути врагов, распределяя бюджет между охватом маршрута, типами урона и улучшениями.",
+      "en": "The player places defenses along enemy routes, splitting a budget between coverage, damage types and upgrades."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-bloons-td6-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Bloons TD 6",
+      "sourceUrl": "https://store.steampowered.com/app/960090/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/ss_ab05c1ce749ecc1a6e76a8efc4d4dd21f534d091.1920x1080.jpg?t=1782123772",
+      "credit": "Ninja Kiwi / Ninja Kiwi",
+      "rights": "© Ninja Kiwi / Ninja Kiwi. All rights reserved.",
+      "caption": {
+        "ru": "Башни защищают маршрут от очередной волны",
+        "en": "Towers defend the route against another wave"
+      },
+      "alt": {
+        "ru": "Башни защищают маршрут от очередной волны",
+        "en": "Towers defend the route against another wave"
+      },
+      "markers": [
+        {
+          "x": 79,
+          "y": 4,
+          "label": {
+            "ru": "Номер волны показывает продолжение длинной сессии",
+            "en": "The round counter tracks the continuing session"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте несколько жизнеспособных расстановок при одинаковом бюджете.",
+        "en": "Test multiple viable tower layouts at the same budget."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Bloons TD 6",
+        "url": "https://store.steampowered.com/app/960090/"
+      }
+    ]
+  },
+  "tactics-defense--t084": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Маршруты противника и лабиринты",
+      "en": "Rerouting enemies and building mazes"
+    },
+    "description": {
+      "ru": "Строительство меняет путь противника, превращая длину маршрута и доступные проходы в ресурс обороны.",
+      "en": "Building changes enemy routes, making travel length and available passages defensive resources."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-defense-grid-05.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Defense Grid: The Awakening",
+      "sourceUrl": "https://store.steampowered.com/app/18500/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/18500/0000005949.1920x1080.jpg?t=1721059385",
+      "credit": "Hidden Path Entertainment / Hidden Path Entertainment",
+      "rights": "© Hidden Path Entertainment / Hidden Path Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Башни занимают платформы вдоль проходов",
+        "en": "Towers occupy platforms beside the routes"
+      },
+      "alt": {
+        "ru": "Башни занимают платформы вдоль проходов",
+        "en": "Towers occupy platforms beside the routes"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 48,
+          "label": {
+            "ru": "Проходы между строительными платформами",
+            "en": "Passages between building platforms"
+          }
+        },
+        {
+          "x": 83,
+          "y": 21,
+          "label": {
+            "ru": "Башни перекрывают участки маршрута огнём",
+            "en": "Towers cover sections of the route with fire"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Предпросмотр пути должен обновляться до размещения препятствия.",
+        "en": "Update the route preview before an obstacle is placed."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Defense Grid: The Awakening",
+        "url": "https://store.steampowered.com/app/18500/"
+      }
+    ]
+  },
+  "tactics-defense--t085": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Оборона базы, осады и волны",
+      "en": "Base defense, sieges and waves"
+    },
+    "description": {
+      "ru": "Волны проверяют устойчивость базы, а подготовка и ремонт распределяют ограниченные ресурсы между текущей и будущей угрозой.",
+      "en": "Waves test a base's resilience while preparation and repair split limited resources between current and future threats."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-they-billions-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "They Are Billions",
+      "sourceUrl": "https://store.steampowered.com/app/644930/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/644930/ss_4c32c120efcf58bac44ae8316f22a1b2a722185f.1920x1080.jpg?t=1595631876",
+      "credit": "Numantian Games / Numantian Games",
+      "rights": "© Numantian Games / Numantian Games. All rights reserved.",
+      "caption": {
+        "ru": "Масса заражённых атакует внешний периметр",
+        "en": "A mass of infected attacks the outer perimeter"
+      },
+      "alt": {
+        "ru": "Масса заражённых атакует внешний периметр",
+        "en": "A mass of infected attacks the outer perimeter"
+      },
+      "markers": [
+        {
+          "x": 27,
+          "y": 40,
+          "label": {
+            "ru": "Стены удерживают наступающую толпу",
+            "en": "Walls hold back the advancing crowd"
+          }
+        },
+        {
+          "x": 64,
+          "y": 64,
+          "label": {
+            "ru": "Постройки базы находятся за линией обороны",
+            "en": "Base structures stand behind the defensive line"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте время восстановиться между волнами и показывайте слабые участки периметра.",
+        "en": "Allow recovery time between waves and expose weak points in the perimeter."
+      }
+    ],
+    "examples": [
+      {
+        "title": "They Are Billions",
+        "url": "https://store.steampowered.com/app/644930/"
+      }
+    ]
+  },
+  "tactics-defense--t086": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Контроль территории и точек",
+      "en": "Territory and objective control"
+    },
+    "description": {
+      "ru": "Удерживаемые места дают очки, ресурсы или снабжение, а связность территории делает обход альтернативой прямому штурму.",
+      "en": "Held locations provide score, resources or supply, while territorial connectivity makes bypassing an alternative to assault."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-warno-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "WARNO",
+      "sourceUrl": "https://store.steampowered.com/app/1611600/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1611600/ss_02c2e9a85772cd372e17949abb7bd22e34b98d80.1920x1080.jpg?t=1787123302",
+      "credit": "Eugen Systems / Eugen Systems",
+      "rights": "© Eugen Systems / Eugen Systems. All rights reserved.",
+      "caption": {
+        "ru": "Цветные зоны показывают контроль участков карты",
+        "en": "Colored zones show control of map sectors"
+      },
+      "alt": {
+        "ru": "Цветные зоны показывают контроль участков карты",
+        "en": "Colored zones show control of map sectors"
+      },
+      "markers": [
+        {
+          "x": 26,
+          "y": 54,
+          "label": {
+            "ru": "Синяя зона ALPHA обозначает контролируемый сектор",
+            "en": "The blue ALPHA zone marks a controlled sector"
+          }
+        },
+        {
+          "x": 73,
+          "y": 23,
+          "label": {
+            "ru": "Красные зоны отмечают участки противника",
+            "en": "Red zones mark enemy sectors"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, какое присутствие удерживает точку и когда меняется её владелец.",
+        "en": "Explain which presence holds an objective and when its owner changes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "WARNO",
+        "url": "https://store.steampowered.com/app/1611600/"
+      }
+    ]
+  },
+  "settlement-management--t097": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Градостроительство",
+      "en": "City building"
+    },
+    "description": {
+      "ru": "Градостроительство соединяет размещение жилья, рабочих мест и услуг с потоками жителей и устойчивостью поселения.",
+      "en": "City building connects homes, jobs and services through resident flows and settlement resilience."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-cities-skylines-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Cities: Skylines",
+      "sourceUrl": "https://store.steampowered.com/app/255710/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/ss_e0f842c9327df9defabf120b6c59e1ba42f54a75.1920x1080.jpg?t=1791468493",
+      "credit": "Colossal Order / Paradox Interactive",
+      "rights": "© Colossal Order / Paradox Interactive. All rights reserved.",
+      "caption": {
+        "ru": "Уличная сеть соединяет кварталы города",
+        "en": "A street network connects city districts"
+      },
+      "alt": {
+        "ru": "Уличная сеть соединяет кварталы города",
+        "en": "A street network connects city districts"
+      },
+      "markers": [
+        {
+          "x": 48,
+          "y": 53,
+          "label": {
+            "ru": "Перекрёстки связывают городские кварталы",
+            "en": "Intersections connect urban blocks"
+          }
+        },
+        {
+          "x": 57,
+          "y": 86,
+          "label": {
+            "ru": "Магистраль обслуживает дальние потоки",
+            "en": "A major road carries longer-distance traffic"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте доступность услуг по реальным маршрутам, а не только по расстоянию.",
+        "en": "Test access to services along actual routes rather than distance alone."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Cities: Skylines",
+        "url": "https://store.steampowered.com/app/255710/"
+      }
+    ]
+  },
+  "settlement-management--t098": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Колонии и управление поселенцами",
+      "en": "Colonies and colonist management"
+    },
+    "description": {
+      "ru": "Колония связывает индивидуальные потребности и навыки поселенцев с общей очередью работ и ограниченными запасами.",
+      "en": "A colony connects individual colonist needs and skills to shared work queues and limited supplies."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-rimworld-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "RimWorld",
+      "sourceUrl": "https://store.steampowered.com/app/294100/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/1e3a2734b23daaa4eb60ea33dd87806aa65e0c8f/ss_1e3a2734b23daaa4eb60ea33dd87806aa65e0c8f.1920x1080.jpg?t=1782756789",
+      "credit": "Ludeon Studios / Ludeon Studios",
+      "rights": "© Ludeon Studios / Ludeon Studios. All rights reserved.",
+      "caption": {
+        "ru": "Колонисты защищают поселение среди полей и построек",
+        "en": "Colonists defend a settlement among fields and buildings"
+      },
+      "alt": {
+        "ru": "Колонисты защищают поселение среди полей и построек",
+        "en": "Colonists defend a settlement among fields and buildings"
+      },
+      "markers": [
+        {
+          "x": 29,
+          "y": 76,
+          "label": {
+            "ru": "Участки с растениями требуют общей работы",
+            "en": "Growing areas require shared work"
+          }
+        },
+        {
+          "x": 79,
+          "y": 42,
+          "label": {
+            "ru": "Отдельные комнаты образуют жилую часть колонии",
+            "en": "Separate rooms form the colony’s living area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте очередь работ с навыками и потребностями конкретных поселенцев.",
+        "en": "Connect work priorities to individual colonists’ skills and needs."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RimWorld",
+        "url": "https://store.steampowered.com/app/294100/"
+      }
+    ]
+  },
+  "settlement-management--t099": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Предприятия и tycoon",
+      "en": "Businesses and tycoon games"
+    },
+    "description": {
+      "ru": "Предприятие превращает вложения, мощности и обслуживание клиентов в выручку, которую игрок возвращает в развитие.",
+      "en": "A business turns investment, capacity and customer service into revenue that funds further development."
+    },
+    "image": {
+      "src": "images/mechanics/rpg-shop-titans-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shop Titans",
+      "sourceUrl": "https://store.steampowered.com/app/1258080/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1258080/ss_21b6f74ed696af1bbf1f565c567e6f9f15864db9.1920x1080.jpg?t=1754432193",
+      "credit": "Kabam Games, Inc.",
+      "rights": "Game imagery © its respective rights holders. Official game guide or publisher-distributed screenshot; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Продажа созданного снаряжения за золото",
+        "en": "Selling crafted equipment for gold"
+      },
+      "alt": {
+        "ru": "Продажа созданного снаряжения за золото",
+        "en": "Selling crafted equipment for gold"
+      },
+      "markers": [
+        {
+          "x": 56,
+          "y": 25,
+          "label": {
+            "ru": "Цена показывает доход до подтверждения продажи",
+            "en": "The price shows proceeds before the sale is confirmed"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте чистую прибыль с учётом затрат и времени обслуживания.",
+        "en": "Show net profit after costs and service time."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shop Titans",
+        "url": "https://store.steampowered.com/app/1258080/"
+      }
+    ]
+  },
+  "settlement-management--t100": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Парки и аттракционы",
+      "en": "Parks and attractions"
+    },
+    "description": {
+      "ru": "Парк согласует привлекательность объектов с маршрутами, очередями, обслуживанием и потребностями посетителей или животных.",
+      "en": "A park aligns attraction appeal with paths, queues, maintenance and visitor or animal needs."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-planet-coaster-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Planet Coaster",
+      "sourceUrl": "https://store.steampowered.com/app/493340/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/493340/ss_6525626afbc7260476c64dc82318492521c6733d.1920x1080.jpg?t=1782480201",
+      "credit": "Frontier Developments / Aspyr (Mac) / Frontier Developments / Aspyr (Mac)",
+      "rights": "© Frontier Developments / Aspyr (Mac) / Frontier Developments / Aspyr (Mac). All rights reserved.",
+      "caption": {
+        "ru": "Посетители парка пользуются магазинами и дорожками",
+        "en": "Park visitors use shops and paths"
+      },
+      "alt": {
+        "ru": "Посетители парка пользуются магазинами и дорожками",
+        "en": "Park visitors use shops and paths"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 56,
+          "label": {
+            "ru": "Посетители собираются у торговых точек",
+            "en": "Visitors gather beside the shops"
+          }
+        },
+        {
+          "x": 27,
+          "y": 78,
+          "label": {
+            "ru": "Пешеходный поток проходит через общую зону",
+            "en": "Pedestrian traffic crosses a shared area"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Проверяйте вместимость дорожек и обслуживания вместе с привлекательностью парка.",
+        "en": "Test path and service capacity alongside the park’s attractiveness."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Planet Coaster",
+        "url": "https://store.steampowered.com/app/493340/"
+      }
+    ]
+  },
+  "settlement-management--t101": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Больницы, школы и общественные службы",
+      "en": "Hospitals, schools and public services"
+    },
+    "description": {
+      "ru": "Общественная служба распределяет ограниченную пропускную способность по обращениям с разной срочностью и длительностью обработки.",
+      "en": "A public service allocates limited capacity among requests with different urgency and processing duration."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-two-point-hospital-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Two Point Hospital",
+      "sourceUrl": "https://store.steampowered.com/app/535930/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/535930/ss_730ffaa53e8ab770853dfa900c44680bba605d6d.1920x1080.jpg?t=1763648286",
+      "credit": "Two Point Studios / SEGA",
+      "rights": "© Two Point Studios / SEGA. All rights reserved.",
+      "caption": {
+        "ru": "Кабинеты и общие зоны обслуживают пациентов",
+        "en": "Treatment rooms and shared areas serve patients"
+      },
+      "alt": {
+        "ru": "Кабинеты и общие зоны обслуживают пациентов",
+        "en": "Treatment rooms and shared areas serve patients"
+      },
+      "markers": [
+        {
+          "x": 53,
+          "y": 23,
+          "label": {
+            "ru": "Рабочие помещения занимают ограниченную площадь",
+            "en": "Service rooms occupy limited floor space"
+          }
+        },
+        {
+          "x": 36,
+          "y": 71,
+          "label": {
+            "ru": "Общая зона ожидания связывает кабинеты",
+            "en": "A shared waiting area connects treatment rooms"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, где ограничение мощности создаёт очередь и задерживает помощь.",
+        "en": "Show where limited capacity creates a queue and delays service."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Two Point Hospital",
+        "url": "https://store.steampowered.com/app/535930/"
+      }
+    ]
+  },
+  "settlement-management--t102": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Расписания, очереди и обслуживание",
+      "en": "Schedules, queues and service"
+    },
+    "description": {
+      "ru": "Очереди связывают момент поступления задачи с доступностью исполнителя; расписание заранее распределяет ограниченные интервалы.",
+      "en": "Queues connect task arrivals to worker availability; scheduling allocates limited time slots in advance."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-two-point-hospital-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Two Point Hospital",
+      "sourceUrl": "https://store.steampowered.com/app/535930/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/535930/ss_730ffaa53e8ab770853dfa900c44680bba605d6d.1920x1080.jpg?t=1763648286",
+      "credit": "Two Point Studios / SEGA",
+      "rights": "© Two Point Studios / SEGA. All rights reserved.",
+      "caption": {
+        "ru": "Зона ожидания размещена рядом с кабинетами",
+        "en": "The waiting area is positioned beside treatment rooms"
+      },
+      "alt": {
+        "ru": "Зона ожидания размещена рядом с кабинетами",
+        "en": "The waiting area is positioned beside treatment rooms"
+      },
+      "markers": [
+        {
+          "x": 35,
+          "y": 72,
+          "label": {
+            "ru": "Скамейки предназначены для ожидающих пациентов",
+            "en": "Benches accommodate waiting patients"
+          }
+        },
+        {
+          "x": 42,
+          "y": 45,
+          "label": {
+            "ru": "Подход к кабинетам проходит через общий коридор",
+            "en": "Access to treatment rooms uses a shared corridor"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Объясняйте, кто обслуживается следующим и почему задача ожидает.",
+        "en": "Explain who is served next and why a task is waiting."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Two Point Hospital",
+        "url": "https://store.steampowered.com/app/535930/"
+      }
+    ]
+  },
+  "settlement-management--t103": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Персонал, квалификация и делегирование",
+      "en": "Staff, skills and delegation"
+    },
+    "description": {
+      "ru": "Персонал выполняет делегированные задачи по навыкам, доступному времени и полномочиям, снижая потребность в ручных приказах.",
+      "en": "Staff perform delegated work according to skill, time and authority, reducing the need for manual orders."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-rimworld-03.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "RimWorld",
+      "sourceUrl": "https://store.steampowered.com/app/294100/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/57c3e8d556d47bb5ad048699643528aefc652aa6/ss_57c3e8d556d47bb5ad048699643528aefc652aa6.1920x1080.jpg?t=1782756789",
+      "credit": "Ludeon Studios / Ludeon Studios",
+      "rights": "© Ludeon Studios / Ludeon Studios. All rights reserved.",
+      "caption": {
+        "ru": "Навыки колониста помогают распределять работу",
+        "en": "A colonist’s skills help allocate work"
+      },
+      "alt": {
+        "ru": "Навыки колониста помогают распределять работу",
+        "en": "A colonist’s skills help allocate work"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 43,
+          "label": {
+            "ru": "Профиль перечисляет навыки выбранного персонажа",
+            "en": "The profile lists the selected character’s skills"
+          }
+        },
+        {
+          "x": 50,
+          "y": 74,
+          "label": {
+            "ru": "Сводка навыков всей стартовой команды",
+            "en": "Summary of the starting team’s skills"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сопоставляйте требования работы с навыками и доступностью исполнителя.",
+        "en": "Match job requirements to the worker’s skills and availability."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RimWorld",
+        "url": "https://store.steampowered.com/app/294100/"
+      }
+    ]
+  },
+  "settlement-management--t104": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Потребности и конфликты жителей",
+      "en": "Residents’ needs and conflicts"
+    },
+    "description": {
+      "ru": "Потребности жителей конкурируют за услуги и пространство, а неудовлетворённость меняет их поведение и отношение к управлению.",
+      "en": "Resident needs compete for services and space, while unmet needs change behavior and attitudes toward management."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-frostpunk-04.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Frostpunk",
+      "sourceUrl": "https://store.steampowered.com/app/323190/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323190/ss_03fc3089daf0785e3bf34b32c385e80defefaeb4.1920x1080.jpg?t=1792058205",
+      "credit": "11 bit studios / 11 bit studios",
+      "rights": "© 11 bit studios / 11 bit studios. All rights reserved.",
+      "caption": {
+        "ru": "Голодные жители требуют реакции руководителя",
+        "en": "Hungry residents demand a response from their leader"
+      },
+      "alt": {
+        "ru": "Голодные жители требуют реакции руководителя",
+        "en": "Hungry residents demand a response from their leader"
+      },
+      "markers": [
+        {
+          "x": 30,
+          "y": 29,
+          "label": {
+            "ru": "Протест сообщает о нехватке еды",
+            "en": "The protest reports a food shortage"
+          }
+        },
+        {
+          "x": 35,
+          "y": 66,
+          "label": {
+            "ru": "Варианты ответа задают обещание жителям",
+            "en": "Response options define a promise to residents"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте причину недовольства и проверяемые условия данного обещания.",
+        "en": "Show the cause of discontent and measurable conditions of a promise."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Frostpunk",
+        "url": "https://store.steampowered.com/app/323190/"
+      }
+    ]
+  },
+  "settlement-management--t106": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Кризисы, аварии и восстановление",
+      "en": "Crises, accidents and recovery"
+    },
+    "description": {
+      "ru": "Кризис нарушает обычные зависимости системы, заставляя выявлять причину, ограничивать ущерб и восстанавливать работу по приоритету.",
+      "en": "A crisis breaks normal system dependencies, requiring diagnosis, damage containment and prioritized restoration."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-rimworld-09.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "RimWorld",
+      "sourceUrl": "https://store.steampowered.com/app/294100/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/b509c42ec00bde9422e7a87cab7c8bb1b884915f/ss_b509c42ec00bde9422e7a87cab7c8bb1b884915f.1920x1080.jpg?t=1782756789",
+      "credit": "Ludeon Studios / Ludeon Studios",
+      "rights": "© Ludeon Studios / Ludeon Studios. All rights reserved.",
+      "caption": {
+        "ru": "Пожар распространяется вокруг поселения",
+        "en": "A fire spreads around the settlement"
+      },
+      "alt": {
+        "ru": "Пожар распространяется вокруг поселения",
+        "en": "A fire spreads around the settlement"
+      },
+      "markers": [
+        {
+          "x": 25,
+          "y": 53,
+          "label": {
+            "ru": "Горящий лес создаёт угрозу распространения",
+            "en": "Burning woodland creates a spreading threat"
+          }
+        },
+        {
+          "x": 52,
+          "y": 44,
+          "label": {
+            "ru": "Постройки колонии находятся рядом с огнём",
+            "en": "Colony buildings stand close to the fire"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте приоритеты локализации, спасения и восстановления после аварии.",
+        "en": "Support priorities for containment, rescue and recovery after a disaster."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RimWorld",
+        "url": "https://store.steampowered.com/app/294100/"
+      }
+    ]
+  },
+  "activity-simulators--t127": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Фермерство и уход за хозяйством",
+      "en": "Farming and tending a homestead"
+    },
+    "description": {
+      "ru": "Хозяйство связывает подготовку участка, цикл роста и уход за животными с сезонным планом производства.",
+      "en": "Farming connects land preparation, growth cycles and animal care to a seasonal production plan."
+    },
+    "image": {
+      "src": "images/mechanics/stardew-valley-crops.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 180,
+        "y": 300,
+        "width": 825,
+        "height": 488
+      },
+      "game": "Stardew Valley",
+      "sourceUrl": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/ss_a3ddf22cda3bd722df77dbdd58dbec393906b654.1920x1080.jpg?t=1786554168",
+      "credit": "ConcernedApe",
+      "rights": "© ConcernedApe. All rights reserved.",
+      "caption": {
+        "ru": "Грядки с растениями разного возраста",
+        "en": "Plots with crops at different stages"
+      },
+      "alt": {
+        "ru": "Stardew Valley: на ферме рядом растут молодые всходы и более развитые культуры, грядки защищены пугалами.",
+        "en": "Stardew Valley: young sprouts and more developed crops grow beside each other on a farm protected by scarecrows."
+      },
+      "markers": [
+        {
+          "x": 49,
+          "y": 51,
+          "label": {
+            "ru": "Молодые растения требуют времени и ухода",
+            "en": "Young crops need time and care"
+          }
+        },
+        {
+          "x": 61,
+          "y": 55,
+          "label": {
+            "ru": "Более развитая культура приближается к сбору",
+            "en": "A more developed crop approaches harvest"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте рост культур с сезоном и возможностью прервать игровую сессию.",
+        "en": "Align crop growth with seasons and the ability to end a play session."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Stardew Valley",
+        "url": "https://store.steampowered.com/app/413150/Stardew_Valley/"
+      }
+    ]
+  },
+  "activity-simulators--t128": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Готовка, рецепты и работа кухни",
+      "en": "Cooking, recipes and kitchen work"
+    },
+    "description": {
+      "ru": "Кухня превращает ингредиенты в заказ через зависимые операции, заставляя согласовывать готовность компонентов и доступность рабочего места.",
+      "en": "Kitchens transform ingredients into orders through dependent steps, requiring aligned component readiness and workstation availability."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-overcooked2-08.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Overcooked! 2",
+      "sourceUrl": "https://store.steampowered.com/app/728880/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/ss_a87a245229d8196f25301685d991467412e9fef8.1920x1080.jpg?t=1789548883",
+      "credit": "Ghost Town Games Ltd. / Team17 / Team17",
+      "rights": "© Ghost Town Games Ltd. / Team17 / Team17. All rights reserved.",
+      "caption": {
+        "ru": "Заказы, рабочие места и таймер общей кухни",
+        "en": "Orders, workstations and a shared kitchen timer"
+      },
+      "alt": {
+        "ru": "Заказы, рабочие места и таймер общей кухни",
+        "en": "Orders, workstations and a shared kitchen timer"
+      },
+      "markers": [
+        {
+          "x": 13,
+          "y": 7,
+          "label": {
+            "ru": "Заказы показывают нужные блюда и ингредиенты",
+            "en": "Orders show required dishes and ingredients"
+          }
+        },
+        {
+          "x": 48,
+          "y": 34,
+          "label": {
+            "ru": "Плиты и тарелки образуют цепочку приготовления",
+            "en": "Stoves and plates form a preparation chain"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Делайте зависимости рецепта и занятость рабочих мест видимыми всей команде.",
+        "en": "Make recipe dependencies and workstation availability visible to the whole team."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Overcooked! 2",
+        "url": "https://store.steampowered.com/app/728880/"
+      }
+    ]
+  },
+  "activity-simulators--t129": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Рыбалка, охота и добывающие промыслы",
+      "en": "Fishing, hunting and harvesting trades"
+    },
+    "description": {
+      "ru": "Добывающий промысел сочетает выбор места и инструмента с чтением поведения цели и моментом извлечения ресурса.",
+      "en": "Harvesting trades combine site and tool choices with reading target behavior and timing resource collection."
+    },
+    "image": {
+      "src": "images/mechanics/spiritfarer-fishing.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 338,
+        "y": 263,
+        "width": 825,
+        "height": 547
+      },
+      "game": "Spiritfarer",
+      "sourceUrl": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/",
+      "originalUrl": "https://thunderlotusgames.com/wp-content/uploads/2023/10/Spiritfarer-SCREENSHOTS-01.jpg",
+      "credit": "Thunder Lotus",
+      "rights": "© Thunder Lotus. All rights reserved.",
+      "caption": {
+        "ru": "Ловля рыбы с борта корабля",
+        "en": "Fishing from the ship"
+      },
+      "alt": {
+        "ru": "Spiritfarer: Стелла сидит с удочкой на краю корабля, леска уходит в воду; рядом находится кот.",
+        "en": "Spiritfarer: Stella fishes from the edge of her ship; the line reaches the water and her cat sits nearby."
+      },
+      "markers": [
+        {
+          "x": 57,
+          "y": 59,
+          "label": {
+            "ru": "Рыбак и удочка на борту",
+            "en": "Angler and rod aboard the ship"
+          }
+        },
+        {
+          "x": 32,
+          "y": 92,
+          "label": {
+            "ru": "Леска уходит в воду",
+            "en": "The line reaches the water"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте сигнал поклёвки и перегрузку снасти несколькими видами обратной связи.",
+        "en": "Distinguish bites from line overload through more than one feedback channel."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Spiritfarer",
+        "url": "https://thunderlotusgames.com/press-kits/spiritfarer-press-kit/"
+      }
+    ]
+  },
+  "activity-simulators--t131": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Уборка, сортировка и восстановление",
+      "en": "Cleaning, sorting and restoration"
+    },
+    "description": {
+      "ru": "Восстановление переводит объект из загрязнённого или повреждённого состояния в упорядоченное через выбор подходящего инструмента и области работы.",
+      "en": "Restoration turns dirty or damaged objects into ordered states through suitable tools and work-area selection."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-powerwash-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "PowerWash Simulator",
+      "sourceUrl": "https://store.steampowered.com/app/1290000/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1290000/ss_8782c713c59761ebaacabb214672655a1599ce79.1920x1080.jpg?t=1780392261",
+      "credit": "FuturLab / FuturLab",
+      "rights": "© FuturLab / FuturLab. All rights reserved.",
+      "caption": {
+        "ru": "Струя воды очищает загрязнённый фургон",
+        "en": "A water jet cleans a dirty van"
+      },
+      "alt": {
+        "ru": "Струя воды очищает загрязнённый фургон",
+        "en": "A water jet cleans a dirty van"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 58,
+          "label": {
+            "ru": "Граница между очищенной и грязной поверхностью",
+            "en": "Boundary between clean and dirty surfaces"
+          }
+        },
+        {
+          "x": 7,
+          "y": 10,
+          "label": {
+            "ru": "Счётчик показывает 11% выполненной очистки",
+            "en": "The counter shows cleaning is 11% complete"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте оставшиеся участки и объясняйте соответствие инструмента поверхности.",
+        "en": "Show remaining patches and explain which tool suits the surface."
+      }
+    ],
+    "examples": [
+      {
+        "title": "PowerWash Simulator",
+        "url": "https://store.steampowered.com/app/1290000/"
+      }
+    ]
+  },
+  "activity-simulators--t132": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Строительство, земляные работы и техника",
+      "en": "Construction, earthmoving and machinery"
+    },
+    "description": {
+      "ru": "Работа техникой согласует положение машины, инструмент и последовательность перемещения материала для достижения заданной формы участка.",
+      "en": "Machinery work coordinates vehicle placement, tools and material movement to achieve a target site shape."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-construction-simulator-06.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Construction Simulator",
+      "sourceUrl": "https://store.steampowered.com/app/1273400/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1273400/ss_238ba42d58093e77e2c846c2be6f2416de5110d6.1920x1080.jpg?t=1784210925",
+      "credit": "weltenbauer. Software Entwicklung GmbH / astragon Entertainment",
+      "rights": "© weltenbauer. Software Entwicklung GmbH / astragon Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Экскаватор формирует выемку на строительной площадке",
+        "en": "An excavator shapes a trench at a construction site"
+      },
+      "alt": {
+        "ru": "Экскаватор формирует выемку на строительной площадке",
+        "en": "An excavator shapes a trench at a construction site"
+      },
+      "markers": [
+        {
+          "x": 22,
+          "y": 70,
+          "label": {
+            "ru": "Ковш работает с грунтом в выемке",
+            "en": "The bucket works the soil inside the trench"
+          }
+        },
+        {
+          "x": 72,
+          "y": 56,
+          "label": {
+            "ru": "Положение гусеничной базы задаёт доступ инструмента",
+            "en": "The tracked base position determines tool access"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте результат с положением машины, рабочим объёмом и порядком операций.",
+        "en": "Connect the result to machine position, work volume and operation order."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Construction Simulator",
+        "url": "https://store.steampowered.com/app/1273400/"
+      }
+    ]
+  },
+  "activity-simulators--t133": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Медицина, спасение и аварийные службы",
+      "en": "Medicine, rescue and emergency services"
+    },
+    "description": {
+      "ru": "Игровая спасательная процедура требует определить состояние, выбрать ограниченное средство и выполнить действия в зависимости от результата.",
+      "en": "A game rescue procedure requires identifying a state, choosing limited equipment and acting according to the result."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-rimworld-00.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "RimWorld",
+      "sourceUrl": "https://store.steampowered.com/app/294100/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/80e383ef19353058791efe17a6485849246c9c17/ss_80e383ef19353058791efe17a6485849246c9c17.1920x1080.jpg?t=1782756789",
+      "credit": "Ludeon Studios / Ludeon Studios",
+      "rights": "© Ludeon Studios / Ludeon Studios. All rights reserved.",
+      "caption": {
+        "ru": "Игровая панель здоровья показывает повреждения колониста",
+        "en": "A game health panel shows a colonist’s injuries"
+      },
+      "alt": {
+        "ru": "Игровая панель здоровья показывает повреждения колониста",
+        "en": "A game health panel shows a colonist’s injuries"
+      },
+      "markers": [
+        {
+          "x": 26,
+          "y": 44,
+          "label": {
+            "ru": "Список повреждённых частей тела и состояний",
+            "en": "List of affected body parts and conditions"
+          }
+        },
+        {
+          "x": 9,
+          "y": 46,
+          "label": {
+            "ru": "Разрешение на медицинскую помощь",
+            "en": "Permission to receive medical care"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "В игровой процедуре показывайте состояние, выбранное средство и результат помощи.",
+        "en": "In a game procedure, show the condition, selected aid and treatment result."
+      }
+    ],
+    "examples": [
+      {
+        "title": "RimWorld",
+        "url": "https://store.steampowered.com/app/294100/"
+      }
+    ]
+  },
+  "activity-simulators--t134": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Расследование технических происшествий",
+      "en": "Technical incident investigation"
+    },
+    "description": {
+      "ru": "Техническое расследование сопоставляет журналы, симптомы и состояние компонентов, чтобы отличить первичную причину от последующих отказов.",
+      "en": "Technical investigation compares logs, symptoms and component states to distinguish root causes from subsequent failures."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-car-mechanic2021-01.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Car Mechanic Simulator 2021",
+      "sourceUrl": "https://store.steampowered.com/app/1190000/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1190000/ss_640ae3f1f1638aa40d95b561dd04d89366fa9ddd.1920x1080.jpg?t=1792592913",
+      "credit": "Red Dot Games / PlayWay S.A.",
+      "rights": "© Red Dot Games / PlayWay S.A.. All rights reserved.",
+      "caption": {
+        "ru": "Осмотр выделяет состояние отдельных деталей",
+        "en": "Inspection highlights the condition of individual parts"
+      },
+      "alt": {
+        "ru": "Осмотр выделяет состояние отдельных деталей",
+        "en": "Inspection highlights the condition of individual parts"
+      },
+      "markers": [
+        {
+          "x": 52,
+          "y": 40,
+          "label": {
+            "ru": "Выбран впускной коллектор двигателя",
+            "en": "The engine’s intake manifold is selected"
+          }
+        },
+        {
+          "x": 47,
+          "y": 26,
+          "label": {
+            "ru": "Соседние детали показаны цветовым выделением",
+            "en": "Nearby parts are highlighted with colors"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Позволяйте проверить гипотезу о неисправности до замены всех деталей подряд.",
+        "en": "Let players test a fault hypothesis before replacing every component."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Car Mechanic Simulator 2021",
+        "url": "https://store.steampowered.com/app/1190000/"
+      }
+    ]
+  },
+  "activity-simulators--t135": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Проверка документов и инспекция",
+      "en": "Document inspection and control"
+    },
+    "description": {
+      "ru": "Инспекция сравнивает предъявленные сведения с действующими игровыми требованиями, разрешая пропуск, запрос уточнения или отказ.",
+      "en": "Inspection compares submitted information with current in-game requirements to permit entry, seek clarification or refuse."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-papers-please-05.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Papers, Please",
+      "sourceUrl": "https://store.steampowered.com/app/239030/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/ss_6c095a8ff86f9ebf8f796d23b1186c176fd21991.1920x1080.jpg?t=1678266428",
+      "credit": "Lucas Pope / 3909",
+      "rights": "© Lucas Pope / 3909. All rights reserved.",
+      "caption": {
+        "ru": "Фотография сопоставлена с перечнем разыскиваемых",
+        "en": "An ID photo is compared with a wanted list"
+      },
+      "alt": {
+        "ru": "Фотография сопоставлена с перечнем разыскиваемых",
+        "en": "An ID photo is compared with a wanted list"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 63,
+          "label": {
+            "ru": "Интерфейс отмечает обнаруженное противоречие",
+            "en": "The interface marks a detected discrepancy"
+          }
+        },
+        {
+          "x": 26,
+          "y": 76,
+          "label": {
+            "ru": "Допрос позволяет запросить объяснение",
+            "en": "Interrogation requests an explanation"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте сравниваемые поля и конкретное правило, которое они нарушают.",
+        "en": "Show the compared fields and the exact rule they violate."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Papers, Please",
+        "url": "https://store.steampowered.com/app/239030/"
+      }
+    ]
+  },
+  "activity-simulators--t136": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Доставка и диспетчеризация",
+      "en": "Delivery and dispatch"
+    },
+    "description": {
+      "ru": "Доставка связывает последовательность адресов с вместимостью, сроками и состоянием заказа, превращая путь в задачу обслуживания.",
+      "en": "Delivery connects address order to capacity, deadlines and order condition, turning routing into a service problem."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-eurotruck2-07.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Euro Truck Simulator 2",
+      "sourceUrl": "https://store.steampowered.com/app/227300/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/5f10a971137a5375cf8a4402dec2f9befbb84ddd/ss_5f10a971137a5375cf8a4402dec2f9befbb84ddd.1920x1080.jpg?t=1792055307",
+      "credit": "SCS Software / SCS Software",
+      "rights": "© SCS Software / SCS Software. All rights reserved.",
+      "caption": {
+        "ru": "Логистическая карта связывает города, компании и грузы",
+        "en": "A logistics map connects cities, companies and cargo"
+      },
+      "alt": {
+        "ru": "Логистическая карта связывает города, компании и грузы",
+        "en": "A logistics map connects cities, companies and cargo"
+      },
+      "markers": [
+        {
+          "x": 22,
+          "y": 17,
+          "label": {
+            "ru": "Фильтр компаний помогает искать места обслуживания",
+            "en": "The company filter helps find service locations"
+          }
+        },
+        {
+          "x": 82,
+          "y": 42,
+          "label": {
+            "ru": "Берлин выбран на карте логистики",
+            "en": "Berlin is selected on the logistics map"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте ограничения груза и сроков до включения адреса в маршрут.",
+        "en": "Show cargo and deadline constraints before adding a stop to the route."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Euro Truck Simulator 2",
+        "url": "https://store.steampowered.com/app/227300/"
+      }
+    ]
+  },
+  "activity-simulators--t137": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Эксперименты и работа с приборами",
+      "en": "Experiments and scientific instruments"
+    },
+    "description": {
+      "ru": "Эксперимент меняет выбранную переменную, измеряет результат и сравнивает его с ожиданием, сохраняя условия проверки.",
+      "en": "An experiment changes a selected variable, measures results and compares them with expectations while preserving test conditions."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-in-other-waters-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "In Other Waters",
+      "sourceUrl": "https://store.steampowered.com/app/890720/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890720/ss_2d54e423db28949853e52bf48f49811248f9800b.1920x1080.jpg?t=1780960958",
+      "credit": "Jump Over The Age / Fellow Traveller",
+      "rights": "© Jump Over The Age / Fellow Traveller. All rights reserved.",
+      "caption": {
+        "ru": "Лаборатория анализирует найденный биологический образец",
+        "en": "The laboratory analyzes a collected biological sample"
+      },
+      "alt": {
+        "ru": "Лаборатория анализирует найденный биологический образец",
+        "en": "The laboratory analyzes a collected biological sample"
+      },
+      "markers": [
+        {
+          "x": 44,
+          "y": 51,
+          "label": {
+            "ru": "Анализ завершён: запись о виде обновлена",
+            "en": "Analysis complete: the species entry is updated"
+          }
+        },
+        {
+          "x": 56,
+          "y": 35,
+          "label": {
+            "ru": "Образцы хранятся в ячейках базы",
+            "en": "Samples are stored in the base’s slots"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Сохраняйте связь между образцом, выбранной процедурой и полученным наблюдением.",
+        "en": "Preserve the link between sample, chosen procedure and resulting observation."
+      }
+    ],
+    "examples": [
+      {
+        "title": "In Other Waters",
+        "url": "https://store.steampowered.com/app/890720/"
+      }
+    ]
+  },
+  "activity-simulators--t138": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Бизнес, офис и бюрократия",
+      "en": "Business, office and bureaucracy"
+    },
+    "description": {
+      "ru": "Офисная задача переводит документы и запросы через ограниченные полномочия, согласования и сроки, показывая цену организационных зависимостей.",
+      "en": "Office tasks move documents and requests through limited authority, approvals and deadlines to expose organizational dependencies."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-papers-please-06.webp",
+      "width": 1280,
+      "height": 720,
+      "game": "Papers, Please",
+      "sourceUrl": "https://store.steampowered.com/app/239030/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/ss_4a533fbcd53d15778d477d8417fb28f814e27210.1920x1080.jpg?t=1678266428",
+      "credit": "Lucas Pope / 3909",
+      "rights": "© Lucas Pope / 3909. All rights reserved.",
+      "caption": {
+        "ru": "Рабочий день отражается в доходах и расходах семьи",
+        "en": "The working day affects the family’s income and expenses"
+      },
+      "alt": {
+        "ru": "Рабочий день отражается в доходах и расходах семьи",
+        "en": "The working day affects the family’s income and expenses"
+      },
+      "markers": [
+        {
+          "x": 51,
+          "y": 57,
+          "label": {
+            "ru": "Сводка учитывает зарплату, жильё, еду и отопление",
+            "en": "The summary accounts for wages, rent, food and heat"
+          }
+        },
+        {
+          "x": 86,
+          "y": 39,
+          "label": {
+            "ru": "Панель показывает состояние членов семьи",
+            "en": "The panel shows family members’ conditions"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Связывайте бумажные процедуры с понятными ресурсами и последствиями решений.",
+        "en": "Connect paperwork procedures to understandable resources and decision consequences."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Papers, Please",
+        "url": "https://store.steampowered.com/app/239030/"
+      }
+    ]
+  },
+  "stealth-infiltration--t031": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Видимость, шум и обнаружение",
+      "en": "Visibility, noise and detection"
+    },
+    "description": {
+      "ru": "Обнаружение зависит от наблюдаемого сигнала, препятствий и внимания наблюдателя, поэтому игрок управляет заметностью своих действий.",
+      "en": "Detection depends on observable signals, obstacles and observer attention, letting players manage the visibility of their actions."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-shadow-tactics-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shadow Tactics: Blades of the Shogun",
+      "sourceUrl": "https://store.steampowered.com/app/418240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418240/ss_613e55b14d286aa7b57ccb99a879a10c6d03a47d.1920x1080.jpg?t=1789475696",
+      "credit": "Mimimi Games / Daedalic Entertainment",
+      "rights": "© Mimimi Games / Daedalic Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Поле зрения патруля видно между укрытиями",
+        "en": "A patrol’s sight cone is visible between cover"
+      },
+      "alt": {
+        "ru": "Поле зрения патруля видно между укрытиями",
+        "en": "A patrol’s sight cone is visible between cover"
+      },
+      "markers": [
+        {
+          "x": 60,
+          "y": 46,
+          "label": {
+            "ru": "Зелёная область показывает поле зрения охранника",
+            "en": "The green area shows a guard’s sight cone"
+          }
+        },
+        {
+          "x": 42,
+          "y": 53,
+          "label": {
+            "ru": "Стена отделяет скрытого героя от наблюдателя",
+            "en": "A wall separates the hidden character from the observer"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Согласуйте видимые границы обнаружения с реальной проверкой видимости и шума.",
+        "en": "Keep visible detection boundaries consistent with actual visibility and noise checks."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shadow Tactics: Blades of the Shogun",
+        "url": "https://store.steampowered.com/app/418240/"
+      }
+    ]
+  },
+  "stealth-infiltration--t032": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Подозрение, тревога и поиск",
+      "en": "Suspicion, alerts and searching"
+    },
+    "description": {
+      "ru": "Подозрение переводит наблюдателя от обычного поведения к проверке, тревоге и поиску последней известной цели.",
+      "en": "Suspicion moves observers from routine behavior through investigation, alerts and searching for a last known target."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-surveillance-cameras.webp",
+      "width": 900,
+      "height": 499,
+      "game": "Deus Ex",
+      "sourceUrl": "https://gamemechanics.org/patterns/surveillance-cameras",
+      "originalUrl": "https://cdn.gamemechanics.org/deus_ex_surveillance_camera.jpg",
+      "credit": "Ion Storm; image via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Камера над дверью контролирует подход",
+        "en": "A camera above a door watches the approach"
+      },
+      "alt": {
+        "ru": "В Deus Ex над проходом установлена камера с зелёным индикатором.",
+        "en": "A camera with a green indicator is mounted above a passage in Deus Ex."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 28,
+          "label": {
+            "ru": "Объектив камеры над проходом",
+            "en": "Camera lens above the passage"
+          }
+        },
+        {
+          "x": 50,
+          "y": 73,
+          "label": {
+            "ru": "Контролируемый маршрут у двери",
+            "en": "Watched route beside the door"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте замеченный сигнал, подтверждённую тревогу и поиск последней позиции.",
+        "en": "Distinguish a noticed signal, confirmed alarm and search of the last known position."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Deus Ex",
+        "url": "https://gamemechanics.org/patterns/surveillance-cameras"
+      }
+    ]
+  },
+  "stealth-infiltration--t033": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Укрытие тела и следов",
+      "en": "Hiding bodies and traces"
+    },
+    "description": {
+      "ru": "Сокрытие тел и следов задерживает обнаружение совершённого действия, но требует времени и оставляет новые уязвимости.",
+      "en": "Hiding bodies and traces delays discovery of an action but costs time and can create new vulnerabilities."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-hiding-bodies.webp",
+      "width": 600,
+      "height": 334,
+      "game": "Hitman: Absolution",
+      "sourceUrl": "https://gamemechanics.org/patterns/hiding-bodies",
+      "originalUrl": "https://cdn.gamemechanics.org/hitman_absolution_hide_body.webm",
+      "sourceFrameSeconds": 5.27,
+      "credit": "IO Interactive; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Тело помещают в контейнер",
+        "en": "A body is placed in a container"
+      },
+      "alt": {
+        "ru": "В Hitman: Absolution Агент 47 поднимает тело над краем открытого контейнера.",
+        "en": "Agent 47 lifts a body over the rim of an open container in Hitman: Absolution."
+      },
+      "markers": [
+        {
+          "x": 73,
+          "y": 35,
+          "label": {
+            "ru": "Тело, помещаемое внутрь",
+            "en": "Body being placed inside"
+          }
+        },
+        {
+          "x": 77,
+          "y": 67,
+          "label": {
+            "ru": "Контейнер для сокрытия",
+            "en": "Hiding container"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте, кто может обнаружить след и сколько времени требует его сокрытие.",
+        "en": "Show who can discover evidence and how long hiding it takes."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hitman: Absolution",
+        "url": "https://gamemechanics.org/patterns/hiding-bodies"
+      }
+    ]
+  },
+  "stealth-infiltration--t035": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Приманки, отвлечения и саботаж",
+      "en": "Lures, distractions and sabotage"
+    },
+    "description": {
+      "ru": "Отвлечение меняет приоритет наблюдателя, а саботаж перестраивает среду так, чтобы подготовить дальнейшее скрытое действие.",
+      "en": "Distraction changes observer priorities while sabotage changes the environment to prepare a later covert action."
+    },
+    "image": {
+      "src": "images/mechanics/interaction-shooting-out-lights.webp",
+      "width": 600,
+      "height": 336,
+      "game": "Tom Clancy’s Splinter Cell",
+      "sourceUrl": "https://gamemechanics.org/patterns/shooting-out-lights",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/splinter_cell_shooting_out_lights.webm",
+      "sourceFrameSeconds": 4.01,
+      "credit": "Ubisoft Montréal; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. Visible source watermarks preserved. All rights reserved; excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Прицеливание в потолочный светильник",
+        "en": "Aiming at a ceiling light"
+      },
+      "alt": {
+        "ru": "В Splinter Cell Сэм направляет пистолет на потолочный светильник; справа виден индикатор освещённости.",
+        "en": "Sam aims a pistol at a ceiling light in Splinter Cell, with the visibility meter on the right."
+      },
+      "markers": [
+        {
+          "x": 58,
+          "y": 23,
+          "label": {
+            "ru": "Светильник как разрушаемая цель",
+            "en": "Light fixture as a breakable target"
+          }
+        },
+        {
+          "x": 93,
+          "y": 72,
+          "label": {
+            "ru": "Индикатор освещённости героя",
+            "en": "The hero’s visibility meter"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Давайте отвлечению понятный радиус, длительность и реакцию наблюдателя.",
+        "en": "Give distractions a readable range, duration and observer response."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Tom Clancy’s Splinter Cell",
+        "url": "https://gamemechanics.org/patterns/shooting-out-lights"
+      }
+    ]
+  },
+  "stealth-infiltration--t036": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Слежка и контрнаблюдение",
+      "en": "Surveillance and counter-surveillance"
+    },
+    "description": {
+      "ru": "Слежка сохраняет контакт с целью, разведка собирает её привычки, а контрнаблюдение проверяет, не раскрыт ли сам наблюдатель.",
+      "en": "Tailing maintains contact, reconnaissance learns routines and counter-surveillance checks whether the observer has been exposed."
+    },
+    "image": {
+      "src": "images/mechanics/combat-recon-drone.webp",
+      "width": 500,
+      "height": 276,
+      "game": "Call of Duty: Warzone (2022)",
+      "sourceUrl": "https://gamemechanics.org/patterns/recon-drone",
+      "originalUrl": "https://cdn.gamemechanics.org/webm/cod_drone_s.webm",
+      "sourceFrameSeconds": 8.07,
+      "credit": "Activision; frame from clip via GameMechanics.org",
+      "rights": "Game imagery © its respective rights holders. Source host: GameMechanics.org. All rights reserved; excluded from the portal’s MIT and CC BY 4.0 licenses.",
+      "caption": {
+        "ru": "Обзор квартала с камеры дрона",
+        "en": "A drone-camera view over a city block"
+      },
+      "alt": {
+        "ru": "В Call of Duty: Warzone камера дрона показывает крыши; в интерфейсе видны заряд батареи и состояние аппарата.",
+        "en": "A drone camera overlooks rooftops in Call of Duty: Warzone, with battery and device status in its interface."
+      },
+      "markers": [
+        {
+          "x": 54,
+          "y": 35,
+          "label": {
+            "ru": "Отмеченная точка среди зданий",
+            "en": "A marked location among the buildings"
+          }
+        },
+        {
+          "x": 25,
+          "y": 81,
+          "label": {
+            "ru": "Индикатор батареи дрона",
+            "en": "Drone battery indicator"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Уравновешивайте полученные сведения риском раскрыть позицию наблюдателя.",
+        "en": "Balance acquired information against the risk of exposing the observer."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Call of Duty: Warzone (2022)",
+        "url": "https://gamemechanics.org/patterns/recon-drone"
+      }
+    ]
+  },
+  "stealth-infiltration--t037": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Ограбления и синхронное проникновение",
+      "en": "Heists and coordinated infiltration"
+    },
+    "description": {
+      "ru": "Совместное проникновение распределяет зависимые действия по ролям и синхронизирует их в ограниченное окно доступа.",
+      "en": "Coordinated infiltration assigns dependent actions to roles and synchronizes them within a limited access window."
+    },
+    "image": {
+      "src": "images/mechanics/strategy-shadow-tactics-05.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "Shadow Tactics: Blades of the Shogun",
+      "sourceUrl": "https://store.steampowered.com/app/418240/",
+      "originalUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418240/ss_613e55b14d286aa7b57ccb99a879a10c6d03a47d.1920x1080.jpg?t=1789475696",
+      "credit": "Mimimi Games / Daedalic Entertainment",
+      "rights": "© Mimimi Games / Daedalic Entertainment. All rights reserved.",
+      "caption": {
+        "ru": "Несколько героев занимают позиции вокруг патруля",
+        "en": "Several characters take positions around a patrol"
+      },
+      "alt": {
+        "ru": "Несколько героев занимают позиции вокруг патруля",
+        "en": "Several characters take positions around a patrol"
+      },
+      "markers": [
+        {
+          "x": 41,
+          "y": 33,
+          "label": {
+            "ru": "Один из героев скрыт за зданием",
+            "en": "A squad member is hidden behind a building"
+          }
+        },
+        {
+          "x": 80,
+          "y": 78,
+          "label": {
+            "ru": "Второй герой занимает отдельную позицию",
+            "en": "Another squad member holds a separate position"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Показывайте зависимости ролей и позволяйте согласовать момент выполнения.",
+        "en": "Show dependencies between roles and allow the execution moment to be coordinated."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Shadow Tactics: Blades of the Shogun",
+        "url": "https://store.steampowered.com/app/418240/"
+      }
+    ]
+  },
+  "stealth-infiltration--t038": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Побег, погоня и уход от преследования",
+      "en": "Escape, chases and evading pursuit"
+    },
+    "description": {
+      "ru": "Побег разрывает контакт с преследователем через маршрут, препятствия и смену заметности, а не только через скорость бега.",
+      "en": "Escape breaks pursuer contact through routes, obstacles and changed visibility rather than running speed alone."
+    },
+    "image": {
+      "src": "images/mechanics/hunt-extraction-guide.webp",
+      "width": 1440,
+      "height": 810,
+      "crop": {
+        "x": 240,
+        "y": 0,
+        "width": 960,
+        "height": 600
+      },
+      "game": "Hunt: Showdown 1896",
+      "sourceUrl": "https://www.huntshowdown.com/player-guide/en_US",
+      "originalUrl": "https://www.huntshowdown.com/files/playerguide/landing/Phase2_Step6_poster2448.jpg",
+      "credit": "Crytek; extraction screenshot from official player guide",
+      "rights": "Game imagery © its respective rights holders. Screenshot supplied in the official guide; all rights reserved. Excluded from MIT and CC BY 4.0.",
+      "caption": {
+        "ru": "Эвакуация завершает рискованный поход",
+        "en": "Extraction ends a dangerous expedition"
+      },
+      "alt": {
+        "ru": "Эвакуация завершает рискованный поход",
+        "en": "Extraction ends a dangerous expedition"
+      },
+      "markers": [
+        {
+          "x": 50,
+          "y": 36,
+          "label": {
+            "ru": "Отсчёт показывает время до успешной эвакуации",
+            "en": "The countdown shows the time until successful extraction"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Различайте разрыв контакта с врагом и окончательный безопасный выход из зоны.",
+        "en": "Distinguish breaking contact with an enemy from reaching a safe exit."
+      }
+    ],
+    "examples": [
+      {
+        "title": "Hunt: Showdown 1896",
+        "url": "https://www.huntshowdown.com/player-guide/en_US"
+      }
+    ]
+  },
+  "rpg-grind--weapon-proficiency": {
+    "updatedAt": "2026-10-22",
+    "title": {
+      "ru": "Мастерство владения оружием",
+      "en": "Weapon proficiency"
+    },
+    "description": {
+      "ru": "Использование выбранного типа оружия развивает отдельную шкалу мастерства и открывает связанные приёмы.",
+      "en": "Using a chosen weapon type advances a separate proficiency track and unlocks related techniques."
+    },
+    "image": {
+      "src": "images/mechanics/progression-newworld-weapon.webp",
+      "width": 1440,
+      "height": 810,
+      "game": "New World (2020 preview)",
+      "sourceUrl": "https://www.newworld.com/en-us/news/articles/character-progression",
+      "originalUrl": "https://images.ctfassets.net/j95d1p8hsuun/6sJgORarahITXgwlyyVzOv/2d141ff0646e5dab6da97aa67c61e4ae/weapontree-main.jpg",
+      "credit": "Amazon Games; 2020 character progression preview",
+      "rights": "© Amazon Games. All rights reserved. Historical interface example.",
+      "caption": {
+        "ru": "Мастерство топора открывает связанные умения",
+        "en": "Hatchet mastery unlocks related abilities"
+      },
+      "alt": {
+        "ru": "Мастерство топора открывает связанные умения",
+        "en": "Hatchet mastery unlocks related abilities"
+      },
+      "markers": [
+        {
+          "x": 21,
+          "y": 44,
+          "label": {
+            "ru": "Отдельная шкала мастерства топора: уровень 16 из 20",
+            "en": "The hatchet has a separate mastery track: level 16 of 20"
+          }
+        },
+        {
+          "x": 73,
+          "y": 37,
+          "label": {
+            "ru": "Ветки Berserker и Throwing содержат связанные умения",
+            "en": "Berserker and Throwing trees contain related abilities"
+          }
+        }
+      ]
+    },
+    "tips": [
+      {
+        "ru": "Развивайте мастерство через осмысленное применение оружия, а не пустые повторения.",
+        "en": "Advance mastery through meaningful weapon use rather than empty repetition."
+      }
+    ],
+    "examples": [
+      {
+        "title": "New World (2020 preview)",
+        "url": "https://www.newworld.com/en-us/news/articles/character-progression"
+      }
+    ]
   }
 }
