@@ -316,3 +316,30 @@ on the Official Factorio Wiki. Game graphics remain © Wube Software; the record
 creator and source are credited in card metadata. The original animation and
 source videos are not shipped. These files use the same WebP budgets and retain
 third-party rights outside the portal's MIT and CC BY 4.0 licenses.
+
+## Learning, drawing and device interfaces
+
+The `interface-*.webp` additions use the publishers' Steam screenshots for Chicory,
+Crayon Physics Deluxe, Draw a Stickman: EPIC 2, Drawful 2, Hacknet, The Jackbox Party
+Pack 6, Mini Metro, Orwell, Passpartout, PC Building Simulator, Scribble It! and The
+Unfinished Swan. `interface-pc-building-career.webp` is the 5-second frame of the
+publisher's career-mode demonstration, showing an actual order and its criteria.
+These retain their creators' rights and are excluded from the portal licenses.
+
+The Duolingo exercise images come from the official articles recorded in each
+card. The two Super captures show the signed-out public subscription page on
+2026-10-22; no account, trial or payment was created. Human Benchmark captures show
+actual unsigned test sessions. Their stored derivatives omit advertising outside
+the application header and task area; the task itself is unaltered. CmapTools uses
+the screenshot on PDF page 25 of IHMC's official help, preserving the application
+window and the labeled proposition. GitHub's suggested-change screenshot comes
+from its official review documentation and preserves the code-review context.
+
+`learning-krita-onion-skin.webp` reproduces the Krita documentation's
+`Introduction_to_animation_10.png`, showing adjacent drawing poses through onion
+skinning. Credit: Krita documentation contributors. Source:
+<https://docs.krita.org/en/user_manual/animation.html>. The documentation specifies
+GNU Free Documentation License 1.3 or later; a complete copy is included in
+[`krita-documentation-license.txt`](krita-documentation-license.txt). The image was
+converted to WebP without changing its content. Its own license is retained and
+is separate from the portal's MIT and CC BY 4.0 licenses.
