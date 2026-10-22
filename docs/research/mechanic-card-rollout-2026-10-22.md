@@ -42,6 +42,9 @@ first-prototype value; it is not a measured market-popularity ranking.
   exported metadata. Shared component tests additionally cover keyboard, touch,
   no-JavaScript access, theme and layout breakpoints.
 - `npm run format:check` passed.
+- Linux CI exposed an 11-pixel overflow in the Russian hybrid-camera card at
+  298×314. Its title and definition were shortened in both languages; canonical
+  verification and both affected browser cases passed again before republishing.
 - `node scripts/mechanic-card-report.mjs --require-complete` reports
   1268/1268 illustrated records and zero remaining.
 
