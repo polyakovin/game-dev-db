@@ -47,10 +47,10 @@ Curated resource cards use these connections to show where a source is used.
 
 ## Routes and discovery
 
-For the Search and discovery pilot, optional `attributes.preview` contains the
-compact illustrated presentation at the same canonical URL. The full record
-sections remain in machine formats and catalogs; other focused pages still
-render all sections. See [the preview contract](mechanic-previews.md).
+For every active canonical mechanic, `attributes.preview` contains the compact
+illustrated presentation at the same canonical URL. The full record sections
+remain in machine formats and catalogs. Archived mechanic records and other
+focused content types still render all sections. See [the preview contract](mechanic-previews.md).
 
 All routes are relative to the `/game-dev-db/` site root:
 

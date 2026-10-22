@@ -11,6 +11,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
 - Bilingual mechanic references for genres, puzzles, dialogue, drawing, investigation, children and education, RPG grind, engagement, electronic devices and physical input. Includes complete discussion catalogs and the attributed Boss Fight Atlas and Game Mechanics indexes; see [coverage](docs/research/discussion-mechanics.md).
+- Illustrated RU/EN cards for all 1268 active canonical mechanics: short definitions, contextual screenshot tooltips and compressed WebP images. Browse the [card library](https://polyakovin.github.io/game-dev-db/ru/mechanics/cards/).
 - Fourteen original game-design exercises, including NPC and progression capstones, with constraints, deliverables and checks in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.

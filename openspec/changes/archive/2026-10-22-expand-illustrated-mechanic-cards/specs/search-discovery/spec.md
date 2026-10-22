@@ -19,3 +19,7 @@ Every active canonical mechanic SHALL receive a concise RU/EN card with an inspe
 #### Scenario: Audit complete coverage
 - **WHEN** the rollout is marked complete
 - **THEN** every active canonical mechanic appears once in the production inventory and has an authored, validated bilingual illustrated card
+
+#### Scenario: Prevent coverage regression
+- **WHEN** an active canonical mechanic has no authored illustrated card
+- **THEN** the canonical content check fails with the missing coverage before publication

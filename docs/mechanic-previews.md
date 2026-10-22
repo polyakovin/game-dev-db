@@ -1,17 +1,17 @@
 # Illustrated mechanic cards
 
-Active canonical mechanics are being expanded from the reviewed Search and
-discovery pilot into illustrated cards at their existing focused URLs. Shared
+All 1268 active canonical mechanics have illustrated RU/EN cards at their
+existing focused URLs, using the reviewed Search and discovery layout. Shared
 placements link to one canonical card. `/ru/mechanics/cards/` and its English
 counterpart list authored cards in editorial priority order; the mechanics index
-highlights the first six. Other records retain their full reference view until
-their illustration and compact content have been checked.
+highlights the first six. Archived compatibility records retain their full
+reference view.
 
 `src/data/mechanic-card-order.json` covers every active canonical mechanic once.
 Its order reflects cross-genre usefulness and first-prototype value, not measured
-market popularity. Run `node scripts/mechanic-card-report.mjs` for the next pending
+market popularity. Run `node scripts/mechanic-card-report.mjs` to check pending
 records, `--json` for the exhaustive inventory and `--require-complete` for the
-final rollout gate. A reference page or queue entry does not count as an authored
+coverage gate, also run by `npm run check:content`. A reference page or queue entry does not count as an authored
 illustrated card. Archived compatibility records are excluded.
 
 `src/data/mechanic-previews.json` is keyed by canonical mechanic ID. Each entry

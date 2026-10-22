@@ -11,7 +11,7 @@
     "build": "node scripts/run-tool.mjs astro build",
     "preview": "node scripts/run-tool.mjs astro preview",
     "check": "node scripts/run-tool.mjs astro check",
-    "check:content": "node scripts/verify-content.mjs",
+    "check:content": "node scripts/verify-content.mjs && node scripts/mechanic-card-report.mjs --require-complete",
     "check:dist": "node scripts/verify-dist.mjs",
     "check:discovery": "node scripts/audit-discovery.mjs",
     "spec": "node scripts/run-tool.mjs openspec",

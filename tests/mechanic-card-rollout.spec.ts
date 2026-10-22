@@ -24,6 +24,7 @@ test('production order covers every active canonical mechanic exactly once', () 
       .length,
   );
   expect(queue.filter((entry) => entry.illustrated)).toHaveLength(ids.length);
+  expect(queue.filter((entry) => !entry.illustrated)).toEqual([]);
   const broken = structuredClone(mechanicCardOrder);
   broken.order.push(broken.order[0]);
   broken.order.splice(1, 1);
