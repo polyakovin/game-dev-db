@@ -345,12 +345,6 @@ main:focus {
 .footer-byline a {
   color: var(--ink);
 }
-.footer-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 16px;
-}
-.footer-contacts a,
 .footer-contribute a {
   display: inline-flex;
   align-items: center;
