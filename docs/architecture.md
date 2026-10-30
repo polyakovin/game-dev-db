@@ -90,6 +90,7 @@ Game jams use `src/data/jams.json`. Shared pure time helpers enforce exclusive s
 - **Appearance:** `src/styles/theme.css` owns semantic light/dark colors, including the system-aware CSS fallback and light print palette. `ThemeHead.astro` resolves the namespaced `game-dev-db:theme` local preference before body rendering and handles system/storage changes defensively. `ThemeSwitch.astro` exposes localized system/light/dark buttons after initialization. Shared and standalone pages load the same palette; keep presentation and SVG colors on its tokens.
 - **Exports:** build-time transformations of the collection. Preserve identifiers, language, sources, canonical URLs, and license context.
 - **Deployment:** GitHub Actions builds and publishes the generated artifact to GitHub Pages. GitHub Pages supplies HTTPS and static hosting.
+- **Analytics:** `CloudflareAnalytics.astro` adds the official deferred beacon to production RU/EN pages and the standalone 404, using the owner's existing `polyakovin.github.io` property. Development and the immediate root redirect omit it. Reading, discovery and machine exports remain independent of the beacon. See [Web Analytics operations](web-analytics.md).
 
 ## Compatibility and deployment
 

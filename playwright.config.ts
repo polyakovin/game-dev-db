@@ -17,6 +17,12 @@ export default defineConfig({
     : [['list'], ['html', { open: 'never' }]],
   use: {
     baseURL: origin,
+    // Keep production-preview tests from reporting local visits to Cloudflare.
+    launchOptions: {
+      args: [
+        '--host-resolver-rules=MAP static.cloudflareinsights.com ~NOTFOUND, MAP cloudflareinsights.com ~NOTFOUND',
+      ],
+    },
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },

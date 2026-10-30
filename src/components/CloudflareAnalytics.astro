@@ -1,0 +1,13 @@
+---
+// Public beacon token for the owner's existing polyakovin.github.io property.
+const beacon = { token: 'b37b07bb3a8f48c6b5f1c0b29adac199' };
+---
+
+{import.meta.env.PROD && (
+  <script
+    is:inline
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon={JSON.stringify(beacon)}
+  />
+)}

@@ -4,6 +4,7 @@ import Icon from '../components/Icon.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import ThemeHead from '../components/ThemeHead.astro';
 import ThemeSwitch from '../components/ThemeSwitch.astro';
+import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 import { path, absolute, REPO, ui, categories, type Locale } from '../lib/site';
 interface Props {
   lang: Locale;
@@ -223,6 +224,7 @@ const nav = [
       </main>
       {!compact && <SiteFooter lang={lang} />}
     </div>
+    <CloudflareAnalytics />
   </body>
 </html>
 <style is:global>

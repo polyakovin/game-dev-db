@@ -2,7 +2,8 @@
 
 The portal can be crawled and retrieved without JavaScript, accounts or an API key.
 Technical accessibility does not establish search indexing or AI citations.
-The site does not integrate external analytics, counters or tracking scripts.
+Production HTML includes the owner-authorized [Cloudflare Web Analytics beacon](web-analytics.md).
+Discovery metadata, reading and machine exports work independently of analytics.
 The public HTTP audit runs only when explicitly invoked; it does not collect visitor data.
 
 ## Public entry points
@@ -34,7 +35,7 @@ that its AI search features need no special AI files or schema:
 
 Connecting external webmaster accounts is outside this release. The following
 owner procedure is retained as a reference if that decision changes; none of
-these accounts, verification tags or analytics services is configured by this change.
+these accounts or verification tags is configured by the discovery change.
 
 Use the existing owner accounts. Do not create accounts, accept terms or claim
 verification on the owner's behalf without the required authenticated flow.

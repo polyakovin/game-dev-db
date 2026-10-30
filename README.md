@@ -72,6 +72,8 @@ use the shared search at `{lang}/search/`. See [the common content contract](doc
 
 The production site root is `https://polyakovin.github.io/game-dev-db/`. These are public files generated at build time, without an API key or server. Individual Markdown exports preserve lesson content and source metadata and add canonical URLs, attribution, and license fields to frontmatter. Read [the agent workflow](docs/agent-workflow.md) for attribution, language, and update guidance.
 
+Production HTML includes Cloudflare Web Analytics using the owner's existing hostname property. Local development omits the beacon; reading and machine exports work without it. See [analytics configuration and verification](docs/web-analytics.md).
+
 Game jams are available at [`ru/jams/`](https://polyakovin.github.io/game-dev-db/ru/jams/) and [`en/jams/`](https://polyakovin.github.io/game-dev-db/en/jams/). The browser hides events at their submission deadline. A daily verified deployment refreshes static snapshots; JSON consumers must filter `endsAt > now` at read time. New events remain curated editorial additions. See [the jam content contract](docs/jams-content.md).
 
 ## Contribute

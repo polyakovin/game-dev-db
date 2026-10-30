@@ -32,5 +32,5 @@
 - Code is MIT; original lessons and translations are CC BY 4.0. External resources retain their licenses. See `CONTENT-LICENSE.md`.
 - Never commit credentials, private messages, personal customer data, `.env`, service accounts, or payment information. Commit only sanitized examples.
 - External outreach, billing, spending, or publication beyond the authorized GitHub Pages scope requires explicit human authorization.
-- Do not connect external analytics services, visitor counters, or tracking scripts. Manual public-URL audits are allowed; webmaster account setup is outside the current release. See the 2026-10-20 decision.
+- The owner's 2026-10-30 request authorizes Cloudflare Web Analytics using the existing `polyakovin.github.io` property. Keep its beacon production-only and preserve analytics-independent reading and exports. Other analytics and webmaster account setup remain outside scope. See `docs/web-analytics.md` and `DECISIONS.md`.
 - Keep these instructions operational. Put design explanations in `docs/`, change contracts in OpenSpec, and dated decisions in the append-only `DECISIONS.md`.

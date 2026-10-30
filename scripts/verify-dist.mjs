@@ -175,6 +175,33 @@ for (const file of htmlFiles) {
     errors.push(`${relative}: html lang must be ru or en`);
   if (!$('title').text().trim())
     errors.push(`${relative}: page title is missing`);
+
+  const beacons = $('script[data-cf-beacon]');
+  if (relative === 'index.html') {
+    if (beacons.length)
+      errors.push(
+        `${relative}: immediate redirect must not report a page view`,
+      );
+  } else {
+    if (beacons.length !== 1)
+      errors.push(`${relative}: expected exactly one Cloudflare beacon`);
+    const beacon = beacons.first();
+    if (
+      beacon.attr('src') !==
+        'https://static.cloudflareinsights.com/beacon.min.js' ||
+      beacon.attr('defer') === undefined ||
+      beacon.attr('type') !== undefined ||
+      !beacon.closest('body').length
+    )
+      errors.push(`${relative}: expected the deferred classic beacon in body`);
+    try {
+      const config = JSON.parse(beacon.attr('data-cf-beacon') ?? 'null');
+      if (config?.token !== 'b37b07bb3a8f48c6b5f1c0b29adac199')
+        errors.push(`${relative}: unexpected Cloudflare analytics property`);
+    } catch {
+      errors.push(`${relative}: invalid Cloudflare beacon configuration`);
+    }
+  }
 }
 
 for (const required of [

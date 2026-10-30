@@ -44,12 +44,24 @@ The project SHALL provide a public-URL audit and paired RU/EN discovery question
 - **WHEN** the audit runs against the published site
 - **THEN** it checks entry points, sitemap and representative focused pages, records observed failures and exits unsuccessfully for broken required endpoints
 
-### Requirement: Discovery without visitor tracking
-Discovery improvements SHALL NOT connect external analytics services, visitor counters or tracking scripts. The public-URL audit SHALL run only when explicitly invoked and SHALL NOT collect visitor behavior. External webmaster accounts SHALL remain outside this release.
+### Requirement: Discovery independent of analytics
+Discovery metadata, content and machine exports SHALL work without analytics. Production content pages and the standalone 404 SHALL include one deferred Cloudflare Web Analytics beacon for `polyakovin.github.io`. Development and the root redirect SHALL omit it. Other analytics and webmaster accounts SHALL remain outside scope. Public-URL audits SHALL be explicit and SHALL NOT collect visitor behavior.
 
 #### Scenario: Read a focused page
-- **WHEN** a reader opens a focused page in either language
-- **THEN** its discovery metadata and machine formats work without an analytics integration or visitor tracking request
+- **WHEN** a reader opens a focused page in either language with JavaScript disabled or the Cloudflare script blocked
+- **THEN** its content, discovery metadata, links under `/game-dev-db/` and machine formats remain usable
+
+#### Scenario: Measure a published page
+- **WHEN** a reader opens a production RU/EN page or the standalone 404 page
+- **THEN** its HTML includes exactly one classic deferred script from `https://static.cloudflareinsights.com/beacon.min.js` with the configured public beacon token
+
+#### Scenario: Develop locally
+- **WHEN** a contributor opens the Astro development server
+- **THEN** no Cloudflare analytics beacon is included
+
+#### Scenario: Follow the root redirect
+- **WHEN** a reader opens `/game-dev-db/`
+- **THEN** the immediate language redirect has no beacon and its destination supplies the production beacon
 
 ### Requirement: Compact mechanic pilot
 The pilot SHALL keep its short RU/EN definition and marked real-game screenshot visible without scrolling or clipped text. Secondary content SHALL appear only when space permits; the smallest windows SHALL show only the title, definition and image with tooltips. The illustration SHALL use available space. Enlarged text SHALL keep natural flow; full attribution and content SHALL remain in metadata and machine exports. Other mechanics SHALL retain their current view.

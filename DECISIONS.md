@@ -35,3 +35,12 @@ with a dated record and explanation.
 - Decision: Publish static discovery pages, attributed exports, sitemap improvements and a manually invoked public-URL audit. Do not connect external analytics services, visitor counters or tracking scripts. External webmaster accounts are outside this release.
 - Rationale: Searchable public content and reliable retrieval can be improved without collecting visitor data. HTTP checks do not establish indexing or AI citation; those outcomes remain unmeasured unless explicitly evaluated.
 - What would reverse this decision: A later explicit owner request to change the analytics or external account scope.
+
+### 2026-10-30 — Cloudflare Web Analytics — `go`
+
+- Context: The owner explicitly requested Cloudflare Web Analytics on the site.
+- Evidence refs: The owner's 2026-10-30 instruction and subsequent matching beacon token in the project chat; the existing `polyakovin.github.io` property in the owner's Cloudflare dashboard; the public beacon configuration on `https://polyakovin.github.io/boss-fight-atlas/en/`.
+- Decision: Connect the official Cloudflare Web Analytics beacon on production RU/EN pages and the standalone 404 using that existing hostname property's public token. Supersede the analytics exclusion in the 2026-10-20 decision for this integration only. Keep development and the immediate root redirect free of the beacon.
+- Rationale: Reuse the owner's configured account without creating credentials or changing hosting. Filter paths beginning with `/game-dev-db/` to distinguish this project from other sites on the shared hostname. Reading, discovery and machine exports must remain usable when analytics is unavailable.
+- Maximum next-step budget: Zero additional paid-service spend.
+- What would reverse this decision: The owner withdraws the request or changes the analytics property or provider.
