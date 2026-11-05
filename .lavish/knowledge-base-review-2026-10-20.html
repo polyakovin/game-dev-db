@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ревью Game Dev DB · 20 октября 2026</title>
+  <style>
+    :root { color-scheme: light; --paper:#f7f6f2; --surface:#fffefa; --ink:#282b29; --muted:#686d60; --line:#e3e2da; --accent:#c75031; --soft:#eeede5; --positive:#657360; --blue:#4e6c7b; }
+    :root[data-theme="dark"] { color-scheme:dark; --paper:#191d1c; --surface:#222725; --ink:#e8e9e1; --muted:#adb3a7; --line:#3a433d; --accent:#f29171; --soft:#2b312b; --positive:#b5c5a5; --blue:#9ec4d2; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 "Golos Text",system-ui,sans-serif; }
+    main { max-width:1120px; margin:auto; padding:36px 40px 72px; }
+    header { border-bottom:1px solid var(--line); padding-bottom:32px; }
+    .topline,.toolbar,.buttons { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+    .topline { justify-content:space-between; color:var(--muted); font-size:13px; }
+    h1 { font-size:clamp(32px,5vw,58px); line-height:1.09; letter-spacing:-.04em; max-width:900px; margin:34px 0 22px; }
+    h1 span { color:var(--accent); }
+    h2 { font-size:25px; line-height:1.25; letter-spacing:-.02em; margin:0 0 16px; }
+    h3 { font-size:18px; line-height:1.4; margin:0 0 9px; }
+    p { margin:0 0 15px; }
+    p:last-child { margin-bottom:0; }
+    .lead { max-width:850px; font-size:20px; line-height:1.55; }
+    .small,.note { color:var(--muted); font-size:14px; }
+    .stats { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); margin:28px 0 16px; gap:1px; background:var(--line); border:1px solid var(--line); }
+    .stat { background:var(--surface); padding:18px 16px; min-width:0; }
+    .stat strong { display:block; font-size:30px; font-weight:600; line-height:1.2; color:var(--accent); }
+    .stat span { font-size:13px; color:var(--muted); }
+    section { margin-top:40px; }
+    .two { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    .panel { background:var(--surface); border:1px solid var(--line); padding:24px; min-width:0; }
+    .preserve { border-top:3px solid var(--positive); }
+    .focus { border-top:3px solid var(--accent); }
+    ul,ol { padding-left:21px; margin:12px 0; }
+    li+li { margin-top:9px; }
+    button { cursor:pointer; font:inherit; font-size:14px; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:9px 13px; }
+    button:hover { background:var(--soft); }
+    button:focus-visible,a:focus-visible,summary:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+    button[aria-pressed="true"] { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+    .toolbar { justify-content:space-between; margin:20px 0; }
+    .finding { border-top:1px solid var(--line); padding:24px 0; }
+    .finding[hidden] { display:none; }
+    .finding-head { display:grid; grid-template-columns:120px minmax(0,1fr); gap:18px; }
+    .tag { display:inline-block; padding:3px 9px; background:var(--soft); font-size:12px; color:var(--muted); border-radius:4px; }
+    .priority { color:var(--accent); font-size:13px; padding-top:4px; }
+    .finding p { max-width:850px; }
+    details { margin-top:14px; font-size:14px; }
+    summary { color:var(--blue); cursor:pointer; width:fit-content; max-width:100%; }
+    details .evidence { padding:14px 18px; margin-top:10px; background:var(--soft); border-radius:6px; }
+    code { font-family:ui-monospace,monospace; font-size:.9em; overflow-wrap:anywhere; }
+    a { color:var(--blue); text-decoration-thickness:1px; text-underline-offset:3px; overflow-wrap:anywhere; }
+    .links { display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
+    figure { margin:0; }
+    svg { display:block; width:100%; height:auto; }
+    figcaption { margin-top:10px; color:var(--muted); font-size:14px; }
+    .steps { counter-reset:step; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .step { padding:20px; background:var(--surface); border:1px solid var(--line); min-width:0; }
+    .step:before { counter-increment:step; content:"0" counter(step); color:var(--accent); display:block; margin-bottom:12px; font:22px ui-monospace,monospace; }
+    .rule { border-left:3px solid var(--accent); padding:8px 0 8px 18px; margin-top:22px; }
+    footer { border-top:1px solid var(--line); margin-top:40px; padding-top:22px; color:var(--muted); font-size:13px; }
+    [aria-live] { font-size:13px; color:var(--muted); }
+    h1,h2,h3,p,li,span { overflow-wrap:break-word; }
+    @media(max-width:700px) {
+      main { padding:24px 20px 48px; }
+      .stats { grid-template-columns:repeat(3,minmax(0,1fr)); }
+      .two,.steps { grid-template-columns:minmax(0,1fr); }
+      .finding-head { grid-template-columns:minmax(0,1fr); gap:6px; }
+      .panel { padding:20px; }
+      .lead { font-size:18px; }
+    }
+    @media print {
+      .toolbar,#theme { display:none; }
+      body { background:white; color:#282b29; }
+      main { padding:0; }
+      .finding { break-inside:avoid; display:block!important; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="topline"><span>GAME DEV DB / РЕВЬЮ БАЗЫ ЗНАНИЙ</span><div class="buttons"><span>20 октября 2026</span><button id="theme" aria-label="Переключить цветовую тему">Сменить тему</button></div></div>
+    <h1>Следующий прирост качества:<br><span>связать уже собранное.</span></h1>
+    <p class="lead">Техническая основа крепкая, уроки короткие и прикладные. Рост справочников опередил развитие смысловых связей: читателю трудно перейти от найденной механики к принципу, упражнению и проверке результата.</p>
+    <div class="stats">
+      <div class="stat"><strong>20</strong><span>пар уроков RU/EN</span></div>
+      <div class="stat"><strong>4</strong><span>учебных маршрута</span></div>
+      <div class="stat"><strong>12</strong><span>упражнений</span></div>
+      <div class="stat"><strong>117</strong><span>призм</span></div>
+      <div class="stat"><strong>574</strong><span>семейства механик</span></div>
+      <div class="stat"><strong>66</strong><span>внешних ресурсов</span></div>
+    </div>
+    <p class="small">8 активных каталогов содержат 2437 вариантов. Отдельный архив добавляет 64 семейства и 749 вариантов. Это количества записей, а не уникальных концепций. Незавершённый план integrate-discussed-mechanics в объём не включён.</p>
+  </header>
+
+  <section class="two" aria-label="Общая оценка">
+    <div class="panel preserve">
+      <h2>Что стоит сохранить</h2>
+      <ul>
+        <li>Astro и статическую публикацию: текущая задача не требует серверной БД или CMS.</li>
+        <li>Общие источники для HTML, JSON и Markdown; стабильные ID и проверку локальных ссылок.</li>
+        <li>Формат урока: принцип, пример, ошибки, проверка, задание агенту.</li>
+        <li>Различение учебных примеров, проверенных фактов и атрибуции внешних материалов.</li>
+      </ul>
+    </div>
+    <div class="panel focus">
+      <h2>Где отдача будет выше</h2>
+      <ul>
+        <li>Явные связи с объяснением, зачем открывать следующий материал.</li>
+        <li>Общая запись механики вместо нескольких редактируемых копий.</li>
+        <li>Поиск по всей базе и короткое определение в свёрнутой карточке.</li>
+        <li>Завершённые учебные результаты и небольшие точечные экспорты для агентов.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="graph-title">
+    <h2 id="graph-title">Как уроки связаны с остальной базой</h2>
+    <figure>
+      <svg viewBox="0 0 840 245" role="img" aria-labelledby="graph-svg-title graph-svg-desc">
+        <title id="graph-svg-title">Внутренние ссылки в текстах двадцати русских уроков</title>
+        <desc id="graph-svg-desc">Восемь ссылок на упражнения, четырнадцать на призмы, ноль на механики. Между уроками две ссылки, обе на состояния.</desc>
+        <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="var(--muted)"/></marker></defs>
+        <g id="lessons-node"><title>20 уроков; у восьми нет внутренних ссылок в тексте</title><rect x="12" y="85" width="190" height="78" rx="8" fill="var(--soft)" stroke="var(--line)"/><text x="107" y="118" text-anchor="middle" font-size="24" fill="var(--ink)">20 уроков</text><text x="107" y="144" text-anchor="middle" font-size="15" fill="var(--muted)">2 ссылки между ними</text></g>
+        <g id="practice-edge"><title>8 ссылок на упражнения</title><path d="M202 106 C300 106 300 39 420 39" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrow)"/><text x="321" y="42" font-size="18" fill="var(--ink)">8</text></g>
+        <g id="lenses-edge"><title>14 ссылок на призмы</title><path d="M202 124 H420" fill="none" stroke="var(--muted)" stroke-width="2" marker-end="url(#arrow)"/><text x="309" y="114" font-size="18" fill="var(--ink)">14</text></g>
+        <g id="mechanics-edge"><title>Прямых ссылок на механики нет</title><path d="M202 145 C300 145 300 209 420 209" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 6"/><text x="321" y="203" font-size="18" fill="var(--accent)">0</text></g>
+        <g id="practice-node"><title>12 упражнений</title><rect x="434" y="10" width="390" height="59" rx="7" fill="var(--surface)" stroke="var(--line)"/><text x="454" y="47" font-size="22" fill="var(--ink)">12 упражнений</text></g>
+        <g id="lenses-node"><title>117 призм</title><rect x="434" y="95" width="390" height="59" rx="7" fill="var(--surface)" stroke="var(--line)"/><text x="454" y="132" font-size="22" fill="var(--ink)">117 призм</text></g>
+        <g id="mechanics-node"><title>574 семейства механик</title><rect x="434" y="180" width="390" height="59" rx="7" fill="var(--surface)" stroke="var(--accent)"/><text x="454" y="217" font-size="22" fill="var(--ink)">574 семейства механик</text></g>
+      </svg>
+      <figcaption>Подсчитаны только авторские ссылки внутри RU-текстов: 24 всего. На страницах также есть меню, маршруты и автоматически подобранные рекомендации; диаграмма не утверждает, что страницы полностью изолированы.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="findings-title">
+    <h2 id="findings-title">Находки и предлагаемые улучшения</h2>
+    <div class="toolbar">
+      <div class="buttons" role="group" aria-label="Приоритет находок">
+        <button data-filter="all" aria-pressed="true">Все</button>
+        <button data-filter="first" aria-pressed="false">Сначала</button>
+        <button data-filter="next" aria-pressed="false">Следом</button>
+      </div>
+      <span id="count" aria-live="polite">10 находок</span>
+    </div>
+
+    <article class="finding" data-priority="first" id="finding-path">
+      <div class="finding-head"><div class="priority">Сначала · точность</div><div>
+        <h3>1. Исправить неверный критерий в уроке поиска пути</h3>
+        <p>Русский текст требует удалить одно ребро к цели и получить «пути нет». В примере к цели ведут два независимых маршрута. Удаление одного ребра оставляет другой.</p>
+        <p><strong>Предложение:</strong> проверить два случая: удалить D–G → маршрут A–B–G стоимостью 5; затем удалить B–G → пути нет. Согласовать обе локали.</p>
+        <details><summary>Доказательство и проверка результата</summary><div class="evidence">
+          <p>Граф задан рёбрами A–B (1), B–G (4), A–C (2), C–D (1), D–G (1). RU строка 50 говорит «Удалите ребро к цели»; EN говорит «Remove access to the goal». Валидные метаданные и совпавшие ссылки не гарантируют смысловую эквивалентность.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/content/lessons/ru/npc-pathfinding.md#L50">RU: npc-pathfinding.md:50</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/content/lessons/en/npc-pathfinding.md#L50">EN: npc-pathfinding.md:50</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="first" id="finding-relations">
+      <div class="finding-head"><div class="priority">Сначала · связи</div><div>
+        <h3>2. Заменить «соседство по категории» смысловыми переходами</h3>
+        <p>Блок «Рядом с этой темой» берёт первые два урока общей категории. Например, прогрессия рекомендует скоуп и game feel; связи с выбором и случайностью не получают преимущества. Из текста урока прогрессии нет перехода в каталог RPG-гринда.</p>
+        <p><strong>Предложение:</strong> небольшой реестр отношений «нужно знать», «применение», «проверить упражнением», «проверить призмой». Обратные ссылки генерировать автоматически. Начать с 20 уроков и релевантных механик.</p>
+        <details><summary>Доказательство и проверка результата</summary><div class="evidence">
+          <p><code>related</code> вычисляется через совпадение <code>category</code> и <code>slice(0, 2)</code>. В телах RU-уроков только 2 ссылки на другие уроки, обе на state-machines. У восьми исходных уроков внутренних ссылок нет.</p>
+          <p>Критерий: из урока можно перейти к подходящему применению и проверке; на целевой карточке видна обратная связь. Отношения присутствуют и в машинном экспорте. Не добавлять ссылки ради произвольной нормы количества.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/%5Blang%5D/lessons/%5Bid%5D.astro#L18">Подбор рекомендаций:18</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/content/lessons/ru/progression-pacing.md#L55">Окончание урока прогрессии:55</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="first" id="finding-reuse">
+      <div class="finding-head"><div class="priority">Сначала · модель данных</div><div>
+        <h3>3. Хранить общие механики один раз</h3>
+        <p>В активных каталогах children и education совпадают по содержимому 34 семейства с 400 вариантами. Сравнение исключает поле размещения section. Сегодня общую формулировку нужно исправлять в обеих копиях.</p>
+        <p><strong>Предложение:</strong> общая запись механики с RU/EN текстом; каталог хранит её ID, место в структуре и собственный контекст применения. Старые URL и якоря сохраняет сборщик.</p>
+        <details><summary>Доказательство и границы нормализации</summary><div class="evidence">
+          <p>Пример: family-02 «Поиск и обнаружение» повторяет тексты, пример и варианты. Не объединять просто похожие игровые приёмы: объединять точные общие определения; различия аудитории и учебной цели оставлять в контексте каталога. Архив может оставаться самостоятельным историческим снимком.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/data/mechanics/children.json#L69">children.json:69</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/data/mechanics/education.json#L181">education.json:181</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/docs/mechanics-content.md#L55">Правило ручной синхронизации:55</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="first" id="finding-archive">
+      <div class="finding-head"><div class="priority">Сначала · экспорты</div><div>
+        <h3>4. Сделать актуальность и оговорки частью данных</h3>
+        <p>Архив children-education отмечен только на HTML-странице. JSON, Markdown и индекс агента включают его без статуса и ссылки на преемников. Похожая потеря смысла есть у маршрута NPC: объяснение ограниченной пользы упражнения записано только в Astro-шаблоне.</p>
+        <p><strong>Предложение:</strong> поля status, supersededBy и rationale хранить в источнике контента и одинаково выводить человеку и агенту. Активные и архивные объёмы считать отдельно.</p>
+        <details><summary>Доказательство и совместимость</summary><div class="evidence">
+          <p>Экспорт вызывается с <code>includeArchived: true</code>; в записи нет поля архивности. Manifest считает 638 семейств, тогда как активных записей 574. Это разные области подсчёта. Старые endpoint и страницы сохраняются; новые поля добавляются совместимо с v1.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/lib/mechanics.mjs#L173">Экспорт архива:173</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/%5Blang%5D/mechanics/%5Bid%5D.astro#L29">HTML-предупреждение:29</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/%5Blang%5D/learn/%5Bid%5D.astro#L105">Оговорка о практике NPC:105</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-search">
+      <div class="finding-head"><div class="priority">Следом · поиск</div><div>
+        <h3>5. Дать единый вход в разные типы знаний</h3>
+        <p>Поиск на главной работает только по метаданным карточек уроков. Запросы «гринд», «экономика», «сохранение» не находят соответствующие справочные механики. Поиск внутри отдельных справочников есть, но сначала нужно угадать раздел.</p>
+        <p><strong>Предложение:</strong> общий статический индекс уроков, механик, упражнений и призм; тип результата, короткий фрагмент, русские и английские синонимы, переход к точной карточке.</p>
+        <details><summary>Доказательство и область улучшения</summary><div class="evidence">
+          <p>Карточка индексирует <code>id + title + description + tags</code>; тела уроков не входят. Поле обозначено как поиск уроков, поэтому это продуктовый пробел, а не нарушение текущего контракта. Для нынешнего размера хватит индекса, который строится вместе со статическим сайтом.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/%5Blang%5D/index.astro#L263">Индекс поиска уроков:263</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-taxonomy">
+      <div class="finding-head"><div class="priority">Следом · классификация</div><div>
+        <h3>6. Отделить место в дереве от тематических признаков</h3>
+        <p>У 139 из 199 записей Game Mechanics несколько исходных категорий, но фильтр учитывает только первую. «Капли дождя на экране» относятся также к погоде, однако находятся в разделе камеры и не показываются при выборе раздела «Погода».</p>
+        <p><strong>Предложение:</strong> оставить primarySection для расположения и добавить categoryIds для поиска. В перспективе разделять действие, жанр, аудиторию, канал ввода и источник, поскольку это разные признаки.</p>
+        <details><summary>Доказательство и проверка результата</summary><div class="evidence">
+          <p>Остальные категории пока записаны обычной строкой в description. Фильтр проверяет строгое равенство <code>family.dataset.section</code>. После изменения одна карточка может находиться по нескольким темам, сохраняя единственное каноническое место.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/data/mechanics/game-mechanics.json#L387">Карточка дождя:387</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/scripts/mechanics-search.ts#L25">Фильтрация:25</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-clarity">
+      <div class="finding-head"><div class="priority">Следом · ясность</div><div>
+        <h3>7. Показывать определение до раскрытия карточки</h3>
+        <p>У 465 из 574 активных семейств описание пустое или обозначает только классификацию: «Базовые действия», «Раздел источника…», «Категории источника…». В импортированных справочниках полезное определение уже есть, но спрятано в первом варианте.</p>
+        <p><strong>Предложение:</strong> выводить одну фразу «что делает игрок / какое правило работает» в свёрнутом состоянии. Происхождение перенести в метаданные, подробности раскрывать по запросу.</p>
+        <details><summary>Лаконичность без потери смысла</summary><div class="evidence">
+          <p>Для 44 семейств point-and-click описания и примеры пусты, поэтому нужны короткие определения. Для Boss Fight Atlas и Game Mechanics часто достаточно переиспользовать уже написанное определение. Не превращать каждую карточку в большой урок.</p>
+          <p>Уроки уже короткие: около 320–487 слов по простому разделению пробелами. Массовое сокращение мало что даст. Полезнее точечно пояснить BFS, seed, callback, p95/p99 и связать подробные объяснения общим словарём.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/%5Blang%5D/mechanics/%5Bid%5D.astro#L183">Описание свёрнутой карточки:183</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/data/mechanics/point-and-click.json#L69">Пример пустого описания:69</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-completeness">
+      <div class="finding-head"><div class="priority">Следом · полнота</div><div>
+        <h3>8. Завершить путь к проверяемому прототипу</h3>
+        <p>Четыре маршрута включают 12 уроков и ещё 5 предпосылок. Agent workflow, game feel и performance budget в них не участвуют. Практика NPC помогает обдумать роли и ресурсы, но не соединяет восприятие, выбор действия и движение в работающего персонажа.</p>
+        <p><strong>Предложение:</strong> маршрут «Первый проверяемый прототип» преимущественно из существующих уроков; итоговое задание NPC; итоговая проверка темпа прогрессии. Один урок разрешить включать в несколько маршрутов.</p>
+        <details><summary>Как оценивать полноту</summary><div class="evidence">
+          <p>Для каждого результата отмечать: есть объяснение / есть пример / есть упражнение / есть критерий готовности. Наличие карточки механики не равно полноценному обучению её реализации.</p>
+          <p>Сейчас validator запрещает включение урока в два маршрута. Порядок и контекст стоит хранить на стороне маршрута, а текст переиспользовать. README честно обещает небольшую справочную библиотеку; отсутствие полного курса графики или сетевого кода само по себе не дефект MVP.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/data/learning-paths.json#L29">Маршрут NPC:29</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/lib/learning-paths.mjs#L88">Запрет повторного включения:88</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-agent">
+      <div class="finding-head"><div class="priority">Следом · переиспользование</div><div>
+        <h3>9. Дать агенту маленькую адресуемую единицу знания</h3>
+        <p>Локальный mechanics.json занимает 3,30 МБ: обе локали, архив, структурное дерево и полный текст. Markdown механик не сохраняет ID вложенных семейств и вариантов, хотя HTML и JSON на них опираются.</p>
+        <p><strong>Предложение:</strong> добавить лёгкий индекс и экспорт отдельной записи на выбранном языке. В Markdown сохранять ID, канонический URL, связи и источники. Полные существующие экспорты оставить совместимыми.</p>
+        <details><summary>Доказательство и масштаб</summary><div class="evidence">
+          <p>Размер mechanics.json: 3 295 568 байт; llms-full.txt: 1 897 252 байта. Это размеры локальных файлов без сжатия, не измерение времени загрузки или числа токенов. Из Markdown удаляются структурные массивы, а генератор выводит порядковые номера и названия без стабильных ID.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/lib/mechanics.mjs#L119">Генератор Markdown:119</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/src/pages/content/mechanics/%5Blang%5D/%5Bid%5D.md.ts#L11">Состав экспорта:11</a></div>
+        </div></details>
+      </div></div>
+    </article>
+
+    <article class="finding" data-priority="next" id="finding-sources">
+      <div class="finding-head"><div class="priority">Следом · источники и QA</div><div>
+        <h3>10. Проверять смысл и происхождение поверх структуры</h3>
+        <p>Проверки хорошо ловят отсутствующие страницы, якоря и переводы. Они не доказывают правильность примера или уместность связи. Источники уроков и ресурсная подборка также не имеют общего реестра использования.</p>
+        <p><strong>Предложение:</strong> реестр sourceId с URL и датой проверки; автоматически показывать, где источник используется. Добавить сравнение источников RU/EN и редакционную проверку численных примеров, предпосылок и переходов.</p>
+        <details><summary>Наблюдение и ограничения</summary><div class="evidence">
+          <p>У текущих 20 пар источники совпадают. Из 30 уникальных URL в RU-уроках 14 точно совпадают с ресурсным каталогом. Оставшиеся 16 не обязаны там присутствовать: это редакторская подборка, а не полный реестр цитирования.</p>
+          <p>Полезный отчёт о качестве: неразрешённые связи, кандидаты в дубли, неиспользуемые материалы, несовпадения источников локалей. Количество ссылок использовать как диагностический сигнал, а не как норматив качества.</p>
+          <div class="links"><a href="https://github.com/polyakovin/game-dev-db/blob/main/scripts/verify-content.mjs#L160">Проверка языковых пар:160</a><a href="https://github.com/polyakovin/game-dev-db/blob/main/scripts/verify-dist.mjs#L75">Проверка локальных ссылок:75</a></div>
+        </div></details>
+      </div></div>
+    </article>
+  </section>
+
+  <section aria-labelledby="sequence-title">
+    <h2 id="sequence-title">Предлагаемая последовательность</h2>
+    <div class="steps">
+      <div class="step"><h3>Исправить и обозначить</h3><p>Ошибка поиска пути, статус архива, перенос учебных оговорок в данные. Получить одинаковый смысл в HTML и экспортах.</p></div>
+      <div class="step"><h3>Связать и переиспользовать</h3><p>Общие записи механик, типизированные связи, обратные ссылки и несколько маршрутов для одного урока. Сохранить публичные адреса.</p></div>
+      <div class="step"><h3>Улучшить обнаружение</h3><p>Общий поиск, определения на карточках, несколько тематик и точечные экспорты. Затем расширять контент по пробелам учебных результатов.</p></div>
+    </div>
+    <p class="rule">Техническое направление: сохранить Markdown и JSON как авторские источники, добавить общий слой идентичностей и отношений и генерировать из него навигацию и экспорты. Это предложение для отдельного OpenSpec change, не выполненная миграция.</p>
+  </section>
+
+  <section class="panel" aria-labelledby="verification-title">
+    <h2 id="verification-title">Объём и пределы проверки</h2>
+    <p>Прочитаны 20 русских уроков, 12 русских упражнений и четыре маршрута; английские тексты проверены выборочно, метаданные и кодовые блоки всех 20 пар сопоставлены автоматически. Каталоги изучены структурно и выборочно по содержанию. Каждая из 2437 вариаций не прошла отдельную экспертную проверку.</p>
+    <p><strong>npm run verify:</strong> успешно, включая 82 HTML-страницы, локальные ссылки и якоря, экспорт и OpenSpec.</p>
+    <p id="e2e-status"><strong>Playwright:</strong> полный запуск 130/131. Один тест EN-порядка прервался сообщением об уничтожении контекста во время навигации. При отдельном повторе этот тест прошёл трижды; устойчивый дефект интерфейса не подтверждён.</p>
+    <p>Внешние URL и все утверждения первоисточников заново не проверялись. Живая публикация не проверялась; выводы относятся к текущей рабочей копии. Исходники базы не изменялись.</p>
+  </section>
+
+  <footer>
+    <p>Оформление использует палитру Game Dev DB из src/styles/theme.css: светлый фон, терракотовый акцент и спокойная типографика. Отчёт самодостаточен и работает без внешних CDN. Ссылки на GitHub указывают main; при будущих изменениях номера строк могут сместиться.</p>
+  </footer>
+</main>
+<script>
+  const root = document.documentElement;
+  root.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  document.querySelector('#theme').addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  });
+  const controls = [...document.querySelectorAll('[data-filter]')];
+  const findings = [...document.querySelectorAll('.finding')];
+  controls.forEach(button => button.addEventListener('click', () => {
+    controls.forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+    findings.forEach(finding => { finding.hidden = button.dataset.filter !== 'all' && finding.dataset.priority !== button.dataset.filter; });
+    document.querySelector('#count').textContent = 'Показано: ' + findings.filter(finding => !finding.hidden).length + ' из ' + findings.length;
+  }));
+</script>
+</body>
+</html>
