@@ -1,0 +1,254 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { locales, type Locale } from '../../../lib/site';
+import { animationLabCopy } from '../../../lib/animation-lab-copy';
+import '../../../styles/animation-lab.css';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Locale;
+const t = animationLabCopy[lang];
+---
+
+<Layout
+  lang={lang}
+  title={t.title}
+  description={t.intro}
+  section="animationLab"
+  alternate="animation-lab/"
+>
+  <div class="animation-page" data-animation-lab data-lang={lang}>
+    <header class="lab-heading">
+      <div>
+        <p class="eyebrow">{t.eyebrow}</p>
+        <h1>
+          Animation <span>Lab</span>
+          <sup>9:16</sup>
+        </h1>
+        <p class="lab-tagline">{t.description}</p>
+      </div>
+      <p class="lab-private">
+        <span aria-hidden="true">◉</span> {t.private}
+      </p>
+    </header>
+    <p class="lab-intro">{t.intro}</p>
+    <noscript>
+      <p class="lab-notice">{t.nojs}</p>
+    </noscript>
+    <p class="lab-status" data-status role="status" aria-live="polite" hidden>
+      {t.starting}
+    </p>
+    <a data-retry href="" hidden>
+      {t.retry}
+    </a>
+    <div class="lab-app" data-app hidden>
+      <div class="lab-workbench">
+        <section class="lab-view" aria-label={t.frame}>
+          <div class="lab-view-bar">
+            <span data-model-name>{t.demo}</span>
+            <span class="lab-resolution">1080 × 1920</span>
+          </div>
+          <div class="lab-stage" data-drop-zone>
+            <div class="lab-portrait" data-portrait>
+              <canvas
+                data-canvas
+                tabindex="0"
+                aria-label={t.frame}
+                aria-describedby="lab-gestures lab-shortcuts"
+              ></canvas>
+            </div>
+            <span class="lab-frame-label" aria-hidden="true">
+              9 / 16
+            </span>
+            <button type="button" class="lab-restore" data-clean hidden>
+              {t.restore}
+            </button>
+          </div>
+          <div class="lab-transport">
+            <div class="lab-time-row">
+              <span data-clip-name>{t.walk}</span>
+              <output data-time>0.00 / 0.00 s</output>
+            </div>
+            <input
+              data-timeline
+              type="range"
+              min="0"
+              max="1"
+              step="0.001"
+              value="0"
+              aria-label={t.timeline}
+            />
+            <div class="lab-play-row">
+              <button type="button" data-step="-1" aria-label={t.previous}>
+                ❮
+              </button>
+              <button
+                type="button"
+                class="lab-play"
+                data-play
+                aria-label={t.pause}
+              >
+                Ⅱ
+              </button>
+              <button type="button" data-step="1" aria-label={t.next}>
+                ❯
+              </button>
+              <label class="lab-speed">
+                {t.speed}
+                <select data-speed>
+                  <option value="0.25">0.25×</option>
+                  <option value="0.5">0.5×</option>
+                  <option value="1" selected>
+                    1×
+                  </option>
+                  <option value="1.5">1.5×</option>
+                  <option value="2">2×</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="lab-view-actions">
+            <button type="button" data-fit>
+              {t.fit} <kbd>F</kbd>
+            </button>
+            <button type="button" data-clean>
+              {t.clean} <kbd>H</kbd>
+            </button>
+          </div>
+        </section>
+        <div class="lab-inspector">
+          <fieldset class="lab-panel">
+            <legend>
+              <span>01</span> {t.model}
+            </legend>
+            <div class="lab-import-row">
+              <button type="button" class="lab-primary" data-import>
+                {t.import} <span aria-hidden="true">↗</span>
+              </button>
+              <button type="button" data-demo>
+                {t.demo}
+              </button>
+            </div>
+            <input
+              type="file"
+              data-files
+              multiple
+              hidden
+              accept=".glb,.gltf,.fbx,.bin,.png,.jpg,.jpeg,.webp,.avif,.tga,.bmp"
+            />
+            <p class="lab-hint">{t.importHelp}</p>
+            <p class="lab-stats" data-stats></p>
+          </fieldset>
+          <fieldset class="lab-panel">
+            <legend>
+              <span>02</span> {t.animation}
+            </legend>
+            <label class="lab-select-label">
+              {t.clip}
+              <select data-clips aria-label={t.clip}></select>
+            </label>
+            <div class="lab-checks">
+              <label>
+                <input type="checkbox" data-loop checked />
+                {t.loop}
+              </label>
+              <label title={t.inplaceHelp}>
+                <input type="checkbox" data-inplace checked />
+                {t.inplace}
+              </label>
+              <label>
+                <input type="checkbox" data-follow />
+                {t.follow}
+              </label>
+            </div>
+            <p class="lab-hint">{t.inplaceHelp}</p>
+          </fieldset>
+          <fieldset class="lab-panel">
+            <legend>
+              <span>03</span> {t.scene}
+            </legend>
+            <div class="lab-checks">
+              <label>
+                <input type="checkbox" data-skeleton />
+                {t.skeleton}
+              </label>
+              <label>
+                <input type="checkbox" data-wireframe />
+                {t.wireframe}
+              </label>
+              <label>
+                <input type="checkbox" data-grid checked />
+                {t.grid}
+              </label>
+              <label>
+                <input type="checkbox" data-orbit />
+                {t.orbit}
+              </label>
+            </div>
+            <label class="lab-select-label">
+              {t.background}
+              <select data-background>
+                <option value="light">{t.light}</option>
+                <option value="dark">{t.dark}</option>
+                <option value="green">{t.green}</option>
+                <option value="transparent">{t.transparent}</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset class="lab-panel lab-export">
+            <legend>
+              <span>04</span> {t.export}
+            </legend>
+            <button type="button" data-png>
+              {t.png}
+              <span aria-hidden="true">↓</span>
+            </button>
+            <div class="lab-record-row">
+              <label>
+                {t.duration}
+                <input
+                  data-duration
+                  type="number"
+                  min="1"
+                  max="30"
+                  step="1"
+                  value="5"
+                />
+              </label>
+              <button type="button" data-record class="lab-primary">
+                {t.record}
+              </button>
+            </div>
+            <p class="lab-hint" data-video-support></p>
+            <p class="lab-hint">{t.videoHelp}</p>
+            <a class="lab-download" data-download hidden download>
+              {t.download} ↓
+            </a>
+          </fieldset>
+        </div>
+      </div>
+      <details class="lab-help">
+        <summary>{t.controls}</summary>
+        <p id="lab-gestures">{t.gesture}</p>
+        <p id="lab-shortcuts">{t.shortcuts}</p>
+      </details>
+    </div>
+    <div class="lab-about">
+      <section>
+        <h2>{t.about}</h2>
+        <p>{t.aboutText}</p>
+        <p>{t.privacyText}</p>
+      </section>
+      <section>
+        <h2>{t.formats}</h2>
+        <p>{t.formatsText}</p>
+      </section>
+    </div>
+  </div>
+</Layout>
+<script>
+  import { initAnimationLab } from '../../../scripts/animation-lab';
+  const root = document.querySelector<HTMLElement>('[data-animation-lab]');
+  if (root) initAnimationLab(root);
+</script>

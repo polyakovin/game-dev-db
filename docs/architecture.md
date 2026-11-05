@@ -38,6 +38,7 @@ All paths below are relative to the configured site root. In production that roo
 | `{lang}/practice/`                                | Original design exercises with stable exercise anchors   |
 | `{lang}/lenses/`                                  | Searchable attributed design lenses                      |
 | `{lang}/jams/`                                    | Current and upcoming game jams and discovery calendars   |
+| `{lang}/animation-lab/`                           | Local browser 3D animation viewer and portrait export    |
 | `{lang}/for-agents/`                              | Guidance for machine consumers                           |
 | `llms.txt`                                        | Compact entry point for agents                           |
 | `llms-full.txt`                                   | Combined lesson text                                     |
@@ -58,6 +59,14 @@ The `api` paths are static files, not a live server API. Clients should fetch a 
 Individual Markdown exports retain the original lesson body and frontmatter data, then add `url` (the canonical HTML lesson URL), `markdownUrl`, `attribution` (`Game Dev DB contributors`), `license` (`CC-BY-4.0`), and `codeLicense` (`MIT`). The export serializer may change YAML formatting, so it is not a byte-for-byte copy of the source file. The authored source schema remains unchanged; these fields belong to the export layer.
 
 ## Boundaries
+
+Animation Lab is an isolated browser tool at `{lang}/animation-lab/`, adapted from
+the owner's local Godot viewer. Its pinned Three.js loaders process selected
+files locally without a server, uploads or CDN resources. The page shares the
+portal layout, localization and theme; its client bundle is loaded only on the
+tool route. Original procedural demo content avoids redistribution of downloaded
+source models. The tool adds navigation and sitemap entries without changing the
+knowledge record types or v1 exports. See [usage, exports and browser limits](animation-lab.md).
 
 The common knowledge layer adapts every authored content type to a uniform record
 without copying lesson bodies or forcing identical domain-specific fields. It

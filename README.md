@@ -10,6 +10,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 - Five practical learning paths: a first verifiable prototype, level design, balance, NPC behavior and game verification. Each connects reusable lessons to exercises, lenses and completion checks.
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
+- [Animation Lab](https://gamemechanics.pro/ru/animation-lab/): local 3D model and animation inspection, portrait PNG and browser video export, with RU/EN controls. See [usage and browser limits](docs/animation-lab.md).
 - Bilingual mechanic references for genres, puzzles, dialogue, drawing, investigation, children and education, RPG grind, engagement, electronic devices and physical input. Includes complete discussion catalogs and the attributed Boss Fight Atlas and Game Mechanics indexes; see [coverage](docs/research/discussion-mechanics.md).
 - Illustrated RU/EN cards for all 1268 active canonical mechanics: short definitions, contextual screenshot tooltips and compressed WebP images. Browse the [card library](https://gamemechanics.pro/ru/mechanics/cards/).
 - Fourteen original game-design exercises, including NPC and progression capstones, with constraints, deliverables and checks in Russian and English.

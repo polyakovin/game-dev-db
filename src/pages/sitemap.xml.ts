@@ -26,6 +26,7 @@ export async function GET() {
       'practice/',
       'lenses/',
       'jams/',
+      'animation-lab/',
       'for-agents/',
     ])
       entries.set(absolute(`${lang}/${route}`), null);
