@@ -14,7 +14,7 @@
 
 ## 3. Integration verification
 
-- [ ] 3.1 Run canonical npm run verify, complete browser suite and formatting checks; inspect rendered RU/EN desktop/mobile tool and fix observed issues.
+- [x] 3.1 Run canonical npm run verify, complete browser suite and formatting checks; inspect rendered RU/EN desktop/mobile tool and fix observed issues.
 
 ## Workflow follow-up
 
