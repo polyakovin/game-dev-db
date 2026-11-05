@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const labels = {
   ru: ['Действия', 'Цели', 'Награды', 'Ограничения'],
   en: ['Activities', 'Goals', 'Rewards', 'Constraints'],

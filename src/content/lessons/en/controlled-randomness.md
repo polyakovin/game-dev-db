@@ -54,4 +54,4 @@ If a battery is required to finish the level, provide recovery from a poor outco
 
 > Compare independent rolls and bags over equal crate counts. Show assumptions, a reproducible run and the worst possible bag streak. Do not replace a guarantee calculation with a random simulation result.
 
-Test the choice in [Weather Window](/game-dev-db/en/practice/#weather-window) and through the [Chance lens](/game-dev-db/en/lenses/#schell-036).
+Test the choice in [Weather Window](/en/practice/#weather-window) and through the [Chance lens](/en/lenses/#schell-036).

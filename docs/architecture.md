@@ -26,7 +26,7 @@ legacy type-specific exports remain compatible. The shared record supplies HTML,
 individual JSON/Markdown and structured metadata. The sitemap lists unique active
 HTML pages with authored dates and language pairs. See [search discovery](search-discovery.md).
 
-All paths below are relative to the configured site root. In production that root is `https://polyakovin.github.io/game-dev-db/`.
+All paths below are relative to the configured site root. In production that root is `https://gamemechanics.pro/`.
 
 | Route                                             | Purpose                                                  |
 | ------------------------------------------------- | -------------------------------------------------------- |
@@ -90,11 +90,11 @@ Game jams use `src/data/jams.json`. Shared pure time helpers enforce exclusive s
 - **Appearance:** `src/styles/theme.css` owns semantic light/dark colors, including the system-aware CSS fallback and light print palette. `ThemeHead.astro` resolves the namespaced `game-dev-db:theme` local preference before body rendering and handles system/storage changes defensively. `ThemeSwitch.astro` exposes localized system/light/dark buttons after initialization. Shared and standalone pages load the same palette; keep presentation and SVG colors on its tokens.
 - **Exports:** build-time transformations of the collection. Preserve identifiers, language, sources, canonical URLs, and license context.
 - **Deployment:** GitHub Actions builds and publishes the generated artifact to GitHub Pages. GitHub Pages supplies HTTPS and static hosting.
-- **Analytics:** `CloudflareAnalytics.astro` adds the official deferred beacon to production RU/EN pages and the standalone 404, using the owner's existing `polyakovin.github.io` property. Development and the immediate root redirect omit it. Reading, discovery and machine exports remain independent of the beacon. See [Web Analytics operations](web-analytics.md).
+- **Analytics:** `CloudflareAnalytics.astro` adds the official deferred beacon to production RU/EN pages and the standalone 404, using the owner's `gamemechanics.pro` property. Development and the immediate root redirect omit it. Reading, discovery and machine exports remain independent of the beacon. See [Web Analytics operations](web-analytics.md).
 
 ## Compatibility and deployment
 
-The repository is a GitHub project site, so a root-relative link such as `/ru/` points to the wrong location in production. Use the configured base path for navigation, assets, search, canonical links, and export URLs. Lesson URLs use trailing slashes; Markdown and JSON exports use their explicit file extensions.
+GitHub Pages serves the project at the custom-domain root, `https://gamemechanics.pro/`. `src/lib/site-config.mjs` supplies the production origin and empty path prefix to Astro, URL helpers and verification. Use shared helpers for navigation, assets, search, canonical links and exports. Lesson URLs use trailing slashes; Markdown and JSON exports use their explicit file extensions. See [domain deployment](custom-domain.md) for Pages settings, redirects and operational checks.
 
 The `v1` export route is a public compatibility boundary. Prefer additive metadata changes. Removing a field, changing its meaning, replacing a lesson identifier, or moving an endpoint needs a deliberate migration documented in OpenSpec. Review both consumers and generated output when changing the schema.
 

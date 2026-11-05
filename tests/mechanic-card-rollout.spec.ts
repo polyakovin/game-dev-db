@@ -14,7 +14,7 @@ import { validateMechanicPreviews } from '../src/lib/mechanic-preview-validation
 const records = buildKnowledge([], 'ru', []).records;
 const ids = Object.keys(mechanicPreviews);
 const route = (lang: string, id: string) =>
-  `/game-dev-db/${lang}/knowledge/mechanic/${id}/`;
+  `/${lang}/knowledge/mechanic/${id}/`;
 
 test('production order covers every active canonical mechanic exactly once', () => {
   expect(validateMechanicCardOrder(records)).toEqual([]);
@@ -123,9 +123,7 @@ for (const lang of ['ru', 'en'] as const) {
         await page.keyboard.press('Escape');
       }
       const payload = await (
-        await request.get(
-          `/game-dev-db/api/v1/knowledge/${lang}/mechanic/${id}.json`,
-        )
+        await request.get(`/api/v1/knowledge/${lang}/mechanic/${id}.json`)
       ).json();
       expect(payload.record.attributes.preview).toEqual(card);
       expect(
@@ -134,9 +132,7 @@ for (const lang of ['ru', 'en'] as const) {
         ),
       ).toBe(true);
       const markdown = await (
-        await request.get(
-          `/game-dev-db/content/knowledge/${lang}/mechanic/${id}.md`,
-        )
+        await request.get(`/content/knowledge/${lang}/mechanic/${id}.md`)
       ).text();
       expect(markdown).toContain(
         card.image.originalUrl === card.image.sourceUrl
@@ -158,7 +154,7 @@ for (const lang of ['ru', 'en'] as const) {
   test(`${lang}: library follows editorial order and searches across languages`, async ({
     page,
   }) => {
-    await page.goto(`/game-dev-db/${lang}/mechanics/cards/`);
+    await page.goto(`/${lang}/mechanics/cards/`);
     const ready = getMechanicCardQueue(
       buildKnowledge([], lang, []).records,
     ).filter((entry) => entry.illustrated);

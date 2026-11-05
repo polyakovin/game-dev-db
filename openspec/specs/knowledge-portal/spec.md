@@ -13,7 +13,7 @@ The portal SHALL provide Russian and English catalogs and twenty-one paired orig
 with stable lesson IDs, categories, sources, reading time and language metadata.
 
 #### Scenario: Read a lesson without JavaScript
-- **WHEN** a reader opens /game-dev-db/ru/lessons/game-loop/ with JavaScript disabled
+- **WHEN** a reader opens /ru/lessons/game-loop/ with JavaScript disabled
 - **THEN** the complete lesson and its source links are available as static HTML
 
 #### Scenario: Change article language
@@ -21,7 +21,7 @@ with stable lesson IDs, categories, sources, reading time and language metadata.
 - **THEN** the matching English lesson with the same stable ID opens
 
 #### Scenario: Turn a fictional world into gameplay
-- **WHEN** a reader opens `/game-dev-db/{lang}/lessons/world-to-gameplay/` in either supported language
+- **WHEN** a reader opens `/{lang}/lessons/world-to-gameplay/` in either supported language
 - **THEN** an original lesson explains a world rule, player action, consequence and scoped prototype with an illustrative example and observable checks
 - **AND** it credits Yaropolk Rash / Yarr Rash and links the Iconic IP Guide as an influence, with matching attribution in generated Markdown and JSON
 - **AND** it uses the existing lesson presentation and remains fully readable without JavaScript
@@ -56,7 +56,7 @@ schema validation, browser smoke tests and a GitHub Actions workflow deploying v
 
 #### Scenario: Publish on GitHub Pages
 - **WHEN** the checked main branch deploys
-- **THEN** nested routes, assets and machine exports resolve under /game-dev-db/
+- **THEN** nested routes, assets and machine exports resolve under /
 
 ### Requirement: Reader appearance preference
 The portal SHALL offer localized, keyboard-accessible system, light and dark appearance choices on shared RU/EN pages. The initial appearance SHALL follow the system. An explicit choice SHALL persist across reloads, internal navigation and language changes when local storage is available. Unavailable storage SHALL NOT prevent switching or reading.
@@ -66,7 +66,7 @@ The portal SHALL offer localized, keyboard-accessible system, light and dark app
 - **THEN** the site follows the current system appearance and subsequent system changes
 
 #### Scenario: Keep an explicit choice
-- **WHEN** a reader selects dark appearance with a light system preference, reloads or follows a lesson or language link under /game-dev-db/
+- **WHEN** a reader selects dark appearance with a light system preference, reloads or follows a lesson or language link under /
 - **THEN** the site uses dark appearance from the first rendered frame and shows the corresponding selected control
 
 #### Scenario: Operate with keyboard and unavailable storage
@@ -103,7 +103,7 @@ changing keyboard focus or the URL during ordinary scrolling.
 - **THEN** the active TOC link matches the section at the reading line, even while its heading is above the viewport
 
 #### Scenario: Follow an anchor or direct link
-- **WHEN** a reader uses a TOC link by keyboard or opens a section or nested mechanic anchor under `/game-dev-db/`
+- **WHEN** a reader uses a TOC link by keyboard or opens a section or nested mechanic anchor under `/`
 - **THEN** native navigation succeeds and the containing linked section becomes current
 
 #### Scenario: Reflow and filter content
@@ -122,7 +122,7 @@ changing keyboard focus or the URL during ordinary scrolling.
 The portal SHALL order catalog groups and their entries by editorial importance: foundational decisions and broadly useful techniques before specialized variations. This SHALL cover lessons, mechanics at every tree level, lenses, practice and references. Procedural steps SHALL retain execution order. Jam events SHALL retain deadline order, followed by discovery calendars ranked by usefulness.
 
 #### Scenario: Browse foundational material first
-- **WHEN** a reader opens any catalog under `/game-dev-db/` in either language
+- **WHEN** a reader opens any catalog under `/` in either language
 - **THEN** foundational groups precede specialized groups and each group presents its most useful material first, including without JavaScript
 
 #### Scenario: Inspect a nested mechanic
@@ -154,3 +154,18 @@ Every RU/EN lesson SHALL use the same six ordered sections: prerequisites, princ
 #### Scenario: Verify the pathfinding example
 - **WHEN** edge D–G is removed from the published example and then B–G is removed as well
 - **THEN** the first step leaves a route of cost 5 and the second produces no route
+
+### Requirement: Custom-domain publishing
+The portal SHALL publish at https://gamemechanics.pro/ with root-relative navigation and assets, matching canonical and language alternate URLs, and unchanged relative v1 endpoints and stable content identities. The host-root robots policy SHALL allow public crawling and advertise the production sitemap.
+
+#### Scenario: Open the domain root
+- **WHEN** a reader opens https://gamemechanics.pro/ without JavaScript
+- **THEN** the language redirect and manual language links lead to /ru/ and /en/ without the former project prefix
+
+#### Scenario: Retrieve and cite on the custom domain
+- **WHEN** an agent reads the sitemap, manifest, language indexes or a lesson export
+- **THEN** internal URLs use https://gamemechanics.pro/ and canonical HTML, JSON and Markdown identify the same content
+
+#### Scenario: Preserve authored knowledge connections
+- **WHEN** a lesson links to another lesson, exercise or lens at the domain root
+- **THEN** static HTML links resolve and its typed knowledge relationships retain the target identities

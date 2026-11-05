@@ -52,4 +52,4 @@ List situations before changing numbers. To give the saw a role, test different 
 
 > Make a table for debris with durability 8, 12 and 20. Count actions and charges separately and state assumptions. Propose one change if a tool is never useful. Do not claim the table proves balance.
 
-Continue with [Last Ferry](/game-dev-db/en/practice/#last-ferry) and the [Meaningful Choices lens](/game-dev-db/en/lenses/#schell-039).
+Continue with [Last Ferry](/en/practice/#last-ferry) and the [Meaningful Choices lens](/en/lenses/#schell-039).

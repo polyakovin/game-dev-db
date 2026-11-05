@@ -54,4 +54,4 @@ The first pass checks whether the door is reachable. The second checks whether a
 
 > Build the warehouse from simple shapes. Expose dimensions, speed and door delay as parameters. Show the timer origin and travel time. Do not claim route clarity without observing a player. Prepare three manual acceptance scenarios.
 
-Continue with [Paper Current](/game-dev-db/en/practice/#paper-current): test the rule in a cheap prototype before translating it into space.
+Continue with [Paper Current](/en/practice/#paper-current): test the rule in a cheap prototype before translating it into space.

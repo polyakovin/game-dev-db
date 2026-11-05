@@ -1,7 +1,36 @@
 import { expect, test } from '@playwright/test';
 import { load } from 'cheerio';
 
-const base = '/game-dev-db';
+import { BASE as base, SITE } from '../src/lib/site-config.mjs';
+
+test('domain root redirects without scripts and advertises the root sitemap', async ({
+  browser,
+  baseURL,
+  request,
+}) => {
+  const root = load(await (await request.get('/')).text());
+  expect(root('meta[http-equiv="refresh"]').attr('content')).toBe('0;url=/ru/');
+  expect(root('link[rel="canonical"]').attr('href')).toBe(`${SITE}/ru/`);
+  expect(
+    root('a')
+      .map((_, node) => root(node).attr('href'))
+      .get(),
+  ).toEqual(['/ru/', '/en/']);
+  const robots = await request.get('/robots.txt');
+  expect(robots.ok()).toBe(true);
+  expect(await robots.text()).toBe(
+    `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`,
+  );
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    baseURL,
+  });
+  const page = await context.newPage();
+  await page.goto('/');
+  await expect(page).toHaveURL(/\/ru\/$/);
+  await expect(page.locator('h1')).toBeVisible();
+  await context.close();
+});
 for (const lang of ['ru', 'en'] as const) {
   for (const type of ['mechanic', 'practice', 'lens']) {
     test(`${lang}/${type}: focused record is readable without scripts and has matching citation metadata`, async ({
@@ -173,6 +202,17 @@ test('sitemap contains unique focused pages, matching language pairs and actual 
       const node = byUrl.get(entry.url);
       expect(node, entry.url).toBeDefined();
       expect(node!.find('xhtml\\:link')).toHaveLength(2);
+      expect(new URL(entry.url).origin).toBe(SITE);
+      for (const alternateLang of ['ru', 'en']) {
+        const alternate = new URL(entry.url);
+        alternate.pathname = alternate.pathname.replace(
+          /^\/(ru|en)\//,
+          `/${alternateLang}/`,
+        );
+        expect(
+          node!.find(`xhtml\\:link[hreflang="${alternateLang}"]`).attr('href'),
+        ).toBe(alternate.href);
+      }
       if (entry.updatedAt)
         expect(node!.find('lastmod').text()).toBe(entry.updatedAt);
     }

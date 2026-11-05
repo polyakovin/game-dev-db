@@ -8,7 +8,7 @@ import {
 import { practiceSource } from '../src/lib/practice.mjs';
 import { lensData } from '../src/lib/lenses.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const available = {
   lessons: ['ru', 'en'].flatMap((lang) =>
     readdirSync(new URL(`../src/content/lessons/${lang}/`, import.meta.url))

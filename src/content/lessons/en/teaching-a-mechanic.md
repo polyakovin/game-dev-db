@@ -52,4 +52,4 @@ Change one parameter between attempts. If the player waits for the platform but 
 
 > Describe three pulse-platform rooms. For each, name the known rule, new question, safe retry and observable sign of understanding. Do not add mechanics outside this skill.
 
-Develop the sequence in [Signal Room](/game-dev-db/en/practice/#signal-room) and review it through the [Skill lens](/game-dev-db/en/lenses/#schell-034).
+Develop the sequence in [Signal Room](/en/practice/#signal-room) and review it through the [Skill lens](/en/lenses/#schell-034).

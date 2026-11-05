@@ -2,7 +2,7 @@
 
 ## Current scope, 2026-10-09
 
-The owner requested an open-source, bilingual web knowledge base for game developers using AI-assisted workflows. The portal serves human readers and AI agents, accepts community contributions, includes original material and external resources, and is hosted on GitHub Pages at `https://polyakovin.github.io/game-dev-db/`.
+The owner requested an open-source, bilingual web knowledge base for game developers using AI-assisted workflows. The portal serves human readers and AI agents, accepts community contributions, includes original material and external resources, and is hosted on GitHub Pages at `https://gamemechanics.pro/`.
 
 This is an authorized open-source MVP, not a validated commercial offer. The owner's explicit request supersedes the initial template's requirement to validate paid demand before implementing this scope. See the dated entry in `DECISIONS.md`.
 

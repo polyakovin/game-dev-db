@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { buildKnowledge, knowledgeMarkdown } from '../src/lib/knowledge.mjs';
 import { getMechanicPreview } from '../src/lib/mechanic-previews.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const id = 'shared-family-02';
 const route = (lang: string) => `${base}/${lang}/knowledge/mechanic/${id}/`;
 const viewports = [

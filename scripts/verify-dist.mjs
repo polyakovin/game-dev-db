@@ -1,4 +1,5 @@
 import { readdir, readFile, stat } from 'node:fs/promises';
+import { SITE, BASE } from '../src/lib/site-config.mjs';
 import path from 'node:path';
 import { load } from 'cheerio';
 import matter from 'gray-matter';
@@ -20,8 +21,8 @@ import {
 
 const root = path.resolve(import.meta.dirname, '..');
 const dist = path.join(root, 'dist');
-const site = 'https://polyakovin.github.io';
-const base = '/game-dev-db/';
+const site = SITE;
+const base = `${BASE}/`;
 const sourceResources = JSON.parse(
   await readFile(path.join(root, 'src/data/resources.json'), 'utf8'),
 );
@@ -107,6 +108,14 @@ async function checkReference(reference, from, location, checkAnchor = true) {
   }
   if (!['http:', 'https:'].includes(url.protocol)) {
     errors.push(`${location}: unsupported URL protocol in ${reference}`);
+    return;
+  }
+  if (
+    (url.origin === 'https://polyakovin.github.io' &&
+      /^\/game-dev-db(?:\/|$)/.test(url.pathname)) ||
+    (url.origin === site && /^\/game-dev-db(?:\/|$)/.test(url.pathname))
+  ) {
+    errors.push(`${location}: obsolete portal URL ${reference}`);
     return;
   }
   if (url.origin !== site) return;
@@ -196,7 +205,7 @@ for (const file of htmlFiles) {
       errors.push(`${relative}: expected the deferred classic beacon in body`);
     try {
       const config = JSON.parse(beacon.attr('data-cf-beacon') ?? 'null');
-      if (config?.token !== 'b37b07bb3a8f48c6b5f1c0b29adac199')
+      if (config?.token !== '814d0e28471d4f2bbfd897294e11346f')
         errors.push(`${relative}: unexpected Cloudflare analytics property`);
     } catch {
       errors.push(`${relative}: invalid Cloudflare beacon configuration`);

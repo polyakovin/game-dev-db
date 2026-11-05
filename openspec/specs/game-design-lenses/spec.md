@@ -17,7 +17,7 @@ The portal SHALL provide 113 second-edition Schell perspectives, the third-editi
 - **THEN** canonical content validation fails before publication
 
 ### Requirement: Searchable accessible static reading
-The portal SHALL expose lenses through navigation and home discovery under the GitHub Pages base path. Readers SHALL be able to filter by text, theme and source, reset filters, use keyboard disclosures and open stable anchor links. Every entry SHALL be readable without JavaScript and at narrow viewport widths.
+The portal SHALL expose lenses through navigation and home discovery under the configured site root. Readers SHALL be able to filter by text, theme and source, reset filters, use keyboard disclosures and open stable anchor links. Every entry SHALL be readable without JavaScript and at narrow viewport widths.
 
 #### Scenario: Filter and reset
 - **WHEN** a reader searches a question and combines theme/source filters

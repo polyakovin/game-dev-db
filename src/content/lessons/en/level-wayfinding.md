@@ -52,4 +52,4 @@ This is a proposed design to test. It does not establish that the signs are suff
 
 > Propose three station navigation cues: destination, route to the staircase and return. Name the observation point and a possible misinterpretation for each. Change one cue after a playtest while retaining the side workshop.
 
-Use the [Goals lens](/game-dev-db/en/lenses/#schell-032) and [Three-Minute Museum](/game-dev-db/en/practice/#three-minute-museum) to review the first independent action.
+Use the [Goals lens](/en/lenses/#schell-032) and [Three-Minute Museum](/en/practice/#three-minute-museum) to review the first independent action.

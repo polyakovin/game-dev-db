@@ -5,7 +5,7 @@ import { getMechanicDirections } from '../src/lib/mechanic-directions.mjs';
 import { orderMechanicCatalog } from '../src/lib/content-order.mjs';
 import { resolveMechanicCatalog } from '../src/lib/mechanic-source.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const readCatalog = (id: string) =>
   resolveMechanicCatalog(
     JSON.parse(
@@ -212,9 +212,7 @@ test('mechanic exports preserve full tree, Markdown and manifest discovery', asy
   const manifest = await (
     await request.get(`${base}/api/v1/manifest.json`)
   ).json();
-  expect(manifest.endpoints.mechanics).toMatch(
-    /\/game-dev-db\/api\/v1\/mechanics.json$/,
-  );
+  expect(manifest.endpoints.mechanics).toMatch(/\/api\/v1\/mechanics.json$/);
   const data = await (
     await request.get(`${base}/api/v1/mechanics.json`)
   ).json();

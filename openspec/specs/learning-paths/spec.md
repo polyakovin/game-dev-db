@@ -13,11 +13,11 @@ The portal SHALL expose the four level design, balance, NPC behavior and game ve
 - **THEN** five path cards lead to static localized path pages with ordered lesson links and explicit completion outcomes
 
 #### Scenario: Read without scripts
-- **WHEN** a reader opens /game-dev-db/ru/learn/level-design/ without JavaScript
+- **WHEN** a reader opens /ru/learn/level-design/ without JavaScript
 - **THEN** the description, prerequisites, complete lesson list and practice/lens links remain usable
 
 ### Requirement: Lesson sequence navigation
-New lessons SHALL link to their containing path and adjacent lessons in its authored sequence. Language switching SHALL preserve the lesson or path identity. Links SHALL retain `/game-dev-db/` and trailing slashes.
+New lessons SHALL link to their containing path and adjacent lessons in its authored sequence. Language switching SHALL preserve the lesson or path identity. Links SHALL retain `/` and trailing slashes.
 
 #### Scenario: Continue a path
 - **WHEN** a reader finishes the second lesson of a path

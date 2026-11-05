@@ -6,7 +6,7 @@ import {
   validateContentOrder,
 } from '../src/lib/content-order.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const ids = (items: { id: string }[]) => items.map((item) => item.id);
 
 test('editorial order is stable, non-mutating and retains unranked additions', () => {

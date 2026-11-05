@@ -16,7 +16,7 @@ Every lesson, mechanic family, exercise, lens, learning path, resource and jam S
 The portal SHALL publish validated relationships that explain prerequisites, applications, practice and review. Both ends SHALL expose localized links and relationship labels without JavaScript. Shared sources SHALL expose their usage locations.
 
 #### Scenario: Follow a mechanic application
-- **WHEN** a reader follows a lesson's mechanic link under /game-dev-db/
+- **WHEN** a reader follows a lesson's mechanic link under /
 - **THEN** the exact family opens and links back to the explaining lesson with a meaningful label
 
 #### Scenario: Reject an invalid relation
@@ -31,7 +31,7 @@ The portal SHALL provide bilingual cross-content search covering active knowledg
 - **THEN** matching mechanic results appear with their type, summary and exact canonical URL
 
 #### Scenario: Read without scripts
-- **WHEN** JavaScript is disabled on /game-dev-db/ru/search/
+- **WHEN** JavaScript is disabled on /ru/search/
 - **THEN** localized content-type entry links and search guidance remain available
 
 ### Requirement: Precise attributed exports

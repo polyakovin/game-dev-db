@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 
 for (const lang of ['ru', 'en']) {
   for (const kind of ['lessons/game-loop', 'mechanics/point-and-click']) {

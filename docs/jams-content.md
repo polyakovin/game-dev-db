@@ -1,7 +1,7 @@
 # Game-jam content
 
 `src/data/jams.json` is the single bilingual source for `/ru/jams/`, `/en/jams/`
-and `/api/v1/jams.json`, relative to `/game-dev-db/`.
+and `/api/v1/jams.json`, relative to `/`.
 
 ## Editorial updates
 

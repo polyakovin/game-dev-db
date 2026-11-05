@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const storageKey = 'game-dev-db:theme';
 const darkPaper = 'rgb(25, 29, 28)';
 const lightPaper = 'rgb(247, 246, 242)';

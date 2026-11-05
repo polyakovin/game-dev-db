@@ -5,7 +5,15 @@ import SiteFooter from '../components/SiteFooter.astro';
 import ThemeHead from '../components/ThemeHead.astro';
 import ThemeSwitch from '../components/ThemeSwitch.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
-import { path, absolute, REPO, ui, categories, type Locale } from '../lib/site';
+import {
+  path,
+  absolute,
+  SITE,
+  REPO,
+  ui,
+  categories,
+  type Locale,
+} from '../lib/site';
 interface Props {
   lang: Locale;
   title: string;
@@ -40,8 +48,7 @@ const {
 } = Astro.props;
 const t = ui[lang];
 const other = lang === 'ru' ? 'en' : 'ru';
-const canonical = new URL(Astro.url.pathname, 'https://polyakovin.github.io')
-  .href;
+const canonical = new URL(Astro.url.pathname, SITE).href;
 const nav = [
   { key: 'catalog', href: path(`${lang}/`), icon: 'book' },
   { key: 'searchNav', href: path(`${lang}/search/`), icon: 'search' },

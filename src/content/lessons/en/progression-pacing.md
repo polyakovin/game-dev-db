@@ -58,4 +58,4 @@ Now add a price. An upgrade costing 60 parts, with 10 awarded per encounter, req
 
 > Build a table for three station stages. Show hit thresholds, income, mandatory expenses and encounters before an upgrade. Propose a capability change instead of just increasing a number. Label all values as illustrative.
 
-Apply the [Reward](/game-dev-db/en/lenses/#schell-046) and [Visible Progress](/game-dev-db/en/lenses/#schell-055) lenses, then try [Remove the Market](/game-dev-db/en/practice/#remove-the-market).
+Apply the [Reward](/en/lenses/#schell-046) and [Visible Progress](/en/lenses/#schell-055) lenses, then try [Remove the Market](/en/practice/#remove-the-market).

@@ -8,7 +8,7 @@ You may share and adapt this content, including commercially, under the terms of
 
 An attribution example:
 
-> Adapted from “Lesson title”, Game Dev DB contributors, https://polyakovin.github.io/game-dev-db/en/lessons/lesson-id/, licensed under CC BY 4.0. Changes: translated and shortened.
+> Adapted from “Lesson title”, Game Dev DB contributors, https://gamemechanics.pro/en/lessons/lesson-id/, licensed under CC BY 4.0. Changes: translated and shortened.
 
 Use the actual title, canonical lesson URL, and a truthful description of changes. Attribution does not imply endorsement.
 
@@ -37,8 +37,8 @@ Those notices accompany the published images.
 
 The site serves Golos Text from `@fontsource-variable/golos-text` and IBM Plex Mono from `@fontsource/ibm-plex-mono`. Both font families use the SIL Open Font License 1.1, separate from this project's code and content licenses:
 
-- Golos Text: Copyright 2019 The Golos Text Project Authors. [Published copyright and license notice](https://polyakovin.github.io/game-dev-db/licenses/golos-text.txt).
-- IBM Plex Mono: Copyright 2017 IBM Corp. All rights reserved. [Published copyright and license notice](https://polyakovin.github.io/game-dev-db/licenses/ibm-plex-mono.txt).
+- Golos Text: Copyright 2019 The Golos Text Project Authors. [Published copyright and license notice](https://gamemechanics.pro/licenses/golos-text.txt).
+- IBM Plex Mono: Copyright 2017 IBM Corp. All rights reserved. [Published copyright and license notice](https://gamemechanics.pro/licenses/ibm-plex-mono.txt).
 
 Preserve those notices with redistributed font files. The full notices are supplied by each dependency's `LICENSE` file and accompany the site's published assets.
 

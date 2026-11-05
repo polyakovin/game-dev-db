@@ -12,7 +12,7 @@ Prepared discussion content stays in development until its catalog or precise fa
 
 ## Reading and filters
 
-Both `/game-dev-db/ru/mechanics/` and `/game-dev-db/en/mechanics/` include the entire structure in static HTML. Ready and unfinished entries use the same compact card layout; ready entries are links, unfinished entries are non-interactive cards with a clear status.
+Both `/ru/mechanics/` and `/en/mechanics/` include the entire structure in static HTML. Ready and unfinished entries use the same compact card layout; ready entries are links, unfinished entries are non-interactive cards with a clear status.
 
 The grouped map follows its agreed source order in HTML and its own JSON endpoint. The home page's completed-catalog cards and the internal trees of completed references retain their existing editorial importance order.
 
@@ -20,6 +20,6 @@ Search, group selection and “Только готовые” / “Ready only”
 
 ## Static export and validation
 
-`/game-dev-db/api/v1/mechanic-directions.json` is an additive schema-version-1 endpoint with `indexes` for both languages. Each includes localized groups/directions, canonical index URL, statuses, ready catalog links, additional catalogs and derived counts. `directions` counts the agreed map, while `entries` also includes supplementary general catalogs. No unfinished article body is added to the existing mechanics endpoint.
+`/api/v1/mechanic-directions.json` is an additive schema-version-1 endpoint with `indexes` for both languages. Each includes localized groups/directions, canonical index URL, statuses, ready catalog links, additional catalogs and derived counts. `directions` counts the agreed map, while `entries` also includes supplementary general catalogs. No unfinished article body is added to the existing mechanics endpoint.
 
 The resolver validates source identities, catalog associations and complete localization when imported by the build. `tests/mechanic-directions.spec.ts` checks source parity, missing/archived/published availability transitions, complete rendered HTML and JSON, combined filters, URL state, language switching, keyboard use, themes, mobile layout and static reading. Run `npm run verify` and `npm run test:e2e` before publishing.

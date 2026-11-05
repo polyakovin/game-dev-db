@@ -29,7 +29,7 @@ export default defineConfig({
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'] } }],
   webServer: {
     command: `npm run ${preview ? 'preview' : 'dev'} -- --host 127.0.0.1 --port ${port} --ignore-lock`,
-    url: `${origin}/game-dev-db/ru/`,
+    url: `${origin}/ru/`,
     reuseExistingServer: false,
     timeout: 60_000,
   },

@@ -11,7 +11,7 @@ const legacy =
   `experience-leveling skill-use weapon-proficiency profession-leveling breadth-mastery target-boss-farming rarity-hunting perfect-rolls equipment-sets fragment-collection enhancement-levels property-rerolls gem-rune-upgrades item-evolution duplicate-fusion gathering-routes monster-ingredients loot-salvaging production-chains consumable-supply faction-reputation token-currency access-keys settlement-development recipe-research scaling-dungeons endless-waves repeatable-contracts collectibles prestige-rebirth`.split(
     ' ',
   );
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 
 test('RPG coverage includes four layers, major missing systems and every original identity', () => {
   expect(source.families.length).toBeGreaterThanOrEqual(110);

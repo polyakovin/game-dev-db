@@ -28,7 +28,7 @@ The portal SHALL expose a mechanics index in navigation and on the home catalog.
 - **THEN** the query and section filter clear and the complete catalog returns
 
 ### Requirement: Accessible static catalog reading
-All mechanic catalog content and sources SHALL be available in static HTML under `/game-dev-db/`, with keyboard-operable disclosures, narrow layout support and corresponding language links.
+All mechanic catalog content and sources SHALL be available in static HTML under `/`, with keyboard-operable disclosures, narrow layout support and corresponding language links.
 
 #### Scenario: Read without JavaScript
 - **WHEN** a reader disables JavaScript and opens a catalog
@@ -54,7 +54,7 @@ The portal SHALL publish a `detective` catalog in RU and EN with matching identi
 
 #### Scenario: Discover and search detective mechanics
 - **WHEN** a reader follows the detective card from the home page or mechanics index in either language
-- **THEN** `/game-dev-db/{lang}/mechanics/detective/` opens with section filtering, search and counts derived from the complete source
+- **THEN** `/{lang}/mechanics/detective/` opens with section filtering, search and counts derived from the complete source
 
 #### Scenario: Read and switch language without JavaScript
 - **WHEN** JavaScript is disabled and a reader opens a detective family and follows the language link
@@ -80,7 +80,7 @@ The portal SHALL publish `boss-fight-atlas` and `game-mechanics` catalogs in RU 
 
 #### Scenario: Discover both source catalogs
 - **WHEN** a reader opens the home page or mechanic index in either language
-- **THEN** both catalogs appear and open under `/game-dev-db/{lang}/mechanics/{id}/` with the existing filters and disclosures
+- **THEN** both catalogs appear and open under `/{lang}/mechanics/{id}/` with the existing filters and disclosures
 
 #### Scenario: Follow a game reference
 - **WHEN** a reader expands a source-based mechanic, including without JavaScript
@@ -102,7 +102,7 @@ The portal SHALL publish a bilingual `rpg-grind` reference with at least 110 fam
 
 #### Scenario: Discover and filter RPG grind mechanics
 - **WHEN** a reader opens the home page or mechanics index in either language
-- **THEN** the RPG grind card links to `/game-dev-db/{lang}/mechanics/rpg-grind/`, where the expanded reference can be searched and filtered by explicit layer and subject groups
+- **THEN** the RPG grind card links to `/{lang}/mechanics/rpg-grind/`, where the expanded reference can be searched and filtered by explicit layer and subject groups
 
 #### Scenario: Read without scripts and switch language
 - **WHEN** a reader opens the RPG grind reference without JavaScript or on a narrow screen
@@ -121,7 +121,7 @@ The portal SHALL publish a bilingual `rpg-grind` reference with at least 110 fam
 - **THEN** the reference distinguishes repeated actions, development goals, reward rules and constraints, explains their combinations and states its scope without claiming that every possible combination has been enumerated
 
 ### Requirement: Separate children's play and educational discovery
-The portal SHALL expose `children` and `education` cards instead of the combined card on the home page and mechanics index. Each reference SHALL state its scope and link the other under `/game-dev-db/{lang}/mechanics/`. Children's play SHALL include non-instructional play; education SHALL cover learners beyond children.
+The portal SHALL expose `children` and `education` cards instead of the combined card on the home page and mechanics index. Each reference SHALL state its scope and link the other under `/{lang}/mechanics/`. Children's play SHALL include non-instructional play; education SHALL cover learners beyond children.
 
 #### Scenario: Discover the separate catalogs
 - **WHEN** a reader browses the home page or mechanics index in RU or EN
@@ -146,7 +146,7 @@ The mechanics index SHALL show all 329 directions in 32 groups in RU and EN with
 
 #### Scenario: Browse the complete structure
 - **WHEN** a reader opens the mechanics index in either language
-- **THEN** all 329 directions appear in their agreed groups, unfinished material has its localized label, and every active existing catalog remains linked under `/game-dev-db/`
+- **THEN** all 329 directions appear in their agreed groups, unfinished material has its localized label, and every active existing catalog remains linked under `/`
 
 #### Scenario: A prepared direction has no published material
 - **WHEN** a direction has neither an active standalone catalog nor an existing active catalog/family target
@@ -181,7 +181,7 @@ Both direction indexes SHALL remain readable without JavaScript, fit a 375-pixel
 
 #### Scenario: Retrieve the structure programmatically
 
-- **WHEN** an agent reads `/game-dev-db/api/v1/mechanic-directions.json`
+- **WHEN** an agent reads `/api/v1/mechanic-directions.json`
 - **THEN** both languages have equivalent group/topic identities and statuses, unfinished entries have no article URL, and ready entries link to existing catalog routes
 
 ### Requirement: Discussed genre and design references
@@ -195,7 +195,7 @@ The portal SHALL publish complete bilingual catalogs for visual novels, dialogue
 The portal SHALL publish complete bilingual references for phone camera, microphone, motion, flashlight, haptics, touch, magnetometer, physical keyboard, mouse and trackpad interactions. Applicable hardware, recognition, calibration and platform restrictions SHALL remain available. Hypothetical applications SHALL NOT be presented as verified implementations.
 
 #### Scenario: Read a hardware interaction without JavaScript
-- **WHEN** a reader opens a hardware catalog under `/game-dev-db/{lang}/mechanics/` without JavaScript
+- **WHEN** a reader opens a hardware catalog under `/{lang}/mechanics/` without JavaScript
 - **THEN** its complete actions, applications and limitations are accessible through native disclosures, with the corresponding language link
 
 ### Requirement: Complete discussion additions and compatible discovery
@@ -227,7 +227,7 @@ Compatibility catalogs SHALL retain their original content and identities while 
 The portal SHALL display authored section groups as localized subtitles with concise child section names in the contents, article and section selector. Ungrouped catalogs SHALL retain their flat presentation. Group labels SHALL be available without JavaScript, appear in Markdown and additive v1 JSON metadata, and preserve existing identities and URLs.
 
 #### Scenario: Read grouped RPG grind sections
-- **WHEN** a reader opens `/game-dev-db/{lang}/mechanics/rpg-grind/` in either language, including without JavaScript or at a narrow width
+- **WHEN** a reader opens `/{lang}/mechanics/rpg-grind/` in either language, including without JavaScript or at a narrow width
 - **THEN** activities, goals, rewards and constraints each appear once as a group subtitle in the contents, and their child links use section names without repeating that subtitle
 - **AND** those links resolve to the existing section anchors with the same hierarchy in the article
 
@@ -252,7 +252,7 @@ All directions SHALL resolve to a substantive existing topic-specific reference 
 
 #### Scenario: Assess an overview
 - **WHEN** a reader opens a newly authored direction in either language
-- **THEN** the definition, four or more variants, illustrative scenario, check and sources can be read without JavaScript under the GitHub Pages base path
+- **THEN** the definition, four or more variants, illustrative scenario, check and sources can be read without JavaScript under the configured site root
 
 ### Requirement: Equivalent overview discovery and exports
 New group catalogs and their direction families SHALL use the existing HTML, search, JSON, Markdown and knowledge export pipeline. Direction target metadata SHALL extend v1 additively. Invalid targets, incomplete localization or missing overview content SHALL fail validation before publication. Examples SHALL distinguish original design proposals from sourced observations and verified results.
@@ -266,7 +266,7 @@ New group catalogs and their direction families SHALL use the existing HTML, sea
 - **THEN** content validation rejects publication rather than making the direction ready
 
 ### Requirement: Canonical mechanic card discovery
-All catalog placements of an authored illustrated mechanic SHALL link to its same language-specific canonical card under the GitHub Pages base path. Compact display titles SHALL not replace stable record identities, full taxonomy content or source attribution in machine exports. Archived compatibility records SHALL retain their prior behavior.
+All catalog placements of an authored illustrated mechanic SHALL link to its same language-specific canonical card under the configured site root. Compact display titles SHALL not replace stable record identities, full taxonomy content or source attribution in machine exports. Archived compatibility records SHALL retain their prior behavior.
 
 #### Scenario: Discover a card from multiple catalogs
 - **WHEN** the same canonical mechanic appears in multiple active categories

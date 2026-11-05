@@ -44,3 +44,14 @@ with a dated record and explanation.
 - Rationale: Reuse the owner's configured account without creating credentials or changing hosting. Filter paths beginning with `/game-dev-db/` to distinguish this project from other sites on the shared hostname. Reading, discovery and machine exports must remain usable when analytics is unavailable.
 - Maximum next-step budget: Zero additional paid-service spend.
 - What would reverse this decision: The owner withdraws the request or changes the analytics property or provider.
+
+
+### 2026-11-05 — custom production domain — `go`
+
+- Context: The owner attached `gamemechanics.pro` to GitHub Pages and requested the required URL changes, checks and release.
+- Evidence refs: The owner's 2026-11-05 project-chat request and supplied public Cloudflare Web Analytics token; GitHub Pages API reports `cname=gamemechanics.pro`, workflow publishing, an approved certificate and enforced HTTPS; public DNS resolves the apex to the four GitHub Pages IPv4 addresses.
+- Decision: Publish at `https://gamemechanics.pro/` with an empty project prefix. Use that origin for canonical metadata, bilingual discovery, robots, assets and all v1 exports. This supersedes the production address in the 2026-10-09 decision, without changing commercial gates or hosting scope. Connect the supplied `gamemechanics.pro` analytics property and leave the shared `polyakovin.github.io` property unchanged.
+- Rationale: GitHub Pages serves a custom domain at its root and redirects old github.io project URLs. Retaining the former prefix breaks the root language redirect and internal navigation. A separate analytics property keeps this site's visits distinct after the hostname change.
+- Maximum next-step budget: Zero additional paid-service spend.
+- Operational limitation: `www.gamemechanics.pro` still points to Porkbun parking. DNS owner access is required to replace its CNAME with `polyakovin.github.io`; the apex domain release does not depend on this optional alias. See `docs/custom-domain.md`.
+- What would reverse this decision: The owner changes the production domain or analytics configuration.

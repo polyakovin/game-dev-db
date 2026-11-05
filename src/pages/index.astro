@@ -1,5 +1,5 @@
 ---
-import { path } from '../lib/site';
+import { path, absolute } from '../lib/site';
 import '../styles/theme.css';
 import ThemeHead from '../components/ThemeHead.astro';
 ---
@@ -12,7 +12,7 @@ import ThemeHead from '../components/ThemeHead.astro';
     <meta http-equiv="refresh" content={`0;url=${path('ru/')}`} />
     <title>Game Dev DB</title>
     <ThemeHead />
-    <link rel="canonical" href="https://polyakovin.github.io/game-dev-db/ru/" />
+    <link rel="canonical" href={absolute('ru/')} />
   </head>
   <body>
     <h1>Game Dev DB</h1>

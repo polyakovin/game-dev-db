@@ -5,7 +5,7 @@ import {
   validatePractice,
 } from '../src/lib/practice.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 
 test('practice validation rejects missing translations, mismatched lists and invalid identities', () => {
   expect(validatePractice()).toEqual([]);
@@ -173,7 +173,7 @@ test('practice exports and discovery retain complete content, provenance and can
   ).json();
   expect(manifest.counts.practiceTasks).toBe(14);
   expect(manifest.endpoints.practice).toBe(
-    'https://polyakovin.github.io/game-dev-db/api/v1/practice.json',
+    'https://gamemechanics.pro/api/v1/practice.json',
   );
   const response = await request.get(`${base}/api/v1/practice.json`);
   expect(response.ok()).toBe(true);

@@ -61,4 +61,4 @@ Now place the corridors in a game. Include robot width when computing traversabi
 
 > Separate route search from robot movement. Return the route, total cost and status. Compare BFS and Dijkstra on the supplied graph, then handle blockages. Do not declare navigation complete based on one drawn line.
 
-Review the model through the [Functional Space lens](/game-dev-db/en/lenses/#schell-026).
+Review the model through the [Functional Space lens](/en/lenses/#schell-026).

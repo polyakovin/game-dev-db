@@ -52,7 +52,7 @@ illustrated presentation at the same canonical URL. The full record sections
 remain in machine formats and catalogs. Archived mechanic records and other
 focused content types still render all sections. See [the preview contract](mechanic-previews.md).
 
-All routes are relative to the `/game-dev-db/` site root:
+All routes are relative to the `/` site root:
 
 - `{lang}/search/`: combined type/text search, aliases, query URLs and static section links.
 - `api/v1/knowledge/{lang}/index.json`: active metadata only, without bodies.

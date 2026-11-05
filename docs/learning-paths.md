@@ -6,7 +6,7 @@ Path and lesson sequence is pedagogical execution order; it is not sorted by cat
 
 The shared `src/lib/learning-paths.mjs` helper localizes records, constructs canonical URLs and validates cross-references. `npm run check:content` rejects invalid dates, missing translations, duplicate identities/membership and missing lesson, practice or lens targets. Add exercises/lenses to their own source datasets before referring to them.
 
-Human pages are `{lang}/learn/{id}/` relative to `/game-dev-db/`. Four homepage cards expose them; complete prerequisites, lesson sequence and practice/lens links work without JavaScript. New lesson pages link back to their path and to available previous/next lessons. Language switching retains identity. Reading estimates sum lesson minutes and exclude exercise time.
+Human pages are `{lang}/learn/{id}/` relative to `/`. Four homepage cards expose them; complete prerequisites, lesson sequence and practice/lens links work without JavaScript. New lesson pages link back to their path and to available previous/next lessons. Language switching retains identity. Reading estimates sum lesson minutes and exclude exercise time.
 
 `api/v1/learning-paths.json` is an additive v1 export advertised by the manifest and `llms.txt`. It has `schemaVersion`, `license`, `codeLicense`, `attribution` and a `paths` array. Each localized record includes `id`, `lang`, `title`, `description`, `updatedAt`, `url`, ordered `lessons` and `prerequisites` objects with `id`, `url`, `markdownUrl`, and `practice`/`lenses` objects with `id` and `url`. It retains license and attribution fields. Manifest `counts.learningPaths` counts shared path identities, not language records.
 

@@ -1,8 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { getMechanicPreview } from '../src/lib/mechanic-previews.mjs';
 
-const route = (lang: string) =>
-  `/game-dev-db/${lang}/knowledge/mechanic/shared-family-02/`;
+const route = (lang: string) => `/${lang}/knowledge/mechanic/shared-family-02/`;
 
 for (const lang of ['ru', 'en'] as const) {
   for (const viewport of [

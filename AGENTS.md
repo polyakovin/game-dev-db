@@ -9,7 +9,7 @@
 
 ## Architecture and content
 
-- Astro builds a static site for `https://polyakovin.github.io/game-dev-db/`; all internal URLs must respect `/game-dev-db/`.
+- Astro builds a static site for `https://gamemechanics.pro/` at the domain root. Use `src/lib/site-config.mjs` and shared URL helpers for navigation, assets, metadata and exports.
 - Lessons live in `src/content/lessons/{ru,en}/{id}.md`. Frontmatter is the source of truth; see `docs/content-guide.md`.
 - Each lesson has a matching RU/EN pair with the same stable `id`. Keep metadata, sources, examples, and meaning aligned.
 - Generate lesson HTML, search data, Markdown, and JSON from the same content collection. Curated resources live in `src/data/resources.json`. Do not hand-edit generated exports or `dist/`.
@@ -32,5 +32,5 @@
 - Code is MIT; original lessons and translations are CC BY 4.0. External resources retain their licenses. See `CONTENT-LICENSE.md`.
 - Never commit credentials, private messages, personal customer data, `.env`, service accounts, or payment information. Commit only sanitized examples.
 - External outreach, billing, spending, or publication beyond the authorized GitHub Pages scope requires explicit human authorization.
-- The owner's 2026-10-30 request authorizes Cloudflare Web Analytics using the existing `polyakovin.github.io` property. Keep its beacon production-only and preserve analytics-independent reading and exports. Other analytics and webmaster account setup remain outside scope. See `docs/web-analytics.md` and `DECISIONS.md`.
+- The owner's 2026-10-30 request authorizes Cloudflare Web Analytics; the 2026-11-05 domain migration uses the supplied `gamemechanics.pro` property token. Keep its beacon production-only and preserve analytics-independent reading and exports. Other analytics and webmaster account setup remain outside scope. See `docs/web-analytics.md` and `DECISIONS.md`.
 - Keep these instructions operational. Put design explanations in `docs/`, change contracts in OpenSpec, and dated decisions in the append-only `DECISIONS.md`.

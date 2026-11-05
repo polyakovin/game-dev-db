@@ -21,7 +21,7 @@ Game code knows every object's coordinates. An NPC does not have to. Here, AI me
 
 Separate observation from decision. Perception reports “target visible” or “noise heard,” memory retains the last known location, and behavior selects an action. Martin Walsh's Game AI Pro 2 chapter examines perception and awareness as game models where consistent rules and feedback matter.
 
-Start with [States and transitions](/game-dev-db/en/lessons/state-machines/). Explicitly define which information each state can access. If an NPC uses hidden player coordinates after losing sight, that should be a deliberate game rule rather than accidental data leakage.
+Start with [States and transitions](/en/lessons/state-machines/). Explicitly define which information each state can access. If an NPC uses hidden player coordinates after losing sight, that should be a deliberate game rule rather than accidental data leakage.
 
 <span id="example-an-observation-drone"></span>
 
@@ -67,4 +67,4 @@ Before the first observation, memory is assumed to be expired. This variant prov
 
 > Implement separate observation, memory and drone state. Prepare four test scenes and log transition reasons. State the ray and update-frequency simplifications. Visually identify searching without relying on color alone.
 
-Review through the [State Machine](/game-dev-db/en/lenses/#schell-028) and [Feedback](/game-dev-db/en/lenses/#schell-063) lenses.
+Review through the [State Machine](/en/lenses/#schell-028) and [Feedback](/en/lenses/#schell-063) lenses.

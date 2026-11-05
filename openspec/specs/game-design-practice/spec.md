@@ -16,7 +16,7 @@ The portal SHALL provide the twelve original exercises and two integration exerc
 
 ### Requirement: Accessible practice discovery
 
-The portal SHALL expose practice in navigation and on both home pages. The practice page SHALL combine full-content text search, topic and maximum-duration filters, result counts, empty state and reset, and provide keyboard-operable disclosures and stable anchors under /game-dev-db/.
+The portal SHALL expose practice in navigation and on both home pages. The practice page SHALL combine full-content text search, topic and maximum-duration filters, result counts, empty state and reset, and provide keyboard-operable disclosures and stable anchors under /.
 
 #### Scenario: Combine filters and recover
 - **WHEN** a reader combines query, topic and duration and then resets a query with no results

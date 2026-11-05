@@ -64,10 +64,10 @@ for (const lang of ['ru', 'en'] as const) {
   }) => {
     const source = overviewCatalogs[0];
     const family = source.families[0];
-    await page.goto(`/game-dev-db/${lang}/mechanics/`);
+    await page.goto(`/${lang}/mechanics/`);
     await page.locator(`#${family.id} a`).click();
     await expect(page).toHaveURL(
-      `/game-dev-db/${lang}/mechanics/${source.id}/#${family.id}`,
+      `/${lang}/mechanics/${source.id}/#${family.id}`,
     );
     await expect(
       page.locator(`[data-family][id="${family.id}"]`),

@@ -62,4 +62,4 @@ If the task requires a quick reaction, consider a separate reaction-window optio
 
 > Make a barrier table for the pumping station. For each barrier, propose a setting or alternative cue and a full-task acceptance scenario. List untested cases separately. Preserve essential feedback when effects are disabled.
 
-Continue with [Rhythm Without Hurry](/game-dev-db/en/practice/#rhythm-without-hurry) and the [Physical Interface lens](/game-dev-db/en/lenses/#schell-060).
+Continue with [Rhythm Without Hurry](/en/practice/#rhythm-without-hurry) and the [Physical Interface lens](/en/lenses/#schell-060).

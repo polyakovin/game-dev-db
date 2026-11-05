@@ -636,7 +636,7 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
   for (const edge of editorialRelations) connect(edge.from, edge.type, edge.to);
   for (const lesson of lessons) {
     for (const match of lesson.body.matchAll(
-      /\]\(\/game-dev-db\/(?:ru|en)\/(lessons|practice|lenses)\/(?:([^/#)]+)\/)?(?:#([^)]*))?\)/g,
+      /\]\(\/(?:ru|en)\/(lessons|practice|lenses)\/(?:([^/#)]+)\/)?(?:#([^)]*))?\)/g,
     )) {
       const type = { lessons: 'lesson', practice: 'practice', lenses: 'lens' }[
         match[1]

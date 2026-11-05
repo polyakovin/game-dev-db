@@ -74,4 +74,4 @@ After introducing the rule, ask players to indicate where the guard will go and 
 
 > Take one rule from my game world and propose two situations in which it changes player actions. Choose one for a small prototype. Describe actions, consequences, limits and a way to test understanding of the rule. Identify details that can wait. List assumptions and questions that need my decision separately; do not invent playtest results.
 
-Use [Scope and a testable prototype](/game-dev-db/en/lessons/scope-and-prototype/) to bound the work. Review coherence with the [World](/game-dev-db/en/lenses/#schell-084) and [Unification](/game-dev-db/en/lenses/#schell-011) lenses.
+Use [Scope and a testable prototype](/en/lessons/scope-and-prototype/) to bound the work. Review coherence with the [World](/en/lenses/#schell-084) and [Unification](/en/lenses/#schell-011) lenses.

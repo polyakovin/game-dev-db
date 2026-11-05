@@ -12,7 +12,7 @@ import {
 import { searchKnowledge } from '../src/lib/knowledge-search.mjs';
 import { resolveMechanicCatalog } from '../src/lib/mechanic-source.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const lessons = (lang: string) =>
   readdirSync(`src/content/lessons/${lang}`)
     .filter((file) => file.endsWith('.md'))
@@ -129,6 +129,25 @@ test('knowledge validation rejects dangling relations, duplicate sections and pr
   ).toThrow('unknown mechanic reference');
 });
 
+test('root-relative lesson links retain practice, review and lesson relationships', () => {
+  for (const data of Object.values(datasets)) {
+    for (const expected of [
+      {
+        from: 'lesson/choice-cost',
+        type: 'practices',
+        to: 'practice/last-ferry',
+      },
+      { from: 'lesson/choice-cost', type: 'reviews', to: 'lens/schell-039' },
+      {
+        from: 'lesson/npc-perception',
+        type: 'related',
+        to: 'lesson/state-machines',
+      },
+    ])
+      expect(data.edges).toContainEqual(expected);
+  }
+});
+
 test('search finds body text and aliases, excludes archives and respects content types', () => {
   const search = knowledgeIndex(datasets.ru, { search: true }).records;
   expect(
@@ -204,7 +223,7 @@ for (const lang of ['ru', 'en'] as const) {
     await expect(page.locator('[data-knowledge-result]').first()).toBeVisible();
     await expect(
       page.locator('[data-knowledge-result]').first(),
-    ).toHaveAttribute('href', /^\/game-dev-db\//);
+    ).toHaveAttribute('href', /^\//);
     expect(
       await page.locator('[data-knowledge-result]').count(),
     ).toBeGreaterThan(0);

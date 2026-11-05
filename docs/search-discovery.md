@@ -8,7 +8,7 @@ The public HTTP audit runs only when explicitly invoked; it does not collect vis
 
 ## Public entry points
 
-All paths are relative to `https://polyakovin.github.io/game-dev-db/`:
+All paths are relative to `https://gamemechanics.pro/`:
 
 - `llms.txt`: common entry map and existing collection exports.
 - `llms/{lang}.txt`: compact localized topic and retrieval guide.
@@ -41,18 +41,16 @@ Use the existing owner accounts. Do not create accounts, accept terms or claim
 verification on the owner's behalf without the required authenticated flow.
 
 1. In [Google Search Console](https://search.google.com/search-console), add the
-   URL-prefix property `https://polyakovin.github.io/game-dev-db/`. Use the exact
-   property prefix, not a domain property for `github.io`. Choose HTML-file
+   URL-prefix property `https://gamemechanics.pro/`. Use the exact
+   property prefix, or verify the `gamemechanics.pro` domain with its supplied DNS record. Choose HTML-file
    verification. Put the exact supplied public verification file in `public/`,
    deploy, then click Verify. A supplied meta tag can instead be added to the
    shared Layout and root landing page. Never invent a verification token.
 2. In [Bing Webmaster Tools](https://www.bing.com/webmasters/), import the verified
    Search Console property if available, or use its supplied verification file.
 3. In [Yandex Webmaster](https://webmaster.yandex.ru/), add the same site prefix and
-   follow the supplied verification flow for the hosted path. Verify the service
-   accepts that path; a requirement for host-wide verification belongs to the
-   separate user-site repository and needs its owner access.
-4. Submit `https://polyakovin.github.io/game-dev-db/sitemap.xml` in each verified
+   follow the supplied verification flow for the custom domain.
+4. Submit `https://gamemechanics.pro/sitemap.xml` in each verified
    site's Sitemaps section. Check processing, crawl errors and indexed pages.
 5. Inspect representative RU/EN lessons and focused mechanic pages using each
    service's URL inspection and recrawl tools. Save real submission and crawl
@@ -62,7 +60,7 @@ The production HTTP audit is reproducible:
 
 ```bash
 npm run check:discovery
-npm run check:discovery -- http://127.0.0.1:4322/game-dev-db/
+npm run check:discovery -- http://127.0.0.1:4322/
 ```
 
 It validates entry points, sitemap membership and representative canonical HTML,
@@ -77,19 +75,16 @@ the same artifact. Screenshots use Playwright's per-test output directory on all
 
 ## Host robots and AI crawlers
 
-Only `https://polyakovin.github.io/robots.txt` controls this host. The project file
-at `/game-dev-db/robots.txt` remains a compatibility file, not effective host policy.
-Its presence must not be reported as configured crawler access. A host-root 404
-does not prohibit crawling. A valid sitemap can be submitted directly through
-webmaster accounts. See [Google robots placement](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt).
-
-If the separate `polyakovin.github.io` user-site repository is available, merge
-the following sitemap directive into its existing root policy without changing
-other hosted projects' rules:
+`https://gamemechanics.pro/robots.txt` is now the effective host policy, generated
+from `public/robots.txt`. It allows public crawling at `/` and advertises:
 
 ```text
-Sitemap: https://polyakovin.github.io/game-dev-db/sitemap.xml
+Sitemap: https://gamemechanics.pro/sitemap.xml
 ```
+
+The old shared `polyakovin.github.io` host has its own policy, outside this
+repository. Do not change other projects' rules when maintaining this site.
+See [Google robots placement](https://developers.google.com/crawling/docs/robots-txt/create-robots-txt).
 
 Keep Googlebot, Bingbot, YandexBot, OAI-SearchBot, PerplexityBot and Claude-SearchBot
 allowed for the project. Blanket allow rules are unnecessary when nothing blocks

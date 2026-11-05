@@ -3,7 +3,7 @@ import { load } from 'cheerio';
 import { jamData, jamSnapshot, validateJams } from '../src/lib/jams.mjs';
 import { currentJams, jamStatus } from '../src/lib/jam-time.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const instant = '2030-01-01T00:00:00Z';
 
 test('jam time rules use inclusive starts, exclusive deadlines, offsets and useful ordering', () => {
@@ -299,7 +299,7 @@ test('jam JSON and discovery publish a source-aligned current snapshot', async (
   const manifest = await (
     await request.get(`${base}/api/v1/manifest.json`)
   ).json();
-  expect(manifest.endpoints.jams).toMatch(/\/game-dev-db\/api\/v1\/jams.json$/);
+  expect(manifest.endpoints.jams).toMatch(/\/api\/v1\/jams.json$/);
   expect(manifest.counts.jams).toBe(
     currentJams(jamData.events, Date.now()).length,
   );

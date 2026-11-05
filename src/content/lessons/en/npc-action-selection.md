@@ -62,4 +62,4 @@ To prevent close scores causing rapid switching, retain the current action until
 
 > Implement selection as a pure function of a world snapshot and current action. Keep execution separate. Prepare a boundary-case table and explain every result without random selection. Do not connect a language model to per-frame control.
 
-Review through the [Action](/game-dev-db/en/lenses/#schell-031) and [Transparency](/game-dev-db/en/lenses/#schell-062) lenses.
+Review through the [Action](/en/lenses/#schell-031) and [Transparency](/en/lenses/#schell-062) lenses.

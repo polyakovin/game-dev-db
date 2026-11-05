@@ -10,14 +10,14 @@ game project's AGENTS.md. Start with metadata, then fetch selected individual
 records. Search discovery, webmaster registration and measurement are documented
 in [search discovery](search-discovery.md).
 
-1. Fetch `https://polyakovin.github.io/game-dev-db/llms.txt` to discover the dataset.
-2. Read `https://polyakovin.github.io/game-dev-db/api/v1/manifest.json` and select the desired export.
+1. Fetch `https://gamemechanics.pro/llms.txt` to discover the dataset.
+2. Read `https://gamemechanics.pro/api/v1/manifest.json` and select the desired export.
 3. Use lesson metadata to choose a topic and the user's language. A lesson's stable `id` joins its RU and EN versions.
 4. Fetch only the selected Markdown from `content/{lang}/{id}.md`, or use `api/v1/lessons.json` for local indexing. `llms-full.txt` is available when the complete corpus is appropriate.
 5. Retain the lesson title, canonical URL, language, update date, sources, and license attribution with retrieved text.
 6. Check engine-specific claims against the linked primary documentation and the target project's actual version before changing code.
 
-All endpoint paths are relative to `https://polyakovin.github.io/game-dev-db/`. These files are static snapshots. Do not invent an API query language, authentication flow, or a live freshness guarantee.
+All endpoint paths are relative to `https://gamemechanics.pro/`. These files are static snapshots. Do not invent an API query language, authentication flow, or a live freshness guarantee.
 
 Each individual Markdown export includes the original lesson metadata and body plus frontmatter fields `url`, `markdownUrl`, `attribution`, `license`, and `codeLicense`. Use `url` for the canonical HTML citation, `license: CC-BY-4.0` for the educational content, and `codeLicense: MIT` for original code examples. Frontmatter formatting may differ from the repository source; the authored data and lesson body are retained.
 

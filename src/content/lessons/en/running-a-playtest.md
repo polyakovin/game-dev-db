@@ -60,4 +60,4 @@ Afterward, ask which goal the player pursued at an ambiguous moment. Their answe
 
 > Prepare a five-minute station playtest: one question, a neutral task, an observation table and follow-up questions. Do not invent participants or results. After receiving real notes, propose one next experiment.
 
-Use the [Playtesting lens](/game-dev-db/en/lenses/#schell-103) and [Three-Minute Museum](/game-dev-db/en/practice/#three-minute-museum).
+Use the [Playtesting lens](/en/lenses/#schell-103) and [Three-Minute Museum](/en/practice/#three-minute-museum).

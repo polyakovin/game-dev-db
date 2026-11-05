@@ -25,7 +25,7 @@ validates IDs, duration, levels, source links and bilingual completeness.
 `npm run check:content` runs that validation. `npm run check:dist` compares
 every exercise field/list in HTML and the full JSON/Markdown with the source.
 
-Routes relative to `/game-dev-db/`:
+Routes relative to `/`:
 
 - `{lang}/practice/`, with exercise anchors `#{id}`.
 - `api/v1/practice.json`, with a version-1 envelope and complete localized

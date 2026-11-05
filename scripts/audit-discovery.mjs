@@ -1,13 +1,12 @@
 import { load } from 'cheerio';
+import { SITE, BASE } from '../src/lib/site-config.mjs';
 
 // Only public URLs are read. No account access, submissions or credentials.
-const target = new URL(
-  process.argv[2] ?? 'https://polyakovin.github.io/game-dev-db/',
-);
+const target = new URL(process.argv[2] ?? `${SITE}${BASE}/`);
 if (!['http:', 'https:'].includes(target.protocol))
   throw new Error('Expected an HTTP(S) site URL');
 if (!target.pathname.endsWith('/')) target.pathname += '/';
-const canonicalRoot = 'https://polyakovin.github.io/game-dev-db/';
+const canonicalRoot = `${SITE}${BASE}/`;
 const observations = [];
 const failures = [];
 const warnings = [];
@@ -106,7 +105,8 @@ for (const lang of ['ru', 'en']) {
     if (payload.record?.url !== entry.url || !markdown.includes(entry.url))
       failures.push(`${lang}/${entry.key}: inconsistent citation URL`);
     if (
-      html('h1').text() !== entry.title ||
+      html('h1').text() !==
+        (payload.record?.attributes?.preview?.title ?? entry.title) ||
       html('link[rel="canonical"]').attr('href') !== entry.url
     )
       failures.push(`${lang}/${entry.key}: incorrect HTML identity`);
@@ -118,25 +118,32 @@ for (const lang of ['ru', 'en']) {
       failures.push(`${lang}/${entry.key}: missing language alternates`);
   }
 }
-try {
-  const response = await fetch(new URL('/robots.txt', target), {
-    signal: AbortSignal.timeout(15_000),
-  });
-  if (response.status === 404)
-    warnings.push(
-      'Host-root robots.txt is absent. This does not prohibit crawling. Submit sitemap through webmaster accounts; a project-subdirectory robots.txt is not host policy.',
-    );
-  else if (!response.ok)
-    warnings.push(
-      `Host-root robots.txt: HTTP ${response.status}; inspect crawler access.`,
-    );
-  else
-    warnings.push(
-      'Host-root robots.txt exists; inspect its rules in webmaster tools for each crawler and URL.',
-    );
-} catch (error) {
-  warnings.push(`Host-root robots check unavailable: ${error.message}`);
-}
+if (target.pathname === '/') {
+  const robots = await read('robots.txt', 'text/plain');
+  if (!robots.includes(`Sitemap: ${canonicalRoot}sitemap.xml`))
+    failures.push('Host robots.txt does not advertise the canonical sitemap');
+  if (!/^Allow:\s*\/\s*$/m.test(robots) || /^Disallow:\s*\/\s*$/m.test(robots))
+    failures.push('Host robots.txt does not allow public crawling');
+} else
+  try {
+    const response = await fetch(new URL('/robots.txt', target), {
+      signal: AbortSignal.timeout(15_000),
+    });
+    if (response.status === 404)
+      warnings.push(
+        'Host-root robots.txt is absent. This does not prohibit crawling. Submit sitemap through webmaster accounts; a project-subdirectory robots.txt is not host policy.',
+      );
+    else if (!response.ok)
+      warnings.push(
+        `Host-root robots.txt: HTTP ${response.status}; inspect crawler access.`,
+      );
+    else
+      warnings.push(
+        'Host-root robots.txt exists; inspect its rules in webmaster tools for each crawler and URL.',
+      );
+  } catch (error) {
+    warnings.push(`Host-root robots check unavailable: ${error.message}`);
+  }
 console.log(
   JSON.stringify(
     {

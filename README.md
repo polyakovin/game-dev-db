@@ -2,7 +2,7 @@
 
 A bilingual, open-source knowledge base for developers building games with AI assistance. Learn the principles behind a working game, use practical checks during development, and give agents structured, attributable context.
 
-**Website:** [Русский](https://polyakovin.github.io/game-dev-db/ru/) · [English](https://polyakovin.github.io/game-dev-db/en/)
+**Website:** [Русский](https://gamemechanics.pro/ru/) · [English](https://gamemechanics.pro/en/)
 
 ## What is here
 
@@ -11,7 +11,7 @@ A bilingual, open-source knowledge base for developers building games with AI as
 - Curated links to primary documentation and useful external learning resources.
 - Current and upcoming game jams with official entry links, automatic deadline expiry and discovery calendars in Russian and English.
 - Bilingual mechanic references for genres, puzzles, dialogue, drawing, investigation, children and education, RPG grind, engagement, electronic devices and physical input. Includes complete discussion catalogs and the attributed Boss Fight Atlas and Game Mechanics indexes; see [coverage](docs/research/discussion-mechanics.md).
-- Illustrated RU/EN cards for all 1268 active canonical mechanics: short definitions, contextual screenshot tooltips and compressed WebP images. Browse the [card library](https://polyakovin.github.io/game-dev-db/ru/mechanics/cards/).
+- Illustrated RU/EN cards for all 1268 active canonical mechanics: short definitions, contextual screenshot tooltips and compressed WebP images. Browse the [card library](https://gamemechanics.pro/ru/mechanics/cards/).
 - Fourteen original game-design exercises, including NPC and progression capstones, with constraints, deliverables and checks in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.
@@ -29,7 +29,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Astro, including the `/game-dev-db/` base path. Before submitting a change:
+Open the local URL printed by Astro; the site runs at `/`. Before submitting a change:
 
 ```bash
 npm run verify
@@ -39,11 +39,11 @@ npm run verify
 
 ## Read with an agent
 
-Start with [llms.txt](https://polyakovin.github.io/game-dev-db/llms.txt), then fetch only the lessons needed for the task.
+Start with [llms.txt](https://gamemechanics.pro/llms.txt), then fetch only the lessons needed for the task.
 
-Language-specific starts: [Русский](https://polyakovin.github.io/game-dev-db/llms/ru.txt)
-and [English](https://polyakovin.github.io/game-dev-db/llms/en.txt). The
-[agent guide](https://polyakovin.github.io/game-dev-db/en/for-agents/) includes an
+Language-specific starts: [Русский](https://gamemechanics.pro/llms/ru.txt)
+and [English](https://gamemechanics.pro/llms/en.txt). The
+[agent guide](https://gamemechanics.pro/en/for-agents/) includes an
 AGENTS.md integration snippet. Individual mechanics, exercises and lenses have
 focused bilingual HTML pages alongside JSON and Markdown. See
 [discovery operations and evaluation](docs/search-discovery.md).
@@ -70,11 +70,11 @@ use the shared search at `{lang}/search/`. See [the common content contract](doc
 | Individual mechanic catalog | `content/mechanics/{lang}/{id}.md`                |
 | Practice collection         | `content/practice/{lang}/game-design-practice.md` |
 
-The production site root is `https://polyakovin.github.io/game-dev-db/`. These are public files generated at build time, without an API key or server. Individual Markdown exports preserve lesson content and source metadata and add canonical URLs, attribution, and license fields to frontmatter. Read [the agent workflow](docs/agent-workflow.md) for attribution, language, and update guidance.
+The production site root is `https://gamemechanics.pro/`. These are public files generated at build time, without an API key or server. Individual Markdown exports preserve lesson content and source metadata and add canonical URLs, attribution, and license fields to frontmatter. Read [the agent workflow](docs/agent-workflow.md) for attribution, language, and update guidance.
 
 Production HTML includes Cloudflare Web Analytics using the owner's existing hostname property. Local development omits the beacon; reading and machine exports work without it. See [analytics configuration and verification](docs/web-analytics.md).
 
-Game jams are available at [`ru/jams/`](https://polyakovin.github.io/game-dev-db/ru/jams/) and [`en/jams/`](https://polyakovin.github.io/game-dev-db/en/jams/). The browser hides events at their submission deadline. A daily verified deployment refreshes static snapshots; JSON consumers must filter `endsAt > now` at read time. New events remain curated editorial additions. See [the jam content contract](docs/jams-content.md).
+Game jams are available at [`ru/jams/`](https://gamemechanics.pro/ru/jams/) and [`en/jams/`](https://gamemechanics.pro/en/jams/). The browser hides events at their submission deadline. A daily verified deployment refreshes static snapshots; JSON consumers must filter `endsAt > now` at read time. New events remain curated editorial additions. See [the jam content contract](docs/jams-content.md).
 
 ## Contribute
 

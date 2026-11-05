@@ -50,7 +50,7 @@ export async function GET() {
   }
   const urls = [...entries].map(([url, modified]) => {
     const alternates = locales.map((lang) =>
-      url.replace(/\/game-dev-db\/(ru|en)\//, `/game-dev-db/${lang}/`),
+      absolute(new URL(url).pathname.replace(/^\/(ru|en)\//, `${lang}/`)),
     );
     return `<url><loc>${xml(url)}</loc>${modified ? `<lastmod>${xml(modified)}</lastmod>` : ''}${alternates.map((href, i) => `<xhtml:link rel="alternate" hreflang="${locales[i]}" href="${xml(href)}"/>`).join('')}</url>`;
   });

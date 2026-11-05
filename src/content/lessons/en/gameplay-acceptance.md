@@ -62,4 +62,4 @@ In a fixed-step model, check completion on the first tick where accumulated game
 
 > Implement the dash contract and scenario table. Automate pure transitions and describe the remaining checks for the target device. Separate executed checks, unexecuted checks and discrepancies in the report. Do not invent a successful run.
 
-Compare transitions with [States and transitions](/game-dev-db/en/lessons/state-machines/) and the [Rules lens](/game-dev-db/en/lenses/#schell-033).
+Compare transitions with [States and transitions](/en/lessons/state-machines/) and the [Rules lens](/en/lenses/#schell-033).

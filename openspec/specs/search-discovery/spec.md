@@ -6,7 +6,7 @@ Help search engines and AI agents discover and cite focused bilingual game-devel
 ## Requirements
 
 ### Requirement: Focused static knowledge pages
-Active mechanics, exercises and lenses SHALL have standalone RU/EN HTML pages under `/game-dev-db/{lang}/knowledge/{type}/{id}/`. Pages SHALL preserve sources, provenance, licenses and collection navigation. An authored compact mechanic view SHALL show its concise content while linking full taxonomy in collections and machine formats; other pages SHALL retain full authored sections. Existing catalog routes and anchors SHALL remain usable.
+Active mechanics, exercises and lenses SHALL have standalone RU/EN HTML pages under `/{lang}/knowledge/{type}/{id}/`. Pages SHALL preserve sources, provenance, licenses and collection navigation. An authored compact mechanic view SHALL show its concise content while linking full taxonomy in collections and machine formats; other pages SHALL retain full authored sections. Existing catalog routes and anchors SHALL remain usable.
 
 #### Scenario: Read and cite one mechanic without scripts
 - **WHEN** a reader opens a mechanic from its catalog or the common index with JavaScript disabled
@@ -45,11 +45,11 @@ The project SHALL provide a public-URL audit and paired RU/EN discovery question
 - **THEN** it checks entry points, sitemap and representative focused pages, records observed failures and exits unsuccessfully for broken required endpoints
 
 ### Requirement: Discovery independent of analytics
-Discovery metadata, content and machine exports SHALL work without analytics. Production content pages and the standalone 404 SHALL include one deferred Cloudflare Web Analytics beacon for `polyakovin.github.io`. Development and the root redirect SHALL omit it. Other analytics and webmaster accounts SHALL remain outside scope. Public-URL audits SHALL be explicit and SHALL NOT collect visitor behavior.
+Discovery metadata, content and machine exports SHALL work without analytics. Production content pages and the standalone 404 SHALL include one deferred Cloudflare Web Analytics beacon for `gamemechanics.pro`. Development and the root redirect SHALL omit it. Other analytics and webmaster accounts SHALL remain outside scope. Public-URL audits SHALL be explicit and SHALL NOT collect visitor behavior.
 
 #### Scenario: Read a focused page
 - **WHEN** a reader opens a focused page in either language with JavaScript disabled or the Cloudflare script blocked
-- **THEN** its content, discovery metadata, links under `/game-dev-db/` and machine formats remain usable
+- **THEN** its content, discovery metadata, links under `/` and machine formats remain usable
 
 #### Scenario: Measure a published page
 - **WHEN** a reader opens a production RU/EN page or the standalone 404 page
@@ -60,7 +60,7 @@ Discovery metadata, content and machine exports SHALL work without analytics. Pr
 - **THEN** no Cloudflare analytics beacon is included
 
 #### Scenario: Follow the root redirect
-- **WHEN** a reader opens `/game-dev-db/`
+- **WHEN** a reader opens `/`
 - **THEN** the immediate language redirect has no beacon and its destination supplies the production beacon
 
 ### Requirement: Compact mechanic pilot
@@ -93,7 +93,7 @@ The pilot SHALL keep its short RU/EN definition and marked real-game screenshot 
 
 #### Scenario: Reuse one mechanic from two categories
 - **WHEN** a reader follows Search and discovery in children or education
-- **THEN** both links open the same language-specific canonical page under /game-dev-db/ and that page links back to both catalog placements when space permits
+- **THEN** both links open the same language-specific canonical page under / and that page links back to both catalog placements when space permits
 
 #### Scenario: Retrieve the compact content
 - **WHEN** an agent fetches the pilot JSON or Markdown

@@ -7,7 +7,7 @@ Help readers find game jams they can still enter through verified bilingual even
 
 ### Requirement: Bilingual jam discovery
 
-The portal SHALL provide RU/EN jam pages under `/game-dev-db/{lang}/jams/`, linked from shared navigation and the home page, with matching language switching. Pages SHALL provide official discovery calendars separately from dated events and preserve keyboard access and narrow layouts in both themes.
+The portal SHALL provide RU/EN jam pages under `/{lang}/jams/`, linked from shared navigation and the home page, with matching language switching. Pages SHALL provide official discovery calendars separately from dated events and preserve keyboard access and narrow layouts in both themes.
 
 #### Scenario: Find and enter a jam
 - **WHEN** a reader opens either language's jam page
@@ -47,7 +47,7 @@ Without JavaScript, the portal SHALL provide readable build-time current events 
 
 ### Requirement: Attributable static export
 
-The portal SHALL publish `/game-dev-db/api/v1/jams.json` additively, discoverable from the manifest and agent index. It SHALL contain bilingual source-aligned current events, calendars, schema version, attribution, license, generation time and expiry-filter guidance. Machine consumers SHALL be told to reapply deadline filtering at read time.
+The portal SHALL publish `/api/v1/jams.json` additively, discoverable from the manifest and agent index. It SHALL contain bilingual source-aligned current events, calendars, schema version, attribution, license, generation time and expiry-filter guidance. Machine consumers SHALL be told to reapply deadline filtering at read time.
 
 #### Scenario: Agent reads an old snapshot
 - **WHEN** an agent fetches the event JSON

@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const production = Boolean(process.env.CI || process.env.PLAYWRIGHT_PREVIEW);
 const beaconUrl = 'https://static.cloudflareinsights.com/beacon.min.js';
 

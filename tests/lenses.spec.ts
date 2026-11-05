@@ -4,7 +4,7 @@ import { validateLenses } from '../src/lib/lenses.mjs';
 const data = JSON.parse(
   readFileSync(new URL('../src/data/lenses.json', import.meta.url), 'utf8'),
 );
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 for (const lang of ['ru', 'en'] as const) {
   test(`${lang}: lens discovery, combined search, editions and keyboard controls`, async ({
     page,
@@ -94,9 +94,7 @@ test('lens exports retain all identities, original wording, fractional numbers a
     await request.get(`${base}/api/v1/manifest.json`)
   ).json();
   expect(manifest.counts.lensPerspectives).toBe(117);
-  expect(manifest.endpoints.lenses).toMatch(
-    /\/game-dev-db\/api\/v1\/lenses.json$/,
-  );
+  expect(manifest.endpoints.lenses).toMatch(/\/api\/v1\/lenses.json$/);
   const payload = await (
     await request.get(`${base}/api/v1/lenses.json`)
   ).json();

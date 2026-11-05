@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 const resources = JSON.parse(
   readFileSync(new URL('../src/data/resources.json', import.meta.url), 'utf8'),
 ) as Array<{ id: string; url: string; title: { ru: string; en: string } }>;
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 
 for (const lang of ['ru', 'en'] as const) {
   test(`${lang} references group every resource once and preserve destination links`, async ({

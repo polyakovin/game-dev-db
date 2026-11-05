@@ -7,7 +7,7 @@ import {
 } from '../src/lib/mechanic-directions.mjs';
 import { getMechanics } from '../src/lib/mechanics.mjs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 
 test('the complete direction map has bilingual stable identities and validated catalog associations', () => {
   expect(validateMechanicDirections(mechanicDirectionData)).toEqual([]);
@@ -48,7 +48,7 @@ test('readiness follows available catalog content and never treats archives as r
   const added = {
     ...existing[0],
     id: source.catalogId,
-    url: `https://polyakovin.github.io${base}/ru/mechanics/${source.catalogId}/`,
+    url: `https://gamemechanics.pro${base}/ru/mechanics/${source.catalogId}/`,
   };
   const lookup = (catalogs: Parameters<typeof getMechanicDirections>[1]) =>
     getMechanicDirections('ru', catalogs).groups[0].directions[0];
@@ -108,10 +108,7 @@ test('a direction resolves to a real family and prefers a standalone catalog', (
   const standalone = {
     ...catalogs[0],
     id: source.catalogId,
-    url:
-      'https://polyakovin.github.io/game-dev-db/ru/mechanics/' +
-      source.catalogId +
-      '/',
+    url: 'https://gamemechanics.pro/ru/mechanics/' + source.catalogId + '/',
   };
   expect(lookup([...catalogs, standalone]).url).toBe(standalone.url);
 });

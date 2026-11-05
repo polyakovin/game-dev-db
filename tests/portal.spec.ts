@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import { readdirSync } from 'node:fs';
 
-const base = '/game-dev-db';
+import { BASE as base } from '../src/lib/site-config.mjs';
 const catalog = `${base}/ru/`;
 const visibleCards = '[data-lesson-card]:visible';
 const lessonCount = readdirSync(
