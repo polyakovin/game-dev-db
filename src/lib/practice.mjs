@@ -1,5 +1,5 @@
 import source from '../data/practice.json' with { type: 'json' };
-import { absolute } from './site.ts';
+import { CONTENT_ATTRIBUTION, absolute } from './site.ts';
 import { orderEntries, orderWithinGroups } from './content-order.mjs';
 
 export const practiceSource = source;
@@ -45,7 +45,7 @@ export function getPractice(lang) {
     markdownUrl: absolute(`content/practice/${lang}/${source.id}.md`),
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
   };
 }
 

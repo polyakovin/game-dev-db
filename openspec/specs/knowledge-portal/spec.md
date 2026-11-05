@@ -156,11 +156,11 @@ Every RU/EN lesson SHALL use the same six ordered sections: prerequisites, princ
 - **THEN** the first step leaves a route of cost 5 and the second produces no route
 
 ### Requirement: Custom-domain publishing
-The portal SHALL publish at https://gamemechanics.pro/ with root-relative navigation and assets, matching canonical and language alternate URLs, and unchanged relative v1 endpoints and stable content identities. The host-root robots policy SHALL allow public crawling and advertise the production sitemap.
+The portal SHALL publish at https://gamemechanics.pro/ with root-relative navigation and assets, matching canonical and language alternate URLs, and unchanged relative v1 endpoints and stable content identities. The domain root SHALL default to English at /en/ and identify /en/ as its canonical URL. The host-root robots policy SHALL allow public crawling and advertise the production sitemap.
 
 #### Scenario: Open the domain root
 - **WHEN** a reader opens https://gamemechanics.pro/ without JavaScript
-- **THEN** the language redirect and manual language links lead to /ru/ and /en/ without the former project prefix
+- **THEN** the language redirect leads to /en/ and manual links offer /en/ and /ru/ without the former project prefix
 
 #### Scenario: Retrieve and cite on the custom domain
 - **WHEN** an agent reads the sitemap, manifest, language indexes or a lesson export

@@ -1,5 +1,5 @@
 ---
-import { path } from '../lib/site';
+import { SITE_NAME, path } from '../lib/site';
 import '../styles/theme.css';
 import ThemeHead from '../components/ThemeHead.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
@@ -10,7 +10,7 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>404 · Game Dev DB</title>
+    <title>404 · {SITE_NAME}</title>
     <meta name="robots" content="noindex" />
     <ThemeHead />
     <style>
@@ -34,7 +34,7 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
     </style>
   </head>
   <body>
-    <p>GAME DEV DB / 404</p>
+    <p>{SITE_NAME} / 404</p>
     <h1>
       Здесь пока пусто.
       <br />

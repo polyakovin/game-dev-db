@@ -1,4 +1,4 @@
-# Contributing to Game Dev DB
+# Contributing to gamemechanics.pro
 
 Contributions may be in Russian or English. Public issues and pull requests should contain no secrets, private messages, customer data, or other personal information.
 

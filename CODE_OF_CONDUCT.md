@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Game Dev DB welcomes contributors with different backgrounds and levels of experience. These rules apply to repository issues, pull requests, reviews, and other project spaces.
+gamemechanics.pro welcomes contributors with different backgrounds and levels of experience. These rules apply to repository issues, pull requests, reviews, and other project spaces.
 
 - Discuss ideas and implementation choices with evidence and respect.
 - Help beginners understand the next useful step. Questions and mistakes are part of learning.

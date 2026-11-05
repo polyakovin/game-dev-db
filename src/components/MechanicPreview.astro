@@ -1,6 +1,6 @@
 ---
 import type { KnowledgeRecord } from '../lib/knowledge-content';
-import { path } from '../lib/site';
+import { SITE_NAME, path } from '../lib/site';
 interface Props {
   record: KnowledgeRecord;
 }
@@ -122,7 +122,7 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     <span>
       {ru ? 'Текст' : 'Text'}:{' '}
       <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
-      Game Dev DB
+      {SITE_NAME}
     </span>
     <nav aria-label={ru ? 'Полные данные механики' : 'Full mechanic data'}>
       <a href={local(record.markdownUrl)}>Markdown</a>

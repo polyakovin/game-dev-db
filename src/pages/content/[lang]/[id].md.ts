@@ -1,7 +1,7 @@
 import { getLessons } from '../../../lib/content';
 import type { APIRoute } from 'astro';
 import matter from 'gray-matter';
-import { absolute } from '../../../lib/site';
+import { CONTENT_ATTRIBUTION, absolute } from '../../../lib/site';
 const sources = import.meta.glob('../../../content/lessons/**/*.md', {
   query: '?raw',
   import: 'default',
@@ -23,7 +23,7 @@ export const GET: APIRoute = async ({ params }) => {
     markdownUrl: absolute(`content/${params.lang}/${params.id}.md`),
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
   });
   return new Response(exported, {
     headers: { 'Content-Type': 'text/markdown; charset=utf-8' },

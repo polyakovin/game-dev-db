@@ -1,6 +1,6 @@
 ---
 import Icon from './Icon.astro';
-import { REPO, ui, type Locale } from '../lib/site';
+import { SITE_NAME, REPO, ui, type Locale } from '../lib/site';
 
 interface Props {
   lang: Locale;
@@ -24,7 +24,7 @@ const copy = {
 
 <footer class="site-footer">
   <div class="footer-project">
-    <p class="footer-title">Game Dev DB</p>
+    <p class="footer-title">{SITE_NAME}</p>
     <p>{t.footer}</p>
     <a href={`${REPO}/blob/main/CONTENT-LICENSE.md`}>{t.license}</a>
   </div>

@@ -9,6 +9,7 @@ import {
   path,
   absolute,
   SITE,
+  SITE_NAME,
   REPO,
   ui,
   categories,
@@ -71,7 +72,7 @@ const nav = [
     <meta name="description" content={description} />
     {robots && <meta name="robots" content={robots} />}
     <ThemeHead />
-    <title>{title} · Game Dev DB</title>
+    <title>{title} · {SITE_NAME}</title>
     <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="ru" href={absolute(`ru/${alternate}`)} />
@@ -80,7 +81,7 @@ const nav = [
       rel="help"
       type="text/plain"
       href={path('llms.txt')}
-      title="Game Dev DB agent index"
+      title={`${SITE_NAME} agent index`}
     />
     {formats && (
       <>
@@ -111,7 +112,8 @@ const nav = [
       title="Machine-readable manifest"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content={`${title} · Game Dev DB`} />
+    <meta property="og:title" content={`${title} · ${SITE_NAME}`} />
+    <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={lang === 'ru' ? 'ru_RU' : 'en_US'} />
@@ -122,16 +124,14 @@ const nav = [
     </a>
     {!compact && (
       <aside class="sidebar">
-        <a class="brand" href={path(`${lang}/`)} aria-label="Game Dev DB">
+        <a class="brand" href={path(`${lang}/`)} aria-label={SITE_NAME}>
           <span class="brand-mark" aria-hidden="true">
             <i></i>
             <i></i>
             <i></i>
             <i></i>
           </span>
-          <span>
-            game dev<span class="brand-db">/ db</span>
-          </span>
+          <span>{SITE_NAME}</span>
         </a>
         <div class="sidebar-caption">{t.tagline}</div>
         <nav aria-label={t.navigation}>
@@ -180,7 +180,7 @@ const nav = [
           {compact ? (
             <>
               <a class="compact-brand" href={path(`${lang}/`)}>
-                game dev <span>/ db</span>
+                {SITE_NAME}
               </a>
               <a class="compact-back" href={path(`${lang}/mechanics/`)}>
                 ← {t.mechanics}
@@ -188,9 +188,9 @@ const nav = [
             </>
           ) : (
             <>
-              <span class="mobile-brand">game dev / db</span>
+              <span class="mobile-brand">{SITE_NAME}</span>
               <span class="desktop-crumb">
-                Game Dev DB <span class="slash">/</span>{' '}
+                {SITE_NAME} <span class="slash">/</span>{' '}
                 <span>{t[section]}</span>
               </span>
             </>
@@ -275,9 +275,6 @@ const nav = [
     font-weight: 650;
     letter-spacing: -0.8px;
     white-space: nowrap;
-  }
-  .compact-brand span {
-    color: var(--accent);
   }
   .compact-back {
     white-space: nowrap;

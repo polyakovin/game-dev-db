@@ -28,7 +28,7 @@ import magnetometer from '../data/mechanics/phone-magnetometer.json' with { type
 import keyboard from '../data/mechanics/keyboard.json' with { type: 'json' };
 import mouse from '../data/mechanics/mouse.json' with { type: 'json' };
 import trackpad from '../data/mechanics/trackpad.json' with { type: 'json' };
-import { absolute } from './site.ts';
+import { CONTENT_ATTRIBUTION, absolute } from './site.ts';
 import { orderEntries, orderMechanicCatalog } from './content-order.mjs';
 import { resolveMechanicCatalog } from './mechanic-source.mjs';
 import { overviewCatalogs } from './mechanic-overviews.mjs';
@@ -155,7 +155,7 @@ export function getMechanics(lang, { includeArchived = false } = {}) {
       markdownUrl: absolute(`content/mechanics/${lang}/${catalog.id}.md`),
       license: 'CC-BY-4.0',
       codeLicense: 'MIT',
-      attribution: 'Game Dev DB contributors',
+      attribution: CONTENT_ATTRIBUTION,
       provenance:
         'provenance' in catalog
           ? catalog.provenance

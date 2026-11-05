@@ -1,6 +1,6 @@
 # Architecture
 
-Game Dev DB is a static Astro site written in TypeScript. Node.js 24 and npm are development and build tools; the deployed site does not require a Node server, database, account system, or secret.
+gamemechanics.pro is a static Astro site written in TypeScript. Node.js 24 and npm are development and build tools; the deployed site does not require a Node server, database, account system, or secret.
 
 ## One content source
 
@@ -27,6 +27,8 @@ individual JSON/Markdown and structured metadata. The sitemap lists unique activ
 HTML pages with authored dates and language pairs. See [search discovery](search-discovery.md).
 
 All paths below are relative to the configured site root. In production that root is `https://gamemechanics.pro/`.
+
+The root `/` redirects to the English catalog at `/en/`, including without JavaScript. Its canonical URL points to `/en/`; manual English and Russian links remain available.
 
 | Route                                             | Purpose                                                  |
 | ------------------------------------------------- | -------------------------------------------------------- |
@@ -56,7 +58,7 @@ All paths below are relative to the configured site root. In production that roo
 
 The `api` paths are static files, not a live server API. Clients should fetch a snapshot and process it locally. There is no authentication, mutation endpoint, or guaranteed refresh interval.
 
-Individual Markdown exports retain the original lesson body and frontmatter data, then add `url` (the canonical HTML lesson URL), `markdownUrl`, `attribution` (`Game Dev DB contributors`), `license` (`CC-BY-4.0`), and `codeLicense` (`MIT`). The export serializer may change YAML formatting, so it is not a byte-for-byte copy of the source file. The authored source schema remains unchanged; these fields belong to the export layer.
+Individual Markdown exports retain the original lesson body and frontmatter data, then add `url` (the canonical HTML lesson URL), `markdownUrl`, `attribution` (`gamemechanics.pro contributors`), `license` (`CC-BY-4.0`), and `codeLicense` (`MIT`). The export serializer may change YAML formatting, so it is not a byte-for-byte copy of the source file. The authored source schema remains unchanged; these fields belong to the export layer.
 
 ## Boundaries
 

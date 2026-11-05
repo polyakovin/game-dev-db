@@ -55,3 +55,9 @@ with a dated record and explanation.
 - Maximum next-step budget: Zero additional paid-service spend.
 - Operational limitation: `www.gamemechanics.pro` still points to Porkbun parking. DNS owner access is required to replace its CNAME with `polyakovin.github.io`; the apex domain release does not depend on this optional alias. See `docs/custom-domain.md`.
 - What would reverse this decision: The owner changes the production domain or analytics configuration.
+
+### 2026-11-05 — service name — `go`
+
+- Context: The owner named the service `gamemechanics.pro` in the project chat.
+- Decision: Use `gamemechanics.pro` as the public name in both languages, page metadata, agent discovery, export attribution and current project documentation. This supersedes the former public name, Game Dev DB.
+- Compatibility: Keep the GitHub repository URL, package identifier, stored preferences, content identifiers, routes and v1 schemas. Preserve earlier decisions and release records as history.

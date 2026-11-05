@@ -2,13 +2,13 @@
 
 Original educational lessons and their translations in `src/content/lessons/`, mechanic catalogs and their translations in `src/data/mechanics/`, original compact descriptions and advice in `src/data/mechanic-previews.json`, original lens explanations and review prompts in `src/data/lenses.json`, and original resource descriptions in `src/data/resources.json`, are licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), unless a file explicitly states otherwise. This license also applies to that content when rendered as HTML or distributed through generated Markdown and JSON exports.
 
-Copyright © 2026 Game Dev DB contributors. Individual contributions are recorded in the repository history.
+Copyright © 2026 gamemechanics.pro contributors. Individual contributions are recorded in the repository history.
 
 You may share and adapt this content, including commercially, under the terms of CC BY 4.0. Give appropriate credit, link to the license, and indicate whether you made changes. The [legal code](https://creativecommons.org/licenses/by/4.0/legalcode) defines the license terms.
 
 An attribution example:
 
-> Adapted from “Lesson title”, Game Dev DB contributors, https://gamemechanics.pro/en/lessons/lesson-id/, licensed under CC BY 4.0. Changes: translated and shortened.
+> Adapted from “Lesson title”, gamemechanics.pro contributors, https://gamemechanics.pro/en/lessons/lesson-id/, licensed under CC BY 4.0. Changes: translated and shortened.
 
 Use the actual title, canonical lesson URL, and a truthful description of changes. Attribution does not imply endorsement.
 

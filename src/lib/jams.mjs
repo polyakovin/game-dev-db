@@ -1,3 +1,4 @@
+import { CONTENT_ATTRIBUTION } from './site-config.mjs';
 import data from '../data/jams.json' with { type: 'json' };
 import { currentJams } from './jam-time.mjs';
 import { orderEntries } from './content-order.mjs';
@@ -12,7 +13,7 @@ export function jamSnapshot(now = new Date()) {
     generatedAt: now.toISOString(),
     updatedAt: data.updatedAt,
     license: 'CC-BY-4.0',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
     rights:
       'Original editorial summaries are CC BY 4.0. Linked events and their rules retain their owners’ rights.',
     readTimeRule: jamReadTimeRule,

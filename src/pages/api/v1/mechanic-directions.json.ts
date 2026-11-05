@@ -1,3 +1,4 @@
+import { CONTENT_ATTRIBUTION } from '../../../lib/site-config.mjs';
 import { mechanicDirectionRecords } from '../../../lib/mechanic-directions.mjs';
 
 export function GET() {
@@ -5,7 +6,7 @@ export function GET() {
     JSON.stringify({
       schemaVersion: 1,
       license: 'CC-BY-4.0',
-      attribution: 'Game Dev DB contributors',
+      attribution: CONTENT_ATTRIBUTION,
       indexes: mechanicDirectionRecords(),
     }),
     { headers: { 'Content-Type': 'application/json; charset=utf-8' } },

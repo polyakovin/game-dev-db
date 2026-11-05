@@ -2,7 +2,7 @@
 
 ## Scope and setup
 
-- Game Dev DB is an open-source RU/EN knowledge portal for people and AI agents.
+- gamemechanics.pro is an open-source RU/EN knowledge portal for people and AI agents.
 - Read `README.md`, `CONTRIBUTING.md`, `docs/architecture.md`, and the nearest instructions before editing.
 - Resolve the Git root, inspect `git status`, and keep a task-owned path list. Preserve unrelated changes and stage explicit paths only.
 - Use Node.js 24, npm, Python 3, and the committed lockfile: `npm ci`, then `npm run dev`.

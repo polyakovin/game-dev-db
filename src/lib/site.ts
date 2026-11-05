@@ -1,7 +1,7 @@
 import { contentOrder, orderByImportance } from './content-order.mjs';
 
 import { SITE, BASE } from './site-config.mjs';
-export { SITE, BASE };
+export { SITE, BASE, SITE_NAME, CONTENT_ATTRIBUTION } from './site-config.mjs';
 export const REPO = 'https://github.com/polyakovin/game-dev-db';
 export const locales = ['ru', 'en'] as const;
 export type Locale = (typeof locales)[number];

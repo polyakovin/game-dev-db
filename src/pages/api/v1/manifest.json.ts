@@ -1,4 +1,9 @@
-import { absolute, REPO } from '../../../lib/site';
+import {
+  CONTENT_ATTRIBUTION,
+  SITE_NAME,
+  absolute,
+  REPO,
+} from '../../../lib/site';
 import { getLessons } from '../../../lib/content';
 import resources from '../../../data/resources.json';
 import { mechanicRecords, getMechanics } from '../../../lib/mechanics.mjs';
@@ -11,12 +16,12 @@ export async function GET() {
   const mechanics = mechanicRecords();
   return Response.json({
     schemaVersion: 1,
-    name: 'Game Dev DB',
+    name: SITE_NAME,
     description: 'Game development principles for people and AI agents',
     languages: ['ru', 'en'],
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
     repository: REPO,
     updatedAt: [
       ...lessons.map((l) => l.data.updatedAt),

@@ -46,5 +46,5 @@ test('root redirect omits the beacon before opening the language homepage', asyn
   expect(response.ok()).toBe(true);
   const html = await response.text();
   expect(html).not.toContain('data-cf-beacon');
-  expect(html).toContain(`0;url=${base}/ru/`);
+  expect(html).toContain(`0;url=${base}/en/`);
 });

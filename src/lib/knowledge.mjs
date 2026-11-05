@@ -7,7 +7,7 @@ import { getLenses } from './lenses.mjs';
 import { getLearningPaths } from './learning-paths.mjs';
 import { getResources } from './resources.mjs';
 import { getJams } from './jams.mjs';
-import { absolute } from './site.ts';
+import { CONTENT_ATTRIBUTION, SITE_NAME, absolute } from './site.ts';
 import { orderByImportance } from './content-order.mjs';
 import { hasFocusedPage } from './discovery.mjs';
 import { getMechanicPreview } from './mechanic-previews.mjs';
@@ -135,11 +135,11 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
       attributes: {},
       endsAt: null,
       provenance: ru
-        ? 'Авторский материал Game Dev DB. Учебные примеры требуют проверки в своём проекте.'
-        : 'Original Game Dev DB material. Check illustrative examples in your own project.',
+        ? `Авторский материал ${SITE_NAME}. Учебные примеры требуют проверки в своём проекте.`
+        : `Original ${SITE_NAME} material. Check illustrative examples in your own project.`,
       license: 'CC-BY-4.0',
       codeLicense: 'MIT',
-      attribution: 'Game Dev DB contributors',
+      attribution: CONTENT_ATTRIBUTION,
       ...options,
     };
     records.set(key, record);

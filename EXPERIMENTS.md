@@ -1,4 +1,4 @@
-# Experiments — Game Dev DB
+# Experiments — gamemechanics.pro
 
 Record an experiment before running it. Do not rewrite the hypothesis or
 success threshold after seeing the result.

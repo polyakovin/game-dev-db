@@ -1,6 +1,6 @@
 # Security policy
 
-Game Dev DB is a public static site. Build dependencies and deployment workflows can still affect the integrity of published content.
+gamemechanics.pro is a public static site. Build dependencies and deployment workflows can still affect the integrity of published content.
 
 ## Reporting a vulnerability
 

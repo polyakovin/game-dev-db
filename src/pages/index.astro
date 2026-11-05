@@ -1,24 +1,26 @@
 ---
-import { path, absolute } from '../lib/site';
+import { SITE_NAME, path, absolute } from '../lib/site';
 import '../styles/theme.css';
 import ThemeHead from '../components/ThemeHead.astro';
 ---
 
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta http-equiv="refresh" content={`0;url=${path('ru/')}`} />
-    <title>Game Dev DB</title>
+    <meta http-equiv="refresh" content={`0;url=${path('en/')}`} />
+    <title>{SITE_NAME}</title>
     <ThemeHead />
-    <link rel="canonical" href={absolute('ru/')} />
+    <link rel="canonical" href={absolute('en/')} />
   </head>
   <body>
-    <h1>Game Dev DB</h1>
+    <h1>{SITE_NAME}</h1>
     <p>
-      <a href={path('ru/')}>База знаний на русском</a> ·{' '}
-      <a href={path('en/')}>Knowledge base in English</a>
+      <a href={path('en/')}>Knowledge base in English</a> ·{' '}
+      <a href={path('ru/')} lang="ru">
+        База знаний на русском
+      </a>
     </p>
   </body>
 </html>

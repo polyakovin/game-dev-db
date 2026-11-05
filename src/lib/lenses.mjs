@@ -1,5 +1,5 @@
 import data from '../data/lenses.json' with { type: 'json' };
-import { absolute } from './site.ts';
+import { CONTENT_ATTRIBUTION, absolute } from './site.ts';
 import { orderEntries, orderWithinGroups } from './content-order.mjs';
 
 export const lensData = data;
@@ -50,7 +50,7 @@ export function getLenses(lang) {
     markdownUrl: absolute(`content/lenses/${lang}/${data.id}.md`),
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
     provenance:
       'Original editorial explanations and review questions based on the user-selected Schell notes and attributed primary references. External concepts and source material retain their rights.',
   };

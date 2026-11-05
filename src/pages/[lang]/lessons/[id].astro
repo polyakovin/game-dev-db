@@ -5,7 +5,7 @@ import Icon from '../../../components/Icon.astro';
 import LessonPath from '../../../components/LessonPath.astro';
 import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLessons } from '../../../lib/content';
-import { path, REPO, ui } from '../../../lib/site';
+import { CONTENT_ATTRIBUTION, path, REPO, ui } from '../../../lib/site';
 import { getKnowledge } from '../../../lib/knowledge-content';
 import { recordMetadata } from '../../../lib/discovery.mjs';
 export async function getStaticPaths() {
@@ -64,7 +64,7 @@ const record = (await getKnowledge(data.lang)).records.find(
           ))}
         </ul>
       </section>
-      <div class="article-license">CC BY 4.0 · Game Dev DB contributors</div>
+      <div class="article-license">CC BY 4.0 · {CONTENT_ATTRIBUTION}</div>
     </article>
     <aside class="article-aside">
       <div class="sticky-toc">

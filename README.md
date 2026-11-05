@@ -1,4 +1,4 @@
-# Game Dev DB
+# gamemechanics.pro
 
 A bilingual, open-source knowledge base for developers building games with AI assistance. Learn the principles behind a working game, use practical checks during development, and give agents structured, attributable context.
 
@@ -92,7 +92,7 @@ See [architecture](docs/architecture.md) and [agent development workflow](docs/a
 
 ## Быстрый старт на русском
 
-Game Dev DB помогает разработчикам, которые делают игры с ИИ, понимать игровые системы и проверять результат работы агентов. Материалы доступны на русском и английском, а Markdown и JSON можно использовать как контекст для ИИ.
+gamemechanics.pro помогает разработчикам, которые делают игры с ИИ, понимать игровые системы и проверять результат работы агентов. Материалы доступны на русском и английском, а Markdown и JSON можно использовать как контекст для ИИ.
 
 Установите Node.js 24, выполните `npm ci`, затем `npm run dev`. Перед pull request запустите `npm run verify`. Чтобы добавить урок, создайте русскую и английскую версии с одинаковым `id`; формат и правила описаны в [руководстве по материалам](docs/content-guide.md). Для существенных изменений сначала оформите предложение в OpenSpec.
 

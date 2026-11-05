@@ -6,7 +6,7 @@ The production root is `https://gamemechanics.pro/`. GitHub Pages remains the st
 
 `src/lib/site-config.mjs` supplies `SITE` and the empty `BASE` to Astro, shared URL helpers, distribution validation and the HTTP discovery audit. Astro receives `/` as its base. HTML uses trailing slashes; JSON, Markdown and text exports retain their explicit filenames and v1 schemas. Authored lesson links use `/ru/` and `/en/`; the knowledge relationship parser accepts those same links.
 
-Canonical and Open Graph URLs, RU/EN alternates, sitemap, robots policy and agent indexes/exports use the production domain. The root redirects to `/ru/` without JavaScript and keeps manual links to both languages. `public/robots.txt` now becomes the effective host-root policy and advertises `https://gamemechanics.pro/sitemap.xml`.
+Canonical and Open Graph URLs, RU/EN alternates, sitemap, robots policy and agent indexes/exports use the production domain. The root redirects to `/en/` without JavaScript, uses `/en/` as its canonical URL and keeps manual links to both languages. `public/robots.txt` now becomes the effective host-root policy and advertises `https://gamemechanics.pro/sitemap.xml`.
 
 ## Hosting and DNS observations
 

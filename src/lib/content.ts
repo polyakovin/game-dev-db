@@ -1,5 +1,5 @@
 import { getCollection } from 'astro:content';
-import { absolute, type Locale } from './site';
+import { CONTENT_ATTRIBUTION, absolute, type Locale } from './site';
 import { orderByImportance } from './content-order.mjs';
 
 export async function getLessons(lang?: Locale) {
@@ -20,7 +20,7 @@ export async function lessonRecords() {
     markdownUrl: absolute(`content/${data.lang}/${data.id}.md`),
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
     body: body ?? '',
   }));
 }

@@ -1,3 +1,4 @@
+import { CONTENT_ATTRIBUTION } from '../../../lib/site-config.mjs';
 import { learningPathRecords } from '../../../lib/learning-paths.mjs';
 
 export function GET() {
@@ -5,7 +6,7 @@ export function GET() {
     schemaVersion: 1,
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
     paths: learningPathRecords(),
   });
 }

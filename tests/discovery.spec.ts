@@ -3,19 +3,20 @@ import { load } from 'cheerio';
 
 import { BASE as base, SITE } from '../src/lib/site-config.mjs';
 
-test('domain root redirects without scripts and advertises the root sitemap', async ({
+test('domain root defaults to English without scripts and advertises the root sitemap', async ({
   browser,
   baseURL,
   request,
 }) => {
   const root = load(await (await request.get('/')).text());
-  expect(root('meta[http-equiv="refresh"]').attr('content')).toBe('0;url=/ru/');
-  expect(root('link[rel="canonical"]').attr('href')).toBe(`${SITE}/ru/`);
+  expect(root('html').attr('lang')).toBe('en');
+  expect(root('meta[http-equiv="refresh"]').attr('content')).toBe('0;url=/en/');
+  expect(root('link[rel="canonical"]').attr('href')).toBe(`${SITE}/en/`);
   expect(
     root('a')
       .map((_, node) => root(node).attr('href'))
       .get(),
-  ).toEqual(['/ru/', '/en/']);
+  ).toEqual(['/en/', '/ru/']);
   const robots = await request.get('/robots.txt');
   expect(robots.ok()).toBe(true);
   expect(await robots.text()).toBe(
@@ -27,7 +28,8 @@ test('domain root redirects without scripts and advertises the root sitemap', as
   });
   const page = await context.newPage();
   await page.goto('/');
-  await expect(page).toHaveURL(/\/ru\/$/);
+  await expect(page).toHaveURL(/\/en\/$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('h1')).toBeVisible();
   await context.close();
 });

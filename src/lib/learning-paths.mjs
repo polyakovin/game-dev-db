@@ -1,5 +1,5 @@
 import data from '../data/learning-paths.json' with { type: 'json' };
-import { absolute } from './site.ts';
+import { CONTENT_ATTRIBUTION, absolute } from './site.ts';
 
 export const learningPathData = data;
 
@@ -32,7 +32,7 @@ export function getLearningPaths(lang) {
     })),
     license: 'CC-BY-4.0',
     codeLicense: 'MIT',
-    attribution: 'Game Dev DB contributors',
+    attribution: CONTENT_ATTRIBUTION,
   }));
 }
 

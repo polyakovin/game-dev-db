@@ -1,4 +1,4 @@
-# Project scope and commercial evidence — Game Dev DB
+# Project scope and commercial evidence — gamemechanics.pro
 
 ## Current scope, 2026-10-09
 

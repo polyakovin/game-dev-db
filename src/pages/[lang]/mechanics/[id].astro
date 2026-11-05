@@ -6,7 +6,13 @@ import {
   getMechanics,
   groupMechanicSections,
 } from '../../../lib/mechanics.mjs';
-import { locales, path, ui, REPO } from '../../../lib/site';
+import {
+  CONTENT_ATTRIBUTION,
+  locales,
+  path,
+  ui,
+  REPO,
+} from '../../../lib/site';
 export function getStaticPaths() {
   return locales.flatMap((lang) =>
     getMechanics(lang, { includeArchived: true }).map((catalog) => ({
@@ -344,7 +350,7 @@ const sectionGroups = groupMechanicSections(catalog.sections);
             </li>
           ))}
         </ul>
-        <p class="article-license">CC BY 4.0 · Game Dev DB contributors</p>
+        <p class="article-license">CC BY 4.0 · {CONTENT_ATTRIBUTION}</p>
       </section>
     </div>
     <aside class="mechanics-toc">

@@ -1,6 +1,6 @@
 # Working with AI agents
 
-There are two separate uses: consuming Game Dev DB as a knowledge source and contributing to its repository. Both require checking sources and preserving the distinction between guidance and verified project behavior.
+There are two separate uses: consuming gamemechanics.pro as a knowledge source and contributing to its repository. Both require checking sources and preserving the distinction between guidance and verified project behavior.
 
 ## Consume the knowledge base
 

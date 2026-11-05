@@ -2,7 +2,13 @@
 import Layout from '../../../layouts/Layout.astro';
 import KnowledgeLinks from '../../../components/KnowledgeLinks.astro';
 import { getLenses } from '../../../lib/lenses.mjs';
-import { locales, path, REPO, type Locale } from '../../../lib/site';
+import {
+  CONTENT_ATTRIBUTION,
+  locales,
+  path,
+  REPO,
+  type Locale,
+} from '../../../lib/site';
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
 }
@@ -192,7 +198,7 @@ const catalog = getLenses(lang);
       {ru
         ? 'Оригинальные пояснения и вопросы'
         : 'Original explanations and questions'}
-      : CC BY 4.0 · Game Dev DB contributors
+      : CC BY 4.0 · {CONTENT_ATTRIBUTION}
     </p>
   </section>
 </Layout>
