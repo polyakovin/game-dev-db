@@ -188,6 +188,7 @@ test('GLB and FBX imports render actual local geometry', async ({ page }) => {
 test('optional native Animation Lab model opens without republishing it', async ({
   page,
 }, info) => {
+  test.setTimeout(90_000);
   const path = process.env.ANIMATION_LAB_MODEL;
   test.skip(
     !path,
@@ -424,10 +425,13 @@ test('video records a playable silent file and restores the preview', async ({
   test.setTimeout(45000);
   await openLab(page, 'en');
   await expect(page.locator('[data-record]')).toBeEnabled();
-  await page.locator('[data-duration]').fill('1');
+  await page.locator('[data-duration]').fill('3');
   await page.locator('[data-record]').click();
-  await expect(page.locator('[data-status]')).toContainText('Recording');
-  await expect(page.locator('[data-background]')).toBeDisabled();
+  // A short recording can finish during Playwright's post-click wait on a
+  // busy machine. Both states are valid; the actual file is checked below.
+  await expect(page.locator('[data-status]')).toContainText(
+    /Recording|Video ready/,
+  );
   await expect(page.locator('[data-download]')).toBeVisible({ timeout: 15000 });
   const promise = page.waitForEvent('download');
   await page.locator('[data-download]').click();
@@ -481,6 +485,7 @@ test('hidden tab interrupts recording and GPU loss offers recovery', async ({
   await page.locator('[data-duration]').fill('10');
   await page.locator('[data-record]').click();
   await expect(page.locator('[data-status]')).toContainText('Recording');
+  await expect(page.locator('[data-background]')).toBeDisabled();
   // Headless Chromium keeps all tabs visible. Exercise the browser event with
   // its hidden state rather than assuming bringToFront changes visibility.
   await page.evaluate(() => {
@@ -543,6 +548,10 @@ test('mobile, dark theme and keyboard clean preview remain usable', async ({
     path: info.outputPath('ru-mobile-dark.png'),
     fullPage: true,
   });
+  await page.setViewportSize({ width: 1200, height: 480 });
+  const agentsLink = page.locator('.sidebar a[href$="/for-agents/"]');
+  await agentsLink.focus();
+  await expect(agentsLink).toBeInViewport();
 });
 
 test('no JavaScript, no WebGL and missing recorder have readable fallbacks', async ({

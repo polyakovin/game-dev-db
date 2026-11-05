@@ -104,6 +104,7 @@ export function initAnimationLab(root: HTMLElement) {
   let stream: MediaStream | undefined;
   let recordingTimer: ReturnType<typeof setTimeout> | undefined;
   let recordingFailed = false;
+  let recordingError = false;
   let wasPlaying = playing;
   let frameId = 0;
   let lastFrame = performance.now();
@@ -501,6 +502,7 @@ export function initAnimationLab(root: HTMLElement) {
     durationInput.value = String(duration);
     wasPlaying = playing;
     recordingFailed = false;
+    recordingError = false;
     exporting = true;
     download.hidden = true;
     try {
@@ -519,8 +521,8 @@ export function initAnimationLab(root: HTMLElement) {
         if (event.data.size) chunks.push(event.data);
       };
       current.onerror = () => {
-        recordingFailed = true;
-        stopRecording(true);
+        recordingError = true;
+        stopRecording();
       };
       current.onstop = () => {
         stream?.getTracks().forEach((track) => track.stop());
@@ -529,13 +531,17 @@ export function initAnimationLab(root: HTMLElement) {
         exporting = false;
         playing = wasPlaying;
         renderer.setSize(540, 960, false);
-        if (!disposed && !recordingFailed && chunks.length) {
+        if (!disposed && !recordingFailed && !recordingError && chunks.length) {
           showDownload(
             new Blob(chunks, { type: current.mimeType }),
             videoExtension,
           );
           notify(t.recorded);
-        } else if (!disposed) notify(lost ? t.lost : t.interrupted, true);
+        } else if (!disposed)
+          notify(
+            lost ? t.lost : recordingFailed ? t.interrupted : t.exportError,
+            true,
+          );
         updateAvailability();
         draw();
       };

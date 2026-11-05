@@ -90,6 +90,7 @@ svg {
   display: flex;
   flex-direction: column;
   z-index: 5;
+  overflow-y: auto;
 }
 .brand {
   display: flex;
