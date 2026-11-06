@@ -75,6 +75,10 @@ The production site root is `https://gamemechanics.pro/`. These are public files
 
 Production HTML includes Cloudflare Web Analytics using the owner's existing hostname property. Local development omits the beacon; reading and machine exports work without it. See [analytics configuration and verification](docs/web-analytics.md).
 
+The owner's global Codex Stop hook commits scoped task changes and hands the
+current `main` release to verified Pages CI through `.codex/release.json`. See [hook setup and
+release recovery](docs/codex-hooks.md).
+
 Game jams are available at [`ru/jams/`](https://gamemechanics.pro/ru/jams/) and [`en/jams/`](https://gamemechanics.pro/en/jams/). The browser hides events at their submission deadline. A daily verified deployment refreshes static snapshots; JSON consumers must filter `endsAt > now` at read time. New events remain curated editorial additions. See [the jam content contract](docs/jams-content.md).
 
 ## Contribute

@@ -1,0 +1,5 @@
+{
+  "branch": "main",
+  "command": ["node", "scripts/release-pages.mjs", "--handoff"],
+  "timeout": 240
+}

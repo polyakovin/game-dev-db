@@ -15,11 +15,12 @@
     "check:dist": "node scripts/verify-dist.mjs",
     "check:discovery": "node scripts/audit-discovery.mjs",
     "spec": "node scripts/run-tool.mjs openspec",
-    "verify": "npm run check && npm run check:content && npm run build && npm run check:dist && npm run spec -- validate --all --strict && python3 scripts/commercial-project.py check .",
+    "verify": "npm run check && npm run check:content && npm run test:release && npm run build && npm run check:dist && npm run spec -- validate --all --strict && python3 scripts/commercial-project.py check .",
     "test": "npm run verify",
+    "test:release": "node --test scripts/tests/release-pages.test.mjs",
     "test:e2e": "playwright test",
-    "format": "prettier --write src scripts/*.mjs tests *.json *.mjs *.ts",
-    "format:check": "prettier --check src scripts/*.mjs tests *.json *.mjs *.ts"
+    "format": "prettier --write src scripts/*.mjs scripts/tests/*.mjs tests *.json *.mjs *.ts",
+    "format:check": "prettier --check src scripts/*.mjs scripts/tests/*.mjs tests *.json *.mjs *.ts"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "0.4.3",

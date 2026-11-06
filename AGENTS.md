@@ -24,6 +24,7 @@
 - Use `npm run format` for source formatting and `npm run format:check` to check it.
 - Check both languages, keyboard navigation, narrow layouts, search, lesson links, and machine exports when affected. Verify deployed URLs after publication; a local build does not prove a live deployment.
 - Preserve the base path and trailing slash behavior when changing routing or deployment. Pages is static; no server-only feature or secret may be required at runtime.
+- The trusted global Stop hook owns scoped commits and synchronization; `.codex/release.json` hands the current main commit to verified Pages CI. Handoff is asynchronous; confirm the workflow and live routes before claiming publication. Do not add a competing Stop writer. See `docs/codex-hooks.md`.
 
 ## Release, licensing, and safety
 

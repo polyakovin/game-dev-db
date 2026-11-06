@@ -61,3 +61,9 @@ with a dated record and explanation.
 - Context: The owner named the service `gamemechanics.pro` in the project chat.
 - Decision: Use `gamemechanics.pro` as the public name in both languages, page metadata, agent discovery, export attribution and current project documentation. This supersedes the former public name, Game Dev DB.
 - Compatibility: Keep the GitHub repository URL, package identifier, stored preferences, content identifiers, routes and v1 schemas. Preserve earlier decisions and release records as history.
+
+### 2026-11-06 — Codex Stop commit and release — `go`
+
+- Context: The owner requested verification and setup of Stop hooks for committing task changes and releasing the current project version.
+- Decision: Reuse the trusted global scoped-commit and synchronization hook. Opt main into its committed-snapshot release phase through `.codex/release.json`; hand publication to the existing verified Pages workflow for the exact commit. Keep full deployment and live-route confirmation available separately because the complete CI suite can exceed the Stop timeout.
+- Scope: Existing GitHub Pages hosting only, with no additional spending, hosting service, concurrent commit hook or change to commercial evidence.
