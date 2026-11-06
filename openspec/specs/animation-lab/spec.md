@@ -10,7 +10,7 @@ The portal SHALL expose Animation Lab at `/ru/animation-lab/` and `/en/animation
 
 #### Scenario: Open either language without scripts
 - **WHEN** a reader opens either tool route with JavaScript disabled
-- **THEN** the description, limitations and portal navigation remain readable and interactive controls are not presented as working
+- **THEN** the introduction, JavaScript requirement and portal navigation remain readable and interactive controls are not presented as working
 
 ### Requirement: Local model import
 The tool SHALL open GLB, glTF with selected companion files, and supported FBX models through file selection or drop. Files SHALL stay on the device and model resource references SHALL NOT cause remote requests. Invalid, missing-resource, over-100-MiB or empty-model imports SHALL report an error and retain the previous working scene.
@@ -35,7 +35,7 @@ The tool SHALL provide an original demo, clip selection, playback, scrubbing, fr
 - **THEN** the model fits the portrait preview and controls remain reachable without horizontal page overflow
 
 ### Requirement: Honest browser media export
-The tool SHALL export a 1080×1920 PNG with optional alpha and record opaque 1080×1920 video using a detected supported browser format for 1–30 seconds. The UI SHALL identify the actual video format, explain real-time recording and native-only formats, and disable unsupported video recording. Export SHALL include the scene without interface panels.
+The tool SHALL export a 1080×1920 PNG with optional alpha and record opaque 1080×1920 video using a detected supported browser format for 1–30 seconds. The UI SHALL identify the actual video format, explain real-time recording, and disable unsupported video recording. Export SHALL include the scene without interface panels.
 
 #### Scenario: Export a transparent still
 - **WHEN** a reader selects the transparent background and saves a PNG

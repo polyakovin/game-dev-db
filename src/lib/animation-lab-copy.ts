@@ -78,14 +78,6 @@ export const animationLabCopy = {
       'Мышь: вращение · колесо: масштаб · Shift + мышь: сдвиг. На сенсорном экране: один палец для вращения, два для масштаба и сдвига.',
     shortcuts:
       'Space: пауза · ← →: кадр · F: вписать · B: скелет · W: рёбра · H: чистый кадр · R: запись. Клавиши работают, когда сцена в фокусе.',
-    about: 'Из локального стенда в браузер',
-    aboutText:
-      'Веб-адаптация Animation Lab сохраняет просмотр собственных клипов модели, управление камерой и вертикальный кадр 9:16. Здесь нет авторига, ретаргетинга или генерации движений. Нормализация размера и режим «На месте» меняют только просмотр.',
-    formats: 'Форматы и ограничения',
-    formatsText:
-      'Предпочтителен самодостаточный GLB. glTF требует локальные ресурсы; поддержка FBX зависит от версии и содержимого файла. Draco, Meshopt и KTX2 здесь не декодируются. Видео сохраняется в доступном браузеру WebM или MP4, без звука. MOV ProRes и GIF остаются в нативном стенде Godot + FFmpeg. Прозрачное видео в веб-версии не поддерживается.',
-    privacyText:
-      'Модели обрабатываются в памяти этой вкладки. Сервис не отправляет их на сервер и не сохраняет после перезагрузки. Экспорт содержит только сцену, без панелей управления. Демо-робот и его движения созданы для этого раздела.',
     walk: 'Ходьба',
     run: 'Бег',
     idle: 'Ожидание',
@@ -173,14 +165,6 @@ export const animationLabCopy = {
       'Mouse: orbit · wheel: zoom · Shift + drag: pan. Touch: one finger to orbit, two to zoom and pan.',
     shortcuts:
       'Space: pause · ← →: step · F: fit · B: skeleton · W: wireframe · H: clean preview · R: record. Shortcuts work while the scene is focused.',
-    about: 'From a local lab to the browser',
-    aboutText:
-      'This web adaptation of Animation Lab keeps model clip inspection, camera controls and a vertical 9:16 frame. It does not generate rigs, retarget animations or create motion. Size normalization and in-place mode affect only the preview.',
-    formats: 'Formats and limits',
-    formatsText:
-      'A self-contained GLB is preferred. glTF requires local resources; FBX support depends on its version and contents. Draco, Meshopt and KTX2 are not decoded here. Silent video uses the WebM or MP4 format available in your browser. MOV ProRes and GIF remain in the native Godot + FFmpeg lab. Transparent video is not supported in this web version.',
-    privacyText:
-      'Models are processed in this tab’s memory. The service does not send them to a server or retain them after reload. Exports contain only the scene, without control panels. The demo robot and its movements were created for this section.',
     walk: 'Walk',
     run: 'Run',
     idle: 'Idle',

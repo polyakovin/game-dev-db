@@ -49,6 +49,9 @@ Reduced-motion preference starts the demo paused.
 
 ## Implementation boundaries
 
+Keep the page focused on the viewer and its controls. Implementation background
+and comparisons with the native application belong in this guide.
+
 `src/pages/[lang]/animation-lab/index.astro` supplies static RU/EN explanations,
 requirements and semantic controls inside the normal site layout.
 `src/lib/animation-lab-copy.ts` owns the matching interface strings.

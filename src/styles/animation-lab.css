@@ -331,24 +331,6 @@
   color: var(--ink);
   padding: 8px 0;
 }
-.lab-about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 36px;
-  padding-top: 28px;
-  border-top: 1px solid var(--line);
-}
-.lab-about h2 {
-  font-size: 16px;
-  letter-spacing: -0.3px;
-  margin: 0 0 12px;
-}
-.lab-about p {
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.8;
-}
 .animation-page [hidden] {
   display: none !important;
 }
@@ -420,10 +402,6 @@
   }
   .lab-stage {
     padding: 12px;
-  }
-  .lab-about {
-    grid-template-columns: 1fr;
-    gap: 20px;
   }
   .lab-resolution {
     font-size: 9px;
