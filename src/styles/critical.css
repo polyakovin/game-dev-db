@@ -82,21 +82,6 @@ svg {
   letter-spacing: -0.7px;
   white-space: nowrap;
 }
-.brand-mark {
-  width: 33px;
-  height: 33px;
-  flex-shrink: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px;
-}
-.brand-mark i {
-  background: var(--accent);
-  border-radius: 1px;
-}
-.brand-mark i:last-child {
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
 .sidebar-caption {
   font-size: 11px;
   color: var(--muted);
@@ -254,15 +239,20 @@ main {
   }
   .topbar {
     padding: 0 20px;
-    height: 65px;
+    height: auto;
+    min-height: 65px;
     gap: 12px;
+    flex-wrap: wrap;
   }
   .topbar-actions {
     gap: 8px;
+    margin-left: auto;
   }
   .mobile-brand {
     white-space: nowrap;
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-weight: 600;
     letter-spacing: -0.5px;
     font-size: 16px;
@@ -291,16 +281,10 @@ main {
     padding: 32px 20px 42px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 420px) {
   .topbar {
     padding-inline: 12px;
     padding-block: 10px;
-    height: auto;
-    min-height: 65px;
-    flex-wrap: wrap;
-  }
-  .topbar-actions {
-    margin-left: auto;
   }
   .mobile-brand {
     font-size: 14px;

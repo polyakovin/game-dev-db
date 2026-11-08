@@ -1,5 +1,6 @@
 ---
 import { SITE_NAME, path } from '../lib/site';
+import BrandMark from '../components/BrandMark.astro';
 import ThemeHead from '../components/ThemeHead.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 ---
@@ -11,6 +12,7 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <ThemeHead />
     <title>404 · {SITE_NAME}</title>
+    <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <meta name="robots" content="noindex" />
     <style>
       body {
@@ -33,7 +35,9 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
     </style>
   </head>
   <body>
-    <p>{SITE_NAME} / 404</p>
+    <p>
+      <BrandMark size={24} /> {SITE_NAME} / 404
+    </p>
     <h1>
       Здесь пока пусто.
       <br />

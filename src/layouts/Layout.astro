@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import criticalCss from '../styles/critical.css?inline';
+import BrandMark from '../components/BrandMark.astro';
 import Icon from '../components/Icon.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import ThemeHead from '../components/ThemeHead.astro';
@@ -127,12 +128,7 @@ const nav = [
     {!compact && (
       <aside class="sidebar">
         <a class="brand" href={path(`${lang}/`)} aria-label={SITE_NAME}>
-          <span class="brand-mark" aria-hidden="true">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-          </span>
+          <BrandMark size={33} />
           <span>{SITE_NAME}</span>
         </a>
         <div class="sidebar-caption">{t.tagline}</div>
@@ -181,8 +177,13 @@ const nav = [
         <div class="breadcrumb">
           {compact ? (
             <>
-              <a class="compact-brand" href={path(`${lang}/`)}>
-                {SITE_NAME}
+              <a
+                class="compact-brand"
+                href={path(`${lang}/`)}
+                aria-label={SITE_NAME}
+              >
+                <BrandMark size={22} />
+                <span>{SITE_NAME}</span>
               </a>
               <a class="compact-back" href={path(`${lang}/mechanics/`)}>
                 ← {t.mechanics}
@@ -190,7 +191,10 @@ const nav = [
             </>
           ) : (
             <>
-              <span class="mobile-brand">{SITE_NAME}</span>
+              <span class="mobile-brand">
+                <BrandMark size={22} />
+                <span>{SITE_NAME}</span>
+              </span>
               <span class="desktop-crumb">
                 {SITE_NAME} <span class="slash">/</span>{' '}
                 <span>{t[section]}</span>
@@ -271,6 +275,9 @@ const nav = [
     container: mechanic-shell / inline-size;
   }
   .compact-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     color: var(--ink);
     font-size: 17px;
     font-weight: 650;
@@ -299,7 +306,10 @@ const nav = [
     .compact-page .topbar {
       padding: 4px 12px;
     }
-    .compact-page .compact-brand,
+    .compact-page .breadcrumb {
+      gap: 8px;
+    }
+    .compact-page .compact-brand span,
     .compact-page .github-link {
       display: none;
     }

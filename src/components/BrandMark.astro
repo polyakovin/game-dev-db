@@ -1,0 +1,28 @@
+---
+import { path } from '../lib/site';
+
+interface Props {
+  size: number;
+}
+
+const { size } = Astro.props;
+---
+
+<svg
+  class="brand-mark"
+  width={size}
+  height={size}
+  viewBox="0 0 64 64"
+  aria-hidden="true"
+  focusable="false"
+>
+  <use href={`${path('favicon.svg')}#brand-mark`}></use>
+</svg>
+
+<style>
+  .brand-mark {
+    color: var(--accent);
+    flex: none;
+    vertical-align: middle;
+  }
+</style>

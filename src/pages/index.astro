@@ -1,5 +1,6 @@
 ---
 import { SITE_NAME, path, absolute } from '../lib/site';
+import BrandMark from '../components/BrandMark.astro';
 import ThemeHead from '../components/ThemeHead.astro';
 ---
 
@@ -11,10 +12,13 @@ import ThemeHead from '../components/ThemeHead.astro';
     <ThemeHead />
     <meta http-equiv="refresh" content={`0;url=${path('en/')}`} />
     <title>{SITE_NAME}</title>
+    <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <link rel="canonical" href={absolute('en/')} />
   </head>
   <body>
-    <h1>{SITE_NAME}</h1>
+    <h1>
+      <BrandMark size={36} /> {SITE_NAME}
+    </h1>
     <p>
       <a href={path('en/')}>Knowledge base in English</a> ·{' '}
       <a href={path('ru/')} lang="ru">
