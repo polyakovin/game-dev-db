@@ -1,6 +1,5 @@
 ---
 import { SITE_NAME, path, absolute } from '../lib/site';
-import '../styles/theme.css';
 import ThemeHead from '../components/ThemeHead.astro';
 ---
 
@@ -9,9 +8,9 @@ import ThemeHead from '../components/ThemeHead.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <ThemeHead />
     <meta http-equiv="refresh" content={`0;url=${path('en/')}`} />
     <title>{SITE_NAME}</title>
-    <ThemeHead />
     <link rel="canonical" href={absolute('en/')} />
   </head>
   <body>

@@ -1,6 +1,5 @@
 ---
 import { SITE_NAME, path } from '../lib/site';
-import '../styles/theme.css';
 import ThemeHead from '../components/ThemeHead.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 ---
@@ -10,9 +9,9 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <ThemeHead />
     <title>404 · {SITE_NAME}</title>
     <meta name="robots" content="noindex" />
-    <ThemeHead />
     <style>
       body {
         font-family: system-ui, sans-serif;

@@ -250,6 +250,44 @@ test('no-JavaScript reading follows system appearance and omits inactive control
   await context.close();
 });
 
+test.describe('when external stylesheets fail', () => {
+  test.use({ javaScriptEnabled: false, colorScheme: 'dark' });
+
+  test('keeps the theme, navigation and lesson readable', async ({ page }) => {
+    test.skip(
+      !process.env.CI && !process.env.PLAYWRIGHT_PREVIEW,
+      'Astro dev embeds application styles; this exercises the built site.',
+    );
+    await page.route('**/*', (route) =>
+      route.request().resourceType() === 'stylesheet'
+        ? route.abort()
+        : route.continue(),
+    );
+
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto(`${base}/ru/`, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('html')).toHaveCSS('background-color', darkPaper);
+    await expect(page.locator('.sidebar')).toBeVisible();
+    await expect(page.locator('.mobile-nav')).toBeHidden();
+
+    await page.setViewportSize({ width: 320, height: 812 });
+    await page.goto(`${base}/en/lessons/game-loop/`, {
+      waitUntil: 'domcontentloaded',
+    });
+    await expect(page.locator('html')).toHaveCSS('background-color', darkPaper);
+    await expect(page.locator('.sidebar')).toBeHidden();
+    await expect(page.locator('.mobile-nav')).toBeVisible();
+    await expect(page.getByRole('heading', { level: 1 })).toBeInViewport();
+    await expect(page.locator('.article-sources a').first()).toHaveCSS(
+      'text-decoration-line',
+      'underline',
+    );
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(320);
+  });
+});
+
 test('standalone error page respects saved appearance and printing uses light colors', async ({
   page,
 }) => {

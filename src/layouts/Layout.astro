@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import criticalCss from '../styles/critical.css?inline';
 import Icon from '../components/Icon.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import ThemeHead from '../components/ThemeHead.astro';
@@ -69,9 +70,10 @@ const nav = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <ThemeHead />
+    <style is:inline set:html={criticalCss}></style>
     <meta name="description" content={description} />
     {robots && <meta name="robots" content={robots} />}
-    <ThemeHead />
     <title>{title} · {SITE_NAME}</title>
     <link rel="icon" href={path('favicon.svg')} type="image/svg+xml" />
     <link rel="canonical" href={canonical} />
@@ -241,7 +243,6 @@ const nav = [
     --compact-toolbar: 48px;
   }
   .compact-page .workspace {
-    margin-left: 0;
     block-size: 100svh;
     display: grid;
     grid-template-rows: auto minmax(0, 1fr);
