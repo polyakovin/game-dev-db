@@ -15,7 +15,7 @@ sources:
 
 ## Prerequisites
 
-Two weapons with different numbers may offer the same decision: take the one that is better in every situation. Begin balancing by asking what the player pays and when they receive value.
+If one weapon works better in every situation, different stats still leave the player with an obvious choice. To balance the weapons, start with what each one costs to use and when it pays off.
 
 ## The principle
 

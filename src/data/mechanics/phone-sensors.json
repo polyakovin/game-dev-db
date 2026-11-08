@@ -11,8 +11,8 @@
     "en": "Sensors provide device-dependent signals; mechanics must check channel availability and distinguish measurements, noise and missing data."
   },
   "intro": {
-    "ru": "Датчик даёт зависимый от устройства сигнал; механика должна проверять доступность канала и различать измерение, шум и отсутствие данных. Каждый обзор выделяет действие игрока, изменения состояния и альтернативные правила. Примеры условные: они показывают проектное решение, а не приписывают его конкретной игре. Проверка прототипа задаёт наблюдаемый вопрос для следующей итерации. Подробные уже существующие каталоги доступны по отдельным ссылкам в карте механик.",
-    "en": "Sensors provide device-dependent signals; mechanics must check channel availability and distinguish measurements, noise and missing data. Each overview separates player actions, state changes and alternative rules. Examples are hypothetical design scenarios, not claims about a named game. A prototype check states an observable question for the next iteration. Existing detailed references remain separately linked from the direction map."
+    "ru": "Прежде чем использовать освещённость или приближение как ввод, проверьте, что телефон передаёт нужный сигнал. Игра должна различать показание, шум и отсутствие данных, в том числе при работе с несколькими устройствами. В обзоре есть условные примеры и вопросы для проверки прототипа.",
+    "en": "Before using light or proximity as input, check that the phone supplies the signal. Give the game a way to distinguish a reading from noise or a missing signal, including when several phones take part. The examples are hypothetical and include checks you can run on a prototype."
   },
   "provenance": "Original bilingual editorial overviews authored for gamemechanics.pro on 2026-10-20 and reviewed on 2026-10-21. Scenarios are hypothetical design examples; prototype checks describe work to perform, not completed playtests. Primary sources support the stated techniques and implementation context, not every proposed variant.",
   "sections": [

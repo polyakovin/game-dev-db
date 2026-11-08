@@ -17,7 +17,7 @@ sources:
 
 ## Prerequisites
 
-A character may need charging, repairs and helping the player simultaneously. Write the selection rule explicitly before adding behavioral architecture.
+An NPC might be low on power, need repairs and have a job to do for the player. Decide which action wins when these needs compete before choosing how to organize the behavior code.
 
 ## The principle
 

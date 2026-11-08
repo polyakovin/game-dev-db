@@ -54,14 +54,12 @@ const format = (value: string, withTime = true) =>
     document.documentElement.classList.add('jams-js');
   </script>
   <header class="page-header">
-    <div class="eyebrow">
-      {ru ? 'Практика с общим дедлайном' : 'Make something. Meet a deadline.'}
-    </div>
-    <h1>{ru ? 'Сделайте игру на джеме.' : 'Make a game at a jam.'}</h1>
+    <div class="eyebrow">{ru ? 'Календарь событий' : 'Event calendar'}</div>
+    <h1>{labels.title}</h1>
     <p>
       {ru
-        ? 'Выберите событие, прочитайте условия и присоединяйтесь. Здесь остаются только джемы, у которых ещё не закончился приём работ.'
-        : 'Choose an event, read its rules and join in. Only jams whose submission deadline has not passed stay on this list.'}
+        ? 'Здесь собраны предстоящие джемы и те, на которые ещё можно подать работу. Условия участия уточняйте на странице организатора.'
+        : 'Find upcoming jams and events still accepting submissions. Check the organizer’s page for entry rules.'}
     </p>
     <a class="jams-calendar-jump" href="#calendars">
       {ru ? 'Где искать ещё джемы' : 'Find more jams'}{' '}

@@ -17,7 +17,7 @@ sources:
 
 ## Prerequisites
 
-A game can launch and accept a button press while the mechanic still breaks its rule. Check promised behavior under known conditions, then separately assess how players experience it.
+A successful launch and a working button tell you very little about the mechanic. Put the game in a known state and check whether the button press produces the promised result. Assess how players experience the mechanic separately.
 
 ## The principle
 

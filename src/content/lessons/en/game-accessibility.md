@@ -17,7 +17,7 @@ sources:
 
 ## Prerequisites
 
-A barrier can appear before the first gameplay task: tiny menus, mandatory button holds or an audio-only cue. Check the entire player journey, including settings and recovery from mistakes.
+Check what a player has to do before the first challenge. Can they read the menu, complete a mandatory button hold or notice an audio-only cue? Follow the rest of the route too, including changing settings and recovering from a mistake.
 
 ## The principle
 

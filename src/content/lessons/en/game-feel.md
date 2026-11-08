@@ -25,7 +25,7 @@ sources:
 
 ## Prerequisites
 
-Begin with a mechanic that already follows its rules: jumping lands correctly, hits cause damage, or collected items enter the inventory. If the result is wrong, effects make diagnosis harder. Choose one action and keep a baseline version for comparison.
+Pick one action whose rules already work, such as a hit that deals the expected damage. Save that version before adding effects. If the hit behaves incorrectly, extra effects make the cause harder to find.
 
 ## The principle
 
@@ -71,7 +71,7 @@ Do not make a decorative particle responsible for applying damage. Do not change
 - Disabling shake keeps the action understandable.
 - Combined effects do not obscure hazards or essential text.
 - Effect parameters can change without changing damage rules.
-- Comparison with the baseline records observations, not just the author's taste.
+- The comparison describes what you observed in each version, such as whether you could tell when a hit connected.
 
 ## Prompt for an AI agent
 

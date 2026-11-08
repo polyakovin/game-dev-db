@@ -15,7 +15,7 @@ sources:
 
 ## Prerequisites
 
-A character's level can increase while their actions remain unchanged. Design progression by describing the experience between stages: a new capability, a different risk or a shorter route to a familiar goal.
+A new level can leave the player doing exactly what they did before. Decide what should change between stages. An upgrade might open up an action, change the risk or shorten the route to a familiar goal.
 
 ## The principle
 

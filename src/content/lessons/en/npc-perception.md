@@ -15,13 +15,13 @@ sources:
 
 ## Prerequisites
 
-Game code knows every object's coordinates. An NPC does not have to. Here, AI means a character behavior algorithm rather than a language model.
+Decide which coordinates an NPC can learn from its surroundings, even if the game has access to every object's position. Here, AI means the algorithm that controls the character.
 
 ## The principle
 
 Separate observation from decision. Perception reports “target visible” or “noise heard,” memory retains the last known location, and behavior selects an action. Martin Walsh's Game AI Pro 2 chapter examines perception and awareness as game models where consistent rules and feedback matter.
 
-Start with [States and transitions](/en/lessons/state-machines/). Explicitly define which information each state can access. If an NPC uses hidden player coordinates after losing sight, that should be a deliberate game rule rather than accidental data leakage.
+Start with [States and transitions](/en/lessons/state-machines/). List the information available in each state. For instance, give an NPC the player's hidden coordinates after it loses sight only if the rules explicitly allow it.
 
 <span id="example-an-observation-drone"></span>
 

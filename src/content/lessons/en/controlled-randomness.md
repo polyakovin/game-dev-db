@@ -17,7 +17,7 @@ sources:
 
 ## Prerequisites
 
-A reward with a 25% chance need not appear once every four attempts. A short session can differ considerably from the average across many runs.
+A 25% drop chance describes the odds of a reward on an attempt. Four attempts can pass without a drop, and the rate in a short session can differ sharply from the average over many runs.
 
 ## The principle
 
@@ -35,7 +35,7 @@ In this teaching model, each crate independently contains a battery with probabi
 
 An alternative is to shuffle a bag of four tokens, one representing a battery. Each complete bag provides exactly one. Order is random, but outcomes are dependent. A battery at the beginning of one bag and at the end of the next permits six empty crates in a row. A four-token bag does not guarantee a reward in every sliding window of four attempts.
 
-If a battery is required to finish the level, provide recovery from a poor outcome separately. A guarantee or fallback route changes the design, not just the random-number generator.
+If a battery is required to finish the level, give the player a way to recover after a bad roll. A guaranteed drop changes when the player can count on a battery. A fallback route changes how they can finish the level.
 
 ## Common mistakes
 
@@ -46,7 +46,7 @@ If a battery is required to finish the level, provide recovery from a poor outco
 ## Verify it
 
 1. Recalculate the empty-streak probability analytically.
-2. In simulation, record reward frequency and streak-length distribution, not only the mean.
+2. In the simulation, record the average, how often rewards drop and how often each streak length occurs.
 3. For bags, check every position of the single battery in two adjacent bags.
 4. Save the seed, algorithm version and event sequence to reproduce a failure.
 

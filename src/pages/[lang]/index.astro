@@ -22,19 +22,17 @@ const lensCatalog = getLenses(lang);
     <div class="intro-copy">
       <div class="eyebrow">
         <span class="small-cross">+</span>
-        {lang === 'ru'
-          ? 'База знаний о разработке игр'
-          : 'An open field guide to game development'}
+        {lang === 'ru' ? 'Открытая база знаний' : 'Open knowledge base'}
       </div>
       <h1>
-        {lang === 'ru' ? 'От идеи к игре.' : 'From an idea to a game.'}
+        {lang === 'ru' ? 'Разработка игр' : 'Game development'}
         <br />
-        <span>{lang === 'ru' ? 'С пониманием.' : 'With understanding.'}</span>
+        <span>{lang === 'ru' ? 'на практике' : 'in practice'}</span>
       </h1>
       <p class="intro-description">
         {lang === 'ru'
-          ? 'Принципы, которые превращают работающий код в хорошую игру. Изучайте сами. Давайте контекст своему ИИ-агенту. Делитесь опытом.'
-          : 'Principles that turn working code into a good game. Learn the foundations. Give your AI agent context. Share what you discover.'}
+          ? 'Разберитесь, как устроены игровые механики и как проверить их в прототипе. Уроки можно читать на сайте или передавать ИИ-агенту вместе с задачей.'
+          : 'Learn how game mechanics work and how to test them in a prototype. Read the lessons here or share one with your AI agent when you give it a task.'}
       </p>
       <div class="intro-meta">
         <span>
@@ -164,7 +162,7 @@ const lensCatalog = getLenses(lang);
         </text>
       </svg>
       <div class="visual-bottomline">
-        <span>Small steps. Playable worlds.</span>
+        <span>{lang === 'ru' ? 'Один кадр' : 'One frame'}</span>
         <span class="visual-pixels">▪ ▪ ▪</span>
       </div>
     </div>
@@ -176,14 +174,12 @@ const lensCatalog = getLenses(lang);
     </span>
     <span>
       <strong>
-        {lang === 'ru'
-          ? 'Первая игра? Начните с малого.'
-          : 'Your first game? Start small.'}
+        {lang === 'ru' ? 'Первый прототип' : 'Your first prototype'}
       </strong>
       <span class="start-description">
         {lang === 'ru'
-          ? 'Одна механика, один прототип, понятный следующий шаг.'
-          : 'One mechanic, one prototype, one clear next step.'}
+          ? 'Выберите одно действие игрока и решите, что хотите проверить.'
+          : 'Pick one player action and decide what you want to test.'}
       </span>
     </span>
     <span class="start-action">
@@ -198,12 +194,12 @@ const lensCatalog = getLenses(lang);
     </span>
     <span>
       <strong>
-        {lang === 'ru' ? 'Проверьте идею в игре.' : 'Test an idea in play.'}
+        {lang === 'ru' ? 'Задачи по геймдизайну' : 'Game design exercises'}
       </strong>
       <span class="start-description">
         {lang === 'ru'
-          ? `${practice.counts.tasks} задач с ограничениями, результатами и проверкой прототипа.`
-          : `${practice.counts.tasks} exercises with constraints, deliverables and prototype checks.`}
+          ? `${practice.counts.tasks} задач. В каждой описано, что собрать и как проверить результат.`
+          : `${practice.counts.tasks} exercises. Each gives you something to build and a way to test it.`}
       </span>
     </span>
     <span class="start-action">
@@ -221,8 +217,8 @@ const lensCatalog = getLenses(lang);
     <span>
       <strong>
         {lang === 'ru'
-          ? 'Найдите нужное во всей базе.'
-          : 'Find what you need across the whole knowledge base.'}
+          ? 'Поиск по всей базе'
+          : 'Search the whole knowledge base'}
       </strong>
       <span class="start-description">
         {lang === 'ru'
@@ -337,8 +333,8 @@ const lensCatalog = getLenses(lang);
     </div>
     <p>
       {lang === 'ru'
-        ? 'Подробные деревья игровых действий, ответвлений и сочетаний для проектирования.'
-        : 'Detailed trees of player actions, variants and combinations for game design.'}
+        ? 'Посмотрите, какие действия входят в механику, как меняются её правила и с чем её можно сочетать.'
+        : 'See what players can do with a mechanic, how its rules vary and what you can combine it with.'}
     </p>
     <MechanicsCards lang={lang} />
   </section>
@@ -349,8 +345,8 @@ const lensCatalog = getLenses(lang);
     </div>
     <p>
       {lang === 'ru'
-        ? 'Посмотрите на одну задачу с разных сторон и выберите следующий эксперимент.'
-        : 'Examine one problem from different perspectives and choose the next experiment.'}
+        ? 'Подберите вопросы для разбора конкретной проблемы и решите, что проверить на плейтесте.'
+        : 'Find questions for a specific design problem and decide what to test in your next playtest.'}
     </p>
     <a class="lesson-card" data-lenses-card href={path(`${lang}/lenses/`)}>
       <div class="card-top">
@@ -374,7 +370,7 @@ const lensCatalog = getLenses(lang);
     </span>
     <span>
       <strong>
-        {lang === 'ru' ? 'Сделайте игру на джеме.' : 'Make a game at a jam.'}
+        {lang === 'ru' ? 'Календарь геймджемов' : 'Game jam calendar'}
       </strong>
       <span class="start-description">
         {lang === 'ru'
@@ -393,16 +389,18 @@ const lensCatalog = getLenses(lang);
       <Icon name="code" size={27} />
     </span>
     <div>
-      <div class="eyebrow">HUMAN READABLE. AGENT READY.</div>
+      <div class="eyebrow">
+        {lang === 'ru' ? 'Работа с ИИ' : 'Working with AI'}
+      </div>
       <h2>
         {lang === 'ru'
-          ? 'Одна база знаний. Два способа читать.'
-          : 'One knowledge base. Two ways to read.'}
+          ? 'Как использовать базу с ИИ-агентом'
+          : 'Use the knowledge base with an AI agent'}
       </h2>
       <p>
         {lang === 'ru'
-          ? 'Статьи для вас. Markdown и структурированные данные для вашего агента.'
-          : 'Articles for you. Markdown and structured data for your agent.'}
+          ? 'Передайте агенту ссылку на урок, Markdown или запись из JSON. В руководстве есть готовый запрос.'
+          : 'Give your agent a lesson link, a Markdown file or a JSON record. The guide includes a prompt you can use.'}
       </p>
     </div>
     <a href={path(`${lang}/for-agents/`)}>

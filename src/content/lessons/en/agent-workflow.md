@@ -25,7 +25,7 @@ sources:
 
 ## Prerequisites
 
-Use a repository or small project that can be launched. An agent can inspect code, suggest changes, and run checks. You provide intent and accept the outcome. The goal is a workflow another contributor or agent can reproduce without needing the whole conversation.
+Open a small project you can run. Let the agent inspect the code, propose changes and run checks. You decide what the game should do and whether the result meets that goal. Record enough for the next contributor to repeat the work without the original chat.
 
 ## The principle
 

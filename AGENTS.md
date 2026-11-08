@@ -12,6 +12,7 @@
 - Astro builds a static site for `https://gamemechanics.pro/` at the domain root. Use `src/lib/site-config.mjs` and shared URL helpers for navigation, assets, metadata and exports.
 - Lessons live in `src/content/lessons/{ru,en}/{id}.md`. Frontmatter is the source of truth; see `docs/content-guide.md`.
 - Each lesson has a matching RU/EN pair with the same stable `id`. Keep metadata, sources, examples, and meaning aligned.
+- Use the [Humanizer skill](https://github.com/blader/humanizer/blob/main/SKILL.md) when drafting or revising public prose. Start from verified facts, edit for the reader, and compare the final RU/EN text against the sources and each other. Preserve technical terms, examples, caveats, and link targets.
 - Generate lesson HTML, search data, Markdown, and JSON from the same content collection. Curated resources live in `src/data/resources.json`. Do not hand-edit generated exports or `dist/`.
 - Keep schema and route changes compatible with `/api/v1/`. Update OpenSpec and documentation for a contract change.
 - Prefer primary sources. Distinguish engine-independent principles from engine-specific behavior. Never fabricate references, results, or quotations.

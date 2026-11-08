@@ -17,7 +17,7 @@ sources:
 
 ## Prerequisites
 
-A blockout, or graybox, tests play in a space that is still easy to rebuild. Cubes, planes and placeholder signs are enough when the character already moves according to the real rules.
+A blockout, or graybox, lets you test a level while it is still easy to rebuild. Use cubes, planes and placeholder signs. Have the character move as they would in the game so you can judge the space at the right scale.
 
 ## The principle
 
@@ -33,7 +33,7 @@ Start with a question: for example, “Can the player notice the closing door an
 
 This is an original teaching scenario, not a reported test result. The character is 0.8 m wide and moves at 4 m/s. A warehouse has a direct corridor of 12 m and a detour of 20 m. Without stops, they take 3 and 5 seconds. The direct door closes 4 seconds after a signal.
 
-Build both routes with primitives. Use the gameplay camera and actual collision. Measure the route from where the player can first notice the signal, rather than a convenient editor marker. Turns and acceleration can increase travel time.
+Build both routes with primitives. Use the gameplay camera and actual collision. Start measuring at the first spot where the player can notice the signal. Account for time spent turning and accelerating.
 
 The first pass checks whether the door is reachable. The second checks whether an understandable exit remains after it closes. The third checks the return trip with cargo, if cargo affects movement.
 

@@ -15,13 +15,13 @@ sources:
 
 ## Prerequisites
 
-Players can read a hint without understanding the rule. To check understanding, let them perform an action and independently transfer it to a slightly different situation.
+A player can follow a hint without understanding the rule. Give them a chance to perform the action, then see whether they can use it on their own in a slightly different situation.
 
 ## The principle
 
 Choose one skill the level should clarify. A useful aspect of [Reverse Design: Super Mario World](https://thegamedesignforum.com/features/RD_SMW_1.html) is its method: examine individual challenges and their sequences instead of relying on a general instruction to “make it harder.”
 
-For your prototype, separate introduction, independent attempt and skill transfer. This is a working structure, not a mandatory law for every level. It does not replace understandable controls, accessible hints or testing with your audience.
+Try introducing the mechanic, letting the player attempt it alone and asking them to use it in a new situation. Adapt the sequence to the level. Keep controls understandable and hints accessible, and test the result with the people you are designing for.
 
 <span id="example-a-pulse-platform"></span>
 

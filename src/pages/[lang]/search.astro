@@ -25,12 +25,14 @@ const sections = [
   alternate="search/"
 >
   <header class="page-header">
-    <div class="eyebrow">{ru ? 'Найти и применить' : 'Find and apply'}</div>
-    <h1>{ru ? 'Поиск по всей базе.' : 'Search the whole knowledge base.'}</h1>
+    <div class="eyebrow">
+      {ru ? 'Уроки и справочники' : 'Lessons and references'}
+    </div>
+    <h1>{ru ? 'Поиск по всей базе' : 'Search the whole knowledge base'}</h1>
     <p>
       {ru
-        ? 'Уроки, механики, упражнения, призмы и источники. Ищите по названию, определению, тексту и синонимам.'
-        : 'Lessons, mechanics, exercises, lenses and sources. Search titles, definitions, text and aliases.'}
+        ? 'Введите название механики или слово из урока. Поиск учитывает названия, определения, текст и синонимы. Результаты можно отфильтровать по типу материала.'
+        : 'Enter a mechanic name or a term from a lesson. Search matches titles, definitions, text and aliases. You can filter the results by content type.'}
     </p>
   </header>
   <section

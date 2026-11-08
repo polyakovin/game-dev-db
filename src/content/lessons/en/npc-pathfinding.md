@@ -15,7 +15,7 @@ sources:
 
 ## Prerequisites
 
-Finding a sequence of cells and moving a character through it without getting stuck are separate tasks. Start with a space model, then check both parts.
+A route through a grid tells a character which cells to visit. You still have to check whether it can move through them without getting stuck. Model the space first, then test the search and the movement separately.
 
 ## The principle
 

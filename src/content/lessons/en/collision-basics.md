@@ -25,7 +25,7 @@ sources:
 
 ## Prerequisites
 
-You need coordinates and basic conditions. Begin with two unrotated rectangles. The goal is to define exactly what contact means without confusing geometry with damage rules.
+Use coordinates and simple conditions to test contact between two unrotated rectangles. Decide when the shapes touch or overlap before writing rules for what the contact does, such as dealing damage.
 
 ## The principle
 

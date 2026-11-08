@@ -21,11 +21,11 @@ sources:
 
 ## Prerequisites
 
-You need a playable scene and access to the target device, or an explicitly identified intermediate environment. This lesson turns “make it faster” into a measurement of a particular workload. Low-level optimization expertise is not required.
+To make a scene faster, first measure a specific workload. Run the scene on the target device, or name the intermediate environment if that is all you have. You can start without knowing low-level optimization.
 
 ## The principle
 
-Start with platform, resolution, build configuration, and target frame rate. At 60 frames per second, the interval between frames is about 16.67 ms; at 30, it is about 33.33 ms. This arithmetic provides a frame-pacing target, not a promise that any scene can finish within it.
+Write down the platform, resolution, build configuration and target frame rate. At 60 FPS, aim for about 16.67 ms between frames. At 30 FPS, aim for about 33.33 ms. Measure the scene to see whether it meets that target.
 
 Do not automatically add every CPU and GPU timing together, because their work may overlap. Learn what a measurement tool reports and identify what delays the next completed frame. Speeding up one function cannot resolve a bottleneck elsewhere.
 
@@ -68,7 +68,7 @@ Do not measure FPS alone. Initial loading, download size, peak memory, or menu r
 - A baseline recording exists from before the change.
 - Profile evidence explains the chosen optimization.
 - Comparison runs use the same workload and conditions.
-- Slow frames are inspected rather than relying only on average FPS.
+- The report includes average FPS and an inspection of individual slow frames.
 - Gameplay and memory use have not silently regressed.
 - Target devices that were not tested are named explicitly.
 

@@ -49,8 +49,8 @@
     },
     "tips": [
       {
-        "ru": "Усложняйте окружение, а не уменьшайте цель до пикселя.",
-        "en": "Add scene complexity rather than shrinking the target to a pixel."
+        "ru": "Оставьте цель различимой. Чтобы усложнить поиск, добавьте деталей вокруг неё.",
+        "en": "Keep the target large enough to see. Make the search harder by adding detail around it."
       },
       {
         "ru": "Давайте подсказку по запросу и явно отмечайте находку.",
@@ -676,8 +676,8 @@
       "en": "Acquiring cards"
     },
     "description": {
-      "ru": "Новые карты меняют возможности будущих ходов. Игрок оценивает не только силу покупки, но и её место в уже собранной колоде.",
-      "en": "New cards change future turns. The player considers both a purchase’s strength and its place in the existing deck."
+      "ru": "Новая карта меняет возможности следующих ходов. При покупке игрок оценивает силу карты и то, как она работает с остальной колодой.",
+      "en": "Adding a card changes what the player can do on later turns. A purchase depends on how strong the card is and how it works with the rest of the deck."
     },
     "image": {
       "src": "images/mechanics/slay-the-spire-shop.webp",
@@ -784,8 +784,8 @@
         "en": "Show how much money a planned purchase would leave."
       },
       {
-        "ru": "Дайте товарам разные применения, а не только разную силу.",
-        "en": "Give goods different uses, not only different power levels."
+        "ru": "Дайте товарам разные применения, чтобы выбор зависел от того, что нужно игроку.",
+        "en": "Give items different uses so the choice depends on what the player needs."
       }
     ],
     "examples": [
@@ -1036,8 +1036,8 @@
         "en": "Distinguish discarding from removing a card from the cycle."
       },
       {
-        "ru": "Показывайте момент перемешивания, а не меняйте стопки незаметно.",
-        "en": "Make the shuffle visible instead of silently changing piles."
+        "ru": "Покажите, когда стопку перемешивают и куда переходят карты.",
+        "en": "Show players when a pile is shuffled and where the cards go."
       }
     ],
     "examples": [
@@ -2257,8 +2257,8 @@
         "en": "Show the net effect of a replacement, including lost bonuses."
       },
       {
-        "ru": "Связывайте свойства с решениями в игре, а не только с редкостью.",
-        "en": "Connect properties to gameplay decisions as well as rarity."
+        "ru": "Покажите, что свойство предмета меняет в игре и как оно связано с редкостью.",
+        "en": "Show what an item property changes in play and how it relates to rarity."
       }
     ],
     "examples": [
@@ -2848,8 +2848,8 @@
     },
     "tips": [
       {
-        "ru": "Описывайте условия взаимодействия эффектов, а не только их силу.",
-        "en": "Describe the conditions for effects to interact as well as their strength."
+        "ru": "Объясните, насколько силён каждый эффект и при каких условиях он взаимодействует с другим.",
+        "en": "Explain how strong each effect is and when it interacts with another."
       },
       {
         "ru": "Проверяйте сборку на задачах, требующих разных ответов.",
@@ -4031,8 +4031,8 @@
         "en": "Give each class a useful action beyond dealing damage."
       },
       {
-        "ru": "Объясняйте роль на примере задачи, а не только списка характеристик.",
-        "en": "Explain a role through a task, not only a list of statistics."
+        "ru": "Покажите роль класса на задаче, которую игрок может попробовать. По характеристикам объясните, как класс с ней справляется.",
+        "en": "Show what a class does with a task the player can try. Use stats to explain how it does it."
       }
     ],
     "examples": [
@@ -5383,8 +5383,8 @@
         "en": "Distinguish known information from undiscovered entries."
       },
       {
-        "ru": "Давайте применять знания при следующей встрече, а не только собирать записи.",
-        "en": "Let knowledge affect the next encounter, beyond collecting journal entries."
+        "ru": "Дайте игроку применить полученные знания, когда он снова столкнётся с этой ситуацией.",
+        "en": "Let players act on what they learned the next time they encounter the same situation."
       }
     ],
     "examples": [
@@ -6011,8 +6011,8 @@
         "en": "Identify a node’s type before the route choice."
       },
       {
-        "ru": "Дайте сравнить будущие развилки, а не только ближайший шаг.",
-        "en": "Allow comparison of later forks, beyond the immediate next step."
+        "ru": "Дайте игроку достаточно сведений, чтобы сравнить, куда могут привести ближайшие шаги.",
+        "en": "Give players enough information to compare where the next steps might lead."
       }
     ],
     "examples": [
@@ -8675,8 +8675,8 @@
       "en": "Eat to heal"
     },
     "description": {
-      "ru": "Употребление еды возвращает часть здоровья. Пища в окружении становится полезным ресурсом, а не только украшением сцены.",
-      "en": "Eating restores some health. Food in the environment becomes a useful resource as well as part of the scene."
+      "ru": "Еда восстанавливает часть здоровья. Игрок может подобрать её в окружении, чтобы восстановиться.",
+      "en": "Eating restores some health, so players can use food they find in the scene to recover."
     },
     "image": {
       "src": "images/mechanics/combat-eating-to-heal.webp",
@@ -10571,8 +10571,8 @@
         "en": "Show state changes after each action."
       },
       {
-        "ru": "Давайте вывести правило из устройства, а не угадывать комбинации.",
-        "en": "Make the rule inferable from the device rather than requiring blind guesses."
+        "ru": "Устройте головоломку так, чтобы игрок мог вывести правило из поведения устройства.",
+        "en": "Design the device so players can work out its rule from how it behaves."
       }
     ],
     "examples": [
@@ -17109,8 +17109,8 @@
       "en": "Destructible parts and wounds"
     },
     "description": {
-      "ru": "Игрок выбирает часть цели или тип воздействия, чтобы изменить её возможности, а не только уменьшить общий запас здоровья.",
-      "en": "The player selects a target part or effect type to change its capabilities rather than merely reduce shared health."
+      "ru": "Выбирая часть цели или тип воздействия, игрок может нанести урон и изменить то, на что цель способна.",
+      "en": "By targeting a body part or choosing a type of effect, the player can change what the target can do as well as damage it."
     },
     "image": {
       "src": "images/mechanics/impact-cutting-in-half.webp",
@@ -18393,8 +18393,8 @@
     },
     "tips": [
       {
-        "ru": "Создавайте способы конкурировать за возможности, а не только за размер запаса.",
-        "en": "Create competition over opportunities as well as accumulated wealth."
+        "ru": "Предложите возможности, за которые игроки могут конкурировать наряду с накоплением запасов.",
+        "en": "Give players opportunities worth competing for alongside the resources they can stockpile."
       }
     ],
     "examples": [
@@ -19455,8 +19455,8 @@
       "en": "Knowledge unlocks progress"
     },
     "description": {
-      "ru": "Продвижение зависит от понимания правила или факта, а не только от полученного предмета.",
-      "en": "Progress depends on understanding a rule or fact alongside acquiring items."
+      "ru": "Чтобы продвинуться, игроку нужно понять правило или факт и разобраться, как применить найденные предметы.",
+      "en": "To make progress, the player must understand a rule or fact and know how to use the items they find."
     },
     "image": {
       "src": "images/mechanics/adventure-chants-sennaar-05.webp",
@@ -19488,8 +19488,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте понимание правила действием, а не повторным сбором уже известного.",
-        "en": "Test understanding through action rather than recollecting known information."
+        "ru": "Пусть игрок покажет, что понял правило, применив его на деле.",
+        "en": "Give the player a chance to show they understand the rule by applying it."
       }
     ],
     "examples": [
@@ -23499,8 +23499,8 @@
     },
     "tips": [
       {
-        "ru": "Учитывайте цели собеседника, а не только уровень навыка героя.",
-        "en": "Account for the other character’s goals as well as the hero’s skill."
+        "ru": "При проверке убеждения учитывайте, чего хочет собеседник и насколько умел герой.",
+        "en": "When resolving persuasion, consider what the other character wants and how skilled the hero is."
       }
     ],
     "examples": [
@@ -24006,8 +24006,8 @@
     },
     "tips": [
       {
-        "ru": "Давайте контекст для вывода значения, а не только готовый перевод.",
-        "en": "Provide context for inferring meaning as well as an eventual translation."
+        "ru": "Дайте игроку достаточно контекста, чтобы он мог догадаться о значении до появления перевода.",
+        "en": "Give the player enough context to infer the meaning before showing a translation."
       }
     ],
     "examples": [
@@ -24458,8 +24458,8 @@
     },
     "tips": [
       {
-        "ru": "Разделяйте голоса по мотивам и позиции, а не только по оформлению.",
-        "en": "Distinguish inner voices by motives and viewpoint as well as presentation."
+        "ru": "Дайте каждому внутреннему голосу свой взгляд и мотивы. Оформление поможет подчеркнуть различия.",
+        "en": "Give each inner voice its own motives and viewpoint, then use presentation to reinforce the difference."
       }
     ],
     "examples": [
@@ -24977,8 +24977,8 @@
       "en": "Rare and elite hunting"
     },
     "description": {
-      "ru": "Ценность попытки зависит от обнаружения особой цели, а не только от числа убийств.",
-      "en": "An attempt's value depends on locating a special target rather than merely maximizing kills."
+      "ru": "Редкая цель может сделать попытку удачной, даже если игрок убил мало противников.",
+      "en": "Finding a special target can make a run worthwhile even when the player kills few enemies."
     },
     "image": {
       "src": "images/mechanics/rpg-mhr-40.webp",
@@ -25738,8 +25738,8 @@
     },
     "tips": [
       {
-        "ru": "Давайте управлять качеством через процесс, а не только число повторов.",
-        "en": "Let the crafting process influence quality alongside repeated attempts."
+        "ru": "Пусть качество зависит и от повторных попыток, и от того, как игрок изготавливает предмет.",
+        "en": "Let players improve quality by changing how they craft an item as well as by repeating the task."
       }
     ],
     "examples": [
@@ -25942,8 +25942,8 @@
     },
     "tips": [
       {
-        "ru": "Сравнивайте чистый доход после затрат, а не только крупную цену продажи.",
-        "en": "Compare net returns after costs as well as the headline sale price."
+        "ru": "Прежде чем сравнивать доход от продаж, вычтите расходы.",
+        "en": "Subtract the costs before comparing how much each sale earns."
       }
     ],
     "examples": [
@@ -28331,8 +28331,8 @@
       "en": "Unlocking new classes"
     },
     "description": {
-      "ru": "Накопленные достижения или ресурсы открывают новые способы игры, а не только повышают числа текущего класса.",
-      "en": "Accumulated achievements or resources unlock new play styles rather than only raising current-class numbers."
+      "ru": "Достижения или накопленные ресурсы могут открыть классы с новыми способами игры.",
+      "en": "Achievements or saved resources can unlock classes that give the player different ways to play."
     },
     "image": {
       "src": "images/mechanics/rpg-rogue-legacy-2-03.webp",
@@ -28364,8 +28364,8 @@
     },
     "tips": [
       {
-        "ru": "Открытие класса должно давать новый способ игры, а не только прибавку силы.",
-        "en": "A class unlock should provide a new way to play as well as power."
+        "ru": "Дайте новому классу способности, которые меняют подход игрока к знакомым задачам.",
+        "en": "Give a new class abilities that change how the player approaches familiar tasks."
       }
     ],
     "examples": [
@@ -28695,8 +28695,8 @@
       "en": "Performance-based rewards"
     },
     "description": {
-      "ru": "Размер или состав награды зависит от наблюдаемого результата, а не только от факта завершения.",
-      "en": "Reward amount or composition depends on observable performance rather than completion alone."
+      "ru": "Размер или состав награды зависит от того, как игрок справился с задачей.",
+      "en": "The amount or type of reward depends on how the player performed."
     },
     "image": {
       "src": "images/mechanics/rpg-ffxiv-restoration-37.webp",
@@ -35731,8 +35731,8 @@
     },
     "tips": [
       {
-        "ru": "Предлагайте восстановить действия по следам, а не угадывать готовую сцену.",
-        "en": "Ask players to reconstruct actions from traces rather than guess a preset scene."
+        "ru": "Дайте игроку следы, по которым он сможет восстановить события.",
+        "en": "Give players traces they can use to reconstruct what happened."
       }
     ],
     "examples": [
@@ -36002,8 +36002,8 @@
     },
     "tips": [
       {
-        "ru": "Форма ответа должна проверять рассуждение, а не случайный перебор.",
-        "en": "The answer format should test reasoning rather than random guessing."
+        "ru": "Предложите игроку показать, как он пришёл к ответу.",
+        "en": "Ask players to show how they reached their answer."
       }
     ],
     "examples": [
@@ -36222,8 +36222,8 @@
     },
     "tips": [
       {
-        "ru": "Давайте отвечать на возражение подходящим свидетельством, а не тоном реплики.",
-        "en": "Let players answer objections with relevant evidence rather than dialogue tone."
+        "ru": "Дайте игроку ответить на возражение подходящей уликой.",
+        "en": "Let players answer an objection by presenting evidence that addresses it."
       }
     ],
     "examples": [
@@ -36452,8 +36452,8 @@
       "en": "Procedural cases and a larger mystery"
     },
     "description": {
-      "ru": "Это способы организации нескольких расследований. Важны не только новые имена, но и проверяемая причинная структура каждого дела.",
-      "en": "These are ways to organize multiple investigations. Each case needs a checkable causal structure as well as new names."
+      "ru": "Если в игре несколько расследований, дайте каждому своих персонажей и цепочку событий, которую игрок сможет проверить.",
+      "en": "When a game has several cases, give each one a distinct cast and a chain of events the player can verify."
     },
     "image": {
       "src": "images/mechanics/narrative-shadows-doubt-01.webp",
@@ -40946,8 +40946,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте доступность услуг по реальным маршрутам, а не только по расстоянию.",
-        "en": "Test access to services along actual routes rather than distance alone."
+        "ru": "Проверьте, могут ли жители добраться до служб по маршрутам, которыми действительно ходят.",
+        "en": "Check whether people can reach services along the routes they actually take."
       }
     ],
     "examples": [
@@ -42446,8 +42446,8 @@
       "en": "Escape, chases and evading pursuit"
     },
     "description": {
-      "ru": "Побег разрывает контакт с преследователем через маршрут, препятствия и смену заметности, а не только через скорость бега.",
-      "en": "Escape breaks pursuer contact through routes, obstacles and changed visibility rather than running speed alone."
+      "ru": "Чтобы оторваться от преследователя, игрок может сменить маршрут, использовать препятствие или стать менее заметным. Скорость бега влияет на побег наряду с этими действиями.",
+      "en": "To lose a pursuer, the player can change routes, use obstacles or make themselves harder to spot. Running speed is one part of the escape."
     },
     "image": {
       "src": "images/mechanics/hunt-extraction-guide.webp",
@@ -46487,8 +46487,8 @@
     },
     "tips": [
       {
-        "ru": "Смена фазы должна ясно менять задачу, а не только цвет полосы здоровья.",
-        "en": "A phase change should visibly change the task rather than only the health-bar color."
+        "ru": "При смене фазы босса покажите, что игроку теперь нужно делать иначе.",
+        "en": "When the boss changes phase, show what the player has to do differently."
       }
     ],
     "examples": [
@@ -47437,8 +47437,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте общую безопасную область при наложении угроз, а не каждую отдельно.",
-        "en": "Check the shared safe area when threats overlap rather than testing each alone."
+        "ru": "Проверьте, где игрок может безопасно стоять при наложении угроз.",
+        "en": "Test where the player can stand safely when the threats overlap."
       }
     ],
     "examples": [
@@ -48334,8 +48334,8 @@
     },
     "tips": [
       {
-        "ru": "Объясняйте причину результата, а не ограничивайтесь зелёным или красным цветом.",
-        "en": "Explain why the result occurred instead of relying on green or red alone."
+        "ru": "Вместе с цветовой отметкой покажите, почему ответ засчитан или отклонён.",
+        "en": "Explain why an answer was accepted or rejected in addition to marking it with color."
       }
     ],
     "examples": [
@@ -48403,8 +48403,8 @@
       "en": "Adaptive difficulty"
     },
     "description": {
-      "ru": "Игра подбирает стартовую точку, сложность или поддержку по знаниям и действиям ученика. Изменение должно помогать учиться, а не скрывать критерий успеха.",
-      "en": "The game adjusts the starting point, challenge or support to the learner’s knowledge and actions, while keeping success criteria clear."
+      "ru": "Игра меняет стартовую точку, сложность или подсказки с учётом знаний и действий ученика. При изменении задания условие успеха должно оставаться понятным.",
+      "en": "The game adjusts the starting point, difficulty or help based on what the learner knows and does. Keep the success criteria visible as the task changes."
     },
     "image": {
       "src": "images/mechanics/learning-duo-101-3.webp",
@@ -48505,8 +48505,8 @@
       "en": "Transfer and generalization"
     },
     "description": {
-      "ru": "Знакомое правило нужно применить к новым объектам или ситуации. Успех показывает понимание связи, а не запоминание одного готового ответа.",
-      "en": "A familiar rule must be applied to new objects or situations, testing understanding rather than memory of one fixed answer."
+      "ru": "Предложите ученику применить знакомое правило к новым объектам или ситуации. По результату видно, понял ли он связь достаточно хорошо, чтобы применить её снова.",
+      "en": "Ask the learner to apply a familiar rule to new objects or a new situation. The result shows whether they understand the relationship well enough to use it again."
     },
     "image": {
       "src": "images/mechanics/adventure-baba-is-you-00.webp",
@@ -48839,8 +48839,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте порядок и условия действий, а не только финальный объект.",
-        "en": "Check the order and prerequisites of actions, not just the final object."
+        "ru": "Проверьте порядок и условия каждого действия вместе с итоговым результатом.",
+        "en": "Check the order and prerequisites for each action as well as the final result."
       }
     ],
     "examples": [
@@ -49498,8 +49498,8 @@
     },
     "tips": [
       {
-        "ru": "Показывайте смысл операции, а не только её обозначение.",
-        "en": "Show what an operation does rather than only its notation."
+        "ru": "Покажите, что делает операция, рядом с её обозначением.",
+        "en": "Show what the operation does alongside its notation."
       }
     ],
     "examples": [
@@ -50246,8 +50246,8 @@
     },
     "tips": [
       {
-        "ru": "Просите объяснить причину шага, а не только назвать следующую кнопку.",
-        "en": "Ask for the reason behind a step rather than the next button alone."
+        "ru": "Спросите ученика, что он сделает дальше и почему.",
+        "en": "Ask learners what they would do next and why."
       }
     ],
     "examples": [
@@ -52707,8 +52707,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте смысл подписанной связи, а не только наличие линии между узлами.",
-        "en": "Check the meaning of a labeled relationship, not just the line between nodes."
+        "ru": "Попросите ученика объяснить, что означает подпись у связи между понятиями.",
+        "en": "Ask the learner to explain what the label on a connection means."
       }
     ],
     "examples": [
@@ -55040,8 +55040,8 @@
       "en": "Speech meaning and language rules"
     },
     "description": {
-      "ru": "Приложение принимает устный ответ и проверяет его смысл или языковую форму. Результат зависит от содержания, а не только наличия звука.",
-      "en": "An app accepts a spoken response and checks meaning or language form. The content matters rather than the mere presence of sound."
+      "ru": "Приложение принимает устный ответ и проверяет, что сказал игрок или какую языковую форму он использовал.",
+      "en": "The app listens to a spoken answer and checks what the player said or how they said it."
     },
     "image": {
       "src": "images/mechanics/learning-duo-101-6.webp",
@@ -62170,8 +62170,8 @@
     },
     "tips": [
       {
-        "ru": "Проверяйте распознаваемость ритма на самом телефоне, а не только по графику.",
-        "en": "Test rhythm recognition on the actual phone, not only through the graph."
+        "ru": "По графику проверьте интервалы, а затем проверьте, различим ли ритм на самом телефоне.",
+        "en": "Use the graph to inspect the timing, then test whether you can recognize the rhythm on the phone."
       }
     ],
     "examples": [
@@ -64939,8 +64939,8 @@
     },
     "tips": [
       {
-        "ru": "Давайте достаточно ориентиров, чтобы поиск требовал наблюдения, а не перебора точек.",
-        "en": "Provide enough landmarks for observation rather than blind coordinate guessing."
+        "ru": "Разместите ориентиры, по которым игрок сможет сузить область поиска.",
+        "en": "Place landmarks that players can use to narrow down the search."
       }
     ],
     "examples": [
@@ -66634,8 +66634,8 @@
     },
     "tips": [
       {
-        "ru": "Задавайте читаемые начало и конец серии, а не только интервал отдельных выстрелов.",
-        "en": "Give the burst readable boundaries as well as spacing between individual shots."
+        "ru": "Игроку должно быть понятно, когда началась серия, с каким интервалом идут выстрелы и когда серия закончится.",
+        "en": "Make the start, spacing and end of a burst clear to the player."
       }
     ],
     "examples": [
@@ -66946,8 +66946,8 @@
     },
     "tips": [
       {
-        "ru": "Оставляйте проверяемое различие между оригиналом и копиями, а не случайную угадайку.",
-        "en": "Leave a testable distinction between the original and copies rather than a random guess."
+        "ru": "Дайте игроку признак, по которому он сможет отличить оригинал от копий.",
+        "en": "Give the player a clue they can use to tell the original from its copies."
       }
     ],
     "examples": [

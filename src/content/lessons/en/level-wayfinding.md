@@ -15,11 +15,11 @@ sources:
 
 ## Prerequisites
 
-An open passage is not enough. Players need information to locate themselves, choose a direction and recognize progress toward their destination.
+A player can stand beside an open passage and still have no idea where to go. Give them enough information to work out where they are, pick a direction and tell whether they are getting closer to the destination.
 
 ## The principle
 
-A readable route supports decisions. It does not need to make everyone follow the same road. The [Wayfinding](https://book.leveldesignbook.com/process/blockout/wayfinding) chapter treats navigation as an active player process. Exploring a side room is not by itself evidence of being lost.
+Give players enough information to choose a route, then let them decide whether to take it. The [Wayfinding](https://book.leveldesignbook.com/process/blockout/wayfinding) chapter treats navigation as something players do for themselves. When someone enters a side room, check whether they meant to explore or had lost their way.
 
 Separate three questions: “Where am I?”, “Where do I want to go?” and “How can I get there?” A landmark may answer only the first. A visible tower does not explain where its staircase is. A maze can deliberately create uncertainty; distinguish that from an accidentally unreadable door.
 

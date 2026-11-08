@@ -2,9 +2,9 @@ export const animationLabCopy = {
   ru: {
     title: 'Animation Lab',
     eyebrow: 'Инструменты / 01',
-    description: 'Рассмотрите движение. Найдите нужный кадр.',
+    description: 'Просмотр и экспорт 3D-анимации',
     intro:
-      'Откройте 3D-модель, изучите анимацию и сохраните вертикальный превью-ролик. Всё работает прямо в браузере.',
+      'Откройте 3D-модель в браузере и просмотрите анимацию по кадрам. Сохраните отдельный кадр или вертикальный ролик.',
     private: 'Файлы остаются на вашем устройстве',
     import: 'Открыть модель',
     demo: 'Демо-робот',
@@ -89,9 +89,9 @@ export const animationLabCopy = {
   en: {
     title: 'Animation Lab',
     eyebrow: 'Tools / 01',
-    description: 'Explore the motion. Find your frame.',
+    description: 'Preview and export 3D animation',
     intro:
-      'Open a 3D model, inspect its animation and save a vertical preview. Everything runs in your browser.',
+      'Open a 3D model in your browser and step through its animation. Save a still frame or a vertical video.',
     private: 'Your files stay on your device',
     import: 'Open model',
     demo: 'Demo robot',

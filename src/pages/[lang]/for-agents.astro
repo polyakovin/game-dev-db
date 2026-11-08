@@ -149,12 +149,16 @@ const prompt = ru
 
 <Layout lang={lang} title={t.agents} section="agents" alternate="for-agents/">
   <header class="page-header">
-    <div class="eyebrow">HUMAN READABLE. AGENT READY.</div>
-    <h1>{ru ? 'Дайте агенту контекст.' : 'Give your agent context.'}</h1>
+    <div class="eyebrow">{ru ? 'Работа с ИИ' : 'Working with AI'}</div>
+    <h1>
+      {ru
+        ? 'База знаний для ИИ-агента'
+        : 'Using the knowledge base with an AI agent'}
+    </h1>
     <p>
       {ru
-        ? 'Скопируйте запрос ниже, добавьте свою задачу и отправьте агенту. Так вы дадите ему базу знаний по разработке игр, чтобы он мог подобрать материалы и применить их к вашему проекту.'
-        : 'Copy the prompt below, add your task and send it to your agent. This gives it a game-development knowledge base to find relevant material and apply it to your project.'}
+        ? 'С помощью готового запроса агент сможет найти урок или механику под вашу задачу. Добавьте сведения об игре, чтобы он учёл движок и ограничения проекта.'
+        : 'Use the prompt to help your agent find a lesson or mechanic for your task. Include details about the game so it can account for your engine and project constraints.'}
     </p>
   </header>
   <div class="agent-guide">
@@ -167,8 +171,8 @@ const prompt = ru
       </li>
       <li>
         {ru
-          ? 'Скопируйте запрос ниже. Замените текст в квадратных скобках своей задачей и контекстом проекта: движок, версия, что уже готово и какие есть ограничения.'
-          : 'Copy the prompt below. Replace the text in square brackets with your task and project context: engine, version, current progress and constraints.'}
+          ? 'Скопируйте запрос. Вместо текста в скобках опишите задачу, укажите версию движка, что уже готово и какие есть ограничения.'
+          : 'Copy the prompt. Replace the text in brackets with your task, engine version, what already works and any constraints.'}
       </li>
       <li>
         {ru
@@ -193,8 +197,8 @@ const prompt = ru
     <span class="sr-only" data-copy-status aria-live="polite"></span>
     <p>
       {ru
-        ? 'Если агент не умеет открывать ссылки, откройте нужный материал на сайте и вставьте его текст в чат вместе со ссылкой на статью.'
-        : 'If your agent cannot open links, open the relevant material on this site and paste its text into the chat along with the article link.'}
+        ? 'Если агент не может открыть ссылку, вставьте в чат текст материала и адрес страницы.'
+        : 'If the agent cannot open links, paste the text and its page URL into the chat.'}
     </p>
     <h2>{ru ? 'Подключить к проекту' : 'Connect your project'}</h2>
     <p>

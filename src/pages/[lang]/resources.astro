@@ -17,7 +17,7 @@ const groups =
           id: 'books',
           title: 'Книги',
           description:
-            'От общих принципов и упражнений до нарратива, пространства и ощущения управления.',
+            'Книги с принципами и упражнениями по геймдизайну, нарративу, уровням и ощущению управления.',
         },
         {
           id: 'channels',
@@ -35,7 +35,7 @@ const groups =
           id: 'research',
           title: 'Статьи и курсы',
           description:
-            'Модели для анализа и материалы для последовательного изучения геймдизайна.',
+            'Изучите тему на курсе или разберите игру с помощью исследовательской модели.',
         },
         {
           id: 'development',
@@ -49,7 +49,7 @@ const groups =
           id: 'books',
           title: 'Books',
           description:
-            'From principles and exercises to narrative, spaces and the sensation of control.',
+            'Design principles and exercises for narrative, level design and game feel.',
         },
         {
           id: 'channels',
@@ -67,7 +67,7 @@ const groups =
           id: 'research',
           title: 'Articles and courses',
           description:
-            'Analytical models and materials for a structured approach to learning game design.',
+            'Study a design topic in a course or use a research model to analyze a game.',
         },
         {
           id: 'development',
@@ -87,8 +87,8 @@ const title =
   lang === 'ru' ? 'Ресурсы по разработке игр' : 'Game development resources';
 const description =
   lang === 'ru'
-    ? 'Книги, курсы, каналы и инструменты по геймдизайну, программированию, графике, звуку и выпуску игр. Смотрите условия доступа, изучайте примеры и проверяйте идеи на практике.'
-    : 'Books, courses, channels and tools for game design, programming, graphics, audio and releases. Check access requirements, study examples and test ideas in practice.';
+    ? 'Книги, курсы, каналы и инструменты по разработке игр, от геймдизайна до выпуска. У каждой ссылки указаны язык материала и, где это важно, условия доступа.'
+    : 'Find books, courses, channels and tools on making games, from design to release. Each listing gives the language and, where relevant, how to get access.';
 ---
 
 <Layout
@@ -100,7 +100,7 @@ const description =
 >
   <header class="page-header">
     <div class="eyebrow">
-      {lang === 'ru' ? 'Читать · смотреть · пробовать' : 'Read · watch · try'}
+      {lang === 'ru' ? 'Подборка источников' : 'Selected references'}
     </div>
     <h1>{title}</h1>
     <p>{description}</p>

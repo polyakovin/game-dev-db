@@ -21,7 +21,7 @@ sources:
 
 ## Prerequisites
 
-Use an early playable prototype with one action, such as interacting with a door. You need an input handler and a small amount of game state. The goal is for players to understand the result of a press while game rules remain independent of a particular key.
+Use a playable prototype with an input handler and enough state for one action, such as opening a door. The player should understand what happened after pressing the button, and the same rule should apply whichever key triggers the action.
 
 ## The principle
 

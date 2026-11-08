@@ -21,7 +21,7 @@ sources:
 
 ## Prerequisites
 
-You need conditions, functions, and a simple enumeration. Use a character that can move, dash, and die. The useful outcome is a transition table that explains which actions are allowed at each moment.
+Take a character that can walk, dash and die. Use conditions, functions and a simple enumeration to build a transition table that shows which actions are available in each state.
 
 ## The principle
 

@@ -15,7 +15,7 @@ sources:
 
 ## Prerequisites
 
-“How did you like the game?” often produces a polite answer that is hard to act on. It is more useful to choose an uncertainty beforehand and observe what someone does in a specific play situation.
+“How did you like the game?” often gets a polite answer that gives you little to work with. Pick one thing you are unsure about before the session and watch how the player handles a situation that can answer your question.
 
 ## The principle
 

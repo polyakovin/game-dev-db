@@ -30,11 +30,11 @@ const counts = getMechanics(lang).reduce(
     <div class="eyebrow">
       {ru ? 'Справочники для проектирования' : 'References for game design'}
     </div>
-    <h1>{ru ? 'Из чего складывается игра.' : 'What makes up a game.'}</h1>
+    <h1>{ru ? 'Игровые механики' : 'Game mechanics'}</h1>
     <p>
       {ru
-        ? 'Полная карта направлений: жанры, игровые системы и способы взаимодействия. Открывайте готовые обзоры или исследуйте всю структуру. Материалы, которые ещё готовятся, отмечены «В разработке».'
-        : 'A complete map of genres, game systems and ways to interact. Open ready references or explore the full structure. Upcoming materials are labeled “In development”.'}
+        ? 'Найдите механику по жанру, игровой системе или способу управления. Начните с карточки или откройте обзор направления. Пометка «В разработке» означает, что обзор ещё готовится.'
+        : 'Browse mechanics by genre, game system or input method. Start with a card or open a topic overview. “In development” means the overview is still being written.'}
     </p>
     <div class="article-meta">
       <span>
@@ -60,7 +60,7 @@ const counts = getMechanics(lang).reduce(
   <MechanicDirections lang={lang} />
   <p class="notice mechanics-notice">
     {ru
-      ? 'Это рабочие классификации пространства дизайна. Семейства могут пересекаться, а примеры проектирования являются иллюстрациями. Источники подтверждают отдельные приёмы и методологию.'
-      : 'These are working classifications of a design space. Families can overlap and design examples are illustrative. Sources support particular techniques and methodology.'}
+      ? 'Одна механика может относиться к нескольким семействам. Условные примеры показывают, как можно применить правило. По ссылкам можно подробнее изучить отдельные приёмы и методы проектирования.'
+      : 'A mechanic can belong to more than one family. Hypothetical examples show how a rule might work. Follow the sources for details on individual techniques and design methods.'}
   </p>
 </Layout>

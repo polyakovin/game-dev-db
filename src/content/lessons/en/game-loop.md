@@ -29,7 +29,7 @@ sources:
 
 ## Prerequisites
 
-You only need variables, functions, and coordinates. By the end, you should be able to identify what updates the world, state the units of movement speed, and explain why a rendered frame is not necessarily one simulation step.
+If you know variables, functions and coordinates, you can trace a game loop. Find the code that updates the world, check the units it uses for speed and see when a simulation step runs in relation to a rendered frame.
 
 ## The principle
 

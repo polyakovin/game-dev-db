@@ -15,7 +15,7 @@ sources:
 
 ## Prerequisites
 
-A world description helps design a game when it leads to actions and consequences. Start with one rule that players can notice, use and test. A world idea and a simple plan of a playable situation are enough; no engine is needed yet.
+Pick one rule of your fictional world that a player can notice and act on. Sketch a situation that shows what changes after the action and how you could check the result. A sketch is enough at this stage, even if you have yet to pick an engine.
 
 ## The principle
 
@@ -23,7 +23,7 @@ A world can have an unusual history, culture and appearance. For a playable situ
 
 Yaropolk Rash, known as Yarr Rash and the creator of World-First Method, examines the connection between a world and the possibilities for its first game in [The Iconic IP Guide](https://worldfirstmethod.com/ipguide). This lesson draws on the idea in PDF pages 32–39 of the Russian v3.2 edition. The example and verification procedure below were developed for this lesson.
 
-This approach is useful when a world's distinctive features should inform player decisions. You can also start with an existing mechanic: check which world rules explain its possibilities and limits. One situation is enough for an initial prototype.
+If you already have a mechanic, work back from it. Which rule of the world explains what the player can do and where that ability stops working? Test the answer in a single situation for the first prototype.
 
 ### From a premise to a choice
 

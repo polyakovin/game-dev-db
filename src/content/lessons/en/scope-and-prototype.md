@@ -21,7 +21,7 @@ sources:
 
 ## Prerequisites
 
-You do not need an engine or an existing project. You need an idea for a player action and an uncertainty that blocks the next decision. The outcome is a small investigation with a clear stopping point, rather than a list of everything the game might eventually include.
+Pick a player action and name the question holding up your next decision. Plan a small test and decide when you have seen enough to stop. You can do this before choosing an engine or starting a project.
 
 ## The principle
 
