@@ -198,3 +198,14 @@ failure for skipped jobs, public-route errors or its bounded deadline.
 #### Scenario: Confirm the live release
 - **WHEN** the command runs without the Stop handoff option
 - **THEN** it waits for the exact commit's successful required jobs and checks production routes before reporting a completed release
+
+### Requirement: Parity during editorial revisions
+
+Revisions to bilingual instructional prose SHALL preserve the lesson or reference entry's rule, example, material caveats and source attribution in both languages. Published HTML and machine exports SHALL derive their revised prose from the same authored source.
+
+#### Scenario: Revise an explanation in Russian and English
+
+- **WHEN** an editor rephrases a bilingual explanation
+- **THEN** readers can follow the same example and checks in either language
+- **AND** existing identifiers and link targets still resolve
+- **AND** the revised explanation appears in the generated HTML and machine representations that include it

@@ -4031,8 +4031,8 @@
         "en": "Give each class a useful action beyond dealing damage."
       },
       {
-        "ru": "Покажите роль класса на задаче, которую игрок может попробовать. По характеристикам объясните, как класс с ней справляется.",
-        "en": "Show what a class does with a task the player can try. Use stats to explain how it does it."
+        "ru": "Дайте игроку задачу, на которой видна роль класса. Объясните, какие свойства помогают.",
+        "en": "Give the player a task that shows what the class does. Explain which stats help."
       }
     ],
     "examples": [
@@ -8675,7 +8675,7 @@
       "en": "Eat to heal"
     },
     "description": {
-      "ru": "Еда восстанавливает часть здоровья. Игрок может подобрать её в окружении, чтобы восстановиться.",
+      "ru": "Еда восстанавливает часть здоровья. Игрок может использовать для этого пищу, найденную в окружении.",
       "en": "Eating restores some health, so players can use food they find in the scene to recover."
     },
     "image": {
@@ -17109,8 +17109,8 @@
       "en": "Destructible parts and wounds"
     },
     "description": {
-      "ru": "Выбирая часть цели или тип воздействия, игрок может нанести урон и изменить то, на что цель способна.",
-      "en": "By targeting a body part or choosing a type of effect, the player can change what the target can do as well as damage it."
+      "ru": "Игрок выбирает часть цели или тип воздействия, чтобы изменить её возможности. Эффект может дополнять урон или срабатывать отдельно.",
+      "en": "The player chooses a target part or effect type to change what the target can do. The effect can accompany damage or apply on its own."
     },
     "image": {
       "src": "images/mechanics/impact-cutting-in-half.webp",
@@ -24458,8 +24458,8 @@
     },
     "tips": [
       {
-        "ru": "Дайте каждому внутреннему голосу свой взгляд и мотивы. Оформление поможет подчеркнуть различия.",
-        "en": "Give each inner voice its own motives and viewpoint, then use presentation to reinforce the difference."
+        "ru": "Дайте каждому голосу свой взгляд и мотивы. Подчеркните разницу оформлением.",
+        "en": "Give each voice its own motives and viewpoint. Reinforce the difference in its presentation."
       }
     ],
     "examples": [
@@ -42446,8 +42446,8 @@
       "en": "Escape, chases and evading pursuit"
     },
     "description": {
-      "ru": "Чтобы оторваться от преследователя, игрок может сменить маршрут, использовать препятствие или стать менее заметным. Скорость бега влияет на побег наряду с этими действиями.",
-      "en": "To lose a pursuer, the player can change routes, use obstacles or make themselves harder to spot. Running speed is one part of the escape."
+      "ru": "Игрок отрывается от преследователя. Ему помогают скорость, смена маршрута, препятствия и возможность скрыться из виду.",
+      "en": "Speed helps the player lose a pursuer. So do changing routes, using obstacles and breaking line of sight."
     },
     "image": {
       "src": "images/mechanics/hunt-extraction-guide.webp",
@@ -48505,8 +48505,8 @@
       "en": "Transfer and generalization"
     },
     "description": {
-      "ru": "Предложите ученику применить знакомое правило к новым объектам или ситуации. По результату видно, понял ли он связь достаточно хорошо, чтобы применить её снова.",
-      "en": "Ask the learner to apply a familiar rule to new objects or a new situation. The result shows whether they understand the relationship well enough to use it again."
+      "ru": "Ученик применяет знакомое правило к новым объектам или ситуации. Так можно проверить, понял ли он связь.",
+      "en": "The learner applies a familiar rule to new objects or a new situation. This shows whether they understand the relationship."
     },
     "image": {
       "src": "images/mechanics/adventure-baba-is-you-00.webp",
@@ -66634,7 +66634,7 @@
     },
     "tips": [
       {
-        "ru": "Игроку должно быть понятно, когда началась серия, с каким интервалом идут выстрелы и когда серия закончится.",
+        "ru": "Покажите начало и конец серии и дайте понять, с каким интервалом идут выстрелы.",
         "en": "Make the start, spacing and end of a burst clear to the player."
       }
     ],
