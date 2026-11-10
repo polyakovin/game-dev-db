@@ -1,237 +1,234 @@
-// Each descriptor follows the corresponding deterministic demonstration model.
-// Character artwork and the shared rig come from Boss Fight Atlas; see the notice.
+// Original teaching scenes using artwork from the pinned Boss Fight Atlas revision.
 const demonstrations = {
-  'boss-fight-atlas--boss-charge': {
-    kind: 'charge',
+  'movement-platforming--t003': {
+    kind: 'precision-jump',
     ru: {
-      title: 'Таран по прямой',
+      title: 'Прыжок через разрыв',
       description:
-        'Босс выбирает направление, фиксирует его и делает рывок. Игрок успевает выйти из полосы всем телом. После рывка боссу нужно время на восстановление.',
+        'Игрок подходит к краю, прыгает через разрыв и приземляется в отмеченной зоне. Дуга показывает путь ног, а отметка на платформе учитывает ширину опоры игрока.',
       phases: [
         {
-          title: 'Прицеливание',
+          title: 'Подход',
           description:
-            'Сначала босс следит за игроком. Когда направление зафиксировано, игрок уходит поперёк полосы будущего рывка.',
+            'Подойдите к краю. Отмеченная зона показывает, куда должны попасть ноги после прыжка.',
         },
         {
-          title: 'Таран',
+          title: 'Прыжок',
           description:
-            'Босс движется по выбранной прямой. Направление уже не меняется, а игрок находится целиком за пределами полосы.',
+            'Игрок отталкивается, пока ещё стоит на платформе. Дуга переносит его через разрыв.',
         },
         {
-          title: 'Восстановление',
+          title: 'Приземление',
           description:
-            'Босс останавливается и восстанавливается. Затем оба персонажа возвращаются на исходные места.',
+            'Обе ноги оказываются на новой платформе. Затем игрок разворачивается и прыгает обратно.',
         },
       ],
     },
     en: {
-      title: 'A charge along a fixed line',
+      title: 'Jumping a gap',
       description:
-        'The boss aims, locks its direction and charges. The player has time to move their whole body out of the lane. The boss needs time to recover afterward.',
+        'The player approaches the edge, jumps across and lands in the marked zone. The arc traces the feet, and the mark on the platform accounts for the width of the player’s footing.',
       phases: [
         {
-          title: 'Aiming',
+          title: 'Approach',
           description:
-            'The boss tracks the player at first. Once the direction locks, the player moves across the lane of the upcoming charge.',
+            'Move toward the edge. The marked zone shows where the player’s feet should land.',
         },
         {
-          title: 'Charge',
+          title: 'Jump',
           description:
-            'The boss follows the chosen line without steering. The player is entirely outside the lane.',
+            'The player takes off while still on the platform. The arc carries them across the gap.',
         },
         {
-          title: 'Recovery',
+          title: 'Landing',
           description:
-            'The boss stops and recovers. Both characters then return to their starting positions.',
+            'Both feet land on the next platform. The player then turns and jumps back.',
         },
       ],
     },
   },
-  'boss-fight-atlas--boss-sweep': {
-    kind: 'sweep',
+  'melee-combat--t016': {
+    kind: 'timed-parry',
     ru: {
-      title: 'Размашистый удар',
+      title: 'Парирование выпада',
       description:
-        'Оружие проходит по дуге вокруг босса. Игрок выходит за внешний край удара до прохода лезвия. Опасная область следует за оружием.',
+        'Во время спарринга соперник делает выпад. Парирование срабатывает, если клинок касается защиты в короткое окно. После контакта соперник отшатывается.',
       phases: [
         {
           title: 'Замах',
           description:
-            'Босс готовит оружие к удару. Разметка показывает его досягаемость, и игрок отходит за внешний край.',
+            'Соперник отводит клинок перед выпадом. Пунктир показывает, куда придётся удар.',
         },
         {
-          title: 'Взмах',
+          title: 'Окно защиты',
           description:
-            'Лезвие проходит по дуге. В этой сцене игрок целиком находится за пределами досягаемости оружия.',
+            'Игрок поднимает защиту перед контактом. Клинок достигает её, пока окно парирования открыто.',
         },
         {
-          title: 'Восстановление',
+          title: 'Отдача',
           description:
-            'Босс завершает движение оружия и возвращается в готовую стойку. Игрок возвращается после окончания удара.',
+            'Соперник отшатывается после парирования. Это даёт игроку время на ответ.',
         },
       ],
     },
     en: {
-      title: 'A sweeping strike',
+      title: 'Parrying a thrust',
       description:
-        'The weapon follows an arc around the boss. The player moves beyond its outer reach before the blade passes. The active threat follows the weapon.',
+        'A sparring partner lunges. The parry succeeds if the blade meets the guard during a brief window. The opponent recoils after contact.',
       phases: [
         {
           title: 'Wind-up',
           description:
-            'The boss prepares the weapon. The warning shows its reach, and the player moves beyond the outer edge.',
+            'The opponent draws the blade back before thrusting. The dashed line shows where the strike will go.',
         },
         {
-          title: 'Sweep',
+          title: 'Parry window',
           description:
-            'The blade travels along the arc. In this scene, the player is entirely beyond the weapon’s reach.',
+            'The player raises their guard just before contact. The blade reaches it while the parry window is open.',
         },
         {
-          title: 'Recovery',
+          title: 'Recoil',
           description:
-            'The boss follows through and returns to a ready stance. The player returns after the strike ends.',
-        },
-      ],
-    },
-  },
-  'boss-fight-atlas--boss-ground-slam': {
-    kind: 'ground-slam',
-    ru: {
-      title: 'Удар по земле',
-      description:
-        'После контакта с землёй от точки удара расходится кольцевая волна. В этом примере её радиус ограничен, поэтому игрок может заранее выйти за пределы досягаемости.',
-      phases: [
-        {
-          title: 'Подготовка',
-          description:
-            'Босс готовится обрушиться на землю. Игрок отходит за отмеченную границу распространения волны.',
-        },
-        {
-          title: 'Удар и волна',
-          description:
-            'Контакт с землёй запускает волну. Она расходится от точки удара, а игрок остаётся целиком за её максимальным радиусом.',
-        },
-        {
-          title: 'Восстановление',
-          description:
-            'Волна затухает. Босс выпрямляется, и игрок возвращается на исходное место.',
-        },
-      ],
-    },
-    en: {
-      title: 'A ground slam',
-      description:
-        'A ring-shaped wave spreads from the impact point after ground contact. Its reach is limited in this example, so the player can move beyond it in advance.',
-      phases: [
-        {
-          title: 'Preparation',
-          description:
-            'The boss prepares to slam the ground. The player moves beyond the marked limit of the wave.',
-        },
-        {
-          title: 'Impact and wave',
-          description:
-            'Ground contact starts the wave. It expands from the impact point while the player remains entirely beyond its maximum radius.',
-        },
-        {
-          title: 'Recovery',
-          description:
-            'The wave fades. The boss straightens up, and the player returns to the starting position.',
+            'The opponent recoils after the parry, giving the player time to respond.',
         },
       ],
     },
   },
-  'boss-fight-atlas--boss-summon': {
-    kind: 'summon',
+  'stealth-infiltration--t031': {
+    kind: 'line-of-sight',
     ru: {
-      title: 'Призыв помощников',
+      title: 'Как стена перекрывает обзор',
       description:
-        'Босс заранее показывает места появления помощников. Два помощника выходят по очереди и сходятся к прежнему месту игрока, пока он перемещается в свободную часть арены.',
+        'Охранник видит игрока перед собой, пока между ними нет стены. Луч показывает, где прерывается прямая видимость.',
       phases: [
         {
-          title: 'Порталы',
+          title: 'На виду',
           description:
-            'Отметки показывают, откуда появятся помощники. Игрок выбирает свободную сторону и начинает перемещение.',
+            'Игрок находится в секторе обзора. Луч доходит до него, и охранник его видит.',
         },
         {
-          title: 'Призыв',
+          title: 'За стеной',
           description:
-            'Помощники появляются с задержкой друг относительно друга, идут каждый от своего портала и останавливаются по прибытии.',
+            'Стена перекрывает луч. Охранник смотрит в ту же сторону, но игрок скрыт.',
         },
         {
-          title: 'Перестроение',
+          title: 'Выход',
           description:
-            'Помощники растворяются, затем игрок возвращается. В следующем цикле места их появления снова видны заранее.',
+            'Игрок выходит из-за края стены. Как только луч снова доходит до него, охранник его видит.',
         },
       ],
     },
     en: {
-      title: 'Summoning helpers',
+      title: 'How a wall blocks sight',
       description:
-        'The boss reveals where helpers will appear. Two helpers emerge one after another and converge on the player’s former position while the player moves to the open side of the arena.',
+        'The guard sees the player ahead while there is no wall between them. The ray shows where the line of sight breaks.',
       phases: [
         {
-          title: 'Portals',
+          title: 'In sight',
           description:
-            'Markers show where the helpers will appear. The player chooses an open side and starts moving.',
+            'The player stands in the field of view. The ray reaches them, so the guard can see them.',
         },
         {
-          title: 'Summon',
+          title: 'Behind cover',
           description:
-            'Helpers appear at staggered intervals. Each walks from its own portal and stops on arrival.',
+            'The wall blocks the ray. The guard faces the same way, but the player is hidden.',
         },
         {
-          title: 'Repositioning',
+          title: 'Reappearing',
           description:
-            'The helpers dissolve before the player returns. Their spawn locations are shown again before the next cycle.',
+            'The player steps out from behind the wall. The guard sees them once the ray reaches them again.',
         },
       ],
     },
   },
-  'boss-fight-atlas--boss-gap-volley': {
-    kind: 'gap-volley',
+  'shooting-projectiles--t029': {
+    kind: 'independent-aim',
     ru: {
-      title: 'Залп с проходом',
+      title: 'Стрельба на отступлении',
       description:
-        'В рядах снарядов оставлен проход шире персонажа. Игрок занимает его до подлёта снарядов. Во втором залпе проход смещается, и маршрут меняется вместе с ним.',
+        'Игрок отступает влево, сохраняя прицел вправо. Стрелка у ног показывает движение, а линия от оружия показывает направление выстрела.',
       phases: [
         {
-          title: 'Выбор прохода',
-          description:
-            'Разметка показывает занятые полосы и свободный проход. Игрок успевает переместиться в него до подлёта снарядов.',
+          title: 'Прицел',
+          description: 'Игрок направляет оружие на соперника, стоя на месте.',
         },
         {
-          title: 'Залп',
+          title: 'Отступление',
           description:
-            'Ряды снарядов проходят по обе стороны от игрока. Он остаётся внутри прохода всем телом, пока не пройдёт последний ряд.',
+            'Игрок идёт влево и стреляет вправо. Каждый снаряд вылетает из текущего положения оружия.',
         },
         {
-          title: 'Восстановление',
+          title: 'Остановка',
           description:
-            'После обоих залпов снарядов на арене не остаётся. Игрок возвращается, и последовательность начинается снова.',
+            'Игрок останавливается. Направление прицела остаётся прежним.',
         },
       ],
     },
     en: {
-      title: 'A volley with a gap',
+      title: 'Firing while retreating',
       description:
-        'The projectile rows leave a gap wider than the player. The player enters it before the projectiles arrive. The gap shifts for the second volley, changing the route.',
+        'The player retreats to the left while aiming right. The arrow at their feet shows movement, and the line from the weapon shows the direction of fire.',
       phases: [
         {
-          title: 'Finding the gap',
-          description:
-            'The warning shows occupied lanes and an open gap. The player has time to enter it before the projectiles arrive.',
+          title: 'Aim',
+          description: 'The player aims at the opponent while standing still.',
         },
         {
-          title: 'Volley',
+          title: 'Retreat',
           description:
-            'Projectile rows pass on either side of the player. The player keeps their whole body inside the gap until the final row passes.',
+            'The player moves left and fires right. Each shot leaves the weapon at its current position.',
         },
         {
-          title: 'Recovery',
+          title: 'Stop',
           description:
-            'After both volleys, no projectiles remain in the arena. The player returns, and the sequence starts again.',
+            'The player stops moving. The aim direction stays the same.',
+        },
+      ],
+    },
+  },
+  'social-cooperation--t204': {
+    kind: 'asymmetric-roles',
+    ru: {
+      title: 'Один держит мост, другой проходит',
+      description:
+        'Напарник занимает нажимную плиту и удерживает мост открытым. Игрок пересекает разрыв, пока напарник остаётся на плите.',
+      phases: [
+        {
+          title: 'Плита',
+          description:
+            'Игрок ждёт у разрыва. Напарник подходит к плите, которая выдвигает мост.',
+        },
+        {
+          title: 'Переход',
+          description:
+            'Мост выдвинут. Напарник остаётся на плите, пока игрок переходит на другую сторону.',
+        },
+        {
+          title: 'Возврат',
+          description:
+            'Игрок возвращается по мосту. Только после этого напарник сходит с плиты, и мост убирается.',
+        },
+      ],
+    },
+    en: {
+      title: 'One holds the bridge, one crosses',
+      description:
+        'A partner stands on a pressure plate to hold the bridge open. The player crosses the gap while the partner stays on the plate.',
+      phases: [
+        {
+          title: 'Pressure plate',
+          description:
+            'The player waits at the gap. The partner approaches the plate that extends the bridge.',
+        },
+        {
+          title: 'Crossing',
+          description:
+            'The bridge is extended. The partner stays on the plate while the player crosses to the other side.',
+        },
+        {
+          title: 'Return',
+          description:
+            'The player crosses back. The partner then steps off the plate and the bridge retracts.',
         },
       ],
     },
@@ -247,13 +244,14 @@ export function getMechanicDemonstration(id, lang) {
   return {
     kind: demonstration.kind,
     ...localized,
-    sourceUrl: `https://polyakovin.github.io/boss-fight-atlas/${lang}/mechanics/${demonstration.kind}/`,
-    credit: 'Boss Fight Atlas · polyakovin and contributors',
+    sourceUrl:
+      'https://github.com/polyakovin/gamedev-boss-fights/tree/08a279e424d5dd287725e5b3d044187b62267306',
+    credit: 'polyakovin and contributors',
     license: 'CC-BY-4.0',
     changes:
       lang === 'ru'
-        ? 'Персонажи и арена из Boss Fight Atlas; сценарии, геометрия и объяснения адаптированы для gamemechanics.pro.'
-        : 'Characters and arena from Boss Fight Atlas; timelines, geometry and explanations adapted for gamemechanics.pro.',
+        ? 'Персонажи, риг и фон из Boss Fight Atlas. Сцена и правила разработаны для gamemechanics.pro.'
+        : 'Characters, rig and backdrop from Boss Fight Atlas. The scene and rules were made for gamemechanics.pro.',
     updatedAt: '2026-11-10',
   };
 }

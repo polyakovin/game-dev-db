@@ -15,6 +15,12 @@ interface Props {
 }
 const { demonstration: demo, lang } = Astro.props;
 const ru = lang === 'ru';
+const actorLabels = {
+  player: ru ? 'Игрок' : 'Player',
+  opponent: ru ? 'Соперник' : 'Opponent',
+  guard: ru ? 'Охранник' : 'Guard',
+  partner: ru ? 'Напарник' : 'Partner',
+};
 const frame = demo ? sampleDemonstration(demo.kind, 0) : null;
 const phaseTimes = demo ? demoPhaseTimes(demo.kind) : [];
 ---
@@ -109,22 +115,9 @@ const phaseTimes = demo ? demoPhaseTimes(demo.kind) : [];
                   )}
                 />
               </g>
-              {(actor.id === 'boss' || actor.id === 'player') && (
-                <text
-                  class="demo-actor-label"
-                  x="0"
-                  y="25"
-                  text-anchor="middle"
-                >
-                  {actor.id === 'boss'
-                    ? ru
-                      ? 'Босс'
-                      : 'Boss'
-                    : ru
-                      ? 'Игрок'
-                      : 'Player'}
-                </text>
-              )}
+              <text class="demo-actor-label" x="0" y="25" text-anchor="middle">
+                {actorLabels[actor.id as keyof typeof actorLabels]}
+              </text>
             </g>
           ))}
         </g>

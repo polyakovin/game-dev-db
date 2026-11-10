@@ -1,12 +1,21 @@
 import { expect, test, type Locator, type Page } from '@playwright/test';
 import { BASE } from '../src/lib/site-config.mjs';
 
-const kinds = ['charge', 'sweep', 'ground-slam', 'summon', 'gap-volley'];
-const identity = (kind: string) => `boss-fight-atlas--boss-${kind}`;
+const cards: Record<string, { id: string; secondary?: string }> = {
+  'precision-jump': { id: 'movement-platforming--t003' },
+  'timed-parry': { id: 'melee-combat--t016', secondary: 'opponent' },
+  'line-of-sight': { id: 'stealth-infiltration--t031', secondary: 'guard' },
+  'independent-aim': {
+    id: 'shooting-projectiles--t029',
+    secondary: 'opponent',
+  },
+  'asymmetric-roles': { id: 'social-cooperation--t204', secondary: 'partner' },
+};
+const identity = (kind: string) => cards[kind].id;
 const route = (kind: string, lang = 'ru') =>
   `${BASE}/${lang}/knowledge/mechanic/${identity(kind)}/`;
 
-async function openDemo(page: Page, kind = 'charge', lang = 'ru') {
+async function openDemo(page: Page, kind = 'line-of-sight', lang = 'ru') {
   await page.goto(route(kind, lang));
   const root = page.locator('[data-mechanic-demo]');
   await expect(root).toHaveAttribute('data-ready', 'true');
@@ -29,26 +38,26 @@ async function scene(root: Locator) {
 
 async function rigPoses(page: Page) {
   return page.evaluate(() =>
-    ['boss', 'player'].map((role) => ({
-      role,
-      parts: [
-        ...document.querySelectorAll<SVGElement>(
-          `[data-demo-actor="${role}"] [data-rig-part]`,
+    [...document.querySelectorAll<SVGElement>('[data-demo-actor]')].map(
+      (actor) => ({
+        role: actor.dataset.demoActor,
+        parts: [...actor.querySelectorAll<SVGElement>('[data-rig-part]')].map(
+          (part) => ({
+            part: part.dataset.rigPart,
+            transform: part.getAttribute('transform'),
+            opacity: part.getAttribute('opacity'),
+          }),
         ),
-      ].map((part) => ({
-        part: part.dataset.rigPart,
-        transform: part.getAttribute('transform'),
-        opacity: part.getAttribute('opacity'),
-      })),
-    })),
+      }),
+    ),
   );
 }
 
 async function expectActorsInFrame(root: Locator) {
   const bounds = await root.locator('[data-demo-scene]').boundingBox();
   expect(bounds).not.toBeNull();
-  for (const role of ['boss', 'player']) {
-    const actor = root.locator(`[data-demo-actor="${role}"]`);
+  for (const actor of await root.locator('[data-demo-actor]').all()) {
+    const role = await actor.getAttribute('data-demo-actor');
     await expect(actor).toBeVisible();
     const box = await actor.boundingBox();
     expect(box, `${role} has a rendered extent`).not.toBeNull();
@@ -63,7 +72,7 @@ async function expectActorsInFrame(root: Locator) {
   }
 }
 
-for (const kind of kinds) {
+for (const [kind, { secondary }] of Object.entries(cards)) {
   test(`${kind}: all phases render articulated characters and seeking is repeatable`, async ({
     page,
   }) => {
@@ -72,9 +81,16 @@ for (const kind of kinds) {
     page.on('pageerror', (error) => errors.push(error.message));
     const root = await openDemo(page, kind);
     await expect(root).toHaveAttribute('data-playing', 'false');
-    await expect(
-      root.locator('[data-demo-actor="boss"] [data-character-art="kern"]'),
-    ).toHaveCount(1);
+    await expect(root.locator('[data-demo-actor]')).toHaveCount(
+      secondary ? 2 : 1,
+    );
+    if (secondary)
+      await expect(
+        root.locator(
+          `[data-demo-actor="${secondary}"] [data-character-art="kern"]`,
+        ),
+      ).toHaveCount(1);
+    await expect(root.getByText(/^(Босс|Boss)$/)).toHaveCount(0);
     await expect(
       root.locator('[data-demo-actor="player"] [data-character-art="tavi"]'),
     ).toHaveCount(1);
@@ -182,33 +198,40 @@ test('hidden documents stop the clock and preserve an explicit pause', async ({
       document.dispatchEvent(new Event('visibilitychange'));
     }, hidden);
   };
+  const time = async () => Number(await root.getAttribute('data-time'));
   await visibility(true);
   const hiddenScene = await scene(root);
+  const hiddenTime = await time();
   await page.waitForTimeout(200);
   expect(await scene(root)).toBe(hiddenScene);
+  expect(await time()).toBe(hiddenTime);
   await visibility(false);
-  await expect.poll(() => scene(root)).not.toBe(hiddenScene);
+  await expect.poll(time).toBeGreaterThan(hiddenTime);
   await root.locator('[data-demo-toggle]').click();
   await expect(root).toHaveAttribute('data-playing', 'false');
   const pausedScene = await scene(root);
+  const pausedTime = await time();
   await visibility(true);
   await visibility(false);
   await page.waitForTimeout(200);
   expect(await scene(root)).toBe(pausedScene);
+  expect(await time()).toBe(pausedTime);
 });
 
 test('reduced motion starts still, allows explicit playback and keeps restart still', async ({
   page,
 }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  const root = await openDemo(page, 'gap-volley', 'en');
+  const root = await openDemo(page, 'independent-aim', 'en');
   await expect(root).toHaveAttribute('data-playing', 'false');
   const firstFrame = await scene(root);
   await page.waitForTimeout(200);
   expect(await scene(root)).toBe(firstFrame);
   await root.locator('[data-demo-toggle]').click();
   await expect(root).toHaveAttribute('data-playing', 'true');
-  await expect.poll(() => scene(root)).not.toBe(firstFrame);
+  await expect
+    .poll(async () => Number(await root.getAttribute('data-time')))
+    .toBeGreaterThan(0.12);
   await root.locator('[data-demo-restart]').click();
   await expect(root).toHaveAttribute('data-playing', 'false');
   await expect(root.locator('[data-demo-timeline]')).toHaveValue('0');
@@ -221,7 +244,7 @@ for (const lang of ['ru', 'en'] as const) {
       page,
     }, testInfo) => {
       await page.emulateMedia({ colorScheme, reducedMotion: 'reduce' });
-      const root = await openDemo(page, 'sweep', lang);
+      const root = await openDemo(page, 'precision-jump', lang);
       for (const viewport of [
         { width: 375, height: 667 },
         { width: 1280, height: 720 },
@@ -268,7 +291,7 @@ for (const lang of ['ru', 'en'] as const) {
       viewport: { width: 375, height: 667 },
     });
     const page = await context.newPage();
-    await page.goto(route('charge', lang));
+    await page.goto(route('line-of-sight', lang));
     const root = page.locator('[data-mechanic-demo]');
     await expect(root.locator('[data-demo-scene]')).toBeVisible();
     await expect(root.locator('[data-demo-panel="example"] img')).toBeVisible();
@@ -280,16 +303,16 @@ for (const lang of ['ru', 'en'] as const) {
       viewport: { width: 375, height: 667 },
     });
     const hydrated = await hydratedContext.newPage();
-    await openDemo(hydrated, 'charge', lang);
+    await openDemo(hydrated, 'line-of-sight', lang);
     expect(await rigPoses(hydrated)).toEqual(await rigPoses(page));
     await hydratedContext.close();
     const payload = await (
       await request.get(
-        `${BASE}/api/v1/knowledge/${lang}/mechanic/${identity('charge')}.json`,
+        `${BASE}/api/v1/knowledge/${lang}/mechanic/${identity('line-of-sight')}.json`,
       )
     ).json();
     const descriptor = payload.record.attributes.demonstration;
-    expect(descriptor.kind).toBe('charge');
+    expect(descriptor.kind).toBe('line-of-sight');
     await root.locator('.demo-reading summary').click();
     await expect(root).toContainText(descriptor.description);
     for (const phase of descriptor.phases) {
@@ -308,7 +331,7 @@ for (const lang of ['ru', 'en'] as const) {
     ).toBeVisible();
     const markdown = await (
       await request.get(
-        `${BASE}/content/knowledge/${lang}/mechanic/${identity('charge')}.md`,
+        `${BASE}/content/knowledge/${lang}/mechanic/${identity('line-of-sight')}.md`,
       )
     ).text();
     expect(markdown).toContain(descriptor.description);
@@ -334,4 +357,22 @@ test('mechanics without a demonstration keep the original illustrated card', asy
   await expect(page.locator('[data-mechanic-demo]')).toHaveCount(0);
   await expect(page.locator('.preview-image img')).toBeVisible();
   await expect(page.locator('.preview-marker')).toHaveCount(2);
+});
+
+test('boss cards in either language keep their screenshots without the player or export descriptor', async ({
+  page,
+  request,
+}) => {
+  for (const lang of ['ru', 'en']) {
+    const id = 'boss-fight-atlas--boss-charge';
+    await page.goto(`${BASE}/${lang}/knowledge/mechanic/${id}/`);
+    await expect(page.locator('[data-mechanic-demo]')).toHaveCount(0);
+    await expect(page.locator('.preview-image img')).toBeVisible();
+    const response = await request.get(
+      `${BASE}/api/v1/knowledge/${lang}/mechanic/${id}.json`,
+    );
+    expect(
+      (await response.json()).record.attributes.demonstration,
+    ).toBeUndefined();
+  }
 });

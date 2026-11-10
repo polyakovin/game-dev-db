@@ -119,7 +119,10 @@ for (const lang of ['ru', 'en'] as const) {
           } else
             await expect(page.locator(selector)).toBeInViewport({ ratio: 1 });
         for (const marker of await page.locator('.preview-marker').all()) {
-          if (demonstration) await marker.scrollIntoViewIfNeeded();
+          if (demonstration)
+            await marker.evaluate((element) =>
+              element.scrollIntoView({ block: 'center', behavior: 'instant' }),
+            );
           await expect(marker).toBeInViewport({ ratio: 1 });
         }
         if (

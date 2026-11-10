@@ -19,7 +19,7 @@ Markdown; full taxonomy sections and catalog anchors remain intact. The card
 library follows an exhaustive editorial production order, with incomplete
 records retaining their reference view. See [illustrated mechanic cards](mechanic-previews.md).
 
-Five matching boss mechanic cards also render an articulated SVG demonstration.
+Selected cards outside the boss catalog also render an articulated SVG demonstration.
 An explicit registry supplies the same localized rule, phases and attribution to
 HTML and additive `attributes.demonstration` in common v1 JSON/Markdown. Pure
 models own positions and active geometry; one browser clock drives seeking,

@@ -95,9 +95,19 @@
   stroke-width: 2;
   stroke-dasharray: 3 8;
 }
-.demo-shape-portal {
-  fill: #a58aff30;
-  stroke: #d6beff;
+.demo-shape-void {
+  fill: #0b1517;
+  stroke: #253a3b;
+  stroke-width: 2;
+}
+.demo-shape-surface {
+  fill: #516660;
+  stroke: #a4c3ab;
+  stroke-width: 3;
+}
+.demo-shape-barrier {
+  fill: #384f53;
+  stroke: #809b9b;
   stroke-width: 3;
 }
 .demo-shape-impact {

@@ -1,10 +1,17 @@
 # Mechanic demonstrations
 
-The charge, sweep, ground slam, summon and gap volley cards include scenes with
-the original Boss Fight Atlas boss and player. The registry uses canonical IDs
-`boss-fight-atlas--boss-charge`, `boss-fight-atlas--boss-sweep`,
-`boss-fight-atlas--boss-ground-slam`, `boss-fight-atlas--boss-summon` and
-`boss-fight-atlas--boss-gap-volley`. Both languages use the same models.
+Five cards outside the boss catalog use the original Boss Fight Atlas
+characters. Both languages use the same models:
+
+| Card | What the scene shows |
+| --- | --- |
+| `movement-platforming--t003` | Take off from the edge, cross a gap and land with full footing. |
+| `melee-combat--t016` | Intercept a sparring thrust during a short parry window. |
+| `stealth-infiltration--t031` | Break a guard's line of sight with a wall. |
+| `shooting-projectiles--t029` | Fire right while retreating left, then stop without changing aim. |
+| `social-cooperation--t204` | Hold a pressure plate so a partner can cross a bridge. |
+
+Boss Fight Atlas cards retain their annotated screenshot layout.
 
 ## Reading and playback
 
@@ -23,11 +30,9 @@ phase explanations are available in the expandable reading section, and
 playback controls stay hidden. Narrow pages scroll to keep the controls and
 attribution reachable.
 
-These are illustrative encounters, not footage of a particular game. Charge
-locks before release; sweep uses a held weapon and annular reach; the slam
-wave starts at ground contact and has a finite outer limit; two helpers spawn
-at different times and settle; two volleys move the open lane. Return movement
-is visible, and helpers visibly dissolve before the next summon.
+These are original teaching scenes. The armored character can be a guard,
+opponent or partner. The credit links to the artwork source; the screenshot
+tab shows the existing example from a particular game.
 
 ## Implementation and reuse
 
@@ -45,18 +50,16 @@ is visible, and helpers visibly dissolve before the next summon.
   Shared preview enrichment adds the descriptor to common JSON and Markdown;
   existing taxonomy and screenshot exports are preserved.
 
-To add another mechanic, first define its warning, commitment, active threat,
-ordinary player response and recovery. Add a model only when it proves that
-specific rule, then add a paired RU/EN registry entry and rule tests. Do not
-attach a generic animation to unrelated mechanics. Use full ground-plane
-collision extents, keep the sprite upright, and derive warning and damaging
-geometry from the same data. Copied artwork keeps its attribution.
+To add a demonstration, identify the card's rule, the action that triggers it
+and the visible result. Use the same positions and timing for the rule and
+its geometry. Add a paired RU/EN explanation, assign the actors' roles and
+test the rule and loop boundaries. Copied artwork keeps its attribution.
 
 ## Checks
 
-`npm run test:mechanic-demos` checks model geometry, safe responses, phase and
-loop boundaries, fixed charge direction, held sweep geometry, wave contact,
-helper arrivals and both volley layouts. It runs inside `npm run verify`.
+`npm run test:mechanic-demos` checks phase and loop boundaries, platform
+support, parry timing, occlusion, projectile origins and bridge support.
+It runs inside `npm run verify`.
 `tests/mechanic-demonstrations.spec.ts` covers browser playback, repeatable
 seeking, preferences, no-JS access, screenshots, localized exports and layouts.
 Run the full `npm run test:e2e` before publication, then inspect representative

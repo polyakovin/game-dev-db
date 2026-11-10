@@ -2,7 +2,6 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import {
   DEMO_KINDS,
-  PLAYER_RADIUS,
   demoDuration,
   demoPhaseTimes,
   sampleDemonstration,
@@ -57,24 +56,21 @@ for (const kind of DEMO_KINDS) {
         const before = actor(previous, current.id);
         const speed = distance(before, current) / 0.01;
         assert.ok(
-          speed <= (current.id === 'boss' ? 650 : 220),
+          speed <= (current.id === 'opponent' ? 350 : 220),
           `${kind} ${current.id} speed ${speed} at ${time}`,
         );
         if (current.id === 'player')
           assert.ok(speed < 215, `ordinary player motion: ${speed}`);
-        for (const key of [
-          'crouch',
-          'lift',
-          'attack',
-          'impact',
-          'dodge',
-          'altitude',
-        ]) {
+        for (const key of ['crouch', 'lift', 'attack', 'impact', 'dodge']) {
           assert.ok(
             Math.abs(current.motion[key] - before.motion[key]) < 0.2,
             `${kind} ${key} discontinuity at ${time}`,
           );
         }
+        assert.ok(
+          Math.abs(current.motion.altitude - before.motion.altitude) < 3,
+          `${kind} altitude jumps at ${time}`,
+        );
       }
       previous = next;
     }
@@ -102,140 +98,98 @@ for (const kind of DEMO_KINDS) {
   });
 }
 
-test('charge tracks before commitment and never steers toward the escaping player afterward', () => {
-  assert.notEqual(
-    sampleDemonstration('charge', 0).geometry.direction,
-    sampleDemonstration('charge', 1).geometry.direction,
-  );
-  const atLock = sampleDemonstration('charge', 1.2);
-  assert.equal(atLock.geometry.locked, true);
-  assert.equal(atLock.geometry.active, false);
-  for (let time = 1.2; time < 3.15; time += 0.005) {
-    const frame = sampleDemonstration('charge', time);
-    assert.equal(frame.geometry.direction, atLock.geometry.direction);
-    near(actor(frame, 'boss').y, 250);
-    if (frame.geometry.active) {
-      assert.ok(frame.geometry.clearance > 0);
-      assert.ok(
-        distance(actor(frame, 'boss'), actor(frame, 'player')) >
-          frame.geometry.bossRadius + PLAYER_RADIUS,
-      );
-    }
+test('precision jump crosses unsupported space in the air and lands with full footing', () => {
+  const kind = 'precision-jump';
+  const [, takeoff, touchdown] = demoPhaseTimes(kind);
+  const start = sampleDemonstration(kind, takeoff);
+  const landed = sampleDemonstration(kind, touchdown);
+  const radius = start.geometry.playerRadius;
+  assert.ok(actor(start, 'player').x + radius <= start.geometry.left.max);
+  assert.equal(landed.geometry.airborne, false);
+  assert.equal(landed.geometry.height, 0);
+  assert.ok(actor(landed, 'player').x - radius >= landed.geometry.right.min);
+  for (let t = 0; t < demoDuration(kind); t += 0.01) {
+    const frame = sampleDemonstration(kind, t);
+    const { left, right, height } = frame.geometry;
+    const x = actor(frame, 'player').x;
+    if (x + radius > left.max && x - radius < right.min)
+      assert.ok(height > 0, `unsupported at ${t}`);
   }
-  assert.equal(sampleDemonstration('charge', 2.2).geometry.active, true);
-  assert.equal(sampleDemonstration('charge', 3.15).geometry.active, false);
+});
+
+test('parry window includes its start, excludes its end and intercepts the blade', () => {
+  const kind = 'timed-parry';
+  const start = sampleDemonstration(kind, 0);
+  const { opens, closes, contactAt, defenseX } = start.geometry;
   assert.equal(
-    actor(sampleDemonstration('charge', 3.5), 'boss').motion.stride,
-    0,
+    sampleDemonstration(kind, opens - 0.000001).geometry.parryActive,
+    false,
   );
-});
-
-test('sweep blade shares its angle and reach with the active annular sector', () => {
-  const before = sampleDemonstration('sweep', 1);
-  assert.equal(before.geometry.active, false);
-  assert.ok(before.geometry.innerRadius > 0);
-  let previousAngle = -Infinity;
-  for (let time = 2; time < 3.8; time += 0.005) {
-    const frame = sampleDemonstration('sweep', time);
-    assert.ok(frame.geometry.angle >= previousAngle);
-    assert.equal(frame.geometry.angle, frame.geometry.weaponAngle);
-    assert.ok(
-      frame.geometry.clearance > 0,
-      'whole player must clear the blade reach',
-    );
-    assert.ok(
-      frame.shapes.find((entry) => entry.id === 'sweep-blade').opacity > 0,
-    );
-    assert.equal(
-      frame.shapes.find((entry) => entry.id === 'sweep-active').role,
-      'danger',
-    );
-    previousAngle = frame.geometry.angle;
-  }
-  assert.equal(sampleDemonstration('sweep', 3.8).geometry.active, false);
-});
-
-test('ground-slam propagation starts at contact and the player clears the final outer radius', () => {
-  const contact = sampleDemonstration('ground-slam', 2);
-  assert.equal(contact.geometry.radius, 0);
-  assert.equal(contact.geometry.active, true);
-  assert.deepEqual(contact.geometry.center, {
-    x: actor(contact, 'boss').x,
-    y: actor(contact, 'boss').y,
-  });
-  for (let time = 0; time < 4; time += 0.005) {
-    const frame = sampleDemonstration('ground-slam', time);
-    if (time < 2) {
-      assert.equal(frame.geometry.radius, 0);
-      assert.equal(frame.geometry.active, false);
-    }
-    if (frame.geometry.active) {
-      assert.ok(frame.geometry.clearance > 0);
-      assert.ok(
-        distance(actor(frame, 'player'), frame.geometry.center) >
-          frame.geometry.maxRadius + PLAYER_RADIUS,
-      );
-    }
-  }
-  assert.equal(sampleDemonstration('ground-slam', 3.4).geometry.active, false);
-});
-
-test('summon helpers emerge separately, finish their routes and plant their feet', () => {
-  assert.ok(actor(sampleDemonstration('summon', 2.4), 'helper-0').opacity > 0);
+  assert.equal(sampleDemonstration(kind, opens).geometry.parryActive, true);
   assert.equal(
-    actor(sampleDemonstration('summon', 2.4), 'helper-1').opacity,
-    0,
+    sampleDemonstration(kind, closes - 0.000001).geometry.parryActive,
+    true,
   );
-  for (let time = 2; time < 5.5; time += 0.005) {
-    const frame = sampleDemonstration('summon', time);
-    for (const helper of frame.geometry.helpers) {
-      if (helper.active) assert.ok(helper.clearance > 0);
-      if (time >= helper.arriveAt) {
-        assert.equal(actor(frame, helper.id).motion.stride, 0);
-        assert.ok(actor(frame, helper.id).opacity > 0);
-      }
-    }
+  assert.equal(sampleDemonstration(kind, closes).geometry.parryActive, false);
+  const atContact = sampleDemonstration(kind, contactAt);
+  assert.equal(atContact.geometry.parryActive, true);
+  assert.equal(atContact.geometry.parried, true);
+  near(atContact.geometry.tipX, defenseX);
+  for (const t of [contactAt - 0.1, contactAt + 0.1]) {
+    assert.ok(sampleDemonstration(kind, t).geometry.tipX > defenseX);
   }
-  assert.equal(
-    actor(sampleDemonstration('summon', 6.5), 'helper-0').opacity,
-    0,
-  );
-  assert.equal(
-    actor(sampleDemonstration('summon', 6.5), 'helper-1').opacity,
-    0,
-  );
 });
 
-test('gap-volley changes the true opening and waits for the final row before returning', () => {
-  const variants = new Set();
-  for (let time = 0; time < 12; time += 0.005) {
-    const frame = sampleDemonstration('gap-volley', time);
-    const player = actor(frame, 'player');
-    for (const projectile of frame.geometry.projectiles) {
-      if (!projectile.active) continue;
-      variants.add(projectile.variant);
-      assert.notEqual(projectile.x, projectile.gap);
-      assert.equal(
-        player.x,
-        projectile.gap,
-        'player arrives before the first row is launched',
-      );
-      assert.ok(
-        distance(player, projectile) > PLAYER_RADIUS + projectile.radius,
-      );
-    }
-    if (time >= 6.7 && time < frame.geometry.returnAt) near(player.x, 410);
-    assert.ok(frame.geometry.returnAt > frame.geometry.lastRowEndsAt);
+test('cover cuts off detection only when it intersects the view ray', () => {
+  const sample = (time) => sampleDemonstration('line-of-sight', time);
+  assert.equal(sample(0).geometry.detected, true);
+  assert.equal(sample(2.2).geometry.detected, false);
+  assert.equal(sample(6.8).geometry.detected, true);
+  for (let t = 0; t < 8; t += 0.01) {
+    const { geometry } = sample(t);
+    assert.equal(geometry.inView, true);
+    const { crossing, wall } = geometry;
+    assert.equal(crossing.x, wall.left);
+    const crossesWall = crossing.y >= wall.top && crossing.y <= wall.bottom;
+    assert.equal(geometry.detected, !crossesWall);
   }
-  assert.deepEqual([...variants], [0, 1]);
-  assert.equal(sampleDemonstration('gap-volley', 4.5).phase, 1);
-  assert.equal(sampleDemonstration('gap-volley', 5).phase, 0);
-  assert.equal(sampleDemonstration('gap-volley', 7).phase, 1);
-  assert.equal(sampleDemonstration('gap-volley', 9.5).phase, 1);
-  assert.equal(sampleDemonstration('gap-volley', 10).phase, 2);
 });
 
-test('unknown demonstration IDs fail explicitly', () => {
+test('retreating does not steer projectiles already in flight or aim when stopped', () => {
+  const sample = (time) => sampleDemonstration('independent-aim', time);
+  const start = sample(1.6);
+  const first = sample(1.8);
+  const later = sample(2);
+  const stop = sample(4.25);
+  const shot = first.geometry.projectiles[0];
+  assert.equal(shot.active, true);
+  near(shot.x, first.geometry.muzzle.x);
+  assert.ok(actor(later, 'player').x < actor(first, 'player').x);
+  assert.ok(later.geometry.projectiles[0].x > shot.x);
+  assert.equal(later.geometry.projectiles[0].originX, shot.originX);
+  assert.equal(sample(shot.hitAt).geometry.projectiles[0].active, false);
+  assert.equal(actor(stop, 'player').motion.stride, 0);
+  assert.equal(stop.geometry.facing, start.geometry.facing);
+});
+
+test('the bridge is fully supported whenever the traveler occupies the gap', () => {
+  const sample = (time) => sampleDemonstration('asymmetric-roles', time);
+  assert.equal(sample(0).geometry.bridgeOpen, false);
+  assert.equal(sample(3.2).geometry.overGap, true);
+  assert.equal(sample(7.2).geometry.overGap, true);
+  assert.ok(actor(sample(4.6), 'player').x > sample(4.6).geometry.bridge.right);
+  assert.equal(sample(10.5).geometry.bridgeOpen, false);
+  for (let t = 0; t < 11; t += 0.01) {
+    const frame = sample(t);
+    if (frame.geometry.overGap) {
+      assert.equal(frame.geometry.bridgeOpen, true);
+      const partner = actor(frame, 'partner');
+      near(distance(partner, frame.geometry.plate), 0);
+      assert.equal(partner.motion.stride, 0);
+    }
+  }
+});
+
+test('an unknown kind fails rather than drawing a different mechanic', () => {
   assert.throws(() => sampleDemonstration('missing'), RangeError);
-  assert.throws(() => demoPhaseTimes('missing'), RangeError);
 });

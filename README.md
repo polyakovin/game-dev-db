@@ -13,7 +13,7 @@ gamemechanics.pro is an open-source game development reference in Russian and En
 - [Animation Lab](https://gamemechanics.pro/ru/animation-lab/): local 3D model and animation inspection, portrait PNG and browser video export, with RU/EN controls. See [usage and browser limits](docs/animation-lab.md).
 - Bilingual mechanic references for genres, puzzles, dialogue, drawing, investigation, children and education, RPG grind, engagement, electronic devices and physical input. Includes complete discussion catalogs and the attributed Boss Fight Atlas and Game Mechanics indexes; see [coverage](docs/research/discussion-mechanics.md).
 - The [card library](https://gamemechanics.pro/ru/mechanics/cards/) covers all 1268 active canonical mechanics. Each card has a short explanation in both languages and an annotated WebP screenshot.
-- Charge, sweep, ground slam, summon and gap volley cards also have animated demonstrations using the Boss Fight Atlas characters, with phase explanations, seeking and a screenshot switch. See [demonstration coverage and controls](docs/mechanic-demonstrations.md).
+- The cards for precise jumps, parrying, detection, independent movement and aim, and asymmetric roles include animated demonstrations using the Boss Fight Atlas characters. See [demonstration coverage and controls](docs/mechanic-demonstrations.md).
 - Fourteen original game-design exercises, including NPC and progression capstones, with constraints, deliverables and checks in Russian and English.
 - 117 attributed game-design lenses with original review questions, thematic filters and bilingual exports.
 - Russian and English versions with matching lesson identifiers.
