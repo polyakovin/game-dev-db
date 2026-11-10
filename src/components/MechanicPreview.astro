@@ -1,5 +1,6 @@
 ---
 import BrandMark from './BrandMark.astro';
+import MechanicDemonstration from './MechanicDemonstration.astro';
 import type { KnowledgeRecord } from '../lib/knowledge-content';
 import { SITE_NAME, path } from '../lib/site';
 interface Props {
@@ -18,7 +19,13 @@ const ru = record.lang === 'ru';
 const local = (url: string) => new URL(url).pathname + new URL(url).hash;
 ---
 
-<article class="mechanic-preview" data-mechanic-preview={record.key}>
+<article
+  class:list={[
+    'mechanic-preview',
+    { 'with-demonstration': Boolean(record.attributes.demonstration) },
+  ]}
+  data-mechanic-preview={record.key}
+>
   <header class="preview-header">
     <span class="preview-mark">
       <BrandMark size={12} />
@@ -38,59 +45,70 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
   </header>
 
   <div class="preview-grid">
-    <figure class="preview-figure">
-      <div class="preview-viewport">
-        <div
-          class="preview-image"
-          data-image-crop
-          style={`--image-ratio:${crop.width / crop.height};--source-width:${(image.width / crop.width) * 100}%;--source-x:${(-crop.x / crop.width) * 100}%;--source-y:${(-crop.y / crop.height) * 100}%`}
-        >
-          <img
-            src={path(image.src)}
-            width={image.width}
-            height={image.height}
-            alt={image.alt}
-            fetchpriority="high"
-          />
-          {image.markers.map((marker, i) => (
-            <>
-              <button
-                type="button"
-                class="preview-marker"
-                style={`left:clamp(16px,${(((marker.x / 100) * image.width - crop.x) / crop.width) * 100}%,calc(100% - 16px));top:clamp(16px,${(((marker.y / 100) * image.height - crop.y) / crop.height) * 100}%,calc(100% - 16px))`}
-                aria-label={`${ru ? 'Метка' : 'Marker'} ${i + 1}`}
-                aria-describedby={`mechanic-tooltip-${i + 1}`}
-                title={marker.label}
-              >
-                {i + 1}
-              </button>
-              <span
-                id={`mechanic-tooltip-${i + 1}`}
-                class="preview-tooltip"
-                role="tooltip"
-                popover="manual"
-              >
-                {marker.label}
-              </span>
-            </>
-          ))}
+    <MechanicDemonstration
+      demonstration={record.attributes.demonstration}
+      lang={record.lang}
+    >
+      <figure
+        class="preview-figure"
+        data-demo-panel={
+          record.attributes.demonstration ? 'example' : undefined
+        }
+        id={record.attributes.demonstration ? 'demo-example-panel' : undefined}
+      >
+        <div class="preview-viewport">
+          <div
+            class="preview-image"
+            data-image-crop
+            style={`--image-ratio:${crop.width / crop.height};--source-width:${(image.width / crop.width) * 100}%;--source-x:${(-crop.x / crop.width) * 100}%;--source-y:${(-crop.y / crop.height) * 100}%`}
+          >
+            <img
+              src={path(image.src)}
+              width={image.width}
+              height={image.height}
+              alt={image.alt}
+              fetchpriority="high"
+            />
+            {image.markers.map((marker, i) => (
+              <>
+                <button
+                  type="button"
+                  class="preview-marker"
+                  style={`left:clamp(16px,${(((marker.x / 100) * image.width - crop.x) / crop.width) * 100}%,calc(100% - 16px));top:clamp(16px,${(((marker.y / 100) * image.height - crop.y) / crop.height) * 100}%,calc(100% - 16px))`}
+                  aria-label={`${ru ? 'Метка' : 'Marker'} ${i + 1}`}
+                  aria-describedby={`mechanic-tooltip-${i + 1}`}
+                  title={marker.label}
+                >
+                  {i + 1}
+                </button>
+                <span
+                  id={`mechanic-tooltip-${i + 1}`}
+                  class="preview-tooltip"
+                  role="tooltip"
+                  popover="manual"
+                >
+                  {marker.label}
+                </span>
+              </>
+            ))}
+          </div>
         </div>
-      </div>
-      <figcaption>
-        <div class="preview-image-title">
-          <strong>{image.game}</strong>
-          <span>{image.caption}</span>
-        </div>
-        <ol class="preview-legend">
-          {image.markers.map((marker) => (
-            <li>{marker.label}</li>
-          ))}
-        </ol>
-        <a class="preview-credit" href={image.sourceUrl} title={image.rights}>
-          © {image.credit} · {ru ? 'Источник' : 'Source'} ↗
-        </a>
-      </figcaption>
-    </figure>
+        <figcaption>
+          <div class="preview-image-title">
+            <strong>{image.game}</strong>
+            <span>{image.caption}</span>
+          </div>
+          <ol class="preview-legend">
+            {image.markers.map((marker) => (
+              <li>{marker.label}</li>
+            ))}
+          </ol>
+          <a class="preview-credit" href={image.sourceUrl} title={image.rights}>
+            © {image.credit} · {ru ? 'Источник' : 'Source'} ↗
+          </a>
+        </figcaption>
+      </figure>
+    </MechanicDemonstration>
     <p class="preview-description">{preview.description}</p>
 
     <section class="preview-tips" aria-labelledby="preview-tips-heading">
@@ -528,6 +546,55 @@ const local = (url: string) => new URL(url).pathname + new URL(url).hash;
     .preview-tips,
     .preview-examples {
       display: block;
+    }
+  }
+  .mechanic-preview.with-demonstration {
+    block-size: auto;
+    min-block-size: min-content;
+  }
+  .with-demonstration .preview-figure {
+    display: block;
+    flex: none;
+    min-height: 0;
+    border: 0;
+  }
+  .with-demonstration .preview-viewport {
+    container-type: normal;
+    display: block;
+    flex: none;
+    height: auto;
+    min-height: 0;
+  }
+  .with-demonstration .preview-image {
+    width: 100%;
+  }
+  @media (max-width: 739px) {
+    .mechanic-preview.with-demonstration {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .with-demonstration .preview-header {
+      align-self: stretch;
+    }
+    .with-demonstration .preview-mark {
+      display: none;
+    }
+    .with-demonstration .preview-figure {
+      float: none;
+      width: 100%;
+      aspect-ratio: auto;
+      margin: 0;
+    }
+    .with-demonstration .preview-categories,
+    .with-demonstration .preview-tips,
+    .with-demonstration .preview-examples,
+    .with-demonstration .preview-footer,
+    .with-demonstration figcaption {
+      display: flex;
+    }
+    .with-demonstration .preview-tips {
+      flex-direction: column;
     }
   }
 </style>

@@ -11,6 +11,7 @@ import { CONTENT_ATTRIBUTION, SITE_NAME, absolute } from './site.ts';
 import { orderByImportance } from './content-order.mjs';
 import { hasFocusedPage } from './discovery.mjs';
 import { getMechanicPreview } from './mechanic-previews.mjs';
+import { getMechanicDemonstration } from './mechanic-demonstrations.mjs';
 
 export const knowledgeTypes = [
   'lesson',
@@ -600,9 +601,23 @@ export function buildKnowledge(lessons, lang, editorialRelations = relations) {
     if (!hasFocusedPage(record)) continue;
     const preview =
       record.type === 'mechanic' && getMechanicPreview(record.id, lang);
+    const demonstration =
+      record.type === 'mechanic' && getMechanicDemonstration(record.id, lang);
+    if (demonstration) {
+      record.attributes.demonstration = demonstration;
+      if (
+        !record.sources.some((source) => source.url === demonstration.sourceUrl)
+      )
+        record.sources.push({
+          title: 'Boss Fight Atlas',
+          url: demonstration.sourceUrl,
+        });
+    }
     if (preview) {
       record.attributes.preview = preview;
       record.updatedAt = preview.updatedAt;
+      if (demonstration && demonstration.updatedAt > record.updatedAt)
+        record.updatedAt = demonstration.updatedAt;
       record.summary = preview.description;
       if (preview.title && preview.title !== record.title)
         record.aliases = [...new Set([...record.aliases, preview.title])];
@@ -775,6 +790,22 @@ export function knowledgeMarkdown(record) {
     '',
     record.summary,
     '',
+    ...(record.attributes.demonstration
+      ? [
+          `## ${record.attributes.demonstration.title}`,
+          '',
+          record.attributes.demonstration.description,
+          '',
+          ...record.attributes.demonstration.phases.map(
+            (phase, index) =>
+              `${index + 1}. **${phase.title}**: ${phase.description}`,
+          ),
+          '',
+          `[Boss Fight Atlas](${record.attributes.demonstration.sourceUrl}) · ${record.attributes.demonstration.credit} · ${record.attributes.demonstration.license}`,
+          record.attributes.demonstration.changes,
+          '',
+        ]
+      : []),
     ...(record.attributes.preview
       ? [
           `## ${record.lang === 'ru' ? 'На одном экране' : 'At a glance'}`,

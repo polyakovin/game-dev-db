@@ -1,0 +1,246 @@
+---
+import type { MechanicDemonstration } from '../lib/knowledge-content';
+import { renderCharacterArt } from '../lib/atlas/character-view.mjs';
+import { renderEncounterArena } from '../lib/atlas/arena.mjs';
+import {
+  sampleDemonstration,
+  demoPhaseTimes,
+} from '../lib/mechanic-demo-model.mjs';
+import { path, type Locale } from '../lib/site';
+import '../styles/mechanic-demonstration.css';
+
+interface Props {
+  demonstration?: MechanicDemonstration;
+  lang: Locale;
+}
+const { demonstration: demo, lang } = Astro.props;
+const ru = lang === 'ru';
+const frame = demo ? sampleDemonstration(demo.kind, 0) : null;
+const phaseTimes = demo ? demoPhaseTimes(demo.kind) : [];
+---
+
+{demo && frame ? (
+  <section
+    class="mechanic-demo"
+    data-mechanic-demo
+    data-kind={demo.kind}
+    data-lang={lang}
+    data-time="0"
+    data-phase="0"
+    data-playing="false"
+    aria-label={demo.title}
+  >
+    <div
+      class="demo-tabs"
+      role="tablist"
+      aria-label={ru ? 'Вид примера' : 'Example view'}
+      data-demo-controls
+      hidden
+    >
+      <button
+        type="button"
+        id="demo-animation-tab"
+        role="tab"
+        aria-selected="true"
+        aria-controls="demo-animation-panel"
+        data-demo-tab="animation"
+      >
+        {ru ? 'Демонстрация' : 'Demonstration'}
+      </button>
+      <button
+        type="button"
+        id="demo-example-tab"
+        role="tab"
+        aria-selected="false"
+        aria-controls="demo-example-panel"
+        tabindex="-1"
+        data-demo-tab="example"
+      >
+        {ru ? 'Пример из игры' : 'Game example'}
+      </button>
+    </div>
+    <div
+      class="demo-animation"
+      id="demo-animation-panel"
+      data-demo-panel="animation"
+    >
+      <svg
+        data-demo-scene
+        viewBox="0 0 640 480"
+        preserveAspectRatio="xMidYMid meet"
+        role="img"
+        aria-labelledby="demo-title demo-description"
+      >
+        <title id="demo-title">{demo.title}</title>
+        <desc id="demo-description">{demo.description}</desc>
+        <Fragment
+          set:html={renderEncounterArena(`demo-${demo.kind}`, {
+            width: 640,
+            height: 480,
+          })}
+        />
+        <g data-demo-shapes aria-hidden="true">
+          {frame.shapes
+            .filter((shape) => shape.role !== 'weapon')
+            .map((shape) => (
+              <path
+                data-demo-shape={shape.id}
+                class={`demo-shape demo-shape-${shape.role}`}
+                d={shape.d}
+                opacity={shape.opacity}
+              />
+            ))}
+        </g>
+        <g aria-hidden="true">
+          {frame.actors.map((actor) => (
+            <g
+              data-demo-actor={actor.id}
+              transform={`translate(${actor.x} ${actor.y})`}
+              opacity={actor.opacity}
+            >
+              <g
+                transform={`scale(${actor.scale}) translate(0 ${actor.kind === 'kern' ? -37 : -36})`}
+              >
+                <Fragment
+                  set:html={renderCharacterArt(
+                    actor.kind,
+                    actor.motion,
+                    actor.facing,
+                  )}
+                />
+              </g>
+              {(actor.id === 'boss' || actor.id === 'player') && (
+                <text
+                  class="demo-actor-label"
+                  x="0"
+                  y="25"
+                  text-anchor="middle"
+                >
+                  {actor.id === 'boss'
+                    ? ru
+                      ? 'Босс'
+                      : 'Boss'
+                    : ru
+                      ? 'Игрок'
+                      : 'Player'}
+                </text>
+              )}
+            </g>
+          ))}
+        </g>
+        <g data-demo-weapons aria-hidden="true">
+          {frame.shapes
+            .filter((shape) => shape.role === 'weapon')
+            .map((shape) => (
+              <path
+                data-demo-shape={shape.id}
+                class="demo-shape demo-shape-weapon"
+                d={shape.d}
+                opacity={shape.opacity}
+              />
+            ))}
+        </g>
+      </svg>
+      <div class="demo-player" data-demo-controls hidden>
+        <div class="demo-transport">
+          <button type="button" data-demo-toggle aria-pressed="false">
+            {ru ? 'Играть' : 'Play'}
+          </button>
+          <button
+            type="button"
+            data-demo-restart
+            aria-label={ru ? 'Начать сначала' : 'Restart'}
+            title={ru ? 'Начать сначала' : 'Restart'}
+          >
+            ↺
+          </button>
+          <label class="demo-timeline-label">
+            <span class="sr-only">
+              {ru ? 'Время демонстрации' : 'Demonstration time'}
+            </span>
+            <input
+              data-demo-timeline
+              type="range"
+              min="0"
+              max={frame.duration}
+              step="0.01"
+              value="0"
+            />
+          </label>
+          <output data-demo-time aria-hidden="true">
+            0.0 / {frame.duration.toFixed(1)}
+          </output>
+          <label>
+            <span class="sr-only">{ru ? 'Скорость' : 'Speed'}</span>
+            <select data-demo-speed aria-label={ru ? 'Скорость' : 'Speed'}>
+              <option value="0.5">0.5×</option>
+              <option value="1" selected>
+                1×
+              </option>
+              <option value="1.5">1.5×</option>
+            </select>
+          </label>
+        </div>
+        <div
+          class="demo-phases"
+          aria-label={ru ? 'Фазы механики' : 'Mechanic phases'}
+        >
+          {demo.phases.map((phase, index) => (
+            <button
+              type="button"
+              data-demo-phase={index}
+              data-phase-time={phaseTimes[index]}
+              aria-pressed={index === 0}
+              title={phase.description}
+            >
+              {index + 1}. {phase.title}
+            </button>
+          ))}
+        </div>
+      </div>
+      <p
+        class="demo-explanation"
+        data-demo-explanation
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        {demo.phases[0].description}
+      </p>
+      <details class="demo-reading">
+        <summary>{ru ? 'Что показывает сцена' : 'How the scene works'}</summary>
+        <p>{demo.description}</p>
+        <ol>
+          {demo.phases.map((phase) => (
+            <li>
+              <strong>{phase.title}.</strong> {phase.description}
+            </li>
+          ))}
+        </ol>
+      </details>
+      <p class="demo-credit">
+        <a href={demo.sourceUrl}>Boss Fight Atlas</a> · {demo.credit} ·{' '}
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        <span>
+          {demo.changes}{' '}
+          <a href={path('licenses/boss-fight-atlas.txt')}>
+            {ru ? 'Лицензии' : 'Licenses'}
+          </a>
+        </span>
+      </p>
+    </div>
+    <slot />
+    <script
+      type="application/json"
+      data-demo-copy
+      set:html={JSON.stringify(demo.phases).replace(/</g, '\\u003c')}
+    />
+  </section>
+) : (
+  <slot />
+)}
+
+<script>
+  if (document.querySelector('[data-mechanic-demo]')) {
+    import('../scripts/mechanic-demonstration');
+  }
+</script>

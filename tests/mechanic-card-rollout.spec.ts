@@ -10,6 +10,7 @@ import {
   validateMechanicCardOrder,
 } from '../src/lib/mechanic-card-order.mjs';
 import { validateMechanicPreviews } from '../src/lib/mechanic-preview-validation.mjs';
+import { getMechanicDemonstration } from '../src/lib/mechanic-demonstrations.mjs';
 
 const records = buildKnowledge([], 'ru', []).records;
 const ids = Object.keys(mechanicPreviews);
@@ -69,8 +70,17 @@ for (const lang of ['ru', 'en'] as const) {
       request,
     }, testInfo) => {
       const card = getMechanicPreview(id, lang)!;
+      const demonstration = getMechanicDemonstration(id, lang);
+      if (demonstration) await page.emulateMedia({ reducedMotion: 'reduce' });
       await page.goto(route(lang, id));
       await page.evaluate(() => document.fonts.ready);
+      if (demonstration) {
+        await expect(page.locator('[data-mechanic-demo]')).toHaveAttribute(
+          'data-ready',
+          'true',
+        );
+        await page.locator('[data-demo-tab="example"]').click();
+      }
       await expect(page.locator('h1')).toHaveText(card.title!);
       await expect(page.locator('.preview-description')).toHaveText(
         card.description,
@@ -94,13 +104,24 @@ for (const lang of ['ru', 'en'] as const) {
           width: document.documentElement.scrollWidth,
           height: document.documentElement.scrollHeight,
         }));
-        expect(dimensions, `${id} ${JSON.stringify(viewport)}`).toEqual(
-          viewport,
-        );
+        if (demonstration) {
+          // Animated cards keep controls and attribution in scrolling flow.
+          expect(dimensions.width).toBe(viewport.width);
+          expect(dimensions.height).toBeGreaterThanOrEqual(viewport.height);
+        } else
+          expect(dimensions, `${id} ${JSON.stringify(viewport)}`).toEqual(
+            viewport,
+          );
         for (const selector of ['h1', '.preview-description', '.preview-image'])
-          await expect(page.locator(selector)).toBeInViewport({ ratio: 1 });
-        for (const marker of await page.locator('.preview-marker').all())
+          if (demonstration) {
+            await page.locator(selector).scrollIntoViewIfNeeded();
+            await expect(page.locator(selector)).toBeVisible();
+          } else
+            await expect(page.locator(selector)).toBeInViewport({ ratio: 1 });
+        for (const marker of await page.locator('.preview-marker').all()) {
+          if (demonstration) await marker.scrollIntoViewIfNeeded();
           await expect(marker).toBeInViewport({ ratio: 1 });
+        }
         if (
           lang === 'ru' &&
           viewport.width === 298 &&
@@ -116,7 +137,20 @@ for (const lang of ['ru', 'en'] as const) {
       }
       await page.setViewportSize({ width: 298, height: 314 });
       for (let i = 0; i < card.image.markers.length; i++) {
-        await page.locator('.preview-marker').nth(i).hover();
+        const marker = page.locator('.preview-marker').nth(i);
+        if (demonstration) {
+          await marker.scrollIntoViewIfNeeded();
+          // Let the screenshot's scroll-dismiss handler finish before hovering.
+          await page.evaluate(
+            () =>
+              new Promise<void>((resolve) =>
+                requestAnimationFrame(() =>
+                  requestAnimationFrame(() => resolve()),
+                ),
+              ),
+          );
+        }
+        await marker.hover();
         const tooltip = page.locator(`#mechanic-tooltip-${i + 1}`);
         await expect(tooltip).toHaveText(card.image.markers[i].label);
         await expect(tooltip).toBeInViewport({ ratio: 1 });

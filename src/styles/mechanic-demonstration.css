@@ -1,0 +1,238 @@
+.mechanic-demo {
+  grid-area: figure;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow-wrap: anywhere;
+}
+.compact-page:has(.with-demonstration) .workspace {
+  block-size: auto;
+  min-block-size: 100svh;
+  grid-template-rows: auto 1fr;
+}
+.compact-page:has(.with-demonstration) .topbar {
+  display: flex;
+}
+.mechanic-demo [hidden] {
+  display: none !important;
+}
+.mechanic-demo button,
+.mechanic-demo select {
+  font: inherit;
+  color: var(--ink);
+  border: 1px solid var(--control-line);
+  border-radius: 5px;
+  background: var(--surface);
+  cursor: pointer;
+}
+.mechanic-demo button:focus-visible,
+.mechanic-demo select:focus-visible,
+.mechanic-demo input:focus-visible,
+.mechanic-demo summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.demo-tabs {
+  display: flex;
+  flex: none;
+  gap: 4px;
+  padding: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.demo-tabs button {
+  flex: 1;
+  min-height: 36px;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+.demo-tabs button[aria-selected='true'] {
+  background: var(--ink);
+  color: var(--on-ink);
+  border-color: var(--ink);
+}
+.demo-animation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+[data-demo-scene] {
+  display: block;
+  width: 100%;
+  flex: 1 1 250px;
+  min-height: clamp(250px, 45svh, 540px);
+  max-height: 580px;
+  background: #132522;
+}
+.demo-shape {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.demo-shape-warning {
+  fill: #f0bc5b20;
+  stroke: #f0bc5b;
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+}
+.demo-shape-danger {
+  fill: #ff7755a6;
+  stroke: #ffe0ad;
+  stroke-width: 2;
+}
+.demo-shape-safe {
+  fill: #83dbc71a;
+  stroke: #a0f6da;
+  stroke-width: 2;
+  stroke-dasharray: 3 6;
+}
+.demo-shape-trail {
+  fill: none;
+  stroke: #f5e5bc;
+  stroke-width: 2;
+  stroke-dasharray: 3 8;
+}
+.demo-shape-portal {
+  fill: #a58aff30;
+  stroke: #d6beff;
+  stroke-width: 3;
+}
+.demo-shape-impact {
+  fill: #ffe5a330;
+  stroke: #ffe5a3;
+  stroke-width: 3;
+}
+.demo-shape-weapon {
+  fill: #bfd0ce;
+  stroke: #172b30;
+  stroke-width: 3;
+}
+.demo-actor-label {
+  font:
+    500 14px 'Golos Text Variable',
+    sans-serif;
+  fill: #fff7e6;
+  paint-order: stroke;
+  stroke: #10231f;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.demo-player {
+  padding: 10px 12px 0;
+}
+.demo-transport {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+}
+.demo-transport button,
+.demo-transport select {
+  min-height: 34px;
+  padding: 4px 7px;
+}
+[data-demo-toggle] {
+  min-width: 62px;
+}
+.demo-timeline-label {
+  flex: 1;
+  min-width: 40px;
+  display: flex;
+}
+.demo-timeline-label input {
+  width: 100%;
+  min-width: 0;
+  accent-color: var(--accent);
+}
+.demo-transport output {
+  white-space: nowrap;
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.demo-phases {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+.demo-phases button {
+  flex: 1;
+  padding: 6px;
+  font-size: 11px;
+  min-height: 34px;
+}
+.demo-phases button[aria-pressed='true'] {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--surface-alt);
+}
+.demo-explanation {
+  margin: 0;
+  padding: 9px 12px;
+  min-height: 4.5em;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.demo-reading {
+  padding: 0 12px 8px;
+  font-size: 12px;
+}
+.demo-reading summary {
+  cursor: pointer;
+  color: var(--muted);
+}
+.demo-reading p,
+.demo-reading ol {
+  margin: 10px 0;
+}
+.demo-reading ol {
+  padding-inline-start: 20px;
+}
+.demo-reading li + li {
+  margin-top: 6px;
+}
+.demo-credit {
+  margin: 0;
+  padding: 8px 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+.demo-credit span {
+  display: block;
+}
+.demo-credit a {
+  text-decoration: underline;
+}
+/* These cards keep controls and attribution in normal flow at every size. */
+@media (max-width: 739px) {
+  [data-demo-scene] {
+    flex-basis: auto;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    min-height: 0;
+  }
+}
+@media (max-width: 380px) {
+  .demo-transport {
+    flex-wrap: wrap;
+  }
+  .demo-transport output {
+    display: none;
+  }
+  .demo-phases button {
+    padding: 6px 3px;
+    font-size: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mechanic-demo * {
+    scroll-behavior: auto;
+  }
+}

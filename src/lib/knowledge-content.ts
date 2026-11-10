@@ -35,6 +35,17 @@ export interface KnowledgeRelation {
   jsonUrl: string;
   markdownUrl: string;
 }
+export interface MechanicDemonstration {
+  kind: string;
+  title: string;
+  description: string;
+  phases: { title: string; description: string }[];
+  sourceUrl: string;
+  credit: string;
+  license: string;
+  changes: string;
+  updatedAt: string;
+}
 export interface KnowledgeRecord {
   key: string;
   type: string;
@@ -61,6 +72,7 @@ export interface KnowledgeRecord {
   provenance: string;
   attributes: {
     preview?: MechanicPreview;
+    demonstration?: MechanicDemonstration;
   };
 }
 export interface KnowledgeDataset {
